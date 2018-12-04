@@ -676,7 +676,7 @@ rescanned with optical character recognition (ocr) using [ocrmypdf](https://gith
 
 ### Fluoride-Salt-Cooled, Solid-Fueled Reactors
 | report | filename | date |  status |
-|:--------|:--------:|:------:|:|:------:|
+|:--------|:--------:|:------:|:------:|
 | [Pre-Conceptual Design of a Fluoride-Salt-Cooled Small Modular Reactor (SmAHTR)](https://github.com/openmsr/msr-archive/tree/master/docs/ORNL-TM-2010-199.pdf) | ORNL-TM-2010-199 | 2010-12 | yet to be ocr'ed |
 | [Refueling Options and Considerations for Liquid-Salt-Cooled VHTRs](https://github.com/openmsr/msr-archive/tree/master/docs/ORNL-TM-2006-92.pdf) | ORNL-TM-2006-92 | 2006-06 | yet to be ocr'ed |
 | [Assessment of Candidate Molten-Salt Coolants for the NGNP/NHI Heat-Transfer Loop](https://github.com/openmsr/msr-archive/tree/master/docs/ORNL-TM-2006-69.pdf) | ORNL-TM-2006-69 | 2006-06 | yet to be ocr'ed |
