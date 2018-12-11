@@ -1,0 +1,2579 @@
+   
+
+£ M
+OAK RIDGE NATIONAL LABORATORY
+
+operated by
+
+UNION CARBIDE CORPORATION un
+for the
+
+U.S. ATOMIC ENERGY COMMISSION
+
+ORNL- TM- 251
+
+COPY NO. - a
+
+DATE - May 15, 1962
+
+ 
+
+SAFETY CALCULATIONS FOR MSRE
+
+P. N. Haubenreich
+J. R. Engel
+
+ABSTRACT
+
+A number of conceivable reactivity accidents were analyzed, using
+conservatively pessimistic assumptions and approximations, to permit
+evaluation of reactor safety. Most of the calculations, which are
+described in detail, were performed by a digital kinetics program,
+
+' MURGATROYD. Some analog analyses were also made.
+
+\ None of the accidents which were analyzed lead to catastrophic
+failure of the reactor, which is the primary consideration.
+
+Some internal damage to the reactor from undesirably high tem-
+peratures could result from extreme cold-slug accidents, premature
+criticality during filling, or uncontrolled rod withdrawal. Each of
+these accidents could happen only by compounded failure of protective
+devices, and in each case there exist means of effective corrective
+action independent of the primary protection, so that damage is un~
+likely.
+
+The calculated response to arbitrary ramp and step additions of
+reactivity show that damaging pressures could occur only if the ad~-
+dition is the equivalent of a step of about 1% ok/k or greater.
+
+NOTICE
+
+This document contains information of a preliminary nature and was prepared
+primarily for internal use ot the Oak Ridge National Laboratory. It is subject
+to revision or correction and therefore does not represent a final report, The
+information is not to be abstracted, reprinted or otherwise given public dis-
+semination without the approval of the ORNL patent branch, Legal and infor-
+mation Control Department, :
+ 
+
+ 
+
+ 
+
+LEGAL NOTICE
+
+This report was prepared as an account of Government sponsored work. Neither the United States,
+
+nor the Commission, nor any person acting on behalf of the Commission:
+
+A. Makes any warranty or representation, expressed or implied, with respect to the accuracy,
+completeness, or usefulness of the information contained in this report, or that the use of
+any information, apparatus, method, or process disclosed in this report may not infringe
+privately owned rights; or
+
+B. Assumes any liabilities with respect to the use of, or for damages resulting from the use of
+any information, apparatus, method, or process disclosed in this report.
+
+As used in the above, "person acting on behalf of the Commission’ includes ony employee or
+
+contractor of the Commission, c- employee of such contractor, to the extent that such employee
+
+or contractor of the Commission, or employee of such contractor prepares, disseminates, or
+provides access to, ony information pursuant to his employment or contract with the Commission,
+
+or his employment with such contractor.
+
+ 
+
+ 
+CONTENTS
+
+ABSTRACT
+
+INTRODUCTION
+
+MSRE CHARACTERISTICS
+
+RESULTS OF CREDIBLE REACTIVITY ACCIDENTS
+
+Case 1 ~ Fuel Pump Failure
+
+Case 2 =~ Cold Slug Accident
+
+Case 3 = Filling Accident
+
+Case 4 - Loss of Graphite from Ccre
+Case 5 - Fuel Additions
+
+Case 6 - Uncontrolled Rod Withdrawal
+
+RESPONSE TO ARBITRARY ADDITIONS OF REACTIVITY
+Ramp Additions
+Step Additions
+
+DISCUSSION
+
+APPENDIX I: DELAYED NEUTRONS
+
+APPENDIX II: CONTROL RODS
+
+APPENDIX III: ANALYSIS OF COLD=-SLUG ACCIDENTS
+
+APPENDIX IV: COMPOSITION OF RESIDUAL LIQUID AFTER
+PARTIAL FREEZING OF MSRE FUEL SALT
+
+APPENDIX V: CRITICALITY CALCULATIONS FOR FILLING
+ACCIDENTS
+
+APPENDIX VI: REACTIVITY WORTH OF INCREMENTS OF URANIUM
+
+&
+© [ox ON Wun w bt 5
+
+13
+21
+22
+2h
+27
+27
+35
+
+35
+Lo
+
+41
+48
+
+51
+
+60
+65
+No.
+
+12
+
+13
+
+16
+
+17
+
+ii
+
+LIST OF FIGURES
+Title
+
+Power and Temperatures Following Fuel Pump Power
+Failure. No Corrective Action.
+
+Power and Temperatures Following Fuel Pump Power
+Failure. Radiator Doors Closed and Control Rods
+Driven in at 0.4 in./sec after Failure.
+
+Powers During Cold Slug Accidents.
+
+System Behavior for Cold Slugs at 900°F
+
+Liquid Composition Resulting from Partial Freezing
+of Fuel Salt in Drain Tank.
+
+Control Rod Worth vs. Position.
+
+Fuel Level Required for Criticality. (Fuel Concen-
+tration Enhanced by Freezing in Drain Tank.)
+
+Temperature and Power During Filling Accident.
+Response of MSRE to 0.15% Ak/k Step.
+
+Effects of 120 g of 32 Moving Through the Core
+in a Horizontally Distributed Slug.
+
+Transients Resulting from Simultaneous Withdrawal
+of 3 Control Rods
+
+Response to Ramp of 1% 6k/k in 30 sec Beginning
+at 10 Mw.
+
+Response to Ramps of 1, 1.5, and 2% &k/k in 10 sec,
+Beginning at 10 Mw.
+
+Power Response to Ramps of 2% ok/k in 10 sec
+Beginning at 10-2, 10-3, 10~}, and 10 Mw.
+
+Maximum Power Reached in Initial Excursion for
+Ramp Reactivity Additions.
+
+Pressure and Fuel Mean Temperature Response to
+Ramps of 2% 6k/k in 10 sec, Beginning at 10-2,
+1073, 10-1, and 10 Mw.
+
+Maximum Core Pressure Reached in Initial Surge
+Caused by Ramp Reactivity Additions
+
+11
+
+12
+
+1k
+17
+
+20
+
+23
+
+25
+
+26
+
+28
+
+29
+
+31
+
+32
+
+33
+
+3k
+A-10
+
+A=11
+A-12
+A-13
+A-1k
+
+A=15
+
+iii
+
+LIST OF FIGURES =~ cont'd
+
+Title
+
+Peak Fuel Mean Temperatures vs. Total Reactivity
+Added by Ramps of Various Durations
+
+Power Transients from Step Increases in Reactivity
+Initial Power: 10 Mw
+
+Response of MSRE to 0.338% 0k/k Step.
+
+Fractional Rod Worth vs. Depth of Insertion in
+MSRE Core
+
+Differential Rod Worth (Fraction of Total per Inch)
+vs. Rod Position
+
+Reactivity Change Due to Control Rod Insertion.
+
+Excess Reactivity Due to Replacing Part of Fuel in
+1200° Core with Denser Fuel. (Fill from bottom up.)
+
+Reactivity Transients Caused by Passage of Cold
+Slugs Through MSRE Core at 1200 gpm.
+
+MURGATROYD Results for Reactivity Transient Corre=
+sponding to 20 and 30 £t3, 900°F Cold Slugs.
+
+Mean Temperatures of Fuel and Graphite in Core
+During Passage of Cold Slugs Initially at 9O00CPF
+with no Nuclear Heat Generation.
+
+Temperature Profiles Along Hottest Fuel Channel
+at Various Times During Passage of 20 £3,
+900°F Slug.
+
+Power and Fuel Temperatures for 20 £t3, 900°F Slug
+
+Composition of Fuel Salt Resulting from Partial
+Freezing in Fuel Drain Tank
+
+Effective Multiplication During Filling Accident
+Effective Multiplication During Filling Accident
+Height of Salt in Core vs. Time
+
+Reactivity Worth of 1 g of 23> in MSRE Core.
+Reactivity Transient Caused by 100 g of 235 Uni-
+
+formly Distributed in a Horizontal Plane Which
+Moves Through the Core with the Circulating Fuel.
+
+37
+38
+
+Lh
+
+k5
+kT
+
+50
+
+52
+
+23
+
+55
+
+59
+61
+
+63
+6h
+66
+
+67
+SAFETY CALCULATIONS FOR MSRE
+
+P. N. Haubenreich
+J. R. Engel
+
+INTRODUCTION
+
+The work reported here was done to provide information for the sec-
+cnd addendum to the MSRE Preliminary Hazards Report, and consists of the
+analysis of reactor behavior in certain potentially hazardous situations.
+The purpose of the present report is to describe the procedures which were
+used and to give some results in fuller detail.
+
+Incidents which were analyzed included: fuel pump failure at high
+power, "cold-slug" accidents, premature criticality during core filling,
+breakage of a graphite stringer, passage of a concentrated fuel slug and
+runaway rod withdrawal. The response of the system to arbitrary step and
+ramp additions of reactivity was also computed. Each case is described
+and results are given in the body of the report. Details of the calcu-
+
+ations and some other pertinent information are given in appendixes.
+
+An analog computer was used to analyze the fuel pump stoppage. All
+other cases were analyzed using MURGATROYD, a machine program developed
+by estore for digital computation of MSRE kinetic behavior. Nestor has
+recently shown that MURGATROYD predicts larger power excursions for a
+given imposed reactivity transient than would be calculated if the core
+mean temperatures were related more realistically to inlet temperature
+and power. (The same comment may apply to the simulator results.) A
+new program which will incorporate temperature distributions and flux-
+
+welghted mean temperatures is being developed. When this is ready, some
+
+ 
+
+Lhoiten Salt Reactor Experiment Preliminary Hazards Report, ORNL
+CF-61l-2-46 Addendum No. 2 (May 3, 1962).
+
+“The conditions and results reported here are for the "first round" of
+the analysis. Some changes were subsequently made in rod worth and de-
+ployment and some of the incidents were reanalyzed, by the procedures
+described here, in light of the new conditions. The results of the latest
+calculations appear In reference 1.
+
+C. W. Nestor, MURGATROYD, an IBM~-T090 Program for the Analysis of the
+Kinetics of the MSRE, ORNL-TM-203 (April 6, 1962).
+
+2
+I
+
+of the incidents described in this report will be analyzed again. From
+the standpoint of reactor safety evaluation, however, it is believed that
+the calculations which have already been done are adequate for the cases
+studied, particularly since the results obtained indicated reasonably safe
+
+reactor operation.
+MSRE CHARACTERISTICS
+
+Quantities which are important in the kinetic behavior of the MSRE
+
+are listed in Table 1; the values shown were used in the kinetics calcu-
+
+lations.
+
+Table 1. MSRE Characteristics Affecting Kinetic Behavior
+
+ 
+
+Prompt-neutron lifetime
+
+Delayed neutron fraction: static
+
+: circulating
+
+Residence times: core
+
+external to core
+
+Critical mass: core
+total fuel
+
+Mass coefficient of reactivity (6k/kx)/(6M/M)
+
+Temperature coefficients of reactivity: fuel
+
+graphite
+
+Fraction of heat generation: in fuel
+
+in graphite
+
+Core heat capacity: graphite
+fuel
+
+Graphite-to-fuel heat transfer
+
+2.9 x 1074 sec
+
+0.0064
+0.0034
+
+7.3 sec
+17.3 sec
+
+16.6 kg 232
+56.0 kg y?3°
+
+0.28
+
+-2.8 x 10™2 ort
+-6.0 x 107° pt
+
+0.94
+0.06
+
+3:53 Mw-sec/ F
+1.47 Mw/sec/F
+
+0.020 Mw/°F
+
+ 
+
+Extremely rapid increases in core power cause & rise in core pressure
+
+due to inertia and friction in the line to the pump and due to compressicn
+
+of the gas in the pump bowl. The quantities affecting the core pressure
+
+surges are given in Table 2.
+Table 2. MSRE Characteristics Affecting Core Pressure Transients
+
+ 
+
+Core volume 20 £3
+
+Fuel density 149 1b [163
+
+Fuel volumetric expansion coefficient 1.26 x 10° opt
+Length of line to pump bowl 16 ft
+Cross-sectional. area of line 0.139 £t2
+Friction loss in line 1.3 velocity heads
+Volume of gas in pump bowl 2.5 £3
+
+ 
+
+RESULTS OF CREDIBLE REACTIVITY ACCIDENTS
+
+Six kinds of conceivable accidents or malfunctions involving un-
+
+desirable additions of reactivity were analyzed. The sections which follow
+
+describe each condition and the results of the analysis. Methods of anel-
+
+ysis are covered in detail in the Appendices.
+
+Case 1 - Fuel Pump Failure
+
+If the fuel circulation is interrupted while the reactor is critical,
+the increase in the effective delayed neutron fraction will cause the
+critical temperature to increase. If appreciable power is being extracted
+by the radiator, the temperature of the coolant salt will decrease im-
+mediately following the cessation of fuel flow through the heat exchanger.
+
+The behavior of the reactor power and temperature in the event of a
+fuel pump stoppage with the reactor operating at high power was explored
+by Burke on the Analog Facility on February 1, 1962.
+
+Figure 1 shows simulator results for the case of a fuel pump pover
+failure while the reactor is at 10 Mw, with no corrective action and the
+coolant pump continuing to run. Although the mean temperature of the fuel
+in the core increased 120°F, the secondary salt temperatures decreased,
+reaching the freezing point at the radiator outlet in less than two minutes.
+(The behavior at Lower initial powers was similar, but the secondary salt
+
+did not cool to the freezing point if the initial power extraction was less
+
+than 7.5 Mw.)
+7 ORNL-LR-Dwg. T0051
+Unclassified
+
+!
+
+ 
+
+TEMPERATURE (°F)
+
+q00
+
+10
+
+©
+
+Qo
+
+PowER (Mw)
++=
+
+120
+TIME (Sec)
+It is clear that the occurrence of a fuel~pump power failure with the
+reactor at high power requires that steps to reduce the heat removal from
+the radiator be taken quickly. Control rod action to reduce reactivity
+is necessary to prevent an undesirably large rise in fuel temperature in
+the core. Results were also obtained considering control=-rod movement
+and changes in heat removal by the radiator.
+
+Figure 2 shows the results of a simulated fuel pump failure at the
+seme initial conditions as Fig. 1, but with corrective action. One second
+after the pump power was cut (coastdown was simulated, so the fluid flow
+was not assumed to stop instantaneously), a negative reactivity ramp was
+started to simulate insertion of the control rods. This rate was -0.075%
+per second, corresponding to all three rods moving in at about 0.4 in./sec.
+(See page 46 for discussion of rod worth, speed and normal positions.)
+Beginning 3 seconds after the pump power failure, the simulated heat re-
+moval from the radiator tubes was reduced as indicated by the radiator
+inlet and outlet temperature in Fig. 2. It is believed that the radiator
+doors can be closed to reduce heat extraction faster than that associated
+with Fig. 2 conditions. In this case, the radiator temperature dropped
+very little, and the fuel mean temperature rose 30°F. With the same
+radiator control but with a faster negative reactivity ramp of -0.15%/sec,
+the power dropped more rapidly and the fuel mean temperature rose only
+"18°F.
+
+Case 2 =~ Cold Slug Accident
+
+Because the "cold-slug" accident could not be adequately simulated
+on the analog computer, the consequences of several accidents of varying
+severity were estimated by criticality and kinetics calculations on the
+IBM-7090. (Details of the procedures and intermediate results are given
+in the Appendix, page 48.)
+
+The accidents which were analyzed consisted of pumping 10, 20, and
+30 ft3 of fuel at 900, 1000, and 1100°F into the core at a rate of
+1200 gpm. In each case the core was assumed to be initially critical at
+1200°F, with 10 kw of fission power being generated, and with no circu-
+lation of fuel. The loss of delayed neutron precursors which accompanies
+
+the start of circulation was treated as a step change in reactivity of
+ORNL~LR-Dwg. T0052
+
+ 
+
+Unclassified
+
+(3.) 3¥01V¥IAWSL
+
+1000
+
+3 8
+(3.) "331d dwaL
+
+ 
+
+©
+
+ 
+
+9 <+
+(mW) Bamad
+
+TIME *(5ecC)
+
+  
+    
+10
+
+-0.30% 6k/k, which occurred simultaneously with the entry of the first
+cold fuel into the core.
+
+In the first cases which were calculated, no control rod action was
+taken. The calculated fission powers following the entry of the various
+cold slugs into the core are shown in Fig. 3. The initial drop in each
+case was due to the assumed step decrease in reactivity which takes the
+resctor subcritical. In the case of the 1100°F slugs, the effect of the
+denser fuel was not enough to bring the reactor back to critical. In some
+of the other cases the reactor does become supercritical but before the
+power has risen very high, hot fuel (at 1200°F) begins to enter the core
+behind the initial slug and the reactor becomes subcritical again. (The
+core transit time is 7.3 sec. The 10-ft3 slug passes out in 11.0 sec;
+the 20-£t2 slug in 14.6 sec and the 30-ft3 slug in 18.2 sec.) For the
+20~ and 30-783 slugs at 900°F, considerable excess reactivity was added
+quickly, causing power surges which were limited by the heating of tae
+core. (In the other cases the fission heating of the core had negligible
+effect on the reactivity.)
+
+Figure 4 shows the calculated power, pressure and mean temperatures
+in the core for the worst two cases, The kinetics calculations treated
+the fuel and the graphite as separate regions at uniform temperature and
+pressure; actually, temperatures and fuel pressures at the center of the
+core would be above the mean values shown. However, the difference be=-
+tween the peak pressure and the mean will not exceed 2 or 3 psi, because
+the inertia of the fuel in the fuel channels is relatively small. Ap=
+rroximate calculations indicated that the maximum fuel temperature in tae
+20-113, 900°F case should not exceed about 1650°F. (See page 5h.)
+
+Two more cases were examined in which the power and temperature ex=-
+cursions accompanying the 20-143, 900°F slug were limited by control rod
+action. In the first, a reactivity ramp of =0.075% per sec was initiated
+when the period reached 5 sec (equivalent to driving three rods in at
+0.4 in./sec). In the second case, -4.0% 0k/k was introduced in 1 sec
+after the period had reached 2 sec (equivalent to rods dropping). Peak
+powers were 0.66 Mw and 0.7 kw in the two cases and there was no signif=
+
+icant pressure or temperature increase.
+Power (Mw)
+
+11
+
+TIME (Sec)
+
+ORNL-LR-Dwg. T0053
+Unclassified
+
+ 
+
+100 Mw
+
+#3
+
+10 Mw
+
+H2
+
+| Mw
+
+100 kw
+
+10 kw
+
+- >
+  
+ 
+ 
+ 
+    
+
+=<)
+
+TEMPERATU
+
+—
+
+, PRESSURE (PSI)
+
+PERIOD (5eCQ.)
+
+POWER (Mw)
+
+   
+
+12
+
+System Behavior For Cold slugs
+20 cu. ft em 30 cu ft. — om —
+Rm
+
+   
+
+TIME (5€eC)
+
+at 0G °F.
+13
+
+Case 3 « Filling Accident
+
+Criticality could be reached prematurely during a startup while the
+core is being filled with fuel if: (a) the core temperature were ab-
+normally low; or (vb) the fuel were abnormally concentrated in uranium;
+or (c) the control rods were withdrawn from the positions they normally
+occupy during filling. Interlocks and procedures are designed to prevent
+such an accident. If, despite the precautions, the reactor were to go
+critical under such conditions, there would be a power excursion, whose
+size would depend on the source power and the rate of increase of re=-
+activity. The core temperature would rise rapidly during the initial
+power excursion; then, if fuel addition were continued, it would rise in
+pace with the increase in critical temperature.
+
+Preliminary examination of the consequences of filling the MSRE core
+with salt containing excess uranium was made for several assumed conditions.
+The worst cases were examined in detail to determine the corrective action
+
+required to insure safety.
+
+Fuel Composition
+
+Two mechanisms were considered for enhancing the uranium concentration
+in the fuel charged to the reactor core. In the first of these, it was
+assumed that partial freezing of the fuel salt had occurred in the drain
+tank and that the solid contained no uranium. In the second one, the
+uranium concentration was adjusted to make the reactor critical at 1400°F
+and it was assumed that fuel of this composition was charged to the reactor
+at 900°F.
+
+Associated with the first mechanism, the composition of the remaining
+licuid as a function of the fraction of salt frozen was calculated on that
+basis that only the primary solid (6 LiF.BeFs.ZrF4) was formed. The nomi=-
+nal composition of the fuel mixture was considered to be 70 mole % LiF =~
+23% BeFs = 5% ZrF4 = 1% ThFg4 = 1% UF4. Since the actual critical concen-
+tration of UF4 is less than 1 mole %, a correction was applied for the
+nuclear calculations which, in effect, increased the concentrations of all
+of the other constituents in proportion to their concentrations in the
+critical mixture. Figure 5 shows the liquid composition, as a function of
+
+the weight fraction of fuel frozen, that was used in the nuclear calculations.
+ified
+
+ORNL~LR-Dwg. T0055
+
+1h
+
+ 
+=
+A
+
+These curves canncht bz extrapolated beyond 0.425 of the salt frozen be-
+cause it would be impossible to form additional primary solid since all
+
+of the zirconium has been consumed. Another estimate of the compcsition
+wag subsequently made by McDuffie et al.,® using other assumptions about
+the freezing mechanism. The resultant differences in composition were not
+significant from the standpoint of nuclear calculation results. The fuel
+compcsitions under the two sets of assumptions are compared in the Ap-
+pendix, p 58.
+
+The configuration of the MSRE “uel lcor is such that the active re-
+gion of the core can be filled if no more than 39%, by weight, of the
+fuel salt is frozen in the drain tank, (assuming that the working salt
+volume is 72 £53 at 1200°F). The extreme condition was used in evalu-
+ating the consequences of filling the loop with concentrated fuel salt.
+Criticality in Partially Filled Core
+
+In order to evaluate the filling accidents, it was necessary to make
+some assumptions about the filling procedure. It was assumed that the
+control rods were in their "normal" positions for filling: one rcd fully
+inserted and two rods inserted sc that they control 0.1% reactivity in
+the full core. (See Appendix, p 46, for a discussion of control rods.)
+Under these conditions, the reactor, filled with normal fuel at 1200°F,
+had an effective k of 0.997 with the circulating pump off. A uniforn
+salt fill rate of 1 ££3/min was assumed.
+
+In order to estimate reactivity as a function of fuel height, statics
+calculations were made with an IBM~7000, l-dimensional, multiregion, multi-
+group neutron diffusion code (MODRIC). The reactor was treated as a slab
+with a thickness equal to the height of the core, L. Control rods and
+control «rod thimbles were not considered. Reactivity was calculated
+for various salt levels, H, in the core. For the conditions of H/L <1
+the graphite in the upper part of the core was considered as a reflector.
+This model differed scmewhat from that used to predict the properties of
+
+the normal reactor sco that the results could not be used directly in cther
+
+ 
+
+3. H. F. McDuffie, "Data on MSRE Fuel Salt Required for Nuclear Safety
+Calculations," letter to R. B. Briggs, Feb. 13, 1962.
+16
+
+calculations. However, the relative changes in reactivity as a function
+of fuel height should be correct. The results were normalized to make
+them consistent with the more detailed calculation of a critical, full
+reactor at 1200°F, and then corrected downward to allow for the fact that
+the "normal" reactor is slightly subcritical when full because of the con-
+trol rod positions. The latter correction considered the change in control
+rod worth with changing fuel level. Figure 6 shows the fractional worth
+of a single control rod as a function of position in the full core and in
+the core 72% full of fuel salt.
+
+Figure 7 shows the height at which criticality would be achieved as
+a function of the fraction of fuel salt frozen. The critical height was
+alsc obtained for the case where fuel, containing enough uranium for op-
+eration at 1400°F, is charged at 900°F. In this case the critical H/L
+was 0.700. |
+
+Temperature and Power Excursions
+
+If criticality is achieved before the core is full and filling is
+continued, the result is an excursion in power and temperature. Such ex-
+cursions were examined for two accidents: (1) the reactor is filled at
+1200°F with salt whose composition has been changed by freezing 0.39 of
+the salt in the drain tank; and (2) the reactor is filled at 900°F with
+salt containing sufficient uranium for operation at 1400°F. Criticality
+would be achieved in the two cases at H/L = 0.691 and 0.700, respectively.
+
+In both cases the fill rate was fixed at 1 £t2 of salt per minute.
+The equivalent reactivity change as filling continues is nearly the same
+for the two cases, reaching 3.97% added excess reactivity for the full
+core in the first case, and 4.10% in the second. However, an important
+difference exists in the temperature coefficient of reactivity. The fuel
+composition obtained by freezing 0.39 of the salt results in a temperature
+coefficient of only 6.5 x 107° Ft as compared with 8.8 x 107° for the
+normal fuel. The latter value was used in evaluating the second accident
+in question.
+
+Since the reactivity transient is nearly the same for both accidents,
+but the temperature coefficient is less negative in the case of partial
+
+freezing, the power and temperature excursions are more severe in the case
+Fig 6 CONTROL ROD WORTH vs. POSIT]ON
+
+ 
+ORNL~LR-Dwg. TOOS57
+
+18
+
+lassified
+
+ 
+19
+
+of partial freezing, the power and temperature excursions are more severe
+in the case where part of the fuel salt is frozen. Figure 8 shows the
+calculated power and temperature behavior for this case. The initial power
+surge reaches 55.9 Mw 38.9 sec after criticality is attained if no cor-
+rective action is taken. Since the power rises very rapidly, heat transfer
+from the fuel to the graphite was neglected for the first minute of the
+excursion. Thus only the temperature coefficient of the fuel was effective
+in checking the power rise. This slightly overestimates the initial part
+of the power and temperature transients. It was assumed that the fuel and
+graphite would be in thermal equilibrium after 3 min and that the critical
+temperature would prevail. The power after 3 min was that required to keep
+the reactor at the critical temperature as fuel addition continued. The
+behavior between 1 and 3 min was not calculated accurately since this
+period represents a transition between the two models, neither one of which
+describes the condition exactly. However, the estimates of power behavior
+given in Fig. 8 during this time interval appears satisfactory for the
+analysis here, since no extreme condition is involved.
+
+Since the core would be only partly full during an accident of this
+type, there would be no circulation in the core loop and the high-temperature
+fuel would be confined to the active region of the core where it could not
+come into direct contact with the wells of the system. The fact that the
+core would not be full also eliminates the possibility of any significant
+pressure surge during the transient.
+
+The reactor behavior shown in Fig. 8 is based on the assumption that
+no corrective action of any kind is taken. This would require not only
+that the operators ignore the condition and continue filling at the normal
+rate for 13 min but that no automatic action, such as control rod reversal,
+occurs. The extent of the excursions can be drastically reduced by rel-
+atively mild corrective action even if filling is continued at the normal
+rate,
+
+In an accident of this type, the reactor period becomes very short
+while the power is still quite low. For the case in question, a 5-sec
+period would be reached 17.7 sec after attaining criticality and the power
+would be about 5.5 watts. It is-expected that the proposed nuclear in-
+
+strumentation will provide a reliable period indication at this power level.
+2000
+
+—~—
+
+800
+
+1600
+
+TEMPERATURE (7)
+
+1400
+
+1200
+
+10
+
+ao
+
+POWER (Mw)
+~~
+
+4
+
+20
+
+I
+
+6
+TIME (min)
+
+10
+
+ORNL-LR-Dwg. T0058
+
+ 
+
+12 4
+If insertion of the two available control rods at normal speed (~0.075%
+5x/k per second) is started when the period reaches 5 sec, the initial
+power peak is limited to 32 kw and the fuel temperature rise is less than
+1°F. The effect of the control rod insertion is strong enough that a
+moderate delay in the period channel would not result in an excessive
+power surge.
+
+If, in spite of the insertion of the control rods, fuel addition is
+continued until the core is full, the reactor will again become critical
+when the core is 93.5% filled. However, complete filling for this case
+will add only 0.19% excessive reactivity, and 2.21 min are required to
+add this amount. The reactivity is equivalent to an equilibrium critical
+temperature of 1229°F and the associated power transient would be very
+small because of the limited amount of reactivity that is available and
+
+the low rate at which it can be added.
+ther Filling Accidents
+
+Another situation which can lead to a filling accident is that in
+which the core is filled with normal fuel at the normal temperature but
+with all control rods fully withdrawn. In general, the response of the
+system would be similar to that for the accident described above. The
+maximum amount of excess reactivity available for this accident is only
+2.72% because the normal fuel composition is such that the reactor is
+slightly subcritical with only one control rod fully inserted and the
+other two nearly fully withdrawn. Thus, the consequences of the above
+accident would be much less severe than those resulting from filling the
+core with fuel from which 39% of the salt has been separated by freezing.
+
+Case 4 - Loss of Graphite from Core
+
+If a graphite stringer were to break completely into two pleces while
+fuel is in the core, and the upper end could float up,” fuel would move
+into the space just about the fracture, causing an increase in reactivity.
+The calculated effect is 0.0038% 6k/k per inch of stringer replaced with
+
+fuel at the center of the core, If the entire central stringer were
+
+ 
+
+*
+Rods and wires through the lower and upper ends of the stringers
+should prevent this accident.
+ea
+
+replaced with fuel, the reactivity would increase only 0.13% ok /x. This
+amount of reactivity would have no serious consequences, even if added
+instantaneously. (Actually the reactivity would be added in a ramp. The
+fuel flows upward at 8.6 in./sec and the graphite could not move up much
+faster than this because of drag.) Figure 9 shows the results of an in-
+stantaneous increase of 0.15% ok/k vith the reactor at 10 Mw. (Peak power
+and. temperatures would be lower for the same step at lower initial powers.)
+Rod reversal could effectively reduce peak power and temperatures for a
+0.15% 6k/k step, as shown by the dashed lines in Fig. 9, where a ramp of
+
+=0.075% 6k/k per second starts one second after the initial step increase.
+
+Case 5 =~ Fuel Additions
+
+If uranium were added to the circulating fuel in such a way that it
+remained concentrated in a small volume, a reactivity transient would be
+produced each time the "Lump" passed through the core.
+
+Additions of concentrated uranium to compensate for burnup will be
+part of the normal operation of the reactor. The design of the fuel ad~-
+dition system is such that only a small amount of uranium can be added in
+one batch, and the fresh uranium merges with the circulating fuel gradually.
+These limitations insure that the reactivity transients caused by a normal
+fuel addition are inconsequential.
+
+Fuel make-up is added through the sampler-enricher mechanism. Frozen
+salt (probably 73% LiF-27% UF, ) in a perforated container holding at most
+i2¢ g of ye35 is lowered into the pump bowl. There the salt melts and
+mixes into the 2.7 ft3 of fuel salt in the bowl. The 65-gpm bypass through
+the bowl gradually carries the added uranium into the main circulating
+stream. The net increase in reactivity from the addition of 120 g of y3d
+is 0.061% 6k/k, which will be automatically compensated for by the servo-
+driven control rod.
+
+A reasonable upper limit on the transients caused
+addition was calculated by postulating that 120 g of U
+circulating fuel at the same instant, that it was carried through the
+
+) a normal fuel
+232 entered the
+heat exchanger in a "front" and all entered the bottom of the core at the
+same instant, with equal amounts entering each of the fuel channels. For
+
+this situation, the reactivity increase due to the added uranium rises to
+}
+
+7.
+
+0.15 % bk/x step
+
+°
+F 3
+. <
+: 3
+¢ F
+2
+4
+0
+Q
+?
+<
+0
+a
+i
+a
+o
+or
+™
+
+o
+
+(mW) AIMS
+
+ 
+2k
+
+a meximum of 0.39% 6k/k in 3.8 sec, then decreases as the flat volume
+element containing the additional uranium moves up and out of the core.
+The power and temperature transients depend on the initial power. Fig-
+ure 10 shows results calculated for initial powers of 10 kw and 10 Mw,
+with no corrective rod action. The rate of reactivity addition by the
+meving fuel is slow enough to permit effective counteraction by the use
+of the rods. In the 10-Mw case if a negative reactivity ramp of =0.075%
+ok/k per second is started when the period reaches 5 sec, the power peak
+is reduced to 22 Mw, the fuel mean temperature rises only 10°F and the
+
+graphite rises less than 1°F.
+
+‘Case 6 - Uncontrolled Rod Withdrawal
+
+Excursions can be produced by uncontrclled withdrawal of the control
+rods. As a limiting case, it was assumed that the reactor had been shut
+down by inserting all control rods and that the system had been cooled to
+900°F with the fuel pump running. Under these conditions, with no xenon
+present, the reactor would be subcritical by 1.64%. (See Appendix for
+control rod worth assumptions.)
+
+Simultaneous withdrawal of all three control rods at the normal rate
+of 0.4 in./sec was then assumed. At this rate, the reactor would become
+critical 50.6 sec after the start of the rod motion and the control rods
+would be near the region of their maximum effectiveness.
+
+The severity of the transient depends on the power level to which
+the reactor has decayed at the time of the accident. Figure 11 shows the
+transients in power, pressure and fuel mean temperature as a function of
+time after the achievement of criticality for three different powers at the
+time Le = 1.0. After the initial excursion, the three cases merge into
+a single line for each cf the variables. The power would remain at about
+200 Mw until the warm fluid produced by the initial excursion returned to
+the core. Since the power is not significant until 6 sec after criticality,
+this re-entrance would occur in about 24 sec. At that time the power would
+decrease to the level required to heat the entire core loop and compensate
+the continued reactivity addition. The temperature would continue to rise
+until the rods stopped or were fully withdrawn from the core. The equi
+
+librium temperature with the rods fully withdrawn would be 1473°F, However,
+
+= Lil alg
+2
+A
+
+        
+
+of 235 Moving Through the Core
+buted Slug.
+
+TE (5eC)
+
+120 g
+
+Horizontally Distr
+
+Fig. 10 Effects of
+mn a
+
+<< ~ ©
+(1%) FBNSS3Ad (73%) aovwad (mia) HINO
+
+120
+
+(4:.) 2UNINYBAWIL
+   
+
+Yeo
+13
+
+QQ
+3 §
+—
+
+(=) 35104 1 3c4109.1
+
+/2
+
+«
+
+(759)  3¥NSSIwd
+
+Q 2
+of ° © ‘
+
+0
+a
+|
+
+ 
+
+1000}
+
+8
+
+6
+
+4
+
+12
+
+/0
+
+  
+
+©
+S
+(Ww) Y¥3Mmo
+
+800
+
+S
+> ~
+d
+
+(sec)
+
+TIME
+27
+
+since the graphite is heated much more slowly than the fuel (after 18 sec
+the graphite temperature is only 950°F), the mean fuel temperature might
+
+remain above this value for as long as 5 min.
+
+RESPONSE TO ARBITRARY ADDITIONS OF REACTIVITY
+
+In addition to the analysis of conceivable situations which might
+arise during the reactor operation, the response of the power, the core
+fuel and graphite mean temperatures and the core pressure to arbitrary
+changes in reactivity was calculated. The purpose was to delineate nore
+
+clearly the factors governing the kinetic behavior of the reactor.
+Ramp Additions
+
+If reactivity is added very slowly, the result will be a gradual in-
+crease in fuel and graphite temperatures at the rates necessary to cancel
+out the reactivity being added. The power will rise from its initial level
+to that required to heat up the reactor. Because of the transport lag in
+the loop, about 17 sec pass before the inlet temperature can reflect the
+increased outlet temperature resulting from the ramp. As the mean tempera-
+ture rises during this interval, the power must continue to increase to
+heat up the incoming fuel more and more. When the inlet temperature begins
+to rise, the power will level off.
+
+Figure 12 shows results (from an analog simulation) of the ramp ad-
+dition of 1% ok/k in 30 sec. The power was initially at 10 Mw, and the
+(simulated) radiator air flow and inlet temperature were left constant
+throughout. Note that the power had reached its peak before the ramp
+ended. Note also the relative sluggishness of the graphite temperature.
+(The graphite comprises 70% of the core heat capacity, but only 6% of the
+power is generated there.)
+
+As the ramp rate is increased, a power peak occurs earlier during the
+ramp addition, followed by a gradual increase as the required fuel mean
+temperature rises farther above the inlet temperature. Figure 13 shows
+results of three ramp additions of 10-sec duration. The development of
+the power peak as a function of ramp rate is clearly shown. These re=-
+sults and those described hereafter were obtained by a digital procedure,
+
+MURGATROYD, which only considers the case where the inlet temperature
+ 
+
+Pri,
+
++ rate bpm
+
+TIME (Sec)
+
+ 
+
+ 
+
+(MRR) Ramod
+Fig. 3 Responses Yo Ramps nf bus and 1% Sw/k 29.
+in 10 Seconds, Begmmng ot VO MW. ORNL-LR-Dwg. T0063
+
+ 
+
+6
+TIME (Sec)
+30
+
+remains constant. At low reactivity addition rates, the calculations give
+a gradual pressure increase in the reactor due to compression of gas in
+the pump bowl as the fuel expands. (In reality, the pressure control
+system would prevent most of such a rise.) Increasing the magnitude of
+the power excursion leads to & core pressure disturbance caused by in-
+ertial and fluid friction forces as the fuel between the core and the ex=-
+pansion space in the pump bowl is accelerated.
+
+The response of the system to reactivity ramps is strongly dependent
+upon the initial power of the reactor, since this affects the amount of
+excess reactivity which can be introduced before the rising power signifi-
+cantly affects the core temperatures.
+
+Figure 14 shows the power behavior resulting from ramp additions of
+2% in 10 sec, beginning at four initial powers from 10 watts to 10 mega-
+watts. The size of the early peaks in power is related to both ramp rate
+and initial power in Fig. 15. (Note that the relation does not exist at
+low rates of reactivity addition, where the early power peak does not
+exist, as in the 0.1%/sec case in Fig. 13.)
+
+Attending the sharper power increases are larger core pressure surges.
+(The inertial force is proportional to the first derivative of the power.)
+Figure 16 shows results of calculations for the cases for which the powers
+are shown in Fig. 15. The pressure shown is the calculated deviation of
+the core pressure from the initial value. At steady state with fuel circu-
+lating at 1200 gpm and the pump bowl. at 20 psia, the pressures in the core
+will range from about 29 psia at the bottom to about 23 psia at the top.
+The equations used to compute the pressure transients took no account of a
+lower limit on absolute pressure, which accounts for the impossibly low
+swings in pressure after the peaks in Fig. 16. Figure 17 relates the size
+of the pressure excursions to ramp rate and initial power.
+
+The behavior of the fuel mean temperature shown in Fig. 16 shows a
+progression toward a peak such as appears in the power at high rates of
+reactivity addition and low initial power. The first part of the tempera-~
+ture transient is seen to depend on initial power, but after a few seconds
+the temperature behavior is the same in all cases. (The power and pressure
+after the early transients are also practically independent of the initial
+
+power, as shown in Fig. 14 and 16.) The maximum fuel mean temperature
+POWER (Mw)
+
+   
+   
+  
+ 
+ 
+
+Fig. 14 Power
+
+3
+
+Annan
+
+at
+
+Response tv Ramps of 2% Sk in lo sec.
+16-5 10~2 107" ond 10 Mw.
+
+TIME (3eC.)
+
+31.
+PEAK Powtr (Mw)
+
+Se
+
+QO
+
+ 
+
+ 
+
+Fig 15 Maximum Perr Rancho wy Total
+Excursion for Ramp Heo rt iw veg Adel cdveng
+
+ 
+
+ 
+
+o Y OS
+
+Ol 0.2 03
+RAMP RATE (4h dk/k por sec)
+
+ 
+
+0b
+TEMPERATURE (°F)
+
+     
+
+80 i
+
+~5
+QQ
+
+PRESSURE (Psi)
+
+o
+
+1600 Hi
+
+15
+
+1400
+
+1300 |:
+
+1200
+
+Fig.l6 Pressure and Foel Mean Temperature Responae to Ramps 33,
+of 2 7 8k / le wm \O Seconds | Beam at 1075, o>, io! ard |O Mw,
+tegore (Pst)
+
+ 
+
+Fig. 17 Max ir sna
+CCoewthe 8 Ley
+
+2a wap
+
+      
+
+Ol 02
+
+Core,
+
+Prosnore
+
+Reackwvity ANdditions,
+
+as
+
+Reached
+
+oY
+
+wv Lnital
+
+as”
+
+RAMP RATE (¥ S/W per Sec.)
+
+«
+2 Ce
+EASE
+
+- .
+
+ae
+
+3h.
+reached as a result of a ramp addition depends eventually cn the total
+amount of reactivity added more than on the rate. Figure 18 shows the
+relation for ramps of duration long enough so that there is no dependence
+
+of fuel temperature on initial power.
+Step Additions
+
+MURGATROYD was used tc calculate a few cases of step additions of
+reactivity.
+
+For a step addition of a given amount of reactivity, the higher the
+initial power, the larger are the power, temperature and pressure tran-
+sients. Figure 19 shows the power transients caused by reactivity steps
+of various sizes, with the power initially at 10 Mw.
+
+A step of 0.338% 0k/k makes the reactor exactly prompt critical. Che
+response of the power and mean temperatures tc a step cof this size is shown
+in Fig. 20. This figure also shows that even for a prompt-critical step,
+peak temperatures can be reduced significantly by corrective rod action,
+even the rather slow action assumed in the case depicted.
+
+Pressure surges are not high unless the step is well above prompt
+critical. For the 0.338% step at 10 Mw the peak pressure {ab 0.6 sec) was
+only 1.3 psi; for the 1% step, the peak was 250 psi.
+
+The effect of initial power was investigated by calculating results
+of 2 0.338% step at 10 kw initial power. In this case the peak power was
+4 Mw (at 3.5 sec), the peak fuel mean temperature was 1286°F (at 9 sec}
+and the peak pressure was only 0.75 psi (at 3.0 sec).
+
+DISCUSSION
+
+In the analysis of the conceivable accidents, the assumptions and
+calculational methods were chosen to produce pessimistically high powers,
+temperatures and pressures. The results indicate that none of the concelva-
+‘ble accidents will lead to catastrophic failure of the reactor even if no
+corrective action is taken. Thus i%t can be said that the safety of the
+operators and the populace does not rely upon the functioning of external
+protective or corrective devices.
+
+The response to arbitrary ramp and step additions of reactivity show
+
+pressures which would burst the reactor.
+T0068
+
+RNTs~LR-Tnee
+
+0
+
+ 
+
+EE
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+(percent)
+
+3}
+<
+REACTIVITY ADDITION
+
+t
+
+TOTAL
+
+ 
+10
+
+POWER (Mw)
+
+37
+
+3
+TIME (Sec)
+
+ORNL-LR-Dwg. T0069
+ified
+
+ 
+ 
+
+CF)
+
+TEMP.
+
+POWER (Mw)
+
+TIME (Sec)
+
+ORNL-LR-Dwg. TOOTO
+lassified
+
+   
+Some of the postulated accidents lead to high temperatures which
+might strain the core internals, or other parts of the system, causing
+damage and interrupting operation. All of the damaging accidents are
+normally prevented by mechanical devices or operating procedures. Usu-
+ally there is multiple protection. In evaluating the chance of internal
+
+damage to the reactor, one must consider the probability of simultaneous
+feilure of all protective devices,
+40
+
+APPENDIX I
+
+DELAYED NEUTRONS
+
+The digital kinetics calculations whose results are reported here
+used values for yields and half-lives of delayed neutron precursors which
+were measured by Keepin and Wimett for thermal -neutron fission of y3,
+Five groups of delayed neutrons were included in the calculations. (The
+shortest~lived group lumped the shortest-lived two groups observed by
+Keepin and Wimett.)
+
+The effective yield with the fuel circulating was calculated for
+each group, assuming slug flow and uniform production of precursors over
+the core volume. The calculations assumed a flow rate of 1200 gpm, a core
+volume of 19.6 £t3, and an external loop volume of 46.4 £t2 (core residence
+time, 7.3 sec; external loop residence time, 17.3 sec). No weighting
+factors were applied to account for the differences in energy and spatial
+source distribution for the delayed and prompt neutrons.
+
+The total yield for all groups is 0.00640 delayed neutron/total
+neutron. The neutrons emitted in the core amount to 0.00338 delayed
+neutron/total neutron, a difference of 0.00302 caused by circulation.
+
+A breskdown by groups is given in Table A-l.
+
+Table A~l. Delayed Neutron Data Used in Kinetics Calculations
+by MURGATROYD
+
+ 
+
+ 
+
+Half-Life Decay Constant Yield Effective Yield
+Group (sec) (sec-1) (n/n) (n/n)
+
+1 55.9 0.0124 0.000211 0.000053
+2 22,7 0.0305 0.001402 0.000426
+3 6.22 0.1114 0.001254 0.000471
+L 2.30 0.3013 0.002528 0.001513
+5 0.508 1.364 0.001005 0.00090k
+
+0.006400 0.003377
+
+ 
+
+*
+Since these computations were made, six groups have been incorporatzsd in
+the MURGATROYD calculations.
+ha
+
+APPENDIX IT
+
+ 
+
+ 
+
+CONTROL RODS
+Need for Control Rods in Normal Operation
+
+During normal operation of the reactor, reactivity tends to decrease
+for several reasons. If the fuel temperature is held constant and no fuel
+is added to compensate for the decrease in reactivity, it will be necessary
+to withdraw a control rod (or rods) to compensate for: (1) the loss of
+delayed neutrons due to circulation; (2) the ingrowth of xenon=-135 during
+and after high-power operation; (3) power coefficient of reactivity (tem
+perature rise of graphite relative to fuel); end (4) burnup of U%32 in the
+fuel. Table A-2 shows the magnitude of these effects for normal operation
+at 10 Mw. With the exception of the delayed neutron losses which have been
+described on page 40, the numbers in Table A-2 core are taken from the first
+
+*
+Addendum to ORNL CF-6l-2-46, MSRE Preliminary Hazards Report.
+
+Table A=2. Effects Requiring Shim Action of Control Rods
+
+ 
+
+ 
+
+Effect ok/k, %
+Delayed neutron losses 0.3
+Xenon (equilibrium at 10 Mw) 1.3
+Power coefficient (10 Mw) 0.2
+Burnup (300 Mw-days) 0.2
+2.0
+
+ 
+
+Table A-2 does not include poisons which build up gradually in the
+fuel. Samarium-149 is one of the more important poisons; it will build
+up and start to level off at 1.1% 6k /k in about 3 months at full power.
+There are other fission products which will also saturate in a few weeks
+or months. Still other fission products, and corrosion products, will
+
+probably continue to build up throughout the operation of the reactor,
+
+ 
+
+*
+Recent data on stripper efficiencies lead to considerably higher
+
+estimates of xenon poison.
+causing a gradual increase in poisoning. Fuel additions will be used te
+compensate for the poisons which gradually build up.
+
+Another requirement for normal operation is that a shutdown margin
+be provided, so that the reactor is subcritical during startup and shutdown.
+This could be attained by using the loop heaters to raise the core tempera-
+ture above the critical temperature. A better way is to use a rod or rcds.
+The size of the shutdown margin is ciscussed later.
+
+Regulation is an important function of the control rods. One of the
+rods will be used in a servomechanism to hold either the nuclear power cr
+some temperature at a setpoint. A maximum deviation from the mean position
+of about 0.2% 0k/k is adequate for this purpose.
+
+Safety action, in the sense of rods moving very rapidly to decrease
+the reactivity, is not contemplated for the MSRE. The rods should be
+capable of compensating for unexpected relatively slow increases in re=-
+activity, however, (as by fuel permeation of the graphite) so as to protect
+the reactor from the excessive temperatures which would result. The rod
+
+worth which should be available for this function is not clear.
+Control Rod Worth
+
+The combined worth of all three control rods of the present design
+has been calculated to be 6.7% ok/k. The reactivity worth of single rods
+or groups of rods fully inserted or withdrawn is shown in Table A-3. (Rod
+
+No. 2 is diagonally opposite the graphite samples.)
+
+Table A~3. Control Rod Worth
+
+ 
+
+ 
+
+Arrangement Reactivity, % 0k/k
+All rods out 0
+Ko. 2 in, others out -2.8
+No. 1 or No. 3 in, others out -2.9
+No. 1 and 3 in, No. 2 out =5.3
+No. 2 and No. 1 or 3 in, other out -4.9
+
+All rods in =6.7
+
+ 
+h3
+
+Figure A<l shows predictions of rod effectiveness versus the length in-
+serted into the core. The most reliable prediction is based on calcu-
+lations with EQUIPOISE~3, a two=-group, two-dimensional, multiregion
+diffusion method. The curve shown should be a good representation for
+
+a single rod (or rods moving together) when the flux is not already per-
+turbed by another rod in the core. It should apply fairly well if arother
+rod 1s fully inserted, but the flux distortion by another rod inserted so
+that the rod end is near the center of the core would cause the curve to
+be considerably in error. The sine-squared curve is that predicted by
+the first-order perturbation approximation, and is shown merely for com-
+
+parison with the more accurate prediction.
+Deployment of Rods
+
+It has been planned that two rods be kept fully withdrawn during all
+operations so that their poisoning effect would be available to counteract
+fuel permeation of the graphite or other unexpected effects tending to
+increase reactivity. The remaining rod would be used for regulation, shim
+and shutdown. If the shim requirements are no larger than shown in Table
+A~2, control with a single rod is possible.
+
+One requirement of a combination shim-regulating rod is that the rod
+can travel far enough to provide the shimming necessary and that the speed
+be high enough at the ends of its shim movement and not too high in the
+middle for good regulation. Using the figures from Table A-2, from the
+time the reactor goes critical (with the fuel circulating) with a clean,
+fully fueled core until the reactor is at full power, with equilibrium
+xenon and the maximum burnup, the rod must be withdrawn 1.7% 6k/k. This
+is only 0.59 of the worth of rod 1 or rod 3 when the others are withdrawn.
+If one allows an additional 0.2% 6k/k at each end for regulation, the ex
+treme travel is 0.72 of the rod worth. The fuel concentration could be
+adjusted so that, at the extremes, the rod would be poisoning 0.88 and 0.16
+of its worth. Figure A-2 shows that the differential rod worth varies by
+only a factor of 1.5 over this range. This is quite acceptable since simu~
+lator tests showed good regulation over at least a fourfold range of rod
+
+speeds, from 0.02 to 0.08% 6k/k per second.
+FRACTION OF TOTAL WORTH
+
+°
+
+20
+DISTANCE
+
+30
+INSERTED
+
+40
+
+In.
+
+ORNL~LR-Dwg. TOOT1
+
+   
+lagsified
+
+ORNL-LR-Dwg. TOOT2
+
+I=%
+HOME Wad ROWDvxs
+
+ 
+
+   
+
+   
+
+ 
+  
+
+% 3 2d 5
+
+S , " oS
+PONE Wad Bamom aow Soy ac NOLO AL
+
+(in.
+
+30
+
+INSERTED
+
+DISTANCE
+46
+
+Another factor to consider is the shutdown margin. If the range is
+adjusted as described above, the reector would go critical with the fuel
+circulating when the rod is poisoning 0.82 of its worth. With the rod
+fuliy inserted the reactor will be subcritical by 0.18 x 2.9% or 0.52%
+0k/k while the fuel is circulating, or by 0.22% 6k/k with the fuel pump
+off. This assumes that the core is at the normal temperature. The core
+temperature could be as much as 0.0022/8.8 x 107° = 25°F below normal
+without the reactor reaching criticelity. Therefore, an error of less
+than this amount in temperature measurement would not lead to uninten=~
+tional criticality during filling.
+
+In the analysis of various incidents, one form of corrective action
+considered was a ramp of =0.075% 8k/k per second. Although this is an
+arbitrary rate, it corresponds to a value which could easily be obtained
+with the current control rod design.
+
+In determining the control rod speed, it was assumed that the rate
+of reactivity change should average 0.02% ok/k per second over the entire
+distance traversed by a single rod. For a rod worth 2.9%, this aversge
+rate corresponds to a Tull traverse of the rod range in about 150 sec.
+The travel time was fixed at 150 sec and, since the rod range is about
+60 in., this resulted in a rod speed. of about 0.4 in./sec.
+
+The corrective action postulated in the reactivity accidents was a
+reversal of all three rods at normal speed. Since the rod-worth curves
+are not linear (see Fig. A~l) the reactivity ramp resulting from a rod
+reversal depends on the initial rod positions. Figure A-3 shows the
+negative reactivity added as a function of time for two different initiel
+positions of the rods. In the first case it was assumed that Rod 1
+(worth = 2.9% 6k/k) was in a position of meximum differential worth end
+that Rods 2 and 3 were fully withdrawn. In the second case, the initial
+position of Rod 1 was the same, but Rods 2 and 3 were started from posi-
+tions where they were poisoning a total of 0.5% ok/k. Since it is clear
+from Fig. A-l that a fully withdrawn rod must travel several inches before
+it has any significant effect on reactivity, the initial ramp in case I
+is essentially that for a single rod moving at 0.4 in./sec in its region
+of maximum differential worth. The initial rate for case II (average for
+the first 6 sec) is =0.075% 6k/k per second -- the value used in studying
+
+the incidents.
+ORNL-LR~-Dwg. TOOT3
+
+h7
+
+= S
+(%%) AM -
+
+ 
+
+0.4
+48
+
+APPENDIX TIT
+
+ANALYSIS OF COLD SLUG ACCIDENTS
+
+The circulating-fuel reactor kinetics calculation which is coded for
+the IBM-7090 (MURGATROYD) cannot be used directly to compute behavior ir.
+a "ecold-slug" accident. One reason is that the "mean fuel temperature"
+is defined as the mean of the inlet and outlet, so a cold slug would appear
+as a step change in mean temperature (and reactivity) whereas actually e&
+cold slug causes a ramp change in the average fuel temperature. To cir-
+cumvent some of the shortcomings of MURGATROYD, the cold=~-slug accilderts
+were analyzed by the following procedure.
+
+In the first step, reactivity was calculated for cores which were
+at 1200°F except cooler fuel was considered in the lower part of the fuel
+channels. MODRIC, a multigroup, one-dimensional neutron diffusion cslcu.-
+lation was used to obtain the curves shown in Fig. A-hk. Microscopic cross
+sections appropriate for a neutron velocity distribution at 1200°F were
+usad-~-=only the density of the fuel in the lower part of the core was
+varied.
+
+At 1200 gpm, fuel passes from “he bottom of the core tc the top in
+7.3 sec. This rate was used directly to convert the curves of Fig. A-L
+to the curves of k vs time for various cold slugs shown in Fig. A-5., If
+the initial value of k at the beginning of the cold slug were low enougr.
+cc that the power did not rise and affect the fuel temperature, these
+curves in Fig. A-=5 would be the true variation of k from the initial
+value. Ratios of heat capacities and temperature coefficients of re-
+activity are such that heat transfer from the graphite to the ccld slug
+would have little effect. The tendency would be to lower the reactivity
+slightly below that calculated here.
+
+The next step was to run kinetics calculations in which the fuel tem-
+perature was not perturbed by any cold slug, but in which the reactor wes
+subjected to a reactivity transient such as would be produced by a cold
+slug unaffected by power feedback. Initial conditions were 1200°F fuel
+and graphite, k = 1 and a power of 10 kw. At zero time a negative step
+of 0.302% 6k/k was inserted to represent the loss of delayed neutron pre-
+
+. BN S48
+4 An AY nA MhAan a aapioa of worded Nres oA
+LO0 Commerc, LAalh oO series ¢ PCC CAVE ana
+Lg ORNL-~LR-Dwg. TOOTY
+
+ 
+
+Fig A-4 Excess Reactivihy Due to Replacing Part of
+Foel mn 1200° Core With Denser Fuel. (Fil $vom bottom ue.)
+(1a)
+
+ok / Kk
+
+ 
+   
+
+TIME
+
+ 
+ 
+
+(sec.)
+
+ORNL-LR-Dwg. TOOTS
+
+ 
+
+20
+
+05
+51
+
+negative ramp changes in reactivity was introduced to produce the varr-
+ation shown in Fig. A-5,
+
+The kinetics calculation gave transients in power, pressure, anc
+mean temperature. Results for 20- and 30-163, 900°F slugs are shown in
+Fig. A-6. In the other cases, temperatures never deviated from initial
+values by as much as 5°F.
+
+The end result was obtained by superimposing the transients of
+Fig. A-6 on those which would be caused by the cold slug without nuclear
+effects. This procedure amounts to representing the temperature of the
+fuel or of the graphite by the sum of two functions of time, one of which
+responds to the cooling effect of the cold fuel entering the core, the
+other responding to the nuclear heat generation. Variations in both
+affect the reactivity, which determines the power. The effect of the
+second temperature function is built into the kinetics calculation. The
+effect of the first is introduced through the reactivity transient which
+was imposed. Only the variation in the power-affected temperature affects
+the pressure, since the variation in the other mean temperature reflects
+only the movement of cold fuel from one part of the loop to another, not
+a change in the volume of fuel in the loop.
+
+The variation of the fuel and graphite mean temperatures during the
+passage of 10-, 20-, and 30-1t° slugs of 900°F fuel, without heat gener-
+ation in the core, are shown in Fig. A-T. The solid curves take into
+account heat transfer between the fuel and the graphite; the dashed lines
+show the fuel mean temperature which would result from the passage of the
+cold slug without heat transfer. The solid curves of Fig. A-T were com~
+bined with the temperature rise due to nuclear heating, shown in Fig. A-6,
+to obtain the net effect shown in Fig. k.
+
+Because of the low initial power, the period becomes quite short
+several seconds before the power has risen to a level causing any signifi-
+cant heating. Thus effective rod action can be initiated by the short-
+period signal. MURGATROYD was used to examine the behavior during a 20-£t°,
+900°F slug with two types of corrective action. In the first, a ramp of
+-0.075% ok/k was superimposed, beginning at 2.3 sec where the period
+reaches 5 sec. In this case the power peaked at 0.66 Mw at 8 sec, there
+
+was no significant pressure rise and the nuclear neating raised the fuel
+ORNL-LR-Dwg. TOOT6
+
+Unclagsified
+Transient
+
+hiv
+
+R
+
+r
+
+D Results
+
+ATR
+
+~°
+(3
+
+ 
+
+0) BVNINYWBAWIL
+
+hd 1
+
+(1S4) 3WNSSIUd
+
+        
+
+(MN) Xd3Mod
+
+4
+
+a
+
+  
+
+TIME (Sec.)
+Las
+
+%
+Fig, N-T Mean Temperatures
+ove bY 550.
+
+:
+
+of Fuel and Graphite nN
+Cold Slugs In all at
+
+bi
+
+       
+
+ 
+
+ 
+
+TIME (sel)
+5h
+
+mean temperature only 0.7°F. In the second case, =4.0% Ok/k was inserted
+between 3.2 and 4.2 sec (beginning when the period reached 2 sec). This
+limited the power "peak" to only 0.7 kw.
+
+During any substantial power excursion, material near the center of
+the core will be heated well above the mean temperature. Some calculations
+were done to estimate how high the peak fuel temperatures might go during
+the 20-1t3, 900°F slug without corrective action. In these calculations
+it was assumed that there was no heat transfer between the fuel and the
+graphite. Fuel temperatures were then calculated by integrating the heat
+production in the fuel. Figure A-8 shows results for a channel where the
+power density is 1.93 times the mean for the sore.” The initial power was
+only 10 kw, and at 6 sec, the profile shows practically no effect of heat-
+ing, only the cold front which has advanced to 52 in. by this time. Sub-
+sequent profiles show the temperature peak rising near the center of the
+core during the power surge, then moving on toward the outlet as the power
+drops. The entry of the 1200°F fuel behind the cold slug and the advance
+of this interface also shows. The dotted line shows how fuel which entered
+at a particular time heats up rapidly during the power surge, then more
+gradually as the specific power decreases because of the drop in total
+power and the movement of the fuel away from the center of the core.
+
+The temperature at the outlet of the channel is shown as a function
+of time in Fig. A-9. The heating of the fluid ahead of the cold slug, the
+drop as the leading edge of the cold slug arrives, and the abrupt rise as
+tne following fuel reaches the outlet are prominent features.
+
+Figure A-9 also shows a curve for the temperature at the vessel out-
+let, The temperature here is approximated by the mixed mean of the fluid
+issuing from all the channels, displaced in time by the mean residence
+time in the upper head. The peak and the break as the interfaces pass
+would actually be softened by the differences in transit times from various
+
+channel outlets to the vessel outlet.
+
+ 
+
+his ratio would apply to the central channels if there were no control
+rods or thimbles. In the actual reactor the maximum value of this ratio
+will be slightly lower because of the flux flattening resulting from the
+poison near the core axis.
+TEMPERATURE. (°F)
+
+—
+
+ro
+
+7
+1
+
+    
+
+ORNL-LR-Dwg. T0078
+classified
+6.
+FigA-a Power and Fuel Temperatures for 20 ft3 q00°F Slug ’
+
+a
+
+ 
+
+TEMPERATURE. (°F)
+
+POWER (Mw)
+
+TIME (Sec)
+pl
+
+APPENDIX IV
+
+COMPOSITION OF RESIDUAL LIQUID AFTER PARTIAL
+FREEZING OF MSRE FUEL SALT
+
+The compositicn of the liquid that remains after partial freezing cf
+the fuel salt determines the nuclear behavior of the reactor during a
+Lilling accident. Two estimates, based on different assumptions, have
+been made of the liquid composition as a function of the fraction of salt
+frozen. The first estimate, based on very simple assumptions was made
+early to permit the nuclear calculations to proceed. The second estimate,
+by McDuffie et al., was based on greater knowledge of the salt properties.
+The assumptions and results of the two approaches are discussed below.
+Since the quantities of interest in nuclear calculations are atomic con-
+
+ceptrations, the resultant compositions are presented in these terms.
+Preliminary Estimate of Fuel Composition
+This estimate was based on the following assumptions:
+
+1. Initial salt compesition
+
+Component Mol Fraction
+LiF 0.70
+BeFs 0.23
+ZrFy4 0.05
+ThFo 0.0L
+UF4 0.0L
+
+This composition leads to a higher uranium concentration than
+is required for criticality under normal conditions at 1200°F.
+To correct for this, the final uranium concentrations were
+
+corrected downward by the U:Th ratio in the critical reactor.
+
+2. Only the primary solid, 6 LiF.BeF,.ZrF4, appears as the tem-
+perature is lowered and this continues to form until all cof
+
+the zirconium has been consumed.
+
+3. The density of the remaining melt is proportional to its
+molecular weight with the density of the initial composition
+fixed at 154.5 1b/rt3 at 1200°F.
+5
+
+Estimate by McDuffie et al
+The following assumptions were used:
+
+1. Initial salt composition
+
+Component Mol Fraction
+LiF 0.70
+BeFo 0.237
+ZrFgy 0.05
+ThFg 0.01
+UF4 0.003
+
+The reduction in uranium concentration permits a smaller
+correction to make the final concentration compatible
+with criticality results. The extra 0.007 mol fraction
+
+was arbitrarily assigned to the BeFs.
+
+2. The primary solid, 6 LiF.BeFp.ZrF4, forms until the ZrFg
+mol fraction is reduced to 0.033. After this the scc-
+candary solid, 2 LiF.BeFp, forms in a 1:1 mol ratio with
+
+the primary solid.
+
+3. The salt density was obtained by dividing the molecular
+weight by the sum of the fractional molar volumes of the
+constituents. The molar volumes are empirically obtained
+values. An accuracy of 3% is claimed for this technique.
+However, application of the method to the standard (70-23-
+5-1-1) mixture leads to a density of 142.6 1b/ft3 at
+1200°F as opposed to a measured value of 154.5 1b/ft3.
+Since absolute densities are required for the nuclear
+calculations, a correction of 154.5/142.6 was applied to
+all of the calculated densities.
+
+Comparison of Results
+
+Figure A-10 shows the calculated atomic concentrations at 1200°F re-
+sulting from the two sets of assumptions. For ease of comparison, both
+uranium concentrations are referred to the same initial concentration---
+
+that corresponding to 0.003 mol fraction UFg. The only significant
+ORNL-LR-Dwg. T0080
+
+ 
+60
+
+difference in the two methods is in the zirconium concentration. However,
+this does not affect the nuclear calculations because only 107% of the
+
+neutron absorptions are in zirconium.
+
+APPENDIX V
+CRITICALITY CALCULATIONS FOR FILLING ACCIDENTS
+
+Multiplication constants were calculated with the aid of MODRIC, a
+one-dimensional, multiregion, multigroup neutron diffusion code, for all
+
+A we
+
+combinations of the following variables:
+
+H/L = 0.50, 0.75, 1.00
+T = 1200, 1300, 1400°F
+f = 0.15, 0.25, 0.39
+
+where f is the weight fraction of fuel frozen. Additional calculations
+were made at H/L = 1.00, f = O and T = 1200, 1300, and 1400°F to provide
+
+a basis for adjusting the results to agree with previous calculations.
+
+In all cases, the nominal atomic concentrations were adjusted for changes
+due to the variation of the fuel density with temperature; the coefficient
+of expansion of the normal fuel was applied to all compositions. Nuclear
+cross sections appropriate to the various temperatures were used.
+
+All of the MODRIC results were treated as nominal values, subject to
+adjustment. The value of k for the core filled with normal fuel at 1200°F
+was set at 1.00, The values at 1300 and 1400°F were set at 0.9912 and
+0.9824, respectively, by applying the previously calculated temperature
+coefficient of reactivity (-8.8 x 1077 °p-ly, The ratios of these values
+to the nominal values gave normalization factors to be applied at the
+various temperatures.
+
+An additional correction was applied to each of the calculated values.
+Because of control-rod position during filling, k = 0.997 for the reactor
+full of normal fuel at 1200°F. However, the worth of the control rods
+varies with the salt level in the core. Thus the correction which was
+applied was varied proportionately.
+
+Figure A-11 shows the net values of k_,. &s & function of H/L at
+
+1200°F for three fuel compositions. These curves permit evaluation of
+ORNL-LR-Dwg. TOO8L
+
+61
+
+classified
+
+ 
+
+ 
+
+ 
+the critical salt level as a function of composition (Fig. 7). The ef=
+fective temperature coefficients of reactivity were evaluated with the
+
+aid of similar curves at other temperatures. With 0.39 of the salt frozen,
+the temperature coefficient is only 6.5 x 1072°F"t,
+
+A similar approach was used for the postulated accident in which fuel,
+containing sufficient uranium for operation at 1400°F, is added to the re~
+actor at 900°F., A critical uranium concentration was first calculated for
+the full core at 1400°F. The atomic concentrations were then adjusted to
+900°F and k was calculated as a function of H/L. These values Were nor-
+malized to k = 1.044 at H/L = 1, the value corresponding to a temperatures
+coefficient of 8.8 x 107° op~l, The correction for control-rod position
+
+was also applied. Figure A-12 shows the net k, as a function of H/L.
+
+tf
+In order to predict the power and temperature behavior of the core,
+
+it was necessary to convert the curves of LS vs H/L into curves of k,
+
+£f ot
+
+vs time. This conversion was based on the variation of H/L with time
+during filling. Figure A-13 shows 4/L as a function of time for a fill
+rete of 1.0 £t3/min at 1200°F. Zero time on this curve is the time at
+which fuel salt begins to enter the core itself. The change of slcpe
+at H/L = 0.8 is due to the effect of the inlet volute and inlet line on
+the reactor vessel. Figure A-l13 was then combined with the curves of
+Fig. A=11 and A-12 to obtain the reactivity curves from which power and
+
+temperature were calculated.
+63 ORNL-LR-Dwg. T0082
+Unclassified
+
+ 
+Hh ORNL-LR-Dwg. 70083
+
+ 
+on
+1
+
+APPENDIX VI
+REACTIVITY WORTH OF INCREMENTS OF URANIUM
+
+The increase in reactivity which would be produced by the addition of
+a small amount of uranium at some point in the core, which is initially
+critical, is a quantity of interest in the analysis of the reachor., This
+guantity was used to calculate an upper limit on the upset which could he
+produced by the rapid addition of fuel in such a way that the core uraniim
+concentration increased nonuniformly.
+
+Reactivity worth of uranium as a function of position was calculated
+as fellows: Criticality calculations by MODRIC showed that at 1200°F ha
+cere critical mass is 16.2 kg USS” and (6kx/x)/(6M/M) = 0.28. Thus for
+ig 32 evenly distributed in the core, 8k /k = 1.72 x 1077, Fas? and
+slow neutron fluxes and adjoints have been computed by EQUIPOISE-3, The
+
+product of the fast adjoint and the slow flux at a point was used as the
+
+measure of the nuclear importance of that point. Thus for 1 g 232 av
+position r,s
+*
+(6° 0),
+I(z,r) = ——2X2% y 1,70 x 107°
+(¢) ay
+Figure A-lk shows the reactivity effect of an increment of 1 g y235 as &
+
+function of position in the core.
+In the analysis of the fuel addition, it was postulated that the Sul
+y 2
+concentration was uniform except for a flat "pancake" containing an ade
+
+.
+
+ditiomal 120 g ye3d which moved up through the core. The reachivity work
+
+cr importance of uranium evenly distributed over a horigontal plare ab oo
+
+is
+
+1 R
+(2) = 25 / I(r,z) oar ar
+MR”
+This integration was carried out graphically for the values of z shown
+in Fig. A-l4. The results were used to obtain Fig. A-15, which shows %he
+reactivity effect of an increment of 120 g u?32 evenly distribubtad in
+a horizontal plane moving through the core at the average speed of the
+
+circulating fuel.
+
+gcb
+ORNL~LR-Dwg. TOOBM
+
+ 
+ORNL-LR-Dwg. T0085
+
+04
+
+03
+
+~
+o
+(CAPR 4) ALINLDvay
+
+ 
+
+o
+-69-
+
+Internal Distribution
+
+ 
+
+l. S. E. Beall
+2. M. Bender
+3. E. S. Bettis
+4, F. PF. Blankenship
+5. A. L. Boch
+6-7. R. B. Briggs
+8. H. C. Claiborne
+9. J. R. Engel
+10. A. P. Fraas
+11. G. R. Grimes
+12. P. N. Haubenreich
+13. P. R. Kasten
+14. R. N. Lyon
+15. H. G. MacPherson
+16. W. D. Manly
+17. W. B. McDonald
+18. A. J. Miller
+19. R. L. Moore
+20. C. W. Nestor
+21. A. M. Perry
+22. M. W. Rosenthal
+23, H. W. Savage
+24. A. W. Savolainen
+25. M. J. Skinner
+26. I. Spiewak
+27. J. A. Swartout
+28. A. Taboada
+29. J. R. Tallackson
+30. D. B. Trauger
+31-32. Central Research Library
+33-35. Y-12 Document Reference Section
+36-38. Laboratory Records Department
+3G. LRD«RC
+
+External Distribution
+
+40-54, Division of Technical Information Extension (DTIE)
+55. Research and Development Division, ORO
+56-57. Reactor Division, ORO

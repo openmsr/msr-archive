@@ -1,0 +1,359 @@
+ 
+
+OAK RIDGE NATIONAL LABORATORY
+
+OPERATED BY For Internal Use Only
+
+ 
+
+UNION CARBIDE CORPORATION
+
+“= 0 R N 1
+sour orrce 4c CENTRAL FILES NUMBER
+
+OAK RIDGE, TENNESSEE 37831
+
+ 
+
+65-3=-1
+
+ 
+
+ 
+
+ 
+
+DATE: March 3, 1965 COPY NO. A
+
+SUBJECT: Comparison of Calculations and Uncertainties in the
+Temperature Coefficients of Reactivity in the MSRE
+
+TO: Distribution
+
+FROM: B. E. Prince
+
+ABSTRACT
+
+Several calculated values for the MSRE temperature
+coefficients of reactivity have been reported in dif-
+ferent sources. These values are compared and their
+bases discussed in this memorandum. Calculations based
+on new experimental data for the temperature coefficient
+of expansion of the fuel salt are also included. Ranges
+of uncertainty in the current "best values" of tempera-
+ture coefficients of reactivity and critical concentra-
+tion are suggested, and the implication of these un-
+certainties in the zero power critical experiments are
+discussed. It is concluded that, with presently planned
+procedures, the expected uncertainties will not reduce
+reactor safety below that previously reported in the
+MSRE safety report.
+
+NOTICE
+
+This document contains information of a preliminary nature and was prepared
+primarily for internal use at the Oak Ridge National Laboratory. It is subject
+to revision or correction and therefore does not represent a final report. The
+information is not to be abstracted, reprinted or otherwise given public dis-
+semination without the approval of the ORNL patent branch, Legal and Infor-
+mation Control Department.
+INTRODUCTION
+
+In the course of obtaining estimates of basic nuclear design para-
+meters for the MSRE, several values have been reported for the critical
+concentration and temperature coefficients of reactivity. One should
+first note that these calculations have had an evolutionary aspect, that
+is, the more recent calculations are generally considered to be "better",
+either in terms of the physical model or the basic nuclear data used in
+calculating the reported characteristic. In the case of the critical
+concentration, the most recent computations have been reported in Ref. 1 along
+with a discussion of the origin of differences from previous calculations.
+In this memorandum we shall try to achieve some clarification of the second
+
+case, that of the temperature coefficients of reactivity.
+
+DISCUSSION
+
+The earliest reported calculations of the temperature coefficients
+for the final MSRE core design were those of Nestor.= As indicated in
+Table 1, two-group bare reactor theory was used, together with the specific
+assumptions:
+
+1. The neutron temperature and the graphite temperature are identical.
+
+~ 2. The effects of changes in reactor size are negligible.
+
+3. The Fermi age is a function only of the graphite density.
+
+4k. The resonance escape probability, fast effect, and n for yo
+were independent of temperature.
+The fuel salt analyzed by Nestor contained ~0.5 mol % UF) , 93% enriched in
+7 in a carrier salt composition of T70/24/5/1 mol % LiF/BeF,/ZrF, /ThF, .
+This salt is designated as Fuel A. Subsequent to Nestor's work, it was
+decided not to include thorium in the first MSRE fuel salt mixture, and
+to use instead a salt composed of ~0.2 mol % UF) , 93% enriched in Ue, in
+a carrier salt of 67/29/4 mol % LiF/BeF,/ZrF) . This salt is designated as
+Fuel B. New calculations of the temperature coefficients were required,
+and this time use was made of two-group perturbation theory to check the
+validity of the one-region approximation.” The remaining assumptions used
+
+in the earlier calculations were retained. These results are given in
+ 
+
+Table 1. Comparison of MSRE Temperature Coefficients of Reactivity
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Temperature Coefficients Temperature Coefficients
+Fuel Salt of Reactivity of Expansion .
+Case eo o +5 o 1At5 Computational Refer-
+Composition (Ak /k/°F) x 1072) (20/0/°F) x 1072) Model noo
+Fuel Graphite Fuel Graphite
+1 A —2.8 —6.0 -12.6 —0.4 Mult. const. (k.): Two 2
+group, bare reactor
+theory.
+Slowing down spectrum:
+Determined by Fermi age
+in graphite.
+Thermal spectrum: Maxwell-
+Boltzmann approximation.
+2 B 4.5 ~7.3 12.6 0.4 ke: Two-group perturbation 3
+theory.
+Slowing down and thermal
+spectrum same as case 1.
+3 A —3.0 —3.0 -11.8 ~1.0  k,: Same as case 1. 6
+In ~~ B 5.0 —4.9 —11.8 -1.0 Slowing down spectrum:
+GAM-1 program calcula-
+tions.
+5 C —3.3 —3.7 -11.8 ~1.0 Thermal spectrum: THERMOS
+\ program calculations.
+6 Cc 5.6 —4.0 -18.6 ~1.0 k,: Same as case 1. This
+: . memo -
+Slowing down spectrum: randum
+
+GAM-2 program calcula-
+tions.
+
+Thermal spectrum: THERMOS
+calculations.
+
+ 
+line 2 of Table 1. Together with the perturbation theory calculations,
+estimates based on a one-region homogeneous model were also made for fuel
+B. The resulting coefficients were found to compare within 5 to 10%,
+indicating that the detailed description of the external regions of the
+core (downcomer, top and bottom heads, etc.) did not significantly in-
+fluence the reactivity coefficients. Note, however, that the magnitude
+of the temperature coefficients differs from the earlier calculations
+primarily because of the change in fuel salt composition. With fuel B
+the reactor neutron spectrum is more thermalized and the effect of salt
+density changes on the leakage factors is proportionally larger.
+
+A further request was made to examine the possibility of increasing
+the total uranium content of the salt to the range of 0.8-0.9 mol % UF),
+(~35% enriched for criticality, designated fuel C). About this same time,
+two new computer programs were acquired by use of which detailed calcula-
+tions of the slowing down and thermal spectra could be made. Specifically,
+the GAM-1 program’ 1s based on consistent P-1 theory for calculation of
+the slowing down spectrum in finite, homogeneous mixtures. The THERMOS
+program’ numerically solves the Boltzmann equation for the thermal spectrum
+in a one-dimensional lattice cell, and thus allows the temperature of the
+fuel salt and graphite to be independently varied. A minor complication
+in the GAM-1 calculation for the MSRE spectrum was that the then-available
+I and Fo,
+
+The other advantages of the GAM-1 calculation were considered sufficient,
+
+6
+version of the cross section library did not include Li , Li
+
+however, to warrant simulating the slowing down effect of the lithium and
+fluorine by an equivalent amount of oxygen, which was included in the GAM-1
+cross section library. With these programs available, it was decided to
+recalculate the temperature reactivity coefficients for all three fuels
+under consideration, and to further examine the validity of some of the
+assumptions underlying previous calculations. The results are summarized
+in lines 3, 4, and 5 of Table 1. The major difference in these results
+
+and previously reported values is in the graphite temperature coefficient.
+This difference arises primarily in the temperature dependence of the
+thermal spectrum. For the MSRE lattice, (a) the thermal spectrum is not
+
+determined by the graphite temperature (assumption 1, above ) but depends
+
+ 
+on the temperature of the fuel channel as well, and (b) the Maxwell-
+Boltzmann approximation predicts too large a change in the thermal dif-
+fusion length as the temperature is varied.
+
+Other differences are also reflected in the values given in lines 3,
+4, and 5 of Table 1. These include the modified estimate of the graphite
+expansion coefficient, based on an average of longitudinal and transverse
+expansions, and changes due to explicit treatment of the temperature de-
+pendence of resonance absorption (assumption h, above). In general, these
+differences were smaller than that due to the spectrum effect discussed
+above.
+
+Very recently, new experimental data has become available for the
+density and temperature coefficient of expansion of fuel salt c.! These
+new data indicate that the expansion coefficient is nearly 60% larger in
+magnitude than assumed in the preceding calculations. The previous values
+had been based on estimated temperature variations in the molar volumes of
+the salt constituents.o
+
+Also subsequent to the last reported calculations, acquisition was
+made of the GAM-2 program, an improved version of GAM-1l, described above.
+By means of this new program, the slowing down effects in lithium and
+fluorine could be treated explicitly. The program has already been used
+to revise estimates of critical concentration and control rod worth,” and
+a set of temperature coefficients of reactivity for fuel C was also re-
+calculated based on the new density data and the GAM-2 program. These
+results are summarized in line 6 of Table 1. As may be expected, the new
+expansion coefficient causes a significant increase in the fuel tempera-
+ture coefficient of reactivity. Also, the explicit treatment of the
+slowing down by lithium and fluorine, particularly the inelastic scat-
+tering of fluorine, has the effect of further thermalizing the reactor
+spectrum. Hence both fuel and graphite reactivity coefficients are in-
+creased.
+
+Most of the changes summarized in Table 1 have had the effect of
+making the fuel, or prompt temperature coefficient of reactivity more
+negative. In turn, the changes appear to improve the safety and stability
+margins for reactor operation. The question still remains, however,
+
+as to the absolute uncertainties in these parameters. A method is
+presently being investigated by which the uncertainty in the basic library
+of nuclear cross section data and densities can be related to the un-
+certainties in the nuclear design parameters (critical concentration, etc.).
+The basic notion is that of relating the standard deviation in the cal-
+culated parameter to the standard deviations in the cross sections and
+densities. This method would indicate the sensitivity in the parameters
+
+To uncertainties in all basic data used in calculation, and would be use-
+ful in later evaluation of results from the reactor critical experiments.
+This 1s not complete at the date of this writing and could not be included.
+However, since the validity of most of the main assumptions in the computa-
+tion have been checked, it appears reasonable to assign a confidence in-
+terval of +10% to the critical concentration and +25% to the temperature
+coefficients of reactivity. Because of the "slope-like" nature of the
+latter quantity, it is expected to be the more sensitive of the two to
+errors in data and computational methods.
+
+For all of the conceivable incidents previously analyzed which could
+result in significant additions of reactivity, only the so-called cold
+slug accident would lead to a more severe transient if the fuel temperature
+coefficient of reactivity were more negative. This incident is not ex-
+pected to lead to dangerous or damaging conditions, and in addition,
+precaution will be taken not to start fuel circulation unless the control
+rods are inserted in the core. Thus, safe operation should be insured
+for all values of the fuel reactivity coefficients indicated in Table 1.
+
+The procedures of the initial critical experiments will be designed’.
+to allow greater uncertainty in the clean critical concentration than the
+10% margin suggested above. The initial addition of uranium to the salt
+in the drain tanks will be ~65% of that predicted for criticality at zero
+power with all rods withdrawn from the core. The second addition is
+anticipated to be that amount to bring the salt within 87% of the critical
+mass. From this point on, the amount in each addition will be determined
+by inverse count rate measurements. Even if the minimum critical mass
+were exceeded, this would only mean that criticality would be achieved
+with the rods slightly inserted and would not require other special
+
+procedures.
+{(y
+
+The uncertainty in the temperature coefficients of reactivity has no
+effect on procedures in the zero power critical experiments. The coef-
+ficients will be measured along with the rod calibration experiments, and
+any large discrepancy between measured and calculated coefficients will
+be taken into consideration in the planning and operation of experiments
+
+at higher power levels.
+REFERENCES
+
+1. "MSRP Semiann. Prog. Rep. Jan. 31, 1964," USAEC Report ORNL-3626,
+p. 535k.
+
+2. "MSRP Semiann. Prog. Rep. Aug. 31, 1961," USAEC Report ORNL-3215,
+p. 83.
+
+35. B. E. Prince and J. R. Engel, "Temperature and Reactivity Coef-
+ficient Averaging in the MSRE," USAEC Report ORNL-TM-379, Oak Ridge National
+Laboratory, October 15, 1962.
+
+L. G. D. Joanou and J. S. Dudek, "GAM-I: A Consistent P-1 Multi-
+group Code for the Calculation of Fast Neutron Spectra and Multigroup
+Constants," USAEC Report GA-1850, General Atomic, June 28, 1961.
+
+5. H. C. Honeck, "THERMOS: A Thermalization Transport Theory Code
+for Reactor Lattice Calculations," USAEC Report BNL-5826, Brookhaven
+National Laboratory, September 1961.
+
+6. P. N. Haubenreich, et al., "MSRE Design and Operations Report -
+Part III, Nuclear Analysis," USAEC Report ORNL-TM-730, p. 37-47, Feb. 3, 196k.
+
+7. B. J. Sturm, Reactor Chemistry Division (report in preparation).
+
+8. 8. Cantor, "Reactor Chem. Div. Ann. Prog. Rep. Jan. 31, 1962,"
+USAEC Report ORNL-3262, p. 38. |
+9. "MSRP Semiann. Prog. Rep. July 31, 196k," USAEC Report ORNL-3708,
+p. 95-96.
+
+10. S. J. Ball and T. W. Kerlin, "MSRE Stability Analysis, USAEC
+Report ORNL-TM-1070 (in preparation).
+
+11. S. E. Beall, et al., "MSRE Design and Operations Report - Part IV,
+Reactor Safety Analysis Report," USAEC Report ORNL-TM-732, Oak Ridge
+National Laboratory, p. 196-231, August 196k.
+
+12. P. N. Haubenreich, private communication (part of summary of
+
+test program, in preparation).
+10
+
+INTERNAL DISTRIBUTION
+
+1. MSRP Director's Office 28. R. L. Moore
+Rm. 219, 9204-1 29. E. A. Nephew
+2. Se. J. Ball 50. R. C. Olson
+5. H. F. Bauman 51. A. M. Perry
+4. 8S. E. Beall 32. P. H. Pitkanen
+5. L. L. Bennett 55. C. M. Podeweltz
+6. E. S. Bettis 34. C. A. Preskitt
+(. F. F. Blankenship 55-39. B. E. Prince
+8. 8S. Cantor 40. M. Richardson
+9. R. S. Carlsmith 41. M. W. Rosenthal
+10. R. D. Cheverton 2. D. Scott
+11. H. C. Claiborne 43. M. J. Skinner
+12. C. W. Craven, Jr. LL. 0. L. Smith
+13. J. G. Delene 45. J. R. Tallackson
+14. J. R. Engel 46. R. E. Thoma
+15. T. B. Fowler 47. W. E. Thomas
+16. C. H. Gabbard 48. M. L. Tobias
+17. J. J. Geist 49. M. E. Tasgaris
+18. E. H. Gift 50. R. Van Winkle
+19. W. R. Grimes 51. D. R. Vondy
+20. R. H. Guymon 52. F. G. Welfare
+21. P. N. Haubenreich 55. J. V. Wilson
+22. A. Houtzeel 54. K. J. Yost
+23. L. Jung 55-56. Central Research Library
+24. T. W. Kerlin 57-58. Document Reference Section
+25. H. G. MacPherson 59-60. Reactor Division Library
+26. W. B. McDonald 61-63. Laboratory Records
+27. H. F. McDuffie 64. ORNL-RC
+EXTERNAL DISTRIBUTION
+65. S. K. Breslauer, AEC, Washington
+66-67. D. F. Cope, Reactor Division, AEC, ORO
+68. R. W. Garrison, AEC, Washington
+69. H. M. Roth, Division of Research and Development, AEC, ORO
+7Q. W. L. Smalley, Reactor Division, AEC, ORO
+fl. M. J. Whitman, AEC, Washington
+2. J. B. Lingerfelt, AEC, ORO

@@ -1,0 +1,2117 @@
+ 
+
+ 
+
+ 
+
+ini eh
+
+PHYSICS
+
+3 4456 0353177 4
+
+ 
+     
+
+FORCED CONVECTION HEAT TRANSFER
+IN PIPES WITH VOLUME HEAT SOURCES
+
+WITHIN THE FLUIDS
+
+RID ISL
+OAK RIDGE NATIONAL LABORA
+CENTRAL RESEARCH LIBRARY
+PlelelilVI-0N COLLECTION
+
+LIBRARY LOAN COPY
+
+NSFER TO ANOTHER PERSON
+se to see fLTE
+TLC
+
+ER CART
+TLE CL]
+document, send in name with doc
+and the library will arrange a loan
+
+OAK RIDGE NATIONAL LABORATORY
+
+OPERATED BY
+
+CARBIDE AND CARBON CHEMICALS COMPANY
+
+A DIVISION OF UNION CARBIDE AND CARBON CORPORATION
+
+uct]
+
+POST OFFICE BOX P
+OAK RIDGE. TENNESSEE
+
+ 
+UNCLASSIFIED
+-_ ORNL-1395
+
+This document consists of 39
+pages. Copy. BS of 335 copies.
+Series A.
+
+Contract No. W-7405, eng 26
+
+Reactor Experimental Engineering Division
+
+FORCED CONVECTION HEAT TRANSFER IN PIPES WITH VOLUME
+HEAT SOURCES WITHIN THE FLUIDS
+
+by
+
+H. F. Poppendiek
+L. D. Palmer
+
+DATE ISSUED
+
+OAK RIDGE NATIONAL IABORATORY
+Operated by
+CARBIDE AND CARBON CHEMICALS COMPANY ns
+A Division of Union Carbide and Carbon Corporation aE
+
+ri
+wyushb 035337
+3
+
+UNC _.c LED
+ 
+
+ORNL 1395
+Physics
+INTERNAL DISTRIBUTION
+1. G. T. Felbeck (C&CCC) 42. A. S. Kitzes
+2, Biology library L3. O. Sisman
+3. Health Physics Library Lh. R. W. Stoughton
+L. Metallurgy Library - 45. C, B. Graham
+5-6. Training School Lilwary L6. W. R. Gall
+7. Reactor Experimental "4. 47. H. F. Poppendiek
+Engineering Library : L8. S. E. Beall
+8-13. Central Files L9., W. M, Breazeale
+1. C. E. Center 50. J. P. Gill
+15. C. E. Larson 51. D. D. Cowen
+16. W. B. Humes (K-25) 52. P. M. Reyling
+17. L. B, Emlet (Y-12) 53. M. J. Skinner
+18. A. M. Weinberg 54. W. B. Berggren
+19. E. H. Taylor 55. E. S. Bettis
+20. E, D, Shipley 56. J. 0, Bradfute
+21. C. E, Winters 57. L. Cooper
+22. F, C. Vonderlage 58. W. B. Cottrell
+23. R. C, Briant 59. C. P. Coughlen
+24. J. A. Swartout 60. G. A. Cristy
+25. S. C, Lind 61. W. K. Ergen
+26, F, L. Steahly 62. W. S. Farmer
+27. A. H. Snell 63. A. P. Fraas
+28. A. Hollaender 64. D. C. Hamilton
+29. M, T. Kelley 65. W. B. Harrison
+30. W. J. Fretague 66, H. W. Hoffman
+31. G. H. Clewett 67. P. R. Kasten
+32. K. Z. Morgan 68. J. I. Lang
+33. J. S. Felton 69. N. F. Lansing
+34. A. S. Householder 70. B. Lubarsky
+35. C. S. Harrill 71. F. E. Lynch
+36. D. S. Billington 72. C., B. Mills
+37. D. W. Cardwell 72, L, D, Palmer
+38. E. M. King 74. W. D. Powers
+39. R. N. Lyon 75. R. F. Redmond
+LO. A. J. Miller 76, H. W. Savage
+L1. R. B. Briggs 77..G. F.. Wislicenus
+78. P. C. Zmola
+
+EXTERNAL DISTRIBUTION
+
+79. C. R. Russell, AEC, Oak Ridge
+80. W. J. Larkin, AEC, Oak Ridge
+81-335, ¥iven distribution as shown in TID=4500 under Physics
+Category
+
+DISTRIBUTION PAGE TO BE REMOVED IF REPORT IS GIVEN PUBLIC DISTRIBUTION
+ 
+
+ 
+
+TABLE OF CONTENTS
+
+Page
+SUMMARY . +. + « « « oo « oo o eo so o + so & eo «a2 a a by
+NOMENC LATURE » . . - . . . . . . ° ° e -* . . * . . 5
+INTR opuC T TI ON . o * -. . . . * . - . . . . . . . * . 8
+
+LAMINAR FLOW ANALYSIS . . + + + « « « + oo so oo oo « o 10
+TURBULENT FLOW ANALYSIS . * a - o - * . ” - * ® o -. -* * 15
+A. Radial Heat Flow Distribution. . . . . . «+ « «+ + 19
+
+B. Radial Temperature Distribution . . . . . . «+ + +. . 19
+Laminar Sublayer . . + + « « +o o a o « + = 21
+
+Buffer Layer, +. « « « « « + « a o o o o o 21
+
+Outer Turbulent Layer. . . + «+ « « o « + + o =» 23
+
+Inner Turbulent Layer, . . + « + oo + oo « o oo 2h
+
+C. Difference Between Pipe Wall and Mixed-Mean . . . . . . 25
+Fluid Temperature
+
+D. Superposition of Boundary Value Problems (18) and (19). . . 28
+DISCUSSION . + + « +o « o 2 o o o o « o so +s o . 31
+APPENDIX 1. + + 4 4 « +o oo « o « o +o oa o oo « = « 32
+APPENDIX 2. . 4 o « o « « o ao so a « oo o o o . oe 34
+APPENDIX 3. . & « « « oo oo so so +o os so oo o o o .  . 37
+
+REFERENCES . . . . . . . . . . . » ° ° . - e - . . 39
+ 
+
+SUMMARY
+
+This paper concerns itself with forced convection heat transfer in long,
+smooth pipes whose flowing fluids contain uniform volume heat sources; also,
+heat is transferred uniformly to or from the fluids at the pipe walls. Di-
+mensionless differences between the pipe wall temperature and the mixed-mean
+fluid temperature are evaluated in terms of several dimensionless moduli. These
+
+analyses pertain to liquid metals as well as ordinary fluids.
+€1,C2,C3
+
+€0s€1,©2,€3
+
+NOMENCLATURE
+
+Letters
+
+cross sectional heat transfer area, £2
+fluid thermal diffusivity, £t°/hr
+parameter in equation (f), ft/hr
+parameter in equation (23), dimensionless
+fluid heat capacity, Btu/lb OF
+
+parameters in equation (26), dimensionless
+parameters in equation (31), dimensionless
+parameter in equation (hn), dimensionless
+gravitational force per unit mass, ft/hr®
+parameters in equation (34), dimensionless
+heat transfer conductance, Btu/hr ft OF
+fluid thermal conductivity, Btu/hr ft2 (°F/ft)
+fluid pressure, 1bs/ft2
+
+heat transfer rate, Btu/hr
+
+redial distance from pipe centerline, ft
+
+radial position at which the reference temperature
+tq is stipulated, ft
+
+pipe radius, ft
+parameters in equation (33), dimensionless
+fluid temperature at position n, Op
+
+a reference temperature at radius rg, °F
+
+mixed-mean fluid temperature, OF
+© YX << =
+
+A Ao
+
+a'=1 - Pr
+
+o
+|
+
+b!
+
+= -0.0304 Pr Re
+
+fluid temperature
+fluid temperature
+fluid temperature
+fluid temperature
+
+fluid velocity at
+
+at
+
+at
+
+at
+
+at
+
+n,
+
+mean fluid velocity,
+
+pipe wall, Op
+
+nj, °F
+no, Og
+the pipe center, Op
+ft/hr
+
+ft /hr
+
+volume heat source, Btu/hr ft2
+
+axial distance, ft
+
+radial distance from pipe wall, ft
+
+fluid weight density, lbs/ft”
+
+eddy diffusivity, ft2/hr
+
+friction factor defined in equation (c), dimensionless
+
+absolute viscosity of fluid, 1b hr/ft2
+
+fluid kinematic viscosity, £t2/hr
+
+fluid mass density, lbs nr2 eet
+
+fluid shear stress at position n, 1bs/ft2
+
+fluid shear stress at pipe wall, lbs/ft2
+
+Terms
+
+ 
+
+0.9
+
+0.0152 Pr Re®*?
+
+b''= 0.0304 Pr Re’?
+
+= dt
+~ dr
+ny
+np
+nr,
+Nu
+Pr
+
+Re
+
+n
+
+i
+
+it
+
+Dimensionless Moduli
+
+Lo (3)
+Wr, dA °
+
+¥/To
+
+¥1/To
+
+Y2/To
+
+yL/T,
+
+h 2r,/k, Nusselt Modulus
+V7 cp/k, Prandtl Modulus
+
+u 2r,/? , Reynolds Modulus
+
+E
+p
+oF
+
+?
+ 
+
+INTRODUCTION
+
+At times it is necessary to determine the radial temperature distributions
+in flowing fluids that possess internal sources of heat generation. Consider the
+heated-tube system (electric current passing through the tube walls) which is now
+so commonly being used to measure convective heat transfer conductances. It is
+of interest to known how much the electrical volume heat source influences the
+radial temperature distribution when a significant fraction of this source is
+generated within the flowing fluid. Such volume heat source problems also arise
+in fluid flow systems in which continuous chemical reactions are being supported
+within the fluids; a combustion heating system represents a specific example.
+
+Particular volume heat source systems have been considered in this paper.
+Mathematical temperature solutions were developed for a circular-pipe volume
+heat source system for the cases of laminar and turbulent flow (reference 1).
+
+The idealized system to be considered is defined by the following postulates:
+
+1) Thermal and hydrodynamic patterns have been
+established (long pipes).
+
+2) Uniform volume heat sources exist within the
+fluid.
+
+3) Physical properties are not functions of
+temperature.
+
+4) Heat is transferred uniformly to or from the
+fluid at the pipe wall.
+
+5) In the case of turbulent flow the generalized
+turbulent velocity profile defines the hydro-
+dynamic structure.
+
+6) In the case of turbulent flow there exists an
+analogy between heat and momentum transfer.
+ 
+
+A heat rate balance on a stationary differential lattice reveals the heat
+transfer mechanisms which control the thermal structure within the idealized
+system. At steady state, the heat generated within the lattice is lost from the
+lattice by axial convection and radial conduction (in the case of laminar flow)
+or radial eddy diffusion (in the case of turbulent flow). These heat rate balances
+
+are expressed by differential equations in the following analyses.
+ 
+
+10
+
+LAMINAR FLOW ANALYSIS
+
+The differential equation describing the heat transfer in the pipe system
+
+for the case of laminar flow is
+»
+1-(Z) Ot r= 2 | ar 28 |, Wr (1)
+\Tro 0X or or Yep
+
+Uy, mean fluid velocity in the pipe
+
+ 
+
+where,
+
+t, temperature
+X, axial distance
+Tr, radial distance
+a, thermal diffusivity
+W, uniform volume heat source
+7, fluid weight density
+Cp» fluid heat capacity
+One boundary condition for the problem consists of a uniform wall heat
+
+flux which may be positive, negative or zero,
+
+where 3 is the radial heat flux and 2) is the wall heat flux. The second
+boundary condition is, tq, a reference temperature, such as a wall or center-
+line temperature,
+
+t(r = rq) = ta (3)
+
+Note, the mixed mean fluid temperature may also be specified as the reference
+
+temperature.
+ 
+
+11
+
+Downstream from the entrance region where the thermal pattern (tempera-
+ture gradients) of the system has become established the axial temperature
+gradient, 2 , 1s uniform and equal to the mixed-mean axial fluid temperature
+gradient, (2%) . The latter gradient can be obtained by making the following
+heat balance. The heat generated in a lattice whose volume is ATS dx plus
+
+the heat transferred into (or out of) the lattice at the wall must all be lost
+
+from the lattice by convection, that is
+
+Wir, “dx - 53) 2nrodx = roe Um ¥ Cp (2%) dx (&)
+0 m
+
+Hence, in the established flow region the axial temperature gradient is
+
+W- 2 (2)
+2b. 28) Alo (5)
+2X 3% Uy 7 Cp
+
+Upon substituting equation (5) into equation (1), the following total differential
+
+equation results:
+
+2 2
+=a) Berg &
+
+w=
+
+where F = 1 - .2_ (8) . Equation (6) can be solved by masking the change
+
+of variable, z = dt , or
+dr
+
+ 
+
+1. Note, that the mixed-mean fluid temperature at any given axial position
+
+is defined as,
+r
+To
+
+0
+AL t u 2nrdr 5
+ty = — p J tum
+To Un To"
+J u 2xrdr
+
+0
+
+ 
+ 
+
+12
+
+/
+2
+dz Zz _W r
+ErivE|e (2 (7)
+
+The solution of equation (7) 16
+
+N
+
+0
+gla
+
+1
+HH
+
+(=[2 2]: 1) rdr + const. (8)
+
+w=
+
+Upon integrating there results
+
+I}
+Es
+
+3
+[CERES 5 ©)
+
+The constant in equation (8) was found to be zero from the boundary condition
+given by equation (2). Note that the radial heat flow is
+
+T= = (1 -2F) = +F (2) (10)
+
+Ble
+
+The desired temperature solution can be obtained by integrating equation (9),
+
+ 
+
+ 
+
+ 
+
+r
+ro
+Wro2 3
+t = tg 2 (2-2) = -F [E) ¢ (F) (11)
+1
+] ] , .
+or - 2 SEE RREN 1-2 iE) 1] (12)
+=
+
+where the reference temperature is, t,, the wall temperature. The temperature
+solution in terms of the centerline temperature rather than the wall temperature
+
+is given by
+15
+
+ 
+
+t -t - 2 4
+zr (A) ER) 2
+Zk
+
+where t¢ is the centerline temperature. Equation (13) is graphed in Figure 1
+for several values of the function F.
+It is often of interest to know the difference between the wall temperature
+
+and the mixed-mean fluid temperature. This difference is obtained as follows:
+
+To
+
+J u (to - t) 2nrdr
+2
+UnftTo
+
+1
+- [x (t, - t) (=) a (Z) (1h)
+0
+
+ 
+
+to - tp =
+
+Upon substituting the laminar velocity profile relation and equation (12)
+
+into equation (14) there results,
+
+wr 2 8
+to -tm= == RE (15)
+ 
+
+BTA
+
+UNCLASSIFIED
+DWG. 16663
+
+1.00
+
+ 
+
+ 
+
+0.90 /
+
+/
+
+0.80
+/
+0.70 /
+
+0.60 /
+0.50
+
+raf
+0.40
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+tte 0.30 /
+2 F=1
+ni 0.20 V4 —— |
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.10 J _ F=3/4
+vd _— I
+a il
+0.0 —~——_ TE: i/2
+-0.10 PS TT
+~~
+
+ 
+
+ 
+
+-0.20 AN
+
+-0.30
+
+Fo
+N
+
+ 
+
+ 
+
+-0.40
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+-0.50
+0 0l0 0.20 030 040 050 060 070 0.80 0.90 100
+
+I
+To
+
+ 
+
+Fig. |. Dimensionless Radial Temperature Distributions in a Pipe
+For Laminar Flow (Equation 13)
+ 
+
+15
+
+TURBULENT FLOW ANALYSIS
+
+Fluid flow in a pipe under turbulent flow conditions has been characterized
+in terms of a laminar sublayer contiguous to the wall, a buffer layer, and a
+turbulent core by Nikuradse (reference 2), von Karman (reference 3) and others.
+Figure 2 shows the well known isothermal generalized velocity profile and some
+experimental data of Nikuradse (reference 2), Reichardt (reference 4), and
+Laufer (reference 5). Table 1 reveals some of the specific hydrodynanic relations’
+for the various flow layers in a smooth pipe; a discussion of some of the details
+of this table can be found in Appendix 1.
+
+The differential equation describing heat transfer in the pipe system for
+
+the case of turbulent flow is
+
+ 
+
+ 
+
+ 
+
+ot o ot Wr
+u(r) <= r = la + e(ru)] r ==
+( ) 3% 3ST ( > ) 3 | + 7 (16)
+Where, u(r), the turbulent velocity profile given in Figure 2
+
+€ , the eddy diffusivity? given in Table 1
+Upon substituting equation (5) into equation {16) for the established thermal
+
+region the following total differential equation results,
+
+u(r) W - 2 dq r
+rE ped]
+
+ 
+
+2. The analogy between heat and momentum transfer (characterized by the
+postulate that the heat and momentum transfer eddy diffusivities are pro-
+portional to each other and in fact nearly equal) has been proposed by
+Reynolds (reference 6) and used successfully by von Karman (reference 3),
+Martinelli (reference 7), and others. Thus, in the present analysis it
+is postulated that the heat and momentum transfer eddy diffusivities are
+equal.
+UNCLASSIFIED
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+DWG. 16664
+25 I I 1 VT 1 1 I 1 1 17TT1T1 I T 1 ¥ ¥ 1
+LAMINAR BUFFER TURBULENT
+SUBLAYER LAYER o CORE
+oo T
+Q
+20
+TT 3
+ut=55+25Iny?
+0
+15 /
+7 o
+/ &
+ut ”
+47 0
+A ut=3.05 +5001Inyt
+Pa / ®
+10 = a
+®
+/
+~” 4 3
+7
+o NIKURADSE
+® REICHARDT-MOTZFELD
+A REICHARDT-SCHUH
+o LAUFER
+10 30 100 1000
++ |
+y o~
+
+Fig. 2. Generalized Turbulent Velocity Profile in Circular Pipes and in Channels
+ 
+
+GENERALIZED VELOCITY
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+REGION DISTRIBUTION SHEAR STRESS STRESS EQUATION EDDY DIFFUSIVITY
+Laminar Sublayer —
++ | To
+o<y <5 ._u -Ye 7 T=, T=008 = 0
+y
+or oct 86 Ee
+<r, <Re-9 Pp
+Buffer Layer
+5< yi< 30 uo z du .
+or = = - 3.05 + 5.00 oly 5° T=", T=0(P+e) 5 = .0l52 Re? ¥ 3
+0
+66 <L 396 0
+Re*? To ~Re-*
+Outer Turbulent Pe To
+Layer YU =5.5+ 2.5 1n NS
+“Np | | T=Ty1-3) |T=peln _ S13 ¥
+29 <¥L <.5 TO > o x) p ay .0304 Re*7(1 2) A
+— o To
+Re*? Ts P L i.
+Inner Turbulent — —
+To
+uu _ y |e
+S<¥ <1 =2.5+251n) Tp T=Toll - Ly [7:2 pedn i] 9
+p | -
+
+ 
+
+Laminar Sublayexr
+Buffer Layer
+Outer Turbulent
+Layer
+
+Inner Turbulent
+Layer
+
+TABLE I
+
+ 
+  
+ 
+ 
+
+1
+y2
+
+ 
+
+HYDRODYNAMIC REIATIONS FOR THE VARIOUS FLOW LAYERS IN A SMOOTH PIPE
+
+/ pipe wall
+
+pipe center
+
+LT
+
+ 
+ 
+
+18
+
+THe boundary conditions are given by equations (2) and (3). The boundary
+value problem denoted by equations (17), (2) and (3) can be separated into two
+somewhat simpler boundary value problems whose solutions can be superposed to
+yield the solution of the original problem. The two boundary value problems
+
+to be considered are,
+
+ 
+
+u(r) Wr _ Wr _ = Ic re) r %
+
+Uy 7 Cs Tey dr
+
+=Is
+
+(r=ry,) =0 (18)
+
+B(x = 1) = (B®), (19)
+t(r = rg) = ta,
+
+Equations (18) represent a flow system with a volume heat source but with no
+wall heat flux, and equations (19) represent a flow system without a volume heat
+source but with a uniform wall heat flux. Note, that the superposition of
+equations (18) and (19) yields the boundary value problem defined by equations
+(17), (2) and (3); the sum of reference temperatures tq; and tq, being equal to
+the reference temperature tq? The problem defined by equations (19) has already
+been analyzed by Prandtl, von Karman, Martinelli and others (see reference 7,
+for example). The solution of equations (18) is carried out in the following
+
+Paragraphs.
+
+ 
+
+3. Note, in the superposition process; all temperatures are expressed
+as increments (to be discussed in section D).
+ 
+
+19
+A. Radial Heat Flow Distribution
+
+Upon integrating the differential equation of (18) once there results,
+
+ 
+
+ 
+
+ 
+
+r
+u Wr ar - W(x? - 1%) | (a +€) r (20)
+Uy Te 27 c dr
+iY
+To
+Tr
+dg dt _ _W u W[, _ To?
+or =-7c (a+€) == - = L rdr+ Lr - 2
+da Pp dr Tr Up, r
+To
+Zz
+To
+_. n(x) (2). 2 rr _%
+=) Un \To To 2 To r
+To |
+1
+n
+Wr Wr 2
+- 0 UY (len) dn + 22m (21)
+(1-n) YY 2 l-n
+0
+where n = J . The evaluation of the integral in equation (21) is presented in
+
+To
+Appendix 2; the radial heat flow profiles for various Reynolds moduli are graphed
+
+in Figure 3.
+B. Radial Temperature Distribution
+
+The second inbegration of the differential equation of (18), which will
+yield the temperature solution will be accomplished layer by layer utilizing the
+the hydrodynamic relations listed in Table 1 and the radial heat flow expressions
+
+developed in Appendix 2.
+a
+0
+
+la
+ol Ze
+
+UNCLASSIFIED
+DWG. 16665
+
+ 
+
+0.14
+
+= 5,000
+
+ 
+
+o.iaz
+
+=10,000
+
+ 
+
+ 
+
+ 
+
+~~
+
+ 
+
+1
+/
+
+/
+
+ 
+
+ 
+
+re 1000,000—"]
+
+ 
+
+0.06
+/
+— LAMINAR SUBLAYER FOR Re=5,000
+1
+i
+0.04
+
+SO
+NN
+
+ 
+
+0.02
+
+Vs
+
+ 
+
+ 
+
+11
+11
+i
+11
+
+   
+ 
+
+ 
+
+ 
+
+1!
+lel—| AMINAR SUBLAYER FOR Re=10,000
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+o.1 oO.
+
+2 o.
+
+3
+
+04
+
+0.5
+n
+
+0.6
+
+0.7
+
+0.9
+
+Fig. 3. Dimensionless Radial Heat Flow Profiles in a Pipe with no Wall Heat Transfer
+
+ 
+
+oe
+ 
+
+21
+
+Laminar Sublayer; o< n<66/Re*?
+
+The temperature distribution is obtained by integrating the heat flow
+
+t n
+fe oo | (42) an (22)
+to ©
+
+where k is the fluid thermal conductivity.
+
+equation,
+
+The radial heat flow equations (i)
+
+and (k) can be represented by somewhat simpler forms in the various flow layers
+
+in order that the integrations that are to follow can be effected more simply.
+
+For
+example, in the laminar sublayer the heat flow may be expressed as,
+dq _
+= = biWr,n (23)
+where the parameter by is determined by fitting equation (23) to equation (i).
+Thus, equation (22) reduces to
+t -t b
+Le B @)
+Wr
+
++>
+Buffer Layer; 66/Re*? <n<396/Re*?
+
+The temperature distribution within the buffer layer is
+
+t n
+(&@)
+dt = rg Aah) (25)
+k+ Tecp,€
+22
+
+In this layer the radial heat flow can be represented by
+
+oy = Wry(ecyn + con? + czn’) (26)
+
+The ratio = in this layer is equal to
+
+ 
+
+< = 0.0152 Re*? n - 1 (27)
+Thus, equation (25) becomes
+n
+2
+Wr 2 3
+
+tty = to (cin + con® + zn”) dn (28)
+
+k 1 - Pr + 0.0152 Pr Re*9
+
+ny
+
+where, Re, Reynolds modulus
+Pr, Prandtl modulus
+cy, cp, c3, are parameters obtained by fitting equation (26)
+to equations (i) and (k) in the buffer layer.
+
+Equation (28) becomes,
+
+ 
+
+ 
+
+ 
+
+ 
+
+t -t c1b'2-2a'blep + 3a'c ble, - 3ale o
+. - T 3 (a? + b'n) + 2 3 (a'+b'n)
+Wr, bt 2b i
+k
+n
+2 3
+c b'a'c, - b'%ate, - a'de
++ or (a' + b'n)? + 2 1 2 In(a' + b'n (29)
+3h! pl
+n
+where, a'=1-Pr
+b' = 0.0152 PrRe’*?
+23
+Outer Turbulent layer; 396/Re * n< 0.5
+For convenience in the analysis, the turbulent core is divided into inner
+and outer layers. The outer layer extends from npo<n<O0.5 and the inner layer
+
+from 0.5<n<1.0. The temperature distribution within the outer layer is
+
+t n
+dq
+—= dn
+Ee - 2 ar (30)
+€
+to no l+ Pr 5
+
+In this layer the heat flow can be represented by
+
+= Wry (eq + e,n + eon® + e507) (31)
+
+Ble
+
+where ey, e1, ep, and ez are parameters obtalned by fitting equation (31) to
+
+equation (Xk). The S— ratio is equal to
+
+1s = 0.030% Re?*9 (1-n)n (32)
+
+Equation (30) then reduces to,
+
+t - ta _ (eo + en + eon” + esn”) dn
+Wro2 1 + 0.030% PrRe®+9n - 0.0304 PrRe?-? n°
+
+a" - ezb" e
+fe hn wr n+ —2 n®
+oa
+
+k
++ [a" 21 - a"b"ep + b"2ey - aes
+
+ 
+
+ 
+
+i
+
+ 
+
+1n(a"n® + b"n + 1)
+
+ 
+
+og"d
+n
+2 2
+a'"b" ep-2a" ep-a"%b"e +3%a'"b"e "Je n-S1
+tle * : 22) ans
+
+ogtd be Lg"
+np
+ 
+
+2h
+
+ 
+
+ 
+
+where, a" = - 0.0304 PrRe®?
+b" = + 0.0304 PrRe®+?
+-b" + pe - Lat
+51 = aM
+_ -b" 2 pte - Lat
+So = 2g"
+
+Inner Turbulent Layer; 0.5<<n< 1.0
+
+For the inner layer, the radial heat flow relation, equation (k) can
+
+be represented by
+
+4 = Wrolg, + gn + gon?) (34)
+
+The ratio € in the inner turbulent layer is postulated to be uniform with
+
+radius along the lines proposed by Berggren and Brooks (reference 8),
+
+—— = 0.0076 Re0+9 (35)
+
+Upon substituting equations (34) and (35) into the heat flow equation and
+
+integrating, there results
+25
+
+n
+t - tn=0.5 _ (&, + gn + gon2)dn
+Wr, 2 1 + 0.0076 PrRe®-9
+k
+
+n=0.5
+n
+
+= —_ Bol + el n2 + g2 nd (36)
+
+1 + 0.0076 PrRe:9 2 3
+
+=0.5
+
+where g_, g; and g, are parameters which are obtained by fitting equation (34)
+to equation (k) in the inner turbulent layer..
+
+Thus, the radial temperature distribution for the case of turbulent flow in
+a long, smooth pipe containing a fluid with a uniform volume heat source with no
+wall heat flux is given by equations (24), (29), (33), and (36); some typical
+radial temperature profiles in dimensionless form are given in Figures 4 and 5.
+These profiles reveal the following characteristics: 1) the dimensionless
+temperature (sbove the centerline temperature) decreases as Reynolds modulus
+increases, 2) the dimensionless temperature (above the centerline temperature)
+decreases as the Prandtl modulus increases, and 3) dimensionless temperatures
+(above centerline temperatures) are high in the flow layers near the wall where
+the fluid velocities and eddy diffusivities are low. These characteristics could
+
+also have been derived from physical reasoning.
+
+C. Difference Between Pipe Wall and Mixed-Mean Fluid Temperatures
+The difference between the pipe wall temperature and the mixed-mean fluid
+
+temperature is obtained by evaluating the integral
+26
+
+UNCLASSIFIED
+
+36 DWG. 16666
+
+ 
+
+341
+
+N
+A
+
+Pr=0.00i
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+24
+
+ 
+
+ 
+
+o 22
+k Pr=0.
+20
+
+ 
+
+AEN
+oo
+>
+o,
+o ~~
+=
+=
+
+ 
+
+ 
+
+ 
+
+ 
+
+=
+A
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Pr=|
+oh” ’
+
+Pr=10
+oe
+
+0 0.2 0.4 0.6 0.8 1.0
+n
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 4 Dimensionless Radial Temperature Distributions Within a
+Fluid Flowing in a Pipe with Insulated Wall for Several Prandtl
+Moduli and Re =10,000
+27
+
+UNCLASSIFIED
+
+40 DWG. 16667
+
+38]
+
+ 
+
+ 
+
+36
+
+JN
+RIA
+
+30 \
+. \ ee 5,000
+26 \ \
+
+Wr, 24
+
+‘ \
+22
+
+rer10,000—\ \
+
+20 \
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+\
+\
+\
+\
+. A\
+\
+
+< \
+N10 NN
+
+SN
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2k Tm N\
+0 ] my
+0 0.2 0.4 0.6 0.8 1.0
+
+n
+
+Fig. 5. Dimensionless Radial Temperature Distributions Within a
+Fluid Flowing in a Pipe with Insulated Wall for Several Reynolds
+Moduli and Pr=0.0l
+ 
+
+28
+
+ 
+
+0
+tot
+Ui=——2"} 2x rdr
+Wr,
+to - tm ~~ 0 k
+Wr
+0 Umst I
+X wo
+1
+
+ 
+
+(37)
+
+i
+no
+Pram
+i [=
+SN
+=
+=|
+$0
+o |
+nj ot
+Pn
+J"
+S——
+o
+TN
+Sk
+S—
+
+The velocity profile is given in Table 1 and the temperature distribution by
+
+equations (24), (29), (33), and (36). The dimensionless temperature difference,
+
+to - tm
+Wro2
+D. Superposition of Boundary Value Problems (18) and (19).
+
+, is graphed as a function of Reynolds and Prandtl moduli in Figure 6.
+
+The superposition of solutions of the boundary value problems (18) and (19)
+yields the more general boundary value problem defined by equations (17), (2), and
+(3). In the superposition process, all temperatures are expressed as temperature
+increments above datum temperatures. The radial temperature distribution above the
+wall temperature, centerline temperature, or mixed-mean fluid temperature for the
+composite boundary value problem defined by (17), (2), and (3) is obtained by
+adding the radial temperature distributions sbove the wall temperatures, centerline
+temperatures, or mixed-mean fluid temperatures, respectively of boundary value
+problems (18) and (19). Note also that the rise in mixed-mean fluid temperature
+
+at some point in the established flow region of a pipe above its value at the pipe
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+3 WG. 1666
+= Pr=0.0
+152 ~. ~r~L_lPr=0.00I
+~~ ~~
+~~
+. Pre \ INgrool NN
+z N ~N
+Pr=
+pre? \ \ N\
+Pro \
+NTN
+WN
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+\ NL
+NE
+\ NN \
+\ NON N
+0° \ XS
+\ NON NL
+4 \ NK
+\ NR
+16° \ N
+
+Re
+
+Fig. 6. Dimensionless Difference Between the Wall and Mixed-Mean Temperatures
+As Functions of Reynolds and Prandtl Moduli with Pipe Wall Insulated
+30
+entrance for the problem defined by (17), (2), and (3) is obtained by adding the
+corresponding temperature rises for problems (18) and (19). The solution of
+boundary value problem (19) expressed in terms of Nusselt, Reynolds, and Prandtl
+
+moduli as developed by Martinelli is presented in Appendix 3.
+ 
+
+31
+
+DISCUSSION
+
+Currently, several new forced-flow volume-heat-source analyses are being
+completed. One analysis pertains to a parallel plates system which is infinite
+in extent. Another analysis concerns itself with heat transfer in the thermal
+entrance region of a pipe (short tube); it should be noted that laminar flow
+systems in particular have long entry lengths. A third mathematical solution
+pertains to laminarly flowing fluids whose viscosities are dependent on tempera-
+ture; only the established flow region is being considered.
+
+Although the experimental turbulent velocity data presented in Figure 2 seem
+to be represented satisfactorily by the generalized velocity expressions in the
+various layers, the exact location of vit (whether it is 3, 4, 5, 6, or 7, for
+example) becomes important in boundary value problem (19) at high Prandtl moduli
+(about 10 and above) and low Reynolds moduli. This region appears to need further
+consideration.
+
+It is planned to include the effects of pipe roughness and differences between
+heat and momentum transfer eddy diffusivities in future forced-flow volume-heat-
+source system which corresponds to the one investigated mathematically in the
+
+present paper.
+32
+APPENDIX 1
+
+HYDRODYNAMIC RELATIONS FOR TURBULENT FLOW IN A SMOOTH PIPE
+
+The hydrodynamic relations for turbulent flow in a smooth pipe noted in
+Table 1 are briefly considered. The velocity equations for the several flow
+layers as well as the expressions for the layer thicknesses define the gener-
+alized velocity profile under turbulent flow conditions. The fluid shear stress,
+
+T, varies linearly from Ts at the wall to zero at the pipe center. The shear
+
+stress has been postulated to be equal to T
+
+o In the laminar sublayer and the
+
+buffer layer because these layers lie so near the wall; the exact linear variation
+is used in the turbulent core. Laminar shear stress can be expressed as the
+product of the fluid mass density, kinematic viscosity, and velocity gradient,
+
+and turbulent shear stress can be expressed as the product of the fluid mass
+density, eddy diffusivity, and velocity gradient. In the buffer layer both laminar
+and turbulent shear stresses must be considered, whereas in the turbulent core the
+laminar shear stresses are small compared to turbulent shear stresses and are thus
+neglected. Upon the substitution of the generalized velocity profile and the
+
+shear stress variations into the shear stress equation one can solve for the
+dimensionless eddy diffusivity ratio, € /? , for the buffer layer and the turbulent
+core. These ratios can be reduced to the forms that appear in Table 1 with the
+
+aid of 1) the well known hydrodynamic expression which relates the wall shear stress,
+friction factor, and the mean fluid velocity in a pipe, and 2) the relation between
+
+the friction factor and Reynolds modulus for a smooth pipe. These two expressions
+ 
+
+ 
+
+follow:
+
+T, = 5 P up?
+and S _ 0.023
+
+8 Re'?
+
+where the friction factor is defined by the Weisbach equation,
+
+ 
+
+Ap _ So vy
+X ar, 2g
+
+Dimensionless distances from the pipe wall, ¥/Tos can be expressed. in terms
+
+of the parameter y' and Reynolds modulus with the aid of equations (a) and (b).
+
+33
+
+(a)
+
+=)
+
+(e)
+ 
+
+3h
+APPENDIY 2
+
+RADIAL HEAT FLOW RUIATIONS
+
+The turbulent velocity profile in the radial heat flow expression, equation (21).
+
+may he represented satisiactorily by two laysrs (a laminar layer and a turbulent
+
+A ory
+
+core) rather than the four layers which are used in the temperature analysis. The
+
+laminar layer, which is postulated to extend to y = 12, 1s represented by the
+Jivanr valsasity ocrpress ion
+whe gi at Ch VEZ ae “Lp ik,
+
+ 
+
+ 
+
+ 
+
+i
+i
+©
+—
+Cu
+rt
+
+.8 :
+or u = .0115 uy, Re’ "n, O<n<== (e)
+
+Equation (d) was reduced to equation (e) with the aid of equations (a) and (bv).
+The turbulent layer, which is postulated to extend from 7 = 12 to the pips
+
+L wu
+
+cemter, is represented by the one seventh power
+
+ 
+
+1/7
+
+anf {on
+u = By nv WO
+where B,, iz related to the mean velocity on the basis that the sum of the
+
+volumetric flow rates in the laminar layer and %
+
+ 
+
+ae - 1 ed pe I He Le Ses maT geet ye Bom mem py ag cr Te ~ a
+otal volumetric Flow rate this relation 1s obtainsd qo ToLIOWS:
+
++=
+
+ 
+
+ 
+
+   
+35
+
+ 
+
+ny, 1
+= of ous up Red n(1l-n)dn of (1-n)dn
+oO ng,
+2 3 8/ t
+1 1
+= .,023 Re® u [+ xl) + 2Bg fo - 7: (2)
+or,
+2
+: _ 023 re*® (2x ) 2) uw
+or By = 2 3 = T uy (n)
+49 8/1 15/1
+2 1% - t "Lo = ny,
+
+where np is the dimensionless distance from the wall equivalent to yh = 12, and
+the function, f, is defined in equation (h).
+The radial heat flow in the laminar layer is obtained by substituting
+
+equation (e) into equation (21) and integrating,
+
+2 : 8 (n-2)
+. p n J
+To = .0115 Re*” n (l-n)dn + To
+=z .
+Loz Red [02 2 | , n(n-2) (1)
+- 1-n 2 3 1-n
+
+The radial heat flow in the turbulent layer is obtained by substituting
+
+equations (I) and (h) into a modified form of equation (20) (limits are nj, to n),
+ 
+
+36
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+r
+d W( rr?
+dg _ _ fore s - 2 (4) -u a Mr - 2
+aa p ‘37 > Q&A) T = TE (3)
+TL
+a .
+ag i
+l -n dA
+or _GA | - 'L 2 1/7 on + n° + 207 - nro
+Wg” \1 -n Wr, + of (1-n)dn + i-n LoL
+2 2 n
+L
+n
+dq
+1-n 2) 8/7 15/
+= L L ef 7 _ °/T _ 2 pe?
+= Wry Im |g” isn Rha ot 2) (x)
+2 ng
+
+Equations (i) and (k) are graphed in Figure 3 as a function of Reynolds
+
+modulus.
+ 
+
+ 
+
+31
+APPENDIX 3
+TURBULENT FORCED CONVECTION IN A LONG
+
+PIPE WITH A UNIFORM WALL HEAT FLUX BUT
+NO VOLUME HEAT SOURCES WITHIN THE FLUID
+
+Heat-momentum transfer analogies for the case of turbulent flow in pipes
+have been developed by Reynolds (reference 6), von Karman (reference 3),
+Martinelli (reference 7), Lyon (reference 9) and others. These analyses
+represent solutions to boundary value problem (19), the latter analyses being
+more exact. Martinelli's solution expressed in terms of Nusselt, Reynolds and
+Prandtl moduli is graphed in Figure 7. Note that Nusselt modulus can be ex-
+pressed in terms of the wall-fluid temperature difference and the wall heat
+
+flux (pertaining to boundary value problem (19) ),
+
+d
+(5) or,
+
+I = Ge (2
+
+where h is the heat transfer conductance.
+
+ 
+UNCLASSIFIED
+
+ 
+
+ 
+
+DWG. 16669 10
+10,000 -
+5,000
+oa
+1,000
+500
+»
+2
+9 3
+2 0.01 3
+2 =
+= —
+= 5
+- sc
+& o
+a °
+2 a
+z
+- -
+100 a
+50
+0.001
+0.0001
+10
+0
+5 10,000 100,000 2 1,000,000 10,000,000
+
+2r,
+
+ 
+
+Re, Reynolds Modulus, m
+
+Fig. 7 Heat—-Mamentum Transfer Analogy for 0 Smooth Pipe (R.C. Martinelli)
+
+ 
+
+8¢
+59
+REFERENCES
+
+Poppendiek, H. F. and Palmer. L. D., "Forced Convection Heat Transfer
+In A Pipe System with Volume Heat Sources Within the Fluids,"
+Memo YF 30-3 ORNL November 20, 1951
+
+Nikuradse, J., "Gesetzmassigkeiten der turbulenten Stromung in glatten
+Rohren," V.D.I. Forshungsheft 356, 1932, 36 pp
+
+von Karman, T., "The Analogy Between Fluid Friction and Heat Transfer,"
+A.S.M.E., vol 61, 1939, pp 705-710
+
+Reichardt, H., "Heat Transfer Through Turbulent Friction Layers,"
+Technical Memo No. 1047, N.A.C.A., September 1943
+
+Laufer, John, "Investigation of Turbulent Flow In a Two Dimensional
+Channel," Technical Note 2123 N.A.C.A., July, 1950
+
+Reynolds, Osborne, "On the Extent and Action of the Heating Surface
+for Steam Boilers," Proc. of the Manchester Literary and Philosophical
+Society, vol 14, 1874 pp 7-12. Also "Papers on Mechanical and Physical
+Sub jects," vol 1, Cambridge, 1890
+
+Martinelli, R. C., "Heat Transfer to Molten Metals," Trans. Am. Soc.
+Mech. Engr., 69, 1947, pp 947-959
+
+Brooks, F. A. and Berggren, W. P., "Remarks on Turbulent Transfer Across
+Planes of Zero Momentum Exchange,” Trans. Amer. Geophysical Union Pt. VI,
+
+194k, pp 889-896
+
+Lyon, R. N., "Liquid-Metal Heat Transfer Coefficients," Trans. Am. Inst. Chem.
+Engr., 1951, pp 75-79

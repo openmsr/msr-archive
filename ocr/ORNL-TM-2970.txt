@@ -1,0 +1,2812 @@
+BIASTER  &
+
+OAK RIDGE NATIONAL LABORATORY
+
+ 
+
+ 
+
+“ operated by
+. & UNION CARBIDE CORPORATION
+on for the
+
+U.S. ATOMIC ENERGY COMMISSION
+
+ORNL- TM- 2970
+
+ 
+
+11970
+
+3
+
+i
+a
+&a
+Q
+uw
+=>
+Lu
+8
+CALCULATED RADIOACTIVITY OF MSRE FUEL SALT
+- M. J. Bell
+i
+
+NOTICE This document contains information of a preliminary nature
+
+and was prepared primarily for internal use at the Ook Ridge National
+Laboratory. It is subject to revision or correction and therefore does
+
+not represent a final report.
+
+DISTRIBUTION OF THIS DOCUMENT IS UNLIMITED
+     
+
+This report was prepared as an account of Government sponsored work. Neither the United States,
+
+nor the Commission, nor any person acting on behalf of the Commission:
+
+A. Makes any warranty or representation, expressed or implied, with respect to the accuracy,
+completeness, or usefulness of the information contained in this report, or that the use of
+
+any information, apparatus, method, or process disclosed in this report may not infringe
+
+privately owned rights; or
+B. Assumes any liabilities with respect to the use of, or for damages resulting from the use of
+any information, apparatus, method, or process disclosed in this report.
+As used in the above, ‘‘person acting on behalf of the Commission'’ includes any employee or
+contractor of the Commission, or employee of such contractor, to the extent that such employee
+
+or contractor of the Commission, or employee of such contractor prepares, disseminates, or
+
+ 
+
+provides access to, any information pursuant to his employment or contract with the Commission,
+
+or his employment with such contractor.
+
+LL RR SE —
+
+oom = LEGAL NOTICE ———— ~~ «mmm ooo 7
+i
+|
+i
+ORNL -~-TM-2970
+
+Contract No. W-7L05-eng-26
+CHEMICAL TECHNOLOGY DIVISION
+
+LONG RANGE PLANNING GROUP
+
+CALCULATED RADICACTIVITY OF MSRE FUEL SALT
+
+M. J. Bell
+
+MAY 1970
+
+} Ce ——
+
+LEGAL NOTICE
+
+This report was prepared as an account
+States, nor the Commission, oT any person acting on behalf of the Commission:
+
+‘A. Makes any warranty or represettation, expressed or implied, with respect to the accu-
+racy, completeness, or usefulness of the information contained in this report, oT that the use
+of any information, apparatus, method, or process disclosed in this report may not infringe
+privately owned rights; or
+
+B. Assumes any liabilities with respect to the use of, or for damages resulting from the
+uee of any information, apparatus, method, or process disclosed in this report.
+
+As used in the above, “‘péTBOD AcUDg on behalf of the Commission” includes any em-
+ployee or contractor of the Commission, or employee of such contractor, to the extent that
+such employee or contractor of the Commission, or employee of such contractor prepares,
+disseminates, or provides access to, Any information pursuant to his employment or contract
+with the Commission, or his employment with auch contractor.
+
+     
+  
+
+ 
+ 
+
+    
+   
+ 
+       
+     
+      
+       
+   
+
+  
+
+OAK RIDGE NATIONAL LABORATORY
+Oak Ridge, Tennessee
+operated by
+UNION CARBIDE CORPORATION
+for the
+U.S. ATOMIC ENERGY COMMISSION
+
+DISTRIBUTION OF THIS DOCUMENT IS UNLIMITED
+ca {
+iii
+
+CONTENTS
+
+ABSTRACT
+
+INTRODUCTION
+COMPUTATIONAL PROCEDURE
+COMPUTATIONAL RESULTS
+
+REFERENCES
+
+20
+“1-
+
+CALCULATED RADIOACTIVITY OF MSRE FUEL SALT
+
+ 
+
+M. J. Bell
+
+ABSTRACT
+
+Calculations have been made of the inventory
+
+and radioactivity of the fission product and itrans-
+uranium isotopes present in the MSRE fuel salt. dhe
+calculations have included operation with both 235y
+and 233y fuels, the effect of stripping of noble gases,
+84d fluorination of the fuel salt after the period of
+
+35y operation, Results are presented which give the
+inventory and radioactivity of individual isotopes in
+the salt up to January 1, 1975.
+
+ 
+
+INTRODUCTION
+
+The Molten Salt Reactor Experiment at ORNL was first operated at
+full power in May 1966.1 Since that time the reactor has been operated
+for over 100,000 Mihr with both 23°U and 233U fuels.’ In August 1968
+235 fuel
+originally charged, and the reactor was then fueled with 233y prepared
+
+at the TURF facility at ORNL. In October 1968 the MSRE became the
+233
+U
+
+the fuel salt was processed by fluorination to remove the
+
+first reactor to operate with 233y fuel. Power operation with
+fuel began in January 1969, and operation of the reactor was terminated
+on December 12, 1969. The fuel salt was drained and is being stored
+prior to permanent disposal. Estimates of the composition and radio-
+activity of the fission products present in the fuel salt drain tank
+
+are required to provide for safe storage and disposal of the salt.
+
+Such estimates should take into account, in as much detail as possible,
+the operating history and chemical processing history of the fuel salt.
+These estimates were made using a modification of the ORIGEN isotope
+generation and depletion code which took into account continuous chemical
+processing. Calculated results are presented which describe the compo-
+
+sition and radioactivity of the fuel salt after 235
+
+233y,
+
+U operation and after
+
+operation with
+-2-
+COMPUTATIONAL PROCEDURE
+
+Estimates of the composition and radioactivity of the MSRE fuel
+salt were made using a modification of the ORIGEN isotope generation
+and depletion code which took into account continuous stripping of the
+noble gases Xe and Kr. During periods of power operation, it was
+assumed that noble gas stripping took place on a L87-sec cycle with
+an efficiency of 38%. It was also assumed that tritium was removed
+at the same rate. In the calculations the power history of the fuel
+salt was approximated by the series of increments of constant average
+power shown in Table 1. Between periods of operation the fuel salt
+was drained on a number of occasions and a "heel" of approximately 10%
+of the total salt volume remained in the drain tank every time the salt
+was returned to the reactor, This behavior was taken into account using
+the same "flux-dilution" technique applied to the circulating fuel salt,
+i.e.,, the entire salt inventory was assumed to be exposed to a propor-
+tionately lower neutron flux. Nuclear data used for the calculation
+was that compiled for the MATADOR steady state material balance code!
+
+’
+
+Three group spectral constants were derived from the data of Prince.
+
+During the period of operation of the MSRE additions of uranium
+were made to the fuel salt which amounted to approximately 2% of the
+uranium inventory. These additions were neglected in the present calcu-
+lations. This approximation has the effect of raising the neutron flux
+required to maintain the fission rate at the specified level by less
+than 2%, and is expected to have a negligible effect on the radio-
+activity of the fuel salt.
+
+During a six-day period in August 1968 the MSRE fuel salt was
+fluorinated to remove 235 before beginning operation with 233y, This
+processing also removed all those fission products having stable volatile
+fluorides and any Np present in the salt. In addition, the remaining
+noble gases and the halogens, Br and I, would also be expected to leave
+the salt. Accordingly, 100% of the elements H, He, Se, Br, Kr, Nb, Mo,
+Tc, Ru, Te, I, Xe, U and Np were removed from the salt 157 days after
+the end of power operation with 2357,
+-3-
+
+Table 1. Approximate Power History of MSRE Fuel Salt
+
+ 
+
+ 
+
+Time Avg, Power Cumulative
+
+Period Elapsed This Period Burnup
+
+Ending (days) (Mw) (Mwhr) Comments
+
+L/11/66 0 0 0 First approach to full
+power
+
+10/13/66 185 1.76 7823
+
+11/17/66 220 4.51 11611
+
+12/1/66 2L7 0 11611
+
+1/1L/67 278 7.81 17420
+
+1/28/67 292 0 17420
+
+5/8/67 392 7.49 35385
+
+6/22/67 L317 0 35385
+
+9/18/67 Lol 6.56 L362
+
+10/21/67 528 0 Lly362
+
+3/25/68 7h 6.10 71580 End of 235y operation
+
+9/29/68 871 0 71580 End of 235); processing
+
+1/14/69 1009 0 71580 Beginning of 25°U full
+power operation
+
+5/31/69 11L6 6.19 919LhL
+
+9/22/69 1229 0 919Lk
+
+10/1/69 1268 L.20 95877
+
+11/2/69 1301 7.44 101770
+
+11/25/69 1324 0 101770
+
+12/12/69  13l1 7.61 104816 End of 23°U operation
+
+ 
+i
+COMPUTATIONAL RESULTS
+
+The calculated inventories of fission products and transuranium
+elements present in the MSRE fuel salt after the termination of operation
+with 235 fuel are shown in Tables 2 and 3. The inventories at 157 days
+after shutdown reflect the removal of noble gases, halogens, and elements
+with volatile stable fluorides by fluorination in August 1968. It was
+assumed that 100% of these elements was removed. The remaining times
+past 157 days cooling correspond to the period before power operation
+with 233y fuel. The radioactivity of these isotopes for the same period
+is given in Tables L and 5. The computed activity of the fuel salt prior
+to the start of 2°0U operation is 0.289 x 10° curies.
+
+The 233y charged to the MSRE for the second period of power opera-
+tion had been purified by solvent extraction and ion exchange in 196)
+and 1965. The isotopic composition of this material after purification
+was 8L.6% 233y, 6.933 23by, 2.10% 235u, 0.15% 23%, 5.87% 23%, and the
+uranium contained approximately 225 parts per million 2324 7 Table 6
+shows the increase in radioactivity of this material during the period
+that elapsed between purification of the uranium and power operation of
+the MSRE with 233y fuel. The radiocactivity of the uranium reaches a
+level of 1.53 x 10° curies as a result of the presence of 228) and its
+
+daughters.
+
+Tables 7 and 8 give the transuranium element and fission product
+
+inventories in the fuel salt at the end of 233
+
+U power operation and as
+a function of time after shutdown. The radioactivity corresponding to
+these isotopes is given in Tables 9 and 10. The results indicate that
+5.88 x 10k curies of radioactivity will remain in the fuel salt after
+5 years cooling time. About L% of the long lived radioactivity will
+2325 and its
+
+daughters. Of the fission product activity, greater than 98% is due
+
+result from transuranium elements, in particular, from
+
+to isotopes which form very stable fluoride salts. Approximately 1%
+of the fission product radioactivity is the result of isotopes of noble
+
+metals which would not be expected to remain dissolved in the salt.
+5
+
+Table 2. Fission Product Inventory of MSRE Fuel Salt After Period of
+
+235 Operation as a Function of Time After Shutdown
+
+MSRE OPERATION WITH 235 U FUEL
+
+POWER= 4.18 Mw BURNUP= 2983, MWD FLUX= 2435 12 N/CM#*%2-SEC
+NUCLIDE CONCENTRATIONS, GRAMS
+CHARGE DISCHARGE 3.0 D 30.C D 90. D 157. D 295. D
+
+SE B80 0.0 1.06 OC l.06E 00 1.06E GO 1.06F 00 0.0 C.0
+BR 81 0.0 1.51E 00 1.51 CO 1.51E 00 1.51€ 00 C.0 0.0
+SE 32 0.0 3.48F 0C 3.48t 00 3.48E 00 3.48E 00 C.0 0.0
+RB 87 0.0 40678 00 4ob6TE OC 4¢b6TE CO 446TE 00 4.67E 00 4.,67E 00
+SR 88 0.0 3.368 00 3.37E 00 3.37E 00 3.37E 00 3.37 00 3.37 00
+SR 89 0.0 6483E OC 6.56F 00 4,58E 00 2.06E 00 8.43E-01 1.34£-01
+
+Y 89 0.0 3.99E 01 44C2E Ol 4¢21F Ol 44 7E Ol 4459E 01 4.66E Cl
+SR 90 0.0 60 52E 01 6452F Ol 6451F 01 6.48E Cl 6445E 01 6.39E 01
+ZR 90 C.0 1.30 00 1l.31F CO 1.43E CO 1.69E 00 1.99E 00 2.58E 00
+
+Y 91 0.0 lel4E O01 lellE Ol 8.06E 00 3.97E 00 1.80F 00 3.,54E-01
+ZR 91 0.0 5¢85E Ol S5.89F Ol 6.19E Ol 6.,60FE 01 6.82E O01 6.,96E O01
+IR 92 0.0 T+.34E 01 7.35E O01 7e35E Ol 7+35E Cl T7«35E 01 7.35E 01
+ZR 93 0.0 Te 95F 01 7.97E O01 7.97FE 01 7.97TE Ol 7.97E Ol 7.97E Ol
+IR 94 0.0 Te99E Ol T7.99F O01 Te99E Ol 7.39E Cl 7499E Ol 7.99E 01
+ZR 95 (C.0 le4lE O01 1e36FE Ol 1.C2E 01 5.40E 00 2.64E 00 6.06E-01
+NB 95 (0.0 7.18E 00 7.20f GO 6483E 00 4.74E 00 0.0 5.07E-01
+MO 95 0.0 S¢T1E Ol 5.76E 01 6.14E Ol 6.83E 01 0.0 1.53 00
+IR 96 0.0 8.088 01 8,08E 01 8.08E Ol 8.,08E Ol 8.08E Ol 8.08E 01
+MO 97 0.0 T.87E Ol 7.89E Ol 7.89E 01 7.89E 01 0.0 0.0
+MO 98 0.0 Ta56F Ol 7.56E Cl 7.56E 01 7.56E C1 0.0 0.0
+TC 99 0.0 8413E 01 8.,17F 01 8,20E O01 8.2CE 01 0.0 0.0
+MO100 0.0 Be42E Ol B.42F Ol B8.42FE Cl 8.42E 01 C.O 0.0
+RU101 0.0 6o TSE Cl 6,75FE Ol 6.75E Ol 6.75E Ol 0.0 0.0
+RUL02 0.0 S«62E Ol 5.62% 01 5.62E Ol 5.62E 01 0.0 0.0
+RU103 0.0 4.82 00 4.57F G0 2.85E 00 9.97E-01 0.0 0.0
+RH103 0.0 3.65E 01 3.£8EF Ol 3.85E 01 4.03E Ol 4.10 Ol 4.10E 01
+RU104 0.0 2.5BE 01 2.58F 01 2.58E Ol 2.58E 01 0.0 0.0
+P0105 0.0 1e34E 01 1.34EF 01 le34E Ol 1.34E 01 1.34Ff Ol 1l.34E 01
+RU106 0.0 3.936 00 3.91F 00 3,72F 00 3.32E 00 0.0 0.0
+PD106 0.0 2.57 00 2.59E CO 2.79E 00 3.19E 00 3.58E 00 3.58E 00
+PD107T 0.0 3.42E 00 3.42E 00 3.42E 00 3.42E 00 3.42E 00 3.42E 00
+PO108 0.0 la46E 00 1.46FE 00 l.46E 00 1.46E 00 1.46E 00 1.46E 00
+
+1127 0.0 2.186 00 2.20E 00 2.23E 00 2.27E 00 0O.C 0.0
+TE128 0.0 7.188 00 7.19E 00 7.19E 00 T.19E 00 0.0 0.0
+
+1129 0.0 l.36E Ol 1.36F Ol 1.38E Ol 1.40E Ol 0.0 0.0
+TEL130 0.0 3.486 Ol 3.48€ 01 3.48 Ol 3.48E O01 0.0 0.0
+XE13l 0.0 1.556-03 2.81E~Cl 1.15E 00 1.25E CO C.0 0.0
+€S135 0.0 2056E 00 2.66E 00 2.66E 00 2.66E 00 2.66E 00 2.66E 00
+€S137 0.0 8.80 Ol B8.,80F Ol B.78E Ol B8.75E Ql B.71FE Ol 8.64E 01
+BA137 0.0 1.63t 00 1.65E 00 1.80E 00 2.13E 00 2.50 00 3.26E 00
+BA138 0.0 4e93E 01 4.93F Ol 4493E 01 4.93E Ol 4.93E O01 4.93E O01
+LA139 0.0 16 1TE 02 1,17TE 02 1417E 02 1.17E 02 1.17€ 02 1.17€ 02
+CE140 0.0 1e31E 02 1.32E 02 1.35E 02 1.36E 02 1.36E 02 1.36E 02
+CEl4l 0.0 1e13€ O01 1.07E Cl 6601E 00 1.67E 00 3.97E-01 2.07E-02
+PR141 0.0 1. 09E 02 1.09€E C2 le14E 02 1.18E 02 1.20 02 1.20E 02
+CEl42 0.0 le14E 02 1.14F 02 1414E 02 1.14E 02 1.14E 02 l.14E 02
+PR143 0.0 4¢37E 00 4,08E 00 1.07E 0Q S.13E=-02 1.73E=03 1.,61E-06
+ND143 0.0 1.08E 02 1.,09E C2 1,12E 02 1.13E 02 1.13E 02 1.13E 02
+CEl44 0.0 5¢82E 01 Se77E Ol 5.41E Ol 4.67E O01 3.96E 01 2.83E Ol
+%-
+Table 2 (Continued)
+
+MSRE OPERATION wITH 235 U =UEL
+POWER = 4013 Mw BURNUP= 2683, Mw0D FLUX= 2.35E 12 N/CM*¥2-SEC
+
+NUCLIDE CONCENTRATIONS,» GRAMS
+CHARGE CISCHARGE 3.060 30.C 90. © 157. © 295, D
+
+NDl4&s 0.0 S«0TF 01 5.11F 01 S.4BF Cl €.21E Ol 6.92E 01 8.05E Ol
+NDl145 0.0 Te65F O01 T.6€E 01 To66E Ol T.66E Ol 7.66E 01 T.66E 01
+NDl45 0.0 5499 01 5.59E Cl S5.99F 01 5.99E 01 5.99E Cl 5.99E Ol
+PML47 0.0 3, 76E 01 3.71F 01 3.74E 01 3.61E Oi 3.43F Cl 3.11E 01
+SM14T 0.0 8.415% 0C 8423f 00 B8437E 00 1.06E 01 1.23E O01 1.55E 01
+ND148 C.0 3.38 01 3.38F (Ql 3.38BE Cl 3.38E Cl 3.38E 01 3.38E 01
+SM148 0.0 1la34F OC 1le35F CC 1e39E 00 le«OJE CO 1.40FE O00 1.40F CO
+SM143 0.0 3,63 OC 3.73FE CC 3.79E 00 3.79E C0 3,79E 00 3.79€ 00
+NG150 0.0 1.35c 01 1.356 Cl 1.3%E O01 1.35E Cl 1.35E 01 1.35E Ol
+SM150 0.0 1.926 Ol 1.92c Ol 1492E Ol 1.92E O01 1.92E 01 1.92E Ol
+SM151 0.0 Te2lE O00 T.24F CO Te24F 00 7.23E 00 7.22E 00 T7.20E 00
+SM152 0.0 TealE 00 Te4lE 00 To41F 00 7.41E 00 7.415 00 T.41lE OO
+EUlS53 0.0 3.68F 00 3,69¢ J0 3.7CE CO 3.70E 00 3,70E 00 3.70Ef 00
+SM15¢ 0.0 1.¢5E OC 1.65F 00 1.65E 00 1.65E 00 1.65E 00 1.65E 00
+SUBTOT 0.0 2030E 03 2.3CEt 03 2.31€ 03 2.31€E 03 1.70E 03 1.70€ 03
+TOTALS 0.0 24328 03 2.32F C3 2.32E 03 2432E 02 1.70F 03 1.70F 03
+-7-
+
+Table 3. Transuranium Isotope Inventory of MSRE Fuel Salt After Period
+
+of 235 Operation ag a Function of Time After Shutdown
+
+MSRE OPERATION WITH 235 uU FUEL
+
+POWER= 4e13 Mw RURNUP= 2933. MWD FLUX= 2435E 12 N/CM*%*2-SEC
+NUCLIDE CONCENTRATIONS, GRAMS
+CHARGE DISCHARGE 3.00 30.C OD 90. D 157. © 295. D
+U234% T.8TE 02 T.76t 02 TeaT76C C2 To TEE 02 T.76E C2 0.0 le54E=C4
+U235 TewTE 0&4 T7.C9E 04 T.09f 04 T.0%E C4 7.09E C4 C.0 60 52E-03
+U236 3.37E 02 1.03E 03 1.03F 03 1.03F 03 1.03E C3 0.0 1.C6E-03
+U238 1.49F 05 1.48E 0% 1448F 05 1.48E 05 1le48E C5 0.0 1.24E-08
+NP237 0.0 3.51E OC 3.54F 00 3.62E 00 3.63E C0 C.C 4.30E-CS
+PU239 0.0 6e13E C2 6416F 02 6.18E 02 6.18E 02 6.18E 02 6.,18E C2
+PU240 0.0 26 TTE Cl 2477f Ol 2.77€ Ol 2.7TE U1 2.77E Cl 2.77€ Ol
+Py24l 0.0 1le47E OC 1s4T7F OC 1a46E 00 1.45E CC l.44E CC l.41lE CO
+
+SUBTOT 2,25E 05 2422E 05 2422E 05 2.22E 05 2.22F 05 6.47FE 02 6.47 C2
+
+TOTALS 2.25E 05 2e422E 05 2422F 05 2422E C5 2.22E CS 6447E 02 6.47E 02
+_8-
+
+Table L. Fission Product Radioactivity of MSRE Fuel Salt After Period
+of 235 U Operation as a Function of Time After Shutdown
+
+MSRE OPERATION wITH 235 U FUEL
+POWER= 4.18 Mw BURNUP= 2983. MWC FLUX= 2435F 12 N/CM*%2=SEC
+
+NUCLIDE RADIOACTIVITY, CURIES
+CHARGE DISCHARGE 3.00 30.0 OD 20. D 157. OD 295, OD
+
+SR 83 0.0 193F 05 1.65F C5 1.29E 05 5.,81€ 04 2.38E 04 3.78E 03
+SR 90 0.0 9¢22E 03 9.22E 03 9,20E 03 9.16E 03 9.12E 03 9.,04E 03
+
+Y 99 0.0 Ge24C 03 9,23F 03 9.20E 03 9,17TE C3 9.13E 03 9.04E 03
+
+Y 91 0.0 247TTE 05 2.70F 05 1.97E 05 9,70F 04 4.40F 04 B.65E 03
+ZR 95 0.0 2.3BE 05 2.89F 05 2.16E 05 1.14E O05 5.59E 04 1.28E 04
+NB 95M 0.0 Se96F 03 5.92t C3 4.59E 03 2.43E 03 0.0 2.,T2E 02
+NB 95 0.0 2.828 C5 2.63F 05 2.6BE 05 1.85E C5 C.0 1.99E 04
+MO 99 0.0 3.10F 05 1.4T7E 05 1.81E 02 6.,12E-05 C.0 0.0
+TC 99M 0.0 2. TOE 05 le4lE 05 1.73E 02 5.85E~C5 0.0 0.0
+TC 99 0.0 1.39 00 1l.29F 00 1.40FE OC 1.40E 00 C.0 Q.0
+RU103 0.0 le 54E 05 l.46F 05 S,13E 04 3.19E 04 0.0 0.0
+RH103M 0.0 1.54E 05 1.47E C5 9.14 04 3,20E 04 9.89E 03 0.0
+RU106 0.0 132E 04 1.31E 04 1.256 04 1.11E 04 0.0 0.0
+RH106 C.0 1.40E 04 1e31F C4 1.25E 04 1.11E 04 9.82E 03 0.0
+AGlll 0.0 1.29 03 9.82E 02 B8.10F 01 3,16E-Cl 6.4TE~-04 1.87E-09
+CD115M 0.0 3.63E 01 3.46E Ql 2.24E O01 8.50E 00 2.89E 00 3.12E-01
+SN119M 0.0 1.108 00 1.10 CO 1l.02t QO B8.60E-0l1 0.0 0.0
+SN123M 0.0 6.055 01 5.95E 01 5.12F Ol 3.67€ Ol 0.0 0.0
+$8124 0.0 2.09 00 2.02E 00 1l.48E 00 7.41E-01 0.0 0.0
+SN125 0.0 Te 51E 02 6.02E G2 8.22E 01 9.85E=Cl 0.0 0.0
+$8125 0.0 3.33 02 3.34F C2 3.34E 02 3.,21E 02 0.0 0.0
+TEY25M 0.0 le 10F 02 1.118 C2 1l.16E 02 1.22E 02 0.0 0.0
+$8125 0.0 1¢23E 03 1.04F C2 2.33E 02 8,37E 00 0.C 0.0
+$8127 0.0 7.03E 03 4.49E 03 3.,59€ 01 7.88E-04 0.0 0.0
+TE127M 0.0 le36F 03 1.36E 03 1.18E 03 8.04E 02 0.0 0.0
+TEl27 0.0 6.82 03 5.,23E 03 1,20E 03 7.95E 02 0.0 0.9
+TE129M 0.0 1.52 04 1.43E 04 8,27E 03 2.44E 03 C.0 0.0
+TEL29 0.0 3,708 04 9.20F C3 5,30E 03 1.56E C3 C.0 0.0
+
+I131 0.0 1.51F 05 1.19% (5 1l.17E 04 6.,69E 01 C.O 0.0
+XE131lM 0.0 1,056 00 1.75E C2 2.56% 02 1.23E 01 0.0 0.0
+TE132 0.0 2.18E 05 1.15F 05 3.63F 02 1.03E-03 C.0 0.0
+
+1132 0.0 2.25E 05 1.19F 05 3.74E 02 1.07€E-~C3 0.0 0.0
+XEL133 0.0 60435 02 4.02f C4 1.38F 03 5.14E-Q1 0C.0 0.0
+€S134 0.0 16276 00 1.26 CO 1.23E 00 1.16E 00 1.99E 00 9.64F-01
+CS136 0.0 5¢15E 02 @¢39F 02 1404E 02 4.25E OC 1.19FE-01 7.64E~05
+Cs137 0.0 Te66E 03 T466E 03 Te 64E 03 7,61E C3 T.58E 03 7.52E 03
+BA137TM 0.0 7o16E 03 7.16E 03 7.15E 03 7.12E 03 7.09E 03 7.03F 03
+BA140 0.0 30.20E 05 2.72€ C5 6431F 04 2.45E (03 6.5CE 01 3.72E-02
+LAl140 0O.0C 3,20F 05 3.,00F CS T.26E 04 2.82F 03 T.48E 01 4.,28E-02
+CEl4l 0.0 3023E 05 3.06F C5 1e72E 05 4.T76E 04 le14E 04 5.93 02
+PR143 0.0 2.91E 05 2.72F C5 7.12E 04 3.42E C3 l.15E 02 1.07E-01
+CEl4s 0.0 1. 86E 05 1e84F C5 1e73E 05 1.49E 05 1.27E 05 9.04E 04
+PR144% 0.0 le R6E 05 1leP4F Q5 1,T3E 05 1.49F 05 1.27E 05 G.04E 04
+ND147 0.0 1.20F 05 1.C0E CF 1.85E C4 4o3TE C2 6466E 00 1.21E-03
+PM147 0.0 3.43E 04 3.45F 04 3,48E 04 3.35E 04 3.19E 04 2.89€ 04
+PM14EM 0.0 5¢39E 02 5.13F 02 3423F 02 1.22E C2 4.04E Ol %.14F 00
+PML48 0.0 5758 £3 3.92& C3 1.48E 02 9.87E 00 3.25E 00 3.33E-01
+PM143 0.0 S«93E 04 2436E 04 5.01F 00 3,44E-08 2,€3E-17 0.0
+SM151 C.0O 14965 02 1.97F 02 1.97 02 1.,97E 02 1.97E 02 1.9€E 02
+-9-
+Table L (Continued)
+
+MSRE OPERATION WITH 235 U FUEL
+POWER= 4c 18 MW BURNUP= 2983. MWD FLUX= 2.35E 12 N/CM%*%2-SEC
+
+NUCLIDE RADIOACTIVITY, CURIES
+CHARGE DISCHARGE 3.0 0D 30.0 0 90. © 157. D 295. D
+
+EUlS52 0.0 le 158 00 1.15& 00 1415& 00 le.14E 00 1.13E 00 1.10 00
+EUlS54 0.0 1.27 Ol 1426F Ol 1e26E 01 1.25E Ol 1.24E 01 1.22E Ol
+EU155 0.0 4s 69E 02 4.68F C2 4.55E 02 4.,27E 02 3,98E 02 3.45E 02
+EULS56 0.0 1leBTE 03 1.65E 03 44 74E 02 2.96E Ol 1l.34E 00 2,28E-03
+GD162 0.0 2.15E 0C 2.14F 00 2,03E 00 1.81FE CO 1.59E 00 1.23E 00
+TB162M 0.0 2.156 0C 2.14F 00 2.03E 00 1.81E 00 1.59€ 00 1.23E 00
+SUBTAT 0.0 4o52E 06 3.T9E C6 1«8TE 06 9473E 05 4.T74E 05 2.89E 05
+
+TOTALS 0.0 20 64E OT 3.97E 06 1.87E 06 9.73E 05 4.74E 05 2.89E 05
+~10-
+
+Table 5. Transuranium Isotope Radioactivity of MSRE Fuel Salt After
+Period of 235 Operation as a Function of Time After Shutdown
+
+MSRE OPERATION wliTH 235 U FUEL
+POWER = LelB Mu BURNUP= 2983. MWD FLUX= 2.35F 12 N/CM*%2-SEC
+
+NUCLIDE RADIOACTIVITY, CURIES
+
+CHARGE DISCHARGE 3.3 C 30.0 C 30. © 157. DO 295. D
+U234% 4.878 00 4.B0E CO 4.50FE CO 4.80E 00 4.80F CO C.D Ge55E=07
+U237 G.0 9.55E C3 7.C2E 03 4.39E 02 9.25E-01 0.0 Cc.0
+NP233 0.0 le11E 06 4.60E C% 1l.50t 02 3.30E-06 0.0 1.59E=C5
+PU239 0.0 3.766 Ol 3.785 Cl 3.79% C1 3.79& Ol 3.75€ Cl 3.79E 01
+PU24C ClO 6.128 CO 6,12F 00 6.128 GO 6.12FE 00 €.12F 00 6.,12E GO
+PU241 QJ.0 l.68E 02 1.68F C2 1.67E 02 1.6H6E C2 1.64% 02 l.0lE 02
+CM242 0.0 1445 00 1le46E 00 1.30F CO 1.01E CO 7.57E=Gl 6¢.,22E-01
+
+SUBTOT 4,8TE 00 1el12E 06 4.67E 05 Bu.16F 02 2.16F C2 2.09E D2 2.05€ 02
+
+TOTALS 4.94F 00 2.227 06 4,68BF 05 8,1TE 02 2.18E 02 2.10F 02 2.06F 02
+~11-
+
+Table 6. Radioactivity of Enriching 233y Used to Fuel MSRE as a Function
+of Postpurification Time
+
+MSRE 233-U FUEL CCMPOSITION AFTER PURIFICATION
+
+NUCLIDE RADIOACTIVITY,
+
+TL208
+pB212
+BI212
+P0212
+P0216
+RN220
+RA226
+TH228
+TH225
+u2132
+u233
+u234
+u236
+SusTOT
+
+TOTALS
+
+INITIAL
+C.0
+
+366.0 D
+1.97 01
+5.48E 01
+S.48E 01
+3,51 Cl
+5.48% 01
+Se48E Ol
+5.48E 01
+5.48E Ol
+3.10e-C2
+le T9E 02
+3.266 02
+1. 74F C1!
+3.87¢-03
+9.07 C2
+
+9.C7E C2
+
+CURIES
+
+732.C D
+3.33t 01
+F424EF 01
+9.24E 01
+5.92 01
+9.24E 01
+9.24E 01
+J.24F C1
+A.,24t 01
+6.20E=02
+1.778 C2
+3.268 02
+ls 748 Cl
+3.87E-03
+1.17 C3
+
+le17F C3
+
+1098. C
+4,25€ 01
+1413E 02
+1.18E C2
+7.56E C1
+l.18F 02
+1.18E 02
+1.18E C2
+1.13F 02
+9.31E-02
+l. 76 C2
+3.26E C2
+le 74F 01
+3. 37E~-0C3
+1. 35¢ 03
+
+1.35€ 03
+
+1464, ©
+4.87 Cl
+1l.35E 02
+1,35 02
+Be66E 01
+1,356 02
+1.35€ 02
+1.35E 02
+1.35E C2
+1l.24E-0!
+l.74E C2
+3.26E C2
+1.74E 01
+3,87E-C3
+l1.47E C3
+
+1.47E C3
+
+183C. D
+S+29E O01
+lo 47E 02
+le47E 02
+9.4CE 01
+1.47€ 02
+1.47 02
+1l.47E 02
+l.47F 02
+1.55€-01
+1.72€ 02
+3.26E 02
+1+74E 01
+3,87€E-93
+1.54E€ 03
+
+l.54E 03
+~19-
+
+Table 7. Fission Product Inventory of MSRE Fuel Salt After Period of
+233y Operation as a Function of Time After Shutdown
+
+MSRE OPERATION WITH 233-U FUEL
+POWER= 4.18 Mw BURNUP= 1387. MwD FLUX= 3,86E 12 N/CM*%2-SEC
+
+NUCLIDE CONCENTRATICNSy GRAMS
+CHARGE DISCHARGE 384,0 CL 749.C CO 111%. D 1480. 0 1845. D
+RB 87 4467E 00 B8.48F 00 8.,48F CC 8,48E 00 8,48F (C0 8.42E 00 B.48E 00
+SR 88 3.37E 00 S.64F CO 5.€4F OC 5.64E 00 5.64F 00 5.64FE 00 5.64E 00
+Y 89 4466E 01 6666F Ql 7e23F Cl Te24F 01 T7.24E 01 7.24E 01 7.,24F Ol
+SR 90 6.39E Cl 9.55F 01 9.31f Ol 9.,CBE 01 8.86% 01 R.65E Ol B.44E Ol
+ZR 90 2458E 00 4e44E 20 5.91F 20 Q.18F 00 1.14E 01 1.36E Ol 1.57 01
+IR 91 6.96F 01 9.73F 01 1.05f C2 1.05F 02 1.05E 02 1.05F 02 1.05F 02
+ZR 92 T.35E O01 141CF 02 1.10F 02 1le10E 02 1.10F C2 1.10F 02 1.10F 02
+ZR 93 T.97E 01 1.19% 02 1.19F 02 1.19E 02 1.19E 02 1.13F 02 1.19E 02
+IR 96 7,93E C1 1l.18E 02 1.18F C2 1.183E 02 1.18% C2 1.13E 02 1.18F 02
+MO 95 1.53E 00 2.44% 01 3.92F Cl 3.97F 01 3.97E 01 3.97E 01 3,97¢ 01
+ZR 96 3,08E Ol 1e14f 02 1lel4E C2 lea14E C2 le14E 02 1.14E C2 1.14F 02
+
+MO 37 0.0 3.25F 01 3.,25F Ol 3.25E Cl 3.25E Ol 3.25E 01 3.,25E 01
+MO 98 0.0 3,165 01 3.16F 01 3.15E Cl 3.16E O01 3.16E 01 3.16F C1
+TC 99 0.0 2.98F 01 2.99E Ol 2,99E Cl 2.9SE Ol 2,99E Ol 2,99F Ol
+MO100 0.0 2485E Cl 2485E C1 2485E Cl 2.85E Cl 2.85E Ol 2.8%5E Ol
+RU101 0.C 16955 01 1.95F Cl 1.95E Cl 1.95E Cl 1.95E O01 1.95F C1
+RU102 0.0 16 56E O01 1.56F Cl 1.56E Ol 1.56E Ol 1.56F 01 1.56E 01
+RH103 4,10E 01 5.07% Ol 5.30 Cl S5.30F Ql 5.30F Ol 5.30E Ol 5.30& Ol
+RU104 0.0 T.88E 00 7.88% 00 7.88E 00 7.88€ CO 7.88E 00 7.88E 00
+PD10S 1l.34E Ol 1.82E Cl 1.82F Cl 1.82E Ol 1.82F 01 1.82E Ol 1.82F Ol
+PD106 3,58E 00 4+61F 00 5.7€F 0C 6430FE 00 6.,57& 00 6.71E 00 6.77€ 00
+PD107 3.41E 00 5.64E OC 5.64F OC 5.64F OC 5.,64E 00 5.64E OC 5.64% 00
+TE128 0.0 Fe Lb6E 00 944TE 00 944TE CO 9447E C0 9.47F CO S.47E 00
+
+1129 0.0 1¢49F 01 1.58F 01 1.58F 01 1.58E Cl l.58E Ol 1.58F Ol
+TE130 0.0 20 00E Cl 2.C9F 01 2.09E Cl 2.09E 01 2.08E 01 2,09E C1
+CS137 B463E Cl 1.28E C2 1.25F C2 1.23E C2 1.20FE 02 1.17F 02 1.14E 02
+BAL37 3.25E CO 5.56F 00 B465F OC l.15E Ol 1le43E Cl 1.70F 01 1.97% 01
+BA138 4.G3E O01 T,44F Cl Te44E Cl Te44E Ol Te44E Ql 7.44F 01 T.44E O1
+
+LAL39 1.17E 02 1e470F C2 l.70f C2 1470E 02 1.72E C2 1. 70E 02 1.70F 02
+CE140 1436E 02 1.89F C2 1.7CF C2 1.90E 02 1.90& C2 1.90€ 02 1.90F 02
+PR141 1420E 02 1,70E C2 l.86F C2 leB84F 02 1.84EF C2 1.94F 02 1.84E 02
+CE142 1e14F 02 1473F C2 le73F C2 1473E C2 1.73% 02 1e73E 02 1.73E 02
+ND143 1.13E C2 1le67E 02 1.73F C2 1.73E C2 1.73E C2 1.73E 02 1.73F 02
+CE144 2.84E 01 3.G8FE Ol 1456F Cl 6440E CC 2.62F CC 1.07E CO 4.41E-01
+NDl44 B,05E O01 1e13F 02 1427F 72 le4kFE C2 1,50F (2 1le52F 02 1.52f C2
+ND145 T,6%5E Ol 1.C7¢ 02 1.07% 02 1.07E £2 1.0TE 02 1l.07E 02 1.07E 02
+ND146 5.99E 01 B8,41F 01 B.41F 01 8.41F C1 B8.41E Cl 8.41% 01 B.41F C1
+PM147 3,10 Ol 4.01E 01 3,16F 01 2.42E Cl 1.86E Cl 1.43F 01 1.10% 01
+SM147 1.56F 01 2,39E 01 3.40F 021 4,14F Cl 4.70E Cl S5.13E 01 5,46F O1
+ND148 3.37E 0) 4,63E Cl 4.63F 01 «.63E 01 4.63E 01 4,63E 01 4,635 01
+ND150 1435€ 01 1.90% C1 1.50f C1 1490FE 01 1.90E 01 1.90E Ol 1.S0E 01
+SM150 1.92E C1 2.71F Ol 2.71F C1 2.,71€E Cl 2.71E 01 2.71 C1 2.71F 01
+SM15] T,20E C0 5.39t OC 5.3BF OC %,33E CO 5.29E 00 5.25E 00 5.21F CO
+SM152 Te42E C0 1le465 Ol 1le46E Cl 1e46E O01 1.45E Cl le4bE Cl le4é6E 01
+EUL153 3.70E CO 5.45F 00 5.49E CO 5.49F 00 5.49% CO 5.49% 00 5.49€E 00
+SUBTOT 1468S C3 2,66F 03 2.71F 023 2.71E 02 2.71E C3 2.71E C3 2.71F 03
+
+TOTALS 1.70E 03 2,T6E C3 2.76% C3 2.76F C3 2.76FE C2 2.74E 03 2.76E C3
+-13-
+
+Table 8. Transuranium Isotope Inventory of MSRE Fuel Salt After Period
+of 233y Operation as a Function of Time After Shutdown
+
+MSRE OPERATION WITH 232-U FUEL
+POWER= 4e18 MW BURNUP= 1387. MWD FLUX= 3,89E 12 N/CM**2-SEC
+
+NUCLIDE CONCENTRATIONS, GRAMS
+CHARGE DISCHARGE 384.0 0D 749.C D 1115. D 1480. D 1845. D
+U232 B8.,05E 00 7,88F Q0 7.78E 00 T+ T1E OO Te64E 00 7.56E 00 7,49E 00
+U233 3.45% 04 3.30E 04 3,30FE 04 3.30FE C4 3.30F C4 3,30E 04 3.30FE 04
+U234 2.81lE 03 2.94E 03 2.94F 03 2.94E 03 2.94FE 03 2.94E 03 2.94E C3
+U235 9,94F 02 9,86E C2 3.86F C2 9.86E 02 9.86E C2 9.86E 02 9.86E 02
+U236 6409E 01 64.80F Ol 68CE C1 6.80F Ol 6.80E Ol &,80F 01 6,80E Ol
+U238 2438E 03 2.37E 03 2.37F 03 2.37E 03 2.37F C3 2.37E 03 2,37€ 03
+PU239 T.4BE 02 6431E 02 64317 02 6.31E 02 6.31E 02 6.31E C2 6,31E 02
+PU240 3462E 01 TeT4E 01 7.74E O01 To74E Cl To74E 01 7.74E 01 7.74E Ol
+PU241 1.41E 00 T.89E 00 T7.46F 00 7.08E C0 6.71E CO 6.36£ 00 6,03E CO
+SUBTOT 4.15E C4 4.01FE 04 4.01f 04 4.01E 04 4.,01E 04 4.0lE 04 4.01E 04
+
+TOTALS 4,15E 06 4,01E C4 4.01F C4 4.01E 04 4,01€E 04 4,01F 04 4,01FE 04
+Table 9.
+
+-1h-
+
+Fission Product Radioactivity of MSRE Fuel Salt After Period
+
+of 233y Operation as a Function of Time After Shutdown
+
+MSRE OPERATION WITH 233-U FUEL
+
+POWER=
+
+“e188 MW
+
+BURNUP=
+
+NUCLIDE RADIOACTIVITY, CURIES
+CHARGE DISCHARGF
+
+SR 89
+SR 90
+Y 90
+Y 91
+ZR 95
+NB 95M
+NB 95
+RU103
+RH103M
+RU106
+RH106
+SN123M
+$8125
+TE125M
+TEL2TM™
+TEL27
+TE129M
+TEl129
+CS13¢
+cs137
+BA137M
+CElel
+CEl4a
+PR144
+PM147
+PM148M
+SM151
+EU152
+EUl5¢
+EU155
+GD162
+TB162M
+SUBTOT
+
+TOTALS
+
+3.77
+9.C4E
+9.06E
+8.64F
+1.28E
+24T2E
+1.99E
+0.
+
+OCOO00COO0O0O0OC0CO
+
+ODO0OOO00O0O0OODOO0OO0O0O
+
+2.89E
+
+2489E
+
+03
+C3
+03
+03
+04
+02
+04
+
+1. 62F
+1. 35E
+1. 36E
+1. 83¢
+2. 00F
+4e 15E
+le 72E
+Te40F
+Te. 40F
+Te 49E
+8. 95¢
+le 39E
+6. 38E
+1. 87E
+3. 94F
+3.28E
+2.67TE
+Fe TSF
+5052C
+le 12F
+l. 05E
+4. 10E
+le 27
+le 28F
+3.72F
+l. 05%
+lo 47E
+Se 38E
+3.,52¢
+3.55E
+2. T4E
+24 Taf
+le. 8CE
+
+3.10%
+
+(]
+04
+04
+C5
+C5
+03
+as
+04
+04
+03
+03
+
+384,0
+9. 72E
+1432F
+1l.32F
+1.99¢E
+3.33F
+T.08F
+8430F
+9.92F
+B8e92C
+3.,63F
+3,.,€3%
+l465F
+Sel2F
+20111
+3.7CE
+3,¢5F
+2415F
+66CG1lF
+3,6TE
+1.09¢
+leN2F
+24237
+44 G8E
+S.GE%
+2932
+l.RoF
+lebé6t
+5e06F
+3,36F
+2438°F
+le.32E
+l.32¢
+2.01F
+
+2.01E
+
+1387.
+
+n
+
+-
+
+MWC
+
+T49.C D
+3.00€E C1
+1. 28E 04
+1. 28€ 04
+S.38E
+le 36E
+lo 44E
+le 78E
+S5e¢ 99E-01
+3.00€-01
+1.82€ 03
+1.82E
+24 18E
+3. S6E
+1. 85E
+3.63¢
+3.59F
+5.06E-02
+le 62E-02
+2. T6E CO
+1. OTF 04
+9,97E 03
+3.63E-01
+2.04E C4
+2. 045 04
+2.25 C4
+1,80E-C2
+le 45€ C2
+4. T3E 00
+3. 22E C1
+le62E 02
+64 61E-01
+6.61E-01
+1.15 05
+
+1.15€ C5
+
+FLUX= 3,86E 12 N/CM**2-SEC
+
+1115. ©
+9.12E-01
+1.25 C4
+l.25F 04
+2.83E GO
+1.10E C1
+l.17E-Cl1
+1.29€ 01
+3.96E-03
+1.98E-03
+S.12E 02
+9.12E (C2
+2486E-01
+3.06E Q2
+l.45E C2
+T.08E CO
+3.50F (0
+1 «16 F=04
+3.73E~-CS
+1.97E CO
+1.04E C4
+Se74E (3
+5.7TTE-04
+8.37F C3
+8.3TE C3
+1.73% 04
+1.72E~C4
+le44E 02
+4«51E CO
+3.08E 01
+l1.1CE C2
+3.30E-C1
+3+30c~C1
+B.18E 04
+
+B«12%E C4
+
+1480, D
+2081€-02
+1.22E 04
+1,22E 04
+1, 56E-01
+8.96E-01
+9.51€E-03
+1.05% OC
+2 56F=05
+1.33E-05
+4.58F 02
+L.58F 02
+1.51E-01
+2.37E 02
+1.12 02
+2.78E 00
+1.37 CO
+2. 713E=-07
+8. 74E-08
+le 40E OC
+1.02E 04
+9.528 03
+GC, 37E-07
+3.43E 03
+3.43E 03
+1.33E 04
+1, 66E-06
+le 43F 02
+4, 26E 00
+2.95 01
+7.53 01
+1.65E~01
+1465E-01
+Ea 58E 04
+
+6.58€ 04
+
+1845, D
+8,6TE-04
+1.19E 04
+1.19F 04
+B8.43E-03
+Te31E=02
+T.T76F=04
+8.56E=-C2
+1.79€E-07
+8.94E-08
+2.30 02
+230F 02
+Te99E-02
+1.33 02
+8.70E C1
+1.08€ 00
+S«39F=-01
+6.40E-10
+2.05€~-10
+1.00€ 00
+9,95 03
+9.30€ 03
+1.52E~-C9
+le4lF C3
+le41F 03
+1.02E 04
+1.561E-08
+1.42€ 02
+4.02 00
+2.83E 01
+5.14 01
+8.27E~02
+8427E-02
+5.71E C4
+
+Se71E 04
+Table 10.
+
+-15-
+
+Transuranium Isotope Radioactivity of MSRE Fuel Salt After
+
+Period of 233y Operation as a Function of Time After Shutdown
+
+MSRE OPERATION WITH 233-U FUEL
+
+POWER=
+
+NUCLIDE RADIDACTIVITY,
+
+TL208
+P8212
+81212
+P0212
+P0216
+RN220
+RA22¢4
+TH228
+u232
+u233
+u234
+PU238
+PU239
+PU240
+PU24l
+AM24]
+CM242
+SusTOT
+
+TOTALS
+
+4018 Mu
+
+BURNUP=
+
+CHARGE DISCHARGE
+
+5429E
+lo47TE
+1l.47E
+9.40E
+1.47E
+le47E
+1.47E
+le47E
+1.72
+3.27E
+1.74E
+9.00E-01
+4.59E 01
+T.99E 00
+l.61E 02
+2494€-01
+4.22E-01
+1l.76E 03
+
+le 7T6E 03
+
+5. 49E
+1. 53¢
+l. S3E
+9. T6E
+1. 53E
+1.53E
+1. 53¢E
+1.53
+1. 6 8E
+3.,13€
+1. 82E
+1. 008
+3,87E
+le 71¢
+9.01€ 02
+9.59E-01
+2.4%E Ql
+2.55 (3
+
+Te 84E 04
+
+CURIES
+
+1387.
+
+MWD
+
+384.0 0D 749.0 0
+
+S5e66E
+1.57€
+1.57F
+1.01E
+1.57E
+1.57¢
+1.57€
+1.57E
+l.E7€E
+3013E
+1.82¢
+1.10E
+3.87E
+1e71E
+8.52F
+2.35¢
+4.88E
+2.51F
+
+2.51E
+
+5. T6E
+l.60E
+1. 60€
+1.02E
+l.60E
+1. 460F
+1.60E
+1. 60F
+1.65E
+3.13E
+1.82€E
+l1.11E
+3.8T7E
+le T1E
+8. 08E
+3. 60E
+1.05E
+2048E
+
+24 48E
+
+FLUX= 3,89E 12 N/CM¥*2-SEC
+
+1115. D
+5.8CE
+1.61E
+1.61E
+1.03€E
+1l.61E
+1l.61E
+1.61E
+l1e61E
+le64E
+3.13E
+1.82€
+1.10€
+3.87E
+1.71E
+TeSH6E
+4. T9E
+2¢34F-01
+2445E 03
+
+2.45E 03
+
+1480. D
+5.81F
+le62E
+1.62E
+le 03E
+1. 62E
+le 62E
+1.62E
+1.62E
+1.462E
+3. 13E
+1. 82E
+1.10E
+3.87E
+1. T1E
+71, 26E
+Se 91E
+6¢30E-02
+2441E 03
+
+2441F 03
+
+1845, D
+5.82E
+1.62E
+1.62
+1.03E
+l.62E
+1.62E
+1.62E
+1.62E
+1.60E
+3.13€
+1.82E
+1.09E
+3.87E
+1l.71F
+6.88¢
+6.97E
+3.01E-02
+2.37 03
+
+2.38F 03
+-16-
+
+Table 11 presents the photon spectrum produced by radioactive
+decay of the fission products in the fuel salt. The photon energy
+group structure for the calculation is the same as that used in the
+PHOEBE code. The most important fission product gamma ray sources in
+
+each of these groups are summarized in Table 12,
+
+The photon spectrum produced by radioactive decay of the trans-
+uranium isotopes is shown in Table 13. In this table the 0.3 Mev mean
+energy group has been subdivided into seven low energy groups to include
+
+the x-radiation accompanying a-decay of the actinides. The greatest
+
+12
+
+shielding problem presented by these isotopes is the 2 x 10™° photons/sec
+
+of 2.62 Mev energy generated by radioactive decay of 208 a daughter
+
+of 232y, At the end of five years storage the radioactivity of 2°0T1
+will determine the y-ray shielding required to ship the fuel salt. At
+
+232y and its daughters will be in
+
+this time the entire decay chain of
+secular equilibrium and will be disappearing with the 72 year half-life
+of the former.
+
+An estimate has also been made of the neutron production rate in
+
+19g, Using values given
+
+the fuel salt by a-n reactions with “Be and
+by Arno1d® for neutron production rates in thick absorbers and for
+dependence of neutron yield on energy, a neutron source strength of
+1.5 x 10°
+
+sufficiently high that the neutron dose rate will be the controlling
+
+neutrons/sec was obtained. This neutron production rate is
+
+radiation through a lead shield.
+Table 11, Photon Spectrum of Fission Products in MSRE Fuel Salt After Period of 233y Operation
+as a Function of Time After Shutdown
+
+MSRE OPERATION WITH 233~U FUEL
+POWER= 4.18 MN
+
+EMEAN
+
+(MEV)
+3.00E~
+6+ 30E~-
+1. 10E
+1.55€
+1.99
+24 38E
+2.75E
+3.25E
+3.70E
+4.22E
+4. TOE
+5.25E
+
+Tor
+
+MEV/ SEC
+
+EMEAN
+
+(MEV)
+3400E~
+6.4 30E-
+1.10¢
+
+1.55€
+
+1.99E
+2.38E
+2.T5E
+3.25E
+3.70E
+4.22E
+4.70
+56 25E
+
+Tor
+WATTS
+
+01
+01
+00
+00
+00
+00
+oo
+00
+00
+00
+00
+00
+
+AL
+
+o1
+01
+00
+00
+oc
+00
+00
+00
+00
+00
+00
+00
+
+AL
+
+BURNUP=
+
+1387.
+
+MWD FLUX= 3,89E 12 N/CM®%2-SEC
+
+TWELVE GROUP PHOTON RELEASE RATES, PHOTONS/ SEC
+
+DISCHARGE 200.0 D
+
+2.11€
+3.41E
+1. 59¢
+1.09
+le 62E
+1.99¢
+8, 24E
+4e 25E
+5. 22E
+1.97E
+6. 89E
+0.0
+
+8,82E
+T.97E
+
+17
+17
+17
+17
+16
+16
+15
+15
+15
+15
+15
+
+17
+17
+
+4e 14E
+34 66E
+2452E
+14 19€
+3.31E
+le 32E
+3. 80E
+6.37E
+0. 0
+0.0
+0.0
+0.0
+
+4. 15€
+2455E
+
+14
+15
+13
+13
+13
+12
+10
+08
+
+15
+15
+
+TIME AFTER DISCHARGE
+
+384.0 0 566.0 D 749.0 D
+2.01E 14 1.26E 14 8.21E 13
+9.60E 14 4,90FE 14 &.06E 14
+1.64E 13 1.,18E 13 8,.58E 12
+Te34E 12 4.95E 12 3.36E 12
+2.12E 13 1.37€ 13 8.80E 12
+9.12E 11 6.47E 11 4.58E 11
+2.68E 10 1.906 10 1.35E 10
+5.99E 04 6.29E 00 6.25E-04
+
+0.0 0.0 0.0
+0.0 0.0 0.0
+0.0 0.0 0.0
+0.0 0.0 0.0
+
+1.21E 15 6.47 14 5.09t 14
+Te39E 14 3.96E 14 3.14E 16
+
+TWELVE GROUP ENERGY RELEASE RATES, MEV/WATT-SEC
+
+DISCHARGE 200.0 D
+
+1. 52€
+50 14E
+4. 17E
+be 04E
+7. T1E
+1. 13€
+Se 43E
+3.31
+be 62E
+1+ 99E
+T. 15€
+0.0
+
+1l.91E
+1. 28E
+
+10
+10
+10
+10
+9
+10
+09
+09
+09
+09
+co
+
+11
+05
+
+2.97E
+5. 52E
+6e 64E
+4.4CE
+1.58E
+7. 50E
+2.5CE
+4. 96E
+0.0
+0.0
+0.0
+0.0
+
+6. 1CE
+4. 08BE
+
+07
+08
+06
+06
+07
+05
+04
+02
+
+08
+02
+
+TIME AFTER DISCHARGE
+
+384.0 0 566.0 D 749.0 D
+1.45€ 07 9.08E 06 5.89 06
+1.45€ 08 T.39E 07 6.13E 07
+4¢32E 06 3.108 06 2.26E 06
+2.T2E 06 1.84E 06 1.25E 06
+1le01E OT 6.52E 06 4.19E 06
+5.20E 05 3.69E 05 2.61E 05
+1.77E 04 1.25 04 B8.87E 03
+4,66E~02 4.89E-06 4.86E-10
+
+0.0 0.0 0.0
+0.0 0.0 0.0
+0.0 0.0 0.0
+0.0 0.0 0.0
+
+1.77E 08 9.48E 07 7.51E 07
+1.18E 02 6.34E 01 5.03E 01
+
+930.0 0
+5.40EF 13
+3,81E 14
+6035E 12
+2432E 12
+5e69E 12
+3.25E 11
+9.57E 09
+6.92E-08
+0.0
+0.0
+0.0
+0.0
+
+4. 49E 14
+2. T9E 14
+
+930.0 0
+3.88E 06
+5. T4E 07
+1.67E 06
+8.450E 05
+2.T1lE 06
+1.85E 05%
+6430 03
+5.38E~14
+0.0
+0.0
+0.0
+0.0
+
+6.67E 07
+4.47E 01
+
+1115.
+3.56E
+3.66E
+4. T4E
+le61E
+3.64E
+2. 29€
+6.75E
+0.0
+0.0
+0.0
+0.0
+0.0
+
+4. 12E
+2.57E
+
+1115.
+2.56E
+5.52€F
+1. 25€
+5.96E
+le 74E
+1l.31E
+4.44E
+0.0
+0.0
+0.0
+0.0
+0.0
+
+6. 14E
+4.11€
+
+D
+13
+14
+12
+12
+12
+11
+09
+
+14
+
+14
+
+D
+
+07
+06
+05
+06
+05
+03
+
+07
+01
+
+1297. DO
+2.39E 13
+3.55 14
+3.62E 12
+le. 14E 12
+2035E 12
+1.63E 11
+4.T8E 09
+0.0
+0.0
+0.0
+0.0
+0.0
+
+3,87€ 14
+2.42E 14
+
+1297. D
+1. T2E 06
+5.36E 07
+9.53E 05
+4.22€E 05
+1.12€ 06
+9.27E 04
+3.15 03
+0.0
+0.0
+0.0
+0.0
+0.0
+
+5.79€E 07
+3.88E 01
+
+1480.
+1. 62E
+3.47€
+2.81E
+8. 22E
+1.52E
+1.15E
+3439€E
+0.0
+0.0
+0.0
+0.0
+0.0
+
+3.69E
+
+2. 31E
+
+1480.
+
+1.17E
+Se 24E
+T.40E
+3.05¢
+T.23E
+be 56E
+2+ 23E
+0.0
+0.0
+0.0
+0.0
+Ge 0
+
+5.54
+3, 71E
+
+D
+13
+14
+12
+11
+12
+11
+09
+
+14
+
+14
+
+0
+0é
+07
+05
+os
+os
+04
+03
+
+07
+01
+
+1662.
+1.12€
+3.41E
+2+ 24E
+6. 10E
+9.81¢
+8. 16E
+2. 40E
+0.0
+0.0
+0.0
+0.0
+0.0
+
+3.56E
+
+2.23E
+
+1662,
+8.07E
+5. 14E
+5.89E
+20 26E
+4.6TE
+6. 65E
+1.58E
+0.0
+0.0
+0.0
+0.0
+0.0
+
+5.35
+3.58E
+
+D
+13
+14
+12
+11
+11
+10
+09
+
+14
+
+14
+
+D
+05
+07
+C5
+05
+05
+04
+C3
+
+07
+Cl
+
+1845, 0
+Te91E 12
+3,35E 1¢
+1.82E 12
+bob6E 11
+6.36F 11
+EL, 78E 10
+1. 70€ 09
+0.0
+0.0
+0.0
+0.0
+0.0
+
+3.45E 14
+
+2.17E 14
+
+1845. D
+S.68E 05
+S5.05E 07
+4.B80E 05
+l.73E 05
+3.02 05
+3.29€E 04
+l.12€ 03
+0.0
+
+5.20 07
+3.48E Cl
+
+-L1-
+NUCLIDE
+CEl&4
+
+NUCLIDE
+ZR 95
+
+NB 95
+BAL13TM
+
+NUCLIDE
+
+RH106
+EUL5¢
+
+NUCLIDE
+
+RH106
+PR14¢
+
+NUCLIDE
+
+PR144
+
+NUCLIDE
+
+RH106
+
+NUCLIDE
+
+RH106
+
+Table 12,
+
+DISCHARGE
+3,38E O7
+
+DISCHARGE
+1.29€ 09
+1.17€ 09
+5.53E 07
+
+DISCHARGE
+9.81E 06
+24 64E 05
+
+DISCHARGE
+2.4TE 06
+4.20E 06
+
+DISCHARGE
+2.47E 07
+
+DISCHARGE
+1.28E 06
+
+DISCHARGE
+4+36E 04
+
+PRINCIPAL PHOTON SOURCES IN
+MEAN ENERGY =
+
+PRINCIPAL PHOTON SOURCES IN
+MEAN ENERGY =
+
+PRINCIPAL PHOTON SOURCES IN
+MEAN ENERGY =
+
+PRINCIPAL PHOTON SOURCES IN
+MEAN ENERGY =
+
+PRINCIPAL PHOTON SOURCES IN
+MEAN ENERGY
+
+PRINCIPAL PHOTON SOURCES IN
+MEAN ENERGY =
+
+Summary of Important Fission Product Gamma Ray Sources
+
+PRINCIPAL PHOTON SOURCES IN GROUP 1, MEV/MATT-SEC
+MEAN ENERGY =
+
+TIME AFTER DISCHARGE
+Db 749.0 D 930.0 D
+06 S.43E 06 3.49E 06
+
+GROUP 2, MEV/WATT-SEC
+
+TIME AFTER DISCHARGE
+
+D 749.0 DO 930.0 D
+06 8.73E 05 2.54E 05
+06 1.21€ 06 3.18E 05
+07 £.27E 07 S5«21E 07
+
+GROUP 3, MEV/WATT-SEC
+
+TIME AFTER DISCHARGE
+
+0D 749.0 0 930.0 D
+06 1.99€ 06 l.42E 06
+0s 2.41E 05 2436E 05
+
+GROUP &, MEV/WATT-SEC
+
+TIME AFTER DISCHARGE
+
+D 749.0 DO 930.0 D
+
+05 5.02€ 05 3.57€ 05
+06 6.T4E 05 4.33E 05
+
+GROUP 5, MEV/WATT-SEC
+TIME AFTER DISCHARGE
+
+D 749.0 0 930.0 D
+0é 3.96€ 06 2.55E 06
+GROUP 69 MEV/WATT-SEC
+TIME AFTER DISCHARGE
+
+0 749.0 D 930.0 D
+05 2.61E 05 1.85E 05
+GROUP 7, MEV/WATT-SEC
+TIME AFTER DISCHARGE
+
+D 749.0 D 930.0 D
+04 8.87E 03 6.30E 03
+
+28R°
+
+in MSRE Fuel Salt
+
+1662.
+5.85E
+
+1662.
+1. 65E
+2.05E
+4+98E
+
+1662.
+3.56E
+2.17E
+
+1662.
+8.G6E
+7. 25E
+
+l1¢62.
+4.27E
+
+1662.
+4e 65E
+
+1662,
+1.58E
+
+1845.
+3. T4E
+
+1845,
+be 69E
+5.82E
+4 92E
+
+1845,
+2.52E
+2. 12€E
+
+184%,
+64 34E
+4 64E
+
+1845,
+2. T3E
+
+1845.
+3.29E
+
+1845.
+1.12€
+
+- QT~
+Table 13. Photon Spectrum of Transuranium Isotopes in MSRE Fuel Salt After Period of 233y
+Operation as a Function of Time After Shutdown
+
+MSRE OPERATION WITH 233-U FUEL
+BURNUP=
+
+POWER = 4.18 MW
+
+1387.
+
+FLUX= 3,89E 12 N/CMe*2-SEC
+
+ACTINIDE PHOTON RELEASE RATES, PHOTONS/ SEC
+
+EMEAN
+(MEV)
+3.00E-02
+4.00E=-02
+60 00E~02
+1.00€E-01
+1.50E=01
+2.00E-01
+3.00E-01
+64 30E-01
+1.10€ 00
+1.55 20
+1.99€ 00
+2. 38E 00
+2.75 00
+3.25€ 00
+3.70 00
+40 22E 00
+4+ 70E 00
+5425 00
+
+TOTAL
+
+MEV/ SEC
+
+EMEAN
+(MEV)
+3.00€-02
+4.00E-02
+€.00E-02
+1e00E=-01
+1«50E-01
+2.00E-01
+3.00€E-01
+6¢30E-01
+1.106 00
+1.55€ 00
+1.99 00
+2.38 00
+2.75 00
+3.25€ 00
+3.70E 00
+4e22E 00
+4, T0E 00
+S.25E OC
+
+TOTAL
+
+WATTS
+
+DISCHARGE 200.0 D
+
+9. 88E
+3.67E
+5.07E
+Te 78E
+3.59€
+2. 86E
+1.91€
+2.95E
+2. 02E
+Te 45E
+3.59¢E
+2. 78E
+1.93E
+0.0
+
+Ce 0
+
+0.0
+
+0.0
+
+Ce 0
+
+24 62€
+3.21F
+
+13
+14
+14
+14
+14
+14
+14
+13
+12
+1C
+10
+1)
+12
+
+15
+14
+
+l.82E
+I 1
+6e 36E
+1.82E
+1. 09E
+5.92€E
+5.09€
+4. 68E
+1. 38E
+T.58E
+3,66E
+2.97E
+1.97€
+0.0
+
+0.0
+
+0.0
+
+0.0
+
+0.0
+
+1. 73€
+le 17E
+
+09
+11
+11
+12
+11
+12
+11
+12
+12
+10
+10
+ol
+12
+
+13
+13
+
+TIME AFTER DISCHARGE
+
+384.0 0 566.0 D 749.0 D
+
+2.52E
+1. 73E
+6.45E
+1.85E
+1.09E
+6.00E
+5¢14E
+4. T4E
+1. 40E
+T.68E
+3. T1E
+3.04E
+1.99€
+0.0
+
+0.0
+
+0.0
+
+0.0
+
+0.0
+
+1. 75E
+1l.18E
+
+ACTINIDE ENERGY RELEASE
+
+DISCHARGE 200.0 D
+
+T.09E
+3.52€
+T.28t
+l.86E
+1.29€
+1.37
+1.38E
+Ye 4 5E
+5.32E
+2. THE
+le T1E
+1.58E
+1. 27E
+0.0
+
+0.0
+
+Ce 0
+
+0.0
+
+C.0
+
+Te 6TE
+
+50 14E
+
+05
+06
+06
+07
+or
+07
+07
+0¢
+05
+04
+04
+-05
+06
+
+07
+ol
+
+1.31E
+le 66E
+9.13E
+4.37E
+3.92¢€
+24 84E
+3.65E
+T.07E
+3.64E
+2.81E
+le T4E
+
+ol
+03
+03
+04
+c3
+05
+04
+[+]
+05
+04
+Cs
+
+1. 65E~05
+
+1. 25E
+0.0
+0.0
+0.0
+0.0
+0.0
+
+2. T9€
+1.87E
+
+06
+
+06
+00
+
+09 3.,20E 09 3.87 09
+11 1.73€ 11 1.73¢ 11
+11 6.53E 11 6.61E 11
+12 1.86 12 1.87E 12
+11 1.10E 11 1.,10E 11
+12 6.05E 12 6.10€ 12
+11 5.188 11 5.20E 11
+12 4.79E 12 4.82€ 12
+12 1.41E 12 1.426 12
+10 7.75E 10 7.81E 10
+10 3.,74E 10 3.,7TE 10
+01 3.07 O01 3.07E Ol
+
+12 2.01€ 12 2.02 12
+0.0 0.0
+0.0 0.0
+0.0 0.0
+0.0 0.0
+0.0 0.0
+
+13 1.77E 13 1.78E 13
+13 1.19€ 13 1.,20E 13
+RATES,» MEV/WATT-SEC
+TIME AFTER DISCHARGE
+
+384.0 0 566.0 D 749.0 DO
+
+1.81E
+1.66E
+9. 26E
+4.42E
+3.93E
+2.97E
+3.69E
+Te16E
+3.69E
+2.85E
+1. 77E
+
+01 2.30E 01 2.78E Ol
+03 1.66E 03 1.66E 03
+03 9,38 03 9.50E 03
+04 &.46E O04 &.49E 04
+03 3.94E 03 3.95€ 03
+05 2.90E 05 2.92E 05
+04 3.72E 04 3.74E 04
+05 7.228 05 7T.27E 05
+05 3.72 05 3.75 05
+04 2.88E 04 2.90E 04
+04 1.T78E 04 1.79E O4
+
+1. 736-05 1.756-05 1.75E-05
+
+1.31€
+0.0
+0.0
+0.0
+0.0
+0.0
+
+2.82E
+1.83E
+
+06 1.32 06 1.33E 06
+
+0.0 0.0
+0.0 0.0
+0.0 0.0
+0.0 0.0
+0.0 0.0
+
+06 2.85E 06 2.8TE 06
+00 1.91E 00 1.92€ 00
+
+930.0 0
+
+4.50E
+1. T3E
+64 69E
+1. 88E
+1. 10E
+6. 13E
+5.22E
+4. 85E
+le43E
+Te B4E
+3. T79€
+3.07E
+2.03€
+0.0
+
+0.0
+
+0.0
+
+0.0
+
+0.0
+
+le. 79E
+1. 21E
+
+09
+11
+11
+12
+11
+12
+11
+12
+12
+10
+10
+01
+12
+
+13
+13
+
+930.0 0
+
+3.23E
+le 66E
+9.61E
+4eS1E
+3.96E
+2.93E
+3. 1SE
+T.31E
+3.77E
+2.91E
+1.80E
+
+01
+03
+03
+O04
+03
+05
+04
+05
+05
+04
+04
+
+14 75€~05
+
+le 34E
+0.0
+0.0
+0.0
+0.0
+0.0
+
+24 89E
+1.93E
+
+06
+
+06
+00
+
+1115, D
+5.14E 09
+1.73€ 11
+6.TTE 11
+1.89€ 12
+1.10€ 11
+6.15E 12
+Se.24E 11
+4. 86F 12
+1.43E 12
+T.87E 10
+3.80E 10
+3,06E 01
+2.04E 12
+0.0
+0.0
+0.0
+0.0
+0.0
+
+1.80€ 13
+le21E 13
+
+1115. ©
+3.69E Ol
+1. 66E 03
+9.72E 03
+4.52E 04
+3.97E 03
+2.94E 05
+3. T6E 04
+T+33E€ 05
+3.78E 05
+2492E 04
+l.81E 04
+le T4E-05
+1. 34E 06
+0.0
+0.0
+0.0
+0.0
+0.0
+
+2.89E 06
+1.94E 00
+
+1297. D
+5.T4E 09
+1.73E 11
+6.84E 11
+1.89 12
+1.11€ 11
+6.16E 12
+S.24E 11
+4.B7E 12
+1l.44E 12
+7.89 10
+3.81E 10
+3,05 01
+2,05 12
+0.0
+0.0
+0.0
+0.0
+0.0
+
+1.80 13
+1.21€ 13
+
+1297. D
+4.13 01
+le 66E 03
+9,83€ 03
+4.53E 04
+3.97 03
+2.95E 05
+3.77E 04
+T.35€ 05
+3.79 05
+2.93 04
+l.81E 04
+le. T4E=05
+1l.35E 06
+0.0
+0.0
+0.0
+0.0
+0.0
+
+2.90E 06
+l.94E 00
+
+1480. D
+be 34E 09
+1.73E 11
+6.92E 11
+1.89E 12
+le 11€ 11
+6e 16E 12
+S.24F 11
+4, 87E 12
+lo 44E 12
+T+. 89E 10
+3, 81E 10
+3.04E 01
+2.05€ 12
+0.0
+0.0
+0.0
+0.0
+0.0
+
+1.80€ 13
+le 21E 13
+
+1480. D
+4.55E Cl
+1. 66E 03
+9. 94E 03
+4+53E 04
+3.98E 03
+2.95E 05
+3. 77E 04
+7.35€ 05
+3. 79E 05
+2.93E 04
+1. 81E 04
+le T3E-05
+1.35€ 06
+0.0
+0.0
+0.0
+0.0
+0.0
+
+2. 90E 06
+1. 94E 00
+
+1662.
+6.91E
+1. 73E
+6.99E
+1.89E
+1.11E
+6. 16E
+5.25E
+4, 87E
+lo 44E
+T.89E
+3.81E
+3,03€
+2.05E
+0.0
+0.0
+0.0
+0.0
+0.0
+
+1. 80E
+1l.21€
+
+1662.
+4.97E
+1.66E
+1.00¢
+4e53E
+3.99E
+2.95¢€
+3.77E
+Te 35E
+3.79E
+2.93
+1.81E
+
+1.73E-~
+
+1.35€
+0.0
+0.0
+0.0
+0.0
+0.0
+
+2.90E
+1.94
+
+D
+09
+11
+11
+12
+11
+12
+11
+12
+12
+10
+10
+01
+12
+
+13
+13
+
+0
+ol
+03
+04
+C4
+03
+0s
+C4
+Q5
+05
+04
+04
+05
+cé
+
+06
+00
+
+18645. DO
+T.48E 09
+1.73E 11
+T«06E 11
+1.89E 12
+l.11€ 11
+6.17E 12
+5.25E 11
+4.88E 12
+1.464E 12
+T«89E 10
+3.81€ 10
+3.C2E 01
+2.05€ 12
+0.0
+0.0
+0.0
+0.0
+0.0
+
+l.81E 13
+l.21E 13
+
+1845, OD
+5.37E 01
+1.66E 03
+1.01E 04
+4«53E 04
+3,99 03
+2.95E 05
+3.TTE 04
+Te35€ 05
+3.75E 0S
+2.93E 04
+1.82E 04
+1. 72E~05
+1.35E 06
+0.0
+0.0
+0.0
+0.0
+0.0
+
+2.90E 06
+1.94E 00
+
+-61=
+20 -
+
+REFERENCES
+
+MSR Program Semiann. Progr, Rept. Aug. 31, 1966, CRNL-LO37.
+
+ 
+
+MSR Program Semiann., Progr. Rept. Feb. 28, 1970 (in preparation),
+
+ 
+
+Chem. Technol. Div. Ann. Progr. Rept. May 31, 1969, ORNL-U)22,
+PP. 89-91,
+
+ 
+
+Chem. Technol. Div. Ann, Progr. Rept. May 31, 1969, ORNL-LL22,
+pp. 12-15.
+
+MSR Program Semiann. Progr. Rept. Feb. 28, 1967, CRNL-4119, pp. 79-83.
+MSR Program Semiann. Progr. Rept. Aug. 31, 1967, ORNL-L4191, pp. 50-58.
+
+J. M. Chandler and S. E. Bolt, Preparation of Enriching Salt "47-
+PE, for Refueling the Molten Salt Reactor, ORNL-}371 (March 1969).
+E. D. Arnold in Engineering Compendium on Radiation Shielding, R. G.
+Jaeger, Ed, Vol, I, Chap. 2 (1963).
+-2]-
+
+DISTRIBUTION
+
+Central Research Library
+Document Reference Section
+Laboratory Records Dept.
+Laboratory Records, ORNL R.C.
+Division of Technical
+Information Extension
+Laboratory and University Division,
+AEC-CRO
+ORNL Patent Office
+Bell
+Bettis
+Briggs
+Carter
+Eatherly
+Ferguson
+Gabbard
+Haubenreich
+Kasten
+Laughon, AEC Site Repr.
+MacPherson
+McNeese
+Nichols
+. Nicholson
+. Perry
+M. W. Rosenthal
+Dunlap Scott
+R. EE, Thoma
+M. E. Whatley
+
+e os © oo ee
+oa . *e eo eo
+
+oe eo eo eo eo » .
+- hd * . . .
+
+PHOT RUYYOUDE EZ IEE
+REY FHoW=EmEYE Why

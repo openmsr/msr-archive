@@ -1,0 +1,1922 @@
+:
+Ld
+=
+Lg
+Q
+a
+»
+rr
+
+ 
+
+  
+
+OAK RIDGE NATIONAL LABORATORY
+
+operated by
+UNION CARBIDE CORPORATION
+for the
+
+U.S. ATOMIC ENERGY COMMISSION
+ORNL- TM-2315
+
+copy no. -£ 0D
+
+DATE - 8/27/68
+Instrumentation and Controls Division
+MEASUREMENT OF HELIUM VOID FRACTION IN THE MSRE
+
+FUEL SALT USING NEUTRON-NOISE ANALYSIS
+
+D. N. Fry  R. C. Kryter J. C. Robinson’
+
+ABSTRACT
+
+Investigations were made at the MSRE to determine if the amount of
+helium gas in the fuel salt could be measured using neutron noise analysis. The
+neutron power spectral density (NPSD) was measured at different reactor operating
+conditions and compared with analytical model predictions of the NPSD for the
+
+same conditions.
+The results of experimental tests and analytical studies have shown that the
+
+principal source of small neutron density fluctuation observed in the MSRE is helium
+bubbles circulating in the fuel salt. The NPSD was most sensitive to changes in
+
+. fuel temperature: the NPSD in the region of 1 cps increased by a factor of almost
+
+50 when the average core outlet fuel temperature was decreased from 1225 to
+1180°F. The measurements showed that NPSD in the frequency range from 0.5
+
+to 2 cps varies as the square of helium void fraction as predicted by the model,
+and that the minimum void fraction is more nearly zero than the previously accepte
+
+value of 0.14.
+
+d
+
+It is concluded that changes in the circulating void fraction can be inferred
+with good sensitivity directly from neutron noise measurements, and, consequently,
+NPSD can complement and enhance the value of the MSRE reactivity balance
+
+calculations.
+
+ 
+
+Consultant from the Nuclear Engineering Department, University of
+Tennessee, Knoxville, Tennessee.
+
+NOTICE This document contains information of a preliminary nature
+and was prepared primarily for internal use at the Oak Ridge National
+Laboratory. It is subject to revision or correction and therefore does
+
+not represent a final report.
+
+OISTRIBIMON OF THR NOCHMENT {S UNLIMITED
+ 
+
+ 
+
+ 
+
+LEGAL NOTICE
+
+This report was prepared as an account of Government sponsored work, Neither the United States,
+
+nor the Commission, nor any person acting on behalf of the Commission:
+
+A. Makes any warranty or representation, expressed or implied, with respect to the accuracy,
+completeness, or usefulness of the information contained in this report, or that the use of
+any informotion, apparatus, method, or process disclosed in this report may not infringe
+privately owned rights; or
+
+B. Assumes any liabilities with respect to the use of, or for damages resulting from the use of
+any information, apparatus, method, or process disclosed in this report.
+
+As used in the above, “person acting on behalf of the Commission’ includes any employee or
+
+contractor of the Commission, or employee of such contractor, to the extent that such employee
+
+or contractor of the Commission, or employee of such contractor prepares, disseminates, or
+provides access to, any information pursuant to his employment or contract with the Commission,
+
+or his employment with such contractor,
+
+ 
+
+ 
+
+-
+Lie 4
+
+CONTENTS
+
+INTRODUCTION . . « «vv 0 vv 0 vv 0 vv oe
+
+DATA ACQUISITION AND REDUCTION , . . . . . .
+2.1 Data Acquisition . + . . + + +. «o.oo.
+2.2 Data Reduction . . . . . . +. oo...
+
+THEORETICAL CALCULATIONS AND MODELING . .
+3.1 Introduction + + + + + +. v.00 oe...
+3.2 Development of the Model . . . . . . . . . .
+3.3 Consideration of Possible Driving Functions. . .
+
+MEASUREMENTS AND RESULTS . . .-. . . . . . .
+4.1 Establishment of Measurement Reproducibility and
+
+Method of Spectrum Interpretation . . . . .
+
+4,2 Results of Tests at 7 Mw Reactor Power . . . .
+
+4,3 Results of Tests at 5 Mw Reactor Power . . . .
+4.3.1 Neutron Noise Level vs Pump Bowl Level
+
+4.3.2
+
+4.3.3 Neutron Noise Level vs Average Reactor
+Outlet Temperature . . . + . . . .
+
+4.3.4 Neutron Noise vs Net Reactivity . . .
+
+4.4 Dominant Source of Observed Neutron Noise . .
+
+.
+
+CONCLUSIONS + . vv vv vv tev vv he es
+
+FUTURE INVESTIGATIONS. . . . . . . . . . «+.
+
+LEGAL NOTICE
+
+This report was prepared as an account of Government sponsored work. Neither the United
+States, nor the Commission, nor any person acting on behalf of the Commission:
+
+A. Makes any warranty or representation, expressed or implied, with respect to the accu-
+racy, completeness, or usefulness of the information contained in this report, or that the use
+of any information, apparatus, method, or process disclosed in this report may not infringe
+privately owned rights; or
+
+B. Assumes any liabilities with respect to the use of, or for damages resulting from the
+use of any information, apparatus, method, or process disclosed in this report.
+
+As used in the above, *‘person acting on behalf of the Commission’ includes any em-
+ployee or contractor of the Commission, or employee of such contractor, to the extent that
+such employee or contractor of the Commission, or employee of such contractor prepares,
+disseminates, or provides access to, any information pursuant to his employment or contract
+with the Commission, or his employment with such contractor.
+
+Neutron Noise Level vs Cover Gas Pressure
+
+Page
+
+NOW»
+
+N “0 ©
+
+13
+
+13
+14
+14
+14
+15
+
+15
+15
+16
+18
+
+18
+
+JISTRIBUTION OF THES COCUMINT 1S UNLIMITED
+
+et
+
+i
+1. INTRODUCTION ’
+
+Investigations were made at the MSRE to determine if the amount of helium
+gas in the fuel salt can be measured using neutron noise analysis. In calculations
+of reactivity balances that have been made by an on-line digital computer at the
+Molten-Salt Reactor Experiment (MSRE) since the start of power operation, there has
+been an uncertainty concerning the concentration of 3%e in the circulating fuel
+salt and, thus, an uncertainty in the reactivity balance computations. According
+to Engel and Prince, ? this uncertainty arises because an unknown and changing
+amount of circulating voids (bubbles of undissolved helium gas believed to be
+introduced by the xenon-stripping spray ring in the fuel pump tank) affects the
+amount of ®°Xe in the system. Besides this uncertainty, these bubbles also introduce
+a reactivity effect of =0.18% (a k/k) for 1 vol % of gas,since such voids affect the
+neutron leakage and fuel inventory within the core.
+
+Although measurements at zero power >r* had indicated that no circulating
+voids were present, pressure release tests? performed later after operation at power
+showed a small circulating void fraction at normal salt levels in the pump tank.
+
+By comparing calculated and observed transient buildup of 5X e poisoning after
+
+step changes in reactor power, Engel and Prince estimated the void fraction to be
+
+between 0.1 and 0. 15 vol 4 and the bubble stripping efficiency to be between 50
+
+and 100%. Later experience indicated that the circulating void fraction -
+is dependent upon other reactor operating conditions, such as fuel pump tank level
+
+for one.? Transient tests were performed to infer the void fraction and bubble
+
+stripping efficiency, but because such tests interrupted the normal operation of the
+
+MSRE, it seemed desirable to seek a nondisturbing method for determining the
+
+helium void fraction and stripping efficiency.
+
+Neutron noise analysis has been applied extensively as a nondisturbing method
+for measuring reactor parameters at zero power and also for monitoring the dynamic
+behavior of reactors operating at power. In an early application of this technique,
+
+ 
+
+2
+J. R. Engel and B. E. Prince, The Reactivity Balance in the MSRE,
+ORNL-TM-1796 (March 10, 1967).
+
+ 
+
+3
+MSRP Semiann. Progr. Rept. Aug. 31, 1965, ORNL-3872, pp. 22-24.
+
+4
+B. E. Prince et al., Zero—Power Physics Experiments on the Molten-Salt
+
+Reactor Experiment, ORNL-4233 (Feb. 1968).
+
+ 
+
+ 
+Hirota® concluded that gas effects were influencing the hydraulic behavior of the
+Homogeneous Reactor Test (HRT) core; he compared calculated transfer functions
+with the Fourier amplitudes of measured small (£3%) power deviations that occurred
+during steady-state HRT operation. We therefore conjectured that neutron noise
+analysis might be used to measure the amount of circulating void in the MSRE fuel
+salt without disturbing the reactor operation in any way.
+
+To determine the feasibility of using noise analysis to measure the void fraction,
+three questions must be answered. First, do the helium bubbles, in passing through
+the core, produce reactivity fluctuations that, in turn, cause neutron noise? Second,
+if noise is generated by bubbles, is the frequency spectrum of the noise in a range
+that is applicable to noise analysis and is the amplitude great enough to be detected
+above background noise? Finally, is it possible to develop a quantitative relation-
+ship between neutron power spectral density (NPSD) and the circulating void
+fraction? The results of our investigation of these questions are presented in this
+report.
+
+To assure the maximum sensitivity of the measurement of neutron noise, special
+data acquisition and reduction techniques were developed. After installation and
+checkout of the equipment and analysis techniques, the neutron noise was measured
+and analyzed at different reactor operating conditions, such as fuel-tank salt level,
+average fuel outlet temperature, helium cover-gas pressure, etc., to determine the
+effects of these variables on the NPSD. Concurrently with these measurements a
+detailed theoretical model of the system was developed, and attempts were made to
+understand what physical mechanisms could conceivably produce neutron density
+fluctuations in the MSRE. These theoretical predictions were then compared with
+the measured NPSD to infer that the most likely source of observed neutron noise in
+the MSRE is the circulating helium bubbles. Finally, an attempt was made to
+quantitatively relate the NSPD to the amount of void in the circulating fuel salt,
+with some success.
+
+The authors are grateful to C. B. Stokes for his assistance in performing the
+measurements and to G. C. Guerrant for designing the ionization chamber assembly.
+We also express our appreciation to the MSRE personnel for their help in performing
+the tests, and especially to J. R. Engel for his many helpful discussions and
+suggestions throughout the investigation.
+
+2. DATA ACQUISITION AND REDUCTION
+
+Figure 1 shows the essential elements that were used to obtain the power
+spectral density of the neutron density fluctuations in the MSRE. The following two
+
+ 
+
+5 . :
+J. A. Thie, Reactor Noise, Rowman and Littlefield, New York, 1963,
+
+pp. 214-20.
+sections explain how the neutron ionization chamber signal was recorded and
+analyzed to obtain the NPSD, or mean-squared noise per unit frequency.
+
+2.1 Data Acquisition
+
+To obtain an electrical signal proportional to the neutron density fluctuations,
+a neutron-sensitive ionization chamber was placed in spare guide tube 7 of the
+MSRE instrument penetration. This is a boron-coated, RSN=76A chamber filled
+with a special gas mixture (1500 mm “He and 50 mm CHy) to optimize it for neutron
+noise analysis.® The chamber has a relatively high neutron sensitivity which is
+deemed essential for noise analysis.
+
+A two-conductor, low-capacitance, low-noise balanced cable carries the cur=
+rent signal from the chamber and also the common-mode noise signal to the auxiliary
+control room. The total capacitance to ground of the ~ 160 ft of signal cable plus
+the chamber is 1880 pf. This capacitance, in parallel with the input resistance of
+the noise amplifier, limits the highest frequency noise that can be analyzed with
+this system. (This limitation is discussed further below.) The common-mode line is
+terminated at the chamber with a capacitance to ground equal to that of the chamber.
+
+The low-noise ac amplifier,” having a variable voltage gain from 200 to
+10,000 and a bandwidth of 0.013 to 3500 cps, was used to amplify the fluctuating
+portion of the chamber signal. It is a differential ~input amplifier with a common-
+mode rejection capability of 50 db for the elimination of unwanted electrical
+noise picked up along the 160 ft of cable. Since the amplifier operates on voltage
+signals, the current signal from the chamber must be converted to a voltage signal
+at the amplifier input by using either a 2- or a 20-kilohm resistor to ground. Due
+to the 20-kilohm resistor in parallel with the 1880-pf capacitance of the combined
+cable and chamber, the practical upper frequency limit of the noise analysis
+technique is 4240 cps, which is well beyond the range of interest for the MSRE; this
+will be discussed in Section 2.2. The amplifier limits the lower frequency to
+0.01 cps (-3 db), which is also consistent with the practical limitations on the lower
+frequency imposed by statistical sampling laws.
+
+The amplified ionization-chamber signal (~ 2 v p-p) at the amplifier output
+is transmitted through shielded cable to the Bunker-Ramo 340 on-line digital
+
+ 
+
+°D. P. Roux, "Optimization of Reactor Shutdown Margin Measurements in
+High Gamma Fluxes," Nuclear Applications 3, p. 575 (Sept. 1967).
+
+7
+F. M. Glass, "Low-Noise Solid-State Differential Amplifier," Instrumenta-
+tion and Controls Div. Ann. Progr. Rept. Sept. 1, 1963, ORNL-3578, p. 113.
+
+ 
+ORNL-DWG 68-8445
+
+ 
+
+ 
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+CAPACITANCE EQUAL Fm ———— nt em nn 1
+f TO CHAMBER CAPACITANCE | | On AMALED DATA |
+©
+“| common-mope Line, SUBAUDIO | | BUNKER ~RAMO
+A LOW-NOISE MODEL 340 |
+SIGNAL LINE AMPLIFIER | | DIGITAL COMPUTER
+NEUTRON-SENSITIVE IONIZATION CHAMBER | auxiLiary CONTROL ROOM | L MSRE COMPUTER ROOM |
+INSTALLED IN INSTRUMENT PENETRATION ~~ ~~ — ——————- be ——
+
+NO. 7
+
+(a)
+
+SAMPLED DATA
+
+DATA ACQUISITION AT MSRE
+
+ 
+
+SPECTRAL DENSITY ANALYSIS
+USING CDC1604 A
+COMPUTER
+
+ 
+
+ 
+
+CALCOMP PLOT
+OF FREQUENCY [——t=
+SPECTRUM
+
+NPSD
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+(&)
+
+Fig. 1.
+
+ 
+
+FREQUENCY
+OFF-LINE DATA REDUCTION
+
+MSRE Neutron Noise Analysis.
+computer, where the signal is sampled at a rate of 60 samples/sec and the digitized
+data are recorded on magnetic tape for off-line analysis. The analog-to-digital
+converter accepts signals in the range from -2 v to +2 v. For each test, data were
+taken for 30 min, yielding 108, 000 digitized values of the fluctuating neutron density.
+
+2.2 Data Reduction
+
+The frequency spectrum of the noise was determined by an off-line CDC
+1604-A computer at the ORNL Computing Center, using a fast Fourier transform
+algorithm.? This method of analysis was chosen for its accuracy, speed, and good
+frequency-resolution properties. However, because the Bunker-Ramo computer
+had a fixed sampling rate of 60 samples/sec, the upper limit of the frequency that
+could be analyzed was about 15 cps. As will be seen, this limit did not restrict
+neutron noise analysis at the MSRE, because there is little useful information in
+the neutron signal above 10 cps, but the 60 sample/sec rate did make it necessary
+to filter the noise signal so that there would be negligible signal power at fre-
+quencies greater than half the sampling rate (30 cps). This filtering was necessary
+to prevent aliasing, or "folding," of noise above 30 cps back into the frequency
+range of interest (0 to 15 cps) which would have caused distortion of the frequency
+spectrum of the neutron-induced current fluctuations in the ionization chamber.
+Therefore, the bandwidth of the ionization-chamber-signal amplifier was changed
+from 0.013 = 3500 cps to 0.013 - 35 cps (-6 db at 0.013 and 35 cps). Calibration
+tests of the filtered signal showed that the amount of spectrum contamination caused
+by aliasing was negligible. The bandwidth of the individual digital filters (fre-
+quency spectrum resolution) chosen for the analysis was 0.117 cps. In the analysis
+the frequency range from 0 to 15 cps was divided into 128 intervals of 0.117 cps
+each. This fine-frequency resolution was necessary to give an accurate picture of
+the resonance structure of the NPSD curves. The standard deviation of the spectral
+density determined for each of the 128 intervals for a 30 min sampling time was
+
++ 4%.
+
+The data reduction program was coded to correct the NPSD for the amplifier
+gain and to divide it by the square of the dc ionization chamber current (IDC?).
+(Earlier theoretical work’ had pointed out that when the noise from reactors operating
+at power is analyzed, variations are most easily interpreted when the NPSD is
+normalized to the square of the dc component of the chamber current.) The
+
+normalized NPSD functions were plotted using a CALCOMP plotter. A typical MSRE
+
+ 
+
+&R. C. Kryter, "Application of the Fast Fourier Transform Algorithm to
+On-Line Reactor Malfunction Detection," IEEE 15th Nuclear Science Symposium,
+Montreal, Canada, Oct. 23-25, 1968.
+
+?). C. Robinson, Analysis of Neutron Fluctuation Spectra in the Oak Ridge
+Research Reactor and the High Flux Isotope Reactor, ORNL-4149 (Oct. 1967).
+spectrum (computed in about 4 min on the 1604-A computer) is shown in Fig. 2.
+
+The NPSD is plotted in absolute units of fractional mean-square reactor power fluctua-
+tion per unit frequency interval in cycles/sec. Since in the frequency analysis it is
+assumed that the spectral density is constant over the bandwidth of the effective
+digital filter, we plotted the results in histogram form. The interpretation of the
+spectra will be discussed in the next section.
+
+3. THEORETICAL CALCULATIONS AND MODELING
+
+3.1 Introduction
+
+For a linear system driven by a single input, the output PSD, 2 Sw),
+related to the input PSD, 2, (w), by
+
+2
+() = | 6liw)| 2.) , M
+
+where | G(jw)| is the modulus of the system frequency response function. Such an
+output PSD, obtained from a neutron-sensitive ionization chamber at the MSRE
+(operating at power), was presented in Fig. 2. To efficiently utilize the PSD
+measurements in gaining insight into the dynamic properties of the reactor system,
+
+it is necessary to understand the nature of the predominant input (driving function)
+to the system. There are two possible approaches to the identification of this driving
+function:
+
+1. Postulate a driving function and then attempt an experimental verification,
+e.g., cross-correlation measurements or PSD measurements for a range of known
+reactor conditions where various quantities are purposely modified, etc.
+
+2.  Postulate a driving function, calculate analytically the appropriate system
+transfer function, and then employ Eq. (1) to produce an expected output PSD
+which can be compared to experimental results to validate or reject the postulate.
+
+In principle, the cross—correlation techniques could lead to the unique identi-
+fication of the driving function; however, in practice most cross-correlation measure-
+ments are difficult. Therefore we adopted the combined approach of an analytic
+model for the calculation of the frequency response function, coupled with PSD
+measurements under controlled (as much as possible) reactor conditions.
+
+Before a specific model was selected, the potential driving functions were
+considered. In addition to potential driving functions commonly encountered, such
+as coolant temperature fluctuations and rod vibrations, it was known that helium gas
+could be entrained in the fuel salt. Therefore, in addition to commonly encountered
+10
+
+potential driving functions, the possibility of fluctuations in the void fraction, which
+could be induced by pressure or velocity fluctuations, was also considered.
+
+A model had been developed by Ball and Kerlin'® for the calculation of the
+power -to-reactivity frequency response function in the MSRE. Their model, basically
+a multinode (fixed number of nodes) model becomes less valid as the frequency of
+the disturbance increases.” Therefore, we decided that a distributed parameter model
+would be necessary for the cases of interest to us. Furthermore, the BallKerlin
+model treated a reactivity driving function only, whereas we wished to consider
+several driving functions.
+
+In the next section, the basic concepts of our model will be presented along
+with the method of solution, and this will be followed by a section concerned with
+the elimination of some potential driving functions and the identification of the
+more probable driving functions.
+
+3.2 Development of the Model
+
+At the beginning of this study, we recognized that a model would be required
+that would couple the neutronic and hydraulic states of the system; therefore, the
+basic equations would be those of continuity of mass, momentum, and energy for the
+fluid, along with the conservation of neutrons. If gas were present in the fluid fuel
+(which was assumed to be the case), the fluid-gas system must be treated as a com-
+pressible system, and, therefore, the conservation equations would contain the
+dependent variables of pressure, velocity of the fuel salt, velocity of the gas,
+temperature, void fraction of gas, density of the gas (we assumed that the density
+of the salt would be constant), neutron flux, and precursor concentrations. Since
+several dependent variables were involved, the following assumptions were made in
+regard to fluctuations about the mean:
+
+1. A "slug flow" model would be adequate to describe the hydraulics of the gas-
+fluid system.
+
+2. The fluctuations about the mean would be small; therefore, the nonlinear
+equations could be linearized.
+
+3. The state of the gas would be adequately described by the ideal gas law.
+
+4.  Appreciable fluctuations in the density of the gas could be induced by
+pressure fluctuations only.
+
+5. The velocity of the gas would be proportional to the velocity of the fluid,
+through a known "slip ratio" relationship.
+
+ 
+
+105, J. Ball and T. W. Kerlin, Stability Analysis of the Molten-Salt Reactor
+Experiment, ORNL-TM-1070 (Dec. 1965).
+
+ 
+NPSD/IDC? (abs units)
+
+ORNL-DWG 68-8416
+
+5 : Ct
+
+REACTOR POWER=7.3 Mw
+2 "KNET=—0.070 % Ak/k
+- FUEL TANK LEVEL=56%
+“FUEL TEMPERATURE =1210°F
+PRESSURE = 5 psi
+
+| i
+
+- i j
+10 . STANDARD DEVIATION OF HISTOGRAM (+ 4%)
+
+ 
+
+0 1 2 3 4 5 6 7 8 9 10 14 12 13 14 15
+FREQUENCY (cps)
+
+Fig. 2. Typical Neutron Noise Spectrum of the MSRE.
+
+Ll
+12
+
+6. A one-dimensional, one-velocity neutron diffusion equation, which explicitly
+accounts for delayed neutrons, would be adequate.
+
+7. The fluctuations in the fluid velocity could not significantly affect the
+precursor balance equations.
+
+With these assumptions, we devided the problem into two parts: a hydraulic
+model which involves the momentum, mass of the gas, and mass of the fluid con-
+servation equations, and a neutronic model which involves the energy, neutrons,
+and precursor conservation equations. The hydraulic model will be discussed first,
+followed by the neutronic model.
+
+The governing equations of the hydraulic model were reduced to a set of three
+linear, coupled partial differential equations in space and time, with space-varying
+coefficients. The time variable was removed by use of the Laplace transform, thus
+obtaining a complex, coupled set of ordinary differential equations in space whose
+coefficients are complex as well as space dependent. In matrix form the hydraulic
+model can be written as
+
++ x(z,s) = Alz,s) x (z,s) , (2)
+
+where x (z,s) is a column matrix (vector) whose elements are velocity fluctuations,
+void fraction fluctuations, and pressure fluctuations; A(z,s) is a square matrix
+whose elements depend on the system properties, steady-state distributions, etc;
+
+z is the spatial variable; ands is the Laplace transform parameter.
+
+The frequency range of primary interest was about 0.1 to 20 cps. Since the
+total loop time for the fuel salt is about 25 sec, we concluded that the details of
+the salt loop external to the core would not be important; therefore, a simplified
+physical system was chosen to present the more complex actual system (Fig. 3). In
+particular, six regions (identified as L; through Lg in Fig. 3) were chosen:
+
+1. the region from the primary pump to the inlet of the downcomer including
+the heat exchanger, Lj;
+
+2. the downcomer, Lp;
+3. the lower plenum, Lg;
+
+4. a large number of identical parallel fuel channels'!, Ly;
+
+ 
+
+MThe reactor actually consists of hydraulically different, parallel channels,
+but no attempt has been made to model these.
+13
+
+ORNL—-DWG 68-8417
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+T
+
+CN
+JAERI
+
+TT
+
+Ly
+
+bf
+yr
+|
+
+ 
+
+ 
+
+ 
+
+ 
+
+I’
+Ls / LOWER PLENUM UJ
+
+Fig. 3. Model Used to Approximate the MSRE Fuel Salt Loop.
+
+ 
+
+ 
+
+ 
+14
+
+5. the upper plenum, Ls;
+6. the region from the reactor vessel to the primary pump, Lg.
+
+The solution of Eq. 1 can be written for each region as
+
+(s) = A(s)x. .(s) (3)
+Xo, i i Xi, ( ’
+where the subscripts o and i refer to the output and input respectively, subscript j
+
+is for the | region, and AGS), given by
+
+L
+
+Als) = exp l Ta s)dz | , (4)
+0
+
+is referred to as the transport kernel for the ith region. The transport kernel is
+evaluated for each region using matrix exponential techniques. Then coupling
+equations are applied between each region; this permits the evaluation of the
+
+overall system transport kernel, 1/4(s), then
+
+Xo, 16's) = 106s) x, 40s) (5)
+
+7
+
+The boundary conditions are then applied which (a) closes the loop and (b) inserts
+
+a driving function, e.g., pressure fluctuations, between regions 6 and 1. The void-
+fraction fluctuation, velocity fluctuation, and pressure fluctuation spatial distribu-
+tions through the core are now obtained.
+
+In the neutronic model the equations of interest are the conservation of energy,
+the diffusion equation for neutrons, and the precursor balance equations.
+
+The basic assumptions in addition to those previously stated were:
+1. The flux introduced would be separate in space and time.
+
+2. Reactivity introduced into the system from temperature and void fluctuations
+could be accounted for by using the appropriate coefficients of reactivity.
+
+3. The importance of the spatial insertion of reactivity would be properly
+accounted for by using the variational principle.
+
+Since the method of solution was similar to that presented in Ref. 9, it will
+not be described here.
+15
+
+3.3 Consideration of Possible Driving Functions
+The potential driving functions that have been considered are fluctuations in
+1. the salt temperature at the entrance to the core region,
+2. the void fraction induced by salt velocity fluctuations at the pump,
+
+3. the void fraction induced by fluctuations in the mass flow rate of gas entering
+the salt at the pump bowl,
+
+4. the void fraction induced by pressure fluctuations introduced at the primary
+pump or pump bowl.
+
+5. the reactivity caused by control rod vibrations.
+
+The first three of these driving functions were eliminated because a comparison of
+observed (experimental) PSD with the calculated (theoretical) PSD showed that
+experimental PSD decreased about one decade in magnitude in the frequency range
+of 0.2 to 1 cps, but the analytical PSD (for an assumed white driving function)
+decreased about three decades in the same frequency range for each of these functions.
+If any one of them had been primarily responsible for the observed PSD, the
+magnitude of that particular function would have had to increase with frequency in
+this frequency range. Physically, this behavior would be unreasonable.
+
+The possibility of rod vibrations could not be eliminated analytically. Like-
+wise, the fourth driving function could not be eliminated, because calculation shows
+that a pressure fluctuation of 0.01 to 0.05 psi (which is physically realizable)
+would be sufficient to produce the observed noise. The calculated PSD for an
+assumed pressure driving function of unity magnitude in the frequency domain is
+presented in Fig. 4 for two different mean steady-state void fractions. Although
+the shapes of these calculated PSD curves are not precisely the same as the observed
+PSD curves, we still regard pressure fluctuations as a highly probably driving
+function for the following reasons:
+
+1. The required magnitude of the pressure fluctuations is not unreasonable.
+
+2. The analytical model developed is not expected to have sufficient detail
+to predict exactly the observed frequency dependence.
+
+As a further point of interest (see Fig. 4), the magnitude of the analytic
+PSD (due to the fourth driving function possibility listed) is proportional to the
+square of the steady-state void fraction existing in the core for frequencies below
+4 cps (this observation will be applied in Section 4.4).
+16
+
+4. MEASUREMENTS AND RESULTS
+
+4.1 Establishment of Measurement Reproducibility
+and Method of Spectrum Interpretation
+
+The theoretical studies described in Sect. 3 suggested several possible driving
+functions for neutron noise. However, before studying the effects of particular
+parameter changes, such as control rod position, etc., we observed the MSRE
+neutron noise daily for several weeks to determine the reproducibility of the measure-
+ments and how the shape and magnitude of the noise spectrum changed under normal
+operating conditions. The results of these tests show that the measurements were
+reproducible to within the anticipated +5%. However, we did observe small con-
+sistent changes in the spectrum, which indicated that the driving function (reactivity
+fluctuation) was varying slightly from day to day. This variation was most pronounced
+as an amplitude change in the vicinity of the 1-cps peak (see Fig. 2).
+
+Because of this localized sensitivity of the spectrum, in addition to observing
+the detailed shape and magnitude of the entire 0.1- to 15-cps spectrum, we also
+computed the noise level NPSD/(IDC)? averaged over the interval 0.5 to 2.0 cps.
+(This averaged noise is defined as NPSD.) As a result of this averaging, changes in
+the noise level were enhanced and the precision of the measurements increased to
+
++14,
+
+Following these tests to establish confidence in this method of data acquisition
+and reduction by using known fest signals, a series of special tests was performed at
+nominal reactor powers of 5 and 7 Mw to determine the effect of selected system par-
+ameters on the neutron noise spectrum, the NPSD, and reactivity balance. (These
+special tests were performed to better understand the origin of small reactivity changes
+which had previously been indicated by the reactivity balance. ) The parameters
+studied were: control rod position, 33 poisoning, average fuel-outlet temperature,
+helium cover-gas pressure and the fuel-salt level in the pump tank. The P®%Xe
+poisoning was inferred from reactivity balance calculations.” The helium cover-gas
+pressure in the fuel pump bowl was measured by a pressure transmitter in a helium
+supply line outside the main secondary containment shell, approximately 15 ft from
+the fuel pump bowl. The average fuel salt temperature at the reactor outlet was
+calculated by the BR-340 computer from temperature readings from three thermo-
+couples in the salt loop. Since significant changes in some of the parameters pro-
+duced transient effects, the system was allowed to reach equilibrium (~48 hr) follow-
+ing a change before noise measurements were made. The results of these tests are
+presented in the following sections.
+
+ 
+
+Z\ SRP Semiann. Progr. Rept. Feb. 29, 1968, ORNL-4254, pp. 3-7.
+17
+
+ORNL-DWG 68-8418
+
+100
+
+10-4
+
+10-3
+
+FLUX TO PRESSURE ANALYTIC PSD (arbitrary units)
+
+o VF=0,30%
+o VF=0.095%
+
+ 
+
+104
+1074 100 10! 102
+FREQUENCY (cps)
+
+Fig. 4. Calculated PSD for Void Fractions of 0.095 and 0.30 Vol 4,
+
+Assuming a White Pressure Driving Function.
+18
+
+4,2 Results of Tests at 7 Mw Reactor Power
+
+Because of previous experience at the HFIR and ORR’, where we concluded
+that a major portion of the neutron noise was caused by control rod vibration, we
+speculated that the reactivity fluctuations in the MSRE might also be dependent on
+the position of the rods. However, we found that NPSD varied only about 2% for
+three regulating rod positions of 32.3, 36.4, and 38.6 in. This change borders on
+significance because the statistical error of the NPSD is only £1%, but in practice,
+other uncertainties either in equipment calibration or small changes in the reactor
+system probably limit the reproducibility to more like +5%, Therefore, we conclude
+that control rod vibration is not a significant source of neutron noise at the MSRE
+in the frequency range of 0.1 to 15 cps.
+
+Another series of tests was conducted to study the effects of equilibrium 135% e
+concentration on the NPSD. Following a period of operation at zero power during
+which B¥%Xe was stripped out, the power was increased to 7 Mw and noise measure-
+ments were taken at Xe poisoning levels of 0.012 and -0.261% ak/k. The
+NPSD increased by 15%, indicating some xenon dependence. However, because
+the system was still in a transient condition due to the increase in power and because
+of unavoidable changes in other parameters such as fuel tank salt level and helium
+pressure, one cannot validly conclude that a cause and effect relationship exists.
+We therefore suggest there might be some xenon dependence, but conclude that it
+is not a significant contributor to neutron noise in the MSRE.
+
+4,3 Results of Tests at 5 Mw Reactor Power
+
+The results of tests performed at 5 Mw (to allow a wider range of outlet
+temperature variation than would have been possible at 7 Mw) show the changes in
+the NIPSD as a function of changes in the operating conditions of the MSRE. To
+illustrate the behavior of the noise as a function of each parameter varied, the same
+data are presented in several figures. This is necessary because, in general, we
+did not have exclusive control of only one variable at a time since the variables
+such as fuel temperature, pump bowl level, pressure, etc., were related
+interdependently.
+
+4.3.1 Neutron Noise Level vs Pump Bowl Level
+
+ 
+
+Most of the time when the MSRE has been operated at power there has been a
+small but continuous transfer of salt from the primary loop to the overflow tank, which
+produced a change in salt level in the fuel pump bowl. Also, as the salt level in the
+pump bowl was decreased below a certain level, considerably more helium bubbles
+were apparently introduced into the circulating salt. Therefore noise measurements
+19
+
+were performed at different pump bowl levels in the normal range of operation
+
+(5.2 - 6.0 in.) to determine the effect of salt level on noise amplitude. Figure 5
+shows that as the salt level in the bowl decreased the noise level at about 1.0 cps
+(NPSD) increased. Although this effect was small at the normal operating temperature
+and pressure (1210°F and 5 psig), it was reproduced in many measurements over a
+
+long time span. However, this effect almost vanished when the fuel outlet temper-
+ature was increased to 1225°F, but Fig. 5 shows that when the temperature was
+decreased to 1180°F the effect was much greater.
+
+4,3.2 Neutron Noise Level vs Cover Gas Pressure
+
+ 
+
+Since the helium pressure in the fuel pump bowl is also a variable parameter,
+the effect of the pressure on the NPSD is presented (Fig. 6). There was no change
+in the NPSD for pressures between 3 and 9 psig at an operating temperature of 1225°F.
+At the normal operating temperature of 1210°F, the NPSD increased with increasing
+pressure. At the subnormal temperature of 1180°F, the NPSD increased markedly at
+all pressures from 3 to 9 psig, with the highest noise occurring at the highest pressure
+
+(9 psig).
+
+4.3.3 Neutron Noise Level vs Average Reactor Outlet Temperature
+
+ 
+
+The averaged neutron noise showed the most sensitivity to changes in the
+reactor outlet temperature (Fig. 7). The largest effect was at the highest pressure
+of 9 psig, where the NPSD increased by a factor of almost 50 when the temperature
+was decreased from 1225 to 1180°F. At the normal operating pressure of 5 psig, the
+noise increased by a factor of 15 for this same change in temperature. Although
+data were taken only at 1225 and 1180°F at 3 psig, the trend of increasing noise
+with decreasing temperature is seen to be consistent with the results at 5 and 9 psig.
+As a further illustration, Fig. 8 shows the change in the entire 0. 1- fo 15-cps
+noise spectrum in passing from a minimum to a maximum noise condition.
+
+4.3.4 Neutron Noise vs Net Reactivity
+
+ 
+
+The residual system reactivity? is determined by requiring a reactivity balance
+between the calculated reactivity and the reactivity inserted by a calibrated control
+rod. The net reactivity is computed only as a steady-state quantity, although it
+does, of course, change slowly as system parameters are varied. As mentioned
+earlier, the largest uncertainty in the reactivity calculations is believed to be the
+lack of a measure of the circulating void fraction and its effect on Bo%e poisoning.
+Therefore the residual reactivity (KNET) is dependent, among other things, on the
+void fraction.
+20
+
+ORNL-DWG 68-8419
+
+AVERAGE FUEL OUTLET HELIUM PRESSURE
+
+TEMPERATURE (°F) (psig)
+
+Ome
+
+1180-5
+
+NPSD (abs units)
+
+T——-a1180-3
+
+1210-5 1225-5
+1225-9
+
+ 
+
+5.4 5.6 5.8 6.0 6.2 64
+
+50 52
+FUEL PUMP TANK LEVEL (in.)
+
+Fig. 5. Neutron Noise Level vs Fuel Pump Tank Salt Level for the MSRE
+
+at 5 Mw.
+NPSD (abs units)
+
+ 
+
+21
+
+ORNL-DWG 68-8420
+
+AVERAGE FUEL OUTLET TEMPERATURE
+(°F)
+
+1180
+
+3.5 4.5 5.5 6.5 75 8.5 95
+HELIUM PRESSURE (psig)
+
+Neutron Noise Level vs Helium Cover Gas Pressure at 5 Mw.
+22
+
+ORNL-DWG 68-8424
+
+108
+5
+2 HELIUM PRESSURE
+(psig)
+9
+07
+FS
+s
+wn
+LL
+S
+oO
+g 2
+<
+108
+5
+2
+10°
+
+ 
+
+H70 1180 H90 1200 1210 1220 1230
+AVERAGE FUEL OUTLET TEMPERATURE (°F)
+
+Fig. 7. Neutron Noise Level vs Average Fuel Temperature at Core Outlet
+
+for the MSRE at 5 Mw.
+23
+
+10° ORNL-DWG 68-8422
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+  
+ 
+  
+
++t fF = =
+
+  
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+5 — - OUTLET TEMPERATURE=1480°F — | —
+“TY PRESSURE=9.2 psig T
+> | MAXIMUM CIRCULATING VOID
+10° LL Tt
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+NPSD/1DC? (abs units)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Lf TL
+2 — 1 I. en J
+9 ~ UL
+10 F— = —t eee —r Ee
+5 — Th - 1 PN rt
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+EI Berit pA en tm
+LL Ma dae Sg To r
+10 | aL A ML |
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+— ! ) _ .
+10 == GUTLET TEMPERATURE=1225°F 1— ARITA]
+5 | I~ PRESSURE=3 psig ms SU oo |
+~~ MINIMUM CIRCULATING VOID A— a
+oM i |
+2b . Je } Lo
+. | ! i
+14
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+6 7 8 9 10 14 12 13 14 15
+FREQUENCY {cps)
+
+[8]
+
+0 1 2 3 4
+
+Fig. 8. Neutron Noise Spectra of the MSRE at 5 Mw with Minimum and
+
+with Maximum Circulating Void Fractions.
+24
+
+In contrast to the static nature of net reactivity, neutron noise is a measure
+of small fluctuations in reactivity; i.e., it is a dynamic quantity. However, if
+we postulate that the neutron noise, like KNET, is also dependent on the volume
+fraction of circulating helium bubbles, then there may conceivably be some con-
+sistent relationship between KNET and NPSD. The measurements show a variation
+of NPSD with changes in KNET (Fig. 9). The data presented in Fig. 9 cover the
+complete range of temperatures, pressures, and fuel pump bowl salt levels described
+in the previous three sections of the tests conducted at 5 Mw. Although we con-
+nected the data points with a smooth line, we ascribe very little significance to
+the shape of the curve at this time. However, we can conclude that there is a
+consistent, monotonic increase in the neutron noise in the range 0.5 to 2 cps for
+a larger amount of poison in the reactor (as indicated by KNET).
+
+These changes in KNET cannot be attributed to the reactivity effect of voids
+alone, because this would require an unreasonably large void fraction: about
+1.5 vol 4, based on the -0.18% ak/k per vol % reactivity associated with gas in the
+fuel.Z This conclusion is substantiated by fuel volume inventory balances and zero-
+power reactivity balance calculations maintained at the MSRE, which show the
+maximum amount of fuel salt displaced by gas to be about 0.3 vol %. B Therefore,
+it is now believed that the changes in KNET are predominantly due to increased
+B5e poisoning as the amount of gas in the fuel is increased. This conclusion appears
+to contradict the previously accepted belief that an increased amount of circulating
+bubbles enhances the stripping of *%Xe from the fuel salt and, thus, decreases the
+amount of xenon in the system. However, the original view failed to recognize the
+
+interdependence of circulating void fraction with other system variables that can
+also lead to higher zenon poisoning at higher void fractions.
+
+4.4 Dominant Source of Observed Neutron Noise
+
+The comparison of theoretical model predictions with experimental spectra in
+Sect. 3 showed that the most likely sources of reactivity fluctuation in the MSRE are
+control rod vibration and pressure fluctuation of circulating voids. Special tests in
+which the rod position was varied provided a basis for concluding that rod vibration
+is not the cause of significant neutron noise. However, further tests showed that
+the magnitude of the noise is sensitive to pump bow! level, cover gas pressure, and
+fuel outlet temperature, and it is known that changes in parameters alter the amount
+of circulating void. Therefore, it seems plausible that the fluctuating helium
+bubbles cause small reactivity fluctuation, which in turn causes reactor power
+fluctuations and, hence, the observed neutron noise.
+
+As noted in Sect. 3.3, our theoretical studies showed that, if the observed
+neutron noise is due to pressure fluctuation of voids, the NPSD should be proportional
+
+ 
+
+Blbid., p. 4.
+10-7
+
+NPSD (abs units)
+
+P
+oS
+1
+
+10™°
+
+8
+
+ 
+
+-0.04
+
+Fig. 9.
+
+ORNL-DWG 68-8423
+
+-0.08 -0.42 -046 -0.20 -0.24 -0.28
+KNET (% Ak/K)
+
+Neutron Noise Level! vs Net Reactivity for the MSRE at 5 Mw.
+
+Gc
+26
+
+to the void fraction squared. Therefore, we attempted to compare the measured
+NPSD (actually NPSD) with the estimated circulating void fraction at the time of
+the measurement. 14
+
+To make this comparison, we assume an expression of the form
+NPSD - v=aV?, (6)
+
+where NPSD is NPSD/(IDC)?, averaged over the frequency range 0.5 to 2 cycles/sec;
+vy is the unavoidable background noise produced by the random neutron detection
+process; V is the vol % of circulating void; and « is a proportionality constant. Since
+the available experimental information is the NPSD data and the change in void
+fraction (6V =V = Vo) relative to some minimal condition Vg, we recast Eq. 6 in the
+form
+
+an
+sv =[ HER] Ly, %
+
+In Eq. 7, we must estimate vy, @, and V,, but we have only six estimates of 8V.
+Therefore, some of these parameters must be estimated by other means.
+
+Since v is very small relative to NPSD, we neglect vy, leaving only the two
+parameters a and V,. In principle, these can be obtained with a fit of Eq. 7 to the
+data; however, the §V data is estimated’ to be accurate to approximately +50%
+only (this is to be compared with a statistical precision of the NPSD data of 1-5%).
+Because of this large uncertainty in §V, we did not perform the two-parameter fit but
+instead we assumed values for Vo which probably bracket the real value, and used the
+experimental data only for the evaluation of a. Figure 10 shows the results for an
+assumed Vy of 0.1 and zerovél 4 About all we can conclude from Fig. 10 is
+(a) the minimal void fraction V, appears to be more nearby zero; and (b) more
+importantly, the NPSD does appear to have the predicted squared dependence on
+V, thus giving additional support to our conclusion that the neutron noise in the
+MSRE is caused mainly by pressure-induced variations of the helium volume in the
+reactor core. Although we have now established with some confidence that a
+causal relationship exists, we do not attempt to explain how the helium bubbles are
+introduced into the fuel salt or why the amount of void in the salt is so strongly
+dependent on the fuel pump bowl level, helium cover gas pressure, or fuel salt
+temperature.
+
+ 
+
+YEngel has estimated the amount of circulating void present during the series
+of tests at 5-Mw power. He is unable to supply an absolute void fraction, but rather
+expresses his estimates in terms of a change in the void fraction from a minimum
+(or base condition) void fraction, ~0.1 vol. % (MSRP Semiann. Progr. Rept. Feb. 29,
+
+1968, ORNL-4254, p. 4),
+
+ 
+
+15). R. Engel, ORNL, private communication.
+0.28
+
+0.24 |
+
+0.20
+
+Vo +8 V,VOID FRACTION (vol %)
+o o
+N o
+
+o
+oO
+®
+
+0.04
+
+ORNL -DWG 68-8424
+
+ 
+
+7
+vd
+
+ 
+
+0°
+
+ 
+
+Vd
+
+ya Vo= 0.1 vol %
+
+T
+
+ 
+
+/'NPSD =1.17x10812
+
+|
+
+ 
+
+ 
+
+o DATA ASSUMING Vy=0.1vol %
+* DATA ASSUMING I, =0vol%
+
+ 
+
+ 
+
+ 
+
+_—
+
+ 
+
+ 
+
+Vo= 0 vol %
+
+_—T NPSD = 4.34 x 10612
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1
+|
+|
+
+|
+
+ 
+
+ 
+
+ 
+
+®
+
+Fig. 10.
+
+0.01
+
+0.02
+
+0.03
+
+NPSD/3.7 x10 (abs. units)
+
+Fractions of 0.1 and 0 Vol 4%.
+
+0.04
+
+Circulating Void Fraction vs NPSD for Assumed Minimum Void
+
+0.05
+
+LT
+28
+
+5. CONCLUSIONS
+
+The results of experimental tests and analytical studies have shown that the
+principal source of small neutron-density fluctuation observed in the MSRE is
+helium bubbles circulating in the fuel salt.
+
+We conclude from the limited amount of data that the neutron noise (NPSD)
+in the frequency range from 0.5 to 2 cps varies as the square of the helium void
+fraction; furthermore, the absolute void fraction corresponding to the minimum noise
+condition observed is more nearly zero than the previously accepted value of 0.1%.
+These observations further substantiate that the neutron noise is extremely sensitive to
+the helium void in the core. We therefore conclude that changes in the circulating
+void fraction can be inferred with good sensitivity directly from neutron noise measure-
+ments in the MSRE. Consequently, NPSD measurements can complement and enhance
+the value of reactivity balance calculations in diagnosing residual reactivity in
+the reactor by eliminating some of the reactivity uncertainty associated with an
+unknown amount of circulating void.
+
+Finally, we believe that these results have indicated the usefulness of neutron
+noise analysis for on-line reactor diagnosis at the MSRE, but further work needs to
+be done before the method can be fully implemented for measurement of voids.
+
+6. FUTURE INVESTIGATIONS
+
+Although all spectra reported here were computed off-line, the NPSD can be
+computed on-line by the BR-340 computer,and a program similar to that written for
+the CDC 1604~A computer is currently being tested. '® The estimated execution time
+is approximately 8 min following acquisition of the ionization chamber data. This
+on-line data reduction system will be used to repeat the tests described in this report
+when the 23U-fueled MSRE reaches full -power operation.
+
+Theoretical studies show that the absolute void fraction could be measured by
+crosscorre lating the neutron noise signal with a pressure noise signal obtained from a
+transducer placed in the primary loop of the MSRE. The existing pressure sensor, as
+pointed out earlier, is located ~ 15 ft from the pump bowl in a helium supply line.
+This location could make it insensitive to the small pressure fluctuations that we
+believe are causing the bubble volume to fluctuate in the core. It is probably not
+feasible at this late date to place a pressure sensor in the primary loop of the MSRE,
+but such a sensor should be seriously considered when instruments are designed for a
+scaled-up version of this type reactor.
+
+ 
+
+6C. L. Partain, ORNL, private communication.
+29
+
+However, lacking the proper pressure signal, there may still be a way to
+establish a calibration between the neutron noise level and the absolute void
+fraction. A deterministic pressure fluctuation experiment is capable of measuring
+quantitatively the absolute void fraction. A preliminary experiment of this type has
+been performed already in which a sawtooth pressure fluctuation was purposely
+introduced and its effect on neutron level was investigated. V If the relationship
+between neutron noise and absolute void fraction can be calibrated using such a
+pressure test, then the NPSD should provide a relatively easy, on-line, non-
+disturbing measurement of the absolute void fraction.
+
+ 
+
+7). C. Robinson and D. N. Fry, Determination of the Void Fraction in the
+MSRE Using Small Induced Pressure Perturbations, ORNL-TM-2318 (to be published).
+
+ 
+VENA
+
+44,
+45.
+46.
+47.
+48.
+49,
+50.
+51.
+52.
+
+31
+
+ORNL-TM-2315
+
+INTERNAL DISTRIBUTION
+
+. Adams
+. Anderson
+. Ball
+. G. Bates
+.F. Bauman
+. E. Beall
+. Bender
+. S. Bettis
+. S. Billington
+. T. Binford
+. G. Bohlmann
+. J. Borkowski
+. E. Boyd
+. B. Briggs
+. B. Bullock
+. E. Cole
+. A. Cox
+. L. Crowley
+. L. Culler, Jr.
+. A. Dandl
+. P. Danforth
+. J. Ditto
+. P. Eatherly
+. R. Engel
+. E. Ferguson
+. P. Fraas
+. N. Fry
+H. Frye, Jr.
+. H. Gabbard
+B. Gallaher
+. R. Grimes
+. G. Grindell
+. C. Guerrant
+
+Mer =x
+
+QP EFOCDPOLIVNIFILLALROOMNOMZVI>NLER
+
+C. s. Harrill
+
+P. N. Haubenreich
+A. Houtzeel
+
+T. L. Hudson
+
+W. H. Jordan
+
+P. R. Kasten
+
+R. J. Kedl
+
+M. T. Kelley
+
+53.
+54-63.
+64.
+
+65.
+
+66.
+
+67.
+
+68.
+
+69.
+70.
+71.
+72.
+
+73.
+
+74.
+
+75.
+
+76.
+77.
+
+78.
+79-80.
+81.
+82.
+
+83.
+
+84.
+
+85.
+
+86.
+
+87.
+
+88.
+
+89.
+
+90.
+
+91.
+92,
+
+93.
+94.
+95.
+
+96.
+97-98.
+99.
+100-102.
+103.
+104.
+105-119.
+
+120.
+
+121.
+
+A. |. Krakoviak
+
+R. C. Kryter
+
+H. G. MacPherson
+
+R. E. MacPherson
+
+C. D. Martin
+
+H. E. McCoy
+
+R. L. Moore
+
+E. L. Nicholson
+
+L. C. Odkes
+
+H. G. O'Brien
+
+G. R. Owens
+
+R. W. Peelle
+
+A. M, Perry
+
+R. B. Perez
+
+H. P. Piper
+
+B. E. Prince
+
+J. L. Redford
+
+M. W. Rosenthal
+
+D. P. Roux
+
+G. S. Sadowski
+
+Dunlap Scott
+
+M. J. Skinner
+
+. Steffy
+
+. Stokes
+
+Tallackson
+
+Thoma
+
+. Trauger
+
+. Walker
+
+. Weir
+
+. W. West
+
+M. Weinberg
+
+M. E. Whatley
+
+J. C. White
+
+Gale Young
+
+Cenfral Research Library
+
+Document Reference Section
+
+Laboratory Records Department
+
+Laboratory Records, ORNL R.C.
+
+ORNL Patent Office
+
+Division of Technical Information
+Extension
+
+Laboratory and University Division,
+
+ORO
+
+Nuclear Safety Information Center
+
+>PA=-00FE=0OPF
+Pw ™m Dw
+122.
+123.
+124.
+125.
+126.
+127.
+128.
+129.
+130.
+
+131.
+132.
+133.
+134-135.
+136.
+
+137.
+138.
+139.
+140.
+141.
+142.
+
+143.
+144.
+145-154.
+155.
+156.
+157.
+
+158.
+159.
+
+160.
+161.
+162.
+163.
+164.
+165.
+
+32
+
+EXTERNAL DISTRIBUTION
+
+. J. Ackermann, University of Tennessee, Knoxville, Tennessee
+
+Z. Akcasu, University of Michigan, Ann Arbor, Michigan,
+
+B. Deering, AEC-OSR
+
+. E. Cohn, Argonne National Laboratory, Argonne, Illinois
+
+E. P. Epler, Oak Ridge, Tennessee
+
+A. Giambusso, AEC-Washington
+
+S. H. Hanauer, University of Tennessee, Knoxville, Tennessee
+
+T. W. Kerlin, University of Tennessee, Knoxville, Tennessee
+
+A. E. Klickman, Atomic Power Development Association, Detroit,
+Michigan
+
+B. R. Lawrence, Australian AEC (UKAEA, Risley, England)
+
+F. C. Legler, Atomic Energy Commission, Washington, D. C.
+
+G. H. McCright, Black and Veatch, Kansas City, Missouri
+
+T. W. Mcintosh, AEC-Washington
+
+M. N. Moore, San Fernando Valley State College, Northridge,
+California
+
+R. K. Osborne, University of Michigan, Ann Arbor, Michigan
+
+C. L. Partain, University of Missouri, Columbia, Missouri
+
+J. R. Penland, University of Tennessee, Knoxville, Tennessee
+
+Joseph Pidkowicz, USAEC, Oak Ridge, Tennessee
+
+C. A. Preskitt, Gulf General Atomic, San Diego, California
+
+V. Rajagopal, Westinghouse Atomic Power Division, Pittsburgh,
+Pennsylvania
+
+R. L. Randall, Atomics International, Canoga Park, California
+
+C. W. Ricker, Albion College, Albion, Michigan
+
+J. C. Robinson, University of Tennessee, Knoxville, Tennessee
+
+H. M. Roth, AEC-ORO
+
+R. F. Saxe, North Carolina State University, Raleigh, North Carolina
+
+M. A. Schultz, Pennsylvania State University, University Park,
+Pennsylvania
+
+K. J. Serdula, Atomic Energy of Canada, Ltd, Chalk River, Ontario
+
+J. R. Sheff, Battelle-Pacific Northwest Laboratory, Richland,
+Washington
+
+W. L. Smalley, AEC-ORO
+
+J. A. Thie, Consultant, Chicago, lllinois
+
+J. R. Trinko, Jr., EBR-II Argonne National Laboratory, Idaho Falls, Idaho
+
+C. O. Thomas, University of Tennessee, Knoxville, Tennessee
+
+R. E. Uhrig, University of Florida, Gainesville, Florida
+
+P. J. Wood, MIT Practice School
+
+moorz

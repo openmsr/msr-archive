@@ -1,0 +1,1977 @@
+JU 1 1966
+
+ 
+
+ 
+
+Te
+HC. CopERr. o
+OAK RIDGE NATIONAL LABORAYoRY' "%
+
+operated by
+
+UNION CARBIDE CORPORATION
+for the
+
+U.S. ATOMIC ENERGY COMMISSION
+
+ 
+
+ORNL- TM- 1445
+COPY NO. - 7 §
+
+DATE - April 5, 1966
+
+SIMULATORS FOR TRAINING MOLTEN-SALT REACTOR EXPERIMENT OPERATORS
+S.J. Ball
+ABSTRACT
+
+Two on-site reactor kinetics simulators were developed for training
+operators of the Molten-Salt Reactor Experiment (MSRE) in nuclear startup
+and power-level operating procedures. Both simulators were set up on
+general purpose, portable Electronic Associates, Inc., TR-10 analog com-
+puters and were connected to the reactor control and instrumentation
+system.
+
+The training program wag successfully completed. Also, the reactor
+control and instrumentation system, the operating procedures, and the rod
+and radiator-~door drives were checked out. Some minor modifications were
+made to the system as a result of the experience with these simulators.
+
+ 
+
+RELEASED FOR ANNOUNCEMENT
+
+IN NUCLEAR SCIENCE ABSTRACTS
+
+ 
+
+ 
+
+NOTICE This document contains information of a preliminary nature
+and was prepared primarily for internal use at the Oak Ridge National
+Laboratory. It is subject to revision or correction and therefore does
+not represent a final report.
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+—
+-
+»
+; ”
+LEGAL NOTICE
+This report was prepared gs an account of Government sponsored work. Neither the United States,
+nor the Commission, nor any person acting on behalf of the Commission:
+A. Makes any warranty or representation, expressed or implied, with respect to the accuracy,
+completeness, or usefulness of the information contained in this report, or that the use of -
+any information, apparatus, method, or process disclosed in this report may not infringe
+privately owned rights; or oo }
+B. Assumes any liabilities with respect to the use of, or for damages resulting from the use of
+any information, apparatus, method, or process disclosed in this report. i
+As used in the above, '‘person acting on behalf of the Commission’ includes any employee or
+contractor of the Commission, or employee of such contractor, to the extent. that such employes .
+or contractor of the Commission, or employee of such contractor prepores, disseminates, or
+provides access to, any information pursuant to his employment or contract with the Commission,
+or his employment with such contractor. | *
+-
+#
+&
+*
+¥
+
+ 
+
+ 
+‘&
+
+-)
+
+ 
+
+CONTENTS
+
+Abstract Page
+1. Introduction .......... t
+2. Startup (Zero Power) Simulator .... Cheeses ecerssenseerenn ne 5
+3. Power level Simulator ...... Terrors 5
+4. Time Required for Setup of Simulators .. Cieeeecterranceeesas. 8
+5. Conclusions ......eeeeveannonns EN
+6. Appendix ...eeieiieniens PR
+6.1 Details of Startup Simulation .... us
+6.2 Details of Power level Simulation .... ceersenineeneae.. 15
+6.2.1 Neutron Kinetics Bauations ... a
+
+6.2.2 Core Thermal Dynamic Equations ...... EE
+
+6.2.3 Radiator Effectiveness ..... I
+
+6.2.4 Xenon Poisoning ....
+
+RELEASED FOR ANNCUE CEMENT
+
+IN NUCLEAR SCITYiR ABSTRACTS
+
+|
+| | |
+CL sRCROTRE
+ither the United
+
+"This report was prepared as an account of Government sponsored work, Ne
+nor the Commission, por Any person acting on behalf of the Commission:
+
+! A. Makes any warranty oT representation, expressed or implied, with respect to the accu-
+racy, compl fulness of the fh 4 or that the use
+
+ed in this report,
+of sny information, apparatus, method, or process
+
+disclosed in this report may pot infringe
+privately owned rights; or }
+s with respect to the use of,
+
+B. Assumes Any 1liabilitie:
+use of any information, apparatus, method, or process diac!
+ve, ‘person acting on behalf of the Commission” includes any em-
+ntractor, to the extent that
+
+As used in the abo
+ployee or contractor of the Commission, oF employee of such col
+such employee or contractor of the Commission, or employee of such contractor prepares,
+disseminates, oF provides access to, any information pursuant to his employment oF contract
+with the Commission, oF his employment with such contractor.
+
+ 
+
+or for damages resulting from the
+1osed in this report.
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+
+ 
+ 
+
+ 
+ot
+
+ol
+
+ 
+
+ 
+
+ 
+
+ 
+
+1. INTRODUCTION
+
+Two reactor kinetics simulators were developed for training operators
+of the Molten-Salt Reactor Experiment (MSRE) in nuclear startup and power-
+level operation procedures. Both simulators were installed at the reactor
+site, and were connected to the reactor instrumentation and controls system.
+The operators were trained in startup, or zero power, operation with the
+simulator in February 1965 and in power-level operation in October 1965.
+
+Both simulators were set up on general purpose, portable Electronic
+Associates, Inc., TR-10 analog computers (borrowed from the Instrumentation
+and Controls Division analog computer pool). No special hardware (other
+than the computers) was required. Although most of the simulation tech-
+niques were straightforward, a few special techniques were devised.
+
+This report describes the two simulators.
+2. STARTUP (ZERO POWER) SIMULATOR
+
+The startup simulator, set up on one TR-10 analog computer (Fig. 1),
+computed the reactor neutron level from 10™ w to 1.5 Mw as a function of
+control -rod-induced reactivity perturbations. The effect of nuclear power
+on system temperatures was not included.
+
+ORNL DWG. 66-4834
+
+ 
+
+ 
+
+INPUTS OUTPUTS REACTOR INSTRUMENTATION
+1—| S |= NEUTRON LEVEL:
+ROD 2 | LINEAR POWER ° RR-8100
+POSITIONS| 27" Mm LOG POWER - RR- 8200
+s— U LOG COUNT RATE CONSOLE METER: CHANNEL 1
+PERIOD CONSOLE METER: CHANNEL 2
+L FISSION CHAMBER SPECIAL: ON CONSOLE
+A “POSITION Co
+T
+LINEAR FLUX o
+RANGE R
+
+ 
+
+ 
+
+ 
+
+Fig. 1. Diagram of Startup Simulator.
+ 
+
+ 
+
+The inputs to the simulator were signals indicating the actual
+positions of the control rods, and the outputs (indicated on the reactor
+instrumentation) were log count rate, period, log power, and linear power.
+
+The linear flux-range input signal was taken from the selector switch
+on the reactor console. The fission-chamber position readout was provided
+by a meter mounted on the console. The Tisgion chamber is the detector
+for the wide-range counting channel system. The chamber position is
+servo-controlled to give a constant output signal, and the chamber posi-
+tion is related to the log of the nuclear power. The period interlocks
+and the flux control system were also used.
+
+The operators practiced the approach-to-critical experiment (in which
+plots of inverse count rate vs rod position are used to extrapolate to the
+
+critical rod position) and rod-bump experiments for calculating differential
+
+rod-reactivity worth from measurements of stable reactor period. The
+simulator was also used to check out the flux servo controller.
+
+Rod position signals were obtained from the three potentiometers nor-
+mally used by the MSRE computer. The "S" curve relating rod worth and
+position was approximated for the regulating rod by a diode function gen-
+erator (Fig. 2). The rod worth vs position relationship for the other
+two rods was linear.
+
+15.E. Beall et al., MSRE Design and Operations Report, Part V, Reactor
+Safety Analysis Report, ORNL-TM-T32 (August 1964), pp. 90-98.
+
+ 
+
+ORNL DWG. 66-4835
+
+ 
+
+1.04
+
+0.81
+
+0.6
+
+0.4}
+
+FRACTION OF TOTAL ROD WORTH
+
+0.2
+
+ 
+
+ 
+
+ 
+
+1 1 1 1
+0 10 20 30 40 50 60
+
+ 
+
+DISTANCE WITHDRAWN (IN.)
+
+Fig. 2. Simulator Approximation of Regulating Rod Worth vs Position.
+
+OC.
+ 
+
+ 
+
+ 
+
+ 
+
+5
+
+oh
+
+w
+
+.)
+
+7
+
+The analog circuit used to compute reactivity from the three rod posi-
+tions included the effects of the position of one rod on the total worth of
+
+the others (Table 1).
+Table 1. Full-Scale Rod Worths
+
+ 
+
+Full-Scale
+Rod Worth Reactivity
+Rod Position (% 8K/K) vs Position
+Regulating Rod Shims out 2.6 "S" curve
+Shims in 1.3 "S" curve
+Both Shims Regulating rod out 5.8 linear
+Regulating rod in 4.5 linear
+
+ 
+
+The neutron level computation was made by converting the kinetics
+equations to logarithmic form? since the neutron level varied over eight
+decades. Two effective delayed-neutron precursor groups were used. The
+usual method of including the source term in these equations was found to
+be unsatisfactory, and a special circuit was used (see Sect. 6.1).
+
+The conversion of log power to linear power was approximated by using
+a squaring device that gave adequate accuracy over each linear (1.5 decade)
+range (Fig. 3). A voltage signal from the reactor instrumentation linear-
+
+2A .E. Rogers and T.W. Connolly, Analog Computation in Engineering
+
+Design, pp. 334-7, McGraw-Hill, New York, 1960.
+
+ORNL ING. 66-4836
+
+ 
+
+RANGE CKT. BIAS
+
+1.5
+924
+i sLoswoN =N Linear
+0-3V. AT FULL
+! VOLT fecade SCALE x
+
+1.2%
+
+ 
+    
+     
+
+X= APPROXIMA rion CIRCUIT OUTPUT
+
+1.0
+
+DESIRED OUTPUT
+
+INDICATED LINEAR POWER
+©
+~}
+o
+
+0.5
+
+0.25
+
+ 
+
+ 
+
+0 * X 1 1 1 1 1 1 1 1 1 1
+0 0.25 0.5 0.75 1.0 t.25 1.5
+
+POWER SIGNAL FROM LOGARITHMIC CALCULATION
+
+ 
+
+Fig. 3. Approximate ILog-to-Linear Conversion.
+ 
+
+ 
+
+range selector circuit was subtracted from the log power signal, and this
+difference was then converted to the linear signal.
+
+The equations and analog computer circuit used for the startup simu-
+lator are given in Sect. 6.1
+
+3. POWER LEVEL SIMULATOR
+
+The power level simulator, set up on two TR-10 analog computers
+(Fig. 4), simulated the kinetic behavior of the MSRE for power levels
+
+ORNL DWG. 66-4837
+
+ 
+
+ 
+
+INPUTS OUTPUTS REACTOR INSTRUMENTATION
+ROD 1 —» bt NEUTRON LEVEL: RR-8100
+N -
+POSITIONS| 5 _, Ss LINEAR POWER RR-8200
+LOG COUNT RATE CONSOLE METER: CHANNEL 1
+$ —= | PERIOD CONSOLE METER: CHANNEL 2
+M FISSION CHAMBER POSITION SPECIAL: ON CONSOLE
+RADIATOR [1 — }—= REACTOR INLET TEMPERATURE.
+DOOR u TR-202-A5
+POSITIONS | 2 —+] |  |—+REACTOR OUTLET TEMPERATURE
+A | RADIATOR SALT OUTLET TEMP. T1-202-A2
+RADIATOR
+AIR —* T [RADIATOR SALT AT TaI-201-A
+AP
+—» RADIATOR HEAT POWER
+o FLOW (CONST) X AT XpR=-201-A
+REACTOR R
+CONTROL ~—+
+MODE
+
+ 
+
+ 
+
+ 
+
+Fig. 4. Diagram of Power Ievel Simulator.
+
+between 0.5 and 12 Mv. The inputs were signals indicating the actual
+positions of the rods and the radiator doors and the actual pressure drop
+of the cooling air across the radiator. The outputs were neutron levels
+and temperatures. The usual nuclear information and key system tempera-
+ture outputs were indicated on the reactor instrumentation. The reactor
+pover-level servo controller and radiator load control systems were also
+used.
+
+The reactivity inputs from control-rod position signals were computed
+as in the startup simulation. The neutron level computation (using two
+delayed -neutron precursor groups) solved the linear, rather than loga-
+rithmic, kinetics equations. Only the 0 to 1.5 and the O to 15 Mv ranges
+on the reactor linear power channels were operational. Conversion from
+linear to log power was approximated using a square-root device (Fig. 5).
+
+C.
+ 
+
+eo
+
+“)
+
+100(Mw?)10.0 |—
+
+INDICATED POWER SIGNAL (V)
+
+ORNL DWG. 66-4838
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+9.5
+
+10(Mw) 9.0
+
+  
+
+xX
+
+  
+
+8.5
+DESIRED OUTPUT
+
+1 (Mw) 8.0
+7.5
+
+04 (Mw) 7.0
+
+1]
+0 2 4 6 8 10
+COMPUTED LINEAR POWER (Mw)
+
+ 
+
+ 
+
+Fig. 5. Approximate Linear-to-Iog Conversion.
+10
+
+Other reactivity inputs to the power level simulator were from com-
+puted xenon poisoning, noise, and fuel and graphite temperature changes.
+The xenon-poisoning computation (Fig. 6) was included as an option. In
+consideration of the long time-constants of xenon buildup and decay, the
+equations were time scaled to run at ten times real time.
+
+ORNL IWG. 66-4839
+
+DIFFUSION
+
+—» IODINE Dis Xe (FUEL) Xe (GRAPHITE)
+DECAY Y STRIPPING (DOMINANT) Y
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+=2.9X107% sec! DECAY
+= BURNUP DECAY Ax = 2.1 X10~F sec!
+Ar (TOTAL) >> Ng BURNUP Ap = 1.66107 P sec!
+
+Steady-State Xe Poisoning When P=10 Mw:
+
+6 K Fuel=-0.7%
+6 K Graphite= -0.79 %
+
+Fig. 6. Diagram of Xenon Poisoning Computation.
+
+The reactivity noise input was included to offset complaints typical
+of usual simulators about how "smooth" the flux output is compared with
+the noisy output of actual reactors. An operational amplifier with high
+resistance feedback (40 megohms) was used as the noise source.
+
+A simplified simulation of the thermal kinetics of the MSRE was used
+which was based on previous studies of reactor dynamics .3
+
+The core was represented by two fuel "lumps," or nodes, and the
+graphite by one. Six more lumps were used to represent the rest of the
+system. The thermal characteristics are summarized in Table 2.
+
+The heat removal rate from the radiastor is controlled by varying the
+air flow through the radiator; hence, the radiator salt outlet temperature
+is affected by salt inlet temperature, air inlet temperature, and air flow
+rate changes. A simple but fairly accurate way of simulating the heat
+
+removal is to make use of the relationship of radiator cooling "effectiveness"
+
+as a function of air flow rate. Cooling effectiveness is defined as the
+ratio of the actual temperature decrease of the hot fluid to the tempera-
+ture decrease in an ideal (i.e., infinite heat-transfer surface) heat
+exchanger:
+
+35.7. Ball and T.W. Kerlin, Stability Analysis of the Molten-Salt
+Reactor Experiment, ORNL-TM-1070 (Dec. 1965).
+
+ 
+
+ta
+
+O “
+
+ 
+ 
+
+11
+
+”o
+
+Table 2. MSRE Thermal Characteristics Used in the Power level Simulator
+
+ 
+
+Core transit time, sec 7.6 (two
+lumps )
+Graphite time-constant, sec 200.0
+Heat exchanger to core transit time, sec? 10.0
+Core to heat exchanger transit time, sec 6.67
+Radiator transit time, sec 6.67
+Radiator to heat exchanger transit time, sec? 10.0 (two
+a lumps )
+Heat exchanger to radiator transit time, sec 5.0
+
+Heat exchanger "effectiveness" factors at steady state’:
+
+T T
+PO = 0.7029 PO = 0.2971
+= T . T .
+h PL Sl
+T T.,
+=2 = 0.4478 F— = 0.5522
+pi si
+
+ 
+
+®Holdup time in heat exchanger is included in the other transit times.
+
+bp, primary; S, secondary; i, inlet; and o, outlet.
+ 
+
+ 
+
+ 
+
+ 
+
+g = Tealt in ~ Tsa1t out
+¢ salt in ~ Tair in
+
+The salt outlet teuperature is computed from
+
+= T -E(T ) .
+
+Tsa1t out salt in ~ Te Tsalt in ~ Tair in
+
+The calculated cooling effectiveness as a function of air flow rate and
+the linear approximation used in the simulator are shown in Fig. T.
+
+ORNL DWG. 66-4840
+
+ 
+
+ 
+
+   
+  
+
+0.1
+COOLING EFFECTIVENESS
+~ E. = TSALT IN- T sALT ouT
+Cc
+TsaLtin- Tar iv 7
+i CALCULATED
+0.05}
+
+APPROXIMATION
+
+ 
+
+RADIATOR COOLING EFFECTIVENESS Ec
+
+ 
+
+0 50 100
+COOLING AIR FLOW RATE (%%)
+
+Fig. 7. MSRE Radiation Cooling Effectiveness vs Air Flow Rate.
+
+OC.
+ 
+
+oh
+
+”
+
+13
+
+The air flow rate Ww through the radiator was computed from
+
+Woo= KE, (X +X),
+
+a
+where
+K = constant adjusted to give 10 Mw cooling at full air flow,
+oF = measured air pressure-drop signal across the radiator,
+
+measured radiator door positions (inches raised).
+
+n
+
+5%
+
+Conversion of the analog computer voltages representing temperatures
+to signals compatible with the Foxboro ECI instruments was done with
+straightforward resistance divider networks.
+
+The equations and analog computer circuit used for the power level
+simulator are given in Sect. 6.2.
+
+4. TIME REQUIRED FOR SETUP OF SIMULATORS
+
+The engineering and craft time required to develop, install, and
+check out the simulators and to train the operators in their use was as
+follows (all values in man-weeks ):
+
+Startup Power level
+Simulator Simulator
+Engineering labor
+Development 1.6 1.4
+Set up and check out 0.7 1.2
+Lecturing on use 0.3 1.0
+Craft labor
+Installation 0.3 0.4
+
+Total 2.9 k.o
+5. CONCLUSIONS
+
+The two on-site training simulators were developed and operated satis-
+factorily as part of the MSRE operator training program. Besides the
+obvious function of training the operators, the simulators served as a
+ 
+
+14
+
+means of checking out the reactor instrumentation snd control system, the
+operating procedures, and the rod and radiator-door drives. Some minor
+
+modifications were made to the system as a result of this experience with
+the simulators.
+
+All manipulations required to operate the simulated reactor were done
+from the reactor console, and the readout devices were part of the standard
+reactor instrumentation.
+
+th
+ 
+
+ 
+
+15
+6. APPENDIX
+" 6.1 Details of Startup Simulation
+3 The neutron kinetics equations are
+6
+on = Te (x - pp) - 1] 2) MCS, (1)
+i=l
+ac, knp,
+= © To M% @)
+where
+n = neutron population,
+t = time, sec,
+1¥ = prompt neutron lifetime, sec,
+k = reactor multiplication,
+’ Bp = total delayed neutron fraction,
+¥ Bs = effective delayed neutron fraction for 1th precursor group
+with fuel salt circulating,
+As = decay constant for ith precursor group,
+C, = jth precursor population,
+S = rate of neutron production by source.
+Rewrite Egs. (1) end (2), assuming kBp~ Bp and a 2% :
+6
+8k -
+do S, +) AC, tS, (3)
+i=1
+ac, ng,
+. om ToT MG (4)
+
+Divide Egs. (3) and (4) by n:
+
+xn
+
+ 
+16
+
+ 
+
+ 
+
+6
+lan _ KF 26 5 ,
+lam. _ _T.) iis (3')
+n dt 1% n n
+i=1
+1 96 _ By i ACs (0)
+n dt 1% n
+Define new variables:
+an
+at _ . .
+M = — = reciprocal period,
+Cs
+Vi Ta
+wo= SS,
+n
+
+Substitute into Eqs. (3') and (4'):
+
+5 6
+_ tk Pp
+Mom LZ) vp rw, (5)
+i=1
+avy By 6
+= CC FoMY-MW (6)
+
+The usual method of computing the source term is as follows: noting
+that Wn = S and
+
+ 
+
+d (Wn) = as = 0
+dt at ’
+therefore
+n dw —
+® Th TO
+dw _ Wdn _
+oF & ~ ma = TW. (7)
+
+The analog computer can usually solve a first-order differential
+equation such as Eq. (7) for W; however in this case, W becomes so small
+when n >> S that the voltage representing W is within the noise level of
+the amplifier, so further computation with it is meaningless. To avoid
+this problem, the relationship between W and log n was approximated as
+shown in Fig. 8.
+
+13]
+
+ 
+ 
+
+&
+
+id]
+
+Fig.
+
+ 
+
+17
+
+ORNL DWG. 66-4841
+
+ACTUAL
+
+\ ooo TE
+
+ 
+
+ 
+
+ 
+
+> LLOGN
+
+Approximation of Logarithmic Source Term W.
+
+The six delayed-neutron precursor groups were approximated by two
+groups, as follows: =
+
+B13
+
+1
+
+tr
+
+yg
+
+3
+) 8, = 0.002693,
+1=1
+
+0.000924,
+
+1
+
+2
+
+1
+
+B
+Lx
+
+i=1
+
+= 0.63 sec”
+
+0.04k2 sect,
+
+The prompt neutron lifetime 1% was 0.00024 sec, and Bp was 0.0064 (ref 4).
+
+The analog computer circuit for the startup simulator is shown in
+
+Fig. 9.
+
+ 
+
+h
+
+R.B. Lindauer, Revisions to MSRE Design Data Sheets, Issue No. 9,
+ORNL-CF-64-6-43 (June 2K, 106%).
+
+ 
+
+ 
+
+ 
+ 
+
+18
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
++Ve
+
+1 MEGS
+
+ 
+
+Is ' + VeAnGa-
+E12
+Ne -2-5-97 2 o-+av.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ORNL IMG. 66-4842
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+- w I
+it Nis ___ AAA 922 2 \_. n
+> ie a Nu.
++10 ro Leer =23Vis town Sm 9, & 3 > s{iye— —
+= \VV\\eeO °
+> = NN He a pd Lex | o-3v
+.630 - \ FUL.
+22406 ¥ 10 @ —~ —T SeALW
+source NJ 200k
+C T
+mm | | <m -
+’ r
++™ 3 3 +M +
+7 y
+NOTES $ 8
+* ReaL ig e342
+eV:EC/N -c0Ga,
+< < ne 50K TPa
+ema -™ (2) ! 15 ANN ep 70 206 77
+I VOLT = | DELADG- AMPL. 8)
+sw S/n jo . toa, eg ce -i0V
+! SI=2TP2 ; (um vo-> 210°. 1C A WATTS
+| |
+-.005MV,., 0) | | 17
+AV !
+BN + { L260 +tiLoa, TT?
+[ a CompEessgaTIOn
+- f -10 >
+5 Pac TO CHAMBER
++10 vm
+VE L417 vo- £1800 SBT LL a onsoLe
++10 . 198 > ZF af (Loaving, NAT) -
+prez D736 For 2 Ya LD.)
+JAIRfFE
+Cg)
+Ex our gg
+lov=+1% SI Vo 1 SK Rots -LoG CoM
+. . FOR oo —— p> 0. -1OY
+EK pirical 20-2792 | zie 105
+cm
+i :
+ro Bbenck i
+ok G.6V on IB :
+SKEW. TD
+c eee,
+Rt REGULATING ROD sai
+EK ciov (5k)
+= i
+WN pogirign 27 -
++
+ir 18 out i
+(5%) - \_
+HH.
+SHIM em memes te en eam moan + 2m eros earn
+= i
+AV = * SCALING
+3.33K (sx) ~ 1% J VOLT
+. cx .
+|
+i
+= |
+}
+Fig. 9. Analog Computer Circuit for the Startup Simulator.
+
+ 
+
+ 
+
+ 
+
+ 
+
+>
+
+ 
+
+   
+ 
+
+ 
+
+ 
+
+ 
+
+a
+
+19
+
+6.2 Details of Power level Simulation
+
+6.2.1 Neutron Kinetics Equations
+
+ 
+
+Equations (1) and (2) of Sect. 6.1, with two delayed-neutron precursor
+groups, were used. An analog circuit (Fig. 10) developed many years ago
+was used to solve these equations. This circuit is superior to most of
+those published in the literature, mainly because of the way in which the
+amplitude scaling is accomplished.
+
+A key point in the scheme for simulating the equations is the use of
+a small feedback capacitor for the integration of the neutron level equa-
+tion, rather than solving directly for dn/dt and then integrating with a
+conventional large-feedback-capacitance integrator. In Fig. 10, ampli-
+fier 1 (which solves for n) has a feedback capacitor of 10 1% uf. The
+amplifier gain is 1/10 1% Rip (sec™1), where Rip is in megohms. With the
+assumption that all input resistors are 0.1 megohm, Eq. 1 can be rearranged
+to show the desired form of the inputs to amplifier 1, as follows:
+
+82 3 (en - knfg -n + 1, C+ 1¥\,C,). (8)
+
+The quantity kn is generated from n and 6k as shown in Fig. 10. Typically
+k will vary between 1.005 and 0.98 for control studies. Owing to the
+inherent inaccuracy of the multiplier, it is advantageous to let the full-
+scale output of the (8k x n) multiplier be only a few percent of kn. In
+the simulator, the voltage representing zero 8k was offset, i.e.,
+
+-1.5% < 8k < +0.5%, because of the apparent deadband in the quarter-square
+multiplier when one input oprates around zero volts. The quantity knpfp
+
+is generated from
+
+0.1 kn x 100 By x 0.1
+
+pot 2 setting 1 megohm input
+to amplifier 1
+
+the gain reductions thus allowing a reasonably large gain setting on pot 2.
+
+The 1% AC terms are obtained by first taking the Iaplace transform
+of Fa. 2:
+
+kn B,
+
+—_ 1
+5C; = mm M0
+
+which rearranged is
+
+By E.R. Mann (deceased), Instrumentation and Controls Division.
+ 
+
+ 
+
+20
+
+ORNL DWG. 66-4843
+
+ 
+
+ 
+
+ 
+
+ 
+
++n
+O-++100V
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+FULL SCALE
+10kn Br 7) 100 B+
+—&
+J,
+Da
+1001 i EN
+10M Ci L* (5) 1] f ®) l
+\W/
+A2
+100.82 1 A2
+: 1 e)
+®
+—4 : OU),
+~10X,C2 4
+OTHER
+DELAY GROUPS ¢———
+AS REQUIRED
+NOTE:
+
+AMPLIFIER GAIN OF 1 IMPLIES 1-MEGOHM INPUT RESISTOR; GAIN OF 10=0.1M
+
+Fig. 10. Analog Circuit Designed by E.R. Mann for Neutron Kinetics
+Equations.
+ 
+
+21
+
+! \
+A
+= —_t
+14, C, | 5; 9)
+where S is the laplacian argument.
+Solving for the output of integrator 4 Leqyy):
+ew) = Se = .e + 0.1 A. kn
+at (%) i(k) = 0
+A
+(4) = -0.1 kn 5 | . (10)
+2 i
+
+A,
+Multiplication of ey by 100 B, gives -10 kn, m=—— |,
+(4) 1 4 Ss + As
+\
+
+which is seen from Eq. (9) to equal -10 1*A.C, as required for generating
+dn/dt in Eq. (8). Again, because the amplifier gains were reduced, the
+gains on the By pots could be increased.
+
+Tois circuit clearly shows that for small values of 1¥ (e.g., 107
+—» 107° sec) the feedback capacitor for amplifier 1 will be very small
+and thus will have a negligible effect on the response of n for the slow
+variations normally encountered in control studies. Under these condi-
+tions the negligible effect of this capacitor implies that the neutron
+kinetics are independent of 1%, and for m precursor groups, the neutron
+kinetics can be described by m differential equations, rather than (m + 1)
+equations. This simplification is useful when the kinetics equations are
+solved on a digital computer, because the maximum computation time inverval
+is usually governed by the 1%/Bq time constant and must be made quite small
+to give stable (and accurate) answers.
+
+6.2.2 Core Thermal Dynamic Equations
+
+The fuel flow in the core is approximated by two first-order lags in
+series, and heat transfer takes place between the first fuel lump and the
+
+graphite. The nuclear importancesof the two fuel lumps are equal. Forty-
+
+seven percent of the nuclear heat is generated in each fuel lump. The
+remaining 6% is generated in the graphite. The heat balance equations
+used for the core are as follows:
+
+a. First fuel lump
+
+C — — —
+— = - 0.263 T, + 0.017 T, + 0.246 T,; * 0.0329 n;
+ 
+
+ 
+
+ 
+
+22
+
+b. Second fuel lump
+
+aT
+
+co _ om .
+TE - 0.263 To + 0.263 T, + 0.0329 n;
+
+ 
+
+— = - 0.005 T, + 0.005 T_ + 0.0008} n.
+
+Temperatures are in OF, time is in seconds, and neutron level n is in
+megawatts.
+
+As discussed previously, the lags due to holdup and heat transfer
+in the loop external to the core were represented by six first-order lags.
+Each lag is described by the equation
+
+aX _ 1 =
+at 7 ip =X)
+
+where T is the time constant of the lag.
+
+6.2.3 Radiator Effectiveness
+
+ 
+
+The plot of radiator cooling effectiveness vs air flow was calculated
+by
+
+Tait in ~ Tsa1t out _ 1 -exp[-(1 - Nn, ]
+- - v J
+Tealt in Tair in 1 -N exp L-(1 - NN, 1
+
+ 
+
+where
+
+(WC )o1t,
+
+NT Geo
+
+pair
+
+UA
+
+N =
+2 (WC, Jan
+W = mass flow rate, 1b/sec,
+
+C_ = specific heat, Btu/1b-°F,
+
+2
+U = overall heat transfer coefficient, Btu/sec-ft”-CF,
+
+A = heat transfer area, £2.
+
+ 
+hv
+
+23
+
+Since air flow is perpendicular to the tubes, the heat transfer coefficient
+on the air side was assumed to vary as the 0.6 power of flow rate.
+
+6.2.4 Xenon Poisoning
+
+Even when time scaled by a factor of 10, the xenon transients are very
+very slow, and care had to be taken to avoid large errors due to integrator
+
+drift. Manual drift-control pots were added to both integrators in the
+circuit.
+
+Fuel xenon was assumed to build up at a rate equal to iodine production,
+since the xenon stripping time-constant is small compared with those for
+decay, burnup, and diffusion to the graphite.
+
+a(% 8%)pien xe
+
+d(% 8k)
+
+graphite Xe _
+= 0.00025 (% 8k), 1 xe
+
+- 0.000198 (#0) ra pnite Xe
+
+- 0.0000157 (% 8k) pg pate xe ™
+
+Since simulation pressed the limitations of the accuracy of the com-
+puter, some of the coefficients had to be field set to give proper steady-
+state output values. Although there would have been a number of advantages
+in speeding up the computation even more, it was not done because we
+
+didn't want to have the xenon dynamics confused with the reactor thermal
+dynamics. :
+
+Fig. 11 is the analog computer circuit used for the power level
+simulator.
+
+ 
+ 
+
+ 
+
+  
+  
+   
+  
+
+MANUAL
+n
+ADIST
+
+Lim 9 ¢
+
+102” tuts ihe
+ar rid
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+    
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+
+¢ J
+
+   
+ 
+ 
+  
+   
+ 
+
+sev To SK AMM. 18,
+
+  
+     
+
+  
+
+ 
+     
+   
+  
+
+  
+ 
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
+
+ 
+
+  
+
+ 
+
+raw tev 66-4844
+ufos D626 | ORNL ING. 66-4844 pe -—— SUL wey Xa out Grn >
+Lm (ov) | =e 37 » Sx pan wn, ! Xe (eo) )
+. wat = T9% $I. 10s
+o +7
+Lo niAt of é% Nn T° Grape Xe lr) £0 -Gv (3:3) 10 mw
+J% - [00 poitE Tea wn } «0% IR I0mw{ts, oo
++o font ly 3, fe : xe me n= pas +n ’
+™m
+“lovs 1.5% * (20, )—= -f re =
++ Hoyr-i5% Jres Sk oY
+al SIrTre,
+4
+-n I\o%
+"og n +t Kn
+. Xewons - Scacko ® 10 xX Rem Tims
+Camry T 2m ok 000
+0 . c
+== Jq024
+Joa
+DY)
+1, PU
+Sk NOISE 2
+- Tre HenT EXCHANGER,
+Ta" 290
+' 4108
+{2 )-
+Toe | sents a
+Tei
+f
+too x’s + ”
+Ie
+>.Sm
+2 .
+. Rav. SATAT 2 od
+“(1-1) OK uu “ : soceme
+B3 (seat moog reat) id eel 3; + ee. TC
+bSEP WHEN REMETOR IN O-IS Mw RAveE to 1a: &x on
+ve s An ot Ww
+eaBy ws O=1.5 on .
+beae 316. OIF MY vi
+Ay
+
+ 
+
+ 
+
+ 
+
+wl +
+-n ol
+lov 15, +
+me
+x
+
+= 1, ) 140
+
+ 
+
+ 
+
+ 
+
+ 
+
+Rop Rencriviry
+op WT
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+CHAMBER
+a> , Pesimon = Taner our T
+SALT 10
+
+£ LT] Gro
+
+SOK vp2 TO toe Nn
+
+Amp. S53
+Raw
+
+  
+ 
+
+ 
+
+333 For 10°F
+
+te Tmaw
+
+ 
+
+ 
+
+Linena- Todos ConveR3io nN
+
+sanpiym PIO AD wm
+
+Rapn1ofe nx [5
+AP ® ! >
+t,
+
+[LX
+
+tr
+
+O30 954g pp A Ly Jty
+Sak Ee tom 1
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Faw SC
+CAsig h
+rev q Jan
+-o
+
+ 
+
+Rencror. Tnermae Move.
+
+Pozyrioms
+
+Roo Woarns = Fu Scare
+
+Ree Rop | Sms ar - eR ene
+Swims 1a = 3B SR
+
+Born Sms [REC Rov ovr - SIRIR |, Lone
+Ree Rep 10 - 4.531K
+
+for the Power Level Simulator.
+
+11. Analog Computer Circuit
+
+Fig.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+NoTE: 2am EAL TR-10 Computers
+Are Use, Twrscanron Fewpbacr
+
+CAPACITORS ANE 10 ule.
+
+Tim& Scare = Remd
+Teme SemcE
+
+~I1Oy $+ 10y = FOOTER > 1300°F
+[ack ded
+
+2
+
+     
+ 
+
+ 
+
+2-7.
+
+10.
+11.
+12.
+13.
+1h,
+15.
+16.
+17.
+18.
+19.
+20.
+21.
+22.
+23.
+2h,
+25.
+27.
+28.
+29.
+30.
+31.
+32.
+33.
+
+35.
+36.
+
+37.
+39.
+
+118.
+119.
+120.
+
+RHaoadRroHAdoHAgS<tQuEdPdadEadEaQa
+
+R.G. Affel
+S.J. Ball
+
+S.E. Beall
+E.S. Bettis
+
+R. Blumberg
+E.G. Bohlmann
+Borkowski
+Cristy
+Crowley
+Culler
+Dandl
+Engel
+Epler
+Ferguson
+Gabbard
+Gallaher
+Grindell
+Guymon
+Harley
+Harrill
+Haubenreich
+Holt
+
+Holz
+Hudson
+
+. Kasten
+Kedl
+Kerlin
+Kirslis
+Krakoviak
+Iundin
+Lyon
+Mathews
+MacPherson
+. McDonald:
+
+. . » . .
+* ‘es . . .
+
+poREHnnEubhbEDERoPRBDRERR PS
+
+ 
+
+25
+
+ORNL-TM-1L4k45
+
+INTERNAL DISTRIBUTION
+
+LO. H.F. McDuffie
+41. C.K. McGlothlan
+42, H.R. Payne
+43. A.M. Perry
+Ly, H.B. Piper
+45. B.E. Prince
+46. M. Richardson
+47. H.C. Roller
+48. H.C. Savage
+49. D. Scott
+
+50. H.E. Seagren
+51. M.J. Skinner
+52. A.N. Smith
+53. P.G. Smith
+5h, R.C. Steffy
+55. R.E. Thoma
+56. G.M. Tolson
+57. W.C. Ulrich
+58. B.H. Webster
+59. A.M. Weinberg
+
+60. MSRP Director's Office, Rm. 219, 920k-1
+61-62. Central Research Library
+63. Document Reference Section
+64-93. laboratory Records Department
+9k. Iaboratory Records, ORNL R.C.
+95. ORNL Patent Office
+96-110. Division of Technical Information Extension
+111. Research and Development Division, ORO
+112-113. D.F. Cope, ORO
+114. R.G. Garrison, AEC, Washington
+
+115. H.M. Roth, ORO
+116. W.L. Smalley, ORO
+M.J. Whitman, AEC, Washington
+
+117.
+
+EXTERNAL DISTRIBUTION
+
+S.H. Hanauer, Univ. Tenn.
+R.F. Saxe, North Carolina State Univ.
+S.E. Stephenson, Univ. Ark.

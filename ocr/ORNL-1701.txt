@@ -1,0 +1,2095 @@
+ 
+
+ 
+
+ 
+ 
+
+CENT
+
+Jefe]
+
+(EEA
+
+3 4456 0349639 4
+ORNL 1701
+
+Engineering
+
+   
+
+ 
+
+FORCED CONVECTION HEAT TRANSFER
+
+   
+
+BETWEEN PARALLEL PLATES AND IN
+
+  
+ 
+
+ANNULI WITH VOLUME HEAT SOURCES
+
+  
+ 
+
+WITHIN THE FLUIDS
+
+  
+ 
+ 
+
+H. F. Poppendiek
+L. D. Palmer
+
+    
+  
+
+CENTRAL RESEARCH LIBRARY
+DOCUMENT COLLECTION
+
+LIBRARY LOAN COPY
+
+DO NOT TRANSFER TO ANOTHER PERSON
+
+  
+   
+   
+   
+ 
+  
+
+  
+
+If you wish someone else to see this document,
+send in name with document and the library will
+arrange a loan
+
+ 
+   
+
+OAK RIDGE NATIONAL LABORATORY .
+
+OPERATED BY
+
+CARBIDE AND CARBON CHEMICALS COMPANY
+
+A DIVISION OF UNION CARBIDE AND CARSON CORPORATION
+
+ucc
+POST OFFICE BOX P
+OAK RIDGE, TENNESSEE
+ 
+
+ORNL- 1701
+
+| Copy No. of 7
+
+Contract No. W-T405, eng 26
+
+Reactor Experimental Engineering Division
+
+FORCED CONVECTION HEAT TRANSFER BETWEEN PARALIEL
+PLATES AND IN ANNULI WITH VOLUME HEAT
+SOURCES WITHIN THE FLUIDS
+
+by
+
+H. F. Poppendiek
+L. D. Palmer
+
+DATE ISSUED:
+
+May 111954
+
+OAK RIDGE NATIONAL LABORATORY
+Operated by
+CARBIDE AND CARBON CHEMICALS COMPANY
+A Division of Union Carbide and Carbon Corporation
+Post Office Box P
+Osk Ridge, Tennessee
+
+MARTIN MARIETTA ENERGY SYSTEMS LIBRARIES
+
+ERA
+
+3 4456 0349L39 y
+EARNER ramet wn ye TE
+
+ 
+
+1.
+2
+3.
+4-5.
+6.
+
+7-11.
+12.
+13.
+1k,
+15.
+16.
+17.
+18.
+19.
+20,
+21.
+22.
+23.
+2h,
+25.
+26.
+27.
+28.
+29.
+30.
+31.
+32,
+33.
+3k,
+35.
+36.
+37.
+38,
+39.
+
+Li,
+Lo,
+43,
+Lh,
+
+C.
+
+E.
+
+INTERNAL DISTRIBUTION
+
+ 
+
+Center
+
+Biology Library
+
+Health Physics Library
+Central Research Library
+Reactor Experimental
+Engineering Library
+Laboratory Records Department
+Laboratory Records, ORNL R.C.
+
+Cc.
+L.
+Je
+A.
+E.
+E.
+Co.
+F.
+R.
+Jo
+8.
+F.
+A.
+A.
+M.
+We.
+G.
+K.
+T.
+A.
+Cc.
+D,
+D.
+E.
+R.
+Jo
+A.
+R.
+A.
+0.
+R,
+Cc.
+
+118.
+119.
+120-369.
+
+E.
+B.
+P,
+M.
+H.
+D.
+E.
+Cc.
+Cc.
+A.
+C.
+L.
+H.
+
+Larson
+Emlet (K-25)
+Murray (Y-12)
+Weinberg
+Taylor
+Shipley
+Winters
+VonderLage
+Briant
+Swartout
+Lind
+
+Culler
+Snell
+
+Hollaender
+
+T.
+Je
+H.
+Z.
+A.
+8,
+Se
+S.
+We.
+M.
+No
+A,
+Ja
+B.
+S.
+
+Kelley
+Fretague
+Clevett
+Morgan
+Lincoln
+Householder
+Harrill
+Billington
+Cardwell
+King
+
+Lyon
+
+Lane
+Miller
+Briggs
+Kitzes
+
+Sisman
+
+Ww.
+B.
+
+Stoughton
+Graham
+
+67.
+68.
+69.
+TO.
+Tl.
+T2.
+73.
+Tw °
+5
+76.
+TT °
+a,
+80-11% &
+11
+
+alos 0 0
+
+1 “ ° ¥
+
+117.
+
+EXTERNAL DISTRIBUTION
+
+ 
+
+R.
+F.
+E.
+P.
+D.
+M.
+A.
+G.
+S.
+P.
+Go
+0.
+Ce.
+I.
+A,
+C.
+XK.
+P.
+
+ORNL 1701
+Engineering
+
+Gall
+Poppendiek
+Beall
+Gill
+
+Cowen
+Breazeale (consultant)
+Charpie
+Alexander
+Bettis
+Blizard
+Bohlmann
+Bradfute
+Claiborne
+Cohen
+Cristy
+Edlund
+Ergen
+Fraas
+
+Ds Greene
+
+Cc.
+Wo
+R.
+We.
+F,
+Co.
+E.
+B.
+D.
+D,
+Wo
+Wo
+
+Hamilton
+Hoffman
+Kasten
+Keilholtz
+Lansing
+Lawson
+Lynch
+Mills
+Palmer
+Powers
+Rosenthal
+Savage
+
+Sisman
+
+Go
+Mo
+Co
+F °o
+Ww
+
+a
+
+- ~
+Ci st
+
+D.
+
+Thomas
+Warde
+Zuolsa
+Poppendiek
+Busaard
+
+R. F. Bacher, California Institute of Technology
+A.F. Plant Representative, Wood-Ridge (Attn: S. V. Manson)
+Given distribution as shown in TID-4500 under Engineering Category
+
+DISTRIBUTION PAGE TO BE REMOVED IF REPORT IS GIVEN PUBLIC DISTRIBUTION
+ 
+
+TABIE OF CONTENTS
+
+INTRODUCTION: cscs eovesccccoososccoonssscnnnns tesessece csecsrecnssenen
+LAMINAR FLOW ANALYSIS. .ecceccoccese certsosceceeasens ceerevsesneane eens
+TURBUIENT FLOW ANALYSIS..esceervonscncass creteeeneseenes cece cerennee
+DISCUSSION .ceeececeocssscncacns creees toesecans cesses seenans teecersrsane
+APPENDIX l.cicceecvoccononsascnnns ceeccnennen evesesseccens coeseeenns ces
+APPENDIX 2.ceeeevscccscscosssncconss sessseessrresnscceras tesecscenees
+APPENDIX Buuieeceacessscosoocsessssnsosenonsscacsannssssaseatsasscncss
+
+REFERENCES. ceocescsoosccssscesscsostssososssssnonsesssonssssasscsnsassas
+ 
+
+SUMMARY
+
+This paper concerns itself with forced convection heat transfer
+between parallel plates which are infinite in extent and ducting fluids
+containing uniform volume heat sources; also heat is transferred uni-
+formly to or from the fluids through the parallel plates. Dimensionless
+differences between the plate wall temperature and the mixed-mean fluid
+temperature are evaluated in terms of several dimensionless moduli. These
+analyses pertain to the laminar and turbulent flow regimes and liquid
+metals as well as ordinary fluids. The solutions may also be used to
+estimate heat transfer in annulus systems whose inner to outer radius
+
+ratios do not differ significantly from unity.
+ 
+
+-7 -
+
+NOMENCLATURE
+
+letters
+cross sectional heat transfer area, £42
+fluid thermal diffusivity, £t2/hr
+parameter in equation (o), ft/hr
+fluid heat capacity, Btu/lb °F
+parameter in equation (r), dimensionless
+gravitational force per unit mass, £t /hr®
+heat transfer conductance, Btu/hr £12 OF
+fluid thermal conductivity, Btu/hr £2 (°F/ft)
+fluid pressure, 1bs/ft°
+heat transfer rate, Btu/hr
+radial distance from centerline of parallel plate system, ft
+
+radial position at which the reference temperature
+tg is stipulated, ft
+
+half the distance between the two parallel plates, ft
+fluid temperature at position n, OF
+
+a reference temperature at radius rg, °F
+
+mixed-mean fluid temperature, Op
+
+fluid temperature at plate walls, Op
+
+fluid temperature at the parallel plate system center, Op
+fluid velocity at nm, ft/hr
+
+mean fluid velocity, ft /br
+ny,
+Nu
+
+Re
+
+ 
+
+-8 -
+
+volume heat source, Btu/hr £t2
+
+axial distance, ft
+
+radial distance from parallel plate walls, ft
+
+fluid weight density, lbs/ft2
+
+eddy diffusivity, ft2/br
+
+friction factor defined in equation (i) dimensionless
+absolute viscosity of fluid, 1b hr/ft2
+
+fluid kinematic viscosity, £t2/hr
+
+£luid mass density, lbs hr2/rth
+
+fluid shear stress at position n, Ibs/ft?
+
+fluid shear stress at parallel plate walls, Tbs /£t°
+
+Dimensionless Moduli
+
+ 
+
+y/ To
+y/o
+h bro/k, Nusselt Modulus
+
+¥Y 9cp/k, Prandtl Modulus
+up bro/ ?
+
+ 
+ 
+
+-Q -
+
+INTRODUCTION
+
+The mathematical heat transfer analyses to be presented here for a
+
+parallel plates system are accomplished much in the same manner as were those
+
+for a pipe system presented previously in reference 1. The present analyses
+
+as well as those given in reference 1 can be used to determine the tempera-
+
+ture structure in flowing fluids that possess internal sources of heat gener-
+
+ation. Such volume heat sources may result from nuclear or chemical reactions
+
+or may be generated electrically.
+
+The idealized volume-heat-source system considered in this paper is
+
+defined by the following postulates:
+
+1.
+
+Thermal and hydrodynamic patterns have been
+established (parallel plates of infinite
+extent).
+
+Uniform volume heat sources exist within the
+fluids.
+
+Physical properties are not functions of
+temperature.
+
+Heat is transferred uniformly to or from the
+fluid at the plate walls.
+
+In the case of turbulent flow the generalized
+turbulent velocity profile defines the hydro-
+dynsmic structure.
+
+In the case of turbulent flow there exists an
+analogy between heat and momentum transfer.
+ 
+
+ 
+
+- 10 =
+
+LAMINAR FLOW ANALYSIS
+
+The differential equation describing heat transfer in the parallel
+
+plates system for the case of laminar flow is
+
+ 
+
+o Y
+3 rv oot. 0% Ww
+Zu 2 I) | oes (1)
+
+To Yep
+
+where,
+Uy, mean fluid velocity
+
+t, temperature
+
+X, axial distance
+
+r, radial distance
+
+a, thermal diffusivity
+
+W, uniform volume heat source
+Y, fluid weight density
+
+Cp, fluid heat capacity
+
+One boundary condition is represented by the uniform wall-heat-flux
+
+which may be positive, negative or zero,
+
+d _ - (da) _ x Ot (. _ \
+= (= = 1) = (5. =k ZL (r = rg) (2)
+
+where 4 is the radial heat flux and ($2) is the wall heat flux. The second
+boundary condition is, tq, reference temperature, such as a wall or center
+line temperature,
+
+t(r = rg) = tg (3)
+
+Note, the mixed-mean fluid temperature may also be specified as the reference
+
+temperature.
+ 
+
+ 
+
+-11 -
+
+Downstream from the entrance region where the thermal pattern (tempera-
+ture gradients) of the system has become established, the axial temperature
+gradient, st, is uniform and equal to the mixed-mean axial fluid tempera-
+ture gradient?, Sm » The latter gradient can be obtained by making the
+following heat rate balance. The heat generated in a lattice whose volume
+is 2r, dx (the width of the lattice being unity) plus the heat transferred
+into or out of the lattice at the plate walls must all be lost from the
+
+lattice by convection, that is,
+
+a dt
+W 2r dx - (3) 2dx = ero up Yep (5m) ax (4)
+
+Hence, in the established flow region the axial temperature gradient is
+
+ 
+
+w-21 (dq
+dt = dtp _ To (8), (5)
+0x 0X Up ¥ Cp
+
+Upon substituting equation (5) into equation (1), the following total differ-
+
+ential equation results:
+
+102 rs - =f) - 2 = a (6)
+
+ 
+
+1. Note, that the mixed-mean fluid temperature at any given axial position
+
+is defined as,
+To
+/ t u dr / To
+0 1
+= = tu dr
+tm To UnTo “g
+Sve
+0
+
+ 
+ 
+
+-12 -
+where F' = 1 - 1 (&) - Equation (6) can be solved upon making two
+0
+
+Wrq
+integrations. The first integration plus boundary equation (2) yields,
+
+EF) i
+o
+
+A second integration gives the desired temperature solution,
+
+To [=e He) ©
+
+where the reference temperature is, to, the wall temperature. The tempera-
+ture solution in terms of the centerline temperature rather then the wall
+
+temperature is given by
+
+t -t | 2 oi,
+FE FE] ®
+k
+
+where t¢ 1s the centerline temperature. Equation (9) is graphed in
+Figure 1 for several values of the function F'.
+The difference between the plate wall temperature and mixed-mean ~luid
+
+temperature is defined by
+
+To
+v4 u(ty - t)ar
+
+Umro
+
+ 
+
+win!
+
+Upon substituting the laminar velocity profile relation and equation (8)
+
+into equation (10) there results,
+
+to - tm _ ITF - 14 (11)
+Wro? 35
+Xk
+ 
+
+ 
+
+-13 ~-
+
+UNCLASSIFIED
+
+ORNL-LR-DWG-176
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.75 T T 1 T 1 /
+0.70
+0.60 /
+A |
+0.50 /
+A
+0.40
+Ss
+A
+0.30 J
+AN
+© 0.20 V4
+0.10 pd F'= 1 |
+t-te “7 TT
+- 2 a —
+0 a
+—] [——— F'z1/2
+-0.40 SS ~~
+’ TN : TT
+-0.20 SN Fiz 0
+-0.30 N
+-0.40 SC
+0.501 | | ! | N
+0 0.10 0.20 0.30 0.40 0.50 0.60 0.70 0.80 0.90 1.00
+; r
+To
+
+Fig. 4. Dimensionless Radial Temperature Distributions in a Parallel Plotes System for
+
+Laminar Flow (Equation 9)
+ 
+
+- 1 -
+
+TURBULENT FLOW ANALYSIS
+
+Fluid flow in pipes and channels (parallel plates systems) under
+turbulent flow conditions has been characterized in terms of a laminar
+sublayer contiguous to the wall, a buffer layer, and a turbulent core by
+Nikuradse, von Karman, and others. This structure has been presented in a
+general fashion by the well known generalized velocity profile which was
+shown together with the experimental data of Nikuradse, Reichardt, and Laufer
+in reference 1. Table 1 gives some of the specific hydrodynamic relations
+for the various flow layers in a parallel plates system; a discussion of some
+of the details of this table can be found in Appendix 1.
+
+The differential equation describing heat transfer in a parallel plates
+
+system for the case of turbulent flow is
+
+ 
+
+u(r) SE = 4 IC re) 3x] + . (12)
+
+where,
+
+u(r), the turbulent velocity profile (given by
+the generalized velocity profile)
+
+€ >» the eddy diffusivity” given in Table 1
+
+Upon substituting equation (5) into equation (12) for the established thermal
+
+region, the following total differential equation results,
+
+- 1 (4
+ar dr
+
+um Yep Y Cp
+
+ 
+
+2, It is postulated that the heat and momentum transfer eddy diffusivities
+are equal as proposed by Reynolds and successfully used by von Karman,
+Martinelli and othens.
+TABIE I
+
+HYDRODYNAMIC RELATIONS FOR THE VARIOUS FLOW LAYERS
+BETWEEN PARALLEL PLATES
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+GENERALIZED VELOCITY
+REGION DISTRIBUTION SHEAR STRESS STRESS EQUATION EDDY DIFFUSIVITY
+Laminar Sublayer
+T
+< + _'c .
+o<y <5 u _ 47 7 T=T, T= oo & £ oo
+or ol 132 To v v
+oO Re® —rmo
+p
+Buffer Layer
+5 <y'<{30 :
+or Y= - 3,05 + 5.00 1n yl T=T, T=pP+e) 2 | £ = .0076 Re’? XL _
+131.5 789 T. P dy ? To
+22 Lc LZ To ~
+Re"? Tro Re9 p
+Outer Turbulent -
+layer To
+uo V |=] T=To (1 - LD) T=pedn €
+789 __¥ 2:5 + 2.5 In 7 |g ° = pe —— = .0152 Re"? (1- _Y)
+p< <5 To — ro ay 3 52 Re (1- DE
+p L
+Inner Turbulent -
+Layer y To a
+Sel cl Y= 5.54+ 2.5 In | T=To@-L) |T=pe £_ = .0038 Re"?
+To To S To y PD
+P —
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Laminar Sublayer
+
+Buffer Iayer
+
+Outer Turbulent —=
+layer
+
+Inner Turbulent
+Layer
+
+— channel wall
+J1
+
+Yo
+
+ 
+
+I N
+channel center
+
+- 6T -
+
+ 
+ 
+
+-16 -
+
+The boundary conditions are given by equations (2) and (3). As was done
+in the case of the pipe system (reference 1) the boundary value problem
+denoted by equations (13), (2) and (3) was separated into two somewhat
+simpler boundary value problems whose solutions can be superposed to yield
+the solution of the original problem. The two boundary value problems
+
+to be considered are,
+
+uM Hd [aver]
+r
+
+Up ¥ °s ve, dr
+d
+= (r =r5) =0 (1k)
+
+t(r = rq) = td;
+
+u(r) L (4)
+
+- To \dA/o = ile + €) a
+Up Ye, dr dr
+
+(15)
+)
+
+1
+TN
+B18
+
+dq
+TG (r = rg)
+
+t(r = rg) = td,
+Equations (14) represent a flow system with a volume heat source but with no
+plate~wall heat flux, and equations (15) represent a flow system without a
+volume heat source but with a uniform plate-wall heat flux. The superposition
+
+of the solutions of (14) and (15) yields the solution of the problem defined
+ 
+
+ 
+
+-17 -
+
+by equations (13), (2) and (3), the sum of reference temperatures tq) and
+tdo being equal to the reference temperature tao. The problem defined by
+equations (15) has already been analyzed by others (see Martinelli,
+reference 2). The solution of equations (14) is outlined and evaluated in
+the following paragraphs.
+
+The first integration of equations (14) expressed in terms of the
+
+radial heat flow yields,
+
+le
+
+= Wro Xan - Wren (16)
+
+where n £ + . The evaluation of the integral in equation (16) is presented
+in Appendix 23 the radial heat flow profiles for various Reynolds moduli are
+graphed in Figure 2.
+
+The second integration of the differential equation of (14), yielding
+the desired temperature solution, was accomplished layer by layer utilizing
+the hydrodynamic relations listed in Table 1 and the radial heat flow
+expressions developed in Appendix 2. The details of the procedure were
+presented in the previous analysis for the pipe system (reference 1). The
+resulting radial temperature profiles expressed in dimensionless form were
+
+determined as functions of Reynolds and Prandtl moduli; some typical radial
+
+temperature profiles are given in Figures 3 and 4.
+
+ 
+
+3, Note, in the superposition process, all temperatures are
+expressed as differences.
+dA
+Wrg
+
+~-0.
+
+-0.
+
+-0.
+
+-0.
+
+-0.
+
+-0.
+
+-0.
+
+-0.
+
+-0.
+
+-0.
+
+-0
+
+ 
+
+20
+
+ 
+
+ 
+
+18
+
+ 
+
+of
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Re = 5000 \L
+’ / ~~
+1 SN
+| Re = 10,000 N
+0 ~ ~_x_Re=100,000 \
+[ JZ SN | \
+nz NON
+/ NN
+06 / N\
+/ \
+04 / NN
+
+n
+
+Fig. 2. Dimensionless Radial Heat Flow Profiles in a Parallel Plates System with no Wall
+
+Heat Transfer
+
+1.0
+
+-8l-
+ 
+
+-19 -
+
+UNCLASSIFIED
+
+a8 ORNL-LR-DWG-178
+
+ 
+
+ 
+
+44
+
+ 
+
+ 
+
+40
+
+y AN
+
+. \
+Pre0.0i—"\
+
+28
+
+t -t \
+
+—k X 103 24
+
+Wr, \
+
+k
+20 \
+y N\A
+
+ 
+
+AA
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+12 NG
+8 NL
+A
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+~~! AN
+: — NU
+TN gprs 10
+% 0.14 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0
+
+n
+Fig. 3. Dimensionless Radial Temperature Distributions Within a Fluid Flowing Between
+Parallel Plates with Insulated Plates for Several Prandtl Moduli and Re=10,000
+ 
+
+-20 -
+
+UNCLASSIFIED
+ORNL-LR-DWG-179
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Re=5000
+
+C
+
+ 
+
+ 
+
+\
+
+ 
+
+ 
+
+Ne 10,000 \
+\
+
+ 
+
+NN
+
+ 
+
+NL
+
+ 
+
+Nel \
+
+>
+—-
+©
+[)
+w
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Re=100,000
+N° \L \
+
+ 
+
+ 
+
+TS NL
+
+ 
+
+I~
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+~~ N
+NN
+4 —Re=1,000,000 Rh a
+% 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1.0
+
+n
+
+Fig. 4. Dimensionless Radial Temperature Distributions Within a Fluid Flowing Between
+Parallel Plates with Insulated Plates for Several Reynolds Moduli and Pr=0.04
+ 
+
+-21 -
+
+The difference between the plate wall temperature and the mixed-mean
+
+fluid temperature was obtained by evaluating the integral
+
+=): ®  o
+
+ah. La i t
+4 : “rio - ;
+< \ |, Xia
+
+ 
+
+5 is . {0
+The dimensionless temperature difference, to ~ tm , is graphed as a function
+
+2
+
+Wry
+
+ 
+
+of Reynolds and Prandtl moduli in Figure 5. k
+
+The superposition of solutions of the boundary value problems (14) and
+(15) yields the more general boundary value problem defined by equations (13),
+(2) and (3). In the superposition process, all temperatures are expressed
+as temperature increments above datum temperatures. The radial temperature
+distribution above the wall temperature, centerline temperature, or mixed-
+mean fluid temperature for the composite boundary value problem defined by
+(13), (2), and (3) is obtained by adding the radial temperature distributions
+above the wall temperatures, centerline temperatures, or mixed-mean fluid
+temperatures, respectively of boundary value problems (14) and (15). Also,
+the rise in mixed-mean fluid temperature, at some point in the established
+flow region of the parallel plates system, above its value at the entrance
+for the problem defined by (13), (2) and (3) is obtained by adding the
+corresponding temperature rises for problems (14) and (15). The solution of
+boundary value problem (15) expressed in terms of Nusselt, Reynolds, and
+
+Prandtl moduli as developed by Martinelli is presented in Appendix 3.
+ 
+
+-22 =
+
+UNCLASSIFIED
+
+ 
+
+ 
+
+ORNL — LR—DWG, 180
+{
+
+IY
+
+ 
+
+- ~ O (Pr oo
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+10 | | Ld
+
+ 
+
+l
+
+ 
+
+1
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+LLIN
+
+|
+
+ 
+
+ 
+
+ 
+
+102 2 4 6 8403 2
+
+Fig. 5. Dimensioniess Differences Between the Wall
+
+Functions of Reynolds and Prandtl
+
+4
+
+Moduli
+
+6
+
+for
+
+840% 2
+Re
+
+Parallel
+
+4 6 8405 2 4 6
+
+Plate System (Walls Insulated),
+
+8406
+
+and Mixed —Mean Fluid Temperatures as
+ 
+
+ 
+
+- 93 ~
+
+DISCUSSION
+
+The forced convection analyses presented here pertain to the parallel
+plates system. These analyses may also be used to estimate heat transfer in
+annulus systems where the inner to outer wall radius ratio does not differ
+significantly from unity; under such circumstances, the annulus satisfactorily
+approximates a parallel plates system.
+
+The present report is the second one in a Planned series which are to
+explore the experimental as well as theoretical aspects of volume-heat-source
+forced convection. Two specific research activities have almost been com-
+Pleted and are to be reported in the near future. One activity involves an
+experimental study of volume-heat-source forced convection in a pipe system
+in the laminar and turbulent flow regimes; comparisons are made with the
+previously developed theory. Another activity is a mathematical study of
+volume -heat-source forced convection in the laminar regime including a
+
+temperature dependent fluid viscosity.
+ 
+
+- oh -
+
+APPENDIX 1
+
+HYDRODYNAMIC RELATIONS FOR TURBULENT FLOW
+IN A SMOOTH PARALIEL PILATES SYSTEM
+
+The hydrodynamic relations given in Table I characterize turbulent
+flow in a smooth channel (parallel plates system). The manner in which this
+table was developed is illustrated below for the buffer layer.
+
+The turbulent shear stress equation is expressed as
+
+T a
+> = (2 +€) & (a)
+
+In the buffer layer, the shear stress is very closely equal to the wall
+
+shear stress, Tos and the velocity distribution is given by,
+ut = -3.05 + 5.00 1n y* (b)
+Upon differentiating equation (b) it can be shown that
+
+5
+xP (c)
+
+Jy
+
+gig
+
+Upon substituting equation (c) and the wall shear stress in equation (a) and
+
+solving for the eddy diffusivity, there results,
+
+T
+ie - 1 (a)
+
+J
+
+d
+
+| ™
+wi
+ 
+
+ 
+
+-25 -
+
+Two relations describing the pressure drop and wall shear stress in the
+
+parallel plates system are,
+
+ap _ Sv vA
+
+ax" Im TE (e)
+and AD
+
+To = 2x To (f)
+
+where the quantity, hry, is sometimes called the equivalent duct diameter
+and, § , is the friction factor which is uniquely related to the Reynolds
+
+modulus. Upon substituting equation (e) into equation (f) there results,
+
+|2-[5w (g)
+
+The Reynolds modulus for the parallel plates system (based on the equivalent
+
+diameter) and the friction factor relation are expressed as,
+
+_ 4 roup
+2
+
+Re (h)
+
+023 for 5 x 107 <Re < 10° (1)
+Re*2
+
+ 
+
+3
+8
+Upon substituting equations (g), (h), and (i) into equation (4) and
+simplifying, there results,
+
+= = 0.0076 Re'7n-1 (3)
+
+where n = JL
+ 
+
+At
+
+- 26 -
+
+The thickness of the buffer layer can be obtained from the defining yt
+
+relation,
+y] To
+ye =e (k)
+
+ 
+
+Upon substituting equations (g), (h), and (i) into equation (k) and
+
+simplifying, there results,
+
+no 26:35 0)
+
+Re?
+
+The buffer layer thus extends from n = #2243 (corresponding to y* = 5)
+Re*
+to n = 189 (corresponding to y* = 30).
+Red
+ 
+
+-o7 -
+APPENDIX 2
+
+RADIAL HEAT FLOW RELATIONS
+
+The turbulent velocity profile in the radial heat flow expression,
+equation (16) may be represented satisfactorily by two layers (a laminar
+layer and a turbulent core) rather than the four layers which are used in
+the temperature analysis. The laminar layer, which is postulated to extend
+
+to yt = 12, is represented by the linear velocity expression,
+ut = yt (m)
+
+or u = 0.00575 um Re*8 n for 0 <n< ale. (n)
+Re*
+Equation (m) was reduced to equation (n), with the aid of equations (g),
+(h), and (i). The turbulent layer, which is postulated to extend from
+yt = 12 to the channel center, is represented by the one seventh power law
+
+expression,
+
+1/7 (0)
+
+u = Bon
+
+where Bg is related to the mean velocity on the basis that the sum of the
+volumetric flow rates in the laminar layer and the turbulent core is equal to
+
+the total volumetric flow rate; this relation is obtained as follows:
+ 
+
+- 28 -
+
+1, To
+2ro lug =2 uldr+ 2 ular (p)
+0 ry,
+or 1 ny,
+we [ dn + u dn
+ny, o
+
+Lg, B - 0/1] + 0.00575 ug Red 21” (a)
+
+_ .8 2?)
+Tos Bg = x 0.00575 Re"® IL”) uy
+
+ 
+
+= fluy (r)
+L (1 - ny /7y
+
+where ny, is the dimensionless thickness of the laminar layer equivalent
+to y* = 12.
+The radial heat flow in the laminar layer is obtained by substituting
+
+equation (n) into equation (16) and integrating,
+
+n
+
+Ble
+
+2/ 0.00575 Renan -eon
+
+ 
+
+=
+Mio
+
+0.0115 o..8 2 _ on
+-29
+
+The radial heat flow in the turbulent layer is obtained by substituting
+
+equations (0) and (r) into a modified form of equation (16) (limits are nf,
+
+ 
+
+to n),
+a (2)
+3 = (&), -2(n - ny,)
+Wro
+2
+“ rs 0:00575 8 _2 |
+dA 0:007) pe: n
+, 17] E 8/7 _ ng 0/1) Slang) (8)
+
+ 
+
+ 
+
+=
+H
+lo}
+
+(1 - 7;
+
+)
+
+Equations (s) and (t) are graphed in Figure 2 as functions of Reynolds
+
+modulus.
+ 
+
+- 30 -
+
+APPENDIX 3
+TURBULENT FORCED CONVECTION IN A PARALIEL PLATES
+
+SYSTEM WITH A UNIFORM WALL-HEAT-FIUX BUT NO
+VOLUME HEAT SOURCES WITHIN THE FIUID
+
+A list of some of the heat and momentum transfer analogy solutions given
+in the literature can be found in reference 1. Martinelli's solution for a
+parallel plates system is graphed in Figure 6 in terms of Nusselt, Reynolds,
+and Prandtl moduli. The Nusselt modulus can be expressed in terms of the
+
+wall-fluid temperature difference and the wall heat flux (these quantities
+
+arise in boundary value problem (15) ),
+
+ 
+
+ 
+
+day
+Nu = h bro - (3), To (uw)
+k (to = tm)k
+
+where h is the heat transfer conductance or coefficient.
+ 
+
+- 31 -
+
+UNCLASSIFIED
+ORNL -LR-DWG. 184
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+8 4 V \
+
+— / « —
+° < LN vd 7
+. / Loo A | A
+
+I VA2% he 11
+2 / AN / - > pd
+
+gs vd 4 yd pd oS yd
+2 / 7 Sz R /
+
+10° JT TT oo! Pa
+el 21 / ) od vd pd ot” . Pd
+FHA oA
+
+- 1 P
+2 7 oo A CL _ A
+
+/ 1]
+
+0 _
+is _
+4
+2
+1 L ENE l Pil pil ill
+10° 2 4 6 840% 2 4 6 840° 2 4 6 84cf 2 4 6 8,4¢
+
+Re
+
+Fig. 6. Nusselt Modulus as a Function of Reynolds Modulus for Turbulent
+Between Parallel! Plates for Several Prandtl Moduli.
+
+Heat Transfer
+ 
+
+y
+| - 30 -
+Lo
+
+REFERENCES
+
+1. Poppendiek, H. F. and Palmer, L. D., "Forced Convection Heat
+In Pipes with Volume Heat Sources Within The Fluids,"
+
+ORNL-13%95.
+
+2. Martinelli, R. C., "Heat Transfer to Molten Metals," Trans. Am.
+Soc. Mech. Engr., 69, 1947, pp ok7-959.

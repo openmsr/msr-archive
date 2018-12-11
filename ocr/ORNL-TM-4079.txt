@@ -1,0 +1,4257 @@
+ 
+
+TM-4079
+
+-
+Zz
+ol
+oO
+
+ 
+
+FORCED-CONVECTION
+-TRANSFER MEASUREMENTS WITH
+
+A MOLTEN FLUORIDE SALT MIXTURE
+
+HEAT
+
+FLOWING IN A SMOOTH TUBE
+
+J. W. Cooke
+
+B. Cox
+
+ 
+
+ 
+
+ 
+
+ 
+
+il
+
+8
+|
+|
+i
+|
+
+i
+
+NAL LABORATORY
+
+|
+i
+
+FOR THE U.S. ATOMIC ENERGY COMMISSION
+
+i
+i
+
+ATIO
+
+|
+|
+|
+|
+|
+
+RBIDE CORPORATION
+
+|
+|
+|
+|
+
+GE N
+
+RID
+
+ETE RTE
+
+OAK
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+This report was prepared as an account of work sponsored by the United
+States Government. Neither the United States nor the United States Atomic
+Energy Commission, nor any of their employees, nor any of their contractors,
+subcontractors, or their employees, makes any warranty, express or implied, or
+assumes any legal liability or responsibility for the accuracy, completeness or
+usefulness of any information, apparatus, product or process disclosed, or
+represents that its use would not infringe privately owned rights.
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+”
+
+[4
+
+Fil
+
+.
+
+Contract No. W-T405-eng-26
+
+Reactor Division
+
+J. W. Cooke
+B. Cox
+
+——
+i.
+
+ORNL-TM-40T79
+
+FORCED-CONVECTION HEAT-TRANSFER MEASUREMENTS WITH A MOLTEN
+FLUORIDE SATT MIXTURE FLOWING IN A SMOOTH TUBE
+
+ 
+
+ 
+
+ 
+
+NOTICE
+
+ 
+
+This report was prepared as an account of work
+sponsored by the United States Government. Neither
+the United States nor the United States Atomic Energy
+Commission, nor any of their employees, nos any of
+their contractors, subcontractors, or their employees,
+makes any warranty, express or implied, or assumes any
+legal liability or responsibility for the accuracy, com-
+pleteness or usefulness of any information, apparatus,
+
+ 
+
+would not infringe privately owned rights.
+
+product or process disclosed, or represents that its use |
+
+ 
+
+ 
+
+MARCH 1973
+
+QAK RIDGE NATIONAL TABORATORY
+
+Oak Ridge, Tennessee 37830
+operated by
+UNION CARBIDE CORPORATION
+for the
+
+U. S. ATOMIC ENERGY COMMISSION
+
+VIASTER
+
+PISTRIBUTION OF THIS GOCUMENT IS ONLIM
+
+ 
+ 
+
+ 
+
+  
+ 
+
+ 
+
+ 
+ 
+ 
+
+"
+
+on
+
+Fa)
+
+«)
+
+iii
+CONTENTS
+
+Abstract .
+
+Introduction . . « « vv vv vt i i he he ee ee eee ee
+Description of the Apparatus . . . . . . +. ¢ « « « « «4 eo ou
+Operating Procedures . « . + o «= + « o « + o « o « + o +o « + 0 o
+Calculations .
+
+Results . . . .
+
+Discussion . « « « « « + + « «+o +.
+
+Conclusions « « « ov « 4 «oo 4 te 4s 4 ee es ee eee eee
+Acknowledgments . . . LL 0 0 0 4 he hh he ee ee ee ee es
+References . . . . « « vv 0 tt tt i i ee hee ee eee ees
+Appendix A — Additional Details of the Experimental System . . . .
+Appendix B — Experimental Data . + + «¢ ¢« «vo « ¢ « « oo so 0 oo
+Appendix Cc — Computer Program . . . +. « «4 0 4s ee ev ee ae
+
+Appendix D — Chemical Analyses and Physical Properties of the Salt
+
+11
+15
+16
+24
+27
+27
+27
+29
+37
+43
+25
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+[3]
+
+”
+
+N
+
+£)
+
+FORCED-CONVECTION HEAT-TRANSFER MEASUREMENTS WITH A MOLTEN
+FLUORIDE SALT MIXTURE FLOWING IN A SMOOTH TUBE
+
+J. W. Cooke
+B. Cox
+
+ABSTRACT
+
+Heat-transfer coefficients were determined experimentally for
+a proposed MSBR fuel salt (LiF-BeFy-ThF,-UF,;67.5-20.0-12.0-0.5
+mole %) flowing by forced convection through a 0.18-in.-ID hori-
+zontal, circular tube for the following range of variables:
+
+Reynolds modulus Loo — 30,600
+Prandtl modulus bh — 14
+
+Average fluid temperature (°F) 1050 — 1550
+
+Heat flux (Btu/hr.ft?) 22,000 — 560,000
+
+Within these ranges, the heat-transfer coefficient was found
+to vary from 320 up to 6900 Btu/hr-ft°.°F (Nusselt modulus of 6.5
+to 138). Correlations of the experimental data resulted in the
+equations:
+
+N. = 1.89 [N
+
+Nu Pe LL (p/L)1°-2%2 (n/ug)®t* ,
+
+with an average absolute deviation of 6.6% for Npe < 1000;
+_ 2/3 _ 1/ 3 0.14
+Ny, = 0-107 (No = — 135) Ny (n/ng) ’
+
+with an average absolute deviation of 4.1% for 3500 <N, < 12,000;
+and . Re ’
+
+oa Oss. 1/ 3 0.14
+My = 0.0234 NRe 0, n/ig)
+
+2
+
+with an average absolute deviation of 6.2% for Np. > 12,000.
+
+Keywords: Heat transfer, fused salts, forced convection,
+heat exchangers, fluid flow, correlations.
+
+INTRODUCTION
+
+The design of molten salt reactors requires detailed information
+
+about the transport properties of the proposed fuel, coolant and blanket
+mixtures. Although the molten salts generally behave as normal fluids
+
+with respect to heat transfer, *? the possibility of unexpected effects,
+ 
+
+ 
+
+such as nonwetting of metallic surfaces or the formation of low-conductance
+surface films, indicates that heat-transfer measurements for specific re-
+actor salts are needed.® This report describes heat-transfer experiments
+with a proposed reactor fuel of mixed fluoride salts (LiF-BeFpThF,-UF,;
+67.5-20.0-12.0-0.5 mole %). The technique employs forced convection of
+the liquid salts through a smooth thin-walled Hastelloy N tube. Resist-
+ance heating supplies the tube with a uniform heat flux. This method is
+particularly well suited to the molten salt system because the electrical
+resistance of the molten salt is very large compared with that of the
+metal tube. Furthermore, the resistance of Hastelloy N remains nearly
+constant over the entire temperature range of the measurements, which
+simplifies the achievement of an axially uniform heat flux. In addition,
+a constant heat capacity of the molten salt in the observed temperature
+range makes possible several convenient assumptions in the calculation of
+
+local fluid bulk temperatures.
+
+DESCRIPTION OF THE APPARATUS
+
+The apparatus for studying heat transfer with the molten salt system
+is shown schematically in Fig. 1 and in the photograph, Fig. 2. - Molten
+salt flows by means of gas pressure through a small diameter, electrically
+heated test section. The flow of molten salt alternates in direction as
+pressure from an inert gas supply is added to either of two storage ves-
+sels located at each end of the test channel. Each 6-gal salt reservoir
+is suspended from a weigh cell whose recorded signal indicates the flow
+rate. The flow of salt reverses automatically by the action of solenoid
+valves that control the flow of inert gas to the reservoirs. The rate of
+flow of the salt my be varied from 0.25 to 1.7 gal/min, emptying a
+reservoir in from 3 to 20 minutes.
+
+The weigh cell circuit shown in Fig. 3 illustrates the electrical
+and mechanical systems that control the flow of gas and thereby the flow
+of molten salt. A second suspension system maintains tension on the test
+section, to prevent it from sagging, by means of counter weights connected
+by flexible cables. The test section consists of a smooth Hastelloy N
+tube, 24.5 in. long, 0.25-in. outside diameter, and 0.035-in.-wall
+REVERSE FLOW CONNECTING TUBING
+
+©) PU
+
+ORNL-DWG 68-12942
+
+ARGON
+SUPPLY
+
+ 
+
+ 
+
+  
+
+r.: nc REGULATOR
+
+ 
+
+    
+   
+ 
+
+ 
+
+ 
+
+ 
+
+= oo
+WEIGHT CELLS-TO |
+CYCLE CONTROL |
+t
+¥
+
+LOW VOLTAGE
+TRANSFORMER
+
+YY XV Y
+
+pom
+
+WATER COOLERS
+
+— THERMOCOUPLES
+
+. (24)ONE INCH CENTERS
+
+INSULATOR 5
+
+ 
+ 
+
+10 PRESSURE
+) BUILDING GAGE
+: VENT
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 1.
+
+TEST SECTION
+
+MIXING CHAMBER
+
+le— SALT TANK
+
+SALT TANK —e
+
+ 
+
+ 
+
+X(Er—ELECTRIC VALVE
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ELECTRIC HEATERS
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+—
+
+Schematic diagram for determining the heat-transfer
+characteristics of molten salt by forced convection.
+
+ 
+ 
+
+PHOTO 76387
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ewed from the same aspect
+
+i
+
+Photograph of the apparatus v
+1.
+
+ig.
+
+2.
+
+Fig.
+as that of PF
+n «©
+
+WEIGH CELL
+
+ 
+
+ 
+
+ 
+
+ 
+
+TANK
+
+ 
+
+ 
+
+ 
+
+ 
+
+. TANK
+
+oN o
+
+~~
+
+RHEOSTAT
+
+  
+   
+
+MECHANICAL
+DRIVES ~~
+
+HONEYWELL
+RECORDER CONTROL
+J
+
+ 
+
+ 
+
+VIDAR
+
+ 
+
+ 
+
+CAM
+
+SOLENOID
+VALVE
+
+ORNL-DWG 72- {1510
+
+=
+|
+-
+|
+|
+|
+
+GAS
+
+Fig. 3. Weigh cell circuit for molten salt heat-transfer system.
+
+    
+
+”°
+
+SOLENOID
+VALVE
+
+Saag ry
+
+ 
+ 
+
+thickness and is resistance heated with a 60 Hz ac power supply. A
+
+detail of the mixing chambers located at each end of the test section is
+shown in Fig. A-1, Appendix A. The electrodes connecting the test section
+with the power circuit serve also as end plates of the disk-and-donut
+mixing chambers. The power circuit to the test section is shown in Fig. 4.
+The electrical power to the test section is supplied by a 4ho/25 v, 25 kva
+
+transformer and is measured with a General Electric watt transducer, also
+
+‘shown in Fig. 4. The test section is insulated with a 3-in.-thick layer
+
+of vermiculite powder contained in a sheet metal tray. The salt reservoirs
+and connecting tubes are heated by auxiliary clamshell and Calrod heaters
+placed in positions indicated in Fig. 1. A typical heater circuit for an
+auxiliary heater is depicted in Fig. 5.
+
+The inlet and outlet salt temperatures are measured by four, 4O-mil-
+diam, Chromel-Alumel sheathed thermocouples inserted into two wells in
+each mixing chamber (Fig. A-1). The temperature distribution along the
+test section is measured by a series of 24 Chromel-Alumel thermocouples
+(0.005-in.~diam wire) spot welded at 1-in. intervals to the outside tube
+wall. The scheme for attaching these thermocouples is shown in Fig. A-2.
+
+Details of a salt reservoir can be seen in Fig. A-3. The interior
+of these tanks as well as the test section and the mixing chambers are
+stress relieved and hydrogen fired before they are assembled.
+
+A data acquisition system provides for the automatic monitoring of
+the temperatures; record is made by a paper printout and a paper tape
+punch. In this system a multichannel Vidar data recorder reads emf
+signals from each thermocouple, from the weigh cells, and from the power
+circuit in a sequential switching arrangement known as a "crossbar
+scanner." The manufacturer claims an accuracy of better than +0.5°F
+for the Vidar system. The data recording equipment is shown schematically
+in Fig. 6 and in a photograph in Fig. 7.
+
+The weigh cell and wattmeter celibration curves and a list of per-
+tinent experimental equipment may be found in Appendix A as Fig. A-L,
+Fig. A-5, and Table A-1, respectively.
+
+C.
+ 
+
+ 
+
+   
+
+oH "
+
+£2\0=5A
+
+ 
+
+ 
+
+ 
+
+  
+
+[4
+
+ORNL-DWG 72-{45H
+
+PANELBOARD
+
+= FRAME GROUND
+
+ 
+
+ 
+
+ 
+
+[SIGNAL
+TO VIDAR
+
+ 
+
+ 
+
+ 
+
+J ]
+POTENTIAL
+POWER TRANSFORMER TRANSFORMER
+
+fr ——1 L od LV
+| 25v | = 1-3 |
+| 440V ' A | CURRENT ov | WATTMETER
+| 25kva 3 £000 A | TRANSFORMER 13 |
+
+25kvA T
+| | 1 5 _
+Lee J WATTMETER 3
+
+HC EXPERIMENT RANGE SWITCH
+TEST SECTION \ rues souo }
+BUILDING GROUND
+
+ 
+
+Fig. 4. Test-section power circuit for molten salt
+heat-transfer experiment.
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+POWER CIRCUIT
+#HSVAC
+
+ORNL-DWG 72-11542
+
+(rm ees,
+
+NEUTRAL
+
+ 
+
+ 
+
+ 
+
+ 
+
+      
+
+0-150V Eil
+
+RELAY
+
+ 
+
+HEATER
+
+Fig. 5.
+transfer experiments.
+
+HOT
+
+EVI=VOLTMETER
+Eil=AMMETER
+K= RELAY
+
+VARIAC
+
+0-10A
+
+I — —< INSTRUMENT
+= POWER
+
+. | TEMPERATURE
+| CONTROLLER
+
+6
+
+Typical heater circuit for molten salt heat-
+ 
+
+ot
+
+ah
+
+ 
+
+ORNL-DWG 72-11513
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+DIGITAL
+PRINTER
+A
+TE REF. VIDAR
+CUNNINGHAM
+JUNCTION > SCANNER » DIGITAL
+COMPENSATOR — VOLTMETER
+} |
+\ .
+{ | Lo TAPE
+SEQUENTIAL PUNCH
+. TIMER
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 6. Thermocouple circuit for molten salt heat-transfer system.
+
+4
+
+ 
+ 
+
+ 
+
+ 
+
+”
+ny
+~
+0
+~
+g
+RA
+
+10
+
+ 
+
+ment .
+
+ip
+
+Photograph of data recording equ
+
+7
+
+ 
+ 
+
+11
+
+OPERATING PROCEDURES
+
+-
+
+: In preparation for the addition of the molten salt mixtures, the
+
+system including the test section is heated to the desired temperature
+
+4
+
+level above the melting point of the salt mixture. Approximately 165 1b
+of the molten salt is then introduced into one of the reservoirs by the
+force of argon gas pressure. Salt is forced back and forth through the
+test section as the operation of the apparatus is tested — for leaks,
+blockages, thermocouple and data recording functioning, etc. After the
+initial checkout procedure, the system is put on a standby mode by vent-
+ing the gas pressure to the atmosphere and allowing the salt to siphon to
+equal levels in both reservoirs. The standby mode is used to protect the
+test-section thermocouples by minimizing the heating of the test section.
+Before each run, temperatures in the test section are raised to about
+1000°F over a period of 45 minutes and the salt flow is reestablished. A
+
+fixed flow rate is established and power to the test-section heater is in-
+
+ 
+
+creased to the desired heat flux. When the temperatures indicate steady-
+
+x state conditions, all parameters — power input, flow rate, and tempera-
+
+«
+
+tures — are continuously recorded. The flow of salt is reversed when one
+"reservoir is nearly empty, and the heat flux is momentarily reduced to
+about half the operating value to prevent a temperature excursion in the
+test section at the time of zero flow. The upper range of flow rates is
+limited by the time required to empty one of the reservoirs. Whenever
+the temperature exceeds the desired level, the system is allowed to cool
+by reducing the power to the test section and other appropriate heaters.
+Periodic calibrations of radial heat losses were made by measuring
+the power required to maintain an empty test section in an isothermal
+condition as a function of temperature level. The information furnished
+by this calibration is used in each run, when an isothermal check of the
+
+test-section thermocouples is obtained at the desired temperature level
+
+ 
+
+ 
+
+”»
+
+*
+This procedure resulted in several salt leaks when a number of power
+
+L failures occurred during the standby condition. Melting of the confined
+| salt was invariably accompanied by rupture of the thin-walled tubing due
+z to the expansion of the salt upon partial melting. A better standby pro-
+\G/ cedure would be to drain the salt into one reservoir, allowing unrestrained
+expansion of the salt during melting if an unexpected freeze should occur.
+
+ 
+ 
+
+ 
+
+12
+
+with the hot salt flowing and only enough heat added to the test section
+to equal the radial heat loss. In Fig. 8, typical test-section thermo-
+couple readings from an isothermal run show a scatter band of +4 °F about
+the average outside wall temperature. The sheathed thermocouples in the
+‘mixing chambers read slightly higher during isothermal runs and are be-
+lieved to be more accurate. Their readings, therefore, provide the basis
+for standardization and the tube wall readings are corrected to this
+standard.
+
+Extensive tests were conducted to insure the reliability of the
+apparatus and experimental procedures. The first test-section tube pro-
+duced erratic axial temperature patterns which did not improve with more
+thermal insulation of the test section. Subsequently, the anomalous axial
+temperature profiles were traced to the test section, in which a hole had
+burned through the wall and had been repaired by welding. Excessive weld
+material protruding into the tube was thought to have disturbed the tem-
+perature and velocity profiles. Replacement of the test section eliminated
+the difficulty.
+
+Other possible sources of error were investigated during the search
+for the cause of the temperature irregularities. Electrical conduction
+through the molten salt would result in additional heating of the salt,
+but the ratio of the resistivity of the salt to that of the test section
+is greater than 2500, indicating very little heat generated in the salt in
+this manner. Additional calculations of the radial temperature distri-
+bution confirmed that not more than 0.2% of the power was expended by
+electrical conduction in the salt.
+
+Temperature variations due to free convection are believed to be
+larger than those attributable to internal heating; but according to the
+criterion of Shannon and DePew,® free convection in the horizontal test-
+section position is insignificant compared with forced convection in the
+range of Reynolds numbers described in this work.
+
+As an additional check of natural-convection effects, the reactor
+fuel salt experiments were repeated with the test section anchored in a
+
+vertical position while other equipment arrangements and operational pro-
+cedures remained unchanged. The object of the change was to compare the
+
+effects of free convection in the vertical and horizontal positions. A
+, tube outside wall temperature (°F)
+
+t
+w
+
+8
+
+§
+
+1300
+
+ 
+
+a ” a
+
+ORNL DWG 69-11028
+
+5 10 15 20
+x, distance from inlet (in.)
+
+Fig. 8. Tube wall thermocouple readings during isothermal salt flow.
+
+ 
+
+°
+
+£1
+
+ 
+ 
+
+1h
+
+crack developed in one of the piping connections to the test section
+
+“after 8 runs and repairs were not attempted. However, the results of
+
+the vertical runs did not show any difference in the effect of free con-
+vection as related to the orientation of the test section. The data are
+presented later in the report and in Appendix B.
+
+The possibility of heat conduction losses to the electrodes at the
+ends of the test section prompted calculations to be made based on the
+conservative assumptions of maximum heat flux and a minimum Reynolds |
+number. The results of these calculations show that the net heat con-
+duction in the axial direction is less than 0.1% of the total heat gen-
+erated in the test section at a distance of 0.25 in. from the entrance.
+
+The electrical resistivity of the Hastelloy N test-section tube
+varies less than 1% in the temperature range of. 1000 to 1500°F and the
+heat capacity of the salt varies less than 5% over the same temperature
+range. The variation of the radial heat loss along length of tube is
+less than 10% and the heat loss itself is less than 5%. A constant axial
+voltage drop measured along the test section verified the uniformity of
+
+the heat flux generated in the test-section wall and provided a check of
+
+the wall thickness and tube radius variation as a function of its length.
+
+Experiments conducted with a well-known heat-transfer salt (HTS)™
+provided a final test in the new test section of the experimental pro-
+cedure. EFarlier experiments® showed that HTS data are well correlated
+by standard heat-transfer equations. The experiments with HTS in the
+present system demonstrated that the outside wall temperatures remained
+parallel to the mean salt temperature over half of the test-section length,
+indicating fully developed flow and a constant heat-transfer coefficient.
+
+In 11 runs with HIS, the experimentally determined values of the heat-
+transfer coefficient were compared with those predicted by standard cor-
+relations. Ten of the values of the heat-transfer coefficient were
+within 13% of that predicted by the Sieder-Tate correlatior® and the other
+
+value was within 25%. Before the system was charged with reactor salts,
+
+the HTS was removed by extensively flushing with water and drying in
+
+heated vacuum for 10 days.
+
+ 
+
+"HTS: KNOs-NaNO,-NaNOs (44-49-7 mole 9).
+ 
+
+ 
+
+ 
+
+0H
+
+#»
+
+15
+
+CALCULATIONS
+
+The local coefficient of forced-convective heat transfer is defined
+by the equation
+(a/A)
+h = Xx
+
+X =
+(ty = t,)
+
+’ (1)
+
+where
+h = coefficient of heat transfer, Btu/hr-£t? «°F; h,, at position x
+along tube;
+g = heat-transfer rate to fluid, Btu/hr;
+A = heat-transfer (inner) surface area, ft°;
+t = temperature, °F; tp, fluid mixed mean at any position; ts,
+
+inner surface of the tube at any position x; t;;, outer surface
+of the tube at any position x.
+
+Beyond the thermal and hydrodynamic entrance regions, h, reaches an asymp-
+totic value. For a constant heat flux, (a/A),, this limiting value will
+
+occur when (tg - t) reaches a constant value.
+x
+
+The inside tube wall temperature is related to the measured outside
+
+tube wall temperature by the equation
+
+q+ q (r. )? r. 1 q r
+T w w L w
+
+r Tr
+
+s s
+
+ 
+
+ 
+
+- 2 _ 2
+2 hk (r,) (rg) 2 2 mk
+where
+k = thermal conductivity of fluid, Btu/hr.ft.°F; k , thermal
+conductivity of tube;
+L = test-section length, ft;
+
+test-section tube radius, ft; r
+outer surface;
+
+ss inner surface; ry,
+
+this is the solution to the one-dimensional steady-state heat conduction
+equation with a source term and a heat loss, qr at the outside wall.’
+The only variable on the right-hand side of Eq. (2) is the thermal con-
+ductivity of the metal wall, k , which remains nearly constant over small
+temperature rises along the tube. Thus, when the temperature profiles
+t, and th are parallel, the fluid flow in the tube is essentially fully
+developed.
+ 
+
+16
+
+For most of the measurements, the heat gained by the fluid in
+
+traversing the test section was calculated by the equation
+
+q= veo (ty 6 = tn, 1) ’ (3)
+in which
+Co = specific heat of fluid at constant pressure, Btu/lb-°F,
+vw = mass flow rate, lb/hr,
+
+and subscripts
+outlet
+inlet.
+
+0
+
+i
+
+For the later measurements (Runs 210 through 220), the heat gained by the
+fluid was determined from the electrical heat generation in the test
+section corrected for the calibrated heat loss. By calculating the heat
+input in this manner, the influence of the uncertainties in measuring the
+fluid mixed-mean inlet and outlet temperatures can be reduced.
+
+The computer program used for reducing the experimental data is given
+
+in Appendix C.
+
+RESULTS
+
+Heat-transfer coefficients were determined experimentally in 70 runs
+covering the laminar, transition, and turbulent flow regimes. Ten runs
+with HTS to test the equipment are included with data shown in Appendix B.
+The physical properties and chemical analyses of the molten salt are listed
+in Appendix D, Tables D-1 and D-2, respectively.
+
+The duration of a run usually permitted time for three thermocouple
+scans to demonstrate thermal steady state. Figure 9 shows typical outside
+wall temperatures and mean fluid temperatures. A straight line is drawn
+between the mean inlet and mean outlet fluid temperatures by assuming con-
+stant physical properties of the molten salt and uniform heat transfer
+over the immer surface of the test-section wall. These assumptions are
+supported by the constant heat capacity of the molten salt in the observed
+temperature range and the constant resistance of the Hastelloy N test
+
+section mentioned earlier.
+ 
+
+ 
+
+ 
+
+*
+
+0
+
+on
+
+17
+
+ORNL-DWG 72-11517
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+® eo ®
+. ol ® eo © * ¢
+1300 —
+°
+eo
+eo ©
+o ® TUBE OUTER WALL
+* ® FLUID
+°
+1200 2
+°
+°
+. * u
+1100 _—
+- ( RUN 133, Age = 597
+& 1000
+Ww 1600
+2
+& oc Ooo og 00?
+a ce 00 000 eg 000 go
+a °
+=
+wi
+-
+1500 8
+9
+RUN 157, Ng. = 28,104
+1400 1
+1200
+® oo © oo « oo
+® © Cee, *0%e oe 0
+°
+1100
+.
+»
+RUN 186,NVg, = 4277
+1000 1
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0 5 10 ol 15 20 25
+X, DISTANCE FROM INLET (in.)
+
+Fig. 9. Axial temperature profiles for molten salt flowing in a
+smooth tube at laminar (Np = 597), turbulent (Np, = 28,104), and
+transition (Mee = 277) flow.
+
+ 
+ 
+
+ 
+
+18
+
+Three regions of N.. are shown in Fig. 9 — the laminar, transition,
+and turbulent at Nee = 597, 4277, and 28,104, respectively. The co-
+efficient of heat transfer h assumes its limiting value rapidly for
+turbulent flow; but in laminar and transition flows, a significant
+entrance region is evident. This entrance region is seen more clearly
+when h is plotted versus the distance along the test section x as in
+Fig. 10 for the transition flow run. After the thermal and hydrodynamic
+boundary layers become fully developed, h decreases to a limiting value.
+The test section is not long enough for h, to reach the limiting value
+in laminar flow. Therefore, integrated values of h over the entire tube
+length, coupled with the parameter D/L, are used in developing the lam-
+inar flow correlations; whereas, the limiting constant h values are used
+for the transition and turbulent heat-transfer correlations.
+
+Standard heat-transfer correlations for the three flow regimes are
+given in the following discussion of Egs. (4) through (8). Heat-transfer
+data from the 70 runs are then presented in the dimensionless forms of
+standard correlations for comparison using the data listed in Appendix B
+and the physical properties in Table D-1.
+
+1. For laminar, forced flow in the absence of natural convection,
+
+the equations of Sieder and Tate® and Martinelli and Boelter® are,
+
+respectively:
+
+Ny, = 1.86 [No No (D/L)IY 2 (u/ng)°** (4)
+and
+
+Ny, = 1.62 [NN (p/n) 2 (5)
+
+2. For transition region flow beyond the entrance region, a modified
+
+form of Hausen equation® is:
+
+2/8 1/ 3
+Ny, = 0.116 (Ne —- 125) NG, (w/w) . (6)
+
+3. For turbulent flow, the equations recommended in Ref. 9 and
+
+attributed to McAdams and to Sieder and Tate are respectively:
+
+N 0 0.8 i
+
+nu = 0:023 Npe Np (7)
+_ 0.8 1/3 0.12
+
+Nu = 0.027 Npe 0 (h/kg)
+1800
+1700
+1600
+1500
+1400
+
+1300
+
+h_, Local Heat Transfer Coefficient (Btu/hr.rt2.°r)
+
+xX
+
+ 
+
+ 
+
+» on
+
+5 10 15 20
+x, distance from inlet (in.)
+
+Fig. 10. Axial variation of the heat-transfer coefficient (Np, = 4277).
+
+ 
+
+61
+
+ 
+ 
+
+ 
+
+20
+
+where
+
+=
+I
+
+Nusselt modulus, hD/k, dimensionless,
+
+= Prandtl modulus, C p/k, dimensionless,
+
+of
+
+5
+
+Reynolds modulus, pVD/p, dimensionless,
+
+and
+= mean velocity of fluid, ft/hr,
+inside diameter of tube, ft,
+
+= fluid density evaluated at fluid mixed-mean temperature, 1b/£t3,
+
+TT Ov UU
+I
+
+= fluid viscosity evaluated at fluid mixed-mean temperature,
+1b/hr-ft; Hg evaluated at temperature of the inner surface of
+the tube. :
+
+Equations (4), (6), and (8) are compared with the experimental data
+in Fig. 11. The experimental results are in good agreement in the laminar
+region but are slightly below the equations representing the transition
+and turbulent regions. For example, in the range 3500 < Nee < 30,000, the
+data lie about 13% below Egs. (6) and (8). The heat-transfer data could
+not be correlated in the transition range 2000 < Nee < 4000 because of
+entrance effects that persisted over the length of the test section. The
+leminar data do not fit Eq. (5) as well as Eq. (4), as shown by comparing
+Figs. 12 and 11. Similarly, Eq. (7) provides no significant improvement
+in the correlation of the data for Np > 10,000 over that of Eq. (8)
+[compare Figs. 13 and 11].
+
+The data plotted in Figs. 11 through 13 suggest that the experimental
+data for laminar and turbulent flow can be fitted to functions of the
+form:
+
+n
+Ordirate = K No_ , (9)
+
+where K and n are dimensionless constants having different values for
+laminar and turbulent flows and the "ordinate" is the ordinate used in
+Fig. 11. Least-squares fits of the data to the form of Eq. (9) were
+carried out assuming a constant value (1/3) for the Prandtl modulus
+exponent. These fits were tried with and without a viscosity ratio cor-
+rection term. We found that when the viscosity ratio correction term
+was included, the values for the Reynolds modulus exponent, n, came
+closer to the commonly accepted values of 1/3 for laminar flow and 0.8
+for turbulent flow. The resulting equations fitting the experimental
+ 
+
+"
+
+3
+
+n
+
+"
+
+“
+
+oa HEAT- TRANSFER FUNCTION
+)
+
+Fig. 11.
+
+10°
+
+2
+<
+3
+> 2 10'
+2
+a
+2
+2
+10°
+and (8).
+
+v
+Ny, =0.116 W125) Nop > pfs
+[HAUSEN]
+
+ 
+
+21
+
+ORNL DWG 72-11514R
+
+A Vertical
+O Horizontal
+
+_ 0.8 1) 0.14
+Nyy =0.027 Np, O° Wp, (pfs)
+[SIEDER-TATE]
+
+) 0.14
+0
+
+' 1
+Nyy =1.86 [Ngq Np (O/L)] "> (p/fps)®'
+[ SIEDER~TATE]
+
+2 5 103 2 5 10% 2 S 10°
+Npe, REYNOLDS MODULUS
+
+Comparisons of the molten salt data for Egs. (4), (6),
+ 
+
+22
+
+ORNL -DWG 72-1515
+
+ 
+
+£2 1
+
+S 10
+
+[
+
+Oo
+
+=<
+
+>
+
+Ww
+
+« 5
+
+wi
+
+[TH
+
+wu
+
+Zz
+
+<
+
+x
+
++= 2 SEL CY
+5 Nyy = 1.62 [Ngg Np (OL)
+p=
+
+i DAT
+
+| 10° 2 5 10° 2 5 10%
+
+Nge » REYNOLDS MODULUS
+
+Fig. 12. Comparison of laminar flow data of molten salt with Eq. (5).
+ 
+
+ 
+
+ 
+
+»
+
+»
+
+23
+
+ORNL-DWG 72-11516
+
+A VERTICAL
+~ 0 HORIZONTAL
+
+Z
+©
++
+oO
+Z
+oD
+> 08 , 04
+x Ny, =0-023Np. W,,
+[Ia
+wn
+Zz
+<
+o
+'
+2
+wl
+I
+<-
+oO
+p.
+a
+2
+Z
+2
+
+ 
+
+10° 2 5 10% 2 5 10°
+Nge» REYNOLDS MODULUS
+
+Fig. 13. Comparison of transition and turbulent data of molten
+
+salt with Eq. (7).
+ 
+
+ 
+
+ 
+
+2k
+
+data are
+
+Ny, = 1.89 Np, Tp (D/L)P22 (fn), (10)
+
+with an average absolute deviation of 6.6% for Ny. < 1000; and
+
+Ny, = 0.0234 Ne N° (n/m, (11)
+
+with an average absolute deviation of 6.2% for Nee > 12,000.
+
+Because the data in the transition region did not follow the form
+of Eq. (9), the equation for the experimental data in this range of Np
+was obtained by adjusting the coefficient in Eq. (6), giving the following
+relation:
+
+/ Yo.
+N. = 0.107 (0 = 135) Np. (w/w),
+
+with an average absolute deviation of 4.1% for 3500 < Noe < 12,000.
+
+(12)
+
+The heat-transfer measurements made with the test section oriented in
+a vertical position to test for the possible effects of free convection
+are in good agreement with the standard correlations, except for four
+higher points (see Figs. 11 and 13). These higher points were obtained
+with downflow in contradiction to the predicted enhancement of heat trans-
+fer with upflow. Thus, a systematic thermocouple error in one of the
+mixing chambers is the most probable cause of the higher results with
+downflow.
+
+DISCUSSION
+
+The results indicate that the proposed reactor fuel salt behaves as
+a normal fluid in the range 0.5 < No, < 100 with regard to heat transfer.
+It should be noted that uncertainties in the physical properties of the
+salts reflect as great an effect on the correlations as does the un-
+certainty in the heat-transfer coefficient.
+
+Our data lie below the standard correlations in the turbulent and
+transition regions but not in the laminar region. If the deviations in
+our data were caused by low-conductance surface films or entrained gas,
+one would expect the effect to be apparent in all three regions. An un-
+
+certainty in the viscosity of the salt might explain the discrepancies in
+ 
+
+”
+
+np
+
+o
+
+25
+
+the turbulent and the transition regions since the heat-transfer function
+in the laminar region is almost independent of the viscosity. In addition,
+the lower values in the transition regime could be the result of the failure
+of the thermal boundary layer to fully develop over the length of the test
+section.
+
+The problem of boundary-layer development is most pronounced in the
+range of Reynolds number 2000 < Noo < 4000, where entrance effects
+persisted for the entire length of the test section. The same effect
+could be produced up to Nee = 5000 at higher wall heat fluxes. Figure 14
+illustrates the apparent effect of heat flux on the entrance region length.
+At No = 3762 and a wall heat flux of 2.55 X 10° Btu/hr.ft?, there is no
+region of constant heat-transfer coefficient. In contrast, temperature
+profiles at a similar Reynolds number, Neo = 3565 and the lower wall heat
+flux of O0.7h x 10° Btu/hr. ft? show a constant heat-transfer coefficient
+over most of the test-section length. Since the viscosity of the fluid
+decreases with increasing temperature, heat transfer from the tube wall
+may be exerting a stabilizing effect on the laminar boundary layer,®+2°
+thus delaying transition.
+
+Future experiments with the fuel salt should include system modi-
+
+fications so that the entrance region effects in transition flow can be
+
+better evaluated. Possible modifications would be the insertion of an
+unheated calming section prior to heat addition to permit establishment
+of the hydrodynamic boundary layer before changing the temperature pro-
+file. This would separate the two effects that now occur simultaneously.
+Another possibility would be to increase the length of the test section
+while maintaining a constant heat flux along the length. A sufficiently
+long tube might allow fully developed fiow patterns to be reached before
+
+the test-section exit.
+ 
+
+26
+
+ORNL-DWG 72-11519
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1500
+o
+oe ® eo
+0% °
+° * oo o
+® 9
+1400
+® @
+®
+e TUBE OUTER WALL
+. a FLUID
+®
+1300 .
+:
+w ®
+5 200
+{
+s
+a Nie = 3762, g/A=2.55X10° Btu/hr .t2
+id
+| ond a
+|
+mene]
+1100
+1200
+oo
+eo’ © e000 se00 000
+@
+1100 |-2
+a
+»
+2
+Ng = 3565, g/A=0.74 X10° Btu/hr- ft
+1000 | |
+0 5 10 15 20 25
+
+X, DISTANCE FROM INLET (in)
+
+Fig. 14. Comparison of axial temperature profiles of the molten
+
+salt at similar Nee with heat flux varied by a factor of 3.5.
+ 
+
+LT)
+
+27
+
+CONCLUSIONS
+
+We have found molten fluoride salt mixtures to behave, for the most
+part, as normal fluids with respect to forced-convection heating in a
+smooth tube. Although the present results average ~13% below the standard
+literature heat-transfer correlations, one must realize that some un-
+certainties exist in the physical properties of the salt and that the
+standard correlations themselves are based on heat-transfer data using
+fluids such as air, steam, water, petroleum, etc., which exhibit a 20%
+scatter band around the standard curves.
+
+No evidence of the existence or influence of low-conductance surface
+films, such as corrosion products, gases, or oxides, was found in the
+present studies. In the Reynolds modulus range from 2000 to 5000, we did
+find the heat-transfer coefficient to vary along the length of the tube
+in a manner which appeared related to a delay in the transition to tur-
+bulent flow. We believe this delay in transition is abetted by the
+stabilizing influence of heating a fluid whose viscosity has a large
+negative temperature coefficient. We intend to make further studies of
+
+this phenomenon.
+
+ACKNOWLEDGMENTS
+
+The design, construction, and operation of these experiments were
+made possible by the able assistance of J. J. Keyes, Jr., H. W. Hoffman,
+R. L. Miller, J. W. Krewson, W. A. Bird, and L. G. Alexander.
+
+REFERENCES
+
+l. H. W. Hoffman, Turbulent Forced-Convection Heat Transfer in Circular
+Tubes Containing Molten Sodium Hydroxide, USAEC Report ORNL-1370,
+Oak Ridge National Laboratory, October 1952; see also Proceedings of
+the 1953 Heat Transfer and Fluid Mechanics Institute, p. 83, Stanford
+University Press, Stanford, California, 1953.
+
+2. H. W. Hoffman and S. I. Cohen, Fused Salt Heat Transfer — Part III:
+Forced-Convection Heat Transfer in Circular Tubes Containing the Salt
+Mixture NaNO,-NaNO;-KNO;, USAEC Report ORNL-2433, Oak Ridge National
+Laboratory, March 1960.
+ 
+
+ 
+
+10.
+
+11.
+
+12.
+
+13.
+
+28
+
+H. W. Hoffman and J. Lones, Fused Salt Heat Transfer — Part II:
+Forced-Convection Heat Transfer in Circular Tubes Containing
+NaK-KF-LiF Eutectic, USAEC Report ORNL-1777, Oak Ridge National
+Laboratory, February 1955. :
+
+H. F. Poppendiek and L. D. Palmer, Application of Temperature Solu-
+tions for Forced-Convection Systems with Volume Heat Sources to
+General Convection Problems, USAEC Report ORNL-1933, Osk Ridge
+National Laboratory, September 1955.
+
+R. L. Shannon and C. A. DePew, Forced Laminar Flow Convection in a
+Horizontal Tube with Variable Viscosity and Free-Convection Effects,
+ASME Technical Paper 68-WA/HT-20.
+
+E. N. Sieder and G. E. Tate, Heat Transfer and Pressure Drops of
+Liquids in Tubes, Ind. Eng. Chem. 28(12): 1429-1435 (1936).
+
+P. F. Massier, A Forced-Convection and Nuclear-Boiling Heat-Transfer
+Test Apparatus, JPL-TR-32-47, Jet Propulsion Laboratory, March 3,
+1961.
+
+E. R. G. Eckert, A. J. Diaguila, and A. N. Curren, Experiments on
+Mixed-Free-and-Forced-Convective Heat Transfer Connected with Tur-
+bulent Flow Through a Short Tube, NACA TN-2974, National Advisory
+Committee for Aeronautics, July 1953.
+
+W. M. Rohsenow and H. Y. Choi, Heat, Mass, and Momentum Transfer,
+Prentice-Hall, Englewood Cliffs, New Jersey, 1961.
+
+ 
+
+H. Schlichting, Boundary Layer Theory, 4th ed., McGraw-Hill, New
+York, 1960.
+
+A. R. Wazzan, The Stability of Incompressible Flat Plate Laminar
+Boundary Layer in Water with Temperature Dependent Viscosity,
+pp. 184-202 in Proceedings of the Sixth Southeastern Seminar on
+Thermal Sciences, Raleigh, North Carolina, April 13-14, 1970.
+
+ 
+
+S. Cantor, ed., Physical Properties of Molten-Salt Reactor Fuel,
+Coolant, and Flush Salts, USAEC Report ORNL-TM-2316, Oak Ridge
+National Laboratory, August 1968.
+
+J. W. Cooke, Thermophysical Properties, pp. 89-93 in MSRE Semiann.
+Progr. Rept. Aug. 31, 1969, USAEC Report ORNL-L449, Oak Ridge
+National Laboratory.
+ 
+
+ 
+
+ 
+
+ 
+
+»
+
+n
+
+[3
+
+©»
+
+“
+
+29
+
+APPENDIX A
+
+ADDITIONAL DETAILS OF THE EXPERIMENTAL SYSTEM
+ 
+
+”
+
+ 
+ 
+
+ 
+
+" © ” ©
+
+ORNL-DWG 72-11522
+
+LAVITE WEDGE TO HOLD
+THERMOCOUPLES AGAINST WALL
+
+ 
+   
+ 
+ 
+  
+ 
+
+ 
+  
+
+X)
+
+     
+
+Rte
+
+0.040 in. CHROMEL-ALUMEL
+STAINLESS STEEL SHEATH THERMOCOUPLE
+
+7] Te ~~
+
+8 HOLES 5A45in. DIAM
+EQUALLY SPACED ON
+ELECTRODE—=J 3; in. DIAM CIRCLE
+
+  
+  
+  
+     
+    
+
+fin. SCH. 40 PIPE
+
+A
+
+Y4 x 0.035 in. TUBES,
+WALL TURNED TO 0.010in.
+| .
+
+1% x 0.042in.
+
+      
+
+Yin. DIAM HOLE
+
+TEST
+
+   
+      
+   
+
+ 
+
+ 
+
+| | SECTION
+P A dw [eeeevewhrereweesewn
+HE ee
+
+1 7
+
+Yin. RADIUS
+
+EL ERASE SIS]
+NTT TT TT 2020 Tr 0 ON TTI
+
+SECTION A-A
+
+ 
+
+i 27%in. i
+
+Fig. A-1. Mixing chamber weldment.
+
+»
+
+€
+
+ 
+ 
+
+ 
+
+32
+
+ORNL-DWG 72-11524
+
+   
+   
+  
+
+HB _.—CERAMIC FIBER
+| INSULATION SLEEVE
+
+36 GA.C. A.
+BARE WIRE SPOT
+WELDED TO THE
+
+TEST SECTION
+TEST SECTION S :
+
+‘
+
+Fig. A-2. Scheme for the attachment of a test-section thermocouple.
+ 
+
+33
+
+ 
+
+ORNL-DWG 72-1523
+
+i
+|
+1
+|
+
+! . ¥,x0.035 in.
+; VENT TUBE a]
+[7] Yp x 0.042 in.
+10in. DIP LEG TUBE
+8%in.
+14£%0.042 in.
+FILL TUBE~aw,
+Pe %x0.0351n.
+[}” THERMOCOUPLE WELL
+TUBE
+
+ 
+
+ 
+
+a
+
+NA
+
+ILL
+7
+
+ 
+
+ 
+
+ 
+
+ 
+
+—m
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+q
+5
+9
+[1
+— 9
+1.
+1
+g
+1]
+%
+1
+V]
+: 4
+IA
+i [ /
+i / g
+} 4 / |, — 0322in. WALL
+- 33 in. a 1
+“ A
+[1
+g
+f /
+IN
+] “
+V 1
+¢ 1
+f 4
+“
+/ /
+4 4
+] IN
+] 4
+/ %
+4 4
+¥ \ 9 SCHED 40
+} 1] PIPE CAP
+bo /
+1in,
+! fa—————— 8 5/5 in. DIAM ———eeie]
+: Fig. A-3. Detail of a Salt reservoir.
+
+ 
+ 
+
+ORNL-DWG 72-1521
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+100
+
+90
+
+LA
+—
+80 . — °
+or 7
+~ 70 - Pes T
+z TANK B 7 _
+2 60 ik A
+; re
+E 7
+£50 —— —
+© _— _— © INCREASING WEIGHT
+by DECREASING WEIGHT
+~~ ' >
+40
+ao
+30
+20
+10 20 30 40 50 60 70 80 90 100 "0
+
+STANDARD WEIGHT (pounds)
+
+Fig. A-4. Weigh cell calibration curve.
+
+#10
+
+100
+
+20
+
+80
+
+70
+
+50
+
+40
+
+HE
+
+ 
+ 
+
+3
+
+»
+
+.
+
+POWER ( watts)
+
+35
+
+ORNL -DWG 72-4520
+
+ 
+
+ 
+
+ 
+
+7
+
+ 
+
+ 
+
+1
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+20 40 60 80 {00
+SIGNAL ( millivolts)
+
+Fig. A-5. Wattmeter calibration curve.
+ 
+
+ 
+
+36
+
+PERTINENT EXPERIMENTAL, EQUIPMENT
+
+Equipment
+
+Load Cells
+BLH electronics
+Type T3P1 and T3P2B
+
+Strip Recorder
+Honeywell
+
+Model BY153X2VV-(WT)
+-(IV)Al (modified)
+
+Current Transformer
+Nothelfer windings
+
+Labs, Incorporated
+
+Model 14388
+
+Digital Voltmeter
+
+Vidar
+Model 521
+
+System Coupler
+Vidar
+Model 650-12
+
+Scanner
+Cunningham
+Scannex Control
+Model 000113G
+
+Tape Digital Printer
+Franklin Electronics, Inc.
+
+ 
+
+Tape Punch Process
+Tally Corporation
+
+Model 1665
+Tape Drive Model P150
+Tape Reader Model 1848
+
+Wattmeter
+General Electric
+
+Type 4701
+Watt Transducer
+
+Thermocouple Reference-
+Junction Compensator
+Universal Compensator
+Model RJ4801-CS
+
+Thermocouples
+Chromel-Alumel
+
+~ Capacity or Range
+
+500 1b (150% overload)
+3 mv/v input
+
+IL-2 Special
+25 kva (prim. & sec.)
+
+48 v prim.
+4 x 250 amp sec
+
++10 mv to +1000 v in
+6 decade stages
+
+2.5 — 10.0
+in 2.5 steps
+
+Accuracy
+
++0.02% full scale
+(see Fig. A-L)
+
++0.25% full scale
+
++0.01% of full scale
+(least count 1.0 pv)
+
+(see Fig. A-5)
+
++0. 75%
+ 
+
+37
+
+APPENDIX B
+
+EXPERIMENTAL DATA
+Table B-l.
+
+Salt LiF-BeF,-ThF,-UF,; 67.5-20.0-12.0-0.5 mole %
+
+Experimental Data for Heat-Transfer Studies Using the
+
+ 
+
+ 
+
+Run Tin Tout oT v a/A Heat h = F T°
+No. (°F) (°F) (°F) (1b/nr)  (Btu/hr:ft® Balance (Btu/ Ne st
+x 10~%) hr: £t°. °F)
+
+107 1388.3 1436.0 - 47.7 2532.0 4.07 1.05 4882 15,993 .3 56.000
+115 1362.7 1415.8 53.1 1387.2 2.48 1.12 2831 8,345 .6 31.902
+117 1383.7 1438.4 sh.7 1807.2 3.33 1.01 3617 11,419 3 41.497
+119 1379.1 1436.6 57.5 1185.0 2.30 1.05 2302 7,495 .3 26.270
+121 18.0 147k. 56.4 2191.2 k.16 1.04 4590 14,017 .8 54.082
+122 1456.2 1507.9 51.7 2968.2 5.17 1.04 6192 21,647 .5 134.6 Th. 415
+123 1488.2 1537.8 49.6 3206.4 5.36 1.00 6h62 25,119 1 1ko.k 79.762
+127 1097.9 1156.4 58.5 1636.8 3.23 1.05 1936 5,005 1 2.1 16.713
+129 1082.7 1163.3 80.6 250.8 0.68 1.01 396 738 .5 8.6 3.359
+130 1081.5 1177.1 95.6 279.6 0.90 1.00 yo 839 .3 9.2 3.563
+131 1089.8 1159.9 70.1 227.4 0.54 1.02 Lov 673 5 8.8 3.488
+132 1090.6 1160.2 69.6 256.2 . 0.60 0.97 381 760 Ab 8.3 3.265
+133 1029.6 1118.7 89.1 221.4 0.66 0.93 357 550 «9 T.7 2.821
+134 1036.3 1134.8 98.5 155.4 0.52 0.93 358 Los .3 7.8 2.94k
+143 1062.8 1117.7 54.9 1785.0 3.30 1.04 1940 4, oko .5 ko,2 16.148
+14h 1075.4 1135.7 60.3 1900.8 3.87 1.0h 2200 5,523 .8 47.8 18.563
+14s 1048.2 1103.4 55.2 2007.6 3.73 1.04 2129 5,304 5.0 46.3 17.459
+146 1064.0 1115.9 51.9 2199.6 3.85 1.0L 2513 6,026 .6 sk.7  20.98k
+147 1076.9 1131.0 54.1 2307.6 4.20 1.04 2727 6,573 .0 59.2 23.072
+148 1093.5 1148.3 54.8 2506.8 4.63 1.03 3068 7,583 .2 66.7 26.549
+1kg9 1460.4 1482.9 22.5 1166.4 0.89 0.94 2230 8,393 .6 18.5 27.007
+150 1460.6 1489.5 28.9 1700.4 1.66 1.03 3434 12,260 .5 4.7 41.743
+151 1469.4 1488.4 19.0 2093.4 1.34 1.01 3977 15,282 .5 86.4 48.472
+152 1477.0 1501.8 2458.2 2.05 1.00 4573 18,300 Ab 99.5 56.022
+153 1486.7 1513.4 2784.6 2.51 1.09 5426 21,235 .6 117.9 65.520
+
+ 
+
+ 
+
+6€
+ 
+
+Table B-1 (Continued)
+
+ 
+
+ 
+
+mE 0) ae Gert se / N, §, & To
+No. °F °F °F lb/hr Btu/hr- ft Balance (Btu N. N N
+
+Xx 1075) heh ep) Re Fr Tu st
+154 1ko6.1 1523.3 27.2 3057.0 2.80 1.04 5740 23,719 5.1 124.8 71.557
+155 1466.3 1484.7 18.4 3205.2 1.99 1.02 5551 23,214 5.5 120.7 67.668
+156 1475.0 1488.2 13.2. 3262.2 1.45 0.99 5229 23,861 5.5 113.7 63.927
+157 1479.7 1502.7 23.0 3505.8 2.72 1.07 6627 26,192 5.4  1kk.1 81.181
+158 1466.3 1483.8 17.5 1282.2 0.76 0.89 2236 9,284 5.5 48.6 27.265
+159 1466.7 1492.6 25.9 1401.6 1.22 0.99 2708 10,171 5.5 58.9 32.943
+160 1k71.3 1492.2 20.9 1512.0 1.06 0.93 2741 11,107 5.5 59.6 33.394
+161 172.4 14ok.h 22.0 1615.2 1.20 0.99 3033 11,853 5.5 66.0 36.980
+162 1463.7 1522.0 58.3 - 1254.6 2.46 1.04 2675 9, 46k 5.2 58.2 32.754
+163 1470.0 1527.5 57.5 1425.6 2.76 1.05 3071 10,884 5.2 66.7 37.571
+164 1480.0 1535.8 55.8 1513.8 2.85 1.07 3334 11,770 5.1 72.5 1.151
+165 1486.9 1539.2 52.3 2105.4 3.71 1.02 4385 16,497 5.1 95.3 54,119
+166 1501.6 1546.2 Lh. 6 2803.2 4.21 1.06 5852 22,512 5.0 127.2 72.942
+167 1513.9 1561.7 47.8 37.0 5.60 1.02 © 6892 28,499 4,9 149.8 86.348
+170 1064.6 1080.1 15.5 1797.0 0.9% 0.97 1737 4,524 15,9 37.7 14.620
+171 1066.3 1082.2 15.9 2346.0 1.26 1.01 2340 5,938 15.7 50.9 19.818
+172 1069.8 1084.0 1.2 2722.8 1.31 1.05 2905 6,939 15.6 63.2 24.811
+173 1049.0 1081.2 32.2 202.2 0.22 0.9 320 493 16.3 7.0 2.671
+186 - 1061.6 1076.2 14.6 1597.8 0.79 0.94 144s 3,986 16.0 31.4 12.161
+191 1062.0 1078.5 16.5 1318.2 0.7h 0.9% 1041 3,322 15.9 22.6 8.713
+192 1064.6 1080.3 15.7 1460.4 0.77 0.99 1337 3,690 15.7 29.0 11.274
+193 1235.2 1262.7 27.5 1106.4 1.03 1.01 1591 4,731 9.3 34.6 16.075
+195 1247.0 1270.6 23.7 2333.4 1.86 1.04 3560 10,200 9.1 77.4 36.392
+198 1255.8 1296.0 ho.2 3001.8 4.07 1.04 L645 13,693 8.7 101.0 47.638
+199 1273.2 1294.4 21.2 3219.6 2.30 1.09 y752 14,94k 8.6 103.3 49.533
+
+ot
+
+ 
+ 
+
+ 
+
+Table B-1 (Continued)
+
+ 
+
+ 
+
+EE on am one emt on IN
+(°F (°F (°F) (1b/br)  (Btu/hr-ft® Balance (Btu X N N N,
+Xx 10-8) hr. tu °F) Ng Pr Nu st
+
+200 1279.6 1303.7 2.1 3392.k 2.76 1.07 5050 16,088.0 8.4 109.8 53.017
+201¢ 1237.8 1263.8 26.0 1351.2 1.18 1.07 2406 5, ’82. bh 9.14 52.3 24.7
+202° 1250.7 1272.6 21.9 1717.8 1.27 1.01 2762 7,660. 9 8.94 60.0 28.6
+203° 1252.2 1276.2 2k.0 2050.2 1.66 1.16 L029 9,200.0 8.89 87.6 h.9
+204° 1258.4 1282.4 24.0 2299.2 1.86 0.99 3625 10,435.5 8.79 78.8 37.7
+205° 1229.9 1255.0 25.0 1395.0 1.18 1.01 2119 5,910.9 9.41 46.1 21.5
+206° 1231.7 1255.4 23.7 1704.0 1.36 1.10 300% 7,238.9 9.39 65.3 30.7
+207° 1243.6 1268.1 24,5 2036.4 1.68 0.97 3122 8,947.4 9.08 67.9 32.1
+208° 12hk7.2 1270.6 23.4 2338.8 1.84 1.12 4337 10,359.7 9.00 94.2 k4h.9
+210 1132.4 1156.1 70.1 2110 1.69 1.01 216 6,512 12.5 52.5 22.15
+211 1168.4 1215.4 . 150.8 2105 3.38 1.01 3049 Ts "696 10.8 66.3 28.96
+212 1203.4 1226.7 59.9 2102 1.69 1.03 2823 8, ,230 10.2 61.4 27.89
+213 1138.1 1168.7 30.6 2654 2.76 1.0k4 3477 8 566 12.2 75.6 32.07
+214 1097.9 1149.6 51.7 2807 4.92 1.01 3573 8,297 13.3 7.7 31.27
+215 1248.1 1256.1 8.0 2887 0.79 0.97 4335 12,374 9.2 oh,2  L4k4,98
+216 1258.3 1276.2 18.0 . 2914 1.77 1.03 L490 12,957 8.8 97.6 46.89
+217 1280.6 1310.6 30.1 2791 2.85 1.05 4616 13,454 8.2 100.3 49.10
+218 1288.1 1341.7 53.6 2753 5.03 1.03 ha1s 14,035 7.7 106.9 52.56
+219 1293.8 1383.2 89.4 1593 5.04 1.03 2999 8,620 7.3 65.2 32.12
+220 = 1118.5 1155.7 136.1 1140 1.51 1.02 1082 3,554 12.8 23.5 9.60
+
+™
+
+ 
+
+et balance = (sensible heat gained by fluid + heat loss)/(electrical heat generation).
+e = Ng (Tp) 2 (uw/u me
+
+Crest section oriented vertically.
+ 
+
+Table B-2. Experimental Data for Heat-Transfer Studies Using the
+Salt Hitec (KNO,-NaNOg-NaNOs; 4li-49-T7 mole 4)
+
+ 
+
+Run T T oT a/A Heat
+
+ 
+
+oy Bm oe) (seers Cony RE, WN fy
+° ° °F r Btu/hr.ft Balance u N
+x 107%) wood op) "Re "pr "a st
+87 537.6 677.3 139.7 157.2 0.85 0.99 283.5 2,314 9.3 17.0 7.34
+88 540.8 591.3 50.5 1375.2 2.69 1.05 2499.4 15,450 11.3 150.0 64.3
+89 567.5 621.0 53.4 2071.8 4.30 0.98 3516.6 25,640 10.2 211.0 93.1
+96 574.8 624.3 k9.5 2195.4 L.21 1.08 k4so.9 ~~ 27,578 10.1 267.1 119.7
+97 601.4 650.7 49.3 1589.4 3.04 1.00 3045.6 21,716 9.3 182.7 8h.2
+98 608.4 658.5 50.1 1097.4 2.13 1.06 2473.8 15,349 9.1 1u8.4 69.3
+99 618.5 672.5 54.0 630.6 1.32 1.03 1386.4 9,165 8.7 83.2 39.2
+101 608.8 702.4 93.6 59.8 2.15 1.10 1332.4 . 9,065 8.3 79.9 37.6
+102 633.1 657.2 2k.1 640.2 0.60 0.99 1656.8 9,142 8.9" 99.4 7.7
+103 618.8 634.8 16.1 1551.6 0.97 1.05 4151.9 20,8u8 9.4 249.1 117.6
+104 582.2 669.1 86.9 1603.8 5.41 0.99 3096.6 22,357 9.1 185.8 8h.1
+
+2n
+
+ 
+
+8Heat balance = (sensible heat gained by fluid + heat loss)/(electrical heat generation).
+
+b=
+
+-N N -1/ 3 -0.14
+Noy = Ne (M5) (n/ng) .
+
+ 
+ 
+
+ 
+
+ 
+
+43
+
+APPENDIX C
+
+COMPUTER PROGRAM
+ 
+
+ 
+
+COMPILER OPTIONS = NAME: MATIN, OPT=02,LINECNT x6) SOURCE EBCOICINOLIST 4DECK LOAD MAP 4NOEDT To NCI 0, NOXPE #
+5
+
+CI AM A MOLTEN SALT HEAT TRANSFER PROGRAM
+
+ISN 0092 REAL LoMDOT KL K2 y K3 4Ké 5 NUNC y MU oN AVG JNNC » KI NOW
+ISN 0€03 DIMENSICN: TO(30) 4XLI3C),TI(30) 4TB{37) HI 30}, IN(202),0U{20C),0(200}
+ISN 0CO4 OIMENSION NUNDL3C)
+ISN 0005 INTEGER FTC ,.CTC
+ISN C006 6 03 10 J=l,13
+iN occ? 1L=58 (3-1) 41
+ISN 0008 C IusSey
+ISN 9009 READ T4(IN(1),0UCT),I=ILy IU)
+ISN CO10 7 FORMATES(I3,F5.2,2X))
+ISN 061) 19 CCNTINUE
+ISN 0012 03 20 1=1,1y
+ISN 0013 11=IN(T)e)
+ISN Cla IF(OULI).GE.ONT) CIILI=DULT)
+ISN CO16 20 CINTINUE
+ISN 0C17 IF (D(45).17.900.) GC TO 2)
+ISN 0019 63 Ta 22
+ISN 0C20 21 0146)=-D(4€)}
+ISN 9C21 22 CINTINGE
+ISN. 0022 D7 30 I=1,50
+ISN 0C23 © out) =o}
+ISN 0024 30 CONTINUE
+
+C TEMP FIT FOLLOWS FOR 150 F REF JUNCTION YF TG 1900 DEGREES F
+ISN 0025 09 420 1x1 ,46
+ISN 0026 IF (D(I).LT.1.59) 6C TO 400
+ISN 0028 IF (D(I}eGEe) 99. AND.OIT).LT 5.30) GO TO 401
+ISN 0C30 IF (D{I).GE.5.01.AND.D(1).LT.10.Cl) GO TO 402
+ISN ce32 . IF (D(I).GE.10.01 cAND.D(I).LT.12.01) GO TO 403
+ISN 0034 IF (D(I).GE.13.01.AND.C(I).LT.17,01) GO TO 404
+ISN 0036 IF (D(1)eGE.1701 .AND.D(I).LT.22.99) GO TO 405
+ISN 038 IF (D(I}.GEL22.99 sANDLO(I} JLT .27.99) GO TO 40%
+ISN 0Ce0 IF (0(I)eGE.29.99 AND.D{1}.LT.33.C0) GO TO 407
+ISN C042 TF (DUI}eGE.33,0.AND.DII).LT.35.0) GO TO 4C8
+ISN 0C44 IF (D(I)eGE.36,0.ANC.D(I) iT¢39.9} GO TO 409
+ISN COAG IF (D(1}.6E.39.0) GC TO 410
+ISN 0048 40C D(1)=150.+(236.~15041/1.99%(D(1)-0.}
+ISN 0C49 © GO TO 420
+ISN C050 41 DUI) 2226.4 (371 e~2364)/(5.01-1.99)%(D(1)-1.99)
+ISN GOS1 IF (DCI) oGEL258. AND D(T)oLEC290.) DEI)=DL 11046
+ISN 0053 CIF (O01) sGEL28Ce e AND SDI) oLELIL4e) DUI)=DIE)=0.5
+ISN 0C55 GO TO 420
+ISN 3C56 402 DCI) =3714¢1592.=37141/(10.61-5.01)%(C(1}-5.01}
+TSN 0057 IF (D(I).6EL532.07) O{I)=D(I}=3.80
+ISN 0059 D(1)=D{1)+1.0
+ISN 360 IF (D(I).LEL425.) CLII=D(1)-0.20
+ISN 0062 G0 TO 420°
+ISN 6063 403 DUI) =562,4(721.=592.1/113.01-10.)11%(C({1}-1C.01)
+ISN 0064 GO TO 420
+ISN 0C65 404 DIT) =721.4(8901.=721.)/(17.01=13.01)%(C{1)-13.01)
+ISN 0066 GO TO 420 CL
+ISN 0087 4cs DUI) =351.¢ (11430-891.1/(22.99-17.01) #(C( 1-17.31)
+ISN aCe8 GO TO 420
+ISN 0069 436 DUI) =1143.% (1664.-114341/(30400-22.99)8(0( 1-23.68) =C.10
+ISN GOTO IF (D(1).GE.13964) D(I)aCtIde,3
+ISN 0CT72 IF (D(1)eLEa1234,) CUTI=D(1)¢.30
+ISN 0C74 69 TO 420
+ISN 0075 407 DUI) al 446.4 (1576 0=14444)/(33,00-29.591%(0( [1~29.99)
+ISN OCTe IF (D(I).LEL15284) D(I)=D(1)-0.5
+
+16
+12
+13
+15
+30
+40
+50
+60
+70
+7%
+76
+7
+T77A1
+7742
+778
+77°C
+TT0
+17%
+T8A
+788
+T8C
+79
+T9A
+798
+79¢C
+790
+T9E
+T9F
+796
+T9H
+791
+794
+9K
+79
+79L1
+TM
+TIN
+TINL
+T9N2
+790
+79
+T9P1
+T9P2
+7903
+790
+TIR
+79S
+797
+79u
+T9V
+794
+79%
+T9X1
+T9X2
+9Y
+192
+192
+
+ 
+
+sh
+
+ 
+ISN CQ78
+
+ISN 0079
+
+ISN 0080
+ISN oC82
+ISN 0C83
+ISN 2CB4
+ISN 0085
+
+ISN 0086 7
+
+ISN ocC8e
+ISN 0089
+ISN 0090
+ISN 0091
+ISN 0092
+
+TSN 0C93
+ISN 094
+
+ISN 0095
+
+ISN 0096
+ISN 0097
+ISN 0098
+ISN 0099
+ISN 0100
+ISN 0101
+ISN 0102
+ISN 0103
+
+ASN 0104
+
+ISN 0105
+ISN 0106
+ISN 0107
+
+ISN Ol08
+ISN 0109
+ISN 0110
+ISN 0111
+ISN 0112
+
+ISN 0113
+ISN O14
+ISN 0115
+ISN 0116
+ISN 0117
+ISN ol18
+ISN 0119
+
+25
+
+51
+
+52
+58
+
+ 
+
+GO TC 420
+DUI) =1576.4(1710.,~1576.)1/(36.,00-33.00)%(D(1)=-33.00)
+IF (DOI) oGE.1635,.ANDeD(T}.LEL1673.) DULII=D( 1)40.4
+G0 TO 420
+DEI) =1T710.+(1848,-1710.)7(39.00-3£,00)240(1)-36,0C)¢.10
+GO TO 420
+} DUI) =1£48, + (1901 .21848.1/(41.00239.00) #401 11-39.00) “e110
+IF (D(1).RE.1892.) DIII=DUI)eD., S
+CONTINUE
+PRINT 23
+FORMAT (1H1)
+D0 25 I=1,20
+J4=D{5Q)+,2
+
+PRINT 24,3
+FORMA T(LHO * NEXT [S RUN °*,14)
+CONTI NUE
+D{41)=DU(41)
+0(42)=DU(42)
+FIC=0U(41)¢0,2 = | —— em
+CTC=DU (42) #0.2
+UWAVG=AVG (Col 924+. 750,23:750)
+CALL TKER(C 46 )UNAVG)
+PRINT 51
+FORMAT (1H] 4X s9HSUBSCRIPT 6X ,6HU CATA,9Xo6HC CATA)
+00.58 _I=1,50 a -
+PRINT 52,1,00111,C(1)
+FCRMAT(TXy13¢8X FEa298X9FBs2)
+CONTI NUE
+
+C CONSTANTS FOLLOW. THE THERMAL K*S JRE TEMP CEPENDENT
+
+R1=,180/2.
+
+—.04=0,380/12,  __._
+
+ISN 0120
+
+ISN C121
+ISN 0122
+ISN 0123
+
+ISN 0138
+
+"TC END
+
+60
+
+R2=,250/2.
+R3=6.00/2.
+R4=3,05%8
+KL IS GIVEN ON CARD 845
+K2=0.06
+K329,00
+Ké=14, 32
+N=2
+
+L=24.3
+SPH1=0.324
+DAA=0.5
+0XB=0.5
+
+OF CCNSTANTS
+
+XL(1)=,750
+DX=1.09
+
+‘DD 60 [32424
+
+Ms]=-1
+
+XL) =XL{M)+DX
+
+CONTINUE
+TAO=(D(27)+D(28))/2.
+TAl=(D (29) +D(30}) 7/2.
+T881=(D(31)eD(32))/2.
+T8BO=(0(23)+D{34)) 72.
+
+—.. JF{TAO,GT, TAI) GO TC 61
+
+61
+
+TAsTAL
+G) T0 62
+TA=TAO
+
+ot
+
+ 
+ 
+
+ISN C136
+
+ISN 9138
+
+ISN 0139
+ISN 0140
+ISN 0141
+ISN 0142
+ISN O43
+
+ISN 0144
+
+ISN 0145
+ISN 0146
+ISN 0147
+ISN 0148
+
+1 0177
+
+isn 0178
+
+ISN: 0179
+ISN 0180
+ISN 0181
+ISN 0182
+
+ISN 0183
+ISN 0184
+
+ISN 0185
+
+ISN 0l86
+ISN 0183
+ISN. 0189
+ISN 0190
+ISN 0191
+
+“1D
+
+. 68
+
+62
+63
+66
+s8
+10
+
+ 
+
+1F{TBB0.GT.TBBI) GO TI 63
+T38=TRBI
+
+GY TO 64
+
+138=TB RO
+
+CONTINUE
+
+IF (TA=TBB)66,68468
+TIN=TA
+
+TAUT=TRE
+
+GO T0 70
+TINaTRS
+TOUTaTA
+CONTINUE
+
+“IE (TA=TBB) 73,7T1,71
+
+12
+
+13
+
+75
+8¢C
+
+0G 72 1%1,24
+Ma25-1
+101) =C(M
+CONTINUE
+
+69 TO 80
+
+00 75 I=),26
+TOE) =E(D)
+CONTINUE
+
+CONTINLE
+
+C CARE MUST BE TAKEN WITH REGARD TO SIGN CCAVENTION FOR FOLLOWING Q AND DT
+
+QWM=400./83,6%D (47)%200.%3.412/0(49).
+
+_MOOT=D (482260,
+DT=UMAVG ~ D (46)
+
+QLCAL=={ (0,275TE-3)%CT#0T + 0.110007 ~ 0.1T724E-1)
+
+QLF=QULCAL/ (2.%3, 142R2 L/144.)
+
+QUF ==OLF
+
+QZL=KA®,375%17,/8,/12,2((D(43)-D{25))/DXA+(D(441-0126))/0%8)
+
+DT=AVG (Dy] 92442 T750423.750) = D(46
+
+TXLeX1-2250
+
+10
+111
+
+DO L115 1=1.,24
+
+112
+
+3
+QINS=2,#3.148(L-0.51/12.3(-0T1/ (ALOG(R3/R2)/K2+ALOGIR4/R 3} /K3)
+QLEST=QEL + QINS
+QF =MDO T# SPHL #( TOUT-TIN)
+QDPs QF 702.03 ,14%R12L) #144,
+QBAL=( F-aLCAL) /QWm
+XLsFTC_ me em
+X2=FTC+CTC~1
+X22X2-4250
+PRINT 111
+FIRMAT (LH1409Xs1HXs11 X93HX/D920Xs AHH s11X 9 2HTBy 11X2HTIy 11X42HTO
+11 2X 92HNU,11X o 2HR Ey 1 2X 9 2HPR)
+
+X=XL{I)
+
+ATT=TOU1) - 25.
+
+KL sTK(ATT)
+
+THI )=TC(1) (QF ~ CLCAL) F(2.,%3.164%L/12.%K1)*
+(R2$R2/(R2 #R2=-R1 *R1} *ALOGI(R2/R1)~0.500)
+
+8 7 77 +QLF*R2/12./K1*ALOG(R2/R1)
+
+ATT=(TI(I)+TO(I})/2,
+
+KLNOW=TK(ATT)
+
+OK =ABS (KINOW-K1)
+
+IF (DK. GE.Q.1) GO TC 112
+
+X00=Xx/(2,%R1)
+
+TE(I)=VIN + ODCP#3,16%2,#R14X/MOCT/SPHI/ Lad,
+
+HOD) =QUDP/ (TILT) =TE(I))
+
+CALL PRCPI{RENDPRNCyMUoRHOITBIT) Rly CCAD SPHL, MDOT)
+
+345
+350
+355
+360
+365
+390
+400
+410
+420
+430
+440
+450
+460
+470
+«75
+480
+490
+500
+510
+520
+530
+540
+550
+560
+570
+578
+576
+577
+578
+580
+585
+590
+610
+
+650
+660
+710
+
+720
+
+730
+740
+810
+820
+821
+330
+840
+841
+845
+350
+851
+852
+862
+863
+864
+865
+870
+880
+890
+895
+
+ 
+
+ 
+
+Ly
+
+ 
+ISN
+ISN
+ISN
+ISN
+ISN
+
+ISN
+
+ISN
+ISN
+ISN
+ISN
+ISN
+
+ISN _
+
+0193 .
+0194
+0195
+0196
+0197
+
+SN 0198
+0199
+
+0200
+0201
+0202
+0203
+0204
+0205
+0206
+0207
+0208
+0209
+
+ISN 02
+
+ISN
+ISN
+ISN
+ISN
+
+0212
+o213
+0214
+0215
+
+o192 |
+
+114
+ne
+
+451
+
+_452 |
+
+453
+
+0210. _. A34.
+11
+
+0
+
+ISN ole
+
+ISN
+ISN
+ISN
+ISN
+ISN
+
+ISN
+
+oar
+0218
+0219
+0220.
+0221
+
+0223.
+
+1
+93
+94
+
+ET)
+
+ISN 0228
+
+ISN
+ISN
+
+ISN
+
+ISN.
+
+ISN
+ISN
+
+ISN
+
+022%
+0226
+
+‘0227
+
+0228
+0229
+0230
+0231
+
+0247
+
+c
+. 9
+
+——
+
+98
+99
+100
+TTI01 F
+472
+473
+
+aT4
+4T1
+42
+478
+
+.. 458
+
+PRINT 91.QF -
+FORMAT (1HO ( *HEAT TC SALT BTU/HR = ¢,T35,F10.3)
+
+ 
+
+NUNO (I )aH(I)%2,%R1/12,/CCND
+PRINT 114 9X sXODoHE I) 9 TBI) TIC 1)3TO( 1) NUNG( 1), REND, PRNN
+FORMAT (1HO49F13.4)
+CONTINLE
+HAVG=AVG (H ¢FTC oCTC 9X1 9X2}
+PRINT 450,HAVG
+FIRMAT (1HD 4 *AVG H BTU/HRSQFTDEGF = ¢,f10.2)
+WAVGEAVG (TI oFTCoCTCoX1 4X2)
+PRINT 451 4 WAVG
+FORMAT (1HO »*AVG INNER WALL TEMP DEGF = ¢4F10.3)
+BAVGSAVG(TBFTC+LTCo X1 4X2)
+PRINT 452,BAVG
+FORMAT (LHO AVG BULK TEMP DEGF = ¢,F10.3)
+OAVG=A VG (TOJFTC +CTCo XL 4X2)
+PRINT 453,CAVG
+FORMAT ILHO ,*AVG OUTER WALL TEMP DEGF = 9,F10.3)
+NUAVG=AVG ( NUNO oF TC 4C TC 9X1 4X2)
+PRINT 4544, ANUAVG
+FORMAT _(1HC*AYG NUSSELY NCO. = *,F10.9)
+CALL PROP (REND ¢ PRNCy MU RHO 4B AVG yR1 ¢ CCADy SPH1,MDOT)
+VRAT=MU
+BE TA=0,02328/RHO
+PRINT 90,QeM
+FORMAT (LHL s *WATTMETER BTU/HR = ¢,T35,F10.3)
+
+PRINT 93,QLCAL
+
+FORMAT (1HO »*CAL HEAT LOSS RTU/HR = 9,735,F10.3)
+
+PRENT 94 ,QLEST
+
+FORMAT (1HO »*EST HEAT LOSS BTU/HNR = ¢,T35,F10.3)
+aN eee a + a
+
+FORMAT (THO * TEST SECTICN NO. = *9T735,110)
+
+GaMDOT /(3, 14%R1 #R} ) *144,
+
+PRINT 97,6
+
+FORMAT (LHO ¢°G LB/HRFT2 = *,T33,E12,5)
+
+VEL=MDUT/RHO/(3.14*R1%R1/144.)/3600,
+
+PRINT. 98, VEL _
+
+FORMAT (1HO 4 * TEST VELOCTTY FT/SEC = 7,T35,F10.3)
+
+PRINT 99,RK0
+
+FIRMAT (1HO,*BULK SALT DENSITY LB/FT2 = *,T35,F10.2)
+
+PRINT 100,PU
+
+FORMAT (1HC,*BULK SALT VISCOSITY LB/MRFT = 0,T35,F10.3)
+
+PRINT 101,COND
+
+FORMAT (1HO,'BULK. SALT CCND BTUZHRFTDEGF = *y T35,F10.2)
+
+PRINT 472, TIN
+
+FORMAT (1HO,* INLET TEMP DEGF = *,T35,F10.3)
+
+PRINT 473,70U7
+
+FORMAT (1HO y "OUTLET TEMP DEGF = *4T35,F10.3)
+
+__JCHGsTQUT=-TIN,.
+
+PRINT 474, ICHG
+
+FORMAT (1HO »° TOUT ~ TIN DEGF = *,T35,F10.3)
+
+PRINT 471,007
+
+FORMAT (1HO o "MASS FLOW RATE LEB/HR = *,T35,F10.3}
+
+PRINT 477,FEND
+
+FORMAT {(JHC,*AULK REYNCLLS NO: = *T35,Fl0.2)
+
+PRINT 478,PRNO
+
+FIRMAT (1HC,*BULK PRANCTL NO. = *,T35,F10.2)
+
+PRINT 470,C0DP
+
+897
+900
+910
+920
+
+930
+
+935
+940
+950
+955
+960
+970
+97%
+980
+$9C
+995
+100¢
+1005
+1010
+1015
+1017
+1018
+1019
+10204
+10208
+102081
+102082
+1020C
+10200
+1020€
+1020F
+10201
+10204
+102043
+102004
+102045
+102001
+102012
+1020L3
+1050
+1055
+1060
+106%
+1080
+1090
+1110
+1120
+1130
+1140
+1150
+1160
+1170
+1180
+1185
+1190
+1200
+1210
+1220
+1230
+
+ 
+
+8
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ISN 02648 470 FORMAT(1HO,*NET HEAT FLUX BTU/HRSOFT = ¢,T33,E12.5)
+TSN 5549 "PRINT #76,C8AL
+ISN 0250 476 FORMAT (1HO,'HEAT BALANCE = %,T35,F13.3)
+ISN 0251 DEFH=MDOTS SPHL # (TOUT=TIN)/(2,%3,16 ¥R1$L/ 144 .#{ WAVG=BAVS) )
+ISN 0252 PRINT 47%,CEFH
+ISN 0253 47S FORMAT (LHL +*H BY DEF BTU/HRSQFTDEGF = *,T35,F10.2)
+ISN 0254  NNO=DEFH®2.%R1/12. /CONC
+ISN ¢255 PRINT 4751 NNO
+ISN 0256 4751 FORMAT (1HC,*NUSSELT NC. = %,T35,F10.2)
+C FROM HERE ON THE NNO USED WILL BE THE INTEGRATED VALUE
+ISN 0257 NNO=NUAVG
+ISN 0258 GANO= DI S2ISRETAS32 ,2¢RHOS 424 (WAVG=BAVG) /(MU/26C0. )o42
+ISN 0259 PRINT 981,6RNO
+ISN 0260 SOT FORMAT (LHO + CRASHOE NOs = 9,T35,F10.4)
+ISN 0261 GIND=3,1474, *RENO*PRAO#2 . #R1/ (X2-X1)
+ISN 0262 PRINT 4752 ,GINO
+ISN 0263 4752 FORMAT (1HO,'GRAETZ NOJ(P=B) = ¢,T35,F10.4)
+ISN 0264 BTRM=0,0722% (GRNOSPRAD®2 L#RL/ (X2-X1) ) #50, 75
+ISN 0263 _ PRINT 4753,8TRM _
+ISN 0266 4753 FORMAT (1HO,'BUGYANCY TERM FOR VERT, LIM = *,T35,F10.4)
+ISN 0287 STF aNNG/ (PANDE0,33) /{ ¥USS0 14)
+ISN 0268 DSF =NNO/PRAO##0,4
+ISN 0269 .  _ _  OBH=COND/(2.#R1/12.)9C .023%{ RENC*%0.8 )*( PRNO*%0.4)
+ISN 0270 PRINT 481 ,4CBH
+ISN 0271 48] FORMAT (1H0,9MC_ ADAMS H_BTU/HRSCFTCEGE = *,T35,F10.2)
+ISN 0272 STTH=CONDZ (2,#R1/12. 190, 027% (RENO# #0. 8) # (PRNOS#0,33) 8 (MUS40.14)
+ISN 0273 HTRHCOND/ (2. #R1/12. 190, 116% (RENO*#, 647 = 125.) €PRNO*#,33
+) A MUE20 14)
+ISN 0274  STH=COND/{Ze*R1/12.) 31 .86% (RENCHPRNO® 2, #RL/ (X2-X1})##0.323
+ISN 0275 IF {TA-TBS) 200,210+210
+ISN 0276 200 DLH=COND /D1814 T54(GZND. = BIRN} $20.33
+ISN 0277 60 10 220
+ISN 0278 210 DLH=COND/D1#1. TS#(GZNO + BTR) 40,33
+ISN 0279 22¢ CONTINUE
+ISN 0280. STHaSTHS (MLE80, 14)
+ISN 0281 COLH=0,023 (DL #G) #$0 .8 /D1*CCND #20. 66 T9SPH1 #40, 33
+ISN_0282 _CLMH=] (65 COND /01# (GINC EMU) #40 ,33
+ISN 0283 FGRNO=GRNO SMS?
+ISN 0284 CF=NNO/{PRAQT®0,33)# (ML$0,33)
+ISN 028% FLLM=( WAVG ¢BAVG) /2.
+oo C DIM GROUPS AND PROPS THAT FOLLCW ARE NO LCNGER AT BULK TEMP
+ISN 0286 CALL PROP {REND PRNC¢ MJ JRHO EF TL¥ oR] yCCADy SPHL, MDOT)
+ISN 0267 COLHaCCLH*MU%#0,33 /MU*#0.8
+TSN 0288 FGRNO=FGRNC/ mus»?
+ISN 0289 [F (TA-TBB) 230,260,240
+ISN 0290 230 CLMH=CLMH/NUS#0,33%(1. = 0,015#(FGRNO)*#0,33)
+ISN 0291 G0 TO 250
+ISN 0292 240 CLMHSCLMH/MUSSG,33%(1, + 0.015% (FGRNC)#%0,33)
+ISN 0293 ___ _ 25C CONTINUE
+ISN 0294 CFeCF/uUs#C,23
+ISN 0295 CREND=RENG -
+ISN 0296 PRINT 4811 ,COLH
+ISN 0297 4811 FIRMAT (IHC, 'COLBURN TURB H BTU/HRSQFTDEGF = ,T35,£10.2)
+ISN 0298 CALL PROP (REND ,PRNC, MU JRHO yWAVG JRL » CCNDy SPHL, MOOT)
+ISN 0299 STTH=S TTH/ (MU*#0,14)
+ISN 0200 HTRH=H TRH/ (MUS#0,14)
+ISN 0201 STH=STH/ (NLE3D, 14)
+ISN 0202 PRINT 482, STTH:
+
+1235
+1240
+1245
+1250
+1260
+12790
+1290
+129
+1292
+© 12924
+12928
+1293
+1294
+129%
+1296
+1297
+1298
+1299
+
+1330
+
+1350
+135%
+1357
+1358
+1360
+
+1360A.
+
+. 13608
+1360C
+
+13600
+
+1360
+1361
+1361A
+
+1361A00
+
+1361A0
+1361A1
+
+13618
+136181
+
+1361C
+
+13610
+1136101
+136102
+136103
+
+136104
+
+136105
+136106
+
+136107
+
+136108
+1361E
+1361F
+
+1362
+13628
+1362C
+
+1363
+
+1364
+
+ 
+
+6
+ 
+
+ 
+
+ISN 0303 482 FIRMAT(1HO,%S-T TURBULENT H BTU/HRSCFTDEGF = *,T35,F10.2) 1365
+
+ISN 0304 PRINT 4821 ,HTRH 1366
+ISN 0305 4821 FORMAT (1HO,*HAUSEN TR H RTU/HRSOFTDEGF = *4T35,F10,2) 1366A
+ISN 0306 PRINT 483,STH 1367
+ISN 0207 483 FORMAT. (1HO,°S=T LAMINAR H BTU/HRSQFTCEGF = *,T35,F10,2) : 1368
+ISN 0308 PRENT 484,0LH 1369A
+ISN 0209 484 FORMAT(LHO.*MART VER,LAM H BTU/HRSQFTLEGF = *,T35,F10.2) 113698
+ISN 0310 PRINT 4840 4CLWH 134981
+ISN 0311 4840 FORMAT (1MO,°COL VERT,LANM H BTU/HRSQFTDEGF = *y735,F10. 2) 136982
+ISN 0312 PRINT 4841 ,DOF 11369C1
+ISN 003 4841 FORMAT (1HCy'MC ADAMS FACTCR = 9,T35,F10.3) 1369C2
+ISN 0314 PRINT 4842 ,CF . 1369C3
+ISN. Qs 4862 FORMAT (1HOQ,°COLBURN FACTOR = *,T735,F10.3) i 11369C4
+ISN 021 PRINT 4843 ,CRENO 1369CS
+ISN on? 4843 FORMAT (1HGoCLBRN RENC = *,T35,F10.2) 1369C6
+ISN 0318 STFaSTF® (ML®%),14) 1370A
+ISN 0319 PRINT 485,STF 13708
+ISN 0320 485 FORMAT (1HO,'S-T FACTOR = *,735,F10.3) : 1370C
+ISN 0321 ETL=X2-X1 mee me ie .. So . . 1372
+ISN 0322 PRINT #86,ETL © 1373
+ISN 0323 486 FORMAT (1HO *EFF TUBE LENGTH IN = ¢,T35,F10.3) ©1374
+ISN 0324 VRAT={ VRAT /NU) #20, 14 13718
+ISN 0325 PRINT 487, VRAT 1376
+ISN 0326 487 FORMAT (1HO,*VIS RATIO TC 0.14 = *,T35,F10.4) 1377
+ISN. 0227 __ _____ _OFACT=STESWRAT ce . ~ . 1378
+ISN 0328 PRINT 488,CFACT . 1379
+ISN 0229 488 FORMAT (1HO "MART FACTCR = *,T35,F19.2) 1380
+Co C A LOOK AT A SMCOTH. CURVE THRU THE DATA POINTS MAY BE EDUCATIONAL 1390
+ISN 0330 CALL YLSITCIFTC,CTC,2) 1391
+ISN 0331 GJ TO 6 . 1400
+
+—__ISNoO®d2 _____END____ Lo. . co 1401
+ADCONS FOR EXTERNAL REFERENCES : :
+
+ 
+
+0S
+
+ 
+ 
+
+ 
+
+COMPILER CPTIONS = NANME= MAIN,CPT=02LINECNT 26) SOURCE» EBCOIC,NOLIST DECK (LOAD ¢ MAP NOEDT T,NOI Dy NOXREF
+C THIS FUNCTICN CCMMITS 3RD CRDER CRTHOGGNAL SINS BY AVERAGING VALUES Al0
+
+C BEGINNING WITH NO. M AT XL AND ENDING WITH I CONSECUTIVE VALUES AT X2 All
+
+ISN 0002 FUNCTICN AVGIY, MoT ,X1,X2) A20
+ISN 0003 DIMENSION Y(50) X(50),A4) P5044) ,SP2(50,4) A3C
+ISN 0004 REAL NP,LS A3S
+ISN 0005 _ Af1)=0 A40
+ISN 0006 A(2)=0 AS0
+ISN 0007 A(3)=0 A60
+ISN 0008 Al4)=0 ATO
+ISN 0009 P(1,1) 1. AT2
+ISN 0010 Plls2)=1. AT3
+IsNoory P(l,2)s2. . : AT4
+ISN 0012 Plea) =l, ATS
+ISN. 0013 NP=[-1 A90
+ISN 0014 DO 490 L=2,1 ASS
+ISN 0C15 X(L) =L-1 AST
+ISN 0C16 P(Lol)= 1. A100
+ISN CLT. PALy2)mle=2.8X(L)/NP _ _ Al1C
+ISN 0018 PlLs3) 21 a=E 8K (LY /NPEIX (LISIX ELI =10 ) /NP/ZINP=1,) A120
+ISN 0019 CPL e4) =1a=12¢%X(L) /NPH30 LAX (LI #(X IL) =14) /NP/(NP=1.) A130
+: 3 =20.#X(L) $(X(L)=14 )2UX(LI=24)/NP/(NP=1.) /(NP=2.) A131
+ISN 0020 49C CONTINUE A138
+ISN 0021 SP2(Ls1) =NPel, A140
+ISN 0022 __ __SP2ULs2)=(NP#1,)R(NP42,)/(3.2NP) A150
+ISN 0023 SP2(1p3) =(APL. IX (NP #2.) ${NP#3.)/ (5, *NP) /(NP-1,) A160
+ISN 0C24 SP2(144) ={APeLLI*INP#2.)*(NP+3o )R(NP#4.) /{TONP)/(NP=1.0/INP=2.) ALTO
+ISN 0025 01 550 J=1 ,4 A200
+ISN 0026 ©. DOD 500 K=1,] : A210
+ISN 0027 AGI ALI) $Y (KSM=1 DRP (Ky J) 4220
+ER a CONTINUE } oo A239
+SN 70029 ACI AAA FSP2UT 0) A240
+
+Hh 0030 550 CONTINUE A250
+ISN 0031 PRINT 6C0 A270
+ISN 0032 600 FORMAT {1H1,10HORIGINAL o13HLEAST SCUARES,10M PCEV) 4280
+ISN C033 : D0 700 J=ll A290
+ISN 0034 LS=A(1)0P (J 1 04A02)0P(J92)#AL3)0F (JI) eAL4IPLY,44) A3C0
+ISN 0035 POE Va (LS-Y(J¢ #1) )*100./Y(JeH-1) A305
+ISN 0036 PRINT 6504Y(JeM=1),LS,POEV A310
+ISN 0€37 650 FORMAT (F8.2¢5X+F8e2+5X +7842) A320
+ISN 0038 700 CONTINUE A330
+ISN 0039 X3=X2-X1 A340
+ISN 0040 750 AINT=A(1)%X3 & A(2)%(X3-X3$%2/NP) + A350
+8 A(2) #(X3=3,9X3SX2/NP +6 /NP/ (NPL, J R(X 38237 3,-X 3082 A351
+
+8 2.0) + A352
+
+8 AL4)S(X3=6 #XI*R2/NP+30 /AP/ (NP=1. J E(X 3443/3 (=X 3442 A353
+
+8 720)=20./MP/(NP=14}/ (NP=2,) #(X3#%4/ 64. =X33%3 4X 33X3)) A354
+
+ISN 0041 AVG=AINT/X3 A390
+ISN C042 RETURN . A440
+
+ISN 0043 END A450
+
+ 
+
+TS
+
+ 
+ISN
+
+ISN
+
+ISN
+ISN
+
+ISN C
+
+COMPILER CPTIONS = NAVMEa
+
+0002
+0003
+C004
+0005
+0006
+
+oco7T
+
+0008
+0009
+
+ 
+
+ 
+
+10
+
+3C
+40
+50
+7¢
+
+75
+8c
+
+PIR
+
+FUNCTICN TK(TENPF)}
+TEMPC={TEMPF-32.)%5,/9.,
+
+IF (TEMPC~440.)10,10,20
+TK=20,128+(.155-.128)/200. *(TENPC=20.)
+GO 70 80
+
+IF (TEFPC=500.130,30 40
+
+TK=20e1604{ 174-0160) 76Co OITEMPC~440,)
+GJ TO 80
+
+IF (TEMPC-€8C.150,5046C
+TK=20,1744(.193-.174) 7/100. #(TEMPC-50).)
+GJ TO 80
+
+TIF CTEMPC=T140.170470,75
+
+TK=0,2084(.230-,208) /6C. *{TENPC-680,)
+GO TO 80
+
+TK=0.,2304 (248.230) 7/160 4 (TEMPC-T40.)
+TK=TKe57.82
+
+RETURN
+
+END
+
+ 
+
+MAIN, CP1=02 ,L INECNT =60 SOURCE» EBCOTC1NOL 1ST » DECK + LOAD oMAP NOE DI To NOT Dy NOXREF
+“TTIHTS FUNCTION DETERMINES THERMAL K FOR INCR-8 x10
+
+K20
+K30
+K&0
+X50
+K60
+K70
+X80
+X90
+K100
+K110
+K120
+K130
+K140
+K150
+K160
+K170
+K30C
+K301
+
+es
+
+ 
+ 
+
+CCMPILER OPTIONS ~ NAME=
+
+ISN 0N02
+ISN 0C03
+ISN 0004
+ISN 0005
+
+ISN 0004 ©
+
+ISN 0007
+ISN 0008
+ISN 6009
+ISN 0010
+ISN 0011
+ISN 0012
+ISN 0013
+ISN 0014
+ISN 0015
+ISN 0016
+ISM 0017
+ISN 0018
+ISN 0019
+
+ISN 0020
+ISN 0021
+
+ISN 0022
+
+ISN 0023
+ISN 0024
+ISN 0025
+ISN 0026
+ISN 0027
+ISN 0028
+ISN 0C29
+ISM 0030
+ISN oc3l
+ISN 0032
+ISN 0033
+ISN 0C34 __
+ISN 0036
+ISN 0C38
+ISN 0040
+ISN 0041
+ISN 0042
+ISN 9043
+ISN (C44
+ISN OCS
+ISN 0046
+ISN 0C47
+
+ 
+
+C CONSECUTIVE VALUES AND REPLACES THIS ARRAY WITH AN NTH ORCER FIT
+
+SUBROUTINE YLSUY Mol oN)
+
+OIMENSION Y(30) X50) sA(4),P(5044) 4SP2(50,4)
+REAL NP4LS
+
+A(1)=0
+
+‘Al2)=20
+
+A(3)=0
+A(4)=0
+P(lyldal,
+P{ls2)=l,
+
+P1430 e1,
+
+Pllodi=l,
+NP=zl~1
+
+09 49) L=2,]
+X(L)=L~1
+Pill) = 1.
+
+PUL e2) xl 02. 8X(L)/ NP
+
+8
+490
+
+PL) 21 o=6.*ATLI/NP45 SX (LI *(X IL) =1%)/NP/INP=1,)
+PIL 94) 3) a= 12.5X (LY /NPI0 eX (LI *(XIL)=14)/NP/(NP-1,)
+“20. XL) 2UXILI-1 0% (X(LI=24)/NP/INP=1o)/{NP-2,)
+CONTINUE
+SP2(1+1)=NPe},
+
+.SP2(192) s(AP+Ll)S(NP#2,) /(3,8NP)
+
+_..500
+
+550
+€30
+
+£50
+ee
+
+SP2(T43) 2(NPHLL I *(NP+2 J $(NP+2}/ (5, %AP) /{NP=1 4)
+SP2{Le4) (APL) *(NPH2 J) # (NPI )*(NP+4,)/{T.ANP)ZINP-1.)/(NP=2,)
+00.550 J=1 44"
+DO 500 K=l,1
+AG) =A(J}+Y(KeM-1)%P(K, J).
+CONTI AUE
+ACD) =A (I) /SP201 0)
+CONTINUE
+PRINT 60C
+FIRMAT (1H1,10HORIGINAL ,13HLEAST SCUARES,10H POEV)
+03 700 J=1,1
+IF (N.LT,3) A(&)=0
+IF{N.LT.2) A(2)=0
+TFIN.LT.L) A(2)=D
+LS=A(T)SP {Jol )eA(202P(J42) 4403) *F(Js3)0Al4)*P(J,4)
+POEV=ILS=Y(Je¥=1))*100./Y(J¢M-1)
+PRINT 650,Y(J#M=1)9LS,PDEV
+FORMAT (FB.245X oFB8.2¢5XyFR.2)
+Y{JeM=-1)=LS
+CINTINUE
+RE TURN
+END
+
+MAINo OP T=N2 JL INECNT 260 ySOURCE, EBCOTCoNOLIST DECK LOAD ¢MAP4NOEDL To NCI CoNOXREF
+T THES SUBROUYINE TAKES AN ARRAY Y WHCSE 1ST VALUE IS AT M WITH I TOTAL A190
+
+All
+A20
+A30
+A3S
+A&Q
+A50
+A60
+ATO
+AT2
+AT3
+AT4
+ATS
+A90
+ASS
+A97
+A100
+All0
+Al20
+A130
+A131
+A135
+Al40
+Al50
+A160
+Al70
+A200
+A210
+A220
+A230
+A240
+A250
+A270
+A280
+A290
+A294
+A295
+A296
+A300
+A305
+A3lC
+A320
+A330
+A350
+A370
+A371
+
+ 
+
+£4
+
+ 
+— COMPILER OPTI ONS = NAMEs  MAIN,OPT=02,L INCCNI=A0,SIZ2E30000K,
+
+ 
+
+SOURCE ¢EBCOICyNOLEST ¢NODECK 9 LOAD ¢MAPyNOEDIT ¢NOID + NOXREF
+
+.C THIS SUBROUTINE USES THERMOPHYSICAL DATA FRCM CRNL=-TM=2316 AND ORNL-4449. . .._....
+
+ 
+
+ 
+
+ 
+
+ 
+
+ISN 0002 SUBROUTINE PROP{RE¢PRyVyRHO TEMPF 4RoCOND¢CPoW) P20
+US £1 1 § 3, 1 J 3 + J 7 25 NP OP SU
+. ISN 0004 T=T4273.0
+ISN 0005S = V¥=0.,077%*EXP{6430,0/T}) —
+ISN 0006 . V=2,419%V
+ISN 0007. . ..___. RHO=3.6R7-(6.5E~04®Y) _ __. _.______ _ ___.. _... enn tn te + eee em Bm one
+ISN 0008 RHO=RHO*62.,428
+ASN 0009  COND=0.69.... _ am
+ISN 0010 PR=CP$V/COND P140
+JJSN 0011 REn&, INI3,14/12,%R/12.)%H P1840
+ISN 0012 RETURN P199
+LISMO 0013 END eh te een eet me ee mre ee een eee an ee eminem meme PQ
+
+78
+
+ 
+ 
+
+ 
+
+55
+
+APPENDIX D
+
+CHEMICAL ANALYSES AND PHYSICAL PROPERTIES OF THE SALT
+ 
+
+ 
+
+ 
+ 
+
+| 57
+
+; Table D.l. Analyses of the Fluoride Salt Mixture
+| (LiF-BeF,-ThF,-UF,; 67.5-20.0-12.0-0.5 mole %)
+i Before, During, and After Heat-
+
+Transfer Determinations
+
+0
+
+ 
+
+ 
+
+ 
+
+: Impurity Weight % -
+| Co Before During? After
+Li 7.1h 7.27 6.64
+Be 2.57 2.53 2.46
+Th ho,1 41.3 43.5
+U 1.87 1.84 1.72
+F bs. 46.4 hs. h
+Ni 20 ppm - -
+= Cr <25 ppm - Co -
+Fe 78 ppm - -
+* S <10 ppm - -
+Na - 0.66 0.55
+
+ 
+
+&pAnalysis made just prior to removal of the
+first test section.
+
+ 
+
+ 
+ 
+
+ 
+
+58
+
+Table D.2. Thermophysical Property Data for Molten Salt -
+Mixture LiF-BeFg-ThF,-UF, (67.5-20-12-0.5 Mole %)
+
+ 
+
+ 
+
+Uncertainty Ref.
+u (1b/ft-hr) = 0.187 exp [8000/T(°R)1* +254 12
+kx (Btu/hr-ft-°F) = 0.69° | +12 13
+p (1b/£t®) = 230.89 — 22.54 x 1072 t (°F)* + 3% 12
+c, (Btu/1b:°F) = 0.324% + 49 C12
+Liquidus temperature = 895 oF™ +10°F 12
+
+ 
+
+®Estimated values for the salt mixture LiF-BeFg~ThF, -UF, (68-20-
+11.7-0.3 mole 4).
+
+Measured value for the subject salt mixture.
+
+C.
+ 
+
+ 
+
+a
+
+O 0-1 OW FW NH
+
+oO
+
+11.
+12-21.
+22.
+23-27.
+28.
+29.
+30.
+31.
+32.
+33.
+3h.
+
+36.
+
+37.
+38.
+
+Lo.
+hi.
+ho.
+43.
+Lh,
+45.
+46-55.
+56,
+57.
+58.
+59.
+60.
+61.
+62.
+
+L. B. Alexander .
+J. L. Anderson
+S. E. Beall
+
+M. Bender
+
+E. 8S. Bettis
+
+E. G. Bohlmann
+C. J. Borkowski
+C. E. Boyd
+
+R. B. Briggs
+
+R. H. Chapman
+S. J. Claiborne,
+J. W. Cooke
+
+W. B. Cottrell
+B. Cox (K-25)
+
+F. L. Culler
+
+J. H. DeVan
+
+J. R. DiStefano
+S. J. Ditto
+
+A. S. Dworkin
+W. P. Eatherly
+D. M. Eissenberg
+J. R. Engel
+
+D. E. Ferguson
+L. M. Ferris
+
+A. P. Fraas
+
+J. H. Frye
+
+C. H. Gabbard
+R. B. Gallaher
+W. R. Gambill
+R. H. Guymon
+
+P. N. Haubenreich
+R. B. Heimdahl
+H. W. Hoffman
+W. R. Huntley
+P. R. Kasten
+
+R. J. Kedl
+
+J. J. Keyes, Jr.
+0. H. Klepper
+A. I. Krakoviak
+T. S. Kress
+
+ 
+
+59
+
+ORNL-TM-4079
+
+INTERNAL DISTRIBUTION
+
+Jr.
+
+J
+
+63.
+él.
+65.
+66.
+67.
+68.
+69.
+70.
+71.
+2.
+73.
+Th.
+75.
+76.
+7.
+78.
+79.
+80.
+81.
+82-83.
+8h.
+85.
+86.
+87.
+88.
+89.
+90.
+gl.
+92.
+93.
+9k.
+95.
+9%.
+97.
+98.
+99.
+100-102.
+103.
+104-105.
+106.
+
+Krewson
+
+. Lawson
+
+. Lundin
+
+. Lyon
+MacPherson
+. MacPherson
+McCoy
+
+« McCurdy
+
+. McElroy
+
+. McLain
+
+. McNeese
+
+. McWherter
+Meyer
+
+. Miller
+
+L. Milora
+
+R. Mixon
+
+L. Moore
+
+. M. Perry
+
+. Pidkowicz
+
+M. W. Rosenthal
+W. K. Sartory
+Dunlap Scott
+
+J. H. Shaffer
+Myrtleen Sheldon
+J. D. Sheppard
+M. J. Skinner
+
+D.
+
+3 wo
+HBoandEPHQEEQE HQ
+
+GEO nEEagrm
+
+I. Spiewak
+
+D. A. Sunberg
+R. E. Thoma
+D. G. Thomas
+D. B. Trauger
+J. R. Weir
+
+G. D. Whitman
+
+.R. P. Wichner
+
+M. K. Wilkinson
+
+A. M. Weinberg
+
+Central Research
+
+Y-12 Document Reference Section
+Laboratory Records
+
+Laboratory Records — Record Copy
+
+ 
+ 
+
+107.
+108.
+109-111.
+112-113.
+
+114-130.
+131-132.
+133.
+134-135.
+136.
+137.
+138-139.
+140.
+
+60
+
+EXTERNAL DISTRIBUTION
+
+Branch Chief, Special Technology, RDT, USAEC, Washington,
+DC 20545
+
+Director, Division of Reactor Development and Technology,
+USAEC, Washington, DC 20545
+
+Director, Division of Reactor Licensing, USAEC, Washington,
+DC 20545 :
+
+Director, Division of Reactor Standards, USAEC, Washington,
+DC 20545
+
+Manager, Technical Information Center, USAEC (For ACRS Members)
+MSBR Program Manager, USAEC, Washington, DC‘ 20545
+
+Research and Technical Support Division, USAEC, ORO
+Technical Information Center, USAEC
+
+D. F. Cope, RDT Site Office, ORNL
+
+A. R. DeGrazia, USAEC, Washington, DC 20545
+
+Norton Haberman, USAEC, Washington, DC 20545
+
+Kermit Laughton, RDT Site Office, ORNL
+
+o

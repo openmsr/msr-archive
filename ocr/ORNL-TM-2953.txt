@@ -1,0 +1,4104 @@
+ 
+
+   
+
+A
+
+RECEIVED BY brie yy
+
+ 
+
+ 
+
+ 
+
+ 
+
+108 ra 3a operated by - : Co
+
+CL UNION CARBIDE ‘CORPORATION. . NUCLEAR DIVISION 5
+
+EE for the FLA
+us atomic ENERGY COMMISSION
+
+Ea . ORNL ™- 2953
+
+ 
+
+ 
+
+A NEW APPROACH: 10 THE DESIGN OF STEAM GENERATORS
+- FOR MOLTEN SALT REACTOR POWER PLANTS -
+
+ 
+
+- NOTICE This document contains information of a , preliminary nature
+and ‘was prepared ‘primarily for. internal ise ot the Oak Ridge National = .
+
+Laboratory. lt is ‘subject to revision or correction and therefore does _
+- "not represent a final report. LE
+
+ 
+
+© DISTRIBUTION OF THIS DOCUMENT IS UNLMITED.
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+This report was prepared as an account of work sponsored by the United
+States Government. Neither the United States nor.the United States Atomic
+Energy Commission, nor any of their employees, nor any of their contractors,
+subcontractors, or their employees, ‘makes any warranty, express or implied, or
+assumes any legal liability or responsibility for the accuracy, completeness or
+usefulness of any information, -apparatus, product or process disclosed, or
+represents that its use would not infringe privately owned rights.
+
+ 
+
+ 
+
+i.
+
+w)
+
+ 
+a Bo. C
+
+jr a i
+
+“)
+
+ 
+
+ORNL-TM-2953
+
+Contract No. W-Th05-eng-26
+
+A NEW APPROACH TO THE DESIGN OF STEAM GENERATORS
+FOR MOLTEN SALT REACTOR POWER PLANTS
+
+A. P. Fraas
+
+ 
+
+ 
+
+; | This report was prepared as an account of work
+
+.| sponsored by the United States Government. Neither
+i the United States nor the United States Atomic Energy
+“i Commission, nor any of their employees, nor any of
+f their contractors, subcontractors, or their employees,
+"| makes any warranty, express or implied, or assumes any
+legal ‘liability or responsibility for the accuracy, com-
+‘pleteness or usefulness of any information, apparatus,
+product or process disclosed, or represents that its use
+would not infringe privately owned rights, \
+
+ 
+
+ 
+
+ 
+
+JUNE 1971
+
+OAK RIDGE ‘NATIONAL LABORATORY
+Oak Ridge, Tennessee
+Operated by
+UNION CARBIDE COFERATION
+for the
+U. S. ATOMIC ENERGY COMMISSION
+
+DISTRIBUTION OF THIS DOCUMENT iS UNLIM
+ 
+
+ 
+
+<)
+ 
+
+ 
+
+ 
+
+«)
+
+ABSTRACT ...... eee ase ee nares, Ce rtneeeeeieenenae ee
+INTRODUCTION eet cesar see sarete scent etaceenennans Cheese enenenaan
+
+REVIEW OF BOILER DESIGNS PROPOSED FOR MOLTEN SALT REACTOR eens ves
+SYSTEMS
+
+Conventional Shell-and-Tube Heat EXCHANEETS .euvveveneeenenes
+Supercritical Pressure Units .....eeeeecenceeees ean, veuns
+Double-Walled Tubes with a Heat Dam ,..v.cveeeeecncrnicnoeces
+Flash Boiler ......... Cerrvreerrene Ceeeeteetneaseencaranans ..
+
+Loeffler Boiler ....... ere ieneann eet tetieieneereara rae,
+
+Triple Tube Boller ..ie.vveeeeserancnnesesranoionnns seereerees
+Reentry Tube Boiler ............ Craver reverses renrerene ees
+DESIGN FOR GOOD STABILITY AND CONTROL CHARACTERISTICS ..cvvvvveese
+Molten Salt Temperatures at Part Load .....ccceeeveeeaccns cos
+
+Effects of Mode of Control on Steam Temperatures at .........
+Part Load
+
+Heat Transfer Instabilities and Thermal Stresses ............
+Flow Stability Considerations .........c.oviiviinninnnnnnnnas
+Heat Transfer Analysis .....vcveviivieenseins EE
+- Typical Calculations ............. sees enanan Ces ectcensas
+Heat Transfer Coefficients ......c.iiiveriinnneineeennens
+Temperature Differences and Heat Fluxes .....cciveenness
+Pressure Drop ...... eee sernasanans retrain,
+Estimated Performance Characteristics Cree. cenes heeenne
+Effects of Design Heat Ioad on Tube Iength ........0c...
+
+Effects of Design Heat Load on Temperature ..... Cees anes
+Distribution
+
+Effects of Part Load Operation ........ eerie ieee
+Pressure Drop and Pressure Distribution ............ eos
+
+Effects of the Fraction of Heat Added in the ....... ean
+" Inner Tube
+
+Effects of Size of Heat Increment Used ....... veerevenes
+
+Turbine Control Considerations ........ceveeereerecasacacosas
+Limitations on Rates of Change in Ivad .........cv0veees
+ 
+
+ 
+
+ 
+
+iv
+
+CN
+Page \/
+
+PE
+
+Startup and Rates of Change of Load with Proposed ...... 51 :
+System
+
+Possibility of Eliminating the Throttle Valve ......... . 53
+Proposed Design for a Molten Salt Reactor Plant ..,..... eres D4
+REREALETS «oe vnuerernnrennns TO
+General Description ................ estes eenncnenaennn .. 55
+Headering Problems eae ieee a nsvnevanrenvetseronnans 56
+Differential Thermal Expansion cee Chere eae Los 59
+Geometric and Performance Data .......... een eee 61.
+Cost Estimate ee tesereneasaaa aaron esnontrosnenen a. 61
+CONCLUSIONS eevee eeeeeeneeseeennennnnnnnnsnnnnnnnn nnn .. 65
+Recommendations .........c.iciceiiiiiiiniiinnnn oe teeter .» 65
+REFERENCES .....cevveneennnnn FP freee, .. 67
+
+€)
+ 
+
+ 
+
+ 
+
+«) w a C
+
+ul)
+
+ 
+
+ 
+
+ 
+
+-A NEW APPROACH TO THE DESIGN OF STEAM GENERATORS
+FOR MOLTEN SALT REACTOR POWER PLANTS
+
+A. P. Fraas
+
+ABSTRACT
+
+A new type of steam generator has been devised to meet
+‘the special requirements of high-temperature liquid metal and
+molten salt reactor systems, The basic design concept is such
+that boiling heat transfer instabilities and their attendant
+severe thermal stresses are avoided even for a temperature -
+difference of as much as 1000°F between the feedwater and the
+high-temperature liquid, thus giving good control characteris-
+tics even under startup conditions. This is accomplished by
+employing a vertical reentry tube geometry with the feedwater
+entering the bottom of the inner small diameter tube (~/4 in,
+diam) through which it flows upward until evaporated to dry-
+‘ness. The slightly superheated steam emerging from the top
+of the small central tube then flows back downward through the
+annulus between the central tube and the outer tube. A por-
+tion of the heat transferred from the high-temperature liquid
+to the superheated steam in the annulus is in turn transferred
+to the water boiling in the central tube. Design studies in-
+dicate that this type of boiler not only avoids thermal stress
+and salt freezing problems but it also gives a relatively com-
+pact and inexpensive construction. Further, it appears to make
+possible a simple plant control system with exceptionally good
+plant response to changes in load demand.
+
+ 
+
+~ INTRODUCTION
+
+It has heen apparent since early in the molten salt reactor develop-
+ment work that the high melting point of the fluoride salt suitable as
+fuel for molten salt reactors coupled with the thermal stress problems
+inherent in high-temperature liquid systems pose some exceedingly diffi-
+cult problems in the design of steam generators.} These are compounded
+
+by the complexities of two-phase flow and heat transfer problems under
+
+‘boiling conditions, possible difficulties with boiling flow instabilities,
+
+and the problems of obtaining good boiler operating characteristics for
+ 
+
+ 
+
+a wide range of both full power design steam temperatures and pressures
+and under the much reduced pressure and temperature conditions inherent
+in startup and part load operation... Many different attempts to design
+boilers for molten salt reactor systems have been made,!™® but each of
+the approaches proposed has had some serious disadvantages. The startup
+and part load control problems in particular have been so formidable, in
+fact, that no attempt has been made to solve them for many of the designs
+that have been proposed — only full load: design conditions have been con-
+sidered. It is ‘beliéved that the new reentry tube concept proposed in
+
+this report will yield: compact, economical boilers that can be designed
+| for any full power design steam conditions and yet will give good stability
+and control characteristics over : the full range from zero power to full
+power conditions, and further will not present difficult thermal stress or
+salt freezing ‘problems. iN
+
+© A draft of this report substantielly as it now stands was prepared
+and distributed July 15, 1968 to key people in the molten salt reactor
+project at ORNL. . They kindly reviewed the draft. and’ suggested a number
+of additions to help clarify this new approach. By far the most serious
+reservations they had were concerned with boiling flow stability at low
+loads. This required some sort of a test, and the report was held pend-
+ing the availability of funds for a projected test rig. Because of lack
+of funds this rig has hot yet been built.
+
+It happened that basically similar requirements for a steam generator
+arose last year in a program to develop a small isotope power unit. These
+requirements made it important to test a low steam pressure, short tube
+version of the reentry boiler. The results of the tests are now in, and
+good performance was obtained.” Even though these results cover a limited
+range and the steam generator proportions are substantially different from
+" those proposed here for a large central station, the basic concept. appears
+to be validated for the low load portion of the operating regime that was
+most open to question. -As a consequence, it was decided that the report
+should be issued.
+
+CO.
+ 
+
+ 
+
+A}
+
+REVIEW OF BOILER DESIGNS PROPOSED FOR
+MOLTEN SALT REACTOR SYSTEMS
+
+The various boilers that have been considered for use with molten
+salt reactors might be grouped in the categories outlined in Table 1.
+The principel features and major advanteges and disadvantages of each
+are summarized very briefly to help point up the problems and provide a
+framework for the subsequent analysis of the heat transfer, thermal
+
+stress, and control problems.
+Conventional Shell-and-Tube Heat Exchangers
+
+A logical first candidate is a shell-and-tube heat exchanger with
+the salt inside the tubes and the water boiling outside of the tubes.
+Two configurations are included in Table 1. - The horizontal U-shaped tube
+and casing geometry employed for the early pressurized water reactors
+(see Ref. 8, p. 197) has the advantage that not only is differential ther-
+mal expansion between the tubes and the casing readily accommodated with-
+out producing serious thermal stresses, but the difference between the hot
+
+fluid inlet and outlet temperatures will not induce severe stresses in the
+
+header sheet as would be the case for a simple shell-and-tube heat ex-
+
+changer with a U-tube configuration. The major difficulty with this con-
+
+~ ventional U-shaped casing design is that the temperature difference be-
+
+tween the water and the walls of the tubes carrying the molten salt is
+
+far greater than the temperature difference in the nucleate boilihg regime
+so that an unstable vapor blanket would form ‘between the liquid end the
+hot metal surface ‘(see Fig. 1). This leeds to unstable, noisy operation
+
+and severe thermal stresses in the tubes as a consequence of violent ir-
+
+regularities in the heat transfer coefficient.
+
+Supercritical Pressure Units
+
+It has been suggested that these difficulties might be reduced
+through the use of a supercritical water system inasmuch as this would
+
+reduce the temperature difference between the feedwater and the molten
+ 
+
+4
+
+Table 1. Types of Steam Generator that Have Been Proposed for Use vith Molten Salt Reactors
+
+ 
+
+' Shell-Side Tube-Side
+
+ 
+
+ 
+
+Type of Heat . :
+Iten Exchanger Geometry Fluid Fluid Major Problems
+1 Conventional Shell. Vater Salt Excessive temperature difference be-
+
+and-tube, U-tube
+
+ 
+
+   
+  
+
+ 
+   
+ 
+
+ 
+
+   
+ 
+
+ 
+
+ 
+
+  
+
+ 
+
+ 
+
+      
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+] . Coser Water !
+Shell-and-tube with U-tubes in Y= galt
+a {shaped casing for subcritical SN)
+pressure steam ,
+
+Shell-and-tube with
+U-tubes in a U- H0
+shaped casing for
+supercritical pressure
+stean
+Double-valled , Similar to Item 2 but with tubes fabric "
+tubes vith a cated as in the detail shown below: Outer tube
+beat dan - rr fra aa SE] Inner tube
+Flash Boiler HO
+Loeffler Boiler to turbine Stean galt
+Triple Tube Boiler Salt Stean
+) Pressure ’
+Tube Initial
+. Superheat
+Centrifugal 3 Section
+Separator B -
+Steam hf x
+1 Generation
+oI . Bection
+4
+Recirculating 4%
+Water ] N
+Insulation 41 Final
+hE Superheat
+Tube Sheet WW Bection
+H
+Hl = ste
+Feedvater ~mye= 2
+8 Reentry Tube Boiler ; Steen
+
+ 
+
+tween salt and steam gives unstable
+boiling and/or possible freezing of salt.
+Temperature difference between salt in-
+let and outlet streams causes large
+thermal stresses in header sheet and
+casing. : o.
+Excessive temperature difference be-
+
+_ tween salt and steam gives unstable
+
+boiling and/or possible freezing of
+salt.
+
+Similar to above but problems less
+severe at full load, but still serious
+at part load and in startup; large
+preheater required to add 20% of
+
+heat as. preheat.
+
+Severe thermal stresses in porous
+metal region would cause cracking
+
+. and indeterminately large thermal
+
+barrier.
+
+Large number of tube-to-header joints
+required. Not well suited to steam
+
+pressures above about 600 psi. Tends
+to give large heat flux and local salt
+
+“freezing pear spray nozzle end.
+
+large steam drum required coupled with
+heat exchanger and steam pump makes
+the equipment expensive. Operation
+
+is inherently extremely noisy and
+excites vibration.
+
+No suitable vapor seperator is availe
+able, and experience indicates that it
+is unlikely one can be developed.
+Outer tube diameter is inherently
+large and thus requires a thick wall;
+this léads to low heat flux and large
+
+- weight and investment in tube material.
+
+Concept has not been tested at :.
+pressures above £200 psia.
+
+0
+
+€
+
+4
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+     
+    
+
+          
+
+ 
+
+     
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+    
+
+ 
+
+ 
+
+ORNL DWG. T1-5T2L
+<— Interface evaporation ——>—<——— Bubbles lee Film
+< I: = II —>le— I —fe— [V —>le V ><— VI —
+£2
+5 |
+20 =)
+Elz, EE £ |2
+- gxe|283 [a \ 92 2 |§
+uw Pure convection ~ heat 32 258s 22 \=xgl EE |s=
+, — —_— — | = = -
+transferred by superheated wae [SES S| E EEgl =» |E8
+=| liquid rising to the £3 gq |= Bg 28% 5 |%8
+= liquid-vapor interface 22 = @» =
+2 ‘where evaporation gg
+< takes place SEES
+on = 8:5
+3 ~ —_
+aang CY |
+| a | _ 1
+01 10 | 10 100 1000
+
+TooT, °F —>
+
+: Fig. 1. Diagram Showing the Principal Pool-Boiling Regimes and Their
+Relative Position on a Curve for the Heat-Transfer Coefficient Plotted as a
+Function of the Film Temperature Drop (Farber and Scorah, Heat Transfer to
+Water Boiling Under Pressure, Trans. ASME, p. 369, Vol. 70, 1948)
+
+t « — o) - a . (
+ 
+
+ 
+
+salt, reduce the fraction of heat added at low water temperatures, and
+reduce the sharp changes in physical properties associated with the phase
+change from liquid to vapor.2°® In units of this type it is usually con-
+sidered best to have the molten salt outside the tubes and the super-
+critical water and steam flowing inside the tubes. However, while there
+is no sharp phase change, the very rapid changes in density and other
+physical properties near the critical temperature under supercritical
+pressure conditions lead to marked changes in the heat. transfer perform-
+ance and abrupt reductions in the heat transfer coefficient something like
+those associated with the burnout heat flux encountered at subcritical
+pressures.® In addition to these flow and heat transfer phenomena and
+
+the boiling flow instabilities that would be associated with them, there
+would be large, irregularly fluctuating thermal stresses in the tube wall
+in the region near the feedwater inlet of the boiler unit, and these would
+be likely to cause tube cracking and failure. These problems are dis-
+cussed later in some detail.
+
+- Although the use of & supercritical pressure system reduces the
+severity of the boiling flow stability problem for operation near the de-
+sign point,’ a great deal of difficulty has been encountered in all of the
+coal-fired once-through and supercritical pressure boilers in going from
+zero power to part load conditions of at least 10%, and often to as high
+as 30% power. These difficulties stem in part from the large density
+change as the water-steam mixture flows through the boilers and in part
+from the reduced pressure drop at the lower flows which reduces the damp-
+
+ing of the oscillations by turbulence losses.8
+
+Double-Walled Tubes with a Heat Dam
+
+M. E. Lackey suggested in 1958 that one means for. reducing the tem-
+perature difference between the tube wall and the water to avoid film
+boiling conditions would be to incorporate a heat dam in the form of a
+sintered powder matrix between an inner tube carrying the molten salt and
+the outer tube in contact with the boiling water.* This approach would
+
+be quite effective at full power where the average heat flux would be
+
+<)
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0)
+
+high, but would present problems under startup and low power conditions
+because a high heat flux is inherently associated with a large tempera-
+ture drop through such a heat dam. 'A further disadvantage is that dif-
+ferential thermal expansion between the inner and outer tube walls would
+induce severe thermal stresses in the sintered buffer material, and these
+would lead to cracking of the sintered matrix and unpredictable increases
+in the thermal resistance.? |
+‘The cracking problem in the sintered material could be avoided by
+
+using instead an air space &s a heat dam. The OD of the inner tube could
+
+_ be knurled, for example, and the outer tube swaged down onto it. This
+
+would have the disadvantage that differential thermal expansion between
+the inner and outer tubes would probably loosen the swaged joint and give
+an indeterminately large =~ probably excessively large = thermal barrier
+at full load. If this did not happen, thermal stresses would probably.
+
+~ cause cracking of the tubes.
+
+Flash Boiler
+
+In an effort to avoid the difficulties outlined above, a flash boiler
+was proposed in 1955.) In a unit of this type the molten salt would flow
+outside of the tubes and feedwater would be injected in the form of a long
+thin plume of fine spray directed along the axis of the boiler tube.
+
+- Experience in the development of nozzles for diesel engines indicates that
+-a high penetration spray could be obtained with sharp-edged, single-
+
+orifice nozzles having a hole diameter of about 0.020 in.,1° and that
+nozzles of this type would break the liquid up into droplets having a
+
+_ diameter of the order of 0.005 in.ll These droplets would form a long
+
+slender spray plume that would extend for perhaps 2 ft down the bore of
+a 1/2 in. tube. ‘Droplets would impinge on the tube wall at a very low
+
+.angle of incidence, and would tend to skitter along the wall riding on
+‘a thin film of vapor. - Analyses indicated that the local thermal stresses
+
+associated with the cold tracks left by droplets of this sort would be
+well within the elastic limit and should not give difficulties with
+
+thermal stresses.l
+
+.
+ 
+
+A brief series of tests to investigate this concept was run by an
+MIT practice school group.!? These tests showed that there was a strong
+tendency for a large fraction of the droplets to impinge on the tube wall
+in the region close to the injection nozzle, and that this 1ed to such a
+pronounced cooling effect that a frozen film of molten salt tended to form
+on the outside of the tube in that region, 12 The tests had been initiated
+on the premise that they offered an attractive way to provide for emer-
+‘gency cooling of the ART fuel dump tanks; hence the test work was termi-
+nated with the demise of the ANP program. No further work on the concept
+was carried out because it inherently requires a very large number of tubes
+of rather short length so that the tube-to-header joint costs tend to be-
+come excessive. Further, the concept does not appear to lend itself well
+
+to high pressure and supercritical pressure steam systeas.
+
+Loeffler Boiler
+
+The Loeffler boiler concept used in a few coal-fired steam plants
+has been considered.® Systems of this sort have been built and operated
+for coal-fired furnaces. Operation apparently has been satisfactory ex-
+cept for the extremely high noise level associated with the boiler and
+difficulties with the steam pumps required. The Loeffler concept entails
+admission of. saturated steam to a heat transfer matrix heated by molten
+salt. The superheated steam leaving this matrix would be divided into
+two portions, one of which would flow to the turbine and the other would
+be returned to a boiler drum where it would bubble through the water in
+~ the drum. This approach has the disadvantages that it requires large
+and expensive boiler drums, implosion of the vapor bubbles in the boiler
+drum makes operation extremely noisy and induces violent vibration ex-
+citing forces, the relatively poor steam-side heat transfer coefficient
+-and low enthalpy rise lead to a large number of tube-to-header joints,
+and steam pumps posing tough design and reliability problems are required
+to recirculate steam through the boiler. On the other hand, the system
+has the advantage that it lends itself readily to startup and part load
+operations, it virtually eliminates the possibility of salt freezing as
+ 
+
+ 
+
+”
+
+1)
+
+a consequence of excessive cooling in the steam generator, and it greatly
+eases the thermal stress problems by substituting a salt-to-steam heat ex-
+
+changer for the salt-to-water boiler.
+
+Triple Tube Boiler
+
+When the writer solicited criticisms and suggestions on the proposed
+new boiler concept, M. E. Iackey pointed out that B. Kinyon and G. D.
+Whitman had proposed a somewhat similar boiler in 1960, (Ref. 6), and
+S. E. Beall pointed out that a variation of this approach had been tested
+
+as a means for cooling fuel dump tanks.1? The arrangement proposed by
+
+Kinyon employed three concentric tubes with boiling water flowing upward
+
+through the inner annulus to a vapor separator and superheated steam flow-
+
+ing down through the outer annulus. The central passage would serve to
+return the water from the vapor separator to a boiler water recirculating
+pump. This arrangement has the advantage that the superheated vapor in
+the annulus between the outer tube heated by the molten salt and the tube
+
+. containing the boiling water would act as a buffer both to eliminate ser-
+
+ious thermal stresses and to avoid excessive metal temperatures adjacent
+
+to the boiling water. The arrangement has the disadvantage that it re-
+quires a fairly large tube diameter and hence a fairly large ‘tube wall
+thickness for supercritical water systems. Thus, the amount of heat trans-
+fer surface area required tends to be large because the principal barrier
+to heat transfer lies in heat conduction through thick tube walls. Fur-
+
+“ther, the arrangement requires the development of a vapor separator that
+
+would fit within a small diameter, preferably that of the tube. Experience
+in vapor separator development indicates that the velocities. required for
+good vapor-liquid separation: are much lower than those one would like to
+use in the tube for heat transfer purposes, and hence a rather bulky pro-
+tuberance would have to be employed at the end of each tube; this appears
+
+to lead to a set of extremely awkward mechanical design problems.
+ 
+
+10
+
+Reentry Tube Boiler
+
+The boiler proposed in this report is somewhat similar to the one
+described above but differs in that it makes use of only two vertical,
+concentric tubes in the form shown in Fig. 2. The water enters at the
+bottom through a central tube having a diameter of about 1/h in. Pre-
+heating and boiling occur as the’ water rises in “this tube until evapora-
+tion is complete, after which there is some superheating. The steam
+emerges from the top end of the small diemeter tube, reverses direction,
+and flows back downward through an annulus’ between the inner “small tube
+and an outer tube having an ID of ‘around 1/2 in. The molten salt enters
+at the bottom, flows upward around the outer ‘tube, and out the top. With
+this arrangement there is only one header sheet separating the molten salt
+from the atmosphere, and this header sheet is not subject to a large pres-
+sure differential. Thermal sleeves would be used at the header sheet to
+minimize thermal stresses (see Fig. 3). There would be no high pressure
+header sheets in this system; the tubes for the high pressure feedwater
+and the exit steam would be manifolded as in high pressure coal-fired
+boilers rather than run into header sheets. The steam annulus between
+the inner and outer tubes would act as a buffer to isolate the relatively:
+low-temperature boiling water region from the high- temperatire molten salt.
+
+This isolation would be so effective ‘that it would be quite possible to
+| heat the unit to the molten salt operating temperature with no water in
+the system and then slowly add water to initiate boiling. As will be
+shown later, it should be possible to design the unit so that it would
+operate stably over a wide range of" conditions from zero load to overload
+with no difficulties from thermal ‘stresses or freezing of the salt.
+
+It might at first appear that the extra heat ‘transfer films through
+which heat must be transmitted from the molten salt to the boiling water
+might lead to a large increase in surface area requirements and hence in
+the size, weight, and cost of the unit. However, it appears quite pos-
+sible to design so that these disadvantages are more than offset by such
+features as the absence of a high-pressure header sheet and the ability
+to operate with high-temperature differences between the molten salt and
+
+the boiling water so that the overall size, weight, and cost of the unit
+
+LO
+
+«
+3
+
+ 
+
+ 
+
+ 
+
+o)
+
+LH
+
+11
+
+. ORNL DWG. T1-5T725
+
+ 
+
+Steam
+
+Salt
+
+ 
+
+ 
+
+ 
+
+ 
+
+Water
+
+ 
+
+ 
+
+Fig. 2. Diagram Showing Section Through Tube.
+ 
+
+12
+
+ORNL DWG. T1-5726
+
+OUTER TUEE FOR
+SUPERHEATER
+
+THERMAL SLEEVE
+
+HEADER SHEET
+
+WELD
+
+     
+
+JOANNA YY
+
+WIZZ gd TAIT 2X TI TT TT TT ddd dt TIT
+
+ 
+
+ 
+ 
+
+LE EE EE er ee oe or nd =r
+
+  
+
+Le EE EEE YE apg pageras game gparrgurap engrossed
+
+CT Tr CT EE TET ETT TT TTT Tees?
+
+ 
+
+1 <
+
+ 
+
+DOSS SN SAANSANAAAAN ANANDA SANSA R NRA NANMAINANA NN NANN NN NN
+
+ 
+
+AIR
+
+=]
+3
+3
+:
+=
+
+o
+
+Section Through the Header Sheet Region Showing Two
+
+Typical Tubes with Their Thermal Sleeves and the Associated Welds.
+
+Fig. 3.
+ 
+
+ 
+
+ 
+
+ 
+
+Ei
+
+oy
+
+9
+
+15
+
+are at least competitive with the corresponding values for any other de-
+
+"sign that has been proposed.
+
+DESIGN FOR GOOD STABILITY AND CONTROL CHARACTERISTICS
+
+The usual procedure in developing a design for a steam generator has
+been to choose a geometry, establish the proportions for full power condi-
+tions, and then — sometimes — examine the full range of control problems.
+The inverse order seems at least equally logical and is followed here. The
+writer has felt from the beginning that some of the most difficult condi-
+tions to be met are those associated with initial startup and part load op-
+eration. Thus, the first step in the evaluation work was to establish a
+typical set of molten salt and steam temperatures, and from these, using
+basic heat balance considerations, deduce the ‘effects of different modes
+of control for the various load conditions of interest. This approach gives
+
+a valuable insight into the full range of the over-all design problems.
+
+‘Molten Salt Temperatures at Part Load
+
+Several different approaches can be taken to the control of a molten
+salt reactor steam power plant. Perhaps the simplest and most reliable ap-
+proach is to make use of constant speed ac motors to drive pumps in both
+the fuel circuit. and the intermediate salt circuit. If this is done, the
+
+temperature rise in each salt circuit will be directly proportional to the
+
+load so that the circuits will ‘be isothermal at zero power. The basic heat
+
+transfer relations are such. that ‘the temperature difference between the two
+
+‘salt circuits will also be directly proportional to the load and will drop
+
+to zero at zero load. If there is no control rod movement in the reactor,
+the zero load reactor temperature will be the mean of the inlet and outlet
+
+fuel temperatures at full load. - These effects are shown in Fig. 4a for op-
+
+| eration with constant speed fuel and inert salt pumps. Note that both the
+
+minimum and the mean temperatures of the inert salt rise as the load is
+reduced — an undesirable characteristic from the standpoint of the design
+
+of most steam generators. This situation can be changed by holding the
+
+ 
+ 
+
+14
+
+ORNL DWG. T1-5T27
+
+1300
+
+1200
+
+1100
+
+1000
+
+1300
+
+Temperature (°F)
+
+1200
+
+leo
+
+1000
+
+ 
+
+e 20 ko 60 80 100
+fe (%) |
+
+Fig. 4. Temperature Distribution in the Fuel-to-Inert Salt Heat
+Exchanger for & Series of Loads for Two Control Modes, i.e., a) constant
+speed pumps and & constant mean fuel temperature, and b) constant speed
+puzps and & constant reactor fuel inlet temperature.
+
+a
+ 
+
+ 
+
+ 
+
+ 
+
+»n
+
+’)
+
+15
+
+reactor inlet temperature constant in which case the temperatures in the
+fuel and inert salt circuits would be defined by the curves in Fig. 4b.
+The fuel inlet temperature ought not be reduced below the value shown be-
+cause it is desirable to maintain the fuel at least 100°F above its freez-
+ing point. Other effects could be obtained by varying the speeds of the
+fuel and/or inert salt pumps, but the resulting complications — particu-
+larly at or near zero load - are quite objectionable.
+
+After analyzing a variety of power plant control modes it was decided
+that the simplest system would be the most reliable and should be used for
+
+- the bulk of this study. The approach chosen is believed to be the simplest
+
+possible, i.e., it assumes a constant mean fuel temperature end constant
+speed pumps for both the fuel and the inert salt irrespective of load.
+
+Effects of Mode of Control on Steam
+Temperatures at Part Load
+
+The inherent effects of typical control modes on the temperature dis-
+tributions that will result as a consequence of fundamental heat balance
+considerations are shown in Figs. 5, 6, and 7 for the full range of load
+conditions. It can be seen from examination of these curves that the steam
+outlet temperature will rise as the load is reduced because the temperature
+difference between the two fluid streams in a heat exchanger drops off with
+a reduction in the heat flux, This problem arises in the control of any
+steam plant that is coupled to a high-temperature reactor whose mean tem-
+perature is held constant.14 To avoid demage to the turbine, the steam
+temperature could be reduced at part load by introduction of a desuper-
+heater between the steam generator and the turbine. The available desuper-
+heater units may not be well suited to this particular application, but
+the design of a suitable unit would be straightforward. However, it is
+apparent that high steam temperatures under part load conditions would ser-
+iously increase the creep stress problem in the steam system if it were
+to operate with a constant boiler discharge pressure, The problem could
+be eased by scheduling the reactor mean temperature so that it would in-
+crease with power output. One way of doing this would be to maintain the
+
+reactor inlet temperature constant and allow the temperature rise in the
+
+ 
+ 
+
+16
+
+ORNL DWG. T1-5728
+1200
+
+1100
+
+© 1000
+
+TEMPERATURE (°F)
+
+700
+
+ 
+
+500 - »
+0 20 60 80 100
+
+Lo
+AR (%)
+
+Fig. 5. Effects of Operation with a Constant Mean Fuel Temperature
+on the Temperature Distribution Through the Boiler for Typical Loading
+Conditions, Iocel temperatures are plotted as functions of the fraction
+of the heat transferred to the water from the molten salt (i.e., M/Q).
+For this set of curves it was assumed that the effective boiler tube’
+length would be varied with the load to maintain a constant temperature
+end pressure at the superheater outlet.
+ 
+
+ 
+
+ 
+
+9
+
+”
+
++)
+
+17
+
+~ ORNL DWG. T1-5T29
+
+  
+ 
+ 
+
+ 
+
+Temperature (°F)
+
+    
+  
+
+5004
+
+ 
+
+60 100
+
+ 
+
+=
+80/0 (%)
+
+Fig. 6. Effects of Operation with a Constant Reactor Fuel Inlet
+Temperature on the Tempergture Distribution Through the Boiler for Typi-
+cal Load Conditions. Local fluid temperatures are plotted as functions
+of the fraction of the heat transferred from the molten salt (i.e.,
+M/Q). For this set of curves it was assumed that the effective boiler
+tube length would be varied with the load at any given condition to main-
+tain a constant temperature and pressure at the superhester outlet,
+ 
+
+ 
+
+18
+
+~.
+
+ORNL. DWG. T1-5T30 \o/
+1200 ‘ :
+
+in
+
+1100
+
+1000
+
+700
+
+TEMPERATURE (°F)
+
+1300
+
+ 
+
+200, 20 40 8 100
+
+4QR Co.
+Fig. 7. Inert Salt and Steam Temperatures &s & Function of the Co
+
+Fraction of the Heat Transferred from the Salt to the Steam for a Series ,
+
+of Design Heat Loads with the Steam Pressure Directly Proportional to Co
+
+the Heat Load. . J
+ 
+
+ 
+
+fn
+
+4)
+
+19
+
+fuel salt to increase in direct proportion to the load. If this were done,
+the temperatures in the inert salt and steam circuits would vary with load
+as indicated in Fig. 4b. This control schedule for the salt circuits was
+assumed in preparing a few of the boiler performance estimates presented
+later in this report to show that this arrangement might reduce or elimin-
+ate the need for desuperheating the steam under part load conditions at
+the expense of complicating the reactor control problems.
+
+The curves of Figs. 5 and 6 were calculated on the basis that the
+boiler would be operated in the conventional fashion with a constant steam
+discharge pressure of 4000 psi, and the pressure of the steam supplied to
+the turbine would be reduced by a throttling valve. However, there are a
+number of advantages associated with operating a steam boiler-turbine-
+condenser-feed pump system with no throttle valve between the boiler and
+the turbine so that the steam pressure is determined by the flow rate
+through the critical pressure drop orifice represented by the inlet nozzle
+box of the first stage of the turbine. One of the more important. of these
+advantages in this instance is that, if the steam system were designed so
+that the boiler discharge pressure would be directly proportional to the
+
+load, the higher boiler temperatures would be associated with lower pres-
+
+sures, and the creep stresses in the boiler tube wall would not be exces-
+
+sive. If this were done, to a first approximation the boiler pressure will
+
+be directly proportional to the load, and curves for the steam temperature
+
+- ag a function of the amount of heat added on the water side will be as in-
+
+dicated in Fig. 7 for a typlcal case. Not surprisingly, calculations pre-
+
+“sented later in the report show that the tube- length to evaporate to dry-
+
+ness is much the same irrespective .of the boiler pressure at a given load.
+However, the pressure drop through the boiler under part load conditions
+is much higher if the pressure is directly proportional to the load than
+if the boiler were operated at a constant pressure. = Increasing the pres-
+sure drop at part load is advantageous in that it will much improve the
+boiling flow stability.
+
+ 
+
+Heat Transfer Instabilities and Thermal Stresses
+
+One can sense intuitively that severe thermal stresses might be induced
+
+by the wide variations in the heat flux — and hence the transfer coefficient
+ 
+
+ 
+
+20
+
+that can occur with changes in the difference in temperature between the:
+metal wall and the saturation temperature of a boiling liquid (see Fig. 1).
+However, it is not obvious just how these thermal stresses may be related
+to fluctuations in the boiling heat transfer coefficient, how large they
+may be, or why they may be more severe at low loads than at the design
+point, and M. Rosenthal asked that this short: section be. added to clerify
+the problem, particularly for a unit designed for supercritical operation.
+It should be noted that for some time it was thought that.this problem
+could be avoided by going to supercritical water pressures, but severe
+cracking of tubes in coal-fired supercritical boilers showed that, un-
+fortunately, this is not the case.? Detailed investigations of -boiling
+heat transfer relations in the supercritical pressure regime have shown
+that large variations in heat transfer coefficient still occur, particularly
+at high heat fluxes, i.e., if there is a large temperature difference be-
+tween the metal wall and the bulk -free stream® (see Fig. 8).
+
+To illustrate the problem, consider a short section of INOR-8 tubing
+with supercritical pressure water at 690°F inside end molten salt at 1150°F
+flowing outside the tube with a salt heat transfer coefficient of 1000
+
+Btu/hr-£t3-°F. The thermal conductivity of the wall is about 12 Btu/hr-ft:-°F.
+
+The thickness is 0.10 in., and hence the conductance of the wall would be
+about 1440 Btu/hr-ft?-°F, and thus the temperature drop through the tube
+wall would be about 70% that through the salt film on the outer wall. Two
+very different operating regimes are possible. : Assuming that the curves of
+Fig. 8 define the heat transfer situation on the water side, the heat flux
+“where the water-steam enthalpy ran 780 Btu/lb could be ~100,000 Btu/hr or
+at a nearby point downstream where ‘the enthalpy reached 900 Btu/1b it could
+be 150,000 Btu/hr. The resulting film and wall temperatures and tempera-
+ture drops cen be summarized in Table 2.
+
+Changing the radial AT through the tube wall from 70°F to 105°F at
+power, and to O°F at no load would lead to differential thermal expansion
+between the inner and outer surfaces and hence to both circumferential and
+axial stresses that would be superimposed on the basic pressure stresses.
+Power cycling and changes from one heat transfer regime to the other would
+cause thermal strain cycling, and this could eventually lead to cracking
+
+.and failure. The problem would be much worse at subcritical pressures
+
+O
+ 
+
+ 
+
+ 
+
+#)
+
+9}
+
+21
+
+ORNL DWG. T1-2175
+1200 I I I I T
+
+irs I- STEAM AT 3300 Ps -
+
+ 
+
+uso | 6 = 340,000 LBS/FT2-HR —
+: ~~. D= 0.033 FT
+
+nas f- | —— EXPERIMENTAL |
+
+CURVES (SHITSMAN) —
+
+— — MACADAM'S
+
+CORRELATION (BULK
+
+PROPERTIES)
+
+ 
+
+  
+   
+
+noo |-
+1075 |-
+1050 |-
+1025
+1000
+975
+950
+925
+900
+875
+
+850
+
+ 
+
+ 
+
+WALL TEMPERATURE, °F
+
+ 
+
+825
+800
+775
+750
+
+725
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+700 bo ] 1 1
+600 700 800 200 1000 1100 1200
+
+“BULK ENTHALPY, BTU/LB
+
+Fig. 8. Deterioration in Heat Transfer Near the Critical Tempera-
+
+ture in Supercritical Pressure Once-Through Steam Generator Tubes Operat-
+
+ing at High Heat Fluxes. (M. E. Shitsman, Impairment of Heat Transmission
+
+‘at Supercritical Pressures, Teplofizika Vysokikh Temperatur, Vol. 1, No. 3,
+
+p. 267, 1963)
+ 
+
+22
+
+Table 2. Effects of Heat Flux on the Radial Temperature
+Distribution Through an Element of Tube Wall in the
+Inlet Region of a Simple Shell-and-Tube Molten Salt
+Steam Generator at Supercritical Pressure Conditions
+
+ 
+
+Water-steam enthalpy, Btu/1b 785 "900
+Heat flux, Btu/hr-ft? 100,000 150,000
+Salt free steam temperature, °F 1,150 . 1,150
+Tube outer wall temperature, °F 1,050 1,000
+Tube inner wall temperature, °F 980 895
+Water temperature, °F 690 705
+Salt film AT, °F 100 ~~ 150
+Wall AT, °F 70 105
+Water film AT, °F © 290 1190
+
+ 
+
+where the change in heat transfer coefficient with enthalpy is both larger
+and more abrupt (see Fig. 9). The problem could be eased somewhat by re-
+ducing the molten salt temperature to 1000°F for startup and low power
+conditions, but it would not be eliminated.
+
+Observations of tubes transferring heat to water at supercritical
+pressures have shown that both of the regimes of Table 2 will be present,
+i.e., some sections of the tube will operate at a lower wall temperature
+and a high heat flux while others will operate at a higher temperature and
+a lower heat flux. Further, these regimes tend to shift back and forth
+axially along the tube with changes in water flow rate. This leads to
+another type of thermal stress. Dilation of the hot region relative to
+the cooler region leads to bending stresses in the tube wall, and these
+stresses are likely to be severe because the shift from one heat transfer
+regime to the other tends to be abrupt and the transition zone is short.
+These stresses are analagous to those in thermal sleeves, and can be cal-
+culated in the same way (see Ref. 8, p. 125). Unfortunately, data for
+typical axial temperature distributions are not at hand to provide a good
+basis for estimating the magnitude of these stresses.
+
+At first thought it would appear that at light loads the above prob-
+lems would be eased because the average heat flux would be greatly reduced.
+ 
+
+ 
+
+[2]
+
+ 
+
+23
+
+ORNL DWG. T1-5731
+
+   
+
+       
+
+Nucleate Convective 4 Convective
+{ boiling boiling film
+Boiling Liquid ~~ Poling steam
+J starts deficiency
+
+    
+  
+ 
+  
+  
+
+High heat fiux
+
+=
+
+!
+1
+| Medium heat flux
+
+Medium heat fu |
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+t : '
+2 | Co
+5 ' Low heat flux I
+oO
+8 1
+y !
+£ |
+F | a
+5 sl
+T | ===
+3 Pood
+I iy Burn-out ~
+| <-Subcooled water <~—Steam-water—————— > -<-Superheat >
+1 Se Enthalpy +
+Saturated ~ Saturated
+water steam
+
+Distance from inlet —>-
+
+Fig. 9. Effects of Heat Flux on the Heat-Transfer Coefficient for
+
+a Once-Through Boiler Tube (Polomik et al., Heat Transfer Coefficients
+
+with Annular Flow During "Once-Through" Boiling of Water to 100% Quality
+at 800, 1100, and 1400 psi, Jour. of Heat Transfer, Trans. ASME, p. 81,
+
+Vol. 86-2, 1964)
+ 
+
+24
+
+However, this is not the case, The bulk of the heat transfer occurs at
+the water inlet end because the temperature difference there is inherently
+high irrespective of load, and it is the high-temperature difference that
+gives the possibility of two drastically different temperature regimes.
+Thus reducing the heat load simply reduces the length of the region in
+which severe thermal stresses may be induced — it does not eliminate the
+problem, In fact, if the pressure is reduced, the boiling point of the
+water will drop and the temperature difference that can be induced in the
+tube wall will be increased.
+
+The above effects are complex and, in many respects, rather subtle,
+but they are the reason for turning from the conventional shell-and-tube
+heat exchanger geometry to the reentry tube construction proposed in this
+report.
+
+Flow Stability Considerations
+
+In a conventional coal-fired boiler the pressure drop in the boiling
+
+region is rather low in recirculating boilers, but the overall pressure
+
+‘drop is fairly high because the pressure drop through the superheafer is
+
+substantial. In once-through boilers, particularly in supercritical pres-
+sure steam plants, the boiler pressure drop is large, commonly 20% of the
+boiler inlet pressure. This stems in part from efforts to get a high heat
+transfer coefficient on the steam side, in part from the long tubes made
+necessary by the relatively low average heat transfer coefficient on the
+combustion gas side, and in part by stringent orificing at the tube inlets
+to assure a flow distribution across the tube bank such that it will be
+possible to avoid burnout in regions where the local heat flux may be high
+as a consequence of irregularities in the hot gas flow on the combustion
+gas side of the boiler. These irregularities in the local hot gas tempera-
+ture and heat flux vary substantially with the heat load on the boiler,
+the fuel used, and the peculiarities and irregularities in the gas turbu-
+
+‘lence pattern in the combustion zone. ' Fortunately, in a molten salt-heated
+
+boiler not only can the tube wall never exceed the temperature of the
+molten salt so that severe overheating of the tube wall is not a, problem,
+
+but the molten salt temperature and flow distribution can be predicted
+
+OC
+ 
+
+ 
+
+ 
+
+ 
+
+»
+
+25
+
+within quite close limits instead of being subject to the vagaries in the
+large-scale turbulence that are characteristic of combustion zones in fur-
+naces. As a consequence, a steam generator for a molten salt reactor can
+
+be designed to give a much higher average heat flux and yet a lower peak
+
+“heat flux than can be obtained in a conventional coal-fired boiler. This
+
+directly reduces the tube length and hence the pressure drop. In addition,
+
+-1t reduces the need for orificing to control the water flow distribution
+
+through the boiler. As a consequence, it is believed that it will be pos-
+
+sible to design for lower water pressure drops through steam generators for
+
+molten salt reactors than are ordinarily required for coal-fired boilers.
+This will reduce both the power requirements for the boiler feed pump and
+the tube wall thickness required for the feedwater piping.
+
+Heat Transfer Analysis
+
+Estimating the heat transfer performance of the reentry tube steam
+generator involves a set of implicit relations that make an explicit solu-
+tion out of the question and even an iterative solution surprisingly tricky.
+This stems from the wide variety of combinations of conditions that may
+
+occur in the boiler depending on the steam pressure, temperature, and flow
+
+‘rate. The problems have much in common with, but are more difficult than,
+
+those of steam generators for high-temperature gas-cooled reactors.l% The
+
+steam conditions were chosen to be essentially the same as those of Eddy-
+stone Unit No. 2, which was used as the basis for an earlier study, 15 The
+
+feedwater temperature and flow rate, the exit steam pressure, and the mol-
+
+- ten salt inlet and outlet temperatures are ordinarily given. From these
+
+data it is possible to estimate a steam outlet temperature and from heat
+
+balance considerations draw a set of curves such as those of Fig. 5 which
+show the temperatures of the molten salt and the steam as functions of the
+fraction of heat added to the steam in the course of its transit through
+
+the boiler. Figure 7 shows a similar set of curves for a series of lower
+
+pressures and lower loads; in this instance the pressure was taken as di-
+
+‘rectly proportional to the load, a good approximation to the natural charac-
+
+teristics of a steam boiler-turbine-condenser-feed pump system in which no
+
+throttle valve is employed. Figures 5 and 7 illustrate one of the
+ 
+
+ 
+
+26
+
+difficulties in setting up an iterative calculation. Whereas the steam
+temperature for the supercritical condition of Fig. 5 is uniquely defined
+as a function of the fraction of heat added to the steam, this is not the
+case for subcritical steam pressure conditions where the steam temperature
+is essentially independent of the amount of heat added over a wide range
+of heat addition. In attempting an iterative solution one can calculate
+stepwise upward from the bottom of the tube using as his points of depar-
+ture the given feedwater inlet conditions and the assumed steam outlet con-
+ditions. The stepwise calculations can be continued. to a point at the top
+of the inner tube where evaporation would be completed or the steam super-
+-heated somewhat. = It is also possible to assume a set of steam conditions
+at the outlet of the inner tube and mske stepwise calculations from the
+top downward to the feedwater inlet end accepting the superheater outlet
+temperature that results. The difference in the character of the relations
+between the various load conditions of Figs. 5 and 7 lead to some conver-
+gence problems in either case. These, in turn, make it necessary to modify
+the calculational procedure somewhat depending on the steam conditions.
+Both methods have been used in this study, end both have been found to be
+not only awkward but demanding in that they require good engineering Jjudg-
+"ment to choose values that will yield convergence. However, no better ap-
+proach has been found in spite of some months of effort by both MIT gradu-
+ate students who became interested in the problem and by the authors of
+Ref, 7.
+
+Typical Calculations
+
+The steps followed in estimating the boiler tube length, temperature
+distribution, and pressure drop on the water side are summarized in Table 3,
+and a set of typical calculations is shown in Table 4. The first set of
+calculations was made for the 100% load condition. The first step in the
+calculations was to start at the bottom, or salt inlet end, and assume a
+decrement in the enthalpy of the salt. This was chosen to be 10% or the
+expected value for the boiler. For a given tube geometry the surface areas
+of the inner and outer tube walls per unit of length are defined and
+
+hence the area per increment of length is readily calculated. For good
+
+om
+ 
+
+ 
+
+ 
+
+27
+
+" Table 3, Calculational Procedure for Establishing the Tube
+Length for a Given Set of Design Conditions
+(see nomenclature in latter portion of table)
+
+ 
+
+»
+
+12.
+
+Plot curves for the salt and steam temperatures as functions of M/qQ
+from the inlet to the outlet (e.g., Fig. 7).
+
+Specify the tube diameters and wall thicknesses.
+
+Compute the overall heat transfer coefficients for the inner and
+outer tube walls (e.g., use Fig. 11).
+
+For convergence in the iteration, the heat transferred from the salt
+to the annulus steam near the superheater outlet must be greater than
+the heat transferred from the annulus steam to the water in the cen-
+ter tube per unit of length, i.e., ViAjAt)/ISUsAxAt,/L. This will
+probably require an inner tube liner to provide a heat dam near the
+bottom. To minimize the overall tube length, this liner should be
+terminated as soon as this can be done and still maintain
+
+Ui A146, / I>U-ALAL / IL.
+
+Estimate the mean temperature of the. salt, annulus steam, and boiler
+water for the first increment of tube length using the ratio of the
+heat added to the steam in the outer annulus to the total heat removed
+
+- from the salt and the curves of item 1 above (e.g. , Fig. 7).
+
+Using the above as the starting point, follow the calculational pro-
+cedure of Table 4 using constant increments in AQ;, the enthalpy
+change in the molten salt.
+
+Compute AL, that is
+
+My
+T UpAr 4%, /L
+Compute AQ; for the value of AL found in item 7 (Qs = UphpALAL/L).
+
+Repeat steps 6, 7, and 8 for a better approximation if the changes in
+mean temperatures yielded by these steps differ by more than 20% from
+the values estimated in step 5.
+
+Repeat the above for new increments of length using the same incre-
+ment in AQ; until TAQ; = @Q. oo :
+
+If there is trouble with convergence, change the value of Uj by chang-
+ing the length or effectiveness of the heat dam near the feedwater in-
+let, It may also be advisable to change the proportions of the tubes.
+
+For part load calculations, be careful to assume a small temperature
+difference between the salt and the superheated steam for the first
+increment in tube length if the temperature distribution along the
+full length is desiréd, If the superheater exit temperature exceeds
+by more than 100°F the value assumed for the part load condition, new
+curves similar to those of Fig. 7 should be prepared. If instead one
+wants a rough indication of the active tube length at part load, com-
+pute a case as if it were a design point and compare the resulting
+length with that for the 100% load condition.
+ 
+
+28
+
+Table 3. Nomenclature
+
+ 
+
+Outer tube effective heat transfer surface area, £2
+
+Inner tube effective heat transfer surface area, ft2
+
+ID of outer tube, in.
+
+ID of inner tube, in.
+
+Friction factor for salt
+
+Friction factor for steam in superheater annulus
+
+Friction factor for steam in inner tube
+
+Mass flow rate of salt, 1b/ft2 «sec
+
+Mass flow rate of steam in superheater annulus, 1b/ft2-s
+Mass flow rate of steam in inner tube, 1b/ft2-sec
+
+Tube length (or distance from bottom of tube), ft
+
+Increment in tube length, ft
+
+Number of increment
+
+Steam pressure, psia
+
+Steam pressure drop in superheater annulus in increment, psi
+Steam pressure drop in inner tube in increment, psi
+
+Heat removed from molten salt, Btu/hr- tube
+
+Net heat added to steam in superheater annulus, Btu/hr. tube
+Net heat added to steam in inner tube, Btu/hr: tube
+
+Heat removed from salt in increment, Btu/hr
+
+Heat added to steam in superheater annulus in increment, Btu/hr
+Heat added to steam in inner tube in increment, Btu/hr
+
+. Dynamic head in superheater annulus, psi
+
+Dynamic head in central boiler tube, psi
+Reynolds number for salt
+Reynolds number for superheated steam in annulus
+
+- Reynolds number for steam in inner tube
+
+Local temperature of molten salt, °F
+
+Local temperature of superheated steam in annulus, °F
+
+Local temperature of steam in inner tube, °F
+
+Local temperature difference between salt and steam in super-
+‘heater annulus, °F
+
+Toocal temperature difference between steam in annulus and steam
+in inner tube, °F
+Specific volume of steam in superheater annulus, ££3/1b
+Specific volume of water-steam mixture in inner tube, f £t3/1b
+
+ 
+
+.O
+ 
+
+ 
+
+   
+
+ 
+
+Mable 4. Typical Calculations] Worksheet for a Single Boiler-Superheater Tube
+
+ 
+
+Steam pressure, psia = 4000 Fraction of reference design load, % = 100 Outer tube OD, in. = ,65. Total tube length, ft = 32,97
+Steam temperature leaving inner tube, °F = 745 Superheater temperature out, °F = 1045 Outer tube ID, in, = ,50 Pressure drop through inner tube psi = 38.3
+Salt temperature in, °F = 1200 Feedvater temperature in, °F = 560 Inner tube OD, in, = .25 = Pressure drop through annulus, psi = 14.4
+Salt temperature out, °F = 950 Water enthalpy rise, Btu/lb = 886 Inner tube ID, in. = .23 Total pressure drop through boiler-superheater, psi = 52.7
+Heat load per tube, Btu/br = = Q, = 650,000 Vater flow per tube, 1b/sec = 0,204 .
+® Fractional change in salt enthalpy in increment 8/0 .10 .10 .10 .10 .10 .10 .10 .10 .10 .10
++ (@) Etective surface area of outer tube, ££2/ft aL L152 .152 .152 .152 152.152 .152 .152 .152 .152
+() Effective surface area of inner tube, ££2/f% AJL .052  .052  .052  .0s2  .052  .052  .052  .052  .052  .052
+® Overall heat transfer coefficient for outer tube, 0, . 667.6 667.6 667.6 667.6 667.6 667.6 667.6 667.6 667.6 667.6
+Btu/hr. £2. °F .
+® Qreraly eat transfer coefficient for immer tube, om, 300 300 300 7 1145.5 1145.5 1145.5 1145.5 1145.5 1145.5 1145.5
+23 oo
+©) meat transfer through o outer. tube per unit of length per ' UiAy/L 301.4 10L.4. 101.4  10L.4 100.4 100.4 10.4 101.4 100.4 10L.4
+°F, Btu/hr. ft. °F oo !
+(@) Beat transfer through inner tube per unit of length per Updp/L © 15.7 15.7 15.7 59.6 59.6 59.6 59.6 59.6 59.6 = 59.6
+°F, Btu/hr. ft. °F )
+. o
+(©) wlten salt temperature, °F (mean for increment) ty Fg. 7 1190  .1164 1139  1M2 © 1087 © 1062 = 1038 1012 987 962 0
+(© stean temperature in outer tube, °F (mesn for increment) t see (I) 1030 1016 958 907 8&2 80 8&7 92 THO 752
+® Stean temperature in inner tube, °F (mean for increment) ts see @ 585 575 605 630 660 692 708 720 728 729
+@) Temperature drop from salt to steam in annulus, °F am -® 160 ue 181 205 215 212 a 220 27 210
+© Temperature drop from stean in annulus to steam in immer AT, ® - ® 445 © 441 353 277 212 158 119 72 42 23 .
+” tube, °F ’ .
+© Increment in length, ft AL &/ © 4.006 4,331 3.542 3.127 2.962 3.024 3.038 2.904 2.95% . 3.052
+@) Distance from bottom, ft Lye 4.006 2337 11.87% 15.006 17.988 21.012 24.050 26.964 20.918 32.970
+@ Beat added to steam in inner tube, Btu/hr om OOO 27,991 29,988 19,628 51,623 37,672 28,474 2,547 12,503 7,395 4,184
+@ meat added to steam in outer tube, Btu/hr My -@® 37,009 35,002 45,372 13,377 27,328 36,526 43,453 52,497 57,605 60,816
+@ satto of incremental enthalpy change in swperhester to Ma/@ OM .059  .0539  .0698  .0206 .0420  .05%2 .0668 .0808  .0886  .0936
+total for steam '
+Ratio of enthalpy change in puperheater to total for oy MR2/% L0569  .1108  .1806  .2012  .2432 © .2994 3662 4470  .5356  .6292
+steam
+© Ratio of incremental enthalpy change in boiler to total Ms G1 © ra L431 .0461 0302 .0M4  .0580 .0438  .0331  .0192 .0l14  .0064
+for steam
+Ratio of enthalpy change in boiler to total for stem J > Ads/Q: L0431 . .0892  .1194  .1988  .2568  .3006  .3337  .3529  .3643  .3707
+       
+
+Table 4, (Continued)
+
+ 
+
+OPPPOOOOR®G® ORCO® ® ®
+
+oan Lue of 2R/Q in ennulus for interval (read t; in 1 - Q,., - @, 972 .916 +854 .809 778 729 +667 593 «509 418
+
+. 2
+ean you of 23/Q in boiler for interval (read tj in @,, + ®, .022 . 066 104 .159 228 27 317 343 .359 .368
+Ratio of enthalpy change in salt to total at Mana .10 .20 .30 40 .50 .60 70.80 .90 1.00
+Fluid specific volume in superheater, £2 /1v va @t; in Fig. 13 ,185 .180 .170 L147 135 127 L116 .100 L084 064
+Fluid specific volume in boiler, £t3/1b vy Gt; in Fig. 13 ,0202 ,0200 .0208 .0215 .0230 .0260 .0290 0318 .0350 .0350
+Mass flow rate in superheater, 1b/sec. £2 "64 £2047, 00002 200 200 200 200 200 200 200 200 200 200
+Mase flow rate in boiler, 1b/sec. ft? as .204/.000236 864 864 864 703 703 703 703 703 703 703
+
+or .204/.00029
+
+Dynamic head in superheater, psi [- @ @d32/o2m.6 .798 LT72 .690 .587 522 AT L418 .328 «207 »160
+Dynemic head in boiler, psi as @®@ @)/o273.6 1.611 1.660 1.684 1.162 1.226 1.439 1.450 1.503 1.577 1.599
+Reynolds number in superheater (a = ,25) Be, Ref. 8, p. 291 179,867 180,671 185,802 191,010 192,715 192,715 191,858 170,400 148,855 115,628
+Reynolds number in boiler (a = .20 ana .23) Res Ref. 8, p. 291 238,503 243,578 250,232 243,482 253,812 204,922 299,136 314,880 317,265 317,265
+Friction factor in superheater 2 Ref, 8, p. 294 .0l68 .0168 .0167 .0l66  .0166 ~.0166 0166 .0172 .0L78 0189
+Friction factor in boiler fs Ref, 8, p. 294 .0159 .0158 ,0157 .0157  .0157  .0152 .0l151  .0150 ,0150 0150
+Incremental pressure drop in superheater, psi wp, 0G @ 2685 2.809 200 L524 L22 L190 LOM 82 54 46
+Incremental pressure drop in boiler, pst 2; 50@GE © 5131 5.680 4682 2.852 2.870 3.307 3.326 3.285 3.49% 3.660
+Pressure drop from tube inlet, psi (outer annulus) P; Py, + ho AP; 52.709 50.024 47.215 45.174 43.650 42.358 41.168 40.114 39.202 38.748
+‘Pressure drop from tube inlet, psi (inner tube) Py ool APs 5.131 10.811 = 15.493 18.345 21.215 24.522 27.848 31.133 34.627 38.287
+
+ 
+
+og
+
+ 
+ 
+
+ 
+
+ 
+
+®
+
+31
+
+compatibility with both the molten salt and the water, the tubes were con-
+sidered to be of Hastelloy N. This is a high nickel alloy that has a rela-
+
+tively poor thermal conductivity, an important factor in a supercritical
+
+boiler because of the fairly thick wall required in the outer tube — in
+
+this instance 0.075 in. It was found advantageous to increase the thermal
+
+resistance of the inner tube wall at the lower end by making use of a
+
+double-walled tube. In this region the 1/4-in. OD central tube with a wall
+thickness of 0.010 in. was assumed to be lined with a smaller diameter tube
+
+of the same wall thickness with a radial clearance of 0.002 in. between
+
+them. The gap would be vented and, in view of the local metal tempera-
+
+‘tures, would be filled with steam rather than water.
+
+-The reason for using the tube liner can be seen by envisioning the
+heat transfer situation at the bottom end of the reentry tube. Unless the
+heat transfer rate from the salt to the superheated steam per unit of
+length exceeds that from the superheated steam to the feedwater, the tem-
+
+perature of the superheated steam will actually drop as it flows toward
+
+the outlet. Inasmuch as the local temperatures of the salt, the super-
+heated steam, and the feedwater are fixed, and so, too, are the surface
+areas and the surface heat transfer coefficients, a simple solution is to
+interject some “extra thermal resistance between the feedwater and the
+superheated steam. This region need not be very long because the steam
+exit temperature is relatively insensitive to the steam temperature well
+above the exit. Further, to keep the overall tube length down it is de-
+
+sirable to maintain a large temperature difference between the salt and
+
+the superheated steam. Thus one. of the places where judgment is required
+
+vhen making the stepwise calculations ‘is in choosing the point at which to
+terminate the heat dam formed by the liner of the inner tube.
+It should be noted “that introducing ‘the above liner in the inner
+
+. tube will act to improve the boiling flow stability characteristics of
+
+the reentry tube boiler. Not only will it increase the pressure drop in
+
+the inlet region but it will also increase the fluid velocity there, both
+helpful factors. iE oo
+ 
+
+ 
+
+32
+
+Heat Transfer Coefficients
+
+Heat transfer coefficients for the molten salt were computed using
+the Dittus-Boelter relation and physical properties supplied by J. W. Cooke.
+From these the chart shown in Fig. 1 10 was prepared. In computing the over=-
+all heat transfer coefficients for the inner and outer tube walls, the
+molten salt velocity was taken as constant for all of the conditions con-
+sidered, and hence the heat transfer coefficient for the fluid film on the
+salt side vas constant. The temperature drop through the tube walls would,
+~ of course, be directly proportional to the heat load, and hence these two
+represent constant conductances. The heat transfer coefficient for the
+
+superheated steam flow in the annulus varied directly with the 0.8 power
+
+of the steam flow rate and hence this was the dominant factor at low flow
+rates. The heat transfer coefficient for water under nucleate or annular
+
+£iim boiling conditions is almost independent of heat load and is very
+"high, hence it had a relatively small effect. on variations in the overall
+heat transfer coefficient with load. |
+
+~The calculated values for the overall heat transfer coefficients
+
+through the inner and outer walls are presented in Fig. 11 as a function
+of the steam flow rate. ‘The principal resistance to heat transfer at the
+ower steam flow rates is that in the surface films in the superheated
+steam annulus, whereas at high 1dads the principal resistance is repre-
+sented by the temperature drops through the tube walls. |
+
+An inherent error in the calculation procedure stems from the use of
+a constant heat transfer coefficient on the water side throughout the
+length of the boiler. For the flow rates employed here, annular film
+boiling would prevail through the greater part of the boiler until the
+vapor quality reached about 90% after which the heat transfer coefficient
+would drop. rapidly. However, this effect is small at or near supercritical
+pressures, and the heat transfer coefficient in the first portion of the
+superheater is about as high as in the "boiling" zonel® (see Fig. 12).
+This in effect ‘compensates for the reduced heat transfer coefficient in
+the last portion of the boiler. These variations have ‘relatively small
+effects in the region of interest here and were neglected for the purposes
+
+of these calculations.
+
+OO
+ 
+
+Heat-Transfer Coefficient, h, Btu/hr:ft2.°F
+
+ 
+
+Temperature, °F
+
+ORNL DWG. T1-5732
+
+equivalent diameter, 0.1
+0.2
+0.5
+1.0
+2.0
+
+2 3° 4 5 S10 15 20 30 40 50° © 100 150 200 300 400 500
+. Flow Rate, G', 1lb/sec.ft?
+
+Fig. 10. Heat-Transfer Coefficients for NaBF,; at 1350°F Under Turbulent Flow Conditions.
+(Values for physical properties used in June 1968: c¢_ = 0.37 Btu/lb. °F, nu =15 lb/hr. £t,
+k = 0.232 Btu/hr. ft. °F, density = 131 1b/ft2.) P
+
+ 
+
+1000
+
+£e
+ 
+
+Overall Heat Transfer Coefficients (Btu/hr.ft2.%p)
+
+10° 1
+
+34
+
+ORNL DWG. T1-5733
+
+ 
+
+10° 106
+
+Steam Heat Load (Btu/hr.tube)
+
+Fig. 11. Effects of Heat Load on the Overall Heat Transfer Coefficients for the Inner and Quter
+Tube Walls for an Outer Tube of 0.66 in. OD and 0.50 in. ID, an Inner Tube of 0.25 in. OD and 0.20 in. ID,
+
+& Molten Salt Mass Flow Rate of 2500 1b/sec. ft?
+The molten salt heat transfer coefficients were
+Fig. H5.7, p. 320 of Ref. 8.
+
+5 &nd a Tube Wall Thermal Conductivity of 147 Btu/br.ft. °F.
+obtained from Fig. 10 an? those for steam from Pig. 12 or
+
+LO
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+| | | | . ORNL DWG. T1-5T3k
+12 TT 1
+Pressure 4500 psi LL |
+0 = 25 x 10° Ib/hreft? o
+10 =2.1x% 10° Ib/hr-ft2
+” =16x 10° Ib/hraft? | BE }
+S
+Oo
+» 10% 6
+uw 8 Be
+AN
+£ 0° x
+Z 6 o S oO : \
+| Oo : . MA
+< 9, A, DES
+LC l=" £3 -
+~~ J
+fori et Sere
+oO ad J | = NA oS
+- Peep Bod =" ALA
+| “=~.
+25 4 5 6 7 8 9 10 11
+
+Surface temperature, °F x 10~2
+
+~ Fig. 12. Heat-Transfer Coefficients for Several Mass-Flow Rates
+of Water in a Uniformly Heated Once-Through Boller Tube Operating at ’
+
+4500 psia (Dickinson and Welch, Ref. 16)
+
+ce
+ 
+
+ 
+
+36
+
+Temperature Differences and Heat Fluxes
+
+The appropriate curves of Figs. 5, 6, and 7 were used as the basis
+for estimating the effective local temperature differences in any given
+increment of tube length. From these temperature differences, together
+with the heat transfer coefficients and. the amount of heat added in the
+increment, it is possible to calculate the length of the first increment
+of outer tube length and the amount of heat transmitted across the inner
+tube wall. These exchanges of heat in turn make it possible to calculate
+the temperature in each fluid stream at the beginning of the next incre-
+ment of the length. Note that the average local temperature differences
+for each increment as used in the calculations were estimated, and gen-
+erally differed a little from the values indicated by the completed cal-
+culations for the increment. The difference was usually sufficiently
+small so that iteration was not necessary. To facilitate the use of
+Figs. 5, 6, or 7, the summations of the amounts of heat added or subtracted
+to each fluid stream up to and including each increment were also tabulated
+together with the fractions of the total heat added to the water-side stream.
+
+Pressure Drop
+
+The pressure drop across each increment of tube length was also cal-
+culated in Table 4. To facilitate these calculations, Fig. 13 was prepared
+to show the density of the fluid on the steam side as & function of its
+temperature. For the subcritical pressure boiling conditions the density
+in any given increment of boiler tube length was estimated by considering
+the fractional change in density in the boiling zone as equal to the frac-
+" tion of heat added to the steam ap to ‘that point in the boiling region.
+No attempt was made to allow for the effects of the two-phase flow friction
+factors, but it is believed that the overall effects of these would amount
+to only about a factor of two in the boiler region, and, of course, there
+
+‘would be no effect on the pressure drop in the superheater region.
+37
+
+/ : I ORNL DWG. T1-5T35
+
+ 
+
+.10,
+
+k,00
+
+2,00
+
+ 
+
+pe
+8
+
+o
+°
+
+SPECIFIC —— (243/11)
+
+ 
+
+0.10
+
+ 
+
+© 0.04
+
+ 
+
+200 500 600 - 800 1000 1200
+~~ TEMPERATIRE (°F) :
+: » Fig.13. Specific Volume as a Function of Temperature for a Typical
+
+(a Set of Boiler Discharge Pressures and Temperatures,
+ 
+
+38
+
+Estimated Performance Characteristics
+
+-
+
+The prime objective of this study was to investigate the effects of
+both the design heat load and the design steam temperature ‘and pressure
+conditions on the boiler tube length. Once these effects are established
+for a single tube it is easy to estimate the effects of the choice of the
+full-pover steam pressure and temperature on the size and cost of a full-
+scale steam generator. Further, once these effects are established for a
+single tube, the effects of the mode of control on the part load tempera-
+ture and pressure distribution can be inferred readily, and inferences can
+be drawn with respect to the startup and part load control characteristics
+and possible boiling flow stability problems.
+
+Effects of Design Heat Load on Tube length
+
+A study of the fine structure of the heat transfer relations indicates
+
+that; if a prime criterion is considered to be completion of boiling prior
+to exit from the inner tube, the boiler tube length is determined by the
+maximum load conditions anticipated. That is, the tube length required
+for boiling to dryness will be reduced as the design heat load is reduced.
+This effect is shown in Fig. 14 for the two control modes shown in
+
+Figs. 5 and 7, that is, a constant steam generator discharge pressure ir-
+respective of heat load and a steam generator discharge pressure directly
+proportional to the load. In all cases the calculations were carried out
+to determine the tube length required to meet that particular design con-
+dition.
+
+Effects of Design Heat Load on Temperature Distribution
+
+A more detailed insight into the effects of design heat load on a
+
+reentry tube boiler is given by Fig. 15 which shows the calculated tempera-
+
+ture distribution in the boiler as a function of distance from the bottom,
+"and indicates the length of tube required to evaporate the water to dry-
+- ness in the inner tube for a wide range of steam conditions. In this in-
+stance the boiler exit pressure was proportional to the load. Note how
+little tube length will be required for the 1% load condition. Note, too,
+
+OO
+
+@
+ 
+
+ 
+
+ 
+
+w
+
+39
+
+ORNL DWG. T1-5736
+
+700
+
+500
+
+8
+
+PRESSURE DROP (psi)
+
+TUBE LENGTH (ft)
+
+8
+
+200
+
+0 ko - 8o 120 ° 160 200
+DESIGN LOAD ™ 4 OF REFERENCE DESIGN CONDITION
+
+ 
+
+Fig. 14. Effects of Load on the Tube length Required to ‘Handle Loads
+
+Less the Design Heat Load of 650,000 Btu/hr per Tube. The associated steam-
+side pressure drop is also plotted. The steam generator discharge pressure
+
+for the lower design loads was ‘teken as & constant 4000 psia for one.set of
+curves, and as directly proportional to the load for the other set.
+
+100
+ 
+
+TEMPERATURE (°F)
+
+40
+
+ORNL DWG. T1-573T
+
+ 
+
+0 10
+DISTANCE ABOVE BASE OF BOILER (ft)
+
+Fig. 15. Effects of 100%, 75%, 50%, 25%, 10} end 1% Heat Load on the Axial
+Temperature Distribution for Operation With the Steam Pressure Directly Proportional
+to the Heat Load, ~~ :
+
+“@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+w
+
+41
+
+that the curves for the tube length and pressure drop in Fig. 14 rise
+steeply between the 100 and 200% load conditions, thus implicitly Justi-
+fying the choice of flow rate for the nominal 100% load condition. Ac-
+tually, the choice of steam flow rate for the 100% load condition in this
+case was arrived at by a series of preliminary calculations with just this
+point in mind. oo
+
+. The effects on the temperature distribution of the design heat load
+per tube for operation with the system pressure held constant irrespective
+of the load are shown in Fig. 16. Comparison of Figs. 15 and 16 indicates
+that the design steam pressure has only a mild effect on the required tube -
+length at a given heat load, in spite of the fact that the reduced pres-
+sure greatly depresses the temperature in the boiling region.
+
+\
+
+Effects of Part Load Operation
+
+If a boiler tube length for, say, the 100% reference design load con-
+dition of Fig. 15 were chosen as the basis for a design, it is evident that
+at part load the steam would be superheated to a temperature higher than
+that indicated for the particular cases shown in Fig. 15 because these vere
+calculated on the basis that the inner tube would be terminated at the
+point at which boiling was completed. The superheating effects would be
+particularly large at low steam flow rates where the steam temperature in
+the annulus would run close to the local molten salt temperature through
+the upper portion of the tube until it dropped when chilled by heat extrac-
+tion for boiling the water rising in the inner tube. This effect is shown
+
+in Fig. 17. The calculations were carried out by recognizing that vir-
+“tually all of the heat transferred from the salt to the superheated steam
+
+in any given increment would flow directly into the boiling water in the
+inner tube. Thus, as a first approximation, it was assumed that UjA At; =
+UoAoAt,, which then defined t, and ts. A check showed that this does in
+fact give a good approximation and no iteration was needed in most cases.
+The reason for this is that the enthalpy change in the outer annulus at the
+10% load condition is only sbout 5% of the enthalpy rise in the inner tube.
+It should be noted that to get good convergence the detailed calcula-~
+tional technique of Table A was used for the cases of Fig. 17. This
+ 
+
+TEMPERATURE (°F)
+
+42
+
+~ ORNL, DWG. T1-5T738
+
+ 
+
+30
+
+0 10 20 :
+DISTANCE ABOVE BASE OF BOILER (ft)
+
+Fig. 16. Effects of Design Heat Load on the Axial Temperature Distribution
+for Operation With a Constant Steam Discharge Pressure of 4000 psia.
+ 
+
+ 
+
+ 
+
+ 
+
+43
+
+ORNL DWG. 71-5739
+
+* 1200
+
+1100
+
+1000
+
+800
+
+T00
+
+TEMPERATURE (°F)
+
+600
+
+500
+
+ 
+
+300
+0 10. 20 Lo 30
+DISTANCE ABOVE BASE OF BOILER (ft)
+
+L 1)
+
+Fig. 17. Comparison of the Axial Temperature Distributions for Operation
+{ J : at 100% and 10% of full power with the Steam Pressure Directly Proportional to
+the Heat Load and the Same Tube Length in Both Cases.
+ 
+
+44
+
+represented an improvement over that used for Figs. 14 through 16 and is
+the reason for a small difference in tube length that may be noted between
+Figs. 15 and 17. The heat transfer calculations for Figs. 14 through 16
+could be repeated to give better approximations. This was not done for
+this preliminary study because it was felt that the effect would be small,
+and, in any event, unimportant so long as the tube length required for
+evaporation to dryness in the inner tube is less at part load than at full
+load.
+
+Pressure Drop and Pressure Distribution
+
+Figure 18 gives a set of curves similar to those for Fig. 16 to show
+the pressure rather than the temperature distribution through the boiler
+for the load conditions of Fig. 5, i.e., a varying heat load with a con-
+stant boiler pressure. Note that the much smaller flow passage area in
+the inner tube gives a much higher mass flow rate than in the annulus for
+the superheated steam, and this offsets the effect of the higher fluid den-
+sity in the inner tube to such an extent that the overall pressure drop
+through the inner tube is substantially greater than that through the outer
+gnnulus,
+
+This effect is desirable from the standpoint of boiling flow stability.
+Note also that the pressure drop at low loads becomes very small — too
+small to contribute to boiling flow stability. Under these conditions the
+principal factors ‘contributing to boiling flow stability would be the sta-
+tic head of the liquid column in the inner tube and capillary effects,
+which would be substantial inside the small diameter inner tube. The
+latter are believed to represent a little recognized advantage of small
+diameter boiler tubes.
+
+Figure 19 presents a set of curves to show the effects on the pres-
+sure distribution of varying the design heat load with the system pressure
+directly proportional to the heat load instead of constant as for Fig. 18.
+It is interesting to note that the pressure drop through the boiler falls
+off much more rapidly with a decrease in load if the system steam pressure
+is held constant than if the steam pressure is made directly proportional
+to the load. - Thus there should be less tendency toward difficulties with
+
+[
+
+O,
+Co 45
+
+ORNL DWG. T1-5Th0
+
+a
+
+PRESSURE DROP PROM BOILER TUBE INLET (psi)
+
+ 
+
+ 
+
+0 10 50
+
+20 30
+
+DISTANCE ABOVE EASE OF BOILER (£4)
+
+* : ‘Fig. 18. Effects of Design Heat Load on the Axial Pressure Distribution for Operation
+with a Constant Steam Discharge Pressure of 4000 psia. .
+
+A]
+
+ 
+ 
+
+PRESSURE DROP FROM BOILER TUBE INLET (psi)
+
+46
+
+ORNL DWG. T1-57h1
+
+ 
+
+10 20 30
+DISTANCE ABOVE BASE OF BOILER (ft)
+
+- Fig. 19. Effects of Design Heat Load on the Axial
+Pressure Distribution for Operétion with the Steam Pressure
+Directly Proportional to the Heat Load.
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+AT
+
+boiling flow instabilities under light load conditions if the system is
+designed so that the boiler discharge pressure varies linearily with the
+
+power output.
+
+Effects of the Fraction of Heat Added in the Inner Tube
+
+Perhaps the most important arbitrary assumption made in order to pro-
+vide a starting point for the iterative calculations was the fraction of
+the heat added in the inner tube. A series of calculations was carried
+out to investigate this effect for the load condition found to be most sen-
+sitive on this score, i.e., 10% of the reference design load. The results
+of these calculations are plotted in Fig. 20. These curves indicate that
+the results are relatively insensitive to the initial assumption for rea-
+sonable values of Q3/Q, i.e., Qa/Qy less than 80%. Thus terminating the
+
+center tube when boiling is completed gives a well-proportioned design.
+
+Effects of Size of Heat Increment Used
+
+Initially the calculations were carried out using increments in the
+amount of heat transferred equal to 20% of the total for the tube. These
+coarse increments led to quite serious convergence problems, hence the
+size of the increment was reduced to 10% of the total heat load. This
+gave good convergence except at loads of 10% or less where the temperature
+of the superheated steam vascillated with a period double the increment
+used for the calculation in the manner shown in Fig. 21. This effect was
+largely eliminated by reducing the increment of heat transferred to 5%
+instead of 10%. Figure 21 shows that doubling the number of calculational
+increments not only reduced the amplitude of the oscillation but it also
+reduced the period of oscillations. This further confirms the belief that
+the oscillation is an artifact of the calculational procedure.
+
+Turbine Control Considerations
+
+As will be shown later, the steam generator design proposed here in-
+
+herently gives a nearly constant superheater steam outlet temperature
+ 
+
+PRESSURE DROP (psi)
+
+Lo
+
+ 
+
+ORNL DWG. Ti-S5Th2
+
+25
+
+20
+
+TUBE LENGTH (ft)
+
+- 10
+50 60 70 8o 90 100
+
+0
+%/ initial
+Fig. 20, Effects of Initial Choice of Fraction of Heat Added
+
+to Steam in Inner Tube on the Tube Length Required and the Associated
+Pressure Drop.
+
+OO
+
+CO.
+ 
+
+49
+
+ 
+
+ORNL DWG. T1-57T43
+
+TEMPERATURE (°F)
+
+ 
+
+ 
+
+ 
+
+0 : 4 8 16
+: DISTANCE ABOVE BASE OF BOILER (2)
+
+ 
+
+Fig. 21. Effects of Size of Increment in the Stepwise Calculation on the Amplitude
+" and Frequency of the Apparent ‘Oscillation Encountered at a Heat Load 10% of the Reference
+Design Condition With a Steam Pressure of 4000 pein,
+
+ 
+ 
+
+50
+
+.O
+
+irrespective of load. This, coupled with the very small water inventory,
+makes a method of power plant control implicit in Fig. 7 Took attractive.
+The inherent characteristics make possible simple and reliable control
+equipment and instrumentation, and the plant response characteristics ap-
+pear to be much better than for conventional fossil fuel plants. In view
+of its promising characteristics but highly unorthodox nature, R. B. Briggs
+urged the writer to discuss this control approach with turbine design
+engineers. Talks with several different engineers at both Westinghouse and
+General Electric in each case seemed to lead them to conclude tentatively
+that there is no apparent reason why it shouldn't work, - and they suggested
+that an evaluation of permissible rates of change of load be made using a
+typical chart supplied to operators of power plants. A chart of this type
+from a turbine operators manual prepared by Westinghousel? is shown in
+
+Fig. 22.
+
+Limitations on Rates of Change in Load v
+
+It should be mentioned that a major limitation on the operation of a
+large steam power plant is the rate at which the load can be changed. One
+set of limitations in coal-fired plants is associated with the furnace and oo
+boiler; these not only have an enormous thermal inertia but the boiler
+performance is sensitive to changes in temperature distribution in the fur-
+nace as a consequence of changes in the flame geometry with changes in
+load. A second and usually more stringent set of limitations is associated
+with the turbine. The close running clearances between the rotor blade
+tips and the casing make it imperative that these two components change
+temperature together. However, the temperature of the thin rotor blades
+operating in the high velocity steam follows the steam temperature with
+virtually no phase lag, but the thick-walled casing does not. Further,
+there are major circumferential asymmetries in the casing, partly because
+it is split horizontally through the centerline and the upper and lower
+halves are joined by a heavy bolting flange, and partly because the steam
+
+LJ
+
+inlet and outlet passages enter the casing from the bottom side. Thus, to .
+avold catastrophic interference between the rotor and the casing as a con- (J
+
+sequence of differential expansion between the rotor and the casing or
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+a
+
+q
+
+51
+
+because of distortion in the casing, it is generally necessary to limit
+the rate of change of the steam temperature to a low value. Obviously, it
+would be highly advantageous to the electric power plant system operator
+if he could change the load on a unit rapidly. Thus it is interesting to
+use Fig. 22 to evaluate the time required to change load in a plant having
+the characteristics of Fig. 7.
+
+Startup and Rates of Change of Load with Proposed System
+
+Considering first the startup conditions, it is helpful to quote from
+Ref. 17, p. 8, the steam pressure and temperature conditions to be estab-
+lished prior to starting the turbine-generator unit:
+For drum type boilers, establish about 25% of rated pres-
+
+sure and at least 100°F superheat, but not more than 800°F
+total temperature, at the turbine throttle valves.
+
+For once-through (drumless) boilers, a reduced pressure
+
+start is recommended. This applies to both "cold" and "hot"
+
+starting of turbine units. For "cold" starts, the boiler should
+
+be stabilized before opening the throttle valves and the inlet
+
+temperature held to 800°F maximum.
+Thus the turbine-generator should be started with a low steam pressure at
+the turbine throttle valve if one is used. If a throttle valve is not
+employed, then the steam pressure delivered by the steam generator must
+emphatically be at a low value. From the standpoint of the steam pressure,
+it appears from Fig. 7 that the control scheme proposed should be satis-
+
+factory. - However, the steam temperature will be too high, and hence a de-
+
+superheater would be required to hold the steam temperature to 800°F at the
+
+“turbine. Such units are commonly used in conventional coal-fired plants.
+
+Once the turbine has been brought to equilibrium at a load of perhaps
+10% at a pressure of 400 psi (see Fig. 7), the time required td increase
+the steam temperature up to 1000°F (i.e., close to the normal operating
+temperature of about 1050°F) can be estimated from Fig. 22 to be 40 min, a
+substantial period, but one consistent with conventional practice. Once
+the system is up to operating temperature, however, changes in load can be
+made relatively quickly. - If one wishes to go from the 10% load condition
+of Fig. 7 to the 50% load condition, this will entail increasing the
+ 
+
+ 
+
+A
+
+ 
+
+ 
+
+ 
+
+ORNL DWG. T1-5Tkk
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+52
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+DECREASING TEMPERATURE
+
+| avon owsvauon A NN MN NN
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+/
+7
+%
+
+ 
+
+ 
+
+lf}-—
+
+© OO O00 oO Oo oO
+8 88 89 8 °8 ¢ 8 8
+
+100
+120
+140
+000
+2000
+
+3
+1000
+0
+1000
+
+2000
+3000
+LOAD 800 PSIG-B800°F TO 100% LOAD 2400 PSIG-1000°F
+
+EXAMPLE: 80 MINUTES ARE REQUIRED TO CHANGE FROM 5%
+
+SALNNIW ~ NOILIGNGD Wvals H0/0NY avo 39NVHD ol 3s —
+
+Sd =3ONVHO
+NSSIYd I LLOYHL
+
+P-68969
+
+Recommended Time for Changing Load and/or Steam Conditions,
+
+(Courtesy Westinghouse Electric Rorp.)
+
+Fig 22.
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+8
+
+53
+
+pressure by 1600 psi but the temperature by only about 30°F. . According
+
+to Fig. 22 the turbine could tolerate making this change in only 11 min.
+Similarly, if the turbine were operating at full load, the load could be
+cut in half in as little as 20 min., i.e,, substantially faster than the
+
+- common, rule of 2% min. Further, if the steam generator can be designed
+
+so that the superheater outlet temperature increases somewhat with a reduc-
+tion in load, even faster rates of change can be tolerated, For example,
+if the full load steam pressure and temperature were 4000 psi and 1000°F
+and the 50% load conditions were 2000 psi and 1050°F, Fig. 22 indicates
+that the load change could be made in about 1 min. As will be shown later,
+it happens that the reentry tube steam generator can be proportioned to
+give this characteristic and hence would make. possible unusually rapid
+changes in load.
+
+Possibility of Eliminating the. Throttle Valve
+
+. Stéam throttle valves are sg ma jor source of operating trouble in
+steam power plants. The valves are relatively large, must operate at
+about 1000°F, they are subject to heavy loads by the high steam pressure
+
+“drop across them, and lubrication conditions are highly unfavorable, Thus
+
+it is not surprising to find that throttle valve sticking is one of the
+principal causes of forced outages in steam power plants.
+Throttle valves are used to make it possible to change the steam flow
+
+" rate much more rapidly than can be accomplished by controlling the boiler
+
+and furnace in conventional coal-fired plants. The most critical consid-
+eration is to avoid a serious overspeed of the turbine in the event of an
+abrupt and complete loss of the electrical load. The inventory of super-
+
+heated water in the reentry tube boiler is vastly less than in a conven-
+
+tional boiler; it is estimated to be only about 3 in. 3 /tube at full load,
+and about 1 in.2 at 10% load on the steam generator. Note that as a con-
+sequence of mechanical, electrical, and fluid friction losses, etc. in the
+turbine-generator unit, in the event of a complete loss of electrical load
+the steam flow required to keep the turbine up to speed would be about 10%
+
+of the full power output of the steam generator. Thus an abrupt loss in
+
+electrical load would entail a reduction in the superheated water inventory
+ 
+
+ 
+
+ 
+
+54
+
+in a reentry tube boiler by about 2 in.3/tube, or 4 in.?/Mw(t). This full
+load steam flow rate is about 3 1b/sec for 4 Mw(t), whereas 4 in.3 of
+superheated water is only about 0.1 1b. Thus the full load steam flow
+rate would consume the surplus water inventory in only about 1/30 sec if
+the feedwater supply were abruptly cut to the 10% load level. The inertia
+“of the massive rotor in the turbine-generator unit should be sufficient
+"to keep the overshoot in rotor speed to a low value. Inasmuch as the most
+difficult condition to meet is that for an abrupt loss in electrical load,
+it appears that control of the power plant could be accomplished by con-
+trolling the feedwater flow rate with one or more relatively small valves
+operating at about 650°F rather than the large, hot steam throttle valves
+normally employed. This should give a greatly increased reliability.
+
+It is of interest to note that this approach to the control of a Ran-
+kine cycle plant has been analyzed and investigated experimentally and is
+a very similar but much smaller system designed for a nuclear electric
+space power plant.18 The analyses and tests gave highly encouraging re-
+sults for a system in which the thermal inertia of the boiler was small as
+in the system proposed here. Further, the variable pressure approach is
+
+coming into use in conventional plants.l®
+Proposed Design for a Molten Salt Reactor Plant
+
+A conceptual design for a molten salt reactor with its intermediate
+heat exchangers and fuel pumps integrated into a common pressure vessel is
+presented in a companion report, 20 ‘The net electrical output in that.
+"study is 1000 Mw(e) and the fuel and inert salt temperatures are those
+
+"- given in Fig. 4a. Plant layout studies favored-the use of six steam gen-
+
+~erators each of which would be directly coupled to one of six fuel-to-NaEBF,
+heat exchangers, The steam generators required for this plant provide a
+good illustrative example for use here to show how the single tube analyti-
+cal work presented earlier in the report can be applied to the design of a
+full-scale steam generator as well as the proportions to be expected in a
+‘finished unit.
+
+.O
+ 
+
+ 
+
+ 
+
+ 
+
+3
+
+3
+
+n
+
+55
+
+Reheaters
+
+Most modern steam plants employ reheaters, in part because there is a
+direct increase in overall cycle efficiency of about 5%, and in part be-
+cause they give a further indirect increase in cycle efficiency of a few
+percent by eliminating the moisture churning losses in the lower stages of
+the turbine. In addition, reheaters can be designed to eliminate the pos-
+sibility of turbine bucket erosion in the lower turbine stages by reducing
+the moisture content in that region to almost nothing. In conventional
+coal-fired steam plants the length of piping required to connect the boiler
+to the reheater and the relatively large amount of tube surface area re-
+quired because the reheater must be located in a relatively low-temperature
+zone to avoid burnout difficulties have combined to make the cost of in-
+cluding provisions for reheat rather high for conventional coal-fired
+plants. However, it is believed that in a molten salt reactor plant the
+turbine can be located much closer to the steam generator and, because
+there is no danger of tube burnout from excessive local temperatures, a
+much higher average heat flux through the reheater tube walls can be main-
+tained so that the tube surface area requirements are quite modest. Fur-
+ther, the design of the tube matrix for the reheater is quite straight-
+forward because there are no flow stability or two-phase flow problems in-
+volved. Thus a reheat cycle appeared highly desirable for this design
+study, and the two reheat stages specified for Eddystone Unit No. 2 have
+
+been included in the proposed steam generator for:a molten salt reactor.
+
+General Description
+
+The dominant consideration in choosing the steam generator overall
+
+geometry was “to make use of the static head in ‘the. liquid column in the
+
+boiling region to help provide for flow stability in the boiler. This
+
+meant that the boiler tube should be vertical with the feedwater entering
+
+at the bottom. ‘While it would have been desirable from the standpoint of
+thermal convection in the molten salt system to admit the molten salt at
+the top and have it leave at the bottom, a brief glance at the temperature
+
+distribution diagrams shown in Figs. 4, 5, 6, and 7 is sufficient to show
+ 
+
+ 
+
+56
+
+that the salt should move counterflow relative to the superheated steam in
+the outer annulus. Figure 23 presents a somewhat similar diagram including
+the two reheater stages and shows that they, too, should be in counterflow.
+
+Tt was thought at first that it would be desirable to make use of
+separate casings for the boiler and the two reheaters, but the additional
+piping, manifolding, and associated temperature distribution problems led
+to the conclusion that it would be best to mount the reheater tubes in an
+annulus surrounding the boiler tubes in the configuration shown schema-
+tically in Fig. 24. -
+
+Headering Problems
+
+As mentioned earlier the headers envisioned for the boiler region
+would entail the thermal sleeve arrangement shown in Fig. 3. This avoids
+‘the use of a high pressure header sheet in contact with the molten salt;
+rather, the tubes would be manifolded below the pressure vessel containing
+the molten salt. The same arrangement could be employed for the reheater
+tubes. In either case any tube could be blocked off readily outside the
+steam generator casing in the event of a leak or other malfunction. Inss-
+much as the reheater tubes are free of the complexities associated with the
+inner tube used for the boiler, it would also be possible to assemble them
+in bundles of perhaps 12 tubes with the tube bundle headers inside the
+casing of the steam generator .to minimize the number of penetrations
+through the shell, This looks preferable if a unit has more than 100 tubes.
+
+Provision of adequate space for header sheets is always difficult
+when designing heat exchangers with closely spaced tubes. Preliminary lay-
+out studies indicate that this is difficult but might be done with the con-
+figuration of Fig. 25 without severely distorting the outer casing or hav-
+ing a large volume of inert salt that serves no useful function but in-
+creases both the capital investment and the time required for the system
+to respond to control actions. The outlet spigots from bundles of 16
+tubes could be passed through a header sheet in the bottom head of the
+vessel with a thermal sleeve to avoid large local stresses. This would
+give an adequate ligament thickness (about 0.5 in.) in the header sheet
+after allowing space for the thermal sleeves. This will take up most of
+ 
+
+”
+
+»
+
+w
+
+n
+
+57
+
+_ ORNL DWG. 71-5745
+
+1200
+
+1100
+
+1000
+
+900
+
+800
+
+‘Temperature (°F)
+
+TOO
+
+600
+
+500
+
+ 
+
+M/q (%)
+
+Pig. 23. Temperature Distribution in the Boiler and Reheater as
+e Function of the Fraction of the Heat Removed from the. Molten Salt
+Under Pull Load Conditions.
+ 
+
+58
+
+ORNL DWG. T1-5Th6
+
+ 
+
+ 
+
+45 in. dia.
+|S SELL 45 ft tal)
+
+Fig. 24. Proposed Configuration for One of
+a Set of Six Steam Generators for a 1000 Mw(e)
+Molten Salt Reactor Power Plant. Detailed data
+are given in Table bk, ’
+
+ 
+
+ 
+
+ 
+
+ 
+
+LO
+ 
+
+ 
+
+ 
+
+ 
+
+”»
+
+»
+
+"
+
+»
+
+59
+
+ORNL~LR-DWG 73420
+
+    
+  
+ 
+ 
+
+1},-in. TUBE
+
+(VE 4)
+
+{-in. TUBE
+(V7 4g)
+
+%,-in. TUBE
+
+(NZ 4)
+
+Y,-in. TUBE
+(a7)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 25. Schematic Diagram Showing the Bifurcated Tube Header
+Arrangement Used as a Basis for the Proposed Tube Bundle and Header
+
+Sheet Configuration. . The. nominal tube id (4,) is indicated for each
+step in the manifold to show ‘that the flow velocity is kept constant.
+ 
+
+60
+
+the area of the elliposidal head in the region where its radius of curva-
+ture is large. The space just outside this region but inside the shell
+will serve as the inlet plenum for the molten salt which would enter tan-
+gentially through two pipes. The 96 spigots from the tube bundles could
+be manifolded outside the header sheet using a bifurcated tube arrange-
+‘ment similar to that of Fig. 25. Three steam pipes could be coupled to
+each set of 32 tube bundles. The feedwater could be supplied through two
+penetrations in the largest bifurcated colipling in each of these three
+sets. :
+
+The layout envisions installation of small header drums for the re-
+heater tube bundles in the sennulus just above the salt inlet plenum. The
+annular baffle between the reheater region and the boiler-superheater re-
+gion would extend downward no farther than the header drums for the re-
+heater tube bundles.: | |
+
+The layout problems would be eased by reducing the number of boiler
+tubes in each steam generator unit and employing a large number of units.
+The ratio of tube matrix cross-sectional area to header sheet area could
+be increased in this way and manifolding problems of the tubes for the
+
+feedwater and superheated steam could be eased.
+
+ 
+
+Differential Thermal Expansion
+
+There would be no problem associated with differential thermal expan-
+sion between the boiler tubes and the steam generator casing because the .
+top ends of the tubes would be free to float axially. However, the re-
+heater tubes will tend to run at a somewhat different temperature than the
+casing and hence some means for providing flexibility should be employed.
+Probably the easiest way to accomplish this will be to install the tubes
+on a spiral having a steep pitch, i.e., perhaps a total twist of 60 deg
+in the length of the regenerator region. This could be chosen to provide
+sufficient flexibility in the tubes so that the differential thermal ex
+pansion between the tubes and the shell would be accommodated elastically.
+The pitch would be steep enough so that the lateral loads on the tubes
+would probably not be large enough to mske it necessary to employ addi-
+tional structure to resist the forces associated with the small amount of
+
+- erossflow that will occur.
+ 
+
+ 
+
+ 
+
+w
+
+»
+
+61
+Geometric and Performance Data
+
+The calculations and principal ‘geometric and performance data for the
+complete steam generator are summarized in Table 5, Recent revisions in
+the physical properties of NaBF,, particularly in the viscosity, made it
+desirable to change the salt mass flow rate through the steam generator
+from the value of 2500 1b/sec ft? used in the calculations of Table 4 and
+those for Figs. 11 and 14 through 20. This, coupled with the changes in
+physical properties, led to a change in the tube length required.
+
+The heat load for the boiler-superheater and each of the reheaters
+was used to calculate the number of tubes for each matrix, with the molten
+salt streams for each section treated as flowing independently of each
+other with no lateral heat transfer. Note in the first portion of Table 5
+that steam bleed-off in the turbine through seals and for feed heating re-
+duces the steam flow rate to the reheaters so that it is substantially less
+than the steam flow rate to the boiler.
+
+Cost Estimate
+
+A rough estimate of the cost of the steam generator of Table 5 can be
+obtained by summing the estimated costs for the three major items, i.e.,
+the shell, the tubing, and fabrication of the tubé-to-header joints. This
+has been done and the results are summarized in Table 6. Note that the
+overall cost amounts to about $7.05/kw(e), which compares with around
+$20/kw(e) for the comparable portion of a conventional coal-fired boiler.
+(These cost estimates were made on the basis of unit costs as of 1968. )
+Thus it appears that the combined effects of a uni formly high heat flux,
+
+small dismeter tubes with relatively thin walls, and elimination of the
+
+need for pressure vessels subject to high pressures much more than offsets
+the high cost per pound of Hastelloy N. | EE
+The proportions given in Table 5 were not iterated to meke both the
+
+tube length and the molten salt pressure drop for the boiler-superheater
+
+and the two reheaters the same. This could and should be done, but the
+combined effects of uncertainties in the calculated heat transfer coeffi-
+cients and friction factors are large enough to make this an unwarranted
+
+refinement at this stage.
+ 
+
+ 
+
+62
+
+Table 5. Summary of Design Calculations for Steam Generator Units
+
+for a 1000 Mw(e) Molten Salt Reactor Plant
+
+ 
+
+Steam System
+
+Superheater outlet temperature, °F
+
+Superheater outlet pressure, psia
+
+'Reheater No. 1 outlet temperature, °F
+
+ Reheater No. 1 inlet temperature, °F
+
+Reheater No. 1 outlet pressure, psia
+
+Reheater No. 2 outlet temperature, °F
+
+Reheater No. 2 inlet temperature, °F
+
+Reheater No. 2 outlet pressure, psis
+
+Generator output, Mw
+
+Auxiliary power requirements, Mw
+Boiler feed pumps and boiler auxiliaries, Mw
+Fuel pumps, Mw
+NaBF,; pumps, Mw
+Miscellaneous, Mw .
+
+Net electrical output, Mw
+
+Overall thermal efficiency, %
+
+Fraction of heat load to boiler-superheater
+
+Fraction of heat load to reheater No. 1
+
+Fraction to heat load to reheater No. 2
+
+Fraction of weight flow to boiler-superheater
+
+Fraction of weight flow to reheater No. 1
+
+Fraction of weight flow to reheater No. 2
+
+Heat added to steam flow in boiler superheater, Btu/1b
+
+Heat added to steam flow in reheater No. 1, Btu/1b
+
+Heat added to steam flow in reheater No. 2, Btu/lb
+
+Inert Salt (NaBF,)
+
+Entrance temperature, °F
+
+Exit temperature, °F
+
+Entrance pressure, psi
+
+Exit pressure, psi
+
+Flow rate, 1b/hr
+
+Flow rate, 1b/sec
+
+Flow rate, ft3/sec
+
+NaBF, physical properties at 1075°F
+
+Specific heat, Btu/1b :
+Thermal conductivity, Btu/hr.ft.°F
+Viscosity, 1b/hr. ft
+Density, 1b/ft3
+Melting point, °F
+
+Shell
+
+Number of units
+
+Shell diameter, in.
+Shell overall height, ft
+Shell wall thickness, in.
+
+1050
+4000
+1050
+786
+1043
+1050
+705
+251
+1043
+66
+
+50
+5.4
+10
+
+1
+
+977
+bb 4
+0.775
+0.118
+0.107
+1.000
+0.84
+0.68
+886.0
+161.0
+
+180.2
+
+950
+1200
+180
+51
+
+\&/
+
+13.92 x 10%
+
+3860
+33.6
+
+0.36
+0.27
+3.4
+115
+725
+
+45
+40
+0.50
+
+om
+ 
+
+w
+
+u¥
+
+o
+
+63
+
+Table 5. (Continued).
+
+ 
+
+Boiler
+
+Boiler heat load, Btu/hr
+Tube OD, in.
+Tube ID, in.
+Tube length, ft
+Tube pitch (equilateral triangular), in.
+Salt mass flow rate, lb/sec- ft?
+Dynamic head, psi :
+Reynolds number
+Friction factor
+Pressure drop, psi - -
+Shell-side flow passage area/total cross- sectional
+area
+Shell-side flow passage equivalent diameter, in.
+Number of tubes per square inch, in.”
+Number of tubes per unit - :
+Shell-side surface area, ft?
+
+Reheater No. 1
+
+Tube OD, in.
+Tube ID, in.
+Tube pitch (equilateral triangular), in,
+Log mean temperature difference, °F
+Heat load per steam génerator, Btu/br
+Steam mass flow rate, 1b/sec-ft2
+Overall heat transfer coefficient, Bgu/or- £62 °F
+Surface area per steam generator, £t2
+Surface area, ft2/ft of tube
+Number of tubes
+Tube length, ft
+Salt flow rate, ft3 [sec
+Salt mass flow rate, 1lb/sec- ft?
+Salt flow passage area, ft?
+Total cross-sectional area in tubes, ft?
+Total cross-sectional area in tube matrix, ft2
+
+Shell-side flow passage/total matrix cross- -sectional
+
+area
+
+Shell-side flow passage equivalent atameter, in.
+-Steam pressure drop, psi :
+Salt pressure drop, psi:
+
+Reheater No. 2
+
+Tube OD, in,
+
+Tube ID, in.
+
+Tube pitch (equilateral triangular), in.
+Log mean temperature difference, °F
+Heat load per steam generator, Btu/hr
+
+-380
++ 2390
+
+9.73 x 108
+
+0.65
+0.50
+35.0
+0.775
+
+1350
+“1.5
+60,000
+
+0.025
+
+45
+
+0.366
+0.465
+
+1.91
+©1493
+8900
+
+1.00
+0.80.
+1.035
+
+‘150
+
+1.478 x 108
+200
+
+0.236
+365
+
+33.6
++ 33.6
+1350
+
+.338
+1.275
+2.328
+
+L145
+
+18
+
+20
+
+84
+
+1.00
+0.90
+1.01
+
+200
+1.34 x 108
+ 
+
+‘64
+
+Table 5. (Continued)
+
+ 
+
+Reheater No. 2 (continued)
+
+Steam mass flow rate, lb/hr.ft? 70
+Overall heat transfer coefficient, Btu/hr- £t2. °F C215
+Surface area per steam generator, £2 - 3300
+Number of tubes a oT 632
+Tube “length, ft oy Ts el ‘22
+Salt flow rate, ft3/sec CT 3.6
+Salt mass flow rate, 1b/sec-ft? 1000
+Salt flow passage area, ft2 : : 0.414
+‘Total cross-sectional area in tubes, £t2 © 3.63
+Total cross-sectional area in tube matrix, ft? 4.04
+Shell-side flow passage/total : matrix cross-sectional 0.10
+area
+Shell-side flow passage equivalent diameter, in.’ 0.11
+Steam pressure drop, psi oo oo 8
+
+ 
+
+Table 6. Rough Cost Estimate for the Steam Generator of Table 5
+
+ 
+
+ 
+
+" Ttem "Amount Unit Cost Cost
+Shell (fabricated) 10,000 ~~ ' - $8/1b ~~ $ 80,000
+Baffle 02,0001  ...  _ $/1 16,000
+Boiler tubes 60,000 ft, 0.25 in. diam $3/ft 180,000
+
+60,000 ft, 0.65 in. diam $7/ft ~~ ° 420,000
+Reheater tubes 25,000 ft, 1.0 in. diam -$8/ft 200,000
+Material Cost - EA $ 896,000
+Tube installation 2490 tubes ~~ ©-° $§10/tube 273,900
+
+(including welding
+of tube-to-header
+Joints and inspec-
+tion
+
+ 
+
+Total Shop Cost © $1,169,900
+
+ 
+
+LO
+ 
+
+ 
+
+ 
+
+ 
+
+[3
+
+[3
+
+65
+
+Conclusions
+
+The proposed reentry tube boiler appears to offer a long-sought solu-
+
+tion that satisfies all of the major requirements for the steam generators
+
+of liquid metal and molten salt reactor power plants. It appears to be
+
+well suited to the generation of steam at any desired pressure and tempera-
+
+ture condition with good stability and control characteristics throughout
+
+the range from zero to full power, It lends itself to designs in which
+the thermal stresses throughout the unit can be kept within the elastic
+range under all operating conditions. The heat flux is uniformly high so
+that the inventory of structural metal or liquid metal and molten salt is
+
+near minimal, the number of tube-to-header joints is relatively small,
+
+. there is no high pressure header sheet in contact with the high-temperature
+
+liquid, there appears to be no unusual fabrication problems, and the capi-
+tal cost appears to be competitive. The only apparent disadvantage is
+that the concept is novel and has not been tested.
+
+The performance characteristics of reentry tube boilers presented in
+this report represent rough preliminary approximations based on a set of
+simplifying assumptions. Test experience with a unit employing at least
+three full-scale tubes would provide a firm foundation for the design of a
+large unit. |
+
+Recommendations
+
+A test unit consisting of one or a few tubes should be built and
+tested. In the test program particular attention should be given to the
+investigation of possible boiling flow instabilities under startup, near-
+zero power, and part load operating conditions to see to what extent ori-
+ficing may be required at the feedwater inlet. The test program should
+
+‘also include an investigation of the overall stability and control charac-
+
+teristics under steam conditions ranging from 100 psia to 4000 psia. -
+Most of the problems and uncertainties associated with the reentry
+tube boiler could be investigated vith a relatively simple single tube unit
+fitted with clamshell heaters. Such a unit could be built and tested ex-
+peditiously and inexpensively, and would lend itself nicely to a detailed
+ 
+
+66
+
+investigation of the temperature distribution along the tube under a wide
+range of conditions as well as facilitate modifications such as the inser-
+tion of inlet orifices.
+
+An electrically heated single tube test will probgbly be very much
+less convincing to most people than a long endurance test of a unit having
+3 to 19 tubes heated by a molten salt. Such a test unit should give a
+good demonstration of the freedom of the system from corrosion, mass trans-
+
+fer, thermal stress, and boiling flow stability problems.
+
+.O
+ 
+
+ 
+
+»
+
+10.
+
+11.
+
+13.
+
+ 
+
+67
+ Hefencmess
+
+A. P. Fraas, Flash Boilers for Fluoride Fuel Reactors, USAEC Report
+ORNL-CF-55- 6-79; Oak Ridge National laboratory, June 16, 1955.
+
+P. R. Kasten et al., Design Studies of 1000-Mw (e) Molten-Salt Breeder
+Reactors, USAEC Report ORNL-3996, Oak Ridge National Laboratory,
+
+August 1966, pp. 77-87.
+
+D. Scott and A. G. Grindell, Components and Systems Development for
+Molten-Salt Breeder Reactors, USAEC Report ORNL-TM-1855, Oak Ridge
+National Laboratory, June 30, 1967, pp. 21-22.
+
+Oak Ridge National Laboratory, MSRP Quarterly Progress Report
+Jan. 31, 1959, ORNL-2684, p. 5k.
+
+L. G. Alexander et al., Molten Salt Converter Reactor Design Study
+and Power Cost Estimates for a 1000 Mw(e) Station, USAEC Report
+ORNL-TM-1060, September 1965. -
+
+B. W. Kinyon and G. D. Whitman, Steam Generator-Superheater for
+
+‘Molten Salt Power Reactor, ASME Publication 61-WA-228," Nov. 26-
+~ Dec. 1, 1961.
+
+R.. S. Holcomb and M. E. Lackey, Performance Characteristics of a
+Short Reentry Tube Steam Generator at Low Steam Output, USAEC Report
+ORNL-TM-3236, Oak Ridge National Laboratory (in press).
+
+A. P. Fraas and M. N. Ozisik, Heat Exchanger Design, Wiley & Sons,
+Inc., New York, 1965.
+
+B. 8S. Shiralkar and P. Griffith, The Deterioration in Heat Transfer
+to Fluids at Supercritical Pressure and High Heat Fluxes, Rept. No.
+70332-51, Dept. of Mechanical Engineering, Engineering Project Lab,
+
+Massachusetts Institute of Technology (Mar. 1, 1968) .
+
+D. W. Lee and R. C. Spencer, Photomicrographic Studies of Fuel
+Sprays, NACA Technical Report L5L, 1933.
+
+D. W. Lee, The Effect of Nozzle Design and Operating Conditions on
+the Atomization and Distribution of Fuel, Sprays, NACA Technical
+Report kes, 1932.
+
+P. J. Birbara, J. E. Cowles and V. C. A. Vaughen, Flash Boiler
+Test II, Memo No. EPS-X-296, Massachusetts Institute of Technology,
+Engineering Practice School, Union Carbide Corp., Jan. 18, 1957.
+
+Oak Ridge National Laboratory, MSRP Semiann. Progr. Rept. Jan. 31,
+196k, USAEC Report ORNL-3626, p. 2L.
+ 
+
+ 
+
+14.
+15.
+
+16.
+17.
+
+18.
+
+19.
+
+. 20.
+
+68
+
+A. P. PFraas and M. N., Ozisik, Steam Generators for High-Temperature
+
+' Gas-Cooled Reactors, USAEC Report ORNL-3208, Oak Ridge National
+
+Laboratory, April 8, 1963.
+
+W. R. Chambers, A. P. Fraas and W. N. Ozisik, A Potassium-Steam
+Binary Vapor Cycle for Nuclear Power Plants, USAEC Report ORNL-3584,
+Oak Ridge National Laboratory, May 1964.
+
+N. IL. Dickinson and C. P. Welch, Heat Transfer to Supercritical
+Water, Trans. ASME, Vol 80, p. 746, 1958.
+
+Westinghouse Turbine Operating Manual I. L. 1250-3218A, 300-350 0 Mile),
+300 psi Hydraulic Governoring System, 1967.
+
+M. M. Yarosh and P. Gnadt, Use of a Cavitating Pump for Control of a
+Potassium Rankine Cycle System, paper presented at the Intersociety
+Energy Conversion Engineering Conference, las Vegas, September 1970.
+
+R. J. Bender, U,S. Welcomes Variable-Pressure Concept, p. 56, Power,
+August 1970.
+
+A. P. Fraas, Conceptual Design of a Molten Salt Reactor with Its
+Intermediate Heat Exchangers and Fuel Pumps Integrated in a Common’
+Pressure Vessel, USAEC Report ORNL-TH-2954, Oak Ridge National
+ILeboratory (to be published).
+
+.O
+
+a.
+ 
+
+ 
+
+“tb
+
+at
+
+C
+
+10.
+11.
+12.
+13.
+14-16.
+17.
+18.
+19.
+20.
+21.
+22.
+23-32.
+33.
+3k.
+35.
+36.
+37.
+38.
+39.
+40.
+ha.
+ho,
+
+86.
+87.
+88.
+89-90.
+91.
+92.
+93-9k.
+
+96-98.
+99-100.
+
+Je
+
+S.
+M.
+Cc.
+E.
+E.
+C.
+H.
+R.
+C.
+Js
+We
+Je
+F.
+Js
+S.
+We.
+
+Je
+
+D.
+A.
+L.
+Ww.
+A.
+We.
+
+P.
+
+H.
+P.
+J.
+M.
+
+David Elias, AEC-Washington
+R. Jones, AEC-Washington
+Kermit Laughon, AEC-OSR
+
+T. W. McIntosh, ARC-Washington
+M. Shaw, ABC-Washington
+
+W. L. Smalley, AEC-ORO
+
+INTERNAL, DISTRIBUTION
+
+L. Anderson
+F. Bauman
+E. Beall, Jr.
+
+Bender
+
+E.
+S.
+G.
+Je
+I.
+B.
+Ww.
+Ww.
+B.
+L.
+L.
+R.
+Je
+P.
+R.
+E.
+P.
+D.
+R.
+G.
+o.
+N.
+E.
+Ww.
+R.
+
+Je
+
+I.
+
+Bettis
+
+Bettis
+Bohlmann
+Borkowski
+Bowers
+Briggs
+Collins
+Cooke
+Cottrell
+Crowley
+Culler
+DiStefano
+Ditto
+Eatherly
+Engel
+Ferguson
+Fraas
+Fuller
+Grimes
+Grindell
+Harms
+Haubenrecih
+Helms
+Hoffman
+Kasten
+Keyes, Jr.
+Lundin
+
+43.
+hh,
+
+’ ks,
+46.
+kh.
+48.
+kg.
+50.
+"51.
+52.
+53.
+5h.
+55.
+56-65.
+66.
+67.
+68-69.
+70.
+T1.
+2.
+73.
+Th.
+T5e
+76.
+TT.
+78.
+79.
+
+80-81 .
+
+82.
+83-8.
+85.
+
+EXTERNAT, DISTRIBUTION
+
+ 
+
+‘R.
+‘He
+
+R.
+
+© ORNI-TM-2953
+
+N. Lyon
+G. MacPherson
+E. MacPherson
+
+H. E. McCoy
+
+H. C. McCurdy
+H. A. Mclain
+L. E. McNeese
+J. R. McWherter
+A. J. Miller
+
+R. L. Moore
+
+E. L. Nicholson
+A. M. Perry
+
+R. C. Robertson
+M. W. Rosenthal
+J. P. Sanders
+A. W. Savolainen
+Dunlap Scott
+
+I. Spiewak -
+
+D. A. Sundberg
+
+R. E. Thoma
+
+D. B. Trauger
+
+A. M. Weinberg
+
+J. R. Weir
+
+M. E. Whatley
+
+G. D. Whitman
+
+L. V. Wilson
+
+Central Research Library
+Document Reference Section
+Laboratory Records
+Laboratory Records (LRD-RC)
+
+Division of Technical Information Extension (DTIE)
+
+Taboratory and University Division, ORO
+
+Director, Division of Reactor Licensing, AEC, Wash.
+Director, .Division of Reactor Standards, AEC, Wash.
+
+ 

@@ -1,0 +1,5191 @@
+ 
+
+i a
+
+7 ORNL-4575, Volume 2
+UC-25— Metals, Ceramics, « and Materials
+
+ 
+
+ 
+
+7, CORROSION IN POLYTHERMAL Loop SYSTEMS
+
+ 
+
+ 
+
+IL A SOLID-STATE DIFFUSION "MECHANISM
+WITH AND WITHOUT LIQUID FILM EFFECTS :
+RB. Evans =
+
+Jo WL Koger
+J. H. DeVan
+
+ 
+
+ 
+
+oak RIDGE NATIONAL LABORATORY
+a _operated | by a Co
+UNION CARBIDE ‘CORPORATION.
+Co : "for the Sa
+u. s. ATOMIC ENERGY COMMISSION
+
+DSTHEUTION oF THIS DOCUMENT 5 URLITED
+
+En THiS DOCUMENT CONFIRMED AS.
+DIVISION OF CLASSIFICA]
+A IFICATION
+BY QHNiat.)
+
+DATE thal
+
+  
+
+ 
+
+oe eh 1 Andy rae vr var td waren ds a
+:
+
+ 
+
+-Printed in the United States of America. Available from
+National Technical information Service
+U.S. Department of Commerce °
+5285 Port Royal Road, Springfield, Virginia 22151
+
+ 
+
+Price: Printed Copy $3.00; Microfiche $0.95
+
+ 
+
+ 
+
+This report was prepared as an account of :work sponsored by the United -
+States Government. Neither - the United States: nor the United States Atomic
+Energy Commission, nor any of their employees, nor any of their contractors,
+subcontractors, or their employees, makes any warranty, express or implied, or
+assumes. any legal liability -or responsibility for. the accuracy, completeness or
+usefulness of any information, apparatus, product or process disclosed; or
+represents that- its’ use would not infringe privately owned rights.
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+a"
+
+He
+
+=)
+
+ORNL-4575, Volume 2
+
+Contract No. W-7405-eng-26
+
+METALS AND CERAMICS DIVISION
+
+CORROSION IN POLYTHERMAL LOOP SYSTEMS
+IT. A SOLID-STATE DIFFUSION MECHANISM
+WITH AND WITHOUT LIQUID FILM EFFECTS
+
+R. B. Evans III
+J. W. Koger
+J. H. DeVan
+
+ 
+
+ 
+
+This report was prepared as an account of work
+sponsored by the United States Government, Neither
+the United States nor the United States Atomic Energy
+Commission, nor any of their employees, nor any of
+their contractors, subcontractors, or their employees,
+makes any warranty, express or implied, or assumes any
+legal liability or responsibility for the accuracy, com-
+pleteness or usefulness of any information, apparatus,
+product or process disclosed, or represents that its use
+would not infringe privately owned rights,
+
+ 
+
+ 
+
+ 
+
+JUNE 1971
+
+OAK RIDGE NATIONAL LABORATORY
+Oak Ridge, Tennessee
+operated by
+UNION CARBIDE CORPORATION
+for the
+U.S. ATOMIC ENERGY COMMISSION
+
+, DISTRIBUTION OF THIS DOCUMENT IS UNLIMITED
+
+ 
+
+—
+ 
+
+ 
+
+w)
+
+ 
+
+ 
+ 
+
+-)
+
+“a
+
+af 1
+
+iii
+
+CONTENTS
+
+Abstract . . « ¢ « « «co 4 0 0 0 ee eo
+Nomenclature . . « « + « « « o « « oo o
+Introduction . . . . . .
+
+Fundamental Concepts . . . « +. «+ « « .
+
+Basie Diffusion Relationships . . . .
+
+Surface Behavior . . . «.. « « + «
+Equilibrium Ratio . . . . . .
+Reaction Rates . . . « «+ + « + .
+Mass Transfer Across Liquid Films
+
+Combined Reaction Rate-Film Resistances . . . .
+Surface Effects Referred to the Alloy . .
+
+Transient Solutions . . . « « + «+ « « «
+
+Review of the Equations . . . . . .
+
+Application to Sodium-Inconel 600 Systems . . . . .
+
+Reference and Prototype Loops . . . .
+The Reference Loop . . « « «+ « +
+A Prototype Loop . . «. «+ « &
+
+Quasi-Steady-State Solution . . . .
+
+Statement of the Problem and Objectives
+
+Temperature Profiles and Loop Configurations . . . .
+
+Solution in Terms of the Prototype Loop . . . . .
+Predicted Results for Sodium-Inconel 600 Systems . .
+
+Application to Molten-Salt Systems . . .
+
+Thermal Convection Loops . . . «. + +
+
+Redox Corrosion Equilibria and Systems
+Discussion . . «+ + « «+ + ce 4 oe
+
+Transient Factors . . . . . . +. . « .
+Quasi-Steady-State Solutions . . . . .
+
+Discussion of Molten-Salt Results . . . .
+
+SUMmMATY « « « « o « « so 0 + =
+
+Discussion of Sodium-Inconel 600 Results . . . . « . .
+
+e + eo ee a =
+
+Selected for
+
+. * & 8 = eo
+
+e 8 ss 8 eo =»
+
+. e eo eo 8 + =
+
+Page
+
+PERIERREBE 0oeuwwn kr
+
+19
+24
+26
+26
+26
+28
+32
+
+32
+36
+
+43
+46
+50
+50
+
+54
+55
+59
+
+69
+
+ 
+ 
+
+ 
+
+w)
+
+ 
+
+a)
+
+ 
+ 
+
+ 
+
+“
+
+a
+
+«Ny
+
+ 
+
+CORROSION IN POLYTHERMAL LOOP SYSTEMS
+II. A SOLID-STATE DIFFUSION MECHANISM WITH AND
+WITHOUT LIQUID FILM EFFECTS
+
+R. B. Evans III J. W. Koger
+J. H. DeVan
+
+ABSTRACT
+
+The corrosion resistance of alloys exposed to nonisothermal
+circulating liquids is an important consideration in the design
+of reactor systems that employ liquids as either coolants or
+coolant-fuel combinations. Accordingly, several mathematical
+descriptions have been developed to explain selective transport
+of corrosion-labile constituents of nickel-base alloys. This
+report is the second of a series to correlate results of corro-
+sion behavior observed in polythermal loop systems. The present
+report specializes to cases in which solid-state diffusion in the
+alloy, as influenced by coolant characteristics and composition,
+dominates the corrosion mechanism. Equations are derived for
+both transient and steady-state cases. Since transients, which
+are induced by liquid films, are negligible, analysis of steady-
+state behavior is of greatest importance.-
+
+Applicability of the derived equations is demonstrated by
+comparison of predicted values with experimental results for two
+distinctly different systems. The first involves hot-to-cold-
+zone transfer of nickel in Inconel 600 pumped loops circulating
+liquid sodium. Comparisons revealed that actual corrosion is
+much higher than predicted by the equations; this suggests that
+the true corrosion reaction overrides a slow solid-state diffu-
+
+- sion process. The second system considered is transfer of
+
+chromium in Hastelloy N loops with molten salt flow induced by
+
+thermal convection. Three hypothetical examples are considered,
+
+namely: (1) chromium corrosion at all points, transfer to salt
+only; (2) hot-to-cold-zone chromium transfer; and finally
+
+(3) cold-to-hot-zone chromium transfer. While complete data to
+substantiate the results computed for the above cases are not
+available, the success of early Cr tracer experiments
+(example 1) suggests that the solid-state diffusion mechanism
+does apply to certain molten-salt systems when the salt con-
+stituents (and impurities) are subjected to stringent control.
+
+ 
+
+ 
+ 
+
+ 
+
+aw on” 8
+
+oO la
+
+exp (7)
+erf(v)
+erfe(v)
+
+E, (u,)
+E; (uy)
+Ep
+
+Eoln
+f
+
+f(p)
+f(w,s)
+F(w,t)
+
+oR
+
+55 Ql
+
+NOMENCLATURE
+
+Subscript denoting alloy; superscript denoting activity.
+Activity of alloy constituent M, no units.
+
+- Total liquid exposed area of loop alloy, cm?.
+
+Cross-sectional area of loop tubing, cm?.
+
+Internal peripheral ares of loop tubing, em?
+Slope of a linear T versus z segment, °K/cm.
+
+Subscript denoting cold zone.
+
+Integration constant with respect tow, i=1, 2, wt. frac. sec.
+
+2
+Constant group, 4 xp r/Dyx, g em”? sec” -1/
+
+Constant group, (x, /%)¢, g cm™1 sec1/2,
+
+Symbol for dissolved metallic species.
+Diffusion coefficient of M(s) in alloy, cm?/sec.
+Preexponential term, D/exp(-Ep /RT), cm?®/sec.
+
+Mutual diffusion coefficient of M(d) in liquid metal, cm? /sec.
+
+The transcendental number 2.71828......., no units.
+The exponential function oF Te no units.
+The error function of v, { e~" dr, no units.
+
+The complementary error function of v, 1 — erf(v), no units.
+
+«©
+First-order exponential function of uy, J (7% /t)dr, no units.
+4
+
+J
+u,
+The "i" exponential function of ug; [9 (e™/x)ar, no units.
+00 .
+
+Activation energy for solid-state diffusion of M(s), cal/mole.
+
+Energy required to dissolve M in liquid metal, cal/mole.
+Fraction of Aj; when A _ is constant, f = z/L.
+Location of balance point where dy = 0 and k = kn.
+
+- ’
+Laplace transform of F(w,t), [ Fw, t)e St at
+
+An arbitrary function of w and t.
+
+Symbol denoting gram mass.
+
+Symbol denoting gas.
+
+Gibb's potential or free energy, cal/mole.
+Film coefficient for mass transfer, cm/sec.
+
+Combined solution rate — film coefficient, cm/sec.
+
+(w
+
+".
+at
+
+ 
+
+ 
+
+ 
+
+«
+
+ 
+
+h’! = Subscript denoting hot zone.
+H = The product kx (n/p) (eo, /p,) (m, /m), em™1
+MH = Enthalpy difference, cal/mole.
+i = Index 1 at f£ = O for function below.
+Lis (aft) = An integrated function along extended z coordinate from
+gs to £yor cn.
+J = Index p or 2 at balance point or f = 1 for function above.
+Jy = Mass flux of species M, g cm”? sec-1/2,
+In = Atomic or molecular flux of species M, mole cm™? sec=1/2,
+k = Boltzmann constant = 1.38 X 10716 g cm? sec™! °k1.
+k, = Solution rate constant, cm/sec.
+'k,” = Solution rate constant, mole cm™? sec~l.
+k, = Deposition rate constant, cm/sec.
+k,?® = Deposition rate constant, mole cm™? sec~l.
+K* = Equilibrium constant, k 1/62, no units.
+x = Activity coefficient ratio, "u(a) Mus)” units depend on
+choice of standard states for
+= Preexponential factor Kp/exp(-E__; /RT), no units.
+
+= Balance point value of Kn» no units.
+
+1%
+%
+Kn = Experimental solubility constant, no units.
+
+£ = Subscript denoting liquid.
+
+L = Total loop length, cm.
+
+m = Molecular or atomic weight, g/mole.
+
+M = Symbol denoting metal constituent subject; to corrosion.
+AM(t) = Mass or weight of M transferred, g.
+
+N__ = Reynolds number, 20'V_p/u.
+
+Ng, = Schmidt number, u/eDy, no units.
+Non = Sherwood number for mass transfer, 2nry/ Dyn? no units.
+p= Symbol or subscript denoting balance point.
+ q = A transformation variable, (s/D)2/2, cm.
+Q = Volumetric flow rate in loop, cm em? sec.
+r = Radial distance measured from the center of the Loop tubing, cm.
+r,, = Atomic radius of M(d) in liquid metal, cm.
+r’ = Inside radius of loop tubing, cm.
+
+ 
+ 
+
+ 
+
+>
+
+ 
+
+4
+
+Gas constant used in exponential terms, 1.987 cal mole”! °K°1.
+Laplace transformation variable, sec”l.
+Symbol denoting solid solution.
+
+Time, sec.
+
+Temperature, °F, °C, or °K.
+
+Temperature drop along a segment of z, °F, °c, or °K.
+Dimensionless variable, alt., no units.
+
+The argument w/(4D8)1/2, no units.
+
+Liquid flow velocity, Q/A, cm/sec.
+
+Distance of linear diffusion, normal to A , of M(s) in
+alloy, cm.
+
+Concentration of M(s) in alloy expressed as weight fraction,
+no units.
+
+Concentration of M(s) in as-received alloy.
+
+Surface concentration of M(s) as a function of T along z.
+Concentration of M(s) in diffusion region as a function of
+position and time.
+Alloy concentration of M(s) equivalent to liquid concentration
+of M(d) at the liquid side of the liquid film.
+
+Alloy concentration of M(s) equivalent to equilibrium. liquid
+concentration at liquid-solid interface.
+Concentration of M(s) in alloy expressed as atomic fraction,
+no units.
+
+The concentration difference, x, (0,t) — x, no units.
+
+The concentration difference, x* — Xs DO units.
+Concentration of M(d) in bulk liquid expressed as weight
+fraction; it corresponds to v* when transients are discussed,
+no units.
+
+Concentration of M(d) at metal-film interface, no units.
+Equilibrium or saturation concentration of M(d) in a unit
+activity container. |
+
+Concentration of M(d) in bulk liquid expressed as weight
+
+- fraction, no units.
+
+on
+
+[1]
+ 
+
+ 
+
+a)
+
+Ly
+
+ 
+
+z = Linear flow coordinate for v or Q, cm.
+a = The factor (Ej) /(2bR), cm.
+o = The factor (2, — 2E_ 1, J2bR > 1, cm,
+a” = The factor ¢/ <1, cn.
+B(u;) = The factor u, exp(u, JE (uy ), no units.
+7 = Activity coetficients, ae selected to make ey
+dimensionless. Co
+A = Symbol to denote difference.
+t = Extended z coordinate = a/u, ., Cm.
+Bu = Viscosity coefficient of tho liquid metal, g cm™l sec”l.
+nn = The transcendental number 3.1416..., no units.
+p = Mass or weight density, g/cm’.
+T = Dummy variable of integration, no units.
+¢,, = Concentration difference for hot zone, x, (0, t) — Hy (8),
+
+no units.
+
+h' = Concentration difference for hot zone when liquid film is
+present, xt, — x, (v,t), no units.
+$ = ox concentration difference for cold zone with and without
+
+presence of liquid film, x (w,t) — Xx, , no units.
+
+INTRODUCTION
+
+In a previous report?! (hereafter referred to as Report I) atten-
+tion was given to interpretations of corrosion behavior in systems com-
+posed of liquid sodium contained in the nickel-base alloy Inconel 600.
+Specific interest focused on experimental pumped loops that gave definite
+evidence that nickel and chromium moved from hot to cold regions of the
+loops. Only nickel transfer was considered, because little was known
+
+~ about the solubility of chromium in liquid sodium; furthermore, the major
+
+component undergoing corrosion and transfer: was nickel. Solubility
+information is of major importance because the manner in which solubility
+
+IR. B. Evans III and Paul Nelson, Jr., Corrosion in Polythermal
+Systems, I. Mass Transfer Limited by Surface and Interface Resistances
+
+as Compared with Sodium- Inconel L Behavior, ORNL-4575, Vol. 1 (March 1971).
+
+ 
+ 
+
+ 
+
+increases with temperature governs the steady-state driving force for
+mass transfer around the loop.
+The major effort in Report I was to develop a simple system of
+
+equations that might describe the mass transfer as observed experimentally.
+
+The approach in Report I was to assume that the mass-transfer equations
+would fall into the same patterns as those that describe heat transfer
+from hot to cold zones under conditions of known external-temperature
+
+profiles and rates of fluid flow around the loop. For heat flow, the
+
+only resistances involved would be an overall coefficient that would com-
+
+prise the thermal conductivity of the walls and a heat-transfer film.
+An analogous situation was assumed for mass transfer with the exception
+that the thermal conductivity term was replaced by a reaction-rate con-
+stant that was presumed to be associated with a first-order dissolution
+reaction.
+
+Predictions of corrosion based on the heat-transfer analog showed
+that transient mass transfer effects decayed after negligibly short
+times (fractions of an hour). Steady-state corrosion rates calculated
+from the film coefficient alone were much greater than measured values.
+It was necessary to invoke the reaction-rate constant to increase the
+
+resistances and lower the computed results in order to match experimen-
+
+tal results. While this "matching" could be done for results of individ-
+
+ual experiments, a consistent set of reaction constants for all results
+
+that would lead to a general correlation could not be obtained. One of
+the prime reasons for the failure of the mechanisms covered in Report I
+is that the loop walls were not pure nickel. Rather, the walls were of
+an alloy wherein solid-state diffusion effects influenced the overall
+behavior. These effects were ignored in the equations of Report I.
+
+The present report is devoted to another mathematical treatment of
+an idealized mass-transfer process wherein corrosion rates depend
+directly on the rate at which consituents of alloys diffuse into or out
+of container walls, as influenced by the condition of wall surfaces
+exposed to a high-temperature liquid. Specifically, consideration is
+given to cases for which solid-state diffusion controls mass transfer
+
+at all points in a polythermal loop system containing circulating
+
+liquids. The container constituents of interest are nickel-base alloys.
+
+[3]
+wi
+
+oy
+
+Cc’
+
+ORNL-2440, Pp- 104-113.
+
+ 
+
+We have also considered the contributions of liquid-film resistances
+acting simultaneously with the solid-state mechanism to ascertain whether
+or not a suitable combined mechanism (our ultimate goal) could be
+attained. Unfortunately, this approach was unsuccessful.
+
+Three rather important assumptions are made in our present deriva-
+tions. First, effects of changes in wall dimensions can be neglected.
+Second, the rate of diffusion is unaffected by composition changes in
+the diffusion zone of the alloy; in other words, the diffusion coef-
+ficient is not a function of concentration. Third, the circulating
+liquid is pre-equilibrated with respect to the amount of dissolved com-
+ponents so that the concentrations in the liquid do not vary appreciably
+with position or time. This latter boundary condition is embodied in
+both the "transient" and "quasi-steady-state" conditions that are
+covered in this report.
+
+‘It should be mentioned that, although many liquids have been studied
+relative to reactor applications, the basic approach in assessing corro-
+sion properties remains the same. One employs either thermal convection
+loops or pumped systems to collect the data required. At the time of
+this writing, sodium systems, which are of interest to the Liquid Metal
+
+' Fast Breeder Reactor,?s3 are under intensive study. We should note a
+
+treatment similar to that to be covered here was initially roughed out
+
+‘in 1957 under the auspices of the Aircraft Nuclear Propulsion (ANP)
+
+Project.* The Hauids of interest in this early effort were molten
+
+fluoride salts.”
+
+The objective of the work “leading to the present report has been
+to carry out refinements of the early ANP treatments, and to generalize
+
+the results to permit their application to many systems that might
+
+2prgonne National Laboratory, Liquid Metal Fast Breeder Reactor
+(LMFBR) Program Plan. Volume l. Overall Plan, WASH-1101 (August 1968).
+
+3A1kali Metal Coolants (Proceedings of a Symposium, Vienna,
+28 November — 2 December, 1966), International Atomic Energy: Agency,
+Vienna, 1967.
+
+“R. B. Evans IIT, ANP Program Quart. Progr. Rept. Dec. 31, 1957,
+
+’R. C. Briant and A) M. Weinberg, "Molten Fluorides as Power Fuels,"
+Nucl. Sci. Eng. 2, 797-803 (1957).
+
+ 
+ 
+
+ 
+
+operate within the solid-state mechanism under consideration. A short-
+
+term and immediate objective is to determine whether a mechanism of this
+type applies to the migration of nickel in the sodium-Inconel system in
+
+high-velocity pumped loops.
+
+One of the central conclusions of the present study is that the
+solid-state mechanism clearly does not explain the observed corrosion
+behavior of the sodium~Inconel 600 system. On the positive side, how-
+ever, the analytical work that was done is immediately and directly
+applicable to Hastelloy N-molten salt thermal convection loops, in which
+this solid-state mechanism clearly does operate. Thus, the present work
+includes two separate topics: one covering corrosion induced by liquid
+
+metals, another covering corrosion induced by constituents in molten-
+
++ salt systems.
+
+For ease of presentation, a rather unorthodox outline has been
+
+adopted for this report. First, we discuss basic diffusion relationships,
+
+variables, and the type of transients one might encounter. Then we turn
+to a discussion of liquid mass-transfer films and their effects on the
+corrosion rates. Next, we derive and present equations for the cumula-
+tive corrosion at quasi-steady-state (i.e., when the transient effect
+associated with liquid film resistance has diminished). The term "quasi"
+appears because the predicted corrosion varies with the square root of
+time. These make up the most important aspect of the report. However,
+to emphasize the meaning of the analytical results, detailed "example
+calculations" are given. Separate discussions are presented for the
+liquid-metal application and three molten-salt applications. The final .
+section is a summary of the more important features of the equations and
+
+their applications.
+
+FUNDAMENTAL CONCEPTS
+
+It would be most convenient, from the authors’ standpoint, to
+proceed directly to the task of setting up the diffusion relationships
+that take liquid phase mass transfer into account, show this to be of
+little importance, and proceed directly to the quasi-steady-state solu-
+
+tion based on the diffusion relationships. This is the conventional
+
+(ww
+
+ww
+ 
+
+out
+
+“0
+
+oy
+
+ 
+
+method of presentation, but one immediately encounters fractional-
+approach variables introduced by the nature of the alloys and chemistry
+of the liquids. Accordingly, we shall jump ahead of the film part of -
+the problem and start by writing down some of the well-known expressions
+for solid-state diffusion in order to introduce the ideas behind
+fractional-approach variables and to enable recognition of integrated
+
+forms that emerge when film resistances are encountered.
+
+Basic Diffusion Relationships
+
+The basic relationships required are the concentration-profile
+equations that express the weight or mass. fraction x(w,t) of an alloy
+constituent as a. function of position across the wall, Wy and time, t.
+We. let w =r — r’, where r’ is the inner radius of the loop tubing.
+
+The relationships derive from Fick's second law of diffusion, sometimes
+called the Fourier equation, and apply to both hot and cold zones of
+the system. These relationships are developed elsewhere.®:7 It is suf-
+ficient here to point out just a few important. features of the equations
+involving x(w,t). First, x(0,t) is assumed to be constant with time.®
+Only linear diffusion along a single coordinate,’ Ww, shall be considered.
+
+The direction of w is normal to the liquid exposed surface, A , where
+
+Ww = 0. The container walls are infinitely thick relative to the effec-
+
+tive depth of the profile; thus x(«,t) = x, , the bulk concentration of
+the constituent, for all times.
+
+ 
+
+SR. V. Churchill, Modern Operational Mathematics in Engineering,
+1st ed., pp. 109-112, McGraw-Hill, New York, 1950.
+
+7H. S. Carslaw and J. C. Jaeger, Conduction of Heat in Solids,
+2nd ed., pp. 58-61, Oxford University Press, New York, 1959.
+
+8The Justification for this assumption will become evident as we
+
+discuss the relationship between the concentration of an element at the
+
+metal surface and its concentration in the corrosion medium.
+
+The reader should not infer that use of w = r — r’ means that a
+radial flow system is to be employed; we use w as a linear flow coordi-
+nate, even though the container is a cylindrical tube, because most of
+the alphabet has been reserved for other notation.
+
+ 
+ 
+
+ 
+
+10
+
+Two functions evolve from the solution of the Fourier equation;
+
+these hold for the hot and cold zones, respectively:
+
+0 x(0,t) — x(w,t)
+
+N= erf(v), (1)
+Ax x(0,t) - x,
+x(w,t) — x 0
+Pe = xt) — x, = erfe(v) ’ (2)
+ax x(0,t) — x,
+where
+v = w/ (408) 1/2 . (3)
+
+Consider now a hypothetical case (somewhat implausible for an actual
+loop) in which given points in the hot and cold legs have the same v.
+A rather important identity can be demonstrated by adding Egs. (1) and
+(2), namely, (oy, + 0.) /ox = 1. This happens because the definitions
+of the error functions take the form shown below:
+
+v oo
+
+_ 2 2 a2 7,
+rv) + erfe(v) Le ar + Je a 1 (4)
+
+jo
+
+As v approaches zero, op [0x approaches unity, and as v approaches
+infinity, op, [ox approaches zero. The reverse is true for 0 [x This
+
+means that
+
+x(w,») = x(0,t) -» x, x(,t) = x(w,0)
+
+in the hot zone, and
+
+x(w,») = x(0,t) , x(,t) = x(w,0) =» x,
+
+in the cold zone.
+
+The necessity of introducing variables like ¢ and parameters like
+Ax should begin to emerge at this point. From a physical point of view,
+the concentration of a constituent in the alloy can never be unity in a
+"compatible" alloy-liquid system. The purity of the liquid should be
+high while its ability to dissolve alloy constituents should be minimal.
+
+Thus, values like x(w,») = 1 or O, and x(0,t) = O or 1, are seldom
+
+ow
+ 
+
+ 
+
+“
+
+A)
+
+11
+
+encountered in practice. Yet, from a mathematical point of view, the
+
+- solution must vanish at all boundaries except one. Stated in the
+
+language of partial differential equations, the heat equation must be
+homogeneous; the same is true for all but one of the boundary condi-
+tions1%s11 unless an additional equation is involved. The nonhomogeneous
+conditions usually concern an initial or particular surface condition.
+For these reasons, fractional-approach variables are employed.
+
+The problem at hand requires use of x(w,t) as prescribed for Fick's
+
+. first law, the latter being evaluated at the surface to obtain an expres-
+
+sion for the flux traversing w = O:
+
+dx(0,t) 1/2
+dy = De, S —, Ox (p/mt) . (5)
+If we assign z as the directional flow coordinate of the circulating
+liquid normal to w, then Ax at each point is a function of z and of tem-
+
+perature, and Eq. (5) with x(0,t) = Xp, takes the form
+
+Sy = Pa (1 = 5px.) (Dfn6)2/2 (6)
+
+. The flux Im is positive for the hot zone and negative for the cold zone.
+~ One of the basic assumptions stated in the Introduction, namely, that
+
+the concentration of the circulating liquid remains fixed with time,
+means that the ratio xy /x, varies with related time-temperature points
+in a special way. This is the reason Eq. (5) has been cast into the
+form of Eq. (6). Irrespective of this, Eq. (6) may be integrated with
+
+respect to time without concern about the xp/x, relationship, since
+
+x(0,t) and, therefore, xXp/%,, do not vary with time. One obtains:
+t |
+_ s r= - 1/2
+M(t) /A, { dt 2p, (1 xp/x,) (Dt/x) / . (7)
+
+0
+
+10g, E. Gaskell, Engineering Nethematics, 1st. ed., p. 358,
+
+‘Dryden: Press, New York, 1958.
+
+114, §. Carslaw and J. C. Jaeger, Conduction of Heat in Solids,
+2nd" ed:, pp. 99-101, Oxford University Press, New York, 1959.
+
+ 
+
+ 
+ 
+
+12
+
+Under the usual sign convention, a positive value of AM/A means
+that the metal constituent diffuses into the alloy (cold zone); negative
+values mean outward diffusion (hot zone). We shall reverse this conven-
+tion, since we desire a balance of M with respect to the liquid. The
+solution behavior of most acceptable systems is such that the liquid
+gains material in the hot zone and loses material in the cold zone. In
+other words, x, > Xn in the hot zone; x, < Xo in the cold zone; notice
+that Eqs. (6) and (7) follow the adopted convention automatically. The
+next mathematical operation involves integration along z, but this
+requires some knowledge of the manner in which z varies with T and, of
+greater importance, the manner in which T varies with x(0,t). The lat-
+ter is a problem in chemistry to which we now turn.
+
+Surface Behavior
+
+Equilibrium Ratio
+A good example is the reaction that gives rise to chromium migra-
+tion in Inconel 600 loops circulating UF,-bearing molten salts.l2s13
+
+The reaction of interest is
+crs) +2 UF.(d) == 2 UFs(d) + CrFo(d) . (8)
+
+The symbols (s) and (4) are intended to denote the respective states:
+"solution in the alloy" and "solution in the liquid." The equilibrium
+
+constant is
+
+_ [CrFo ][UF3]? (9)
+© [erlur)?
+
+whereby
+
+12R. B. Evans III, ANP Program Quart. Progr. Rept. Dec. 31, 1957,
+ORNL~-2440, pp. 104-113.
+
+13y. R. Grimes, G. M. Watson, J. H. DeVan, and R. B. Evans, "Radio-
+Tracer Techniques in the Study of Corrosion by Molten Fluorides,"
+pp. 559-574 in Conference on the Use of Radioisotopes in the Physical
+Sciences and Industry, September 6-17, 1960, Proceedings, Vol. III,
+International Atomic Energy Agency, Vienna, 1962.
+
+\U/
+
+td
+
+in
+“y
+
+ 
+
+4)
+
+ 
+
+13
+
+[cr] = (LUE2l ¢ [orF] Co (9a)
+UF] (Kp) -
+
+Brackets are used to denote concentration variables. If the concentra-
+tions can be related to appropriate activity values, one may write, in
+
+terms of the standard free energy change for the reaction above,
+
+AG® = —RT fn K2. | | (10)
+
+- Values of x or Kn may be computed with the aid of information summa-
+
+rized by Baes.l%
+We have assumed that all points along z are exposed to the same
+concentration of dissolved species of interest. Thus [Cr] = Xn adjusts
+
+to compensate for temperature-induced changes in Kn. Furthermore,
+
+balance points f(p) and f(p’) exist along z and have the property
+
+In = 0. These points delineate the boundaries of the hot and cold zones.
+Clearly, then [er], ~ x at f(p), and an equation equivalent to
+Eq. (9a) can be written with Kn replaced by K when quasi-steady-state
+
+conditions are attained. The ratio in Eq. (7) is
+Xp/%, = K /K, : (11)
+
+Units of the concentrations in this ratio cancel out; those of X,, which
+
+is factored out to form the Puy product, should be weight fraction
+
+because dy is a mass flux.
+
+We shall now consider nickel migration in Inconel 600 loops con-
+
+"taining liquid sodium. Although it is generally accepted that the
+
+nickel reaction is a simple dissolution process, very few reliable data
+exist on the solubility of nickel in sodium. About the best one can do
+
+at this time is to write an equation of the form:
+
+Ni(s) = Ni(d)
+
+and then assume a reasonable temperature relationship of the form:
+
+Ky = K, exp(-E_, /RT) . (12)
+
+1%. F. Baes, "The Chemistry and Thermodynamics of Molten-Salt-
+Reactor Fluoride Solutions," pp. 409-433 in Thermodynamics, Vol. I,
+International Atomic Energy Agency, Vienna, 1966.
+
+ 
+ 
+
+ 
+
+14
+Values for XK, and Eoln used in the present report are, respectively,
+6.79% x 105 weight fraction and 6.985 kcal/mole. With these values
+Eq. (12), cast in the form of Eq. (9), passes through a set of solubility
+data reported by Singer.l’ It is clear that
+
+Ky = Y/r% (13)
+
+where we assume the activity coefficient 7 to be unity and the mole
+
+fraction X of nickel to be unity, since the solubility experiments were
+
+conducted in a pure nickel pot.1® In this case, Y (the saturation value
+
+in the pot experiments) is equivalent to the experimental XK,. Ina
+
+loop, x = (my/m )Y/K. Thus once again the form of Eq. (11) holds true.
+- We might point out by way of conclusion that we really don't know
+
+what reaction E__, represents, as we did for the fluoride case, Eq. (10).
+
+in
+
+In certain ideal cases, E 1, Would be nearly equivalent to the heat of
+
+In
+fusion of nickel (=~ 4 kcal/mole), but in the present case the solubili-
+ties are so low and the data are so scattered it would seem difficult to
+
+attach definite physical significance to this variable. Note also that
+
+‘hot-to-cold-zone transfer requires the energy term to be positive. Ir
+
+it is negative, material would tend to move from the cold to the hot
+
+zone.
+
+Reaction Rates
+
+Consider an alloy with constituent M that tends to undergo a revers--
+
+ible solution reaction governed by a positive solution energy — namely,
+
+ky
+
+M(s) = M(d) .
+ky,
+
+15g. M. Singer and J. R. Weeks, "On the Solubility of Copper, Nickel,
+and Iron in Liquid Sodium," pp. 309-318 in Proceedings of the International
+Conference on Sodium Technology and Large Fast Reactor Design, November 7—
+9, 1968, ANL-7520, Part I.
+
+16ye have written Eq. (13) in terms of a selected standard state for
+dissolved nickel in the saturated solution with the concentration expressed
+as ppm (by weight). A more conventional choice would have been to express
+
+© Y in terms of mole fraction such that the corresponding activity would be
+
+unity at saturation. This choice would have avoided a "split" definition
+f XK’, which appears later. .
+
+>
+
+>
+ 
+
+ol
+
+2
+
+15
+
+As stated earlier the symbols (s) end (d) denote the respective states
+solution in the alloy and solution in the liquid. One may set forth
+the classical rate expression for the net amount of M that reacts in
+terms of the molecular or atomic flux as
+
+a a
+
+eT Eee) Re oa) (4)
+The units of k* must take on those of Jy (mole em™? sec™l) because ay
+
+must be dimensionless according to established conventions. The units
+
+cm? refer to a unit or peripheral area along z.
+
+ 
+
+At equilibrium, In = 0, and one obtains the correct thermodynamic
+expression for the equilibrium constant, which is
+Mid) k,® 15)
+= = —, 15
+a
+Pus) ke
+
+Although Eqs. (14) and (15) are classical expressions — in a thermo-
+dynamic sense — for first-order reactions, they seldom appear in this
+form in corrosion practice. Mass fluxes are most frequently used, and
+the concentrations and equilibrium constants involve weight or mass
+fractions. Furthermore, the constants usually have velocity units.
+These conventions require the use of mass density terms. Therefore,
+additional modifications of Eqs. (14) and (15) are clearly in order.
+
+It is convenient for present purposes to take ay 88 the product
+of an activity coefficient and the mole fraction. Then
+
+Co. a= Cam oo
+CIMT By o x, u(s)- k, a) My» (16)
+where x and y represent mole fractions in the solid and liquid, respec-
+tively. Now if new rate constants are defined such that,
+k,.= k,%y /o ~ and x, = k,%, ym, /o (17)
+v= Tus) Pe BREF FR Tia) ef 0
+then the expression for the mass flux becomes
+
+Jy = (0% = ko, (18)
+
+ 
+ 
+
+ 
+
+16
+
+The superscript > appears as a reminder that the liquid concentration
+that governs the dissolution reaction is the value that exists between
+the metal and mass transfer film. Assuming the absence of a film,
+
+h +, with j = 0 (equilibrium); then 3X + Y, and the relationship
+between Kexp and kK? may be readily found. It turns out that
+
+= ETL Can (12)
+2 k, Be p(d) K m,
+
+Notice that the units of k, and k, are cm/sec.
+
+Mass Transfer Across Liquid Films
+
+The accepted and usual approach for explanations of the mass-
+transfer phenomenon is to invoke the close analogies that exist for
+various modes of heat and mass transfer. In this case we are interested
+in the mass-transfer analog of heat transfer as it occurs under Newton's
+law of cooling. In terms of the concentrations in the liquid, one may
+
+write,
+Jy = bP =e, (20)
+and if surface reactions are fast — k, = ky [Kp >h —
+
+Jy = h(Y - ve, . (20a)
+
+The interested reader is referred to discussions given by Bird et al.l”
+Of particular importance is the analogous way in which h's for mass and
+heat transfer are computed. 18 Many think of h as a representative of
+a diffusion parameter because a binary diffusion coefficient (for
+example, Ni(d) in sodium) appears in the correlations concerning h for
+
+mass transfer.
+
+ 
+
+7R. B. Bird, W. E. Steward, and E. N. Lightfoot, Transport
+Phenomena, pp. 267, 522, Wiley, New York, 1960.
+
+181bid., pp. 636-647, 681.
+
+i.
+
+a.
+ 
+
+ 
+
+wl
+
+ut
+
+»
+
+ 
+
+17
+
+Combined Reaction Rate-~Film Resistances’
+
+In some instances, a complete description of surface effects may
+require coupling of the effects of both chemical kinetics and liquid
+film transport such that the associated resistances to flow act in
+series. The relationships sought are not new.1® We repeat them here
+to gain generality and completeness. We note that the coupled resis-
+tance is a most important aspect of the following presentation regarding
+corrosion in liquid-metal systems.
+
+Since a large portion of the combined surface effects involve
+liquid behavior, we shall develop a rate term that gives the wall-
+related input to an increment of fluid passing a unit area of wall.
+This term will be altered to conform to solid-state diffusion convention
+by changing certain liquid concentrations to pseudo-wall concentrations.
+Three reference concentrations, each referred to the liquid, are
+involved. These are: Y, ©, and y. Consider a unit area in the hot
+zone. The same J, Passes both the resistances associated with the
+reaction-rate equation,
+
+iy = (5% = 59, | (18)
+
+and the film equation,
+
+ay = BGP =e, (20)
+
+Thus, one may solve for + using Eq. (20), substitute this result in
+Eq. (18), and, using manipulations allowed by Eq. (19), obtain:
+
+Jy = BY = ye, , (21)
+where
+
+~1/n=1/n + 1/k, “ (22)
+
+195, Hopenfeld and D. Darley, Dynamic Mass Transfer of Stainless
+Steel in Sodium under High-Heat-Flux Conditions, NAA-SR-12447 (July
+
+1067). —
+
+ 
+ 
+
+ 
+
+‘where
+
+18
+
+Surface Effects Referred to the Alloy
+
+The next point to consider is the application of Eq. (21) to solve
+a solid-state diffusion problem. Equation (21) may be altered as
+follows with Y = KR : | |
+
+Jy = Ey (5 - v/¥p)ey (21a)
+
+The superscript appears on the X as & reminder that this is a true
+alloy concentration at the surface. We have also substituted subscript T
+for subscript exp. (experimental) as a reminder that kexp = Kp varies
+with temperature. A basic assumption stated in the Introduction permits
+one to treat y as independent of temperature. If we are at a balance
+point, Jy =0, =X, and K;, = Ks where subscript p denotes balance
+
+point. Thus, y = K a and for all other points along z other than p we
+
+‘may write
+
+5y = By(m fm) (© = xp, (210)
+where
+= x fi (23)
+
+Before writing down the final forms, one will recall that Eqs. (21)
+through (21b) were set up in terms of positive flow into a salt volume.
+This is opposite to the direction of flow into the metal, so the sign
+of Eq. (21b) must be reversed. Then,
+
+ox(0,t) _ S .
+oC hK(m, /m,) (x -x Je, . (21c)
+
+Li
+
+dy = Dey,
+The surface condition can be set forth in terms of a derivative
+
+dx(0,t) ] HO
+
+Sw x*) , | (24)
+
+H= Ku) e, fo )(m/m) (29)
+
+(»
+ 
+
+i
+
+-)
+
+$1]
+
+ 
+
+19
+
+The varisble L 1s to be treated in general as x, so we shall drop the
+superscript © in Eq. (24), from this point on. It is of some interest
+to note that, if k, in Eq. (17) had been defined as x,” . (2) "e/a 2
+
+Eq. (18) would have involved only weight fractions and the ratio m my,
+would not have appeared in Eq. (25).
+
+TRANSIENT SOLUTIONS
+
+The Introduction stated that the loop operation was to be initiated
+with the y corresponding to the quasi-steady state. Quasi-steady state
+invokes two conditions: (1) that the bulk concentration of the liquid
+and, hence, the concentration of surface elements, x(0,t), remain fixed
+with time, and (2) that the effects of the liquid film resistance on
+mass transfer remain fixed with time. From the results of Report I, we
+conclude that the bulk concentration of the liquid will have a constant
+value in some small fraction of an hour. We now wish to examine the
+point in time that the second transient condition, XX — x* # £(t), will
+be realized. To find the answer, we must solve a somewhat complicated
+solid-state diffusion problem. |
+
+Review of the Equations
+
+A succinct statement of the problem is as follows: First, find a
+
+solution, x(w,t), of the Fourier equation,
+
+incorporating Eq. (24) and other appropriate boundary conditions; then
+
+manipulate the results to produce an expression like Eq. (7).
+Solutions for Eq. (26) with (24) have been given for the hot
+
+zones? using classical techniques, and for the cold zone alone?! using
+
+20H. S. Carslaw and J. C. Jaeger, Conduction of Heat in Solids,
+
+2nd ed., pp. 70-73, Oxford University Fress, New York, 1959,
+
+“mu, pp. 305-306.
+
+ 
+ 
+
+20
+
+laplace transforms. We could start with these results; however, little
+would be gained and complete familiarity would be lost if this approach
+were followed. In fact, it is just about as easy to start from the
+beginning, since the flux expressions turn out to be the same (with the
+exception of different signs) for both zones. Attention may be
+restricted to one zone, and we shall choose the cold zone. Boundary
+conditions are x{w,0) = x, x(w,t) = xX, x(0,») = x*¥; finally, x(0,t)
+must satisfy Eq. (24). let
+
+o(w,t) = x(w,t) —
+
+a’
+and
+Ax¥ = x =x .
+We have
+2
+ow? Dot
+
+to be solved with the boundary conditions: ??
+
+¢(w,0) = 0, (a)
+
+o(w,8) «0,  (b)
+
+0(0,@) = axt , (ec)
+and
+
+20,4) CHO ~ ax) , (a) (248)
+
+Notice that nothing is said about Kat this point. .
+Pigure 1 presents the variables involved for both the simple con-
+
+stant potential and the present problems. We shall not use the subscript c
+
+22with the variable change indicated, the solution for the concen-
+tration profile could be written in a form analogous to Eqs. (1) and (2);
+of course Ax¥ would replace Ax. It turns out that this solution will be
+bypassed in passing directly to the expression for AM(t)/A,
+ 
+
+wy
+
+~
+
+*
+
+21
+
+ORNL-DWG 69-10089
+
+ 
+
+  
+   
+   
+
+ 
+
+ 
+
+ 
+
+1.0
+I Ex fmm mmm mmm mm —
+. .
+3 - Fz lof) mmm mmm mg ———
+« 09 IN. ov —
+Zz : }
+= yd Ax ax*
+[= sli .
+z COLD ZONE $v, 1) AND
+3 0.8 - wy $c (m7)
+a g|
+z {EE oo |
+© o Fg === === ———————— ee — Xg= x(®,#)——1
+5 32
+; a
+3 7 HOT ZONE
+[et ’ ALLOY Ax
+2 -—
+« Jui)
+|F' Ax*
+a Wr —-——— —m—_—= —
+< 0.6 $, (m7)
+< =a (of) mm X
+én (01)
+a mmm _____ I
+0.5
+
+ 
+
+ 
+
+ 
+
+w, DIRECTION OF LINEAR DIFFUSION —»-
+
+Fig. 1. The Relative Positions of Various Concentration Parameters
+and Variebles. These quantities govern the concentration profiles in
+the tubing walls under transient, then steady-state conditions; they
+control concentration profiles and the migration rates in the alloy. An
+individual representation of reaction rate contributions is not shown;
+thus the difference, Ax¥ — Ax, relates directly to h or h.
+
+for cold zone in the expressions to follow since we have already stated
+
+this restriction. }
+We now turn to transformed versions, starting with the notation of
+
+Churchill?3 and then converting to that of Carslaw and Jaeger.2% In
+view of boundary condition (a), the transform of Eq. (26a) is
+
+~
+ola) £55) —0=0, (ee)
+dw D
+
+23g. v. Churchill, Modern Operational Mathematics in Engineering 5
+
+1st ed., pp. 109-112, McGraw-Hill, New York, 1950.
+
+24H. Ss. Carslaw and J. C. Jaeger, Conduction of Heat in Solids,
+2nd. ed., pp. 58-61, Oxford University Press, New York, 1959.
+
+ 
+ 
+
+22
+where
+
+[oe]
+— r—
+o(w,s) = / est o(w,t’) at’ .
+0
+
+The general solution of Eq. (268) is
+
+o(w,s) = c,€ ™ ce’ ,
+
+where q = (s/D)1/2. To satisfy condition (b), c, must be zero.
+
+derivative of the particular solution with respect to w is
+
+¢ (w,s) = ~qc, eH .
+
+At the surface,
+
+%(0,s) = e, ; (0,5) —qc, -
+
+0 is
+
+I
+
+Thus the transform of Eq. (24a) evaluated at w
+
+3 (0,8) = H[®(0,s) — Ax*/s] .
+
+This may be rewritten as
+
+—qe, = H(e, - axt[s) ,
+whereby
+
+ce, = Hax*/s(q +H) .
+
+The
+
+The inverse of ¢(w,s) = ce will demonstrate that condition (c) is
+
+satisfied. This implies that Ax* —» Ax as t » ». In other words,
+
+x* » 0 in view of the associated film condition (d).
+
+Now, since
+dx(0,t)
+a
+Iu De, —de
+it is clear that
+Dp Ax* Hy
+
+J... = =D 2 em——
+hm Ree) =
+-)
+
+ 
+
+a
+
+»
+
+ 
+
+23
+
+The stated goal is a form like Eq. (7). In transformed coordinates
+this will be
+
+- £ | |
+AM(t) _ , PE er
+20. f 30%) av f= Ts (27)
+Thus
+_aM(t) _ ii . (27)
+A, salq +H)
+
+The inverse?’ transform of Eq. (27) is
+
+ 
+
+ 
+
+| 1/2 Ax*
+u(t) = 2p _Ax¥ > - e f — exp(~H?Dt) erfe [eoua/z] } . (272)
+
+To go back to sign conventions associated with the corrosion medium, we
+
+merely reverse signs by redefining AX* to be
+
+px = x = x* =x (1 - KK) .
+
+Equation (23) was used to write the last form.
+Comparison of the first term of Eq. (27a) — including the new ver-
+
+sion of Ax* — with the right side of Eq. (7) reveals that both forms
+
+are equivalent. One may recall that Eq. (7) was developed on the basis
+of negligible film or surface effects, whereby 0 x*. This actually
+happens over a period of time, depending on the H value, because
+exp(—u?) erfe(u) = 0 as u = 0 (t=0). ‘Clarification is gained by
+forming the ratio of A/a, (where H is Bosouzitel) to AMA (where H is
+neglected). The ratio is:
+
+a 2G)" hemi we [wn] 0
+
+25The inversion formula in this case is tabulated as item 15,
+Appendix V, p. 405, in H. S. Carslaw and J. C. Jaeger, Conduction of Heat
+in Solids, 2nd. ed, , Oxford University Press, New York, 1959.
+
+ 
+ 
+
+ 
+
+pa
+
+Several somewhat fortuitous distinctions evolve when the results
+are put forth as a ratio. The results come out in compact form as
+1 minus a remainder; the remainder obviously fades out as time increases.
+This clearly demonstrates that surface effects, relative to diffusive
+effects, are important only in the initial phases of the loop operation.
+An attractive feature of Eq. (28) is the cancellation of Ax*. This
+means that specification of the balance point (manifest through K,) is
+not required to prepare a plot showing the effects of h or H. The
+reader will discover in later sections that determination of the balance
+points is an involved procedure, even under quasi-steady-state conditions.
+Furthermore, we have no idea as to where the balance points reside at
+various times during the transient period. Thus, elimination of 5 con-
+stitutes an important simplification at this point in the report. Whether
+M is lost or gained by the alloy makes no difference when the ratio is
+
+used. The plots of the ratio versus time are always positive.
+
+Application to Sodium-Inconel 600 Systems
+
+For demonstrative purposes, we have concocted an illustrative
+example for the Inconel-sodium system showing rates and degrees of
+approach to equilibrium, assuming that the only surface effects of impor-
+tance are those associated with the liquid film. In other words, we
+assume that k, » «; thus h - h. This is assumed because no information
+exists as to the values of k, and k, for the system. In fact, the values
+of Ko are not above question. Details of the computation of H are given
+later. We have compared two values of H corresponding to typical maxi-
+mum and minimum temperatures for experiments with Inconel 600 loops con-
+taining sodium, namely, 1089°K (1500°F) and 922°K (1200°F).
+
+The example is presented in Fig. 2. Note that the film coefficient,
+
+- h, in this example was assumed to be the same at all surface points
+
+around the loop, while D and Kn in H were assumed to vary according to
+the local liquid (actually wall) temperatures. A comparison of these
+
+curves clearly indicates that film coefficients are of greatest impor-
+
+ 
+
+tance in the hot zone where solid-state diffusion rates are relatively
+
+ 
+
+high. Nevertheless, transient effects associated with the liquid-film
+ 
+
+ 
+
+a)
+
+»
+
+25
+
+ORNL -DWG 69-10090
+
+ 
+
+ 
+
+   
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+100 ; —
+0.95
+0.90
+2
+S 085
+z
+-
+< 080
+Q .
+x CONDITIONS
+S$ ors 1 r {°F) 1200 1500 _
+> 0  tem/sec) 7.52x10°'7 267x107
+: 0.70 H A lcm/sec) 4.27x10°2  4.27:10°2 |
+* ’ ‘ Kr (wt frac)  1.51x40°% 270x107
+a H tem)! 7.892107  3.98x10%
+ed I nd
+0.65 H-
+0.60 —
+055 | oo —
+| | | | ] | | i |
+0 05 40 15 20 25 30 35 40 45 50
+{EXPOSURE TIME (hr) ¥2
+
+Fig. 2. Predicted Transient Behavior in a Sodium-Inconel 600 Loop
+Operating at Typical Forced-Convection Conditions. The transient feature
+results from the presence of a constant liquid-film resistance that
+becomes less important as solid-state diffusion resistances increase
+with time. :
+
+resistance become diminishingly small after about 24 hr. Since oper-
+ating times for pump loops currently range from 1000 hr to one year,
+
+‘we may neglect such transient effects without significantly affecting
+
+the calculation of the overall transfer of M from one zone to another.
+This greatly simplifies the problem; only the quasi-steady-state
+
+‘solution need be considered. The major task is integration of Iu
+‘along z. Of course the work required is minimized if one selects &
+
+simple, yet reasonable, temperature profile (variation of T with z).
+
+ 
+ 
+
+ 
+
+26
+TEMPERATURE PROFILES AND LOOP CONFIGURATIONS
+
+Reference and Prototype Loops
+
+Our ultimate goal is to develop steady-state solutions for a vari-
+ety of loops heaving arbitrary temperature profiles along z. For reasons
+of mathematical tractability, we assume that the temperature profile may
+be approximated by several straight-line segments. The number of seg-
+ments is of no importance in the final analysis. However, for conve-
+nience the connected segments should be drawn such that the overall
+profile will exhibit only one maximum and one minimum. A "typical"
+pump~loop configuration and profile will be considered for practical
+reasons; this will be called the reference loop. Next we shall consider
+a very simple profile designed to possess a fair degree of equivalence
+to the reference loop; this will be called the prototype loop. A simple
+and symmetrical prototype is desirable to minimize the necessary mathe-
+matical calisthenics, particularly with regard to the numerical examples.
+
+The Reference Loop
+
+Figure 3 shows a schematic disgram of the reference forced-convection
+loops used in early liguid-metal corrosion tests. Each loop consisted of
+a pump and cold trap with a heat exchanger between the cold and hot legs
+(surge tank attached). The inner tube of the heat exchanger contained
+the hot liquid while the cold liquid traveled through the ammulus. Thus
+the cold liquid was contained between two walls each at a slightly dif-
+ferent temperature. The cold trap was used to remove traces of oxide
+impurities, mainly N20, from the sodium. Only a small portion of the
+mein flow was diverted to the cold trap. The trap design along with this
+low flow, coupled with return-line heaters, mitigated major temperature
+perturbations in the main flow stream. Furthermore, the trap did not
+materially affect the deposition of metal constituents in the cold leg.
+
+The maximum and minimum loop temperatures were 816°C (1500°F) and
+649°C (1200°F), respectively, with a flow rate of 2.5 gpm and a typical
+operating time of 1000 hr. The temperature profile and dimensional
+information for the experimental (reference) loop are given in Table 1.
+ 
+
+ 
+
+ 
+
+27
+
+ay
+
+SURGE TANK ORNL-LR~-DWG {5353R
+
+     
+  
+
+ELECTROMAGNETIC
+
+»
+
+COLD TRAP
+
+  
+ 
+ 
+
+“~~
+
+TRAP PACKED WITH INCONEL
+
+NOTE : DIMENSIONS IN INCHES WIRE MESH
+
+Fig. 3. Reference Pumped loop Used in Corrosion Experiments.
+Most of the acceptable sodium-Inconel 600 results were obtained with
+- loops as shown above, although different configurations were sometimes
+used. co : oo
+
+”n
+
+ 
+ 
+
+ 
+
+28
+
+Table 1. Geometrical-Temperature Characteristics of Forced-Convection
+Pump Loops for Liquid-Metal Corrosion Experiments
+
+ 
+
+Wall Fraction Cumulative
+Flow Section Area of Area, Fraction,
+
+(in.?) AA =(a/A) (°F) (°c)
+
+Exit Temperature
+
+ 
+
+ 
+
+Economizer® 263.9 0.3367 0.3367 450° 788
+Annulus
+Hot leg loop> 222.1 0.2832 0.6197 1500 816
+Economizer c 108.4 0.1382 - 0.7581 1230 666
+Central tube
+Cold leg loop 189.7 0.2419 1.0000 1200 649
+Total® 0 784.1 1.0000
+a
+
+Shell and loop tubing: 0.75 in. OD X 0.065 in. wall.
+Prntrance temperature: 1200°F.
+
+SCentral tubing: 0.5 in. OD X 0.020 in. wall.
+4 rneludes pump area of 7.05 in.?; see Fig. 3.
+
+€rotal length: 349 in.
+
+Before operation, the loop was flushed with sodium at about 650°C
+for several hours to remove surface oxides. The cold trap was not used
+during this operation. For the actual run, fresh sodium was introduced.
+After operation, sections of the loop were cut and analyzed by various
+methods.
+
+A Prototype Loop
+Table 1 illustrates that the temperature profile and geometrical
+
+characteristics of the reference loop are quite complicated, especially
+if one wishes to apply a mathematical treatment of the diffusion process
+using numerical examples. Work of this type requires a more simplified
+configuration, which we shall call a prototype loop. (We employ the
+designation "prototype" to suggest that future designs of forced-
+convection loops incorporate less complicated flow paths and temperature
+profiles.) As stressed in Report I, we again avoid the overworked word
+
+"model," as this might suggest that calculations of the overall corrosion
+ 
+
+ 
+
+4)
+
+»
+
+29
+
+rate, M(t), depend on the flow characteristics of the prototype.
+Except for transients, which are handled in these reports, the solid-
+state diffusion mechanism depends only on the wall temperature and the
+concentration of dissolved alloy constituents. We care nothing about’
+the flow itself or its direction.
+
+Our purpose here is to propose a simplified configuration Vhereby
+all the geometrical complexities engineered into early forced-convection
+loops will be removed; yet the. features importent to the mechanism
+under test will be retained. Actually, we are striving for & maximm
+degree of equivalence between the reference and prototype loops. The
+most logical prototype that is easily envisioned is the "tent-shaped"
+profile over a constant-diameter loop used by Keyes.2® This "tent-
+shaped" profile appears to display the utility desired, although it is
+somewhat awkward when applied to other mechanisms, where perhaps a saw-
+tooth profile might be most appropriate. The idea that a tent-shaped
+profile composed of two straight-line segments cannot be experimentally
+obtained has been dispelled by DeVan and Sessions.?” They used profiles
+that were tent-shaped but showed some asymmetry.
+
+In long-term pump loop experiments we shall eventually establish
+that liquid-film contributions are not of great importance; thus, the
+primary consideration is acquisition of a loop with an equivalent area.
+
+In Table 1 we see that the total area exposed to liquid is 784 in.? or
+
+5050 cm. Ir we assume a constant diameter of 0.70 in. all around the
+loop, the total length will be 906 cm, which is not too far removed
+from the actual value of 886 cn for the reference loop. The average
+Reynolds number, (me) weighted according to the fractional areas
+involved, is 5.06 Xx 10%. .
+
+Thus, we inquire as to the (Np) for the prototype loop. Based on
+*' 5 Dyy pas Vg» Pgs ond pn values of 0.89 em, 3.3 X 10% cm?/sec,
+
+263. J. Keyes, Jt., Some Calculations of Diffusion-Controlled
+
+Thermal Gradient Transfer, CF-57-7-115 (July 1957).
+
+273, H. DeVan and C. E. Sessions, "Mass Transfer of Niobium-Base
+
+Alloys in Flowing Nonisothermal Lithium," Nucl. Appl. 3, 102-109 (1967).
+
+ 
+ 
+
+30
+
+63.5 cm/sec, 0.772 g/em®, and 1.80 x 10~3 g em™? sec™!, respectively,
+one may compute the h as well as the (Ne) using
+
+— 0.8 0.33
+Ng, = 0.023(N,) Ng, ,
+
+along with the variables that make up the dimensionless constants,
+whose definitions may be found in the Nomenclature. The results are
+that h = 4.27 X 10°? cm/sec and (N.) = 4.85 x 10% for the prototype.
+Details appear in Appendix A of Report I. The value of (n,) compares
+favorably with that calculated above for the reference loop. Figure 4
+compares the temperature profiles for the prototype and reference loops.
+
+ORNL-DWG 69-10094
+
+ 
+
+ 
+
+ 
+
+ 
+
+| | 1 —1 g25
+1500 |~— A
+\ . —1 800
+1450 | / \
+/ \ — 775
+& 1400 | / 8
+& / \ — 750 &
+5 JoroToryPE \ a
+& eo / PROFILE \ x
+a / | a
+= / \ 725 =
+ul w
+- / \ —-
+| / \
+1300 / \ 700
+/ ~ PUMP-LOOP \
+/ PROFILE \
+1250 | / \ — 675
+\
+\ .
+1200 1 l 650
+02 04 06 08 1.0
+
+f, FRACTION OF TOTAL AREA
+
+Fig. 4. Comparison of Temperature Profiles for Pumped Loops. The
+solid curve approximates temperatures around the "reference" loop; the
+dotted curve represents a "tent-shaped" prototype loop.
+ 
+
+«)
+
+»
+
+31
+
+We now wish to calculate the H's of Fig. 2, since these quantities
+are based on the geometry of the prototype. We recall that
+
+ 
+
+ 
+
+= Kp(h,/D )(p,/0,)(m /m,) (25)
+At 816°C
+-2 )
+= (2.70 Xx 106) a2 X = =) (2 772 2) (i 7)- 3.98 x 105/em .
+to. . xX =
+At 649°C
+- ~14
+= (3.98 x 10%) (1:51 x10 ) 67 % 10 )- 7.89 x 107 fem .
+2.70 x 10~6/ \7.52 x 10-17
+
+The density and viscosity of liquid sodium were based on extrapolation
+of appropriate handbook values.?® The equilibrium ratios were estimated
+from date assembled by Singer and Weeks.?2® The diffusion coefficients
+for nickel were obtained from work done by XK. Monma et 2l.3° The den~
+sity of the Inconel 600 was acquired from a vendor's handbook?! and the
+molecular weight of the alloy was computed from the information presented
+in Table 2, which is based on data reported by DeVan.32 The D used
+
+Ni-Na
+in the computation of h was obtained from the Stokes-Einstein equation;
+
+28R, R. Miller, "Physical Properties of Liquid Metals," pp. 42-43
+in Liquid Metals Handbook, 2nd ed., rev., ed. by R. N. Lyon, NAVEXOS=-
+P-733(Rev.) (June 1952).
+
+29g. M. Singer and J. R.. Weeks, "on the Solubility of Copper, Nickel,
+and Iron in Liquid Sodium," pp. 309-318 in Proceedings of the Inter-
+national Conference on Sodium Technology and large Fast Resotor Design,
+
+~ November 7-9, 1968, ANL-7520, Part I.
+
+30K, Momma, H. Suto, and H. Oikewa, Nippon Kinzoku Gekkaishi 28,
+188 (1964); as cited by J. Askill, A Bibliography on Tracer Diffusion
+in Metals: Part III. Self and pty Diffusion in Alloys , ORNL~3795
+Part III (February 1967), p.:15.
+
+31The Huntington Plant Staff, Handbook of Huntington Alloys, 4th ed.,
+Bulletin T-7 (Inconel 600), the International Nickel Company, Inc.,
+
+Huntington, W. V., January 1968.
+
+323, H. Devan, "Corrosion of Iron- and | Nickel-Base ‘Alloys in High
+Temperature Na and NaK," pp. 643-659 in Alkali Metal Coolants (Proceedings
+of a Symposium, Vienna, 28 November — 2 December 1966), International
+Atomic Energy Agency, Vienna, 1967.
+
+ 
+ 
+
+32
+
+“Table 2. Nominal Composition of Inconel 600
+
+ 
+
+ 
+
+: Weight IM Mole® Atom
+Constituent or Mass (g/mole) 100 g Fraction
+Ni 0.7635 58.71 1.3000 0.7377
+Cr 0.1500 52.00 0.2885 0.1637
+Fe 0.0700 55.85 0.1253 0.0711
+Mn 0.0100 54.90 0.0182 0.0103
+si 0.0050 28.09 0.0178 + 0.0101
+Cc 0.0015 12.00 0.0125 0.0057
+
+ 
+
+(ey = 100/=(col. 4) = 100/1.7623 =~ 56.7.
+
+1 kT
+Ni-Na Ty rr. ’
+
+where r... =~ 1.24 x 10~8 cm.
+Ni
+
+ 
+
+QUASI-STEADY~STATE SOLUTION
+
+Statement of the Problem and Objectives
+
+We seek a relationship that will permit computation of the amount
+of M migrating from the hot zone to the cold zone of the loop, assuming,
+
+of course, that Eo is endothermic; if not we seek the transfer in
+
+In
+
+- the opposite direction. Diffusion out of and into the container wall
+
+is expected to be slow, and, if the liquid is pretreated to eliminate
+transients associated with buildup of M in the liquid, all that remains
+is a transient induced by the mass transfer film resistance.
+
+We have previously shown that film transients become negligible
+after a day or less. It follows then that our steady-state conditions
+mean that the M concentrations in the liquid and the positions of the
+balance points separating the not and cold zones are both steady (do not
+vary) with time. The term "quasi" steady state must be employed, how=-
+
+ever, because the point rates are proportional to £*1/2 ana the gross
+ 
+
+oy
+
+Nn
+
+33
+
+transfer is proportional to £-1/2, Therefore, both the rates and their
+time integrals vary with time. However, in view of the quasi-steady-
+state features of the problem, the timé and position integrations may
+be performed independently of one another. This constitutes a great
+simplification of the tasks that lie shead.
+
+Our starting point is Eq. (7) in which the time integration has
+already been performed for single points along z. The next step is
+integration along z. Since dA, = 2nr’ dz and Xp/%, = K /%, [Eq. (11)],
+we may integrate Eq. (7) as
+
+M(t) _ [on0, (: - % (2nr! 1) (2) he (7a)
+Z,
+
+The Xp and D are functions of temperature, and z’ is a dummy variable
+of integration. A differential form of Eq. (7a) is
+
+z= (G37) 4 ree (1 E) om m
+
+where f = 2! JL. The integrand evaluated at several points around the
+loop is plotted in Fig. 5. Notice that Fig. 5 refers to the prototype
+loop, which is actually an ad hoc device for the present discussion.
+
+One could stop here, insofar as the mathematics is concerned, and
+integrate graphically as was done in the original work.32 The procedure
+adopted at that time was to assume a balance point, prepare a plot of
+
+the integrand as indicated in Fig. 5, and then ascertain the area under
+
+-~the hot zone portion of the curve. The procedure was repeated for the
+cold zone. Unfortunately it was necessary to iterate until the two.
+
+areas balanced. Use. of plots ‘similar to those in Fig. 6 speeded the
+work; but this approach required meny trials, and it was tedious and
+
+- ‘boring to say the least.
+
+The only major aitterence bebves the earlier and present problems
+
+wes utilization of a sinusoidal temperature profile in the earlier work.
+
++ 33g. B. Evans III, ANP Program Quart. Progr. Rept. Dec. 31, 1957,
+ORNI~-2440, pp. 104-113.
+
+ 
+ 
+
+ 
+
+ 
+
+ORNL-DWG 69-2953A
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+(x107") TT
+{1080
+12
+—{1060
+So <
+@ —{1040 <
+> 1 w
+1 8 i a
+5 i 1020 P
+= ! Ke
+—~ 6 : \—» &
+IS | — 1000 ¢
+NE \ Lu
+3 | \ — 980 4
+= , | \ 2
+1 \ =
+vl~
+Is | \ T]96°
+| .
+0 — \
+! \ — 940
+-2 \
+ArT BR A 1 No20
+0 O01 02 03 04 05 06 O07 08 09 10
+
+Ff, FRACTION OF WALL AREA AND/OR LOOP LENGTH
+
+Fig. 5. Profile of Cumulative Mass Transfer Contributions Expressed
+
+|
+|
+|
+|
+
+ 
+
+as a Ratio Involving Loop Length and Time.
+
+The profile applies to the
+
+tape loop operating under quasi-steady-state
+
+conditions. Areas
+
+integrals) corresponding to hot and cold zones are equal; thus, the
+
+balance points are properly located.
+
+This same approach was used by Epstein.?* This difference is of con-
+
+siderable importance because after ten years it is still quite difficult
+
+to achieve a sinusoidal profile in the laboratory.
+
+matically tractable profile seen to date by the authors was that obtained
+‘recently by DeVan and Sessions’ and by Koger and Litman.36:37 Yet even
+
+this profile was slightly skewed. In other words,
+
+About the most mathe-
+
+a series of straight
+
+341. F. Epstein, "Static and Dynamic Corrosion and Mass Transfer
+in Liquid Metal Systems," Chem. Eng. Progr. Symp. Ser. 53, 67-81 (1956).
+
+357. H. DeVan and C. E. Sessions, "Mass Transfer of Niobium- Base
+Alloys in Flowing Nonisothermal Lithium," Nucl. Appl. 3, 102-109 (1967).
+
+3673. Ww. Koger and A. P. Litman, MSR Drogen Semiann. Progr. Rept.
+
+ 
+
+Feb. 29, 1968, ORNI-4254, p. 224.
+
+373. W. Koger and A. P. Litman, MSR Program Semiann. Progr. Rept.
+
+ 
+
+Feb. 28, 1969, ORNI-4396, p. 249.
+ 
+
+»
+
+ 
+
+35
+
+. ORNL—DWG 69-0092
+TEMPERATURE (°C) |
+© 650 675 700 725 750 775 800
+(x107%) | 4 | |
+2.8
+
+2.6
+
+ 
+
+2.4
+2.2
+
+20
+
+SOLUBILITY OF MIGRATING METAL IN
+CIRCULATING LIQUID (wt frac)
+
+ 
+
+ 
+
+ia
+
+ 
+
+(x107) T I I I I [
+
+  
+
+bbl
+EERE
+
+    
+
+|
+
+SQUARE ROOT OF DIFFUSION COEFFICIENT
+FOR MIGRATING METAL IN WALL (cm/v5ec)
+ow»
+
+ 
+
+ 
+
+|
+
+1 ] ] |
+1200 1250 300 ' 1350 1400 1450 1500
+* TEMPERATURE (°F)
+
+ 
+
+Fig. 6. Graphical Presentation of Temperature-Dependent Parameters
+That Control the Idealized Diffusion Process at Quasi-Steady-State
+
+Conditions.
+
+line segments represents the most realistic approximation to experimen-
+tal cases. Of greater importance, straight-line profiles are the
+
+easiest to integrate: in fact, the results using straight-line ‘segments
+are exact in an analytical sense. No serious compromises, such as
+straight-line approximation of exponential functions over extended ranges,
+are required.
+
+Our problem divides itself into two distinct parts: (1) find the
+
+balance points and (2) compute the amount of material entering or leaving
+either zone. Both parts depend on obtaining the position integral. Our
+
+ 
+ 
+
+ 
+
+ 
+
+36
+
+approach will be to carry out the manipulations using the prototype
+loop; present computations for the prototype loop using numerical
+examples, hopefully to clarify the overall procedure and nomenclature;
+
+and finally, discuss extension to cases like the reference loop.
+
+Solution in Terms of the Prototype Loop
+
+Equation (7a) is our starting point for the integrations that will
+
+produce a solution
+
+_AIM(8)] _ fa ox" (xD, 2/2 (x _ 2) exp (=) az. (7e)
+
+ol Tol/z 2 2RT
+
+ 
+
+The reader will recall that the time integration was performed earlier.
+A factor of 1/2 appears on the left side as the symmetry of the tent
+profile permits consideration of only half the loop. Also we have
+introduced the expression for the diffusion coefficient in the form of
+
+(D)1/2 = (D,)2/2 exp (ayo) : | (30)
+
+The equilibrium constant may be written similarly as either
+
+Kp = kK ex" 1/51) (31)
+or |
+-1 _ -1
+(Kp)™ = (Ko)™t exp By yfRT) (312)
+Thus Eq. (7c) can be divided conveniently into two parts:
+(s, - 28
+alu(t)] = oo (22 )e dz’ - of exp “ee [- D soln az’ , (74)
+2t1/2 2RT
+where
+
+C = 4x p x’ (xD) 1/2 (32)
+ 
+
+37
+
+and
+¢'= CK /X, (33)
+
+The next part of the problem is the key to the whole solution. It
+concerns the relationship between T end z. In terms of °C (or °F) an
+
+obvious relationship is
+
+T(z) = T, + bz, °C, (34)
+
+where z runs from 0 to 0.5; thus
+b= 2(F — T,)/L = 2AT/L (34a)
+
+This would be an ideal form if the exponential terms in Eq. (7c) were
+not present. However, they are indeed present; also they demand values
+of T expressed in °K. Consider an extension of the segments on the pro-
+files in Fig. 5 whereby the distance § would be zero at absolute zero
+(=273°C or 0°K). What will happen is not difficult to visualize if one
+recalls the trivial relationship, AT(°K) = AT(°C), which means that &
+
+is valid for both temperature scales. One immediately envisions the
+possibilities of an extended coordinate & such that
+
+¢ = (L/2aT)(273 + T°C) = b~1(273 + Tin * AT) ,
+
+E=t +z, am, (35)
+which in turn simply means that we have adopted the relationship
+
+T=0bt, °K, (35a)
+
+for the extension. From Eq. (35) dt = dz, and the new variable £ may
+be introduced into Eg. (7c) with this and following definitions: Let
+
+a= Ej/2bR oo Cs oo (36)
+
+and
+
+of = (5 -2E_ )/ 2bR . (36a)
+
+ 
+ 
+
+38
+
+Then the right side of Eq. (7d) becomes
+£, | £,
+c [ exp (core) ag’ —c / exp (= tr) ag’
+E, ky
+
+or, in abbreviated form,
+
+cx, (oft) —c 6 t) .
+
+We are now ready for integration. Whether one operates on the
+
+unprimed or primed term is of no consequence &s long as & or a > 1.
+
+Thus we choose the former. However, a change of variable is useful at
+
+Il
+
+aft or & = au; then dt = —(a/u?)du;
+
+this point. Let u
+CD
+
+Integration in terms of u can be performed by parts with the formula
+
+[raw=vo-[oay.
+
+[]
+
+vy
+
+We let
+Y= exp(—u) and dw = du/u® ;
+then
+
+dy = —exp(-u) du and w=-1/u.
+
+Also we note that u, » » as ts + 0. The result is
+
+J
+a fn)-a (S22) J we]
+I (aft)=a - + / a |
+12 u, uy w
+u, |
+=a oc -/ ev a) - oS - / e a)
+u w Uy u
+
+2 Us uy
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+£2 up :
+[ela at’ = -/ = exp(—v’ ) du’ . (37)
+uv’
+£
+
+(37a)
+ 
+
+®
+
+39
+
+Notice, via Eqs. (352) and (36), that u = Ep/2RT in this case. Clearly
+the integration does not involve position ~ only temperature. However,
+L does enter the results through the factor a. The integral term was
+broken up into two parts, each with infinite limits, to cast the results
+into a form that brings forth the so-called exponentiel integrals of the
+first order. These are tabulated in the literature.3® In our work,
+values of the argument are large , and in this case the tabulations are
+
+in the form
+
+Blu) = use’ E(u),
+
+where
+© .
+
+/ e' ar/T .
+
+u;
+J
+
+The T in this case is the dimensionless dummy variable of integration
+tT =u =0aft. One can show, using w = a/t’, that
+
+wo] Dk DI)
+
+The minus sign is accounted for by suitable arrangement of terms. As
+suggested by the form of the tabulated values, the final result may be
+
+written as
+
+I,  (o)- = &,e “fa - Bu) | - Z Ee “ul - ou) , (370)
+
+which clearly shows the contribution of the position variables.
+
+Values of B(u, ) are plotted on Fig. 7. An accurate interpolstion
+of the values is cHearly required because the results contain the dif-
+ference 1 — Buy) , and B(u,) values are not too far removed from unity
+
+‘when u, is large. -
+
+4,
+
+38y. Gautschi and W. F. Cahill, "Exponential Integral and Related
+Functions," pp. 228-231 and p. 243 in Handbook of Mathematical Functions,
+ed. by M. Abramowitz and I. A. Stegun, U.S. Dept. of Commerce, NES
+publication AMS-55 (June 1964). :
+
+ 
+ 
+
+ 
+
+40 1
+
+ORNL-DWG 69-10093 \ j
+I
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.960 — . —
+Blu =uje'i E(u)
+FOR uj = a/¢g; OR a'/¥§
+0.955 |— £p —]
+a =m p -
+,_ Ep-2&4,,
+! 20R
+0.950 — —
+__ 0.945 |— _
+5
+Q
+0.940 |— —]
+® Tr
+£, = _ >
+AG L, + 97, >
+0.935 |— —
+0.930 . —]
+| | | | |
+12 14 16 18 20 22 24
+
+vj =
+
+Fig. 7. Plot of B(us) for Large Values of uj. The function B (us)
+carries contributions of “Ej(u;); the interval of uj is dictated by
+values of parameters peculiar to the sodium-Inconel 600 system.
+
+Thus far we have outlined a solution for all cases where the reac-
+tions leading to mass transfer are exothermic, also cases where the
+reaction is endothermic up to the point where E_ , = Ep/2. At this
+point the second term in Eq. (7¢) is simply
+
+¢'1,,(0) = ox, - t,) (38)
+
+which states that the second term in Eq. (7c) or (7b) is a constant.
+The probability of this happening is quite low in practice, so we shall
+pass immediately to the cases where the solution reaction is endothermic
+
+i
+
+enough to bring about the inequality
+
+soln = Ep/2 ' )
+
+E
+ 
+
+ 
+
+41
+
+When the energy of solution overrides the contribution of the energy
+of activation for diffusion, the second term in Eq. (7¢) becomes
+
+CN 2)
+txgoqr (1/5, ) (2032 xfs (22,0, ~ 7) Vea aw
+Pol
+
+1 : :
+Note that C’ remains the same. In terms of £ coordinates » using the
+same substitutions, one obtains the following:
+
+£, u
+"” = a’ Er = - of ’ ’
+1, t) = [em (+ 2) dg’ = f =z exp(+u’) dw , (39)
+gE uy
+
+where it may be helpful to think in terms of the equality, a” = —of.
+Integration yields
+
+le) 5) fa].
+
+which ‘may be rearranged to conform to tabulated functions as
+
+no) ol([ For 2) (fw)
+
+Collection and rearrangement of terms permits one to write
+
+ 
+
+ 
+
+ 
+
+    
+
+      
+
+wale): = ge ay, ) - 1] ~ te 2 A (,) - 1] , (39b)
+
+where
+oo Ma, ) j& Ug, (a, )
+
+and
+u
+
+: 5
+. +T :
+ute = J" dt/t , u>0 .
+
+The last function, E, Cu, ) is the exponential integral; values of
+Muy ) appear in the same Labiesss ‘as those for Buy). The presence of
+
+ 
+ 
+
+42
+
+uy functions before u, functions should be expected in Eq. (39b)
+
+because u, > u, and exponentials with positive arguments appear. A plot
+
+of Muy) against uy for large values of the argument appears in Fig. 8.
+The balance point is located by integrating over the entire loop.
+
+One assigns 1 and 2 in Eq. (74) as the terminal points of the loop. A
+
+mass balance requires that this integral be zero if the liquid is
+
+essentially pre-equilibrated. Thus, Eq. (74) can be rearranged to yield
+
+CL, (@) = ¢ 1,0)
+
+ 
+
+- or
+I,(@) c’ X,  Esoln\ |
+
+ORNL~-DWG 69 100947
+
+[ TT 1 I | | |
+
+ 
+
+ 
+   
+    
+
+145
+149 Map =v e™ Eile) _
+FOR ) = a¥/¢;
+qvalEmn fo |
+
+143 26R —
+
+1.42
+
+4 —
+
+y
+Eitupsf £ dr, v>4
+Lo
+
+  
+
+ 
+
+1.08 —
+
+1.07 —
+
+ 
+
+ 
+
+vos vy
+9 10 i" 12 13 14 5 16 7 {8 19 20
+Yj
+
+ 
+
+ 
+
+Fig. 8. Plot of A(u;) for Large Values of us. Application of this
+plot is required when 2E,,,, exceeds Ep. This situation is encountered
+when molten-salt systems are discussed in sections to follow.
+
+ 
+ 
+
+ 
+
+ 
+
+43
+
+One may back calculate to find T and then successively z, f, bp, end
+finally, u.. The AM may be evaluated by application of Eq. (7d) using
+
+either the limits (1,p) over the cold zone or (p,2) over the hot zone.
+Details concerning these manipulations appear in the next section.
+
+Predicted Results for Sodium-Inconel 600 Systems
+
+Two objectives are associated with this section of the report.
+First, we hope to attach some physical reality to equations developed
+in the previous section through presentation of numerical examples,
+thereby demonstrating that the equations are easy to use in spite of
+their formidable appearance. Second, we desire to predict corrosion
+rates under our assumed condition that diffusion controls both in the
+hot and cold zones and that a predictable balance point does exist, as
+suggested by the microprobe data shown in Report I. To parallel the
+procedures for the preceding derivations, we may specialize to the case
+of the prototype for simplicity without too much loss in generality.
+
+One may start by considering the first and third columns of
+Table 3. The first computation required involves b. One finds, using
+Eq. (34a):
+
+pel = L/2AT - 906/2 X 167 = 2.71 em/°K .
+Related equations give oo |
+
+£, = (2.715 em/°K)(922°K) = 2503 em ,
+and
+
+g, = (2.715 em/°k)(1089°K) = 2956 cm .
+
+Computation of u, and u, requires a knowledge of & and & . But ‘these,
+in turn, require parameters associated with the curves of Fig. 6.
+
+ 
+ 
+
+4b
+
+Table 3. Values Used to Compute Balance Points and
+Mass Transfer in Prototype Loop
+
+ 
+
+ 
+
+ 
+
+£4, cm
+Functions of F £, = 2956 gE, = 28124 £, = 2503
+uy = o/s 16.224 17.05 19.165 |
+uy =d 8%) © 13.000 13.660 13.35,
+exp(-u,) 8.98, x 1078 3.92, x 1078 4.77, x 107°
+exp(—u}) 2.26, X 106 1.172, x 10-6 2.160 x 1077
+1-p(uy) 5.52 x 1072 5.28 x 1072 4.76 x 1072
+1 = p(uy) \ 6.73 X 1072 6.43 X 1072 5.82 x 1072
+Ee 901 - B(u,)] © 1.466 X 1077 5.83 x 1076 5.69 x 1077
+
+’ : .
+Ee] e M1 — B(u})] 4.509 Xx 10™4 2.120 x 10~% 3.15 x 1075
+
+(a)y = Ep /2bR = 4.797 X 10~% cm.
+
+(®), _ } ”
+o = (Ej RE ;,)/2bR = 3.842 X 10~% cm.
+
+For and related computations, diffusion parameters for nickel,
+in an alloy similar to Inconel 600, as reported by Monma et al.3?
+appear adequate, namely: D, = 3.3 cm?/sec and Ej = 70.2 kcal/mole.
+For o and related computations, estimates of parameters based on
+solubility data for nickel in sodium as reported by Singer and Weeks?
+were employed. Pertinent values here are K, = 6.7% X 107° weight frac-
+tion and Eoin = 6.985 kcal/mole. Application of all these values &s
+indicated in the footnotes of Table 3 produces the values shown. Thus,
+
+39K. Monma, H. Suto, and H. Oikawa, Nippon Kinzoku Gakkaishi 28,
+188 (1964); as cited by J. Askill, A Bibliography on Tracer Diffusion
+in Metals: Part III. Self and Impurity Diffusion in Alloys, ORNL~3795
+Part III (February 1967), p. 15.
+
+“OR. M. Singer and J. R. Weeks, "On the Solubility of Copper, Nickel,
+and Iron in Liquid Sodium," pp. 309-318 in Proceedings of the International
+Conference on Sodium Technology and large Fast Reactor Design, November 7—
+9, 1968, ANL-7520, Part I.
+
+ 
+ 
+
+ 
+
+45
+
+various values of Ey could be converted to the corresponding u, values.
+The latter allowed calculation of the exponential functions; they also
+allowed acquisition of appropriate 1 - Buy) values with the aid of
+enlarged versions of Fig. 7. In this regard, note that both a and o’
+are positive; thus, functions related to the Ey (uy) values apply here.
+The operations necessary to complete the first and third columns are
+straightforward and require no additional comment.
+
+The next and perhaps most important task is a computation of the
+balance points (the points at which Jy = 0). Since the prototype is
+under consideration, just one point is needed because symmetry permits
+treatment of only half the loop. The criterion is to set AM(t) =0 in
+Eq. (7d). Thus the appropriate sum of the integral terms must also be
+zero when the integration is carried out over the entire loop. This
+facet of the solution is discussed around Eg. (40), reference to which
+
+clearly indicates the method of approach; namely, we seek T, oF £(p)
+
+through KX. ‘The latter is given by:
+
+K, = KoIy2(0t/8)/Iy2(0r JE) = (6.79 X 10™%)(1.46¢ — 0.0565) X 10=3/(4.509
+
+—- 0.315) X 107% ~ (6.69 X 1073)(3.37 x 1072) = 2.28 x 10~¢ .
+
+The temperature corresponding to K_ is 1036°K; thus ES ~ (2.715)(1036°)
+= 2813, and £(p) (of L/2) is 0.683. Computation of the values in the
+middle column corresponds to & ‘information.
+
+Finally a value for AM(t) may be. found by use of integral terms for
+the cold zone (limits: 1,p) and for the hot zone (limits: p,2). Values
+for both zones were computed and averaged since all the differences
+involved introduced some uncertainties in "hand calculations." Every-
+thing required to calculate AM(t) appears in Table 3 except values of C
+and. C’. The latter are evaluated through Eqs. (32) and (33). Thus
+
+C = (4)(0.763,)(9.111)(0.350 x 2.54)(3.3 x 3.141,)}/2 = 70.9 ,
+and
+
+¢ = (3.37 x 10°2)('70.9) = 2.39 .
+
+For the cold zone, using Eq. (7¢) again,
+
+ 
+ 
+
+ 
+
+46
+
+a(t) [2621/2 = (70.9)(5.83 ~ 0.569) x 1076 — (2.39)(2.12 — 0.315) x 107%
+= (3.73 = 4.31) X 107% = =5.8 x 10% g/secl/? .
+For the hot zone,
+AM(t) [23/2 = (70.9) (14.66 — 5.83) x 1076 — (2.39) (4.509 — 2.12) x 10%
+= (6.26 — 5.71) x 10% = 45.5 X 10~° g/secl/? .
+
+The different signs mean that the liquid sodium loses nickel in the cold
+zone, but it gains nickel (in principle, an equal amount) in the hot
+zone. The test period of interest is 1000 hr, 2t1/2 = 3.8 x 103 secl/2;
+therefore:
+
+AM(t = 1000 hr) = (3.8 x 10*3)(5.65) = 0.215 g Ni .
+
+A very high value of transport could be obtained by assuming that
+no balance point would exist because all the liquid could be forced
+through a 100%-efficient nickel trap placed at the coldest point of the
+loop. In other words, the entire loop would be a hot zone. One obtains
+
+f(t = 1000 hr) = (3.8 x 103)(70.9)(14.66 — 0.57) x 10-6
+
+3.8 g Ni .
+
+This value was computed for comparative discussion.
+
+DISCUSSION OF SODIUM-INCONEL 600 RESULTS
+
+The manner in which the material has been presented up to this
+point almost demands that some comparisons be made between predicted
+(computed) results for the prototype loop and those for the reference
+loop. In this connection, we digress to note that extension of the
+mathematics to actual loops with temperature profiles as indicated by
+the solid line segments in Fig. 4 is relatively simple in principle,
+but tedious in practice — because symmetry is lost and several straight-
+
+line segments (each with its own b, a, and o' values) are present. Of
+ 
+
+ 
+
+ 
+
+»
+
+)
+
+4
+
+ 
+
+47
+
+course, each must be accounted. Accordingly, a computer program“! was
+developed to handle all cases where Ej =2E 1,
+
+There were several reasons whereby use of a program could be
+justified. As shown in our illustrative calculations, the balance
+point is difficult to determine precisely by hand; we might add that
+acquisition of predicted corrosion and deposition profiles is also
+desired. The program permits an accurate prediction of these because
+the computer can evaluate many "point" J's quite repidly after locating
+the balance points [and evaluating AM(t) in passing].
+
+The reader is invited to inspect Fig. 9, in which computer program
+results for the actual loop and the prototype are presented together.
+The 1000-hr AM(t)'s computed from the integral forms are 0.232 g for the
+actual profile and 0.213 g for the prototype. Recall that the hand
+calculations based on Table 3 gave a value of 0.215 g for the prototype.
+The locations of the balance points for each case are also in close
+agreement. Thus we may conclude that the prototype is an excellent
+device for estimating AM, even though the profiles themselves turn out
+to be somewhat different in appearance.
+
+The point of greatest importance is whether or not the mechanism
+under discussion here gives a reasonable representation of what happens
+in an experimental loop. The answer to the question, as was the case
+for Report I, is, "No, it does not!" The amount we must account for
+ranges between 10 to 14 g Ni. The computations produce values consider-
+ably less than 1 g Ni if one assumes that a balance point exists and
+about 4 g if one assumes that the entire loop acts as a hot zone under’
+the dominance of the mechanism proposed. In regard to the latter, micro-
+
+probe data show that deposition occurs in at least half the loop.
+Deposition tendencies are, in fact, so great that a region of nickel
+
+deposits appears, and furthermore samples of loop sodium suggest that
+the- liquid is either supersaturated or contains suspended metal particu-
+lates all around the circuit. Thus we can forget about the value of
+
+41fhe computer program was devised by D. E. Arnurius and
+V. A. Singletary of the Mathematics Division at ORNL. ~ The authors.
+acknowledge this important c contribution to the present study.
+
+ 
+ 
+
+ 
+
+ 
+
+ORNL-DWG 69-2953
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+7 =
+(x10) — TT ATT]
+Lo — 1080
+12 al \
+rr ! . —{ 1060
+s | \ _
+'y i 1 {1040 ¥
+ET] I ~
+5 | Y
+'e I _ g
+o ' 1020
+= ] a
+—~ 41000 &
+5 =
+a
+3 — 980
+3 g
+Ss —{ 960
+— 940
+I ~~ 920
+~ 7(p) 7(p’)
+(x10) — 1 1 T° AT 1 1 1
+/N\ -{ 1080
+12 / \
+. t
+_ / \ — 1060
+S ' -
+8 1040 &
+- w
+Ie [14
+o 1020 2
+= <
+c i
+$s 1000 &
+3 ¢
+=
+3 980 3
+z
+Ss 960
+940
+920
+
+ 
+
+ 
+
+ 
+
+ 
+
+0 Of 02 03 04 05 06 07 08 09 10
+£, FRACTION OF WALL AREA AND/OR LOOP LENGTH
+
+Fig. 9. Profiles for Cumulative Chromium Corrosion as Computed for
+the Reference Loop, at Top, and the Prototype Loop Below.
+
+4 g and base our conclusions on a predicted value ranging about 0.242 g.
+Other shortcomings of the mechanism described here stem from the initial
+assumptions that AM is not a function of fluid velocity — only of wall
+temperature — and that AM should be directly proportional to the square
+root of time. Both assumptions are in opposition to experimental behav-
+ior as described in Report I.
+
+At this point we must consider which of the two limiting cases
+(treated individually in Report I and in the present report) might be
+
+most responsive to alterations to form the basis for an empirical
+ 
+
+0
+
+ 
+
+49
+
+correlation. In other words, if we were to concoct a combined mechanism
+accounting solid-state and liquid~-film diffusion effects together, where
+should we start? Intuitively, we lean toward the idea of going to work
+on the liquid-film mechanism, simply because it is the faster of the two
+considered thus far. We are attracted to this point of view because
+resistances associated with a fast mechanism can always be reduced by
+addition of a time-variable resistance that acts in series with the
+liquid film. On the other hand, it would be most difficult to Justify
+decreasing the resistance of the slower mechanism. We should mention
+here that inclusion of a film resistance in the usuel manner gives rise
+to a transient effect, which decays with time. Although such an effect
+is fortuitous, the overall result was to reduce further the already low
+value of material transported.
+
+Two possibilities for altering the diffusion mechanisms under dis-
+cussion might seem feasible. The first would involve increasing the
+value of Dns such that the predicted results and experimental data
+would coincide. The factor of increase would have to be about 10%, but
+this might be tempered by the use of higher solubility values. Never-
+theless, increases of this magnitude do not appear reasonable, and one
+tends to rule out this possibility.
+
+A second possibility for increasing the predicted values would be
+to invoke solid-state diffusion equations where the point at which w = O
+moves around the loop. In other words, assume that the walls grow
+slightly thicker in cold regions and slightly thinner in the hot zones.
+
+This would accrue from corrosion reactions that will not "wait for" a
+
+diffusion-controlled process. However, the solution x(w,t), even for
+the case where the w = O boundary moves at a constant rate (a simple
+case), “2 4g too complex to be effectively applied to a mathematical
+
+treatment of the mass transfer process.
+
+42p solution of this kind is given by E. G. Brush, Sodium Mass
+Transfer; XVI. The Selective Corrosion Component of Steel Exposed to
+
+Flowing Sodium, GEAP-4832 (March 1965), Appendix II, pp. 105-110. More
+
+general forms of this solution appear on pp. 388-389 of H. S. Carslaw
+and J. C. Jaeger, Conduction of Heat in Solids, 2nd ed., Oxford
+University Press, New York, 1959, along with citations of the original
+work (in 1955), which also involved diffusion in liquid metals.
+
+ 
+ 
+
+|
+|
+|
+|
+|
+i
+i
+|
+
+ 
+
+50
+
+For both possibilities, a large amount of experimental data would
+be required to justify the selection of the approach and the evaluation
+of the parameters required. It would seem that, on the basis of the
+data available, the best approach is to resort to an empirical treatment.
+This is the objective of the next report. We may now turn to an applica-
+
+tion of the solid-state diffusion mechanisms to molten-salt systems, for
+
+“which the corrosion reactions are well understood and the diffusion
+
+mechanism appears to apply — as demonstrated in early experiments.
+APPLICATION TO MOLTEN-SALT SYSTEMS
+
+The results of experiments carried out over the past few years on
+the temperature gradient migration of metal in a molten-salt environment
+indicate that the overall rate of movement is controlled by diffusion
+rates within the metal. Hence, we will apply the equations derived
+earlier to several molten-salt systems to demonstrate the usefulness of
+the method. |
+
+At the beginning of the operation of a molten-salt loop that con-
+tains UF, as reactant, chromium will be removed from the entire loop
+until the CrF, concentration in the circulating salt reaches equilibrium
+
+with the chromium concentration of the wall surface at the coldest
+
+. position of the loop. At this time this position is the balance point.
+
+Then, as the concentration of CrF, in the circulating salt increases
+even more, this initial balance point develops into a growing deposition
+area bounded by two balance points. Steady state is attained when the
+balance points become stationary and the CrF, concentration in the cir-
+culating salt ceases to vary with time. Our mathematical analysis is
+valid for this last condition we call the quasi steady state. Quasi
+steady state can also be obtained by pre-equilibrating the salt before
+loop operation — that is, adding the amount of CrF, required so that
+
+the concentration will be constant.
+
+Thermal Convection Loops
+
+A schematic diagram of the reference thermal convection loop used
+
+in molten-salt experiments, particularly the °ICr tracer experiments,
+»
+
+ 
+
+51
+
+is shown in Fig. 10. The thermal convection loop differs from the pump
+loops mentioned in the earlier sections in that flow is achieved by.
+convection forces resulting from heating one leg and an adjacent side
+of the loop while exposing the other portions of the loop to ambient
+conditions. The flow velocities in the thermal convection loop are 2 .
+to 10 fpm, depending on the temperature difference and dimensions of
+the vertical sections. The total tubing length of the loop under dis-
+cussion is 254.0 cm and the diameter is 1.383 cm.
+
+ORNL-LR-OWG 498444
+
+3g-in. SWAGELOK TEE
+
+1
+2.
+
+34-in. SCHED. 40 PIPE
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Yin. SWAGELOK |
+“YN:
+SAMPLING POT
+| © ©
+© © ! — 1 1
+— 1] &
+— . 3
+1
+| he St a
+e—il
+i
+; = 3-in. SCHED. 0 PIPE i R
+|
+£ | ®—
+g |H—@ 220
+| Li
+SH
+2
+%
+5
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+in. SWAGELOK (INCONEL)
+Fig. 10. ‘Thermal-Convection Loop Used in °lCr Tracer Experiments.
+
+Circled numbers and letters denote thermocouple designations and
+locations. :
+
+ 
+ 
+
+52
+
+The maximum temperature of the two actual (reference) thermal con-
+vection loops in which our calculations are based was 860°C (1580°F)
+and the minimum 685°C (1265°F). Both loops were constructed of
+Hastelloy N, whose nominal composition is given in Table 4. As noted
+in an earlier section, the actual loop temperature profiles were not
+conducive to a simple analytical expression, so we have proposed a
+simplified configuration ("tent-shape" profile), which we designate the
+prototype profile. Figure 11 shows the average temperature profile for
+the two loops and the profile assumed for the prototype. ‘The prototype
+profile was constructed by drawing straight lines from the minimum tem-
+perature at £ = 0 and 1.0 to the maximum temperature at f£f = 0.5. This
+construction provided the same maximum temperature for the actual and
+prototype loop while allowing some small difference in the areas under
+the curves.
+
+The diffusion coefficient of chromium in Hastelloy N as a function
+of temperature is given in Fig. 12. These values are based on determina-
+tions437%4 of the self-diffusion of chromium in Hastelloy N using the
+tracer °1Cr in thermal convection loops like those previously mentioned.’
+
+The appropriate Arrhenius relation constants are
+
+D, = 6.068 x 107° cm?/sec
+and
+
+Ep = 41.48 kcal/mole .
+
+“3W. R. Grimes, G. M. Watson, J. H. DeVan, and R. B. Evans, "Radio-
+Tracer Techniques in the Study of Corrosion by Molten Fluorides,"
+pp. 559-574 in Conference on the Use of Radioisotopes in the Physical
+Sciences and Industry, September 6—17, 1960, Proceedings, Vol. III,
+International Atomic Energy Agency, Vienna, 1962.
+
+44R. B. Evans III, J. H. DeVan, and G. M. Watson, Self-Diffusion
+of Chromium in Nickel-Base Alloys, ORNL-2982 (January 1961).
+ 
+
+H
+
+Hn
+
+ 
+
+53
+
+ 
+
+ 
+
+Table 4. Typical Composition of Hastelloy N°
+Weight M Mole or
+Constituent or Mass Atom
+Fraction (g/mole) Fraction
+Cr 0.0741 52.00 0.088
+Ni 0.7270 58.71 0.765
+Mo 0.1500 94.95 0.096
+Fe 0.0472 55.85 0.051
+C 0.0017
+
+ 
+
+Density of Hastelloy N = 8.878 g/cm’.
+
+ORNL-DWG €9-10095
+
+ 
+
+ 
+
+ 
+  
+ 
+  
+     
+
+ 
+
+ 
+
+ 
+
+1600 T T TT 1
+LOOP NUMBER — 860
+es 1248
+1550 |— ° 1249 |
+ACTUAL 840
+MOLTEN- SALT
+PROFIL _
+1500 | N ON 820
+: \
+& : ’ 800 5
+W 1450 <
+5 780 ©
+= =
+<g =
+5 2
+# 1400 760 Wi
+g z
+= 740 &
+1350 7{°C)
+£=0 685.0
+F=025 1310 710.0 720
+r=053 (580 860.0
+1300 F=090 1410 7656 -
+f=100 1265 6850 700
+1250 | | ] - 1 { i 680
+0 0.4 0.2 03 04 05 06 07 0.8 09 10
+f, FRACTION OF WALL AND/OR LOOP LENGTH
+Fig. 11. Temperature Profiles for Two Experiments with Loops as
+
+Illustrated in Fig. 10. The "average" curve (solid line) drawn through
+the two sets of data was taken as a reference for all molten-salt
+examples: considered. The dashed line represents the simplified "proto-
+type" loop more amenable to mathematical treatment.
+
+ 
+ 
+
+54
+
+! ORNL-LR-DWG 46403
+Po TEMPERATURE (°C)
+| 850 800 750 700
+
+TT TT TT
+
+A COEFFICIENTS BASED ON TOTAL SPECIMEN COUNTS
+
+® COEFFICIENTS BASED ON Cr! CONCENTRATION —
+GRADIENT MEASURED BY COUNTING ELECTROLYTE
+
+O COEFFICIENTS BASED ON Cr3' CONCENTRATION
+GRADIENT MEASURED BY COUNTING SPECIMEN
+
+ 
+
+ 
+
+ 
+
+ 
+
++
+5
+>
+/.
+®
+oe
+oe
+
+logo & (cm/sec)
+b>
+>
+
+ 
+
+>
+>
+>
+7 1
+ce
+”
+
+~~
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+~{3 ~~
+. A A
+° a
+a
+OBTAINED UNDER NON-CORROSIVE CONDITIONS ° OT
+| BY ADDITION OF Cr*F, TO NaF -ZrF,
+8.75 9.00 9.25 9.50 9.75 10.00 10.25 10.50
+
+10,000/7 (ok -1)
+
+Fig. 12. Diffusion Coefficients of >lCr Obtained from a Tracer
+Loop Experiment (1248 on Fig. 11). The average curve was the basis for
+Dy; and Ej used in all computations relative to molten-salt examples.
+
+{
+
+|
+
+| |
+
+| Redox Corrosion Equilibria and Systems Selected for Discussion
+:
+
+In our examples we shall consider three different molten-salt
+systems. Table 5 lists the significant reacting components of the salt
+and also the alloy constituents sensitive to oxidation by the salt.
+Also shown are the equilibrium values and constants of the corrosion
+
+reactions. The three corrosion reactions have been designated as
+
+|
+|
+|
+|
+|
+[
+|
+|
+|
+
+examples I, II, and III.
+
+In example I the salt was composed of NaF47 mole % ZrF, with
+6720 ppm FeF,. The salt of example II is assumed to be primarily a
+LiF-BeF,-UF, mixture typical of a fuel salt for a reactor with no impuri-
+ties such as FeF, present. Example III involves the same basic salt as
+example II but with HF present instead of uranium or iron fluorides.
+
+In molten-salt mixtures HF can be formed by a reaction with water or
+
+ 
+ 
+
+®}
+
+»
+
+ 
+
+55
+
+Table 5. Equilibrium Constants for Molten-Salt
+Corrosion Reactions
+
+ 
+
+ 
+
+Salt -
+‘Reacting NH
+Exanmpl Co
+amie ed) Species fr foo (cal/mole)
+[FellcrF,]
+I  NeF47 ZrF, Cr(s),FeFp(d) Taitrerd 53.7 - =9,470
+2
+
+. 2 -
+II  LiF-29 BeF,  gr(s),Ur(d) [CrP l[UF1® 3 oun x 202 443,920
+
+—5 ZrF,~1 UF, = [crl[HF,]?
+III Example II cr(s),HF(g) Lor, lH] 7.586 x 1076 41,450
+
+salt [cr][HF]?
+
+ 
+
+other hydrogenous impurities and is usually present to some extent in
+all fluoride salt mixtures at the start of loop operation. In regard to
+the ZrF, present in the salts of examples IT and III, certain amounts of
+ZrF,; were added to LiF-BeF, mixtures that contain UF, to prevent precip-
+itation of UO, through inadvertent contamination of the system with
+
+oxygen.
+
+Transient Factors
+
+Certain transient factors that are associated with surface condi-
+tions, even with a quasi steady state, were discussed earlier for the
+
+sodium-Inconel pump loop system. We will now perform calculations and
+
+~ discuss these transient factors for the molten-salt systems.
+
+The conditions under which the calculations, both transient and
+quasi-steady-state case, were made for example I were realized experi-
+mentally in an actual thermal convection loop, designated as loop 1249.
+In this loop an excess of FeF, was added to the salt so that the entire
+loop acted as a hot zone. No balance point existed, since chromium was
+removed from the alloy at all positions. |
+
+Foz example i the controlling corrosion reaction is
+
+cr(s) + FeFs(a) = CrFs(d) + re(s)
+
+ 
+ 
+
+56
+
+On a mass basis Eq. (21b) becomes
+
+i G2 30) 3D (rc).
+
+ 
+
+where
+[crFo] =x
+and
+
+| dcr(0,t)] nh (ee Torry) (eed) (i & ") Py
+A - [crFo]” — [CrP] |) =— .
+: ow D “1 Ber, on [Fel ih Te Pe,
+
+| Deer PReF, are the molecular weights of the respective species; [FeF,]
+and [Fe] are the concentrations, 6720 ppm and 5%, respectively. From
+
+Eq. (25) ;
+an) 0) (2) G2)
+
+As in the liquid metal case, H was calculated for the maximum end mimi-
+
+ 
+
+ 
+
+mm loop temperatures, 1133 and 958°K.
+
+| 3.045 x 10-4) (55.85) (6.72 X 10-
+oc = 3:69 % 20° =) & 26 )
+: Hy1330 3.63 X I 2:97) (2 6.06 X 10-13 xX 10~%
+
+4.83 xX 10*%/cm
+= 3.0 X 10'%/cm .
+
+ 
+
+ 
+
+Hose °K
+
+K, was calculated from the equation, log K = 1. 73 + 2.07 X 103/T, which
+
+was obtained from combining experimental equilibrium quotients of the
+
+reactions%’
+
+CrFa(d) + Ha(g) ==cr(s) + 2 HF(g)
+and
+
+FeFo(d) + Ha(g) =Fe(s) + 2 HF (g)
+
+ 
+
+450, M. Blood et al., Reactor Chem. Div. Ann. Progr. Rept. Jan. 31,
+
+1960, ORNIL-2931, pp. 39-43.
+
+C.
+ 
+
+»
+
+n
+
+ 
+
+57
+
+in NaF-47 mole % ZrF,. We used Py(salt) = 3.71 — 8.90 x 10~% 7(°C) |
+= 2.945 g/em® at 1133°K, p, from Table 4, and D from Fig. 12.
+
+The liquid film coefficient, h, is obtained from a combination of
+dimensionless groups, and we have calculated it for both turbulent and
+laminar flow.
+
+For turbulent flow, Ney
+
+Ne = e/u, Ng, = u/pD, and d = 1.383 cm.
+
+= 0.023N, °-8N oO where Ny = dn/p,
+
+S ? h
+
+1.383h 1.383(1.422) (2.945) 8 __ 2.62 x 10-2 0.33
+— = 0.023 —_—te x ,
+
+4.166 X 10~5 2.62 x 10~2 .945(4.166 X 10~5)
+
+or h = 3.045 X 10~%. The viscosity, un, was extrapolated from experimen-
+tal values6:
+
+T, °C 600 700 800
+nu, centipoise 7.5 4.6 3.2
+
+The liquid diffusion coefficient: is calculated from the Stokes-
+
+Einstein equation, where
+
+1  x1(°K)
+
+Der(a)-salt, |T =
+Healt bnr,.
+
+2
+11.38 x 10-16(1133)
+
+Per(a)-salt,|1133°K
+2.62 x 10°2(6)(3.142)(0.76 x 10~8)
+
+ 
+
+4.17 x 10~° cm?/sec
+
+and the velocity of the salt = 2.8 fpm = 1.422 cm/sec is taken from the
+loop operating conditions. |
+
+There is always the question of whether the flow in a thermal con-
+vection loop is laminar or turbulent. For the case of laminar flow, a
+mass transfer equation can be written and h can be calculated. Its
+value is sufficiently close to the h calculated with the equation for
+turbulent flow so that the former h will be used in subsequent
+calculations.
+
+46g, Cantor, ORNL, personal.communication.
+
+ 
+ 
+
+ 
+
+58
+
+The transient calculation for example II is made somewhat differ-
+
+ently because of the pre-equilibration and the presence of balance points.
+
+The corrosion reaction is
+
+cr(s) + 2 UF,(d)== 2 UF3(a) + CrFa(d)
+
+        
+
+and
+= BK os * dler(0,t)]
+J = ho, B, X ( fer] - [cr] or ~Do,, “ae
+3lcr(0,t)] _ Kp P 2 = - [cr] ) h
+ow - K, Py mM, D
+
+ 
+
+OWE
+
+H 3.53 x 107° : 2) ( 2 2.308 x iy
+1133°K 1.26 Xx 10-¢ 06 x 10-13/
+
+= 3.777 x 10° .
+
+ 
+
+Kp and K, were calculated from the equation log K = 3.02 — 9.6 x 103/71,
+
+which was obtained from combining experimental equilibrium quotients?
+
+of the reactions
+Ha(g) + CrFo(d) = cr(s) + 2 HF(g)
+1/2 Hy(g) + UF, (a) == UFs(d) + HF(g)
+
+in LiP-33 mole % BeF,. Values of these quotients are tabulated later.
+
+Also, py(ga14) = 2+575 = 5.13 X 10"4t(°C) (ref. 46), p, is from Table 4,
+
+m,, m, are the molecular weights of the alloy and salt, respectively,
+D is from Fig. 12, h is calculated as before and = 2.308 X 10%,
+d = 1.383 cm, and y = 0.0916 exp(4098/T) centipoise (ref. 46).
+
+Again the diffusion coefficient in the liquid is calculated from
+
+the Stokes-Einstein equation:
+47C. F. Baes, "The Chemistry and Thermodynemics of Molten-Salt-
+
+Reactor Fluoride Solutions," pp. 409-433 in Thermodynamics, Vol. I,
+International Atomic Energy Agency, Vienna, 1966.
+ 
+
+ 
+
+59
+
+5 _ 1 1.38 X 10~16(1133)
+Cr(d)-salt, |1133°K ~ 5 4» 1072 6(3.1416)(0.76 x 10-8)
+
+ 
+
+= 3.21 X 10°,
+
+and the velocity of the salt is 1.422 cm/sec from loop operating data.
+We calculated H to develop a curve such as Fig. 2 for the molten salts.
+However, it became quite evident that, because of the high value of H
+for each example, the transient effect would be even less than that
+seen for the liquid metals. Thus, we again show that the transient
+effects may be neglected and that only the quasi-steady-state solution
+need be considered. oo
+
+Quasi-Steady-State Solutions
+
+Agein, as in the liquid metal case, we are required to find the
+balance points (in examples II and III) and the amount of material
+entering or leaving the hot and cold zones. The calculations will be
+made for the actual end prototype loops using the equations derived
+earlier. The variables affecting the results of these calculations will
+then be discussed. We will present computer calculations for two of
+the examples and will show the details of a "hand" calculation for
+example II to demonstrate the usefulness of the equations.
+
+As already noted, the conditions under which the calculations were
+made for example I represent actual conditions encountered in loop 1249,
+namely, an excess of FeF, was added to the salt so that the entire loop
+acted as a hot zone. No balance point existed, and chromium was depleted
+from all surfaces. Figure 13 shows the positional dependence of mass
+transfer rates in the reference and prototype loops as determined by
+. computer calculations. The total mass removed in 1000 hr is 0.595 g in
+the reference loop, compared with 0.6122 g in the prototype.
+
+In example II, balance points exist, and, as in the liquid metal
+section, we have tabulated the values of the various variables and will
+demonstrate the arithmetic involved for the prototype loop. The obvious
+difference between this molten-salt calculation and the liquid metal
+calculation is the fact that Egor > Ep/2. This necessitates the use
+of the Eqs. (39), (39a), and (39b). We did not compile a computer
+program to handle the Eoin > E [2 case, so we have used the approach
+
+ 
+ 
+
+(x
+
+Zamidn {gem™! sec 2)
+
+ 
+
+ 
+
+60
+
+ORNL-DWG 69-9929
+
+ 
+
+ 
+
+    
+        
+
+ 
+
+ 
+
+oo | 1 1 1T TT 1T 1°71 wows = 1] 17 © T1771 1
+— 140 — nao
+0
+Cr+ FeF, (xs) \ Cro+FeF, (xs)
+2.00 |— J \\ —{ moo ¢ & 200 10
+o Qo eo
+/ \ u 8 uw:
+/ N 2% 2
+/ \ — 1060 & 5, 4060 &-
+1.50 |— / NN g = 1.50 — i
+A \ ps o
+/ \ a 2 a
+/ \ —10203 = 1020
+1 dg gq a
+1 \ EES 3
+1.00 |— / \ fy 100
+A A 980 980
+7 \ /
+| ~ \ y \
+0.50 0.50
+CL bbb tb 1 Yew Lobb Yeu
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0 04 02 03 04 05 06 07 08 09 {0
+f, FRACTION OF WALL AREA AND/OR LOOP LENGTH
+
+0 O04 0.2 03 04 05 06 07 08 09 10
+f, FRACTION OF WALL AREA AND/OR LOOP LENGTH
+
+Fig. 13. Profiles for Computed Chromium Corrosion of Hastelloy N
+when High FeF,/CrFa Ratios are Present in a Molten-Salt Mixture. Pro-
+files are based on wall temperatures shown by dashed lines. The salt
+was NaF—47 mole % ZrF;. Reference loop results are at left; prototype
+results are at right.
+
+of iterative balance point calculations. The terms used in these
+
+calculations are listed in the first and third columns of Table 6.
+The value b is computed with Eq. (34a):
+b = 2AT/L = 2(1133 - 958)/127 = 1.38°K/em ,
+and § is computed with Eq. (35a):
+
+gE, = 958/1.38 = 695 cm ,
+
+il
+
+and
+gE, = 1133/1.38 = 822 cm .
+
+Next, we calculate u, and u,, which require values of & and Q”.
+
+For these next calculations, we use the values for the diffusion
+of chromium in Hastelloy N as given in Fig. 12: Dp = 6.068 X 10™5 cm? /sec,
+Ep = 41.48 kcal/mole. The values of 0 and a” are shown in the footnote
+of Table 6 and are used along with the £€'s to obtain uy and uw’. From
+the latter we acquire the exponentials and thus can obtain the 1 — Buy)
+velues from Fig. 14. The values of Muy) are found in Fig. 8. One is
+now able to complete the calculations of the last two functions.
+
+C,
+ 
+
+61
+
+Table 6. Values Used to Compute Balance Points and
+Mass Transfer in Prototype Loop
+
+ 
+
+ 
+
+ 
+
+ 
+
+£4, om
+
+Functions of §, = 822.55 E = 755.44 E, = 695.36
+u, = oft (®) 9.211 © 10.027 10.893
+wf = a [eS 10.281 11.1916 12.175
+exp(-u,) 1x 10-4 4.427 x 107° 1.862 x 10°
+exp(+us) 2.912 x 10*4 7.238 x 10+4 11.935 x 10+
+1 - p(y) 0.0905 0.08418 0.078%
+Muy) -1 0.1265 0.1116 0.1011
+
+Ey ¢ Wir - Bl, )1 7.4445 x 10-3 2.810 X 10-3 1.0151 x 1073
+tet “3M, ) - “11 0.3032 x 107 6.1022 x 10° 1.3604 Xx 107
+
+(a)
+
+= E/2bR = 8.2321.
+
+(b)g,, = (2B, ~ E)/2bR = 8.4566.
+
+We next calculate the balance point, where In = 0 or, more simply,
+where material is neither removed nor deposited. Since we have delib-
+erately constructed a symmetrical prototype loop, only one point need
+be calculated. The approach for the calculation of the balance point
+was discussed earlier, and in this case a form of Eq. (40) was used;
+
+namely,
+= KI, (a/8)/T,, (an/E) = 1.047 X 102(7.445 x 1072
+- 1.015 x 10-2) /(1. 360 x 107 — 0. 303 x 107) = 6. 268 x 10-7
+
+The temperature corresponding to is 1041°K; thus to = 755 and
+f(p) = 0.233. The values corresponding to the ‘balance Pott tempera-
+ture are given in column 2 of Table 6. oC
+
+To calculate the total amount of material transported, M(t), we
+use integral terms for the hot and cold zones. Again we averaged the
+values for both zones because of uncertainties in the "hand calcula-
+tions." n Table 6 lists all quantities needed except values of C and C’.
+Using Eqs. (32) and (33) we find
+
+ 
+ 
+
+ 
+
+62
+
+. * ORNL—-DWG 69-10096
+0927 T —
+
+ 
+
+0925 |
+0.923 |-
+0.921 |
+0.919 |
+Soo
+0.915 |-
+0.913 |
+oo
+
+0909
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.907 |
+85 90 95 100 105 #0 #5 120
+
+Yj
+Fig. 14. Values of B(u 5) over an Intermediate Range of u 3 Values.
+This lower projection of Fig: 7 was required by values of aft that
+occur in all molten-salt examples.
+= (4)(0.0741) (8.878) (0.6915) (3.1420 x 0.607 x 1074)1/2 = 2,519 x 10-2
+
+and
+
+= (2.519 x 10~2)(6.0815 x 10-10) = 1.532 x 10-11 ,
+
+For the cold zone, using Eq. (7¢);
+
+M(t) /261/2 = 2.519 x 10~2(2.810 — 1.015) x 10-3
+
+~ 1.532 x 10"11(1.360 — 0.6102) x 107 = —6.96 x 10=5 g/secl/2 .
+ 
+
+ 
+
+”»
+
+For the hot zone
+
+63
+
+AM(t) /26%/2 = 2.519 x 1072(7.444 — 2.81) x 1073
+
+= 1.532 x 10~11(3,032 — 6.102) X 106 = +6,97 x 1075 g/secl/? .
+
+The negative sign indicates that the salt loses chromium in the cold
+zone (by deposition on metal) and gains in chromium in the hot zone
+(by metal dissolution). After 1000 hr 2t1/2 = 3.80 x 10*3 gecl/?, so
+
+AM(t=1000 hr) = 3.80 x 10%3(6.96 x 107%) = 0.264 g Cr .
+
+Figure 15 gives the chromium corrosion profiles for the actual and
+
+prototype loops.
+
+(x10°€)
+
+20
+
+o
+
+o
+
+ar (BMLAT) (gem sec 2)
+
+UF3/UF, Redox Reaction.
+
+ 
+
+1140
+
+#00 ~
+
+1060
+
+ 
+
+ 
+
+I
+
+Sy
+
+ee ey — -—
+
+|
+
+   
+
+1020
+
+   
+
+WALL TEMPERATURE (°K
+
+ 
+
+280
+
+940
+
+0 Of 02 03 04 05 06 07 08 09 10
+f, FRACTION OF WALL AREA AND/OR LOOP LENGTH .
+
+Fig. 15.
+
+(x16°%)
+
+<
++
+
+= An) {g cm sec
+
+20.
+
+ORNL~DWG 69-9931
+
+ 
+
+  
+
+1 1
+
+Cr+ UF,
+
+—]
+
+ 
+
+    
+
+~
+Ng
+
+ 
+
+»
+—
+
+fe am re D  ——
+: -—
+
+”
+al
+
+meme mmm
+”
+
+      
+
+”
+
+“=
+-
+
+  
+
+ 
+
+H40
+
+00
+
+1060
+
+1020
+
+980
+
+940
+
+0 Of 02 03 04 05 06 07 08 09 40
+f, FRACTION OF WALL AREA AND/OR LOOP LENGTH
+
+Computed Chromium Corrosion Profiles Resulting from the
+The salt is a modified LiF-BeF, mixture con-
+
+taining no FeF;.
+lines. Co
+
+"were carried out using the equilibrium constants given in Table 5.
+
+Profiles assume wall temperatures given by dashed
+
+“In example III a balance point exists, and computer calculations
+
+It
+
+is noted that AH is negative, and Fig. 16 shows that the mass transfer
+occurs in the opposite ‘direction; material is deposited in the hot zone
+
+and removed in the cold zone.
+
+WALL TEMPERATURE (°K)
+
+ 
+ 
+
+ 
+
+21076) I I I
+
+)
+
+ 
+
+-2
+
+(AM/L NF) (g em! sec” 2
+
+2
+af
+
+ 
+
+ 
+
+ 
+
+ 
+
+-4
+0 0.2 0.4 0.6
+
+Fig. 16.
+
+H, /HF Redox Reaction Carried out Under Hypothetical Conditions.
+files are based on wall temperatures given by dashed lines.
+case, chromium moves from cold to hot region.
+
+0.8
+f, FRACTION OF WALL AREA AND/OR LOOP LENGTH
+
+1.0
+
+140
+
+1100
+
+1020
+
+980
+
+940
+
+WALL TEMPERATURE (°K)
+
+(x10°6)
+
+-2
+
+(AM/LAT)Y (g em”! sec?)
+
+2
+ar
+
+-4
+
+. ORNL-DWG 69 - 9930
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
+
+ 
+
+I I | {
+— A Cro+ 2 HF —] 140
+7 \
+/ \
+RN ; \ 7
+£ A #100 ~
+] 1 TF
++ + =
+/ AN &g
+— / AN — 1060 &
+’ boy 0
+/ EY a
+/ I \ =
+/ \ iw
+= —~ 1020
+/ ! NN 3
+y ) \ =
+rp’
+L/ fo) 1 \—i 980
+/ | | \
+y ! : ! \
+Li 11 040
+0 0.2 0.4 0.6 0.8 1.0
+
+f, FRACTION OF WALL AREA AND/OR LOOP LENGTH
+
+Computed Chromium Corrosion Profiles Resulting from a
+
+Pro-
+In this
+The salt considered is
+
+a modified LiF-BeF, mixture containing no dissolved uranium or iron.
+
+DISCUSSION OF MOLTEN-SALT RESULTS
+
+In the past, the mass transfer equation was integrated graphically,
+
+and areas under the curves were determined by planimeters.
+
+However, by
+
+introducing the prototype loop, we can perform a relatively simple
+
+exact integration of all the equations as detailed in an earlier sec-
+
+tion.
+
+A computer was used to generate several of the mass transfer
+
+curves, since this allows integration over many smaller segments than is
+
+otherwise practical.
+
+‘Table 7 gives the total amount of chromium removed in 1000 hr for
+
+each reaction.
+
+For examples II and III, where balance points exist,
+
+AM(t = 1000 hr) also corresponds to the amount of material deposited.
+
+Also included is the AM value for example I with balance points and no
+
+excess Fels.
+
+This calculation is given as an example of what could hap-
+
+pen in a coolant circuit where FeFz; is the only impurity that would
+
+cause corrosion.
+
+The balance points would result when only a. small
+
+amount of FeF, is present; weight losses would result at higher temper-
+
+atures and weight gains at lower temperatures in the system. Areas
+
+U
+ 
+
+*
+
+: 65
+
+Table 7. Integrated Mass Transfer Flux (AM) for
+Molten-Salt Loops After 1000 hr
+
+ 
+
+Chromium Transferred, g
+"Integrated Planimeter Integrated Planimeter
+
+ 
+
+Exauple Reaction Computer on Computer Formula on "Hand"
+Results Curve by Hand ‘Curve
+Actual Loop
+I cr(s) + FeFp(d)(xs) 0.595 0.5904
+II crs) + UF;(a) CL 0.263 0.258
+IIT crs) + HF(g) 0.1684 0.1683
+or(s) + FeFa(d)® 0.062
+
+: - Prototype Loop
+I cr(s) + FeFp(d)(xs) 0.6122 0.6551
+
+II cr(s) + Ur(a) 0.264 0.259
+Ir cr(s) + HF(g) 0.1751 0.1760
+crs) + FeFa(d)* 0.059
+
+ 
+
+® Assuming a balance point with oH = +10, 370 cal/mole and
+K, = 1.0 x 10710,
+
+under the plots of AM against distance were also determined with a
+planimeter, and the results are given in Table 7.
+
+It is first noted that graphical and numerical integration gave
+values quite close to one another. This is gratifying because in the
+past much dependence ‘had been placed on graphical integration methods,
+and now we see that the numerical calculations agree quite well.
+Although the agreement is not quite as good as in the liquid metal
+case, again the AM's are about the same for the actual and prototype
+profiles, so that good estimates of AM may be made using the simple
+prototype. The disagreement is proportional to the difference in the
+areas under the temperature profile curves. Also, it makes no differ-
+ence in the final result whether the profile is like that of the proto-
+type or is a sawtooth. In Fig. 15 (example II), the balance points
+were f(p) ='0.34 and 0.90 and I, = 1036°K for the actual loop and
+
+ 
+ 
+
+ 
+
+ 
+
+66
+
+f(p) = 0.23 and 0.77 and I, = 1042°K for the prototype. In Fig. 16
+(example III), the balance points were f(p) = 0.43 and 0.71 and
+
+Tp = 1083°K for the actual loop and f(p) = 0.36 and 0.64 and I, = 1083°K
+for the prototype. Again, although the shapes of the profile obviously
+affect the location of the balance points, the balance points and
+balance temperatures are quite close in all cases. We also point out
+that although maximums of weight loss and gain do occur at the maximum
+temperature point in examples II and III, other maximums (gain or loss)
+may occur at positions other than that of the minimum temperature.
+
+This is illustrated in Fig. 16, where the maximum weight loss occurred
+at the intermediate value of 1030°K. The worst possible condition with
+respect to the total amount of material removed was illustrated in
+example I, where corrosion occurred on all portions of the loop. A ten-
+fold difference in the value of AM corresponding to material removal
+and deposition obtained in the same reaction without excess FeF; is
+shown in Table 7 for both the prototype and actual loops.
+
+Several "rules" for mass transfer follow from these results. The
+common areas among the three examples are temperature, flow conditions,
+and selective chromium removal from the Hastelloy N. Since dissolution
+is endothermic for examples I and II, the mass transfer is from higher
+to lower temperatures. More material is removed and deposited in
+example II, which has the largest energy of solution. In example III,
+where dissolution is exothermic, the mass transfer occurs from low to
+high temperature. Because temperature enters the mass-transfer funec-
+tion as an exponential term, an increase in the maximum temperature
+greatly increases AM. For example, an increase of 50°K would about
+double the AM.
+
+Table 8 shows the constants A and B used to calculate equilibrium
+constants from log K; = A + B(103/T); also shown is the sign of the
+energy function for various reduction-oxidation reactions in LiF~-BeF;-
+base fluoride salts. Example I calculations discussed earlier were for
+an NaF-ZrF; salt. From the values given in the table, we will discuss
+the mass-transfer aspects of the various reactions.
+
+As mentioned earlier and shown in the calculations, one of the
+
+requirements that must be met for mass transfer in the direction of
+ 
+
+a“
+
+ 
+
+67
+
+Table 8. Equilibrium Constant Parameters” for Reactions
+with HF and With Salt Constituents and Impurities
+in LiF-BeF,~-Base Molten Fluorides
+
+ 
+
+ 
+
+: oo a a Sign
+Reaction : A . B Kyo7s0k of
+AE
+cr(s) + 2HF(g) ==CrF,(d) + Ha(g) -5.12 9.06 2.03 x 103 -
+Fe(s) + 2HF(g) = FeFo(d) + Ha(g) -5.20 5.31 1.83 x 10° -
+Ni(s) + 2HF(g) == NiFp(d) + Ho(g) 8.37 3.60 9.52 x 1076 —
+2UF,(d) + Ha(g) == 2UF3(d) + 2HF(g) 8.14 =-18.66 6.06 xX 107190
+BeF(d) + Ha(g) == Be(s) + 2HF(g) 7.21 -21.56 1.43 x 10712 4
+crs) + 2UF,(d)== 2UF3(d) + CrF2(d) 3.02 -9.6 1.23 x 107% +
+Cr(s) + BeFa(d) == CrFp(d) + Be(s) 2.09 -12.51 2.84 x 10°10 4
+cr(s) + FeFp(d) <= CrFa(d) + Fe(s) 0.08 +3.94 5.56 x 10° -
+Cr(s) + NiF,(d) = CrFo(d) + Ni(s) =~ 3.25 +5.46 2.14 x 108 -
+Fe(s) + 2UF;(d) == FeFp(d) + 2UF5(d) 2.94 -13.35 3.32 x 10-10
+Fe(s) + BeFp(d) = FeFp(d) + Be(s) = 2.01 -16.25 7.77 x 10-14
+~ Fe(s) + NiFp(d) = FeFo(d) + Ni(s) 3.17 +1.71 8.8 x 10% -
+Ni(s) + 2UF,(d) == NiFp(d) + 2UFs(a) -0.23 -15.06 5.76 x 10-15
+Ni(s) + BeFa(d) = NiFz(d) + Be(s) ~1.16 =17.96 1.35 x 10-18 +
+
+ 
+
+#Constants of equation log Kp =A + B(103/T1).
+
+decreasing temperature is a positive energy of solution. In this
+respect, the reactions of the alloy constituents with UF, and BeF, and
+the reduction of UF, and BeF, by hydrogen meet this criterion. It is
+noted that in all these cases, with the exception of the oxidation of
+chromium by UF,, the calculated value of K is quite small, so these
+
+reactions would be unfavorable and the yields would be quite small. In
+
+reference to mass transfer in the opposite direction, as favored by the
+other reactions, most of the equilibrium constants are quite large. The
+relative ease of chromium movement, followed by iron and then nickel, is
+pointed out by the relative values of the equilibrium constants. For
+example, for reactions with UFs, Kygqs0p = 1076, 10710, ang 10°15, respec-
+tively. Reactions of molybdenum are not included because equilibrium
+
+ 
+ 
+
+68
+
+constants are not available. However, because the free energies of
+formation of molybdenum and nickel fluorides are nearly equal, we would
+expect the equilibrium constants to be about the same.
+
+With respect to the UF; corrosion reaction, methods are now being
+considered to measure the U(III)/U(IV) ratio and thus determine the
+oxidizing or reducing potential of the UF4-containing molten salt.
+Additions of beryllium are being used to adjust this potential and con-
+trol the corrosion rate. Investigations are also under way for the
+possible application of ?5Nb deposition as the redox indicator.*®
+
+We also wish to consider if loop conditions are actually the same
+
+as those under which the equilibrium quotients were determined. Actually
+
+we beg the question: can mass transfer occur in a loop in the direction
+of low to high temperature as is theoretically shown from the FeF, and
+HF reactions with balance points in LiF-BeF, salts? Recent experimental
+work*? in salt systems containing UF,, FeF,, and HF show evidence of
+mass transfer only from high to low temperature. However, nothing is
+known about the effects of the combinations of the reactants or what
+effect removal of elements other than chromium from the alloy might have
+on. the overall process. It would be interesting to speculate what ratio
+of CrFy, to FeF, would be needed in a UF;-containing salt to stop the
+
+mass-transfer (and the corrosion) process altogether. A promising future
+
+goal would be to carefully isolate the above components and to run the
+verifying experimental tests in loops.
+
+In salts proposed for use in a breeder reactor system, ThF, is
+includad. The ThF; will not oxidize chromium, so its presence will not
+affect the corrosion process.
+
+It must be again emphasized that there is a parallel betwesn the
+results in Report I and here. The mass-transfer equations of Report I
+were derived as analogs of heat flow equations. Rate equations of this
+
+type consist of driving forces and resistances. The resistances in
+
+Report I were based on the first-order reaction rate constant and the
+
+“8R. E. Thoma, ORNL, personal communication.
+
+49J. W. Koger and A. P. Litman, MSR Program Semiann. Progr. Rept.
+Feb. 28, 1969, ORNI-4396, pp. 243-253. |
+ 
+
+”
+
+ 
+
+69
+
+film coefficient. The driving forces are differences that are involved
+in both mechanisms. For example, when solution rate is controlling,
+the important difference is that between the equilibrium corrosion
+product solute concentrations at the high and low temperatures of the
+system, while, when diffusion controls, the difference is that between
+the bulk alloy concentration and the surface alloy concentration of the
+active alloying element. The results do not depend on the shape of the
+profile in the mechanism of Report I and only sometimes in the mechanism
+given here. The corrosion product concentration differed with tempera-
+ture (position) in Report I, while here we assume constant concentration
+of the corrosion product throughout the loop. This is quite important,
+because the use of the equilibrium constant allows us to change only one
+variable with temperature. ‘This was not possible in Report I.
+
+As we mentioned earlier, liquid velocities in pump loops are
+orders of magnitude greater than those in thermal convection loops.
+Throughout this report we have assumed that conclusions about pump loop
+corrosion behavior are good for thermal convection loops and vice versa.
+of course, if the process is truly controlled by solid-state diffusion
+in the alloy, then velocity will not affect the mass transfer.
+
+SUMMARY
+
+We have elected to summarize the molten-salt results since we wish
+to illustrate several cogent points. In this portion of the report our
+main purpose was to discuss the molten-salt corrosion (mass transfer of
+chromium) of Hastelloy N in polythermal loops for cases where solid-
+state diffusion controls throughout the system. We have demonstrated
+the versatility of the method by showing three different examples:
+removal of chromium from all portions of the loop, hot-to-cold leg
+
+transfer, and cold-to-hot leg transfer.
+
+Calculations for both transient and quasi-steady-state conditions
+were based on a mathematical development of the idealized diffusion |
+process, wherein corrosion rates depend directly on the rate at which
+constituents of alloys diffuse into, or out of, container walls as influ-
+
+enced by the condition of wall surfaces exposed to a high-temperature
+
+ 
+ 
+
+ 
+
+70
+
+liquid. The transient effects (the effects of mass transfer across the
+liquid films on corrosion) were negligible because of their short dura-
+tion. The quasi-steady-state condition assumed a pre-equilibration of
+the salt with CrF, such that the concentration of CrF, did not change.
+
+The balance points and the amount of material entering or leaving
+the various zones of the: loops for the various systems were determined
+for the quasi steady state. The calculation was adaptable for both the
+prototype "tent-shaped" and actual loop temperature profiles. The
+results obtained from the prototype, which were quite simple to calcu-
+late, agreed very well with the results from the actual profile. Impor-
+tant variables discussed in this treatment with respect to the mass
+transfer process were the energy of solution of the corrosion reaction,
+the energy of activation for diffusion, the equilibrium constant of the
+corrosion reaction, and its temperature dependence.
+
+In conclusion, the practical importance of the calculations lies
+in the fact that, if the proper experimental data are available, one
+may determine, before running a loop test, the magnitude and manner in
+which the mass transfer will occur. One may also predict the changes
+expected in a completed experiment if the temperature conditions are
+varied with the developed equations. Of perhaps even greater importance
+is the fact that a priori calculations of this type are required to
+‘predict the concentration that will give a pre-equi libration condition
+at the beginning of an experiment. This is necessary for one to run a
+
+systematic well-developed test.
+ 
+
+“¥
+
+oe
+
+1-3.
+4.
+
+5-24.
+25.
+26,
+27.
+28.
+29.
+
+30.
+
+31.
+
+32.
+
+33.
+
+35.
+36.
+37.
+38.
+39.
+40.
+41.
+42.
+
+45.
+46.
+47.
+48.
+49.
+50.
+
+51.
+
+52.
+53.
+54.
+~..55.
+
+58.
+59.
+60.
+61.
+62.
+63.
+64.
+65.
+66.
+
+E.
+
+ 
+
+71
+
+INTERNAL DISTRIBUTION
+
+Central Research Library
+ORNL Y-12 Technical Library
+Document Reference Section
+Laboratory Records
+Laboratory Records, ORNL RC
+ORNL Patent Office
+
+G. M. Adamson, Jr.
+
+J. L. Anderson
+
+R. F. Apple
+
+D. E. Arnurius
+
+W. E. Atkinson
+
+C. F. Baes
+
+C. E. Bamberger
+
+C. J. Barton
+
+. F. Bauman
+
+E. Beall
+
+J. Bell
+
+E. Bettis
+
+S. Billington
+
+E. Blanco
+
+F. Blankenship
+
+. umberg
+
+G. Bohlmann
+
+G. E. Boyd
+
+J. Braunstein
+
+M. A. Bredig
+R.
+H
+
+MW EE YORE
+
+B. Briggs .
+. R. Bronstein
+G. D. Brunton
+S. Cantor
+D. W. Cardwell
+H. P. Carter
+
+-W. L. Carter -
+
+0. B. Cavin
+
+Nancy Cole
+56.
+57.
+
+C. W. Collins
+Compere
+
+Cook
+
+Cooke
+
+Corbin
+
+Crowley
+
+Culler, Jr.
+Cuneo Coen
+Cunningham ©
+Dale .
+
+de Nordwall
+
+Ww.
+J.
+L.
+J.
+F.
+D.
+J.
+J.
+H.
+
+CEE EEEmD
+
+67-69.
+70.
+
+71.
+
+72.
+73.
+74-78.
+79.
+80.
+81.
+82.
+83.
+84.
+85.
+86.
+87.
+88.
+89.
+90.
+91.
+
+92.
+
+93.
+94.
+95.
+96.
+97.
+98.
+99.
+100-102.
+103.
+104.
+105.
+106.
+107.
+108.
+
+- 209.
+110.
+111.
+112.
+113.
+114.
+115.
+116.
+117-121.
+122.
+123.
+124.
+
+a &
+
+* .
+
+.
+
+.
+
+mes
+
+Je
+
+R.
+A.
+
+0
+
+SRP RORY OSUPRPURLPOEDGY
+
+eEmEpZoN®
+
+“R.
+. .E. Inman
+. Inouye
+
+ORNL-4575, Volume 2
+
+H. DeVan
+
+R. Distefano
+J. Ditto
+
+P. Batherly
+R. Engel
+
+B. Evans III
+I. Federer
+Feliciano
+E. Ferguson
+Fleischer
+Fontana
+
+P. Fraas
+
+H Frye, Jr.
+K. Furlong
+
+~H. Gabbard
+
+A. Gardiner
+E. Gehlbach
+
+. Gilpatrick
+Goldberg
+
+R. Grimes
+Grindell
+
+. Guymon
+Harms
+Haubenreich
+Helms
+Hibbs
+Hightower
+Hill
+
+Hise
+
+- Hoffman
+Holmes
+
+P. Holz
+Huntley
+
+Pt
+
+H. Jordan
+
+. R. Kasten
+
+J. Kedl
+
+R. Kennedy
+Keyes, Jr.
+Kirslis
+Klueh |
+Koger
+Kohn
+Korsmeyer
+Krakoviak
+
+HwEspno
+
+ 
+ 
+
+ 
+
+ 
+
+72
+
+125. T. 8S. Kress 168. R. C. Robertson
+126. J. A. Lane 169. K. A. Romberger
+127. R. B. Lindauer 170. M. W. Rosenthal
+128. D. B. Lloyd 171. G. Samuels
+
+129. E. L. Long, Jr. 172. H. C. Savage
+
+130. M. I. Lundin 173. W. F. Schaffer
+131. R. N. Lyon 174. Dunlap Scott
+
+132. R. BE. MacPherson 175. J. L. Scott
+
+133. A. P. Malinauskas 176. J. H. Shaffer
+
+134. D. L. Manning 177. W. H. Sides
+
+135. W. R. Martin 178. V. A. Singletary
+136. H. E. McCoy 179. G. M. Slaughter
+137. D. L. McElroy 180. A. N. Smith
+
+138. C. K. McGlothlan 181. F. J. Smith
+
+139. 'C. J. McHargue 182. G. P. Smith
+
+140. H. A. Mclain 183. O. L. Smith
+
+‘141. B. McNabb 184. I. Spiewak
+
+142. L. E. McNeese 185. R. A. Strehlow
+143. J. R. McWherter 186. J. R. Tallackson
+144. A. S. Meyer 187. R. E. Thoma
+
+145. A. J. Miller 188. M. L. Tobias
+
+146. R. L. Moore 189. D. B. Trauger
+
+147. D. M. Moulton 190. W. E. Unger
+
+148. T. R. Mueller 191. G. M. Watson
+
+149. Paul Nelson, Jr. 192. J. S. Watson
+
+150. C. W. Nestor, Jr. 193. H. L. Watts
+
+151. H. H. Nichol 194. C. PF. Weaver
+
+152. J. P. Nichols 195. A. M. Weinberg
+153. BE. L. Nicholson 196. J. R. Weir
+
+154. T. S. Noggle 197. M. E. Whatley
+
+155. L. C. Oakes 198. J. C. White
+
+156. 0. 8. Oen 199. R. P. Wichner
+
+157. 8S. M. Ohr 200. L. V. Wilson
+
+158. R. B. Parker 201. Gale Young
+
+159. P. Patriarca 202. H. C. Young
+
+160. R. B. Perez 203. J. P. Young
+
+161. A. M. Perry 204. E. L. Youngblood
+162. T. W. Pickel 205. F. C. Zapp
+163. H. B. Piper 206. C. M. Adams, Jr. (Consultant)
+164. C. B. Pollock 207. Leo Brewer (Consultent)
+165. B. E. Prince 208. Jan Korringa (Consultant)
+166. G. L. Ragan : 209. Sidney Siegel (Consultant)
+167. D. M. Richardson
+
+EXTERNAL DISTRIBUTION
+
+210. R. E. Anderson, SNS, AEC, Washington, DC 20545
+211. W. Brehm, WADCO, P. O. Box 1970, Richland, WA 99352
+212-213. E. G. Case, Division of Reactor Standards, RDT, AEC,
+Washington, DC 20545
+214.
+215.
+216.
+217.
+
+218.
+
+219.
+220.
+
+221.
+222.
+
+223.
+
+224,
+225.
+
+226.
+227.
+
+228.
+229.
+230.
+231.
+232.
+
+233.
+234-235.
+236.
+
+237-239.
+240.
+
+241.
+242.
+
+243.
+
+244.
+245.
+246.
+247.
+
+248.
+249.
+
+250.
+251.
+252.
+
+ 
+
+ 
+
+73
+
+. Coats, Sandia Corp., P. O. Box 5800 Albuquerque, NM 87115
+
+. Cohen, General Electric, BRDO, Sunnyvale, CA 94086
+
+. Cope, RDT, SSR, AEC, Oak Ridge National Laboratory
+
+. deBoisblanc, Ebasco Service, Inc., 2 Rector St.,
+New York, NY 10006
+
+C. B. Deering, Black and Veatch, P. O. Box 8405,
+Kansas City, MO 64114
+
+A. R. DeGrazia, RDT, AEC, Washington, DC 20545
+
+L. F. Epstein, IMFBR Program Office, Argonne National Laboratory,
+9700 South Cass Ave., Argonne, IL 60439
+
+J. E. Fox, RDT, AEC, Washington, DC 20545
+
+K. Goldman, United Nuclear Corp., Grasslands Rd.,
+
+Elmsford, NY 10523
+
+D. H. Gurinsky, “Brookhaven National Laboratory, Upton, Long
+Island, NY 11973
+
+Norton Haberman, ROT, AEC, Washington, DC 20545
+
+E. E. Hoffman, General Electric, Nuclear Systems Program,
+P. 0. Box 15132, Cincinnati, OH 45215
+
+K. E. Horton, RDT, AEC, Washington, DC 20545
+
+T. F. Kassner, Argonne National Laboratory, 9700 South Cass
+Ave., Argonne, IL 60439
+
+E. C. Kovacic, RDT, AEC, Washington, DC 20545
+
+Kermit Laughon, RDT, OSR, AEC, Oak Ridge National Laboratory
+
+A. P. Litman, SNS, AEC, Washington, DC 20545
+
+G. Long, UKAEA, Harwell, England
+
+H. G. MacPherson, Nuclear Engineering Department, University
+of Tennessee, Knoxville, TN 37916
+
+C. L. Matthews, RDT, OSR, AEC, Oak Ridge National Laboratory
+T. W. McIntosh, RDT, AEC, Washington, DC 20545
+
+J. M. McKee, Argonne National Laboratory, 9700 South Cass Ave.,
+Argonne, IL 60439
+
+P. A. Morris, Division of Reactor Licensing, RDT, AEC,
+Washington, DC 20545
+
+P. Murray, Westinghouse, ARD, Waltz Mill Site, P. 0. Box 158,
+Madison, PA 15663
+
+J. Neff, RDT, AEC, Washington, DC 20545
+
+H. Pearlmen, Atomics International, P. 0. Box 309, Canoga Park,
+CA 91305
+
+vor
+00 = ge
+
+T. K. Roche, Stellite Division Cabot Corp., 1020 W. Park Ave.,
+
+Kokomo, IN 46901
+
+H. M. Roth, AEC, Oak Ridge Operations
+
+D. W. Shannon, WADCO, P. O. Box 1970, Richland, WA 99352
+
+M. Shaw, RDT, AEC, Washington, DC. 20545
+
+A. A. Shoudy, Atomic Power Development Associates, Inc.,
+1911 First Street, Detroit, MI 48226
+
+J. M. Simmons, RDT, AEC, Washington, DC 20545
+
+E. M. Simons, Battelle Memorial Institute, 505 King Ave.,
+Columbus, OH 43201
+
+B. Singer, RDT, AEC, Washington, DC 20545
+
+W. L. Smalley, AEC, Oak Ridge Operations
+
+Earl O. Smith, Black and Veatch, P. O. Box 8405, Kansas
+City, MO 64114
+
+ 
+ 
+
+253.
+
+254,
+255.
+256.
+
+257.
+258.
+
+259.
+260-454.
+
+4
+
+J. A. Swartout, Union Carbide Corp., 270 Park Ave., New York, NY
+10017
+
+A. Taboada, RDT, AEC, Washington, DC 20545
+
+C. Tyzack, UKAEA, Culcheth, England
+
+J. R. Weeks, Brookhaven National Laboratory, Upton, Long Island,
+NY 11973
+
+G. A. Whitlow, Westinghouse, ARD, Waltz Mill Site, P. O. Box 158,
+Madison, PA 15663
+
+Laboratory and University Division, AEC, oak Ridge Operations
+Patent Office, AEC, Oak Ridge Operations
+
+Given distribution as shown in TID-4500 under Metals, Ceramics
+and Materials category (25 copies — NTIS)

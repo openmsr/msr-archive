@@ -1,0 +1,2221 @@
+CHAPTER 14
+NUCLEAR ASPECTS OF MOLTEN-SALT REACTORS*
+
+The ability of certain molten salts to dissolve uranium and thorium salts
+in quantities of reactor interest made possible the consideration of fluid-
+fueled reactors with thorium in the fuel, without the danger of nuclear ac-
+cidents as a result of the settling of a slurry. This additional degree -of
+freedom has been exploited in the study of molten-salt reactors.
+
+Mixtures of the fluorides of alkali metals and zirconium or beryllium, as
+discussed in Chapter 12, possess the most desirable combination of low
+neutron absorption, high solubility of uranium and thorium compounds,
+chemical inertness at high temperatures, and thermal and radiation sta-
+bility. The following comparison of the capture cross sections of the alkali
+metals reveals that Li? containing 0.019, Li% has a cross section at 0.0795 ev
+and 1150°F that is a factor of 4 lower than that of sodium, which also has
+a relatively low cross section:
+
+Element Cross section, barns
+Li? (containing 0.019; Li®) 0.073
+Sodium 0.290
+Potassium 1.13
+Rubidium 0.401
+Cesium 29
+
+The capture cross section of beryllium is also satisfactorily low at all
+neutron energies, and therefore mixtures of Lil and BeFg, which have
+satisfactory melting points, viscosities, and solubilities for UF4 and ThE 4,
+were selected for investigation in the reactor physics study.
+
+Mixtures of NaF, ZrF4, and UF4 were studied previously, and such a
+fuel was successfully used in the Aircraft Reactor Iixperiment (see Chap-
+ters 12 and 16). Inconel was shown to be reasonably resistant to corrosion
+by this mixture at- 1500°F, and there is reason to expect that Inconel
+equipment would have a life of at least several years at 1200°F. As a fuel
+for a central-station power reactor, however, the Nal'-ZrF4 system has
+several serious disadvantages. The sodium capture cross section is less
+favorable than that of Li’. More important, recent data [1] indicate that
+the capture cross section of zirconium is quite high in the epithermal and
+intermediate neutron energy ranges. In comparison with the Lil'-BeFq
+system, the Nal'-Zrl, system has inferior heat-transfer characteristics.
+
+*By L. G. Alexander.
+626
+NUCLEAR ASPECTS OF MOLTEN-SALT REACTORS 627
+
+Finally, the INOR alloys (see Chapter 13) show promise of being as resistant
+to the beryllium salts as to the zirconium salts, and therefore there is no
+compelling reason for selecting the Nal-ZrF4 system.
+
+Reactor calculations were performed by means of the Univac* program
+Ocusol [2], a modification of the Eyewash program [3], and the Oracle?
+program Sorghum. Ocusol is a 31-group, multiregion, spherically symmet-
+rie, age-diffusion code. The group-averaged cross sections for the various
+elements of interest that were used were based on the latest available data
+[4]. Where data were lacking, reasonable interpolations based on resonance
+theory were made. The estimated cross sections were made to agree with
+measured resonance integrals where available. Saturation and Doppler
+broadening of the resonances in thorium as a function of concentration
+were estimated. Inelastic scattering in thorium and fluorine was taken
+into account crudely by adjusting the value of £0; however, the Ocusol
+code does not provide for group skipping or anisotropy of scattering,
+
+Sorghum is a 31-group, two-region, zero-dimensional, burnout code.
+The group-diffusion equations were integrated over the core to remove
+the spatial dependency. The spectrum was computed, in terms of a
+space-averaged group flux, from group scattering and leakage parameters
+taken from an Ocusol calculation. A critical calculation requires about
+1 min on the Oracle; changes in concentration of 14 elements during a
+specified time can then be computed in about 1 sec. The major assumption
+volved 1s that the group scattering and leakage probabilities do not
+change appreciably with changes in core composition as burnup progresses.
+This assumption has been verified to a satisfactory degree of approximation.
+
+The molten salts may be used as homogeneous moderators or simply as
+fuel carriers in heterogeneous reactors. Although, as discussed below,
+graphite-moderated heterogeneous reactors have certain potential advan-
+tages, their technical feasibility depends upon the compatibility of fuel,
+graphite, and metal, which has not as yet been established. For this rea-
+son, the homogeneous reactors, although inferior in nuclear performance,
+have been given greatest attention.
+
+A preliminary study indicated that if the integrity of the core vessel
+could be guaranteed, the nuclear economy of two-region reactors would
+probably be superior to that of bare and reflected one-region reactors. The
+two-region reactors were, accordingly, studied in detail. Although entrance
+and exit conditions dictate other than a spherical shape, it was necessary,
+for the calculations, to use a model comprising the following concentric
+
+*Universal Automatic Computer at New York University, Institute of Mathe-
+matics.
+
+70ak Ridge Automatic Computer and Logical Engine at Oak Ridge National
+Laboratory.
+628 NUCLEAR ASPECTS OF MOLTEN-SALT REACTORS [cHAP. 14
+
+spherical regions: (1) the core, (2) an INOR-8 core vessel 1/3 in. thick,
+(3) a blanket approximately 2 ft thick, and (4) an INOR-8 reactor vessel
+2/3 in, thick. The diameter of the core and the concentration of thorium
+in the core were selected as independent variables. The primary dependent
+variables were the critical concentration of the fuel (U235 U233 or Pu?39),
+and the distribution of the neutron absorptions among the various atomic
+species in the reactor. Irom these, the critical mass, critical inventory,
+regeneration ratio, burnup rate, ete. can be readily calculated, as described
+in the following section.
+
+14-1. HomogENEOUS REACTORS FUELED with U235
+
+While the isotope U?32 would be a superior fuel in molten fluoride-salt
+reactors (see Section 14-2), it is unfortunately not available in quantity.
+Any realistic appraisal of the immediate capabilities of these reactors must
+be based on the use of U235,
+
+The study of homogeneous reactors was divided into two phases: (1) the
+mapping of the nuclear characteristics of the initial (i.e., “clean’) states
+as a function of core diameter and thorium concentration, and (2) the
+analysis of the subsequent performance of selected initial states with
+various processing schemes and rates. The detailed results of these studies
+are given in the following paragraphs. Briefly, it was found that regenera-
+tion ratios of up to 0.65 can be obtained with moderate investment in U23%
+(less than 1000 kg) and that, if the fission products are removed (Article
+14-1.2) at a rate such that the equilibrium inventory is equal to one year’s
+production, the regeneration ratio can be maintained above 0.5 for at
+least 20 years.
+
+14-1.1 Initial states. A complete parametric study of molten fluoride-
+salt reactors having diameters in the range of 4 to 10 ft and thorium con-
+centrations in the fuel ranging from 0 to 1 mole 9, ThF4 was performed.
+In these reactors, the basic fuel salt (fuel salt No. 1) was a mixture of
+31 mole 9, Bel’ and 69 mole 9 Lil", which has a density of about 2.0 g/cc
+at 1150°F. The core vessel was composed of INOR-8. The blanket fluid
+(blanket salt No. 1) was a mixture of 25 mole 9, ThI"4 and 75 mole 95 Lik,
+which has a density of about 4.3 g/cc at 1150°F. In order to shorten the
+calculations in this series, the reactor vessel was neglected, since the re-
+sultant error was small. These reactors contained no fission products or
+nonfissionable isotopes of uranium other than #38,
+
+A summary of the results is presented in Table 14-1, in which the neutron
+balance is presented in terms of neutrons absorbed in a given element per
+neutron absorbed in U235 (both by fission and the n—y reaction). The
+sum of the absorptions is therefore equal to n, the number of neutrons
+produced by fission per neutron absorbed in fuel. Further, the sum of the
+14-1] HOMOGENEOUS REACTORS FUELED WITH U235 629
+(X10'9)
+
+40
+
+30 |
+
+AN
+4A
+
+® Calculated
+Values
+
+ 
+
+mole % ThF4 In
+uel Salt
+
+7
+
+& ®
+
+u235 concentration atoms fem3
+o
+| TTT
+
+»
+
+2 — Interpolations
+of Data
+
+No ThF, in Fuel Salt Ng
+9
+
+1 |
+2 4 6 8 10
+Core Diameter, ft
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fic. 14-1. Initial critical concentration of U23% in two-region, homogeneous,
+molten fluoride-salt reactors.
+
+absorptions in U%%® and thorium in the fuel, and in thorium in the blanket
+salt gives directly the regeneration ratio. The losses to other elements are
+penalties imposed on the regeneration ratio by these poisons; i.e., if the core
+vessel could be constructed of some material with a negligible cross seec-
+tion, the regeneration ratio could be increased by the amount listed for
+capture in the core vessel.
+
+The Inventories in these reactors depend in part on the volume of the
+fuel in the pipes, pumps, and heat exchangers in the external portion of
+the fuel circuit. The inventories listed in Table 14-1 are for systems having
+a volume of 339 ft? external to the core, which corresponds approximately
+to a power level of 600 Mw of heat. In these calculations it was assumed
+that the heat was transferred to an intermediate coolant composed of the
+fluorides of Li, Be, and Na before being transferred to sodium metal. In
+more recent designs (see Chapter 17), this intermediate salt loop has been
+replaced by a sodium loop, and the external volumes are somewhat less
+because of the improved equipment design and layout.
+
+Critical concentration, mass, inventory, and regeneration ratio. The data
+in Table 14-1 are more easily comprehended in the form of graphs, such as
+Fig. 14-1, which presents the critical concentration in these reactors as a
+function of core diameter and thorium concentration in the fuel salt. The
+data points represent calculated values, and the lines are reasonable
+interpolations. The maximum concentration calculated, about 35 x 101°
+Total power: 600 Mw (heat).
+
+TaBsLE 14-1
+
+INtrIAaL-STATE NUCLEAR CHARACTERISTICS OF Two-REcioN, HoMOGENEOUS,
+MowvteEN FLuoripE-SALT REACTORS FUELED wiTH UZ235
+
+Fuel salt No. 1: 31 mole 9, BeFs + 69 mole 9; LaF + UF4 + ThF4.
+Blanket salt No. 1: 25 mole 9; ThF4 + 75 mole 9; LiF.
+
+External fuel volume: 339 {t3.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Case number 1 2 3 4 5 6 7
+Core diameter, ft 4 5 5 5 5 5 6
+Th¥4 in fuel salt, mole 9% 0 0 0.25 0.5 0.75 1 0
+U235 in fuel salt, mole 9% 0.952 0.318 0.561 0.721 0.845 0.938 0.107
+U23% atom density * 33.8 11.3 20.1 25.6 30.0 33.3 3.80
+Critical mass, kg of U5 124 81.0 144 183 215 239 47.0
+Critical inventory, kg of U235 | 1380 501 891 1130 1330 1480 188
+Neutron absorption ratios
+1235 (fissions) 0.7023 0.7185 0.7004 0.6996 0.7015 0.7041 0.7771
+U23% (n— 0.2977 0.2815 0.2996 0.3004 0.2085 0.2959 0.2229
+Be-Li-F in fuel salt 0.0551 0.0871 0.0657 0.0604 0.0581 0.0568 0.1981
+Core vessel 0.0560 0.0848 0.0577 0.0485 0.0436 0.0402 0.1353
+Li-F in blanket salt 0.0128 0.0138 0.0108 0.0098 0.0093 0.0090 0.0164
+Leakage 0.0229 0.0156 0.0147 0.0143 0.0141 0.0140 0.0137
+1238 in fuel salt 0.0430 0.0426 0.0463 0.0451 0.0431 0.0412 0.0245
+Th in fuel salt 0.0832 0.1289 0.1614 0.1873
+Th in blanket salt 0.5448 0.5309 0.4516 0.4211 0.4031 0.3905 0.5312
+Neutron yield, 7 1.73 1.77 1.73 1.73 1.73 1.74 1.92
+Median fission energy, ev 270 15.7 105 158 270 425 0.18
+Thermal fissions, 9% 0.052 6.2 0.87 0.22 0.87 0.040 35
+n—y capture-to-fission ratio, a 0.42 0.39 0.43 0.43 0.43 0.4203 0.28
+Regeneration ratio 0.59 0.57 0.58 0.60 0.61 0.62 0.56
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+continued
+
+0€9
+
+SLOUJISV UVHTIAN
+
+Jd0
+
+SUHOLOVHY LIVS-NAHLTION
+
+FI "dVHD]
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Tapre 111 (continued)
+(“ase number ~ 9 [0 11 12 13 14
+Core diameter, ft fh 6 {h 6 7 8 8
+ThE in fuel salt, mole 9 0.25 0.5 0.75 1 0.25 ) 0.25
+1235 in fuel salt, mole 9 0.229 0.408 (.552 0.662 0.114 0.047 0.078
+U235 atom density * 8.13 14.5 19.6 23.5 4.0 1.66 2.77
+Critical mass, kg of U235 101 179 243 291 79.6 48.7 81.3
+Critical inventory, kg of U233 404 716 972 1160 230 110 184
+Neutron absorption ratios
+235 (figsions) 0.7343 0.7082 0.7000 0.7004 0.7748 0.8007 0.7930
+U233 (n—y) 0.2657 0.2918 0.3000 0.2996 0.2252 (0.1993 0.2070
+Be--Li-F in fuel salt 0.1082 0.0770 0.0669 0.0631 0.1880 0.4130 0.2616
+Core vessel 0.0795 0.0542 0.0435 0.0388 0.0951 0.1491 0.1032
+Li—F in blanket salt 0.0116 0.0091 0.0081 0.0074 0.0123 (0143 0.0112
+Leakage ‘ 0.0129 0.0122 0.0119 0.0116 0.0068 0.0084 0.0082
+U238 in fuel salt 0.0375 0.0477 0.0467 (4.0452 0.0254 0.0143 0.0196
+Th in fuel salt 0.1321 0.1841 0.2142 0.2438 0.1761 0.2045
+Th in blanket salt 0.4318 0.3683 | 0.3378 0.3202 | 0.4008 0.4073 0.3503
+Neutron yield, 7 1.82 1.75 1.73 1.73 1.91 2.00 1.96
+Median fission energy, ev 5.6 38 100 120 0.16 Thermal 0.10
+Thermal fissions, 9% 13 3 0.56 0.48 33 59 45
+ny capture-to-fission ratio, « 0.36 0.41 0.42 0.42 0.29 0.25 0. 26
+Regeneration ratio 0.61 0.60 0.60 0.61 0.61 0.42 0.57
+¥Atoms (X 10719) /ec. Neutrons absorbed per neutron absorped in U233, continued
+
+[1-51
+
+cpz)l HELA QETENd SHOLOVAM SOOMNEDOKOIL
+
+10
+TABLE 14-1 (continued)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Case number 15 16 17 18 19 20 21 22
+Core diameter, ft 8 8 8 10 10 10 10 10
+ThF4 in fuel salt, mole 0.5 0.75 1 0 0.25 0.5 0.75 1
+U235 in fuel salt, mole 9 0.132 0.226 0.349 0.033 0.052 0.081 0.127 0.205
+U235 atom density* 4.67 8.03 12.4 1.175 1.86 2.88 4.50 7.28
+Critical mass, kg of U?35 137 236 364 67.3 107 165 258 417
+Critical inventory, kg of U235 310 535 824 111 176 272 425 687
+Neutron absorption ratiost
+U235 (fissions) 0.7671 0.7362 0.7146 0.8229 0.7428 0.7902 0.7693 0.7428
+U235 (n 0.2329 0.2638 0.2854 0.1771 0.2572 0.2098 0.2307 0.2572
+Be-Li-F in fuel salt 0.1682 0.1107 0.0846 0.5713 0.3726 0.2486 0.1735 0.1206
+Core vessel 0.0722 0.0500 0.0373 0.1291 0.0915 0.0669 0.0497 0.0363
+Li-F in blanket salt 0.0089 0.0071 0.0057 0.0114 0.0089 0.0073 0.0060 0.0049
+Leakage 0.0080 0.0077 0.0074 0.0061 0.0060 0.0059 0.0057 0.0055
+U288 in fuel salt 0.0272 0.0368 0.0428 0.0120 0.0153 0.0209 0.0266 0.0343
+Th in fuel salt (0.3048 0.3397 0.3515 0.2409 0.3691 0.4324 0.4506
+Th in blanket salt 0.3056 0.2664 0.2356 0.3031 0.2617 0.2332 0.2063 0.1825
+Neutron yield, n 1.89 1.82 1.76 2.03 2.00 1.95 1.90 1.83
+Median fission energy, ev 0.17 5.3 27 Thermal | Thermal 0.100 0.156 1.36
+Thermal fissions, 9 29 13 5 66 56 43 30 16
+n—y capture-to-fission ratio, « 0.30 0.36 0.40 0.21 0.24 0.26 0.30 0.35
+Regeneration ratio 0.64 0.64 0.63 0.32 0.52 0.62 0.67 0.67
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+*Atoms (X 10719) /ce.
+
+tNeutrons absorbed per neutron absorbed in U=235,
+
+r43Y
+
+SHOLOVHAY LIVS-NALTONW 40 SLOAASV dVATIAN
+
+$I 'dVHO]
+14-1} HOMOGENEOUS REACTORS FUELED WITH UZ235 633
+
+ 
+
+rT TT] T
+
+mole % ThF4 In Fuel Salt
+
+1 0
+400 — eo Calculated volues 7]
+— interpolations of .
+
+a Data
+
+oo 4
+
+j=]
+
+® 300+ —
+> °
+
+-
+
+. / . 0.75 +
+a o —_— e—
+= vd
+
+© 200 {Ir —]
+= lo
+
+JS
+
+ee.
+~———No ThF 4 In Fuel Sait
+
+ 
+
+ 
+
+ 
+
+04 5 6 7 8 9 10
+
+Core Diameter, #
+
+Fig. 14-2. Initial critical masses of T2325 in two-region, homogeneous, molten
+fluoride-salt reactors.
+
+atoms of U?3% per cubic centimeter of fuel salt, or about 1 mole 9, UF,, is
+an order of magnitude smaller than the maximum permissible concentra-
+tion (about 10 mole 9).
+
+The corresponding eritical masses are graphed in Fig. 14-2. As may be
+seen, the critical mass 1s a rather complex function of the diameter and the
+thorium concentration. The calculated points are shown here also, and the
+solid lines represent, it is felt, reliable interpolations. The dashed lines
+were drawn where insufficient numbers of points were calculated to define
+the curves precisely; however, they are thought to be qualitatively correct.
+Since reactors having diameters less than 6 ft are not economically attrac-
+tive, only one case with a 4-ft-diameter core was computed.
+
+The critical masses obtained in this study ranged from 40 to 400 kg of
+=. However, the critical inventory in the entire fuel circuit is of more
+interest to the reactor designer than is the critical mass. The critical in-
+ventories corresponding to an external fuel volume of 339 ft? are therefore
+<hown in Fig. 14-3. Inventories for other external volumes may be com-
+puted from the relation
+
+ 
+
+6V,
+D3)
+where D is the core diameter in feet, M is the critical mass taken from
+
+ig. 14-2, V, is the volume of the external system in cubic feet, and I is
+the inventory in kilograms of U23%, The inventories plotted in Fig. 14-3
+
+I=m(1+
+634
+
+NUCLEAR ASPECTS OF MOLTEN-SALT REACTORS
+
+2000
+
+ 
+
+mole % ThF4 In Fuel Salt
+
+   
+
+1000
+
+FTTT
+
+Critical Inventory, kg of U233
+tn
+jo
+oO
+|
+
+rN
+<
+oO
+T
+
+ 
+
+ 
+
+ 
+
+Core Diameter, ft
+
+[cHaP. 14
+
+Fig. 14-3. Initial critical inventories of U?33 in two-region, homogeneous, molten
+fluoride-salt reactors. External fuel volume, 339 ft3.
+
+0.8
+
+ 
+
+07 -
+
+o
+0
+
+Regeneration Ratio
+
+©
+tn
+1
+
+0.4 }—
+
+ 
+
+0.3
+
+Numbers On Data Points
+
+Are Core Diameters In Feet { ) mole % ThF 4 In Fuel Sal
+
+16
+.
+
+8
+
+ANT
+
+Q
+& TTe—— 0b ®
+
+(0.25) ®6
+
+se 6
+!
+
+®
+Ao ThF4 In Fuel Sal
+10
+
+Ce ; |
+
+ 
+
+| |
+
+ 
+
+200 400 400 800 1000 1200
+Critical Inventory, kg u235
+
+Fie. 14-4. Initial fuel regeneration in two-region, homogeneous, molten fluoride-
+
+salt reactors fueled with U2, Total power, 600 Mw (heat); external fuel volume,
+339 ft3; core and blanket salts No. 1.
+14-1] HOMOGENEOUS REACTORS FUELED WITH U235 635
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.8
+{ } mole % ThF4 In Fuel Salt
+0.7 t+ ne n
+10 ee ———
+*—— |
+1 !
+. 1075) tn
+5 / (0.50)
+a © 910.25)
+c 0.6 — -
+0
+B
+D
+5 7®
+& “No ThF 4 In Fuel Salt
+& 0.5 — ——
+Numbers On Data Points
+0.4 — Are Core Diameters In Feet CT
+| [ |
+0.3 L I J
+0 200 400 400 £00
+
+Critical inventory, kg of u23s
+
+Fic. 14-5. Maximum initial regeneration ratios in two-region, homogeneous,
+molten fluoride-salt reactors fueled with U235, Total power, 600 Mw (heat); ex-
+ternal fuel volume, 339 {t3,
+
+range from slightly above 100 kg in an 8-ft-diameter core with no thorium
+present to 1500 kg in a 5-ft-diameter core with 1 mole 9, ThF4 present.
+
+The optimum combination of core diameter and thorium concentration
+i=, qualitatively, that which minimizes the sum of inventory charges (in-
+cluding charges on Li7, Be, and Th) and fuel reprocessing costs. The fuel
+costs are directly related to the regeneration ratio, and this varies in a
+complex manner with inventory of U23% and thorium coneentration, as
+shown in Vig. 14-4. It may be seen that at a given thorium concentration,
+the regeneration ratio (with one exception) passes through a maximum as
+the core diameter 1s varied between 5 and 10 ft. These maxima increase
+with increasing thorium concentration, but the inventory values at which
+they occur also increase.
+
+Plotting the maximum regeneration ratio versus critical inventory
+generates the curve shown in Fig. 14-5. It may be seen that a small in-
+vestment in U235 (200 kg) will give a regeneration ratio of 0.58, that 400 kg
+will give a ratio of 0.66, and that further increases in fuel inventory have
+little effect.
+
+The effects of changes in the compositions of the fuel and blanket salts
+are indicated in the following description of the results of a series of calcu-
+lations for which salts with more favorable melting points and viscosities
+were assumed. The Belz content was raised to 37 mole % in the fuel salt
+636 NUCLEAR ASPECTS OF MOLTEN-SALT REACTORS [cHAP, 14
+
+2000
+
+ 
+
+| T
+
+mole % ThFy In Fuel Salt
+
+1000
+
+‘ —]
+
+Inventory , kg of UZ33
+
+ 
+
+ 
+
+ 
+
+ 
+
+Core Diameter, ft
+
+Fig. 14-6. Initial critical inventories of U235 in two-region, homogeneous, molten
+
+fluoride-salt reactors. Total power, 600 Mw (heat); external fuel volume, 339 {t3;
+core and blanket salts No. 2.
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.7
+| |
+Numbers On Data Points are
+Core Diameters In Feet
+8
+\ 8
+
+$ ; No \
+= 3 & NJ .
+c I
+8 NL Ne)
+T 06 }— * 1 Ng _]
+8 6 NC 6 ~~ ~~,
+@ —— . ob Ne
+o @ -
+@ 7a (0.50) (0.75)
+oe ®
+
+/
+
+[
+
+8e (0.25)
+{) mole % ThE 4 in Fuel Salt
+0.5 | i |
+0 200 400 600 800 1000 1200
+
+Critical Inventory, u235 kg
+
+F16. 14-7. Initial fuel regeneration in two-region, homogeneous, molten fluoride-
+
+salt reactors fueled with U5, Total power, 600 Mw (heat); external fuel volume,
+339 ft3; core and blanket salts No. 2.
+14-1] HOMOGENEOUS REACTORS FUELED WITH UZ3% 637
+
+(fuel salt No. 2), and the blanket composition (blanket salt No. 2) was
+fixed at 13 mole % ThF4, 16 mole % BeF3, and 71 mole % LiF. Blanket
+salt No. 2 is a somewhat better reflector than No. 1, and fuel salt No. 2 a
+somewhat better moderator. As a result, at a given core diameter and
+thorium concentration in the fuel salt, both the critical concentration and
+the regeneration ratio are somewhat lower for the No. 2 salts,
+
+Reservations concerning the feasibility of constructing and guaranteeing
+the integrity of core vessels in large sizes (10 ft and over), together with
+preliminary consideration of inventory charges for large systems, led to
+the conclusion that a feasible reactor would probably have a core diameter
+lying in the range between 6 and 8 ft. Accordingly, a parametric study in
+this range with the No. 2 fuel and blanket salts was performed. In this
+study the presence of an outer reactor vessel consisting of 2/3 in. of
+INOR-8 was taken into account. The results are presented in Table 14-2
+and Figs. 14-6 and 14-7. In general, the nuclear performance is somewhat
+better with the No. 2 salt than with the No. 1 salt.
+
+Neutron balances and miscellaneous details. The distributions of the
+neutron captures are given in Tables 14-1 and 14-2, where the relative
+hardness of the neutron spectrum is indicated by the median fission energies
+and the percentages of thermal fissions. It may be seen that losses to Li,
+Be, and F in the fuel salt and to the core vessel are substantial, especially
+in the more thermal reactors (e.g., Case No. 18). However, in the thermal
+reactors, losses by radiative capture in U235 are relatively low. Increasing
+the hardness decreases losses to salt and core vessel sharply (Case No. 5),
+but increases the loss to the n—y reaction. It is these opposing trends
+which account for the complicated relation between regeneration ratio and
+critical inventory exhibited in Figs. 144 and 14-7. The numbers given
+for capture in the Li and F in the blanket show that these elements are well
+shielded by the thorium in the blanket, and the leakage values show that
+leakage from the reactor is less than 0.01 neutron per neutron absorbed in
+1235 in reactors over 6 ft in diameter. The blanket contributes sub-
+stantially to the regeneration of fuel, accounting for not less than one-third
+of the total even in the 10-ft-diameter core containing 1 mole 9% ThFs.
+
+Effect of substitution of sodium for Li”. In the event that Li? should prove
+not to be available in quantity, it would be possible to operate the reactor
+with mixtures of sodium and beryllium fluorides as the basic fuel salt. The
+penalty imposed by sodium in terms of critical inventory and regeneration
+ratio is shown in Fig. 14-8, where typical Na-Be systems are compared
+with the corresponding Li-Be systems. With no thorium in the core, the
+use of sodium increases the critical inventory by a factor of 1.5 (to about
+300 kg) and lowers the regeneration ratio by a factor of 2. The regeneration
+penalty is less severe, percentagewise, with 1 mole 9, ThF,4 in the fuel
+salt; in an 8-ft-diameter core, the inventory rises from 800 kg to 1100 kg
+ 
+
+TABLE 14-2
+
+INITIAL-STATE NUCLEAR CHARACTERISTICS OF Two-Recron, HoMmoGENEOUS,
+
+MorLteEN Frvorine-SaLt Reactors FueLep wita [235
+
+Fuel salt No. 2: 37 mole 9, BeFs + 63 mole ¢, Lil" 4+ UF4 + ThF.4.
+
+Blanket salt No. 2: 13 mole 9; ThF4 + 16 mole §; BeFs + 71 mole 9; LiF.
+Total power: 600 Mw (heat).
+
+External fuel volume: 339 {t3.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Case number 23 24 25 26 27 28
+Core diameter, ft 0 { 6 6 7 7
+ThE, in fuel salt, mole 7; 0.25 0.5 0.75 1 0.25 0.5
+U235 in fuel salt, mole 9 0.169 0.310 0.423 0.580 0.084 0.155
+U2 atom density* 5. 87 100. 91 15.95 20.49 3.13 5.38
+Critical mass, kg of U?35 72.7 135 198 254 61.5 106
+Critical inventory, kg of U?3% 291 540 790 1010 178 306
+Neutron absorption ratiost
+U232 (fisgions) 0.7516 0.7174 0.7044 0.6958 (0.7888 0.7572
+U233 (n—y) (0.2484 0.2826 0.2956 0.3042 0.2112 0.2428
+Be—Li-F in fuel salt 0.1307 0.0900 (0.0763 0.0692 0.2147 0.1397
+Core vessel 0 1098 (0.0726 0.0575 0.0473 0.1328 0.0905
+Li-F in blanket salt 0.0214 0.0159 0.0132 0.0117 0.0215 0.0167
+Outer vessel 0.0024 0.0021 0.0021 0.0019 0.0019 0.0018
+Leakage 0.0070 0.0065 0.0064 0.0061 0.0052 0.0050
+U2 in fuel salt 0.0325 0.0426 0.0452 0.0477 0.0214 0.0307
+Th in fuel salt 0.1360 0.1902 0.2212 0.2357 0.1739 0.2565
+Th in blanket salt 0.4165 0.3521 0.3178 0.2962 0.3770 (0.3294
+Neutron vield, n 1.86 1.77 1.74 1.72 1.95 1.87
+Median fission energy, cv (0.480 10.47 58.10 76.1 0.1223 0.415
+Thermal fissions, 9 21 7 2.8 0.84 43 24
+n—y capture-to-fission ratio, « 0.33 0.39 0.42 (}.44 0.37 0.32
+Regeneration ratio (0.59 0.58 {).58 (0.58 0.57 0.62
+continued
+
+SIOAASY "VATION REQ
+
+Jd0
+
+SHOLOVIY ITVS-NIHLTOW
+
+FI "dVHD]
+ 
+
+ 
+
+(‘ase number
+
+(‘ore diameter, ft
+
+ThIy in fuel salt, mole %
+U23% 1n fuel salt, mole 9
+T235 atom density ™®
+
+Critical mass, kg of U?232
+Critical inventory, kg of U235
+
+Neutron absorption ratios?
+U235 (figsions)
+T233 (n-)
+Be-Li-F in fuel salt
+Core vessel
+Li-F in blanket salt
+Outer vessel
+Teakage
+U238 in fuel salt
+Th in fuel salt
+Th in blanket salt
+
+Neutron yield, n
+
+Median fission energy, ev
+Thermal fissions, 9;
+
+n—y capture-to-fission ratio, «
+Regeneration ratio
+
+TasLe 14-2 (continued)
+
+ 
+
+ 
+
+ 
+
+ 
+
+20) 30 31 32 33 34
+7 7 8 8 8 8
+0.75 1 0.25 0.5 0.75 1
+0.254 0.366 0.064 0.099 0.163 0.254
+8.70 13.79 2.24 3.51 5.62 9.09
+171 271 65.7 103 165 267
+494 783 149 233 374 604
+0.7282 0.7094 0.8014 0.7814 0.7536 0.7288
+0.2718 0.2906 0.1986 0.2186 0.2464 0.2712
+0.1010 0.0824 0.2769 0.1945 0.1354 0.1016
+0.0644 0.0497 0.1308 0.0967 0.0696 0.0518
+0.0131 0.0108 0.0198 0.0162 0.0130 0.0105
+0.0016 0.0015 0.0017 0.0016 0.0014 0.0013
+0.0048 0.0045 (0.0045 0.0043 0.0042 0.0040
+0.0392 0.0447 0.0177 0.0233 0.0315 0.0392
+0.2880 0.3022 0.1978 0.3043 0.3501 0.3637
+0.2866 0.2566 0.3240 0.2892 0.2561 0.2280
+1.80 1.75 1.97 1.93 1.86 1.80
+7.61 25.65 519; thermal 0.136 0.518 7.75
+11 4.3 51 38 23 11
+0.37 0.41 0.25 0.28 0.33 0.37
+0.61 0.60 0.54 0.62 0.64 0.63
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+*Atoms (X 10719) /cc.
+
+Neutrons absorbed per neutron absorbed in U233,
+
+[1-31
+
+cpz(l HIIM JHTINI SHOLOVHY SNOHUNHDOWOH
+
+669
+640 NUCLEAR ASPECTS OF MOLTEN-SALT REACTORS [cHAP. 14
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ti—Be Salt with 1 mole
+® % ThFy
+10 .
+06 ¢ FuelSalta §——e- _]
+*
+o
+2 - ThF 4 8e-—e—_
+or
+Fuel Salt A 108.
+
+c
+2 0.4 | 8¢ Fuel Salt a ~ _
+8 ’ Na-Be Salt
+® & 7
+s 108 fe ThFy4 With 1 male <% ThFy4
+o
+I-A ge Fuel Salt
+
+0.2 — oh
+
+\
+Numbers On Data Points Are
+Core Diameters in Feet
+|
+0 400 800 1200 1600
+
+Critical Inventory, Kg of y23s
+
+Ftc. 14-8. Comparison of regeneration ratio and critical inventory in two-region,
+homogeneous, molten fluoride-salt reactors fueled with U235. Fuel salt A: 37 mole
+9 BeF 2 plus 63 mole 9, LiF. Fuel salt B: 46 mole 9; BeF2 plus 54 mole 9; NaF.
+
+and the regeneration ratio falls from 0.62 to 0.50. Details of the neutron
+balances are given in Table 14-3.
+
+Reactivity coefficients. By means of a series of calculations in which the
+thermal base, the core radius, and the density of the fuel salt are varied
+independently, the components of the temperature coefficient of reactivity
+of a reactor can be estimated as illustrated below for a core 8 ft in diam-
+eter and a thorium concentration of 0.75 mole 9 in the fuel salt at 1150°F.
+From the expression
+
+k=HT, p, RB),
+
+where k is the multiplication constant, T is the mean temperature in the
+core, p 1s the mean density of the fuel salt in the core, and E is the core
+radius, it follows that
+
+Ld 1 {0k 1/0k\ dR, 1/3k\ dp
+e77= (07), F758), 1+ EF) oo (14-1)
+
+where the term (1/k)(0k/0T),, r represents the fractional change in k due
+to a change in the thermal base for slowing down of neutrons, the term
+(1/k)(0k/0p)r r represents the change due to expulsion of fuel from the
+core by thermal expansion of the fluid, and the term (1/k)(0k/OR), r
+represents the change due to an increase in core volume and fuel holding
+TaBLE 14-3
+
+INITIAL NucLrear Cnaracreristics oF Two-RecroN, HOMOGENEOUS,
+MorteEN Soprum-Berynuivm FruoripE Reactors FugLep write U23%
+
+Fuel salt: 53 mole 9}, NaF + 46 mole 9, BeFz2 + 1 mole 9, (ThF4 + UF4).
+
+Blanket salt: 58 mole 9; NaF + 35 mole 9; BeF2 + 7 mole 9, ThF..
+Total power: 600 Mw (heat).
+
+External fuel volume: 339 ft3.
+
+ 
+
+ 
+
+Case number
+
+Core diameter, ft
+
+ThF, in fuel salt, mole 9
+U235 in fuel salt, mole 9
+U23% atom density*
+
+Critical mass, kg of U235
+Critical inventory, kg of U235
+
+Neutron absorption ratios?
+U235 (fissions)
+U235 (n-
+Na-Be-F in fuel salt
+Core vessel
+Na-Be-F in blanket salt
+Leakage
+U238 in fuel salt
+Th in fuel salt
+Th in blanket salt
+
+Neutron yield, 5
+
+Median fission energy, ev
+Thermal fissions, 9
+
+n—y capture-to-fission ratio, a
+Regeneration ratio
+
+ 
+
+ 
+
+35 36 37 38 39 40
+
+6 6 8 8 10 10
+0 1 0 1 0 1
+0.174 0.7014 0.091 0.465 0.070 0.282
+6.17 24.9 3.24 16.5 2.47 124.0
+76.4 308 95.1 484 142 710
+
+306 1230 215 1100 234 1170
+0.7417 0.6986 0.7737 0.7011 0.7862 0.7081
+0.2583 0.3014 0.2263 0.2989 0.2138 0.2919
+0.2731 0.1153 0.4755 0.1411 0.6119 0.2306
+0.1181 0.0476 0.1125 0.0392 0.0917 0.2306
+0.0821 0.0431 0.0660 0.0315 0.0495 0.2306
+0.0222 0.0182 0.0145 0.0116 0.0105 0.2306
+0.0360 0.0477 0.0263 0.0434 0.0232 0.0467
+
+0.2418 0.3150 0.3670
+
+0.3004 0.2120 0.2163 0.1450 0.1550 0.1048
+1.83 1.73 1.91 1.73 1.94 1.75
+1.3 190 0.20 36 0.087
+17 0.42 34 1.4 4.1
+0.25 0.43 0.29 0.43 0.27 0.41
+0.54 0.50 0.24 0.51 0.18 0.52
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+*Atoms (X 10719) /ce.
+
+Neutrons absorbed per neutron absorbed in U235.
+
+[1-%1
+
+gppl HLIM QETINA SHOLOVIY SNOUNIHDONWOH
+
++9
+(G12 NUCLEAR ASPECTS OF MOLTEN-SALT REACTORS [cHAP. 14
+
+capacity. The coefficient dR/dT may be related to the coefficient for linear
+expansion, «, of INOR-8, viz:
+
+dR
+aT = Ra.
+Likewise the term dp/d7T may be related to the coefficient of cubical ex-
+pansion, 3, of the fuel salt:
+
+dp _
+aT pS.
+
+From the nuclear calculations, the components of the temperature co-
+efficient were estimated, as follows:
+
+(5h
+
+r 7). =—(0134£0.02) X 107%/°F,
+
+R{Ok .
+SE) =+ 0.4123 0.0005,
+
+=
+
+|
+
+QD
+
+4 J ) — —0.405 + 0.0005.
+pP/R.T
+
+The linear coefficient of expansion, «, of INOR~-8 was estimated to be
+(8.04 0.5) xX 107%/°F [5], and the coefficient of cubical expansion, 83, of
+the fuel was estimated to be (9.889 + 0.005) X 10~3/°F from a correlation
+of the density given by Powers [6]. Substitution of these values in
+Eq. (14-1) gives
+
+=== —(3.80 4: 0.04) X 107 3/°F
+
+for the temperature coefficient of reactivity of the fuel. In this calculation,
+the effects of changes with temperature in Doppler broadening and satura-
+tion of the resonances in Th and U?3? were not taken into account. Since
+the effective widths of the resonances would be increased at higher tem-
+peratures, the thorium would contribute a reactivity decrease and the
+[235 an increase. These effects are thought to be small, and they tend to
+cancel each other.
+14-1] HOMOGENEOUS REACTORS FUELED WITH U23° (G43
+
+Additional coefficients of interest are those for U23% and thorium. For
+the 8-ft-diameter cores,
+
+ 
+
+ 
+
+N (235) ( ok ) 14 [0.17N(U285) x 10717]
+k IN (U2?) N(Th) 247TN (U5) x 1019
+and
+N (Th) ( ok __ N(Th) ( dk ) dN (U?33)
+k \ON(Th)/wvw=s  k  \ON(UZ?) yr dN(Th)
+where
+dN, (U2?) — 0.0595N (Th) x 10~1%
+JN TH) = 0.0805 ¢ :
+
+In these equations, N(U235) represents the atomic density of U235 in atoms
+per cubic centimeter, N.(U?35) is the critical density of U?3%, and N(Th)
+is the density of thorium atoms.
+
+Heat release in core vessel and blanket. The core vessel of a molten-salt
+reactor is heated by gamma radiation emanating from the core and blanket
+and from within the core vessel itself. Estimates of the gamma heating can
+be obtained by detailed analyses of the type illustrated by Alexander and
+Mann [7]. The gamma-ray heating in the core vessel of a reactor with an
+8-ft-diameter core and 0.5 mole % ThF4 in the fuel salt has been estimated
+to be the following:
+
+Source Heat release rate, w/cm3
+Radioactive decay in core 1.4
+Fission, n—y capture, and inelastic 5.2
+
+scattering in core
+n—y capture in core vessel 4.
+n—y capture in blanket 0.
+
+Total 11.4
+
+wr On
+
+Estimates of gamma-ray source strengths can be used to provide a crude
+estimate of the gamma-ray current entering the blanket. For the 8-ft-
+diameter core, the core contributes 45.3 w of gamma energy per square
+centimeter to the blanket, and the core vessel contributes 6.8 w/cm?, which,
+multiplied by the surface area of the core vessel, gives a total energy
+escape into the blanket of 9.7 Mw. Some of this energy will be reflected
+into the core, of course, and some will escape from the reactor vessel, and
+644 NUCLEAR ASPECTS OF MOLTEN-SALT REACTORS [cHAP. 14
+
+therefore the value of 9.7 Mw is an upper limit. To this may be added the
+heat released by capture of neutrons in the blanket. From the Ocusol-A
+calculation for the 8-ft-diameter core and a fuel salt containing 0.5 mole %
+ThF4 it was found that 0.176 of the neutrons would be captured in the
+blanket. If an energy release of 7 Mev /capture is assumed, the heat release
+at a power level of 600 Mw (heat) is estimated to be 8.6 Mw. The total is
+thus 18.3 Mw or, say, 204+ 5 Mw, to allow for errors.
+
+No allowance was made for fissions in the blanket. These would add 6
+Mw for each 1% of the fissions occurring in the blanket. Thus it appears
+that the heat release rate in the blanket might range up to 50 Mw.
+
+14~1.2 Intermediate states. Without reprocessing of fuel salt. The nu-
+clear performance of a homogeneous molten-salt reactor changes during
+operation at power because of the accumulation of fission products and
+nonfissionable isotopes of uranium. It is necessary to add U23% to the fuel
+salt to overcome these poisons and, as a result, the neutron spectrum is
+hardened and the regeneration ratio decreases because of the accompanying
+decrease in 7 for U?3% and the increased competition for neutrons by the
+poisons relative to thorium. The accumulation of the superior fuel U233
+compensates for these effects only in part. The decline in the regeneration
+ratio and the increase in the critical inventory during the first year of
+operation of three reactors having 8-ft-diameter cores charged, respectively,
+with 0.25, 0.75, and 1 mole 9; ThF'4 are illustrated in Fig. 14-9. The criti-
+cal inventory increases by about 300 kg, and the regeneration ratio falls
+about 169,. The gross burnup of fuel in the reactor charged with 1 mole 7,
+ThF4 and operated at 600 Mw with a load factor of 0.809 amounts to
+about 0.73 kg/day. The U235 burnup falls from this value as U233 assumes
+part of the load. During the first month of operation, the U2%5 burnup
+averages 0.69 kg/day. Overcoming the poisons requires 1.53 kg more and
+brings the feed rate to 2.22 kg/day. The initial rate is high because of the
+holdup of bred fuel in the form of Pa233. As the concentration of this iso-
+tope approaches equilibrium, the U235 feed rate falls rapidly. At the end
+of the first year the burnup rate has fallen to 0.62 kg/day and the feed rate
+to 1.28 kg/day. At this time U233 contributes about 129, of the fissions.
+The reactor contains 893 kg of U235 70 kg of U233, 7 kg of Pu23?, 62 kg
+of U236 and 181 kg of fission products. The U23 and the fission products
+capture 1.8 and 3.89, of all neutrons and impair the regeneration ratio
+by 0.10 units. Details of the inventories and concentrations are given in
+Table 14-4.
+
+With reprocessing of fuel salt. If the fission products were allowed to ac-
+cumulate indefinitely, the fuel inventory would become prohibitively large
+and the neutron economy would become very poor. However, if the fission
+products are removed, as described in Chapter 12, at a rate such that the
+14-1] HOMOGENEOUS REACTORS FUELED WITH U230 645
+
+0.7
+
+ 
+
+1 mole °4 Th¥4 in Fuel Salt
+0.75
+
+ 
+
+Regeneration Ratio
+
+ 
+
+1 0.50
+|
+}+— Processing Begins
+
+0.4 i
+
+ 
+
+ 
+
+ 
+
+Inventory, Kg
+
+ 
+
+ 
+
+ 
+
+ 
+
+200 No Processing ——wje— Processing Begins U233
+100 |-- || motes ThE _
+0.75
+0.50
+0 |
+1 2 3
+
+Time of Operation, years
+
+I'tg. 14-9. Operating performance of two-region, homogeneous, molten fluoride-
+salt reactors fueled with U23%. Core diameter, 8 ft; total power, 600 Mw (heat);
+load factor, 0.80.
+
+equilibrium inventory is, for example, equal to the first year’s production,
+then the increase in U235 inventory and the decrease in regeneration ratio
+are effectively arrested, as shown in Fig. 14-10. The fuel-addition rate
+drops immediately from 1.28 to 0.73 kg/day when processing is started.
+At the end of two years, the addition rate is down to 0.50 kg/day, and it
+continues to decline slowly to 0.39 kg/day after 20 years of operation.
+The nonfissionable isotopes of uranium continue to accumulate, of course,
+but these are nearly compensated by the ingrowth of U233. As shown in
+Fig. 14-10, the inventory of U?23 actually decreases for several years in a
+typical case, and then increases only moderately during a lifetime of
+20) vears,
+
+The rapid increase in critical inventory of U235 during the first year can
+be avoided by partial withdrawl of thorium. In Fig. 14-10 the dashed
+lines indicate the course of events when thorium is removed at the rate of
+1/900 per day. Burnup reduces the thorium concentration by another
+(46 NUCLEAR ASPECTS OF MOLTEN-SALT REACTORS [cuaP. 14
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.7 T
+2
+T
+ox
+ec 06 _ |
+0
+5 1 mole % ThFy4 In Fuel Salt
+a Th —
+0.5) —~—— _
+: Tem —— Decreasing ThF4
+x , TT rm ———
+od ol] TT
+1200 T T T
+: | ! |
+= /
+
+& 1000 + / —
+5 1 mole % ThF4 In Fuel Salt
+wn 800) ” — -— a.
+
+o~ y235 _—— x
+> lS em— ——— Decreasing ThF ,
+5 400 -
+oO
+x
+5 oor 1 mole ThFg In Fuel Salt |
+c oN
+2 233
+£200 a ——— u
+= {Accumulated)
+! | i | | |
+C 10 20
+
+Time of Operation, years
+
+Fig. 14-10. Long-term nuclear performance of typical two-region, homogeneous,
+molten fluoride-salt reactors fueled with U235, Core diameter, 8 ft; total power,
+600 Mw (heat); load factor, 0.80.
+
+1/4300 per day. The U2% inventory rises to 826 kg and then falls, at the
+end of eight months, to 587 kg. At this time, the processing rate is in-
+creased to 1/240 per day (eight-month cycle), but the thorium is returned
+to the core and the thorium concentration falls thereafter only by burnup.
+It may be seen that the U23% inventory creeps up slowly and that the re-
+generation ratio falls slowly. The increase in U235 inventory could have
+been prevented by withdrawing thorium at a small rate; however, the re-
+generation ratio would have fallen somewhat more rapidly, and more U?235
+feed would have been required to compensate for burnup.
+
+14-2. HomoGENEOUs REACTORS FUELED wrTH [233
+
+Uranium-233 is a superior fuel for use in molten fluoride-salt reactors in
+almost every respect. The fission cross section in the intermediate range of
+neutron energies is greater than the fission cross sections of U23% and
+Pu23?, Thus initial critical inventories are less, and less additional fuel is
+required to override poisons. Also, the parasitic cross section is sub-
+stantially less, and fewer neutrons are lost to radiative capture. Further,
+the radiative captures result in the immediate formation of a fertile iso-
+(ore diameter: 8 ft.
+
+Tare 11-4
+
+External fuel volume: 339 ft3.
+
+NucLeak Perrormasce or A Two-Redion, HoMocENEOUS,
+Morten FLuoribe-Saur Reactor Fuerenp wita U23°
+AND Containing 1 moLr 9; Tully 1x THE Furr Sart
+
+Total power: 600 Mw (heat).
+Load factor: 0.8.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Initial state After 1 year
+Inventory, Absorptions, Fissions, Inventory, Absorptions, Fissions,
+kg % To kg % %
+Core elements
+Th232 2,100 20.3 2,100 16.7
+['a233 8.2 0.3
+17233 61.0 5.9 12.5
+[234 1.9 0.0
+[23s 604 55.4 100 893 49 3 86.3
+[236 62.2 1.8
+Np237 4.2 0.2
+1238 45.3 2.2 57.9 2.0
+Pu2ss 6.8 0.8 1.2
+Fission fragments 181 3.8
+Li? 3,920 1.9 3,920 0.9
+Be? 3,008 0.6 3,008 0.5
+Ire 24,000 3.2 24,000 3.0
+Blanket element
+23s 8.7
+Total fuel 604 963
+1225 burnup rate, kg/day 0.69 0.62
+1235 feed rate, kg/day 2.22 1.28-0.73
+Regeneration ratio 0.64 0.53
+continued
+
+[g%1
+
+perl HLIM UETINA SUOLOVAY SNOANADOWOH
+
+L¥9
+TABLE 14-4 (continued)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+After 2 years After 5 years
+Inventory, Absorptions, Fissions, Inventory, Absorptions, Fissions,
+kg % Yo kg % %
+Core elements
+Th232 2,100 16.3 2,100 15.4
+Pg233 7.9 0 2 7.5 0.2
+Uzss 110 9 7 20.8 201 15.3 33.0
+[234 6.5 0.1 27.1 04
+235 863 44.3 77.4 818 36.9 64.1
+[236 115 31 222 5.2
+Np237 0.8 0.4 1.8 0.8
+[j238 69.7 23 9.0 2.7
+Pu239 12.0 13 1.8 24.3 2.0 2.9
+Fission fragments 181 36 181 3.1
+Li? 3,920 08 3,920 0.6
+Be? 3,008 0.5 3,008 0.5
+Fo 24,000 3.0 24,000 3.0
+Blanket element
+23s 16 24
+Total fuel 990 1,045
+U235 burnup rate, kg/day 0.58 0.47
+U?235 feed rate, kg/day 0.50 0.45
+Regeneration ratio 0.53 0.54
+continued
+
+8F9
+
+SIOUdSY UVHTOON
+
+SHOLOVHY LIVS-NEHLIOK J0
+
+FI dVHD)
+TaBLE 14-4 (continued)
+
+ 
+
+After 10 years
+
+After 20 years
+
+ 
+
+ 
+
+ 
+
+ 
+
+Inventory, Absorptions, Fissions, Inventory, Absorptions, Fissions,
+kg To % kg To %
+Core elements
+Th232 2,100 14.6 2,100 13.7
+Pa?33 7.1 0.2 6.7 0.2
+[233 266 17.6 38.38 322 18.8 41.0
+[234 64.4 0.8 124 1.4
+[23s 831 33.5 58.2 R72 31.7 54.9
+[236 328 6.7 450 7.9
+Np237 2.6 0.9 3.2 1.0
+[238 10.8 2.9 12.9 3.0
+Pu?239 37.3 2.4 3.5 52.6 2.8 4.1
+Fission fragments 181 2.7 181 2.4
+Li7 3,920 0.5 3,920 0.4
+Be? 3,008 0.5 3,008 0.5
+Ie 24,000 3.0 24,000 3.0
+Blanket element
+[233 28 33
+Total fuel 1,129 1,232
+U235 burnup rate, kg/day 0.41 0.38
+U23 feed rate, kg/day 0.44 0.39
+Regeneration ratio 0.533 0.530
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+[Z-%1
+
+cpz{l HIIM JATINA SHOLOVHY SNO0ANIDONOH
+
+6%9
+650 NUCLEAR ASPECTS OF MOLTEN-SALT REACTORS [cHAP. 14
+
+tope, U23%. The rate of accumulation of U?3% is orders of magnitude smaller
+than with U235 as a fuel, and buildup of Np?37 and Pu23? is negligible.
+
+The mean neutron energy is rather nearer to thermal m these reactors
+than it is in the corresponding U?35 cases. Consequently, losses to core
+vessel and to core salt tend to be higher. Both losses will be reduced sub-
+stantially at higher thorium concentrations.
+
+14-2.1 Initial states. Results from a parametric study of the nuclear
+characteristics of two-region, homogeneous, molten fluoride-salt reactors
+fueled with U23? are given in Table 14-5. The core diameters considered
+range from 3 to 10 ft, and the thorium concentrations range from 0.25 to 1
+mole 9. Although the regeneration ratios are less than unity, they are very
+good compared with those obtained with U235. With 1 mole 9, ThF4 in
+an 8-ft-diameter core, the U23? inventory was only 196 kg, and the re-
+generation ratio was 0.91.
+
+The regeneration ratios and fuel inventories of reactors of various diam-
+eters containing 0.25 mole 9} thorium and fueled with U235 or U233 gre
+compared in Fig. 14-11. The superiority of U?33 is obvious.
+
+ 
+
+ 
+
+ 
+
+ 
+
+1.0 |
+u233
+0
+5 08) —
+=
+9
+3
+2 u235
+oe \
+0.4 |
+0 200 400 600
+
+Critical Inventory, kg of U
+
+Fig. 14-11. Comparison of regeneration ratios in molten-salt reactors containing
+0.25 mole 9, ThF, and U?35- or U?33.enriched fuel.
+
+14-2.2 Intermediate states. Calculations of the long-term performance
+of one reactor (Case 51, Table 14-5) with U?33 as the fuel are described
+below. The core diameter used was 8 ft and the thorium concentration
+was 0.75 mole 9. The changes in inventory of U23% and regeneration ratio
+are listed in Table 14-6. During the first year of operation, the inventory
+rises from 129 to 199 kg, and the regeneration ratio falls from 0.82 to 0.71.
+If the reprocessing required to hold the concentration of fission products
+TaBLE 14-5
+
+NucrLear CnaracrerisTics oF Two-Recion, HoMoGENEOUS,
+MoLTEN FLUORIDE-SALT REACTORS FUKLED with U233
+
+Core diameter: 8 ft.
+
+External fuel volume: 339 ft3.
+
+Total power: 600 Mw (heat).
+Load factor: 0.8.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Case number 41 42 43 44 45 46
+Fuel and blanket salts* 1 1 1 1 1 1
+Core diameter, ft 3 4 4 5 6 6
+Th¥, in fuel salt, mole 9 0 0 0.25 0 0.25 0.25
+U233 in fuel salt, mole 9; 0.592 0.158 0.233 0.106 0.048 0.066
+U?33 atom density 21.0 6.09 8.26 3.75 1.66 2.36
+Critical mass, kg of U233 64.9 22.3 30.3 26.9 20.5 29.2
+Critical inventory, kg of U233 1620 248 337 166 82.0 117
+Neutron absorption ratios?
+U232 (figsions) 0.8754 0.8706 0.8665 0.8725 0.8814 0.8779
+U?3 (n—y) 0.1246 0.1294 0.1335 0.1275 0.1186 0.1221
+Be—Li-F in fuel salt 0.0639 0.1061 0.0860 0.1472 0.3180 0.2297
+Core vessel 0.0902 0.1401 0.1093 0.1380 0.1983 0.1508
+Li-Be-F in blanket salt 0.0233 0.0234 0.0203 0.0196 0.0215 0.0179
+Leakage 0.0477 0.0310 0.0306 0.0193 0.0160 0.0157
+Th in fuel salt 0.1095 0.1593 0.1973
+Th in blanket salt 0.9722 0.8857 0.8193 0.7066 0.6586 0.5922
+Neutron yield, 7 2.20 2.19 2.18 2.19 2.21 2.20
+Median fission energy, ev 174 14 19 2.9 0.33 1.2
+Thermal fissions, 9 0.053 8.0 2.3 16 38 29
+n—y capture-to-fission ratio, « 0.14 0.15 0.15 0.15 0.13 0.14
+Regeneration ratio 0.97 0.89 0.93 0.87 0.66 0.79
+continued
+
+[z¥1
+
+eel HLIM QHTENd SHOLOVAYM SNOINADOWOH
+
+169
+TABLE 14-5 (continued)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Case number 47 48 49 50 51
+Fuel and blanket salts* 1 1 1 1 2
+Core diameter, ft 8 8 10 10 8
+ThF, in fuel salt, mole 9 0.25 1 0.25 1 0.75
+U233 in fuel salt, mole 9, 0.039 0.078 0.031 0.063 0.0597
+U233 atom densityt 1.40 2.95 1.10 2.29 1.97
+Critical mass, kg of U233 41.1 86.6 63.0 131 58.8
+Critical inventory, kg of U233 93.1 196 104 216 129
+Neutron absorption ratiosi
+{233 (figsions) 0.8850 0.8755 0.8881 0.8781 0.8809
+U2 (n—y) 0.1150 0.1245 0.1119 0.1219 0.1191
+Be-Li-F in fuel salt 0.3847 0.1899 0.5037 0.2360 0.2458
+Core vessel 0.1406 0.0778 0.1168 0.0629 0.1168
+Li-Be-F in blanket salt 0.0141 0.0095 0.0108 0.0071 0.0187
+Leakage 0.0095 0.0090 0.0068 0.0065 0.0050
+Th in fuel salt 0.2513 0.5768 0.2852 0.6507 0.4903
+Th in blanket salt 0.4211 0.3344 0.3058 0.2408 0.3325
+Neutron yield, n 2.22 2.20 2.23 2.20 2.21
+Median fission energy, ev 0.20 1.1 509, Th 3.2 0.68
+Thermal fissions, 9 43 24 50 30 34
+n—y eapture-to-fission ratio, « 0.13 0.14 0.13 0.14 0.14
+Regeneration ratio 0.67 0.91 0.59 0.89 0.82
+
+ 
+
+ 
+
+649
+
+SLOHISY UVHTIIAN
+
+SUOLOVHEY LIVS-NALIOW 40
+
+*Fuel salt No. 1: 31 mole 9, BeFs + 69 mole 9, LiF + UF4 + ThF.
+Blanket salt No. 1: 25 mole 9%, ThF4 + 75 mole 9, LiF
+Fuel salt No. 2: 37 mole 9, BeFs + 63 mole 9, LiF + UF4 +4 ThF,
+Blanket salt No. 2: 13 mole 9, ThF4 + 16 mole 9; BeF3 + 71 mole 9, LiF
+
+tAtoms (X 10719) /cc. Neutrons absorbed per absorption in U233,
+
+$1 "dVHD]
+NucLeaR PerrormaNcek or A Two-ReaioN, HoMoGuNEOUS,
+Morey Frroripe-Sart Reacror Fuernep wire U233 AnD
+
+TaBLE 14-6
+
+Containing 0.75 more 9; TuF4 IN THE FUEL SALT
+
+Total power: 600 Mw (heat).
+Load factor: 0.8.
+
+Core diameter: 8 ft.
+
+External fuel volume: 339 ft3.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Initial state After 1 year
+Inventory, Absorptions, Fissions, Inventory, Absorptions, Fissions,
+kg % % kg % 0
+Core elements
+Th2sz2 1,572 22.2 1,572 19.1
+Pa23 9. 0.5
+[233 129 45.2 100 199 45.3 99.5
+[234 23.3 0.9
+[235 1.9 0.3 0.5
+236 01 0.1
+Np237
+i238
+Py239
+IFission fragments 181 7.9
+Li6 3,920 6.5 3,920 3.4
+Bef 3,004 0.8 3,008 06.7
+Te 24,000 40 24,000 3.5
+Blanket element
+{233 8.6
+Total {uel 129 210
+1233 feed rate, kg/day 0.790 (} 370-0.189
+Regeneration ratio 0.82 0.71
+continued
+
+[z-¥1
+
+ez] HIIM QATIN SYOLOVIY SNOINTDOWOH
+
+£20
+TABLE 14-6 (continued)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+After 2 years After 5 years
+Inventory, Absorptions, Fissions, Inventory, Absorptions, Fissions,
+kg To To kg “% To
+Core elements
+Th232 1,572 18.9 1,572 18.3
+Pa233 9.0 0.5 8.9 0.4
+[233 204 44 9 98.5 216 43.7 95.6
+[234 44 0 1.7 89 3.1
+U=3s 5.4 0.8 1.5 17.7 2.3 4.4
+[23s 0.6 0.3 4.2 0.2
+Np27 0.1 0.1 0.5 0.1
+U=38 0.3
+Pu23®
+Fission fragments 1381 7.7 181 7.2
+Li 3,920 3.3 3,920 2.8
+Be? 3,008 0.6 3,008 0.6
+Ir19 24,000 3.4 24,000 3.3
+Blanket clement
+1J233 10.7 16.2
+Total fuel 220 250
+U233 feed rate, kg/day 0.188 0.181
+Regeneration ratio 0.72 0.73
+continued
+
+$89
+
+SHOLOVHY LIVS-NALIONW JO SLOAdSY HVHTOAN
+
+$1 "dVHD]
+Tare [16 (continued)
+
+After 10 years
+
+ 
+
+After 20 vears
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Inventory, Absorptions, Fissions, Inventory, Absorptions, Fissions,
+kg To To kg To Yo
+Core elements
+Th232 1,572 17.8 1,572 17.2
+Pa233 8.6 0.4 8.4 0.4
+17233 231 42.5 92.8 247 41.5 90.5
+1234 132 4.2 172 5.0
+235 32.5 3.7 7.1 47 4.8 9.0
+[236 12.5 0.6 24 1.1
+Np237 1.7 0.2 3.4 0.3
+[238 1.7 0.1 5.1 0.3
+Py 239 0.2 0.1 0.1 0.8 0.3 0.5
+Fission fragments 181 6.7 181 6.3
+I.a8 3,920 2.5 3,920 2.1
+Be? 3,008 0.6 3,008 0.6
+Fo 24,000 3.3 24,000 3.3
+Blanket element
+y23s 22.2 31.6
+Total fuel 282 295
+U233 feed rate, kg/day 0.171 0.168
+Regeneration ratio 0.73 0.73
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+[FI
+
+epgll HLL aTTEINI SHOLOVIN $10dNADONOI
+
+¢a9
+656 NUCLEAR ASPECTS OF MOLTEN-SALT REACTORS fcrar. 14
+
+and Np237 constant is begun at this time, the inventory of U?33 increases
+slowly to 247 kg and the regeneration ratio rises slightly to 0.73 during the
+next 19 years. This constitutes a substantial improvement over the per-
+formance with U?35,
+
+14-3. HomoGgENEOUS REACTORS FUELED WiTH PLUTONIUM
+
+It may be feasible to burn plutonium in molten fluoride-salt reactors.
+The solubility of PuF3 in mixtures of LiF and BeFs is considerably less
+than that of UF4, but is reported to be over 0.2 mole % [8], which may be
+sufficient for criticality even in the presence of fission fragments and non-
+fissionable isotopes of plutonium but probably limits severely the amount
+of ThF4 that can be added to the fuel salt. This limitation, coupled with
+the condition that Pu?3? is an inferior fuel in intermediate reactors, will
+result in a poor neutron economy in comparison with that of U233-fueled
+reactors. However, the advantages of handling plutonium in a fluid fuel
+system may make the plutonium-fueled molten-salt reactor more desirable
+than other possible plutonium-burning systems.
+
+14-3.1 Initial states. Critical concentration, mass, inventory, and regen-
+eration ratto. The results of calculations of a plutonium-fueled reactor
+having a core diameter of 8 ft and no thorium in the fuel salt are described
+below. The critical concentration was 0.013 mole % PuF3, which is an
+order of magnitude smaller than the solubility limits in the fluoride salts
+of interest. The critical mass was 13.7 kg and the critical inventory in a
+600-Mw system (339 ft3 of external fuel volume) was only 31.2 kg.
+
+The core was surrounded by the Li-Be-Th fluoride blanket mixture
+No. 2 (13% ThF4). Slightly more than 19% of all neutrons were captured
+in the thorium to give a regeneration ratio of 0.35. By employing smaller
+cores and larger investments in Pu?3® however, it should be possible to
+increase the regeneration ratio substantially.
+
+Neutron balance and miscellaneous details. Details of the neutron economy
+of a reactor fueled with plutonium are given in Table 14-7. Parasitic cap-
+tures in Pu??? are relatively high; n is 1.84, compared with a » of 2.9. The
+neutron spectrum is relatively soft; almost 60% of all fissions are caused
+by thermal neutrons and, as a result, absorptions in lithium are high.
+
+14-3.2 Intermediate states. On the basis of the average value of a of
+Pu239 it is estimated that Pu?40 will accumulate in the system until it cap-
+tures, at equilibrium, about half as many neutrons as Pu? While these
+captures are not wholly parasitic, inasmuch as the product, Pu?%!, is
+fissionable, the added competition for neutrons will necessitate an increase
+in the concentration of the Pu?3?. Likewise, the ingrowth of fission products
+14-4] HETEROGENEOUS GRAPHITE-MODERATED REACTORS 657
+
+will necessitate the addition of more Pu?3®. Further, the rare earths among
+the fission products may exert a common-ion influence on the plutonium
+and reduce its solubility. On the credit side, however, is the U233 produced
+in the blanket. If this is added to the core it may compensate for the in-
+growth of Pu? and reduce the Pu?" requirement to below the solubility
+limit, and it may be possible to operate indefinitely, as with the U235-
+fueled reactors.
+
+14-4. HETEROGENEOUS GRAPHITE-MODERATED REACTORS
+
+The use of a moderator in a heterogeneous lattice with molten-salt
+fuels is potentially advantageous. First, the approach to a thermal neutron
+spectrum improves the neutron yield, 5, attainable, especially with U233
+
+TaBLE 14-7
+INITIAL-STATE NUCLEAR CHARACTERISTICS OF A
+TypicaL MoLTEN FruoripE-SarT REACTOR
+Fueren wrtn Pu23?Y
+
+ 
+
+ 
+
+ 
+
+ 
+
+Core diameter: 8 ft.
+External fuel volume: 339 ft3.
+Total power: 600 Mw (heat).
+Load factor: 0.8.
+Critical inventory: 31.2 kg of Pu?3Y.
+Critical concentration: 0.013 mole 9 Pu239,
+Neutrons absorbed per
+neutrons absorbed in Pu???
+Neutron absorbers
+Pu?*9 (fissions) 0.630
+Pu? (n—y) 0.372
+Li% and Li7 in fuel salt 0.202
+Be? in fuel salt 0.022
+F199 1n fuel salt 0.086
+Core vessel 0.145
+Th in blanket salt - 0.352
+Li-Be-F in blanket salt 0.024
+Reactor vessel 0.004
+Leakage 0.003
+Neutron yield, 7 1.84
+Thermal fissions, % 59
+Regeneration ratio 0.352
+
+ 
+
+ 
+
+ 
+
+ 
+(58
+
+NUCLEAR ASPECTS
+
+TaBLE 14-8
+
+OF MOLTEN-SALT REACTORS
+
+[cHAP. 14
+
+CoMPARISON OF GRrAPHITE-MODERATED MOLTEN-SALT
+AND Liguip-MEeTAL-FUELED ‘REACTORS
+
+ 
+
+ 
+
+ 
+
+ 
+
+LMFR MSFR-1 MSEFR-2
+Total power, Mw (heat) 580 600 600
+Over-all radius, in. 75 75 72
+Critical mass, kg of U233 9.9 9.6 27.7
+Critical inventory, kg of U233* 467 77.8 213
+Regeneration ratio 1.107 0.83 1.07
+Core
+Radius, 1n. 33 33 34.8
+Graphite, vol 9 45 45 45
+Fuel fluid, vol 7 5d Hd Hd
+Fuel components, mole 9
+Bi ~100
+Lil 69 61
+Bel, 31 36.5
+Thi 2 . 5
+Unmoderated blanket
+Thickness, in. 6 6 13.2
+Composition, mole 9;
+Bi 90
+Th 10 (Th) | 10 (ThF4) 13 (ThFy)
+LiF 70 71
+Bell's 20 16
+[233 0.015 0.014
+Moderated blanket
+Thickness, in. 36 36 24
+Composition, vol 9%
+Graphite 66.6 66.6 100
+Blanket fluidt 33.4 33.4
+Neutron absorption ratio}
+Th in fuel fluid 0.566
+U233 in fuel fluid 0.918 0.925 1.000
+Other components of fuel fluid 0.081 0.324 0.106
+Th in blanket fluid 1.110 0.825 0.490
+1233 in blanket fluid 0.083 0.071
+Other compenents of blanket fluid 0.040 0.092 0.038
+Leakage 0.012 0.004 0.014
+Neutron yield, 3 2.24 2.24 2.21
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+*With bismuth, the external volume indicated in Ref. 10 was used. The molten-
+
+salt systems are calculated for 339 ft2 external volumes.
+tSame as unmoderated blanket fluid.
+tNeutrons absorbed per neutron absorbed in 17233,
+14-4] HETEROGENEOUS GRAPHITE-MODERATED REACTORS 659
+
+and Pu®?”. Second, in a heterogeneous system, the fuel is partially shielded
+from neutrons of intermediate energy, and a further improvement in ef-
+fective neutron yield, n, results. Further, the optimum systems may prove
+to have smaller volumes of fuel in the core than the corresponding fluorine-
+moderated, homogeneous reactors and, consequently, higher concentrations
+of fuel and thorium in the melt. This may substantially reduce parasitic
+losses to components of the carrier salt. On the other hand, these higher
+concentrations tend to increase the inventory in the circulating-fucl
+system external to the core. The same considerations apply to fission prod-
+ucts and to nonfissionable isotopes of uranium.
+
+Possible moderators for molten-salt reactors include beryllium, BeO),
+and graphite. The design and performance of the Aircraft Reactor Experi-
+ment, a beryllium-oxide moderated, sodium-zirconium fluoride salt, one-
+region, U*7-fueled burner reactor has been reported (see Chapter 16).
+Since beryllium and BeO and molten salts are not chemically compatible,
+it wax necessary to line the fuel circuit with Inconel. Tt is easily estimated
+that the presence of Inconel, or any other prospective containment metal
+in a heterogeneous thermal reactor would seriously impair the regeneration
+ratio of a converter-breeder. Consequently, beryllium and BeO are elimi-
+nated from consideration.
+
+Preliminary evidence indicates that uranium-bearing molten salts may
+be compatible with some grades of graphite and that the presence of the
+graphite will not carburize metallic portions of the fuel circuit seriously [9].
+It therefore becomes of interest to explore the capabilities of the graphite-
+moderated systems. The principal independent variables of interest are
+the core diameter, fuel channel diameter, lattice spacing, and thorium
+concentration,
+
+14—4.1 Initial states. Two cases of graphite-moderated molten-salt re-
+actors have been calculated for the same geometry and graphite-to-fluid
+volume ratio as those for the reference-design LMFR [10]. The results for
+these two cases, together with those for the quid bismuth case, are sum-
+marized in Table 14-8. Only the initial states are considered, and a metallie
+shell to separate core and blanket fluids has not been included. With no
+thorium in the core fluid, the molten-salt-fucled reactor has a significantly
+lower regeneration ratio than that of the liquid-metal-fueled reactor, with
+only a slightly lower critical mass, Adding 2.5 mole ¢ ThF, to the core
+fluid increases the initial regeneration ratio to about 1.07, with a critical
+mass and a corresponding total fuel inventory that are acceptably low.
+660 NUCLEAR ASPECTS OF MOLTEN-SALT REACTORS [cuap. 14
+
+REFERENCES
+
+1. R. L. Mackin, Neutron Activation Cross Sections with Sb-Be Neutrons,
+Phys. Rev. 107, 504-508 (1957).
+
+2. L. G. Avexaxper et al, Operating Instructions for the Univac Program
+Ocusol-1, A Modification of the Eyewash Program, USAEC Report CF-57-6-4,
+Oak Ridge National Laboratory, 1957.
+
+3. J. H. Avexanper and N. D. Given, 4 Machine Multigroup Calculation.
+The Eyewash Program for Univac, USAKC Report ORNIL-1925, Oak Ridge
+National Laboratory, 1955.
+
+4, J. T. Roserts and L. G. AvLexanprr, Cross Sections for the Ocusol-A
+Program, USAEC Report CF-57-6-5, Oak Ridge National Laboratory, 1957.
+
+5. B. W. Kinvon, Oak Ridge National Laboratory, 1958, personal communi-
+cation.
+
+6. W. D. Powers, Oak Ridge National Laboratory, 1958, personal communi-
+cation.
+
+7. L. G. ALExanpER and L. A. MANN, First Estimate of the Gamma Heating
+in the Core Vessel of a Molten Fluoride Converter, USAEC Report CF-57-12-77,
+Oak Ridge National Laboratory, 1957.
+
+8. C. I. Barton, Solubility and Stability of PuFg tn Fused Alkali Fluoride-
+Beryllium Fluoride, USAEC Report ORNL-2530, Oak Ridge National Labora-
+tory, 1958.
+
+9. F. Kurresz, Oak Ridge National Laboratory, 1958, personal communica-
+tion.
+
+10. Bascock anp Wincox Co., Liquid Metal Fuel Reactor, Technical Feast-
+bility Report, USAEC Report BAW-2(Del.), 1955.

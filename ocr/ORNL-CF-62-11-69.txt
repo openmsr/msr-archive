@@ -1,0 +1,827 @@
+UCN-2383
+© (3 11-60)
+
+OAK RIDGE NATIONAL LABORATORY
+Operated by
+
+ 
+
+UNION CARBIDE NUCLEAR COMPANY
+Division of Union Carbide Corporation 0 R N |
+= CENTRAL FILES NUMBER
+Oak Ridge, Tennessee | GQ 0 | )
+
+ 
+
+ 
+
+ 
+
+ 
+
+For Internal Use Only
+DATE: November 12, 1962 | COPY NO. 2
+
+SUBJECT: Preliminary Equations to Describe Iodine and Xenon
+Behavior in the MSRE
+
+TO: Distribution
+FROM: J . R. Engel
+ABSTRACT
+. | Equations are presented to describe the behavior of iodine and
+
+xenon in the primary loop of the MSRE at steady state. These equa-
+tions may be programmed for machine solution to obtain the spatial
+
+‘ distribution of xenon in the reactor from which the xenon poison frac-
+tion can be estimated. An alternate use of the equations is to evalu-
+ate physical parameters from observations made on the operating reactor.
+
+An attempt has been made to include all of the important, or poten-
+tially important, behavior mechanisms in the equations. Comments and
+suggestions are solicited regarding the mechanisms treated, other pos-
+sible mechanisms, and the mathematical representations thereof.
+
+NOTICE
+
+This document contains information of a preliminary nature
+
+and was prepared primarily for internal use at the Oak Ridge
+
+National Laboratory. It is subject to revision or correction
+
+and therefore does not represent a final report. The information
+
+is not to be abstracted, reprinted or otherwise given public
+
+- dissemination without the approval of the ORNL patent branch,
+Legal and Information Control Department.
+
+ 
+INTRODUCTION
+
+Xenon poisoning is a problem of significant interest in the MSRE.
+A reasonably accurate evaluation of the xenon poison fraction requires
+a detailed description of the xenon behavior in the entire core loop.
+Since most of the Xe is formed by decay of iodine, an equally detailed
+description of the iodine behavior is also required. This memo presents
+a set of steady~state equations which is intended to fulfill these re-
+quirements. A number of effects which may or may not be important in
+the reactor are included while some, for which there is good evidence
+that they are unimportant, are omitted. The equations describe the fis-
+sion product behavior in terms of a number of physical properties of the
+system, the fuel and the fission products, even though it may not be
+possible at this time to assign accurate values to all of the properties.
+
+This set of equations may be used in two ways. First, if values
+are assigned to all of the physical parameters, the equations can pro-
+vide an estimate of the xenon distribution and, hence, the poison frac-
+tion in the reactor. Second, the equations may be used with the oper-
+ating reactor to evaluate those physical parameters which cannot otherwise
+be evaluated. For the latter case it is hoped that the reactor can be
+operated under a sufficiently wide variety of conditions to permit simul-
+taneous evaluation of a number of the parameters. The use of time-dependent
+forms of the equations and observation of xenon transients may be used to
+aid these evaluations. | |
+
+The purpose of this memo is to solicit comments and suggestions re-
+garding the mechanisms and their mathematical representations. To this
+end the text describes all the assumptions and approximations that were
+used in developing the equations as well as the equations themselves. It
+is expected that revisions to the equations will be required after all
+comments are received. The final equations will then be programmed for
+solution on the IBM-7090 computer to predict the xenon poison fraction.
+Ultimately, a program will be prepared to evaluate physical parameters
+from information obtained from the operating reactor.
+
+It is anticipated that the equations which are initially programmed
+for computer solution will be simplified approximations of the ones pre-
+
+sented here. Part of this simplification can be achieved by ignoring
+behavior mechanisms of questionable importance. However, as a first step
+it seems desirable to include all mechanisms which might be important.
+Then, if the simple approximation proves to be inadequate for evaluating
+the reactor performance, a more refined analysis can be made omitting
+
+the simplifications.
+
+SUMMARY OF BEHAVIOR MECHANISMS
+
+Several mechanisms are considered for the appearance and disappear-
+ance of Xe and I in various parts of the reactor system. These mecha-
+
+nisms may be summarized as follows:
+
+Appearance of Xe in circulating fuel
+
+1. Direct production by fission of uranium in the circulating fuel
+2. Decay of I in the circulating fuel
+3. Desorption from metal walls
+
+Disappearance of Xe from circulating fuel
+1. Radioactive decay
+2. Neutron absorption
+3. Stripping in the fuel-pump bowl
+yt. Sorption in the graphite
+Appearance of Xe in graphite
+1. Direct production by fission of uranium in fuel soaked
+into the graphite
+2. Decay of I in the graphite
+3. Sorption from the circulating fuel
+
+Disappearance of Xe from graphite
+
+1. Radioactive decay
+2. Neutron absorption
+
+Appearance of Xe on metal walls
+
+1. Decay of I sorbed on the walls
+
+Disappearance of Xe from metal walls
+l. Radioactive decay
+2. Desorption into the circulating fuel
+Appearance of I in circulating fuel
+1. Direct production by fission of uranium in the
+
+circulating fuel
+
+Disappearance of 1 from circulating fuel
+l. Radioactive decay
+2. Sorption in the graphite
+3. Sorption on metal walls
+
+Appearance of I in graphite
+1. Direct production by fission of uranium in fuel soaked
+into the graphite
+2. Sorption from the circulating fuel
+
+Disappearance of I in graphite
+
+1. Radioactive decay
+
+Appearance of I on metal walls
+1. Sorption from the circulating fuel
+
+Disappearance of I from metal walls
+
+l. Radioactive decay
+
+It may be noted that all mechanisms are not applied equally to both
+species. In the case of the sorption processes, only the net currents
+are represented and the reverse processes of those given are taken into
+account in the concentration gradients. Other mechanisms, neutron ab-
+sorption in I and I-stripping, are omitted because they are expected to
+
+be negligibly small.
+
+DESCRIPTION OF EQUATIONS
+
+The equations describing the behavior of iodine and xenon in the
+reactor were derived from material balance considerations. In develop-
+ing these equations, the reactor system was divided into two parts: a
+core in which the detailed spatial distribution of xenon in both the
+fuel and graphite was of primary interest and an external loop where
+the spatial distribution was less important. With this goal in mind,
+
+the steady-state equations for the core were written in differential
+
+ 
+form while simplified, integrated forms of the equations were used for
+
+the external loop.
+
+Core Equations
+
+The MSRE core consists of fuel salt flowing through channels and
+an array of graphite stringers; both of these materials were treated
+separately. The flow pattern of the fuel makes a further division in
+the mathematical treatment necessary. Although the established fluid
+flow in most of the core channels is laminar, there are regions of high
+turbulence at the channel inlets. In addition, turbulent flow may per-
+sist over the entire length of some of the channels. Two sets of fuel
+equations were developed to cover the different flow patterns. In solving
+the xenon distribution problem, the fuel channels will be treated in two
+parts, using the turbulent-flow equations for the lower parts and the
+laminar-flow equations for the remainder. Although the transition to
+laminar flow does not occur at a sharp boundary, it is expected that a
+reasonable approximation to the true condition can be obtained by judi-
+
+cious selection of a fixed transition elevation.
+
+Fuel in laminar Flow
+
+Under laminar £low conditions it is necessary to consider variations
+in concentration in both the radial and axial directions within individual
+channels. To simplify the treatment the channels are regarded as circular
+with a diameter equal to the hydraulic diameter of the MSRE channels and
+the neutron flux is assumed constant in the transverse direction in any
+given channel. Material balances may then be written for the volume ele-
+
+ment, 2nr'dr'dz. For xenon
+
+£ L 2
+
+Y oe De #(r,z)r'dr'dz - Ae N  (r',z)r'ar'dz + AN (r!,z)r dr dz
+£ £ . ay a £
+
++ Dg v N  (r ,2) r'dr'dz - Co d(r,z) N  (r';z)r'dr dz
+
+0 NY (r'z)
+oz
+
+ 
+
+- v(r,r') r'dr'dz = 0 . (1)
+
+ 
+
+1see Appendix for definitions of symbols.
+
+ 
+The various terms represent differential changes in the xenon population
+in the volume element due to the following mechanisms, in the order of
+the terms: (1) direct production from fission; (2) loss by radioactive
+decay; (3) production by decay of iodine; (4) net diffusion from the vol=-
+ume element; (5) burnup; and (6) net transport by the flowing fluid.
+The diffusion term, as written, includes diffusion in both the radial
+
+and axial directions. In the actual reactor it is likely that axial d4if-
+fusion will be much less important than axial transport by the flowing
+
+stream. If this is assumed the diffusion term may be simplified as follows:
+
+ 
+
+ 
+
+£ , 4 £2 , |
+
+D! NY (rz) r'dr'dz = D}_ hel 2) + 2, Ther) | r'dr'dz
+(2)
+
+The microscopic velocity, v(r'), varies about a mean, or macro-
+scopic, velocity for the channel. In addition, the macroscopic velocity
+varies with the radial position of the channel in the reactor. Axial
+variations in velocity, both macroscopic and microscopic, are neglected.
+
+An equation similar to (1) can be written for iodine except that
+fewer terms are required because fewer mechanisms are involved in the
+
+iodine behavior. Thus:
+2
+f I I
+
+Ni(rt,z)
+- v(r,r') Sz r'dr'dz = 0 . (3)
+
+All of the comments on the xenon equation, including an expression sim-
+ilar to (2) apply to the iodine equation.
+
+Fuel in Turbulent Flow
+
+The microscopic radial variations in concentration and velocity
+disappear in those channels, or parts of channels, where the fluid flow
+is turbulent. As a result the diffusion terms do not appear in the mate-
+rial balance equations for this condition. However, a new term must be
+included to describe the transport of xenon (or iodine) through the fluid
+film, at the channel wall, to the graphite. The volume element for this
+
+condition is Raz. Then, for xenon
+2
+re J. 4r, 2) dz - Ae nN (z) dz + A L N(z) dz =- xX h_ *
+
+L 2 x0
+" - nyge',2) | dz - 0; o #(r, z) - v(r) Tee) dz = 0 . (4)
+
+The quantity, N’ (R52), is the concentration of xenon in the lig-
+uid on the graphite Side of the fluid film and N (2) is the bulk con-
+centration in the liquid. The difference I these quantities is
+the driving force for mass transfer across the film.
+
+The equation for iodine which corresponds to (4) is
+
+,
+Y L #(r,2) dz - A; Np(z) - 2, hy |nk(2) - N®R'2)| az
+
+ant 1(z)
+- v(x) = dz = 0 . (5)
+
+Graphite
+
+In order to simplify the mathematics somewhat, the graphite stringers
+are regarded as cylinders with an equivalent radius, R", to be assigned on
+the basis of the physical dimensions. This treatment is equivalent to re-
+garding the reactor as an array of graphite and fuel cylinders in a medium
+which has infinite resistance to mass transfer in the axial direction and
+zero resistance in the radial direction. The material balance equations
+for the graphite are written on the assumption that, if fuel soaks into
+the graphite (providing a direct source of fission products), it will be
+uniformly distributed in all respects. As with the fuel channels, a uni-
+form transverse neutron flux is assumed for the individual stringers.
+
+For a graphite volume element, 2x "dr'dz, the material balance for
+
+xenon gives
+
+Y oo x. @(r,z) r'"ar"daz - A N® (r",z)r"dr"dz + A N2(r",2) r'dr"dz
+
+xe © xe
+. 3E_(r"z)
+r'dr'dz + D° r" ar" dz
+xe 32°
+
+ 
+
+ 
+
+ 
+
+OF Mer) oy AE (e)
+dr" r or"
+
+- or d(r,z) No (r",2) r" dr" dz = 0 . (6)
+
++ pF
+Xe
+This equation is similar to (1) except that the transport term does not
+appear because the graphite is stationary. The diffusion in graphite is
+represented as two separate terms and different symbols are used for the
+diffusion coefficient in the terms; it has been suggested that the values
+of the diffusion coefficient may be significantly different for the two
+directions.
+
+The material balance for iodine in the graphite volume element gives
+
+g
+1" 1! " 1" "n
+vk #(r,z) r'"ar"dz - A N(x ,2) r'dr"dz
+
+ 
+
+ 
+
+ 
+
+3 NE(x", 2) 0 N(x" z )
++ of | I + x I I | zara
+dr" Tr dr"
+Cd NE (" 2)
++ DE” — rarer (7)
+z
+
+As before, the comments on the xenon equation also apply for iodine.
+
+Boundary Conditions
+
+A number of boundary conditions are required to fill out the set
+of equations for the core. Some of these are intuitively obvious while
+others require assumptions about the behavior mechanisms. Some boundary
+
+conditions also depend on the nature of the flow in the fuel channels.
+
+Fuel ~-Graphite Interface -- Two boundary conditions can be specified at
+the fuel-graphite interface. The first of these requires that the net
+currents in the two media at the interface be equal; the form of this
+expression depends on the type of fluid flow. For xenon, where the
+
+channel flow is laminar
+
+ANC (R",2) 2 aN” (R',z)
+
+gr =
+D or" = Die or’ | (8)
+
+Xe
+
+ 
+
+ 
+
+For iodine at the same condition
+
+INE(R", 2) AiR, 2)
+Dé” I _ D I i (9)
+
+ 
+
+2A. Taboada, personal communication
+
+ 
+10
+
+For turbulent flow in the channels
+
+ 
+
+Ne (R", z)
+DS =m = h_, (2) - NE (8,2) | (10)
+and
+
+NE (R",z)
+D2" — = h ve) - NZ (R,z) | : (11)
+
+Expressions may also be written to relate the absolute concentra-
+tions in the two media at the interface. For a liquid metal in contact
+with graphite at high temperature, it has been found experimentally-
+that xenon behaves as if it were an ideal gas in contact with the liq-
+uid when the void volume of the graphite is used as the gas phase. If
+the same type of behavior is assumed for molten salt systems, the con-
+centrations in the two media can be related by the Henry's Law constant, H,
+
+for the gas. Thus, for xenon
+
+ 
+
+N® (R",z) RT
+nt (r',z) = XE ‘ : (12)
++e Hee §
+
+Tt seems reasonable to assign the same type of behavior to iodine by
+
+*
+using an "effective" Henry's law constant, H . Then
+
+Ne(R",z) RT
+NJ(R',2) = x - ?) : (13)
+
+Hy E
+
+ 
+
+Center of Fuel Channels =-- For laminar flow in the fuel channels, an
+
+ 
+
+additional boundary condition can be written for the center of the chan-
+
+nel. That is, for xenon
+
+J nN (r'=0,2)
+
+Sr’ = 0 , (14)
+
+ 
+
+ 
+
+3p. J. Salzano and A. M. Eshaya, "Sorption of Xenon in High Density
+Graphite at High Temperatures," Nuclear Sci. and Eng., 12, 1-3, (Jan. 1962).
+
+ 
+11
+and for iodine
+
+0 Ng (r'=0,z)
+or =
+
+ 
+
+0 . Cw)
+
+Similar expressions could be written for the turbulent-flow condition
+but they are not required because the concentration is assumed constant
+across the channel (except in the boundary layer).
+
+Center of Graphite Stringers -- Equations similar to (14%) and (15)
+
+can be written for the center of the graphite stringers. For xenon
+
+ 
+
+ 
+
+d N® (r"=0,z)
+Ee = 0 , (16)
+and for iodine
+0 N2(r"=0,2) oo
+= 0 . | (17)
+
+or"
+
+Core Inlet -- The concentration of xenon (or iodine) at the chan-
+
+nel inlet is assumed constant for all channels. For xenon
+
+2 L |
+No (r') z=0) = N_ ) (18)
+and for iodine
+NZ (r*,2=0) = Nn Q@Q . | (19)
+
+External-loop Equations
+
+The distribution of xenon (or iodine) in the reactor is described
+by the core equations presented above for a given core inlet concentra-
+tion. However, the concentration at the core inlet is related to that
+at the outlet through the processes which occur in the external loop.
+Since the detailed fission-product distribution in the external loop
+1s not of primary interest, the equations can be greatly simplified by
+a set of assumptions which have little effect on the relation between
+the concentrations at the outlet and inlet of the core. First it is
+12
+
+assumed that the xenon (or iodine) concentration in the fuel does not
+change drastically in the external loop. This leads to the treatment
+of all of the rate processes in the external loop as constants which
+are governed by the mean concentration at the core outlet. Then the
+concentration of a species at the core inlet can be expressed as the
+corresponding concentration at the core outlet plus or minus the var-
+ious small changes that occur in the external loop.
+
+The concentration change due to radioactive decay of an isotope
+in an element of fuel as it traverses the external loop is proportional
+to 1 - eM, However, since the half-lives of xenon and iodine are long
+compared to the loop transit time, this term can be represented ade-
+quately by At, using the appropriate decay constant for each species.
+
+The retention of iodine and xenon on surfaces in the external loop
+is included in this treatment even though the significance of this mech-
+anism has not been established for the MSRE.* If iodine, in whatever
+form it exists, is strongly held on the metal surfaces the transport to
+the surface will be governed by the concentration of iodine in the salt.
+It is assumed that xenon (formed by the decay of iodine) will tend to
+escape from the surface. This escape tendency can be expressed in terms
+of a mean residence time or an "escape" constant, A which is similar
+to a decay constant. An alternative method might be to use the xenon
+concentration difference between the wall and the fuel as a driving force
+for mass transfer. The former method is used here because it leads to a
+simpler expression.
+
+Xenon stripping in the pump bowl is included with a factor to de-
+
+scribe the efficiency of the stripper configuration.
+
+ 
+
+ 
+
+: Q Q
+£ £ 2 S S
+Need = N,Q - Nye Meio 2; H ) |
+Q + 1 rT ge
+*
+h_ A A
+4 vw xe |
++ N At + —— (20)
+1@ I®Y Qn (A + A" ) ’
+xe xe
+
+ 
+
+“Retention of iodine and xenon in metal scales was an important factor
+in the HRT. The predicted absence of such scales in the MSRE may eliminate
+this mechanism.
+
+cea
+13
+
+and for iodine
+
+£ 2 2 By Ay
+MO = HO - 1 Mtg St | (21)
+The change terms in the xenon equation represent, in order of thelr ap-
+pearance: loss by radioactive decay, loss due to stripping in the pump
+bowl, production by iodine decay in the fuel and gain by xenon escape
+from surfaces. The terms in the iodine equation represent loss by radio-
+
+active decay and loss to metal surfaces.
+
+Supplementary Equations
+
+The mass transfer coefficients used in the material balance equa-
+tions are calculated from the fluid properties and the flow parameters.
+As a typical example, the coefficient for xenon is
+
+o pf (0-67
+h = 0.023 (Re) 02 v ( mr . (22)
+xe ho
+
+The external-loop equations describe the core inlet concentrations
+in terms of the core outlet concentrations which must, in turn, be ob-
+
+tained from the individusal-channel results. For xenon
+
+*
+
+R R!
+Ab 5 ! ?
+J. 2(x) J N) (r',L) r'ar' rar | Cn
+
+ 
+
+ 
+
+L 2
+Nee @=
+
+R'2 R
+/ f(r) r ar
+0
+
+geb
+
+ 
+OS 2 +H =H bP =» OO Pp
+
+H
+
+14
+APPENDIX
+Definitions of Symbols
+
+area
+diffusivity
+
+fuel fraction in core
+
+mass transfer coefficient
+Henry's law constant
+
+core length
+
+concentration
+
+volumetric flow rate
+
+radial position in core
+
+radial position in fuel channel
+radial position in graphite stringer
+core radius
+
+fuel channel radius
+
+graphite stringer radius
+universal gas constant
+
+Reynolds number
+
+absolute temperature
+
+time
+
+fluid mean velocity
+
+fission yield
+
+axial position
+
+macroscopic cross section
+
+microscopic cross section
+
+(2s
+oy
+
+>, > =
+
+Subscripts
+
+Xe
+
+He
+W
+
+@Q
+
+superscripts
+
+g
+L
+
+15
+
+Definitions of Symbols - contd
+
+neutron flux
+
+decay constant
+
+"escape" constant
+
+accessible void fraction of graphite
+contactor efficiency in pump bowl
+viscosity of fuel
+
+fuel density
+
+of xenon
+
+of iodine
+
+for fission
+
+of stripped liquid (through pump bowl)
+of total liquid (in loop)
+
+of helium sweep gas (in pump bowl)
+
+of metal wall outside active core
+
+from position (@) to position (T)(core outlet
+to core inlet)
+
+in graphite
+
+in liquid (fuel)
+
+for neutron absorption
+in radial direction
+
+in axial direction
+
+at core inlet
+
+at core outlet
+sy
+
+a)
+
+ 
+()
+
+® ® ® * * * eo
+
+\O ON OU FWD ~~
+
+10.
+
+oF
+
+13.
+1h.
+15.
+16.
+17.
+18.
+19.
+20.
+21.
+22,
+23.
+
+24-25.
+26.
+
+27-29.
+30.
+
+17
+
+Distribution
+
+MSRP Director's Office,
+Rm. 219, 9204-1
+
+S. E. Beall
+
+E. S. Bettis
+
+F. P. Blankenship
+
+W. D. Burch
+
+J. L. Crowley
+
+J. R. Engel
+
+W. R. Grimes
+
+R. H. Guymon
+
+P. N. Haubenreich
+P. R. Kasten
+
+R. B. Lindauer
+
+H. G. MacPherson
+W. B. McDonald
+
+H. F. McDuffie
+
+R. L. Moore
+
+‘A. M. Perry
+
+B. E. Prince
+
+D. Scott
+
+M. J. Skinner
+
+I. Spiewak
+
+A. Taboada
+
+J. R. Tallackson
+
+Central Research Library
+Document Reference Section
+laboratory Records
+
+IRD-RC
+
+ 
+i
+
+| J

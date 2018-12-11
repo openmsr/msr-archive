@@ -1,0 +1,6763 @@
+ 
+
+ 
+
+-
+
+a-l-a
+
+9) an a nls Ba } ne : { ; ¥
+
+f
+
+3
+
+ad
+J
+
+ 
+
+ 
+
+‘OAK “RIDGE NATIONAL LABORATORY
+cn ~ operated by eT
+UNION CARBIDE CORPORATION » NUCLEAR DIVISION
+7 for the : ee
+u. S. ATOMIC. ENERGY COMMISSION |
+
+(ORNL- T™M- 3464
+
+ EECRveD ov oe oy 3g
+
+ 
+
+© XENON BEHAVIOR IN THE MOLTEN SALT REACTOR EXPERIMENT
+
+J. R. Engel ~ R. C. Steffy
+
+ 
+
+ 
+
+NOTICE This document contains information of a preliminary noture - an ) :
+“and was prepared primarily for internal use at the Oak Ridge National
+
+Laboratory. It iis subject to revision or correction ond therefore does :
+not represent c a final report.
+
+DISTRIBUTION OF TH DOCUMENT IS UNLIMITED
+
+  
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+This report was prepared as an account of work sponsored by the United
+States Government. Neither the ‘United States nor the United States Atomic
+Energy Commission, nor any of their employees, nor any of their contractors,
+subcontractors, or their employees, makes any warranty, express or implied, or
+assumes any legal liability or responsibility for the accuracy, completeness or
+usefulness of any information, apparatus, product or process disclosed, or
+represents that its use would not infringe. privately owned rights.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+«)
+
+Contract No. W-7405-eng-26
+
+REACTOR DIVISION
+
+XENON BEHAVIOR IN THE MOLTEN SALT REACTOR EXPERIMENT
+
+J. R. Engel R. C. Steffy
+
+— NOTICE ————
+This report was prepared as an ‘account of work
+sponsored by the United States Government. Neither |.
+- | the United States nor the United States Atomic Energy
+: | Commission, nor. any: of their employees, nor any of.
+‘1 their contractors, subcontractors, or their employees,
+makes any warranty, express of implied, or assumes any
+fegal liability or responsibility for the .accuracy, com-
+pleteness or usefulness of any information, apparatus, |
+:| ‘product or process disclosed, or represents that its use
+“would not infringe privately owned rights, :
+
+rw
+
+ 
+
+ 
+
+ 
+
+o)
+
+OCTOBER 1971
+
+(OAK RIDGE NATIONAL LABORATORY
+Oak ‘Ridge, Tennessee
+‘operated by
+UNION CARBIDE CORPORATION
+~~ FOR THE
+U.S. ATOMIC ENERGY COMMISSION
+
+ 
+
+ 
+
+ 
+
+C |
+
+© pISTRIBUTION OF THIS DOCUM
+
+ORNL-TM-3464
+
+’
+
+ENT IS UN
+
+ITED
+ 
+
+ 
+
+CO
+
+—
+ 
+
+iii
+
+v TABLE OF CONTENTS
+Page
+ABSTRACT & & 4 oe o « so o o o os os os o o o o oo ¢'o so o oo 1
+INTRODUCTION ¢ 4 « o o « o os o o o so o os o o o o o o o os oo 2
+PROCESSES AFFECTING *3°XE IN MOLTEN-SALT REACTORS . + . . . . 3
+PREDICTIONS BEFORE MSRE OPERATION © & 4 « o o o o o o « « o o » 6
+OBSERVATIONS DURING MSRE OPERATION + « « « « « o o « o o + o & 7
+DEVELOPMENT OF MATHEMATICAL MODELS OF MSRE '®3XE AND
+COVER-GAS BEHAVIOR + + + 4 « o « « os o oo a 5s s « o o + « 30
+ANALYSIS OF MSRE COVER GAS AND *®°XE BEHAVIOR . . . . . . . . 51
+DISCUSSION OF RESULTS & « « 4 o « o « « os « o o a os « o oo + 91
+CONCLUSIONS + + « oo a o o oo so os o a ss ss oo so sooo 95
+3 ACKNOWLEDGMENT + + + vv oo oo o o o 0 so so eo a so oo oe. 97
+REFERENCES « « « + oo os o o o « oo oo ss so os oo ooo 98
+% APPENDIX + « o oo eo 0 so oo oo so oe ooo ee au. 101
+DISTRIBUTION
+
+Eng
+wr!
+
+C
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+«)
+
+1a
+
+od
+
+C
+
+XENON BEHAVIOR IN THE MOLTEN SALT REACTOR EXPERIMENT
+
+*
+J. R. Engel R. C. Steffy
+
+ABSTRACT
+
+Since molten salt reactors are based on a circulating fluid fuel, the
+possibility exists for continuous removal of *®°Xe (by gas-liquid con-
+tacting) as a means of improving their breeding performance. A reasonably
+detailed understanding of the xenon behavior in such reactors is essential
+for accurate prediction of the removal capability. The xenon poisoning
+in the Molten Salt Reactor Experiment (MSRE) was extensively studied in
+an effort to develop an understanding of the behavior mechanisms.
+
+Xenon poisoning calculations made prior to ‘the operation of the MSRE
+were based on a mathematical model that neglected any effects of cover-gas
+solubility in the salt. These calculations reproduced reasonably well the
+observed steady-state poisoning as a function of circulating void fraction
+when an insoluble cover gas, argon, was used but they did not adequately
+describe the transient behavior. In addition they did not predict the very |
+low xenon poisoning that was observed at low void fractions with a more
+soluble cover gas, helium.
+
+A more detailed mathematical model which allowed inclusion of cover-
+gas solubility effects was developed in an effort to better describe the
+observed results. This model successfully described the different poison-
+ing effects with helium and argon at low void fractions but it required
+the use of mass transport and xenon stripping parameters that differed sig-
+nificantly from the predicted values. These calculations also failed to
+
+~ describe adequately the transient observations,
+
+A comparison of calculated and observed effects suggests that 1)
+
+~eirculating bubbles may strongly influence the transport of xenon from the
+
+fluid to graphite, and 2) both the gas transport and stripping processes
+may be affected by operation at power. As a consequence, additional in-
+vestigations would be desirable to further elucidate the behavior of noble
+gases in molten-salt reactor systems, :
+
+ 
+
+*Currently associated with Tennessee Valley Authority, Chattanooga,
+Tennessee.
+
+ 
+ 
+
+INTRODUCTION
+
+The Molten Salt Reactor Experiment (MSRE) was in nuclear operation
+from June 1, 1965 to December 12, 1969. During that time the reactor
+generated 13,172 equivalent fullpower hours of energy at power levels up
+to 7.4 Mw. The reactor system and the overall operating experience have
+been extensively described in the open literature. (Refs. 1 - 4). This
+report deals with a specific aspect of that experience, the behavior of
+xenon-135. :
+
+Because the fuel is a circulating fluid, the mobility of all the fuel
+constituents, including the fission products, is an important consideration
+in the overall performance of molten-salt systems. This mobility is
+especially important for the noble-gas fission products because they,
+typically, have very low solubilities in molten salts and because some,
+notably *®®Xe, are significant neutron absorbers. Thus, the potential for
+continuous and rapid removal of the gaseous fission products offers the
+possibility of reducing both the circulating fission-product inventory and
+the neutron losses to '**Xe.” Although neither of these considerations was
+of major significance in the MSRE, the behavior of '®°Xe was studied ex-
+tensively in an effort to develop an understanding of the mechanisms in-
+volved. Such an understanding is essential to the reliable prediction of
+xenon behavior in other MSR designs. }
+
+The purpose of this report is to provide a basis for discussion and
+then to describe the xenon behavior observed in the MSRE. Since signifi-
+cant differences were found when different cover gases (helium or argon)
+were used for the salt, this aspect of the behavior will receive consider-
+able attention, We then develop a mathematical model and discuss the re-
+sults of parametric studies whose objective was a consistent description
+of all the observed phenomena. Finally some conclusions are drawn about
+the apparent xenon behavior and suggestions are offered for experimental
+
+investigations that may further elucidate this behavior.
+
+ 
+
+* |
+Calculations for large molten salt reactors indicate that a '®°Xe
+poison fraction around 0.5% is desirable for good breeding performance.
+
+d
+ 
+
+«)
+
+PROCESSES AFFECTING **°Xe IN MOLTEN-SALT REACTORS
+
+Although many of the xenon behavior processes are the same in a molten
+salt reactor as in any other reactor, the fact that the fuel is not con-
+fined within discrete, impervious elements in the core introduces some
+significant differences. The basic processes for production and removal
+of '°°Xe are outlined in Fig. 1.
+
+The majority of the '®*Xe that is produced results from the decay of
+the 6.7-hr half-life precursor '*®I, At least some of this iodine is pro-
+duced by the decay of '®°Te whose behavior in molten-salt systems is not
+completely defined.® However, because of its short (29 sec) half-life, Te
+has very little effect on the 135 chain. Thus, since iodine has essentially
+no tendency to leave the salt,® the '>®Xe that is produced directly from
+'®°1 is formed in the circulating salt, at a uniform rate around the entire
+fuel loop. As indicated on Fig. 1, only about 70% of the '°°I decays lead
+directly to '®°Xe and the remainder produce the metastable form, *°°"Xe.
+Although the occurrence of this isomer is unimportant in reactors where all
+the fission products are confined within fuel elements, it has potential
+significance in fluid fuel systems, particularly if there are other xenon
+behavior mechanisms with time constants that are short relative to the
+16-min, half-life of the isomer. (Fig. 1 indicates one such mechanism:
+transfer from the fuel salt into the offgas system. Not shown, but also
+possible, is transport into the graphite pores.) The significance of the
+16-minute isomer is also somewhat dependent on its neutron absorption
+cross section. Although there are no data available on the cross section
+of '°°Ixe (Ref. 7), it is presumed to be negligible in comparison to that
+of '*°Xe, Be
+
+The *°3Xe that is not produced by the iodine decay scheme is produced
+directly from fission. Literature reports of the fraction of the total
+133%e yield that is produced directly in *2°U fission range from 3.8%.
+(Ref. 8) to 18% (Ref. 9). This fraction would be expected to have almost
+no effect on steady-state xenon poisoning but it could significantly ‘af-
+
+fect the transient behavior following major changes in power level.
+ 
+
+ 
+
+ 
+
+tor.
+
+ 
+
+Fig. 1.
+
+ORNL-DWG 71-8031
+
+OFFGAS
+
+| GRAPHITE
+| PORES
+
+Processes Affecting Xenon Poisoning in a Molten-Salt Reac-
+
+(%
+ 
+
+)
+
+«)
+
+C
+
+ 
+
+Once the °°
+
+Xe has been formed, it is subject to the same decay and
+neutron absorption processes as in any other reactor. Some difference is
+introduced by the fact that xenon in the circulating fluid is exposed to a
+different average neutron flux than the xenon in the graphite. However, a
+more important complication is the additional path for xenon removal by
+stripping into the. offgas system. The reduction in xenon poisoning that
+can be achieved depends upon the extent to which stripping can be made to
+compete with the other loss terms. In principle, xenon can either be
+stripped directly from the circulating salt into the offgas or it can
+transfer to circulating bubbles and be removed by a bubble exchange pro-
+cess. Thus, the details of these two processes, as well as the rate of
+xenon mass transfer between bubbles and liquid are important in describing
+the overall xenon behavior. In addition, any xenon that is transported to
+the unclad graphite must be dealt with separately because the xenon inven-
+tory in the graphite is not available for stripping. This process depends
+upon the mass transfer from the fluid to the graphite surface and on the
+
+porosity (storage volume) and permeability (accessibility of that volume)
+
+of the graphite itself.
+
+Another mechanism of potential significance is an abnormal out-of-
+core holdup of xenon, either in gas pockets or on solid surfaces. Opera-
+tion of the MSRE showed that there were no significant gas pockets in the
+loop except at the reactor access nozzle and the gas exchange with that
+region appeared to be too slow to exert much influence on xenon. Holdup
+
+in corrosion-product scales was shown to be significant in an aqueous sys-
+
+ tem'® because of iodine adsorption on the scale. However, there was no
+
+corrosion-product scale in the MSRE and no tendency for iodine to leave
+the salt. Xenon sorption on surface active particles that are held out
+of circulation (possibly in foam in the pump bowl) may also be possible
+but will not be considered in this analysis.
+ 
+
+ 
+
+ 
+
+PREDICTIONS BEFORE MSRE OPERATION
+
+Accurate description of the xenon behavior in the MSRE was an early
+objective of the project so a considerable part of the reactor development
+effort was directed toward this goal. The fuel circulating pump was ex-
+tensively tested in both water?! and molten-salt'? loops to evaluate its
+hydraulic characteristics, gas stripping and cover~gas entrainment.
+Additional gas stripping tests were performed on a mockup.'® A full scale
+water mockup of the reactor vessel was used to study core flow patterns,’®
+partly as an aid to evaluating mass transfer processes in the loop. The
+
+MSRE graphite was subjected to a variety of tests'®»'¢
+
+some of which pro-
+vided data on porosity and permeability which were directly applicable to
+the xenon problem. To support these separate studies, an experiment was
+performed with the MSRE, prior to nuclear operation, in which krypton was
+"injected into the system and then purged out.'’ The objective of all this
+work was to provide sufficient data on the various mechanisms so that rea-
+" sonable predictions could be made of the xenon poisoning.
+
+A mathematical model was constructed to use the available information
+to predict steady-state '®®Xe poisoning in the MSRE.!7 Since the development
+"tests had indicated that there would be a significant fraction of undis-
+solved cover gas (1 to 2 vol. %) circulating with the salt, this model in-
+cluded the mass transfer of xenon between salt and bubbles and the effects
+of bubble stripping. However, early operation of the MSRE with molten
+salt indicated that there would be essentially no circulating bubbles
+
+® Consequently, xenon poisoning cal-
+
+under normal operating conditions.’
+culations were made for a variety of circulating void fractions, including
+zero.
+
+In addition to the treatment of circulating voids, several other
+approximations and assumptions made for this model are important. The
+solubility of the reactor cover gas (helium) in molten salt was neglected.
+With this assumption it was then quite reasonable to treat the entire fuel
+loop as a single well-stirred tank. The production of '®3Xe was assumed
+to be uniform around the loop and was confined to the salt phase. That is,
+
+formation by decay of 3°DXe was neglected and the direct fission yield
+
+(»
+ 
+
+C
+
+“)
+
+)
+
+C
+
+was combined with the iodine decay term. Since only steady-state condi-
+tions were considered, this simplification had almost no effect on the
+results. Xenon distribution in the graphite and the resultant poisoning
+were treated in a detailed (72 region) nuclear model of the core that also
+included the radial xenon distribution within individual graphite bars.
+However, mass transfer of xenon to the graphite was assumed to occur only
+from the salt; direct transfer from bubbles to graphite was not allowed.
+~The parameter values used and the results obtained from calculations
+with this model are described in detail in Ref. 17. Figure 2 shows one
+set of results in which the circulating void fraction was treated as an
+independent variable. This figure illustrates the monotonic decrease in
+poisoning with increasing void fraction that was typical of the results
+obtained. (Note that in Figure 2 the xenon poisoning is in terms of
+
+235y, Subse-
+
+poison fraction, neutron absorptions in 135Xe/absorption in
+quent results will use the xenon reactivity effect, % 8k/k, since this
+can be compared more readily with measured values. For the MSRE, the re-
+activity effect of a poison was approximately 0.8 times the poison
+
+fraction.)
+
+OBSERVATIONS DURING MSRE OPERATION
+
+The behavior of xenon in the MSRE was observed throughout the opera-
+tion of the reactor. The primary tool for these observations was the sys-—
+
+tem reactivity balance’®s?°
+
+which was calculated every 5 min by an on-line
+computer while the reactor was in operation. This computation was devel-
+oped to provide a real-time monitor of the reactor system for unexpected
+changes in nuclear reactivity. It included calculations of all the known
+reactivity changes from a reference state as functions of time, temperature,
+
+power, and fuel loading. All the calculated effects, along with the ob-
+
+‘served control-rod poisoning were summed and any deviation from zero could
+
+be regarded either as an anomaly or an error in one or more of the calcu-
+lated terms. Initially, the only large term in the reactivity balance
+with a significant uncertainty was the xenon poisoning. Subsequently, the
+
+accuracy of the other terms was shown by results at zero power with no
+ 
+
+ORNL-DWG 67-1973
+BUBBLE STRIPPING EFFICIENCY (%)
+0
+
+138%e POISONING (%)
+
+ 
+
+(w
+
+ 
+
+0 0.25 0.50 075 1.00 1.25 v
+MEAN BUBBLE CIRCULATING VOID (%)
+
+Fig. 2. Predicted !'3°Xe Poison Fraction in the MSRE with Circulating
+Bubbles at 7.5 MW(t).
+
+ 
+coe bt set es bem
+
+ 
+
+Li]
+
+ 
+
+C
+
+xenon present.®°
+
+This information, along with other evidence that no
+anomalous effects were present, allowed us to evaluate the actual xenon
+poisoning not only at steady state but also during transients produced by
+
+changes in the reactor power level and other operating parameters. During
+
+~ those parts of the operation when there were no (or almost no) circulating
+
+voids, reactivity balances at power were sufficient to define the xenon
+
+poisoning, However, when the circulating void fraction was significant,
+
+additional data were required at zero power with no xenon present to permit
+
+“separation of ‘the direct reactivity effect of the bubbles.
+
+Although most of the xenon poisoning data were extracted from
+reactivity-balance results some supplementary data were obtained from
+samples of the reactor offgas. Since both '*‘Xe and '**Xe are stable
+
+fission products with insignificant neutron absorption cross sections, a
+
+‘comparison of the fission-yield ratio for these isotopes with the actual
+
+isotopic ratio in the offgas provides a measure of the neutron absorptions
+in '®°Xe. Such comparisons were made for several samples isolated under
+steady-state conditions but the results were too scattered to contribute
+significantly to the detailed analysis of xenon behavior. The results did,
+however, confirm that the conclusions drawn from the reactivity balances
+were not grossly in error. oo oo
+
+Another technique that was attempted was direct measurement of the
+135ye concentration in the reactor offgas at the fuel-pump outlet using
+remote gamma-ray spectrometry. When the reactor was operated at high
+power the radiation level from the offgas line was so high that consider-
+able shielding had to be inserted between the source and detector to ob-
+tain manageable pulse counting rates. The effect of this shielding on
+the efficiency of the detector system at the energy of the principal *®°Xe
+
+gamma ray (249.65 kev) introduced sufficient uncertainty to completely ob-
+
+scure the results. At lower power levels, residual xenon from previous
+high-power operation had a similar effect. While this technique appears
+to offer some promise for studying xenon behavior, additional development
+
+would be required beyond that which was available on the MSRE, -
+
+ 
+
+* . Co oo
+° The introduction of shielding makes this efficiency very strongly
+energy dependent below about 300 kev.
+
+ 
+ 
+
+ 
+
+10
+
+Circulating Voids. \
+
+Although this report is concerned primarily with the behavior of
+
+- xenon, that behavior is so strongly affected by circulating voids that a
+summary of the experience with voids is presented to provide a basis for
+further discussion. A detailed description of the void behavior may be
+found in Ref. 21.
+
+During the early operation of the MSRE, both in prenuclear tests and
+the zero-power experiments, there was no evidence of circulating gas bub~
+bles under normal conditions. However, voids were observed when the sys-
+tem temperature and fuel-pump level were reduced to abnormally low values.
+Evidence for the presence of circulating voids began to appear after a few
+months of operation at power. A series of pressure-release tests on the
+fuel loop in July 1966 confirmed that some voids were then present even at
+normal system conditions. Various interpretations of the early data indi-
+
+7, 18,322
+
+cated void fractions as high as 2 to 3 vol, However, as more data
+
+ie
+
+were obtained and evaluated we concluded that the normal void fraction in
+the reactor core was quite low — in the range of 0.02 to 0.04 vol. Z.2%2%
+Once it became established, the circulating void fraction remained rela- v
+tively constant throughout the #2°U operation of the reactor.” Signifi-
+
+cant variations could, however, be induced by changes in system tempera-
+
+ture, overpressure, and fuel-pump level. The changes were identified. by
+
+their reactivity effects®® and by changes in the neutron-flux noise spec-
+
+trum, 3°
+
+The results of one series of void-fraction measurements based on
+reactivity effects are summarized in Table 1.. Because of uncertainties
+
+in the absolute magnitude of the void fraction, the values shown are changes
+from the minimum void fraction that was attained. In general, the void
+fractions increased with decreasing temperature and increasing pressures:
+Although these measurements did not show any dependence on fuel-pump level,
+the associated noise measurements indicated higher void fractions at lower
+
+levels.
+
+ 
+
+*
+
+The entire reactor operation with?®°U fuel was carried out with oo
+helium cover gas and with the fuel circulating pump operating at normal, ( ;
+full speed (1189 rpm). : =’
+ 
+
+ 
+
+-)
+
+“)
+
+11
+
+Table 1
+
+Effect of Operating Conditions on Core Void Fraction
+In MSRE with *°°y Fuel?
+
+ 
+
+Change from Min.
+
+ 
+
+Fuel Pump Reactor Outlet Fuel Pump
+Overpressure . Temperature Level Range. Core Void Fraction
+(psig) (°F) (in.) (Vol 2%)
+5 1225 5.6 — 6.2 0
+5 1210 5.3 —6.1 0.03
+5 1180: 5.3 — 5.7 0.11
+9. 1225 5.6 — 6.2 0
+9 1200 5.3-6.0 0.04
+9 1195. 5.3 -—5.9. 0.10
+9 1180 5.3 — 5.6 0.18
+3 1225 5.6 — 6.2 0
+3 | 5.3 — 5.8 0.10
+
+1180
+
+ 
+
+Helium cover gas; 1189 rpm fuel-pump speed.
+
+Based on reactivity effec
+
+t at zero power.
+ 
+
+ 
+
+12
+
+After recovery of the #*°U mixture from the fuel salt and the ad-
+dition of ?°°U, the system behavior with regard to circulating voids
+changed markedly: the nominal core void fraction went to 0.5 to 0.7 vol. Z%.
+This change, along with other observations prompted a more detailed study
+of the void behavior. Some early experiments indicated that, of the para-
+meters available for change in.the MSRE, the circulating void fraction was
+most sensitive to changes in fuel-pump speed. Consequently this approach
+was used to vary the void fraction. Figure 3 shows the effect of pump
+speed on the void fraction for both flush and *°°U-fuel salts with helium
+and argon as the system cover gas. Although we never observed circulating
+voids in the flush salt (with helium .cover gas) during the 2°U phase of
+the operation, this salt did develop voids with only a small increase in
+fuel pump speed (to 1240 rpm). The different void fractions obtained with
+helium and argon apparently reflect the lower solubility of argon in molten
+
+salt. That is, for a given rate of gas ingestion at the fuel pump, a
+larger fraction of the argon would be expected to remain undissolved. The
+core void fraction remained relatively stable around 0.5 vol Z for most of
+the 2°°U operation. However, small variations apparently did occur which
+had measurable effects on the xenon poisoning. The inability to precisely
+define the system void fraction under all opefating conditions added con-
+siderable uncertainty to the measurement of xenon poisoning as a function
+of void fraction.
+
+One other aspect of the behavior of circulating voids in the MSRE
+that will be referred to later is the rate at which the circulating void
+fraction could be changed, particularly in the direction of a lower value.
+On several occasions, excess circulating voids were introduced by pressure-
+release tests or by other system perturbations and, in every case, these
+voids subsequently disappeared at a rate which indicated a bubble strip-
+ping efficiency of 50 to 100% on the streams passing through the pump bowl.
+«)
+
+-}
+
+13
+
+ORNL-DWG 69~ 10544
+
+ 
+
+T 1
+SALT ~~ COVER GAS
+
+ 
+
+ 
+
+0.7— o FLUSH He
+® FLUSH Ar
+a FUEL He
+A FUEL Ar
+06
+
+©
+2)
+
+/
+
+/
+=
+
+ 
+
+J
+
+ 
+
+|
+
+ 
+
+LOOP VOID FRACTION (%)
+o o
+w DH
+
+ 
+
+8
+~~
+
+||
+/ |
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.1 /
+’/ 1
+2” f
+0 >! ==" 4
+. 700 800 900 1000 1100 1200 1300
+
+ 
+
+C
+
+ 
+
+FUEL PUMP SPEED (rpm)
+
+Fig. 3. Effect of Fuel-Pump Speed on Void Fraction in Fuel Loop.
+ 
+
+ 
+
+14
+
+Xenon Poisoning with ?°°U Fuel -
+
+Since the early operations at the MSRE had indicated that there were
+no circulating voids, the xenon poisoning was predicted on that basis.
+Calculations using the model described above showed that, at full power
+(7.4 Mw), the poisoning would amount to about 1.08% 8k/k. When the re-
+actor was first operated at power, the reactivity-balance results indicated
+that the actual xenon poisoning would be much less than had been antici-
+pated. At that time, attempts to use the reactivity balance as an anomaly
+detector were deferred (at least during xenon transient conditions) and
+the results were used to evaluate the xenon effect. Although this use of
+the reactivity balance required the assumption that no anomalous effects
+occurred along with the xenon changes, the experience during conditions
+
+of steady xenon poisoning supported its validity.
+
+Steady-State Values
+
+The first measurements of steady-state xenon poisoning at power levels -
+of 5 Mw or greater were obtained in April and May 1966. These values and
+their associated power levels are listed in Table 2. On the surface, the ~
+early values appear to be inconsistent because the highest power is associ-
+ated with the lowest xenon value. Little significance was attached to
+these differences because of the very large difference between the expected
+and observed values and because we had not yet established full confidence
+in the reactivity balance. The results were valid, however, and the dif-
+ferences are at least qualitatively explainable. We have already shown
+that small differences in system temperature and pressure cause signifi-
+cant variations in the circulating helium void fraction and will show sub-
+sequently that, with helium cover gas, a higher core void fraction leads
+to higher xenon poisoning. Both of the first two values were obtained
+under conditions that tended to increase the void fraction (i.e. lower
+temperature at 5 Mw and higher overpressure at 6.7 Mw) so it appears
+likely that the different values are attributable to void-fraction vari- -
+ations. This explanation is contingent upon the existence of circulating
+
+voids which was not demonstrated until July, 1966. However, there appears ST
+
+\o/
+ 
+
+-)
+
+Lh]
+
+15
+
+Table 2
+
+Early Measurements of Steady State '®®Xe Poisoning
+In MSRE with 2°*U Fuel
+
+ 
+
+ 
+
+~ Power Level Xenon Poisoning
+Date (mw) = (% 8k/k)
+"4/28/66 Cs | 0.32
+5/15/66 6.7 0.35
+
+5/25/66 7.2 0.30
+
+ 
+
+to be little doubt that some voids were present at the time these xenon
+data were obtained,
+
+"After routine power operation of the reactor had been established,
+the full-power steady-state Xenon poisoning was between 0.26 and 0. 28%
+6k/k for most of the 2°%y operation. A significant deviation from this
+condition occurred during the last major period of that operation, Run 14.
+Although much of this run was spent in studying the xenon poisoning under
+
+different reactor conditions, measurements at standard conditions consist-
+
+"ently showed values of 0.34 to 0.35% 8k/k. Another difference in the sys-
+
+tem behavior accompanied this change; the rate of salt transfer from the
+
+"pump bowl to the overflow tank dropped from ~ 1 1b/hr, a value that had
+‘persisted for several months, to only 1/2 1b/hr. We suspect that both
+
+changes are related to a change in the behavior of voids in the system
+
+but there was no direct evidence for such a change.
+
+ 
+
+Unless otherwise noted, the values apply at the "standard" reactor
+operation condition: 1210°F core outlet temperature, 5-psig overpressure,
+and normal salt level in the fuel-pump tank.
+ 
+
+16
+
+Correlations
+
+Although the reactivity balance was used to obtain data on xenon
+poisoning, the primary function of this calculation was to provide a real-
+time monitor of the reactor operation for possible anomalous reactivity
+effects. Therefore, it was necessary to incorporate an accurate calcula-
+tion of the actual xenon behavior, both steady-state and transient, in the
+balance. Since the model used for the initial predictions was felt to be
+basically sound, we used this model to correlate the experimental data.
+The results of these correlations were then adapted to the on-line com-
+puter. Some simplification of the nuclear representation of the core was
+required to fit the calculation into the on-line system but this did not
+affect the principal characteristics of the model. |
+
+Earlier development work had established probable values for many of
+the parameters in the model and these values were adopted. However, there
+were two parameters, circulating void fraction and bubble-stripping ef-
+ficiency, which were not well established for the MSRE so the effects of
+‘these two quantities were studied in some detail.” We found that the
+steady-state xenon poisoning, as well as many aspects of the transient:
+behavior could be described by adjusting only these two parameters. Fur-
+thermore, the steady-state poisoning could be described about equally well
+by a high circulating void fraction (0.5 to 1.0 vol %Z) with low bubble-
+stripping efficiency (10 to 15%) or a low void fraction (0.1 to 0.15 vol Zz)
+with a high stripping efficiency (50 to 100%). However, these two sets of
+values led to different overall distributions of the xenon. When the void
+fraction was high, a major part of the poisoning was due to xenon in the
+bubbles but, at low void fractions, the xenon in the graphite was the major
+contributor. This difference led to significant differences in the calcu~-
+- lated xenon transient behavior, particularly for the xenon removal transi-
+ents following a power reduction. With most of the poisoning due to xenon
+
+in the graphite, the continued production from iodine decay in the salt and
+
+ 
+
+* : nN
+These studies were performed off-line using an IBM-7090 computer to
+
+permit greater flexibility in the calculations.
+ 
+
+“)
+
+wy
+
+C
+
+17
+
+transfer to the graphite after the reduction in pover (and burnout in the
+core) tended to produce a peak in the xenon transient. Then, after the
+xenon in the fluid had been depleted by stripping, xenon diffused out of
+the graphite and was stripped so that rate of change in poisoning was more
+rapid than it would have been if only radioactive decay were operative.
+
+As the poisoning shifted toward the circulating fluid, with increasing void
+fraction, the xenon peak tended to disappear from the decay transient. In
+addition, the low stripping efficiency required to match the steady-state
+poisoning slowed the rate of decrease in xenon poisoning.
+
+When the observed transients were compared to the calculations, we
+found good agreement with the low-void-fraction, high-efficiency curves.
+Figure 4 shows one example of the quality of fit that was obtained.
+Furthermore, the void fraction appeared to be consistent with other, inde-
+pendent observations. Consequently, this model, using a 0.15 vol % void
+fraction and a 50% bubble stripping efficiency was used for the on-line
+Xenon calculations. These calculations produced good results through
+Run 12 of the 2*°U operation (August, 1967). It will be recalled, however,
+that this model did not treat cover-gas solubility effects, nor did it
+provide for variations in the circulating void fraction with reactor oper-
+ating conditions. Thus the empirical fit to the xenon poisoning was ap-
+plicable only to the specific reactor conditions under which it was es-
+tablished. Although this limitation was clearly recognized when the
+calculation was developed, the sensitivity of the reactor xenon poisoning
+to system conditions was unknown until actual measurements were made in
+Run 14 with ?®°U fuel and still later with *2°U fuel.
+
+Effects of Operating Parameters
+
+A subject that was investigated extensively in the MSRE was the corre-
+lation between the core void fraction and the neutron-flux noise spectrum.?¢
+One objective of that work was to develop neutron noise analysis as a diag-
+nostic tool for measuring the void fraction. A series of special tests was
+
+performed in reactor Run 14 to further this effort. The tests involved
+
+‘operation of the system at various temperatures, overpressures, and fuel-
+
+pump levels, first at near-zero power (no xenon) so that the reactivity
+ 
+
+18
+
+ORNL-OWG 67-1087
+
+ 
+
+ 
+
+ 
+
+as tm] ® EXPERIMENTAL DATA , OBTAINED
+
+Vd ~N : DURING MSRE RUN NO. 10
+
+ 
+
+04 Td
+
+ 
+
+EFFICIENCY (%)
+
+ 
+
+ 
+
+REACTIVITY MAGNITUDE (% BA/k)
+
+ 
+
+BN
+
+SN Ne ,BUBBLE STRIPPING
+PM
+
+ay
+
+~~
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+7 170 :
+L.e"® La TS
+( 10
+Q2 — < ~~ I~
+oad 2
+
+—~J5 oo . ~~
+
+0. 0 8.g.0 -
+Tee
+{00 “eel
+0 — |
+0 4 8 12 16 20 24 28 32 36 40
+
+TIME AFTER DECREASE IN REACTOR POWER LEVEL (hr)
+
+Fig. Lk, Effect of Bubble Stripping Efficiency on Transient Decay
+of 135Xe Reactivity. Step decrease in power level from 7.4 MW to 03 vol %
+circulating bubbles, 0.15. :
+ 
+
+")
+
+oy
+
+C
+
+19
+
+balance could be used to measure the void fraction, and then at 5 Mw to
+measure the noise spectrum. The effects of the operating parameters on
+void fraction have already been discussed. However, when the reactor was
+at power, additional reactivity differences were observed which, because
+of their reversibility and time constants, could only be attributed to
+changes in xenon poisoning,
+
+Figure 5 shows the effect of the nominal core void fraction on xenon
+poisoning at 5 Mw, without regard for the changes in operating parameters
+that were made to vary the void fraction.’ Although there is considerable
+scatter in the data, the trend toward greater xenon poisoning at higher
+void fractions is clearly evident. There are several possible reasons for
+the scatter but these have not been evaluated quantitatively. First, the
+measurements of nominal void fraction and xenon poisoning were separated in
+time and we have no direct assurance that a given set of operating condi-
+tions always produced precisely the same core void fraction. Second, the
+void-fraction measurement is subject to considerable uncertainty in this
+range because of the small reactivity differences involved (0.02% 8k/k for
+a void-fraction change of 0.1 vol %). And, finally, we have ignored the
+fact that different combinations of parameter values wery used to obtain
+the void fractions. (cf. Table 1) so the direct effects of these parameters
+on the xenon behavior are included in the data scatter. Thus, while Fig. 4
+illustrates an important aspect of the xenon behavior in MSRE, it does not
+
+provide an adequate basis for modification of the xenon model.
+
+Xenon Poisoning with *2°U Fuel
+
+ 
+
+Possibly the most significant difference in the MSRE operation with
+2357 fuel, as regards the xenon behavior, was the drastically different
+volume fraction of circulating voids under standard conditions. . As indi-
+cated earlier, the void fraction changed from 0.05 vol % or less, with *°°U
+fuel, to about 0.5 vol %. The precise reason for this shift has not been
+established but it may have been caused by different physical properties
+(density and, possibly, surface tension and viscosity) of the two salt mix-
+
+tures. It has also been suggested?’ that an accumulation of insoluble
+ 
+
+ 
+
+ 
+
+20
+
+ORNL-DWG 71-8032
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.4
+$
+o
+4
+®
+03 2
+»,
+ee De
+x
+3 !
+00
+®
+2 oe 1
+° ®
+z ®
+Zz ®
+3 0.2
+g $
+z @
+Oo
+Z
+uw
+x
+04
+0
+0 1X 0.2
+
+CORE VOID FRACTION (%)
+
+Fig. 5. Effect of Sere Void Fraction on MSRE Steady-State Xenon
+Poisoning at 5 MW with 2357 Fuel.
+ 
+
+-)
+
+«}
+
+C
+
+21
+
+metallic particles — fission and corrosion products — into a "scum" on the
+surface of the salt pool in the pump bowl could have contributed to the
+change in void behavior. In any event, this change ultimately led to a
+complete reinvestigation of the xenon problem.
+
+The first step in this investigation was to establish the behavior of
+the voids as such. This was greatly facilitated by the installation of a
+variable-frequency generator to. supply power to run the fuel pump at dif-
+ferent speeds” and preliminary measurements were made of the effect of
+fuel-pump speed on the core void fraction with helium cover gas. We then
+attempted to measure the steady-state xenon poisoning at various void frac-
+tions. The void fraction was adjusted by regulating the pump speed and the
+reactor power was held to 7 Mr. This allowed us to make all the measure-
+ments at one reactor .outlet temperature (1210°F) without reaching undesira-
+ble temperatures in other parts of the system. In addition, the system
+overpressure and fuel-pump level were restricted to narrow ranges. The
+results of these xenon poisoning measurements are shown in Figure 6. Con-
+siderable uncertainty must be assigned to the void fractions between 0.1
+and 0.3 vol Z. These points were obtained with the variable-frequency
+drive running near, but not at, its maximum speed capability and difficulty
+was encountered in controlling the speed precisely. The extreme sensi-
+tivity of the void fraction to pump speed in this region (cf Fig. 3) prob-
+ably caused the void fraction to wander during the tests.
+
+The early data on void fraction and xenon poisoning were obtained in
+March 1969, during Run 17, the first period of high-power operation with
+22°y fuel. These data were used to adjust parameter values in the existing,
+on-line xenon calculation to provide better steady-state xenon. values. Two
+sets of parameters were developed for use with high and very low void
+fractions. As reactor operation continued, it became apparent that this
+approach did not adequately describe the xenon behavior. Then, a scheduled
+
+reactor shutdown in June, 1969 added another dimension to the xenon problem.
+
+ 
+
+%
+
+“The generator was installed to permit an investigation into the ef-
+fects of fuel~-pump speed and void fraction on the occurrence of small power
+disturbances. ?®
+ 
+
+ 
+
+22
+
+ORNL-DWG 69-12619
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+.08 ® I I
+* POWER : 7 Mw
+COVER GAS: HELIUM
+
+= ®
+
+< 086
+
+ge .
+
+2 ®
+
+Bos
+
+4 *0
+L
+4
+
+8 4
+
+02
+
+°
+° 02 04 06
+
+AVERAGE CORE VOID FRACTION (%)
+
+Fig. 6. Effect of Core Void Fraction on Steady-State Xenon Poisoning
+(Measured in March 1969).
+ 
+
+ 
+
+a
+
+Ell
+
+C
+
+23
+
+One of the operations planned for the shutdown was a replacement of
+
+corrosion and surveillance specimens in the reactor core. Since this
+
+- operation required opening of the reactor primary loop, the normal pro-
+
+cedure called for filling the loop with argon to help prevent intrusion
+
+of air and moisture during the replacement. On this particular occasion
+the introduction of argon was started ~2 hr before the reactor power was
+reduced. For several days prior to the shutdown, the reactor had been
+operating at reduced fuel-pump speed (and slightly reduced power — 7 Mw)
+to minimize the circulating void fraction. (The off-design operation was
+adopted to prevent aggravation of a restriction in the reactor offgas sys-
+tem which was also scheduled for correction during the shutdown.) As argon
+replaced the normal helium cover gas, there was.a substantial decrease in
+the nuclear reactivity of the system. This decrease was later shown to be
+associated with a marked difference in xenon poisoning, at low void frac-
+tions, with the two cover gases.
+
+When reactor operation was resumed, in August 1969, an extensive series
+of experiments was performed to elucidate the circulating void behavior at
+Various fuel-pump speeds with both helium and argon cover gases and to
+evaluate the xenon poisoning with both gases. By that time, also, the
+speed-control problems with the variable-frequency power supply had been
+largely corrected so that the data at intermediate void fractions were more
+reliable. These data provided the principal basis for the reevaluation of
+the xenon behavior in the MSRE. However, the data collection continued
+
+into September and the reactor operation was terminated on December 12, 1969.
+
+Consequently, the revised analysis described in this report was not used
+
+during the reactor operation...
+The effects of fuel-pump: speed and cover gas on the circulating void
+
+fraction have already been discussed (see Fig. 3). The measured effect of
+
+*
+the core void fraction on xenon poisoning with ?°°U fuel at 5 Mw is shown
+
+ 
+
+‘in the reactor power level as determined by system heat balances
+uranium isotopic changes in the fuel salt.
+
+* : : :
+This power has also been reported as 5.5 Mw because of a difference
+29
+and by
+It now appears that the iso-
+topic-change evaluation is probably more nearly correct, so the proper level
+for these xenon measurements is 5 Mw.
+
+30
+ 
+
+ 
+
+24
+
+in Fig. 7. The results with helium cover gas show essentially the same
+behavior as those obtained earlier with this combination. In addition,
+the results are at least qualitatively similar to those obtained with 2°5U
+fuel at low void fractions. In contrast, the results with argon cover gas
+show a significantly different behavior at the lower void fractions. These
+data appear to demonstrate the monotonic decrease in poisoning with in-
+creasing void fraction that was predicted by the model which neglected
+cover-gas solubility. However, it should be noted that there is a signi-
+ficant gap between the point shown at zero void fraction and the next data
+- point. In addition there is some uncertainty about the void fraction at
+which the first point should be plotted.
+
+During the collection of the xenon data, as in all reactor operations,
+there was some variation in the fuel-pump level because of salt transfer to
+the overflow tank. And, while the level effect was small, if there was any
+tendency for voids to be present in the core, that tendency was enhanced at
+the lower salt levels. Figure 8 shows the progress of a xenon build-in
+transient as a function of time after a power increase from 10 kw to 5 Mw.
+This test was performed with argon cover gas while the fuel-pump speed was
+800 rpm. The reactor outlet temperature and system overpressure were at
+their normal values, 1210°F and 5 psig respectively. At normal pump-bowl
+- salt levels, these conditions corresponded to zero void fraction in the
+core. Also shown in this figure is the indicated salt level in the fuel
+pump bowl. It may be noted that, as the salt level decreases toward 6 in.
+(relative to an arbitrary zero reference), there is a change in the shape
+of the xenon curve. At about this same time, 25-30 hours into the transient,
+the neutron noise, as indicated by an analog instrument that recorded the |
+average (RMS) level between 0.6 and 1.4 Hz (Ref. 31) began to increase.
+
+By the time some of the salt was returned to the pump bowl (at 44 hr), the
+noise level had increased by a factor of 2, suggesting a small but steady
+increase in the core void fraction. The noise decreased somewhat, but not
+to its original level, when the salt level in the pump bowl was raised and
+then increased again with decreasing salt level. The apparent variation
+
+in void fraction with salt level indicated by the neutron noise was quali-
+
+tatively consistent with previous experience at other pump speeds and salt
+25
+
+ORNL-DWG 69- 10545R
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1.0 r
+5.5 Mw
+~ © HELIUM
+= ® ARGON
+Sos
+@®
+*
+208 2
+F .
+3 8
+© 04 [
+Zz
+oO o
+- a
+Woz
+- 0 -
+= - 0 . of 0.2 03 04 05 06 07
+
+CORE VOID FRACTION (%)
+
+Fig. 7. Effect of Core Void Fraction on Steady-State Xenon Poisoning
+(Measured in August—September 1969).
+
+ 
+
+ 
+26
+
+ORNL~DOWG 71-8033
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+70
+5 “=
+€ see, o.
+£7 60 [eee hd TY PY “Ieee,
+
+- u “le ote v¥e
+oY #* SALT RETURNED TO FUEL PUMP
+50 FROM OVERFLOW TANK [
+
+NE
+oe
+© ®e
+£02 oy
+- .
+8 *,
+re *
+5 -04 By
+> fo,
+- .
+zs ~,
+S -06 BA
+ul
+o lo
+g -os >
+Ye Soto
+& esegivese’ [20a Leaageors
+-10
+0 10 20 30 40 50 60 70
+TIME (hr)
+
+Fig. 8. Xenon Buildup Transient with Argon Cover Gas and Low Cir-
+culating Void Fraction.
+ 
+
+»
+
+a
+
+4)
+
+27
+
+levels. Figure 7 shows clearly a decrease in the magnitude of the xenon
+
+reactivity effect that followed the increase in salt level and a subsequent
+
+increase in poisoning as the salt level dropped. A somewhat similar oc~
+
+currence had been observed about a week earlier with the fuel pump oper-
+ating at 900 rpm. However, in the earlier case the salt-level effect on
+the xenon was partly obscured by a change that was made in the gas purge
+rate through the pump bowl.
+
+Although the events just described are not readily subject to quanti-
+tative evaluation, they strongly suggest that the xenon behavior with de-
+creasing void fraction was similar for both helium and argon cover gases.
+The major difference appears to have been in the value of the decreasing
+void fraction at which the xenon poisoning curve began to turn down and
+in the extent of the decrease in poisoning. Figure 9 shows what now ap-
+pears to be a better representation of the effect of core void fraction on
+xenon poisoning in the MSRE with argon cover gas. The shaded area at low
+void fractions is intended to show only the region in which the xenon poi-
+soning apparently varied, rather than to indicate. the precise nature of
+the variation.
+
+Aside from the special experiments performed to evaluate xenon poi-
+soning, routine observations were made of the xenon effect throughout the
+
+2357 operation, variations were
+
+2930 operation. As was the case in the
+observed in the steady-state xenon poisoning that could not be assigned to
+known changes in the operating conditions. Table 3 shows some of the values
+that were observed at full power and otherwise nominally standard condi-
+tions. Minor deviations from the standard 5-psig overpressure did occur
+
+but these do not appear to account for the xenon changes. It seems more
+likely that minor changes in the fuel=-salt properties allowed the void
+fraction to wander enough to vary the xenon poisoning. The nature and
+magnitude of the changes required to produce the observed variations is
+
+unknown.
+ 
+
+28
+
+ORNL—DWG 71—~ 8034
+
+ 
+
+10
+
+ 
+
+o
+«©
+
+ 
+
+o
+o
+
+“4
+<, ,
+
+ 
+
+o
+>
+
+ 
+
+XENON POISONING (% 34/4)
+o
+nN
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0 0.4 0.2 0.3 0.4 0.5 0.6 0.7
+CORE VOID FRACTION (%)
+
+Fig. 9. Adjusted Variation of Steady-State Xenon Poisoning with Argo
+Void Fraction. :
+29
+
+5 Table 3
+
+% Full-Power Xenon Poisoning
+
+During 2°*y Operation
+
+ 
+
+ 
+
+Xenon
+
+Date © Poisoning
+
+(% Sk/k)
+2/21/69 0.36
+2/25/69 © 0.36
+4/15/69 0.32
+4/18/69 0.40
+10/6/69 | 0.51
+10/20/69 0.39
+] | 11/29/69 0.44
+12/11/69 | 0.45
+
+ 
+
+IN]
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+30
+
+DEVELOPMENT OF MATHEMATICAL MODELS OF MSRE
+135%E AND COVER-GAS BEHAVIOR
+
+The approximations and assumptions made in earlier mathematical models
+to describe xenon behavior in the MSRE were discussed earlier. Since the
+net effect on the overall results was not obvious, we included a large
+number of individual mechanisms in the model to be described in an effort
+to see if particular aspects of the observed xenon behavior could be
+related to specific mechanisms.
+
+Although we were concerned primarily with the fate of xenon, it was
+a basic premise of this approach that the xenon behavior was dépendent
+on the behavior of the cover gas. Thus, it was necessary to include in
+the xenon model a description of the cover-gas conditions around the loop.
+This description could be computed within the xenon model for the cases
+where an insoluble cover gas was assumed. However, when significant
+cover-gas solubility was allowed, the non-linear cover-gas behavior was
+computed separately and the results used as input for the xenon calcu-
+lations. In this section we describe first the xenon model and then the
+
+model used to compute the cover-gas conditions.
+Xenon Model
+
+As a first step toward increasing the flexibility of the xenon model,
+the fuel loop which previously had been treated as a single, well-stirred
+tank was divided into several regions. This made it possible to consider
+the approximate effects of short term dynamic mechanisms such as the
+compression and expansion of circulating gas bubbles as well as gas
+dissolution in and evolution from the liquid. In addition, the core
+region was subdivided into 4 radial regions to allow for different rates
+of mass transfer due to the radial profile of fuel salt velocity through
+
+the core. This subdivision also permitted a radial breakdown of the xenon
+
+ 
+
+*
+
+A lumped-parameter model such as this is still only an approximation
+to the real case but it is much more manageable than a more accurate
+distributed-parameter model would be.
+ 
+
+ 
+
+31
+
+burnout and poisoning effects. There was no subdivision in the axial di-
+rection but axial effects were accounted for by using average neutron
+fluxes and nuclear importances for each radial region.
+
+Figure 10 shows schematically the subdivision of the reactor loop
+that was used for the mathematical description and the material flow-paths
+that were considered. The subscripted variables within each block refer
+to the concentrations of °°I, !®®Xe, and ®°®Xe that are applicable to
+each region. In general, a time-dependent material-balance equation of
+
+the form
+
+2646
+&L = LA Xp, i=l, ... 24
+was written for each dependent variable in each region of the model. The
+resultant set of 24 linear, first-order differential equations could then
+be solved for either the steady-state solution vector or the time dependent
+behavior, as required. In the sections to follow, we discuss the mechanisms
+and terms that were included in these equations. However, the final equa-
+tions with all their repetitive terms are relegated to the appendix. They
+are printed on fold-out sheets so that the interested reader may have them
+beside the text for ease in following their development. The form in which
+the equations. are presented was selected in an effort to make the various
+mechanisms more readily apparent, It should be recognized that this is
+neither the most compact form attainable nor the one required for their
+
+solution by a computer.
+
+Pump Bowl
+
+As indicated by Fig. 10, three regions were used to describe the
+
+‘xenon behavior in the pump bowl: “the gas space above the liquid, the
+
+liquid phase, and a separate gas phase to represent bubbles that enter
+from the main loop and return to that loop without losing their identity
+(i.e. are not stripped).
+
+The major xenon inputs to the pump-bowl gas space are the bubbles
+
+stripped from the salt flow through the bowl and direct mass transfer from
+ 
+
+ 
+
+32
+
+ORNL-DWG 71-8029
+
+PURGE OFF
+GAS PUMP BOWL GAS
+
+ 
+
+  
+ 
+  
+ 
+
+ 
+
+SUBSCRIPTS
+135; 1354, |135my,
+
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+  
+ 
+
+ 
+
+GAS
+SPACE 13 2
+4
+
+X 1
+2 3
+6 5
+7
+9
+
+   
+  
+ 
+
+8
+10
+12 i"
+14 15
+16 19
+17 24
+18 23
+20
+22
+24
+
+   
+
+oLD
+X41 X12 BUBBLES
+
+  
+  
+    
+
+LIQUID
+XX X13
+
+ 
+     
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+  
+ 
+  
+     
+  
+
+ 
+
+  
+   
+
+   
+   
+
+GAS
+BUBBLES
+
+Xa
+
+GAS
+BUBBLES
+
+x7
+
+LIQUID
+Xo
+
+     
+
+   
+
+PIPING AND
+PIPING HEAT EXCHANGER
+
+  
+ 
+ 
+ 
+
+   
+
+  
+   
+
+Xe
+
+   
+
+X22 X20
+
+    
+  
+
+ 
+
+Xi3
+
+ 
+ 
+ 
+
+REACTOR CORE
+
+ 
+ 
+    
+ 
+  
+ 
+  
+
+Xo Xs LIQUID
+
+   
+ 
+
+GRAPHITE
+
+Xys
+
+    
+
+Xig | X17 | X16 | X14
+
+   
+ 
+
+Xp3 Xpa GAS BUBBLES
+
+Fig. 10. Lumped-Parameter Model for Xenon Calculations.
+ 
+
+ 
+
+ 
+
+33
+
+the liquid pool. An additional source term for '*°Xe is provided by the
+decay of *®°*™Xe already in the gas space. Since iodine is presumed to
+remain entirely in the salt:phase, it does not contribute to the xenon
+sources for this region. The salt flow through the pump bowl is composed
+of the actual stripper flow plus the leakage or "fountain" flow around the
+pump shaft. These flows are treated separately in the model and separate
+bubble-stripping efficiencies are assignable to each. The actual xenon
+inputs are thus defined by the gas inventory in the preceding region, the
+flow rates, and the stripping efficiencies.
+
+Direct transfer of xenon from the liquid pool to the gas space is
+
+described as a mass-transfer process in this model. That is, for '®°P%e
+
+*
+Sy = h A, (Xs - HRTX,),
+
+and the comparable term for '®%Xe is obtained by replacing Xs and X; by
+X, and Xz, respectively. Since this mass transfer process is not well
+defined, we arbitrarily assigned it the same coefficient that was used for
+- ‘gas-liquid transfers in the remainder of the system. The effect on the
+xenon balance of variations in the rate of mass transfer was examined by
+varying the effective transfer area, A. This area was probably quite
+large (tens of square feet) because of the agitation and cover-gas carry-
+under produced by the spray ring. However, the extent to which the gas
+that is carried under (but not ingested into the circulating loop) mixes
+with the gas above the salt probably depends strongly on the amount and
+stability of the foam in the pump bowl.®! The presence or absence of a
+scum of non-wetted, noble-metal fission products on top of the liquid?
+could also be expected to have some effect. Another factor that very
+likely influences xenon stripping is the evolution of cover-gas ‘from the
+salt, - If a significant amount of cover gas can dissolve in the salt in
+the loop, there will be tendency for that gas to escape from solution
+while the salt is in the pump bowl which, in turn, may affect the xenon
+
+escape rate. All of these effects are lumped together in the choice of
+
+ 
+
+*
+Symbols are defined in the appendix.
+ 
+
+ 
+
+34
+
+a value for A. Thus this approach fails to distinguish between several
+factors that are capable of influencing the liquid stripping but it does
+retain the dependence of the overall process on the xenon concentration
+in the gas space. The net efficiency of the liquid stripping process is
+easily extracted from the results by comparing the xenon concentrations
+in the salt streams entering and leaving the pump bowl with that in the
+gas phase.
+
+The xenon sinks for the pump-bowl gas space are radioactive decay,
+the cover-gas purge to the offgas system, and cover gas ingestion into
+the fuel loop. The first two mechanisms are completely defined by the
+region concentrations, the decay constants and the net cover-gas purge
+rate. However, the amount of cover gas that is drawn from the gas space
+into the fuel loop must be extracted from a cover-gas material balance.
+For a soluble cover gas, the total gas phase flow may be determined by a
+separate calculation that includes consideration of the gas in solution
+in the salt.” Of this total gas phase flow, part is unstripped gas that
+simply passes through the pump bowl without mingling with that in the
+gas space. (The xenon in these "old bubbles" is treated separately below.)
+The volumetric flow rate of old bubbles into the loop is defined by the
+- flow rate from the loop and the bubble stripping efficiency, along with
+_ consideration of the bubble size and the manner in which that size is
+attained.
+
+In general, as bubbles approach the pump, they have been reduced
+from their original size by compression and cover-gas dissolution in the
+salt. Some of this size reduction (all of it for an insoluble cover gas)
+
+is recovered by expansion as the bubbles return to the lower pressure in
+
+the pump bowl. In this treatment we have assumed that all the bubbles
+have been restored to their original diameter by the time they are re-
+
+turned to the loop. For a soluble cover gas, there are two mechanisms
+
+ 
+
+% .
+
+. Throughout this analysis we have neglected the contribution of xenon
+to the volumetric and mass flow rates in the gas phase. Mole fractions of
+xenon in the cover gas are 107° or less in all regions.
+ 
+
+35
+
+‘
+that could contribute to this size restoration: agglomeration with other
+
+old bubbles and growth by entry of cover gas from the fuel salt. These
+two mechanisms represent extremes of the range of possible effects on the
+xenon behavior so, both are examined. (Merger of the bubbles with gas
+from the pump-bowl gas space to increase their size has an effect between
+these two extremes.) If the size restoration of the old bubbles is allowed
+to occur only by agglomeration with other old bubbles, the flow rate of
+this stream to the loop is the same as the unstripped part of the flow rate
+from the loop. Then the flow rate from the pump bowl gas space into the
+loop is | |
+
+| F = Yo(F, + Fp) -¥, Bie [F,(1-e)+F (L-¢e)]-F,
+where the first term on the right represents the total gas phase flow
+into the loop and the second term is the contribution to that flow from
+~ the old bubbles. If the old bubbles return to their original size by
+collecting cover gas from the salt, the old bubbles contribute more to
+
+the total flow and
+
+-
+[]
+
+YalF, + Fp) = Vs [FL - + F (1 — ed] =F,
+
+or
+
+¥a(F + Fer) - Fo.
+
+-
+[]
+
+It may be noted that if the cover gas is insoluble
+
+y,, B12 = y
+Ps
+
+3
+and the two expressions are equivalent. In each of the above equations
+for F, the final term allows for the direct ingestion of clean purge gas
+before it has an opportunity to mix with any of the other gas in the pump
+bowl. It has been suggested that at high void fractions (high rates of
+gas ingestion) the gas flow from the bubbler level elements may be drawn
+directly into the loop. - }
+
+The principal difference between the two approximations to the be-
+
+havior of old bubbles is in the effect on the xenon concentration in those
+
+bubbles, which is discussed below. The effect on the flow of pump-bowl
+ 
+
+36
+
+cover gas into the loop is small except at high bubble stripping effici-
+encies with a soluble cover gas. Even at these conditions, the effect on
+F can be approximated with the first expression by increasing the size of
+the term Fo. Consequently we used the first expression to describe the
+gas flow into the loop from the pump-bowl gas space.
+
+Equations 1 and 2, Appendix A, are the final rate equations for the
+concentrations of '®°®Xe and **®°Xe, respectively, in the pump bowl gas
+‘space. In these equations, as in all equations in the set, the region
+volume is included in the terms on the right-hand side to convert the
+absolute rates discussed above to rates of concentration change.
+
+The treatment of the liquid region in the pump bowl is largely typical
+of the treatment of all the liquid regions. That is, there are xenon
+source terms from liquid flow in, from decay of '®°I and, in the case of
+135%e, from decay of '>°®Xe. The sink terms include liquid flow out,
+xenon decay and mass transfer to the gas phase. Since the gas in the pump
+bowl is treated as two separate regions, cover gas and old bubbles, two
+separate expressions are required to describe the mass transfer, The two
+expressions use the same value for the mass transfer coefficient but they
+are otherwise independent. That is, the direction of xenon transport (to
+or from the liquid) is defined within each expression by the magnitude of
+the relevant concentrations. The rate equations for *?°PXe and '®®Xe in
+the pump-bowl liquid are Eqs. 3 and 4. !
+
+The treatment of the old gas bubbles in the pump bowl has largely
+been established by the preceding discussion of the cover-gas space. The
+primary xenon source for this region is the inflow of unstripped bubbles”
+which is defined, as before, by the inventory in the last upstream region,
+the flow rates and the assigned stripping efficiencies. The flow rate of
+xenon into this region due to the flow of unstripped bubbles is:
+
+ 
+
+.
+For '®°Xe, the source from the decay of '*°DXe must also be
+included.
+ 
+
+37
+
+Yio [F (1 - e) + F.(1 - el.
+
+However, this is an absolute rate so it is necessary to consider the
+
+volume of the bubble region in order to establish the effect of the xenon
+
+input on the region concentration. This volume depends upon the choice
+
+of the mechanism for restoration of the bubble size. If only agglomeration
+with other old bubbles is allowed, the volume is readily obtained from the
+entering bubble concentration and the liquid volume in the pump bowl.
+
+That is
+
+Fg ~ Eg) + Fel ~ €g)
+
+Ds ~ Fg + Fe
+
+Va.
+
+If the unstripped bubbles maintain their individual identities and grow
+
+by absorbing cover .gas, the region volume follows from the number concen-
+tration of the bubbles and their ultimate size. (In this lumped-parameter
+approximation, the bubbles are assumed to reach their final size immedi-
+ately upon entering the pump bowl.) . Since bubbles are assumed to maintain
+their identities in the loop, the number concentration in the salt stream
+entering the pump bowl is defined by the total rate of gas ingestion into
+the loop and the reference bubble diameter. The total number of unstripped
+bubbles that remain in the salt in the pump bowl is then given by
+
+, [Fo -E) + FQ - EY
+1 7% al ~~ F_+F
+
+ 
+
+Vs.
+f
+
+The total volume occupied by these bubbles (which now also have the ref-
+erence diameter) is
+FQ - E) + F.(1 - Ep)
+
+1
+Vip = Ys [=F +F. vse
+
+ 
+
+The entire term for xenon flow into this region is then either
+ 
+
+38
+
+r
+
+F +F
+et 1 21(22)
+
+or
+| - Pas )
+Yi, BF +E)
+TTYL, Xai(aa)
+
+depending on the mode of bubble behavior that is assumed.
+
+The xenon sink terms for the unstripped bubbles in the pump bowl are
+the gas flow out to the loop and radioactive decay. As we indicated
+earlier, the absolute magnitude of the gas flow rate of old bubbles back
+to the fuel loop depends on the mechanisms that are allowed for the bub-
+bles. This absolute rate was required to obtain the net cover-gas flow
+rate in Eqs. 1 and 2, However, the time constant for gas flow out of this
+region, or the fractional rate of throughput, is of interest here and this
+is presumed to be defined by the liquid flow rate and the volume of the
+liquid pool in the pump bowl. Hence, the term that describes the effect
+of the exit gas flow on the xenon concentration in the old bubbles is in-
+dependent of the assumed bubble behavior.
+
+The concentration of xenon in the old bubbles depends on the mass
+transfer between them and the pump bowl liquid. Thus, if these bubbles
+grow by agglomeration, the surface area for mass transfer tends to decrease
+but the xenon concentration (driving force for mass transfer) tends to
+remain high. Conversely if the bubbles grow by absorbing cover gas, their
+number remains constant and the surface area increases while the xenon
+concentration decreases. The areas for mass transfer under these two
+alternatives are readily obtained from the region volumes and the reference
+bubble diameter. However, it should be noted that the quantity of interest
+is the time rate of change of xenon concentration within this region. Thus,
+the absolute mass transfer term, which is a function of bubble area, is
+divided by the volume of the same bubbles. Consequently, with either al-
+ternative, the mass transfer term is reduced to a product of the bubble
+
+mass transfer coefficient and the surface-to-volume ratio of the bubbles.
+ 
+
+ 
+
+ 
+
+C
+
+39
+
+Since spherical bubbles are assumed, the latter factor is simply the
+constant, 6/dy. ;
+
+Fquation 11 and 12" describe the . overall xenon behavior in this
+region of the pump bowl for the assumption that agglomeration of the un-
+stripped bubbles occurs. Since the changes required for the alternative
+assumption about bubble behavior have been described, the second form of
+
+these equations is omitted.
+
+Piping =~ Pump to Reactor Core
+
+The entire section from the fuel pump to the reactor core, including
+the primary heat exchanger, was treated as a single unit in this analysis.
+This region also includes the salt downcomer in the reactor vessel and
+part of the lower head. Two pairs of equations were required, one pair for
+the liquid phase and one for the gas phase. Since the heat exchanger was
+not treated separately, the effects of changing temperatures around the
+loop on factors such as gas density, gas solubility, and mass transfer
+coefficient are neglected in this model. Most of the xenon data were
+accumulated with the reactor at 5 MW where the temperature spread in the
+primary loop was only 25°F so the neglect of such effects probably has
+little effect on the comparison of calculated and observed xenon behavior.
+
+The xenon behavior in the liquid phase of this region is described
+by Eqs. 5 and 6. The general treatment for a liquid phase has already been
+discussed and this same treatment was applied to the region in question.
+The only distinctive feature in this particular region is that the incoming
+salt originates in two regions, the main loop and the pump bowl, with
+different Xenon concentrations. ‘Thus two terms are required to define the
+Xenon source associated with salt flow in.
+
+The treatment of the gas phase (Eqs. 7 and 8) is somewhat simpler than
+in the pump bowl in that there are no gas exchange processes to be con-
+sidered. Although gas enters the region at three xenon concentrations from
+three sources, this is readily accounted for in the three source terms.
+
+Xenon exchange with the salt phase by mass transfer is represented by a
+
+single" term in each equation.
+
+ 
+
+* The numbers of the equations became scrambled in the original develop-
+ment but, since the solutions are independent of the order of presentation,
+the numbering system used in the computer program is retained here.
+ 
+
+ 
+
+40
+
+Reactor Core
+
+Several equations ‘are required to describe the phenomena in the re-~
+actor core. This is due partly to the introduction of neutron-flux de-
+pendent effects but primarily to the presence of the graphite subregions.
+
+The liquid phase (Eqs. 9 and 10) is again treated as a single region
+but with an additional source term to account for direct '®°Xe production
+from fission and a sink term for the burnup of *®°Xe. It is assumed in
+this that all of the direct production is '*°Xe (no '°°TXe) and that the
+neutron absorption cross section for !*°®Xe is negligible. In the case
+of '*°mXe, the mass transfer between the salt and graphite is described
+by a single term on the assumption that the effect of this isomer is small
+enough that small errors in describing it will have little influence on
+the overall result. The mass transfer coefficient used is that normally
+assigned to the bulk (98%) of the graphite. The use of 4 regions to
+
+f '°%Xe in the graphite dictated the use of
+
+describe the concentration o
+4 terms to represent the mass transfer of this isotope into the graphite.
+This breakdown also permitted the application of a different mass transfer
+coefficient to the central graphite region where the fluid-flow velocity
+
+is higher.
+
+Equation 13 describes the behavior of '®I in the entire reactor loop.
+It is included here because the entire iodine source is treated as direct
+production from fission in the core. Since the half life of iodine (6.7 h)
+is very long compared to the transit time for salt in the fuel loop (26 sec),
+only a single iodine concentration is computed for use in all regions of
+the model. The volume in which the iodine is dispersed is the entire salt
+volume in the loop.
+
+Five equations (14 through 18) are used to describe the xenon concen-
+tration in the graphite. As indicated earlier, only a single concentration
+is used for 133Mye while four regional concentrations are computed for
+135%. Equation 15 deals with '3°™Xe while Eqs. 14, 16, 17, and 18 treat
+the Xe in the 4 graphite regions. Both isotopes are presumed to enter
+the graphite by direct flow of cover gas into the graphite as well as by
+mass transfer from the salt. The salt mass transfer terms have already
+
+been discussed in connection with the core liquid phase. The entry of
+ 
+
+ 
+
+ 
+
+41
+
+cover gas into the graphite is treated as an exchange process in which
+circulating gas bubbles that enter the graphite are replaced by an equal
+number of bubbles at the xenon concentration near the graphite surface.
+The gas flow into the graphite is apportioned in the same way as the fluid
+flow through the core. The only sink term for '®°®Xe in the graphite is
+its radioactive decay while both decay and burnout are included for *33Xe.
+
+In principle, the sink terms within the graphite lead to a radial
+concentration profile in each stringer that has a minimum at the center.
+If the stringers are regarded as cylinders the radial profile at steady
+state is described by
+
+I (Br)
+
+C(r) = Cp IR) ,
+
+where:
+
+C, = xenon concentration at the graphite surface,
+
+R = equivalent radius of the stringer,
+
+I = zero-order modified Bessel function of the first kind, and
+2 £
+B = 5 (40 + 1).
+G
+
+The average radial concentration, still at steady state, is given by
+
+r 2 T.(BR)
+
+C = — —=——=(C._,
+
+BR Io(BR) R
+
+Thus, for the steady state condition, it does not add significantly to
+
+the complexity of the problem to describe the xenon exchange mechanisms
+
+“with the fluid in terms of the surface concentration and the internal
+
+mechanisms (burnout, decay, poisoning) in terms of the average concen-
+
+tration. The factors required to include this effect are not shown in
+
+the equations but they were added to the computer program for the steady-
+
+state calculations. Earlier studies had indicated that, for the materials
+ 
+
+42
+
+and conditions in the MSRE, the xenon profile in the graphite stringers
+had a negligible effect on the overall results. The same conclusion was
+reached in this study.
+
+Some allowance was made in the model for radial diffusion of '®°Xe
+- between the major graphite regions. Since this process was expected to
+have only a minor effect on the overall results, it was given a: relatively
+superficial treatment. A diffusion-type expression was used with the
+effective graphite area between adjoining regions and the center-to-center
+distance between them.
+
+The xenon concentrations in gas bubbles in the core are described by
+Eqs. 23 and 24. The mechanisms associated with the various terms have all
+been discussed previously and these discussions will not be repeated here.
+It should be noted, however, that the possibility of complete dissolution
+of the cover-gas bubbles was allowed for the core region in this model.
+(Non-zero void fractions were required in all the other regions.) When
+this condition was attained, these equations were eliminated and the re-
+maining 22 equations, which then completely defined the system, were
+
+*
+solved.
+
+Piping -- Reactor Core to Pump
+
+The usual conditions assumed for the xenon calculations included
+cover-gas bubbles in the core region. In these cases, the treatment of
+the piping from the core back to the fuel pump was essentially the same
+as in the other piping region discussed previously; the only difference
+is that here only one term was required to describe the gas flow into the
+region. The equations that define the xenon behavior in this section are
+Eqs. 19 and 20 for the liquid and Eqs. 21 and 22 for the gas. However,
+when complete bubble dissolution was allowed in the core, a different
+source term was required for flow into the gas region. In such cases it.
+
+was postulated that the specified void fraction developed spontaneously
+
+ 
+
+x .
+It should be noted that, under these circumstances, an additional
+
+source term was required in the core liquid equations to account for
+
+xenon entering the liquid from the bubbles in the preceding region.
+ 
+
+ 
+
+ 
+
+*
+
+43
+
+in the piping section and that an arbitrary fraction of the xenon inven-
+tory in the salt appeared with the bubbles. A further requirement was
+that the new bubbles appear at the same number concentration that existed
+in the remainder of the system. The xenon flows into the liquid region
+were then reduced by the amount of the flow into the gas region. Although
+this process is not very realistic from a physical standpoint, it provides
+a reasonable approximation when used in a lumped-parameter model. The
+modified equations to deal with this special situation are shown as Egs.
+19a through 22a.
+
+Nuclear Considerations
+
+Although the primary purpose of this report is to examine the effects
+of a variety of non-nuclear parameters on the xenon behavior, nuclear
+burnup of '®°Xe is a significant mechanism in this overall behavior. In
+addition, the principal comparison between calculated and observed behavior
+is made on the basis of the reactivity effect of the xenon. Therefore, it
+
+is necessary to use at least an internally consistent treatment of the
+
+nuclear effects in the model. The absolute accuracy of this treatment is
+
+of relatively minor importance because any errors simply produce changes
+in scale that are only slightly affected by the choice of other parameters.
+As we will show later, the pattern of xenon behavior is defined largely by
+the non-nuclear parameters so comparisons of these patterns do not depend
+
+heavily on the nuclear model.
+
+Xenon Burnup — Burnup is assumed to depend only on the average concen-
+tration and effective neutron absorption cross section of the xenon and the
+average neutron flux in any particular core region. That is, local vari-
+ations in flux due to the presence of the xenon are neglected. Published
+values®® of the effective cross section and average flux in the MSRE with
+23%y fuel were used in this model. Since the fluid phases (liquid and gas)
+
+were each treated as single regions in the core, the core averaged neutron
+
+fluxes were used directly. However, regionally averaged fluxes were re-
+quired for the various graphite regions. These values were obtained from
+
+‘the radial distribution of the thermal flux at the core midplane and the
+
+region radii defined for the xenon model with normalization to the overall
+
+average flux.
+44
+
+Reactivity Effect — The reactivity effect of xenon is defined by the
+following equation: : :
+
+Xe.
+a’
+
+(Sk/k) ¢ =aX ©
+a =. the reactivity coefficient for a neutron absorber
+X = the overall, importance-averaged concentration of *®®Xe, and
+
+or" = .the effective xenon absorption cross section.
+
+i -
+The value of a for the 2?°°U fuel loading was taken as -174 for this
+study.®“ For the MSRE core, in which the graphite volume fraction is 0.775,
+the average concentration is given by
+- 0.775
+X = 0.225 [(1 = ¥s) X10 + ¥s X24] + v [I:0 X10 + T16Xa6 +
+
+G
+
+ 
+
+I,,X17 + I;eX1e]
+
+where
+
+Yq = the graphite void fraction and
+
+I = the relative nuclear importances of the graphite regions.
+Because of the similarity of the neutron flux shapes with the *®°U and *°°U
+fuels, relative importances that had previously been evaluated for the **°U
+
+loading®® and the same geometry were used.
+
+Bubble Models
+
+Throughout the foregoing discussion of xenon behavior, the volume of
+undissolved cover gas in each liquid region of the model was treated as a
+known quantity. For the case of a totally insoluble gas, the void frac-
+tions and the bubble surface areas are completely specified by selecting
+a core void fraction and a reference bubble diameter. Variations in the
+
+void fraction around the loop are produced only by differences in the total
+ 
+
+ 
+
+ 
+
+45
+
+pressure in the various regions and these are known. Thus, for an insol-
+uble cover gas, the factors describing the void fraction were incorporated
+in the xenon calculations.themselves. However, when mass transfer of
+cover gas between the gas and liquid phases occurs, the void fraction in
+
+a given region depends on a number of variables: gas solubility, residence
+time, mass transfer coefficient, bubble area, and concentrations. Since
+the equations required to treat the cover-gas conditions are nonlinear, it
+was expedient to calculate separately the void conditions and then use
+those results in the xenon calculations. Furthermore, we were concerned
+primarily with the xenon behavior at established void-fractions so only
+the steady-state void conditions were calculated.
+
+The lumped parameter model, Fig. 11, used to describe the cover-gas
+conditions used essentially the same loop regions that were used in the
+xenon model. However, the existence of fewer behavior mechanisms for the
+cover gas, along with the need to deal with only one gas, considerably
+simplified the mathematical treatment. In the pump bowl we assumed that
+all bubbles drawn into the circulating loop were of the same reference
+size. (The same assumption was used in the xenon model.) Since the cover
+gas concentration, or partial pressure, in these bubbles was defined by the
+system overpressure, bubbles of unstripped cover gas from the loop were
+identical with new bubbles from the gas space and directly ingested purge
+gas. Therefore, only one region was required to describe the gas in the
+pump. In the liquid region it was apparent that the dominant term for
+stripping dissolved gas was the contacting with the cover-gas region so
+only one mass-transfer term was used. The assumption in the core that any
+cover-gas transport (by mass transfer or direct flow) into the graphite was
+balanced by an equivalent flow back to the fluid in the core completely
+. eliminated the graphite from consideration in the steady-state analysis of
+the cover gas conditions, The discussion, below, of the equations used to
+calculate the bubble conditions follows the same general course as that
+for the xenon equations. However, the subscript numbering system was
+changed to conform to the smaller number of variables in this model.
+
+Briefly stated, the model is required to compute the void fraction in
+
+each of three regions of the loop from an assumed void fraction, or rate
+ 
+
+ 
+
+46
+
+ORNL-DWG 71-8030
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+PUMP BOWL
+
+’ T A
+[1 M
+[ GAS SPACE H
+1 2 f
+f J
+f
+b .
+/ QUID
+1 | LiQu! f
+f Z2, Ya f
+A
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+fm]
+=
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+} =F “<== 4 | ——= =<
+4 M1
+
+H J ’ 4
+| ool [od | ImBrN
+1
+
+| leas ! eas] |
+| eussLes  T'OVI0 4 eee ano fl TOF BUBBLES |
+| | zg o—el 27] [irene CHEAT ff | <3 z, | |
+J vo | | EXCHANGER[| | wv, |
+1 |
+4 1 1} 1
+! f f
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Hh LIQUID
+Zg, ¥5
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+GAS BUBBLES
+Y Ze
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 11. ' Lumped-Parameter Model for Cover-Gas Calculations.
+ 
+
+ 
+
+ 
+
+47
+
+of cover-gas ingestion in the pump bowl. Since these void fractions depend
+on the amount of gas dissolved in the liquid, the gas concentrations in the
+four liquid regions are also dependent variables. The gas concentrations
+in the bubbles were treated as known quantities. Thus, we have 7 inter-
+dependent variables which require 7 material balance equations for a com-
+plete description. Equations 25 through 31 were used for this purpose.
+
+In general, each term is written as a combination of constant coefficients
+times a function of the dependent variables. The number of terms contain-~
+ing two dependent variables is an indication of the degree of nonlinearity
+of the equations,
+
+Equation 25 describes the time rate of change of cover-gas concen-
+tration in the liquid in the pump bowl. The first term is the source due
+to liquid flow into the region while the second term represents the liquid
+flow out. The final term represents the rate at which cover gas is
+stripped from the liquid into the gas space across a surface area, As
+defined by the agitation in the pump bowl. Mass transfer between the
+liquid and old or unstripped bubbles was neglected since the driving force
+for such transfer would be. the same as for transfer to the gas space and
+the available area was much smaller. In this region, as in all liquid
+regions, the appropriate volume is the volume of liquid in it. In the
+pump bowl, this is defined by the amount of foaming or agitation rather
+than by the rate of gas ingestion into the loop. Hence this volume was
+allowed to be independent of the void fraction in the stream returning to
+the loop. In the other liquid regions, the total volume is fixed by the
+region size and an adjustment must be made for the void fractions that
+exist there, Co oo Co
+
+Equation 26 describes the conditions in the first liquid region down-
+stream from the pump. Two terms are required to differentiate between in-
+flow from the main loop and inflow from the pump bowl; the third term
+represents flow out. The mass-transfer term depends on the area that is
+available and this area is expressed in terms of the void fraction as de-
+scribed below. B oo
+
+Throughout this treatment we assume that each bubble in the loop main-
+tains its individual identity at all times. Then the number concentration
+ 
+
+ 
+
+48
+
+of bubbles in the circulating fluid is defined by the. rate of gas ingestion
+
+and the reference bubble size:
+J
+
+N = Ya
+N= era
+
+The total bubble area in any region is then
+
+A, = N md? v
+
+i i vy
+or
+1 2
+A 6 ¥2 da; v i
+1" d
+R
+’ 1
+However, at constant N
+.
+So. 4
+dg ta
+
+or
++
+dg (¥,/¥a) -.
+Then substitution into the expression for Ay leads to
+
+A; = 6/dy oF vy.
+Since the final equations are written in terms of concentration, the
+region volume cancels out in the final expression.
+
+The next two equations, 27 and 28, treat the remaining two liquid
+regions in the same way as those already discussed.
+
+The remaining equations (29, 30, and 31) describe the void fractions
+in the three regions of the fuel loop. In each case the first term (two
+ 
+
+ 
+
+ 
+
+terms in Eq. 29) represents the flow of undissolved gas into the region
+and the next term represents the flow out, The final term in each equa-
+tion describes the mass transfer between the gas and liquid phases.
+
+We indicated earlier that the cover gas concentrations or partial
+pressures within the bubbles are regarded as known quantities. This im-
+plies that the gas pressure inside a bubble is a function of the liquid
+static pressure only. In general, the total pressure inside a bubble is
+the liquid static pressure plus a contribution due to the surface tension
+of the liquid.” That is: oo
+
+Py
+
+For the MSRE fuél salt, the surface-tension effect is ~0.4 psia on a 10-mil
+diameter bubble and ~4 psia on a 1-mil bubble. Thus, for very small bub-
+bles, the driving force for mass transfer out of (or, the resistance to
+mass transfer into) the bubble increases sharply with decreasing diameter
+-and very small bubbles tend to dissolve completely. Such dissolution
+would tend to supersaturate the liquid and cause other, larger bubbles to
+grow in size. This process may impose a lower limit on the size of the
+bubbles that can circulate with the salt. However, the effect on the over-
+all void behavior is small. For the initial bubble sizes considered in
+this analysis (around 10 mils), by the time the bubbles have been suffici-
+ently reduced in size by dissolution for the surface tension effect to be-
+come important, so little gas inventory remains in the bubbles that its
+transfer to the liquid has’ a negligible effect on the liquid concentration.
+Therefore, in cases where bubbles exist in all regions of the model, the
+surface tension effect on cover gas bubbles is neglected. Complete disso-
+lution is, however, still allowed in the xenon model where it must be
+
+treated as a special case anyway.
+
+ 
+
+If the liquid itself .has a significant vapor pressure, the gas
+partial pressure is reduced by that amount. However, the fuel-salt vapor
+pressure was entirely negligible at the conditions encountered in the
+MSRE.
+ 
+
+ 
+
+50
+
+Solution of Equations
+
+Computerized procedures for solving the above systems of equations
+were largely available. The purpose of this section is simply to indicate
+the general methods and programs used to obtain the required solutions.
+
+Steady-state solutions for the non-linear equations used to describe
+the behavior of a soluble cover gas were obtained with a pseudo Gauss-
+Seidel technique." The typical ‘computing time required to obtain a solu-
+tion was 1 sec on the IBM 360/75. No transient solutions were obtained
+for these equations since each xenon calculation was made for a fixed’
+void fraction. oo
+
+Two types of solutions were obtained for the xenon equations, Steady-
+state solutions were adequate for most of the xenon parameter studies;
+these were obtained with the aid of an ORNL library subroutine maTQ™
+which solves the simultaneous, linear algebraic equations that result
+from the assumption of steady state. The time required for such solutions
+was typically 2 sec on the IBM 360/75. Xenon buildup and removal transi-
+ents were calculated with MATEXP,3® Normally, the transient was calculated
+for 40 hr in time increments of 0.015 min. These solutions required about
+- 4 min of computer time on the IBM 360/91. Because of this long computing
+time, only a limited number of transients was calculated. The results of
+each xenon calculation, steady-state or transient, were converted to reac-
+tivity within the computer programs.
+
+One of the more time-consuming tasks associated with the use of the
+above computer programs was the calculation of the individual terms in the
+coefficient matrix for the xenon equations. A computer subroutine was
+written to calculate the coefficients from the various input parameters.
+This subroutine also made the necessary conversions from the various
+
+engineering units used with the input parameters to a consistent set of
+
+ 
+
+* .
+‘This approach was suggested by C. W, Nestor and implemented by
+T. J. Tyrrell, both of the ORNL Mathematics Division.
+
+%%
+MATQ is an ORNL adaptation of the CO-OP subroutine MATALG which uses
+Gaussian elimination with partial pivoting to produce the solution.
+ 
+
+ 
+
+ 
+
+51
+
+metric units. Thus, the problem could be specified in familiar (but mixed)
+units without the need for multiple manual conversions. This routine pro-
+duced a coefficient matrix that could be used by either MATQ or MATEXP, as
+
+required,
+
+ANALYSIS OF MSRE COVER GAS AND '®°XE BEHAVIOR
+
+The mathematical models described in the preceding chapter were used
+in an extensive calculational study to see what combinations of the various
+mechanisms and parameter values were required to calculate xenon behavior
+modes like those observed in the MSRE. Of particular interest in this re-
+gard was the -very large difference in the variation of the steady-state
+xenon poisoning with core void fraction when argon was ‘substituted for
+helium as the system cover gas. Consequently, a large part of the study
+was aimed at describing this phenomenon. In addition to the steady-state
+calculations, we performed a number of xenon transient calculations to try
+to verify the results of the steady-state correlations.
+
+In the ensuing sections of this chapter, following a general discus-
+sion of the parameter variations that were allowed, we describe first the
+calculated variation in the cover-gas void fraction around the MSRE fuel
+loop when solubility effects are included. In addition to supplying needed
+input for the xenon calculations, these results provided a basis for re-
+stricting the ranges of some parameters. We found, for example, that the
+initial bubble diameter (within a reasonable range) and the salt-to-bubble
+mass transfer coefficient had little effect on the void fractions in the
+rest of the loop for a given core vold fraction. Consequently the xenon
+calculations were all made for void fractions established for 10-mil bub-
+bles with a mass transfer coefficient of 2 ft/hr.
+
+With the cover gas behavior established, we proceed with a discussion
+of the steady-state *®5Xe calculations. The first step is to show that,
+for similar parameter values and an insoluble cover gas, the model that
+we, have developed gives essentially the same results as those predicted
+by earlier models. We then show that simply adding cover-gas solubility
+
+effects to these parameters, even with wide variations in bubble stripping,
+ 
+
+ 
+
+52
+
+is inadequate to describe the observed steady-state '**
+
+Xe poisoning with
+helium cover gas. At this point we introduce an additional mechanism for
+xenon transport to the graphite and show that this mechanism, along with
+what appear to be reasonable xenon stripping parameters, produces results
+that fit the reactor experience with both helium and argon cover gas.
+
+The final section of this chapter describes the results of xenon
+transient calculations. One purpose of the transients was to see if para-
+meter values that appeared to describe the observed steady-state xenon
+poisoning could also describe the observed transient behavior. These cal-
+culations were regarded as further tests of the adequacy of both the model
+and the parameter values. . The transient calculations also provided a means
+for separating the effects of some of the parameters. It was found that
+some parameters which had almost no effect on the steady-state results
+
+could significantly affect the transients.
+
+System Parameters
+
+The various physical parameters required to describe the xenon behavior
+have already been discussed, at least implicitly, in the development of the
+mathematical equations. However, the model was developed in a way that
+would permit its application to systems other than the MSRE. Therefore, _
+many of the quantities that are required as input parameters are defined
+
+by the physical description of the MSRE and the operating conditions.
+Additional parameters are fixed by the physical properties of the materials
+involved and the mechanisms that are considered. These considerations
+
+still leave a number of parameters that can be allowed to vary over rela-
+tively wide ranges in the calculations. .It was clear that purely arbitrary
+selection of even these parameter values would be capable of describing
+
+any and all xenon results. Therefore, restrictions were imposed on the
+selection of values. For parameters that were allowed to vary with void
+fraction, the basic principles involved in the variation were applied
+equally to the calculations with both cover gases. All parameters were
+required to vary smoothly with the void fraction. That is, discontinuities
+or reversals in functional dependencies were avoided. Table 4 lists all the
+
+parameters that were involved in this study. Most of these quantities were
+ 
+
+ 
+
+53
+
+Table 4
+
+Parameters Used to Calculate Xenon Behavior in MSRE
+
+Definition Units Value
+
+ 
+
+Fixed Parameters (Range)
+
+Absolute pressure in model region:
+
+1 : psia © 19.7
+
+3 " 19.7
+
+5 " 46.1
+
+9 on" 37.9
+
+14 through 18 : " : 37.9
+
+19 | "~ 32.7
+Fluid volume in model region
+
+1 ft 1.5
+
+3 " 3.2
+
+5 " 28.8
+
+9 " 25.0
+
+19 : | " 13.5
+Gas volume in model region:? .
+
+14 co = ft® 0.137
+
+15 " 6.918
+
+16 : " © 1.133
+
+17 " 1.916
+
+18 : " 3.732
+Fluid Flow Rates
+
+Total salt flow . gpm 1200
+
+Salt through spray ring no 50
+
+Salt fountain flow : wo 15
+
+Gas purge of pump bowl Ea %/min . 8.08
+Fractional salt flow rate through region:
+
+14 TL - 0.0198
+16 : : - 0.1673
+17 - : 0.277
+18 : : - © 0.5395
+
+Salt-to-graphite surface area in region: :
+14 ft? 30.1
+15 (total) ) " 1520
+16 " 248.8
+17 : n 421.0
+18 n 820.0
+
+ 
+
+%Based on 10% accessible void volume in graphite,
+ 
+
+54
+
+Table 4
+
+(continued)
+
+ 
+
+ 
+
+¥rspunes 18% of total '**Xe yield is direct.
+
+®Yariations in this parameter investigated separately.
+
+Based on a fluid volume fraction of 1.0.
+
+Definition Units Value
+(Range)
+Graphite-to-graphite surface area
+between regions:
+14 and 16 fe? 4.5
+16 and 17 " 10.8
+17 and 18 " 15.9
+Direct fission yield of 135g .bsc atoms /Mw-Sec 3.437 x 10%“
+Direct fission yield of 1351b,0 " 1.567 x 10°
+Fraction of '*°I decays to 1ssmy C - 0.3
+Fraction of I decays to **°xe° - 0.7
+Decay half-life of:
+1887 min 402
+133mye " 15.3
+13s5y. n" 552.
+Burnup Coefficient for '*®Xe in Region:
+9 (salt or voids) (mw sec)? 4,75 x 10°°
+14 (graphite) " 5.76 x 10~¢
+16 " " 7.29 x 10°¢
+17 " " 6.47 x 10°¢
+18. " " 3.09 x 10°
+Reactivity Coefficient of '**Xe in Region:
+9 (salt or voids)? a (8k/k) (atom/ce) =0.517 x 10°
+14 (graphite void space) " -0.791 x 10-**
+16 (graphite void space) " -0.669 x 10-'7
+17 (graphite void space) " © ~0.699 x 10~'7
+18 (graphite void space) n -0.334 x 10™*'7
+Henry's Law Constant for Xenon moles/cc-atm 3 x 10°
+Henry's Law Constant for Helium " 1.26 x 10-7
+Loop temperature °F 1200
+Graphite diffusion coefficient’ ft?/hr 10=¢ - 10~7
+55
+
+- Co Table 4
+
+(continued)
+
+ 
+
+Mw
+
+Definition Units Value
+oo (Range)
+Effective Radial Distance Between Regions
+14 and 16 in. 5.95
+16 and 17 " 7.4
+17 and 18 " 7.95
+Variable Parameters
+Mass Transfer Coefficient, salt to gas ft/hr 1-15
+Mass Transfer Coefficient, salt to graphite
+in bulk of core ft/hr 0.01 - 0.18
+Mass Transfer Coefficient, salt to graphite,
+in central core region (14) ft/hr 0.06 - 1,14
+Area for Mass Transfer from salt to Cover
+Gas in Pump Bowl ft? 0 - 700
+Reference Bubble Diameter in. 0.005 - 0.020
+Core Void Fraction® Z 0.02 - 0.7
+Bubble Stripping Efficiency for:
+Spray Ring Flow | Z 0 - 100
+‘Fountain Flow Z 0 - 100
+Direct Bubble Flow to Graphite L/min 0 - 2.7
+Clean Cover Gas Flow into Loop 2/min 0 - 0.6
+Reactor Power 0.01 - 8
+
+ 
+
+that in the core.
+
+ais at
+
+ 
+
+ 
+
+ 
+
+ 
+
+®Void fractions in other regions were calculated to be consistent
+
+with
+ 
+
+ 
+
+56
+
+used as direct input to the computer programs. However, some of the values
+were combined to reduce the total amount of input required. The first part
+of the table lists those parameters that were fixed, or at least limited to
+narrow ranges for most of the calculations. The second part includes those
+parameters whose values were manipulated in the course of the calculations.
+In both cases the values or ranges of values are listed with the parameters.
+Some of the parameter ranges are quite wide and many calculations were made
+which failed to produce the desired results. In the following sections we
+will describe only those results that best illustrate the conclusions.
+
+Cover Gas Calculations
+
+As we indicated in the development of the equations for the cover-gas
+model, the purpose of these calculations was to define the circulating void
+fractions in the various regions of the xenon model. Since these calcu-
+
+- lations are significant only for a soluble gas, this section deals only
+with the conditions for helium cover gas. (In this study the reactor re-
+sults with argon were compared to computations made with an insoluble
+cover gas, for which the void fractions were evaluated within the xenon .
+. model itself.) |
+
+The helium void fractions in various regions of the system model are
+best described in terms of the ingested void fraction; that is, the void
+fraction in the salt returning to the circulating loop from the pump bowl.
+This quantity was varied from 0.05 to 1.5%. Other parameters of interest
+were the initial size of the bubbles, the rate of helium stripping from
+the liquid in the pump bowl, and the coefficient for mass transfer between
+the bubbles and the liquid. It may be noted that bubble stripping effici-
+encies are immaterial because, in a single gas model, all the bubbles have
+the same composition and all are presumed to enter the loop at the same
+size.
+
+Figure 12 shows the calculated void fractions in the three regions of
+the circulating loop as a function of the ingested void fraction for three
+initial bubble sizes. These curves were calculated for a fixed mass trans-
+fer coefficient between bubbles and liquid in the loop.. Since the liquid
+stripping is represented as a mass transfer process with the same gas- o/
+
+liquid mass transfer coefficient that is used for bubbles in the loop,
+
+a
+ 
+
+ 
+
+ 
+
+ 
+
+Fl
+
+1.0
+0.9
+08
+0.7
+0.6
+0.5
+
+0.4
+
+LOOP VOID FRACTION (%)
+
+0.3
+
+0.2
+
+0.1
+
+57
+
+ORNL~DWG 71-8035
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+I FT
+MASS TRANSFER COEFFICIENT,
+- BUBBLES TO LIQUID : 4 f1/hr
+PUMP BOWL LIQUID STRIPPING
+COEFFICIENT : 240 #t3/hr
+INITIAL. BUBBLE SIZE : 4 DOWNSTREAM
+s OF CORE
+j—— meme 5 mils
+~— 10 mils
+———— 20 mils
+CORE
+UPSTREAM
+OF CORE
+/
+/ pr
+ly
+i”
+7/0
+NY
+7"
+7
+” |
+7 :
+0 0.5 1.0 1.5
+
+INGESTED VOID FRACTION (%)
+
+Fig. 12. Calculated Helium Void Fractions in MSRE Loop — Effect of
+
+Ingested Bubble Size.
+
+ 
+ 
+
+58
+
+the significant parameter in the pump bowl is the product of that coef-
+ficient and the effective interfacial area. This product is designated
+
+as the pump bowl liquid stripping coefficient, a constant for Fig. 12.
+This figure illustrates that the circulating void fraction is relatively
+insensitive to bubble size, at least for the conditions that prevailed in
+the MSRE. This is due at least partly to the fact that, as the fluids
+travel around the loop, the mass transfer changes from dissolution of gas
+in the liquid to evolution of gas from the liquid. Thus, the gas and liq-
+uid are never very far from an equilibrium condition. -
+
+The most significant feature of these curves is their displacement to
+the right of imaginary straight lines, with similar asymptotic slopes, that
+pass through the origin. The lines through the origin would describe the
+behavior of an insoluble gas so, the displacement is a measure of the
+amount of helium dissolved in the salt. Such helium dissolution tends to
+concentrate any xenon ingested with the bubbles and thus reduces the capa-
+city of the bubbles to accept xenon from the salt. This effect tends to
+become more important at low void fractions where most of the ingested gas
+dissolves.
+
+It may be noted that, although the curves are nearly straight over
+most of the range, they all break toward the origin at very low void
+fractions. This bending reflects a limitation in the model which allows
+bubbles to exist at all diameters. If the effect of liquid surface tension
+on the bubbles had been included, the curves would have intersected the
+abscissa at the point where complete dissolution occurred. Thus, this
+model does not accurately predict the amount of gas that must be ingested
+_ to attain very small void fractions. However, for the values considered,
+the surface tension effect becomes significant only for very low void
+fractions as illustrated by the following example.
+
+The calculation for 10-mil bubbles predicts a void fraction of 0.088%
+in the region upstream of the core when the ingested void fraction is 0.5%.
+This reduction in void fraction implies a bubble size of 5.6 mils in that
+region for which the effect of surface tension on the internal bubble
+pressure is 0.71 psi. The helium concentrations are such that the driving
+
+force for gas dissolution is 7 psi. Hence, inclusion of the surface-tension
+ 
+
+ 
+
+59
+
+effect would have changed the driving force by only ~10%. These and other
+similar figures indicate that the calculated helium void fractions are
+reasonable for core void fractions down to 0.05 to 0.1%. At lower values,
+the calculation tends to underestimate the amount of helium that must be
+ingested to achieve a given void fraction in the core.
+
+Figures 13 and 14 show the effects on the circulating void fractions
+produced by variations in the coefficient for mass transfer between the
+liquid and bubbles in the loop.. The results are shown on separate figures
+to avoid some of the line intersections near the origin. These results are
+for a single initial bubble size and a fixed stripping coefficient in the
+pump bowl, Although there is little dependence on mass transfer coef-
+ficient in two of the regions, the effect is quite pronounced in the region
+just upstream of the core. This results not only from the closer approach
+to equilibrium with the higher coefficient but also from a shift in the
+equilibrium void fraction. As would be expected, the higher mass transfer
+coefficient allows better helium stripping from the liquid (and the devel-
+opment of a higher void fraction) in the region downstream of the core.
+Some of this liquid is then subjected to further stripping in the pump bowl.
+Then, when the two liquid streams are merged to enter the region upstream
+of the core, the liquid has a greater capacity to accept helium from the
+bubbles, which leads to a lower equilibrium void fraction in that region
+for a given rate of gas ingestion. |
+
+Figures 15 and 16 show the effects of changing the rate of gas strip-
+ping in the pump bowl. (Again, two figures are used to present the results
+for the three regions only in the interest of clarity.) These figures show
+that the vold fractions are far more sensitive to changes in stripping than
+to either of the other two parameters considered. This sensitivity is due
+primarily to the greater capacity of the liquid to accommodate gas after
+it has been more thoroughly stripped in the pump bowl.
+
+The liquid stripping rates used to produce these curves were defined
+in terms of a mass transfer coefficient and an effective interfacial area.
+However, other authors (Ref. 17) have described this general process in
+terms of a "stripping efficiency." This efficiency is defined as the ratio
+
+of the change in gas concentration experienced by the salt flowing through
+ 
+
+60
+
+: . ORNL-DWG 71-8036
+08 T T
+INITIAL BUBBLE SIZE: 10 mils
+PUMP BOWL LIQUID STRIPPING
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.7 — COEFFICIENT : 240 ft3/hr
+MASS TRANSFER COEFFICIENT, /
+BUBBLES TO LIQUID : . J
+0.6 — ===1ft/br 7
+- — a fi/hr p)
+~ ee 24 f1/hr 4 /
+k ) Ar
+2 0.5 2] VV
+- — /, -
+i /
+g J
+a *
+ww 0.4 vy
+o : 77 /
+S ¢ 7/
+w 0:3 : 777
+oc ly ’
+8 / / :
+J,
+0.2 4 3
+/
+LY .
+. . / /
+0.4 - 25 v
+>
+0 op
+0 0.5 1.0 1.5
+
+INGESTED VOID FRACTION (%)
+
+Fig. 13. Calculated Helium Void Fractions in MSRE Core — Effect of
+Mass Transfer Coefficient.
+61
+
+ORNL-~DWG 71-8037
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1.0
+INITIAL BUBBLE SIZE: 10 mils
+PUMP BOWL LIQUID STRIPPING
+I — COEFFICIENT: 240 ft%hr
+MASS TRANSFER COEFFICIENT, /l DOWNSTREAM
+BUBBLES TO LIQUID: .// OF CORE
+0.8 I ee { ft/hr —
+4 ft/hr y
+wwe 24 ft/hr 74
+y/4
+/
+9 g
+Zz 06
+5 /
+a 7 /
+& A |uPsTREAM
+o / OF CORE
+S yy
+g 04 A
+a
+g /
+0.2
+0 ”
+0 0.5 10 1.5
+
+INGESTED VOID FRACTION (%}
+
+Fig. 1k. Calculated Helium Void Fractions in MSRE Piping — Effect
+of Mass Transfer Coefficient.
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+62
+
+ORNL-OWG 71-8038
+
+ 
+
+1.0 T
+
+INITIAL BUBBLE SIZE: 10 mils
+MASS TRANSFER COEFFICIENT,
+— BUBBLES TO LIQUID: 4 ft/hr
+
+ 
+
+PUMP BOWL LIQUID
+| STRIPPING COEFFICIENT:
+—— 40 ft¥/hr
+
+- 240 f13/hr /
+—-— 480 ft%hr /
+
+0.8
+
+ 
+
+ 
+
+ 
+
+ 
+
+oO
+»N
+N
+RN{
+\.
+
+ 
+
+ 
+
+Oo
+H
+NN
+N
+IN
+Ny
+- N]
+
+CORE VOID FRACTION (%)
+NN,
+N
+
+/ / /
+
+7
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+/ .
+0.2 + 7, A
+/ / /
+A /17 j
+/ A
+0 LA
+0 0.5 1.0 1.5
+
+INGESTED VOID FRACTION (%)
+
+Fig. 15. Calculated Helium Void Fractions in MSRE Core — Effect of
+Pump-Bowl Liquid Stripping.
+ 
+
+63
+
+ORNL-DWG 71-8039
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+10
+INITIAL BUBBLE SIZE: 10 mils A
+MASS TRANSFER COEFFICIENT, /
+| BUBBLES TO LIQUID: 4 f1/hr 7
+PUMP BOWL LIQUID STRIPPING /  |loownstrEAM
+COEFFICIENT: J A[oF core
+0.8 | === 40 f13/hr
+240 t3/hr 4
+— -— 480 1¥/hr / J
+/ /
+—_ / J
+8 ; VI
+Zz /f / ’
+S06 — A
+; 171
+a UPSTREAM
+& / // J [oF Core
+a 4 f
+s 1 / / / I
+2 04 / / ,-
+g / A 7
+rr AS A
+/ A / / ’
+/ W/L
+/ // /
+02 / /
+‘AH
+> / /
+f yd / # A
+ANAL
+fo) / P ~~
+0 0.5 1.0 1.5
+
+INGESTED VOID FRACTION (%)
+
+Fig. 16. Calculated Helium Void Fractions in MSRE Piping — Effect of
+Pump-Bowl Liquid Stripping.
+ 
+
+ 
+
+64
+
+the pump bowl to the change that would occur if equilibrium were estab-
+
+" lished between the gas and liquid phases. Since the calculations of the
+“.void fractions also produced liquid concentrations for each of the regions,
+such stripping efficiencies are readily extracted from the results. The
+correlation between the stripping coefficients employed in these calcula-
+tions and the net liquid stripping efficiencies for helium are shown in
+Table 5. Some minor variation in stripping efficiency with void fraction
+was evident at each value of the stripping coefficient. However, the vari-
+ations are small enough to be entirely attributed to precision limits in
+
+the calculations.
+
+Table 5S
+
+Comparison of Liquid Stripping Coefficients
+And Stripping Efficiencies for Helium
+
+Liquid Stripping Stripping
+Coefficient Efficiency
+(£t®/hr) %)
+
+40 7.1 - 7.2
+240 30.7 - 30.9
+
+480 47.0 ~- 47.2
+ 
+
+wr
+
+ 
+
+ 
+
+ 
+
+ 
+
+65
+
+Several intermediate conclusions may be drawn from the calculations
+
+of helium void fractions in the MSRE:
+
+1. The calculational model appears to give reasonable results down
+to core void fractions of 0.05 to 0.1 vol. %.
+
+2, For core void fractions below about 0.05%, the neglect of liquid
+surface tension effects on the bubbles leads to an underestimate
+of the amount of gas that must be ingested to establish a given
+void fraction.
+
+3. For the range of bubble sizes believed to exist in the MSRE
+(5 to 20 mils), the effect of bubble size on the void fractions
+around the loop is small enough to be neglected for most purposes.
+
+4. For the expected values of mass transfer coefficient between
+bubbles and liquid (2 to 6 ft/hr), the void fractions in the core
+are nearly independent of the mass transfer coefficient.
+
+5. The void fractions around the loop do depend rather heavily on the
+amount of liquid stripping that is postulated to occur in the
+pump bowl.
+
+Steady State Xenon Calculations
+
+A large number of calculations was performed to see if the steady
+state xenon poisoning observed in the MSRE could be duplicated by the
+model described in this report, Of primary interest were the variations
+with core void fraction and the differences between helium and argon cover
+gas. These calculations took the form of parameter studies in which se-
+
+‘lected parameters were varied, more-or-less arbitrarily, to determine their
+effects. As a result of these calculations, which ultimately reproduced
+the observed behavior reasonably well, we were able to identify some para-
+meters and postulated mechanisms that appear to be quite significant in
+the ‘overall description.
+
+The parameter studies were , made by first postulating mechanisms and
+functional dependences of these mechanisms on the core void fraction. Then
+
+. calculations of the xenon poisoning were made to see how the results were
+
+affected. Because of the trial-and-error nature of this approach, many
+
+combinations were tried that added very little to the final result. It
+ 
+
+ 
+
+66
+
+would not further the objective of this report to discuss all of the unsuc-
+cessful trials. However, some of these will be described in order to show
+the kinds of effects that were obtained. |
+
+The first calculations. that were performed assumed an insoluble cover
+gas and the results were compared to the reactor experience with argon
+cover gas. In the absence of other information, mechanisms and parameter
+values were assigned that were similar to those used in earlier studies.
+More specifically, bubble diameters around 10 mils were assumed with low
+efficiencies (10% or less) for bubble stripping in the pump bowl. Since
+liquid stripping efficiencies in the range of 7 to 15% had been projected,
+‘1iquid stripping coefficients around 160 ft*/hr were used. (These coef-
+ficients produced reasonable efficiencies and the effective interfacial
+areas required in the pump bowl appeared to be in the right range for the
+measured pump-bowl void fractions.) The mass transfer coefficient between
+bubbles and salt was set at 4 ft/hr., The only mechanism for transport of
+
+xenon from the circulating fluid to the graphite was assumed to be mass
+
+transfer from the liquid. The mass transfer coefficients of 0.06 ft/hr for
+
+the bulk of the graphite and 0.35 ft/hr for graphite in the central core
+region were the same as those recommended by Kedl.!? No direct ingestion
+of clean cover gas into the circulating loop was allowed. All of the
+remaining computational parameters were set to the nominal values implied
+by the operating conditions and the design of the MSRE.
+
+Figure 17 shows a comparison between the observed xenon poisoning
+with argon cover gas and one set of values calculated for an insoluble gas
+with the parameters enumerated above. For these particular calculations,
+the reference bubble diameter was fixed at 10 mils for all core void
+fractions. The bubble stripping efficiency was assumed directly propor-
+tional to the core void fraction and was assigned a value of 10% when the
+core void fraction was 0.7%. The liquid stripping coefficient in the pump
+bowl varied from 160 ft®/hr at a core void fraction of 0.05% to 186 ft*/hr
+at 0.7%; the values were assumed proportional to the fuel pump speed re-
+quired to produce the various void fractions. These results, and others
+using slightly modified bubble stripping efficiencies and liquid stripping
+
+coefficients, indicated that essentially any desired degree of agreement
+
+"
+67
+
+ORNL—DWG 71-8040
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+10
+—
+gos
+«©
+RB
+2 0.6 NG
+Z NN
+3 04 ~~.
+Oo _
+a >
+3 z —
+u 0.2
+0)
+* 0 oO. 02 03 04 05 06 - OF
+
+CORE, VOID FRACTION (%)
+
+Fig. 17. Calculated and Observed Steady-State Xenon Poisoning with
+Argon Cover Gas — Low Bubble Stripping Efficiency.
+
+ 
+ 
+
+ 
+
+68
+
+between the observed and calculated poisoning values could be obtained by
+"properly selecting" the values of these two parameters. The conclusion
+indicated by the results is entirely consistent with earlier conclusions®’
+about the variation in xenon poisoning with void fraction when the cover
+gas is insoluble. This conclusion is that no special mechanisms, models,
+or parameters are required to describe this condition.
+
+There remains, however, one point of difference between these results
+and the overall reactor experience — the bubble stripping efficiencies.
+
+As we indicated earlier, excess bubbles were removed from the MSRE circu-
+lating loop with cFficiencies near 100%. If, as seems reasonable, the
+sizes of the circulating bubbles were determined by the action of the pump
+impeller, similar stripping efficiencies could be expected to apply to the
+xenon calculations. Then, if the bubble stripping leads to a true exchange
+between the circulating bubbles and the cover gas, the stripping effici-
+encies required in the calculation are inconsistent with those observed
+
+in the reactor. On the other hand, if the liquid surface in the pump bowl
+is covered by a "foam" in which the gas-phase xenon concentration is much
+higher than that in the rest of the gas space, the same high rate of bub-
+ble exchange would produce a much smaller change in the average xenon con-
+centration in the circulating bubbles. Such an effect would give the ap-
+pearance of a low xenon stripping efficiency. The reactor data with argon
+cover gas do not allow us to distinguish between these possibilities.
+
+Since the behavior differences with argon and helium cover gases ap-
+peared to offer the best possibility for resolving the xenon behavior in
+the reactor, additional calculations were made with loop void fractions
+characteristic of both gases. For the helium cases we used void fractions
+obtained for 10-mil bubbles with a gas~to-liquid mass transfer coefficient
+of 4. ft/hr and a pump-bowl liquid stripping coefficient.of 240 ft*/hr. The
+xenon and bubble behavior mechanisms were required to follow the same
+general patterns for both cover gases.
+
+Some calculations were performed to see if the two characteristic be-
+havior modes could be reproduced by manipulating only the bubble stripping
+efficiency and the liquid stripping coefficient. In these.calculations
+the only mechanism for xenon transport to the graphite was, again, mass
+
+transfer from the liquid. In general, all of these calculations (for both
+ 
+
+ 
+
+ 
+
+69
+
+cover gases) showed the monotonic decrease in steady-state xenon poisoning
+with increasing void fraction that was characteristic of the insoluble
+cover gas model. Some distortion in this pattern could be obtained by
+allowing higher bubble stripping efficiencies at lower helium void frac-
+tions but, the large peak in the poisoning curve could not be attained as
+long as the bubble stripping efficiency was required to vary as a smooth
+function of the void fraction. Figure 18 compares the observed behavior
+in the MSRE with the results of one set of calculations in which the bub-
+ble stripping efficiency for helium was allowed to vary drastically with
+the core void fraction. The stripping efficiency (superimposed on the
+xenon poisoning plot) was computed as a constant plus a steeply decaying
+exponential. Since the results of this extreme variation failed to even
+approach the observed xenon behavior, it seems reasonable to conclude that
+the reactor effects were not produced by changes in the stripping effici-
+ency alone.
+
+The results of a large number of calculations indicated that the
+mechanism with the greatest capability for affecting the xenon poisoning
+at .low void fractions was the xenon transport to the graphite. This pro-
+cess also appeared capable of producing the differences between helium
+and argon with a consistent treatment of both gases. Accordingly, it was
+postulated that xenon transport to the graphite was composed of mass trans-
+fer from the liquid plus a contribution from circulating bubbles inter-
+racting with the walls of the fuel passages. It was evident from the
+cover-gas calculations that, for a given initial bubble size, the helium
+bubbles in the core at low void fractions would be much smaller than argon
+bubbles. Thus, if mass transport by bubble interraction were important
+and the rate of interraction was a function of bubble size, the rate of
+xenon transport to the graphite at low void fractions would be much lower
+with helium cover gas than with argon.
+
+To test the hypothesis of bubble interraction, a number of calcula-
+tions were made in which the xenon mass transfer coefficient from liquid
+to graphite, the rate of bubble interraction with the graphite, and the
+bubble stripping efficiency were all varied, more-or-less independently.
+
+In addition various forms of the functional dependence of bubble interaction
+ 
+
+70
+
+ORNL—-DWG 74-8041
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0 I I I 100
+
+\ ® OBSERVED XENON POISONING 8
+Sos 80 5
+“~ r4
+©
+[$)
+£ 0.6 \ S, 60 £
+gv ui
+
+— CT ————
+
+©
+804 — \ LZ CALCULATED XENON ws
+z A POISIONING 5
+Z o w
+Woz 20 gz
+©
+STRIPPING EFFICIENCY a
+| t }
+0 0
+
+ 
+
+0 04 0.2 0.3 04 0.5 0.6 0.7
+CORE VOID FRACTION (%)
+
+Fig. 18. Calculated and Observed Steady-State Xenon Poisoning with
+Helium Cover Gas — Widely Variable Bubble Stripping Efficiency.
+
+ 
+uj
+
+ 
+
+ 
+
+71
+
+on bubble size were tried. For each set of calculations, the same cri-
+teria for bubble behavior in the loop were applied to both helium and
+argon.
+
+As these calculations were being made, it became apparent that some
+differences in bubble stripping efficiency between helium and argon would
+improve the agreement with the reactor data. The possibility of such a
+difference was rationalized on the basis of the liquid behavior in the pump
+bowl. Because of the helium solubility, the salt entering the pump bowl
+from the loop would contain more dissolved helium than could be maintained
+at the pump-bowl pressure and some outgassing would occur. If this effect
+produced a blanket of xenon-rich foam over the salt, the apparent stripping
+efficiency for helium bubbles would be reduced. Since argon was treated as
+
+an insoluble-gas, the effect would apply only to helium. Therefore, lower
+
+* bubble stripping efficiencies were used for helium and the loss in effici-
+
+ency was made a function of the difference between the void fraction in
+the salt entering the pump bowl and that in the salt returning to the loop.
+(It could be argued that the difference in the helium concentrations in
+the liquid streams would be a more logical measure of the degree of gas
+blanketing but, the efficiency reduction is basically arbitrary and any
+attempt to define it precisely is unrealistic; the functional dependence
+is merely a calculational convenience.)
+
+A somewhat similar rationalization was applied to the liquid stripping
+
+process. It was postulated that the escape of helium from solution in the
+pump bowl liquid might enhance the rate of xenon stripping. Therefore, the
+liquid stripping coefficients for xenon in helium were allowed to exceed
+those for argon.
+
+Figure 19 shows the results of a set of calculations in which all of
+these factors were included. The agreement with the observed steady-state
+data is good everywhere except at core void fractions near 0.17 with helium
+cover gas. However, the disagreement in this area may be less than is im-
+plied by Fig. 19 because other reactor data (cf. Figs. 5 and 6) showed a
+more rapid increase in xenon poisoning with increasing void fraction.
+
+Although a reasonable correlation was obtained between the calculated
+and observed quantities, the parameter values required to produce the cor-
+
+relation were, in some cases, quite different from those that have been
+ 
+
+72
+
+ORNL-DWG 71-483
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+10 | |
+—oi] CURVES CALCULATED
+sos = IN POINTS MEASURED _{
+s © HELIUM COVER GAS
+° © ARGON COVER GAS
+© 06 ’ A ]
+z ~
+Z .
+904 / ~~
+8 Y ° I
+g 02
+0
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0 QO. 0.2 03 04 0.5 0.6 0.7
+CORE VOID FRACTION (%)
+
+Fig. 19. Calculated and Observed Steady-State Xenon Poisoning with
+Helium end Argon Cover Gases — Best Fit.
+ 
+
+ 
+
+73
+
+used previously. Some of the more important parameters that were inde-
+pendent of the circulating void fraction are listed in Table 6. The ref-
+erence bubble diameter and the coefficient for mass transfer between the
+bubbles and liquid are within- the range of the anticipated values. On the
+other hand the liquid stripping coefficients led to higher stripping ef-
+ficiencies than were predicted’’ and the mass transfer coefficients to
+the graphite are lower than the predicted values'’ by a factor of 6. With
+argon cover gas, the apparent liquid stripping efficiency varied from 17%
+at the lowest core fractions to about 38% at a core void fraction of 0.6%.
+With helium cover gas, this efficiency was about: 30% and essentially inde-
+pendent of the core void fraction. These values are probably close enough
+to the expected efficiencies to be credible. The discrepancy in the mass
+transfer coefficient is considerably greater than the usual uncertainty
+
+in predicting such quantities and there is no basis for adopting the lower
+value except that it appears to permit better correlation of the observed
+results. There is, however, some basis for expecting somewhat lower
+liquid-graphite mass transfer in the MSRE than would be. predicted in other
+systems.
+
+The mass transfer process was described in the calculations as a pro-
+duct of the coefficient and a driving potential based on xenon concentra-
+tions in the salt and graphite. The internal heat generation in the fuel
+and the laminar flow conditions in most of the core resulted in a tempera-
+ture distribution in the salt®® in each channel such that the lowest tem-
+perature was at the center of the channel. Since xenon has a large posi-
+tive temperature coefficient of solubility in salt, the liquid immediately
+adjacent to the graphite would have a ‘higher xenon solubility than the
+rest of the liquid and ‘the ‘higher solubility would tend to reduce the
+‘driving froce for xenon transfer into the graphite. This effect was not
+examined in detail but it does not appear to be large enough to account
+- for all of the difference between the originally predicted transfer rate
+and that required to match the. observed steady-state poisoning.
+
+In addition to the parameters just described, the bubble stripping
+efficiencies and the rates of bubble interaction with the core graphite
+were deliberately varied with void fraction in the calculations. Figure 20
+
+shows graphically the values that were used to produce the xenon poisoning
+ 
+
+ 
+
+74
+
+Table 6
+
+Constant Parameter Values Used to Correlate
+Calculated and Observed Steady-State Xenon
+Poisoning in MSRE
+
+ 
+
+ 
+
+Parameter Value
+Argon Helium
+Cover Gas Cover Gas
+Reference bubble diameter (mils) 10 10
+Mass Transfer Coefficient (ft/hr)
+Bubbles-to-Liquid 4 4
+Liquid-to-graphite in most :
+graphite 0.01 0.01
+Liquid-to-graphite in central
+core region 0.063 0.063
+Pump bowl liquid stripping :
+coefficient (ft*/hr) © 100 240
+
+ 
+
+results of Fig. 19. The bubble stripping efficiency for argon was computed
+as a linear function of the total void fraction ingested into the circu-
+lating loop from the pump bowl. Because of the insoluble gas treatment
+
+for argon, the void fraction at any point in the fuel loop is also a linear
+function of the ingested void fraction and the plot of stripping efficiency
+against core void fraction is a straight line. The same linear function of
+ingested void fraction was used as a basis for the helium bubble stripping
+efficiencies but the individual quantities were reduced to-from 36 to 61%
+of their nominal values to account for the postulated gas blanketing of the
+pump-bowl liquid. When the results are plotted against the core void frac-
+tion, a (nonuniform) translation toward the abscissa occurs which distorts
+the curve to the shape shown in Fig. 20. The nominal rate of bubble inter-
+
+action was chosen (by an iterative process of empirical optimization) to
+ 
+
+! | 75
+
+ORNL—DWG 74-8042
+04
+
+ 
+
+ 
+
+03 a
+aon | 7
+|
+
+ 
+
+02 —
+1 1 peu
+
+ 
+
+Od
+
+\
+
+BUBBLE INTERACTION RATE (liters/min)
+
+ 
+
+ 
+
+{00
+
+ 
+
+ 
+
+: : arco |
+60 PZ
+
+40 va Lio
+
+. = CA
+
+0 .
+0 04 0.2 0.3 0.4 0.5 0.6 0.7
+CORE VOID FRACTION
+
+ 
+
+ 
+
+BUBBLE STRIPPING EFFICIENCY (%)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 20. Parameter Values Used in Xenon Calculations for Best Fit.
+
+ 
+ 
+
+ 
+
+76
+
+cause 1.14% of the bubbles with a diameter of 8.4 mils to collide with the -
+walls of the fuel channels. (An insoluble gas bubble whose diameter is
+10 mils in the pump bowl has a diameter of 8.4 mils at the core pressure.)
+The bubble collision probability was also assumed to vary linearly with
+bubble volume. Thus, for argon cover gas, the fraction of bubbles inter-
+acting with the graphite was independent of the void fraction and the total
+rate of gas flow became a linear function of core void fraction. For
+helium, where dissolution has a significant effect on bubble size, the gas
+flow rate to the graphite is lower at low and intermediate void fractions.
+It is clear from the results shown in Fig. 19 that xenon transport
+to the graphite from the bubbles had a major effect on the net xenon poi-
+soning that was calculated. The magnitude of this effect was examined in
+a series of calculations in which only that one parameter was changed.
+Figures 21 and 22 show, for helium and argon cover gas, respectively, the
+poisoning that was obtained when xenon transport from bubbles directly to
+the graphite was eliminated from the previous calculations. In each figure,
+the appropriate curve from Fig. 19 is reproduced to provide a direct com-
+parison. These results show that, except at very low helium void fractions,
+most of the poisoning was due to xenon transported to the graphite by
+bubbles.
+
+In addition to providing information about the net xenon poisoning,
+the steady state calculations indicated the relative distribution of that
+poisoning among the gas bubbles, liquid, and graphite in the reactor core.
+This distribution, as we will show later, has a significant effect on the
+xenon transient behavior, especially for xenon removal transients.
+
+Figure 23 compares the fraction of the total xenon poisoning due to xenon
+in the graphite for the two sets of system parameters used to calculate
+
+the steady-state results shown for argon cover gas in Figs. 17 and 19.
+Although both sets of calculations reproduced the observed results reason-
+ably well, the first set (Fig. 17) allowed only xenon mass transfer from
+the liquid to the graphite and required low bubble stripping efficiencies
+while the second set (Fig. 19) allowed bubble interaction with the graphite
+and required higher bubble stripping efficiencies. Both calculations re-
+sulted in about the same xenon distribution at low void fractions but the
+bubble interaction mechanism led to much higher contributions from the
+
+graphite at the higher void fractions.
+77
+
+ORNL-DWG 71-8043
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+10
+<
+Sos A ™N
+2 LIQUID AND BUBBLE
+= TRANSPORT
+eS N
+Z06
+Zz NU
+2
+Oo
+2 04
+8 | —
+- 0.2 :
+NJ LIQUID TRANSPORT
+ONLY
+0 {
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0 0.1 02 03 04 05 0.6 o7
+CORE VOID FRACTION (%)
+
+Fig. 21. Effect of Xenon Transport to Graphite by Helium Bubbles.
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+78
+
+ORNL-OWG 74-8044
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+08
+g
+= _~——}~_LIQUID AND BUBBLE TRANSPORT
+We 06 ~~
+2 ~~
+g 04 — Tg
+a / ~~
+o
+gl
+goz2
+z LIQUID TRANSPORT ONLY
+x
+
+0 I
+0 ot 02 03 04 05 06 07
+
+CORE VOID FRACTION (%)
+
+Fig. 22. Effect of Xenon Transport to Graphite by Argon Bubbles.
+ 
+
+ 
+
+79
+
+ORNL~DWG 71-8045
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+w 10 T I I I
+I WITH BUBBLE INTERACTION
+[<4
+Sos ~~
+z
+Z os I
+a NO BUBBLE INTERACTION ~~~
+g
+Z 04
+2
+ut
+x
+6 02
+4
+2
+- Q
+Ss 0
+£ To of 02 03 04 05 O06 OF
+
+CORE VOID FRACTION (%)
+
+Fig. 23. Effect of Xenon Transport by Bubbles on Core Xenon Distri-
+bution.
+ 
+
+ 
+
+80
+
+Although the principal objective of these calculations was to see what
+mechanisms and parameter values could produce xenon poisoning results like
+those observed in the reactor, some information was also gained about the
+effects of other parameters. In the discussion of bubble stripping it was
+noted that two extreme behavior modes could be assumed for the gas that
+was added to unstripped bubbles to restore their original sizes prior to
+reingestion. At one extreme was the assumption that the unstripped bubbles
+are restored by agglomeration so that the additional gas was characterized
+by the average xenon concentration in the pump-bowl gas space. This as-
+sumption appeared to be the least controversial so it was used for most
+of the Computations, including those which produced the results shown in
+Fig. 19. At the other extreme was an assumption that the additional gas
+required was clean helium. The effect of the latter assumption was exam-
+ined by applying it to the calculations for helium cover gas just described.
+Figure 24 shows a comparison of the two sets of xenon poisoning results.
+Also shown on this figure is the absolute rate of clean helium ingestion
+(at pump-bowl temperature and pressure) that resulted from the assumed
+behavior. It is clear from these results that the rate of ingestion of
+clean helium at the pump suction, either directly or by growth of un-
+stripped bubbles, could have been manipulated in the calculational model
+to significantly modify the values of other parameters needed to match the
+observed xenon behavior. However, it did not appear that the ingestion
+of cover gas alone could produce the major difference between helium and
+
+argon.
+
+Earlier in this report we indicated that some ambiguities still exist
+in the nuclear data for xenon. For purposes of this study the most sig-
+nificant questions were the direct yield of '®°Xe from fission of *3°U and
+the neutron absorption cross section of '*°MXe. Although neither of these
+quantities was expected to have a large effect on the steady-state xenon
+poisoning, some calculations were performed to see what the effects might
+be. Two values were selected for the direct yield of '*°Xe: 18% and 3.6%,
+respectively of the total yield (6.16%) from **®U fission. Since the cal-
+culational model neglected the neutron cross section of '**™Xe, the effect
+
+of this cross section was simulated by adjusting the branching ratio for
+81
+
+ 
+
+ORNL-DWG 71-8046
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+06
+= |Z
+€ hecsnon RATE
+a OF CLEAN HELIUM
+5 04
+E 0.2 ~~
+x YU <(
+g
+
+0
+08
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+CLEAN HELIUM INGESTED
+
+x
+
+Sos en
+
+8 ~o CLEAN HELIUM
+- 2 ~_
+
+3 04 -
+
+« / Me
+
+© : I
+
+a
+
+Z A ——
+. 8 0.2
+
+Z
+
+wi
+
+x
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0 04 0.2 03 04 05 0.6 oz
+CORE VOID FRACTION (%)
+
+Fig. 24. Effect of Clean Cover-Gas Ingestion on Steady-State Xenon
+Poisoning, Helium Cover Gas.
+
+ 
+
+-
+
+ 
+
+ 
+82
+
+1351 decays to '*°Xe and '®°®Xe. Table 7 compares the results that were
+obtained for one set of bubble parameters. Although the parameters used
+to describe the physical processes in the reactor were not precisely the
+same as those discussed earlier, the relative effects of the nuclear pro-
+perties would not be expected to change. It is clear from these results
+that the lack of precise nuclear data for the 135-mass chain has an insig-
+nificant effect on the description of the steady-state xenon poisoning.
+One of the approaches that has been suggested for reducing the xenon
+poisoning in molten salt reactors is the development of a graphite with a
+substantially greater resistance to xenon diffusion than that used in the
+MSRE. Since it was easy to vary this parameter in the steady-state calcu-
+lations, some results were produced to evaluate the importance of the
+xenon diffusion coefficient in graphite. These results also showed the
+effect of uncertainties in this parameter on the calculated xenon behavior
+in the MSRE. The diffusion coefficient for Xenon appears in two general
+areas in the mathematical model: in the description of xenon migration
+between the major graphite regions in the core and in the description of
+the radial xenon profile within individual moderator pieces. Because of
+the low order of importance of the first process, only the effects in the
+moderator pieces were examined. Xenon poisoning calculations were made as
+a function of the void fraction of bubbles in.the core for several values
+of the xenon diffusion coefficient in graphite ranging down to 107 ft*/hr
+(2.6 x 10~% cm?/sec). The results at each void fraction were then normal-
+ized to values obtained for a flat xenon profile (infinite diffusion coef-
+ficient) in the moderator pieces. The xenon poisoning, relative to the
+normalization standard, is shown as a function of diffusion coefficient
+in Fig. 25 for helium cover gas. (The results with argon cover gas were
+essentially the same.) The range of values at each diffusion coefficient .
+reflects the influence of xenon stripping, with the upper end of the range
+corresponding to low core void fractions or relatively poor xenon stripping.
+Thus, for poor stripping, the graphite diffusivity must be very low to pre-
+vent xenon transport to the moderator. On the other hand, if an efficient
+xenon stripping process is available, it can compete effectively with gra-
+
+phite that has a much higher diffusivity.
+
+1
+ 
+
+ 
+
+83
+
+Table 7
+
+Effect of '®*Xe Nuclear Properties on
+Steady State Xenon Poisoning
+
+ 
+
+Calculated
+Fraction of Total 1®°Xe Fraction of *3®°I Steady State
+Yield Produced Directly Decays that Xenon Reactivity
+
+From 23*U Fission Produce **°*U%e Effect
+(%) (%) (% 8k/k)
+* *
+18 : Co 30 -0.276
+18 1 -0,280
+
+ 
+
+*
+Nominal value.
+
+Diffusion coefficients for helium at 23°C have been reported®® for
+several samples of MSRE graphite. These values, when converted to xenon
+at 1200°F give diffusion coefficients that range from 3 x 10~7 to
+2 x 107“ ft®/hr for surface samples and from 1 x 10% to 9 x 10“ ft*/hr
+for interior samples. The averages of 20 samples are 2.3 x 10~° ft*/hr
+for surface material and 1.3 x 10-* £t2/hr for interior material. Within
+this range, the value used for the graphite diffusion coefficient has lit-
+tle effect on the calculated steady-state xenon poisoning. Nevertheless,
+the results discussed above include the effect of the xenon distribution
+in the graphite. However, ve did not include it in the transient calcu-
+
+lations.
+ 
+
+ 
+
+ 
+
+84
+
+ 
+
+8047
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+RELATIVE XENON POISONING
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+®y 072 5 ©W®2 5 wWl2 ss wWo2
+GRAPHITE DIFFUSION COEFFICIENT (ft%/hr)
+Fig. 25. Effect of Graphite Diffusion Coefficient on Steady-State
+Xenon Poisoning, Helium Cover Gas.
+
+w
+ 
+
+ 
+
+ 
+
+ 
+
+85
+
+Transient Xenon Calculations
+
+In addition to satisfactorily describing the steady-state xenon poi-
+soning in the reactor, a model that represents the actual physical pro-
+cesses correctly should also describe the transient behavior that follows
+a change in reactor power level. The preceding discussion of the steady-
+state calculations shows that, for at least some situations, significantly
+different combinations of parameter values and mechanisms produced com-
+parable overall results, but the inclusion of direct xenon transport from
+bubbles to the graphite produced a significant difference in the xenon
+distribution at high core void fractions. In an effort to evaluate this
+mechanism and other parameter values, some transient calculations were
+performed, Ideally, if a sufficient variety of reactor xenon transients
+were available for comparison and if the various models were sufficiently
+flexible, it should be possible to deduce mechanisms and parameter values
+that satisfy all conditions. However, only a few xenon transients were
+recorded for the reactor under a limited variety of conditions. In ad-
+dition, the calculation of a large number of transients for different in-
+put parameters was impractical. As a consequence, we did not succeed in
+clearly identifying all the mechanisms and parameters required to match
+the MSRE experience. However, the calculations did illustrate some im-
+portant features of the xenon behavior and showed some of the deficiencies
+of the postulated mechanisms.
+
+The transient most commonly encountered in the reactor operation was
+the buildup of the xenon poisoning following a rapid increase in reactor
+power from near zero to several megawatts. The controlling parameters
+in such a transient appear to be the half-lives of the iodine and xenon
+and the xenon burnup coefficient. Consequently, this type of transient is
+relatively insensitive to variations in the parameters that were of in-
+terest in this study. In addition, the parameters that were considered
+in the steady-state analyses produced comparable xenon distributions as
+well as comparable poisoning effects at low core void fractions. Conse-
+quently, we did not calculate any xenon buildup transients at low void
+fractions; other types of transients seemed more likely to show differences
+
+due to the choice of parameters. Figure 26 shows the first 40 hr of a
+ 
+
+86
+
+ORNL-DWG 71-8048
+
+=
+nN
+
+-
+[=4
+
+°o
+w
+
+©
+>
+
+°
+IY
+
+  
+
+FRACTION OF FINAL STEADY-STATE VALUE
+o
+o on
+
+8 12 6 20 24 28 32 36 40
+TIME AFTER POWER CHANGE (hr)
+
+o
+»H
+
+~ Fig. 26. Comparison of Calculated and Observed Xenon Buildup Tran-
+sients in MSRE, Helium Cover Gas with 0.53 vol % Voids in Core.
+
+"oN
+C
+. "
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+87
+
+xenon buildup transient following a rapid increase in reactor power from
+10 kw to 5.5 Mw with helium cover gas and a core void fraction of about
+0.53 vol 7%. Also shown are two calculated transients for different para-
+meter values. (Since the calculations did not lead to precisely the same
+steady-state values, the data for the transients were normalized to their
+respective steady-state values to emphasize the shapes of the curves.)
+For one of the calculations (dashed curve) no direct xenon transport from
+bubbles to graphite was allowed and the nominal coefficient for xenon mass
+transfer from liquid to graphite was used — 0.06 ft/hr in the major core
+regions. These parameters required a bubble stripping efficiency of 4%
+and showed 0.57 of the total xenon poisoning in the graphite at steady
+state. For the second calculation, 0.947 of the gas flowing through the
+core was allowed to interact with the graphite and the coefficient for
+xenon mass transfer from liquid to graphite was reduced by a factor of 6.
+This led to a bubble stripping efficiency of 617% with 0.95 of the total
+xenon poisoning in the graphite. These parameters are similar to those
+used to calculate the steady-state poisoning shown in Fig. 19. The dif-
+ferences in the calculated transients are quite small and neither rises
+as rapidly as the observed transient.
+
+“° it appeared
+
+From previous studies of xenon transients in the MSRE,
+that better discrimination could be obtained with xenon removal transients.
+Therefore, two sets of removal transients were computed for parameter
+values that produced high-power, steady-state results close to those ob-
+served in the reactor. For one set, Figure 27, the calculations were com-
+pared to a reactor transient observed after a shutdown from 5.5 Mw to 10 kw
+with helium cover gas and a core void fraction of 0.53 vol Z. The para-
+meter values for the calculations, both with and without bubble interaction
+were the same as those described above for the buildup transient. The re-
+sults are again normalized to their respective steady-state values at the
+high power level.
+
+Both of the calculated curves show a peak in the xenon poisoning af-
+ter the power reduction. This peak is associated with the continued pro-
+duction of ***Xe by decay of '*®I in the salt and the transport of that
+
+xenon to the graphite. Thus, as the graphite contribution to the total
+ 
+
+88
+
+ORNL-DWG 71-8049
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1.2
+J TT TT 1 1
+1.0 $E—==E\\ J-CALCULATED WITH BUBBLE INTERACTION
+wu " ®e . =
+b= IN
+= .
+5 08 5 N
+2 ~
+< - N
+Eos . >
+: . CALCULATED WITH NO
+g ~ BUBBLE INTERACTION
+£ 0.4 se n
+E <P~3
+: osserveo—" 1+. ~~
+© 0.2 . Ma Se
+: Tr — ——
+3 se® |» [ee ——
+— ., .
+g o .
+E 0 4 8 2 16 20 24 28 32 36 40
+
+TIME AFTER POWER CHANGE (hr)
+
+Fig. 27. Comparison of Calculated and Observed Xenon Removal Tran-
+sients, Helium Cover Gas with 0.53 vol % Voids in Core.
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+89
+
+xenon poisoning increases, this peak tends to increase, both in magnitude
+and duration. This seems to suggest that parameters which allow very poor
+Xenon transport to the graphite at high void fractions, and thereby attri-
+bute most of the poisoning to xenon in the circulating fluid, might better
+describe the transient behavior. However, such parameters also require
+very low stripping rates to describe the steady-state poisoning and these
+stripping rates produced transients that were much slower than those ob-
+served in the reactor. This is illustrated by the more "stretched out"
+shape of the transient in which no bubble interaction with the graphite
+
+was allowed. It was also noted that faster rates of exchange between xenon
+
+An the graphite and that in the fluid tended to reduce the peak in the poi-
+
+soning curve. In these cases, however, the stripping efficiencies required
+to match the steady-state results were so high that the rate of decrease
+
+of the poisoning after the peak was considerably faster than was observed
+in the reactor.
+
+The second comparison between calculated and observed xenon removal
+transients, Fig. 28, was made for a reactor test in which the cover gas
+was argon and the core void fraction was about 0.7 vol %. When no bubble
+interaction was allowed, the xenon parameters used were the same as those
+that produced the correlation shown in Fig. 17; 10% for the bubble strip-
+ping efficiency and 0.06 ft /hr for the xenon mass transfer coefficient.
+from liquid to graphite. With bubble interaction the xenon parameters
+were the same as those used for Fig. 19. The calculated curves show many
+of the same features as those in Fig. 27. In this case, however, when no
+bubble interaction was allowed, the poisoning contribution from xenon in
+the graphite was small enough that the peak in the curve was completely
+eliminated. This curve also shows the very slow removal of xenon that
+was projected for this condition. When bubble interaction with the graph-
+ite was added, the poisoning peak reappeared because the overall xenon
+distribution was again shifted toward the graphite. Once the peak was
+passed, the higher stripping efficiency used in that calculation produced
+a rate of xenon removal that was close to the observed rate.
+
+In addition to the computations to examine the effects of the xenon
+
+transport parameters on the transient behavior, some calculations were
+ 
+
+90
+
+ORNL-DWG 71-8050
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+82 — TT
+g CALCULATED WITH BUBBLE INTERACTION
+Boo =
+& =
+
+CI
+% os Ry
+: EAN
+% 06 NIC
+g ° ~} «| -CALCULATED WITH NO
+toa OBSERVED" SUBALE INTERACTION |
+Z .
+5 IRL
+3 0.2 ®a ——]
+-— te
+o o ®s over
+E 0 4 8 122 © 20 24 28 32 HB 40
+
+TIME AFTER POWER CHANGE (hr)
+
+Fig. 28. Comparison of Calculated and Observed Xenon Removal Tran-
+sients, Argon Cover Gas with 0.7 vol # Voids in Core.
+ 
+
+ 
+
+ 
+
+ 
+
+91
+
+performed to study the effects of the direct xenon yield and decay scheme.
+The xenon transport parameters for these calculations were very similar to
+those used for the transients with argon cover gas and bubble interaction
+with the graphite. However, the rate of bubble flow to the graphite was
+lower by a factor of 2.3 in these calculations. Figure 29 compares a
+xenon removal transient using the nominal direct yield of '®°Xe (18% of
+total) with one in which only 3.6% of the xenon yield came directly from
+fission. (Changing the branching ratio for *®°®I decay to simulate a high
+cross section for '®°™Xe had essentially no effect on the shape of the
+transient.) The higher peak in the transient curve for the lower direct
+yield results from the higher rate of '°°Xe production after the power
+reduction and the migration of some of that xenon into the graphite. The
+higher peak in the nominal curve, relative to the comparable curve in
+
+Fig. 28 reflects the lower rate of exchange between xenon in the graphite
+and that in the fluid. That is, the xenon in the graphite stays there
+
+longer and so delays the influence of the stripping parameters.
+
+DISCUSSION OF RESULTS
+
+In the studies reported here we have examined the effects of a number
+of system parameters on the calculated behavior of '®?Xe in the MSRE. The
+goal of this effort was to see if the behavior observed during reactor
+operation could be predicted by a model that included the effects of cover-
+gas solubility in the fuel salt with reasonable values for other parameters.
+Significant deviations from the nominally predicted xenon stripping and
+mass transfer effects were postulated in an effort to reproduce the dif-
+ferences in xenon poisoning that were observed with soluble and insoluble
+cover gases. Although we achieved reasonable success in describing the
+steady-state xenon poisoning with both helium and argon cover gas, we
+could not adequately describe the transient behavior. The nature of the
+various results that were obtained provides some insight into the kinds
+of processes that may have been important in the MSRE.
+
+The calculations using previously accepted transport mechanisms and
+
+parameter values showed again that the steady-state results with argon
+ 
+
+92
+
+ORNL~DWG 71-8051
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2 ww ~~
+
+Z NN DIRECT YIELD = 3.6% OF TOTAL
+S os DS,
+
+= N
+
+2 os NN
+
+g RN.
+
+w ING
+
+go DIRECT YIELD = 18% OF TOTALS
+
+2 =
+
+a 02 a.
+«© Te ]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0
+0 4 8 2 #6 20 24 28 32 36 40
+
+TIME AFTER POWER CHANGE (hr)
+
+Fig. 29. Effect of Direct 135xe Yield on Xenon Poisoning Transient.
+ 
+
+ 
+
+ 
+
+ 
+
+c
+
+93
+
+cover gas could be readily duplicated. However, such calculations re-
+quired the use of bubble stripping efficiencies. that were much lower than
+the bubble removal rates that were observed in the reactor when excess
+bubbles were present. It is, of course, conceivable that the bubble strip-
+ping efficiency for xenon might be much lower than the rate at which a new
+void distribution is approached. This would be the case if, for example,
+stripped bubbles were replaced by bubbles containing an abnormally high
+
+xenon concentration because of the existence of a "foam" blanket on the
+
+. salt surface in the pump. There is evidence from observations in the. pump
+
+bowl that some kind of foam layer was indeed present;?' however, its char-
+acteristics are not well. defined and any conclusions about its effect on
+the xenon behavior would be highly speculative. .When the low stripping
+rates required for these steady-state results were applied to transient.
+calculations with high argon. void fractions, they produced decreases in
+the xenon poisoning that were much slower than those observed in the re-
+actor after power reductions. The transient response for a given strip-
+ping efficiency would have been faster if a larger fraction of the total
+xenon poisoning had been associated with the circulating fluid; i.e. less
+xenon in the graphite. This condition would-be favored by a lower coef-
+
+ficient for xenon mass transfer from the liquid to the graphite. However,
+
+.such a shift would require still lower stripping efficienies to describe
+
+the steady-state results. Thus, it appears that xenon transport rates to
+graphite and stripping efficiencies like those .used in earlier analyses
+could not describe the transient behavior at high void fractions, even for
+an insoluble cover .gas. . }
+
+. One conceivable way in which the original parameter values could be
+made to approach the observed-results at high void fractions would be to
+
+make the stripping efficiency dependent on the reactor power level. If
+
+. the stripping efficiency were extremely low with the reactor at power (and
+
+the rate of mass transfer to the graphite were also lower than predicted)
+
+most of the xenon poisoning would be associated with the fluid and the
+
+poisoning would build up rapidly to its steady-state value. Then, if
+
+higher stripping rates prevailed at very low powers, rapid removal of the
+xenon -would result. This hypothetical situation might be achieved if some
+short-lived material were present in the salt that had the capability of
+ 
+
+ 
+
+ 
+
+94
+
+“holding xenon in the fluid in such a way as to make it unavailable for
+stripping or transport to the graphite. Since there appeared to be no
+firm basis for postulating the condition just described, this approach
+was not pursued in the xenon analysis.
+
+Even if power-dependent changes in stripping efficiency were postu-
+lated to explain the total xenon behavior at high argon void fractions,
+we found that we could not describe the poisoning that was observed with
+helium cover gas. Inclusion of the helium solubility effects and wide
+
+‘variations in xenon stripping as a function of void fraction modified the
+calculated poisoning but we could not match: the observed results. It ap-
+peared that some process of variable xenon transport to the graphite, in
+addition to the relatively constant mass transfer from the liquid, would
+most likely be capable of describing the observed effects of circulating
+voids on the xenon poisoning. The requirements on this process were that
+it contribute very little to the total xenon poisoning when the gas bub-
+bles in the core salt were small and substantially more when larger bub-
+bles were present at the same void fraction. Incorporation of an addi-
+tional transport mechanism with this property, along with a reduction in
+the coefficient for xenon mass transfer from the liquid to graphite made
+it possible to describe the steady-state poisoning with both helium and
+argon cover gas in one self-consistent approach. The poisoning difference
+between the two cover gases at low void fractions resulted from lower
+Xenon transport to the graphite from helium bubbles which were reduced in
+size by dissolution in the salt. (Xenon transport to the graphite may not
+be the only process that could produce this difference but the graphite
+appeared to offer the only reservoir with sufficient xenon storage capa-
+bility to account for high poisoning levels that were observed with argon
+at low void fractions.) In this study we described the additional xenon
+transport process in terms of interaction of gas bubbles with the graphite
+mass. Actual collision of bubbles with the walls is physically unrealistic
+but other mechanisms that involve bubble nucleation on the walls“® have
+
+been suggested that are physically more palatable and would have the same
+
+C
+ 
+
+ 
+
+ 
+
+ 
+
+95
+
+net result. Furthermore, there is some evidence in the MSRE experience
+that gas bubbles did tend to collect on core surfaces.
+
+Although the use of a bubble transport process for xenon led to a
+better description of the steady-state poisoning as a function of void
+fraction, it did not produce satisfactory transient results at high void.
+fractions. The transients indicated that this approach tended to shift
+the xenon distribution too much toward the graphite. Better agreement
+could have been obtained if the bubble transport process had become rela-
+tively less effective at the higher void fractions. However, this possi-
+bility was not pursued in the analysis.
+
+CONCLUSIONS
+
+The successful, extended operation of the MSRE provided a valuable
+demonstration of the operating characteristics of a molten-salt reactor.
+One of the more advantageous of these characteristics is the ability to
+effectively remove noble-gas fission products — notably ®3Xe — with rela-
+tively little effort. This removal reduces the total inventory of fission
+products in the primary loop and also the reactivity loss to *®°Xe poi-
+soning. Depending on the cover gas and the volume fraction of circulating
+voids that were maintained in the fuel loop, the xenon poisoning in the
+MSRE was reduced by a factor of 2 to 6 below the values that would have
+prevailed with no gas stripping.
+
+" Although some aspects of the xenon. behavior (e.g. strong dependence
+“on circulating void fraction) were expected, the reactor results showed
+that the total behavior was not accurately predicted. In particular, the
+sensitivity of the xenon poisoning to the choice of cover gas had not been
+
+predicted. Subsequent analyses of the operating results were partially
+
+ 
+
+*The power disturbances ("blips") ?® observed in the reactor apparent-
+
+ly occurred when small amounts of gas that had accumulated in the core
+were swept out. In addition, during an experiment in which the fuel was
+circulated by natural circulation, the presence of a positive pressure
+coefficient of reactivity implied the presence of gas in core locations
+where it was subject to compression by salt. :
+96
+
+successful in describing the observed xenon behavior but also revealed
+some areas of continuing uncertainty. We found that solubility effects
+were important with helium cover gas but that these effects alone appar-
+ently could not explain the xenon poisoning differences between helium and
+argon at low core void fractions. . In attempting to describe the reactor
+results we found it necessary to postulate bubble and liquid stripping ef-
+ficiencies in the pump bowl that were substantially higher than predicted
+values and liquid-to-graphite mass transfer coefficients that were much
+lower. In addition it appeared that circulating voids strongly influenced
+the rate of xenon mass transport to the graphite in a way that depended on
+both the bubble fraction and bubble size. It also appeared that some argu-
+ment could be made for changes in stripping efficiency with reactor power
+level. The differences between predicted parameter values and those pos-
+‘tulated in this study suggest that additional effort to ~deyelop a better
+quantitative understanding of bubble effects in mass ‘transport and gas
+stripping would be of value.
+
+Since the good breeding performance of conceptual designs of large
+molten-salt reactors depends on effective *2°Xe removal, the ability to
+accurately predict xenon poisoning is important in the design and evalu-
+ation of future reactors. Some of the questions raised by the MSRE study
+for which accurate and reliable answers would be useful in making such pre-
+dictions are the following:
+
+1. What are the solubility characteristics of various fission-
+product gases and cover gases in potential molten-salt fuel mixtures?
+
+2. How and to what extent do circulating bubbles affect the mass
+transport of xenon from the fluid to graphite? What is the effect of bub-
+ble size on this process?
+
+3. What is the effect of heat generation in the fluid on mass trans-
+fer to graphite?
+
+4, What are the effective rates of xenon mass transfer from liquid
+salt to circulating bubbles and how are these influenced by dissolution and
+evolution of cover gas?
+
+5. Is there any basis for expecting an effect of power level on
+Xenon removal, e.g. through generation of materials that affect the gas
+
+‘transport. processes?
+ 
+
+97
+
+ACKNOWLEDGMENT
+
+The assistance provided by R. J. Kedl in the formulation of the
+mathematical descriptions, in ‘the provision of parameter values, and in
+
+reviewing the manuscript is gratefully acknowledged.
+ 
+
+ 
+
+9.
+
+10.
+
+11.
+
+12,
+
+13.
+
+14.
+
+98
+
+REFERENCES
+
+R. C. Robertson, MSRE Design and Operations Report, Part I,
+Description of Reactor Design, ORNL-TM-728, (January 1965).
+
+P. N. Haubenreich, "Molten Salt Reactor Progress," Nucl. Eng.
+Int'l., 14 (155): pp. 325-329, (April 1969).
+
+P. N. Haubenreich and M. W. Rosenthal, "Molten Salt Reactors,"
+Science Journal, 5 (6): pp. 41-46, (June 1969).
+
+Paul N. Haubenreich and J. R. Engel, "Experience with the Molten-
+Salt Reactor Experiment," Nucl. Appl. & Tech., 8 (2): pp. 118-136,
+(Feb. 1970).
+
+A. Houtzeel and F. F. Dyer, A Study of Fission Products in the Molten
+Salt Reactor Experiment by Gamma Spectrometry, ORNL-TM-3151, in
+preparation.
+
+Reactor Chemistry Division Ann. Progr. Rept., Dec. 31, 1965,
+ORNL-3913, pp. 3840.
+
+M. K. Drake, National Neutron Cross Section Center, Brookhaven
+National Laboratory, personal communication to J. R. Engel,
+Nov. 19, 1970.
+
+L. L. Bennett, Recommended Fission Product Chains for Use in Reactor
+Evaluation Studies, ORNL-TM-1658 (Sept. 26, 1966).
+
+C. B. Bigham, A. Okazaki, and W. H. Walker, "The Direct Yield of
+Xe-135 in the Fission of U-233, U-235, Pu-239, and Pu-241," Trans.
+Am, Nuc. Soc. 8 (1): p. 11 (June 1965).
+
+W. D. Burch, Measurement of Xenon Poisoning in the HRT, ORNL-TM-228
+(April 19, 1962).
+
+P. G. Smith, Water Test Development of the Fuel Pump for the MSRE,
+ORNL-TM=-79 (March 27, 1962).
+
+P. G. Smith, Development of Fuel- and Coolant-Salt Centrifugal Pumps
+for the Molten Salt Reactor Experiment, ORNL-TM-2987 (October 1970).
+
+J. R. Waggoner and F. N. Peebles, Stripping Rates of Carbon Dioxide
+from Water in Spray Type Liquid-Gas Contactors, EM 65-3-1, University
+of Tennessee (Thesis), (March 1965).
+
+MSR Program Semiann. Progr. Rept., Jan. 31, 1963, ORNL-3419, pp. 27-28.
+ 
+
+ 
+
+15.
+16.
+17.
+18.
+19.
+
+20.
+
+21.
+22.
+23.
+24.
+25.
+26.
+27.
+28.
+
+29.
+
+30.
+
+99
+
+MSR Program Semiann, Progr. Rept., July 31, 1964, ORNL-3708,
+PP. 373-389.
+
+MSR Program Semiann., Progr. Rept., Feb, 28, 1965, ORNL-3812,
+PP. 76-80,
+
+R. J. Kedl and A. Houtzeel, Development of a Model for Computing
+13%Xe Migration in the MSRE, ORNL-4069, (June 1967).
+
+MSR Program Semiann. Progr. Rept., Aug. 31, 1965, ORNL-3872,
+PP 22-23.
+
+J. R. Engel and B. E. Prince, The Reactivity Balance in the MSRE,
+ORNL-TM-1796, (March 10, 1967).
+
+B. E. Prince, J. R. Engel, and C. H. "Gabbard, Reactivity Balance
+Calculations and Long Term Reactivity Behavior with 2°°U in the MSRE,
+ORNL~4674, (in preparation).
+
+J. R. Engel, P. N. Haubenreich, and A, Houtzeel, Spray, Mist, Bubbles,
+and Foam in the Molten Salt Reactor Experiment, ORNL-TM-3027 (June 1970).
+
+MSR Program Semiann. Progr. Rept., Aug. 31, 1966, ORNL-4037,
+pp. 22-24,
+
+MSR Program Semianh. Progr. ‘Rept., Feb. 28, 1967 ORNL-4119,
+pp. 17-18.
+
+J. C. Robinson and D. N. Fry, Determination of the Void Fraction in the
+MSRE Using Small Induced Pressure Perturbations, ORNL-TM-2318-
+(Feb. 6, 1969).
+
+MSR Program Semiann. Progr. Rept., Feb. 29, 1968, ORNL-4254, pp. 46.
+D. N. Fry, R. C. Kryter, and J. C. Robinson, Measurement of Helium
+Void Fraction in the MSRE Fuel Salt Using Neutron-Noise Analysis,
+ORNL-TM-2315, (Aug. 27, 1968).
+
+R. J. Kedl, The Migration of a Class of Fission Products (Noble Metals)
+in the MSRE, ORNL-TM Report, in preparation.
+
+MSR Program Semiann. Progr. Rept., Feb. 28, 1969, ORNL-4396,
+PP. 16-21.
+
+C. H. Gabbard, Reactor Power Measurement and Heat Transfer Performance
+in the Molten Salt Reactor Experiment, ORNL-TM-3002 (May, 1970).
+
+MSR Program Semiann. Progr. Rept., Feb. 28, 1970, ORNL-4548,
+pp. 6566.
+ 
+
+ 
+
+31.
+
+32.
+
+33.
+
+34.
+
+35.
+
+36.
+
+37.
+
+38.
+
+39.
+
+40.
+
+41.
+
+100
+
+MSR Program Semiann. Progr. Rept., Aug. 31, 1969, ORNL-4449,
+pp. 10-11.
+
+MSR Program Semiann. Progr. Rept., Aug. 31, 1970, ORNL-4622,
+PP. 24.
+
+MSR Program Semiann. Progr. Rept., Aug. 31, 1967, ORNL-4191,
+pp. 55-58. :
+
+B. E. Prince, personal communication to R. C. Steffy, April 25, 1969.
+
+S. J. Ball and T. W. Kerlin,. Stability Analysis of the Molten Salt
+Reactor Experiment, ORNL-TM-1070, p. 68, (December 1965).
+
+S. J. Ball and R. K. Adams, /MATEXP°/ A General Purpose Digital
+Computer Program for Solving Ordinary Differential Equations by the
+Matrix Exponential Method, ORNL-TM-1933, (August 30, 1967).
+
+MSR Program Semiann. Progr. Rept., Feb. 28, 1970, ORNL-4548,
+pp. 37-38.
+
+J. R. Engel and P. N. Haubenreich, Temperatures in the MSRE Core
+During Steady-State Power Operation, ORNL-TM-378, (Nov. 5, 1962).
+
+R. B. Evans III, J. L. Rutherford, and A. P. Malinauskas, Gas Trans-
+port in MSRE Moderator Graphite, II Effects of Impregnation,
+III Variation of Flow Properties, ORNL-4389, p. 52, (May 1969).
+
+MSR Program Semiann. Progr. Rept., Feb. 28, 1967, ORNL-4119,
+PP. 86-94.
+
+R. P. Wischner, personal communication to J. R. Engel, March 19, 1971.
+ 
+
+ 
+
+Xa
+Xa
+
+Xs
+
+Xe
+
+Xs
+Xe
+
+X,
+
+Xo
+
+X10
+X11
+X12
+Xis
+Xia
+Xys
+X16
+X17
+
+X;e
+
+Xi
+
+Xa0
+
+. Xz,
+
+101
+
+- APPENDIX A
+
+Equations to Describe Xenon and Cover Gas Behavior
+
+Nomenclature
+
+t35Mye concentration in pump bowl gas space, atoms/en’®
+
+135%e concentration in pump bowl gas space, atons/ cn’
+
+1930¥e concentration in pump bowl liquid, atoms/cm®
+
+1%35Xe concentration in pump bowl liquid, atoms/cm’
+133Tye concentration : in heat exchanger liquid, atoms/cm®
+135%e concentration in heat exchanger liquid, atoms/cm?
+135Wye concentration in heat exchanger bubbles, atons/cn®
+
+135%e concentration in heat exchanger bubbles, atoms/cm’
+
+- 1%%W¥e concentration in core liquid, atoms/cm
+
+'3%Xe concentration in core liquid, atoms/cm®
+
+135mye concentration in unstripped bubbles in pump bowl, atoms/cm?®
+13%Xe concentration in unstripped bubbles in pump bowl, atoms/cm®
+1231 concentration in fuel salt, atoms/cm? |
+
+135%e concentration in graphite pores (central region), atoms/cm®
+135mye concentration in graphite pores (whole core), atoms/cm®
+135%e concentration in graphite pores (2nd region), atoms/cm®
+13570 concentration in graphite pores (3rd region), atoms/cm®
+13550 concentration in graphite pores (outer region), atoms/cm®
+135Mye concentration in piping liquid, atoms/cm®
+
+133%e concentration in piping liquid, atoms/cm®
+
+13°mYe concentration in piping bubbles, atoms/cm®
+ 
+
+ 
+
+102
+
+Xzz = '*°Xe concentration in piping bubbles, atoms/cm®
+
+X2s = !°°®Xe concentration in core bubbles, atoms/cm®
+
+X24 = '®°Xe concentration in core bubbles, atoms/cm®
+
+t = time, min.
+A = area, ft®
+A = radioactive decay constant; min=}
+
+€ = bubble stripping efficiency
+Vv = region volume, ft®
+-¥ = void fraction
+
+F = flow rate, salt or gas, gpm or £/min
+
+H = Henry's law constant, moles/cm®-atm
+
+R = universal gas constant, cm®-atm/mole-°K
+
+T = absolute vewpersture, °K
+
+K = decay fraction
+
+h = mass transfer coefficient, ft/hr
+
+P | = pressure, psia
+
+P = power, Mw
+
+Y = direct fission yield, re
+
+0 = volume-averaged neutron capture coefficient, (Mw-min)~?
+d= bubble diameter, in. oo
+
+Dg = diffusion coefficient for xenon in graphite, ft? /hr
+
+Tr = radial distance, in.
+
+B = fraction of xenon inventory transferred from liquid to nucleated
+bubbles -
+
+Z = cover gas concentration, atoms/cm®
+
+N = number of bubbles, cm—3
+
+N' = number concentration of bubbles in liquid, cm~?®
+ 
+
+Note:
+
+103
+
+Subscripts
+
+Number subscripts, when applied to quantities other than X as
+defined above, refer to properties of the region in which the
+
+-variable X with the same subscript may be found. For example,
+
+VFg is the cover~gas void fraction in the region containing Xs,
+i.e. the core fluid. Double subscripts refer to properties common
+to two regions. Thus A,, is the graphite surface area within
+region 14 while A,4,;6 is the graphite interfacial area between
+the two regions 14 and 16.
+
+133%ya
+
+135mye
+
+1357
+
+salt~to-graphite
+
+salt-to—-graphite in central core region
+salt-to-gas bubbles
+
+loop |
+
+spray ring
+
+fountain flow
+
+cover gas
+
+ingested purge gas
+
+reference condition
+
+cover gas
+ 
+
+ 
+
+10.
+
+11.
+
+12.
+
+13.
+
+14.
+
+“dt
+
+aX, _
+
+at
+
+dXs _
+“dt
+
+dXe _
+“dt
+
+dX,
+“dt
+
+dXs
+“dt
+
+dX,
+
+“dt
+
+dX,
+dt
+
+dX, _
+
+“(P19/P3)V> X22 Am Xi -
+
+ 
+
+dt
+
+dXys _
+dt
+
+dXia4 _
+(a
+
+¥ hy A
+=v (Fy, + Frep) Xa ta —HyRTX:) + Ap Xi — Ay Xo — 5% Xa — {rar -v
+
+_F
+
+= Toe Fu Toy, + {ve +Fp)—¥,9 == Be [Fs(1 —e) + F(1 —ep)] — ®} \'/% 7 +
+F
+
+= Hu Fa mfx, {me — Fg) — v, Be = [F(1 —€) + Fy(1 — ep] — r.| Vs Vs ¥
+
+= Fy F Ay
+GEST Eni — rg hn — gy RTE) 74
+
+EQUATIONS FOR XENON MODEL
+
+ 
+
+Vi
+
+F
+Vi
+
+Fg + F + Fg hy A,
+
+hy A
++ X — __ ha hpAi
+= viii Xs Km MXi3 — AER) Xs — Ap X3 A 7) Xe - H,RTX,) — A ve - H,RTX,,)
+
+F, + Fr os + Fy _ _ lA. _
+
+_F—F,—F F, + F; F,
+
+_ _ __ hAs l
+SVT) Xt amen En MX — grag Xe Mes — yor
+
+_F,—F,—F F, +F; hy As
+Se Tay Xoo ty XH Kah Xis $n Xs — tT Xs =MXs ~ gi =}
+Vy 9(Fo—F
+
+X, | ¥y
+
+Vy 4(Fy X, ¥
+
+ 
+
+F, Y,P Fy
+
+A A
+~v, he X10 roe — H,RTX,s)
+
+F, + F¢ “hgh
+
+"Grape
+
+F, + Fy
+
+ 
+
+Xi1 = Ap X11 Ho (Xs — H,RTX;,)
+
+Fg + Fs
+
+ 
+
+Ags
+
+ 
+
+ 
+
+6
+X12 =A Xz +2 Oke —H,RTX,,)
+
+_YP
+
+=v, ~MXis
+
+hs
+
+i
+'
+
+¥ hy A F
+= (Fg eg + Frep) Xap + 2-8 (X3 ~ HyRTX;) — Ap X; ~2 X, — {W5(F, + Fy) — ¥,, B12 Pio F(1 —€)+F; (1 ~¢)] —F,
+V, V, P3
+
+9 ~ [Fo(1 —e) + F(1 —€¢)] — 3 v
+
+hyA, 1
+
+Xi
+Vi
+
+Xs
+
+Fv) % ~ HR TX0a)
+
+H,RTX,)
+
+(Xs — H,RTX,)
+
+SI) (1010-0
+
+5
+
+Loy Xo — HRTX, 5)
+
+ 
+
+TiglelBo) 1p 1 — 6) + Fel - ep] Xa + gly
+
+hy A, chs
+voir) Kio — Hy RTXz4) — Vol =
+
+DgA;s 16
+
+1aT14,16
+
+FF
+Xio — HRTX; 4) + =F 2 (Xa — X14) t An Xis — A Xya — @14PX 4 Vora X14 — Xy6)
+
+~y Kio =
+
+: = (Xe — HyRTXs) +2 Xs — gi X
+
+— HeRTX:) = $2. X; — Ap Xo
+5
+
+_H,RTX,.) Ass io
+
+TV,(1=¥
+
+— A Xs
+
+—H,RTX, 4)
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+dx A F
+
+15. Ti =e x, — HeRTX15) + 7 (Xa —Xis) — An Xis
+
+16. is a (X10 —H (RIX, 6) + gible (X24 — X16) * An X15 — 20X16 — P16PXi6 — GAs (X16 — X14) — Dodie ~ (X16 — X17)
+dt Vielia,ie VieTie,17
+dX A F, Dc A DgA
+
+17. 17 =r ox, - H, RTXu7) + CSERLT (Xa = Xu) + Xis — MN Xi7 — © 7PXy7 — g2t6lT (X,, — Xp) — oi let8 (X, 5 — X45)
+dt Vi, 7T16,17 Visi7,18
+
+ 
+
+ 
+
+dX A De: A
+18. TT = gh 18 Xo -H (RTX1 0) + SSEELE (X, —Xis) +t Ay, Xs —A i». ~ @1sPXis “Vai 1 Kis —X,q)
+
+dX1o = Fo : Fo hp Ay
+
+> dt “TTT Kei Xis — gr Vig Xio = AnXis = TV = Vp) Fre TERT)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+192. 21s - re %, +K NX1s Ey Re Ap Xie - oR — (Xu —H,RTX, )
+
+20. ao roar Ke FEA Xp + A Xo rir Kae ~ Xo (Xo HRT)
+
+20a. ae = TPs Xo FRA Xrs +20 Xo itr Xo “A Xa0 Rie (Xo — ByRTXo)
+
+21. Pas = Tp Xas + Rit ys ~HRTX: 1) — gt Xa u's |
+
+21a. uu = Xo mi (Xs —HRTX;1) - Xs: — Ap Xs |
+
+2. Xz = 2p Yas + grog? (X20 — HRTX,2) + Ap Xa vr X22 — AN X22 |
+
+22a. Ps = var Xo + + = (a0 ~ HyRTXa2) + Ap Xa “ve X22 — A X22
+
+23. Ee * gg Os H (RTXz3) = gf Xas — ~Am¥as — gf X23 — X15)
+
+24. as “on Xs + + (X10 —HyRTX;4) +A, Xa3 3 Xza =A X24 —P10PX34 Sly or — X14) — Tae X24 ~ Xie) - pigs? X24 ~ Xa) - pig (X24 — Xi8)
+
+ 
+ 
+
+109
+
+ 
+
+ 
+
+25.
+
+26.
+
+27.
+
+28.
+
+29.
+
+30.
+
+31.
+
+|
+|
+i
+i
+
+EQUATIONS FOR COVERGAS MODEL
+
+ 
+
+dz, _F+F¢ (1 2 ) 7, Et FOU ale) 7 Deke, pry)
+3 2
+
+ 
+
+dt V, V,
+
+AZ, _ (Fo Fy —F\[L = @1/p3)¥1] , , Bs + FOIL = @alos)¥al Zs Foy 6, js (Zs —HRTZs) pays
+ar ( Vi ) a=") = Vv; T=¥;) VV; dg v2) 1-7, 3
+Zs _F(1-¥;3), Fp, 6 1/3 Zs — HcRTZg) 2/3
+
+EV AI TV BE TR Tame
+
+dz, _F(1-¥%), Fe 6 173 (Zs —HRTZg 5/3
+& VAT) Tv, lg wl Tao,
+
+d¥; _ (Fo— Fs — Fp)Zs ¥, + (Fs +Fp¥,Z, Fo v, + (6/dp Jy 3 3 (Zs — H,RTZ,)¥2/3
+4
+
+dt ViZ, ViZ, A
+
+ 
+
+dvs _ FZ, Fy (6/dp)hp Vi? 2/3
+
+T CV.Z Uy — v. Ug + — Ze (Zs —H.RTZ¢)¥;
+d¥, _RZs Fo (6/dg hy, 3/3 _ 2/3 !
+at V.Zs WV, Vv, v, + I 7 z, H.RTZg)¥3 |
+
+ 
+
+ 
+
+ 
+ 
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+15.
+
+16.
+
+17.
+18.
+19.
+20.
+21.
+22.
+23.
+24.
+25.
+26.
+
+27.
+
+28.
+29,
+
+30.
+
+31-40.
+41.
+42.
+
+43.
+
+44.
+45.
+46.
+47.
+
+48. :
+
+49.
+50.
+51.
+52.
+53.
+54.
+
+INTERNAL DISTRIBUTION
+
+L. Anderson
+
+_F. Baes'.
+
+F. Bauman
+
+E. Beall
+Bender
+
+E. Bettis
+
+S. Bettis
+
+S. Billington
+F. Blankenship
+Blumberg
+
+G. Bohlmann
+
+J. Borkowski
+E. Boyd
+
+B. Briggs
+Cantor
+
+L. Carter
+
+H. Chapman
+
+H. Clark
+
+L. Compere
+
+H. Cook
+
+W. Cooke
+F. Cope, AEC-0OSR
+T. Corbin
+
+B. Cottrell
+
+L. Crowley
+
+L. Culler
+
+R. Distefano
+J. Ditto
+
+F. Dyer
+
+P. Eatherly
+
+R. Engel
+
+"E.. Ferguson
+
+M. Ferris
+P. Fraas
+
+H. Frye
+
+K. Furlong
+H. Gabbard
+B. Gallaher
+R. Grimes
+G. Grindell
+H. Guymon
+H, Harley
+0. Harms
+
+N. Haubenreich
+W. Hoffman
+
+111
+
+55.
+56.
+57.
+58.
+59.
+60.
+61.
+62.
+63.
+64.
+65.
+
+66.
+
+67.
+68.
+69.
+70.
+71.
+72.
+73.
+74.
+75.
+76.
+77.
+
+- 78.
+
+79.
+80.
+
+81.
+82.
+83.
+84.
+85.
+86.
+87.
+- 88.
+89.
+90.
+91.
+92.
+93.
+9.
+95-97.
+98.
+99.
+100.
+101.
+
+ 
+
+T.
+
+R.
+H.
+R.
+J.
+T.
+R.
+W.
+T.
+J.
+S.
+Ww.
+W.
+B.
+I.
+S.
+
+ORNL-TM-3464
+
+Huntley
+Jordan
+Kasten
+Kedl
+Kelley
+Kennedy
+Kerlin
+Kerr
+Reyes
+Kirslis
+Koger
+Kohn
+Korsmeyer
+Krakoviak
+Kress
+
+Kermit Laughon, AEC-OSR
+M. I. Lundin
+R. N. Lyon
+
+H.
+R.
+A.
+H.
+H.
+D.
+H.
+L.
+J.
+A.
+A.
+
+R.
+
+J.
+E.
+T.
+
+’ L.
+
+A,
+H.
+Cc.
+B.
+G.
+R.
+M.
+J.
+J.
+
+G.
+E.
+
+P.
+
+E.
+C.
+L.
+A.
+E.
+R.
+S.
+
+J.
+
+L.
+P.
+L.
+S.
+
+Cs
+
+M.
+B.,
+B.
+E.
+L.
+C.
+W.
+
+MacPherson
+MacPherson
+Malinauskas
+McCoy
+McCurdy
+McElroy
+McLain
+McNeese
+McWherter
+Meyer
+Miller
+Moore
+Nichols
+
+‘Nicholson
+‘Noggle
+
+Oakes
+Perry
+Piper
+Pollock
+Prince
+Ragan
+Robertson
+Rosenthal
+
+Roth
+
+P.
+
+Sanders
+
+Dunlap Scott
+J. H. Shaffer
+
+ 
+ 
+
+ 
+
+102. M.
+103. M.
+104. A.
+105. O.
+106. I.
+107. R.
+108. D.
+109. J.
+110. E.
+111. R.
+
+129-130.
+131.
+132.
+133.
+
+134-135.
+136.
+137.
+
+138.
+139-141.
+142-143.
+144-148.
+
+112
+
+R. Sheldon 112, D. B. Trauger
+J. Skinner 113. J. S. Watson
+N. Smith 114, A. M, Weinberg
+L. Smith 115. J. R. Weir
+Spiewak 116. M. E. Whatley
+A. Strehlow 117. J. C. White
+A. Sundberg 118. G. D. Whitman
+R. Tallackson 119. R. P. Wichner
+H. Taylor 120. L. V. Wilson
+E. Thoma 121. Gale Young
+122, H. C. Young
+123-124. Central Research Library
+125. Y-12 Document Reference Section
+126-127. Laboratory Records Department
+128, Laboratory Records (RC)
+EXTERNAL DISTRIBUTION
+T. W. McIntosh, AEC, Washington D. C. 20545
+H. M. Roth, AEC-ORO, Oak Ridge, Tenn. 37830
+Milton Shaw, AEC, Washington D. C. 20545
+W. L. Smalley, AEC-ORO, Oak Ridge, Tenn. 37830
+Division of Technical Information Extension (DTIE)
+Laboratory and University Division, ORO
+R. C. Steffy, Jr., TVA, 303 Power Building, Chattanooga, Tenn.
+37401
+A. Houtzeel, TNO , 176 Second Ave., Waltham, Mass. 02154
+Director of Division of Reactor Licensing, Washington D. C. 20545
+Director of Division of Reactor Standards, Washington D. C. 20545
+Executive Secretary, Advisory Committee on Reactor Safeguards,
+
+Washington, D. C. 20545

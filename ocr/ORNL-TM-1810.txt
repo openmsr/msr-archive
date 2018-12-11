@@ -1,0 +1,1746 @@
+ 
+
+ 
+
+LEGAL NOTICE
+
+This report was prepared as an account of Governnjent sponsored work, Neither the United
+
+eX c—)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+f 3 . States, nor the Commission, nor any person acting ok ‘behalf of the Commission:
+( . A, Makes any warranty or rep pressed or plied, with respect to the accu-
+TACY, 1 or fi of the inf 4 ined in thie report, or that the use |
+
+ 
+
+.. of any information, apparatus, method, or process disclosed in this report may not infringe
+privately owned rights; or : 1
+~~ B. Assumes any liabilities with respect to the uge of, or for damages resulting from the - -
+. ‘use of any infor apparatus, hod, ‘or Pp oo losed in this report. ORNL IM 1810
+= * As used in the above, person acting on behalf of the Commission’ includes any em-
+ployee or tor of the ( or employee of such tor, to the extent that
+such employee or contractor of the Commission, of employee of such contractor prepares,
+disseniinates, or provides access to, any information pursuant to his employment or contract
+with the Commission, or his employment with such contractor, | : CFESTI PRICE 4
+
+ 
+
+Contract No. W-7405-eng-26 HQ 3.0 : MN 65
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+NN
+ji Reactor Division
+rr
+<
+A MODEL FOR COMPUTING THE MIGRATION OF VERY SHORT-
+LIVED NOBEL GASES INTO MSRE GRAPHITE
+R. J. Kedl
+
+T
+
+>
+
+JULY 1967
+
+OAK RIDGE NATIONAL LABORATORY
+Oak Ridge, Tennessee
+: operated by
+UNION CARBIDE CORPORATION
+for the
+U.S. ATOMIC ENERGY COMMISSION
+
+ 
+
+SISTRIBUTION, OF THIS DOCUMENE 1S UNLIMITED
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+rm
+
+«: Y »
+
+Hen,
+( S
+
+iii
+
+CONTENTS
+
+Abstract ® 9 @ 0 8 900000 LL 00S LSE NBINGLEELLENOOGGENOOEOENNOTOIOETS soe
+
+ TNETOAUCTION «ev veveeeeenennnensnaesansnssnnnnonceannnns srecsnens
+Diffusion in Salt ..cceereecvensrcacssosssssose esses sesrnacsans .
+Diffusion in Graphite ceeeeeenvevreascsccccnsnsea sesesecesssasnna
+
+Daughter Concentrations in Graphite ..eeeeervieirerrececierenncenns
+Results for MSRE Graphite Samples .vceeeeessscecvesassanns cesenen
+ConClUSIONS «eu eeecocrsanseossssoronscssssscossssssnsoscassanssons
+References ..cceesecvssscrneesasnnenns seeeseenens teteenanonns cennee
+
+Appendix A. Derivation of Equation Describing Diffusion
+in Salt Flowing Between Parallel Plates .....cieveieveeeneennes oe
+
+ 
+
+oe ~~ wm wo
+
+17
+19
+
+20
+
+ 
+ 
+
+a
+
+cad,
+
+« Uo
+ 
+
+ald
+
+ 
+
+Yos
+
+w)
+
+a \ iv
+
+ 
+
+A MODEL FOR COMPUTING THE MIGRATION OF VERY SHORT-LIVED
+NOBLE GASES INTO MSRE GRAPHITE
+
+R. J. Kedl
+
+ABSTRACT
+
+A model describing the migration of very short-lived noble
+gases from the fuel salt to the graphite in the MSRE core has
+been developed. From the migration rate, the model computes
+(with certain limitations) the daughter-product distribution in
+graphite as a function of reactor operational history. Noble-
+gas daughter-product concentrations (*4%Ba, 14lCe, 89sr, and 91y)
+were measured in graphite samples removed from the MSRE core
+after 7800 Mwhr of power operation. Concentrations of these
+isotopes computed with this model compare favorably with the
+measured values.
+
+ 
+
+INTRODUCTION
+
+On July 17, 1966, some graphite samples were removed from the MSRE
+core after 7800 Mwhr of power operation. While in the reactor, these sam-
+ples were exposed to flowing fuel salt, and as a result they absorbed some
+fission products. After removal from the reactor, the concentrations of
+several of these fission-product isotopes were measured as a function of
+depth in the samples, Details of the samples, their geometry, analytical
+methods, and results are presented in Refs. 1 and 2. Briefly, the graphite
+samples were rectangular in cross section (0.47 X 0.66 in.) and from 4 1/2
+to 9.in. long. All samples were located near the center line of the core.
+Axially, the samples were located at the top, middle, and bottom of the
+core. The top and middle samples were grade CGB graphite and were taken
+from the stock from which the core blocks were made. The bottom sample
+vas a modified grade of CGB graphite that is structurally stronger and has
+
+‘a higher diffusivity thah regular CGB. (This graphite was used to mske the
+lower grid bars of the core.) The analytical technique was to mill off
+
+successive layers of graphite from the surfaces and determine the mean iso-
+
+tropic concentration in each layer by radiochemical means.
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+A model was formulated that predicts quantitatively the amount of
+certain of these isotopes in the graphite as a function of the reactor
+operational parameters. Specifically the model is applicable only to very
+short-lived noble gases and their daughters. This diffusional model may
+be described as follows: As fission takes place, the noble gases (xenon
+and krypton) are generated in the salt either directly or as daughters of
+very short-lived precursors, so they can be considered as generated di-
+rectly. These noble gases diffuse through the salt and into the graphite
+according to conventional diffusion laws. As they diffuse through the
+graphite they decay and form metal atoms. These metal atoms are active,
+and it is assumed that they are adsorbed very shortly after their forma-
+tion by the graphite. It is also assumed that once they are adsorbed,
+they (and their daughters) remain attached and migrate no more, or at
+~ least very slowly compared with the time scales involved.
+
+The derivations of the formulas involved in working with this model
+are given in the next few sections of this report. The first section con-
+siders diffusion through fuel sali, where the noble-gas flux leaving the
+salt and migrating to the graphite is determined. In this section the
+"very short half-life" restriction is placed on the model. The next sec-
+tion takes this flux and determines the noble-gas concentration in the
+graphite, The following section determines the noble-gas decay-product
+concentration in the graphite as a function of reactor operating history.
+The last section compares computed and measured concentrations of four iso-
+topes 140Ba (from 14%e), 141Ce (from 141Xe), 89sr (from 8%°Kr), and °'y
+(from °!Kr) in the MSRE graphite samples.
+
+It is of interest to point out the difference between this model and
+a previously derived model used to compute nuclear poisoning from 135Xe
+(Ref. 3). In the 135Xe-migration model, all the xenon that migrates to
+the graphite comes from the bulk of the salt and is transmitted through
+the boundary layer. The xenon generated within the boundary layer is con-
+sidered negligible. In this noble-gas model, all the xenon (or krypton)
+that migrates to the graphite is generated in the boundary layer and that
+which comes from the bulk of the salt is negligible. This is a direct
+
+consequence of the very short half-life restriction placed on the noble-gas
+
+Sv
+hate
+
+>
+Fo
+
+¥
+
+4
+ 
+
+ 
+
+ 
+
+Wirt
+
+ 
+
+model in contrast to 135%e-migration model, which specifies a long half-
+
+life (9.2 hr).
+
+DIFFUSION IN SALT
+
+The equation that describes the concentration distribution of a dif-
+fusing material in a flowing stream between two parallel plates and includes
+a mass generation end decay term is (see derivation in Appendix A)
+
+2 2
+9°Cg . oC, Q AM, Vv XC,
+
+bo——— = — ——
+2 2
+or oz Dg Dg Dg Oz
+
+ 
+
+ 
+
+Cg = noble-gas concentration in salt (atoms/ft3),
+
+Q = noble-gas generation rate (atoms /hr per £t3 of salt),
+A = noble-gas decay constant (hr-l),
+
+D. = noble-gas diffusion coefficient in salt (£2 /br),
+
+5
+
+v = salt velocity (ft/hr), Salt Flow
+
+z = axial distance (ft),
+
+r = traverse distance (ft), <Q Parallel
+
+Plates
+r, = half the distance between the plates.
+
+In the case of laminar flow,
+
+LV)
++
+
+=To
+
+]
+i
+Ww
+al
+=
+1
+ob [8
+} -
+
+ 
+
+ 
+
+|
+
+where V is the mean fluid velocity.
+If we restrict the formulation to very short-lived isotopes of noble
+
+gases, we can say
+
+Cg :
+mem =) 5
+oz
+
+that is, as the fuel salt is moving through the core the noble-gas genera-
+
+tion and decay rates are balanced and the noble-gas concentration is close
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+to steady state. Even though the mean selt velocity past the samples is
+in the order of 1 or 2 ft/sec, this analysis is restricted to a salt layer
+next to the graphite only a few thousandths of an inch thick. At this
+position the salt velocity is very low, and this assumption is quite ade-
+quate. The original differential equation then reducés to
+
+ 
+
+The result of this assumption is that all velocity terms disappear, and
+the model of flowing salt reduces to that of a solid. Integrating once
+with the boundary conditions that at r = O, acg/ar = 0 and Cg = Cgy, Where
+
+C.. = steady-state isotope concentration at r = 0, we find that
+
+88
+
+dCgq | 1/2
+
+— =| (Cn — C.) == (CE. = C2) .
+
+ar Dg ‘ss 5 Dg ‘'ss 5
+
+In the analysis of 13°Xe poisoning in the MSRE (Ref. 3), it was seen that
+the xenon concentration in salt at the interface was very small compared
+with the concentration in bulk salt, If a similar situation is assumed
+
+in this case, the analysis can be simplified considerably. The assumption
+
+is therefore made that
+(Cg)rar, << Css 4
+
+and later it will be seen that this is true. The above equation can now
+
+be evaluated at r = ry:
+
+1/2
+=) [Res Es VY
+dr rer, Dg Dy ’
+
+. where the negative root gives the proper sign to (aCq/ar) poy, - The noble
+
+gas flux leaving the salt at r = r, is related to the concentration
+
+“
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+o& wh)
+
+$
+
+}
+
+-
+
+-
+
+we
+
+gradient as
+
+(=)
+Co Flux =-D_ {= .
+r=r s {dr =
+0 r=r,
+By substituting,
+Fluxpy = (20DsCes ~ AD 02 ) 2
+
+With the very short half-life restriction on this model, the isotope
+concentration in the bulk salt is always at steady state, and it can be
+
+evaluated by equating the generation and decay terms as follows:
+Q = Mss «
+
+Substituting this value of C,, into the above equation, gives
+
+Dg 1/2
+Flux, = {= . (1)
+
+DIFFUSION IN GRAPHITE
+
+In. the previous section we determined the noble-gas flux leaving the
+salt and going into the graphite. - It is now necessary to relate this noble-
+gas flux to the noble-gas concentration in graphite.
+
+The equation that describes diffusion of a gas in graphite at steady
+
+~ state and includes a decay term is%
+
+3c, dC,
+
+ 
+
+ 
+
+ 
+
+ER €
+g + g + g == ACg ;
+a? ¥y? dD,
+where
+Cg = noble-gas concentration in graphite (atoms per ft? of graphite),
+¢ = graphite void fraction available to gas,
+Dg = noble-gas diffusion coefficient in graphite (£t3 void/nr per ft
+
+of graphite),
+
+ 
+ 
+
+ 
+
+ 
+
+A = noble-gas decay constant (hr-!),
+X,¥,2 = coordinates (ft),
+
+There is no generation term in this expression because these gases
+
+are generated only in the salt. It will also be assumed that the cross
+sections are sufficiently low that burnup can be neglected. - Since we have
+restricted the formulation to very short-lived isotopes, we need consider
+only the one-dimensional case because the isotopes are present only near
+
+the surface of the graphite. The above equation then reduces to
+
+ 
+
+ay
+da Cg €M
+= -— Cg .
+2
+ax Dg v
+Solving with the boundary conditions that Cg = Oas x — x and Cg = Cgi
+at x = 0, we obtain
+- -x(er/Dg) 1/2
+Cg = Cai e g . (2)
+Differentiating and evaluating at x = 0, we obtain
+dCq = — coir 1/2
+— = - gi Do .
+The noble-gas flux into the graphite is represented by *
+D, [dC .
+g g
+ST
+I
+
+and by substituting we obtain
+
+Dgh 1/2
+Flux, _, = Cai =
+
+a
+ 
+
+pv
+
+“. ——P
+
+i]
+
+&
+
+wy
+
+-
+
+or
+
+1/
+Cat = Prix, (557) ?, (3)
+
+which is the equation that relates the noble-gas concentration at the
+graphite surface to the noble-gas flux. By combining Eqs. (2) and (3),
+
+we can relate the flux to concentration anywhere in the graphite,
+
+1/2 1/2
+55) / o-¥(ex/Dg) / , (4)
+
+and by combining this equation with Eq. (1), we can relate Cg to known
+
+reactor operational parameters.
+
+Ce =X 5
+
+1/2
+: Es SC (5)
+g
+
+DAUGHTER CONCENTRATIONS IN GRAPHITE
+
+As an example consider the 140¥e chain for which data from the MSRE
+graphite samples are available (specifically 14%Ba). The decay chain is
+
+as follows:
+
+(16 sec) 4%%e — (66 sec) 4%Cs — (12.8 day)'%CBa
+Yield - 3.8% Yield - 6.35%
+
+— (40.2 hr)140Lg —  (stable)*Oce .
+
+From Eq. (5) we can compute ‘the 140%e ‘concentration in the graphite.
+
+Neglecting the ‘short-lived 140cs, the 140Ba generation rate is given by
+
+140g generation rate = eeke
+and
+140pg decay rate = ABS co .
+
+When the reactor is at power, the change in 14%Ba concentration in the
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+graphite as a function of time is
+
+ 
+
+Ba
+ac
+
+g _ eee _ Page i
+dat
+
+If we specify that the equation is applicable only for intervals of
+time when the reactor power level is constant, and recognize that cae will
+
+approach equilibrium very shortly after the reactor is brought to power,
+Xe Xe
+
+ 
+
+the term \ Cg is a constant and the equation can be integrated. With
+the boundary condition that at zero time, cg? = Caer the solution is
+Xe Xe i
+cba _ Ce (1 - AE ) + cBe A (6)
+g 258 &o :
+
+Then, when the reactor is shut down, the 140s concentration will decay as
+
+Ba
+Ba Ba -A ot
+Cg = Ceo e . (7)
+With these equations, the 140s concentration in the graphite can be
+determined as a function of time and can be taken through the "reactor on"
+and "reactor off" cycles by solving the equations the appropriate number
+
+of times.
+
+RESULTS FOR MSRE GRAPHITE SAMPLES
+
+The concentrations of four isotopes from noble-gas precursors were
+
+measured in the MSRE graphite samples in order to determine the applica-’
+
+bility of the model to the MSRE. The decay chains involved are the follow-
+
+ing:
+
+(16-5)140Xe — (66-5)140Cs — (12.84)%0Ba — (40.2-h)14%La — (stable)l“Cce ,
+
+3.8 6.0 6.35 6.35 6.44
+
+(1.7-8) 41Xe — (25-5)241Cs — (18-m)!41Ba
+1.33 4.6 6.3
+
+— £3.8-h)14La — (33-d4)43Ce — (stable) flPr ,
+6.4 6.0
+
+Lh
+
+~
+ 
+
+ 
+
+ 
+
+ 
+
+wri
+
+—¥
+
+on
+
+w)
+
+-
+
+N (2.8-h)88Kr + neutron
+
+(4.4-5)8%Br 0.85, (3.2-m)8%r — (15.4-m)®%Rb
+
+4.59
+ur (16-8) Ey
+oS
+eon 0008,
+— (50.5-3)%%r ~0.998 (stable)8%Y ,
+Z.79
+191
+ST
+| > |
+(10-8)93Kr — (72-8)°1Rb — (9.7-h)%18r 240, (58.4)91y XF (stable)?lzr .
+3.45 5.43 5.81 ~5.% 5.84
+
+The underlined element is the particular isotope whose concentration
+was measured. The measured concentration profiles are shown in Figs. 1
+through 4. The three curves shown on each plot are for the top, middle,
+and bottom graphite samples. Although data are available from three sides
+of the rectangular sample that was exposed to salt, for the sake of clarity,
+only date from the wide face are shown. Concentrations from the other
+faces exposed to salt are in good agreement with these.
+
+. The noble-gas diffusion coefficient in graphite that was used in
+these calculations was determined from the daughter-product concentration
+profiles. The assumption was made earlier that as a noble gas in graphite
+decays, its metal daughter is immediately adsorbed and migrates no more.
+
+If this is true, it can be shown that the daughter distribution in graphite
+will follow the same exponential as the noble-gas distribution. -Equation
+(2) represents the ‘noble-gas distribution for the one-dimensional case,
+
+and this equation can be evaluated for the "half thickness" case as follows:
+
+Cc 1 :
+go. X12 (ex/Dg)/2_ e-0:693
+Cai 2
+Therefore
+oo el 2
+bg = —L2 (8)
+(0.693)2
+
+ 
+ 
+
+10
+
+ORNL-DWG 67-3516
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+5 O SAMPLE FROM TOP OF CORE - WIDE FACE
+| ® SAMPLE FROM MIDDLE OF CORE — WIDE FACE
+® A SAMPLE FROM BOTTOM OF CORE — WIDE FACE
+» CIRCLED POINTS AT DEPTH =0 INDICATE COMPUTED VALUES
+5 °
+2
+Q
+S \
+on
+v fo! 1%
+°o \ N
+E 0, \
+S A \
+> NON
+2 ANEEAN
+5 NG NN \MIDDLE
+ou Na por
+E °
+z BOTTO
+5 2 re Ne
+= 0
+= 1al0 A
+S 10 Res
+2 SNe o-
+8 \ N\ ~~
+Q A
+o 5 \ NN.
+Qo NN TN
+Oo
+m
+¢ NN
+\ AN
+N\
+\
+10°
+0 0.010 0.020 0.030 0040 0.050
+DEPTH IN GRAPHITE (in.)
+Fig. 1. %OBa Distribution in MSRE Graphite Samples at 1100 hr on
+July 17, 1966.
+
+OC
+
+ 
+ 
+
+ 
+
+1
+i 11
+/ 10" ORNL-DWG 67-3517
+O SAMPLE FROM TOP OF CORE - WIDE FACE
+® SAMPLE FROM MIDDLE OF CORE - WIDE FACE
+5 A SAMPLE FROM BOTTOM OF CORE — WIDE FACE
+CIRCLED POINTS AT DEPTH =O INDICATE COMPUTED VALUES
+2
+® 10"
+1 ££
+Coe gS
+Cd 5
+: Ss
+4 € 5
+: 5
+®
+a
+£
+Q
+Zz
+w 2
+E
+I
+o
+<{
+&
+= 10
+Z
+Q
+[.
+<I
+Eg 5
+=<
+wl
+OQ
+<
+Oo
+oO
+8
+I 2
+: 108
+5
+2
+0 0.010 0.020 0.030 0.040 0.050 0.060
+DEPTH IN GRAPHITE (in)
+WJ Fig. 2. 14l0e Distribution in MSRE Graphite Samples at 1100 hr on
+
+July 17, 1966.
+
+-¥
+
+i
+i
+i
+i
+3
+1
+i
+
+ 
+ 
+
+ 
+
+ORNL-DWG 67-3518
+
+ 
+
+ 
+
+O SAMPLE FROM TOP OF CORE - WIDE FACE
+
+® SAMPLE FROM MIDDLE OF CORE — WIDE FACE
+A SAMPLE FROM BOTTOM OF CORE — WIDE FACE"
+CIRCLED POINTS AT DEPTH =0 INDICATE COMPUTED VALUES
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.060
+
+©
+=
+[-%
+o
+o
+s
+£ NS
+s Oe
+[=] Na
+g to! NC 2
+€ L
+= °
+w I~
+E 0
+xT Oo at
+g NL NMIDDLE
+© I J{70P °
+© ~——— , BOTTOM °
+= J A
+e
+s N
++
+Pa NC
+woe
+2 NU
+8 o
+8 NN
+0 0.010 0020 0030 0.040 0050
+DEPTH IN GRAPHITE (in)
+Fig. 3. 89Sr Distribution in MSRE Graphite Samples at 1100 hr on
+
+July 17, 1966.
+
+hwy
+
+—2
+ 
+
+ 
+
+ 
+
+ 
+
+13
+
+te
+
+ORNL-DWG 67-3519
+
+DATA NOT AVAILABLE FOR TOP AND BOTTOM SAMPLES
+CIRCLED POINT AT DEPTH = O INDICATES COMPUTED VALUE
+
+ 
+
+2
+10!
+5
+w
+T £ 2
+oS
+on
+= ‘c
+§ 10°
+on
+5
+a
+E 5
+oO
+=
+Ww
+=
+z 2
+<{
+x
+©
+zZ
+= ;A9
+Z 10
+o
+—
+=
+- 5
+Z
+w
+QO
+Z
+oO
+© MIDDLE
+> 2
+Nn
+108
+3
+5
+2
+107
+
+0 0.010 0.020 0.030 0.040 0050
+’ “DEPTH IN GRAPHITE (in.)
+
+Fig. 4. 9'Y Distribution in MSRE Graphite Samples at 1100 hr on
+&/ July 17, 1966.
+
+A
+
+-
+
+ 
+ 
+
+ 
+
+14
+
+where
+
+X12 = graphite thickness where daughter isotope concentration is re-
+duced by 1/2,
+graphite void available to noble gas (taken to be 10%),
+
+€
+A
+
+appropriate noble-gas decay constant.
+
+Since the distributions of the noble gas and its daughters follow the
+1/2 will be the same for both. Half-thick-
+ness data can therefore be obtained from Figs. 1 through 4 and Eg. (8)
+
+same exponential, the value of x
+
+evaluated for Dg in graphite. The diffusion coefficient in graphite is
+not constant throughout but, rather, is a function of depth. In drawing
+the line through the data points in the figures, more weight was attached
+to the surface concentration distribution than the interior distribution
+because the diffusion coefficient at the surface is of primary interest.
+Actually, some of the concentration profiles tend to level out at greater
+depths in the graphite. This implies that D, increases with depth. The
+diffusion coefficient was computed for each sample of each decay chain
+and the results are shown in column 4 of Table 1. The diffusion coeffi-
+cient selected for the remainder of these calculations is shown in the
+following tabulation, where the values of pre have been averaged for each
+
+sample, and the values of Dy from the 89Kr chain were given precedence
+over the 2Kr chain.
+
+Diffusion Coefficient in Graphite (ft2/hr)
+
+ 
+
+ 
+
+Top Sample Middle Sample Bottom Sample
+Xe -5 -5 -5
+Pg 1.6 X10 2.0 X 10 6.9 X 10
+Dg 0.3 xX 1073 0.9 X 107° 14.4 X 1077
+
+From this tabulation it may be seen that the bottom sample has a higher
+Dg than either of the others. This was expected because it was a more per-
+meable grade of graphite. In the case of D5 the top and middle samples
+agree fairly well whereas in the case of Dy the top sample is about 30%
+
+of the middle sample. Probably the greatest inconsistency in the tabula-
+
+tion is that Dy is greater than Dy" for the top and middle samples, whereas
+it would be expected that Dy’ would be greater than DAC. The reason for
+
+this is not known. There may be some question about the assumption that the
+
+OU
+
+Pt]
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+15
+
+fa
+-
+
+Table 1. Computed Values for MSRE Graphite Samples
+
+ 
+
+ 
+
+ 
+
+ 
+
+2 2 3 4 5 6 7 8 9 10 11 12
+] Calculated Daughter Concentration!
+_ Measured Sample Q Cos Csi Css Flux
+J fioble-Gas Daughter Position (2790p 2 (atoms/nr per (atoms per ft3 (atoms per (atoms per (atoms /hr per Fog Atoms per £43 dpm per g of
+Isotope in Core £t3 of salt)P of graphite)C ft3 of salt)? f£t3 of salt)® ft? of salt) : p Graphite at Date
+
+ 
+
+of Graphite of Sampling
+
+ 
+
+ 
+
+140ye 140pq Top 0.9 X 10° 0.68 x 108 2.43 x 101° 5.01 X 1012 4.33 X 1015 3.85 X 10*4 0.006 1.20 x 102° 0.86 x 101
+140xe 140s Middle 1.2 x 107% 2.28 x 10*% 7.38 x 10%3 15.4 x 10** 14.6 x 10'* 12.9 x 10% 0.006 3.65 xX 1029 2.60 x 101%
+140xe 140g, Bottom 4.9 X 107° 1.22 x 10% 2.09 x 10%'7 4.34 X 102 7.82 x 10% 6.94 x 10'4 0.006 1.04 x 1020 0.74 x 101
+l4lye  Yé4lce Top 2.4 X 107% 2.39 x 107 0.91 x 104 1.89 x 1011 1.63 x 10% 4.41 x 1013 0.002 7.44 x 101° 2.06 x 100
+lalye l4loe Middle 2.7 X 1075 8.04 x 107 2.77 x 104 5.76 X 10*1 5,49 x 101% 14.8 x 103 0.002 22.6 x 10? 6.29 x 100
+lalye l4loe Bottom 8.9 X 10°% 4.31 x 10%7 0.78 X 104 1.62 x 10 2.94 X 1014 7.97 X 10'3 0.002 6.41 x 101° 1.78 x 1010
+89kr 89gy Top 0.3 X 10> 0.82 x 10'8 0.85 x 10%7 5.47 X 104 6.29 X 1016 1.68 X 10*° 0.025 7.32 X 1029 1.32 x 101!
+89Ky 89gr Middle 0.9 X 107° 2.75 X 108 1.65 x 1017 10.6 x 1014 21.1 Xx 1016 5.65 X 10*5 0.025 14.2 X 1020 2.55 x 101?!
+89ky 89gy Bottom 14.4 X 10-5 1.48 x 10'8 0.22 x 107 1.42 X 104 11.4 x 10%6 3.04 x 10% 0.025 1.94 x 1020 0.348 x 101
+9lgy oly Middle 0.4 X 1075 2.06 x 1018 6.46 X 101° 4.17 x 103 8.28 x 101° 9.70 x 10*% 0.005 1.11 x 10°1 1.75 x 1012
+Diffusion coefficient in graphite near surface. ®Noble-gas concentration in bulk salt at 7.5 Mw (Q/\).
+» PNoble-gas generation rate at 7.5 Mw, fNoble-gas flux from salt to graphite. |
+|
+®Noble-gas concentration in graphite at surface at 7.5 Mw. €Equivalent film thickness. |
+v dNoble-gas So ares in salt at interface at 7.5 Mw (in equi- hry graphite at surface at date of sampling.
+
+librium with C . Henry's law constant for Xe in molten salt:
+2.75 x 107° Cat) of Xe per cc of salt per atm; Henry's law constant |
+for Kr in molten salt: 8.5 X 1072 moles of Kr per cc of salt per atm. |
+
+ 
+
+ 
+ 
+
+16
+
+noble-gas daughters do not migrate. This assumption should be good for
+all daughters involved, except possibly cesium and rubidium. These ele-
+ments have boiling points of 1238°F and 1290°F, respectively, and there-
+fore their vapor pressures could be significant at the reactor operating
+temperature of approximately 1200°F, and they may diffuse a little. Never-
+
+theless the above values of D_, are in the expected range, and since the
+
+g
+following calculations are not strong functions of D, the values will be
+used as listed above.
+
+The diffusion coefficients of noble gases in molten salt were taken
+
+to be (Ref. 3):
+
+pie = 5.0 X 10% £t2/nr
+and
+DT = 5.5 x 10-5 £t2/hr
+
+Ss
+and represent an average of coefficients estimated from the Stokes-Einstein
+equation, the Wilke-Chang equation, and an indirect measurement based on
+analogy between the noble gas-salt system and heavy metal ion-water system.
+
+The noble-gas generation rate (Q) was evaluated for each sample posi-
+tion (top, middle, and bottom) from computed thermal-flux distribution
+curves (Refs. 5 and 6).
+
+The operational history of the MSRE was taken to be as listed below.
+The first significant power operation of appreciable duration started on
+April 25, 1966, and the graphite sample concentrations were extrapolated
+back to the sampling date (1100 hr on July 17, 1966).
+
+ 
+
+mt
+
+ 
+
+Power Level Time at Indicated Power
+(Mw) (hr)
+5.0 88 Starting date
+0 248
+5.0 64
+0 12
+7.0 86
+0 by
+5.0 28
+0 42
+5.5 60
+7.5 68
+0 . 430
+
+ 
+
+ 
+
+ 
+—y
+
+ 
+
+ 
+
+ 
+
+-
+8
+
+ 
+
+ 
+
+ 
+
+17
+Power Level - Time at Indicated Power
+(Mw) (hr)
+7.0 26
+0 12
+7.2 292
+0 100
+7.2 320
+0 16
+7.2 50
+0 1 Sampling date
+
+For each isotope involved and for each sampling position, Eq. (5) was
+evaluated for the noble-gas ‘concentration in the graphite. - The concentra-
+tion of the appropriate daughter isotope was then solved for and carried
+through the reactor operational history with Eqs. (6) and (7). The results
+of these calculations are listed in Table 1 and shown in Figs. 1 through
+4. For the sake of clarity, the daughter-product concentration in the
+table and on the figures is given only at the surface of the graphite. On
+the figure it is indicated by a circle around the appropriate symbol.
+
+CONCLUSIONS
+
+The following observations can be made from studying the table and
+the figures.
+
+1. The model predicts very short-lived noble-gas and daughter-product
+concentrations in graphite fairly well. This is especially true when we
+consider the degree of uncertainty of some of the parameters, such as fis-
+sion yields of short-lived noble gases and their half-lives, Dg .and Dy,
+and detailed’ information on fission density distribution.
+
+2. From comparing columns 7 and 8 of the table, it can be seen that
+
+‘the assumption (Cj). << Cgy in the section "Diffusion in Salt" is quite
+
+good.
+
++3. Column 10 of the table is the thickness of an imaginary salt film
+next to the graphite if all the xenon (or ¥rypton) generated in this film
+goes into making up the computed noble-gas flux. Specifically, it is
+column 9 divided by c¢olum 5. It can be shown that the dissolved gas con-
+
+centration will reach 63% of its steady-state concentration (I at this
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+18
+
+distance from the graphite. The film thickness for '49Xe, 141Xe, and %Kr
+is very thin and the salt velocities this close to the graphite are in-
+deed very low. It may be recalled that the differential equation for dif-
+fusion in a flowing stream in the section "Diffusion in Salt" reduced to
+an equation for diffusion in a solid, but since the salt film thickness
+involved is small, this is an adequate reduction.
+
+4. In the case of 8%r, the film thickness is substantial and it is
+probably coincidental that the model fits this decay chain as well as it
+does. Krypton-89 is not a short-lived noble gas in the sense of this de-
+velopment. As a matter of fact, its half-life (3.2 min) is equivalent
+to almost eight circuit times of fuel salt around the loop (25 sec). The
+89K r concentration in the external loop will therefore become appreciable,
+and effects of the xenon stripper and circulating bubbles as additional
+krypton sinks must be considered.
+
+a
+
+pb
+
+ay
+
+ 
+|
+|
+
+ 
+
+bo
+7
+| 5.
+3
+
+6.
+»
+
+1°
+
+REFERENCES
+
+Oak Ridge National Laboratory, MSRP Semiann. Progr. Rept. Aug. 31, 1965,
+USAEC Report, QRNIL-3872.
+
+Oak Ridge National Laboratory, MSRP Semiann. Progr. Rept. Aug. 31, 1966,
+USAEC Report ORNL-4037.
+
+R. J. Kedl, Development of a Model for Computing the 135%e Migration
+in the MSRE, UBAEC Report ORNL-4069, Oak Ridge National Laboratory
+(to be published).
+
+G. M. Watson and R. B. Evans, Xenon Diffusion in Graphite: Effects
+of Xenon Absorption in Molten Salt Reactors Containing Graphite, Oak
+Ridge National Laboratory, unpublished internal document, Feb. 15, 1961.
+
+P. N. Haubenreich et al., MSRE Design and Operations Report, Part III.
+Nuclear Analysis, USAEC Report ORNL-TM-730, Oak Ridge National Labora-
+
+tory, February 1964.
+
+B. E. Prince, Oak Ridge National Laboratory, personal communication.
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+EE
+
+ 
+7!
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+in
+
+[2
+
+«8
+
+wt
+
+21
+
+APPENDIX A
+
+Derivation of Equation Describing Diffusion in Salt
+Flowing Between Pargllel Plates
+
+Consider two parallel plates, as shown below, with flow in the z di-
+
+rection only.
+
+ 
+
+ 
+
+ 
+
+ 
+
+‘Flow
+g Direction z 0
+J Les /
+/] £0
+0 rv
+4 29 /
+4 aa /
+/ AG %
+Ry l I i Diff t
+7] Dz - TT BL #
+7 Ar -
+~ 1 | y
+A | /
+7 /
+7 —N Ar fe— ;
+Py /
+
+ 
+
+ 
+
+Let AzAr(l) be an element of volume one unit in width. Consider the
+
+flow to be viscous, that is, no turbulent mixing. Dissolved material may
+
+enter and leave the volume element by diffusion in both the z and r direc-
+
+tions. It may enter and leave the volume element by convection only in
+
+the z direction.
+
+Mass is generated in the volume element at a constant
+
+rate resulting from fission, and mass is depléted from the volume as a
+
+result of decay.
+
+The noble-gas decay rate ‘is proportional to its concen-
+
+tration. A material balance around the element of volume will yield the
+
+following terms in units .of atoms/hr:
+
+mass
+
+mass:
+
+mass
+‘mass
+mass
+
+mass
+
+in by diffusion. at r
+out by diffusion:at r + Ar
+in by diffusion at z
+
+‘out by diffusion at z + Az
+
+in by convection at z
+
+out by convection at z + Az
+
+Yr/rear
+
+Az(1)
+/z ar(l)
+Az /z+Az ar(1)
+vCgy Ar(1)
+
+VCs (ztAz) Ar(1)
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+22
+
+mass generation Q ArAz(1)
+mass decay ACgy OrAzZ(1)
+
+where the terms are defined as follows:
+
+Ur = mass flux in the direction of r and at position r (atoms/hr+£t2)
+
+Ar/r+Ar = mass flux in the direction of r and at position r + Ar
+
+(atoms/hr-£t2)
+
+z = axial dimension (ft)
+
+i
+
+r = traverse dimension (ft)
+v = salt velocity (ft/hr)
+Cg = noble-gas concentration dissolved in salt (atoms per ft of
+salt)
+Q = noble-gas generation rate (atoms/hr per ft3 of salt)
+A = noble-gas decay constant (hr~!)
+
+Dg noble-gas diffusion coefficient in salt (££2/nr)
+
+By equating the input and output terms and dividing by ArAz(l) we obtain
+
+ 
+
+Ar /r+AT = Ar /r Az /z+Az - Az /2 v(Cs(z4az) - Csz)
+
+Ar AZ Az
+
+If Ar and Az are allowed to approach zero,
+
+day dq Cg
+
+ 
+
+ 
+
+— + —— + V—=Q + Ng =0
+or dz dz
+and, by definition,
+D Ls a D Ls
+or dz
+Therefore
+2 2
+dq, 0 Cg dq, 0 Cg
+— =— Dg and —— = =D v
+or dr? oz dz2
+
+ty
+ 
+
+ 
+
+"wh
+
+ 
+
+wv—y
+
+Substituting we get
+
+o*c, oc Q A v oC,
+
+or? dz? Dg Dg Dg Oz
+
+ 
+
+ 
+
+>
+
+and in the case of fully developed laminar flow between parallel plates
+
+2 "
+
+v ==7v|1-
+
+nw
+
+r
+2
+To
+
+ 
+ 
+
+ 
+
+—
+ 
+
+3
+
+25
+
+mr
+
+ORNL-TM-1810
+
+Internal Distribution
+
+1. G. M. Adamson. ~~. 48. J. R. Hightower
+
+ 
+
+ 
+
+2. R. G. Affel 49. H. W. Hoffman
+3. L. G. Alexander 50. R. W. Horton .
+4. C.F. Baes 51. W. H. Jordan
+; 5. S. J. Ball 52. P. R. Kasten
+| 6. W. P. Barthold 53-57. R. J. Kedl
+: 7. H. F. Bauman 58. M. J. Kelley
+8. S. E. Beall 59. M. T. Kelley
+Lo. 9. M. Bender 60. T. W. Kerlin
+] 10. E. S. Bettis 61. H. T. Kerr
+Ls 11. R. E. Blanco 62. S. 8. Kirslis
+12. F. F. Blankenship 63. D. J. Knowles
+13. J. O. Blomeke 64. J. A. Lane
+; 14. E. G. Bohlmann 65. R. B. Lindauer
+15. C. J. Borkowski 66. A. P. Litman
+; 16. M. A. Bredig 67. M. I. Lundin
+; 17. R. B. Briggs 68. R. N. Lyon
+: 18. J. R. Bronstein 69. H. G. MacPherson
+i 19. G. D. Brunton 70. R. E. MacPherson
+20. S. Cantor 71. C. L. Matthews
+21. W. L. Carter 72. R. W. McClung
+| 22. G. I. Cathers 73. H. C. McCurdy
+23. J. M. Chandler 74. H. F. McDuffie
+24. E. L. Compere 75. C. J. McHargue
+25, W. H. Cook 76. L. BE. McNeese
+2627. D. F. Cope 77. A. J. Miller
+28. W. B. Cottrell 78. R. L. Moore
+29. J. L. Crowley 79. J. P. Nichols
+30. F. L. Culler . 80. E. L. Nicholson
+- 31. 8S. J. Ditto ~ 8l. L. C. Oakes
+32. J. R. Engel 82. P. Patriarca
+} 33. E. P. Epler : 83. A. M. Perry
+’ 34. R. B. Evans 84. H. B. Piper
+35. D. E. Ferguson 85. B. E. Prince
+36. L. M. Ferris 86. R. C. Robertson
+37. A. P. Fraas 87. M. W. Rosenthal
+38. H. A. Friedman 88. H. C. Savage
+39. J. H. Frye, Jr. 89. A. W. Savolainen
+40. H. E. Goeller 90. C. E. Schilling
+41. W. R. Grimes 91-94. Dunlap Scott
+42. R. H. Guymon 95. H. E. Seagren
+43. P. H. Harley : 96. W. F. Schaffer
+44. D. G. Harmon nF 97. J. H. Shaffer
+45. C. S. Harrill 98. M. J. Skinner
+J 46. P., N. Haubenreich 99. G. M. Slaughter
+47. F. A. Heddleson 100. A. N. Smith
+
+ 
+ 
+
+ 
+
+ 
+
+101.
+102 »
+103.
+104.
+105.
+106.
+107.
+108.
+109.
+110.
+111.
+
+127.
+128.
+129.
+130.
+131-132.
+133.
+134-148.
+
+F.
+0.
+P.
+W.
+I.
+
+J.
+R.
+
+’ D.
+
+Je
+S.
+
+A.
+T.
+H.
+W.
+
+26
+J. Smith 112.
+L. Smith 113.
+G. Smith 114.
+F. Spencer 115.
+Spiewak 116.
+. H. Stone 117.
+R. Tallackson 118.
+E. Thoma 119-120.
+B. Trauger 121-122.
+S. Watson 123-125.
+S. Watson 126.
+
+C. F. Weaver
+
+A. M. Weinberg
+
+J. R. Weir
+
+K. W. West
+
+M. E. Whatley
+
+G. D. Whitman
+
+H. C. Young
+
+Central Research Library
+Document Reference Section
+Laboratory Records Department
+Laboratory Records, RC
+
+External Distribution
+
+ 
+
+Giambusso, AEC, Washington
+
+W. McIntosh, AEC, Washington
+
+M. Roth, AEC, ORD
+L. Smalley, AEC, ORO
+
+Reactor Division, AEC, ORO
+Research and Development Division, AEC, ORO
+Division of Technical Information Extension (DTIE)
+
+—Y
+
+Pi
+
+ 

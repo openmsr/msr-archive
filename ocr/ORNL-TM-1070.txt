@@ -1,0 +1,5955 @@
+ASTER
+
+OAK RIDGE NATIONAL LABORATORY
+
+operated by
+UNION CARBIDE CORPORATION EB
+for the
+U.S. ATOMIC ENERGY COMMISSION
+
+ORNL- TM- 1070
+
+ 
+
+STABILITY ANALYSIS OF THE MOLTEN-SALT
+
+REACTOR EXPERIMENT
+
+S. J. Ball
+T. W. Kerlin
+
+ 
+
+NOTICE This document contains information of a preliminary nature
+and was prepared primarily for interna! use at the Oak Ridge National
+Laboratory. It is subject. to revision or correction and therefore does
+not represent a final report.
+
+ 
+meme oo LEGAL NOTICE -oomsom =o — --
+
+ 
+
+This report was prepared as an account of Government sponsored work. Neither the United States,
+
+nor the Commission, nor any person acting on behalf of the Commission:
+
+A. Makes any warranty or representation, expressed or implied, with respect to the accuracy,
+completeness, or usefulness of the information contained in this report, or that the use of
+any information, apparatus, method, or process disclosed in this report may not infringe
+privately owned rights; or
+
+B. Assumes any liabilities with respect to the use of, or for damages resulting from the use of
+any information, apparatus, method, or process disclosed in this report.
+
+As used in the above, ‘‘person acting on behalf of the Commission’ includes any employee or
+
+contractor of the Commission, or employee of such contractor, to the extent that such employee
+
+or contractor of the Commission, or employee of such contractor prepares, disseminates, or
+provides access to, any information pursuant to his employment or contract with the Commission,
+or his employment with such contractor.
+
+ 
+
+dn
+a
+
+od
+
+ 
+
+ 
+
+ 
+
+ORNL~-TM~1070
+
+*
+
+Contract No. W-7405-eng-26
+
+‘RELBASED FOR ANNOUNCESERA
+IN MICKRAR SOTENCE ABSIRAILS
+
+- =
+
+ 
+
+STABILITY ANALYSIS OF THE MOLTEN-SALT
+REACTOR EXPERIMENT
+
+S. J. Ball
+Instrumentation and Controls Division
+
+T. W. Kerlin
+Reactor Division
+
+ 
+
+ 
+
+ 
+
+ 
+
+LEGAL NOTICE
+
+Thies report was prepared as an account of Gove; ni
+ir Tament sponsored work,
+Sates, or the Commission, nor any person acting on behalf of the Commins * (he United
+» Makes any or repr d or implied : accu
+. Co * wi t
+} racy, completeness, or usefulness of the tnformation contained in this ropory or that the .
+"of any information, fpparatus, method, or process disclosed in this report not afr! ne
+: ‘privately owned rights; or hind nee
+B. Assumes any labilities with respoct to the uge of, \
+or for resul! '
+use of any tnformation, apparatus, method, or process disclosed i erat fg trom the
+As used in the above, ‘person acting on behalf of the Commission” includes any em-~
+
+ 
+
+ 
+
+ 
+
+ 
+
+| ployee or co of the Ci or I of such extent
+‘ such employee or contractor of the C i or l of such , - — —
+disseminates, or provides access to, any information pursuant to his employment orc contract
+
+ 
+
+with the C. or his y with such 3
+
+DECEMBER 1965
+
+" OAK RIDGE NATIONAL LABORATORY
+Oak Ridge, Tennessee :
+oe operated by
+UNION CARBIDE CORPORATION
+"for the
+U.S. ATOMIC ENERGY COMMISSION
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+© Sa a
+
+ow
+
+{
+!
+¥
+i
+i
+
+ 
+
+ 
+
+¥
+:
+
+ 
+
+ 
+
+4
+
+@ A
+7
+
+ 
+ 
+
+ 
+
+C
+
+ 
+
+ 
+
+ 
+
+ 
+
+i A a
+
+iii
+CONTENTS
+
+Abstract ® © 0 0.0.8 008 PPLE CEES O SESE O00 SNES eR0SesEOtEe
+
+"1. Introduction eeseeecececans secret ete are eres sets eesasnnsne
+
+2. Description of the MSRE tiiviavetrosessecoresnsecssaveocsons
+3. Review of Studies of MSRE Dynamics seoeesceconsssecs sess nene
+4. Description of Theoretical MOGELS +eoevevencrsercesacnonnss
+Core Fluid Flow end Heat Transfer ...ceceiveereecnscvececnens
+Neutron Kinetics teviveeeeeressactesasensosnosscssecnsssnons
+Heat Exchanger ana Radiator ..c.eivvevieccococnsnnsansssssnress
+Fluid Transport and Heat Transfer in Connecting Piping «....
+Xenon Behavior ceveeescoeecscesossscencasanse cesesecsinnnnne
+Delayed POWET ceveocesrnssassssssrsessnsans ceseaee cereeren vee
+5. Stability Analysis Results ceceveeienrecscenennnas ceeeinnnan
+Transient Response .eceeeerseieressesoonscsoecsssscesasscnnne
+Closed-Loop Frequency RESPONSE «ove veeesossssorsnronsssssonnas
+Open-Loop Frequency ReSpONSe .vvevevsoereceeresocacensns cess
+Pole Configuration eeeeseresiestseenososeneesossesrsssacannes
+6. Interpretation of ReSUlbtS ceviiertrisersssscrsasssesseasasnesns
+Explanation of the Inherent Stability Characteristics ......
+Interpretation of Early Results «sveceeens IN cece
+7. Perturbations in the Model and the Design Parameters .......
+Effects of Model Changes ..scevesse. Cheese eseeannnee chen
+Effects of Parameter Changes I
+Effects of Design Uncertainties Cerareeenae Ceeeeerateeaneens
+8. Conclusions eerie rarer aera crrieenens cesarean
+References seeveee.e, A CE
+Appendix A. Model EQUATIONS wvserreennreneennns eer raeeeeeaan
+Appendix B. Coefficients Used in the Model Equations ceeeecsess
+Appendix C. General Description of MSRE Frequency-Response
+
+g Code ree esc e teres reise cts stn s ects es rete ras essere n Nas
+
+Appendix D. Stability Extrema Calculation s.e.eeeeeessseeceeees
+
+NNN ERE
+
+14
+16
+16
+16
+16
+18
+18
+19
+23
+25
+27
+27
+31
+34
+34
+
++ 35
+
+40
+42
+45
+49
+67
+
+71
+75
+
+ 
+
+ 
+ 
+
+(-
+a
+»
+~~
+
+ny
+
+STABILITY ANALYSIS OF THE MOLTEN-SALT
+REACTOR EXPERIMENT
+
+S. J. Ball T. W. Kerlin
+
+Abstract
+
+A detailed analysis shows that the Molten-Salt Reactor
+Experiment is inherently stable. It has sluggish transient
+response at low power, but this creates no safety or opera-
+tional problems. The study included analysis of the tran-
+sient response, frequency response, and pole configuration.
+The effects of changes in the mathematical model for the
+system and in the characteristic parameters were studied.
+
+A systematic analysis was also made to find the set of
+parameters, within the estimated uncertainty range of the
+design values, that gives the least stable condition. The
+system was found to be inherently stable for this condition,
+as well as for the design condition.
+
+te pm
+ol o"
+
+The system stability was underestimated in earlier
+studies of MSRE transient behavior. This was partly due to
+the approximate model previously used. The estimates of
+the values for the system parameters in the earlier studies
+also led to less stable predictions than current best values.
+
+The stability increases as the power level increases and
+is largely determined by the relative reactivity contribu-
+tions of the prompt feedback and the delayed feedback. The
+large heat capacities of system components, low heat transfer
+coefficients, and fuel circulation cause the delayed reac-
+tivity feedback.
+
+ 
+
+: | 7 UU) mntroduckion
+
+| Investigations of inherent stability constitute an essential part of
+a reactor evaluation. This is particularly true for a new type of system,
+such as the MSRE. The first consideration in such an analysis is to de-
+- termine whether the system possesses inherent self-destruction tendencies.
+"Other less important but significant considerations are the influence of
+inherent characteristics on control system requirements and the possi-
+bility of conducting experiments that require constant conditions for ex-
+
+" tended periods.
+
+ 
+ 
+
+Several approaches may be used for stability analysis. A complete
+study of power reactor dynamics would take into account the inherent non-
+linearity of the reactivity feedback. It is not difficult to calculate
+the transient response of nonlinear systems with analog or digital com-
+puters. On the other hand, it is not currently possible to study the
+stability of multicomponent nonlinear systems in a general fashion. The
+usual method is to linearize the feedback terms in the system equations
+and use the well-developed methods of linear-feedback theory for stability
+analysis. This leads to the use of the frequency response (Bode plots or
+Nyquist plots) or root locus for stability analysis. This study included
+nonlinear transient-response calculations and linearized frequency-response
+and root-locus calculations.
+
+The stability of a dynamic system can depend on a delicate balance
+of the effects of many components. This balance may be altered by changes
+in the mathematical model for the system or by changes in the values of
+the parameters that characterize the system. Since neither perfect models
+nor exact parameters can be obtained, the effect of changes in each of
+these on predicted stability should be determined, as was done in this
+study.
+
+The transient and frequency responses obtained in a stability analy-
+sis are also needed for comparison with results of dynamic tests on the
+system. The dynamic tests may indicate that modifications in the theo-
+retical model or in the design data are needed. Such modifications can
+provide a confirmed model that may be used for interpreting any changes
+possibly observed in the MSRE dynamic behavior in subsequent operation
+and for predicting, with confidence, the stability of other similar
+
+systems.
+
+2. Description of the MSRE
+
+The MSRE is a graphite-moderated, circulating-fuel reactor with fluo-
+ride salts of uranium, lithium, beryllium, and zirconium as the fuel.?
+The basic flow diagram is shown in Fig. 1. The molten fuel-bearing salt
+enters the core matrix at the bottom and passes up through the core in
+channels machined out of 2-in. graphite blocks. The 10 Mw of heat
+
+-
+
+C
+
+“( ¥
+
+6 po»
+ 
+
+ 
+
+ORNL-DWG 65-9809
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+PUMP PUMP
+7N\
+: PRIMARY
+oy > HEAT
+EXCHANGER RADIATOR
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+J
+4 ante ——
+
+Fig. 1. MSRE Basic Flow Diagram.
+
+ 
+
+i
+OF A hed
+|
+
+ 
+
+A
+ f
+| ey
+
+*
+
+ 
+ 
+
+ 
+
+generated in the fuel and transferred from the graphite raises the fuel
+temperature from 1175°F at the inlet to 1225°F at the outlet. When the
+system operates at lower power, the flow rate is the same as at 10 Mw,
+and the temperature rise through the core decreases. The hot fuel salt
+travels to the primary heat exchanger, where it transfers heat to a non-
+fueled secondary salt before reentering the core. The heated secondary
+salt travels to an air-cooled radiator before returning to the primary
+heat exchanger.
+Dynamically, the two most important characteristics of the MSRE are
+that the core is heterogeneous and that the fuel circulates. Since this =
+
+combination of important characteristics is uncommon, a detailed study Oo.
+
+».
+
+of stability was required. The fuel circulation acts to reduce the ef-
+fective delayed-neutron fraction, to reduce the rate of fuel temperature
+change during a power change, and to introduce delayed fuel-temperature
+and neutron-production effects. The heterogeneity introduces a delayed
+feedback effect due to graphite temperature changes.
+
+The MSRE also has a large ratio of heat capacity to power production.
+This indicates that temperatures will change slowly with power changes.
+This also suggests that the effects of the negative temperature coeffi-
+cients will appear slowly, and the system will be sluggish. This type
+of behavior, which is more pronounced at low power, is evident in the
+results of this study.
+
+Another factor that contributes to the sluggish time response is the
+heat sink — the air radiator. An approximate time constant for heating
+
+vp »
+
+and cooling the entire primary and secondary system was found by consider-
+ing all the salt, graphite, and metal as one lumped heat capacity that
+dumps heat through a resistance into the air (sink), as indicated in Fig.
+2. For the reactor operating at 10 Mw with a mean reactor temperature
+
+of about 1200°F and s sink temperature of about 200°F, the effective re-
+
+sistance must be
+
+1200°F — 200°F
+
+°
+TB = 100°F/Mw .
+
+Thus the overall time constant is vo
+ 
+
+ 
+
+ 
+
+ 
+
+€) y v
+
+ 
+
+ 
+
+ 
+
+REACTOR
+
+ 
+
+ 
+
+ 
+
+ 
+
+© SINK
+TEMPERATURE
+
+ 
+
+ 
+
+ 
+
+ORNL-DWG 65-9810
+
+HEAT CAPACITY = 12 Mw-sec/°F
+
+RESISTANCE VARIES WITH AIR
+FLOW RATE
+
+MEAN AIR TEMPERATURE VARIES
+WITH AIR FLOW RATE
+
+Fig. 2. MSRE Heat Transfer System with Primary and Secondary Sys-
+
+tem Considered as One Lump.
+
+ 
+
+ 
+
+ 
+ 
+
+Mw.sec °F
+12 =F X 100 wo = 1200 sec
+= 20 min .
+
+For the reactor operating at 1 Mw, the sink temperature increases to about
+400°F. This is due to a reduction in cooling air flow provided at low
+power to keep the fuel temperature at 1225°F at the core exit. In this
+
+case the resistance is
+
+1200°F — 400°F
+
+o
+RT = 800°F/Mw ,
+
+and the overall time constant becomes
+
+Mw-sec °F .
+12 5 x 800 We = 9600 sec
+= 3 hr .
+
+This very long time-response behavior would not be as pronounced with a
+heat sink such as a steam generator, where the sink temperatures would
+
+be considerably higher.
+
+3. Review of Studies of MSRE Dynamics
+
+ 
+
+Three types of studies of MSRE dynamics were previously made:
+(1) transient-behavior analyses of the system during normal operation
+with an automatic controller, (2) abnormel-transient and accident studies,
+and (3) ‘transient-behavior analyses of the system without external con-
+trol. ‘The automatic rod control system operates in either a neutron-flux
+control mode, for low-power operation, or in a temperature control mode
+
+at higher powers.?
+
+The predicted response of the reactor under servo con-
+trol for large changes in load demand indicated that the system is both
+stable and controllable. The abnormal-transient and accident studies
+showed that credible transients are not dangerous.>
+
+The behavior of the reactor without servo control was initially in-
+vestigated in 1960 and 1961 by Burke.%7 A subsequent controller study
+
+by Ball® in 1962 indicated that the system had greater inherent stability
+ 
+
+ 
+
+ 
+
+ 
+
+C
+
+ 
+
+oh
+
+Fal
+
+than predicted by Burke. Figure 3 shows comparable transient responses
+for the two cases. The differences in predicted response are due to dif-
+ferences both in the model and in the parameters used and will be dis-
+cussed in detail in Section 6.
+
+There are two important aspects of the MSRE's inherent stability
+characteristics that were observed in the earlier studies. First, the
+reactor tends to become less stable at lower powers, and second, the
+period of oscillation is very long and increases with lower powers. As
+shown in Fig. 3, the period is sbout 9 min at 1 Mw, so any tendency of
+
+the system to oscillate can be easily controlled. Also, since the system
+
+is self-stabilizing at higher powers, it would not tend to run away, or
+
+as in this case, creep away. The most objectionable aspect of inherent
+oscillations would be their interference with tests planned for the re-
+
+actor without automatic control.
+
+4. Description of Theoretical Models
+
+ 
+
+Several different models have been used in the dynamic studies of
+the MSRE. Also, because the best estimates of parameter values were modi-
+fied periodically, each study was based on a different set of parameters.
+Since the models and parameters are both important factors in the predic-
+tion of stability, their influence on predicted behavior was examined in
+this study. Tables 1, 2, and 3 summarize the various models and parameter
+sets used. Table 1 lists the parameters for each of the three studies,
+Table 2 indicates how each part of the reactor was represented in the
+three different models, and Table 3 indicates which model was used for
+each study. The three models are referred to subsequently as the "Re-
+duced," "Intermediate," and "Complete" models, as designated in Table 2.
+The models are described in this section, and the equations used are given
+
+in Appendix A. The coefficients for each case are listed in Appendix B.
+
+Core Fluid Flow and Heat Transfer
+
+A typical scheme for representing the thermal dynamics of the MSRE
+core is shown in Fig. 4. The arrows indicating heat transfer require
+
+additional explanation. It was desired to base the calculation of heat
+
+ 
+ 
+
+ 
+
+Fig. 3.
+Demand.
+
+ORNL-DWG 65-9811
+
+STUDIES (1960, 1961)
+
+1962 STUDY
+
+FLUX POWER (Mw)
+
+   
+
+lo} 200 400 600 800
+TIME (sec)
+
+Response of MSRE Without Controller to Decrease in Load
+
+ 
+ 
+
+ 
+
+&)
+
+rt
+
+om
+
+ry
+
+Table 1.
+
+ 
+
+Surmary of Parameter Values
+
+Used in MSRE Kinetics Studies
+
+ 
+
+ 
+
+Burke Ball Present
+Parameter 1961 1962 Study
+Fuel reactivity coefficient, °F"? =3.3 x 105 =2.8 X 10° 4.84 x 10°5
+Graphite reactivity coefficient, —6.0 x 107° —6.0 xX 107° —3.7 x 10~%
+o
+-
+Fuel heat capacity, Mw:sec/°F 4.78 4.78 4.19
+Effective core size, ft> 20.3 24.85 22.5
+Heat transfer coefficient from 0.02 0.0135 0.02
+fuel to graphite, Mw/°F
+Fraction of power generated in fuel 0.9 0.9% 0.934
+Delayed power fraction (gamma 0.064 0.064 0.0564
+heating)
+Delayed power time constant, see 12 12 188
+Core transit time, sec 7.63 9.342 8.46
+Graphite heat capacity, Mw.sec/°F 3.75 3.528 3.58
+Nuclear data
+Prompt-neutron lifetime (sec) 0.0003 0.00038 0.00024
+Total delayed-neutron fraction 0.0064 0.0064 0.00666
+Effective delayed-neutron 0.0036 0.0041 (0.0036)%
+fraction for one-group
+approximation
+Effective decay constant for 0.0838 0.0838 (0.133)%
+one-grow approximation,
+se Ra
+Fuel transit time in external-- 14.37 17.03 16.73
+primary circuit, sec :
+Total secondary loop coolant - 24,2 24.2 21.48
+
+transit time, sec
+
+ 
+
+8aix groups used; see Appendix B for individual delayed-neutron
+fractions (B) and decay constants (2).
+
+ 
+ 
+
+ 
+
+ 
+
+Table 2.
+
+10
+
+Description of Models Used
+
+in MSRE Kinetics Studies
+
+wv’
+
+ 
+
+ 
+
+Reduced Intermediate Complete
+Model Model Model
+
+Number of core regions 9
+Number of delayed-neutron groups 1 1 6
+Dynamic circulating precursors? No No Yes
+Fluid transport lags® First Fourth-order Pure
+
+order Padé delay -
+Fluid-to-pipe heat transfer No Yes Yes
+Number of heat exchanger lumps 1 1 10 =
+Number of radiator lumps 1 1 10
+Xenon reactivity No No - Yes
+
+ 
+
+81n the first two models, the reduced effective delayed-neutron
+fraction due to fuel circulation was assumed equal to the steady-.
+
+state value.
+
+explicitly (see Appendix A for details).
+
+b
+
+~ ’The Laplace transform of a time lag, 7, is eS,
+order approximation is 1/(1 + ts).
+
+In the third model, the transient equations were treated
+
+The first
+The fourth order Padé epproxima-
+
+tion is the ratio of two fourth-order polynomials in 1s, which gives
+a better approximation of e~'® (see Appendix A).
+
+Table 3.
+
+Models Used in the Various
+
+MSRE Kinetics Studies
+
+ 
+
+ 
+
+Study Model Used
+Burke 1961 analog (refs. 47) Reduced
+Ball 1962 analog (ref. 8) Intermediate
+1965 frequency response Complete
+1965 transient response Intermediate
+1965 extrema determination® Reduced
+1965 eigenvalue calculations Intermediate
+1965 frequency response with Complete
+
+extrema data
+
+ 
+
+&The worst possible combination of pa-
+rameters was used as described in Section 7.
+
+&
+ 
+
+ 
+
+ 
+
+ 
+
+a
+
+11
+~~ x
+SL
+
+ORNL-DWG 65-9812
+GRAPHITE
+Te
+HEAT TRANSFER
+
+ 
+
+ 
+
+ 
+
+FUEL-TO-GRAPHITE ' DRIVING FORCE
+HEAT TRANSFER |
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+> !
+Teta IN == FUEL_LUMP FUEL LUMP 2 f—7F2, our
+« 7] Ty 7 Tra —
+F
+Ne Ls MIXED
+SUBREGIONS
+Fig. 4. Model of Reactor Core Region; Nuclear Power Produced in
+all Three Subregions. :
+i
+. a
+a
+on
+hd
+
+ 
+
+0)
+
+»
+
+Eg
+
+ 
+ 
+
+12
+
+transfer rate between the graphite and the fuel stream on the difference
+of their average temperatures. The outlet of the first lump or "well-
+stirred tank" in the fuel stream is taken as the fluid average temperature.
+Thus a dotted arrow is shown from this point to the graphite to represent
+the driving force for heat transfer. However, all the mass of the fluid
+is in the lumps, and the heat transferred is distributed equally between
+the lumps. Therefore solid arrows are shown from the graphite to each
+fluid lump to indicate actual transfer of heat.
+
+This model was developed by E. R. Mann* and has distinct advantages
+over the usual model for representing the fluid by a single lump in which
+the following algebraic relationship is used to define the mean fuel tem-
+perature:
+
+Tp inlet + Tp outlet
+
+. Tp mean = 7 .
+
+The outlet temperature of the model is given by
+
+Tp outlet = Ty, mean — Tn inlet
+
+Since the mean temperature variable represents a substantial heat
+capacity (in liquid systems), it does not respond instantaneously to
+changes in inlet temperature. Thus a rapid increase in inlet temperature
+would cause a decrease in outlet temperature — clearly a nonphysical re-
+sult. With certain limitations on the length of the flow path, ? Mann's
+model avoids this difficulty.
+
+The reduced MSRE model used one region to represent the entire core,
+and the nuclear average temperatures were taken as the average graphite
+temperature (Ty) and the temperature of the first fuel lump (Tgp )- The
+nuclear average temperature is defined as the temperature that will give
+the reactivity feedback effect when multiplied by the appropriate tem-
+perature coefficient of reactivity.
+
+The intermediate and complete models employ the nine-region core
+
+model shown schematically in Fig. 5. Each region contains two fuel lumps
+
+ 
+
+*0ak Ridge National Laboratory; now deceased.
+
+&y
+
+#
+ 
+
+3,
+
+ 
+
+13
+
+UNCLASSIFIED
+ORNL-DWG 63-7349R
+
+(7e)out
+
+¢ d
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+H —
+~
+
+ 
+
+ 
+
+ 
+
+embe —
+me —-
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+a
+
+ 
+
+ 
+
+T=
+
+ 
+
+~ | FLow
+Pn
+
+Fig. 5. Schematic Diagram of Nine-Region Core Model.
+
+ 
+ 
+
+14
+
+and one graphite lump, as shown in Fig. 4. This gives a total of 18 lumps
+(or nodes) to represent the fuel and nine lumps to represent the graphite.
+The nuclear power distribution and nuclear importances for all 27 lumps
+were calculated with the digital code EQUIPOISE-3A, which solves steady-
+state, two-group, neutron-diffusion equations in two dimensions.
+
+Tests were made on the MSRE full-scale core hydraulic mockup*© to
+check the validity of the theoretical models of core fluid transport. A
+salt solution was injected suddenly into the 1200-gpm water stream at the
+reactor vessel inlet of the mockup, and the response at the reactor outlet
+was measured by a conductivity probe. The frequency response of the sys-
+tem was computed from the time response by Samulon's method! for a sam-
+pling rate of 2.5/sec. The equivalent mixing characteristics of the
+theoretical models are computed from the transfer function of core outlet-~
+to-inlet temperature by omitting heat transfer to the graphite and adding
+pure delays for the time for fluid transport from the point of salt in-
+jection to the core inlet and from the core outlet to the conductivity
+probe location. A comparison of the experimental, one-region, and nine-
+region transfer functions is shown by frequency-response plots in Fig. 6.
+Both theoretical curves compare favorably with the experimental curve,
+especially in the range of frequencies important in the stability study
+(0.01 to 0.1 radians/sec). The relatively large attenuation of the mag-
+nitude ratios at frequencies as low as 0.1 to 1.0 radians/sec is due to
+a considerable amount of axial mixing, which is to be expected at the
+low Reynolds number of the core fluid flow (~1000). This test indicates
+that the models used for core fuel circulation in the stability analyses
+
+are adequate.
+
+Neutron Kinetics
+
+The standard one-point, nonlinear, neutron kinetics equations with
+one average delayed-neutron group were used in all the analog and digital
+transient response studies. Linearized equations were used for all the
+other studies. In the studies of a nine-region core model, weighted
+values of nuclear importance for each of the 27 lumps were used to compute
+
+the thermal feedback reactivity. Six delayed-neutron groups and the
+
+oh
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+Rl
+
+ 
+
+ 
+
+ 
+
+ 
+
+8
+
+ 
+
+ 
+
+£2
+
+PHASE (deg)
+
+MAGNITUDE RATIO
+
+-0.5
+
+0.2
+
+0.
+
+0.05
+
+0.02"
+
+-120
+-180
+-240_
+-300
+-360
+
+-420
+
+. ~480
+
+-540
+
+0.
+
+Fig. 6.
+retical Reactor Mixing Characteristics.
+
+ 
+
+15
+
+ORNL-DWG 65-9813
+
+RIMENTAL
+
+-REGION
+CORE" MODEL
+
+NINE-REGION -
+CORE MODEL
+
+ 
+
+ 
+
+ 
+
+ 
+
+\
+| — EXPERIMENTAL
+
+ 
+
+ 
+
+ 
+
+ 
+
+\'Y | {-onE-REGION
+A
+
+CORE MODEL
+J
+NINE-REGION
+CORE Eon \
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Ot 0.02 0.05 Of 02 05 1 2 5 10
+: ‘ - FREQUENCY (radians sec)
+
+Comparison of ‘Frequency Response of Experinental and Theo-
+
+i
+i
+i
+f
+i
+l
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+’ . 16
+
+dynamic effects of the circulation of the precursors around the primary
+
+loop were included in the complete model.
+
+* Heat Exchanger and Radiator
+
+The lumping scheme used to represent heat transfer in both the heat
+exchanger and the radiator is shown in Fig. 7. As with the core model,
+two lumps are used to represent each fluid flow path. The reduced and
+~ intermediate models both used one section as shown. The complete model
+
+used ten of these sections connected sequentially.
+
+Fluid Transport and Heat Transfer in Connecting Piping
+
+The reduced model used single well-stirred-tank approximations for
+fluid transport in the piping from the core to the heat exchanger, from
+the heat exchanger to the core, from the heat exchanger to the radiator,
+and from the radiator back to the heat exchanger. Since the flow is
+highly turbulent (primary system, Re w 240,000; secondary system,
+
+Re w 120,000), there is relatively little axial mixing, and thus a plug
+flow model is probably superior to the well-stirred-tank model. Fourth-
+order Padé approximations were used in the intermediate model ‘and pure
+delays in the complete model (see Appendix A). Heat transfer to the pip-
+
+ing and vessels was also included in the complete model.
+
+Xenon Behavior
+
+The transient poisoning effects of xenon in the core were considered
+only in the complete model. The equations include iodine decay into xe-
+
+non, xenon decay and burnup, and xenon absorption into the graphite.
+
+Delayed Power
+In all three models, the delayed-gamma portion of the nuclear power
+
+was approximated by a first-order lag.
+
+ 
+
+yA,
+ 
+
+17
+
+.)
+
+ORNL-DWG 65-9814
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+;
+Ty iv == — — "1 ouT
+i
+i
+{ HEAT TRANSFER
+Tr la— TUBE
+%
+! HEAT TRANSFER
+DRIVING FORCE
+= |
+T2: our == 1 Tar In
+72
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+WELL-STIRRED
+TANK (TYPICAL)
+
+*
+
+(HoLoup TIME = 2)
+
+Fig. 7. Model of Heat Exchanger and Radiator. (See discussion of
+Fig. 4 for explanation of arrows.)
+
+ 
+
+ 
+
+7»
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+18
+
+5. Stability Analysis Results
+
+Data were obtained with the best available estimates of the system
+parameters for analysis by the transient-response, closed-loop frequency-
+response, open-loop frequency-response, and pole-configuration (root
+locus) methods. The advantages in using various analytical methods are
+that (1) comparison of the results provides a means of checking for com-
+putational errors; (2) some methods are more useful than others for spe-
+cific purposes; for example, the pole-configuration analysis gives a
+clear answer to the question of stability, but frequency-response methods
+are needed to determine the physical causes of the calculated behavior;
+and (3) certain methods ‘are more meaningful to a reader than others, de-
+pending on his technical badkground. The differences between the results
+and earlier results’ are discussed in Section 6, and the effects of
+changes in the mathematical model and the system parameters are examined
+in Section 7.
+
+The results show that the MSRE has satisfactory inherent stability
+characteristics. Its inherent response to a perturbation at low power
+is characterized by a slow return to steady state after a series of low-
+frequency oscillations. This undesirable but certainly safe behavior at
+
+low power can easily be smoothed out by the control system. ?
+
+Transient Response
+
+The time response of a system to a perturbation is a useful and
+easily interpreted measure of dynamic performance. It is not as useful
+in showing the reasons behind the observed behavior as some of the other
+methods discussed below, but it has the advantage of being a physically
+observable (and therefore familiar) process.
+
+The time response of the reactor power to a step change in k ee was
+
+calculated. The IBM-7090 code MATEXP*? was used. MATEXP solves general,
+
+nonlinear, ordinary differential equations of the form
+
+= ax + 26(x) x + £(t) , (1)
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+-~
+
+LU
+
+oo
+
+19
+
+where
+Xx = the solution vector,
+A = system matrix (constant square matrix with real coefficients),
+AA(x) = a matrix whose elements are deviations from the values in A
+[thus AA(x) x includes all nonlinear effects],
+f(t) = forcing function vector.
+
+The A matrix was developed for the intermediate model and resulted in a
+59 xX 59 matrix.
+
+The transient response of the neutron level to a step change in k off
+of +0. Ol% is shown in Fig. & for initial power levels of 10 and 1 Mw.
+The slow response is evident. Figure 8 also clearly shows that the re-
+
+actor takes longer to return to steady state in a 1-Mw transient than in
+
+. a 10-Mw transient. It is also clear that the power does not diverge
+
+(i.e., the system is stable).
+
+It should be emphasized that this transient analysis included the
+nonlinearities inherent in the neutron kinetics equations. The fact that
+the results of the other analyses presented below, which are based on
+linear models, agree in substance with these results verifies the adequacy
+
+of the linear analyses for small perturbations.
+
+Closed-Loop Frequency Response
+
+The closed-loop transfer function is defined as the Laplace trans-
+form of a selected output variable divided by the Laplace transform of
+a selected input variable. If the system is stable, it is possible to
+replace the Laplace transform varisble, s, with ju, where j =v~L and
+w is the angular frequency of a sinusoidal input. A transfer function,
+G(w), evaluated at a particular w is a complex quantity. The amplitude
+of G(w) physically represents the gain, or the ratio of the amplitude of
+the output sinusoid to the amplitude of the input sinusoid. The phase
+angle of G(w) represents the phase difference between the input and out-
+put sinusoids. A logarithmic plot of amplitude ratio and phase angle as
+a function of w is called a Bode plot, or frequency-response plot.
+
+The relationship between the frequency response and the time response
+due to a sinusoidal input is useful conceptually and experimentally. How-
+ever, it may be shown that the Bode plot for a linear system also provides
+
+ 
+ 
+
+ 
+
+20
+
+ORNL-DWG 65-9815
+- 04
+
+\— = 10Mw
+0.3
+
+0.2 : ; -
+PSE = {Mw | | .
+
+~~ —
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+8N, CHANGE IN NEUTRON LEVEL (Mw)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+~—
+-01
+0 100 200 300 400
+TIME (sec)
+
+Fig. 8. MSRE Transient Response to a +0.01% dk Step Reactivity In-
+put when Operating at 1 and 10 Mw.
+
+RJ
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+wt
+
+ 
+
+21
+
+qualitative stability information that is not restricted to any particu-
+lar form in input.? This information is largely contained in the peaks
+in the amplitude ratio curve. High narrow peaks indicate that the system
+is less stable than is indicated by lower broader peaks.
+
+The closed-loop frequency response was calculated for N (neutron
+level fluctuations in megawatts) as a function of 5k (change in input
+k
+
+ere)”
+response calculations; see Appendix c) and the complete model were used
+
+The MSFR code (a special-purpose code for the MSRE frequency-
+
+for this calculation. The results for several power levels are shown in
+Fig. 9. Fewer phase-angle curves than magnitude curves are shown in order
+to avoid cluttering the plot.
+
+Several observations .can be based on the information of Fig. 9.
+First, the peaks of the magnitude curves get taller and sharper with lower
+power. This indicates that the system is more oscillatory at low power.
+Also the peaks in the low-power curves rise above the no-feedback curve.
+This indicates that the feedback is regenerative at these power levels.
+Also, since the frequency at which the magnitude ratio has a peak approxi-
+mately corresponds to the frequency at which the system will naturally
+oscillate in response to a disturbance, the low-power oscillations are
+much lower in frequency than the 10-Mw oscillations. The periods of os-
+cillation range from 22 min at O.1 Mw to 1.3 min at 10 Mw.
+
+Figure 9 shows that the peak of the 10-Mw magnitude ratio curve is
+very broad and indicates that any oscillation would be small and quickly
+demped out. The dip in this curve at 0.25 radians/sec is due to the 25-
+sec fuel circulation time in the primary loop [i.e., (2m radians/cycle)/
+(25 sec/cycle) = 0.25 radians/sec]. Here a fuel-temperature perturbation
+in the core is reinforced by the perturbation generated one eycle earlier
+that traveled around the loop. - Because of the negative fuel-temperature
+coefficient of reactivity, the power perturbation is attenuated.
+
+The relatively low gains shown at low frequencies .can be attributed
+to the large change in steady-state core temperatures that would result
+from a relatively small change in nuclear power with the radiator air
+flow rate remaining constant. . This means that only a small change in
+power is required to bring about cancellation of an input 8k perturbation
+
+by a change in the nuclear average temperatures.
+
+ 
+ 
+
+22
+
+ORNL-DWG 65-9816
+
+ 
+
+ 
+
+ 
+
+10
+0.00t 2 5 00t 2 5 Of 2 5 1 2 s§ 10 2 5 100
+FREQUENCY (radians sec)
+
+20
+80
+
+70
+p SV
+HASE OF Nod%
+
+60
+50
+40
+30
+20
+
+10
+
+PHASE (deg)
+Oo
+
+NO FEEDBACK
+
+ 
+
+-90
+0.0001 2 5 0001 2 5 001 2 5 01 2 5 1 2 5 10
+
+_ FREQUENCY (radions/sec)
+
+Fig. 9. Complete Model Analysis of MSRE Frequency Response for Sev-
+eral Power Levels.
+
+\'*
+
+ 
+
+»
+ 
+
+ 
+
+-
+
+WW)
+
+we)
+
+ 
+
+23
+
+Open-Loop Frequency Response
+
+A simplified block diagram representation of a reactor as a closed-
+loop feedback system is shown in Fig. 10. The forward loop, G, represents
+the nuclear kinetics transfer function with no temperature effects, and
+the feedback loop, H, represents the temperature (and reactivity) changes
+due to nuclear power changes. ‘
+
+The closed-loop equation is found by solving for N in terms of Bk:
+N =G 8k, = GHN
+in
+
+or
+
+N G -
+8k, 1 +0GH (2)
+an
+
+The quantity GH is called the open-loop transfer function, and represents
+the response at point b of Fig. 10 if the loop is broken at point b.
+Equation (2) shows that the denominator of the closed-loop transfer func-
+tion vanishes if GH = —1. Also, according to the Nyquist stability cri-
+terion, the system is unstable if the phase of GH is more negative than
+-180° when the magnitude ratio is unity. Thus it is clear that the open-
+loop frequency response contains information about system dynamics that
+are important in stability analyses.
+
+A useful measure of system stability is the phase margin. It is de-
+fined as the difference between 180° and the open-loop phase angle when
+the gain is 1.0. A discussion of the phase margin and its uses may be
+found in suitable references on servomechanism theory.1® For this appli-
+cation, it suffices to note that smaller phase margins indicate reduced
+stability. A general rule of thumb in automatic control practice is that
+a phase margin of at least 30° is desirable. Phase margins less than 20°
+
+indicate lightly damped oscillation and poor control. Zero degrees in-
+
+ dicates an oscillating system, and -negative phase margins indicate insta-
+bility. LL
+
+The phase margin as a function of reactor power level is shown in
+Fig. 11. The phase margin decreases as the power decreases and goes below
+30° at about 0.5 Mw. However, the phase margin is still positive (12°)
+at 0.1 Mw. These small phase margins at low power suggest slowly damped
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+24
+ORNL-DWG 65-9817
+FORWARD LOOP
++ BK NET ye
+8kin G —-V
+- NUCLEAR POWER, Mw
+BREAK LOOP HERE
+FOR OPEN-LOOP
+ANALYSIS——a.},
+H
+3k FEEDBACK
+
+ 
+
+ 
+
+ 
+
+ee FEEDBACK LOOP
+
+Fig. 10. Reactor as a Closed-Loop Feedback System.
+
+i ORNL-DWG 65-9818
+
+! 100
+
+PHASE MARGIN
+
+20
+
+10D OF
+
+005 Of 02 0.5 t ‘2
+Ng, NUCLEAR POWER (Mw}
+
+ 
+
+Fig. 11. Period of Oscillation and Phase Margin Versus Power Level
+
+for MSFR Calculation with Complete Model.
+
+al
+
+ 
+ 
+
+ 
+
+a)
+
+»
+
+w)
+
+ 
+
+25
+
+oscillations, as has been observed in the transient-response and closed-
+loop frequency-response results. The period of oscillation as a function
+of power level is also shown in Fig. 11.
+
+Figure 12 shows Nyquist plots for the open-loop transfer function,
+GH, at 1.0 Mw and 10.0 Mw. It is clear that the unstable condition of
+(Jou) = 1 and phase angle —180°) is avoided. In order for the phase mar-
+gin to be a reliable indication of stability, the Nyquist plot must be
+"well-mannered" inside the unit circle; that is, it should not approach
+the critical (~1.0 +j0) point. Although the curves shown in Fig. 12 be-
+have peculiarly in approaching the origin, they do not get close to the
+
+critical point.
+
+Pole Configuration
+
+The denominator (1 + GH) of the closed-loop transfer function of a
+lumped-parameter system is a polynomial in the Laplace transform variable,
+s. The roots of this polynomial (called the characteristic polynomial)
+are the poles of the system transfer function. The poles are equal to
+the eigenvalues of the system matrix A in Eq. (1). A necessary and suf-
+ficient condition for linear stability is that the poles all have nega-
+tive real parts. Thus, it is useful to know the location of the poles in
+the complex plane and the dependence of their location on power level.
+
+The poles were calculated for the intermediate model of the MSRE
+(see Section 4). The matrix used was the linearized version of the
+59 X 59 matrix used in the transient analysis. The: calculations were
+performed with a modification of the general matrix eigenvalue code QR'4
+
+for the IBM-7090. The results are shown in Fig. 13 for several of the
+
+‘major poles. All the other poles lie far to the left of the ones shown.
+
+It is clear from Fig. 13 that the system is stable at all power levels.
+
+The set of complex poles that goes to zero as the power decreases is the
+
+- set primarily responsible for the calculated dynamic performance. The
+
+imaginary part of this set approximately represents the natural frequency
+
+of oscillation of the system following a disturbance. The frequency of
+
+oscillation decreases as. the power decreases, as observed previously.
+
+ 
+ORNL-OWG 65-9820
+
+IMAGINARY
+
+-16 14 +42 40 -08 -06 -04 -02
+
+i 4
+
+o 02 04 06 REAL
+02
+
+   
+ 
+ 
+ 
+  
+
+--02
+
+UNIT CIRCLE | 04
+
+06
+wp 2 0.0145
+
+up = oore—_/] ..
+
+Ng = 10Mw +-16
+
+ 
+
+IMAGINARY
+
+ 
+
+w= 0.00013—ay/
+w= 0.0003 ng
+
+ero
+
+Fig. 12. Nyquist Diagrams for Complete Model
+No = 1 and 10 Mw.
+
+No = 1 Mw
+-10000
+
+-.
+
+IMAGINARY PART OF POLE (sec)
+
+0.07
+0.06
+0.05
+0.04
+0.03
+
+0.02
+
+®
+10Mw
+
+0.09
+
+Q -—
+I -004 -0.03 -0.02 -001
+
+-0.04
+-0.02
+-0.03
+-0.04
+-0.05
+-0.06
+
+-0.07
+
+Fig. 13. Major Poles for the MSRE.
+
+ 
+
+2
+
+ 
+ 
+
+ 
+
+ 
+
+27
+
+6. Interpretation of Results
+
+Explanation of the Inherent Stability Characteristics
+
+A physical explanation of the predicted stability characteristics
+is presented in this section, and an attempt is made to explain the rea-
+sons for the changes in inherent stability with power level. The reasons
+for the behavior are not intuitively obvious. Typically a feedback system
+will become more stable when the open-loop gain is reduced. The MSRE,
+however, becomes less stable at lower powers. In the discussion of open-
+loop frequency response (Sect. 5) it was noted that the forward-loop
+transfer function G represents the nuclear kinetics (N/8k) with no
+temperature-feedback effects, and from the equations (Appendix A), the
+gain of G is directly proportional to power level. Thus the MSRE is not
+"typical" but has the characteristics of what is known as a "conditionally
+stable" system.’
+
+The MSRE analysis is complicated further by the complexity of the
+feedback loop H, which represents the reactivity effects due to fuel and
+graphite temperature changes resulting from changes in nuclear power. A
+more detailed breakdown of the components of H is given in Fig. 14. This
+core thermal model has two inputs, the nuclear power N and core inlet tem-
+perature T.5» and three outputs, nuclear average fuel and graphite tem-
+peratures 8 and Ta and the core outlet temperature Too The block "Ex-
+ternal Loops" represents the primary loop external to the core, the heat
+exchanger, the secondary ‘loop, and the radiator. All the parameters are
+treated as perturbation quantities or deviations from their steady-state
+values. Also the radiator air flow rate is adjusted so that with a given
+steady-state power level, the core outlet temperature is 1225°F. This
+means that the feedback loop transfer function H also varies with power
+level. i |
+
+If we look at the effect of perturbations in power, N, on the core
+inlet temperature, T,;» We can see that the effects of different air flow
+rates are only apparent at low frequencies, as in Fig. 15, which shows
+the Bode plots for T,/N at Ng = 1 and 10 Mv. Tt is important to note
+that at low power and at low frequency, the magnitude of the temperature
+
+change is large, and it lags the input N considerably. For example,
+
+ 
+BKiy- 8k NET
+
+ 
+
+ORNL-DWG 65-9822
+
+N
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+CORE OUTLET
+TEMPERATURE, Teo
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+OPEN LOOP
+Nk NUCLEAR POWER, Mw
+N a = TEMPERATURE
+COEFFICIENT OF
+CORE REACTIVITY
+THERMAL | CORE INLET F = FUEL
+MODEL TEMPERATURE, T,; © = GRAPHITE
+% = NUCLEAR AVERAGE
+EXTERNAL
+LOOPS
+
+ 
+
+ 
+
+Fig. 14. MSRE as Closed-Loop Control System.
+
+A Rr
+
+9 +
+
+1000
+
+ 
+
+w 5
+2
+g
+bo 2
+3 2
+EE 100
+bE
+2% °
+w %
+S
+Ow 2
+sg
+gz
+= 0
+EF 5
+3
+w 2
+
+1
+
+108 2 5 404 2 5 403 2 5 92 2 5 yo
+
+0
+0 ®
+
+PHASE (deg)
+®
+o
+
+ 
+
+-100
+-120
+-140
+-160
+105 2 5 104 2 5 03 2 5 402 2 5 40
+FREQUENCY (radians/sec)
+Fig. 15. Closed-Loop Frequency-Response
+
+Diagram of Core Inlet Temperature as a Function
+of Nuclear Power.
+
+ 
+ 
+
+ 
+
+ 
+
+2)
+
+ 
+
+29
+
+at No = 1 Mv and w = 0.0005 radians/sec, the magnitude ratio is 170°F/Mw
+and the phase lag is 80°. The block diagram of Fig. 14 indicates that
+
+the nuclear average temperature perturbations in TX and Tg can be con-
+sidered to be caused by the two separate inputs N and Tose For example,
+the open-loop transfer function TX/N (with Tos constant) is 5.0°F/Mw at
+steady state, and there is little attenuation and phase lag up to rela-
+tively high frequencies; as in Fig. 16, which shows the open-loop transfer
+functions of the nuclear average temperatures as functions of N and Tose
+Returning to the example case of Ng = 1 Mw and w = 0.0005 radians/sec,
+
+we note that the prompt feedback effect of 5°F/Mw from T#/N is very small
+compared with temperature changes of the entire system represented by a
+Toy /N of 170°F/Mw at —80°. (Note that T/T; = 1.0 at 0.0005 radians/sec.)
+The important point here is that for low power levels over a wide range
+
+of low frequencies, the large gain of the frequency response of overall
+system temperature relative to power dominates the feedback loop H, and
+its phase angle approaches —90°.
+
+The no-feedback curve in Fig. 9 shows that at frequencies below about
+0.005 radians/sec, the forward-loop transfer function N/8k (open loop)
+also has a phase approaching —90° and a gain curve with a —1 slope (i.e.,
+one-decade attenuation per decade increase in frequency). With both G
+and H having phase angles approaching —90°, the phase of the product GH
+will approach =180°. If the magnitude ratio of G were such that lea} = 1.0
+under these conditions, the system would approach instability. From the
+Bode plot of Fig. 9, it can be seen thet at a power of 0.1 Mw, |GH| s 1.0
+at 0.0045 radians/sec (22 min/cycle), since the peak in the closed-loop
+
+occurs there. At lower powers and consequently lower gains G, lau] ap-
+
+proaches 1.0 at even lower frequencies, where the phase of GH is closer
+to —180°. This accounts for the less stable conditions at the lower
+
+) powers and lower frequencies.
+
+At the higher powers, |GHI approaches 1.0 at higher frequencies
+
+where the effect of the prompt thermal feedback is significant. For ex-
+
+“ample, the peak in the 10-Mw closed-loop Bode plot of N/ok, Fig. 9, occurs
+
+at 0.078 radians/sec. At this frequency, lz ./Nl has a value of 2.0
+(Fig. 15) compared with a T%/N of 4.4 at =15° (Fig. 16). Consequently,
+the prompt fuel temperature feedback term has a dominant stabilizing effect.
+
+ 
+ 
+
+30
+
+ORNL-DWG 65-9824
+
+MAGNITUDE RATIO
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+PHASE (deg)
+
+ 
+
+ 
+
+ 
+
+ 
+
+-120
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+-135 -
+0.00f 0.002 0.005 0.0 - 002 0.05 ou 02 . 05 1.
+FREQUENCY (radians/sec)
+
+Fig. 16. Open-Loop Frequency-Response Diagrams of Nuclear Average
+Temperatures as Functions of Nuclear Power and Core Inlet Temperature.
+
+-
+
+ 
+A)
+
+ 
+
+ 
+
+ 
+
+31
+
+The relative importances of the various components of feedback re-
+activity are shown in the directed-line diagrams of Fig. 17 for power
+levels of 1 and 10 Mw and at the frequencies at which the oscillations
+occur. The vectors labeled —Bk, and —Bk, represent the products of the
+nuclear temperature components and the reactivity coefficients that re-
+sult from a unit vector input Bk, The vectors labeled "prompt" are
+the effects due to the nuclear power input based on no change in core
+inlet temperature. Those labeled "loop" are caused by changes in core
+
+inlet temperature alone. For example:
+
+ 
+
+Bk, prompt N T*
+Fe JF o1/ °F)
+BK = 5% N op
+in in } closed loop open loop
+and
+¥%
+Bk, loop N Tos Ta /o
+ok, ok T. %, (8k/°F)
+in in | closed loop closed loop “ci |open loop
+
+The net 8k vector is the sum of the input and feedback vectors. For the
+1-Mw case, dk net is greater than Bk, 3 this indicates regenerative feed-
+back and shows up on the closed-loop Bode plot (Fig. 9) as a peak with a
+greater magnitude ratio than that of the no-feedback curve.
+
+The increased stabilizing effect of the prompt fuel temperature term
+in going from 1 to 10 Mw is also evident. These plots clearly show the
+diminished effect of the graphite at the higher frequency.
+
+In both cases, too, the plots show that a more negative graphite
+
+temperature coefficient would tend to increase the net 8k vector and
+
+“hence destabilize the system.
+
+Interpretation of Early Results
+
+The previously published ‘results of a dynamic study performed in
+1961 predicted that the MSRE would be less stable than is predicted in
+this study. This is partly because of differences in design parameters
+
+- and partly because of differences in the models used. These differences
+
+were reviewed in Section 4 of this report.
+
+ 
+32
+
+ORNL-DWG 65-9825
+
+Po = 1OMw
+w = 00778 RADIANS/SEC
+
+¢ Sk NET
+
+  
+
+Skin
+
+~8kg TOTAL
+
+ 
+
+    
+ 
+
+-3k PROMPT
+~84¢ LOOP F
+Bk-NET
+Fp = {Mw
+w = 0.0145 RADIANS/SEC
+-84¢ PROMPT
+Bkin
+“84g LOOP 8k; PROMPT
+
+-84 LOOP
+
+Fig. 17. Directed-Line Diagrams of Reactivity Feedback Effects
+1 and 10 Mw for Complete Model.
+
+at
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+33
+
+The most significant parameter changes from 1961 to 1965 were the
+values for the fuel and graphite temperature coefficients of reactivity
+and the changes in the fuel heat capacity. Table 1 (Sect. 4) shows that
+the new fuel coefficient is more negative, the new graphite coefficient
+is less negative, and the fuel heat capacity is smaller than was thought
+to be the case in 1961. All these changes contribute to. the more stable
+behavior calculated with the current data. (The destabilizing effect of
+a more negative graphite temperature coefficient is discussed in Section
+7.) }
+
+The most important change, however, is the use of a multiregion core
+model and the calculation of the nuclear aversge temperature. In the
+single-region core, T¥* is equal to the temperature of the first of the
+
+F
+two fuel lumps or the average core temperature (in steady state). In
+
+‘the nine-region core, T¥* is computed by multiplying each of the 18 fuel-
+
+¥
+lump temperatures by a nuclear importance factor, I. In the single-
+
+region model, the steady-state value of TX/N (with Toi constant) is only
+2.8°F/Mw compared with 5.0°F/Mw for the nine-region core model. This
+difference occurs because in the nine-region model, the downstream fuel-
+lump temperatures are affected not only by the power input to that lump
+but also by the change in the lump's inlet temperature due to heating of
+the upstream lumps. This point may be illustrated by noting the differ-
+ence between two single-region models, where in one case the nuclear im-
+portance of the first lump is 1.0 and in the other case the importance
+
+of each lump is 0.5. As an example, say the core outlet temperature in-
+
+. creases 5°F/Mw. The change in TX for a 1-Mw input would be
+
+ATE =I, ATy + Ip ATy
+
+In the first case Tp = 1.0 and ATy = 2.5°F, 50 ATE = 2.5°F. In the sec-
+ond case, I = Ip = 0.5, ATy = 2.5°F, ‘and AT, = 5°F, so AT = 3.75°F, or
+
+a 50% greater change than in casé one. For many more lumps, this effect
+
+is even greater.
+
+As wes shown above; ‘the prompt ‘fuel reactivity feedback effect was
+
+the dominant stabilizing mechanism at both 1 and 10 Mw, so the original
+
+single-region core model would give pessimistic results.
+
+ 
+ 
+
+34
+
+7. Perturbations in the Model and the Design Parameters
+
+Every mathematical analysis of a physical system is subject to some
+uncertainty because of two questions: How good is the mathematical model,
+and how accurate are the values of the parameters used in the model? The
+influence of changes in the assumed model were therefore investigated,
+and the sensitivity to parameter variations of the results based on both
+the reduced and complete models was determined. An analysis was also
+performed to determine the worst expected stability performance within
+
+the estimated range of uncertainty of the system parameters.
+
+Effects of Model Changes
+
+ 
+
+The effects of changing the mathematical model of the system were
+determined by comparing the phase margins with the reference case as
+each part of the model was changed in turn. The following changes were
+made: a
+1. Core Representation. A single-region core model was used in-
+stead of the nine-region core used in the complete model.
+
+2. Delayed-Neutron Groups. A single delayed-neutron group was
+used instead of the six-group representation in the complete model.
+
+3. Fixed Effective B's. The usual constant-delay-fraction delayed-
+neutron equations were used with an effective delay fraction, B, for each
+precursor. The effective B was obtained by calculating the delayed-
+neutron contribution that is reduced due to fluid flow in the steady-
+state case. This is in contrast to the explicit treatment of dynamic
+circulation effects in the complete model (see Appendix A).
+
+4. First-Order Transport Lags. The Laplace transform of a pure
+delay, eS, was used in the complete model. The first-order well-
+stirred-tank approximation, — was used in the modified model.
+
+5. Single-Section Heat Exchanger and Radiator. A single section
+was used to represent the heat exchanger and radiator rather than the
+ten-section representation in the complete model.
+
+~ 6. Xenon. The xenon equations were omitted in contrast to the ex-
+
+plicit xenon treatment in the complete model.
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+35
+
+The results are shown in Table 4. The only significant effect is
+that due to a change in the core model. The results for the one-region
+core model indicate considerably less stability than for the nine-region
+core model. This difference is due primarily to the different way in
+which the nuclear average temperature of the fuel is calculated, as was
+
+discussed in detail in Section 6.
+
+Table 4. Effects of Model Changes on Stability
+
+ 
+
+Phase Margin Change in Phase Margin
+
+ 
+
+ 
+
+(deg) from Reference Case?
+Model Change ace (deg)
+At 1 Mw At 10 Mw At 1 Mw At 10 Mw
+Reference case (complete 41 99
+model)
+One core region : 27.5 56.5 =13.5 ~2.5
+One delayed-neutron 38 (v) -3
+group
+Fixed effective B's 40 98 -1 -1
+First-order transport 41 100 0 +1
+lags
+Single-section heat 41 98.5 0 -0.5
+exchanger and radiator
+Xenon omitted ~ 41 100.5 0 +1.5
+
+ 
+
+®Reference case is complete model with current data. An increase
+in phase margin indicates greater stability.
+
+Pyyquist plot does not cross unit circle near frequency of oscil-
+
+--lation. Ln :
+
+Effects of Parameter Changes
+
+© Frequency-response sensitivities and pole sensitivities were cal-
+
+‘culated. Frequency-response sensitivities are defined as fractional
+
+changes in magnitude or phase per fractional change ina system parameter.
+
+The magnitude frequency-response sensitivities were calculated for sev-
+eral important parameters with the MSFR code (see Appendix C) for the
+
+complete model. The sensitivities were obtained by differences between
+
+ 
+
+ 
+ 
+
+36
+
+the results of calculations at the design point and those of calculations
+
+with a single parameter changed slightly. The results of these calcu-
+
+- lations are shown in Fig.
+
+18. Calculations were also performed on the
+
+system with the reduced model with a new computer code called SFR (Sensi-
+
+tivity of the Frequency Response). This code calculates magnitude and
+
+phase sensitivities for a
+
+general system by matrix methods. This calcu-
+
+lation was restricted to the reduced system representation because of
+
+the large cost of calculations for very large matrices. The results of
+
+this calculation are given in Fig. 19. In Figs. 18 and 19, a positive
+
+sensitivity indicates that a decrease in the system parameter will de- -
+
+crease the magnitude of the frequency response. The situation is re-
+
+versed for negative sensitivities.
+
+‘The sensitivities shown in Figs. 18 and 19 can be used to estimate
+
+the effects of possible future updating of the MSRE design parameters
+used in this study. In addition, they support other general observations
+
+obtained by other means.
+
+For instance, Fig. 19 shows that the sensitivi-
+
+ties to loop effects, such as primary and secondary loop transit times,
+
+are important relative to
+
+core effects. This indicates that the external
+
+loops strongly influence the system dynamics, as was concluded in Sec-
+
+tion 6.
+
+Similar information may be obtained from pole sensitivities (or
+
+eigenvalue sensitivities).
+
+of a system pole due to a
+
+These are defined as the fractional change
+
+fractional change in a system parameter. The
+
+sensitivity of the dominant pole (the pole whose position in the complex
+
+plane determines the main
+
+characteristics of the dynamic behavior) is
+
+usually the only one of interest.
+
+The dominant pole sensitivities for a number of system parameters
+
+are shown in Table 5 for power levels of 1 and 10 Mw. These results may
+be used to estimate the effect of future updating of the MSRE design
+
+parameters, and they also
+
+furnish some insight as to the causes of the
+
+calculated dynamic behavior. For instance, it is noted that the sensi-
+
+tivity to changes in the graphite temperature coefficient is only about
+
+one-fourteenth the sensitivity to changes in the fuel temperature coef-
+
+om
+
+ficient at 10 Mw. At 1 Mw, the graphite effect is about one-third as QO
+
+large as the fuel effect.
+
+This indicates that a decrease in power level
+
+me me mat mt
+
+ 
+ 
+
+ 
+
+»
+
+ 
+
+RATIO OF FRACTIONAL CHANGE IN AMPLITUDE TO
+FRACTIONAL CHANGE IN PARAMETER
+
+ 
+
+ 
+
+hd
+
+ 
+
+ 
+
+ 
+
+37
+
+ORNL-DWG 65-9826
+
+POWER = 10
+
+FUEL TEMPERATURE COEFFICIENT
+OF REACTIVITY
+
+GRAPHITE TEMPERATURE COEFFICIENT
+OF REACTIVITY
+
+FUEL HEAT CAPACITY
+
+.4
+0.001 - 0.002 0.005 00 0.02 0.05 ol 02 05 1 2 5 10
+
+FREQUENCY (radians/sec)
+
+Fig. 18. Frequency-Response Sensitivities of Complete Model.
+
+ 
+ 
+
+ 
+
+ 
+
+RATIO OF FRACTIONAL CHANGE IN AMPLITUDE TO
+
+38
+
+ORNL-DWG 65-9827
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+05
+LLL
+0 pt
+tt]
+055 SECONDARY LOOP TRANSIT TIME
+05 -
+0 Lt
+FUEL-SALT HEAT EXCHANGER
+05 LHEAT TRANSFER COEFFICIENT
+0.5 1
+iu L - ECONDARY-SALT RADIATOR
+= GRAPHITE TEMPERATURE (COEFFICIENT 0s SEEM AR NerER COLREIGIENT .
+> -0 -0,
+2 ’s °
+T. T ITY os HH
+= 10 : NC
+uw “0 CORE RESIDENCE TIME FOR FUEL SALT
+Zz 1.0
+5 L~
+© Pa
+2 05 Nai
+geet"
+8 0 AY |
+| Pout
+9 os GRAPHITE HEAT CAPACITY 05 L_PRIMARY EXTERNAL LOOP TRANSIT TIME
+E os CT 05
+TT
+o fuser No 0 TN
+FRACTION OF POWER \ HL SECONDARY-SALT HEAT =
+-0.5 GENERATED IN THE FUEL NH -05 EXCHANGER HEAT TRANSFER COEFFICIENT
+O05 MGRAPHITE-TO-FUEL HEAT 05
+o |_TRANSFER COEFFICIENT o Lt
+MASS FLOW RATE TIMES 1
+SPECIFIC HEAT OF SECONDARY SALT
+-0.5 -05 1 i Lo LiL 13) 2 1 aiid
+ooo1 2 5 oot 2 5 oa 2 0.001 2 5 oot 2 5 o1 2
+-
+FREQUENCY (radians/sec) FREQUENCY (radians/sec)
+Fig. 19. Frequency-Response Sensitivities of Reduced Model at a ,
+
+Power of 10 Mw Based on Current Data.
+
+ 
+ 
+
+ 
+
+P
+
+ 
+
+ 
+
+ 
+
+ 
+
+39
+
+Table 5. Pole Sensitivities
+
+ 
+
+ 
+
+ 
+
+x] oA
+Nn ox
+Parameter = x (see footnote a)
+At 10 Mw At 1 Mw
+Fraction of power that is prompt ~0.944 -2.515
+Neutron lifetime 0.00944 0.0129
+Fuel temperature coefficient of reactivity 0.858 1.701
+Graphite temperature coefficient of ~0.0627 —0.493
+reactivity
+Fraction of power generated in the fuel -0.328 0.561
+Graphite-to-fuel heat transfer coefficient 0.0434 0.177
+Fuel heat capacity 1.024 1.315
+Moderator heat capacity ~0.616 -0.359
+Fuel-salt heat exchanger heat transfer 0.0157 0.254
+coefficient
+Fuel transit time in core -0.606 —0.787
+Fuel transit time in external primary 0.659 0.804
+circuit
+Secondary-salt heat exchanger heat transfer 0.00708 0.449
+coefficient
+Secondary-salt loop transit. time —0.305 —0.622
+Secondary-salt radiator heat transfer —0.0155 —0.0754
+coefficient Ll
+Heat exchanger heat ; capacity 0.00745 0.00969
+Effective precursor decay constant ay -0.304 . - =0.726
+Time constant for delayed gamma emission =0.00858 - 0.0536
+Total delayed-neutron fraction 0.0103 0.159
+Effective delayed-neutron fraction —0.788 oo =0.221
+
+ 
+
+8) is the real part. of the dominant pole.
+- =0.01865 for 10 Mw and —0.001818 for 1 Mw.
+
+The ‘values are
+
+ 
+ 
+
+ 
+
+40
+
+causes modifications in the dynamic behavior that accentuate the relative
+effect of graphite temperature feedback. It is also noted that the vari-
+ous heat transfer coefficients have a much larger relative effect at 1 Mv
+than at 10 Mw; this indicates that the coupling between system components
+
+has a larger influence at low power than at high power.
+
+Effects of Design Uncertainties
+
+A new method!® for automatically finding the least stable condition
+in the range of uncertainty in the design parameters was used. A com=
+puter code for the IBM-7090 was used for the calculations. The method
+is described in some detail in Appendix D. The least stable. condition
+is found by using the steepest-ascent (or gradient-projection) method of
+nonlinear programming.
+
+The quantity that is maximized is the real part of the dominant pole
+of the system transfer function (or equivalently, the dominant eigenvalue
+of the system matrix). Less stable conditions are accompanied by less
+negative values for the real part of the dominant pole, and instability
+is accompanied by a pole with a positive real part. The maximization
+involves a step-wise determination of the particular combination of sys-
+tem parameters within the uncertainty range that causes the real part of
+the dominant pole to have its least negative value. If the maximized
+pole has a negative real part, instability is not possible in the uncer-
+tainty range. If the maximized pole has a positive real part, instability
+is possible in the uncertainty range if all the system parameters deviate
+from the design point in a particular way.
+
+A key factor in the stability extrema analysis is the availability
+of the appropriate ranges to assign to the system parameters. The ranges
+appropriate for the MSRE were furnished by Engel.*7 It was decided to
+use a wide range on the importent nuclear parameters (neutron lifetime,
+fuel temperature coefficient of reactivity, and graphite temperature co-
+efficient of reactivity). These parameters were allowed to range between
+two-thirds and three-halves of the design values. All other ranges were
+assigned by considering the method of evaluating them and the probable
+effects of aging in-the reactor environment. The ranges of the 16 system
+
+parameters chosen for this study are given in Table 6.
+
+OF
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+|
+4
+i
+
+‘
+
+ 
+
+41
+
+Table 6. Ranges on System Parameters for Extrema Calculations
+
+ 
+
+ 
+
+ 
+
+Ranges
+Parameter - -
+Low Design Value High
+Neutron lifetime, sec 1.6 x 1074 2.4 x 107% 3.6 x 107%
+Fuel temperature coefficient, 7.26 x 107° ~4.84 x 10°°. =3.23 x 10°?
+
+8k/k- °F
+
+Graphite temperature coeffi-
+cient, 8k/k.°F
+
+Fraction of power generated
+in fuel
+
+Grephite-to-fuel heat trans--
+fer coefficient, Mw/°F
+
+Fuel heat capacity, Mw sec/ °F
+
+Graphite heat capacity,
+Mw-sec/ °F
+
+Fuel-salt heat exchanger heat
+transfer coefficient, Mw/°F
+
+Fuel transit time in core,
+sec
+
+Fuel transit time in external
+primary circuit, sec
+
+Secondary~salt heat exchanger
+
+heat transfer coefficient,
+Mw/°F
+
+Secondary loop transit time,
+sec
+
+Heat exchanger heat capacity,
+
+Mw.sec/°F
+
+Effective precursor decay. ne
+- constant, sec” -1
+
+Time constant for delayed
+gamma emission, sec
+
+Effective delayed-neutron
+
+fraction
+
+—5.55 x 10-?
+
+0.92
+
+0.013
+
+1.13
+3.4
+
+0.1613
+
+6.9
+
+15.75
+
+0.1001
+
+21.7
+
+0.0738
+0.11.
+
+120
+
+0.0032
+
+~3,70 Xx 10°°
+0.9335
+0.02
+
+1.50
+3.58
+
+0.2424
+8.46
+17.03
+
+0.12%
+
+24.2
+
+0.0738
+
+188
+
+0.0036
+
+=2.47 x 107°
+0.95
+0.03
+
+1.910
+3.76
+
+0.3636
+10.25
+18.60
+
+0.1686
+
+32.7
+
+© 0.4216
+
+0.15
+
+270
+
+0.0040
+
+ 
+
+ 
+42
+
+The reduced model was used with current parameters for locating the
+least stable condition in the uncertainty range. This gave results at
+a much lower cost than with a more complete model. This wes considered
+adequate because other calculations showed that the reduced model predicts
+lower stability than the complete model. The reasons for this were ex-
+plored in Section 6. Experience with other calculations also showed that
+changes in system paremeters gave qualitatively the same type of changes
+in the system performance with either model.
+
+The set of parameters for the least stable condition is listed in
+Table 7. The least negative value of the dominant eigenvalue calculated
+with the reduced model changes from (—0.0187 + 0.0474 j) sec” at the de-
+sign point to (—0.00460 + 0.0330 j) sec” at the worst condition for 10
+Mw. For 1 Mw, the change is from (—0.00182 # 0.0153 j) sec” to
+(+0.000574 * 0.0134 j) sec=®. This indicates that instability is im-
+possible in the uncertainty range at 10 Mw but that the reduced model
+predicts an instability at 1 Mw for a combination of parameters within
+the uncertainty range. This condition gives a transient with a doubling
+time of about 1/2 hr and a period of oscillation of about 8 min per cycle.
+
+It is evident that the calculated instability at the extreme case
+for 1 Mw is due to the inherent pessimism of the reduced model (see Sect.
+6). This was verified by using the MSFR code for the complete model with
+the parameters describing the extreme case. It was found that the phase
+margin for 10 Mw was 75° for the extreme condition (versus 99° for ‘the
+design condition), and the phase margin for 1 Mw was 21° for the extreme
+condition (versus 41° for the design condition). Thus, it is concluded
+that the best available methods indicate that the MSRE will be stable
+throughout the expected range of system parameters.
+
+8. Conclusions
+
+This study indicates that the MSRE will be inherently stable for =211
+operating conditions. Low-power transients without control will persist
+for a long time, but they will eventually die out because of inherent
+feedback. Other studies have shown that this sluggish response at low
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Table 7. Values of System Parameters at the
+Least Stable Condition
+Parameter At 10 Mw At 1 Mw
+Neutron lifetime, sec 3.6 X 107% (H)® 3.6 x10°% (H)
+
+Fuel temperature coefficient,
+8k/k. °F
+
+Graphite temperature coefficient,
+8k/k- °F
+
+Fraction of power generated in fuel
+
+Graphite-to-fuel heat transfer
+coefficient, Mw/°F
+
+Fuel heat capacity, Mw.sec/°F
+Graphite heat capacity, Mw.sec/°F
+
+Fuel-salt heat exchanger heat
+transfer coefficient, Mw/°F
+
+Fuel transit time in core, sec
+
+Fuel transit time in external
+primary circuit, sec
+
+Secondary-salt heat exchanger heat
+transfer coefficient, Mw/°F
+
+Secondary loop transit time, sec
+
+‘Heat exchanger heat capacity,
+
+Mw. sec/ °F
+
+Effective precursor decay constant,
+sec”
+
+Time constant for delayed gama
+emission, sec -
+
+Effective delayed-neutron fraction
+
+—3.23 x 10°% (H)
+
+5.55 x 107% (1)
+
+0.95
+0.03
+
+1.91
+3.40
+
+- 0.3636
+
+6.96
+10.25
+
+0.1686
+
+21.7
+0.4216
+
+0.11
+
+120.0
+
+0.0040
+
+(H)
+(1)
+
+(H)
+(nL)
+
+@)
+
+(nL)
+(1)
+
+~3.23 xX 107° (H)
+
+=5.55 x 107° (L)
+
+0.95
+0.02535
+
+1.91
+3.40
+0.3636
+
+6.9%
+10.25
+
+0.1686
+
+21.7
+0.0738
+
+0.15
+
+120.0
+
+© 0.0040
+
+(H)
+
+(x)
+
+(nL)
+(H)
+
+(1)
+
+(H)
+(H)
+
+(Ln)
+(nL)
+
+(H)
+(L)
+
+(H)
+
+ 
+
+Setters in parentheses indicate whether parameters’ are at high
+
+values (H) or low values (zn).
+
+ 
+44
+
+power can be eliminated by the control system, which suppresses tran-
+sients rapidly.
+
+The theoretical treatment used in this study included all known
+effects that were considered to be capable of significantly influencing
+the system dynamics. Even so, for safety and also for obtaining basic
+reactor information, system stability will be checked experimentally in
+dynamic tests, which will begin with zero power and which will continue
+
+through full-power operation.
+
+1}
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+10.
+
+11.
+
+12.
+
+ 
+
+45
+
+References
+
+R. C. Robertson, MSRE Design and Operations Report, Part 1: Descrip-
+tion of Reactor Design, USAEC Report ORNL-TM-728, Osk Ridge National
+Laboratory, January 1965.
+
+Oak Ridge National Laboratory, MSRE Semiann. Progr. Rept. July 31,
+1964, pp. 135-140, USAEC Report ORNL-3708.
+
+P. N. Haubenreich et al., MSRE Design and Operations Report, Part 3:
+Nuclear Analysis, p. 156, USAEC Report ORNL-TM-730, Oak Ridge Na-
+tional Laboratory, Feb. 3, 1963.
+
+O. W. Burke, MSRE — Preliminary Analog Computer Study: Flow Accident
+in Primary System, Oak Ridge National Laboratory unpublished internal
+document, June 1960.
+
+0. W. Burke, MSRE — Analog Computer Simulation of a Loss of Flow
+Accident in the Secondary System and a Simulation of a Controller
+Used to Hold the Reactor Power Constant at Low Power Levels, Oak
+Ridge National Laboratory unpublished internal document, November
+1960.
+
+0. W. Burke, MSRE — An Analog Computer Simulation of the System for
+Various Conditions — Progress Report No. 1, Oak Ridge National Lab-
+oratory unpublished internal document, March 1961.
+
+0. W. Burke, MSRE — Analog Computer Simulation of the System with a
+Servo Controller, Oak Ridge National Laboratory unpublished internal
+document, December 1961.
+
+S. J. Ball, MSRE Rod Controller Simulation, Oak Ridge National Lab-
+
+oratory unpublished internal document, September 1962.
+
+S. J. Ball, Simulation of Plug-Flow Systems, Instruments and Control
+Systems, 36(2): 133-140 (February 1963).
+
+Oak Ridge National Laboratory, MSRE Semiann. Progr. Rept. July 31,
+1964, pp. 167-174, USAEC Report ORNL-3708.
+
+H. A. Samulon, Spectrum Analysis of Transient Response Curves,
+
+Proc. I.R.E., 39: 175-186 (February 1951).
+
+S. J. Ball and R. K. Adams, MATEXP — A General Purpose Digital Com
+puter Code for Solving Nonlinear, Ordinary Differential Equations
+
+by the Matrix Exponential Method, report in preparation.
+
+ 
+ 
+
+ 
+
+13.
+
+14.
+
+15.
+
+16.
+
+17.
+18.
+
+19.
+
+20.
+
+46
+
+J. E. Gibson, Nonlinear Automatic Control, Chapt. 1, McGraw-Hill,
+N.Y., 1963.
+
+F. P. Imad and J. E. Van Ness, Eigenvalues by the QR Transform,
+SHARE-1578, Share Distribution Agency, IBM Program Distribution, :
+White Plains, N.Y., October 1963.
+
+H. Chestnut and R. W. Mayer, Servomechanisms and Regulating System .
+
+ 
+
+ 
+
+Design, Vol. I, p. 346, Wiley, N.Y., 1951.
+
+T. W. Kerlin and J. L. Lucius, Stability Extrema in Nuclear Power
+
+Systems with Design Uncertainties, Trans. Am. Micl. Soe., 7(2):
+
+ 
+
+221-222 (November 1964). ST Co .
+J. R. Engel, Oak Ridge National Laboratory, personal communication
+to T. W. Kerlin, Oak Ridge National Laboratory, Jan. 7, 1965. =
+
+S. J. Ball, Approximate Models for Distributed-Parameter Heat-Transfer
+Systems, ISA Trans., 3: 3847 (January 1964).
+
+B. Parlett, Applications of Laguerre's Method to the Matrix Eigen-
+value Problem, Armed Forces Services Technical Information Agency
+Report AD-276-159, Stanford University, May 17, 1962.
+
+F. E. Hohn, Elementary Matrix Algebra, MacMillen, N.Y., 1958.
+
+ 
+
+“
+
+ 
+ 
+
+“
+
+APPENDICES
+
+ 
+
+ 
+ 
+
+ 
+
+FamiaN
+
+ 
+ 
+
+ 
+
+49
+
+Appendix A. Model Equations
+
+Core Thermal Dynamics Equations
+
+The differential thermal dynamics equations for a single-core region
+
+are given below (see Fig. 5).
+
+First fuel lump:
+
+dT 1 K hA
+Fl = X a1 = =
+—_— = ~— (T = T.) += P + ———— ——— (T, -T__) . (A.1)
+dt Tm Fl,in FL MCn T Kol + Koo MC G Fl
+Second fuel lump:
+— == (T_. — T + === P+ me —— (T, ~T__) . (A.2)
+dat TED Fl 2 MCoo T Ku + Kuo MCh2 G Fl
+Graphite lump:
+= = = (Ty -T,) + ro hz Fp (4.3)
+Ge PG
+
+In these equations,
+
+Tp =
+
+B
+
+JA
+1
+
+mean fuel temperature in first well-stirred tank, or
+
+lump, °F,
+time, sec,
+
+= transit (or holdup) time for fuel in first lump, sec,
+= inlet fuel temperature to first lump, °F,
+
+fraction of total power generated in first fuel lump,
+heat capacity of first lump, Mw:sec/°F,
+
+total power, Me, so
+
+fraction of total power generated in graphite adjacent to
+
+first fuel lump;
+= fraction of total power generated in graphite adjacent to
+
+second fuel lump,
+
+mean heat transfer coefficient times area for fuel-to-
+
+graphite heat transfer, Mw/°F,
+
+mean graphite temperature in section, °F,
+
+ 
+
+ 
+ 
+
+50
+
+Top = mean fuel temperature in second lump, °F,
+
+F2
+
+= transit time for fuel in second lump, sec,
+
+K, = fraction of total power generated in second lump,
+
+MC op = heat capacity of second lump, Mw-sec/°F,
+
+MC, = heat capacity of graphite, Mw-sec/°F.
+
+PG
+
+Nuclear importances:
+
+where
+
+3k = X
+
+Oy = In 57 AT 0 es
+
+ky Teo oT, FR’ tT
+
+sk. = 1, SK AT (4.6)
+G G JT, G? : *
+
+Bk, 2.6" changes in effective reactor multiplication due to tem-
+2%
+perature change in fuel lumps 1 and 2 and the graphite,
+
+respectively,
+
+In F2.G = importance factors for fuel lumps 1 and 2 and the
+2 2
+
+graphite, respectively; note that
+
+nine sections Tn F2 :
+
+(15) = 1.0 ’
+nine sections
+
+a E on = total fuel temperature coefficient of reactivity,
+F sk/k- °F,
+
+Gc G
+
+x E 0, = total graphite temperature coefficient of reactivity,
+ok/k: °F.
+
+In the nine-region core model, the individual regions are conbined
+
+as shown in Fig. 5.
+
+The nuclear average fuel and graphite temperatures,
+
+"
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+51
+
+reactivity feedback, and core outlet temperatures are computed as func-
+tions of nuclear power and core inlet temperature for both the analog and
+frequency-response models. oo
+
+The core transfer function equations solved in the MSRE frequency-
+response code are as follows.
+
+Single Core Region. The equations are obtained by substituting the
+Leplace transform varisble, s, for = in Egs. (A.1l) through (A.6) and
+solving for FL’ Tro Tq» and dk in terms of the inputs TF, in and Poe
+
+It is assumed (without loss of generality) that the variables are written
+
+as deviations from steady state. Thus the Laplace transformed equations
+
+that follow do not contain initial conditions:
+
+ 
+
+ 
+
+ 
+
+ 
+
+Ka * Keo
+1 - Na: Kg mA THC, .
+Tp Flin \WMG RHR WE sam |r
+a Mong
+=
+Tey — | on s (A.7)
+LL Ky om XK
+Tr Kg * Kge MC Ea ha
+DG
+Tr E J, (s) Tor in + J,(s) PL , (A.7a)
+
+ 
+
+ 
+
+Ka * Koa »
+TG Fy
+= |
+Ty = , (A.8)
+
+ 
+
+ 
+
+ 
+
+ 
+
+(s) Teo, in + J,(s) Pros (A.82)
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+52
+_bhA
+= tx 2 = Se = 1) 3,(s)
+| F2 Gl G2 P2 s + ic
+T_ = oo
+2 5 + + Fl,in
+Fe (a.9)
+hA hA Kuo
+j 1 hA MC MC_., MC
+Ts TX Yr Tea) + + EE
+} 2 Gl G2 p2 \s + Vo Pp s+ MC
+7G |.
++ : Fn >
+5 +—
+| Tr2
+To, g H (5) B fin © H,(s) Ep , (A.92)
+SN dk
+
+z = [tn J, (s) + I, (0) & ST, +I, J4(s) ST, , (A.10)
+
+Fl,in
+| ole =|. J (s) +1I (=) ok + 1,7, (s) ok (A.11)
+5 Fl 2 re 2\8) | 51 * 46 JulS) ST .
+| T F G
+
+Bk = Hy(s) Tr1, in + H,(s) Pp, « (a.12)
+
+Multiregion Core
+The overall transfer functions for an axisl section of core consist-
+ing of several regions in series are. complicated by the fact that the in-
+puts to the upper (or downstream) regions are affected by the response
+of the lower regions. A block diagram illustrating the coupling in terms
+of the transfer functions H_,(s) is shown in Fig. A.1l.
+The general forms of the coupled equations of n regions in series
+
+1 g
+
+fof i? B (A.13)
+
+ci j=1
+
+Os
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+CORE INLET
+TEMPERATURE, 7
+
+Fig. A.1.
+
+ 
+
+ORNL-DWG 65-9828
+
+ 
+  
+
+-— gfe,
+
+—== CORE OUTLET
+TEMPERATURE, 7,
+
+ 
+
+Hz2 Bk
+
+Series Connection of Single-Core Regions.
+
+ 
+ 
+
+54
+
+>
+
+roel (HoH ge By) +E, (Hy, 5 Hyg oor Hyp) * ees (834)
+
+T
+
+>
+
+Sk
+Tht [Hy +H) 5 [Hy 5+ Hy 5 (Hy p+ eeey (8015)
+ci
+A n
+8k
+z= = 2 Hyg tH By p+ (Hy) Hy) 5 +1) 5) Hy 4
+
+T
+
++ (Hy Ho H 3 + Eo H 5 + H, 3) Hy, +e. . (A.16)
+
+The mean value of the core outlet temperature, T,, for m axial sections
+
+in parallel is
+i!
+
+where FF, is the. fraction of the total flow in the jth axial section.
+The total 5k is simply the sum of all the individual contributions.
+
+The calculation of nuclear average temperature transfer functions
+was added to the MSRE frequency-response code as an afterthought; conse-
+quently there is some repetition in the calculations. The transfer func-
+
+tions of nuclear average temperature contributions from each core region
+
+ 
+
+ 
+
+are
+n = I, J(s) + I, H(s) = Hs) , (A.18)
+,in
+2 = I, Jy(s) & Hls) , (A.19)
+TF, in
+5 = I Jy(s) + I, Hy(s) s Hy (s) ’ (A.20)
+T
+
+O°
+
+ 
+ 
+
+ 
+
+ 
+
+¥
+
+«
+
+ 
+
+55
+
+>
+
+= I, 3,(s) = Hy(s) , (a.21)
+
+Hla
+
+where the asterisk indicates a nuclear average temperature.
+
+The equations for the total nuclear average temperatures of the nine-
+region core model are derived the same way as the general equations for
+8k, Eqs. (A.15) and (A.16). The second subscripts refer to the nine core
+regions, as designated in Fig. 5. The equations are
+
+3" 25 Hy,2 Hs, 3
+=]
+2,2 ", 3+ 5) By tH 5 Hy
++ (Hp, 5 Hyg + oo Hsp + Hy g Hy og (4.22)
+~~ = L Hg 5 tH He 3
+Pp J=1
++ (Hy 5 0,3 + i,3) He s * H 5 He, 6
++ (5 5 He +H) Hop + Hy gH gs (A.23)
+F 2, So
+=~ = Hy, +H Ho oo
+T.; 3=1,2,5, 2d 1,2 "2
+
+Hes Hyp tH 5 8 5,6
+
+ESE top + 5,9 7 (a2)
+
+ 
+ 
+
+56 |
+~ (Sy
+x
+G - Y
+= 4 H + H H
+Ty =L,2,58 >I L203
++ H , + H .
+M,2M,3 0,4 506 |
+tH 5 Hye Hey tH g Heo 0 (8025)
+Neutron Kinetics -
+Nonlinear Equations
+Neutron balance: : :
+a nrg pg) oa] + AC. © (A.26) ;
+at = 7% [ Be eMC (Ae
+Precursor balance:
+ac, knp, :
+Tr
+@® TF TMG (a7)
+
+In these expressions
+
+neutron population,
+
+n
+t
+1* = prompt-neutron lifetime, sec,
+
+1
+
+time, sec,
+
+k = reactor miltiplication,
+Bp = total delayed-neutron fraction,
+B. = effective delayed-neutron fraction for ith precursor group,
+A. = decay constant for ith precursor,
+C., = ith precursor population.
+
+For the one-group approximation, the effective B in the precursor
+balance equation was simply the sum of the B's for the six groups. The
+average decay constant N was calculated from Eq. (A.28):
+ 
+
+‘
+
+ 
+
+ 
+
+ 
+
+He
+po
+w
+fa
+
+ 
+
+. | (A.28)
+
+>|
+1
+
+[WH
+
+1, go
+>| 2
+
+Linearized Equations-with Circulating Precursor Dynamics. The dif-
+
+ferential equation for the precursor population in the core is
+
+ 
+
+“NT
+ac, (t) 1B] n(t) c(t) clt-r)e tH
+—r— = gw NG (8) — T + Ts 5 (A.29)
+
+of precursor | _ rate of rate of
+population in | = formation| — | decay
+
+core | in core in core
+rate rate of reentry by precursors
+2 lie ine] + that left core ty, seconds ago
+ne and decayed to a fraction ?
+“MTL of their previous value
+where
+
+Bf ° = total delayed-neutron fraction for ith precursor group,
+x = core holdup time, sec,
+
+T= = Loop holdup tine, sec.
+
+For this treatment, we  aaping that the core is a well-stirred tank
+
+and that the precursor transport around the loop is a pure delay. We
+
+obtained the linearized neutron kinetics equation used in the frequency-
+"response calculation from Bg. (A.26) and (a. 29):
+
+ 
+ 
+
+ 
+
+58
+6 ’
+AB
+1 - By + ), 74
+’ i=1 1 ~7; (s+)
+x E+ AN += |jl=—c¢
+ln 4 Te
+— ~ = 6 ; ’ (A.30)
+ng x ABS
+
+ 
+
+1-1 = Bp) ky + SI* — k, PX
+
+where
+
+ng = steady-state nuclear power, Mw,
+ky = steady-state multiplication constant,
+
+and the circumflex (~) indicates a perturbation aunty, that is,
+
+k(t) = k, + x.
+
+The value of the critical reactor miltiplication oti Lake
+
+puted by setting dn/dt and dC, /dt equal to zero in Eqs. (A.26) and
+(A.29):
+
+ 
+
+. 1.
+ky critical ra —B7% . (A.31)
+. ii
+l1~-6_+ -
+T 1 “NT
+i=l p, += (1-e¢ *
+it
+
+Cc
+
+Heat Exchanger and Radiator Equations
+
+The coefficients for the heat exchanger and radiator equations are
+given in terms of time constants and dimensionless parameters. a de-
+tailed discussion of this model is given in ref. 18. The equations,
+based on the model shown in Fig. A.2, are |
+
+aT, 2 _ nooo :
+
+aT 2 :
+1,out = N= mm :
+
+—— = Ww (Ty I), out) + (Tq T,) , (4.33) a
+aT, 1 _ _ |
+=z — (T -T)+—(T,-T), ~ (a.34)
+dt T 1 T/ 2 T
+
+a.
+
+ 
+ 
+
+ 
+
+59
+
+“
+
+ORNL-DWG 65-9829
+
+ 
+
+~SHELL s
+
+ 
+  
+
+SS
+
+  
+
+==
+
+(=
+NNNNNNANNNNY
+
+ 
+
+ANNAN
+
+        
+
+. TUBE T
+Heat Exchanger and Radiator Tube Model.
+
+Fig. A.2.
+
+ 
+
+ 
+ 
+
+60
+
+— \&'"
+dT, 2
+
+Ra (1, ~T) +2
+aE "TF 2,in
+
+n
+T —-T)+-2(T -7T |
+5) + tx (Tp, = T,) + T= (T, —T,) ,  (A.35)
+
+pont Zr, mm, rR (TF) +E (T,-F,), (a3)
+at £27 out! THF Vr TR) tap TR)
+
+aT, 1 _
+
+vhere the nomenclature of Fig. 7 applies to the temperatures, T, and ,
+
+Tg = mean shell temperature, °F, )
+
+t* = transport time, sec,
+
+T = heat transfer time constant MC /mA, sec,
+n = section length = nA/WC dimensionless.
+
+The subscripts have the following meanings:
+
+1 = fluid 1 side,
+
+2 = fluid 2 side, ‘
+T = tube side,
+
+8 = shell side.
+
+Also,
+
+h = heat transfer coefficient, Btu/sec.ft?.°F,
+
+A = heat transfer area, ft?, :
+M = mass of tube or shell, 1b,
+
+cy = specific heat, Btu/lb-:°F, -
+W = mass flow rate, 1b/sec.
+
+Since it is the radiator air flow rate that is varied to change the
+load demand, the radiator shell-side coefficients will vary with power
+level. The coefficients listed in Appendix B are for a 197-1b/sec air
+flow rate, corresponding to 10-Mw power removel at design temperatures.
+In all the studies, h was varied as the 0.6 power of the flow rate,
+
+air
+and W , as the first power.
+eir
+
+ 
+ 
+
+ 
+
+61
+
+The solutions of the Leplace-transformed transfer function equations
+
+are
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+T (2=-n) + n3B
+JL out _ L L F, a (4.38)
+Tow eel
+T1,in tse
+Hg
+A mp D+ (2-np =n) +g EB
+2 sout _ : 3 (A.39)
+t¥s +2
+2,in 2
+1 out DE [, +C (2 -n)]
+2,1in t¥ s +2
+Ns
+I, . BFIn, + (=n, =n) A+ —27 A |
+Sa ONY = —_— 5 ’ (A.41)
+*
+Ty), in t3 s +2
+where a
+n
+2
+As — -— >
+nL s
+tX 5 + n, + 2 + n= Ts TT
+. B= 1 — 2.
+Tre Tre
+: n,
+C=cpr—T"5 9
+Co Mesam ret
+pe 1
+: mw
+Tp 8 +1 + ===
+TL.
+E= noo?
+
+ 
+
+t3 s * n, +2 + ng - 7 = = T
+
+ 
+ 
+
+62
+
+2
+
+F = epr———————r
+tfs+n +2-n3B
+
+To compute the transfer functions of -an erbitrery number of equal lumps
+connected in series, we considered first the trensfer functions for two
+
+lumps in series, as in Fig. A.3, where for each lump,
+
+G. = 3, out
+
+. > :
+L T1,in
+
+T2,1n
+
+The transfer functions for the two combined lumps are
+
+ 
+
+o rd
+I, out GyGq
+ioe.
+1,in lcomb. 34
+T a, al
+2 out 2 7 >
+"1-Gc
+2,in lcomb. 34
+o ‘'G
+To, out cars =,
+1,in tcomb.
+T Co) |
+_Laout “c+ ~LEL i
+
+2,in lcomb.
+
+(A.42)
+
+(A.43)
+
+(A.44)
+
+(A.45)
+
+To solve for more lumps in series, we set the primed functions equal to
+
+the respective combined transfer functions and repeated the computation.
+
+O°
+
+ 
+ 
+
+63
+
+ 
+
+ORNL-DWG 65-9830
+
+ 
+
+ 
+
+ 
+
+Fig. A.3. Diagram for Computing Transfer Functions for Two Lumps
+in Series. La .
+
+ 
+
+|
+|
+|
+|
+
+ 
+
+ 
+ 
+
+ 
+
+64
+“-
+Equations for Piping Lags |
+
+The first-order (or well-stirred-tank) approximation used in the
+reduced model, is given by
+
+Fon, -D, (8.46)
+
+where
+
+T = mean (and outlet) fluid temperature, °F,
+T;, = fluid inlet temperature, °F,
+17 = fluid holdup time, sec,
+
+ 
+
+~~ In the intermediate model, fourth-order Padé epproximations were
+used. They are series expansions of the Laplace transform expressions
+for a pure delay:
+
+-
+
+o~T8 1072 = 5361s + 1207252 — 13.551383 + 1%g4
+
+.  (A.47)
+1072 + 5367s + 1207°8? + 13.557383 + 1%g%4
+
+The heat transfer to the piping and the reactor vessel was approxi-
+mated by lead-leg networks. The method for obtaining the coefficients
+Ly and I, is described in detail in ref. 9. The general form of the
+equation is
+
+out Ins +1 Coo
+
+22° . | (A.48)
+
+Tin Las +1 _
+
+ 
+
+ 
+
+In the complete model, the heat transfer to the piping end the trans-
+port lag were represented by the exact solution to the plug-flow equa-
+tions:?
+
+3 >
+
+ n/(1+1,8)
+Ub oT hg P » : (A.49)
+
+>
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+\
+
+ 
+
+65
+
+=
+n
+
+section length = nave, dimensionless,
+
+transport lag, sec,
+
+a
+n
+
+A
+i
+
+p time constant for heat transfer to pipe = MC, /bA, sec.
+
+Equations for Xenon Behavior
+
+Xenon was considered only in the present frequency-response model.
+
+The following differential equations were used:
+
+aX,
+ITC KiX/ — (Kz + K3Pg) Xs ’ (A.50)
+ax’ ,
+To = KeI + KsX, — KeX + KqP , (A.51)
+Bk = =KjoX’/ — KuaX, , (A.53)
+
+where
+
+Xs = xenon concentration in graphite, atoms/cc,
+X/ = xenon concentration in fuel salt, atoms/cc,
+
+iodine concentration in fuel salt, atoms/cc,
+
+=
+n
+
+P = nuclear power, Mw,
+8k = change in reactor multiplication factor due to change in
+xenon concentrations, ’
+
+Ki—1 = constants.
+
+Delayed Power Equations =
+
+The equation for total thermal power, Pro includes a first-order
+
+. lag approximation of the delayed nuclear power due to gamma heating:
+
+’
+
+ 
+
+Ea A (a.54)
+
+ 
+
+ 
+ 
+
+the fraction of flux power delayed,
+
+=
+n
+
+8
+n
+
+flux power, Mw,
+total thermal power, Mw, Co
+effective time constant for the delayed power, sec.
+
+Hd
+n
+
+A
+n
+
+The frequency response of the thermal power in terms of n is
+
+PP (1-kx)ts+1
+al : (A.55)
+
++ 1
+n Tet ,
+
+ 
+ 
+
+67
+
+ 
+
+Appendix B. Coefficients Used in the Model Equations
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+‘Core Thermal Equations Dats
+Study Region 1p) (sec) Too (sec) K K, Ko Kr
+Burke 1961 1 3.815000 3.815000 0.470000 0.470000 0.030000 0.030000
+analog
+Ball 1962 1 1.533 1.607 0.01493 0.01721 0.000946 0.001081
+-~ analog 2 2.302 1.574 0.02736 0.0455 0.001685 0.00306
+3 1.259 1.259 0.04504 0.04656 0.003029 0.003131
+4 1.574 3.064 0.05126 0.04261 0.003477 0.002395
+& 5 2.303 1.574 0.03601 0.06069 0.002216 0.004081
+6 1.259 1.259 0.06014 0.06218 0.004044 0.004182
+7 1.574 3.066 0.06845 0.05664 0.004603 0.003184
+8 2,621 1.525 0.06179 0.07707 0.00392 0.00583
+9 1.779 2.983 0.09333 0.07311 0.006277 0.004305
+1965 frequency- 1 1.386000 1.454000 0.014930 0.017210 0.000946 0.001081
+response and 2 2.083000 1.424000 0.027360 0.045500 0,001685 0.003060
+eigenvalue 3 1.139000 1.139000 0.045040 0.046560 0.003029 0.003131
+calculations 4 1.424000 2,772000 0.051260 0.042610 0.003447 0.002395
+5 2.084000 1,424000 0,036010 0.060690 0.002216 0.004081
+6 1.139000 © 1.139000 ~ 0.060140 0.062180 0.004044 0.004182
+7 1.424000 2.774000 0.068450 0.056640 0.004603 0.003184
+8 2,371000 1.380000 0.061790 0.077070 0.003920 0.005183
+9 1.610000 2.700000 0.093330 0.073110 0.006277 0.004305
+} 1965 extrema 1 4.230 4.230 0.470 0.470 0.030 0.030
+! determination
+1965 frequency- 1 1.14068 1.19664 0.01518 0.01750 0.000695 0.00079
+response with 2 1.71431 1.17195 0.02783 0.04627 0.001237 0.002247
+extrema data 3 0.93740 0.93740 0.04581 0.04735 0.002224 0.002299
+4 1.17195 2.28136 0.05213 0.04333 0.002531 0.001758
+5 1.17513 1.17195 0.03662 0.06172 0.001627 0.00299
+6 0.93740 0.93740 0.06116 0.06324 0.002969 0.003071
+- 7 1.17195 2.28300 - 0.06961 0,05760 0.003380 0.002338
+8 1.95133. = 1.13574 0.06284 0.07838 0.002878 © 0.003806
+9. 1.32503. 2.22210 0.09492 = 0.07435 0.004609 0.003161
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+MC MC, MC oe .
+Study Region hA :
+(Mv-sec/°F)  (Mw.sec/°F) ° (Mwesec/°F) (Mv/ °F) In Im Is
+Burke 1961 1 0.763000 0.763000 3.750000 0.020000 1.000000 O. 1.000000
+analog
+Ball 1962 1 0.0188 0.0197 0.070 0.265 x 10=2 0.02168 0.02678 0.04443
+analog 2 0.0638 0.0436 0.2114 0.814 x 10~2 0.02197 0.06519 0.08835
+3 0.0349 0.0349 0.1601 0.609 x 10~2 0.07897 0.08438 0.16671
+4 0.0436 0.0850 0.2056 0.79 x 10-3 0.08249 0.04124 0.12077
+5 0.1080 0.0738 0.3576 1.338 x 10-3 0.02254 0.0680L 0.09181
+6 0.0590 0.0590 0.2718 1.031 x 10-2 0.08255 0.08823 0.17429
+7 0.0738 0.1437 0.3478 1.343 x 1073 0.08623 0.04290 0.12612
+8 0.2970 0.1726 0.9612 3.685 x 10~3 0.02745 0.05521 0.08408
+9 0.2014 0.3380 0.9421 3.624 xX 10-3 0.06936 0.03473 0.10343
+1965 frequency- 1- 0.015100 0.015800 0.070000 0.000392 0.021680 0.026780 0.044430
+response and 2 0.051200 0.034900 0.211400 0.001204 0.021970 0.065190 0.088350
+eigenvalue 3 0.028000 0.028000 0.160600 0.000900 0.078970 0.084380 0.166710
+calculations 4 0.035000 0.068200 0.205600 0.001174 0.082490 0.041240 0.120770
+5 0.086600 0.059200 0.357600 0.001977 0.022540 0.068010 0.091810
+6 0.047300 0.047300 0.271800 0.001525 0.082550 0.088230 0.174290
+7 0.059200 0.115200 0.347800 0.001985 0.086230 0.042900 0.126120
+8 0.238000 0.138400 0.961200 0.005445 0.027450 0.055210 0.084080
+9 0.161500 0.271000 0.942100 0.005360 0.069360 0.034730 0.103430
+1965 extrema 1 0.750 0.750 - 3,58 0.020 1.0 0.0 1.0
+determination
+1965 frequency- 1 0.01581 0.01654 0.070 0.588 x 10-3 0.02168 0.02678 0.04443
+response with 2 0.05360 0.03654 0.2114 1.806 x 10-3 0.02197 0.06519 0.08835
+extrema data 3 0.02931 0.02931 0.1606 1.35 x 10-2 0.07897 0.08438 0.16671
+4 0.03664 0.07140 0.2056 1.761 x 10-2 0.08249 0.04124 0.12077
+5 0.09066 0.06197 0.3576 2.965 x 10-2 0.06801 0.06801 0.09181
+6 0.04952 0.04952 0.2718 2.287 x 10-3 0.08255 0.08823 0.17429
+7 0.06197 0.12060 0.3478 2.977 x 103 0.08623 0.04290 0.12612
+8 0.24915 0.14489 0.9612 8.167 x 10-3 0.02745 0.05521 0.08408
+9 0.16907 0.28370 0.9421 8.04 xX 1073 0.06936 0.03473 0.10343
+OC
+- . .
+
+2)
+
+89
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+69
+
+Flow fractions FF in the four sections (nine-region core only) for
+
+all studies were
+
+FF (1) FF (2) FF (3) FF (4)
+0.0617 0.1383 0.234 0.566 °
+
+Neutron Kinetics Equations. Data*
+
+1965 frequency-response, eigenvalue, and extrema data for decay
+constant A (sec™):
+
+A Nn A Ns, As Ne
+3.01 1.14 0.301 0.111 0.0305 0.0124 °
+
+ 
+
+1965 frequency-response data for total delayed-neutron fraction for
+
+ith precursor group, Bi:
+
+pf 8% B3 BY BS Bé
+0.00028 0.000766 0.002628 0.001307 0.001457 0.000223 °
+1965 eigenvalue and extrema data for effective delayed-neutron frac-
+tion for ith precursor groups
+
+B1 Ba Bs Bs Bs Pe
+0.000277 . 0.000718 0.001698 0.000499 0.000373 0.000052 °
+
+ 
+
+Heat Exchanger and Radiator Data
+
+Radiator air-side data given for 10-Mw conditions: heat exchanger
+fluid 1 = coolant, fluid 2 = fuel; radiator fluid 1 = coolant, fluid 2
+
+ 
+
+= air.
+* *
+51 np ng 0 2.0m TR 5
+(sec) (sec) (sec) (sec) (sec)
+Burke 1961 and Heat ex- 0.980 0.906 0 1.75 2.24 1.75 1.165
+Ball 1962 changer - = =, Co
+analogs Radiator 0.0882 0.260 0 7.14 0.01 2.35 19.7
+
+1965 frequency- Heat ex-- 1.10 1.366 0.1363 2.01 2,29 - 0.569 0.304 1.14
+response, eigen- . changer :
+
+trema determina- - i oo Lo
+tions ST EE
+1965 frequency- Heat ex- 1.60 1.611 0.1363 1.80 2.29 2.5 1.16 1.14
+response with changer hy
+
+extrema data Radiator 0.983" 0.2591 O 5.84 0.01 2.35 19.7
+
+ 
+
+*¥See Table 1 of Section 4 for additional information.
+
+ 
+ 
+
+70
+
+ 
+
+ 
+
+oo"
+Piping Lag Data
+1965 Frequency i 1965 Frequency
+Burke Ball Response and oo 3 Detyens Response with
+191 1962 Eigenvalue eterminations Extreme Data
+Core to heat n : 0
+exchanger T 3.09 5.72 5.77 5.77 ] 6.30
+: T
+P
+Heat ex- n 0.155 0.155 0.155
+changer to T 9.04 9.02 8.67 8.67 9.47
+core Tp 15.15 15.15 , 15.15
+Heat ex- n 0.27 0.27 0.27 ?
+changer to 1 5.2 5.2 4.71 471 4.22
+radiator Tp 6.67 6.67 6.67 &
+Radiator n 0.40 0.40 0.40
+to heat Tt 10.11 10.11 8.24 - 8.24 7.38
+exchanger Tp 6.67 6.67 6.67
+The coefficients of the lead-lag approximation for fluid heat trans-
+fer to the piping apply to the Ball 1962 analog study:
+Heat Exchanger Heat Exchanger Radiator to
+to Core to Radiator Heat Exchanger
+Li 14.35 5.84 5.58
+Xenon Equation Data ~
+Data for 1965 frequency response and frequency response with extrema
+data: -
+Ky = 1.587 x 1076 Ky = 2.885 x 107%
+Kz = 2.2575 x 10™° Kg = 2,9 X 10~7
+K3 = 1.654 x 1076 Ky = 9.47 x.10-4
+K, = 2.84 x 10-4 Kig = 3.07 x 10-6
+Ks = 1.0714 x 10°  K33 = 1.03 x 104
+Ke = 1.059 x 1073
+Delayed Power Equation Data =
+
+ 
+
+See Table 1 of Section 4.
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+‘\o
+
+B
+
+ot
+
+ 
+
+71
+
+- Appendix C. General Description of MSRE
+Frequency-Response Code
+
+ 
+
+The MSRE frequency-response code (MSFR) is written in FORTRAN IV
+language for the IBM 7090 computers at the Oak Ridge Central Dats Pro-
+cessing Facility. This language has builtin capabilities for handling
+complex algebra that result in considerable savings of programming effort.
+
+MSFR uses transfer function techniques (rather than matrix methods)
+to compute frequency response. It exploits the fact that a reactor sys-
+tem is made up of separate components, each having a certain number of
+inputs and outputs, which tie in with adjacent components. The subrou-
+tines written for each subsystem were useful in other reactor and process
+dynamics calculations. The MAIN program of MSFR performs input, output,
+and supervisory chores, and calls the subroutines. A subroutine called
+CLOSED must be written to compute the desired closed-loop transfer func-
+tions from .the component transfer functions.
+
+The transfer function approach has several advantages over the ma-
+trix methods:
+
+1. Input parameters are the physical coefficients of the subsys-
+tems, rather than sums and differences. This not only makes generating
+input data easy, it allows the computer to carry out the sum-difference-
+type arithmetic internally. Several matrix type computations for which
+the matrix coefficients were generated "carefully" with long slide rules
+resulted in large errors in the frequency response.
+
+2. The frequency response Of distributed-parameter models can be
+computed exactly with MSFR, while most matrix calculations are limited
+to lumped-parameter models.- oo |
+
+3. MSFR calculations are much faster. The 7090 can put out between
+
+-1000 ‘and 2000 frequency-response points per minute for the complete
+
+model. Typical running times for current matrix calculations are much
+longer. Le Lo |
+The matrix technique has the advantages that special programming
+
+is not required for each different problem, and no algebraic manipulations
+
+of the equations are required. Also, matrix manipulations can be used
+
+ 
+72
+
+for optimization calculations, eigenvalue calculations, time-response
+calculations, and possibly many others, all with the same input data.
+
+The advantages of both methods were exploited in this study.
+
+The following subroutines of MSFR have potential as generally use-
+ful packages:
+
+1. PWR; which calculates the frequency response (N/5k) of the
+nuclear kinetics equations for up to six groups of precursors, with an
+option for including circulating precursor dynamics.
+
+2. CLMP, which computes the frequency response of a "typical" core
+region (as noted in Appendix A). Inputs are power and inlet temperature,
+and outputs are outlet temperature, nuclear average temperatures, and Bk.
+
+3. CORY, which calculates the overall frequency responses of the
+MSRE nine-lump core model using CLMP outputs. oo
+
+4. LHEX, which calculates the transfer functions of a lumped-
+parameter heat exchanger (as in Appendix A), with an input option for
+solving for up to 99 typical sections in series in a counterflow con-
+figuration.
+
+5. PLAG, which computes the frequency response of piping legs for
+an arbitrary number of first-order series lags, a fourth-order Padé ap-
+proximation, or a pure delay, or combinations of these, with heat trans-
+fer to the piping.
+
+Figure C.l shows the block diagram used as a guide to compute the
+closed-loop transfer functions. Typical outputs of the subroutine CLOSED
+are N/ok (closed loop), Nyquist stability information, nuclear average
+temperatures Tx 8k and Tx/ek, and 7 /ok and T Bk.
+
+Several commonly used transfer functions are
+
+ 
+
+ 
+
+Tet G2.0611G13G1 4G 5
+~ g GS = GrGglGog + s (¢.1)
+Teo open primary 1 = G12G13G24G15
+loop
+and
+N Gy |
+= (c.2)
+8k
+
+G4GsGS *
+1 + GaG2 TGs TO CX
+
+or"
+
+ 
+ 
+
+73
+
+ORNL-DWG 65-9819
+
+/
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+sel nyse | no | Pew
+Gi G2
+Bho /Pr
+Gx THERMAL POWER, Pr
+RODS
+-~ 3k + ay - 8k [Py TR/Pr |x
+¥- 63 G16 F
+® 8k/Tei CORE Teo/Pr
+G4 65 72/P i»
+—7s
+«| TFT 7.CORE IN |Teof/Tei | 7 CORE OUT 617
+TFT 1 +
+F Gis | G6
+A
+*,
+VESSEL "
+v7 Be PRIMARY LOOP or
+Tg—] 8/7¢l G8
+e 619 :
+AT (PRILOUT | 7,017; | Tug (PRI) IN
+om G69
+1
+Too/Tsi HEAT Tso/ Toi
+Git JEXCHANGER] 610
+Tue (SEC) IN] | Tso/Tsi ! Tue (SEC) OUT
+4 G12
+\
+1%, PIPE *, PIPE
+. (AG SECONDARY LOOP LaG
+‘ = RADIATOR 614
+- — Tso/Tsi Y
+613
+Ny)
+
+Fig. C.1. MSFR Reference Block Diagram. .
+
+at
+
+ 
+ 
+
+74
+
+Each of these closed-loop equations can be written as a single
+FORTRAN IV statement, so it is a simple matter to generate different
+functions. An option is also available in MSFR to print out all the
+internal or component transfer functions. FORTRAN IV listings, decks,
+and input information may be obtained from S. J. Ball.
+
+Or
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+at
+
+ 
+
+75
+
+Appendix D. Stability Extrema Calculation
+
+For a linear description of a reactor system, the eigenvalues of
+the system matrix must all have negative real parts for stability. A
+techniquel® was developed that systematically seeks out the combination
+of system parameters that causes the least stable condition in the
+feasible range (causes the dominant eigenvalue to become as positive as
+possible). This technique utilizes a form of the gradient-projection
+method to explore the hypersurface that defines the stability index (the
+negativeness of the real part of the dominant eigenvalue) as a function
+of the system parameters. The upper and lower limits on the expected
+ranges of system parameters constitute constraint surfaces that limit
+the area of search on the performance hypersurface.
+
+The real part of the dominant eigenvalue is labeled 8. The change
+
+in B due to small changes in the system parameters, Xs is given by
+
+dB = VBdX = |v] Jax | cos 0 , (p.1)
+where
+dB = incremental change in B,
+oB J
+vB = ex by + ep £- Foeee
+
+dX = e; dx3 + €3 4X3 + «ea ,
+
+a unit vector,
+
+e,
+i
+8
+
+angle between the vectors.
+
+Thus the maximum change in B occurs when 6 = O; that is, the changes
+in the system parameters are in the same vector direction as the gradient
+vector. It is therefore expected that the greatest change in 8 will
+occur when the system parameters change in proportion to their corre-
+
+sponding elements in the gradient vector:
+
+ax, = 7 %- s | | (p.2)
+
+l
+
+ 
+ 
+
+76
+
+where 7 is a real positive coefficient whose magnitude is chosen to
+insure that constraints are satisfied.
+
+It is clear that the calculated values of the components of VP are
+the key quantities in implementation of this method. The method for
+finding VB can be developed from the characteristic equation for the
+
+system given in determinant form:
+
+p=la-s1|=0, (0.3)
+
+where
+
+A = the systém matrix,
+8 = an eigenvalue of A,
+IT = the unit diagonal matrix.
+
+We now write D with some arbitrary eigenvalue, Spr factored out:
+
+D={(s— 8,) F(s) = 0, (D.4)
+
+where F(s) is a nonzero determinant if Sy is a simple eigenvalue. We
+differentiate Eq. (D.4) with respect to an element, a, # of the matrix,
+
+A, and with respect to s:
+
+oD OF(s) ds,
+s— = (5-5) 57 Fs) 3p » ~ (p.5)
+
+®1 #13 "13 |
+D = (s -— 8) ors + ?(s) . (D.6)
+
+We then evaluate Eqs. (D.5) and (D.6) for s = s, and take their ratio to
+get Eq. (D.7):
+
+dD
+ds, 2p les,
+%.,, = e~ 01 . (0.7)
+J 3s ls=s,
+
+ 
+ 
+
+4
+
+ei
+
+Ll
+
+a
+
+77
+
+The derivative, 3p/3e., ig is just the cofactor of a, 13 in [A — sI],
+and OD/ds is the negative of the sum of the cofactors of diagonal ele-
+ments of [A — sI]. Thus Eq. (D.5) may be written
+
+0s, Cc Co
+% = Ta . (p.8)
+Y, Cer
+
+f=1 -
+If we choose 8) to be the least negative eigenvalue, the real part of
+
+8) is just B. Since 8 3 is real, we may write
+»B c, |
+
+i
+
+oc Re bP . (p.9)
+i
+2 Cer
+
+f=1
+
+The derivative with respect to a system parameter, x), is easily ob-
+tained from Eq. (D.9), since the following relation holds:
+
+» LB
+CLE
+ij Ti Tt
+
+We use this in Eq. (D.9) to obtain
+
+ 
+
+B 1 n day
+14 ‘eo i=1
+£f j=l
+
+The usefulness of Eq. (D.10) rests on the ability to calculate the
+system eigenvalue, 8, to give [A — 8 Le This may be readily accom-
+plished by using one of the standard E genvalue computation methods,
+
+such as Parlett's method® or the QR method.l#
+
+The cofactors in Eq. (D.10) could be calculated directly with a
+method such as Gaussian eliminstion., However, this tedious procedure may
+be circumvented by application of a useful theorem from matrix algebra.
+
+ 
+ 
+
+78
+
+It is known that the cofactors of parallel lines in a matrix with order
+
+n and rank n — 1 are proportional.Z° Since [A — 8,11 is a matrix with
+these properties, the cofactor calculation may be simplified. For in-
+stance, if the cofactors of the first row and first column of [A — 5,1]
+are calculated, all other cofactors are given by
+
+C,, C :
+Cc. =i 13 (D.11)
+
+ij C1
+
+Use of Eq. (D.11) to find the cofactors shown in Eq. (D.10) gives a prec-
+tical method for finding the derivatives 3/dx, needed to carry out the
+gradient-projection step shown in Eq. (D.2).
+
+Gradient methods are useful for finding local extrema for nonlinear
+problems. However, it may be possible for the surface of B versus sys-
+tem parameters to have many peaks. The only technique currently suitable
+for handling this provlem is to use multiple starts. The computer code
+developed to implement this method is set up to use multiple starts au-~
+tomatically.
+
+The procedure for carrying out the maximization from a given base
+point is to recalculate the eigenvalues for several new parameter sets
+specified by steps out the gradient vector. The point that gives the
+system with the largest value of Bp is then used as a new starting point.
+This is repeated until a maximum within the constrained set of system
+
+parameters is found.
+
+4
+
+ 
+ 
+
+[73]
+
+a
+
+1.
+
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10-34.
+35.
+36.
+37.
+38.
+39.
+40.
+41.
+42,
+43.
+
+45.
+46.
+47.
+48.
+49.
+50.
+21.
+52.
+53.
+54.
+55.
+56.
+57.
+58.
+59.
+60.
+61.
+62.
+63.
+64.
+65.
+66.
+
+67 .
+
+68.
+69.
+70.
+71.
+
+R.
+
+R.
+
+Le
+
+A.
+R.
+c.
+Je
+M.
+
+- 8S.
+
+S.
+
+B o
+
+F.
+R.
+E.
+c.
+G.
+0.
+
+8.
+
+Ww.
+G.
+E.
+J.
+W.
+L.
+G.
+J.
+F,
+D.
+S.
+R.
+F.
+N.
+J.
+E.
+Ww.
+D.
+A.
+E.
+H.
+D.
+J.
+c.
+R.
+Ww.
+A.
+R.
+
+K. Adams
+
+. M. Adamson
+
+G. Affel
+
+G. Alexander
+H. Anderson
+F. Apple
+
+F. Baes
+
+M. Baker
+
+A. Baker
+
+J. ‘Ball
+
+E. Beall
+
+S. Bettis
+
+F. Blankenship
+Blumberg
+
+G. Bohlmenn
+J. Borkowski
+H. Burger
+
+W. Burke
+
+Cantor
+
+L. Carter
+I. Cathers
+L. Compere
+A. Conlin
+H. Cook
+T. Corbin
+A. Cristy
+L. Crowley
+L. Culler
+G. Davis
+
+J. Ditto
+
+G. Donnelly
+A. Doss
+
+E. Dunwoody
+R. Engel
+
+P. Epler
+
+K. Ergen
+
+E. Ferguson
+P. Fraas
+N. Fray
+
+A. Friedman
+N. Fry
+
+H Frye, Jr.
+H. Gabbard:
+B. Gallaher
+R. Grimes
+G. Grindell
+H. Guymon
+
+ 
+
+79
+
+Internal Distribution
+
+72.
+73.
+74.
+75.
+76.
+77.
+78.
+79.
+80.
+81 ®
+82.
+83.
+84~108.
+109.
+110.
+111.
+112.
+113.
+114.
+115.
+116 *
+117.
+118.
+119.
+120.
+121.
+122.
+123.
+124.
+125.
+
+126.
+
+127.
+128.
+129,
+130.
+131.
+132.
+133.
+134.
+135.
+136 *
+137.
+138.
+139.
+140.
+141.
+142,
+
+P.
+
+C.
+
+P.
+G.
+Pp.
+V.
+Pp.
+A.
+T.
+
+R.
+M.
+
+T.
+
+S.
+D.
+
+‘A.
+
+J.
+B.
+
+C.
+
+R.
+M.
+R.
+J.
+C.
+Cc.
+H.
+H.
+Ww.
+H.
+Cc.
+L.
+A.
+W.
+R.
+H.
+Pp.
+H.
+A.
+H.
+B.
+J.
+M.
+R.
+
+H.
+D.
+H.
+
+H.
+S.
+N.
+M.
+G.
+D.
+Pp.
+
+ORNL-TM~-1070
+
+Harley
+Harrill
+Haubenreich
+Herbert
+Herndon
+Holt
+
+Holz
+
+Houtzeel
+
+L.
+
+. R.
+
+Jd.
+Je
+Ww.
+S.
+J.
+I.
+Ww.
+R.
+G.
+B.
+I.
+N.
+H.
+D.
+E.
+
+Ge
+
+C.
+B.
+F.
+K.
+E.
+J.
+R.
+L.
+G.
+
+Hudson
+Kasten
+Kedl
+Kelly
+Kerlin
+Kirslis
+Knowles
+Krakoviak
+Krewson
+Lawrence
+Lawson
+Lindauer
+Lundin
+Lyon
+Marable
+Martin
+Mathews
+MacPherson
+McCurdy
+McDonald
+McDuffie
+McGlothlan .
+McNeese
+Miller
+Mixon
+Moore
+O'Brien
+
+Patriarca
+
+Rs
+M.
+B.
+E.
+L.
+
+Payne
+Perry
+Piper
+Prince
+Redford
+
+Richardson
+
+Cc.
+Cc.
+C.
+Pp.
+Cc.
+
+Robertson
+Robinson
+Roller
+Roux
+Savage
+
+ 
+143.
+144.
+145.
+146.
+147.
+148.
+149.
+150.
+151.
+3 152 .
+153.
+154.
+155.
+156.
+157.
+158.
+159.
+160.
+161.
+
+186-187.
+188.
+189.
+190.
+191.
+192.
+193.
+194.
+195.
+
+196-210.
+
+ 
+
+H.
+A.
+D.
+H.
+J.
+M.
+
+P.
+Ww.
+I.
+R.
+H.
+R.
+A.
+J.
+R.
+G.
+D.
+Ww.
+
+D.
+R.
+S.
+D.
+He.
+R.
+Ww.
+Se
+M.
+
+ 
+
+W. Savage
+
+W. Savolainen
+Scott
+
+E. Seagren
+
+H. Shaffer
+
+J. Skinner
+
+N. Smith
+
+G. Smith
+
+F. Spencer
+Spiewak
+
+C. Steffy
+
+H. Stone
+
+S. Stone
+Taboada
+
+R. Talleackson
+E. Thoma
+
+M. Tolson
+
+B. Trauger
+
+C. Ulrich
+
+80
+
+162.
+163.
+164.
+165.
+166.
+167 .
+168.
+169.
+170.
+171.
+172.
+173.
+
+174-175.
+176-177.
+178-179.
+180-184.
+
+185.
+
+B. H. Webster
+
+A. M. Weinberg
+
+XK. W. West
+
+M. E. Whatley
+
+J. C. White
+
+G. D. Whitmen
+
+R. E. Whitt
+
+H. D. Wills
+
+J. V. Wilson
+
+L. V. Wilson
+
+M. M. Yarosh
+
+MSRP Director's Office,
+Rn. 219, 9204-1
+
+Reactor Division Library
+Central Research Library
+Document Reference Section
+Laboratory Records Department
+Laboratory Records, RC
+
+External Distribution
+
+F. Cope, AEC, ORO
+
+W. Garrison, AEC, Washington, D.C.
+H. Henauer, University of Tennessee, Knoxville
+C. Keeton, Tennessee Valley Authority, EGCR Site
+
+M. Roth, AEC, ORO
+
+F. Saxe, North Carolina State University, Raleigh, N.C.
+
+L. Smalley, AEC, ORO
+
+E. Stephenson, University of Arkansas, Fayetteville, Ark.
+J. Whitman, AEC, Washington, D.C.
+Division of Technical Information Extension
+
+o
+
+ 

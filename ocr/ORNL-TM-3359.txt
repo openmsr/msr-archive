@@ -1,0 +1,5821 @@
+ORNL-TM-3259
+
+Contract No. W-Th05-eng-20
+
+Reactor Division
+
+ROD: A NUCLEAR AND FUEL-CYCLE ANALYSIS CODE
+FOR CIRCULATING-FUEL REACTORS
+
+H. F. Bauman
+
+G. W. Cunningham, JIT
+, J. L. Lucius
+
+H. T. Kerr
+
+C. W. Craven, Jr.
+
+ 
+
+This report was prepared 2s an account of work
+sponsored by the United States Government, Neither
+the United States nor the United States Atomic Energy
+
+D » Bor any of the employees, nor any of
+their conmactors, subcontractors, of their employees,
+makes 3ny warranty, express of implied, or assumes any
+legal Liability er responsibility for the accuracy, com.
+pleteness or usefulness of any information, apparatus,
+product or process disclosed, or represents that its nse
+would not infringe privately owned rights,
+
+ 
+
+ 
+
+SEPTEMBER 1971
+
+OAK RIDGE NATIONAL LABORATORY
+Oak Ridge, Tennessee
+operated by
+UNION CARBIDE CORPORATION
+for the
+U. S. ATOMIC ENERGY COMMISSION
+
+ 
+iii
+
+CONTENTS
+Page
+FOTEWOTE sean ccecnocatneecosossnnoness ses cereasaraseatesasessence v
+ADSETECE seve tate esraccnsansasarncnsnnanas Press resenrereraanannan vii
+Acknowledgments ...ccieercneetnrninnaanaen Cites seanarnenvananr ee. ix
+Computer Code Abstract ....... .. Chere erdsceccesesesar tones nuoe xi
+1. Introduction «cca rneroveons reassess scnsnanennae 1.1
+2. The History of ROD ........... teres esse snanas Ferecvessneasaane 2.1
+%. The Functions of the ROD Program «-«...ccvveeveonses ceaeanns . 3.1
+L. Input Description ............ feecatossssanacansasnacenacnnns 4.1
+Section A. MODRIC ..evvece teeccaccane teres erateeceeenanae k.3
+Section Bo ERC eevvccvosassosasnanonns Ceeireetseaerean eee 4.18
+Section C. Fission Product and Delayed Neutron Data ..... 4.29
+Section D. OPTI ....... Ceaecsecneannans severe cncasasesan . 4.31
+5. Discussion of Input ....cevccucinne cecessenvesenranaaenuenna 5.1
+6. User Informetion ..e...... feeenieanen fe terranes ceererse 6.1
+CONETOL CATAS .evvceeciscnnnenavasnannes Crereeene fearon 6.1
+Cross-Section Tape ee-v:sss. fete edececceatantacaenas vecaes 6.2
+ROD SUDYOULINES aeesvesesecnnnencrversnnanns een FR
+7. Theory ...... Cretan cersansaarenernrans ttrecerrseaneeene eeee Tel
+MODRIC=ERC cevevovvvrccsacacosannensns Nesvnsnvnnn esacssnee Tol
+Two-Dimensional Synthesis eveveeveseereioereracavaves cesne Tob
+OPTT vevvvvavacsanensasessesnosnnannnnses Ceteecanacanaaan . 7.7
+HISTRY oc-vvvreoncornnans testes trstetestsasarnsnrrrerre . 7.16
+8. Sample PrODLEM «oeesecesereneennneenns etre taeeneanaaeaan 8.1
+G. References -....cccievaencan crmanresnarecanns cnteconcescanenrnn 9.1
+Appendix A. The ERC Equations ................ cresersesrssennaas A.
+Appendix B. Basic MODRIC Equations seveececeancnaaccacenna.. cess B.l
+Appendix C. TFission-Product Treatment ...... ceeeen vereeereens Cul
+
+Appendix D. The Processing Study Option ...... Fawn cecsscacasse Dol
+FOREWORD
+
+The evolutionary nature of the ROD program (see Seetion 2, The History
+of ROD) has led to certain practical limitations on the information pre-
+sented in this report. We have described the uses for which the program
+was intended, the theory and methodology employed, and rather completely
+the information required for applying the program. We have not attempted
+a ccomprehensive description of the programming itself.
+ABSTRACT
+
+ROD (Reactor Optimum Design) is a computer code for simultaneously
+optimizing the core design and performing the fuel-cycle analysis for
+cireulating-fuel reactors. It consists of & multigroup diffusion calcu-
+lation, including multiple thermel groups with neutron upscatter, in one-
+dimension or in two-dimensional synthesis. combined with an equilibrium
+fuel-cycle caleulation. Cross sections in the CITATION format are required.
+The equilibrium calculation is a detailed model of the fuel cycle, in-
+cluding the effects of processing and of nuclear transmutation and decay.
+Fuel-cycle costs and fission-product concentrations are calculated, the
+fission products by an independent calculation from internally stored two-
+Zroup cross sections. Special features of ROD are an optimization routine
+based on the gradient-projection method, a flux-plotting cption, and a
+subprogram for simple time-dependent calculations based on reacticn rates
+
+from the main program.
+
+Keywords: breeding performance, computer codes, fluid-fueled
+reactors, fuel-cycle costs, nuclear analysis, optimizations, conceptual
+design, cores, delayed neutrons, equilibrium, fission products, neutron
+flux, parametric studies, processing, time dependent.
+ACKNOV.LEDGMENTS
+
+A number of persons, not excluding the authors of this report, have
+made significant contributiors to the development of the ROD code.
+H. F. Baumen and H. T. Kerr have been the principle users ¢f RCD and have
+guided its development frcm the user’s standpoint. The theoretical de-
+velopment has been the work of L. G. Alexander, T. W. Kerlin, and
+2. W. Craven, Jr. The programming was done by J. L. Lucius and
+G. W. Cunningham. Sections of pre-existing programs which have been in-
+corporated into ROD (see Chapter 2, The History of ROD) were written by
+J. Replogle, W. 7. Kephart, M. J. Bell, and R. S. Carlsmith.
+COMPUTER COLE ABSTRACT
+
+Neme: ROD
+
+Computer for Which Code is Designed: The code is designed for
+computers in the IBM-360 series which have directly addressable
+storage of 300 thousand words or more.
+
+Problems Solved: For nuclear reactors the code solves the eigenvalue
+problem with or without a critical concertration search for one
+dimension or for a two-dimensional synthesis, giving flux and fission-
+density distributions. It performs a fuel-cycle analysis, including
+costs, for circulating-fuel reactors, either at equilibrium, for
+continuous processing, or time-dependent (by assuming a separable
+time-dependence) for batch or continuous processing. The equilibrium
+problem may be solved for up to three independent fuel or fertile
+streams. The equilibrium concentrations for the fuel-chain nuclides
+and up to 200 fission-product nuclides are obtained. The optimum
+values of selected core-design and fuel-cycle parameters may be ob-
+tained, based on the maximization of a selected function related to
+the reactor performance.
+
+Method of Solution: The neutromics calenlation is performed by a
+multigroup, one-dimensional or synthetic two-dimensional diffusion
+calculation, including multiple thermal groups with neutron upscatter.
+The equilitrium calculation uses the reaction rates from the diffusion
+calculation to determine the equilibrium concentrations of the fuel-
+chain nuclides. The concentrations of the fission products are ob-
+tained from a self-contained two-group calculation. An iterative
+process is continued until the diffusion and equilibrium celculations
+converge on a common set of nuclide concentrations. The optimization
+is based on the gradienteprojection method. The time-dependent calcu-
+lation (optional) uses average reaction rates from the main calcu-
+lation to calculate the concentrations of the principle fuel nuclides
+as a function of time.
+
+Restrictions on Complexity of the Problem: The major limiting values
+which restrict the complexity of a problem are 15 energy groups,
+
+ 
+14.
+
+including four thermal *roups, 30 nuclides per region, 10 regions
+
+per dimension, 2 dimensions, 50 nuclides in the equilibrium calcu-
+lation, 200 fission products, and 20 optimization variables.
+
+Typical Machine Time: The running time on the IBM 360/75 varies widely
+depending on the type of problem. Single cases require from about
+one minute for a one-dimensional problem with six groups (5 fast,
+
+1 thermal) to bout 5 minutes for a two-dimensional synthesis problem
+with 9 groups (5 fast, 4 thermal). Cases run as part of a series (as
+in an optimization) run in a half to a third the time required for a
+single case (because they are started with the flux distribution from
+the previous case). An optimization with five variebles, nine groups,
+in one dimension runs in about an hour.
+
+Unusual Features of the Program: The ability to closely model the
+behavior of a ei:rculating-fuel reactor, including such factors as the
+loss of delayed neutrons from fuel circulating outside the core, is an
+unusual feature of the program. Others are the availability of rou-
+tines for optimization and for flux plotiing.
+
+Related and Auxiliary Programs: The code is designed to use a micro-
+scopic cross-section tape generated by the code XSDRN.
+
+Status: ROD is in production use at ORNL on the IBM 360/75 and 360/91.
+Machine Requirements: About 300 thousand words of core storage and
+three 1/0 devices excluding input-output and system requirements are
+needed by the progrem. Two additional I/O devices, for auxiliary
+output and flux-plotting, are optional. Plotting requires a CALCOMP
+CRT plotter.
+
+Programming Language Used: FORTRAN IV.
+
+Operating System: IBM 05/360 with FORTRAN H compiler.
+
+Programming Information: The program consists of about 6000 FORTRAN
+statements. Arrays of fixed dimensions are provided for all data
+within the program, which requires about 300 thousand L-byte words of
+core storage.
+
+Users Information: The code and report may be obtained through the
+Argonne Code Center at Argonne National Laboratory.
+xiii
+
+15. References:
+
+1. H. F. Bauman et al., ROD: A Nuclear and Fuel-Cycle Analysis Code
+for Cireulating-Fuel Reactors, USAEC Report ORNL-IM-3359, Cak
+Ridge National Laboratory.
+
+2, N. M. Greene end C. W. Craven, Jr., XSDRN: A Discrete Ordinates
+Spectral Averaging Code, USAEC Report ORNL-IM=-2500, Oak Ridge
+National Laboratory, July 1969.
+
+H, F. Bauman
+
+G. W. Cunnipgham, ITI
+J. L. Lucius
+
+H, T. Kerr
+
+C. W. Craven, Jr.
+
+Oak Ridge National Laboratory
+P. 0. Box Y
+
+Oak Ridge, Tennessee 37830
+1.1
+
+CHAPTER 1
+
+INTRODUCTION
+
+The Rod (Reactor Optimum Design) code is unigue among reactor anai-
+ysis codes in two respects; it was developed for the core design and fuel-
+cycle analysis of circulating-fuel reactors; and it incorporates a package
+for the optimization of certain design parameters. It is limited to one-
+dimensional, or a synthesis of two one-dimensional, neutron diffusion cal-
+culations, and is therefore suited for conceptual design studies of re-
+actors rather than the detailed calculation of a given core geometry.
+
+Circulating-fuel reactors, which include the aqueous homogeneous and
+the molten-salt reactor types, are different in several characteristics
+Prom fixed-fuel reactors. The fuel is perfectly mixed so that its com-
+position at a given time is the same everywhere in the system. However,
+there may De more than one fluid stream, as when a fertile stream is used
+as a blanket, or the fuel may be circulated through a fixed moderator, as
+in the molten-salt reactor, so that the overall core composition may be
+different in different core zones. Circulating-fuel reactors are usually
+designed for continuous processing of the fuel to remove fission products
+and to adjust the fissile concentration. In many designs, the fuel
+reaches an equilibrium composition in a relatively short time. The calcu-
+lation of the reactor performance at equilibrium is then 2 most important
+consideration. Finally, in circulating-fuel reactors, delayed neutrons
+emitted from the fuel circulating outside the core, as in a heat exchanger,
+are largely lost to the chain reaction and must be accounted for in the
+reactcr neutron balance. The ROD code has been designed to take all of
+these factors into account.
+
+ROD also includes a subprogram for nonequilibrium calculations,
+‘designed to calculate an average performance for a reactor over some
+interval of time (e.g., a reactor lifetime), either with batch fuel pro-
+cessing or with continuous processing. This option may also be used to
+calculate the aversge performance cf a reactor in the interval from start-
+up until equilibrium is established. The method uses average reaction
+rates from a space-energy dependent calculation to calculate the time-
+dependent concentrations of the most important nuclides. This is, of
+1.2
+
+course, an approximation, in that space-energy and time-dependent effects
+are not considered simultaneously.
+
+The optimization package in ROD is based on the gradient-projection
+method, or the method of steepest ascent. It will very a given set of
+parameters (e.g., core dimensions, processing cycle times) within limits,
+in a series of cases to search out the values of the parameters which
+maximize the value of a given objective function (e.g., the breeding
+ratio, the inverse of the fuel-cycle cost). Optimization may be used in
+combination with a parameter survey; for example, the effect of a given
+parameter can be determined wits other parameters adjusted to their
+
+optimum values for each case, rather than merely held fixed af some arbi-
+trary value.
+2.1
+
+CHAPTER 2
+
+THE HISTORY OF RCD
+
+The ROD code was not "written" but rather "evolved". Parts of ROD
+were written, put together, taken apart, and revised by a number of people
+over a long period of time. A code with the scope and versatility of ROD
+could probably not have been attained without this long period of develop-
+ment. However, the evolutionary cheracter of ROD has resulted almost in-
+evitebly in some disadvantages, chiefly that the input and output lack a
+consistent format, that many sections of the code have not been described
+by their awthors except in the original FORTRAN, that parts of it are
+seldom used or cbsolete, and that the program has become complex and dif-
+ficult to change. Fortunately, the code was considersbly unified in
+adapting it for the IBM System 360 computers in 1968.
+
+In the beginning (in the 1950's) fluid-fuel reactor caleulations were
+made with the one-dimensional diffusion-theory code GNU, written in machine
+languege at General Motors Corporation, and ERC (for equilibrium reactor
+calculation), an equilibrium code written in FORTRAN at ORNL. In 1960,
+GNU was replaced by MODRIC, also a one-dimensional diffusion-theory code,
+but written in FORTRAN, which made modification of the program more prac-
+tical. At this time, of course, the neutronic and equilibrium calculations
+were performed separately.
+
+The moment of conception for ROD came in 1961 when J. L. Lucius,
+under the direction of L. G. Alexander and T. W. Kerlin, joined MODRIC
+and ERC into a single code called MERC.Z In this combination, a neutron
+diffusion calculation alternated with an equilibrium calculation, so that
+reaction rates were supplied from the diffusion calculation to the equi-
+librium calculation, and new equilibrium concentrations were supplied to
+the succeeding diffusion calculation until both converged on a single set
+of concentrations. This process is still the heart of the ROD calculation.
+
+Over the next few years the code was expanded and improved. The
+fission-product treatment in ERC was expanded to treat first 75 and later
+125 nuclides. The number of fuel streams for whicn equilibrium could be
+calculated was increased from two to three. A provision was added for
+calculating the withdrawal of fuel at a final concentration beyond the
+2.2
+
+equilibrium burnup — useful in calculating certain solid-fuel cores such
+as a pebble-bhed. A two-dimensional synthesis was developed, by
+
+C. W. Craven, Jr., in which a two-dimensional calculation was synthesized
+from two one-dimensional calculations; for example, a cylindrical core
+from an axial and a radial calculation.
+
+In 196%, T. W. Kerlin suggested that the most efficient method for
+finding the set of parameters which gave the best performance in a parti-
+cular core design was to use a computerized optimization technique. A&bout
+this same time, W. L. Kephart at the Oak Ridge Gaseous Diffusion Plant
+had developed an optimization code (unpublished) based on the gradient-
+projection method.” We decided to link MERC with the optimization pack-
+age; the results was a combined code called OPTIMERC. Development of
+OPTIMERC continued through 1965 and it was used extensively for molten
+salt reactor caleulations through mid-1968.
+
+The OPTIMERC code had one major operational fault, which was that
+the entire program would not fit into the core of the IBM T7090 computer
+in use at that time. During a calculation, therefore, information was
+continually stored and retrieved from magnetic tape. This resulted in
+long running times — up to 2 or 3 hr for complex optimization prob-
+lems — and frequent job failures because of tape input-output errors.
+
+The IBM 360 Model T5, which became availsble at ORNL in 1967, seemed
+ideal for a large program like OPTIMERC because of its large core ca-
+pacity. To take full advantage of the new computer, however, it was
+necessary to reprogram OPTIMERC to eliminate much of the information
+handling. We decided not only to reprogram OPTIMERC for the Model 75,
+but to take this opportunity to integrate better the various parts of
+the program, and to enlarge the capacity of the code to handle larger
+problems.
+
+The programming of the new code, which was named ROD (for Reactor
+Optimum Design), was undertaken by G. W. Cunningham, urder the direction
+of J. L. Lucius and the guidance of C. W. Craven, Jr., H. T. Kerr,and
+H. F. Bauman. The important new features of the ROD code were:
+
+i. All operations, after reading of the cross-section information,
+are contained in core.
+2.3
+
+2. Multiple thermal groups (with upscatter) are permitted.
+
+3. Two-dimensional synthesis is performed by energy groups.
+
+4. FERC was expanded:
+
+a) up to four materials are permitted, of which three may be
+treated as fuel streams,
+
+b) the meximum number of nuclides in the equilibrium calcu-
+lation was expanded from 25 to 50,
+
+¢) the maximum number of fission-product nuclides was ex-
+panded fram 125 to 200.
+
+5. Standard optimization variables and objective function were
+built-in (no programming required).
+
+6. A standerd CITATION cross-section tape is read.
+
+T. Cross-section sets are assigned by region; up to five cross-
+section sets are permitted.
+
+At sbout this time, M. J. Bell, of the ORNL Chemical Technology Divie-
+sion, needed a method for calculating in detail the effects of the pro-
+cessing removal of various fission products from a molten-salt reactor. He
+used the basic ROD calculation, bub substituted his own subroutine for the
+calculation of the fission-product absorptions. This treatment is now
+an option in ROD. Its use is limited to single cases (i.e., optimization
+is precluded).
+
+In 1970, an option was added to ROD to permit the calculation of the
+average performence of 8 reactor over one or more batch processing cycles.
+It is based on a zero-dimension, one-group, time-dependent code (un-
+published) written by R. S. Carlsmith in 1966, which we expanded and re-
+vised for inclusion in ROD. Called HISTRY, it takes reaction rates from
+the diffusion calculation to calculate the concentrations of the important
+fuel nuclides as a function of time. The time-weighted average concen-
+trations are then supplied to the next diffusion calculation, and this
+iterative process continued until there is no further change in the
+average concentratians.
+
+This brief history of ROD shows how it bas grown and developed over
+a period of years, and we can only assume that further additions and im-
+provements will be made. Some future developments that have already been
+suggested are:
+2.4
+
+1. Replacing MODRIC with ORNL's latest diffusion code, CITATION,
+which would permit finite-difference two-dimensional calculations.
+
+2. Reprogramming of the "solid-fuel" option (which was not included
+in the conversion of OPTIMERC to ROD).
+
+3. The standardization of the input format and the elimination of
+dual nuclide-identifications.
+
+Since some of these changes, and others not yet conceived, may be
+made in the future, this report has been organized so far as possible
+into independent chapters.
+5.1
+
+CHAPTER 3
+
+THE FUNCTIONS OF THE ROD PROGRAM
+
+The ROD program consists or four principal parts called MODRIC, ERC,
+OPTI, and HISTRY. The functions of these parts, as well as several
+important options, are described in this section. A flow diagram of the
+program is given in Fig. 3.1.
+
+MODRIC is the neutronics section of the code. It is a multigroup,
+one-dimensional or synthesis two-dimensional, diffusion-theory calculation.
+It can perform a criticality search, or simply solve the eigenvalue prob-
+lem. It can be run independently, without preparing input data for the
+other sections of the code. The main output of MODRIC is the critical
+concentrations and the flux and fission density distributions.
+
+ERC calculates the equilibrium composition of the reactor and per-
+forms the economies calculations. It requires reaction rates from MODRTC
+and in turn supplies nuclide concentrations for the next MODRIC iteration.
+Tterations between MODRIC and ERC proceed until the calculations converge
+on & common set of puclide concentrations.
+
+ERC calculates the equilibrium concentrations of the principle fuel
+nuclides, for which reaction rates are obtained from MCDRIC, and also
+the concentrations of up to 200 fission-product nuclides, for each of
+which it makes a two-group calculation based on a thermal cross section
+and a resonance integral. The two-group cross-section data, along with
+fission yields, are stored in a separate section of the data deck known
+as "permenent data."
+
+The 250 ERC nuclides may be divided into as many as ten groups for
+processing, each with its own processing equation in each stream. Cost
+data mey be supplied for any of the principle nuclides from which the
+various components of the fuel-cycle cost are calculated. Most of the
+ROD output is assembled in the ERC section, including the neutron balance,
+fissile inventory, breeding ratio, fuel yield, and feed and production
+rates for the prineiple nuclides.
+
+OPTI is an optimization package, based on the gradient-projection
+method. It controls the running of a series of cases, in which certain
+reactor parameters may be varied systematically within limits, in order
+3.2
+
+ORNL-DWG 71-1884
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1
+|
+|
+[
+
+{
+
+|
+
+VARS TO MERC |
+LINKAGE
+
+| |
+
+| |
+
+| VARS ERC TO MOORIC MODRIC TO ERC |
+
+(VARIABLES SPECIFIED) LINKAGE LINKAGE i
+|
+x
+
+pe | | |
+l a |
+|
+2 conversen? |
+|
+i
+Co wo 3
+1 OPTIONS 0
+
+ 
+
+ 
+
+Fig. 3.1. Flow
+
+ 
+
+ 
+
+ 
+
+OPTI TO MERC
+LINKAGE
+
+ 
+
+|
+
+ 
+
+ 
+
+OPTI
+
+ 
+
+ 
+
+ 
+
+MERC TO OPTI
+LINKAGE
+
+ 
+
+ 
+
+ 
+
+of the ROD Program.
+
+ 
+
+ 
+
+ 
+3.3
+
+to find, within some tolerance, the set of parameters which gives a
+maximum value of 2 prescribed objective function. Parameters which may
+be varied by OPTI include region thicknesses and fuel volume fractions,
+the boundary position between adjoining regions, processing cycle times,
+and, in HISTRY, the time in a batch cycle that the feed is switched from
+one fissile fuel to another. The objective function is a sum of the
+following components, each of which may be weighted with an optional
+constant coefficient, including zero: breeding ratio, fuel yield, recip-
+rocal fueli-cycle cost, reciprocal discounted fuel cost, specific power,
+an inverse function of the meximwum fast flux, and a function of the breed-
+ing gain and the specific power called the conservation coefficient.
+
+HISTRY is a subprogram which can calculate the concentrations of the
+principle fuel nuclides as a function of time, rather than just at egni-
+librium. It uses reaction rates obtained from MODRIC-ERC (MERC), and
+supplies time-weighted average nuclide concentrations to the next iter-
+ation of MERC. The iteration process proceeds until MERC and HISIRY con-
+verge on a common set of concentrations. The HISTRY option is designed
+to calculate the average performance of a reactor during a batch proces-
+sing cycle, or over a reactor lifetime of several processing cycles. It
+calculates the discounted fuel cost, based on a present-worth calculation
+of all purchases and sales of fissile fuel and carrier materials, over
+the lifetime of the reactor for a specified discount rate. It also pro-
+vides useful information on the feed and production rates and inventories
+of the principle fuel nuclides as a function of time. Its main limitation
+is that the space-~energy calculation is considered independent of time;
+which resulis in some lack of rigor in the burnup calculstion. ROD-HISTRY,
+therefore, should not be considered as a substitute for more sophisticated
+‘burnup codes.
+
+Among the main options available in ROD, perhaps the most useful is
+the "variables specified” option. This is a provision in the OPTI section
+of the code to control the running of a series of cases in which any of
+the standard optimization parameters ("variables") are preset to any de-
+sired values. After the base case, essentially the only data reguired
+are the values of those parameters which are to be changed from the
+3.4
+
+preceding case, since all other data are held fixed. Furthermore each
+case is started with the fiux and fission density distribution from a
+previous case, which gives, typically, a factor of 3 or 4 saving in
+computation time over the running of an identical series of cases in-
+dependently.
+
+The output options are very important. So much output is potentially
+available from the (typically) 60 or TO cases of an optimization problem
+that we have devised en elsborate system for selecting output. The ceases
+are divided into four categories as follows:
+
+1. A base case [the first case run).
+
+2. The final or cptimum case from an optimization; or the "variables
+specified” cases when this option is selected.
+
+%. The final case from each optimization cycle (gradient projection).
+
+L. Intermediate cases in an optimization.
+
+The output itself is divided into 29 segments, any or none of which
+may be selected for each type of case above. In addition, an input edit
+of 15 segments is available. Two independent sets of output may be
+specified for any problem. The first, or "detailed" output, can include
+any or all of the edit options. The second, or "short" output, can in-
+clude most of the edit options except some of the infrequently required
+tables. Either set may be omitted.
+
+Finally, an opticn is available for flux plotting. It is included
+in the output options by type of case as described ebove. The plotting
+information is recorded on magnetic tape for use on a CRT (cathode ray
+tube) plotter. The fluxes for any or all energy groups may be selected
+for plotting on either a linear or logarithmic scale.
+h.1
+
+CEAPTER 4 —
+
+INPUT DESCRIPTION
+
+The input for ROD is divided into four main sections:
+A. MODRIC, including HISTRY
+
+B. ERC
+C. Fission product and delayed neutron data
+D. OPTI
+
+The input description is given as concisely as possible. Items marked
+by an asterisk are discussed in greater detail in the following section,
+"Discussion of Input.” The numbers following the varieble name, where
+glven, are suggested values for the data. These are intended tc be helpful
+to users with little or no experience with ROD, and may not be appropriate
+for every case.
+
+The input instructions are intended to be self-explanatory; hcwever,
+the following introduction may be helpful.
+
+The diffusion calculation is one-dimensional, along a line such as
+a reactor axis or radius. The reactor composition must be specified for
+the various regions along each line of computation. The results of the
+calculation are applied to a three-dimensional volume, ususlly in spher-
+ical or cylindrical geometry. For 2-D synthesis caleulasions s in partic-
+ular, it is necessary to specify the composition of the subregions of the
+reactor that are not along an axis or radius of calculation. Usually a
+number of subregions are of the same composition; for example, axial,
+radial, and “corner” blanket subregions may all have the same composition.
+A superregion is a set of subregions all of the same composition. The |
+superregion composition 1s specified by assigning a volume fraction for
+each material to that superregion. |
+
+A material is defined by its nuclide composition. There are two
+classes of materials; those of fixed camposition, such as a graphite
+moderator or a Hastelloy-N structural material, and those of composition
+determined by the feed, processing, and nuclear reaction rates of the
+system. The latter materials are referred to as streams; a fuel stream
+for a molten-salt reactor, for example, typically consists of the carrier
+salt nuclides, the fissile and fertile nuclides, and the fission-product
+
+nuclides.
+4,2
+
+The program limitations on the number of materials, regions, and
+
+other input parameters are summarized in Table Lk.1.
+
+Table 4.1. Program Limits for RCD Input Parameters
+
+ 
+
+Limits in MODRIC
+
+Number of materials L
+
+Note: The first three materials may
+be treated as streams (with
+
+processing).
+Number of nuclides, per region 50
+Number of search nuclides 30
+Number of energy groups 15
+Number of space dimensions 2
+Number of regions, per dimension 10
+Nurber of superregions 20
+
+Limits in ERC
+
+Number of principal nuclides 50
+Number of fission-product nuclides 200
+
+Iimits in OPTI
+
+Number of variables 20
+
+ 
+4.3
+
+Section A. MODRIC
+
+ 
+
+Card Number, Description, and Format
+A-1 Title (184k).
+
+A-2 Comment (184k).
+
+A-3 Program control (¥2.0,I2,I1).
+
+ 
+
+ 
+
+ 
+
+Colum Name Suggested Description
+1-2 FITF Dimension option
+>0 Two=dimensional synthesis
+<0 One dimensicn
+Zh MAYXZP 5 Maximum nurber of MODRIC-ERC iterations per
+case |
+5 MERC MODRIC cnly option
+
+>0 MODRIC and ERC
+=0 MODRIC only
+Cards A-% to 7. Output options for detailed printout. See Table
+4.2. The detailed output may be omitted by means of a dummy control
+card (refer to Chapter €).
+A-lt Base case (case zero), (50I1).
+A-5 Final case in an optimization; variables specified cases {50Il1).
+A.6 Final case in each optimization cycle (5011).
+A-T Intermediate cases in an optimization (50I1).
+Cards A-8 to 11. Output options for short printout. (Same as cards
+AL to T.) To omit short printout, leave cards A-8 to 11 blank.
+A-12 Convergence information.* (2I3,6E10.4,I10)
+
+1-3 NRFLX Not usesd
+
+Lob NRFLXN 1 Flux normalization
+= 1 Normalize dimension 1 true flux to
+dimension 2
+
+= 0 Do not normalize as above
+
+ 
+
+¥*
+Asterisks refer to Chapter 5, Discussion of Input.
+bb
+
+Table 4.2. Output Options
+
+Enter 1 where output is desired. Ctherwise enter
+0 or leave blank.
+
+ 
+
+ 
+
+Column
+on Output Table Controlled
+Card
+
+1® ¥ODRIC data by group, region, ard dimension. Usually omitted.
+
+2% Macroscopic cross sections and homogenized atom densities by
+region after each criticality search. Usually omitted.
+
+za MODRIC data by region and dimension. Usually omitted.
+
+La Normalized 2-D synthesis MODRIC data by nuclide, region and
+dimension after each MODRIC pass. Usually omitted.
+
+5a Data supplied as input to ERC. Atom densities and reaction
+rates by nuclide and material.
+
+6 k-effective and upscattering date by iteration. Usually
+cmitted.
+
+7 The main ERC output table end neutron balance.® Atom den-
+sities, inventories, and feed and production rates by nuclide
+and material.
+
+& Fission product atom densities and ebsorptions by nuclide.
+
+9 Atom densities supplied to MODRIC each MERC iteration.
+Usually amitted.
+
+10 Region thicknesses and other region information. (This table
+is also obtained in option 21.)
+
+11 Volumes, total and by material, by super region.
+
+12 Processing information.
+
+13 MODRIC neutron balance by group and dimension.
+
+14 Neutron absorptions and productions by region and dimension.
+
+15% Macroscopic cross sections by group, region, and dimension.
+
+16 Homogenized atom densities by region and dimension.
+
+17? MODRIC fluxes and fission densities. Specify for "MODRIC
+only" runs.
+
+18 Normalixed point fluxes and fission density distribution.
+
+19% Exercise option to plot fluxes.
+
+200 Table of optimization data. Usually omitted.
+
+210 Region thicknesses and other region information. Super-
+
+region volume fractions.
+4.5
+
+Table 4.2 (contd)
+
+ 
+
+ 
+
+Column
+on Output Table Controlled
+Card
+oP Objective function output summary and optimization variables
+used.
+23 Edit of de2%ta supplied to the HISTRY subprogran.
+
+Note: Options 24 to 38 control the edit of input informetion. These
+options are ignored except when specified for the base case (case
+zero).
+
+2k Initial atom densities by material.
+25 MODRIC control and search information.
+26 Cross-section listing. Enter the specified integer to obtain
+
+one of the following four options:
+
+CO No output
+
+1 Title of each cross-section set
+
+2 Title and list of nuclides in each cross-section set
+
+32 Complete listing of each cross-section set
+
+27 Energy group boundary table.
+
+26 Dimension information.
+
+20% Initial fission density distribution.
+
+30 Initial homogenized atom densities by region.
+
+31 ERC input card edit.
+
+32 Nuelide correspondence table.
+
+33 Subregion--super region correspondence. (The "picture" of
+the reactor.)
+
+3h Super region volume fractions.
+
+352 Permanent data. (Atomic mass, beta decay constant, two-
+group cross sections, fission yield, by nuclide.)
+
+36 Delayed neutron data.
+
+37a Source and recycle-fraction data by material.
+
+33 HISTRY input edit.
+1.6
+
+Table 4.2 (contd)
+
+ 
+
+Colum
+on Output Table Controlled
+Card
+
+ 
+
+Note: Options 39 to 43 are output options for the HISTRY subprogram.
+Option 39 must be specified tc obtain any of the HISTRY output.
+
+HISTRY k_.. by iteration may be specified -on card A-18.
+
+39 Atom densities, inventories, eigenvalues, and conversion
+ratios.
+
+40 Cumulative purchases.
+
+ki Incremental purchases.
+
+Lg Neutron absorptions and productions.
+
+L3 Costs.
+
+502 ERC output for non-converged nuclides by iteration. Used
+
+only for study of ERC convergence.
+
+ 
+
+Soption not available for short printout.
+option not available for base case.
+“ERC output every pass may be specified on card B-l.
+7-16
+
+17-26
+
+27-36
+
+37-46
+
+L756
+
+57-66
+
+67-76
+
+FDGVPL
+
+cgNCSO 2.0
+CONIT1 2.0
+
+CDELT 1.0E-05
+
+CTL  1.0E-OL
+CP1CEN 1.2
+
+NITEXT 3
+
+L.7
+
+Factor for true flux and fission power
+
+dersity calculation. Enter:
+
+Cne-~dimension:
+
+Sphere 1.0
+
+Cylinder Overall height
+
+Slab Product of overall lengths
+
+of second and third sides
+
+Two-dimension:
+
+Slat ~cylinder 2.0
+
+Slab-slab Overall length of third
+
+side
+Factor by which the convergence criteria
+are tightened for base case.
+Factor by which the convergence criteria
+are loosened for the first MERC iteration.
+The convergence requirement on the change
+cf upscatter acceleration treatment from
+iteration to iteration.
+The tolerance on the upscatter acceleration
+treatment approach to unity.
+Factor which limits the change in de/dk in
+the criticality search.
+The minimum number of MODRIC iterations
+required after the upscatter treatment has
+converged.
+
+Cards A-13 to 17 control the flux plotting option. If no flux plots
+are required, these cards may be left blank. The symbols used to
+designate the neutron erergy groups are given in Table 4.3.
+
+A-13 Flux plot control (4I5,4E10.4).
+
+1-5
+6-10
+
+IWADFP
+IGRID
+
+Not used
+
+Grid options:
+
+= 1 Linear
+
+2 Semilog, space-coordinate logrithmic
+5 Semilog, flux logrithmic
+
+= 4 log-log
+
+H
+
+i
+4.8
+
+Table L.3. Symbols Used in Flux Plots
+
+ 
+
+Syl Neutron Energy
+ol Group
+
+ 
+
+3, 13
+
+h, 1k
+
+2, 15
+
+10
+
+XD OK < OX + BG
+
+ 
+4.9
+
+11.15 TPTLIN Point-line options:
+= 0 Points only
+= 1 Line only
+2 Points and line
+5 Histogram
+16-20 NPRNG Range options:
+= 0 Range determined by data extrema
+
+= ]. Range specified in next four fields
+
+21-30 XMINN Minimum of space-coordinate range
+3140 XMAXX Maximum of space-coordinate range
+41-50 YMIWN Minimum of flux range
+51-60 YMAYXX Maximum of flux range
+
+A-1k,1-36 Plot title (9Ak).
+A-15,1-36 Space-coordinate axis label (9AL).
+A-16,1-36 Flux axis label (QA4).
+A-1T7 Groups to be plotted (16I2).
+1-2 NgGPS Total number of groups to be plotted.
+3h NPLTGP(I) Remaining fields identical. Enter group
+number of each group to be plotted.
+Cards A-18 to 34 are for input to the HISTRY subprogram. If HISTRY
+is not used, these cards may be left blank.
+A-18 HISTRY control information (6I5,30X,E10.4k).
+
+1-5 ISTRY Activate HISTRY subprogram.
+> 0 Yes
+= 0 No
+6-10 KIIM 30 limit on XK iterations.
+11-15 KBUG 0 Printout, K by iteration.
+> 0. Yes
+= 0 No
+16-20 NV Activate converter-breeder option.”
+
+= 0 Not activated
+When Koper is greater than 1.0:
+21-25
+26-30
+
+61-70
+
+NCY
+NFS
+
+SWCH
+
+A-10 HISTRY data (8E10.k).
+
+1-10
+11-20
+21-30
+
+31-40
+41.50
+51-60
+61-70
+
+71-380
+
+TMAX
+
+DT 0.05
+XPR 240
+PUR
+
+TAU
+
+THMX
+
+SHIFT 7.0
+TPLK 0.0001
+
+4.10
+
+1 Bypass the criticality search
+2 Withdraw feed in criticality search
+= 3 Withdraw uranium mixture in fuel in
+
+criticality search; return as needed before
+
+i
+
+resuming normal feed
+
+Number of batch processing cycles.
+
+Second feed key nuclide number.* (Ignored
+when SWCH is zero.)
+
+Time, full-power months, of switch to
+second feed. Zero for no second feed.
+
+Time, full-power months per cycle.
+
+Time step, months.
+
+Number of time steps per normal data
+period.®
+
+Feed options:
+
+= 0 5 feed, Th fertile
+
+> 0 Pu feed, Th fertile
+
+< 0 Low enriched U feed
+
+Time constant for -Pa removal, if any;
+fraction removed per second.
+
+Maximum atom density of fertile nuclide
+if fertile-buildup cption is used.”
+Otherwise zero.
+
+The number of data printouts before the
+frequency of output shifts from twelve
+times normal to normal.*
+
+Tolerance on Kopp.
+
+A-19.1 Carrier cost control information™ (6I5).
+
+1-5
+
+NS
+
+The number of carrier nuclides for which
+costs are specified in ERC. Zero to five
+permitted.
+Ln
+
+6-10 Nsc(z) Remaining fields identical. Enter the
+ERC number of each carrier nuclide for
+which a cost is specified.
+
+A-20 Control of the restarting atom densities (after the first cycle)
+(1475.1)
+
+Enter z restart factor for each nuclide in order.
+1.0 If the nuclide is recovered and recycled.
+0.0 Otherwise.
+The above entries apply to the fertile nuclide if its stom density
+is held constant throughout the cycle. If it is allowed to deplete
+during the cycle, enter:
+
+2.0 If it is recovered and recycled.
+-1.0 Otherwise.
+A=21 to 34 HISTRY nuclide information.* One card for each nuclide
+(4E10.L,2%,48).
+1-10 CSP(I1) Initial stom density for nuclide IT.
+11.20 FRM(I) Feed fractions for feed nuclides. Other-
+wise 0.0.
+21-30 FRS(I) Feed fractions for second feed, if any.
+31-40 SL(I) Removal fraction for sale, if any.
+43.50 DENT(T) Nuclide identification.
+
+This ends the HISIRY date section.
+
+4-35 designates a series of cards of identical format on which the
+
+initial atom density of each nuclide ic each material is entered.
+A-35 Atom densities by material (I2,5{¥3,E1l.Lk)).
+
+1-2 MX Material number.
+3-5 TH(I) MODRIC nuclide number (NPET).
+6-16 TEMP{I) Atom density (atom/bn-cm) in material
+
+(RHPT). Must be non-zero.
+Remaining pairs of fields identicel. Use as many cards as required
+for each material. Enter the material number in the I2 field on
+each card.
+A-36 Blank card
+4.12
+
+A-3T Materiel names (Bak).
+1-8 HPLMAT Name of material 1.
+
+Remaining fields identical. Enter names of materials in order.
+4-38 designates a series of cards, cne fer each region level in
+dimension 1, in order, on which the super region number is entered
+for each subregion of the reactor. These cards create a 2D
+"sicture" of the super-region distribution in the reactor. For 2-D
+problems in cylindrical geometry, by convention, the axial dimension
+is 1 and the radisl dimension is 2.
+
+A-38 Super-region subregion correspondence (picture).* (I3,3X,10I3).
+
+1-3 L Fegion level in dimension 1.
+Lf Blank
+7-9 NTEMP(K) Super-region number assigned to subregion
+
+defined by region levels (I,K), where K
+
+is the region level in dimensicn 2.
+Other fields identical. Enter in order of K up to number of region
+levels in dimension 2.
+
+A-3Q Blank card
+A-40 designates a series of cards, one for each super region, in
+
+order, on which the volume fraction of each material is entered.
+ALC Volume fractions of materials in each super region (12,284 4E7.4).
+
+1-2 J Super-region number.
+3-10 HELVAL, Super-region name.
+11-17 vFS(M,T) Volume fraction of material M.
+
+Remaining fields identical. Enter volume fraciions in order by
+material. Note: The volume fraction of the last material X is set by
+the code so that the volume fractions sum to 1.0 in each super region.
+
+AA] Group structure.* (312)
+1-2 NG Total number of energy groups
+3d NETH Group number of the last epithermal] group.
+5-6 NTH Group number of the last thermal group.
+
+ 
+4.13
+
+A-42 MOLRIC convergence information.™ (I10,2E10.4,5I10).
+
+1-10
+
+11-20
+21-30
+31-40
+41-50
+
+51-60
+61-70
+
+71-80
+
+TCPN
+
+EPS1
+
+EPS2
+
+I™MAX
+
+MAXPPT
+
+=
+
+-
+
+3.0E=05
+
+3.0E-0Oh
+
+300
+
+100
+
+Convergence options:
+
+= 1on Kerf
+
+2 on fission density
+
+= 5 on both
+
+Convergence requirement on KE pe in suc-
+cessive iterations.
+
+Convergence requirement on fission den-
+sity in successive iterations.
+
+Masdimum number of MODRIC iterations ailowed.
+Not used
+
+Not used
+
+Perform criticality search:
+
+= 1 Yes
+
+= 0 Fo
+
+Maximum number of optimization cases (may
+not exceed 200).
+
+When no criticality search is specified, omit cards A-43 and Uk.
+A-L3 MODRIC search information.* (I10,3E10.4,I5).
+
+1-10
+
+11-20
+21-30
+
+31-40
+Lis
+
+ICH
+
+RMD
+XX
+
+EPSL
+MS
+
+3
+
+1.0
+5.0
+
+1.0E=0h
+
+= 5 Search on atom density.
+
+Note: No other MODRIC search cptians are
+used in ROD.
+
+Desired k, fee
+
+Initial estimate of dc/dk, fractional
+change in atom density of search nuclides
+per unit change in k.*
+
+Tolerance for LS Pre
+
+The material altered by the criticality
+
+search.
+
+All Criticality search nuclides.” (2LI3).
+
+1-3
+4-6
+
+NSE
+
+NPC(L)
+
+Total number of s=arcn nuclides.
+Reraining fields identical. Enter the
+MODRIC number of each search nuclide.
+Use an additional card (same formet) if
+needed.
+Cards A-45 to 54 specify information. for dimension 1.
+
+A-lt5 Two-dimensional synthesis information.* (L0I2). May be left blank
+for a 1-D case.
+
+1-2 KPRE(LD) Core region number.
+3k IR3C(T, Ten identical fields. Enter numbers of
+LD)
+
+regions, in order, to which core region
+
+buckling from other dimension is to be
+
+applied.
+
+23-2k MTAB(I, Ten identical fields. Enter numbers of
+Lp) regions, in order, to which transverse
+
+leakage is to be distributed.
+
+A-L6 designates a series of cards, one for each region, in order,
+
+on which the region information is entered.
+
+A-L6 Region information (2X,284,E10.3,3I5).
+
+3-10 AME Region name.
+11-20 THICK Region thickness, cm.
+21-25 MESH Number cf mesh spaces.™ |
+26-30 RXS ROD order number of cross section set to
+
+be applied in region. (Limited to integers
+1 through 5).
+31-35 NF Region contains fissilz material.”
+= 0 No
+= 1 Yes
+
+ALT Blank card
+AAS chell thickness.® (7(I3,E7.4)). If no shells are specified, use a
+
+blank card.
+1-3 IH(I) Region number to the inside of the shell.
+4-10 TEMP (I) “Shell thickness, cn.
+
+Remaining pairs of fields identical. Enter region numbers and shell
+thicknesses in order. End data with a blank field. Use an additional
+card if needed.
+L.15
+
+ALS designates a series of cards on which the boundary conditions
+are specified ty energy group, one card for each set of boundary
+conditions, in order by groups. =f the same boundary conditions
+apply to all groups, only one card is required. The constants a,
+b, ard ¢ apply to the origin, or immer boundsry, and 4d, e, and f to
+the outer boundary. Appropriate values for the constants may be
+selected from Table L.k.
+
+Teble 4.k. Boundary Condition Constants
+
+ 
+
+Constant
+
+ 
+
+Boundary Condition
+acrad bore cor fT
+
+ 
+
+Reflected, current zero 0.0 1.0 0.0
+No return current, extrapo-
+
+lation distance = 2.13D 0.94 1.0 0.0
+No return current, extrapo-
+
+lation distance = 2.0D 1.0 1.0 0.0
+Flux zero 1.0 0.0 ~~ 0.0
+
+ 
+
+A-L9 Doundery conditions (2712,I6,6E10.4).
+
+1-2 IL Group number of highest energy group for
+which boundary conditions apply.
+3h IT Group number of lowest energy group for
+which boundary conditions apply.
+5=10 KCK Not used
+11-20 TEMP (1) a (refer to Table 4.2).
+21.30 TEMP (2) b
+31-40 TEMP(3) c
+41-50 TEMP (4) a
+51-60 TEMP(5) e
+61-70 TEMP(6) f
+L.,1%6
+
+A-50 designates a series of cards on which are entered the attenu-
+ation coefficients for shells between regions, if any. If all
+
+coefficients are to be 1.0, or if no shells are specified, use a
+
+blank card.
+A-50 Shell attenuation coefficients by energy grown (3(212,2E8.L4)).
+1-2 IS(L) Group
+2 TH(L) Region inside of shell.
+5.12 TEMP(L) g (refer to Eq. B.9, Appendix B)
+13-20 TEMH(L) h (refer to Eq. B.10, Appendix B)
+
+Remsining groups of four fields identical. Enter coefficients in
+order by group and region. End data with a blank field.
+
+A-51 Ceametry, buckling, and initial fission density distribution options
+
+(512).
+
+1-2 IPEPT(ID) Geometry option:
+= 1 Slab
+= 2 Cylinder
+= 5 Sphere
+
+zl IBGPT(ID) 2 Buckling option:
+= 1 Group and region dependent
+= 2 Independent of group and region
+= 3 Input by group and region
+Note: The buckling option is ignored in
+spherical geometry, or when the 2-D
+synthesis is specified.
+
+5.5 IFgPT(ILD) 2 Initial fission density distribution:
+= 1 Flat
+= 2 Cosine
+
+Omit card A-52 unless buckling option 1 wes selected. Omit for sphere
+and 2-D synthesis.
+A-52 Buckling optior 1.* (3E10.k).
+1-10 TWD(LD) Game,
+13-20 YH(LD) yor h, am
+21-30 Z(1LD) Z, em
+4.17
+
+Card A-55. Omit for sphere. Blank for 2-D synthesis.
+A-5% Buckling option 2 (E10.Lk). Omit unless option 2 was selected.
+1-10 BSQ{ID) Value for buckling.
+Card A-54%. Omit for sphere, 2-D synthesis.
+A-5k Buckling option 3 (7E10.4). Omit unless option 3 was selected.
+Enter bucklings in order by group and region.
+For a two-dimensional synthesis, repeat cards A-45 to 54 with infor-
+mation for dimension 2. Otherwise, this ends the dimension infor.
+mation.
+A-55 designates a series of cards on which the ERC nuclide number is
+indicated for each MODRIC nuclide, by material. Requires at least
+one card per material. Use as many cards as needed. Nuclides may
+be entered in any order. Fields may be left blank where convenient.
+omit A-55 for "MCDRIC only” rums.
+A-55 MODRIC-ERC nuclide number correspondence (I2,10(I3,1X,I3)).
+
+1-2 J Material number.
+3.5 NTEMP(I) ERC nuclide number.*
+T=10 IDTEMP(I) MODRIC nuclide number.
+
+Remaining pairs of fields identical. Fields may be left blank.
+A-55 Blank card. Omit for "MODRIC only".
+A.5T7 Blank card. Omit for "MODRIC only”.
+A-58 Cross section set assigmment.™ (5I3).
+1-3 KXPDR(I) Set number of cross section set on CITATION
+tape to be stored in core.
+
+Remaining fields identical. Up to five cross section sets may be
+stored for use in the ROD calculation. The order in which they are
+specified esteblishes the ROD order mumber for card A-46.
+
+- For MODREIC only, end the data here.
+4.18
+
+Section B. ERC
+
+The card number in the ERC section not only identifies the input,
+but is also an integer variable, entered in columms 1 to 2 on each card,
+which defines the format for the data on that card. This allows the data
+cards in this section to be assembled in any order, and, although they
+
+are usually arranged in sequence, no error 1s introduced by misplacing a
+card within the section.
+
+B-1 ERC data (3X,9I5).
+
+Column
+
+ 
+
+1-3
+L.8
+
+9-13
+14-18
+19-23
+2-28
+
+29-33
+
+34-38
+39-43
+
+Suggested
+Name Value
+KARD ool
+LgD 0
+NEW
+MAX Lo
+189
+IFPg 2
+TIRE
+NRy1
+NgPP
+
+Deseription
+
+Output by MERC iteration option.*
+
+= 0 Normal
+
+> 0 Output options 7, 9, and 38-43, if
+specified, printout for each MERC iteration.
+Not used
+
+Maximum mumber of ERC iterations.
+
+Kot used
+
+Fission product option (refer to Appendix
+3).
+
+O Omit fission product calculation
+
+1 A111 fission product nuclides calculated
+in ERC.
+
+= 2 Normal. Reaction rates for selected
+fission products may be calculated in
+MODRIC.”
+
+ERC number of fission product reference
+element.
+
+i
+
+u
+
+‘Not used
+
+ROD options:
+
+= 0 Optimization
+
+1 Variables specified
+
+2 Base case only.*
+
+—1 Processing study option.™
+
+n
+
+0
+L, 19
+
+Lig NWECV Processing cost option.™
+> C Volume basis
+< 0 Qther
+B-2 ERC convergence and other data (3X,6E10.4).
+1-3 KARD QQ2
+4-13 C¢NVEG 1.0E-Ok Convergence, ERC atom densities.
+1423 B26 0.5 Atom density damping/forcing coefficient.*
+2h 33 B27 2.0 Limit on change of atom density per
+iteration.”®
+3LA3 P Reactor power, Mw(thermal).
+Lh 5% F36 Plant factor.*
+5h 63 E36 Thermal efficiency.
+B-3 ERC residence times and other data (3X,6E1C.Y4).
+1-5 KARD 0035
+L133 GES3 Fission-product resonance integral.
+1-23 AK Not used
+24h 33 B5% Fuel residence time, in core, sec.
+(For loss of delayed neutrons calculation.)
+3h 43 B56 Fuel residence time, out of core, sec.
+Li 53 BST o.L Scaling factor for processing plant capital
+cost.”
+S54 «63 WINT Interest rate, fraction per annum.
+
+B-4 Tolerance for MERC convergence and other data (3X,3E10.k4).
+1-3 KARD oo:
+
+4-13 WT Fission-product thermal spectrum factor.”
+14.23 SEPS 1.0E-03 Tolerance for MERC convergence.
+24-33 UPLTJ 1.01 Limiting factor for change of the recycle
+
+fraction per iteration.*
+Cards B-5 to 7 are currently no’ activated.
+B-8 Transverse dimension factor (3X,E10.4). Qmit for sphere or 2-D
+
+synthesis.
+1.3 KARD 008
+5.13 FUDGE Transverse dimension factor:
+
+Cylinder - overall height, om
+k.20
+
+Slab - product of second and third over
+all lengths, cm®.
+Cards B-9 to 13 specify the processing information. In the B-9 ard
+B=10 series, one card is required for each material to be processed
+as a stream.
+B-O Processing data (3X,315).
+
+1-3 KARD GOS
+
+4.8 J Material number.
+
+9-13 NTIME Number of processing cycle times to be
+defined for msterial J (limit 10).
+
+4-18 NPGERQ Number of processing equations to be de-
+
+fined for material J (limit 10).
+Card B-10 may be cmitted if all times are in days.
+B-10 Time units (3X,I5,1084).
+
+1-3 XARD 01G
+L8 J Material number.
+9.12 TUNITS(1) DAYS The first time is the master cycle time
+
+which must be given in days.
+Other fields identical. Enter units for processing times i. order.
+Onlv the following entries are permitted:
+SECS
+MINS
+HPUR
+DAYS
+YEAR
+Card B-1ll designates a series of cards, one for each processing time
+for each material stream on which time and cost information are
+entered. Cards may be amitted for times not being used, without
+changing the "number of times" or card B-9.
+B-11 Processing cycle times (3X,21%,2E10.4).
+1-3 KARD 011
+4.6 J Material number.
+T=9 NT Time number.
+L.21
+
+10-19 GPTIME Processing cycle time, in units specified
+
+(J,NT) on card B-10.* Enter full-cepacity
+operating time, not calendar time.
+
+20-29 WPCV (J, Processing cost factor, volume basis.”
+NT) (Zero permitted.)
+
+B-12 designates a series of cards, one for each processing equation,
+
+on which the times used in each equation are indicated by entering
+
+1.0 in the proper positions.
+
+B-12 Processing equations.* (3X,2I3,10F6.0).
+
+1-3 KARD 012
+L.6 J Material number.
+7-9 K Processing equation number.
+
+Remaining ten fields identical. Enter 1.0 in each field corresponding
+to a cycle time to be used in the processing equation.
+
+(Time)
+10-15 (1)
+16.21 (2)
+22-27 (3)
+28-33 (+)
+34-39 (5)
+40-45 (6)
+46-51 (7
+52-57 (8)
+58-63 (9)
+6k -59 {10)
+
+Card B-13 designates a series of cards, one for each processing
+equation, on which the group of auclides to be treated by each
+equation may be given a keyword identification.
+
+B-13 Processing nuclide group names (3X,2I3,3A%).
+
+1-3 KARD 013
+
+L-6 J Materiel number.
+
+7-9 XK Number of the processing equation.
+10-21 HOLPGE Keyword name of the nuclide group to be
+
+treated by the equation.
+L.22
+
+Cards B-1L4 to 19 are currently not activated.
+B-20 designates a series of cards, one for each material to be
+treated as a stream.
+
+B-20 Stream data (3X,I3,LE10.4,I10,E10.%).
+
+1-3 KARD 020
+
+Lb J Material number.
+
+7-16 SPIVEV External volume, ft>.%*
+
+17-26 (3) Not used
+27-36 sTP(J) Holdup ime in the processing plant, days.®
+3746 STR(J) Operating time on reserve fuel, days.”
+47-56 NW1(J) 0 Withdrawal option:
+
+0 Fluid fuel
+
+1 Solid fuel. (Note: The solid fuel
+
+option is currently not activated.)
+
+57-66 XE21(J) A fixed poison fraction (used for xenon).*
+B-21 designates a series of cards, one for each group of contiguous
+nuclides for which information is identical, for which nonstandard
+values of the following data are to be entered. (Cmit for nuclides
+for which standard values apply.)
+
+Name Std. Vaiue
+Fraction processed per cycle B(1,J) 1.0
+Fraction removed in processing SCE(I,J) 1.0
+Fraction recycle to same
+stream {5=JD) RCF(1,J,JD) 1.0
+Fraction recycled to other
+streams (JZJD) RCF(I,J,JD) 0.0
+
+B-21 Removal and rscycle data* (3X,I2,213,11,288.4,I2,4E7.4).
+1.3 KARD 021
+
+LS J Material number.
+
+6-8 I First nuclide for which data applies.
+9-11 Il Last nuclide for which deta applies.
+12 NESCE E and SCE data control:
+
+0 Use standard values.
+1 Read values fram following two fields.
+4.23%
+
+13-20 DuUML Enter E(I,J), fraction processed per cycle.
+
+21-28 DUM2 Inter SCE(I,J), fraction removed, or lost
+in recycling.
+
+29-30 NRCF Pecycle fraction control:
+
+0 Use standard values.
+1 Read from next four fields.
+
+31-37 DUM(1) Recycle fraction to material 1.
+38-44 DUM(2) Recycle fraction to material 2.
+L5-51 DUM(3) Recycle fraction to materiel 3.
+52-53 DUM(4 ) Recycle fraction to materiel L.
+
+B-22 designates a series of cards, one for each principel nuclide
+in each meterial treated as a stream, on which the feed, atom
+density, and recycle options are entered. The options are listed
+in Table 4.5. Cards may be omitted for nuclides for which all data
+
+are zero.
+B-22 Feed, atom density, and recycle optioms.* (3X,213,77.3,13,5%,3I5).
+1-3 KARD 033
+h.6 J Material number.
+7-9 I ERC nuclide number.
+10-16 (I,J) Special feed rate or atom density
+17-15 TUMp specifications. See Teble 4.5
+25.20 os, Feed option (Q).
+30-34 N(I,J) Atom density option (N).
+35-39 pe Recycle option (J).
+
+B-23 designates a series of cards, one for each principal nuclide,
+on which are eniered data required for the material balance.
+B-23 ERC material balance data (3X,7135,2E10.3,28%,I3).
+
+1-3 KARD 025
+
+4-6 I ERC nuclide number.
+
+7-9 I9(1,1) Processing source nuclide number.™
+10-12 IP(1.2) Processing source nuclide number.
+13.15 I7(1,1) Transmutation source nuclide number.
+
+16.18 IT(1,2) Transmutation source nuclide number.
+i .2h
+
+Table 4.5. Feed, Atom Density, end Recycle
+Options, Card B22
+
+ 
+
+Option
+
+ 
+
+Number Description
+Feed Options:
+
+0 No feed.
+
+1 Feed rate calculated by ERC to maintain the equilibrium or
+critical concentration.
+
+2 Feed rate specified as input. Enter (kg/dey) in the form
+#0.7yyixx in columns 11-19, where xx is the exponent for the
+data yyy.
+
+3 Feed rate proportional to the feed rate of another nuclide.
+
+Enter in the form ixx.yyyfzz in columns 10-13, where:
+
+xx = the reference feed nuclide
+t.yyyizz = the ratic of the feed rate of nuclide I to that
+of the reference feed nuclide.
+
+Atom Density Options:
+
+o
+1
+2
+
+Atam density held constant.
+Equilibrium atom density calculated by ERC.
+
+Critical atom density calculated by ERC. This option
+permitted for one nuclide only.
+
+Atom density adjusted by ERC to keep reaction rate constant.
+
+Special 5 option. Celculates the average atom density of
+238) over the reactor lifetime for startup with 25U feed.
+Enter in the form #xx.yyyizz in columms 10-13, where:
+
+xx = the core lifetime, calendar years.
++1'Vy+zz = the ratio of 38) to ©57 in the feed.
+
+Refer to Eq. (4.32), Appendix A. Specific for 235U as
+ERC nuclide 35.
+
+Specifies a pseudo-ntclide representing the loss of delayed
+reutrons.
+
+Specifies a pseudo-nuclide for the fixed poison fraction.
+
+‘Specifies a psewdonuslide representing the lumped fission
+products.
+
+ 
+L.25
+
+Table 4.5 (contd)
+
+ 
+
+Option
+Number
+
+Description
+
+ 
+
+recycle Fraction Options:
+
+0
+
+Recycle fractions held constant.
+
+The following options allow ERC to calculate the recycle fractions for
+the fuel nuclides for a breeder reactor in which excess fuel may be
+produced for sale. In each case, any remaining fuel from materials 1,
+2, ard 3 is recycled to material 1.
+
+1
+
+2
+
+"Wi
+
+pS}
+
+Cn
+
+Specifies the key nuclide for the sale of excess fuel,
+any, based on the composition of material 1.
+
+Specifies the key nuclide for the sale of excess fuel,
+any, based on the mixed composition of materials 1, 2,
+Se
+
+Sverifies the key nuclide for the sale of excess fuel,
+any, based or the camposition of material 3.
+
+Specifies the key nuclide for the sale of excess fuel, if
+any, based on the mixed composition of materials 2 and 3.
+
+Specifies a nuclide to be sold in proportion to the key
+naclide in option 1.
+Specifies a nuclide to be sold in proportion to the key
+nuclide in option 2.
+
+Specifies a nuclide to be solid in proportion to the key
+nuclide in option 3.
+
+Fs
+
+KE Eb
+
+Specifies a nuciide to be sold in proportion to the key
+nuclide in option %.
+
+ 
+10-21
+202k
+25-34
+35k
+he 52
+53-35
+
+ID(I,1)
+ID(I,2)
+AMASS(T)
+AMBA(T)
+HYLL
+NPGFNI (I)
+
+he26
+
+Decay source nuclide number.
+Decay source nuclide number.
+Atomic mass of nuclide I.
+
+Beta decay constant for nuclide I.
+Nuclide name.
+
+Number of processing group.”
+
+B-2L designates a series of cards, one for each nuclide, in each
+
+msterial, for which cost data are assigned.
+B-2i Value of materials (3X,213,3E10.L).
+
+1-3
+
+L-6
+
+7-9
+16-19
+
+20-29
+
+50-39
+
+40-49
+
+KARD
+
+J
+
+I
+wWl(I,J)
+
+W3(I,J)
+
+we (I,J)
+
+Ww(I,J)
+
+02k
+
+Material number.
+
+ERC nuclide number.
+
+Value of nuclide I in materials 1, 2, and
+3 in the reactor system. The value
+assigned to nuclide I in material 1 is
+automatically assigned in materials 2 and
+3 also.”
+
+Unit processing cost, $/kg (non-zero for
+weight-basis calculation omly).*
+Processing unit capital cost factor {(non-
+zero for capital cost basis calculation
+only).*
+
+Value of nuclide I in material J as feed
+material. Assign for each material.
+
+B.25 designates a series of cards, one for each nuclide for which
+an interest rate different from that entered on card B-35 is speci-
+field for the calenlstion of an inventory charge. Omit if none are
+different.
+B-25 Interest rates {3X,I3,E1C.L).
+
+1-3
+6
+
+7-16
+
+KARD
+I
+w2(1)
+
+025
+
+ERC nuclide number.
+Interest rate, fraction per year.
+
+Cards B-26 to 28 are currently not activated.
+L.27
+
+B-29 List fertile nuclides (3X,23I3).
+1-3 XARD 029
+3-6 122N1
+
+~ Remaining fields identical. Znier the ERC nuclide numbers designating
+the fertile nuclides for the breeding ratio calculation. Refer to
+Eq. (A.37), Appendix A.
+
+B-30 Iist fissile precursors (3X,2313).
+1-3 KARD 030
+LE 122N2
+Remaining fields identical. Enter the ERC nuclide numbers of fissile
+precursors, for example, = Pa.
+
+B-31 List fissile nuclides for breeding ratio (3X,23I%..
+1-3 KARD 031
+L-6 22D
+Remaining fields identical. Enter the ERC nuclide numbers designating
+the fissile nuclides for the breeding ratio eczlculation.
+
+B-32 List fissile nuclide for mean eta (3X,23I3).
+1-3 KARD 032
+Lob 123D
+Remaining fields identiezl. Enter the ERC nuclide numbers designating
+the fissile nuclides for the mesn eta calculation. Refer to Eg. (4.38),
+Appendix A.
+
+B-33 List fissile nuclides and precursors for inventory (3X,23I3).
+1.3 KARD 033
+L§ 129N
+Remaining fields identical. Enter the ERC nuclide numbers designating
+the fissile nuclides ard precursors for the fissile inventory calcu-
+lation. Refer to Eg. (A.45), Apperdix A.
+
+B-3k List fissile nuclides and precursors for processing loss (3X,23I3).
+1-3 KARD 0%
+L6 L30X
+Remairing fields identical. Enter the ERC nuclide numbers designating
+the fissile nuclides and precursors for the processing loss calcu-
+lation {numerator}. Refer to Eq. {A.46), Appendix A.
+L.23
+
+B-35 List fissile nuclides for processing loss (3X,23I3).
+1-3 “ARD 035
+L_§g L300
+
+Remaining fields identical. Enter the ERC nuclide numbers desig-
+
+nating the fissile nuclides (only) for the processing loss caleu-
+lation {denominator).
+Cerd B-36 is currently not activated.
+B-3T7 List fissile nuclides for fixed poison fraction (3X,23I3).
+-3 ED oT
+Lo ¥21L
+
+ba
+
+Remaining fields identical. Enter the ERC nuclide mmbers desig-
+nating tne fissile nuclides (only) for the fixed poison-fraction
+celculation. Refer to Eq. (A.34), Appendix A.
+
+B-3C Blank card. This ends ERC datz Section B.
+k.2c
+
+~~
+
+Section C. Fission Product and Delayed Neutron Deta
+
+This section cortains the fission yields, two-group cross sections,
+and transmutation and decay chain data for up to 200 fission-product
+nuclides. It is referred to as permasnent data, because, once set up, it
+may be used for the calculation of any thermal reactor. However, the
+processing group number has been superimposed on the permanent data in
+this section, and this would be expected tc change with the processing
+method employed. Finally, the last six cards in this section contain
+the data for six groups of delayed neutron precursors.
+
+C-1 Fissionable nuclide correspondence (5I3).
+Fields may be left blank for mnclides not being used. Specific for
+ERC numbers in the range of 1 to 1).
+
+1-3 NFPYS(1) ERC nuclide number for Z52Th.
+L-6 NFPYS(2) ERC nuclide number for <7U.
+7-5 NPYS(3) ERC nuclide number for 22°U.
+10-12 NFPYS(L) ERC nuclide number for Z28U.
+13-15 NFPYS(5) ERC nuclide number for Z>°pu.
+15-15 NFPYS{6) FRC nuclide number for <%ipu.
+
+£-2 designates a group of up to 200 cards, one for zach fission-
+product nuclide. End the fission-product date with a blank card.
+* Fissicn-product permanent data (5I3,E9.1,8E6.1,2A%,T80,I1).
+
+1-3 I ERC nuclide nuxber (starting with 51).
+46 ITl Transmutation source nuclide number.
+73 ITe Transmmtation source nuclide number.
+10-12 ID1 Decay source nuclide number.
+
+13-15 ID2 Decey source nuclide number.
+
+16.2% BDECAY Beta decay constant.
+25-30 SA2200 Absorption eross section (2200 m/sec).
+31-35 RESINT Resonance integral.
+
+37-42 YT(1) Fission yield from =>=Th.
+L348 YT(2) Fission yield fram 253.
+195k ¥YT(3) Fission yield fram 235U.
+
+55-60 YT(%) Fission yield from 23%y.
+L.30
+
+61-66 YT(5} Fission yield from Z>°Pu.
+67-72 YT(&) Fission yield from 2%pu.
+3-79 BALL Nuclide name.
+go NPG Processing group number.
+C-3 designates a group of six cards, one for each delayed neutron
+group.
+C-3 Delayed neutron data (I2,7E10.L).
+1-2 I Delayed neutron group.
+z-12 AMAZ{T) Decay constant.
+13-22 YT(1) Delayed neutron fraction for =*2Th.
+23-32 YT(2) Delayed neutron fraction for 2371.
+33.L2 YT(3) Delayed neutron fraction for 23%.
+L352 YT(%) Delayed neutron fraction for =38y.
+52.62 YT(5) Delayed neutron fraction for 2>°pu.
+63-72 YT(6) Delayed neutrom fraction for 2%ipu.
+
+This ends data Section €. It is the end of the data for running
+a single case; that is, when the optimization or variables specified
+options are not required.
+A
+
+Se-tion D. OPTI
+
+The data for optimization or for the varisbles specified option are
+
+entered in this section.
+section may be omitted.
+
+When these options are not required, this
+
+The coefficients for the standard terms of the objective function
+
+are entered on card D-i.
+
+The value of each coeffi ient determines
+
+the weight of each objective in the optimization. Terms that need
+not be considered in a particular optimization may be given zero
+
+O=1 Objective function coefficients.” (TE10.L).
+
+coefficients.
+
+1-10 #ECL
+11-20 ¢BC2
+21-30 #BC3
+31-40 gnch
+L1.50 #BCS
+51-60 @BCS
+61-70 #BCT
+
+D-2 Allowable flux (E10.4).
+
+1-1C
+
+FLXALW
+
+Coefficient for breeding ratio.
+Coefficient for fuel yleld.
+Coefficient for reciprocal of fuel-cycle
+cost.
+
+Coefficient for reciprocal of fuel
+specific inventory.
+
+Ccefficient for the group one (damage)
+fast flux factor.
+
+Coefficient for the conservation coef-
+ficient.
+
+Coefficient for the reciprocal of dis-
+counted fuel cost (from HISTRY).
+
+The allowable group 1 (fast) flux. Must
+be none-zero if the coefficient of the
+flux factor (card D-1) is non-zero.
+
+Cards D3 to 5 form a set; one such set is required for each
+
+variables~specified case.
+
+The indevendent variables which may be
+
+specified (that is, assigned fixed values) or optimized are given
+in Table 4.6. They include region thicknesses, the volume fractions
+of each material in each superregion, the locations of region
+beundaries, processing cycle times, and the time at which feeds may
+be switched in a HISTRY cycle.
+4,32
+
+Table L.6. Types of Variables
+
+ 
+
+ 
+
+ 
+
+Indices
+Description pe
+er 7 > 3
+Region thickness 1 Region Dimension None
+Volune fraction 2 Material Super None
+region
+
+Boundary? 9 Region Dimension None
+Processing cycle
+
+time 10 Material Time number None
+Feed switch time 11 None
+
+ 
+
+8omit cards D-3 to 5 for optimization.
+D-3 Number of variables (2I5).
+
+1-5 NVSPC
+6-10 NVAR
+
+Case number.
+
+Rumber of variables specified for given
+
+case.
+
+D-4 Case information (I5,E1C.L,IS).
+
+1-5 MAX3S
+6-15 HELP
+
+16-20 NSET
+
+D-5 designates a group of cards, one for each variable whose value
+is to be changed from the preceding case.
+
+MERC iteration limit f~r case.
+
+Factor by which all convergence criteria
+
+are multiplied for case.
+
+Control of initial flux, fission density
+distributica, and atom densities:
+
+= O Taken from previous case
+> 0 Taken from base case.
+
+this group must equal NVAR cn card b-3.
+
+Note: A card "D-9, optimization variable” is compatible in format
+and may be used as a D-5 card. The fields containing optimization
+
+information are not read at this point.
+
+The number of cards in
+4.33
+
+D-5 Specified variable (LI3,10X,E10.%,L0X,24k).
+
+1-3
+L-6
+7-9
+
+10.12
+
+23-32
+
+75-80
+
+ITYPE(T)
+INDX1(T)
+INDX2(I)
+INDX3(I)
+XB(I)
+HPLYPT
+
+Varisble type number (see Table %.6).
+First subscript.
+
+Second subscript.
+
+Third subscript, if any.
+
+Specified value for variable.
+
+Nume of variable.
+
+End the varisbles-specified date with a blenk card. This ends the
+data deck for a variables-specified run.
+
+D=t Number of OPTI cycles (I3).
+
+1.5
+
+MAXCYC 10
+
+Maximum rumber of optimization cycles
+(gradient projections).*
+
+DT OPTI control (3I5,E5.0,5810.%4).
+
+1-5
+6-10
+
+11.1%
+
+16-20
+
+21-30
+
+31-40
+
+L1-50
+
+51-60
+
+N
+
+KNTVEC dl
+NH@I.D 0
+CMY +1.0
+ALPHA 0.05
+BETA 0.10
+SFl 1.1
+EFS 0.6003
+
+Number of OPTI variebles.™
+
+Vector count for parallel.tar-eat
+acceleration methcd.
+
+= «1 New caze. (No other options
+activated)
+
+Fumber of cycles & variable is held at a
+limit (zero permitted).*
+
+Ascent/descent control.
+
++1.0 to maximize objective function
+=1.0 to minimize objective function
+Fracticn of range each variable is moved
+to calculate derivatives.
+
+Fraction of range that the controlling
+variable is moved in the initial step along
+a vector.
+
+Step factor by which BETA is multiplied
+after each successful step.
+
+Step tolerance; a lower limit or the
+fractional improvement ir the objective
+finciion required for a step to be con
+
+sidered successful.
+61-T0
+
+PER
+
+0.003
+
+L.3k
+
+Cycle tolerance; a lower limit on the
+fractional improvement in the objective
+function per cycle required or continu-
+ation of the optimization.
+
+D-8 OPTI control (I5,2E10.%,I5).
+
+1-5
+
+6-15
+
+16-25
+26-30
+
+51-35
+
+NORED
+
+ALPLIM
+KAFLSM
+
+2.0
+
+0.02
+
+Bypass the reduced-step option:
+
+= 1 Yes
+
+= 0 No
+
+Factor by which ALPHA and BETA are reduced
+in the reduced-step option.
+
+Minimum ALFHA permitted.™
+
+Activate end-effect option 1. Ridge-
+analysis factor reduced when derivative
+
+is negative.®
+
+= 1 Yes
+
+= 0 Xo
+
+Activate end-effect option 2. Variables
+with negative derivatives restrained after
+an unsuccessful first step. Interval scan
+anitted.
+
+= 1 No
+
+= OQ Yes
+
+D-9 designates a group of cards, one for each variable, on which
+the starting value and range are entered. The number of cards in
+this group must equal N on card D-7.
+
+D-9 Optimization variable” {LI3,3E10.4,25X,FS.C,2ahk).
+
+1-3
+
+4.6
+7-9
+10-12
+13-22
+23-32
+33L2
+
+ITYPE(Z)
+
+INDXL(I)
+
+INDX2(1)
+
+INDX3(I)
+x(1)
+¥B(T)
+XH(I)
+
+Verisble type number. {Refer to Table
+.6).
+
+First subzcript.
+
+Second subscript.
+
+Third subscript, if any.
+
+Minimum value {lower limit of range).
+Initial value.
+
+Maximum value {upper limit of range).
+L.35
+
+68.72 SLEFAC 1.0 Initial value of ridge-analysis factor.
+(1) Mest be non-zero and not greater than
+1.0. Usually 1.0.
+This ends the ROD data for an optimization rum.
+This ends the input descripticn.
+
+ 
+5.1
+
+CHAPTER 5
+
+DISCUSSION OF INPUT
+
+Many of the features of ROD require more exposition than is appro-
+priate for the preceding section, "Description of Imput”. Such items,
+which have been marked with asterisks in the description, are discussed
+ir this section. 3ach discussion is keyed to the appropriate irput card
+number.
+
+4-12 Convergence Information
+Refer to card A-L2 for a discussion of the convergence criteria.
+A-13 HISTRY Control Information
+
+Converter.treeder optian. At the beginning of a batch processing
+cycle, a converter reactor may have a temporary excess of fissile material,
+because fission-product poisoning has been reduced to zero and fissile
+material {(e.g., =°U) mey be aveilsble from precursors (e.g., =>>Pa’ pro-
+duced in the previous cycle. HESTRY normally “sells” any excess fissile
+material. ‘(he converter-breeder option provides the following alterna-
+tives, which apply when kop exceeds 1.0:
+
+1. Shut off the eriticality search. This allows the excess fissile
+to be retained in the system, thus deigying the point at which fissile
+Teed must again be resumed. This expedient introduces a small error in
+the fissile balance, (vecause ope is greater then 1.0) but may be the
+vest alternative when k off only slightly exceeds 1.0 for a short time,
+
+2. Witndrew feed in the criticality search. Note, however, that
+it is usually not practical to withdraw feed from an actual reactor.
+
+5. Vithéraw, in the criticality search, uranium nuclides in the
+proportions present in the fuel stream. This simulates withholding some
+of the uranium separated from the fuel at the end of a cycle, and feeding
+it back as needed during the following cycle, before resuming normal feed.
+The simulation is imperfect in that the instantaneous fuel composition is
+used rather than the composition at tiz end of the cycle. This alterns-
+tive is recommended when considerable excess fuel is available at the
+
+beginning of a cycle.
+
+ 
+5.2
+
+Second feed. For reactors with plutonium feed, where uranium is
+recovered at the end of a cycle but plutonium is not, there is an ad-
+vantage in switching to a uranium feed near the end of the cycle. To
+activate this option, enter the time in the cycle at which the feed is
+to be switched and specify the ERC number of the key nuclide of the
+second feed (e.g., 5, for 235U, for enriched urenium as second feed). Also
+specify the feed fractions for the second feed on cards A-21 to 3k.
+
+A-19 HISTRY Data
+
+Frequency of output. The frequency of output is determined dy
+specifying the number of timesteps ir a data storage interval. A fre
+quency of ance or twice a year is adequate for most of a typical cycle.
+However, the fuel composition usually changes rapidly at the beginning
+of a cycle, and the program provides for 12 times the normal {requincy
+of output at the beginning of a cycle, that is, data ance or twice a
+month. SHIFT specifies the total number of printouts at the higher fre-
+quency {starting with the first at time zero).
+
+Fertile buildup option. Certain fuel cycles are characterized dy
+a fissile inventory which starts at e high level and decreases. (me
+then has the option of starting with a lower fissile and fertile ine
+ventory and adding fertiie materisl with time instead of removing fissile.
+To exercise this option, specify the final fertile atam-density desired
+as TEMX, and enter a smaller atum-density for the initial value.
+
+A-19.)1 HISTRY Carrier Cost Control Infcrmalion
+
+Fuel carrier cost data sre usually part of the ERC input. The
+carrier cost in HISTRY is calculated from the ratio, carrier cost per
+kilogram of thorium purchased, which is calculated from ERC data as
+follows:
+
+YD, {sT(d,1)%(M))
+
+1=-I,NS
+M=NSC(T)
+
+sI(1,1)
+
+SCR = + W111)
+
+where
+SCR = the carrier cost ratio,
+5.3
+
+STI(M,1) = the inventory of carrier nuclide M in material 1,
+
+SI(1,1)} = the inventory of thorium in material 1,
+
+WL(I,1) = the cost per kilogram assigned to each nuclide,
+
+NSC(I) = the ERC numbers of the carrier nuclides specified on card
+4.15.1.
+
+£-21 AISTRY Nuclide Information
+
+The HISTRY subprogram is set up for a specific canfiguration of the
+ERC data as follows:
+
+Nuclides 1 to 12 in order are: =2Th, pg, 3y, Bey, 235), 236,
+257,238, 239py, 240py, 24lpy, ang 242py.
+
+HISTRY nuclide 13, fixed sbsorlers, corresponds +o the summation of
+ERC nuclides 13 to 50, except 25.
+
+HISTRY nuclide 14, fission products, corresponds to the summation
+of ERC nuelides 25 (lumped fission products}, 229 (1%Sam), and 231 (15iam).
+
+A-35 Atom Dens. ties by Materiai
+
+By convention, the fuel stream is material 1, the fertile stream,
+if any; is material 2, and the moderator, if any, is the last material
+specified.
+
+A-30 Super Region Subregion Correspondence
+
+The "super region” wes conceived as a convenient method of indicating
+The distribution of materials (that is, the volume fractions) ia regions
+of the 2-D reactor that do not lie on one of the calculational axes. It
+is convenient to assign subregions of identical composition the same
+super region number. (The same form of data is followed for a 1-D reactor,
+although the form then has no special utility.)
+
+A=) Croup Structure
+
+When only one therms) group is indicated, the upscatter treatment is
+shut off. We have noted that the use of multiple thermal groups with
+upscatier, although valuable in certain cases, results in increased
+running time by a facto: * 2 or more.
+5.4
+
+A-42 L3 MODRIC Convergence and Seerch Information
+
+A certain balance in the convergence requirements of the various
+sections of the code 1s essential to the efficient functioning of ROD.
+It is convenient wo use EPSL, the tolerance for Koper as a reference.
+Experience has shown that the ratio of the value of a given convergence
+criterion to that selected f£c~ EPSL Should be about as indicated in
+Teble 5.1. The recommended absolute value of EPSL of 1.0 X 107% is
+adequate for most single or "variables specified” cases, and gives results
+for the breeding ratio and fissile inventory consistent to about one part
+per thousand. It is sometimes necessary to tighten the convergence cri-
+teria for difficult optimization problems, because the direction of the
+optimization iepends on the ratio of the results of two very similar
+cases, and therefore may be very sensitive to slight imprecision in the
+
+individual casés.
+
+Tabls 5.1. Recommended Balance Among Convergence Criteria
+
+ 
+
+ 
+
+teput Card Namz Description esto tat
+EPSL
+A-43 EPSL Tolerance for kK rp 1.0
+AL2 EPSl Convergence on k_ ap 0.3
+AL2 EPS2 Convergence on fission density 3.0
+A-12 CTPL Tolerance, upscatter acceleration 1.0
+A-12 CDELT Convergence, upscatter acceleration 0.1
+B-2 CINVEG Convergence, ZRC atom densities 1.0
+B-4 SEPS Tolerance, MERC balance 10.0
+
+ 
+
+The balance between tightness of convergence and the running time is
+critical for optimizations. When the convergence criteria are set tight
+enough (say, 107° for EPSL) to get very precise derivative calculations,
+the running times become long. If set too loose (say, 10" for EPSL) the
+derivative calculations may became so imprecise as to direct an optimization
+5:5
+
+vector in a false direction. Optimizations usually run most efficiently
+
+at moderately tight convergence (near 10™% for EPSL).
+
+Two tricks’ are employed in ROD to save running time (refer to card
+A-12). We have found that optimization runs can be made efficiently with
+relatively looser convergence wren the convergence is tighter for the
+tare case. This gives a firm starting flux distribution for the first
+optimization case, whereas otherwise The flux distribution may tend to
+change over the first few cases even though the convergence criteria are
+satisfied. The other trick is tc loosen the convergence slightly for the
+first MERC iteration, since it is wasteful for the diffusion calculation
+to be tightly converged until it has received a set oi altered concen
+trations from ERC. To accommodate this provision, =nd-rto prevent MERC
+from stopping with a fortuitous balance while MODRIZ and ERC are not con-
+
+verged, the program requires a minimum of two MERC iterations per case.
+
+A-it3 MODRIC Search Information
+
+ 
+
+The value of dC/dk, the ratio of change in composition to change in
+K pp? is highly dependent on the reactor composition. The best guide
+Tor selecting an initial value is tc look at the final value calculated
+
+in a similar case (given as CPl in the output).
+ALL Criticality Search Nuclides
+
+It is usually more efficient to specify as search nuclides all the
+nuclides in whe fissile chain rather than just the main fuel nuclide.
+Specifically, those nuclides whose concentrations tend to vary with the
+concentration of the fuel nuclide should be included as search nuclides,
+while those nuclides which tend to reach an equilibrium concentration
+independent of the fuel nuclide should not be included. If such "in-
+dependent” nuclides are treated as search nuclides, they tend to cause
+the ecaleulation to oscillate between MCDRIC and ERC. Suspect this effect
+
+if more than three MERC iterations are required for convergence.
+A-L5 Two-Dimensional Synthesis Information
+
+The two-dimensional synthesis is described in Chapter 7, p. 7.6.
+By convention, for a 2-D synthesis in cylindrical gecmetry, dimension
+l is axial and dimension 2 is radial.
+5.6
+
+In the 2-D synthesis, there is a provision for adjusting the flux
+in the core to take into account neutrons which leave the core in the
+transverse direction. The region specified as "core" can only be the
+center region of the reactor. The computed net flow of neutrons out of
+this region (by group) determines a buckling for the calculation of
+transverse leakage" in the other dimension. The leakage neutrons may
+be distributed in proportion tc ths absorptions in as many regions as
+may be desired. These are the "transverse leakage distribution" regions
+
+and should always include the core region.
+
+A-46 Region Information
+
+ 
+
+A reascnable number of mesh spaces per region might range from 5 for
+a small region to 50 for a large region. Avoid large differences in the
+size of a mesh interval fram one region to the next. The running time
+is not very sensitive to the number of mesh spaces, and is moderately
+affected by the number of regions.
+
+The fission-density distribution is calculated over 111 regions
+
+specified as containing fissile material.
+A148 and 50 Shell Thicknesses and Attenuation Coefficients
+
+If desired, regions may be separated by "shells" in which the neutron
+current may be attenuated (refer to Appendix B).
+
+A-52 Buckling Option 1
+
+This cption calculates the buckling by group and region from the
+
+equations:
+Slab:
+2 _ Tt 2 n 2
+B” = (F= 55) * (= >
+Cylinder:
+2 _ pL 2
+B™ = (7 + 5) ?
+where
+
+¥,2,h = perpendicular dimensions of the reactor,
+
+ 
+DoT
+
+¥ = constant for calculating the extrapolation distance,
+
+D = diffusion coefficient, a function of group and region.
+A-55 MODRIC-ERC NWuclide Number Correcpondence
+
+The fissionatle nuclides (for which fission yields are given on
+
+card C-2) must be assigned ERC nuclide numbers in the range 1 to 15.
+A-58 Cross-Section Set Assigrment
+
+For many calculations the use of a single cross-section set weighted
+for the average flux-spectrum is adequate. However, Jor cases in which
+the flux-spectrum effects are different in different regions of the re-
+actor, cross sections appropriate to the various spectra can be prepared
+and assigned to the different regicns.
+
+B-1 ERC Data
+
+A "MERC iteration" is one pass through MODRIC and ERC. Typically
+two or three MFRC iterations are required for convergence. Normally,
+output is obtained for only the fing! iteration. For the purpose of code
+development, some of the ERC and HISTRY output may be obtained each ~
+iteration.
+
+The fission-product reference element must ~orrespond to an artifi-
+ciel element in MODRIC which has cross sections for a 1/v absorber with
+22% = 1.0. ~
+
+Some of the important fission products (e.g., ~*Sm) may be included
+explicitly in the multigroup diffusion calculation, if desired. To do
+this, select fission product option 2, list the nuclides in the MODRIC-
+ERC correspondence table, and include them on the cross-section tape.
+
+Such nuclides are edited separately by material in the second part of the
+ERC output table {output option 7), but are included in the lumped fission
+rreducts in the preceding summary neutron balance.
+
+Base-case cnly option. When this option is specified the progrem
+will stop after running the base case (case zero) even when the data deck
+is otherwsie set up for the cptimization or variablesespecified options.
+Tt may be used to check the base case before proceeding with, say, a long
+optimization run.
+5.8
+
+The processing study option substitutes a more sophisticated fission-
+product treatment for that normally used in ERC. It is described in
+Appendix D.
+
+Three processing cost options are availeble (refer to card B-24).
+
+For molten-salt reactors, the processing cost depends mainly on the volume
+of salt streem processed, and is, therefore, usually calculated on the
+
+"volume basis.”
+B-2 ERC Convergence and Other Data
+
+The atom-density damping/forcing coefficient is a factor by which the
+calculated change in atom density per iteration is multiplied. It is
+usually set less than 1.0 to dampen cycling of the ator densities from
+iteration to iteration.
+
+The limit cn the change in atom density permitted per iteration is
+used to help prevent cycling and to prevent atom densities from becoming
+negative. The limit is in effect for each ERC iteration after the first.
+
+The plant factor is defined as the anticipated energy production as
+a fraction of the energy that would be produced if the plant were operated
+continuously at full power.
+
+B~-3 ERC Residence Times and (Other Data
+
+The capital ¢o3T of a processing plant is assumed to be proportional
+to its capacity raised to a fractional power called the scaling factor.
+
+B-k Tolerance for MERC Convergence and Other Data
+
+The fission-product thermal spectrum factor is defined as follows:
+
+1
+W = ————
+7 298
+Me fp (F527)
+where
+Au = lethargy width of fast energy groups,
+T = temperature, °C.
+
+The limiting factor for change of the recycle fraction is used to
+dampen oscillations in ERC, and is applied in each iteration after the
+
+first.
+
+ 
+5.9
+
+RB-11 Processing Cycle Times
+
+A processing cycle time is the time reguired to process one system
+volume of a material. Processing may consist oF several steps, and each
+step can have its own cycle time. Usuaily the cost of processing can be
+related to one or two main steps, and these may have a processing cost
+
+factor, volume basis, assigned to them, as follows:
+
+PCV . =U (1-57)
+Io, n,j m,Jj ’
+
+where
+PCV = processing cost factor, volume basis,
+
+n = number of processing cycle time associated with a given
+
+processing step,
+j = material number,
+
+U = unit prceessing cost, dollars per cubic foot of meterial Jj,
+for processing step n in a reference plant,
+
+t = throughput, cubic feet of material j processed per dey in
+step n in the reference plant,
+
+SF = scaling factor. The capital cost of a processing plant is
+assumed to be proporticnal to its capacity raised to a
+fractional power, the scaling factor.
+
+Processing cycle time 1 is used as a reference cycle time for calculating
+the material holdup in the processing plant. Refer to Eq. (4.40),
+Appendix A.
+
+B-12 Processing Equations
+
+The removal rate of any nuclide in ERC is calculated for each material
+stream by the processing equation to which it is assigned. The removal
+rate is calculated from the cycle times for the processing steps in which
+it is removed. The cycle times that apply to each group eguation are in-
+dicated on the processing equation card by entering a 1.0 in the position
+corresponding to the number of each cycle time. For example, if the nu-
+clides in processing group one are removed from material one in processing
+
+steps 2 and L, the card for material one processing equation one should
+5.10
+
+have 1.0 entered in fields 2 (col. 16-21) and 4 (col. 28-33), which
+correspond to cycle times 2 and 4; “he other fields are left blank.
+
+B-20 Stream Data
+
+ 
+
+The code calculates the volume of each material in the reactor core.
+However, in a circulating-fuel reactor, a considerable volume of the fuel
+stream is outside the core in piping and Leat exchangers. To allow the
+code to calculate the true reactor inventories and inventory costs, the
+amount of such external volume for each stream may be entered here.
+
+In addition, if the stream is processed, the holdup time in the
+processing plant may be entered. The volume of the holdup is then calcu-~
+lated as a function of the reactor volume and the ratio of the holdup time
+to the reference processing cycle time (processing cycle time 1).
+
+Reserve fuel. If the reactor requires a fissile feed, a fuel reserve
+sufficient to feed the reactor for some period of time mey be included in
+the inventory. This is calculated from the net burnup (burnup less pro-
+duction) of the feed nuclide (see Eg. A.43, Appendix A.
+
+Fixed poison fraction. The strong fission-product poison 1°SXe may
+be treated as a special case in molien-salt reactors. It is insoluble in
+the salt, and is either removed by gas stripping or is absorbed by the
+graphite moderator. Its true removal efficiency is not easily determined.
+The problem has been side-stepped by assigning a removal efficiency of
+1.0 to the gas-stripping process, and adding a fixed poison-fraction to
+allow for the holdup of xenon in the moderator.
+
+B-21 Removal and Recycle Data
+
+The "removal efficiency” in processing may be defined as the product
+of E, the fraction processed per cycle, and SCE, the fraction removed (or
+lost, for nuclides which are recycled). Normally the removal efficiency
+is 1.0, and E and SCE are automaticelly assigned the value of 1.0. This
+value is not appropriate for gll nuclides, however, and other values may
+be assigned on cards B-2l. Some examples are:
+
+(2) Nuclides which are recycled (either back to the stresm fram
+
+which they were removed, or to another stream) such as the uranium nuclides.
+5.11
+
+They may be assigned an SCE of 0.0, or a small non-zero value representing
+the fraction lost per cycle in processing.
+
+(b) DNuclides which are only partially removed by processing. An
+appropriate removal fraction may be assigned.
+
+(¢) DNuclides which are removed in smaller side streams taken from
+another processing step. They may be assigned the appropriate processing
+fraction. (Alternatively, such nuclides may be placed in separate proces-
+sing groups, to which independent processing cycle times. can be assigned.)
+
+(4) To simulate batch processing. E values greater than 1.0 may be
+assigned to groups of fission products to simulate the greater removal in
+batch processing compared to continuous processing for the same cycle
+time. E values less than 1.0 may be assigned to nuclides such as the
+plutorniums, when, because of decreasing concentrations during a cycle,
+their removal at the end of a batch cycle is less thar would be obtained
+by continuous removal (based on their average corcentrations and the av-
+erage carrier discard rate).
+
+Recycle fraction. Any nuclide which, wholly or partially, is not
+removed in processing, presumebly remains in its original stream and is
+returned to the reactor. In the calculation this is considered recycle
+to the same stream, and the recycle fraction for a stream to itself is
+automatically set at 1.0. Similarly, the recycle fraction from one stream
+vo another stream is automatically set at 0.0.
+
+Sometimes it is essential to recycle certain nuclides from one stream
+to another, as in the case of a reactor with a separate fertile stream,
+cr blanket. The key to the high performance of such reactors is in the
+transfer of the fissile material bred in the fertile stream te a fuel
+stream. DNuclides to be so transferred must be assigned ERC nuclide numbers
+In the range 1 to 25, and their recycle fractions set appropriately on
+cards B-21. The permitted values for the recycle fractions are 1.0 and
+0.0. The lumped fission products may not be transferred.
+
+B-22 Feed, Atom-Density, and Recycle Options
+
+ERC works best when one nuclide, usually the most important fuel
+nuclide, is selected as the "key nuclide" for these options. It is
+
+normaliy assigned feed option 1, atom-density option 2, and one of the
+5.12
+
+recycle key-nuclide options 1 to 4. It is also usually a criticality-
+search nuclide ir MCDRIC. This selection allows MERC tc either feed cor
+sell the key nuclide, as required, as MERC converges on a solution.
+
+For a reactor with a breeding ratio near 1.0, we might wish to sell
+one nuclide if the reactor were a breeder, and feed another nuclide if it
+were not. In theory, MERC could do this, but in practice, because of
+imbalance in ERC, it may sell cone fuel nuclide while feeding the other.
+We recommend that a preliminary case be run to determine the breeding
+ratio, an! the key nuclide then be selected accordingly.
+
+When the EISTRY option is used, atom-density option 2 (criticality)
+may be specified for the key nuclide, but option O should be specified
+for the nother nuclides in the fertile-fissile chain. This will hold the
+atom densities fixed in ERC at the time-averaged values obtained from
+HISTRY.
+
+B-2% ERC Material-Balance Data
+
+ 
+
+Any nuclide for which one of the non-zero recycle options was speci-
+fied (card B-22) must be specified as its own processing source. In
+addition, =3>Pa should be specified as a processing source for 77,
+assuming that =U formed by the decay of 233Pa in the processing plant
+is returned to the reactor. The processing group number determines the
+processing equation applied to a given nuclide in each material. Note
+that the processing equations are material-dependent while the processing
+group assignments are not. The number of processing groups 1s limited to
+ten. The reference processing cycle time is applied to all nuclides for
+which no processing group number is specified.
+
+B-24 Value of Materials
+
+ 
+
+The value of each material may be specified (for the purpose of cam-
+puting inventory and replacement costs) by assigning a value to one or
+more nuclides in that material. A different value may be assigned to a
+nuclide in the system from the value assigned to the same nuclide as feed
+material. This allows, for example, that 2>°U be assigned a higher value
+as feed material than as a part of the fuel stream, where iti is contami-
+nated with =U.
+
+ 
+5.15
+
+Three copticns are available for computing processing costs. One,
+based on the volume of material processed, has already been discussed.
+The others are the welght-basis option, based on the weight of some
+nuelide or nuclides processed, and the capital-cost-basis option, based
+en the unit capital cost of the processing plant. (Refer to Eq. A.60,
+Appendix A). The options are selected merely by making the appropriate
+coefficient non-zero.
+
+The preccessing unit-capital-cost factor is defined, for a reference
+
+processing plant, as follows:
+
+(€)(1)
+U=———,
+QS
+where
+U = unit capital cost factor,
+C = capital investment, $,
+i = interest rate,
+Q = throughput of nuclide I, kg/day,
+s = scaling factor (refer to card B-3).
+
+D=1 Objective~-Function Coefficients
+
+The standard equation for the objective function is:
+
+C=aB+bY+ce/M+da/I + ef + fC+ g/d,
+
+where
+
+O
+n
+
+objective function,
+a,b,c,d,e,f,g = coefficients,
+
+B = breeding ratio,
+Y = fuel yield, percert of fissile inventory per year.
+M = fuel-cycle cost, mills/kwhr,
+T = specific inventory, kg fissile/MW(thermsl),
+F = flux factor,
+
+F —-F
+
+- kt
+1014
+
+F_ = allowable group-l flux; input on card D-2,
+
+ 
+5.1%
+
+EF, = @ maximum group-l point flux in the core, calculated
+in MERC.
+
+When (¥, - F) > 0, F is set to zero.
+
+C = conservation ccefficient,
+100(B-1)
+- 2
+12
+D = discounted fuel cost (from HISTRY), in mills/kwhr.
+
+D-2 Allowable Flux
+
+ 
+
+The allowable group-l flux may be specified as required to limit the
+fast-neutron damage to the materials in the Lore. Whenever the allowable
+flux is exceeded, the flux factor, a negative term, reduces the value of
+the objective function. The net effect is to srift the optimum to that
+set of conditions which gives the highest performance consistent with a
+peak flux exceeding the allowable flux by same margin which depends on
+the relative weight given the flux factor.
+
+D-6 Number of OPTI Cycles
+
+The number of OPTI cycles (gradient projections) should be set to
+stop the run before the rumning-time limit is exceeded. An OPTI cycle,
+or gradient projection, consists of the calculation of derivatives to
+determine a gradient vector, the taking of steps along the vector, and
+the calculation of the maximum of the objective function along the vector.
+When a run is stopped in the middle of a cycle, the information generated
+for that cycle is wasted. Specifying zero as the number of cycles will
+helt the calculation at the end of the base zase.
+
+D-7 OPTI Control
+
+Although 20 OPTI variables are allowed, there are good reasons for
+holding the number of variables as small as possible. The most obvious
+is to save running time. Less obvious but perhaps more important is a
+certain decrease in precision as the number of variables ic increased.
+This may be explained as follows: As steps are teken along a vector,
+
+we can think of the variables one by cone reaching their optimum values
+5-15
+
+and continuing on beyond, until the variables beyond their optima are
+balanced by those that have not reached their optima, and the objective
+function reaches its maximm. The greater the number of variables, the
+more likely that some of them will stop at some distance from their true
+optima. This effect can be countered by tightening the convergence
+criteria and reducing the step size , but, of course, at the expense of
+increasing the running time.
+
+When a variable reaches one of its limiting values, it may be held
+there for any specified number of optimization cycles. During these
+cycles, no derivative is calculated for the held variable and it does not
+
+affect the size of step of the other variables.
+D8 OPTI Control
+
+The minimum ATPHA is the mechanism which halts the step-reduction
+procedure. If a step reduction would result in an ALPHA less than the
+minimum, the reduction is not permitted and the optimization is terminated.
+The minimum ALPHA determines the "fineness" to which the optimum is lo-
+cated. In reactor calculations there is little incentive to locate the
+optimum with great precision, and the step reduction is often bypassed,
+or held to one reduction by the choice of minimum ALPHA.
+
+End-effect options. The end-effect is described in Chapter T, p.T7.15.
+End-effect option 1 applies a reduction in the ridge-analysis factor when-
+ever the derivative is negative, as well as whenever it changes sign.
+
+When this option is used, it may be advantageous to select initial values
+for the variables such that the initial derivatives are likely to be
+positive.
+
+End-effect option 2 is applied only after a normal first step has
+been unsuccessful. This must occur at least once at the end of every
+optimization. The variables with negative derivatives are then restrained
+(by a factor of 0.01) and steps are started along e vector determined
+essentially by the positive derivatives. The interval scan is omitted.
+Often, successful steps can be taker along the new vector. In general, we
+
+recommend the activation of end-effect option 2.
+5.16
+
+D-G Optimization Variable
+
+The sensitivity of an optimization to a given variable is influenced
+by the range assigned that verisble. The step factors ALFHA and BETA are
+defined as fractional factors of the range: therefore, when the range is
+large, the steps will be large and the resulting change in the objective
+function is likely to be large. The optimization works best when the
+change in the objective function is about the same for each variable —
+that is, when the "derivatives" are of roughly the same magnitude. Cften
+this is not the case. When the optimization is dominated by one or two
+variables, the "ridge effect” may result; that is, the path of the
+optimization jumps back and forth across a "ridge" as the valus of the
+dominant variable is alternately too high and toc low. The "parallel
+tangent" and "ridge-analysis"” techniques are used in OPTI to get around
+the ridge effect (see Chapter 7), but the optimization must run several
+cycles to accumulate the information required for these techniques. When
+the user knows from experience that a given variable will tend to dominate,
+the sensitivity of the optimization to this variable can be reduced by
+giving it a small range compared to the range of other veriables. However,
+a small range is not always practical. The range should be large enough
+to include, with high probebility, the optimum value of the variable
+(otherwise the entire run could be wasted). When the range cannot prac-
+ticelly be reduced, the sensitivity to a given variable may be reduced by
+assigning it a fractional initial ridge-analysis factor. The ridge-
+analysis factor is applied to both derivative and vector-step calculations.
+
+Frozen variable. If the minimum and maximum vaiues of a variable
+are set equal to its initiel velue, it becomes & "frozen" variable. No
+derivatives or other calculations are made for frozen variables. The
+frozen variable has two uses:
+
+(1) To remove a variable from the optimization, perhaps just for a
+particular run, without removing it from the edit of the variables.
+
+(2) To satisfy the requirement that the region thicknesses on either
+side of a boundary variable be variables, without increasing the number
+of active variables.
+6.1
+
+CHAPTER 6
+
+USER INFORMATION
+
+Control Cards
+
+Typical control cards for running ROD on the ORNL IBM 360/75 or
+360/91% computers are:
+
+//HFBR JOB (12073)4'Y~12 9104-2 H BAUMAN! ,MSGLEVEL=1,
+// CLASS=FsTYPRUN=HCLD4REGICKN=1536K
+//RO0 EXEC LINKNGO sPARNM&LINK=*LIST!,REGION.GO=1536K
+
+//LIMKLFT33F001 DD UNIT=TAPES ,LABEL=(,NL) yVOLUME=SER=33 X
+lf BISP=(CLD,PASS), b x
+// DCR=(RECFM=FBS,LRECL=BC,BLKSIZE=3200)
+
+F/7LINKSYSIN DD =
+
+INCLUDE FT33F001
+[=
+//G0.FTOSFO01 DD SYSOUT=A,DCB=(RECFM=FRAy LRECL=133,BLKSIZE=3458),C
+// SPACE=(3458, (2000) 4RL SE)
+//60.FTOSFO01 DO SYSOUT=A,DCB=(RECFM=FBA, LRECL=133,BLKSIZE=3458),
+// SPACE=(3458, (600) 4RLSE) |
+//GOLETCLFO01 DD UNIT=SYSDA:SPACE={TRK,{27)),DCB={RECFN=F 4BLKSIZE=50}
+//GO.FTO2F001 DD UNIT=TAPEQs LABEL=(yNL)s VOLUFKE=SER=2,D1$P=0LD, X
+77 BCB={RECSH=VB, LRECL=360CyBLKSIZE=2604)
+//GC.CRTTAPE OO UNIT=TAPESsLABEL=(sNL),DISP=0LDyVOLUME=SER=4S
+J/GOLFTIOFOC1 DD =
+I=
+77
+
+ 
+
+*When running on the ORNL/91, only two nine-track tapes are avail-
+
+gable; therefore, when plotting is required, the program must reside on
+disk.
+
+ror running with the program on tape. If the progrem resides on
+disk, the following cards should be used instead:
+
+//LINKL.FT33F001 DD VOLUME=REF=227217,DISP=SHR, X
+// bCB={RECFNM=FBSs LRECL=8C,BLKSIZE=3200)» X
+// DSNAIPE=AZ 4 G4 .P35614.C12073, BAUMAN. A
+
+°To omit detailed output, replace these two cards with the following:
+
+//GOFTOSFO01 DD DURNY
+
+ror plotting only. Otherwise, omit this card so that no plotting
+tape will be mounted.
+6.2
+The input/output devices are listed in Table 6.1. ROD requires a
+minimum core region allocetion of 120CK bytes (300K words).
+
+Table 6.1. Input/Output Devices Used
+for the ROD Program
+
+ 
+
+ 
+
+osioal Stepneme - ddname Use
+1 Gf. FTOLF001 Disk-scratch
+2 Gp. FTO2F001 Tepe or disk — cross section
+library
+4 Gf. CRTTAPE Tape, for plotting, © track
+8 G$.FTOSFO01 Auxiliary output
+9 G¢ . FTO9FO0L Standard output
+10 G@.FT10F001 Stendard input
+33 LINK.FT33F001 Tape or disk for ROD
+
+ 
+
+Cross-8ection Tape
+
+ 
+
+The cross-section tape used by ROD is in the same format as that
+used by the code CITATION.” This binary tape is normally prepared by the
+code XSDRN* but may be prepared from cards using the CITATION auxiliary
+program.
+
+The format for a cross-section set on the tape is given in Table
+6.2.
+
+The n,2n reaction, if any, is included in the fission cross section
+
+ 
+
+as follows:
+* true
+Op = Op + Cn, 2n 5
+L¥ true
+r = Vo + 2.0X Cn, on ;
+»*
+= “%f
+VES
+f
+where 0° and »" are reported on the cross-section tape.
+
+f
+6.3
+
+Table 6.2. Format of the ROD Cross-Section Tape
+
+ 
+
+Record
+
+ 
+
+Naber Variable Name Description
+1 (TPTIT(I),I=1,18)
+TPTIT 72 character title for set
+2 NTYFE,NTAPE,NGT,
+NDS,NUS
+NIYPE Not used
+NTAPE Number of nuclides in set
+NGT Number of energy groups in set
+NDS Not used
+NUS Not used
+3 (FUS(I),I=L,HGT),
+
+(ET(1),I=1,NGT),
+(EM(I),I=1,NGT)
+
+FUS |
+
+ET
+
+EM
+
+Fission source distribution function by
+
+group
+
+Upper energy of each discrete group
+(ev)
+
+Mean energy of each discrete group (eV),
+that is, the energy corresponding to
+the midpoint lethargy of the group
+
+Repeat records 4 and 5 for each nuclide.
+
+h
+
+NID,N2,N3,N:,
+NS, (AME(1),I=1,6),
+(TAB(I),I=1,60)
+
+5x5 2S RE
+
+Nuclide number
+
+Not used
+
+Not used
+
+Not used
+
+Not used
+
+24 cheracter nuclide name
+Not used
+6.4
+
+Table 6.2 (contd)
+
+ 
+
+ 
+
+Record . «i=
+Number Variable Name Description
+5 (ALA(IG),FISS(IG),
+ALTR(IG),FNUS(IG),
+DUMMY, IG=1,NGT),
+((mw(IG,L),1=1,NGT,
+I1G=1,NGT)
+ATA(IG) Absorption cross section for group IG
+FIss(IG) - Fission cross section for group IG
+ALTR(IG) Transport cross section for group IG
+FNUS(IG) Neutrons/fission for group IG
+DUMMY Not used
+PMU(IG,L) Total scattering from group
+IG to group L
+6 NEND
+NEND Closure record {==1)
+
+As many sets as desired may be included on the tape, but only five may
+be used by the ccde for any given case.
+
+ 
+€.5
+
+The “Be(n,d) cross section is treated specifically by MODRIC nu-
+clides number L and TO so that the buildup of ©1i from ®Be may be treated
+explicitly. For ®Be (MODRIC nuclide number L) the group 1 absorption
+
+cross section on the tape is given by
+
+ot(1) =o (1) + of _ (1) .
+
+n,zn
+
+We say that
+
+and create a MODRIC nuclide number TO such that
+
+679(1) = of (1) .
+
+n,o
+The cross-section tape must have nuclides number 4 and 70 on it, in
+
+that order, where the cross sections listed for nuclide TO are all zero.
+
+ROD Subroutines
+
+The subroutines in ROD, with their fumction and the location from
+which they are called, are given in Table 6.3.
+6.6
+
+ 
+
+ 
+
+Table 6.3. The ROD Subroutines
+Subroutine Called From Description
+A. Tnput and Calculation Subroutines
+
+MATN Control calculation.
+
+ZER@ MATN Zeroes common.
+
+SPLIT General input.
+
+PART2 SPLIT Diffusion calculation input.
+
+RPCS1 MATN Processes microscopic cross section tape.
+
+CIN MAIN Equilibrium calculation input.
+
+BTMZD ERCUT Converts the equilibrium material densi-
+ties to the form used by the diffusion
+calculation. (Entry point in CIN)
+
+MgD3C MATIN Diffusion calculation.
+
+CRSCH MgD8C Criticality search.
+
+RCSHN DPALL,MZDSC Performs & geometry-dependent region
+boundary correction on flux znd fission
+density integrations.
+
+SAMMY MZD3C Calculates k-effective for two-dimensional
+synthesis,
+
+ERCP MATN,MgDSC Argument = 0: Calculates ebsorptions,
+fissions, and neutrons produced by nuclide
+and region.
+
+Argument = 9: Two-dimensional synthesis;
+normalizes dimension one results to
+dimension two, and sets up the linkage be
+tween the diffusion calculation and equi-
+librium calculation.
+
+DPALIL MAT, MODSC Argument = 2: Computes region densities
+
+PART2 frox material densities.
+
+Argument = 3: Modifies densities after
+criticality search.
+
+Argument = -%: Corrects macroscopic cross
+sections after criticality search.
+
+Argument = 5: Calculates a complete set of
+macroscopic cross sections.
+
+Argument = 6: Calculates mesh end region
+boundaries.
+6.7
+
+Table 6.3 (contd)
+
+ 
+
+Subroutine Called From
+
+Deseription
+
+ 
+
+ERCM
+CYCIS
+
+ERCEUT
+
+HISTRY
+
+FLUX
+@UTSET
+EPSILN
+TIGHT
+SLACK
+BELL
+
+SET
+
+ERCM
+ERCM
+
+ERCEUT
+
+ERCM, MAIN
+
+Argument = 7: Fission density normalization.
+Equilibrium calculation.
+
+Recycle calculation.
+
+Fuelecycle and economics calculations.
+
+Time ~deperdent calculation.
+
+Argument = 1: Performs the linkage to the
+optimization routine. Calculates the
+objective function.
+
+Argument = 2: Performs the linkage from
+the optimization routine back to the dif-
+fusion-equilibrium calculation. Assures
+that the super region volume fractions
+sum to unity by modifying the final ma-
+terial (moderator) volume fraction. Re-
+calculates the diffusion volume fractions.
+Performs the boundary variable manipu-
+lation.
+
+Argument = 3: Calculates the region vol-
+umes and the equilibrium material volumes.
+Treats the processing equations by calcu-
+lating removal efficiencies.
+
+Optimization routine.
+
+Calculates true flux and aversge fission
+power density.
+
+Controls the output options in optimization.
+
+Multiplies all convergence epsilons by an
+input constant (varisbles-specified cases
+
+only).
+
+Divides all convergence epsilons by an
+input constant.
+
+Muitiplies all convergence epsilons by an
+input constant.
+
+Interfaces a special fission-product
+treatment.
+
+Stores a set of material densities, fluxes,
+and -fission densities for use at a later
+time.
+6.8
+
+Table 6.3 (contd)
+
+ 
+
+ 
+
+Subroutine Called From Deseription
+
+RESET MATH Restores the previously saved material
+densities, fluxes, and fission densities.
+(Entry point in SET)
+
+BOUND ALLDg Changes region thicknesses when the bound-
+ary variable option hes been specified for
+an optimization or varigbles-specified
+case.
+
+FIXQ CIN Input processing routine.
+
+BLPCK itializes CPMMPN/PRESET/.
+
+DATA
+
+B. Edit Subroutines
+
+EDOL SPLIT Edits nuclide number correspondence table.
+
+EDO2 SPLIT Edits super region subregion correspondence.
+
+EDO3 ALID@, SPLIT Edits super region volume fractions.
+
+EDO4 ALIDS, MAIN Edits region thickness, mesh spaces, cross-
+section set, whether fissionable, distance
+to start of region, and distance to end of
+region.
+
+E005 MATN its super region volumes and meterial
+volumes.
+
+EDOT MATIN,MZDSC Edits macroscopic cross sections.
+
+EDOS MATN Edits the material densities after the
+equilibrium calculation.
+
+EDO9 MATN,M@D3C Edits homogenized region densities.
+
+ED1C MATN Edits processing information.
+
+ED12 MATIN Edits group neutron balance.
+
+ED13 ERCP,MAIN Edits absorptions, neutrons produced, and
+fissions by nuclide and region.
+
+ED1h4 MATN Edits optimization summary table.
+
+ED1S MATN Edits total region absorptions, neutrons
+produced, fissions, and ratio of pro-
+duccions to absorptions.
+
+ED16 MATN Edits forward leskage, transverse leakage,
+
+absorption, fission, and neutrons produced
+by region.
+6.9
+
+Table 6.3 (contd)
+
+ 
+
+ 
+
+Subroutine Called From Description
+
+EDL7 SPLIT ¥dits plotting input options.
+
+ED18 SPLIT Edits diffusion calculation convergence
+and control information.
+
+ED20 MAIN Edits true flux, Tission density, and
+average fission power density.
+
+ED21 ED22, ERCAUT Edits short summary table of the eguilibe
+rium caienlation results. The table in-
+cludes breeding ratio, eta, vield, fuedl-
+cycle cost, fissile inventory and proces-
+sing losses.
+
+ED22 ERC@UT Fdits equilibrium calculation summary
+table.
+
+ED22E ERC@UT Edits equilibrium calculation summary
+table. (Entry point in ED22)
+
+ED23 ERCAUT Edits fission-product densities and absorp-
+tions for material one only.
+
+ED2k ERCP Edits input to equilibrium calculation
+
+from diffusion calculation. The table in-
+cludes densities, absorptions, neutrons
+produced, and fissions by nuclide and
+meterial.
+
+ED25 WLKEP Edits input for an optimization case.
+
+ED26 MATN Edits input for a varisbles-specified case.
+
+EDT ERCHUT Edits input to HISTRY from MERC.
+
+CguT CIN Edits input for ERC.
+
+GONE WLKEP Bdits debugging information for opti-
+mization.
+
+DIVID MATIN Controls case heading printout.
+
+FHLPR DIVID Prints case heading.
+
+BIFCK Initializes C@MMPN/LETTER/. Stores
+
+DATA characters to be printed.
+
+HI SPUT HISTRY Edits results from HISTRY.
+
+ 
+6.10
+
+Teble 6.3 (contd)
+
+ 
+
+Subroutine Called From Description
+
+ 
+
+C. Plotting Subroutines
+
+SETPLT MATIN Initializes plotting package.
+ELAPLT MATW Sets up the fluxes to be plotted.
+ADDTTY FLXPLT Puts additional heading on plots.
+PLTTRM MAT Terminates plotting.
+
+GEGPLT Never called Dummy subroutine.
+
+@PTPLT MATIN Dummy subroutine
+
+BPLATS FLXPLT
+
+BLAR BPLT
+
+XY BPLYT
+
+L3 BPL@T
+
+TITLE BPLYT
+
+LINE BPLYT
+
+LINSCL BPLYT
+
+HIST BPLYT
+
+CRTGRD RPLAT
+
+RANGE PLAT
+
+D. Additional System Subroutines and Functions Required
+
+ALGG BPL#T,RPCS1 Natural logarithm function.
+ALPG1O CRTGRD Commor. Logarithm function.
+CPs PART2 Cosine function.
+CRT BPL#T, CRTGRD,
+
+HIST, LINE,
+
+PLTTRM, SETPLT,
+
+TITLE
+CRTNUM™ ADDTIT,1G,XY
+CRTSYM ADDTIT,BPLAT,
+
+1G, LINE, TITLE
+
+EXP FERCM,MATN Exponential function.
+6.11
+
+Table 6.3 (contd)
+
+ 
+
+ 
+
+Subroutine Called From Description
+ICcLfcK CIN, ERCM, Returns CPU time in hundredths of seconds.
+ERC@UT , MAIN,
+MPD3C , WLKEP
+IDAY DIVID Returns the date as 8 EBCDIC characters.
+SLITE MATN,PART2 Alters status of sense lights.
+SLITET MATN Tests and records status of sense lights.
+SQRT ELSTRY Square root function.
+
+ 
+
+®Plotting routines for a CALCEMP model 835 cathode-ray tube plotter.
+T.1
+
+CHAPTER 7
+
+THEORY
+MODRIC~-ERC™
+
+MODRIC is a typical neutron-diffusion-theory code. It allows 50
+neutren energy groups with downscattering from a group to any of the
+following ten groups. IT has been modified in ROD, where only 15 energy
+groups are permitted, but where a multiple-thermal group treatment with
+upscatter has been added.
+
+It will perform concentration searches on specified elements. The
+output consists of critical concentrations, group macroscopic cross sec-
+tions, normalized nuclear events (absorptions, fission, leakage, etc.) by
+region and group, absorptions and fissions by material and region, group
+flux distributions, and fission density distributions. The basic MODRIC
+equations are given in Appendix B.
+
+Basically, ERC solves two main equations. They are:
+
+Wis 2
+
+= 9 ; + R,, + F,. + T,.+ D,
+
+V . .
+i] iJ iJ ij
+
+j at
+
+Equation (7.2) is just the conservetion requirement, saying that enough
+fissile material must be added (or removed) in iteration s to overcome
+the neutron production deficiency (or excess) in iteration (s-1). These
+
+are inner iterations in ERC. The terms are defined as:
+
+ 
+
+This section has been largely excerpted from Ref. 2.
+Subscripts:
+i=
+j=
+k =
+
+7.2
+
+volume of stream j, em”,
+
+atoms of nuclide 1 per barn cm of stream J,
+
+time, sec,
+
+feed rate of nuclide i into stream j, atoms/sec,
+
+rate of production of nuclide i in stream j due to recycle
+from other streams, atoms/sec,
+
+rate of production of fission fragment i in stream J,
+atoms/sec,
+
+rate of production of nuclide i in stream J due to neutron
+sbsorptions in other nuclides, atoms/sec,
+
+rate of production of nuclide i in stream J due to radio-
+active decay of other nuclides, atmms/sec,
+
+rate coefficient for loss of nuclide i in stream J because
+of neutron capture, atoms/sec/atom/tarn cm,
+
+rate coefficient for loss of nuclide i in stream j because
+of radioactive decay, atoms/sec/atom/barn cm,
+
+rate coefficient for loss of nuclide i in stream j because
+of processing removal, atoms/sec/atcm/barn cm,
+
+rate coefficient for production of nuclide i in stream Jj
+because of recycle from stream j, atoms/sec/atom/barn om,
+neutrons produced per fission in nuclide i,
+
+reaction rate coefficient, number of fissions in nuclide 1
+per atom/barn cm in stream j in region k per fission neutron
+born in reactor,
+
+reaction rate coefficient, number of absorptions in nuclide
+i per atom/barn cm in stream j in region k per fission
+
+neutron born in re=ctor.
+
+nuclide,
+stream, or material,
+
+region.
+
+The use of stream and region indexes allows reactors with two or more
+
+streams in the same region to be analyzed.
+7.3
+
+The sequence of ccmputations goes es follows. MODRIC, with trial
+velues of the N; 5» calculates absorption rates which are converted (in
+ERC) to the reaction rate coefficients, C; 5k These are used in Eq. (7.1),
+with specified feed and removal rates, to calculate new values of the
+N; 5° Equaticn (7.2) then indicates the adjustment to be made in the con-
+centration of a key fissile nuclide in order to restore the balance be-
+tween neutron productions and losses. Since this new concentration is no
+longer consistent with the solution of Eq. (7.1), an adjustment in feed
+rate, Q ; , or removal rate coefficient, 9 4s must be made and Eg. (7.1)
+solved again for a new set of N;5'ss s, which are then tested again in Eg.
+(7.2). This sequence of computations is indicated in Fig. 7.1. Note that
+an essential step in the ERC inner iteration, not shown on Fig. 7.1, is
+the adjustment of ; or % 45 by application of a single equation from the
+coupled set, Eq. (7. 1} with the adjusted N; 5 obtained from Eg. (7.2),
+prior to the next complete solution of the Systen of equations, Eq. (7.1),
+with the revised feed or removal rate.
+
+The equilibrium concentration calculations in ERC use reaction rate
+coefficients (Cs; x) obtained from an earlier MODRIC calculation. How=-
+ever, the inition concentrations used in the MODRIC calculation will not,
+in general, agree with the equilibrium concentrations computed by ERC.
+‘This new set of concertrations will alter the neutron spectrum and flux
+distribution, thereby changing the reaction rate coefficients. Therefore,
+it is necessary to repeat the MODRIC criticality calculation with the
+latest value for the estimated concentrations to get new reaction rate
+coefficients. This process is repeated until the MODRIC and ERC con-
+centraticns converge.
+
+The reaction rate coefficients (C 5) used in ERC are spectrum-
+averaged cross sections which are available directly from MODRIC. The
+MODRIC calculation gives As and VF. os the absorptions and neutron pro-
+ductions in nuclide i in region k, normalized to 1.0 total neutron pro-
+duced. The distribution of nuclear events between multiple streams in a
+region is accomplished by introducing the stream volume fractions, Lax?
+in this manner:
+T.4
+ORNL ING 64-3815
+
+First guess at concentrations
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+    
+  
+  
+  
+  
+
+§ 1 wom
+I |
+|
+| Calculate ed
+Is |
+1 Ne ves
+| [ Chenge Conc. |
+
+LT | ee
+
+ERC
+
+— EI concentrations | |
+{Calculate E—. to make kerr=1.0 |
+Do these two concentrations
+A agree? |
+No Yes
+
+ 
+
+ 
+
+= —
+
+Do MODRIC and ERC agree on all
+concentrations?
+
+Yes
+
+Is maximum number of
+iterations exceeded?
+
+ 
+
+ 
+
+meet
+
+Fig. 7.1. MERC Flow Diagram.
+7-5
+
+_ ,ratons of 1 in stream J in region Kk .
+Ask = %ik’ (Totoms of T In region & ) (7.3)
+
+atoms of i in stream Jj in region ky (7.14)
+
+= VF ( atoms of i in region k
+
+V: Fie = ViFix
+
+The multiplying factor in each term is
+
+ 
+
+atoms of i in stream j in region k N, ; Jk
+( ) = (7.5)
+atoms of 3 in region k ’
+
+where the units om these factors are
+
+N. . = atoms of i in stream Jj (7.6)
+ij barn om of stream j :
+
+ 
+
+2, - cm” 2 stream J in region k (7.7)
+cn of region k
+
+The nuclide, stream, and region dependent absorption and production terms
+
+are automatically transferred from the MODRIC link to the ERC link of
+
+the MERC calculation. ERC obtains the reaction rate coefficients (in-
+
+tensive quantities) from the absorption znd production terms (extensive
+
+quantities) by dividing by N; 5 , the stream concentration
+
+A,
+sx = = ’ (7.8)
+ij
+v. F,
+i "ijk :
+Yitisk = Eve : (7.9)
+
+‘The absolute reaction rate coefficient (cy 3c) is obtained in the ERC
+calculation using the total neutron production rate as determined by the
+reactor power
+
+Ci = CF ax X 3.1 X 10% p ¥ X 10=2% | (7.10)
+
+where
+7.6
+
+3.1 X 10%*©
+P
+
+v
+
+number of fissions/sec/megzawatt,
+
+power level in megawatts,
+
+average number of neutrons produced per fission =
+
+N,
+
+L My Cig
+ijk COC. (7.11)
+
+T
+N.. C.
+ijk td 1K
+A similar argument applies for the fission reaction rate.
+
+The ERC equations, including those for calculation of inventories
+
+and fuel-cycle costs, are given in Appendix A.
+
+Two-Dimensional Synthesis
+
+The two-dimensional synthesis in ROD is based on the assumption that
+for a symmetrical cylindrical reactor, the shape of the flux distribution
+in the axial direction everywhere is well represented by the flux distri-
+bution along the axis, end similarly that the shape of the flux distri-
+bution in the radial direction everywhere 1s well represented by a radial
+flux distribution at the midplane. The complete spatial flux distri-
+bution may then be inferred from two one-dimensional calculations, one
+along the axis and the other along & radius at the midplane.
+
+The two-dimensional synthesis is implemented in the MODRIC section
+of ROD as follows:
+
+Starting from an assigned initial flux distribution (e.g., cosice),
+a new set of fluxes and ncutron reaction rates is calculated, for the
+first neutron energy group, along the reactor axis. At each region
+boundary, the net transport of neutrons (for the group) across the bound-
+ary is calculated. The user may select an appropriate boundary (e.g.,
+that of the core region) where a buckling is calculated for use in the
+second dimension.
+
+Still for the first energy group, a new set of fluxes and reaction
+rates is calculated for the radial dimension. The radial fluxes are
+normalized to the axial dimension. The buckling cbtained from the first
+dimension may be applied to specified regions to calculate the transverse
+leakage or net transport of neutrons transverse to the line of calculation.
+TT
+
+The reactions of these neutrons are assigned to the various nuclides and
+regions in proportion to the reaction rates obtained for specified regions
+selected from the first dimension (the transverse leakage distribution
+regions). At the same time the net forward transport of neutrons across
+each boundary is calculated, from which an appropriate boundary may be
+selected for the calculation of a buckling to be used in the first
+dimension.
+
+MODRIC then performs the same calculations for each of the remaining
+energy groups in twrn. The reactions from the axial and radial calcu-
+lations including the transverse distribution reactions are summed and
+normalized to give the required fission rate. MODRIC iterations are cone
+
+tinued until the flux, fission density, and k__ . convergence criteria
+
+ff
+are met.
+
+OPTI
+
+ 
+
+The optimization routine (OPTI) is based on the method of steepest
+ascent. It permits up to 20 reactor parameters to be varied, within
+limits, in order to find a maximum (or minimum) in a specified objective
+function, calculated from the MERC output (see Chapter 5, paragraph D-1),
+It requires two links with MERC; one to transmit the values of the vari-
+ables to MERC at the start of the celeulation, and another to calculate
+and return to OPTI the resulting value of the objective fumction.
+
+Starting values, and ranges, defined by upper and Xcwer limits, are
+supplied for each variable. OPTI transmits the starting values to MERC,
+which runs a base-point case and returns the base-point result (value of
+the objective function). OPTI then changes the first variable by a small
+increment (ALPHA, a specified fraction of the range) and obtains a new
+objective function result from MERC to approximate the (partial) derivetive
+of the objective function with respect tc the first variable:
+
+2-2. 2
+i i
+
+where
+7.8
+
+0 = objective function,
+
+x = variable i.
+
+By this method, derivatives are calculated for each variable in turn.
+The derivatives determine the direction of a vector (in hyperspace) origi-
+nating at the base point and extending in the direction of the most rapid
+increase in the objective function, that is, the path of steepest ascent.
+OPTI now changes th= values of all the varigbles simultaneously in order
+to teke steps along this vector. The variable with the largest derivative
+is changed by a unit, (BETA, a specified fraction of its range), while
+each of the other variables is changed by a fraction of a unit, determined
+by the ratio of its derivative to the largest derivative. At the end of
+each step, a new value for the objective function is obtained from MERC.
+OPTI compares this value with the previous one; if it is greater, by a
+speciried increment, OPTI proceeds with another step; if not, a parabola
+is fitted to the last three points along the vector, and the maximum of
+the parsbola is taken as a new base point. If the value of the objective
+function at the maximum of the parabola does not exceed the value for the
+last successful step, the parabolic fit is rejected and the last successful
+step is taken as the new base point.
+
+Additional optimization cycles, like the one just described, are
+started from each new base point, until the increase in the objective
+function in the last cycle is less than a specified increment, or until
+no successful step 1s found in the cycle. OPTI can then declare the last
+base point to be the optimum, and terminate the search, or can reduce the
+size of the increments (ALPHA and BETA) and carry the search further.
+
+Reducing the size of the increments increases the precision of the
+optimization; in particular, the finite-difference approximation to the
+derivative approaches the true value as the increment ALPHA approaches
+zero. In practice, the precision of the optimization is limited by the
+precision of the calculation of the cbjective function; e.g., in ROD, bv
+the precision of the MERC calculation. The increments must not be reduced
+to the point that the vector calculations founder in the imprecision of
+the reactor calculations.
+7.9
+
+The steepest ascent method works very well for regular response
+surfaces; however, in many practical problems the response. surface forms
+a sharp ridge; the steepest ascent method is notoriously inefficient for
+such cases. beczuse the path of the search tends to zig-zag back and
+forth across the ridge. However, acceleration methods have been developed
+which handle such problems fairly well. Two acceleration methods avail-
+able in OPTI are the "psrallel tangent’ method and a method invented in
+the development of OPTIMERC called the "ridge analysis" method.
+
+Consider, for simplicity, a two-variable problem, so that the response
+surface can be represented b,” & contour map in which the x and y coordi-
+nates are the two variables, expressed as fractions of their range, and
+the contour height is the value of the objective function. For the case
+of a regular response surface, the maximum, or peak, is surrounded by
+nearly circular contours as shown in Fig. 7.2, so that a vector indicating
+the path of steepest ascent points toward the meximum. But suppose that
+the contecurs are elliptically elongated, forming a sharp ridge, as shown
+in Fig. 7.3. A vector indicating the direction of steepest ascent from
+any random point {except on the ridge) now points across the crest of the
+ridge rather than toward the peak. Consequently, the search path tends
+to zig-zag back and forth across the ridge, gradually working up toward
+the peak (vectors Vi to Vg, Fig. T.3).
+
+The "ridge analysis" method is based on the observation that the
+derivative, d0/dY, with respect to = dominating variable will change sign
+every time a vector crosses a ridge. If the Y component of the succeeding
+vector is decreased by a suitable factor every time ao/ay changes sign,
+the X componert beccmes relatively more important and the vectors {Ra to
+Rs, Fig. 7.k) tend to follow the ridge.
+
+The "parallel tangent” method is based on the observation that alter-
+nate base points tend to line up along a ridge. When this is so, a vector
+determined by two alternate base points will point toward the peak (vector
+P-, determined by base points Vz and Vy, Fig. 7.5).
+
+Both methods may be used similtaneously (vector RFs, determined by
+base points Rp and Ry, Fig. 7.6).
+
+The ridge-analysis method is "free", that is, it does not require
+that additional cases be calculated. The parallel-tangent method, since
+ 
+
+T.10
+
+ORNL-DWG 71-1887
+
+Vi
+
+END
+
+START
+
+ 
+
+Fig. T.2.
+Surface.
+
+Path of Hypothetical Optimization for a Regular Response
+ 
+
+Fig. 7.3.
+Surface.
+
+T.11
+
+ORNL-DWG 71-1888
+
+ 
+
+Path of Hypothetical Optimization for a Ridged Response
+7.12
+
+ORNL-DWG 71-1885
+
+   
+
+ 
+
+R, 7 = START
+R, # Vg, Va
+
+ 
+
+ 
+
+X
+
+Fig. 7.4. Path of Hypothetical Optimization Employing the Ridge-
+
+Analysis Technique.
+7.13
+
+ 
+
+ 
+
+<
+=
+-
+wv;
+x
+-<
+wn
+-
+Ed
+oo
+=
+<T =
+- w bt
+NN t
+oo
+=
+ES ow
+~~}
+pt
+L
+= 2
+— on
+
+Fig. 7.5. Path of Hypothetical Optimization Employing the Parrslel-
+Tangent Technique.
+ORNL-DWG 71-2566
+
+ 
+
+ 
+
+ 
+
+Xx
+
+Fig. 7-6. Path of Hypothetical Optimization Employing the Ridge-
+Analysis and Parallel-Tangent Techniques Simultaneously.
+7.15
+
+it employs an "extra" (P) vector not in the normal series, requires that
+at least one additional case be calculated tc determine whether any
+successful steps can be taker along the P vector.
+
+In ROD, the ridge-analysis method is used in calculating every vector
+after the first, and the parallel-tangent method is used to calculate
+"RP" vectors after every normal vector following the third. Experieace
+has shown that the RP vectors, although much of their work may have al-
+ready been done by the ridge-analysis method, are successful often enough
+to justify using both methods together.
+
+Another phenomenon, the "end effect”, occurs as the optimum is
+approached. It occurs because the approximation to the derivative is
+one-sided; that is, the increment is taken in only cme (the positive)
+direction. If a variable is at about its optimum value, irnuireasing or
+decreasing its value can only give a poorer result; therefore, the one-
+sided approximation to the derivative becomes negative as the optimum is
+approached, whereas the trne derivetive would approach zero. Toward the
+end of the optimization, often all the derivatives but one have beccme
+negative. The presence of one positive derivative means that one vari
+gble, at least, must have a more favorable value; it may be, however,
+that no successful step is fourd. This can occur when the variables with
+negative derivatives are actually at sbout their optima, so that stepping
+in either the positive or negative direction would be unfavorable. As
+the variable with the positive derivative is scepped toward its optimum,
+the others .tep off {heir optima, and the net :fect is an unsuccessful
+step. There are several theoretical solutions to this problem; the most
+obvious is tc use a two-sided approximation to the derivative. However,
+this would ouble the number of cases required to calculate derivatives.
+We have elected to provide two options that require no additional cases.
+The first is to apply the reduction in the ridge-analysis factor whenever
+the derivative is negative (in addition to whenever it changes sign).
+Thus variables with consistently negative derivatives are restrained more
+and more as the optimization proceeds. The other is to limit the move-
+ment of variables with negative derivatives (by a factor of 0.01) after
+a normal first step along a vector has been unsuccessful. This is done
+7.16
+
+instead of the interval scan described below. The procedure is bypassed
+when the derivatives are either all negative or all positive.
+
+Another procedure in OPTI, called the interval scan,is used when the
+first step along a vector is unsuccessful. It runs one or more cases
+along the vector in the interval between the base point and the first
+step, starting a factor of 0.6 from the base, to test whether the optimum
+might lie in this interval. If one or more successful steps are taken in
+this intervel, the usval parsbolic fit is applied; if not, the cycle is
+
+considered unsuccessf:il.
+
+HISTRY
+
+ 
+
+The premise of the HISTRY code is that a great amount of useful
+information can be obtained from a simple time-dependent reactor calcu-
+lation when a good set of average reaction rates are available for the
+principle nuclides in the fertile-fissile chain. HISTRY can give an
+approximation to the time-dependent fuel.cycle analysis of a reactor,
+adequate for many purposes (e.g., conceptual design studies) where the
+effort of a full space-energy-time dependent calculation mer not be
+Justified.
+
+HISTRY solves the time-dependent material.balance equations for the
+chain of 12 nuclides beginning with ®°2Th and ending with ®#%pu. All
+other neutron absorbers are lumped together into two groups; the fixed
+absorbers, mainly moderator, core structure, and fuel carrier nuclides,
+and the fission products. The fission products may be treated either as
+8 fixed poison, or as a poison which builds-in as a parabolic function
+during the cycle.
+
+The first step in HISTRY is a criticality search. The initial k,
+is adjusted so that k ee
+nizclides or mixtures of nuclides may be designated for feed or for sale
+‘depending on whether or not the reactor is breeding at the given time-
+step). After the critical concentrations are determined, the concen-
+trations of the other nuclides at the end of the time-step are calculated
+from the material-baslance equations. The above calculations are repeated
+
+ff
+will average 1.0 over each time step, Various
+
+for as many time-steps as specified over the reactor cycle. For the case
+7.17
+
+of batch processing, the reactor lifetime may be divided into several
+batch processing cycles. HISTRY calculates atom densities, inventories,
+neutron absorptions and productions, and purchases or sales for each
+nuclide as a function of time. The time-averaged atom densities are
+calculated and returned to MERC for the next iteration.
+
+The fuel and carrier costs are calculated by the discounted cash
+fiow method.
+9.1
+
+CHAPTER ©
+
+REFERENCES
+
+J. Replogle, MODRIC — A One-Dimensional Diffusion Code, USAEC Report
+K-1520, Oak Ridge Gaseous Diffusion Plant (Sept. 6, 1962).
+
+L. G. Alexander et al., The MERC-1 Equilibrium Reactor Code, USAEC
+Report ORNL-TM-847, Oak Ridge National Laboratory (Apr. 22, 196L).
+
+J. R. Copper and W. L. Kephat, Some Improvements in the Gradient
+Search Method of Optimization, USAEC Report K-DP-1063, Oak Ridge
+Gaseous Diffusion Plant (December 1965).
+
+T. B. Fowler and D. R. Vondy, Nuclear Reactor Core Analysis (Code:
+CITATION, USAEC Report ORNL-TM-2406, Osk Ridge National Laboratory
+(July 1969).
+
+N. M. Greene and C. W. Craven, Jr., XSDRN: A Discrete Ordinates
+
+Spectral Averaging Code, USAEC Report ORNL-IM-250C, Oak Ridge
+National Laboratory (July 1949).
+
+BR. Q. Wright, BPL@T, A Generalized Fortran Plot Package for the
+IBM 3éC, TIDBITS, Vol. 4, No. 6, June 1968.
+APPENDICES
+Subscripts
+
+Name
+
+"guEes en
+
+A.l
+
+Appendix A
+
+THE ERC EQUATIONS
+
+Description
+Nuclide number
+Material number
+Number of material fram which recycled
+Nuclide number, processing source
+Nuclide number, transmutation source
+Nuclide number, decay source
+Nuelide number of reference feed nuclide
+
+Delayed neutron group number
+
+Input Variabies (in order of appearance in equations)
+
+Name
+
+ 
+
+P
+CIMI
+MATS
+
+SCE
+GPTIME
+
+M655
+
+AMASS
+
+BETA
+AMA3
+B35
+B56
+XE21
+
+Description
+Power, MW(th)
+Initial atom density in material stream, atoms/barn cm
+Number of materials
+Fraction processed
+Fraction removed or lost in processing
+Processing cycle time
+Fission product yield
+Feed option
+Feed rate, kg/day
+Atomic weight
+Decay constant
+Atom-density option
+Delayed neutron fraction
+Delayed neutron decay constant
+Residence time, in core, sec
+Residence time, out of core, sec
+
+Fixed poison fraction
+A.2
+
+ 
+
+Name Description
+
+L22N1 Array, nuclide numbers of fertile nuclides
+
+12282 Array, nuclide numbers of fissile precursor nuclides
+
+122D Array, nuclide numbers of fissile nuclides
+
+L23D Array, nuclide numbers of fissile nuclides
+
+120N Array, nuclide mumbers of fissile nuclides
+
+LZ0N Array, nuclide numbers of lissile and fissile precursor
+nuclides
+
+L30D Array, nuclide numbers of fissile nuclides
+
+N2lL Array, nuclide numbers of fissile nuclides
+
+™ Holdup time in processing plant, days
+
+TR Operating time on reserve fuel, days
+
+F36 Plant factor
+
+E36 Thermal efficiency
+
+Value, in system, $/kg
+
+Interest rate, fraction per year
+
+Unit processing cost, weight basis, $/ke
+Processing plant unit cost, $
+
+gEIRS
+
+Processing cost, reference, volume basis
+B57 Scaling factor
+Value of feed, $/kg
+
+Si
+
+Computed Variables
+
+Neme Equation Description
+
+F 1 Fission rate, fissions/sec X 10%¢
+
+CIM 2,25,26, Atom density in material stream, atams/barn-em
+29-35
+
+CAP 3 Neutron capture rate
+
+CA Neutron absorption rate
+
+CF Neutron fission rate
+
+B Total neutron absorptions
+
+w™ Mean nu
+
+CN Neutron production rate
+ 
+
+noe Defining
+
+FVB 6
+
+S16 7
+
+R 8
+
+v
+
+SDC
+
+RCF
+
+TS
+
+FISS 9
+
+CRoL 10,12,13,
+2
+
+FRATE 11,1416
+
+TRSK 2h
+
+BDS 17
+
+PRS 18
+
+D 19
+
+TRAS 20-23
+
+FFFS 36
+
+BR 37
+
+ETA ps
+
+SI 29
+
+FI Lo,k1
+
+RSI 42,43
+
+T@TT Lh
+
+FISSI 145
+
+PL 46
+
+YIELD 47
+
+FRTE 48
+
+FRTEI 49
+
+PDRTE 50
+
+PDRAT 51
+
+PCRTE 52
+
+A.3
+
+Description
+
+Neutron balance, neutrons produced per absorption
+Total neutrons produced
+
+External recycle rate (recycle to material from
+other materials)
+
+Material volume, cm”
+
+Discharge concentration (SDC = CIM for fluid-fusl
+reactors)
+
+Recycle fraction
+= GPTIME(1l). Reference processing cycle time, days
+Fission product source
+
+Processing source (internal recycle)
+
+Feed rate, atams/sec
+
+Capture sink
+
+Decay sink
+
+Processing sink
+
+Decay source
+
+Transmutation source
+
+Fraction of fissions in material 1
+Breeding ratio
+
+Mean eta
+
+Inventory in reactor system, kg
+Inventory in processing plant, kg
+Inventory in reserve, kg
+
+Inventory total, kg
+
+Totel fissile inventory, kg
+
+Fissile loss in processing as fraction of burnup
+Fissile yield, percent of fissile inventory per year
+Feed rate, by material, kg/dey
+
+Feed rate, total, kg/day
+
+Production rate, by material, kg/day
+Production rate, total, kg/day
+Processing rate, by material, kg/day
+ 
+
+Nm ee
+FCRIEI 53
+PE36 5h
+FCIC 55
+FCICI 56
+
+RC 51,58
+RCI 59
+
+PC 60
+PCI 61
+
+Sv
+
+STS
+
+PCR 62
+PCRI 63
+FCC 6h
+ANDX 65
+ANDI 66
+RPIV 67
+CPIV 68
+TETAIT 69
+RSIV T0
+CALC T1-7k
+BCD Io
+
+Al 6
+
+A2 TT
+
+A3 8
+
+Al TS
+
+A 80
+
+Equations in ERCM
+
+Fission rate
+
+Ak
+
+Description
+
+Processing rate, total, kg/day
+
+Power, electrical, MW
+
+Inventory charges, by material, mills/kwhr(e)
+Inventory charges, total, mills/kwhr(e)
+Replacement charges, by material, mills/kwar{e)
+Replacement charges, total, mills/kwhr(e)
+Processing charges, by material, mills/kwhr(e)
+Processing charges. total, mills/kwhr(e)
+Material volume, ft°
+
+Processing cycle time, days
+
+Production credit, by material, mills/kwhr(e)
+Production credit, total, mills/kwhr(e)
+Fuel-cycle cost, mills/kwhr(e)
+
+Neutron absorptions, by material
+
+Neutron absorptions, total, normalized to ETA
+Neutron captures, total, normalized to ETA
+Fissions, total, normalized to ETA
+
+Total inventory, kg
+
+Processing removal rate, kg/day
+
+Calculated value for recycle fraction
+Processing source (external recycle)
+
+Decay source
+
+Decay and removal sink
+
+Burnup
+
+Transmutation source
+
+Net sink
+
+F = P*3,1E.8 (A.1)
+A.S
+
+Atom density
+CIM(I,J) = ciMi(I,J) ell I,J (A.2)
+Capture rate
+CAP(I,J) = CA(I,J) - CF(I,J) I <50 (4.3)
+Total neutron absorptions
+
+MATS N200
+
+B=) J CIM(I,J)*CA(I,J) (Ab)
+71 I=
+
+Mean nu
+
+MATS 20
+Y,  CIM(I,J)*CN(I,J)
+J=1 I=1
+= MATS 20 (4.5)
+
+YY, CIM(T,T)*CF(I,J)
+Jol I-1
+
+Reutron balance
+FVB = F*VM/B (4.6)
+
+Total neutrons produced
+
+Is 5
+
+2 CIM(I,J)*CN(I,J) (A.7)
+
+Oo
+
+S16 =
+
+WOVE
+
+1
+External recycle rate
+MATS IP(1,2)
+
+R[1,J] = V(JP)* SJP)* *(1.0-
+5 I )*SDC(IPC,JP)*E(IPC,JP)*(1.0-SCE(IPC, JP) )
+IPCLO
+*RCF(IPC,JP,J))/TS(IP)) (4.8)
+for IPCAI
+
+IPC=T end JPAJ
+A.6
+
+Fission product source
+13
+FISS(I,J) = FVB* p, CIM(LZ,d)*CP(1J,J)*¥(I,J)
+IJ=1
+I > 21 except 2b
+Feed rate and processing source equations:
+
+For M655(I,J) =O
+
+il
+
+CRG4 (I,J) = 0.0
+
+FRATE(I,J) = 0.0
+
+For M655(1,J) = 1
+If IP(1+1,1) =I
+
+I
+
+or
+If IP(I+1,2) = I ~~ CROL(I,Jd) = 0.0
+
+If IP(I+1,1)#1 and IP(I+1,2)#I
+
+CROL (I,J) = V(JI)*E(I,J)*(1.0-SCE(I,J))*RCF(I,J,J)/Ts(J)
+
+(4.9)
+
+(A.10)
+
+(4.11)
+
+(A.12)
+
+(4.13)
+
+FRATE(I,J) = CIM(I,J)*(TRSK(I,J +BDS(I,J)+PRS(I,J} - CRO4(I,J))
+
+- (r(z,J) + FISS(I,J) + TRAS(I,J) + D(I,J))
+
+For M655(I,J) = 2
+FRATE(I,J) = (Q(I,J)/AMASS(I))*6.9710648 E-3
+For M655(I,J) = 3
+FRATE(I,J) = Q(I,J)*FRATE(ISTAR(I,J),J)
+Beta decay sink coefficient
+"BDS(I,J) = V{(J)*AMBA(I)
+Processing removal sink coefficient
+
+PRS(I,J) = V{(J)*E(I,J)/Ts(J)
+
+(A.1h)
+
+(4.25)
+
+(A.16)
+
+~~
+>
+b=
+
+-J
+
+~
+
+(A.18)
+Beta decay source rate
+
+ID(I,2)
+D(I,T) = V(J) * ),  CIM(IDL,J)*AMBA(ID1) (2.19)
+ID1=ID(I,1)
+ID1£0
+Transmutation source rate
+I7(1,2)
+TRAS(I,J) = FVB * J, CIM(IT1,J)*CAP(ITL,T) (4.20)
+IT1=IT(I,1)
+IT10 I <50
+IT(I,2)
+TRAS(I,J) = FVB * J, CIM(ITL,J)*CA(IT1,T)  (A.21)
+IT1=IT(I,1)
+IT1£0 I> SC
+TRAS(223,J) = FVB*CIM(222,J)*CA(222,T)*0.47 (A.22)
+TRAS(224,J) = FVB*CIM(222,J)*CA(222,J)*0.53 (A.23)
+Transmutation sink coefficient
+TRSK(I,J) = FVB*CA(I,J) (A.24)
+Atom-density equations:
+For W(I,J) =0
+CIM(I,J) = CIMI(I,J) (4.25)
+For N(I,J) =1
+
+If M55(1,F) =1
+
+FRATE(T,J +R(I,J+FISS(I,J)+TRAS(I,J)+D(I,J)
+
+cmM(1,3) = TREE (L,J)+BDS(L, J J+ PRS (T, 7) CRE (1,7) === (a.26)
+
+If M655(I,J) £1
+If IP(I+1,1) =1I
+cr
+If IP(I+1,2) =I CROL (I,J) = 0.0 (A.27)
+A.8
+
+If IP(I+1,1) # I and IP(T+1,2) # I
+
+CROL (I,J) = TTP RLIH(10  SOB(L,T) RRL.)
+
+FRATE(T,J )+R(I,J )+FLSS(I,J +TRAS(Z,T)+D(I,J)
+
+CIM(I,T) = =x 7+ 50ST 3) Ens T,J )=CRO4(L,d
+
+For N(I,J) = 2
+
+ 
+
+MATS N200 MATS 50
+CIM(I,T) = CIM(I,T) + Z=L ZI=2 JI=1 II=1
+CN(I,T)
+
+For N(I,J) = 3
+CIM(I,J) = B*CIMI(I,J)
+
+For N(I,J) = &
+(Option for =°5U only)
+
+A31 = CIN(3,J)*CA(3,J)
+A51 = CIM(5,J)*CA(5,d)
+211 = CIM(1,J)*CA(1,T)
+Al = cM: ,T)*CA(L,d)
+42) = CIM(2,J)*CA(2,J)
+F31 = CIM(3,J)*CF(3,J)
+
+F351 = CIM(5,J)*CF(5,J)
+
+_A31L + AS] - All . AW] + A21 + A21
+FALE = SEES LV)
+
+ 
+
+UAL = 3.452E-3*P*F36%Q(I,J)*FAf16
+
+0.863EL*P*F36*CA(T, J)
+
+uB2 = 73)
+
+ 
+
+TAR = ISTAR(I,J)
+
+BT1 = UB2*TAR
+
+(4.28)
+
+(A.29)
+
+(4.30)
+
+(A.31)
+A.©
+
+_ x0 - EXP(~BT1)
+
+ETL
+UAl
+UAB = Gp5
+EIB = UAB - (Q(I,J)*(cMx(3,J) + CIMI(5,d))
+
+CIM(I,J) = UAB - (EX1*EIB) (4.32)
+
+For N(I,J) =5
+(delayed neutron nuclide)
+
+MATS [15
+Nn 1 >
+CIM(I,J) = B¥CA(T, J) * L | 2, cE CN(K,M)
+
+x 5 BETA(X, L)*(1.0-EXP(-AMA (L.)*B55) )*(1.0 - ZXP(-AMA3(L)*B56))
+AMA3 (L)*B55% (1.0-EXP{ -AMA5(L)* (B55 + B56) -
+
+ 
+
+I=1
+(4.33)
+For N(1,J) = €
+(fixed poison fraction)
+N21L(N21K)
+XE2L(F) * - CTM(X, J )*CA(X, T)
+K=N21L(21
+— A.
+CIM(T,J) = SCAT 7) (A.34)
+For N(I,J) = 7
+(lumped fission product)
+$0
+/, CIM(II,J)*CA(II,J)
+II=1
+
+CIH(I,J) = B%CA(T,T
+
+INE(II,J)#0 for fission products treated specifically in MCDRIC.
+A.10
+
+Equations in ERCPUT
+
+ 
+
+Freetion of fission in material 1 (fuel)
+
+ 
+
+ 
+
+ 
+
+N50
+2 CIM(I,1)*CF(1,1)
+FFFS = ima 5 (A.36)
+) Y CIM(I,J)*CF(I,J)
+J=1 1I=1
+Breeding ratio
+MaTs | L22NL (K22) 122N2 (K22N2)
+2 CIM(K,J)*CAP(XK,J) - >, CIM(K,J)*CA(X,J)
+sro I=L K=122N1(1) K=122N2(1)
+- MATS 122D(K22D)
+CIM(X,J)*CA(K,J) (A.37)
+J=1 K=122D(1)
+Mean eta
+4 = > (4.38)
+MATS 123D(X23D)
+CIM(K,J)*CA(X,J)
+
+J=1 K=L23D{(1)
+
+Material inventory in kg
+
+ 
+
+ 
+
+CIM(I,J)*V(J)*AMASS(I) I= A.
+SI(I1,J) = “553 J = 1,MATS (8.39)
+Processing inventory in kg
+T=1,16
+SDC(T,I)*V(J)*E(T,I)*TR(J)*AMASS(T) 7 _ yy
+pr(1,5) = BL TSITe00 J = LATS
+(4.40)
+Exception:
+
+If I =2 and IP(3,1) =2 or IP(3,2) = 2
+
+J)*E(2,J)*AMASS(2
+PI(2,d) = SDel2, 7) TIRE anss(2) $ ds (4.41)
+A.11
+
+it
+
+PI(I,J) = 0.0 J = 1,MATS
+
+Reserve inventory in kg
+
+SI(I,d) = oo) T = 17,N200
+
+ 
+
+RSI(I,J) = 0.0 I = 1,N200 if N(I,J; £2 (a.42)
+J = 1,MATS
+If N(I,J)=2
+0
+BL,2)
+FXVM * |CIM(I,J)*CA(I,J) - J, CIM{IX,J)*CAP(IX,J)
+eh B¥6C2.3
+
+* AMAS*1.1*TR(J) (A.43)
+
+Total inventory in kg
+TPTI(I,J) = SI(I,J) + PI(I,J) + RSI(I,J) (ALL)
+
+Fissicnable inventory in kg
+
+MATS L2ON(K29N)
+
+FISSI = Y, Y, SI(K,d) + PI(K,J) + RSI(K,J) (A.L5)
+J=1 K=I29N{1l)
+
+Processing losses
+
+MATS L30N(K30N)
+3 ie) * > SDC(K,J )*E(K,J)*SCE(K,J)
+PI, = J=1 X=130N(1) (A.46)
+MATS 1L30D{K30D)
+CIM{K,J)*CA(K,J)
+J=1 K=L30D(1)
+
+FXVM
+B
+Yield
+
+_ 37.8%VM*P*F36%(BR-1.0-PL)
+
+YIELD FTAYFISST (ALT)
+
+Feed rate ir kg/day
+
+FRTE{I,J) = FRATE(I,J)*AMASS(I)*143.4501 : = Tas (A.48)
+£.12
+
+MATS
+
+FRTEI(I) = J, FRTE(I,J) I= 1,N50 (A.49)
+J=1 -
+
+Production rate in kg/day
+
+PIRTZ(I,J) = EEL - SCE(I,J))* AMASS(I)*143.4501
+
+3
+* T (1.0 - RCF(Z,J,JP)) : - os (A.50)
+=1 7
+
+MATS
+
+PDRAT(I) = ), PDRTE(I,J) I=1,8%0 (A.51)
+F=1
+
+Processing rate in kg/day
+
+ 
+
+PCRTE(T,J) = SOL PULL EL VAN Pg (4.52)
+I = 1,850
+J = 1,MATS
+MATS
+FCRTEI(I) = J, PCRTE(I,J) I=1,50 (4.53)
+J=1
+Power, electrical
+PE36 = P*E36 (A.54)
+
+Inventory charges in mills/kwhr(e)
+
+0. L114 E-3*TPTT (I,J )*WL(I,J)*W2(I)
+
+ 
+
+FCIC(I,J) = Terr (4.55)
+I = 1,50
+J = 1,MATS
+MATS
+FCICI(I) = J, FCIC(I,T) I= 1,850 (4.56)
+
+Jd=1
+A.13
+Replacement charges in mills/kwhr(e)
+
+0.041 7*FRTE(I,J)*W5(I,J)
+
+ 
+
+RC(I,J) = F550 if M655(I,F) £0
+RC(I,J) = 0.0 if M655(1,J) =0 I =1,N0
+J = 1,MATS
+MATS
+RCI(I) = ), Ro(I,d) I = 1,850
+J=1
+
+Processing costs in mills/kwhr
+
+PCRTE(I,J)*W3(I,J)*0.0k1T
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+P(I,9) = PE36
++ We (I,J)*(PCRTE(I,J )*F36 }**R57%0,114E~3
+PESG*F30
+WINEW (I,J )*0.0417 | svi) I 2]
+* T5355 = Sh BST
+I = 1,850
+J = 1,MATS
+MATS
+PCI(I) = ), PC(I,d) I = 1,550
+Production credits in mills /kwhr(e)
+0.0417*PDRTE(T, J )*W2(I,J) I =-1,150
+PCR(I,J) = PES J = LMATS
+
+MATS
+PCRI(I) = ), PCR(I,J) I = 1,N50
+71
+
+(A.57)
+
+(4.58)
+
+(A.59)
+
+(4.60)
+
+(A.61)
+
+(A.62)
+
+(A.63)
+A.1k
+
+Fuel-cycle costs in mills/kwhr(e)
+
+MATS NSO
+FCC = ), y, FCIC(I,J) + RC(I,J) + PC(I,J) - PCR(I,J)
+Fl T=1
+
+Neutron absorptions
+
+ANDX(I,J) = CIM(I,JT)*CA(I,J)
+
+MATS
+ANDI(I) = ETA * ), ANDX(I,J)
+J=1
+Neutron captures
+MATS
+RPTV(I) = ETA * ), CIM(I,d)*CAR(I,J)
+J=1
+Fissions
+MATS
+CPIV(I) = ETA * ), CTM(I,J)*CF(I,J)
+=
+
+Total inventory
+
+MATS
+TPTALI(I) = », SI(I,J) + PI(I,J) + RSI(I,J)
+
+Processing removal rate, kg/day
+
+MATS
+
+(A.64)
+
+(4.65)
+
+(A.66)
+
+(4.67)
+
+(A.68)
+
+(4.69)
+
+RSIV(I) = L SDC(IL,J)*V(J)*E(I,J)*SCE(T,T)*AMASS(T)*143.4501/TS(J)
+
+Equations in CYCI8
+Recycle fractions
+
+If CAIC = 1.0
+
+RCF(1,1,1) = 1.0
+RCF(I,1,2) = 0.0
+RCF(1,1,3) = 0.0
+
+(A.70)
+A.15
+
+RCF(I,2,1) = 1.0
+RCF(I,2,2) = 0.0
+RCF(I,2,3) = 0.0
+RCF(I,3,1) = 1.0
+
+RCF(1,3,2) = 0.0
+
+RCF(I,3,3) = 0.0
+If CALC < 1.0
+
+M655(I,3) = 0
+
+If J655(1,3) = 1
+RCF(I,1,1) = CALC
+
+A(I,1) - BCD(I,2) - BCD(I,3)
+
+ 
+
+ 
+
+CALC = BCD(T, 1) (8.7)
+If J655(I,J) = 2
+RCF(I,1,1) = CAIC
+RCF(I,2,1) = CALC
+RCF(I,3,1) = CALC
+A(T,1)
+CALC = THOSE + BONE TRONS (72
+If J655(1,d) = 3
+RCF(I,3,1) = CAIC
+_ A(T1,1) - BCD(I,1) ~ BCD(I,2)
+CATC = BCD(Z,3) (A.T3)
+If J655(1,F) = 4
+RCF(I,2,1) = CALC
+RCF(I,3,1) = CALC
+_ A(T,1) - BCD(I,1) ’
+CALC = 5D(1,2) - BOD(E,3) (a7)
+Processing source
+IP(I,2)
+BCD(I,J) = SDC(LAL, J) *V(J)*E(LAL,J)*(1.0 - SCE(IAL,J)) (5.75)
+
+ 
+
+1AT=TP(1,1) TS(J)
+LALA
+A.16
+
+Decay source
+(1,2)
+AU(I,1) =), CIM(ID1,1)*V(1)*AMBA(TDL)
+
+ID1=ID(I,1)
+ID1{0
+
+Decay and removal sink
+
+SDC(I,1)*E(I 1]
+
+A2(I,1) = v(1)*[eni(r, 1) xama(T) + TS(1
+
+Burnup
+
+A3(I,1) = CA(I,1)*CIM(I,1)
+
+Transmutation source
+
+IT(1,2)
+A(I,L) =), CIM(ITL,1)*CAP(IT1,1)
+ITI=IT(I,1)
+IT1£0
+
+Net sink
+
+A(I,1) = FVB*(A3 - A) = AL + A2
+
+(a.76)
+
+(A. TT)
+
+(A.78)
+
+(4.79)
+
+(A.80)
+Appendix B
+
+BASIC MODRTC EQUATIONS
+
+The following description of the basic MODRIC equations is taken
+fram Ref. 1.
+
+The diffusion equation which describes the neutron flux o9(r,g) at
+a point r in the reactor within the energy group g has the form:
+
+ 
+
+VE(r,g) + R(r,g) &(r,g) + S(r,g) =0, (B.1)
+where
+. g+10
+R(r,g) = i. - 5, (B.2)
+g-1
+XP) + 2 MU é(r,i)
+g s = +g
+S(r,g) = ig-10 . ( .3)
+D(a)
+
+For the geometries here Vo = ¢” + £ ¢’ , where
+
+O fer a slab,
+1 for a cylinder,
+2 for a sphere.
+
+In order to state the problem in its entirety, it is convenient to
+change the notation so that the dependence of the variables and parameters
+on & particular energy group is omitted. Thus, the diffusion equation can
+
+P
+
+i
+
+be written:
+¢7(x) + 2 ¢/(x) + R(r) ¢(r) + 5(r) = 0 . (B.4)
+
+The boundary conditions at the origin (r = 0) and the outer boundary
+(r = Ry) are:
+
+ 
+
+*
+May include the extrapolated distance.
+B.2
+
+a$(0) + 2pD¢’ (0) = ¢ , (B.3)
+
+ap(Ry) + 2eD’ (Ry) = £, (8.6)
+
+vhere a, b, ¢, 4, e, and £ are parameters which can vary with the energy
+group.
+
+Another type of boundary condition occurs between regions at radius
+R.. This takes the following form for an interface with no shell:
+
+[6(R;) = 208" (R)]_ = [(R) — 20" (R)], (8.7)
+
+[6(R,) + 2D¢" (R)]_ = [$(Ry) + 2D¢’ (R)], , (8.8)
+where the - and + signs refer to values at the left and right of the
+interface respectively. An interface with a shell is a subregion from
+BR; to Ry with attenuation of the neutron currents given by the following:
+
+GROLA(R) — 2p¢’ (R)]_ = RO[6(R;) — 208" (Ry), (8.9)
+
+RLo(R,) + 200 (R)]_ = EEOIG(R,) + 208 (R,)], (8.10)
+
+Again, G and H can vary with energy group. The - and + signs refer to
+values to the left of Ry and the right of Rs respectively. We can use
+Egs. (B.9) and (B.10) for the special case of no shell by setting
+
+BR; = Rs- For continuity of the flux and current across the interface,
+
+G = H=1, but thic is not necessary if desired otherwise.
+3
+é(r,g)
+
+B.3
+
+Nomenclature
+
+Radial distance for a cylinder or sphere, longitudinal
+distance through a slab
+
+lethargy group index
+Neutron flux per unit lethargy at distance r in group g
+Macroscopic absorption cross section” for group g
+
+Macroscopic scattering cross section’ for heavy elements
+from group g to group 1
+
+Macroscople fission cross section in group g multiplied
+by the neutrons/fission
+
+Transverse buckling
+
+Iiffusion coefficient”
+
+lethargy width of group g
+
+Fraction of fission neutrons emitted in group g
+Fission density at distance r
+
+Removal term in diffusion equation
+
+Source term in diffusion equation
+
+ 
+
+*
+Assumed to be constant over a region, but can vary with g.
+C.1
+
+Appendix C
+
+FISSION PRODUCT TREATMENT
+
+The fission-product reaction rate coefficient is obtained by reference
+
+to a specified standard absorber:
+PRE (c.1)
+5B
+
+where
+ct = fission-product reaction rate coefficient,
+ck = reference material reaction rate coefficient,
+id = effective fission-product absorption cross section,
+FR = effective reference material absorption cross section.
+The effective cross section ratio is obtained from a two-group
+formulation:
+
+FP (0191/02 + a2) FF
+
+ 
+
+ 
+
+= - R (c.2)
+(6101/02 + Op)
+where
+, Uth
+J o,(u) du (RT)
+0, = fast absorption cross section = ° - 2 y
+Uth Uth
+Oo = absorption cross section averaged over the thermal flux,
+¢, = Fast flux,
+
+¢> = average thermal flux.
+For a two-group treatment, all neutrons removed from the fast group must
+either be absorbed or leak from the reactor while thermal:
+
+Eg $2 =Z, 62+ DB% . (c.3)
+
+Ignoring leakage,
+
+ 
+
+*
+This section has been revised from Ref. 2.
+5 = Zas!TR, . (C.%)
+
+Also,
+Oz =1 g2=00 ’ (C.5)
+
+where
+
+f = thermal spectrum factor = \& (22) for & Maxwell-~
+
+Boltzmann distribution,
+az =%° = 2200 m/s absorption cross section.
+Substituting Zgs. (C.2), (C.4), and (C.5) into (C.1l) gives
+
+(K(RD) + 62200)FF
+
+c* = cP , (C.6)
+
+ax
+
+ 
+
+where
+=
+aps
+r, ff oa
+a = (K(RI) + 02200 )%,
+
+K is calculated as foliows:
+K = WS,
+
+1 <
+W = F727 = imput
+
+5 Zo./%R, = value actomatically calculated by MODRIC for the
+composition being studied.
+
+The nuclear constants for a 1/v absorber with a 2200 m/s cross section
+
+of 1.0 barns are built into the code. Therefore, the reference element
+
+mest correspond to an artificial element in MODRIC which has cross sections
+
+for a l/v ebsorber with 02200 = 1.0.
+
+Certain important fission products may be calrulated explicitly by
+the mltigroup diffusion calculation in MODRIC, using fission product
+option 2. Cross sections for such nuclides must be provided in the usual
+format on the cross section tape.
+Appendix D
+
+THE PROCESSING STUDY OPTION
+
+An Alternative Calculation of Fission-Product Poisoning
+
+For some applications it is necessary to compute the fission-product
+poisoning using a model other than the first-order removal process con-
+sidered in the ERC calculations. An option has been provided in RCD with
+which it is possible tc call a subroutine, named BELL, to ve supplied by
+the user, to perform an alternative calculation of the lumped fission.
+product poisoning (refer to card B-l). If this option is designated,
+equilibrium concentrations will be computed in the ERC calculation for
+only those nuclides trested explicitly in the MODRIC diffusion calculation.
+When both the diffusion and equilibrium calculations have converged to
+within the specified limits for a given value of the limped fission-product
+concentration, the program will call subroutine RELL to obtain a new esti-
+mate of the lumped fission-product concentration. This subroutine is
+called with the following argument list: SUBRPUTINE BELL (C@NC, ABSRC,
+PR, Y, BAL, P8, SV, RIFAC, ALPHA, FCC, C@NCFP, ETA). The varisbles C@NC
+and ABSRC are each dimensioned for fifty values in the calling program
+end contain, using the ERC nimbering system, the atom densities, in
+atoms /fbarn-cm, and the relative sbsorption rates per unit atom density,
+gbsorption/ (fissile absorption-atom/barn-cm), for the ERC principle nue
+clides. The definitions of the remaining variables are:
+
+BR = breeding ratio,
+Y = fuel yield, percent per annum,
+
+BAL = ratio of two previous iterations of the converged
+equilibrium calculation,
+8 = reactor thermal power, MW,
+SV = fuel salt volume, ft,
+
+RIFAC = Tescpance integral factor, flux per unit lethargy/thermal
+flux,
+ALPHA = spectrum-averaged neutron cross section for a 1/v absorber
+whose 2200 m/sec cross section is 1.0 bern, barms,
+FCC = fuel-cycle cost, mills/kwhr(e),
+D.2
+
+C@NCFP
+
+H
+
+new value of lumped fission-product concentration computed
+by subroutine BELL, atoms/barn-cm,
+ETA = effective value of n€, neutrons produced/fissile sbsorption.
+
+With the exception of the variable CENCFP, the values of all the
+arguments are computed by ROD for use by subroutine BELL. RELL uses the
+information in the argument list, and an independent set of fission yields,
+decay schemes, thermal neutron cross sections, and resonance integrals to
+campute the fission-product inventories and poisoning for a given set of
+processing conditions. The individual fission-product poisonings are
+sumned, and this lumped fission-product poisoning is used to compute the
+concentration of tie reference 1/v absorber which would produce the same
+poisoning. This concentration is the value of the variable C@NCFP which
+is returned to the calling program in ROD. The diffusion and equilibrium
+calculations are repeated using the new value of the lumped fission-product
+concentration, and the process is continued until the lumped fission-
+product concentration from two successive iterations converges to within
+a8 predtermined relative error. At this point the entire process may be
+repeated for another set of processing conditions, or the calculations
+may be terminated. When using this option to calculate the poisoning by
+the lumped fission products it is necessary to remove the permanent fission
+product data from the ERC input and to specify atom-density option O on
+ERC input card B-22 for the lumped fission-product nuclide. This specifies
+that the value of the lumped fission-product concentration is not to be
+changed in the equilibrium calculation.

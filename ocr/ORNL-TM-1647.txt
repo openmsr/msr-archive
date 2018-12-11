@@ -1,0 +1,3896 @@
+   
+
+ 
+
+OAK RIDGE NATIONAL LABORATORY, $3c0 yp 50
+
+operated by 5a
+UNION CARBIDE CORPORATION
+NUCLEAR DIVISION EIT
+for the
+
+U.S. ATOMIC ENERGY COMMISSION
+ORNL- TM~- 1647
+
+CE
+
+COPY NO. - = 7,
+
+ 
+
+DATE - October 13, 1966
+Cos E/E /~RY
+EXPERIMENTAL DYNAMIC ANALYSIS OF THE MOLTEN-SALT
+REACTOR EXPERIMENT *
+
+RELEASED FOR ANKE T, W. Kerlin and S. J. Ball
+
+IN NUCLEAR SCIE
+
+KCE AESTRACTS
+ABSTRACT
+
+Dynamics tests were performed on the Molten-Salt Reactor Experiment
+(MSRE) for the full range of operating power levels to determine the
+power-to-reactivity frequency response. Three types of input disturbances
+were used: the pseudo-random binary reactivity input, the pulse reactivity
+input, and the step reactivity input.
+
+The frequency response of the uncontrolled reactor system displayed
+resonant behavior in which the frequency of oscillation and the damping
+increased with increasing power level. Measured periods of natural
+oscillation ranged from thirty minutes at 75 KW to two minutes at 7.5 MW.
+These oscillations were lightly damped at low power, but strongly damped
+at higher power.
+
+The measured results generally were in good agreement with predictions.
+The observed natural periods of oscillation and the shapes of the measured
+frequency response agreed very well with predictions. The absolute amplitude
+of the frequency response differed from predictions by a factor that was
+approximately constant in any test (though different tests at the same power
+level did not have the same bias). This bias difficulty is apparently partly
+due to equipment limitations (standard MSRE control rods were used) and
+partly due to uncertainties in the parameters in the theoretical model.
+
+The main conclusion is that the system has no operational stability
+problems and that the dynamic characteristics are essentially as predicted.
+
+ 
+
+#* Research sponsored by the U. S. Atomic Energy Commission under
+contract with the Union Carbide Corporation.
+
+For presentation at the Winter Meeting of the American Nuclear Society to be
+held October 30-November 3, 1966 in Pittsburgh, Pa.
+
+NOTICE This document contains information of a preliminary nature
+and was prepared primarily for internal use at the Oak Ridge National
+Laboratory. It is subject to revision or correction and therefore does
+not represent a final report.
+
+ 
+  
+
+ 
+
+10 THE ALC. Cig a0 0320 NicREl,
+J vif fot
+ 
+
+ 
+
+ 
+
+LEGAL NOTICE
+
+This report was prepared as an account of Government sponsored work, Neither the United States,
+
+nor the Commission, nor any person acting on behalf of the Commission:
+
+A. Makes any warranty or representation, expressed or implisd, with respect to the accuracy,
+completeness, or usefulness of the information contained in this report, or that the use of
+any information, apparatus, method, or process disclosed in this report may not infringe
+privately owned rights; or
+
+B. Assumes any liabilities with respect to the use of, or for damages resulting from the use of
+any informotion, apparatus, method, or process disclosed in this report.
+
+As used in the above, person acting on behalf of the Commission® includes any employes or
+
+contractor of the Commission, or employee of such contractor, to the extent that such employee
+
+or contractor of the Commission, or employee of such contractor prepares, disseminates, or
+provides access to, any information pursuant to his employment or contract with the Commission,
+
+or his employment with such contractor.
+
+ 
+
+ 
+
+4
+IT
+III
+
+Iv
+
+VI
+
+Vii
+
+VIII
+IX
+
+Appendix A.
+
+Appendix B.
+
+iii
+
+CONTENTS
+
+Introduction.sceserevessocsvsecarsscnsanes
+Description of the MORE. vesevececesaons
+Theoretical PredictionS.ceceecesssoscsnnsss
+A.
+B.
+Selection of Experimental MethodS..eesess
+
+A, Characteristics of the MSRE
+Regulating ROQeseeeaoesscocssonanss
+
+Description of Mathematical Model....
+
+Result vesecerscesssenossssasonsnssnse
+
+B. Test Signals Used in the Experiments.
+1.
+2.
+3.
+
+Experimental ProcedureSeecesesesccecsssns
+A.
+
+Pseudo-random Binary Test..ceees.
+Pulse TestSieeeevsacssrocaconanss
+
+Step TestSeeescossesensansnaronas
+
+Implementation of Pseudo-random
+Binary TestSeeeecesessonssseccnasns
+
+B. Implementation of Pulse and
+
+Step TestSueeeeasssssacesrorsecsonanss
+Analysis ProceduresScieecscesssssccssocenss
+A. Direct Analysis of PRBS TestSeecasses
+B. Indirect Analysis of PRBS TestSeaeees
+Cc.
+D.
+ResSUltSueseosessesssscscsensssscsoranccns
+A.
+B.
+C.
+
+Interpretation of the ResulisS.ceereseesee
+
+Step Response Test AnalysiSesescseees
+
+Pulse Response Test AnalysiSeeseecees
+
+Transient RespOnseS.sssseesscesseceses
+Correlation FunctionS.escessccessnenss
+
+Frequency RespONSeSeesscescscesscacss
+
+Reference Sieeesecescceevonssssscscssnensns
+
+Potential Sources of Experimental
+Error Due to Equipment Limitations...
+
+The Direct Method for Cross-~Power
+
+Spectrum Analysis..ceseeasnoasio TICE
+
+LEGAL
+
+.count of Gove
+eport Was prepared a8 an aceouw
+: T ure
+ates por the Commission nor an,
+<q, :
+A. Makes any w
+jetenesS,
+racy, compietent nes
+of ary information, apparaty
+privately owned rights: or
+wn, Assumes any liabiid
+B. 3 N
+use of any information, appal? =
+As used in the above, ‘PE
+ployee or contract
+such employee or
+disseminates, or pr
+with the Commissio
+
+y person acti
+
+5 the informa
+gefulness of A
+
+ow thod, or proce
+es with respect to the
+aus, method, °F pro
+n acting on be!
+ssion, or emp
+
+oe access y
+ovides acces! ¥ -
+n, or his employment with
+
+ng on behalf of
+
+arranty OF Teprese tion containe
+gs disclosed
+
+e use of, or for damag
+cess disclosed in this
+Commissio!
+h contractor,
+of such cont
+his employ!
+
+half of the
+1oyee of sul:
+or employee
+ation pursuant ©
+ch contractor.
+
+5
+SE a a
+
+10
+
+13
+
+13
+
+13
+13
+13
+7
+21
+21
+21
+22
+22
+32
+32
+45
+
+es re
+
+report. ~
+on’ includes any em
+“le
+
+I. INTRODUCTION
+
+A series of experiments was performed on the Molten Salt Reactor
+Experiment (MSRE) to determine the frequency response of the uncontrolled
+reactor system. Tests were performed at eight different power levels
+ranging from zero to full power. Three different types of input
+disturbances were used to obtain the nuclear power to reactivity
+frequency response: the pseudo-random binary reactivity input, the
+pulse reactivity input, and the step reactivity input. Subsequent
+sections of this report will give a description of the system, a
+review of previously published theoretical predictions, a description
+
+of the testing procedures, and the experimental results.
+II. DESCRIPTION OF THE MSRE
+
+The MSRE is a graphite-moderated, circulating-fuel reactor. The
+fuel is a mixture of the molten fluoride salts of uranium, lithium,
+beryllium, and zirconium.” The basic flow diagram is shown in Fig.
+
+1. The flows and temperatures shown are nominal values which were
+calculated for operation at 10 MW, but heat transfer limitations at
+
+the radiator currently restrict maximum power operation to about
+
+7.5 MW. The molten fuel-bearing salt enters the core matrix at the
+bottom and passes up through the core in channels machined out of
+unclad, 2-inch graphite blocks. The heat generated in the fuel and
+that transferred from the graphite raise the fuel temperature about
+50°F. When the system operates at reduced power, the flow rate is
+
+the same as at full power and the temperature rise through the core
+
+is smaller. The heated fuel salt travels to the primary heat exchanger,
+where it transfers heat to a non-fueled secondary salt before reentering
+the core. The heated secondary salt travels to an air-cooled radiator
+before returning to the primary heat exchanger. The design parameters
+of major importance from the standpoint of dynamics are shown in Table
+
+1. A detailed description of the MSRE appears in Ref. 1.
+2a
+
+ORNL-LR~DWG 56870
+
+  
+ 
+ 
+  
+  
+
+PRIMARY SALT
+
+LiF = 70%
+Bef, — 23%
+rfp — 5%
+They — 1%
+
+   
+
+SECONDARY SALT
+I LiF — 66%
+Bef, —- 34%
+
+    
+ 
+
+u Fs - 1%
+
+ 
+    
+
+REACTOR CELL
+
+  
+
+bt=—= == prallpedussh ml epeigelgalion weg | 300°F
+
+    
+ 
+
+AIR
+
+L_
+
+oe 167,000 cfm
+7! 100° F
+
+ 
+
+    
+
+SPARE FILL AND FLUSH COOLANT
+FILL AND DRAIN TANK TANK DRAIN TANK
+DRAIN TANK (68 cu ft) (68 cu ft) {40 cu ft)
+(68 cu ft)
+
+Fig. 1 MSRE Flow Diagram
+-3-
+
+Table 1. MSRE Design Data
+
+Nuclear
+
+Flow
+
+ 
+
+Heat
+
+Temperature coefficient of reactivity
+of the fuel, °F-1
+
+Temperature coefficient of reactivity
+of the graphite, °F-1
+
+Neutron lifetime, sec.
+Total delayed neutron fraction
+Reactivity loss due to fuel
+
+circulation, % 8K
+K
+
+Flow rate in the primary loop, gpm
+Flow rate in the secondary loop, gpm
+Fuel transit time in the core, sec.
+
+Fuel transit time in external primary
+loop, sec.
+
+Total secondary loop transit time, sec.
+Transfer
+
+Fuel salt heat capacity, MW sec/°F
+Graphite heat capacity, MW sec/°F
+
+Heat exchanger heat capacity, MW sec/°F
+
+Bulk graphite ~ fuel salt heat transfer
+coefficient, MW/°F
+
+Fuel salt-heat exchanger metal heat
+transfer coefficient, MW/°F
+
+Heat exchanger metal, secondary
+salt-heat transfer coefficient, MW/°F
+
+Fraction of power generated in the fuel
+
+“4.7 x 107°
+
+2.6 x 107°
+.00024
+.00666
+
+0.212
+
+1200
+830
+8.5
+
+16.7
+
+2h.2
+
+L.2
+3.6
+b
+
+0.02
+0.36
+
+0.17
+
+0.93
+TI.
+
+III. THEORETICAL PREDICTIONS
+
+A. Description of Mathematical Model
+
+Throughout the MSRE design effort, a wide variety of mathematical
+models was used to predict the dynamic behavior. We will limit our
+discussion here to the most up-to-date and detailed model reported,
+referred to in Ref. 2 as the "complete" model. The core fluid flow
+and heat transfer equations were represented by 18 fuel nodes and
+9 graphite nodes. The nuclear power distribution and the nuclear
+importances for each node were derived from a 2-group neutron diffusion
+calculation. The flow rates and heat transfer coefficients for each
+node were determined from calculations based on full-scale hydraulic
+core mockup tests. The assumed flow mixing characteristics were
+verified by transient tests on the mockup.
+
+The neutron kinetic behavior was described by the usual space-
+
+independent equations with six delayed-neutron groups, but with modi-
+fications to include the dynamic effects of the circulation of precursors
+around the primary loop. The thermal reactivity feedback was computed
+by using a weighted nuclear importance for each of the 27 fuel and
+graphite nodes. The xenon poisoning reactivity feedback included
+iodine production and decay into xenon, xenon decay and burnup, and
+xenon absorption into the graphite.
+
+The transport of molten salt in the primary and secondary loop
+piping was described by a plug flow model, where heat transfer to the
+pipes was included. The primary heat exchanger and the salt-to-air
+
+heat exchanger were each represented by a 50-node model.
+
+B. Results of Theoretical Analysis
+
+Several different methods of solution were used on the various MSRE
+dynamics models, including analog and digital computer simulation
+(time response), frequency response analysis, and pole configuration
+analysis. The frequency response analyses can be directly compared
+to the experimental results, since the latter are readily cast in
+this form.
+
+Fig. 2 shows the theoretical MSRE inherent frequency response
+ORNL-DWG 65-9816
+
+2
+
+10,000
+
+ 
+
+ 
+
+10
+0001 2 5 001 2 5 0.1 2 5 { 2 + 10 2 5 100
+FREQUENCY {radians /sec)
+
+90
+80
+
+70
+
+=I
+PHASE OF 75%
+
+60
+50
+40
+30
+20
+
+PHASE (deg)
+o
+
+NO FEEDBACK
+-70 mp
+
+ 
+
+-80
+00001 2 5 0001 2 5 00t 2 5 01 2 5 1 2 5 10
+
+FREQUENCY (radions/sec)
+
+Fig. 2 MSRE Theoretical Frequency Response
+-6-
+
+characteristics for normalized neutron level response to reactivity
+perturbations at several power levels. It can be seen that the system
+becomes more oscillatory at progressively lower frequencies as the
+nominal power level decreases, though it is stable for all power levels
+of interest. An explanation of the inherent stability characteristics
+
+is given in Ref. 2.
+IV. SELECTION OF EXPERIMENTAL METHODS
+
+The selection of the experimental methods for the MSRE dynamics
+tests was based on the information required and on the capabilities
+of the available equipment. It may be seen from Fig. 2 that the most
+significant part of the frequency response is in the range 0.01 to
+0.1 radians per second, since the amplitude peaks are in this frequency
+range for the operating power levels of interest. This frequency range
+corresponds to long periods of natural oscillation (10 min. to 1 min.).
+This emphasis on low frequency results fortunately made it possible
+to obtain the important part of the system frequency response using
+the standard MSRE control rods to introduce the input reactivity
+perturbations. In this section, we will examine the characteristics
+of the MSRE regulating rod and the properties of the test signals used.
+
+A, Characteristics of the MSRE Regulating Rod
+
+The MSRE has three control rods, each with an active length of
+
+59.4 inches. One rod is normally designated as the regulating rod and
+is used for fine control. The other two rods are shim rods used for
+coarse adjustments. The rods are actually flexible, stainless steel
+hoses on which are strung gadolinium oxide poison cylinders. The rods
+are mounted in thimbles which have two 30° offsetting bends so that
+the rods can be centrally located even though there was no room for
+the control rod drive assemblies above the central axis of the core.
+The maximum rod speed is ~0.5 inches/second.
+
+The three control rods are identical. Figures 3 and 4 show the
+control rod and: drive assembly. The position indication for each rod
+is obtained from two synchros geared to the rod drive mechanism.
+
+Synchro number 1 is used for coarse position indication and has a
+ORNL-LR-DWG 67511
+
+  
+       
+   
+ 
+  
+    
+
+REVERSIBLE DRIVE MOTOR
+
+SOLENOID ACTUATED
+RELEASE
+
+3in. CONTAINMENT TUBE
+
+ 
+
+COOLANT TO
+DRIVE UNIT POISON ELEMENTS
+SPACER
+Lar %n.0.0.-304 5.5.- FLEXIBLE
+LOWER HOSE CA
+SWITCH CABLE
+
+ 
+
+ 
+
+SPRING LOADED ANTIBACKLASH
+HEAD AND IDLER GEAR
+
+ 
+
+ 
+
+COOLANT EXHAUST
+
+GUIDE BARS,
+4 AT 90°
+
+ 
+
+ 
+
+Fig. 3 Control Rod Drive Assembly
+ 
+
+SYNCHRO NO. 2
+60° PER INCH OF ROD MOTION ==
+
+ 
+
+ 
+
+ 
+
+ 
+
+=-TAGHOMETER
+
+ 
+
+SERVO POTENTIOMETER
+
+ 
+
+ 
+
+ 
+
+MOTOR SYNCHRO NO. 1
+
+ORNL-LR~-0OWG 78808
+
+ 
+
+5°PER INCH
+
+-u— GEAR REDUCER NO.2
+
+ 
+
+ 
+
+BRAKE OF ROD MOTION
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ELECTRO-
+MAGNETIC
+CLUTCH
+
+ 
+
+ 
+
+ 
+
+   
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+GEAR
+REDUCER NO. {-==
+
+ 
+
+ 
+
+ 
+
+ 
+
+OVERRUNNING CLUTC!
+
+FLEXIBLE
+
+TUBULAR ROD SUPPORT —ae=i
+
+v=0.5 in./sec
+
+AIR IN
+
+{-TO-1 GEARS
+
+INPUT SPROCKET
+
+    
+  
+
+ 
+
+SPROCKET CHAIN
+
+REACTOR VESSEL
+CELL
+
+ 
+
+ 
+
+ 
+
+ 
+
+   
+
+le-THIMBLE | REACTOR CORE
+
+POISON ELEMENTS
+
+la—-TEMPERATURE ,~» 4400°F
+
+~= POSITION INDICATOR AIR
+FLOW RESTRICTOR
+
+ 
+
+\_/~=— AIR DISCHARGE - RADIAL
+
+PORTS
+
+Fig. 4 Diagram of Control Rod Drive
+~-O-
+
+sensitivity of 5° per inch of rod motion. Synchro number 2 is used
+for fine position indication and has a sensitivity of 60° per inch.
+The signal from the coarse position synchro is transmitted to a
+torque amplifier which drives a single-turn potentiometer feeding
+
+a d-c signal to the MSRE on-line computer.
+
+After the system had operated for some time, it became difficult
+to obtain reproducible regulating rod position changes for a given
+time of insert or withdraw. This was due to the wearing of this
+rod and drive assembly caused by frequent use. For the dynamics
+tests, one of the rods normally used as a shim rod was used as the
+regulating rod. Since it 1s moved much less frequently than the
+normal regulating rod, it had experienced less wear and had much
+tighter response characteristics.
+
+There are a number of factors which could adversely affect both
+the accurate positioning of the rods and the indications of effective
+rod position given by the instruments. Some of the potential sources
+of difficulty are listed in Appendix A.
+
+These observations indicate that the MSRE control rods are hardly
+ideally suited for dynamic testing. However, since no provision was
+made for special control rods and since the main features of interest
+occur at low frequency, the testing program was carried out using
+the standard MSRE control rods. Fortunately, the rods performed
+far better than expected by their designers, and the final results
+were only slightly degraded by equipment problems.
+
+B. Test Signals Used in the Experiments
+
+Three different types of test signals which were used to obtain
+
+the frequency response of the system are described in this section.
+
+(4)
+
+In this test, specially selected periodic series of positive
+
+1) Pseudo-random Binary Test
+
+and negative reactivity pulses called the pseudo-random binary
+
+sequence (PRBS) were introduced. The PRBS has the advantage that its
+frequency spectrum consists of a number of harmonics of approximately
+equal size. This means that the frequency response may be evaluated
+
+at a large number of frequencies in a single test. The spectrum of
+-10-
+
+the pseudo-random signal from one of the MSRE tests is shown in
+
+Fig. 5. We note that the signal strength is concentrated in
+
+discrete harmonic frequencies rather than distributed over a
+
+continuous spectrum as in the case of non-periodic (e.g. pulse and
+step) signals. This is helpful since it improves the effective signal-
+to-noise ratio at these frequencies.
+
+A PRBS may be generated on-line at the test or may be pre-recorded
+in some fashion and played back as a control signal. On-line
+generation of the signal was used in these tests (see Section V).
+
+A PRBS is characterized by the number of bits in the sequence and
+
+the bit duration. A bit is defined as the minimum possible pulse
+duration in the sequence. All pulses in a PRBS are minimum width or
+integral multiples thereof. Numerous sequences may be generated, but
+they are restricted to certain specific numbers of bits. In the MSRE,
+PRBS tests were run with 19, 63, 127 and 511 bits. If the number
+
+of bits is Z and the bit duration is At, then the PRBS has a period
+
+Z At. The lowest harmonic radian frequency, wos and the spacing of
+
+the harmonics, Aw, is given by w, = Ly = 2x « The PRBS tests which
+NE
+were run and analyzed are shown in Table 2. In each test, the rod
+
+motion was selected to give a reactivity change of 0.02% to 0.03%,
+peak to peak. The maximum reactivity perturbation was determined on
+the basis of keeping the resulting power level perturbations in the
+
+linear range, i.e. BN/N maximum was kept below 0.1.
+
+2) Pulse Tests ™)
+
+In theory, it is possible to excite a system with a single
+pulse-type disturbance and obtain the frequency resonse by numerically
+determining the ratio of the Fourier transform of the output to the
+Fourier transform of the input. The frequency response can theoretically
+be evaluated at all frequencies since the input has a continuous
+frequency spectrum. In practice, the pulse test is often unsatisfactory
+because the available signal strength is distributed over all
+frequencies, resulting in a small amount of signal around the analysis
+
+frequency and thus poor effective signal to noise ratio.
+Input Power Spectrum
+
+0 ORNL DWG. 66-11076
+
+10
+
+-1T-
+
+ 
+
+Frequency (radisns/sec)
+
+Fig. 5 Power Spectrum of the Input PRBS at 0.465 MW
+-12-
+
+Several tests using approximately square reactivity pulses of
+between 0.01 and 0.02% were employed for the MSRE at zero power.
+Tests were carried out both with circulating fuel and with stationary
+
+fuel.
+
+Table 2. DPseudo-Random Binary Sequence Tests
+
+ 
+
+Power Bits in Bit Periodicity of Minimum
+Levels (MW) Sequence Duration (sec) the PRBS (sec) Frequency
+(rad/sec)
+0 19 6.58 125 .05
+0 63 3.35 211 .03
+075 511 3.35 1711 0037
+465 511 3.35 1712 .0037
+1.0 511 3.35 1711 .0037
+1.0 127 5.02 638 .0098
+2.5 511 3.32 1699 .0037
+2.5 127 L.97 631 .010
+5.0 511 3.33 1701 0037
+5.0 127 4.97 631 .010
+6.7 511 3.32 1698 0037
+7.5 511 3.33 1701 0037
+Te5 127 4.97 631 .010
+
+3) Step Tests(®)
+If the output eventually levels off to some constant value
+
+after a step disturbance, the frequency response may be obtained by
+a modified Fourier analysis of the output and the input. As with the
+pulse tests, the step input has a continuous spectrum, but is hampered
+by a low effective signal-to-noise ratio at any analysis frequency.
+
+Step tests were used at power levels where the temperature feedback
+was adequate to cause the power to level off near the original power
+after the reactivity change. These tests used a reactivity perturbation
+
+of 0.01 to 0.02%. Step tests were done at 2.5, 5.0, 6.7, and 7.5 MW.
+-13-
+
+V. EXPERIMENTAL PROCEDURES
+
+A. Implementation of Pseudo-random Binary Tests
+
+The pseudo-random binary reactivity sequence required a very
+precisely controlled series of regulating rod insertions and with-
+drawals. Since the frequency range of interest was from about 0.002
+to 1.0 radian/sec., the rod jogger was designed so that sequence with
+a bit time of 3 to 5 seconds could be run for as long as 1 hour. The
+rod jogger system, which required no special-purpose hardware,
+consisted of a hybrid computer controller shown schematically in Fig.
+6. The portable EAT-TR-10 analog computer was used to control the
+bit time and the rod drive motor "on" times for the insert and withdraw
+commands. The MSRE digital computer was programmed to control the
+(3)
+The number of bits in the sequence could be varied over a range between
+3 and 33,554,431 bits.
+
+The rod jogger system performed extremely well, as it was able to
+
+sequencing of the pulse train by means of a shift-register algorithm.
+
+position the rod with an indicated positioning accuracy of about
+
++0,01 in. (corresponding to +0.0005% 8k/k) out of 1/2 in. peak-to-peak
+rod travel for over a 500 insert-withdraw operations. A typical PRBS
+rod position signal is shown in Pig. 7 and a typical record of neutron
+flux changes during a PRBS test is shown in Fig. 8.
+
+The analog computer was also used to amplify and filter the rod-
+position and power-level signals prior to digitizing. Throughout the
+dynamic tests the MSRE computer was used in the fast scan mode to
+digitize and store the data on magnetic tape. Each variable was
+sampled at the rate of 4 per second.
+
+B. Implementation of Pulse and Step Tests
+
+The same set up as described in (A) was used for the pulse and
+
+step tests with the PRBS generator omitted.
+VI. ANALYSIS PROCEDURES
+A, Direct Analysis of PRBS Tests
+
+The "direct" method of analysis uses a digital computer simulation
+
+of an analog filtering technique for obtaining cross-power spectral
+
+(6)
+
+density functions. A block diagram of the analyzer is shown in
+14a
+
+ORNL-DWG 66-4763
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+PSEUDO-RANDOM
+BINARY SEQUENCE
+COMPUTATION
+
+PORTABLE ANALOG MSRE DIGITAL
+COMPUTER COMPUTER
+
+me = —————————n
+
+| EAI-TR-10 | BR-340
+
+1
+
+| BIT-TIME | |
+
+GENERATOR | |
+
+|
+
+| UY
+
+|
+
+|
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+TIMER
+
+ 
+
+ 
+
+|
+INSERT MOTOR !
+ree ref] " "
+RO VE I" wiTHDRAW ON
+|
+| |
+| ROD-POSITION
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+SIGNAL
+| AMPLIFYING tt DIGITIZER AND
+re AND | MAGNETIC TAPE
+[ROD T™ FILTERING 1 RECORDER
+POWER-LEVEL | |
+SIGNAL
+rr Jo —
+
+ 
+
+ 
+
+ 
+
+REACTOR
+
+ 
+
+ 
+
+Fig. 6 Block Diagram of MSRE Rod Jogging and
+Data Logging System
+Indicated Control Rod Position
+
+ 
+
+ 
+
+Low-Pass Filtered (Filter Transfer Function = = ORNL DWG. 66-1107
+[CESUEL WEEL BUCUE uf (Flt ARAOTTARAE uf FURIE ur EIS HEHE ELLE
+EG ERLE RE WG amie RGAE Ri La
++ > > - - »
+
+Kapsed Time (min.)
+
+Fig. 7 Indicated Control Rod Position During a 511 Bit PRES Test
+NUCLEAR POWER, % OF 1.5 Me
+
+42
+
+38
+
+34
+
+30
+
+26
+
+22
+
+=16=
+
+ORNL-OWG 66-4764
+
+ 
+
+ 
+
+ 
+
+ 
+
+4.47 8.34 12.514 17.09 21.26 25.43
+TIME ( 30-min FULL SCALE)
+
+Oo
+
+Fig. 8 Measured Flux Signal During a 511 Bit PRBS Test
+
+29.60
+-17~
+
+Fig. 9. The narrow band-pass filter H(s) has the characteristics of
+
+a quadratic lag and a transfer function
+
+S
+
+ 
+
+H(s) = 5
+w +28 w s+ 8
+0 o
+where ® is the center frequency of the filter. Typically
+the damping factor & is set equal to 0.05, giving a filter frequency
+regponse as shown in Fig. 10. This analyzer is similar to that
+
+(7)
+
+described by Chang and Van Deusen’ ; the main difference is that
+it includes extra cross-multiplication terms resulting in higher
+accuracy. A mathematical description of the method is given in
+Appendix B.
+B. Indirect Analysis of PRBS Tests
+
+The indirect analysis began with a calculation of the
+autocorrelation function of the input and the cross-correlation function
+
+of the input and the output
+
+T%
+1 i
+Cy) =z J I(t) Te ver) a
+cl?) = J I(t) o(t + 7) at
+where
+c, (x) = the autocorrelation function
+
+the cross-correlation function
+
+Cy5(7)
+
+7 = the lag time
+
+T* = the integration time (a multiple of the signal
+
+I(t) = the input signal periodicity)
+0(t) = the output signal
+t = time
+-18-
+
+ORNL-DWG 66-10283
+
+ 
+
+in oft)
+
+—_— G(s) rma
+
+ 
+
+ 
+
+ 
+
+MN svsTEM TO BE ANALYZED
+
+ 
+
+ 
+
+in Mish Yo
+
+wv
+
+MA (+ 2 wf] PSO,
+
+2s LT : L Toor
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0]
+0! Hishy RB
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+His), * NARROW BAND-PASS FILTER WITH CENTER FREQUENCY wu,
+
+Gla) = COPOWER(s) + } QUAD POWER(s)
+PSD; (s)
+
+Fig. 9 Block Diagram of Cross-Power Spectral Density Analyzer
+-19-
+
+10 ORNL-DWG 66-10635
+
+S
+52 +2 Lwgs t wy?
+
+5 H(s) =
+
+PLOT SHOWN FOR { = 005, w, =1
+
+Oo ~n
+
+MAGNITUDE RATIO |H(s)]
+nN a
+
+o
+
+a
+
+ 
+
+wag
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+PHASE (deg)
+oO
+
+he \
+NS
+
+001 2 5 Of 2 5 10 2 5 10 2 5 100
+
+w/w
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 10 Frequency Response of Filter Used in CPSD Analyzer
+~20~
+
+Subsequent Fourier analysis of c,, (7) and C,5(7) gave the input
+
+power spectrum and the cross power spectrum:
+
+5
+—
+~~
+=
+hg
+|
+H
+
+T
+J, c (7) cos a 7 dt
+
+T T
+2 (x) =F J, C,5(7) cos qT dT - = J C,5(7) sin © 7 dt
+
+d (0) = input power spectrum at frequency, wy
+
+cross power spectrum at frequency, a
+
+<
+£
+i
+
+@ = angular frequency of the kth harmonic (ay = 5 )
+
+T = periodicity of the test signal
+
+Note that the input power spectrum is a real quantity since c,,(7) is
+always an even function of Tt.
+
+The frequency response, G( Jay) 5 is given by
+x [Tc (7) cos wT dt
+. T Jo "12
+Re [G( jay )] = i
+
+1
+5 J c,,(7) cos 7 dt
+
+ 
+
+ 
+
+1
+
+= C i d
+Tin[6( joy) ] - TI J; 15(7) sin WT T
+1
+T
+
+T
+J c,,(7) cos wT dt
+
+The magnitude ratio, MR, and the phase, ©, are given by:
+
+ 
+
+(a) = (Relo(in) DE + (1, [6(In) 1)
+oq) [Glow ))
+ola) = von” fear)
+
+A Fortran computer code for the IBM-7090 or IBM-360 called caps(9)
+
+was prepared to carry out these computations.
+-21=-
+
+C. Step Response Test Analysis
+
+The step response tests were analyzed using a digital computer code
+which implements Samulon's method, (9710)
+D. Pulse Response Test Analysis
+
+Although pulse response tests were attempted at power levels
+of ~ 0, 75 KW, 465 KW, and 1 MW, the only successful runs were the
+ones made at zero power. This was because the low frequency random
+fluctuations in heat load at low (but non-zero) powers drastically
+reduced the signal-to-noise ratio. At these powers, the radiator is
+cooled primarily by natural convection and radiation, and is consequently
+sensitive to atmospheric disturbances. At higher powers, where most
+of the cooling was due to forced convection, these fluctuations were
+not apparent.
+
+The zero power tests required extremely accurate core temperature
+control and rod positioning in order to avoid drift of the flux level.
+Since a zero power reactor is an integrating system, a pulse reactivity
+input results in a change in steady-state flux output, and Fourier
+transforms are valid only if the response function eventually returns
+to its initial value. We got around this problem by first numerically
+filtering the output response data through a high-pass network HP(s)
+with a transfer function
+
+_ 50s
+HP(s) = 50s + 1
+
+then performing the numerical Fourier transform, and finally compensating
+the resulting frequency response for the high-pass filter characteristics.
+The numerical Fourier transform calculations were done by a digital
+
+(11) which is mathematically equivalent
+
+computer code using a novel method
+to the standard technique of summing the products of f(t) ¢ cos wt and
+
+f(t) * sin wt, but which reduces the computing time by a factor of 3.
+VII. RESULTS
+
+The experimental data were analyzed to give correlation functions,
+input power spectra and cross power spectra, and frequency responses.
+
+These results are given in this section along with the directly observable
+-PPa
+
+transient response to system disturbances.
+A. Transient Responses
+
+At each power level, a transient was induced by inserting a
+reactivity pulse or step, or by simply allowing the system to seek
+equilibrium after the completion of some other test. These transient
+responses are informative in themselves since they demonstrate the
+damping and the natural frequency of oscillation of the system.
+
+Figure 11 shows the observed transient response. At 0.075 MW,
+it took over two hours for the flux to return to equilibrium.
+B. Correlation Functions
+
+The pseudo-random binary tests were analyzed by the direct method
+and the indirect method. Autocorrelation functions of the input and
+cross correlation functions of the input and output were obtained as
+intermediate results by the indirect method. The correlation functions
+had the expected appearance in all tests until the 2-1/2 MW tests.
+
+In that test, spikes appeared in the correlation functions which
+
+have been present in all tests since then. The spikes always appeared
+at points 432 sec. from each end of a period in the 511 bit tests
+
+(~ 1700 sec. period), and 34 sec. from each end in the 127 bit tests
+
+(~ 630 sec. period). Figures 12 through 19 show typical autocorrelation
+functions and cross-correlation functions for tests before the 2-1/2 MW
+test and after the 2-1/2 MW test.
+
+The reason for the appearance of the spikes is not yet known. The
+only significant difference noted in the input signal at 0.465 MW and
+at 2-1/2 MW was a change in effective pulse duration for positive and
+negative pulses. At 0.465 MW, the duration of a pulse above the mid-
+point was the same as the duration of a pulse below the midpoint. At
+2-1/2 MW, the duration of pulses below the midpoint was longer than
+the duration of pulses above the midpoint. This was apparently due
+to changes in the coasting characteristics of the rod. Calculations
+were performed on pseudo-random binary sequences in which the pulse
+duration was changed for positive and negative pulses to determine
+whether this would cause spikes in the autocorrelation function.
+
+These calculations showed spikes for some sequence lengths but not
+for others. In particular, spikes were not found in these calculations
+
+for a 511 bit sequence. The conflicting indications furnished by
+POWER CHANGE (%)
+
+ 
+
+0075 MW
+
+ORNL-DWG 66-10284
+
+ 
+
+ 
+
+ 
+
+7.5 MW
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2 4
+
+6 8 10
+
+Fg. 11
+
+12 14 {6 18 20 22 24 26 28 30 32 34 36
+TIME (min)
+
+MSRE Power Level Transients
+Autocorrelation Function {Arbitrary Units)
+
+ORNL DWG. 66-11078
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+° 400 800
+
+Correlation Time (sec)
+
+Fig. 12 Input Autocorrelation Function for & 511 Bit
+PRBS Test at 0.465 MW
+Cross-Correlation Function (Arbitrary Units)
+
+ORNL DWG, 66-11079
+
+ 
+
+ 
+
+ 
+
+v
+
+ 
+
+ 
+
+ou x Ex Xx FA x
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+400 800 1200
+
+Correlation Time (sec)
+
+Fig. 13 Cross-Correlation Function for a 511 Bit
+PRBS Test at 0.465 MW
+
+1600
+
+-Go-
+Autocorrelation Function (Arbitrary Units)
+
+Oo
+[ XxX =X x x x x ” x = Tr yr yr rrr
+
+ORNL DWG. 66-11080
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+-9g=
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+160 320 480 640
+
+Correlation Time (sec)
+
+Fig. 14 Input Autocorrelation Function for a
+127 Bit PRBS Test at 1.0 MW
+Cross-Correlation Function (Arbitrary Units)
+
+ORNL DWG. 66-11081
+
+ 
+
+FR]
+
+rd
+
+ 
+
+ 
+
+ANNAN HN XN KX HK wx x x2
+
+faacerosaeeronds!
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Xx® om ox |x x x
+
+ 
+
+ 
+
+ 
+
+160 320 480
+
+Correlation Time (sec)
+
+Fig. 15 Cross-Correlation Function for a 127 Bit
+PRBS Test at 1.0 MW
+
+640
+
+=) z=
+Autocorrelation Function (Arbitrary Units)
+
+ORNL DWG. 66-11082
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+400 800 1200
+Correlation Time (sec)
+
+Fig. 16 Input Autocorrelation Function for a 511 Bit
+PRBS Test at 2.5 MW
+Crose-Carrelation Function (Arbitrary Units)
+
+ORNL DWG. 66-11083
+
+ 
+
+ 
+
+ 
+
+x XX NX
+
+ 
+
+xn x NM
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+400 800 1200
+Correlation Time (sec)
+
+Fig. 17 Cross-Correlation Function for a 511 Bit
+PRBS Test at 2.5 MW
+
+Yn
+Autocorrelation Function (Arbitrary Units)
+
+ORNL DWG. 66-11084
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0 160 320 480
+
+Correlation Time (sec)
+
+Fig. 18 Input Autocorrelation Function for a 127 Bit
+PRBS Test at 2.5 MW
+
+6h0
+Cross-Correlation Function (Arbitrary Units)
+
+ORNL DWG. 6656-11085
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+wx x
+xn gx” x x
+x
+
+wr
+
+sox *
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+160 320 u8o
+
+Correlation Time (sec)
+
+Fig. 19 Cross-Correlation Function for a 127 Bit
+PRBS Test at 2.5 MW
+
+640
+
+=TC-
+~32~
+
+these calculations have not yet been resolved. However, we should
+note that this unexpected feature of the correlation functions does
+not invalidate the final result, the frequency response. It simply
+means that the spectral properties of the input and output are slightly
+different than anticipated, but that the ratio of cross power spectrum
+to input power spectrum still gives a valid frequency response.
+C. Frequency Responses
+
+The results of the frequency response analyses are shown in Figures
+20 through 28. The legend in each figure indicates the type of test
+and the analysis procedure. The theoretical curves were taken from
+
+(2)
+
+corresponded to available calculations. The curves for the other cases
+
+previously published results when the experimental power levels
+
+were obtained using the same procedures as were used to obtain the
+
+(12
+
+the random noise in the neutron flux signal are also shown with the
+
+published results. Results obtained by Roux and Fry ) by analyzing
+zero-power results. These results were normalized to the theoretical
+results at 9 rad/sec. These points were obtained by taking the square
+root of the measured power spectral density (PSD) of the neutron flux
+signal after subtracting the background PSD. This gives a result which
+is proportional to the amplitude of the flux-to-reactivity frequency
+response, assuming that the observed noise is the result of a white
+noise reactivity input.
+
+The natural period of oscillation of the system was determined
+either by direct observation of a transient or by location of the peak
+of the frequency response. These results, along with theoretical
+
+predictions, are shown in Fig. 29.
+VIII. INTERPRETATION OF THE RESULTS
+
+The objectives of the dynamic testing program are twofold: 1)
+provide information on the stability and operability of the system;
+2) provide information for checking procedures for making
+theoretical predictions so that future calculation on this and other
+similar systems will be improved. The results are interpreted in
+
+terms of these two objectives.
+ORNL-DWG 66-10286
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+10?
+ZERO POWER
+5 19 BIT PRBS DIRECT ANALYSIS @
+19 BIT PRBS INDIRECT ANALYSIS A
+63 BIT PRBS DIRECT ANALYSIS A
+2 63 BIT PRBS INDIRECT ANALYSIS ¥
+7 sec. PULSE, TEST NO. ! v
+103 7 sec. PULSE, TEST NO. 2 o
+NOISE ANALYSIS o
+5
+Lm
+By, ,
+102
+5
+2
+10'
+0.001 0005000 002 005 Qf 02 O05 10 20 50 100 200 500 1000
+w, FREQUENCY (radians/sec)
+20 ORNL—DWG 65-8907A
+ZERO POWER
+10 | 19 BIT PRBS—DIRECT ANALYSIS A
+0 19 BIT PRBS—INDIRECT ANALYSIS @
+63 BIT PRBS—DIRECT ANALYSIS v 4
+-10 163 BIT PRBS—INDIRECT ANALYSIS Vv 111
+-20 | 7 sec. PULSE, TEST NO. | o Jol] o
+> 30 7 sec PULSE, TEST NO. 2 A ed NN
+2 Laon N
+A 4 a of
+w —40 J TR co
+on Aw v Y we
+§ so ydErecnR aly
+-60 |”
+=-70 pd ©
+[vd
+»d o
+-80 —
+-90 A” 4
+-100
+0.004 0.04 od 1 10
+
+w, FREQUENCY (radians/sec)
+
+8N/N
+Fig. 20 Frequency Response of or at Zero Power;
+Fuel Circulating ©
+ORNL-DWG 66~-10708
+
+ZFRO POWER
+
+T-Scc Pulse, Test No. 1
+T-Sec Pulse, Test No. 2
+3-1/2-Sec Pulse, Test Nn. 3
+3-1/2-Bec Pulse, Test No. 4
+
+Ncise Analysis
+
+ 
+
+Proquency a, red/sec
+
+ORNL -DWG 65-8909A
+20
+
+PHASE (deg)
+
+ZERO POWER
+
+7sec PULSE , TEST NO. | e@
+7 sec PULSE , TEST Nu. 2 A
+3.5 sec PULSE ,TESTNO. 3 24
+3.5 sec PULSE ,TEST NO. 4 ©
+
+ 
+
+0.001 0.01 0.1 1.0 10
+w, FREQUENCY ( radians /sec)
+BI/N
+Fig. 21 Frequency Response of TKK at Zero Power;
+Fuel Static
+PHASE (deg)
+
+ORNL-DWG 66-4767
+
+POWER LEVEL 0.075 MW
+511 BIT PRBS DIRECT ANALYSIS O
+511 81T PRBS INDIRECT ANALYSIS ©
+
+THEORETICAL
+
+ 
+
+0.001 0.002 0.005 0.04 0.02 0.05 Od 0.2 05 1.0
+FREQUENCY (radions /sec)
+
+ORNL-DWG 66-4768
+
+50 POWER LEVEL 0.075 MW
+5/1 BIT PRBS DIRECT ANALYSIS @
+511 BIT PRBS INDIRECT ANALYSIS O
+
+THEORETICAL
+
+ 
+
+0
+
+-70
+0001 0.002 0005 0.0f 0.02 0.05 0. 0.2 05 1.0
+
+FREQUENCY (radians /sec)
+BN/N
+Fig. 22 Frequency Response of ; Power = 0.075 MW
+BK/K
+ 
+
+-36-
+
+ORNL-~-DWG 66-4769
+
+10?
+POWER LEVEL 0.465 MW
+
+511 BIT PRBS DIRECT ANALYSIS O
+
+5 511 BIT PRBS INDIRECT ANALYSIS O
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2
+8N/n, THEORETICAL
+8 /ko
+10°
+5
+2
+102
+0.00! 0.002 0.005 001 0.02 0.05 Of 0.2 0.5 1.0
+FREQUENCY (radians /sec)
+ORNL-0OWG 66-4770
+60 1 T T TTTTTT { T— 1 1 11
+50 POWER LEVEL 0.465 MW 11
+S11 BIT PRBS DIRECT ANALYSIS ©
+40 511 BIT PRBS INDIRECT ANALYSIS O [|
+30 1
+20 .
+10
+= THEORETICAL
+® 0
+x
+& -10 - \ ff ode Ce
+I -20 5 + At - Ad 4 H-
+a 1
+-30 de Np fee bo . . Lo. TR
+-40 o a og ~~ °
+[nl 0
+50 le AE |
+- Sho
+o o¢°
+-60
+-70
+-80
+0.000 0002 0005 001 002 005 Of 0.2 0.5 1.0
+FREQUENCY (rodians/sec)
+SN/N
+
+0
+Fig. 23 Frequency Response of ; Power = 0.465 MW
+oK/ XK,
+-37-
+
+ORNL-DWG 66-4771
+
+POWER LEVEL [.0 MW
+
+127 BIT PRBS—DIRECT ANALYSIS a
+{27 BIT PRBS—INDIRECT ANALYSIS O
+511 BIT PRBS—DIRECT ANALYSIS ©
+5!1 BIT PRBS—INDIRECT ANALYSIS O
+
+ 
+
+ 
+
+ 
+
+Wyo | 2 SAMPLING INTERVALS :
+to INDIRECT ANALYSIS —1 sec
+3 DIRECT ANALYSIS-0.25 sec
+10
+THEORETICAL
+5
+2
+102
+
+ 
+
+0.001 0.002 0.005 0.0t 0.02 0.05 od 0.2 0.5 1.0
+FREQUENCY (radions/sec)
+
+ORNL -DWG 66-4772
+
+POWER LEVEL 1.0 MW
+
+5i1 BIT PRBS DIRECT ANALYSIS eo
+511 BIT PRBS INDIRECT ANALYSIS A
+127 BIT PRBS DIRECT ANALYSIS A
+
+PHASE (deg)
+
+THEORETICAL
+
+ad
+
+ 
+
+50
+0.60¢ 0.002 0.005 0.0 0.02 0.05 oud 0.2 0.5 1.0
+FREQUENCY (radions/sec)
+SN/N
+
+0
+Fig. 24 Frequency Response of ; Power = 1.0 MW
+BK/K
+-38-
+
+ORNL-DWG 66-10042
+
+POWER LEVEL ~ 2.5 Mw
+
+STEP TEST
+
+127 BIT PRBS - DIRECT ANALYSIS
+127 BIT PRBS - INDIRECT ANALYSIS
+51f BIT PRBS - DIRECT ANALYSIS
+511 BIT PRBS - INDIRECT ANALYSIS
+
+ap» > e 0
+
+ 
+
+0001 0.002 0.005 001 002 005 ol 02 05 10
+FREQUENCY (radians /sec)
+
+ORNL-DWG €6-10038
+
+POWER LEVEL - 2.5 Mw
+
+STEP TEST o
+127 BIT PRBS - DIRECT ANALYSIS
+127 BIT PRBS - INDIRECT ANALYSIS a
+Sit BIT PRBS ~ DIRECT ANALYSIS 4
+511 BIT PRBS - INDIRECT ANALYSIS ©
+
+PHASE (deg)
+
+ 
+
+-40
+-50
+-70
+000t 0.002 0005 00! 002 005 ol 02 05 1.0
+FREQUENCY (rodians/sec)
+SN/N
+
+o
+Fig. 25 Frequency Response of ; Power = 2.5 MW
+BK/K
+ORNL: DWG 66-10041
+
+POWER LEVEL - 50 Mw
+
+STEP TEST °
+127 BIT PRBS -DIRECT ANALYSIS @
+127 BIT PRBS ~ INDIRECT ANALYSIS &
+511 BIT PRBS - DIRECT ANALYSIS a
+511 BIT PRBS - INDIRECT ANALYSIS Vv
+
+Wy
+3,
+
+ 
+
+10?
+0002 0.005 00t 002 005 Ot 02 03 1.0
+FREQUENCY {radians/sec)
+
+ORNL-DWG 66-10035
+
+POWER LEVEL ~ 50 Mw
+
+STEP TEST o
+127 BIT PRBS - DIRECT ANALYSIS
+127 BIT PRBS - INDIRECT ANALYSIS 4
+511 BIT PRBS - DIRECT ANALYSIS 4
+511 BIT PRBS - INDIRECT ANALYSIS ©
+
+A
+o
+v.
+
+PHASE (deg)
+
+THEORETICAL
+»
+o
+
+ 
+
+0001 0002 0005 00! 002 0.05 0} ] 0.2 05 10
+FREQUENCY (radions/sec)
+BN/N
+
+Fig. 26 Frequency Response of 2; Power = 5 MW
+BK/K
+-40-
+
+ORNL -OWG 66-10039
+
+POWER LEVEL - 6.7 Mw
+
+STEP TEST NO. 1 [
+STEP TEST NO. 2
+
+511 BIT PRBS - INDIRECT ANALYSIS
+
+Yv,| 5
+Se,
+
+ 
+
+0?
+0002 0005 001 002 005 01 02 05 10
+FREQUENCY (radians/sec)
+
+ORNL-DWG 66-10037
+
+POWER LEVEL - 6.7 Mw
+
+STEP TEST NO. 1 °
+STEP TEST NO. 2 A
+511 BIT PRBS ~ INDIRECT ANALYSIS v
+
+THEORETICAL
+
+PHASE (deg)
+
+ 
+
+0.001 0002 0005 oo 002 0.05 Of 02 05 10
+FREQUENCY (radians/sec)
+SN/N
+
+o
+Fig. 27 Frequency Response of ; Power = 6.7 MW
+BK/K
+“lle
+
+ORNL-DWG €6-10040
+
+POWER LEVEL - 7.5 Mw
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+STEP TEST o
+127 BIT PRBS ~ DIRECT ANALYSIS eo
+10° 127 BIT PRBS - INDIRECT ANALYSIS A
+511 BIT PRBS - DIRECT ANALYSIS a
+SH BIT PRBS - INDIRECT ANALYSIS ©
+In,| 5
+SA)
+7
+%
+&
+Wi aa
+2 2
+10
+0.002 0.005 0.01 002 0.05 01 02 05 10
+FREQUENCY (radions/sec)
+ORNL-DWG 66-10036
+80 1 Te POWER LEVEL - 7.5 M
+IN -75 Mw 1]
+ye 379 11° STEP TEST 0
+O V| A
+60 pr 0 127 BIT PRBS - DIRECT ANALYSIS eo |
+° s Ny 127 BIT PRBS- INDIRECT ANALYSIS a
+0—% | " 511 BIT PRBS - DIRECT ANALYSIS  A[]]
+40 |=2 511 BIT PRBS - INDIRECT ANALYSIS V4
+30 | A \
+20 n
+v #.
+10 a
+
+ 
+
+PHASE (deg)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0 OAM; Vv Va ¢
+-40 o A 7
+Ag
+- 1
+50 a5
+-60
+-70
+0.001 0002 0005 001 002 005 01 02 05 10
+FREQUENCY (radians/sec)
+SN/N
+
+0
+Fig. 28 Frequency Response of ; Power = T.5 MW
+BK/K
+PERIOD OF OSCILLATION (min)
+
+ORNL-OWG 66-10285
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+°
+© EXPERIMENTAL
+®
+NN
+2 <
+10 Ne
+THEORETICAL
+5 <
+Ne
+Ne
+N
+2 .
+N
+N
+1
+002 005 01 02 05 10 20 50 100
+
+POWER LEVEL (MW)
+
+Fig. 29 MSRE Natural Periods of Oscillation
+-43~
+
+The linear stability of the system is certainly adequate. The
+frequency response shows a resonance which shifts to higher frequencies
+and lower amplitudes as power increases. This means that the transient
+response to a disturbance at low power will display a lightly damped,
+low frequency return to equilibrium (period greater than ten minutes
+for powers less than 500 KW). At higher power the system response
+is much more strongly damped and much faster. For instance, a
+disturbance at 7.5 MW causes a transient which is essentially completed
+in 1-1/2 minutes. These observations are in good agreement with prior
+predictions.
+
+A detailed quantitative check of the theoretical predictions by
+experimental tests is much more difficult than a comparison of more
+general dynamic features such as stability, location of resonance
+peaks and the changes expected in these performance measures with
+power level. Early attempts to fit parameters in the theoretical
+model to give agreement in the absolute amplitude of the frequency
+response were abandoned bacause of uncertainties in the measured
+amplitudes caused by equipment limitations. While all of the tests
+at a given power level give results with the same shape, there is a
+difference in the absolute magnitude ratios. .Figure 27 clearly shows
+this bias effect. Furthermore, the portion of the frequency response
+above 0.3 rad/sec should be the same for all power levels since
+feedback effects are small in this frequency range and the zero power
+frequency response should dominate. The experimental results for
+various power levels show the same shape in this frequency region,
+but different absolute amplitudes. This further indicates a bias
+problem. This bias problem is not surprising in view of the equipment
+characteristics discussed in Section IV.
+
+In spite of the bias difficulties, one feature of the theoretical
+model is shown to be incorrect by experimental results. At high
+power (greater than 5 MW) the theoretical magnitude ratio curve has
+a dip at 0.2 rad/sec. This is due to the reappearance of a fuel
+salt temperature slug in the core after traveling around the primary
+
+loop. ©Since this dip was not observed experimentally, there must be
+lh
+
+more mixing and heat transfer in the primary loop than was included
+in the theoretical model.
+
+Because the predicted frequency response has the correct shape
+and location on the frequency axis, we feel that the model used for
+the MSRE dynamic analysis is a good representation of the system.
+The only discrepancy observed in predicted and observed shapes is
+the predicted dip at 0.2 rad/sec, Just discussed. The apparent
+bias in the measured amplitude unfortunately prohibits detailed
+
+parameter fitting.
+1.
+
+10.
+
+11.
+
+12.
+
+13,
+
+REFERENCES
+
+R. C. Robertson, MSRE Design and Operations Report, Part 1:
+Description of Reactor Design, USAEC Report ORNL-TM-728, Ozk Ridge
+National Laboratory, January 1965.
+
+S. J. Ball and T. W. Kerlin, Stability Analysis of the Molten-Salt
+Reactor Experiment, USAEC Report ORNL-TM-1070, Oak Ridge National
+Laboratory, December 1965.
+
+T. W. Kerlin, The Pseudo-Random Signal for Frequency Response
+Testing, USAEC Report ORNL-TM-1662, Osk Ridge National Laboratory,
+September 1966.
+
+J. 0. Hougen and P, A. Walsh, Pulse Testing Method, Chem. Eng.
+Prog., 57(3): 69-79 (March 1961).
+
+H. A. Samulon, Spectrum Analysis of Transient Response Curves,
+Proc. IRE, 39, 175-186 (1951).
+
+. 85. J. Ball, Instrumentation and Controls Div. Annual Progr. Rept.
+
+Sept. 1, 1965, USAEC Report ORNL-3875, pp. 126-7, Oak Ridge
+National Laboratory.
+
+S.S5.L. Chang, Synthesis of Optimum Control Systems, Chap. 3,
+McGraw-Hill, New York, 1961.
+
+B. D. Van Deusen, Analysis of Vehicle Vibration, ISA Trans. 3,
+No. 2, 138-148, 1964.
+
+T. W. Kerlin and J. L. Lucius, CABS — A Fortran Computer Program
+for Calculating Correlation Functions, Power Spectra, and the
+Frequency Response from Experimental Data, USAEC Report ORNL-TM-
+1663, Oak Ridge National Laboratory, September 1966.
+
+E. M. Grabbe, S. Remo, and D. E. Wooldridge (Editors), Handbook of
+Automation, Computation, and Control, Vol. 1, Chap. 22, J. Wiley
+and Sons, New York, 1958.
+
+S. J. Ball, A Digital Filtering Technique for Efficient Fourier
+Transform Calculations, USAEC ORNL-TM report (in preparation).
+
+D. P. Roux, and D. N. Fry, ORNL Instrumentation and Controls
+Division, personal communication.
+
+J. E. Gibson, Nonlinear Automatic Control, Chap. 1, McGraw-Hill,
+New York, 1963.
+1k.
+
+15.
+
+16.
+
+19.
+
+-L6-
+
+G. C. Newton, L. A, Gould, and J. F. Kaiser, Analytical Design of
+Linear Feedback Controls, pp. 36-381, J. Wiley and Sons, New York,
+
+1957.
+
+C. T. Morrow, Averaging Time and Data-Reducing Time for Random
+Vibration Spectra, J. Acoust. Soc. Am., 30, 456 (1958).
+
+T. J. Karras, Equivalent Noise Bandwidth Analysis from Transfer
+Functions, NASA-TN-D2842, November 1965.
+
+L. D. Enochson, Frequency Response Functions and Coherence Functions
+for Multiple Input Linear Systems, NASA-CR-32, April 196k.
+
+H. M. Paynter and J. Suez, Automatic Digital Setup and Scaling of
+Analog Computers, Trans. ISA, 3, 55-64, January 196k.
+
+S. J. Ball and R. K. Adams, MATEXP, A General Purpose Digital
+Computer Program for Solving Nonlinear Ordinary Differential
+Equations by the Matrix Exponential Method, USAEC ORNL report
+(in preparation), Oak Ridge National Laboratory.
+-47-
+
+APPENDIX A
+
+Potential Sources of Experimental Error
+Due to Equipment Limitations
+
+Ag discussed in Section IV.A, there were a number of factors that
+could have had adverse effects on the experimental results, and they
+are listed below:
+
+1) Friction in the bends in the thimbles. Rollers are mounted in
+the bends of the thimble, but there is still considerable friction.
+(Tests show that the rods fall with an acceleration of only about 0.4 g.)
+This suggests that part of the motion at the rod drive might go into
+bowing of the flexible hose rather than into motion of the bottom of the
+poison section.
+
+2) Bends in the hose. It was observed that an old MSRE control
+rod used for out-of-pile testing did not hang straight when suspended
+from the top. It had gradual bends that could be worked out by hand,
+but which were not pulled out by the weight of the rod (6 .to 8 1b). If
+such bends exist in the MSRE rod used for the tests, then the motion of
+the bottom of the rod will not be the same as the motion at the top of
+the rod if a bend in the hose is passing over a roller in the bend of the
+thimble. |
+
+3) Restricted twisting. The test rod showed a tendency to turn
+when inserted into a mockup of the MSRE thimble. This twisting is pre-
+vented in the reactor since the top of the rod is rigidly connected to
+the chain drive (see. Fig. 3). If a tendency to twist is prevented, the
+hose will bow and cause a difference in axial motion between upper and
+lower sections.
+
+4) Sprocket chain meshing. The action of the drive motor is trans-
+mitted to the drive chain by a sprocket. This sprocket has a diameter
+of 1.282 in. and the length of the links in the chain is 1/4 in. The
+fact that the flat links cammot exactly follow the circular contour of
+the sprocket means that some of the sprocket motion is taken up by a
+lateral motion of the chain as well as the desired vertical motion.
+
+5) Sticking of poison beads. The control rod thimble contains
+-4,8-
+
+vanes for centering the control rod. The vanes are held in place by
+circular spacers located 4 in. apart. If the vanes became warped, they
+could touch links in the poison chain in certain sections without touching
+links in nearby sections. Since there is slack in the threading of the
+poison cylinders on the central hose, this friction could hold up the
+movement of certain poison elements.
+
+6) Indicated poisition errors. It was necessary to use the coarse
+synchro signal (5 deg of turn per inch of rod motion) for logging on the
+MSRE computer and for subsequent data analysis. Since the 1/2-in. rod
+motion used in the tests corresponds to only 2.5 deg rotation of the
+synchro, sizeable percentage error could be caused by only a few tenths
+of a degree of deadband in the gears leading to the synchro. Periodic
+calibrations of the logged rod position against the fine synchro, how-
+ever, indicated that the error is less than +5% for a 1/2-in. rod travel.
+The maximum deadband in the logger signal corresponded to about +0.008
+
+in. of rod motion.
+-49-
+
+APPENDIX B
+
+The Direct Method for Cross-Power Spectrum Analysis
+
+Each of the terms used in the cross-power spectrum analysis is
+
+computed in the following manner:
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+irene peeing
+
+a — Sa
+
+ 
+
+Multiply
+
+a(t) b(t
+| a(t) b(t)
+
+ 
+
+ 
+
+i(t) a(t)
+ep 1; (J)
+Input
+
+ot) b(t)
+
+ed Haj) fo
+
+Output
+
+ 
+
+ 
+
+ 
+
+etree noma,
+
+w
+
+ 
+
+: fatorisas
+
+ 
+
+£(915)
+
+ 
+
+ 
+
+where H, and H, are either H(Jjw) or 3 H(jw)3 and £(90) (depending on
+
+which combination of H; and Hy are used) is related either to the real
+
+(COPOWER) or the imaginary (QUAD POWER) part of the cross-power spectral
+
+density (CPSD) $10 Four combinations of the basic computation shown
+
+above are used in the CPSD analysis as shown in Fig. 9.
+
+To convert filtered time domain functions to frequency domain
+
+functions, we make use of Parseval's theorem, which is
+
+Tas) b(t) dt = ==
+
+=o
+
+an
+
+oo
+
+[ Bw) Al=jw) dw ,
+
+“oo
+
+(1)
+
+where B(jw) = Fourier transform of b(t), and A(—jw) = complex conjugate
+
+of the Fourier transform of a(t).
+-50-
+
+Considering that only a finite integrating time T is available to
+
+us:
+T 1 ©
+[ a(t) v(t) at = = J Bw) A(-j0) av . (2)
+0 =o
+Noting that
+A(jw) = 5H (Jw) Iw) , (3)
+B(Jjw) = Ha(Jw) 0(jw) , (4)
+where
+I(jw) = Fourier transform of input, i(t),
+0(jw) = Fourier transform of output, o(t).
+
+From the definition of the complex conjugate, it can be shown that
+
+A(=jw) = Hi(=jw) I(=jw) , (5)
+
+Ha(=jw) 0(=jw) . (6)
+
+0
+
+B(—jw)
+Hence (2) can be rewritten in terms of the Fourier transforms of the
+
+input and output signals
+T 1 ©
+J a(t) b(t) at ® Z | Ha(dw) Hi(=ju) I(=jw) 0(jw) dw . (7)
+“00
+Since the cross-power spectral density is defined as’
+
+b1(30) = 1B 2[T(=jw) 0(ju)] (8)
+
+it behooves us to operate on (7) in order to be able to incorporate
+$1030). Taking the limit of both sides of (7) as To and dividing by
+
+T, we get
+
+lim1 TI 10°, Cy [lim 1, |
+
+ve J, 20) 50) at = Ff Talia) maton) {HEF 100 oll} ao
+“0
+
+Substituting (8) into (9):
+-51-
+
+. T 0
+re J ae) ne) a = ff Ha3) Bago) dp) a. (10)
+
+00
+
+Case 1
+
+For the case where
+
+Hi (Jw) = Ho(Jw) = H(jw)
+and defining
+
+T
+
+_ lim 1
+a(%) b(t) = pow T J a(t) b(t) dt ,
+
+Eq. (10) becomes
+
+a(t) b(t) = = { “Hw H(=jw) $5 (Jw) dw = = “lH(j0) [2 9 (Jw) dw .
+=o “00 (11)
+
+Since the input and output signals are filtered identically, it
+should be evident that this operation will yield information only about
+the in-phase relationship, or the real part of 9 o(Jw). We can show
+this by noting that since
+
+ 
+
+a(t) p(t) = b(t) alt)
+
+and
+
+v(t) a(t) = = "E(0) |2 $7(Jw) dw , (12)
+
+“0
+
+the two integrals in Eqs. (11) and (12) must be equal; thus
+1 oo
+5 J T0017 ($gz(a) = orola) Jao = 0 (13)
+
+If we assume that 90(Jw) and $0) do not change much over the
+effective bandwidth of the filter, then $5 (Jw) must equal or (Jw). But
+
+since
+
+(dw) = ¢or(=iw) , (14)
+-50~
+
+this means that the imaginary part of $1o(3w) must be zero, or at least
+no information about In[#1, (Jw) ] is present in the output. For case 1,
+
+then
+
+a(t) b(t) = = “JH(j0) |? Re [91 (Jw) ] dw . (15)
+
+“00
+
+If we assume that Re [¢1,(Jw)] does not change much over the effective
+bandwidth of H(jw),
+
+SESE = | be J Ino) Paw] | relbgg (au) (16)
+
+-00 a
+
+For the present study, we used a filter with the following transfer
+function:
+Jw
+H(jw) = ——————— (17)
+we + jw 2lw — w?
+o 0
+
+The filter "area" term can be evaluated using a table of integrals®®
+
+ 
+
+= J [H(jw) |2 dw = mg (rad/sec) . (18)
+Thus
+Re [9 (Jw) ] bbw a(t) b(t) (19)
+Case 2
+For this case
+“o
+Hy (Ju) = 55 H(jw) (20)
+and
+Ho(jw) = H(jw) .
+Since
+
+oy % H(=jw)
+Hy ( Jw) = jw ’ (21)
+-53-
+
+Eg. (10) becomes
+
+wy oo H(jo) H(=jw) $54(w)
+
+a(t) b(t) = 5 | duo (22)
+
+—Jjw
+“oo
+
+ 
+
+Since the input signal's filter has 90 deg more phase lag than the
+output signal's filter, we should expect that this operation will yield
+information only about the quadrature relationship, or the imaginary
+part of $1o(3w). We can show this as follows:
+
+In this case, revising the order of integration of the inputs makes
+a difference, i.e., from (2)
+
+T 1 0
+J, b(t) a(t) dt » Z= [ a(30) B(=jw) do (23)
+=o
+
+we can use (3), (6), (19), and (23) to get
+
+Y ® H(Jjw) H(=jw)
+b(t) a(t) = = 5 I(jw) O(=jw) dw . (24)
+
+=
+
+ 
+
+H
+
+Again, since a(t) b(t) = b(t) a(t), from (22) and (24) we can conclude
+
+that
+$o(dw) _ $7 (Jw) -
+—Jw Jw
+if we use the same argument as we did for case 1. Thus
+1o(J0) = = 8,1 (Jw) = = br (=jw) (26)
+
+which is true only if the real part of 90 = 0, or at least if no
+information about Re [94 (Jw)] is present in the output. Hence, we can
+substitute JIm[91, (Jw) ] in for $ol3w) in Eq. (22). For case 2, then
+1) 12
+Ww oc [2(Jw) |
+
+SOB) = - 2 J
+
+=o
+
+—— In[¢,,(jw)] dw . (27)
+
+If we assume that Tn[¢1, (Jw) ] does not change much over the
+w
+effective bandwidth of either H(jw) or H(jw), then
+-5h-
+
+Ww o |H(Jw) |Z
+
+~ __0° —— J
+
+a(t) b(t) ® = = aw] EEONeny] . (28)
+=o
+
+For the particular filter used (Eq. 17):
+
+w oo |E(jw) |Z
+
+=) a = pro - (29)
+
+Thus
+Im[0;,(Ju)]% = Ww, a(t) b(t) . (30)
+Case 3
+The case where
+Ww
+Hy (Jw) = Hz(jw) = 32 H(jw) (31)
+
+can be developed similarly to case 1 as far as Eq. (16), since we could
+redefine H(jw) as being equal to the expression in (31).
+
+The integral to be evaluated is
+
+. _ = [H(Jw) [2
+1 Ho(jw) Hy(=jw) dw = = = "Edu ldo) ay - Lye om do. (32)
+
+ 
+
+on wo te w2
+For the filter of Eq. (17), this integral is again equal to ws sy S80
+0
+Re[$, (Jw) ® kw alt) b(t) (33)
+
+assuming in this case, however, et Re [#1 (Jw)] ] does not change much
+
+over the effective bandwidth of =, H(jw).
+
+Case 4
+
+The case where
+
+Hy (Jw) = H(jw) , (3k)
+Ho(jw) = 2 H( jw) (35)
+
+can be developed similarly to case 2. Equation (10) becomes
+-55-
+
+w © . _s
+a(t) b(t) = = Bad Hind $ro(dw) dw . (36)
+
+“0
+The expression on the right hand side is the negative of that for
+Eq. (22), case 2; hence for case 4, we get the expression corresponding
+to Eq. (3) when the filter of Eq. (17) is used:
+
+In[é (Jw) ® bu alt) b(t) (37)
+
+assuming again that In[¢14(0) ] does not change much in the effective
+bandwidths of either H(jw) or o H( jw).
+
+The power spectral density (PSD) of the input function is required
+for calculating the system transfer function G(jw). This is obtained
+by squaring the outputs of both the in-phase and quadrature filters and
+
+integrating the sum of the squares. In both cases, for the filter of
+Eq. (17):
+
+ 
+
+9.1030) ® uw a(t)? (38)
+
+assuming that $1 (Jw) does not change much in the effective pass bands
+of H(jw) and Ww, H(jw)/ jw.
+The system transfer function G(jw) is then computed from
+
+Re[¢- (Jw) ] + § Im[¢. (jw)]
+G(jw) ® 10 $30) 10 ’ (39)
+
+ 
+
+where each of the three terms on the right hand side of (39) are computed
+using the sum of two estimates. (Note that all terms have the same gain
+factor, bw +) The reason for the better accuracy of this method as
+compared to using a single estimate of each term lies in the fact that
+since the effective pass-bands of the in-phase and quadrature filters
+are different, there is a bias in each of the quadrature, or imaginary
+term, estimates. Since the two imaginary term estimates are of different
+sign, this bias tends to be cancelled out.
+
+Calculations of the percent standard deviations of both input and
+
+output (PSD) estimates are made using (L40):15
+-56-
+
+ 
+
+ 
+
+ad
+0
+4 SD = 100 _ 100 , (40)
+x2 JBT
+where
+
+0 = standard deviation of mean square value,
+x2 = mean square value,
+B = equivalent noise bandwidth, rad/sec,
+T = integration time, sec.
+
+The equivalent noise bandwidthi® for the H(jw) filter used in this
+study is
+B = Cw, , rad/sec. (41)
+The coherence function 72 is also computed:
+
+|¢
+
+2
+_ 190!
+= $1 900 . 2)
+
+ya
+
+The coherence function is useful for estimating expected errors in
+transfer function calculations when the input and output signals are
+random.” For periodic signals, however, such as the PRBS, the ex-
+pressions for error estimates in the literature have been found to be
+wildly pessimistic.
+
+The calculation of the response of the digital filters is based on
+Paynter's matrix exponential method,®,1® and gives virtually exact
+
+time-response solutions very efficiently.
+
+-——
+9
+
+.
+
+1
+nN EE
+= ONO 0 o~ OW HW n=
+
+22,
+
+nnn
+JEW
+
+26.
+
+nn
+\O O—
+
+AN AWN AN AN AN AN
+VT HEWN HO
+
+.
+
+0 5B
+
+=
+=O
+
+Lo.
+
+bh,
+
+=
+WN
+
+THSHQINOQUAOAEHDH HENNE YQ EH DY QW
+
+.
+
+FPEIQGUOEPOIHOGE HDHD E SQ QE
+
+Adams
+Adamson
+Affel
+Alexander
+Apple
+Baes
+Baker
+Baker
+Ball
+Beall
+Rettis |
+. Blankenship
+Blumberg
+Bohlmann
+Borkowski
+Bullock
+Burger
+Burke
+antor
+Carter
+Cathers
+Compere
+Conlin
+Cook
+Corbin
+Cristy
+Crowley
+Culler
+Dandl
+Danforth
+Davis
+Ditto
+Donnelly
+Doss
+Dunwoody
+Engel
+Epler
+Ergen
+Ferguson
+Fraas
+Friedman
+Fry
+Frye, Jr.
+Gabbard
+Gallaher
+. Grimes
+Grindell
+
+NPENPFRIRROER
+
+BReLe
+
+CEE HERP IERIE QUAN PEEP REED HHO
+
+=57=
+
+Internal Distribution
+
+57.
+58.
+
+59.
+60.
+61.
+62.
+63.
+6k.
+65.
+66.
+67.
+68.
+69.
+70-109.
+110.
+111.
+112.
+113.
+11k,
+115.
+116.
+117.
+118.
+119.
+120.
+121.
+122,
+123,
+12k.
+125.
+126.
+127.
+128.
+129.
+130.
+131.
+132,
+13%.
+134.
+135.
+136.
+137.
+138.
+139.
+140:
+141.
+1h2,
+
+ORNL-TM-1647
+
+Guymon
+Hagen
+Harley
+
+. Harrill
+Haubenreich
+Herbert
+Herndon
+Holt
+
+Holz
+Hudson
+Kasten
+Kedl
+Kelly
+Kerlin
+Kirslis
+Knowles
+Krakoviak
+Krewson
+Kryter
+Lawson
+Lindauer
+
+. Lundin
+Lyon
+Marable
+Martin
+Mathews
+MacPherson
+MacPherson
+McCurdy
+McDuffie
+McGlothlan
+McNeese
+Miller
+Miskell (Y-12)
+Mixon
+Moore
+
+. O'Brien
+atriarca
+Payne
+Perry
+Piper
+Prince
+
+. Redford
+Richardson
+
+C. Robertson
+
+AsaHRHOQHQRUEESHDQAsHG REZ GG YoQE nm so
+
+Hew what
+143,
+1k,
+145,
+146.
+1h7.
+148.
+149,
+150.
+151.
+152,
+153,
+15k,
+155.
+156.
+157.
+158.
+159.
+160.
+161.
+162.
+
+186-200,
+201.
+202-203.
+204,
+205.
+206.
+207.
+208.
+209.
+210.
+211.
+212,
+21%,
+21k,
+215.
+216.
+
+217.
+
+-58-
+
+H. C. Savage 163. W. C. Ulrich
+
+A. W. Savolainen 164. B. H. Webster
+
+D. Scott 165. A. M. Weinberg
+
+H. E. Seagren 166. XK. W. West
+
+J. H. Shaffer 167. M. E. Whatley
+
+M. J. Skinner 168. J. C. White
+
+A. N. Smith 169. G. D. Whitman
+
+P. G. Smith 170. R. E. Whitt
+
+W. F. Spencer 171. H. D. Wills
+
+I. Spiewak 172. J. V. Wilson
+
+B. Squires 173. L. V. Wilson
+
+R. C. Steffy 17h. M. M. Yarosh
+
+H. H. Stone 175. MSRP Director's Office,
+
+R. S. Stone Rm. 219, 9204-1
+
+A. Taboada 176-177. Central Research Library
+
+J. R. Tallackson 178-179. Y-12 Document Reference Section
+R. E. Thoma 180-18k, Laboratory Records Department
+G. M. Tolson 185. Laboratory Records Department,
+D. B. Trauger LRD-RC
+
+J. R. Trinko
+
+External Distribution
+
+ 
+
+Division of Technical Information Extension (DTIE)
+Research and Development Division, ORO
+
+Reactor Division, ORO
+
+J. Gage, University of Texas, Austin, Texas
+
+Gardner, Research Triangle Institute, Durham, N. C.
+W. Garrison, AEC, Washington, D. C.
+
+H. Hanauer, University of Tennessee, Knoxville
+
+F. Pasqua, University of Tennessee, Knoxville
+
+W. Prados, University of Tennessee, Knoxville
+
+C. Robinson, University of Tennessee, Knoxville
+F
+L
+E
+E
+is
+
+"dg
+
+P
+
+. Saxe, North Carolina State University, Raleigh, N. C.
+. Smalley, AEC, ORO
+. Stephenson, University of Arkansas, Fayetteville, Ark.
+. Uhrig, University of Florida, Gainesville, Fla.
+tis Updike, University of Virginia, Charlottesville
+A. A. Wasserman, Westinghouse Astronuclear Laboratory,
+P. 0. Box 10864, Pittsburgh, Pa.
+M. J. Whitman, AEC, Washington, D. C.
+
+S.
+R.
+R.
+S.
+J.
+J.
+R.
+W.
+S.
+R.
+0
+
+.
