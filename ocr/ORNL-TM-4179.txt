@@ -1,0 +1,1538 @@
+ORNL-TM-4179
+
+ 
+
+IMPROVED REPRESENTATION OF SOME
+ASPECTS OF
+CIRCULATING-FUEL REACTOR KINETICS
+
+B. E. Prince
+
+ 
+
+ 
+
+ 
+
+- OPERATED BY UNION CARBIDE CORPORATION « FOR THE U.S. ATOMIC ENERGY COMMISSION
+
+ 
+ 
+
+ 
+
+This report was prepared as an account of work sponsored by the United
+States Government, Neither the United States nor the United States Atomic
+Energy Commission, nor any of their employees, nor any of their contractors,
+subcontractors, or their employees, makes any warranty, express or implied, or
+assumes any legal liability or responsibility for the accuracy, completeness or
+usefulness of any information, apparatus, product or process disclosed, or
+represents that its use would not infringe privately owned rights,
+
+ 
+
+ 
+ORNL-TM-4179
+
+Contract No. W-7405-eng-26
+
+REACTOR DIVISION
+
+IMPROVED REPRESENTATION OF SOME ASPECTS
+OF CIRCULATING-FUEL REACTOR KINETICS
+
+B. E. Prince
+
+MAY 1973
+
+NOTICE
+
+This report was prepared as an account of work
+sponsored by the United States Government, Neither
+the United States nor the United States Atomic Energy
+Commission, nor any of their employees, nor any of
+their contractors, subcontractors, or their employees,
+makes any warranty, express or implied, or assumes any
+legal liability or responsibility for the accuracy, com-
+pleteness or usefulness of any information, apparatus,
+product or process disclosed, or represents that its use
+would not infringe privately owned rights,
+
+      
+
+ 
+
+OAK RIDGE NATIONAL LABORATORY
+Oak Ridge, Tennessee 37830
+operated by
+UNION CARBIDE CORPORATION
+for the
+U.S. ATOMIC ENERGY COMMISSION
+
+DISTRIBUTION OF THIS DOCUMENT 18 UNLIMITED )
+
+je
+iii
+
+CONTENTS
+
+Preface « « « « « + 4 os oo 0 0
+Abstract. + « o « + os co 0 oe
+Introduction. + « « « o o ¢ + o
+Background. « «+ « + « + + +o o +
+Mathematical Description. . . . .
+
+Example of Delayed Neutron Kernal
+
+Calculations.
+
+Discussion of Results and Future Extensions . .
+
+Appendix + + + + 4 v4 6 ee ee
+
+References. + « + « so » o os s &
+
+Page
+
+uN Ed
+
+18
+22
+26
+32
+PREFACE
+
+P. N. Haubenreich
+
+The formulations that are presented here were worked out by Blynn
+Prince in 1968 in connection with his analysis of the kinetics of the
+Molten<Salt Reactor Experiment with 223?U fuel. Although he made some
+significant progress toward an improved mathematical description of
+circulating~fuel reactor kinetics, the work was suspended and these re-
+sults were not previously reported because of a contraction of reactor
+analysis effort in the Molten~Salt Reactor Program that involved the
+assignment of the author to a different program. Whether or not molten
+salt reactor development work is continued in the future, the results
+contained here may be of interest from the standpoint of theoretical
+reactor kinetics analyses. They also indicate a starting point that
+could lead to improved, practical computations of molten-salt reactor
+
+kinetics. As such they are recorded here for possible future use.
+IMPROVED REPRESENTATION OF SOME ASPECTS
+OF CIRCULATING-FUEL REACTOR KINETICS
+
+B. E. Prince
+
+Abstract
+
+The general space—-energy dependent reactor kinetic equations for a
+circulating-fuel reactor were studied to help determine the type of mathe-
+matical representation most appropriate for analysis and computation of
+reactor transient behavior. It is shown that, with inclusion of fluid
+transport terms in these equations, the application of the usual adjoint-
+weighting and integration techniques used to derive "global" kinetic equa-
+tions from the general equations do not result in the usual set of time-
+dependent ordinary differential equations associated with stationary-fuel
+reactor-kinetics. However, a time-dependent integro-differential equation
+describing the kinetics of the neutron population can still be obtained.
+General formulas for calculating the weighted delayed-neutron precursor
+kernels in this equation are given, and a numerical example is included
+which illustrates the nature of the solution. Directions are also sug-
+gested for calculating the analogous weighted temperature~distribution
+kernels for analysis of power-temperature kinetics. The qualitative in-
+fluence of fluid mixing on the kernels is described, and the connections
+between the distributed parameter and lumped-parameter representations
+of the system kinetics are also discussed,
+INTRODUCTION
+
+A complete mathematical description of the nuclear fission chain re-
+action in any power reactor is a formidable task, which is further compli-
+cated by circulation of the fuel. Fortunately, for many purposes greatly
+simplified descriptions are sufficient — as Weinberg and Wigner point out,
+the first full-scale reactors (Hanford) were designed with desk calcu-
+lators and slide rules.’ More detailed analyses are increasingly desira-
+ble, however, as reactor designs are refined to obtain higher performance
+without compromising reliability and safety. As part of the vast growth
+in reactor technology, analysis of stationary-fuel reactors has evolved
+to a high level. Representation of the unique aspects of the kinetics of
+circulating-fuel reactors has naturally received much less attention and
+so has advanced to a lesser degree. Methods were developed for repre-
+senting the latest circulating-fuel reactor, the Molten-Salt Reactor Ex-
+periment, that proved to be quite adequate for that purpose. But design
+of large-scale, high-performance MSR power plants would undoubtedly lead
+to demands for improved kinetics calculations. The work described in this
+
+report is intended to help lay the groundwork for these calculatioms.
+
+BACKGROUND
+
+In the analysis of reactor dynamics, wide use has always been made
+of the so-called "point" kinetics model. The great utility of this space~
+independent model is largely a result of the ability to decompose the prob-
+lem of calculating the gross details of the time dependence of a system
+from the multi-dimensional problem of calculating the neutron distribution.
+Although the early reactor physics literature contains some discussion of
+the relation between the point kinetics model and the complete mathematical
+
+? to the writer's
+
+description of the time-dependent neutron population, ?’
+knowledge, the first rigorous exposition of the relation, showing its deri-
+vation from the time-dependent Boltzman equation, and describing the cri-
+
+teria for the point-kinetics equations to provide a precise description of
+
+the system motion, was given in 1958 by A. F. Henry.“
+The derivation of the point kinetics equations is ordinarily carried
+out for the case of a stationary-fueled reactor. Although the point ki-
+netics approximation has been applied to circulating-fuel reactors, if one
+begins at the most basic level to describe a circulating fluid-fueled re-
+actor, it is somewhat more natural to consider an Eulerian type of descrip-
+tion of the basic mathematical relations between the important variables
+such as flux, precursor densities, and temperatures. One is then led to
+inquire what differences in mathematical formalism from the standard point-
+kinetics equations are suggested for the practical analysis of circulating-
+fuel-reactor kinetics problems.
+
+The reactor physics literature describes many different investigations
+of the unusual aspects of circulating~-fuel-reactor-kinetics, of which ref-
+erences 5—10 are significant examples. These unusual aspects are especi-
+ally well identified in a 1962 article by B. Wolfe® in which he considers,
+inter alia, the direct effects of motion imparted to the entire neutron
+population by the moving fluid. Wolfe concludes that, except in very se-
+vere reactor accident conditions, the special reactivity effects so intro-
+duced are quite small. On the other hand, in the calculation of the de-
+layed neutron precursor distributions and effectiveness in a circulating-—
+fuel reactor, he reemphasizes the importance of an accurate mathematical
+description of the fluid motion effects in kinetics analysis.
+
+Of the variety of mathematical models which have been used in studies
+of the kinetic behavior of circulating fuel reactors, most can be desig-
+nated as ''special purpose approximations," useful for the analysis of par-
+ticular characteristics or regimes of the system motion, but each neglecting
+certain features of the physical system which would be required for other
+applications. For example, analyses focusing mainly on determining the
+conditions for ultimate dynamic stability of the reactor core will often
+neglect the effects of the delayed neutrons. In another case, studies of
+reactor transients under abnormal, or accident conditions, which occur on
+a time scale less than, or comparable to, the transit time of a fluid par-
+ticle through the core, can often neglect the description of the system
+external to the core, together with any transients in the temperature or
+precursor concentrations in the fluid re-entering the core. As an example,
+
+the ZORCH program, developed for studies of the nuclear safety of the
+MSRE,** is based on this approach. ZORCH uses a simplified treatment of
+the delayed neutron precursor dynamics based on an "effective" delayed
+fraction, which gives the correct initial normalization for the reactivity
+margin between delayed and prompt critical. The main effort is then given
+to a numerical treatment of the distributed parameter problem of heat con-
+vection and temperature feedback during the transient.
+
+Other investigations connected with the MSRE were aimed at describing
+the reactor dynamic characteristics appropriate to a time scale comparable
+to, or larger than, the core transit time. 2 Here the entire circulating
+system, including the heat exchanger, must be included in the description.
+The general approach has been to develop a "lumped parameter" model for the
+system, which provides an adequate description of the dynamics of the power,
+precursor concentrations, and temperatures, for the purposes intended.
+
+The various investigations of the kinetics of the MSRE and subsequent
+MSR designs are briefly described in a recent memorandum by Haubenreich.'?®
+All involve approximations of one kind or another that limit the general
+applicability of the methods. If further development of molten-salt re-
+actors takes place, it seems likely that kinetics—computational models
+which are of greater generality and flexibility would ultimately be re-
+quired for the analysis of routine nuclear operations, kinetics experi-
+ments, and unusual occurrences. The investigations reported here were
+initiated with this general philosophy in mind. They are aimed at ana-
+lyzing some of the most important consequences of the fuel motion in prac=-
+tical kinetics computations and the interpretation of kinetics experiments
+for circulating-fuel reactors. Although differing in emphasis, the ap-
+proach has much in common with some of the past investigations mentioned
+above. However, we wish to focus on certain aspects of the differences
+in mathematical formulation and practical computation with the kinetics
+equations which, in our opinion, previous studies have not sufficiently
+developed and clarified. In this writing, we shall consider in detail
+only the simplest case of interest, the case of negligible temperature
+feedback effects, or the "zero-power' case. However, following the dis~-
+cussion of this case, we will indicate some connections to the case of
+
+temperature~dependent kinetics.
+MATHEMATICAL DESCRIPTION
+
+In the case where one is able to neglect the direct effects of fluid
+motion on the neutron population, as described in the preceding section,
+one can show that the main line of Henry's derivation can be carried over
+to the circulating-fuel reactor, and that the form obtained for the re-
+sulting "global," or space-lethargy-integrated kinetic equation governing
+the magnitude of the neutron population is the same as in the stationary
+fuel case. This is demonstrated mathematically in the Appendix of this
+report. In each case, the resulting kinetic equation for the neutron popu~
+
+lation magnitude is,
+
+ 
+
+6
+T+) AC. , (1)
+
+where T(t) is a time-dependent amplitude function, obtained by factoring
+the general transient flux distribution, o(r, u, t)), into a product of
+T(t) and a normalized "shape" function, ¢(x, u, t). In Eq. 1, the source
+terms, ACs associated with decay of delayed neutron precursors have the
+form,
+
+Ae, (8) = == [ [xc (x, t) £ (uw b (x, u) dr du . (2)
+
+ii AF R a + 1 di °
+Here, C, (x, t) is the local density of precursors for the iB delayed
+group, £45 (W are the lethargy spectra of delayed neutron emission (each
+normalized to unity), $, (r, u) is the solution of the adjoint equation
+for a reference reactor condition, and R is the reactor volume. As Henry's
+derivation shows (see Appendix), the parameters p(t), A(t), and B(t) are
+defined quantities which intrinsically require knowledge of the time-
+dependent neutron distribution for their exact calculation, but which are
+useful because they can be closely approximated by simpler indirect calcu-
+lations, in many practical cases. The parameter, p(t), is the reactivity
+change, relative to a reference, stationary state of the reactor, where
+there is no circulation of the fuel. The parameter, A(t), is the prompt-
+
+neutron generation-time, and B(t) is the effective delayed neutron fraction,
+weighted according to the lethargy spectra of delayed neutron emissions.
+Mathematical definitions for all these quantities are given in the Appen-
+dix. The factor F(t), is a normalized rate-of-production (of prompt neu-
+trons plus precursors). This factor is included in the definition of p,
+A, and B, but in such a way that the ratio (p - B)/A in Eq. (1), and the
+product A F in Eq. (2) are independent of its magnitude.
+
+The important difference introduced in the case when the fuel is cir-
+culating is in the equation governing C; (xr, t). The latter now has the
+
+form of a continuity equation,
+
+aC,
+i
+5t = By Po - Ay Cs -V eV C (3)
+
+where P is a time-dependent linear operator on the flux distribution, such
+that Bs P ¢ (r,t) is the total production rate of iB group precursors at
+position r and time t. (Here, P can be regarded a linear integral operator
+in the lethargy, which may also depend on position.) The last term on the
+right-hand side of Eq. 3 represents the spatial transport of precursors
+
+by fluid motion, with V as the velocity of the fluid.
+
+In applications to a circulating<fuel reactor such as the MSRE, where
+the fuel motion was in channels parallel to the core axis, it is sufficient
+to consider the one-dimensional version of the transport term, vac, /sz in
+Eq. 3. Here, the velocity within an individual channel is assumed to be
+uniform across the channel, equal to the average axial velocity of the
+fluid; the velocity may, however, vary according to the radial position
+of the channel within the reactor. For practical purposes, therefore, our
+problem is one of including an adequate mathematical treatment of the re-
+sulting partial differential equation into the calculation of the global
+quantities, c; (8), defined by (2).
+
+As a starting point for mathematical treatment of Eq. (3), the general
+time-dependent flux distribution, ®(x, u, t) may, as in the derivation of
+Eq. (1), be written in form of a product, T(t)¢(x, u, t). Then, the source
+
+term in Eq. (3) becomes,
+B; Po = B, T(t) Po,
+
+= 8, T(t) Gr,0) , 4)
+
+where G(r,t) is a normalized, time-dependent distribution of fissions in
+the reactor.
+
+Now, in the analysis of a number of reactor kinetic experiments, we
+are interested in describing situations where the core properties do not
+vary markedly during the transient. For these situations, we can approximate
+the production operator by its time-average values, P, during the transient.
+It is then conceptually useful to represent the time-dependent normalized
+flux distribution, ¢(r, u, t) by an expansion in a set of basis functions,
+appropriate to the boundary conditions on the reactor. Although there is
+some flexibility in the choice of these basis functions, one possible choice
+is that of the eigenfunctions of the time-independent problem (i.e., the
+neutron flux equation with the neutron multiplication parameters adjusted
+to obtain a stationary solution), corresponding to the average material
+properties during the transient, In this approach, the lead term in the
+expansion can be chosen to approximate the asymptotic, or persisting neu-
+tron distribution which would be associated with this material configura-
+
+tion," Thus, if we write
+
+$x, u, 8) =] A(t) § (x, w , (5)
+k=0
+Pé=Po¢ = ) A(t) Pg (x, uw,
+k=0 k k
+= J A(t) G(x), (6)
+k=0 k k
+
+then a useful approximation for the treatment of many time-dependent prob-
+lems may be obtained by dropping all but the lead terms in the above ex-
+pansions. In the physically time-separable case (i.e., the case where the
+
+reactor flux is changing on a stable period), the single-term approximation
+® Although this approximation also implies
+
+becomes an exact description.®
+that we limit consideration to problems where the initial and asymptotic
+flux distributions do not differ markedly, as indicated above, many sig-
+nificant kinetics problems are subsumed under this category. For these
+cases where a single term approximation is sufficient, Ao(t) may be chosen
+equal to unity by appropriate normalization of the fission distribution,
+Go(r), and the time-dependence of the precursor source term, Eq. (4), is
+entirely contained in T(t).
+
+Alternatively, it may be necessary in some instances to include more
+than one term in the expansion representation of the flux. For example,
+another possible approximate procedure would represent the flux as a linear
+combination of two flux functions, appropriate to the “initial" and "final"
+configurations of the reactor. The retention of more than one term, or
+"mode™ in the flux expansion generally leads to a system of neutron popu-
+lation amplitude equations, as opposed to the single kinetic equation of
+the form (1). In this type of description, however, note that Eq. (3) is
+linear, and superposition of solutions corresponding to individual source
+terms of the form B; T(t) G(r) can always be applied.
+
+Stemming from the arguments given above, we will consider the mathe-
+matical treatment of Eq. {3) for kinetics problems where space-time separa-
+bility of the source term can be assumed to hold. To simplify our nota-
+tion, henceforth, we drop further consideration of the expansion subscript,
+
+and rewrite Eq. (3) as,
+
+3c, ac,
+— . —_— = (
+tA CY B, T(t) G(x) . (7)
+
+To complete the mathematical description of the problem, we require
+the boundary conditions on Eq. (7). At a given instant of time, the de-
+layed precursor concentration in the fluid must be continuous around the
+circulation path; moreover, in that part of the circulating system which
+is "out" of the neutron flux (i.e. beyond the boundary where the neutron
+flux distribution specified in Eq. (5) vanishes), the delayed emitter con-
+
+centrations are governed by the homogeneous form of Eq. (7), where the
+right-hand side is set equal to zero and z is considered to be a more
+general position variable, parallel to the direction of average flow. To
+
+a close approximation, the flow velocity V can be assumed constant in vari-
+ous subregions of the circulation path, and to undergo rapid transitions
+between these regions (e.g. between the core and the external piping).
+
+As determined by Eq. 7, the delayed emitter concentrations C, are de-
+pendent on three space dimension variables, through the source distribution
+G(r). Our present interest is in applications where channelled flow in
+cylindrical geometry with near-azimuthal symmetry is appropriate such as
+was the case for the MSRE. For this case, in addition to the time depen-
+dence, the delayed emitter concentrations will vary with axial location
+along a channel and with the radial position of the channel within the
+core. With the MSRE as an example, it is clear that the hydraulic design
+of the circulating system has the effect of radially smoothing and aver~
+aging of the concentrations exiting at a given instant from the channelled
+region, and of providing essentially a radially uniform concentration of
+emitters entering the channels. Because of this feature, it is necessary
+to carry out the integration of Eq. 7 along specified channels, radially
+average the concentrations exiting from the channels, and then continue
+the integration along the remainder of the path of circulation. The treat-
+ment of the radial dependences presents no problem in principle, although
+the mechanics of the computation become more involved. Because we wish to
+focus attention on certain other aspects of the mathematical treatment of
+Eq. 7, we limit consideration here to the case where the flux and fission
+distributions depends on only one space variable, corresponding to the
+axial direction of flow.
+
+Laplace transform theory provides a convenient and general approach
+to the treatment of Eq. 7. To apply this approach, it is useful to first
+separate the problem of obtaining the initial conditions in time, the dis-
+tributions C; (z,t=0) = Cp (2) from that of solving the time-dependent
+equation. In many cases of physical interest, steady-state conditions
+
+will prevail at t=o, and the Cc; (2) are determined by,
+
+oC,
+
+Vy —=> + C= By; Tl) Gz) (8)
+10
+
+Subtracting Eq. 8 from Eq. 7, we obtain a similar partial differential
+
+= C, - C, , which
+i io
+
+equation for the change in emitter concentrations, E,
+
+has zero initial conditions on the dependent variable,
+
+JE,
+—r
+
+ot
+
+oF,
+
++2; E+ Vso = 8, (T(t) - To) Gz) . (9)
+
+Although the Laplace transform technique can be applied directly to
+the solution of Eq. 9, one should first observe the T(t) is not an arbi-
+trarily specified function of time; rather, as indicated previously, it
+is determined by the 'global" time-dependent equation for the neutron
+population, required to complete the description of the system dynamics.
+This latter equation and the delayed emitter equations are coupled through
+terms of the form (2). Eliminating the dependent variables C; by solving
+
+Eqs. 7 in terms of T(t) is equivalent to replacing the space-lethargy-
+
+integrated, system-kinetics equations
+ential equation in the time variable.
+
+obtain the solution of Eq. 9 in terms
+
+by a single Volterra integro~differ-~
+A direct route to this end is to
+
+of the "impulse' response, '® the
+
+response when the source term in Eq. 9 is concentrated as a delta function
+
+at t = §. Thus, if we denote E, by K; for this special case,
+9K, OK,
+Fri Ay Ky + Vag B; § (t-€) G(z) in core region (10)
+= 0 in external piping.
+The same initial and boundary conditions apply to Eqs. 9 and 10. Once the
+
+impulse response of the system is obtained, by using linear superposition
+and the properties of the delta function, we may set
+t
+E, (2,8) = [XK (z,t-8) [T(§) - T(o)] dt (11)
+0
+
+and from the above definition of Es together with the solution of Eq. 8,
+11
+
+t
+c; (2,8) = ¢, (2) + I RK, (z,£-8) [T(8) = T(o)] dt . (12)
+
+Finally we may obtain integral expressions for the central quantities of
+interest by substituting (12) in the "global" delayed neutron source terms
+defined by Eq. 2. Upon interchanging the order of the time integration
+
+and the space-lethargy integrations, these may be written in the form,
+
+No = ido 1
+
+*
+iC TF Tr MK (t-8) [T(&) - T(o)] dg (13)
+
+O “rt
+
+where we define,
+
+x H
+“10 = J I Cio2) £43) 6, (2,0) dz du, (14)
+* H .
+RK; (t-g) = I I K, (z,t-8) £4 (W 4 (z,u) dz du , (15)
+
+and 0 <z<H represents the region of the flow path in which the neutron flux
+and adjoint functions are non-zero.
+
+The kinetic equation (1) for the flux magnitude now becomes
+
+ 
+
+*
+_ 0-8 Y%0 cM ox
+dr/dt = S=—= T+] p+) TF J Kg (£28) [T() - T(o)] dg , (16)
+i i 0
+
+or if we define the effective fraction, Bie of 1 Por oup delayed neutrons
+
+emitted under conditions of steady-state circulation and stationary neutron
+
+population,
+
+_ iio
+ic FT (0) (17)
+
+™I
+I
+-
+12
+
+then the modified form of the neutron population kinetic equation is,
+
+- 8 By TC) A *
+dr/de = S==T1 +] S5—+] 5 [RK (£-0) [T(6) - T(0)] dg . (18)
+i i
+
+O “rt
+
+In this form, it may readily be seen that stationary conditions of the neu-
+tron population will prevail when the reactivity has a small positive mag-
+
+nitude equal to the net "loss" of B due to circulation, i.e.,
+o = B-)B, (19)
+i
+
+As a result of reformulating the kinetic equation as a single time-
+dependent integro-differential equation, it is possible to regard the cal-
+lation of the adjoint-weighted impulse responses, or kernel function, K,,
+as a fundamental element of circulating-fuel reactor-kinetics analysis.
+The remainder of this section, therefore, is devoted to obtaining explicit
+mathematical expressions for these functions.
+
+Since § is to be regarded as a fixed time in Eq. 10, one may simplify
+(10) by shifting the origin of time to this point. This is equivalent to
+replacing the variable t by u = t-£, where np is the "age" between the appli-
+cation of the impulse and the evaluation of the response. Denoting the
+unilateral Laplace transform of K, with respect to the variables nu by,
+
+K, (z38) = [ e °F K (z,u) du, (20)
+
+0 “—— 8
+
+we may obtain the transform of Eq. 10 as,
+
+_ _ 3K,
+sK, +A, K, +V—=
+i i i oz
+
+By G(z) in core region (21a)
+
+= 0 in external piping. (21h)
+
+Since the transformed equation can be treated as an ordinary differential
+equation, its solution, obeying the conditions of continuity along the cir-
+culation path, is easily obtained. The integration of (2la) along the path
+
+through the core yields,
+13
+
+1
+_ _ ~(s+2,)E 2 —(s+r,) (EB y
+RK, (z;8) = Ks (038) e * Ye + /8; e + Ve G(z") dz , (22a)
+0 c
+
+Where V. is the fluid velocity in the core region. Similarly, integration
+of (210) between z=H and z=0 (the entrance and exit of the external piping)
+results in,
+
+L
+=(s+1;) 7 —(shA)
+
+K, (038) = K, (H;s) e P = K, (H;s) e , (220)
+
+where L, "oe and TD are the effective length, fluid velocity, and residence
+time in the region designated as external piping.
+
+Equations 22a and 22b constitute the complete system of relations
+necessary to solve for the transforms of the kernel functions K, (z38).
+For example, setting z = H in (22a) and then substituting (22b) into (22a)
+
+results in the following relation for K, (H;s),
+
+H-z'
+~(str.)(t +t) H -(s+),)
+ZT (Hee) = ® (u- i" ep itv dz'
+K, (H;s) K, (H;s)e + I Be c  G(z") vo (23)
+
+where To = H/V, is the fluid residence time in the core region.
+
+We next consider the inversion of the transforms in Eqs. 22 and 23,
+in order to obtain the explicit relations for K; in the time domain. To
+accomplish this, while still retaining the general form for the functional
+dependence of the fission distribution, G(z), it is necessary to invoke
+some formal mathematical manipulations involving delta functions, whose
+rigorous justification requires the theory of generalized functions, or
+"distributions" (see Ref. 16, Appendix A). We will not attempt to present
+rigorous proofs here. Instead, after indicating these manipulations and
+
+the resulting formulas, we will discuss the results in terms of a specific
+14
+
+example which does not require these formal manipulations. In the de-
+velopment given below, use is made of the following important property of
+the Laplace transform:
+
+-as
+Translation Property: The inverse transform of the product e f(s)
+
+ 
+
+is f(t-a), where f(t) = 0 when t<O.
+
+To carry out the formal inversion of the transforms in Eq. 23, we
+interchange the order of the spatial integration and inversion, and employ
+the translation property in both terms on the right-hand side of the equa-
+
+tion. Thus
+
+H-z'
+
+ 
+
+“ALT H “2, 5)
+_ iT H-z' itv ry dz’
+K, (H,u) = K, (H,u - Top) e + f By S(u 7 )e c G(z") 7
+0 c Cc
+(24)
+where Tp = T, + is the total circuit time. Next, performing the spatial
+
+integration in the second term and again making use of the formal properties
+
+of the delta function, we obtain the basic recurrence relation,
+
+KR, (H,u) = 0 if u<0 (25a)
+=A Tp —Au
+kK; (H,u) = K, (H,p-1r)e + Bs e G(H~V 1) if Osnst (25h)
+=A Tp
+Ky (H,u) = K, (H,u-tp)e if WT (25¢)
+
+Note that we have formally included the "time-lagged" first term on the
+right hand side of (25b), although, by use of (25a), this term is identi-
+cally zero for Oust
+
+Application of a similar procedure to Eq. 22 results in,
+
+K, (z,u) = 0 if u<0 |, (26a)
+15
+
+Z
+z “A; (1 + 7 —ALH 2
+K, (z,u) = kK, (H,u-t - Vv) e c + B, e G(z-V 1) if Dsus - ,
+(265)
+z “A (ty + LR z
+K, (z,u) = Ky Eypp-t = Vv) e c if p> A , (26¢)
+
+where the functions K, (#,%) in the first term on the right hand of (26)
+are to be determined from the recurrence relations (25). By making use of
+Eq. 26 and the defining equation (15), we may also write a formal recur-
+
+*
+rence relation for the space-lethargy integrated kernel function, K; (un);
+
+%*
+K; (Ww) = 0 if u<o0 (27a)
+z
+H =A, (1 +5)
+% V %
+K, (wy = f f K, (H,p-1 - Zo) e =P Cc £44 (W ¢,(z,u) dz du
+ou c
+-A.u H ’
++8, e SE A! (z=V_u) £4, (uw) ¢_(z,u) dz du if 0 <u <7 (27D)
+Vuu
+c
+z
+H A. (t+ =
+* V %*
+K, w = J / Ky Hou=t = 2 e TP c £44 (W 9 (z,u) dz du if wT
+ou c
+
+(272)
+16
+
+Finally, by combining Eqs. 25 with Eq. 27¢, we may also obtain a recurrence
+relation which is based on the total circuit time, Tops and applies for arbi-
+
+trary values of H>Tos
+=A, T
+* _ * i'T
+K, (W = K; (u - Tle . (28)
+
+Although this relation is reasonably obvious from an intuitive standpoint,
+
+its formal proof may be carried out as follows. There are two cases to
+distinguish:
+
+(a)
+TpSHSTLHT . Rewrite Eq. 27¢ in the form,
+V (u-t.) (r+ 2)
+* _ fc T Zz. itp V *
+Kk, (w) = [ x, @, u-ty -7 Ye c £44 oy (z,u) dz du
+o u c
+(29)
+z
+B (r+ 2 .
++ f f K,(H,u-1_ - Ze ER ve f,.() ¢ (z,u) dz du .
+i P Vv di o
+V Gi=tp) u c
+
+The first term on the right hand side of (29) may be transformed by using
+Eq, 25¢, i.e.,
+
+z “Tp
+Ky @ou-ty - Vv) = Ky @ou-y - A - Top) e
+
+if 0 < z < 7 (u-tp) . (30)
+
+Similarly, the second term in (29) can be transformed using (250),
+17
+
+Zz. I iT
+K, (H,u-t - v = K, (H,u T 7 Toe +
+z
+“A, (u=1_ = =)
+i P v (a _ _z_. , _
+Be c cn V (u ™ 7) if V. (u Tp) < z < H. (31)
+Putting (30) and (31) into Eq. 29 results in
+x =A Tp H , (ry + £9) .
+K, (Ww) = e J I Ky Hyp - A - Top) e c £44 (0) 9 (z,u) dz du
+—AM H z *
++ B.e [ [ G(E-V (u-t_ = 39) £..(u) ¢_ (z,u) dz du
+i c P v di 0
+V (p-1..) u c
+c T
+=-A.T
+Lk i'T
+= Ry (u-tpe R (32)
+
+where the final result follows by applying Eq. 27b, with p replaced by
+
+H=Tops and by using the simple algebraic rearrangement,
+
+z
+H - v. (n= - 7)
+
+z - V (u=tp) . (33)
+
+(b)
+Top + T SHS2Ty . The required result follows immediately by
+putting Eq. 25¢ into Eq. 27¢, with u replaced by P=Tp Thus,
+
+: z
+-\.T., H “A(t + =
+* _ iT z_ _ v ck
+KR, (w = e f / K,H,u-1 7 Tipe c £44 (W ¢, (zw) dz du
+o u c
+-A.T
+_ itr _*
+= e K, (u=1,) . (34)
+
+Finally, the complete proof of the recurrence relation (28) for arbitrary
+
+values of yu follows from inductive application of the preceding results.
+18
+
+The system of relations expressed by Eqs. 25, 27, and 28 form a basis
+*
+for the calculation of the kernels, KR, (Ww. Explicitly, the problem of com-
+
+%
+puting Ky over the interval 0 < yu < 1. is reduced to numerical integration
+
+T
+of expressions involving the fission neutron source function, G(z), and the
+importance function 67 (2,0). The function K; (1) can then be extended to
+the interval HT, by application of the recurrence relation, Eq. 28. Such
+a procedure is readily adaptable to development of a digital algorithm for
+numerical calculation of these functions.
+
+Once the kernels, K; (0), are obtained, they can be applied in the so-
+lution of the integro-differential equation for the neutron population,
+Eq. 18, when an arbitrary variation of the reactivity is imposed. Because
+this part of the analysis, in a sense, subsidiary to the main theme of this
+memo (i.e., that of obtaining and interpreting expressions for the kernels),
+we will not pursue it in any detail here. Use of an integro-differential
+form of the neutron kinetic equation is common to some investigations of
+stationary-fuel reactor kinetics, and several approaches are possible for
+using the equation for numerical calculation of transients. Instead, we
+will attempt to gain further insight into the preceding mathematical de-
+
+scription by considering a special case which illustrates the nature of
+
+the solution.
+
+EXAMPLE OF DELAYED NEUTRON KERNEL CALCULATIONS
+
+One specific instance where analytical evaluation of the integrals
+implied in the preceding formulas is possible is that of a homogeneous
+slab reactor, through which fuel circulates in the direction of variation
+of the neutron flux. In fact, the specialization of the preceding formulas
+to this case reproduces results of some of the early studies in circulating-
+fuel reactor kinetics.® In addition to lending to simple interpretation,
+the results for this special case are of interest as a reference in evalu-
+ating various quadrature techniques of potential use in treating the more
+general inhomogeneous reactor problem (i.e., the case where the spatial de-
+pendences of the neutron flux and adjoint functions cannot be specified
+
+analytically, and complete numerical treatment of the problem is necessary).
+19
+
+In the special case, the flux and adjoint functions are proportional to
+sin mz/H, and for the purposes of the example, we can drop further con-
+sideration of the lethargy dependence. It is then possible to calculate
+the kernel functions in a more direct manner than used in the preceding
+derivations, by first performing the spatial integrations and then in-
+verting the Laplace transforms. The resulting expressions can be shown
+
+to be identical with those obtained by application of the preceding formu-
+
+%
+las. The expressions for KR; (H,1) and KR; (W which result in this case are,
+
+ 
+
+K, (H,u) = 0 if p< 0 (35a)
+—AH T™
+= Be sin T, if 0 <q <T. (35h)
+=A Tr :
+= KR; (H,u-1,) e if T, SH, (35¢)
+*
+K, (1) = 0 if u <0 (36a)
+(1 - La cos —H + Lin v if 0 <yuc<r
+T T T T -" — c
+—Au c c c
+= B.e +
+0 if Te <u = Tr
+0 if0<usr
++ B.e
+m(u-t )  (u=1) T(u=1_)
+= sin P_ _ _— cos - b (36D)
+m Te c Cc
+if TD <M 2 Tp
+“A. T
++ KF (um ) e iT if 1, <1 (36¢)
+i 4 T = * ©
+20
+
+Inspection of Eqs. 35 and 36 reveals several qualitative features of the
+impulse response functions for the precursor dynamics. As a result of im-
+pulse in the fission rate, occurring at yu = 0, additional precursors are
+produced in the distribution of the fundamental mode, throughout the core.
+The exit concentration, K, (8,1) begins to rise as the fluid containing
+these precursors leaves the core region, its time dependence corresponding
+to a superposition of the translated "modal" concentration, with a damping
+factor due to radioactive decay of the precursors. Following the comple=
+tion of one core transit time, the exit concentration change remains zero
+until the completion of the first circulation cycle. These concentration
+changes then have a periodic recurrence during further circulation cycles,
+with the changes always damped by the decay factor, e iM.
+
+The same general features describe the changes in the adjoint-weighted
+precursor concentrations, K; (1). In this case, however, the variation in
+the response function is smoothed by the integral weighting over the entire
+neutron flux region, at each instant of the circulation cycle. The time
+dependence of this function during one complete circulation cycle, with
+the radioactive decay factor suppressed, (i.e., the sum of the bracketed
+terms in Eq, 36b) is plotted in Fig. 1. Note that the function is sym-
+metric about nu = Tp/2, regardless of the relative values of T, and To
+
+Perhaps the most basic characteristics of the impulse response func-
+tions, exhibited by this example, is the (damped) periodicity in concen-
+trations corresponding to the circulation period, and the fact that the
+only damping introduced into the response functions is that due to radio-
+active decay. Put in other terms, the precursor impulse response function
+tends to exhibit a "memory" of the modal shape dependence of production by
+fission, which is diminished only by radioactive decay. The origin of
+this characteristic lies in the assumption, contained in our basic mathe-
+matical description, of a slug-flow regime throughout the circulation path.
+This description does not account for any effects of mixing, and therefore
+it gives rise to the basic characteristic of our solution — a translation
+of the precursor distributions in the direction of flow, superimposed on
+their radioactive decay. Now, it is apparent that the hydralie charac-
+teristics of any real circulating fuel system will give rise to non-
+
+negligible fluid mixing effects. One type of effect, that of radial mixing
+Delayed Neutron
+
+ORNL DWG 73-5138 &
+
+ 
+
+Kernel Function for a Homogeneous Slab Reactor
+
+12
+22
+
+which occurs as new precursors exit from the core and enter the external
+piping system, has already been mentioned. This gives rise to the neces-
+sity of averaging the channel exit concentrations over the radial direction
+before computing the concentrations subsequently reentering the core. How-
+ever, there will also be some degree of mixing along the direction of flow,
+before the precursors produced by the "primary" impulse re-enter the core
+for subsequent circulation cycles. Hence, mixing will likely have the ef-
+fect of attenuating the secondary peak concentrations additionally to that
+resulting from radioactive decay, and also of broadening the response inter-
+val during these secondary cycles. Ultimately, the precursors would tend
+to become uniformly mixed throughout the circulating system. The important
+point to emphasize is that, as long as the flow in the core is channeled,
+that portion of the weighted primary impulse response between the time of
+precursor production and the first exit from the core should have a magni-
+tude much closer to that derived through the procedure we have described,
+rather than one which assumes complete and instantaneous mixing in the
+core. The specific effects of mixing external to the core might be investi-~
+gated by introducing idealized "mixing chambers" along the path of flow ex-
+ternal to the core, or otherwise modeling the real system hydraulics. In
+this way, the influence of mixing on the concentrations of the original im-
+pulse of precursors on successive re-entries to the core could be syste-
+
+matically studied.
+DISCUSSION OF THE RESULTS AND FUTURE EXTENSIONS
+
+As was specified at the outset, the mathematical description in the
+preceding sections is limited in scope, and by no means constitutes a com-
+plete foundation for analysis of all types of circulating-fuel-reactor-
+kinetics problems. Perhaps the most important of these limitations was
+the assumption of negligible temperature feedback conditions. Even with
+these restrictions, however, several important features emerge from an
+examination of the kinetic description for this case. Their significance
+is best seen in reference to the analogous description for the stationary-
+fuel reactor. As Henry's derivation of the conventional global kinetic
+
+equations for this latter case shows,” the resulting equations governing
+23
+
+the changes in delayed neutron precursors have the form of ordinary dif-
+ferential equations, and the complete mathematical system, including the
+global equation for the amplitude of the neutron population, is a system
+of coupled ordinary differential equations in the time variable.
+
+By contrast, in attempting to obtain an analogous global kinetic
+description for the circulating-fuel reactor, one must abandon efforts to
+force the description (without introducing ad hoe approximations) into the
+conventional ordinary differential equation format; instead, it is neces-
+sary to work directly with the integro-differential equation for the neutron
+population amplitude. We should include the possibly obvious remark that
+this latter mathematical formalism can also be used in the case of the
+fixed«fuel reactor. (It is a trivial exercise to show that the kernal
+function, K;, for this case are proportional to eM) Because the global
+kinetic equations governing the precursor concentrations in a fixed-fuel re-
+actor have the form of linear, time-invariant ordinary differential equa-
+tions, the Laplace transforms of the kernel functions are simple rational
+algebraic expressions. For the circulating fuel reactor, however, we have
+seen that the transforms contain transcendental functions, whose inversion
+yields relations exhibiting the fluid translation effects.
+
+It may also be noted that multimode generalizations of the preceding
+description of the neutron kinetic equations can be developed. This gener-
+alization would give rise to coupled sets of integro~differential equations
+for the modal amplitudes of the neutron flux. However, for the analysis of
+many kinetics experiments of interest, the single-mode description is quite
+adequate, and therefore we have avoided this further complication in this
+memorandum,
+
+Another important feature arising from the preceding mathematical de-
+scription is the use of recurrence relations in describing the kernel func-
+tions for the precursor concentrations. These relations constitute a nat-
+ural means of expressing the particular physical attributes and boundary
+conditions of this problem, i.e., the periodicity effects in the delayed
+neutron source terms introduced by the steady recirculation of the fuel.
+One of the reasons why some of the mathematical descriptions of this same
+
+general problem, given in earlier studies,®*’ appear cumbersome and not
+
+easily amenable to interpretation, is because the attempt is made to develop
+24
+
+explicit formulas for the kernel functions by expansion of the functions
+in infinite series involving only elementary functions. Contrawise, we
+have shown that the preceding description readily admits interpretation.
+Moreover, the recurrence relations are readily adaptable to the develop-
+ment of a digital computer algorithm for kinetics analysis.
+
+The question arises as to what extent the general approach used in
+the preceding description of the precursor kinetics can be extended to the
+temperature~dependent kinetics. There are certain formal similarities in
+the basic equations governing the fuel temperatures variations and the pre-
+cursor concentration variations (Eq. 3) along the circulation path. In
+addition, the way in which the temperature field influences the global
+kinetic equation for the neutron population amplitude is through a reac—
+tivity feedback term approximated by a functional relationship similar to
+Eq. 1. In this analogy, C(x,t) would be replaced by the temperature
+T(r,t), and the weighting function would contain products of the direct
+and adjoint fluxes, rather than only the latter.!’ Aside from these simi-
+larities, however, there are also differences. In the MSRE, for example,
+a small fraction of the energy released in fission was deposited directly
+in the graphite moderator. Thus, the temperature equations must include
+coupling terms describing the heat transfer lags between fuel and graphite.
+Also, in the precursor equations, removal from the system only occurs through
+radioactive decay along the circulation path. The analogous treatment of
+the temperature response kernels corresponding to secondary passes of fuel
+through the reactor after the primary impulse in the power level would re-
+quire coupling with the temperature-kinetic equations for the heat exchanger
+and secondary coolant system. Hence, several extensions of the preceding
+mathematical description would be necessary before the method could be read-
+ily transcribed to analysis of power-temperature kinetics. However, in one
+interesting example where there was need to determine the reactivity per-
+turbations for short periods during observed power variations in the MSRE,
+the graphite heat~transfer lags and the secondary heat removal effects
+could be ignored. Hence, the integro-differential Eq. 18 was used directly
+to calculate these reactivity perturbations.*®
+
+In any extended investigation along these lines, we recommend that the
+
+use of the distributed-parameter approach and its method of decomposition
+25
+
+described in this memo be further explored in application to the power-
+temperature kinetics of circulating-fuel reactors. This includes the de-
+velopment of numerical procedures to calculate the kernels for precursor
+concentrations and temperatures, and systematic study of the effects of
+fluid mixing on these kernels. This approach should be considered as a
+parallel and complementary step to the development of approximate lumped-
+parameter models for the system dynamics. We do not imply that the dis-
+tributed-parameter approach should necessarily replace the use of the
+lumped-parameter models in analysis and design of control systems for these
+reactors. For many purposes, the lumped models are quite adequate, and
+moreover, are well suited to techniques of digital and analogue computation.
+They proved very useful in many of the studies of system kinetics of the
+MSRE.*? However, in certain types of large transients, differences in the
+treatment of spatial neutron importances and time-lag effects between these
+two approaches can give rise to significant differences in kinetic responses.’
+A combination of the two approaches may ultimately prove essential for studies
+of the dynamics and control of this type of reactor. Perhaps the basic mes-
+sage of this memo is that, without close attention to the most elemental form
+of the mathematical description of the physical system, together with its
+"aatural" mathematical decomposition, it is often difficult to determine
+
+the precise limitations of the lumped models. Thus, it would not be sur-
+prising if these investigations could result in improving the resolution
+
+of the latter models.
+26
+
+APPENDIX
+
+Derivation of the Global Kinetic Equation for the
+
+Neutron Population Amplitude
+
+To derive Equations 1 and 2 of this report, and hence establish the
+point-of~departure for analyzing the special aspects of circulating fuel
+systems, we will use a notationally abbreviated version of Henry's origi-
+nal derivation.” This employs a linear operator formulation of the gen-
+eral time-dependent reactor equations, as opposed to the detailed develop-
+ment in ref. 4, describing the physical constituents of the transport
+equation, The operator form of the equations describing time dependences
+
+of the neutron flux and precursor population are,
+
+6
+
+Po T - -1 29
+-L® + (1-B) £ ct Loa fC = va (AL)
+
+k i=1
+
+e
+aC
+Po _ i
+By 1° = Ay Cc, - y.ve, = 3% i=1, 2, ....6. (A2)
+e
+
+Here, ®(r,u,t) and C, (r,t) represent the local neutron flux and precursor
+densities, respectively. (We shall assume a description of the neutron
+flux in terms of space {r) and lethargy (u) variables as a starting point;
+Henry treats the more general case including directional variables, but
+this inclusion is not vital for our discussion.) The operator, L, is a
+time-dependent linear operator representing the net of all neutron loss
+processes (which includes leakage, absorptions, and energy transfer by
+scattering), and P is a time-dependent linear operator representing the
+total productions from fission, In Eq. Al, therefore, P¢ is the total rate
+at which prompt neutrons plus delayed precursors are produced at r; multi-
+
+plication of P% by 1-8 = 1 - ¥ Bs gives the total rate of production of
+i=1
+27
+
+of prompt neutrons at r, and multiplication by Bs gives the rate of pro-
+duction of 1 group precursors at r. In Eq. A2, P® is taken to be zero
+in that part of the circulating fuel system where the neutron population
+
+is negligible, Of the remaining symbols, A, is the decay constant for the
+
+i
+10 precursor group, and the quantities fs and f are lethargy distri-
+
+butions of prompt and delayed neutron Sromuction. i.e. the fractions of
+the total production which are emitted in specified lethargy ranges. The
+lower case velocity, yv(u), is the neutron velocity at lethargy u, and
+
+V is the circulation velocity of the fuel.
+
+Following Henry's derivation, the multiplication factor, ko, has been
+introduced to provide a correspondence with a reference state of the reac~
+tor, known to have stationary (critical) flux and precursor densities. In
+our case, we must further qualify this to mean stationary with no circu-
+lation of the fuel. We will denote the physical conditions corresponding
+to this stationary state by adding zero subscripts to the operators, flux,
+and precursor densities, The equations describing the reference state may
+then be obtained from Eqs. Al and A2 by setting the right hand sides equal
+to zero and setting the fluid velocity V = 0. Then, the precursor densi-
+
+ties may be eliminated from the equations, and it is easily shown that
+
+P
+
+“Lo po + EF =2¢o = 0, (A3)
+k°
+e
+where,
+_ 6
+FE = (1-8) £, + Le By fay (AL)
+
+To convert the "local kinetic equation for the neutron distribution
+(Eq. Al) to a "global" kinetic equation for a population magnitude, Henry
+
+multiples the former equation by an appropriate weighting function and
+
+ 
+
+Te will distinguish the flux distribution for the stationary case
+by use of lower case letters, with zero subscripts.
+28
+
+integrates over the independent variables of the neutron distribution.
+For the weighting function, it proves convenient to choose the static
+
+*
+adjoint flux, $s the solution of the adjoint equation corresponding to
+
+Eq. (A3). With asterisks indicating the adjoint operators of (A3), this is,
+
+- *
+xk Ip *
+Ly gs + Eel 40 = 0, (A5)
+1°
+e
+We will write the integrals using a scalar product notation, e.g.,
+* *
+(bo, LO) will represent the product of ¢, and Lo, integrated over the do-
+mains of the lethargy and spatial variables for the neutron population.
+*
+
+Therefore, by first forming the scalar product of ¢o with Eq. (Al), we
+
+have,
+
+6
+* * *
+“ldo, LO) + (1-B) (4s, £ =) + } A, (do, £.. C.)
+P © jo1 + di i
+e
++ 2h vr (A6)
+at TO
+
+Secondly, we form a similar scalar product of 9, the time-dependent so-
+lution of Eq. Al, with the adjoint equation for the reference stationary-
+
+state (Eq. A5),
+
+- %
+“10, Lo go) + (0, EEL Ty oo (a7)
+
+k
+e
+
+By using the definition (A4), we may rearrange the term associated with
+
+prompt neutron production in Eq. A6 as follows:
+
+2
+k
+
+* P % =
+(1-B) (do, £ — @) = (do, £
+Py
+
+2
+k
+
+EN *
+5 S 9) L B, (do, £4, — @) . (A8)
+e e e
+
+Applying this in Eq. A6 and subtracting Eq. A7 from Eq. A6 gives,
+29
+
+= — *
+* kk * %
+~95, L&) + (8, Lo 65) + (65, == 0) - (0, Eel 47)
+kg k,
+
+= 3 / * v
+= = Go, V0) (49)
+
+Henry now partitions the function @(r,u,t) into a product of a shape
+function, ¢{r,u,t) and a time function T(t), with a normalization re-
+
+quirement that
+
+1
+
+3 x -
+3 ($0, v ¢) = 0. (A10)
+
+By doing this, it can be seen that the right hand side of Eq. (A9) may
+
+be written,
+
+9 oF = ror Jt dar
+TOV OD = Ges v 8) Gp (ALD)
+
+and Eq. A9 becomes, on factoring out the time-dependent amplitude, T(t),
+
+ 
+
+- - *
+“65, Lo) = (4, Lo da) + (40, ZL 9) = (9, HEED 4T) 3 1(ey,
+LS LS
+6 6
+= 1B, Go, fu = 0) TC) + 1 A (8a, fy, C))
+i=l L3% i=1
+
+= eh vr (a12)
+30
+
+The group of terms inside the braces of this equation formally represents
+
+the algebraic difference between weighted increments in the production
+
+rate and weighted increments in the neutron loss rates. To put this net
+
+expression, or coefficient, into a form which does not depend explicitly
+
+on the normalization of the flux shapes, it is convenient to rewrite the
+
+coefficient as a fraction of the normalized production rate. The choice
+
+of this normalization factor is somewhat arbitrary; however, as demon-
+
+strated in ref. 4, it is useful to divide both sides of Eq. Al2 by the
+
+factor,
+
+F(t) = (bu, EP 0) . (A13)
+
+Thus, by factoring the time-dependent population magnitude, T(t), from
+
+all quantities on the left hand side of Eq. (A9) one obtains the "global"
+
+kinetic equation,
+
+Ay C; = dc (Ald)
+
+ 
+
+2 ar
+L
+
+where, by definition,
+
+p(t)
+
+ 
+
+ 
+
+1 * * % * TP
+F(t) -Go) + (9, Lo do) + (do, 0 ¢)
+e
+RINE
+- (sp, ILE | , (415)
+k
+e
+B __L : P Al6
+e
+31
+
+AE) = —2 (4s, VB), (A17)
+F(t)
+
+1 *
+Cc, (t) = TT (90, £44 Cc.) . (A18)
+10.
+
+11.
+
+12.
+
+13.
+
+14,
+
+15.
+
+32
+
+REFERENCES
+
+A. M. Weinberg and E. P. Wigner, The Physical Theory of Neutron Chain
+Reactors, p. vi, Univ. of Chicago Press (1958).
+
+H. Hurwitz, Jr., "Derivation and Integration of the Pile-Kinetic
+Equations", Nucleonics 5, 61—67, (July 1949).
+
+H. Soodak, "Pile Kinetics', Chapter 8 in The Science and Engineering
+of Nuclear Power, Vol. 2, C. Goodman, Ed., Addison-Wesley, Cambridge,
+Mass. (1940).
+
+A. F. Henry, "The Application of Reactor Kinetics to the Analysis of
+Experiments," Nucl. Sci. Eng., 3(1), 52—70 (January 1958).
+
+W. K. Ergen, "Kinetics of the Circulating-Fuel Nuclear Reactor",
+J. Appl. Phys., 25(6), 702—711, (June 1954).
+
+J. A. Fleck, Jr., "Kinetics of Circulating Reactors at Low Power",
+Nucleonies, 12(10), 52-55 (October, 1954).
+
+J. A. Fleck, Jr., "The Temperature-Dependent Kinetics of Circulating
+Fuel Reactors," BNL-357, (July 1955).
+
+J. MacPhee, "The Kinetics of Circulating Fuel Reactors", Nucl. Sec. Eng.,
+4(4), 588-597 (October 1958).
+
+B. Wolfe, "Reactivity Effects Produced by Fluid Motion in a Reactor
+Core", Nucl. Sci. Eng., 13(2), 80-90 (June 1962).
+
+M. J. Kolar and F. D. Miraldi, "The Temperature-Dependent Kinetics of
+a Two-Dimensional Circulating Fuel Reactor', ANS Trans., 11(1), 222-223
+(June 1968).
+
+C. W. Nestor, Jr., "ZORCH-An IBM-7090 Program for the Analysis of
+Simulated MSRE Power Transients with a Simplified Space Dependent
+Kinetics Model," ORNL-TM-345, (September 1962).
+
+S. J. Ball and T. W. Kerlin, "Stability Analysis of the Molten-Salt
+Reactor Experiment," ORNL-TM-1070, (December 1965).
+
+P. N. Haubenreich, A Catalog of Dynamics Analyses for Circulating-Fuel
+Reactors, ORNL internal memorandum (January 1973).
+
+A. M. Weinberg, and E. P. Wigner, The Physical Theory of Neutron Chain
+Reactors, pp. 406—410, University of Chicago Press (1958).
+
+B. E. Prince, "Period Measurements on the Molten-Salt Reactor Experi-
+ment During Fuel Circulation: Theory and Experiment," ORNL~TM-1626
+(October 1966).
+33
+
+16. L. A. Zadeh and C. A. Desoer, Linear System Theory: The State Space
+Approach, Chapters 3 and 8, McGraw-Hill (1963).
+
+17. B. E. Prince and J. R. Engel, "Temperature and Reactivity Coefficient
+Averaging in the MSRE," ORNL~TM-379 (October 1962).
+
+18. MSR Program Semianwu. Progr. Rep., Feb. 28, 1969, ORNL-4396,
+pp. 4345.
+
+19. MSR Program Semiannu. Progr. Rep., Feb. 29, 1968, ORNL-4254,
+pp. 48-49.
+ 
+1.
+2.
+3.
+b.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12,
+13.
+14-18.
+19.
+20.
+21.
+22.
+23.
+24,
+25,
+26.
+
+58.
+59.
+
+60,
+61.
+62.
+63.
+
+64.
+65-67,
+68-69.
+70-86.
+
+87.
+88-89,
+
+35
+
+ORNL~-TM-4179
+
+Internal Distribution
+
+J. L. Anderson 27. A, J, Miller
+
+S. J. Ball 28, R. L. Moore
+
+S. E. Beall 29, C. W. Nestor
+
+E. S. Bettis 30. L. C. Oakes
+
+E. G. Bohlmann 31. A. M. Perry
+
+R. B. Briggs 32-36, B. E. Prince
+
+0. W. Burke 37. J. C. Robinson
+
+W. B. Cottrell 38-39, M. W. Rosenthal
+
+F. L, Culler 40, Dunlap Scott
+
+S. J. Ditto 41. Myrtleen Sheldon
+
+J. R. Engel 42, W. H. Sides
+
+A. P, Fraas 43, M. J. Skinner
+
+D, N, Fry 44, 0. L. Smith
+
+P. N. Haubenreich 45. I. Spiewak
+
+H, W. Hoffman 46. D. A, Sundberg
+
+P. R. Kasten 47. D. B. Trauger
+
+T. W. Kerlin 48, J. C. Turnage
+
+M, I. Lundin 49, A. M. Weinberg
+
+R. N, Lyon 50. G. D. Whitman
+
+H. G. MacPherson 51-52, Central Research Library
+R. E. MacPherson 53. Y-12 Document Reference Section
+H., C. McCurdy 54-56. Laboratory Records Department
+
+57. Laboratory Records (RC)
+
+External Distribution
+
+D. R. deBoisblanc, Ebasco Services, Inc., 2 Rector St., New York,
+
+N.Y. 10006
+
+D. F. Cope, Atomic Energy Commission, RDT Site Office, ORNL, Oak
+Ridge, TN 37830
+
+N. Haberman, USAEC, Washington, D.C. 20545
+
+Kermit Laughon, AEC, RDT Site Office ORNL, Oak Ridge, TN 37830
+
+M. Shaw, USAEC, Washington, D.C. 20545
+
+R. C. Steffy, Jr., Tennessee Valley Authority, 540 Market St.,
+Chattanooga, TN 37401
+
+F. N., Watson, USAEC, Washington D.C. 20545
+
+Director, Division of Reactor Licensing, USAEC, Washington, D.C. 20545
+Director, Division of Reactor Standards, USAEC, Washington, D.C. 20545
+Manager, Technical Information Center, AEC (For ACRS Members)
+Research and Technical Support Division, AEC, ORO
+
+Technical Information Center, AEC

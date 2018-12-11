@@ -1,0 +1,7531 @@
+ 
+
+ 
+
+   
+ 
+  
+   
+  
+   
+ 
+      
+
+CENTRAL RESEARCH LIBRARY
+DOCUMENT COLLECTION
+OAK RIDGE NATIONAL LABORATORY
+operated by
+
+UNION CARBIDE CORPORATION ot
+NUCLEAR DIVISION
+
+for the
+U.S. ATOMIC ENERGY COMMISSION
+
+iii i
+
+Fr met
+
+    
+     
+  
+ 
+
+   
+
+723
+
+FREQUENCY-RESPONSE TESTING OF THE MOLTEN-SALT REACTOR EXPERIMENT
+(Thesis)
+
+R. C. Steffy, Jr.
+
+ 
+
+5 Submitted to the Graduate Council of the Univers
+
+ity of Tennessee in partial fulfillment
+} for the degree of Master of Science.
+ORNL-TM-2823
+
+Contract No. W-7405-eng-26
+
+REACTOR DIVISION
+
+FREQUENCY-RESPONSE TESTING OF THE
+MOLTEN-SALT REACTOR EXPERIMENT
+
+R. C. Steffy, Jr.
+
+Submitted to the Graduate Council of the University of Tennessee in
+partial fulfillment for the degree of Master of Science.
+
+MARCH 1970
+
+OAK RIDGE NATIONAL LABORATORY
+Oak Ridge, Tennessee
+operated by
+UNION CARBIDE CORPORATION
+for the
+U.S. ATOMIC ENERGY COMMISSION
+
+lil MARTIN ENERGY RESEARCH LIBRARIES
+
+3 445k 0514033 5
+
+H
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+iii
+
+TABLE OF CONTENTS
+
+LIST OF TABLES + « « & « «
+LIST OF FIGURES . . « « «
+ACKNOWLEDGEMENTS . . . . .
+
+ABSTRACT .» . . . . . +. . . .
+I. INTRODUCTION . . . . . .
+II. SYSTEM DESCRIPTION . . .
+
+Physical Description.
+
+Theoretical Predictions
+
+IIT. EXPERIMENTAL PROCEDURE .
+
+Test Patterns . . .
+
+Pseudorandom binary sequences. . . .
+
+Pseudorandom ternary sequences .
+
+Choice of Pseudorandom sequence
+
+Signal Generation . .
+Rod-jog tests . .
+Flux-demand tests.
+Rod-demand tests .
+
+Data Acquisition . .
+
+Data Analysis Methods
+Computing schemes
+Comparison of data
+
+IV, EXPERIMENTAL RESULTS . .
+
+2337 Fuel Loading .
+Rod~jog tests .
+Flux-demand tests.
+
+233) Fuel Loading . .
+Flux-demand tests.
+
+Rod~demand tests .
+
+analysis methods
+
+V. CONCLUSIONS AND RECOMMENDATIONS, . + + + .
+
+LIST OF REFERENCES . . . .
+APPENDIX . . . +. « « « « « &
+
+viii
+
+ix
+
+10
+13
+13
+13
+18
+20
+oh
+25
+26
+30
+32
+3h
+3h
+35
+51
+51
+52
+57
+6
+9k
+
+103
+
+106
+
+110
+iv
+
+LIST OF TABLES
+
+TABLE PAGE
+I. Composition of MSRE Fuel Salt . . . . . . +. v + v v o o L
+II. Neutronic Characteristics of MSRE with 2337 and 235U Fuel
+Salt at 1200°F. + vv 4 vv vb he ee ee ee ee. 6
+ITI. Results of Different Analysis Techniques at 0.01649 rad/sec
+When Applied to Eight Periods of Data . . . . . . . . Lo
+IV. Results of Different Analysis Techniques at 0.L9LTL rad/sec
+When Applied to Eight Periods of Data . + + « « + « . La
+V. Results of Different Analysis Techniques at 0.98947 rad/sec
+When Applied to Eight Periods of Data . . . . . . . . . Lo
+VI. Results of Analysis at a Harmonic Frequency (0.3298 rad/sec) hk
+VII. Results of Analysis at a Non-Harmonic Frequency (0.3463
+Tad/SEC). 4 4 vw hee ee ee ee eee eee eee Ls
+VIII. Pertinent Information Related to Each Test Performed for
+
+This Study . . « « vv i vv ee ee ee eee ee 111
+LIST OF FIGURES
+
+FIGURE
+1. Basic MSRE Flow Diagram . . + « « « 4 « ¢ 4 « « o o o o o
+2. Electromechanical Diagram of MSRE Control Rod Drive Train .
+3. MSRE Control-Rod Drive Unit Power Transmission Diagram. .
+k, Theoretical Frequency Response of 235y-Fueled MSRE for
+Several Power Levels . uo «oo oo oo so so so + 2 oo 0
+5. Theoretical Frequency Response of Z3JJ-Fueled MSRE for
+Several Power Levels + o « o « oo o so ¢ o 0 0 « oo oo
+6. Example of a Pseudorandom binary sequence, (a) Time Behavior,
+(b) Autocorrelation Function, and (c) Power Spectrum. . .
+7. Example of a Pseudorandom Ternary Sequence, (a) Time
+Behavior, (b) Autocorrelation Function, and (c) Power
+SPectrull  « «vv 4 4 + 6 6 + 4 a oe a + 8 se 2 5 8 eo 6 es
+8. Range Over Which the Power Content of a PRBS or PRIS is
+Essentially Flat for Sequences of Various Length and
+Bit Times + « +o «oo 6 oo so o o so © o 0 os 0 oo o o o oo
+9. Control-Rod Position and Flux for a Typical PRBS Rod-Jog Test,
+A Typical PRBS Flux-Demand Test and a Typical PRTS Flux-
+Demand TeST 4 ov « oo so o o o 6 o oo o ¢ o so os o o o so o a
+10. Circuitry Used for Generating the Pseudorandom Signals for
+the Flux-Demand Tests . . + + + « vv vv « o « o os o o
+11. Natural Filters for One-Period Analysis and for Eight-
+
+Period Analysis o o +o o « o 0 o © o so 0 4 o 8s 0 0 0 0
+
+PAGE
+
+11
+
+12
+
+15
+
+19
+
+23
+
+27
+
+29
+
+37
+vi
+
+FIGURE PAGE
+12. Shape of the Analysis Filter Employed by the CPSD Technique
+
+for Various Values of the Damping Factor, Lo eee. L8
+13. Frequency-Response Results Obtained by Analyzing a Test Case
+
+Using the CPSD Analysis Scheme with Various Values of the
+
+Damping Factor, § . « « + « 4 vv 4 v 4 4 eo 0 4 eee. Lg
+14. Correlation Function and Power Spectrum Results from a
+
+Rod-Jog Test. +o vv 4 4 vv 0 vv 4 4 6 6 ov 0 oo oo ou 53
+15. Frequency-Response Results from Rod-Jog Tests , + + + + . . 57
+16. Correlation Function and Power Spectrum Results from a Flux-
+
+Demand Test Using a PRBS Test Pattern . . . . . . . . . . 59
+17. Frequency-Response Results from a Flux-Demand Test with the
+
+Reactor at 5 Mw with U-235 Fuel + + + + + 4 v « « & o « 62
+18. Frequency-Response Results from a Flux-Demand Test with the
+
+Reactor at 2 Mw with U-235 Fuel . . . + +. vv « + + . . . 66
+19. Correlation Function and Power Spectrum Results from a
+
+Flux-Demand Test Using a PRTS Test Pattern . . . . . . . 67
+20. Frequency-Response Results from a Flux-Demand Test Performed
+
+on the #®U-Fueled Reactor Using a PRTS Test Pattern, . . 70
+21. Correlation Function and Power Spectrum Results from a Flux-
+
+Demand Test Using a "Non-Symmetric'" PRTS Test Pattern . . 72
+22. Frequency-Response Results from Flux-Demand Tests Performed
+
+on the #U-Fueled Reactor Using "Non-Symmetric" PRTS
+
+Test Patterns . + v «0 vv i i i i he he ee ee ee 5
+vii
+
+FIGURE PAGE
+23, Examples of the Uncontrolled Neutron Flux During Periods of
+
+8 Mw Power Operation for the ZU Fuel loading and the
+
+233) Fuel LOBAING o + + o o o oo 0 + 0 0 ee ee ee oe 78
+oli, Frequency-Response Results from Flux-Demand Tests Using
+
+PRES Test Patterns Performed on the £2U-Fueled Reactor . 79
+25. Frequency-Response Results from Flux-Demand Tests Using
+
+PRTS Test Patterns Performed on the Z3AJ-Fueled Reactor . 86
+26. Frequency-Response Results from Rod-Demand Tests Using PRBS
+
+Test Patterns Performed on the £>%J-Fueled Reactor. . . . 95
+27. TFrequency-Response Results from Two Periods of a Rod-Demand
+
+Test Using a 242 x 4 PRTS Test Pattern. . . . . . . . . . 100
+viii
+
+ACKNOWLEDGEMENT
+
+The author wishes to thank Dr. T, W. Kerlin for his guidance in
+the direction, for his expert instruction in the theoretical phases of
+this study, and for his assistance in the data-interpretation.
+Mr. S. J. Ball was responsible for the design of much of the electronic
+circuitry used in the testing, was a helpful consultant for all phases
+of the testing, and was very helpful when computer-related problems
+occurred, His assistance is gratefully acknowledged. The author wishes
+to acknowledge Mr. J. L. Lucius for his help with computer problems.
+
+The cooperation of the entire staff at the MSRE is appreciated.
+ix
+ABSTRACT
+
+Tests to determine the neutron flux-to-reactivity frequency response
+were performed on the Molten Salt Reactor Experiment with the reactor at
+various power levels between zero and full power and with the reactor
+fueled with a 2%U fuel mixture and a 23% fuel mixture. Test patterns
+employed were pseudorandom binary sequences (PRBS) and pseudorandom ter-
+nary sequences (PRIS) of various sequence lengths and minimum-pulse-
+duration times. In some tests reactivity (control-rod position) was
+forced to follow the test pattern, and in other tests the neutron flux was
+forced to follow the test pattern. The experimental results were analyzed
+by several different methods and the results were compared.
+
+The frequency response of the uncontrolled reactor system was found
+to be in good agreement with theoretical predictions for both the 235U ang
+2337 fuel loadings. There were no indications of response characteristics
+that might cause control or safety problems.
+
+The power spectra for the various sequences were flat over the ex-
+pected ranges and variations in the sequence specification changed the
+Power spectra in the expected manner with no anomalous changes. A diagram
+is presented which makes specification of the spectral characteristics for
+a particular sequence immediate.
+
+For the 275U fuel loading, results of the flux-controlled testing
+using PRBS's and PRTS's were adequate, but for the 223y fuel loading,
+additional system noise coupled with equipment limitations caused ex-
+cessive scatter in the frequency-response results for both type sequences,
+
+For the 2337 fueled system, a closed-loop method of positioning the
+control rod and use of a PRBS was necessary to obtain acceptable results.
+Use of a PRTS with this method of control-rod positioning caused intro-
+duction of errors in the indicated control-rod position rendering the test
+results unacceptable.
+
+Experimental data were purposely analyzed at non-harmonic frequencies
+showing that careful specification of the analysis frequency is necessary
+for meaningful results. In data containing a large amount of noise, the
+results of analysis of the same data by the different techniques were
+found to contain anomalous differences, particularly at the first few har-
+monic frequencies, Analysis of the data by the different methods for low-
+noise tests gave results which were in excellent agreement,
+
+Keywords: frequency-response testing, MSRE, pseudorandom binary se-
+
+quences, pseudorandom ternary sequences, signal generation, Fourier analysis,
+235 23
+J
+CHAPTER I
+INTRODUCTION
+
+The dynamic response of a nuclear reactor may be characterized by
+several methods, 2 One of the more useful methods is the determination
+of the power-to-reactivity frequency response of the uncontrolled reactor.
+Mathematical models are usually formulated which predict the frequency
+response before the reactor is in operation. These same models are
+frequently used in application of \stability criteria, such as the
+familiar Nyquist stability criterion? or determination of the eigen-
+values of the system matrix, 2,3 Stability criteria can seldom be
+"measured" so the adequacy of the mathematical models must be determined
+by some other means. Determination of the adequacy of a model is important
+since it is entirely possible that analysis of a mathematical model will
+show a reactor to be stable yet the mathematical model may be incapable
+of accurately describing the actual response of the system.
+
+One method by which the adequacy of a model may be determined is to
+compare the theoretical frequency response with the experimentally de-
+termined frequency response. Perhaps more important is that, regardless
+
+of the agreement between the predicted and observed response, once the
+
+*
+Superscript numbers refer to similarly numbered references in the
+List of References.
+experimental frequency response is determined the dynamic response char-
+acteristics of the actual system are known and this is the information
+of primary interest.
+
+The frequency response of the £2°U-fueled Molten-Salt Reactor Experi-
+ment (MSRE) was predicted by Ball and Kerlin® and the results of the
+initial, experimental, frequency-response tests were reported by the same
+authors. ® The purpose of the work reported herein was to continue the
+experimental tests throughout reactor operation with 2357 as the fissile
+material and then to continue the testing program throughout reactor
+operation with 23% as the fissile material. Variations were made in
+testing signals and testing techniques and the effects of these variations
+
+on the experimentally determined frequency response were noted.
+CHAPTER IT
+SYSTEM DESCRIPTION
+I. PHYSICAL DESCRIPTION
+
+The MSRE is a liquid-fueled, graphite-moderated, thermal reactor.
+The liquid fuel is composed of the fluorides of uranium, zirconium,
+lithium, and beryllium in the proportions shown in Table I. The liquid
+in the secondary loop is composed entirely of LiF (70 mole percent) and
+BeFs. At full power, the reactor produces about 8 Mw of power which is
+dissipated to the atmosphere by an air-cooled radiator through which about
+2 x 10° cfm of air is forced. Figure 1 shows the basic flow diagram for
+the MSRE.
+
+The basic differences between the dynamic behavior of the MSRE and
+most other #3°U-fueled reactors arise due to the circulating fuel. The
+most apparent effect of the fuel circulation is the birth of delayed neu-
+trons in the external loop; indeed, the fuel circulation lowered the
+effective fraction of delayed neutrons born in the core from .0067 to
+.00Lk for the U-235 fuel loading and from .0026 to .0017 for the
+U-233 fuel loading.* It requires about 17 sec for fuel leaving the core
+region to reenter the core, and at higher powers the effects of fuel salt
+reentering the core with a temperature which is representative of the
+power level 17 sec earlier also has a pronounced effect on the dynamic
+behavior of the neutron flux. Table II lists certain important facts
+about the neutronics of the MSRE, particularly those which affect the dy =~
+
+namic response of the reactor.
+TABLE I
+
+COMPOSITION OF MSRE FUEL SALT
+
+ 
+
+ 
+
+ 
+
+235) Fuel Loading” 233] fuel Loading?
+(Mole %) (Mole %)
+LiF 65 64.5
+BeF5 29.1 30.2
+ZrF 5 5.2
+UF, 0.9 0.1kL
+ISOTOPIC URANIUM CONCENTRATIONS
+(Atom 9) (Atom %)
+233 0 84.7
+234y 0.3 6.9
+23%); 35 2,5
+2367 0.3 0.1
+238y 6h. h 5.8
+
+ 
+
+ 
+
+Molten-Salt Reactor Program Semiannual Progress
+
+Report, July 31, 1964, USAEC Report ORNL-3708, Oak Ridge
+National Laboratory, p. 231, (November 1964).
+
+Molten-Salt Reactor Program Semianmual Progress
+
+Report, February 28, 1969, USAEC Report ORNL-L4396, Oak Ridge
+National Laboratory, p. 130,
+ORNL-LR-DWG. 56870R¢
+
+COOLANT
+
+PUMP
+
+    
+
+OVERFLOW
+TANK
+
+    
+ 
+ 
+
+I FREEZE
+FLANGE
+
+ 
+  
+  
+  
+
+ 
+
+   
+   
+
+COOLANT ||
+| CELL
+I REACTOR 4 I
+Il VESSEL I
+I REACTOR CELL RADIATOR Il
+I! I
+LE—— _—m= = m= — == —_— 300°F
+
+ 
+ 
+
+ 
+
+ 
+ 
+
+200,000 cfm
+100°F
+
+    
+
+COOLANT
+DRAIN TANK
+SPARE ~~ FILL AND FLUSH (44 cu 11)
+FILL AND DRAIN TANK TANK
+DRAIN TANK (73 cu tt) (73 cu ft)
+(73 cu ft)
+FIGURE 1. Basic MSRE flow diagram,
+
+I
+
+I
+I
+TABLE IT
+
+NEUTRONIC CHARACTERISTICS OF MSRE
+WITH 233 and ©75U FUEL SALT at 1200°F
+
+ 
+
+ 
+
+233 Fuel 2357 Fuel
+Minimum Critical Uranium Loading”
+. b
+Concentration (g U/liter sal) 15.82 33.064
+Total Uranium Inventory (kg) 32.8 207.5
+Prompt Neutron Generation Time (sec) L.o x 107% 2.h x 107%
+Reactivity Coefficients®
+Fuel Salt Temperature (°F)~?! -6.13 x 107° -4.1 x 10°%
+Graphite Temperature [(°F)~ 1] -3.23 x 10°° -l,0 x 107°
+Total Temperature [(°F)~1] -9.36 x 107° -8.1 x 10°°
+Fuel Salt Density +. 447 0.182
+Graphite Density £ +. hhk 0.767
+Uranium Concentration +.389 0.23L
+Effective Delayed Neutron Fractions
+Fuel Stationary 0.64 x 1073 6.66 x 1073
+Fuel Circulating 1.71 x 1072 L.Lhh x 1073
+Reactivity Change Due to
+Fuel Circulation (% &k/k) -.093 -0.222
+
+ 
+
+%Fuel not circulating, control rods withdrawn to upper limits.
+
+b
+2357 only.
+
+“Based on 73.2 ft° of fuel salt at 1200°F, in circulating system
+and drain tanks.
+
+Ypased on a final enrichment of 33% 25°,
+
+®At initial critical concentration. Where units are shown,
+coefficients for variable x are of the form &k/ksx; otherwise, coef-
+ficients are of the form xgk/kdx.
+
+THighly enriched in the fissionable isotope (91.5% 233 or 93% 2357,
+Source: Haubenreich, P., N. et al., "MSRE Design and Operations Report,
+
+Part V-A, Safety Analysis of Operation with 23U," USAEC Report ORNL-TM-
+2111, Oak Ridge National Laboratory, p. 41, (February 1968).
+Since the reactivity perturbations for the experimental tests re-
+ported herein were introduced by control rod movement, a brief description
+of the control mechanism will be given, The reactor is controlled by
+three control rods which are positioned in thimbles near the vertical
+centerline of the core and are inserted into or withdrawn from the core
+as demanded. Normal rod movement (as opposed to a rod scram) is achieved
+by activating a single-phase reversible-drive motor. This, in turn,
+drives a chain which is attached to a flexible cable that is threaded
+with beads of the poison, gadolinium oxide. The cable maneuvers around
+two 30° bends in the thimble before reaching the core centerline position.
+The three control rods are essentially identical in every respect;
+however, during operation, one of the rods is positioned farther into
+the core and is used as a regulating rod. It was through movement of
+this rod that reactivity perturbations for the dynamics tests were
+introduced,
+
+A schematic diagram of the control-rod drive train is shown in
+Figure 2, and a detailed schematic of the drive unit assembly is shown
+in Figure 3. These are shown in detail in order to give the reader a
+feel for the complexity of the control rod assembly so that the problems
+encountered in trying to determine the exact position of the lower end
+cf the control rod might be better appreciated.
+
+A complete description of the MSRE physical plant is given in
+Reference 7, and a description of the instrumentation is given in
+
+Reference 8.
+ORNL-OWG 63 -8391R
+INPUT TO SIZE 18 SYNCHRO CONTROL
+
+TRANSFORMER, PART OF TORQUE
+AMPLIFYING ROD POSITION TRANS- ry
+MITTER IN SHIM REGULATING ROD
+LIMIT SWITCH ASSEMBLY
+
+INPUT SIGNAL TO Q-2560 TORQUE
+AMPLIFIED ROD POSITION POTEN-~
+TIOMETER DRIVES IN LOGGER-
+COMPUTER ROOM
+
+ 
+
+ 
+
+TO POSITION READOUTS SYNCRO NO.2
+IN CONTROL ROOM «= COARSE 60° PER INCH
+OF ROD MOTION
+
+ 
+
+POSITION rm
+POTENTIOMETER
+ROD POSITION
+INPUT TO SAFETY SYSTEM «ttre
+
+TO SAFETY
+SYSTEM
+
+ 
+
+REDUCTION
+GEARING
+
+   
+      
+ 
+  
+   
+
+ 
+
+SYNCHRO NO.{
+5° PER INCH
+OF ROD MOTION
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+DRIVE
+
+ELECTROMECHANICAL SPROCKET
+
+CLUTCH
+
+ 
+
+ 
+
+)
+
+ 
+
+  
+  
+   
+    
+
+SPROCKET
+
+REDUCTION CHAIN
+
+GEARING
+INCLUDES
+REVERSE
+LOCKING
+
+N.- 1-T0-1 GEARS
+
+ 
+
+ 
+
+AIR FLOW
+
+OVERRUNNIN
+€ © TO COOL ROD
+
+CLUTCH
+
+FLEXIBLE
+TUBULAR ROD
+SUPPORT
+
+ 
+
+V=0.5in./sec
+
+ 
+
+Zr
+
+ 
+
+POISON ELEMENTS
+
+THIMBLE —
+
+HORIZONTAL
+
+GRAPHITE BARS — GRID PLATE
+
+ 
+
+ 
+
+CORE VESSEL —"™
+
+FIGURE 2. Electromechanical diagram of MSRE control rod drive train.
+ORNL-DWG 66-3915A
+
+RATIOS: FINE SYNCHRO ROTATION 60°
+
+ 
+
+   
+ 
+  
+ 
+  
+  
+ 
+     
+ 
+ 
+  
+
+ 
+
+ 
+
+ 
+
+ROD TRAVEL in.
+COARSE SYNCHRO ROTATION _ 5° 52T, 32D0P
+ROD TRAVEL in.
+T POTENTIOMETER
+POT. ROTATION __ 5° 30T, 320P SINGLE TURN
+ROD TRAVEL = in. 52T, 320P 1000
+P " 1"
+781, 320 COARSE" SYNCHRO
+26T, 32DP SIZE 3
+26T, 32DP
+787, 32DP 39T, 32DP
+
+"FINE" SYNCHRO
+
+SPROCKET, 64T PITCH
+SIZE 18
+
+CIRCUMFERENCE
+4.00 INCHES
+
+SPROCKET CHAIN
+Ya-in. PITCH
+
+ELECTROMAGNETIC
+CLUTCH, 32 v dc
+
+0.24 amp, ELECTROID CO.
+NO. 2EC-26CC-8-8
+
+   
+   
+ 
+  
+
+26T, 32DP
+54T, 24DP
+54T, 24DP
+
+OVERRUNNING CLUTCH WORM WHEEL
+
+     
+   
+ 
+
+  
+
+FORMSPRAG TYPE FS/05 52T, 24DP
+WORM, 24DP, SINGLE THREAD Co,
+@ 54T, 24DP
+447, 240P 7
+40T, 24DP
+147, 24DP
+14T, 24DP
+
+SERVO MOTOR, 115 v,
+,25w, 2¢ — of
+
+DIEHL CO. MOTOR | BO ¢PS: 25w, 2¢
+rer aa MBLY | ac TACHOMETER
+
+ 
+
+ 
+
+ 
+
+BLOWER
+
+24T, 2LDP means 24 teeth on diametral pitch of 2k.
+
+FIGURE 3. MSRE control-rod drive unit power transmission diagram,
+10
+II. THEORETICAL PREDICTIONS OF FREQUENCY RESPONSE
+
+The mathematical model? which was used to predict the frequency
+response of the 235y-fueled MSRE divided the reactor core into 18 fuel
+lumps and 9 graphite lumps. The external loop (coolant system and heat
+exchanger included) was also modeled using a lumped parameter model.
+Results of the initial dynamics tests® were in excellent agreement with
+the predictions, so the same basic model was used to predict the response
+of the 23¥j-fueled system.>
+
+Figures 4 and 5 show the theoretical neutron level-to-reactivity
+frequency responses for the two fuels. In general, the theoretical curves
+will also be shown with the experimental data and are shown here for
+comparison purposes.
+
+For the higher power levels, an outstanding feature of these plots
+
+ 
+
+is the dip in the magnitude-ratio curves at about 0.24 rad/sec and
+
+dn
+> No-8k ?
+the associated "bumps" in the phase angle, The frequency at which these
+occur corresponds to the time required for the fuel to circulate completely
+around the primary loop (25 sec) and is caused by the return to the core
+region of fuel which has temperature representative of the power level
+25 sec earlier. With the 275U fuel, the dips in the magnitude-ratio
+curves were relatively small and were not verified in the initial testing
+program, but for the Z33y fuel, the predicted dips were larger and it
+was hoped that these could be verified. For a given fuel loading, the mag-
+nitude of the dip is a function of the salt mixing” that occurs during the
+
+circulation around the primary system. More mixing causes a less pronounced
+
+dip.
+11
+
+ORNL-DWG 69-12243
+
+i
+|
+of
+
+104
+
+ZERO POWER
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+8 Mw
+5M
+_ 30 w \
+£ \
+5 © \ N
+< N
+T N /I\ = |
+a N hee? pup? A i
+-30 NI Mw NNT gant SN
+~ a
+TT
+Lt]
+-60
+ZERO POWER
+1
+furore] dg
+-950
+1073 1072 107! 10° 10!
+
+FREQUENCY (rad /sec)
+
+FIGURE 4, Theoretical frequency response of 235U-fueled MSRE for
+several power levels,
+12
+
+4 ORNL-DWG 69-12244
+
+ZERO POWER
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+x
+cj
+51°
+Lf
+NN
+NU!
+30 \
+= NI N
+oO
+: \ A
+w 0
+3 SUNN
+I N SON
+a N hy
+N NN
+-30 NLA
+Lt
+al
+1] “\
+-60 “Tero POWER
+~~ N
+A]
+-90 3 _2 - 0 1
+10° 2 5 10° 2 5 10 2 5 10° 2 5 10
+
+FREQUENCY (rad/sec)
+
+FIGURE 5, Theoretical frequency response of 2337-fueled MSRE for
+several power levels.
+13
+
+CHAPTER ITI
+EXPERIMENTAL PROCEDURE
+
+In all experimental frequency-response tests which utilize a de-
+terministic input signal, the same general procedure must be followed:
+(1) the pattern of the input signal which is to be used must be determined,
+(2) the input signal must be imposed upon the system, (3) the values of
+the input signal and the resulting output must be determined and recorded,
+and (4) the record signals must be analyzed. While there is great variety
+as to how each of these steps may be performed, they must each be per-
+formed before an experimental frequency-response determination can be made,
+In this section, the method by which we satisfied each of these require-
+
+ments will be discussed.
+I. TEST PATTERNS
+
+The basic test patterns which were used in the experimental determi-
+nation of the frequency response of the MSRE were the pseudorandom binary
+
+sequence (PRBS) and the pseudorandom ternary sequence (PRTS).
+
+Pseudorandom Binary Sequences!©
+*
+Certain periodic, binary (two-level) sequences of square-wave pulses
+
+(bits) are known to have the following important mathematical properties:
+
+ 
+
+*
+The two levels which a PRBS assumes are 0 and +1 during the genera-
+
+tion stages, particularly if the shift register technique mentioned later
+
+1s used. However, the values a PRBS assumes in practice are +1 and -1.
+14
+
+(1) The autocorrelation function of the sequence has a spike at lag
+time equal zero and an identical spike at lag times of nT
+(n is an integer and T is the period length). The value of the
+auto correlation function is slightly less than zero between the
+spikes.
+
+(2) The power spectrum of the sequence is flat over a wide frequency
+range. The particular frequency range over which the spectrum
+is flat depends on the particular sequence and the pulse width.
+
+An example of a PRBS, its autocorrelation function, and power spectrum
+are shown in Figure 6. The analytical expression for the autocorrelation
+
+function of a PRBS is:
+Z + 1
+
+ 
+
+ 
+
+Ci11(T) = 1-( T Yt, 0 =r =T/7;
+Cii(7) = -1/z, T/2z <t<T- T/Z;
+Ci1(7) = -Z + iE z Ly, T-T/2<1=<T.
+where
+
+C11(7) = the autocorrelation function,
+
+T = lag time,
+
+7Z = number of bits in sequence,
+
+T = period length, and
+
+T/z = pulse width of a single pulse (bit).
+
+The Fourier series coefficients of the autocorrelation function define
+the power spectrum of the PRBS. Since the autocorrelation function is
+periodic, the power spectrum will be non-zero only at harmonic frequencies.
+
+The amplitude of the power spectrum at these frequencies is given by: 1°
+15
+
+ORNL-DWG 69-9522R2
+
+ 
+
+0 2 4 6 8 10 12 14
+TIME INCREMENT
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1.0 A
+£ 0.5
+<
+3
+oO
+= 0
+FR da \ /
+° (5)
+-0.5
+0 2 4q 6 8 10 12 14
+CORRELATION TIME
+1.0 id
+¢
+0.5 *
+¢
+(c) °
+Oe So ® ©¢ oo °
+0 2 4 6 8 10 12 14
+
+FREQUENCY (harmonic number)
+
+FIGURE 6. Example of a pseudorandom binary sequence, (a) time behavior
+
+J
+(b) autocorrelation function, and (c) power spectrum.
+16
+
+A(k) = 1/22 for k = 0,
+sin ky | ©
+2(2 + 1 Z
+A(k) = Bes lL) = for 0<k = 1, 2, 3, ---,
+Z
+where
+. th .
+A(k) = power in k harmonic, and
+Z = number of bits in the sequence.
+
+True random noise has a power spectrum which is flat over all fre-
+quencies and the autocorrelation function of random noise has a spike at
+the origin and is zero elsewhere. The similarity between the properties
+of random noise and a pseudorandom binary sequence 1s apparent.
+
+Only sequences which contain certain numbers of bits (e.g., the
+number of bits in one period of a PRBS must be odd) possess the possi-
+bility of exhibiting the aforementioned properties. Usable sequences are
+generally classed according to the number of bits in a period with the
+most popular classifications being:
+
+(1) Maximal length©,11»12 or m-sequences which have possible periods
+
+of N = 2" - 1 (n is an integer).
+
+12513 yhich have
+
+(2) Sequences derived from quadratic residue code
+periods N = Lk - 1, N being a prime number and k an integer.
+Other classifications include biquadratic residue, octic residue, twin
+prime, and Hall sequences. A description of each of these sequences.
+may be found in Reference 12.
+
+Knowing the number of bits in the sequence is not sufficient to
+
+ensure that it will possess the mathematical properties previously
+17
+
+mentioned. These rules merely state that it is possible to construct a
+sequence of this length which will possess these properties. The actual
+ordering of the bits in a sequence to get the desired mathematical
+features is tedious and on-line signal generation does not appear prac-
+tical except for the m-sequences, which have periods oft - 1, These may
+be generated using the shift-register technique which is well suited for
+digital computers. The shift register technique is based on linear re-
+cursive relationships in which the first stage is replaced, after each
+shift, by adding the contents of certain other stages using Modulo-2
+arithmetic. The details of shift register techniques and the stages
+which must be added to obtain a particular sequence are well documented
+
+in the literature.,1©>1t?
+
+Tt is worthwhile to note here that if the proper
+stages in the register are not used in the feedback to the first stage
+a periodic sequence will be generated, but it will not have period
+So _ 1 and will not possess the desired mathematical features. A large
+amount of work has been presented in the open literature on the generation
+and properties of pseudorandom binary sequences, 071°
+
+From an experimental testing standpoint, the flat power spectrum of
+the PRBS is an important property. For by changing the reactivity in the
+form of a PRBS, the power-to-reactivity frequency response may be de-
+termined for a wide frequency band with one experiment; whereas, the
+
+more conventional method of using a special control-rod oscillator re-
+
+quires a test for each frequency cof analysis.
+18
+
+Pseudorandom Ternary Sequencesl®
+
+A pseudorandom ternary sequence is a beriodic ternary (three-level)”
+sequence of square-wave pulses which possess the following important
+mathematical properties:
+
+(1) The autocorrelation function of the sequence has a positive
+spike at lag time equal zero and an identical spike at lag times
+of nT. There is also a negative spike of equal magnitude at
+lag times of n T/2.
+
+(2) Like the PRBS, the power spectrum of a PRTS is flat over a wide
+frequency range; however, only the odd harmonics contain signal
+power. Therefore, for similar tests, the PRIS would have fewer
+useful harmonics than a PRBS but more signal power in the good
+harmonics.
+
+An example of a PRTS, its autocorrelation function, and power spec-
+
+trum are shown in Figure 7. The analytical expression for the autocor-
+
+relation function of a PRTS is
+
+T
+
+Ci1a(7) = 1-24, O=t=% ;
+
+T T T
+Cii(t) = 0, Z7ET=5 C5
+Con(r) o E2_Z r_oT_ 1
+NT) = TT Tp To op =T=35;
+Cole) - BRE T___T.T.
+A 2p =T=o* gs
+
+T T T
+Cia(1) = 0, ptz=t=T-7;
+
+7 T
+
+Cia(1) = pT1t+tl-12, T-,=1=T
+
+ 
+
+*
+In generating the ternary signal the levels normally used are 0,1,2,
+
+but in actual application the levels used are 0,1,-1. Note that the levels
+0,1,2 correspond to 0,1,-1, not to -1,0,+1 as is sometimes quoted in the
+literature.®® Effects of this difference are shown in Sect. 1 of Chap IV.
+19
+
+ORNL-DWG 69-9523R
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+6) 2 4 6 8 10 12 14
+TIME INCREMENT
+2 T |
+Tp —
+"
+- 1
+c
+3
+a
+°
+= 0
+a
+°
+(0)
+—{
+0 2 4 6 8 10 12 14
+CORRELATION TIME
+10°
+°
+0.5
+(c) *
+0 ® @®. ° o
+6) 2 4 6 8 10 12 14
+
+FREQUENCY (harmonic number)
+
+FIGURE 7. Example of a pseudorandom ternary sequence, (a) time behavior,
+(b) autocorrelation function, and (c) power spectrum.
+20
+
+where the symbols have the same meaning as before, Note that the auto-
+correlation function is normalized to equal 1 at t = OQ,
+
+The amplitudes of the power spectrum at the harmonic frequencies are
+
+ 
+
+given by
+A(k) = © for k = 0 or even
+and sin kn =
+8(z + 1 Z
+A(k) = Heel) — for k = odd,
+z Kn
+3 Z
+
+A PRTS has an average value of zero while the average value of a
+PRBS is non-zero (but is small), For zero-power reactors or for systems
+in which variable drift is a problem, the zero average value of a PRTS
+may be a distinct advantage, particularly for short seguence tests in
+which the deviation of the average value of the PRBS is farther from zero.
+
+Another advantage of the PRTS is that it discriminates®® against
+system nonlinearities and therefore gives a better estimate of the
+"linearized" system response, This should be particularly useful for
+testing systems which are strongly nonlinear. The primary disadvantage
+of the PRTS is the three levels. In practice it is often considerably
+more difficult to achieve three levels with available system hardware than
+it is two.
+
+More information about the properties of pseudorandom ternary se-
+
+quences may be found in References 11, 1k, 19, 20, 21, and 22.
+
+Choice of Pseudorandom Seguence
+The anticipated response of the system under investigation usually
+
+dictates the desired frequency spectrum of the input signal. One usually
+21
+
+desires to have a spectrum with sufficient signal power over the range
+where the system has a resonance peak or other interesting characteristic.
+For a periodic signal, the lowest frequency containing information
+
+is, of course, the fundamental frequency,
+
+fo = 2x/T , (1)
+where
+fo = fundamental frequency (rad/sec), and
+T = period length, sec.
+
+For a pseudorandom binary or ternary sequence, a "rule of thumb" for the
+highest frequency at which one should plan to obtain useful information
+is the harmonic frequency at which the signal power is equal to one-half
+the power in the fundamental harmonic. This is not a physical limitation,
+but serves as a guide in planning tests. The actual physical high-
+frequency limit for obtaining realistic results 1s based on the noise
+level in the system and data-sampling rate.
+
+Tt can be shownl© that the harmonic with about one-half the ampli-
+tude of the fundamental harmonic is given approximately by the relation,
+k, = 0.hh7,
+
+where
+
+fn
+
+harmonic number of the harmonic with one-half the amplitude
+of the fundamental, and
+
+Z
+
+1
+
+number of bits in the sequence.
+
+Tt follows that
+
+and
+
+H
+1]
+
+0.4hz 2n/T (3)
+22
+
+Rearranging this expression yields
+
+ 
+
+. 88x
+T/Z = r, (4)
+but T/Z is just the duration of one bit so
+. . . . 88x
+basic bit duration = T/2 = EE (5)
+
+This implies that specification of a high-frequency limit also specifies
+the basic bit duration. Note that the upper frequency limit is indepen-
+dent of all other properties of the sequence,
+
+With these basic relations, the graph shown in Figure 8 can be con-
+structed. This graph presents all of the information one needs to deter-
+mine the properties of the sequence he must use to obtain information from
+a single test which will cover the frequency range of interest. The funda-
+mental frequency line is a plot of the relation given in (1). The
+half-power frequency lines which are parallel to the fundamental frequency
+line were calculated from equation (3). The basic bit duration lines were
+determined from equation (5).
+
+Use of this graph is perhaps best illustrated using an example. Sup-
+pose one had a system for which he desired to know the frequency response
+in the frequency range between 0.01 and 0.5 rad/sec. From the graph we
+see that the period required to give a fundamental frequency of 0.01
+rad/sec is about 630 sec. So that the signal power at the higher fre-
+quencies is not less than half the signal power at the lower frequencies,
+
+a bit time of about 5 seconds or less is necessary. The only remaining para-
+meter to specify is the sequence length. A 127-bit PRBS would fit nicely
+with the hypothesized conditions to give results over the required fre-
+
+quency range. With the specified bit time, shorter sequences would
+23
+
+ORNL-DWG 69-9524R2
+
+POSSIBLE PRBS OR
+
+PRTS m-SEQUENCES BASIC BIT DURATION (sec)
+~ 9 =9
+PN § FY 105 2 1 05 0204005
+
+  
+   
+
+ 
+
+HALF-POWER
+FREQUENCY
+rd
+
+103 LINES
+
+PERIOD (sec)
+
+102 FUNDAMENTAL
+FREQUENCY
+
+10!
+1073 1072 107! 10° 10! 102
+
+FREQUENCY (rad/sec)
+
+FIGURE 8. Range over which the power content of a PRBS or PRIS is
+essentially flat for sequences of various length and bit times.
+2h
+
+increase the fundamental frequency, but shifting to longer sequences
+would lower the fundamental frequency and probably be acceptable to the
+experimentor,
+
+It is apparent from this example that there is a spectrum of accept-
+able sequences, bit times, and/or period lengths available for each par-
+ticular application. It is this variety which emphasizes the utility of
+a diagram such as that in Figure 8. The effect on the other parameters
+caused by changing one item in a test specification may be directly ob-
+served. This diagram was found to be very useful in planning the dynamic
+
+tests reported herein.
+
+IT. SIGNAL GENERATION
+
+There are two stages in imposing the desired signal on a system.
+First, the signal itself must be generated in some manner and then the
+system hardware must be forced to follow the signal. Since a Bunker-Ramo-
+340 digital computer was a part of the equipment at the MSRE site, it pre-
+sented the opportunity for generating either a PRBS or PRTS using the
+shift register technique. A machine language program was written by
+5. J. Ball of the Instrumentation and Controls Division at Oak Ridge
+National Laboratory that allowed the use of a variety of different se-
+quence lengths for both the PRBS and PRTS., The consequence of this pro-
+gram was the opening and closing of relays in the BR-340. By applying
+the appropriate voltages across these relays and summing them, a pseudo-
+
+random signal could be generated easily,
+25
+
+There were three distinctly different methods used for getting the
+generated sequence into the reactor system. The methods for implementing
+these signals will be presented in this section with brief discussion of
+the advantages and/or disadvantages of each, but most of the discussion
+
+will be deferred to the results section (Chapter IV).
+
+Rod-Jog Tests
+
+The rod-jog method was used extensively during the early testing
+program by Kerlin and Ball.® The BR-340 was used to generate the desired
+sequences and integrator and comparator circuits on an Electronic Associates,
+Inc., Model TR-10, analogue computer were used to determine "on" times for
+the control rod drive motor. When switching from a positive to a negative
+position in the sequence, the rod was required to insert for x sec., where
+the time, x, was adjustable. The inverse jump in a sequence instigated a
+withdraw of y sec., where y was adjustable and separate from x. Since
+there was no automatic feedback from the rod position, the rod-jog tech-
+nique was an open-loop procedure. Details of the rod-jog method are given
+in the report by Kerlin and Ball.®
+
+The rod-jog technique worked when the control-rod system was new and
+tight. However, as the system aged, frequent adjustments became neces-
+sary on the timing circuits to keep the rods jogging at the same average
+position without drifting. This method was attempted several times near
+the end of operation with the £7U-fuel and, with one exception, produced
+
+unacceptable rod positions.
+26
+
+Flux-Demand Tests
+
+Since the rod-jog method was not able to provide accurate and repro-
+ducible rod positions, it was necessary to either change the testing
+method or discontinue the testing program. This led to development of
+the flux-demand technique,
+
+At low powers (<1 Mw) the servo system in the MSRE compares the neu-
+tron flux as indicated by the compensated ion chambers with a manually-
+demanded flux and moves the control rod as necessary to meet the demand.
+At powers greater than 1 Mw, the neutron flux is compared with a "computed"
+flux-demand and the servo again moves the rod to meet the demand. (The
+computed flux-demand is based on temperature drop across the core, neu-
+tron flux, and core-outlet temperature.) Since the servo moved the con-
+trol rod to match the actual flux with the demand, the flux could be
+forced to simulate any reasonable test pattern by putting in a false
+flux-demand at low-power levels or a false computed flux-demand at high
+bowers.
+
+This was the reverse of the normal Procedure in that the predeter-
+mined signal shape was imposed on the output and the input (rod position)
+became the dependent variable, Figure 9 shows control rod position and
+flux plotted as a function of time for representative rod-jog and flux-
+demand tests. In the rod-jog example, the rod position resembles the
+shape of an ideal PRBS and the flux is determined by the system characte-
+ristics; whereas, the plots of the flux-demand test show that flux follows
+the test pattern and the rod is the free agent. The two levels of the
+PRBS flux-demand are apparent and may be compared with the three levels
+
+of the PRTS flux~-demand signal,
+27
+
+ 
+
+ORNL-DWG 68-9668
+
+ 
+
+ 
+
+NOV
+
+TT | Commer
+ROD POSITION
+PAASASMAMIIM, +, UL, > ade, SEN o>
+J Y 7s “ J “ ! L ; : J
+SY ; WEA dy . ., 3
+Nw Massa ey pT) ALLAN asin
+FLUX \__/
+PRBS ROD - JOG
+1 1 |
+I T I
+- ROD POSITION
+4 2 -~,
+~ MN i in \
+MM 1 FAR oN, ° “.
+“a . vg, xs , . ALAN
+A . 1 5 . : .
+v. ; vor . - » A id 3
+oe vf : ‘ vod v7 A
+LI cl La 5 $ . iy “
+nS LH wr “ kK \
+on
+=
+F
+3S
+>
+x
+& FLUX
+Ee ~~ n FA —
+a IN a FA ™ FH i § %
+x \ § : HE J . : 5 Son Soon : :
+<< S J . 2 . : " “
+
+AS :
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+PRBS FLUX- DEMAND
+| | |
+I T I
+ROD POSITION
+~ . My DW tS
+a Fa 4 % 3h v, Mle.
+Pe sw, Yo NER “y . av oF
+Sh ALi om rE
+$ " . - . “ v . J -
+Le al ¢ * YF 2S
+- iW 3 Ww’
+FLUX
+! mtn, Frm
+MNS $ % $
+J / Ls
+PRTS FLUX - DEMAND
+ee. ~ 1 1 J | _ _
+o} 0.5 1.0 1.5 2.0
+TIME (min)
+
+FIGURE 9. Control-rod
+test, a typical
+demand test,
+
+position and flux for a typical PRBS rod-jog
+
+PRBS flux-demand test and a typical PRIS flux-
+28
+
+For the flux-demand technique, the pseudorandom signals were generated
+with the circuits shown in Figure 10. Reference voltages from the TR-10
+were fed to the BR-340-operated relays. The relays were off-on type so
+they either fed the reference voltage or zero voltage back to the TR-10.
+For the PRBS, if the relay were closed the up part of the sequence was
+created. Opening the relay formed the down part of the sequence. For
+the PRTS, two relays were operated with the following results: relay No. 1
+and No.2 open created the down pulse, No. 1 open and No. 2 closed formed
+the middle position, and No. 1 closed and No. 2 open caused the up part
+of the sequence. Both relays closed was not allowed. Attenuator No. 9
+reduced the signal to the voltage which was needed for the particular
+test. At the start of a test, attenuator No. 9 was normally set at zero
+and then increased slowly until the desired signal magnitude was achieved.
+Normally the flux was allowed to deviate from steady state by 5 to 10%.
+
+Attenuator No. 11 was adjusted so that the output of the second
+amplifier corresponded to the steady-state flux with the pseudorandom
+sequence lmposed on it, This voltage was inserted into the servo circuits
+at the indicated point in Figure 10c.
+
+The flux-demand method offered distinct advantages over the rod-jog
+technique. During testing, adjustments of the times which the rod with-
+drew and inserted were not necessary and there were no problems with sys-
+tem drift since the servo automatically maintained the actual flux approxi-
+mately equal to the demanded flux. The basic disadvantage of this tech-
+nique was that it worked the control rods rather vigorously, especially
+after the more responsive £7 fuel was added to the system. While exer-
+
+cising the control rods is not in itself particularly undesirable, design
+29
+
+ORNL~-DWG 69-9525
+
+PRBS SIGNAL GENERATOR
+- =A TTT TTT TTT TT TT Tr ee hi
+
+0 TO -10v F.S.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+(a) ’
+© 10
+SERVO
+CIRCUITS
+PRTS SIGNAL GENERATOR
+—_—— 8
+1
+1) TT | 1 |
+0 TO —10v F.S.
+(5) [ | | 0 TO ~10v F.5
+Yo ! TO
+(2) SERVO
+i | CIRCUITS
+—— 1 |
+BR-340 I acto A
+("Rot _____Sss.Blas _____ J
+SIMPLIFIED SERVO CIRCUITRY SERVO
+cRoM ok J ok, AMPLIFIER
+ABOVE * WW “MA :
+CIRCUITRY _ +6v OPERATES
+R-237 5 v R-252 = RODS
+FLUX
+(c) CLAMPS (-0.33 TO 6v) REF. ORNL DWG
+FROM 30k RC 13-12-53
+ION & YW
+CHAMBER R-250
+y OPERATIONAL AMPLIFIER
+2 X = GAIN —M\— RESISTOR —o" o— SWITCH
+Y= IDENTIFICATION NUMBER
+—(¥)— ATTENUATOR l rea
+Y = IDENTIFICATION NUMBER T
+
+FIGURE 10. Circuitry used for generating the pseudorandom signals for
+the flux-demand tests.
+30
+
+of the rods in the MSRE provided loose coupling between the actual and
+indicated rod positions and every rod movement carried with it the in-
+herent probability of an erroneous indication.
+
+The problems encountered while using the flux-demand technique were
+primarily a result of hardware limitations in the MSRE and do not repre-
+sent an inherent flaw in the technique; however, excessive noise contami-
+nation in the frequency range near a resonance peak can cause erratic
+results when the flux is being controlled to give a flat power spectrum.
+This will be discussed in Chapter IV in relation to some of the experi-
+mental results. When using this technique, the experimental testing was
+less laborious for the experimentors and equipment set-up time was less
+than when testing with the other methods. For zero-power reactors or for
+reactors in which power drift tends to be a problem, this technique
+would appear to be particularly advantageous. Since the flux is the con-
+trolled parameter, it cannot drift and if the system is at steady state
+initially, pseudorandom perturbations of the flux about the steady-state
+
+value will not cause an imbalance between power and flux.
+
+Rod-Demand Tests
+
+The disadvantages of the flux-demand tests caused a final change in
+technique back to rod-controlled testing. However, instead of controlling
+the rod position indirectly by adjusting the time the drive motor remained
+activated, the technique was changed to directly control the rod position.
+This was achieved by comparing the actual rod position with a demanded
+position and keeping the drive motor activated until the desired position
+
+was realized. Since there was feedback from the rod position, this was a
+31
+
+closed loop system. The result of this technique was to yield rod po-
+sitions which were like those obtained from an ideal rod-jog test and to
+circumvent the problem of excessive rod motion that was present with the
+flux-demand technique.
+
+Since the control-rod servo is really a comparator circuit, it was
+well suited for comparing actual rod position with demanded position, and
+it was already wired to move the control rods if the input voltages
+(normally flux and flux-demand) were unbalanced. It was necessary to
+disconnect the normal inputs to the servo system and to replace them with
+actual and demanded rod positions.
+
+The circuits for generating the pseudorandom perturbations were
+basically the same as those used with the flux-demand technique (Fig. 10).
+The ion-chamber connection in Figure 10c was replaced with a signal deter-
+mined by the actual rod position and attenuator 11 in Figure 10a or
+Figure 10b was adjusted so that the output of the servo amplifier was
+approximately zero before starting a test.
+
+One operational problem related to the rod-demand technique should
+be pointed out. The rod was moved when the actual rod position was out-
+side the deadband around the demanded position. When the demand shifted
+at the start of a new pulse, the rod moved until the voltages were again
+matched, at which time the rod would start coasting to a stop. The servo
+circuits could be adjusted to start the stopping process so that the rod
+did not coast through the deadband and instigate an adjustment in the
+opposite direction, When a PRBS test signal was being employed, the po-
+
+sition at which the rod stopped within the deadband was not important,
+32
+
+hence the adjustments were simple. (The important point was that the rod
+did stop within the deadband and at the same position each time.) However,
+the three levels of a PRIS signal caused this adjustment to become more
+involved. The middle position of the PRTS might occur after a pulse with
+plus or minus polarity. If the rod tended to coast nearly through the
+deadband before actually stopping, then the middle position of the PRTS
+was satisfied by two different actual rod positions. The only adjustment
+which resulted in a unique value for the middle position was a setting
+which caused the rod to stop midway of the deadband. There were also
+slight differences in the upper and lower positions depending on whether
+the rod had started from the middle position or the extremity position.
+For the MSRE, the rod-demand technique meshed with equipment limi-
+tations in such a way that it was the most effective method for frequency-
+
+response testing.
+
+IIT. DATA ACQUISITION
+
+For all of the tests the reactivity perturbations were initiated by
+control rod movement. As described earlier, control rod movement is con-
+trolled by a drive motor, and a series of gears connects the rod drive
+to the position synchros. These indicators feed a voltage to the
+position indicators in the control room and to the on-line BR-3L0
+digital computer. For the dynamics tests, the signal gcing to the BR-340
+was intercepted and fed into an analog computer (TR-10) where the signal
+was amplified by a factor of ~ 10 and low-pass filtered using a filter
+
+with a l-sec time constant. This amplified and filtered signal was then
+33
+
+fed back into the BR-34O where it was digitized every 0.25 sec and re-
+corded on magnetic tape. This frequency of digitization made possible
+the storing of useful information which had frequency components as high
+as ~ 12 rad/sec; however, most of the test patterns we employed had little
+signal power above 1 rad/sec. A Filter with a l-sec time
+constant was used to attenuate high-frequency information and prevent
+aliasing effects.
+
+The nuclear power was determined by recording the signal supplied
+by a compensated ion chamber, The primary purpose of this chamber was
+to feed the linear-power recorders which are located in the main control
+room. This signal was also fed into the TR-10 and amplified (by ~ 10)
+and filtered using a l-sec time constant. The signal was then fed to the
+BR-3L40 where it was digitized and recorded every 0.25 sec, along with the
+rod position. The rod position and flux signals were not digitized si-
+multaneously. There was actually about 0.08-sec difference between the
+digitizations. This causes the calculated phase angle to be in error by
+0.5° at 0.1 rad/sec and 5.0° at 1.0 rad/sec. This error was not recog-
+nized until after most of the results had already been obtained and since
+this was not a significant error in the frequency range of interest, the
+calculations were not repeated.
+
+In order to be compatible with the analysis programs, the data were
+
+retrieved from the magnetic tapes and stored on punched cards.
+3h
+IV. DATA ANALYSIS METHODS
+
+The purpose of the dynamics tests was the determination of
+the power-to-reactivity frequency response, After the data from a par-
+ticular test was reduced to a stack of IBM cards, there were three methods
+
+for gleaning the desired information.
+
+Computing Schemes
+
+FOURCO. The most direct and fastest method for determining the
+frequency response was to immediately Fourier transform the digitized
+data and then divide the transformed cutput (flux) by the transformed
+input (rod position) for the desired result. This was accomplished using
+a computer code called FOURCOZ? which uses a digital simulation of an
+
+24 Analysis of 8 cycles of
+
+analog method reported by Broome and Cooper.
+a 127-bit PRBS with a 3-sec bit time (12,192 input and output data
+points) required only 1.1 min on the IBM 360/75 for calculation of the
+
+frequency response at 60 different frequencies.
+
+CPSD. This analysis method utilized a digital simulation of an ana-
+log filtering technique for obtaining cross-power spectral density, CPSD,
+functions.®>2> This code calculated the power spectrum of the input sig-
+nal and the cross-power spectrum of the input and output signals and di-
+vided the cross-power spectrum by the input power spectrum to obtain the
+frequency response at each frequency of analysis. The key feature of
+this code is an adjustable filter width about the analysis frequency.
+
+Analysis time for 8 cycles of a 127-bit PRBS with a 3-sec bit time
+
+on the IBM 360/75 was 2.0 min for analysis at 60 frequencies.
+35
+
+CABS. 2° The third calculational procedure was more involved. The
+autocorrelation functions of the input and output signals were calculated
+and the cross-correlation function of the signals was calculated. These
+were then Fourier transformed to obtain the input, output, and cross-
+power spectra. The input power spectrum was then divided into the cross-
+power spectrum to obtain the frequency response. The correlation functions,
+power spectra and frequency response were then machine plotted.
+
+Calculation time using CABS for the previously mentioned case was
+
+10 minutes.
+Comparison of Data Analysis Methods
+
+CABS and FOURCO. If an experimental test is composed of several
+consecutive periods of the same sequence, there are several choices
+available for analyzing the data. One method is to evaluate a single
+Fourier integral of all the data. Alternatively, the data may be split
+into segments (each consisting of one or more periods of data) and a
+Fourier integral for each segment can be determined, and the resulting
+estimates can be averaged.
+
+The basic difference between analyzing one period of data at a time
+or several periods of data as one period is to change the effective
+filter, or spectral-window, width. If a Fourier analysis is performed
+at frequency wy, where ay is a harmonic frequency, the magnitude of the
+harmonic will actually be composed of all the signal strength under the
+
+filter area. The "natural filter," H(w,), is%7
+
+sin (©; - ®
+Hey) = Sloe
+36
+
+where Tm = the time duration of the data being analyzed,
+
+w frequency (rad/sec), and
+
+wr frequency of analysis.
+
+This function has a maximum value when w equals wy; and has null points
+where (©, - w) Tm equals an even multiple of gx. Suppose Tm is equal to
+one period, T, of a periodic signal then every second null point occurs
+on an adjacent harmonic; however, if eight cycles of data were analyzed,
+there would be 16 null points between the harmonic frequencies (see
+Figure 11). For an ideal Periodic signal either filter would be suitable
+since there would be spectral power at only the harmonic frequencies.
+However, actual signals are not ideal and there is always random noise
+contamination at every frequency; furthermore, if the harmonic frequencies
+are not specified very precisely, contamination resulting from the side
+lobes and the adjacent harmonics not intersecting at a null point may be
+significant. Using the "eight-period" filter tends to discriminate against
+hoise contamination except very close to the actual harmonic frequency
+but causes large errors if the frequency at which the analysis is being
+performed is not the actual harmonic frequency. Note that performing an
+analysis at a frequency which is midway between adjacent harmonics would
+not allow any of the signal strength of the periodic signal to enter into
+the result since the filter would null at every harmonic frequency; hence,
+analysis at these frequencies apparently provides a means of calculating
+the system noise level which was present during the testing. However,
+
+for this type analysis to be valid, it is necessary that the frequencies
+which are midway between the true harmonics of the minimum period length
+
+actually be harmonic frequencies also. For example, if only one period
+37
+
+ORNL— DWG 69— 11726
+10
+
+EIGHT- PERIOD FILTER
+
+ 
+
+08 ! TYPICAL SPECTRAL
+- ONE-PERIOD FILTER POWER FROM IDEAL
+PERIODIC HN
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.6 »
+
+ 
+
+04
+
+ 
+
+0.2
+
+FILTER MAGNITUDE
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+-0.2 N—" v NS
+-04
+3r an -r r er 3r
+wT I “TT wy wt T wt wT
+
+FIGURE 11. Natural filters for one-period analysis and for eight-
+period analysis,
+38
+
+of data is available, analysis at mid-harmonic frequencies is not mean-
+ingful; however, if two periods of data are analyzed, the frequencies mid-
+way between the adjacent power-containing harmonics are harmonics of the
+total period and analysis at these frequencies is allowed.
+
+For the direct Fourier analysis method (FOURCO), application of the
+preceding argument is straight-forward, but for the CABS program it is
+more complex, With the CABS program, it is normal to work with at least
+two cycles of data, since correlation functions are usually calculated
+for lag times as long as one period. Calculation of the correlation
+functions immediately reduces the data to one period length (fixing the
+filter shape) which is then Fourier analyzed. Using more periods of data
+in the correlation function determination improves the statistics of the
+correlation function. The alternate method of using fewer periods in the
+correlation function analysis yields worse statistics for the correlation
+function but more power spectrum results at the same frequency, which may
+then be ensemble averaged. The choice is whether to ensemble average
+before or after Fourier transforming. Mathematically, at least for ideal
+signals, the end result is the same. Since the correlation functions are
+informative in themselves, the usual method is to reduce the data to
+correlation functions of one-period length before Fourier analyzing.
+
+To determine the effect of varying the periods of data which were
+analyzed, eight periods of a 127-bit PRBS with a 3-sec bit time (this
+will be written as 127 x 3 in the remainder of this text) were analyzed
+several different ways, All eight periods were analyzed as one period —
+
+giving a very narrow filter — then four periods were analyzed as one
+39
+
+period and the two answers averaged. This was repeated using two periods
+and one period of data at a time, The results are shown in Tables III,
+IV, and V for different analysis frequencies.
+
+For the calculations in which the data were separated into smaller
+segments, there is significant scatter in the data; however, the averages
+agree fairly well with CABS appearing to exhibit a slight trend upward
+in magnitude ratio as the data are more finely divided. With FOURCO, the
+final averaged result does not appear to be significantly affected by per-
+forming the analyses on one period at a time even though the individual
+results for the analysis which used one period at a time are very erratic,
+particularly at the lower frequencies.
+
+The coherence-function values listed in Tables III, IV, and V for
+the CABS analysis are a measure of the degree to which an output of a
+system is related to a certain input. Mathematically the coherence
+
+*
+function is defined®® by the relation,
+
+2
+52 _ 16, (2)
+- 2
+6, (£) 6, (7)
+where
+y = the coherence function,
+Gy (©) = the Fourier transform of the cross-correlation function
+at frequency f,
+6, (f) = the spectral power of the input signal (rod position in
+this text) at frequency f, and
+6, (%) = the spectral power of the output signal (flux) at
+
+frequency f.
+
+ 
+
+¥
+In this text, only the positive root of yZ is considered to have
+physical meaning.
+Lo
+
+TABLE IIT
+
+RESULTS OF DIFFERENT ANALYSIS TECHNIQUES AT 0.016491 RAD /SEC
+WHEN APPLIED TO EIGHT PERIODS OF DATA
+
+ 
+
+ 
+
+No. of Periods
+
+ 
+
+ 
+
+Analyzed
+As One CABS FOURCO
+Phase Phase
+M.R.®  (Deg.) con’ M.R.” _ (Deg.)
+8 356 69 .95 360 70
+L 373 63 .96 37h an
+357 i —98 352 18
+Avg. © 365 67 .97 363 71
+std. pev.® 11 6 14 16 10
+2 430 49 .91 361 69
+435 52 1.00 393 Lo
+361 61 .99 395 72
+28h 67 _.88 310 IT
+Avg. 378 60 Lob 365 69
+Std. Dev. 71 6 .06 Lo 8
+1 530 59
+235 99
+Le 52
+333 69
+336 80
+L51 T7
+312 66
+319 86
+Avg. 372 Th
+Std. Dev. 98 15
+
+ 
+
+“Magnitude Ratio
+Peoherence Function
+C
+
+Average
+
+dStandard Deviation
+RESULTS OF DIFFERENT ANALYSIS TECHNIQUES AT O.L49LTh RAD/SEC
+WHEN APPLIED TO EIGHT PERIODS OF DATA
+
+41
+
+TABLE IV
+
+ 
+
+ 
+
+ 
+
+No. of Periods
+Analyzed ‘
+As One CABS FOURCO
+Phase Phase
+a a
+M.R. (Deg. ) Coh. M.R. (Deg.)
+8 671 -26 1.00 670 -26
+4 694 -28 1.02 667 -27
+: 663 21 1.01 672 -2k
+Avg.© 679 -25 1.02 670 -26
+Std. Dev. 22 5 .01 hy 2
+2 650 -27 1.01 hop -22
+775 -29 1.01 Tht -31
+585 -21 1.02 600 -23
+150 -30 1.00 Ths zak
+Avg, 690 -27 1.01 671 -25
+Std. Dev. 88 L .01 87 4
+1 645 -9
+57h -37
+768 ~-28
+729 -35
+575 -20
+62k -25
+748 -22
+Th3 -27
+Avg. 676 -25
+Std. Dev. 80 9
+
+ 
+
+"Magnitude Ratio
+Pe oherence Function
+c
+
+Average
+
+dS tandard Deviation
+Lo
+
+TABLE V
+
+RESULTS OF DIFFERENT ANALYSIS TECHNIQUES AT 0.98947 RAD/SEC
+
+WHEN APPLIED TO EIGHT PERIODS OF DATA
+
+ 
+
+ 
+
+ 
+
+No. of Periods
+Analyzed
+As One CABS FOURCO
+a Phase b a Phase
+M.R. (Deg.) Coh. M.R. (Deg.)
+8 509 -L6 1.02 536 -L6
+ly 511 -43 .99 512 -L45
+51k -20 97 549 -L8
+Avg. © 513 -L7 .98 531 -h7
+Std. Dev. 2 5 .01 26 2
+2 510 -46 .93 539 -43
+533 -43 1.04 485 -L7
+Lo ~-63 .97 513 -48
+52k -60 95 582 -L8
+Avg. 510 -53 97 530 - by
+Std. Dev, 27 10 0k Lh 2
+1 580 -L2
+500 ~43
+500 -48
+470 -h7
+L87 45
+548 -51
+566 -LL
+603 -52
+Avg. 532 -bT
+Std. Dev, Lg 4
+
+ 
+
+“Magnitude Ratio
+
+Pooherence Function
+Average
+
+Standard Deviation
+43
+
+For a causal system in which there is only one input and one ouput
+and no noise contamination, the measured coherence function should be
+unity. For real systems in which ideal conditions do not exist, the co-
+herence function should be between 0 and 1. If two totally unrelated
+signals were analyzed, the coherence function would be zero. Some of
+the experimentally-determined values for the coherence function shown in
+Tables III, IV, and V are slightly greater than 1.0. This is theoretically
+impossible and the reason for these values being greater than 1.0 is not
+understood. The CPSD code, which also calculated coherence functions,
+also occasionally gave results which were slightly greater than unity.
+These anomalously high values did not destroy the general usefulness of
+the coherence function calculations which were, in general, lower for
+tests in which the results contained excessive scatter (indicating noise
+contamination) than for the smoother results. Analyses at non-harmonic
+frequencies yielded coherence functions which were erratic and often had
+values as large as 500.
+
+In an effort to demonstrate the effect of the analysis filter, the
+same data were also analyzed by FOURCO at frequencies which were offset
+from the harmonic frequencies by 10% of the difference between harmonics.
+Table VI lists both the real and imaginary parts of the input and output
+signals for a harmonic frequency and Table VII lists the same information
+for the nearest adjacent non~harmonic frequency. The analyses were per-
+formed with 1, 2, 4, and 8 periods of data as one with the appropriate
+results averaged, as before. For the analysis at a harmonic frequency,
+
+the average value of both the real and imaginary parts of the signals
+LL
+
+TABLE VI
+
+RESULTS OF ANALYSIS AT A HARMONIC FREQUENCY (0.3298 RAD/SEC)
+
+ 
+
+Periods of
+
+ 
+
+ 
+
+ 
+
+ 
+
+Data Analyzed Input Signal Output Signal
+As One
+Real Imaginary Real Imaginary
+
+8 177 388 -193 hs
+L - 87 192 -107 25
+- 86 198 - 8k 20
+
+Avg? - 87 195 - 95 23
+
+Std. Dev.’ 1 16 3
+
+2 - Lh 96 - 56 11
+- 43 96 - 52 15
+
+- Ls 100 - Lh 6
+
+- 41 100 - ho 1h
+
+Avg. - 43 98 - 48 11
+
+Std. Dev. 2 2 7 L
+
+1 - 20 Lg - 28 5
+- 22 48 - 27 6
+
+- 20 Lg - 29 3
+
+- 21 Lr - 23 13
+
+- 27 51 - 17 1
+
+- 21 48 - 28 L
+
+- 20 50 - 19 1
+
+19 le) - 21 _2
+
+Avg. - 21 Lg - 2k 5
+
+Std. Dev. 3 1 5 L
+
+®Average
+
+PStandara Deviation
+TABLE VII
+
+RESULTS OF ANALYSIS AT A NON-HARMONIC FREQUENCY (0.3463 RAD/SEC)
+
+ 
+
+ 
+
+ 
+
+ 
+
+Periods of
+Data Analyzed Input Signal Output Signal
+As One
+Real Imaginary Real Imaginary
+8 87 - 31 ohh 35
+h 91 120 - 26 Th
+9k 117 - 16 60
+Avg? 93 119 - 21 67
+Std. Dev? 3 2 7 10
+2 3 93 - L2 30
+b 92 - 37 30
+5 95 - 31 2h
+I 22 - 29 22
+Avg. 5 93 - 35 27
+Std. Dev. 2 2 6 3
+1 -12 Lr - 26 9
+-1k 46 - 2h 9
+~-12 Lh - 27 7
+-13 L6 - 20 13
+-13 Lg - 14 -5
+-13 48 - 29 10
+-12 L8 - 17 10
+cil __ ht - 11 _5
+Avg. -13 Lh - 21 7
+Std. Dev. 1 1 7 6
+®Average
+
+PStandard Deviation
+L6
+
+approximately doubles each time the number of periods being analyzed as
+one doubles, This indicates that most of the calculated signal energy
+was resulting from a source which was unaffected by the changing filter
+shape, Of course, this source was the spectral energy of the signal at
+the analysis (harmonic) frequency. For the analysis at a non-harmonic
+frequency, there is no apparent relation between the average values of
+the signals as the number of periods being analyzed is changed. This
+should be expected since the changing filter shape is weighting the sig-
+nal energy in the nearby harmonic, as well as those farther away, in an
+
+entirely different manner with each filter change.
+
+CPSD. The advantage of the CPSD technique is that the filter shape
+may be specified at the time the analysis is performed, The filter
+
+specified by the code has the transfer function®®
+
+H(s) =
+
+woZ + 28 wos + se
+
+ 
+
+*
+The doubling occurs because the integral being used to calculate
+the signal energy is:
+T
+
+F(jo) = [ f(t) e 90% at
+“0
+where
+
+H
+—
++
+~—
+
+I
+
+the time signal,
+
+frequency (rad/sec),
+
+Jv-1,
+
+time, and
+
+the total time of the recorded data.
+
+nn
+
+Ht E
+I
+
+The integral is not normalized by 1/T; therefore, for data sets
+containing the same power at frequency w, the calculated F(jo) will be
+twice as large if the number of sets analyzed is doubled.
+kt
+
+where
+wo = the center frequency of the filter,
+s = the Laplace transform variable, and
+tL = the damping factor.
+
+Figure 12 shows H(s) for various values of t. As g takes on smaller
+values, the peak in the transfer function becomes very narrow, If{ is
+set too wide, the contribution from other frequencies becomes significant,
+but if { is set too narrow, a slight discrepancy between the harmonic
+frequency and the calculational frequency will cause a large error in the
+calculation of the signal magnitude at the harmonic. The complete fre-
+quency response plot for the test case (8 periods, 127 x 3 PRBS) is shown
+in Figure 13 for various values of {. When { is equal to 0.5, the data
+is smoothed to the extent that it does not portray the actual frequency-
+response shape in the regions of sharp curvature. Damping factors of
+0.05 and 0.001 give essentially the same shape; however, there is more
+scatter in the data with the 0.001 damping factor.
+
+Comparison of the CPSD method with a damping factor of 0.05 with the
+CABS and FOURCO results revealed that the results were usually within 5% of
+each other with occasional deviations of 10%. There were a few tests in
+which there was large discrepancy between the analysis techniques at a
+few frequencies. Since these appear to be a function of the testing
+technique, they will be discussed in the appropriate section (Chapter Iv,
+Section 11).
+
+Unless otherwise specified the data reported herein used the fol-
+
+lowing analysis criteria:
+L8
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+> ORNL-DWG 69-1727
+10
+
+wo
+
+S 10
+
+FE
+
+=
+
+[©]
+
+<
+
+=
+
+[ad
+
+TN
+
+Le
+1071
+90 + . t= "0.001
+
+7]
+//
+7
+
+ 
+
+ 
+
+//
+
+ 
+
+ 
+
+ 
+
+ 
+
+TINT 0.05
+60 \
+NN
+30 Eos
+
+o Nn
+N
+
+-30
+AN
+-60
+Ne
+
+-90 \-
+0
+
+ 
+
+ 
+
+PHASE (deg)
+/
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1072 1071 10
+w/wq,
+
+FIGURE 12, Shape of the analysis filter employed by the CPSD technique
+for various values of the damping factor, U.
+
+10
+ho
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+TTT
+sl . i ha wutli
+dT
+Te Hl i
+lll
+
+102 |] 1]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+~~
+o|®
+Df o
+2
+~~
+c |0O
+“le
+T TI
+a
+60
+3
+:
+®
+30 ® L
+eo
+g ai
+2 ® oes,
+Ww 0 2
+< 2
+z i ATR )
+el=05 2
+»
+o {=005 *
+_30 © t=00 ol
+a L=0.001 wl
+|
+I
+10” 2 5 wo! 2 5 10°
+
+FREQUENCY (rad/sec)
+
+FIGURE 13. Frequency-response results obtained by analyzing a test
+case using the CPSD analysis scheme with various values of the
+
+damping factor, §.
+50
+
+(1) When more than one period of data was analyzec using FOURCO, it
+was analyzed as one period, If the periods of data were ana-
+lyzed separately and the results averaged, the results are
+labeled "FOURCO ENSEMBLE."
+
+(2) When using CABS, the data was reduced to correlation functions
+of one period length and then Fourier analyzed.
+
+(3) A damping factor of 0.05 was used with the CPSD code.
+
+In some cases the data were analyzed using all three methods; how-
+ever, the results were, in general, so nearly the same that this was not
+actually necessarily so in other cases only two methods were used. In
+cases where the analysis schemes gave the same results only one set of
+
+results was usually plotted.
+51
+
+CHAPTER IV
+EXPERIMENTAL RESULTS
+
+In this chapter typical results obtained during the testing program
+will be presented and discussed. In some cases preliminary results such
+as correlation functions will be shown together with the frequency-
+response results and in other cases only the frequency-response results
+will be presented, Tests were performed which will not be discussed at
+all. A listing of all the tests performed and pertinent information
+
+about each test is given in the Appendix.
+I. #7°U FUEL LOADING
+
+The initial dynamics-testing program ° made extensive use of the
+rod-jog technique. But by the end of that testing program, the experi-
+ments were becoming difficult to perform. There was apparently some
+stiffening of the flexible-hose part of the control-rod assembly, or at
+least some extra friction, which was causing reproducible rod positioning
+to be difficult.
+
+Near the end of operation with the £757 fuel loading, more dynamics
+tests were performed. These were two-fold in purpose. First, the tests
+would indicate whether the dynamic characteristics of the MSRE had
+changed after more than 72,000 Mwhrs of power operation. Second, the
+groundwork was to be laid for using the flux-demand technique during the
+
+2337 fuel loading. The plan was to do more rod-jog tests followed by
+52
+
+flux-demand tests so that comparisons between the techniques would be
+straight forward. Tests with both the PRBS and PRTS test signals were
+also planned. The "coarse" position indicator was used to supply the
+
+control-rod position indication,
+
+1. Rod-Jog Tests
+
+The first rod-jog test attempted was performed without flaw, This
+led to hope that the suspicions about inadequacy of the technique were
+permature and that a change in technique was not warranted. However, all
+subsequent attempts at rod-jogging were failures. During these tests,
+almost continuous adjustment of the motor-timers was necessary, and there
+were several times when a one-bit segment of the test pattern was skipped
+resulting in two consecutive rod movements in the same directions, an
+impossible occurrence for a true PRBS. The first problem was most likely
+an extension of the previously-encountered problems related to friction
+in the control rod assembly. The bit-skipping Suggests failure of the
+sequence-generating equipment. The equipment was 'bench-tested", but no
+equipment defects were found. So at least part of the reasons for the
+failure of the rod-jog technique are not understood.
+
+The autocorrelation function and power spectrum of the rod position
+for the good rod-jog test are shown in Figure lha. These closely follow
+the theoretical curves for an ideal PRBS and indicate that the test pat-
+tern was well represented by the control rod. Four periods of the se-
+quence were analyzed. The autocorrelation function and the power spectrum
+of the flux are shown in Figure 14b and the cross-correlation function
+
+of rod position and flux with the assoclated power spectrum are shown in
+o3
+
+ORNL —NWG 69— 12248
+
+ 
+
+0.060
+
+ 
+
+0.046
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+os doo
+
+ 
+
+0.032 +
+
+ 
+
+SM
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.018
+
+0.004 ft en :
+SN NY MARMAA Arn
+
+-0.010 _. SRY ~
+0 140 280 420 560 700
+: CORRELATION TIME (sec)
+
+ 
+
+ 
+
+pt
+
+ 
+
+ 
+
+ 
+
+AUTOCORRELATION FUNCTION (arbitrary units)
+
+ 
+
+{
+
+:
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+POWER SPECTRUM {arbitrary units)
+
+ 
+
+FREQUENCY (rad /sec)
+
+(a) Autocorrelation function and power spectrum of the control-rod
+position,
+
+Periods of data analyzed — 4
+Type sequence — 127 x 5 PRBS
+
+FIGURE 14 Correlation function and power spectrum results from a
+rod-jog test.
+54
+
+ORNL-DWG 69-12054
+
+ 
+
+2.0
+
+ 
+
+ 
+
+1.4
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+08 |; y
+
+ol AEE
+
+ 
+
+ 
+
+an
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+AUTOCORRELATION FUNCTION ( arbitrary units)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+-0.4 - mr
+a 4
+-1.0 ee eh
+0 140 280 420 560 700
+CORRELATION TIME (sec)
+
+POWER SPECTRUM {arbitrary units)
+
+ 
+
+1072 2 5 10°! 2 5 1°
+FREQUENCY (rad/sec)
+
+(b) Autocorrelation function and power spectrum of the neutron flux,
+
+Periods of data analyzed — UL
+Type sequence — 127 x 5 PRBS
+
+FIGURE 14. (continued)
+55
+
+ORNL~-DWG 69 — 12053
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.30
+?
+5S oe2 |
+> b
+8 : |
+3 |
+gf |
+g oder EE —
+iE :
+Q |
+Z ! ’
+> - t+
+uw | ,
+3 : |
+& 0.06 : : SS —- :
+el :
+oO 2
+wn S43
+on —0.02
+OQ i
+€ ;
++ FE
+|
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0 140 280 420 560 700
+CORRELATION TIME (sec)
+
+CROSS-POWER SPECTRUM (arbitrary units)
+
+ 
+
+2 5 1072 2 5 107!
+FREQUENCY (rad /sec)
+
+(¢) Cross-correlation function and cross-power spectrum of the control-
+rod position and neutron flux.
+
+Periods of data analyzed — kL
+Type Sequence — 127 x 5 PRBS
+
+FIGURE 1k, (continued)
+56
+
+Figure llc. Since the reactivity input was a PRBS (flat power spectrum),
+the envelope of the points in the first part of the cross~-correlation
+function approximately defines the impulse response of the system,®°
+
+The results of primary interest, magnitude ratio and phase, are shown in
+Figure 15. Over most of the frequency range there is little scatter in
+the data and the experimentally determined points follow the theoretical
+curves very well, The scatter in the magnitude ratio at frequencies
+greater than 0.6 rad/sec is due to the low power content of the input
+signal in this frequency range (Figure lha). The low magnitude of the
+power in the input signal causes a low signal to noise ratio and a large
+amount of scatter in the results. In addition, the timing method used
+with the rod-jog technique did not produce the exact period lengths which
+were desired. This made specification of the fundamental frequency tedious,
+and for a four-cycle test an average period length was used. This inac-
+curacy may decrease the signal to noise ratio even more because the fre-
+quencies at which the analyses are performed may not be the exact harmonic
+frequencies.
+
+Also shown in Figure 15 are results of a similar test which was per-
+formed during the initial testing program of the MSRE. There is very
+little difference between the results which leads to the conclusion that
+the dynamic characteristics of the MSRE were not changed by about 9000
+
+equivalent-full-power hours of nuclear operation.
+2. Flux-Demand Tests
+
+Ten dynamics tests utilizing the flux-demand technique were per-
+
+formed with the #7U fuel loading. Two of these ten yielded completely
+27
+
+ORNL-DWG 69-12256
+
+103
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+«x
+Q ©
+Hs
+£
+POWER LEVEL-8Mw
+2 o TEST PERFORMED DURING EARLY
+POWER OPERATION, CPSD ANALYSIS,
+DATA FROM REFERENCE 16
+o TEST PERFORMED NEAR END OF
+OPERATION WITH U-235 FUEL,
+CABS ANALYSIS
+102
+100
+60
+Po
+Po | |
+Nl]
+z 20 PNT
+2 i |
+a ~
+I dN | TN
+F NL ! |
+-20 oo nL ——F ==
+[I CR SS
+Co] rn lL
+” | “eB, So 8 »
+60 TTT -t
+Lo |
+ee eae
+BE
+-100 .
+10™2 2 5 10°! 2 5 10
+
+FREQUENCY (rad /sec)
+
+Periods of data analyzed — L
+Type sequences — 127 x 5 PRBS
+
+FIGURE 15. Frequency-response results from rod-jog tests.
+58
+
+unusable results due to a faulty magnetic-tape unit which was supposedly
+recording the data. In fact, the computer was malfunctioning throughout
+this entire phase of the testing program and there were numerous bad data
+points dispersed randomly throughout the data. In general, these bad
+points were easy to distinguish in that they read either very large or
+very small in comparison with the bulk of the data. A computer program
+was written which scanned the data and discarded these points which were
+obviously in error and replaced the bad points with points derived from
+a linear interpolation between the two nearest good points.
+
+Three test patterns were employed during this phase of the testing
+program. These were the PRBS, PRTS, and the 'non-symmetric” PRTS. The
+difference between the PRTS signals will be discussed in the appropriate
+section.
+
+In this section, we will find that the flux-demand tests were un-
+suitable for the required measurements. Nevertheless, the experience
+with these tests is described to illustrate the problems and to show the
+considerations which led to the third (and successful) technique described
+
+in Section 3 of this chapter.
+
+PRBS Test Patterns
+
+Figures 16 and 17 are plots of a set of results from a 127 x 5 PRBS
+test performed with the reactor at 5 Mw. Note that the flat power spec-
+trum is associated with the autocorrelation of the flux signal rather
+than the rod-position signal. The cross-correlation (Figure 16¢) is not
+indicative of the impulse response of the system since the autocorrelation
+
+of the input (Figure 16a) does not have a flat power spectrum, The
+29
+
+ORNL-0OWG 89-12249
+
+ 
+
+0.30
+
+ 
+
+ 
+
+0.22
+
+ 
+
+ 
+
+©
+>
+
+ 
+
+ 
+
+o
+8
+
+ 
+
+ 
+
+ 
+
+ 
+
+-0.02 |=
+
+ 
+
+AUTOCORRELATION FUNCTION (arbitrary units)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+“eat
+mp
+
+ 
+
+0 140 280 420 560 700
+CORRELATION TIME (sec)
+
+POWER SPECTRUM (orbitrary units)
+S, ro
+
+w»
+
+ 
+
+0-3 2 5 1072 2 5 10°! 2 5 10°
+FREQUENCY (rad /sec)
+
+(a) Autocorrelation function and power spectrum of the control-reod
+position,
+Periods of data analyzed — 5
+Type sequence — 127 x 5 PRBS
+
+FIGURE 16. Correlation function and power spectrum results from a flux-
+demand test using a PRBS test pattern.
+60
+
+ORNL- DWG 69 12250
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+AUTOCORRELATION FUNCTION (arbitrary units)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+lo} 140 280 420 560 700
+CORRELATION TIME (sec)
+
+POWER SPECTRUM (arbitrary units)
+
+10°
+1073 2 5 1072 2 5 107! 2 5 10°
+FREQUENCY (rad /sec)
+
+ 
+
+(b) Autocorrelation function and power spectrum of the neutron flux.
+
+Periods of data analyzed — 5
+Type sequence — 127 x 5 PRBS
+
+FIGURE 16. (continued)
+61
+
+ORNL -DWG 69 -12254
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2.0
+a
+g
+- 14
+s
+3
+s p
+2 [.
+© os8
+—
+Q
+Z
+D2
+uw
+5
+£ 02r
+= R
+HY nd " \pnnd — ——
+: [
+o
+© J
+» -0.4 3
+a ]
+o
+[+
+oO
+
+-4.0
+
+0 140 280 420 560 700
+
+CORRELATION TIME (sec)
+
+CROSS-POWER SPECTRUM (arbitrary units)
+
+ 
+
+1073 2 5 1072 2 5 107! 2 5 10
+FREQUENCY (rad/sec)
+
+(c) Cross-correlation function and cross-power spectrum of the control-
+rod position and neutron flux.
+
+Periods of data analyzed — 5
+Type sequence — 127 x 5 PRBS
+
+FIGURE 16. (continued)
+62
+
+ORNL-DWG 69-12252
+
+104
+
+POWER LEVEL-5Mw
+ANALYSIS METHOD
+
+® CABS
+2 — THEORY
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+60 N
+
+ 
+
+20
+
+ 
+
+ 
+
+PHASE (deg)
+Vv.
+
+ 
+
+-20
+
+ 
+
+ 
+
+ 
+
+-60
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+-100
+10-3 2 5 1072 2 5 107! 2 5 10°
+FREQUENCY (rad/sec)
+
+ 
+
+Periods of data analyzed — 5
+Type sequence — 127 x 5 PRBS
+
+FIGURE 17. Frequency-response results from a flux-demand test with the
+reactor at 5 Mw.
+63
+
+magnitude-ratio and phase plots are shown in Figure 17. There is more
+scatter in the data near the peak in the magnitude ratio than was evident
+in the rod-jog test. This is probably a result of the testing technique.
+Since the output power spectrum is flat (Figure 16b), there must be a
+minimum in the input power spectrum (Figure 16a) in order to achieve a
+peak in the magnitude-ratio plot. For a system with a relatively-white
+noise input, this implies that the signal-to-noise ratio of the input
+signal is worse at the minimum than at any other point; hence, the sta-
+tistical confidence one should place in the values at the peak in the
+magnitude ratio plots is the lowest of any region on the plot.
+
+The autocorrelation functions of the test patterns as implemented
+by the different techniques are shown in Figures 1lha and 16b. While they
+are in general agreement, there are two noticeable differences. The
+small negative spike which occurs at both ends adjacent to the large
+positive spike in the autocorrelation function in Figure 16b is caused
+by a deadband in the servo system. With the rod-jog technique, the rod
+was moved and then held stationary until time for a pulse of different
+polarity. With the flux-demand technique, the rod would move the flux
+until the flux-demand was satisfied and then stop. The flux would con-
+tinue to change and would move on through the "satisfied" state and would
+have to be brought back by rod movement in the other direction. A dead-
+band in the flux signal may be observed by careful inspection of Figure 9,
+page 27. The width of this deadband was found to determine the magnitude
+
+of the negative spike. Some tests were performed in which the deadband
+
+was very narrow and the spikes were all but eliminated.
+6h
+
+The small positive spikes which occur at lag time equal to org” sec
+in the autocorrelation function in Figure 16b are thought to be a result
+of the shape of the flux signal when going from a low to high value not
+being the inverse of the flux signal when going from a high to low value.
+Similar spikes were noted at both 35 sec and 278 sec on most other
+127 x 5 PRBS flux-demand tests. Only spikes at lag times of 35 sec were
+reported in similar tests with the rod-jog testing technique. One
+127 x 5 rod-demand test had a small spike at ~ 33 sec with no other
+anomalous spikes. The occurrence of a spike at 35 sec is predictable
+(References 13, 30, 31) and is a function of the time between the longest
+run of consecutive positive bits and negative bits for the particular
+sequence being used. The additional spikes at 278 sec which appeared
+with the flux-demand technique are thought to be caused by the same type
+of phenomenon that caused spikes at 35 sec, but this has not been proven.
+The spike at 33 sec with the rod-demand technique was small and should
+not be considered as strong disagreement with the predicted time of 35 sec.
+Spikes were also observed in PRBS tests of other length and in PRTS tests.
+No theoretical work could be found which related the position of the
+spikes to the properties of the PRTS, but it is likely that they are
+
+caused by the same type phenomenon.
+
+ 
+
+Fhe autocorrelation functions are very nearly symmetric about the
+half-period time. There were corresponding spikes in the second half of
+the autocorrelation functions at the appropriate times, but only the
+spikes during the first half are mentioned in the text, for clarity of
+presentation.
+65
+
+The magnitude-ratio and phase-angle plots for a 127 x 5 PRBS with
+the reactor at 2 Mw is shown in Figure 18, The theoretical and experi-
+
+mental data are in adequate agreement at this lower power.
+
+PRTS Test Patterns
+
+The faulty magnetic tape unit malfunctioned on two out of three tests
+which employed PRTS test patterns. The results of the successful PRTS
+test (242 x 7.25 at 8 Mw) are shown in Figures 19 and 20. The auto-
+correlation function of a PRTS waveform is obvious in Figure 19b and the
+associated power spectrum is relatively flat over nearly two decades in
+frequency.
+
+The curvature in the autocorrelation of the rod position (Figure 19a)
+is unusual compared to those previously shown. The plot indicates that
+the rod position was not a true periodic signal since it was not symmetric
+about the half-period time. These tests were performed in February and
+March when changes in atmospheric conditions were rapid. Ambient air
+temperature and/or wind velocity changes affect the heat-removal rate at
+the radiator which ultimately forces a reactivity change in the core.
+Since the flux was being controlled during these tests, the outside dis-
+turbances were shown by changes in control rod position which were, in
+turn, reflected in the correlation function calculations.
+
+While temperature effects account for the non-symmetrical shape of
+the autocorrelation function in Figure 19a, the general "bowed" shape
+must be explained by other means. The period of this test (242 x 7.25)
+
+was long compared to most other tests performed, hence the fundamental
+66
+
+ORNL-DWG 69-12055
+
+POWER LEVEL =-2 Mw
+ANALYSIS METHOD
+
+¢ CABS
+—— THEORY
+
+3n
+No 8k
+
+ 
+
+ 
+
+100
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+? 20
+3
+: \
+@ \
+I NL
+- MN
+* ™N NN 1
+IN L7 _— |
+IEEE TE
+-60 : x
+-100
+072 2 5 1072 2 5 10! 2 5 10°
+
+FREQUENCY (rad /sec)
+
+Periods of data analyzed — 5
+Type sequence — 127 x 5 PRBS
+
+FIGURE 18. Frequency-response results from a flux-demand test with the
+reactor at 2 Mw.
+67
+
+ORNL -DWG 69-12253
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.10
+»
+E 008
+a
+>
+8
+3
+5
+z 0.02
+2 t .
+5 : i :
+=z +
+D .
+uw
+g -0.02
+[=
+<I
+J
+wl
+a
+a
+3
+© -0.06
+D
+«<I
+
+-0.10
+
+0 400 800 1200 1600 2000
+
+CORRELATION TIME (sec)
+
+POWER SPECTRUM (arbitrary units}
+
+ 
+
+3 2 5 1072 2 5 1g!
+
+FREQUENCY (rad /sec)
+
+(a) Autocorrelation function and power spectrum of the control-rod
+position.
+
+Periods of data analyzed — 2
+Type sequence — 242 x 7.25 PRIS
+
+FIGURE 19. Correlation function and power spectrum results from a flux-
+demand test using a PRIS test pattern.
+68
+
+ORNL—-DWG 69-12254
+
+ 
+
+2.0
+
+ 
+
+ 
+
+1.2
+
+ 
+
+ 
+
+0.4
+
+ 
+
+ 
+
+-0.4
+
+ 
+
+ 
+
+AUTOCORRELATION FUNCTION (arbitrary units)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+-2.0
+
+0 400 800 1200 1600 2000
+CORRELATION TIME (sec)
+
+10
+
+POWER SPECTRUM (arbitrary units)
+
+©,
+nN
+
+   
+  
+
+2 1 0
+
+2 5 10°
+FREQUENCY (rad/sec)
+
+1073 2 5 10 2 5 10
+
+(b) Autocorrelation function and bower spectrum of the neutron flux.
+
+Periods of data analyzed — 2
+Type sequence — 242 x 7.25 PRTS
+
+FIGURE 19. (continued)
+69
+
+ORNL -DWG 69-12255
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.30
+»
+L
+<
+
+0.18
+>
+o
+=
+a
+5
+~ 0.06 :
+o 3
+= : , :
+g + $
+5 ; A IN MA i
+8 -0.06 -
+g
+—
+w
+1
+a
+Oo
+Q
+TL -0.18
+wn
+wn
+o
+a
+QO
+
+-0.30
+
+0 400 800 1200 1600 2000
+
+CORRELATION TIME (sec)
+
+CROSS-POWER SPECTRUM {arbitrary units)
+
+ 
+
+1073 2 5 1072 2 5 10°! 2 5 10°
+FREQUENCY (rad /sec)
+
+(c) Cross-correlation function and cross-power spectrum of the control-
+rod position and neutron flux,
+
+Periods of data analyzed — 2
+Type sequence — 242 x 7.25 PRIS
+
+FIGURE 19. (continued)
+70
+
+ORNL-DWG 69-42257
+
+POWER LEVEL-8Mw
+
+ANALYSIS METHOD
+s CABS
+— THEORY
+
+ 
+
+ 
+
+300
+
+ 
+
+ 
+
+220
+
+ 
+
+ 
+
+a
+o
+
+ 
+
+ 
+
+ 
+
+PHASE (deg)
+
+ 
+
+o
+o
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+-100
+2 2 5 To 2 5 10
+
+FREQUENCY (rad/sec)
+
+1073 2 5 10
+Periods of data analyzed — 2
+Type sequence — 242 x 7.25 PRIS
+
+FIGURE 20. Frequency-response results from a flux-demand test performed
+on the £7°U-fueled reactor using a PRTS test pattern.
+T1
+
+frequency was exceptionally low. The reactor was at full power so the
+amplitude of the frequency response was expected to be low at the low
+frequency. Since the spectral power of the flux was flat, the power in
+the rod-position signal at the fundamental frequency must be relatively
+high to give the low value in the amplitude of the frequency response,
+Note that the power content of the lowest harmonic in Figure 19a is a
+factor of about 20 higher than most of the other harmonics. The relative
+high power content in the fundamental frequency necessarily yields a
+
+function similar to one period of a sine wave,
+
+"Non-Symmetric" PRTS Test Patterns
+
+One property of a PRTS is that its autocorrelation function has a
+negative spike at lag time equal to T/2 which is equal in magnitude to
+the positive spikes at lag times equal to zero and T (see Section I of
+Chapter II). This is possible only if the second half of the sequence is
+the negative of the first half, For example, if the first two bits in a
+PRTS are positive, the first two bits of the second half of the sequence
+will be negative,
+
+The results of the first attempts at using a PRTS are shown in
+Figures 21 and 22. These were surprising in that the autocorrelation
+function of the flux signal (Figure 21b) did not assume the expected
+shape of a PRTS. The reason for the unexpected correlation function was
+found to be the manner in which we assigned voltage to the PRTS signal
+which was generated by the on-line computer (BR-3L0). Instead of using
+a signal which had the same number (n) of plus and minus pulses with (n-1)
+
+intervals at zero level, as is the case for a true PRTS, we were actually
+72
+
+ORNL — DWG 69—12258
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.20
+2
+g
+3 oda
+5
+3 -
+5 -
+8 oo08
+= .
+oO .
+z
+D
+> -
+3 .
+g oof
+@ -
+Oo Te:
+OQ or
+2-004 |
+2 i
+i i
+-0.10
+0 160 320 480 640 800
+
+CORRELATION TIME (sec)
+
+POWER SPECTRUM (arbitrary units)
+
+ 
+
+73 2 5 1072 2 5 10°! 2 5 10
+
+FREQUENCY (rad /sec)
+
+(a) Autocorrelation function and power spectrum of the control-rod
+position,
+
+Periods of data analyzed — L
+Type sequence — 80 x 10 "non-symmetric! PRTS
+
+FIGURE 21. Correlation function and power spectrum results from a flux-
+demand test using a 'non-symmetric" PRTS test pattern.
+73
+
+ORNL-DWG €69-—12259
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+20
+»
+S 1a
+=
+8
+3 :
+CI
+z 8k
+co |
+F :
+5 :
+Zz pF
+S : :
+uw : :
+§ 2
+| :
+"A | v
+[eo
+8
+S -4
+—
+2
+L=4
+
+-10
+
+0 160 320 480 640 800
+
+CORRELATION TIME (sec)
+
+POWER SPECTRUM (arbitrary units)
+
+ 
+
+2 5 107! 2 5 10°
+
+FREQUENCY (rad /sec)
+
+2 5 107
+
+(b) Autocorrelation function and power spectrum of the neutron flux.
+
+Periods of data analyzed — 4
+Type sequence — 80 x 10 "non-symmetric" PRTS.
+
+FIGURE 21, (continued)
+Th
+
+ORNL-DWG 69 -12260
+
+ 
+
+20
+
+ 
+
+ 
+
+FS
+
+ 
+
+ 
+
+o
+®
+
+ 
+
+ 
+
+o
+IN
+
+ 
+
+ 
+
+ 
+
+ 
+
+CROSS-CORRELATION FUNCTION (arbitrary units)
+|
+Oo
+BD
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0 160 320 480 640 800
+CORRELATION TIME (sec)
+
+oS
+
+3S
+©
+
+-
+
+CROSS -POWER SPECTRUM (arbitrary units)
+3,
+
+ 
+
+102 2 5 102 2 5 10°! 2 5 10
+FREQUENCY (rod/sec)
+
+(c) Cross-correlation function and cross-power spectrum of the control-
+rod position and neutron flux.
+
+Periods of data analyzed — lL
+Type sequence — 80 x 10 "non-symmetric'" PRTS
+
+FIGURE 21. (continued)
+>
+
+ORNL-DWG 69-12261
+
+POWER LEVEL -2 Mw
+
+e 80 x 10 PRTS, CABS ANALYSIS
+0 242 x 7.25 PRTS, CABS ANALYSIS
+—— THEORETICAL
+
+ 
+
+ 
+
+ 
+
+ 
+
+140
+
+ 
+
+ 
+
+ 
+
+ 
+
+PHASE (deg)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+20
+A a
+o Jd .
+’ oN AT
+_40 o| fool oF Nee T
+
+. Nas ooolo 0ola cola a] ef.
+
+Hey oi “ 1:
+-100
+
+1073 2 5 1072 2 5 107" 2 5 10°
+
+FREQUENCY (rad/sec)
+
+FIGURE 22. Frequency-response results from flux-demand tests performed
+on the 27°U-fueled reactor using "non-symmetric" PRTS test patterns.
+76
+
+using a signal with the same number (n) of plus and zero pulses with (n-1)
+minus pulses, which resulted in the autocorrelation function not being sym-
+metric about the half-period time. Calculation of the power spectra for
+this type of signal showed that 3/4 of the signal power was concentrated
+in the even harmonics with the remainder in the odd harmonics. This is
+still a valid signal for frequency-response determination, but it defeats
+one of the purposes of using the PRTS — the concentration of all the
+signal power in the odd harmonics. The magnitude-ratio and phase-angle
+plots for two tests which utilized this type signal are shown in Figure 22.
+Most of the scatter in the data is due to including the values obtained by
+analyzing the data at all harmonic frequencies instead of just on the even
+
+harmonics which contain most of the signal power.
+II. 22% FUEL LOADING
+
+While the results of tests which utilized the flux-demand technique
+during the #7°U testing were less than ideal, they were adequate and
+certainly better than no results. Hence, the plans for the 227 testing
+Program were to perform the dynamics tests using the flux-demand tech-
+nique. Both the PRBS and PRTS test signals were to be utilized with a
+general shift to shorter bit times so that the signals would have more
+signal power at higher frequencies. This was desired due to the shift in
+the frequency response of the reactor with the fuel change (see Figures L
+and 5 for a comparison of frequency responses),
+
+While compensation for the changes in the frequency response of the
+reactor was not difficult, there were other changes in the "personality"
+
+of the reactor which did present problems. First, the control rods were
+Tr
+
+worth more* (about 30%) which meant that it would require less movement to
+obtain the same change in reactivity. Since the control rod was suspected
+of having caused problems in the yu testing program, it was anticipated
+that the effect of moving the rod less (0.3 in. instead of 0.5 in.) would
+tend to magnify any inherent discrepancies which existed between indicated
+and actual control-rod position. Second, with the 235U fuel the reactor
+had been an exceptionally noise-free system, but shortly after operation
+began with the #77 fuel, the void fraction increased from about 0.05%
+to about 0.6%. This caused a large change in the background neutron noise.
+An example of the uncontrolled neutron level for both the ©U fuel
+loading and the £33 fuel loading is shown in Pigure 23,
+
+Typical correlation functions for the various types of signals em-
+ployed in the testing were shown in Section I of Chapter IV and these
+
+will not be repeated for each test.
+1. Flux-Demand Tests
+
+PRBS Test Patterns
+
+The first tests on the ©27U fuel loading were performed while the
+reactor was at zero” power. The results of this test are shown in
+Figure 2ha. While these results do not disprove the theoretical pre-
+diction, the scatter is such that they do not verify it either. Not only
+
+is there considerable scatter in these results, but at low frequencies
+
+ 
+
+x
+Zero power implies a neutron level which is low enough so that no
+
+significant temperature changes occur but which is high enough not to be
+significantly affected by the neutron sources other than fission.
+78
+
+ 
+
+iw ORNL-DWG 69-142230
+
+4
+4
+1
+
+ 
+
+ 
+
+w'
+
+ 
+
+ALA
+
+> «1.5 Mw
+
+ 
+
+ 
+
+pof————
+WTA Pon A Var
+
+ 
+
+AsahasaAre
+
+v
+
+ 
+
+— 5 min
+
+TIME —
+
+ 
+
+2335 FUEL
+
+ 
+
+ 
+
+235, FUEL
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+MPAA AAA ITA 0 grr +p a Vso i AAA Aur fd Art
+
+ 
+
+—/\
+
+30 40 50 60 70 30 40 50 60 70
+POWER LEVEL (percent of 15 Mw)
+
+FIGURE 23. Examples of the uncontrolled neutron flux during periods of
+8 Mw power operation for the 235U fuel loading and the ©32U fuel
+loading.
+9
+
+ORNL-DWG 69-12043
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+104
+5
+2
+fs 3
+=o 10
+5 POWER LEVEL-ZERO
+ANALYSIS METHODS
+a FOURCO ENSEMBLE
+5 o FOURCO
+eo CABS
+02 — THEORY
+0
+© *
+Z -30 $
+3 147s
+J
+T 1 \
+LR
+
+ 
+
+ 
+
+ 
+
+ 
+
+-60 Pi !
+
+-90
+1073 2 5 1072 2 5 40°! 2 5 1400
+
+FREQUENCY (rad/sec)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+(a) Results from four periods of a 127 x 5 PRBS with the reactor at
+Zero power.
+
+FIGURE 24. Frequency-response results from flux-demand tests using
+PRBS test patterns performed on the £33-fueled reactor.
+80
+
+ORNL-DWG 69~-12052
+
+POWER LEVEL-ZERO
+ANALYSIS METHODS
+
+o FOURCO ENSEMBL
+
+e CABS
+— THEORY
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+o Ve o
+@ / C 0
+© 60 7 *& eo
+Ww vd C 79 ° y oold & s
+g AT] 9 © © 5 L$
+a 7
+—90
+Q
+-120
+|
+103 2 5 {02 2 5 40 2 5 40°
+
+FREQUENCY (rad /sec)
+
+(b) Results from three periods of a 127 x 5 PRBS with the reactor at
+
+Zero power,
+
+FIGURE 24, (continued)
+81
+
+ORNL-DWG 69-12051
+
+POWER LEVEL-1 Mw
+ANALYSIS METHODS
+
+© FOURCO
+® CABS
+= THEORY
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+30
+
+ 
+
+ 
+
+PHASE (deg)
+Oo
+
+ 
+
+ 
+
+Does °
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Of
+
+. 8
+
+oan
+-60 or 1
+
+0 Qe
+®
+"0 §-120
+
+0° 2 5 {02 2 5 10° 2 5 10°
+
+FREQUENCY (rad/sec)
+
+(ce) Results from four periods of a 127 x 5 PRBS with the reactor at
+1 Mw,
+
+FIGURE 2k, (continued)
+82
+
+ORNL -DWG 69-42050
+
+FUEL STATIONARY
+POWER LEVEL - ZERO
+
+3n
+No 84
+
+ANALYSIS METHODS
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+= CPSD
+a FOURCO ENSEMBLE
+— THEORY
+— LT
+> —-30 ~~
+© =
+— Lot]
+wi 14 se Fgoiehy
+wn LT 4 44 8 yi hi 2
+4 vd ) bn
+Ir -60 ~
+a ji 4
+A
++1]
+ne? 3
+-90
+103 2 5 40% 2 5 10!" 2 5 10°
+
+FREQUENCY (rad/sec)
+
+(d) Results from four periods of a 127 x 5 PRBS with the reactor at
+zero power and the fuel not circulating.
+
+FIGURE 24. (continued)
+83
+
+the different analysis schemes often yielded results which were radically
+different. Analysis at higher frequencies tended to decrease the scatter
+in the data as well as in the differences between analysis method.
+Typically, after about eight harmonics for a 127 x 5 test the differences
+between the analysis methods were negligible,
+
+An example of the strong disagreement between analysis schemes is
+evident in the magnitude ratio results shown in Figure 24a. At the first
+harmonic (.00989 rad/sec) the CABS analysis resulted in a value of 230,
+FOURCO using a fine filter gave 2850, and the ensemble average of results
+from the four periods of data analyzed separately (broad filter) by FOURCO
+was 5200. The CPSD analysis (not shown) was 894. The coherence function
+was 0.17 as calculated by CABS and was 0.65 according to the CPSD analysis.
+The CABS result is obviously a low-confidence number and the CPSD coherence
+of .65 does not indicate strong relationship between the measured input
+and output signals.
+
+Why the analysis techniques yielded different results when analyzing
+the same data is not completely resolved; however, there are clues which
+indicate that it is related to system noise. First, this problem was not
+pronounced except when testing with the flux-demand technique, and, as
+will be discussed later, the flux-demand technique caused an amplification
+of errors in the control-rod position indication, Second, in each case
+where there was a large discrepancy between analysis techniques, the CABS
+calculation of the power spectrum of the input signal was found to have
+a large phase angle (-89° for the point being discussed), Since only the
+cross-power spectra can contain phase information, the input power spec-
+
+tra calculations are obviously in error. The input power spectrum is
+8h
+
+actually calculated by Fourier transforming the autocorrelation function
+of the input signal, and noise will make the autocorrelation function
+slightly non-symmetric about the half-period time since it prevents the
+signal from being exactly periodic. It is thought that this non-
+periodicity of the autocorrelation function was the cause of the erroneous
+CABS results. At least, when the result was in error, the coherence
+function signaled a warning to beware of placing confidence in the calcu-
+lation. |
+
+Results of another zero-power test (3 cycles of a 127 x 5) are shown
+in Figure 24b. The differences between the results of different analysis
+schemes are not as pronounced; however, the general scatter in the re-
+sults is greater. This is probably due to using only 3 periods of data
+in the analysis.
+
+One curious feature of these results is the consistent roll-off of
+the experimentally determined phase angle at frequencies above about 0.k
+rad/sec, even though the theoretical calculations predict an increase.
+This feature was apparent in all of the results and was not dependent on
+the type signal nor the testing technique. The implication is that
+either the theoretical predictions were inadequate in this aspect, or
+that there was an inherent phase lag between the actual and indicated rod
+position at the higher frequencies. Since the indicator was nearer the
+drive motor than the lower end of the rod and was separated from the
+lower end of the rod by several feet of flexible hose, it seems reasonable
+to expect a phase lag in the actual position at the higher frequencies,
+
+The results from 4 cycles of a 127 x 5 PRBS which was performed with
+
+the reactor at 1 Mw are shown in Figure 2L4c. The typical scatter at all
+85
+
+frequencies and the discrepancies between analysis techniques at the low
+frequencies is apparent. The low phase-angle values at the higher fre-
+quencies are also present.
+
+With the fuel not circulating, the dynamic characteristics of the
+MSRE approach those of solid-fuel reactors. The results of. a frequency-
+response test which was performed with the fuel not circulating are shown
+in Figure 2hd, page 82. The scatter in these results is much less than the
+scatter in the results for the circulating-fuel tests. The magnitude-ratio
+results are in general agreement with the theoretical prediction, but the
+
+phase angle is below the theoretical at the higher frequencies.
+
+PRTS Test Patterns
+
+If some type of system noise were the cause of the excessive scatter
+in the results of tests which utilized a PRBS test signal, it does not
+seem logical that going to a three-level signal would improve the results,
+This logical deduction was verified by the results of tests at zero power
+and at 5 Mw,
+
+The results of three different tests at zero power are shown in
+Figures 25a, 25b, and 25c. Two of the tests are 80 x 3 sequences and the
+third is a 242 x 5 sequence. There are not any significant differences
+between the results of these tests, and each is characterized by the same
+type scatter which was apparent in the PRBS flux-demand tests. While
+there is some variation between results obtained from the different
+analysis methods, the differences are not as pronounced as they were in
+the results obtained in some of the PRBS tests. However, since all of
+
+the PRBS tests did not exhibit large differences in results for the
+86
+
+ORNL —DWG 69—12049
+
+POWER LEVEL - ZERO
+
+ANALYSIS METHODS
+e CABS
+4 FOURCO ENSEMBLE
+
+THEORY
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0
+z
+—. —30
+8 rT
+o Re au ~~
+2) AT]
+<< ° LL” eo
+: 60 pd a a ’ *
+—_— 7” q T
+yd ’ he
+A
+° 2 2
+”
+-50 |
+
+102 2 5 wo! 2 5 10
+
+FREQUENCY (rad /sec)
+
+(a) Results from four periods of an 80 x 3 PRTS with the reactor at
+Zero power,
+
+FIGURE 25. Frequency-response results from flux-demand tests using
+PRTS test patterns performed on the £>?U-fueled reactor.
+87
+
+4 ORNL-DWG 69-142048
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+x
+Ni
+RD
+>
+POWER LEVEL — ZERO
+ANALYSIS METHOD
+o FOURCO
+THEORY
+0
+0
+—~ -30 oo 8
+be 0 TT
+° 0 2
+LA o go
+bu o 9 ag po °
+QO
+I -60 pe Idole oe
+QoQ yd Too Too
+prt gq 0
+1
+| re]
+—90 —— i |
+|
+103 2 5 {0% 2 5 10! 2 5 10°
+
+FREQUENCY (rad/sec)
+
+(b) Results from two periods of a 242 x 5 PRIS with the reactor at
+Zero power.
+
+FIGURE 25. (continued)
+88
+
+ORNL-DWG 69142047
+
+POWER LEVEL — ZERO
+
+ANALYSIS METHOD
+4 FOURCO ENSEMBLE
+
+THEORY
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+—_ yd A a8 |TA
+on
+4
+
+§ 4
+wl A o
+ow
+3
+
+T —90
+
+oH
+—120
+A
+10072 2 5 10°! 2 5 10°
+
+FREQUENCY {rad /sec)
+
+(¢) Results from three periods of an 80 x 3 PRTS with the reactor at
+zero power,
+
+FIGURE 25. (continued)
+89
+
+ORNL-DWG 69-12046
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+104
+POWER LEVEL ~ 5Mw
+5 ANALYSIS METHODS
+o CABS, FOURCO, CPSD
+(ALL GAVE SAME RESULTS)
+— THEORY
+2
+ps
+<
+«© ° 103
+5
+2
+102
+60
+30
+5 0
+Q
+z
+ul
+wy
+<
+x
+-30 = 3
+99 doy
+dl
+Tp
+-60
+-90
+1072 2 5 To 2 5 10°
+
+FREQUENCY (rad/sec)
+
+(d) Results from twelve periods of an 80 x 3 PRIS with the reactor
+at 5 Mw,
+
+FIGURE 25, (continued)
+90
+ORNL-DWG 69-12045
+
+FUEL STATIONARY
+POWER LEVEL -ZERO
+
+ANALYSIS METHOD
+4 FOURCO ENSEMBLE
+—THEORY
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0
+_T]
+A 7
+-30 —
+© S47
+=] A A ala A
+= Pe Lo] b
+& vd A bg |
+A
+I yd A
+-60 J 3
+vd 3
+-90
+1072 2 5 107" 2 5 10°
+
+FREQUENCY (rad/sec)
+
+(e) Results from four periods of an 80 x 3 PRIS with the reactor at
+zero power and the fuel not circulating.
+
+FIGURE 25. (continued)
+91
+
+different analysis methods, it is not certain that the PRTS signal dis-
+criminates against this anomalous behavior, but there does appear to be
+a tendency in that direction.
+
+The significant features of the overall results of the zero-power
+tests shown in Figures 25a, 25b, and 25c¢ are almost identical to those of
+the PRBS tests. The results are in general agreement with the theoretical
+predictions, but the magnitude-ratio results tend to drop below the theo-
+retical results at the higher frequencies. The phase angle also drops
+below the theoretical predictions above 0.k rad/sec.
+
+In an effort to improve on the statistical precision of the results,
+an 80 x 3 sequence was used in a test at 5 Mw and was continually re-
+peated until 12 periods of usable data were collected. The results of
+this test (Figure 25d) were almost identical for each of the analysis
+schemes, and the scatter in the results is lowered but is not eliminated.
+The experimental magnitude-ratio results obtained for frequencies higher
+than about 0.h rad/sec are lower than the theory and the phase angle con-
+tinues to be low at the higher frequencies (about 35° at 1 rad/sec). The
+possible 5° error introduced by the digitization lag in the data recording
+would obviously be insufficient to correct for this deviation.
+
+An 80 x 3 PRTS was performed with the fuel stationary and yielded
+the frequency-response determination shown in Figure 25e. The magnitude-
+ratio results are not consistent with the theory in magnitude but the
+general shape is the same, The phase angle results are exceptionally
+poor in that they do not conform to the shape of the theoretical curve at
+any frequency. The poor results of this test were surprising since the
+
+results of the PRBS test on the non-circulating fuel were so good.
+92
+
+Discussion
+
+In summary, the results of flux-demand tests applied to the £33-
+fueled MSRE were disappointing. The results contained such excessive
+scatter that they were of little value in describing the frequency re-
+sponse of the MSRE, Neither type test signal appeared to give better
+results than the other and there were anomalous discrepancies between
+analysis techniques when applied to the same data.
+
+The failure of the flux-demand technique to provide adequate results
+with the £337 fuel is attributed to a combination of poor coupling be-
+tween the indicated and actual rod position and system rioise. As de-
+scribed in Chapter II, the rod-drive assembly actually drives a chain
+onto which the upper end of a flexible hose is attached. This hose
+maneuvers around two 30° bends in the tube in which it is enclosed and
+then drops vertically into a region near the center of the core. As the
+control rod moves, it encounters considerable friction as is evidenced
+by the normal average control-rod acceleration of only 8 to 15 ft/sec®
+during a scram (Reference 6, pages 26, 27). This may be enough friction
+to allow the rod to actually move in short jerks rather than a continuous
+smooth fashion, Other possible sources of difference between the actual
+rod movement and the indicated movement include stiff linkage in the
+drive chain which would not allow the chain to conform to the curvature
+of the sprocket, and the possibility that the rod was stiff, bowed, or
+twisted in a region which was traversing the bends. This would cause the
+lower region of the rod not to move in an exactly vertical direction.
+
+In addition, there are several gears between the actual rod drive linkage
+
+and the position indicators (the "fine" and "coarse" synchros). There is
+93
+
+likely some amount of freedom between these gears which results in errors
+in the indicated rod position, Since the rod is typically moved a maxi-
+mum of about 0.5 in, during a flux-demand test, a discrepancy between the
+indicated position and the actual end of the control rod of only 0.05 in.
+on both ends of the travel could produce an error of 20% in the indicated
+reactivity change. Hence, any of the above mentioned possible error
+sources are capable of significantly contributing to the total error.
+
+The "coarse" synchro was used to indicate rod position in all of the
+tests performed on the £7U fuel loading. After the results of the first
+flux-demand tests with £27U fuel were received, the testing procedure was
+changed so that a completely different rod assembly (including synchro)
+was used. This did not help to reduce the scatter in the results so a
+system was devised whereby the "fine" synchro could be used. This did
+not appear to improve the results, but in the remainder of the testing
+program the fine synchro was used,
+
+The additional neutron noise which accompanied the 23% fuel loading
+contributed to the scatter in the results in two ways. First, additional
+noise on a signal tends to lower the statistical precision of compu-
+tations performed with that signal. Second, the flux was required to
+remain within the deadband as prescribed by the servo circuits. With the
+additional noise, the control rod needed to move almost continuously in
+order to keep the flux within the deadband limits. Since it is known
+that there are errors in the indicated rod position, these additional rod
+
+movements certainly introduced errors in the measured frequency response.
+aL
+2. Rod-Demand Tests
+
+PRBS Test Patterns
+
+The failure of the flux-demand testing required that a change be
+made in the testing technique. The results from the good red-jog test
+as described in Section I of this chapter, were very encouraging so a
+change back to rod-controlled testing was desired. Instead of attempting
+to force the rod-jog method to work, it was decided to try a new approach,
+the rod-demand technique. As Previously described for the rod-demand
+technique, the control-rod servo was changed so that it forced the indi-
+cated control-rod position to match an input demand.
+
+With the reactor at zero power, a 127 x 5 PRBS was implemented in
+the reactor using this method. The results of this test are shown in
+Figure 26a and, except for the phase angle results at higher frequencies,
+are in excellent agreement with the theoretical predictions. The magni-
+tude ratio results were normalized by multiplying by 1.75. Normalization
+was usually necessary when a PRBS was used with the rod-demand technique,
+The reason for this normalization will be discussed more fully later in
+this section.
+
+With the reactor at 5 Mw, a 127 x 5 PRBS was repeated until two hours
+of data were collected. Eleven consecutive periods of the sequence were
+obtained from this test and analysis of this data gave the excellent re-
+sults shown in Figure 26b which have not been normalized. There is little
+scatter in the results and they are in good agreement with the theoretical
+predictions. The experimental results dip at about ok rad/sec as theoreti-
+
+cally predicted although the dip in the experimental results is not as
+3n
+
+95
+
+ORNL -DWG 69- 12044
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+x
+0
+° POWER LEVEL - ZERO
+ANALYSIS METHODS
+o FOURCO
+« CPSD
+— THEORY
+3-30 4] A
+a o
+=~ - o j=8 acal oo
+wl d 3 "18 oo Co] 5% Bo °
+24 ° ACL aq
+< eo ATE Pies
+a Q
+NW
+A
+¢ "
+-90 3 —2 ! 1
+10° 2 5 102 2 5 10 2 5 10°
+
+FREQUENCY (rad /sec)
+
+(a) Results from three periods of a 127 x 5 PRBS with the reactor at
+zero power. Magnitude ratio normalized by multiplying by 1.75.
+
+FIGURE 26. Frequency-response results from rod-demand tests using
+PRBS test patterns performed on the 233J-fueled reactor.
+96
+
+ORNL—-DWG 69-12245
+
+10
+
+POWER LEVEL —5Mw
+ANALYSIS METHODS
+v  FOURCO, CABS
+(EACH GAVE SAME RESULTS)
+THEORY
+
+ 
+
+ 
+
+ 
+
+ 
+
+WwW
+Oo
+
+ 
+
+PHASE (deg)
+
+ 
+
+ 
+
+-30
+
+Oo
+CN
+7 7
+i]
+/
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+-60 ” ,
+10~3 10” 1g 10°
+
+FREQUENCY (rad/sec)
+
+(b) Results from eleven periods of a 127 x 5 PRBS with the reactor
+at 5 Mw,
+
+FIGURE 26. (continued)
+97
+
+ORNL -DWG 69-12246
+
+POWER LEVEL =8Mw
+ANALYSIS METHODS
+
+o FOURCO, CABS, CPSD
+(EACH GAVE SAME RESULTS)
+
+— THEORY
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+PHASE (deq)
+
+ 
+
+A
+
+0
+Rie “NN
+; 3 NN
+
+A
+
+1073 2 5 1072 2 5 10°! 2 5 10°
+FREQUENCY (rad/sec)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+(c) Results from eight periods of a 127 x 3 PRBS with the reactor at
+8 Mw, Magnitude ratio normalized by multiplying by 1.30.
+
+FIGURE 26. (continued)
+98
+
+104 ORNL -DWG 69-12247
+
+POWER LEVEL-8 Mw
+ANALYSIS METHODS
+
+0 FOURCO, CABS, CPSD
+(EACH GAVE SAME RESULTS)
+
+THEORY
+
+sn
+Ny a -7 4
+
+ 
+
+ 
+
+ 
+
+ 
+
+PHASE (deg)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1072 To 10
+FREQUENCY (rad/sec)
+
+(a) Normalized results from five periods of a 127 x 5 PRBS with the
+reactor at 8 Mw. Magnitude ratio normalized by multiplying by 1.36.
+
+FIGURE 26. (continued)
+99
+
+pronounced as in the predictions. The magnitude ratio and phase angle
+fall below the theory at higher frequencies.
+
+The results of two tests performed with the reactor at full power
+are shown in Figures 26c and 26d. The results in Figure 26c are from
+analysis of five periods of a 127 x 5 PRBS, and those in Figure 264 are
+from analysis of eight cycles of a 127 x 3 PRBS. The magnitude ratio re-
+sults were normalized to agree with the theoretical curve at 0.4 rad/sec.
+Normalization factors were 1.30 and 1.36 respectively. There is little
+scatter in the results and they tend to be in good agreement with the
+shape of the theoretical curve except for the regular depression at the
+higher frequencies. The dip in the experimental results at 0.2L rad/sec
+is evident but, as before, is not as pronounced as the theory predicted.
+
+In general the coherence functions calculated for the rod-demand
+tests were above 0.98 and below 1.0 with occasional values slightly higher
+than 1.0. The value of the coherence function was usually relatively low
+(about .95) for the lowest harmonic frequency but came within the quoted
+range after a few harmonics and remained in the band until the power in the
+input signal began the characteristic rapid decrease at the higher fre-
+
+quencies.
+
+PRTS Test Patterns
+
+Results of a test in which a PRTS test pattern was implemented using
+the rod-demand technique is shown in Fig. 27. The scatter in the results
+resembles the scatter which was evident in the results of the flux-demand
+
+tests, and these results do little to aid in the specification of the
+100
+
+0 ORNL-DWG 69- 12242
+
+POWER LEVEL - 8Mw
+
+ANALYSIS METHOD
+* CABS
+= THEORY
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+A
+157°
+TN .
+®
+60 NG
+ol IN
+\ «
+_ N
+> 30
+3g +)
+LJ ‘ \e
+wn 4 \
+<{ °
+T 0 3
+a
+®
+-30
+-60
+107% 2 5 02 2 5 10!
+
+FREQUENCY (rad/sec)
+
+FIGURE 27. Frequency-response results from two periods of a rod-demand
+test using a 242 x 5 PRTS test pattern.
+101
+
+frequency response of the MSRE, The results do tend to be scattered around
+the theoretical curve and normalization of the results was not necessary.
+
+The coherence functions calculated from these data generally scat-
+tered in a band between about .94 and 1.08 over the frequency range at which
+the signal power was relatively constant. The coherence functions at the
+fundamental frequency were considerably below this scatter band (0.65 for
+the results shown in Figure 27), but after a few harmonics, the values
+
+were within the normal scatter.
+
+Discussion
+
+When a PRBS test pattern was used, the results from the rod-demand
+technique were very encouraging. Normalization factors were often neces-
+sary to get the experimental results to agree with the theoretical pre-
+dictions, but the shapes of the two were in accord. When a PRTS test
+pattern was employed with the rod-demand technique, there was excessive
+scatter in the results. Since there is considerable interest in the PRIS
+test pattern, it is unfortunate that these results were of poor quality;
+however, the failure of these tests did provide another clue toward bet-
+ter understanding of the MSRE.
+
+The postulated reasons for failure of the flux-demand technique to
+provide adequate results was the behavior of the control-rod assembly,
+and the results of the rod-demand tests tend to verify the postulate.
+When the rod was moved in a manner which simulated a PRBS waveform, it
+would be inserted, held stationary for a few seconds, withdrawn, held
+stationary, and then inserted again. This pattern was repeated with the
+
+only variation being in the length of time it remained stationary. An
+102
+
+insertion was always followed by a withdrawal and vice versa, If the
+bottom end of the rod did not actually move the distance the gear train
+indicated, as might be the case if any of the several possible high-
+friction conditions mentioned on pages 92 and 93 actually existed, then the
+waveform would still be well represented, but the indicated magnitude of
+the perturbations would be in error. This certainly fits with the results
+of the PRBS tests when used with the rod-demand technique and explains the
+necessity of use of a normalization factor. With the PRTS wave form, each
+movement of the control rod is not necessarily the opposite of the previous
+movement, An insertion may follow an insertion, and a withdrawal may
+follow a withdrawal. If, after a single insertion, the rod had moved to
+
+a high-friction position which was slightly hindering its motion, another
+insertion would force it on through this spot and it might or might not
+end near a similar spot after the second insertion. The effect of sub-
+sequent withdrawals and insertions is unclear since the insertions may
+originate from two different positions and those from the middle position
+may be following an insertion or withdrawal. If the rod-position indi-
+cator was not able to provide accurate information during at least part of
+these movements, then the test results would be expected to contain
+scatter. This fits the results of the PRTS tests when the rod-demand
+technique was used. It is important to note that these explanations for
+the results of the different type tests have not been proven but are
+
+offered as reasonable explanations which fit the experimental observations.
+103
+
+CHAPTER V
+CONCLUSIONS AND RECOMMENDATIONS
+
+The purpose of this work was to experimentally measure the frequency
+response of the MSRE and to determine the effects of varying the testing
+technique and test signal specification. The experimental results veri-
+fied the predictions and were adequate to provide a recommendation for
+improving the theoretical model. The dip in the magnitude ratio which was
+predicted at about 0.24 rad/sec is present in the experimental results,
+but it is not as pronounced as expected, Since the magnitude of the dip
+has been shown” to be a strong function of the salt mixing as it circulates
+around the primary system, I conclude that the theoretical models need to
+allow for more mixing of the fuel salt.
+
+Tn the course of the testing program, three different testing tech-
+niques were used. The rod-jog technique, an open-loop method of rod con-
+trol, worked well when the rods were free-moving. Since there was no
+feedback, any imbalance between the withdrawal and insertion times re-
+sulted in drift of the average position. The flux-demand technique im-
+posed the test pattern on the flux rather than rod position. The results
+from this type test contained more scatter than rod-controlled testing
+but for the ©U fuel loading gave adequate results. The faster response
+of the 233J-fueled reactor, coupled with the increased noise level and
+more aging of the control rod assemblies, gave results which contained
+
+such scatter that they were of little value in determining the frequency
+10kL
+
+response of the MSRE., For a system in which the rod position is well de-
+fined, this technique should work well and has advantages which might make
+it preferred over rod-controlled testing for certain applications.
+
+The rod-demand technique, a closed-loop method of rod control, when
+used with a PRBS, meshed with the physical limitations of the MSRE to
+give the best results of the testing program, Normalization of the re-
+sults was sometimes necessary but the shapes were in good agreement with
+the theory,
+
+Various PRBS and PRTS sequences were used, The PRBS was found to
+give better results with the rod-controlled testing and neither type sig-
+nal was adequate when the flux-demand technique was used with the 23733
+fuel loading. The failure of the PRTS signal when used with the rod-
+demand technique is thought to be an extension of the problems associated
+with the control-rod position indication. Sequence lengths varied between
+80 and 242 bits and the basic bit duration varied between 3 and 10 seconds,
+The expected distributions of signal power as a function of frequency were
+found and there were no anomalous effects noted for the different sequence
+specifications. As one would expect, it was found that better statistical
+precision was obtained for sequences which were repeated several times.
+
+Analysis techniques gave consistent results when applied to data
+which contained a relatively low noise level but differed radically at the
+low frequencies, typically the first five to ten harmonics, when the data
+contained high noise content, such as during the flux-demand tests. No
+systematic. study was made to determine the reasons for these differences
+
+which leaves this as an area in need of additional work.
+105
+
+The experience gained in this work emphasizes the need to plan the
+
+testing of a system to match the test procedure to the characteristics
+
+of that system. In particular, the difficulty in obtaining accurate
+
+indications of rod position changes dictated that all unnecessary rod
+
+movement be eliminated. In the 33FJ-fueled system with a high noise level
+
+in the flux signal, the rod-demand method proved to be the best testing
+
+procedure.
+
+Some areas in which more work is needed are:
+
+1.
+
+Determination of the cause of the difference between
+analysis schemes at the low frequencies when a large amount
+of noise is present.
+
+Investigation into the meaning of the coherence function
+when applied to periodic sequences and explanation for the
+experimentally determined ccherence functions which were
+greater than 1.0.
+
+Complete verification of the hypothesis that proper analysis
+at frequencies midway between adjacent harmonic frequencies
+of the minimum period length will provide a measure of the
+
+system noise level that was present during the testing.
+LIST OF REFERENCES
+10.
+
+11.
+
+107
+
+LIST OF REFERENCES
+
+Buckner, Melvin R,, "A Study of the Application of System Identifi-
+cation Techniques in the Analysis of Nuclear Reactor Dynamics,"
+Unpublished Masters Thesis, Nuclear Engineering Department,
+University of Tennessee, Knoxville, Tennessee (December 1968).
+
+Ball, S. J. and Kerlin, T. W., "Stability Analysis of the Molten-Salt
+Reactor Experiment," USAEC Report ORNL-TM-1070, Oak Ridge
+National Laboratory, (December 1965).
+
+Steffy, Jr., R. C. and Wood, P. J., "Theoretical Dynamic Analysis of
+the MSRE with U-233 Fuel," USAEC Report ORNL-TM-2571, Oak Ridge
+National Laboratory (July 1969).
+
+Haubenreich, P. N. et al,, "MSRE Design and Operations Report,
+Part V-A, Safety Analysis of Operation with 232," USAEC Report
+ORNL-IM-2111, Oak Ridge National Laboratory, p. 41, (February
+1968).
+
+Molten-Salt Reactor Program Semiannual Progress Report, July 31, 1964
+USAEC Report ORNL-3708, Oak Ridge National Laboratory, p. 231,
+(November 196L).
+
+2
+
+Molten-Salt Reactor Program Semiannual Progress Report, February 28,
+1969, USAEC Report ORNL-4396, Oak Ridge National Laboratory,
+p. 130, (August 1969).
+
+Robertson, R. C., "MSRE Design and Operations Report, Part 1,
+Description of Reactor Design," USAEC Report ORNL-TM-728, Oak
+Ridge National Laboratory, (January 1965).
+
+Tallackson, J. R., "MSRE Design and Operations Report, Part II-A,
+Nuclear and Process Instrumentation," USAEC Report ORNL-TM-T729,
+Part II-A, Oak Ridge National Laboratory, (February 1968).
+
+Kerlin, T. W. and Ball, S. J., "Experimental Dynamic Analysis of the
+Molten-Salt Reactor Experiment," USAEC Report ORNL-TM-16L7,
+Oak Ridge National Laboratory, (October 1966).
+
+Kerlin, T. W. "The Pseudo-Random Binary Signal for Frequency Response
+Testing," USAEC Report ORNL-TM-1662, Oak Ridge National
+Laboratory, (1966).
+
+Elspas, Bernard, "The Theory of Autonomous Linear Sequential Net-
+works," Transactions of the I.R.E. on Circuit Theory, CT-6:
+
+45-60 (1959).
+12.
+
+13.
+
+1h,
+
+15,
+
+16.
+
+17.
+
+18.
+
+19.
+
+20.
+
+21,
+
+22.
+
+23.
+
+108
+
+Everett, D., "Periodic Digital Sequences with Pseudonoise Properties,”
+General Electric Company (Limited of England) Journal of Science
+
+and Technology, 33(3): 115-126 (1966).
+
+Godfrey, K. R. and Murgatroyd, W,.,, "Input-Transducer Errors in Binary
+Cross-correlation Experiments, Proceedings of the Institute of
+Electrical Engineers, 112(3): (March 1965).
+
+ 
+
+Briggs, P. A. N., Godfrey, K. R., Hammond, P. H., "Estimation of
+Process Dynamic Characteristics by Correlation Methods using
+Pseudo Random Signals, ' IFAC Symposium on Identification in
+Automatic Control Systems, 12-17 June, 1967, Prague, Czecho-
+slovakia, Part II, pp. 1 - 12, Academia-Prague (June 1967).
+
+Zierler, Neal, "Linear Recurring Sequences," Journal of the Society
+of Industrial Applied Mathematics, 7(1): (March 1960).
+
+Simpson, H., C., "Statistical Properties of a Class of Pseudorandom
+Sequences," Proceedings of the Institute of Electrical Engineers,
+113(12): 2075, (December 1966).
+
+Turin, G. L., "An Introduction to Matched Filters," Institute of Radio
+Engineers Transactions on Information Theory, IT-6: p. 311 (1960).
+
+Roberts, P, D, and Davis, R. H., "Statistical Properties of Smoothed
+Maximal-Length Linear Binary Sequences," Proceedings of the
+Institute of Electrical Engineers, 113(1): 190 (January 1966).
+
+ 
+
+Kerlin, T. W., "Frequency-Response Testing," Nuclear Safety, 8(L4).
+
+339-345, (Summer, 1967).
+
+Hooper, R. J. and Gyftopoulos, E. P., "On the Measurement of
+Characteristic Kernels of a Class of Nonlinear Systems," Neutron
+Noise, Waves, and Pulse Propagation, Proceedings of Symposium at
+University of Florida, February 1L - 16, 1966, R. E. Uhrig,
+Editor, AEC-Symposium Series No. 9, USAEC-DTIE, Oak Ridge
+National Laboratory, (1967).
+
+Godfrey, K. R., '"Three-Level m-Sequences," Electronic Letter, 2 .
+
+oll (1966).
+
+Briggs, P. A. N. and Godfrey, K. R., '"Pseudorandom Signals for the
+Dynamic Analysis of Multivariable Systems," Proceedings of the
+Institute of Electrical Engineers, 113(7): (July 1966).
+
+Ball, S., J., "A Digital Filtering Technique for Efficient Fourier
+Transform Calculations," USAEC Report ORNL-TM-1662, Oak Ridge
+National Laboratory (July 1967).
+2k,
+
+25.
+
+26.
+
+27.
+
+28.
+
+29.
+
+30.
+
+31.
+
+109
+
+Broome, P. G. and Cooper, G. C., "Fourier Spectrum Analysis by Analog
+Methods, " Instrumentation and Control Systems, 35(5): 155-60
+(May 1962).
+
+Ball, S. J., Instrumentation and Control Systems Division Annual
+Progress Report, September 1, 1965, USAEC Report ORNL-3875,
+pp. 126 - 127, Oak Ridge National Laboratory (September 1965).
+
+Kerlin, T. W. and Lusius, J. L., "CABS — A Fortran Computer Program
+for Calculating Correlation Functions, Power Spectra, and the
+Frequency Response from Experimental Data," USAEC Report ORNIL-
+TM-1663 (September 1966).
+
+Thie, J. A., Reactor Noise, Rowan and Littlefield, Inc., New York
+(1963).
+
+Bendat, J. S. and Piersol, A. G., Measurement and Analysis of Random
+Data, John Wiley and Sons, Inc., New York (1966).
+
+Balcomb, J. Douglas, Demuth, H. B., and Gyflopoulis, E.P., "A Cross-
+correlation Method for Measuring the Impulse Response of Reactor
+Systems," Nuclear Science and Engineering, 11: 159-166 (1961).
+
+Godfrey, K. R., Everett, D., and Bryant, P. R., "Input-Transducer
+Errors in Binary Crosscorrelation Experiments - 2," Proceedings
+of the Tnstitute of Electrical Engineers, 113(1): 185-189
+(January 1966).
+
+Godfrey, K. R., "Input-Transducer Errors in Binary Crosscorrelation
+Experiments — 3," Proceedings of the Institute of Electrical
+Engineers, 113(6): 1095 - 1102 (June 1966).
+APPENDIX
+TABLE VIIT
+
+ 
+
+ 
+
+PERTINENT INFORMATION RELATED TO EACH TEST PERFORMED FOR THIS STUDY
+Power Number Results
+Tape Level Test Test of in Analysis
+Number Fuel (Mw) Method Signal Periods Text Methods
+27333 U-235 8 Mw rod-jog ~~ 127 x 5 PRBS L Fig. 1L,15 CABS
+(a) Regular analysis at har-
+monic frequencies
+(b) Analysis at harmonic and
+mid-harmonic frequencies
+FOURCO
+27328 U-235 8 Mw  flux-demand 242 x 7.25 PRTS 0 Fig. 19,20 CABS
+FOURCO
+2732Lk  U-235 8 Mw  flux-demand 127 x 5 PRBS 3 No CABS
+FOURCO
+073270 U-235 8 Mw  flux-demand 80 x 10 PRTS No None
+27337° U-235 5 Mw  flux-demand 80 x 10 non- L No CABS
+sym.9 PRTS
+27336° U-235 5 Mw  flux-demand 242 x 5 PRIS 3 No CABS
+
+(a) All data
+
+(vb) Two periods of data
+
+(c) Two periods after at-
+tempting to correct bad
+data
+
+FOURCO
+(a) All data
+(b) Two periods of data
+
+ 
+
+TTT
+TABLE VIIT (continued)
+
+ 
+
+ 
+
+ 
+
+Power Number Results
+Tape Level Test Test of in Analysis
+Number Fuel (Mw) Method Signal Periods Text Methods
+27338 U-235 5 Mw flux-demand 127 x 5 PRBS 5 Fig. 16,17 CABS
+FOURCO
+273057 U-235 2 Mw flux-demand 242 x 7.25 PRTS 2 No CABS
+FOURCO
+27332 U-235 2 Mw flux-demand 242 x 7.25 non- 2 Fig. 22 CABS
+sym. PRTS FOURCO
+27340 U-235 2 Mw flux-demand B80 x 10 non-sym L Fig. 21,22 CABS
+PRTS FOURCO
+o734k3  U-235 2 Mw flux-demand 127 x 5 PRBS 5 Fig. 18 CABS
+FOURCO
+27324 U-233 8 Mw flux-demand 127 x 5 PRBS r No CARS
++27330 CPSD
+FOURCO
+(a) Using 5 periods of data
+(b) Using 7 periods of data
+07325 U-233 5 Mw flux-demand 80 x 3 PRIS 12 Fig. 25(d) CABS
+
+(a) At harmonic and mid-
+harmonic frequencies
+FOURCO
+(a) Regular
+(b) Ensemble
+CPSD
+
+clT
+TABLE VIII (continued)
+
+ 
+
+ 
+
+Power Number Results
+Tape Level Test Test of in Analysis
+Number Fuel (Mw) Method Signal Periods Text Methods
+27339 U-233 1 Mw flux-demand 127 x 5 PRBS L Fig. 2k(c) CABS
+FOURCO
+27340 U-233 1 Mw flux-demand 242 x L PRTS 3 No CABS
+273437 U-233 1 Mw flux-demand 80 x 3 PRTS --- No --=-
+27326 U-233 Zero flux-demand 127 x 5 PRBS 4 Fig. 2k(a) CABS
+(1o0w) (a) Regular
+(b) Analyzed first two and
+last two periods of data
+and averaged results 5H
+FOURCO
+(a) Regular
+(b) Ensemble
+CPSD
+27334 U-233 Zero flux-demand 80 x 3 PRTS 4 Fig. 25(a) CABS
+(50w) FOURCO
+(a) Ensemble
+27334 .U-233 Zero flux-demand 127 x 5 PRBS 3 Fig. 2k(b) CABS
+(50w) FOURCO
+(a) Ensemble
+273358 U-233 Zero flux-demand 127 x 5 PRBS Lh Fig. 2k(da) CABS
+(50w) CPSD
+FOURCO
+
+(a) Ensemble
+
+ 
+TABLE VIII (continued)
+
+ 
+
+ 
+
+ 
+
+Power Number Results
+Tape Level Test Test of in Analysis
+Number Fuel (Mw) Method Signal Periods Text Methods
+g _ .
+27342® U-233 Zero  flux-demand 80 x 3 PRTS h Fig. 25(e) CABS
+(50w) FOURCO
+(a) Ensemble
+27336  U-233 Zero flux-demand 242 x 5 PRIS 2 Fig. 25(c) CABS
+(50w) FOURCO
+(a) Ensemble
+27336  U-233 Zero flux-demand 80 x 3 PRIS 3 Fig. 25(b) CABS
+(50w) FOURCO
+(a) Regular
+(b) Ensemble
+27329 U-233 8 Mw  rod-demand 127 x 5 PRBS 5 Fig. 26(d) CABS
+FOURCO
+CPSD
+27330 U-233 8 Mw rod-demand 242 x 5 PRTS 2 Fig. 27 CABS
+FOURCO
+27343 U-233 8 Mw  rod-demand 242 x 4 PRTS 3 No FOURCO
+27337 U-233 8 Mw rod-demand 127 x 3 PRBS 3 No CABS
+27341  U-233 8 Mw rod-demand 127 x 3 PRBS 8 Fig. 13 CABS
+and 26(c) (a) Two periods analyzed
+
+then averaged results
+
+ 
+
+HTT
+TABLE VIII (continued)
+
+ 
+
+ 
+
+Power Number Results
+Tape Level Test Test of in Analysis
+Number Fuel (Mw) Method Signal Periods Text Methods
+27341
+(continued) Tables III, (b) Four periods analyzed,
+v,v, VI, then averaged results
+VII (c) Regular
+CPSD
+(a) ¢ = 0.001
+(b) £ = 0.05
+(c) £=0.5
+FOURCO
+(a) Regular
+(b) Two periods analyzed
+then averaged results
+(c) Four periods analyzed
+then averaged results
+(ad) Same as a,b,c except
+analysis at non-harmonic
+frequencies
+27327 U-233 5 Mw rod-demand 127 x 5 PRBS 11 Fig. 26(b) FOURCO
++27331 (a) Using only 5 periods of
+data
+(b) All data
+CABS
+(a) Analysis at harmonic
+frequencies
+
+(b) At harmonic and mid-
+harmonic frequencies
+
+ 
+
+GTI
+TABLE VIII (continued)
+
+ 
+
+ 
+
+ 
+
+ 
+
+Power Number Results
+Tape a Level Test Test of in Analysis
+Number Fuel (Mw) Method Signal Periods Text Methods
+X-8205 U-233 Zero rod-demand 127 x 5 PRBS 3 Fig 26(a) CABS
+(1okw) FOURCO
+CPSD
+a. Recorded here to aid in future reference to the data.
+b. Computer malfunctioned during data-recording making results meaningless.
+c. The raw data for this test was destroyed and was not available for further analysis.
+d. Non-symmetric.
+e. The results from this test were very peculiar and did not resemble the expected frequency
+
+response at all, The reason for this bad test has not been explained, but it was noted that there
+was excessive drift in the fuel-salt temperature during the test. Attempts to correct for this drift
+were unsuccessful.
+
+f.
+
+ge.
+
+Amplifiers saturated during test.
+
+Fuel not circulating for this test.
+
+9TT
+1. N. J. Ackermann
+2. R. G. Affel
+3. J. L. Anderson
+4, CC. F. Baes
+5. S.J. Ball
+6. H. F. Bauman
+7. 5S. E. Beall
+8. E. S. Bettis
+9. R. Blumberg
+10. E. G. Bohlmann
+11. C. J. Borkowski
+12, G. E. Boyd
+13. R. B, Briggs
+14, R. A. Buhl
+15. 0. W. Burke
+16. F. H. Clark
+17. W. B. Cottrell
+18, CC. W, Craven
+19. J. L. Crowley
+20. F. L, Culler
+21, 5S. J. Ditto
+22, W. P., Eatherly
+23. J. R. Engel
+2k, D, E. Ferguson
+25. L. M. Ferris
+26. A. P, Fraas
+27. D. N. Fry
+28. W. K. Furlong
+29. C. H. Gabbard
+30. R. B. Gallaher
+31. W. R. Grimes
+32. A. G. Grindell
+33. R. H. Guymon
+34, P. N. Haubenreich
+35. A. Houtzeel
+36. T. L. Hudson
+37. P. R. Kasten
+38-42. T. W. Kerlin
+43. R. J. Kedl
+LY, H. T, Kerr
+103-104.
+105-106.
+107-109.
+110.
+111, ORNL Patent
+
+117
+
+INTERNAL DISTRIBUTION
+
+hs
+
+L6.
+
+bt
+L3
+ho
+50
+51
+
+Office
+
+5. 5S.
+A, I,
+T. S.
+
+ORNL-TM-2823
+
+Kirslis
+Krakoviak
+Kress
+
+Kermit Laughon, AEC-0OSR
+
+J. L.
+
+REaygQau@mrerEOdPHRAD TD OQOYd DOR
+
+PERE Rota E=EQOHOEHOQ EH
+
+g = i
+
+n
+
+RUTH HR E
+QOEOWED>QNG om
+
+G.
+
+D.
+
+Lucius
+Lundin
+
+. Lyon
+
+MacPherson
+MacPherson
+Martin
+McCoy
+
+. McCurdy
+
+McIntosh, AEC-Washington
+McNeese
+
+Miller
+
+Moore
+
+Nicholson
+
+Oakes
+
+Perry
+
+Piper
+
+. Prince
+
+Ragan
+Redford
+
+. Robinson
+
+Rosenthal
+Roth, AEC-ORO
+Savolainen
+
+ap Scott
+. Sides
+. Skinner
+piewak
+
+Steffy
+Sundberg
+Tallackson
+
+. Thoma
+
+Trauger
+
+. Weir
+
+Whatley
+White
+Whitman
+
+Gale Young
+
+Central Research Library (CRL)
+Y-12 Document Reference Section (DRS)
+
+Laboratory Records Department (LRD)
+
+Laboratory Records Department — Record Copy (ILRD-RC)
+112,
+
+113.
+
+11k,
+
+115.
+
+116.
+
+117.
+118.
+
+119.
+
+120.
+
+121-135.
+
+136.
+
+118
+ORNL-TM-2823
+
+EXTERNAL DISTRIBUTION
+
+P. Gyftopoulos, Massachusetts Institute of Technology,
+138 Albany St., Cambridge, Massachusetts, 02139
+
+J. Hanauer, University of Tennessee, Knoxville, Tennessee,
+
+37916
+
+. F. Pasqua, University of Tennessee, Knoxville, Tennessee,
+
+37916
+
+Rajagopal, Westinghouse NES, P.O. Box 355, Pittsburgh,
+Pennsylvania, 15230
+
+Rawle, Westinghouse NES, P,0. Box 355, Pittsburgh,
+Pennsylvania, 15230
+
+. A. Rydin, DAPL, P.O. Box 1072, Schenectady, N.Y., 12309
+
+E. Uhrig, University of Florida, Gainesville, Fla,, 32601
+
+B. Willis, Idaho Nuclear Corp., P.O. Box 1845, Idaho Falls,
+Idaho, 83L01
+
+J. Wood, Westinghouse Electric Co., Waltz Mill Site,
+
+Box 158, Madison, Pennsylvania, 15663
+
+Division of Technical Information Extension (DTIE)
+
+Laboratory and University Division, ORO

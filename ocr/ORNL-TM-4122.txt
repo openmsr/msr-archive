@@ -1,0 +1,2423 @@
+  
+
+ ORNL.TM-4122
+
+DEVELOPMENT OF A
+VENTURI TYPE BUBBLE GENERATOR FOR USE
+IN THE MOLTEN-SALT REACTOR XENON
+REMOVAL SYSTEM
+
+C. H. Gabbard
+
+MASTER
+
+ 
+
+ 
+
+ 
+
+Ce | ES TAT TYR -Te UN fet,
+
+OPERATED BY UNION CARBIDE CORPORATION © FOR THE U.S. ATOMIC ENERGY COMMISSION
+
+ 
+ 
+
+ 
+
+This report was prepared as an account of work sponsored by the United
+States Government. Neither the United States nor the United States Atomic
+Energy Commission, nor any of their employees, nor any of their contractors,
+subcontractors, or their employees, makes any warranty, express or implied, or
+assumes any legal liability or responsibility for the accuracy, completeness or
+usefulness of any information, apparatus, product or process disclosed, or
+represents that its use would not infringe privately owned rights.
+
+ 
+
+ 
+ORNL-TM~L122
+
+Centract No. W-ThOS-eng-26
+
+Reactor Division
+
+DEVELOPMENT OF A VENTURI TYPE BUBBLE GENERATOR
+FOR USE IN THE MOLTEN-SALT REACTOR XENON REMOVAL SYSTEM
+
+C. H. Gabbard
+
+Molten-Salt Reactor Program
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+NOTICE NOTICE
+
+nature oo vas prepared Primal pe iminary This report was prepared as an account of i work
+at the originating retallarion ot J ob ntornal use sponsored by the United States Government, Neither
+vision or correction and theref re dos ject to re the United States nor the United States Atomic Energy
+sent a final report. It is pass to tho 3 — fopre- Commission, nor any of their employees, nor any of
+confidence and should aha stent pient In their contractors, subcontractors, or their employees,
+disclosed without the a; roval f th el thn” makes any warranty, express or implied, or assumes any
+installation or DTI Extonst o x e originating legal liability or responsibility for the accuracy, com-
+ton, Oak Ridge. pleteness or usefulness of any information, apparatus,
+product or process disclosed, or represents that its use
+
+would not infringe privately owned rights.
+
+ 
+
+ 
+
+December 1972
+
+OAK RIDGE NATIONAL LABORATORY
+Oak Ridge, Tennessee 37830
+operated by
+
+UNION CARBIDE CORPORATION ;
+for the ASTE
+U.S. ATOMIC ENERGY COMMISSION
+NV OF THIS DOCUNENT IS LIMITED
+
+“0h Smad
+5 Genivaciars ;
+
+ 
+ 
+iii
+
+TABLE OF CONTENTS
+
+ABSTRACT
+I. INTRODUCTION
+II. BUBBLE GENERATOR DESIGN
+ITI. OPERATING CHARACTERISTICS AND TEST RESULTS
+ITTI.-1. Bubble Size
+IITI.~2. Gas Injection Pressure Characteristics
+IV. CONCLUSIONS AND RECOMMENDATIONS
+V. ACKNOWLEDGEMENT
+NOMENCLATURE
+REFERENCES
+
+APPENDIX
+
+1h
+27
+28
+29
+30
+
+31
+Figure
+
+Figure
+
+Figure
+
+Figure
+
+Figure
+
+Figure
+
+Figure
+
+Figure
+
+Figure
+
+Figure
+
+Figure
+
+Figure
+
+10.
+
+11.
+
+12.
+
+LIST OF FIGURES
+
+Bubble Generator Design Configurations which were
+Given Reduced Scale Evaluation Tests
+
+Bubble Generator Design for the Gas Systems
+Technology Facility
+
+Bubble Size Produced by 2.1 in. Throat Diameter
+Bubble Generator as a Function of Liquid Flow Rate
+
+Bubble Size Produced by GSTF Bubble Generator
+as a Function of Surface Tension
+
+Surface Tension as a Function of Sodium Oleate
+Concentration for Laboratory Batch Samples and
+for Loop Samples
+
+Bubble Size Correlation for GSTF Design Bubble
+Generator
+
+Simplified Flow Diagram of the Gas Systems Technology
+Facility
+
+Gas Injection Pressure and Overall Pressure Drop
+of Prototype Bubble Generator as a Function
+of Gas Flow Rate
+
+Geometry of Bubble Generator Used in Analysis of
+Gas Injection Pressure and Overall Head Loss
+
+Pressure Drop of Gas Feed Passages as a Function
+of Gas Flow Rate
+
+Pressure Drop Across the Gas Plume Interface
+as a Function of Throat Void Fraction
+
+Correlation of Plume AH (H,.) to Throat Liquid
+Velocity and Throat Void Fraction
+
+10
+
+11
+
+16
+
+16
+
+17
+
+19
+
+22
+
+2k
+
+25
+DEVELOPMENT OF A VENTURI TYPE BUBBLE GENERATOR
+FOR USE IN THE MCLTEN-SALT REACTOR XENCN REMOVAL SYSTEM
+
+C. H. Gabbard
+
+ABSTRACT
+
+A venturi type bubble generator was developed for appli-
+
+cation in the xenon removal system proposed for a molten-salt
+
+_ breeder reactor. Gas injected into the high velocity liquid
+‘at the" venturi throat is formed into bubbles by the fluid
+turbulence in the diffuser cone. Tests were conducted using
+aqueous solutions tc determine the various pressure drops of
+the bubble generator as a function of liquid and gas flow
+rates and to determine the bubble diameter produced.
+Empirical relationships were developed which could be used in
+combination with the more conventional fluid flow equations
+to predict the overall head loss and the gas injection pres-
+sure of the bubble generator. A dimensionless correlation
+for predicting the bubble diameter was developed for bubble
+generators of similsr geometry.
+
+Keywords: Bubble Generator, Bubbles, Bubble Size, Gas
+Injection, Fused Salts, MSBE, MSBR, Performance, Xenon, Fluid
+Flow. oT
+
+ 
+
+I. INTRODUCTION
+
+In a nuclear reactor operating in the thermal energy range, the con-
+tinuous removal of the gaseous fission product poison xenon-135 is neces-
+sary to obtain a breeding ratio greater than 1.0. In a molten-salt
+breeder reactor (MSBR), the xenon-135 circulates in solution with the
+molten fluoride fuel salt. A proposed method of removing this xenon is
+to continuously inject helium bubbles into the salt stream to a gas
+volume fraction of 0.2 to 1.0 percent at the reactor core midplane. The
+xenon-135 would transfer by turbulent diffusion and would be stripped
+from the salt when the bubbles were removed. Calculations indicate that,
+even with this low gas volume fraction, adequate xenon-135 removal would
+be obtained by stripping the bubbles from a bypass stream which is about
+10 percent of the main salt flow. Little advantage would be gained by
+stripping larger flows. A more complete discussion of xenon removal from
+
+a MSBR by this method is presented in Reference (1).
+This report describes the design, development, and operating char-~
+acteristics of the bubble generator proposed for use in a 150 MW(t)
+molten-salt breeder experiment (uspE). (2) A full scale Plexiglas model
+of this bubble generator was studied in a test facility using water,
+glycerin-water mixtures, and CaCl, aqueous solutions. A prototype model
+of Hastelloy "N" will be further evaluated with molten salt as part of
+
+the test program of the Gas System Technology Facility (esrr). 3)
+
+II. BUBBLE GENERATOR DESIGN
+
+The ultimate goal of the development program was to obtain informa-
+tion which could be used to design a full scale bubble generator which
+could be tested in the GSTF using molten salt. Several design criteria
+that have evolved during the development of the bubble generator are
+listed in Table I. Devices requiring auxiliary power or having moving
+parts were considered originally but were rejected as being unnecessarily
+complex for a high-temperature molten-salt system. Fluid powered devices
+basically resembling flow venturi appeared to satisfy the criteria and
+three configurations were selected for continued development. The dif-
+ferent configurations, shown in Figure 1, are variations in the method of
+forming the high velocity throat region. Helium injected into the high
+velocity salt stream at the throat forms small bubbles as a result of the
+fluid turbulence in the diffuser section.
+
+Reduced scale tests were performed on these three configurations and
+each performed satisfactorily. Initial testing of the "teardrop" design
+indicated that the resulting bubble size was about one-fourth of the salt
+flow gap over the range of liquid flows tested.) Consequently, a flow
+passage of 0.080 in. would be required to produce 0.020 in, diameter
+bubbles. The "multivane' design was an extension of this principle to
+provide a more uniform bubble distribution over larger pipe sizes and to
+avoid the large diameter that would have been required in a full scale
+teardrop design with a 0.080 in. annulus. Tests of a single vane prototype
+revealed a flow oscillation around the trailing edge of the vane. In
+addition, the gas distribution along the width of the vane and between
+the flow passages on either side of the vane was difficult to control.
+Reduced scale tests on the "venturi" design were performed using 3/L in.
+
+and 1 1/2 in. pipe size commercial jet pumps that were modified to more
+Table I
+Bubble Generator Criteria
+The bubble generator should be sized for application in the
+MSBE.
+Nominal salt flow rate = 500 gpm.
+Gas flow rate = 0 - 0.65 scfm helium.
+The generated bubble diameter should be 0.020 in. or less.
+
+The gas bubbles should be uniformly dispersed in the flowing
+salt stream.
+
+The bubble generator should be simple, reliable, and
+maintenance-free.
+
+The bubble generator should operate from pressure drop inherent
+in the overall system design and should not require a gas com-
+pressure for the injection of gas.
+ORNL-DWG 71-10220
+
+ 
+
+  
+
+GAS FEED
+VANES [i]
+
+ 
+
+ 
+
+ 
+
+ 
+
+GAS~, |:
+=
+
+ 
+
+RECTANGULAR 2
+CROSS SECTION —af.
+
+11
+QO
+O
+
+ 
+
+ 
+
+——
+
+FLow) |
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+MULTIVANE VENTURI "TEAR DROP
+
+FIGURE 1
+
+BUBBLE GENERATOR DESIGN CONFIGURATIONS WHICH WERE
+GIVEN REDUCED SCALE EVALUATION TESTS
+closely provide a venturi geometry. These tests showed that well dis-
+tributed bubbles of about the desired size could be produced.
+
+Because of its simplicity and ability to meet the other requirements,
+the venturi design was selected for full scale development. Figure 2 shows
+the final design chosen for further testing with molten salts at high tem-
+perature in the GSTF., This design is a modified venturi with the 2.10 in.
+diameter throat stepped to 2.18 in. at the gas feed holes. The gas is
+injected through 18 - 1/8 in. diameter radial holes into the high velocity
+region at the venturi throat. An annular gas cavity forms between the wall
+of the bubble generator and the flowing liquid in the 2.18 in. diameter
+cylindrical mixing chamber. The length of this cavity depends on the gas
+flow rate, and at full gas flow the cavity extends into the 15° diffuser
+section. The actual bubble formation occurs in the fluid turbulence in
+
+the entry of the diffuser cone.
+ITI. OPERATING CHARACTERISTICS AND TEST RESULTS
+
+A full scale model of the proposed bubble generator with a 2.1 in.
+diameter throat and with 4 in. diameter inlet and outlet piping connec-
+tions was fabricated of Plexiglas for complete testing and evaluation.
+Tests on this bubble generator were conducted to determine the bubble
+size produced, various pressure drops, and general operating characteris-
+tics. The tests were run with demineralized water, L1.5 wt percent
+
+glycerin in water, and 31 wt percent CaCl, aqueous solution. The glycerin-
+
+2
+water mixture and the CaCl, solution have the same kinematic viscosity as
+
+fuel salt and provided dynamic similarity. Tests were also conducted with
+up to about 200 ppm n-butyl alcohol or sodium oleate added to demineralized
+water. The n-butyl alcohol, a surfactant; stabilized small bubbles and
+inhibited coalescence but had little effect on the density, viscosity,
+
+or surface tension of the bulk fluid. The sodium oleate, also a surfactant,
+decreased the surface tension by about a factor of two and inhibited bub-
+
+ble coalescence, but did not alter the density or viscosity of the bulk
+fluid.
+ORNL-DWG 72-9609
+~GAS INJECTION LINE
+
+¥4-in. OD x 0072- in.
+WALL TUBING
+
+ 
+ 
+  
+
+18 Yg-in-diam
+GAS INJECTION HOLES —
+
+ 
+
+a
+
+5047 in.
+diam
+
+ 
+
+ 
+
+ 
+
+ANNULAR GAS DISTRIBUTION
+CHANNEL 34 in. x 54 in. —
+
+= 41% in—~
+
+~~ eee 19 Yin — ~
+
+ 
+
+FIGURE 2
+
+BUBBLE GENERATOR DESIGN FOR THE
+GAS SYSTEMS TECHNOLOGY FACILITY
+IITI.-1. Bubble Size
+
+I1T1.-1.1 Test Condition
+
+In the proposed xenon removal system, helium bubbles are to be
+injected and removed in a 10 percent bypass loop. The bubbles on the
+average are expected to circulate several times around the primary cir-
+cuit of the reactor before being processed in the side stream. During
+this circulation, the bubbles will be affected by solution and dissolution
+as they pass through different regions of pressure and temperature, and
+by breakup and coalescence as they pass through high and low shear regions
+(e.g., the pump). Consequently, the circulating bubble size is likely to
+be controlled by the system dynamics rather than by the bubble generator
+itself. However the size generation characteristics of the bubble gen-
+erator should be of general interest for other systems and for possible
+unanticipated modes of operation, such as full flow gas injection and
+removal. In addition, the size produced may serve as an "initializing"
+condition for monitoring changes as the bubbles pass through the system.
+Consequently, some analysis and some limited tests were made to obtain
+an indication of the bubble size produced by the bubble generator as it
+is affected by flow and fluid properties. Flow rate was varied from
+200 gpm to 550 gpm and surface tension was varied from 72 dynes/cm to
+30 dynes/em by adding different amounts of sodium oleate. An antifoaming
+agent, G.E. Silicone Emulsion AF-T72, was also added at concentrations of
+
+10 percent of the sodium oleate.
+
+ITIT.-1.2 Bubble Size Measurements
+
+The bubble size distributions produced by the bubble generator were
+determined by taking still photographs at the discharge of the diffuser
+cone. A conventional studio camera with a 12 in. focal length lens was
+used to take the photographs on Lx5 Polaroid film. A strobe light with a
+1/30,000 second duration was used to "stop" the bubble motion and to pro-
+vide back lighting.
+
+The photographs, which were about actual size, were enlarged to
+obtain a total magnification of 8. Enlargements to greater magnification
+resulted in a loss of resolution. The bubble size distributions fer each
+
+condition were determined by scaling bubble sizes directly from the
+enlargements. The diameters were measured by comparison with a plastic
+template having drilled holes ranging from 1/32 to 3/4 in. in increments
+of 1/32 in. A volume averaged bubble diameter as defined below was cal-
+
+culated for each distribution:
+
+1/3
+
+ 
+
+where: n. is the number of bubbles of a given diameter,
+
+d;, per unit area of the photograph.
+The resolution of the photographs was adequate to measure bubble diameters
+in the 0.008 in. range (1/16 in. on the enlargement), but no bubbles
+could be identified in the 0.004 in. diameter range. The results of these
+tests are shown on Figures 3 and bL.
+
+Figure 3 shows the volume average bubble diameter produced by two
+bubble generator designs plotted as a function of liquid flow rate at
+several values of surface tension. The data are compared with a slope of
+-0.8 power dependence discussed in greater detail later in this report.
+There was a high degree of scatter in some of the sets of data at constant
+surface tension. Consequently, only selected data sets having low scatter
+are shown on the plot. Although there were differences in the slope of
+the various lines, the data tend to support a -0.8 power dependence.
+Similar data taken previously alsc support a -0.8 power, and none of the
+data have suggested a slope significantly different from -0.8.
+
+Figure 4 is a plot of the bubble diameter as a function of surface
+tension at three flow rates. The measured surface tension data from
+loop samples taken during the course of this experiment were scattered
+and did not agree with the data from previous laboratory scale samples
+which were in general agreement with the sodium oleate supplier's litera-
+ture. The values of surface tension used in Figure L were obtained from
+the calculated concentrations in the test loop and the surface tension
+vs concentration data from the laboratory samples as shown on Figure 5.
+The measured surface tension data from the loop samples are also shown
+on Figure 5. The discrepancy between these is not fully understood.
+
+However, the actual circulating concentration of sodium oleate could change
+ORNL-DWG 73-1541
+
+ 
+
+0.100 | |
+
+ 
+
+GSTF STEPPED BORE DESIGN
+
+DEMINERALIZED WATER
+10 ppm SODIUM OLEATE
+
+le}
+®
+A 20 ppm SODIUM OLEATE
+A 75 ppm SODIUM OLEATE
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+SMOOTH BORE DESIGN
+V DEMINERALIZED WATER
+
+ 
+
+Vv
+
+0.050 ;
+N¢ Wd) =c (gpm)—0-8
+
+4
+
+ 
+
+ 
+
+ 
+
+> +0
+
+\
+0.020 N.
+
+ 
+
+BUBBLE DIAMETER , VOLUME AVERAGED (in.)
+
+ 
+
+ 
+
+0.010 N
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+i»
+
+ 
+
+FLOW RATE (gpm)
+
+FIGURE 3
+
+BUBBLE SIZE PRODUCED BY 2.1 IN. THROAT DIAMETER BUBBLE GENERATOR
+AS A FUNCTION OF LIQUID FLOW RATE
+BUBBLE DIAMETER, VOLUME AVERAGED (in.)
+
+0.060
+
+0.050
+
+0.040
+
+0.030
+
+0.020
+
+0.010
+
+0.009
+
+ORNL—DWG 73-1542
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+A LIQUID FLOWRATE = 200 gpm
+® LIQUID FLOWRATE = 350 gpm
+O LIQUID FLOWRATE = 500 gpm
+7
+pd ‘
+A : 1
+®
+(dy) =c (0/p)08 A ®
+oO
+$ Oo
+®
+A A
+Oo
+a)
+A
+A 0
+®
+Oe
+O
+10 20 30 40 50 60 70 80 90
+
+SURFACE TENSION (dynes/cm)}
+
+FIGURE 4
+
+BUBBLE SIZE PRODUCED BY GSTF BUBBLE GENERATOR
+AS A FUNCTION OF SURFACE TENSION
+
+100
+
+OT
+SURFACE TENSION (dynes/cm)
+
+80
+
+70
+
+60
+
+50
+
+40
+
+30
+
+20
+
+ORNL—DWG 73-1539
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2 oo
+® LABORATORY SAMPLES
+[e] O LOOP SAMPLES
+\
+\ Oo
+oO
+oO
+oO
+ro —
+I ——
+TT
+0 20 40 60 80 100 120 140 160 180 200
+
+FIGURE 5
+
+CONCENTRATION OF SODIUM OLEATE (ppm)
+
+SURFACE TENSION AS A FUNCTION OF SODIUM OLEATE CONCENTRATION
+FOR LABORATORY BATCH SAMPLES AND FOR LOOP SAMPLES
+
+IT
+12
+
+during a given test run because the sodium oleate, being a surfactant,
+would be stripped from the circulating loop along with the bubbles. The
+concentration in the loop samples could then be less than the calculated
+average concentraticn for the entire loop depending on the time the samples
+were taken. The bubble photographs were taken immediately after gas flow
+was started following an hour's circulation without gas flow. This proce-
+dure should have provided a concentration of sodium oleate essentially
+equal to the calculated average st the time the photographs were taken.
+
+The bubble diameter data of Figure U4 are too scattered to accurately
+determine the actual power dependence. However, the data tend to support
+a value of 0.6 as predicted by the theoretical considerations discussed
+
+below and as illustrated on Figure k.
+
+IIT.-1.3 Analysis of Bubble Size Data
+
+ 
+
+The bubbles produced by the bubble generator are apparently formed
+in the entrance region of the conical diffuser as a result of fluid tur-
+bulence. The following equation has been proposed to predict the size of
+
+gas bubbles produced by fluid turbulence.
+
+og 13/5 = 2/5
+a=x |< ££ (1)
+1p ce,
+(5)
+
+Equation (1) was used by Hinze to calculate droplet diameters produced
+by emulsification of one liquid in another in an isotropic~turbulent
+
+flow field. Assuming turbulent flow in a conduit with conditions such
+that the friction factor would be constant, the power dissipation per
+
+(6)
+
+3 nN. 3
+
+c =X fe (2)
+2 2 L *
+e Dy €o
+
+unit volume (e) can be expressed as:
+
+Substituting this relationship for the power dissipation, Equation (1)
+gives:
+
+3/5 -1.2
+op D. g “lV. D. op
+
+5
+2 u H
+
+ 
+13
+
+The bubble size data presented in Figures 3 and 4 generally confirm a
+
+3/5 power dependence for the surface tension term, but indicate an expon-
+ent of -0.8 for the Reynolds Number term rather than -1.2 as indicated by
+Equation (3). This would tend to confirm the form of Equation (1), but
+suggests a relation different from Equation (2) for the power dissipation
+rate in the bubble generation region of our device. Equation (3) might
+apply when power is added to the fluid continuously as in an agitated tank
+or in pipeline flow where the friction losses represent a continuous energy
+dissipation within the fluid. In the present bubble generator, the fluid
+may receive an "energy impulse" as some of the kinetic energy of the high
+velocity fluid in the thrcat is converted to fluid turbulence in the d4if-
+fuser, and the above equations may not apply specifically for this mechan-
+ism,
+
+An alternate expression for the power dissipation rate based on the
+wall shear stress has been proposed by Kress¥* for the GSTF bubble genera-
+tor design. Using his prcposed relation for power dissipation, Equation
+(1) gives the following relationship predicting a 3/5 power dependence
+on surface tension and a -L4/5 power dependence on the Reynolds number
+
+as observed.
+
+3/5 -L/s
+cp D 1/3 52/3 g V, D. p
+D, u L/3~_ 2/3
+e He He
+
+At the present time, there are insufficient data to verify Equation (4)
+because only the liquid velocity and liquid surface tension have been
+varied. Therefore, we have elected to empirically correlate the data
+using the dimensionless groups that appear in Equation (3). These same
+dimensionless groups have been obtained independently by dimensional
+analysis.
+
+The recommended form of the equation for the
+
+GSTF bubble generator is then:
+
+r
+oD, & 3/5 VD, 0 -L/5
+<d > = K Dy 5 a (5)
+Vv u
+5 u
+
+where K = L.54 x 107°.
+
+¥Personal communication, T. Kress to C. H. Gabbard, Dec. L, 1972.
+1k
+
+The comparison of this correlation with the data is shown in Figure 6.
+Several data points which were not used in determining the value of K are
+indicated on the plot. These were the points on Figure 4 that did not
+fall on the lines representing the 3/5 power of surface tension. Based
+on this correlation, the bubble diameter produced by the GSTF bubble
+generator operating with fuel salt flowing at 500 gpm should be about
+0.01, The value of "K" given above is believed applicable only to
+bubble generators that are geometrically similar to the GSTF design. This
+is shown by the data on Figure 3 for the smooth bore design which had the
+same throat diameter, but had a 7° diffuser cone instead of the 15° cone
+in the GSTF design. A larger value of "K" would be required for the smooth
+
+bore design.
+IIT.-2. Gas Injection Pressure Characteristics
+
+To appreciate the importance of the gas injection pressure, an under-
+standing is needed of the relationship of the bubble generator to other
+portions of a reactor system, Figure 7 is a simplified flow diagram of
+the GSTF which is representative of a reactor system in regard to the oper-
+ation of the bubble generator. The gas injected into the following salt at
+the bubble generator is removed by the bubble separator and is recycled
+back to the bubble generator via the bulk salt separator, the drain tank,
+and the gas holdup tank. The gas holdup tank including the throttle valves
+on either end simulates the delay time and flow restriction of a 48~hr
+charcoal trap which in a reactor system, would allow radioactive decay of
+the Xe-135 concentration to an acceptable level prior to reinjection of
+the helium sweep gas back into the salt system. If the pressure required
+to inject the gas into the bubble generator were sufficiently below the
+pump tank (or drain tank) pressure to provide the pressure drops for the
+48-hr charcoal bed and for the gas flow control valve, a compressor for
+highly radioactive gas would not be required. This concept has been shown
+to be feasible and the necessary design features have been incorporated
+into the final GSTF bubble generator and system designs for continued
+evaluation with hot fuel salt.
+
+The measured pressure differences vs gas flow rate of the final GSTF
+prototype bubble generator are shown in Figure 8 for a liquid flow rate of
+
+500 gpm. These pressure differences are expressed as zero-void liquid head
+ORNL-DWG 73-1546
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+GSTF BUBBLE GENERATOR «d,;} (in.)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.050
+LIQUID FLOW RATE
+A =200gpm
+A =350 gpm
+® = 500 gpm — 0.020
+0.040 |
+O DATA POINT EXCLUDED FROM _
+CALCULATION OF K A
+Co | _— — 0.015
+0.030 t t
+2 ~~ A
+3/5 _4/8
+(d,)=454x 1072p | 22%) [22 A
+MH | A ~
+| e
+0.020 eas A —j 0010 =
+0
+0.010 75 Io — 0.005
+7
+PREDICTED OPERATING POINT
+MSR FUEL SALT AT 500 gpm
+0 | | 0
+0.05 0.10 0.15 0.20 0.25 0.40
+2 20p5]%° E Dy J
+p2 H
+FIGURE 6
+
+BUBBLE SIZE CORRELATION FOR GSTF DESIGN BUBBLE GENERATOR
+
+GT
+ORNL—DWG 74-13437R2
+STACK
+
+ 
+   
+ 
+ 
+   
+   
+
+BLOWER
+
+ 
+
+ 
+
+ 
+
+ 
+
+   
+   
+
+ 
+
+ 
+
+  
+ 
+   
+   
+   
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+    
+
+ 
+
+ 
+
+ 
+
+SAMPLER
+INSTRUMENT “NC ENCLOSURE
+PENETRATIONS
+VIEWING SURVEIL-
+PORTS SALT PUMP LANCE
+STATION
+I NJ] GAS FLOW
+SALT
+MONITORING FLOW
+STATION MEASURING
+I I] I t VENTURI
+FUTURE ~ | J
+EXPERIMENTS \
+1111 LOAD ORIFICE ———__
+ILI :
+BUBBLE SS BUBBLE
+GENERATOR SEPARATOR
+SAMPLER
+| ——p4— HELIUM SUPPLY
+eons FLOW CONTROL VALVE
+48-~ HOUR
+GAS HOLD- | »4—= HELIUM EXHAUST TO STACK
+UP TANK
+
+   
+   
+
+ 
+
+ 
+
+GAS FLOW
+
+FIGURE 7
+SIMPLIFIED FLOW DIAGRAM OF THE GAS SYSTEMS TECHNOLOGY FACILITY
+
+9T
+17
+
+ORNL-DWG 73-1545
+
+ 
+
+12
+
+10 Oo
+
+oP © _—"
+
+8 O
+sal
+6 pO | DISCHARGE TO INLET
+
+0 2
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+BUBBLE GENERATOR DISCHARGE
+
+ 
+
+ 
+
+14 [—
+
+—16 ~~
+
+DISCHARGE TO GAS
+-18 |— INJECTION LINE
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+LIQUID HEAD DIFFERENCE {ft of liquid)
+
+ 
+
+ 
+
+ 
+
+~~ ©o
+
+/ 00 CALCULATED
+
+—24
+& O MEASURED
+-26 Yo
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0 1 2 3 4 5
+
+GAS FLOW RATE (cfm at throat conditions)
+
+FIGURE 8
+
+GAS INJECTION PRESSURE AND OVERALL PRESSURE DROP OF PROTOTYPE
+BUBBLE GENERATOR AS A FUNCTION OF GAS FLOW RATE
+18
+
+and are referenced to the bubble generator discharge because, in the pro-
+posed piping system, this pressure is more closely related to the system
+reference pressure in the pump tank gas space. The increase in gas injec-
+tion pressure with gas flow rate was greater than would be indicated by
+the increase in diffuser losses and by the increase in the gas passage
+pressure drop.
+
+A study of the measured pressure drop data and the various hydro-
+dynamic mechanisms of the bubble generator indicated that the pressure
+
+differences could be described by six terms:
+
+Hy The inlet to throat head difference,
+
+H, The mixing losses and head recovery across the sudden
+enlargement from 2.1 in. to 2.18 in.
+
+Hy The mixing losses and head recovery across the 15°
+diffuser cone.
+
+H) The liquid head equivalent to the gas compression
+work between throat and discharge pressure.
+
+H; The liquid head equivalent to the pressure drop in
+the gas passages.
+
+He The liquid head difference between the liquid and the
+
+gas plume.
+
+As a convenience in comparing different fluids, each of the above terms
+were expressed as feet of zero-void liquid head. With the exceptions of
+Hy» which is dependent only on the liquid and of Hes which is dependent
+only on the gas, the pressure differences are a function of both liquid
+and gas flow rates. The procedures used in evaluating these six terms
+are discussed below.
+
+Figure 9 shows the bubble generator geometry used for the following
+analysis and the location of the various pressure drops outlined above.
+
+The fluid head, H., between the inlet and the throat may be calculated
+
+1°?
+from the conventional venturi equation:
+
+1/2
+Q = F F, A, C,, (2gH, )
+Q 2
+1 1
+H = == | e—— (6)
+1 2g A, F, F, C,
+©
+
+ORNL—DWG 73-1544
+
+THROAT PRESSURE TAP
+
+©O) ® ®
+
+Ha AND Hy
+
+ 
+
+LLNS SSS Sf LAL
+
+ 
+
+ 
+
+ 
+
+Dg = D4
+/ As
+TO Vs
+Ay va- Vy Ay _ FLOW
+Vv v
+i i |
+
+ 
+
+ 
+
+AX
+"/ J
+
+J /
+
+GAS CAVITY
+
+GAS INJECTION LINE
+
+FIGURE 9
+
+GEOMETRY OF BUBBLE GENERATOR USED IN ANALYSIS OF GAS INJECTION
+
+PRESSURE AND OVERALL HEAD LOSS
+
+6T
+20
+
+The observed inlet-throat head difference agreed with the calculated
+value within about 2%.
+
+The change in fluid head across the sudden enlargement from a diameter
+of 2.1 in. to 2.18 in. Hy, can be calculated theoretically by a momentum
+balance across the length of the 2.18 in. cylindrical bore. The effect
+of the gas volume on the fluid velocity was also included in the momentum
+balance. The boundaries for the momentum balance are taken Just within
+the 2.18 in, diameter at each end. The upstream velocity at Station No. 3
+is assumed uniform and equal to the average velocity at Station No. 2.
+
+The liquid and any injected gas are assumed mixed and at uniform velocity
+at Station No. 4. The increase in mass flow rate due to the gas addition
+was negligible compared to the mass flow of liquid and was not included
+
+in this calculation.
+
+ 
+
+M (Vv, -V.)
+J - h 3
+gs
+AV. po (Vv, =V,)
+_ 2 "3 %e lL 3
+As = A,
+} (Py - P,) _ A, Vs (vy, - vs)
+H, = - = 2 (7)
+e 3 “c
+
+The value of Hy obtained from the momentum balance includes a mixing
+
+loss as well as the change in velocity head that would be predicted by the
+Bernoulli equation.
+
+The pressure recovery and head loss in the diffuser cone can be cal-
+
+culated by the Bernculli equation.
+
+where "h" is the "Borda-Carnot" loss:
+
+2
+
+_ K, (v, - Vs)
+h = ee ———
+2g,
+21
+
+A value of Ky = 0.317, determined experimentally for the existing
+bubble generator, agrees closely with the conventional textbook value for
+a 15° diffuser, (7) A void fraction correction was applied to express the
+
+calculated head rise of the diffuser section in terms of zero-void fluid:
+
+Io
+
+5 5 2
+1, = vy, - Vs } K, a - Vs) _ (8)
+c c
+In addition to the normal hydraulic losses in the diffuser, the work
+required to compress the gas is supplied by the kinetic energy of the
+liquid and decreases the head rise in the diffuser. The work required for
+a polytropic compression of the gas is given by the equation:
+n-1
+
+p n
+_ n RT 5
+YE mom 5) -1
+The work of compression can be converted to equivalent liquid head
+by multiplying by the ratio of the mass flow rate of gas to that of liquid.
+n-1
+_ n RT — _E
+al cry 5) 1 =. (9)
+The pressure drop through the gas passages of the bubble generator was
+determined experimentally as a function of the gas volume flow rate.
+Figure 10 shows the results of the tests. The results expressed as feet
+of gas head vs volume flow rate are applicable to any gas. The gas pres-
+sure drop expressed as feet of liquid head is given by the following equa-
+
+tion which applies specifically to the geometry tested:
+p
+
+Ho =C QF (<B) (10)
+Pe
+
+where C = 59.4 min®/ft2; Q = volume flow rate of gas, cfm.
+
+During the various pressure drop tests of the bubble generator, the
+gas feed pressure was observed to be higher than the sum of the static
+throat pressure and the pressure drop across the gas feed passages.
+
+This "Plume D/P" apparently represents the pressure difference required
+
+to divert the liquid around the gas cavity similar to an impact pressure
+GAS PASSAGE AH (ft of gas)
+
+10,000
+
+22
+
+ORNL-DWG 73-1543
+
+5000
+
+2000
+
+1000
+
+500
+
+200
+
+100
+
+50
+
+20
+
+ 
+
+10
+0.1 0.2 0.5 1 2 5 10
+
+GAS FLOWRATE (cfm)
+
+FIGURE 10
+
+PRESSURE DROP OF GAS FEED PASSAGES AS A FUNCTION
+OF GAS FLOW RATE
+23
+
+on a solid cbject. Direct measurements of this pressure difference were
+made on the original smooth bore bubble generator design by using one of
+the gas feed holes as a static pressure tap for the throat liquid. The
+pressure drop across the interface of the gas plume was obtained by
+
+subtracting the gas passage pressure drop "H_." from the measured pressure
+
+difference between the gas injection line ana the static tap. The results
+of the measurements are shown in Figure 11.
+
+The "Plume D/P" was found to be directly proportional to the liquid
+specific gravity and was found to be a function of both the liquid and the
+gas flow rates. An empirical correlation relating the plume D/P, the
+liquid velocity in the throat, and the void fraction at the throat was
+determined which gave a good representation of the data from various flow
+rates for two fluids. A coefficient "K," was defined as the ratio of the
+plume D/P, expressed as feet of liquid head, to the liquid velocity to
+the 2.5 power. The value of K, vs the void fraction for the existing
+data was fit to a polynomial by the least squares method. The value of
+XK, was best described by a cubic equation, and the results of the fit are
+shown in Figure 12. The value of the plume D/P would then be calculated
+
+as follows:
+2.5
+
+= )
+He K, Vv, (11)
+2 3
+where XK, =(A+BX+CX +DX)
+Q
+X= —2=8
+Q +Q
+e g ¢
+and A = -1.84825 x 10°
+B = -1.26802 x 1072
+C = 0.171324
+D = -0.885819
+V, = Liquid velocity at throat (ft/sec).
+
+Equation (11) gives a negative value of Hy consistent with the sign
+convention used in the computer program, BGNDGN, discussed in the Appendix.
+The pressure in the gas relative to the liquid is actually positive.
+
+The pressure distribution of the bubble generator can be obtained by
+the summation of the above six terms. A BASIC language computer program,
+
+BGNDGN, was written to calculate the pressure distribution of the GSTF
+PLUME AH (ft of liquid)
+
+10.0
+
+5.0
+
+2.0
+
+1.0
+
+0.5
+
+0.2
+
+0.1
+0.001
+
+ 
+
+ok
+
+ORNL-DWG 73-1538
+
+—
+
+ 
+
+ 
+
+ 
+
+GAS FEED |
+
+500 gpm
+|
+
+O CaCly SOLUTION SG = 1.3
+@® DEMINERALIZED WATER
+
+0.02 0.05 0.01 0.2 0.5 0.1
+
+THROAT VOID FRACTION Qy/(Q, + Qg)
+
+FIGURE 11
+
+PRESSURE DROP ACROSS THE GAS PLUME INTERFACE
+AS A FUNCTION OF THROAT VOID FRACTION
+2.5
+Hg/V2
+
+K =
+
+25
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+(x 104 ORNL—DWG 73-1540
+—4
+A
+0
+°
+-3
+0 £
+A
+°
+A
+£
+-2 y
+K=A+BX+CX2+DX3
+= _1.84825x 106
+= 1.26802 x 102
+C=0.171324
+D = —0.885819
+Hg = PLUME D/P (ft of liquid)
+—1 f—Q —— V,=THROAT VELOCITY (ft/sec)
+O CaCl, SG = 1.3 500 goin
+® CaCl, SG = 1.3 400 gpm
+A CaCl, SG =1.3 300 gpm
+A Hy0 SG=1.0 500gpm
+0
+0 0.02 0.04 0.06 0.08
+
+THROAT VOID FRACTION X = Qq/(Qg + Qg)
+
+FIGURE 12
+
+0.10
+
+CORRELATION OF PLUME aH (Hg) TO THROAT LIQUID VELOCITY
+
+AND THROAT VOID FRACTION
+26
+
+bubble generator as a function of the liquid and gas flow rates. Although
+the procedure for calculating the value of He was based on data from an
+earlier bubble generator design, this procedure was used in the BGNDGN pro-
+gram and the results appear to be applicable to the final GSTF design.
+
+A listing of this program and sample output for the GSTF operating with fuel
+salt are included in the Appendix. The above procedures and the computer
+program were developed specifically for the bubble generator design for the
+GSTF and were checked against data from the prototype in the water test
+loop. However, with the exception of the gas passage pressure drop, the
+procedures are believed to be applicable to various fluids and sizes
+assuming a reasonable geometric similarity. The calculation of the gas
+passage pressure drop could be revised to use conventional pressure drop
+calculation procedures for any other particular design.
+
+A comparison of the calculated and measured pressure distributions for
+the GSTF prototype design is shown in Figure 8. These pressure distributions
+apply specifically to the prototype bubble generator in the water test loop
+and would differ slightly from the distributions of the actual GSTF bubble
+generator because of the difference in pipe size and the difference in
+absolute pressure. The calculated pressures for the GSTF bubble generator
+operating at design conditions with water and two types of molten-salt
+are shown in the Appendix.
+
+The calculations in the Appendix for fuel-salt indicate the gas flow
+for normal gas recycle operation will be limited to about 1 scfm by the
+various pressure changes inherent in the system. These calculations were
+based on a pump tank pressure of 15 psig, a salt pressure of 28 psig at
+the bubble generator discharge, and a pressure drop of 7.5 psi across the
+48-hr holdup tank at 0.8 scfm gas flow rate. Operation of the GSTF at
+higher gas flows up to 1.3 scfm can be achieved by either opening the
+throttle valves at the L8-hr holdup tank or by operating on an open cycle
+with the gas supplied from an external source at somewhat higher pressure.
+The gas flow capacity of the GSTF was specified a factor of 2 greater than
+for the MSBE to provide a margin for experimental purposes, and the maxi-
+mum gas flow of 1 scfm would not be a limitation in the MSBE. The lower
+than predicted gas feed pressure was probably caused by a local flow
+
+disturbance at the step in throat diameter. This belief is supported by
+27
+
+the facts that the measurements of the throat pressure just upstream
+
+of the step were in good agreement with the calculated value of Hy» and
+at low gas flow rates the overall pressure drop of the bubble generator
+was in good agreement with the summation of Hs Hys H, and H .
+
+3 b
+
+The calculated values of Hy, Hy and H) are subject to some degree
+of error because in an actual bubble generator it is impractical to pro-
+vide a throat mixing length long enough to complete the momentum transfer
+assumed in the calculations. Part of the mixing losses assigned to the
+mixing section occur in the diffuser and could account for the differences
+
+in slope between the calculated and measured pressures shown on Figure 8.
+
+IV. CONCLUSIONS AND RECOMMENDATIONS
+
+The bubble generator design developed for application in the Gas
+Systems Technology Facility and the Molten-Salt Breeder Experiment is
+expected to successfully meet the criteria specified in Table I.
+
+The gas flow limit at about 1 scfm would be a valuable safety
+feature in the event of a malfunction of the gas flow control system at the
+maximum flow position. However, an initial transient at a higher flow
+could occur depending on the location and size of holdup volumes and pres-~
+sure drops in the gas system. The design of a reactor gas-system should
+attempt to minimize the rate and duration of this transient.
+
+There are uncertainties in regard to the mechanism of bubble formation
+in the bubble generator and a relatively extensive program would be required
+to fully evaluate the proposed mechanisms. However, the bubble size pro-
+duced by the bubble generator is believed to have a minor influence on the
+overall operation of a reactor circulating system because of the bubble
+degradiation and compression in passing through the pump and the other
+changes in size that may occur because of coalescence, gas solubility,
+and pressure changes. Therefore, an effort to fully evaluate the proposed
+mechanisms of bubble formation does not appear to be justified at this
+time. However, plans have been made to check the viscosity dependence of
+the recommended correlation.
+
+The calculation procedures and computer program developed for esti-
+mating the pressure distribution as a function of liquid and gas flow
+rates appears to be sufficiently accurate for most applications. The
+
+suitability of these design calculations to cover operation in a high
+28
+
+temperature salt system will be evaluated from the operating data of the
+GSTF.
+
+The calculation procedures for various pressures and bubble diameter
+are believed to be applicable to other sizes, but we have no experimental
+verification of this. The reduced scale tests completed early in the pro-
+gram were survey type experiments and insufficient data were taken to
+evaluate scale effects. Therefore any bubble generator of significantly
+different size or geometry should be checked experimentally against the
+
+calculations prior to use in any critical application.
+
+V. ACKNOWLEDGEMENT
+The author is indebted to many individuals for their cooperation and
+assistance in completing this work. In particular, the contribution of
+T. S. Kress in suggesting mechanisms for the bubble size correlation and
+the contribution of G. M. Winn for this operation of the test loop and
+
+his execution of the various experiments are gratefully acknowledged.
+29
+
+NOMENCLATURE
+Cross sectional areas of bubble generator (see Fig. 9) (££)
+Diameters of bubble generator (see Fig. 9)(ft)
+Approach area factor [1-(a,/8,)°17/
+Thermal expansion factor [1 + a(T=530)1°
+
+Various differential heads associated with bubble
+generator (see Fig. 9) (ft of zero void liquid)
+
+Molecular weight of gas
+
+Reynolds number, VDp/u
+
+Static pressures in bubble generator (see Fig. 9) (10f/£4°)
+Volume flow rate of liquid or gas (£t3/sec)
+
+Universal gas constant 1545.3 ft/1bf/# mole-°R
+Temperature, °R
+
+Velocities in bubble generator (see Fig. 9)(ft/sec)
+
+Void fraction
+
+Velocity coefficient assumed = 1.0
+
+Bubble diameter (ft)
+
+Volume averaged bubble diameter (ft)
+
+Gravitational conversion factor (1bm-ft/1bp-sec?)
+
+Mass flow rate of liquid or gas (lbp/sec)
+
+Polytropic gas compression constant
+
+Coefficient of thermal expansion per °F = 8 x 107°
+Gas film thickness (ft)
+
+Power dissipation per unit volume (£t-1b,/ ft 7-sec)
+Viscosity of liquid or gas (1lbp/ft-sec)
+
+Density of liquid or gas (1bp/ft3)
+
+Surface tension (lbg/ft)
+(7)
+
+30
+
+REFERENCES
+
+M. W. Rosenthal, P, N. Haubenreich, and R. B. Briggs, The Develop-
+ment Status of Molten-Salt Breeder Reactors, ORNL-L812, August
+1972, pp 274-297.
+
+J. R. McWherter, Molten Salt Breeder Experiment Design Bases,
+ORNL~-TM=3177, November 1970.
+
+R. H. Guymon, System Design Description of the Gas Systems
+Technology Facility, ORNL-CF~-T72-3-1, March 30, 1972.
+
+MSR Program Semiannual Progress Report Feb. 28, 1969, ORNL-L396,
+p 95.
+
+J. 0. Hinze, Fundamentals of the Hydrodynamic Mechanism of Splitting
+in Dispersion Processes, AIChE Journal, Vol. 1, No. 3, 1955, p 295-
+298.
+
+T. S. Kress, Mass Transfer Between Small Bubbles and Liquids in
+Cocurrent Turbulent Pipeline Flow, ORNL-TM-3718, April 1972, p 58.
+
+J. K. Vernard, Elementary Fluid Mechanics, John Wiley and Sons,
+1947, p 176.
+31
+
+APPENDIX
+
+COMPUTER PROGRAM, BGNDGN, FOR CALCULATING GAS INJECTION PRESSURE AND OVER-
+ALL PRESSURE DROP OF VENTURI TYPE BUBBLE GENERATOR
+
+A computer program, BGNDGN, was written in BASIC language to cal-
+culate the overall pressure drop and the gas injection pressure of the
+bubble generator. This program, which uses the relationships discussed
+in Section ITI-2, was written specifically for the GSTF bubble generator
+design. The program should be valid for different sizes with geometric
+similarity. The program is listed below along with output covering the
+bubble generator operation in the GSTF with the proposed fluids.
+
+The required data input for running the program are in statements
+450 and L451 as follows:
+
+450 Data F1, G, G9, Mo, N
+
+F1 = liquid flow rate (gpm)
+
+G = liquid specific gravity
+
+G9 = gas density (lbs/ft3)
+
+MO = molecular weight of gas
+
+N = polytropic constant for gas
+
+451 Data D8, P9, P8, T2, K9
+
+D8 = inlet and discharge pipe ID (in.)
+D9
+P8
+T2 = salt temperature (°F)
+
+pressure at discharge (psig)
+
+pump tank pressure (psig)
+
+K9 = thermal expansion factor (1 + ao A T) for Hastelloy "N"
+
+The gas flow rates are input into statement 1L0 as scfm. Different
+throat and mixing chamber diameter (inches) could be entered in statement
+30 and 31, respectively.
+
+There are four lines of output for each gas flow rate as follows:
+
+Line 1. a. Hl lead difference across the diffuser cone
+
+(ft of zero void liquid)
+
+b. H2 = head difference across the mixing chamber
+(ft of zero void liquid)
+¢. H3 = head equivalent to gas compressicn work
+
+(ft of zero void liquid)
+32
+
+d. HL = total head difference between the gas
+injection line and the salt at throat
+(ft of zero void liquid).
+
+e. HS = head difference across the the gas passages
+
+(ft of zero void liquid).
+
+Line 2. a. The gas flow rate (scfm).
+
+b. The gas flow rate (cfm at throat pressure and
+temperature).
+
+¢. The salt static pressure at the throat (psig).
+d. The static pressure at the gas injection line (psig).
+
+Line 3. a. The pressure in the GSTF gas line 210 upstream
+of the flow control valve (psig).
+
+b. The pressure drop across the GSTF gas flow control
+valve (psig).
+
+Line 4, a. The overall head loss of the bubble generator
+(ft of zero void liquid).
+
+b. The head difference between bubble generator dis-
+charge and the gas injection line (ft of zero void
+liquid).
+
+A negative value of the value D/P in output line 3 indicates the
+pressure drop available in the GSTF gas-system is insufficient to provide
+recycle operation at that flow rate and at the design flow restriction
+of the L8-hr holdup tank. This calculation assumes a 7.5 psi pressure
+drop across the 48-hr holdup tank at 0.8 scfm and that the pressure
+
+drop varies with the square of the volume flow rate.
+1 R
+9 R
+10
+20
+21
+
+90
+
+100
+110
+120
+130
+131
+132
+140
+150
+160
+161
+170
+180
+190
+200
+210
+220
+230
+240
+249
+250
+260
+261
+270
+280
+290
+300
+310
+320
+321
+322
+323
+332
+340
+360
+370
+380
+381
+382
+383
+399
+400
+401
+402
+403
+404
+405
+450
+451
+500
+
+33
+
+EM BRGNDGN CHG 6/8/72 CALC RURRLE GEN PRESS DIST
+EAD Al1»A2,A35A4
+
+READ F1,G»G9sM0sN
+
+READ D8sP9,P8,»T25K9
+H1=0
+H2=0
+H3=0
+
+D9=2.10
+
+D1=2.18
+
+PO=14.7
+
+PRINT "LIQ SG="G,'"M@L WT='M0,'DIS PRESS='"P9
+PRINT "LIQ FLAW="F1,'"THR DIA="D%,"BQRE DIA="D1
+D2=D8/12
+
+D=D1/12
+
+DO=D9/12
+
+P2=P9+14.7
+
+T=T2+460
+K1=N/7C1-ND)
+
+K2=(N=1)/N
+
+Q0=F1/(748%60)
+
+M1=Q0*%G%*62+4
+
+VO=00/C0.785%«(DO*XKI) 12)
+V=00/(0.785%(D2%*K9) 12)
+H=(V0t2-VUt2)/64.4
+
+FOR F2=0 T@ 1.41 STEP .2
+
+M2=F2%G9/ 60
+
+Z=0
+
+PO=P2-(H1+H2+H3)*62.4%G/ 1 44
+G1=00+F2%T/493%14.7/CP0O%*60)
+Q2=Q0+F2%xT/493%14.7/(P2%60)
+Vi=01/C0. 785% (D*K9) 12)
+V2=02/(0.785%(D2%K9) 12)
+F9=F2%14.7/P0*T/( 49 3%60)
+X2=F9/(Q0+F9)
+H1=((V112-UY212)/64¢4~0e317/64s4%(V1-Y2)12)%(1.0-X2)
+G1=G*Q0/01
+
+F3=F2%T/493%14.7/P0
+H2=-V1*G1*(V1-V0)/(32.2%(G)-F3%0. 4167
+PO=P2-(H1+H2+H3) *62. 4%xG/ 144
+
+IF PO<C THEN 404
+W=K1%1545%T/MO*((P2/P0)tK2-1.0)
+H3=WxM2/M 1
+
+PO=P2-(H1+H2+H3)*x62+ 4%xG/ 1 44
+F3=F2%T/493%14.7/P0
+
+GB=GI9%493/T*xP0/ 14.7
+
+HS==59. 488%F312%G8/(G*62+ 4)
+X3=F3/(F1/7.48+F3)
+K3=A1+A2%X3+A3kX312+04%xX313
+HA4=K3*%V012.50+HS
+
+P3=P0-14.7
+
+PO=P2-(HI+H2+H3+HA) x62. 4%G/ 144
+
+Z=Z+1
+
+IF Z<3 THEN 170
+P7=P8-958%(F2+0.08476)1t2
+P6=P7-(P0-14.7)
+
+LI=H1+H2+H3+HA4
+
+L=H=-(HI1+H2+H3)
+
+PRINT
+
+PRINT H1,H2,H3,Ha»HS
+PRINT"SCFM="F2,"TCFM=*"F3s»"T PR="P3,"G PR="PO-14.7
+PRINT"L 210 PR="P7,"VALVE D/P="'Pé
+PRINT "1-8 D/H="L»"0~G D/H="L1
+
+NEXT F2
+
+DATA =1e84825E-6,-126802E~-2,0171324,-0.885819
+DATA 5005328365001 125451667
+
+DATA S.047,28515,1300,1.009
+
+END
+34
+
+Table A-1
+
+GSTF Bubble Generator Operation on Fuel-Salt and Helium
+
+LIQ SG= 3.2836
+LIQ FLOW= 500 THR DIA= 2.1
+
+20.9288 4.30198
+SCFM= © TCFM= 0
+L 210 PR= 14.9312
+
+1-8 D/H= 5.97787
+
+21.1968 3420759
+SCFM= 0.2 TCFM= 1.25849
+L 210 PR= 14.2232
+
+1-8 D/H= 7.06068
+
+21.3703 2.50307
+SCFM= C4 TCFM= 2.23567
+L 210 PR= 12.7488
+
+1-9 D/H= 7.7982
+
+2145242 1.8788
+
+SCFM= 0.6 TCFM= 3.05499
+L 210 PR= 10.508
+
+1-0 D/H= 3.44298
+
+2146677 1.29773
+SCFM= 0.8 TCFM= 3.76738
+L 210 PR= 7.50077
+
+I-90 D/H= 9.03121
+
+21.802 0.754595
+SCFM= 1 TCFM= 4.40476
+L 210 PR= 3.72717
+
+1-@0 D/H= 9.57257
+
+219267 0.250605
+SCFM= 1.2 TCFM= 4.92902
+LL 210 PR==0.812827
+
+I-@ D/H= 10.0705
+
+22.0416 -0e21224
+SCFM= 1.4 TCFM= 5.53574
+
+L 210 PR=-6.11923
+1-2 D/7H= 10.5269
+
+-5.18451E-4
+
+-=2+90790F-3
+
+-S5¢96038E-3
+
+-9.%003€E-3
+
+-1043230E-2
+
+=1e946T4E-2
+
+=2+52009E-2
+
+MAL WT= 4 DIS PRESS= 28
+B@GRE DIA= 2.185
+0 =2e¢58365E-2
+T PR=-7.90077 G PR==7.86401
+VALVE D/P= 22.7952
+@-G D/H= 25.205
+0.256411 -2+5625
+T PR==-6+36006 G PR=-2.7139
+VALVE D/P= 16.9371
+@-G D/H= 21.5855
+-0.462839 ~3+. 67663
+T PR==5.31064 G PR=-T7.91799E-2
+VALVE D/P= 12.828
+3-G D/H= 19.7339
+~-0. 637301 ~4e¢2378838
+T PR==4439319 G PR= 1.63686
+VALVE D/7P= 8.87111
+9-G D/7H= 18.5278
+0.787922 -4¢55608
+T PR=-35562 (G PR= 2.92662
+VALVE D/P= 4.57415
+0-G D/H= 17.6214
+T PR=-2.7359 GG FPR= 4.002¢4
+VALVE D/P=-0.275467
+2=-G D/H= 16.8652
+-103916 ~4435226
+T PR==2.07739 G PR= 4.96915
+VALVE D/P=-5.78193
+2-G D/H= 16.1859
+=114751 -5. 13858
+T PR==1+442803 G PR= 5.83367
+
+VALVE D/P=-12.0028
+@-G D/H= 15.5432
+GSTF Bubble Generator Operation on Flush Salt (66-34 Mole % LiF-BeF») and
+
+35
+
+Table A-2
+
+ 
+
+Helium
+LIQ SG= 1.942 MOL WT= 4
+LIO FLOW= S500 THR DIA= 2.1
+
+2069288 4.30198
+SCFM= 0 TCFM= 0
+L 210 PR= 14.9312
+
+1-2 D/H= 5.97787
+
+21.108 3657596
+SCFM= 0.2 TCFM= 0.625965
+L 210 PR= 14.2232
+
+I-00 D/H= 6.7026
+
+21.2619 2.95381
+SCFM= 0.4 TCFM= 1.21356
+L 210 PR= 12.7488
+
+1-8 D/H= 7.33261
+
+2164023 2.38724
+SCFM= 0.6 TCFM= 1.77081
+L 210 PR= 10.508
+
+I-38 D/H= 7.90747
+
+21.5347 185413
+SCFM= 0.8 TCFM= 2.30244
+LL 210 PR= 7.50077
+
+1-0 D/H= B.44564
+
+21.6615 1634347
+SCFM= 1 TCFM= 2.81173
+L 210 PR= 3.72717
+
+1-0 D/H= B+95668
+
+21.7843 0eB49762
+SCFM= 1.2 TCFM= 3.30129
+LL 210 PR=-0.812827
+
+1-3 D/H= 9444572
+
+21.9036 0370441
+SCFM= 1.4 TCFM= 3.7733
+L 210 PR==-6.11923
+
+1-0 D/H= 9.91553
+
+DIS PRESS= 22.69
+RORE DIA= 2.18
+
+0 -2.58365E-2
+T PR= 1.45742 G PR= 1.47916
+VALVE D/P= 13.452
+9-G D/H= 25.205
+-0.177838 -1e47477
+
+T PR= 2.0673
+
+VALVE D/P= 10.9148
+0-G D/H= 23.0313
+-0.339626 ~2.4979
+T PR= 2.59748 G PR= 4.69954
+VALVE D/P= 8.04923
+9-6 D/H= 21.3782
+-0. 438344 -3e22396
+T PR= 3.08124 G PR= 5.79431
+VALVE D/P= 4.71367
+2-G D/H= 20.0773
+-0.625723 -3.73996
+T PR= 3.53413 G PR= 6.68143
+VALVE D/P= 0.819344
+@-G D/H= 19.0231
+-0.752975 - 4.10849
+T PR= 3.96418 G PR= 7.42162
+VALVE D/P=-=3.69445
+0-G D/H= 18.1435
+-0.871064 -4.376
+T PR= 4.37573 G PR= 8.05827
+VALVE D/P=-848711
+0-G D/H= 17.387
+-0e95%0826 -4.5775
+T PR= 4.77109 G PR= 8.6232
+VALVE D/P=-14.7424
+0-6 D/H= 1647157
+
+0
+
+-6.88325E-4
+
+G PR=
+
+~2+.66891E-3
+
+~S5e84167E~3
+
+-~1.01273E-2
+
+= 154592E-2
+
+=2.17810F-2
+
+~D 89 QLU4E-2
+
+3.30837
+36
+
+Table A-3
+
+GSTF Bubble Generator Operation on Water and Helium
+
+LIQ SG= 1 MBL WT= 4
+LIQ FLOW= 500 THR DIA= 2.1
+
+21.6925 4. 45896
+SCFM= 0 TCFM= 0
+
+L 210 PR= 14.9312
+
+1-3 D/H= 6.196
+
+21.9089 3+ 5988
+
+SCFM= 1 TCFM= 0.695957
+L 210 PR= 3.72717
+
+1-3 D/H= 7.07409
+
+22.1104 2.79977
+SCFM= 2 TCFM= 1.37067
+L 210 PR=-26.6368
+
+1-3 D/H= 7.88634
+
+22.3024 2.03906
+SCFM= 3 TCFM= 2.02683
+L 210 PR=-76.1608
+
+I-0 D/H= 8.65218
+
+22. 488 1.30439
+SCFM= 4 TCFM= 2.66€37
+L 210 PR=-144.845
+
+1-9 D/H= 2.33825
+
+22+ 6688 0.589 443
+SCFM= 5S TCFM= 3.29081
+L 210 PR=-232.689
+
+I-92 D/H= 10.0833
+
+22.8454 -0.108465
+SCFM= 6 TCFM= 3.901483
+L 210 PR=-339.693
+
+I-@ D/H= 10.7578
+
+DIS PRESS= 18.959
+REORE DIA= 2.18
+0 -2+70202E-? 0
+T PR= 746267 G PR= 7.63841
+VALVE D/P= 7.29277
+8-G D/H= 26.1245
+~0.234371 -1. 69285 -T7«43097E-3
+T PR= 8.0072 GCG PR= 8.74077
+VALVE D/P=-5.0136
+0-G D/H= 23.5805
+~0.449001 -2.87493 ~2.92702E-2
+T PR= 8435917 G PR= 9.6049%
+VALVE D/P=-36.2418
+@-G D/H= 21.5862
+0.64615 -3.70827 -6+49235E-2
+T PR= 8469104 G PR= 10.298
+VALVE D/P=-86.4588
+@-6G D/H= 19.987
+0.827413 ~4.2973 -0.113879
+T PR= 9.00751 G PR= 10.8697
+VALVE D/P=-155.715
+29-6 D/H= 18.6677
+~0.994064 ~4.T72431 -=0«175685
+T PR= 9.3112 GG PR= 11.3584
+VALVE D/P==244.047
+@-G D/H= 175399
+1.14722 ~5.05471 “0.249944
+T PR= 9.60347 G PR= 11+793%
+
+VALVE D/P=-351.487
+@-G D/H= 164535
+37
+
+INTERNAL DISTRIBUTION
+
+1. 8. E. Beall
+
+2. M. Bender
+
+3. C. BE. Bettis
+
+kh, E. 5. Bettis
+
+5. R. B. Briggs
+
+6. C. J. Claffey
+
+7. CC. W. Collins
+
+8. W. B. Cottrell
+9. D. E. Ferguson
+10. A. P. Fraas
+
+11.-12 C. H. Gabbard
+
+13. A. G. Grindell
+14, P. N. Haubenreich
+15. H. W., Hoffman
+16. P. R. Kasten
+17. M. I. Lundin
+18. R. N. Lyon
+19. H. G. MacPherson
+20. R. E. MacPherson
+21. H. C. McCurdy
+22. A. J. Miller
+23. A. M. Perry
+
+2L.-25. M. W. Rosenthal
+26. Dunlap Scott
+27. M. Sheldon
+28. M. J. Skinner
+29. I. Spiewak
+30. D. A. Sundberg
+31. D. B. Trauger
+32. G. D. Whitman
+33.-34, Central Res. Library
+35. Document Ref. Section
+36.-38. Laboratory Records
+39. Laboratory Records (LRD-RC)
+
+EXTERNAL DISTRIBUTICN
+
+LO. M. Shaw, AEC-Wash.
+L1.-42, N. Haberman, AEC-Wash.
+43. D. F. Cope, AEC-0SR
+Li, David Elias, ARC-Wash.
+45, J. E. Fox, AEC-Wash.
+46, E, C. Kovacic, AEC-Wash.
+L7.-49. Director, Division of Reactor Licensing, AEC-Wash.
+50.-51. Director, Division of Reactor Standards, AEC-Wash.
+52,-68. Manager, Technical Information Center, AEC-For ACRS Memiers
+69. Research and Technical Support Division, AEC, ORO
+70.-71. Technical Information Center, AEC

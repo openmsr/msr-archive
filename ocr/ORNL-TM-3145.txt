@@ -1,0 +1,5881 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+be op
+
+«)
+
+ 
+
+aT,
+
+ 
+
+ 
+
+ 
+
+ 
+
+ORNL-TM-3145
+
+Contract No. W-ThO5-eng-26
+
+Instrumentation and Controls Division
+
+THERMAL RADIATION TRANSFER OF AFTERHEAT
+IN MSBR HEAT EXCHANGERS
+
+ 
+
+J. R. Tallackson
+
+ 
+
+ 
+
+ 
+
+- LEGAL NOTICE -
+This . report was prepared as an account of work
+| | sponsored by the United States Government, Neither
+| the United States nor the United States Atomic Energy
+Commission, nor any of their employees, nor any of -
+their contractors, subcontractors, or -their employees,
+© 1 makes any warranty, express or implied, or assumes any
+legal liability or responsibility for the accuracy, com-
+pleteness or usefulness of any information, apparatus,
+product or process disclosed, or represents that its use
+would not infringe privately owned rights.
+
+ 
+
+ 
+
+ 
+
+“MARCH 1971
+
+OAK RIDGE NATIONAL LABORATORY
+Oak Ridge, Tennessee
+operated by
+UNION CARBIDE CORPORATION
+for the
+U.S. ATOMIC ENERGY COMMISSION
+
+1
+
+DISTRIBUTION OF THIS DOCUMENT IS
+ 
+
+iy y
+i ’ o ¥ i’ ’ o) (F 1)
+
+ 
+ 
+
+ 
+
+tim
+
+wi
+
+&y \ 2
+
+iii
+
+CONTENTS
+
+Page
+Abstract mecca eee eee 1
+J. Introduction =e--eeccceccmcccmccrcccccccccccmmccc mcrae aaa .e 2
+II. Conclusions and Recommendations =-<eeceeccccacccmcmcccacmcanaaa 2
+III. MSBR Heat Exchanger Configuration =emee--meemee--cecceecoeea- 3
+IV. Afterheat Generation and Distribution ---cecmccmcmcmcccacaa-o 6
+V. Metallurgical Considerations -=ee-cemeecmcmcmcec cca 11
+VI. Results mememmmmmcmcccocceceeee———- mmm mmm em m mmm. ——— 1h
+Appendix A. Computational Model and Assumptions
+Governing the Computations —---e-ccecoccmcmmmmccacaoo 43
+Appendix B. Directional Distribution of Radiation ---cecececacnouoo Ls
+Appendix C. View Factors ~-ewececcccacacaaaa- ——————— cermm———e—e———— Te
+Appendix D. Shell Temperatures =--weececcccceecmcccceccmcccccccnan- 61
+Appendix E. The Heat Transfer — Temperature Equations eee mm—————— 63
+Appendix F. Computational Procedure =-=-ec-ececcccmaccacaaccnccacaa= 69
+Appendix G. Thermal Radiation Characteristics
+of Hastelloy N ececmcmacmm cmc ccccmmccceeceeeee ee T1
+Appendix H. Comparison - Experiments and Analyses ~-e——eecoooeo____ 75
+Appendix I. Method Used to Estimate the Initial
+; Peak Temperature Transient in the
+563-Mw Reference Design Heat Exchanger =--e-ee-c-ceee-- 93
+References ————rememe—a———— emcee meme mm ce ——— cman —————— 103
+
+ 
+
+ 
+ 
+
+ 
+
+D CAR
+i
+ah t 4 a )
+ 
+
+ 
+
+uy
+
+ww)
+
+2) uv 9
+
+vi
+
+oo L
+C ,
+
+THERMAL RADIATION TRANSFER OF AFTERHEAT
+IN MSER HEAT EXCHANGERS
+
+J. R. Tallackson
+
+ABSTRACT
+
+A fraction, estimated to be 40%, of the heat-producing noble-metal
+fission products--niobium, molybdenum, technetium, ruthenium, rhenium,
+and tellurium--is expected to deposit on the metal surfaces within the
+primery fuel-salt loop in a molten-salt reactor. Virtually all of this
+4o% will be in the heat exchangers. The normal means of afterheat re-
+moval is to continue to circulate the primary and secondary salts. The
+worst abnormal situation arises if the heat exchangers are quickly
+drained of both primary and secondary salts in circumstances such that
+all afterheat removal from the heat exchangers is, of necessity, by
+radiative heat transfer. Whereas such an event will rarely, if ever,
+take place, the primary system must accommodate the consequences, prin-
+cipally high temperatures, without compromising containment.
+
+Steady-state temperature calculations, based on radiative heat
+transfer in MSER primary heat exchangers, are presented. Several sizes
+with ratings from 9% Mw to 563 Mw and all with the same general configu-
+ration were considered. Radial temperature profiles were computed for
+afterheat rates corresponding to elapsed times from 100 sec to 11 days
+after reactor shutdown. The effect of the emissivity of the internal
+radiating surfaces in the heat exchangers was included. The calculations
+show that the principal single barrier to heat removal is the inter-
+mediate shell surrounding the tube bundle. This shell is located just
+inside the outer shell and, unfortunately, becomes an effective thermal
+radiation shield.
+
+It is shown that heat exchangers with but one shell instead of two
+ss in the MSER reference design will achieve significant reductions in
+
+peak temperatures, particularly in the larger sizes and at low emissivi-
+
+ties.
+
+No transient case was computed but the upper limit of the initial
+transient was estimated; the heat capacity of the exchangers affords a
+cushion which, with the exception of the 563-Mw unit, limits maximum
+temperatures to numbers that are high but not disastrous. Design
+changes to increase radiating surface areas and to shorten the radial
+transfer distance through the tube bundle should render the 563-Mw
+exchanger acceptable. : }
+
+Keywords: thermal radiation, noble metals, heat exchangers, emergency
+cooling, deposition, afterhesat.
+ 
+
+ 
+
+I. INTRODUCTION
+
+The afterheat problem in molten-salt reactors caused by the noble
+metals which plate out on metal surfaces during reactor operation has not
+gone away. Reliable, consistent data are scant, but, from MSRE data,
+Briggs® has estimated that 40% of the noble-metal fission products might
+plate out on the metal surfaces in the primary salt circuit. These pro-
+duce substantial amounts of afterheat and virtually all of it will be
+developed in the heat exchangers.
+
+. Normally, afterheat in an MSER is easily removed by continuing the
+
+circulation of the primary and secondary salts. The situation, albeit
+unlikely, may arise in which both primary and secondary salts are rapidly
+drained immediately after reactor shutdown. In these circumstances,
+afterheat removal is, of necessity, solely by radiative transfer and the
+maximum temperatures so developed are of considerable interest.
+
+In September 1967 the author® presented calculated estimates of
+temperatures produced by afterheat from noble metals plated on the sur-
+faces in an empty primary heat exchanger of a two-region MSBR. It was
+assumed that all afterheat rejection was by radiative transfer. These
+temperatures were distressingly high, due, in large measure, to the
+overly simplified computational model employed (see Appendix H). I am
+pleased, without benefit of rack and thumbscrew, to recant. More real-
+istic calculations based on the single-region "reference design"® MSER
+heat exchangers indicate that peak afterheat temperatures, while still
+uncomfortably high, will be much lower than originally anticipated.
+
+II. CONCLUSIONS AND RECOMMENDATIONS
+
+MSER "reference design" type heat exchangers can be designed to
+withstand the after-shutdown temperature rise produced by noble-metal
+afterheat. This worst-case study indicates that the two larger sizes
+considered, 563 Mw and 281 Mw, may experience excessively high tempera-
+tures, but the excess is small. If the overall diameters of these ex-
+changers are increased, the peak temperatures can be limited to accept-
+able values without undue penalties in cost. The improvement obtained
+is twofold: (1) The reduction in annulus thickness decreases the radi-
+ation path through the tube annulus, and (2) the radiating areas of the
+outer and intermediate shells are increased.
+
+The additional intermediate shell between the tubes and the outside
+shell is an effective barrier to radiative transfer. This shell is
+required if the tube bundle is to be replaced in situ. Significant
+reductions in peak temperatures will be obtained if this shell is elimi-
+nated. Alternatively, if the effective emissivity of the surfaces of
+the intermediate shell and the outer shell can be made very high (5 0.8)
+s0 as to be nearly black, the peak temperatures will be appreciably
+lower.
+
+a)
+
+iy
+
+Cp
+
+yu
+
+ry
+Ay)
+
+«)
+
+ 
+
+ 
+
+C Ar
+
+ 
+
+Calculated estimates of radiant heat transmission and resulting
+temperatures may be extremely sensitive to the assumptions, approximations,
+and uncertainties on which the calculations are based. For example,
+earlier calculations on a not too dissimilar heat exchanger, using an
+oversimplified model, ¥ produced discouragingly high temperature forecasts;
+the temperatures estimated by these earlier computations were as much as
+2500°F higher than the temperatures reported herein. The present compu-
+tational model is widely accepted and used. It contains no gross com-
+promises with respect to heat exchanger geometry. It does require that
+photons be emitted, reflected, and absorbed in a simple pattern, and
+that their behavior be unaffected by temperature. A casual literature
+search indicates that the errors produced by these simplifications may
+be relatively small and probably on the high side, but confirmation would
+be highly desirable. The variation of maximum temperature with emissivity
+is substantial. Generally, I conclude that these calculated temperatures
+may err on the high side but hesitate to enumerate the amount. It will
+not be worthwhile to use or develop more accurate and elegant computational
+approaches until reliable experimental evidence, applicable to this par-
+ticular type of problem, has been produced. Without the support of the
+experimental confirmation we can expect to produce a conservative and
+
+perhaps expensive design. If radiant heat transmission remains a domi-
+
+nant consideration, I recommend an experimental program to support and
+confirm the analyses. Such experiments are not uncomplicated; they must
+be carefully designed and well planned.
+
+III. MSER HEAT EXCHANGER CONFIGURATION
+
+Figure 1 is a vertical section through the "reference design"®
+MSBER primary heat exchanger rated at 563 Mw. Four of these will be re-
+quired for a 2250-Mw(th) MSBR. This exchanger type was scaled down by
+rating factors of 1/2, 1/3, 1/k, and 1/6, thereby giving heat exchangers
+rated at 281, 188, 141, and 94% Mw. The dimensions and details pertinent
+to these heat transfer computations are on Fig. 2. It should be noted
+that the scaled-down dimensions of the four smaller exchangers do not
+follow any precise scaling law(s) based on stress or flow. For example,
+it is more realistic to choose nominal pipe sizes and plate thicknesses
+for the inner and intermediate shells instead of the non-standard diam-
+eters and thicknesses that would result from any exact scaling down.
+Also, it would be unwise to use thicknesses less than 1/2 in. for the
+outer shells. Therefore, the outer shells are 1/2 in. in all the ex-
+changers.
+
+A second set of calculations was made for 563-Mw exchangers having
+
+. larger outside diameters, thinner annuli, and therefore fewer tube circles
+
+than the "reference design." These exchangers are scaled-up versions of
+the 563-Mw unit which has 31 tube circles in the tube annulus. These
+calculations are discussed in Section VI. )
+
+ 
+
+¥Each tube circle was presumed to be a continuous impenetrable shell
+(see ref. 2).
+ 
+
+ORNL DWG. 69-6004R
+
+    
+   
+
+SEAL WELD
+
+SECONDARY
+SALT
+
+ 
+ 
+  
+
+SECONDARY
+SALT
+
+Average Tube
+length: ~22 ft
+
+Tube Annulus:
+
+Contains 5549 Tubes,
+
+3/8 0. Diam, in 31
+
+Concentric Circles.
+
+Radial Pitch = 0.717 in.
+Circumferential .
+Pitch = 0.750 in.
+
+TT 20 in. sched ko Pipe
+
+  
+ 
+
+PRIMARY
+SALT
+
+36 in. diam
+
+Fig. 1. MSER 563-Mw "Reference Design" Primary
+Heat Exchanger.
+| : ORNL DWG. 71-567
+
+Material; Tubes and Shells: Hastelloy N:
+
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+z Density 0.320 1b/tn.2
+Melting point 2470 - 2755 °F
+Thermal Sonductivity, 12.7 Btu/hr
+. ©
+
+* 4 Intermediate Shell at 1300 TL=-"F/ft
+
+cific heat 0.138 Btu
+
+{ Soe Ib-°F
+
+—g Heat Exchanger Tubes
+
+External surface ares = 0.0982 rt%/r¢
+
+Metal area, sectional = 0.0373 1n.2 = 2.59 x 1074 £t®
+Weight = 0.143 1b/ft
+
+Effective tube length = 22 ft, all exchangers
+
+Tube Geometry
+Circumferentiel pitch -- 0.750 in.
+Radial pitch -- 0.717 in.
+
+The fraction of cross sectional area
+occupied by tubes is seme as for
+triangularly pitched tubes having
+?/D = 2.1.
+
+ 
+
+ 
+
+ 
+
+ 
+
+HEAT EXCHANGER DIMENSIONS
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Tube Annulus
+Rating Intermediate Outer Tube Total
+(Mw) Inner Shell Shell Shell Dimensions Circles Tubes
+94 8 1m. gene 40 Re = 14.00 tn, Fs = B50 ta, Ra - 13.24 In. 12 92k
+1 = 4, n. =1, o -Ay = 8, = . n. *
+Ay = 2.26 1t2/rt M = 1.3 fr A 8.36 rtf R= T.89 tn.
+m1 10 in. ached 40 Rp 17.50 in, Rs = 19,38 oy Ry = 16.14 in, 15 139%
+Ry = 5.38 in, t= 1.384n., = Ag = 10.13 £t2/rt = 6.10 in,
+A = 2.81 168/16 Ay = 9.16 fi2/fe A = 10.39 fte/ft ® = 10.0% in,
+Ay = 9.88 iB/ry
+188 12 ins ache ho Re = 39.30 in. Rs = 2% Ine Hy - Bz a. 17 1853
+1 = 5. . - . ne. = . - . n.
+Ay = 3.34 £t2/rt Aq = 10.20 ft2/rt A = 11.51 £t2/ft aR = 11.47 in.
+Ag = 11,00 £1B/1t
+281 14 in., sched 40 ~~ Rp = 23.00 in. Rs = 25.25 in. Ry = 22,59 22 279
+Ry = 7.00 in. t= 1.75 in. Aq = 13.20 £t2/rt Ry = 7.53
+. Ay = 3.67 f2/ry Ay = 12.02 fee/et Ay = 13.16 £t2/rt aR = 15.06
+oo A, = 12.9% re2/rt
+> Hp Memmi RoRmL. RIRPE., RIBE BW
+— 1 = - « - . . = . - »
+Ay = 5.24 rt8/rt A; = 17.13 TeR/rt A, = 19.06 fe8/tt po = 21.50
+Aj = 18.15 ft /£t
+
+ 
+
+Fig. 2, Diagram, With Dimensions, of Transverse Cross Sections Through MSER Heat Exchangers
+
+ 
+ 
+
+ 
+
+IV. AFTERHEAT GENERATION AND DISTRIBUTION
+
+The amount of efterheat in the heat exchanger is based on Briggs'
+estimate! that 40% of the noble-metal fission products plate out on the
+metal surfaces exposed to the primary salt. The inside surfaces of the
+heat exchanger tubes provide 39,000 ft® of surface in a 2250-Mw(th)
+MSER system. This is a very large area compared with the shell and pipe
+surface areas in the primary salt circuit. It can be assumed, with
+negligible error, that the entire 40% is deposited on the inner surfaces
+of the exchanger tubes.
+
+The heat-producing noble metals are niobium, molybdenum, technetium,
+ruthenium, rhodium, and tellurium. The heat produced by the iodine
+daughters of tellurium is included. The heating by those noble metals
+produced in the drain tanks by the decay of non-noble parent nuclides is
+not included.
+
+Figure 3 shows the afterheat rate in the 563-Mw unit per foot of
+length of heat exchanger, .and Fig. 4 shows the rate per square foot of
+outside tube surface¥* in any MSBR exchanger of this type. The accumu-
+lated afterheat curve on Fig. 5 is the integral curve of Fig. 3. Table
+1 gives numerical values of these data.
+
+Heat exchanger temperatures were computed for two different distri-
+butions of heat generation in the exchangers. The simplest case, Type 1,
+is that in which all heat generation is assumed to be confined to the
+tubes and uniformly distributed. This, in effect, says that gamma radi-
+ation does not generate heat in adjacent shells nor is the total heat
+generation in the exchanger(s) reduced by gammas escaping to the outside
+world.
+
+The second case, Type 2 distribution, considers the effect of gamma
+radiation on the location of internal heat generation. Careful calcu-
+lations#’® of gamma heat generation in heat exchangers of this general
+design are available and from these the total heat generation rate was
+subdivided into four parts: ¥*¥
+
+1. the fraction in the inner shell,
+
+2. the fraction in the tube annulus (includes all B heating).
+3. the fraction in the intermediate and outer shells,
+
+Lk. the fraction escaping the exchanger.
+
+ 
+
+*Since the outside of the heat exchanger tubes provides 0.098 ft2
+per foot of length, the heat rate per foot of tube length is obtained,
+very closely, by dividing the data on Fig. 4 by 10.
+
+*¥*These data were developed from ref. .l, Table 5.6, p. 63, and
+ref. 5, Fig. 4, p. 10.
+
+Ry
+
+i,
+
+1
+ay
+
+wh
+
+i
+
+mH
+
+ 
+
+-
+
+Btu/hr
+
+ft of hei
+
+Fig. 3.
+
+Heat Generation Rate in a 563-Mw Heat Exchanger -
+
+ORNL DWG. 71-568
+2,76hr 27.6hr 11.64 1164
+
+108 12 3 10° a 104 » 108 3 10° a 2107
+
+ 
+
+8
+
+g
+
+ 
+
+10° L .
+10 12 °° 108 10 ° 108 * 100 * 107
+Elapsed Time After Shutdown ~- Seconds
+
+Afterheat Generation Rate Per Foot of Height in a 563-Mw MSER
+Heat Exchanger. -Afterheat is that produced by 40% of the totel
+noble metal fission products (including iodine dsughters of
+tellurium) which are assumed to plate out on metal surfaces.
+Refer to MSR-68-99 Rev., Fig. 9.
+ 
+
+ 
+
+Btu/hr
+£2 of tube surface
+
+Heat Generation Rate
+
+10°
+
+]
+
+5
+
+1
+“10
+
+Fig. &.
+
+ 
+
+ORNL DWG. 71-569
+2,78hr 27.8hr 11.64 1164
+10° 108 10% 1058 o 10° g 107
+
+3
+
+10° 10° 104 108 10°
+Elepsed Time After Shutdown - Seconds
+
+8
+
+107
+
+Afterheast Generation Rate Based on the Outside Surface Ares
+(radiating surfaces) of MSER Heat Exchanger Tubes, Afterheat
+is that produced by 40% of all noble fission products plus
+the iodine daughters.of tellurium (see MSR-68-99 Rev., Fig.
+9). Eeat exchanger configuration per Fig. 1.
+
+w\
+
+iy
+
+Y r ©
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+yy
+
+oly
+
+Dl
+
+Btu
+
+ft of height
+
+Accumulated Afterheat in a 563-Mw Heat Exchanger -
+
+ORNL DWG. T1-5T70
+
+2,78r © 27.80r 11.64 1164
+3 10° 3 10° ® 100 3 108 8 10®° * 107
+
+3
+
+10%
+
+10¢
+
+ 
+
+10° : :
+10 107 .108 0t * 108 wt * 107
+Elapsed Time After Shutdown =~ Seconds
+
+Fig. 5. Accumlated Afterheat in a Perfectly Insulated 563-Mw MSBR
+Heat Exchanger per Foot of Heat Exchanger Length. - Afterheat
+is thet produced by 40% of all the noble metal fission pro-
+ducts which are assumed to plate out on the heat exchanger
+tubes, Refer to MSR-68-99 Rev., Fig. 10. Heat exchanger
+configuration per ORNL DWG 69-600L.
+ 
+
+ 
+
+Table 1. Total® Afterheat Generation by Noble Metals Plated on Tube Surfaces in MSBR Heat Exchangers
+
+ 
+
+Heat Generation Rates
+
+ 
+
+ 
+
+Elapsed Accumulated (Integrated)
+Time Per Foot of Height Per Square Foot of Per Foot of Length? Heat Per Foot of Height
+After in MSBR 563-Mw Heat Outside Surface of of 3/8-in.-OD Heat in MSBR 563-Mw Heat
+
+Reactor Exchanger Heat Exchanger Tubes Exchanger Tubes Exchanger
+
+Shutdown Btu/hr kw: tu/hr tu/hr tu hr
+pgm he) Embree) ) Em) (ab)
+
+0 2.52¢10% T7.39x10* L4,60%10® 1.35%10-1 L,52x10% 1.33x10°3 © 0
+
+102 2,32x10% 6.82x10* Lh.27x10%? 1.25x10°* L.20x10' 1.23x102 7.00%10% 2.05
+3x10° 1.94x10% 5.69x10* 3.55x102 1.04x10-! 3.48x10* 1.02%10°2 1.94x10* 5.68
+
+10° =16.7Tm  1.74x10%® 5.12x10* 3.20x10% 9.38x1072 3.12x10 9.21x10"%  5.63x10% 1.65x10%
+3x10% = 0.83 hr 1.24x10% 3.64x10' 2.27x10® 6.67x10°2 2.23x10* 6.55x10~2  1.36x10® 3.98x10%
+104 =2.,78 hr 7.36x10% 2.16x10} 1.35x102 3.96x10°2® 1.33x10* 3.88x107% 3.18x10% 9.32x10?
+3x10% = 8.33 hr 5.63x10%* 1.65x10, 1.03x10? 3.02x10°2 1.01x10! 2.97x10-2 7.16x10% 2.10%102
+108 = 27.8 hr L.26x10* 1.25x10° 7T.81x10* 2.29x10°2 7.67 © 2.25%107®  1.59x10° L4.66%10%
+3x10% = 3.474  2.71x10* 7.95 4.98x10' 1.46¥1072 L.90 1.43x10°%  3.48x10° 1.02x10°
+108 =11.64  1.2kx10* 3.64 2.27x10* 6.67x10°% 2.23 6.55x10™%  T.37x10® 2.16x10°
+3x10% = 34.74  6.58x10° 1.93 1.21x10*  3.54x107% 1.19 3.48x10°%  1.36x107 3.98x10°
+107 = 3.80 mo 1.67x10° 4.89x107* 3.05 8.95x10~* 3.00%10"* 8.78x10®  1.94x10” 5.68x10°
+3x107 = 0.95 y  3.30X10% 9.66x10 2 6.05x107* 1.77x10"* 5.94x107% 1.74x10"®  2.36x107 6.93%10°
+108 =3.1Ty  6.58x10% 1.93x107® 1.21x10-} 3.54x107% 1.19x0~2 3.48x10"%  2.64x107 7.73%10°
+
+ 
+
+®Tmese rates and accumulated heat values include all gamma, energy and represent the afterheat pro-
+duction by 40% of the noble metal fission products at saturation levels. Heat generation by the iodine
+daughters born after shutdown from the tellurium is included.
+
+Prominal height (length) of MSBR heat exchangers is 22 ft.
+
+ot
+
+ 
+ 
+
+ 
+
+ 
+
+*)
+
+»
+
+wy
+
+y
+
+11
+
+Figure 6 is a typical profile of the gamma heat deposition rate in
+an empty 563-Mw heat exchanger. Figure 7 shows curves of the fractionms,
+(1) to (4) above, for the exchangers in the size range considered.¥
+These distribution fractions do not show any large variations with
+elapsed time, particularly at the times of interest, from 10® to 10% sec
+(0.3 to 30 hours) after shutdown. These curves are based on averages of
+10%- and 10f-sec data.
+
+Figure 6 shows that, of the two outermost shells, the thicker inter-
+mediate shell is the much larger heat source; also, note that gamma heat
+generation in these shells is attenuated very rapidly in the radial di-
+rection. For these reasons, with Type 2 distribution, all the gamma heat
+deposition in both outer shells was considered to be near thé inside sur-
+face of the intermediate shell.
+
+V. METALLURGICAL CONSIDERATIONS
+
+The primary concern of this study is to determine whether or not
+excessive heat exchanger temperatures will jeopardize the integrity of
+the Hastelloy N primary containment envelope. Because the event postu-
+lated seldom, if ever, would occur and because the resultant high tem-
+peratures would be of short duration, we are not concerned with the
+long-term creep-rupture behavior. We are concerned with the short-term
+physical properties of Hastelloy N at temperatures around 2000°F (~1100°C)
+and assuming that these temperatures are maintained for no more than
+20 hours.
+
+Hastelloy N pressure vessels, piping, etc., are not expected to
+sustain serious damage if held at low stress for short times (< 20 hr)
+at temperatures of 2150°F (1177°C).% A vessel subject to any substantial
+fluence will lose ductility. Ultimate strength at this temperature will
+be very low.” If a component is to survive at this temperature, we must
+ensure that the high temperature regions be virtually free of stress-
+producing imposed loads. It is appropriate to point out that it is rou-
+tine fabrication practice to specify a stress-relieving anneal at 2150°F
+for welded Hastelloy N pressure vessels. The foregoing suggests that
+we evaluate preliminary designs using 2100°F as an upper temperature
+limit for the unlikely events being considered here. This assumes that
+the calculated or estimated temperatures tend to be on the high side
+and leaves a small margin for thermal stresses and other uncertainties
+
+which will be evaluated with some care during gestation of a final design.
+
+ 
+
+*These data were developed from ref. 1, Table 5.6, p. 63 and
+ref. 5, Fig. 4, p. 10.
+ 
+
+12
+
+ORNL-DWG 69-12604
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+INTERMEDIATE
+SHELL
+TUBE ANNULUS
+INNER
+SHELL
+TUBE DIAMETER: 0.375 in.
+WALL THICKNESS: 0.035 in.
+TOTAL NUMBER
+OF TUBES: 5910
+OUTER SHELL
+104
+5
+_ /
+£
+ow
+J
+3 2
+a
+ww
+—-
+E 3
+Z 10
+o 7 a
+= ’ NL
+a N\
+a .
+ws
+-
+C4 ¥
+= :
+I
+2
+102
+0 6 12 18 24 30 36 42
+
+RADWS (in.)
+
+Fig. 6. Distribution of Gamma Heat Generation Produced by Tellurium¥* Fission
+Products in a 563-Mw MSER Heat Exchanger. Forty percent of all the
+tellurium is assumed to deposit uniformly on the inside surfaces of
+the tubes. ’
+
+*The energy spectrum of tellurium gammas is considered to be typical
+of the gammas produced by the other noble metal fission products.
+
+Nn
+
+3
+
+iv
+
+i
+
+ef
+ 
+
+ 
+
+ 
+
+ 
+
+Fraction of Total Afterheat Generation
+
+ORNL DWG. T1-5T1
+
+1.00
+
+ 
+
+0.8
+0.6
+0.4
+Intermediate
+and Outer Shell
+0.2 er Shell
+v!
+0
+
+0 100 200 300 Loo 500 600
+MSBR Heat Exchanger Rating - Mw
+
+#),
+
+Fig. 7. Type 1 Distributions of Noble Metal Afterheat in MSBR Heat Exchangers.
+
+£1
+
+ 
+ 
+
+ 
+
+1k
+
+VI. RESULTS
+
+Figures 8 to 11 (incl.) are steady-state radial temperature pro-
+files in four sizes, from 94 to 281 Mw, of MSBR-type heat exchangers
+having the dimensions shown on Fig. 2. The heat generation rate is that
+predicted at 10* sec (2.8 hr) after shutdown and drain. These curves
+are based on the assumption of Type 1 distribution (see Section IV);
+i.e., all afterheat generation is uniformly distributed in the heat ex-
+changer tubes and no gamma energy escapes. It was also assumed that the
+emissivity of the outside surface of the outer shell was 0.8 and that
+this surface was radiating into infinite "black" surroundings whose tem-
+perature is 1000°F. The emissivity¥of the internal radiating surfaces,
+tubes and shells, is one of the larger uncertainties in a calculation of
+this type. Both tubes and shells will meet stringent quality assurance
+standards and we should expect them to have an excellent surface finish,
+perhaps appearing almost polished. Furthermore, after exposure to molten
+fluoride salts these internal radiating surfaces will be oxide free.
+
+All the factors tending to promote bright, low emissivity surfaces in a
+material tending toward low emissivity are present. For these reasons,
+nearly all the calculations were made at internal surface emissivities
+of 0.1, 0.2, and 0.3. The general subject of emissivity* is discussed
+in more detail in Appendix G. The data in Appendix G suggest that we
+can expect the internal Hastelloy N surfaces to have an emissivity of
+0.2 to 0.3 and that we select an emissivity of 0.2 in evaluating heat
+exchanger performance in the situation considered herein. The high
+emissivity (0.8) of the outer surface of the outer shell is justified
+by assuming that it is coated with one of the titanates® or, alterna-
+tively, deeply convoluted by fins or a gridwork. :
+
+It is emphasized that these temperature curves are for steady- .
+state conditions and do not take into account the rapid decrease with
+time of the heat generation rate nor the temperature reducing effect
+of heat capacity of the exchanger. These temperature profiles are,
+perhaps, higher than would be obtained should the situation postulated
+actually occur. The upper limits of the initial temperature transient
+in the 563-Mw unit have been estimated and are discussed in subsequent
+paragraph(s). The estimate indicates the temperature will reach its
+maximum in about 10* sec after reactor shutdown and an immediate drain;
+therefore, most of the data herein were calculated as if at steady
+state with the afterheat rate expected at 10* sec after shutdown.
+
+As the calculations proceeded, starting with the smallest, 94 Mw,
+unit, some trends became evident; (1) the effect of heat capacity of
+the exchanger cannot be ignored, (2) the variation of maximum internal
+temperature with emissivity is less at higher emissivities, (3) gamma
+
+ 
+
+*As this report was going to press, the writer's attention was
+directed to ref. 27, in which emissivity measurements of INOR-8 (Hastel-
+loy N) are reported. Bright and matte finished specimens showed an
+emissivity of 0.20 at 1000°F to 0.25 at 1830°F. Oxidized specimens had
+emissivities of approximately O.4 to 0.6. A value of 0.2 for the
+emissivity of Hastelloy N is therefore appropriate. :
+
+»
+
+*)
+
+3)
+ 
+
+C
+
+9
+
+2
+
+x)
+
+15
+
+ORNL DWG. T0-8546
+3000
+
+‘Intermediate
+Shell
+
+‘Outer
+e
+
+2500
+
+2000
+
+1500
+
+Temperature, °F
+
+1000
+
+500
+
+ 
+
+0 5 : 10 15 20
+Radius ~ Inches
+Fig. 8. Steady-State Temperature Profiles in en Empty 9h-Mw
+Heat Exchanger at Three Values of Internal Surface
+
+Emissivity.
+
+Heat Production: 12,300 Btu/hr-ft height; uniformly distri.
+buted in tube annulus. Equivalent to afterheat
+rate 10* sec after shutdown produced by L4o%
+of the noble metal fission products plated on
+tube surfaces.
+
+Heat Transfer: By radiation only. Outer surface emissivity=0.8.
+
+Environment: "Black" surroundings at 1000°F,
+
+ 
+ 
+
+ORNL DWG. T0-85L42
+3000
+
+Intermediate
+_Shell ‘
+
+Outer
+Shell
+
+2500
+
+2000
+
+1500
+
+Temperature, °F
+
+5
+
+500
+
+ 
+
+5 10 15 20
+Radius - Inches
+
+Fig. 9. Steady-State Temperature Profiles in an Empty 141-Mw Heat
+Exchanger at Three Values of Internal Surface Emissivity.
+
+Heat Production: 18,400 Btu/hr-ft height; uniformly distributed in
+tube annulus. Equivalent to afterheat rate 104
+sec after shutdown produced by 40% of the noble
+metal fission products plated on tube surfaces.
+
+Heat Transfer: By radiation only. Outer surface emissivity = 0.8.
+
+Environment: "Black" surroundings at 1000°F.
+
+4
+ 
+
+ 
+
+ 
+
+17
+
+ORNL DWG. T0-85k1
+
+3000
+Intermediate
+
+Shell Outer
+
+> e
+
+8
+
+Temperature, °F
+
+:
+
+S00
+
+ 
+
+0 5 10 15. 20 25
+Radius - Inches
+
+Fig. 10. Steady-State Temperature Profiles in an Empty 188 Mw Hest
+Exchanger at Three Values of Internal Surface Emissivity.
+
+Heat Production: 2k, 500 Btu/hr-ft height; uniformly distributed in
+tube annulus. Equivalent to afterheat rate 10* sec
+after shutdown produced by 40% of the noble metal
+fission products plated on tube surfaces.
+
+Heat Transfer: By radiation only. Outer surface emissivity = 0.8.
+
+Environment: "Black" surroundings at 1000°F.
+
+ 
+ 
+
+ 
+
+3000
+
+2500
+
+Temperature, °F
+&
+3
+
+3
+
+500
+
+18
+
+ORNL DWG. T1-572
+
+ate Outer
+Shell She
+
+ 
+
+5 10 15 20 25 30
+
+0 i
+Readius - Inches
+
+Fig. 11. Steady-State Temperature Profiles in an Empty 281-Mw Heat Ex-
+changer at Three Values of Internal Surface Emissivity.
+
+Heat Production: 36,800 Btu/br-ft height; uniformly distributed in tube
+- annulus. Equivalent to afterheat rate 10* sec after
+shutdown produced by 40% of the noble metal fission
+
+products plated on tube surfaces.
+Heat Transfer: By radiation only. Outer surface emissivity = 0.8.
+
+Environment: "Black" surroundings at 1000°F.
+ 
+
+ 
+
+17
+
+Q
+
+19
+
+energy losses to the outside-are insufficient to contribute materially
+toward reducing peak internal temperatures, and (4) the maximum tempera-
+tures in the 563-Mw "reference design" exchanger may become unacceptably
+high. Finally, it developed that the time-sharing computational program
+used to obtain temperatures in the tube annulus (Appendix E) would not
+run if the number of tube circles in an exchanger exceeded 22, whereas
+the 563-Mw exchanger contains 31. There was not sufficient incentive to
+spend time in rewriting the program for a larger machine. Instead, it
+was decided to produce additional computations to indicate the changes
+in the 563-Mw "reference design" which will reduce the maximum internal
+temperature to acceptable values. Therefore, scaled-up versions of the
+563-Mw "reference design" unit with larger outside diameters and a re-
+duced number of tube circles were programmed and the peak temperatures
+in the "reference design" were obtained by extrapolation.
+
+The effect of emissivity, number of outer shells, heat capacity,
+overall size and rating are considered in the paragraphs which follow.
+
+Temperatures in 563-Mw heat exchangers having larger outside diam-
+eters and thinner tube annuli than in the "reference design" (Fig. 1)
+model were computed. These computations served two purposes: (1) They
+indicated the minimum outside diameter of an exchanger which will limit
+the maximum temperature to the 1900°F-2100°F region, and (2) they pro-
+duced the basis for a good estimate, by extrapolation, of the peak tem-
+peratures in the 563-Mw "reference design" shown on Fig. 1. The dimen-
+sions of these exchangers and the computed temperatures therein are in
+Table 2 and on Figs. 12 and 13.
+
+The extrapolated temperature profiles, Fig. 1k, assigned to the
+563-Mw "reference design" model which has 31 tube circles, are pre-
+sented with considerable confidence because the extrapolations involved
+only the temperature differentials in the tube annulus and this repre-
+sents only about 25% of the total temperature above the 1000 °F ambient.
+The remaining 75%, the temperatures of the outer and intermediate
+shells, has been computed accurately.
+
+It can be seen that if the outside diameter of the reference design
+heat exchanger is increased from 36 in. to approximately 50 in. so that
+
+‘the tubes are arrayed in 17 to 20 tube circles, the peak steady-state
+
+internal temperatures will be in the acceptable 2000°F-2100°F region at
+10* sec after shutdown when the internal surface emissivity is about 0.2.
+A further increase in diameter may be necessary if: (1) the internal
+surface emissivity turns out to be much less than 0.2; (2) the "reference
+design" model, with two outer shells, continues to be the required de-
+sign; and (3) if we use the steady-state temperature calculations at
+
+"10* sec to guide the design. It will be shown that eliminating one of
+
+the shells outside the tube annulus effects a very substantial reduction
+in peak internal temperatures should the internal surface emissivity be
+low (0.1).
+
+ 
+ 
+
+Table 2. Temperatures Developed by Radiative Transfer of Noble Metal
+Afterheat in MSER Heat Exchangers Rated at 563 Mw and Having
+Tube Annuli of Different Thicknesses
+
+ 
+
+ 
+
+ 
+
+ 
+
+No. Tube Ry R,, Emissivity Temperatures, °F
+(ones Rg R Ry I of 1 n R 2 - . o ™
+Total t nterna 1 2 3
+Tubes) in, ° Fam Surfaces max ° ann shells
+17 2 50.50 44.65 0.1 2404 2087 317 2019 1149 aro 1140
+(5542) 46 33.18 0.2 2059 1759 300 1691 1149 542 1140
+3.50 11.47 0.3 1903 1607 296 1539 1149 390 1140
+20 25 45.00 39.87 0.1 2495 2150 35 208% 1165 819 1155
+(5540) 41 26.25 0.2 214k 1807 337 17h 1165 577 1155
+3.00 13.62 0.3 1987 1648 339 1583 1165 418 1155
+22 21.5 43,00 37.62 0.1 2541 2179 362 2111 172 939 1161
+(55uk4) 39 22.56 0.2 2191 1831 360 1763 1172 5% 1161
+3.00 15.06 0.3 2035 1668 367 1600 1172 428 1161
+24 18 40.75 35.80 0.1 2578+ 2208 3To* 2142 1180 962 1169
+(5544) 37 19.38 0.2 200k» 1854 370% 1788 1180 608 1169
+2.75 16.42 0.3 2057* 1687 370% 1621 1180 uk) 1169
+26 15 39.75 3k.boO 0.1 2619* 2229 390% 2155 1184 9TL 1172
+(5538) 36 16.47 0.2 2062% 1872 390% 1798 1184 614 1172
+2.75 17.93 0.3 2094+ 1704 390% 1650 1184 Lh6 1172
+31 10 36.00 32.12 0.1 2705% 2280 425% 2212 1198 1014 1186
+(5549) 32.75 10.62 0.2 2336% 1911 hos#* 1843 1198 645 1186
+2.50 21.50 0.3 2162% 1737  42s* 1669 1198 um 1186
+(1) Temperatures were calculated for steady-state heat rate of 7.36 x 10* Btu/hr per ft height of
+heat exchanger uniformly puted (Type 1) on the inside of the heat exchanger tubes. This
+1s equivalent to 135 Btu/hr = 13.3 Btu/hr and 1s the heat rate expected at
+
+104
+
+ 
+
+£12 tube surface f+ length of tube
+sec (2.8 nr) after shutdown.
+
+(2) Heat exchangers in "black, infinite" surroundings at 1000°F.
+(3) Emissivity of outer surface of outer shell = 0.8,
+
+#Thege
+
+temperatures obtained by extrapolation.
+
+ 
+
+ 
+
+ 
+
+Oc
+
+ 
+b
+
++
+
+ 
+
+21
+
+ORNL DWG. T1-573 Reference
+Design
+15 20 25 30
+
+Temperatures of Inner
+Surface of Intermediate
+Shell
+
+Temperature, °F
+
+Average¥* Temperature
+Drop Across Tube
+
+ 
+
+0 5 10 15 : 20 25 30
+Nunber of Tube Circles
+
+- Fig. 12. Internal Steady-State Temperatures in MSBR Heat Exchangers
+Rated at 563 Mw With Tube Annuli of Different Thicknesses and With the
+Emissivity, ¢, of All Internal Surfaces a Parameter. Heat exchanger con-
+figurations generally similar to Fig. 1. : -
+
+Heat Generation: 7.36 x 10* Btu/hr-ft height; ell uniformly distributed
+{Type -1) in the tube annulus end equivalent to the
+afterheat rate 10* gec after shutdown produced by Lop
+of the noble metal fission products plated on the tube
+surfaces,
+
+Heat Transfer: By radietion only.
+Environment: "Black, infinite" surroundings at 1000°F
+
+(a) Fnissivity of outer surface of outer shell = 0. 8.
+
+*For internal emissivities from 0.1 to 0.3 the variation, with emissivity, of
+the temperature rise in the tube annulus is negligible. Averaged values are
+used.
+
+ 
+ 
+
+Peak Temperature, °F
+
+ 
+
+22
+
+ORNL DWG. T1-5Th Reference
+Design, Fig. 1
+15 20 2 30
+
+‘Peek Temperatures
+(et innermost tube
+circle ‘
+
+5 lo 15 20 5 30 35
+
+Nunber of Tube Circles
+
+Fig. 13. Peak Steady-State Temperatures Developed in MSER Eeat Ex-
+changers Rated at 563 Mw With Tube Annuli of Different Thicknesses and
+With Emissivity, €, of All Internal Surfaces a Parameter. Heat exchanger
+
+configurations generally similer to Fig. 1.
+
+Heat Generation: 7.36 x 10% Btu/hr-ft height; sll uniformly distributed
+(Type 1) in the tube annulus and equivalent to the
+afterheat rate 10* sec after ehutdown produced by oj
+of the noble metal fission products plated on the tube
+
+surfaces.
+
+Heat Transfer: By rsdietion only.
+
+Environment: "Black, infinite" surroundinge at 1000°F
+(a) Emissivity of outer surface of outer shell = 0.8,
+ 
+
+ 
+
+ 
+
+ORNL DWG. T1-575
+
+3000
+
+2500 2500
+2000 2000
+5
+. :
+g
+2 1500 1500
+8
+o
+g
+a
+B
+1000 1000
+500 500
+
+ 
+
+0 5 10 15 20 25 30 35 ho
+Readius - Inches
+
+Fig. 1k. Steady-State Temperature Profiles in an Empty 563-Mw Heat Exchanger at Three Values of Internsl
+Surface Emissivity. Heat Production: 73,600 Btu/hr-ft height; uniformly distributed in tube annulus. Equivalent
+to afterheat rate 10* sec after shutdown produced by 40% of the noble metal fission products plated on tube surfaces,
+Heat Transfer: By radiation only. Outer surface emissivity = 0,8, Environment: "Black" surroundings at 1000°F.
+
+£e
+ 
+
+ 
+
+24
+
+The estimated temperature transient in the 563-Mw exchanger is shown
+on Fig. 15. The estimate shows that the peak temperature, 2150°F, devel-
+oped in this exchanger borders on acceptability if we can rely on an in-
+ternal surface emissivity of 0.2 or better.* The simplifying assumptions
+and approximations used in calculating this transient were made so that
+the results would tend toward the high side. A brief description of the
+method used to develop this transient is in Appendix H.
+
+Figure 16 shows the author's version of a similar transient in the
+141-Mw unit. This curve was estimated by inspection using Fig. 15 as a
+guide. The transient peak, slightly above 1800°F, was located slightly
+below the intersection of the adiabatic temperature growth curve of the
+annulus and the steady-state peak temperature curve. This smaller unit
+can be expected to perform well in the stated situation.
+
+Figures 17 and 18 are temperature profiles in the 94- and 281-Mw
+units at 10% sec after shutdown and for the nonuniform, Type 2, heat
+distribution, Fig. 7. All other conditions are the same as for Figs. 8
+and 11, with which they may be compared to note the effect of making cal-
+culations using the simplifying Type 1 approximation. Table 3 provides
+a comparison of peak temperatures if calculated for both types of heat
+distribution at steady-state heat rates corresponding to those expected
+at 10* sec (2.8 hr) after shutdown.
+
+Noting that the more realistic assumption, Type 2, gives lower tem-
+peratures, it is proper to query, "Why not use the nonuniform case
+entirely?" The question is particularly appropriate because once the
+equations are programmed, there is little difference in the ease of
+obtaining numbers. The more exact nonuniform case, Type 2, requires a
+prior and not uncomplicated nor inexpensive computation of gemma heating.®
+During the early phase of a design study it will not be worthwhile to
+spend much time in this effort until a detailed design has been confi-
+dently established. The simple, uniform case, Type 1, requiring only a
+knowledge of heat exchanger geometry and afterheat generation rate, is
+relatively easy to calculate and, as it seems to provide temperatures
+slightly on the high side, will tend to produce a conservative design.
+
+Figures 8 to 11 and Fig. 14 show inner shell temperatures slightly
+less than the temperature of the adjacent row of tubes. At first glance
+this seems contrary to all accepted laws governing heat transfer. In
+fact, and as will be seen, it is not true. However, if the assumption
+of zero heat generation in the inner shell were actually true we should
+expect this slight temperature depression at the inner shell. Because
+the tube matrix is quite open, the inner shell is in thermal equilibrium
+not only with the adjacent row of tubes but with the combination of
+several sets of tube circles at lower temperatures farther out in the
+tube annulus. On Figs. 17 and 18, in which the inner shells are generating
+9% of the total afterheat, their temperature is the peak temperature as
+expected.
+
+ 
+
+*Refer to footnote on page 1k.
+ 
+
+on
+
+25
+
+ORNL DWG. T1-5T6
+
+2.78h 27.8h 11.64
+3000
+
+2500
+
+Estimated
+Transient
+
+2000
+
+1500
+
+Temperature - °F
+
+ 
+
+Temperature
+Black™ sur-
+roundings,
+1000°F
+500
+1? 2 & "10° 2 0B. 30¢ s 102 2 5 10°
+
+Elapsed Time After Shutdown - Seconds
+
+Fig. 15. Estimated Initial Temperature Transient Caused by Noble Metal Afterheat in
+an Bupty 563-Mw MSER Heat Exchanger. .
+
+Curve A: Peak steady-state temperature computed for Type 1 afterheat rates at the indicated
+times (see Table 1) and with the emissivity of all internal surfaces = 0.2 and
+the emissivity of the outer surface of the outer shell = 0.8. . ]
+
+Curve B: ‘Temperature growth in the inner shell and the tube annulus computed as if
+(1) the annulus and shell are perfectly insulated; (2) they have a total heat
+capacity of 129 Btu/°F-ft of height (based on Table 3); and (3) generate 77%
+of the total afterheat (see Table 1 and Fig. 7).
+
+Curve C: Temperature growth in the intermediate shell computed as if: (1) the shell is
+perfectly insulated; (2) it has a heat capacity of 287 Btu/°F-ft of height, and
+(3) generates 23% of the total afterheat.
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+Temperature - °F
+
+ 
+
+26
+
+ORNL DWG. T1-5TT7
+
+2.780 27.80 11.64
+
+Temperature
+of Infinite
+"Black" Sur-
+roundings
+1000°F
+
+1° 2 8 10° ® 0B jot ® 8 108 2 5 30°
+Elapsed Time After Shutdown - Seconds
+
+Fig. 16. Estimated Initial Temperature Transient Caused by Noble Metal Afterheat in an Empty
+141-Mw MSER Heat Exchanger. .
+
+Curve A:
+
+Curve B:
+
+Peak steady-state temperature computed for Type 2 afterheat rates at the indicated times
+(see Table.l and Fig. 7) and with the emissivity of all internal surfaces = 0.2 and the
+emissivity of the outer surface of the outer shell = 0.8.
+
+Temperature growth in the inner shell and the tube annulus computed as if: (1) the annu-
+lus and shell are perfectly insulated; (2) they have a total heat capacity of 32 Btu/°F-ft
+of height (based on Table 3); and (3) generate T0% of the total afterheat (see Table 1 and
+
+Fg. 7).
+
+Temperature growth in the intermediate shell computed as if: (1) the shell is perfectly
+insulated; (2) 1t has a heat capacity of 72 Btu/°F-ft of height, and (3) generates 23%
+of the total afterheat.
+ 
+
+27
+
+ORNL DWG. 71-578
+3000
+
+ate Outer
+Shell Shell
+
+2500
+
+2000
+
+Temperature - °F
+&
+8
+
+3
+
+500
+
+ 
+
+10 15 20
+
+Radius - Inches
+
+Fig. 17. Steady-State Temperature Profiles in an Fmpty 94-Mw
+
+Co MSBR Heat Exchanger for Type 2 Heat Distribution Which
+Takes into Account the Effects of Gamma Energy losses
+and Distribution, Fig. 7. Upper (dashed) curve is
+profile for Type 1 distribution (see Fig. 11) and is
+shown for comparison,
+
+Y 5
+
+Total Heat Generation: 12,300 Btu/hr-ft height; equivelent to
+afterheat rate at 104 sec after shutdown. Heat Transfer: By
+radiation only. Outer surface emissivity = 0.8. Environment:
+"Black" surroundings at 1000°F.
+ 
+
+ 
+
+Temperature - °F
+
+28
+
+* ORNL DWG. 71-579
+
+Intermediate
+
+3000
+
+2500
+
+:
+
+&
+8
+
+500
+
+ 
+
+0 20 30
+Radius ~ Inches
+
+Fig. 18. Steady-State Temperature Profiles in an Empty 281-Mw MSBR Heat
+Exchanger for Type 2 Heat Distribution Which Takes Into Account
+the Effects of Gamma Energy Losses and Distribution, Fig. T.
+Upper (dashed) curve is profile for Type 1 distribution (see
+Fig. 11) end is shown for comparison.
+
+Total Heat Generation: 36,800 Btu/hr-ft height; equivalent to afterheat
+rate at 10% sec after shutdown. Heat Transfer: By radiation only. Outer
+surface emissivity = 0.8. Environment: "Black" surroundings at 1000°F.
+ 
+
+ 
+
+ 
+
+Table 3. The Influence of Internal Afterheat Distribution and Heat Exchanger
+Size on Peak Steady-State Temperatures in Empty MSBR Heat Exchangers at the
+Heat Generation Rate® Expected 10* Sec (2.8 Hr) After Reactor Shutdown®
+
+9h-Mw Heat Exchanger 141-Mw Heat Exchanger 188-Mw Heat Exchanger 281-Mw Heat Exchanger
+
+ 
+
+ 
+
+Assumptions
+on Distribution Internal Surface Internal Surface Internal Surface Internal Surface
+of the Emissivity® ~ Emissivity® BEmissivity® Emissivity®
+Heat Generation
+
+0.1 0.2 0.3 0.1 0.2 0.3 0.1 0.2 0.3 0.1 0.2 0.3
+
+ 
+
+ 
+
+ 
+
+Peak Temperatures - °F
+Uniform, Type
+
+1 (100% con- ©1995 1706 1577 2111 1810 1678 2231 1913 1771 2406 2075 1928
+fined to the
+
+“tube annulus)
+
+Nonuniform,
+Type 3 (eee 1908 1635 151k 2072 1776 16L45 2183 1878 1733 2380 2050 1903
+Difference, °F 81 TL 63 39 3k 33. 48 35 38 26 25 25
+
+ 
+
+8Heat generation rate = 13.3 Btu/(hr-ft length of tube),
+
+135 Btu/(hr-ft® of outside tube surface).
+
+Peat exchangers in infinite, "black" surroundings at 1000°F.
+
+CBmissivity of outer surface of outer shell = 0.8.
+
+62
+ 
+
+ 
+
+30
+
+A11 the preceding figures which show temperature profiles indicate
+one thing in common; namely, as in calorimeters and similar devices, the
+continuous intermediate shell, with low emissivity, is an efficient bar-
+rier to radiative heat transfer and is a large factor in producing higher
+internal temperatures. The reduction in peek temperatures effected by
+eliminating one of these two shells was determined by calculations made
+for the same group of exchangers with the outer, 1/2- in.-thick shell re-
+moved. Table U4 provides a comparison of the peak steady-state tempera-
+tures in exchangers of this type designed with one and two shells external
+to the tube bundle and at the heat rate expected at 10* sec after shut-
+down. Figure 19 shows curves of the data in Table 4 which have been
+extrapolated to include estimated peak steady-state temperatures in the
+563-Mw exchanger.
+
+Interest was expressed in the reduction of temperature attained by
+increasing the apparent emissivity of all surfaces of the outer and
+intermediate shells. A possible method would be to add fins or a gridwork
+so that these surfaces take the appearance of a continuous sheet of black
+body cavities. No effort was spent investigating the feasibility of this
+idea, but temperature profiles in a 281-Mw exchanger were calculated as
+if all the surfaces of the intermediate and outer shells, internal and
+external, had an emissivity of 0.8. A value of 0.2 for emissivity of the
+inner shell and tube surfaces was selected. No allowance was. made for
+the increases in shell diameters required. The results, calculated by
+using Type 1 heat generation at the rate expected at 10* sec after
+shutdown, are on Fig. 20. The temperature reductions so obtained are
+appreciable.
+
+Table 5 gives a comparison of maximum temperature in a 281-Mw
+exchanger for four different cases described in the preceding paragraphs.
+
+The effect of internal emissivity on peak temperature is implicit
+in many of the preceding figures. Figure 21 shows, explicitly, the
+influence of emissivity on peak temperatures in the 9U-Mw unit. It is
+apparent that we will get a worthwhile improvement in afterheat rejection
+by this heat exchanger if the emissivity of the Hastelloy N surfaces,
+after exposure to molten salts, is 0.3 rather than 0.1. It is also
+apparent that. increasing the emissivity above 0.3 produces little additional
+benefit. :
+
+The transfer of radiant energy from surfaces far inside the exchanger
+will be strongly dependent on the combined effects, not separable, of
+internal geometry and emissivity. At low values of emissivity (high re-
+flectivity) a photon will have a higher probability of traveling farther
+from its point of origin via multiple reflections through the tube bundle
+before being absorbed. The surfaces will also be at a somewhat higher
+temperature if they are radiating at a rate which maintains temperatures
+constant at a constant afterheat generation rate. These are offsetting
+trends, but the fourth power effect of temperature on heat transfer sug-
+gests that higher emissivities may produce only fringe benefits in open
+tube lattices. The quantitive extension of data from Fig. 21 to other
+geometries is not recommended since this figure does not provide the
+interrelation between geometry and emissivity.
+ 
+
+ 
+
+31
+
+Table 4, Afterheat Temperature Reductions Attained by Removing the Outer
+Shell from Empty MSBR Type Heat Exchangers
+
+External surface emissivity = 0.8.
+Heat exchanger in infinite, "black"
+surroundings at 1000°F.
+
+ 
+
+Maximum Steady-State Temperatures Computed at Heat Generation
+Rate® Equivalent to 40% of the Noble-Metal Afterheat 10% Sec
+
+ 
+
+ 
+
+Heat No. of Emissivity After Reactor Shutdown
+Exchanger Tube of Internal
+Rating Circles Surfaces Reference Design Reference Design With
+(see Fig. 1) Outer Shell Omitted Difference
+94 Mw 12 0.1 1995 1631 . 364
+0.2 1706 1470 236
+0.3 1577 1406 17
+U1 Mw 15 0.1 2111 1731 380
+0.2 1810 1566 2uy
+0.3 1678 1501 177
+188 Mw 17 0.1 2231 1822 hog
+0.2 1913 1646 267
+0.3 1mm 1576 195
+281 Mw 22 0.1 2406 1973 433
+0.2 2075 179% 281
+0.3 1928 1723 205
+563 Mw 31 0.1 27050 23650 3uaP
+0.2 2336) 21650 i
+0.3 2162 2075
+563 Mw 26 0.1 21697 222 3
+0.2 zee on 2
+0.3 13k
+563 Mw 2k 0.1 216
+0.2 2 i” he
+0.3 2057 1900 Sp
+563 Mw 22 0.1 25h) 2099 442
+0.2 2191 1920 271
+0.3 2035 1850 185
+563 Mw 20 0.1 2495 2020 ks
+0.2 © 21h 1830 314
+0.3 1987 1755 } 232
+563 Mw 17 0.1 2hol 1936 468
+0.2 2059 1747 312
+0.3 11903 1672 231
+
+ 
+
+Bat 10* sec heat generation rate = 13.3 Btu/nr - 135 —Btufhr
+
+£t® tube surface
+and is Type 1 generation.
+
+PIndicates temperatures obtained by extrapolation.
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+Peak Temperature - °F
+
+Fig.
+
+ 
+
+19.
+
+32
+
+ORNL. DWG. T1-580
+
+One Shell
+
+100 200 300 Loo 500 600
+Heat Exchanger Rating - Mw
+
+Meximum Internal Steady-Stete Temperatures in Single-Region MSER Heat
+Exchangers with One end Two Shells Outside the Tube Bundle.
+
+Elepsed Time After Shutdown ~-- 10* sec = 2.8 hr.
+Afterhest Rate --- 134 Btu/hr-ft2 Tube Surface = 13.3 pL .
+
+Emigsivity of Internsl Surfaces --- 0.1 to 0.3 as noted.
+Emissivity of Outer Surface --- 0.8.
+Surroundings --- Infinite, "black," at 1000°F.
+ 
+
+33
+
+. ORNL DWG. T1581
+
+Intermediate
+Shell Outer
+
+3000
+
+2500
+
+500
+
+ 
+
+0 5 0 15 20 2 30
+: -Radius « Inches
+
+Fig. 20. Temperature Profiles in a 281-Mw MSBER Heat Exchanger Showing the
+Effect of Increasing the Emissivity of the Internal Surfaces of the
+Outer and Intermediate Shells.
+
+Heat Production: 36,800 Btu/hr-ft height, at 10*sec after shutdown.
+Heat Transfer: By radiation only.
+Environment: Infinite, "black" at 1000°F.
+
+Cese A Case B
+
+a) Emissivity of inner shell ‘and tubes 0.2 0.2
+b) Emissivity of intermediate shell surfaces 0.2 0.8
+c) Emissivity of inner surface, outer shell 0.2 0.8
+(4) Emissivity of outer surface, outer shell 0.8 0.8
+ 
+
+ 
+
+3k
+
+Table 5. The Effect of the Outer Shells on Maximum Steady-State
+Afterheat Temperatures in an Empty 281-Mw MSER Heat Exchanger
+
+A comparison of four cases at 10* sec.
+
+ 
+
+Reduction in Maximum Internal Steady-
+Maximum Tempera- = State Temperature Calcu-
+
+ 
+
+Cases ture Referred to lated for Heat Rate at
+: "Reference 10% Sec (2.8 Hr) After
+Design" Reactor Shutdown
+1. "Reference design" per | 2075°F
+
+Fig. 1. All internal
+surfaces exposed to
+primary and secondary
+salts have an emissivity
+of 0.2. Type 1 heat
+distribution.
+
+2. "Reference design," with 25°F 2050°F
+Type 2 heat distribution
+which takes into account
+gamma energy distribution.
+All other conditions as in
+in Case 1 (above).
+
+3. "Reference design" with 281°F 179L°F
+outer shell removed.
+All other conditions as
+in Case 1 (above).
+
+L. "Reference design" in 381°F 1694°F
+which emissivity of all
+surfaces of outer and
+intermediate shells is
+0.8. Emissivity of tube
+and inner shell surfaces
+is 0.2. Type 1 heat
+distribution.
+
+ 
+
+®Total afterheat load in exchanger (Type 1 distribution) = 8.1 x 10°
+Btu/hr at 10* sec after shutdown. Equivalent to:
+
+(1) 3.68 X 100 tlle ; (2) 135 Btu/hr
+
+£t® tube surface
+
+Btu/hr
+(3) 13.3 FT tube
+ 
+
+Maximum Temperature - °F
+
+35
+
+ORNL DWG. 71-582
+
+@ 10° sec”
+
+6 10* sec
+
+Temp. of "black"
+surroundings
+
+ 
+
+0 0.1 0.2 0.3 0.4 0.5 0.6
+Emissivity of Internal Surfaces
+
+Fig. 21. Effect of Internal Surface Emissivity on Peak Steady State
+Temperatures in a 94~Mw MSBR "Reference Design" Type Heat
+Exchanger (see Figs. 1 and 2).
+
+Type 1 Heat Generation:
+
+(a) At 10° sec -- 29,000 Btu/hr-ft height
+
+31.2 Btu/hr .
+
+ 
+
+ft of tube
+Btu/hr
+(vb) At 10* sec -- 12,300 Btu/hr-ft height = 13.3 / .
+: ft of tube
+Emissivity of outer surface, outer shell = 0.8
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+6
+
+The primary item of concern is peak temperature and its variation
+with heat exchanger size and the heat generation rate. Figures 22 to
+26, incl., show peak temperatures in the five sizes of exchangers listed
+in Fig. 2 and how these temperatures vary with the heat generation rate.
+The temperature profiles inside the exchangers will have the same general
+pattern as those shown on Figs. 8 to 11, incl., but with different grad-
+ients. As peak temperatures rise and/or as emissivity decreases, the
+radial gradients through the tube annuli will tend to flatten out.
+ 
+
+ 
+
+Temperature - °F
+
+ORNL DWG. T1-583
+
+Elapsed Time After Shutdown - Seconds
+3X108
+_ 108 3X10% 108 3x10* 10% 3X10% 108 10®
+
+ 
+
+10 2 3 4 8 8 7 8 9 10° 3 8 4 8 8
+
+Heat Generation Rate,d Btu/hr-rt3
+
+10°
+
+Fig. 22, Peak Steady-State Temperatures in a 94-Mw MSBR Heat Exchanger vs Heat Generation
+Rate and Emissivity of Internal Radieting Surfaces.
+
+(a) Heat transmission: By thermal radiation only.
+
+b) Emissivity of outer surface of outer shell: 0.8.
+
+¢) Surroundings: Infinite, "black" at 1000°F.
+
+ta Heat generation is Type 1 (all afterheat is generated in the tubes),
+e) Heat exchanger design and dimensions on Figs. 1 and 2.
+
+LE
+gu 3000
+
+Temperature -
+
+ 
+
+ 
+
+10
+
+plo
+
+Fig. 23.
+
+ORNL DWG. T1-58k
+
+Elapsed Time After Shutdown - Seconds
+3x10®
+
+3x10° 10% 3x10* 104 3x108 10® 10°
+
+ 
+
+. 5 6 7 8 9103 2 a 4 8
+Heat Generation Rate,d Btu/hr-£t?
+
+Peak Steady-State Temperatures in a 141-Mw MSER Heat Exchanger vs Heat Generation
+Rate and Emissivity of Internal Radiating Surfaces.
+
+a)
+b
+Cc
+
+a
+e),
+
+Heat transmission: By thermal radiation only.
+
+Emissivity of outer surface of outer shell: 0.8,
+
+Surroundings: Infinite, "black" at 1000°F.
+
+Heat generation is Type 1 (all efterheat is generated in the tubes).
+Heat exchanger design and dimensions on Figs. 1 and 2.
+
+108
+
+gE
+
+ 
+ 
+
+ORNL DWG. 71-585
+
+Elapsed Time After Shutdown - Seconds
+. 3x10%
+108 3x10% 10% 3x10* 10 3x10% 108 108
+
+ 
+
+10 3 3 4 5 se 7 8 93103 a 3. 8 8 108
+Heat Generation Rate,d Btu/hr-ft2
+
+Fig. 24h. Peak Steady-State Temperatures in a 188-Mwv MSER Heat Exchanger vs Heat Generation
+Rate and Emissivity of Internal Radiating Surfaces,
+
+(=) Heat transmission: By thermal radiation only.
+Fmissivity of outer surface of outer shell: 0.8.
+(ec) Surroundings: Infinite, "black" at 1000°F.
+(a) Heat generation is Type 1 (all afterheat is generated in the tubes).
+(e) Heat exchanger design and dimensions on Figs. 1 an? 2,
+
+6¢
+
+ 
+ 
+
+10°
+
+ORNL DWG, T1-586
+
+Elapsed Time After Shutdown « Seconds 3w108
+3x108 10% 3x10¢ 104 3x08 10° 100
+
+ 
+
+10 a
+
+Fig. 25.
+
+4 E 8 7 8 8 3102 2 3 . 5 6
+
+Heat Generation Rate,d Btu/hr-ft?
+
+Peak Steady-State Temperatures in a 281-Mw MSER Heat Exchanger vs Heat Generation
+Rate and Emissivity of Internal Rediating Surfaces,
+
+(a)
+
+(v
+e
+d
+e
+
+Heat transmission: By thermal radiation only.
+
+FEmissivity of outer surface of outer shell: 0.8.
+
+Surroundings: Infinite, "black" at 1000°F.
+
+Heat generation is Type 1 (all afterheat is generated in the tubes).
+Heat exchanger design and dimensions on Figs. 1 and 2.
+
+10°
+
+ 
+Temperature -
+
+g
+
+10
+
+10°
+
+Fig. 26.
+
+ORNL DWG. T1-58T
+Elapsed Time After Shutdown - Seconds 310°
+3x10® 10% 3x10* 10% 3x10° 102, 10°
+
+3 4 E 8 7 8 9109 2 a 4 .
+Heat Generation Rate,d Btu/hr-ft?
+
+Peak Steady-State Temperatures in a 563-Mw MSER Heat Exchanger vs Heat Generation
+Rete and Emissivity of Internal Radiating Surfaces,
+
+(a) Heat transmission: By thermal rediastion only.
+
+(b) Emissivity of outer surface of outer shell: 0.8.
+
+(¢) Surroundings: Infinite, "black" at 1000°F.
+
+4 Heat generation is Type 1 (all afterheat is generated in the tubes).
+e) Heat exchanger design and dimensions on Figs. 1 and 2,
+
+NOTE: These curves obtained by extrapolation.
+
+ 
+
+102
+
+4
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+43
+
+APPENDIX A
+COMPUTATIONAL MODEL AND ASSUMPTIONS GOVERNING
+
+THE COMPUTATIONS
+
+Geometry (see Figs. 1 and 2)
+
+All equations are written for infinite cylindrical geometry. Tube
+layout is assumed to be an annular array consisting of an integral number
+of concentric circles of tubes. Tube spacing (pitch) is: circumfer-
+ential pitch -- 0.750 in.; radial pitch -- 0.717 in. In terms of space
+or volume occupied by the tubing in the annulus, these tube spacings are
+equivalent to triangularly pitched tubes having P/D = 2.1.
+
+Physical Chargcteristics and Considerations
+
+The computationel model is based on five assumptions or postulates®
+involving the radiating surfaces and the energy radiated; these are:
+
+(1) We are dealing with a multi-surfaced enclosure in which it is
+possible to construct a heat balance for each surface in the enclosure.
+Each surface in the enclosure is considered to be isothermal. Since
+radial symmetry obtains, each circle of tubes was considered to be a
+single surface.
+
+(2) The surfaces of the enclosure are considered to be gray; i.e.,
+absorptivity, o, is equal ‘to emissivity, €, for all wave lengths of
+radiant energy and is uniform on any particular surface.
+
+(3) The distribution of emitted radiation follows Lambert's cosine
+law. Lambert's law is outlined in the next appendix.
+
+(4) The distribution of reflected radiation also follows Lambert's
+cosine law, (3) above; i.e., when a collimated beam or pencil of rays
+strikes the surface it is reflected diffusely.
+
+A consequence of (3) and (4) above is that, in considering the energy
+leaving an element of surface, no distinction is made between emitted and
+reflected radiation. The resulting heat transfer — temperature equations
+“are linear and tractable.
+
+(5) The radiation incident on any particular surface in the enclosure
+is uniformly distributed on that surface. This assumption is required if
+the isothermal and gray conditions per (1) and (2) above are met.
+
+It is generally recognized that these postulates are simplifying
+assumptions which may deviate, sometimes quite substantially, from the
+actual physical situation. They receive wide use because of the tractable
+mathematical expressions resulting from their use. In most cases and in
+spite of their deficiencies, equations derived from these general
+ 
+
+ 
+
+hy
+
+assumptions usually produce satisfactory engineering answers. Insofar
+as these heat exchanger calculations are concerned, we cannot justify or
+favor any other set of assumptions unless we have reliable experimental
+date which enable us to evaluate:
+
+(1) emissivity, its temperature dependence and the angular
+distribution of emitted radiation,
+
+(2) the degree to which reflected radiation is specular instead
+of diffuse and how specularity is affected by surface finish,
+surface composition, and immediately adjacent sub-surface
+structure, temperature, and exposure to molten salt.
+
+Even if we had these data the development of solvable equations would be
+a formidable problem and certainly, during the development of a design,
+not worthwhile from the standpoint of cost and time.
+
+We would, perhaps, consider a calculation in which tube surfaces
+are divided in two parts [see (5) above], the inner and outer half
+circles. This would have, as its only effect, increasing the number
+of equations by a factor of almost 2 but would not increase the complex-
+ity of the equations. Such a step would, as of now, require programming
+for one of our local computers; our remote time sharing facility would
+not have the necessary capacity.
+ 
+
+ 
+
+4s
+
+APPENDIX B
+DIRECTIONAL DISTRIBUTION OF RADIATION
+(Lambert's Law)
+Consider an elemental black surface, d s» radiating in accordance with
+
+Lembert's cosine law. The energy, dQ, emitted from dA, into the elemental
+solid angle dQ centered about the direction (8,6), Fig. Bl, may be expressed,
+
+dQ(g,8) = aQ(p) = I; dA ces B dQ . (B-1)
+
+I, is the rate of emission per unit elemental area, , of emitting sur-
+face, into a unit elemental solid angle around the normal, (g = 0), to da, .
+
+ 
+
+ 
+   
+
+Normal to
+dAg
+
+dAz at
+distance
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. Bl
+ 
+
+ 
+
+L6
+
+On & hemispherical surface of radius r, centered on dA, and in
+spherical coordinates
+
+r sin B 40 r dB
+dQ =
+
+ 
+
+= sin B d6 dp (B-2a)
+r
+
+and i
+aq(s) = I, dA cos B sin g d6 dB . (B-2b)
+
+The solid angle, dQ}, may also be specified in terms of another element
+of area and its location elsewhere in space; e.g., on Fig. BL
+
+ 
+
+dAg cos «
+a0 = —_— (B-2c)
+Tz
+end from (B-1)
+I dA, cos B dAg cos «
+aq(p) = —— = ; Co. (B-24d)
+Ta
+
+The total energy emitted by dA, is obtained by integrating (B-2v)
+over the hemisphere,
+
+en m2 |
+Q=1I an § § cos B sin B d6 dp (B-3a)
+°o oo
+
+Q=nI dn Btu/hr . (B-3b)
+The total energy emitted by dA, as a black body is
+
+Q = dA, oC 74 (B-k4)
+
+in which
+o = Stefan-Boltzmann constant
+= 1730 x 1073 Bu (experimental value)
+hr-ft2-°R*
+T = temperature, °R .
+k7
+Therefore, by equating (B-3b) and (B-4)
+
+.
+I, = el Btu/ft® -hr (B-5a)
+
+for black body emission; correspondingly, if Lambert's cosine law is
+extended to non-black surfaces having hemispherical total emissivity, €,
+
+€ og T*
+I(e) = —0— (B-5b)
+
+The fraction of the total energy emitted by dA; which is inter-
+cepted by dA is, from Eqs. (B-2d) and (B-3b),
+
+I, dA, cos B dA cos a.
+
+2
+Te
+
+ 
+
+ 
+
+F = (B-6a)
+df» dhe mI dh
+
+- dA; cos B cos a
+
+F =
+dA; — dag 2
+mry
+
+: (B-6b)
+
+This equation defines the view factor of one differential element, dA,
+radiating to another differential element, dig, with the proviso that
+dA; is radiating diffusely in accordance with Lambert's cosine law. It
+is the basis for the view factor determination discussed in the next
+appendix.
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ho
+
+APPENDIX C
+VIEW FACTORS*
+
+General Considerations
+
+ 
+
+1
+
+In an enclosure made up of two or more surfaces the view factor¥* for
+any particular surface, the reference surface, to any surface in the en-
+closure is defined as the fraction of the total radiant energy leaving
+the reference surface which is transmitted directly (no reflections) to
+the viewed surface; obviously then, this fraction is dependent on the
+geometrical configuration of the surfaces in the enclosure and on the
+directional distribution of the radiant energy leaving the reference
+surface. "View fraction" would, perhaps, be more accurate terminology.
+References 11 and 12 provide excellent material on this subject. In this
+report view factors are represented thus: F is the view factor of
+
+m-n
+surface m looking at surface n.
+
+It is not difficult to show'! that for surfaces, all composed of
+infinitely long parallel elements, the view factor, assuming diffuse
+radiation, from a strip of differential width to a neighboring surface
+is given by Fig. Cl.
+
+Surface Surface
+A
+
+     
+   
+
+Elements of surfaces
+A and B perpendicular
+to the plane of the
+paper are infinitely
+long and parallel.
+
+ 
+
+ 
+
+ 
+
+Normal
+/ to dA, o = 0°
+-o
+Tap += 05 (sin or, — sin ay) | (c-1)
+© Fig. Cl
+
+ 
+
+¥Also referred to as "configuration," "angle factor," "shape factor"
+in various texts and references.
+
+ 
+ 
+
+50
+
+This is the situation which obtains in MSER heat exchangers. Tubes
+and surfaces which see each other are separated at most by about 6 in.,
+and since they are about 250 in. long, the infinite length model is appro-
+priate. Note that concave surfaces see themselves and that view factors
+of surfaces to themselves must be included. The relation in Fig. Cl,
+evaluated graphically and integrated, was used to determine a majority of
+the view factors required by this analysis. The reciprocity relation
+
+Fon® "font (c-2)
+A = area of mth surface
+A, = area of nth surface
+
+was also used.
+
+View Factors, Tube to Adjacent Tube and Adjacent Plane
+
+ 
+
+The view factors for simple regular geometries can often be obtained
+analytically and several references (13 to 20 incl.) are good sources of
+view factor formulas for a variety of geometrical shapes and arrangements.
+In these MSBR exchangers the unobstructed view factors for a tube to an
+adjacent tube, Fig. C2, were determined from
+
+1/3 1/2
+Fr o17° |e - 1) -X + 2 - tan"? (x- 1) / )] (c-3)
+X = p/D.
+
+NOTE: In some references this
+Le P view factor is referenced to
+one-half the perimeter of tube
+I since only one-half of tube
+
+D I sees tube II. The value of
+/ a aE will be twice that
+
+ 
+
+ 
+
+I-III
+obtained from the above formula.
+
+ 
+
+Also, cos 1 (1/X) may be sub-
+
+I II stituted for the tan! term
+in some formulas. The tan?!
+term is better adapted for
+some computers.
+
+Fig. C2
+ 
+
+ 
+
+ 
+
+ 
+
+51
+
+Each tube sees adjacent tubes on either side in the same row; there-
+fore, the view factor of a tube row to itself where a tube row is con-
+sidered to be ‘a single surface, n, in an infinite planar array is
+
+5 -n 2F ube - adjacent tube (c 1)
+
+0.154 for P/D = 2.1.
+
+At the boundaries where the tubes see a continuous plane surface,
+the view factor of an infinite row of tubes to an infinite plane is
+determined thus:
+
+1. Consider an infinite row of tubes bounded on either side by
+parallel, infinite planes, Fig. C3.
+
+ORNL DWG. T1-588
+
+LLL LLLLLLLLLLLL ILI LIL LLL LLL LLLL SLL 2717)
+“ P
+
+Dy
+NY,
+
+HITITTT7 7777777 777777777777777777777777777777
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. C3
+
+2. Since the total view factor for the tube row is 1.00, we can
+
+write
+Fo. n + oF, —~ plane = 1.00 (c-52)
+and.
+1.00 —-F_ _ _
+LI plane ~ 2 (c-5v)
+
+0.423 for P/D = 2.1.
+
+3. The view factor for a plane to the tubes is derived from the
+generally applicable reciprocity relation, :
+ 
+
+52
+
+< .
+Fp1ane -n" =. - plane | & plane (C-6)
+
+0.630 for P/D = 2.1.
+
+View Factors, Tube to Non-Adjacent Tube and Non-Adjacent Plane
+
+View factors from a tube or from an inner or outer shell which sees
+only portions of neighboring tubes through the gap(s) between tubes were
+determined graphically as illustrated by the next diagram, Fig. Chk, and
+the procedure which follows.
+
+ORNL DWG. T1-589
+
+© 0 ©
+
+ 
+
+Fig. C4. Graphic Integration of Tube-to-Tube View Factors
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+( ’ b
+
+53
+
+Procedure for Calculating View Factors
+
+1.
+
+On a large-scale layout, determine graphically the arc, MN, the part
+of the periphery of the reference tube (1C) which sees the viewed
+tube, 3R2. MN is defined by MP tangent to 2R2 and NQ tangent to
+3R2. :
+
+Subdivide MF into incremental arcs, My, Mg, - -. - 2h.. The
+number of subdivisions is a matter of judgment. Increasing the
+number of subdivisions. increases both accuracy and labor. For these
+
+computations the a8, were typically 10° arcs.
+
+Determine the limits of view of each incremental arc on 1C to viewed
+tube 3R2. On the diagram these view limits of AA; are denoted by
+
+“lines OX and OY, making angles oq and oz with the normal to BA, .
+The average view factor of the element of surface represented “by
+
+arc BA) seeing 3R2 is given by
+
+Tm, - 3R2 = 1/2 (sin a = =p os); .
+
+The view factor of the surface. represented by arc Mis the simple
+integrated average of the view factors of the incremental arcs:
+
+ 
+
+a
+LB) pe)
+C11
+ - 3R2. © J (C-Te)
+—
+| ) B®,
+i=1
+and if all BA, are equal, this is reduced to
+J
+1
+FR -3re =F ) ER, ~ 382 . (c-Tv)
+| 1=1 |
+
+The view factor of tube 1C, referred to its total surface, looking
+at tube surface 3R2 (or 4Ll, 4Rl, or 2R3, etc.) is
+
+Co
+i =
+Fica3m~"3%0 *F Mm -3me (C-Te)
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+5h
+
+This procedure is repeated to get the view factors from tube 1C to
+the other tubes seen differently by 1C until a catalog of view factors
+to all tubes seen by tube: -1C is complete. Because infinite geometry
+in all directions has been assumed, the sum of the view factors of
+tube 1C to all the tubes it sees in Row 2 is also the view factor of
+the surface represented by all tubes in Row 1 to all tubes in Row 2.
+
+As noted in Section III and Fig. 2, the assumed tube spacing with
+0.750 in. and 0.717 in. circular and radial pitch, respectively, is equiv-
+alent, in terms of space occupied by the tubes, to triangularly pitched
+tubes having a pitch/diameter ratio of 2.1. Specifying an actual detailed
+tube sheet layout is beyond the proper scope of this investigation as it
+will depend on accepted fabrication practices, designers' preferences, the
+vendor's machine tools, etc. Also, it would be folly to believe that,
+regardless of tube sheet layout, 3/8-in.-diam tubes over 20 ft long will
+exactly reproduce the tube sheet layout at the midplane. We can only
+depend on the average tube density in the tube annulus. Since, from
+symmetry, each tube in any particular circle was assumed to be at the
+same temperature, each circle of tubes was considered to be a single
+surface (see Appendix A).
+
+Ideally, view factors for each tube circle would be determined by
+a careful computation, and tube circle curvature would be taken into
+account. Nearly as good results would be obtained by getting view factors
+at several radii and interpolating. Either of these methods requires a
+tremendous expenditure of routine labor in graphic computations and piece-
+meal integrations -- awesome to contemplate and wholly impracticable.
+Therefore, view factors were determined as if the tubes were in infinitely
+wide and deep slab geometry, triangularly pitched (/D = 2.1) and bounded
+on two faces by infinite planes. This reduced the labor involved to an
+acceptable minimum. The view factors so determined were then modified
+by considering the view factor akin to conductivity and using conduction
+equations as a basis for computing a correction coefficient which will
+make the slab array view factors apply to cylindrical geometry. -
+
+Consider, for example, the effect of tube circle curvature. In a
+simple enclosure consisting of two infinitely long concentric cylinders,
+it is immediately apparent that the view factor from the inner cylinder
+to the outer cylinder is 1. However, the concave inner surface of the
+outer cylinder sees itself across the annulus, and the view factor from
+the outer to inner annulus will be less than 1. This, of course, is
+
+also evident from the reciprocity relation, Fn -m A, =F on A.
+
+In these heat exchangers the ratios of the radii of tube circles which
+view one another are not sufficiently close to one to justify neglecting
+curvature by using a slab approximation.
+
+An infinite, triangularly pitched array is completely regular, and
+view factors for a tube or row of tubes to other tubes or rows may be
+used repetitively throughout the array. An infinite array of uniformly
+spaced concentric circles of tubes will not be completely regular. The
+small local deviations from uniform geometry are expected to average out
+and hence were not considered in the determination of the view factors.
+ 
+
+55
+
+It will become apparent, by considering the equations in subsequent
+Appendix E, that system geometry enters the temperature — heat transfer
+equations only via the view factors; i.e., the use of slab array view.
+factors would be equivalent to solving this heat exchanger transmission
+problem in infinite slab geometry. For thin annuli having ID/0D ratios
+close to 1, the substitution of slab for cylindrical geometry is probably
+of little consequence. The MSBR heat exchangers do not meet this con-
+dition. It is easily shown that, for conductive transfer with internal
+heat generation, the substitution of an infinite slab having the same
+thickness as the tube annulus may produce a large error. For example,
+the temperature-drop equations for the two cases are:2©
+
+ORNL DWG. 71-590
+
+Infinite
+Cylinder
+Infinite
+
+Slab J
+
+ 
+   
+ 
+
+ri
+
+lL
+
+AT Cylinder
+
+TF
+
+ 
+
+ 
+
+ 
+
+Sop = mr [2ral) + (#7 20% 205, (1 + (Vm)
+
+H = internal heat generation rate,
+Btu/hr
+- £18 2
+k = thermal conductivity, _Btu/hr .
+£t2-°F/rt
+ 
+
+ 
+
+56
+
+If we use the tube annulus dimensions, Fig. 2, of the MSBR 563-Mvw ex-
+changer in these equations, we get, for equal values of H and k:
+= 1.80 Ek .
+
+AT = 1.28 H/k; AT
+
+cyl slab
+
+The infinite slab equation, in this case, produces answers 40% higher
+(referred to the cylinder). Alternatively, if the conductivity of the
+slab material is increased by 40%, the temperature drops will be the
+same.
+
+It was decided--for two reasons: (1) intuition, and (2) the immedi-
+ate lack of a better proven approach--to use these conduction transfer
+equations to compute the correction coefficient spplied to the slab array
+view factors. If the conduction transfer Equations (C-8) and (C-9) are
+rearranged to give the relative values of conductivity in a slab and a
+hollow cylinder which, all else equal, provide equal temperature differ-
+entials, we can write
+
+2(ar)?
+
+. (c-10)
+ar, (ar) + (ar)° = 2r° log, (1+ =)
+
+ks1ab = Keyl
+
+The bracketed expression is the ratio of conductivities that must exist
+
+if an infinite slab of thickness Ar is to transfer its internally generated
+heat across the same temperature differential as in an infinite hollow
+cylinder of inner radius r and annular thickness Ar. Equal values of heat
+generation per unit volume are assumed.
+
+This expression in brackets is always positive and greater than 1
+(> 1) if Ar is taken as positive in the radially outward direction. It
+can be regarded as the correction factor, applied to conductivity, re-
+quired to make a slab geometry computation produce results applicable to
+a hollow cylinder.
+
+It is again emphasized that the temperature — radiant heat transfer
+equations do not contain explicit terms based on system geometry; i.e.,
+if the view factors in these equations are those of slab geometry, the
+results are correct for slab geometry. The view factors, for reasons
+noted in the preceding paragraphs, were obtained from a slab model and
+subsequent computations based on these view factors must be corrected so
+the results are applicable to hollow cylindrical geometry.
+
+View factors were regarded as analogous to conductivity and values
+obtained from the slab array calculations and graphics were corrected
+using a factor based on the bracketed term in Eq. (C-10). In detail,
+the corrections were made as follows:
+
++
+ 
+
+ 
+
+57
+
+Sle (ne) = view factor from any row of tubes, surface n, to
+another parallel row, the (n+k)th, where k = 1, 2,
+3, --- etc; or, from a bounding plane, n = 1, to a
+row of tubes.
+Fo (n+k) = view factor from the nth cylindrical surface (circle
+of tubes or a shell) to the (n+k)th surface; n = 1
+is assigned to the outer surface of the inner shell
+of the heat exchangers.
+r, = radius of nth surface.
+Or = difference in the radii of nth and (n+k)th surface.
+Ar is always positive since these corrections were
+applied by starting at the innermost radius where
+n= 1.
+=k Xx (radial tube pitch) = 0.717 k (see Fig. 2)
+A = grea of nth surface.
+Aj = area of (n+k)th surface.
+
+The view factors in the cylinder are:
+
+cyl slab oar)’
+
+La (nk) = Fo (n+k) (c-11)
+
+~
+
+ar, (ar) + (ar)*- or’ log, (+2)
+
+With this expression (C-11 , the corrected view factors were established
+starting with the innermost surface at the inner shell n=l), for all
+
+surfaces to other view surfaces located radially outward. Having
+established the radially outward view factors, the view factors from all
+surfaces to other surfaces located radially inward were then determined
+from the reciprocity relation, viz.:
+
+A
+cyl -_ ok (cyl
+Fe = (nk) = A Flnx) - 2) ’ (c-12)
+cyl - i
+because Flnx) -n has been determined from previous calculations per
+
+(c-11) above. -
+ 
+
+58
+
+The view factor for a surface to itself was now determined from
+the requirement that the sum of all view factors from any surface be
+1 (1.00).
+
+M
+
+1
+Fan =100=2F (n+k) 2) Fra (n=k) (c-13)
+k=1 k=1
+
+From the large-scale graphic layout of a planar or slab array of
+tubes, it was seen that, for this tube spacing (pitch/diam = 2.1), any
+tube in the array could barely see tubes beyond the 6th row distant;
+i.e., the view factor from a tube row to a row beyond the 6th row away
+was less than 0.01. This is of the same order as the accuracy of the
+graphics. Therefore, all radiation passing unobstructed beyond the 5th
+row was arbitrarily assumed to fall on the 6th row.
+
+An interesting sidelight developed out of the view factor determi-
+nations. Figure C5 is a semi-log plot of the view factor of a continuous
+boundary plane versus distance, in tube row spacings, into the triangu-
+larly pitched (p/D = 2.1) tube matrix. It seems that photon attenuation
+at least in this array, is exponential with distance. If, more generally,
+it turns out that photon attenuation in tube bundles is exponential, the
+use or development of analytical methods for transfer through continuous
+media might be worthwhile. There is a substantial body of analytical
+and experimental work on radiant transfer in absorbing and emitting gases.
+The relevant mathematics should apply if the descriptions of photon
+absorption or attenuation and emission in tube bundles and in gaseous
+media are similar. Neutron transport analyses may also be applicable
+since the photons undergo production (emission), absorption, and scatter-
+ing (reflection). Monte Carlo techniques have also been used successfully.
+ 
+
+ 
+
+59
+
+ORNL DWG. 71-591
+
+1.0
+Rediating
+Plane - P + ®
+0 6
+0.5 024 3 |
+050
+o
+058904
+095960
+0,010
+0.2 o 5200
+; 533888
+& 063 3
+a 0.1 OO
+‘ 0d
+075747
+e | | ot
+% 0.05 1 3 4 *°
+
+0.02
+
+0.01
+
+1 2 3 4 5
+~~ Tube Row Number « N
+
+Fig. C5. View Factors of a Diffusely Radiating, Infinite Plane to Parsllel,
+Triangularly Pitched; Infinitely Long Rows of Tubes.
+
+(Tube Pitch)/(Tube Diem) = 2.1.
+
+ 
+ 
+
+ 
+
+ 
+
+61
+
+APPENDIX D
+
+SHELL TEMPERATURES
+
+~
+
+Calculation of the steady-state temperature profiles through the
+outer and intermediate shells is a simple, straightforward procedure.
+It involves conduction transfer through the shells and radiative trans-
+fer in the simplest of geometries; between concentric, infinitely long
+concentric shells and from the outer shell to an infinite, "black" sink.
+This computation precedes the calculation of tube enclosure temperatures
+since it establishes the temperatures of the inner surface of the inter-
+mediate shell, the boundary value required to compute the tube enclosure
+temperatures. A detailed outline follows.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+$—— Ro ——
+| g— Rp ——]
+——e R, mer
+Fd Ry E3 = emissivity, outer
+] surface
+r rt
+——
+—_— Tos *R
+Sm
+— Ty, °R
+pf
+QR «~~
+Btu/hr _—
+ft ht —
+| Ta, °R
+—— IN Ta, *R
+o——e
+Patras)
+
+ 
+
+ 
+
+ 
+
+ 
+
+- Psd
+Intermediate A Outer NS \ of "black"
+
+Shell Shell infinite surroundings.
+Ay Ay, Ag, Aa = Surface areas of shells at radii R,, Ri, Rz, Ra respectively, ie
+o = Stefan-Boltzmann constant = 1730 x 10732, Btu/(hr-rt2-°R*)
+E, = Emissivity of surfaces A to A eo? incl.
+
+Fi = E/(1 +(Aa/Ag)(1 = .)), interchange factor for infinite
+/( (As/Az)( 0)» concentric cylinders. ’
+
+k = thermal conductivity, Btu/hr-ftoF.
+
+Tell temperatures were celculated with these equations and in the sequence
+ed.
+
+Ta = [(/asEse) + =
+
+Tz = Q (Ro = Re)/(0.5(Ae + As)k) + 1,
+na = [(/aarse) + 7]
+
+Ty = QBs = Ry) (0.5(A, + MIX) + 1,
+
+ 
+ 
+
+ 
+
+ 
+
+63
+
+APPENDIX E
+
+THE HEAT TRANSFER — TEMPERATURE EQUATIONS
+
+Several approaches®? to ‘calculating temperatures and radiated heat
+rates have been developed for systems in which it is assumed that the
+five postulates listed in Appendix A are valid. Regardless of how the
+problem is attacked, these various methods produce, in essence, the same
+final set of equations. The data reported herein were calculated using
+the "Radiosity Method"'® which, apparently, was introduced by Eckert and
+Drake. The development of the equations describing radiant interchange
+in multi-surface enclosures. follows.
+
+ 
+
+Le
+(1) Consider kth surface in an enclosure:
+of M total surfaces
+
+ 
+
+  
+
+"Radiosity" = total rmdiation from a surface
+
+Ka-2 o [ emitted reflected
+B = radiosity (reatereon) + (radiation
+’ 4
+\ kK-1 (12) By = Bole + of
+= 4 -
+(®) By =Bonts (1- BIR
+kth surface = total incident radiation on kth surface from all surfaces of
+9 the enclosure (includes radiation from kth surface to itself)
+Definition of Symbols 2) Mr rp el2 es 3 A po 5, Ay
+=F hw p + see kk + ves =F
+B = radiosity, Btu/br-ft® Bi" Ry Tie ‘2 Be ek
+2
+H = incident flux, Btu/hr-rt (3) By reciprocity, AF, . = AR
+
+A = area of kth surface
+
+Ty = temperature of kth surface, °R
+Frnt = view factor, the fraction of total radiation
+from the kth surface vhich goes directly to
+
+the ith surface
+
+ 
+
+(ba)
+E = emissivity
+Lo = heat energy, lost or gained, by the kth
+surface, Btu/hr, heat lost is positive (+). (bv)
+Q = heat energy per unit area, lost or gained,
+by the kth surface, Btu/hr-rt2
+a= absorptivity?
+p = reflectivity? 5)
+2
+o = Stefan-Boltzmarn const? = 1730 x 10°32, BEW/£t%
+hr-(°R)*
+1. For grey bodies (6)
+
+o=1-~p =F,
+
+2, Table IV, page 17h in ref. 11 gives two values for g, 1712 x 10732
+and 1730 x 107}3 for the calculated and experimental values,
+respectively.
+
+Fy % Tae 1=1,2, ...M
+
+Substituting the reciprocal expressions (3) nto (2)
+
+Be =F a Bt Fo Bt Prox Bet eee + Fg By + ooo F By
+
+or
+
+M
+5 = y Fo, B, for the kth surface
+1=1
+
+substituting (4b) in (Ib)
+
+} M
+“
+B = Eft + (1 ~B) YF By
+i=l
+Expanding the terms after the summation sign and rearranging
+
+BOS == BIR LE - (BIR,
+(1m OBR) am BIR
+
+79
+
+ 
+ 
+
+(m
+
+(8)
+
+(9a)
+
+(90)
+
+(9¢)
+
+(92)
+
+‘
+
+ 
+
+ 
+
+With thermal equilibrium established, a heat balance on the kth surface is written
+
+energy developed absorbed fraction of the
+total emitted | = | internal to the + radiant energy delivered
+radiant energy surface and which to the surface from other
+escapes from the surfaces in the enclosure
+surface
+‘.
+ABT = % + By a By
+. &
+ofl = i + Eyl
+4
+By = BeoTy
+From (1b), H = and substituting this in (7) and rearranging we can write
+
+ 
+
+(1-5)
+
+E
+
+meee (20) [aoa]
+
+ 
+
+Bot = (=)
+
+1~E
+
+Mt = Bt (a
+
+1 -
+
+=) a] Fe
+
+ 
+
+r= {3+ (
+
+59
+
+ 
+ 
+
+/
+Using Equation (9c) to eliminate Tx" trom (6), ve have
+
+l- l1~- | 1 ~-
+(10a) B+ (2) a= (52) hsm - (5) Feasts cers +E (= BIR vee =
+
+Oe
+(0b) =a =~ FeanPy ~ Feel er (1 =F g)Be = Frauke + 2 Bee 17 70 Fromt™
+
+Depending on whether surface temperature or surface heat transfer rate is known,
+
+either Equation (6) or (100) can be written for each surface of the enclosure.
+
+(1-8)
+x
+
+ 
+
+Pye By
+
+99
+
+ 
+ 
+
+(11a)
+
+k=¥M;
+
+ 
+
+At the risk of stating the obvious we must be able to prescribe at least one surface
+temperature. When applied to MSBR heat exchangers we use these radiosity equations
+as follows:
+
+(a) The innermost surface, (k = 1), q, = O in Equation (10b) if it is assumed that there is
+no heat generation in the inner shell (Type 1).
+
+(b) Tube circles, k = 2 to M — 1, incl,, q, in Equation (10b), is specified from noble metal afterheat data.
+(c) Intermediate shell, k = M; T, in Equation (6) 1s established from previous computations of the
+temperature gradients required to transfer the total afterheat generated within the heat
+exchanger from the inner surface of the intermediate shell to the outside world.
+
+These equations in which radiosity, By, is the varieble are written thus
+
+(1- FoaB ~ Fo oB Fy 383 - vee - Fes? - cress = FPy =0 See (a)
+“Fo Bt (1-F, ,)B, - Fpe3By - Foy, ov FpwyBy - cer Fp By "0
+© . . . . See (b)
+- Fy1 B ~Fy 8 =Fy 383 = cree + (1+ Fysy)By - “Fiafn =
+
+.
+. . . .
+»
+
+-(a- By a - (1-E)Fy LB, = (1=By)Fy Bs = oe. : + (1-(1-E FP, Bx = End
+
+a. For Type 2 heat generation, in which the gamma heat generation rate in the inner shell is considered, the 1st equation is not
+set equal to zero, Qe 1s then the heat generation rate in the inner shell per unit outer surface area of the inner heat exchanger shell,
+
+b. For uniform heat generation rate in the tube annulus, qz = q3 = .... q go = Gy -
+
+c. Note that the cylindrical geometry is not explicit in these equations; it is implied by the view factors.
+
+ 
+
+Lo
+ 
+
+In matrix format, suitable for machine computation, these equations (1la) are written:
+
+—
+C1 €,2 1,3 se0cscecsnsvecns Cy, m1
+2,1 Co,2 C2,3 Cou sresse Co, M-1
+(1p) Cp,1 Cpp weseeeesenrennanennsCy g veneennniCy yy
+Cua Cn 2 IER ENN ERR)
+le
+
+ 
+
+For surfaces having a known or prescribed rate of heat transfer:
+
+Chg = = Fors 3 3Fn
+
+Cay = (1-7, 4 - 1-7, 3 J=n
+Ra =
+For surfaces having a known or prescribed temperature:
+3
+
+0,3 = (Q-E)F,
+
+-=J
+
+Cog” 1-1-8) Frwy = 1-(1-E)F
+
+J-»J
+
+.
+Ry,1 = Bly
+
+The radiosities, B,, are computed and surface temperatures, T,, obtained from Equation (sa).
+
+a “
+
+1,M
+
+Co,u
+
+J,M
+
+TM
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+89
+
+ 
+ 
+
+ 
+
+69
+
+APPENDIX F
+
+COMPUTATIONAL PROCEDURE
+
+Calculations were made in sequence as follows:
+1. View factors were determined as outlined in Appendix C.
+
+2. Temperature profiles in the outer and intermediate
+shells were calculated as outlined in Appendix D.
+The temperatures at the inner surface of the inter-
+mediate shell are the boundary values, Typ used in
+Eqs. (1lc) in Appendix E.
+
+3. Having established the view factors, boundary values
+for temperstures, and heat rates, Eqs. (llc) in
+Appendix E were solved for tube circle and inner
+shell temperatures.
+
+The computations were made using Extended Basic (BII) programs with
+the Reactor Division's time-sharing computer facility. Several programs
+were written for the various aspects of the problem. It has been this
+author's experience that the inclusion of computer program lists without
+copious explanatory notes and instructions is wasted effort. Should a
+need develop, the programs will be reported separately.
++
+
+=
+
+TL
+
+APPENDIX G
+
+THERMAL RADIATION CHARACTERISTICS OF HASTELIOY N
+
+ 
+
+The emissivity of Hastelloy N (INOR 8) is reported in reference 27.
+These data suggest that, for clean, unoxidized surfaces, we use an emis-
+sivity of 0.2 and, for oxidized surfaces, an emissivity of 0.5 or 0.6.
+
+The author did not become aware of reference 27 until this report
+was virtually completed. The remainder of this appendix is the result
+of my attempts to infer a value of emissivity from measurements on alloys
+composed of similar elements. Although the data and references which
+follow are not directly applicable, they are included since they may be
+relevant and useful to persons dealing with similar problems.
+
+There is considerable data on alloys containing nickel, iron, molyb-
+denum, and chromium. Table Gl lists values of emissivity for metals of
+this general composition. In general, the numerical values of emissivity
+for smooth, clean, unoxidized surfaces at temperatures in the region
+1200°F-2000°F are from 0.1 to 0.3. In the absence of better information,
+similar values were assumed for Hastelloy N. Therefore, the temperature
+calculations were made for internal emissivities of 0.1, 0.2, and 0.3.
+
+In general, the data indicate, and theory substantiates, that emissivity
+increased with increasing temperature. This change is not large; within
+the temperature differences calculated in the tube annuli, it will be of
+the same order as the uncertainty in the value of the emissivity. No
+attempt was made to include a mild temperature dependence of emissivity
+in the temperature — heat transfer equations. These equations, linear
+with T™ as the unknown, are easily solved by standard routine programs.
+We are dealing with conceptual designs, subject to change, and a physical
+system containing uncertainties other than emissivity. The incremental
+elegance of solution and the resulting improvement in accuracy are insuf-
+ficient to justify the very appreciable increase in cost and time re-
+quired to develop or adapt a program which allows the use of temperature-
+dependent emissivity in the system of equations.
+
+In connection with the data from reference 22 in Table Gl, it is
+appropriate to point out that this report, NASA CR 1431, outlines a program
+now apparently under way at Purdue University to collect, evaluate, and
+present radiative properties data from all available sources. When suf-
+ficient evidence exists concerning a particular property of a particular
+material, such as the emissivity of stainless steel, broad band curves of
+"recommended" values are presented which enable the reader to get a
+general feeling for the tolerances or variations to be expected and the
+circumstances in which the "recommended" values are applicable. These data
+tend to develop more confidence in the user than anything this writer has
+seen heretofore in the readily available texts and references.
+
+It has been pointed out that by assuming gray, diffuse conditions,
+no distinction is made between emitted and reflected radiation; both are
+assumed to have directional properties in accordance with Lambert's cosine
+law. There is evidence that, whereas the pattern of emitted radiation may
+
+ 
+
+ 
+ 
+
+Table Gl. Enissivities of Molybdenum, Kickel, Chromium, and Various Alloys Containing These Elements
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+| . Type? of
+| : Condition Emittance
+! Material and/or Measure- Emissivities and Corresponding Enissivities at
+Treatment ment Temperatures and/or Wavelengths 1200°F 2000°F Kotes Source
+I. Molybdenum A. Polished HTE Linear variation from 0.075%0.02 0.110£0.02 0.19040.02 Based on 7 references. Data Ref, (22)
+at 600°F to 0.25010.02 at 3500°F. is apparently consistent with NASA CR 1431, p. 26
+. uniform scatter.
+B. Grit blasted HTE 0.28£0.05 at 1340°F; 0.30 a 0,260.05 ~0, 32% Based on 2 references. Ret, (22)
+1700°F. . NASA CR 1431, p. 26
+C. Shot blasted HIE 0.22 at 1000°F to 0.40 at 2700°F. 0.25 0.38 Based on 1 reference. Ref, (22)
+and etched : RASA CR 1431, p. 26
+D. Etched and HITE 0.25 at 1340°F to 0.40 et 2700°F. 0.125% 0.275 Baged on 1 reference. Ret. (22)
+flashed NASA CR 1431, p. 26
+Besed on 1 reference, ]
+E, Stably oxidized. HITE Approximately 0.82 at TOO°F. -— ~~ Curve sheet states that oxide Ref, (22) .
+is volatile in a vacuum above NASA CR 1431, p. 26
+1000°F (811°K).
+II. Stainless steels, A, Cleaned RTE 0.30+0.09 at 600°F; 0.35:0.09 0.35 Appears to be based on at Ref, (22)
+cleaned at 1000°F; 0.41:0.09 at 13L0°F; least 13 references. NASA CR 1431, p. bU4~
+0.56+0.11 at 1700°F.
+B. N-155, as received NIE linear variation from 0.10 at 0.16 - Based on 4 references. No- Rer, (22)
+or cleaned . 350°F to 0.15 at 1160°F rising tation on curve sheet at NASA CR 1431, p. 44
+nonlinearly to 0.3 at 1580°F nonlinear portion of curve
+(see Note), reads "Oxidation Probable,”
+C. As folled, clesped NTE 0.47 at 600°F; 0.5 at 1160°F. a - Based on 1 reference, Ref, (22)
+NASA CR 1431, p. 4b
+II. Stainless steels, A. Oxidized in air at NIE © 0.15:0.06 at 260°F; 0.25+0.07 0.3240.07 0.4T* Based on 6 references. Ref. (22)
+oxidized red heat for 30 min. at 800°F; 0.29:0.07 at 1000°F; FASA CR 1431, p. 45
+0.35$0.07 at 1340°F; 0.41 at
+1700°F; essentially linear vari-
+ation from 440°F to 1T00°F.
+B. Buffed, stably NTE 0.40 at 620°F; 0.52 at 1000°F; 0.46 ~~ Based on 1 reference, . Retr, (22)
+oxidized st 1112°F 0.50 at 1340°F. NASA CR 1431, p. 45
+(873°K).
+C. Shot blasted, 0.64 et 800°F; 0.67 et 1160°F; 0.67 -- Based on 1 reference, Ref. (22)
+stably oxidized at 0.70 at 1340°F. NASA CR 1431, p. b5
+1112°F (873°K).
+D., Polished end oxi- NIE 0.67£0,02 at 980°F; 0.70:0.03 © 0.69:0.03  0.8130.06 Based on at least § refer- Ref, (22)
+daized at high at 1340°F; 0.7520.05 at 1700°F; ences (probably 7). NASA CR 1431, p. U5
+temperature. 0.8210.06 at 2060°F.
+E. As rolled, stably NIE 0.77 at TOO°F; 0.8 at 980°F; 0.83 -- ‘Based on 1 reference. Ref, (22)
+oxidized at 1112°F 0.85 at 1340°F; 0.87 at 1450°F. RASA CR 1431, p. U5
+(873°).
+F. Stably oxidized NTE 0.83t0.05 et TOO°F; 0.86+0,05 0.88+0.05 ~~ Based on 3 references. Ret. (22)
+at high tempera- at 980°F; 0.90.04 at 1340°F. NASA CR 1431, p. b5
+ture, .
+I o-oo. III. Stainless steels, A. N-155, polished _ __ NTE___ _0.1 at 620°F; 0.13.at 980°F; . ..._0.16 ._ _._ 0.28% __ Based on .3 references... Data Ref. (20) _ ____  _ _
+: polished (oxtdation re- 0.16 at 1340°F; 0.23%0.03 indicates scatter above NASA CR 1431, p. 46
+tarded). : at 1700°F. . 1340°F, -
+B. Various polished RTE 0.17:0.04 at 260°F; 0.19:0.04 0.28+0.06 -- Based on 9 references. The Rer, (22) }
+stainless steels at 620°F; 0.21:0.04 at 800°F; curve rises rapidly at high NASA CR 1431, p. 46
+(oxidation re- 0.23t0.0k at 980°F; 0.33:0.07 temperature and carries no-
+tarded). at 1340°F; 0.43%0,10 at 1520°F; tation "Oxidation Probable,”
+0.56£0.11 at 1TO0°F (see Note).
+IV. Inconel A. As received Not Constant at 0.25 from 300°F to 0.25 - Ret. (23)
+stated  1200°F. |
+B. As received and Fot 0.55 at HOOF to 0.53 at 1100°F. 0.53% -
+oxidized at 1200°F stated Linear variation.
+for 48 hours.
+C. Polished Rot 0.12 at 300°F to 0.20 at TOOF. 0.30% -—
+stated Linear variation.
+D. Polished and oxi- Not 0.27 at 500°F to 0.30 at 1100°F. 0.31% --
+dized at 1200°F stated Linear variation.
+for 48 hours.
+V. Inconel X A. As received Fot 0.27 at 300°F to 0.23 at 1100°F. 0.23% - Ref. (23)
+stated Linear variation.
+B. As received and Rot Constant at 0.38 from 300°F to 0.38% --
+oxidized at stated  1100°F,
+1200°F
+C. Polished Fot 0.18 at 300°F to 0.17 at 1100°F.  O.1T* --
+stated
+D. Polished and Not 0.29 at 300°F to 0.35 at 1100°F. 0.35% -- ~N
+oxidized at 1200°F stated Linear variation, .
+for 48 hours.
+VI. Monel A. As received Kot 0.10 at 200°F to 0.31 at 1100°F.  0.31* -- Rez. (23)
+| pane stated Linear variation.
+B. As received and Kot 0.50 at 200°F to 0.72 at 1100°F.  0.T5% -- : —
+oxidized at 1200°F stated Linear variation.
+for 48 hours
+C. Polished and oxt- Kot 0.65 at LOOF to 0.57 at 1100°F. 0.56% --
+daized at 1200°F stated Linear variation.
+for 48 hours.
+VII. Rickel Polished TE 0.07 at 300°F to 0.16 at 2000°F. 0.11 0.16 Rer, (24)
+: Nearly linear variation.
+VIII. Chromium Polished TE 0.05 at 300°F to 0.46 st 1800°F. 0.26 - Ref. (24)
+Linear variation.
+IEE .- Hemispherical Total Emittance, |
+
+NTE «= Normsl Total Fuittance.
+TE -- Total Emittance.
+
+#Extrapolated by suthor of this report.
+ 
+
+ 
+
+*)
+
+73
+
+be well approximated by the cosine law, reflected radiation from the
+
+same surface can be highly specular, particularly when very smooth or
+polished surfaces predominate. Intuitively, this is reasonable. No
+attempt was made to estimate or evaluate the effect of a strong specular
+component on temperatures developed in these heat exchangers. Any effect
+of specularity would be more apparent at low emissivities when the energy
+content of the total radiation leaving a surface contains the largest
+fraction of reflected radiation. The literature contains comparisons of
+computations based on diffuse vs specular radiation emanated by relatively
+simple, regular cavity configurations such as continuous rectangular and
+V-shaped grooves, cylindrical and conical cavities, and spherical cavi-
+ties. The data are presented by plotting curves of apparent emissivity,
+
+“which is a measure of overall heat transfer capability of the cavity, as
+
+a function of cavity depth-to-opening ratio (1/R for a cylindrical
+cavity). Actual emissivity is a parameter. The effect of specularity
+
+is to increase the gpparent emissivity and the effect is most pronounced
+
+in deep cavities of low emissivity. For example, reference 12, Fig. 6.2,
+p. 165, shows calculated curves of apparent emissivity of cylindrical
+cavities having depth to radius ratios, I/R, from zero to 10. The data
+in Table G2 have been taken from this figure.
+
+Table G2
+
+ 
+
+Calculated Apparent
+
+ 
+
+ 
+
+Actual ~ Emissivities
+Emissivity ——
+of Cavity I/R Diffusely Specularly
+
+Surface Reflecting Reflecting
+0.1 2 0.3h 0.34
+0.1 6 0.48 0.59
+0.1 10 0.k9 0.72
+0.2 2 0.53 0.56
+0.2 6 0.63 0.79
+0.2 10 0.63 0.88
+0.3 2 0.66 0.70
+0.3 6 0.72 0.83
+0.3 10 0.72 0.94
+
+ 
+ 
+
+ 
+
+ 
+
+Th
+
+The degree to which the internal surfaces, tubes mainly, reflect
+specularly deserves consideration. Certainly the spaces between the
+tubes are not unlike deep cavities. If specular reflections will take
+place in the heat exchangers, it is reasonable to conclude that the
+diffuse calculations reported here give higher temperatures and may be
+regarded as conservative.
+
+Li]
+ 
+
+ 
+
+rn
+
+[PF]
+
+APPENDIX H
+
+COMPARISON - EXPERIMENTS AND ANALYSES
+
+ 
+
+The calculated temperatures reported herein are not presented en-
+tirely unsupported by experimental verification. In November 1965,
+temperatures in a 9l-rod bundle of 0.5-in.-diameter straight stainless
+steel tubular electrical heaters were reported.®® Figure Hl is a photo-
+graph of a somewhat similar heater assembly. Figure H2 shows the
+essentials of the test setup. The information required to do tempera-
+ture calculations follows.
+
+A. System Configuration
+
+ 
+
+1.
+2.
+3.
+
+an
+
+See Fig. H2
+
+Rod pitch/diem = 1.25.
+
+Rod diam --- 0.5 in.
+
+Rod surface area --- 0.131 £t2/ft length.
+
+Heated length of rod --- 10 in. = 0.83 ft.
+
+Rod array --- concentric, hexagonal rings formed by triangu-
+
+larly pitched tubes. The single, central tube is considered
+to be ring No. 1.
+
+B. Thermal Conditions
+
+1.
+
+Heat input --- = 22.4 w/rod
+= 91.7 Btu/hr-ft length of rod
+= T00 Btu/hr-ft? rod surface
+= 6780 Btu/hr for 90 active rods
+(1 rod not heated)
+Environment
+
+(2) Tube bundle housing evacuated to a pressure of < 3 microns
+of mercury. :
+
+(vb) Housing in laboratory atmosphere, protected from drafts.
+Emissivities
+
+No measurements were made of emissivity of the tube sur-
+faces or the internal surface of the housing. Based on the
+several-year-old recollection of a person somewhat familiar
+with the- experiment, it can only be concluded that the stain-
+less steel surfaces were neither new, bright and polished, nor
+were they heavily and deeply oxidized. Between these extremes,
+emissivities from 0.2 to 0.7 are possible and values from 0.3
+to 0.5 are likely. Tube surfaces displayed a dull, satiny
+gloss typical of stainless steel after long immersion in a
+high-temperature liquid metal (NaK, K, Na, etc.).
+ 
+
+76
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Array of 91 Heater Rods Having Similar
+Geometry to Rod Bundle Shown on Fig.
+
+H.
+
+Fig.
+
+Bo.
+
+bi
+ 
+
+Temperature - 7
+
+ 
+
+1500
+TOP 7,
+BH SCH ¥0 PIPE
+hoo 30% ST STL
+EXPLAIN ENTAL prem
+c 2*
+hi sorTon Tt;
+
+ 
+
+. Bow Pies
+Sworasx® Moor
+
+" * C
+
+ORNL DWG. 71-392
+
+ 
+
+TO vRcan
+5 HON (riRmI ACK) MO,
+‘raien
+| - Te pow ove: 2 2 3 € § 6&6 7
+> ’ |
+i |
+| ll
+| H
+| \ wearer
+| N mpos ’
+|
+|
+1
+
+a
+
+ 
+
+ 
+
+ 
+
+of
+2
+
+ 
+
+     
+
+ 
+
+ 
+
+RS
+
+Jwenrreo
+sacrron
+
+ 
+
+7 /
+oe = Z* raeK
+
+KAowooL
+7 n7ES °F
+PERTH LOS,
+
+F000 SERIES STMIvL ESS
+Fraas £ orm,
+
+ROO PITEN = AE2S
+ora
+
+Test and Heater Rod Geomet
+
+ 
+
+   
+
+Shell,
+8 in. ,sched-ho,
+304 SS pipe
+
+725 = inside
+00 surface temp.
+
+0. 1
+
+2 3
+Radfus - Inches
+
+Fig. H2.
+91 Rod Array.
+
+——C EYE LACES en
+
+ 
+
+Radiated
+Curve Emissivity, Heat Rated
+No. 1 Poirot Btu/hr
+tor rd p11 Emissivity
+Assumed to be 0.8.
+A 0.10 82.5
+B 0.15 82.5
+c 0.20 82.5
+D 0.ho 82.5
+BE 0.45 e.5
+r 0.50 82.5
+G 0.60 82.5
+
+ 
+
+# This 1s 90% of total heat input.
+
+Comparison of Experimental snd Calculated Temperatures in a
+
+LL
+ 
+
+ 
+
+78
+
+k. Temperature measurements
+
+Temperatures were measured by chromel-alumel thermo-
+couples embedded in the heater rods and placed on or in the
+housing.
+
+Temperature calculations were made using the same general method as
+that used to calculate heat exchanger temperatures. Because of the close
+spacing of the heaters (p/D = 1.25) the view of any rod is limited to ad-
+Jjacent rods and to rods in any second row distant. The central rod and
+each of the five hexagonal rings were considered to be an isothermal sur-
+face so that the "enclosure" consisted of a total of seven surfaces. This
+assumption is capable of producing some error since the corners of the
+hexagons are closer to the outer shell. This is particularly apparent on
+examining the corner rods in the outermost hexagonal ring. Each of these
+six rods sees only three adjacent rods instead of the four seen by the
+other rods in this ring. Everything else being equal, we should expect
+its temperature to be lower than the other rods in that ring since it has
+more surface directly viewing the heat sink (the outer shell). This has
+been borne out in the second experiment discussed subsequently, but it was
+not taken into account in the temperature computations for this test setup.
+
+The length of heated section in the rods was 10 in., giving the
+assembly an approximate L/D of 1.7. The one-dimensional infinite length
+computational model was used; it was recognized that, applied to this
+short assembly, accuracy would suffer. In an effort to compensate parti-
+ally for axial heat losses by conduction in the rods and by radiation,
+particularly from the outer ring to the shell, the radially radiated heat
+was assumed to be 90% of the total input.
+
+Since the actual emissivities of the surfaces were not known, it was
+decided to assume values for emissivity and attempt to match the experi-
+mental temperature data. The results of these calculations are on Figs.
+H2 to H5, inclusive. These figures are, for the most part, self-explana-
+tory, but in all cases note that the observed radial temperature gradient
+is steeper than the calculated values. The temperatures developed and
+measured in the rod array will be affected by axial conduction in the
+heater elements and thermocouples and by specular or other non-diffuse
+components in the emitted and reflected radiation. Any computation de-
+signed to obtain precise agreement with experiment must include these
+factors. They were not considered in the calculations reported herein.
+The calculations using emissivities in the neighborhood of 0.5 are in
+the best agreement with the experiment. This may be reasonable since the
+heaters had seen considerable use.
+
+Figures H6 and HT are included to emphasize that radiative transfer
+in a bundle of rods should not be approximated by assuming that each
+ring of rods behaves as if a continuous, impenetrable shell.
+
++
+
+1s,
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Temperature - °F
+
+19
+
+ORNL DWG. T1-593
+
+1600
+
+Peaks as /6#0°F
+
+ 
+
+ 
+
+~
+1500
+Curve Legend
+Rediated
+1400 Emissivity, Heat Rate¥*
+All Surfaces Btu/hr
+ft of rod
+8.20 8.5
+0. 5
+1300 0.45 8.5
+0.50 82.5
+0.60 82.5
+
+ 
+
+ 
+
+ 
+
+ 
+
+¥50% of total neat input.
+
+1200
+L
+1100 i -
+LXPESRLIITENT
+1000
+900
+Shell,
+
+8 1in.,sched-ko,
+800 304 8S pipe
+. T25 = inside
+T00 - surface temp.
+600
+
+0 1 2. 3 b
+Radius = Inches
+
+Fig. H3. A Comparison of Experimental and Calculated Temperatures Required to Radi-
+ate 82.5 Btu/Hr-Ft of Rod in a 91-Rod, Hexagonal Array of 1/2-Tn.-Dian
+Heater Rods Spaced 5/ 8 In. Apart Enclosed in an 8-In. Sched-LO SS Pipe
+(refer to CF 65-11-68). Calculations are shown with emissivity a parameter.
+ 
+
+ORKL DMG. 71-594
+
+ 
+
+ 
+
+ 
+
+ 
+
+Curve Enissivities® Radiated Heat Rate
+Gre ee 6% & 6 Cle
+MN 0.60 0.55 0.50 0.45 0.40 0.35 0.30 82.5
+x 0.50 0.50 0.50 0.50 0.0 0.50 0.40 82,5
+P 0.52 0.50 0.k8 0.46 0.84 0.2 0.50 82.5
+Q 0.40 0.h0 0.50 0.40 0.h0 0.30 0.60 82.5
+R 0.50 0.50 0.50 0.50 0.50 0.40 0.80. 82.5
+
+ 
+
+Subscripts refer to surface mumbers. Surface mmber 1 is
+central rod, surface mmber 7 is inside of 8-in. sched-ko pipe.
+
+Experimental curve is from Fig, 12 in CF-65-11-68.
+Refer to Fig, B2 for details of rod geometry and test setup.
+
+Temperature - “F
+
+Shell,
+8 in.,sched-ho
+304 SS pipe
+
+T25 = inside
+surface temp
+
+ 
+
+2 3
+Radiue - Inches
+
+Fig. Ei. Temperature Profiles in 91 Beater-Rod Array in Which Rod Emissivities are
+Assumed to Vary With Their Radial Location.
+
+ 
+ 
+
+ 
+
+"
+
+81
+
+ORNL DWG. 71-595
+
+Continuous
+
+Shell Model
+
+Experiment
+
+Multi-Surface
+Enclosure Model
+
+ 
+
+0 zZ 2 3 *
+RDIUVS ~ INCHES
+
+Fig. B5. A Comparison of Calculated Temperatures Required to Rediate 82.5 Btu/Hr-Ft
+of Rod in a 91-Rod, Hexagonal Array of 1/2-In.-Diam Heater Rods Spaced 5/8
+In. Apart Enclosed in an 8-In. Sched-40 8S Pipe (refer to CF 65-11-68).
+Calculations are shown for emissivities (all surfaces) of 0.5 and 0.6.
+ 
+
+ 
+
+82
+
+ORNL DWG. 71-596
+
+Thie curve indicates that, in celculeting the temperatures
+required to get rediant heat trensfer from arrays of rods or tubes,
+& continuous impenetrsble convex shell is & poor substitute for the
+open, convoluted geometry of the tube bundle, The curve was pre-
+pared as follows:
+
+1. Temperatures, Fig. H2, in the 9l-rod array were calculated
+by the method described in Appendix €, for several values of rod
+surface and outer shell emissivity and with a heat input estimated
+at 82,5 Btu/hr-ft length of rod.
+
+2. The 9l-rod array was then represented, Fig, HS, as & series
+of continuous, concentric, closely spaced, infinitely long hexagonal
+shells surrounded by sn outer cylindrical shell, For thie configu-
+ration the radiative transfer from shell to shell is given by the
+simple relation,
+
+ 
+
+Fig. B56. Diagram of & Continuous
+Shell Model of a Hexagonal Array
+
+of 91 Heater Rods. Q=0oF, | (n+1) A(T = T(ne1)*)
+, E
+RB - (ne) © ® (ard) ©
+
+ 
+
+Ay
+Baa) * rae) EB @ = En)
+
+o = StefanBoltzmann constant = 1730 X 10=3%
+
+A, = sree of nth surface; A , = eres of (n+1)th surface
+Q = beat transferred, Btu/hr
+
+T, = temperature of nth surface
+
+T _ = tempersture of (n+l)th surface
+
+n+l
+
+Eo. (n+1) = imterchange factor from mth to (n+1)th surface
+
+E, = emissivity of nth surface
+En) = emissivity of (n+l)th surface
+
+Using formula (1) and inserting therein the mwbers from the more
+exact calculation per (1) above, & value of F, (n+1) 2° calculated
+which produced the game total heat transfer at the same temperatures
+(see Fig. E2) as those computed by the more exact method per (1) above.
+The emissivity of the outer, (n+l)th, shell was assumed to be the game
+as that assumed for the more exact computation and, from formula (2),
+
+2 h .6 « value of E wes egteblished, This value of E, is the emissivity which
+Actual Emissivity e continuous shell must have if it is to radieste to an adjacent shell
+as effectively as a hexagonal tube arrey having an emissivity of E (e+1)
+
+Fig. HI, Tne Apparent Emissivity  raaiating to a continuous outer shell having the same emissivity
+of a Hexagonal Array of Rods if Viewed »
+
+ 
+
+as a Single, Hexagonal Surface ve Blni1)e
+Actual Roa Emissivity. Rod Pitch/Rod For example, Fig. HT indicates that if the rod surfaces in the
+Diam = 1.25.
+
+hexagonal array have an actuzl emissivity of 0.2, they eppear, to en
+adjacent plane, as much blacker plane with an emissivity of 0.7.
+ 
+
+ 
+
+ 
+
+83
+
+A second experiment,? not dissimilar from the first, involves a
+hexagonal array consisting of a central tube plus eight hexagonal rings
+of heated tubes surrounded by a close fitting hexagonal shell and a
+final, outer shell of 10-in. sched-40 pipe, Fig. H8. The dataP re-
+quired for the radiant transfer calculations are:
+
+A.
+
+System configuration
+
+0-3 Ov FW oH
+
+1.
+
+See Fig. HSB
+
+Pitch/diemeter --- 1.375
+
+Tube diameter --- 0.25 in.
+
+Tube spacing (pitch) --- 0.343 in.
+
+Tube surface area --- 0.0654 f£t3/ft length
+
+Heated length --- 48 in.
+
+Total number of tubes --- 217
+
+Total number of heated tubes --- 205 (12 tubes used for
+thermocouples)
+
+Thermal conditions
+
+Heat input --- 5.86 w/tube
+
+1.47 w/ft of tube
+
+5.0 Btu/hr-ft
+
+‘76.5 Btu/hr-ft® tube surface
+
+L100 total Btu/hr, for 205 active
+(heated) tubes.
+
+fononn
+
+Environment
+
+The hexagonal, stainless sheet steel tube enclosure
+is protected from air currents and sudden transients
+by the outer housing, a 10-in. sched-U40 pipe. The
+system was evacuated to 100 microns of mercury or less
+for the tests discussed herein.
+
+Emissivities
+
+A somewhat similar situation as with the first
+experiment. described in the preceding paragraphs
+obtains, except -that the 0.25-in.-diam tubes had not
+been immersed in high-temperature liquid metal.-
+
+Temperature measurements
+
+Temperatures in the bundle are measured by thermo-
+couples inserted inside selected tubes. These tubes do
+not contain heaters and are located (see Fig. H8) at the
+corners and in the centers of the flats of the hexagonal
+rings meking up the bundle.
+
+ 
+
+8 This experiment simulates afterheat generation by LMFER fuel
+
+assemblies.
+
+b
+
+H. C. Young, private communication.
+   
+
+TE 10
+
+ORNL DWG. T1-397
+
+— TE 12
+
+ 
+
+ 
+
+(EEE @) @-EE\
+
+Thin, Stainless
+Steel Shield
+5.13 In, Across
+Flats
+
+(Typ. ).
+
+   
+ 
+
+D-D-{a-@
+
+®) @ 3 @-E-HEE-E) @ @
+CICICACACACACACATICAT
+(#9) WHEE)
+
+TE 2
+
+142
+
+A OEE-E-C@@/f— =
+
+ 
+
+Fig. HS. Diagram of a Cross Section Through the Hexagonal Array of 217 Tubes,
+
+TE 8, Unheated
+Tube containing
+a Thermocouple
+
+  
+   
+  
+
+Stainless Steel
+Housing, 10-In.
+Sched 40 Pipe
+
+Tubing Detail
+
+®8
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+85
+
+Results
+
+The comparison of experimental? and computed temperatures, Figs.
+H9 and H10 showed the same general trend as in the previous experiment,
+namely, the observed temperature gradient was steeper. The use of un-
+heated tubes for the temperature measurements gives temperature readings
+below the average temperatures of similarly located heated tubes. This
+is borne out by the calculations, curves D1 and D2 on Fig. H1O. Curve
+D2 calculated with zero heat input to the central tube is depressed 23°F
+below the temperature computed as if the tube were heated. Note also
+that curves Dl and D2 show a temperature difference of 34°F at the outer
+ring. This is the computed difference in temperature between a heated
+tube centrally located on a face of the outermost hexagonal ring and
+the unheated corner tube. This difference has two causes; (1) the
+corner tube is not heated and (2) by virtue of its location more of its
+surface views the adjacent hexagonal shield, a heat sink. It will be
+shown that the local temperature depression of an unheated tube tends
+to go inversely with the third power of the local prevailing temperature
+surrounding the unheated tube and, at lower emissivities (< 0.3), nearly
+inversely with emissivity. From this we should expect that the actual
+radial gradient across the bank of heated tubes will be less steep than
+indicated by thermocouples in unheated tubes.
+
+During these preliminary runs the temperature of the intermediate,
+hexagonal shield was not measured. This is the heat sink temperature
+and its value is required in the calculations (see Appendix E). The
+calculated temperature curves in Figs. H9 and H1O are based on hexagonal
+shield temperatures of TOO°F and 600°F. These temperatures were calcu-
+lated by assuming an outer shell temperature of 200°F and emissivities
+of shell and shield surfaces of 0.30 and 0.k42.
+
+The experiment was in its initial startup phase when the data were
+taken, and plans were under way to obtain these temperatures in future
+tests. The degree to which hexagonal shell temperature affects internal
+temperatures has not yet been determined experimentally. Two calculations,
+virtually identical but for hexagonal shield temperatures, may be com-
+pared with the following table, Hl. Reducing the sink temperature from
+
+Table Hl. Effect of Lowering the Heat Sink Temperature on
+Peak Temperature in the Hexagonal Array of 212 Tubes
+
+ 
+
+- Hexagonal Shell 2 Outermost
+
+ 
+
+Heat Input . Emissivity Temperature Peak "7 "Tube Ring
+(Btu/hr-ft of (Heat Sink) Temperature Temperature
+Tube) All Surfaces (°F) (°F) (°F)
+5 0.4 C600 937 783
+5 0.4 BB Loo 859 676
+
+AT = 78 AT = 107
+
+ 
+
+ 
+
+8g, c. Young, private communication
+ 
+
+a ORNL DWG. T1-598
+Radial Location” of Centerlines
+of Hexagonal Rings of Tubes
+
+1 2 L 5 6 7 8
+
+Stainless Steel
+Shield, 5.13 In. Across
+
+Housing, 10-In.
+Stainless Steel
+Sched 40 Pipe.
+
+Tempersture « °F
+
+Bousing, Temper-
+
+ 
+
+ature - 205°F,
+0 1 2 3 5 6
+Redius® - Inches
+Fig. 3 . Experimental and Calculated Temperatures in a Hexagonal Array of 217
+Heated, Stainless Steel Tubes (see Fig. E2).
+1. Environment -- 10-in. pipe housing evacuated to ~3 microns Hg.
+2. Heat Input =~ 1.47 watts/ft tube = 5 Btu/br-ft = 76.5 Btu/hr-ft2,
+Bnissivity, Tubes Temperature
+and Hexagonal Hexagonal
+Shield Shield
+Curves Al and A2 0.3 TOO°F Tube temperatures from central
+
+tube across flat and to corner
+tubes of hex, respectively.
+
+Curves Bl and B2 0.5 TOOF Tube temperatures from centrel
+tube across flat and to corner
+tubes of hex, respectively,
+
+Curves C1 and C2 - -— Experimental data.
+
+ 
+
+ube centerlines and shield locations shown as in en elevation (section) view
+across corners of hexagon. :
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+C
+
+87
+
+a ORNL DWG. T1-599
+Radial Location” of Centerlines
+of Hexagonal Rings of Tubes
+
+12 3 4 5 6 7 8 9
+
+Shield, 5.13 In. Across
+
+Housing, 10-In.
+Stainless Steel
+Sched 40 Pipe.
+
+Temperature - °F
+
+Housing, Tempera-
+
+ 
+
+tare = 205°F.
+0 1 - 2 3 4 5 6
+Radius? - Inches
+
+Fig. HO. Experimental and Calculated Temperatures in a Hexmgonal Array of 217
+Heated, Stainless Steel Tubes (see Fig, H2),
+
+1. Enviroment -- 10-in. pipe housing evacuated to ~3 microns Hg.
+
+2. Heat Input == 1.47 watts/ft tube = 5 Btu/br-rt = 76.5 Btu/hr-£t2.
+
+Emissivity Temperature :
+Hexagonal Hexagonal
+Tubes Shield Shield
+Curves Cl and C2 - - s Experimentally determined tube temperatures from
+
+central tube (unheated) scross flat and to corner
+t tubes of hex array, respectively.
+
+Curve D1 0.3 0.3 TOOF Temperatures calculated as if all tubes are heated
+and as if outermost corner tubes have same view
+factors as other tubes in the outer ring.
+
+Curve D2 0.3 0.3 T00°F Temperatures calculated as if centrel tube and outer
+corner tubes are unheated and with corrected view
+factors for the outer corner tubes.
+
+0.5 600°F Temperatures calculated with central tube unheated
+600°F and with no view factor correction for outer corner
+tubes which are heated.
+
+Curve El 0.10
+Curve E2 0.15 0.5
+
+ 
+
+Spube centerlines end shield locations shown as in an elevation (section) view across corners of
+hexagon.
+
+ 
+ 
+
+ 
+
+88
+
+600°F to LOO°F effected an appreciable reduction in the peak temperature
+and a slight increase in the radial gradient. At higher heat inputs or
+in larger assemblies with more tube rings, the fourth power effect of
+temperature will dominate the fractional improvement obtained by lowering
+the sink temperature. It will be shown, subsequently, that there were
+axial heat losses in this experiment. The differences between observed
+and calculated temperatures are subject to the same general considera-
+tions mentioned in the previous discussion of the 9l-rod array.
+
+Conductive transfer effected by the spiral wire wrap around the
+tubes (see Fig. HB) was not considered. If any appreciable heat is trans-
+ferred by conduction, it will affect the radial temperature gradient.
+
+Figure Hll shows that there were axial heat losses, amount unknown.
+No really serious attempt was made to consider these in the computations.
+A few calculations for which the radiated heat was reduced by ~5% (from
+5.0 to 4.73 Btu/hr-ft tube) were made using the same infinite cylinder
+model. The effect of this small heat reduction, credited to axial heat
+- flow, was negligible.
+
+It has been noted that we should expect the corner tubes to have a
+lower temperature. If unheated, as these are, the effect will be more
+pronounced. The unheated tubes in the inner rings will also be at lower
+temperatures than their neighbors at or near the same radius. - The amount
+by which they will be lower will certainly be dependent on emissivity.
+For example, the temperature depression can be approximated by using the
+differential of the heat transfer expression,
+
+QQ .
+5 -fioe o (1% — 15) (B-1)
+in which
+F; ,2 = radiation interchange factor from area A;
+to Ap,
+0 = Stefan-Boltzmann constant = 1730 x 10 2,
+T, and T, = temperatures of A and Az, °R.
+
+Assume that the unheated rod of area A; is surrounded by other rods
+having a total area, Ay, at the same or nearly the same temperature so
+that T; = Tp; also, assume that Tp doesn't change. By differentiating,
+
+AQ A) =4 TF, oT; Ay (H-2a)
+ 
+
+ge
+
+ 
+
+ 
+
+89
+
+ORNL DWG. T1-600
+
+1000
+
+Fifth Hex,
+
+TOO
+
+600
+
+500
+
+Heated
+
+ 
+
+Loo
+3 -2 “a 0 +1 +2 +3
+Distence from Midplene = Feet
+
+Fig. Hil. Axial Temperatures in Hexagonal Array of Internally Heated
+Tubes (see Fig. HS).
+
+ 
+ 
+
+ 
+
+90
+
+ 
+
+and
+A(Q/4,) |
+L a A A = (E-2b)
+L F, ,,0T
+for small changes in T .
+
+The single tube represented by and nearly completely surrounded
+by six tubes is approximated by two cylindrical surfaces having an area
+ratio, Ay = 0.5. If the emissivity, E, of both surfaces is the same,
+the interchange factor is then given by
+
+E E
+F = = * (H-3)
+
+1-3 A
+
+1+4 (1-E) 1.5 - 0.5 E
+2
+
+Now, if we disconnect the power from this central tube, it is, in
+effect, operating as a thermocouple tube and
+
+e/a) = — 76.5 Btu hr-ft* .
+
+The expression, Eg. (H-2b) for AT, , the temperature depression in this
+tube, becomes :
+
+ 
+
+- (76.5) — 11 x 10°
+AT, = SF 2 (H-2¢)
+BF, (1730 x 10 ) L F oa >
+
+Table H2 gives values of AT for the temperatures in the range of
+the experiment and for emissivities considered reasonable.
+
+It would not and will not be correct to apply these approximate
+tabulated values to the experiment. They are listed to indicate that
+the temperatures measured in an unheated tube will be below that of the
+surrounding heated tubes in the bundle. Since this deficit is greater
+at lower temperatures, measurements so taken will indicate a gradient
+steeper than actually exists.
+
+The infinite cylinder model was used and, taking the length equal
+to the length of the heated section of the tubes, 4 ft, we have an
+LD == 8--a better approximation than with the first experiment.
+
+After assessing the calculated and observed temperatures in these
+tube bundles, it was concluded that the agreement was satisfactory.
+Since the computed values tended to be higher, it was decided that this
+calculational approach is a suitable method which gives safe answers
+ 
+
+ 
+
+©
+
+91
+
+Table H2. Approximated Temperature Depression in a
+Single Unheated Tube in an Extensive Tube Array
+
+ 
+
+ 
+
+Location in Approximate Emissivity, AT,
+Tube Bundle Value, T, E °R or °F
+Center 1000°F = 1460°R 0.1 -55
+0.2 -25
+0.3 -16
+0.4 -11
+0.5 -9
+Center 900°F = 1360°R 0.1 63%
+Edge of T15°F = 1175°R 0.1 -106
+Bundle 0.2 -48
+0.3 -31
+0.4 -—22
+0.5 -17
+
+ 
+
+®The more exact calculation, curve El on Fig. H10
+shows a temperature depression of 39° at the central
+tube.
+
+to use in estimating temperatures in MSER heat exchangers whose internal
+configuration is, essentially, a bundle of parallel rods or tubes.
+93
+
+(- APPENDIX I
+
+~ METHOD USED TO ESTIMATE THE INITIAL PEAK TEMPERATURE TRANSIENT
+IN THE 563-MW REFERENCE DESIGN HEAT EXCHANGER
+
+ 
+
+ 
+
+ 
+
+1. The adiabatic temperature versus time curves "B" and "C" on Fig. 15
+were plotted. The bases for these curves are:
+
+A. The total accumulated afterheat, Table 1 or Fig. 5, is de-
+posited thus (see Fig. 7):
+
+(1) 77% in the annulus (inner shell and tubes)
+
+(2) 23% in the intermediate shell. This includes the
+heat deposition in the outer shell and the gamma
+heat lost to the outside.
+
+B. The annulus and Intermediate shell are separated and both
+are perfectly insulated.
+
+C. The heat capacities of these regions are as listed in
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Table Il.
+A Table Il. Heat Capacity of Empty 563-Mw
+MSER Primary Heat Exchanger
+Heat Capacity Per
+Metal Mw Rated Capacity, Fraction
+Volume ;* Heat Capacity,* (Btu/°F ft height) of
+Region £t3/ft height Btu/°F ft height Mor Total
+1. Inner shell 2
+20 in. sched LO pipe 0-2 19 0.03% 0.0%
+2. Tubes 1.43 110 0.196 0.23
+3. Intermediate shell 3.71 287 0.510 0.60
+4. Outer shell 0.79 61 . 0.109 0.13
+Total 6.18 b77 0.849 1.00
+
+p = 0.32 1b/1n.® = 553 1p/rt3
+Cy = 0.1% Btu/lb-°F
+
+H[Vojumetris heat capacity’ ]= pC. = TT.4t Btu/et3-°F
+of Hagtelloy XN p
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+9k
+
+2. The steady-state temperature profiles across the tube annulus, Fig. 1.4,
+show little curvature. The profile for the case when internal surface
+emissivities are 0.2 was approximated, by inspection, with a straight
+line. . Using temperatures taken from this straight-line approximation,
+an average annulus temperature, Onn’ was computed as outlined on
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. Il.
+or = temperature at R, R; <R = R,
+R, = 8 = average temperature in the
+tube annulus
+{— Ry >
+, R = radius at which or =9
+op V = volume, per unit height
+I { Yo ( BR,
+R av 2, or RDR
+R R
+- i i
+- —8 -
+o (% 1)
+If the temperature varies linearly
+with radius,
+e— Annulus
+6,(R—R) — 6,(R-R,)
+5 =
+
+ 
+
+ 
+
+ 
+
+and !
+
+2 2
+2(R. 6 —R.9,)
+RO, — RO +—2 11 .
+
+(R, — Ry)
+
+ 
+
+Fig. Il
+
+The location of CN was taken to be at R = 25 in.
+
+Lo]
+ 
+
+ay
+
+95
+
+Using this value of R = 25 in., a simple two-shell model of the heat
+exchanger, Fig. 12, was adopted.
+
+ 
+
+ 
+
+32.75 in. = 2.73 ft (see Fig. 2)
+17.13 £t3/ft
+
+=
+& &
+Wo
+
+25 in. = 2.08 ft (see Fig. Il)
+13.1 ft3/ft
+
+nn
+
+Annulus Shell (equivalent to tubes and inner shell)
+
+(a) Heat generation =-- 77% of total in the heat
+rate exchanger
+(b) Heat capacity  -- 129 5 Btu
+
+F-ft of height
+
+Intermediate Shell
+
+(a) Heat generation -- 23% of total in the heat
+rate ~ exchanger
+(b) Heat capacity  -- 287 = Btu
+
+F-ft of height
+(see Table I1)
+
+ 
+
+Fig. I2.
+Radiant transfer from the annulus shell, surface A;, to the inter-
+mediate shell, surface Ag, 1s evaluated with this equation:
+
+Qu, =F 5 A oe —6) Btuhr . (1-1)
+
+= interchange factor for radiation transfer from A, to A,
+
+¥-
+1
+®
+|
+
+- 6, = average annulus temperature, °R
+
+By = temperature of the inner surface of the intermediate
+shell, °R *
+3 2
+o = Stefan-Boltzmann constant = 1730 x 10712 Btu/hr-ft2
+- °R4
+ 
+
+ 
+
+96
+
+The interchange factor, Fy_, gz, for this model was estimated with \ )
+Eq. (I-1) by using the steady-state temperatures computed with the heat
+rates at 10* sec after shutdown and for the case when the emissivity +
+
+of all internal surfaces is 0.2. The shell temperatures, 6, and 6,
+
+were obtained from the averaged straight-line approximation and from
+Fig. 1b, respectively. The computed value of F;_, 5 was 0.178 and Eq.
+
+(I-1) becomes
+
+Qos z = (0.178)(23.1) o (8 — f) = (4.03 x 20°)(6} ~ 65) + (I-1a)
+
+Lh. The heat balance equations involved in developing the peak temperature
+
+transient are:
+
+te ta (ta
+Total heat Heat capacit Average Heat transferred
+generated of the temperature from the annulus
+in the = (annulus change in +: Jto the intermedi-
+annulus the annulus ate shell
+t) ty ty ,
+: ts = ta ta (1-2)
+w]7 - WI + [el
+Loy ty 1
+and
+ta ta tg -.
+Total heat Heat transferred Heat capacity] |Average temp.
+generated in from the annulus = of the change in the
+the inter-~ to the inter- intermediate intermediate
+mediate shell mediate shell shell shell
+ty ty —t,
+t2 ta ta
+Ll, + Wl - [uw]
+ta 1 1
+tg
+Heat transferred
+from the inter
+mediate shell to
+~ + | the outer shell
+and thence to the
+surroundings
+ty
+tz
++ (1-3) .
+
+q
+
+ty
+ 
+
+ 
+
+ 
+
+ny
+
+97
+
+In the above, t, and tz; denote any arbitrary time interval.
+These equations, involving both temperatures and heat transfers, were
+satisfied by cut-and-try iteration.
+
+On Fig. 15 it cen be seen that the transient peak occurs at slightly
+more than 10* sec (~ 3 hr) after shutdown and drain. This time period
+was subdivided into several increments and the manner in which the above
+equations were applied is described below.
+
+A. From O to 1000 Sec
+
+1000 _1lo000
+Eq. (1-2) H 0 | = 0 |
+0 0
+1000 1000
+Eq. (I-3): - A = Us
+“o o
+1000 1000
+and Ua = Us = 0
+0 0
+
+During the first 1000 sec (17 min) after shutdown and drain, the tempera-
+ture differences between the annulus and the intermediate shell and the
+outer shell are small. In these circumstances, little heat will be trans-
+ferred and the pesk temperature in the annulus will tend to follow curve
+B in Fig. 15. At 1000 sec after shutdown the annulus is transferring to
+the intermediate shell about 20% of the heat being generated within the
+annulus. This approximate rate was computed with Eq. (I-la) with temper-
+atures taken from curves B and C on Fig. 15.
+
+B. From 10%, Sec to 5 x 10% Sec
+
+: 5x10° - 5x10° x103
+Eq. (1-2): wu Lo= Ug + Us
+| 10° 10° 10°
+
+LL 415X103 5x10°  .5x10°
+
+Eq. (1-3 ) : w] - - | + | - Us)
+
+108 10° 10°
+oo 5x10°
+and % | = 0 ,
+. 108
+ 
+
+ 
+
+ 
+
+ 
+
+98
+
+During this LOOO-sec interval, subdivided into two equal intervals
+for the computations, the heat transfer from the annulus to the intermediate
+shell was taken into account. :
+
+It was assumed that the heat lost by the annulus is transferred to the
+intermediate shell. The peak temperature in the annulus will, therefore,
+become less than curve B, Fig. 15, by an amount proportional to the heat
+transferred from the annulus and the average temperature of the intermedi-
+ate shell will rise above curve C. Note that, because of its large heat
+capacity and lower internal generation rate, the average temperature of
+the intermediate shell rises quite slowly and it is incapable of trans-
+ferring appreciable heat to the outer shell. Therefore, during this
+period, it was assumed that all the heat transferred from the annulus to
+the shell is retained by the shell.
+
+C. After 5 x 10%Sec
+
+All the components of Eq. (I-2) and I-3) were considered. The compu-
+tations of heat transferred from the intermediate shell to the outer shell .
+included the simplifying assumption that the outer shell temperature re-
+mained constant at 1200°F, the initial temperature of the system. The
+thick intermediate shell is a good heat sink and intercepts all the heat
+from the annulus. Moreover, it is a poor radistor and must develop an
+appreciable temperature increase over the outer shell temperature before
+it can transfer an accountable amount of heat. The outer shell, on the
+other hand, is thin (0.5 in.) and, with an outer surface emissivity of
+0.8 it is a good transmitter and radiator of such heat that it receives
+on its inner surface. In an actual situation we would expect the outer
+shell temperature to decrease, beginning immediately at shutdown. It
+would not begin to rise until the intermediate shell outer surface
+temperature had increased to a level that transfers substantial heat
+outward. Note, on Fig. 14, that the steady-state temperature computation
+at 10% sec after shutdown shows adjacent surface temperatures of 1940°F
+and 1200°F for the intermediate and outer shells, respectively. From the
+transient calculation, the intermediate shell temperature is estimated
+to be from 1750°F to 1800°F at this time. This lower temperature will
+reduce the heat radiated to the outer shell and, therfore, the outer
+shell temperature will be less than the assumed value of 1200°F.
+
+From 5 x 10% to 1.1 x 10* sec the computations were based on time
+increments of 2 x 10® sec. At 1.1 x 10* sec the rate of change of heat
+generation had been reduced to a value for which a final time increment
+of one hour was reasonable. The computations were terminated at 1.46 x 10*
+sec (4 br) at which time it was evident that the transient had turned
+over and system temperatures were beginning to decrease and approach
+the steady-state values. :
+
+The generalized heat balance terms, Uy to Us, incl., in Egs. (I-2)
+and (I-3), will now be specified in detail.
+
+U, and Uz are obtained from Table 1 and/or Fig. 5 with the fractional
+amounts, 77% and 23%, respectively, from Fig. 7. The remaining terms are
+established by iteration.
+ 
+
+»
+
+o
+
+9
+
+The equations for Us; and Ug are simple and straightforward:
+
+_ ta C, = heat capacity of the annulus,
+()] Fig. I2..
+AG, , see Fig. Il, is the change in
+the average annulus temperature
+during time interval, tz — ti.
+
+Note that the peak temperature in the heat exchanger will be slightly
+above © because of the gradient in the annulus. With the annulus trans-
+ferring heat at the generation rate existing 10* sec after shutdown the
+increase is approximately 75°F.
+
+to _ ts Cis = heat capacity of the intermedi-
+Us | = C (s)] ate shell.
+ta tu AB; = change in the average tempera-
+
+ture of the intermediate shell.
+
+The average temperature of the thick (2.5 in.) intermediate shell is,
+during the transient, appreciably dependent on both space and time.
+From Fig. 6 it is apparent that most of the gamma heat deposition takes
+
+‘place near the inside surface. The radiant heat received from the
+
+annulus will be deposited directly on the inner surface. The net effect,
+of course, is to raise the temperature of the inner surface a substantial
+amount above the average value, 6s, that must be used to evaluate Ug.
+However, the inner surface temperature, 83, is the effective heat sink
+temperature used in Eq. (I-1) when radiant transfer from the annulus is
+being calculated. This difference between the average and inner surface
+temperatures was not calculated directly as a function of elapsed time;
+
+- instead, the approximate transit time for heat flow through the slab was
+
+estimated. Specifically, the case considered was an infinite slab, 2.5
+in. thick, of Hastelloy N, with one face insulated. The uninsulated
+surface sees a step increase in tempereture. From Fig. 10-2, p. 235,
+and related text material in reference 28, it was estimated that the
+
+‘average temperature will lag the inner surface temperature by approxi-
+
+mately 1000 sec. This local transient effect in the intermediate shell
+was considered during the computations.
+
+The total heat transferred from the annulus during any interval,
+tz — t3, is obtained by integrating Eq. (I-1).
+
+ty
+
+tg tz oo : tz 4 4
+6] - § wane -mos me § {[am]-[aw]}a av
+ty - ty
+ 
+
+100
+
+As written, this expression presupposes the desired solution, ©; (t) and
+
+62(t). Therefore, it was assumed that, during each time interval, the
+omparature changes in both the annulus and the intermediate shell pro-
+gressed linearly, i.e.:
+
+6 (t)
+62 (t)
+
+A + Bt (1-5)
+
+M + Nt (1-6)
+
+fn
+
+Also, at the temperatures and temperature differences involved in this .
+calculation, the fourth power temperature difference in Eq. (1-1) can:
+be ‘approximated with negligible¥ error, viz.
+
+{mw]- [ce] = 0 (09)
+
+in which
+
+1/2 an + a), 7 (TT)
+6(t) — &(t) (1-8)
+
+Save
+
+AS
+
+In terms of Egs. (1-5) and I-6) these can be written,
+
+F + Gt (I-7a)
+
+avg
+AB =J + Kt (1-82)
+F =1/2 (A +M) = 1/2 [Sum of the surface temperatures at t,]
+G = 1/ 2 (B+0N) = 1/2 [Sum of the slopes of the surface temperature
+curves during the interval, (tz — ty).
+J=(A-M) = (Temperature difference at t,]
+K=(B-N) =
+
+Difference of the slopes of the temperature curves]
+during the interval, (tz — t,).
+
+and Eq. (I-4) becomes
+tz
+
+ts 8 3
+| =bF M0 { [2s + Gt) + Kt(F + a)’ | at . (I-ka)
+ty i
+
+1 . i
+
+ 
+
+¥For example, if B, and 6; are 1800°F and 1400°F, respectively, the
+error introduced by using this approximation is 1%.
+ 
+
+ 
+
+L\]
+
+*
+
+101
+
+After integration and some algebra,
+
+ 
+
+ 
+
+ts _
+3,4
+| =LF ho 5 a= + 3 FH +3 Pot? + Ft}
+’ ty a .
+3,86
++X { == + 2 Ft + Fat’ + i: }] (1-kb)
+
+in which t = (tz — t;), hr.
+
+For the range of temperatures and the time intervals used in this
+problem the first two terms in each set of brackets in Eq. (I-Ub) are
+small enough to omit and
+
+tz
+
+3,2
+| =h FM oO 73 For re K [oe + | . (I-ke)
+
+ta
+
+ 
+
+This equation was used to estimate the total heat transferred from the
+annulus during the time interval, tz — ty, if the temperature variations
+are linear during the interval as shown in Fig. I3.
+
+ORNL DWG. T1-601
+
+Temperature,
+8, ‘R
+A Average temperature of
+annulus, 8 = A + Bt.
+A TT
+J : Temperature of inner
+surface of intermediate
+| : oe shell, 6, = M + Nt .
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+—3me Elapsed time.
+
+ 
+
+YH oo tp
+
+Fig. I3.
+ 
+
+ 
+
+102
+
+The heat transferred to the outer shell from the intermediate shell
+is estimated by the familiar equation,
+
+_ 4 4 Btu/hr-ft2
+Us = A, F o[ ef - et, | , _Btu/br-ft?
+
+Ag
+
+A S
+
+8s
+
+0s
+
+0
+
+n
+
+18 ft of height
+
+18.45 ft /ft of height, the area of the outer surface
+of the intermediate shell.
+
+18.80 £t3/ft of height, the area of the inner surface
+of the outer shell.
+
+the temperature of the outer surface of the inter-
+mediate shell, °R.
+
+1660°R (1200°F), the temperature of the inner surface
+of the outer shell.
+
+€
+TFCI=¢ ~ interchange factor for radiative
+
+transfer from an infinitely long convex inner shell
+concentric with an infinitely long outer shell, when
+the emissivities of both surfaces are equal.
+
+c= ASA
+
+emissivity
+
+€
+
+= the Stefan-Boltzmann constant.
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+»y
+
+3.
+
+10.
+
+12.
+
+13.
+
+103
+
+REFERENCES
+
+MSR Program Semiann. Progr. Rept. Feb. 28, 1969, ORNL-U4396, p. 60,
+Sect. 5.7.3 - Heat Removal Systems, and p. 62, Sect. 5.8 - Distri-
+bution of Noble-Metal Fission Products and Their Decay Heat.
+
+J. R. Tallackson, Estimated Temperatures Developed by Afterheat in
+MSER Primary Heat Exchanger, SK-430L4, Rev. 3, ORNL CF 6-0-1
+(Sept. 27, 1967).
+
+E. S. Bettis and Roy C. Robertson, "The Design and Performance of
+a Single-Fluid Molten-Salt Breeder Reactor,” Nuclear Applications
+& Technology, Vol. 8, pp. 190-207, Feb. 1970.
+
+MSR Program Semiann. Progr. Rept. Aug. 31, 1969, ORNL-4il9, p. 56,
+Sect. 5.7 - Gamma Heating in MSER Heat Exchangers.
+
+J. R. Tallackson, Calculations of Heat Deposition in Empty MSBR
+Primary Heat Exchangers by Gamma Radiation from Noble Metal Fission
+Products, ORNL CF 69-8-27 (Aug. 1h, 1969).
+
+H. E. McCoy, private communication.
+
+MSR Program Semiann. Progr. Rept. Aug. 31, 1969, ORNL-4hLk9, p. 183,
+Sect. 16.2 ~ Statistical Treatment of Aging Data for Hastelloy N,
+and p. 191, Fig. 18.10.
+
+R. E. Cleary, R. Emanuelson, W. Luoma, C. Amman, Properties of High
+Enittance Materials, NASA CR-1278, United Aircraft Corporation
+Feb. 1609).
+
+R. B. Briggs, "Heating in Graphite of a 2000-M¢(e) Reactor by Decay
+of Fission Products After Shutdown," MSR-68-8 (Internal Correspond-
+ence )(Jan. 8, 1968).
+
+E. M. Sparrow, "Radiation Heat Transfer Between Surfaces," Advances
+in Heat ‘Transfer, edited by James P. Hartnett and Thomas .F. Irvine,
+ITs Academic Press, 1965.
+
+Robert Siegel and John R. Howell, “Thermal Radiation Heat Transfer,"
+
+~The Black Body Electromagnetic Theory and Material Properties, Vol.
+"I; Vol, II - Radiation Exchange Between Surfaces and in Enclosures,
+
+NASA SP-164, 1968.
+
+E. M. Sparrow and R. D. Cess, Radiation Heat Transfer, Brooks-Cole
+Publishing Co., 1966.
+
+H. Leuenberger and R. A. hn Radiation Shape Factors for Cylind-
+ricel Assemblies, ASME Paper 56-A-1L%, Jan. 1955.
+ 
+
+ 
+
+1k.
+
+15.
+
+16.
+
+17.
+18.
+
+19.
+
+20.
+
+21.
+22.
+23.
+2k.
+254
+
+26.
+
+10k
+
+Carol J. Sotos and Norbert O. Stockman, "Radisnt Interchange Factors
+and Limits of Visibility for Differential Cylindrical Surfaces with
+
+Parallel Generating Lines," NASA, Lewis Research Center, Cleveland,
+
+Ohio. ,
+
+0. H. Klepper, Radiant Interchange Factors for Heat Transfer in
+Parallel Rod Arrays, ORNL TM-583 (Dec. 26, 1963).
+
+J. S. Watson, Heat Transfer from Spent Reactor Fuels During Shipping:
+A Proposed Method for Predicting Temperature Distribution in Fuel
+Bundles and Comparison with Experimental Data, ORNL~ 3439 (May 27,
+
+1963).
+
+D. C. Hamilton and W. R. Morgan, Radiant Interchange Factors, NACA
+TN 2836.
+
+Norman T. Grier and Ralph D. Sommers, View Factors for Toroids and
+
+Their Parts, NASA TN D-5006.
+
+James P. Campbell and Dudley .G. McConnell, Radiant Interchange Con-
+figuration Factors for Spherical and Conical Surfaces to Spheres,
+NASA TN D-4457.
+
+A Feingold, Radiant Interchange Configuration Factors Between
+Various Selected Plane Surfaces.
+
+E. M. Sparrow, "On the Calculation of Radiant Interchange Between
+Surfaces," Modern Developments in Heat Transfer, edited by W. Ibele,
+Academic Press, 1963.
+
+D. P. DeWitt, M. C. Muinzer, and R. S. Hernicz, A Comparative Pro-
+gram for the Compilation and Analyses of Thermal Radiative Properties
+Data, NASA CR-1431, prepared by Thermophysical Properties Research
+
+Center, Purdue University, W. Lafayette, Indiana. °
+
+Joseph Poggie, "Radiation Characteristics of Materials," Product
+
+Engineering, p. 205 (Sept. 1953).
+
+G. G. Gubareff, J. E. Janssen, and R. H. Torberg, Thermal Radiation
+Properties Survey, Honeywell Research Center, Minneapolis-Honeywell
+
+Regulator Company, 1960.
+
+B. C. Garrett, Bench Test of Rod Bundle from the IPS System, ORNL
+CF 65-11-68 (Nov. 30, 1965).
+
+H. Etherington, Nuclear Engineering Handbook, lst Edition, 1958,
+Sect. 1-1, 14.1 "Steady State Conduction, p. 1-53 to 1-57 incl.,
+McGraw-Hill. -
+ 
+
+ 
+
+LJ]
+
+ae
+
+27.
+
+28.
+
+105
+
+D. L. McElroy and T. G. Kollic, "The Total Hemispherical Emittance
+of Platinum, Columbium—1% Zirconium, and Polished and Oxidized
+INOR-8 in the Range 100° to 1200°C," Measurement of Thermal Radi-
+ation Properties of Solids, Paper No. 38, NASA SP-3l. A symposium
+held at Dayton, Ohio, Sept. 5-7, 1962.
+
+P. J. Schneider, Conduction Heat Transfer, Addison-Wesley Publishing
+Co., Inc., 1955.
+
+ 
+ 
+
+ 
+
+  
+ 
+ 
+ 
+
+ 
+
+ay
+
+[3
+
+\O 0-1 O\\n =~ W fo
+
+10.
+11.
+12.
+13.
+1k.
+15.
+16.
+17.
+18.
+19.
+20.
+21.
+22.
+23.
+ok,
+25.
+
+26.
+
+. 27.
+28."
+
+29.
+30.
+31.
+32.
+33.
+3k,
+35.
+36.
+37.
+“38.
+39.
+“bo,
+hy.
+Lo,
+
+a
+
+Lh,
+
+Ls,
+
+IT
+LT.
+L8,
+ho.
+
+INTERNAL, DISTRIBUTION
+
+MSRP Director's Office,
+Bldg. 9201-3, Rm. 109
+
+R.
+J.
+c.
+H.
+S.
+M.
+M.
+Cc.
+E.
+D.
+F.
+R.
+E.
+Cc.
+G.
+R.
+S.
+Ww.
+R.
+c.
+E.
+J.
+J.
+F.
+J.
+S.
+Ww.
+J.
+D.
+A.
+J.
+Ww.
+c.
+
+Ww.
+
+A.
+R.
+P.
+We
+Pp.
+R.
+P.
+
+E.
+
+H.
+Pp.
+P.
+R.
+A.
+
+G.
+L.
+F.
+F.
+E.
+J.
+
+Affel
+Anderson
+Baes
+Bauman
+Beall
+Bell
+
+Bender «
+
+E.
+S.
+S.
+F.
+
+Bettis
+Bettis
+Billington
+Blankenship
+
+Blumberg
+
+G.
+J.
+E.
+B.
+
+Bohlmann
+Borkowski
+Boyd
+Briggs
+
+Cantor
+
+L.
+H.
+Ww.
+L.
+We
+L.
+L.
+R.
+J.
+P.
+R.
+
+EL
+
+P.
+H.
+KX.
+H.
+R.
+G.
+H.
+H.
+0.
+N.
+E.
+G.
+C.
+Ww.
+Pp.
+R.
+J.
+R.
+
+Carter
+Chapman
+Collins
+Compere
+Cooke
+Crowley
+Culler
+Distefano
+Ditto
+Eatherly
+Engel
+Ferguson
+Fraas
+Frye, Jr.
+Furlong
+Gabbard
+Grimes
+Grindell
+Guymon
+Harley
+Harms
+Haubenreich
+Helms
+Herndon
+Hise
+Hoffman
+Holz
+Kasten
+Kedl
+Kerr
+
+107
+
+50.
+51.
+52.
+53.
+sh,
+55.
+56.
+57.
+
+58.
+
+29.
+
+60.
+
+61.
+
+62.
+63.
+6h.
+65.
+66.
+67.
+68.
+69.
+70.
+
+- TL.
+
+a
+
+72.
+73.
+Th.
+75.
+76.
+77.
+78.
+79.
+80.
+81.
+82.
+87.
+
+88.
+
+89.
+
+90.
+ol.
+
+92.
+
+93.
+ol,
+95.
+9%.
+
+97-98.
+99-100.
+101-103.
+10k.
+
+ORNIL-TM-3145
+
+S. S. Kirslis
+
+H. W. Kohn
+R. B. Korsmeyer
+
+.T. 8S. Kress
+
+R. B. Lindauer
+
+M. I. Lundin
+
+R. N. Lyon
+
+H. G. MacPherson
+R. BE. MacPherson
+H. E. McCoy
+
+C. K. McGlothlan
+H. A. McLain
+
+L. BE. McNeese
+
+J. R. McWherter
+
+H. J. Metz
+
+R. L. Moore
+
+E. L. Nicholson
+
+L. C. Oakes
+
+A. M. Perry
+
+B. E. Prince
+
+G. L. Ragan
+
+R. C. Robertson
+
+J. P. Sanders
+
+H. C. Savage
+
+Dunlap Scott
+
+J. H. Shaffer
+W. H. Sides
+
+E. G. Silver
+M. J. Skinner
+A. N. Smith
+0. L. Smith
+
+I. Spiewak
+
+R. A. Strehlow
+Jd. R. Tallackson
+W. Terry
+
+R. E. Thoma
+
+D. B. Trauger
+G. M. Watson
+
+A. M. Weinberg
+
+M. E. Whatley
+
+R. P. Wichner
+
+L. V. Wilson
+
+H. C. Young
+
+Central Research Library
+Document Reference Section
+Laboratory Records
+Laboratory Records-RC
+ 
+
+ 
+
+108
+
+ORNL-TM-31L45
+
+EXTERNAL DISTRIBUTION
+
+105. D. F. Cope, AEC-OSR-ORNL
+106. Ronald Feit, AEC-Wash.
+107. Kermit Laughon, AEC-OSR-ORNL
+108-109. T. W. McIntosh, AEC-Wash.
+110. R. M, Scoggins, AEC-Wash.
+111. M. Shaw, AEC-Wash.
+112. FP. N. Watson, AEC-Wash.
+113-127. Division of Technical Information Extension (DTIE)
+128. Laboratory and University Division, ORO

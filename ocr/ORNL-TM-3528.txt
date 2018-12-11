@@ -1,0 +1,2742 @@
+ 
+
+ORNL-TM-3528
+
+Contract No. W-T405-eng-26
+
+Reactor Division
+
+TWO
+SOLUTION OF THE EQUATION DESCRIBING THE INTERFACE BETWEEN
+
+FLUIDS FOR THE VOLUME AND PRESSURE WITHIN ATTACHED,
+
+SESSILE SHAPED, BUBBLES AND DROPS
+
+J. W. Cooke
+
+AUGUST 1971
+
+ 
+
+ 
+
+This report was prepared as an account of work
+sponsored by the United States Government, Neither
+the United States nor the United States Atomic Energy
+Commission, nor any of their employees, nor any of
+their contractors, subcontractors, or their employees,
+makes any warranty, express or implied, or assumes any
+legal liability or responsibility for the accuracy, com-
+pleteness or usefulness of any information, apparatus,
+product or process disclosed, or represents that its use
+would not infringe ptivately owned rights,
+
+ 
+
+OAK RIDGE NATIONAL LABORATORY
+Oak Ridge, Tennessee
+
+Operated by
+
+UNION CARBIDE CORPORATION
+
+for the
+
+U. S. ATOMIC ENERGY COMMISSION
+
+DISTRIBUTION OF THIS DOCU
+
+MENT IS ENLMITER
+iii
+
+CONTENTS
+Abstract « © i i ee ee te ee ee ee ee
+Introduction « « « © vv «te ee eo 0 oe 0 oe a
+
+Derivation of the Interfacial Equation . . .
+
+Numerical Solution of the Interfacial Equation .
+
+Computer Program « « « « + « o o o o + «
+Solution of the Differential Equation . .
+Solution for h/a and V/a® versus g and ¢ . .
+Solution for h/a and V/a® versus § and r/a .
+
+Solution for h/a and V/a® versus r/a . . . .
+
+Range, Running Time, and Accuracy . . .
+Results + ¢ «4 « «vv vv v0 0 vo 0 0 en
+Discussion of Results . . + « « + ov & + o
+
+Estimation of the Accuracy . . . . . .
+
+Comparison with Previous Results . « . . . .
+
+Conclusions « « ov « 4 oo o +o « o © « 0 0 se
+References « © ¢ ¢ « ¢ ov ¢ « o so ov o o « « «
+Nomenclatlre o o o « o o « o o o o 6 o o so + o
+
+AppendiCes « 4 vv 4 4 4 6 ts 6 se se 4 ae ee
+A. Parametric Crossplots «+ « « « « « « «
+B. Tabulated Results « « « o « « ¢ « « «
+
+C. Computer Program « « « « o «+ « + « « &
+
+10
+
+10
+
+17
+17
+21
+21
+22
+25
+
+27
+
+43
+SOLUTION OF THE EQUATION DESCRIBING THE INTERFACE BETWEEN TWO
+FLUIDS FOR THE VOLUME AND PRESSURE WITHIN ATTACHED,
+SESSILE SHAPED, BUBBLES AND DROPS
+
+J. W. Cooke
+
+ABSTRACT
+
+A numerical computer program was written to solve the equa-
+tion describing the interface between two immiscible fluids to
+obtain the shape, size, volume, and pressure of attached bubbles
+and droplets. These relationships are important to the study
+of three-phase heat transfer, superheat, critical constants,
+and interfacial energies. Previous solutions have been obtained
+with limited accuracy for a restricted number and range of vari-
+ables. The present results are given in both graphical and
+tabular form for a wide range and number of parameters, and the
+computer program is included so that an even broader range and
+number of variables, as well as specific values, can be obtained
+as required. In particular, an expression for the maximum-
+bubble-pressure was derived which is considerably more accurate
+over a wider range than previous expressions.
+
+Keywords. Surface tension, interfacial tension, bubbles,
+drops, contact angle, maximum-bubble-pressure, fluid-vapor in-
+terface.
+
+INTRODUCTION
+
+A knowledge of relationships among volume, pressure, shape, and size
+of attached bubbles and droplets are important in the study of boiling
+and condensing heat transfer, superheat and critical point phenomena,
+mass transfer studies, and in the measurement of contact angles and sur-
+
+%* These relationships can be obtained from the solution
+
+face tension.l-
+of the second-order, nonlinear differential equation describing the inter-
+face between two fluids. This equation has been solved by perturbation
+analysis for very small bubble sizes by Rayleigh® and Schrodinger ,® by
+numerical hand calculations for a wide range of discrete drop shapes by
+Bashforth and Adams,” and by numerical computer calculations for droplet
+volumes and heights by Baumeister and Hamill.® However, the Rayleigh-
+
+Schrodinger solution is no longer used extensively because of concern
+
+regarding its accuracy; and the Bashforth and Adams (as well as the
+
+1
+Baumeister and Hamill) solutions were obtained for a limited number and
+
+range of variables.
+
+In order to check the accuracy and to extend the usefulness of the
+above solutions, a numerical computer program was written to solve the
+interfacial equation. The subject program solves the interfacial equation
+for any value of the dimensionless shape parameter, B, for positive values
+of the term BZ (sessile drops or above-attached bubbles) and extends the
+previous solutions for ¢ > 180 degrees. The solution not only provides
+the dimensionless X, Z, ¢ coordinates describing the profiles of the inter-
+face, but also gives the bubble volume within and the pressure difference
+across the interface as a function of profile shape and, in addition, the
+maximum pressure difference across the interface for a given radius of
+attachment (which is required for the calculation of the surface tension
+
+by the maximum-bubble-pressure technique).
+
+This report describes the derivation of the interfacial equation,
+its numerical solution, and the computer program employed. The re-
+sults and an estimation of their accuracy are presented and compared
+
+with the previous solutions.
+
+DERIVATION OF THE INTERFACIAL EQUATION
+
+At the interface separating two immiscible fluids (usually a liquid
+and its vapor), a force imbalance exists which results in an interfacial
+tension. The tension is a force per unit length pulling uniformly in all
+directions tangent to the interface. Neglecting gravitational forces, a
+force balance on an infinitesimal segment of a free surface is shown in
+Fig. l1-a. The surface is bowed by a uniform differential pressure, P,
+where r; and rp are the principal radii of curvature. The force balance
+would thus be:
+
+Fav Nx
+
+PMX MN o=2y| x — + Ap — 5 (1)
+ar; 2rp
+
+ 
+
+*
+The case for negative values of the term BZ (pendant drops or
+below-attached bubbles) will be presented in a later report.
+ORNL-DWG 7{-7609
+
+yAX
+
+ 
+
+ 
+
+ 
+
+VAPOR
+
+LIQUID
+
+ 
+
+ 
+
+BUBBLE (4)
+
+Fig. 1. Schematic View of a Sessile-Type Drop and Bubble
+and the Force Balance on an Infinitesimal Surface Element.
+or
+
+Pe( et) (2)
+ry Tra
+
+If gravitational forces are present, the influence of the dif-
+ferential fluid density, p, must be considered. For an interface assumed
+to be symmetrical about an axis of revolution, the force balance equation
+
+for the bubble shown in Fig. 1-b will be
+
+1 1 pg
+v(m) Swen » (3)
+
+rn Tra &,
+where p = Pp, — Pye At the orgin, r; = rz = b and thus
+2y Pg
+P=—+4— . (4)
+b =
+
+Furthermore, with ry = x/sin ¢, Eq. (3) becomes
+
+2y  pgz sing 1
+= 2 ( r=) no . (5)
+
+b g xX Ta
+
+ 
+
+c
+A similar derivation for the drop shown in Fig. 1-b would also result
+in Eq. (5). This equation can now be made dimensionless with respect to
+
+b, and after rearranging:
+
+ 
+
+ 
+
+1 sin ¢
+- + =2+ Bz , (6)
+R X
+where o
+gpb
+B= (7)
+YE.
+and
+Tp xX z
+R=—"’' X=-, andZ=- .
+b b b
+
+Equation (6) can be transposed into Cartesian coordinates by
+
+substituting
+1 a? 7/ax?
+R [1+ (az/ax)?]1¥ =
+and
+. az /ax
+sings ——m—————
+[1 + (daz/ax)?]¥*®
+to obtain
+327, az"271 az az€)¥=?
+_— Le — = (2 + 82) Lo) , (8)
+ax® ax Xdx ax
+
+which is a second-order nonlinear differential equation, with boundary
+
+conditions:
+X=0 3; Zz =0
+X=0 ; d4z/Xxa&X =1
+
+Although Eq. (8) cannot be solved analytically in terms of ordinary
+
+functions, its numerical solution is described in the next section.
+
+NUMERICAL SOLUTION OF THE INTERFACIAL EQUATION
+
+Equation (6) can be rearranged to read
+
+1
+
+R= (9)
+2 + BZ — (sin @¢)/X
+
+and by definition:
+
+de
+
+—_—=1 ,
+
+deg
+
+ax
+
+— =Rcos ¢g=F (X, Z, ¢&) , (10)
+dg
+
+az
+
+— BRsing =G (X, 2, ¢) - (11)
+de
+
+As long as BZ > 0, R will always be finite.
+A numerical technique of fourth-order accuracy developed by Runge-
+
+Kutta” was selected to solve the set of simultaneous Egs. (9), (10),
+
+and (11); the iterative equations decribing this technique are:
+
+n+1
+
+Zntl
+
+where
+
+mg
+
+n+l
+
+i
+
+n
+
+1
+
+=X +— (k_ + 2k, + 2ky + kg) + 0(20)° , (12)
+1 -
+
+= 2. + c (mg, + 2my + 2mp + mg) + o(ag)® (13)
+
+=, +40 »
+
+n n
+1 1 1
+ap F(X, + Kor Bp TD Mos 8+ 08) ,
+1 1 1
+op F(X + =k, 2, + =m, OF = 09) 5
+
+no
+no
+No
+
+op G(X + = Kg, 2, + =m, @ +08),
+2
+
+i.
+
+1 1 1
+Ap G(X, += ky, Z, += my, ¢+—0L0) >
+2 2 2
+
+0p G(X + Ka, 2, + mg, ¢ + Op) 3
+
+and where the symbol 0(/¢)® represents a term which is small, of the
+
+order (/¢)°, when Ag is small.
+
+Equations (12) and (13) are of a form that can be readily trans-
+
+formed into a computer program.
+COMPUTER PROGRAM
+
+The computer program for the solution of the interfacial equation
+and for the calculation of the various output parameters is listed in
+Appendix C. The program consisted of four parts which are discussed
+
+below.
+
+Solution of the Differential Equation. Two subroutines in both
+
+ 
+
+single and double precision and consisting of four iteration loops were
+written to solve Egs. (12) and (13). The subroutines RHOS and RHOD
+calculate the values of R and supply the values of the functions F and
+G to the subroutines RUNGKS and RUNGKD. These latter subroutines cal-
+culate the values of the coefficients k, and ms and the new values of
+X, Z, and ¢ for reintroduction in RHOS and RHOD to continue the
+iterative procedure. The iteration procedure is initiated by equating
+
+X, Z, and ¢ to zero and R to one.
+
+Solution for h/a and V/a® versus B and ¢. The pressure and volume
+
+ 
+
+within the attached bubble are calculated from X, Z, and ¢. The pressure
+
+relation is given by Eq. (4) and can be simplified by using Eq. (7) and
+
+the definition of the specific cohesion,
+
+ 
+
+2vg
+a = —= (14)
+Pg
+to obtain
+h/a =/2/8 + 2,../8/2 , (15)
+where
+2, = Z(x = ed) =A 3
+and
+h =
+
+g,P/og
+
+The volume relation can be obtained from the integration of
+
+v
+a(=)=n¥ a , (16)
+b®
+
+where X and dZ can be obtained from Eq. (6). Integrating the resulting
+
+equation by parts gives the relationship:
+Vv oe 2 sin ¢
+= —|2 +82]. (17)
+bp B X
+
+Upon substituting Fags. (6), (14), and (15) into Eq. (17), the final
+
+expression for the dimesionless volume is obtained:
+Vv Tr r h
+- =m- (2)(=) sme , (18)
+a® a a a
+
+r
+ECE
+
+a
+
+where
+
+is the dimensionless radius of attachment.
+
+Solution for h/a and V/a® versus 8 and r/a. To obtain the pres-
+
+ 
+
+sure and volume within attached bubbles for a given radius of attachment
+from the numerical solutions X, Z, ¢, of the interfacial equation,
+several conditional "IF" statements were required. The interrelation-
+ship of h/a, 3, r/a, and ¢ are shown schematically in Fig. 2. The
+iterative solution of the interfacial equation proceeds along constant
+
+B lines for given steps of Ap. A conditional check is made to note the
+intersection of the given r/a curve (denoted by 0), and the values at
+the point of crossing are determined by linear interpolation. Since
+
+r/a is multi-valued, an additional check is necessary to note when the
+increasing values of r/a start to decrease at ¢ = nm/2, n=1, 5 ...
+(denoted by O), or when decreasing values start at ¢ = nm/2, n = 3,
+
+7 .. In this manner, solutions for many values of r/a can be obtained
+
+for a given value of RB.
+
+Solutions for h/a and V/a® versus r/a. These solutions were some-
+
+ 
+
+what more difficult to obtain than those described above since it was
+necessary to increment B as well as ¢. Both of the conditional checks
+described above for crossing a given value of r/a and a change from in-
+creasing to decreasing r/a values were required as well as a check for
+the change from increasing to decreasing values of h/a (denoted by A in
+
+Fig. 2).
+ORNL-DWG 71-7610
+
+ 
+
+hfa >
+
+ 
+
+B
+
+ 
+
+ 
+
+ 
+
+Fig. 2.
+Between h/a,
+
+/o
+
+¢, —»
+
+Schematic Representation of the Relationships
+8, r/a, and ®..-
+10
+
+For a given value of B, h/a is a multi-valued function so that the
+choice of increasing or decreasing B to approach h/a must be carefully
+considered. Furthermore, the direction of approach to h/a along the
+given value of r/a must also be carefully considered. To insure the
+most trouble-free solution over the entire h/a versus ¢ field, a
+decremental approach from right to left (as shown by the arrows in
+
+Fig. 2) was chosen.
+
+To reduce the number of iterations required to locate h/a, an esti-
+mate of the value of B is calculated from equations fitted to a few
+preliminary results. The initial B value is then decremented along
+first a coarse grid, and finally along an extra fine grid to obtain the
+
+final solution using double precision.
+
+Range, Running Time, and Accuracy
+
+ 
+
+The ranges of the computer program as presently written are
+0< ¢ < 360° 0.1 £r/a £2.0, and 0.02 £ B £ 150; however, these can
+be easily extended at some sacrifice of either the running time or
+accuracy. The average running time for the program to obtain a value
+of h/a for a given value of r/a is approximately 10 seconds on the
+IBM 360-91 Computer system. The average running time for the other
+
+programs is considerably shorter per solution.
+
+An estimate of the accuracy (to be given later) was obtained by
+comparing the values of h/a as a function of ¢ for various values of §,
+
+Ng, and for single and double precision.
+
+The results of the computer solution are discussed in the next
+
+section.
+
+RESULTS
+The results in both tabular and graphical form are presented in
+this section and in the Appendix.
+
+The profile of a bubble for B = 0.8 is shown in Fig. 3. The pro-
+file is shown extended to ¢ = 360°, which would be possible if a suitable
+11
+
+Lo ORNL-DWG 74-7644
+
+ol LT INL LTT
+y
+
+ 
+
+ 
+
+0.9
+
+ 
+
+0.8
+
+ 
+
+ 
+
+\
+0.6 TN /
+0 NV
+0.2 : B4
+o 7
+
+{0 08 06 04 0.2 O O02 04 06 08 1.0
+
+x/b
+
+z/b
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 3. Profile of a Bubble with B = 0.8 for 0° £ ¢ < 360°
+12
+
+form of attachment were provided, and the center of bouyancy were to
+
+remain on the z axis.
+
+A tabulation of 8, x/b, z/b, h/a, and V/a® for various values of ¢
+are presented in Tables B.l through B.6 (in Appendix B). Plots of h/a
+and V/a® versus ¢ for various r/a are chown in Figs. ! and 5, respectively.
+Figure 4 clearly shows the attainment of a maximum value of h/a (n/a) for
+a given radius of attachment. (This is the basis of the maximum-hubble-
+pressure technique®* for the measurement of surface tension.) In addition,
+
+there is a minimum value of h/a as well as a maximum value for V/a®.
+
+The values of h/a and the corresponding values of V/a®, B, @, x/b,
+7 /b for various values of r/a are given in Table 1, and various cross-
+plots of these variables are given in Figs. A.l through A.4 (Appendix A).
+These plots show that both h/a and 9. approach asymptotic values of
+J? and 180°,” respectively. Thus, the maximum pressure difference
+(h/a) that a large tube can sustain will be very nearly independent of
+
+tube diameter.
+
+A least-squares, polynomial fit of the computer solutions for vari-
+
+ous formulations of h/a and r/a were made. The forumlation that gave
+
+the best fit was
+a a a r
+=z —=Tflz —-)> (19)
+h r h a
+
+which is of the same form as the perturbation solutions of Rayleigh-
+Schrodinger. For this reason, Eq. (19) was fitted to the data of Table 1
+by the relationship:
+
+£(y) = i, + Ly + 12)
+
+Fly) = = dg + iy + ig¥® + eee, (20)
+y
+
+ 
+
+where 15s i,, and i, are the coefficients of the Rayleigh-SchrSdinger
+solution and iz, i4, ig, «.. were determined by the least-squares pro-
+
+cedure and are listed in Table 2.
+
+ 
+
+*
+These values can be obtained by the solution of Eq. (3) with
+1/ry = 0 and 1/b = O.
+13
+
+ORNL-DWG 71-7612
+
+ 
+
+ 
+
+ 
+
+ 
+
+|
+
+ 
+
+0.2
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Wh
+
+ 
+
+—
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+7
+vz
+
+0
+
+ 
+
+0 40 80 120 160 200 240 280 320 360
+é
+
+Fig. 4. Variation of the Dimensionless Pressure Difference, h/a,
+as a Function of @¢, for Various Values of 8 and the Dimensionless Radius
+of Attachment, r/a.
+1h
+
+ORNL-DWG 74-7613
+
+ 
+
+0 50 100 {150 200 250 300 350
+¢:
+
+Fig. 5. Variation of the Dimensionless Volume, v/a®, as a Function
+of ¢, for Various Values of the Dimensionless Radius of Attachment, r/a.
+Table 1.
+
+15
+
+Radius of Attachment (r/a)
+
+Maximum Values of the Pressure (h/a) and Corresponding
+Values of the Size, Shape, and Volume of Bubbles as a
+Function of the
+
+ 
+
+ 
+
+r/a ? B x/b 2/b h/a v/a®
+
+0.12 90.646 0.0290810 0.995156 0.999705 8.413519 0.003651
+0.1k 90.795 0.0397216 0.993412 0.998120 7.236465 0.005806
+0.16 91 .k27 0.0521086 0.991243 1.00397 6.357323 0.008787
+0.18 91.906 0.066277kh 0.988791 1.00649 5.676507 0.012624
+0.20 92.411 0.082286 0.986012 1.00865 5.134652 0.017439
+0.22 92.906 0.100192 0.982929 1.00988 4.693892 0.023404
+0.24 93.420 0.120066 0.979526 1.0106h 4.328985 0.030656
+0.26 93.945 0.141985 0.975814 1.01077 Lh. o2okly 0.039323
+0.28 94.488 0.166037 0.971786 1.01039 3.761790 0.049570
+0.30 95. 47h 0.192565 0.966824 1.01574 3.537926 0.062105
+0.325 96.472 0.229022 0.960416 1.01752 3.299450 0.080293
+0.350 97.476 0.269500 0.953463 1.01785 3.097815 0.101911
+0.375 98.987 0.315035 0.944859 1.02327 2.925744 0.128876
+0.400 100.225 0.365084 0.936222 1.02319 2.777713 0.158475
+0.425 101.985 0.421688 0.925568 1.02746 2.649595 0.197373
+0.450 103.483 0.483756 0.914990 1.02640 2.538105 0.239818
+0.475 104.821 0.551689 0.904402 1.02173 2.4Lho62s 0.286173
+0.50 107.16k4 0.631617 0.889730 1.02464 2.355273 0.346254
+0.55 111.986 0.822082 0.857398 1.02159 2.214232 0.501889
+0.60 117.488 1.072133 0.819487 1.00938 2.104842 0.708170
+0.65 123.990 1.407182 0.774913 0.986809 2.019914 0.987762
+0.70 130.993 1.853431 0.727151 0.950582 1.953875 1.347727
+0.75 137.489 2.414075 0.682654 0.902832 1.90210L 1.768822
+0.80 140.664 2.977900 0.655617 0.853059 1.860445 2.136163
+0.90 152.491 4.841565 0.578448 0.742939 1.798649 3.270626
+1.00 158.492 7.100181 0.530738 0.648972 1.753511 4.356567
+1.10 162.989 10.070060 0.490221 0.567348 1.718720 5.521721
+1.20 165.994 13.866110 0.455742 0.497922 1.690847 6.736407
+1.30 167.994  18.715220 0.k2hko72 0.438376 1.667904 8.005399
+1.40 169.991  25.16100 0.394711 0.385323 1.648640 9.386485
+1.50 171.489  33.48783 0.366575 0.339160 1.632205  10.839000
+1.60 172.494  Lh.16429 0.340486 0.299033 1.618007 12.356187
+1.70 173.488 58.14618 0.315285 0.263383 1.605608  13.971941
+1.80 173.998  75.94175 0.292110 0.232455 1.594682  15.640580
+1.90 174.987 99.7358 0.268978 0.204340 1.584975  17.453834
+2.00 175.489 130.1581 0.247919 0.180031 1.576295  19.31k14k
+
+ 
+16
+
+Table 2. Coefficients for the Polynomial Equations
+Fitted to the Computer Solution
+
+ 
+
+ 
+
+Coefficients Eq. (19) Eg. (21)
+io 1.00000 -0.00090
+iq -0.66667 1.04439
+ia -0.66667 -0.47175
+ia 0.03230 1.43283
+i, -5.52833 -4.59801
+ig 61.191 34 5.38228
+ia -351.38141 -2.73720
+iy 1099. 76625 0.51837
+ig -1930.93994
+ig 1913.36384
+110 -1003.22519
+
+111 216.93848
+
+ 
+17
+
+The main disadvantage of Eq. (19) is that an iterative procedure is
+necessary to calculate a/h. A simpler formulation, but less accurate,
+
+was also fitted to the computer results:
+
+a r
+= (=). (21)
+a
+The coefficients for the polynomial fit of Eq. (21) are also listed in
+Table 2.
+
+=
+
+The accuracy of these two polynomial fits is discussed in the next
+
+section.
+
+DISCUSSION OF RESULTS
+An estimate of the accuracy of the computer results and compari-
+sons with previous results are presented in this section.
+
+Estimation of the Accuracy. Results were obtained for h/a versus @
+
+for B = 0.1 and 100.0 with three values of Ag = 1°, 1/2°, and 1/4° using
+
+ 
+
+both single and double precision. There was no change in h/a (to the
+seventh decimal place) as Ap was decreased from 1° to 1/4° when double
+precision was used for B = 0.1 and only 0.00008% change for B = 100.0.
+The single precision results are plotted in Fig. 6, where the percent
+difference is with reference to the double precision, Ag = 1/4°, values.
+As can be seen, an interval less than Ap = 1° decreased the accuracy of
+
+the results because of rounding errors when single precision was used.
+
+Except for the maximum pressure results listed in Table 1, all the
+tabulated results were computed using single precision and interval
+Np = 1°. The values listed in Table 1 were calculated using double pre-
+cision and are good to at least the sevnth decimal place. The other
+
+tabulated results are good to at least the fifth decimal place.
+
+Comparison with Previous Results. As anticipated, the careful,
+
+ 
+
+tedious hand calculations of Bashforth and Adams (which required a number
+of years to complete) were in good agreement (to the fifth decimal place)
+with the present computer solution. Trouble, however, develops when the
+
+“Bashforth and Adams tables are singly and doubly interpolated to apply
+18
+
+ORNL-DWG 74-7614
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.005
+Ad B
+0 1.00 Od
+° 0.25 0.
+<
+2 ~~ A
+= -0.005 AN
+S Nl N\ 100 100
+wl
+ax
+YW —0010 N\ AN
+[TH
+8 N
+5 0.50 100
+-0.015
+¢ \
+wl
+Qa
+-0.020
+\ 0.25 100
+-0.025
+0 50 100 150 200 250 300 350
+¢
+
+Fig. 6. Comparison of the Single Precision Results for h/a with the
+Double Precision, Ag = 1/4, Values as a Function of @¢, Ap, and B.
+19
+
+their results to practical calculations. Sudgen,*® "by careful inter-
+polation" of Bashforth's tables, constructed a table for calculating
+surface tension by the maximum-bubble-pressure method. (This table is
+the one most often referred to in current literature on surface tension.)
+The percent difference between our solution and Sudgen's as a function of
+
+r/a is shown in Fig. 7. The maximum difference is -0.1%.
+
+Although an error of 0.1% can be neglected for some studies at
+elevated temperatures (where other errors are more significant), this
+magnitude of error can be significant for many measurements made at room
+temperature, where theoretical studies of small changes in the molecular
+structure of the interface are being conducted. Futhermore, this error
+can be magnified by as much as 20 times when the two tube, differential
+
+technique is used to measure surface tension.
+
+To be particularly noted in Fig. 7 is that the Rayleigh-Schrddinger
+solution is in better agreement with the computer solution than Sudgen's
+results all the way from O £ r/a < 0.45. This range of r/a covers a
+large portion of the surface tension studies that have been conducted in
+the past. In fact, the Rayleigh-Schrddinger equation is in error by less
+than 1.05% all the way to r/a = 1.0. Thus, this much simpler analytic
+solution can be used in many cases where precise surface tension values
+
+are not needed.
+
+Also shown in Fig. 7 are the deviations of Egs. (19) and (21) from
+the computer solutions. Equation (19) agrees to within 0.05% all the
+way to r/a = 1.5. The simpler Eq. (21) agrees to within 0.07% from
+0.2 £ r/a < 1.5; but Schrddinger's equation is recommended for r/a < 0.2.
+The main disadvantages of Egs. (19) and (21) is that double precision
+
+should be used in their solution, especially at the larger values of r/a.
+
+Baumeister and Hamill presented their results as plots of droplet
+volumes and heights as functions of droplet radii and contact angles.
+In this form, their results could not be conveniently compared with the
+present results. In addition, their results were given to only the
+
+third significant figure.
+20
+
+ORNL-DWG 741-7645
+0.5 14
+
+\ 41.0
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.4 4
+
+ 
+
+ 
+
+0.9
+
+\ ~— — RAYLEIGH -SCHRODINGER
+
+\ o SUGDEN  °8
+\
+\
+
+ 
+
+EQUATION (19) 0.7
+| === EQUATION (21) ’
+
+|
+. HF Ia
+0.1 / ; 7 /
+A SD » > N . / \ 3 J /
+
+0.3
+
+ 
+
+\ {0s
+| 0.5
+
+ 
+
+ 
+
+ 
+
+PERCENT DIFFERENCE IN 4/a
+
+—
+-—
+Oo)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0 Cg > f ,
+“.{ |o © EC y rye WC
+N / q
+® gr ~
+-0.4 te
+-0.2
+0 0.2 0.4 0.6 0.8 1.0 i.2 1.4 1.6 1.8
+
+r/a
+
+Fig. 7. Deviations of Previous Solutions and Present Polynomial
+Equations from the Present Computer Solution of the Maximum-Bubble
+Pressure.
+21
+
+CONCLUSIONS
+
+A computer program was written to solve the second-order, nonlinear,
+differential equation describing the axially symmetric interface between
+two immiscible fluids. The present solution is limited to sessile-shaped
+drops and bubbles; the solution for pendant-shaped drops and bubbles
+requires a different approach and will be given in a later report. All
+of the present results are accurate to at least the fifth decimal place
+
+with some results accurate to the seventh decimal place.
+
+The results are presented in a form that is useful in the analysis
+of boiling and condensing heat transfer, superheat, critical constants,
+and in the measurements of contact angles and surface tension. In addi-
+tion, these results may be of use in the design of equi-stressed shells
+for containment vessels (i.e., above-ground water tanks, under-water
+storage of liquids and gases, lighter-than-air ballons, and submerged
+marine laboratories). The computer program is listed so that a wider
+
+range and nunber of variables can be obtained as desired.
+
+REFERENCES
+
+1. F. Kreith, Principles of Heat Transfer, pp. 308-437, International
+Textbook Company, Scranton, Pennsylvania, lst ed., 1959.
+
+2. J. A. Edwards and H. W. Hoffman, Superheat Correlation for Boiling
+Alkali Metals, Proceedings of the Fourth International Heat Transfer
+Conference, Versailles, September 1970 (under the book title "Heat
+Transfer 1970"), Elsevier Publishing Ccmpany, Amsterdam, Netherlands,
+
+1970.
+
+ 
+
+ 
+
+3. A. V. Grosse, The Relationship Between the Surface Tension and Energies
+of Liquid Metals and Their Critical Temperatures, J. Inorg. Nucl. Chem.,
+
+oh:1h7-156 (1962).
+
+ 
+
+4. D. W. G. White, Theory and Experiment in Methods for the Precision
+Measurement of Surface Tension, Trans. ASME, 55: 757 (1962).
+
+5. Lord Rayleigh, On the Theory of the Capillary Tube, Proc. Roy. Soc.,
+92 (Series A): 184-195 (1915).
+
+6. Erwin Schrddinger, Notiziiber den Kapillardruck in Gasblasen, Ann.
+Physik., 46: 413-418 (1915)
+Te
+
+9.
+
+10.
+
+09
+0
+
+=|
+
+22
+
+F. Bashforth and J. C. Adams, An Attempt to Test the Theories of
+Capillary Action by Comparing the Theoretical and Measured Forms of
+Drops of Fluids, University Press, Cambridge, Massachusetts, 1883.
+
+ 
+
+K. J. Baumeister and T. D. Hamill, Liquid Drops: Numerical and
+Asymptotic Solutions of their Shapes, NASA-TN-D-4779, National
+Advisory Committee for Aeronautics, September 1968.
+
+F. B. Hildebrand, Introduction to Numerical Analysis, pp. 236-239,
+McGraw-Hill, New York, 1956.
+
+S. Sugden, The Determination of Surface Tension from Maximum Pressure
+in Bubbles, J. Chem. Soc., 1: 858-866 (1922).
+
+NOMENCLATURE
+
+distance from the origin to the plane of attachment, cm
+
+1
+
+specific cohesion ove, /eg, enf
+
+radius of curvature at the vertex of the bubble, cm
+local acceleration due to gravity, cm/sec”
+dimensional constant, dyne.sec®/g.cm
+
+pressure differential across interface, cm of fluid with density p
+
+maximum value of h for given value of r/a, em of fluid with
+density p
+
+coefficients of polynomial equations
+coefficients of numerical equations
+
+coefficients of numerical equations
+
+pressure differential across interface, dyne [cof
+radius of circle of attachment, cm
+
+dimensionless radius of attachment
+
+ri, ry principal radii of curvature of the interface, cm
+
+dimensionless value of rg, rg/b
+
+volume enclosed by the interface, em?
+<i
+
+23
+
+volume enclosed by the interface for a given value of r/a at
+h/a = h/a, cm®
+
+horizontal coordinate, cm
+
+value of x for a given value of r/a at h/a = h/a, cm
+dimensionless x, x/b
+
+value of X at x =r
+
+independent variable in polynomial equation
+
+vertical coordinate, cm
+
+value of z for a given value of r/a at h/a = h/a, cm
+dimensionless z, z/b
+
+value of Z at x =r
+
+Greek Letters
+
+el 8 © <<
+
+dimensionless parameter = gob®/g vy = 2(b/a)?
+
+value of B for a given r/a at h/a = h/a
+
+interfacial tension, dyne/cm
+
+angle between axis of revolution and the normal to the surface
+value of ¢ at the radius of attachment
+
+value of ¢_ for a given r/a at h/a = h/a
+
+positive density difference between the two fluids, g/cm®
+APPENDICES
+A. PARAMETRIC CROSSPLOTS
+
+Various crossplots of the parameters shown in Figs. 4 and 5 are
+given in Figs. A.1l, A.2, and A.3. The maximum bubble radius as a
+function of the angle ?. for various radii of attachment is shown
+plotted in Fig. A.k, For ®. < 90°, the maximum bubble radius would
+be the radius of attachment. Also shown in Fig. A.4 is the loci of
+the maximum bubble radius where the maximum bubble pressure is
+
+reached.
+
+27
+28
+
+ORNL-DWG 74-7646
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+hg
+
+ 
+
+ 
+
+AN
+
+0 02 04 06 08 {10 12 44 16 48 2.0
+
+t/a
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. A.l. Dimensionless Maximum-Pressure-Difference Across the
+Interface Separating Two Fluids as a Function of the Dimensionless Radius
+of Attachment.
+29
+
+ORNL-DWG 74-7647
+
+ 
+
+80
+
+ 
+
+70
+
+ 
+
+60
+
+ 
+
+50
+
+ 
+
+ 
+
+ 
+
+30 /
+/
+
+10 4
+
+_
+0 ———
+
+90 100 #0 {20 430 440 150 1160 70 480
+r
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+JE
+
+ 
+
+ 
+
+Fig. A.2. The Value of the Parameter B at h/a = h/a as a Function of ¢ .
+r
+30
+
+ORNL—DWG 74-7648
+
+20 [
+J
+
+1.0
+r/o Pd
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.5 7
+
+/
+
+90 00 HO 120
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0
+130 140 50 160 1470 180
+
+ér
+
+The Dimensionless Radius of Attachment as a Function of
+
+Fig. A.3
+= h/a.
+
+3. at h/a
+31
+
+ORNL-DWG 71-7649
+
+2.2
+
+rfa=1.5 \\
+2.0
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+/
+1.8 4 \
+AT OF (¥/a) ax
+6 —
+A 1.0
+1.4 / AN
+1.2 ———
+
+ 
+
+0
+
+(Xa) ax
+
+ 
+
+1.0 7
+
+.6
+/| oA
+0.8 bs 1 TT
+3
+
+ 
+
+ 
+
+ 
+
+17/7
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+/ / \
+pe —
+0.6 / 0.2 =] N
+/ / NN
+
++] pe
+
+0.2 {=
+
+0
+
+90 120 450 480 210 240 270 300 330 360
+
+¢
+
+Fig. A.4. Maximum Radius of a Bubble (x/a at ¢ = 90°) as a Function
+of ¢ for Various Radii of Attachment (r/a). For ¢_ < 90°, (x/a) =r/a.
+Tr Tr ? max
+B. TABULATED RESULTS
+
+The computer results for the size, shape, pressure, and volume
+of attached bubbles and drops for given radii of attachment are listed
+
+in Table B.1l through B.6. The Results are arranged in ascending values
+
+of ¢.
+
+33
+34
+
+ 
+
+ 
+
+Teble B.l. Size, Shape, Pressure, and Volume of Bubbles and
+Drops with a Given Radius of Attachment
+r/a = 0.2
+
+3
+
+®.. x/b z/b h/a V/a
+30.00 2.99 0.05168 0.00135 0.26341 0.00030
+18.00 3.86 0.06667 0.00225 0.34009 0.00042
+8.00 5.80 0.10000 0.00505 0.51009 0.00063
+5.50 7.00 0.12061 0.0073k 0.61519 0.00077
+4.00 8.21 0.14142 0.01013 0.72143 0.00090
+3.50 8.78 0.15119 0.01158 0.77125 0.00096
+2.90 9.66 0.16609 0.01400 0.84731 0.00106
+2.30 10.86 0.18650 0.01765 0.95144 0.00119
+2.00 11.66 0.20000 0.02317 1.02032 0.00128
+1.80 12.30 0.21082 0.02262 1.07556 0.00135
+1.50 13.49 0.23094 0.02717 1.17823 0.00149
+1.10 15.81 0.26968 0.03727 1.37604 0.00175
+0.95 17.05 0.29019 0.04327 1.48078 0.00189
+0.80 18.63 0.31623 0.05161 1.61378 0.00207
+0.66 20.59 0.34816 0.06295 1.77694 0.00229
+0.58 22.04 0.37139 0.07194 1.89569 0.00247
+0.50 23.84 0.40000 0.08399 2.04200 0.00268
+0.46 2h.o2 0.41703 0.09166 2.12910 0.00281
+0.42 26.17 0.43644 0.10089 2.22841 0.00296
+0.38 27.62 0.45883 0.11220 2.34306 0.00313
+0.34 29.35 0.48507 0.12636 2.47745 0.00334
+0.30 31.46 0.51640 0.144673 2.63801 0.00361
+0.25 34.87 0.56569 0.17662 2.89087 0.00405
+0.23 36.59 0.58977 0.19386 3.01458 0.00427
+0.21 38.60 0.61721 0.21486 3.15569 0.00455
+0.19 40.99 0.64889 0.24102 3.31872 0.00489
+0.17 43.01 0.68599 0.274 7h 3.51007 0.00531
+0.15 h7.60 0.73030 0.31993 3.73910 0.00585
+0.14 49.86 0.75593 0.34889 3.87195 0.00622
+0.13 52.51 0.78446 0.38410 4.02025 0.00664
+0.12 55.69 0.81650 0.42796 4.18731 0.00719
+0.11 59.65 0.85280 0.48479 4.37771 0.00792
+0.10 64.87 0.89443 0.56306 4.5980. 0.00898
+0.09 72.70 0.94281 0.68614 4.85960 0.01079
+0.0828 84.85 0.98295 0.88466 5.09473 0.01hhh
+35
+
+ 
+
+ 
+
+Table B.1 (Continued)
+
+8 ¢ x/b z/b h/a v/a®
+0.0828 95.17 0.98295 1.05331 5.12905 0.01878
+0.09 107.58 0.94281 1.24471 4.97809 0.02660
+0.10 115.80 0.89443 1.35781 4.77575 0.03445
+0.11 121.43 0.85280 1.42604 4.59845 0.04173
+0.12 125.82 0.81650 1.47280 4. hh3oh 0.04890
+0.13 129.46 0.78446 1.50654 4.30642 0.05606
+0.1k4 132.59 0.75593 1.53162 4.18487 0.06328
+0.15 135.34 0.73030 1.55053 4.07611 0.07058
+0.17 140.07 0.68599 1.57565 3.88935 0.08542
+0.19 14k.07 0.64889 1.58951 3.73435 0.10060
+0.21 147.60 0.61721 1.59609 3.60326 0.11610
+0.23 150.78 0.58977 1.59777 3.49067 0.13189
+0.25 153.70 0.56569 1.59596 3.39269 0.14794
+0.34 164.94 0.48507 1.56461 3.07046 0.22259
+0.38 169.34 0.45883 1.54451 2.96739 0.25668
+0.k2 173.53 0.43644 1.52274 2.87998 0.29109
+0.46 177.57 0.41703 1.50000 2.80452 0.3257h
+0.58 189.15 0.37139 1.42956 2.62679 0.43005
+0.66 196.74 0.34816 1.38256 2.53500 0.49949
+0.70 200.55 0.33806 1.35938 2.49453 0.53405
+0.80 210.35 0.31623 1.30143 2.40423 0.61955
+0.90 220.90 0.29814 1.24333 2.32476 0.70350
+1.00 233.12 0.28284 1.18282 2.25059 0.78543
+1.10 250.16 0.26968 1.11197 2.17306 0.86409
+1.10 289.74 0.260968 1.01358 2.10009 0.85531
+1.00 306.55 0.28284 1.00345 2.12376 0.77164
+0.90 318.54 0.29814 1.01038 2.16850 0.68854
+0.80 328.88 0.31623 1.02769 2.23111 0.60513
+
+ 
+36
+
+Table B.2. Size, Shape, Pressure, and Volume of Bubbles and
+Drops with Given Radius of Attachment
+
+ 
+
+ 
+
+r/a = 0.3
+8 ® x/b z/b h/a v/a®
+30.0 4.55 0.07746 0.00307 0.27011 0.00165
+18.0 5.87 0.10000 0.00509 0.34859 0.00215
+12.0 7.20 0.12247 0.00764 0.42700 0.00264
+8.0 8.83 0.15000 0.01145 0.52291 0.00325
+5.5 10.66 0.18091 0.01672 0.63076 0.00393
+4.0 12.53 0.21213 0.02303 0.73967 0.00464
+3.5 13.41 0.22678 0.02640 0.79085 0.00496
+2.9 14.77 0.24914 0.03194 0.86891 0.00547
+2.3 16.63 0.27975 0.04045 0.97588 0.00618
+2.0 17.87 0.30000 0.04663 1.04663 0.00667
+1.8 18.88 0.31623 0.05197 1.10340 0.00745
+1.7 19.45 0.32540 0.05512 1.13547 0.00727
+1.5 20.76 0.34641 0.06271 1.20901 0.00779
+1.25 22.85 0.37947 0.07579 1.32483 0.00861
+1.2 23.35 0.38730 0.07908 1.35225 0.00881
+1.1 24 46 0.40452 0.08662 1.41264 0.00925
+1.0 25.74 0.42426 0.09574 1.48191 0.00977
+0.95 26.46 0.43529 0.10110 1.52063 0.01005
+0.9 27.24 0.44721 0.10704 1.56252 0.01038
+0.8 29.05 0.47434 0.12135 1.65789 0.01113
+0.7 31.28 0.50709 0.14017 1.77323 0.01206
+0.66 32.32 0.52223 0.14943 1.82662 0.01250
+0.58 34.79 0.55709 0.17222 1.94970 0.01358
+0.5 37.92 0.60000 0.20334 2.10167 0.01499
+0.46 39.86 0.62554 0.22365 2.19240 0.01588
+0.42 42.13 0.65465 0.24857 2.29609 0.01695
+0.38 44.87 0.68825 0.27994 2.41618 0.01829
+0.34 48.25 0.72761 0.32082 2.55764 0.02000
+0.3 52.62 0.77460 0.37669 2.72788 0.02236
+0.25 60.61 0.84853 0.48659 3.00046 0.02715
+0.23 65.36 0.88465 0.55577 3.13731 0.03036
+0.21 72.20 0.92582 0.65884 3.29956 0.03559
+0.195 81.53 0.96077 0.80327 3.45338 0.04423
+37
+
+ 
+
+ 
+
+Table B.2 (Continued)
+
+B ¢ x/b z/b h/a v/a®
+0.1925 95.40 0.96694 1.01465 3.53793 0.06203
+0.21 108.40 0.92582 1.19288 3.47260 0.08758
+0.23 115.90 0.88465 1.27945 3.38272 0.10864
+0.25 121.34 0.84853 1.33222 3.29944 0.12796
+0.3 131.17 0.77460 1.40212 3.12503 0.17h1k
+0.34 137.09 0.7276 1.h270k 3.01374 0.21045
+0.38 142.08 0.68825 1.43800 2.92095 0.24666
+0.k2 146.46 0.65465 1.44035 2.84223 0.28285
+0.46 150.41 0.62554 1.43727 2.77443 0.31905
+0.50 154.05 0.60000 1.43052 2.71526 0.35524
+0.58 160.65 0.55709 1.41014 2.61634 0.42743
+0.66 166.63 0.52223 1.38465 2.53620 0.49919
+0.7 169.45 0.50709 1.37088 2.50133 0.53471
+0.8 176.18 0.47434 1.33487 2.42538 0.62303
+0.9 182.56 0.44721 1.29805 2.36147 0.70984
+1.0 188.74 0.4kakeb 1.26124 2.30604 0.79517
+1.1 194.79 0.40452 1.22489 2.25680 0.87863
+1.2 200.82 0.38730 1.18910 2.21206 0.96038
+1.5 219.70 0.34641 1.08403 2.09350 1.19399
+1.7 234.58 0.32540 1.01218 2.01784 1.33856
+1.7 304.88 0.32540 0.83893 1.85810 1.29849
+1.2 337.48 0.38730 0.87818 1.97123 0.91837
+1.1 343,30 0.40452 0.89730 2.01386 0.84032
+1.0 349,15 0.42426 0.92136 2.06571 0.76142
+0.9 355.15 0.44721 0.95155 2.12903 0.68168
+
+ 
+Table B.3.
+
+38
+
+Size, Shape, Pressure, and Volume of Bubbles and
+Drops with Given Radius of Attachment
+
+ 
+
+ 
+
+r/a = 0.4
+8. x/b z/b h/a v/a®
+30.0 6.17 0.10328 0.00548 0.27941 0.00533
+18.0 7.98 0.13333 0.00912 0.36068 0.00692
+12.0 9.79 0.16330 0.01372 0.44187 0.00850
+8.0 12.02 0.20000 0.02063 0.54126 0.01047
+5.5 1h.54 0.24121 0.03019 0.65309 0.01270
+4.0 17.13 0.28284 0.04173 0.76612 0.01504
+3.5 18.35 0.30237 0.04787 0.81926 0.01613
+2.9 20.24 0.33218 0.05808 0.90040 0.01786
+2.3 22.86 0.37300 0.07385 1.01170 0.02030
+2.0 24.63 0.40000 0.08546 1.08546 0.02196
+1.8 26.06 0.42164 0.09548 1.14468 0.02332
+1.5 28.78 0.46188 0.11589 1.25507 0.02594
+1.25 21.84 0.50596 0.14108 1.37644 0.02897
+1.1 3k.23 0.53936 0.16228 1.46875 0.03139
+1.0 36.17 0.56569 0.18038 1.54176 0.03341
+0.8 41.32 0.63246 0.23257 1.72823 0.03897
+0.66 46.69 0.69631 0.29255 1.90883 0.04512
+0.58 50.97 0.74278 0.34404 2.04222 0.05041
+0.5 56.89 0.80000 0.41997 2.20998 0.05828
+0.46 60.93 0.83406 0.47434 2.31263 0.06413
+0.42 66.32 0.87287 0.54940 2.43395 0.07262
+0.38 74.69 0.91766 0.66956 2.58601 0.08785
+0.36 97.25 0.94281 0.98565 2.77520 0.14837
+0.38 105.99 0.91766 1.09093 2.76968 0.18416
+0.42 115.44 0.87287 1.18463 2.72505 0.23502
+0.46 121.96 0.83406 1.23412 2.67701 0.27950
+0.5 127.16 0.80000 1.26371 2.63185 0.32143
+0.58 135.45 0.74278 1.12924 2.55291 0.40169
+0.66 142.15 0.69631 1.29953 2.48730 0.47925
+0.7 145.12 0.67612 1.29854 2.45854 0.51723
+0.8 151.82 0.63246 1.28804 2.39577 0.61073
+0.9 157.75 0.59628 1.27074 2.34315 0.70194
+1.0 1632.17 0.56569 1.24977 2.29794 0.79124
+1.1 168.21 0.53936 1.22692 2.25831 0.87839
+39
+
+ 
+
+ 
+
+Table B.3 (Continued)
+¢ x/b 2 /b h/a v/a®
+1.2 172.98 0.51640 1.20312 2.22293 0.96372
+1.2 175.29 0.50596 1.19105 2.20652 1.00587
+1.5 186.20 0.46188 1.13075 2.13396 1.20846
+1.7 194.51 0.43386 1.08367 2.08375 1.36230
+2.0 206.81 0.40000 1.01557 2.01557 1.57998
+2.5 229.01 0.35777 0.90542 1.90671 1.90695
+2.5 310.00 0.35777 0.71442 1.69317 1.81377
+2.0 331.06 0.40000 0.73401 1.73401 1.47971
+1.7 342.67 0.43386 0.76316 1.78825 1.27326
+1.5 350.54 0.46188 0.79225 1.84081 1.13175
+
+ 
+Table B.L.
+
+Lo
+
+Size, Shape, Pressure, and Volume of Bubbles and
+Drops with Given Radius of Attachment
+
+ 
+
+ 
+
+r/a = 0.6
+B ®,. x/b z/b h/a v/a®
+60.0 6.98 0.11094 0.00647 0.21801 0.01748
+30.0 9.75 0.15492 0.01266 0.3072k4 0.02813
+18.0 12.64 0.20000 0.02120 0.39692 0.03656
+12.0 15.54 0.24495 0.03198 0.48658 0.04515
+8.0 19.17 0.30000 0.04838 0.59676 0.05604
+5.5 23.35 0.36181 0.07133 0.72131 0.06879
+4.0 27.72 0.42426 0.09970 0.84811 0.08255
+3.5 29.83 0.45356 0.11501 0.90807 0.08935
+2.9 33.16 0.49827 0.14101 1.00025 0.10029
+2.3 37.95 0.55950 0.18242 1.12813 0.11668
+2.0 41.31 0.60000 0.21408 1.21407 0.12865
+1.8 44.15 0.63246 0.2k231 1.28397 0.13910
+1.7 45.82 0.65079 0.25954 1.32394 0.14544
+1.5 419.88 0.69282 0.30298 1.41709 0.16135
+1.2 57.15 0.75895 0.38608 1.5701k4 0.19222
+1.2 59.11 0.77460 0.40935 1.60808 0.20112
+1.1 63.92 0.80904 0.46757 1.69516 0.22420
+1.0 70.86 0.84853 0.55331 1.80546 0.26115
+1.0 110.89 0.84853 0.97076 2.10065 0.61473
+1.1 119.62 0.80904 1.01944 2.10444 0.7k1L7
+1.2 126.22 0.77460 1.04278 2.09873 0.85283
+1.2 129.07 0.75895 1.04934 2.09449 0.90534
+1.5 140.75 0.69282 1.05581 2.06906 1.14754
+1.7 148.28 0.65079 1.04488 2.04798 1.32506
+1.8 151.67 0.63246 1.03679 2.37679 1.40998
+2.0 157.90 0.60000 1.01784 2.01784 1.57280
+2.3 166.26 0.55950 0.98579 1.98964 1.80255
+3.0 182.08 0.48990 0.90845 1.92912 2.28289
+3.5 193.87 0.45356 0.8557k 1.88796 2.58703
+4.0 204.25 0.Lk2ko6 0.80597 1.84692 2.86294
+6.0 258.64 0.346541 0.60326 1.62222 3.68271
+6.0 281.23 0.34641 0.55639 1.54104 3.59171
+4.0 332.13 0.42426 0.55032 1.48537 2.56096
+3.0 351.28 0.48990 0.59863 1.54966 2.03835
+
+ 
+hy
+
+Table B.5. Size, Shape, Pressure, and Volume of Bubbles and
+Drops with Given Radius of Attachment
+
+ 
+
+ 
+
+r/a = 1.0
+8 3. x/b z/b h/a v/a®
+60.0 13.46 0.18257 0.01914 0.28739 0.17182
+30.0 19.24 0.25820 0.03877 0.40835 0.24755
+18.0 25.24 0.33333 0.06585 0.53089 0.32807
+16.0 26.91 0.35355 0.07454 0.56438 0.35097
+12.0 31.60 0.40825 0.10137 0.65655 0.41635
+8.0 40.18 0.50000 0.15888 0.81776 0.54200
+6.5 45.96 0.55470 0.20262 0.91998 0.63182
+5.5 51.73 0.60302 0.24929 1.01642 0.72663
+4,5 61.02 0.66667 0.32813 1.15886 0.89237
+4.0 69.09 0.70711 0.39734 1.26903 1.05200
+3.7 77.81 0.73522 0.46919 1.37338 1.24390
+3.7 103.15 0.73522 0.63176 1.59450 1.95007
+4.0 113.93 0.70711 0.67052 1.65536 2.32888
+L.5 125.33 0.66667 0.69002 1.70170 2.78302
+5.5 140.90 0.60302 0.68546 1.73973 3.48414
+6.5 152.52 0.55470 0.66411 1.75195 4, o54k2
+8.0 166.51 0.50000 0.62550 1.75100 4.76824
+10.0 181.82 0.44721 0.57493 1.73279 5.54361
+16.0 220.40 0.35355 0.44901 1.62354 7.13667
+20.0 253.01 0.31623 0.36935 1.48421 7.66733
+20.0 286.54 0.31623 0.32147 1.33281 7.19870
+16.0 316.08 0.35355 0.31169 1.2351k 6.05930
+10.0 348.47 0.44721 0.35006 1.22997 4.49208
+
+ 
+Lo
+
+ 
+
+ 
+
+Table R.6. Size, Shape, Pressure, and Volume of Bubbles and
+Drops with Given Radius of Attachment
+rfa = 1.5
+
+8 8, x/b z/o h/a v/a®
+100.0 21.00 0.21213 0.03058 0.35762 0.83884
+80.0 23.69 0.23717 0.03859 0.40220 0.94928
+60.0 27.71 0.27386 0.05210 0.46793 1.11632
+40.0 34.97 0.33541 0.08054 0.58381 1.42593
+30.0 41.80 0.38730 0.11119 0.68884 1.72815
+2k.0 48.69 0.43301 0.14478 0.79022 2.04596
+20.0 56.13 0.47434 0.18271 0.89402 2.40649
+18.0 61.81 0.50000 0.21185 0.96887 2.69503
+16.0 70.85 0.53033 0.25677 1.07982 3.18127
+18.0 124.73 0.50000 0.39672 1.52349 6.89629
+20.0 133.98 0. 47h3k 0.3944kL 1.56354 7.66084
+24.0 148.02 0.43301 0.38033 1.60617 8.8572k
+30.0 163.84 0.38730 0.35409 1.62959 10.20717
+50.0 200.61 0.30000 0.27914 1.59568 12.93770
+64.0 222.48 0.26517 0.23868 1.52697 13.97587
+80.0 255.0k 0.23717 0.19292 1.37824 14.29483
+80.0 284.50 0.23717 0.16827 1.22238 13.20281
+64.0 313.14 0.26517 0.16132 1.08935 11.13856
+50.0 330.62 0.30000 0.16778 1.03892 9.65580
+32.0 354.65 0.37500 0.19654 1.03617 7.76366
+
+ 
+C. COMPUTER PROGRAM
+
+The Fortran listing of the computer program for solving the inter-
+facial equation and computing the various parameters presented in this
+report is given in Table C.1. The ranges of ¢, B, and r/a can be
+easily extended at some sacrifice of either the running time or the
+accuracy. Other parameters, such as maximum drop height and radius as
+a function of drop volume and contact angle, can be obtained either by
+
+modifying one of the MAIN subroutines or by adding another routine.
+
+43
+Ly
+
+Table C.1. Computer Program
+
+ 
+
+OOO
+
+SOLUTION OF INTERFACIAL EQ. FOR THE PRESS. AND VOL.
+WITHIN ATTACHED BUBBLE. CASE 1-ATTACHED ABOVE (POSITIVE BETA)
+
+IMPLICIT REAL*B(D)+sREAL*4(A=-Cy E-H,0-2)
+DIMENSIONA(4),B(4)yC(4),D(4),E(8)4yR(4),G1(10),P(4)
+DIMENSIONDA(4),DB(4),DC(4),DZ(4),DE(8),DP(4),DR(4)
+9 FORMAT (11,12)
+11 READ 9,1,4N3
+IF (1-1)401410,501
+
+SOLUTION AT MAX ,PRESS FOR GIVEN VALUES OF R/A(=0G)
+
+300 FORMAT{F15.7)
+10 CONTINUE
+
+DO 201 N&=1,N3
+READ300,6G
+
+ESTIMATE OF INITIAL BETA
+IF(GeGE«0.099.AND.GC.LT.0.4)G0T01001
+IF(GeGE+0e39+AND.G.LT.0.8)G0T0O1002
+IF(GeGEeDe79 e AND&G «LL Te3.01)G0T01003
+
+1001 BETA=411175-.92434%G+3.92521%G%%24
+
+GOT0301
+
+1002 BETA=2.87267-12.78143%G+16.40021%G*%*2.,
+GOTO301
+
+1003 BETA=16430443-49 ¢43188%GC+40454628 5G 4x2,
+GO0T0301
+
+C COURSE BETA GRID
+
+301 BETA=BETA+0.1%BETA
+N20=0
+P(2)=0
+58 BETA=BETA-.OL*BETA
+CALL MAINS(AyB+CsZ yEsH JP 4BETA,G4R)
+IF(P(1)-P(2))59,+59460
+60 P(2)=P (1)
+N20=N20+1
+GOTO58
+59 IF(N20-1)301,301,57
+57 PRINT 50,BETA,H
+PRINT 100
+PRINT 2004E(8)4E(6)9E(T)HR{1)4yP(1),4V
+BETA=BETA+.02%*BETA
+P(2)=0
+
+C FINE BETA GRID
+
+65 BETA=BETA-.001%BETA
+CALL MAINS (AyByCyZ yEsHy JoP +BETA,G sR)
+IF(P{1)-P(2))61461462
+
+62 P(2)=P(1)
+GOT065
+C
+
+OOO,
+
+OOOO
+
+)
+Table C.1 (Continued)
+
+61 PRINT 50,BETAH
+PRINT 100
+PRINT 2004E(8)4E(6)yE(TI3R(1)4,P(1),V
+BETA=BETA+.002=BETA
+PP(2)=0
+EXTRA FINE BETA GRID WITH DOUBLE PRECI SION
+DBETA=BETA
+DG =G
+66 DBETA=DBETA-.0001*DBETA
+CALL MAIND(DA,DB.DC+DZ,DEsDH,J,DP,DBETA,DG,4DR)
+IF(DP(1)-DP (2)1)63,+63,64
+64 DP(2)=DP (1)
+GOT0N66
+63 DV=3414159265%DG #*{DP(1)*DG ~DSIN(DE(5)}))
+DE(4)=DE(1)%57 .29577957
+DE(8)=DE(5)%57.29577957
+PRINT 50,DBETA,DH
+50 FORMAT (IHZ246HBETA =3E15.7 6X 43HH =,E15,7///)
+100 FORMAT (IMHO 35X 3 3HPHI 48X 3 3HX/By 13X 4 3HZ/Bys 13Xy 3HR/ Ay 13 Xy3HH/ A,
+113Xy4HV/AZ)
+200 FORMAT(1IH ,0P1F94341P5E16.7)
+PRINT100
+PRINT200,DE(B) +DE(6)4DE(T)4DG,DP(1),DV
+201 CONTIMUE
+GOTO 11
+
+SOLUTION FOR GIVEN VALUES CF BETA AND R/A{=G1l)
+
+400 FORMATI(BF10.7)
+401 CONTINUE
+
+DO 202 N4=1,N3
+
+READ 400.BETA,(G1(I),I1=1,8)
+
+CALL MAINIS(AsBsCsZ sE 4H sJ4P +BETAL,G1,4R)
+202 CCNTIMUE
+
+GOTO 11
+
+SOLUTION FOR GIVEN VALUES OF BETA AT INTERVALS (Nl) OF PHI
+UP TO N2
+
+501 CONTINUE
+
+DO 203 N4=1,N3
+
+READ 5004+BETAsN1,N2
+500 FORMATI(F1047 4214)
+
+CALL MAINZ2S(A4BsC eZ sEsH JP sBETA,G,R 4 N1,N2)
+203 CONTINUE
+
+GOTO 11
+
+END
+L6
+
+Table C.1 (Continued)
+
+ 
+
+oy
+
+OOD
+
+OH Uw HD
+
+150
+
+SUBROUTINE MAINS(A3ByCeZ ¢EsHyJ9yP ¢BETA,G,4R)
+
+IMPLICIT REAL*8(D) 4REAL*4(A-Cy E-H,0-2)
+DIMENSTONA(4) 4B(4)y C4) 9Z (4)4E(8)4P (4) 4R (4)
+H=0s1745329E-01
+
+E(6)=0.
+
+J=3
+
+E{1)=0.
+
+E(2)=0.
+
+E(3)=0.
+
+N1=1
+
+R(21=0.
+
+DO150M=1,4360
+
+CALL RUNGKS (AyBsC9Z yEyH 3 JsBETA3G,4P)
+R{1)=E(2)*SORT(BETA/2,0)
+
+GOTO(445) ,N1
+
+IF(GR(1))5,3,3
+
+TF(R(L)I-R(2))8,48,10
+
+IF(GR(1))}1,6,7
+
+N1=2
+
+R(2)=R (1)
+
+E(5)=E(1)
+
+E(6)=FE(2)
+
+E(7)=E(3)
+
+CONTINUE
+
+F=(G-R(2))/(R(1)=-R(2))
+E(5)=F=(E(1)-E(5))+E(5)
+E(6)=F{Z(2)-E(6))+E(6)
+E(T)=F5(EA(3)=E(7))+E (7)
+P(L)Y=SCRTI(2./BETAY+E(T)%SQRT(BETA/2.)
+GOTO9
+
+P(1)=1.0
+
+P(2)=2.0
+
+RETURN
+
+END
+
+SUBROUTINE MAIND(DA,DByDC,DZ yDEsDH,+J5sDPyDBETA,DG4DR)
+
+IMPLICIT REAL*B(D) REAL*4(A-CyE-H,0-2)
+DIMENSTIONDA(4),DB(4)4yDC(4)4DZ (4)4DE(8),DP{4),DR(4)
+DH=0.2726646D-02
+
+DE(6)=0.
+
+J=3
+
+DE(1)=0.
+
+DE(2)=0.
+
+DE(3)=0.
+
+Ni=1
+47
+
+Table C.1 (Continued)
+
+ 
+
+UD
+
+DO150M=1,720
+
+CALL RUNGKD(DA+DByDCyDZ4yDE4DHy Jy DBETA,DGyDP)
+DR{L)=DE(2)*DSART(DBETA/2.0)
+
+GOTO(445)9N1
+
+IF(DG-DR(1))5,150,150
+
+TF{DG=DR (11) 146,7
+
+DR{2)=DR (1)
+
+DE(5)=DE(1)
+
+DE(6)=DE(2)
+
+DE(7)=DE(3)
+
+N1l=2
+
+CONTINUE
+
+DF=(DG-DR(2))/(DR(1)=DR (2))
+DE(5)=DF*{DE(1)~DE(5))+DE(5)
+DE(6)Y=DF*(DE(2)-DE(6))+DE(6)
+DE(7)=DF*(DE(3)-DE(7))+DE(T)
+
+DP (1)=DSQRT(2+./DBETA)+DE(T7)*DSQRT(DBETA/2,)
+RETURN
+
+END
+
+SUBROUTINE MAINIS(AyByCosZ yE4H,J4P4BETA,G1,R)
+
+1MPLICLT REALS (D),REAL*4 (A-CyE-HH ,0-Z)
+
+ESTO (4) B84) sCl4)sZ(4)4E(8),P{4)4R(4),G1(10)
+) 0 7266068" 02
+
+y=
+
+311
+ie
+J=3
+R{2})=0.
+E{1)=0.
+E(2)=0.
+E(3)=0.
+N2=1
+Nl = 1
+I=1
+
+DO 150 M=1,720
+
+CALL RUNGKS(AsBsCsZsEsHsJyBETAZG1,4P)
+R{1)=E(Z)*SQRT(BETA/2.0)
+GOTO(4454522) 4N1
+TF(GI{IY-R{1))746,3
+IF(R{1)-R12))10,10,414C
+I=1I-1
+
+M2=-1
+
+M1l=2
+
+IF(GI(I)}-R(1))20 46,47
+IF(RE1)-R(2))140,21521
+I=1+1
+48
+
+Table C.1 (Continued)
+
+ 
+
+OM
+
+oO
+
+22 Nz=1
+N1=3
+IF(GL(IN-R(1))7 46,140
+7 F=(GL(I)-R(2))/(R(1)R(2))
+E(1)=F*(E(L)-E(5))+E(5)
+E(2)=F*(E(2)-E(6))+E(6)
+E(3)=Fx(E(3)~-E(7))+E(T)
+6 P{1)=SQRTI{(2./BETA)+E(3)*SQRT(BETA/ 2.)
+V=3,14159265%G 1(T )%(P(1)%G1{I)=SIN(E(1)))
+E(&)= E(1)%HT7429577957
+50 FORMAT(IHZ y6HBETA =4E15.7 36X43 3HH =,E15.7///)
+PRINT 50,BETAH
+PRINT 100
+PRINT 2004E(4),E(2)4E(3),G1(I)4P(1),yV
+200 FORMAT(IH ,O0P1lF9432,1P5E16.7)
+100 FORMAT (1HO,5Xy3HPHI 38X 93HX /B913X y3HZ /By13X93HR/A413X43HH/A,
+113X 44HV/A3)
+I=I+N2
+IF(I-8)130,130,3
+130 IF(1-11941404140
+140 R(2)=R (1)
+E(5)=E(1)
+E(6)=E(2)
+E(7)=E(3)
+150 CONTINUE
+9 RETURN
+END
+
+SUBROUTINE MAIN2S(AyB9CoZ sEgyH J9P+BETA,G4R4N1,N2)
+
+IMPLICIT REAL=*8(D),REAL*4(A-C4E-H,0-2)
+DIMENSIONA(L) 38(4) 9C(4)43Z2(4),E(8),P(4)4R (4)
+101 FORMAT(IHQs5X y3HPHI 48X43 3HX/By 13X 33HZ/By 13Xy3HR/ Ay 13 Xs 3HH/ A,
+113X 44HV/A3)
+50 FORMAT(IH1 sSHBETA=93E1547 96X 9 2HH=yEL1547///)
+200 FORMAT(1H ,0P1F9.341P5E16.7)
+H=0.17T45229E-01
+PRINT 504BETA,H
+PRINT 101
+£E(6)=0.
+J=3
+N2=N2/N1
+MN3=,1746E-01/H
+N1=N3xN]
+E(1)=0.
+£E(2)=0.
+E(3)=0.
+DO 150 HM=14N2
+OOO
+
+OOO
+
+100
+
+150
+
+20
+
+50
+30
+
+60
+
+Lo
+
+Table C.1 (Continued)
+
+DO 100 N=1,N1
+
+CALL RUNGKS(AyByCoZsEsHyJyBETA4G,4P)
+CONTINUE
+
+G=E(2)*SQRT(BETA/2.0)
+
+E(6)=E(2)
+
+E(7)=E(3)
+P(1)=SQRT(2./BETA}+E(T7)*SQRT(BETA/2.)
+V=34141593%G*(P(1)*G-SIN(E(1)))
+E(4)=E(1)%57,29577957
+
+PRINT 2004+E(4)4E(6)4E(T),G4P(1),V
+CONTINUE
+
+RETURN
+
+END
+
+SUBROUTINERUNGKD(DA,DB,DCyDZ yDE,DH, Jy DBETA,DG,DP)
+
+IMPLICIT REAL*B(D)yREAL*4(A-CyE-H,0-2)
+DIMENSTONDA(4)4DB(4)4DC(4)yDZ(4),4DE(8B)4DP(4),DR(4)
+DA(1)=DH*0.16666666667
+
+DA(2)=DH*0.33333333333
+
+DA(3)Y=DAL(2)
+DA{4)=DA(1)
+DB(4)=0.
+DB(1)=DH*0.5
+DB(2)=DB(1)
+DB (3)=DH
+DD20CI=1,J
+DC(I)=0.
+DZ(I)Y=DE(I)
+DO30K=144
+
+CALL RHOD{(DA,DB,DC,DZ yDE4sDH,J,DBETA,DG,DP)
+DZ(11=1.
+
+DO50I=1,J
+
+DCI )=DC(I Y+DA(K)*DZ (I)
+DZ(I)=DE(I)+DB(K)=*DZ (1)
+CONTINUE
+
+DC(1)=DH
+
+DO60I=1,4J
+DE(I)=DE(I)+DCI(I)
+RETURN
+
+END
+
+SUBROUTINE RHOD (DA,DB,DCyDZ+DE,DH, JyDBETA,DG,DP)
+
+IMPLICIT REAL*B (D)yREAL®4(A-CoE-H,0-2)
+DIMENSTIONDA(4),DB(4),DC(4)4DZ(4),DE(8),DP(4),DR(4)
+50
+
+Table C.1 (Continued)
+
+ 
+
+OO
+
+OOO
+
+«
+
+70
+
+75
+76
+
+20
+
+70
+
+75
+76
+
+IF(DZ(1))70475,70
+
+DRH=140/{2.0+DBETA=*DZ (3)-DSIN(DZ(1))/DZ(2}))
+GOTO76
+
+DRH=1.0
+
+DZ (2)=DRH*DCOS(DZ(1))
+
+DZ (3) =DRH*DSIN(DZ(1))
+
+RETURN
+
+END
+
+SUBROUTINERUNGKS(AyB9CoeZ yEsyH 3 JsBETA,G,P)
+
+IMPLICIT REAL=*8(D) yREAL¥*4(A-Cy E-H,0-7)
+DIMENSIONA(4) 4B (4) Cl4) oZ (4) E(8)4P (4),R (4)
+A{l)=H*0.,16666666667
+
+A(2)=H*0433333333333
+
+A(3)=A(2)
+
+Al4)=A(1)
+
+B{4)=0.
+
+B(1)=H*0.5
+
+B(2)=B(1)
+
+B(3)=H
+
+DO2CI=1,4J
+
+C(I)=0.
+
+Z(I)=E(I)
+
+DO30K=1 +4
+
+CALLRHOS(A4B 4CoeZ yE 4H 3 Js BETALG,4P)
+
+Z(1)=1.
+
+DO50I=1,4
+
+CI )=C(I)+A(K)*Z{
+ZI )=E(I)+B(KI=Z(
+CONTINUE
+
+C{1l)=H
+
+DO60I =1,J
+E(IY=E(I)I+CI(I)
+RETURN
+
+END
+
+I)
+I)
+
+SUBROUTINERHOS(AyB9CyZ 9EsH 9s JsBETA4G,4P)
+
+IMPLICIT REAL*8(D) 4REAL*4(A=C,y E-H 40-2)
+DIMENSIONA (4) 9B{4)s C4) 4sZ (4), E(8)4P (4)4R (4)
+IF(Z(1))70,75470
+
+RH=1,0/(2.0+BETAXZ (3)=SIN(Z(1))/Z2(2))
+GOTO76
+
+RH=1.0
+Z(2)=RH*COS(Z(1)
+Z(3)=RH*SIN(Z(1)
+RETURN
+
+END
+
+)
+)
+OO 0-3 OW Fw NH
+
+a el
+FW HO
+
+- . .
+
+PEUGOoORQUIUAHUYE Lars Qn 0P0PuHOUIGUEHRTIRITDIZTUQEHERRQQZR
+
+51
+
+ORNL-TM-3528
+
+INTERNAL DISTRIBUTION
+
+Alexander
+
+. Anderson
+
+. Baes
+
+. Barton
+Bautista
+
+. Beall
+
+. Bettis
+
+. Blankenship
+. Boyd
+Braustein
+
+BH 0E GEOR
+
+. A. Bredig
+. B. Briggs
+
+R. Bronstein
+
+. D. Bundy, K-25
+
+Cantor
+
+. Chapman
+
+. Claiborne, Jr.
+. Compere
+
+. Cooke
+
+. Cottrell
+
+. Crowley
+
+. Culler
+
+. DeVan
+Dworkin
+Eissenberg
+Fraas
+Ferguson
+
+. Fontana
+Freidman
+
+. Furlong
+
+. Gabbard
+
+. Gallaher
+Gambill
+Gilpatrick
+. Grimes
+Grindell
+
+. Harms
+Haubenreich
+Hitch
+Hoffman
+Hurtt
+Kasten
+
+. Kedl
+
+. Keyes, Jr.
+Kidd, Jr., K-25
+. Kirslis
+Klepper
+Koger
+
+. Kolb
+
+. Korsmeyer
+
+momma waoasHzZoQroNym RPE Yd RENN HW EE gi
+
+61.
+62.
+63.
+bh.
+65.
+66.
+67.
+68.
+69.
+70.
+71.
+72.
+3
+Th.
+5.
+76.
+TT
+78.
+79.
+80.
+81.
+82.
+83.
+84.
+85.
+86.
+87.
+88.
+89.
+90.
+gl.
+92.
+93.
+ok.
+95.
+96.
+97.
+98.
+99.
+100.
+101.
+102.
+103.
+104.
+105.
+106.
+107.
+108.
+109.
+110.
+
+=
+—
+
+. Krakoviak
+. Kress
+. Krewson
+Lackey
+. LaVerne
+. Lawson
+. Llewellyn
+Lloyd
+. Lundin
+. Lyon
+. MacPherson
+. Mauney
+« McCurdy
+. McElroy
+. Mclain
+. McNeese
+. McWherter
+. Miller
+Mixon
+. Moore
+. Parsley
+
+. Perry
+idkowicz
+Redmon
+. Richardson
+. Robbins
+Romberger
+. Rosenthal
+. Ross
+
+-
+
+SRETERQUOGGPHTNIEPLODUN 3D ROQQAR RE SH
+QEPURUMEYMODGOEHEPHQED HEHE HAHEI
+
+mn
+0
+0 B
+®
+—
+wn
+
+I. P. Sanders
+W. K. Sartory
+H. C. Savage
+Dunlap Scott
+J. H., Shaffer
+Myrtleen Sheldon
+J. D. Sheppard
+M. J. Skinner
+. Spiewak
+
+. Sunberg
+. Thoma
+
+. Thomas
+
+. Trauger
+. Tobias
+
+. Wantland
+. Watson
+
+. Weaver
+Whitman
+Wichner
+. M. Yarosh
+
+= = @ Quy =EUoUhgn
+HoH now QE
+111.
+112.
+113-114.
+115.
+116-117.
+118.
+
+119-121.
+122-123.
+124-125,
+126.
+127.
+128.
+129.
+130.
+131.
+132-133.
+13k.
+135-139.
+
+52
+
+J. P. Young
+
+H. C. Young
+
+Central Research Library
+
+Y-12 Document Research Section
+Laboratory Records
+
+Laboratory Records — Record Copy
+
+EXTERNAL DISTRIBUTION
+
+Director, Division of Reactor Licensing, AEC, Washington
+Director, Division of Reactor Standards, AEC, Washington
+Division of Technical Information Extension (DTIE)
+Laboratory and University Division, AEC, CRO
+
+D. F. Cope, RDT Site Office, ORNL
+
+A. R. DeGrazia, AFC, Washington
+
+Ronald Feit, AEC, Washington
+
+Norton Haberman, ABC, Washington
+
+Kermit Laughon, RDT Site Office, ORNL
+
+T. W. McIntosh, AEC, Washington
+
+R. M. Scroggins, AEC, Washington
+
+Executive Secretary, Advisory Committee on Reactor Safeguards,
+AEC, Washington

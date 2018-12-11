@@ -1,0 +1,2212 @@
+NATIONAL LABORATORY
+. operated by
+UNION CARBIDE CORPORATION
+NUCLEAR DIVISION
+for the |
+U.S. ATOMIC ENERGY COMMISSION
+ORNL- TM- 14626
+
+PERIOD MEASUREMENTS ON THE MOLTEN SALT ar R
+EXPERIMENT DURING FUEL CIRCULATION:
+THEORY AND EXPERIMENT
+
+B.E. Prince
+
+LEGAL NOTICE
+
+This report was prepared as an secount of Government sponsored work, Neither the United
+States, nor the Commission, nor any person acting on behalf of the Commission;
+A. Makes any warranty or representstion, expressed or implied, with respect to the accu-
+: racy, completeness, or usefulness of the informztion contained in this report, or that the use
+of any information, apparatus, method, or process disclosed in this report may not infringe
+privately owned righis; or
+: BR. Assumes any Liabilities with respect fo the use of, or for damages resulting from the
+: use of any information, apparatus, method, or process disclosed in this report.
+As used in the above, “person acting on behaif of the Commission” includes any em-
+Commission, or employee of such contractor, to the extent that
+© such employee or contractor of the Commission, or employee of such contractor prepares,
+: disseminates, or provides sccess to. any information pursuant to his empioyment or centract
+with the Commission, or his employment with such contractor,
+
+insinl tion of ap dry nature
+
+E This document contains informe Preliminary nature
+
+ionee prepared primarily. for internal use at the Oak Ridge Ne ug
+Laboratory ois subject fo revision or correction on Here :
+
+not represent a final report.”
+
+ 
+LEGAL NOTICE
+
+This report was prepared ns an scceunt of Government sponsored works Neither the. United States,
+
+nor the Commission, nor ony person acting on behall of ¥he Commission:
+
+ 
+
+A Mal any voor rep tation, expressed or implied, with respect to the accurcey,
+
+completeness, or usefulness of the information contoined in this rescet, or that the use of
+any “information, epporotus, method, or precess disclosed in this report may not infringe
+privately owned rights: or
+Assumas any Hoabilities with respect to the use of, or for damages resulting frem the use of
+any ormation; agporatus, method, or process disclosed inthis repore
+As used in the obove, “person ecting on heholf of the Commission’” includes any employes or
+contractor of the Commission, or employes of such centruetor; fo the extent that such employee
+of contractor of the Commission, ‘or employee of such contractor prepares, disseminates, of
+provides access te, any: information pursusnt to his employment or contract with the Commission,
+
+or his employment with such cemtrocter,
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Contract No. W-TLOS5-eng-26
+
+REACTOR DIVISION
+
+ 
+
+PERIOD MEASUREMENTS ON THE MOLTEN SALT REACTOR
+EXPERIMENT DURING FUEL CIRCULATION:
+
+THEORY AND EXPERIMENT
+
+B. B.
+
+This report wae prepared as an account of Government sponsored work. Neither the United
+States, nor the Commission, nor any person acting on behalf of the Commission:
+
+A. Makes any warranty or representation, expressed or implied, with respect {¢ the accu~
+racy, completeness, or usefulness of the information contained in thir repert, or that the use
+of any information, apparatus, method, or process discicsed in this report may not infringe
+privately owned rights; or
+
+B. Assumes any liabilities with respect fo the use of, or for damages resulting from the
+use of any information, apparatus, method, or process disclesed in this report.
+
+As used in the above, *‘person zcting on behalf of the Commission® includes any em-
+ployee or contractor of the Commission, or employee of such contractor, to the extent that
+auch employee or contractor of the Commission, or employee of euch contractor prepares,
+disseminates, or provides access to, any information pursuant te his employment or contract
+with the Commigsion, or his employment with such contractor,
+
+ORNL-TM-1626
+
+ 
+
+Prince
+
+ 
+
+ 
+
+ 
+
+OCTOBER 1966
+
+OAK RIDGE NATIONAL LABORATCRY
+
+Oak Ridge, Tennessee
+
+operated by
+
+UNICN CARBIDE CORPORATION
+for the
+
+U.S. ATOMIC ENERGY COMMISSION
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+p
+[oe
+[=
+
+ 
+
+CONTENTS
+
+Page
+
+ABSTRACT + vv vv vv ev he hv ee ee ee eee ee eee 1
+INTRODUCTION . + + vv tv vv he vv ee a oe ea eee ee eae 1
+THEORY OF ZERO POWER KINETICS DURING FUEL CIRCULATION . . . . . . e
+NUMERICAL AND EXPERIMENTAL RESULTS . © © + + « « « « « vo « « o 17
+Numerical Groundwork . . + « « « + o so o + « « o oo 4 0 0 17
+Experimental Results . . ¢ . « « vv « « © « 0 co 0 wa ee 25
+DISCUSSION OF RESULTS + + vv vv 4 vv vv ee a ev ov eo a 2G
+Theoretical Model Verification . . . . « . « « « + & « « « 28
+Recommendations for the MSRE . . . . . . «+ + + + + « + « « 31
+ACKNOWLEDGMENT Cee ee ee eee ee ee ee ee ee eee 32
+
+REFERENCES . «+ © « vv «vv vv a «vv 0 6 oo oo vv 0 0 «oo 33
+
+A
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ow
+
+PERICD MEASUREMENTS ON THE MOLTEN SALT REACTOR
+EXPERIMENT DURING FUEL CIRCULATION:
+THEORY AND EXPERIMENT
+
+B. E. Prince
+
+ABSTRACT
+
+As an aid in interpreting the zero-power kinetics experi-
+ments performed on the MSRE, a theory of period dependence on
+the fuel circulation is developed from the general space de-
+pendent reactor kinetics equations. A procedure for evaluat-
+ing the resulting inhour-type equation by machine computation
+is presented, together with numerical results relating the
+reactivity to the observed asymptotic pericd, both with the
+fuel circulating and with it stationary. Based on this analy-
+sis, the calculated reactivity difference between the time
+independent flux conditions for the noncirculating and the
+circulating fuel states ig in close agreement with the value
+inferred from the MSRE rod calibration experiments. Rod-bump
+period measurements made with the fuel circulating were con-
+verted to differential rod worth by use of this model. These
+results are compared with similar rod sensitivity measurements
+made with the fuel stationary. The rod sensitivities measured
+under these two conditions agree favorably, within the limits
+of precision of the period measurements. Due to the problem
+of maintaining adequate precision, however, the period-rod
+sensitivity measurements provide & less conclusive test of the
+theoretical model than the reactivity difference between the
+time independent flux conditions. Suggestions are made for
+improving the precision of the experiments to provide sa more
+rigid test of the theoretical model for the effects of cir-
+culation on the delayed neutron kinetics.
+
+1. INTRCDUCTION
+
+It is well recognized that the circulation of fuel in a liquid
+fueled reactor introduces some unique effects into its observable kinetic
+behavior. Foremost in this category is the phenomenon cof emission of
+delayed neutrons in the part of the circulating system external to the
+reactor core where they do not contribute tc the chain reaction. The
+literature in reactor kinetics contains several theoretical studies of
+this effect,» 2223 but there have been few opportunities for parallel
+
+experimental studies. The Molten Sait Reactor Experiment, hereafter
+no
+
+ 
+
+referred tc as the MSRE, has presented a unique chance to develop and
+test some analytical models for the zero power kinetics of a circulating
+fuel reactor. The experimental measurements discussed in this report
+were made as part of an overall program to calibrate the control rods
+in the MSRE.
+
+In the first section following, we develop the theory of pericd
+dependence on fuel circulation. The second section gives an account
+of the results of applying this theory to the experimental measurements
+mede during MSRE Run No. 3. Finally, in the third section, we discuss
+the results of this work in terms of the general problem of kinetics
+analysis for circulating fuel reactors. Several questions are left open @
+
+by the present study, and these are discussed in that section.
+
+2. THEORY OF ZERO POWER KINETICS DURING FUEL CIRCULATION
+
+At negligible reactor power, the special effects produced by fuel
+circulatior reduce essentially to (a) the transport of delayed neutron
+precursors tc that part of the lcop external to the core where they
+
+v decay, and (b) the shift of the spatial distribution of
+
+J
+
+3
+
+subsequent
+delayed neutron precursors in the direction of circulation within the
+reacter core, relative to the prompt neutron production. Although we
+shall not attempt to review all eariier studies pertaining to these
+effects, twe fairly recent studies made by Wolfe® and Haubenreich® are
+pertinent to the present work. Wolfe employs a perturbation approach and
+
+obtains an irhour-type eguation for ar infinite slab reactor, through which .
+
+7
+
+“uel circulates in the direction of variation of the neutron flux. Wolfe's
+sppreach, while valuzble, is almost entirely formal, and requires some
+modification in order to obtain a procedure useful for the guantitative
+analysis of experimental measurements. In the second of the above men-
+tioned works, faubenreich considers an explicit analytical model rep-
+resenting the MSRE in the circulating, just-critical condition. By means
+
+of & modal analysis, he obtalng effective values for the delayed neutron
+
+fractions for this conditicn. He uses a bare cylinder spproximation to
+
+ 
+
+ 
+
+* Co
+For a comprehensive early study, see Ref. 1.
+kd
+
+ 
+
+wo
+
+represent the MSRE core, with boundaries corresponding physically to the
+channelled region of the actual core.
+
+We have combined and extended these analyses to include the contri-
+bution to the chain reaction of the delayed neutrons emitted while the
+fuel is in the plenums Just sbove and below the graphite core, and to
+include the case of the flux varying exponentially with a stable asymp-
+totic period. It will be seen that an inhour-type equation results
+which relates the period of a circulating fuel reactor to the static
+reactivity of the same reactor configuration, but in which the fuel is
+
+not circulating. The static reactivity, p_, is defined by the relation
+2
+
+Pp 2 me 3 (1)
+
+in which v is the physical, energy-averaged number of neutrons emitted
+per fission, and Vo is the fictitious value for which the reactor with
+the same geometric and material configuration would be critical with
+the fuel stationary. One finds that as a result of this definition, the
+reactivity for a critical, circulating fuel condition is greater than
+zero (here, criticality denotes the condition of time independence of
+the neutron and precursor concentrations). However, since the static
+reactivity is the quantity normslly obtained in reactor calculation
+programs, it is most convenient to relate this quantity directly to the
+asymptotic period.
+
+The theory following is developed by beginning along general lines
+and delineating special assumptions as they are introduced. Several of
+these simplifying approximations are suitable for MSRE analysis, both in
+the neutronics model and the flow model for the circulating fuel.
+
+The starting point of the analysis 1s the general time dependent
+reactor equations, written to include the transport of delayed neutron
+
+precursors by fuel motion in the axial direction:
+
+6
+
+. i
+Ie + (1 = Br) f, P+ y hy fy CG =v
+i=1
+
+af
+ctf
+No
+~~
+no
+SN”
+a’
+(]
+
+ 
+
+B, B® - A, ¢, - = (V6,) = 5p, 1 =1,2, ...,6 . (3)
+The symbols ¢ and C represent the neutron flux and delayed neutron pre-
+cursor densities. The operator IL represents net neutron loss (leakage,
+absorption, and energy transfer by scattering), and P represents the
+preduction processes by fission. The explicit representation of these
+operators depends on the model used in analysis. If these processes
+gre given their most general representation in terms of the Boltzman
+transport equation, the neutron flux, ¢, will be a function of position,
+energy, direction, and time variables. In order to provide a framework
+for discussion which can be directly related to application, we shall
+assure that the angular variables have been integrated from the equation,
+i.e., that a model such as multigroup diffusion theory or its continucus
+energy counterpart provides an adequate description of the neutron popu-
+lation. In Eq. 3, above, P? is taken as zero in that part of the cir-
+culating loop which is external to the chain reacting regions. The
+remaining symbols in Egs. 2 and 3 are (1 - Bp) the fraction of all
+neutrons from fission which are prompt, and B.: and Ags the production
+fraction and decay constant for the ith precursor group. The quantities
+ts and fat are energy spectrum operators which multiply the total volu-
+metric production retes of prompt and delayed neutrons to obtain neutrons
+of a specific energy. Finally, the symbols v snd V represent the neutron
+velocity and the fliuld velocity, respectively.
+
+As applied to a fluid fueled reactor with a heterogeneous structure
+such as the MSRE (where the axial fuel channels are located in a matrix
+of solid graphite moderator), the usual cellular homogenization must be
+
+made on the neutron production and destruction rates. Thus, for example
+
+(L ~ B.,) P2 = local rate of production of prompt fission
+T
+neutrons, per unit cell volume
+
+Ay C, = local rate of production of ith group of delayed
+neutrons, per unit cell volume.
+
+If we assume that the operators L and P are time independent, corre-
+
+ponding to a fixed rcd position, we can investigate the conditions under
+
+ 
+ 
+
+which the flux and precursor densities in the reactor and the external
+. , . . wt . . i
+circulating system vary in time ag e ~. Assuming solutions of Egs. 2
+
+and 3 exist of the form:
+
+B(x, B, 8) = #(x, 5 w) (4)
+0x, 1) =, (x w) 7, (5)
+then,
+6
+6 BR
+
+10+ (1-8) 1, P+) hy Tyo =v wg (6)
+
+i=1
+B, PZ - he, - x (Ve, ) = we, i=1,2, « « ., 6 (7)
+
+As previously stated, our primary objective is to relate the observed
+
+Ji
+stable reactor period, w , to the static reactivity of the given reactor
+configuration. The static reactivity defined by Bg. 1 is the algebra-
+
+ically largest eigenvalue of the equation:
+
+p+ (1-0) FRE =0 (8)
+where;
+&
+= _ Yop /
+i=1
+
+Rather than attempting to solve the reactor equations 6 and 7 directly,
+we will make use of a procedure which is often useful for spatial reactor
+kinetics problems. Several sources give details of similar analyses for
+stationary fuel reactor systems (see, for example, Ref. 4). We multiply
+the "local" equation for the neutron population by an appropriate weight-
+ing function and integrate over the position and energy variables of the
+neutron population in order to obtain a relation involving only "global"
+or integral quantities. As seen below, by using the static adjoint flux,
+
++
+2s the solution of the adjoint equation corresponding to Eg. 8 as the
+weighting function, the resulting relation admits a direct physical inter-
+pretation. The adjoint flux, also obtained in most reactor physics calcu-
+lation programs in common usage, is the solution of
+
++ + 4
+
+AE CER TR Ml MEI (10)
+
+where I. and (Fp) " sre operators adjoint to L and fP of Eg. 8, and p, is
+the same algebraically largest eigenvalue of Eq. 8. With appropriately
+prescribed boundary conditions on the allowable functions on which these
+operators are defined, the following relaticn® can be used to define the
+
+*
+adjoint cperator:
+
+(2, a2) = (87, 2) = (8&7) (12)
+
+Here A represents sbstractly either of the operators L and fP and
+
++
+(2. AZ) denotes the scalar product, i.e., the multiplication of AZ by
+
++ . . . Cp .
+g, and integration over the position and energy varisbles of the neutron
+population.
+
++
+On forming the scalar product of Eq. 6 with 2s we obtain
+
+ 
+
+Similarly, forming the scalsr product of Eg. 10 with @ and msking use of
+
+Eq. 11 gives
+- +=
+(8, 19) + (1 - p NE, TPO) = 0 . (13)
+
+Combining Eq. 12 and Eg. 13 gives
+
+ 
+
+ 
+
+*For the purposes of reactor physics studies, we need to consider
+only real valued functions.
+ 
+
+wg, v7) = (1 - eo WF, BE) + (1 - BNA, tpg) +
+3 s a’ TNT? tpt
+6
++ ) n (2, fai ©)
+i=l
+
+By making use of Eq. 9, we may rewrite this equation as
+
+ 
+
+6 6
++ =t + , A }
+(2, v 2) / 8,(2,, f 0 Py) = / ri (2 £410)
+p= - + 2X a (ak)
+* (4, Te) (2, T 2)
+
+The first term on the right hand side of Eq. Lb ie simplified in appear-
+ance 1f we make a conventional type of definition of the prompt neutron
+
+generation time;
+
+(7, v9) oo
+FF)
+
+A =
+
+<
+=
+
+We may also note that the second term on the right hand side of Eq. Lk
+appears as the difference between the weighted total production of de-
+layed neutrons and the weighted production of delayed neutrons from
+precursor decay within the reactor. In accordance with its definition
+by Egs. 1 and 8, the static reactivity is completely determined by the
+geometric snd material configuration of the reactor, whether or not the
+fuel is circulating in the actual reactor. The relationship between 0,
+and @ expressed by Eg. 1h, therefore, has an explicit physical inter-
+pretation. For example, if the fuel composition and control rod position
+are such that the flux is time independent when the fuel is circulating,
+w= 0 in Egs. 6 and 7. Equation 1b then shows that the static reactivity
+for the just critical reactor is numerically equal to the net difference
+in the production of delayed neutrons described above. In the more gen-
+
+Rr eral case when the flux is varying in time according tc a stabie period,
+the first term on the right hand side of Eq. 14 will differ from zero,
+and also the effective decrement in production of delayed neutrons will
+differ numerically from the time independent case (ey and ¢ depend on
+w through Egs. 6 and 7. Bquation 14 is an inhour type relation which
+can te used as a foundation for an approximate determination of Pgs
+given an observed asymptotic period, w . One may observe that it in-
+cludes the usual inhour relation for the stationary fuel reactor as a
+special case, simply by setting V = O in Eq. 7. Before discussing the
+practical use of Eq. 14, we can exhibit the previous concepts in an
+
+explicit algebraic manner. From Eg. 7 we have,
+
+ey = w+)” [BPE 2 (Ve) (16)
+
+1
+
+Inserting this relationship into Eg. 14 gives
+
+ 
+
+ 
+
++ 6 -i
+{ ; . £0
+5 ; + = - / + = ’
+im (2, TPP) i (7, T v0)
+21
+6 aw +2) fhe Sve)
+i i s dai oz i
+a — (17)
+ia (g,, T PP)
+If we define
+na
+— (4, Tas Pd)
+B, =B —p—— (18)
+(#2, T pp)
+Et, Sve)
+Yi = . + — (19)
+(2, T 29)
+
+Equation 17 may be written as
+
+ 
+ 
+
+ 
+
+6 [= — 6
+Pg = W A+ / ETT + ) 7s (20)
+i=1 + i=1
+
+This equation has the appearance of the ordinary irhour relation for the
+Pe Y
+
+stationary fuel reactor,®
+
+except that the effective production fractions,
+8. are reduced by a quantity 74 which depends on the circulation rate and
+also on w. In addition, the last term on the right hand side of Eq. 20
+appears because the zerc point of the static reactivity was chosen to
+correspond to the composition and geometry of the just-critical stationary
+fuel reactor. The usual inhour relation for the stationary fuel reactor
+is obtained by letting V —» 0 and 73 - 0 in Eq. 20. Although Eq. 20 is
+instructive in discussing tae net effects cf fuel circulaticn, its sim-
+plicity is somewhat deceptive since 74 depends in a complicated way on
+w, through Eg. 7. Therefore, it will be more convenient to discuss the
+use of the inhour relation starting with the form given in Eq. 1k.
+
+At first appearance, in order to use Eq. 14 we are required to
+solve Egs. 6 and 7 for w, c, (x; w), and ¢(x, E; w), and also to solve
+Eg. 10 for p_ and ¢' (x, E; pl Both are eigenvalue problems in which
+the algebraically largest real eigenvalues, ¢ ana 0g are cof immediate
+interest. Not only does Eq. 14 reduce tc an identity if this procedure
+is used, but it is precisely the explicit solution of Egs. 6 and 7 that
+we wish to avold. The great usefulness of Eq. il is in the basis it pro-
+vides for approximating the relation between Pe and the cbserved stable
+period wt. The basic simplification results from assuming that the
+shape of the asymptotic flux distribution, ¢, is sufficiently well
+approximated by the static fiux distribution, P- From & physical stand-
+point, the validity of this approximation is & consequence of the small-
+
+ness of the delayed neutron fraction, B8 If this approximation is made,
+
+7
+and ¢ is substituted for ¢ in Eq. 7, this equation cen be integrated
+around the circulating path cf the fuel to obtain the distributions of
+delayed precursors, c.. Before completing the analysis, however, we
+shall make a second approximation to simplify the computation of the
+
+integrals occurring in Eq. 14. It can be assumed that the correction
+10
+
+ 
+
+for the difference in energy spectra for emission of prompt and delayed
+reutrons appearing in Eq. 1L4 can be calculated approximately as a sepa-
+rate step. :ig 1s done by reducing the age for the ith group of de-
+layed neutrons from that of the prompt neutrons and modifying the static
+delayed neutron fractions, Bis by the relative non-leakage probability
+factors appropriate to a bare reactor which approximates the actual core.
+Such an approximetion can also be Justified from an objective standpoint,
+since the correction for the differing "energy effectiveness” of delayed
+neutrons relative to prompt neutrons is small compared tc the effect of
+the spatial transport of precursors under consideration. For the MSRE,
+calculations of the former effect are given in Ref. 3. The net energy e
+correction changes the effective value of Bo for UR35 from 0.006L to
+0.00666 .
+
+One further remark should be made concerning Eq. 14. A given
+static reactivity, Pg corresponding to some time independent reactor
+configuration is also related through Eq. 14 to all physically allowable
+transient modes present in the neutron flux after the final reactor con-
+figuration has been established. In this study, we have chosen to
+emphasize only the relation between the circulation and the asymptotic
+mode. An spproximete analysis indicates that the remaining eigenvalues
+end eigenfunctions of Egs. 6 ard 7 differ in certsin fundamental respects
+from those of stationery fuel reactors. For the purpose of this report,
+we shall not attempt to demonstrate thls. Except for a brief return to -
+this topic in a later section, we will restrict attention entirely to
+the analysis of the stable asymptotic period measurements. ©
+
+The completion of the required anslysie consists of the integration
+of Eg. 7 arcund the circulating psth of the fuel. Obviously, even if J
+is replaced by 2, calculated from Eq. 8, further simplifications in the
+flow model are necessary before the problem becomes amenable to practical
+computation. The approximations we have used in representing the circu-
+lating loop of the MSRE are shown schematically in Fig. 1. The model
+consists of a three region approximation to the actual core, representing
+the lower or entrance plenum, the graphite moderated region, and the
+
+upper, or exit plenum, respectively. The core is represented as a right
+
+ 
+
+cylinder with volumes in the upper and lower plenums equal to those of
+ 
+
+Ww
+
+ 
+
+11
+
+QRNL-DWG 66-8561
+
+_ z=L
+
+   
+
+EXTERNAL PIPING
+{INCLUDING FUEL
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+| PUMP AND HEAT
+L REACTOR OUTLET EXCHANGER)
+FER oh
+UP
+TOP OF
+INLET FLOW PLENUM .
+10 BE 7 DISTRIBUTOR z= He
+5 CT AND DOWNCOMER
+® og /
+£ 4
+los 0.8 CONTR L=~CONTROL ROD
+pA {contro Ron FABLES
+£ or neg
+x (TYPICAL)
+E os I
+2 CHANNELED
+w 05 | REGION
+wo
+g
+g 04
+5
+2 03
+S DRIVEN RGD
+z 02 LOWER LIMIT
+2 SCRAMMED ROD
+g ol LOWER LiMiT
+x \J
+©, L BOTTOM OF MOST GRAPHITE 0
+LOWER
+PLENUM
+{0) MSRE CORE GEOMETRY (SCHEMATIC) (6% MODEL FOR NEUTRON:CS CALCULATIONS
+
+Fig. 1. Geometry of MSRE Core and Three Region Core Model Used in
+Physics Calculations.
+1
+
+the actual MSRE core. This three-region model is a simplified version
+of that used for sll previous MERE core physics computations.”
+
+Fluid dynamics studies with the MSRE core mockup have indicated
+that the fuel velocity within the graphite moderated region is very
+nesrly constant over a large part of the core. Higher velocities occur
+in a small region about the core axis and near the cuter radius. In the
+upper plenum, the flow is nearly laminar, whereas in the bottom head the
+flow distribution is complex due to the reversal in the flow direction
+between the peripheral downcomer and the graphite moderated region.
+
+In the present study, we have assumed the flow velocity in each
+region except the lower plenum tc be constant (plug flow), with the
+
+magnitude cf the linear velocity determined by
+
+V = 3 (21)
+
+where Dy is the axial length of the kth region, and ty is the residence
+time of the fluid in the kth region. It will be seen later that the
+precursor densities in the regions of zero neutron flux (external loop)
+depend only on the fluld residence time in these regions.
+
+Although the lower plenum is in a region of relatively low neutron
+importance so that several approximations are allowable, rather than
+
+: =14
+
+assign a linear velocity to this region it was considered more realistic
+from a physical standpoint to treat the region as & "well stirred tank”
+
+with an average neutrcn flux end importance (adjoint flux) assigned to
+
+Within the graphite moderated region, the primary difference in the
+
+patizl distributions of prompt and delayed neutrons can be expected to
+
+mn
+
+be in the direction of fuel salt flow. As a first approximation, we have
+assumed the velocity profile to be flat in the radial direction across
+the entire core, and have neglected the radial averaging of the neutron
+production rates implied in the scalar product integrals in Eq. 1k. This
+is equivalent to sssuming radial and axial separability of the neutron
+production rates and adjoint fluxes. Thus, 1f we preaverage the fluxes
+
+over the radial ccordinate, and consider only the axial (z) dependence
+
+ 
+
+ 
+&
+
+ 
+
+of PE in the integration of Eq. 7, the problem reduces entirely to a
+one-dimensional calculation (line model).
+
+With these simplifications, the required integration of Eg. 7 can
+now be completed. As written in the preceeding formulas, the precursor
+densities and neutron reaction rates are the homogenized values, i.e.,
+normalized to a unit cell volume of the reactor. To integrate Eq. 7,
+account must be taken of the variation in the fluid volume fraction over
+the path of flow through the reactor. If % 1s the volume fraction of
+fuel in the kth region and superscript (0) is used to indicate the pre-
+
+cursor densities and prompt neutron production rate in the fuel;
+
+e;(z) =a cz) (22)
+Pr (2) = op PO (2) (23)
+
+The values of o used for numerical calculations with the model of the
+MSRE core shown in Tig. 1b were 0.225 for the graphite moderated region,
+and 1.0 and C.91 for the top and bottom plenums, respectively. The
+
+explicit forms of Eg. 7 for the various regions become:
+
+a) Graphite moderated region
+
+0 o do
+— = — < < }
+B, P g.(z) (ny + W) c; =V, 52 O<z=<H, , (2k)
+b) Top plenum
+0 o Go
+B, Pa (z) = (hy +W) cf =V 5= H,<z<H , (25)
+c) External piping
+. Lou
+= (hy vw) ey =V = H<z<L (26)
+
+ 
+
+*
+
+The validity of this approximation is not immediately obvious;
+however, it appears to be adequate in the light of results presented
+later.
+d) Bottom plenum
+
+ 
+
+de,
+T., ae © _ 1 . ,
+8, (Pp 2), (3, + Ww) c; = gr 0Osts ft, . (27)
+
+In the sbove equations, H, 1s the height of the graphite moderated region,
+H-E, is the thickness of the upper plenum, and L-H is the effective length
+of the region representing the external piping and heat exchanger (see
+
+Fig. 1b). As described above, the lower plenum region is treated by means
+of a well mixed tank approximation, in contrast to the plug flow model for
+
+the remaining regions. In Eq. 27, t, is the average residence time and
+
+ 
+
+(P°¢), is the average fission production rate for each element of fluid
+in the lower plenum.
+
+The boundary conditions for each region require that the precursor
+concentrations in the salt, el, are continuous along the path of flow.
+
+Ls applied to Eq. 27, these conditions are;
+
+t=0) =c2(z=1) , (28)
+
+ 
+
+ 
+
+0
+c(t = ty) = c {= = 0) (29)
+These conditions, together with the continuity conditions given above,
+completely determine the solution of Bos. 24 through 27. The results
+of integrating the shove differential equations are:
+02 <H
+C
+Z z-7'
+-(x = Ww) J z -() + Ww) ( v )
+o 0 = eo r o c dz' .
+e.(z) = c. (Cle + f(z j
+o( ) i ) J BP g (2 Je 7 , (30)
+0 c
+H £2 < H;
+Cc
+2-H, 7-2"
+(ny +) (=) ~(n; + w)( )
+o 0 Va r2 0 + Va az
+c.(z) = c (H Je +1 BPE (z')e 7 » (31)
+1 1 C Yu 1 5 Vv
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+H=2<L
+- yr 2-H
+0 ° Oye
+c,(z) = c;(H)e s (32)
+ZZ =5L-0
+] ] -(h +)t, — A ~ Oat
+c; (0) = c;(L)e + B,(P 2), TRE s (33)
+Oo 5 (Nn, +W)t
+(0) = B1(* 7%), + eon) BF Ply lp me tT (3h)
+Ci/g = IE fA ENE Oh, + WE, 3
+
+The last of the equations given above results from averaging the precursor
+concentration obtained from solving Eg. 27 over the residence time tye
+
+By use of the continuity conditions for the entrance and exit concentra-
+tions in each region, the above equations may be used to solve for cf(0).
+
+The result is:
+
+ 
+
+ 
+
+ 
+
+HE «z'
+2, -(Ag)( 7 * te tex tty)
+0 _ 0 , c dz’
+c2(0) = ) 8.8 (z')e =
+0 c
+H-z7
+H SO (Sr + tty)
+r 0 , u To dz!
+* J B;P g,(z Je vo
+H, u
+§
+: 1 arty “Ot
++ B,(P 2), I l-e ; (35)
+i
+
+where the following definitions of the residence times have been used:
+ 
+
+H,
+Ca = 5 » (36)
+c
+HH - E,
+2 Vv 5 (37)
+Q
+L — H
+TE (38)
+ex
+Yeire T Ve * ty * Pex * ty ’ (39)
+
+The computational procedure developed in this section may be sum-
+marized as follows:
+
+1. Calculate approximations to the static flux and adjoint flux
+axial distributions by standard techniques of core physics analysis.
+
+2. From a specified asymptotic inverse period, w, and the static
+flux distribution, 2; corresponding to the same reactor state, calculate
+cow) using Fc. 35. Note that the absolute normalization of the flux
+ig arbitrary since Eg. li is independent of the flux normslizetion.
+
+3. Calculate the axial distribution of precursor densities in the
+salt, oS (zw), by means of formulas 30 through 34. Either a numerical
+integration procedure or analytical approximations for 2.(z) can be used
+in evalusting the integrals. The former method was used in the work
+described in the following section.
+
+4. Calculate Py by performing the integrations in Eq. 1&4.
+
+t is obvious that the only means of practical calculation with this
+scheme 1s the digital computer. A calculation program based on this scheme
+was written for the IBM-7090. Specific details concerning the numerical
+results, and the application cof this analysis to the MSRE experiments sare
+
+3.
+
+Iv
+
+given in Section
+
+ 
+
+ 
+ 
+
+ 
+
+17
+
+3. NUMERICAL AND EXPERIMENTAL RESULTS
+
+Numerical Groundwork
+
+ 
+
+Our intention in this section is to apply Eq. 14 to the analysis
+of a series of rod bump-stable period measurements made with the MSRE
+during fuel circulation. These weasurements were taken at various con-
+trol rod insertions during the course of enrichment of the fuel salt in
+Run No. 3. It has been seen from the analysis presented in Section 2
+that the quantities required to relate the measured asymptotic period
+to reactivity are the static distributions of the precursor concentration
+and the fission production rate together with the associated adjoint flux
+distribution. We have already introduced several approximations in order
+to simplify celculations with Eg. 14. We now make explicit use of the
+group diffusion model for the neutron fluxes. The flux distributions we
+shall use were obtained from standard core physics analysis with one-
+dimensional multigroup and two-dimensional, few group diffusion models
+for the neutronic behavior. In performing a "first round" analysis of
+the experimental measurements, the attempt was made to maintain as much
+computational simplicity as possible without discarding the essential
+features of the reactor and fuel circulation models.
+
+It has been shown that the static distribution 2% and v. oceurring
+in Eq. 1k are those appropriate to the asymptotic state, i.e., the
+reactor-rod configuration during the period measurement. However, the
+three control rods in the MSRE are in a highly lccalized cluster about
+the center of the core (Fig. 2), and the insertion of a single rod
+produces a perturbation in the thermal flux distribution which is fairly
+well localized in the radial direction. Some calculational results in
+support of this conclusion are shown in Fig. 3. These are plots of the
+radial variation of the thermal flux, taken at an azimuthal angle half
+way between control rods 2 and 3. The calculations were made with the
+two dimensional diffusion program EXTERMINATOR,® using an R-@ model of
+
+the MSRE core geometry. The perturbed fluxes with rod No. 2 inserted
+
+and with all three rods inserted are compared with the fluxes when all
+18
+
+ 
+
+   
+
+ 
+
+ 
+
+ee OREL THC 64-8214
+NN 4
+
+2 4
+
+7 §
+
+1
+
+A
+/ Jy |
+Ce
+
+i
+TYPICAL FUEL PASSAGE
+
+ 
+
+NOTE: STRINGERS NOS. 7.60 AND &f {FIVE} ARE
+REMOVABLE.
+
+ 
+
+  
+    
+  
+ 
+
+| CONTROL ROD
+"A GUIDE TUBE
+
+~~GUIDE BAR
+
+REACTOR
+CENTERLINE
+
+ 
+
+| THREE GRAPHITE AND
+INOR-8 REMOVABLE
+SAMPLE BASKETS
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+REACTOR CENTERLINE
+
+Fig. 2. Lattice Arrangement of MSRE Control Rods.
+ 
+
+ 
+
+19
+
+CRNL-DWG 66-8563
+
+ 
+
+ 
+
+ 
+
+<&
+
+5
+<7
+$7 —
+
+Be
+Vd
+
+ 
+
+ 
+
+Ey
+
+CONTROL ROD AND
+
+i. SAMPLE HOLDER
+
+CONFIGURATION FOR
+FLUX CALCULATIONS
+
+© £0
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+THERMAL FLUX AT 10 MW (normalized to axial position of maximum flux)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+\
+
+ 
+
+ 
+
+Fig. 3.
+lated Curves).
+
+20
+
+Radial Distribution of Thermal Flux in MSRE Core (Calcu-
+
+30
+
+40
+RADIUS cm)
+
+50 60 70
+
+80
+Mo
+
+ 
+
+rods are fully withdrawn.* In 211 cases, the fluxes are normalized to
+a core power level of 10 Mw. It may be seen that the shape of the flux
+is relatively undisturbed over a large fraction of the radial cross
+section of the core.
+
+One may also note that the total neutron production rates in the numer-
+ator and denominator of Eq. li are multiplied by the energy spectrums of
+neutrcn production. Hence, when performing the integration over energy
+in evaluating the scalar products in Eg. 14, only the high erergy portion
+(vhere T(E} # 0) contributes to the result. We therefore need only
+approximate the fast group adjoint flux distribution.
+
+Based on the preceeding observations, as a final set of simplifying .
+approximations we have used only the unperturbed distributions of fission
+production and fast adjoint flux, corresponding to the case of the rods
+fully withdrawn from the core. This simplification is consistent with
+the neglect of the radial variations of flux and precursor concentrations
+over the core which was discussed in Section 2.
+
+The calculated unperturbed axisl distributions of fission production
+rates and fast adjoint flux are given in Fig. 4. These were used for
+the calculation of the axial distributions of the six delayed neutron
+precursor groups, in accordance with the scheme developed in Section 2.
+The individual precursor concentrstions, el(2), vere multiplied by A
+and summed to obtain the total local rate of emission of delsyed neutrons
+along the flow path through the resctor core. These resulting total dis-
+tributions are shown in Fig. 5, for the particular cases of w = 0
+(circulating critical) and w = O.1 sec” (10 sec stable period}, and also
+for the case when the fuel is not circulating. All three distributions
+are normalized to the same total production rate, P°7 The bottom
+plenum is omitted from Fig, 5 since the well stirred tank model was
+used to represent the delayed neutron production in this region.
+
+Based on these same unperturbed fluxes, the relationship between the
+stable inverse period, wt, and the increment in static reactivity
+
+corresponding to the rod bump is shown in Fig. 6. For comparison
+
+ 
+
+*The "dip" in the thermal flux when the three rods are fully
+ithdrawn is caused by the presence of the INOR-8 rod thimbles.
+
+ 
+ 
+
+ 
+
+ORNL-DWG 66-8562
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+I TTT TT TTT
+
+: oe cram REGION - | 5100]
+
+x | | -
+oly ]
+
+ 
+
+ 
+
+ 
+
+09 Tr ~~
+ol A] un.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+5 FR
+x
+3
+£ ;
+2 :
+5° | yam | >
+E 06 | Ng vo —
+J
+& / \
+Z os | ~ A SE FA
+
+ook. J BAG
+
+NG
+03 | —t— // 4 - —t “Pedy \ Fm
+A/ i \
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+-20 CG 20 40 0 80 100 120 140 160 180
+AXIAL DISTANCE FROM BOTTOM OF GRAPHITE (cm)
+
+Fig. 4. Axial Distributions of Fission Density in Fucl Salt and
+Fast Groups Adjoint Flux (Calculated Curves).
+
+200
+DD
+nN
+
+ORNL-DWG 65-i0654R
+
+ 
+
+ 
+
+ 
+
+TOTAL. DENSITY OF DELAYED NEUTRON EMISSION IN SALT (arbitrary units)
+
+   
+  
+
+T T
+CHANNELED —
+
+I T I
+nf TOP ee
+PLENUM
+
+ 
+
+ 
+
+0 I
+
+ 
+
+ 
+
+ 
+
+[
+|
+1
+|
+|
+
+Cd
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+MSRE (Calculated Curv
+
+40 eC
+
+RN ee
+
+60 180 2
+
+DISTANCE FROM BOTTOM OF GRAPHITE {cm}
+
+ 
+
+ 
+ 
+
+ 
+
+ORNL-DWG 65-108
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1072
+INVERSE PERIOD Yr (sec™)
+
+1073
+
+Stable Inverse Period of MSRE (Calculated
+
+Reactivity vs
+
+Fig. 6.
+
+Curves ).
+
+ 
+ 
+
+purposes, a calculated curve is also given for the standard inhour rela-
+tion’ when the fuel is stationary in the core. All of these calculations
+are based on the static velues of B. and Ay and the fuel residence times
+
+given in Table 1.
+
+Table 1. Static Delayed Neutron Precursor
+Characteristics and Tuel Residence
+Times used in Calculations
+
+ 
+
+Delayed Group¥ 1 2 3 L 5 6 .
+10% By, (n/10% nn) 2.23 1L.57 13.07 26.28 7.66 2.80 [
+
+hy (sec™) 0.012% 0.0305 ©0.111hk ©.3013 1.140 3.010
+
+Fuel Residence Times (sec)?
+
+ 
+
+Core (graphite moderated region) g.h
+Upper plenum 3.9
+External system 8.1
+Lower plenum 3.8
+Total 25.2
+*
+
+B. corrected for the difference between the static energy
+
+spectrums of prompt and delsyed neutron emissgion.®
+
+As the curves in Fig. © illustrate, because the margin between the prompt
+and delayed neutron sources has been increased by the spatial transport
+of the precursors, the same static reactivity increment produces a faster
+rate of rise of both neutron and precursor densities. The calculated
+curves extend somewhat beyond the region of practical Interest in experi-
+mental measurements of the stable pericd. They are presented mainly for
+the purposes of illustration. In analyzing the experimentsl data, it
+proved to be most expedient to carry out machine calculations of the
+
+reactivity increments corresponding to each observed stable period.
+
+ 
+n>
+Ji
+
+Experimental Results
+
+ 
+
+In the chronology of the MSRE zero power experiments, the measure-
+ments of interest in this study began at the point of reaching the mini-
+mum #257 concentration required for criticality with circulation stopped
+and all control rods fully withdrawn. A summary of the zero power experi-
+ments is given elsewhere ,*© and we consider only those details pertinent
+to the tepic of this report.
+
+Once this first basepoint 22° U concentration had been reached, the
+concentration was further increased by the addition of capsules of en-
+riched fuel salt containing approximately 85g amounts of 23%U. The
+amount of control rod insertion required to compensate for these additions
+was messured, and period measurements about these new critical rod posi-
+tions were made. Care was taken to determine the minimum extras addition
+of 23%U required to reach criticality with the fuel circulating and all
+rods fully withdrawn. Once this second basepoint was reached, the
+critical rod position and period measurements were made first with the
+pump stopped then with the fuel circulating. The measurements were
+terminated when enough ®2%5U had been added to calibrate one rod over its
+entire length of travel.
+
+Most of the period measurements were made in pairs. The rod whose
+sensitivity was to be measured was first adjusted to make the reactor
+critical at about 10 watts. Then it was pulled a prescribed distance
+and held there until the power had increased by about two decades. The
+rod was then inserted to bring the power back to 10 watts and the measure-
+ment wss repeated at a somewhat shorter stable period. Two fission cham-
+bers driving log-count-rate meters and a two-pen recorder were used to
+measure the pericd. The stable period was determined by averaging the
+slopes of the two curves (which usually agreed within about 2%). Periods
+observed were generally in the range of 30 to 150 sec.
+
+Prior to pulling the rod for each period measurement, the attempt
+was made to hold the power level at 10 watts for at least 3 minutes, in
+an effort te assure initial equilibrium of the delayed neutron precursors.
+
+Generally, however, it was difficult to prevent a slight initial drift
+
+ 
+
+in the power level as observed on a linear recorder, and corrections were
+therefore introduced for this initial period. The difference between
+the reactivity during the transient and the initial reactivity, as com-
+puted from the in-hour relation, was divided by the rod movement and
+this sensitivity was ascribed to the rod at the mean position.
+
+The results of the rod sensitivity measurements made with the fuel
+stationary are shown in Fig. 7. Since the rod reactivity worth is
+affected by the 22%U concentration, theoretical corrections have been
+applied to the raw data to account for the fact that the ®3°U mass was
+continually being increased during the course of these experiments. The
+rod sensitivities shown in Fig. 7 have been normalized to a single 23%U
+concentration, that at the beginning of the calibration measurements.
+
+The calibration curve in Fig. 7 constitutes a convenient reference
+from which the static reactivity equivalent of the 23%U additions can be
+determined, simply by relating the integral under the curve between the
+fully withdrawn position and the critical rod position to the 235U mass.
+By applying this equivalence to the minimum 235U increment between criti-
+cality with the fuel stationary and with it circulating, one obtains an
+experimental determination of the resgctivity loss increment due to cir-
+culation. In addition, the curve in Fig. 7 is a convenient comparison
+curve for the rod sensitiviiy data taken while the fuel was circulating.
+
+In the first of the two sbove cases, the reactivity increment
+cbtained from experiment was 0.212 + 0.004% 6k/k. This was found to
+compare with 0.222% calculated directly from Eq. 14, with w = 0. In the
+second case, the rod sensitivities determined from period measurements
+during circulation and Eg. li are shown in Fig. 8. Note that the solid
+curves in Figures 7 and 8 are identical. The experimental points were
+found to be distributed fairly clesely about the reference curve, but the
+scatter of points relative to this curve is somewhat larger than observed
+with the data points of Fig. 7. Suggestions concerning the possible
+sources of this scatter, and methods for improving the precision of these
+
+neasurements are included in the following section.
+
+ 
+
+®
+
+ 
+
+8
+@
+
+ 
+
+ 
+
+27
+
+CRNL-DWG 65-10292
+
+ 
+
+t
+|
+-
+-
+LL
+
+a,
+
+ 
+
+ 
+
+ 
+
+| i i
+
+ 
+
+ 
+
+ST TT TNT
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.08
+ra
+
+£
+
+>
+
+Xx
+
+X 00s
+
+@©
+
+?
+
+“= 00a
+
+I
+
+z !
+
+or
+
+Oo
+
+=
+
+Z 003
+
+=
+
+fe @
+Zz n
+I oo2 Sh
+wi
+
+ww
+
+©
+
+= ootb—
+
+ol...
+0
+
+|
+; EE | NY
+|
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+4 8 12 16 20 24 28 32 26 40 44 48 52
+ROD POSITION (in.)
+
+Fig. 7. Differential Worth of MSRE Control Rod No. 1, Measured with
+
+Fuel Stationary.
+
+(Normalized to initial critical 23°U loading).
+Do
+oo
+
+ 
+
+ 
+
+ 
+
+     
+   
+
+ 
+
+0.07 o- Ee —— poo
+coe!
+<
+ix 0.08 |
+&
+Z 004 |
+Eg
+[*)
+= |
+4 C03} Ce —
+= } FUE_ STATIONARY
+a j o FUEL CIRCULATING
+& ooo if — ee Ce ee ef et
+Ln
+Ll.
+a
+ot - es - Se Che
+” o 4 8 12 ‘6 20 2a oo 28 zz 36 40 44 48 52
+ROD POSITION (in)
+Fig. 8, Differential Worth of MSRE Control Rod No. 1, Measured with
+Fuel Circulating. (Normalized to initial critical 23°U loading).
+
+ 
+no
+NO)
+
+LL. DISCUSSION OF RESULTS
+
+Theoretical Model Verification
+
+ 
+
+In keeping with the order of presentation of the preceeding part of
+this memorandum, we shall first discuss those aspects of the results
+which relate directly to the theoretical model. Following this, some
+suggestions concerning the MSRE experiments will be made.
+
+As a test of the theoretical model for determining the effects of
+fuel circulation on the delayed neutron precursors, quite satisfactory
+results were obtained for the reactivity increment between the just-
+critical states with the pump stopped and with the fuel in steady circu-
+lation. Here, the principal difference in our model and an earlier
+calculation by Haubenreich® is the specific inclusion of the top and
+bottom reactor plenums as additional sources of delayed neutron emission
+which contribute to the chain reaction. As was shown in Fig. 5, the
+combined effect of fuel flow and radioactive decay of the precursors is
+to "skew" the distribution of delayed emission toward the upper core and
+the top plenum. It is important to notice that this relative increase
+in emission of delayed neutrons in the top plenum is further accentuated
+by the much larger fuel volume fraction in this region (the effective
+neutron preduction is the product of the source in the fuel salt times
+the fuel volume fraction). Because Haubenreich's model accounted for
+the ultimate contribution to fission of only those delayed neutrons
+emitted in the channelled region of the core, he obtained a somewhat
+larger effective loss in delayed neutrons due to circulation.
+
+Although these results seem to constitute an adequate test of the
+model for the steady state condition, we cannct extend this claim to the
+stable asymptotic periods measured over the entire range of rod travel,
+due primarily to the lack of precision in the period measurements. How-
+ever, until more precise measurements can be made, this calculational
+model appears to be an adequate description of the delayed neutron pre-
+cursor transport due to circulation.
+
+More generally, one may pose the question of the need for sensitive
+
+Ss tests and models of the delayed neutron kinetics during fuel circulation
+ 
+
+at zero power. For the rod calibration work, it 1s always possible to
+stop the fuel pump, perform the tests with the fuel stationary in the
+core, and use simpler, well developed methods for the analysis of stable
+periods. Also, the questions of ultimate safety and stability of the
+reactor generally involve large reactivity additions which take place on
+a time scale short compared to the core transit time, and greatly in-
+fluence the kinetics of the prompt neutron generation. These questions
+also involve nonlinear interaction effects with temperature at high
+power.
+
+In addition to the theoretical interest, there are several contri-
+butions a good understanding of the effect of circulation on the delayed .
+neutron kinetics can make from the viewpoint of reactor operation. For
+example, the observed differences between the fuel stationary and circu-
+lating critical conditions can constitute a sensitive method of determin-
+ing fuel circulation rate, amount of circulating gas bubbles, or any
+special characteristic due to the circulation. Necessary control system
+sensitivities and response times for normal operation can be specified
+with less uncertainity in the desgigr of other molten salt reactors.
+
+Although much of this study overlaps that of earlier work, it is
+useful to re-emphasize here that the kinetics of circulating fuel systems
+belong to a mathematical category which is fundamentally different from
+that of stationary fueled reacters. This is particularly important in
+the description of reactor transients cccurring on a time scale com-
+parable with the fuel transit times. It 1s appropriate to refer to the
+circulating fuel systems as "vime-lag' systems, governed by partial
+differential equations for the delayed emitter concentrations, rather
+than by ordinary differential equations. For many purposes, spproximate
+reductions of the equations to a form similar to the kinetics equations
+cf the stationary fueled systems are adequate (e.g., the replacement of
+the individual delayed fractions, Bs by effective reduced values, 8ST,
+in the conventional reactor kinetics equations). This reduction, however,
+does not seem to be fully justified for the analysis of an arbltrary
+transient. In this study, the only conditions we have fully examined are
+
+the Just critical state and the state of flux changing with a stable
+
+ 
+
+asymptotic period. For a complete theoretical understanding of the
+ 
+
+ 
+
+Lo
+pi
+
+coupling of the circulation with the delayed neutron kinetics, we need
+also to analyze the transient delayed neutron modes, mentioned briefly
+in Section 2. This transient coupling determines the effective time to
+establish the asymptotic period, and should zlso provide a basis for
+approximations made in the analysis of arbitrary transients. Some pre-
+liminary work has been done con this problem, and we hope to make this
+
+the subject of a future memorandum.
+
+Recommendations for the MIRE
+
+ 
+
+One reason for the lack of precision of the rod bump-period measure-
+ment of control rod sensitivity is that the latter 1s the ratio of two
+small quantities. For best results, this requires the experimenter to
+maintain high precision in both the measurement of the increment in rod
+position and the slope of the log n vs time curve. ZFarly in the course
+of these experiments it was decided that only the regular reactor instru-
+mentation would be used for the rod sensitivity measurements. Determi-
+nation of the period in each measurement involved laying a straight-edge
+along the pen line record on the log n chart and reading the time Interval
+graphically along the horizontal scale which corresponded to a change of
+several decades in the neutron level. Since these charts, together with
+the pen speeds, are subject to variations, this is a probable source of
+error in the rod sensitivity measurements. A second possible source of
+error, probably less important, lies in the measurement of the increments
+in the rod positions. It has been seen that the scatter in the experi-
+mental points was larger for the sensitivity measurements made during
+circulation. This is expected, since similar increments in rod with-
+drawal result in a shorter stable period under these conditions.
+
+Although a complete error analysis has not been carried out, these
+considerations would seem to be obvious sterting points in any future
+attempt to obtain more precise measurements of the rod sensitivities.
+
+At the time these experiments were performed, the MSRE on-line computer
+was unevailable for the automatic recording of experimental data. It
+would be useful, during future MSRE operation, to repeat some of the
+
+period measurements while at zero power, using the computer in the dats
+ 
+
+logging mede to sutomatically record the log n and time intervals. The
+shim rods could be adjusted to vary the initial critical position of the
+regulating rod for the period measurements. The immediate need for more
+precise experiments is not great, since the precision of the rod cali-
+bration obtained from the measurements with the fuel stationary is
+
+Judged adequate for further operation.
+
+ACKNOWLEDGMENT
+
+The cooperation of J. R. Engel and various members of the MSRE
+cperating staff in performing the experiments and aiding in analysis
+is gratefully acknowledged. Also, the author is indebted to J. L. Lucius
+cf the Central Data Processing Facility for programming the machine
+
+computations to implement the analysis.
+
+ 
+ 
+
+2.
+
+La)
+
+9.
+
+1G,
+
+33
+REFERENCES
+
+J. A. Fleck, Jr., Theory of Low Pcwer Kinetics of Circulating Fuel
+Reactors With Several Groups of Delayed Neutrons, USAEC Report
+BNL-33% (T-57), Brookhaven National Laboratory, 1955.
+
+B. Wolfe, Reactivity Effects Produced by Fluid Motion in a Reactor
+Core, Nucl. Sci. Eng., 13(2): 80-90 (June 1962).
+
+P. N. Haubenreich, Prediction of Effective Yields of Delayed
+Neutrons in MSRE, USAEC Report ORNL-TM-380, Oak Ridge Naticral
+Laboratory, October 13, 1962.
+
+T. Gozani, The Concept of Reactivity and Its Application to
+Kinetics Measurements, Nukleonik, 5(2): 55 (1963).
+
+B. Friedman, Principles and Techniques of Applied Mathematics,
+Chapter 1, Jchn Wiley & Sons, Inc., New York (1956).
+
+T. B. Fowler et al., EXTERMINATOR — A Multigroup Code for Solving
+Neutron Diffusion Problems in One and Twc Dimensions, ORNL-TM-842
+February 1965.
+
+P. N. Haubenreich et al., MSRE Design and Operations Report,
+Part IIT: Nuclear Analysis, USAEC Report ORNL-TM-730, Cak Ridge
+National Laboratory, February 3, 1964.
+
+S. Glasstone and M. C. Edlund, The Elements of Nuclear Reactor
+Theory, Chapter 10, Van Nostrand, New York (1352).
+
+R. C. Robertson, MSRE Design and Operations Report, Part I:
+Description of Reactor Design, ORNL-TM-728, January 1965, p. 102.
+
+P. N. Haubenreich et al., MSRE Zero Power Physics Experiments,
+Oak Riage National Laboratory Report in preparation.
+ 
+
+ 
+ 
+
+Bos
+
+Ho
++
+
+oe
+3
+
+MND fo
+= Oo ®
+
+nd
+
+22.
+
+Nn To
+Ww
+
+ne
+Zoe
+26.
+oT.
+28.
+29.
+30.
+31.
+32.
+33.
+3h.
+35.
+36.
+
+~
+°
+
+39.
+
+CH
+L6.
+
+HOW O~3 ON Eo ND
+
+SV)
+
+ONN\A
+
+ba.
+
+Lo,
+
+L3.
+
+a
+==
+
+HxooerpHUOUsESOLOOGH GOD ODEEH- OD ES 0
+
+CENAEERE TEESE YE
+
+Adams
+
+Bail
+Barthold
+Bauman
+Beall
+Bennett
+Bettis
+
+. Blankenship
+Blurberg
+
+J. Borkowsgi
+B. Briggs
+
+H. Burger
+Cantor
+Carlsmith
+Cheverton
+Craven, Jr.
+Crowley
+
+. Culler
+Delene
+Ditto
+Ediscn
+Engel
+Epler
+Ergen
+Ferguson
+Fowler
+Fraas
+
+Fry
+Gabbard
+Gallegher
+
+. Gift
+
+. Grimes
+Guymon
+Harley
+Haubenreich
+. Holt
+
+. Hudson
+
+ung
+Kasten
+Kedl
+Kelly
+Kerlin
+Kerr
+Kirslis
+Krakoviak
+Lindauer
+Lucius
+
+oo Hed bg Cy
+
+TEXmwEHET ERIE SQ ED Wm
+
+CoH
+
+HoH nE E49 SG
+
+35
+INTERNAL DISTRIBUTION
+
+48,
+49,
+50.
+51.
+52.
+53.
+5k.
+55.
+
+[=
+J
+
+57.
+58.
+29.
+
+100-101.
+102-103.
+104-106.
+
+107.
+
+“REPU R RUE ERS OHUYOROrpERESmQQYmDEPnED ERD EOQDEDS
+
+°
+
+Lundin
+Lyon
+MacPherson
+MacPherson
+Martin
+McCoy
+McCurdy
+McDuffie
+Miller
+Moore
+Nephew
+Payne
+Perry
+Piper
+Pitkanen
+Podeweltz
+Preskitt
+. Prince
+
+I. Redford
+Richardson
+C. Robertson
+C. Roller
+
+W. Rcsenthal
+W. Savolainen
+Scott
+
+J. Skinner
+L. Smith
+
+G. Smith
+Spiewak
+Steffy
+
+. Tallackson
+. Thoma
+
+. Thomas
+Tobias
+
+. Trauger
+
+. Tsagaris
+. Ulrich
+
+. Vondy
+
+H. Webster
+M. Weinberg
+G. Welfare
+D. Whitman
+V. Wilson
+
+HrzomoEWertbaEaoEgE QRH
+
+mow HEBEDDOQ
+
+Central Research Library
+Document Reference Section
+Labcratory Records
+Laboratory Records (LRD-RC)
+OY)
+GC
+
+EXTERNAL, DISTRIBUTION
+
+108-122. Division of Technical Information Extension (DTIE)
+123. Research and Development Division, ORO
+124-125. Reactor Division, CRO
+
+ 
+ 
+ 
+ 
+
+ 

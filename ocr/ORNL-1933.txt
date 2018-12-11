@@ -1,0 +1,2003 @@
+ 
+
+ 
+
+ 
+
+UNCLASSIFIED [iL
+
+3 445k 03kL0993 1
+
+ORNL-1933
+Engineering
+
+     
+ 
+   
+   
+   
+   
+     
+ 
+      
+    
+ 
+       
+ 
+
+CENTRAL RESEARCH LIBRARY
+DOCUMENT COLLECTION
+
+APPLICATION OF TEMPERATURE SOLUTIONS
+FOR FORCED CONVECTION SYSTEMS
+WITH VOLUME HEAT SOURCES TO
+GENERAL CONVECTION PROBLEMS
+
+H. F. Poppendiek
+L. D. Palmer
+
+CENTRAL RESEARCH LIBRARY
+DOCUMENT COLLECTION
+
+LIBRARY LOAN COPY
+
+DO NOT TRANSFER TO ANOTHER PERSON
+
+If you wish someone else to see this document,
+send in name with document and the library will
+
+arrange a loan.
+
+OAK RIDGE NATIONAL LABORATORY
+
+OPERATED BY
+UNION CARBIDE NUCLEAR COMPANY
+
+A Division of Union Carbide and Carbon Corporation
+
+POST OFFICE BOX P © OAK RIDGE, TENNESSEE
+
+UNCLASSIFIED
+ORNL-1933
+UNCLASSIFIED Engineering
+
+Copy No &L
+
+Cotttract No W-T405, eng 26
+
+Reactor Experimental Engineering Division
+
+APPLICATION OF TEMPERATURE SOLUTIONS FOR FORCED CONVECTION
+SYSTEMS WITH VOLUME HEAT SOURCES TO
+GENERAL CONVECTION PROBLEMS
+
+by
+
+H F Poppendiek
+L D Palmer
+
+DATE ISSUED
+SEP 29 1958
+
+OAK RIDGE NATIONAL LABORATORY
+Operated by
+UNION CARBIDE NUCLEAR COMPANY
+A Division of Union Carbide and Carbon Corporation
+Post Office Box P
+Oak Ridge, Tennessee
+
+JARI
+
+3 445k 03L0993 1
+-2-
+
+INTERNAL DISTRIBUTION
+
+1 C E Center 48-82
+2 Biology Library 83
+£ oe; Health Physics Library 84
+Central Research Library 85
+
+6 Reactor Experimental 86
+Engineering Library 87
+7-13 Laboratory Records Department 88
+14 Laboratory Records, ORNL R C 89
+15 C E Larson 90
+16 L B Emlet (K-25) 91
+17 J P Murray (Y-12) 92
+18 A M Weinberg 93
+19 E H Taylor 94
+20 E D Shipley 95
+21 C E Winters 96
+22 F C Vonderlage 97
+23 W H Jordan 98
+2h J A Swartout 99
+25 8 C Lind 100
+26 F L Culler 101
+27 A H Snell 102
+28 A Hollaender 103
+29 M T Kelley 104
+30 G H Clewett 105
+31 K Z Morgan 106
+32 T A Lincoln 107
+33 A S Householder 108
+34 C¢ C Harrill 109
+35 D S Billington 110
+36 D W Cardwell 111
+37 E M King 112
+383 R N Lyon 113
+39 J A Lane 114
+50 A J Miller 115
+41 R B Briggs 116
+k2 A S Kitzes 117
+43 0 Sisman 118
+hy R W Stoughton 119
+45 W R Gall 120
+46 S E Beall 121
+hr J P Gill 122
+
+EXTERNAL DISTRIBUTION
+
+ 
+
+ZHQuUuYddmEprasdaE2aandEsndsrEstnaaaoanbdEEHrQREago™
+ZaurRuYuQaquRsuRururaodEasuuHOEHY RIG erEREHOQQUYWNQAEgGR OS
+
+ORNL
+
+ORN1-1933
+Engineering
+
+Poppendiek
+Cowen
+Breazeale (consultant)
+Skinner
+Boyd
+Alexander
+Bettis
+Blizard
+Bohlmann
+Claiborne
+Cohen
+Copenhaver
+Cristy
+Cromer
+Dytko
+Ergen
+Fraas
+Furgerson
+Gray
+
+Gray
+Greene
+Hoffman
+Keilholtz
+Lansing
+Lawson
+Lynch
+Manly
+Muller
+Palmer
+Perry
+Powers
+Savage
+Schultheass
+Thomas
+Trauger
+Warde
+Wantland
+Whitman
+Zmola
+Yarosh
+Document Reference
+
+Library, Y-12 Branch
+
+123 R F Bacher, California Institute of Technology
+124-438 Given distribution as shown in TID-4500 under Engineering category
+
+439 Division of Research and Medicine, AEC, ORO
+
+DISTRIBUTION PAGE TO BE REMOVED IF REPORT IS GIVEN PUBLIC DISTRIBUTION
+TABLE OF CONTENTS
+
+INTRODUCTION= == mem mma ccc meer m cer remem can nec menace em ——————————————
+GENERALIZED RADIAL TEMPERATURE PROFILES----c-vccrcccccncmcncncrcnnna=
+
+RADIAL TEMPERATURE PROFILES FOR A PIPE SYSTEM WHOSE
+WALL IS UNIFORMLY COOLED (AN EXAMPLE)=-=--=s=memcmmcmemcmme—om—=
+
+ANALYSIS OF THE THERMAL STRUCTURE IN A PIPE SYSTEM
+WHOSE WALL IS NONUNIFORMLY COOLED==--ceme-mmecccccecemmccaaremccnaa
+
+TEMPERATURE STRUCTURE IN A PIPE SYSTEM WHOSE WALL IS
+NONUNIFORMLY COOLED (AN EXAMPLE )s==n=nmm-emmmmmmnnmmnm—————————
+
+CLOSING REMARKS emtcnccnmmmnmmrem crc cc ccc —e cece ——n nee ——— mem —————————
+REFERENCES~wwr mec recor cr reer cere errs e ccc cmc ccc ccc mma mmm mmm meme
+
+Page
+SUMMARY
+
+This report concerns itself with the application of previously developed
+mathematical temperature solutions for forced convection systems having volume
+heat sources within the fluids to more general convection problems Con-
+vection solutions are tabulated so that it 1s possible to determine the de-
+tailed radial temperature structure within fluids having uniform volume heat
+sources and being uniformly cooled at the duct walls, the detailed tempera-
+ture profile of a specific system 1s presented The derivation of equations
+describing the temperature structure and heat transfer rates in a duct system
+in which the wall is nonuniformly cooled 1s given, the temperature structure
+
+of a specific heat exchange system is also presented
+-5-
+
+NOMENCLATURE
+
+letters
+cross sectional heat transfer area, £42
+fluid heat capacity, Btu/lb °F
+heat capacity of coolent, Btu/lb OF
+
+heat capacity of volume-heat source fluid, Btu/lb °F
+
+heat transfer conductance or coefficient, Btu/hr £t2 OF
+heat transfer conductance or coefficient of coolant, Btu/hr £2 OF
+
+heat transfer conductance or coefficient of volume-heat-source fluid,
+Btu/hr ft2 OF
+
+fluid thermal conductivity, Btu/hr £t2 (°F/ft)
+
+pipe wall thermal conductivity, Btu/hr f£t2 (OF/ft)
+
+axial heat exchanger length, ft
+
+mass flow rate of coolant, lb/hr
+
+mass flow rate of volume-heat-source fluid, lb/hr
+
+heat transfer rate, Btu/hr
+
+total heat transfer rate for heat exchanger of length L, Btu/hr
+pipe radius or half the distance between parallel plates, ft
+mixed mean coolant temperature of heat exchanger in figure 8, °F
+mixed mean coolant temperature at entrance of heat exchanger, °F
+mixed mean coolant temperature at exit of heat exchanger, °F
+fluid temperature at duct center, °F
+
+mixed mean temperature of the fluid with the volume heat source of the
+heat exchanger in figure 8, °F
+
+mixed mean temperature of the fluid with the volume heat source at the
+entrance of the heat exchanger, °F
+=
+
+Om R09 »
+
+\V)
+
+-6 -
+
+mixed mean temperature of the fluid with the volume heat source at the
+
+exit of the heat exchanger, °F
+mixed mean fluid temperature, °F
+fluid temperature at duct wall, °F
+wall temperature in figure 8, °F
+
+wall temperature in figure 8, OF
+
+the wall temperature rise above the mixed mean fluid temperature that
+exists for the fluid with the volume heat source with no wall heat flux,
+
+oF
+
+overall heat transfer conductance or coefficient, Btu/hr £t2 OF
+
+mean fluid velocity, ft/hr
+
+uniform volume heat source, Btu/hr £t2
+axial distance, ft
+
+radial distance from duct wall, ft
+fluid weight density, lbs/ftd
+
+pipe wall thickness, ft
+
+kinematic viscosity, £t2/hr
+
+Terms
+
+ 
+
+ 
+Nu
+
+Pr
+
+Re
+
+Dimensionless Moduli
+
+ 
+
+h
+= er, » Nusselt Modulus for a pipe
+k
+=
+r
+0
+= ve, D , Prandtl Modulus
+k
+u 2r
+= m O , Reynolds Modulus for a pipe
+?
+om ratio of the difference between wall and mixed mean fluid
+ot temperatures to the difference between wall and centerline
+
+temperature for a duct system being cooled at the wall
+(from reference 3)
+-8 -
+
+INTRODUCTION
+
+Laminar and turbulent forced-convection solutions were derived in
+references 1 and 2 for the case where fluids with uniform volume heat sources
+were flowing through circular pipes and between parallel plates respectively,
+heat was being added to or subtracted from the fluids in & uniform manner at
+the duct walls These duct systems were postulated to be long so that the
+thermal and hydrodynamic patterns were established and the physical properties
+were stipulated to be invariant with temperature The turbulent flow solution
+for each system was accomplished by separating the general boundary value
+problem into two simpler ones whose solutions were superposed yielding the
+solution to the original boundary value problem One boundary value problem
+defined a flow system with a volume heat source but with no wall heat flux and
+the second one defined a flow system without a volume heat source but with a
+uniform wall heat flux In the superposition process, temperatures above datum
+temperatures are added, for example, the radial temperature distribution aebove
+the centerline temperature for the general boundary value problem is obtained
+by adding the radial temperature distributions above the centerline tempera-
+tures for the two specific boundary value problems
+
+The present report gives 1) detailed tabulations of the turbulent tempera-
+ture profiles™ for volume-heat-source and wall-heat-flux pipe and parallel
+plates systemsfor a series of Reynolds and Prandtl moduli and 2) applications
+of these temperature solutions to two types of convection systems, namely,
+uniformly and nonuniformly cooled ducts containing flowing fluids with volume
+
+heat sources
+
+ 
+
+1 Although the detailed radial temperature profiles for turbulent flow had
+been evaluated at the writing of the earlier reports they were not included
+at that time, only the dimensionless differences between the wall and mixed
+mean fluid temperatures were presented because they are generally of more
+interest
+
+ 
+-9 =
+
+GENERALIZED RADIAL TEMPERATURE FROFILES
+
+The dimensionless radial temperature profiles within fluids having uniform
+volume heat sources and that are flowing in circular pipes and between parallel
+plates under turbulent conditions with no wall heat transfer have been evaluated
+from the solutions given in references 1 and 2 and are tabulated in Tables I
+and ITI The corresponding temperature profiles for the case where there are
+uniform wall heat fluxes but no volume heat sources have been evaluated from
+Martinelli's solutions (reference 3) and are tabulated in Tables III and IV
+
+Some typical normalized radial temperature profiles for turbulent flow
+in a pipe for both the volume heat source and wall heat flux cases for Pr = 1
+and Pr = Ol are shown plotted in Figures 1, 2, 3, and 4 Note how the
+shapes of these profiles vary with Reynolds and Prandtl moduli as well as the
+manner in which heat is added to the fluids The redial temperature distri-
+butions are dependent upon the radial heat flow and eddy diffusivaty distri-
+butions in addition to the boundary layer thicknesses and Prandtl moduli
+The dimensionless radial heat flow distribution for the wall heat flux case
+varies linearly from a maximum value at the wall to zero at the duct center,
+its shape is essentially not a function of Reynolds modulus However, the
+dimensionless radial heat flow distributions for the volume-heat-source case
+vary from zero at the wall to a maximum value between the wall and duct
+center to zero at the duct center, their shapes vary significantly with
+Reynolds modulus The dimensionless eddy diffusivity profiles vary with radial
+distance from the wall and Reynolds modulus, and the dimensionless boundary
+layer thicknesses are dependent on Reynolds modulus The Prandtl modulus
+
+significantly influences the thermal resistances in the various flow layers
+- 10 =
+
+For example, in Figure 1 (where several temperature profiles are plotted
+for Pr = 1 for the volume-heat-source case) it can be seen that the fraction
+of the total temperature drop across the laminar sublayer and buffer layer in-
+creases as Reynolds modulus decreases, this occurs because the radial heat flow
+is proportionately larger in the boundary layers at the lower Reynolds modula
+as well as because these layers are thicker under such circumstances Fagure 2
+reveals several temperature profiles for Pr = Ol for the volume-heat-source
+case, the thermal resistances are much lower in the boundary layers for low
+Prandtl modula fluids and hence the temperature differences across these
+layers are relatively smaller The temperature profiles in Figure 2
+asymptotically approach the laminar flow temperature profile as the Reynolds
+
+moduli decrease
+
+ 
+08
+
+01
+
+=-11=-
+
+UNCLASSIFIED
+ORNL -LR-DWG 8221
+
+ 
+
+09
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+04
+
+ 
+
+\
+Re 410 000
+
+O3—Re 100 000 += \
+X|
+02 \
+
+A\
+
+ 
+
+ 
+
+—_
+
+000 000
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+\
+i_—— LAMINAR SUBLAYER N
+
+Tl FOR Re 10 000 NN
+
+1
+
+bo BUFFER LAYER
+
+“FoR Re 10 000 NL
+ol 1 |
+
+0 02 04 06 08 To
+
+n
+
+Fig 1 Radial Temperature Distributions Within a Fluid
+Flowing in a Pipe with a Volume Heat Source in the Fluid
+and No Wall Heat Flux (Pr 1, Re 10,000, 100,000,
+1,000,000)
+-12-
+
+UNCLASSIFIED
+ORNL-LR DWG 8222
+
+ 
+
+10
+
+0°
+
+ 
+
+oo]
+
+ 
+
+\
+
+ 
+
+ 
+
+0
+\ Re 10 000
+
+Re 100 000
+
+ 
+
+Re { 000 000 \
+
+ 
+
+=
+
+ 
+
+. \
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+01
+
+XN
+
+—— —
+os se rn ange
+
+_—LAMINAR SUBLAYER FOR Re 10 000
+——BUFFER LAYER FOR Re 10 000
+
+LLL ING
+
+0 02 04 06 08 10
+n
+Fig 2 Radial Temperature Distributions Within a Fluid
+
+Flowing in a Pipe with a Volume Heat Source and No Wall Heat
+Flux (Pr OOf Re 10,000, 100,000 1,000,000)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+09
+
+08
+
+=-13-
+UNCLASSIFIED
+ORNL—LR DWG 8223
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+07
+
+06
+
+ 
+
+oO
+om
+ee ——
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+04
+Re 10000
+03
+—Re 100 000
+02 \ \
+N\ —Re 1 000 000
+| !
+I
+ol! | NN.
+i ~N
+: L_AMINAR
+| SUBLAYER FOR NY
+“1 Re 10000 ing
+I ——
+I BUFFER LAYER FOR NN
+Re 10 000 | Ba
+0 1 l |
+0 02 04 06 08 10
+
+n
+
+Fig 3 Radial Temperature Distributions Within a Fluid
+
+Flowing tn a Pipe with Wall Heat Flux but No Volume Heat
+Source in the Fluid (Pr 1, Re 10,000, 100,000,
+
+1,000 000)
+t-te
+
+to — te
+
+-14-
+
+ 
+
+10
+
+ 
+
+09
+
+ 
+
+08 \
+
+ 
+
+o7
+
+ 
+
+ 
+
+06
+
+Re 10 000
+
+ 
+
+ 
+
+ 
+
+05 \
+\ 100 000
+04
+
+\ Re 1 000 000
+03
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+or N\
+NN
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+o1H
+| LAMINAR SUBLAYER
+|," FOR Re 10000
+1 |
+| BUFFER LAYER
+| # FOR Re 10 000
+1 1
+0 1 | | | ~~
+0 02 04 06 08 10
+
+n
+
+Fig 4 Radial Temperature Distributions Withina Fluid
+Flowing ina Pipe with Wall Heat Flux but No Volume Heat
+Source In the Fluid (Pr 001 Re-10,000, 100,000, 1,000,000)
+DIMENSIONLESS RADIAL TEMPERATURE DISTRIBUTION FOR A PIPE
+SYSTEM CONTAINING A UNIFORM VOLUMETRIC HEAT SOURCE
+
+- 15 -
+
+TABLE I
+
+BUT HAVING NO HEAT TRANSFERRED AT THE PIPE WALL
+
+ 
+
+ 
+
+ 
+
+ 
+
+t - by
+Wr
+k
+
+Re = 5000
+n Pr = 001 Pr = 01 Pr =1 Pr = 4 Pr=1T7 Pr = 10
+0 4 1703x10-2 3 7501x102 5 1021x10-3 1 9956x1077 1 4197x1070 1 1438x1077
+025 4 1424 3 7302 L 8143 1 7076 1 1318 8559
+05 4 0665 3 6542 4 1949 1 2528 7371 5271
+075 3 9601 3 5399 3 7000 1 0407 5978 4179
+1 3 8LokL 3 4200 3 2000 8998 5209 3560
+15 3 5652 3 1640 2 5429 6975 3898 2745
+2 3 2603 2 8701 2 2000 5759 3240 2290
+3 2 6761 2 3479 1 6189 4239 2438 1712
+L 2 0772 1 8179 1 2311 3219 1851 1299
+5 1 5130 1 3240 8934 2335 1343 0942
+6 1 0100 8838 5964 1559 0897 0630
+8 2715 2368 1602 o417 0241 0170
+0 0 0 0 0 0 0
+
+Re = 10,000
+
+0 3 3566x102 2 7680x10"2 2 1094x1073 7 4364x107 5 0511x107% 4 0573x104
+025 3 3287 2 Th09 1 8643 5 3594 3 1499 2 2433
+05 3 2677 2 6800 1 5863 4 2700 2 4659 1 8501
+075 3 1797 2 6099 1 3975 3 5204 2 0502 1 4801
+1 3 1055 2 5230 1 2192 3 1441 1 8043 1 2679
+15 2 9095 2 3401 1 0503 2 7403 1 5401 1 0999
+2 2 6927 2 1590 956M 2 4562 1 4082 9888
+3 2 0079 1 7560 7505 1 9238 1 1042 TT49
+L 1 7377 1 3760 5754 1 4739 8461 5936
+5 1 2738 1 0081 4208 1 0760 6183 434]
+6 8559 6773 2827 T7228 4152 2921
+8 2319 1835 0768 1956 1131 0795
+0 0 0 0 0 0 0
+-« 16 -
+TABLE I (Con't )
+
+ 
+
+ 
+
+Re = 100,000
+n Pr = 001 Pr = Ol Pr=1 Pr =4 Pr =17 Pr = 10
+0 2 3351x1072 9 6944x10-3 1 7885x10~* L4 9508x107° 2 9004x105 2 1042x10-5
+025 2 3202 9 5800 1 5785 4 0097 2 2403 1 5901
+05 2 2851 9 2620 1 4655 3 6859 2 1092 1 4750
+075 2 2480 8 9508 1 3823 3 4200 1 9804 1 3801
+1 2 1831 8 6115 1 2993 3 2660 1 8661 1 3071
+15 2 0612 7 9504 1 1613 2 8299 1 6802 1 1800
+2 1 9050 7 2058 1 0423 2 6180 1 4963 1 0481
+3 1 5790 5 8302 8279 2 0798 1 1892 8331
+L 1 2430 L 5379 6405 1 6100 9197 6445
+5 9172 3 3436 L713 1 1847 6778 L745
+6 6197 2 2588 3182 8010 4591 3209
+8 1695 6185 0873 2188 1256 0875
+
+10 0 0 0 0 0 0
+Re = 1,000,000
+0 1088x102 1 8160x10°3 2 1151x105 5 3623x10-6 3 0820x10-6 2 1733x107°
+025 1 0678 1 7610 1 9582 4 9805 2 8579 1 9703
+05 1 0469 1 6760 1 8090 I 5263 2 5839 1 8093
+075 1 0179 1 5961 1 6950 4 2400 2 4400 1 7082
+1 9808 1 5140 1 6151 4 okos 2 3041 1 6143
+15 9118 1 3711 1 4501 3 6201 2 0779 1 4253
+2 8270 1 2271 1 2980 3 247h 1 8520 1 2962
+3 6720 9799 1 0341 2 5841 1 4729 1 0321
+Ly 5245 7598 8008 2 0012 1 1400 7983
+5 3869 5599 5895 1 4730 8395 5872
+6 2617 3785 3985 9963 5677 3971
+8 0718 1037 1091 2735 1556 108M
+10 0 0 0 0 0 0
+
+ 
+- 17 -
+TABLE II
+
+DIMENSIONLESS RADIAL TEMPERATURE DISTRIBUTION FOR A PARALLEL
+PLATES SYSTEM CONTAINING A UNIFCRM VOLUMETRIC HEAT SOURCE
+
+BUT HAVING NO HEAT TRANSFERRED AT THE WALLS
+
+ 
+
+ 
+
+ 
+
+Wro
+k
+Re = 5000
+n Pr = 001 Pr = 01 Pr =1 Pr = 4 Pr =7 Pr = 10
+0 6 2553x10"2 5 9943x10-2 1 5040x1072 6 4605x10°3 4 6881x1073 3 9211x1077
+025 6 2233 5 9643 14741 6 1607 4 3881 3 6211
+050 6 1395 5 8804 1 3900 5 3176 3 5451 2 7781
+075 6 0125 5 7521 1 2670 L 2975 2 5949 1 8731
+1 5 8443 5 5855 1 1500 3 6573 2 1420 1 5230
+15 5 4241 5 1671 9436 2 7625 1 6122 1 1281
+2 4 9664 4 T7223 7767 2 2074 1 2770 8924
+3 4 0215 3 8052 5386 1 4769 8795 5850
+L 3 1010 2 9120 3886 1 0699 6188 4348
+5 2 2518 2 1154 2802 T746 4468 3137
+6 1 4983 1 4069 1880 5233 2949 2090
+8 4052 3878 0508 1395 0797 0561
+0 0 0 0 0 0 0
+Re = 10,000
+0 Ib 6965x1072 4 2910x1072 6 0926x1070 2 2948x10-3 1 641x103 1 3060x10™°
+025 4 6683 4 2631 5 8087 2 0109 1 3583 1 0219
+05 4 5946 4 1889 5 1629 1 5038 9435 6729
+075 4 4814 4 0790 4 5597 1 3018 7884 5454
+1 4 3513 3 9499 4 oLk2h 1 1288 6733 4828
+15 4 0625 3 6658 3 2626 8915 5210 3704
+2 3 7516 3 3641 2 6978 7141 4133 2878
+3 3 081k 2 7488 2 1032 5558 3209 2220
+h 2 43102 2 1412 1 6091 L229 2447 1702
+5 1 7654 1 5658 11777 3089 1784 1245
+6 1 1812 1 0479 7957 2074 1200 0832
+8 3170 2802 2187 0567 0323 0225
+0 0 0 0 0 0 0
+- 18 -
+
+TABLE II (Con't )
+
+ 
+
+ 
+
+Re = 100,000
+n Pr = 001 Pr = 01 Pr =1 Pr=4 Pr=17 Pr = 10
+0 3 1195x1072 1 7325x1072  L 440ox10-4 1 2476x107 7 5800x105 5 7150x100
+025 3 0995 1 7145 3 8060 9607 5 4550 3 9451
+05 3 0615 1 6816 3 5760 8993 5 1097 3 LT
+075 3 0075 1 6384 3 3762 8482 L 8251 3 4902
+1 2 9426 1 5875 3 1941 8013 4 5648 3 2850
+15 2 7776 1 47hh 2 8820 7192 4 1003 2 9598
+2 2 5917 1 357k 2 5952 6473 3 6898 2 6552
+3 2 1637 11123 2 0761 5169 2 9552 2 1248
+L 1 T7117 8728 1 5940 4019 2 3146 1 6551
+5 1 2687 6467 1,1881 2974 1 7098 1 2299
+6 8585 4387 8081 2000 1 1550 8498
+8 2340 1211 2180 0555 3096 2452
+0 0 0 0 0 0 0
+
+Re = 1,000,000
+0 1 8578x1072 4 0304x10=3 5 0065x10=° 1 2458x10=5 7 6610x106 5 2055x106
+025 1 8468 3 9216 4 6405 11179 6 8949 4 6147
+050 1 8179 3 TT45 L 3647 1 0k98 6 5180 4 3747
+075 1 T7759 3 6133 L 1364 9959 6 1901 L 1347
+1 1 7259 3 4593 3 9206 9438 5 8821 3 9218
+15 1 6139 3 1433 3 5386 8519 5 3221 3 5345
+2 1 4879 2 8443 3 1861 7578 4 8203 3 1878
+3 1 2319 2.2961 2 5563 6119 3 9217 2 5517
+L 9724 1 7972 1 9961 L679 3 1104 1 9947
+5 7193 1 334 14779 3460 2 3703 1 4800
+6 4890 9032 1 0043 2039 1 4349 99Th
+8 1339 2519 2699 0620 3899 2650
+0 0 0 0 0 0 0
+
+ 
+
+ 
+
+ 
+-19 -
+TABLE III
+DIMENSIONLESS RADIAL TEMPERATURE DISTRIBUTION FOR A PIPE
+
+SYSTEM HAVING HEAT TRANSFERRED AT THE PIPE WALL
+BUT CONTAINING NO VOLUMETRIC HEAT SOURCE
+
+ 
+
+ 
+
+t - tg
+
+to - tg
+
+Re = 5000
+
+n = 001 Pr= 01 Pr=1 Pr=14 Pr =7 Pr = 10
+0 0 10 10 10 10 10
+025 9512 9473 T7776 5902 5049 4531
+05 9134 8957 5928 3353 aLl12 1899
+075 8552 8428 4812 2517 1777 1388
+1 8070 7915 4020 2018 1413 1100
+15 7108 6883 2905 1382 0959 0743
+2 6169 5946 2214 1020 0704 0545
+3 4709 4531 1656 0763 0527 0LOo7
+L 3462 3336 1261 0581 oLo1 0310
+5 2410 2334 0954 0L39 0303 0235
+6 1539 1515 0703 032k 0223 0173
+8 0124 0396 0307 0141 0098 0076
+0 0 0 0 0 0 0
+
+Re = 10,000
+0 0 10 10 10 10 10
+025 9499 9418 6425 3768 374k 2175
+05 8998 8835 L668 2433 1723 1348
+075 8497 8268 3741 1811 1272 0992
+1 7998 7717 2918 1404 0981 0763
+15 T7119 6800 2404 1157 0808 0629
+2 6300 5976 2038 0981 0686 0533
+3 4816 4539 1526 0734 0513 0399
+L 3537 3342 1161 0559 0390 030k
+5 2459 2348 0878 0423 0295 0230
+6 1577 1535 0647 0311 0218 0169
+8 0L00 0400 0283 0136 0095 007h4
+0 0 0 0 0 0 0
+- 20 -
+TABLE III (Con't )
+
+ 
+
+ 
+
+Re = 100,000
+n Pr = 001 Pr = 01 Pr=1 Pr =k Pr =17 Pr = 10
+0 10 10 10 10 10 10
+025 9L434 8o42 3702 1997 144 114L
+05 8896 8106 3006 1622 1173 0929
+075 8384 T7405 2598 1402 1014 0803
+1 T90L 6813 2311 1247 0901 0714
+15 6980 5802 1904 1027 OTL43 0588
+2 6143 4993 1616 0872 0630 0499
+3 L672 3734 1309 0706 0510 oLOk
+4 3438 2777 0920 0496 0359 0284
+5 2410 2015 0696 0375 0271 0215
+6 1570 1392 0513 0277 0200 0158
+8 0418 oL62 0224 0121 0087 0069
+0 0 0 0 0 0 0
+Re = 1,000,000
+0 10 10 10 10 10 10
+025 915k T496 3065 1796 1336 1075
+05 8264 6322 2489 1458 1085 0873
+075 7586 5546 2152 1261 0938 0755
+1 7005 L976 1913 1121 0834 0671
+15 5993 4117 1576 0923 0687 0553
+2 5171 3498 1337 0783 0583 oké69
+3 3872 2609 1000 0586 0436 0351
+4 2875 1969 084) 0495 0368 0296
+5 2050 1470 0576 0337 0251 0202
+6 1425 1064 oka 0249 0185 0081
+8 0460 ok27 0185 0109 0149 0065
+10 0 0 0 0 0 0
+
+ 
+-21 -
+TABLE IV
+DIMENSIONLESS RADIAL TEMPERATURE DISTRIBUTION FOR A PARALLEL PLATES
+
+SYSTEM HAVING HEAT TRANSFERRED AT THE WALLS BUT CONTAINING
+NO VOLUMETRIC HEAT SOURCE
+
+ 
+
+ 
+
+ 
+
+t - tg
+to - tg
+Re = 5000
+
+n Pr = 001 Pr = Ol Pr=1 Pr = 4 Pr =17 Pr = 10
+0 10 10 10 10 10 10
+
+025 9548 9533 8751 7833 Tha2 TLT74
+05 9096 9065 7501 5665 L8LY 4348
+075 8667 8601 6317 3831 2819 2245
+1 8223 8132 Sk3l 3001 2139 1676
+15 7335 T7212 4189 2128 1487 1251
+2 6338 6300 3305 1604 1111 0860
+3 4566 4485 2060 0938 06L42 oLok
+L 3300 3169 1407 0610 0415 0318
+5 2110 2050 1064 ou62 0314 0241
+6 1355 1318 0784 0340 0231 0177
+8 0346 0345 0343 0149 0101 0078
+0 0 0 0 0 0 0
+
+Re = 10,000
+
+0 10 10 10 10 10 10
+
+025 949k 9459 7872 6117 5322 4838
+05 9001 8917 6027 3450 2489 1962
+075 8469 8381 4891 2571 1816 1418
+1 8003 7848 4085 2055 1439 1119
+15 6940 6794 2948 1404 097k 0754
+2 5977 5775 2176 0993 0684 0528
+3 4572 4402 1687 0770 0530 0409
+L 3358 3237 1284 0586 0403 0312
+5 2342 2262 0971 OLk43 0305 0236
+6 1494 1464 0716 0327 0225 017k
+8 0378 0381 0313 0143 0098 0076
+0 0 0 0 0 0 0
+- 22 =
+
+TABLE IV (Con't )
+
+ 
+
+ 
+
+Re = 100,000
+n Pr = 001 Pr = 01 Pr =1 Pr = 4 Pr =17 Pr = 10
+0 10 10 10 10 10 10
+025 9L32 9130 3926 2040 1458 1148
+05 8922 8443 3253 1691 1208 0951
+075 8456 7827 2813 1462 1045 0823
+1 T7964 7270 2500 1300 0929 0731
+15 7073 6295 2060 1071 0765 0602
+2 6244 546k 1748 0908 0649 0511
+3 4765 4109 1307 0680 0486 0382
+L 3503 3040 0995 0517 0370 0291
+5 2446 2175 0753 0391 0280 0220
+6 1579 1468 0555 0288 0206 0162
+8 0L09 0405 o242 0126 0090 0071
+0 0 0 0 0 0 0
+Re = 1,000,000
+
+0 0 10 10 10 10 10
+025 9262 8131 3270 1864 1373 1099
+05 8603 7029 2655 151k 1115 0893
+075 800k 6240 2296 1309 0964 0772
+1 7456 5625 2041 1164 0857 0686
+15 6484 L696 1682 0959 0706 0565
+2 5642 3999 1427 0813 0509 oL79
+3 4251 2980 1067 0608 oLL8 0359
+in 3142 2239 0812 0k63 0351 0273
+5 2239 1659 061k 0350 0258 0206
+6 1501 1185 0453 0258 0190 0152
+8 Ookk43 0271 0198 0113 0083 0066
+0 0 0 0 0 0 0
+
+ 
+
+ 
+
+ 
+- 23 =
+
+RADIAL TEMPERATURE PROFILES FOR A PIPE SYSTEM WHOSE
+WALL IS UNIFORMLY COOLED (AN EXAMPLE)
+
+The temperature profiles tabulated in Tables I, II, III and IV can be used
+to determine the detailed radial temperature structure in composite convection
+systems Consider the case where a fluld with a uniform volume heat source 1s
+flowing turbulently in a long pipe whose wall is being cooled uniformly along
+
+its length The specific conditions of the problem follow
+
+W=05x100 Btu/hr £2
+ro =0 15 ft
+(XR) = 30,000 Btu/hr £t°
+Oo
+20
+k = 1 0 Btu/hr ft° "F/ft
+Re = 10,000
+Pr=10
+
+Determine the detailed radial temperature profile in the fluid
+
+Upon multiplying the dimensionless radial temperature profile given in
+Ww ro? 5
+Table I at Re = 10,000, Pr = 1 O by the term = 1 13 x 107 °F, a plot of
+
+ 
+
+the actual radial temperature profile, above the centerline temperature, can
+be graphed for the case where a uniform volume heat source exists in the flowing
+fluid but with no heat transfer occurring at the wall (see Figure 5) Upon
+
+multiplying the dimensionless radial temperature profile given in Teble III at
+=-24-~
+
+UNCLASSIFIED
+ORNL -LR-DWG 8225
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+300 I |
+200
+VOLUME HEAT SOURCE CASE
+100 NN
+= composite PN
+tv SOLUTION ~~ ——
+0 ————
+| _—
+WALL HEAT FLUX CASE
+-100
+~200
+¢
+soo | |
+0 02 04 06 08 10
+
+a
+
+ 
+
+DIMENSIONLESS DISTANCE FROM WALL (n)
+
+Fig 5 Radial Temperature Distributions for
+a Pipe System Whose Wall 1s Uniformly Cooled
+(An Example)
+- 25 -
+
+Re = 10,000, Pr = 1 O by the negative of the term”
+CE), Su
+At \ dA At
+0 om \: 30,000 0
+(tg = t,) =(t_- ty) (Atom \- ( |= le ( 86) = 290°F,
+m
+¢ o \Btg, / h Bog 120
+
+a plot of the actual radial temperature profile, above the centerline tempera-
+ture, can be graphed for the case where a uniform wall heat flux but no volume
+heat source exists (see Figure 5) This temperature difference is negative
+because heat 1s being extracted from the fluid through the duct wall A
+superposition of these two curves yields the temperature profile of the
+
+composite system above 1ts centerline temperature
+
+ 
+
+At
+
+2 The functions 552) from Martinelli's analyses, reference 3, are graphed
+
+o¢
+in Figures 6 and 7 for the pipe and parallel plates system The heat
+transfer conductances or coefficients can be obtained in references 1, 2,
+or 3, For the particular problem being considered here, 1 e , Re = 10,000,
+Pr=10,k=10,1r5= 15
+
+ 
+
+h er,
+Nu = % = 36
+or  h = 120 Btu/hr £t° °F
+UNCLASSIFIED
+
+ORNL-LR-DWG 8226
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+10 TTT T TI TTT TTT
+A
+09 Lr
+Per |
+/ Re =104
+ve 0 AY 1
+~—Re = 2x103
+A /
+08 /
+Re =10° vd / /
+ra
+El od A / /
+“l= 07 / /
+qq / / A
+/ /
+06 = =
+pt
+eel —17
+05
+04 Ll | 111 11 LLL LLL l Ll
+4 68 _, 2 4 68, 2 4 68 2 4 68 2 4 68 , 2 8
+10 10 10 10 10 10
+Pr
+At
+Fig 6 =, As a Function of Re and Pr for the Wall Heat Flux Case for Pipes
+og
+
+(Mar tinell)
+
+-97 -
+ 
+
+Atom
+Ato g
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+UNCLASSIFIED
+QRNL~-LR-DWG 8227
+10 EEL TT TTT TTT TTT TTT
+Re=2 10 x 106 ——_
+TA Re =489 x 103
+1
+Re 2 16x10° —| | + ve —Re = 22x104
+TN P%
+” d J
+"g
+08 pd 7
+~~
+—~
+07
+06
+05
+04 LA Lidl EERE EEE J J Lill J Ltd] pill
+2 4 68 2 4 6 8 2 4 68 2 4 6 8 2 4 68 2 4 68
+1073 10 2 10° 1 10 102 103
+Pr
+t
+Fig 7 = as a Function of Re and Pr for the Wall Heat Flux Case for Parallel Plates
+0
+
+(Martinelli)
+
+-/l~-
+- 28 -
+
+ANALYSIS OF THE THERMAL STRUCTURE IN A PIPE SYSTEM
+WHOSE WALL IS NONUNIFORMLY COOLED
+Consider the case where a fluid with a uniform volume heat source 1s
+
+flowing turbulently in a pipe whose wall is being cooled, nonuniformly along
+its length, by a coolant which 1s flowing in an annular space around the pipe
+(see Figure 8a) The heat transferred from the wall to the coolant through
+the differential heat transfer area 2nro dx 1s (see Figure 8b),
+
+dq = hg 2nrydx (to - te) (1)
+The heat transferred through the pipe wall is
+
+(t1 = to) (2)
+S
+The heat transferred from the fluid with the heat source to the wall 18°
+
+dq = ky 2nr dx
+
+dq = by 2m, ax|atyg + (te - tp) (3)
+From equations (1), (2) and (3) one can obtain
+
+enr ax| (tg - to) + Atyps
+
+ 
+
+dq = 0 ba
+PTTL, EL
+he "iE, ‘YE
+
+Two additional equations arise when making a heat rate balance on the two
+fluid streams in a length dx (see Figure 8c) The heat gained by the coolant
+
+in a parallel flow system is
+dg = my cp, dt, (5)
+
+ 
+
+3 The term Atypgg represents the wall temperature rise above the mixed mean
+fluid temperature that exists for the fluid with the volume heat source
+with no wall heat flux In order to cool the wall temperature to tj (see
+Figure 8b) it 1s necessary to superpose a wall cooling flux equal to that
+given in equation (3)
+   
+   
+  
+    
+
+-29-
+
+UNCLASSIFIED
+ORNL -LR-DWG 8228
+
+ER a ————— beheld LZ LZ Lilien lof
+
+ANNULUS
+
+ 
+
+  
+
+FLUID WITH
+HEAT SOURCE
+
+5
+
+ 
+
+  
+
+ 
+
+=
+
+ 
+
+PIPE WALL
+
+  
+
+COOLANT
+
+ 
+
+FLUID WITH ——~
+HEAT SOURCE he
+
+ 
+
+ 
+
+ 
+
+ 
+
+\
+
+NAR
+
+STL
+
+dx
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+(C)
+
+Fig 8 Flow Circuit and Temperature Distributions for
+a Pipe System Whose Wall 1s Nonuniformly Cooled
+- 30 -
+
+The heat lost by the fluid with the heat source is
+
+dq = Wares dx - me cpr dt; (6)
+From equations (5) and (6) one can obtain
+2
+
+Wnr
+A(t - to) = aa ( 1,1 + a dx (7)
+me Cpf Me Cpe nf Cpr
+
+ 
+
+or dT = -Ndg + Mdx (8)
+
+where T=ty - te
+
+ 
+
+ 
+
+ 
+
+= 1 + 3
+Bf Cpf Me Cpe
+
+_ WrroS
+
+= Bp opp
+
+Upon substituting equation (4) into equation (8) there results,
+
+ 
+
+dT = -NU(T + typo) 2arg dx + Mix (9)
+X T
+dT
+or - dx =
+NU 2xr, (T + Abyng) - M
+0 To
+
+1 In NU 2xr,T + NU 2nr, Atygs - M (10)
+NU 2nr, NU 2rnrg To + NU 2xrg Atypgg - M
+
+ 
+
+- XX =
+
+M ) NU 2nrox M (11)
+
+or T+ Atypg = (x, + Sms ~ WO org WO org
+
+The heat transfer rate q can be obtained by substituting equation (11) into
+
+equation (4) and integrating
+
+q x
+M NU 2nrox M
+dq = - ——— 0 nu
+/ q wen (= + Syms NU br) © + NU -
+0 0
+
+= 21 M -NU 2nrox| . M
+or a =F (7 ys + Te) [1 ) + dx (12)
+
+ 
+- 31 -
+
+The coolant temperature variation can be obtained by substituting equation (12)
+
+into equation (5),
+te qa
+dt, = —=
+Ie Cpe
+ci °
+
+ 
+
+dq
+
+_ 1 M _ NU 2nrox M
+or tg - ty = i + Atop = rie) ( e ) + rat (13)
+
+The mixed mean fluid temperature variation of the fluid containing the heat
+
+source can be obtained by substituting equation (12) into equation (6),
+
+X
+= - dx
+J of CT "mg oar
+
+1 M -NU 2nrox M
+- ee 1 [T+ At - m1 -e oo M
+or tp - tpg or cpr - VES = WU te) ( Nor opr ©
+
+ 
+
+ 
+
+2
+W nr
+$o—— x (14)
+mf Cpr
+The surface temperatures of the heat exchanger wall may be obtained from
+equations (1), (2), and (4),
+U(ts - te + Otygg)
+tp - te = h (15)
+Cc
+U(te - t. + At
+and by - tp = vt = So + Atvms) (16)
+S
+5
+
+The terms t, and (ty - to + Atygg) were previously derived in equations (13)
+
+and (11), respectively
+- 32 -
+
+TEMPERATURE STRUCTURE IN A PIPE SYSTEM WHOSE WALL IS
+NONUNIFORMLY COOLED (AN EXAMPLE)
+
+An illustrative example of a pipe-annulus system whose wall is nonuniformly
+
+cooled by parallel coolant flow follows
+
+Given,
+W=05x 10 Btu/ar rt S =0 005 ft
+ro, = 0 15 ft k, = 20 Btu/hr ft °F
+ke = 1 Btu/hr £t OF L=14t
+cpr = 10 Btu/lb °F me = 1600 lb/hr
+Pre = 1 Cpe = 5 Btu/lb °F
+mp = 2,360 lb/hr he = 123 Btu/hr ft2 OF
+Rep = 10,000
+tei = 0
+try = 150°F
+T, = 150°F
+
+Determine the total amount of heat transferred to the coolant flowing through
+
+the annulus as well as the temperature structure of the system
+
+2
+
+A -2
+At, =13x 1070 © 13x10 (2% 100)(2 25 x 107°) _ 116%
+
+ 
+
+VHS
+Nug = 36
+
+hp = 120 Btu/hr £t° OF
+
+ 
+
+ 
+
+= 1 1 _ 1 1 ] . og
+"Car Cpr | To Cpe (2360)(1) * 1800 (5) = © 00167 ZF
+2 -
+wee _ (5x200)(x)(225 x08) 0 OF
+nf Cpf (2360) (1) a
+- 33 =
+
+20
+1 _1 , 005, 1 _ nr rt? OF
+YETI tI = 0 028 Tp
+
+ 
+
+&e
+
+1_1
+Th"
+
+U = 59 7 Btu/hr £t2 °F
+Thus, from equation (12),
+
+I 150 i} 1
+9, = 5 00167 us + 246 - 0 00167)(59 T)2x = : (0 00167)(59 T7)2x( —-
+
+ 
+
+(150) (Xk)
+10 00167)
+
+= 115,500 Btu/hr
+
+Also, from equation (13)
+
+115,000 0
+ter - tei “TRO (5) SWOT
+
+and from equation (1k)
+
+_ 115,000 . (0 5 x 10T)x(2 25 x 10-2)(4) _ _..0
+ten = try = EON) Y (2360) (1) = 5LF
+
+The detailed temperature structure of the pipe-annulus system is graphed in
+
+ 
+
+Figure 9 The fraction of the total heat generated within the fluid flowing
+
+in the pipe which is extracted by the coolant flowing in the annulus 1s
+
+%eoolant 9, = 115,000 = 0 082
+
+Ygenerated Wnrg2L (5 x 107)x(2 25 x 1072)
+
+ 
+-34-
+UNCLASSIFIED
+800 ORNL-LR-DWG 8229
+
+ 
+
+700
+
+ 
+
+/I"
+600
+
+ 
+
+500
+
+- SS
+
+300 Vz
+
+ 
+
+\
+
+t(°F)
+
+ 
+
+ 
+
+\
+
+200 /
+
+ 
+
+100 Te
+~~
+
+ 
+
+ 
+
+ 
+
+0 ke"
+
+0 1 2
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+x (ft)
+
+Fig 9 Temperature Structure in a Pipe System Whose Wall
+
+IS
+Nonuniformity Cooled (an example)
+- 35 =
+
+CLOSING REMARKS
+
+The forced-flow volumetric-heat-source solutions which were previously
+
+developed were applied to two specific heat exchange systems They may also
+
+be applied to other types of convection systems, several of which are suggested
+
+below
+
+1)
+
+2)
+
+3)
+
+Parallel plates system whose wall is nonuniformly cooled The
+analysis presented for the nonuniformly cooled pipe system may
+
+be modified to obtain a solution for a parallel plates system by
+replacing the pipe heat transfer area, 2nrydx, by a corresponding
+one for the parallel plates system
+
+Pipe and parallel plates systems whose walls are being cooled by
+fluids having volumetric heat sources The analysis presented
+for the nonuniformly cooled pipe system may be modified to obtain
+the temperature solutions for general convection systems in which
+the coolants also contain volumetric heat sources Under these
+circumstances a Btyms term for the coolant is included in equation (1),
+and a volumetric heat source 1s included in equation (5), the
+analysis is accomplished as before The new equation for T now
+contains a modified form of the parameter M and also a Btypg
+
+for the coolant has been added The same modifications occur
+
+in the equation for the heat transfer rate, q
+
+Pipe and parallel plates systems which are being nonuniformly
+cooled by counter flow In this case it is merely necessary to
+
+insert a minus sign in equation (5) and carry 1t through the
+
+remaining analysis
+Thais report has stressed only the turbulent flow regime although both
+laminar and turbulent flow analyses were presented in references 1 and 2
+Applications for laminar-flow volume-heat-source systems parallel those pre-
+sented here for turbulent flow It 1s interesting to note, however, that the
+heat extraction or cooling rates necessary to reduce wall temperatures to
+mixed mean fluid or centerline temperatures in the case of laminar flow are
+much greater than those for turbulent flow For example, 1t 1s necessary to
+extract 33 1/3 percent of the heat generated within a laminarly flowing fluid
+in a pipe system to bring its wall temperature down to the centerline tempera-
+ture, whereas for turbulently flowing ordinary fluids the corresponding heat
+
+extraction rate 1s only several percent
+
+ 
+REFERENCES
+
+Poppendiek, H F and Palmer, L. D , Forced Convection Heat Transfer
+In Pipes with Volume Heat Sources Within the Fluids,' ORNL-1395
+
+Poppendiek, H F and Palmer, I. D , 'Forced Convection Heat Transfer
+Between Parallel Plates and In Annuli with Volume Heat Sources Within
+the Fluids, ' ORNL-1701
+
+Martinelli, R C , 'Heat Transfer to Molten Metals, Trans Am Soc
+Mech Engr , 69, 1947, pp 947-959

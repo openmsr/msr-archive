@@ -1,0 +1,1545 @@
+UCN-2383
+(3 11-80)
+
+OAK RIDGE NATIONAL LABORATORY
+Operated by
+
+ 
+
+UNION CARBIDE NUCLEAR COMPANY
+
+Division of Union Carbide Corporation
+
+Post = Box X CENTRAL FILES NUMBER
+
+Oak Ridge, Tennessee _
+
+  
+
+ 
+
+ 
+
+ 
+
+DATE: December 26, 1961 COPY NO. 31
+
+SUBJECT: MSRE ~ Analog Computer Simulation of the
+System With a Servo Controller
+
+TO: Ge A. Cristy
+
+FROM: 0. W. Burke
+
+ABSTRACT
+
+One purpose of this study was to determine whether the fuel salt
+
+F~ temperature inside the reactor could be controlled with a closed-
+loop servo controller. An "on-off" type controller was demonstrated
+using four different control signals. The stability of the system
+
+/ when using the controller was of primary interest.
+
+These studies indicated that the system was stable for large and
+relatively fast power demand changes when using the controller with
+any one of the four control signals.
+
+NOTICE
+
+This document contains information of a preliminary nature
+and was prepared primarily for internal use at the Oak Ridge
+- National Laboratory. It is subject to revision or correction
+and therefore does not represent a final report. The information
+N is not to be abstracted, reprinted or otherwise given public
+dissemination without the approval of the ORNL patent branch,
+
+Legal and Information Control Department.
+CONTENTS
+
+I. Introductionecceccococeosceoceecoososocococesss
+IT. Description of the System Simulated esecoeeecoecse
+IIT. Description of Controllerececececoccccccocccocsoss
+Iv. Description of the Control Signals Used cece
+A. Control Signal No. 1, €, ccccccecooosson
+
+B. Control Signal No. 2,
+C. Control Signal No. 3, € coceccccccccocss
+
+2 €,
+
+® 0 0 0 © 060 0 0 06 © 06 0 O0 0 o
+
+D. Control Signal No. Lb
+Vo Procedure and Results eecococeceocoeocoocooocoooecose
+
+© © 0 0 © 6 0 6 0 0 0 0 0 00
+
+1l. Basic Flow Diagram of MSRE System ococeoceee
+2. Identification of Temperature Symbols....
+3. MSRE Design Point Data_as of 12-13-60....
+Lh. Generator Circuit for Ci ...ccccccoccsccs
+5. Generator Circuit for €, ceoeesccccccooe
+6. Generator Circuit fOr€, eeceecoecoccccs
+T. Generator Circuit for, cocoeccoscoccee
+8. Control Signal €, , Nuclear Power and
+Mean Fuel Temperature in Reactor vs.
+TiME cocococececccocscseosseconoscocccnosocosocos
+9. Control Signal EL, Nuclear Power and
+Mean Fuel Temperature in Reactor vs.
+TIME ceececoccsocsesoosscescoscooocsocoooccss
+10. Control Signal €, , Nuclear Power and
+Mean Fuel Temperature in Reactor vs.
+
+Time © 0 0 @ OO © © 6 © & & 06 6 0 6 © © 0 6 06 & 06 0 00 0 O00 © 0 0 00 © O0 0 0
+
+11. Control Signal €, Nuclear Power
+and T VSoe TIME eececoocoocooecoeooooooses
+°lr
+Bibliography © 000006006 0©00O0O0O0OCS6 066 060O0OCO0COOCO0O0O0S O00O0COCO0 OO
+
+Distribution oe 06 6 6 060 0 0 8 0 0 © 6 06 © 0 © © 0 © 6 0 0 @ 60 06 06 060 06 0 6 © 0 0 O00 © ¢ 0 ©
+
+OUT
+
+I
+—~J
+
+9-10
+11-12
+13
+
+1h
+
+15
+
+16
+
+17
+
+18
+
+19
+20
+
+22-23
+IT.
+
+IIT ©
+
+Introduction: It is desirable to provide a controlier for con-
+trolling the fuel temperature inside the reactor. There are many
+control conceptg that would do the job.
+
+ 
+
+The decision was made to try a simple "on-off" controller. E. R.
+Mann of the Instrumentation and Controls Division proposed four
+control signals which have definite possibilities and suggested
+that they be demonstrated on the analog computer. This report
+covers the analog computer demonstrations.
+
+Description of the System Simulated: A schematic flow sheet of the
+
+MSRE system is shown in Figure 1, The temperature symbols are identi-
+fied in Figure 2. The design information used in these studies is listed
+in Figure 3. The analog computer diagram is filed in the Engineering and
+Mechanical Division print files on Drawings 40331 and L0332.
+
+ 
+
+The simulation of the thermal system and nuclear system as used in these
+studies has been discussed in previous preliminary reports.~ There were
+two changes, however, that were significant. The temperature coefficient
+of reactivity of the graphite was changed from:
+
+2x10" dk to -6x10° Sk
+K-OF K-°F
+
+and the total secondary salt Loop transit time was changed from 13
+seconds to 24.2 seconds.
+
+Description of Controller: The controller simulated was a simple
+"on-off" servo controller. The rod drive motor was a constant speed
+motor, driving the rods at a constant velocity sufficient to change
+the reactivity at a rate of:
+
+ 
+
+0002 OK
+K-sec.
+
+For the sake of simplicity, the rod worth was considered to be linear
+throughout the range used in these studies. The "time constant” of the
+controller was assumed to be 50 milliseconds. This "time constant" is the
+time required for the rod speed to attain 63% of full speed subsequent to
+receiving a demand signal to move the rods. The "dead band" of the con-
+troller was I 20F,
+
+Description of the Control Signals Used: The four different control
+signals used with the above described controller were as follows:
+
+ 
+
+A. Control Signal No. 1,&,
+
+ 
+
+The equation expressing € is as follows:
+
+STITT er 4a 1)
+where,
+G = control signal gain factor or amplification factor.
+m, n, and a are coastants that may be varied at will.
+
+d = neutron flux
+
+ 
+
+To = Fuel salt temperature at the reactor outlet.
+
+Tr
+Ti] = Fuel salt temperature at the inlet to the reactor.
+
+r t
+g(t) = WN - (x] - 1) - g +] dt
+
+r r
+0 Lo.
+
+This can be considered as a "reset mechanism." = gyri S70
+Tsp - The desired mean fuel temperature in the reactor.
+
+The controlled variable in €, is the mean fuel temperature in the
+
+reactor, z, + J » This variable appears only in the
+r Tr
+
+ 
+
+2
+
+second term of the control signal. If this term alone is used as
+the control signal, the system 1s unstable.
+
+The first term in €, can be considered as a high frequency band
+pass stabilizing mechanism. It merely compares the rate of pro-
+duction of nuclear power to the rate of addition of heat to the
+fuel salt as it passes through the reactor. Note that for steady
+state operation:
+
+d_Le(l=o =A, |= 9 (2, - i] ) a(t) _
+g(t) =a ¢ - (=. - ])
+
+This insures that the first term in € will be zero for steady state
+operation whether the term:
+
+be (- e)]
+
+is zero or not. For this reason, the constant, "a", does not have
+
+to be reset for various power levels. eC exceeds the dead band
+
+-) =
+positively, rods will be inserted and if €, exceeds the dead band
+negatively, rods will be withdrawn. The analog computer diagram
+used to obtain € is shown in Figure 4.
+
+The temperature sensing elements are thermocouples attached tc the
+walls of the pipes containing the fluids whose temperatures are to
+
+be measured. There is a time lag between the time at which a change
+in temperature of the fluid occurs and the time at which this change
+is reflected in the thermocouple output signal. This time lag varies
+with different thermocouple designs, pipe wall thicknesses, etc. The
+time constant for this lag in the salt temperature thermocouples was
+designated as T and was considered to be 5 seconds.
+
+-
+
+«= % #
+® on Goo Ko
+i
+
+The time constant of the g(t) circuit was, chosen ast 10 times that
+of the thermocouple. This longtime constant was necessary in order
+to get "reset action" and still not interfere with the stabilizing
+effect during transients.
+
+The other three control signals are quite similar to €, and only
+their differences from, will be pointed out in the following
+descriptions of these signals.
+
+Control Signal No. 2, &, o
+
+ 
+
+The equation expressing € is as follows:
+
+= €,° md a § - (2), - ] ) g(t) p+ n Gc] 1] Fen,
+
+where,
+
+f, = air flow rate across the radiator
+
+TI = outlet air temperature from radiator
+Ja
+
+I, = inlet air temperature to radiator
+J a
+
+ 
+
+The time constant used for the alr temperature sensing elements
+was 2.5 seconds and that used in the g(t) circuit was 25 seconds
+
+(T3= 2.5and A), = 0.04).
+
+Note that the controlled variable is the same as for €, » The
+stabilizing portion of the control signal is now formed by comparing
+the rate of production of power in the reactor to the rate of re-
+moval of power from the secondary salt by the alr flowing across
+
+the radiator. Note that a multiplier is required in this circuit.
+
+- 5
+The analog computer diagram used to formulate C, is shown in Figure 5.
+
+C. Control Signal No. 3,65 o
+
+ 
+
+The equation expressing €
+
+= €5 nia ¢ - 6 a1): g(t) + on =] + APE
+
+secondary salt temperature at the radiator inlet
+
+=
+I
+
+H
+ll
+
+secondary salt temperature at the radiator outlet
+
+ 
+
+—_ 5
+
+The controlled variable is the same as that in €, and €, » The
+stabilizing circuit is formed by comparing the rate of power production
+in the reactor to the rate of power loss of the secondary salt as it
+flows through the radiator. No multiplier is required since the flow
+rate in the secondary salt system is constant.
+
+The "time constant" potentiometer settings are the same as those used
+in €, . The analog computer diagram used to obtain €, is shown in
+Figure 6.
+
+D. Control Signal No. 4,€, .
+
+ 
+
+The equation describing €
+
+L€, od. b En : sw} (2), - 7,
+
+This control signal is the same as ) except that a different con-
+trolled variable is used. The outlet fuel temperature from the
+reactor is the controlled variable. The analog computer diagram
+used to derive, is shown in Figure 7.
+
+Procedure and Results: The system without a controller was shown to be
+unstable subsequent to any appreciable perturbation. The system was also
+shown to be unstable when using the controller with only the second term
+in the above control signals.
+
+ 
+
+The stability of the system with the gbove controllers was checked sub-
+sequent to large changes in the power demand or load. The changes in the
+load for the four runs, each using one of the four above described control
+signals to the controller, were not precisely equal in magnitude and rate
+of change. The change in load was accomplished by manually turning a
+potentiometer. Also, no attempt was made to get optimum settings for M
+and N in each case. Therefore, the results cannot be compared quantita-
+tively. In later runs linear ramp load changes will be used, and optimum
+
+- 6 -
+values of M and N used, so that wortrollers can be compared. Records
+ings of the controlled variable and the neutron flux were made subssgquent
+to a load change, while using each of the four control signals to the
+controller. The conditions for these runs were ag follows:
+
+A. Using €, as the control signal, M, as shown on the computer
+diagram, wag set at 877 (quite arbitrarily) and N was set at
+0.5. The load, or the heat removal Fate by the air across the
+radiator, was cet at approximately 4 megawatt and the system
+permitted to stabilize. The load was increased from 5 mw to
+10 mw in 15 seconds, approximately at a constant rate. The
+curves obtained are shown in Figure 8. On all the curves only
+a relatively short time is shown. It can be seen that the curves
+are converging, which indicates stability.
+
+B. Using €, as the control signal, M, as shown on the computer
+diagram, was set at 0.877 and N set at 0.5. The load was changed
+from approximately 1.6 mw to 10 mw.in 17 seconds. The resulting
+curves are shown in Figure 9.
+
+C. Using € as the coatrsl signal, M, as shown on tha computer
+diagram, was set at 0.25 and N was set at 0.5. The load was
+changed from approximately 1.6 mw to 10 mw in 13 seconds. The
+resulting curves are shown in Figure 10.
+
+De Using c 4 88 the control signal, M, as shown on the computer
+diagram, was set at 0.50 and N was set at 1.00. The ioad was
+changed from approximately 1.6 mw to 10 mw in 11 seconds. The
+resulting curves are shown in Figure 11.
+
+The conclusion reached wag that the system would be stable using the con-
+troller with any of the four control signals.
+
+It should be pointed out that th= congtants M and N on the actual in-
+stallation could be changed ov=r a considerable range. No attempt was
+made to get the optimum settings on the computer, due to time limitations.
+ORNL~LR-DVE. 64.899
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+UNCLASSIFIED
+PUMP
+PUMP Te Tee |
+Oy | 200 GAM. Tes Ts, |
+=
+Tae Tes ‘ ¥
+& v
+The |
+7], Tee N Ti Ts3
+- Tee t AlrR —
+TZ], To] £ Tl = ©]
+a —* ———
+—
+| |
+REACTOR To] 4 Ss
+RADIATOR
+
+F1G. 1 BASIC Flow DIAGRAM OF MSRE SYSTEM
+ 
+
+Figure 2
+
+TDENTIFICATION OF TEMPERATURE SYMBOLS
+
+Te - Circulating ful mean temperature in the reactor corsa.
+
+Teo - Circulating fuel temperature at the outlet of the reactor cor.
+
+Tes . Circulating fus=l tamperature at the inlet to the primary heat
+exchanger.
+
+Lely - Circulating fuel mean temperature in the primary heat exchanger.
+
+Tes - Circulating fuel Temp ture at the outiet of ths primary h=at
+exchanger.
+
+Trg - Circulating fusl temperature at the inlet to the reactor cores,
+
+Tq - Mean temperaturs of the graphits in the reactor 20rz.
+
+Tp - Mean temperature of the metal in the primary heat exchang=r wa.l.
+
+Tq - Mean temperature of the secondary salt in the primary heat excrangs=r.
+
+Teo - Secondary salt temperaturs at the outlet of the primary heat exchanger.
+
+Tg3 - Secondary salt temperaturs at ths inlet to the radiator.
+
+Tal - Mean temperatures of the s=zomdary salt in ths radiator.
+
+Les - Secondary salt tempsraturs at the radiator outlet.
+
+Ts6 - Secondary salt temperaturs ab tos inlet to the primary heat sx czarger
+
+Lor - Mean *temp=raturs of the metal in the radiator.
+
+Tot - Mean circulating fuel temperatures in the "hot leg’ of the primary
+system.
+
+Told Mean circulating fuel temperatures in toe "oold leg" of the primary
+system
+
+Tha, - Mear air temperatsre in the radlator.
+
+ 
+Figure 2 (contd.)
+
+Fuel temperature at reactor core inlet.
+Fuel temperature at reactor core outlet,
+Secondary salt temperature at the radiator inlet.
+
+Secondary salt temperature at the radiator outlet.
+
+Cooling air temperature at radiator inlet.
+
+Cooling alr temperature at radiator outlet.
+
+= 10 --
+Figure 3
+
+,
+} - \
+MSRE DESIGN POINT DATA AS OF 12-13-60
+
+ 
+
+Reactor inlet temperature: 1175 °F
+Reactor outlet temperature: 1225 °F
+Mean graphite temperature: (with no fuel absorption) 1230 °F
+Residence time in reactor: | 7.63 sec.
+Film drop from graphite to fuel: Linear with power
+Heat capacity of graphite: 0.425 BU
+
+# OF
+Prompt 7 ana neutron heating in graphite: 6% of 10 MW
+Residence time in piping from reactor outlet to H. E. inlet 3.09 sec.
+Residence time in H. E. 2.24 sec.
+Heat capacity of metal in H. E. | 200 BTU/°F
+Avg. film drop between primary coolant and metal at D. P. 55.2 °F
+Avg. drop in metal at D. P. | 56.7 °p
+Avg. film drop between metal and secondary coolant at D. P. 26.1 °F
+
+Film drop between primary coolant and metal as function of
+flow: See graph, displace curve if necessary so that at 6.2
+fps velocity /\T = 55.2 °F.
+
+EO .
+Mean secondary coolant temperature at D. P. 1062 F
+
+Residence time in piping between H. E. outlet and reactor 9.04 sec.
+inlet (including coolant annulus) |
+
+Total circulation time 22.0 sec.
+Temperature coefficient of reactivity of graphite: -6 x 107° Ox /x-CF
+Temperature coefficient of reactivity of fuel: -3.3 x 10720 k/k-CF
+Melting point of primary coolant: sup °F
+
+Melting point of secondary coolant: 860 °F
+
+- 1] =
+Figure 3 (contd. )
+
+Check points:
+
+ 
+
+ 
+
+ 
+
+~N
+= Thermal resistances: ft. hr. °F
+BTU
+. . : _l
+on in primary coolant film: 3.28 x 10
+| -
+in metal: 3.32 x 10
+: . =
+in secondary coolant film: 1.56 x 10
+Simulator data for secondary loop
+Air temperature rise in radiator 200 °F
+Air suction temperature 100 °F
+Air flow 166,000 cfm
+(7.11 x 10° #/hr)
+Heat capacity of radiator Lo BTU/F
+. BTU
+Heat capacity of secondary salt 0.57
+- # OF
+A~
+Density of secondary salt 120 dt /pg3
+Residence times of secondary salt:
+in primary heat exchanger 1.75 seo. |
+in piping to radiator 5.20 sec.
+in radiator 7.14 sec.
+in piping from radiator 10.11 sec.
+Total 2L .20 sec.
+Residence time of air in radiator 0.0L sec.
+Temperature differences in radiator:
+in salt film 13.4 CF
+. in tube wall 78.1 OF
+in air film ((O0.( Of
+AN
+
+- 12 =
+ORNL-LR~Dwg. 64900
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
++ To], | - Ht) rd
+5 3 SN
+© eo (de = 71) -#4)]
++ €,
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+= o.1 (&)
+
+= &, = ria = (Ten Ta) - 3) f t Nf (TT, Ti) -c Tosf
+
+FIG 4. GENERATOR CIRCUIT FOR E,
+- 13 - |
+ORNL<=LR=DWg . 64901
+Unclassified
+
+- 1?)
+SN
+
+—fa b= f(T] T].)- HA}
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+| .
+SENS. £.
+TIME .
+LT] LAG | )
+
+ar
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+FIG.5 GENERATOR CIRCUIT FORE,.
+
+- 14 -
+a
+
++Ti]a ( )
+
+Unclassified
+ORNL-LR-Dwg. 64902
+
+nu
+SN
+
+Trg LA -jee =(Tde= Tela) - 8)
+
+ 
+
+l
+A,
+G
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
++
+A,
+o
++
+©
+®
+
+ 
+
+ 
+
+ 
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+| \N  SENsoR
++T./x | TimMmfE LAG
+J
+Ji | |
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+= f(T] Tle)" 2 Tse)
+—lo0oV glse X 57
+Oo
+
+A, = c.! (+)
+
+Le =mfad-(T- 1) -36} + NTE] x Te), )~2 Ter}
+
+G C3
+
+FIG. GENERATOR CIRCUIT FOR €3.
+
+- 15 -
+ORNL-LR-Dwg. 64903
+Unclassified
+
+|
+
+LL
+Ts
+Trine LAS fad -(1],~T]) - 14}
+Ae
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+[> +9)
++ ¢ a
+—O—
+|
+SENSOR 3,
+“TIME LAS OO
+ig NG
++ Tl Z SN + -y
+\ | ~
+L
+Gr
+
+ 
+
+~/ooV
+
+Ag E 0 (%)
+
+FE mia - (%],- 1s) - 7%) + N (TJ = Tse)
+
+FIG. 7 GENERATOR CIRCUIT FOR €,.
+
+- 16 =
+(°F)
+
+121
+
+in Reactor
+
+1200
+
+1190
+
+Mean Fuel Temp.
+
+Nuclear Power (mw)
+
+0
+
+Elapsed Time from Start of Transient (sec.)
+
+- 17 -
+
+ORNL~LR-Dwg. 6490k
+
+ 
+
+v
+,
+Sl
+
+3p
+
+Mb
+1.220
+
+(°F)
+
+1210
+
+in Reactor
+
+1200
+
+1190
+
+Mean Fuel Temp.
+
+10
+
+Nuclear Power (mw)
+
+0
+
+Elapsed Time from start of Transient (sec.)
+
+ 
+
+- 18 =~
+
+ORNL~LR-Dwg. 64905
+Unclassified
+
+ 
+(°F)
+
+in Reactor
+
+Mean Fuel Temp.
+
+Yuclear Power (mw)
+
+1210
+
+1200
+
+1190
+
+Elapsed Time from Start of Transient (sec.)
+
+- 19 -
+
+ORNL~-LR-Dwg. 64906
+
+ 
+ORNL~LR-Dwg. 614907
+
+2
+RY
+
+50
+
+D
+
+1
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+TO on
+
+an 3
+
+—— pn fee fea
+
+— epee
+t ; .
+
+me rg dt aE om op ed ma = en
+
+1
+
+Jamcd
+
+TST
+“Mm OC
+
+o TN
+
+ 
+
+20 -
+
+Flapsed Time from Start of Transient (sec.)
+9)
+
+VO
+
+BIBLIOGRAPHY
+
+O. W. Burke, MSRE - Preliminary Analog Computer Study —
+Flow Accident in Primary System, ORNL CF 60-6-110
+(June 27, 1960)
+
+ 
+
+O. W. Burke, MSRE - Analog Computer Simulation of a
+Loss of Flow Accident in the Secondary System and a
+oimulation of a Controller Used to Hold the Reactor
+Power Constant at Low Power Levels, ORNL CF 60-11-20
+(Nov. Lk, 1960)
+
+O. We. Burke, MSRE - An Analog Computer Simulation of
+the System for Various Conditions - Progress Report
+No. 1, ORNL CF 61-3-42 (March 8, 1961)
+
+- 21 -
+fq
+
+°
+
+HE
+= OO = OWI FW DH
+
+12.
+
+=
+=W
+
+j-
+\J1
+
+16.
+17.
+18.
+10.
+20.
+21.
+20,
+03,
+ol,
+25.
+26.
+27.
+28.
+29,
+30.
+31.
+32.
+33.
+3h,
+35.
+36.
+37.
+38.
+39.
+LO.
+hi,
+Lo,
+43.
+Ll,
+Ls,
+L6.
+
+MSRP Director's Office
+
+Go
+Lie
+
+® ® e * * ®
+
+°
+
+QurrUsSsmEeEgdgHgQ=sgHOHQOQUEPRPHOEHOQREW
+
+=wW=
+
+Heda nd eur On ide ROE POE H EHD >EH= XW»
+
+M.
+Ge
+
+. Be.
+. Bender
+
+. Bettis
+
+. Bettis
+
+. Billington
+. Blankenship
+. Boch
+
+GEG nNnH
+
+Adamson
+Alexander
+Beall
+
+Bohlmann
+
+. BOlT
+
+Borkowski
+
+. Brandon
+. Bruce
+
+. Burke
+
+. Cole
+
+Conlin
+Cook
+Cristy
+Crowley
+Culler
+DeVan
+Doss
+Douglas
+
+. Dunwoody
+
+. Epler
+
+. Ergen
+
+. Ferguson
+
+. Fraas
+
+. Frye
+
+. Gabbard
+
+. Gallaher
+
+. Greenstreet
+
+Grimes
+Grindell
+
+. Guymon
+
+Harley
+Harrill
+Haubenreich
+Hise
+
+. Hoffman
+. HOlZ
+
+Howell
+
+. Jarvis
+
+Jordan
+
+DISTRIBUTION
+
+ 
+
+9204-1
+2005
+9204-1
+020k -1
+9201-3
+1000
+0204-1
+3025
+1500
+9204-1
+9204-1
+9204-1
+3500
+9201-3
+1500
+1000
+500
+9201-3
+2000
+1000
+9204-1
+1500
+9201-3
+9201-3
+2005
+1000
+3500
+4500
+4500
+o704-1
+2000
+9201-3
+0204-1
+9204-1
+11500
+9201-3
+"(500
+9204-1
+3500
+7500
+9204-1
+9204-1
+9204-1
+1000
+1000
+11500
+
+ht,
+18,
+49,
+50.
+51,
+52.
+53.
+5h.
+55.
+56.
+27.
+_ 58.
+59.
+60
+
+61.
+62.
+63.
+bl,
+65.
+66.
+67.
+68.
+69.
+70.
+Tl.
+T2.
+73.
+Th.
+75.
+T6.
+TT.
+T8.
+T9.
+80.
+81.
+82.
+83.
+8L.
+85.
+86.
+87,
+88.
+89.
+90.
+91.
+92.
+
+QEZHE="OmI=SDn GG 0nGId
+
+. Kasten
+
+. Kedl
+
+. Keilholtz
+Kirslis
+Krewson
+Lane
+Leonard
+
+. Lindauer
+. Lundin
+
+. Lyon
+
+. MacPherson
+
+°
+
+QEHOG ers NE49
+
+. CC. Maienschein
+
+R. Mann
+B. McDonald
+
+. F. McDuffie
+
+K. McGlothlan
+J. Miller
+
+C. Miller
+
+L. Moore
+
+C. Moyers
+
+W. Nestor
+
+BE. Northup
+
+R. Osborn
+
+. F. Parsly
+. Patriarca
+
+R. Payne
+
+. M. Perry
+
+B. Pike
+
+. I.. Redford
+
+Richardson
+
+C. Robertson
+
+K. Roche
+W. Savage
+Scott
+
+. J. Skinner
+
+M. Slaughter
+N. Smith
+
+G. Smith
+Spiewak
+
+. Squires
+. A. Swartout
+
+Taboada
+
+R. Tallackson
+BE. Thoma
+
+B. Trauger
+
+C. Ulrich
+
+920k-1
+9204-1
+3550
+
+11500
+
+0204-1
+4500
+
+9204-1
+9204-1
+9201-3
+9204-1
+oT70L-1
+3010
+
+3500
+
+9204-1
+4500
+
+9204-1
+o70L-1
+9204-1
+920L-1
+9204-1
+920k -1
+1000
+
+9704-1
+9204-1
+2005
+
+9204-1
+0204-1
+9201-3
+7500
+
+9204-1
+9204-1
+2000-A
+9201-3
+920k -1
+4500
+
+2005
+
+9204-1
+9201-3
+920k -1
+9204-1
+4500
+
+9204-1.
+9204-1
+4500
+
+9201-3
+9204-1
+
+ 
+93.
+
+ok.
+
+95.
+
+_ 9%.
+97.
+
+98.
+
+99.
+100-101.
+102.
+-103.
+
+104,
+
+105=10T7.
+108.
+
+ON
+
+B. 5S. Weaver
+
+B. H. Webster
+
+A. M. Weinberg
+
+J. He. Westsik
+
+L. V. Wilson
+
+C. E. Winters
+
+C. H. Wodtke
+
+Reactor Div. Library (2)
+
+Central Research Library
+(2)
+
+Document Reference
+Library (1)
+
+Laboratory Records (3)
+
+Laboratory Records ORNL-RC
+
+41500
+9204-1
+4500
+0204-1
+9201-3
+4500
+9204-1
+9204-1
+
+4500
+9711-1
+
+4500
+4500
+
+: 03

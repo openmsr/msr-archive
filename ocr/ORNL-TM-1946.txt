@@ -1,0 +1,2811 @@
+ 
+
+ 
+ 
+
+   
+
+ 
+
+ 
+
+ 
+
+TT RE LE Cul FRCES
+RECEIVED BY DTIESSEP T w=
+a ma $3.02, 1 bs
+mf OAK RIDGE NATIONAL LABORATORY
+Ean d operated by : TN
+* UNION CARBIDE CORPORATION LE union
+© NUCLEAR DIVISION RE
+for the
+u. 5. ATOMIC ENERGY COMMISSION
+~ORNL- TM- 1946
+. COPY NO. - 4
+‘DATE - August 16, 1967
+REVIEW OF MOLTEN SALT REACTOR PHYSICS CALCULATIONS
+~~ R.S. Carlsmith | :
+~~ L. L. Bennett
+Soo ~~. G.E.Edison |
+a oo 5 WL. E. Thomas
+“ Co Po 77 F. G. Welfare
+& ~~ ABSTRACT
+~~ Asetof calculations was made fo check the reactivity and breeding ratio of - |
+the reference design of the MSBR. Insofar as possible, the cross sections and
+cal culational methods were made independent of those used previously. The :
+reference composition gave a eff of 0.95. When the reactor was made criti-
+~ cal by the addition of 14% more 33y, the breeding ratio was 1.062 compared :
+“with 1.054 in the previous calculations. Reoptimization of the e composition :
+© would probably. decrease this difference i in breeding ratio. © SE |
+CAN
+3 € - n- NOTICE This document contains information of a preliminary nature
+: : ’ ond was prepared primarily for internal use at the Oak Ridge National
+Laboratory. It is “subject fo revision or correction and therefore does :
+not represent °@ finol report. : : }
+BISTRBUTION OF THS GOCURENT 15 ORTFITES |
+
+ 
+rn
+
+ 
+
+ 
+
+ 
+
+ 
+
+LEGAL NOTICE
+
+This report was prepared as an account of Government sponsored work. Neither the United States,
+
+nor the Commission, nor any person acting on behalf of the Commission: . .
+
+A. Makes any warranty or representation, expressed or implied, with respect to the accuracy,
+completeness, or usefulness of the information contained in this report, or that the use of
+any information, apparatus, method, or process disclosed in this report may not infringe
+privately owned rights; or
+
+B. Assumes ony liabilities with respect to the use of, or for damages resulting from the use of
+any information, apparatus, method, or process disclosed in this report,
+
+As used in the above, “person acting on behalf of the Commission® includes any employee or
+
+contractor of the Commission, or employee of such contractor, to the extent that such employee
+
+or contractor of the Commission, or employee of such contractor prepares, disseminates, or
+
+provides access to, ony information pursuant to his employment or contract with the Commission,
+
+ot his employment with such contractor.
+
+ 
+
+ 
+
+ 
+
+® { L 2
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+DS
+
+wf
+
+ 
+
+ 
+
+ 
+
+Introduction
+Summary of Results and Recommendations «ccoccessescoscssssvoscsce
+
+000 0B SPER 0C000 000000000 Q0P0CR00080CO0CEFOCEO0PDPBRsESEROETOROdOTDTES
+
+© 0 8 00 C00 000 CEST 0000000000000CPCIRRDIBIROOESIEIOEESERSIROIERBRYTSTDS
+
+Cross Sections
+Fission Product Tre&tment «ceveececescessossscascsssscassacsasses 25
+
+CONTENTS
+
+.
+
+i
+oo wn
+
+oO
+
+1h
+
+Cell Calculations Ceesccceeenrsensssesereniottesssecnerosaiennnns 34
+Two-Dimensional Calculations seessesesssesseesssssessesisssevsens 4h
+Depletion Calculetions eteereeseereanannsaaeiaetsesinnrensssanes 52
+
+-
+’
+
+  
+
+i racy, completeness, or usefulne;
+
+of any information, apparatus, motion oration contained gn wh respect to the acy.
+8
+
+7 Privately owned rights; or Process disclosed in a TePOTt, or that the use
+
+B, Assumes any abilities
+
+IRSTRIBUTION OF THIS DOCUMERE [5 "E
+TT ar
+
+ 
+
+€ 4
+
+A. * 4
+» C'
+
+9
+
+oN -
+
+C a”
+,
+iy
+
+* REVIEW OF MOLTEN SALT REACTOR PHYSICS CALCULATIONS
+1. INTRODUCTION
+
+** This review of the physics of the Molten Salt Breeder Reactor was
+undertaken for the purpose of providing an independent check of as many
+aspects as possible of the calculations already made. We have not at-
+tempted any further optimization. Instead we chose a design of the core
+and blanket regions for which calculations had already been meade, and
+subjected this design to our analysis. Our primary interest was in the
+breeding ratio of the equilibrium reactor. i
+
+The design we chose is essentiglly the one presented as the refer-
+ence case in ORNL-TM-1467 (Ref. 1). It is a 1000 Ma(e) power plant with
+a single’ core, separate fissile end fertile streams, and without pro-
+vision for removal of 233p, from the fertile stream. Ce
+
+‘The previous celculation for this design is known as Case 555 in &
+series of calculations by the OPTIMERC code. Insofar as possible we
+
+"attempted to specify the same geometry and composition as case 555,
+
+resisting suggestions that this cease is already obsolete, so that a
+valid ‘comparison could be made between’ the two calculations. For some
+regions, particularly for the “lower blanket and plenum, ‘the’ specifice-
+tions for case 555 were not detailed enough for our calculations, or
+appeared to leave out certain: components. To £111 in these gaps we
+obtained. additional layout drawings and dimensions from the ‘group “work-
+
+.ing on the design of the molten salt reactors. ©
+
+- Our review covered six ‘principal areas: Cross section selection,
+
+fission product treatment, miltigroup cell calculatims, two-dimensional
+“reactor criticality calculations, equilibrium depletion calculations,
+end stert up depletion calculations. In each area ve attempted to choose
+methods and date which vere as independent as possible from those used Co
+‘previously. ‘However, in & number of instances we used ‘the ‘same methods
+‘because alternate computer codes were not available, and’ for ‘many nuclides
+we used essentially the seme ‘cross ‘section data because > they seemed most
+
+likely to be correct.
+The cross sections selected were mainly those that have been as-
+sembled over a period of years for use in reactor evaluation studies.
+
+We reviewed carefully the situation with regard to 233, whose cross
+sections always turn out to be the most important. single factor in deter-
+mining the neutron economy of thorium cycle reactors. We also reviewed
+the data for several other nuclides which are important to the MSER.
+These included Tra Id, bra, Be, F, C," and Th.
+
+We revieved the fission product chains and chose to treat 32 nuclides
+explicitly in each of the fluid streams. The remainder of the fission
+products which were lumped together as a single pseudo-element gave a
+total fractional absorption of 0.005 per neutron absorbed in fuel. .
+
+Our basic cross section set consists of the 68 energy group library
+for the M-GAM code, used to generate broad-group cross sections above |
+© 1.86 ev; plus the 30 group library for the THERMOS code, from which the
+broad group cross sections below 1.86 ev are obtained. The M-GAM cal-
+culetion gives a spectrum for the typical reactor cell and averages the.
+cross sections over this cell. The heterogeneity of the cell for neutron
+energies above 30 kev was taken into account by & separate trangport cal-
+culation of the flux distribution within the cell. sh gag elding and
+heterogeneity effects in the resonances of 233p,, 23 u, 236, and Th were
+computed in the M-GAM code by the Adler, Hinman, and —— (narrow
+resonance approximation) method. The THERMOS calculation gives an in-
+tegral-transport solution to the group fluxes in a one-dimensional repre-
+sentation of the cell, and. averages the cross sections over the spectrum
+end over the cell. In the M-GAM-THERMOS calculations we reduced the
+cross sections to a set consisting of five fast groups end four thermal
+groups. We did one celculetion for the nuclides in a core cell and a
+second one for the blanket region. - The previous calculations had also
+employed the M-GAM-THERMOS code but had included somewhat different ap-
+proximations as to cell geometry, particularly with regard to the hetero-
+geneity in the resonance absorption by - the thorium.
+
+We mede & two-dimensional nine-group calculation .of the entire
+reactor using the microscopic cross sections calculated by the M-GAM-
+THERMOS code and. the nuclide densities specified for the reference e case.
+
+*®)
+
+CO
+ri
+A
+ 
+
+ 
+
+ 
+
+ 
+
+a Cc
+
+9H
+
+oN,
+
+C a
+
+This celculation vas done with the ASSAULT code. Considerable effort
+
+was made to represent realistically all of the blanket areas, structure,
+
+reflectors, end pressure vessel, es well es the core. The previous cal-
+culations mede use of the MERC code which synthesizes the flux distri-
+bution from one-dimensional calculations in the redisl and axiasl direc-
+tions. After determining the multiplication factor for the specifed
+core composition, we changed the 2334 concentration to obtain criticality.
+With this calculation we could examine the neutron balance for the vartous
+regions and the power. distribution. | - |
+Using the reattion rates (one-group microscopic cross sections)
+obtained in the ASSAULT code calculation we did. en equilibrium. point-
+depletion calculation. We. used the LTM code, modified to do celculations
+
+of separate fertile and fissile streams with trensfer of bred fuel from
+
+the fertile. to the fissile stream, to celculate processing lose end fuel
+removal besed on average ‘concentrations, and to give: specified cycle
+
+times. Fram the calculation with this code’ ve obteined the equilibrium
+
+cycle neutron balance and the equilibrium breeding ratio. The cycle
+times for fissile and fertile ‘streams, end the removal rates associated
+with reprocessing were taken from TM-1467. “Previous calculations hed
+
+used the MERC. code to .obtein this equilibrium neutron balance.
+
+To check the" ‘assumption that the performance of the reactor can be
+adequately represented by an: equilibrium cycle, we also. calculated the
+
+heavy-element concentrations fore 30-year reactor history, starting with
+93% 23y - 14 238; as the inttiel fuel material. No saleutations. of this
+
+type had been done previously.
+
+References
+
+1. P. R. Kesten et al, Summary of Molten-Salt Breeder Reactor Design
+
+Studies, USAEC Report ORNL-TH-L46T, Osk Ridge 3 National : Laboratory,
+March 2k, 1966. :
+2. Personal comminication tron E. Ss. Bettis.
+ 
+
+2. SUMMARY OF RESULTS AND RECOMMENDATIONS
+
+Summary of Results -
+
+The most significant difference between the results of our calcula-
+tions end previous ones was in the reactivity of the reference design.
+Using the reference composition we obtained a x off of 0.95. An additional
+1g 233y wes required to achieve criticality, Yolding all other concen-
+tretions constent. The discrepancy in opr is entirely traceable to the
+values used for thorium resonance integrel. We calculated the resonance
+integral for the geometry of the reference design and obtained 36.5 barns.
+In the OPTIMERC calculations it had been found convenient to use the seme
+resonance integral for all geometries being considered; the value assigned
+was 30.1 barns.
+
+Our calculations  egreed with the previous ones to within 0.01 in
+breeding ratio as shown in Tebles 2.1 and 2.2. - However, there vere a
+number of individual differences of 0.001 to 0.005 in the neutron balance.
+An enalysis of same of these is as follows: : | -
+
+Teble 2.1 MSER Performance Comparison
+
+ 
+
+Present Previous ..
+Calculations Calculations
+
+ 
+
+ 
+
+Nuclear breeding ratio 1.062 1.054
+Neutron production per fissile :
+
+absorption (ne) | 2.228 2.221
+Meen of 233y ©. 2.221 2.219
+Meen 1 of 23% 19m 1.958
+Power factor, core, peak/mean. Co :
+. Redisl i : 2.18 2.22
+© Axial 1.51 1.37
+
+233
+
+1. The everage 0 of U in our calculations was 2.221 while it
+wae 2.219 previously. We used a 2200 m/sec 1 that was 0.003 higher but
+obtained & less thermal spectrum because of our higher fissile concen-
+tration. However, the previous calculations used only & single thermal
+ 
+
+ 
+
+» C’
+
+N
+
+»N
+
+[4 C ”"
+
+Table 2.2 * MSER Neutron Balence Comparison
+
+ 
+
+~ Present Calculation
+
+Previous Celculetion
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Absorptions Productions Absorptions’ Productions
+
+232m, 0.9825 0.0056 0.9710 0.0059
+2a | 0.0078 ) 0.0079. |
+
+233y 0.9156 2.0338 0.9119 2.0233
+234, 0.0907 ~~ 0.00Lk © 0.0936 10.0010
+235y 0.0844 0.1664 0.0861 0.1721
+2364 10.0105 0.0002 0.0115 0.0001
+23x 0.0000 10.001k
+
+23% Em 0.0009
+
+Carrier selt 0.0605 0.0205 0.0623 0.0185
+(except 81) J oF : ’
+bp no 0.0080 0.0030
+
+Graphite 0.0261 0.0300
+
+135% 0.0050" 0.0050
+
+9g 0.0078 0.0069
+
+ley 0.0018 10.0018
+
+Other fission Slip ETE
+
+products 0.0152 - 0.0196
+
+Delayed neutrons |
+
+Lost 0,0051 0.0050
+ Leekage | © 0.0010 0.0012
+
+CINOR 0.0050 | Co
+
+© TOTAL | 2.2279 2.2279 2.2211
+
+ 
+
+group for neutrons below 1.8 ev.
+
+12,2209
+
+Since the cross sections had been
+
+calculated with a composition which gave & harder spectrum than the
+
+would have been if the reference composition. ‘had been used.
+
+reference case, the resulting. nm for the thermal group was lower than it
+
+The total
+
+result for the 1.0of 233y was an. increase of 0.002 in breeding ratio for
+
+our celculations compered to the previous ones.
+ 
+
+ 
+
+10
+
+2. The average 7 of 23%y vas 1.971 compared with 1. 958 in the
+previous calculations. We believe that the new cross sections ere
+likely to be better for this nuclide. The result was an increase in
+breeding: ratio of 0. 001. CT
+
+3. We used a lover Cross. ‘ection for 234; in accordance. with the
+recommendations of the latest edition of BNL-325. As a consequence,
+more of the 23ky was removed with the excess urenium, and there were
+fewer ebsorptions in 23% , 236, y end’ 2p. ‘The net result’ appears
+to have been an increase in airs ratio of Less. than 0.001.
+
+L, we did not include any 238 production in our calculation
+‘since : it did not seem appropriate. Any other trens-uraniun isotopes
+‘beyond 23% should not lead to a net’ loss since they could probably
+be separated end sold if there were eny tendency for them od Secumlete:.
+An increase in breeding ratio of 0.001 resulted.
+
+5. Parasitic ebsorptions in carrier salt (other than 61) were |
+‘lower because of the increased fissile loading in our esleuletion.. An
+increase of 0.003 in breeding ratio occured. ..
+
+6. Perasitic absorptions in n graphite vere lover for the seme reason.
+
+An increase of 0.004 occured.
+
+.T. The previous calculetions omitted the INOR tubes. in the ‘lower
+blanket. Although there is a. possibility of reducing the effect by
+redesign, the current design gave a breeding ratio loss of O. 005 to
+sbsorptions in the INOR. oo Co ae
+
+8. Our calculations gave an increase in breeding ratio of 0. 003
+from lower fission product ebsorption. About one-half of this difference
+came from puclides which were allowed to ‘recycle in the OPTIMERC celcula-
+tion ‘elthough belonging to chemical groups which’ are actually ‘thought. to
+‘be removed in reprocessing. It may be that the previoiis calculations
+vere justified in introducing & measure of conservatism at this point.’
+| The remainder of the difference is associated with the higher fissile
+
+inventory in our calculations. Co .
+
+- 9. The previous calculations ‘used: & he content in the makeup of :
+99.997% together with a cost of $120 per kg. In reviewing the basis for
+this choice we find that the published AEC price schedule is for 99.990%
+
+QO,
+
+| C
+o a
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+is
+
+«\
+
+0 C »
+
+11
+
+Tra at this price.t ‘More recently it has been concluded by those working
+
+‘on molten salt reactor design that it would be reasonsble to assume that
+
+99.995% T14 could be obtained in large quentities et $120 per kg.2 We
+have followed this latter assumption and used 99:995% TL4 in our celcu-
+lations, leading to a decrease in breeding ratio of 0.002. In addition,
+the previous calculations neglected the production of bra in the core
+from n,Q reactions in beryllium. . ‘This source of bra, gave ‘an additional
+0.003 ‘decrease in breeding ratio.
+
+10. We obtained a 10% higher ‘neutron production from the. Be(n, 2n)
+reaction than in the previous calculations. The difference came from:
+our taking into account the heterogeneity of the cell in the high-energy
+range. The effect on breeding ratio was an increase of about 0.001.
+
+Although our calculations geve a net increase in breeding ratio of
+elmost 0.01 compared to the previous ones, it should be kept in mind
+thet this increase in breeding ratio vas accompanied by-an increase in
+fissile inventory. Indeed, the increese in breeding ratio is about what.
+one. would expect from the change in fissile inventory alone, so that
+other increases and. decreases have epproximately cancelded. A subsequent
+re-optimization would probably lead to a somewhat lover breeding retio
+and lower inventory. Sn . Se
+
+Teble 2.3.shows a comparison of the two sets of calculations with
+respect to spacial distribution of - neutron ‘sbsorptions. There is generslly
+good agreement, However, the. tow values of leskege obtained in our cel
+
+culations raise a question as to vhether the ‘Dlankets are thicker hen
+
+ 
+
+ 
+
+ait Table 2.3 MSER Absorption Distribution Comparison
+
+Present Previous
+
+Calculation Calculation
+
+Core 2,035 2.0325
+Radial blanket IRR C0 .0.1458 . 0.1375
+
+~ Axiel blanket So 0.051 0.04
+Radiel leekage plus structure 0.0012 0.0019
+Axiel leakage plus structure 0.0002" 0.0001
+Deleyed neutrons lost . 0.0051 0.0050
+
+Total 2.2279 2.2211
+
+ 
+ 
+
+12
+
+The power distributions obtained in the two-dimensional ASSAULT
+calculations agreed very closely with those of the one-dimensional OPTIMERC
+calculations (Table 2.1) with the exception of a slight increase near
+the. ‘central control channel vhich was not included in the OPTTMERC cal-
+culations. :
+
+When the reactor was started up on 235. fuel, ‘sale of fuel started
+one four months because the inventory requirements are less for 233,
+than for 235, The breeding retio was above unity after 18 months, al-
+
+: though same isotopes did not approach their equilibrium value for about
+10 years. The 30-year present-valued fuel cycle cost was only 0.02 mills/
+kwhr(e). higher than the equilibrium fuel cycle cost. The 30-year average
+of ‘the ‘breeding ratio was 0.013 lower than the equilibrium value.
+
+‘Recommendations
+
+The OPTIMERC calculations have. clearly provided ) velusble and
+reasonably ‘accurate assesment of: the design configuration for the molten
+salt reactor. However, based on the results of our independent calcula-
+tions, we believe that there are several points on which & more precise
+treatment of the physics would help future optimization studies. These
+points are listed below, roughly in the order of their importance. oo
+
+1. The OPTIMERC code should be.provided with a means of verying
+the thorium resonance cross sections as fertile stream concentration
+end geometry are changed. It is not likely to prove sufficient to re-
+calculate the fissile (or fertile) loading for criticality of the final
+reference design since the optimizetion procedure is affected in a com- !
+
+plex manner by gross changes in cross eections.
+
+. 2. Optimization of the thicknesses of the: axial and rediel blankets
+should be rechecked using a calculational model that egrees with a two-~
+"dimensional ASSAULT calculation for a base case. Co |
+
+| 3. The 6p production from beryllium should be. included. Another
+look at the 614 concentration in the makeup lithium may be in order,
+
+ elthough this is edmittedly en area in which ‘high precision is not possible.
+
+L. Our cross sections for 23hy end 235y are probably better than
+
+those previously used and should be considered in future celculations.
+
+&
+
+©, C Cow
+ 
+
+ 
+
+ 
+
+ 
+
+aN
+
+-
+
+a ( »
+
+13
+
+5. It would be desirable if OPTIMERC could be modified to allow
+multiple thermal groups, particularly so that a more correct calculation
+could be made of the 1 of 2 U as a function of fuel composition. As
+in the case with the thorium cross sections, the optimization cannot be
+
+| carried out successfully if this veristion is not built in to the code. -
+
+If it is too difficult to provide for multiple thermal groups, then it
+may be prefersble to reduce the thermal cut-off from 1.86 ev to about
+1.0 ev. Ce - ;
+6. Heterogeneity effects should be included in the high energy
+region. - : SI
+
+As an added comment, it would be in order in the future for the
+reference design, as given by OPTIMERC, “to. be checked by a complete
+calculation in which the cross section reduction is redone for the re-
+ference composition, .
+
+‘References
+
+1. News in Brief;: Supply of Tithium-7 Increased; H-Bomb Role ? Bared,
+
+Nucleonics, 17(11): 31, November 1959. So
+2. L. G. Alexander, et al., Molten ‘Salt Converter Reactor Design Study
+
+and Power Cost Estimates for a 1000 Mve. Station, USAEC Report ORNL-
+T™M-1060, Ozk Ridge National Leboratory, Septenber 1965.
+ 
+
+1k
+3. CROSS SECTIONS
+
+For the most pert the cross sections used both in this review and
+in previous molten salt breeder reactor design studies are the seme.
+The cross section data used have been accumulated over a period of ebout
+five years and regularly used for reactor evaluation studies. In this
+regard they have proven to be reasonably accurate in camparison with
+experiments and calculations by others. A summary of the basic thermal
+neutron cross section date used in this review end their experimental
+sources are given in Teble 3.1. Table 3.2 lists the resonance fission
+end absorption integrals end the date sources for the same nuclides.
+
+There are some small differences between the thermal neutron cross
+sections for some nuclides in this review and in the previous design
+studies. These differences are primarily a result of the issuance of
+Supplement II of ENL-325 (Ref. 1) which recommends some renormalization
+of previously accepted cross section values. The differences ere shown
+in Teble 3.3. Of these differences only those in 233g, 235 and 23h
+ere significent in the MSER and leed to a slightly higher breeding ratio.
+The use of 2200 n/sec v of 2.503 rather than 2.500 for 23% is con--
+sistent with the BNL-325 (Ref. 1) recomended value for the prompt v
+of 2.497 £ 0.008 and a delayed neutron fraction of 0.00264. The § of
+2.295 at 2200 m/sec for 2335 4s within the uncertainty range for this
+nuclide although not necessarily more accurate than the value of 2.292
+used in the previous calculations. ]
+
+The 23%y 2200 m/sec date have been renormalized as recommended in
+BNL-325, the primary result being a slightly higher a (0.175 vs O. 17k) ’
+a higher thermal -v (2. 442 vs 2.430), end a resulting slightly higher
+n (2. 078 vs 2. 070). The 10 barn difference in the 23k U thermal cross
+gection makes & significent difference in the equilibrium concentrations
+
+of 23% ana 23%. |
+
+The Brown St. John? heavy-ges model was used for the scattering
+kernel for all nuclides except carbon both in this review end in the
+previous design studies. For carbon the crystalline model es developed
+by Parks > vas employed. For the review calculations all kernels were
+computed for an average temperature of 900°K: This tempersture was based
+
+QO
+
+i
+n C -
+£ C »
+
+ 
+
+"C’
+
+Table 3.1 Normalization and Data Sources of the Thermal Cross Sections Used in the MSBR Studies
+
+ 
+
+- Nuclide
+
+238;
+
+236;
+
+235,
+
+23h
+
+233,
+
+on,
+
+232y,
+
+Iron
+
+Bao are”
+
+aa
+ Q3 eHD
+
+ b3.
+
+¢, (2200), ®.
+
+6.0
+
+nowoNn on
+
+2.62
+
+o ©
+
+2.73
+
+: 678.
+
+577.1
+2.42
+
+574.0
+
+526.2
+2.503
+
+2.2946
+
+0.0908
+
+Qo
+
+7.56
+
+BNL-325 (Ref. 1)
+
+oame
+Ewes (Ret. 1)
+
+rE 1 based on data of Macklin
+
+Data Sources
+
+BNI-325 (Ref. 1)
+
+| BNIL-325 (Ref. 1)
+
+et al.,” gnd of Gwin and
+Magnusson! and fia from data
+of Block et al.” “with og
+taken to be 13.0 b. based .
+
+‘on measurements of Oleksa.”
+‘BNL-325 (Ref. 1) | |
+
+BNL-325 (Ref..9)
+
+BNL-325 (Ref. 1) |
+
+(og(2200) = 13.0 b.]
+BNL-325 (Ref. 9)
+
+[0,(2200) = 11.0 b.]
+
+Basis for the Energy Dependence
+of the Cross Section
+
+‘Assumed 1/v throughout thermal energy range.
+
+‘Four lowest energy resonances and a computed
+
+negative energy resonance.
+
+Fission cross. section based on recommended curve
+in BNL-325, 2nd Ed., Supp. 2, Vol. III. Capture
+
+cross section based on recent &(E) measurements
+of Brooks” and of Weston, DeSaussure et al.”
+
+Computed’ from two lowest positive energy reso= .
+nances, and a computed negative energy resonance.
+
+The tilevel resonance parameters of Moore and
+
+Reich” and the O(E) data of BNL-325 (Ref. 9).
+
+The regglved resonance ‘parsmeters of Simpson:
+The eight lowest energy resonance parameters as
+reported by Nordheim! and a computed negative
+energy resonance.
+
+Assumed 1/v in thermal renge.
+
+Assumed 1/v in thermal range.
+
+b=
+Nn
+Table 3.1 (contd)
+
+ 
+
+Basis for the Energy Dependence
+
+ 
+
+sy
+0 C -
+
+Nuclide | 05(2200), Db. Data Sources of the Cross Section
+Nickel 4.6 BNL-325 (Ref. 9) Assumed’ 1/v in thermal range.
+| [05(2200) = 17.5 b.] |
+Molybdenum 2.70 BNL-325 (Ref. 1) Assumed 1/v in thermal range.
+CA {og(2200) = 7.06] Co
+Lead 0.170 'BNL-325 (Ref. 9) Assumed 1/v in thermal range.
+| ~ [06(2200) = 11.0 b.] " oe
+© Sodium 0.53k BNL-325 (Ref. 1) Assumed 1/v in thermal range.
+SE Cl [04(2200) = 4.0 b.] | Ce
+Fluorine ~~ 0.0098 BNI-325 (Ref. 1) Assumed 1/v in thermal range.
+| [o,(2200) = 3.9 ©.] ce
+Lithium-7 0.037 BNL-325 (Ref. n Assumed 1/v in thermal range
+| o RA {04(2200) = 1.h oo | |
+Carbon 0.00k Average of measurements Assumed 1/v in thermal range. =
+- of delivered graphite to BE Co
+Beryllium 0.0095 * BNL-325 (Ref. 1) Assumed 1/v in thermal range
+Co  [og(2200) = 7.0i SE She
+Pym. © 13.9 BNL-=325 (Ref..9) Assumed 1/v in thermal range. |
+129; 31.0 Block et e1.10 Assumed 1/v in thermal range.
+135%e 2.65 x 10°  AEEW-RL16 (Ref. 1h) Computed by method outlined in AEEW-R116.
+ 
+
+ 
+
+0 C » o a . » C ol
+
+Table 3.1 (cont'd)
+
+ 
+
+ 
+
+" Cal ; Co Basis for the Energy Dependence
+
+Ruclide 4a(2200), ®. ~ Data Solrces : of the Cross Section
+135 8 Co
+
+Cs i BNL-325 (Ref. 9) Assumed 1/v in thermal range.
+3g 324.0 ~ BNL-325 (Ref. 9) © One positive energy resonance and a computed
+
+2 Le i negative energy resonance.
+Wa 160.0 ENL-325 (Ref. 9) So Two positive energy resonances and a computed
+Sn Ra negative energy resonance.
+by 1000 BmL-325 (Ref. 9) Assumed 1/¥ in thermal range.
+148, C3 BNL-325 (Ref. 9) Assumed 1/v in: thermal range.
+Wp, 235.0 Oppo from Schuman and Four positive energy resonances and a computed
+
+Co Perreth;l resonance. negative energy resonance.
+parameters from BNL-325
+ORE (Ref. 9).
+Tg, 871.0 ~ BNL-325. (Ref. 9) Five positive energy resonances and a computed :
+oC Co So . negative energy resonance. :
+18g, 9.0 WAPD-TM-333 (Ref. 16) Assumed 1/v in thermal range.
+9g ho,800  BRL-325 (Ref. 9) = Seven positive energy resonances plus a 1/v
+ha a. 0 Ce adjustment to agree with experiment at 2200 n/ sec
+
+0g, + 85.0 WAPD-TM-333 (Ref. 18) - Assumed 1/v in thermal range.
+51, Ce hi
+
+Sm 15,400. ~~ 00), (Ref. 17) for Five positive energy resonances, a negative
+- (2200); BNL-325 (Ref. energy resonance. Co
+3 for resonance
+parameters.
+
+2am 208 Bernabeil8 Computed from positive energy resonance parte
+
+meters of Ref. 18.
+Table 3.1 (€ont'd)
+
+ 
+
+Basis for the Energy Dependence
+
+ 
+
+170
+
+2200 m/s 0,3; WASH-1031
+(Ref. 19) for resonance
+
+parameters.
+
+Nuclide 0g (2200) s be ‘Data Sources of the Cross Section
+5h, 5.5" BNL-325 (Ref. 9) Assumed 1/v in thermal range.
+153g, 440.0 BNL-325 (Ref. 9) Nine positive energy resonances plus a computed
+oo negative energy resonance.
+A5hg, 1,500 BNIL.-325 (Ref. 9) Assumed 1/v in the: thermal range.
+1598, 14,000 BNL-325 (Ref. 9) Assumed 1/v in the; thermal range.
+56a 61,000 BNL-325 (Ref. 9) for Three positive energy resonances.
+2200 m/s g,; Moller |
+et a1.19 for resonance
+parameters.
+1576q 242,000 .BNL-325 (Ref. §) Five positive energy resonances and a renormali-
+zation to the accepted 2200 n/'s cross section.
+23Txp ENL-325 (Ref. 9) for All resonances given in WASH-1031 (Ref. 19)
+
+plus a computed negative energy resonance.
+
+ 
+
+qt
+
+ 
+ 
+
+ 
+
+ 
+
+“C’
+
+0
+
+4
+
+‘C JV
+
+19
+
+Table 3.2 Normalization and Date Sources for the Fast
+Cross Sections Used in MSER Studies
+
+ 
+
+ 
+
+Sodium
+
+Absorption Fission Lo
+Resonance Resonance Brrr
+Kuclide Integral to Integral to Data Sources
+-0.k1h ev, b. - OM1k ev, b.
+238; Cen ar ENL-325 (Ref. 9)
+236; sm E-RT Hervey and Hughes (Ref, 20)
+| Ca mT end Ga-2451 (Ref. 22)
+234 689 oo 4.51 "Harvey and Hughes (Ref. 20) #nd
+TT GA-2851 (Ref. 21)
+23% . Lyr.2 298.3 Weston end DeSsussure (Ref. 33
+| SET and 23), BNL-325 (Ref. 1),
+Brooks (Ref. £), Hopkins and
+So Diven (Ref, 2g), Vhite (Ref. 2k)
+233, 1,012 865 Pattenden and Harvey (Ref 25),
+Can Moore, Miller and Simpson (Ref.
+26), Moore and Reich (Ref. 8),
+Hopkins and Diven (Ref. 22):
+233pg 1925.0 Co 4.477 Simpsan (Ref. 12), Eastwood end
+i Ca Werner: (Ref. 27), Halperin, et
+i el. (Ref. 28)
+232g, 83.7 0.38 Nordheim (Ref. 13), —— |
+Co - (Ref. 21), WASH-1006 (Ref. 29),
+WASH-1013 (Ref . 30) » Butler and
+Sentry (Ref. 3)
+Chromium 1.55 © GAM-II Librery — (sased on |
+| Re ENL-325) (Ref. y) Co
+Iron 1.37 GAM-II Library — (Based on
+Lo i - BNL-325) (Ref. 9) - |
+Nickel 2.78 GAM-II Library — (Based on.
+er LE BNL-325) (Ref. 9)
+Molybdenum a1.2k Co GAM-II Library
+lead 0.08 GAM-II Library
+0. 277
+
+GAM-II Library
+ 
+
+ 
+
+20
+
+Teble 3.2 (cont'd)
+
+ 
+
+ 
+
+Absorption - ‘Fission
+Resonance Résonance ©
+uclide  1riegral to Integral to Data Sources
+0.414 ev, b. 0.41k ev, b.
+Fluorine. 0.1839 BNL-325 (Ref. 9), E. A. Davis,
+: . et al., (Ref. 2 ‘Marion and
+Brugger (Ref. 33), R. C. Block
+et al., (Ref. 34), F. Babbard,
+et al., (Ref. 35), Joanou and
+Fenech (Ref. 36).
+Lithium-6 . = 468.9 © GAM-II Librery — (Based on ENI-
+325) (Ret. 1 end 9)
+Lithium-7 = = 0.0187 - © GAM-II Library -— (Based on BNL-
+Co 325) (Ref. 1 end 9)
+Carbon | 0.00192 BNL-325 (Ref. 9) |
+Beryllium 0.1203 GAM-IT Librery — (Based on BNL-
+| 325) (Ref. 1 and 9) :
+| ™ 111.3 GAM-II Library
+129; 39.45 GAM-II Library
+135%e 13,000 GAM-II Librery
+135¢e 35.33 GAM-II Librery
+3s 13h GAM-II Library
+145 Na 31Lk.6 GAM-II Library
+Lhbpy 8.78 | GAM-II Library
+NM 10.5 GAM-II Library
+147 oo
+Pn : 2,279 : GAM-II Library
+Wg © 609.7 GAM-II Iibrery
+18g EK hh - GAM-II Library
+149 oo
+Sm 3,148 : GAM-II Library
+150
+
+So 309.7 GAM-II Library
+ 
+
+ 
+
+ 
+
+wh
+
+an
+
+4)
+
+‘C »
+
+21
+
+Teble 3.2 (cont'd)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Absorption “Fission
+Resonance Resonance "
+Fuclide Integral to Integral to Data Source
+0.414 ev, b.  0.k1k ev, Db.
+lg, 2,480 - GAM-II Library
+126m 2,242 GAM-II Library
+Lohan 2.72 . GAM-II Library
+153m, ‘432.1 GAM-II Library
+15kg, 1,010 GAM-II Library
+op 6,787 © GAM-II Librery
+1556a 1,668 GAM-II Library
+Blea 780 © GAMeII Library )
+23Typ 1,513.3  - k73  GAM-II Library, wass-1031,
+oo PERE (Ref. 19)
+Table 3.3 Differences in Thermal Neutron Cross.
+Sections in the MSER Review and in
+~ the Design Studies -
+Used in Review 7 Used in Design Studies
+Nuclide Co LA . oad | gg sb- ogsbe wv
+8% sho i 525. 2 2.503 57Th.0 526.2 2,500
+- 238; 2.78 2m
+23% 682 STI C2.Me 6.2 SBLL 2.13
+23% 95.0 - ; 105.0 |
+Iron ~~ 2.62 2.53
+Molybdenum ~~ 2.70 2.73
+‘Fluorine 0.0098 0,01
+Li-7 0.037 0.036
+Beryllium 0.0095 0.01
+
+ 
+ 
+
+22
+
+on an average fuel salt temperature of 922°K and an average blanket salt
+temperature of 895° K. The previous calculations were done with the ker-
+‘nels for fluorine » lithium end beryllium computed at 922° K end for the
+heavy metals and carbon at 1000°K.
+
+"References
+
+.1. J. R. Stehn et al., Neutron Cross Sections, USAEC Report BNL-325,
+
+2nd Ed., Supplement No. 2, February 1965.
+
+2. H. Brown and D. St. John, Neutron Energy Spectrum in D0, ‘USAEC
+
+“Report D0-33 (1954).
+
+3. D. E. Parks, The Calculation of Thermal Neutron Scattering Kernels
+
+in Grephite, USAEC Report GA-2438 (October 1961).
+
+4. PF. D. Brooks et al., ‘Ete and Neutron Cross Sections of 1°35 from
+0.0% to 200 ev, AERE-M-1670, Harwell, November 1965.
+
+5. Personal Communication L. Weston and G. DeSsussure to EB. A. Gift,
+March 1966.
+
+6. R. L. Macklin et &l., Manganese Bath Measurements of Ete of £ 233
+end #3, Fucl. Sci. Eng., 8(3): 210-220 (September 1960).
+
+T. R. Gwin and D. W. Magnuson, The Measurement of Ete and Other Kuclear
+Properties of U°>> end UP” in Critical Aqueous Solution, Nucl. Sei.
+Eng., 12(3): 364-380 (March 1962). oo
+
+8. M. S. Moore and C. W. Reich, Multilevel Analysis of the Slow Neutron
+Cross Sections of P33 Phy. Review, 118(3): 714-718 (May 1960).
+
+9. D. Hughes et al., Neutron Cross Sections, USAEC Report ENL-325,
+
+2nd Ed., July 1958 end Supplement No. 1 dated January 1960.
+
+10. R. C. Block et al., Thermal Neutron Cross Section Measurements of
+U-233, U-235, Pu-2k0, U-234 and I-129 with the ORNL Fast Chopper
+Time of Flight Neutron Spectrometer, Hucl, Sci. Eng., 8(2): 112-121
+
+~~ (August 1960). -
+
+11. 'S. Oleksa, Neutron Scattering Cross Section of U-233, Phys. Review,
+1109(5): 1645 (March 1958). :
+
+12, F. B. Simpson et al., The Resolved Resonance Parameters of f Pe-233,
+Bull. of Am. Phys. Soc., 9, pege 433 (196k). |
+
+13.  L. Nordheim, Resonance Absorption, USAEC Report GA-3973, Feb. 12, 1963.
+ 
+
+ 
+
+ 
+
+ 
+
+a
+
+a
+
+1k,
+
+15.
+
+16.
+
+17.
+
+18.
+
+19.
+
+20.
+22.
+
+23.
+- 2k,
+25.
+26.
+
+27.
+
+23
+
+H. M. Sumner, The Neutron Cross Section of Hp1355 AEEW- 1116, Winfrith
+Report, (June 1962).
+
+R. P. Schuman end J. R. Berreth; Neutron Activation Cross Sections
+
+of Pm-147, Pm-148 and Pu-148n, Nucl. Sci. _Eng., 12(k): 519- -522,
+April 1962. Cum Co
+
+T. R. England, Time Deperident Fission Product Thermal and Resonance
+
+‘Absorption Cross Sections, USAEC Report WAPD-TM-333 (November 1962).
+
+J. P. Harvey, Reports to “the AEC Nuclear Cross Sections Advisory
+Group,. USAEC Report WASH-1029 , September 1960.
+Brother Austin Bernabei et 2al., Neutron Resonance in Samarium,
+
+Nucl. Sci. Eng., 12(1): : 63-67 (January 1962).
+J. A. Harvey, Reports ‘to the AEC Nuclear Cross Sections Aavisory
+
+Group, ‘USAEC Report’ WASH-1031,. ‘Pebruary 1961.
+
+J. A. Harvey end D. J ‘Hughes, Spacing. of Nuclear Energy Levels,
+Phys. Review, 109(2): 471-479 (Jemuery 1958). =
+
+G. D. Joenou et al., Nuclear Data for aAM-1, DATA Tepe, USAEC
+Report GA-2U451, August 1961. |
+
+J. C. Hopkins and B. C. Diven, Neutron Capture to Fission Ratios in
+
+- U-233, U-235, end Pu-239, Nucl. Sci. Eng., 12(2): 169-177 (Feb. 1962).
+
+L. W. Heston, -D. ‘DeBaussure end R. Gwin, Ratio of Capture to Fission
+in U-235 at kev Neutron Energies, Nucl. Sci. Bogs 20(1): 80-87
+(September 1964). Lo oo |
+
+P. H. White, Measurements of the U-235 Neutron Fission Cross Section
+
+in the Energy Range O. ok to 1% Mev, J. Of Nucl. Energy, Parts A/B,
+
+19: 325-33k (1965).
+N. J . Pattenden and J. A Harvey, Tebulation of the. Neutron Total
+
+Cross Section of U-233 from 0. oT to 10000 ev Measured with the ORNL
+
+Fast Chopper, USAEC Report ORNL-TM-556, April 1963.
+M. 8S. Moore, L. G. Miller end O. D.- Simpson, Slow Neutron Total and
+
+‘Fission Cross Sections of- U-233, Phys. Review, 118(3): TTT
+(May 1960), also reported in IDO-16576. ST “
+
+T. A. Eastwood and . Werner , The Thermal Neutron Capture Cross Section
+and Resonance Capture Integral of Pa-233, Can. J. of Phys., 36:
+751-769 (1960).
+ 
+
+2h
+
+28. J. Halperin et al., The Thermal Cross Section and Resonance Integral
+of Pa-233, USAEC Report ORNL-3320. o -
+
+29. V. Seilor, ‘Reports to the AEC Nuclear Cross Section Advisory Group,
+'USAEC Report WASH-1006.
+
+30. V. Sailor, Reports to the AEC Nuclear Cross Section Advisory Group,
+USAEC Report WASH-1013.
+
+31. J. P. Butler and D. C. Santry, Th-232 .(n,2n) Th-231 Cross Section
+from Threshold to 20.4 Mev, Can. J. Chem., 39: 689-696 (1961).
+
+32. E. A. Davis et al., Disintegration of B-10 end F-19 by Fast Neutrons,
+
+Nucl. Phys., 27: 448-466 (1961). :
+
+33. J. B. Marion and R. M. Brugger, Neutron Induced Reactions in Fluorine,
+Phys. Review, 100(1): 69-7k (October 1955).
+
+34. R. C. Block, W. Haeberli, H. W. Newson, Neutron Resonances in the kev
+Region: Differentiel Scattering Cross Sections, he Review, 109(5):
+1620-1631 (March 1958). Se
+
+35. PF. Gabbard, R. H. Davis, T. W. Bonner, Study of the Neutron Reactions
+116(n,) B3, F9(a,) FO, TH) 128, Buys. Review, 141):
+201-209 (April 1959).
+
+36. G. D. Joanou and H. Fenech, Fest FKeutron Cross Sections and Iegendre
+
+~~ Expansion Coefficients for Geygen-16, J. Nucl. Energy, 17: UL25-L434
+(Dec. 1963). -
+3]
+
+JY
+
+ 
+
+ 
+
+25
+Lk, FISSION PRODUCT TREATMENT
+
+The MERC calculation includes ~125 fission product nuclides in ex-
+plicit chains. However, many of these nuclides make extremely small
+contributions to the overall fission product poison fraction. To facili-
+tate our ASSAULT end LTM calculations, it eppeared desirable to include
+these small contributions in one or more pseudo-elements, with only the
+more important nuclides being treated explicitly.
+
+The long fission product treatment used in the advanced converter
+study (ORNL- 3686) was chosen as the basic "complete" fission product
+
+‘description. This:description is pictured in Fig. 4.1.
+
+Since the fluid-fuel system in the MSER allows some of the fission
+products to be stripped as gases or be removed in fuel processing, the
+above treatment needs to be modified to include those effects. The
+modifications made are discussed below. Co
+
+1. 105gh. 109, | Chain. ~All the nuclides in this chain plete out on
+
+metal surfaces and are assumed to be removed instenteneously. -
+
+C2, 5g, Assumed to be removed -instanteneously by plating out on
+metal surfaces. SL
+3. 90-1%3gn Chain. ALL the nuclides beyond and ac tuttng Pp
+Pe out on metal surfaces. Instantaneous removal. wes assumed. Since
+ne Mo half life is only 66,5 hr, it wes assumed that the Pro ‘fission
+fission. yield produces pe instantly. :
+y, 13171315. Assumed tnat 131g feceys instantly 6 day’ half-life)
+ii which is removed instantly by ges stripping.
+. 136. Removed instantly by ges stripping.
+. 133. 1336s. ‘Removed instantly by ges stripping.
+Te 135%. The assumptions of the MERC studies stated that a poison
+fraction of 0.0050 (fractional loss per neutron ebsorbed in fuel) would
+be assumed - for 13% to allow for. any absorption. of xenon ‘and krypton by
+
+graphite. Since this assumption determines the 135% concentration, the
+135; precursor is not included in the chains.
+
+The reduced set of explicit, fission product chains 18 shown in
+Fig. kb. 2. Yield fractions for the explicit nuclides are listed in Table
+b.1. ox oo
+ 
+
+26
+
+Nye NN Ns — | oxo ING. 64-5678
+oh Se a Ra
+eT
+Le L ep SMM pp ens ni — in
+Yn | Nae | N - iy
+Leo Nom_, w__, €" RE Nee
+Gd —s a
+Yow CT de
+| No NN Na
+Wet Rp Rup Ay" Ru"? CL pethee : Yo
+
+he NL o N
+
+\ oo A \
+
+Xe : Ne, In | Xe et Xo
+
+Cs mtr Nr, oli) ~~ es : .
+] .
+| Xn |
+1 | } Ch
+be
+Looser ___ J
+
+Fig. 4.1 Nuclide Chains Used in long Fission-Product
+(wp ) Treatment in ORNL-3686
+ 
+
+ 
+
+ 
+
+»
+
+27
+
+Se | SEE Ngo. oo
+| m8 Nee ge Na — Nos
+| oh oo
+
+6d" ee | ) Np98
+
+de —_—
+Nn
+LFP-t se Nee
+
+for MSER.
+
+__ ORNL ING. 66-8063
+
+Fig. k.2 Nuclide Chains Used in Reduced Treatment :
+ 
+
+ 
+
+28
+
+Teble 4.1 Yield Fractions end. Half-Life
+for Fission Froducts
+
+ 
+
+—
+
+233, Fission 235 Fission
+
+Nuclide Helf Life yie14 Fraction Yield Fraction
+
+ 
+
+Zr-95 654 0.0615 a 0.0620
+Nb-95 354 0.0007 0.0007
+Mo-95 © 5 0 . : } 0
+Te-99 2.1 x 10%y 0.0496 10.0606"
+Cd-113 =. 0.0002 oo. 0.00012
+Te-129m 33d 7 0.0075 0.0035
+I-129 1.7 x 10'y 0.0095 ©... 0.0045
+I-131 8.054 0.0341 0.0293
+Xe-135 6 (See note 1 below) -
+Cs-135 2.6x10y © 0.0011
+Pr-143 13.74 0.0591 0.0603
+Nd-143 0 : 0
+Nd-145  w 0.0338 0.0398
+Na-1k7 11.14 0.0193 0.0236
+Nd-148 0.0128 - 0.0171
+Pm-147  2.65y 0 0
+Pm-148 5.394 0 0
+Pm-149 53.16 0.0077 0.0113
+Pmn-151  28.lh 0.0035 '0.00L4L
+Sm-147 0 0
+Sm-148 © 0 0
+Sm-149 = 0 0
+Sm-150 © 0 0
+Sm-151  80y 0) 0
+Sm-152 0.0022 0.00281
+Sm-154 0.00047 0.00077
+Eu-154 16y 0 : oo 0
+Eu-155 by 0. 00030 0.00033
+© Gd-155 © 0 0
+ Gd-157 0. 0000635 : 0.000078
+~ LFP-1 (See note 2 below)
+IFP-2 (See note 2 below)
+LFP-3 (See note 2 below)
+
+ 
+
+1. Concentration of 135 is determined by the assumption
+
+of 0.005 poison fraction. Fission yleld fraction does
+
+‘not enter the celculation.
+2. The poison fractions for these nuclides were obtained
+
+from ASSAULT celculetions using the concentrations from
+
+Teble 2.2. This poison fraction wes then used as input
+to time dependent calculations.
+
+nu
+ 
+
+ 
+
+ 
+
+ 
+
+»
+
+»
+
+29
+
+Those nuclides which are not included explicitly and which are not
+assumed to be removed instantly by plating out or gas stripping are placed
+in one of three lumped pseudo-elements, which ere described below.
+
+1. Pseudo-element No. 1. Includes those: nuclides which are removed
+by fluoride-volatility during fuel reprocessing.
+
+2. Pseudo-element No. 2. Includes those nuclides which are removed
+by vacuum distillation during fuel reprocessing.
+
+3.  Pseudoeelement No. 3. Includes those nuclides which ere removed
+only by discarding some of the carrier salt.
+
+The properties of these pecudo-eleneuts are listed in Teble k.2 below.
+
+Table 2 Effective Cross. Sections and Concentrations
+for ‘Pseudo-Elenents in MSER
+
+ 
+
+Pseudo-Elements
+
+ 
+
+ 
+
+No.1 ~~ No.2 No.3
+
+Effective Cross Section -
+
+(2200), barns ~~ 1.1372 3.6037 © 0.5061
+
+I, (E > 0.414 ev), barns 12.2266 6.4986 2.5119
+Effective Concentration,® oo
+etoms/barn-cn Co oo
+
+In fuel salt a, iop8 6.90232" 06 28997"
+
+In fortith gale, 3. 79832°% 3.28086" 06-5, 831077"
+
+ 
+
+SNote that these are ‘concentrations in the salt stream. “For
+use in reactor calculations, these concentrations must be multi-
+plied by the volume fraction of salt in a given region.
+
+The nuclides whitch were included in each of these pooudo-Clenents
+
+are listed in Tables 4.3 through L.5. The concentrations listed were
+
+taken from MERC case 555. These concentrations are the number densities
+
+‘in the salt itself.
+
+The cross sections for the pseudo-elements vere formed for each
+energy group in GAM end THERMOS by summing the product of concentration
+
+times group cross section for all the individual nuclides in the
+ 
+
+30
+
+Teble k.3 Fission Product Nuclides Included in
+Pseudo-Element No. 1 :
+
+ 
+
+0g(2200) RI Concentration, etoms/b-cm
+
+ 
+
+© Fuclide
+
+ 
+
+barns BaXNS pe) Stream Fert. Stream -
+
+Br-81 3.3 57.63 6.05188 8.753771
+Mo-96 1.2 30.87 9.8135"  7.1924-13
+
+© Mo-97 2.2 15.30 7.6741-0T 1.031697
+
+"© Mo-98 0.51 5.95 . «7.524907 = 1,0119-09
+‘Mo-100 0.5 7.87 6.5213-07  8.5615-10
+
+ Te-126 0.8 10.98 3.211808 4 6606-11
+Te-128 0.3 2.52 1.358307 1.945810
+
+| Te-130 0.5 2.01 3.7842-07 = 5,2536-10
+I-27 7.0 155.90 5.220000 7.583871
+Summed concentrations 2.84093" oo 3.83038"99
+Effective 0q(2200), barns 1.1372 1.1468
+
+© 12.2266
+
+Effective RI, barns - 12.3985
+
+ 
+
+Teble L. y Fission Product Fuclides Included in
+Pseudo-Element No. 2
+
+ 
+
+0g(2200) RI Concentration, etams/b-cm
+
+ 
+
+ 
+
+Fuclide . “barns barns : 8 :
+- Fuel Stream Fert. Stream
+sr-86 1.65 0.658 1.l4223-09 5.913510
+
+&r-88 0.005 0.057 6.994% 3.2304-07
+
+Y-89 1.31 0.792 9.106407 4,1837-07
+
+© Y-90 3.5 1.4% 7.006008 2.195379
+Ba-136 0.4 13.01  1.4357°99 1.2256™99
+Ba-137 5.1 7.77 5.240698  -1.3713-0T
+Ba-138 0.7. 0.368 9.620707 = L.L279-07
+1-139 8.9 11.0 9.158807 3.952007
+Ce-140 0.66 0.477 . 8.8026°07 4.147807
+31
+
+Table 4.4 (cont'd)
+
+ 
+
+: Concentration, etoms/b-cm
+
+ 
+
+ 
+
+ 
+
+"
+
+yoo
+
+ 
+
+a (2200)
+Niclas “barns : borne Fuel Streem Fert. Stream
+Ce-1k2 ~~ 1.0 “2.654 8.190897. 3.6721" -07
+Ce-143 6.0 2.4% 1o0m7 5.4542-13
+Pr-141 11.6 24.08 8.u78707 13.5522-07
+Pr-142 ~~ 18.0 78 3.85709 2.667%
+NMa-1Lk 5.0 113.85 6.638107 bsk33™T
+Nd-150 3.0 10.86 7.087978 3.0366-98
+Gd-156 Lo 33.97 2.976% 1.200079
+6-158 3.9 32.03 5.78370 2.985370
+To-159 46.0 138. 00 7.bbo1" 1. 87067
+Summed concentrations 6. s005% Cae
+Effective 0a(2200), berns So 3. 6037 | 3.7006
+Effective BI, barns ~~ 6.4986 6.6896.
+
+ 
+
+& Nuc. ide not on GAM library. .
+for pure
+
+Used group cross sections oo
+1/v nuclide (RI s O. 501k berns) with nuclide con-
+
+centretions multiplied by retio of (rz, fo. 501k.
+
+Table 4,5 Fission Product Nuclides Included in
+
+_ Pseudo-Element No. 3. .
+
+ 
+
+0p(2200)
+
+Concentration, etoms/b-cm
+
+ 
+
+ 
+
+ Ro-87
+
+Muclise barns rans
+RR Cl Tho Fuel Stream Fert. Stream
+© Rb-8 0.91 0.671 5.198406 1.2251707
+| 0.12 0,166 1.108405 2.5696" i
+zr-90 0.10 0.540 5.226710  1.k553712
+Zr 1.58 7.45 1.810979 h.akesOT
+Zr-92 0.25 = 0.264  1.9327°05 1. Lok2-0T
+2r-93 1.10 7.96  1.9072°% 1.366477
+2r-9h 0.076 0.15  2.0215705 4.578607
+ 
+
+Teble 4.5 (cont'd)
+
+ 
+
+ 
+
+ 
+
+- Fuelide 642200) RT Concentration,  atome/b-ca )
+
+- berms DADS pyc) Stream Fert. Stream
+
+2r-96 = 0.053 0.32 1.645405 3.6922°0T
+ca-111 2.0 51.09 6.472508 1.507809 |
+ca-112 0.03 12.99 5.833% 1.379377
+Cd-11k 12h 14.38 1.080407 2.553699
+‘8n-116 0.006 1k.0% 1.303378 | 2.07297 ;
+Cs-137 0.11 0.653  1.9292°0% 3.25727%7
+Sunmed concentrations 1.28997-0k . 2.83107-06
+
+Effective 0g(2200), barns
+Effective RI, barns
+
+0.5061
+
+| 0.5242
+2.5119
+
+2.5922
+
+ 
+
+®Nuclide not on GAM library. Used group cross sections
+for pure 1/v nuclide (RI = 0.501k barns) with nuclide con-
+centrations multiplied by ratio of (R13 )/0. 501k. Ey
+
+That ‘is,
+the effective group cross section for the pseudo-element is defined to be
+
+pseudo-element and then dividing by the summed concentrations. -
+
+ff
+=F NM 7% No
+
+where g is & GAM or THERMOS group number, and 1 identifies an individual
+nuclide included in the pseudo-element.
+
+Performing this calculation for each group, we obtain an energy--
+dependent : effective microscopic cross section for each pseudo-element.
+‘These numbers ere then placed on the GAM and THERMOS libraries for use
+in spectrum: calculations.
+
+The summed concentrations and cross sections calculated for the three |
+lumped fission products are presented at the bottom of Tebles k.2 through
+LY,
+
+Since the effective microscopic cross sections for the lumped peeudo-
+element differs only slightly between the fuel and fertile stream, only
+
+i"
+Pl]
+
+33
+
+the cross sections for fuel-stream pseudo-elements were put on the library
+tapes. The summed concentrations for the fertile stream pseudo-element
+were then multiplied by the ratio of oo(fertile)/o (fuel) in order to
+
+obtain the correct reaction rate at 2200 m/sec. The properties of the
+
+lumped pseudo-elements are summarized in Teble 4.2,
+3h
+5 CELL CALCULATIONS
+
+~The infinite-medium code M-GAM was used to calculate spectra and to So
+obtain energy-evereged cross sections for neturons from 10 Mev to 1.86 ev.
+Two of these celculetions were made, one for the typical core cell, shown
+- in Fig. 5.1 and the other for a homogeneous cell representing the blenket
+composition. Two subsidiery calculations vere done first to provide input
+-information for the M-GAM celculetion: e calculation of high energy intre-
+cell flux ratios and & calculetion of effective chord length for the
+resonance absorbers. The intra-cell flux ratios were obtained for the
+energy groups between 10 Mev and 30 kev, by means of a one-dimensional -
+celculation of the cell in 8), approximation to the trensport equation.
+The code ANISN was used. Thirty group cross sections were obtained through
+use of GAM-II to reduce the 94 group librery date. The cell was approxi~
+meted by a series of concentric ennuli es shown in Fig. 5.2 and described
+in Tebles 5.1, 5.2, and 5.3. The calculated ratios of region flux to
+cell flux are shown in Teble 5.4. The velues eppeering in Teble 5.4 were
+averaged by volume and density to obtain the proper factors for input by.
+nuclide to the M-GAM calculation.
+
+The effective resonance integrals for the resonance absorbers are
+calculated in the M-GAM code by means of the narrow resonance and 1afinite
+mass epproximations. Heterogeneity effects are accounted for vy specifying
+the effective chord length of e sphere, infinite cylinder, or infinite
+celeb which gives the same collision probabilities as the actual region
+containing the resonance sbsorber. Since the fissile end fertile stream
+* regions of tke MSER cell (Figure 5.1) do not correspond to & lattice of
+‘one of these simple shapes, & calculation of the collision probabilities
+was required. We used e three-dimensional Monte Carlo code in which the
+neutron histories were started with random position and direction within
+the material for which the collision probebility wae to be calculated.
+~ The fraction having a first collision in each of the materials was computed
+for several values of its total cross section. ~The fissile stream regions
+in the core cell corresponded to an infinite cylinder with redius of 2.87
+% 0.07 em with 95% confidence. This value was used for the isotopes,
+
+7p
+»
+
+»
+
+ 
+
+ 
+
+C
+
+ 
+
+35
+
+ORNL DWG. 66-8064
+
+Fertile Salt
+
+ 
+
+4.8"
+
+ 
+
+75"
+
+1
+\
+
+\ 3.5 in. Diameter
+
+09 oOX\ ...
+
+O J A
+
+1.425 in,
+Diameter
+
+) \ 3.690 in. Diameter
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+/ + b— Fuel sat Passages (up)
+Fuel Balt Passage (Down)
+
+Fig. 5.1 Molten Salt Breeder Reactor Core Cell.
+ 
+
+36
+
+ORNL IMG. 66-8065
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 5.2 The One-Dimensional Approximation of the
+ 
+
+ 
+
+ 
+
+37
+
+Teble 5.1. Figure 5.1 Materials
+
+ 
+
+ 
+
+Zone Materials
+1 Fissile Stream
+2 Graphite
+3 Fissile Stream
+h Graphite
+5 Fertile Stream
+6 Graphite
+T Fertile Stream
+
+ 
+
+Table 5.2. Figure 5.1 Dimensions
+
+ 
+
+ 
+
+Radius Length (cm)
+Ry | 1.8098
+R, | 2.8882 |
+Ry 3.4617
+R), - 4. 4hs50
+Rs . = L,6863
+Rg 6.3346
+
+R, 6.013
+
+ 
+ 
+
+ 
+
+ 
+
+38
+
+Table 5.3. Atomic Densities for MSER Calculations
+(Atoms per bern cm.)
+
+ 
+
+ 
+
+Li-7
+
+ 
+
+Pure Pure “Pure Cell
+
+fuclide Fuel Fertile Grephite Average
+Be 1.2239-02 5.2320-0k ~ 0.21057-02
+Cc 19.53-02 7.2105-02
+Th-232 7.0630-03 0.52641-03
+Pa-233 2.79163-06 0.20806-06
+U-233 7.00685-05 1.57079-06 1.19484-05
+U-234 2.51191-05 .1.53989-08 0.42427-05
+U-235 T.63459-06 5.02589-11 1.28918-06
+U-236 8.45420-06 1.11775-13 1.42758-06
+U-238 7.20564-07 1.21674-07
+Cr¥
+Fe*
+Ni¥
+Mok ;
+Mo-95 8.79340-07  1.20594-09 -1.48575-07
+Tc-99 6.91964-07 9.33264-10 © 1.16915-07
+Cd-113 1.89260-10 5.01213-12 0.32332-10
+I-129 2.71048-07 3.88965-10 0.45798-07
+Xe-135 1.28135-10 0.21637-10
+Ce-135 2.16231-07 1.950T4-13 0.36513-07
+Nd-143 6.94383-07 1.33582-07 1.27210-07
+Nd-1L45 4.27650-07 1.31705-07  0.82029-07
+Nd-146 3.51506-07 2.12537-07 0.75195-07
+Nd-148 1.77059-07 T.24269¢08 0.35296-07
+Pm-147 2.00812-07 1.20786-08 0.34809-07
+Sm-147 6.48113-09 2.93786-08 3.28399-09
+Sm-148 2.02350-08 T7.19904-08 0.87823-08
+Sm~-1%9  5.39408-09 1.58085-10 © 0.92262-09
+Sm-150 - 1.06162-07 2.97040-08 0.20141-07
+Sm-151 1.76667-08 1.60114-09 0.31025-08
+Sm-152 ~~ 4.34709-08 1.10604-08 0.81648-08
+Sm-154 5.75048-09 2.27567-09 1.14064-09
+
+. Eu-153  1.97099-08 1.1L4064-08 0.41783-08
+Eu-15%  2,65506-09 = L4.13375-09 0.75642-09
+Bu-155 3.31571-10 6.01616-10 1.00827~10"
+Gd-155 1.49662-10 - 3.75438-12 0.25552-10
+Gd-157 - T.12370-12 2.35735-13 1.22048-12
+Pm-148% Co .
+Pm-148y  3.22506-09  L4.35073-11 0.54782-09
+
+ Np-237 1.64999-07  L.47285-14 0.27862-07
+Pr-143  2.61836-10 2.29571-09 2.15313-10
+F 4.6341-02 @ L4.7870-02 1.13929-02
+
+- Ii-6 1.3174-07 9.8022-08 0.29552-07
+
+2.1460-02 1.8570-02 0.50077-02
+
+*Trace quantities assumed for the cell calculation.
+
+QO
+ 
+
+ 
+
+ 
+
+.
+
+39
+
+Table 5.3. (cont'd)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Pure Pure Pure Cell
+Nuclide Fuel ~~ | Fertile Graphite Average
+Fp-1  2.84093-06 3.79832-09 © 0.48000-06
+IFP-2 6.90232-06  3.28086-06  1.4%1005-06
+LFP-3 © 1.28997-Ok 2.7333106 0.21986-04
+Table 5.4. Ratio of Average’
+Fast Flux by Zone and Group¥*
+to the Cell Average
+Zone Group 1 Group 2
+1 1.297 1.121
+2 1.134% 1.056
+3 1.104 1.038
+Ly 0.9913 0.9969
+5 0.93%7 "0.9775
+6 0.9015 0.9603
+T 0.8968 0.9585
+Group 1 158 0:82 Mev to 10 Mev.
+Group 2 is 0.03 Nev to 0.82 Mev.
+23h; 236, end , 238, The fertile streem regions in the core cell
+
+corresponded to an infinite sleb with thickness of 04277 + 0.002 cm.
+
+233pg and 2320,
+
+This velue was used for
+The atamic densities of ‘the pure streams (Table 5. 3) were volume
+weighted to obtain the mixture densities for the M-GAM calculation. The
+resonance materials vere assumed to be at 900°K. Five group cross sec-
+tions vere generated by M-GAM. These groups were &s follows: 10 Mev to
+0.821 Mev, 0.821 Mev to O. 0318 Mev, 31.8 kev to 1. 23h kev, 1234 ev to
+47.8 ev, and 47.8 ev to 1. 86 ev.
+
+Figure 5.3 ghows the epithermel neutron spectra as calculated by
+M-GAM for the blanket and core cells. The outstanding features of these
+curves are “the dips in the lethargy range 2.5 to 6 end 10-5 to 13. The
+behavior in the range 2.5 to 6 may be explained on the basis of scattering
+
+resonances in fluorine. An inelsstic resonance corresponds to the first
+¢(u)
+
+O.
+
+Figure 5.3. M-GAM Neutron Spectra
+
+Lethargy
+
+ 
+
+TLV a
+ORNL ING. 66-8066
+
+vere Cell
+XXX ¥X Blanket
+
+ 
+
+, C.
+ 
+
+ 
+
+ 
+
+ 
+
+»
+
+»5
+
+In
+
+of these dips and elastic resonances to the second and third dips. The
+behavior in the lethargy range from 10.5 to 13 is caused by thorium
+absorption. Thorium has four large resonances which correspond in lethargy
+to the four dips appearing in this renge. The fluctuations are alweys
+much more pronounced in the blanket celculetion than in the cell calcule-
+tion because the average densities of fluoi-ine and thorium ere much greater
+in the blanket than in the core.
+
+THERMOS is & one-dimensional integral transport code which calculates
+the scalar thermal neutron spectrum as a function of position. ‘The basic
+THERMOS data consists of a thirty group library tepe. These fine groups
+are then averaged over the spectrum and over the cell to obtain broad
+group cross sections. In the present calculations four broad group thermal
+cross sections were generated with energy limits as follows: ‘0.005 ev to
+0.06 ev, 0.06 ev to 0.18 ev, 0.18 ev to 0.77 ev and 0.77 ev to 1.86 ev.
+
+The one-dimensional geometry of THERMOS makes necessary the descrip-
+tion of the cell as a series of concentric snnuler rings. The core cell
+description for THERMOS was identical to that previously described for
+
+~ ANISN with. one exception.’ Experience has shown that to obtain proper
+
+fluxes in THERMOS the unit cell should be enclosed in a region celled a
+heavy scatterer. This region consists of a heavy nuclide whose only
+reaction is scattering. The unit cell as shown in Fig. 5.2 end described
+in Tables 5.1, 5.2, and o> 3 was ‘enclosed in such a region for the THERMOS
+calculation.
+
+The temperature of all materials 1n the cell end the plenket was
+essumed to be 900°K. ps
+
+The spatial variation of the flux in two of the fine. groups is shown
+in Fig. 5.4 (energies of 0.02-0.03 ev and 0.07-0.08 ev). The spatial
+veriation is clearly quite small. Fig. 5.5 shows the energy distribution
+of the average flux for the cell and blanket calculations.
+ 
+
+Flux
+
+0.1
+
+Spacial Variation of Neutron Flux
+
+EE 0.02 to 0.03 ev.
+
+XXX 0.07 to 0.08 ev
+
+66-8067
+
+ 
+
+ 
+ 
+
+ 
+
+-)
+
+ 
+
+ 
+
+ 
+
+43
+
+. : i ORNL DWG, 66-8058
+Figure 5.5, THERMOS Cell Average Keutron Spectra | ifjilj}!|
+
+    
+   
+
+ 
+
+   
+
+——
+
+5
+
+é(u)
+
+ 
+
+5
+
+CB eNETe
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+- uh
+6. TWO-DIMENSIONAL CALCULATIONS
+
+The reactor was described in R-Z geometry as shown in Fig. 6.1.
+
+(AL dimensions on this figure are in feet.) Forty-eight mesh lines
+were used in the radial direction and 67 exielly. The region compositions
+are listed in Table 6.1 and the:main core densities are listed in Table
+6.2. Region 11, the center control rod, wes treated as a typical fuel
+cell (Figure 5.1) with the fuel stream replaced by grephite. In the
+lower axiel blanket (region 12), each fuel tube wes considered to be
+100% INOR-8 between the core and the lower plenum. Region 18 is a
+vacuum region which 1¢ used to impose a "black" boundary condition on
+the edjacent fuel and INOR bounderies. Region 19 is en annulus of fuel
+representing the four sets of entrance end exit fuel pipes at the bottom
+of the reactor. Where possible, reactor dimensions and volume fractions
+were made the same &s in the previous calculations (case 555).
+
+The Pine-group neutron diffusion equations were solved with the
+ASSAULT code.} A value of kepr = 0.95 was obtained. The decrease in
+keps Of 0.05 compared to the previous calculations is entirely attribut--
+eble to & 21% higher thorium resonance integrel used in our calculations.
+
+A fuel search calculation vas then made on the 233y concentration
+in the fuel stream until the reactor was Just critical. A 233 concen-
+tration increase of 13.9% was required to raise kore to unity. A region-
+by-region neutron balence for the critical configuration is given in
+Teble 6.3. Only sbout 0.006 of the absorptions per fissile sbsorption
+occur outside the surrounding blankets, indicating optically thick blankets.
+In fact, the exisl leskage 1s so small that the axial blankets could be
+made somewhat thinner without effecting the neutron economy. However, |
+ebout 0.005 neutrons ebsorbed in the lower exiel blanket ere captured
+by INOR. This loss in breeding ratio might be avoided if it is possible
+to extend the graphite fuel tubes below the core about 6-12 in. before
+meking the transition to INOR. : -
+
+The power density is very nearly in a Jo distribution radially and
+& cosine distribution axially, as shown in Fig. 6.2 end 6.3. The radial
+distribution corresponds to the mid-plane of the core, end the exiasl tra-
+
+verse was made near the center of the core at r= 17 cm. Power densities
+
+a)
+
+Ell
+
+——
+td any
+
+ 
+
+-/ 3.058 L
+fo 5.000 — me 220+
+647 — |
+
+ 
+
+ 
+
+L5
+
+ONL DG. 66-8069
+
+&H=0.188
+
+  
+   
+ 
+ 
+  
+ 
+  
+ 
+   
+
+  
+
+AH=0.500
+&R=0.333
+
+ 
+
+R=0.250 :
+£)areai2s
+alot
+
+gi ©: ie
+} 500
+SRI00M
+
+® Cn Co oo BN p &Hs 0,187
+
+AU=0313
+
+ 
+
+    
+
+Fig. 6.1 MSER Reactor Model in R-Z Geometry
+ 
+
+ 
+
+L6
+
+Teble 6.1 Region Composition
+
+ 
+
+" Region oF : - Composition (Volume fractions)
+
+ 
+
+1 Core oo Fuel stream — 0.16886
+So Fertile stream — 0.07453
+“Graphite — 0.75661
+
+2-7 Upper and rediel blenkets Pure fertile stream
+end outer streams
+8-10 Upper end radiel reflectors Pure graphite
+end core tie-band .
+1 Center control rod channel. _ Fertile stream — 0.07453
+‘Graphite — 0.92547
+12 Lower axial blanket | Fuel stresm — 0.16539
+
+Fertile stream — 0.79517
+INOR-8 — 0.0394L
+
+13 Fuel plenum | Fuel stream — 0.85484
+'INOR-8 — 0.14516
+
+14-17 Reactor vessel and structural Pure INOR-8
+
+INOR-8
+18 "Bleck Boundary" region Vacuum with flux extrapolation
+SL ’ condition
+19 Fuel inlet and exit ducts Fuel stream = 0.80437 -
+
+INOR-8 — 0.10563
+
+ 
+
+were normalized to the average core power density, 2.48 x 1012 fission/
+cm3 sec (at 200 Mev/fission). The radial peeking near the center of
+
+the core results from the replacement of fuel with graphite in the
+
+centrel graphite fuel cell. The peek power density, P/F = = 3. 29, occurs
+
+at the core mid-plane adjacent to the central graphite cell, The redial
+“and axial peeking factors are 2.18 end 1.51, respectively. If the redial
+power distribution is extrepolated to avoid peeking effects due to the
+central element treatment, P/F = 3. 08. These velues are to be compared
+
+© with rediel, exisl, and total peaking factors from previous work (case
+555) of 2.22, 1.37, and 3.04, respectively. At the radisl end upper
+exiel core-blenket interfaces, the power density drops off very rapidly
+because of the sudden decrease in fuel concentration in the blankets. How-
+ever, fuel does flow up through the lower axial blanket » end power genera-
+tion extends bout 10 cm below the core boundary as defined in Fig. 6.1.
+
+. Q
+ 
+
+( 3
+
+Ch
+
+- Table 6:2 Core Number Densities
+ (atons/barn-ca core)
+
+ 
+
+| Muclide
+
+Fertile
+
+ 
+
+9. 10840 x 10710
+
+| Fuel
+232m, cm 5, 26410 x C1074
+233, = 2.08060 x 1077
+| 233, 1.34708 x 1075 1.17071 x 1077
+a3, L.24160 x 10-6 1.14767 x 10-9
+235, 1.28918 x 106 3.74580 x 10-12
+2%; 42758 x 106 8.33060 x 10-15
+Typ 2.78620 x 1078 3, 33360 x 10717
+Be 2.06670 x 103 3.899k1 x 1075
+bi, 2.22460 x 1070 7.30600 x 10:9
+Ti 3. 62370 x 103 1.38400 x 103
+F 7.82510 x 1073 3.56730 x 1073
+%  2.16370x 10°11 1.0% 10020
+Wen
+
+1. 17800 x10
+
+ 
+ 
+
+ 
+
+Teble 6.3 Region Neutron Balance
+
+ 
+
+Neutrons per Fisslle
+
+ 
+
+ 
+
+“Region Absorption
+Losses Productions _
+
+1 Core 2.0369 2.2160
+2 Upper axial blanket 0.0188 0.0007
+3 Upper corner blanket - 0.0009 0.0000
+4 Rediel blenket = 10.1360 0.0051
+5 Lower corner blenket = 0.0009 0.0000
+6 Radiel outer stream ~~ 0.0006 0.0000
+7 Upper outer stream 0.0000 . 0.0000
+8 Core tie-band 0.0000 -
+9 Upper reflector : 0.0000 -
+
+10 Radial reflector = 0.0000 -
+
+11 Central control rod channel 0.0033 0.0001
+
+12 Iower axiel blanket 0.0232 0.0058
+
+13 Fuel plenum 0.0002 0.0002
+
+1k Upper vessel structure 0.0000 -
+
+15 Radisel vessel structure 0.0010 -
+
+16 Lower vessel structure. © 0.0000 -
+
+17 Plenum structure 0.0000 -
+
+19 Fuel ducts - 0.0000 0.0000 |
+Upper -leakage - - = 0.0000
+Lower leakage (includes
+
+. region 18)& 0.0000 -
+Radial leakage b 0.0010 -
+Delayed neutrons lost 0.0051
+
+ 
+
+ 
+
+2.2279 2.2279
+
+ 
+
+ERegion 18 is & "black" region located below
+the reactor vessel.
+
+Ppelayed neutrons emitted outside the core.
+
+,Q.
+ 
+
+kg
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+3
+ORNL IWG. 66-8070
+L.0 - T T T TT . ' ov . ¥
+3.5 7
+Nr No Fuel Stream
+Nek Central Element
+Bsof Y= | 1
+£ Extrapolated
+ot
+5
+gash .
+®
+- 3 2.0 I~ I
+3 §
+1.5 o
+3
+£
+4
+&
+1.0} 4
+0.5¢ .
+Core-Elanket —s :
+i iN 1 1 Interface ] 1 = 1
+oOo. 25 50 Bo 100 125 1% ITS
+; Radiel Distance frum Core §, em -
+Fig. 6.2 MSER Radial Power Distribution
+
+ 
+Ch mr - : —
+
+Relative Power Density at R = 17 cm, P/F
+
+ORNL IMG. 66-8071
+
+¥ vr v I 7 v v
+
+ 
+
+4.0 po
+
+Ww
+.
+
+AY, |
+’
+
+  
+
+w
+
+.
+
+Oo
+1
+
+   
+
+N
+
+   
+
+“a Axial Mid-Flane --
+
+po
+°
+Tr
+~N
+
+~~
+
+ 
+
+ 
+
+WD mn Et Sms Cnn EE CE dn wm we A a APD GIES Ge Sea Sn we ms we
+
+ 
+
+/
+0.5} /
+(1c Core- Blanket Interface | © \eCore- Blanket
+0 L ] 1 J Pa 1 | y; ' y L
+20 ko B06 WO m6 Zh sh Bo 0 ib
+
+Axial Distance Balow Top of Core, cm
+Fig. 6.3 MSER Axial Power Distribution
+
+QO.
+
+0s
+
+ 
+51
+
+ 
+
+ 
+
+*
+References
+1. D. R. Vondy, T. B. Fouler, M. L. Tobias, Reactor Depletion Code
+ASSAULT (Two-Dimensional, Mult -Reutron-Group, Diftusion), ORNL-
+TM-1302, March 1966.
+i
+ 
+
+ 
+
+52
+
+7. DEPLETION CALCULATIONS
+
+The previous celculations used the MERC code which obtains equilibrium
+reaction rates and equilibrium concentrations automatically. The concen-
+trations are. obtained from the ERC portion of. MERC which solves directly
+the coupled ‘equations of the equilibrium condition for e circulating fuel
+regctor. Since we wished to make an independent check on the validity
+of the solution, and had no other code aveilsble which solves the seme
+problem, we made extensive modifications to en existing code. We took
+the ITM code, which does & multigroup point-depletion calculation of the
+equilibrium cycle for a solid-fuel reactor, and changed it to do a one-
+group, point-depletion calculation of the fluid fuel cycle. This required
+thet the code use average stream densities for losses end removals, thet
+it permit specification of separate cycle times for the two streams, and
+that the nuclide chains be modified to include all of those discussed in
+section 4 of this report.
+
+We used the one-group cross sections (microscopic reaction rates)
+obtained from the ASSAULT calculation for each nuclide in each stream.
+
+The removal of fission products was treated as indicated in section ky,
+Losses of uranium isotopes were assumed to be 0.001 per reprocessing
+cycle, loss of 233pe vas assumed to be 0.00001 per cycle, and 23x ves
+assumed to be: removed completely each cycle. Complete transfer of uranium
+
+isotopes from the fertile to the fissile stream at the end of each fertile .
+
+stream cycle was assumed.
+
+Teble 7.1 gives the resulting neutron balence. The gross (nuclear)
+breeding ratio is 1.062 compared with 1.054 previously obtained (ORNL-
+TM-1467, celculated from Table 8).
+
+Previous calculations have made the tacit assumption that the equilib-
+rium fuel cycle can be used to represent the reactor history though it
+is known that some molten salt reactors might have to be started up on
+& uranium fully enriched in 23%.
+
+In order to check the validity of the equilibrium assumption, we did
+a time-dependent depletion calculation for the heavy nuclides over e 30-
+year reactor history, starting with & 93% 23% - % 238; fuel. We held
+the thorium concentration constent and varied the fissile concentration to
+
+QC.
+
+Lh
+»
+
+ 
+
+53°
+
+Teble 7.1 Neutron Balance by Nuclide
+
+ 
+
+ Absorptions Fiseions Productions |
+
+ 
+
+c 0 0.0261 oo
+Be 0.0159 0.0103 0.0205
+Ta 0.0172 |
+F tn 0.027
+INOR 0.0050
+Leakage So - 0.0010
+.- Delayed neutrons =~ 0.0051
+We 0.0050
+Fissile stream g Coe
+EERE ©. 0.9070 0.8047 2.0148
+23k EE. 0.0907 © 0.0005 0.000%
+2%y 0.084 0.0682 © 0.1664
+2%6y 0.0105 0.0001 0.0002
+237 0.0009 |
+bi 0.0063
+Wy oom
+Vlg ~~. 0.0018
+Woy 0.0023
+148m, | © 0.0009
+143g © 0.0019
+Wy gees
+Other fission products ~~ 0.0086
+Fertile stream BE rT -
+232m, 7 0.985 0.002% 0.0056
+233, Ce ag Ee TT
+233y 0.0086 0.0093 0.0190
+Cask 0.0000 Co
+Sr oar
+Llyn 0.0000
+Other fission products 0.0007
+TOTAL | 2.2279 0.8955 = 2.2279
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+- sl
+
+maintain eriticality. Leakage and parasitic absorptions were held con-
+stent at the values determined by the LIM calculation, and the heavy
+nuclide reaction rates were obtained from the ASSAULT celculetions. We
+essumed complete removal of plutonium isotopes on each cycle.
+
+Figures 7.1, 7.2 end 7.3 give a picture of the epproach to equilib-
+rium. The net breeding ratio, as ‘defined in Fig. 7.3, is the quantity
+of fissionable materiel produced less the emount lost divided by the
+smount consumed in nuclear reactions. . This quantity reached on equilib-
+rium value of 1.054 and was 1.041 when aversged over the 30-year history.
+It 1s noteworthy that sale of surplus fissionable materials started after
+only four months of operation, elthough the breeding ratio did not reach
+unity until after about two years of operation. The difference of one
+and one-half years was caused by & reduction of fissile inventory to
+meintein criticality as the reactor shifted from 2355 to 233y. It showld
+also be noted that tne 236y concentration went through e& maximum early
+in the reactor life and then decreased following the 23%y concentration
+decresse instead of gradually building up toward equilibrium as fre-
+quently assumed. -
+
+A good measure of the suitability of equilibrium celculations is the
+comparison of present-valued costs over the 30-year history with those
+for the equilibrium cycle. These are shown in Teble 7.2, with the fuel
+yield and inventories teken from our calculations, and the other costs
+from ORNL- TM-1467.% oo
+
+Table T.2 Fuel Cycle Costs
+[mills/xwhr(e)]
+
+ 
+
+30-Year Equilibrium
+
+ 
+
+History Cycle
+Fissile inventory 0.1806 0.1718
+Fissile yield -0.0773 -0.0862
+Other costs "0.3665 0.3665
+TOTAL 0.4698 0.4521
+
+ 
+55
+
+~
+
+fit): ORNL DWG. 66-8072
+
+ny
+
+ 
+
+is
+
+0 Lh Cogn ol 10° i.
+Se PA CALENDER YEARS... L.:
+
+= or arnt ti
+
+[io
+
+Le dre ines at me 0 ata an +
+
+Pig. 7-1 Nuclide Inventories During Startup.
+
+ 
+
+ 
+K6/YEAR
+
+Yieeo oF FissionABLE MATERIAL
+
+as
+CALenDdAR YEARS
+
+Fig. 7.2 Fuel Yield During Startup.
+
+lo
+
+ 
+  
+
+ 
+
+hs
+
+95
+Breeding RATIO
+
+wy )
+
+5
+" Catemdar Years
+
+Pig. 7.3 Breeding Ratio During Startup.
+
+$0
+
+ 
+
+LS
+
+ 
+ 
+
+ 
+
+58
+
+The equilibrium cycle calculation was based on a value of $14 per : \<'
+gm for 233% and 233pe end $12 per gn for 235g. The interest rate was
+10%. The 30-year cycle was calculated on & cash-flow basis with the
+same unit costs and a 6% discount factor. The "other costs" were taken
+from ORNL-TM-1467.1 a
+
+' References
+
+1. P. R. Kasten et al., Summary of Molten-Salt Breeder Reactor Design
+Studies, USAEC Report ORNL-TM-1467, Oek Ridge National Laboratory,
+March 2b, 1966. oo : oo :
+wy
+
+ 
+
+ 
+
+59
+DISTRIBUTION
+
+’
+1-5. DIIE, OR
+6-15. M. W. Rosenthal
+16-20. R. 8 . Catlemith
+21-25. A. M. Perry
+26. M. J. Skinner

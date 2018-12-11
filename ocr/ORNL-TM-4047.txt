@@ -1,0 +1,1717 @@
+ORNL-TM-4047
+
+_ BEOENVED BY Tic |
+
+ 
+
+MOLTEN SALTS AS BLANKET FLUIDS IN
+CONTROLLED FUSION REACTORS
+
+W. R. Grimes
+Stanley Cantor
+
+ 
+
+ 
+
+ 
+
+ENERGY
+
+OAK RIDGE NATIONAL LABORATORY
+
+OPERATED BY UNION CARBIDE CORPORATION « FOR THE U.S. ATOMIC ENERGY COMMISSION
+
+ 
+ 
+
+ 
+
+This report was prepared as an account of work sponsored by the United
+States Government. Neither the United States nor the United States Atomic
+Energy Commission, nor any of their employees, nor any of their contractors,
+subcontractors, or their employees, makes any warranty, express or implied, or
+assumes any legal liability or responsibility for the accuracy, completeness or
+usefulness of any information, apparatus, product or process disclosed, or
+represents that its use would not infringe privately owned rights.
+
+ 
+
+ 
+Contract No. W-7405-eng-26
+
+REACTOR CHEMISTRY DIVISION
+
+ 
+
+MOLTEN SALTS AS BLANKET FLUIDS
+IN CONTROLLED FUSION REACTORS
+
+W. R. Grimes and Stanley Cantor
+
+DECEMBER 1972
+
+OAK RIDGE NATIONAL LABORATORY
+
+Oak Ridge, Tennessee
+operated by
+
+UNION CARBIDE CORPORATION
+
+for the
+
+U.S. ATOMIC ENERGY COMMISSION
+
+NOTICE
+
+This report was prepared as an account of work
+sponsored by the United States Government. Neither
+the United States nor the United States Atomic Energy
+Commission, nor any of their employees, nor any of
+their contractors, subcontractors, or their employees,
+makes any warranty, express or implied, or assumes any
+legal liability or responsibility for the accuracy, com-
+pleteness or usefulness of any information, apparatus,
+product or process disclosed, or represents that its use
+would not infringe privately owned rights,
+
+ 
+
+ 
+
+ORNL -TM- 4047
+iii
+
+CONTENTS
+
+Abstract . . + oo 0 0 0 0 a se ee ee
+Introduction . . . «. . « + + + + +...
+Behavior of LizBel, in a Hypothetical CIR
+Effects of Strong Magnetic Fields
+Effects on Chemical Stability
+Effects on Fluid Dynamics . .
+Production of Tritium . . . . . .
+Recovery of Tritium . . . . . . . .
+
+Chemical Transmutations . . « « .
+
+Compatibility of Li,BeF, with CTR Metals and Moderators
+
+Compatibility with Steam, Air, and Liquid Metals
+
+Choice of Most Promising Salts . . . . .
+
+.
+
+Molten Salts in Laser-Induced Fusion Reactors.
+
+Summary: General Comparison of Molten Salts with Lithium in
+
+Fusion Reactors . . . . . . . . .
+Acknowledgments . . . . + oo o.oo.
+
+References
+
+.
+
+-
+
+°
+
+°
+
+11
+
+13
+
+.17
+.18
+
+22
+
+«24
+25
+
+26
+MOLTEN SALTS AS BLANKET FLUIDS IN CONTROLLED FUSION REACTORS
+
+W. R. Grimes and Stanley Cantor
+
+ABSTRACT
+
+The blanket of a fusion reactor serves to absorb and trans-
+fer the energy of the fusion reaction products, and to produce
+the tritium necessary to refuel the reactor. This report out-
+lines how these two functions are performed by lithium-bearing
+molten salts.
+
+The strong magnetic fields may have a considerable effect
+on the chemical stability and a less significant effect on the
+fluid dynamics of a flowing salt. A salt melt flowing across
+a strong magnetic field induces an electric field, which in
+turn produces an emf between the walls of the conduit and the
+adjacent salt. The emf can be lessened to minor proportions by
+careful design--causing the salt to flow parallel to the mag-
+netic field wherever possible and using a system of small bore
+tubes where the flow must cross the magnetic field. Although
+flow in the magnetic field parallel to the lines of force
+suppresses turbulence (necessary in a salt for adequate heat
+transfer), this effect on molten salts will be negligible
+owing to their low electrical conductivities.
+
+Breeding of tritium in a molten-salt blanket is at best
+marginal when the lithium is in its natural isotopic abundance;
+however, the tritium-breeding ratio can be improved by including
+blanket regions of lithium or of beryllium, or by enriching
+the salt in lithium-6. LiF and its mixtures with BeF,; are the
+best molten-salt ccolants in which to breed tritium in quanti-
+ties adequate for fueling a reactor. Molten LiF-BeF, is advan-
+tageous in recovering tritium since, in contact with metallic
+Ni, Mo, or W, virtually all of tritium is present as TF.
+
+While fluorides are adequate heat-transfer agents and
+possess good radiation stability, neutronic transmutation of
+Be and F in the salt ca lead to corrosion unless a redox
+buffer (analogous to U3 Ju% in a fission reactor) is included
+in the melt.
+
+In a blanket which has two coolants, one being metallic
+lithium, salts other than LiF-BeF, could be considered. For
+example, LiCl-KCl, melting at 354°C, may be adequate as vacuum
+wall coolant and as the fluid to transport heat to the steam
+system of the reactor.
+INTRODUCTION
+
+A controlled thermonuclear reactor (CTR) that fuses deuterons with
+tritons yields 17.6 Mev per fusion event mostly in the form of very
+energetic neutrons. Such a device requires a blanket system, a more or
+less complex composite of several materials, capable of performing at
+least two functions. These functions are (a) absorption of the energy
+carried by the energetic fusion reaction products and transfer of heat
+generated in the blanket to the power-producing portion of the reactor,
+and (b) generation of tritium, in a manner such as to enable its ready
+recovery, to replace that consumed in the fusion reaction. The first of
+these functions certainly requires a suitable heat transfer fluid. The
+second requires that the blanket contain a sufficiency of lithium, from
+which tritium can be effectively bred. Though these two functions are
+separable in principle,? there is probably a considerable advantage,
+other than elegance, if the coolant fluid can be a liquid with suffi-
+cient lithium to sustain the required tritium production.
+
+The coolant fluid must meet several criteria. These are generally
+similar to the requirements imposed on molten salts as fuels for fission
+reactor fuels (1). It must not adversely interact with neutrons necessary
+for breeding of tritium. It must be a good heat transfer fluid and its
+heat transfer and hydrodynamic behavior must (for most applications) be
+adequate in the presence of large magnetic fields. It must be non-
+corrosive toward metals of construction in the blanket region, the pumps,
+and the power generation equipment. It must be suitably stable to the
+intense radiation fields within the blanket and it must not react violently
+if, upon failure of the heat transfer equipment, it is inadvertently
+mixed with the power-generating fluid (steam, potassium, etc.). It should,
+in addition, possess a relatively low vapor pressure to minimize stresses
+on the blanket structure, and it should be compatible with auxiliary
+blanket subsystems such as neutron moderators (graphites) or neutron
+
+multipliers. Finally, this fluid should also be capable of efficient
+
+ 
+
+11t is possible, at present, to visualize a blanket in which tritium is
+bred in (essentially) stationary bodies of lithium metal, lithium alloys,
+or lithium salts, with the necessary cooling accomplished by another
+fluid--molten sodium, pressurized helium, gas, or molten salt.
+generation of tritium and it should be of a nature such as to permit
+easy recovery of the tritium for return to the fusion cycle.
+
+This paper attempts to assess the potential of molten salts as
+blanket fluids in controlled thermonuclear reactors. As matters stand at
+present, several entirely different types of CTRs are potentially feasible.
+This fact coupled with the possibility (even the likelihood) that the
+coolant and the breeding functions are separable makes it impossible to
+examine in a single document all the credible combinations.
+
+We have chosen instead, in what we hope will prove to be a continuing
+examination of the overall problem, to do the following:
+
+1. To assess the problems for the most difficult case, a single
+molten salt coolant and breeder blanket in a closed magnetic field device.
+We will use molten Li,BeF,, probably the most studied and best understood
+of the possible candidates, for this assessment in a hypothetical Tokamak;
+a Stellerator would be equivalent in nearly every regard.
+
+2. To compare several molten salts for this and other less demanding
+possible CTR uses,
+
+3. To consider, briefly, application of molten salts for a laser-
+powered fusion device whose problems are quite different, and finally
+
+4. To compare and contrast these molten salts with molten lithium
+
+as the blanket fluid.
+
+BEHAVIOR OF LiyBeF, IN A HYPOTHETICAL CTR
+
+The most difficult problems which must be surmounted by a molten salt
+in a CTR blanket system are, almost certainly, those imposed if the salt
+must serve as the single-fluid blanket-coolant for a closed magnetic field
+(and essentially steady state) CTR. The precise magnitude of these
+problems will depend upon the detailed design of the device--its power
+level, size, temperature and temperature differential, and coolant passage
+patterns within the blanket region. To illustrate the nature and general
+magnitude of the problems we have chosen a toroidal CTR, blanketed and
+cooled with molten Li,BeF,, of the size and characteristics shown in
+
+Table 1.2 The blanket dimensions are essentially those proposed by
+
+ 
+
+This design is a hybrid from sources indicated in the text. It is pre-
+sented only for illustration of several problems to be described.
+Fraas (2) for a lithium-metal cooled device; the magnetic fields
+
+are those indicated in an Oak Ridge National Laboratory study (3); flow
+rate and temperature differential are scaled from a proposed 1000 MW (e)
+molten salt fission reactor (4).
+
+It is clear from Table 1, that the efficiency of the device (ca 45%)
+presupposes temperatures above 700°C for the coolant outlet and that mean
+residence time of the fluid within the active blanket region is (since
+only a small fraction of the inventory is in the pumps, piping, and heat
+exchangers) approximately five minutes. It is assumed for this particular
+device that the Li,BeF, is pumped through the blanket region (and through
+the enormous magnetic field) at 120 cubic feet per second and directly
+to equipment for generation of high quality steam. These assumptions, as
+to pumping rates, AT, and steam generation compatibility, are not unlike
+those proposed for molten salt breeder (fission) reactors (MSBRs) (4).
+
+Table 1. Characteristics of a Hypothetical
+
+Controlled Thermonuclear Reactor
+
+ 
+
+Power 2250 Mw(th) [1000 Mw(e)]
+Major Diameter 21 meters
+
+Minor Diameters:
+
+First Wall 7 meters
+Blanket Region 9 meters
+Shield Region 11 meters
+Magnetic Fields:
+Maximum Toroidal Field at the Coils 80 kgauss
+Toroidal Field at the Center of the Plasma 37 kgauss
+Poloidal Field (pulsed) in the Plasma 7 kgauss
+Blanket Characteristics:
+Salt (Li,BeFy) 60%
+Graphite (or Be) 40%
+Inventory of LiyBeF, 2 x 10° kg
+Flow Rate 4 x 10° kg/min
+
+(120 ft?/sec)
+AT 167°C (300°F)
+It is worthy of note that the mean radiation load on the LizBeF,
+(ca 1.1 watts/gram) is more than 10-fold below that proposed for MSBRs.
+This comparison is, however, deceptively favorable toward MSBRs in that
+. these reactors can assure moderately uniform radiation levels within
+their fuels while CTIRs cannot do so for their blankets. It is likely
+that radiation densities in CTR blanket near the plasma-confinement
+(first) wall will be larger than those proposed for the MSBR. This CIR
+radiation density is not, however, likely to approach the maximum radia-
+tion density at which molten salts have been tested (5).
+
+Such a device as that described above will, on the other hand, pose
+several problems for the Li,BeF,. Some of these problems are similar
+and some are quite different from those posed by use as fuel solvents in
+fission reactors. These problems are defined and discussed in the
+
+following sections.
+
+Effects of Strong Magnetic Fields
+
+Pumping a conducting fluid into (across the magnetic field lines of)
+a closed magnetic field device poses a problem. For a liquid metal this
+problem manifests itself as a large pumping power loss due tc magneti-
+cally induced turbulence; for molten salts the effect appears as chemical
+destabilization. After the fluid is within the magnetic field one can,
+in principle (and perhaps, with considerable difficulty, in practice)
+make the flow channels conform closely to the magnetic lines of force.
+In that case the magnetic field may exert a pronounced effect upon the
+fluid dynamics of the flowing stream.
+Effects on Chemical Stability
+
+From electromagnetic theory it is known that the electric field
+induced in a conducting fluid crossing a magnetic field is given by
+the cross-product of fluid velocity and magnetic field:
+
+-> o>
+E=VxB
+
+Molten LiBeF, (or any conducting fluid) flowing at 10 meters/
+second in a pipe of 5 cm diameter with its axis aligned perpendicular to
+the lines of force of an 80 kgauss (8 volt-sec/meter?) magnetic field
+
+will have induced, at right angles to both the magnetic field and the
+flow direction, a potential difference of 4 volts between the salt and
+the pipe wall. Potential differences of such magnitudes are clearly
+intolerable; though LiF and BeF, are both very stable compounds (6) an
+induced voltage such as this (equivalent to destabilization by 92 kcal /
+mole) would make these compounds quite corrosive to the metallic tube
+walls.
+
+Homeyer (7), who seems to have been the first to consider such
+electrolytic corrosion in a CTR blanket system, noted that such corro-
+sion should be alleviated by (a) reducing fluid velocities perpendicular
+to the magnetic field, and (b) using a series of parallel pipes to
+reduce the pipe dimension where flow across the magnetic field lines
+are necessary.
+
+If, for example, the 120 ft?/sec flow of Li,BeF,; required of our
+hypothetical 1000 MW(e) CTR were supplied at a flow rate of 4 meters/sec
+through pipes of 4 cm diameter perpendicular to the 25 kgauss field? the
+emf induced in each pipe would be 0.4 volts; some 675 pipes would be
+required. If these pipes penetrated the field at 30° to the field lines
+this emf would be reduced to 0.2 volts. These conditions would seem to
+be tolerable. Alternatively, by supplying external cooling to each pipe,
+as it crosses the magnetic field lines, so as to form a poorly conducting
+layer of frozen salt on the inner pipe wall, it may be possible to reduce
+the number of pipes and to somewhat increase their size. Periodic
+replacement of corroded pipe sections might also be considered, since they
+are located at the periphery of the torus. 4
+
+Plasma stability in a reactor such as this requires a pulsed poloidal
+magnetic field transverse to the main field and, accordingly, perpendicu-
+lar to the fluid flow parallel to the fuel lines of the main (toroidal)
+field. Chemical effects of this poloidal field (which may reach 7 kgauss)
+
+may not be trivial, but they would seem, in general, to be tolerable.
+
+ 
+
+3This is roughly the maximum field between the coils (3) in a pipe
+entering the outer edge of the torus.
+
+“Other alternatives exist. It should be possible to penetrate the field
+by shafts of mechanical pumps to permit use of Li,BeF,; to transfer heat
+to (for example) a boiling potassium cycle within the magnetic field.
+Such alternatives are beyond the scope of this document.
+It is clear that the problems outlined above deserve experimental
+study especially in the area of kinetics of de- and re-stabilization of
+real fluids upon passage through intense magnetic fields.
+
+Effects on Fluid Dynamics
+
+ 
+
+To avoid induced electric fields as discussed above, flow of the
+blanket fluid within the torus will be aligned with the magnetic lines of
+force. However, in that case the magnetic field will exert a force
+opposed to eddies within the fluid and will tend to damp turbulent flow.
+Heat loadings in the blanket structure of a CTR, and especially at the
+first (plasma-confining) wall, will be very large, and molten LisBeF,
+must develop turbulent flow if it is to cool this wall effectively. It
+is important, therefore, to assess this damping effect of the field on
+turbulent flow in the salt.
+
+No experimental study of magnetic damping in molten salt has been
+reported, but experiments with liquid mercury have been performed (8,9).
+These experiments with mercury appear to provide a means of estimating
+the Reynolds number at which the transition from laminar to turbulent
+flow occurs. A dimensionless quantity which characterizes the magnetic
+forces that affect flow is called the Hartmann number (M), and is defined:
+
+M = B(o/n)?
+
+where B is the applied field,
+f{ is a characteristic length, usually the half-width of the
+flow channel,
+og is the fluid's electrical conductivity, and
+nn is the viscosity
+
+In the absence of a magnetic field the laminar-turbulent transition
+occurs at Reynolds number ®,) of about 2200; in the presence of the field
+this transition occurs at a higher Reynolds number ®). This increase
+(more commonly the ratio ®,/R) is a function of the Hartman number (M).
+Three such correlation functions have been published (8,9,10).
+
+For Li,BeF, at 600°C, the electrical conductivity (11) is 220
+(ohm-meter) "1, the viscosity is 8 x 1072 kg/(sec-meter). Accordingly,
+for this material in a 80 kgauss (8 webers/meter?) field and assuming a
+6 cm (3 cm half-width) channel the value of the Hartman number is 40. If
+we apply each of the three correlations (8,9,10) developed from experi-
+
+ments with mercury to a fluid of
+M = 40
+we find the transition Reynolds number should rise from R, = 2200 to
+Ry = 2720, 3740, and 2400, respectively. The effect of magnetic field
+on this fluid is, therefore, predicted to be relatively small.
+
+These three values for Ry are very much less than values estimated
+for flows in the first wall region. As an approximation let us assume
+that to cool the vacuum wall we require 40 ft? per second of salt (one
+third the quantity required to cool the entire blanket) and that this
+salt flows through a 6 cm wide annulus around the 7 meter diameter first
+wall. The linear velocity of salt is 0.85 meters/sec, the density (11)
+(at 600°C) of LiyBeF, is 1990 kg/meter? and the viscosity is 8 centipoise.
+The Reynolds number under these conditions is about 13,000.
+
+These data strongly suggest that molten LisBeF, can be made to flow
+turbulently within the blanket system, but direct experiments with molten
+salts would certainly appear desirable.’
+
+Any transverse magnetic field will also act to suppress turbulence.
+
+Hoffman and Carlson (10) propose the formula, R, = 500M for calculating
+
+the transition Reynolds number of Mercury Flowing transverse to the
+magnetic field. The same formula applied to LiyBeF, at 600°C flowing in
+a 6-cm thick channel transverse to 8 kgauss (the poloidal field strength)
+yields
+
+Ry = 500M = 2000.
+This result suggests that an 8 kgauss poloidal field in a toroidal
+reactor may not affect turbulence in LiyBeF,; at most, the suppression
+of turbulence by this field will be comparable to the effects of the
+
+toroidal field.
+
+ 
+
+"Metallic lithium is expected to be quite different. The Hartman number
+for Li is 12,000 for the condition where that of Li;BeF, is 40; the
+corresponding Rt for lithium is, accordingly, above 700,000. It would
+appear that Li will be constrained to laminar flow; it seems likely,
+however, that (because of its good thermal conductivity) it can
+adequately cool the first wall.
+Production of Tritium
+
+It is obviously necessary to use the neutrons produced in fusion to
+breed the tritium required to fuel a D-T reactor. If the only sources of
+tritium were today's transmutation facilities then the fuel cost alone
+would be about 1.2 cents per kilowatt-hour.®
+
+The only practical neutron reactions which will yield tritium
+sufficient for the needs of a D-T fusion reactor are °Li(n,x)T and
+7Li(n,om')T. The latter is a high-energy reaction with a threshold at
+2.5 MeV. Neutron-capture cross sections of ®Li become significant only
+at energies of 0.5 MeV and less. The ‘Li reaction is particularly
+favorable since the product neutron (n') can react with °Li to yield a
+second tritium atom, but because the blanket contains elements which
+scatter and absorb high-energy neutrons, the production of tritium from
+“Li is not very efficient. When the lithium in the blanket is in
+natural isotopic abundance (92.58% Ii, 7.42% 6Li), the greater fraction
+of tritium is produced from °Li.
+
+Several studies have been reported concerning the breeding of
+tritium in fusion reactor blankets (12-16). In cases where the lithium
+is in natural isotopic abundance, tritium-breeding ratios clearly greater
+than unity are calculated for lithium metal blankets; the breeding ratios
+for lithium salts are distinctly less favorable. Table 2 presents some
+very recent calculations for four salts and for lithium metal all in the
+same blanket configuration. Some of the neutron cross sections, partic-
+ularly those for the n,Q, and n,n'?Y reactions of fluorine (17), are
+uncertain. The values in Table 2 are, therefore, more useful for com-
+
+7 uncertain-
+
+parison than for accurate prediction of tritium production;
+
+ties of perhaps 10% in the calculated breeding ratios are possible.
+Three options, either alone or in combination, can be considered
+
+for upgrading tritium production when the breeding ratio is marginal
+
+as appears to be the case for Li,BeF,.8 These are:
+
+ 
+
+%Based on a tritium cost of 10 cents/curie and 22 MeV/fusion utilized in
+a plant operating at 40% thermal efficiency.
+
+"It should be noted that Blow, et al. (14) calculate a tritium breeding
+ratio of 1.027 for LipBeF, in a blanket assembly similar to that of
+Table 2.
+
+8possible use of LiF, LiCl, and Li,CO5 is discussed briefly in a subse-
+quent section of this report.
+10
+
+ 
+
+ 
+
+Table 2. Tritium Breeding Calculations?
+Breeding Ratio from Total
+a Breeding
+
+Coolant 611 “Li Ratio
+LiF (850°) © 0.80, 0.24, 1.05
+Li,BeF, (850°C) 0.785 0.14, 0.93
+Li,C0;  (200°K) 0.64 0.167 0.81
+LiCl (900°K) 0.61, 0.13, 0.75
+Li (850°C 0.98, 0.45, 1.44
+
+ 
+
+&p. Steiner, Osk Ridge National Laboratory, personal communication,
+March 1972.
+
+Blanket Configuration: (1) first wall - 0.5 cm Nb, (2) 94% coolant,
+6% Nb - 3 cm, (3) second wall - 0.5 cm Nb, (4) 94% coolant, 6% Nb -
+60 cm, (5) graphite - 30 cm, (6) 94% coolant, 6% Nb - 6 cm.
+
+CDefined as tritium atom produced per fusion neutron incident on the
+first wall.
+
+4,5 thium in natural isotopic abundance.
+
+STemperature at which atom densities were calculated.
+
+ 
+
+(2) design of blanket to include a region of metallic lithium,
+(b) increasing Be content of the blanket by adding a region of Be
+or BesC to increase neutron multiplication and to provide more 6Li
+
+— 0.8 sec 8Li, and
+
+IBe (n,n) 8He
+
+(¢) modest enrichment of the blanket material in °Li.
+
+The second option was briefly treated by Bell (16) who showed that
+if a blanket region (40 cm thick adjoining a 1 cm first wall of molybdenum)
+were changed from Li,BeF, to an equal thickness of Be and LiBeF,, the
+tritium-breeding ratio would increase from 0.95 to 1.50.
+
+The third option has also received some attention. Impink a3)
+reported that small increases in 611i enrichment of the Li,BeF, blanket
+led to modest gains in breeding ratio. For example, increasing the 61,1
+
+isotopic fraction to 0.2 in a 6.25-cm thick coolant region next to the
+
+first wall improves the total breeding ratio by about 3%. Although
+11
+
+enrichment costs are high, these costs would be partly offset by improved
+shielding of the magnet coils and by reduced radiation damage to the
+first wall through reduced resonance capture (13).
+
+In light of present knowledge of the pertinent cross sections, it
+appears that the breeding capability of Li,BeF,; is marginal in devices
+such as our hypothetical torus. This material would, therefore, probably
+need to be augmented by one of the methods indicated above, or by other
+means. It is clear that better cross section data are needed so that
+
+this point can be decided.
+
+Recovery of Tritium
+
+Approximately 270 grams of tritium are consumed per day by fusion in
+a 2250 MW(t) D-T reactor. Slightly more than this, or approximately
+300 grams per day, must be produced and recovered; this corresponds to
+some 50 moles of T, or to 100 moles of TF per day. In our hypothetical
+CTR the mean residence time of the fluid in the blanket is 5 minutes per
+cycle. Some 0.174 moles of Ts, or 0.348 moles TF is, accordingly,
+produced in the Li,BeF, in this interval. If the fluid entering the
+blanket contained no tritium species the fluid emerging from the blanket
+will contain about 1.74 x 1077 moles T, (or alternatively about 3.48 x 1077
+moles TF) per liter if complete homogeneity is assumed. The problems in
+recovery and management of the tritium depends significantly on whether
+the material exists as T, or as TF. These two situations, and the extent
+to which the mode of tritium behavior can be controlled, are briefly
+described in the following.
+
+Solubility of Hy in molten Li,BeF, has been shown to increase
+linearly with pressure of Hy; at 1000°K, the solubility should be near
+7 x 107° moles H, per liter of salt per atmosphere of Hp, (18). No
+studies of tritium solubility have been reported. If the bred tritium
+occurs as Ty, and if the solubility behavior of T, and Hy; are similar,
+the emerging blanket fluid carries T, (generated during its pass through
+the blanket) equivalent to a saturating pressure of about 2.5 x 1073
+atmospheres. Equilibration of the emerging salt with a relatively small
+volume of inert gas will result in stripping of a very large fraction of
+
+this dissolved T, from the salt. It is clear, however, that this process
+12
+
+(with 120 ft of salt and, for example, 1 ft? of He) will be difficult
+to engineer, and, moreover, that diffusivity of Ty; at such effective
+partial pressures through hot metal surfaces will pose problems.
+
+The solubility of HF in molten LipBeF, also depends linearly on
+pressure of the solute gas, and its Henry's law constant is 107? moles
+HF per liter of salt per atmosphere HF at 1000°K (19). The TF produced
+during each cycle of coolant through the blanket region will correspond
+to about 3.5 x 1077 moles TF per liter of Li,BeF,;; this is equivalent
+to a saturation pressure of about 3.5 x 107° atmospheres of TF. The TF
+will be more difficult to strip from the salt than will Tp, but TF will
+not diffuse through the metal walls. If its reaction with the metal
+walls can be sufficiently minimized, the TF concentration can be allowed
+to increase and the rate of processing the blanket fluid can be corres-
+pondingly reduced. If, for example, the TF can be allowed to concentrate
+until its pressure is 10~2 atmospheres, sparging of perhaps 5 £13 /sec of
+the fluid with helium should suffice for effective recovery of the bred
+tritium. It is, accordingly, worthwhile to examine whether the bred
+tritium can reasonably be maintained as TF.
+
+Tritium produced, for example, from
+
+LiF +n — “He + T' + F~
+
+is, in principle, born as an oxidized species. The tolerable concentra-
+tion of TF, or of any other oxidized species, will, of course, be limited
+by the extent to which corrosive reaction with the CTR metal can occur.
+If the containment metal is sufficiently inert, useful concentrations of
+TF can be maintained without appreciable reaction.
+
+By way of illustration, let us examine the reaction of HF with nickel,
+
+HF (g) + iNi(c) = 1H, (g) + 3NiF, (ad)
+where (g), (¢), and (d) indicate, respectively, that the species is gas-
+eous, crystalline solid, or dissolved in molten Li,BeF,. From the data
+of Table 3 AGC = 10.9 keal for this reaction at 1000°K. The equilibrium
+constant is given by . .
+K = Sur, hy Hy = 4 x 1073
+of; Far
+13
+
+where N is the mole fraction of dissolved NiF,, a is the activity of
+nickel (unity in this case), and P is the partial pressure of the desig-
+nated gaseous species. If we set NyiF, = 3,2 x 107° (equivalent to 6
+parts per million of wi2t, a value that seems likely to be tolerable) we
+calculate pressures of Hy, of 6 x 10-° atmospheres and 5 x 10-% atmos-
+pheres, respectively, in equilibrium with HF pressures of 3.5 x 10™° and
+10-3 atmospheres. These results suggest that if the CTR metal were Ni
+a very large fraction of the tritium could be maintained as TF and
+stripped as such.
+
+Examination of Table 3 suggests that the situdtion may be even more
+favorable for molybdenum and, perhaps, for tungsten as the containment
+metal. However, if the containment metal were iron, chromium, niobium,
+tantalum, titanium, or, probably, vanadium the tritium must, of necessity,
+be stripped and handled as Tr. If one of these more reactive metals
+proves necessary as the CTR material, some way of preventing corrosion due
+to
+
+xIF + M — MF + Ir,
+
+must be provided. This would seem to be possible by incorporation of a
+redox buffer (described in more detail in the subsequent section) in the
+molten LiyBeF,.
+
+At this stage in the technology of fusion reactors one should
+probably not dismiss the possibility of using stainless steel or a
+chromium-containing nickel-based alloy at temperatures at or below 1000°K.
+Such materials can, perhaps, be coated with molybdenum, tungsten, or
+
+nickel, by electrodeposition (22) or by plasma spraying (23).
+
+Chemical Transmutations
+Several types of chemical transmutations will occur in molten
+LiyBeF, in its service as the blanket fluid in a fusion reactor. The
+most important of these, and means for maintenance of the blanket to
+minimize or avoid their deleterious effects, are the following:
+Transmutation of lithium is, of course, essential to production of
+tritium. The overall reactions can be represented as
+"LiF +n —» %He + TF + n', and
+6LiF + n —» %He + TF.
+14
+
+Table 3. Free Energies of Formation of Fluorides
+
+ 
+
+ 
+
+f
+2%) 000%
+
+(kcal/g-atom of fluorine) Reference
+MoFg (2) -50.2 (20)
+WF (2) ~56.8 6)
+NiF, (a)® «55,32 (20)
+VF5(g) -58° (21)
+VF, (cr) -56P (21)
+HF (g) ~66.2 (6)
+FeF, (a)? -66.5% (20)
+NbF5(g) ~72.5, (20)
+crF, (a)? -75.2 (20)
+TaFs (g) -82.2 (20)
+TiF, (g) -85.4 6)
+LiF (8) -125.2] (20)
+BeF, (2) -106.9 (20)
+
+ 
+
+®Standard free energy of formation in molten LiyBeF,.
+
+“Estimated from the relation, aco00 = = NHL - 1000 (¢ 8958)
+taking AHSss and most S9¢g from NBS Technical Notes 270-3,4,5 (21).
+Other S%gg estimated from analogous compounds.
+
+ 
+
+These reactions are not inherently oxidizing or reducing, though, as
+described in the previous section, the generated TF can oxidize reactive
+structural metals to form metal fluorides which will dissolve in the melt.
+Transmutation of beryllium (as BeF2 in Li,BeF,) leads to corrosion
+of any system metal since disappearance of Be?” is equivalent to release
+of fluorine. The two reactions may be represented as:
+BeF, + n —» 2n + 23He + 2F (or Fp), and
+
+BeF, +n — 5He + §He + 2F, followed by
+
+STe 0.8 sec half life $1.1, and
+
+811i + F — OLiF.
+
+ 
+
+In our 2250 MW reactor, these reactions yield, respectively, the equivalent
+of 500 g and 70 g of fluorine per day. This problem is generally similar
+
+to that encountered in fission of uranium (as UF,) in the MSRE (1);
+15
+
+it is clearly necessary to provide a redox buffer in the molten salt
+(the UF3-UF,; couple does this in fission reactors), capable of oxidizing
+FO to F~. It is also necessary, if Ni, Mo, or W constitutes the container
+system, that this redox buffer be consistent with maintenance of the
+tritium as TF. The couple
+
+ce3” = (ett
+may possibly serve this function. If, for example, the concentration
+of cerium in the melt is set at 10™% mole fraction the blanket will con-
+tain 6 x 10% mole of Ce®* + Ce*?, and the Ce3*t/Ce** ratio would require
+chemical adjustment on a cycle time of many days. If, on the other hand,
+the container metal is Nb (or some other metal which will reduce TF in
+dilution solution) the redox couple must be chosen so as to be consider-
+ably more reducing. It must deal with the Fy, generated by transmutation
+of beryllium but it must also reduce the 100 moles per day of TF produced
+by transmutation in the LiF. Such a buffer system would require adjust-
+ment on a cycle of a few days.
+
+In addition, transmutation of fluorine occurs upon capture of
+neutrons of energy above about 3 MeV. This reaction may be represented
+by
+
+18F" +n — ON” + %He.
+This nitrogen isotope decays, with a 7.3 sec. half-life, to an oxygen
+isotope
+
+ey” 5 1%0 +87,
+and the result is probably, although the mechanism. may be complex, grow-
+in of 027. The gbsolute quantity of 1®N formed by this reaction is
+relatively uncertain; it is estimated to be, within a factor of three,
+120 grams/day. The very short half-life of this isotope guarantees that
+all the 1°N decays within the CTR blanket. The concentration of lop,
+in whatever chemical form, within the Li,BeF, cannot exceed 1.1 parts
+in 1011. However, some fraction of this material will react with the
+CTR contairment metal; decay of this isotope will lead to formation of
+metal oxide in the CTR metal. This may, especially if it concentrates
+within the grain boundaries, prove troublesome. If all the 16y- decayed
+within the blanket salt, the oxide concentration of our hypothetical CIR
+
+would increase about 60 parts per billion per day. Since 10 to 50
+16
+
+parts per million of oxide is almost certainly tolerable, a process for
+removal of oxide on a cycle time of several months to several years
+should suffice.
+
+Finally, it should be noted that the transmutation reactions
+shown all generate He. For the hypothetical CTR the daily production
+of helium is about 125 gram atoms or nearly 100 standard cubic feet.
+Helium is relatively insoluble in molten LisBeF,; (24); the solubility
+at 1000°K is 1.7 x 10™% moles He per liter salt per atmosphere. Helium
+produced per pass of blanket salt corresponds to a saturation pressure
+of 2.6 x 1072 atmospheres. If no sparging were attempted the helium
+
+pressure would reach 1 atmosphere in about 30 hours.
+
+Compatibility of Li,BeF, with CTR Metals and Moderators
+
+As indicated in Table 3 above, LiF and BeF; in molten Li,BeF, are
+very stable materials. Both are much more stable than the structural
+metal fluorides; consequently, corrosion due to chemical reactions with
+these major blanket constituents should prove minimal. Indeed, experi-
+ence with the Molten Salt Reactor Experiment (25) has shown negligible
+corrosion by this fluid on a nickel-base alloy (Hastelloy N). However,
+such salts are excellent fluxes for metallic oxides and halides, and
+films of such substances afford no protection against oxidizing agents
+carried by such melts; accordingly, as described above, HF (or TF) may
+react with the containment metal, and impurity ions such as Ni?t will
+react with metallic iron or chromium in the container metal (1).
+
+Melts such as Li,BeF, are chemically inert toward, and do not wet,
+graphite (1). However, the possibility that such salts will transfer
+graphite and carburize metals such as Mo or Nb cannot be discounted.
+
+It is not likely that a system built of Mo, Nb, or V can use molten
+Li,BeF, and unclad graphite without adverse interactions. Similarly,
+metallic Be cannot react appreciably with LiyBeF, (but the Be could
+certainly react with TF or with the Ce3F/cett couple proposed as a redox
+buffer in the system). Any real use of metallic Be as a neutron multi-
+plier in the blanket system, therefore, presupposes that the Be is clad
+
+with an inert metal.
+17
+
+Other processes which could conceivably give rise to corrosion can
+be dismissed as highly improbable. Direct dissolution of structural
+metals in Li,BeF, has never been observed. Salt decomposition caused
+by the slowing down of energetic particles should not lead to corrosion
+provided that the salt is kept at elevated temperatures. Experience
+gained in the Molten Salt Reactor Experiment (26) and in an extensive
+in-pile radiation testing program showed that as long as the temperature
+was greater than 150°¢ (27), radiolytic decomposition was of no impor-
+
+tance to corrosion of structural metals or graphite.
+
+Compatibility with Steam, Air, and Liquid Metals
+
+In any system of heat-exchangers and hot flowing liquids, there
+exists a real and finite probability that leaks will occur. In this
+section we examine the consequences of leaks and intermixing of other
+fluids and Li,BeF,.
+
+The reaction of steam with LipBeF, yields HF and BeO
+
+H,0(g) + BeF, (4) = BeO(e) + 2HF(g)
+
+though the reaction is not particularly exothermic. Both H,0 and HF are
+likely to corrode the metal in contact with the salt; corrosion-product
+fluorides will dissolve or be otherwise carried by the salt. Since BeO
+is only very slightly soluble (125 ppm at 500°C) in Li,BeF, (28), a
+large in-leakage of steam would soon lead to the precipitation of BeO in
+the salt circuit. Leakage of air into LiF or Li,BeF, will have trouble-
+some, but not hazardous, consequences. Dry air will not react directly
+with either salt; however, air oxidation of surfaces in contact with the
+salt will result in dissolution by the salt and, if continued, in
+ultimate precipitation of BeO. Moisture in the air will also react, as
+does steam, with Li,BeF,. The molten Li,BeF, can, if necessary, be
+freed of oxide by treatment at elevated temperatures with anhydrous
+HF (29).
+
+In some CTR designs suggested in a subsequent section of this paper,
+Li,BeF, (or other salt) could inadvertently be mixed with liquid alkali
+metals. From LiyBeF,, metallic Li, Na, or K react to precipitate Be
+
+metal, but the reaction is not highly exothermic.
+18
+
+In general, although inadvertent mixing of Li,BeF, (or most other
+molten salts) with other CTR fluids would prove troublesome, such mixing
+
+would not lead to violent or explosive reactions.
+
+CHOICE OF MOST PROMISING SALTS
+
+In this section we attempt to answer two questions. These are:
+
+(2) if tritium must be bred in the blanket-coolant which lithium-bearing
+salt is best, and (b) if the coolant and breeding function of the blanket
+can be separated which are the most promising molten salt coolants?
+
+In answer to the first question, it must be conceded that obtaining
+breeding ratios greater than unity with molten salts alone may pose a
+real difficulty. Table 2 above suggests that LiCl and Li,CO03 show, in
+reasonable (though not optimized) blanket configurations, breeding
+ratios that are unsatisfactory. Breeding ratios have also been calculated
+for LiNO, (13) and LiNO; (15); the results tend to be quite unfavorable.
+Impink (13), for example, obtained the value 0.82 for LiNO,.° No calcu-
+lations appear to have been made for Li,SO0,, but the high cross sections
+for S(n,®) and S(n,p) reactions almost certainly will reduce the breed-
+ing ratio below that for 1.i,CO3. Moreover, LiNO; and LiNO3 lack the
+thermal stability required of truly high temperature coolants, and
+Li,C03 and Li,S0, will oxidize many CIR structural materials.
+
+Lithium hydroxide seems to be eliminated, even if (as is unlikely)
+its properties are otherwise satisfactory, because its hydrogen would
+excessively dilute the bred tritium. Lithium oxide (iO) has a lithium
+density nearly 50% above that of metallic lithium, but its melting point
+of nearly 1470°C (6) eliminates it as a major constituent of a blanket
+fluid. Lithium chloride melts at 610°C (6) and should be reasonably
+compatible with CTR metals, but its breeding ratio (see Table 2) appears
+inferior.
+
+The salt with the most favorable breeding ratio is LiF. This salt
+is inert toward graphite and to metals under consideration for the blanket
+
+structure. The major drawback of LiF is its melting point of 848°¢c.
+
+ 
+
+%In the same configuration he calculated 1.15 for Li,BeF,.
+19
+
+Because of this high melting temperature, LiF cannot be used to transfer
+heat to the steam system of the reactor. If the blanket region were oper-
+ated at very high temperatures (>900°0) , then LiF could be used in conjunc-
+tion with an intermediate heat-exchange medium--liquid Na, a lower melting
+salt, or perhaps a boiling alkali metal system. The melting point of LiF
+can be substantially lowered by many solutes; the ideal solute should lower
+the melting point below 374°010 without affecting either the breeding gain
+or the generally favorable heat-removal and chemical properties of LiF.
+
+We know of no such solute. Dissolved Li,0 should increase the breeding
+ratio slightly, but considering the probable limited solubility of Li,O0,
+the melting temperature (more accurately, liquidus temperature) of LiF will
+not drop below 800°C. Using AlF; and/or another alkali fluoride to lower
+the melting temperature to ~700°C should not have dire chemical consequences,
+but the breeding ratio will almost certainly suffer. The nearest approxi-
+mation to an ideal solute in LiF is probably BeF,. The phase diagram for
+LiF-BeF, (30), presented in Fig. 1, shows that a melting temperature as low
+as 363°C is available in this system. Unfortunately, the viscosity of the
+melt increases with BeF, concentration, and mixtures with >40 mole ¢ BeF;
+have viscosities greater than 50 centipoise at 450°C (31). The optimum
+salt mixture of low melting temperature and acceptable viscosity, and with
+a reasonably good tritium breeding ratio is at ~33 mole 9 BeF,, correspond-
+ing to the LigBeF, used for illustrative purposes in earlier sections of
+this report. Decreasing the BeF, concentration below 33 mole % may have a
+modest beneficial effect upon breeding ratio; this increase might, possibly,
+offset disadvantages posed by the increased liquidus temperature and likely
+changes in chemical behavior.
+
+In summary, the answer to the first question posed above--the best
+blanket coolant salt in which to breed tritium is LiF, but its melting
+point of 848°¢c limits its usefulness only for cooling a blanket that
+operates above this temperature. If the blanket coolant must also trans-
+fer heat to the steam system, Li,BeF,, or some modest variant of this
+composition, appears to be the best choice.
+
+A partial separation of breeding and cooling functions, posed in the
+
+second question above, has been approached by Steiner (12). He calculated
+
+ 
+
+10Me critical temperature of H,0.
+TEMPERATURE (°C)
+
+900
+
+800
+
+700
+
+600
+
+500
+
+400
+
+300
+
+200
+
+20
+
+ORNL-DWG 71-5270R2
+
+ 
+
+ 
+
+ 
+
+  
+ 
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
+
+ 
+
+ 
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Yao, {mole fraction)
+
+I [ [ I
+— 500 I T T . —
+84 X (EUTECTIC) = 0.3280 + 0.0004
+~~ Tmax = 459.1 £0.2
+— 450 LIQUID ln
+(EUTECTIC =
+40.002
+— 400 H- LipBeF, + —
+LiF + LiQuID
+LIQUID
+- 350 ! | ! | 555 +
+0.30 0.35 0.40 045 050 0.55
+458.9+0.2°C ! Bef, (B-QUARTZ TYPE)
++ LIQUID
+L | -
+| 363.5 £0.5°C
+LiF + Ee - }
+LizBeF, o| LizBefy + BeF, (B-QUARTZ TYPE) a
+I~ ‘s 280°C i \
+©
+5'| LigBeFa + | LiBeFy + BeF, (8-QUARTZ TYPE) /
+LiBeFs ® 227°C
+| l J \ J | | | f
+0 0.4 0.2 0.3 0.4 0.5 0.6 0.7 08 0.9 1.0
+
+Phase Diagram of the System LiF-BeF,.
+21
+
+the tritium breeding ratio for a blanket design in which Li,BeF, cooled
+the vacuum wall and lithium metal assumed the rest of the hesgt-transfer
+function, and showed that the breeding ratio (1.22) was 8.3% less than
+that (1.33) for the same blanket with lithium as the sole coolant. This
+small loss in breeding ratio suggests that other salts, especially those
+melting below 374°¢, might also serve as vacuum-wall coolants. Moreover,
+the heat carried by the lithium might then be transferred outside of the
+blanket to a molten salt of the same composition as the vacuum-wall coolant.
+The salt streams from the vacuum wall and the lithium heat-exchanger would
+then be combined and pumped to the steam-raising system. The eutectic
+mixture of LiCl and KCl, which melts at 354°C (32), might be suitable for
+such service. The authors are presently assessing the implications of
+this "double-coolant" concept.
+
+In principle, a complete separation of breeding and cooling functions
+might be embodied in a blanket design in which a molten salt cools the
+vacuun wall, a moderately thick region of quiescent lithium metal, and a
+
+graphite moderator-reflector.l?®
+
+The coolant salt for this application
+must have great chemical stability (to avoid deleterious destabilization
+in the magnetic field and to avoid corrosion of the CTR metal), sound
+heat transfer properties, and, preferably, a low freezing point. These
+specifications narrow the choice of major component to fluorides, chlorides,
+and oxides, of lighter alkali and alkaline earth metals which melt below
+1200°C. The list seems to contain LiF, LiCl, NaF, NaCl, Na,0, KF, KCl,
+BeF,, MgCl,, and CaCl, with, perhaps, other compounds of these families
+as possible minor constituents of mixtures. When one adds the further
+requirement that the coolant not lower the breeding ratio below unity,
+the list of useful major components becomes smaller. The high inelastic
+scattering cross sections for Mg, for example, probably eliminates any
+substantial concentration of MgCl, from the coolant. From consideration
+
+of this list of materials it would appear that LiF is best except for its
+high melting point, that Li,BeF, may well be the best overall choice, and
+
+ 
+
+11A possible rationale for such a design is that lithium, though providing
+a comfortable breeding ratio, cannot be made to flow turbulently within
+the Hlanket and may require excessive power in being pumped through the
+major magnetic field.
+22
+
+that, if subsequent calculations show that the breeding ratio does not
+suffer unduly, the ternary eutectic LiF-NaF-KF (melting point 454°C) and
+the binary eutectic LiCl-KCl may be suitable coolants.
+
+Practical problems with these materials will differ in detail from
+those described earlier for LisBeF,. Superficial examination of these
+problems reveal none that seem insuperable, but much experimental study
+
+would be necessary before use of these materials could be assured.
+
+MOLTEN SALTS IN LASER-INDUCED FUSION REACTORS
+
+Two major uncertainties in use of LiyBeF, in CTRs such as our hypo-
+thetical device stem from (a) potentailly troublesome interactions with
+the large magnetic field and (b) the fact that the first (plasma-contain-
+ing) wall and blanket structure degrade the neutron spectrum so that the
+Li(n,an')T reaction is reduced and tritium breeding becomes marginal.
+It is, accordingly, a matter of some interest to examine briefly the
+potential of molten salts in a CTR device which possesses neither a
+magnetic field nor a first wall.
+
+Lubin and Fraas (33) have described a device in which pellets of
+deuterium and tritium produce a plasma upon ignition by an energy pulse
+from a suitable laser. The blanket-coolant fluid (Lubin and Fraas pro-
+posed metallic lithium) is pumped through the reaction vessel and through
+external power generation equipment. The liquid is pumped into the
+(essentially spherical) reaction vessel tangentially to provide
+a very rapid swirl; ignition of the pellet occurs in the vortex so
+formed on the vertical center-line of the vessel. The plasma generated
+in this pulsed device requires no magnetic containment, and the blanket
+coolant liquid is exposed directly to radiation from the plasma.
+
+In addition to its coolant and breeding functions such a liquid must
+also provide attenuation of the severe shock waves sufficient to assure
+feasibility of the reactor vessel. Lubin and Fraas proposed to assist
+this function by introduction of (compressible) gas bubbles into the
+swirling liquid.
+
+These shock waves are caused by (a) partial conversion of neutronic
+energy into mechanical energy within the liquid, and (b) deposition of
+
+x-ray energy in the liquid at the vortex surface. The former is by far
+23
+
+the dominant perturbing force (34). According to an analysis by
+Dresner (34), the impulse to the vessel wall due to the neutronically
+induced shock is proportional to
+
+OuCp™* Rt
+where CO is the volume expansivity, uw is the sonic velocity, Co is the
+specific heat, and Ry is a neutron attenuation distance which depends
+upon neutron scattering and absorption reactions. The values of these
+
+four quantities for Li,BeF, and for Li are:
+
+ 
+
+Li, BeF, (600°C) Li (600°C)
+a (Cc) 2.4 x 107% (11) 2.1 x 107% (35)
+nu (em sec”) 3.0 x 10% 4.3 x 10° (36)
+C, (erg g=1 o¢c-1) 2.4 x 107 (11) 4.2 x 107 (35)
+Ry (em) 23 (34) 33 (34)
+
+ 
+
+8Fstimated.
+
+This analysis suggests that the walls of a vessel filled with molten
+LiyBeF, will suffer an impulse almost twice that of an identical vessel
+filled with lithium metal. This conclusion, coupled with the fact that
+enhanced centrifugal forces (Li,BeF, is nearly four times as dense as Li)
+will make suspension of gas bubbles more difficult in the salt, would
+seem to place LisBeF, at some disadvantage.l?
+
+It seems apparent, however, that design and construction of this
+vessel to withstand repeated shocks over a long life will pose formidable
+problems. Metallic lithium at temperatures of 500°C and sbove is likely
+to prove compatible with relatively few (and generally expensive and
+exotic) materials. It is possible that Li,BeF, (or other salts), which
+are compatible with a much wider spectrum of metals may have real
+advantages in easing this difficult design problem.
+
+Problems with chemical transmutations and with recovery and manage-
+
+ment of tritium seem generally similar to, and should be handled by methods
+
+like, those described above for the hypothetical toroidal device. It
+
+ 
+
+12pifferences in liquid properties will probably be relatively unimportant
+in attenuating the shock waves. The entrained bubbles almost certainly
+will be the principal shock-absorbers.
+24
+
+seems likely that the ease of tritium recovery may give the molten salts
+gn additional advantage.
+
+Finally, it should be noted that the absence of the first wall leads
+to decidedly improved breeding. Metallic lithium will still prove to
+possess the highest ratios, but it seems certain that LiyzBeF, will have
+values markedly above unity. Indeed, it is likely that several lithium-
+bearing salt compositions would be possible breeders in this sort of
+
+laser-powered CTR.
+
+SUMMARY: GENERAL COMPARISON OF
+MOLTEN SALTS WITH LITHIUM IN FUSION REACTORS
+
+In summary, and to supplement the several preceding discussions, we
+briefly compare liquid lithium with salts (especially Li,BeF,) in several
+regards.
+
+Lithium metal is clearly superior to any molten salt in breeding of
+tritium; this seems certainly true in any CTR embodiment. Certain pro-
+posed designs, of which the laser-powered devices are the best examples,
+can certainly breed sufficient tritium using molten salts alone. However,
+the indication that tritium breeding is marginal for the salts in some
+(if not most) designs represents the worst drawback to their use. Fluo-
+ride salts are also inferior to lithium in that, primarily because of
+fluorine's relatively high cross-section for ineleastic neutron scatter-
+ing, the salts are more intense gamma sources and cause increased gamma
+heating of the vacuum wall (12).
+
+Tritium recovery should prove considerably simpler if molten salts
+are used; this is particularly true if the tritium can be maintained as
+TF to minimize diffusion through metallic walls.
+
+Several of the physical properties of lithium (thermal conductivity,
+specific heat, viscosity and melting point, for example) are superior to
+those of the molten salt. However, since the magnetic field will prevent
+turbulent flow in the blanket for lithium, but not for the salt, it may
+be that the molten salt is a better heat transfer medium for such a CTR.
+
+Lithium is compatible with relatively few structural metals, niobium
+alloyed with 19% zirconium appears to be a suitable container (35). More-
+
+over, lithium reacts with graphite, and this material must certainly be
+25
+
+clad if it is to serve in a lithium-cooled blanket assembly. Molten
+LiyBeF, is compatible with graphite and with a wide variety of structural
+metals. Corrosion by the salt is possible, through interaction with
+strong magnetic fields, but such corrosion can apparently be avoided by
+careful design. Transmutations within the salt, which provide potential
+for corrosive reactions, can be accommodated by relatively simple means.
+
+Reactions of salts with steam or with air produce accelerated
+corrosion but, unlike similar reactions of lithium, lead to no inherently
+hazardous conditions.
+
+It is clearly not possible at this stage of the technology to predict
+with confidence how the problems inherent in use of molten salts (or of
+lithium) will be solved. It is entirely possible that both lithium and
+molten salts will be useful. At any event, and regardless of the ultimate
+choice, it is clear that many fascinating chemical research and develop-
+
+ment ventures lie ahead.
+
+ACKNOWLEDGMENTS
+The authors are indebted "to Don Steiner for his calculation of
+tritium-breeding ratios, to Lawrence Dresner for his analysis of shock
+attenuation, and to R. A. Strehlow and W. K. Sartory for much helpful
+
+discussion.
+10.
+
+11.
+12.
+
+13.
+
+14.
+
+15.
+
+16.
+
+17.
+
+18.
+
+26
+
+REFERENCES
+
+W. R. Grimes, "Molten Salt Reactor Chemistry," Nucl. Appl. Tech. 8,
+137 (1970).
+
+A. P. Fraas, Conceptual Design of the Blanket and Shield Region of a
+Full Scale Toroidal Fusion Reactor, ORNL-TM-3096 (1972).
+
+M. S. Lubell et al., "Engineering Design Studies on the Superconducting
+Magnet System of a Tokamak Fusion Reactor," Proceedings of the 4th
+Conference on Plasma Physics and Controlled Nuclear Fusion Research,
+Vol. 3, p. 433 (1971), IAEA Publication CN-28/K-10.
+
+E. S. Bettis and Roy C. Robertson, "The Design and Performance Features
+of a Single-Fluid Molten Salt Breeder Reactor," Nucl. Appl. Tech. 8,
+190 (1970).
+
+W. R. Grimes, "Materials Problems in Molten Salt Reactors," in
+Materials and Fuels for High Temperature Nuclear Energy Applications,
+ed. by M. T. Simnad and L. R., Zumwalt, the M.I.T. Press, Mass. (1969) .
+JANAF Thermochemical Tables, 2nd ed., National Stand. Ref. Data Ser.
+NSRDS-NBS 37, U.S. National Bureau of Standards, June 1971.
+
+W. G. Homeyer, Thermal and Chemical Aspects of the Thermonuclear
+Blanket Problem, Tech. Report 435, M.I.T. Research Laboratory of
+Electronics (1965).
+
+F. W. Fraim and W. H. Heiser, "The Effect of a Strong Longitudinal
+Magnetic Field on the Flow of Mercury in a Circular Tube," J. Fluid
+Mech. 33(2), 397 (1968).
+
+S. Globe, "The Effect of a Longitudinal Magnetic Field on Pipe Flow
+
+of Mercury," J. Heat Transfer, Trans. ASME, 445 (1961).
+
+M. A. Hoffman and G. A. Carlson, Calculation Techniques for Estimating
+the Pressure Losses for Conducting Fluid Flows in Magnetic Fields,
+UCRL-51010, Lawrence Livermore Radiation Laboratory, (1971), pp. 1-4.
+S. Cantor et al., Physical Properties of Molten-Salt Reactor fuel,
+Coolant, and Flush Salts, ORNL-IM-2316 (Aug. 1968).
+
+D. Steiner, "The Nuclear Performance of Fusion Reactor Blankets,"
+Nucl. Appl. Tech. 9, 83 (1970).
+
+A. J. Impink, Jr., Neutron Economy in Fusion Reactor Blanket
+Assemblies, Tech. Report 434, M.I.T. Research Laboratory of Electronics
+(1965) .
+
+S. Blow, V. 8. Crocker, and B. 0. Wade, "Neutroniecs Calculations for
+Blanket Assemblies of a Fusion Reactor," Nuclear Fusion Reactors
+(Proc. Brit. Nuclear Energy Soc. Conf. on Fusion Reactors, Sept. 1969)
+UKAEA Culham Laboratory (1970), p. 492.
+
+W. B. Myers, M. W. Wells, and E. H. Canfield, Tritium Regeneration
+
+in a D-T Thermonuclear Reactor Blanket, UCID-4480, Lawrence Livermore
+Radiation Laboratory (1962).
+
+G. I. Bell, Neutron Blanket Calculations for Thermonuclear Reactors,
+LA-3385-MS, Los Alamos Scientific Laboratory (1965).
+
+J. R. Stehn et al., Neutron Cross Sections Vol. 1, Z =1 to 20,
+BNL-325, Brookhaven National Laboratory, 2nd ed., Suppl. No. 2, (1964),
+pp. 9-0-6, -7, -11.
+
+A. P. Malinauskas and D. M., Richardson, MSR Program Semiannu. Progr.
+
+Rep. Feb. 28, 1972, ORNL-4782, p. 53.
+
+ 
+
+ 
+19.
+
+20.
+
+21.
+
+22.
+23.
+24.
+25.
+260.
+27.
+28.
+29.
+
+30.
+
+31.
+32.
+33.
+34.
+
+35.
+
+36.
+
+_7
+
+P. E. Field and J. H. Shaffer, "The solubilities of HF and DF in
+Molten Fluorides," J. Phys, Chem. 71, 3218 (1967).
+
+C. F. Baes, Jr., "The Chemistry and The rmodynami cs of Molten Salt
+Reactor Fuels," Nuclear Metallurgy, Vol. 15 (ed., P. Chiotti),
+CONF-690801, U.S. Atomic Energy Commission (1969), p. 624.
+
+D. D. Wagman et al., "Selected Values of Chemical Thermodynamic
+Properties," Technical Notes 270-3, 4, 5, U.S. National Bureau of
+Standards, Washington, D. C., 1968, 1969, 1971.
+
+S. Senderoff and G. W. Mellors, "Coherent Coating of Refractory
+Metals," Science 153, 1475 (1966).
+
+J. Wischhusen, Materials Engineering 74(1), 35 (1971).
+
+G. M. Watson, R. B. Evans III, W. R. Grimes, and N. V. Smith,
+"Solubility of Noble Gases in Molten Fluorides," J. Chem. Eng. Data
+7, 285 (1962).
+
+R. E. Thoma, Chemical Aspects of MSRE Operations, ORNL-4658, (Dec.
+1971) pp. 68-71.
+
+P. N. Haubenreich and J. R. Engel, "Experience with the Molten Salt
+Reactor Experiment,” Nucl. Appl. Tech. 8(2), 118 (1970).
+
+W. R. Grimes, Chemical Research and Development for Molten Salt
+Breeder Reactors, ORNL CF-66-7-41 (1966), pp. 45-55.
+
+B. F. Hitch and C. F., Baes, Jr., Reactor Chemistry Division Annual
+Progress Report Dec. 31, 1966, ORNL-4076, p. 20.
+
+J. H. Shaffer, Preparation and Handling of Salt Mixtures for the
+Molten Salt Reactor Experiment, ORNL-4616 (Jan. 1971).
+
+K. A. Romberger, J. Braunstein, and R. E. Thoma, "New Electrochemical
+Measurements of the Liguidus in the LiF-BeF, System. Congruency of
+LipBeF,," J. Phys. Chem. 76, 1154 (1972).
+
+S. Cantor, W. T. Ward, and C. T. Moynihan, "Viscosity and Density in
+Molten BeF,-LiF Solutions," J. Chem. Phys. 50, 2874 (1969).
+
+E. Aukrust, B. Bjbrge, H. Flood, T. Férland, "Activities in Molten
+Salt Mixtures of Potassium-Lithium Halide Mixtures: A Preliminary
+Report," Annals New York Acad. Sci. 79, Art. 11, 830-837 (1960).
+
+M. J. Lubin and A. P. Fraas, "Fusion by Laser," Sci. Amer. 224, 21
+(1971).
+
+L. Dresner, Oak Ridge National Laboratory, personal communication.
+J. O. Cowles and A. D. Pasternak, Lithium Properties Related to Use
+as_a Nuclear Reactor Coolant, UCRL-50647, Lawrence Livermore Radiation
+Laboratory (Apr. 18, 1969).
+
+I. I. Novikov, Y. S. Trelin, T. A. Tsyganova, "Experimental Data on
+the Speed of Sound in Lithium up to 1100 °K, " High Temperature (Trans-
+lated Russian Journal) 7(6), 1140 (1969).
+gy —
+
+10.
+11.
+12.
+13.
+14.
+15.
+16.
+17.
+18.
+19.
+20.
+21.
+22.
+23.
+
+48.
+49.
+
+50.
+51.
+52.
+53.
+54.
+55.
+56.
+
+57.
+58.
+
+59.
+60.
+
+ol.
+
+29
+
+INTERNAL DISTRIBUTION
+
+R. G. Alsmiller 24. IL. E. McNeese
+
+E. G. Bohlmann 25. 0. B. Morgan
+
+G. E. Boyd 26. H. Postma
+
+R. B. Briggs 27. M. Roberts
+
+S. Cantor (10 copies) 28. M. W. Rosenthal
+
+J. F. Clarke 29. W. KX. Sartory
+
+R. E. Calusing 30. TF. J. Smith
+
+F. L. Culler 31. A. H., Snell
+
+J. H. DeVan 32. Don Steiner
+
+L. Dresner 33. R. A. Strehlow
+
+D. E. Ferguson 34. M. L. Tobias
+
+L. M. Ferris 35. D. B. Trauger
+
+R. C. Forrester 36, J. S. Watson
+
+A, P. Fraas 37. C. F. Weaver
+
+John Googin (Y-12) 38. A. M. Weinberg
+
+W. R. Grimes 39. F. W. Wiffen
+
+P. N. Haubenreich 40, F. W. Young
+
+E. H. Kobisk 41-42. Central Research Library
+J. J. Keyes 43. Y-12 Document Reference Section
+H. M. Long 44-45. Laboratory Records Department
+Martin Lubell 46. Laboratory Records, RC
+R. E. MacPherson 4'7. ORNL Patent Office
+
+A. P. Malinauskas
+
+EXTERNAL DISTRIBUTION
+
+P. Bananos, Plasma Physics Laboratory, Princeton, N.J. 080540
+Manson Benedict, MIT, Dept. of Nuclear Engineering,
+
+77 Massachusetts Ave., Boston, Mass. 02139
+
+Milton Blander, Argonne National Laboratory, Argonne, I11.
+Steven Blow, A.E.R.E., Harwell, Didcot, Berks, England
+
+M. Bowman, Los Alamos Scientific Laboratory, P. O. Box 1663,
+Los Alamos, New Mexico 87544
+
+G. A. Carlson, Lawrence Livermore Laboratory, P. 0. Box 808,
+Livermore, California 94550
+
+S. Dean, USAEC, Washington, D. C. 20545
+
+E. E., Donaldson, Washington State University, Pullman, Wash. 99163
+E, L. Draper, Jr., University of Texas, 200 W. 21st St., Austin,
+Texas 78712
+
+W. E. Drummond, University of Texas, Austin, Texas 78712
+
+B. J. Eastlund, USAEC, Controlled Thermonuclear Research Div.,
+Washington, D. C. 20545
+
+W. C. Gough, USAEC, Controlled Thermonuclear Research Div.,
+Washington, D. C. 20545
+
+R. W. Gould, USAEC, Controlled Thermonuclear Research Div.,
+Washington, D. C. 20545
+
+D. Henderson, Los Alamos Scientific Laboratory, P. 0. Box 1663,
+Los Alamos, New Mexico 87544
+62.
+63.
+64
+65.
+66.
+67.
+68.
+69.
+70.
+
+71.
+72.
+
+73.
+Te.
+
+75.
+76.
+
+77.
+78.
+
+79.
+80.
+
+81.
+82.
+
+83.
+84.
+
+85.
+ge.
+
+87.
+88.
+89.
+
+90.
+
+30
+
+R. G. Hickman, Lawrence Livermore Laboratory, University of
+California, P. O. Box 808, Livermore, Calif. 94550
+
+R. L. Hirsch, USAEC, Controlled Thermonuclear Research Div.,
+Washington, D. C. 20545
+
+M. A. Hoffman, Lawrence Livermore Laboratory, University of
+California, P. O. Box 808, Livermore, Calif. 94550
+
+G. Hopkins, Gulf Energy and Environmental Systems, P. 0. Box 608,
+San Diego, Calif. 92112
+
+R. A. Huse, Public Service Electric and Gas, 80 Park Place,
+Newark, New Jersey 07101
+
+A, Impink, Carnegie-Mellon University, Frew Avenue and Margaret
+Morrison St., Pittsburgh, Pennsylvania 15213
+
+E, Johnson, Princeton University, Dept. of Chemical Engineering,
+Princeton, N. J. 08540
+
+J. D. Lee, Lawrence Livermore Laboratory, University of
+California, P. O. Box 808, Livermore, Calif. 94550
+
+L. Lidsky, MIT, Dept. of Nuclear Engineering, 77 Massachusetts
+Ave., Boston, Mass. 02139
+
+Geoffrey Long, A.E.R.E., Harwell, Didcot, Berks, England
+
+R. E. McCarly, Ames Laboratory, Iowa State University, Ames, Iowa
+50010
+
+Victor A. Maroni, Argonne National Laboratory, 9700 S. Cass Ave.,
+Argonne, Ill. 60439
+
+E. Mason, MIT, Dept. of Nuclear Engineering, 77 Mass. Ave., Boston,
+Mass. 02139
+
+Bennett Miller, USAEC, Washington, D. C. 20545
+
+R. G. Mills, Princeton Plasma Physics Laboratory, Princeton, N.J.
+08540
+
+J. Mitchell, UKAEA Culham Laboratory
+
+W. Blake Myers, Lawrence Livermore Laboratory, Div. of Mechanical
+Engineering, P. O. Box 808, Livermore, Calif. 94550
+
+R. S. Pease, UKAEA Culham Laboratory
+
+J. Phillips, Los Alamos Scientific Laboratory, P. 0. Box 1663,
+Los Alamos, New Mexico 87544
+
+R. F. Post, Lawrence Livermore Laboratory, P. O. Box 808,
+Livermore, Calif. 94550
+
+F. Ribe, Los Alamos Scientific Laboratory, P. O. Box 1663, Los
+Alamos, New Mexico 87544
+
+D. M. Richman, USAEC, Div. of Research, Washington, D. C. 20545
+D. Rose, MIT, Nuclear Engineering Dept., 77 Massachusetts Ave.,
+Boston, Mass. 02139
+
+R. E. Stickney, MIT, 77 Massachusetts Ave., Boston, Mass. 02139
+E. C. Tanner, Princeton Plasma Physics Laboratory, Princeton, N. J..
+08540
+
+A. W. Travelpiece, Dept. of Physics and Astonomy, University of
+Maryland, College Park, Maryland 20472
+
+A, R. Van Dyken, USAEC, Division of Physical Research, Washington,
+D. C. 20545
+
+R. Vogel, Argonne National Laboratory, 9700 S. Cass Ave., Argonne,
+111. 60439
+
+R. W. Werner, Lawrence Livermore Laboratory, University of California,
+P. 0. Box 808, Livermore, Calif. 94550
+31
+
+91. L. Wood, Lawrence Livermore Laboratory, University of California,
+P. 0. Box 808, Livermore, Calif. 94550
+92. AEC Research and Technical Support Division, ORO
+93-111. Technical Information Center, P. O. Box 62, Oak Ridge, Tenn. 37830
+(17 copies, ACRS)

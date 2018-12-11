@@ -1,0 +1,3071 @@
+ 
+ 
+
+OAK RIDGE NATIONAL LABORATORY
+operated by
+
+UNION CARBIDE CORPORATION
+for the
+
+U.S. ATOMIC ENERGY COMMISSION
+
+‘ORNL- TM- 378
+
+. TT
+COPY NO. —= //5
+
+ 
+
+ 
+
+DATE - November 5, 1962
+
+TEMPERATURES IN THE MSRE CORE DURING STEADY-STATE
+POWER OPERATION
+
+ran
+J. R. Engel and P. N. Haubenreich Cx A Les
+
+ABSTRACT
+
+Over-all fuel and graphite temperature distributions were calculated
+for a detailed hydraulic and nuclear representation of the MSRE. These
+temperature distributions were weighted in various ways to obtain nuclear
+and bulk mean temperatures for both materials. At the design power level
+of 10 Mw, with the reactor inlet and outlet temperatures at 1175°F and
+1225°F, respectively, the nuclear mean fuel temperature is 1213°F. The
+bulk average temperature of the fuel in the reactor vessel (excluding
+
+.-the volute) is 1198°F. For the same conditions and with no fuel per-
+meation, the graphite nuclear and bulk mean temperatures are 1257°F and
+1226°F, respectively. Fuel permeation of 2% of the graphite volume
+raises these values to 1264°F and 1231°F, respectively.
+
+The effects of power on the nuclear mean temperatures were combined
+with the temperature coefficients of reactivity of the fuel and graphite
+to estimate the power coefficient of reactivity of the reactor. If the
+reactor outlet tempersture is held constant during power changes, the
+power coefficient is - 0.018% 2K/Mw. If, on the other hand, the average
+of the reactor inlet and outle’ Temperatures is held constant; the power
+
+: Ak te
+coefficient is - 0.047% Mw .
+
+ 
+
+ 
+
+imile Price $§ .% " vw =
+MicrofiM Price $ /. yp
+
+Available fr n
+
+Office echnical jces
+
+De ment of Commerce
+ashington 25, D. C.
+
+ 
+
+NOTICE
+
+This document contains information of a preliminary nature and was prepared
+
+primarily for internal use at the Oak Ridge National Laboratory. It is subject
+
+to revision or correction and therefore does not represent a final report. The
+
+information is not to be abstracted, reprinted or othgrwise given public dis-
+
+semination without the approval of the ORNL patent branch, Legal and Infor- -Y
+mation Control Department, :
+f,
+
+ 
+
+ 
+
+ 
+
+LEGAL NOTICE
+
+This report was prepared as an account of Government sponsored work. Neither the United States,
+
+nor the Commission, nor ony person acting on behalf of the Commission:
+
+A. Makes any warranty or representation, expressed or implied, with respect to the accuracy,
+completeness, or usefulness of the information contained in this report, or that the use of
+any information, apparatus, method, or process disclosed in this report may not infringe
+privately owned rights; or
+
+B. Assumes any liabilities with respect to the use of, or for damages resulting from the use of
+any information, apparatus, method, or process disclosed in this report.
+
+As used in the above, ‘‘person acting on behalf of the Commission’ includes any employse or
+
+contractor of the Commission, or employee of such contractor, to the extent that such employee
+
+or contractor of the Commission, or employee of such contractor prepares, disseminates, or
+provides access to, any information pursuant to his employment or contract with the Commission,
+
+or his employment with such contractor.
+
+ 
+
+ 
+
+ 
+CONTENTS
+
+ABSTRACT . . oo oo « 4 « &
+LIST OF FIGURES . +. & « + + oo 4 o &
+LIST OF TABLES
+INTRODUCTION . . + « «
+DESCRIPTION OF CORE
+
+Fuel Channels ec a se
+
+Hydraulic Model . . . . . « «o + &
+
+Neutronic Model . . . . . .
+NEUTRONIC CAICUIATIONS . . . .
+
+Flux Distributions
+
+Power Density Distribution . . .
+
+Nuclear Importance Functions for Temperature
+
+FUEL TEMPERATURES . « . +o « « &» « +
+
+Over-all Temperature Distribution .
+
+Nuclear Mean Temperature . . .
+
+Bulk Mean Temperature «a ae a
+GRAPHITE TEMPERATURES . . . . + « . .
+
+Local Temperature Differences .
+
+Over=~all Temperature Distribution
+
+Nuclear Mean Temperature .
+
+Bulk Mean Temperature . . « .
+POWER COEFFICIENT OF REACTIVITY
+
+DISCUSSION . + « + « © o o o o os 2 « 4»
+Temperature Distributions . . . .
+Temperature Control . . . . . . .
+
+APPENDIX eb a a ss es ee ea
+Nomenclature . . . + + « + + «
+
+Derivation of Equations . . . . .
+
+°
+
+*
+
+Page
+
+ 
+
+© ~~ Own
+
+11
+12
+15
+18
+19
+22
+22
+26
+30
+33
+36
+36
+36
+41
+4
+Ih
+45
+BT
+47
+WT
+Lo
+ko
+51
+nN
+
+B
+
+fot
+
+LIST OF FIGURES
+
+Cutaway Drawing of MSRE Core and Core Vessel
+
+MSRE Control Rod Arrangement and Typical Fuel
+Channels
+
+Nineteen=-Regiocn Core Model for Equipoise 3A Calcu~
+lations. See Table 3 for explanation of letters.
+
+Radial Distribution of Slow Flux and Fuel Fission
+Density in the Plane of Maximum Slow Flux
+
+Axial Distribution of Slow Flux at a Position
+7 in. from Core Center Line
+
+Radial Distribution of Fluxes and Adjoint Fluxes
+in the Plane of Maximum Slow Flux
+
+Axial Distribution of Fluxes and Adjoint Fluxes
+at a Position 7 in. from Core Center Line
+
+Axial Distribution of Fuel Fission Density at a
+Position 7 in. from Core Center Line
+
+Relative Nuclear Importance of Fuel Temperature
+Changes as a Function of Position on an Axis
+located 7 in. from Core Center Line
+
+Relative Nuclear Importance of Graphite Tempera-
+ture Changes as a Function of Position on an Axis
+Located 7 in. from Core Center Line
+
+Relative Nuclear Importance of Fuel and Graphite
+Temperature Changes as a Function of Radial Position
+in Plane of Maximum Thermal Flux
+
+Channel Outlet Temperatures for MSRE and for a Uniform
+Core
+
+Radial Temperature Profiles in MSRE Core Near Midplane
+
+Axial Temperature Profiles in Hottest Channel of MSRE
+Core (7 in. from Core Center Line)
+
+10
+
+16
+
+20
+
+21
+
+23
+
+2k
+
+25
+
+27
+
+28
+
+29
+
+34
+ho
+
+3
+(rs
+
+CN
+
+LIST OF TABLES
+
+Fuel Channels in the MSRE
+
+Ccre Regions Used to Calculate Temperature
+Distributions in the IMSRE
+
+Nineteen-Regicn Core Model Used in Eguipoise
+Calculations for MSRE
+
+Flow Rates, Powers and Temperatures in Reactor
+Regions
+
+local Graphite~Fuel Temperature Differences in
+the MSRE
+
+Nuclear Mean and Bulk Mean Terperatures of Graphite
+
+Temperatures and Associated Pcwer Coefficients of
+Reactivity
+
+Page
+11
+
+1h
+
+7
+
+31
+
+LO
+Lh
+
+L6
+INTRODUCTION
+
+This report is concerned with the temperature distribution and =p-
+propriately averaged temperatures of the fuel and graphite in the MSRE
+reactor vessel during steady operation at power.
+
+The temperature distribution in the reactor is determined by the
+heat production and heat transfer. The heat production follows the over-
+all shape of the neutron flux, with the fraction generated in the grephite
+depending on how much fuel is soaked into the graphite. Fuel channels tend
+to be hottest near the axis of the core because of higher power densities
+there, but fuel velocities are equally important in determining fuel tem-
+peratures, and in the fuel channels near the axis of the MSRE core the
+velocity is over three times the average for the core. Variations in
+velocity also occur in the outer regions of the core. Graphite tempera-
+tures are locally higher than the fuel temperatures by an amount which
+varies with the power density and also depends on the factors which gov-
+ern the heat transfer into the flowing fuel.
+
+The mass of fuel in the reactor must be known for inventory calcu-
+lations, and this requires that the mean density of the fuel and the
+graphite be known. The bulk mean temperatures must therefore be calcu-
+lated.
+
+The temperature and density of the graphite and fuel affect the
+neutron leakage and absorption (or reactivity). The reactivity effect
+of a local change in temperature depends on where it is in the core,
+with the central regions being much more important. Useful quantities
+in reactivity analysis are the "nuclear mean" temperatures of the fuel
+and graphite, which are the result of weighting the local temperatures
+by the local nuclear importance.
+
+The power coefficient of reactivity is a measure of how much the
+control rod poisoning must be changed to obtain the desired temperature
+control as the power is changed. The power coefficient depends on what
+temperature is chosen to be controlled and on the relation of this tem-
+perature to the nuclear mean temperatures.
+
+This report describes the MSRE core in terms of the factors which
+
+govern the temperature distribution. It next presents the calculated
+temperature distributions and mean temperatures. The power coefficient
+of reactivity and its effect on operating plans are then discussed, An
+appendix sets forth the derivation of the necessary equations and the
+
+procedures used in the calculations.
+
+DESCRIPTION OF CORE
+
+Figure 1 is a cutaway drawing of the MSRE reactor vessel and core.
+Circulating fuel flows downward in the annulus between the reactor vessel
+and the core can into the lower head, up through the active region of the
+core and into the upper head.
+
+The major contribution to reactivity effects in the operating reactor
+comes from a central region, designated as the main portion of the core,
+where most of the nuclear power is produced. However, the other regions
+within the reactor vessel also contribute to these effects and these con-
+tributions must be included in the evaluation of the reactivity behavior.
+The main portion of the core is comprised, for the most part, of a regular
+array of close-packed, 2-in. square stringers with half-channels machined
+in each face to provide fuel passages. The regular pattern of fuel chan-
+nels is broken near the axis of the core, where control-rod thimbles and.
+graphite samples are located (see Fig. 2), and near the perimeter where
+the graphite stringers are cut to fit the core can. The lower ends of
+the vertical stringers are cylindrical and, except for the five stringers
+at the core axis, the ends fit into a graphite support structure. This
+structure consists of graphite bars laid in two horizontal layers at
+right angles to each other, with clearances for fuel flow. The center
+five stringers rest directly on the INOR-8 grid which supports the hori-
+zontal graphite structure. The main portion of the core includes the
+lower graphite support region. Regions at the top and bottom of the core
+where the ends of the stringers project into the heads as well as the
+neads themselves and the inlet annulus are regarded as peripheral regions.
+
+The fuel velocity in any passage changes with flow area as the fuel
+moves from the lower head, through the support structure, the channels,
+and the channel outlet region into the upper head. The velocities in most
+channels are nearly equal, with higher velocities near the axis and near
+
+the perimeter of the main portion of the core. For most passages, the
+UNCLASSIFIED
+ORNL-LR-DWG 61097
+
+AIR OUTLET AIR INLET
+
+  
+  
+ 
+ 
+  
+ 
+  
+  
+ 
+ 
+  
+  
+ 
+  
+  
+ 
+
+FLEXIBLE CONDUIT TO
+CONTROL ROD DRIVE (3)
+SMALL GRAPHITE SAMPLE ACCESS PORT
+
+CONTROL ROD COOLING AIR INLETS
+
+CONTROL ROD COOLING AIR OUTLETS
+
+COOLING JACKET AIR INLETS
+COOLING JACKET AIR QUTLETS
+
+ACCESS PORT COOLING JACKETS
+REACTOR ACCESS PORT
+
+FUEL OUTLET
+
+SMALL GRAPHITE SAMPLES
+
+CONTROL ROD THIMBLES (3) HOLD DOWN ROD
+
+LARGE GRAPHITE SAMPLES (5) a
+CORE CENTERING GRID Ps )
+
+FLOW DISTRIBUTOR
+
+ 
+
+GRAPHITE-MODERATOR
+
+STRINGER Rh
+\ 0
+
+36
+3
+28
+24
+20
+
+FUEL wer | :
+
+  
+  
+
+REACTOR CORE CAN
+6
+
+REACTOR VESSEL 2
+
+ 
+
+ANTI-SWIRL VANES
+
+   
+
+MODERATOR
+SUPPORT GRID
+
+Fig. 1. Cutaway Drawing of MSRE Core and Core Vessel
+10
+
+OH,
+/ a; \) \
+
+b= i 3 3!
+
+NN / GUIDE BAR
+
+ZN
+
+LF \\¢ REACTOR
+
+=k Or
+
+Q \\ 4
+WN :
+
+ 
+
+Fig. 2. MSRE Control Rod Arrangements and Typical Fuel Channels
+11
+
+greater part of the pressure drop occurs in the tortuous path through the
+horizontal supporting bars. This restriction is absent in the central
+passages, resulting in flows through these channels being much higher than
+the average.
+
+The variations in fuel-to=-graphite ratic and fuel velocity have a
+significant effect on the nuclear characteristics and the temperature
+distribution of the core. In the temperature analysis reported here, the
+differences in flow area and velocity in the entrance regions were neg-
+lected; 1i.e., the flow passages were assumed to extend from the top to the
+bottom of the main portion of the core without change. Radial variations
+were taken into account by dividing the core into concentric, cylindrical
+
+regions according to the fuel velocity and the fuel-to-graphite ratio.
+
+Fuel Channels
+
+The fuel channels are of several types. The number of each in the
+final core design is listed in Table 1. The full-sized channel is the
+typical channel shown in Fig. 2. The half-channels occur near the core
+perimeter where faces of normal graphite stringers are adjacent to flat-
+surfaced stringers. The fractional channels are half-channels extending
+to the edge of the core. The large annulus is the gap between the graphite
+and the core can. There are three annuli around the control-rod thimbles.
+The graphite specimens, which occupy only the upper half of one lattice
+space above a stringer of normal cross section, were treated as part of
+
+a full-length normal stringer.
+
+Table 1. Fuel Channels in the MSRE
+
+ 
+
+ 
+
+Channel Type Number
+Full-size 1120
+Half-size 28
+Fractional 16
+Large annulus 1
+
+Thimble annuli 3
+
+ 
+12
+
+Hydraulic Model
+
+Hydraulic studies by Kea1® on a fifth-scale model of the MSRE core
+showed that the axial velocity was a function of radial pesition, pri=-
+marily because of geometric factors at the core inlet. As a result of
+these studies, he divided the actual core channels intc several groups
+according to the velocity which he predicted would exist. This division
+was based on a total of 1064 channels with each of the control-rod-thimble
+annuli treated as four separate channels. He did not attempt to define
+precisely the radial boundaries of some of the regions in which the chan-
+nels would be found.
+
+Since the total number of fuel channels in the core is greater than
+the number assumed by Kedl, and since radial position is important in
+evaluating nuclear effects, it was necessary tc make a modified division
+of the core for the temperature analysis. For this purpose the core was
+divided into five concentric annular regions, as described below, based
+on the information obtained by Kedl. The fuel velocities assigned by
+
+Kedl to the various regions are used as the nominal velocities.
+
+Region 1
+
+This region consists of the central 6-in. square in the core, with
+all fuel channels adjacent to it, plus one-fourth of the srea of the
+graphite stringers which help form the adjacent channels. The total
+crcss-sectional area of Region 1 is 45.0 in.2 and the equivalent radius
+is 3.78 in. The fuel fraction (£) for the region is 0.256. This region
+contains the 16 channels assigned to it by Kedl plus the 8 channels which
+he classified as marginal. Because of the cylindrical geometry around
+the control-rod thimbles, six of the channels which were marginal in
+Kedl's model have the same flow velocity as the rest of the region. It
+was not considered worthwhile to provide a separate region for the two
+
+remaining channels. The nominal fluid velocity is 2.18 ft/sec.
+
+ 
+
+1g. S. Bettis et al., Internal Correspondence.
+Region 2
+
+This region covers most of the core and contains only normal, full-
+sized fuel channels. All the fuel channels which were not assigned else-
+where were assigned to this region. On this basis, Region 2 has 940 fuel
+channels, a total cross-sectional area of 1880 in.2, a fuel fraction of
+0.224, and equivalent outer radius of 24.76 in. (the inner radius is equal
+to the outer radius of Region 1), end a nominal fluid velocity of 0.66
+
+ft/sec.
+
+Region 3
+This region contains 108 full-sized fuel channels as assigned to it
+oD
+by Kedl. The total cross-sectional area is 216 in.“; the fuel fraction
+
+is 0.224; the effective outer radius is 26.10 in.; and the nominal fluid
+
+velocity is 1.63 ft/sec.
+
+Region L
+
+This region was arbitrarily placed outside Region 3 even though it
+contains marginal channels from both sides of the region. All the half-
+channels and fractional half-channels were added to the 60 full-sized
+channels assigned to the region by Kedl. This gives the equivalent of
+78 full-sized channels. All of the remaining graphite cross-sectional
+area was also assigned to this region. As a result, the total cross-
+sectional area is 245.9 in? the fuel fraction is 0.142; the effective
+
+outer radius is 27.58 in., and the nominal fluid velocity is 0.90 ft/sec.
+
+Region 5
+
+The salt annulus between the graphite and the core can was treated
+as a separate region. The total area is 29.55 in.%; the fuel fraction
+is 1.0; the outer radius is 27.75 in. (the inner radius of the core can),
+
+and the nominal fluid velocity is 0.29 ft/sec.
+
+Effective Velocities
+
+The nominal fluid velocities and flow areas listed above result in
+a total flow rate through the core of 1315 gpm at 1200°F. All the veloci-
+ties were reduced proportionately to give a total flow of 1200 gpm. Table
+
+2 lists the effective fluid velocities and Reynolds numbers for the various
+
+ 
+
+regions along with other factors which describe the regions.
+Table 2. Core Regions Used to Calculate Temperature Distributions in the MSRE
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Number of Total Crosse Effective Effective Flow
+Full-sized sechional Area Fuel Outer Radius Fluid Velocity Reynolds Rate
+Region Fuel Channels {an.2) BN Fraction | (in.) (ft/sec) Number (gpm)
+
+1 12% 45.00 0.256 3.78 1.99 3150 72
+
+2 Ilo 1880. 0.224 24.76 0.60 945 T91
+
+3 108 216.0 0.224 26.10 1.49 2360 22k
+
+L 78 245.9 0.142 27.58 0.82 1300 89
+
+5 o** 29.55 1.000 27.75 0.26 421 2h
+1200
+
+ 
+
+*
+Plus 3 control-rod-thimble annuli.
+
+*%
+Annulus between graphite and core shell.
+
+iT
+15
+
+Neutronic Model
+
+The neutronic calculations upon which the temperature distributions
+are based were made with Equipoise 34,23 a 2-group, 2-dimensional, multi-
+region neutron diffusion program for the IBM-T090 computer. Because of
+the limitation to two dimensions and other limitations on the problen
+size, the reactor model used for this calculation differed somewhat from
+tlie hydraulic model.
+
+The entire reactor, including the reactor vessel, was represented in
+cylindrical (r,z) geometry. Three basic materials, fuel salt, graphite
+and INOR were used in the model. A total of 19 cylindrical regions with
+various proportions of the basic materials was used.
+
+Figure 3 is a vertical half-section through the model showing the
+relative size and location of the various regions. The region composi-
+tions, in terms of volume fractions of the basic materials, are summa-
+rized in Table 3.
+
+Regions J, L, M, and N comprise the main portion of the core. This
+portion contains 98.7% of the graphite and produces 87% of the total power.
+The central region (L) has the same fuel and graphite fractions as the
+central region of the hydraulic model. However, the outer boundary of the
+region is different because of the control-rod-thimble representation.
+Since it was necessary to represent the thimbles as a single hollow cyl-
+inder (region K) in this geometry, a can containing the same amount of
+INOR as the three-rod thimbles in the reactor and of the same thickness
+was used. This established the outer radius of the INOR cylinder at 3 in.
+which also is close to the radius of the pitch circle for the three thim-
+bles in the MSRE. The central fuel region was allowed to extend only to
+the inside radius of the rod thimble. The portion of the core outside
+the rod thimble and above the horizontal graphite support region was
+
+homogenized into one composition (regions J and M). The graphite-fuel
+
+ 
+
+2p, B. Fowler and M. L. Tobias, EQUIPOISE-3: A Two-Dimensional, Two=-
+Group Neutron Diffusion Code for the IBM-7090 Computer, ORNL~3199 (Feb. 7,
+1962).
+
+30. W. Nestor, Jr., FQUIPOISE-3A, ORNL-3199 Addendum (June 6, 1962).
+16
+
+Unclassified
+ORNL-LR-DWG. T1642
+
+ 
+
+  
+ 
+ 
+
+—
+
+Fig. 3. Ninetceo
+
+Be - Godel Zor Eyuipolise Calculations.
+See Table 3 for exp :
+ 
+
+ 
+
+ 
+
+Table 3. Nineteen-Region Core Model Used in EQUIPOISE Calculations for MSRE
+radius Z Composition
+(in.) in.) (Volume percent) Region
+Region inner outer bottom top fuel graphite INOR Represented
+
+A 0 29.56 Th.92 76.04 0 0 100 Vessel top
+
+B 29.00 29.56 - 9.14 Th .92 0 0 100 Vessel sides
+
+Cc 0 29.56 -10.26 - 9.14 0 0 100 Vessel bottom
+
+D 3.00 29.00 67.47 Th.92 100 0 0 Upper head
+
+E 3.00 28.00 66.22 67.47 93.7 3.5 2.8
+
+F 28.00 29.00 0 67.47 100 0 0 Downcomer
+
+G 3.00 28.00 65.53 66.22 9k .6 5.4 0
+
+H 3.00 27-75 64.59 65.53 63.3 36.5 0.2
+
+I 27.75 28.00 0 65.53 0 0 100 Core can
+
+J 3.00 27.75 5.50 6k .59 22.5 77.5 0 Core
+
+K 2.94 3.00 5.50 Th.92 0 0 100 Simulated
+thimbles
+
+L 0 2.94 2.00 64.59 25.6 Th .4 0 Central
+region
+
+M 2.94 27.75 2.00 5.50 22.5 77-5 0 Core
+
+N 0 27.75 0 2.00 23.7 76.3 0 Horizontal
+stringers
+
+0 0 29.00 - 1.41 0 66.9 15.3 17.8
+
+P 0 29.00 - 9.14 -1.41 90.8 0 9.2 Bottom head
+
+Q 0 2.94 66.22 4.92 100 0 0
+
+R 0 2.94 65.53 66.22 89.9 10.1 0
+
+S 0 2.94 64.59 65.53 43.8 56.2 0
+
+ 
+
+LT
+18
+
+mixture containing the horizontal graphite bars at the core inlet was
+treated as a separate region (N).
+
+The main part of the core, as described in the preceding paragraph,
+
+a
+=
+
+dees not include the lower ends cof the graphite stringers, which extend
+beyond the horizontal graphite bars, cr the pointed tops of the stringers.
+The bottom ends were included in a single regicn (0; and the mixture at
+the hop of the core was approximated hy 5 regions ‘BE, G, H, R, and 8).
+
+The thickness of the material ccntained in the upper and lower heads
+
+{regions ©, Q, and P) was adjusted so that the amount of fuel salt was
+
+jy
+r
+
+2quel To the amount ccntained in the reactor heads. As a result of this
+Adjustment the over-all height of the neutronic model of the reactor is
+net exsetly the same as the physical height. The upper and lower heads
+themselves (regions A and C) were flattened out and represented as metal
+discs cof the nominal thickness of the reactcr material.
+
+In the radial direction outside the main par of the core, the core
+
+can (region 1), the fuel inlet annulus (regics F) and the reactor vessel
+
+«region B) were included with %he actual physical dimensicns of the re-
+actor applied to them.
+
+The materials withir each separate regicn were treated as homogeneous
+mixtures in the calculations. As a result, %the calculations give only
+
+she over-all shape of the flux in the regicas where inhomogeneity exists
+
+or
+<
+the presence cf two cr more of the hasic mgterials.
+
+KEUTRONIC CALCULATIONS
+
+Tre first step in the nsutrenic caleuleblions was the establishment
+of the fuel-sall composition required for criticality. A carrier salt
+coriaining TC mel % LiF, £5% BeF, and 5% ZrF4 was assumed. The LiF and
+ZrF4 concentrations were held constant and the BeFs concentration was
+
+reduced as hz concentraticn of UFy4 was increased in the criticality
+
+2 2
+search. The uranium vas assumed to consist of 93% U 235 5% 1230, 1% U 34
+236
+
+and 1% U » This isobepic ccmposition is typical of the material ex-
+
+[]
+
+rected to be avsiiable fcr the reactor. The Lith ium to be used in the
+
+on ct
+
+marmfaciure of the fue: salt contains 73 ppm Li”. This value was used in
+the calculations. No chemizal impurities were considered in the fuel mix-
+
+ture. All of the calculations were made for an iscthermal system at 1200°F.
+The criticality search was made with MODRIC, a one-dimensicnal, multi-
+group, multiregion neutron diffusior program. This established the criti-
+cal concentration of UF), at 0.15 mol %, leaving 2h 85% BeF,. The sare
+program was used for radial and axial traverses cf the mcdel used for the
+Fquipcise 3A calculation to provide the 2-group constants fer that program.
+The spatial distributions of the fluxes and fuel power density were cb-
+tained directly from the results of the Fguipcise 3A calculation. The
+same fluxes were used tc evaluate the nuclear importance functions fer
+
+temperature changes.
+
+Flux Distributions
+
+The radial distribution of the slow neutron flux calculated for the
+MSRE near the midplane is shown in Fig. 4. This plane contains the maxi-
+mun value of the flux and is 35 in. above the bottom of the main part of
+the core. The distortion of the flux produced by abscrptions in the sinu-
+lated control-rod thimble, 3 in. from the axial centerline, is readily
+apparent. Because of the magnitude of the distortion this simplified
+representation of the controi-rod thimbles is probably not adequate for an
+accurate description of the slow flux in the immediate vicinity of the
+thimbles. However, the over-all distribution is probably reasonably
+accurate. The distortion of the flux at the center of the reactor alsc
+precludes the use of a simple analytic expression tc describe the radial
+distribution.
+
+Figure 5 shows the calculated axial distribution of the slow flix
+along a line which passes through the maximum value, 7 in. from the verti-
+cal centerline. The reference plane for measurements in the axial direc-
+tion is the bottom of the horizontal array of graphite bars at the lower
+end of the main portion of the ccre. Thus, the outside of the lower heed
+is at -10.26 in.; the top of the main portion of the core is at 64.59 ir.;
+and the outside of the upper head is at 76.04. The shape of the axial
+distribution in the main portion is closely approximated by a sine curve
+extending beyond it at both ends. The equation of the sine approximetion
+
+shown in Fig. 5 is
+UNCLASSIFIED
+
+ORNL—-LR-DWG 75777
+
+0.9
+
+08
+
+0.7
+
+0.6
+
+0.5
+
+FRACTION OF MAX. VALUE
+
+0.4
+
+0.3
+
+0.2
+
+0.1
+
+ 
+
+0 5 10 15 20 25 30
+
+RADIUS, in.
+
+Fig. 4. Radial Distribution of Slow Flux and Fuel Fission Density
+in the Plane of Maximum Slow Flux
+FRACTION OF MAXIMUM VALUE
+
+-10 0 10 20 30 40 50 60
+Z,in
+
+Fig. 5. Axial Distribution of Slow Flux at a Position 7 in.
+Core Center Line
+
+70
+
+from
+
+UNCLASSIFIED
+
+ORNL-LR-DWG 75823
+
+ 
+
+80
+
+IN
+e2
+
+Le - sin A (z+ 4.36)
+
+m
+
+with the linear dimension given in inches.
+The relation of the slow neutrcn flux to the other fluxes (fast,
+fast adjoint and slow adjcint) is shown in Figs. 6 and 7. These figures
+
+rresent the absolute values for a reacter power level of 10 Mw.
+
+Power Density Distribution
+
+A function that is of greater interest than the flux distributicn,
+from the standpoint of its effect on the reactor temperatures, is the
+distribution of fission power density in the fuel. For the fuel compo-
+sition considered here, only 0.87 of the total fissions are induced by
+thermal neutrcns; the fraction of thermal fissions in the main part of
+the core is 0.90. In spite of the relatively large fraction of nonthermal
+fissions, the over-all distribution of fuel fission density is very simi-
+lar to the slow-flux distribution. The radial distribution is shown on
+Fig. 4 for a direct comparison with the thermal flux. The axial fission
+density distribution (see Fig. 8) was fitted with the same analytic ex-
+pression used for the axial slow flux. The quality of the fit is about
+
+the same for both functions.
+
+Nuclear Importance Functions for Temperature
+
+The effects urcn reactivity of local temperature changes in fuel and
+graphite have been derived from first-order two-group perturbation theory
+and are reported elsewhere.” This analysis produced weighting functions
+or nuclear importance functions, G(r,z) for the local fuel and graphite
+temperatures. The weighted average temperatures of the fuel and graphite
+obtained by the use of these functions may be used with the appropriate
+temperature ccefficients of reactivity to calculate the reactivity change
+
+associated with any change in temperature distribution.
+
+ 
+
+bg. E. Prince and J. R. Engel, Temperature and Reactivity Coefficient
+Averaging in the MSRE, ORNL TM-379 {October 15, 1962).
+23
+
+UNCLASSIFIED
+
+ORNL-LR-DWG 73614
+
+ 
+
+(x10'3)
+
+ 
+
+~_
+
+N
+
+ 
+
+I
+
+FAST FLUX
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+©
+a
+«12 _
+£
+L \
+w
+=
+°
+5S \
+2 10
+z
+=
+Qo
+[SH
+os ~ SLOW FLUX
+2 — \
+SQ = — ~~.
+« SLOW ADJOINTSS NC |
+Oo 6 NN
+= ge —— Se ——
+2 ==~-] N
+yy
+-—
+
+wl “Sao NN
+ov FAST ADJOINT “Sal
+2 4 Sel NL
+= ~~. N
+oD
+-
+[FY
+
+2
+
+0
+
+0 5 10 15 20 25
+RADIUS (in.)
+
+Fig. 6. Radial Distribution of Fluxes and Adjoint Fluxes in the
+
+Plane of Maximum Slow Flux
+
+ 
+
+30
+24
+
+UNCLASSIFIED
+ORNL-LR-DWG 73612
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+  
+
+ 
+
+ 
+
+ 
+
+   
+
+(x10'9)
+14 — L . —
+| | FAST FLUX
+_
+2 . —] |
+|
+|
+10
+|
+SLOW FLUX
+8 - —
+-—
+
+ 
+
+~ sLow ADVOINT SQ
+|
+
+   
+
+I
+- a,
+- ~
+
+ 
+
+ 
+ 
+
+-
+| ~
+- ~ ~
+
+| FAST ADJOINT™
+|
+
+1
+|
+|
+
+ 
+ 
+
+ 
+
+   
+
+ 
+
+   
+
+FLUX FOR REACTOR POWER OF {0 Mw {neutrons/cm@ «sec)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+10 20 30 40
+AXIAL POSITION (in)
+
+Fig. 7. AxZal Distribution of Fluxes and Adjoint Fluxes at a
+Position 7 in. from Core Center Line
+FRACTION OF MAXIMUM VALUE
+
+Oo
+o
+
+o
+o
+
+o
+>
+
+Oo
+NY)
+
+-10 0 10 20 30 40 50 60 70
+Z,in.
+
+Fig. 8. Axial Distribution of Fuel Fission Density at a Position
+7 in. from Core Center Line
+
+UNCLASSIFIED
+
+ORNL~-LR-DWG 75824
+
+ 
+
+80
+
+GZ
+The temperature weighting functions are evaluated in terms of the
+* * * *
+
+four flux products: ¢, ?.5 g, bs g, ¢, and 7, g,- The coefficients
+applied to the varicus terms depend on the material being considered, its
+lecal volume fraction and the manner in which temperature affects its
+physical and nuclear properties. Since the weighting functions are evalu-
+ated separately for fuel and graphite, a particular weighting function
+exists cnly in those regions where the material is represented.
+
+Figures 9 and 10 show the axial variation in the weighting functions
+fer fuel and graphite at the radial position of the maximum fuel power
+censity. For beth materials the axial variation in the main part of the
+
+core is very closely approximated by a sine~squared. The function:
+
+sin? A (z + 4.72)
+
+is plotted on each cf the figures for comparison. The wide variations at
+the ends result primarily from the drastic changes in volume fraction
+and the arparent discontinuities are the result cof dividing the reactor
+into discrete regions for the Equipcise 3A calculation.
+
+The radial temperature weighting functicns for both fuel and graphite
+near the core midplane are shcwn in Fig. 11. Because of the peculiar shape
+cf the curves; no attempt was made tc fit analytic expressions to these
+
+functions.
+
+FUEL TEMPERATURES
+
+The fuel temperature distribution in the reactor has an over-all shape
+which is determined by the shape cf the power density and the fuel flow
+pattern. Within the main part cf the core, where the fuel flows in dis-
+crete channels. temperature variations across each individual channel are
+superimpczed on this cver-all shape. These local effects will be touched
+cn later (page 37) in the section cn graphite-fuel temperature differences.
+The present secticn deals with the over-all shape cf the fuel temperature
+distribution and average temperatures. These were calculated for a reactor
+power level of 1C Mw with inlet and outlet temperatures at 1175 and 1225°F,
+
+respectively. The total fuel flow rate was 1200 gpm.
+27
+
+UNCLASSIFIED
+ORNL-LR-DWG 73618
+
+ 
+
+08 —
+
+0.6
+
+| |
+EQUIPOISE 3A RESULT
+
+~
+
+ 
+
+sin2 [7/79.4 (z+ 4.71]
+
+/
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.4
+
+0.2
+
+/
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+RELATIVE NUCLEAR IMPORTANCE
+
+-0.2
+
+je———— MAIN PORTION
+
+OF COR
+
+ 
+
+la
+|
+
+ 
+
+ 
+
+-0.4
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+-0.6
+-20
+
+Fig. 9.
+
+Line
+
+Zz, AXIAL POSITION
+
+30
+
+40
+(in)
+
+60 70 80
+
+Relative Nuclear Importance of Fuel Temperature Changes
+as a Function of Position on an Axis Located 7 in. from Core Center
+IMPORTANCE
+
+RELATIVE NUCLEAR
+
+28
+
+UNCLASSIFIED
+ORNL-LR-DWG 73619
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1.0
+— EQUIPOISE 3A RESULT
+——sin2[T/20.4 (24 4.71]
+0.8
+0.6 /
+04 / \
+0.2 / ee A
+N i
+«——— MAIN PORTION OF CORE ——m—————- i.
+-0.2 —
+—04 I :
+-10 0 10 20 30 40 50 60 70 80
+
+Zz, AXIAL POSITION (in)
+
+Fig. 10. Relative Nuclear Importance of Graphite Temperature
+Changes as a Function of Position on an Axis Located 7 in. from Core
+Center Line
+RELATIVE NUCLEAR IMPORTANCE
+
+1.0
+
+0.9
+
+0.8
+
+0.7
+
+0.6
+
+0.5
+
+0.4
+
+o
+w
+
+0.2
+
+0.1
+
+29
+
+UNCLASSIFIED
+
+ORNL-LR-DWG 73617
+
+ 
+
+ 
+
+A] a
+
+ 
+
+ 
+
+\
+GRAPHITE \
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+N\
+
+N\
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+NL
+
+ 
+
+ 
+
+ 
+
+Fig. 11.
+
+10
+
+Maximum Thermal Flux
+
+15
+
+RADIUS (in.)
+
+20
+
+25
+
+Relative Nuclear Importance of Fuel and Graphite
+Temperature Changes as a Function of Radial Position in Plane of
+
+30
+30
+
+Over-all Temperature Distribution
+
+In describing the over-all fuel temperature distribution it is con-
+venient to regard the reactor as corsisting of a main core, in which most
+cf the nuclear heat is produced, and a number of peripheral regions which,
+tegether, contribute only a small amount to the total power level. Of the
+19 reactcr regicns used for the neutronic ‘calculations (see Fig. 3), 1k
+contain fuel and 10 of these were regarded as peripheral regions. The
+four remaining fuel-bearing regions (J, L, M, and N) were combined to
+represent the main part of the core. On this basis, the main portion ex-
+tends radially tc the inside cf the core shell and axially from the bottom
+of the horizontal graphite bars to the top of the uniform fuel channels.
+This portion accounts for 87% of the total reactor power. The volute on
+the reactor inlet was neglected in the temperature calculations because
+
+of its physical separation from the rest of the reactor.
+
+Peripheral Regions
+
+Since only 13% cf the reactor power is produced in the peripheral
+regions, the temperature varistions within them are small and the details
+cf the temperature distributions within these regions were not calculated.
+The mean temperature rise for each region was calculated from the fraction
+of the total power produced in the region and the fraction of the tectal
+flow rate through it. The inlet temperature to each region was assumed
+constant at the mixed mean cutlet of the preceding region. An approximate
+bulc-mean temperature, midway between the region inlet and outlet tempera-
+tures, was assigned to each peripheral region. Table 4 summarizes the
+
+flow rates, powers and fuel temperatures in the various reactor regions.
+
+Mein Core
+
+The wide variaticns in fuel temperature, both radially and axially,
+in the main part of the core necessitate a more detailed description of
+the temperature distribution.
+
+The average temperature of the fuel in a channel at any axial position
+is equal to the channel inlet temperature plus a rise proportional to the
+sum of the heat generated in the fuel and that transferred to it from the
+adjacent graphite as the fuel moves from the channel inlet to the specified
+
+peint. The heat produced in the fuel fellows very closely the radial and
+31
+
+Table 4. Flow Rates, Powers and Temperatures
+in Reactor Regions
+
+ 
+
+ 
+
+a Flow Power Temp . Rise” Av. Temp .©
+Region (gpm) (kw) (°F) (°F)
+D 1157 45h 2.k 1224.7
+E 1157 151 0.8 1223.1
+F 1200 251 1.3 1175.6
+G 1157 105 0.5 1222.4
+H 1157 11k 0.6 1221.9
+J 1157 8287 43 a
+L 43 159 22 a
+M 1157 192 0 a
+N 1200 68 3 a
+0 1200 69 0.3 1177.1
+P 1200 134 0.7 1176.6
+Q 43 12 1.7 1200.9
+R 43 2 0.3 1199,9
+Ss 43 2 0.2 1199.7
+
+ 
+
+8Regions not containing fuel are excluded.
+Pat 10 Mw
+
+“With T,, = 1175°F, T_ , = 1225°F
+
+out
+
+Actual temperature distribution calculated for this
+region. See text.
+
+axial variation of the fission power density. Since the heat production
+in the graphite is small, no great error is introduced by assigning the
+same spatial distribution to this term. Then, if axial heat transfer in
+the graphite is neglected, the net rate of heat addition to the fuel has
+the shape of the fuel power density. The fuel temperature rise is in-
+
+versely proportional to the volumetric heat capacity and velocity. Thus
+
+TI. (r,z) = Te (z = 0) + JE GC) = P.(r,z) dz , (1)
+32
+
+where Qn is an equivalent specific power which includes the heat added to
+the fuel from the graphite. The channel inlet temperature, T(z =0), is
+assumed constant for all channels and its value is greater than the reactor
+inlet temperature because of the peripheral regions through which the fuel
+passes before it reaches the inlet to the main part of the core. The volu-
+metric heat capacity, (eC) is assumed constant and only radial variations
+in the fuel velocity, u, are considered. It is further assumed that the
+
+radial and axial variations in the power-density distribution are separable:
+
+P(r,z) = A(r) B{(z) . (2)
+
+Then
+
+Q,.)
+T,(r,z) = Te(z =0) + == ots - 3 J B(z) dz. (3)
+
+If the sine approximation for the axial variation of the power density
+
+(Fig. 8) is substituted for B(z), equation (3) becomes
+
+To(r,2) = To(z =0) + AME {eos a - cos o| or 5 (z + kh. 36)| fe (4)
+
+In this expression, X is a collection of constants,
+
+ 
+
+(Qo)
+17.7 ein «
+R= 55 worn 3
+pf
+and
+a = =z Z (0 + 4.36) (6)
+
+The limits within which (4) is applicable are the lower and upper
+boundaries of the main part of the core, namely, 0 < z < 64.6 in. It is
+clear from this that the shape of the axial temperature distribution in
+the fuel in any channel is proportional to the central portion of the
+curve [1 - cos B]. (The axial distribution for the hottest channel in the
+MSRE is shown in Fig. 1k, where it is used to provide a reference for the
+
+axial temperature distribution in the graphite.)
+wa)
+AD
+
+The radial distribution of the fuel temperature at the outlet of the
+channels is shown in Fig. 12 for the reference conditions at 10 Mw. This
+distribution includes the effects of the distorted power-density distri-
+bution (Fig. 4) and the radial variations in fuel velocity. At the refer-
+ence conditions the main-core inlet temperature is 1177.3°F and the mixed
+mean temperature leaving that region is 1220.8°F. The additional heat re-
+quired to raise the reactor outlet temperature to 122%°F is produced in
+the peripheral regions above the main part of the core. Also shown on
+Fig. 12 for comparison is the cutlet temperature distribution for an ideal-
+ized core with a uniform fuel fraction and uniform fuel velocity. For this
+case the radial power distribution was assumed to follow the Bessel func-
+tion, J (2.4 r/R), which vanished at the inside of the core shell. The
+distribution was normalized to the same inlet and mixed-mean outlet tem-
+
+peratures that were calculated for the main portion of the MSRE core.
+
+Nuclear Mean Temperature
+
+At zero power the fuel temperature is essentially constant throughout
+the reactor and, at power it assumes the distribution discussed in the pre-
+ceding section. The nuclear mean temperature of the fuel is defined as
+the uniform fuel temperature which would produce the same reactivity change
+from the zero-power condition as that produced by the actual fuel tempera-
+ture distribution.
+
+The nuclear average temperature of the fuel is obtained by weighting
+the local temperatures by the local nuclear importance for a fuel texpera-
+ture change. The importance function, G(r,z), includes the effect of fuel
+volume fraction as well as all nuclear effects (see p. 22 et seq. ). There-
+fore
+
+« / To(r,z) G(r,z) av
+Te = (7)
+
+J clr,z) av
+-
+
+ 
+
+In carrying out the indicated integration for the MSRE, both the numerator
+and denominator of (7) were split irto 11 terms, one for the main part of
+the core and one for each of the fuel-bearing peripheral regions. For the
+
+. . - . : .
+peripheral regions, the fuel temperature in each region was assumed constant
+TEMPERATURE, °F
+
+Core
+
+1290
+
+1275
+
+1250
+
+1225
+
+1200
+
+1175
+
+Fig.
+
+1z.
+
+ 
+
+UNCLASSIFIED
+
+ORNL -LR-DWG 75775
+
+RADIUS, in.
+
+Channel Qutlet Temperatures for MSRE and for a Uniform
+(83)
+\Ji
+
+at the average temperature (see Table 4). The volume integrals of the
+weighting functions were obtained by combining volume integrals of the
+flux products, produced by the Equipoise 3A calculation, with coefficients
+derived from the perturbation calculations. For the main part of the core,
+the temperatures and temperature weighting functions were combined and
+integrated analytically (in the axial direction) and numerically (in the
+radial direction) to produce the required terms. The net result for the
+fuel in the MSRE reactor vessel is
+Te = Typ + 0.762 (Tout - Tin) @)
+
+A similar analysis was performed for a uniform cylindrical reactor
+with uniform flow. In this case the fuel power density was assigned a
+sine distribution in the axial direction and a Iq Bessel function for
+the radial distribution. Both functions were allowed to vanish at the
+reactor boundaries and no peripheral regions were considered. A tempera-
+ture weighting function equal to the product of the fuel fraction and the
+square of the thermal flux (or power density since both have the same shape
+
+in the ideal case) was used. For this case:
+
+Tp = T,, +0838 (1, -7T ) (9)
+The principal reason for the lower nuclear average fuel temperature
+in the MSRE is the large volume of fuel in the peripheral regions at the
+inlet to the main part of the core and the high statistical weight assigned
+to these regions because of the high fuel fraction. The existence of the
+small, high-velocity, low-temperature region around the axis of the core
+has little effect on the nuclear average temperature. Actually this
+"short-circuit" through the core causes a slight increase in the nuclear
+average temperature. There is lower flow and larger temperature rise in
+the bulk of the reactor than if the flow were uniform, and this effect
+
+outweighs the lower temperatures in the small region at the center.
+
+ 
+
+# See appendix for derivation of equations for the simple case.
+36
+
+Bulk Mean Temperature
+
+The bulk mean fuel temperature is obtained by integrating the local,
+unweighted temperature over the volume of the reactor. As in the case
+of the nuclear mean temperature, the large velume cf low-temperature fuel
+at the inlet to the main part of the MSRE ccre makes the bulk mean tempera-
+
+ture for the MSRE lower than for a simple, uniform core
+
+MBRE: T
+
+Ti, t o.k6(T_ , - T,,) (10)
+
+Uniform Core: T
+
+To, + 1/2 (To - Ti) (11)
+
+GRAPHITE TEMPERATURES
+
+During steady-state power operation, the mean temperature in any
+graphite stringer is higker than the mean temperature of the fuel in the
+adjacent channels. As a result, both the nuclear mean and the bulk mean
+temperatures of the graphite are higher than the corresponding mean tem-
+peratures in the fuel.
+
+In general, it is convenient to express the graphite temperature in
+terms of the fuel temperature and the difference between the graphite and
+fuel temperatures. That is:
+
+Tg = T, + AT , (12)
+
+where AT is a positive number at steady-state.
+
+Nearly all of the graphite in the MSRE (98.7%) is contained in the
+regions which are combined to form the main part of the core. Since the
+remainder would have only a very smell effect on the system; only the main
+part of the core is treated in evaluating graphite temperatures and dis=-
+
+tributions.
+
+Iocal Temperature Differences
+
+In order to evaluate the local graphite-fuel temperature difference,
+it is necessary to consider the core in terms of a number of unit cells,
+
+each containing graphite and fuel and extending the length of the core.
+37
+
+In calculating the local temperature distributions, it 1s assumed that no
+heat is conducted in the axial direction and that the heat generation is
+uniform in the radial direction over the unit cells. The temperature
+distributions within the unit cells are superimposed on the c¢ver-all re-
+actor temperature distributions. The difference between the mean graphite
+and fuel temperatures within an individual cell can, in general; be troken
+down into three parts:
+
+1. the Poppendiek effect, which causes the fuel near the wall
+of a channel tc be hotter than the mean for the channel;
+
+2. the temperature drop across the graphite-fuel interface,
+resulting from heat flow out of the graphite; and
+
+3. the difference between the mean temperature in a graphite
+stringer and the temperature at the interface, which is
+necessary to conduct heat produced in the graphite to the
+surface.
+
+These parts are treated separately in the following paragraphs.
+
+Poppendiek Effect
+
+As may be seen from the Reynolds numbers in Table 2 (page 14), the
+fluid flow in most of the core is clearly in the laminar regime and that
+in the remainder of the core is in the transition range where flow may
+be either laminar or turbulent. In this analysis, the flow in the entire
+core is assumed to be laminar to provide conservatively pessimistic esti-
+mates of the temperature effects.
+
+Equations are available for directly computing the Poppendiek effect
+for laminar flow in circular channels or between infinite s1abs; 0 (i.e.,
+the rise in temperature of fluid near the wall associated with interral
+heat generation and relatively low fluid flow in the boundary layer).
+Since the fuel channels in the MSRE are neither circular nor infinite in
+two dimensions, the true Poppendiek effect will be between the results
+
+predicted by these two approaches. The method used here was to assume
+
+ 
+
+2H. F. Poppendiek and L. D. Palmer, Forced Convection Heat Transfer
+in Pipes with Volume Heat Sources Within the Fluids, ORNL-1395 (Nov. 5,
+
+1953).
+H. F. Poppendiek and L. D. Palmer, Forced Convection Heat Transfer
+
+Between Parallel Plates and in Annuli with Volume Heat Sources Within the
+TY Lr ATINTT ArT drs. 7 NAc
+FLUlAS, UnkL=1(UL \May Li, LY 44 ) .
+38
+
+circular channels with a diameter such that the channel flow area is equal
+to the actual channel area. This slightly overestimates the effect.
+For circular channels with laminar flow and heat transfer from
+
+graphite to fuel, the following equation applies:
+
+ 
+
+ 
+
+5 .
+P r 2 ay wt | 3)
+
+This equation is strictly applicable only if the power density and heat
+flux are uniform along the channel and the length of the channel is in-
+finite. However, it is applied here to a finite channel in which the
+power density and heat flux vary along the length. It is assumed that
+the temperature profile in the fluid instantaneously assumes the shape
+corresponding to the parameters at each elevation. This probably does
+not introduce much error, because the heat generation varies continuously
+and not very drastically along the channel. If it is further assumed
+that the heat generation terms in the fuel and in the graphite have the
+same over-all spatial distribution, the Poppendiek effect is directly
+proportional to the fuel power density. This simple proportionality
+results from the fact that, in the absence of axial heat conduction in
+the graphite, the rate of heat transfer from graphite to fuel, qa, is
+
+directly proportional to the graphite specific power.
+
+Temperature Drop in Fluid Film
+
+Since the Poppendiek effect in the core is calculated for laminar
+flow, the temperature drop through the fluid immediately adjacent to the
+chennel wall is included in this effect. Therefore, a separate calculation
+
+of film temperature drop is not required.
+
+Temperature Distribution in Graphite Stringers
+
+The difference between the mean temperature in a graphite stringer
+and the temperature at the channel wall cannot be calculated analytically
+for the geometry in the MSRE. Therefore, two approximations were calcu-
+lated as upper and lower limits and the effect in the MSRE was assigned a
+
+value between them.
+One approximation to the graphite stringer is a cylinder whose cross-
+sectional area is equal to that of the more complex shape. This leads to
+2 cylinder with a radius of 0.9935 in. and a surface-to-volume ratio of
+2.01 in.”t. If only the fuel-channel surface (the surface through which
+2ll heat must be transferred from the graphite) of the actual graphite
+stringer is considered, the surface-to-volume ratio is 1.84 in."t. There-
+fore, the cylinder approximation underestimates the mean graphite tenpera-
+ture. The second approximation is to consider the stringer as a slab,
+cooled on two sides, with a half-thickness of 0.8 in. (the distance from
+the stringer center line to the edge of the fuel channel). This approxi-
+mation has a surface-to-volume ratic of 1.25 in.~t which causes an over-
+estimate of the mean graphite temperature. The value assigned to the
+difference between the mean graphite temperature and the channel-wall
+temperature was obtained by a linear interpolation between the two ap-
+rroximations on the basis of surface-to-volume ratio.
+
+For the cylindrical geometry with a radially uniform heat source in
+the stringer, the difference between the average temperature in the stringer
+
+and the channel wall temperature is given by:
+
+2
+, 1 Pp ro
+JR J £5 (14)
+g Ww 8 k
+g
+For the slab approximation:
+LF 2
+T, “T= § £ (15)
+
+Application of unit cell dimensions for the MSRE and linear interpolation
+
+between the two approximations leads to
+
+1 _ a Fe
+I, -T, = 9.97 x10 i . (16)
+
+Net Local Temperature Difference
+The two temperature effects described by Equations (13) and (16) mey
+be combined to give the local mean temperature difference between graphite
+
+and fuel.
+Lo
+
+ 
+
+2 aq, .. -
+N ?, pr 2 11 (x + PT, ) -8
+AT = 9.97 x 10 k, + E, IS . (17)
+
+ 
+
+Since both terms in this equation are directly proportional to the power
+density, the local temperature difference may also be expressed in terms
+of a maximum value and the local, relative power density.
+
+AT (r, z) = a1 BE z) (18)
+
+P
+m
+
+Maximum Local Values
+
+ 
+
+The maximum values of the local graphite-fuel temperature difference
+may be obtained by applying the appropriate specific powers to Equation
+(a7).” Because of the dependence on specific power, the temperature 4if-
+ferences are strongly influenced by the degree of fuel permeation of the
+graphite which affects primarily the graphite power density. The effects
+were examined for 0, 0.5, and 2.0% of the graphite volume occupied by fuel.
+In all cases it was assumed that the fuel in the graphite was uniformly
+distributed in the stringers and thet the specific powers were uniform in
+the transverse direction for individual graphite stringers and fuel chan-
+nels. Table 5 shows the maximum graphite-fuel tempersture differences
+
+for the three degrees of fuel permeation, at the 10-Mw reference condition.
+
+Table 5. Icocal Graphite-Fuel Temperature
+Differences in the MSRE
+
+ 
+
+ 
+
+Graphite Permeation Maximum Local
+by Fuel Temperature Difference
+% of graphite volume) (°F)
+0 62.5
+0.5 65.8
+2.0 73-2
+
+ 
+
+ 
+
+*In these calculations, it was assumed that 6% of the reactor power
+is produced in the graphite in the absence of fuel permeation. This value
+is based on calculations of gamma and neutron heating in the graphite by
+C. W. Nestor, (unpublished). The thermal conductivities of fuel and graph-
+ite were assumed to be 3.21 and 13 Btu/hr £t°F, respectively.
+4
+
+In the above computations, it was assumed that fuel which soaked into
+the graphite was uniformly distributed. This is not the worst possitle
+case. Slightly higher temperatures result if the fuel is concentrated
+near the perimeter of the stringers. To obtain an estimate of the in-
+creased severity, a stringer was examined for the case where 2% of the
+graphite volume is occupied by fuel. It was assumed that the salt con-
+centration was 15% of the graphite volume in a layer extending into the
+stringers far enough (0.05 in.) to give an. average concentration of 2%.
+The salt concentration in the central portion of the stringers was assured
+to be zero. The specific power in the graphite was divided into two parts:
+the contribution from gamma and neutron heating which was assumed uniform
+across the stringer, and the contribution from fission heating which was
+confined to the fuel-bearing layer. This resulted in an increase of 2.0°F
+in the maximum graphite-fuel temperature difference at 10 Mw. This in-
+crease was neglected because other epproximations tend to overestimate
+
+the temperature difference.
+
+Over-all Temperature Distribution
+
+The over-all temperature distribution in the graphite is obtained by
+adding the graphite-fuel temperature difference to the fuel temperature.
+Figure 13 shows the radial distribution at the midplane of the MSRE for
+10-Mw power operation with no fuel soakup in the graphite. The fuel ten-
+perature distribution, which is a scaled-down version of the corresponding
+curve in Fig. 12 to allow for axial position, is included for reference.
+Figure 14 shows the axial temperature distributions at the hottest radial
+position for the same conditions as Fig. 13. The fuel temperature in an
+adjacent channel is included for reference. The continuously increasing
+fuel temperature shifts the maximum in the graphite temperature to a
+position considerably above the reactor midplane.
+
+The distributions shown in Figs. 13 and 14 are for the mean tempera-
+ture within individual graphite stringers. The local temperature distri-
+butions within the stringers are superimposed on these in the operating
+
+reactor.
+TEMPERATURE (°F)
+
+42
+
+UNCLASSIFIED
+ORNL-LR-DWG 73616
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1290
+1280
+/ GRAPHITE
+| |
+1270 — —
+|
+1
+1
+1260 - — : :
+1
+|
+t
+1 |
+1250 !
+—
+1240 ! - } } \
+1230 : — \
+{
+1210
+I
+! |
+N )
+f : \
+200 _- \
+reo
+ro
+|
+| 4
+1180 NL
+0 5 25 30
+
+ 
+
+RADIUS (in)
+
+Fig. 13. Radial Temperature Profiles in MSRE Core Near Midplane
+TEMPERATURE (°F)
+
+43
+
+UNCLASSIFIED
+ORNL—LR— DWG 73645
+
+rN
+
+- / ~
+
+GRAPHITE
+_
+1260 _~
+
+ 
+
+1300
+
+ 
+
+ 
+
+oa / pe
+
+1220 : VA
+FUEL
+
+1200 yd
+
+1180 7 .
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1160
+0 10 20 30 40 50 60 70
+
+DISTANCE FROM BOTTOM OF CORE (in.)
+
+Fig. 14. Axial Temperature Profiles in Hottest Channel of MSRE
+Core (7 in. from Core Center Line)
+Lh
+
+Nuclear Mean Temperature
+
+The nuclear mean graphite temperature is obtained by weighting the
+local temperatures by the graphite temperature weighting function. In
+
+general
+
+J T(r, z) + AT(r, z) |G. (r, z) dav
+T = - - . 5 (17)
+J G(r, z) av
+
+ 
+
+Substitution of the appropriate expressions leads to an expression of
+
+the form
+
+T = T, +b
+n
+
+g i (T
+
+- T,.) + DAT (18)
+
+1' out 2
+
+where by and by are functions of the system.
+
+The nuclear mean graphite temperature was evaluated for three
+degrees of fuel permeation of the graphite. Table 6 lists the results
+
+for the reference condition at 10 Mw.
+
+Bulk Mean Temperatures
+
+The bulk mean graphite temperature is obtained in the same way as
+the nuclear mean temperature, but without the weighting factor. The
+bulk mean graphite temperature for various degrees of graphite permeation
+
+by fuel are listed in Table 6.
+
+Table 6. Nuclear Mean snd Bulk Mean Temperature
+of Graphite®
+
+ 
+
+Graphite Permeation
+
+ 
+
+by Fuel Nuclear Mean T Bulk Mean T
+% of graphite volume) (°F) (°F)
+0 1257 1226
+0.5 1258 1227
+2.0 1264 1231
+
+ 
+
+®At 10 Mw reactor power, T, = l175°F, T_ = 1225°F.
+ks
+
+POWER COEFFICIENT OF REACTIVITY
+
+The power coefficient of a reactor is a measure of the amount by which
+the system reactivity must be adjusted during a power change tc maintain a
+preselected control parameter at the control peint. The reactivity adjust-
+ment is normally made by changing control rod position(s) and the control
+parameter is usually a temperature or a combination of temperatures in
+the system. The reactivity effect of interest is only that due tc the
+change in power level; it does not include effects such as fuel burnup
+or changing peison level which follcw a power change.
+
+The power coefficient of the MSRE can be evaluated through the use
+of the relationships between reactor inlet and cutlet temperatures and
+the fuel and graphite nuclear average temperatures developed above. These
+relationships may be expressed as follows for 10-Mw power operation with
+
+no fuel permeation:
+
+Tout = Tin * 50°F (19)
+* - ° -
+Tp = T - 1L9F (20)
+* 1 © ~
+Ty = Tout + 31.6°F (21)
+
+Although these equations were develcped for fuel inlet and outlet tem-
+veratures of 1175 and 1225°F, respectively, they may be applied over a
+range of temperature levels without significant error.
+
+In addition tc the temperature relations, it is necessary tc use
+temperature coefficients of reactivity which were derived on a basis
+compatible with the temperature weighting functions. The fuel and graph-
+ite temperature coefficients of reactivity from first-order, two-group
+
+7 =2 op-l =2 op~l
+
+perturbation theory’ are -k.hk x 10 F and ~7.3 x 10 , respectively.
+
+thus
+
+Ak = -(4.b4 x 1072) ar” - (7.3 x 1077) Sa . (22)
+
+ 
+
+75. E. Prince and J. R. Engel, Temperature and Reactivity Ccefficient
+Averaging in the MSRE, ORNL TM=379 (Oct. 15, 1957}.
+
+ 
+46
+
+The magnitude of the power coefficient in the MSRE is strongly depend-
+ent on the choice of the control parameter (temperature). This is best il~
+lustrated by evaluating the power coefficient for various choices of the
+controlled temperature. Three conditions are considered. The first of
+these is a reference condition in which no reactivity change is imposed on
+the system and the temperatures are allowed to compensate for the power-
+induced reactivity change. The other choices of the control parameter are
+constant reactor outlet temperature (T = const) and constant average of
+
+ut
+inlet and outlet temperatures 3 Tn + 3 T = const). In all three cases
+
+the initial condition was assumed to be revs power at 120C°F and the change
+associated with a power increase to 10 Mw was determined. The results are
+summarized in Table 7. It is clear that the power ccefficient for the ref-
+erence case must be zero because no reactivity change is permitted. In the
+other cases the power coefficient merely reflects the amount by which the
+general temperature level of the reactor must be raised from the reference
+condition to achieve the desired control.
+
+Fuel permeation of the graphite has only a small effect on the power
+coefficient of reactivity. For 2% of the graphite volume occupied by fuel,
+the power coefficient based on a constant average of reactor inlet and cut-
+let temperatures is -0.052% 25 fey (vs. -0.047 for no fuel permeation}.
+
+Table 7. Temperatures ™ and Associated Power Coefficients
+of Reactivity
+
+ 
+
+ 
+
+T T T * T * Power
+Control out in f g Coefficient
+Parameter (°F) (°F) (°F) (°F) (% Ak/k/Mw)
+Nc external control 1184.9 1134.9 1173.0 1216.5 0
+cf reactivity
+T , = const 1200 1150 1188.1 1231.6 - 0.018
+Tog + Tou
+—= = const 1225 1175 1213.1 1256.6 - 0.047
+
+ 
+
+®At 10 Mw, initially isothermal at 1200°F.
+Ly
+
+DISCUSSION
+
+Temperature Distributions
+
+The steady-state temperature distributions and average temperatures
+presented in this report are based cn a calculational model which is only
+an approximation of the actual reactor. An attempt has been made tc in-
+clude in the model those factors which have the greatest effect on the
+temperatures. However, some simplifications and approximations have been
+msde which will produce at least miror differences between the predicted
+temperatures and those which will exist in the reactor. The treatment of
+the main part of the core as a series of concentric cylinders with a
+clearly defined, constant fuel velocity in each region is one such simplifi-
+cation. This approximation leads to very abrupt temperature changes at the
+radial boundaries of these regions. Steep temperature gradients will un-
+doubtedly exist at these points but they will not be as severe as thcse
+indicated by the model. The neglect of axial heat transfer in the graphite
+also tends to produce an exaggeration of the temperature profiles c¢ver
+those to be expected in the reactor. It is obvious that the calculated
+axial temperature distribution in the graphite (see Fig. 14) can not exist
+without producing some axial heat transfer. The effect of axial heat trans-
+fer in the graphite will be to flatten this distribution somewhat and reduce
+the graphite nuclear-average temperature.
+
+Some uncertainty is added to the calculated temperature distributicns
+by the lack of accurate data on the physical properties of the reactor mate-
+rials. The properties of both the fuel salt and the graphite are based on
+estimates rather than on actual measurements. A review of the temperabure
+calculations will be required when detailed physical data become available.
+
+However, no large changes in the temperature pattern are expected.
+
+Temperature Control
+
+It has been shown that the power coefficient of the MSRE depends upon
+the choice of the temperature to be controlled. Of the two modes of corn-
+
+trol considered here, control of the reactor outlet temperature appeers to
+48
+
+control-rod motion for a given power change. However, the magnitude of
+the power coefficient is only one of several factors to be considered in
+selecting a control mode. Another important consideration is the quality
+of the control that can be achieved. Recent studies of the MSRE dynamics
+with an analog computer’ indicated greater stability with control of the
+reactor outlet temperature than when the average of inlet and outlet was
+
+controlled.
+
+ 
+
+8
+
+S. J. Ball, Internal correspondence.
++
+Hl
+
++3]
+
+hg
+
+APPENDIX
+Nomenclature
+
+specific heat of fuel salt,
+
+volume fraction of fuel,
+
+Total circulation rate of fuel,
+
+Temperature weighting function,
+
+heat produced per fission,
+
+thermal conductivity or neutron multiplication factor,
+
+equivalent half-thickness of a graphite stringer
+treated as a slab,
+
+length of the core,
+
+relative specific power,
+
+equivalent specific power (absolute),
+rate of heat transfer per unit area,
+radius,
+
+equivalent radius of a fuel channel,
+
+equivalent radius of a graphite stringer treated
+as a cylinder,
+
+radius of the core,
+time,
+temperature,
+
+local transverse mean temperature in a single fuel
+channel or graphite stringer
+
+fuel nuclear mean temperature,
+graphite nuclear mean temperature,
+bulk mean temperature of fuel in the reactor vessel
+
+bulk mean temperatire of the graphite,
+fe
+
+RQ
+
+oO
+
+® « Nx T 2%
+
+Subscripts
+f
+
+g
+in
+
+out
+
+Nomenclature ~ cont'd
+
+velocity,
+
+volume of fuel in the core,
+
+2.405 r
+R 2
+
+axial distance from inlet end of main core,
+
+dimensionless radius,
+
+defined by (6),
+
+fraction of core heat originating in fuel,
+
+defined by (5),
+
+density of fuel salt,
+
+macroscopic fission cross section,
+
+neutron flux,
+
+adjoint flux,
+
+local temperature difference between mean temperature
+
+across a graphite stringer and the mean temperature
+in the adjacent fuel,
+
+fuel,
+
+graphite,
+
+fuel entering the reactor
+
+mixed mean of fuel leaving the reactor,
+wall, or fuel-graphite interface,
+
+fast neutron group,
+
+thermal neutron group,
+
+maximum value in reactor.
+Derivation of Equations for a Simple Model
+
+Fuel Temperature Distribution
+
+ 
+
+Consider a small volume of fuel as it moves up through a channel in
+
+the core. The instantaneous rate of temperature rise at any point is
+
+3° Bra al
+o(eC, )e
+
+In this expression it is assumed that heat generated in the graphite
+
+adjacent to the channel is transferred directly into the fuel (i.e.,
+
+is not conducted along the graphite, which accounts for the fraction ©.
+
+In the channel being considered, the fuel moves up with a velocity,
+
+u, which is, in general, a function of both r and z.
+
+2 =u, 2) (22)
+
+The steady-state temperature gradient along the channel is then
+
+ar _ oT ot _ Ho Tr z) } (a3)
+
+dz  dz/at Te eC, , ule, 2
+
+let us represent the neutron flux by
+
+#(r, z) = 7g, Jy (Bpozx) sin = . (al)
+
+Assume further that the channels extend from z = 0 to z = IL (ignoring
+the entrance and exit regions for this idealized case). The temperature
+at z = 0, for all channels, is I. The temperature up in the channel
+
+is found by integration
+52
+
+ 
+
+2.405 r
+go, (Rea
+T(r, z) = T. + J 2 I R sin (2) a . (a5)
+
+in o 6(eC, J; u(r, z)
+
+For convenience in writing, let us define
+
+HZ, ¢
+Q), = —Em (a6)
+= phe ’ (a7)
+
+Qe), LT J (x) (
+1
+
+, eS - cos B
+T(x, z) = Tint (oo); 7) cos tT ) s (28)
+
+and the temperature at the outlet of the channel,
+
+2(Qp), LT J (x)
+
+Tin + (eC); u(x, L) (29)
+
+T(x, L) =
+
+Now let us calculate the mixed mean temperature of the fuel issuing
+from all of the channels. This requires that we weight the exit tempera-
+
+ture by the flow rate. The total flow rate is, in general,
+
+Fr o= [Tom £(r, 2) u(r, z) ar . (a10)
+C
+
+For the idealized case where f and u are uniform throughout the core:
+
+F = mRfu . (a11)
+The general expression for mixed mean temperature at L is then
+
+R
+i «= = [7 2m £(r, L) u(r, L) T(r, L) ar . (a12)
+out F 0
+
+Substitution of (a9) for the temperature gives
+23
+
+h(q,) R
+Tout = J f(r, L) r J (x) dr
+k(Q, ), L 2.405
+= "Fs 5. . / f(x, L) X Is (x) dx . (213)
+
+For the ideal case where f is constant, integration gives
+
+ 
+
+LQ) Lf
+Tout = Tin * mort; (27 :) (2.4) 3; (2.4) (all)
+From (allt) we find that
+T -T, ) FlpCc_),. (2.4)
+Ql, = Cour = Tan) Cp) (a15)
+
+4 LfR° Iq (2.4)
+
+which may be rewritten as
+
+ec), (2-2 1] pos |
+_ u fis 405
+Qe), = | : pn = 3 (2.505) ' (a16)
+
+The first term in (al6) is simply the average effective value of the
+
+ 
+
+fuel specific power (including heat transferred in from the graphite).
+The second and third terms are, respectively, the maximum~to-average
+ratios for the sine distribution of specific power in the axial direction
+
+and the Is distribution in the radial direction.
+
+Substituting (al6) in (a8) gives
+
+F(T, - Ty) J.)
+
+T (x, 2) = T. + 2.405 ut cos
+
+in" ope hn g (2 05) iG z) \© L ) (217)
+
+This equation will be used in subsequent developments because it leads
+to expression of the average temperatures in terms of the reactor in-
+
+let temperature and the fuel temperature rise across the reactor.
+Fuel Nuclear Mean Temperature
+
+The nuclear mean temperature is obtained by weighting the local tem~
+perature by the nuclear importance, which is also a function of position,
+and integrating over the volume of fuel in the core. For the idealized
+case the importance varies as the square of the neutron flux. Thus the
+
+nuclear mean temperature of the fuel is given by
+R ,1,
+J J T (r, z) # (r, z) 2nr f(r, z) dr dz
+7 oc © (18)
+= . a
+R .L
+J J g= ir, z) 2m £(r, 2} dr dz
+o c
+
+ 
+
+when (alt) is substituted for g(r, z), the denominator, which is
+
+5
+¢~ V,. » becomes
+
+.R L . ~
+g° Vo, = 2x J J flr, z) r 3? ( 2.00r ) sin” = ) ar az .
+~ GC
+(a19)
+
+For constant f, integration gives
+2 2
+nl g. f R
+
+2 2
+Vp, = —— I, (2.505) . (a20)
+
+With the substituticn of (a4), (all), (al7) and (a20), and assum-
+
+ing £ and u to be ccnstant, {al8) becomes
+
+(_. -T. ) 2.405 ,L
+
+ 
+
+* -
+Ta = T., + Er 3s J X 33 (x) gin? a *
+2.405 J, (2.405)L © ©
+(x - cos E) dx dy (a21)
+Integration with respect to z results in
+* (Toe = Tin) 2.405
+Tp = T, + x 7 3 (x) ax . (a22)
+
+(2){2.405) 7, (2.405) o
+25
+
+Graphical integration with respect to x yields
+
+JB, 73 (x) dx = 0.564 . (a23)
+
+0
+Thus, the final result for the idealized core is
+*
+
+T. = T, +0.638 (T_. -T 0) (al)
+
+Fuel Bulk Mean Temperature
+The bulk mean temperature of the fuel in the core is
+R .L
+/ J Tp(r,z) ex f(r,z) dr dz
+o “o
+
+T= ) . (225)
+f J jl 2x £(r,z) dr dz
+o “o
+
+ 
+
+The denominator is the volume of fuel in the core. Considering only
+
+the idealized case again
+
+- 2 ~
+Veo = gx R7Lf (az6)
+
+Substituting (all) and (al7) into (225) for constant f and u gives
+
+2.405 xf (T, g - T )
+
+— i ‘RL 2.405r
+3 = 15h in rJ (2px) *
+Te= Tint 3 Veo 9,(2.505) J J 0 R
+
+ 
+
+(x - cos =) ar dz , (a27)
+which is readily integrated to give
+(T CT.)
+CA out - "in
+Fp = T+ 5 (a28)
+
+The equations for evaluating the nuclear and bulk mean temperatures
+of the fuel have been presented to illustrate the general method which
+must be employed. An idealized core was used in this illustration to
+reduce the complexity of the mathemetical expressions. This technique
+may be applied to any material in any reactor by using the appropriate
+temperature distributions and weighting functions. The results obtained
+by applying this method to the fuel and graphite in the MSRE are pre-
+
+sented in the body of the report.
+
+gchb
+a
+
+-
+
+OO O~I Ov += Ww
+
+i.
+
+11.
+
+MSRP Director's Office,
+Rm. 219, 9204-1
+
+M. Adamson
+
+. G. Alexander
+
+. B. Beall
+
+. Bender
+
+. Bettis
+
+Billington
+
+. Blankenship
+
+. Bohlmann
+
+Bolt
+
+Borkowski
+
+. Brandon
+
+. Bruce
+
+antor
+
+. Cole
+Conlin
+Cook
+Corbin
+Cristy
+Crowley
+Culler
+
+DeVan
+
+Ditto
+
+Donnelly
+
+Douglas
+
+Dunwoody
+
+Engel
+
+. Epler
+
+. Ergen
+
+. Fraas
+
+. Frye
+
+. Gabbard
+
+Gallaher
+
+Greenstreet
+Grimes
+
+. Grindell
+
+Guymon
+
+. Harley
+
+Harrill
+
+. Haubenreich
+
+. Hise
+
+. Hoffman
+
+. Holz
+
+. Jarvis
+
+Jordan
+
+. Kasten
+
+Kedl
+
+Kelley
+
+HFEwEngaohE"Y ER 0 HQ
+
+-
+
+HEH EOPPEHQON PUR OE NN
+
+.
+
+.
+.
+
+.
+
+ERE adomEYdQu rR QUr EEG E00 NG GQ
+HGnmudZa=subabdQorommnYRYo ER QC H
+
+Distribution
+
+IVES E
+
+FRAG
+
+238
+
+62.
+
+eR
+
+Fora IgmtrPaRdrPaEdQUarmuRaprmoY AGE» QM
+
+BAQS
+
+EHEDROG YY?
+
+.
+
+-
+
+°
+
+R
+M
+. B. Pike
+B
+L
+
+. Kirslis
+
+. Krewson
+lane
+
+. Lindauer
+
+. Iundin
+Lyon
+
+. MacPherson
+. Maienschein
+. Mann
+
+. McDonald
+
+. McDuffie
+
+. McGlothlan
+Miller
+
+. Miller
+Moore
+
+. Moyers
+
+. Northup
+
+°
+
+-
+
+HOC QGREGODmOQAHE >= 0
+
+. R. Osborn
+
+Patriarca
+. Payne
+. Perry
+
+. Prince
+. Redford
+
+. Richardson
+
+. C. Robertson
+. W. Savage
+
+. W. Savolainen
+
+E. Savolainen
+Scott
+
+Secoy
+Shaffer
+Skinner
+Slaughter
+Smith
+Smith
+
+QERq@mE
+
+. Spiewak
+. A. Bwartout
+. Taboada
+
+. Tallackson
+. Thoma
+
+. Trauger
+Ulrich
+Weaver
+Weaver
+
+. Webster
+Weinberg
+
+. White
+
+. Wilson
+
+-
+
+<QEIXN"gnawE
+50
+
+Distribution - contd
+
+ 
+
+98. C. H. Wodtke
+99. R. Van Winkle
+100-101. Reactor Division Library
+102-103. Central Research Library
+104. Document Reference Section
+105-107. laboratory Records
+108. ORNL-RC
+
+External
+
+109-110. D. F. Cope, Reactor Division, AEC, ORO
+111. A. W. larson, Reactor Division, AEC, ORO
+112. H. M. Roth, Division of Research and
+Development, AEC, ORO
+113. W. L. Smalley, Reactor Division, AEC, ORO
+11k. J. Wett, AEC, Washington
+115-129. Division of Technical Information Extension,
+AEC

@@ -1,0 +1,4664 @@
+ 
+
+OAK RIDGE NATIONAL LABORATORY
+operated by
+
+UNION CARBIDE CORPORATION A
+for the
+
+U.S. ATOMIC ENERGY COMMISSION
+
+ORNL- TM- 78
+
+Job
+
+ 
+
+MASTER
+
+THERMAL-STRE SS AND STRAIN-FATIGUE ANALYSES OF THE
+’ MSRE FUEL AND COOLANT PUMP TANKS
+
+C. G. Gabbard
+
+NOTICE
+
+This document contains information of a preliminary nature and was prepared
+primarily for internal use at the Oak Ridge National Laboratory. It is subject
+to revision or correction and therefore does not represent a final report. The
+information is not to be abstracted, reprinted or otherwise given public dis-
+semination without the approval of the ORNL patent branch, Legal and Infor-
+mation Control Department.
+
+ 
+ 
+
+ 
+
+ 
+
+LEGAL NOTICE
+
+This report was prepared as an account of Government sponsored work. Neither the United States,
+
+nor the Commission, nor any person acting on behalf of the Commission:
+
+A. Makes any warranty of representation, expressed or implied, with respect to the accuracy,
+completeness, or usefulness of the information contained in this report, or that the use of
+any information, opparatus, method, or process disclosed in this report may not infringe
+privately owned rights; or
+
+B. Assumes ony liabilities with respect to the use of, or for damages resulting from the use of
+any information, apparatus, method, or process disclosed in this report.
+
+As used in the above, "person acting on behalf of the Commission’ includes any employee or
+
+contractor of the Commission, or employee of such contractor, to the extent that such employse
+
+or contractor of the Commission, or employse of such contractor prepares, disseminates, or
+provides occess to, any information pursuant to his employment or contract with the Commission,
+
+or his employment with such contractor.
+
+ 
+
+ 
+Contract No. W-7405-eng-26
+
+Reactor Division
+
+THERMAL -STRESS AND STRATN~FATIGUE ANALYSES OF THE
+MSRE FUEL AND COOLANT PUMP TANKS
+
+C. H. Gabbard
+
+DATE ISSUED
+
+OCT - 31962
+
+OAK RIDGE NATIONAL LABORATORY
+Oak Ridge, Tennessee
+operated by
+UNION CARBIDE CORPORATION
+for the
+U. 8. ATOMIC ENERGY COMMISSION
+
+ORNL-TM-78
+Abstract .......
+
+Introduction ...
+
+iii
+
+CONTENTS
+
+#8 6 5 8 0000S OOD OSES GOEL ESSHI0 EEL EEGEERESEE TSS
+
+$995 05 0 0000806000400 ELON ILO ERNSEOOCEIOELENSETPTEIOETSOE
+
+Calculational ProCedUTeS vececrseccscssssesssascosssssssssasssssas
+
+SETain CYCLES teeveesnscsnssansssocsosscsnsosnsssssansssssossanss
+
+Temperature Distributions cisiieeeceecceesesecssccncsscsonsene
+
+Temperature Distribution Curve PIitting s.eceececscsacsccncans
+
+Thermal-Stress ANalySIiS eeeecessscsescssscssesoccnssossassnss
+
+Strain-Cycle Analysis © 5 65 8 5000600550009 0008900080000 seN
+
+Results seeeeces
+
+Temperature Distributions seieeseceeccessscsasssscsssenasnsse
+
+Thermal STTreSSES veeescecsosstscosssssssssscnsasssssssosssasesse
+
+Strain CYCles teieeieccssessesesesoscsscsassoscacsscccnsosssnsnnse
+
+Pressure and Mechanical StLIeSSES eeeeeressecssossesscsssoncon
+
+Recommendations
+Conclusions ....
+
+References vce.
+
+6 9 © 8 5 5000080 000009000000 E0000 ese ELEESIELIOSSOSOEOTS
+
+6° 25 89 06 509 80006089000 00c0C000LPEOOSIELIELETSIEBSOOCES
+
+© 8 5 8 6 0060 600 0000000 REPS E0000 0ST BLASS SO0s EES
+
+Appendix A. Distribution of Fission-Product-Gas
+
+Beta Energy ....
+
+® 0 PS 4 00 SERENE SELENE EEO ERET ELLER
+
+Energy Flux at Pump Tank Outer Surface .....ceievesnceecacanes
+
+Energy Flux at the Volute Support Cylinder Outer Surface ....
+
+Energy Flux at the Volute Support Cylinder Inner Surface ....
+
+Appendix B. Estimation of Outer Surface Temperatures and
+Heat Transfer Coefficients .i.vieereeeeceecnceneevocscnsnconns
+
+Appendix C. Derivation of Boundary and Compatibility
+Bquations for Thermal Stress Calculations .ceceecessssscccsccsns
+
+Appendix D. Explanation of Procedure Used to Evaluate
+the Effects of Cyclic Strains in the MSRE Pumps .veeiveencscnes
+
+Nomenclature ....
+
+$0609 6880890005 *P PESTLE ESS IOEIIEELESEOVYELIOESIOOTTES
+
+~N ut NH
+
+15
+16
+16
+16
+20
+22
+22
+26
+27
+
+29
+29
+31
+31
+
+33
+
+41
+
+56
+66
+“1
+THERMAL-STRESS AND STRAIN-FATIGUE ANALYSES OF THE
+MSRE FUEL AND COOLANT PUMP TANKS
+
+C. H. Gabbard
+Abstract
+
+Thermal-stress and strain-fatigue analyses of the MSRE
+fuel and coolant pump tanks were completed for determining
+the quantity of cooling air required to obtain the maximum
+life of the pump tanks and to determine the acceptability of
+the pump tanks for the intended service of 100 heating cycles
+from room temperature to 1200°F and 500 reactor power-change
+cycles from zero to 10 Mw.
+
+A cooling-air flow rate of 200 cfm for the fuel pump tank
+was found to be an optimum value that provided an ample margin
+of safety. The coolant pump tank was found to be capable of
+the required service without air cooling.
+
+Introduction
+
+The fuel pump for the Molten Salt Reactor Experiment?! (MSRE) is a
+sump-type centrifugal pump composed of a stationary pump tank and volute
+and a rotating assembly (see Fig. 1). The pump tank and volute, which
+is constructed of INOR-8 (72% Ni, 16% Mo, 7% Cr, 5% Fe), is a part of the
+primary containment system, and therefore the highest degree of reli-
+ability is required. The pump is similar to other high-temperature
+molten-salt and liquid-metal pumps that have accumulated many thousands
+of hours in nonnuclear test-loop service.? Although these nonnuclear
+pumps have been highly successful, they have not been subjected to the
+degree of thermal cycling which may occur in a nuclear plant. It there-
+fore cannot be assumed from the operating records that pumps of this type
+will be adequate for the MSRE.
+
+Stress calculations¥* were completed in accordance with the ASME
+Boiler and Pressure Vessel Code for determining the wall thicknesses and
+
+nozzle reinforcements required to safely withstand an internal pressure
+
+ 
+
+*Performed by L. V. Wilson.
+UNCLASSIFIED
+ORNL- LR-DWG-56043-A
+
+    
+  
+ 
+  
+ 
+ 
+ 
+ 
+  
+  
+ 
+ 
+  
+  
+  
+  
+
+SHAFT
+COUPLING
+
+WATER
+COOLED
+MOTOR
+SHAFT SEAL
+
+LEAK DETECTOR
+
+LUBE OIL IN
+
+LUBE OIL BREATHER
+SHAFT SEAL
+
+GAS IN
+
+LUBE OIL OUT
+
+LEAK DETECTOR SHIELDING PLUG
+
+BUBBLER TYPE
+LEVEL INDICATOR
+
+GAS VENT
+
+XENON STRIPPER
+
+BUOYANCY
+LEVEL
+INDICATOR
+
+Fig, 1. MSRE Fuel Pump General Assembly Drawing.
+of 50 psi. In addition to these pressure stresses, the fuel pump tank
+will be subjected to relatively high thermal stresses because of the high
+thermal gradients which will be imposed by nuclear heating and the large
+temperature difference between the top flange, which will be at 250 to
+300°F, and the pool of molten salt in the tank, which will be at 1225°F.
+Although the coolant pump will not be subjected to nuclear heating, there
+will be a large temperature difference between the top flange and the
+molten salt in the pump tank.
+
+Since the ASME Pressure Vessel Code and Code Case Interpretations
+do not adequately cover the design of a vessel at creep range tempera-
+tures under relatively high cyclic thermal stress, the thermal stress
+
+3 The Navy
+
+evaluation was conducted under the rules of the Navy Code.
+Code covers the design of pressurized-water reactor systems. The problems
+of design in the creep range are not explicitly covered, but design cri-
+teria are established for vessels subjected to thermal stress and cyclic
+plastic strain. Thermal stresses are considered as transient in the Navy
+Code and must be evaluated on a fatigue basis using the estimated maximum
+nurbers of various operational cycles and Miner's accumulative damage
+theorem as the design criteria.’
+
+Automatic flow control of the cooling air to the upper pump tank
+surface was initially proposed so that the temperature gradient on the
+spherical shell would remain relatively constant at various operating
+conditions. The complexity and possible lack of reliability of the auto-
+matic control system made it desirable, however, to determine whether a
+fixed alr flow could be used for all the operating conditions of the pump.
+
+Calculations were therefore made for establishing the temperature
+distributions, thermal stresses, pressure stresses, and permissible num-
+ber of operational cycles for various modes of operation and various
+cooling air flow rates. From this information, it was possible to select
+operating conditions that would permit the maximum number of operational
+cycles and provide an ample factor of safety above the 100 heating and
+
+500 power-change cycles anticipated for the MSRE.
+Calculational Procedures
+
+Strain Cycles
+
+Since thermal stresses are considered to be transient and in some
+cases subject to relief by stress relaxation at operating temperatures,
+they must be evaluated on a strain-fatigue basis, as required by the Navy
+Code. Two types of strain cycles will occur during normal operation of
+the pump:
+
+1. heating and cooling when the reactor system is heated from room tem-
+perature to operating temperature and returned to room temperature,
+and
+
+2. power-change cycles when the reactor power is raised from zero to 10
+Mw and returned to zero.
+
+The change in strain must also be considered for a loss-of-cooling
+air incident in which the operating conditions would change from (1) re-
+actor power operation at 10 Mw with design air flow to (2) operation at
+
+10 Mw with no air flow to (3) zero power operation with no air flow.
+
+Temperature Distributions
+
+ 
+
+The initial step in the thermal-stress and strain-fatigue analyses
+was to determine the temperature distributions in the pump tank for various
+operating conditions based on the effects of internal healt generation,
+conductive heat flow, convective and radiative heat transfer with the
+salt, and cooling of the shielding plug and upper pump tank surface. The
+generalized heat conduction code* (GHT Code) was used to obtain the tem-
+perature distributions. During reactor power operation, the fuel pump
+tank will be heated by gamma radiation from both the reactor vessel and
+the fuel salt in the pump tank and by beta radiation from the fission-
+product gases. The maximum gamma heat-generation rate during reactor
+operation at 10 Mw was calculated* to be 18.70 Btu/hr.in.? at the inner
+surface of the upper portion of the pump tank, giving an average heating
+rate through the 1/2-in.-thick pump tank wall of 16.23 Btu/hr.in.?. The
+gamma, heat-generation rate in the shielding plug above the pump tank
+
+ 
+
+*Calculated by B. W. Kinyon and H. J. Westsik.
+was calculated at increments of 1/2 in. based on an exponential decrease
+in the heating rate. The beta heating, which varied from 4.80 to 22.22
+Btu/hr-in.?, was estimated by distributing the total beta energy emitted
+in the pump tank over the pump-tank surface exposed to the fission-product
+gases (see Appendix A).
+
+Preliminary calculations with the GHT Code indicated that controlled
+cooling of the upper pump tank surface was necessary, not only to lower
+the maximum temperature, but also to reduce the temperature gradient in
+the spherical portion of the pump tank near its junction with the volute
+support cylinder in order to achieve acceptable thermal stresses. These
+calculations also predicted excessively high temperatures in the volute
+support cylinder between the pump tank and the pump volute. These high
+temperatures were caused by a series of ports in the volute support cylin-
+der wall for draining the shaft labyrinth leakage back into the pump tank.
+The drain ports were originally located at the bottom of the cylinder
+and restricted the conduction of heat downward into the salt. The maxi-
+mum temperatures were reduced to an acceptable level by centering the
+drain ports between the pump tank and the pump volute so that heat con-
+duction would be unrestricted in the both directions. Final temperature
+distributions for zero power operation at 1200°F, zero power operation
+at 1300°F, and 10-Mw operation at 1225°F were obtained for various cooling-
+air flow rates by varying the effective outer-surface heat transfer coef-
+ficient. Temperature distributions were also calculated for 10-Mw opera-
+tion at 1225°F, zero power operation at 1200°F, zero power operation at
+1300°F, and zero power operation at 1025°F without external cooling. The
+method of obtaining the effective outer-surface heat transfer coefficients
+for the various conditions is described in Appendix B. The pump tank and
+volute support cylinder geometry considered in these calculations is
+
+shown in Fig. 2.
+
+Temperature Distribution Curve Fitting
+
+Before the meridional and axial temperature distributions of the
+pump tank can be used in the thermal stress equations, they must be ex-
+
+pressed as equations of the following form (see p. 66 for nomenclature):
+UNCLASSIFIED
+ORNL—LR—DWG 64494R
+
+TOP FLANGE
+™ VOLUTE SUPPORT
+
+CYLINDER — CYLINDER
+
+.
+
+      
+
+PUMP TANK
+SPHERICAL
+SHELL
+
+SONS NSNNNN
+
+ 
+
+CYLINDER
+‘At
+LIQUID
+LEVEL—_
+x
+~
+~
+~
+~~
+
+ 
+
+ 
+
+LIQUID LEVEL
+
+Fig. 2. Pump Tank and Volute Support Cylinder Geometry.
+Internal Volute Support Cylinder "A"
+
+1? + T 1’
+a
+
+e =T + T, J
+
+“a al L + Ts
+
+2 3
+
+External Volute Support Cylinder "B"
+
+ 
+
+2 3 -bL
+Oy = Ta + Toh + JUNE + TL + TI. 5%
+Pump Tank Spherical Shell
+T
+cl 2 3
+ES yt Teo * Tae + Testa * Tose
+
+For the internal cylinder and the spherical shell, the GHT tempera-
+ture distribution data were fitted to the equation by the use of a least-
+squares curve-fitting program.’ For the external cylinder, manually fit
+equations containing only the exponential terms were found to fit ex-
+ceptionally well to within about 2.5 in. of the top flange, where exces-
+sive errors were encountered. On the other hand, the least-squares-fit
+equations containing all the terms fit very well in the vicinity of the
+top flange but deviated near the cylinder-to-shell junction. A comparison
+of the data obtained with the two fitting methods and the GHT data for
+the external cylinder is shown in Fig. 3. Since the cylinder-to-shell
+junction is considered to be the most critical area because of its high
+operating temperature, the manually fit equations were used for the ex-
+ternal cylinder. The points on Figs. 4 and 5 show the "fit" obtained for
+
+typical sets of GHT temperature-distribution data.
+
+Thermal -Stress Analysis
+
+In order to calculate the thermal stresses, the pump tank and volute
+support cylinder were considered to be composed of the following members,
+as shown in Fig. 2:
+
+1. an internal cylinder extending from the volute to the junction with
+
+the spherical shell, cylinder "A,"
+UNCLASSIFIED
+ORNL ~LR-DWG 64490
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1000 : :
+|
+|
+800 fo | — : ~
+
+Se | ® POINTS PREDICTED BY “HAND FIT" EQUATION
+_ NN | © POINTS PREDICTED BY "LEAST SQUARES"
+i EQUATIONS
+600 |— BE . oo
+Ww |
+ax i
+x |
+=
+<{
+ox
+§ 400 .
+=
+© SPHERE
+
+JUNCTION
+
+' eo
+200 —
+Top
+FLANGE
+° |
+0 f 2 3 4 5 6 7 8
+AXIAL POSITION (in.)
+Fig. 3. Comparison of "Hand-Fit" and "Least-Square-Fit" Tempera-
+
+ture Data with GHT Data for Cylinder "B.”
+
+UNCLASSIFIED
+ORNL-LR-DWG 64492R
+
+ 
+
+ 
+
+1400 I
+VOLUTE - SPHERE |
+C 1
+JE JUNCTION ]
+LL >
+1200 s mt —— —- —-- -
+A N
+“a MN
+~
+AN oN
+AN
+N \ _ FUEL PUMP, 10-Mw POWER,
+1000 Se— YN | X* NO EXTERNAL COOLING —]
+= ~ N.Y \ FUEL PUMP, 10-Mw POWER, 200-cfm
+: ~ N \ AIR COOLING
+= NG a \
+Wi
+= ~ \ _~FUEL AND COOLANT PUMP, ZERO
+E 800 |--- FUEL PUMP, ZERO POWER, POWER, NO EXTERNAL COOLING
+& 200-cfm AIR COOLING -~~ NN
+a. 1 i
+& NO "N\
+= COOLANT PUMP, 10-Mw aN \\
+600 F—— — POWER, NO EXTERNAL COOLING ~~ TNNINTN .
+! NA NN
+! N
+| |
+| \ o\
+® ANC A INDICATE TEMPERATURES PREDICTED A NW NN
+400 |- . BY THE TEMPERATURE EQUAT-ONS FOR THE AN Top
+GC—AND ‘C—Mw PCWER CASES W. TH 200 cfm RON FLANGE
+COOLING AIR FLOW, ARAN
+=e,
+| | ==:
+200 :
+0 2 4 6 8 10 12 14 16
+AXIAL PCSITION (n.)
+Fig. 4. Axial Temperature Distribution of Volute Support Cylinder
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+at Various Operating Conditions.
+JNCLASSIFIED
+ORNL-LR-DWG 64493R
+
+ 
+
+ 
+
+ 
+
+ 
+
+   
+ 
+
+ 
+
+      
+       
+ 
+
+  
+ 
+ 
+
+ 
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2000 :
+{ ! { i
+o AND @ INDICATE TEMPERATURES PREDICTED BY THE
+TEMPERATURE EQUATIONS FOR THE O AND 10-Mw |
+POWER CASES WITH 200-ctm COOLING AIR FLOW | |
+1800 - : : ns
+i | : ! !
+CYLINDER | | i
+JUNCTION FUEL PUMP, 10-Mw POWER, NO EXTERNAL COOLING
+1600 | - —] em TTT Bi
+| TNL
+rd | } LNG
+£ / | | LN
+1400 t-- - J o-- i ‘+ T= >
+uj | i | | | NN
+z / | | ! | \
+2 / ; | oounNG  N
+<< ] ~
+& / | ERO P power, NO EXTERNAL © .
+g 1200) fmt UEL aD © cou 2 PUMPS, f : —
+/ ING
+- — POWER, | o00-cfm AIR C00
+L- FUEL PUMP, 107 ve
+1000 Eo POWER ooo
+~~ COOLANT PUNT OLING
+4 Pid NO EXTERNA
+77
+800 [=r feet p—p— et — —t Sh.
+FUEL PUMP, ZERO POWER, 200-cfm AIR COOLING | |
+|
+600 i :
+0 2 4 6 8 10 12 14 18
+
+MERIDIONAL POSITION (in)
+
+Fig. 5. Meridional Temperature Distributions of the Torispherical
+Shell at Various Operating Conditions.
+
+2. an external cylinder extending from the junction with the spherical
+shell to the top flange, cylinder "B,"” and
+3. the pump tank spherical shell.
+
+An Oracle program* was used to obtain the pressure stresses, the
+stresses from the axial load on the cylinder, the thermal stresses re-
+sulting from temperature gradients in either or both cylinders, and any
+combination of these loadings. The Program assumes that the sphere is
+continuous (i.e., has no boundary other than the cylinder junction) and
+is at zero temperature. The zero-temperature assumption required that
+the temperature functions of the cylinders be adjusted to provide the
+proper temperature relationship between the three members. The boundary
+conditions for the ends of the two cylinders specified that the slope of
+
+the cylinder walls was zero and that the radial displacements would be
+
+ 
+
+*The Oracle program for analysis of symmetrically loaded, radially
+Joined, cylinder-to-sphere attachments was developed by M. E. LaVerne and
+F. J. Witt of ORNL.
+10
+
+equal to the free thermal expansion of the members at their particular
+temperatures. It was recognized at the beginning that some degree of
+error in the thermal-stress calculations would be introduced by the ab-
+sence of a thermal gradient on the sphere; but in the cases where air
+cooling was used to limit the gradient, the results were believed to be
+reasonably accurate, Later calculations showed, however, that the
+stresses were very sensitive to the temperature gradient on the sphere,
+and therefore the Oracle code was used only to evaluate the pressure
+stresses and the stresses from axial loads.
+
+In order to calculate the thermal stresses, including the effects
+of the thermal gradient on the sphere, it was necessary to substitute a
+conical shell for the sphere. The angle of intersection between the cone
+and cylinders was made equal to the equivalent angle of intersection on
+the actual structure. This substitution was required because moment,
+displacement, slope, and force equations were not available for thermal-
+stress analysis of spherical shells with meridional thermal gradients.
+
+Thermal stresses in the two cylinders and the cone were calculated
+by the use of the equations and procedures outlined in refs, 6-9. In
+order to evaluate the four integration constants required for each of
+the three members, it was necessary to solve the 12 simultaneous equa-
+tions which described the following boundary and compatibility conditions
+of the structure:
+
+Cylinder "A" at Volute Attachment. The slope of cylinder "A" was
+
+ 
+
+taken as zero and the deflection as -aag , .
+Cylinder "B" at Top Flange. The slope of cylinder "B'" was taken as
+
+ 
+
+zero and the deflection as -a00 ; «
+
+Cone at Outside Edge. The slope of the cone was taken as zero and
+
+ 
+
+the meridional force was taken as zero.
+
+Junction of Cylinder "A," Cylinder "B,'" and Cone. The summation of
+
+ 
+
+moments was taken as zero; the summation of radial forces was taken as
+
+mn
+
+zero; the slopes of cylinder "A," cylinder "B," and the cone were taken
+to be equal; and the deflections of cylinder "A," cylinder "B," and the
+
+cone were taken to be equal.
+11
+
+The following 12 equations, which are more completely derived in
+Appendix C, describe the boundary and compatibility conditions given
+
+above:
+
+Y, CW. = 279.04(T_, + 13.042T__ + 124.577 ,) , (1)
+na n 3 a a4
+
+2 3
+
+where
+
+/ — /
+), CW! =C, Wl +C
+
+W. + C, W. +C, W
+na n a a, a,
+
+2a 2 3a 3 ba 4
+
+2 Cray =0 ; (2)
+
+1
+bap? z Chatty - % Cort) * 2 Croton = 114.7(T, 5 - Ty3) -
+
+2
+— 0.00711; — 1.37, — 122.827; — 324.93, — 229.41T, , = 5 (3)
+1
+1
+Zap » Cran + 2 Coan) +
+2 . cos” ¢
++ Be tan ¢ (sin ¢ = Sin é 2 CrcCne
+= 6.2094(79.38J, + 3.07,) —
+3
+- 344.02(T_, + Tos) + 229.41T, » 7 5 (4)
+YC W/+ YC W/ = 279.04(T_, + T ) — 1116.27 >, (5)
+na n nb n ‘ a2 b2 “Ts Fy ?
+2
+af Be 2
+— YC W/— = tan” ¢ ), C_W/ = 1484.65T__ +
+£ na n t, ne ne a2
++ 64.983(9.92257,, — 10.1013; + 98.456d + 976.933, ) 3 (6)
+12
+
+T
+b5
+c MN - ) CN =154.05(T , —T,,) — 616.21 Ro
+&Y ¢c N+ sin” ¢ Ye (vo —W_)
+t na n te cos é nc' nc nc
+= —12895.87, — 200.687; ;
+
+C W/ = 0.,0408J, — 24.5033
+nc nc 1
+
+5” 600.373, — 14710.6J
+
+4
+
+Y, CQ, = 196.023, + 37, ;
+
+), CW. = 279.04(T, , + 15.94T, 5 + 190.56T, ,) = 1116.2T,
+
+4—F,
+
+), CN = 154.05 =
+
+In these equations,
+
+F, = (b/8)* +4,
+
+r,=F eV,
+
+J, =20.9T, ,
+
+J, = 459.957 5 — 11.555T ,
+
+J, = 17.83,
+
+J, = 19.1657
+
+SN
+
+.
+2
+
+s
+
+(8)
+
+(9)
+13
+
+Equations (1) through (12) are arranged so that the left side con-
+
+taining the unknown integration constants is dependent only on the specific
+
+pump tank configuration, while the right side containing the thermal-
+
+gradient terms will vary for each
+
+case.
+
+After obtaining the four integration constants for each member, the
+
+bending and menbrane stresses can
+
+be calculated using the following equa-
+
+tions for either cylinder or the cone:
+
+od =
+
+bo
+
+md
+
+6M
+
+Su
+t
+
+For the principal meridional and circumferential stresses the applicable
+
+equations are:
+
+q
+In
+
+0 = OC toe ’
+90 = "mp * “pe
+
+For cylinder "A,"
+
+ 
+
+d nan
+
+dap
+
+- L
+5 2, CM an (1, + 1, %) ;
+14
+
+=
+I
+|
+Q
+=
+
+ 
+
+1
+_ YY _ wR -dy
+
+My = 0 Cty zea (1; + 71, 3) Dby e ,
+p
+Y -dy a*
+
+N,=-) C.N — EtoT , e ,
+
+6 nbn b5 a +4
+N = 0 .
+
+For the cone,
+
+My =), Cooly + J1Kp + 1230, + 2.30.0) + 2.202,
+Mg = 0) CpoMgy = J3K,p + 1.30, + 1.63,P) + L.2667,2,
+
+=
+Il
+
+2
+5 =F tan ¢ (-2 C ly + 8I,P + 37,) ,
+
+=
+1]
+
+2
+, = BS tan ¢ (2 C Noy + 83,P5 + 31) .
+
+In order to facilitate the solution of several cases and to reduce
+the amount of time involved in calculating complete stress distributions,
+an IBM 7090 program was written for the MSRE pump configuration. The
+program calculates the temperature-dependent constants of the 12 simul-
+taneous equations, solves the equations for the 12 integration constants,
+and calculates the bending, membrane, and principal stresses at 65 loca-
+tions. Up to 25 cases can be solved, and the number of cases to be
+solved and the constants in the temperature distribution equations are
+
+included as input data. A set of general input data is also required
+15
+
+that contains the left-hand members of the simultaneous equations and the
+position functions tabulated in refs. 7 and 9.
+
+A special test case with a uniform-temperature conical shell was
+prepared for the IBM 7090 program to check the validity of substituting
+the conical shell for the spherical shell and to obtain an over-all com-
+parison between the results of the IBM and Oracle programs. The compara-
+tive results are shown in Table 1 for the junction of the three members.
+As may be seen, the cone stresses agreed satisfactorily at the junction
+where they were a maximum. Deviations between the results of the two
+programs at other meridional positions were not considered important for
+
+the cases of interest.
+
+Table 1. Comparative Results for Conical and Spherical Representation
+
+ 
+
+Axial or Meridional Principal Circumferential Principal
+Stress (psi) Stress (psi)
+
+ 
+
+IBM 7090 Program® Oracle Program® IBM 7090 Program Oracle Program
+
+ 
+
+Cylinder "A" -3 276 -3 374 -3 047 -3 351
+Cylinder "BY 7 091 7 365 -4 018 ~4 548
+Cone or sphere -25 196 -25 703 -3 572 -3 967
+
+ 
+
+SFor cylinder-to-cone junction.
+
+Pror cylinder-to-sphere junction.
+
+Thermal-stress calculations were completed for the various operating
+
+conditions listed previously in the section on temperature distributions.
+
+Strain-Cycle Analysis
+
+ 
+
+In order to determine the optimum cooling-air flow rate and the life
+of the pump tank, it was necessary to determine the allowable number of
+each type of operational cycle (heating and power change) for each of
+several cooling-air flow rates. If Py Psy sees P, are the anticipated
+values for the various operational cycles and No» Nos coe N are the
+allowable number of cycles determined from the thermal-stress and strain-
+
+fatigue data, the "usage factor" is defined as > (p;/1,). A design air
+16
+
+flow can then be selected to minimize the usage factor and give the maxi-
+mum pump-tank life,
+
+The permissible number of each type of operational cycle is deter-
+mined by comparing the maximum stress amplitude for each type of cycle
+with the design fatigue curves. The maximum stress amplitude includes
+the thermal stresses caused by meridional thermal gradients, the thermal
+stresses caused by transverse thermal gradients, and the pressure stresses
+caused by the 50-psi internal pressure.
+
+A discussion of the various types of stresses (primary, secondary,
+local, and thermal) and the effects of each on the design of the pump
+tanks is given in Appendix D. A discussion of the procedure used in
+determining the allowable number of cycles is presented, and the design
+
+fatigue curves of INOR-8 are included.
+
+Temperature Distributions
+
+ 
+
+The results of the GHT temperature distribution calculations for
+pertinent operating conditions are shown in Figs. 4 and 5 for the fuel
+and coolant pumps. The spherical shell meridional temperature distribu-
+tions for the fuel pump at various cooling air flow rates and reactor
+
+power levels of zero and 10 Mw are shown in Figs. 6 and 7.
+
+Thermal Stresses
+
+Typical thermal-stress profiles of the fuel pump at a cooling-air
+flow rate of 200 cfm with the reactor power at zero and 10 Mw are shown
+in Figs. 8 and 9; similar profiles of the coolant pump are shown in Figs.
+10 and 11. The relatively high stresses at the top flange are believed
+to be caused by the poor fit of the temperature equations in that area,
+as shown in Fig. 3. The stress at the top flange was calculated to be
+15 000 psi when the least-squares-fit temperature equation was used. It
+was found, however, that this equation introduced stress errors at the
+cone-to-cylinder junction, Therefore, the actual stress profiles along
+
+the entire length of the external cylinder would probably be better
+17
+
+UNCLASSIFIED
+ORNL-LR-DWG 64494R
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1800
+CYLINDER |
+JUNCTION 0 COOLING AIR FLOW (cfm)
+
+1600 - antl - - = -
+
+] yd ~~
+
+1400 E— - 50 }
+
+¥ TT —_
+
+2
+
+2 re LT
+
+x 100 _—
+
+< 1200 re me 7 1
+
+© 1 150 —
+— 200 =
+
+1000 |Z ps0 | |
+300+
+—
+800
+0 2 4 6 8 10 12 14 16
+
+MERIDIONAL POSITION (in.)
+
+Fig. 6. Meridional Temperature Distributions of the Torispherical
+Shell at a Reactor Power of 10 Mw and Various Cooling-Air Flow Rates.
+
+UNCLASSIFIED
+ORNL-LR-DWG 64495R
+T
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1400
+CYLINDER
+JUNCTION i
+— f |
+1200 ~ _._.__O-COOLING AIR FLOW (cfm)
+L 50
+£ 1000 yd
+|
+g / — | 100
+| ——
+8 a mr
+800 er rm 200 ==
+300 ;
+| | |
+600 :
+0 2 4 6 8 10 12 iq 16
+
+MERIDIONAL POSITION (in)
+
+Fig. 7. Meridional Temperature Distributions of the Torispherical
+Shell at Zero Reactor Power and Various Cooling-Air Flow Rates.
+18
+
+UNCLASSIFIED
+ORNL-LR-DWG 64496R
+
+ 
+
+30,000
+
+SPHERICAL SHELL
+
+VOLUTE
+JUNCTION
+
+20,000 ya
+— J TN oe e=#10-Mw OPERATION WITH
+10,000 | - ~~ 200-cfm COOLING AIR ©
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+o INTERNAL CYLINDER EXTERNAL CYLINDER
+g 0 /
+Ld
+x /
+x ;
+E RAN
+J
+-10,000 {— - - . —_—, - -
+£__ 7ERO POWER OPERATION WITH
+200-ctm COOLING AIR |
+-20,000 |— -: - - TOP FLANGE
+I
+|
+-30,000 © L
+
+“6 _s -2 0 2 4 6 8
+AXIAL POSITION (in.)
+
+Fig. 8. Fuel Pump Principal Thermal Stresses at Cylinders "A" and
+"B" for Operation at Zero Power and at 10 Mw with a Cooling-Air Flow Rate
+
+of 200 cfm.
+
+UNCLASSIFIED
+ORNL -LR-DWG 64497
+
+ 
+
+4000
+
+2000 [= — Co : - ’
+TT ZERO POWER, 200 —cfm COOLING AIR
+0
+—
+CYLINDER Ja I
+JUNCTION
+
+~2000 —~-- be -
+
+Pd . A Lo i
+10 Mw, 200 - cfm COOLING AIR
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+-4000
+
+STRESS (psi)
+
+-6000
+
+ 
+
+ 
+
+-8000
+
+-10,000
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2 3 4 5 6
+MERIDIONAL POSITION (in.}
+
+ 
+
+-12,000
+
+ 
+
+Fig. 9. Fuel Pump Principal Thermal Stresses at Spherical Shell
+for Operation at Zero Power and at 10 Mw with a Cooling-Air Flow Rate of
+
+200 cfm.
+19
+
+UNCLASSIFIED
+ORNL-LR-DWG 64498
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+T
+30,000 I Cd _.
+VOLUTE
+20,000 do
+ZERO POWER,NO EXTERNAL
+Ng COOLING \
+10,000 +— ~ / \ J
+= 10 Mw,NO EXTERNAL COOLING
+a 0
+a
+& 10 Mw,NO EXTERNAL COOLING
+-10,000 ; —\
+ZERO POWER,NO EXTERNAL
+SPHERICAL SHELL JUNCTION COOLING
+i
+-20,000 \
+TOP FLANGE
+-30,000 L
+-6 -4 -2 0 2 4 6 8
+
+AXIAL POSITION (in.)
+
+Fig. 10. Coolant Pump Principal Thermal Stresses at Cylinders "A"
+and "B" for Operation at Zero Power and at 10 Mw.
+
+UNCLASSIFIED
+ORNL-LR-DWG 64499R
+
+ 
+
+60
+
+ 
+
+ 
+
+40 N ~~~ 10 Mw, NO EXTERNAL COOLING -
+
+sero POWER, NO EXTERNAL COOLING
+
+ 
+
+a
+
+a
+
+: NN
+Q
+
+Q
+
+@ 20 |- S
+2 N
+= CYLINDER
+
+® JUNCTION
+
+ 
+
+ee —
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0 f—
+a
+
+-20
+0 1 2 3 4
+
+MERIDIONAL POSITION (in.)
+
+Fig. 11. Coolant Pump Principal Thermal Stresses at Spherical Shell
+for Operation at Zero Power and at 10 Mw,
+20
+
+represented by a composite of the two stress profiles; that is, it would
+
+be best to use the stress profiles from the manually fit temperature func-
+tions near the junction and from the least-squares functions near the top
+flange. Since the cone-to-cylinder junction is the more critical area
+
+and since the stresses at the top flange do not limit the number of per-
+missible strain cycles, the stresses from the manually fit equations were
+used in completing the strain-cycle analysis. The cylinder is sufficiently
+long that the temperature error at the top flange has a relatively small
+
+effect on the stresses at the cylinder-to-shell junction.
+
+Strain Cycles
+
+The results of the strain-fatigue analyses are presented in Tables
+
+2, 3, and 4. A predicted usage factor of 0.8 or less indicates a safe
+
+Table 2. Fuel Pump Strain Data for Heating Cycle
+
+ 
+
+. Maximum Cycle Cycle
+Alr Stress Stress Allowable Fraction Fraction in
+Flow . Amplitude
+(cfm) Intensity (psi) Cycles Per 100 Cycles,
+(psi) Cycle P/N,
+
+ 
+
+Heating Cycle to 1200°F
+
+50 31 124 15 562 700 0.00143 0.143
+100 14 400 7 200 2 500 0.00040 0.040
+150 14 143 7 072 2 500 0.00040 0.040
+200 16 095 8 048 2 100 0.00047 0.047
+250 21 760 10 880 1 300 0.00077 0.077
+300 26 955 13 477 880 0.00114 0.114
+
+Heating Cycle to 1300°F
+
+50 28 966 14 483 640 0.00156 0.156
+100 19 104 9 552 1 300 0.00076 0.076
+150 20 590 10 295 1 150 0.00086 0.086
+200 23 811 11 905 900 0.00111 C.111
+250 30 895 15 447 550 0.00181 0.181
+300 36 099 18 049 420 0.00238 0.238
+
+Loss-0of-Cooling-Air Accident
+
+200 94 885 47 443 85 0.012 1.2
+
+ 
+21
+
+“ Table 3, Fuel Pump Strain Data for Power-Change
+Cycle from Zero to 10 Mw
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Adr Maximum Stress Cycle Cycle Total
++ Stress : Allowable Fraction Fraction in Usage
+Flow Amplitude
+(cfm) Range (psi) Cycles Per 500 cyeles, Factor,
+(psi) Cycle P,/ 5 x P/N;
+50 37 971 18 985 520 0.00192 0.961 1.10
+100 24 763 12 382 1 000 0.001 0.500 0.54
+150 18 930 9 465 1 600 0.000625 0.312 0.352
+200 18 814 9 407 1 600 0.000625 0.312 0.359
+250 18 775 9 388 1 600 0.000625 0.312 0.389
+300 18 639 9 320 1 600 0.000625 0.312 0.426
+Table 4. Coolant Pump Strain Data for Heating
+and Power-Change Cycles
+Heating Cycles Power Change
+from Zero
+To 1200°F To 1300°F to 10 Mw
+Maximum stress intensity, psi 63 650 69 100 10 160
+Stress amplitude, psi 31 825 34 550 5 080
+Allowable cycles 4 400
+Total relaxation 220 140
+Partial relaxation 520 290
+Cycle fraction per cycle 0.00227
+Total relaxation 0.00454 0.00714
+- Partial relaxation 0.00192 0.00344
+Cycle fraction in 100 cycles
+Total relaxation 0.454 0.714
+Partial relaxation 0.192 0.344
+Cycle fraction in 500 cycles 0.114
+Total usage factor?
+Total relaxation 0.568
+Partial relaxation 0.306
+
+ 
+
+Sor 100 heating cycles to 1200°F and 500 power cycles from zero to
+10 Mw.
+22
+
+operating condition for the desired number of heating and power-change
+cycles. The results are based on the assumption of total stress relaxa-
+tion at each operating condition and are therefore conservative. The
+location of maximum stress intensity during the heating cycle is not
+necessarily the same as the location of maximum stress range during the
+power-change cycle. This also provides conservative results, since the
+maximum strains for each type of cycle were added to determine the usage
+factor, and the total strain at the actual point of maximum strain would
+be less than the strain value used. Since the pump tank will safely en-
+dure the desired number of heating and power cycles with this conservative
+approach, it was not considered necessary to locate and determine the
+actual maximum total strain. The coolant pump will operate at a lower
+temperature than the fuel pump, so the stress relaxation during each
+cycle will probably be incomplete and therefore a larger number of cycles
+will be permissible. As shown in Table 4, the assumption of partial re-
+laxation rather than total relaxation permits more than twice the number
+of heating cycles. For the fuel pump, thermal-stress and plastic-strain
+calculations were also made for the short 36-in.-diam cylinder connect-
+ing the two torispherical heads. The permissible number of cycles at
+this location was found to be greater than those shown in Table 2, and,
+therefore, the cycles in the cylinder do not limit the life of the pump
+tank,
+
+Pressure and Mechanical Stresses
+
+ 
+
+The results of the pressure stress calculations made with the Oracle
+program are shown in Figs, 12 and 13, The stresses, which include both
+primary and discontinuity stresses, are for a pressure of 1.0 psi and are
+directly proportional to pressure. The maximum stress from the axial
+load exists at the suction nozzle attachment and is equal to 1.766 times
+
+the load in pounds.
+Recommendations
+
+The strain-cycle data of Tables 2, 3, and 4 indicate that the de-
+
+sired number of strain cycles on the fuel pump can be safely tolerated
+ern gn =m Here
+
+and
+
+23
+
+UNCLASSIFIED
+ORNL-LR -DWG 64500
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+100 |
+INTERNAL PRESSURE = 1.0 psi —-- -|
+VOLUTE STRESS AT 'P" PRESSURE =
+Px STRESS AT 1.0 psi
+60 | {— - ne |
+= TOP FLANGE]
+~~
+— - N "
+9 20 —4——06p-1 mT A SoS —
+ole See,
+2 = x = =<
+= %- NSN —— %-0
+& %-0
+-20 +—1+—
+——%-1% 0, =MERIDIONAL STRESS ~
+0p =CIRCUMFERENTIAL STRESS
+_ 7 =INSDE
+80 0 =0UTSIDE
+|
+SPHERICAL SHELL JUNCTION _
+-100 |
+-6 -4 -2 0 2 4 6 8
+AXIAL POSITION {in.)
+. . an
+Fig. 12. Fuel and Coolant Pump Pressure Stresses at Cylinders "A
+1 1
+B.
+UNCLASSIFIED
+ORNL-LR-DWG 6450(
+60 FT
+~~.9% _ }
+Ze INTERNAL PRESSURE = 1.0 psi
+a ~~ STRESS AT'P"PRESSURE = Px STRESS
+a Q-7 T= — .
+= St me Ll] AT 1.0 psi
+4 40 %. atm ozre)
+o ~L:g_ Te EEE =aaw
+g 7
+£ ag
+o HA 04=MERIDIONAL STRESS
+20 Vd Jp = CIRCUMFERENTIAL STRESS
+7 =INSIDE | ;
+CYLINDER -
+JUNCTION 0 =0UTSIDE
+0 1 | | 1
+0 1 2 3 4 5 6 7 8 9
+MERIDIONAL POSITION (in)
+Fig. 13. Fuel and Coolant Pump Pressure Stresses at Spherical
+
+Shell.
+24
+
+when any cooling alr flow between 100 and 300 cfm is used; and, there-
+fore, the air cooling can be controlled manually by a remotely operated
+control valve. A cooling-air flow rate of approximately 200 cfm is recom-
+mended for the following reasons:
+
+1. The predicted usage factor is reasonably near the minimum value.
+
+2. There is a wide range of acceptable flow rates on either side
+of this design air flow rate.
+
+3. At air flow rates greater than 200 cfm, the maximum stress in-
+tensity during zero power operation increases relatively rapidly and de-
+creases the permissible number of heating cycles.
+
+Since there is a possibility of error in the temperature distribu-~
+tion calculations because of uncertainties in the heat generation rates
+and heat transfer coefficients, it is recommended that the temperature
+gradient on the spherical shell be monitored by using two thermocouples
+spaced 6 in. apart radially. This gives the maximum temperature dif-
+ference between the two thermocouples and therefore reduces the effect
+of any thermocouple error. Since the thermal gradient of the spherical
+shell near the junction is of primary importance in determining the ther-
+mal stresses, the differential temperature measurements and the data of
+Figs, 6 and 7 can be used to set the actual cooling-air flow rate on the
+pump. This method has the disadvantage of requiring several adjustments
+a8 the temperature and power level are raised to the operating point.
+
+If direct measurement of the flow rate were possible minor adjustments
+could be made after the system reached operating conditions. Since no
+cooling-air flow measuring equipment is planned for the fuel pump at the
+present time, a preoperational calibration of the cooling-air flow rate
+versus valve position should be made to permit the approximate air flow
+rate to be set prior to high-temperature operation.
+
+The design temperature difference between the two thermocouples for
+monitoring the thermal gradient is 100°F at a power level of 10 Mw and
+a thermocouple spacing of 6 in. The maximum allowable temperature dif-
+ference is 200°F for 10-Mw operation. After the cooling-air flow rate
+has been set for 10-Mw operation, a readjustment of the flow should be
+made, if necessary, at zero power operation to prevent a negative thermal
+
+gradient on the sphere. This adjusted cooling-air flow should then become
+25
+
+the operating value. During the precritical testing and power operation
+of the reactor it should be kept in mind that any significant change in
+the fuel pump cooling-air flow rate will constitute a strain cycle and
+will represent a decrease in the usable life of the pump tank. Therefore,
+an effort should be made to keep the number of cooling-air flow rate ad-
+Justments to a minimum,
+
+The effect of heating the system to 1300°F is also shown in Tables
+2, 3, and 4. The fuel and coolant pumps can safely endure only about
+half as many heating cycles to 1300°F as to 1200°F. For the coolant
+pump, 100 heating cycles to 1300°F would essentially consume the life of
+the pump tank. At 1300°F the assumption of total stress relaxation is
+realistic, and no additional conservatism should be claimed by its use.
+Therefore, it is recommended that the system not be heated to 1300°F on
+a routine basis.
+
+Since the fuel and coolant pump tanks are primary containment mem-
+bers, the maximum value of the usage factor must not exceed 0.8, which
+is the acceptable upper limit. To avoid exceeding this limit, an accu-
+rate and up-to-date record should be maintained of the usage factor and
+the complete strain cycle history of both the fuel and the coolant pumps.
+In calculating the usage factor, partial power-change cycles in which
+reactor power is increased only a fraction of the total power should be
+considered as complete power cycles unless the number of partial cycles
+is a large fraction of the total when a pump tank has passed through the
+permitted number of cycles. In this case, additional thermal stress
+calculations should be made to determine the proper effect of the partial
+cycles,
+
+Although the strain-cycle data Indicate that the coolant pump is
+acceptable for the specified number of strain cycles, the stress intensity
+is uncomfortably high. The se stresses can be reduced by lowering the
+thermal gradient on the spherical shell by using a reduced thickness of
+insulation on the upper surface of the pump tank. Since nuclear heating
+is not involved in the coolant pump, the proper amount of insulation can
+best be determined on the Fuel Pump Prototype Test Facility, which is
+
+presently under construction.
+26
+
+Conclusions
+
+The strain-cycle analysis indicates that the fuel pump will be satis-
+factory for the intended life of 100 heating cycles and 500 power-change
+cycles if it is air cooled. No special cooling will be required for the
+coolant pump. A conservative design is provided by the use of standard
+safety factors in the strain-fatigue data and in the usage factor. Ad-
+ditional conservatism of an unknown magnitude is provided by the assump-
+tion of total stress relaxation at each operating condition and by the
+fact that the actual maximum strain should be less than the calculated
+maximum strain.
+
+In addition to the safety factors outlined above, the fuel and cool-
+ant pump tanks are capable of exceeding their required service life by
+factors of 2.2 and 1.4, respectively, before the maximum permissible usage
+
+factor is exceeded.
+10.
+
+11.
+
+12.
+13.
+
+14.
+
+27
+References
+
+Molten-Salt Reactor Program Quarterly Progress Report for Period End-
+ing July 31, 1960, ORNL-3014.
+
+A. G. Grindell, W. F. Boudreau, and H. W. Savage, "Development of
+Centrifugal Pumps for Operation with Liquid Metals and Molten Salts
+at 1400-1500 F," Nuclear Sci. and Eng. 7(1), 83 (1960).
+
+Tentative Structural Design Basis for Reactor Pressure Vessels and
+
+ 
+
+Directly Associated Components (Pressurized, Water-Cooled Systems),
+
+‘esp. p. 31, PB 151987 (Dec. 1, 1958), U. S. Dept. of Commerce, Office
+
+of Technical Services.
+
+T. B. Fowler, Generalized Heat Conduction Code for the IBM 704 Com-
+uter, ORNL-2734 (Oct. 14, 1959), and supplement ORNL CF 61-2-33
+(Feb. 9, 1961).
+
+P. B. Wood, NLLS: A 704 Program for Fitting Non-Linear Curves by
+
+Least Squares, K-1440 (Jan. 28, 1960), Oak Ridge Gaseous Plant;
+SHARE Distribution No. 8371838.
+
+F. J. Witt, Thermal Stress Analysis of Cylindrical Shells, ORNL
+
+CF 59-1-33 (Mar. 26, 1959).
+
+F. J. Stanek, Stress Analysis of Cylindrical Shells, ORNL CF 58-9-2
+(July 22, 1959).
+
+F. J. Witt, Thermal Analysis of Conical Shells, ORNL CF 61-5-80
+(July 7, 1961).
+
+F. J. Stanek, Stress Analysis of Conical Shells, ORNL CF 58-6-52
+(Aug. 28, 1958).
+
+C. W. Nestor, Reactor Physics Calculations for the MSRE, ORNL
+
+CF 60-7-96 (July 26, 1960).
+
+T. Rockwell (ed.), Reactor Shielding Design Manual, p 392, McGraw-
+
+Hill, New York, 1956.
+
+M. Jakob, Heat Transfer, Vol. I, p 168, Wiley, 1949.
+
+A. I. Brown and S. M. Marco, Introduction to Heat Transfer, p 64,
+
+McGraw-Hill, New York, 1942.
+
+Ibid, p 91.
+
+ 
+
+ 
+
+ 
+
+ 
+28
+
+15. B. F. Lange, "Design Values for Thermal Stress in Ductile Materials,"
+Welding Journal Research Supplement, 411 (1958).
+
+16. S. S. Manson, "Cyclic Life of Ductile Materials,” Machine Design 32,
+13944 (July 7, 1960).
+29
+APPENDIX A
+Distribution of Fission-Product-Gas Beta Energy
+
+The total energy that will be released in the fuel pump tank by the
+fission-product gases has heen reported® by Nestor to be 15 kw. This
+energy will not be uniformly deposited on the surface area exposed to
+gas, however, so it was necessary to determine its distribution over the
+surfaces of the pump tank. The pump tank was assumed to be of straight
+cylindrical geometry, as shown in Fig. A.l, and the distribution of the
+energy flux at the cylindrical walls was calculated as outlined in the
+following sections. The distribution of energy to the upper surface was
+approximated by assuming a distribution similar to that for the outside
+
+wall.
+
+Energy Flux at Pump Tank Outer Surface
+
+ 
+
+It was assumed that there was no self-shielding or shielding from
+the volute support cylinder, and the line source (dy,dx) was integrated
+over the enclosed volume (see Fig. A2)11 to obtain the energy flux ¢
+at Pp:
+
+2
+Sy yy xy 1 dx a sec” 0 dé
+wo , J; J 2 sec? 0 :
+2
+y x 5 dy dx a sec” 6 df
+x = J t J J 2 we? g
+
+sec
+(A.1)
+
+S vy e
+= ~X Is t fh f L dy dx a8 (x2 + ,2)1/2 +
+4m LO 0 0
+
+6
+RE [a 2 ay ax a6 (+2 ona
+o “0 “0
+ 
+
+36 in. DIA
+
+UNCLASSIFIED
+ORNL-LR-DWG 68993
+
+ 
+
+r<—— 15 in. DIA ——=
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+hy =8in 7
+SS,
+LIQUID LEVEL SS
+CL A a] ee —— mr —]
+=== N= —  — — —
+— — — N-VSSSSS-N — = =
+Fig. A.l. Assumed Pump Tank Geometry.
+UNCLASSIFIED
+ORNL ~LR-DWG 68994
+x [Toe
+dy, dx
+a ae
+y - - —- -
+/ A
+Ro
+[rea hy hy =
+Fig. A.2.
+
+Surface.
+
+Diagram for Determining Energy Flux at Pump Tank Outer
+31
+
+where
+yp = 2B,
+x = +(2yR - 2)? ,
+6, = tan n(x LAH2
+0, = tan hy ( + 21/2 ,
+5, = energy source per unit volume
+
+Energy Flux at the Volute Support Cylinder Outer Surface
+
+Figure A.3 and the following equation were used for determining the
+
+energy flux at the outer surface, Py) of the volute support cylinder:
+S y 6
+¢ = —~ I 1 [1 I) = dy dx a6 (x2 + 2)1/2 +
+47m LO 0 0
+
+Y e
+IR Rea 202 a
+
+where
+vp = Ry = By
+oes fim won YE
+6, = — n, (x° + 21/2 ,
+6, = — hy (+° + J2)~H/2
+
+Energy Flux at the Volute Support Cylinder Inner Surface
+
+The energy flux at P3, as shown on Fig. A.3, was approximated by
+
+calculating the flux at P4 using equation A.2 and the appropriate values
+
+of Ry and R.. This value was then corrected for the additional volume
+
+visible to P, by the direct cross-section area ratio and the inverse
+
+3
+32
+
+square ratio of the center-of-gravity distance:
+
+¢(at Py) = 1.26 ¢(at PL)
+
+The values of ¢ at P and PS were evaluated as functions of hy
+
+1 Fo
+and hy by the Numerical Analysis Section of ORGDP. The beta-energy dis-
+
+tribution is shown in Fig. A.4.
+
+UNCLASSIFIED
+ORNL ~LR-DWG 68995
+
+VOLUTE SUPPORT CYLINDER
+OUTER SURFACE
+
+PUMP TANK OUTER SURFACE
+
+  
+  
+    
+
+Y.
+a=(x? +2)?
+
+ 
+
+ 
+
+ 
+
+Fig. A.3. Diagram for Determining Energy Flux at Outer and Inner
+Surfaces of the Volute Support Cylinder.
+
+UNCLASSIFIED
+ORNL-LR-DWG 64502R
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+4000 T T
+~ | ' TORISPHERICAL SHELL, INSIDE
+< Sor
+= | . sm A .
+7 3000 | — ~~
+! nan ~,
+I VOLUTE SUPPORT CYLINDER 'A',0UTSIDE ~~ ~
+o : _-
+2 — |
+3 2000 . ee Lo ef NOTE. 4 -- —
+z . FACE 1. AXIAL POSITION OF CYLINDER "A"
+x SHIELDING PLUS FATE ; 1S MEASURED FROM SPHERE ~TO-
+2 | CYLINDER JUNCTION
+Z 1000 — ; 2. RADIAL POSITIONS OF SHIELDING
+oo . : PLUG FACE AND TORISPHERICAL
+{/VOLUTE SUPPORT CYLINDER 4, NSICE SHELL ARE MEASURED FROM
+1 | | PUMP CENTER LINE
+0 t | i | | !
+0 2 a 6 8 10 12 vl 16 18
+
+POSITION (in.}
+
+Fig. A.4. Beta-Energy Distribution of Fuel Pump Tank, Volute Sup-
+port Cylinder, and Shielding Plug.
+33
+
+APPENDIX B
+
+Estimation of Outer Surface Temperatures and
+Heat Transfer Coefficients
+
+ 
+
+ 
+
+The GHT Code for calculating the complete temperature distribution
+of the pump tank could not consider the effects of the flowing air stream
+on the temperature distribution of the pump tank because of the tempera-
+ture rise of the cooling air along the pump tank surface. In order to
+obtain the temperature distribution, it was necessary to couple the pump
+tank surface with the surroundings by use of an effective heat transfer
+coefficient (h,.) and the ambient temperature. It was impractical to
+obtain an effective coefficient at each point along the surface, and
+therefore the value of ho was calculated at the cylinder-to-shell junc-
+tion, where the thermal stress problem was most severe, and then applied
+over the entire upper surface of the pump tank.
+
+The air-cooled upper portion of the fuel pump tank is shown sche-
+matically in Fig. B.l. The pump tank is subject to thermal radiation
+and convection heating from the fuel salt, fission-product beta heating,
+
+and gamma-radiation internal heating. This heat is conducted to the
+
+UNCLASSIFIED
+ORNL-LR-DWG 68996
+
+COOLING-AIR SHROUD Jv INSULATION
+
+777 7
+
+AN 1
+
+ 
+
+NN
+8 y
+COOLING - | 4 _
+AIR FLOW . 73-5 0. Y9a-s G=9t tas
+| aa
+
+VR
+F< er
+
+= hy (8,-65)
+
+ 
+
+ 
+
+q
+R f
+
+Fig, B.l. ©Schematic Diagram of Cooling-Air Shroud and Pump Tank
+Wall.
+34
+
+pump tank surface where it is transferred to the cooling air by two paths:
+(1) direct forced convection to the cooling air and (2) radiation to the
+cooling shroud and forced convection to the same cooling air. Heat is
+also conducted parallel to the pump tank surface, but this heat transfer
+is assumed to be zero in estimating the surface temperature and heat
+transfer coefficients.
+
+The temperature distribution through the pump tank wall can be calcu-
+lated? as outlined below, assuming a constant gamma heat-generation rate
+
+through the wall
+
+d~e
+oooh (B.1)
+ax k
+ae q
+—=-Zx+0 , (B.2)
+dx k
+dae q
+c,=—+—Lx . (B.3)
+dx k
+At the interior wall, where x = 0,
+ae
+
+50
+
+a6 Le + Ug
+- == J
+ax k
+and therefore
+ae + q
+(=m =-X B 3
+35
+
+and for any place within the wall, that is, x # O,
+
+de gq Xx dp + Ag ( 2
+— em el . B.
+ax k
+
+0 = — Lm — (ap +g) + c, . (B.5)
+
+and
+
+ 
+
+6, =6, — Y - (ap + %) . (B.6)
+
+If the heat transfer from the outer surface is expressed by an ef-
+fective coefficient with respect to the ambient temperature rather than
+the actual forced-convection cooling system temperature, the outer sur-
+
+face temperature can be calculated as follows from Eq. (B.6) with x = t:
+
+2
+
+at t
+o = 0, — —f— — ( + q ) (B.7)
+35% TT] de * 9%)
+
+where
+
+(6
+
+Ho
+1
+40
+|
+3°
+o
+|
+5°
+i
+re
+36
+
+and
+
+ 
+
+Qt’ t
+= 0, ~ =f — -qt- + B.8
+Qt” t
+6, =6, + - = , (B.9)
+37% TL %
+k k qt
+co emp me (8.10)
+TTT,
+9 = Bef = Bef ? (8.11)
+
+where 6c is the effective ambient temperature, and
+aq = hf) — heb, +t +a (B.12)
+
+Solving Eqs. (B.10), (B.1l), and (B.12) simultaneously for 6, yields the
+
+following equation:
+
+ 
+
+ 
+
+ 
+
+ 
+
+h ht+h Xk
+ce ce
+64 = 6 +
+h Bet + k(h, + he)
+hk k
++ 6. + Ag +
+h hot + k(h, + he) h, hot + k(h, + h,)
+t(h.t + 2k)
++ £ So (B.13)
+Bele? * k(h, * he) 2
+
+Solving Eq. (B.13) for he and rearranging the terms gives
+
+f f
+ho = . (B.14)
+(th, + k)(6, - 0,0)
+
+h k (6, - 6,4) + kag + t(h,t + 2k)
+
+v |e
+
+ 
+37
+
+The difficulty in calculating the outer surface temperature (6)
+from Eq. (B.13) results from the fact that the heat transfer coefficients
+he and bh, are highly temperature dependent, and 63 must be known before
+accurate coefficients can be calculated. However, for a given set of re-
+actor operating conditions, it is evident from the preceding equations
+
+that the selection of an arbitrary value of 6, will result in a particular
+
+value of the total heat transfer across the enter surface, and a particu-
+lar value of he is required to dissipate this quantity of heat to the
+surroundings. Since the temperature drop across the pump tank wall is
+small for the cases of interest, 5 can be used to compute the value of
+the internal surface heat transfer coefficient (he), and the value of
+h,_ can then be calculated by Eq. (B.14).
+
+The following procedure was used to estimate the effective outer
+surface heat transfer coefficients for various cooling-air flow rates:
+
+1. Values of h, versus inner surface temperature (6,) were calcu-
+
+£
+lated by Eq. (B.15), below, and plotted on Fig. B.2:1>
+
+Lo 4
+
+c FF (67 = 6%)
+
+n,=-SS2 LE 2 ia5 (B.15)
+17%
+
+2. The total heat transferred (a) was calculated versus the outer
+surface temperature (6) by Eq. (B.16), below, after first calculating
+
+UNCLASSIFIED
+ORNL-LR-DWG 64503
+
+ 
+
+—
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+600 700 800 800 {000 1100 1200 1300 t400
+SURFACE TEMPERATURE (°F}
+
+Fig. B.2. Pump Tank Inner Surface Heat Transfer Coefficient Versus
+Outer Surface Temperature.
+38
+
+ho by Eq. (B.14):
+
+q =h, (65-06,) . (B.16)
+
+3. The forced convection heat transfer coefficients for the pump
+tank outer surface and the cooling shroud were calculated as a function
+of air flow by Eq. (B.1l7) and plotted on Fig. B.3:14
+
+h, = 0.0225 %- (pr)°** (Re)°:8 (B.17)
+g
+
+4, The heat transferred to the cooling shroud by thermal radiation
+was calculated versus shroud temperature for each of several values of
+0, and plotted on Fig. B.3.
+
+At equilibrium conditions, the heat radiated to the shroud (a;_,)
+plus the heat transferred directly to the cooling air (a5_5) must equal
+
+the total heat transferred (a,), and the heat transferred from the shroud
+
+UNCLASSIFIED
+ORNL -LR-DWG 64504
+
+COOLING SHROUD TEMPERATURE (°F)
+180 1050 950 850 750 650 550 450 350
+
+ 
+
+6000
+
+ 
+ 
+  
+
+Ww
+Q
+Q
+Oo
+
+ 
+
+ 
+
+ 
+
+»
+o
+Q
+Oo
+
+3000
+
+ 
+
+n
+oo
+Q
+o
+
+ 
+
+ 
+
+oS
+&
+3
+
+ 
+
+ 
+
+ 
+
+HEAT TRANSFERRED TO COOLING SHROUD (Btu/hr 11%)
+
+ 
+
+ 
+
+fh, , CONVECTIVE HEAT TRANSFER COEFFICIENT (Btu/hr.f2.oF )
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+A
+
+ 
+
+[eo]
+
+300 400 500 600 700 800
+COOLING AIR FLOW (cfm)
+
+Fig. B.3. Convective Heat Transfer Coefficient Versus Air Flow and
+Heat Transferred to Shroud Versus Shroud Temperature,
+39
+
+to the cooling air (ay _5) must be equal to the heat transferred to the
+shroud from the pump tank. Therefore, for each assumed value of 035 the
+heat transferred to the shroud is calculated versus cooling air flow
+
+rate from the expression
+
+93.4 = % 93.5
+
+where
+
+9 = hoe (63 - 6) ’
+
+and
+
+The particular shroud temperature required to accept the heat (a5 4)
+from the pump tank surface is obtained from Fig. B.3. The heat transfer-
+
+red from the shroud to the cooling air is then calculated:
+
+= h, (6, —- 06
+
+Y.-5 5)
+
+For each value of 8 Ag _ys and 9 _5 are plotted versus cooling-air flow
+
+32
+rate as shown on Fig. B.4, and the intersection of the two curves deter-
+mines the cooling-alr flow rate that will produce the particular value
+
+of 6,. A plot of 6
+
+3 3
+in Fig. B.5, and the effective surface heat transfer coefficients h,
+
+versus cooling-air flow rate can then be made as
+
+e
+for use in the GHT Code can be calculated for any air flow rate using
+
+Eq. (B.14).
+40
+
+UNCLASSIFIED
+ORNL -LR-DWG 64508
+
+ 
+
+6000
+
+)
+wm
+o
+Q
+3
+
+ 
+
+ 
+
+ 
+
+4000
+
+ 
+
+ 
+
+3000
+
+2000
+
+ 
+
+2
+93-4 AND ¢,_, , TRANSFERRED HEAT (8tu/ne-ft
+
+{000
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Oo
+
+100 200 300 400 500 600
+COOLING AIR FLOW (cfm)
+
+Fig, B.4. Shroud Heat Transfer Versus Cooling Air Flow,
+
+UNCLASSIFIED
+ORNL ~LR-DWG 64506
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1400 | .
+- 1200 Yu NN
+& \ |
+w \\ {0-Mw NORMAL POWER OPERATION j
+D
+=
+< \\
+& 1000 AN SS -_
+= \ N
+ve \
+8 “ON
+g 800 ANN Pe —
+L N ~~ . Tn
+o NO ZERO-POWER OPERATION 1300°F SALT TEMPERATURE
+3 SN.
+= SN.
+x Saw
+© Sa
+Z 600 | : he —
+| ~~ -
+ZERO ~ POWER OPERATION 1200°F SALT TEMPERATURE" —~ ~1—=~—
+| | | |
+400
+0 100 200 300 400 500 600 700
+
+AIR FLOW (cfm)
+
+Fig. B.5. Nominal Surface Temperature Versus Cooling Air Flow.
+41
+
+APPENDIX C
+
+Derivation of Boundary and Compatibility Equations
+for Thermal Stress Calculations
+
+ 
+
+The procedures for calculating thermal stresses in cylinders and
+cones are fully described in refs. 6 through 9. The general layout of
+the pump tank structure and the sign convention used in the stress
+analysis are shown in Fig. C.1l. The cone-to-cylinder joint 1s assumed
+to be rigid. IT is necessary to evaluate four integration constants for
+each of the three members by solving 12 simultaneous equations describing
+the boundary conditions of the structure and the compatibility conditions
+which interrelate the three members at their junction. Since the posi-
+tion functions for cylinders are tabulated in ref. 8 only for positive
+values of L, the cone-to-cylinder junction is made the origin and the
+
+cylinder axis is assumed to be positive in either direction. This
+
+UNCLASSIFIED
+ORNL-LR-DWG 64507
+
+TOP FLANGE
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+CYL.A
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. C.l. Schematic Diagram and Sign Convention of Pump Tank Struc-
+ture.
+42
+
+assumption requires that the slope and the shear force equations be modi-
+fied by a sign change to compensate for the reversed sign on one of the
+cylinders,
+
+Derivations of the 12 simultaneous equations from the specific
+boundary or compatibility conditions are given below. The basic equa-
+tions for moment, displacement, slope, and shear force were obtained from
+ref. 6 for the cylinders and ref. 8 for the cone. The conical shell equa-
+tions differ somewhat from those presented in ref, 8 because a prelimi-
+nary version of the report was used that did not include the effects of
+a thermal gradient through the wall. All the terms considering the ef-
+fects of internal pressure and mechanical loading were omitted from both
+the cylindrical and conical shell equations.
+
+The following material constants, geometric constants, position con-
+
+stants, and auxiliary functions are used in the boundary and compatibility
+
+equations:
+E = 26.3 x 10° ,
+-6
+a= "7.81 x 10 5
+u=20.3 ,
+t =0.75 ,
+3
+D=— = 1.006 x 10° ,
+12(1 = p°)
+i
+- J
+a* + 4
+
+[oY
+I
+wl
+
+=
+43
+
+It was necessary to adjust the pump tank configuration slightly so
+that the boundaries of the separate members would coincide with tabulated
+
+values for the cone and cylinders:
+
+wm
+I
+Ww
+Ww
+(@]
+=
+Ut
+|
+=
+£
+0
+>
+
+¢ = 78.5 deg ,
+
+cot ¢ = 0.2035 ,
+
+Cc Cc Cc
+
+X,, = 2B,4Y,, = 6.2548
+
+Xo = 2B, Vion = 9.844 ,
+
+a, = 7.125 in, ,
+
+ 
+
+21
+
+Y, = — = 7.271 ,
+sin ¢
+
+Y ., = 18.0 in.
+
+c2
+a
+
+The values of X . and x, were adjusted to the nearest values tabulated
+
+cl 2
+
+in ref, 9:
+
+Xq = 6,30 ,
+a
+Yo = 26 = 7.376 ,
+Cc
+X.0 = 9,90 .
+
+The cylinder mean radius "a" was then corrected:
+
+a=Y_ sin ¢ = 7.228 ,
+
+ 
+
+cl
+2 1.6523 1.6523 _
+B” = == = vosa x oo = 02%,
+B= 0.55207
+Voi = BL; = 3.588 ,
+
+Vp; = BL; = 4,416
+L.,=6.51in. ,
+ai
+= 8.0 in. .
+
+=
+
+The values of Vai and Vy; Were adjusted to the nearest tabulated values
+
+in ref. 7.
+
+y, = 3.6 ,
+
+L, =6.521 ,
+
+Y= ON
+7.970
+
+oF
+45
+
+The following cylinder position functions were taken from ref. 7:
+
+ 
+
+ 
+
+Volute, Junction, Top Flange,
+Function Vy = 3.6 Va, b = 0 Vy = bb
+
+My 0.049 -2.0 0.007546
+M, -0.02418 0 -0.02337
+My -65.64 +2.0 -50.065
+M, 32.39 0 155.02
+Q 0.07319 -2.0 0.03091
+Q, 0.02482 -2.0 -0.01582
+Qj 33.25 -2.0 -104.95
+Q, -98.03 +2.0 -205.08
+Ny -0.01209 0 -0.01168
+N, -0.02450 +1.0 -0.00377
+N, -16.19 0 =77.51
+N, -32.82 +1.0 -25.03
+wi -0.01241 1.0 0.00791
+Ww) 0.03659 -1.0 0.01546
+wi ~49,02 1.0 -102.54
+wy -16.62 1.0 52.48
+
+The following cone position functions were taken from ref. 9:
+
+Junction, Cone Outer Surface,
+Function X_  =6.,3 X, =9.9
+cl c2
+Moa 3.3798
+M -1.0712
+y2
+M -0.00060L
+y3
+M -0.0013052
+NE
+Quq -0.45082 4.4317
+Quo 1.0224 -2.2413
+Qs -0.0004356 0.000010179
+Q -0.00014553 -0.000003558
+
+0
+~
+Function
+
+’
+Wo
+
+oo J Na He
+
+WW Hd oH
+Wl
+
+The cone auxiliary temperature functions were obtained from the
+
+following expressions:
+
+—(Bt cot ¢)
+
+ 
+
+2 a
+
+Cc
+
+oo Et 0 cot ¢ a=
+
+—2Et cot @
+Ig = 6 Toy = —17.183T
+c
+—-3Et & cot ¢
+J, = c T , = —19.165T7
+4 8 ch c
+
+Bp
+
+Cc
+
+T =
+Cc
+
+B
+
+46
+
+Junction,
+xX. = 6.3
+10.1451
+
+4.47331
+-0.001444
+
+0.004322
+
+13.313
+
+27.449
+
+-0.01553
+0.0051
+
+0.10078
+0.0071098
+2.2948
+1.9948
+
+9.9225
+19.845
+147.684
+19.691
+
+1
+
+4
+
+Cc
+
+—20.9T
+Cc
+
+Cone Outer Surface,
+X,=99
+c2
+-54.,918
+-108.588
+-0.00008719
+
+-0.0002494
+
+0.04081
+0.0011659
+3.1988
+2.8988
+
+24.5025
+
+49.005
+900.559
+120.074
+
+2
+
+- ro) = 459.957, — 11.5551 ,
+
+4 J
+
+5
+47
+
+The temperature distributions for the cylinders and cone were ex-
+
+pressed in the following forms:
+
+Cylinder "A"
+
+2 3
+_ J J I
+%, - Tor * Ton 8 + Tos (5) + Tos (3 *
+
+Cylinder "B"
+
+2 3
+_ L J I -dy
+6x = Ta + To 5 + T. 3 (¥) + To. (¥ + Tos e
+
+T
+cl 2 3
+6. = tT * Toate * TesXe * Teste
+
+At the pump volute (v, = 3.6), the slope of cylinder "A" = 0, and
+
++
+na n a2 a3
+
+aw, ap y v 2
+—2-0=—), C W —ax|T 21, — + 31, | - ,
+aL Et B &
+
+2
+sr _ Eta J J
+Y CoH = = =. vor Leor t] ,
+
+YC W/ = 279.04(T_, + 13.0427 , + 124.57T (c.1)
+na n al a a
+
+3 Zo
+
+At the pump volute (v, = 3.6), the radial displacement of "A" = —aao ,,
+
+and
+
+a
+Ya © = 50 L Cal —
+
+2 3
+— J J J
+a -. * Tao B * Ta3 (¥) + LY) ©] ?
+and therefore
+Yc N =0 . (c.2)
+na n
+
+At the cone-cylinder junction, the summation of moments = O, that is,
+
+My ~¥p * Mp =O ?
+
+ 
+
+ 
+
+and
+1 1
+C M —2DaT ,, — ——s C.M +
+bap? na a3 bap? nb n
+2 -dy
++ 2Da0T, + Db yy e + Y Corctiyn + J Ks +
++ 1.3d, + 2.3J5P, + 2.2d,P4 =0 ,
+—3 — Tout, + I
+—_— C M —-——rb C.M + C M =
+me na n bap? nb n nc yn
+2Dac(T,_ 4 —- LY — J.K, + 1.37, + 2.3J,P) +
+2 -d
++ 2.2d,P3 —Db7y e y 5
+— (2 Cott, = 2
+CC M =- C.M + C M =
+bap? ( na n nb y nc yn
+114.7(T, 4 - Ty 3) - 0.00711dy - 1.34, -
+Be
+- 122.82d, - 324.99, -_ 229.41T, » Fo (c.3)
+
+1
+49
+
+At the cone-cylinder junction, the summation of horizontal and vertical
+forces = 0, and therefore, for the vertical forces,
+
+QU sin ¢ + N, cos ¢ =
+or
+
+Q =x cos
+
+e c sin ¢
+For the horizontal forces,
+
+Q cos ¢ + N, sin ¢ =
+
+cos? ¢
+
+2
+_ . _ . _ cos” ¢
+N, sing * N, sin ¢ = N, (sa ¢ Sind ) .
+
+For the summation of horizontal forces on both the cylinders and the
+
+ 
+
+cone,
+
+ 
+
+. cos?
+UW * 9% -N. (sen ¢ = sin 2) =0,
+
+and
+
+1
+Zap 2 Chan * oDaaT_, + 73 ap L Cop n
+
++ 6DaoT. - Db oe” - 8 tan ¢ ¢ — sos 9) x
+
+X (CL Cacti + 87, yes ;
+2 (2 0, + Tory) +
+
+2 .
++ Pe tan ¢ (sso ¢- sin =) L Cnc? ne
+
+6.2094(79.383, + 3.095) -
+
+ 
+
+3
+_ b
+344.12(T_, + Tos) + 229.41T, = (A
+
+=
+50
+
+At the junction, the slope of Cylinder "A" = — slope of Cylinder "B,"
+and
+av _ dw,
+= J
+dL dL
+ap ’ = 2B ’ _ -dy
+Et Cran aT» ~ Et 2 Chiba + a0Tyn by e ?
+
+Eto Et -dy
+/ I —- LZ —_ =
+Chan + 2 Copa TB (T,, + Tyo) ap by e ?
+C_W/ +) C_W/=279.04(T_, + T,,) ~ 1116.2T 5 (C.5)
+nan nb n * a2 b2 *Tp5 Fl : :
+
+At the junction, the slope of Cylinder "A" = slope of the Cone "C," and
+
+aw du
+a __c
+- 2
+aL ay
+ap
+Coals - aT» =
+Et n
+6 2 , 2P5
+mo on OL Cpl = diy + JP + S (5+ 2)
+2
+af B
+— > c Ww — Stan” ¢ ) © W/o =
+na n t nc nc
+tT Cc
+2 2p,
+aFaT,_, + oN tan” @ JK) + I Py + BY (75 + JP) 5
+
+2
+ap Pe 2
+— ), Cc Ww — Stan ¢ ) © W/ = 1484.65T +
++ nan to nc nc al
+
++ 64.983(9.92257, - 10.1013, + 98.456J + 976.933, ) . (c.e)
+51
+
+At the junction, the displacement of Cylinder "A" = the displacement of
+Cylinder "B," that is,
+
+w= Wo,
+and
+a _ —- — -dy
+Et Li Crain ~ 3Ta1 ok L Cop n aly) =e ?
+\ \ 3 _ Et -dy
+L Chan L Copy = Bta(T,) Top) a © ’
+Y oc N=) CN =154.05(T , —T ) = e621 2 (c.7)
+na n nb n : al bl Fy . .
+
+At the junction, the displacement of Cylinder "A" = the displacement of
+
+the Cone, and
+
+w =ucos ¢=V sin ¢ ,
+
+ 
+
+2
+a _ tan” ¢ | 7 _
+er > CN aoT = cos ¢ Bt Cc WwW
+
+Py
+— J1K5 + J; log, 62 + (39, + 20,P) + Es) os] -
+
+ 
+
+. tan ¢ || 2
+sin ¢ EY, | CoV —- JK, + Jy log, Be +
+
+P
+3
++ (13.6J,P + 2.1d,)P; + (37, + 2JI FP + J,P5) 5 + A -
+
+. 2 3 4
+— sin ¢ (Toy + Teale * Toate * Teste * TesYe)
+
+2
+52
+
+a sin” sin” ¢ _
+t L Crain * t cos ¢ LC, — Woe) -
+
+2
+FaoT  — SH 9 (13.65,P. + 2.17
+
+al t, cos 0 41 3)P; -
+
+. 2 3 4
+— BE sin ¢ (T,, + TY, + T.5Y, + TY + T,5Y,)
+
+. 4 . 3
+Faosin ¢ (T _ + TY + ... + T.s%.) = BoY , sin ¢ 6, = EaoT 5
+
+cl cle al
+therefore
+£ FL Chall n stn St Ce Ve = Wye) =
+Ind (13.67,P) + 2.10,)P,
+and
+T 2 Cray * T5557 "0 ) © nel Vie - ne) =
+
+—12895.8J, - 200.687, . (c.8)
+
+At the outer surface of the cone, the slope = 0, and
+
+/
+Cncpe ~ Kd + Bydy +
+
+dy Et
+Cc c
+
+du 8 tan? ¢ >
+
+I
+O
+~
+
+2 3
+
+3
+/ — _— —_——
+Cprcne = 1K = 90 (33 + P1)
+53
+
+} / — —- - -
+) Cc, WN! = 0.0408], = 24.503J, — 600.377, — 14710.6J, . (c.9)
+At the cone outer surface, the meridional membrane force = 0, and
+—pP tang (-Y C a +8.J, +35) =0
+c ne ne 14 3 ’
+) CQ. = 8PyJ, + 30; = 196.027, + 37, . (c.20)
+At the top flange, the slope of Cylinder "B" = 0, and
+aw. ap y y 2
+b -dy
+—_—= — CW —ax |T , + 2T, , — + 3T (2) + by e =0 ,
+aL Et nb n b2 b3 B bs 8
+Yoo ow =Z2 rp sor Lyon yV| omy, ow
+mb'n TB | Tb2 b3 B 4 \ B ap 7 ’
+/ _ —
+Y, C_W/ = 279.04(Ty, + 15.94T, 5 + 190.561, ,)
+~ 1116.21, , 2 (C.11)
+“ps5 Fy :
+
+At the top flange, the displacement of Cylinder "B" = —a06,, and
+a L L >
+Vy TET Dy Colt, =a [To + Ty ET Tua ®) *
+I > -dy
+“Ty (3) — vy e = —all Tor = Tyo
+
+7 I > -dy
+Tos (%) + Ty (*) + T5 © 3
+
+a _ -dy _
+FT L Chop = 7 © ally 5 ©
+
+i
++
+
+~-dy
+
+J
+54
+
+_Et ay _ ay
+CaN =e BtQT , © ,
+4 —F
+Y CN = 154.05T, , ——= (c.12)
+nb n TTS F, : :
+
+The final forms of these 12 equations are arranged so that the left
+hand side containing the unknown integration constants is dependent only
+on the specific pump tank configuration, while the right side containing
+the temperature distribution terms will vary for each operating condition.
+
+The matrix of integration constant coefficients for the 12 equations is
+
+shown in Table C.1.
+55
+
+Table C.1.
+
+Simultaneous Equation Matrix
+
+ 
+
+Coefficients of Unknown Integration Constants C__, C_., and C
+na’ nb ne
+
+ 
+
+ 
+
+Equation
+Humber Cia Cos Cag, Cla, Civ Cop Cap Civ Cie Coc Cae Cle
+
+1 -0.01241  -0.03659  -49.02 -16.62 0 0 0 0 0 0 0 0
+
+2 -0.01209  -0.0245 ~16.19 -32.82 0 0 0 0 0 0 0 0
+
+3 -0.22696 0 0.22696 0 0.22696 0 -0.22696 0 3.3798 -1.0712 -6.01 x 107% -1.3052 x 1073
+A -0.1253 -0.1253 -0.1253 0.1253 -0.1253 -0.1253 0.1253 0.1253 -2.7993 6.3485 -2.705 x 1072  -9.03 x 107%
+5 1.0 -1.0 1.0 1.0 1.0 -1.0 1.0 1.0 0 0 0 0
+
+6 5.3205 -5.3205 5.3205 5.3205 0 0 0 0 -919.2 -290.69 0.009384 -0.28086
+7 0 1.0 0 1.0 0 -1.0 0 -1.0 0 0 0 0
+
+8 0 9.637 0 9.637 0 0 0 0 128.212 -264.36 -0.14957 4.912 x 107?
+9 0 0 0 0 0 0 0 0 -54,.918 -108.588  -8.719 x 107°  -2494 x 10%
+10 0 0 0 0 0 0 0 0 4.4317 -2.2413 1.018 x 107°  -3.558 x 107°
+11 0 0 0 0 7.91 x 1073 1.546 x 1072 -102.54 52.48 0 0 0 0
+12 0 0 0 0 -1.168 x 1072 -3,77 x 1073 -77.51 -25.03 0 0 0 0
+
+ 
+56
+
+APPENDIX D
+
+Explanation of Procedure Used to Evaluate the Effects of
+Cyclic Strains in the MSRE Pumps
+
+ 
+
+J. M. Corum
+
+An essential difference in structural design for high-temperature
+operation as compared with design for more modest conditions is the need
+to consider creep and relaxation of the structural material. Many of the
+methods and procedures presently specified as a structural design basis
+in the ASME Boiler and Pressure Vessel Code, Unfired Pressure Vessels,
+Section VIII, and in the preliminary design basis developed by the Navy’
+become meaningless at high temperatures. Thus a revised design basis
+must be formulated when high-temperature conditions are considered, The
+operating program of any component must be examined, and the design basis
+selected must be used to determine whether the number of operational cycles
+which can be safely tolerated exceeds the number of the cycles which is
+desired during the life of the component. If necessary, the number of
+operational cycles of the component must be limited to the value which
+can be safely tolerated. As may be seen, the details of the operating
+program are extremely important and must be selected with considerable
+care.
+
+The concept of stress is used here as a convenience in discussing
+the effects of cyclic strains because it is the principal variable in ;
+conventional problems of elasticity. Properly, however, the discussion
+should be in terms of strains when dealing with high temperatures and,
+especially, in describing thermal effects in structures. With these
+factors in mind, four general types of stresses were considered in es-
+tablishing a design basis for the MSRE pumps which will operate at tem-
+peratures within the creep and relaxation range; these are primary,
+secondary, local or peak, and thermal. The primary stresses are direct
+or shear stresses, developed by the imposed loading, which are necessary
+to satisfy only the simple laws of equilibrium of external and internal
+
+forces and moments. When primary stresses exceed the yield strength of
+57
+
+the material, yielding will continue until the member breaks, unless
+strain hardening or redistribution of stresses limits the deformation,
+Secondary stresses are direct or shear stresses developed by the con-
+straint of adjacent parts or by self-constraint of the structure. Sec-
+ondary stresses differ from primary stresses in that yielding of the ma-
+terial results in relaxation of the stresses. Local or peak stresses
+are the highest stresses in the region being studied. They do not cause
+even noticeable minor distortions and are objectionable only as a pos-
+sible source of fatigue cracks. Thermal stresses are internal stresses
+produced by constraint of thermal expansion. Thermal stresses which in-
+volve no general distortion were considered to be local stresses. Thermal
+stresses which cause gross distortion, such as those resulting from the
+temperature difference between shells at a Junction, were considered to
+be secondary stresses.
+
+In the present examination, four sources of stresses were considered.
+Pressure differences across the shells will produce membrane pressure
+stresses. These stresses are primary membrane stresses. The pressure
+differences will also produce discontinuity stresses, which are secondary
+bending stresses. Temperature gradients along the shells will produce
+stresses which are due both to the temperature variations and to the dif-
+ferential-expansion-induced discontinuities at the shell junctions. These
+stresses are secondary bending stresses. Temperature gradients across
+the walls of the shells will produce thermal stresses which are assumed
+to be local stresses.
+
+The ASME Code 1s generally accepted as the basis for evaluating pri-
+mary membrane stresses, and the allowable stresses for INOR-8 at the op-
+erating temperatures of the pumps were obtained from the criteria set
+forth in the code, with one exception. A reduction factor of two-thirds
+was applied to the stress to produce a creep rate of 0.1% in 10 000 hr
+in order to avoid possible problems associated with the effect of irradia-
+tion on the creep rate.* The maximum allowable stress at 1300°F is 2750
+
+psi, and the primary membrane stresses were limited to this value. The
+
+ 
+
+*Based on data from R. W. Swindeman, ORNL.
+58 .
+
+primary stresses were not considered further except from the standpoint ~~
+of excessive deformations produced by primary plus secondary stresses.
+
+In order to evaluate the effects of secondary and local stresses,
+repetitive loading and temperature cycles must be considered because
+fractures produced by these types of stress are usually the result of
+strain fatigue. Data which give the cycles-to-failure versus the total
+or plastic strain range per cycle may be used for studying cyclic condi-
+tions. The total strain range per cycle is defined as the elastic plus
+plastic strain range to which the member is subjected during each cycle,
+
+The plastic strain range per cycle is the plastic component of the total
+
+strain range per cycle. The strain-cycling information may be compared
+
+with the calculated cyclic strains in the member. Since most formulas
+
+express stress rather than strain as a function of loading or tempera- -
+ture distribution, assuming elastic behavior of the material, it is con-
+venient, as stated before, to transform the test data from the form of
+strain versus cycles-to-failure to the form of stress versus cycles-to-
+failure by multiplying the strain values by the elastic modulus of the
+material, The resulting values have the dimensions of stress but, since
+the tests were made in the plastic range, they do not represent actual
+stresses.
+
+When the analysis of stresses in a member reveals a blaxial or tri-
+axial stress condition, it is necessary to make some assumption regarding
+the failure criterion to be used. In the plastic range, where most of
+the significant secondary and local stresses lie, there is no experimental
+evidence to indicate which theory of failure is most accurate. There-
+fore, it has been recommended’ that the maximum shear theory be used,
+since it is a little more conservative and results in simpler mathemati-
+cal expressions. The following steps used in developing the procedure
+were taken from ref, 3:
+
+1. Calculate the three principal stresses (oy, 02, 03) at a given
+point,
+
+2. Determine the maximum shear stress which is the largest of the
+
+three quantities
+1
+5 (op =o)
+5 (0, = 03)
+oY
+1
+5 (0p — 03)
+
+3. Multiply the maximum shear stress by two to give the "maximum
+intensity of combined stress.”
+
+4. Compare this quantity with the E Ac values obtained from uni-
+axial strain-cycling tests.
+
+Stated more simply, the procedure is to use the stress intensity
+representing the largest algebraic difference between any two of the three
+principal stresses.
+
+The procedure outlined above for evaluating the effects of cyclic
+loadings and cyclic thermal strains was used to examine the cyclic sec-
+ondary and local stresses which will be produced in portions of the MSRE
+pumps. The procedure is essentially that specified by the Navy Code;
+however, the Navy Code was developed primarily for applications in which
+the maximum temperatures would be below those necessary for creep and re-
+laxation of the material. Thus, several of the steps outlined in the
+Navy Code were modified for the present evaluation.
+
+The assumption was made that the Temperatures were sufficiently high
+and that the times at these temperatures were sufficiently long for com-
+plete stress relaxation to occur, Thus the strains which the elastically
+calculated stresses represented were taken as entirely plastic. On this
+basis, strain cycling data in the form of plastic rather than total strain
+range per cycle versus cycles-to-failure were used, Figures D.1l and D.2,
+which give strain fatigue data for INOR-8 at 1200 and 1300°F, were ob-
+tained from a limited number of strain-cycling tests performed by the
+ORNL Metallurgy Division. The dashed curves were obtained from the plas-
+
+tic strain range per cycle curves and represent a conservative estimate
+60
+
+UNCLASSIFIED
+
+ 
+
+ORNL-LR-DWG 64508
+0
+
+10
+
+5 oi ” 2 =
+
++ Pe STRAIN RATIO: #=~1
+
+2 i : FREQUENCY : 2 cycles/hr «
+£ of £=265x108 psi
+=. 10
+£
+Ws
+oo
+x 2 +--+ 1 CONSERVATIVE ESTIMATE OF TOTAL STRAIN
+2 RANGE PER CYCLE
+& :
+e :
+z 5z
+[id
+=
+I 2
+x PLASTIC STRAIN RANGE PER
+= 1073
+w
+ow —
+J 5
+
+2
+
+104 ) 1 2 3 4 5 8
+
+otz 5 1002 5 102 502 5 1°02 5 102 5 1002 5 ©
+
+N, CYCLES TO FAILURE
+
+Fig. D.1. Strain Fatigue Curves for INOR-& at 1200°F.
+
+UNCLASSIFIED
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+    
+ 
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+iC ORNL-LR-DWG 64509
+Es ER eae | Eee
+5 — ihn | [EE
+
+[TT ! TT lelp i
+PNG be bo eo... STRAIN RATIO: R=—1 tk
+
+2 TN bos ee FREQUENCY: 2s cycles/min —— || i
+
+4 ; i £=255x108 psi ‘ i
+
+10 + Foden Hi !
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+] Tv
+Tree
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1
+Trine
+
+t
+
+I
+
+it
+1
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
++H Lobo. .
+Tt f tH !
+MATE OF TOTAL STRAIN [nll
+
+Fl
+
+ 
+
+cred ;
+_.-+~ CONSERVATIVE EST
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+er per de 1 erie . ~
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Ae, STRAIN RANGE PER CYCLE (infin)
+35
+
+0
+-
+>
+Ho
+1d
+of O
+vw
+=
+x
+=
+Zz
+LA
+b=
+HZ
+©
++m
+10
+m
+pel
+oO
+-<
+O
+re
+m
+1
++
+¥
+J
+/
+1
+}
+I
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+‘a Co Ll [
+
+ 
+
+ 
+
+|
+; |
+o'2 5s 102 5 2 5 1022 5 10°2 5 tz 5 1002 5 10°
+N, CYCLES TO FAILURE
+
+ 
+
+Fig. D.2. Strain Fatigue Curves for INOR-8 at 1300°F.
+61
+
+of the total strain range per cycle. It was assumed that the material
+exhibits perfect plasticity above the proportional limit (no strain
+hardening), and the elastic strain at the proportional limit was added
+to the plastic strain range at each point. The dashed curves were used
+to obtain an estimate of the cycles-to-fallure, assuming that no relaxa-
+tion or strain-hardening occurs, Strain hardening would displace the
+dashed curves upward.
+
+Figures D.3 and D.4, which give the stress amplitude versus number
+of cycles for INOR-8 at 1200 and 1300°F with complete relaxation, were
+derived from the solid curves for Figs. D.1l and D.2 by multiplying the
+plastic strain range by E to obtain a pseudo stress range and then di-
+viding by 2 to obtain the alternating stress. The dashed curves in Figs.
+D.3 and D.4 represent the results of this operation. The solid curves
+represent the allowable values of alternating stress and were constructed
+by placing a factor of safety of at least 10 on cycles and a factor of
+safety of at least 1.5 based on stress. The safety factor of 10 on cycles
+is based on uncertainties in the calculations, scatter of test data, size
+effects, surface finish, atmosphere, etc, These reduction factors are
+less conservative than those specified by the Navy Code. However, they
+have been used in high-temperature design for several years at ORNL, and
+the current feeling of one of the originators of the Navy Code is that
+the reduction factors specified in that document are over-conservative
+and will be reduced to those used in this investigation.¥* Figures D.5
+and D,.6 were obtained in the manner as Figs. D.3 and D.4 but were based
+on total strain rather than plastic strain. They represent allowable
+values of alternating stress if no relaxation occurs.
+
+The life of a component undergoing cyclic strain depends on mean
+strain as well as cyclic strain; however, for most applications in which
+the loading is almost entirely due to thermal cycling and no severe
+strain-concentrations exist, the effect of mean strain can be expected
+to be secondary to that of cyclic strain. For these applications, cyclic
+
+life can be determined directly from strain range computations.'® The
+
+ 
+
+*¥Personal communications between B, F. Langer of Westinghouse Electric
+Corp., Bettis Plant, and B. L. Greenstreet, ORNL.
+62
+
+UNCLASSIFIED
+ORNL-LR-DWG 64510
+
+-£_ Ae, (FROM STRAIN CYCLING DATA)
+
+Cp]
+
+~ ALLOWABLE STRESS AMPLITUDE BASED ON
+
+STRAIN CYCLING DATA WITH A REDUCTION
+FACTOR OF 10 ON CYCLES OR 1.5 ON SS
+
+ALTERNATING STRESS (psi)
+
+ 
+
+N, NUMBER OF CYCLES
+
+Fig. D.3. Stress Amplitude Versus Number of Cycles for INOR-8 at
+1200°F with Complete Stress Relaxation.
+
+UNCLASSIFIED
+6 ORNL-LR-DWG 64511
+
+   
+
+7 2 : * br i
+= £_ Ae, (FROM STRAIN CYCLING DATA}
+ow ,5 > p
+» 10 Le E - “i ops
+Ll - oo -
+o PFI
+E
+«5
+oO
+Z
+=
+g ALLOWABLE STRESS AMPLITUDE
+x 2 - NE To ST IR | BASED ON STRAIN CYCLING DATA
+o WITH A REDUCTION FACTOR OF 10
+Z 10% ON CYCLES OR £5 ON STRESS
+So
+5
+Po.
+2
+10°
+
+0 2 5 10° 2 5 10° 2 5 0b 2 5 10° 2 5 10°
+
+N, NUMBER OF CYCLES
+
+Fig, D.4. Stress Amplitude Versus Number of Cycles for INOR-8 at
+1300°F with Complete Stress Relaxation.
+63
+
+UNCLASSIFIED
+ORNL-LR-DWG 64512
+
+£
+
+j = Ae, (FROM STRAIN CYCLING DATA)
+
+FA fH
+ALLOWABLE STRESS AMPLITUDE BASED ON STRAIN
+
+CYCLING DATA WiTH A REDUCTION FACTOR OF 10 ON
+CYCLES OR 1.5 ON STRESS
+
+ALTERNATING STRESS (psi)
+
+ 
+
+0 2 5 10° 2 5 10° 2 5 1 2 5 10° 2 5 10
+
+N, NUMBER OF CYCLES
+
+Fig. D.5. Stress Amplitude Versus Number of Cycles for INOR-8 at
+1200°F with No Relaxation.
+
+UNCLASSIFIED
+ORNL -LR-DWG 64513
+
+   
+
+~ 2
+%
+= (3
+0 10
+w
+ut
+=
+5 5
+2 0 J HE
+z “£ Ae, (FROM STRAIN CYCLING DATA) ~~
+HE TET
+Gi
+510° > HE il, ALLOWABLE STRESS AMPLITUDE BASED ON STRAIN
+< o : CYCLING DATA WITH A REDUCTION FACTOR OF 10 ON
+CYCLES OR 1.5 ON STRESS
+5 - Poppe
+2
+10* L > 3 2 5 5
+00 2 5 100° 2 5 © 2 5 10 2 5 O 2 5 10
+
+N, NUMBER OF CYCLES
+
+Fig. D.6. Stress Amplitude Versus Number of Cycles for INOR-8 at
+1300°F with No Relaxation.
+64
+
+effect of mean strain is further reduced when gross relaxation takes place
+during each cycle, as is expected in the present case. Thus for the MSRE
+pump stress evaluation, the mean strain was assumed in all cases to be
+zero, and the effect of cyclic stresses was determined directly from the
+plots of the allowable alternating stress versus the number of cycles.
+
+Each of the components examined will be subjected to several opera-
+ting conditions. Since strains will occur that are beyond the elastic
+limit, the structural evaluation was based on a finite life, and the
+damaging effect of all significant strains was considered.
+
+Suppose, for example, that the stresses produced by n different op-
+erating conditions have been determined and that it has been found that
+
+these stresses will produce values of S, which can be designated as
+
+1t
+515 5,5 cee S, It is also known that 51 is repeated Py times during the
+life of the component, and Sy is repeated I times, etc. From Figs. D.3
+and D.4 it is found that Ns Ns» AN N, are the allowable cycles for each
+
+of the calculated stresses. The values p,/N,, P,/N,, ces p,/N, are called
+cycle ratios because they represent the fraction of the total life which
+is used at each stress value. As a first approximation, an application
+
+might be considered satisfactory if
+
+i=n
+
+i
+y §, < tO .
+i=1
+
+Fatigue tests have shown, however, that failure can occur at cumulative
+cycle ratio summations different from unity. If the lower stress values
+are applied first and followed by the higher stress values, the cycle
+ratio summation at failure can be "coaxed" as high as 5. On the other
+hand, if the most damaging stresses are all applied first, failure can
+occur at cycle ratio summations as low as 0.6, or even lower. These are
+extreme conditions and are based on low-temperature fatigue data which
+may or may not be representative of behavior under strain cycling. For
+random combinations, cycle-ratio summations usually average close to
+unity. Therefore, 0.8 was used in the present evaluation as a conserva-
+
+tive allowable limit.
+65
+
+It should be noted that in correctly applying any design criteria,
+a point-by-point analysis must be made. That is, the complete operating
+history for each single point must be examined. Short cuts may sometimes
+be taken, but they must necessarily lead to overly conservative results.
+
+In summary, the permissible cycles of each type were determined for
+the MSRE fuel and coolant pumps by combining the secondary and local
+stresses at each point. Points were then found which gave maximum values
+for the "maximum intensity of combined stress.” These latter values were
+divided by 2 to obtain the alternating stress. The allowable number of
+cycles for each alternating stress were obtained from Figs. D.3 or D.4,
+assuming complete relaxation. The cycle ratios were then obtained that
+were based on the expected number of times each stress will be repeated,
+and various combinations of the cycle ratios were summed at a particular
+point and compared with the 0.8 limit. To investigate the increase in
+life if no relaxation occurred, Figs. D.5 and D.6 were used in place of
+
+Figs. D.3 and D.4.
+C
+ne
+
+D = Bt>/[12(1 - 12) ]
+
+da =1v/p
+
+eal
+
+1}
+
+eo)
+
+®
+os
+<
+
+66
+
+NOMENCLATURE ~
+
+Volute support cylinder mean radius
+
+Exponential constant in cylinder "B" tempera-
+ture equation
+
+Integration constants
+
+Integration constants for cylinder "A"
+(n=1, 2, 3, 4)
+
+Integration constants for cylinder "B"
+(n=1, ..., 4)
+
+Integration constants for cone (n = L ..., 4)
+Flexural rigidity of cylinder
+Dimensionless temperature parameter
+
+Modulus of elasticity
+
+Geometric constants for radiation heat transfer
+Forced convection heat transfer coefficient
+
+Effective heat transfer coefficient of pump
+tank outer surface
+
+Heat transfer coefficient of pump tank inner *
+surface
+
+Auxiliary temperature functions for cone
+(n=1, ..., 4)
+
+Thermal conductivity of INOR-8
+
+Auxiliary stress functions for conical shells
+(n=1, «ov, 4)
+
+Axial cylinder position from cone-to-cylinder
+Junction
+
+Bending moment
+an
+
+67
+
+Bending moment functions for cylinder (n =1,
+4)
+seo
+
+Bending moment functions for meridional plane
+of cone (n =1, v.., 4)
+
+Bending moment functions for circumferential
+plane of cone (n = 1, ..., 4)
+
+Membrane force
+
+Menibrane force functions for cylinder (n = 1,
+. * 4)
+*
+
+Membrane force functions for circumferential
+plane of cone (n =1, ..., 4)
+
+Auxiliary stress functions for conical shells
+(n=1, «.., 4)
+
+Prandtl number
+Normal shear force
+
+Shear force functions for cylinder (n = 1,
+
+cee 4)
+Shear force functions for come (n = 1, ..., 4)
+Heat transferred across inner pump tank surface
+Heat transferred across outer pump tank surface
+
+Heat input to inner pump tank surface by fission-
+product-gas beta radiation
+
+Internal heat generation rate from gamms radia-
+tion
+
+Heat transferred from outer pump tank surface
+to cooling shroud
+
+Heat transferred from outer pump tank surface
+to cooling air
+
+Heat transferred from the cooling shroud to the
+cooling air
+
+Reynold's number
+
+Constants in cylinder "A" temperature equation
+(n=1, vou, 4)
+bn
+
+cn
+
+>
+i
+
+2B, T.
+
+BL
+
+ed
+i
+
+Y
+Cc
+
+a
+
+-E
+
+10.92 cot? ¢ 1/4
+be =|
+Cc
+a
++ 4
+0
+0
+
+68
+Constants in cylinder "B" temperature equation
+(n=1, «vay, 5)
+
+Constants in cone temperature equation (n = 1,
+. 5)
+se
+
+Wall thickness of cylinder
+
+Wall thickness of cone
+
+Thickness of cooling air gap
+
+Displacement of cone perpendicular to surface
+
+Meridional displacement of cone
+
+Displacement functions for cone (n = 1, ..., 4)
+Radial displacement
+Displacement functions for cone (n = 1, ..., 4)
+
+Slope functions for cylinder (n = 1, ..., 4)
+Slope functions for cone (n = 1, ..., 4)
+Distance through pump tank wall
+Dimensionless coordinate of cone
+Dimensionless coordinate of cylinder
+Meridional position on cone from apex
+
+Coefficient of thermal expansion
+
+Characteristic length of cylinder
+
+Coordinate transformation parameter for cone
+
+Temperature
+
+Local temperature
+Subscripts
+
+a
+
+b
+
+69
+
+One half of cone vertex angle
+Poisson's ratio
+Bending stress
+Membrane stress
+
+Principal meridional stresses inside and out-
+side
+
+Principal circumferential stresses inside and
+outside
+
+Stefan-Boltzman constant
+
+Cylinder "A" (internal volute support cylinder)
+Cylinder "B" (external volute support cylinder)
+
+Cone (substitute for pump tank spherical shell
+in thermal stress calculations)
+
+Meridional plane
+
+Circumferential plane
+70
+
+ACKNOWLEDGMENTS
+
+The author wishes to acknowledge the work of J. M. Corum in the
+preparation of Appendix D, "Procedure Used to Evaluate the Effects of
+Cyclic Strains in the MSRE Pumps." The Oracle Stress Analysis Program
+used to determine stresses produced by pressure and axial loads was
+prepared by M. E. LaVerne. The assistance of F. J. Witt in regard to
+
+the thermal stress calculations is also acknowledged.
+0 0020 bro
+
+25-39.
+
+48.
+49.
+50.
+51.
+52.
+
+Ww
+Ww
+
+100-101.
+102.
+103.
+104,
+105.
+
+106-120.
+
+.
+
+ARERgENNEEYYE EW QrPgEYqGAGqHEgHnNQIQREREQRZ n®
+
+EHEPaOHOZ ODEO OHO OEP HE > RAE
+
+»
+
+71
+
+Internal Distribution
+
+ 
+
+M. Adamson
+
+. BE. Beall
+. Bender
+
+E. Bettis
+3S. Bettis
+Blander
+
+. G. Bohlmann
+
+E. Bolt
+
+J. Borkowski
+F. Boudreau
+A. Brandon
+B
+
+Conlin
+Corbin
+Corum
+Cristy
+
+. Crowley
+DeVan
+Douglas
+
+. Dunwoody
+Engel
+Fraas
+
+. Gabbard
+Gallaher
+Greenstreet
+Grindell
+Guymon
+Harley
+Haubenreich
+Hise
+Hoffman
+Holz
+
+Kedl
+
+Lane
+
+. LaVerne
+Lundin
+Lyon
+
+54.
+55.
+56.
+57.
+58.
+59.
+60.
+cl.
+62.
+63.
+64.
+65.
+66.
+67.
+68.
+69.
+70.
+71.
+72.
+73.
+Tees
+75.
+76.
+77.
+78.
+79.
+80.
+81.
+82.
+83.
+84.
+85.
+86.
+
+87-88.
+89-90.
+91-93.
+94-98.
+
+99.
+
++. G. MacPherson
+
+. D. Manly
+
+. McDonald
+McGlothlan
+
+. Miller
+
+Moyers
+
+. Northup
+
+. Parsly
+
+atriarca
+
+Payne
+
+Perry
+
+. Robertson
+
+. Rosenthal
+
+. Savage
+
+. Savolainen
+Schneider
+
+Scott
+
+J. Skinner
+
+N. Smith
+
+G. Smith
+
+Spiewak
+
+Squires
+
+J. Stanek
+
+A. Swartout
+
+. Taboada
+
+Tallackson
+
+Trauger
+
+. Ulrich
+
+Weinberg
+
+Westsik
+
+. Witt
+
+Wilson
+
+. Young
+
+Reactor Division Library
+Central Research Library
+Document Reference Section
+Laboratory Records Department
+Laboratory Records, ORNL-RC
+
+=~
+
+ZEnFmaRIdyHEEQO
+
+FES REPENS EEE EE ARE ENBa Eas
+
+dum z QW
+
+[a
+Q
+
+External Distribution
+
+ 
+
+Reactor Division, AEC, ORO
+Division of Research and Development, AEC, ORO
+
+F. P. Self, AEC, ORO
+W. L. Smalley, AEC, CRO
+J. Wett, AEC, Washington
+
+Division of Technical Information Extension

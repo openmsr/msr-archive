@@ -1,0 +1,5784 @@
+ 
+
+£™
+
+{RB
+
+ 
+
+DATE:
+
+SUBJECT:
+
+TO:
+
+FROM:
+
+OAK RIDGE NATIONAL LABORATORY
+
+OPERATED BY
+UNION CARBIDE CORPORATION
+NUCLEAR DIVISION
+
+UNION
+CARBIDE
+
+POST OFFICE BOX X
+OAK RIDGE, TENNESSEE 37830
+
+March 2, 1970
+
+Calculation of Stresses During a Thermal
+Transient in a MSBR Outlet Nozzle
+
+Distribution
+
+J. L. Spoormaker*
+
+ABSTRACT
+
+Internal Use Only
+
+ 
+
+ 
+
+ORNL
+CENTRAL FILES NUMBER
+
+70-3=2
+
+ 
+
+COPY NO. 41
+
+Information is given about the thermal stresses devel-
+
+oped in the outlet nozzles of a reactor vessel for a 1000
+
+Mw(e) Molten-Salt Breeder Reactor for several step changes in
+
+the salt temperature. Calculation of the temperature distri-
+
+butions, as well as of the stresses, was carried out by finite
+
+element computer programs. Step temperature changes of 1300
+to 1400°F, 1300 to 1600°F, 1300 to 1800°F, 1300 to 1200°F,
+and 1300 to 1100°F were considered. For each step change the
+
+number of cycles to fallure was estimated and an estimation
+
+of whether or not gross cyclic yielding would occur was made.
+
+ 
+
+*¥On assignment to ORNL from Delft Technological University,
+The Netherlands, under a fellowship program sponsored by the
+
+Dutch Government.
+
+NOTICE This document contains information of a preliminary nature
+and was prepared primarily for internal use at the Oak Ridge
+National Laboratory. It is subject to revision or correction and
+therefore does not represent a final report. The information is
+only for official use and no release to the public shall be made
+without the approval of the Legal and Information Control Depart-
+
+ment of Union Carbide Corporation, Nuclear Division.
+
+ 
+
+ 
+ 
+
+ 
+
+1.
+2.
+
+OC 0 I O
+
+INTRODUCTION
+
+3
+
+CONTENTS
+
+LIST OF FIGURES
+NOMENCLATURE
+
+DESCRIPTION OF CONFIGURATION AND FINITE
+
+ELEMENT IDEALIZATTION
+
+2.1. Configuration .....eeeeverereneereeneeeoescaoocons
+2.2. Finite Flement Mesh ..¢veeeeeeeececsocecaocacsanes
+TEMPERATURE DISTRIBUTION CAICULATIONS tvs evececccosceoocons
+
+STRESS ANALYSTS
+
+4.1.
+4.2.
+
+5.1.
+5.2.
+5.3.
+5.4.
+5.5.
+5.6.
+
+CONCLUSIONS
+
+REFERENCES
+ACKNOWLEDGEMENTS .
+
+General Remarks
+
+Evaluation of Stresses
+RESULTS OF STRESS COMPUTATIONS ....
+Steady-State Condition ...
+
+Step Change 1300
+Step Change 1300
+Step Change 1300
+Step Change 1300
+Step Change 1300
+
+— 1400°F
+— 1600°F
+
+@ @ 0 0 0 0 0 0&6 0 0 0 0 0 0 0 0 6 0 0 0 0 0 9
+e 0 @ 0 0 0 0 0 0 0 06 0 0 0 0 0 0 0 0 0 0 0 oo
+® 0 © 0 © 0 0 0 0 86 8 0 0 0 0 © 9 0 0 0 0 0 0
+® 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 06 0 0 0 0
+@ 0 0 0 0 0 0 0 0 0 06 0 0 0 0 0 0 0 0 0 8 0 0 oo
+@ 6 0 06 0 6 0 6 0 0 0 8 0 8 8 0 0 0 0 0 0 0 00
+® 0 0 0 0 0 0 0 0 0 0 0 06 0 0 b 0 0 0 0 0 oo 0
+@ © 0 0 0 & 0 06 0 0 0 oo 8 © 0 0 0 0 0 oo 0 0 0 0
+® 0 © 0 ¢ © 0 & 0 © 0 0 0 O06 0 0 0 0 0 O66 0 0 oo
+o ® o 06 6 6 0 oo 0 o o ® ® ® ®
+[2 J [ 2 J [ J o eo eo oo
+
+11
+
+12
+12
+12
+13
+14
+14
+14
+17
+17
+17
+18
+18
+19
+20
+20
+21
+
+22
+23
+
+ 
+Fig.
+Fig.
+Fig.
+Fig.
+Fig.
+Fig.
+Fig.
+Fig.
+Fig.
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+OO 00 JI O00 ut HA LW NV HH
+
+-
+Oo
+
+H
+H
+
+12.
+
+13.
+
+14.
+
+15.
+
+16.
+
+17.
+
+18.
+
+19.
+
+20.
+
+21.
+
+22.
+
+23.
+
+24
+
+LIST OF FIGURES
+
+MSBR Reactor Vessel Flow Schematic.
+MSBR Reactor Vessel Simplified Outlet Configuration.
+MSBR Reactor Vessel Simplified Outlet Nozzle Detail.
+Plot of the Outline of the Configuration.
+
+Subplot of the
+Subplot of the
+Subplot of the
+Subplot of the
+Design Fatigue
+
+Various Criteria for the
+
+for INOR-8.
+
+Temperature
+Condition.
+
+Temperature
+Condition.
+
+Temperature
+Condition.
+
+Temperature
+Condition.
+
+Temperature
+Condition.
+
+Temperature
+Condition.
+
+Distribution
+
+Distribution
+
+Distribution
+
+Distribution
+
+Distribution
+
+Distribution
+
+Element Idealization
+Element Idealization
+Element Idealization
+
+Element Idealization
+
+(Pipe Region).
+(Intersection Region).
+(Nozzle Wall Region).
+(Flat Plate).
+Strength, Ss for Ni-Mo—Cr Alloy.
+
+Determination of the Design Stresses
+
+Across Section A-A in the Steady-State
+
+Across Section
+
+Across Section
+
+Across Section
+
+Across Section
+
+Across Section
+
+Stress Distribution Across Section A-A
+
+Condition.
+
+Stress Distribution Across Section B-B
+
+Condition.
+
+Stress Distribution Across Section C=C
+
+Condition.
+
+Stress Distribution Across Section D-D
+
+Condition.
+
+Stress Distribution Across Section E-E
+
+Condition.
+
+B-B in the Steady-State
+
+C-C in the Steady-State
+
+D-D in the Steady-State
+
+E-E in the Steady-State
+
+F-F in the Steady-State
+
+in
+
+in
+
+in
+
+in
+
+in
+
+the Steady-State
+
+the Steady-State
+
+the Steady-State
+
+the Steady-State
+
+the Steady-State
+
+Temperature Distribution Across Section A-A After the Step
+Change 1300 — 1400°F.
+
+Temperature Distribution Across Section B-B After the Step
+Change 1300 — 1400°F.
+
+Temperature Distribution Across Section C-C After the Step
+Change 1300 — 1400°F.
+
+ 
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+25.
+
+26.
+
+27 .
+
+28.
+
+29.
+
+30.
+
+31.
+
+32.
+
+33.
+
+34.
+
+35.
+
+36.
+
+37.
+
+38.
+
+39.
+
+40.
+
+41.
+
+42.
+
+43.
+
+bts,
+
+45,
+
+Temperature Distribution Across Section D-D After the
+Change 1300 — 1400°F.
+
+Temperature Distribution Across Section E-E After the
+
+Change
+
+Stress
+1300 —
+
+Stress
+1300 —
+
+Stress
+1300 —
+
+Stress
+1300 —
+
+Stress
+
+Temperature
+Change 1300
+
+Temperature
+Change 1300
+
+Temperature
+Change 1300
+
+Temperature
+Change 1300
+
+Temperature
+Change 1300
+
+Stress Distribution Across Section
+1300 — 1600°
+
+1300 — 1400°F
+
+Distribution Across
+1400°F.
+
+Distribution Across
+1400°F.
+
+Distribution Across Section C-C After the Step
+1400°
+
+Distribution Across Section D-D After the Step
+1400°F.
+
+Distribution Across
+1300 — 1400°
+
+F.
+
+F.
+
+Distribution Across
+- 1600 °F.
+
+Distribution Across
+— 1600°F.
+
+Distribution Across
+— 1600°F.
+
+Distribution Across
+— 1600°F,
+
+Distribution Across
+- 1600 °F o
+
+F.
+
+Section A-A After the Step
+
+Section B-B After the Step
+
+section E-E After the Step
+
+Section A-A After the
+
+Section B-B After the
+section C-C After the
+Section D-D After the
+section E-E After the
+
+A-A After the Step
+
+Stress Distribution Across Section B-B After the Step
+1300 — 1600°F.
+
+Stress Distribution Across
+
+1300 — 1600°F.
+
+otress Distribution Across
+
+1300 — 1600°F.
+
+Stress Distribution Across
+1300 — 1600°
+
+Temperature
+Change 1300
+
+Temperature
+Change 1300
+
+Temperature
+Change 1300
+
+Temperature
+Change 1300
+
+F.
+
+Distribution Across
+— 1800°F.
+
+Distribution Across
+— 1800°F.
+
+Distribution Across
+— 1800°F.
+
+Distribution Across
+— 1800°F.
+
+Section
+
+Section
+
+C-C After the Step
+
+Section D-D After the Step
+
+E-E After the Step
+
+Section A-A After the
+
+Section B-B After the
+
+ocection C-C After the
+
+oection D-D After the
+
+Step
+
+Step
+
+Change
+
+Change
+
+Change
+
+Change
+
+Change
+
+Step
+
+Step
+
+Step
+
+Step
+
+Step
+
+Change
+
+Change
+
+Change
+
+Change
+
+Change
+
+Step
+
+Step
+
+Step
+
+Step
+rs
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+46.
+
+47,
+
+48.
+
+49.
+
+50.
+
+51.
+
+52.
+
+53.
+
+54.
+
+55.
+
+56.
+
+57.
+
+58.
+
+59.
+
+60.
+
+6l.
+
+62.
+
+63.
+
+64
+
+65.
+
+66.
+
+Temperature Distribution Across Section E-E After the
+
+Change 1300
+
+Stress Distribution Across
+
+— 1800°F.
+
+1300 — 1800°F.
+
+Stress Distribution Across
+
+1300 — 1800°F.
+
+Stress Distribution Across
+1300 — 1800°F.
+
+Stress Distribution Across
+
+1300 — 1800°F.
+
+Stress Distribution Across
+1300 — 1800°
+
+Temperature
+Change 1300
+
+Temperature
+Change 1300
+
+Temperature
+Change 1300
+
+Temperature
+Change 1300
+
+Temperature
+Change 1300
+
+Stress Distribution Across
+1300 — 1200°
+
+Stress Distribution Across
+
+F.
+
+Distribution Across
+— 1200°F.
+
+Distribution Across
+— 1200°F.
+
+Distribution Across
+— 1200°F.
+
+Distribution Across
+— 1200°F,
+
+Distribution Across
+— 1200°F.
+
+F.
+
+1300 — 1200°F.
+
+Stress Distribution Across
+1300 — 1200°
+
+Stress Distribution Across
+1300 — 1200°
+
+F.
+
+F.
+
+Section
+
+Section
+
+Section
+
+Section
+
+Section
+
+Section A-A After the
+
+Section A-A After the
+
+Section B-B After the
+
+A-A After
+
+B-B After
+
+C-C After
+
+D-D After
+
+E-E After
+
+Section B-B After the
+
+Section C-C After the
+
+Section D-D After the
+
+Stress Distribution Across Section E-E After the
+
+1300 — 1200°
+
+Temperature
+Change 1300
+
+Temperature
+Change 1300
+
+Temperature
+Change 1300
+
+Temperature
+Change 1300
+
+Temperature
+Change 1300
+
+F.
+
+Distribution Across Section
+
+— 1100°F.
+
+Distribution Across Section
+
+— 1100°F.
+
+Distribution Across Section
+
+— 1100°F.
+
+Distribution Across Section
+
+— 1100°F.
+
+Distribution Across Section
+
+— 1100°F.
+
+A-A After
+
+B-B After
+
+C-C After
+
+D-D After
+
+E-E After
+
+Step
+
+Step
+
+Section C-C After the Step
+Section D-D After the Step
+
+Section E-E After the Step
+
+the
+
+the
+
+the
+
+the
+
+the
+
+Step
+
+Step
+
+Step
+
+Step
+
+Step
+
+the
+
+the
+
+the
+
+the
+
+the
+
+Step
+
+Change
+
+Change
+
+Change
+
+Change
+
+Change
+
+Step
+
+Step
+
+Step
+
+Step
+
+Step
+
+Change
+
+Change
+
+Change
+
+Change
+
+Change
+
+Step
+
+Step
+
+Step
+
+Step
+
+Step
+
+ 
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+Fig.
+
+67.
+
+68.
+
+69.
+
+70.
+
+71.
+
+Stress Distribution
+1300 — 1100°F.
+
+Across
+
+Section
+
+Stress Distribution Across Section
+
+1300 — 1100°F.
+
+Stress Distribution
+1300 — 1100°F.
+
+Stress Distribution
+1300 — 1100°F.
+
+Stress Distribution
+1300 = 1100°F.
+
+Across
+
+Across
+
+Across
+
+Section
+
+Section
+
+Section
+
+A-A After the Step Change
+B-B After the Step Change
+C-C After the Step Change
+D-D After the Step Change
+
+E-E After the Step Change
+0 T tw =
+QO
+
+alt
+
+= D QR»
+
+N ns <O <
+
+Q QQ Q
+ks
+N
+
+min
+
+Q
+
+max
+
+Q
+
+NOMENCLATURE
+
+Modulus of elasticity
+
+Biot's number
+
+Allowable elastically calculated stress amplitude
+Amplitude of stress fluctuation
+Uniaxial yield strength
+Coefficient of thermal expansion
+Temperature
+
+Temperature difference
+
+Poisson's ratio
+
+Radial stress
+
+Circumferential stress
+
+Axial stress
+
+Shear stress
+
+Minimum stress in meridional plane
+Maximum stress in meridional plane
+
+Surface stress
+11
+
+1. INTRODUCTION
+
+In a MSBR of 1000 Mw(e) the salt enters at a temperature of 1050°F
+and will rise about 250°F as it passes the core. Under normal conditions
+it is assumed that the salt temperature in and around the outlet nozzle
+will be at 1300°F.
+
+There are, however, circumstances in which the salt from the core
+changes rapidly in temperature. Shortly after such a change, high tem-
+perature gradients, and hence high thermal stresses, will occur near the
+inner surface of the outlet nozzle and the connected pipe. Because the
+heat dissipates through the structure, discontinuity stresses are also
+produced at the intersection of the pipe and the nozzle since the nozzle
+is relatively thick in comparison with the pipe.
+
+Information about the structural damage produced by rapid changes in
+salt temperature is needed for the design of a MSBR. Consequently, the
+thermal stresses were computed after five different step changes in salt
+
+temperature. The step changes were:
+
+Downward Upward
+1300 — 1200°F 1300 — 1400°F
+1300 — 1100°F 1300 — 1600°F
+
+1300 — 1800°F
+
+It was assumed that these transients would not last longer than 10
+seconds, since measures could be taken in that amount of time to bring
+the salt temperature back to normal. The time at which the highest sur-
+face and discontinuity stresses would occur was determined by a number
+of stress computations at different time points for the step change
+1300 — 1600°F. From the results of these computations at 1, 3, 5, 7, and
+9 seconds, it was learned that the highest surface stresses in the pipe
+occur at about 1 second, and in the nozzle wall they occur at about 9
+seconds. The highest discontinuity stresses occur at about 9 seconds.
+Since the temperature distributions were similar for all step changes,
+and since the differences between the stresses produced at 1 and 3 seconds
+and at 7 and 9 seconds were not large, computations were carried out only
+
+at 1 and 9 seconds for the remaining step changes.
+
+ 
+12
+
+With the results obtained from the stress computations, estimates
+were made of the number of cycles to failure for each condition. A
+judgement was also made regarding the likelihood of gross cyclic yielding
+
+at the intersection between the pipe and the nozzle.
+
+2. DESCRIPTION OF CONFIGURATION AND
+FINITE ELEMENT IDEALIZATION
+
+2.1. Configuration
+
+ 
+
+The outlet nozzles are attached to a cylindrical vessel about 22 ft
+in diameter. The diameter of the outlet nozzles at the connection is
+23 in. (Fig. 1). Most of the salt flows directly from the inlet through
+the core to the outlet nozzles, but some salt from the inlet flows through
+the gap between the cylindrical wall and the reflector (see Fig. 2).
+
+Since the highest stresses expected are due to thermal loading, the
+nozzles were considered to be attached to a flat plate rather than to a
+cylindrical shell. With this simplification it was possible to consider
+an axisymmetric problem for the thermal loading. Since the vessel
+diameter to nozzle diameter ratio is about 12:1, the results were ex-
+pected to be reasonably accurate.
+
+The configuration, as shown in Fig. 3, was extended as far as possible
+in order to approximate the real situation. The flat plate was taken suf-
+ficiently large for the degree of restraint against thermal expansion to
+closely approximate that of the cylindrical wall. The criterion for the
+length of the connected pipe was that the discontinuity stresses should
+
+be damped out to 10% at the end of the pipe.
+
+2.2. Finite Element Mesh
+
+The configuration shown in Fig. 3 was divided into a number of tri-
+angular ring elements. A fine mesh was taken in regions where high
+Stresses were expected. Although for the calculation of the temperature
+distribution the mesh in some regions was finer than necessary, the same
+
+mesh was used as for the stress analysis.
+
+Plots and subplots of the mesh are given in Figs. 4 through 8.
+\»
+
+13
+
+3. TEMPERATURE DISTRIBUTION CALCULATIONS
+
+The determination of the temperature distribution was carried out by
+
+a finite element computer program. *
+
+The program calculates the tempera-
+ture of the nodal points situated at the vertices of the elements into
+which the body has been divided. The temperature of the centroid of an
+element is obtained by taking the average of the temperatures of the nodal
+points. The difference of the centroid temperature and a reference tem-
+perature 1s multiplied by the coefficient of thermal expansion, and the
+resulting numbers are the input data for the SAFE-PCRS stress analysis
+program. %’ 3 |
+
+The following simplifications were made for these calculations:
+
+1. The problem is axisymmetric.
+
+2. Under normal conditions, the salt temperature is at 1300°F.
+
+3. The temperature of the salt in the gap between the wall and the
+reflector does not change.
+
+4. Except along boundaries where the configuration is in contact
+with the salt, 1t was assumed to be insulated.
+
+5. The material properties are temperature independent.
+
+- The material properties used are:
+
+Conductivity coefficient: 12.7 Btu/hr-ft-F
+
+Heat capacity: 75.8 Btu-ft3-F
+The film coefficients are:
+
+In the nozzle: 1600 Btu/hr-ft2-F
+
+In the gap: 150 Btu/hr-ft°-F
+
+The heat source strengths due to gamma radiation are:
+
+Perpendicular to nozzle wall: 27.4 exp (—0.818x) Btu/hr-in.°>
+Perpendicular to vessel wall: 30.2 exp (—0.818x) Btu/hr-in.~ ,
+
+where x 1s the distance, in inches, from the wall. Although the intensity
+of the gamma radiation changes during a transient, this effect was not
+taken into account, since the time considered was relatively short.
+
+The steady-state temperature distribution was first calculated be-
+
+cause it was not uniform due to the internal heat generation.
+
+ 
+14
+
+4. STRESS ANALYSIS
+
+4.1. General Remarks
+
+The stress computations were carried out by a stress analysis finite
+element computer program which determines the elastic stresses in an axi-
+symmetric body. Where the value of the "stress" exceeds the yield strength,
+the results from these computations must be interpreted as strain times
+Young's modulus. Further discussion will be in terms of stress, since
+the fatigue curves and Section III of the ASME Boiler and Pressure Vessel
+Code are based on these elastically calculated stresses.
+
+As already mentioned, in the first 10 seconds after the step change
+in the salt temperature, high local surface stresses and high bending
+stresses will occur. The surface stresses are high in the pipe and the
+nozzle wall, while the bending stresses are dominant in the intersection
+between the pipe and the nozzle. The stresses in these regions develop
+as follows:
+
+l. The Pipe. This rather thin and flexible part of the structure
+
+ 
+
+changes rapidly in temperature. The highest surface stresses occur here
+in the first seconds after the step change. These stresses quickly de-
+crease because of the dissipation of heat.
+
+2. The Nozzle Wall. This is a relatively thick and stiff part of
+
+ 
+
+the structure and thus does not change as rapidly in temperature as does
+the pipe. At 9 seconds after the step change, a region only 0.5 in. deep
+is at a significantly different temperature from that in the steady-state
+condition. The highest surface stresses occur at this time.
+
+3. The Intersection. Due to the difference in thermal expansion be-
+
+ 
+
+tween the pipe and the nozzle wall, high bending stresses occur here.
+These stresses are classified as discontinuity stresses and can cause
+cyclic yielding. The stresses produced by the pressure loading are also
+
+of interest here.
+
+4.2. Evaluation of Stresses
+
+ 
+
+The stresses obtained by the finite element calculations were Cs
+
+oO o oO o . and © in each element. T
+7’ 99° 952 Opin? max hese stresses are assumed
+
+»
+15
+
+to be constant within each element. Especially where steep thermal
+gradients occur, the actual stresses vary significantly across an element
+and the type of element (constant stress) which was used will not give
+very accurate results unless a very fine mesh is employed. Higher order
+elements or a finer mesh near the inside surface of the nozzle would im-
+prove the results. For practical reasons these solutions were not applied.
+According to Zienkiewicz (page 35, Ref. 4) the calculated stresses should
+be assigned to the centroids of the elements.
+
+For a section consisting of a row of elements, it is then possible to
+plot the stress components at the centroids against the radius of these
+centroids. The curve through these plotted points then gives a reasonable
+approximation of the stress distribution through the wall in that section.
+
+An approximation expression given by Manson’ enables us to check the
+highest surface stress in the pipe and the nozzle wall. This expression,
+
+which takes the Biot number into account, has the form
+
+o, = BAZ] 1
+s 1-=v 1.35 + 2:22 _
+
+ 
+
+3
+0.5 173]
+
+and gives the maximum surface stress due to a step change in fluid tem-
+perature on one side of a thin restrained flat plate. This case is essen-
+tially the same as a thin, infinitely long, cylindrical shell. Generally,
+there was good agreement when the stresses in the steady-state condition
+at the surface were taken into account.
+
+For the evaluation of the stresses it was necessary to use a strength
+theory since a triaxial stress condition existed. Because of its accepted
+use in Section IIT of the ASME Code, the maximum shear theory was used.
+The stress intensity was thus determined by taking the largest algebraic
+difference between any of the two principal stresses at a point. ©Since
+the thickness of the pipe and the nozzle wall was small in comparison
+with the diameter of the nozzle, G, was expected to be small. From the
+results of the stress computations it was found that C, was small through-
+out the wall. Since o. is equal to zero at the surface, it was set equal
+to zero everywhere. With this simplification the stress intensity was
+
+just the highest stress component in absolute value.
+
+ 
+16
+
+The high local surface stresses were considered to be peak stresses
+which could damage the surface by fatigue cracking. For the evaluation
+of these stresses the amplitude of the stress fluctuation must be deter-
+mined. This amplitude was found by taking the algebraic difference be-
+tween the highest occurring surface stress in the structure and the sur-
+face stress in the steady-state condition for the same spot. The amplitude
+of the stress fluctuation was then half the difference of the stresses.
+The mean stress and hold-time effects were not taken into account because
+they were of no significance for the cases considered. The number of
+cycles to failure for each step change was determined from the fatigue
+curves in Fig. 9.
+
+The evaluation of the bending stresses in the intersection between
+the pipe and the nozzle was more complicated. In addition to the thermal
+loading, the pressure loading should be taken into account. The internal
+pressure in the nozzle was, however, low (14 psig), and hence the effect
+of this loading was not expected to be significant. In order to deter-
+mine the order of magnitude of the stresses produced by the pressure load-
+ing, a simplified calculation was carried out. For this calculation it
+was assumed that the pressure in the pipe was 30 psig and that the radial
+stress at the edge of the plate was equal to the circumferential stress
+in the vessel wall for the same internal pressure. A higher pressure
+than 14 psig was taken since no end plate (causing an axial membrane
+stress in the nozzle) was added to the configuration. The end plate was
+neglected since the relatively thin flat plate behaves differently from
+a cylindrical shell. It was found, from this calculation, that the stress
+intensity in nearly the entire intersection was lower than 1 ksi. The
+error in the determination of the thermal stresses was several times larger
+than this, and hence the stresses produced by the pressure loading were
+neglected.
+
+In order to estimate whether or not serious cyclic yielding would
+occur in the intersection, it was determined over what percentage of the
+section a higher stress intensity than S occurs, where Sy is the yleld
+
+strength and is given in Fig. 10 as a function of temperature.
+
+Ll)
+17
+5. RESULTS OF STRESS COMPUTATIONS
+
+In this chapter the results of the stress computations for different
+conditions are presented. From these results estimates of the number of
+cycles to failure have been made, and also it has been determined, for
+each condition, whether or not gross cyclic yielding might occur.
+
+The temperature distributions presented have been obtained by plotting
+the nodal point values against the distance from the centerline. The
+procedure by which the stress distributions were obtained was described
+in Chapter 4. The stress component presented for each section is the
+highest component occurring there, and since C. has been set equal to
+
+zero this stress component is also the stress intensity.
+
+5.1. Steady-State Condition
+
+ 
+
+The temperature distributions through the wall at sections A-A, B-B,
+C-C, D-D, E-E, and F-TF are presented in Figs. 11 through 16, respectively.
+The stress distributions through the wall in the first five sections are
+shown in Figs. 17 through 21.
+
+These stress distributions are necessary to determine the amplitude
+
+of the stress fluctuation for the other conditions.
+
+5.2. Step Change 1300 — 1400°F
+
+ 
+
+The temperature distributions through the wall at sections A-A, B-B,
+C-C, D-D, and E-E are presented in Figs. 22 through 26, respectively.
+The stress distributions in the same sections are shown in Figs. 27
+through 31.
+
+The surface stress that gives the highest amplitude of stress fluctu-
+
+ation occurs in section D-D, and at this spot we have:
+
+The circumferential stress: 21 ksi
+The surface temperature: 1380°F
+The circumferential stress in the 7 ksi
+
+steady-state condition:
+The amplitude of the stress fluctuation: 14 ksi
+
+From the fatigue curves in Fig. 9 we find that fatigue cracking is unlikely
+
+for this condition.
+
+ 
+18
+
+For section B-B, where the highest discontinuity stresses occur, we
+have at 9 seconds after the step change:
+
+The average temperature: 1350°F
+The yield strength at 1350°F: 20 ksi
+
+From the stress distribution in Fig. 28 we find that no yielding will
+
+occur.
+
+5.3. Step Change 1300 — 1600°F
+
+ 
+
+The temperature distributions through the wall in sections A-A, B-B,
+C-C, D-D, and E-E are presented in Figs. 32 through 36, respectively.
+The stress distributions in the same sections are shown in Figs. 37 through
+41. |
+
+The surface stress that gives the highest amplitude of the stress
+
+fluctuation occurs in section D-D, and at this spot we have:
+
+The circumferential stress: 70 ksi
+The surface temperature: 1540°F
+The circumferential stress in the 7 ksi
+
+steady-state condition: :
+The amplitude of the stress fluctuation: 38.5 ksi
+
+From the fatigue curves in Fig. 9 we find that the number of cycles to
+failure might be as low as 90.
+
+For section B-B, where the highest discontinuity stresses occur, we
+have, at 9 seconds after the step change:
+
+The average temperature: 1450 °F
+The yield strength at 1450°F: 20 ksi
+
+From the stress distribution in Fig. 38 we find that the stress intensity
+is higher than 5, in about 30% of this section. It can thus be suspected
+
+that gross cyclic yielding might occur in this section.
+
+5.4. Step Change 1300 — 1800°F
+
+ 
+
+The temperature distributions through the wall in sections A-A, B-B,
+C-C, D-D, and E-E are presented in Figs. 42 through 46, respectively.
+The stress distributions in the same sections are shown in Figs. 47 through
+51.
+
+The surface stress that gives the highest amplitude of the stress
+
+fluctuation occurs in section D-D, and at this spot we have:
+19
+
+The circumferential stress: -118 ksi
+The surface temperature. 1700°F
+The circumferential stress in the "7 ksi
+
+~ steady-state condition: | |
+The amplitude of the stress fluctuation: 62.5 ksi
+
+There are presently no fatigue data available for 1700°F, but since
+S_1¢ 18 very high it is estimated that cracking might occur after only one
+or two cycles.
+
+For section B-B, where the highest discontinuity stresses occur, we
+have, at 9 seconds after the step change:
+
+The average temperature: 1550°F
+The yield strength at 1550°F: 20 ksi
+
+From the stress distribution in Fig. 48 we find that the stress intensity
+is higher than <5, in about 55% of this section. It can be concluded that
+
+gross cyclic yielding will occur for this condition.
+
+5.5. Step Change 1300 — 1200°F
+
+ 
+
+The temperature distributions through the wall in sections A-A, B-B,
+C-C, D-D, and E-E are presented in Figs. 52 through 56, respectively. |
+The stress distributions in the same sections are shown in Figs. 57 through
+61.
+
+The surface stress that gives the highest amplitude of the stress
+
+fluctuation occurs in section D-D, and at this spot we have:
+
+The circumferential stress: 34 ksi
+The surface temperature: 1225°F
+The circumferential stress in the 7 ksi
+
+steady-state condition:
+The amplitude of the stress fluctuation: 13.5 ksi
+
+From the fatigue curves in Fig. 9 we find that fatigue cracking is unlikely
+for this condition.
+
+For section B-B, where the highest discontinuity stresses occur, we
+have, at 9 seconds after the step change:
+
+The average temperature: 1250°F
+The yield strength at 1250°F: 20 ksi
+
+From the stress distribution in Fig. 58 we find that no yielding will occur
+
+at the intersection.
+
+ 
+20
+
+5.6. Step Change 1300 — 1100°F
+
+The temperature distribution through the wall in sections A-A, B-B,
+C-C, D-D, and E-E are presented in Figs. 62 through 66, respectively.
+The stress distributions in the same sections are shown in Figs. 67 through
+71.
+
+The surface stress that gives the highest amplitude of the stress
+
+fluctuation occurs in section D-D, and at this spot we have:
+
+The circumferential stress: | 58 ksi
+The surface temperature: 1145°F
+The circumferential stress in the 7 ksi
+
+steady-state condition:
+The amplitude of the stress fluctuation: 25.5 ksi
+
+From the fatigue curves in Fig. 9 we find that the number of cycles to
+failure might be as low as 2 X 10°.
+
+For section B-B, where the highest discontinuity stresses occur, we
+have, at 9 seconds after the step change:
+
+The average temperature: 1220°F
+The yield strength at 1220°F: 20 ksi
+
+From the stress distribution in Fig. 68 we find that the stress intensity
+is higher than S in about 10% of this section. It can be concluded that
+
+no gross cyclic yielding will occur for this condition.
+
+6. CONCLUSIONS
+
+From the results of the stress calculations it was found that:
+
+1. A step change of 100°F in the salt temperature upward or downward
+will not cause any damage to the configuration.
+
+2. The step change 1300 — 1100°F might possibly cause fatigue crack-
+ing after a large number of cycles, but no gross cyclic yielding would
+occur.
+
+3. A step change from 1300 — 1600°F would cause fatigue cracking
+after about 90 cycles and gross cyclic yielding might occur in the inter-
+section between the pipe and the nozzle.
+
+4. The step change 1300 — 1800°F is likely to cause cracks after
+a very few cycles and gross cyclic yielding will occur in the intersection
+
+between the nozzle and the pipe.
+
+”"
+21
+
+7. REFERENCES
+
+J. L. Spoormaker, "Application of the Finite Element Method to the
+Computation of Temperature Distributions in Axisymmetric Bodies,"
+USAEC Report ORNL-TM-2894, Oak Ridge National Laboratory (to be
+published).
+
+Y. R. Rashid, "Finite Element Analysis of Axisymmetric Composite
+Structures," USAEC Report GA-6303, General Atomic, June 4, 1965.
+
+D. C. Cornell, "SAFE-PCRS — A Computer Program for the Stress Analysis
+of Composite Bodies of Revolution, Input Instructions,’ USAEC Report
+GA-6588, General Atomic, August 1, 1965.
+
+0. C. Zienkiewicz, The Finite Element Method in Structural and Con-
+
+ 
+
+tinuum Mechanics, McGraw-Hill, 1967.
+
+ 
+
+D. J. Lewis, E. J. Chubb, and H. A. Money, "Factors Affecting Thermal
+Stress in a Power Plant," International Conference on Thermal Stresses
+and Thermal Fatigue, Berkeley Nuclear Laboratories, September 23-26,
+1969.
+
+ 
+22
+8. ACKNOWLEDGEMENTS
+
+The author wishes to express his appreciation to R. B. Briggs of
+the Director's Division for his overall direction and guidance. Members
+of the Reactor Division Design Department, including J. R. McWherter,
+
+C. W. Collins, W. K. Furlong, and H. A. McLain, supplied the necessary
+MSBR information and made helpful suggestions. Finally, the author
+acknowledges the help of J. M. Corum of the Reactor Division Applied
+Mechanics Section in performing the stress analyses and evaluating the
+results, and of W. G. Dodge of the Applied Mechanics Section in writing
+
+the heat conduction computer progran.
+ 
+
+23
+
+9. FIGURES
+
+ 
+25
+
+ORNL-DWG 70-2354
+
+— wn22 FT DIA. —»
+
+ 
+
+ 
+
+mei
+
+ 
+
+Fig.
+
+ 
+
+ 
+
+INLET
+1050° F.
+
+1.
+
+OUTLET (4)
+J 1300° F
+
+MSBR Reactor Vessel Flow Schematic.
+26
+
+ORNL-DWG 70-2355
+
+ 
+
+  
+
+20 IN. DIA.
+
+~—
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
+ 
+
+commensal
+
+ 
+
+19 IN. DIA.
+
+  
+
+ 
+
+1
+A /4 IN. CLEARANCE
+
+MSBR Reactor Vessel Simplified Outlet Configuration.
+
+Fig. 2.
+ 
+
+27
+
+ORNL-DWG 70-2356
+
+2 IN.-=| |=5 IN*
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Yo
+2 R
+19 IN. I. D.
+20 IN. O. D.
+! | ~
+
+Fig.
+
+ 
+
+ 
+
+ 
+
+30° _
+
+3. MSBR Reactor Vessel Simplified Outlet Nozzle Detail.
+28
+
+ORNL-DWG. 70-2357
+
+MSBR OUTLET NOZZLE (SIMPLIFIED VERSION
+|
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+30.
+25 F
+is
+£ E
+—
+«= 20. b b
+2
+5
+=
+o = c
+o 15. B B
+8
+8
+4 10.
+A +A
+S.
+0. - _
+10. IS. 20.
+
+Radius (inches)
+
+Fig. 4. Plot of the Outline of the Configuration.
+
+ 
+29
+
+ORNL-DWG 70-2358
+
+MSBR OUTLET NOZZLE (SIMPLIFIED VEWSIOMN
+?
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+iN. |
+13.
+
+wo 12.
+
+<
+
+a
+
+a
+
+S
+
+ge] 11.
+
+8
+
+5
+
+&
+
+3
+
+Ti
+9.
+8.
+
+1G
+
+7.
+
+ 
+
+ 
+
+Radius (inches)
+
+Fig. 5. Subplot of the Element Idealization (Pipe Region).
+
+ 
+30
+
+ORNL-DWG 70-2359
+
+MSBR OUTLET NOZZLE (SIMPLIFIED VEWSIOW
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+15.8 |
+15.6
+{
+15.4
+~ 15.2
+2
+E
+4 15.0
+2
+: ]
+£ 14.8
+3
+14.6
+14.4
+14.2
+14.0 -
+
+9.6 9.8 10.0 10.2 10.4 10.6
+
+Radius (inches)
+
+Fig. 6. Subplot of the Element Idealization (Intersection Region).
+
+ 
+
+ 
+31
+
+ORNL-DWG 70-2360
+
+MSR OUTLET NOZZLE (SIMPLIFIED VERSIOW
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+23. |
+22.
+ll.
+£2 20.
+&
+o
+7 19.
+g
+-& (
+& (
+5 18.
+Aa [
+17. {
+q
+y T c
+16.
+1S. —
+10. 11. 12.
+
+Radius (inches)
+
+Fig. 7. ©Subplot of the Element Idealization (Nozzle Wall Region).
+
+ 
+Distance from end of pipe (inches)
+
+XR
+
+3
+
+\
+»
+
+22.
+
+10.
+
+ 
+
+Fig. 8.
+
+ORNL-DWG 70-2361
+
+MSBR OUTLET NOZZLE (SIMPLIFIED VERSION)
+
+ 
+
+ 
+
+12. 13. IN. 18. 19.
+
+Radius (inches)
+
+Subplot of the Element Idealization (Flat Plate).
+
+43
+ 
+
+1/2€ (Ei)
+
+Values of Sj, psi (Sg
+
+108
+
+108
+
+104
+
+10°
+
+WwW 5 UI OND
+
+ORNL-DWG 70-3301
+
+1 2 3 4 5 67891 2 3 4 567891 2 3 4 567891 3 4 567891 2 3 4 567891
+
+Ww bP UT OH NNOOO Nn Ww SH U1 OND
+
+nN
+
+nN
+
+ 
+
+10 10° 10° 10% 10° 108
+Number of Cycles
+
+Fig. 9. Design Fatigue Strength, SP for Ni-Mo—Cr Alloy.
+
+£€
+3h
+
+ORNL-LR-DWG 46316
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+30,000
+tx ULTIMATE TENSILE STRENGTH
+25,000 ———— |
+7
+~~ 2 Er
+3 STRENGTH |
+20,000 02% OFFSET) <
+7 Trl
+> DESIGN STRESS—~ SIT AN
+0 15,000 FOR 316 STAINLESS Jay
+LJ STEEL NC >
+& | ANS STRESS FOR
+10,000 | . RUPTURE IN —
+STRESS FOR 1% CREEP IN———=\\ 4 100,000hr
+100,000hr Ns
+| |
+S000 STRESS FOR 10° % /hr M.C. Re NR
+NR
+1]
+0 400 800 1200 1600
+
+TEMPERATURE (°F)
+
+Various Criteria for the Determination of the
+Design Stresses for INOR-8.
+
+Fig. 10. Various Criteria for the Determination of the Design
+Stresses for INOR-8.
+
+va
+35
+
+ORNL-DWG 70-2363
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+TEMPERATURE 0D0I1STRiIBVTIOMN
+L THRoOVOGHN THE WALL I ~¥ |
+° SgcrionMy A -AR &
+Fig. 11. Temperature Distribution
+« A350 . Across Section A-A in the Steady-State
+- 3 Condition.
+a
+< <
+% N
+by Y
+a Q
+T 2
+w w
+"4300 ~
+q.5 10
+
+DISTANCE FROM
+CENTERLINE, INCHES
+
+Fig. 12.
+
+Condition.
+
+ORNL-DWG 70-2364
+
+ 
+
+TEMPERATURE DISTRIBUT joN
+THROVGH THE WALL I NV
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Secrio¥N B-B8B
+1350
+Temperature Distribution
+Across Section B-B in the Steady-State
+1300
+95 jo.
+
+°F
+
+TEMPERAT VRE
+
+DISTANCE FROM
+CENTERL INE, |NCHES
+
+ORNL-DWG. 70-2365
+
+ 
+
+TEMPERATYRE DISTRIBUTION
+
+1350 p— THROUGH THE WALL IN sSEcTionw C-C
+
+ 
+
++
+
+ 
+
+ee"
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1300——
+4.5 10
+
+ 
+
+ 
+
+ 
+
+ 
+
+DISTANCE FROM CENTERLINE
+
+Fig. 13. Temperature Distribution Across
+Section C-C in the Steady-State Condition.
+
+ 
+°c
+
+TEMPERAT VRE
+
+36
+
+ORNL-DWG 70-2366
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+SL TEMPERATURE DISTR IBVTION
+. THROIVON THE WALL IN SECTION D-D
+§q35 :
+313 0
+~
+<
+w
+u
+a eT"
+w
+-
+1300
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+a5
+DISTANCE FROM cewvTERLINE
+
+Fig. 14. Temperature Distribution Across Section D-D in the Steady-
+State Condition.
+
+ORNL-DWG. 70-2367
+
+0
+
+ev
+
+ 
+
+ 
+
+TT TEMPERATURE DISTRIBUT/o wn
+THROUGH TNE WALL IN SECTION E -E
+1350
+
+ 
+
+ 
+
+ 
+
+|
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+_—
+—
+1300
+
+ 
+
+ 
+
+49.5 10 n
+DISTANCE FROM CENTERLINE, /incHES
+
+Fig. 15. Temperature Distribution Across Section E-E in the Steady-
+State Condition.
+
+ORNL-DWG 70-2368
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Q TEMPERATVRE DISTRI BVT ION THROUOG MN
+° TNE WALL |~ SEcrionv FF
+w
+x |
+Dd 4350 i I
+~ .
+< mie
+« + { +
+: — |
+t
+Ww
+=
+4300 : + -
+0
+
+DISTANCE FROM FRonm S VRF ALE IN CO NTACT
+WITH SALT INCHES
+
+Fig. 16. Temperature Distribution Across Section F-F in the Steady-
+State Condition.
+37
+
+ORNL-DWG 70-2369
+
+ 
+
+ 
+
+_ CIRCUMFERENTIAL
+
+STRESS OL ISTRI8 vTirow
+TwROyoCw THE wALL WN
+
+ 
+
+ 
+
+ 
+
+YT secriom A-A
+N
+“a \
+X
+.
+@ OofF——N
+«¢ 3
+~~
+v a
+
+ 
+
+ 
+
+ 
+
+| DISTANCE FRroNMm
+
+ 
+
+CENTERLINE, INCHES
+
+-1 | L
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 17. Stress Distribution Across Section A-A in the Steady-State
+Condition.
+
+ORNL-DWG 70-2370
+
+ 
+
+ 
+
+AXIAL STRESS DISTRIBUTION THROUGH
+THE WALL 1m S6creiown B-RB
+
+ 
+
+ 
+
+10
+
+ 
+
+—
+
+o
+q.5 Co — 10.
+DISTANCE FRom CENTERLINE ~~
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+STRESS , KSI
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+-10
+
+Fig. 18. Stress Distribution Across Section B-B in the Steady-State
+Condition.
+
+ 
+38
+
+ORNL-DWG 70-2371
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+CIRCUNFERENTIAL STRESS D!STRIB8VT/iON
+L THROUG™ Tw€ WALL '& SECTIioN (C-C
+
+o 2 Fig. 19. Stress Distribution
+x Across Section C-C in the Steady-
+. NN 30 State Condition.
+" 0 ~~ ” ~
+“
+Ww 4.5 ~~
+«
+~ -2 —
+hq
+
+DISTANCE FRom CENTERLINE, INCHES
+
+-5 l | | | i |
+
+ 
+
+ 
+
+ 
+
+ 
+
+ORNL-DWG 70-2372
+
+ 
+
+CIRLUMPERENTIAL STRESS DISTRIBVYTION
+THROUGH THE WALL IN SECTION D-DD
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+10 +—
+
+-
+o o o o vw NN
+Fig. 20. Stress Distribution «x ~~
+
+Across Section D-D in the Steady- “ ~~
+
+State Condition. a, a
+. 45 fo. 14.
+“ DISTANCE FROM CENTERLINE INCHES
+
+- 10
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ORNL-DWG 70-2373
+
+ 
+
+CIRC UMFERENT,AL STRESS OISTRI)BVTIOWN
+— THNROVUGHNW THE WALL IN SECTION E -E
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+-
+
+~~
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+~—
+
+5 10. :
+DISTANCE PROM CENTERLINE, INCHES
+
+ 
+
+— 11 2
+
+ 
+
+ 
+
+ 
+
+\©
+
+STRESS KSI
+>
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 21. Stress Distribution Across Section E-E in the Steady-State Condition.
+ORNL-DWG 70-2374
+
+39
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+TEMPERATURE DISTRIB VTIoN
+
+4
+Ww TRovenw WALL )~ section R-AR
+® 1400 :
+W
+
+= «
+a
+~~
+<
+« ;
+$
+a i
+Ww 1300
+
+45 RY
+DISTANCE FROr
+CENTERLINE, INCHES
+
+Fig. 22.
+
+Temperature Distribu-
+
+tion Across Section A-A After the
+Step Change 1300 — 1L400°F.
+
+ORNL-DWG 70-2375
+
+ 
+
+TEMPERATURE
+THROUGH THE WALL
+
+DISTRIBUTION
+
+IN SecTion B-B
+
+ 
+
+1400
+Fig. 23. Temperature
+Distribution Across Section
+B-B After the Step Change
+1300 — 1L00°F.
+4300
+
+9.5
+DRSTANCE FROM
+
+CENTERLINE INCHES
+
+ 
+
+1s
+
+9¢
+
+ 
+
+~~
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+10
+
+ORNL-DWG 70-2376
+
+ 
+
+4400
+
+\.
+
+|
+|
+
+|
+1
+{
+
+1
+
+[
+
+I
+
+|
+
+TEMPERATURE DISTRIBVTION
+
+|
+
+|
+
+|
+
+|
+
+"TT THROUGH THE wALL In SEcTion C~-C
+
+4
+!
+i
+!
+
+merase rman sovann]
+
+ 
+
+ 
+
+9s
+
+1g
+
+1
+
+=
+
+ 
+
+ 
+
+ 
+
+ 
+
+4300
+
+ 
+
+ 
+
+ 
+
+45
+
+ 
+
+10.5
+
+DISTANCE FROM CENTERLINE,
+
+INCHES
+
+Fig. 24. Temperature Distribution Across
+* Section C-C After the Step Change 1300 — 1L40Q°F.
+
+ 
+
+ 
+°F
+
+TEMPERATURE
+
+Lo
+
+ORNL-DWG 70-2377
+
+TEMPERATURE ODISTRIBUOTION
+
+ 
+
+& THRoOoVGH THE WALL I~ SECTION D-DD
+«
+x
+d
+a
+¢ 1400
+¥
+gy
+Q
+RQ
+W
+~
+
+1300
+
+g5 10. 11,
+
+DISTANCE FROM CENTERLINE ,INCHES
+
+Fig. 25. Temperature Distribution Across Section D-D After the Step
+Change 1300 — 1L400°F.
+
+ORNL-DWG 70-2378
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+TEMPERATURE DISTRIBUTION !
+THROUGH THE WALL IN SECTION E-E
+Ee ——
+1400
+1300
+9s 10 11 42
+
+DISTANCE FRON CENTERLINE INCHES
+
+Fig. 26. Temperature Distribution Across Section E-E After the Step :
+Change 1300 — 1L400°F.
+
+ 
+
+ 
+
+ 
+KSI
+
+STRESS,
+
+ 
+
+ORNL-DWG 70-2380
+
+ 
+
+rT
+
+AXIAL STRESS DISTRIBUTION
+
+ 
+
+THROVeW THE WALL IN SEcTion B-8B
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Tn
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ORNL-DWG 70-2379
+20
+CIRCUMFERENTIAL STRESS DISTRIBVTION |
+THROUGH YHE WALL IN SECTION A-R /
+4
+10 10 >
+9s
+xX ~~
+a yy
+A _—
+P
+V “ yd TT
+0 € ,
+-
+
+9.5 10 “gs
+DISTANCE FROM 1s DISTANCE FROM CENTERLINE, INCNES
+CENTERLINE, INCHES f va
+
+-10 -40 od
+-204 -20
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 27. Stress Distribution Across Section Fig. 28. Stress Distribution Across Section B-B After
+A-A After the Step Change 1300 — 1L00°F. the Step Change 1300 — 1400°F.
+STRESSES, ks I
+
+ORNL-DWG 70-2381
+
+ 
+
+IN
+
+~ THROUGH THE wnhAll
+
+Co
+
+IR
+
+IN SECTION
+
+|
+
+CIRCUMFERENTIAL STRESS DISTRIBUTION,
+
+¢-C
+
+ 
+
+10
+
+«20
+
+9s
+
+ 
+
+_
+><
+
+ 
+
+Co —
+
+10.5
+
+ 
+
+ 
+
+ 
+
+TY
+
+OISTANCE
+
+FRor CENTERLINE , INCHE
+
+11
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 29.
+
+Stress Distribution Across Section
+C-C After the Sept Change 1300 — 1400°F.
+
+o
+
+STRESSEs , KSI
+
+ 
+
+ORNL-DWG 70-2382
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+D-D After the Step Change 1300 — 1L400°F.
+
+CIRCUMFERENTIAL STRESS DPISTRIBVTION
+THROUGH THE WALL IN SEcTien D-D
+| |
+|
+;
+| i
+: ! )
+I
+0 — — prs
+4.5 10 | | I"
+DISTANCE FROM CENTERLINE, INCHES
+| :
+j
+:
+: |
+=10 |
+: : |
+|
+|
+de i —
+|
+l 1 |
+Fig. 30. Stress Distribution Across Section
+
+of
+43
+
+ORNL-DWG 70-2383
+
+ 
+
+oT
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+] CIRCUMFBRENT IAL STRESS DISTRIBUTION
+THROVGEH THE wall I~ section E-E
+1s
+“ Ngee _
+w yd —— —
+w . . :
+wn
+" 10 11
+ul
+« DISTANCE FROM CENTERLINE INCHES
+- a be en —
+wn
+-20
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 31. Stress Distribution Across Section E-E After the Step
+Change 1300 — 1L00°F.
+
+ 
+Lh
+
+ORNL-DWG 70-2384
+
+ 
+
+600 t—m—
+
+*F
+
+TEMPERATURE
+
+1500
+
+TEMPERATURE DISTRIBUTION
+THROUGH THE wALlL IN
+
+SEcTIionNn AR-A
+
+ 
+
+1400
+
+gs
+
+ 
+
+5s
+1s
+
+ 
+
+i300
+
+NN
+
+ 
+
+ 
+
+ 
+
+ 
+
+g.5
+
+10
+
+DISTANCE FROM CENTERLINE, INCHES
+
+Fig. 32.
+
+Temperature Distribution
+
+Across Section A-A After the Step Change
+1300 —- 1600°F.
+
+TEMPERAT vRE °F
+
+ORNL-DWG 70-2386
+
+ 
+
+V4boot—
+
+1500 \
+
+SEC TiIoN C-C
+
+TEMPERATURE DISTRIBUTION
+
+THROUGH THE wall rn
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1400 9s
+5s
+1s ~~ |
+{300
+q.5 10 10.5
+
+DISTANCE FROM LENTERLINE , INCHES
+
+ORNL-DWG 70-2385
+
+ 
+
+1600 b= a MPERATURE DISTRIBUTION
+
+TROUGH THE WALL IN
+
+SEcTionNn B-8B
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+i
+1500 \
+W 9s
+®
+Ww
+5 1400
+he
+c
+«
+? Ss
+T
+w
+~
+1s
+1 300
+q.5 40
+
+DISTANCE FROM CENTERLINE
+
+Fig. 33. Temperature Dis-
+tribution Across Section B-B After
+the Step Change 1300 — 1600°F.
+
+Fig. 34. Temperature Dis-
+tribution Across Section C-C After
+the Step Change 1300 — 1600°F.
+or
+
+TE/MMPERATVRE
+
+°F
+
+TEMPERATURE
+
+TEMPERATURE DISTRIBUTION
+1600 I
+THROUGH THE WALL IN SECTION D-D
+1500
+1400
+5s
+14300
+g.5 10 11
+
+L5
+
+ORNL-IWG 70-2387
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+DISTANCE
+
+Fig. 35.
+
+FRolM cENVNTERLINE AK TNCHES
+
+D-D After the Step Change 1300 — 1600°F.
+
+11.8
+
+Temperature Distribution Across Section
+
+ORNL-DWG 70-2388
+
+ 
+
+1600F———
+
+1500
+
+00
+
+TEMPERATURE DISTR
+
+THAOUVGHN THE WALL
+
+)Bv TION
+
+ 
+
+IN SEcTion [F-E
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+9s
+5s
+1300
+qs 10 41 [lr
+DISTANCE FROM THE CENTERLINE , 1NCHES
+
+E-E After the Step Change 1300 — 1600°F.
+
+Fig. 36. Temperature Distribution Across Section
+
+ 
+
+ 
+L6
+
+ORNL-DWG 70-2389
+
+CIRCUMFERENTIAL STRESS DISTRIBUTION
+THROUGH THE WALL IN SecTion R-A
+40
+
+ 
+
+30
+
+ 
+
+ 
+
+LY
+
+ 
+
+ 
+
+STRESS, KST
+
+-10
+
+ 
+
+-20
+
+ 
+
+ 
+
+~30
+
+ 
+
+~~]
+
+Ss
+
+as
+
+ 
+
+-50
+
+ 
+
+ 
+
+ 
+
+a]
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 37. Stress Distribution Across Section A-A After the
+Step Change 1300 — 1600°F.
+u7
+
+ORNL-DWG 70-2390
+
+ 
+
+R¥lAaL STRESS DISTRIBUTION
+THROUGH THE WALL IN SECTION B-B
+
+ 
+
+70
+
+éo
+
+ 
+
+40
+
+ 
+
+J
+A
+J
+TH
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+“
+i - -
+gs 10
+Wn 1s DISTANCE FROM CENTERLINE , INCHES.
+wv
+w -40 /
+ol
+/ J
+nN
+-20 7
+Ss 74
+9s
+-40
+- bo
+-]0
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 38. Stress Distribution Across Section B-B After the Step
+Change 1300 — 1600°F.
+L8
+ORNL-DWG 70-2391
+
+CIRCUMFERENTIAL STRESS DISTRIBUTION
+T HROUgH THE WALL IN SEcTioN C-C
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+20 gs
+py 5s ~~
+/ _
+| As
+rr ————
+Co ———
+———
+q.5 10.5
+DISTANCE FROM CENTERLINE, INCHES
+~ “
+0
+xX
+ow 10
+n
+Ww
+«
+-
+Vi
+15] 55
+-20
+9s
+- 30
+-40
+-50
+-60
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 39. Stress Distribution Across Section C-C After the Step
+Change 1300 — 1600°F
+49
+ORNL-DWG 70-2392
+
+Circumferential Stress Distribution
+Through the Wall in Section D-D
+
+ 
+
+10
+
+ 
+
+ 
+
+(7 T=
+
+g.5 | 10.5 ~~
+
+\ DISTANCE FROM CENTER LINE INCHES
+s
+
+ 
+
+ 
+
+ 
+
+ 
+
+STReEss KSI
+le]
+
+ 
+
+ 
+
+- 30
+
+ 
+
+-40
+
+ 
+
+ 
+
+-50
+
+ 
+
+-60
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+- Jo
+
+ 
+
+Fig. 40. Stress Distribution Across Section D-D After the Step
+Change 1300 — 1600°F.
+
+ 
+o0
+
+ORNL-DWG 70-2393
+
+ 
+
+CIRCUMFERENTIAL STRESS DISTR'BUTION
+20
+
+ 
+
+ 
+
+THROUGH THE WALL IN SeEcTion E-F
+
+10
+
+ 
+
+TT
+
+fe ——————
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+10 1 12 12.8
+
+DISTANCE FROM CENTERLINE, INCHES
+
+stress , KSI
+
+-10
+
+ 
+
+ 
+
+ 
+
+-40
+
+ 
+
+ 
+
+-60
+
+ 
+
+;
+J
+|
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 41. Stress Distribution Across Section E-E After the Step
+Change 1300 — 1600°F.
+°f
+
+TEMPERATURE
+
+tribution Across Section A-A After
+the Step Change 1300 — 1800°F.
+
+°g
+
+TEMPERATURE
+
+ol
+
+ORNL-DWG 70-23%
+
+ 
+
+ORNL-DWG 70-2395
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+TEMPERATURE DISTRIBUTION TEMPERATURE DISTRIBUTION
+THROUVUGC THE WALL IN THROUGH THE WALL IN
+sgcrTion A-A SEcT)joNn B-B
+1800 1800
+1700 1700
+w \
+o
+ws
+4 o
+>
+< 500
+1500 a < | gq
+S us
+a.
+p 4
+1400 Ww 1400 :
+=
+S NN
+1300 + 1300 -
+95 10. 45 10.
+DISTANCE FRoN DISTANCE FRort
+CENTERLINE INCHES CENTERLINE INCHES
+Fig. 42. Temperature Dis- Fig. 43. Temperature Distribution
+
+1800
+
+1700
+
+ORNL-DWG 70-2396
+
+ 
+
+TEMPERATURE DISTRIBVTION
+
+THROUGH THE WALL IN
+
+SECTION CT -C
+
+srr.
+
+ 
+
+ 
+
+1500
+
+ 
+
+\
+\
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1300
+9
+
+ 
+
+A
+
+3 10
+DISTANCE FROM CENTERLINE INCHES
+
+Across Section B-B After the Step Change
+1300 — 1800°F.
+
+Fig. 4h. Temperature Dis-
+tribution Across Section C-C After
+the Step Change 1300 — 1800°F.
+
+ 
+TEMPERATURE °F
+
+TEMPERATURE °F
+
+52
+
+ORNL-DWG 70-2397
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+TEMPERATURE DISTRI BVTION
+18004
+
+THROUGH THE WALL IN
+
+section D-DD
+1700 tee
+1500
+9s
+
+$ SN~—
+
+1300
+
+ 
+
+q.5 10. A4.
+
+DISTANCE FROM CENTERLINE ,INCHES
+
+Fig. 45. Temperature Distribution Across
+Section D-D After the Step Change 1300 — 1800°F.
+
+ORNL-DWG 70-2398
+
+ 
+
+TEMPERATURE DISTRIBUTION
+THROVGHM THE WALL IN
+SEcCcTioN E-E
+
+ 
+
+ 
+
+1500 ;
+
+ 
+
+SN—_
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1300
+a5 10. 11 2
+
+DISTANCE FROM CENTERLINE A  LNCHES
+
+Fig. 46. Temperature Distribution Across Section E-E After
+the Step Change 1300 — 1800°F.
+STRESS, KSI
+
+03
+
+ORNL-DWG 70-2399
+
+CIRCUMFERENTIAL STRESS OISTRIBUTION
+THROUGH THE WALL IN &SEcTiIioN A-A
+
+ 
+
+9s
+
+20
+
+ 
+
+ 
+
+ 
+
+ 
+
+/]
+
+oO
+
+ 
+
+10
+DISTANCE FROM CENTERLINE ,INCNES
+
+AP
+)
+
+-20
+
+ 
+
+- &0
+
+ 
+
+-60
+
+ 
+
+-80
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 47. Stress Distribution Across Section A-A After the
+Step Change 1300 — 1800°F.
+
+ 
+54
+
+ORNL-DWG 70-2400
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+STRESS, KS1
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+AXIAL STRESS DISTRIBUTION THROVENW
+THE WALL 18 SEcTiON B-B
+400 |
+J
+401 A
+a
+0
+Ze 10
+101 DISTANCE FRpomM CENTERLINE INCHES
+201} |
+501
+/
+100%
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 48. Stress Distribution Across Section B-B After the
+Step Change 1300 — 1800°F.
+35
+
+ORNL-DWG 70-2401
+
+ 
+
+CIRCUMFERENTIAL STRESS DISTRiIBVTION
+yol- THRoven TE WALL I~ SEcTion C-C
+
+oI
+
+0 : _
+9s 10 10.5
+
+DISTANCE FRonm CENTERLINE
+
+—p—————re}
+
+10
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+STRESS, KS1
+
+-20
+
+ 
+
+- 40
+
+ 
+
+- bo
+
+ 
+
+ 
+
+- 80
+
+ 
+
+-90
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 49. Stress Distribution Across Section C-C After the
+Step Change 1300 — 1800°F.
+
+ 
+56
+
+ORNL-DWG 70-2402
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+CIRCUMFERENTIAL STRESS DISTRIBVTION
+THROUGH THE WALL '1~# sEcTionNnv D-DD
+20
+X 0 .
+. 11
+. 95 /
+“ DISTANCE FROM CENTERLINE, K INCHES
+Ww
+<
+“ 9s
+-20
+-40
+-60
+- 80
+-100
+-410
+L
+
+ 
+
+Fig. 50. Stress Distribution Across Section D-DD After the Step
+Change 1300 — 1800°F.
+
+ 
+ 
+
+ 
+
+oT
+
+ ORNL-DWG 70-2403
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+90 1 — CIRCUMFERENTIAL STRESS OISTRIBVUTIDON
+THROUGH THE WALL AT SEcCTIioN E-E
+10
+9¢
+/
+b \ , — X
+49.5 10 11 12,
+DISTANCE FROM CENTERLINE ZLNCHES
+
+= _ 20
+a 2
+X
+wn
+“
+ul
+aL
++=
+w - qo
+
+~ 60
+
+-80 ]
+
+~100
+
+- (20
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 51. Stress Distribution Across Section E-E After the Step
+Change 1300 — 1800°F.
+
+ 
+58
+
+ORNL-DWG 70-2404
+
+TEMPERATURE DISTRIBUTION
+
+ 
+
+ 
+
+u THROUGH THE WALL I1# SECTIion A-A
+* °
+y 1300 i Fig. 52. Temperature Dis-
+3 by tribution Across Section A-A After
+» the Step Change 1300 — 1200°F.
+« 3
+uy
+qQ
+rv
+W
+* 4200 reenter
+9.5 10.
+
+DISTANCE FROM
+CENTERLINE , INCHES
+
+ORNL-DWG 70-2405
+
+TEMPERATURE DISTRIBUTION
+THROUGH THE WALL IW
+Secrtiov B-B
+Fig. 53. Temperature Distribution
+Across Section B-B After the Step Change | 1s
+1300 — 1200°F.
+
+ 
+
+1200 rt
+9.5 10
+
+DI STANCE FROM
+
+ 
+
+CENTERLINE , INCHES
+
+ORNL-DWG 70-2406
+
+ 
+
+TEMPERATURE DISTRIBUTION
+
+ 
+
+ 
+
+S$ THROUGH THE WALL IN SECTIDN C-C
+w _ | Fig. 54. Temperature Dis-
+© Lapp | —l tribution Across Section C-C After
+2 the Step Change 1300 — 1200°F.
+z i
+po |
+Ww
+a.
+r
+uw
+40.5
+= j200—n . -
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+DISTANCE PROM CENTERLINE INCHES
+
+9.5
+
+ 
+°F
+
+TEMPERATURE
+
+59
+
+ORNL-DWG 70-2407
+
+ 
+
+of
+
+1300
+
+| TEMPERATURE DISTRIB VUT jon
+
+THROUGH THE WALL 1 sE&cTion~v D-D
+
+ 
+
+1s _— | —
+
+ 
+
+ 
+
+1200
+
+TEMPERATURE
+0
+J w
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+45
+
+10 14.
+
+DisTANCE FROM CENTERLINE, INCHES
+
+Fig. 55. Temperature Distribution Across Section
+D-D After the Step Change 1300 — 1200°F.
+
+ORNL-DWG 70-2408
+
+ 
+
+ 
+
+1300
+
+TEMPERATURE DISTR IBvTionNn
+
+THROVE NH
+
+ 
+
+TNE WALL 1~# SEcrionNn TE -F
+
+ 
+
+ 
+
+ 
+
+1200
+
+/
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+9.5
+
+10.
+
+14 12
+
+DISTANCE FROM CENTERLINE, 6 INCHES
+
+Fig. 56.
+
+Temperature Distribution Across Section E-E After the
+
+Step Change 1300 — 1200°F.
+
+ 
+
+ 
+60
+
+ORNL-DWG 70-2409
+
+ 
+
+CIRCUMFERENTIAL STRESS DISTRIBUTION
+THROUGH THE wALL IN Secrion A-A
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+20
+10
+0]
+v
+X
+wn
+A
+9
+x 1s 9s
+=~
+0 . +
+wv)
+qs 10
+-40 r DISTANCE FROM
+CENTERLINE, INCHES
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 57. Stress Distribution Across Section A-A
+After the Step Change 1300 — 1200°F.
+61
+
+ORNL-DWG 70-2410
+
+ 
+
+10\
+
+AXIAL STRESS DISTRIBUTION
+30 —— THROUGH THE WALL
+
+IN SECTION
+
+ 
+
+ 
+
+0 N\
+
+ 
+
+ 
+
+OISTANCE PROM CENTERLINE,
+
+ 
+
+ 
+
+INCHES
+
+ 
+
+STRESS KS 1
+
+-10
+
+1s
+
+A
+
+WT
+
+10.
+
+ 
+
+-10
+
+N\
+
+ 
+
+- 30
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 58. Stress Distribution Across Section B-B After the
+
+. Step Change 1300 — 1200°F.
+
+ 
+
+ 
+ORNL-DWG 70-2411
+
+ 
+
+CIRCUMFERENTIAL STRESS DISTRIBUTION
+THROUGH THE wALL IN SEcTiov C-C
+
+20
+
+ 
+
+10
+
+ 
+
+ 
+
+ 
+
+ 
+
+10.5
+
+ 
+
+ 
+
+STRESS KSI
+
+0 Ne — , “
+q4.5 Sg FROM CENTERLINE LWNCHES
+L ee ———— Co
+N
+- 10 1s
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 59. Stress Distribution Across Section C-C
+After the Step Change 1300 — 1200°F.
+
+ORNL-DWG 70-2412
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0 B
+CIRCUMFERENTIAL STRESS DISTRIBUTION
+THROUGH THE WALL 1M Sgctrionm D-DD
+
+30
+
+20
+
+i
+
+17]
+
+xX 10
+
+w
+
+vn
+
+. 9¢
+
+« 1s
+
+=
+
+a"
+
+{
+0 ‘ !
+9.5 10 —
+|
+DISTANCE FROM CENTERLINE , INCHES
+- 10
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 60.
+
+Stress Distribution Across Section D-D
+
+After the Step Change 1300 — 1200°F.
+
+¢9
+k SI
+
+STRESS ,
+
+ 
+
+63
+
+ORNL-DWG 70-2413
+
+CIRCUMPEAENTIAL STRESS DISTRIBUTION
+THROUGN THE wALL IN SECTIon E-E
+
+10.
+
+DISTANCE FROM CENTERLINE | INCHES
+
+Fig. 61. Stress Distribution Across Section E-E After the
+Step Change 1300 — 1200°F.
+
+ 
+ORNL-DWG 70-2414
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+TEM PERATVRE DISTR )BvT/ oN
+rHROUGH THE wall In
+Section A-R
+1s
+uw
+o
+w 9s
+o
+3
+fo
+<
+4
+w
+a
+C
+w
+=
+1100
+95 10.
+DISTANCE FROM CENTERLINE,
+INCH ES
+Fig. 62. Temperature Dis-
+
+tribution Across Section A-A After
+
+the Step Change 1300 — 1100°F.
+
+TEMPERATURE °F
+
+6h
+
+ORNL-DWG 70-2415
+
+ 
+
+|
+
+TEMPERATURE DISTRIBUT!(ON
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+THROUGH THE WALL I~ SECTionNv B-8
+nn
+1300 Ts me]
+wn
+°
+w
+« 9s
+>
+-
+<
+. /
+w
+a
+L
+Ww
+-
+1100
+95 10.
+
+OISTANCE FRo»Mm
+
+CENTER. /VE , INCHES
+
+Fig. 63.
+Across Section B-B After the Step Change
+1300 — 1100°F.
+
+Temperature Distribution
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ORNL-DWG 70-2416
+7 7
+TEMPERATURE DISTR IBVTION
+THROUGH THE WALL IN SECTIoN C-C
+00 — —
+13 1s ~
+9s
+1100
+95 10.5
+
+DISTANCE FROM
+
+Fig. 64.
+
+CENTERL 1wg
+
+INCHES
+
+>
+
+C-C After the Step Change 1300 — 1100°F.
+
+Temperature Distribution Across Section
+
+uv
+°F
+
+TEMPERATURE
+
+I
+L
+°
+9s
+Ou
+[Y;
+d
+~
+C
+0
+Q
+Q
+r
+w
+=
+1100 . + ,
+4.5 10. 11.
+
+65
+
+ORNL-DWG 70-2417
+
+ 
+
+TEMPERATURE DISTRIBUTION
+THROUGH THE WALL IN SEcT/iON D-D
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 65. Temperature Distribution Across Section D-D After the
+Step Change 1300 — 1100°F.
+
+ORNL-DWG 70-2418
+
+ 
+
+TEMPERATURE DISTRIBVTION
+THROvVEN THE WALL IN SEcTiON E-E
+
+—
+1300 {1s an
+
+ 
+
+ 
+
+9s
+
+ 
+
+ 
+
+1100
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+9.5
+
+DISTANCE
+
+Fig.
+
+10 | 11 12
+FROM CENTERLINE, INCHES
+
+66. Temperature Distribution Across Section E-E After the
+
+Step Change 1300 — 1100°F.
+
+ 
+
+ 
+
+ 
+66
+
+ORNL-DWG 70-2419
+| |
+
+ 
+
+01 CIRCUMFBRENTIAL STRESS DISTRIBUTION  _
+THMROUGH THE WALL IN SEcTioN A-R
+
+ 
+
+30
+
+ 
+
+oll
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+-4
+"n
+X 10
+“
+A
+w
+«
+-
+" DISTANCE FROM CENTERLINE, INCHES
+OTas \ 10.
+is
+-10 —
+9
+-20
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 67. Stress Distribution Across Section A-A After the Step
+Change 1300 — 1100°F.
+
+£4
+67
+
+ORNL-DWG 70-2420
+
+ 
+
+ 
+
+)
+
+40 AXIAL STRESS DISTRIBUTION
+THROUGH THE WALL IN SECTION B-B
+
+30
+
+ 
+
+20 \
+
+9¢
+1s
+10 :
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Td
+YL
+X
+a
+9 \ DISTANCE FROM CENTERLINE (INCHES
+0 A
+« 5
+. 9 \ 10
+"
+~~
+-40 \
+A
+-20
+
+ 
+
+-30
+
+ 
+
+-40
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 68. Stress Distribution Across Section B-B After the Step
+Change 1300 — 1100°F.
+
+ 
+68
+
+ORNL-DWG 70-2421
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+50
+CIRCUMFERENTIAL STRESS DISTRIBUTION
+0 THROUGH THE waALL IN SEcTioN (CC
+30
+20
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+10
+9s
+DISTANCE FRon CENTERLINE, iNCHES
+0 \ .
+9.5 \ 10.5
+———
+ls
+
+iy \
+
+Ne —
+
+STRESS, KSI
+
+ 
+
+ 
+
+-20
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 69. Stress Distribution Across Section C-C After the Step
+Change 1300 — 1100°F.
+
+<
+69
+
+ORNL-DWG 70-2422
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+!
+|
+401 —— CIRCUMFERENTIAL STRESS DISTRIBUTION
+THROUG THE WALL 18 secTioNn D-DD
+50
+40
+9s
+30
+20
+1s
+10
+-4
+wn
+x
+w
+w
+w
+a
+“ 1.5
+Ce ]
+DISTANCE FROM CENTERLINE, INCHES
+410
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 70. Stress Distribution Across Section D-D After the Step
+Change 1300 — 1100°F.
+
+ 
+sSTReEss, KSI
+
+T0
+
+ORNL-DWG 70-2423
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+S50) CIRCUMFERENTIAL STRESS DISTRIBUTION
+THROVEM THE wall IN section E-E
+
+40
+
+9¢
+30
+20
+1s
+10
+DISTANCE FROM CENTERLINE, INCHES
+
+) . | ) te .$
+
+°Tos No \ re
+
+-10
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 71. Stress Distribution Across Section E-E After
+Step Change 1300 — 1100°F.
+
+the
+
+ 

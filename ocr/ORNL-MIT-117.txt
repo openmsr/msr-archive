@@ -1,0 +1,1767 @@
+ 
+
+ 
+
+OAK RIDGE NATIONAL LABORATORY
+
+OPERATED BY
+UNION CARBIDE CORPORATION
+NUCLEAR DIVISION
+
+dab]
+POST OFFICE BOX X
+CAK RIDGE, TENNESSEE 1317630
+ORNL-MIT-117
+
+ 
+
+  
+
+ 
+
+November 18, 1970 COPY NO.
+
+DATE:
+SUBJECT: Removal of Tritium from the Molten Salt Breeder Reactor Fuel
+AUTHOR: M.D. Shapiro and C.M. Reed
+
+Consultant: R.B. Korsmeyer
+
+ABSTRACT
+
+Molten Salt Breeder Reactors will produce large quantities of
+
+tritium which can permeate most metals at elevated temperatures and
+In this project it was assumed
+
+thereby contaminate the environment.
+that the tritium can be removed from the salt stream by a hydrogen-
+helium purge and that the helium can be separated for recycle with a =
+palladium membrane. Several systems for concentrating and storing im
+the tritium were conceptualized, designed, and economically evaluated. p44
+Cryogenic distillation of liquid hydrogen appears to be the most eco- &
+nomical system. A cryogenic system with a capacity of 4630 gmoles of IT
+hydrogen per hour at a 1000-fold tritium enrichment has an estimated tv
+capital cost of $328,000 and an estimated annual operating cost of x
+$81,000 (excluding depreciation). -
+a a
+NOTICE
+
+3
+<3
+
+ 
+
+ 
+
+This report was prepared as an account of work
+
+sponsored by the United States Government. Neither
+the United States nor the United States Atomic Energy t
+Commission, nor any of their employees, nor any of
+their contractors, subcontractors, or their employees,
+
+makes any warranty, express or implied, or assumes any
+
+fegal liability or responsibility for the accuracy, com-
+
+pleteness or usefulness of any information, apparatus, ay
+~~
+
+product Or process disclosed, or represents that its use
+would not infringe privately owned rights.
+
+ 
+
+ 
+
+ 
+
+ 
+
+Oak Ridge Station
+School of Chemical Engineering Practice
+Massachusetts Institute of Technology
+
+NOTICE This document contains informatien of a preliminary
+nature and was prepared primarily for internal use ot the Oak
+Ridge Nationa! Laboratory. lt is subject to revision or cor-
+rection and therefore does not represent a final report. The in-
+formation is only for official use and no release to the public
+shall be made without the approval of the Law Department of
+
+Union Carbide Corporation, Nuclear Division.
+BISTRIBUTION OF THIS DOCUMENT 1S UNLIMITED.
+
+ 
+Contents
+Page
+T. SUMMAYY 4icevenseerccosnsnsaccos Cree eseciorreenctoa nase eono nat 4
+2. Introduction ........ Crercrsesirareranas Ciecesenan eereaaeieees 4
+3. Design and Evaluation of Alternate Separation Systems ......... 6
+KJ BR £100 oT: Lod .. Bb
+3.2 Feed Pretreatment ...... ete teter ttre cnararertrearirosane 6
+3.3 Storage of Tritiated Water ...........ovvn veces corenenss 7
+3.4 Water Distillation c.vcvvviiiiiiiiiiiieiiiinnns, tees 7
+3.5 Thermal Diffusion ...eeevrnreeierieenrnionneenoncancosonsnn 9
+3.6 Cryogenic Distillation .....evveviinieconnen Ceerenee cevaee 9
+4, Discussion of Separation Systems .......oicieiriiiininovieesnnes 16
+5. Conclusions and Recommendations .......oeeceenees eens vena 16
+6. Acknowledgement ......ceveeiieneenroennennrcnransnsscncaasasans 17
+7. Appendix .iceiiiiiiiiiiiiiiiiiiiii eit ciara eee 18
+7.1 Basis for Water Distillation Costs ....... PN 18
+7.2 Thermal Diffusion System .......cevvnivuenanan eeneeann ees 2]
+7.3 Cryogenic Distillation System ...ooveoorenivnoronrocesoans 22
+7.4 Computer Codes ....... Cierra Cevesrrariene tetressareenens 26
+7.5 Nomenclature ...... eeceraseanns reese enereneronaresesanene 29
+
+7.6 Literature References .....ceveveroceccsesesencososssooces 30
+
+ 
+1. SUMMARY
+
+One characteristic of Molten Salt Breeder Reactors (MSBR) is the rela-
+tively large quantity of tritium which would be produced in the salt fuel
+stream. Tritium, like hydrogen, can permeate most metals at elevated temp-
+eratures, and thereby contaminate the environment. An efficient means of
+removing and concentrating tritium from the fuel stream is essential to the
+development of MSBR.
+
+In this project it was assumed that the tritium can be removed from
+the fuel stream by a hydrogen-helium purge and that the helium can be
+separated from the hydrogen for recycle via a palladium membrane. Four
+systems were conceptualized, designed, and economically evaluated to con-
+centrate or store the hydrogen and tritium: storage of unconcentrated
+tritiated water, water distillation, gaseous thermal diffusion and cryo-
+genic distillation of liquid hydrogen. On the basis of this evaluation
+the most economical system, cryogenic distillation, would provide a 1000-
+fold tritium enrichment at an estimated capital cost of $328,000 and an
+annual operating cost of $81,000.
+
+2. INTRODUCTION
+
+There is presently interest at ORNL in the development of Molten Salt
+Breeder Reactors (MSBR}. A characteristic of these reactors, however, is
+the generation of large quantities of tritium (half life 12.36 yr). Tritium,
+like hydrogen, has a very high permeability through most metals at tempera-
+ture and concentration levels of the molten salt; therefore if it is not
+removed, it will escape from the reactor and contaminate the environment.
+
+Tritium is a weak beta emitter (18.6 kev), but it exchanges readily
+with hydrogen and as tritiated water can enter the body by penetrating the
+skin. The effect of radiation in a very localized area and the transmuta-
+tion of tritium to helium within the body may be of biological significance
+
+(1.
+
+One proposed method of removing the tritium from the MSBR fuel stream
+is by means of a helium-hydrogen purge (2). The hydrogen stream would
+then be separated from the helium and the tritium would be concentrated
+and stored as tritiated water (HTO). Since tritium is an isotope, its
+concentration will depend mainly on physical separation processes.
+
+In the MSBR concept the primary salt stream is comprised of molten
+salts of uranium, lithium, beryilium, and thorium. The primary salt cir-
+culates through the reactor where a critical mass is achieved and fission
+occurs. The sensible heat generated by fission is transferred to a steam
+cycle by means of a secondary salt stream. The flow plan is illustrated
+in Fig. 1.
+ 
+
+A
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+H
+1-10
+PURGE
+(Ho-He) Y
+—d ~~ >»
+a —
+HEAT
+EXCHANGERS STEAM
+CYCIE
+, SRCONDARY
+SALT
+
+PRIMARY GALT
+
+TO TRITIUM RECOVERY
+
+ 
+
+MASSACHUSETTS INSTITUTE OF TECHNOLOGY
+SCHOOL OF CHEMICAL ENGINEERING PRACTICE
+
+AT
+OAK RIDGE NATIONAL LABORATORY
+
+ 
+
+MSBR FLOW PLAN
+
+ 
+
+ 
+
+DATE
+
+DRAWN BY
+
+30 ocr 70| 4%
+
+ 
+
+FILE NO.
+CEPS-X-117
+
+ 
+
+ 
+
+FIG.
+
+ 
+
+ 
+Tritium is produced in the primary salt stream by neutron absorption.
+The reactions producing tritium and the estimated production for a 1000
+Mw(e) reactor are listed in Table 1.
+
+Table 1. Tritium Production in a 1000 Mw(e) MSBR (3)
+
+ 
+
+Ternary Fission 31 curies/day
+6Li(n, a) T 1210
+Li{n, an) T 1170
+19 (n, 170) 1 9
+
+2420 curies/day
+
+v 0.25 gm tritium/day
+
+ 
+
+3. DESIGN AND EVALUATION OF ALTERNATE SEPARATION SYSTEMS
+3.1 Approach
+
+In this study it was assumed that the tritium could be removed from
+the fuel stream by a mixed helium and hydrogen purge. The hydrogen and
+tritium would then be removed from the purge stream and concentrated. The
+selection of the most feasible system for effecting the desired concentra-
+tion was based on a preliminary design and cost estimate for each system.
+The systems studied were storage of the unconcentrated tritium as tritiated
+water, water distillation, thermal diffusion, and cryogenic distillation of
+liquid hydrogen.
+
+The design for all the systems was based on 111,000 gmoles of hydrogen
+per day at an H/T = 106, A 100- to 1000-fold enrichment was desired (i.e.,
+H/T = 103 to 10% in the product stream} with a 99 to 99.9% recovery of the
+tritium. In all cases the product tritium is to be stored as water on the
+MSBR site (2). For all processes the separation equipment will be en-
+closed in a separate building to isolate any possible tritium leak.
+
+3.2 Feed Pretreatment
+
+The purge stream will contain helium, hydrogen, and tritium as well as
+gaseous fission products such as krypton, xenon, iodine, and hydrogen fluo-
+ride. It is proposed to pass the purge stream through a charcoal bed to a
+adsorb some of the gaseous fission products. To separate the helium for
+recycle from the hydrogen and tritium, a palladium "kidney" would be
+employed. A palladium membrane which passes 15 scfh of Hp costs approxi-
+mately $5000 (4). When the six-tenths power formula is applied to scale
+to the capacity required for the MSBR, an estimated purchase cost of
+$136,000 is realized.
+
+It is estimated that the installed cost of the palladium kidney is
+four times the purchase cost of the kidney, or approximately $544,000.
+The same cost will be associated with each of the four alternate systems.
+A second item which is common to the four processes is the oxidation
+equipment and its installed cost is estimated to be $136,000.
+
+3.3 Storage of Tritiated Water
+
+The hydrogen and tritium would be oxidized after passing through the
+palladium kidney and the resulting tritiated water condensed and sent to
+a storage tank. Storage of tritiated water will require steel tanks en-
+cased in a concrete tank. Should a leak develop, the Tiquid would be con-
+tained, but an additional tank would be required to effect a transfer
+before final repairs could be made (5). The tanks were sized to hold
+30 years production of tritium, the expected lifetime of the reactor. The
+liquid will have to be stored until the activity has decreased to less than
+1% (approximately 110 yr). At a production rate of 2000 liters/day, a tank
+capacity of approximately 5.8 million gallons is required. With an esti-
+mated capital cost of $1/gal (5), the two-tank system would have a capital
+cost of $11.6 million. Annual operating cost for this sytem would be the
+cost of the hydrogen and oxygen burned to form the water ($143,000) and the
+maintenance cost [2% of the capital cost (13)], $232,000. (See Appendix
+7.1 for details.)
+
+3.4 Water Distillation
+
+During World War II the United States built and successfully operated
+several water distillation plants to produce heavy water. The low value of
+the relative volatility (a), however, required the use of high reflux ratios
+and a large number of plates in the distillation column.
+
+Distillation to separate tritiated water (HTO) is not as difficult as
+that for heavy water, since the value for ao is several percent higher. A
+plot of relative volatility versus pressure indicates that such a system
+should be operated under vacuum to take advantage of the higher value of a
+(see Fig. 2). A computer program was written to size the distillation
+column. The design of the column is based on the use of a high efficiency
+packing such as Sulzer CY (designed for use in heavy water systems). This
+packing was found to have 21 theoretical plates/meter and a pressure drop
+of 0.19 torr/theoretjcal plate (6) for heavy water separations at a tiquid
+toading of 2000 kg/M2-hr and a column head pressure of 120 mm Hg. More
+favorable conditions might be achieved with the tritium system by Towering
+the head pressure of the column.
+
+ 
+ 
+
+1.08¢—
+
+1.07d
+
+1.064
+
+1.05¢
+
+ 
+
+1. 04 Gm
+50
+
+ 
+
+Relative Volatility, o
+
+    
+
+75
+
+| | l l | |
+
+100 125 150 175 200 225
+
+ 
+
+MASSACHUSETTS INSTITUTE OF TECHNOLOGY
+Pressure, mm Hg SCHOOL OF CHEMICAL ENGINEERING PRACTICE
+AT
+
+OAK RIDGE NATIONAL LABORATORY
+
+ 
+
+ 
+
+H,0
+RELATIVE VOLATILITY (a + 5) (1)
+ATE DRAWN BY FILE NO. FIG.
+
+2Nov Fo | 4 CEPS-X-1174 2
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+9
+
+As shown in Fig. 3 the number of theoretical plates is a sharp function
+of the reflux ratio. Figure 4 is a schematic diagram of the proposed water
+distillation design. The optimum systems and operating conditions were
+determined by varying the reflux ratio for different enrichment and recovery
+factors (see Tables 4 and 5 in Appendix 7.1). Table 2 shows the major de-
+sign specifications and the cost estimates for the optimized systems. Cap-
+ital costs for 99% recovery are $422,700 at H/T = 104 and $362,600 at H/T
+= 103. For 99.9% recovery, capital costs are $536,600 at H/T = 104 and
+$484,600 at H/T = 103. Although the column packing and building costs are
+higher for H/T = 10°, the overall cost is less than for H/T =
+10% because of the associated storage costs. The cost of recovering 99.9%
+of the tritium for H/T = 103 is 33% higher than the cost for 99% recovery.
+Operating costs in all four cases are essentially the same, $220,000 annually.
+The cost of Ho is the major operating expense, $128,000 annually. A break-
+down of the column costs for other reflux ratics is in Appendix 7.1.
+
+3.5 Thermal Diffusion
+
+Thermal diffusion is based on a temperature gradient in a mixture of
+gases which gives rise to a concentration gradient, thereby effecting a
+partial separation. Jones and Furry (9) have presented a detailed discus-
+sion on the theory and design of thermal diffusion systems for binary sepa-
+rations. The thermal diffusion constant between two species with masses
+mj and mp is equal to (mp - my)/(m2 + my), and for a hydrogen-tritium
+system this ratio is 1/3 which is considered high.
+
+In a thermal diffusion column the separation rate is fixed by the
+temperature and pressure of the system. Theory requires that the rate of
+production of each column be small compared with the rate of thermal dif-
+fusion. The production rate of tritium in an MSBR is so large that 103 to
+10% thermal diffusion columns operated in parallel would be necessary.
+Based on the theory of Jones and Furry, Verhagen and Sellschop (11) designed
+and operated a thermal diffusion system for tritium enrichment. A scaleup
+of their apparatus would require 5150 parallel systems for a 1000-fold en-
+richment with a power load of 100,000 kwh. The power consumption at
+$0.004/kwh would cost $2.9 million per year. (See Appendix 7.2 for appa-
+ratus details and operating conditions.)
+
+3.6 Cryogenic Distillation
+
+Due to recent advances in cryogenic engineering, several plants have
+been constructed which separate deuterium from hydrogen by cryogenic dis-
+tillation of the liquid hydrogen feed. The relative volatility of Hp to HT
+is not available, but it is believed to be equal to, if not greater, than
+the relative volatility for the Ho-HD system (a ¥ 1.6 at 1.5 atm). This
+is considerably higher than the relative volatility for the water-tritiated
+water system {a ¥ 1.05). A second advantage is the lower consumption of
+Hp and 02. For the separation of tritium by water distillation, all the
+Ho from the purge stream is oxidized to water, but in the cryogenic system
+10
+
+ 
+
+(NTP)
+
+Number of Theoretical Plates
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+r Y digg
+600 7
+550 —
+500 —
+450 —
+H/T=10°
+400 99.9% Recovery 1
+r=10%
+350 n —
+1/T=10>
+300 = —
+99% Recovery
+H/1=10°
+] i 1 1 ] J | j J ] ]
+26 27 28 29 306 31 32 33 34 35 36 37
+Reflux Ratio
+MASSACHUSETTS INSTITUTE OF TECHNOLOGY
+SCHOOL OF CHEMICAL ENGINEERING PRACTICE
+AT
+OAK RIDGE NATIONAL LABORATORY
+NUMBER OF THEORETICAL PLATES
+VERSUS REFLUX RATIO
+DATE DRAWN BY FILE HO. FIG.
+4NOV 70 | AES CEPS-X-117] 3 co
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+11
+
+ 
+
+ 
+
+Steam
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+D " Steam
+Ejector
+Condenser
+\
+Distillate
+Feed
+Packed Column
+Tritium
+7 Recovery
+
+ 
+
+ 
+
+ 
+
+Reboiler
+
+Steam
+
+ 
+
+MASSACHUSETTS INSTITUTE OF TECHNOLOGY
+SCHOOL OF CHEMICAL ENGINEERING PRACTICE
+
+AT
+OAK RIDGE NATIONAL LABORATORY
+
+ 
+
+WATER DISTILLATION SYSTEM
+
+ 
+
+DATE DRAWN BY FILE NO. FIG.
+
+4 NOV 70 | ME CEPS-X-117 4
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+12
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Table 2. Cost Estimate of Optimum Water Distillation Systems
+(See Appendix 7.1 for Details}
+
+Recovery 99% 89% 99.9% 99.9%
+Product H/T 104 103 104 103
+Column Diameter 1.32 M 1.32 M 1.32 M 1.32 M
+Number Theoretical Plates 275 323 362 412
+Designed No. Plates = 1.1 (NTP) 303 355 398 453
+Column Height 14.4 M 16.9 M 19.0 M 21.6 M
+Reflux Ratio 32 32 35 35
+Installation Column Cost $90,600 $106,200 $138,000 $157,200
+Flow Distributors 1,500 1,200 1,200 1,200
+Packing 139,000 163,000 200,000 228,000
+Building 19,600 23,000 25,900 29,500
+Covering 3,000 3,400 4.100 4.100
+Ejector (installed) 2,000 2,000 2,000 2,000
+Site Preparation 1,000 1,000 1,000 1,000
+Instruments 50.000 50,000 50,000 50,000
+
+Total 306,700 349,800 422,200 473,000
+Storage Tanks 116,000 11,600 116,000 11,600
+
+Total $422,700 $361,400 $538,200 $484,600
+Operating Costs, $/yr (Depreciation Not Included)
+Steam $10,570 ~~ $10,570 $11,530 $11,530
+H, Usage 128,160 128,160 128,160 128,160
+02 Usage 14,685 14,685 14,685 14,685
+Labor 45,000 45,000 45,000 45,000
+Maintenance @ 5% Investment 21,135 18,070 26,910 24,230
+
+Total $219,550 $216,485 $226,285 $223,605
+13
+
+only the final product is burned, and the remainder, more than 99% of the
+Ho can be recycled.
+
+The liquid hydrogen distillation system is based on a plant built by
+Gebrider Sulzer for heavy water production in DOMAT/EMS, Switzerland (18,
+19). A schematic for this plant is shown in Fig. 5. The hydrogen feed
+is initially compressed to 3.7 atm, cooled in a series of three heat ex-
+changers (Nos. 1, 2, and 3), then liquified and re-evaporated in the feed
+liquifier before it enters the column. The vapor from the top of the col-
+umn is split into two streams. One stream passes through exchangers 3, 2,
+and 1 to cool the feed, and then is recycled to the hydrogen purge stream.
+The remainder passes through exchangers 4 through 8, exchanging against the
+returning reflux stream. It exits exchanger 8 at ambient temperatures, and
+enters the reflux compressor. Because of interstage compressor cocling,
+the H2 gas leaves the compressor at 14 atm and 300°K. The stream re-enters
+exchanger 8 and the expansion turbines, and finally exits exchanger 5 as
+saturated vapor at 4.5 atm. The saturated vapor then passes through the
+bottom of the column where it is condensed by boiling the liquid in the
+reboiler. The stream passes through exchanger 4, flashes to 1.5 atm, and
+enters the column as saturated liquid.
+
+The computer code used in Sect. 3.4 was modified for use with this
+system. Calculations showed that a column with 100 theoretical stages op-
+erating at a reflux ratio of two would yield a separation of H/T = 103 at
+a recovery of 99.9%. Although calculations showed that a reflux ratic of
+two was sufficient for the desired separation, the design was based on a
+reflux ratio of five to allow for variation of the operating conditions
+and to ensure a conservative cost estimate. With a packing material simi-
+lar to Sulzer CY, the column would be only 13 ft high at a liquid loading
+of 1500 kg/m2-hr (6). As seen in Table 3 the column cost represents a
+small fraction of the total cost; therefore, the less difficult separations
+were neglected in the analysis.
+
+Capital cost is estimated at $328,100 and operating costs at $80,600
+annually. The building for this system must not only isolate. the system,
+but also insulate the apparatus for the low temperatures involved. The
+distillation column and the low temperature heat exchangers and expansion
+turbines are enclosed in steel vacuum bottles to maintain cryogenic temp-
+eratures. No cost information was obtainable on the new high efficiency
+insulation currently being used on some cryogenic equipment. However, it
+is believed that the cost estimate presented is conservative. The cost of
+the expansion turbines was estimated from cost information for a 200 ton/
+day oxygen plant. This unit has 100 times the capacity required for the
+hydrogen liquification unit. Further details on the cryogenic distillation
+system, including an explanation of the cost estimate, are given in Appen-
+dix 7.3.
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+~
+
+3-Stage Reflux
+
+ 
+
+ 
+
+ 
+
+|
+
+oo
+
+ 
+
+Compressor
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Expansion
+
+ 
+
+ 
+
+Turbines ~—»-
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+yi LTT
+or x aX ~~ x 0 x
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Packed
+Column
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Ex = Heat Exchangers
+
+Product
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Ex 3
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+   
+
+[|Feed
+Hliquifier
+
+ 
+
+  
+
+~pe- TO H
+fle
+
+Recy
+
+ 
+
+Fee
+
+C]
+
+ 
+
+MASSACHUSETTS INSTITUTE OF TECHNOLOGY
+SCHOOL OF CHEMICAL ENGINEERING PRACTICE
+AT
+
+OAK RIDGE NATIONAL LABORATORY
+
+ 
+
+CRYOGENIC DISTILLATION SYSTEM
+
+ 
+
+ 
+
+DATE
+I$ ov jo
+
+ 
+
+DRAWN BY
+
+ALB
+
+FiLE NO.
+
+CEPS-X-117
+
+ 
+
+ 
+
+FIG.
+
+ 
+
+ 
+
+YT
+15
+
+Table 3. Cost Evaluation of Cryogenic Distillation System
+
+ 
+
+Recovery 99.9%
+H/T in Product 103
+Designed Number of Stages 100
+Reflux Ratio 5
+Cotumn Diameter 8 in.
+Column Height 13 ft
+Purchase Cost Factor Installed Cost
+Capital Cost
+Column $ 1,000
+Packing 925
+1,925 5 $ 9,600
+Feed Compressor 8,700
+Reflux Compressor 31,000
+39,700 2 79,400
+Heat Exchangers 46,000 2 92,000
+Expansion Turbines 25,000
+Instrumentation 50,000
+Insulated Building 24,500
+Vacuum System 9,000 4 36,000
+Storage Tank 11,600
+Total Capital Cost $ 328,100
+
+Annual Operating Costs (Depreciation not Included)
+
+Electricity
+a) Compressors 1,300
+b) Vacuum System 200
+H, and 0, 1,300
+Labor 45,000
+Maintenance at 10% Capital Cost 32,800
+
+ 
+
+Total Operating Cost $ 80,600
+
+ 
+16
+
+4, DISCUSSION OF SEPARATION SYSTEMS
+
+Storage of tritiated water without any form of concentration requires
+a capital cost twenty times greater than for water distillation and thirty-
+five times that of cryogenic distillation. Thermal diffusion also represents
+an unsatisfactory solution to the problem of tritium concentration. Moni-
+toring over 5000 two-stage thermal diffusion columns and maintaining control
+of the feed to each column appears horrendous; and the annual power cost of
+$2.9 million certainly makes this system unfeasible.
+
+Water distillation is a technically sound alternative. However, its
+capital and operating costs are not competitive with those of cryogenic
+distillation. The packing represents the major capital expense, and since
+all of the hydrogen is oxidized to water, the major operating expense is
+the cost of hydrogen. However, if the hydrogen concentration in the purge
+stream is sufficiently high, it might be feasible to oxidize the hydrogen
+directly without the use of a palladium kidney and separate it from the
+purge stream as water. This would not be sufficient to make water distil-
+lation competitive with the cryogenic system based on operating costs.
+
+Cryogenic distillation has the lowest capital cost estimate as well as
+the lowest operating costs. Part of the economic advantage is realized by
+recycling 99.9% of the hydrogen to the purge stream. It should be noted
+that the cryogenic distillation was desjgned for a reflux ratio of five,
+although for 99.9% recovery at H/T = 103, a reflux ratio of two is sufficient.
+Thus the system is capable of recoveries in excess of 99.9% at concentrations
+Tower than H/T = 103.
+
+5. CONCLUSIONS AND RECOMMENDATIONS
+
+1. Cryogenic distillation of liquid hydrogen is the most economical of
+the alternatives studied. A cryogenic distillation system which will enrich
+4630 gmole/hr of hydrogen from H/T = 106 to H/T = 10° at 99.9% recovery has
+an estimated capital cost of $328,100 and an estimated annual operating cost
+of $80,600 (excluding depreciation). There is also the associated capital
+cost of $680,000 for the palladium pretreatment and oxidizing systems.
+
+2. Water distillation or storage of unconcentrated tritiated water
+represents too great a capital expenditure and annual operating cost.
+
+3. Thermal diffusion is unattractive for concentrating tritium from a
+1000 Mw(e) MSBR.
+17
+
+Sigs
+
+6. ACKNOWLEDGEMENT
+
+The authors would like to express their gratitude to R.B. Korsmeyer
+for the assistance and insight he provided during this project. His enthu-
+siasm was a constant source of encouragement. The assistance of J.T. Corea
+is also gratefully acknowledged.
+18
+
+7. APPENDIX
+7.1 Basis for Water Distillation Costs
+
+1. Column Shell thickness 0.5 in., type 304 stainless steel
+$1.25/1b fabricated (12)
+
+2. Flow Distributors: 1 approximately every 5 meters
+$300 each (installed) (13)
+
+3. Packing
+$200/7t> (14)
+
+4, Building Cost
+§2.70/¢t3 (25)
+
+5. Building Insulation
+
+$1/Ft% wall (15)
+
+6. Steam Ejector
+$2000 installed (13, 16)
+
+7. Storage Tanks
+$1/gal (5)
+
+8. Steam
+$0.25/10° Btu (Use of waste steam from the MSBR)
+9. Raw Materials
+
+H, = $0.0048/scf
+
+0, liquid = $25/ton (17)
+10. Labor
+1 man/shift at $15,000 yr = $45,000
+
+11. Maintenance at 5% of investment (13)
+
+12. 7000 hr of Operation Per Year “at
+
+Tables 4 and 5 reflect the costs of the various H,0 distillation systems.
+ 
+
+Table 4. Cost of Various Water Distillation Systems
+
+ 
+
+ 
+
+For 99% Recovery with H/T = 10% For 99% Recove
+Reflux 25 27 30 32 35 40 25 27 30
+Column Diam (M) 1.17 1.22 1.28 1.32 1.38 1.47 1.17 1.22 1.28
+NTP 377 330 291 275 258 239 425 379 340
+ANP = NTP x 1.1 415 363 320 303 284 263 471 417 374
+Column Height (M) 19.8 17.3 15.2 14.4 13.5 12.5 22.4 19.9 17.8
+Column Cost $18,300 $16,700 $15,400 $15,700 $14,800 $14,600 $20,800 $19,200 $18,000
+
+Installation (5x) 91,500 83,500 77,000 75,500 74,000 73,000 104,000 96,000 90,000
+
+ 
+
+Flow Distributors 1,500 1,500 1,500 1,500 1,500 1,500 1,500 1,500 1,500
+Packing 150,000 143,000 138,000 139,000 143,000 150,000 170,000 164,000 162,000
+Building 27,000 23,600 20,700 19,600 18,400 17,000 30,500 27,000 24,200
+Covering 3,800 3,400 3,100 3,000 2,800 2,700 4,200 3,900 3,500
+Ejector (installed) 2,000 2,000 2,000 2,000 2,000 2,000 2,000 2,000 2,000
+Site Preparation 1,000 1,000 1,000 1,000 1,000 1,000 1,000 1,000 1,000
+Instrumentation 50,000 50,000 50,000 50,000 50,000 50,000 50,000 50,000 50,000
+Subtotal 345,100 324,700 308,700 306,700 307,500 311,800 384,000 364,600 352,200
+Storage Tanks 116,000 116,000 116,000 116,000 116,000 116,000 11,600 11,600 11,600
+
+ 
+
+Total Capital Cost $461,100 $440,700 $424,700 $422,700 $423,500 $427,800 $395,600 $376,200 $363,800
+Steam Cost/yr 8,330 8,980 9,940 10,570 11,530 13,130 8,330 8,980 9,940
+
+ 
+Table 5. Cost of Various Water Distillation Systems
+
+4
+
+ 
+
+ 
+
+For 99.9% Recovery with H/T = 10 For 99.9% Recove
+Reflux 25 27 30 32 35 40 25 27 30
+Column Diam (M) 1.17 1.22 1.28 1.32 1.38 1.47 1.17 1.22 1.28
+KTP 614 516 43 397 362 329 660 561 482
+ANP = NTP x 1.1 675 570 474 437 398 362 726 617 530
+Column Height (M) 32.1 27.1 22.6 20.8 19.0 17.2 34.6 29.4 25.2
+Column Cost $35,900 $29,000 $25,400 $24,100 $23,000 $22,200 $36,900 $31,500 $28,300
+
+Installation (5x) 180,000 145,000 127,000 121,000 115,000 111,000 185,000 158,000 142,000
+
+ 
+
+Flow Distributors 2,100 1,800 1,500 1,200 1,200 1,200 2,100 1,800 1,500
+Packing 265,000 224,000 205,000 200,000 200,000 206,000 272,000 243,000 229,000
+Building 43,800 37,000 30,800 28,400 25,900 23,400 47,200 40,000 34,400
+Covering 6,200 5,000 4,300 4,400 4,100 3,800 6,400 5,300 4,700
+Ejector (installed) 2,000 2,000 2,000 2,000 2,000 2,000 2,000 2,000 2,000
+Site Preparation 1,000 1,000 1,000 1,000 1,000 1,000 1,000 1,000 1,000
+Instrumentation 50,000 50,000 50,000 50,000 50,000 50,000 50,000 50,000 50,000
+Subtotal 596,000 494,800 447,000 432,100 422,200 420,600 602,600 532,600 492,900
+Storage Tanks 116,000 116,000 116,000 116,000 116,000 116,000 11,600 11,600 11,600
+
+ 
+
+Total Capital Cost $712,000 $610,800 $563,000 $548,100 $538,200 $536,600 $614,200 $544,200 $504,500
+Steam Cost/yr 8,330 8,980 9,940 10,570 11,530 13,130 8,330 8,980 9,940
+
+ 
+
+ 
+21
+
+7.2 Thermal Diffusion System
+
+The theory of Jones and Furry (9) states that the temperature and pres-
+sure fix the operating parameters of a thermal diffusion system. The calcu-
+tations are presented to illustrate that thermal diffusion systems of the
+scale required by an MSBR are uneconomical. From Equations 70-72 of Jones
+and Furry, we obtain for concentric columns:
+
+3 2
+_ (ew) 0.gB 2
+ho= (20oe od (rm)
+7 3 2
+_ (2w) B 2
+Ke = 9T 1D (AT/T)
+Kg = 2wp DB
+These equations are used subject to the constraint that 5 <K_ /K, < 25. For
+
+an efficient operation K./Kgq = 10. The ratio of B/2w = 20 dane” to
+the value of Jones and Flurry and Verhagen (11).
+
+Inserting the appropriate values for hydrogen, we find that:
+
+P=1 atm P=25 atm
+
+7 = 300°K; Ts = 600°K Ty = 300°K; T, = 600°K
+n = 1.18 x 107 poise n = 1.18 x 107 poise
+
+o = 0.54 x 107% g/cc o = 2.71 x 107% g/cc
+
+D = 2.99 cm/sec D = 0.5225 cn /sec
+
+a = 0.174 a = 0.149
+
+2w = 1.253 cm 2w = 0.574 cm
+
+B=15.9 cm B = 11.48 cm
+
+Ho= 0.774 x 107% g/sec H = 8.17 x 107% g/sec
+
+K. = 5.06 x 1072 g-cm/sec K. = 2.66 x 1073 g-cm/sec
+Ky = 5.07 x 107% g-om/sec Kk, = 2.66 x 107
+
+ 
+
+o = rate of mass transport of the desired species, i.e., the production rate
+in g/sec.
+22
+
+McInteer (10) has reported that o/H must be much less than one; and
+from Jones and Furry (9) we see that o/H should be on the order of 10-4 to
+10-0 for each stage. MSBR requirements are such that the total flow rate
+is 9.55 x 10-4 g/sec. To satisfy theory 104 to 10° columns in parallel
+will be required. Based on the theory of Jones and Furry, Verhagen and
+Sellschop (11) designed and operated a thermal diffusion system for tritium
+enrichment.” Their apparatus is schematically shown in Fig. 6. The speci-
+fications are given in Table 6.
+
+Table 6. Thermal Diffusion System of Verhagen and Sellschop (11)
+
+ 
+
+Stage 1 Stage 2
+Type of unit concentric tube hot wire
+Radius, hot wall 0.30 cm 0.02 cm
+Radius, cold wall 8.76 cm 1.50 cm
+Length 7.20 m 2.75 m
+Temperature, hot wall 600°K 1200°K
+Temperature, cold wall 1 300°K 300°K
+Power consumption 18.5 kwh 1.66 kwh
+Pressure 1 atm 1 atm
+
+ 
+
+At the required enrichment of 1000-fold, this system has a production
+capacity of only 0.125 cc(STP)/min of tritium. Based on this design approx-
+imately 5150 systems in parallel are necessary to process the 642 cc(STP)/
+min from the MSBR. Aside from the extreme difficulty in maintaining a
+uniform feed ar to each column [to which thermal diffusion systems are
+very sensitive (9)]1, the power consumption is extremely high. The overall
+system requires 72.7 x 107 kwh/yr at $0.004/kwh or a yearly power cost of
+$2.9 million.
+
+7.3 Cryogenic Distillation System
+7.3.1 Design of Cryogenic Distillation Column
+
+The specifications given in Table 3 were based on an a of 1.6. This
+value is for a hydrogen-deuterium system; however, it is believed that the
+a for the tritium system would be at least as great if not greater. ig
+23
+
+ 
+
+ 
+
+ 
+
+pad H, Outlet
+ne”
+
+1//))/ili
+
+Cooling Jacket
+
+  
+       
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Packinge—e—¥ i
+
+Gland A
+Mixed Gas yd
+
+Inlet Heater
+
+ 
+
+Cooling Jacket
+
+Product Cutlets
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+MASSACHUSETTS INSTITUTE OF TECHNOLOGY
+SCHOOL OF CHEMICAL ENGINEERING PRACTICE
+T
+
+A
+OAK RIDGE NATIONAL LABORATORY
+
+ 
+
+TWO-STAGE THERMAL DIFFUSION SYSTEM
+
+ 
+
+DATE DRAWN BY FILE NO. FIG.
+
+iswov re | gms Eeps-x-117| 6
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+24
+
+Computer calculations were made for the four different separations at
+various reflux ratios and for both saturated liquid and saturated vapor
+feeds. Selected results are presented in Table 7.
+
+Table 7. Variation of NTP with Operating Parameters
+for H, Distillation Column
+
+ 
+
+NTP 53 58 88 93 98 76 49 50
+Q" 1 ] 1 1 0 0 1 0
+Reflux Ratio 2 2 2 2 2 2.2 3 3
+% Recovery 99.0 99.0 99.9 99.9 99.9 99.9 99.9 99.9
+H/T Product 10% 10° 16 10d 10d 10d 10d 168
+
+ 
+
+For a liquid feed and R = 2, it is seen that lowering H/T from 10% to
+
+103 causes an increase of only five stages for either 99.0 or 99.9% recovery.
+
+The difference between 99 and 99.9% recovery is 40 plates at R = 2, but NTP
+is still under 100 for 99.9% recovery. If the feed is a saturated vapor,
+NTP is slightly higher but the difference is insignificant. NTP drops
+rapidly at reflux ratios above 2, A 10% increase in reflux from 2 to 2.2
+lowers NTP from 98 to 76, and increasing the reflux from 2 to 3 Towers NTP
+from 93 to 49.
+
+In view of these results it was felt that a column with 100 theoretical
+stages operating at a reflux ratio of 2 would be adequate for the most dif-
+ficult separation, i.e., recovery = 99.9% and H/T = 103. However, in calcu-
+
+lating the cost of the system a reflux ratio of 5 was used to provide opera-
+tional flexibility, conservative separation capability, and cost estimate.
+
+7.3.2 Basis for H, Distillation Costs
+
+1. Column shell thickness 1/4 in., type 304 stainless steel
+$1.25/1b fabricated (12)
+
+2. Packing
+$200/Ft> (14)
+
+3. Heat exchangers
+
+$4/ Ft? purchase price for plate-fin type (20)
+
+area calculated from Q = UAAT
+25
+
+where U 2 Btu/hr-ft2-°F for gas-gas exchange
+
+AT = B5°K = 9°F
+
+Btu )
+mole reflux
+
+LD
+1"
+
+(4630 mole feed/hr)(6 mole reflux/mole feed)(7.44
+
+207,000 Btu/hr
+
+7.44 Btu is the AH per mole of Hp from saturated vapor at 1.5 atm to
+295°K at 1.5 atm (21)
+
+area = (207,000)/(2)(9) = 11,500 ft
+
+4. Compressors
+
+purchase cost = $7740 + ($99.5) (HP) (20)
+
+For 3-stage reflux compressor,
+cost = 3(7740) + 99.5(HP)
+
+Calculated compressor size based on
+
+KNRT p
+W, = er | - 22] (22)
+(adiabatic)
+
+where: k = Co/Cy = 1.405 for normal H, (23)
+
+From this equation the work of compressing the feed was calculated:
+Ty = 300°K, P71 = 1 atm, Pp = 3.7 atm, and W, = 0.947 kcal/mole. For a feed
+of 4630 mole/hr,
+
+0.00156 HP
+
+W = (4385 keal/he) (Sarpy
+
+0 6.8 HP
+A 20% margin of safety was allowed and an overall efficiency of 85% was
+assumed, yielding a design of 10 HP.
+
+For the 3-stage reflux compressor with interstage cooling, a Ty of
+245°K was used for all three stages. The initial pressure is 1.5 atm and
+interstage pressures of 5.5 and 9.5 atm were used in applying the above
+equation which yields W, = 1.51 kcal/mole. For a reflux ratio of 5 the
+power requirement is 54 HP, and with a 20% margin of safety and 85%
+efficiency the design is 77 HP.
+
+5. Expansion Turbines
+
+Lady (24) quotes a capital cost of $25,000 for an expansion turbine
+in a 200 ton/day liquid 0, plant. To be on the conservative side the same
+
+ 
+26
+
+figure is used in this cost estimate for the installed cost of the three
+expansion turbines.
+6. Insulated building
+
+$500/ ft floor space (15)
+7. Two vacuum tanks, type 304 stainless steel
+
+0.5-in.-thick x 15-ft-high x 3.5- ft -diam at $1.25/1b
+
+fabricated = $9000 (12)
+
+; Installed cost of vacuum bottles including all vacuum equipment is
+36,000.
+
+8. Electricity
+$0.004/kwh (2)
+
+9. Raw materials:
+
+Hy = $0.0048/scf (17)
+0, = §$25/ton (liquid)
+10. Labor
+
+one man/shift = $45,000
+11. Maintenance
+10% of investment (13)
+
+12. 7000 hr operation per year
+7.4 Computer Codes
+
+A listing of the computer program for the water distllilation column
+is shown below. The basis of calculation was a feed of 100 mole.
+
+XF=.999998
+
+55 ACCEPT $K= $,K; IF(K),57,; ACCEPT KK;IF(KK),58,
+
+ACCEPT $PRT= $,PRT,$NP= §$,NP,$DELP= $,DELP
+
+58 ACCEPT $REC= $,REC,$WDT= § ,WOT,$R= $.R
+
+BHT@=REC*0 | 0002 ; BWAT=BHTP*WDT + B=BH10+BWAT ; XB=BWAT/BD=100. -B
+DNAT=99. 9998-BWAT ; XD=DWAT/D;RLV=R/ (R+1. ) ; SLOV=(R+100. /D)/ (R+1.)
+DXD=XD/ (R+1. ) ;BXB=(B/D) *XB/ (R*1.)
+
+60 FPRMAT(15,F15.10,F9.5)
+N=13J=13JJ=1;Y=XD;PR=PRT;A1=RLPV;A2=DXD
+27
+
+20 CALL ALPHA(PR,A)
+X=Y/(A-(A=1.)*Y);IF
+24 TF(N),29, ;IF(X-X
+29 IF(X-XB)40,,
+25 Y=AT*X+A2;J=J+1;1F(J-NP)26,27,27
+26 PR=PR+DELP;G@ TP 20
+27 DISPLAY $STAGES= ad die $,X;0=1;PR=PRT;JJ=1;G0 T¢ 20
+22 JJ=JJ+1;WRITE(1,60)J,X,A;G8 TO 24
+30 N=0;A1=SLQV;A2=-BXB;G@ TP 25
+40 WRITE(1,60)J,X;G0 T@ 55
+57 STEP
+END
+S'E ALPHA(PR,A)
+D'N AL(9),P(9)
+DATA AL/1.0775,1.0735,1.07,1.067,1.062,1.056,1.0512,1.0478,1.044/
+DATA P/50.,60.,70.,80.,100.,130.,160.,200.,250./
+DB 8 J=1,10
+IF(P(J)-PR) 8,9,10
+8 CONTINUE
+9 A=AL(J); GP TP 15
+10 A=AL(J-1)+(AL(J)-ALE-1))*(PR-P(J-1))/(P(J)-P(J-1))
+15 RETURN
+END
+*
+
+a g.z.z
+
+(
+F)30,30,25
+
+The following list defines the important variables in the program.
+XF mole fraction of Hy0 in the feed
+PRT pressure at the top of the column (torr)
+
+NP maximum number of plates in a column; if NP is exceeded the program
+continues with a new column, resetting the top pressure to PRT
+
+DELP pressure drop per theoretical stage (torr)
+
+REC fractional recovery of HTO
+
+WOT ratio of Ho0 to HTO in the bottoms
+
+R reflux ratio = L/D
+
+BHT® number of moles of HTO in bottoms based on 100 moles feed
+BWAT number of moles of H,0 in bottoms
+
+8 number of moles in bottoms
+
+D number of moles in distillate
+
+EE XB mole fraction H,0 in bottoms
+28
+
+XD mole fraction H,0 in distillate
+DWAT number of moles H,0 in distillate
+RLV ~~ L/V above the feed
+
+SLY  L/V below the feed
+
+DXB D+ XD/V
+
+BXB B - XB/V
+
+A relative volatility of H,0 to HTO
+
+PR pressure at any point in the column (torr)
+X Tiquid mole fraction of H,0 at any point
+Y vapor mole fraction of H,0 at any point
+
+The program assumes constant molal overflow which is certainly justi-
+fied since the liquid and vapor streams are at least 99.9% H20. The varia-
+tion of relative volatility with pressure is introduced according to the
+curve in Fig. 2. The feed is assumed to be saturated liquid.
+
+For the cryogenic Hp distillation the program was modified for the
+thermal condition of the feed, and the variable alpha subroutine was re-
+placed with a constant alpha. The following printout shows the modified
+program.
+
+XF=.999998; A=1.6
+55 ACCEPT $K= $,K; IF(K),57,
+ACCEPT $REC=$,REC,$WRT= $,WIT,$R= $,R,$0= $.Q
+BHT@=REC*0.0002 ; BWAT=BHT@*W@T ; B=BHT@+BWAT ; XB=BWAT/B ;0=100. -B
+DWAT=99 . 9998-BWAT ; XD=DWAT/D;RLBV=R/ (R+1.) ;VL=D*(R+1.)-100.*(1.-Q)
+SL@V=(R*D+Q*100. }/ VL ; BXB=B*XB/ VL ; DXD=XD/ (R+1.)
+60 FPRMAT(I5,F15.10)
+IF(Q.EQ.1.0) G@ TP 70;XIN=(XF/(Q-1.)+XD/(R+1.))/(Q/(Q-1.)-R/(R+1.))
+DISPLAY $XIN= $,XIN; GP T@ 69
+70 XIN=XF
+69 N=13J=1:0J=1;Y=XD;A1=RLOV;A2=DXD
+20 X=Y/(A-(A-1.)*Y);IF(J-JJ*K)24,22,22
+24 TF(N),29,;IF(X-XIN)30,30,25
+29 IF(X-XB)40,,
+25 Y=A1*X+A2;J=J+1;G0 T@ 20
+22 JJ=JJ+1;WRITE(1,60)d,X;60 TQ 24
+30 N=0;A1=SL@V;A2=-BXB;6 T@ 25
+40 WRITE(1,60)J,X;G0 T@ 55
+57 STEP
+29
+
+ 
+
+Definitions of the new variables are as follows:
+
+Q heat to convert one mole feed to a saturated vapor
+molar heat of vaporization
+
+For a staurated liquid feed Q = 1; for a saturated vapor feed § = 0.
+VL vapor rate below the feed
+XIN liquid mole fraction of Hy0 at the intersection of the Q-line with
+
+the upper operating line; at this X value the program switches from
+the upper operating line to the lower operating line
+
+7.5 Nomenclature
+
+A heat transfer area, cm?
+
+ATP actual number of plates
+
+B mean circumference = mir, - ro) s cm
+
+C specific heat at constant pressure, cal/g-°C
+
+Cy specific heat at constant volume, cal/g-°C
+
+D coefficient of self diffusion, cm? /sec
+
+Ex heat exchanger
+
+g acceleration of gravity, cm/sec?
+
+H transport coefficient of thermal diffusion, g/sec
+K ratio of specific heats (Cp/Cy)
+
+Ke transport coefficient of mixing due to convection
+Kg transport coefficient of mixing due to diffusion
+m atomic mass
+
+N number of gram moles
+
+NTP number of theoretical plates
+P system pressure, atm
+
+Q heat transferred per unit time, Btu/hr
+30
+
+Q' ratio of molar enthalpy change in converting feed to saturated vapor
+to the molar heat of vaporization
+
+R reflux ratio, gas constant
+
+r radius (ry > ros cm
+
+STP standard temperature and pressure
+
+T temperature, °C
+
+AT temperature driving force, °C
+
+U overall coefficient of heat transfer
+
+W half the annular distance = ry - ros cm
+
+W, work of adiabatic compression per mole, Hp
+
+o relative volatility, thermal diffusion constant
+n viscosity, poise
+
+p density, g/cc
+
+o mass transport rate of desired species, g/sec
+
+Subscripts
+
+1,2 atomic mass of components 1 and 2 respectively, or initial and final
+conditions of temperature or pressure
+
+7.6 Literature References
+1. Jacobs, D.G., "Sources of Tritium and Its Behavior Upon Release to
+the Environment, p. 1, USAEC Div. of Technical Information (1968).
+
+2. Korsmeyer, R.B., personal communication, ORNL, November 20, 1970.
+
+3. Briggs, R.B., and R.B. Korsmeyer, "Distribution of Tritium in an
+MSBR," ORNL-4548, p. 54 (Feb. 28, 1970).
+
+4. McNeese, L.E., personal ccimunication, ORNL, November 11, 1970.
+5. Yarbro, 0.0., personal communication, ORNL, November 12, 1970.
+6. Huber, M., and W. Meier, "Measurement of the Number of Theoretical
+
+Plates in Packed Column with Artifically Produced Maldistribution," Sulzer
+Technical Review, Achema 1970, Sulzer Brothers Limited, Winterthur, Switzer-
+
+Tand.
+31
+
+7. Benedict, M., and T.H. Pigford, "Nuclear Chemical Engineering,"
+443-453, McGraw-Hill, New York (1957).
+
+8. Murphy, G.M., ed., "Production of Heavy Water," 9-52, McGraw-Hill,
+New York (1955).
+
+8. Jones, R.C., and W.H. Furry, "The Separation of Isotopes by Thermal
+Diffusion," Rev. Mod. Phys., 18(2), 151 (1946).
+
+10. McInteer, B.B., L.T. Aldrich, and A.0. Nier, "Concentration of Hed
+by Thermal Diffusion," Phys. Rev., 74(8), 946 (1948).
+
+11. Verhagen, B.T., and J.P.F. Sellschop, "Enrichment of Low Level
+Tritium by Thermal Diffusion for Hydrological Applications," Proc. Third
+Int. Conf. on Peaceful Uses of Atomic Energy, Geneva, 1964, Vol. 12, 398-
+408, United Nations, New York (1965).
+
+12. Russell, W., personal communication, Knoxville Sheet Metal Co.,
+Knoxville, Tenn., November 4, 1970.
+
+13. Peters, M.S., and K.P. Timmerhaus, "Plant Design and Economics for
+Chemical Engineers, 2nd ed., 655, McGraw-Hill, New York (1968).
+
+14. Bragg, E.J., personal communication, Packed Column Corp., Spring-
+field, N.J., November 4, 1970.
+
+15. Corea, J.T., personal communication, ORNL, November 1970.
+
+16. Chilton, C.H., "Cost Engineering in the Process Industries,” p.
+112, McGraw-Hill, New York (1960)
+
+17. Ellis, E.C., personal communication, Purchasing Div., ORNL,
+November 11, 1970.
+
+18. Becker, E.W., "Heavy Water Production," Review Series No. 21,
+Int. AEA, Vienna (1962).
+
+19. Hanny, J., "Eine Tieftemperaturanlage Zur Gewinnung Von Schwerem
+Vasser," Kaltetechnic, 12(6), 158-169 (1960).
+
+20. Perry, J.H., "Chemical Engineers’ Handbook," 4th ed., Chapt. 11,
+p. 14, McGraw-Hill, New York (1963).
+
+: 21. Barron, R.F., "Cryogenic Systems," pp. 644-645, McGraw-Hill, New
+York- (1966).
+
+22, Weber, H.C., and H.P. Meissner, "Thermodynamics for Chemical
+Engineers," 2nd ed., p. 114, Wiley & Sons, New York (1957).
+
+23. Airco Rare and Speciality Gases Catalog, p. 48, 1968.
+
+ 
+32
+
+24. Lady, E.R., "Cryogenic Engineering," Univ. of Mich. Engineering
+Summer Conferences, Chapt. XVII, “Expansion Engines and Turbines," p. 2
+(May 1965).
+
+25. "Building Construction Cost Data - 1971," R.S. Means Co., p. 148
+(Factories), 1971.
+33
+
+Sh
+
+CRNL-MIT-117
+
+Internal
+
+.S. Bettis
+.B. Briggs
+.N. Haubenreich
+.R. Kasten
+.B. Korsmeyer
+I. Lundin
+L.E. McNeese
+ewis Nelson
+11. M.W. Rosenthal
+12. J.S. Watson
+13. M.E. Whatley
+14-15. Central Research Library
+16. Document Reference Section
+17-19. Laboratory Records
+20. Laboratory Records, ORNL R.C.
+21. ORNL Patent Office
+22-36. M.I.T. Practice School
+
+E.S
+R.B
+P.N
+P.R
+R.B
+M.I
+
+E
+Lew
+
+External
+
+37. R.F. Baddour, MIT
+38. L.A. Clomburg, MIT
+39. S.M. Fleming, MIT
+
+ 

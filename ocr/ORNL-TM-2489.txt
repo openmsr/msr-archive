@@ -1,0 +1,2204 @@
+ 
+
+“(
+
+OAK RIDGE NATIONAL LABORATORY
+operated by
+UNION CARBIDE CORPORATION
+NUCLEAR DIVISION
+for the
+U.S. ATOMIC ENERGY COMMISSION
+
+ORNL- TM -2489
+£5
+
+COPY NO. -
+
+ 
+
+DATE - June 2, 1969
+
+Instrumentation and Controls Division
+
+MSBR CONTROL STUDIES
+
+W. H. Sides, Jr.
+ABSTRACT
+
+A preliminary study was made of the dynamics and control of a 1000 Mw(e),
+single=fluid MSBR by an analog computer simulation. An abbreviated, lumped-
+parameter model was used. The control system included a steam temperature con-
+troller and a simplified version of the MSRE reactor temperature control system. The
+results of the study indicate a need for a variable speed, secondary-salt pump for
+close control of the steam temperature. During severe transients, considerable care
+must be taken in designing the control system if freezing or overheating of the salts
+is to be avoided.
+
+NOTICE This document contains information of a preliminary nature
+and was prepared primarily for internal use at the Oak Ridge National
+Laboratory. It is subject to revision or correction and therefore does
+not represent. a final report.
+
+HSTRIBUTION QF THIS DQCUMENE # UNLIMITER,
+ 
+
+~~ - - - LEGAL NOTICE - ~~ ~~ = ===
+
+This report was prepared as an account of Government sponsored work. Neither the United States,
+
+nor the Commission, nor any person acting on behalf of the Commission:
+
+A. Makes any warranty or representation, expressed or implied, with respect to the accuracy,
+completeness, or usefulness of the information contained in this report, or that the use of
+any information, apparatus, method, or process disclosed in this report may not infringe
+privately owned rights; or
+
+B. Assumes any liabilities with respect to the use of, or for damages resulting from the use of
+any information, apparatus, method, or process disclosed in this report,
+
+As used in the above, ‘‘person acting on behalf of the Commission’ includes any employee or
+
+contractor of the Commission, or employee of such contractor, to the extent that such employee
+
+or contractor of the Commission, or employes of such contractor prepares, disseminates, or
+provides access to, any information pursuant to his employment or contract with the Commission,
+
+or his employment with such contractor.
+i.
+
+2. Formulation of the Control System . . . . . . . .
+
+3.
+
+Introduction
+
+CONTENTS
+
+co... 5
+
+2.1 Investigation of Plant Conditions for Less than Full-Load
+Operation. « «vv woo vi
+
+2.2 Tromsient Behavior of Control Method with Constant ,
+Secondary-Salt Flow Rate. . . . . . Cee
+
+2.3 Study of Steam Temperature Control with Varioble ne
+Secondary-Salt Flow Rate. . . . . . . . .. .......
+
+co... 14
+Results «oon cn
+3.1 Decrease in Load Demand. . . . . . . . . . .
+
+3.2 Changes of Reactivity. . . . . .
+
+cee... 20
+
++s 8 se es ss eo
+
+3.3 Step Changes of Reactivity with Controller Disconnected, . 2
+3.4 Ramp Changes of Reactivity with Controller Disconne . oz
+3.5 Step Loss of One Secondary-Salt Coolant loop. . «+ + «. 2
+3.6 Measurement of System Transfer Function. . . . . . . . ..
+
+Ce... 27
+4, Concluding Remarks + « « + « « « «oo.
+
+LEGAL NOTICE
+This report was prepared as an account of Government sponsored work. Neither the United
+States, nor the Commission, nor any person acting on behalf of the Commission;
+“A. Makes any warranty or representation, expressed or implied, with respect to the accu-
+raoy, completeness, or usefulness of the information contained in this report, or that the use
+
+of any information, apparatus, method, or process disclosed in this report may not infringe
+privately owned rights; or
+
+B. Assumes any liabilities with respect to the use of, or for damages resulting from the
+use of any information, apparatus, method, or process disclosed in this report.
+
+As used in the above, ‘person acting on behalf of the Commissi
+Ployee or contractor of the Commission, o.
+such employee or contractor of the Commi
+disseminates, or provides access to, any information
+with the Commission,
+
+on’ includes any em-
+r employee of such contractor, to the extent that
+
+pursuant to his employment or contract
+or his employment with such contractor.
+
+ye rEE oe
+WHE TRIBUTE a OF UE TIALLY I
+WHE TILDUT I OF 3 }
+
+fo
+|
+1. INTRODUCTION
+
+By means of an analog computer simulation, a preliminary investigation was
+made of the dynamics and possibilities for control of the proposed 1000~-Mw(e) single-
+fluid Molten-Salt Breeder Reactor (MSBR). For the purposes of this analysis the MSBR
+plant consisted of a graphite-moderated, circulating-fuel (primary salt) reactor, a
+shell-and-tube heat exchanger for transferring the generated heat to a coolant (sec-
+ondary) salt, and a shell-and-tube supercritical steam generator. The analog simula-
+tion of the plant consisted of a lumped-parameter heat transfer model for the core,
+primary heat exchanger, and steam generator; a six-group model of the circulating-
+fuel nuclear kinetics with temperature reactivity feedbacks; and an external control
+system. This investigation was concerned with the formulation of this control system
+and the integrated plant response; it was not concerned with a safety analysis of the
+system, although some of the transients introduced would be of an abnormal nature
+(e.g., step changes in the load demand on the plant). It was an initial probe into
+the response of the system initiated by such perturbations as changes in load demand,
+reactivity changes, and sudden loss of a secondary-salt coolant loop.
+
+The simulation was carried out on the ORNL Reactor Controls Department an-
+alog computer. So that the model would have the maximum dynamic range, the system
+differential equations were not linearized, and, as a result, the requisite quantity of
+nonlinear equipment required the model to be severely limited spatially to minimize
+the number of equations. In addition, the pressure in the water side of the steam gen-
+erator, as well as in the rest of the plant, and the physical properties of the salts and
+water were taken to be time invariant. The flow rate of the primary salt and the tem-
+perature of the feedwater to the steam generators were also held constant.
+
+In this report, the path taken to arrive at the conceptual control system is out-
+lined along with the equations and values of the system parameters used in the simula-
+tion. The results are given as summary curves and graphs of the variations encountered
+in the system variables (temperatures, flows, etc.).
+2. FORMULATION OF THE CONTROL SYSTEM
+
+2.1 investigation of Plant Conditions for Less than Full-Load Operation
+
+The primary objective of this study was to formulate a control system that would
+maintain the temperature of the steam delivered to the turbines at a design value of
+1000°F during all steady-state conditions and to within a narrow band around this value
+during plant transients. To accomplish this objective, the first step was to investigate
+the plant conditions (temperature profile, flows, etc.) for less than full-load operation.
+(The full-load temperature profile is shown in Fig. 1. The steady-state heat transfer
+equations and the method used in calculating off-design conditions are given in the
+Appendix, Sect. 5.1.) Three basic methods of plant operation at less than full load
+were investigated:
+
+1. The average reactor temperature was held at its 100% power level value, and a
+secondary -salt bypass line was included in parallel with the steam generators.
+The salt flow in the bypass line was given by
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+P
+Fy = Fao - + (1)
+
+0
+
+where Fao is the secondary-salt flow rate at the 100% power level Po:
+
+ORNL DWG. 69-6633
+
+1300 °F Ta Te iso Ty
+
+> —— [—— 1000°F
+
+|
+| Fa} (f,
+(TF fll
+|
+|
+PRIMARY X
+CORE HEAT GENERATOR
+EXCHANGER |
+I
+I
+I
+~a
+1050°F Ty 850°F T Ts 850°F Te  T00°F
+
+Fig. 1. Model for Calculating Off-Design Steady-State System Temperature
+Profiles. Temperature Values are for 100% Power Level.
+2. The average reactor temperature was held fixed at its 100% power-level value, and
+there was no secondary -salt bypass.
+
+3. The secondary=-salt flow rate was held fixed at its 100% power-level value, and
+there was no secondary -salt bypass.
+
+With the first two methods of plant operation the temperature of the secondary
+salt approached its freezing point of 725°F at power levels = 50% of full power. With
+the third method, however, the secondary-salt temperatures remained well above the
+freezing point. With the second method, the AT from primary to secondary salt in the
+primary heat exchanger increased from 150 to 335°F at the primary-salt exit end of
+the exchanger at 50% power, and the AT increased at the steam outlet end of the steam
+generator as well. The increases in these AT's were reduced for the first method where
+a valved bypass line had been placed around the steam generator, but this also was
+more complex because a flow control valve and a variable speed pump were required.
+The simpler arrangement of the third method showed that the AT's from primary to sec-
+ondary salt and from secondary salt to steam decreased with decreasing power level
+except at the feedwater inlet end of the steam generator where it increased only 65°F
+at 30% power (Fig. 2). This AT increase occurred in the coolest part of the system,
+however. Therefore, the third method of plant control, in which the secondary-salt
+flow rate was held constant, appeared to be the most promising from the viewpoint of
+simplicity and thermal stresses on the heat exchangers.
+
+2.2 Transient Behavior of Control Method with Constant Secondary-Salt Flow Rate
+
+A steam-temperature controller was devised to vary the plant temperature pro-
+file as shown in Fig. 2. The transient behavior of such a control scheme was investi-
+gated by use of the analog computer simulation model shown in Fig. 3. Each heat
+exchanger was divided into five lumps: two for each of the two fluids and one for the
+tube walls. The reactor heat transfer system was approximated by two lumps for the
+circulating primary salt and one for the graphite moderator. A two-group approxi=-
+mation of the circulating-fuel nuclear kinetics equations was used, and temperature
+reactivity feedbacks were included. (The system equations that describe the model
+are given in the Appendix, Sect. 5.2. The values of the physical constants and system
+parameters used as "given" information are shown in Table 1. The values for various
+system volumes, masses, etc., were calculated from these constants and are listed in
+
+Sect. 5.2.)
+
+The steady-state partial-load calculations showed that a reasonable system-
+temperature profile could be obtained for off-design conditions by maintaining a con-
+stant secondary-salt flow rate and by allowing the reactor and secondary-salt temper-
+atures to vary. The transient behavior of such a system was investigated, using at first
+only that part of the simulation model that included the primary heat exchanger and
+the steam generator. The secondary=-salt flow rate was held constant, and the steam
+ORNL DWG. 69-6634
+
+  
+  
+
+      
+   
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+REACTOR OUTLET (T3) ——100% POWER LEVEL PROFILE
+1300p ————30% POWER LEVEL PROFILE
+1200
+AVERAGE PRIMARY SECONDARY SALT HOT LEG (T,)
+SALT TEMPERATURE
+
+— 1100 |
+>
+-
+ox
+>
+—-
+«
+Soo INN 20 T—— mmm —— ===
+o
+EN
+ad
+-
+
+wpb | No
+
+— SECONDARY SALT
+cold LEG (T3)
+800 f-
+\. FEEDWATER (Tg)
+\
+or PRIMARY PRIMARY SECONDARY STEAM STEAM
+—={CORE |e 3100p —SF+—MHEAT EXCHANGER OD ———te—— GENERATOR —hio
+TUBE WALL TUBE WALL FEEDWAT ER
+
+Fig. 2. Steady-State System Temperature Profiles for 100 and 30% Power
+Levels.
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+FLOW RATE AT
+
+ORNL DWG. 69-6635
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+   
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+REACTOR REACTOR OUTLET _—
+POWER TEMP SETPOINT r Oe ony et
+CAROR SETPOINT (Taser) - FLOW RATE _ STEAM
+ROD €) = (Prger) ERROR (F2) ERROR
+mo SERVO {Ef = — TRAIL r= © TT SE Thom
+CONTROLLER t — 2 ly ! + (1000 °F)
+REACTOR POWER | REACTOR INLET 7 + I
+—_———— — TEMP » =
+[en r n T, —l STEAM
+CONTROL Ta
+ROD Ta [Fs
+SE PRIMARY A PRIMARY SECONDARY SECONDARY STEAM
+sal | 20 SALT SALT Fa SALT
+Fv \ \ T,
+T, Tr Te Ts3 \ LOAD
+—
+| x DEMAND
+TUBE TUBE
+Ld \ wot WALL
+LY 12
+MN | .
+\ [PRIMARY PRIMARY \ SECONDARY SECONDARY STEAM
+SALT | SALT WY sALT SALT Tu
+Tr | T Ts) Ts
+. Lo
+Ty Ts Ts T¢ FEEDWATER
+o
+PRIMARY (70°F)
+REACTOR CORE HEAT EXCHANGER STEAM GENERATOR
+Fig. 3. Lumped Model of MSBR for Plant Simulation.
+Table 1. Physical Constants
+
+ 
+
+ 
+
+ 
+
+“Primary Secondary
+Parameter Salt Salt Steam Hastelloy N Graphite
+Cpr Bru bo! 0.324 0.36 2.17 0.126 0.409
+oy Ib/fr 207.8 at 1175°F 117 at 1000°F 19.7, 7.01 548 17
+k, Bro he oF gr! — — — 11.0 4
+Primary Heat Steam
+Parameter Exchanger Generator
+Length, ft 19 63.8
+Triangular tube pitch, in. 0.625 0.875
+Tube OD, in. 0.375 0.5
+Wall thickness, in. 0.035 0.077
+Heat transfer coefficients, Btu he aor),
+tube side fluid to tube wall 2786 4000
+tube wall conductance 3770 1715
+shell side fluid to tube wall 1624 3745
+Reactor Core
+Octagon: 13 ft across flats.
+Height: 13 ft.
+Fuel: By,
+Primary -salt volume fraction: 0.16.
+Graphite to primary ~salt heat tramsfer coefficient: 1700 Btu he gop! .
+Temperature coefficient of reactivity
+primary salt 41.333 x 107°/°F.
+graphite 1.056 x 107>/°F.
+Thermal neutron lifetime: 3.6 x 10 ec.
+Delayed neutron constants for 83,
+B, x 10 \, sec”!
+1 2.3 0.0126
+2 7.9 0.0337
+3 6.7 0.139
+4 7.3 0.325
+5 1.3 1.13
+
+6 0.9 2.50
+10
+
+temperature was controlled by altering the temperature of the primary salt entering the
+primary heat exchanger. The rate of change of this primary-salt temperature was pro-
+portional to the steam temperature error, or
+
+dT,
+ra (Ty ) T70)" @
+
+where a is the controller gain, and T_ is the design value of the steam temperature T.
+
+70
+
+A brief parameter study of a showed that with a gain of about 1°F/sec change
+in To per 10°F error in T the steam temperature returned to its design value of 1000°F
+and remained stable. At higher gains the system became unstable. For a typical trans-
+ient initiated by a 10% step decrease in load demand from 100 to 90% of full load
+(Fig.4), 100 sec was required for the steam temperature to return to within 1°F of its
+design value. One method of reducing the time required for the steam temperature to
+return to its design value would be to vary the secondary-salt flow rate during a trans-
+ient. This would enable close control of the amount of heat delivered to the steam
+generator, resulting in more restrictive temperature control.
+
+ORNL DWG. 69-6636
+
+150
+
+ 
+
+o
+B=
+0
+1050
+“1000
+
+   
+
+950 50 100 150 200
+
+SECONDS
+
+Fig. 4. Transient for 10% Step Decrease in Load Demand with Constant
+Secondary-Salt Flow Model.
+11
+
+2.3 Study of Steam Temperature Control with Variable Secondary-Salt Flow Rate
+
+Restrictive temperature control was accomplished by the control system shown in
+Fig. 3. The steam-temperature error was allowed to control the rate of change of the
+secondary-salt flow rate by
+
+dF
+
+a -T (3)
+
+= oT 70)"
+
+7
+
+Then, after the steam temperature transient, the flow rate was slowly adjusted to its
+original full-power value by allowing the flow rate error to change the temperature of
+the primary salt entering the primary heat exchanger by a second controller having a
+gain of B:
+
+dT F
+
+20
+where Fao is the initial full-power value of the secondary -salt flow rate Fy
+
+A brief parameter study of a and B indicated that a reasonable steam-temperature
+response was obtained when a 1°F steam-temperature error produced a secondary-salt
+flow rate change of 10%/min and a 1% error in flow rate produced a primary-salt tem-
+perature change of 1°F/min.
+
+With this control system, a 10% step decrease in power demand from 100 to
+90% of full load produced the transient shown in Fig. 5. The steam temperature re=-
+turned to within 1°F of the design value in about 30 sec, as compared with 100 sec
+described previously. The maximum change in the secondary-salt flow rate was about
+20%, i.e., from 100 to 80% of the design value; the maximum rate of change was
+about 50%/min. The flow rate returned to within 3% of its design value in approx-
+imately 250 sec (4.2 min).
+
+With the addition of the reactor heat transfer and nuclear kinetics equations
+to the model, the temperature of the primary salt entering the primary heat exchanger
+(reactor outlet temperature) was controlled by inserting or withdrawing control rods to
+change the reactor power according to the error in the secondary-salt flow rate. Steam
+temperature control by means of the secondary=salt flow rate remained the same. The
+rate of change of the set point for the reactor outlet temperature To op VOS obtained
+from the error in the secondary=~salt flow rate, as follows: se
+
+dT, set Fs
+
+= fl - ==), (5)
+dt Foo
+
+ 
+12
+
+which is similar to Eq (4). This controller slowly adjusted the reactor outlet temperature
+set point in the proper direction until the secondary-salt flow rate returned to its 100%
+power value.
+
+The values for the controller gains a and B were adjusted for the transient runs
+such that a 3°F error in steam temperature yielded a 10% per min rate of change of the
+secondary-salt flow rate and a 1% error in the secondary-salt flow rate yielded a 1.7°F
+per min rate of change of the reactor outlet temperature set point. These values were
+obtained after a brief parameter study in which a 10% step decrease was initiated in
+the plant load demand and the gains were adjusted to yield the minimum steam temper=
+ature deviation.
+
+The required set point for the reactor power level P set is obtained from the
+reactor outlet temperature set point by
+= - 6
+Ph, set A T2 set Ty) ©)
+
+where A is the proportionality constant between reactor power and reactor AT. Thus,
+as the reactor outlet temperature set point is altered by the secondary-salt flow rate,
+the reactor power level set point will be altered as well. The error in the reactor
+power level is given by
+
+¢ =P -P (7)
+
+r r set’
+
+This error signal is the input to a proportional servo rod controller which is described
+by the second-order transfer function
+
+2
+[03 JEL R— 8)
+
+2
+s tT 20ws tw
+
+~ is the damping factor. In
+this simulation w equaled 31.42 radians/sec (5 Hz) and ¢ equaled 0.5. These values
+are typical of the kind and size of servo which may be used in this control-rod-drive
+service. The gain of the controller was such that for ¢. 2 1% of full reactor power
+the control reactivity addition or withdrawl rate was
+
+where G is the controller gain, w is the bandwith, and ¢
+
+— = 0.1%/sec. (9)
+13
+
+For errors less than 1%, the rate of change of reactivity was proportional to
+the error. For errors greater than 1%, the reactivity rate was maintained constant at
+the 0.1%/sec value. Integration of Eq. (9) yields the term p_ in the reactivity equa-
+tion (see Sect. 5.2). This method of controlling the reactor outlet temperature is
+similar to that used in the MSRE control system.
+
+To obtain more realistic transient results from the simulation, limits were im-
+posed on several of the system variables, as follows:
+
+1. The secondary=-salt flow rate was limited to a range from 40 to 110% of the full-
+power flow rate.
+
+2. The maximum steam flow rate was limited to 110% of the full-power flow rate.
+
+3. The reactor outlet temperature set point was constrained to a range from 1000 to
+
+1400°F (100°F over and 300°F under its full-power value of 1300°F).
+
+4. A 5-sec first-order lag was introduced between the steam flow rate demand F
+in Eq. (43) in Sect. 5.2 and the steam flow rate in the system F, in Eqs. (38) -
+(40), in order to better simulate the response of a turbine throttle valve.
+
+ORNL DWG. 69-6637
+
+150
+
+ 
+
+0 50 100 150 200 250 300
+SECONDS
+
+Fig. 5. Transient for 10% Step Decrease in Load Demand with Variable
+Secondary-Salt Flow Model.
+14
+3. RESULTS
+
+Calculations of the temperature profiles with the system under partial load at
+steady state were made using the steady-state form of the analog simulation equations
+in Sect. 5.2. The variation of salt temperatures with various steady-state power
+levels is shown in Fig. 6. Figure 6 also shows the variation of the same salt temper-
+atures obtained by use of another method of calculation described in Sect. 5.1.
+Divergence of the two sets of curves begins at about the 50% power level. Thus, if
+it is assumed that the calculation method of Sect. 5.1 is more reliable for predicting
+system temperature profiles at steady state, the present analog simulation model is
+valid only at power levels greater than approximately 50%.
+
+Several transient cases were run which included (1) decreases in load demand
+P from 100% by steps of 10, 30, 50, and 60%; (2) ramp changes of 30 and 70% each
+of 5 and 10%/min; (3) changes in reactivity of steps of £0.05, +0.1, and -0.5%; and
+(4), with the reactivity controller disconnected, (a) reactivity steps of £0.05, +0.01,
+and -0.1% and (b) ramp changes in reactivity of +0.05 and -0.1% at 0.1%/min. Also,
+the step loss of one secondary-salt coolant loop was simulated. The system transfer
+function P(s)/o(s) was also measured.
+
+ORNL DWG. 69-6638
+
+1300p yd
+
+1250 + me. — LOG MEAN AT CALC { APPENDIX, SECT. 5)
+—_——— —— STEADY-STATE FORM OF ANALOG SIMULATION 7”
+EQUATIONS (APPENDIX, SECT. 5.2) Zz
+
+12001—
+REACTOR QUTLET, T2
+
+50f— pd pr
+7 rd
+1004H— ”
+Pp
+7 SECONDARY SALT HOT LEG, T,
+
+~ 1050f— 7 ’
+£ pr 7 rd —_
+° : v Z ===
+
+a _— . ~ =F
+
+= 1000p — 7 ~ REACTOR INLET, T
+
+- —— / + e— vo
+Dol
+
+=
+
+or
+950. - Pr
+
+VV
+a
+900 f— ~~
+—— TT SECONDARY SALT COLD LEG, T1
+a
+850}— TTR ——
+
+ 
+
+B/Peo
+
+Fig. 6. Variation of Steady-State Salt Temperatures with Power Level.
+15
+
+3.1 Decrease in Load Demand
+
+The action of the system during a typical load demand transient was as follows.
+When the load demand P, was decreased, the steam flow rate decreased, transferring
+less heat out of the steam generators and decreasing the heat transfer coefficient be-
+tween the steam generator tubes and the steam. This caused the steam temperature to
+begin to rise. The steam temperature controller sensed the steam temperature error
+and began to decrease the secondary-salt flow rate at a rate proportional to the tem-
+perature error in order to transfer less heat into the steam generator and to decrease
+the heat transfer coefficient between the secondary salt and the steam-generator tubes.
+The transfer of heat from the secondary salt at the reduced flow necessary for steam
+temperature control caused the temperature of the secondary salt leaving the steam
+generator to decrease. The reduction in flow rate also decreased the amount of heat
+transferred out of the primary heat exchanger as well as the heat transfer coefficient
+between the primary-heat-exchanger tubes and the secondary salt. The primary salt
+was, thus, returned to the reactor at a higher temperature, producing the reactor
+power error signal e. As this error was sensed by the reactivity servo controller, the
+control rods were withdrawn (inserting negative reactivity) to reduce the reactor power
+commensurate with the decrease in load demand. The secondary=salt flow rate con-
+troller sensed the decrease in the flow rate and began to decrease the reactor outlet
+temperature set point at a rate proportional to the secondary=-salt flow rate error. A
+new steady-state operation was achieved when the steam temperature reached its
+design value of 1000°F and the secondary -salt flow rate its full-power value.
+
+The results of a 30% decrease in load demand from 100% as a step and at rates
+of 10 and 5%/min are shown in Figs. 7-9. The reduction of the temperature of the
+secondary-salt leaving the steam generator after a change in load demand is shown in
+these figures. For large, rapid changes in load demand, the temperature of the sec-
+ondary-salt may approach its freezing point (725°F). This possibility exists also when
+the load demand on the plant is increased. Under such conditions the steam temper-
+ature initially tends to decrease, causing the steam temperature controller to accel-
+erate the flow of secondary salt, which will transfer more heat into the steam gen-
+erator. Since this flow may increase only to 110% of full flow, a sufficiently rapid
+load increase will cause the temperature of the secondary salt leaving the steam gen-
+erator to decrease and, perhaps, approach the freezing point. However, increases
+in plant load will usually occur in a more orderly and controlled fashion than decreases
+since, under accident conditions, decreases will be more probable. Increases in load
+must be accomplished in a carefully controlled manner.
+
+The data from Figs. 7-9 and the results of other runs made with changes in load
+demand are summarized in Table 2 which also lists the maximum steam temperature de-
+viations from 1000°F, the maximum required rates of change of the secondary-salt flow
+rate and of the control reactivity, and the maximum magnitude of the control reactivity
+required. The highest reactivity rate was well below the 0.1%/sec maximum allowed
+by the controller.
+16
+
+ORNL DWG. 69-6639
+
+       
+     
+
+150 poor Pa or + 1 Poros 1
+
+To
+
+To
+
+150
+
+To
+
+150
+
+To
+
+ 
+
+0 100 200 300 400 500 600 700 800 900
+1000
+
+1000
+
+Q
+
+ 
+
+ 
+
+900 ns
+950 Ce
+
+0 100 200 300 400 500 600
+SECONDS
+
+  
+
+700 800 "900
+
+Fig. 7. Transient for 30% Step Decrease in Load Demand.
+17
+
+ORNL DWG. 69-6640
+
+ 
+
+ 
+
+  
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Cor Co , re
+td ~ - Am peered res
+ci! | (11711 LOAD DEMAND, Pe :
+
+~~ ; i : i ; le or ;
+5° Th lobo d eempeepebi dog gogo pb ;
+EE Taber ed
+SEE hd =
+or ph : bey Fe 3 ;
+Fi fp pet Frit er ;
+0 i vol i FI i i Lodo mob 44h 00s op ds 4
+150 | i :
+I~
+0
+150
+&
+0 1. - + - + —-— + =
+150
+8°
+0 ! 1 TTT RA
+0 100 200 300 400 500 600 700 800 900
+1050
+% 1000
+950
+950
+850
+
+     
+
+0 100 200 300 400 500 600 700 800 900
+SECONDS
+
+Fig. 8. Transient for 30% Ramp Decrease in Load Demand at 10%/min.
+18
+
+ORNL DWG. 69-664|
+0 pli py i Lr
+* TTI : CLT UU LOAD DEMAND, Pf |
+
+ 
+
+ 
+
+MD)
+
+be
+
+ 
+
+To
+
+150
+
+To
+
+To
+
+ 
+
+ 
+
+STEAM GENERATOR SALT QUTLET
+
+TEMP, T,
+& 850 ———. v rn Lo
+—_ - |
+Po
+750
+0 100 200 300 400 500 600 700 800 900 1000
+
+Fig. 9. Transient for 30% Ramp Decrease in Load Demand at 5%/min.
+19
+
+Table 2. Results of Load Demand Perturbations
+
+A. For Step Losses of Load Demand (from 100%)
+
+ 
+
+Magnitude of Step (%)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+10 30 50
+
+Final steady-state temperatures, °F
+
+T — 1009 976
+
+T, oe 1183 1098
+
+Ty — 867 875
+
+Ty — 1077 1025
+Max steam temperature error, °F 13 44 147
+Max rate of change of secondary -
+
+salt flow rate, %/sec -0.74 -2.3 -4.3
+Max rate of change of reactivity,
+
+%/sec 3.5x10% 41.06% 107° 3.0x 107
+Max value of 5, % -0.014 -0.045 -0.075
+
+B. For 30% Ramp Loss of Load Demand from 100 to 70%
+Ramp Rate (%/min)
+10 5
+
+Max steam temperature error, °F 9 5
+Max rate of change of secondary -
+
+salt flow rate, %/sec -0.41 ~0.26
+Max rate of change of reactivity,
+
+%/sec 1.75% 107 5x00
+Max value of control reactivity
+
+required, % -0.045 ~-0.045
+
+ 
+20
+
+A plot was made of the maximum steam temperature variation from 1000°F as
+a function of change in load demand (Fig. 10). The plot shows, for example, that a
+step change of 30% in load demand from 100 to 70% of full power produced a max-
+imum steam temperature deviation of about +42°F at some point in the transient. The
+break upwards in the three curves for load changes greater than 30% was caused by the
+40% lower limit imposed on the secondary-salt flow rate. Changes in load of more than
+30% required a change of greater than 60% in the secondary -salt flow rate to maintain
+control of the steam temperature. When this lower limit was reached, control of the
+steam temperature was considerably reduced and higher deviations allowed to occur.
+
+3.2 Changes of Reactivity
+
+The results of reactivity steps of +0.1 and =0.5% are shown in Figs. 11 and
+12. A +0.1% step yielded a peak reactor power of about 155% as a pulse with a
+fwhm (full-width, half maximum) of about 0.75 sec. This is an excess energy input
+of approximately 930 Mw=-sec. The reactor outlet temperature peak deviation from
+1300°F was about 25°F. The reactor inlet temperature and steam temperatures varied
+only a few degrees. The control reactivity changed at its maximum allowable speed
+in a direction te counter the reactivity step. A negative reactivity insertion of -0.5%
+decreased the reactor power sharply to about 18% before the control reactivity re-
+turned it to its 100% level after a 35% overshoot (Fig. 12). The reactor outlet tem=
+perature peak change was about =100°F, and the peak steam temperature variation
+was about 15°F.
+
+ORNL DWG. 69-6642
+
+250
+
+STEP(WITH 40% LOWER LIMIT ON SECONDARY
+SALT FLOW)
+
+50
+
+  
+  
+  
+
+STEP (WITHOUT 40° LOWER LIMIT ON SECONDARY
+( SALT FLOW)
+
+MAX STEAM TEMP ERROR, AT; (°F)
+
+S50—
+WITH 40% LOWER LIMIT ON SECONDARY
+
+RAMP AT 10% / MIN
+SALT FLOW
+
+RAMP AT 5% /MIN
+
+O_~ WITHOUT 40% LOWER LIMIT ON
+SECONDARY SALT FLOW
+| |
+
+0 10 20 30 40 50 60 70 80 90 100
+CHANGE IN LOAD DEMAND (0)
+
+ 
+
+Fig. 10. Maximum Steam Temperature Error for Changes in Load Demand
+
+from 100%.
+21
+
+ORNL DWG. 69-6643
+Ty TTT T T tr TT
+
+150
+
+Ye
+
+0.125
+
+To
+o
+
+-0.125
+1025, : I i 1 : thai TEE 1
+w 1000
+
+975 =
+1325
+
+> 1300
+
+ 
+
+1275
+
+10 t5 0 5 10 45 20 0 5 10 50 5 10 15 20
+SECONDS
+
+Fig. 11. Transient for Steps in Reactivity of +0.1% with Reactivity
+
+Controller Active.
+22
+
+ORNL DWG. 69-6644
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+150 cr ; Co
+i [4] | : | i
+RE CTOR powet. p
+| TT Ha MT i
+| CT Pl] 1
+TERT
+abd dy FH
+Lo LL { | Lo Pod | ode :
+0 -—
+1.25+ bs : !
+co ' CONTROL ROP REACTIVITY £, to ot
+Co an ; ; Li i
+eo 0 Lo Cri
+| Lo
+i Poh Cod ; | , | . | I |
+Cob odd
+-1.25 0 Ltr Pl
+1025
+o 1000
+975
+1550
+uw 4300
+1050
+1100
+w 1050
+
+ 
+
+1000
+
+0 5 10 5 20 25 30 35 40 45 50 55 60
+SECONDS
+
+Fig. 12. Transient for Step in Reactivity of 0.5% with Reactivity
+Controller Active.
+23
+
+3.3 Step Changes of Reactivity with Controller Disconnected
+
+With the reactivity controller disconnected so that a reactor power-level
+error produced no response from the reactivity servo (i.e., no control-rod motion),
+step changes of +0.05 and -0.1% were studied (Figs. 13 and 14). The +0.05%
+step change produced a peak reactor power of about 147%, and the reactor tem-
+peratures increased to a value commensurate with the negative temperature coef-
+ficient of reactivity. The secondary-salt flow rate decreased to its 40% lower
+limit, after which steam temperature control was lost. The final steam temperature
+deviation was 75°F. The decrease in secondary -salt flow rate caused a decrease
+in the temperature of the secondary-salt leaving the steam generator. This temper-
+ature decreased to as low as 690°F during the transient, returning to a steady-state
+value of approximately 735°F. (The secondary-salt freezing point is 725°F.) Sim~-
+ilar reactivity transients in runs made without limiting the secondary-salt flow rate
+to a minimum of 40% of full flow caused this temperature to decrease to well below
+its freezing point. Without the reactivity controller, control of the reactor outlet
+temperature set point was lost; the outlet temperature reached 1485°F as its steady-
+state value (Fig. 12). The steady-state temperature of the secondary-salt leaving
+the primary heat exchanger was 1470°F.
+
+The negative reactivity step of 0.1% (Fig. 14) required a decrease to 50%
+in the steady-state reactor power level to produce the compensating reactivity by
+means of the negative temperature coefficient. The primary-salt temperature at the
+reactor inlet decreased to approximately 865°F--well below its freezing point of
+930°F. The secondary-salt flow rate quickly increased to its 110% limit, after
+which steam temperature control was lost. The final steam temperature was 840°F.
+At this low temperature, the steam flow rate increased in an attempt to meet the
+100% load demand on the plant, but it was also limited to 110% of full flow rate.
+These conditions correspond to a plant output of 51% of full power, which matches
+the observed steady-state reactor power.
+
+3.4 Ramp Changes of Reactivity with Controller Disconnected
+
+With the reactivity controller still disconnected, ramp changes in reactivity
+of 40.05 and =0.1% at 0.1%/min were inserted. The positive-ramp insertion pro-
+duced a peak power of about 130%. Again, the secondary-salt flow rate decreased
+to its 40% lower limit, and steam temperature control was lost. Both of these ramp
+reactivity perturbations produced much the same response as the step insertions of
+the same amount except that the reactor power changed more slowly.
+150
+
+150 -¢-
+
+To
+
+150
+
+To
+
+1100
+
+1000
+
+°F
+
+900
+
+ 
+
+ 
+
+ORNL DWG. 69-6645
+1550 . Lo
+
+  
+
+5
+
+ 
+
+w 1300
+
+1050
+1300 --
+
+1050
+
+°F
+
+800
+1650
+
+uw 1450
+
+650:
+
+1100
+
+uw 850
+
+ 
+
+600
+0 100 200 300 400 500 0 100 200 300 400 500
+
+SECONDS SECONDS
+
+Fig. 13. Transient for Step in Reactivity of +0.05% with Reactivity Controller Inactive.
+
+ve
+25
+
+ORNL DWG. 69-6646
+150
+
+Te
+
+150
+
+To
+
+150
+
+Te
+
+uw 1000
+
+150
+1800
+
+o> 1300
+
+800
+©4300
+
+La
+° 1050
+
+ 
+
+800
+
+0 100 200 300 400 500 600
+SECONDS
+
+Fig. 14. Transient for Step in Reactivity of -0.1% with Reactivity Controller
+Inactive.
+26
+
+3.5 Step Loss of One Secondary=-Salt Coolant Loop
+
+A simulation of the loss of one secondary-salt coolant loop was attempted as
+follows (see Fig. 3). In a four-loop system the temperature of the primary-salt enter=
+ing the reactor core is the average of the temperatures of the primary-salt leaving the
+four primary heat exchangers. We call the reactor core inlet temperature mn and the
+primary -salt outlet temperatures from the four primary heat exchangers Tyr 127 Tia!
+and Tig then, with perfect mixing
+
+A
+1
+Th =a2T "TY Tia © Ty (10)
+
+We now assume that if one of the primary heat exchangers, e.g., number 4, suddenly
+were to cease to remove heat from the primary salt, the reduction in heat removal
+would appear as a step increase in the primary~salt outlet temperature T14 from 1050
+to 1300°F. If the other heat exchangers were to remain unchanged, the reactor core
+inlet temperature would become
+
+To tT, +7
+
+1
+41 12 hl an
+
+13 2
+
+Thus, the reactor core inlet temperature would be changed as a step at t = 0 from 7
+to T,.
+1
+Similarly, the steam temperature to the turbine is the average of the steam
+temperatures from the sixteen steam generators, four of which are supplied heat by
+each secondary salt coolant loop. If we call the steam temperature at the turbine T,
+and the steam generator steam temperatures Tou then
+
+on
+
+~ 1
+T5 = 18, T. } (12)
+
+i
+
+If one secondary=-salt loop were to be lost suddenly, four steam generators would be
+supplied heat no longer, say generators 13, 14, 15, and 16. We assume that this re-
+quetion would appear as a step decrease in the steam generator outlet temperatures
+
+713 T7, 14s 7, 157 and 7, 16 from 1000 to 700°F. The turbine steam temperature
+would becdme
+
+12
+- +
+i HY 7 | (13)
+£
+
+Thus, the turbine steam temperature would be changed as a step at t = 0 from T
+
+to T- 7
+27
+
+The results of such a run are shown in Fig. 15. The turbine steam temperature
+dropped as a step to 925°F, and the reactor inlet temperature rose to 1113°F. This
+increase in reactor inlet temperature was accompanied by a sudden decrease in the
+reactor power set point, producing an error signal that indicated high reactor power.
+The control rods were withdrawn (inserting negative reactivity) and, with the aid of
+the negative primary -salt reactivity temperature coefficient, the reactor power dropped
+sharply to 70%. The steam flow rate increased to its 110% limit in an attempt to meet
+the 100% load demand at the reduced steam temperature. The secondary-salt flow rate
+increased to its 110% limit in an attempt to maintain the steam temperature at 1000°F.
+With the loss of 25% of the heat transfer capability in the secondary loop, the reactor
+temperatures began to rise to meet the 100% load demand. However, when the reactor
+outlet temperature reached its 1400°F limit, the reactor power had increased to only
+92% of full load, and the steam temperature had increased to 956°F. Therefore, under
+this accident condition and with the temperature and flow limits placed on the system,
+the plant could not deliver 100% of full load with one secondary=salt loop inoperable.
+Figure 15 also shows the result of decreasing the load demand to 75% at a rate of
+10%/ min beginning 325 sec after the step loss of heat transfer capacity. The plant
+could meet this demand at design steam conditions.
+
+3.6 Measurement of System Transfer Function
+
+The full power system transfer function P.(s)/0(s) was measured with and with-
+out the reactivity servo controller (Fig. 16). The curve for the case with no controller
+is similar to previous data for the two-fluid MSBR,2 although the magnitude of the
+peak gain at about 3 radians/sec (~0.5 Hz) was greater by a factor of about 6 for the
+single-fluid case. Adding the servo controller greatly decreased the low-frequency
+gain, as expected; above the upper cutoff frequency of 5 Hz 30 radians/sec) for the
+servo it had no effect.
+
+4. CONCLUDING REMARKS
+
+We have described a preliminary investigation of the control problems asso-
+ciated with the 1000-Mw(e) single-fluid MSBR. The control system was formulated
+in four basic steps: the first was an estimation of the system temperature profiles for
+partial load conditions, assuming various possible modes of plant control. Based on
+these results the most promising mode of plant control was investigated for its dynamic
+response, using only the primary heat exchanger and steam generator. The results
+indicated that a variable secondary =salt flow rate would give better steam temper-
+ature control during a transient, and this was investigated using the same model.
+The reactor was then added to the simulation, and the response of the entire plant
+to various perturbing conditions was studied.
+28
+
+ORNL DWG. 69-6647
+
+r
+
+150 io
+
+ 
+
+To
+
+150
+
+Te
+
+150-
+
+Te
+
+150
+
+7.
+
+0
++0425 ——
+
+TN
+<<
+
+=0425
+1100
+
+uw 1000
+
+900
+1550
+
+w 1300
+
+1050
+1300
+
+w- 1050
+
+ 
+
+0 100 200 300 400 500 600 700 800 900 1000
+SECONDS
+
+Fig. 15. Transient for Step Loss of One Secondary=-Salt Cooling Loop
+Followed by a 25% Reduction in Load Demand.
+29
+
+The results indicate that careful control will be required to maintain the
+temperatures of the two salts within the rather narrow allowable limits. Such plant
+maneuvers as increasing and decreasing the load demand on the plant and certain
+reactivity excursions might allow these temperatures to decrease below freezing
+points. However, since the models used in these simulations and calculations were
+abbreviated, the results are regarded only as indicative of possible trends that might
+be elucidated in more detailed investigations. Such investigations were not possible
+with the analog equipment available to the author without either linearizing the
+simulation equations (reducing the dynamic range) or simulating only a part of the
+plant af a time, or both. Even then, the modeling of such a unit as a supercritical
+steam generator would be a difficult task on the analog computer.3 A more detailed
+simulation than was tried here should be attempted by employing more powerful sim-
+ulation techniques, e.g., hybrid computation.
+
+ORNL DWG. 69-6648
+
+    
+    
+
+ 
+
+ 
+
+107 p=
+WITHOUT REACTIVITY CONTROLLER
+= 10
+<
+©
+z
+»
+=
+[|
+=z
+3
+/
+10%— /
+2N
+KX WITH REACTIVITY CONTROLLER
+/
+/
+x
+oil ] _1 ]
+0.01 0.1 1.0 10 100 1000
+
+FREQUENCY jradiows /seol
+
+Fig. 16. System Full-Power Transfer Function P (s)/0(s).
+30
+
+5. APPENDIX
+
+5.1 Calculation of Steady-State System Temperature Profiles
+
+The model used in this calculation appears in Figure 1. The two basic
+equations used were
+
+ATa - ATb |
+Q = “EE (14)
+n[a%
+Q = FCAT (15)
+where
+roa, 17
+oo feted] ’
+i a
+and
+
+Q = heat power (Btu/hr), 1-2
+U = overall heat transfer coefficient (Btu hr ft “°F '),
+A = heat transfer area (ft2),
+T = temperature,
+a,b = ends of heat exchanger,
+F = mass flow rate (lb/hr
+C, = specific heat (Btu Ib” op~1y, 1-2
+h; = heat transfer coefficient inside tubes (Btu hr ft
+k = tube thermal conductivity (Btu he=! §-2 op=1/ft),
+
+Ar = tube wall thickness (ft),
+
+hg = heat transfer coefficient outside tubes (Btu he] #2 ofl).
+
+°F),
+
+The heat transfer coefficient inside the tubes hs was taken to be proportional
+to the 0.8 power of the flow rate through the tubes i the coefficient on the shell-
+
+side of the tubes was taken to be proportional to the 0.6 power of the shell-side flow
+rate, i.e,,
+
+_ 0.8
+h, =k F,7"%, (17)
+31
+
+and
+h = k.p06 (18)
+
+where k is a proportionality constant.
+
+The following equations were written based on given full-load plant con-
+ditions. [The subscript "o" denotes the full-load (100% power) value of all vari-
+ables.)
+
+In the primary heat exchanger:
+
+TT
+2 - tr (19)
+o T20 To
+
+u [a
+QQ _ Yel im Tim (20)
+q, =U 1] '
+
+po Im
+a fat Tale en)
+Q Fao tT Fao Tao ~ Tao
+
+For the steam generator:
+
+Q _ 2 47's 22)
+Q Fao Tao ~ Tso
+QQ _ Ys AT i (23)
+Uso ATy
+
+m
+a _ fs 777 24)
+Qy  F3p T70 ~ Teo
+32
+
+In Eqs. (20) and (23)
+
+Im AT 25)
+
+The 100% plant-load temperature profile, used as given information in these
+calculations is shown in Fig. 1. In all calculations that follow, the temperature T
+of the water entering the steam generator and the steam temperature T-, were held
+fixed at their 100% plant load values of 700 and 1000°F, respectively. The values
+of the tube-side and shell-side heat transfer coefficients for the primary heat ex-
+changer at 100% power were respectively
+
+h. = 2786 Btu he! 2 op!
+
+and
+
+h = 1624 Btu hr | ft 2 oF,
+[ee]
+
+For the steam generator the tube-side and shell-side heat transfer coefficients were
+
+h. = 4000 Bru hel gm2 op!
+
+ond
+
+h = 3745Bto he | f2 oF,
+oo
+
+The values of k/Ar in 9 2 were 3770 Btu he”! +2 of”! for the primary
+heat exchanger and 1715 Bty hr” 1 for the steam Jonerater.
+
+The overall heat transfer coefficient for the primary heat exchanger was
+calculated from Eq. (16):
+
+-1
+0.6
+
+F,o+F
+oy - leks se x) 2s)
+
+ 
+
+p 2786 3770 1624 Fy F F,
+
+The overall heat transfer coefficient for the steam generator was
+
+- (0.8 - 10.
+1 [Fa ] 1 [Fao
+
+} 1 [3c 27
+
+U, = | “ * 7715 * 2000 | 9 @7)
+
+ 
+33
+
+Equations (19) through (23) form a set of five equations in eight unknowns.
+The unknowns are QU Qq, (Fp + F2)/(F40 + Foo) + Fo/ Foor and Ty, Tp, T3, Ty, and
+T5. Several variables must be specified in order to solve the set of equations. The
+variable QQ, the relative power level, was used as a parameter. The remaining
+two variables were specified in three ways, forming the three case studies reported
+here.
+
+Case 1: Average reactor temperature fixed at its 100% power level value
+and the bypass flow given by
+
+_ Q
+cy ft -
+
+Case 2: Average reactor temperature fixed at its 100% power level value
+and no bypass line around the steam generator, i.e.,
+
+Trl Tio Typ
+
+2 2
+
+and
+Case 3: Constant flow rate of the secondary=salt and no bypass line, i.e.,
+
+and
+
+5.2 Description of the Analog Simulator Model
+
+The following equations describe the analog simulation model used in this
+study and shown in Fig. 3. The heat transfer driving force across the heat exchanger
+tubes and from the graphite to the primary salt is shown by the dotted lines in the
+figure. The mass of the primary salt and the primary -salt-to-tube-wall heat transfer
+area in the primary heat exchanger were equally divided between the two primary -salt
+lumps. Similar statements can be made about each of the remaining pairs of lumps
+except in the case of the two steam lumps.
+34
+
+For the two steam lumps wy and wp, the density of the steam varies by a
+factor of 7 in passing through the steam generator. The mass of the steam in lump 1
+was determined by the average density of the steam in the half of the steam generator
+at the steam exit end. The mass was determined in a similar manner for lump 2. The
+steam pressure was assumed constant at all times.
+
+For the reactor core (see Fig. 3):
+
+dT
+
+G
+—_ = - + 28
+McCoo a = Piotr (Te = Tg) * keh (8)
+dr
+= - +0. 1), 29
+Me Coram = FiCpe(l ~ T) + KP F 0h Ag [Tg ~ T) (29)
+2 T (30)
+_ - + - .
+Meat ar = FiorlTy ~ Ta) * oP + 0S Ag (Ts = T)
+For the primary heat exchanger:
+dr, ;
+Lig ST) - -T 1
+MCof 35 = FC T2 = Te) ~ hea (Te ~ Th), (31)
+dr, 2
+— - - h A T = T
+MCor a = FCerlTe = T) = PATE Ty) (
+ar. |
+Mo ST. -2h A(T. -TJ, 33
+MiyCor ar = 2AM ~ Th) ~ hh ~ To) (33)
+ar, u
+MCs ar FENIN - T4) - hop o(Ts1 - Tt ! (34)
+dT
+
+sl
+
+Mo Cosa - FCT - Ti) . hoo Ts1 - Ti) ‘ (35)
+35
+
+For the steam generator:
+
+dls
+
+ss ps df FoCoslTs - Tj - hesA (Ts3 - Tia),
+
+dT
+
+8
+ss Cps IT = FoCodl Isa - Ts) - h ATs3 - Tig)
+dT,
+MoCo ar 2h ATs - Tia) - 2h, ALT - Tu
+dT
+
+7
+wl pst ar FaCost{ Tw - 7) - ho A(T - TJ
+
+dT
+
+M2Cost = ” F3CostlT6 - Ty - hy Ad Tw - Tig
+T 0) = Ts|f + Ty)
+
+T(t) = Tat + To)
+
+Pe = F3Cot(T7 = Te)
+
+As in the steady-state off-design calculations in Sect. 5.1
+0.6
+
+“_ 2
+
+hoo F20
+
+0.6
+"s [2
+hoo Fao
+
+ 
+
+ 
+
+(36)
+
+(37)
+
+(38)
+
+(39)
+
+(40)
+
+(41)
+
+(42)
+
+(43)
+36
+
+ 
+
+ 
+
+0.8
+h
+woo F3
+h Tr 7
+wo F30
+where
+T = temperature of lump,
+Pr = reactor power,
+Pe = load demand (power to turbines),
+M¢ = mass of primary-salt lump,
+MG = mass of graphite in core,
+M; = mass of tube-wall lump,
+M, = mass of secondary-salt lump,
+M,, = mass of steam (water) lump,
+Cp = specific heat of lump,
+kg = fraction of power generated in graphite,
+ke, 2 = fraction of power generated in primary-salt lumps,
+A = heat transfer area of lump,
+F = salt or steam flow rate,
+hg = primary —salt-to-tube heat transfer coefficient,
+hee = graphite -to-primary-salt heat transfer coefficient,
+hsp = tube-to-secondary-salt heat transfer coefficient in primary
+heat exchanger,
+hss = secondary -salt-to-tube heat transfer coefficient in steam
+generator,
+hy, = tube-to-steam heat transfer coefficient,
+T = transit time of secondary salt between the primary heat ex-
+changer and the steam generator (assumed to be 10 sec).
+The reactor kinatics equations used in the simulation were
+dP 5-3
+@ CTR TENG (4)
+dc. 8, : JTL
+- = - - + -
+CTR NG TG SG, (43)
+c c
+also
+
+p= + XAT, + as ATq tor (46)
+37
+
+where
+
+B = delayed neutron fraction,
+| = neutron generation time,
+A ith delayed group decay constant,
+T. = transit time of primary salt through the core,
+T| = transit time of primary salt through external loop,
+Po = positive, net steady-state reactivity associated with the cir-
+culating fuel,
+ag = temperature coefficient of reactivity for the primary salt,
+
+ac = temperature coefficient of reactivity for the graphite,
+0c = control rod reactivity.
+
+i
+
+i
+
+The simulation of C.{t - 7) requires a transport lag device of which only
+
+two were available in the Reactor Controls Department analog computer. Both were
+employed in the simulation of Eqs. (41) and (42), the transport lag between heat ex~
+changers. Therefore, the term Ct - 1) was approximated by
+
+ 
+
+ 
+
+dC.(t)
+C. (t - in ~ Cl) = 1 (47)
+With this approximation Eq. (45) became
+dc, B; N 48
+dt = Ib. P. - a:b, C. ( )
+i
+where
+ALT
+a = ic
+PAT, +1 - exp (7d)
+and
+TL
+b. = 1+ P(N):
+38
+
+The coefficients for these equations were calculated using the physical con-
+stants listed in Table 1. The resulting calculated values for the various system volumes,
+masses, etc., were as follows:
+
+1. For the reactor core (active region only)
+Initial heat flux, 7.68 x 107 Btu/hr [2250 Mw (th)]
+Primary -salt flow rate, 9.48 x 107 lb/hr
+Active core volume, 1820 ft (primary salt plus graphite)
+Primary -salt volume, 291 gt
+Graphite volume, 1529 ft
+Primary -salt mass, 60,512 Ib
+Graphite mass, 178,873 Ib
+Number of graphite elements, 1223
+Heat transfer area, 22,121 ft
+Primary-salt velocity, 5.66 ft/sec
+Core transit time of primary salt, 2.30 sec
+External loop transit time of primary salt, 6.5 sec
+Steady-state reactivity 0g 0.00161.
+
+2. For the primary heat exchanger (total for four exchangers, tube region only)
+Secondary=-salt flow rate, 7.11 x 10” lb/hr. _ 0
+Overall heat transfer coefficient, 806 Btu, hr ft °F
+
+Primary -salt heat transfer area, 55,000 ft
+
+Number of tubes, 29,400 3
+
+Tube metal volume, 145 ft
+
+Primary -salt volume, 283 ft 3
+
+Secondary-salt volume, 883 ft
+
+Volume of four primary heat exchangers, 1311 ft
+
+Primary -salt mass, 58,800 Ib
+
+Tube mass, 79,400 lb
+
+Secondary=-salt mass, 103,300 Ib
+
+Transit time of primary salt, 2.23 sec
+
+Transit time of secondary salt, 5.23 sec
+
+Primary -salt velocity, 8.5 ft/sec
+
+Secondary-salt velocity, 3.6 ft/sec.
+
+3. For the steam generator (total for 16 steam generators, tube region only)
+Steam flow rate, 1.18 x 107 Ib/hr 12
+Overall heat transfer coefficignt, 909 Btu hr ft ~ °F
+Heat transfer area, 56,300 ft
+Number of tubes, 6740
+Tube metal volume, 306 ft 3
+Secondary -salt volume, 1394 ft
+Steam volume, 281 £3 3
+Volume of 16 steam generators, 1980 ft
+39
+
+Secondary-salt mass, 163,000 Ib
+
+Tube mass, 168,000 Ib
+
+Steam mass, 3750 lb
+
+Secondary -salt transit time, 8.26 sec
+
+Steam transit time, 1.15 sec
+
+Secondary-salt velocity, 7.72 ft/sec
+
+Average steam velocity in lump wy, 212 ft/sec
+Average steam velocity in lump Wor 76 ft/sec
+
+The simulation equations coefficients were calculated from these values.
+
+REFERENCES
+
+' R. Tallackson, MSRE Design and Operations Report, Part IIA: Nuclear
+and Process Instrumentation, ORNL-TM-729 (February 1968).
+
+Private communication from T. W. Kerlin, ORNL.
+
+3
+F. H. Clark and O. W. Burke, Dynamic Analysis of a Salt Supercritical
+
+Water Heat Exchanger and Throttle Used with MSBR, ORNL-TM-2405 (January 1969).
+
+ 
+
+ 
+
+4
+C. O. Bennett and J. E. Myers, Momentum, Heat, and Mass Transfer, pp.
+333-50, McGraw-Hill, New York, 1962.
+
+ 
+
+Private communication from C. E. Bettis, ORNL.
+% General Engineering Division Design Analysis Section, Design Study of a
+Heat-Exchange System for One MSBR Concept, CRNL-TM-1545 (September 1967).
+
+7). MacPhee, "The Kinetics of Circulating Fuel Reactors," Nucl. Sci. Eng.
+4, 588-97 (1958). —
+4]
+
+ACKNOWLEDGMENTS
+
+The author acknowledges the suggestions of S. J. Ditto and J. L. Anderson
+for the control system design and for improvement of the system and the model.
+11.
+12.
+13.
+14.
+
+OC OVONOOGhAWN—
+
+15.
+16.
+
+17.
+18.
+19.
+20.
+21.
+22.
+23.
+24.
+25.
+26.
+27.
+28.
+29.
+
+OO “-
+
+PHU OXI OI PPSsSrogLsu OMI ONMMZT NITION
+
+ORNL-TM-2489
+
+INTERNAL DISTRIBUTION
+
+L. Anderson 30.
+F. Baes 31.
+. J. Ball 32.
+. F. Bauman 33.
+E. Beall 34.
+. Bender 35.
+S. Bettis 36.
+G. Bohlmann 37-61.
+. J. Borkowski 62.
+B. Briggs 63.
+H. Clark 64-65.
+
+. W. Collins 66.
+L. Culler 67-68.
+J. Ditto 69.
+. P. Eatherly 70.
+R. Engel 71.
+
+. E. Ferguson 72,
+M. Ferris 73.
+. K. Furlong 74.
+. R. Grimes - G. M. Watson 75.
+
+. G. Grindell 76.
+H. Guymon 77-78.
+M. Haubenreich 79.
+E. Helms 80-82.
+P. Holz 83.
+
+. R. Kasten 84.
+W. Kerlin 85-99.
+
+. B. Korsmeyer 100.
+
+M. I. Lundin
+. E. MacPherson
+. A. Mclain
+. E. McCoy
+R. McWherter
+L. Moore
+L. Nicholson
+. C. Odkes
+R. W. Peele
+A. M. Perry
+M. M. Rosenthal
+Dunlap Scott
+W. H. Sides
+O. L. Smith
+J. R. Tallackson
+R. E. Thoma
+J. R. Weir
+M. E. Whatley
+J. C. White = A. S. Meyer
+L. V. Wilson
+Gayle Young
+Central Research Library
+Document Reference Section
+Laboratory Records Department
+Laboratory Records, ORNL R. C.
+ORNL Patent Office
+Division of Technical Information Extension
+
+Laboratory and University Division, ORO
+
+—m>GT TX
+
+EXTERNAL DISTRIBUTION
+
+101. C. B. Deering, AEC, Washington, D. C.
+102. A. Giambusso, AEC, Washington, D. C.
+103. George McCright, Black and Veatch Engineers,
+1500 Meadowlake Parkway, Kansas City, Mo. 64114

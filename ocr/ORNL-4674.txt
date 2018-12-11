@@ -1,0 +1,6047 @@
+Hii
+
+I
+i)
+
+;
+
+i
+/
+
+Hi
+
+HH
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ORNL~4674
+UC-80 — Reactor Technology
+
+Contract No, W~-7405-eng-26
+
+REACTIVITY BALANCE CALCULATIONS AND LONG~TERM
+REACTIVITY BEHAVIOR WITH ?235U IN THE MSRE
+
+B. E. Prince
+J. R. Engel
+C. H. Gabbard
+
+FEBRUARY 1972
+
+0AK RIDGE NATIONAL LABORATORY
+Oak Ridge, Tennessee 37830
+operated by
+UNION CARBIDE CORPORATION
+for the
+U.S. ATOMIC ENERGY COMMISSION
+
+.OCKHEE! i
+LOCKHEED MART ENERGY RESEARCH LIBRARIES
+
+UREER mag
+
+3 4456 D515983 2
+ABSTRACT
+1. INTRODUCTION .
+
+2. THEORETICAL FOUNDATIONS OF THE REACTIVITY BALANCE
+
+2.1 General Considerations
+
+2.2 Simplifications
+
+iii
+
+CONTENTS
+
+2.3 Approximate Techniques in Calculation .
+
+2.4 Reactivity Measurements
+
+3. DESCRIPTION OF INDIVIDUAL REACTIVITY EFFECTS IN THE MSRE
+
+3.1 Reference Conditions
+
+3.2 The General Reactivity Balance Equation .
+
+3.3 Influence of Graphite Irradiation Damage on the MSRE
+
+Reactivity Balance
+
+4. SOURCES OF DATA AND PARAMETER CALCULATIONS
+4.1 Initial Nuclide Concentrations
+
+4,2 Average Reaction Cross Sections
+
+4.3 Neutron Flux Normalization
+
+4.4 Flux—Adjoint Flux Integrals and Reactivity Parameters
+
+4.5 Effective Delayed-Neutron Fractions .
+5. EXPERIENCE WITH THE REACTIVITY BALANCE .
+
+5.1 Brief History of Nuclear Operations with 235y
+
+5.2 Results of On-Line Reactivity Balance Calculations
+
+5.3 Long-Term Reactivity Trends
+
+6. CONCLUSIONS
+REFERENCES . . .
+APPENDIX .
+
+»
+
+.
+
+.
+
+.
+
+50
+57
+57
+57
+65
+65
+66
+68
+68
+68
+84
+89
+91
+95
+ABSTRACT
+
+Reactivity trends in the Molten-Salt Reactor Experiment were studied
+from the beginning of power operation by comparing predicted effects of
+changes in the core conditions with observed compensating effects asso~
+ciated with control rod motion. The calculations were made on~line, during
+operation by using an available digital-computer data logger. The changes
+accounted for included uranium depletions and additions; plutonium produc-
+tion; 135%e, samarium, and other fission product production; temperature
+variations; and burnout of residual °Li and !°B (in graphite).
+
+The entire period of operation with 2357 in the fuel salt was studied,
+and the essential conclusions were as follows.
+
+1. In the normal range of reactor operating conditions, the magnitude
+of residual (unaccounted for) reactivity always remained less than 0.17%
+8k/k; its rate of variation over the sampling intervals was small and
+essentially random (0.01% 6k/k) and gave no indication of instability of
+the fuel composition.
+
+2. The largest "abnormal" variations observed in the residual re-
+activity were less than 0.2% S8k/k and appeared to be associated with
+changes in xenon poisoning and the entrained circulating gas in the core
+at scheduled off-normal system operating conditions. Although not ac-
+counted for by the on-line calculations, these variations were in accord
+with the qualitative behavior expected under these conditions and hence
+were not regarded as evidence of malfunctions. At no time did the magni-
+tude of residual reactivity approach the administrative limit established
+at the start of operations (0.5% 8k/k, which is the approximate value of
+the delayed-neutron fraction with the fuel circulating).
+
+3. The apparent stability of other conditions in the core which
+could potentially affect the reactivity allowed the reactivity balance
+to be used as an effective diagnostic tool for studying the behavior
+of '3%Xe and effects of cover-gas entrainment in the fuel salt.
+
+4, The long-term variation in residual reactivity during the entire
+period of operation with 2%%U was less than 0.1% 8k/k. Analysis showed
+that this amount of variation could be ascribed to the combined uncertain-
+ties in thermal power level, fission product removal from the system,
+
+and slight structural changes in the graphite during irradiation.
+1. INTRODUCTION
+
+A feature of the nuclear operations analysis of the Molten Salt Re-
+actor Experiment (MSRE) that is not yet commonly used was on-line reac-—
+tivity balance calculations to serve the dual purpose of malfunction
+detection and a means of determining the predictability of the long-term
+nuclear performance of the reactor. MSRE nuclear operations were termi-
+nated after about four years of successful power operation encompassing
+two successive fuel loadings, one with 23% and the other with 2%%U. This
+report describes experience with the reactivity balance calculation as a
+tool of nuclear operations analysis.
+
+The MSRE was built to demonstrate the feasibility and operability of
+a high-temperature reactor with a mixture of molten fluoride salts as the
+circulating fluid fuel. A major consideration in the safety of any fluid-
+fueled reactor is the chemical and physical stability of the fuel mixture.
+Because of the mobility of the fuel, a considerable effort was required
+during all phases of the reactor program to assure proper fuel behavior
+and to attend to the possibility, consequences, and detection of any sep-~
+aration of fissionable material from the mixture. Although there was no
+known mechanism for fuel separation within a wide range of conditions
+around the operating point, hypothetical consequences of uranium separa-
+tion and redispersion were studied extensively in the early safety analy-
+sis of the reactor. These studies formed the main original incentive for
+setting up a program to monitor the nuclear reactivity of the operating
+system for variations that might suggest abnormal behavior of the fuel.
+
+An operating limitation of *0.5% 8k/k, was also placed on any reactivity
+anomaly. As time went on and operating experience was accumulated, no
+evidence of any instability of fuel behavior (physical or chemical) was
+apparent, and interest tended to shift toward the use of the reactivity
+balance calculation as an aid in analysis of normal nuclear operations.
+
+The use of reactivity trends for monitoring and analyzing the state
+of the reactor actually has had a long history in power reactor develop-
+ment. Perhaps the classic example is the first detection and identifica-
+tion of the reactivity poisoning by 135%e in the Hanford reactors by Fermi,
+
+Wheeler, and others, as discussed by Weinberg and Wigner.! Generally,
+however, routine applications of this technique tended to remain dormant
+while refinements in the techniques of measurement and mathematical model-
+ing of the nuclear performance were being developed. With the advent of
+on-line digital computers as a means of fast data logging and processing,
+interest in the potential of the reactivity balance calculation is increas-
+ing. The recent article by Danforth? gives a good status summary of con-
+temporary applications.
+
+In this report of the use of reactivity balance calculations, the
+first section consists of a general description of the theoretical founda-
+tions of the technique. Study of the literature indicated that elements
+of the mathematical description of this method existed largely in fragments
+that emphasized other applications. Hence Section 2 was written with the
+intent of clarifying the rules for using the reactivity concept in a con~
+sistent manner for this application. Section 2 is expository in character,
+and readers who feel sufficiently familiar with the concept of reactivity
+can omit this section without loss of continuity. Section 3 describes
+reactivity effects in the MSRE and the procedures used for mathematical
+modeling of them. The sources of data and calculated parameters that are
+the required input in the reactivity balance model are discussed in Section
+4. The final sections describe the results of applying this technique in
+the MSRE nuclear operations analysis and include a discussion of the in-
+terpretation of the reactivity balance data and a retrospective view of
+the usefulness and limitations of the technique in application to molten~
+
+salt reactor analysis.
+2. THEORETICAL FOUNDATIONS OF THE REACTIVITY BALANCE
+
+2.1 General Considerations
+
+Fundamental principles require that for steady power operation of a
+nuclear reactor a balance be maintained between the rates of neutron pro-
+duction and disappearance due to absorptions and leakage to the surround-
+ings. Stated loosely, reactivity is a conceptual quantity, introduced to
+describe transient situations in which these rates do not balance. It is
+convenient to express this quantity as the ratio of net to total production
+
+rates of neutrons in the entire reactor; that is
+
+total production rate — total rate
+
+Reactivit :
+© y total production rate
+
+. (1)
+Thus reactivity is a defined quantity that is susceptible to measurement
+only by indirect means, and only in this indirect sense does it make ‘'physi-
+cal" appearance when the neutron population is changing. If the population
+or power level is at steady state in the absence of any neutron source
+other than the fission chain reaction, the reactivity must be zero, and
+any attempt to ascribe separate reactivity components to the reactor state
+at a given instant or to changes during an interval of steady operation is
+merely a convenient bookkeeping device. However, if procedures are de-
+veloped for consistent use of this device to monitor reactor operation and
+it is found that the algebraic sum of these component reactivities deviates
+from zero, this can mean either that the calculations of individual known
+effects are in error or that there are unknown or anomalous changes occur-
+ring that are not accounted for im the calculations. Power operation of
+a reactor 1s a complex situation in which many effects simultaneously in-
+fluence the neutron reaction rates. The device of separating these effects
+according to a reactivity scale allows individual experiments or computa-
+tions to be used as an aid in interpreting the whole process.
+
+While reactivity is a central concept in nuclear operations analysis,
+the fact that it is an inferred quantity can give rise to inconsistencies
+
+in applications, In the reactivity balance, we are concerned with the
+theory of compensating reactivity changes that are generally not small,
+
+in contrast to the many routine applications of the reactivity concept in
+which only small, uncompensated changes are considered. This requires a
+precise examination of the sense in which reactivity effects are additive,
+
+With the present state of the art, neither an approach based purely
+on theoretical calculations nor one based entirely on experimental measure-
+ments is practical. Instead, an operational reactivity balance musi con~
+sist of a mixture of these two types of evaluation. Thus the construction
+of the reactivity balance also involves related problems of interpreting
+individual reactivity measurements.
+
+A specific example, which actually has practical application in inter-
+preting the MSRE rod calibration experiments, can serve as a prototype in
+discussing the theoretical construction of the reactivity balance. In
+Fig. 1 the parameter region defining an important part of the rod calibra-
+
+tion measurements is shown schematically. Consideration of variations in
+
+ORNL—-DWG 71-9805
+
+ 
+
+ 
+
+>
+=
+>
+=
+QQ
+<q
+wl
+oc
+0 CONTROL ROD POSITION
+n
+S 7
+7
+7
+/
+b / {
+/ |
+|
+/
+| S /
+A & /
+{ * ’
+| foe ‘
+& ~ CRITICALITY LINE
+Fm en em mm mn em mm om mo ME
+
+Fig. 1. Parameter region in zero~power rod-calibration experiments.
+core temperature, shim rod positions, xenon and samarium poisoning, and
+other nuclide changes during power operation have been temporarily sup-
+pressed, and we have shown only the effect of varying the position of the
+regulating rod as the fuel salt is enriched with excess fissile uranium
+(beyond the amount required for criticality with the rods fully withdrawn),
+The vertical dimension in this "three-dimensional” plot is a reactivity
+scale. The locus of points describing the change in critical rod position
+as excess fissile uranium is added to the reactor is shown as the seclid
+curve oc lying in the horizontal plane (reactivity = 0). This locus is
+a graphical expression of the reactivity balance for this parameter re-
+gion. We may further observe that this curve (rod position vs uranium
+concentration) is the only relation directly accessible to us from experi-
+ment provided we confine ourselves to critical states of the reactor.
+Suppose, now, that we wish to extend this description to the case where
+other parameters mentioned above may also vary during reactor operation.
+This would correspond to a path of critical states in a multidimensional
+space analogous to Fig. 1. In this situation, changes in parameters other
+than those represented along the axes of independent variables of Fig. 1
+can balance nuclear effects of changes along these axes in order to produce
+a critical state. This provides a basic motive for mapping the effects
+of individual changes in rod position or uranium concentration on the re-
+activity scale, even though only stationary states of the reactor flux are
+to be described in this application. This would be represented by knowl-
+edge of the complete surface, 5, in Fig. 1. To obtain this information,
+it is necessary to ''reach" into the vertical dimension, either by per-
+forming kinetic experiments or by performing calculations for the off-
+eritical states.
+
+The static reactivity concept is often used to describe the off-
+critical state. We shall sketch here only the essential features of this
+
+. . . t+ .
+theoretical construction as they relate to this problem. In this concept
+
+ 
+
+*
+Separate motives can be associated with the needs for quantitative
+description of the kinetic behavior of the reactor under independent
+parameter variations.
+
+"A much more thorough description is given in Chap. XII of ref. 1.
+the set of physical critical states (the curve oc in Fig. 1) is embedded
+in a more general set of pseudocritical states in which the actual neutron
+production per fission, v, is multiplied by a calculated factor 1 T Pg
+determined to make the neutron production and loss rates balance. The
+quantity pg. is defined to be the static reactivity. If the basic theo-
+retical model describing the neutron transport processes in the reactor
+
+is sufficiently realistic for the critical state, use of the calculated
+static reactivities for the off-critical states gives one possible opera-
+tional description of the surface 5 in Fig. 1. Leaving aside, for con-
+ceptual purposes, the problems of determing what is a sufficiently real-
+istic model for computations (e.g., diffusion theory vs transport theory,
+etc.) and assuming that our model gives an exact description of the criti-
+cal state, it is possible to relate the static reactivity for an off~
+critical state in a precise way to the reactivity inferred from kinetic
+measurements [via Eq. (1)]. This relation is nontrivial and has been the
+subject of several fundamental papers in the reactor physics literature.
+For the purposes of this review, we will merely state that certain kinetic
+experiments, such as period-differential worth and rod-drop integral-worth
+experiments, can be designed and analyzed (introducing calculated correction
+factors, if necessary) so that differences in the reactivities are opera-
+tionally insignificant. (Specific details relevant to the application of
+MSRE measurements in the reactivity balance are described later in this
+report.) Therefore, as a framework for mathematical description of the
+theory of compensating reactivity effects, we can use the static reactivity
+concept.
+
+Two expressions derived for the static reactivity corresponding to an
+arbitrary reactor state are given in the Appendix of this report, starting
+with the basic equation describing the balance of neutron production and
+loss processes. Here, use is made of linear operator notation in order to
+retain the basic mathematical structure descriptive of the physical pro-
+cesses, while avoiding cumbersome notation associated with choice of a par-
+ticular description (e.g., the Boltzmann transport equation or the multi-
+
+group diffusion equations). The first expression derived involves only
+
+ 
+
+*
+References 3, 4, and 5 are judged classical in this category.
+the quantities descriptive of production and loss processes for a single
+
+state integrated over the reactor volume; namely,
+
+(p,46) + (V,Le)
+bo, = 1— ——————— (2)
+(b,P$)
+
+In this general notation, L, 4, and P represent linear operators governing
+the neutron leakage, absorption (including energy transfer by scattering),
+and production from fission respectively. The functions ¢ and Jy are the
+direct and adjoint flux fields corresponding to that reactor state, and
+the symbol, for example, (V¥,Ld), represents the inner product of the func-
+tions ¢ and L$. (The inner product of two functions is defined here as the
+multiplication of the functions and integration over the spatial, energy,
+and, in certain applications, the directional variables describing the
+flux fields.) | Further explicit use of Eq. (2) will not be necessary in
+our application; it is intrinsically contained in the relations for reac-
+tivity, however, because it defines in an absolute sense the static reac-
+tivity corresponding to some chosen reference state of the reactor.
+
+The second expression is relative in character and involves quantities
+descriptive of two states, which we will arbitrarily designate "initial"
+and "final" states. If we use subscript zero to distinguish quantities
+
+corresponding to the initial state, this formula may be written
+
+(by, 5P9) (b,849) (,,06L9)
+Oy “Og = (1 — I) - - . (3a)
+(V7 0?) (WP, Wy»2,®)
+
+An equivalent expression is useful in those situations where the production
+operator is altered and the reactivity in the final state, Ogs is con~-
+
+sidered to be an unknown quantity. This is,
+
+ 
+
+In applying this notation to the formalism of transport theory, ¢
+and ¢ must be thought of as angular fluxes, and the leakage term, L¢, can
+be taken as Q-V¢., However, these observations are not central to our dis-
+cussion, particularly if the multigroup diffusion model is to he applied,
+where the angular variables have been integrated out.
+(0,029) (WV ,649) (W614)
+Pg T Pgy ~ (1 ~ Pag? - - . (3h)
+(Vy, 00) (W,,79) (WP)
+
+ 
+
+In this notation, for example, SP represents the change in the neutron
+production operator between the final and initial states, P Py
+By restricting Eq. 3a) to the special case where the two states
+
+represent critical states (e.g., two points along the curve oc in Fig. 1),
+
+a
+
+we may set oq = Pap = 0 to obtain
+
+(Vy58P8)  (¥ 4,848)  (¥,,8L$)
+0 = ed —- : (4)
+
+(WgaPe®) WpPe®)  (yy,Py0)
+
+ 
+
+This equation is one possible mathematical statement of the reactivity
+balance condition as the reactor changes from the initial to final states.
+From it, several observations may be derived that relate to the problems
+of constructing a consistent approximation for use in nuclear operations
+analysis. First, the changes in the linear operators may be rigorously
+separated into a sum of component effects corresponding, for example, to
+movements of the control rod, ingrowth of samarium, depletion of uranium,
+etc. However, since the flux field for the final state involves the cumu-
+lative effect of these components, these component reactivities are strict-
+ly additive only if it is assumed that the flux distributions in both the
+initial and the final states are known quantities. We will examine the
+extent to which this is a real problem latex in this section.
+
+A second potential source of difficulty in constructing a consistent
+approximation for the reactivity balance relates to the multiplicity of
+possible paths between initial and final states that may be used to assign
+magnitudes to the component reactivities. This may be illustrated by
+reference to Fig. 1. Consider, for example, two paths between the origin
+(point 0) and the state corresponding to the control rod fully inserted
+with maximum excess uranium required to maintain criticality (point ec).
+Let path 1 consist first of the complete insertion of the rod, resulting
+in state «, followed by addition of excess uranium to arrive at state c.
+
+For path 2, let the order of these changes be reversed, leading io the
+motion obec. Each of these changes belongs to a class for which the change
+in the leakage operator SL can be neglected. (See also the discussion in
+the Appendix. This is not equivalent to the statement that the change in
+total neutron leakage is negligible; for the latter, L¢ can differ through
+
+changes in the operand; i.e., the flux distribution.) By use of Eq. (3a),
+
+ 
+
+with Poo = Pe = 0, the motion of the rod in path 1 corresponds to the
+
+static reactivity change
+(bys 848)
+p = mm, (5)
+(Wg>Pgh,)
+
+and the compensating reactivity associated with the uranium addition is
+
+. (_»6P%) (5849)
+Moy - . (6)
+(Ww, ,Fg0,) (W_sPod,.)
+
+ 
+
+In these expressions, SA, and SA are the changes in the absorption
+operator associated with movement of the control rod and additions of
+uranium respectively. We have also used the fact that 2s = Pos or
+§P = 0 along the path oa.
+
+For path 2, similar use of Eq. (3D) shows that the static reactivity
+
+change for the excess uranium addition is (P, = P)
+bh ec’?
+
+(028P8,) Clg 84,8,)
+Pat = - . 7)
+(0y.P0)  (hguP 5)
+
+ 
+
+The compensating reactivity change introduced by the control rod motion is
+
+Lo - _ Gppdigt) “
+(0, 5P,0,)
+Comparison of Eq. (5) with (8) and Eq. (6) with (7) shows that, even if we
+ignore the differences in the flux fields for the states 0, a, b, ¢, the
+
+component reactivity magnitudes still differ by the normalization of the
+
+production operator. (In molten-salt reactor applications, the production
+10
+
+operator is directly proportional to the uranium concentration.) Moreover,
+we can, in principle, develop similar expressions for these components by
+using an infinite variety of paths, including that of alternating infini-
+tesimal motions in the directions of the coordinate axes, resulting, in
+the limit, in a net motion along the curve oc in Fig. 1. In each of these
+cases, the reactivity assigned to the total rod motion or uranium addition
+will have slightly different magnitude.
+
+As a practical matter, neither of the problems mentioned above pre-~
+sent serious obstacles in constructing a reactivity balance model. However,
+their conceptual recognition is important in developing compatible approxi-
+mations for the individual components. For those components that must be
+calculated from basic theory, the perturbation approximation for the flux
+distribution can be used without seriously restricting the accuracy of the
+calculations, as described in Section 2.3. The second difficulty is cir-
+cumvented by setting up a specific convention for the reactivity balance
+calculations. Care should be taken, however, that this convention also
+conforms to the interpretation given to individually measured components,
+particularly the control rod reactivity. These criteria are further dis—
+
+cussed in Section 2.4.
+
+2.2 Simplifications
+
+One important attribute of molten-salt reactors that has significant
+consequences in constructing an approximate reactivity balance is the per-
+sisting uniform distribution throughout the salt of the most important
+nuclides influencing the neutronic behavior. This characteristic, more
+than any other, makes it practical to develop a model simple enough for
+use in on-line computation with a computer serving many other functions
+and still sufficiently realistic for use in long-term monitoring of the
+reactor neutronic behavior (without taking recourse to ad hoc revormali-
+zations). Specifically, as a first consequence, the changes in nuclide
+concentration that occur in the course of operation are governed by the
+
+following expression for the reaction rate:
+
+RALY = N.(b) Iv, av I 0, (B) ¢(r,E,t) F(x) dF , (9)
+11
+
+where
+
+R(t) = total reaction rate for ith nuclide in salt (events per
+second),
+
+N, () = number density of 7th nuclide in salt (nuclei per cubic
+centimeter of salt),
+
+a. (8) = reaction cross section for Zth nuclide (cm?),
+
+¢(xr,Z,t) = neutron flux at point xr, energy %, and time ¢ (neutrons
+
+cm™? sec™?!),
+
+F(x) = volume fraction of salt at point r,
+
+v = all reactor volume experiencing neutron flux (em®).
+
+The factoring of the nuclide concentration from the volume integration in
+Eq. (9) permits definition of a useful microscopic reactor—average cross
+section that is influenced by salt composition, but only indirectly,
+through the neutron energy spectrum. In turn, use of these cross sections
+simplifies the calculation of the time-dependent nuclide changes and their
+associated reactivity effects. These calculations will be described in
+Sections 3 and 4 in specific connection with the MSRE reactivity balance
+model.
+
+As a second consequence, it becomes possible to factor the concentra-
+tions from several of the terms in the reactivity balance and make use of
+reactivity coefficients derived either from calculations or from experi-~
+mental measurements. (An exception to this is the treatment of the reac-
+tivity effect associated with the control rods. The evaluation of these
+effects is considered in Section 2.4.) To illustrate, consider the theo-
+retical variation in the static reactivity as excess uranium is added to
+the salt, starting at the minimum critical loading and maintaining the con-
+trol rods withdrawn. This is represented by the curve ob in Fig. 1. We
+will first develop this relation in terms of the general notation of the
+preceding reactivity formulas. Following this, the discussion will be
+specialized to a particular neutronic model, in order to study the problems
+of calculating these coefficients.
+
+By use of the arguments that led to Eq. (7), the static reactivity
+
+for an arbitrary point on curve ob is
+12
+
+($2820) (¥g,840)
+
+ 
+
+Pp, = . (10)
+° (bys 28) (by, Po)
+Next, we observe that the operators ¢P = P — Py and 4 = Ay ~ Ay are
+
+macroscopic cross-section-like quantities (i.e., they involve only products
+of nuclide concentrations and microscopic cross sections), whose explicit
+form depends on the neutronic model. Since the uranium remains uniformly
+distributed in the fuel salt and the region geometries and salt volume
+fractions remain fixed in variations of the uranium concentration, a
+straightforward analysis shows that the concentration may be factored from
+these operators. Thus,
+
+Pp = (Cy - Cuod¥p (11)
+
+and
+
+84
+
+u , (12)
+
+li
+
+(Cy = Cue
+
+where Cy and represent the uranium concentration in the salt at an
+
+Uo
+arbitrary point along the curve and at the origin, respectively, and Hn, and
+Mp are microscopic cross-section~-like quantities associated with neutron
+absorption and production in uranium and also linear operators.
+
+Equation (10) then has the form
+
+12a (13)
+Wgsu,8) C
+
+ 
+
+©
+it
+
+or
+Cc. —C
+U To
+Kop) gr (14)
+
+©
+I
+
+As indicated, the reactivity coefficient, KC)» depends in principle on
+the uranium concentration. In application, however, this dependence is
+
+very weak for reasons described in Section 2.3; thus XK can be considered
+a constant in the calculation of the uranium reactivity component in the
+
+reactivity balance.
+13
+
+2.3 Approximate Techniques in Calculation
+
+The simplest theoretical model that includes all the essential fea-
+tures of the calculation of neutron flux and reactivity is the two-group
+diffusion model. Extension to a larger number of energy groups presents
+no difficulty, but the notation tends to be cumbersome and obscure these
+ecgsentlal features; accordingly, we can discuss the calculation of certain
+reactivity effects most clearly in terms of this model.
+
+The correspondence between the preceding geveral reactivity formulas
+
+and the two-group model is as follows:
+
+$ 1h
+¢ 3 1 , P -> 1 (15)
+?, v,
+VL vl,
+0 0
+1 + Zio 0
+A> 17)
+“21, 2
+—VeDV 0
+Lo» . (18)
+0 VD,
+
+The direct and adjoint [luz vectors are solutions of the equations
+
+. - — — + — 9 = 0, 19
+
+VD Ue) = Toby TE 0 FH (De via 4) + (1 Te IVER 0, (19)
+
+. — + 5 = 20
+
+v De, 2,0, vE% 0, (20)
+
+VeD VO) — I ¢p — I + (1 — VI + I = 0, (21)
+aH 1%) LY ( pg) FAS ne
+14
+
+VD, mE, + (1 — PIER ¥) = 0. (22)
+
+In these expressions, Ds Lag and Vip (J = 1, 2) represent the diffusion
+coefficient, macroscopic absorption cross section, and neutron production
+cross section for the "fast" (J = 1) and "thermal" (j = 2) groups respec-—
+tively. The slowing-down transfer cross section from the fast-to~thermal
+group is Zipe In the two-group model, the initial state will appear as a
+superscript to aid in separating this designation from the group indices.
+
+The correspondence between the preceding inner product notation and this
+
+model is, for example,
+
+vZ VY ¢
+1 fa 1
+
+(Wo,P0) > [WS wD) av. (23)
+Vr o o/\s,
+
+By applying these correspondences in Eq. (3a) [or (3b)] and carrying
+out the matrix multiplications, it is found that the static reactivity
+change associated with a change in concentration of a purely neutron-
+absorbing material (starting with the state 0) is
+
+0 0
+— YY 8Z $6 dv — py ST ¢ dv
+Iv, 1 a1 Iv 2 az 2
+p—p = . (24)
+$0 vrl oo + 90 ul 4 ) av
+Iv, ( 1 1h 1 2 "2
+
+ 
+
+Similarly, the corresponding formulas for the reactivity effect of a
+
+change in concentration of fissile material are
+
+1- 0 sus + $0 sui. ¢ Vv — 0 51 + y0 7
+( 0) Iv, v a4 ¥ v FAR a fv, Oo, a? v, Tay?) av
+
+ 
+
+0,30 + 30 yxo0 Vv
+Iv, © Vn Yat) a
+
+(25a)
+
+and
+15
+
+1- - (w08vx + yOsur av. — 05y ¢ + ¢%z av
+=o) fy, 0} VI d+ ISuEL 9) fy By bt W6E, 8)
+
+ 
+
+Our Oyz av
+Iv, Wnt TR)
+
+(25h)
+
+If, as in the present application, the change considered is that of a nuclide
+uniformly distributed in the fuel salt, it is useful to rewrite these for-
+mulas directly in terms of the nuclide concentrations, Setting Fy equal to
+the volume fraction of fuel salt in the region exposed to the neutron flux,
+SN, and 9, equal to the atomic concentrations and microscopic absorption
+cross sections of the added absorbing material, and NV, and Op equal to the
+
+*
+
+concentration and cross section of fissile material, respectively, we may
+
+rearrange Eq. (24) as follows:
+
+0 0p
+onl _ (fr WF, ¢ dV + fy, Wr, ¢ 7)
+0 —p = ? (26)
+wo OF +90 F av
+f Jv ©} srt TY TAR
+
+ 
+
+8 fo + J 0)
+, a) 7, an
+
+bmp mm (27)
+
+SN,
+= — . (28)
+f
+
+In the last two forms above, K, is a reactivity coefficient for the ab~
+
+sorbing material, and the parameters J, and J, are defined by
+
+%
+We assumed only a single fissile material in writing these formulas:
+
+extensions to account for a mixture are obtained in a straightforward
+manner.
+S
+i = Berm (29)
+0
+Jy v Fo dv
+
+and
+
+Jom (30)
+0 F dv
+Jy ¥} s?,
+
+A similar rearrangement of Eqs. (25a) and (250) yields the following:
+
+~ 1 — . . ny
+_ a f I pd (Frvope * voc) I1%, i 0 |
+po = ; (31a)
+Ue Jivo,. + vo
+fi a
+
+ 
+
+and
+
+pp = . (315)
+0 No J vo. + vo
+
+1 1 fo
+The second expression above may also be rewritten in a form similar to
+Eq. (14); namely,
+SN,
+o~p = —Lx (32)
+
+0 Ne hil
+
+where Ke is a reactivity coefficient for the fissile material.
+
+In all the preceding descriptions, we have taken care to distinguish
+between the flux distributions in the initial and final states in a reac-
+tivity change. An approximation that affords a great simplification in
+the practical calculation with these formulas is the first-order pertur-
+bation approximation. Here the flux distribution corresponding to the
+final, or perturbed, state is set equal to the distribution in the starting
+
+state before carrying out the necessary integrations to obtain the reac-
+
+tivity coefficients. Although this approximation is often emploved in
+17
+
+problems of this general type, the basis of its applicability and its
+limitations are not always discussed. Toward this end, we may first ob-
+serve from any of the preceding reactivity formulas that this quantity is
+independent of the normalization (magnitude) of either the flux distribu-
+tion for the final state or the adjoint distribution for the initial state.
+Hence the reactivity calculated with these formulas can conceivably vary
+with the final flux distribution only through changes in the relative
+spatial or energy distribution of the flux. Second, in the type of reac-
+tors we are considering, most of the neutron reactions occur in the energy
+region of neutron thermalization and, to a lesser extent, the low-energy,
+epithermal region. Expressed in terms of the preceding two-group formulas,
+this means that the terms involving the adjoint-weighted thermal reaction
+rates tend to dominate in the evaluation of the reactivity. In this situ-
+ation, an early analysis by Wolfe® provides a useful criterion for deter-
+mining when the thermal flux distribution can be expected to remain essenti-
+ally unchanged during prolonged operation of the reactor. In essence,
+Wolfe's treatment shows that the net effect of the perturbation on the re~
+actor neutron economy should be small compared with the total neutron leak-
+age from the reactor, so only a small change in the flux shape is required
+to balance the neutron economy against the perturbation. (This criterion
+was certainly fulfilled in the MSRE, as can be shown by analysis of the
+neutron balance.) However, the applicability of the perturbation approxi-
+mation is actually not as restrictive as this might indicate, particularly
+when applied to perturbations distributed over the reactor, such as burnup-
+related effects. Here the integral nature of the computation has a ten-
+dency to smooth out errors in the flux distribution. As might be expected,
+this approximation is generally least accurate in application to a strong
+and highly localized perturbation (such as a control rod). For these cases,
+more exact flux distributions or results of individual reactivity measure-~
+ments (such as described in the following section) should be used.
+
+The incentive for use of the perturbation approximation in the treat-
+ment of the calculated reactivity terms is considerable, for it minimizes
+the number of direct-eigenvalue/ flux calculations that must be performed
+in the course of reactor operation. The fact that it is an approximation,
+
+however, indicates that circumspection should accompany its use in any
+18
+
+particular instance, possibly in the form of point checks with results from
+more exact analysis. Reference 7 provides much valuable insight and
+
+background discussion concerning applications of the perturbation technique.
+
+2.4 Reactivity Measurements
+
+ 
+
+Io Section 2.2, mention was made of the necessity for setting up an
+ordering convention for reactivity changes that compensate one another and
+for assuring that the interpretation of individual reactivity measurements
+conforms to that convention. Of the class of measured components of the
+reactivity balance, the control rod reactivity is of major importance, par-
+ticularly if the normel mode of power operation involves substantial in-
+sertions of the rods (as was the case with the MSRE). The rods represent
+strong, localized absorbers, and more elaborate and disproportionate ef-
+forts are generally required to calculate their reactivity reliably from
+basic theory; in any case, a basis of measurement should be available for
+comparison.
+
+The convention used in this work is based on the concept that the in-
+sertion of the control rods always acts to follow and compensate for any
+net excess positive reactivity relative to the origin in Fig. 1. To see
+how this may be made to conform to the interpretation of rod calibration
+experiments, consider the situation depicted in Fig. 2. Here a typical
+period—differential-worth measurement and a rod-drop, integral-worth
+measurement are indicated (schematically) for one particular uranium con-
+centration, The period measurement determines the slope of the reactivity
+versus rod position curve for that uranium concentration and critical rod
+position. In Fig. 2 this is indicated by the small triangle starting at
+point p in the plane perpendicular to the uranium mass axis. By varying
+the uranium content, and with it the initial critical positions for the
+period experiments, it may be seen that the slope of the reactivity sur-
+face S in the neighborhood of the critical line can be obtained.
+
+Similarly, the rod-drop experiment is indicated in Fig. 2 as the tvri-
+angle ped, where cd represents the total negative reactivity resulting
+from rod scram from the initial critical position. It should be noted that
+
+these experiments are by nature limited to the subcritical domain, just as
+19
+
+ORNL-DWG 71-4939
+
+REACTIVITY
+
+PERIOD
+MEASUREMENT ~~
+
+  
+  
+     
+   
+
+CONTRO. ROD POSITION
+
+ 
+
+0
+A
+/
+/
+
+I
+or
+
+°
+
+|
+
+|
+
+20D DROP
+MEASUREMENT
+
+CRITICALITY LINE
+
+Fig. 2. Graphical description of rod-calibration measurements.
+
+the positive period measurements apply only to a small region above the
+
+critical line. To gain information about the "supercritical" reactivity
+
+curve oh, which the rod insertions must
+cal line, it is necessary to proceed in
+pose, we can make use of the discussion
+showed that the result of "translating"
+
+lel to the uranium mass axis introduces
+
+compensate to arrive at the criti-
+an indirect manner. For this pur-
+in Section 2.2. This discussion
+
+a rod reactivity measurement paral-
+
+a correction factor proportional
+
+to the uranium concentration, together with minor corrections associated
+with changes in the flux spectra. Assume now that two rod-drop experiments
+have been performed, one with the minimum critical uranium loading in the
+
+reactor to measure the reactivity ab in Fig. 1 and the second at an inter-
+mediate uranium loading to measure ¢d as indicated. If we correct the re-
+activity measured in the first experiment to the loading conditions at the
+
+time of the second experiment by using the following approximation,
+
+Cue
+Ao (UY) = bp (U)) = , (33)
+© ab 0 Cy
+
+it may be seen that the bo! will be approximately equal to the reactivity
+
+difference between points f and d in Fig. 2. Hence,
+
+hop 34)
+
+v
+
+/ —
+Aub Ao d
+20
+
+In this indirect manner, the curve oh can be generated from a number of
+rod-drop experiments at various uranium concentrations. From this an
+experimental value for the uranium concentration coefficient of reactivity
+can be derived [Eq. (14)]. A similar and obvious interpolation procedure
+can be applied to the results of period measurements to obtain an approxi-
+mate differential-worth curve for a specified uranium loading.
+
+A final topic that should be mentioned before concluding this dis-
+cussion of the foundations of the reactivity balance concerns the role of
+the effective delayed~neutron fraction in reactivity measurements. The
+general theoretical basis for analyzing these measurements is described in
+several textbooks dealing with reactor kinetics (see, e.g., Ref. 8). It
+will suffice to observe here that the measurements considered in the pre-
+ceding discussion are relative in character, and their interpretation de-
+pends on the nature and dynamic behavior of the delayed-neutron precursors.
+This can give rise to a source of inconsistency in the reactivity balance.
+In particular, the conversion of the results of measurement to an absolute
+reactivity scale, in the sense used in this section, requires knowledge of
+the delayed-neutron source strength relative to that of prompt neutrons
+from fission in contribution to the neutron cycle. In addition, another
+characteristic of delayed neutrons that must be taken into account is their
+energies of emission, which are lower than those of the prompt neutrons
+from fission. In a thermal reactor such as the MSRE (which had a high
+fraction of neutron leakage to the surroundings), the net result of this
+difference in emission energy spectra is that the delayed neutrons have
+less likelihood of leakage than the prompt neutrons, so their contribution
+to the chain reaction is enhanced. Hence, both theoretical analysis and
+physical intuition lead to a "delayed-neutron effectiveness' factor Y; by
+which the delay fraction 8; for the Zth precursor group must be multiplied
+to obtain their contribution, relative to the prompt neutrons, in promoting
+the chain reaction.
+
+Chapter 6 of Ref. 8 contains an extensive discussion of the problem
+of calculating the delayed-neutron effectiveness factors. Although several
+measurements of the delayed-neutron emission spectra have been made, suf-
+ficient uncertainties still exist in the data to suggest that detailed
+
+calculations to take into account the shape of the delayed-neutron energy
+21
+
+spectra are not always warranted. For thermal reactors in particular, an
+adequate estimate of the corrections arising from these differences in
+
+energy spectra may be obtained by assuming that all delayed neutrons are
+emitted with a single average energy, independent of the precursor group.
+According to data taken from Ref. 8, this average energy is approximately
+
+0.43 MeV. Then Y; = Y can be computed from the approximate formula
+
+_ +B7 (t= 14) , (35)
+Y = e vo
+
+in which B? is the geometric buckling corresponding to the "nuclear" size
+of the core and ™ and T are the values of the average age to thermal
+
+energy for prompt fission neutrons and for delayed neutrons respectively.
+
+These effective delayed-neutron fractions, 8; Bd YE, with no circu-
+lation of the fuel, form the basis for normalization of the "measured" re-
+activity components, Details of the method of numerical evaluation of vy
+for the MSRE are given later in this report (Sect. 4.5).
+
+The procedure described above is strictly sufficient only for reactors
+with solid fuel and fluid-fuel reactors with negligible circulation of the
+precursors. For the MSRE the calibration of the control rods and the re-
+activity measurements derived from these experiments were performed with
+the circulation stopped. When the fuel is circulating, additional com-
+plexities arise from interaction between the fluid flow and precursor dy-
+namics. This delayed-neutron loss is best treated as a separate (negative)
+reactivity component effect that can be precisely measured and normalized
+on the basis described above. For conditions of steady-state circulation
+of fuel, this effect is constant and therefore equivalent to a zero-point
+correction in the reactivity balance.
+
+The theoretical and experimental interpretation of the delayed-neutron
+loss effect in the MSRE, both under steady-state and transient-stable
+
+period conditions, was the subject of an earlier report. ?
+22
+
+3. DESCRIPTION OF INDIVIDUAL REACTIVITY EFFECTS IN THE MSRE
+
+3.1 Reference Conditions
+
+ 
+
+The discussion given in the remainder of this report applies specifi-
+cally to the MSRE. Some knowledge of the basic reactor design character-
+istics is assumed, and further details are available in Ref. 10.
+
+If changes in component reactivity effects during operation are to be
+monitored, it is advantageous to choose a starting, or reference, condition
+that can be defined by experimental measurements with relatively little
+error or ambiguity. The reference conditions chosen for this work corre-
+spond to the just-critical reactor, isothermal at 1200°F by use of the ex-
+ternal electric heaters, fuel circulating and free of fission products, and
+all three control rods withdrawn to their upper limits (51 in.). The
+uranium concentration for these conditions, as well as the increase in
+uranium concentration required to compensate for a range of control-rod
+insertions and isothermal temperature changes, was established during a
+program of zero-power nuclear experiments. The experimental program per-
+tinent to the first uranium loading, 1?! a mixture of 235U and 2387, were
+carried out in the summer of 1965. In this program, independent measure-
+ments of the control-rod reactivity worth (period—differential-worth
+experiments and rod-drop integral-worth experiments) were used to determine
+reactivity equivalents of uranium concentration changes and isothermal
+temperature variations.
+
+The zero-power experiments pertinent to loading with 2337 were carried
+out in the fall of 1968, This program established the necessary base-line
+conditions and information for reactivity balance calculations during power
+operation with 233y, A summary of the results was given in Ref. 12, and
+further details will be included in subsequent topical reports concerned
+
+with analysis of nuclear operation with 233y,
+3.2 The General Reactivity Balauce Equation
+
+The equation describing the general situation when the reactor is
+
+operating at some specified power level includes terms representing,
+23
+
+relative to the reference state, (1) the positive effect of the total ex-
+cess uranium added before increasing the power, (2) the poisoning effect of
+the rod insertion, and (3) the power and time-integrated power-dependent
+
+effects associated with changes in fuel and graphite temperature levels and
+
+distributions, 2357 burnup, and fission product buildup (135%xe, 149m,
+151gm and nonsaturating fission products). These terms include the most
+important direct effects of substantial power generation. There are, how-
+ever, other indirect effects arising from isotopic changes. These include,
+(1) the burnout of the small amount of Li present in the clean fuel salt,
+(2) burnout of residual 10B from the unirradiated graphite moderator,
+
+(3) production of plutonium from absorptions in 23%U, and (4) changes in
+the concentrations of the other nonfissile isotopes of uranium during opera-
+tion. There are, in addition, other known reactivity effects that can be
+shown to be insignificant in the MSRE, such as photoneutron reactious in
+the beryllium in the fuel salt, changes in rod worth due to gadolinium de-
+pletion, and several high-energy neutron reactions. These complete the
+list of component reactivity effects only if we assume that the structural
+configuration of the graphite stringers and the associated matrix of fuel-
+salt channels underwent no significant changes during the power-generating
+history of the core. 1f changes in the fuel-moderator geometry were in-
+duced, for example, by nonuniform temperature-expansion effects or cumu-
+lative radiation-damage effects on the graphite, this could appear as an
+anomalous reactivity effect not explicitly accounted for in the reactivity
+balance. Theoretical calculations indicate that some radiation-induced
+geometric changes may have occurred; these calculations and their influence
+on the interpretation of reactivity balance data are described in
+
+Section 3.3.
+
+There is substantial evidence that another special reactivity effect
+was of importance in the operation of the MSRE, This arose from the en-
+trainment of helium-gas bubbles in the circulating fuel salt through the
+action of the xenon~stripping spray ring in the fuel-pump tank. These
+minute, circulating helium bubbles would be expected to affect the reac-
+tivity in two ways: (1) by modifying the neutron leakage through an ef-
+
+fective reduction in the density of the fuel salt and (2) by providing an
+24
+
+additional sink for 135Xe and thereby reducing the effective xenon migration
+to the graphite pores. (These effects will be discussed in greater detail
+in a later section.)
+
+We can summarize the preceding discussion in the form of a general
+equation for the reactivity balance. By using the symbol Ap (x) to repre-
+sent the algebraic value of the reactivity change due to component x, and
+grouping terms that can be treated similarly in the calculations, we
+
+obtain
+
+0 = Ap (rods) + Ap (excess 2351) + Ap (temperature) + Ap (power)
++ Ap (Sm) + Ap (135Xe) + Ap (other nuclide transmutation effects)
++ Ap (residual). (36)
+
+The final term on the right-hand side of this equation includes effects
+divisible into three basic categories: (1) any residual effects known to
+normally occur in the reactor core that are not explicitly accounted for
+in the calculations, (2) residual reactivity corrections due to any errors
+in calculating the other terms, and (3) changes that could be considered
+to constitute anomalous behavior (such as uranium separation from the cir~-
+culating fuel salt).
+
+Figure 3 illustrates diagrammatically how the information required
+for on-line calculation of the various terms of Eq. (36) was assembled.
+In the figure the solid arrows are used to designate the "primary" source
+of information used to evaluate the reactivity effects. The dashed arrows
+indicate where the dependency on theoretical modeling is secondary. This
+produces a rough separation of the terms into two groups (emphasized by
+the double line), according to the extent to which experimental measure-
+ments were sufficient to evaluate these terms. The dependency of evalu-
+ations of the top group on theoretical input resides mainly in the evalu-
+ation of the effective delayed-neutron fractions required to convert the
+results of the rod-calibration experiments to an "absolute" reactivity
+scale.
+
+The bases of evaluation of the terms of Eq. (36) are described in
+greater detail in the remainder of this section in the order listed in
+
+the equation.
+25
+
+ORNL-DWG 71-6286
+REACTIVITY EFFECTS:
+
+ 
+
+ 
+
+ZERO-POWER NUCLEAR
+
+EXPERIMENTS CONTROL RODS
+
+ 
+
+ 
+
+    
+
+| OUTLET TEMPERATURE
+
+ 
+
+ 
+
+MEASUREMENTS TN EARLY li TEMPERATURE DISTRIBUTION
+
+POWER OPERATION f (Power -Reactivity
+
+ 
+
+ 
+
+ 
+
+ 
+
+- = AY
+(Observed Control-Rod Coefficient) INSTRUMENT
+: pessoa)
+Compensations) pa MONITORS:
+| Z25Y CONCENTRATION ee ce or a a ee ee]
+
+(Depletion and Additions) (Power level
+- =~
+
+temperatures, rod
+= positions, operating
+135%e POTSONING time)
+
+ 
+
+ 
+
+INITIAL CORE
+COMPOSITION
+
+{
+
+THEORETICAL MODELING:
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+149g + 151gy
+POISONTHG
+
+ 
+
+ 
+
+Average Reaction Cross
+
+OTHER NUCLIDE
+Sections, Fluxes,
+
+ 
+
+ 
+
+ 
+
+\ os - TRANSMUTATTON
+
+Reactivity Coefficients,
+
+Effective delayed- (°Li, 0B, 3% + 23,
+
+neutron fractions, Mass- 23%py + “4%py, Non-
+
+transport effects Saturating Fission
+Products)
+
+ 
+
+ 
+
+ 
+
+ 
+
+RESIDUAL REACTIVITY
+
+ 
+
+ 
+
+ 
+
+Fig. 3. Composition of MSRE reactivity balance.
+
+Control~rod reactivity worth
+
+ 
+
+Quantitative determinations of the rod worth, the 235y reactivity
+worth, and the temperature reactivity effects were made during the zero-
+power experiments. Because the uranium and temperature reactivity effects
+are inferred from the control-rod calibration experiments, and also because
+the magnitude of other known power—dependent reactivity effects, described
+later, are evaluated empirically according to the changes in control-rod
+position following a change in power level, precise determination of rod
+
+worth is vital to the successful interpretation of the reactivity balance.
+26
+
+The control rods were calibrated by means of rod bump—period measure-
+ments made with the reactor at zero power (i.e,, with negligible tempera-
+ture feedback effects) and the fuel circulating pump stopped?! during a
+period of uranium additions sufficient to vary the initial critical posi-
+tion of one rod (the regulating rod) over its entire length of travel. At
+three intermediate 235U concentrations, banked insertions of the two shim
+rods required to balance specified increments of withdrawal of the regu-
+lating rod were measured. In this way, various combinations of shim- and
+regulating-rod insertions equivalent in their reactivity poisoning effect
+were obtained. Rod-drop experiments were also performed at three inter-
+mediate 235U concentrations. In these experiments, the equivalent integral
+negative reactivity insertion of the rod in falling from its initial criti-
+cal position to its scram position was measured. Agreement between the
+integral of the differential-worth measurements and the integral reactivity
+obtained directly from the rod-drop experiments was found to be within 5%.
+The reactivity versus position calibration curve for the regulating
+rod, and the results of the threes experiments measuring equivalent shim-
+and regulating-vrod combinations were next combined with an approximate
+theoretical formula for the reactivity worth of an arbitrary shim regu-
+lating-rod configuration. The theoretical formula contained several parame-
+ters that were adjusted so that the formula provided a least-squares fit
+to the experimental measurements. (Derivation of the formula for rod worth
+and discussion of its application are given in Ref. 13.) The result of
+this analysis is shown in Fig. 4. The solid points are data taken from
+smooth curves drawn through the experimental data and are normalized to
+the uranium concentration attained at the end of the zevo-power experiments
+with 23%U. (As noted in Sect. 2.2, the rod reactivity worth is inversely
+proportional to the 2357 concentration within its range of variation.)
+Figure 4 indicates that the smoothed data could be fitted very closely with
+the theoretical rod-worth formula, except for small errors at the extreme
+positions of the rods (full insertion or withdrawal). No important re-
+strictions in the use of the formula arose from these errors, since the
+purpose was primarily interpolation of the reactivity worth of intermediate
+shim~regulating~rod combinations not specifically covered in the three
+
+groups of experiments described above. The formula provided a convenient
+27
+
+ORNL--DWG 66-4758
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
+   
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+   
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2.2 |
+aol | | | | | | | =a
+‘ ® POINTS OBTAINED FROM ROD CALIBRATION +
+EXPERIMENTS 7
+1.8 |= mem CALCULATED FROM LEAST-SQUARES ~~ efee A fs eee
+Z FORMULA
+Ts | {ROD REACTIVITY NORMALIZED TO _
+< 71.74 kg 23%U IN LOOP)
+8°
+EE ee
+T
+—
+a
+21.2 ——i —
+>
+=
+> 1.0 —
+=
+QQ
+5
+yw 0.8 {— ore ee A
+—
+<<
+E oe | —
+wl
+=
+2 J
+04 toon mend gf DS
+J ° Qe $a,
+02 SE
+: 7 o Op Se © THE TT tT TT
+L
+o Lo / / / .
+0 4 8 42 16 20 24 28 32 36 40 44 48 52
+
+POSITION OF ROD MOVED (in. WITHDRAWN )
+
+Fig. 4. Comparison of control rod reactivity from experimental
+curves and from the least-squares formula.
+
+means of rapidly calculating the reactivity equivalent of the rod config-
+uration during reactor operation by means of the on-line computer. One
+potential restriction in the practical use of the formula should be noted,
+however. It could only be applied in regions of rod travel and excess re-
+activity covered in the zero-power calibration experiments (i.e., magnitude
+of reactivity less than or equal to the worth of a single rod moving through
+51 in. of travel). Modifications of the least-squares formula would have
+been required to cover a larger reactivity range. Since the reactor fuel
+loading never exceeded that attained in the initial calibration, this
+limitation did not affect the actual operation.
+
+Checks were made during power operation of the reactor (see also the
+discussion in Chap. 5) to determine whether use of the approximate formula
+would lead to any significant error in the reactivity effect assigned to
+the rod. These were done by varying the shim~ and regulating-rod configu-
+ration required to maintain constant reactor operating conditions and com-
+
+paring the calculated reactivity effects, These tests indicated that the
+28
+
+maximum reactivity variation attributable to systematic errors of this
+type would be about 0.03% Sk/k and would generally be associated with the
+largest changes in shim~ and regulating-~rod configuration occurring during
+
+routine power operations.
+
+Excess 2357 reactivity worth
+
+ 
+
+Relative to the reference conditions defined in the preceding part of
+this report, the total excess 235y is equal to the amount added during the
+zero-power experiments (in the form of highly enriched uranium) minus the
+amount burned during power operation of the reactor plus the amount added
+to reenrich the fuel salt when the burnup becomes sufficient. Corrections
+must also be introduced for relative dilution effects each time the reactor
+fuel loop was drained and the fuel mixed with the fuel salt "heel" re-
+maining in the drain tanks during operation, as well as for absolute dilu-
+tions from reactor flushing operations.
+
+The reactivity equivalent of the excess uranium was determined from
+the zero-power experiments by measuring the amount of control-rod insertion
+required to balance each addition of 235 and then using the independent
+calibration of reactivity versus position to determine the incremental re-
+activity worth of the 235y, The theoretical foundations of this measure-
+ment were described in Chapter 2. It was shown that the form of the ex-
+pression for the excess uranium reactivity effect was
+
+K(C — Cyd
+Ao (excess 23%) = ——— (37)
+
+C
+where C is the concentration of 235U in the salt, Cp is the value at the
+minimum critical loading, and XK is approximately constant over the range
+of concentrations encountered in operations. The parameter K is also equal
+to the concentration coefficient of reactivity at the reference conditions,
+as can be shown by differentiating Eq. (37) and setting the concentration
+
+equal to that at the minimum critical loading:
+
+ 
+
+A nominally uranium~free flush salt was normally used to rinse the
+primary system prior to and after operations that involved opening the
+system (e.g., replacement of core irradiation specimens). Flush salt left
+in the primary loop after draining caused the fuel dilution.
+29
+
+d te) - x
+ge = . (38)
+( ac C=C,
+
+Results of fitting the data obtained during the zero-power experiments with
+an expression of the form of Eq. (37) are shown in Fig. 5. From this anal-
+ysis, a value of K = 0.24 was obtained; correspondingly, the average con-
+
+centration coefficient of reactivity over the total variation in 235y
+
+loading during the zero-power experiments was 0.22.
+
+In order to evaluate the changes in concentration due to 235y de-
+pletion in power operation, theoretical calculations of the fission and
+radiative capture cross sections, averaged over the reactor spectrum, were
+required. These calculations are described in Chapter 4. The analysis
+indicated that the 2350 would be consumed at the rate of 1.31 g/MWd, or
+at the eguivalent rate of about 5% of the circulating inventory per full-
+
+power year,
+Temperature reactivity effect
+
+When the core temperature is maintained spatially uniform, a change
+
+in this temperature can be related both experimentally and theoretically
+
+ORNL-DWG 71-4940
+
+ 
+
+22
+o DATA CORRESPONDING TO VARIOUS CAPSULE _
+20 ADDITIONS, DETERMINED FROM INTEGRATION oe PL
+OF PERIOD MEASUREMENTS. FUEL CIRCULATION _*
+1.8 STOPPED A
+$
+16 | ——THEORETICAL CURVE FIT A. do]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+EXCESS REACTIVITY (% 8k/k)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+eg
+06 [rfp lee - rere
+vd |
+04 | oo
+oa?
+
+02 fe > |
+
+o LZ | lL
+
+65 66 54 68 62 70 71 72
+
+MASS OF 23% IN FUEL LOOP (kg)
+
+Fig. 5. Effect of 235 mass on reactivity in first MSRE loading;
+theoretical curve fit.
+30
+
+to the core reactivity in an unambiguous manner. The method used to
+measure the isothermal temperature coefficient of reactivity during the
+zero~power experiments consisted in varying the external heater inputs and
+allowing the just-critical reactor to cool slowly and uniformly while
+measuring the change in regulating-rod position required to maintain a
+constant neutron level. In these experiments the fuel was circulating and
+the system temperature was taken to be the average of the measurements made
+with preselected thermocouples distributed over the circulating system.
+
+The change in rod position corresponding to the temperature change was con-
+verted to reactivity by again using the rod calibration — The zero-
+power experiments measured the combined effect of a uniform change in fuel
+and graphite temperature, The value of the total isothermal temperature
+
+coefficient of reactivity obtained by this means was —7.3 x 1075 °F71,
+
+Power coefficient of reactivity
+
+At power levels higher than about 10 kW of heat, spatial distribu-
+tions of temperature due to the nonuniform heating of the core begin to
+become significant. The reactivity change, relative to a fixed uniform
+temperature level, is no longer simply related to a single physically
+measurable temperature (or even the average of several measured tempera-
+tures) in the circulating system. Rather, the reactivity is a cumulative
+effect of the entire temperature field in the core. This temperature-
+distribution reactivity effect, or steady-state power coefficient of re-
+activity, is sowewhat difficult to estimate reliably for the MSRE because
+it requires accurate knowledge cf the local heat deposition and tempera-
+ture distributions in the graphite and salt and the contribution of these
+local effects to the neutron reaction rates. An approximate way of treat-
+
+ing this problem involves the use of a "nuclear average temperature," as
+
+ 
+
+*
+Interaction effects (i.e., effects of the temperature change on the
+
+total rod worth) were estimated from theoretical considerations to be
+quite small.
+
+jaa
+
+"The temperature distributions in fuel and graphite are determined by
+the total power level and the mode of temperature level control (the reac~
+tor outlet fuel temperature was servo-controlled in the MSRE). Since the
+power level was an input variable to the on-line computer, it was con=
+venient to relate the reactivity effect directly to the power level.
+31
+
+described in Ref. 14. In this method, the local temperature changes are
+multiplied by a weighting (importance) function that measures their effect
+on the net reactivity and then integrated over the veactor core. Even if
+we assume that the temperature distributions io the fuel and core graphite
+can be calculated accurately, it should be noted that the weighting pro-
+cedure described in Ref. 14 is theoretically insufficient when applied to
+a small reactor core, such as the MSRE. Here the principal temperature
+reactivity effects arise from changes in the neutron leakage. Although
+nonuniform temperature changes induce expansion in fuel salt and graphite
+that affect the reactivity according to the weighting procedure indicated
+above, the complete description of the effects would also require calcu-
+lation of neutron thermalization in a nonuniform temperature field. Dif-
+ficulties in the practical computation of these effects can be a source
+
+of error in theoretical evaluations of the power coefficient.
+
+The power coefficient of reactivity for a fixed reactor outlet tem-—
+perature was measured during the approach to power by holding the reactor
+outlet temperature at a preset value with the servo controller and meas-
+uring the control-rod response to the change in steady-state power level.
+Since the reactivity response to the change in temperature distribution is
+essentially instantaneous, this effect can be separated from the slower
+power-dependent reactivity effects, such as the !3°Xe and “23m effects.
+The total effect was quite small, and the measured power coefficient was
++0.0017% reactivity per megawatt. This observed coefficient corresponded
+to a difference of about 3°F/MW between the nuclear average temperature of
+the graphite and that of the fuel. The measured coefficient was applied
+
+to evaluate the term Ap (power) in Eq. (36).
+
+Samarium poisoning
+
+The term in Eq. (36) representing the poisoning effect of 149gm and
+151sm cannot be conveniently separated in experimental measurements and is
+best calculated from basic theoretical considerations, The direct fission
+production~-decay schemes for these high-cross—section nuclides are shown
+in Fig. 6. The parameters Gb represent the reaction rate constants for
+neutron absorption, normalized to unit power level and corrected for the
+
+time the fuel spends in the part of the circulating loop external to the
+32
+
+ORNL-DWG 71-9806
+
+149 CHAIN 151 CHAIN
+YIELD: 1.13% YIELD: 0.44%
+149, 51pm
+2 (0.0130/hr) Xx (0.0248/hr)
+1494 1 =mmmm————timen 150 151g) =m 152 ¢
+49 51
+9a ¢ 9, ¢
+SAMARIUM-149 SAMARIUM~151
+Fig. 6. First-order decay schemes for production of samarium poisons.
+
+reactor core and thus out of the neutron flux. The calculation of the flux
+and effective reaction cross sections for the samarium and other nuclides
+is described in a later section of this report.
+
+In principle, the chains shown in Fig. 6 should be connected by neu-
+tron absorption in 150g; other indirect routes for the production of 149g,
+can also be considered. However, for the relatively low neutron flux and
+fraction of uranium burnup engendered in the MSRE, these corrections can
+be neglected. For periodic calculation with the on-line computer, the
+differential equations describing the production and decay schemes in
+Fig. 6 were converted to finite difference form. The form of the equations
+
+used for computation in both decay chains was
+
+v(t, + At) = Np (to) (1 — A AL) + C18(t) AT (39)
+
+Ng(t, +88) = HN (2)[1 = 0 $Q(t,) AL] + UH (LN At (40)
+
+_ Qt) + Qt, + At)
+ar) = yt, (41)
+
+where Nt.) is the atomic concentration of the isotope in the fuel salt at
+
+time Lis subscripts P and S refer to promethium and samarium, AZ is the
+33
+
+time interval between calculations of the concentrations, and § is the
+average power level during this time interval. The coefficient cy is the
+product of the direct fission yield and the average fission rate per unit
+volume of fuel salt normalized to 1 MW.
+
+Conversion of the 1“%Sm and 15!Sm concentrations to reactivity effects
+required calculations of the reactivity coefficients for unit absorbers of
+this type uniformly distributed in the fuel salt. The theory for these
+calculations was described in Section 2.3 of this report; specific details
+on the MSRE nuclear computations are given in Chapter 4.
+
+For the specific example of a step increase in reactor power from zero
+to 7.25 MW (approximately the maximum heat output of the MSRE}, the magni-
+tudes of the samarium reactivity effects are given in Fig. 7. Although
+these indicate the general magnitudes and time constants, it should be
+emphasized that these magnitudes apply to this simplified power~time his-
+tory only; the magnitudes in the reactivity balance calculations differed
+
+somewhat, depending on the actual power-time history in reactor operations.
+
+ORNL-DWG 71-4541
+
+=
+
+= TOTAL SAMARIU
+
+RX — ~~
+
+wl
+
+S
+
+2 SAMARIUM-149
+=z
+
+«0
+
+<I
+
+=
+
+>
+
+=
+
+Ed
+
+5 SAMARIUM=-151
+<T
+
+wl
+
+or
+
+ 
+
+0 10 20 30 40 50 60 70 BG
+
+TIME~INTEGRATED POWER (10t3 MWhr)
+
+Fig. 7. Samarium poisoning reactivity effect in MSRE for a step
+increase from 0 to 7.25 MW at start of power operation.
+34
+
+135¥e poisoning
+
+Prior to nuclear operation of the MSRE, estimates of the magnitude
+of 135Xe poisoning were based on the assumption that at equilibrium a rela-
+tively large fraction of the xenon produced in the reactor would diffuse
+into the pores of the graphite moderator and undergo radioactive decay and
+neutron absorption there. Continuous removal of some of the xenon from
+the fuel salt would be accomplished by circulation of a small bypass stream
+of salt through the spray ring in the fuel-pump tank, which contacted the
+salt with a stream of helium gas. Estimates of the efficiency of removal
+of fission gases by this stripping apparatus and also of the expected mass
+transfer of xenon to the graphite pores were based on experiments with
+85kr tracer performed prior to nuclear operation of the MSRE. From these
+experiments a model was developed to describe the xenon behavior in the
+
+reactor. lS
+
+It was recognized early that the presence of any circulating
+voids (undissolved helium gas) could drastically affect the xenon behavior,
+and these effects were considered in the model ultimately developed in
+
+Ref. 15. The circulating gas bubbles are effective in reducing the poison
+level due to the combined effects of the large overall gas-liquid inter-
+facial area for mass transfer to the bubbles and the large xenon storage
+capability of the bubbles (because of the extreme insolubility of xenon in
+molten salt), Thus not only do the bubbles compete effectively with the
+graphite pores for removal of xenon from the liquid, but 135%e in the cir-
+culating fluid is a less effective poison than that in the graphite because
+about two-thirds of the fluid is outside the core at any instant.
+
+When power operation of the MSRE began, the first attempt at on-line
+calculation of the 13°Xe poisoning term in the reactivity balance did not
+account for the effects of circulating bubbles. Indications from densi-
+tometer measurements during prenuclear testing and experiments during
+initial nuclear operation had been that practically no bubbles would
+circulate with the fuel. Also, in the early experiments, several tests
+had been performed to evaluate the response of the reactivity to changes
+
+in system overpressure. !!
+
+The system pressure was slowly increased by
+about 10 psi and then rapidly reduced to the normal value. If circulating
+
+bubbles had been present, their expansion when the pressure was reduced
+35
+
+would have expelled some salt from the core and reduced the nuclear reac-
+tivity. In addition, the gas expansion in the entire loop would have
+raised the salt level in the fuel-pump tank. There was no evidence of
+undissolved gas in the tests performed with the normal salt level in the
+pump tank. However, when the salt level was reduced to an abnormally low
+value, the same experiments did indicate some undissolved gas. Since this
+gas appeared only under off-design conditions, we concluded that circulat-
+ing bubbles would not be a factor in the xenon poisoning during normal
+power operation.
+
+Soon after power operation of the reactor was started, it became ap-
+parent that the magnitude of the steady-state 135%e poisoning was much
+smaller than had been predicted on the basis of the above considerations.
+At this point the attempts at on-line calculation of the xenon poisoning
+were suspended, and the reactivity-balance results were used to measure
+the actual xenon poisoning. Examination of the steady-state results
+showed that the low poison level could not be accounted for with reason-
+able parameter values within the assumption of no circulating bubbles.
+
+In addition the system response to small pressure changes now indicated a
+small circulating void fraction at normal salt levels in the pump tank.
+
+In view of new evidence for circulating bubbles, the steady-state
+xenon equations were first modified to include bubbles, and the reactivity
+effect was reevaluated. As expected, the steady~state xenon poisoning was
+quite sensitive to both the volumetric void fraction and the bubble-
+stripping efficiency, decreasing monotonically with increases in either
+of these parameters. However, it was found that the steady-state xénon
+poisoning as a function of reactor power could be described by a variety
+of combinations of void fraction and bubble-stripping efficiency. There-
+fore the analysis was extended to include the time dependence that would
+permit a comparison of calculated and observed transient 135%e poisoning
+effects (as determined by the change in the critical position of the regu-
+lating rod during the first 40 hr following a change in the steady-state
+reactor power level). The purpose was to attempt a separation of those
+parameter effects that could not be separated in the steady-state corre-
+lations. The mathematical model used to calculate the time behavior of
+the 13%Xe poisoning is described in Ref. 16. Here we will give only a
+
+brief description of the main aspects and assumptions of the calculation.
+36
+
+The model chosen was patterned after that developed in Ref, 15. We
+assumed that all the 1351 produced from fission would remain in circulation
+with the salt and that after decay to 135%e, the xenon would migrate to the
+accessible pores of the graphite at the boundaries of the fuel channels
+and also to minute helium bubbles distributed throughout the circulating
+salt stream. An effective mass~transfer coefficient was used to describe
+the transfer of xenon from solution in the circulating salt to the inter-
+face between the liquid and the graphite pores at the channel boundaries.
+Equilibrium Henry's~law coefficients were used for the mass transfer of
+xenon between the liquid phase at the interface and the gas phase in the
+graphite pores. The numerical value used for the mass-transfer coefficient
+between the circulating salt and the graphite was based on the krypton-
+injection experiments with flush salt circulating in the fuel loop.
+
+Similar assumptions were made regarding the mass transfer of xenon
+from liquid solution to the gas bubbles. The coefficient of mass transfer
+from the liquid to a small gas bubble of the order of 0.010 in. in diameter
+moving through the main part of a fuel channel was estimated from theo-
+retical mass~-transfer correlations.!® The equilibrium 135xe poisoning was
+shown to be relatively insensitive to the average bubble diameter and mass-
+transfer coefficient over a reasonable range of variation (uncertainty) for
+these parameters.
+
+Different efficiencies of removal by the external stripping apparatus
+of xenon dissolved in the salt and that contained in the gas bubbles were
+provided for in the computational model. The efficiency of removal of
+xenon dissolved in the salt (fraction of xenon removed per unit circulated
+through the spray ring) was estimated to be between 10 and 15%, based on
+some early mockup experiments for evaluating the performance of the xenon
+removal apparatus, By contrast, the efficiency of removal from the gas
+bubbles could be considerably higher, depending on the probability of re-
+placement by fresh sweep-gas bubbles in passage through the spray ring
+into the pump-~bowl reservoir.
+
+The conversion of the calculated !35Xe concentrations in salt, gas
+bubbles, and graphite pores to the corresponding reactivity poisoning ef-
+fect followed from considerations similar to those described in the pre-
+
+ceding section for the samarium isotopes. Here, however, there was one
+37
+
+special feature that had to be accounted for which is not present in the
+case of samarium. This arose from the nonuniformity of the spatial
+distribution of the !35Xe in the graphite pores. For the graphite region,
+theoretical analysis indicated that the 135%¢ would tend to assume a char-
+acteristic shape governed by the burnout of the xenon in the neutron flux.
+The concentration would be lowest near the center of the reactor and high-
+est near the boundaries of the graphite region. This influenced the net
+reactivity effect, since these regions assume different importances in de-
+termining reactivity changes, and therefore a "shape-correction factor"
+for this effect was required.
+
+To develop an approximate model for on-line calculations of the 135xe
+effect, a computational study based on the theoretical model described
+above was first performed "off-line," with the aid of an IBM 7090 program.
+These theoretical calculations were compared with the residual reactivity
+data obtained from on-line calculations by using Eq. (36), with Ap (}3°Xe)
+set equal to zero. The apparent transient 135xe poisoning was determined
+by subtracting all other known power-dependent reactivity effects from the
+reactivity change represented by movement of the regulating rod during
+the first 40 hr after a step change in the power level, This off-line
+analysis was the most efficient method of making a first-round analysis
+of the transient !3%Xe behavior because the many other usage requirements
+of the data logger limited us to a relatively simple "point" kinetic model
+for on-line computations and also because a wider parameter study could
+best be performed on a larger machine.
+
+A detailed account of the results of comparing the calculated be-
+havior with reactivity transients observed during the first few power runs
+of the MSRE was given in Ref. 17. This analysis showed that while the
+apparent 135%e poisoning at steady state could be explained by a large void
+fraction (between 0,5 and 1.0 vol 7%) and a low bubble stripping efficiency
+(v10%), the transient behavior could not be closely fitted using these
+assumptions. The opposite assumption of a relatively high stripping ef-
+ficiency (ey) and lower bubble fraction (ay) not only fitted the 135%¢
+transients better but was also consistent with the rates of excess gas
+removal observed in pressure release experiments. Figures 8 and 9 are
+
+representative of the data comparisons obtained for a step increase and
+38
+
+ORNL-DWG 67-4080
+
+ 
+
+  
+  
+   
+
+0.7 T Teen T T T
+i
+| ; i i
+i | | i
+0.6 — {= — — “ff gyy BUBBLE STRIPPING ny
+3 ! | EFFICIENCY (%)
+© e EXPERIMENTAL DATA, OBTAINED io
+20.5 | —— DURING MSRE RUN NO.8 — oo | HB
+wl .
+: Co
+2 i
+Eoa | on J en —_— _ i
+57 20 He
+2 : a |
+s
+r0.3 pom —
+>
+=z 5 reerrmssesr
+QD |
+ho.2 E28] eh
+. |
+0.1 eg —
+| |
+0
+
+ 
+
+ 
+
+ 
+
+o 4 8 t2 16 20 24 28 32 36 40
+TIME AFTER INCREASE IN REACTOR POWER LEVEL (hr)
+
+Fig. 8. Effect of bubble-stripping efficiency on transient buildup
+of 1%%Ke reactivity. Step increase in power level from 0 to 5.7 MW;
+volume percent circulating bubbles, 0.10; MSRE run 8.
+
+ORNL-DWG 67-1087
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+   
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.7
+|
+06 [=] ® EXPERIMENTAL DATA OBTAINED ——
+=< yd INN DURING MSRE RUN NO. 10
+LD
+2 os | So | |
+a N |
+>
+© i
+= 04 pa — NL
+3 NN | |
+z ~~ ¢, .BUBBLE STRIPPING
+So3b— 1 — ~. EFFICIENCY (%) EE
+= i ®-O gg
+Q gp © Be
+P= bo @p~
+CR ee Tope ~~ |
+— Tee °° — ~~
+® ' ~~... :
+~. Dm
+0 he Teg 50 Ty
+Se —— 2 2g 3
+: 100 —® —--9 Loe
+0 | i |
+0 4 8 12 16 20 24 28 32 36 40
+
+TIME AFTER DECREASE IN REACTOR POWER LEVEL (hr)
+
+Fig. 9. Effect of bubble-stripping efficiency on transient decay of
+135%e reactivity. Step decrease in power level from full power to zero;
+volume percent circulating bubbles, 0.15; MSRE run 10.
+39
+
+a step decrease in the reactor power respectively. The calculated curves
+
+for the reduction in power level (Fig. 9) also reveal an important char-
+acteristic of the transient xenon behavior that is due to variations in
+the overall xenon distribution resulting from choice of the parameters
+
+a and £- If the circulating void fraction is relatively low, most of
+the steady-state poisoning effect is due to 135% in the graphite, and
+only a small amount of xenon is in the circulating fluid. Xenon that is
+produced in the fluid from iodine decay continues to migrate to the gra-
+phite for a period of time after the power has been reduced. This produces
+a shutdown peak in the xenon poisoning. Eventually, the stripping process
+reduces the xenon concentration in the fluid so that some of the xenon in
+the graphite can escape and be stripped out. This results in a more rapid
+decrease in xenon poisoning than simple radioactive decay. If either the
+bubble stripping efficiency or the circulating void fraction is increased
+(the latter effect is not shown explicitly in Fig. 9), the bubbles hecome
+a more effective sink for the additional xenon produced from iodine decay,
+and there is less xenon migration to the graphite. In this case the shut-
+down peak tends to disappear. This effect makes the shape of the shutdown
+transients more sensitive to changes in the values assumed for the bubble
+parameters and thus facilitates the process of fitting the observed data
+to the calculations.
+
+The parameter studies illustrated by the examples in Figs. 8 and 9
+indicated that the circulating void fraction and bubble stripping effici-
+ency might be bracketed between 0.1 and 0.15 vol Z and 50 to 100% re~-
+spectively. Within these ranges, the transient model appeared reasonably
+insensitive to the choice of parameters. A combination of ay = 0.15 vol %
+and £ = 507 was chosen for further application in the on-line calcula-
+tions.
+
+Based on the results of the off-line analysis described above, approxi-
+mate equations and parameters were determined for nominal on-line calcula-
+tions of the 135Xe reactivity effect during the remainder of power opera-
+
+2357,
+
+tions with Similar to the case of the samarium poisoning calculation,
+
+these were finite difference equations of the form given below:
+40
+
+1135(¢, + AE) = 135(t) (1 =a, bt) + a, Q(t) At, (42)
+135 — 135 — A A
+X235(t, + At) X(t) [1 —a, at a, dt) At]
+135 135 Al + .
++a, I3%(t) At + aX} (t;) At +a Q(t) At, (43)
+135 po 135 — aa A 135
+x (t; + 8) x; (t;) [1 —a, at ag@(ty) dtl +a X135(t) at, (44)
+135 410 135
+Xp30(t, + bt) = mm X13, + at) (45)
+ay; ta ,@,)
+135 i 135
+[x (tI cs x (t,) . (46)
+
+In these equations, 1135 is the concentration of !35I in the circu-
+lating salt, and X!3% is the concentration of 135%e, with subscripts s,
+9, and b representing the components in solution, in the graphite pores
+and in the circulating helium bubbles respectively. The parameters ag
+
+through a were determined according to the analysis described in the
+
+12
+preceding pages and depend on the fission yields, radioactive decay con-
+stants, mass-transfer coefficients, bubble characteristics, and external
+stripping efficiencies. The factor ¥ is an importance-weighted shape-~
+correction factor for the distribution of !'3%Xe in the graphite pores
+mentioned above. At full power, this parameter was approximately equal
+to 0.8.
+
+The approximate model evolved in the manner outlined above (based on
+
+an assumed nominal behavior of the circulating gas bubbles) proved ade-—
+quate to describe the 135%e reactivity behavior during operation with 235y
+in the salt; however, as power operation of the MSRE progressed, evidence
+was accumulated from special experiments designed to study the effects of
+operating conditions on entrained gas behavior, and particularly from
+operation with 233U in the salt, which indicated that the behavior of the
+
+entrained gas was actually more complex than implied in the preceding
+41
+
+model. This latter evidence suggests that the gas bubbles circulating
+under normal operating conditions with 235y may actually have averaged
+only about one-third that indicated by the preceding analysis; furthermore,
+it suggests that cover-gas solubility effects may have been significant
+with helium cover gas at these low void fractions. Some of this evidence
+will be described later in this report in connection with the discussion
+of the reactivity balance data. Work is being completed on a refined and
+extended model to describe the behavior of entrained gas and 135% in the
+MSRE. 18
+
+In addition to its indirect influence on the reactivity through re~
+duction of the !35%e poisoning, the entrainment of undissolved helium in
+the circulating salt also directly affects reactivity by increasing the
+neutron leakage from the reactor core, This "fuel-salt density coefficient
+of reactivity" was calculated as part of the analysis of core physics char-
+acteristics. The value obtained was —0.23% §k/k for 1 vol 7 circulating
+gas bubbles. For a circulating bubble fraction between 0.1 and 0.15 vol 7%,
+this would correspond to a reactivity effect in the range —0.023 to
+—0.035% 8k/k. If the actual gas circulating through the core were less,
+as indicated above, this reactivity effect may have averaged only about
+one-third this amount during much of the reactor operation.
+
+Because the actual amount of gas in circulation appeared to vary
+somewhat during operation, depending on conditions such as the liquid
+level in the fuel-pump bowl, the transfer rate of salt to the overflow
+tank, and the temperature, 18,19 the absolute magnitude of this reactivity
+effect was never well enough established to be explicitly included in the
+on-line reactivity balance calculations. The effect is therefore included
+in the residual reactivity term in the experimental results presented in
+
+later sections.
+
+Other nuclide transmutation effects
+
+The seventh term on the right-hand side of Eq. (36) defines a cate-
+gory that includes the effects of changes in the concentrations of bri,
+234,236,238y, 239,240py, and nonsaturating fission product poisons, all
+in the fuel salt, and residual 108 in the graphite. (The term "nonsatu-
+
+rating" is applied to describe this fission product group, since neutron
+42
+
+absorption cross sections of the first relatively stable member of these
+fission product chains are sufficiently small and the MSRE flux levels
+sufficiently low that burnout and production of secondary products were
+negligible during MSRE operatioun,) The similarity of the reactivity
+changes associated with this category is in the dependence on the integral
+flux-time, or exposure, rather than the details of the power level vari-
+ation during a single run. This net reactivity effect must be calculated
+from basic theoretical considerations. The purpose of this section is to
+provide a summary of the formulas used in calculating the changes in iso-
+topic concentrations and in converting these changes to reactivity effects.
+As a by-product, the assumptions in the computational model will be
+exhibited.
+
+The differential equations governing the changes in the isotopic
+
+concentrations of the salt constituents are as follows:
+
+ 
+
+ 
+
+ 
+
+ 
+
+an ~
+Jr = CA for °Li, (47)
+dn, ~
+oy 234
+ge 0,942, for 1, (48)
+dll ~
+Tr = W,056% to, F,, for 2367, (49)
+an, A
+So = WN, 0,,0 for 23877, (50)
+dq 239p,, *
+rl 4, 40 Lol, + N, 0 20%, for Pu, (51)
+dl o ~ 240
+— = =, 0 bol TU, 5 (0 pg — Orig) for Pu. (52)
+
+ 
+
+*
+Corrections due to transients and neutron losses in 239\p were small
+
+enough in the MSRE to be neglected.
+43
+
+In the preceding equations, IV represents the nuclide concentration in
+the salt, 2, corresponds to the neutron flux averaged over the entire cir-
+
+culating fuel volume, represents the 2357 fission density in the salt
+
+Fos
+averaged over the fuel volume, and a,; is the ratio of productions of 236y
+to fissions of 23%U, The reaction cross sections, a, are averaged over the
+reactor neutron spectrum (subscript f refers to the component due to fis-
+sion); their precise definitions and a description of the method of calcu-
+lation are deferred to the following section.
+
+The buildup of the nonsaturating group of fission product poisons was
+represented by the approximate equation (53), In this equation, the pro-
+duction rate of the Zth nuclide is proportional to the product of the fis-
+sion rate in 23°50 and the yield from fission.®* The removal rate due to
+neutron capture is equated to zero. Thus the differential equation de-
+scribing buildup of the fission product inventories, ignoring effects of
+
+external removal of these products from the circulating fuel system, was
+
+an”
+
+F.P. _
+dt = YiFys
+
+(53)
+Actually, MSRE experience indicated that certain of these fission products
+
+were continuously removed during operation, and corrections needed to be
+
+introduced into inventories calculated according to Eq. (53) to account
+for these effects, Numerical results obtained in these calculations are
+described later in this section.
+
+In contrast to the nuclide constituents of the fuel salt, residual
+10g in the graphite was exposed to the local neutron flux (rs), so the
+burnout rate was position dependent throughout the core. If Vig is the
+concentration of 17B in the graphite, the appropriate differential equa-
+
+tion is
+
+ 
+
+~ ¢ (x,t) .
+0 <x )
+
+at 10°10 (54)
+
+ 
+
+*Corrections corresponding to the small fission product contribution
+from fission of 23%Pu were neglected.
+44
+
+The flux level and the total exposure of the 23°U fuel charge
+(v70,000 MWhr) were small enough that the magnitude and energy spectrum
+of the flux corresponding to a given fission rate (or power level) was
+very nearly independent of exposure. Consequently, the spectrum-averaged
+reaction cross sections could be reasonably assumed to be invariant during
+operation. However, the flux in the preceding equations was actually time
+dependent, since the power level varied during reactor operation. This
+
+is commonly accounted for by waking the change of variable ¢ + u, where
+
+tL,
+u = J a(t") dt. (55)
+
+The relation between the total number of fissions during an operating
+
+interval and the time integral of the flux during that interval is
+
+ 
+
+ 
+
+A 0 ~ ~
+o ~ NY o o
+o f25 0, WU 28°28 fuo
+Total fissions = Vlye — (1 — ) + Vy ny  —————— -
+925 49 7 98/ ug
+~ a 5 ~
+"9, gt 0 49 Sug ~Oggtt
+Xx (1 —e ) + VS: 1—e ) (56)
+
+v9 ~ %28/ “ug
+
+where NV refers to the concentrations at the beginning of the interval and
+v, is the total volume of salt in circulation. Because the total fuel
+exposure was sufficiently low, the time-integrated flux is approximately
+proportional to the total fissions; that is, to the time integral of the
+
+power. Hence the additional simplification
+u = ¢T (57)
+
+could be used, where ¢ is the volume-averaged flux normalized to unit
+power level and 7 is the time-integrated power. Moreover, the contribu-
+tion from 23°Pu fissions was quite small (increasing from zero to less
+than 3%, maximum) during the entire period of power operation with 235y,
+so the average fission rate in 235y per unit power was essentially con-
+stant. With the above assumptions, the integration of the preceding dif-
+ferential equations is a straightforward exercise, and the resulting
+
+formulas are those listed below:
+ 
+
+ 
+
+-0g97
+AV, = 0 (1 —e ) for SLi ,
+0 72497 23!
+— \ — +
+AN, 4, aa e ) for U
+. _ =G, 07
+-G, 07 ao Fos (1 —e )
+26 5 J
+AN = N09 @a-e ) + 23 for 236y
+26 26 ~
+Ope?
+~0, 487
+= —qy0 — - 238
+AV, o Vg (1 a ) for U
+-3, 67 vo “GT ~0, _T
+28 L PN
+AN = 0 (1 —~e +3 y + —22 20 28 — a ° ) for 23%py
+L9 49 5 — 5
+49 28
+Tq — 0. A An
+AY a0 1 — “Tuo?” + 10 ko Fug =O), 497 3 “uot
+40 40 € ng A a ? ©
+ug ~ “40
+we. ays |G, —6G -5 ¢ -5_ oT
+28 ~ 2
++ -~ A RX [3 (e +o 8 )
+49 7 9g |%28 7 Tug
+5-5 . .
+49 Fug =0y, oT ~g, 67
+— = (e 0 —e #9 ) for 240py |
+he T Tug
+7 = .
+AVG = V8, T for non-saturating F.P.,
+AN. = 0 (1 —e 1% Ty for 108,
+
+10
+
+(58)
+
+(59)
+
+(60)
+
+(61)
+
+(62)
+
+(64)
+
+(65)
+46
+
+In Egs. (60) and (64) the quantity Foe is the volume~average fission
+density in the salt per unit power, and ¢, (x) is the local neutron flux
+in the graphite, also normalized to unit power level.
+
+The theoretical considerations required to convert the concentration
+changes to reactivity effects were described in Section 2.3, where for-
+mulas were developed in terms of the two-group diffusion model.” For a
+neutron absorbing material distributed in the salt, the reactivity effect
+was given by Eq. (27). Similarly, for a change in the concentration of
+a fissile material, the reactivity effect was expressed by Eq. (310).
+
+The single exception included in this nuclide category, which re-
+quires special treatment, is that of the 108 burnout in the graphite. In
+this case, the spatial distribution of burnout is of significance. If
+SN represents the local change in 10g concentration, the reactivity
+
+10
+equation is (still using the two-group notation)
+
+- by by Em Eee) dV Iv. by SHA ma, dV
+
+Apyg 7 , (66)
+Jy rpey + 0yvie0)) dV
+
+where v. represents a volume enclosing only the moderated (graphite
+
+channeled) region,
+
+To better exhibit the spatial effects in this calculation, it is
+convenient to separate Eq. (66) into the product of a shape-factor cor-
+rection and the reactivity change that would be associated with uniform
+burnout of the boron at a rate determined by the spatial-average flux in
+the graphite. Defining SH, as the change in concentration if the burn-
+
+out is uniform, we may rewrite Eq. (66) as follows:
+
+SI (Fm + 912942)
+Ap = —5(I) , (67)
+
+lo We (91, + Voge)
+
+ 
+
+ 
+
+*The actual neutronics calculations were based on a four-group dif-
+fusion model, as described in Chap. 4. This generalization of the re-
+quired reactivity formulas is straightforward; hence in this section we
+continue the use of the two-group formulas to take advantage of the
+abbreviation thereof.
+47
+
+where
+fp v,@=F)e dv
+i = tg (68)
+
+[ Y.F_¢ dV
+Vo 17872
+and
+fy vd = F)¢, av
+J - 3 (69)
+[, V.F_ 6, dv
+Vp 1872
+
+Jy is defined by Eq. (29), and the shape factor is defined by
+
+Jy 4, SN o 00 dV + Iv ¥, S01 Tats AV
+S(T) . (70)
+0 (ry, Uy 0,00, dV by. Y, 92%) w)
+
+ 
+
+In Eq. (70), SL is calculated according to Eq. (65), and the same equation
+defines SN os with the spatial flux distribution replaced by the volume~
+average flux in the graphite. Expressed in this product form, Eq. (67) is
+also more suitable for approximation of the spatial flux distribution and
+calculation of S(I) by numerical integration procedures. Results of nu-
+merical calculations of this spatial burnout factor are shown in Fig. 10.
+
+In order to apply the theoretical formulas of this section, infor-
+mation is required concerning initial concentrations of the various nu-
+clides, their reaction cross sections averaged over the MSRE spectrum, and
+the flux-~adjoint flux-product integrals entering into the reactivity form-
+ulas. Brief descriptions of the sources of this information are the topic
+of Chapter 4.
+
+The results of calculations of the individual reactivity effects
+
+*
+lumped in this category are shown in Fig. 11. These numerical values
+
+ 
+
+Ae
+
+“The on~line calculations of reactivity effects described in Sect, 5.2
+were actually based on an earlier version of Fig. 11, The numerical values
+in this figure represent current best estimates of the actual changes during
+operation with 2357, They reflect cross-section data improvements made
+gince the termination of operation, modifications further discussed in
+Sect. 5.3 in connection with refinements in evaluations of long-term re-~
+activity trends.
+48
+
+ORNL-DWG 71-4245
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+CORRECTION FAC JOR
+ww
+|
+
+ 
+
+SPATIAL
+&
+i
+
+ 
+
+ 
+
+S14, S
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+: i
+1 C J. L
+0 10 20 30 40 50 60 70 80
+
+ 
+
+TIME-INTEGRATED POWER (103 MWhr)
+
+Fig. 10. Spatial correction factor S(I) for 198 burnout reactivity
+effect in MSRE graphite.
+
+ORNL-DWG 71-4942
+
+PLUTONIUM-23
+
+=
+
+~~
+
+x
+
+«QQ
+
+32
+
+wl
+
+<Q
+
+=z
+
+<t
+
+I
+
+[8
+
+> URANIUM-236
+o
+
+- .
+
+=
+
+bd
+
+Ww NON-SATURATIN
+
+FISSION PRODUCTS
+
+ 
+
+0 10 20 30 40 50 60 70 80
+
+TIME—INTEGRATED POWER (1000 MWhr)
+
+Fig. 11. Reactivity changes due to long~term nuclide changes in
+MSRE during operation with 23%y; no fission product removal.
+49
+
+are also normalized to the 233U loading attained at the end of the zero-
+power experiments and are similar to the normalizations of other reactivity
+effects shown in Figs. 4 and 7. The curve labeled "net™ is the algebraic
+sum of these effects and would represent the contribution from this cate-~
+gory within the overall reactivity balance. As was mentioned above, how-
+ever, one additional effect needs to be considered; namely, the external
+removal of certain fission products from the MSRE fuel salt. The calcu-
+lations in Fig. 11 were based on the assumption that all fission products
+and their daughters remained in the medium in which they were produced.
+Many of these fission product chains, however, include noble gases (xenon
+and krypton) with substantial half-lives. Since these gases are largely
+insoluble in the fluoride salt melt, they tended to escape into the off-
+gas system. In addition, there is evidence that significant fractions of
+some noble metals (notably Mo, Te, Ru, Tec, and Nb) were also removed by the
+off-gas system, either as volatile fluorides or as colloidal metal parti-
+
+20
+
+cles, Another mechanism for loss of poisoning, which occurred to some
+
+extent, was the plateout of fission products in surfaces outside the core
+
+21 A factor that enhanced the poisoning effect of some fission pro-
+
+region.
+ducts was the diffusion of some volatile species into the pores of the
+graphite. It is clear from the above that a quite detailed model of fis-
+sion product behavior would be required for a precise description of fis-
+sion product poisoning effects in the MSRE. Although much information was
+gained from analysis of MSRE operation, such a model is not currently
+available.
+
+To obtain some indication of the effect of fission product loss on the
+net poisoning, we made calculations for two idealized cases. In one case,
+we assumed removal of 100% of the noble gases and in the other, concurrent
+removal of both the noble gases and the noble metals. (The only members
+of the latter category that are significant neutron poisons are molybdenum,
+ruthenium, and tellurium.) Figure 12 shows the changes produced in the
+net reactivity curve of Fig. 11 when these amounts of external removal of
+fission products are considered. The largest change resulted from removal
+of the noble gases. (Note that the direct poisoning by 135%¢ is treated
+separately in the reactivity balance and is therefore not included in this
+
+analysis.)
+50
+
+ORNL-DWG 71-4343
+
+REMOVAL OF Xe, Kr, Mg, Ru, Te
+
+REMOVAL OF Xe, Kr
+
+FISSION PRODUCT REMOVAL
+
+REACTIVITY CHANGE (% 8k/k)
+
+ 
+
+0 10 20 30 40 50 60 70 80
+TIME-INTEGRATED POWER (1000 MWhr)
+
+Fig. 12. Effect of fission product removal on net reactivity change
+induced by long-term nuclide changes.
+
+In the absence of detailed quantitative information on the behavior
+of all the fission products, we assumed for the reactivity balance calcu-
+lations removal of all the noble gases and none of the noble metals. Thus
+the middle curve in Fig. 12 was chosen to represent the net reactivity ef-
+fect of this category of long-term core changes.
+
+For the on-line calculations, an approximate formula was used to ob-
+tain the net reactivity effect of this group of changes. This was of the
+form
+
+bo = A HATHA e V va e 2, (71)
+
+Numerical values of the parameters in this formula were determined accord-
+ing to the analysis described in this section; renormalization adjustments
+were also made each time the fuel was drained and mixed with the residue
+of salt in the fuel drain tanks, which had not been exposed to the flux
+
+during that run.
+
+3.3 Influence of Graphite Irradiation Damage
+on the MSRE Reactivity Balance
+
+ 
+
+One effect that was expected to occur but was not specifically in-
+cluded in the reactivity balance calculations was associated with dimen-
+sional changes in the core graphite due to fast-neutron irradiation. The
+type of graphite used in the MSRE undergoes the changes indicated in
+
+Fig. 13 (Ref. 22). The result is that the distribution and the amount of
+51
+
+ORNL-DWG 6910228
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.2 —
+0 Ay >
+rh
+2
+
+-0.2 2
+2
+L 0.4
+jo]
+=z
+T -06 i
+o PARALLEL TO EXTRUSION DIRECTION 2
+< | |
+z -0.8
+2 0.2 I I | |
+g PERPENDICULAR TO EXTRUSION DIRECTION
+Sr)
+
+Zr,
+EE ys,
+0.2 755,
+“Ly,
+-0.4 44
+-0.6
+0 f 2 3 (x10?)
+
+NEUTRON FLUENCE [neutrons/cm? (£> 50 keV)]
+
+Fig. 13. [Irradiation-induced dimensional changes in MSRE grade CGB
+graphite.
+
+fuel salt in the core can change both from graphite volume changes and
+from the bowing and displacement of the graphite stringers. The dimensional
+changes can potentially affect the core structure in three ways: (1) a
+direct change in the linear graphite dimensions that is dependent on the
+neutron fluence, (2) various degrees of bowing of individual stringers,
+depending on the flux gradient across the stringer and on the total flu-
+ence, and (3) displacement of the lower end of each stringer by the di-
+mensional changes of the lower horizontal bars. Since the net changes in
+the core structure as the hundreds of graphite bars bow in various modes
+due to the nonuniform flux distribution are quite complex, a computer pro~
+gram was developed in an attempt to describe this situation in detail.
+Relative changes in the volume fraction of salt and graphite at each core
+location were obtained, and the associated reactivity effects were esti-
+mated as weighted averages of these changes over the core volume. The
+
+essential features and results of the calculation are outlined below.
+52
+
+Calculation of graphite displacement
+
+ 
+
+The individual graphite stringers in the core are bowed by changes in
+the differential expansion (or contraction) that occur through the thick-
+ness of the stringer as a result of the flux gradient. If the stringers
+were unrestrained and the neutron flux and graphite distortion curves were
+linear across the thickness of the stringer, there would be no stress, and
+the deflection at any point could be calculated by conventional beam~
+deflection equations. We will consider the geometrical relationships indi-
+
+cated in Fig. 14, where the radius of curvature is
+
+¢
+
+Rk = ATL ° (72)
+and
+1 d?y dx?
+T =  ———e— (73)
+3/2
+[1 + (dy/d=)?]
+If dy/dx is small, (dy/dx)? is negligible, and
+2 > 1 _ AL/L
+dy /dx= = = ce (74)
+The deflection is
+y = [JE a ae, 75)
+
+ORNL-DWG 71-4946
+
+GRAPHITE
+STRINGER
+
+x E*
+Pens ws OF CURVATYR
+RAD
+
+pee
+
+ 
+
+Fig. 14. Stringer deflection geometry.
+53
+
+and since there are dimensional changes at both positions 1 and 2,
+
+(AL/L) , — (AL/L)
+y = [[|—2—— Ld” dx. (76)
+c
+
+The change in differential expansion across a stringer, and therefore
+the deflection of the stringer, depends on the slope of the radial flux
+profile and on the slope of the axial (parallel to extrusion) distortion
+curve for the graphite shown in Fig. 14. If there were no contact with
+adjacent stringers and no local flux perturbations, any stringer in the
+core would deflect in a radial plane from the reactor center line.
+
+A computer program was written to calculate the components of the
+radial deflection at 2-in. intervals along the length of each stringer and
+to add these to the respective displacements of the lower lattice bars.
+The graphite distortion data and the radial flux profile were fitted to
+cubic equations for use in the computer program. Equations were obtained
+for both the upper and lower boundaries of the graphite distortion curves.
+The axial flux distribution was represented by a chopped cosine curve.
+
+When the lower axial damage curve was used, the deflections were out-
+ward for all the stringers, and there were no interferences indicated un-
+til an integrated power of 150,000 MWhr was reached. However, when the
+upper curve was used, the outer stringers with lower neutron exposure and
+with a positive slope on the distortion curve deflected inward against the
+neighboring stringers. In this case the outermost stringers were allowed
+to retain their calculated deflections, and adjustments were made pro-
+gressively inward on the neighboring stringers to eliminate any interfer-
+ence. No attempt was made to calculate the elastic deflections that would
+occur when two or more stringers were in contact with each other. However,
+the above method of adjusting the deflections was found to be unrealistic
+above 45,000 MWhr and caused solid packing of the graphite over a greater
+fraction of the core than could actually occur. We did not attempt fur-
+ther refinements in the mathematical model to correct for this, since
+these calculations were to be used only as rough estimates of the possible
+
+magnitudes of reactivity effects introduced by graphite irradiation damage.
+54
+
+After the deflections were calculated and adjusted as above, the
+changes in graphite and salt volumes were calculated at each core location.
+The graphite and salt densities based on core volume were then calculated
+at each location from the volume changes. The relative changes in salt
+and graphite density at each core location were output on punched cards
+
+for use in calculating the reactivity effect,
+
+Conversion to reactivity effects
+
+The reactivity effects of the relative density changes described above
+were determined by weighting these changes according to the nuclear impor-
+tance of the core location and integrating over the core volume. This cal-
+culation was similar in form to that for the 9B burnout reactivity effect
+described in Section 3.2, except that additional terms were required to
+account for the effects of these density changes on the moderating proper-—
+ties of the core. The total reactivity change was calculated from the
+
+following equations (in two-group theory):
+
+ 
+
+1,2 nN on
+
+ro = 2 | (+4) + (2) |, (77)
+~~, tg\V . 1I\N .
+Ts g tg s /ig
+
+where the importance-averaged density changes in the graphite (and simi-
+
+larly for the salt) were
+
+cy
+(my le)
+A —— 78
+v i (78)
+[y vse, dv
+
+g
+
+In these equations VN is the relative density, the Es are reactivity coef-
+ficients obtained from neutronics perturbation calculations, and 5s and g
+refer to salt and graphite respectively. A second computer program was
+written to perform the integrations and to calculate the total reactivity
+effect. In this program, the flux profiles were input as tabular data
+
+and interpolated as necessary. The values of 8N/N for salt and graphite
+
+were read from the card output of the graphite distortion program.
+55
+
+Results of calculations
+
+ 
+
+The reactivity changes predicted by this model were calculated at
+various exposures up to 200,000 MWhr, well beyond the actual exposure
+during MSRE operation with 2357, These results are shown in Fig. 15.
+Calculations with either the upper or lower limits of graphite damage data
+indicated a long-term positive trend in reactivity. The initial decrease
+in the curves obtained with the upper graphite damage limit is caused by
+the positive slope of the graphite damage curve at low neutron exposures,
+This indicates that the stringers would tend to deflect inward at low
+values of integrated power and squeeze fuel out of the core; then, as the
+integrated power increased, the central stringers would begin to deflect
+outward, bring fuel back into the central region of the core, and increase
+the reactivity. For the upper-limit damage curves, there is increasing
+uncertainty in the slope of the reactivity change beyond about 45,000 MWhr
+because of the problem of accurately assessing interference effects between
+the stringer deflections.
+
+In addition to the reactivity effects, the computer program also out-
+put the various dimensional changes within the core graphite and the magni-
+tude of any interferences. The upper graphite damage curves produced in-
+terferences at all integrated powers, while the lower curves produced
+interferences at 150,000 MWhr or above. At an integrated power of 100,000
+
+MWhr, the maximum bowing was 0.036 in., and the overall length change
+
+ORNL ~~ DWG 69-10227
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+CTT TT TT TTT]
+= 0.8 [rp L-- CALCULATED USING LOWER
+x ' LIMIT GRAPHITE DAMAGE CURVES —”
+© 43 ll ] LL
+LO i | | : | A
+— CALCULATED USING UPPER L* ~~
+> —. . - Pe
+Z 0.2 LIMIT GRAPHITE DAMAGE CURVES == a
+> >
+5 of Ir oT
+<< : «= 1
+Ww J x .
+
+0 —
+eee
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0 20 40 60 80 100 120 140 160 180 (x10%)
+INTEGRATED POWER (Mwhr)
+
+Fig. 15. Reactivity effect of irradiation-induced dimensional changes
+in MSRE graphite.
+56
+
+varied from —0.076 in, at the center line to —0.006 in. at the periphery
+
+of the core. The maximum interference between stringers calculated from
+the top graphite distortion curves was 0.049 in. calculated at 150,000 MWhr.
+If all this interference were relieved by the deflection of one stringer,
+the calculated bending stress in that stringer would be 920 psi.
+
+Because of the obvious difficulties involved in modeling the actual
+core behavior under prolonged graphite irradiation, the calculations de-
+scribed should be viewed as attempts to bracket the possible reactivity
+component associated with this effect. These results will be further dis-
+cussed in connection with the interpretation of long-term reactivity
+
+trends (Sect. 5.3).
+57
+4. SOURCES OF DATA AND PARAMETER CALCULATIONS
+4.1 Initial Nuclide Concentrations
+
+The basis for calculating initial nuclide concentrations for this
+problem was the fuel-salt "book" inventory and composition records at-
+tained at the beginning of the power runs. As reported in Ref. 23, this
+was LiF-BeF,-ZrF,-UF, (64.88-29,26-5.04~0,82 mole %), in which the uranium
+contained 33.241 wt % 2350, The fuel-salt density required to convert the
+chemical composition to nuclide concentrations was 145 1b/ft3 at 1200°F
+(based on evidence discussed in Ref. 11).
+
+The source of data for determining the PLi isotopic content in the
+initial fuel salt was a set of mass-spectrographic analyses of the LiOH
+batches from which the LiF for the fuel salt was prepared. These assays
+gave an average of 0.0074 at. 7% 614.24
+
+Data regarding the concentration of residual boron in the MSRE core
+graphite was taken from Ref. 25. As reported there, the chemical purity
+analysis of grade CGB graphite was 9 x 107° wt % boron (natural isotopic
+abundance, 19.87% 108). The average density of the MSRE graphite at 1200°F
+was assumed to be 1.86 g/cm? in all calculations.
+
+The source of data for the 23“U and 23%U concentrations was Ref. 26.
+The uranium used to prepare the enriching fuel concentrate contained an
+average of 0.98 wt 7% 2347 and 0.38 wt % 235U, These were sufficiently
+small that the reactivity balance calculations for the 235y loading were
+
+quite insensitive to the initial concentrations of 2347 and 236y,
+
+4.2 Average Reaction Cross Sections
+
+For those nuclides uniformly distributed in the fuel salt, a general
+expression for the reaction rate in the Zth nuclide was given as Eq. (9)
+in Section 2.2. This characteristic of uniform distribution is basic to
+these circulating fuel systems and applies to all the important constitu~
+ent nuclides in the salt. For our calculations of the time-dependent
+changes in these nuclides, we have found it convenient to define a micrto-
+
+scopic reactor-average cross section by rewriting Eq. (9) as
+
+A
+
+R, = No.0 > (79)
+58
+
+where we have made the definitions
+
+Ir, av dio (®) 0,E) Fx)
+
+ 
+
+ 
+
+0,8) = = (80)
+Ji arf 4dr ¢(c,E,t) F(r)
+v, J
+and
+E
+/ vf C¢ dE ¢(r,E,t) F(x)
+4 0
+Rr
+= - . (81)
+5, (£
+nF) v
+
+In these definitions, E, is a convenient cutoff energy chosen high enough
+to effectively separate the slowing-down energy range from the thermali-
+zation range, LI is the average thermal flux to which the salt is exposed,
+and Vs is the total volume of salt in circulation. [Note that a similar
+definition could, if desired, be made on the basis of the total neutron
+flux at all energies, ¢, simply by replacing Z, by « and LS by ¢ in
+Eqs, (79) through (81).]
+
+As defined by Eq. (80), the average reaction cross sections depend
+on time through the relative changes in the neutron flux spectrum; however,
+in the MSRE the variations in salt composition during power operation were
+sufficiently small, and the flux perturbation due to control rod movements
+sufficiently localized, that the changes induced in the average cross sec—
+tions were quite small (see Tables 1 and 2 and related discussion below).
+Hence, close approximation to the values of G could be obtained by calcu~
+lating the spectrum for average operating conditions during the power runs.
+
+To apply the preceding definitions to reaction rate calculations, it
+is necessary to approximate the neutron spectrum ¢(r,F). In our work with
+the MSRE, we used the GAM-II and THERMOS programs to produce four broad-
+energy-group average nuclide cross sections, where the averaging is with
+respect to an approximate core spectrum calculated by the programs,27528
+
+We then applied the latter cross sections in few-group diffusion calcula-
+
+tions with the EXTERMINATOR program? to approximate the variation in the
+59
+
+flux spectra in the peripheral, salt-containing regions of the core (i.e.,
+the upper and lower plenums and the radial downcomer). Here, a two-
+dimensional (R,7 geometry) representation of the MSRE core was used, with
+four broad energy groups (one group spanning most of the slowing-down
+range, two epithermal groups, and one thermal group). The geometric model
+is shown schematically in Fig. 16.
+
+Approximate expressions corresponding to the defining Eqs. (80) and
+(81) can readily be obtained to describe the procedure of calculating
+
+average reaction cross sections, They are
+
+1) VF os to
+EE (82)
+k
+) 18h
+and
+k
+: 1h
+d ~ rrr rere 5 (83)
+th ”
+8
+
+where Ve and Fy are the volume and salt volume fraction for the th sub~-
+region over which the volume fraction of salt is constant and ® is the
+EXTERMINATOR flux in broad group »n averaged over subregion k (@,, is the
+average thermal flux in region k). The broad-group nuclide cross sections
+
+are defined by:
+
+ 
+
+El
+dE ¢ (BE) o.(E)
+=n En
+0, = : s (84)
+1
+/ dg ¢ (£)
+BE
+n
+
+where ¢ CE) is the approximate neutron spectrum in the graphite-moderated
+core as obtained from multigroup calculations with the GAM~-IT and THERMOS
+programs. The integrals in Eq. (84) are also calculated in terms of fi-
+
+nite sums, with up to 99 energy groups used to span the slowing-down range
+60
+
+ORNL-DWG 71-9807
+
+ 
+
+ 
+
+ 
+
+nN
+
+nN No
+®
+rn
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+4 | [219.20
+I 1
+6
+s—
+we. 7
+|
+3
+6 x
+75.09 oe]
+Lege
+COMPOSITION REPRESENTS DIMENSIONS (R x Z)
+t GRAPHITE-SALT LATTICE 166.45
+2 TOP PLENUM 23.85
+3 BOTTOM PLENUM AND STRUCTURE 23.22
+4 RADIAL DOWNCOMER . 166.45
+5 CORE CAN 64 x 166.45
+6 REACTOR VESSEL (TOP AND BOTTOM)
+REACTOR VESSEL (SIDE)
+
+7 CONTROL THIMBLES (POISON WITHDRAWN) 1.80 x 147.25
+8 CONTROL ELEMENTS (POISON INSERTED) 1.80 x 29.08
+
+"LENGTH DIMENSIONS ON FIGURE
+
+Fig. 16. Geometric representation of MSRE core used in four-group
+diffusion calculations. Poison elements withdrawn to upper limits; not
+to scale.
+61
+
+and 30 to span the thermal range. The cutoff energy, E> separating these
+ranges was chosen to be 0.876 eV for MSRE calculations.
+
+In Table 1, are listed the average cross sections calculated by these
+methods. Two sets of values are given, with the left column representing
+the averages obtained from cross-section libraries in usage early im the
+course of MSRE operations and the right column representing averages from
+more recent data libraries (ENDF/B) currently in use for molten-salt reac-
+tor studies. A discussion of the significance of these and other cross-
+section comparisons in interpreting nuclear operations data for the 235y
+loading is given in Ref. 30. Most of the on-line calculations described
+in thé next section were based on the older data set given in Table 1;
+however, a recent reevaluation of the long-term reactivity trends for the
+235) loading was made from values of 5 based on the newer data, and these
+results are described in Section 5.3.
+
+The calculations listed in Table 1 were made for the reactor spectrum
+corresponding to the minimum critical loading conditions (core isothermal
+at 1200°F and all control rods fully withdrawn). These average cross
+
+sections should be corrected for changes caused by increasing the uranium
+
+Table 1. Calculated average reaction cross sections in
+the MSRE thermal flux with 23°U at minimum
+critical loading conditions
+
+ 
+
+Average cross section (Db)
+
+ 
+
+ 
+
+Nuclides Pre-1965 data 1969 calculations
+611i 461.02 466.42
+10g 1870.35 1881.13
+135%e 1.18 x 10° 1.18 x 10°
+149gy 3.58 x 10M 3.58 x 10%
+151gm 2.63 x 103 2.63 x 103
+234y 138.19 130.40
+2357 (abs) 340.53 333.88
+235y (£) 270.15 267.88
+236y 52.76 51.11
+238y 26.32 27.67
+239py (abs) 1470.1 1456.1
+23%py (f) 874.5 901.1
+
+240py 1267.9 1287.6
+
+ 
+62
+
+concentration to reactor operating conditions and also the insertions of
+the control rod to compensate for the excess reactivity. These changes
+increase the average epithermal-to~thermal neutron flux ratio in the re-
+actor and thereby increase the reactor-—average cross sections [since they
+are defined by Eq. (80) on the basis of the thermal component of the flux].
+In Table 2 we have indicated the relative increases in calculated average
+cross sections of the most important nuclides corresponding to the maxi-
+mum 2350 concentration and rod poisoning experienced in the 235y run.
+
+This occurred at the end of the zero-power experiments and before the fuel
+was drained, when the 235 concentration had been increased by nearly 10%
+and the regulating rod was near full insertion. Although further uranium
+additions were made during the 235y run, at no time during operations were
+these conditions exceeded. Tn accord with the relative increase in epi-
+thermal flux, the maximum changes in Table 2 may be seen to be associated
+with those nuclides with strong resonance—capture components.
+
+During the actual course of reactor operation, the uranium concentra-
+tion and the rod insertion varied in accordance with the fuel burnup and
+additions and with the various reactivity changes in the core. The changes
+listed in Table 2 tend to bracket the actual variation in a, and, for pur—
+
+poses of calculating the reaction rates, the actual variations can be
+
+Table 2. Relative changes in average reaction
+cross sections for a 10% increase in 235U
+concentration, with compensating control
+rod insertion
+
+ 
+
+ 
+
+Nuclide Cross-section ratio”
+234y 1.063
+2357 (abs) 1.018
+2357 (£) 1.014
+236y 1.089
+238y 1.094
+23%py (abs) 1.004
+23%py (£) 1,004
+
+ 
+
+a . . , .
+Cross section at maximum uranium loading con-
+ditions divided by cross section at minimum critical
+loading.
+63
+
+closely approximated either by linearly interpolating the results in
+Table 2 on the basis of the 235U concentration or by assuming a fixed
+average composition during operation.
+
+The source of data for cross sections of the nonsaturating group of
+fission products was Ref. 31." This provided a summary of fission yields,
+cross sections at 2200 m/sec, and resonance-absorption integrals for these
+nuclides. These data are listed in Table 3. The group includes all fis-
+sion products (exclusive of 135%e, 143gm, and 518m) known to have nom-
+negligible cross sections. With the single exception of 147pp, only the
+direct products from fission (or daughter products of precursors with
+very short half-lives) are listed in Table 3. As already indicated, it
+is reasonable to neglect the secondary products because we were dealing
+with relatively small fuel exposures. The final nuclide entries in
+
+Table 3 are "pseudonuclides,”
+
+representing groups of fission products in
+which saturation effects are either negligible (NSFP) or quite small for
+long fuel exposures, as well as for short exposures (SSFP). Explicit tabu-
+lations of the nuclides included in these groups are given in Ref. 31.
+
+For the purposes of this work, we neglected any non-1/v behavior of
+the absorption cross sections over the thermal energy range exhibited by
+the fission product nuclides of Table 3. These are generally small cor-
+rections that tend to be unimportant compared with uncertainties associ~
+ated with transport and removal of fission products in the MSRE fuel sys-
+tem. (Influence of these latter effects is discussed in the next section.)
+Thus, averaged cross sections for the thermal group were obtained by multi-
+plying the 2200-m/sec cross section by the thermal-spectrum average for a
+1/v nuclide that had unit cross section at 2200 m/sec. This latter quan-
+tity was calculated to be 0.435 in the MSRE spectrum. The average epi-
+thermal cross sections were obtained by dividing the nuclide resonance
+integral in Table 3 by the lethargy width for the epithermal range.
+
+As an approximate indicator of the significance of saturation effects
+
+in calculating the fission product concentrations, one may estimate the
+
+ 
+
+%
+Reference 31 is largely based on the more extensive data compilation
+
+in ref. 32, with emphasis given to useful simplifying approximations for
+reactor physics calculations.
+64
+
+Table 3. Cross section and yields of significant
+fission product nuclides
+
+ 
+
+ 
+
+Nuclide Yield 5 (2200) RN eagral Half-life
+(%) a above 0.414 eV
+
+82gr 0.28 45.0 196.0 o
+
+83kr 0.544 205.0 189.2 o
+
+103gn 3.0 149.0 1059.0 o
+
+105gh 0.90 15,000 7261.0 36 h
+
+1097, 0.03 87.0 1447.0 w
+
+131%e 2.93 120.0 811.4 o
+
+133%e 6.59 180.0 92.33 5.27 d
+
+143Na 6.03 324.0 134.0
+
+145Nd 3.98 60.0 314.6 o
+
+4 7p 2.36 235.0 2279.0 2.65 y
+
+152g 0.281 208.0 2242.0 w
+
+15354 0.169 450.0 432.1 16 y
+
+155g, 0.033 14,000 6787.0 1.7 y
+
+NSFP 126.0 1.111 7.354
+
+SSFP 29.8 13.986 76.744
+
+ 
+
+Decay product of 11.1-d 147N4.
+
+cross section required for a 10% reduction in the otherwise linear rise
+in concentration corresponding to zero absorption. For a maximum fuel
+exposure equivalent to 70,000 MWhr at MSRE flux levels (somewhat larger
+than the exposure of the 235U fuel loading), the absorption cross section
+for this reduction would be about 1000 b. Thus, of the nuclides listed
+in Table 3, only 105Rh and 15%Eu would be expected to exhibit significant
+saturation effects. Due to its short half-life and high cross section,
+105Rh would quickly saturate, with an associated reactivity effect of
+about ~0.004% &k/k. Since primary interest was in effects of larger mag-
+nitude, this nuclide could be safely excluded from the fission product
+
+poisoning concentration. Europium~155, on the other hand, did not reach
+65
+
+its saturation concentration, but neutron absorption would have reduced
+the otherwise linearly rising concentration by about 40% by the end of the
+2357 fuel exposure. This gave a total reactivity effect of about —0,014%
+8k/k by the end of the exposure period, which was still quite small.
+Rather than treat this as a special case, we approximated this correction
+by including the nuclide with the remainder of the group of nonsaturating
+
+fission products and reducing its effective fission yield by 25%.
+
+4.3 Neutron Flux Normalization
+
+ 
+
+The numerical evaluation of the average neutron flux level is basic
+to the theoretical calculations of nuclide changes in the reactor. The
+principal determinants of this quantity are (1) the mean energy recovered
+per fission, assumed to be 200 MeV; 33 (2) the volume of salt in circula-
+tion, 70.5 f3; and (3) the inventories of 2357 and 239%wu in the loop at
+operating conditions, The average thermal flux per megawatt for the cir-
+
+culating system is then defined by
+
+A
+$ = . (85)
+th ~ ~
+W, rns + Vg 9 fq) V,
+
+ 
+
+For the mean fission energy given above, the conversion factor 4 is equal
+to 3.12 x 1016 fissions/MWsec. From this calculation, we obtained $42, =
+
+6.4 x 10! neutrons cm™2 -1
+
+sec per megawatt, near the start of power opera-
+tions with 235U. The corresponding value of the power-normalized thermal
+flux averaged only over the graphite was 2.0 x 1012, This flux was used
+
+in the calculation of the 19B burnout effect,
+
+4.4 Flux—Adjoint Flux Integrals and Reactivity Parameters
+
+ 
+
+The direct and adjoint flux distribution and their volume integrals
+over various subregions of the reactor core required for calculation of
+reactivity effects are standard output of the EXTERMINATOR program used
+for the neutronics calculations. In accordance with the discussion in
+Section 3.2, the volume integrals over regions of the core with fixed salt
+fractions, together with the broad~group cross sections for the nuclides,
+
+provide information sufficient to convert all nuclide changes to reactivity
+66
+
+effects. (For several nuclides, the reactivity effects of unit changes
+in concentrations were directly output from the EXTERMINATOR program.)
+
+For the numerical computation of the shape factor, S(I), in the re-
+activity effect of boron burnout [Eq. (70)], we employed an additional
+simplifying approximation. The neutron flux and adjoint distribution in
+the graphite region were represented by a fundamental mode approximation
+with a "chopped" Bessel function variation in the radial direction and a
+"chopped" sinusoidal variation in the axial direction. S(7) was then cal-
+culated by numerical integration with an IBM 7090 program. The largest
+discrepancy between the approximate flux distribution and results of the
+detailed diffusion model calculations occurred in the radial flux vari-
+ation; however, the latter calculations indicated that the flux perturba-
+tion caused by the control rods remained fairly well localized near the
+center of the reactor, and over most of the reactor volume the Bessel func-
+tion approximation would be valid. Thus, this approximation was judged to
+
+be adequate for the calculation of S(T).
+
+4,5 Effective Delayved-Neutron Fractions
+
+ 
+
+In accord with the discussion given in Section 2.4, numerical evalu~
+ation of the delayed-neutron effectiveness is required for the interpre-
+tation of measured reactivity effects. An approximate formula for this
+
+3% of this effective-
+
+calculation was given as Eq. (35). Early estimates
+ness factor, ¥, gave a value of 1.04; this value was used for all initial
+interpretations of MSRE reactivity measurements and for the on-line cal-
+culations with the 235 loading summarized in Section 5. More recently,
+near the termination of power operation with 235y, we reexamined?’ the
+evaluation of ¥ with a more sophisticated calculation (not available at
+the time of the early calculations) of the difference in average age of
+prompt and delayed neutrons. The age to the thermal cutoff energy was ob-
+tained through use of the GAM-II program. For a salt-graphite composition
+equal to that of the channeled region of the core and a temperature of
+1200°F, the age calculated for the prompt fission neutrons was 251.9 cm?.
+The calculated age difference between prompt fission neutrons and delayed
+
+neutrons was 62.3 cm?. Based on a geometric buckling corresponding to a
+67
+
+cylinder 29 x 78 in. (RxH), the value of Y calculated from Eq. (35) was
+1.086. This implies, for example, that the total effective delayed-neutron
+fraction for use in interpreting reactivity measurement with 23°U was 0.71%,
+compared with the absolute delay fraction of 0.65% (Ref. 8, p. 90). Hence,
+it implies that the magnitudes of all measured reactivity effects should be
+larger by a factor of about 1.05 than the values based on earlier calcula-
+tions of y. In the results reported in Ref. 11, this would have the effect
+of increasing the difference between the experimental and calculated worths
+of the MSRE control rods but would tend to bring the measured temperature
+and 2357 concentration coefficients of reactivity into better agreement
+with calculated values.
+
+We did not attempt to revise the numerical values from the on-line
+calculations to account for this change but did include its effect in re-
+cent reevaluations of the long-term reactivity trends during the 235y op-
+
+erations (see the discussion in Chap. 5).
+68
+5. EXPERIENCE WITH THE REACTIVITY BALANCE
+5.1 Brief History of Nuclear Operations with 235y
+
+A summary of significant dates in the chronology of nuclear operations
+with 2350 is given here to provide perspective for those readers least fa-
+miliar with the details of MSRE operation. The dates and events are listed
+in Table 4. In connection with the interpretation of long-term trends in
+reactivity associated with power operation, it should be noted that the
+first sustained power operation really began with the 30-day run starting
+on December 14, 1966 (run 10). A full account of the chronology of the
+
+MSRE test program and operation is given in Ref. 36.
+
+5.2 Results of On-Line Reactivity Balance Calculations
+
+ 
+
+The on-line calculations during MSRE operation were made with a Bunker-
+Ramo 340 digital computer connected directly with sensors in the MSRE sys-
+tem. This was used for routine scanning of various input signals and for
+comparisons with alarm limits, data storage operations, and several routine
+data-reduction operations, such as the heat balance and reactivity balance
+calculations. The characteristics and functions of and experience with the
+
+logger—computer may be found in Ref. 37.
+
+Table 4. Significant dates and events in nuclear
+operation of the MSRE with 2357
+
+ 
+
+ 
+
+Event Date
+First criticality June 1, 1965
+End of zero-power experiment program July 3, 1965
+First operation in megawatt tange Jan. 24, 1966
+Reached full power May 23, 1966
+Completed 30-day run Jan. 14, 1967
+Completed 3-month run Apr. 28, 1967
+Completed 6-month run Mar. 20, 1968
+
+End of nuclear operation with 235g Mar. 26, 1968
+
+ 
+69
+
+The reactivity balance calculations were performed from the start of
+reactor operation at significant power. During the very early stages of
+the operation, many of the calculations were done manually while the com-
+puter program was being checked out. Such calculations were quite feasi-
+ble at that time because the terms which depended on integrated power were
+negligibly small. Subsequently, the on~line computer was used to execute
+modified reactivity balances to provide data for evaluating the xenon-
+poisoning term. Once the testing phase described below was complete, the
+complete reactivity balance was calculated routinely by the computer every
+5 min, and these results were used without further modifications during
+normal operation. It was found convenient, however, to manually calculate
+the dilution effects that occurred when the fuel loop was drained. Since
+shutdown operations generally involved a variety of fuel- and flush-salt
+transfers, each shutdown needed to be treated as a special case.
+
+The largest of the dilution effects occurred when the reactor was
+drained in July 1965, During the zero-power nuclear experiments in the
+period preceding this drain, capsules of enriched fuel had been added to
+the loop with the sampler-enricher, and by the end of the zero-power ex-
+periments the 235] concentration in the primary loop was about 10% greater
+than that in the salt heel remaining in the drain tanks. Thus monitoring
+of the reactivity changes in the core actually began with this dilution
+
+in uranium concentration following the July drain.
+
+Low-power calculations
+
+The first operation of the MSRE after the zero-power experiments and
+hence the first opportunity to apply the reactivity balance calculation
+occurred in December 1965 and January—February 1966, during a series of
+low-power experiments. (The intervening period, July December 1965, was
+spent in completing those parts of the system that were required for power
+operation.) The reactor was operated at powers up to 1 MW, and a total of
+36.5 MWhr of fission energy was produced.
+
+Since the computer program for the on-line calculation was not ready
+for service during the low-power tests, manual calculations were performed.
+
+However, the analytic expression for control rod poisoning and the various
+70
+
+reactivity coefficients that were being incorporated in the computer pro-~
+gram were applied. Since very little integrated power was produced, the
+xenon, samarium, burnup, and other fission product terms were neglected.
+
+The residual reactivity calculated under these low-power conditious
+was very small (+0.01 + 0.01% 8k/k) and could easily be attributed to un-
+certainties in the physical inventory of the system. Hence the reactivity
+balance appeared to be in close accord with the system conditions just be—
+fore the start of power operation,
+
+In addition to verifying the zero-power reactivity balance, the cal-
+culations at 1 MW indicated that the power coefficient of reactivity was
+less negative than had been calculated and that the xenon poisoning would
+be less than expected (see also the discussion in Sect. 3.2). As a result
+of these and later findings, experiments were performed to evaluate these
+
+two terms.
+
+Intermediate calculations
+
+ 
+
+Operation of the reactor at powers and for times that produced -signifi-
+cant fission product terms began in April 1966. This operation soon showed
+that the xenon term was inadequately treated and that part of the calcula-
+tion was temporarily deleted from subsequent computations. The calculation
+results from the other terms in the reactivity balance were then used to
+
+aid in the development of an adequate representation of the xenon poisoning.
+
+In order to use the reactivity balance to evaluate xenon poisoning,
+it was necessary to assume that there were no other unaccounted-for reac-
+tivity effects, This assumption was valid for the relatively short times
+involved in the xenon transients. Since most of the data for the xenon
+calculation were developed from the reactivity transients after the reac-
+tor power was raised or lowered, small errors due to long-term reactivity
+effects were of little consequence.
+
+Figure 17 shows the results of reactivity-balance calculations with-
+out xenon for all power operation of the reactor between April and July
+1966. The reactor power is shown with each reactivity plot for reference
+purposes. The reactivity transients associated with the buildup and re-
+moval of xenon due to changes in power are clearly displayed. The appar-
+
+ent steady-state xenon poisoning at maximum power was 0.25 to 0.30% Sk/k.
+71
+
+ 
+
+ 
+
+ 
+
+ORNL-DWG £6-9C82
+
+   
+
+Fh
+
+So Aklk
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+he Nk/K
+
+oF
+
+wt i
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Lived .
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+315
+JULY, 1966
+
+Fig. 17. Results of modified reactivity balances in MSRE runs 6 and 7.
+
+The large negative-reactivity transient on June 18-19 was caused by
+the development of circulating gas in the fuel loop and its effect on the
+xenon poisoning. Operating experience had shown that if the fuel-salt
+level in the pump tank were allowed to decrease below a given value, the
+amount of gas in circulation would increase; hence the observed reactivity
+decrease was at first attributed to a decrease in the average fuel density.
+However, the level changes in the pump bowl and overflow tank did not indi-
+cate a void fraction of sufficient magnitude (v1.5 vol %) to account for
+
+the reactivity change. The resolution of this apparent paradox was not
+72
+
+obtained until later experiments during operation with 2331, These ex-
+periments demonstrated that with helium cover gas and a very low circu-
+lating void fraction, a small increase in the void fraction would produce
+
+18,38 This was in contrast
+
+a significant increase in the xenon poisoning.
+to the behavior predicted by the model described in Section 3.2, Thus the
+major part of the reactivity transient on June 18-19 was actually due to
+variations in the xenon poisoning. The reactivity recovered rapidly when
+the normal pump-tank level was restored and the excess helium gas and
+xenon were stripped out. Although the mechanism for the change was incor-
+rectly identified at the time, the response of the reactivity balance in
+this event illustrates the sensitivity of this method for detecting minor
+anomalies under otherwise normal circumstances.
+
+The reactivity balances calculated for the period shown in Fig. 17
+had not been corrected for all long-term nuclide change effects or for
+flush~salt dilution. This is illustrated by the apparent increase in the
+residual reactivity at zero power when there was no xenon present. (Note
+especially the results on April 11, May 9, June 13, and July 1 and 21-23.)
+Corrections for these factors were subsequently applied to the zero-power
+
+balances to evaluate the long-term effects in the reactivity balance,
+
+Complete calculations
+
+ 
+
+The complete reactivity balance calculation, including all known ef-
+fects, was first applied to the period of reactor operation which began in
+October 1966. Figure 18 shows the power history and residual reactivity
+results on a day-to-day basis for the next three runs (the reactivity scale
+in Fig. 18 is expanded from that of Fig. 17). During steady-state opera-
+tion the results show only minor variations in the residual reactivity.
+However, in October and November there was still some indication of dis-
+agreement between the calculated and actual xenon poisoning, both in the
+absolute magnitude of the term and in the transient behavior. Similar re-
+sults were observed during the December 1966—January 1967 operations.
+During this period, we attempted to improve our description of the transi-
+ent xenon behavior, as was described in Section 3.2.
+
+The larger "spikes" in residual reactivity can all be accounted for
+
+by abnormal reactor conditions, which were not explicitly treated in the
+ORNL—-DWG 56—14{944R
+
++01
+
+ 
+
++0. T :
+| ] | ei | REACTWITY | - I
+Foi | : : !
+
++0.05 rar or sai ER, a 4 | : ; } +—1 +0.05
+: Thee 2 : Cad Fen, Ix : ; | i :
+oi 5 i SI AER. AIRY bo L. 5
+: : %,
+
+< ; + w ; #3 ;
+
+> ee CY ef
+wo : . : | 3
+2 : +
+
+ 
+
+ 
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+-0.05
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+REACTIVITY
+
+EY
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+l
+-045 L ; | : ; | | : | C015
+
+ 
+
+POWER |
+
+POWER
+
+Mw
+
+  
+
+g {0 12 14 16 18 20 22 24 26 28 30 7 9 LE 13 15 17 19
+OCTOBER, 1986 NOVEMBER, 1966
+
++040
+
++0.05 REACTIVITY
+
+<-0.05
+>
+
+“©
+32 —0.10
+
+-045 .
+i COMPUTER OUT
+-0.20 ; OF SERVICE
+
+ 
+
+-0.2%
+
+HO ow
+
+POWER
+
+Mw
+~
+
+ 
+
+14 18 48 20 22 24 26 28 30 by 3 5 7 9 LH 13 15
+DECEMBER, 1965 i JANUARY, 1967
+
+Fig. 18. Results of complete reactivity balance in MSRE runs 8 and 10.
+
+£/
+74
+
+reactivity balance model. For example, the spikes on October 10 are as-
+sociated with special experiments during which gas bubbles were circulating
+with the salt. Fuel-salt circulation was interrupted for 2 1/2 hr om Oc~
+tober 16, and no xenon stripping occurred. When circulation and power
+operation were resumed, the actual xenon poison level was higher than that
+calculated in the reactivity balance, which assumed continuing circulation
+and stripping while the power was low. On October 23, the salt level in
+the pump tank was at an abnormally high level for a brief period. The
+xenon stripping was much less effective in this condition (because the
+pump-bowl spray ring was partially submerged), and the xenon poison level
+rapidly built up to a higher value. When a more normal salt level was re-
+
+stored, the xenon poisoning returned to the normal value.
+
+The perturbations in residual reactivity during the November operation
+resulted from failure of the calculation to adequately describe the xenon
+transients. During this run it was necessary to reduce the power on sev-
+eral occasions because of conditions imposed by the reactor off-gas sys-
+tem. In each case the observed xenon behavior was about the same, indi-
+cating a longer time constant for xenon stripping than was calculated in
+the model. This disparity in the time constants produced the cyclic be-
+havior that was observed.
+
+Considerable difficulty was encountered in the operation of the on-
+line computer during the last period of operation shown in Fig. 18. As
+a result, substantial gaps were produced in the complete reactivity balance
+results, However, the available results were in good agreement with ex~
+pected behavior. Again, the spikes on December 23 and 24 and January 12
+reflect abnormal reactor operations, which resulted in substantial circu-
+lating voids. The smaller variations appeared to reflect slight changes
+in circulating void fraction or net xenon-stripping efficiency associated
+with variations occurring in the fuel-system overpressure.
+
+The extended periods of full-power operation during runs 11 and 12
+provided more stringent tests of the reactivity balance model. Runs 11
+and 12 increased the integrated power by 16,200 and 7650 MWhr, respective—
+ly, to a total logged output of 40,307 MWhr. In addition to the usual
+calculations of power~ and time-dependent factors, calculations were re-
+
+quired in each of these runs to compensate for 2357 additions made with
+75
+
+the reactor at full power. The calculated reactivity behavior was highly
+satisfactory, and no anomalous reactor behavior (producing an unexplained
+variation in residual reactivity) was indicated at any time. However, dur-
+ing these runs we detected some modifications required in the method of
+calculation to eliminate some errors that developed, as explained below.
+Figures 19 and 20 summarize the results of the on-line calculations
+during these runs. These results are reproduced exactly as they were gen~
+erated from the computer calculations. The density of the plotted data
+points has been reduced from the preceding figures (about 2% of the data
+points recorded are shown); however, each plotted point is the result of
+
+an individual calculation, and scatter of the plotted points is still an
+
+ORNL-IWG 67-4041R3
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+—- i |
+28 30 I 1 3 5 ’ 9 i“ 13 15 17 19 21 23 25 27
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+JANUARY, $967 FEBRUARY, 1967 * COMPUTER OUT OF SERVICE
+CORRECTED KTEMP, KSAM MODIFIED KXE |
+YT |» | B Lo Tene
+< \ Satranit upon 1 &
+Pl fro mse | ee
+2 “se® | i
+REACTIVITY
+SU SRE DR ER
+JI .
+TTT
+2 POWER —f-- |
+i
+Sd me =e eed
+Ld a]
+15 7 19 21 23 2 27 29 31
+MARCH, 1967
+= aE TT i ais y . ee, nN orks os, Wh aan
+= I I CL LAF |
+2 I rescTivimy FLEL ADDITIONS ?
+JR SR 1 __ — — een i _ le :
+TTT
+
+ 
+
+1 3 5 7 9 hil 13 15 17 19 24 23 25 27 29 1 3 5 7 9
+
+APRIL, 1987 MAY, 1967
+
+Fig. 19. Residual reactivity during MSRE run 11.
+ORNL-DWG 67-~3191R
+
+045 SS US —
+0D REACTIVITY
+C.C5 Fossa, AT ; gists 4 St oh siete ua eto nan rae, iseteateng nian Serene’
+. o %
+.
+
+%8k/k
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+-0.05
+—0.10 «en -— -
+8r oo :
+6 /
+x
+= 4 |
+>.
+OL... . I. Ce
+19 21 23 25 er 29 1 3 5 7 9 n" 13 15
+JUNE, 1967 JULY, 1967
+045 ~ — J
+REACTIVITY
+tite eae ..SHIFT IN COMPUTER
+. rete tran, ’ READINGS
+Ng ~ . . 2 tent . on,
+vy
+3 CHANGE CONTROL-ROD Jase
+< v CL mt
+
+ 
+ 
+
+CONFIGURATION ~
+
+ 
+
+f—FUEL ADDITIONS none i
+
+ 
+
+Mw
+
+ 
+
+‘6 18 20 22 24 26 28 30 1 3 5 7 9
+JULY, 1967 AUG, 1967
+
+Fig. 20. Residual reactivity during MSRE run 12.
+
+indication of the precision of the calculations at constant reactor opera-
+ting conditions. The points at which changes were made to correct errors
+referred to above are indicated by notes.
+
+Except for one negative variation caused by increased entrainment of
+circulating gas bubbles immediately after a shutdown in run 11 (Fig. 19),
+all the calculated values of residual reactivity were between —0.03 and
++0.10% &k/k. An apparent gradual decline in residual reactivity occurred
+during the first several weeks of run ll. Detailed analysis of the indi-
+vidual terms revealed two sources of error. One was a gradual downward
+drift in the temperature indicated by two of the four thermocouples used
+to calculate the average reactor outlet temperature. These two thermo-
+couples were eliminated and replaced by one that had not drifted. The
+second error was caused by loss of significance in the calculation of the
+149g concentration. In the program, as described in Chapter 3, only the
+change in samarium concéntration was computed, and that change was added
+
+to the last value to obtain the current value. As the 1495nm concentration
+77
+
+approached 857 of its equilibrium value, the incremental concentration
+change computed for the 5-min time step between routine reactivity balances
+was outside the five-decimal-digit precision of the computer. As a result,
+these increments were lost when the concentration was updated, To avoid
+using double~precision arithmetic, the program was modified to update only
+the !%98m and the 15!Sm concentrations every 4 hr while the reactor was at
+steady power. Summary calculations made off~line were used to verify the
+adequacy of this change.
+
+When these corrections were introduced on March 17, the apparent down-
+ward drift in reactivity disappeared. At the same time, minor changes were
+made in some of the 135Xe stripping parameters to make the calculated
+steady-state xenon poisoning agree more closely with the observed value,
+
+Other small reactivity variations were observed in run 11; for exam-
+ple, from March 29 to April 9. These changes were directly correlated to
+changes in the helium overpressure on the fuel loop; a pressure increase
+of 1 psi led to a reversible reactivity decrease of slightly less than
+0.01% 8k/k. The mechanism through which pressure and reactivity were cou-
+
+pled was not yet established, however. The direct reactivity effect of
+
+the change in circulating voids caused by a change in absolute pressure
+was at least a factor of 10 smaller than the observed effect of pressure
+on reactivity. The time constant of the pressure-reactivity effect was
+relatively long, suggesting a possible connection with the xenon poisoning.
+Fuel additions were made for the first time in run 11 with the reac-
+tor at full power. Nine capsules containing a total of 761 g of 2357 were
+added between April 18 and 21. The reactivity balance results during this
+time showed close agreement between the calculated and observed effects of
+the additions. Also, the transient effects of the actual fuel additions
+were very mild. Figure 21 shows an on-line plot of the position of the
+regulating control rod made during a typical fuel addition with the reactor
+on servo control. Control rod movement to compensate for the additional
+uranium in the core started about 30 sec after the fuel capsule reached the
+pump bowl, and the entire transient was complete about 2 min later. This
+indicated rapid melting of the enriching salt and quick, even dispersion
+in the circulating fuel. The weights of the emptied fuel capsules indi-
+cated that essentially all their contained 235U was transferred to the fuel
+
+loop.
+78
+
+ORNL-DWG 67-10132
+
+39 —-o ———— —— —_—
+
+38
+
+ 
+
+36
+
+REGULATING ROD POSITION
+(inches withdrawn)
+Gi
+~
+
+ 
+
+0 1 2 3 4 5 6
+TIME (min)
+0=1150 hr APRIL 20,1967
+
+Fig. 21. Regulating control rod position during fuel addition.
+
+The reactivity balance results in run 12 (Fig. 20) were essentially
+the same as those in the preceding run. Minor variations associated with
+pressure and power changes were again observed.
+
+Another series of fuel additions at full power was made in run 12 be-
+tween July 19 and 26. This series consisted of 18 capsules containing
+1527 g of 235y, The purpose of this large addition was to provide suffi-
+cient excess uranium so that a large amount of integrated power could be
+produced without intermediate fuel additions. An experimental evaluation
+of the uranium isotopic-change effects associated with power operation was
+planned, and substantial burnup was required to make the analyses of iso~
+topic composition useful. A secondary result of this large fuel addition
+(~v0.5% S8k/k) was a drastic change in the control rod configuration. At the
+end of the additions the separation between the tips of the shim rods and
+that of the regulating rod was 15.5 in., whereas the normal separation had
+been 4 to 8 in. The variation in apparent residual reactivity as a func-
+tion of control rod configuration was reexamined, and an apparent decrease
+of 0.02% 8k/k was observed when the more usual configuration was estab-
+lished. This was also consistent with an earlier evaluation of the ac-
+curacy of the analytic expression used in the computer to calculate con-
+trol rod poisoning as a function of rod configuration. (See discussion of
+the control rod worth evaluation in Sect. 3.2.)
+
+On August 3 a computer failure occurred which required recalibration
+
+of the analog-signal amplifiers after service was restored. As a result
+79
+
+of this recalibration, there were small shifts in the values of several of
+the variables used in the reactivity balance. Errors in reactor-outlet
+temperature and regulating-rod position caused a downward shift of 0.037%
+Sk/k in the residual reactivity.
+
+Following the end of run 12, routine checks of absolute rod positions
+using the fiducial zero indicators in the rod thimbles revealed an apparent
+upward shift of about 0.5 in. in rod 1 (the regulating rod). This shift
+represented a reactivity effect of +0.02% 8k/k. The evidence indicated
+that this shift in position was caused by slippage of the rod drive chain
+on one of the sprockets after a rod scram. The exact time the shift oc-
+curred is not known, although it probably would have been detected by an
+upward shift in the residual reactivity had it occurred during a run, most
+likely at the beginning or end of run 12, when there were routine rod
+scrams. Corrections were made for this shift in position by the start of
+the next run.
+
+Run 13 had barely begun when an oil leak developed in one of the com-
+ponent cooling pumps. Rather than start the planned long run without a
+standby pump, the reactor was shut down and the pump repaired. A new run
+(No. 14) was started on September 20, 1967, and the reactor was not drained
+again until March 26, 1968.
+
+Figure 22 summarizes the reactivity balance data taken during runs 13
+and 14. Prior to run 14, the reactor had operated outside a relatively
+narrow range of operating conditions for only brief periods of time. The
+normal conditions were 1210°F at the reactor outlet, 5 psig helium over-
+pressure at the fuel pump, and a narrow range of fuel salt levels in the
+pump bowl. Previous deviations from these conditions had shown that at
+least temperature and pressure affected the value of the residual reac~-
+tivity. However, the effects had not been clearly defined.
+
+During run l4, systematic tests were undertaken to evaluate the ef-
+fects of fuel system temperature and overpressure and fuel-pump-bowl level
+on residual reactivity. In these tests the reactor outlet temperature was
+varied between 1180 and 1225°F and the overpressure between 3 and 9 psig.
+Since the fuel-pump level was restricted by the pump hydraulic performance,
+only the normal range of variation was allowed. These tests were performed
+at a reactor power of 5 MW to provide the required latitude for the tem-
+
+perature changes.
+(% 8k/k)
+
+ 
+
+0.20 T - T
+HIGH PRESSURE —
+| | AND LOW LEVEL
+Lp
+
+0.10 TT
+
+* *
+Hm
+
+Se || REACTIVITY
+VUE PUMP LEV
+FUEL PUMP LEVEL “.
+—
+
+ 
+
+ 
+
+TOW |
+
+- FEVPERATURE.
+
+/AND_LOW
+LEVEL
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+—%
+
+> y rr
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Oye, o*%
+see PON, Sepa lsent, Ff rT
+*$
+Esl
+.
+
+Li)
+
+ 
+
+eo gttey iat
+
+(% Sk/k)
+
+ 
+
+o *..,
+
+’ omer oatetetel ot of
+! ns a “esi ~;
+INCREASE DUE TC SALT “auto
+RECOVERY FROM OVERFLOW
+TANK
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+—!
+
+ 
+
+POWER
+
+      
+     
+
+ 
+
+ 
+
+     
+
+18 21 23 25
+
+SEPTEMBER 1967
+
+27 29 1
+
+5 7 9
+
+OCTOBER 1867
+
+tH 13
+
+3
+
+s9%00te
+
+0.05
+3-005 wef Ee
+-0.10 REACTIVITY
+-0.45
+-0.20
+
+(% 3
+
+ 
+
+(% 8k/K)
+
+POWER
+
+(MW)
+oN BO
+
+       
+
+    
+ 
+
+   
+
+    
+
+   
+
+31 3 8 7 9 11 13
+
+NOVEMBER 1267
+
+21 23 28 27 29
+
+OCTOBER 1967
+
+17 ie
+0.05
+
+‘a
+
+REACTIVITY
+
+-005
+-04
+
+-0.15
+-0.20
+
+8k /k)
+
+(%
+
+ 
+
+(MW)
+on Do
+
+    
+
+ 
+ 
+ 
+
+  
+ 
+
+13
+
+30) 1 3 5 7 9
+DECEMBER 1967
+
+20 22 24 26 28
+
+NOVEMBER 1967
+
+0.25
+
+0.20
+0.15
+0.10
+C05
+
+-0.05
+-0.10
+-0.15
+-0.20
+-0.25
+
+(MW)
+oN bo
+
+LOW HIGH
+TEMPERATURE TEMPERATURE
+(1180°F) (1225°F)
+
+x
+
+is 18 20 22 24 26 28 30
+
+DECEMBER 1867
+
+TEMPERATURE
+(1225°F)
+LOW TEMPERATURE —
+
+(1195°F)
+
+ 
+
+Fhe
+
+RESSURE CONTROLLER
+DISTURBANCE —,
+
+.
+oor apt" OTese
+
+REACTIVITY | .
+
+HIGH PRESSURE
+(2 psig)
+
+13 15 17 19 21 23 25 27 29 3H
+JANUARY 1968
+Fig. 22. Residual reactivity during MSRE runs
+
+LOW TEMPERATURE
+(1180°F)
+
+LOW
+TEMPERATURE]
+(1180°F)
+
+7x
+
+otesSys
+oe .
+
+°¢
+»
+
+!
+
+HIGH PRESSURE
+{© psig)
+
+ 
+
+5 7 9
+
+JANUARY 1968
+
+14
+
+ 
+
+LOW PRESSU
+(2.75 psig)
+
+    
+
+  
+
+3 5 7 9 14
+
+FEBRUARY 1968
+
+13 and 14.
+
+% Bk/K)
+
+80
+
+ORNL-DWG 71-9808
+0.18
+
+0.10
+0.05
+
+TEMPERATURE
+
+A TEMPERATURE
+1225°F
+
+1180°F
+i - Ly
+-0.05 «
+-0.10 ww * Sn
+EACTIVITY
+
+~
+
+-0.15
+
+020 LOW PRESSURE
+
+(2.75 psig)
+
+(MW)
+ON Dh oo ©
+
+ 
+
+18 20 22
+FEBRUARY 12968
+
+24 26 28 ! 5 7
+
+MARCH 1968
+
+9 1H
+
+0.05
+x -005
+-0.10
+-0.45
+-0.20
+-0.25
+
+EACTIVIT
+
+(% Bk/k
+
+(MW)
+oN AO
+
+POWER
+
+ 
+
+13 15 17 19 21 23
+
+MARCH 1968
+
+25 27 29
+81
+
+Although a major part of run 14 was devoted to exploration of the ef-
+fect of the system operating parameters on residual reactivity, the run
+was started with the normal operating conditions. This operation indi-
+cated that the zenon reactivity behavior, which had been closely duplicated
+by the calculation for both transient and steady-state conditions during
+run 12, was now different. It was apparent that the steady-state xenon
+poisoning was now larger even though there were no observable differences
+in the vest of the system. Also the residual reactivity decreased as salt
+transferred from the pump bowl to the overflow tank” and then recovered
+after the salt was returned to the pump bowl, producing a slight cyclic
+behavior in the residual reactivity history (Fig. 22), This cyclic be~
+havior under normal operating conditions was observed on several occasions
+during this run (September 23 to October 3, October 27 to November 13,
+November 26 to December 15, and February 18 to February 26). It was also
+superimposed on effects associated with systematic changes in temperature
+and pressure conditions (see Fig. 22). As was described above in connec-
+tion with observations during run 7 (June 1966), the evidence now indicates
+that this behavior was due to increases in the xenon poisoning associated
+with decreases in the salt level in the fuel-pump bowl. As the salt level
+was lowered, the amount of undissolved helium in circulation increased; in
+turn, this led to slight changes in the distribution and the effectiveness
+of removal of the xenon, thereby increasing its poisoning effect. The
+early observation of this cyclic behavior provided further impetus for
+additional experimental investigations in this area, which were carried
+out during operations with 2337 in the fuel salt.
+
+Correlated with the systematic variations in temperature and pressure,
+small but significant variations in residual reactivity were observed. The
+notes in Fig. 22 indicate the operating parameter changes associated with
+the more prominent reactivity variations.
+
+Between the intervals of scheduled off-normal operating conditions
+indicated in the figure, normal temperature-pressure conditions were re-
+established (1210°F, 5 psig). From the directions of these reactivity vari-
+
+ations, their magnitudes, and the approximate time constants in seeking new
+
+ 
+
+See ref. 19 for a detailed discussion of salt transfer to the over-
+flow tank and related phenomena.
+82
+
+levels, these systematic variations also appeared to be associated with
+changes in 13°Xe poisoning. The maximum "shift" in residual reactivity
+level observed during any extended time period was 0.15 to 0.20% dk/k, and
+the rates of variation were approximately reproducible (e.g., the tempera-
+ture reductions on December 19, 1967, and March 2, 1968, caused the reac-
+tivity to decrease by 0.0020 to 0.00257 &k/k per hour). Since the proces~-
+ses of ingesting the undissolved gas and that of gas stripping occurring
+in the fuel-pump bowl as well as the behavior of the gas in circulation
+could be expected to be sensitive to temperature and pressure, the secon-
+dary changes induced in xenon distribution and gas-stripping effectiveness
+again appeared to be producing the poisoning variations. The calculation
+model For 135Xe poisoning in the reactivity balance would not have accounted
+for such effects because the model was based on assumptions of a fixed
+circulating void fraction and bubble-stripping efficiency (Sect. 3.2).
+
+Although the data in Fig. 22 reflect only the differences between the
+nominally calculated poisoning and its actual values, the total apparent
+135%e reactivity could be easily derived from these special tests by sub-
+tracting the calculated 135%e effect from the reactivity balance and cor-
+recting for known variations in the residual reactivity such as long-term
+drift effects (samarium changes, burnup-related effects, etc.) and fuel
+density-related reactivity effects caused by differences in circulating
+void fraction. The remaining changes were assigned to 135%e poisoning.
+
+In general, these tests showed that reducing the fuel temperature and
+increasing the system overpressure increased the xenon poisoning. (Further
+evidence of the pressure effect is indicated in Fig. 22 when, on January 15,
+1968, temporary loss in pressure occurred following a pressure controller
+disturbance; this was regained about noon on January 16, and the higher
+pressure was reestablished.) At the highest temperatures, the pressure
+effect virtually disappeared. Conversely, the temperature effect was
+smaller at the lower pressures. The effect of fuel-pump level was much
+less pronounced than the temperature and pressure effects, but decreasing
+level always led to higher xenon poisoning for the range of levels investi-
+gated. At some of the special temperature-pressure conditions, the re-
+sponse (increase) of the residual reactivity to salt recovery from the
+
+overflow tank appeared exaggerated relative to normal operating conditions;
+83
+
+however, from about January 30 to February 7, 1968, when the lowest tem~
+perature and maximum overpressure were maintained, the residual reactivity
+appeared quite stable. The available evidence now indicates that the 135%e
+poisoning was at or near its maximum value for this particular set of op-
+erating conditions. All the tests conducted during run 14 were a prelude
+to more extensive studies made during operation with 233y, aimed at better
+understanding of the effects of reactor operating conditions on cover-gas
+entrainment and xenon transport and removal. Results of these studies will
+be reported elsewhere,l®
+
+A significant variation in the amount of undissolved gas in circula-
+tion with the fuel salt was also observed during these tests, These changes
+were inferred from reactivity effects at zero power, with no 135%e in the
+system, by making use of the density coefficient of reactivity of the fuel
+salt. Additional qualitative support for variations in void fraction was
+obtained during power operation from spectral measurements of the inherent
+
+neutron flux noise3®
+
+and also from temperature observations at the reactor
+access nozzle. The reactivity balance gave a loss of 0.032% 8k/k between
+the condition with the least circulating voids (1225°F and 3 psig over-
+pressure) and that with the most (1180°F and 9 psig), thereby implying a
+change of 0.15 to 0.2 vol % in the void fraction between these two con-~
+ditions.
+
+It now appears that the fuel pump and spray-removal apparatus were
+normally operating near a threshold where changes in the amount of cover
+gas being ingested into circulation could be readily induced by small
+
+19 The total changes in circulating gas
+
+changes in operating conditions.
+volume were quite small; in density-related effects alone, it could only
+account for reactivity changes less than 0.4% 8k/k. The rest appears as-
+sociated with 135%e poisoning, in influencing its distribution between lig-
+uid salt, bubbles, and graphite pores, and its efficiency of removal.
+
+The shutdown at the end of run 14, in March 1968, ended nuclear oper-
+ation with the 235U loading. The experience that had been accumulated with
+the reactivity balance calculations led to the following conclusions:
+
+1, Tn the normal ranges of reactor operating parameters, the mag-
+
+nitude of residual (unaccounted for) reactivity always remained less than
+
+0.1% 8k/k; its rate of variation over the sampling intervals was small and
+84
+
+essentially random (*+0.01% 8k/k), giving no indication of instabiliiy of
+the fuel composition.
+
+2. The largest "abnormal" variations observed in the residual reac-
+tivity were less than 0.2% 8k/k and appeared to be associated with changes
+in xenon poisoning and the entrained circulating gas in the core at sched-
+uled off-normal system operating conditions. Although not aecounted for
+by the on~line calculations, these variations were in accord with the qual-
+itative behavior expected under these conditions and hence were not re-
+garded as evidence of malfunctions. At no time did the magnitude of re-
+sidual reactivity approach the administrative limit established at the
+start of operations (0.5% 8k/k, the approximate value of the delayed-
+neutron fraction with the fuel circulating).
+
+3. The apparent stability of other conditions in the core, which
+could potentially affect the reactivity, allowed the reactivity balance
+to be used as an effective diagnostic tool for studying the behavior of
+
+135%e and effects of cover—gas entrainment in the fuel salt,
+
+5.3 Long-Term Reactivity Trends
+
+ 
+
+Although the records obtained from the on-line calculations adequate-
+ly depict the short-term trends in residual reactivity (time scale ranging
+from the sampling interval, 5 min, to several days), some further consid-
+
+erations are necessary in interpreting the long-term reactivity trends
+
+(associated with the entire period of operation with 2351). Primarily,
+this is a consequence of the fact that evaluations of long-term effects
+
+in the on-line calculations were based on nuclear data and salt composi~
+tion information in use early in the reactor operating history; also, a
+thorough analysis of the internal consistency of the various component re-
+activity evaluations (Sect. 2 of this report) had suggested certain changes,
+described and explained below, in several of the coefficients governing the
+conversion of concentration changes to associated reactivity effects.
+
+These refinements and revisions in data and calculation rules motivated a
+reexamination of the long~term reactivity trends during 2335y operations,
+after these operations had been terminated. In order to best exhibit the
+long-term trends, we have considered only the reactivity balance data taken
+
+at. very low power, where any uncertainties associated with the calculation
+85
+
+of 135%e poisoning or temperature distribution effects have minimum influ-
+ence on the analysis.
+
+The particular modifications in the reactivity balance calculations,
+suggested by information and evidence accumulated since the calculation
+model was first developed, are summarized as follows:
+
+1. Revisions in nuclear cross-section data combined with self-
+consistent calculations of the average reaction rates over all fuel salt
+exposed to the neutron flux predicted an increase of about 1% in the burn-
+up rate of 235y per megawatt-hour of fission energy and an increase of
+about 20% in the net rate of depletion of 238 (with a corresponding in-
+crease in the 23%Pu production rate); a decrease of nearly 11% in the
+average capture~to-fission ratio for 23%y with respect to the earlier
+calculations was also predicted.
+
+2. All terms in the reactivity balance with magnitude based on ear-
+lier evaluations of the zero-power rod calibration experiments!! should be
+multiplied by a factor of 1.06. This accounts for both an increase in the
+calculated delayed-neutron effectiveness and also a small change in the
+absolute delay fraction for %3°U to be consistent.with currently accepted
+
+evaluations. ®
+
+The net correction was applied to the rod poisoning, the
+excess uranium reactivity (relative to minimum critical loading), and the
+
+temperature level reactivity (relative to 1200°F),
+
+3. A second correction needed to be applied to the 235U concentra-
+tion coefficient of reactivity, by multiplying this coefficient by 1.072.
+This correction made the treatment of the excess uranium reactivity and
+the rod~poisoning term self-consistent in the reactivity balance calcula-
+tions,
+
+The sources of the cross-section revisions listed under modification 1
+were fully described in Ref, 30, The component associated with basic data
+and associated neutron spectrum reevaluations was shown by the comparison
+of columns 2 and 3 in Table 1, Chapter 4, of this report; the remainder of
+the changes are a result of refinements in the methods of calculating the
+reactor—-average reaction cross sections. The net revisions affected the
+reactivity balance mainly in the calculation of nuclide inventory changes,
+with the exception of the revision in the capture~to~fission ratio data for
+23%wu. The latter primarily affected the conversion of inventory changes
+
+to the corresponding reactivity addition,
+
+ 
+86
+
+The source of modification 2 was a recent reevaluation of the "delayed-
+neutron effectiveness factor," described in Section 4.5. As discussed
+there, the net result of this examination was a renormalization of all
+measured reactivity coefficients in the reactivity balance model.
+
+Modification 3 has its origin in the dependence of the excess 2357
+reactivity (and also the control rod worth) on the total 2357 concentration.
+The needed revision was the result of using, for the earlier calculations,
+an average concentration coefficient of reactivity appropriate to the maxi-
+mum range of variation in the 235g loading rather than the more accurate
+relation expressed by Eq. (37). This correction was independent of the
+additional correction for delayed-neutron effectiveness described above.
+
+The results of including all changes described in the categories
+above in the interpretation of the reactivity balance data are shown in
+Fig. 23. This evaluation was based on an assumed full-power level of
+7.25 wi. In the figure, we have attempted to distinguish the data points
+based on measurements taken during separate power runs. Transfer and mix-
+ing effects during draia and flush operations between runs introduced vari-
+ations in composition of the salt which generally had larger uncertainties
+associated with them than did the changes produced during the runs. It is
+also likely that the approximate treatment of these effects produced some
+of the small positive shift in the residual reactivity observed during the
+early power runs (MSRE runs 4 through 6).
+
+The data in Fig. 23 indicate that a slight downward trend in residual
+reactivity occurred during the first part of operations with 2357, followed
+by an increase during run 14, The statistical spread in the data points
+
+logged over the entire period precludes assignment of a precise shape to
+
+ 
+
+*
+A recent critical review was made of all experimental evidence based
+
+on nuclide changes, both from operations with 2357 and ?33U in the fuel
+salt, regarding evaluation of the integrated power in the MSRE.*0 The
+review recommended that the recoverable fission energy with 2357 fuel
+should have been 203.2 + 0,5, about 1.77% higher than the value originally
+used for calculations, With this fission energy, the nominal full power
+indicated by nuclide change measurements was 7.34 + 0.09 MW. This was
+sufficiently close to the 7.25-MW value that the uncertainty in power
+level was comparable with other uncertainties in the model and thereby
+did not wodify the conclusions from the analysis.
+87
+
+the residual reactivity variation; however, the data taken during the long-
+est uninterrupted power run (run 14) definitely indicate that a gradual
+increase in the residual reactivity occurred in this interval,
+
+The magnitude and direction of these trends are quite credible in
+terms of the basic model, because the calculations of possible reactivity
+effects associated with dimensional changes in the graphite indicate that
+this type of slow variation could have occurred (Sect. 3.3). Furthermore,
+there is sufficient uncertainty in the degree of removal of low~cross-—
+section fission products (Fig. 12) that differences between actual poi-
+soning and nominal values assumed for calculations could have produced
+gradual reactivity changes of either sign (downward trends could be associ-
+ated with less effective removal, and vice versa). For both these reasons,
+the magnitudes of residual reactivity variations in Fig. 23 are within a
+region in which the basic calculation model is judged to be valid.
+
+Those sources of statistical variations and uncertainties in the re-
+activity balance data which can be identified include (1) a component of
+about +0,01% S8k/k associated with random errors in reading rod positions
+and temperatures and with variations between sampling intervals in the
+
+amount of entrained gas circulating with the salt during normal operations,
+
+ORNL-DWG 71-6026
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+¥ 00s T —
+lo A MAXIMUM THERMAL POWER, 7.25 MW
+“© 0.04 x v
+2 oor b ”
+- 007 $0 A 5
+z 0 A
+z 0 v ! ®
+Q ~-0.02 0 ®
+& -004 | Se ®
+I -0.06
+D
+2 -0.08 ]
+<
+oo 0
+~0.10 ~ ~N— ASN
+Op WA &@ SAN ®
+x oe A 22 ON - NN Nn
+o SRR RQ $
+oz AT & A <A QC
+wo AR ARS «7 &F 2X O Q
+a Tl 2S RT 5 S % cS
+(ie ( (
+- |
+0 20 40 60 80
+
+TIME-INTEGRATED POWER (1000 MWhr)
+
+Fig. 23. Long-term variations in residual reactivity evaluated at
+zero power during 235, operations; maximum reactor power, 7.25 MW.
+88
+
+and (2) a component associated with uncertainties in fuel transfer during
+flush operations, increasing in magnitude from zero near the start of power
+operation to about *0.02% 8k/k near the end of operation. Any remaining
+statistical variations should at present be regarded as inherent in the
+technique of recording and analyzing the reactivity balance data, rather
+than as evidence of some anomalous physical process in the reactor.
+
+The data summarized in Fig. 23 represent measurements accumulated over
+more than two years of power operation of the MSRE. During that time, 235y
+equivalent to “1.25% 8k/k in reactivity had been depleted in power opera-
+tion; 23%U equivalent to V0,72% 8k/k had been added to the salt; poisoning
+due to 1“%Sm and !Slsm equivalent to 0.77% 8k/k had been formed; and
+changes in isotopic content of other constituents of the salt had produced
+a net reactivity addition of ~0,43% 8k/k. The residual reactivity, evalu-
+ated at conditions of negligible power and xenon poisoning, drifted by less
+than 0,1% 6k/k over this period; hence, our accounting procedures indicate
+
+that the reactor behaved in a regular and predictable manner.
+89
+
+6. CONCLUSIONS
+
+The reactivity balance operating history proved quite useful as an
+aid in drawing inferences about the core behavior during sustained power
+cperation of the reactor. From the conceptual standpoint, the reactivity
+balance is a means of viewing the nuclear operations as a process rather
+than a sequence of unrelated operating states. As an analysis technique,
+it provides an independent monitor of the processes which have significant
+influence on the nuclear properties of the core. This may be used in con-
+junction with information obtained from other techniques such as chemical
+or mass-spectrographic analysis of the fuel composition. The disadvantage
+of reactivity balance monitoring is that it is highly indirect; only a dif-
+ference in the apparent positive and negative compensating reactivity
+changes during any operating interval is recorded, and the interpretation
+of this difference is a separate problem in operations analysis. An ob-
+served residual can be real and due to a single phenomenon in the core or
+it can be due to simultaneous small effects, including errors in the basic
+models for calculating individual processes. In the former event, other
+data given by the reactor instrumentation are important in interpreting
+the significance of the residual. In regard to the latter event, we have
+given considerable attention in this report to the problem of maintaining
+consistency among the component reactivity effects calculated by the model.
+
+The largest uncertainty in the model as developed for the MSRE is
+likely to be in calculating the fission product transport and removal from
+the core. This model can and undoubtedly will be improved in future ap-~
+plications of this general technique in nuclear operations analysis for
+molten-salt reactors. Despite this uncertainty, however, the reactivity
+balance served its intended purposes. As a malfunction detector, reac-
+tivity variations less than 0.05% 8k/k were readily observable over short
+time intervals, Larger temporary variations that were observed were in
+accord with expected behavior of the reactor under operating conditions
+then obtaining; at no time did the residual reactivity become sufficient
+
+to have brought operating safety limit considerations into play. As a
+90
+
+long—-term indicator of the predictability of the reactor nuclear perform-
+ance, the residual reactivity remained within the limits of valid pre-
+diction of the basic model, In sum, the reactivity balance was a valuable
+adjunct for analysis of a new experimental reactor type for which no pre-
+
+ceding experience was available.
+10,
+
+11.
+
+12.
+
+13.
+
+14.
+
+15.
+
+16.
+
+91
+
+REFERENCES
+A. M. Weinberg and E. P. Wigner, The Physical Theory of Neutron Chain
+Reactors, p. 600, University of Chicago Press, 1958.
+
+H. P. Danforth, "The Reactivity Balance as an Anomaly Detector,"
+Nucl. Safety, 10(5), 411-414 (Sept.—Oct. 1969).
+
+A. F. Henry, "The Application of Reactor Kinetics to the Analysis of
+Experiments,” Nucl. Sci. Eng. 3(1), 52-70 (January 1958).
+
+E. E. Gross and J. H. Marable, "Static and Dynamic Multiplication
+Factors and Their Relation to the Inhour Equation," Nucl. Sci. Eng.
+7(4), 281-91 (April 1960).
+
+T. Gozani, "The Concept of Reactivity and Its Application to Kinetic
+Measurements," Nukleonik 5(2), 55 (February 1963).
+
+B. Wolfe, "Predicting Reactivity at High Burnup," Nucleonics 16(3),
+11621 (March 1958).
+
+J. Lewins, IMPORTANCE: The Adjoint Function, chap. 5, Pergamon,
+New York, 1965.
+
+G. R. Keepin, Physies of Nuclear Kinetics, Addison~Wesley, Reading,
+Mass., 1965.
+
+B. E. Prince, Period Measurements on the Molten-Salt Reactor Experi-
+ment During Fuel Cirveulation: Theory and Experiment, ORNL-TM-1626
+(Cctober 1966).
+
+R. C. Robertson, MSEE Design and Operations Report, Part 1: Description
+of Reactor Design, ORNL~TM-728 (January 1965).
+
+B. E. Prince et al., Zero-Power Physics Experiments on the Molten-Salt
+Heactor Experiment, ORNL-4233 (February 1968).
+
+MSR Program Semiannu. Progr. Rep. Feb, 28, 1963, ORNL-4396, p. 35-43.
+MSR Program Semiannu. Progr. Rep. Feb. 28, 1966, ORNL-3936, pp. 82-87.
+
+B. E. Prince and J. R. Engel, Temperature and Reactivity Coefficient
+Averaging in the MSEE, ORNL-TM-379 (October 1962).
+
+R. J. Kedl and A. Houtzeel, Development of a Model for Computing 135Xe
+Migration in the MSRE, ORNL-4069 (June 1967).
+
+MSE Program Semiannmui. Progr. Rep. Aug. 31, 1966, ORNL-4037, pp. 13-21.
+17.
+
+18.
+
+19.
+
+20.
+
+21.
+
+22.
+
+23.
+
+24,
+
+26.
+
+27.
+
+28,
+
+29.
+
+30.
+
+31.
+
+32.
+
+33.
+
+34.
+
+92
+
+MSR Program Semiannu. Progr. Rep. Feb. 28, 1967, ORNL-411%9, pp. 86-94.
+
+R. C. Steffy, J. R. Engel, and R. J. Kedl, Xenon Behavior in the MSKE,
+to be issued as an ORNL-TM report,
+
+J. R. Engel et al., Spray, Mist, Bubbles, and Foam in the Molten Salt
+Reactor Experiment, ORNL-TM-3027 (June 1970).
+
+MSR Program Semiannu. Progr. Rep. Aug. 31, 1967, ORNL-4191, p. 116.
+MSR Program Semiannu. Progr. Rep. Aug. 31, 1968, ORNL-4344, p. 36.
+
+H. E. McCoy to C. H. Gabbard, ORNL internal communication, Nov. 6,
+1967.
+
+MSR Program Semiannu. Frogr. Rep. Aug. 31, 1966, OBRNL~4037, p. 136.
+
+P. N. Haubenreich to H. F. McDuffie, ORNL internal correspondence,
+Apr. 10, 1962.
+
+MSR Program Semiannu. Progr. Rep. July 31, 1964, ORNL-3708, p. 376.
+
+J. H. Shaffer to P. N. Haubenreich, ORNL internal correspondence,
+Jan. 6, 1965,
+
+G. D. Joanou and J. S. Dudek, GAM-IT — A Bz Code for the Calculation
+of Fast-Neutron Spectra and Associated Multigroup Constants, GA-4265
+(September 1963).
+
+H. C. Honeck, THERMOS — A Thermalization Transport Theory Code for
+Reactor Lattice Calculations, BNL-5826 (September 1961).
+
+T. B. Fowler et al., EXTERMINATOR-2: A Fortran IV Code for Solving
+Multigroup Neutron Diffusion Equations in Two Dimensions, ORNL-4078
+(April 1967).
+
+MSE Program Semiannu. Progr. Rep. Aug. 31, 1963, ORNL-4449, pp. 22-26.
+
+L. L. Bennett, Recommended Fission Product Chains for Use In Reactor
+Evaluation Studies, ORNL-TM-1658 (September 1966).
+
+T. R. England, Time-Dependent Fission-Product Thermal and Resonance
+Adsorption Cross Sections, WAPD-TM-333, Bettis Atomic Power Labora-
+tory (November 1962); Addendum No. 1 (January 1965).
+
+P. N. Haubenreich et al., MSRE Design and Operations Report, Part III:
+Nuclear Analysis, ORNL-TM-730, p. 182 (February 1964).
+
+P. N. Haubenreich, Prediction of Effective Yields of Delayed Neutrons
+in MSRE, ORNL~TM-380 (October 1962).
+93
+
+35. MSR Program Semiannu. Progr. Rep. Aug. 31, 1968, ORNL-4344, pp. 4546.
+
+36. P. N. Haubenreich and J. R. Engel, "Experience with the Molten-Salt
+Reactor Experiment," Nucl. Appl. Technol. 8(2), 118-36 (February 1970).
+
+37. C. D. Martin and J. R. Engel, Zxperience with the MSRE On-Line
+Computer, to be issued as an ORNL-TM report.
+
+38. MSR Program Semiannu. Progr. Rep. Aug. 31, 19689, ORNL~4449, p. 10.
+
+39. D. N. Fry, R. C. Kryter, and J. C. Robinson, Measurement of Helium
+Void Fraction in the MSRE Fuel Salt Using Neutron-Noise Analysis,
+ORNL~-TM-2315 (Aug. 27, 1968).
+
+40. MSR Program Semiannu. Progr. Rep. Feb. 28, 1970, ORNL-4548, pp. 6566.
+ 
+
+95
+
+APPENDIX
+
+Perturbation theory provides a convenient mathematical apparatus for
+describing the reactivity effects of arbitrary changes in reactor condi-
+tions. We will make use of this general technique, together with the con-
+cept of Vstatic" reactivity, to derive the general relations used in
+Chapter 2 of this report. The mathematical treatment will be as brief as
+necessary to support the discussion in this report; more complete back-
+ground can be obtained by consulting any standard references in the sub-
+ject (e.g., Refs. 1 and 7). In order to avoid the necessity of referring
+to any particular neutronic model, and at the same time simplify some of
+the algebraic manipulations, we will make use of a general operator nota-
+tion for the neutron balance equation. Thus the basis for the mathematical
+description is provided by the equation governing the static reactivity,
+
+Og for a particular state of the reactor:
+
+Le +4 = (A —~op)) Py, (A.1)
+together with the adjoint equation,
+* X *
+Ly +ay = =p) Py, (A.2)
+
+in which ¢ and y represent the direct and adjoint flux fields and L, 4,
+
+and P are linear operators governing the neutron leakage, absorption (in-~
+cluding energy transfer by scattering), and production from fission re-
+spectively. Once a particular theoretical model is chosen in which to
+represent these operators (e.g., multigroup diffusion theory or transport
+theory), then the explicit information defining the reactor state, such
+
+as core geometry, material composition, and temperature, completely "fixes"
+these operators. The remaining conditions completing the mathematical de-
+
+scription in Eq. (A.l) arise from the physical conditions for the return
+
+ 
+
+* : : : \
+See discussion in Chap. 2.
+96
+
+flux at the boundaries of the reactor and, also, positivity conditions for
+the flux field.” Similar conditions, called adjoint boundary conditions,
+apply to the solution of Eq. (A.2) for the adjoint flux field. In Eq.
+(A.2) the operators with the asterisk represent the adjoint operators,
+
+defined by the inner product relations,
+
+wl) = Fue), (A.3)
+x
+
+0,48) = (4° 0,8) , (A. 4)
+x
+
+W,P8) = (& v,0) , (A.5)
+
+where the symbol (f,g) represents the inner product of the functions f
+
+and ¢g (the multiplication of the functions and integration over the spatial,
+energy, and, in certain applications, the directional variables describing
+the flux field). The scalar quantity, Py is the algebraically largest
+eigenvalue of Eq. (A.l) and can be shown to be identical with the largest
+eigenvalue of Eq. (A.2).
+
+For what follows, it is useful to notice that the so-called bilinear
+identities [Eqs. (A.3), (A.4), and (A.5)] are in the nature of global rela-
+tions; that is, they apply to the reactor considered as a whole. In this
+sense, they are less restrictive than the equations describing the local
+balances, Eqs. (A.1) and (A.2). Thus, for these defining relations to ap~-
+ply requires only that the direct and adjoint flux functions be chosen from
+sets satisfying appropriate boundary conditions, together with certain phys-~
+ical restrictions such as flux continuity (so that application of the opera-
+tors on functions contained in these sets has physical meaning). It follows
+that, in the use of relations (A.3) through (A.5), the functions ¢ and ¢
+do not have to correspond to the same reactor neutronic state, provided
+that the boundary conditions remain fixed and the above restrictions are
+
+satisfied.
+
+ 
+
+x
+This last condition is necessary to eliminate consideration of
+higher-order eigensolutions of Eqs. (A.1) and (A.2).
+97
+
+In order to derive Eq. (2) of Chapter 2 of this report, we may take
+the inner product of the neutron balance equation [Eq. (A.1)] with a
+weight function w, defined on the space of independent variables of the
+
+neutron population,
+
+w,Le) + (w,4¢) = — eg) W,P9) (A.6)
+
+or, by simple algebraic rearrangement,
+
+w,4¢) + (w,Ld)
+p = 1 — . (A.7)
+(w,P¢)
+
+ 
+
+In this case, since the balance Eq. (A.1) holds at each point in the space
+of independent variables, the choice of the weight function is arbitrary.
+Deliberate choice of w equal to y, the solution of the adjoint Eq. (A.2)
+for the same reactor state, leads to Eq. (2) of Chapter 2.
+
+Consider now two reactor states, one arbitrarily designated as a ref~
+erence state and the other a perturbed, or "operating" state. Using sub-
+
+scripts a and B to denote these two states, respectively, we may write
+
+Ly ®, + A, ¢, = (1 I, 1 ? , (A.8)
+
+L* a" = 1 p” A.9)
+a vy, + o Yo = Pog) “a by > (a.
+
+* yw 4a" = 1-0 YP (A.11)
+p Vg tAg bg = (I 7oge) Pybg
+
+Explicitly representing the perturbation in these operators relative to
+
+the chosen reference state, we may put
+
+Lg = L, + SL, (4.12)
+98
+
+hN
+hl
+
+4 + 84,
+o
+
+Pg
+
+li
+
+P+ SP.
+a
+
+(4.13)
+
+(A.14)
+
+Next, we form the inner product of the adjoint flux for the reference state
+
+v, with the operating state Eq. (A.10) and use the defining Eqs. (A.12)
+
+through (A.14) for the perturbations:
+Ws L, 9g) + Ww,» 8Lo + W,» 4.80) + (Ws 8465)
+= mpg) Ws Py 9) + (L=p 0) (Wy, 676)
+By use of the bilinear identities (A.3) and (A.4), we obtain
+%* %
+(Woo Ly 0g) + on A 0) = (Lvs 00) + (4 Lo, 90)
+
+and, from Eq. (A.9),
+
+it
+
+L* % _ _*
+( a Vo 9g) + (4, LA bg) 1 Pog) ®, Yoo 9g)
+
+fl
+
+where the final form of Eq. (A.17) follows from the third bilinear
+
+identity (A.5).
+If we now combine Eqs. (A.15), (A.16), and (A.17), we obtain
+
+(1 — Pog) Ww,» Pog) + W,» SL 9g) + Ww,» 844.)
+
+= (Mpg) Gy, Pog) + (L—p 0) (bh, 8Po0)
+which, after simple algebraic rearrangement, yields
+
+(bys SPO) (Wy, S40.) (U, Loy)
+
+= (1 ~—»p — a
+(hy Boog) Go Pb) (0s Boag)
+
+sg "Pag SB
+
+ 
+
+p )
+
+(A.15)
+
+(A.16)
+
+(A.17)
+
+(A.18)
+
+(A.19)
+99
+
+This expression is equivalent to Eq. (3a) of Chapter 2.
+
+A slightly different form of the above expression is useful in those
+applications where the production operator (i.e., the fissile material con-
+centration) is altered. Im this case, it is convenient to move the oper—
+
+ating state reactivity Pq (which is generally an unknown quantity) from
+
+B
+the right to the left side of Eq. (A.19). By employing the identity
+
+ 
+
+Pag = Psp T Pay + Pon in the preceding derivation, one can readily
+obtain
+SA SL
+I
+S jo a bos e?s a? B'B LE BTR
+
+equivalent to Eq. (3b) of Chapter 2.
+
+Finally, we may note that Eqs. (A.19) and (A.20) are exact, in the
+sense that no assumptions have been made concerning the "smallness" of the
+change in the reactor state. Although we are in some applications able to
+
+make what is usually termed the first-order perturbation approximation
+
+ 
+
+(i.e., that 4 = 9g) it is only in certain instances that the approxima-
+
+tion is justified. The flux fields b, and ¢, may in general be quite
+
+different. ’
+To many cases of interest, such as certain reactivity calibration
+measurements, fuel depletions and readditions, and fission product poi-
+soning, the perturbations considered have the property that the changes
+induced in neutron transport and slowing-down properties of the core are
+negligible. In multigroup diffusion theory the leakage perturbation 6L
+involves only changes in the group diffusion coefficients, and for this
+class of perturbations the terms containing 6lL may be neglected in Egs.
+(A.19) and (A.20). Also for this case, the term with 84 is closely ap~-
+proximated by considering only the changes in neutron absorption events,
+These observations are quite useful when carrying out approximate theo-
+retical calculations of reactivity effects, as described in Section 2.3.
+For the class of strong localized perturbations, such as represented
+by control rod motions, diffusion theory is inadequate, and more accurate
+
+transport representations are needed for theoretical description of
+100
+
+neutron scattering and absorption in the rod regions. In this case, it
+can be shown that SL = 0, but 84 must be understood to include changes in
+transfer probabilities in energy and direction for neutron scattering.
+Alternatively, recourse can be made to experimental measurements of the
+
+rod reactivity effects, as was described in Section 2.4.
+101
+
+ORNL-4674
+
+UC-80 — Reactor Technology
+
+Internal Distribution
+
+ 
+
+1. J. L. Anderson 36. #. C. McCurdy
+
+2, R. G. Affel 37. L. E. McNeese
+
+3. H. F. Bauman 38. J. R. McWherter
+
+4. C. F. Baes 39. A. S. Meyer
+
+5. S. E. Beall 40. A. J. Miller
+
+6, L., IL. Bennett 41, R. IL, Moore
+
+7. E. 8. Bettis 42. E, L, Nicholson
+
+8. FE. G. Bohlmann 43, TL. C. Oakes
+
+9. G. E. Boyd 44. A. M. Perry
+10. R. B. Briggs 45. H. B. Piper
+11. W. B. Cottrell 46-50. B. BE. Prince
+12. J. L. Crowley 51. G. L. Ragan
+13. F. L. Culler 52-57. M. W. Rosenthal
+14, J. R. Distefano 58. Dunlap Scott
+15, Ss. J. Ditto 59. M™M. R. Sheldon
+
+16. W. P. Eatherly 60. W. H. Sides
+17. J. R. Engel 61. WM. J. Skinner
+
+18. D. E. Ferguson 62. 0. L. Smith
+19. L. M. Ferris 63. I. Spiewak
+
+20, A, P. Fraas 64, D. A, Sundberg
+
+21. C., H, Gabbard 65. R. E. Thoma
+
+22. W. R. Grimes 66. D. B. Trauger
+
+23. A. G. Grindell 67. A. M, Weinberg
+
+24, R. H. Guymon 68. J. R. Weir
+
+25. P., N. Haubenreich 69. WM. E. Whatley
+
+26. R. F. Hibbs (Y-12) 70. J. C. White
+
+27. H., W. Hoffman 71. G. D. Whitman
+
+28, P. R., Kasten 72. Gale Young
+
+29. J. J. Keyes 73-75, Central Research Library
+30. A, I. Krakoviak 76. Y-12 Document Reference Section
+31. M. I, Lundin 77-98, Laboratory Records
+32. R. N. Lyon 99, Laboratory Records (RC)
+33. H., G. MacPherson
+
+34, R., E. MacPherson
+
+35. H. E., McCoy
+100.
+101.
+
+102,
+103.
+104~105,
+
+106.
+107.
+
+108.
+
+109.
+110.
+
+111.
+112-114.
+115-116,
+117-121.
+
+122,
+
+123,
+124~342,
+
+102 Cy
+
+External Distribution
+
+ 
+
+D. F. Cope, AEC-0OSR, Oak Ridge, Tennessee
+
+W. H. Hannum, Reactor Physics Branch, Division of Reactor
+Development and Technology, USAEC, Washington, D.C. 20545
+
+A. Houtzeel, TNO, 176 Seccnd Ave., Waltham, Massachusetts 02154
+
+Kermit Laughon, AEC-0SR, Oak Ridge, Tennessee
+
+MSBR Program Manager, Division of Reactor Development and
+Technology, USAEC, Washington, D.C. 20545
+
+C. L. Matthews, AEC~DSR, Oak Ridge, Tennessee
+
+Yasua. Osawa, Atomic Energy Research Laboratory, Hitachi Ltd.,
+Ozenji Kawashaki-shi, Kanagawa~ken, Japan
+
+Milton Shaw, Director, Division of Reactor Development and
+Technology, USAEC, Washington, D.C. 20545
+
+W. L. Smalley, AEC-ORO, Oak Ridge, Tennessee
+
+R. C. Steffy, Tennessee Valley Authority, 303 Power Rldg.,
+Chattanooga, Tennessee 37401
+
+M. J. Whitman, Division of Reactor Development and Technology,
+USAEC, Washington, D.C. 20545
+
+Director, Division of Reactor Licensing, USAEC, Washington, D.C.
+20545
+
+Director, Division of Reactor Standards, USAEC, Washington, D.C,
+20545
+
+Executive Secretary, Advisory Committee on Reactor Safeguards,
+USAEC, Washington, D.C. 20545
+
+Laboratory and University Division, ORO
+
+Patent Office, AEC-ORO
+
+Given distribution as shown in TID-4500 under Reactor Technology
+category (25 coples — NTIS)

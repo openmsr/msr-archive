@@ -1,0 +1,1806 @@
+ 
+
+on
+
+ 
+
+OAK RIDGE NATIONAL LABORATORY
+operated by
+
+UNION CARBIDE CORPORATION
+NUCLEAR DIVISION . LES
+for the
+
+U.S. ATOMIC ENERGY COMMISSION
+ORNL- TM- 2997
+
+COPY NO. -
+DATE - April, 1970
+
+EXPERIMENTAL DYNAMIC ANALYSIS OF THE MSRE WITH 233y FUEL
+
+R. C. Steffy, Jr. WASTER
+
+ABSTRACT
+
+Tests were performed on the Molten-Salt Reactor Experiment to deter-
+mine the system time response to step changes in reactivity, the neutron-
+flux-to-reactivity frequency response, and the outlet-temperature-to-
+bower frequency response. The results of each of these were found to agree
+favorably with theoretical predictions.
+
+The time response tests were performed with the reactor operating
+at 1, 5, and 8 MW and substantiated the theoretical predictions that fol-
+lowing a reactivity perturbation the system would return to its original
+power level more rapidly at higher power levels than at lower power levels
+and was load-following at all significant power levels. A noisy flux sig-
+nal (caused by circulating voids) hampered detailed comparison of the
+experimental results and theoretical predictions.
+
+Neutron flux-to-reactivity frequency-response measurements were per-
+formed using periodic, pseudorandom binary and ternary sequences. This.
+type of test effectively prevented much of the random noise contamination
+of the neutron flux from entering the final analyses and gave results
+which contained little scatter. The results were in good agreement with
+the theoretical predictions and verified that for the MSRE, the degree of
+stability increases with power level.
+
+Outlet-temperature-to-power frequency-response measurements were com-
+pared with similar measurements made during operation with the 235U fuel
+and verified that the basic thermal properties of the reactor system were
+essentially the same as expected.
+
+Keywords: MSRE, fused salts, reactors, operation, reactivity, testing,
+time response, frequency response, stability, pseudorandom binary sequences,
+Dbseudorandom ternary sequences.
+
+NOTICE This document contains information of a preliminary nature
+and was prepared primarily for internal use at the Oak Ridge National
+
+Laboratory. It is subject to revision or correction and therefore does
+not represent a final report.
+
+DISTRIBUTION OF THIS DOCUMENT IS UNLIMITED
+ 
+
+LEGAL NOTICE es
+
+ 
+
+This report was prepared as an account of Government sponsored work. Neither the United States,
+
+nor the Commission, nor any person acting on behalf of the Commission:
+
+A. Makes any warranty or representation, expressed or implied, with respect to the accuracy,
+completeness, or usefulness of the information contained in this report, or that the use of
+any information, apparatus, method, or process disclosed in this report may not infringe
+privately owned rights; or
+
+B. Assumes ony liabilities with respect to the use of, or for damages resulting from the use of
+any information, apparatus, method, or process disclosed in this report.
+
+As used in the above, ‘‘person acting on behalf of the Commission®’ includes any employee or
+
+contractor of the Commission, or employee of such contractor, to the extent thot such employee
+
+or contractor of the Commission, or employee of such contractor prepares, disseminates, or
+provides access to, any information pursuant to his employment or contract with the Commission,
+
+or his employment with such contractor.
+
+ 
+
+ 
+CONTENTS
+
+ABSTRACT © vv vv oh 0 ve ee ee ee ee ee ee ee eee
+INTRODUCTION  . © vv vv vv hv ev ev ee eee ee ee eee
+TRANSIENT RESPONSE. . . + + + +o + «vt vv ve ev ae eee a es
+FREQUENCY RESPONSE. . + + v vv ov vv vv vv eo vo vv vw «ou 1
+
+[0]
+
+no
+
+Neutron Flux to Reactivity . . . . . . . . . . . « . . . . .. 12
+Testing Procedure . . . . + +. + + vv 4 0 ve eee... L2
+
+Analysis Programs . . . + +. + + «v4 0 we ee 4 o.oo. 13
+DISCUSSION. + v + vv ve ee ee ee eee ee ee eo. 1k
+
+Outlet Temperature to Power. . . . . . + « « « « + « « « « «+ . 22
+CONCLUSION. . « vv + i hh tv a he ee ev ee es ie ee eee 25
+LIST OF REFERENCES. + + 4 + vv vo 0 oo eve i vie ve ew eu 26
+
+LEGAL NOTICE ———
+
+This report was prepared ax an account of Government sponsored work. Nether the United
+States, nor the Commission, nor any person acting or. behalf of the Commisston:
+
+A. Makes any warranty or representation, expressed or implied, with respect to the aceu~
+racy, completeness, or usefulness of the information contained tn this report, or that the use
+of any Information, apparatus, method, or process disclosed in this report may not infringe
+privately owned rights; or
+
+B. Assumes any liabilities with respect to the use of, or fur damages resulting from the
+use of any information, apparatus, method, or process disclosed in this report,
+
+As used in the above, “person acting on behalf of the Commission’’ includes any em-
+ployee or contractor of the Commission, or employee of such contractor, to the extent that
+such employee or contractor of the Commissivn, or employee of such contractor prepares.
+disseminates, or provides access to, any Information purauaut to his employment or contract
+with the Commission, or his employment with such contractor,
+
+ 
+
+ 
+
+ 
+
+rr BUTION OF Tikal or foes :
+
+wp dA
+EXPERIMENTAL DYNAMIC ANALYSTS OF THE MSRE WITH 2° FUEL
+
+R. C. Steffy, Jr.
+
+INTRODUCTION
+
+Several reports and articles (References 1 - 6) relating either to
+the theoretical or actual (or both) dynamic response of the Molten Salt
+Reactor Experiment have been published, However, none of these has re-
+ported in a concise form the dynamic response of the U-233 fueled MSRE.
+Reference 4 contains much of the freguency-response information reported
+herein, but it is presented in a lengthy context which is primarily con-
+cerned with comparing testing signals and techniques. The purpose of
+this report is to give a brief description of the observed dynamic re-
+sponse of the U-233 fueled MSRE, compare it with the theoretical and sug-
+gest possible reasons for differences when applicable, but to eschew any
+
+lengthy description of the testing techniques.
+
+TRANSIENT RESPONSE
+
+A common method of describing the dynamic response of a stable sys-
+tem is to display the system response to a step change in an input vari-
+able. For a nuclear reactor, reactivity is usually the perturbed para-
+meter, This type description (i.e. description in the time domain) has
+the advantage of an intuitive appeal to people since we deal directly
+with time in day-to-day living. However, analysis of a system response
+in the time domain does have some disadvantages. Notably, if the system
+output of interest is contaminated with a large noise component, the part
+of the output resulting from a step input may be undiscernible from the
+part caused by the noise. The reason for making this point 1s the large
+difference in the neutron noise level between the ©7°U fuel loading and
+253) fuel loading of the MSRE. (The increase in noise level was due to
+a concomitant increase in circulating void fraction and was not an in-
+
+trinsic function of the fissile isotope.) An example of the uncontrolled
+neutron flux during high-power operation for each fuel is shown in Fig. 1,
+and the relationship between the flux noise and void fraction is readily
+observable. The vold fraction estimates which are labeled on Fig. 1 were
+achieved by varying the fuel pump speed; however, the fuel pump was
+operated at full speed (~ 1180 rpm) for all of the dynamics tests reported
+here.
+
+During the initial approach to power with the ©°7U fuel, time re-
+sponses of the neutron flux to a step change in reactivity were recorded
+and are shown in Figures 2, 3, and 4 for the reactor at 1, 5, and 8 ww,
+respectively. Also shown in these figures are the theoretical predictions
+for step reactivity changes of the same magnitudes, The theoretical cal-
+culations were performed using the mathematical model and method described
+in Reference 2. The noisy flux signal hinders a comparison of the finer
+detail of the theoretical and experimental curves, but the noise was low
+enough that some features may be compared. In general, the theoretical
+and the experimental curves are in good agreement.
+
+For the 1-MW case (Figure 2), the initial flux peak was slightly
+nigher thar the theory predicted, then it oscillated below the initial
+level and later increased again with a second peak occurring after about
+360 sec, The theoretical curves agree that the change in power should
+have returned to a positive indication at this time but indicate that it
+should not have been as large in magnitude as the observed behavior. The
+extent to which noise contamination forced the positive indication is not
+KOGWN .
+
+The noise contamination in the 5-MW case (Fig. 3) makes it diffi-
+
+cult to compare directly the experimental and theoretical results. They
+
+ 
+
+3%
+The original plot of the response at 1 MW was made by a different
+machine than the other two plots. This accounts for the difference in
+general appearance of the plots.
+
++
+Full power was taken as 8.0 MW during the data analysis and writing
+of this repcrt.
+Fig. 1.
+
+ORNL-DWG 69-5371R
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+> PERCENT RCENT Coceen PLRCENT
+© 0 50 60 10 0 40 50 40 50
+~
+€ }
+£
+©
+= J
+-
+| 4
+}
+}
+PERCENT RCENT PERCE PERCENT
+0 50 60 10 0 40 50 40 50
+1480 rpm 1160 rpm 1120 rpm 1070 rpm
+<0.4 vol % 06 vol% 03vol% O.4vol%
+1€ J)
+235) 233
+
+RR-8{00 CHART (percent of 15 Mw)
+
+Sections of Nuclear Power Recorder Chart Contrasting 27°U Fuel,
+Full Flow and Few Bubbles with 233 Fuel, Varying Flow and Bubble
+Fraction. Conditions in each case: 7 MW, 1210°F, 5 psig,
+
+52 - 56% Fuel Pump Level.
+0.7
+0.6
+0.5
+0.4
+
+3
+
+= 0.3
+0.2
+0.1
+
+-0.1
+
+ORNL-DWG 70-2922
+
+ 
+
+on
+
+ 
+
+ 
+
+|
+
+— — — THEORETICAL
+
+EXPERIMENTAL
+REACTIVITY INSERTED=0.0139 % 3% —
+
+POWER LEVEL =1 Mw
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Hle=—t
+
+pane er
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+i . 2.
+
+60 120
+
+180 240
+
+300
+
+360
+
+TIME AFTER REACTIVITY INSERTION (sec)
+
+420
+
+Response of the Neutron Flux to a Step Change in Reactivity
+of 0.0139% 8k/k with the Reactor Initially at 1 MW.
+AMw
+
+ORNL-DWG 70-2921
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+08 | | | |
+‘ POWER LEVEL = 5 Mw
+06 --- THEORETICAL |
+)[==, — EXPERIMENTAL
+\ REACTIVITY INSERTED =0.0190 % 8k/k
+0.4
+|
+\
+” Aa PW,
+. LAY nA AN
+-0.2
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0 60 {20 180 240
+TIME AFTER REACTIVITY INSERTION (sec)
+
+300 360
+
+420
+
+Fig. 3. Response of the Neutron Flux to a Step Change in Reactivity
+of 0.0190% 8k/k with the Reactor Initially at 5 MW.
+are in general agreement, but detailed comparison would be guess-work.
+The swells and rolls that occur after about 150 sec are almost surely not
+directly related tc the original reactivity input since the system set-
+tling time at 5 MW is sbout 150 sec,
+
+For the reactor operating at 8 MW, the flux response to a reactivity
+step of 0.02L48% &k/k is shown in Figure L. The maximum power level was
+reached during the first second after the reactivity input. This rapid
+increase was accompanied by a rapid increase in fuel temperature in the
+core, which, coupled with the negative temperature coefficient of reac-
+tivity, more than counter-balanced the step reactivity input, so the power
+level began to decrease. The temperature of the salt entering the core
+was constant during this interval, and when the power had decreased enough
+for the reactivity associated with the increased nuclear average tempera-
+ture to just cancel the step reactivity input, the power leveled for a
+brief time (from ~ 6 to ~ 17 sec after the reactivity input). About 17 sec
+after the reactivity increase, the hot fluid generated in the initial
+power increase completed its circuit of the loop external to the cere, and
+the negative temperature coefficient of the salt again reduced the reac-
+tivity so that the power level started down again. At large times the
+reactor power returned to its initial level, and the step reactivity in-
+put was counter-balanced by an increase in the nuclear average temperature
+in the core. Fer the 5-MW case, a short plateau was probably present
+also, but the noisy signal obscured its presence. At lower powers, how-
+ever, the slower system response prevented the reactor from reaching the
+peak of its first oscillaticn befcre the fuel completed one circuit of
+the external fuel loop. The plateau therefore did not appear in the 1-MW
+case.
+
+An important characteristic of the MSRE dynamic response was that as
+the power decreased the reactor became both more sluggish (slower respond-
+ing) and more oscillatory; that is, at low powers the time required for
+oscillations to die out was much larger than at higher powers, and the
+
+fractional amplitude of the oscillations (A power /power) was larger.
+11
+
+CRNL-DWG 70-2923
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1.4 — | |
+POWER LEVEL = 8 Mw
+f.2 -—- THEORETICAL
+10 — EXPERIMENTAL
+REACTIVITY INSERTED = 0.0248% 8k/k
+0.8
+3 i
+= 06 Hy
+< I
+0.4 ¥ v Yh
+0.2 Noa
+0 A
+-0.2
+
+0 20 40 60 80 100
+TIME AFTER REACTIVITY INSERTION (sec)
+
+Fig. 4, Response of the Neutron Flux to a Step Change in Reactivity
+of 0.248% 8k/k with the Reactor Initially at 8 MW,
+12
+
+FREQUENCY RESPCNSE
+Neutron Flux to Reactivity
+
+Most of the effort in experimentally determining the dynamic response
+of the MSRE was expended in determining the neutron-flux-to-reactivity
+frequency response. One advantage of working in the frequency domain is
+that a periodic waveform may be continuously imposed on a system input
+(e.g. reactivity, through control rod movement) until several periods of
+data have been collected. All of the signal power of a perlodic signal
+is concentrated at harmonic frequencies, and subsequent analysis at a
+harmonic frequency very efficiently eliminates most of the noise contami-
+nation which is usually dispersed over a wide frequency band. There are
+cther advantages to working in the frequency domain, but the more noisy
+flux signal with the “337 fuel loading makes this a salient advantage.
+Several step and pulse tests (aperiodic tests) were also attempted but
+these do rot have the signal energy concentrated at particular frequencies
+and the system noise was large enough that the results contained too much
+
+scatter to he useful.
+
+Testing Procedure
+The periodic signals used in the frequency-response tests were either
+
+pseudorandom binary or pseudorandom ternary sequences.? These are par-
+ticular series of square wave pulses that were chosen because they evenly
+distributed the signal power at the harmonic frequencies over a wide fre-
+quency range, which permitted determination cf the frequency response
+over a wide spectrum with only one test. The frequency range over which
+we obtained frequency-response results was from about 0.005 to 0.8 rad /sec.
+The lower limit was set by the length of one period of the test pattern
+and the high-frequency limit was determined by the time width of the
+square wave pulse of shortest duration which the standard equipment would
+adequately reproduce. The shortest basic pulse width used in these tests
+was 3.0 sec. The frequency range covered by these tests was essentially
+
+the range cover which thermal feedback effects are important.
+13
+
+The on-line computer, a Bunker-Ramo 3ko, was programmed to generate
+the sequences by opening and closing a set of relays. Voltage was fed
+through the relays from an analog computer (Electronic Associates, Inc.,
+Model TR-10). This voltage was used to determine the movement of the con-
+trol rods, which were forced either to follow the pseudorandom test pat-
+tern themselves or to cause the flux to follow the test pattern. The
+control~-rod position and the neutron flux were digitized and recorded
+every 0.25 sec on magnetic tape. The data were retrieved from the tape
+and stored on punched cards which could then be processed with the anal-
+
+ysis programs to yield the frequency-response information.
+
+Analysis Programs
+Before discussing each of the programs used to analyze the data, it
+
+is pertinent to note that in some instances the different analysis pro-
+grams ylelded markedly different results when applied to the same data.
+It is beyond the intent of this report to delve into the possible theo-
+retical explanations, but the interested reader may consult Reference ly
+for a more complete treatise on the subject.
+
+FOURCO.® This code directly Fourier transformed the time
+records, The transformed output (flux) was then divided by the trans-
+formed input (rod position) to give the frequency response. This analysis
+was usually performed on the full data record, which would contain several
+periods of the same waveform, but occasionally was performed on individual
+periods of data with the several resulting answers then ensemble averaged.
+This latter method is denoted FOURCO ENSEMBLE on the figures.
+
+CPsD. 2» 6 This analysis method utilized a digital simulaticn of
+an analog filtering technique for obtaining cross-power spectral density,
+CPSD, functions. This code calculated the power spectrum of the input
+signal and the cross-power spectrum of the input and output signals and
+divided the cross-power spectrum by the input power spectrum to obtain
+the frequency response at each frequency of analysis. The key feature of
+this code is an adjustable filter width about the analysis frequency.
+
+CABS.7 The third calculational procedure was more involved,
+
+The auto-correlation functions of the input and output signals were calcu-
+
+lated and the cross-correlation function of the signals was calculated.
+1h
+
+These were then Fcurier transformed to obtain the input, output, and
+cross-power spectra. The input Power-spectrum was then divided into the
+
+crecss-power spectrum to obtain the frequency response.
+
+Discussion
+
+With the fuel stationary, the frequency response of the zero-power
+MSRE was essentially the same as that of any stationary-fuel, zero-power,
+£33y-fueled reactor. The measured frequency response with the fuel not
+circulating is shown in Figure 5. The magnitude ratio, &n/N, - 8k, is
+seen to be in general agreement with the theory, but the phase angle is
+rot in particularly good agreement. At the higher frequencies for tests
+at all power levels, the magnitude ratio and the phase angle were lower
+than the theoretical. This is thought to have been caused by the control
+rod not adequately following the test pattern yet giving the indication
+that it was. The indicators, which are physically located with the drive
+assembly, accurately display the action of the rod-drive motors; however,
+the flexibility of the control rod makes it doubtful that the tip of the
+red, which is about 17 ft from the drive assembly, reproduces the high
+frequency component of the rod-drive movement.
+
+The results of a typical zero-power test with the fuel circulating
+are shown in Figure €. The shape of the magnitude ratio curve is in ex-
+cellent agreement with the theoretical curve, but the results have been
+normalized by multiplying each experimental value by 1.75. The phase
+angle data was in better agreement with the theoretical predictions than
+was the case for the non-circulating data, but there is scatter in the
+results,
+
+The need to normalize some results and not to normalize others is
+2150 considered to be caused by poor contrel rod indication.® The nor-
+malization was not power dependent since some data did and some did not
+need normalization at each power level, and the normalization factors,
+when they were required, were different for different tests.
+
+As we mentioned in the introduction, several different testing tech-
+
+niques were used in obtaining the experimental results. An example of
+ 
+
+15
+
+ORNL -DWG 69-12050
+
+FUEL STATIONARY
+POWER LEVEL - ZERO
+
+ANALYSIS METHODS
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+= CPSD
+s FOURCO ENSEMBLE
+— THEORY
+Lo!
+= 7
+© —30 -
+= jit
+LAT 4 .n S88,
+ou Aen LY 9 ¢ 14
+<< vd a
+I -60 ~
+~~ 4
+17
+I 4
+~90 E—
+103 2 5 102 2 5 10! 2 5 40°
+FREQUENCY (rad/sec)
+Fig. 5. Neutron Flux-to-Reactivity Frequency Response of the
+
+233J-Fueled MSRE at Zero-Power with Stationary Fuel.
+PHASE (deg)
+
+16
+
+ORNL-DWG 69- 12044
+
+POWER LEVEL -ZERO
+
+ANALYSIS METHODS
+°o FOURCO
+= CPSD
+= THEORY
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+-30
+o ] a - Pp 7
+Sat u=0 nl od © o
+¢ Jd] Id co 8 80
+alti
+-60 | :
+oo”
+ll
+90 ¢
+103 2 5 102% 2 5 100 2 5 10
+
+FREQUENCY (rad /sec)
+
+Neutron Flux-to-Reactivity Frequency Response of the
+
+Fig. 6.
+233J-Fueled MSRE at Zero-Power with Circulating Fuel.
+Ly
+
+results? obtained using a technique. that was unsatisfactory on the MSRE
+is shown in Figure 7. The results do not disprove the theoretical pre-
+dictions, but they do little toward verifying them either. Certainly,
+the results would have done little toward describing the reactor's re-
+sponse if the theoretical response were unknown, These data are shown
+primarily to display the system response at low, but significant, power.
+4A satisfactory testing technique for this reactor was not found until
+after the preliminary tests were completed, and it was not convenient to
+return to 1 MW to perform further tests. However, the good agreement be-
+tween the experimental results and the thecretical predictions at both
+higher and lower powers almost insures that the theoretical curve is
+very close to the actual response, hence the 1-MW theoretical curve may
+be taken as the actual response, In addition, this figure illustrates
+the importance of the testing technique which accounts for the difference
+in appearance of the results in Figure 7 and those in Figures 8 and 9.
+The scatter in the results shown in Figure 7 is due to inaccuracies in
+the indicated control-rod position which were accentuated by the testing
+technique.
+
+Typical results from tests which employed the most satisfactory
+testing technique are shown in Figures 8 and 9 for the reactor at 5 and
+8 MW, respectively. The results are in excellent agreement with the theo-
+retical curves except for the slight discrepancy at the higher frequencies.
+The dip in the magnitude-ratio curves at ~ 0,25 rad/sec (corresponding to
+a loop transient time of ~ 25 sec) results from temperature feedback from
+the external loop. During a periodic reactivity perturbation at a fre-
+
+quency of about .25 rad /sec, the fuel in the core during one cycle returned
+
+ 
+
+"This was the technique in which the neutron flux was forced to follow
+to follow the test pattern. It was necessary for the control rod to move
+almost continually during this type test and errors in the indicated control-
+rod position caused the unsatisfactory results. The technique is basically
+sound and could be well utilized on a system with favorable hardware,
+
+he technique that gave the most satisfactory results was one in
+which the control-rod position was forced to follow the test pattern. The
+rod moved to a new position and then remained stationary for several seconds
+until a different pulse was needed, This minimized control-rod movement
+and the associated errors,
+18
+
+ORNL-DWG 69-12051
+
+POWER LEVEL-1 Mw
+ANALYSIS METHODS
+
+© FOURCO
+® CABS
+THEORY
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+20 ; TY
+p———— ; i
+! ~ 101 248
+N C9
+60 : \ . |
+30 -
+©
+[3]
+2
+4 0
+et
+xT
+a
+-30
+| '®
+-60
+G
+io -120 |
+-90 = i ; {
+{0 2 5 10 2 3 10 2
+FREQUENCY (rad/sec)
+Fig. 7. Neutron Flux-to-Reactivity Frequency Response of the
+
+233J-Fueled MSRE at 1 MW.
+{
+
+PHASE (deg)
+
+19
+
+ot
+
+POWER LEVEL — 5Mw
+ANALYSIS METHODS
+v  FOURCO, CABS
+
+ORNL—-DWG 69-12245
+
+(EACH GAVE SAME RESULTS)
+
+— THEORY
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+30
+7'N
+iN
+0 3 JAN
+Neda NL
+-30 y
+v
+-60 :
+10™2 1072 10" 10
+FREQUENCY (rad/sec)
+
+Fig. 8. Neutron Flux-to-Reactivity Frequency Response of the
+
+233J-Fueled MSRE at 5 MW.
+20
+
+ORNL -DWG 69-12246
+
+POWER LEVEL =8Mw
+ANALYSIS METHODS
+
+a FOURCO, CABS, CPSD
+(EACH GAVE SAME RESULTS)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+— THEORY
+x
+c|®
+“lL
+> N
+2 N
+Z 30 +N
+a \ [
+i, %
+JBN
+N
+Rot i 2 NN
+bh
+-30
+1073 2 5 4072 2 5 10°! 2 5 400
+
+FREQUENCY (rad/sec)
+
+Fig. 9. Neutron Flux-to-Reactivity Frequency Response of the
+233J-Fueled MSRE at 8 MW.
+21
+
+to the core one period later and, because of the negative temperature coef-
+ficient of reactivity, produced a reactivity feedback effect that partially
+canceled the external perturbation. The dip is obviously present in the
+experimental results as well as in the theoretical curves; however, the
+dip in the experimental data is not as pronounced as the theory predicts,
+Since the magnitude of the dip has been shown? to be a function of the
+amount of salt mixing which occurs as the fuel circulates around the loop,
+this difference between the experimental and theoretical implies that not
+enough mixing was assumed in the theoretical model, Additional work with
+the theoretical model has shown that if the salt transport in the piping
+is represented by a series of 2-sec first-order lags (well-stirred tanks
+with mean holdup times of 2 sec) rather than the pure delays that were
+assumed in the earlier work, the dip in the experimental and theoretical
+responses are in good agreement.
+
+Below about 0.5 rad/sec, the magnitude ratio decreases as the power
+is increased. This substantiates the observation drawn from the time
+response plots; the degree of stability for the MSRE increases with power
+level. The lower magnitude ratic at the higher power levels over the
+frequency range in which thermal effects are important says, in effect,
+that for the same change in reactivity the fractional power (A power /powver)
+change will be less at higher power,
+
+The frequency-response curves shown in this document display the
+MSRE 's frequency response at several power levels. Of course, several
+tests were performed at several different power levels, but in order to
+keep the presentation as straightforward as possible, we chose To show
+the results from representative tests. Table 1 summarizes the freguency-
+response tests performed with the #33 fuel loading and indicates the
+scope of the testing program which included 28 different tests of approxi-
+mately one-hour duration each. Other experimental results for the 3%
+fuel loading are given in References 4 and 5. Complete results of theo-
+retical dynamic analyses are given in References 2, 5, and 6. Note that
+some tests were performed shortly after the start of operation with 2°U
+fuel, and others were performed near the end of operation with 2335 fuel,
+There were no indications that the response of the reactor had changed with
+
+operating time,
+22
+
+Table 1
+
+Information Related to Frequency-Response
+
+ 
+
+Testing of ©°°U-Fueled MSRE
+
+ 
+
+ 
+
+Integrated No. of
+Testing Power Power Tests
+Dates (MW-hrs) Level Performed
+
+10/15/68 0 100 W 1
+11/7-8/68 0 50 W 6
+1/16/69 86 1 MW 3
+1/20/69 435 5 MW 1
+2/3/69 2,390 8 MW 1
+2/17/69 L,080 5 MW 1
+2/20/69 L, 490 8 MW 3
+3/11/69 7,220 10 kW 1
+L/2L /69 14,000 8 MW 2
+5/26/69" 19,500 8 MW 9
+
+ 
+
+*
+
+These tests were performed for M. R. Buckner and
+T. W. Kerlin of the University of Tennessee as part of a
+graduate studies program.
+
+Qutlet Temperature to Power
+
+During the neutron-flux-to-reactivity frequency-response tests which
+were conducted at significant power levels, the response of a thermocouple
+(TE-100~1A) on the outlet pipe was also recorded. The data records then
+included power (or more specifically, neutron flux) and outlet temperature
+during a time in which the power was varied in a periodic waveform. Hence,
+the outlet-temperature~to-power frequency response could be determined at
+
+the same harmonic frequencies as the neutron-flux-to-reactivity frequency
+23
+
+response. The results of this determination could then be compared with
+the results of theoretical predictions.®
+
+The outlet-temperature-to-power frequency-response results from a
+test conducted during operation with £2°U fuel as well as two tests per-
+formed during operation with #32U fuel are shown in Figure 10. The experi-
+mental results of all three tests are essentially the same. This should
+be expected since the temperature response to a given change in power is
+a function of the thermal properties of the system, and these were changed
+very little with the change in fissionable material,
+
+Three theoretical magnitude ratio plots are also shown in Figure 10.
+Curve 1 is the as-calculated curve and curves 2 and 3 are this same curve
+multiplied by 0.5 and 0.1, respectively. Normalization of the theoretical
+by multiplying by 0.5 forces agreement with the experimental results at
+low frequencies and multiplying by 0.1 forces agreement at high frequencies.
+The reason for the discrepancies between the experimental and theoretical
+have not been explained leaving this as an area open for more analysis. It
+is of interest to note that in some experimental work!® performed by
+S. J. Ball and T. W. Kerlin in which they attempted to determine the re-
+sponse of outlet-temperature-to-inlet-temperature perturbations, they too
+found a larger degree of attenuation than had been theoretically predicted.
+
+The phase angle plots shown in Figure 10 are in good agreement if
+the theoretical thermocouple response to a power perturbation is delayed
+by 0.7 sec more than was assumed in the original calculation. (A pure
+delay gives a phase shift that changes linearly with frequency.) The
+theoretical response of the thermocouple was represented by a l-sec pure
+delay plus a 5-sec first-order lag. This was based on calculations per-
+formed by 8. J. Ball. This represents a good estimate, but could be
+in error by 0.7 sec for this particular thermocouple depending on its
+particular response characteristics and physical contact with the pipe.
+Ancther possible source of error is the estimate of the location of the
+thermocouple on the pipe.
+
+The experimentally-measured outlet-temperature-to-power frequency
+response verified that the basic thermal properties of the MSRE were es-
+
+sentially unchanged by the change in fuel loading. The disagreement
+(8T/8n) (°F/Mw)
+
+PHASE ANGLE (deg)
+
+Fig.
+
+2k
+
+ORNL -DWG 70-3423
+
+100
+50 235
+o FROM TEST ON 23%5U—FUELED SYSTEM
+® FROM TEST ON 233U-FUELED SYSTEM
+20 a FROM TEST ON 233U-FUELED SYSTEM
+10
+5
+2
+
+0.5  (® THEORETICAL
+@ THEORETICAL x 0.5
+@ THEORETICAL x O.1
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.2
+0.1
+0
+-60 N—
+° FI
+-120 N
+¢
+%\
+-180 %e
+—— THEORETICAL \
+—— THEORETICAL WITH 5
+-240 ADDITIONAL 0.70sec TIME LAG \
+s
+-300 | \ \
+1073 2 5 1072 2 5 ot 2 5 10°
+
+FREQUENCY (rad/sec)
+
+10. Outlet Temperature-to-Power Frequency Response of the
+MSRE with the Reactor at 8 MW.
+25
+
+between the theoretical and experimental magnitude ratio determinations
+makes it meaningless to draw any conclusions about the mixing effects in
+
+the circulating system.
+CONCIUSION
+
+The dynamic response of the 23FJ-fueled MSEE was analyzed by three
+different methods, each of which had deficiencies but each of which added
+information. The transient response of the neutron flux to a step change
+in reactivity at various power levels verified that the general response
+of the system was as anticipated, but the noisy flux signal made detailed
+comparison of the theoretical and experimental results difficult. The
+shape of the experimentally-determined neutron flux-to-reactivity fre-
+guency-response curves was in excellent agreement with the theoretical
+curves over most of the frequency range which was realizable with the in-
+stalled hardware. There were problems associated with finding a test
+method which would give good results, and erroneous control rod position
+indications necessitated normalization of some experimental results. The
+outlet temperature-to-power frequency-response determination did not agree
+well with theory but did show that the basic thermal properties of the
+MSRE were essentially unchanged by the change from 2357 to £73 fuel.
+
+At high powers, the MSRE is a highly damped system. It returns to
+its original power level rapidly with no undershoot or wallowing. At
+low power levels, the uncontrolled reactor tends to be sluggish and slow
+in returning to its original power level. With the reactor at 1 MW, it
+was observed that over L400 sec was required for the flux level to stabi-
+lize after a step change in reactivity. In summary, the MSRE was stable
+
+at all power levels and the stability increased with power as predicted.
+1.
+
+10.
+
+11.
+
+26
+
+LIST OF REFERENCES
+
+S. J. Ball and T. W. Kerlin, Stability Analysis of the Molten-Salt
+Reactor Experiment, USAEC Report ORNL-TM-1070, Oak Ridge National
+Laboratory, (December 1965).
+
+R. C. Steffy, Jr., and P. J. Wood, Theoretical Dynamic Analysis of
+the MSRE with U-233 Fuel, USAEC Report ORNL-TM-2571, Oak Ridge
+National Laboratory (July 1969).
+
+T. W. Kerlin and S. J. Ball, Experimental Dynamic Analysis of the
+Molten-Salt Reactor Experiment, USAEC Report ORNL-TM-1647, Oak Ridge
+National Laboratory, (October 1966).
+
+R. C. Steffy, Jr., Frequency-Response Testing of the Molten-Salt
+Reactor Experiment, USAEC Report ORNL-TM-2823, Oak Ridge National
+Laboratory (March 1970).
+
+MSR Program Semiann. Progr. Rept., Feb. 28, 1969, USAEC Report
+ORNL-4396, Oak Ridge National Laboratory.
+
+MSR Program Semiann. Progr. Rept., Aug. 31, 1968, USAEC Report
+ORNL-L43Lk4, Oak Ridge National Laboratory, pp. 46 - 52.
+
+S. J. Ball, A Digital Filtering Technique for Efficient Fourier
+Transform Calculations, USAEC Report ORNL-TM-1662, Oak Ridge National
+Laboratory, (July 1967).
+
+S. J. Ball, Instrumentation and Control Systems Division Annual Pro-
+gress Report, September 1, 1965, USAEC Report ORNL-3875, pp. 126-127,
+Oak Ridge National Laboratory (September 1965).
+
+T, W. Kerlin and J. L. Lucius, CABS — A Fortran Computer Program for
+Calculating Correlation Functions, Power Spectra, and the Frequency
+Response from Experimental Data, USAEC Report ORNL-TM-1663, Oak
+Ridge National Laboratory, (September 1966).
+
+MSR Program Semiann. Progr. Rept., Feb. 28, 1966, USAEC Report
+ORNL-3936, Oak Ridge National Laboratory.
+
+S. J. Ball, Personal Communication to R. C. Steffy, Jr., July 2k, 1968.
+\O QO OWI Ew DE
+
+27
+
+ORNL-TM- 2997
+
+INTERNAL DISTRIBUTION
+
+Ackermann
+Adams
+Affel
+
+. Anderson
+Baes
+
+Ball
+Bauman
+Beall
+Bender
+
+S. Bettis
+Blumberg
+Bohlmann
+Borkowski
+. Boyd
+Briggs
+Buhl
+Burke
+Cardwell
+Clark
+Cope, AEC-ORO
+Cottrell
+Crowley
+Culler
+Ditto
+Eatherly
+Engel
+Epler
+Ferguson
+Ferris
+Franzreb
+Fraas
+
+Fry
+Furlong
+Gabbard
+Giambusso, or -Washington
+R. Grimes — @¢, M. Watson
+Grinaell ©
+Guymon
+
+. Harley
+Harms
+Haubenreich
+Houtzeel
+
+IT. I,, Hudson
+
+W. H. Jordan
+
+°
+
+Haare RY
+
+°
+
+°
+
+°
+
+°
+
+SHOE gH OO oQE DEH NTO Gd de
+
+°
+
+°
+
+ERNE RED gS HH EEE sw ESQ
+
+2ommar
+
+a
+
+rg yd aRrOsgryHgHEY
+
+82.
+83.
+8L.
+85.
+86.
+87.
+88.
+89.
+90-9L.
+95.
+
+Kasten
+
+. Kedl
+
+Kerlin
+
+Kerr
+
+. Krakoviak
+
+Kress
+
+. Kryter
+
+it Laughon, AEC-O0SR
+Lundin
+Lyon
+MacPherson
+Martin
+Matthews,
+McCoy
+McCurdy
+McGlothlan
+. McIntosh, AEC-Washington
+. Mclain
+
+McNeese
+
+McWherter
+
+Miller
+
+Moore
+
+. Nicholson
+
+Oakes
+
+Perry
+
+Piper
+
+Prince
+
+Ragan
+
+Redford
+
+. Richardson
+
+. R. Riley, AEC
+
+W. Rosenthal
+
+M. Roth, AEC-0ORO
+
+A. W. Savolainen
+
+Dunlap Scott
+
+R. M. Scroggins, AEC
+
+Shaw, AEC-Washington
+
+H. Sides
+
+J. Skinner
+
+L, Smalley, AEC-ORO
+
+N. Smith
+
+Spiewak
+
+C. Steffy
+
+D. A. Sundberg
+
+OH emg
+
+~N
+m
+=
+
+PEERED EES RQEC OEE HE ONE EGE
+
+AEC~-OSR
+
+°
+
+mTROECSQuEPEPHEIPOOOD SOND QOQ DER
+
+= HP ==
+28
+ORNL-TM-2997
+
+INTERNAL DISTRIBUTION
+
+(continued)
+
+96. J. R. Tallackson
+
+97. R. E. Thoma
+
+98. D. B. Trauger
+
+99. F. N. Watson, AEC-Washington
+100. A. M. Weinberg
+101. J. R. Weir
+
+102. M. E. Whatley
+
+103. J. C. White — A, 8. Meyer
+10k. G. D. Whitman
+
+105. Gale Young
+106-107. Central Research Library (CRL)
+108-109. Y-12 Document Reference Section (DRS)
+110-112. Iaboratory Records Department (IRD)
+113. Laboratory Records Department, Record Coby (LRD-RC)
+114. Nuclear Safety Information Center
+115. ORNL Patent Office
+
+EXTERNAL DISTRIBUTION
+
+116-130. Division of Technical Information Extension (DTIE)
+131. Iaboratory and University Division (ORO)

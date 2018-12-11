@@ -1,0 +1,1936 @@
+“a
+
+“ra
+so
+
+-\
+
+An
+
+©)
+
+ny x! ”
+
+ORNL-TM-2405
+Contract No. W-7405-eng-26
+
+INSTRUMENTATION AND CONTROLS DIVISION
+
+DYNAMIC ANALYSIS OF A SALT
+SUPERCRITICAL WATER HEAT EXCHANGER
+
+AND THROTTLE USED WITH MSBR
+
+Francis H. Clark ~~ O. W. Burke
+
+[EGAL NOTICE moms
+
+work. Ne!
+
+pment sponsored :
+
+a8 an account of Oo pg behalf of the Commission:
+T
+
+tation, expressed or mplied, with respect © the accu-
+
+; OF : oe
+Jy ies he respect races disclosed in this repo
+——— of the Co
+" use of ABY fnformation: «person acting 8 penal 2 he Com or. woe oo
+Me y Commission, or emp. vy ee oon e re,
+ony or sone of motor of the Commission, oii Loyen ie Bo men
+| rov information
+such employee oF or ee way re
+- o his employment with such ;
+.
+
+' from the
+od righ ase of, or for damages resulting
+
+© privately owned
+
+b B. Assu
+
+disseminates or
+with the Commis
+
+JANUARY 1969
+
+- OAK RIDGE NATIONAL LABORATORY
+
+Oak Ridge, Tennessee
+operated by Lo
+UNION CARBIDE CORPORATION
+: for the
+
+U.S. ATOMIC ENERGY COMMISSION
+
+ETSTRIBUTION OF THIS DOCUMENT 5 UNU
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ou)
+ye
+
+ay
+
+«Xi
+
+CONTENTS
+
+Abstract
+
+Introduction
+
+Steam Generator Design and Model
+
+Partial Differential Equations of the System
+
+Reduction to Ordinary Differential Equations and Linearization
+Parameters of the Problem
+
+A Positive Feedback Problem
+
+Limitations of the Model
+
+Boundaries and Controls
+
+Results of Simulation
+
+Page
+
+12
+16
+
+18
+
+22
+
+23
+ 
+
+ 
+
+ 
+
+ 
+ay
+
+”
+
+oy
+
+DYNAMIC ANALYSIS OF A SALT-SUPERCRITICAL
+WATER HEAT EXCHANGER AND THROTTLE USED WITH MSBR
+Francis H. Clark O. W. Burke
+
+ 
+
+ 
+
+ABSTRACT
+
+A linearized, coarse space mesh model of a salt-supercritical water
+heat exchanger and the downstream throttle was simulated on analog
+computers. The effects on certain output quantities of changes in
+
+~ certain input quantities were noted. The output quantities were heat-
+exchanger water outlet temperature and pressure ’ salt outlet temperature,
+and enthalpy output. The input quantities were heat-exchanger water
+inlet temperature and pressure, salt inlet temperature, salt velocity, and
+throttle setting. Changes were studied only around design steady state.
+
+Sufficient input-output data were acquired to permit a greatly sim-
+plified representation of these components for further system studies in
+~ the neighborhood of design steady state. A tentative scheme of heat
+exchanger~-throttle conirol was devised to hold water outlet temperature
+within a 1°F range, and water outlet pressure within a few ‘pounds of
+design while enthalpy output follows demand.
+INTRODUCTION
+To design a control system suitable for an electrical power generation system
+with a Molten-Salt Breeder Reactor as a thermal source or simply to determine the
+control requirements of the reactor alone in such a system, it is essential to under-
+
+stand the dynamic responses of the major system components. It is economical and
+
+therefore customary to maintain a constant inlet temperature and pressure to the
+
+high pressure turbine and to vary mass flow with load. The turbine inlet temper-
+ature and pressure and the heat rate are, in fact, the variables i in the power
+
+generation section which are most closely controlled: the temperature and pressure
+
+-
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+to be near constant,and the heat rate to follow the load. The steam generator”
+
+and turbine are the components at which these variables are sensed and where the
+control loops make their action felt. The dynamic behavior of the steam generator-
+throttle complex is therefore crucial to determining control requirements in more
+remote parts of the system. We have, consequently, simulated and studied these
+components. The study was carried out on the Oak Ridge National Laboratory
+analog computing equipment, consisting of one EAI 221R and two EAI 16-31R
+
+computers.
+
+STEAM GENERATOR DESIGN AND MODEL
+The steam generator design which was studied may be described roughly as’
+follows. It is a vertical U-shaped heat exchanger, total length about 70 feet.
+It is a one shell pass (salt) and one tube pass (water) unit. There are 349 parallel
+water tubes. The tubes are of Hastelloy N, OD 0.50 in., thickness 0.077 in. The
+shell ID is 18.25 in. The mass flow rate of water is 6.33 x 10° Ib/hr, and of salt is
+3.66 x 106 Ib/hr. The entrance and exit temperatures of the salt were, respectively,
+
+1125°F and 850°F, and of the water, 700°F and 1000°F. The inlet and outlet
+
+ 
+
+* Although this is a supercritical system which, strictly, does not have a liquid,
+
+a boiling, and a steam section, we shall nonetheless use such terminology to describe
+
+the high density, the rapidly changing density, and the low density regions and shall
+
+refer to the component as a steam generator.
+*
+
+© af
+
+»»
+
+oo" Tr wh
+
+3
+
+water pressures used were 3800 psi and 3600 psi respectively. * Further details
+related to the design of this component are given in ref 1, p. 46 ff, case A.
+
+The system modeled has been vastly simplified from the design system. It is |
+believed, however, that the properties essential to the study of steady state control
+have been preserved. |
+
+The model is a single, water tubular channel surrounded by a salt annular
+channel. The cross-sectional area of each channel is taken equal to the total
+
+crosssectional areas of flow of water and salt, respectively, in the design system.
+
+~ Heat transfer coefficients were computed to be consistent with the steady state, local
+
+heat transfer and temperature profi les. The water-film heat transfer coefficient was
+taken to vary as the 0.6 power of the water velocity, and the corresponding salt-
+film coefficient as the 0.8 power of the salt velocity. |
+
+Compressibility effects in the water were dealt with explicit! y. The salt was
+
+i
+
+treated as an incompressible fluid.
+
+ 
+
+*The reference design gives 3766 psi as the inlet water pressure, and 3600 psi as
+the outlet. The static design,” however, neglected important compressibility effects
+
+and failed to achieve a system enthalpy balance . Both these effects, which are,
+
+in fact, probably not separate, are allowed for if one increases the inlet pressure to
+
+3800 psi.
+ 
+
+ 
+
+Figure 1 is a schematic representation of the modeled system.
+
+ORNL DWG. 68-13413
+
+ 
+
+| Sait Inlet
+Salt Outlet <+—o— m Va
+Water Inlet =e —p- Water Outlet Throttle
+
+ 
+
+Af ——
+Fig. 1. - Model of Heat Exchanger.
+Station 0 is the water inlet (salt outlet) end of the steam generator. Station M
+
+is the water outlet, salt inlet end. Station N is the throttle. MN is the pipe section
+
+connecting the steam generator to throttle.
+
+PARTIAL DIFFERENTIAL EQUATIONS OF THE SYSTEM
+
+The following set of partial differential equations was taken to describe the
+
+system:
+2 +28 -0 | (1)
+REP 2)
+25 4A (om) AHA a ©
+Orn Com ot = (7 = 0) 2A 4 (5 - o) 2A “
+Cos ot = (0 - 0) 2A +p, Cos wee (5)
+nn
+
+«t  -
+
+2}
+
+» ,
+
+\
+
+[L}
+
+S=ph Ww
+
+P = P(o, h) oo | 8)
+
+T="T(,h) : 9
+where : | .
+
+p = water density (Ib/ i),
+
+V = water velocity (ft/sec), positive for motion from low to high X,
+P = water pressure (psi),
+
+K = unit conversion factor (slugs per Ib) x (sq in. per sq ft),
+
+C = friction coefficient in water tube,
+
+a = temperature in Hastelloy N wall (°F), -
+
+T = temperature in water (°F),
+
+© = temperature in salt (°F),
+
+(HA) = heat transfer coefficient (BTU/sec-°F), taken as
+12 for metal to water and 23 for salt to metal, -
+dv = differential volume in system,
+
+p= metal density (Ib/$6),
+
+p= salt density (I/F), oO |
+
+Com = specific heat at constant pressure for metal i
+
+Cos = specific heat at constant pressure for salt,
+W = salt velocity (ft/sec), positive for motion from high to low X.
+
+Equations (1), (2), and (3) are the conservation equations in water for
+
+mass, momentum, and energy, respectively. Equations (4) and (5) are energy
+ 
+
+conservation equations in the metal and the salt; (6) and (7) are definitions of
+R and S; (8) and (9) are two different aspects of the equation of state.
+
+At the throttle, which terminates the system at the downstream end, we
+
+write! 8)
+BES
+where
+As
++ = throttle flow area as fraction of steady state,
+
+T/ = number of degrees above some reference temperature (reference
+about 750°F),
+m, b = empirical coefficients.
+Equation (10) is, of course, a boundary condition.
+
+Representation of the friction term in (2) as CV? is a simplification. The
+
+kinetic energy and the potential energy, both of which are small compared with
+
+the enthalpy, have been omitted from the X derivative operand in Eq. (5). In
+Eq. (5) the kinetic and potential energy terms are again omitted from the space
+
+derivative. The space derivative of the kinetic energy term in (5) is zero by
+
+reason of the assumption that the salt is incompressible. Neglect of the potential
+
+energy terms is equivalent to an assumption that the system is horizontal. Both
+
+terms are small in any event.
+
+(10)
+a}
+
+»
+
+4]
+
+wo
+
+All variables are known at all values of X at t= 0. Further, at all values
+
+of 1,P(0), T(0), 6(M) are arbitrary functions of time (0 represents water inlet
+
+location and M represents water outlet or salt inlet as in Fig. 1).
+
+REDUCTION TO ORDINARY DIFFERENTIAL
+
+EQUATIONS AND LINEARIZATION
+
+The analog computer can deal continuously with only one independent variable.
+
+Hence, to solve partial differential equations, we must apply a mesh or differencing
+
+scheme to all but one of the independent variables—- in our case, to the X variable.
+
+After differencing, the equations are
+
+ 
+
+ 
+
+ 
+
+ 
+
+n_ 1 = _5
+dM (Ro R)
+n-1,n
+R_ -
+n-1 _ 1 rg Bg
+ot TL n=1"n-1 Re
+n-1,
+3S
+hn 1 (zr o =o)
+of {Sa-1%1 Savas?
+n-1 SE
+: aq (HA) 4 F -3) @R, 23
+Xa KZ (3 5),
+ot Mook Spm Toa) Com
+For Fh2g E 5) + (3, -
+at M C ie” 9)
+: sn ps Me
+“where Sel IT
+M., = salt mass between n and n=1,
+
+VK EF 5}- c v2 z
+
+FR)
+TN 12
+— GT,
+
+6, x )
+
+50)
+
+(1a)
+
+(20)
+
+(3a)
+
+(4a)
+
+(5a)
+ 
+
+ 
+
+ 
+
+"M = total mass between k and k-1,
+
+m
+5,7, @
+5S =7 Fh | (7a)
+PF =FG, TF) oo | (8a)
+T = T(5,, h) | : (9a)
+GA
+"NTT eT
+k=n ifn odd and n-1if n is even.
+Each time-dependent variable has the symbol " —" above it.
+
+fo=f +f a
+
+where
+
+(1) = the variable at time t
+
+f = the variable at time t =0
+,
+
+f (1) = increment in the variable since t =0
+
+We shall neglect all terms involving products of increments. Our set of linearized
+
+equations thus becomes
+Ar
+
+i
+
+n
+
+-)
+
+i"
+
+oR
+
+ 
+
+ 
+
+n-1 1
+
+tL _ {Ra-1.0 Va-1*Va-1,0%-1 "Ra,0 Va = Vi, of
+* KP - Po) }- 2C Van1,0 Va-1
+
+3S -
+
+n 1 Ce
+?; Lo { Sa-1,0 V1? Va-1,0%0-1 - Sn,0"n - Vn, 0%n }
+
+Vv %" 'k v dV k
+kK k
+
+2, (HA), (HA)
+
+kW 0 k,23,0 , _
+
+ome Meme Goma)
+mk “pm mk
+
+ 
+
+ 
+
+MiCom OY k
+
+0,1 HAY 230
+
+ 
+
+-1
+
+= —l
+M, C
+sk ps
+
++
+
+w
+
+0
+M
+
+sk
+
+©, 8. i +
+
+) % . Wr : M,
+
+; n, 0” %n-1 0
+
+Vv, +
+
+. (4, 0 _ 8,0) OHA) 53
+
+Mok Com
+
+w
+
+ 
+
+«©
+
+(e
+—_— I
+My
+
+ps
+
+)
+
+w
+
+aW
+
+T0790 2H 1p Gy omg) AHA) 9
+| WwW
+
+Ww
+
+(1b)
+
+(2b)
+
+(3b)
+
+(4b)
+
+(5b)
+ 
+
+ 
+
+10
+
+R =PnoVatV (6b)
+
+n n,0°n
+
+n_ Poon * hp, on (7b)
+
+P = +), (SF hb, | (8b)
+
+’
+
+dT~. |
+T,=(& dh h, (9b)
+
+Ps
+At A
+
+"= of A
+/
+No ( A)
+
+-bT,, } | (10b)
+
+Additionally, we compute a fractional change in the flow of enthalpy from a
+
+‘region bounded by nodes r and s as
+
+ 
+
+(42 ss 5,0's,0 rt r,0r,0 (12)
+H Vv
+
+Linearized, this equation becomes
+
+AHN _ 5,0's vs, 0% ~ 5,00” Vo oS, : (12b)
+
+H ers 3 5,0s, 0 =5,0 Vi,0
+
+Figure 2 is an analog computer diagram of the system described by Eqs.
+"(1b) through (10b) and (12b). The subscripts rand s in (12b) are, respectively, 3
+
+and 7 in Fig. 2. The subscript n runs through the values
+© n=3,4...N
+N = 8 (throttle).
+11
+
+ORNL DWG. 13h1l
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+\I4 ).1023
+
+ 
+
+2 | 27.
+°
+0
+= .
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Blisze
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+-[T310)
+
+38 2 Ga)
+2
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+.52¢3 ol
+2
+
+ther : BR : (8) .8333(129
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+29
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+G2 57, 6250
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+J
+L218
+om
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+J
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 2. Analog Circuit Diagram.
+|
+
+|
+
+ 
+
+ 
+ 
+
+ 
+
+12
+
+There are a few optional connections in Fig. 2 beyond those indicated by the
+above equations. These optional connections are feedback control loops which
+were developed in the study and which will be dealt with in the section entitled
+
+Boundaries and Controls, p. 22.
+
+PARAMETERS OF THE PROBLEM
+
+Initially, the system was cut into eight spatial nodes whose location in the
+laboratory reference frame was held fixed. With so few nodes it would have been |
+better to permit at least some of them, those associated with the "boiling" region,
+to float. The problem was already of such complexity, however, that we could
+not possibly meet the equipment demands of such an approach,and the nodes were
+| assigned fixed coordinates.
+
+Steady state design values of the system variables are given in Table 1.
+Table 2 gives the derived parameters and constants at various nodes. Table 3 gives
+the sets of parameters used to represent the equation of state of water. Other
+parameters used in the study include
+
+Cross-sectional area of water flow = 0.2277
+
+Cross-sectional area of salt flow = 1,34 f#
+
+b= 0.00065 °F)’
+
+1+ bT, ~ 1
+a
+m( oy Po
+A +b1L = 772,22
+0
+Wo = 6.1 ft/sec.
+
+ 
+~
+
+Table 1. Steady State Design Value of Variables
+
+ 
+
+ 
+
+Water | Water Water Water Water Salt Mean Metal Traeafor
+Node Pressure Temperature Density ~~ Enthalpy Velocity Temperature Temperature per Node
+
+(psi) | (°F) (Ib/f) (Btu/Ib) (ft/sec) (°F) (°F) (Btu/sed
+1 3800 700 34.13 769.2 22.63 850 775 -
+2 | 797 708.9 82.16 797.7 24.01 862 782 5012.5
+3 3794 717.8 Ho 29.58 826.2 26.01 74 791  s012.5
+4 wn 7m 16.00 988.35 48.26 942.5 826  28517.5
+5 3740 773.7 - 9.54 1150.5 80.95 1011 © ge3 2517.5 |
+6 3688 en. 7.33 1285.75 105.35 1068 974 23786.4
+7 3600 1000 5.03 1421 153.52 1125 . | 1062.5 23786.4
+
+8 3525 997 491 1416. 160.48  .— - =
+
+ 
+
+€l
+ 
+
+ 
+
+Table 2. Nodal Constants and Derived Parameters
+
+ 
+
+ 
+
+ 
+
+Nodal Heat Transfer Coefficient Metal Salt |
+Node Friction Metal to Salt to Specific Density Specific Density
+Node Length = Coefficient ‘Water Metal Heat Heat |
+(fr) (Ib/ft%) Btu/°F-sec)  Btu/°F-sec) (Btu/°F-Ib) (lb/ft)  (Btu/°F-Ib) (lb/ft)
+3 |
+2 2.90 8.64 34.29 31.33 0.112 548 0.36 124
+3 2.90 7.37 34.29 31.33
+4 14,50 9.05 160.2 122.4 0.113 548 0.36 124
+5 14.50 3.59 160.2 122.4
+6 14.50 | 2,36 138.1 126.5 0.115 548 0.36 124
+
+7 14.50 2.31 138.1 126.5
+
+g 150 0.049
+
+yl
+
+ 
+
+ 
+C CU) » . po . LH » C
+
+Table 3. Parameters Representing Equation of State by Nodes -
+
+Node “® (BD
+
+ 
+
+@ EEF DB @
+
+ 
+
+h
+3 a N 0.0046 - -0.218 = -0.032 2.63
+4. L309 223 0.138 8.824
+5° 8.33 5263 1.25 29.41
+6 8.33 526.3 1.25 29.41 a
+7 8.333 52.3 . 1.25 29.41
+
+8. 8.33  . 52.3 1.25. 29.41
+
+ 
+ 
+
+ 
+
+ 
+
+16
+
+A POSITIVE FEEDBACK PROBLEM
+
+Consider the equation
+
+i f) — g(t) (1 3)
+
+If £(X, 1) represents a quantity having a net motion in the space coordinate frame,
+
+ 
+
+ 
+
+then
+dX
+dix, 1) _ aft) fF 3f(X,1) (130)
+dt ot dt X 7
+where
+Xe =X coordinate of f. Then, writing
+Xe
+Veo, (14)
+we have
+AX. v2ARD = gn, (13b)
+For the purposes of a numerical integration in X,we shall define
+h* =ah .+bh , (15)
+
+and
+hp sh Xp)
+n = h x)
+
+= mean value of h on the interval X yr X) .
+8)
+
+1]
+
+wt
+
+17
+
+We will assume both a positive and b non-negative (as they are in any reason-
+able rule that occurs to us). Further, for definiteness, let us assume that
+X > X _jand that V >0; that is, that motion is from low to high values of X.
+Let us also assume that the boundary condition on f is applied at high values of X,
+so that, in a marching numerical integration, the value at X will be known and the .
+
+valve at X 1 will be solved for. Let us now integrate Eq. (13b) over X to yield
+
+     
+
+    
+
+of KU . Co
+
+x, =X) 57 eM -VEM-f 1) Qe
+
+X_ =X) 20-1 =vi _m+{x -x__)g*@® - (16)
+nn? SFT Val f Vn" n=1"9n Y
+
+Nn | of
+VEO XX Jb)
+
+ 
+
+We have, for simplicity, assumed that Vis not a function of X. Note that
+the terms in the brackets in (16a) are all known at the time one is solving for fo .
+Hence, the equation is of the form
+
+£00 c0 Sw
+
+A>0 (18)
+
+Condition (18) is the condition of positive feedback, which implies instability °
+
+- of F unless G satisfies some rigorous condition, For example, if
+
+w+ ol < Ho - - Ss (19a)
+
+a>0
+ 
+
+ 
+
+ 
+
+18
+ast» o, Ma constant, then F(t) approaches a limit. Or if
+
+AF(t) + G(t)
+
+EG <0 E (19b)
+
+for F(t) #0 as t » »; then F(t) is bounded and approaching zero or is constant.
+
+If either (19a) or (19b) is satisfied, it implies, of course, that G(f) contains
+implicitly some negative feedback that compensates for the explicit positive feed-
+back AF(t) in (17) and (18).
+
+Note that the positive feedback in (17) and (18) was due entirely to two
+circumstances :
+
+1. That a in (15) was taken positive.
+
+2, That the direction of integration was upstream; that is, that the
+boundary condition was applied at the high-value end of X,while the velocity V
+was positive.
+
+It is clear that when these two conditions for positive feedback are met,and if
+there is an overall implicit negative feedback contained in G by reason of the
+satisfaction of (19a) or (19b), one must be careful in what one does with G not to
+destroy the sometimes delicate balance. This problem and these considerations
+
+will be found to be very relevant to the problem at hand.
+
+LIMITATIONS OF THE MODEL
+In checking out the problem on the analog computer it was found that there
+were instabilities generated in the first two nodes. We have not made a complete
+analysis of these instabilities, but we did arrive at a partial understanding of them,
+
+at least.
+17}
+
+.
+
+19
+
+First, we note that the explicit positive feedback of (17) and (18) is present.
+
+- [Boundary condition (10b) is applied at high X, and V is positive; hence, both
+
+conditions for this kind of feedback are met.] There is a negative feedback due
+to friction which, in all nodes except one and two, overcomes the positive feed-
+back. Other terms which contribute to the implicit negative feedback are less
+tightly coupled to the flow integrators. It is believed that the spatial nodes form
+such a coarse mesh that this implicit feedback does not arrive with the gain and
+phase necessary to insure stability.
+
+The first two nodes, as can be seen in Tables 1 and 2, comprise about 10% of
+the length and heat transfer capability of the system. They further are confined
+to the "water" section, that is, the region where the water density is high and is
+changing reasonably slowly. The "boiling" region lies beyond them.
+
+In order to rid the system of the instability, the first two nodes were arbitrarily
+excluded and the water entrance boundary was placed at node three. Such drastic
+action was taken only with great reluctance. In extenuation it is argued
+
+1. that only about 10% of the system is excluded;
+
+2. that from the viewpoint of dynamics the water region; which was
+excluded, has the least changeable characteristic on account of its near
+incompressibility ; - :
+
+C3 that the instability excluded was almost surely introduced by the numerical
+
+~ scheme employed and would not therefore be a physical instability;
+
+isl 4. that correction of the instability would probably require numerical methods
+
+which imply far more computing equipment than the amount available.
+J
+ 
+
+ 
+
+20
+
+“In any event, the first important limitation of the model is the truncation
+of the water section.
+
+As indicated in earlier sections the actual system is a bundle of 349 parallel
+water tubes. The system as modeled is a single water tube. Parallel channel systems,
+by reason of interactions and ‘oscillations possible between channels, are almost
+always subject to certain kinds of instabilities which simply do not exist in a one-
+channel system. The restriction to one channel was dictated by the limited amount
+of computing machinery available. The second important limitation is, therefore,
+the single water channel.
+
+Reference to Table 1 will show that from node 3 to node 7 the water density
+changed by a factor of about 6. Clearly, that indicates too broad a range of
+physical variation to be treated at all adequately with only five nodes. Again
+equipment limitations dictated the restriction. A faithful spatial representation
+would have demanded many additional nodes. The third important limitation is
+the coarseness of the spatial mesh.
+
+We have already described the procedures by which the problem was linearized
+and higher order terms neglected. In view of the linearization, one should place
+no faith in the validity of the description of any system disturbance which leads to
+a change of more than 10% in any system variable. Small changes about design
+point are sufficient to permit studies related to design of a steady state control
+system. In this the linearized model is sufficient. It is insufficient, however, to
+
+study an automatic control system as it makes large changes in load demand, for
+
+»
+a
+
+»
+
+“
+
+21
+
+example. . Essentially all instabilities which will be of interest in a real system |
+are non-linear. So are all accident events. The linearized model is of little help
+in the study of such non-linear events.
+
+It would have been possible with available equipment to have simulated some
+of the non-linear aspects of the system. This was not done for the following
+reasons; |
+
+1. It was believed, and subsequent experience showed it to be so, that the
+problem would place very severe demands upon machine performance. Linear com~
+ponents are generally less troublesome in operation than non-linear. Hence, lineari-
+zation increases the success s probability of the problem. |
+
+2, The very coarse space mesh demanded that dynamic changes be restricted
+
+to fairly small changes from steady state. For any large amplitude, spatial effects
+
+would be badly distorted on the coarse space mesh. This amplitude limitation, in
+
+_ effect, confines the problem to the region of linearity in time.
+
+3. Not all non-linear effects could be handled with the equipment available.
+The fourth major limitation of the model is, therefore, the neglect of non-
+linear effects. 2 |
+| It is evident in each of these impartant restrictions on the model that the
+limited amount of canputing equipment available causes the restriction on the model.
+
+This ought not to be surprising. The dynamic behavior of a once-through boiler is
+
+known to be tremendously complicated.
+
+Such systems have been successfully studied on hybrid computers, but not on
+
+machines of lesser capability, digital or analog. Hence, to attempt the study
+ 
+
+ 
+
+22
+
+on an analog machine, or on anything less than a hybrid, was to insure that
+something less then a full study be made.
+
+As has been previously indicated this abbreviated model should answer some
+important questions about control in the neighborhood of design steady state.
+It should not be adequate to handle questions of control following large load
+
+changes, of non-linear stability, or of accidents.
+
+BOUNDARIES AND CONTROLS
+We have already indicated that the specification of the water pressure and
+temperature at boundary 0, in Fig. 1, and the salt temperature at boundary M
+are left available to the user as boundary conditions. We have noted that R, P, and
+
+T are connected by Equation (10b) at the eighth node, and this relation serves as
+
+ 
+
+a boundary condition on R. In this relation >, the throttle setting, can
+be varied as an additional control at the disposal of the user. The final available
+control is "W"”, the change in the salt velocity.
+
+All of the above controls can at the user's option, be set to a value selected
+by the user. (With a linearized modzl, of course, change of any system variable by
+more than 10% from design steady state would probably be unjustified.) Provision
+has also been made to operate some of these controls, at the user's option, with a
+feedback error signal. After some experimentation with the system it was determined
+
+that the following feedback signals should be optionally incorporated for investigation.
+LJ
+
+ot
+
+Feedback Signal
+
+Heat Output
+
+Outlet Water Temperature
+
+Salt Velocity
+
+Outlet Water Pressure -
+
+Variable Changed .
+
+“Throttle Setting
+Salt Velocity
+"Inlet Salt Temperature
+
+Inlet Water Pressure
+
+Table 4 identifies the amplifier symbol in Fig. 2 corresponding to each of the
+
+above variables.
+
+Table 4. Variable Coding on Circuit Diagram )
+
+ 
+
+Variable
+Heat Output
+Outlet Water Temperature
+Salt Velocity:
+Outlet Water Pressure
+Throttle Setting oo
+
+Inlet Salt Temperature
+
+“Inlet Water Pressure
+
+Inlet Water Temperature
+
+Water Mass Flow Rate
+
+Amplifier Code No.
+
+48
+18;
+004
+40,
+19,
+1203
+513
+08
+Tn
+
+ 
+
+RESULTS OF SIMULATION
+
+Five variables have been reserved to be driven by feedback signals if desired.
+
+They are inlet water temperature Tz (063), inlet water pressure P3 (513), inlet
+ 
+
+ 
+
+ 
+
+24
+
+salt temperature 87 (203), salt velocity W (003), and fractional throttle setting -
+ALA (19), It can be seen in Fig. 2 that each of the above variables is an
+integrator output. Each of these integrators is provided with first-order lag circuitry.
+All of them except (063), the inlet water temperature, are provided with an option to
+switch them out of the first-order-lag arbitrary input circuitry into an errorsignal-
+feedback circuitry. These feedbacks will be dealt with shortly. Not shown in
+Fig. 2 but available with minor patching changes is the capability of changing each
+of these variables by an arbritrary amount in step fashion. | oo
+
+The variables which we wish to observe most carefully with a view to their con-
+trol are outlet water temperature Ty (18,), outlet water pressure P; (407), heat
+output AH/H (48), salt velocity W (003), and water mass flow rate (75).
+
+A set of eight diagnostic runs was performed. Each run started from design
+steady state, and in each run a single variable was changed in a first-order lag or
+a step. Table 5 summarizes what was done in each of these runs. Figures 3 through
+10 are time traces of these runs showing the effects on important variables. From
+these results rough gain-lag information can be estimated by examining steady states
+before and after excitation. This information is summarized in Table 6. Use of
+such information will permit a much abbreviated description of the steam generator
+for incorporation in a system analysis.
+
+Attension is next fixed on feedback control schemes. No attempt was made to find
+anything like optimum control. There would be no point to such an attempt at this
+
+stage of design. Accordingly, only simple integrating feedbacks were used.
+
+A]
+25
+
+Table 5. Summary of Diagnostic Runs
+
+ 
+
+Variable Changed
+
+Nature of Change
+
+ 
+
+Run No. Fig. No.
+27 Throttle Increased Setting 5% on 1 sec 3
+| A1/A) first-order lag
+28 Inlet Water Increased 5 psi 4
+Pressure, P3 on lI-sec first-order lag
+29 Inlet Water Increased 5 psi in step 5
+Pressure, Pj; :
+30 Inlet Water Increased 5°F on l-sec first- 6
+Temperature, Tj order lag
+31 Inlet Water Decreased 5°F in step 7
+. Temperature, T3
+32 Inlet Salt Increased 5°F in step 8
+Temperature, 67
+33 Inlet Salt : Increased 5°F on 1-sec first- 9
+Temperature, 67 order lag
+4 ~ Salt Velocity, W Increased 104 (0.61 ft/sec) “10
+
+on l-sec first-order lag
+
+ 
+ 
+
+Table 6. Gains and Lags from Diagnostic Runs
+
+ 
+
+Water Outlet
+Inlet ~~ Run Temperature, Ty
+Quantity Gain Lag (sec)
+
+Salt Outlet Change in Heat Water Outlet . Water Outlet
+Temperature, 04 Rate, AH/H Pressure, Py Mass Flow Rate, Ry
+
+Gain lag (sec) Gain Lag (sec) Gain Lag (sec) Gain Lag (sec)
+
+ 
+
+Inlet 29 0.1°F/psi <0.1
+
+Water
+Pressure, P3
+
+Throttle 27 3.4°F/4
+AT/A
+
+Inlet 30 1.6°F/°F
+Water
+Temperature,
+
+Ts
+
+Inlet 33 1.2 °F/°F
+Salt
+
+Temperature,
+67
+
+Salt 34 1.4°F/4
+
+Velocity, W
+
+4
+
+4
+
+6
+
+6
+
+0.6% /psi 8  +0.26%/psi <0.1 1psi/psi <0.1 0.04 %/psi <0.)
+
+-1.2°F/% 1 0.524/4
+
+—
+
+Apsi/d 10 144 <0.1
+
+'0.92°F/°F 10.5 -0.24%/°F 2 -l.4psi/°F 6 -0.164/°F 1
+0.6°F/°F 12 0.08%/°F 8 -0.4psi/°F 12 -0.24/°F 2
+0.75°F/%¢ 12 " 0.19/% 8 -0.7psi/%4 10 -0.12%/% 1.5
+
+ 
+
+Cc. .
+
+9z
+
+ 
+ 
+
+Fig. 3.
+Throttle.
+
+ 
+
+ante muna
+
+ 
+
+~ First-Order Change in
+
+27
+
+BUFFALO. NEW YORK
+
+‘Fig. 4. First-Order Increase
+Inlet Water Pressure.
+
+ 
+
+in
+ 
+
+ 
+
+Fig. 5.
+Water Pressure.
+
+Step Increase in Inlet
+
+28
+
+ 
+
+Fig. 6. First-Order Increase in
+Inlet Water Temperature.
+
+1»)
+ 
+
+v Fig. 7. Step Decrease in Inlet
+Water Temperature.
+
+29
+
+ 
+
+~ Fig. 8. Step Increase in Inlet
+‘Salt Temperature. :
+ 
+
+ 
+
+30
+
+ 
+
+ 
+
+ESRECORDIND EHARTE] anAMeC CONT
+
+ 
+
+Fig. 9. First-Order Increase in Fig. 10. First-Order Increase in
+Inlet Salt Temperature. Salt Velocity. :
+31
+
+The question to which an answer was sought was whether a scheme of control
+could be found which would
+
+n be generally consistent with the expected dynamic response of the reactor-
+heat exchanger; | |
+
+| 2. provide a heat rate which closely followed load demand;
+
+3. hold water outlet temperature within a 1°F band of variation;
+
+4. hold water outlet pressure within a small (but unspecified) band of
+variation. |
+
+To regulate outlet water pressure, a feedback connection from outlet water pressure
+to inlet water pressure was constructed as shown in Fig. 11. Run 35 was made
+with the connections and gains di shown in Fig. 11. The system was excited by a |
+10% increase in salt velocity on a 1-sec first-order lag. Figure 12 shows the
+results of this run. With other variables ignored the outlet pressure is very satis-
+factorily held within a range of 21b of steady state, and these small fluctuations
+damped out within 12 sec.
+
+Figure 13 shows the circuitry for sending a feedback signal from the heat rate
+amplifier (48,) to the throttle integrator (19). Also shown on that figure is the
+circuitry for inserting heat demand by way of integrator(5,). }
+
+Runs 36, J7A, 378, and 7¢ were conducted to find an appropriate feedback
+from heat rate to throttle in order to hold the heat rate stably on a selected value.
+
+[The value selected is determined by the output of (57). This output was held at
+ 
+
+ 
+
+32
+
+ORNL DWG. 68-13415
+
+LC. OT. 1.0000
+
+SEE Ep
+[2 fo]
+
+10
+
+Fig. 11. Pressure Feedback
+Circuitry.
+
+Fig. 12. Salt Velocity
+Change with Pressure Feed-
+back (Run 35).
+
+ORNL DWG. 68-13416
+
+   
+
++100V-100V
+
+Fig. 13. Circuitry for Heat Rate,
+Heat Demand, and Throttle Feedback.
+33
+
+zero with FS3 open during these runs. ] In these runs the gain in the feedback
+
+lags was varied as follows:
+
+ 
+
+Run No. Setting-Pot 35, Gain Pot 35, to (19)
+36 0.05 10 |
+7A | 0.2 1
+7. 0.05 1
+37¢C oa | Co
+
+In each of these runs the system was excited when in steady state by increasing salt
+
+velocity by 10% on a 1-sec First-order lag. Figures 14, 15, 16, and 17 are
+
+the time tracer of Runs 36, 7A, 37B, and 37C respectively. Figure 14 shows a
+
+classical divergent oscillation caused by too much gain. Figures 15, 16, 17 are
+
+all fairly comparable showing reasonable stability over a broad range of gain. The
+
+pressure controller (Fig. 11) is still in the system, but there is a more lively variation
+.in outlet pressure with the throttle control also present. Configuration 37C (Fig. 16)
+
+was chosen as a satisfactory compromise between heat rate and pressure control.
+
+With pressure and heat-rate controls in, attention was turned to water outlet
+
+temperature. Figure 18 shows a feedback path connecting water outlet temperature
+
+T; (18) to salt inlet. remperature 87 (205). Runs 38A and 388 were conducted
+
+with the following values set on the components in Fig. 18:
+
+Run P29 PI K Gain P29 to (20)
+| 38A 0.1 0.009 10 1 |
+
+38 0.1 10.0990 1
+ 
+
+ 
+
+ 
+
+CONTROLS CORPORATION BUFFALD, NUW YORK
+
+ 
+
+Fig. 14. Salt Velocity Change Fig. 15. Salt Velocity Change
+with Pressure and Throttle Feedback with Pressure and Throttle Feedback
+(Run 36). (Run 37A).
+or
+
+ 
+
+Fig. 16." Salt Velocity Change
+
+with Pressure and Throttle Feedback
+
+(Run 37B).
+
+35
+
+ 
+
+- snerenmewsn BAECORDING.
+
+ 
+
+Fig. 17. Salt Velocity Change
+with Pressure and Throttle Feedback
+(Run 37C). |
+
+ 
+ 
+
+ 
+
+- 36
+ORNL DWG. 68-13417
+
+i> EN DS
+[v7] | [ke] |
+
+Fig. 18. Circuitry for Feedback from Water Outlet Temperature to Salt
+Inlet Temperature.
+
+The system was excited from design steady state in each of these runs with a |
+5% increase in heat demand (see Fig. 13) inserted at a ramp rate of 5%/min.
+
+Figures 19 and 20 are the time traces of Runs 38A and 38B respectively.
+Figure 19 shows an 8°F variation in water outlet temperature, completely |
+unacceptable. Figure 20 shows a variation a shade over 1°F. This would be very
+nearly acceptable. However, the feedback circuitry does not reflect the very con-
+siderable time delay to the salt inlet temperature 6; that would be caused by the
+presence of the reactor and the primary heat exchanger. (The pressure and throttle |
+controls were present in these runs.) |
+
+Run 39A was like 38B except that the inlet salt temperature 67 was inserted
+through a 10-sec first-order lag. Figure 21, which is the time ace, is oscillatory
+and diverging. Run 39B is like 39A but with feedback gain reduced to 1/10 its
+value in 39A. Further, the excitation was limited to a 3% heat demand increase.
+Figure 22 shows the system now convergent but with an unacceptable oscillation.
+
+In order to avoid the oscillation introduced by the time lag on gy, it was
+
+determined to control the water outlet temperature by varying salt velocity. This
+
+makes possible a much quicker response. The salt velocity could then be returned to
+
+/
+©)
+
+Tah
+
+37
+
+ 
+
+Fig. 19. Heat Demand Change with Water Outlet Temperature to Salt
+Inlet Temperature Feedback (Run 38A).
+ 
+
+ 
+
+ENIEONSIRG HARTY) onary
+
+ 
+
+ 
+
+Fig. 20. Heat Demand Change | Fig. 21. Heat Demand Change
+
+with Water Outlet Temperature to Salt with Water Outlet Temperature to Salt
+
+Inlet Temperature Feedback (Run 388). Inlet Temperature Lagged Feedback
+(Run 39A).
+awh a
+
+39
+
+its normal value by the slower responding salt inlet temperature. Figure 23 shows
+the feedback circuitry. used, In Run 40 this circuitry, along with the pressure and
+
+throttle controls of Figs. n and 13, was employed. Figure 24 is a trace of the run.
+
+© REFERENCES
+1. ORNL General Engineering and Construction Division, Design Study of a
+Heat Exchange System for One MSBR Concept, ORNL-TM-1545 (Sept. 1967).
+
+2. J. Kenneth Salisbury, Steam Turbines and their Cycles, Wiley, New York,
+1950.
+
+3. Steam, lis Generation and Use, 37th ed., Babcock and Wilcox Co., New
+York, 1955.
+
+ 
+ 
+
+ 
+
+ORNL DWG. 68-13418
+
+ 
+
+- Fig. 23. Two-Stage Water
+Outlet Temperature Control Circuitry.
+
+ 
+
+ 
+
+. Fig. 22. Heat Demand Change Rasen
+with Water Outlet Temperature to Salt Fig. 24. Heat Demand Change
+Inlet Temperature Lagged Feedback with Two-Stage Water Outlet Temper=
+(Run 398). ature and Control.
+[23
+
+PONG OR ON
+
+10.
+
+11,
+12,
+13-17.
+
+18.
+19-33.
+
+34.
+35.
+
+37.
+38.
+
+40.
+41.
+42,
+43.
+
+45.
+
+47.
+
+48.
+49.
+
+100.
+
+101. :
+
+41
+
+ORNL-TM-2405
+
+INTERNAL DISTRIBUTION
+
+J. L. Anderson
+
+50.
+
+R. E. MacPherson
+
+S. J. Ball 51.. H. E. McCoy
+H. F. Bauman 52. H. F. Mc Duffie
+S. E. Beall 53. J. R. McWherter
+M. Bender 54. R. L. Moore
+C. E. Bettis 55. E. L. Nicholson
+E. S. Bettis 56. . L. C. Oakes
+D. S. Billington -57. R. W. Peelle
+E. G. Bohlmann 58. A. M. Perry
+C. J. Borkowski 59. B. E. Prince
+G. E. Boyd 60-62. M. W. Rosenthal
+R. B. Briggs 63. - Dunlap Scott
+O. W. Burke 64. W. H. Sides
+N. E. Clapp 65. Moshe Siman-Tov
+F. H. Clark 66. R. C. Steffy
+F. L. Culler, Jr. 67. R. S. Stone
+S. J. Ditto 68.. J. R. Tallackson
+W. P. Eatherly 69. R. E. Thoma
+J. R. Engel 70. D. B. Trauger
+D. E. Ferguson 71. A. M. Weinberg
+J. H. Frye, Jr. 72. J. R. Weir
+W. R. Grimes 73. M. E. Whatley
+A. G. Grindell 74. J. C. White
+P. H. Haubenreich" 75. Gale Young
+R. E. Helms 76-77. Central Research Library
+W. H. Jordan 78. Document Reference Section
+P. R. Kasten 79-81, Laboratory Records Department
+M. T. Kelley 82. Laboratory Records, ORNL R. C.
+T. W. Kerlin 83... ORNL Patent Office
+H. T. Kerr. 84-98. Division of Technical Information
+H. G. MacPherson : Extension
+99. Laboratory and University Division,
+ORO
+EXTERNAL DISTRIBUTION
+
+T. W. Pickel, P.O. Box 2384, Station A, Champaign, Ill. 61820
+C. K. Sanathanan, u. of ll. Dept. Information Eng., Chicago, tl.
+
+60680
+
+ed
+ 
+
+ 
+
+ 
+
+42
+
+102. R. Vichnevetsky, Electronic Associates, Inc., P. O. Box 582, Princeton,
+N. J. 08541
+
+103. Paul Wade, TVA, Bull Run Steam Plant, P. O. Box 2000, Clinton, Tenn.
+37716
+
+ww

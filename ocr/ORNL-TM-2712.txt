@@ -1,0 +1,3157 @@
+ 
+
+ORNL-TM-2712
+
+Contract No. W-T7LO5-eng-26
+
+Reactor Division
+
+FEASIBILITY STUDY OF REMOTE CUTTING AND WELDING
+FOR NUCLEAR PLANT MAINTENANCE
+
+Peter P. Holz
+
+eee LEGAL NOTICE
+
+This report was prepared as un account of Government sponsored work. Neither the United
+States, nor the Commission, Ror any perén acting on behalf of the Commission:
+
+A. Makes any WAFTARty OF Tepresuniation, exprussed or iraplied, with respect to the aceu-
+racy, completeness, or usefulness of the information contained tn this report, ur that the use
+of any information, Apparatus, method, oF process disclosed in this report may not infringe
+privately owned rights; or
+
+B. Assumes any liabilities with respect to the use of, or for damages resulting from the
+use of any {nformatton, apparatus, method, oT process disclosed in this report.
+
+Aw used in the above, “person acting on bebalf of the Commission’ includes any em-
+ployee or contractor of the Commission, or empioyee of such contractor, to the extent that
+such employee or contractor of the Commission, or employee of such contractor prepares
+disseminates, or provides access to, any information pursuant to his employment or contract
+with the Commission, or his employment with such contractor,
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+NOVEMBER 1969
+
+OAK RIDGE NATIONAL LABORATORY
+Oak Ridge, Tennessee
+operated by
+UNION CARBIDE CORPORATION
+for the
+U.S. ATOMIC ENERGY COMMISSION
+
+DISTRO U TION
+
+LTT RAUNLITTED
+iii
+
+CONTENTS
+
+ABSTRACT.
+ACKNOWLEDGMENTS .
+
+SECTION A
+1. MAINTENANCE PHILOSOPHY .
+1.1 Introduction -
+1.2 Approaches to Maintenance.
+1.2.1 Some Examples of Maintenance Methods.
+1.3 Remote Maintenance Considerations.
+1.3.1 Equipment Location for Maintenance.
+1.3.2 Mechanical Joint Considerations .
+1.3.3 Welded Joint Closure Considerations .
+2. HISTORY OF REMOTE WELDING .
+2.1 Background .
+2.2 The Pennsylvania Advanced Reactor Program.
+2.3 The Atomics International Program.
+2.4 State of the Art Survey .
+2.5 Survey Findings.
+2.6 Continued Need for Remote Welding Development.
+
+3. THE SELECTION OF A SYSTEM TO BE DEVELOPED FOR
+REMOTE MAINTENANCE. Ce ee ee ee
+
+3.1 "Orbital-Vehicle" System Advantages.
+3.2 Future System Expansion and Modification Plans .
+3.2.1 Development of Additional Modules .
+
+3.2.2 Alternate Carriage for Seal-Weld Capability .
+
+3.2.35 Development of Special Features for
+Nuclear System Applications .
+
+SECTION B
+4. PRESENT PROGRAM STATUS.
+4.1 General.
+
+L.2 ORNL's Prototype Automated Remote Cutting and
+Welding System for 6 and 8-in. Pipes . .
+
+L.2.1 Carriage.
+4.2.2 Universal Machining Head.
+
+~~ ON ON ON U1 FF WwW Ww
+
+Ho
+= HH O O O ©
+
+—
+ww
+
+15
+15
+15
+15
+
+16
+
+17
+17
+
+17
+18
+18
+iv
+
+4.2.3 Universal Welding Head.
+4.2.4 Welding Programmer and Control Unit .
+L.2.5 Power Supply.
+
+L.2.6 Equipment Modifications for Remote Work .
+
+MACHINING STUDIES .
+
+5.1
+5.2
+5-3
+5.4
+5:5
+
+General.
+
+Equipment Evaluation .
+
+Tooling.
+
+Machining Feeds and Speeds . . . . . . . . «+. .
+
+Machining Techniques for Slitting and Beveling Pipes;
+Pipe End Preparation Requirements for Welding.
+
+WELDING STUDIES .
+
+6.1
+6.2
+6.3
+6.4
+6.5
+6.6
+6.7
+6.8
+6.9
+
+General.
+
+Preweld Joint Cleaning .
+
+Joint Fitup Tolerance.
+
+Inert Shield Gas .
+
+Electrode Configuration.
+Automatic Arc Voltage Control.
+Pre-Weld Positioning .
+
+Root Pass.
+
+Fill Passes.
+
+6.10 Repair Welding .
+SPECIAL ORBITAL EQUIPMENT MAINTENANCE REQUIREMENTS.
+
+7.1
+
+7.2
+1-3
+7.4
+7-5
+
+Carriage .
+
+7.1.1 Drive Rollers .
+7.1.2 Idlers.
+Electrical Items .
+Milling Head .
+Welding Head .
+
+General.
+
+SECTION C
+
+PROGRAM PROPOSAL: DEVELOPMENT OF REMOTE CUTTING, WELDING
+AND INSPECTION EQUIPMENT FOR REACTOR SYSTEM MAINTENANCE .
+
+8.1
+
+Overall Requirements for Remote Cut/Weld Maintenance .
+
+18
+25
+25
+28
+28
+28
+30
+30
+31
+
+L6
+8.2 A Long-Range, Three-Phase Development Program for
+Pipe and Vessel Maintenance. ee ee ee
+
+8.2.1 Phase I, The General Program.
+8.2.2 Phase II, The Pipe Joint Program.
+8.2.3 Phase III, The Vessel Closure Program .
+
+kT
+
+» & 4
+FEASTBILITY STUDY OF REMOTE CUTTING AND WELDING
+FOR NUCLEAR PLANT MAINTENANCE
+
+Peter P. Holz
+
+ABSTRACT
+
+When reactors and related systems require maintenance
+and repairs on highly radioactive components, there is an
+important need for remotely controlled equipment to remove
+and replace parts of the nuclear systems. Remote cutting
+and welding can be valuable techniques for component replace-
+ment as well as for sealing flanges and vessel closures.
+Welding offers very attractive advantages: joints can be
+made leaktight, joint configurations require less cell space
+than flanged joints; and the locations of joints can be
+changed comparatively easily, if necessary.
+
+In seeking equipment which could be adapted to remotely
+controlled operation for reactor maintenance, ORNL selected
+the Air Force "orbital vehicle" cut-and-weld system as
+currently being most promising for further development to
+meet nuclear system requirements. The concept of an orbital
+vehicle equipment system for automated pipe work originated
+in 196k at the Rocket Propulsion Laboratory of the Air Force
+Systems Command at Edwards Air Force Base. The development
+of this system was performed in conjunction with North American
+Rockwell Corporation, Los Angeles Division, who designed,
+built and tested initial models. ORNL has started to modify
+and adapt the orbital design for completely remote work
+applications.
+
+The orbital system includes a carriage, interchangeable
+modules for machining or tungsten-arc welding, a weld programmer,
+and a conventional power supply. The working unit is quite
+compact, about 4 in. thick in radial dimension x 10 1/2 in.
+long, designed to be clamped around a pipe.
+
+To date, we have completed the detailed drawings for
+fabrication of the prototype orbital system and have procured
+all the components for initial non-nuclear tests of the
+equipment. We have demonstrated the following operations
+by remote control methods that were generally satisfactory:
+clamping of the carriage on the pipe, cutting and beveling
+with one orbital head, changing heads, and performing filler
+pass welding operations. We noted that nearly perfect pipe
+Joint preparation and alignment were required to achieve
+acceptable root pass welding without the addition of weld
+inserts. These requirements were the most difficult to
+meet with the orbital equipment, and root pass welding gave
+the most trouble. However, an alternate method of root pass
+welding gave good results when joining surfaces were machined
+to provide extra metal on one inside pipe edge and were given
+a fusion welding without filler wire on the root pass. These
+weldments showed full penetration and excellent, even bead
+shape all the way around the pipe. In all cases, the subse-
+quent filler passes were made easily and were of good quality.
+Since welding variables such as travel speed, current, wire
+feed rate, arc voltage, and arc control voltage all affect
+weld quality, it was observed during the tests that weld
+defects could often be detected as they occurred by noting
+the pips on recorder chart traces.
+
+The report describes factors involved in radioactive
+system maintenance, summarizes some previous work on remote
+maintenance development, and explains how the automated
+orbital cutting and welding machinery system may overcome
+problems that have been encountered in nuclear repair work.
+Progress of the feasibility study to date is summarized,
+including descriptions of the prototype equipment and the
+results of machining and welding tests. The report describes
+additional requirements for development to provide fully
+remote operations and controls and proposes a long range
+program for development of a complete remote maintenance
+system for radioactive system equipment replacement by
+cutting and welding.
+
+ 
+
+ACKNOWLEDGMENTS
+
+The author acknowledges with thanks the excellent cooperation and
+assistance of the Permanent Tube Joint Technology Section of the Air
+Force Rocket Propulsion Laboratory, Air Force Systems Command, Edwards,
+California. The project engineer, Captain John L. Feldman, USAF, ana
+his staff, particularly Mr. Edward H. Stein and Lt. Albert B. Spencer,
+USAF, all have done an outstanding job in supplying requested technical
+information and data. C. Bruce Deering of the AEC's Oak Ridge Operations
+Site Office provided liaison between AEC and the Air Force. Carl M.
+Smith, Jr., gave invaluable day to day assistance with equipment design,
+development, shakedown and checkout, and William A. Bird and Robert L.
+Moore gave important help with trouble-shooting and refining of the
+electronics and instrumentation. E. L. Armstrong, W. F. Cartwright,
+
+T. Ray Housley, Dunlap Scott, G. M. Slaughter, Irving Spiewak, T. KX.
+Walters, and L. C. Williams provided valuable guidance and support.
+
+Special thanks also to W. E. Thompson for his assistance in editing
+
+this report, and to others, unlisted for brevity, who contributed in
+many ways.
+SECTION A
+
+1. MAINTENANCE PHILOSOPHY
+1.1 Introduction
+
+In the design, development, and testing of molten salt reactors at
+the Oak Ridge National Laboratory, the need for remote welding equipment
+was encountered. However, the development of reactor designs which in-
+clude provisions for maintenance by remote welding logically requires
+that a welding process be proven feasible before the design studies are
+completed. Similarly, the capability for remote welding must be fully
+developed before a large reactor is designed on the basis of maintenance
+methods which require remote welding. The potential of remote welding
+for saving time in replacing reactor system components and for producing
+more reliable joints and seals was recognized, and feasibility studies
+of remote welding were started as part of the Molten Salt Reactor Program.
+From discussions of remote maintenance with the designers, builders, and
+operators of other reactors, it has become clear that the special welding
+equipment and techniques that have been devised on many occasions for
+specific repair or replacement jobs are not generally applicable. There
+is strong interest in a portable, remotely controlled welding system
+that would be generally applicable in reactor maintenance and repair
+work. A reliable, automated system to produce high-quality welds, even
+without remote controls, would be welcomed by the reactor builders, who
+report considerable difficulty in obtaining qualified welders and in
+achieving acceptable weld quality on field work at the construction site.
+Use of automated systmes for construction welding would also give confi-
+dence and experience which would help the application of remotely control-
+led units in maintenance and repair work.
+
+The problems of maintenance and repair on reactor systems after
+operation has built up the radiation levels are important and widespread--
+no reactor is immune. The need for remote welding equipment has been
+recognized by reactor designers, builders and operators; but, to date
+there is no remote welder that can be used for general pipe and seal
+welding applications, although special purpose devices have been em-
+ployed for some reactor maintenance jobs.
+
+Automatic welding equipment is being used today for many appli-
+cations. Some of the automatic welding methods and equipment seem
+well suited to development for remote welding. In particular, an auto-
+mated pipe-welding apparatus developed by North American Aviation for
+the Air Force showed promise for remote control applications in nuclear
+reactor systems.
+
+In all reactor systems maintenance must be performed by some method
+whenever the need arises. If it could be accomplished with reliability
+at reasonable cost, completely remote maintenance would be preferred,
+because, it reduces personnel radiation exposures and simplifies the
+problems of decontamination prior to undertaking the maintenance opera-
+tions. Remote welding offers great promise for general application in
+that almost any part of a reactor system which might fail can be cut out
+and replaced if equipment is available for remote cutting and rewelding.
+
+With first-of-a-kind reactors, it is necessary to test the designs
+using mock-ups of the more complicated systems and components. If, at
+this stage, the ability to perform remote maintenance can be tested on
+the mock-ups, the final design can ve demonstrated to be functionally
+sound and capable of being maintained. The satisfactory performance of
+remote handling devices and techniques can be proved in mock-up tests,
+giving increased confidence in their reliability and providing training
+in maintenance techniques which will reduce downtime.
+
+It is recognized that provisions for remote control removal and re-
+placement of all components of a reactor system would be prohibitively
+expensive. In practice, therefore, the degree of ease provided to accom-
+plish remote maintenance depends upon the anticipated frequency of main-
+tenance on each component. A reactor vesel designed for a 30-year
+maintenance-free life will hopefully require no remote maintenance equip-
+ment. Pumps, valves, cold traps and other items which fail or need main-
+tenance more frequently may justify rather elaborate remote control
+devices to speed up and make more reliable the operations of maintenance
+and replacement. If portable remote welding equipment can be proved
+workable, even already-built reactors not designed for remote maintenance
+may receive many of the benefits.
+
+In October 1968, a draft of the "Code for Inservice Inspection of
+Nuclear Reactor Coolant Systems” was developed under the sponsorship of
+the American Society of Mechanical Ingineers and the AEC. The Committee
+which prepared the draft of the Code noted that "recognition was given
+to the problems of examining radioactive areas where human access is im~
+possible, and provisions are incorporated in the Code for the examination
+of such areas by remote means which are not yet fully developed." The
+Code clearly shows that welds are considered to be of prime importance
+amont the areas requiring inspection. The general need for remote cutting
+and welding equipment which can repair flaws disclosed by the inspections
+is given emphasis by the criteria spelled out in the Code.
+
+1.2 Approaches to Maintenance
+
+Components which failed or developed trouble after radioactivity
+levels had built up have been repaired in many reactors. The methods
+employed in making repairs have invariably been make-shift in terms of
+equipment, techniques and procedures because standard equipment for re-
+mote maintenance is not available. There seem to have been two general
+approaches to reactor system maintenance: Where possible, flooding with
+water has been used to provide radiation shielding while still allowing
+visibility and mobility. In other cases portable or temporary shields,
+usually lead, have been employed to protect workers who must enter
+radiation fields. The methods have been combined at times.
+1.2.1 Some Examples of Maintenance Methods
+
+The Gas-Cooled Reactor Experiment in Idaho was flooded with water
+and repaired by divers working underwater to break and remake flange
+Joints in replacing sections of two cooling water lines. Two divers
+worked 112 hours in making the repairs. No welding was involved.
+Radiation exposures were about L400 to 600 mr for the workers' bodies
+and about 50% more for their hands.!
+
+Divers were also used in making repairs to the core support plate
+and the fuel channels of the Big Rock Point boiling water reactor. This
+work involved bolting pieces in place and not welding. Later, repair
+work on the thermal shield of the same reactor was performed underwater
+with long-handled tools and television viewing. At this time, the radia-
+tion levels had increased, during additional reactor operation, to the
+point where the use of divers again could not be considered. The under-
+water maintenance operations involved some machining work and included
+seal welding of all nuts and keepers.®’®
+
+The Dresden-1 boiling water reactor experienced a number of cracks
+in welds which were repaired by direct work from behind a lead shield
+with a lead pipe to protect the worker's hand and arm. By having just
+a small hole in the lead pipe to allow movement of the welding head,
+workers were protected as much as possible during their working time
+inside the radiation zone. Even so, more than 50 welders had to be
+called upon so that no person would have to work in the radiation field
+long enough to receive an overexposure to radiation.*’®
+
+On the BONUS boiling water, nuclear superheat reactor, Osk Ridge
+supplied a welder to work on the superheater steam piping. With some
+water shielding and a lead box for the worker, welds were made directly
+on the tubes.®
+
+The boiling water reactor of the Oyster Creek Nuclear Power Plant
+was found to have cracks in field welds on the tubes for the control rod
+drives.” Fortunately the cracks were discovered before the reactor had
+been operated. Nevertheless a one-year delay resulted from the time re-
+quired to diagnose the problem and its extent and to prepare to make the
+necessary repairs, even though remote control operations were not neces-
+sary. Similar cracks have been found, also before operations started,
+in the boiling water reactors for the Nine-Mile Point Power Plant of
+Niagara Mohawk and the Tarapur Nuclear Power Station in India. Had these
+cracks not been discovered before operations started, the job of fixing
+them would have involved long shut-downs.
+
+For work on the calandria of the Sodium Graphite Reactor, Atomics
+International developed a remotely controlled cutting and welding system.
+Bench tests were promising for specialized welding on the SGR calandria,
+which the remote welder was specifically designed to fit; however, the
+reactor project was terminated and the equipment was never used in a
+radiation field.®
+A remote welder was rented from Atomics International to make weld
+repairs on the tube-to-tube sheet welds of the steam generator of the
+Fermi sodium-cooled, fast reactor. This machine was used to make 1200
+welds, taking U5 sec per tube.®’°
+
+The Dounreay Fast Reactor developed a small leak in a sodium coolant
+outlet pipe near the reactor vessel. The reactor was down for cone year
+to locate and repair the leak.*' The cutting of the leaking section was
+done directly using a lead shield, but a special remote welding gadget
+was designed and built for rewelding the pipe.12,*2 Welders received
+their three months' radiation exposure limit in six hours' working time.
+Problems were encountered in cbtaining skilled welders to do the job.
+
+The Hallam sodium-graphite reactor used an automated remotely con-
+trolled welder inside a hot cell to seal weld the containers for spent
+fuel elements. Manipulators are used to operate the remote welding
+apparatus.t®
+
+1.3 Remote Maintenance Considerations
+
+In general, radioactive reactor system components are interconnected
+with large pipes which must be disconnected and rejoined when components
+are replaced. Also large vessel access openings must be opened for in-
+spection and replacement of internals and then resealed. Flanges with
+mechanical seals and remote welding are two possible methods of rejoining
+pipe or closing vessel openings. Some of the considerations which aifect
+the choice of the approach are given below. More detailed discussions on
+weld joint maintenance are included in Section B.
+
+1.3.1 Equipment Location for Maintenance
+
+ 
+
+To be best suited for remote maintenance, reactor components and
+piping should be physically located so as to permit access from above
+for removal and replacement operations. This, however, imposes rather
+severe restrictions on layout since it virtually eliminates stacking of
+equipment within a cell. Therefore, if cell space savings from stacking
+of components are to be achieved, consideration must be given to the pre-
+dicted frequency of maintenance on any specific assembly of piring and
+components so that the most frequently worked-on assemblies will be placed
+in the most readily accessible locations. The designer thus provides
+unrestricted overhead access on a first priority basis for the components
+needing maintenance on a regularly scheduled basis, and then provides
+access for anticipated "trouble area’ work. When this has been done,
+remote methods can be employed most effectively to reduce the cost and
+increase the reliability of maintenance operations.
+
+1.3.2 Mechanical Joint Considerations
+
+ 
+
+a. All reactor system joints must be leak-tight to prevent the
+outleakage of coolant and radioactivity or the in-leakage of
+external gases which might contaminate the contained fluid.
+Furthermore, some of the reactor coolants become very corrosive
+when exposed to atmospheric oxygen or moisture. An inert gas
+buffer between the gas or liquid in the pipes and the atmosphere
+is sometimes employed, at slightly higher pressure, to assure
+that mechanical joints are effectively leak tight. Since this
+seal is so important for the integrity of the system, the equip-
+ment which maintains the overpressure must be extra reliable.
+
+Any mechanical seal requires large forces to keep the sealing
+surfaces in contact during all excursions of system tempera-
+ture and pressure. As an example, the solid metal seals which
+use rings in grooves require a certain minimum force to main-
+tain the seal. Additional strength is needed to resist the
+axial and bending stresses transmitted through the pipe. There
+are acceptable clamping and bolting methods for providing this
+strength where the Joint is not subjected to large thermal
+stresses which deform the ring seal, or to high temperatures
+which might anneal the clamps. Unfortunately, the higher
+temperatures (1000 to 1500°F) of advanced reactor systems make
+satisfactory bolting or clamping a difficult problem.
+
+In high-radiation fields, the flanged Joints must be operated
+
+and maintained by remote means. There are problems of operating
+bolts or bulky clamps by remote control, of removing the component
+without damaging the joint, inspecting and cleaning the precision
+seal surfaces, installing the polished ring undamaged, instal-
+ling the new component, aligning the joint, remaking the clamp,
+and leak checking the seal. Some of these problems would be
+encountered in remote welding, also. When a mechanical joint
+leaks, the maintenance crew has a choice of repair by tightening
+the joint or by replacing the ring with one plated with a soft
+metal such as gold.
+
+For replacement by welding or by flanged connections, all joints
+connecting the component into the system must be in proper align-
+ment before bolting or clamping. Warpage during the thermal
+cycling that occurs in any plant may require awkward placement
+of the joint and a complicated installation sequence as the new
+
+" component is brought into the final position. The changes in
+
+previously established locations will require careful measure-
+ment by remote means to determine the exact location of the in-
+cell joint so that adjustments can be made to align the new
+component. A mechanical joint does not permit much margin for
+error in alignment and fitting after the component is in the
+cell, whereas with a welded joint, in-cell machining of mating
+surfaces could be used to correct certain misalignments.
+
+1.3.3 Welded Joint Closure Considerations
+
+a.
+
+In joining pipes, welding can be used either to provide a full
+strength, full penetration welded joint, or to provide a seal
+around a gasketed flange joint. Most full-strength weld
+
+closures require multi-pass welds which are difficult to make.
+Yet these all-welded joints, to be leaktight, must be metal-
+lurgically sound. Joint alignment, purge gas, weld arc, and
+weld metal feed variables will affect bead shapes and weld
+quality. These variables are discussed in more detail in
+Section B.
+
+b. Numerous problems that are associated with the inspection of
+welds are not encountered or are less severe with flanged
+Joints. It is an accepted fact that welds must be thoroughly
+and properly inspected to assure joint integrity. Nuclear
+plant weld quality requirements exceed the specifications for
+conventional steam power plants. Weld inspection techniques
+must work in high radiation backgrounds which make normal
+radiography impossible. Inspection equipment manipulations
+must be controllable from remote locations and viewing is
+possible only by indirect means. Inspecting with magnetic
+fields, or charged particle beams, generally is unsuitable
+to nuclear plant materials and/or conditions. Ultrasonic
+inspection has shown promise, although much more must be done
+to adapt ultrasonic techniques to remote work. The Pacific
+Northwest Laboratory has proposed an ultrasonic inspection
+development program for the FFIF. Another ultrasonic inspec-
+tlon development program is being sponsored by industry
+through the Edison Electric Institute, and is being conducted
+under subcontract at the Southwest Research Institute, Houston,
+Texas.'®
+
+c. Preweld joint preparation required for remote welding involves
+accurate, axially square precutting of the joint, matching of
+the respective inside and outside diameters along with pre-
+cision alignment of the pipe stub to be welded, and possible
+rebeveling to obtain acceptable alignment of mating joint
+members. It is imperative that a thorough cleaning of the
+pipe interior at the joint area precede all work, ana that
+utmost care be taken to completely remove all weld preparation
+cuttings which might damage pumps, valves, etc., if allowed to
+remain in the system and circulate with the fluid. Wire brushing
+and solvent cleaning may also be required to prepare the weld
+area.
+
+d. Repairs to faulty reweld joints are equally difficult. The
+previously described inspection and cleaning requirements
+apply to rewelding also.
+
+REFERENCES
+Divers Repair GCRE Vessel, Nucleonics, p. 78, May 1961.
+
+J. I. Riesland and E. A. Gustafson (GE - San Jose), Work Performed
+on Fuel Channels and the Core Support Plate at Big Rock Point
+Nuclear Power Plant, Conference on Reactor Operating Experience,
+July 28-29, 1965, Supplement to Vol. 8, Transactions of the
+American Nuclear Society, 1965.
+10.
+
+11.
+
+12.
+
+13.
+
+1k.
+
+15.
+
+L. M. Hausler and R. L. Hauter (Consumers Power), In-Vessel
+Modifications of Irradiated Reactor Internals at Big Rock Point,
+Conference on Reactor Operating Experience, July 28-29, 1965,
+Supplement to Vol. 8, Transactions of the American Nuclear Society,
+
+1965.
+
+R. H. Holyoak (Commonwealth Edison) The 1967 In-Service Inspection
+of Dresden 1 Nuclear Power Plant, Transactions of the American
+Nuclear Society, Vol. 10, p. 635, November 1967.
+
+Clifford Zitek, Personal communication during a visit to ORNL, 1968.
+
+Everett Rogers (Oak Ridge Y-12 Plant) Personal communication;
+Rogers did the welding for the BONUS repairs, 1968.
+
+United States Atomic Energy Commission Licensing Docket No. 50-219,
+Amendment 35, Final Report on Reactor Vessel Repair Program, March 1968.
+
+L. Newcomb, Calandria Remote Maintenance Tool Development, Atomics
+International Report NAA-SR-11202, April 1966.
+
+J. F. McCarthy, Compilation of Current Technical Experience at the
+Enrico Fermi Atomic Power Plant, Monthly Report No. 7 to the U. S.
+Atomic Energy Commission, February 1967.
+
+L. T. Bogarty, Modular Steam Generator Fabrication, Atomics Inter-
+national Report NAA-SR-11739, February 1966.
+
+Dounreay Developments: Good progress on PFR; DFR is back at full
+power, Nuclear Engineering, p. 633, August 1968.
+
+Memo to Myron B. Kratzer, Assistant General Manager International
+Activities, U. S. AEC, from Carl R. Malmstrom, AEC Scientific Re-
+presentative, U. S. Embassy, London, England; Trip Report to Dounreay,
+February 20, 1968.
+
+R. R. Matthews and K. J. Henry, Dounreay Experimental Reactor
+Establishment, TRG Report 185LR, Nuclear Engineering, Vol. 13,
+No. 149, pp. 840-844, October 1968.
+
+5S. Berger et al., Six Element Irradiated Fuel Shipping Cask, Atomics
+International Report NAA-SR-12547, Appendix 10, pages 310-319,
+Novenber 1967.
+
+Grady Whitman, Welding Research Council, Pressure Vessel Research
+Committee, Personal communication, September 1968.
+2. HISTORY OF REMOTE WELDING
+2.1 Background
+
+Attempts to develop automated remote welding systems for use in
+nuclear work have been pursued, off and on, for more than ten years.
+Most of the efforts, including some at ORNL, were on a small scale.
+Limited findings from the earliest remote welding work formed the
+background for the Pennsylvania Advanced Reactor (PAR) maintenance
+welding development program.
+
+2.2 The Pennsylvania Advanced Reactor Program
+
+The Pennsylvania Advanced Reactor (PAR) was planned in the mid
+1950's to use a circulating aqueous slurry fuel pressurized to 1000
+psi. The high-pressure system required extra care in fabrication to
+avoid leaks and also placed a premium on being able to repair leaks
+that developed. It was recognized that circulating fuel would increase
+the radiation levels in the reactor system areas and would make com-
+pletely remote maintenance a necessity.
+
+In planning the PAR,*® Westinghouse specified remote welding as
+the mandatory method for performing maintenance on the reactor plant.
+Although certain phases of the development program were completed,
+the PAR project was terminated before the remote welding techniques
+were ever demonstrated in an operating reactor system. A tube-plugging
+procedure had been devised to use remote welding in maintaining the
+system generator; the plug was to be inserted into the tube and welded
+to the tube sheet. A flange on the plug provided the metal for the
+weld and also covered the leak path between the tube and tube sheet.
+
+The tungsten-arc welding process was selected by the PAR group for
+remotely butt welding joints in the fixed piping. To simplify equipment,
+it was decided that each remote welding head would be designed to fit no
+more than two pipe sizes. A contract had been negotiated with a manu-
+facturer of welding equipment to improve an existing machine to permit
+continuous rotation welding with 100 percent arc time, with automatic
+and complete control, and with completely dependable weld quality. A
+prototype model of the machine with fully automatic controls showed
+promise in bench tests, but it was not equipped for remote work. Also,
+the machine needed further development to be sufficiently reliable for
+remote maintenance work.
+
+2.3 The Atomics International Program
+
+During the 1960's, Atomics International, now a Division of North
+American Rockwell Corporation, developed and perfected a number of auto-
+mated welding systems. Some were remotely controlled for work in con-
+nection with AEC's sodium-cooled reactors; others were automated, but
+not remotely controlled, for space program reguirements and for the
+shop fabrication of heat exchangers and tubing systems for civilian
+power reactors. While much of their work was concentrated on production
+11
+
+welding operations in shop fabrication, AI also developed advanced
+remote welding technology for specific applications, such as internal
+tube welding for steam generator fabrication, deep-hole welding for
+work on the calandria of the sodium-graphite reactor, and seal welding
+the containers for nuclear fuel canning.
+
+Internal welding equipment makes tube-to-tube-sheet welds and also
+tube-to-tube welds, with the welding head located inside the tube. Al's
+automatically programmed system was developed for fabrication of high-
+temperature, high-pressure modular steam generator Joints for the Sodium
+Component Test Installation. It did not operate by remote control.®
+
+Deep-hole welding equipment was developed as an extension of internal
+welding technology to permit remote removal and replacement of process
+tube and associated graphite log assemblies from the Sodium Graphite
+Reactor Calandria Core. Blind cutting and TIG rewelding were accomplished
+by remote control equipment reaching as far as 40 ft through a L4-in.-
+inside-diameter tube.®
+
+The seal welding of spent fuel in cans was performed in a manipu-
+lator cell at Hallam.'*
+
+2.4 State of the Art Survey
+
+Seeking information on remote maintenance equipment and techniques
+that might be applicable to molten salt reactors, ORNL conducted a
+survey early in 1968 to determine the state of the art. Emphasis was
+placed on remote welding, which was considered to be of greatest interest
+for molten salt reactor systems. Specific inquiries were made about all
+development and applications of remotely operated, automated equipment
+for reactor system maintenance and repairs. Equipment and techniques
+for cutting, beveling, welding and testing weld quality were particularly
+sought out. 7 We specifically looked for a utility machine that would
+do cutting, beveling and welding with one set up.
+
+2.5 Survey Findings
+
+The survey disclosed a few specially designed, automated welding
+assemblies which were remotely controlled by manipulators. Argonne
+National Laboratory has performed welding on the complex experimental
+equipment inside a hot cell in this way; at Hallam, Nebraska, Atomics
+International has a manipulator cell equipped for making seal welds on
+containers for spent fuel elements; Aerojet Corporation at Azusa,
+California, used a similar setup for canning radioisotope sources.
+The Electric Boat Company at Groton, Connecticut, and the Liquid
+Carbonics Company of Chicago, both Divisions of General Dynamics,
+developed an automated welding system for use on shop fabrication
+work, without remote controls. In the production of components for
+submarines, welding is being done increasingly by the automated
+welding systems (TIG, with weld inserts for root pass). The Nav
+claims time and dollar savings along with superior weld quality.®”
+
+It was pointed out by a number of the people interviewed that, at
+12
+
+present, no one markets automated welding machinery for field use,
+although there are many applications where automated equipment would
+be most valuable.
+
+The following comments from Mr. Richard H. Freyburg, Assistant
+Manager of Operations for Consolidated Edison Company of New York,
+point out some of the reasons why reactor builders have keen interest
+in automated welding equipment, even without remote controls:
+
+"Industry can not take trained nuclear welders from site
+to site for reactor construction because union restrictions
+usually permit only one company welder for every 12 welders
+supplied by the local union. The training program for nuclear
+welders is tedious; we're lucky to get 60% of the new men
+qualified. Many of those passing the nuclear welding qualifi-
+cation tests are not well suited for construction work in other
+respects. If we had reliable, relatively simple, automated
+machinery for beveling and welding, we could train welders
+faster to operate the automated equipment and the quality of
+the welds would be better, with fewer rejections. In fact,
+automated beveling and welding machines, on construction, could
+be worked around the clock. We could even afford to put on an
+extra man to permit coffee breaks for the operators and still
+be well ahead. Furthermore, if our people gain confidence in
+the automated machinery during construction of the reactor,
+they will be glad to pay the price later for a more expensive,
+remotely operated machine for reactor maintenance work. My
+most urgent need is for a reliable, automated welder that
+reduces rejections on construction field work."8
+
+Maintenance and associated program and control equipment for auto-
+mated welding have not yet been simplified and made rugged to the point
+where such systems economically challenge manual welding for field work.
+Our survey, however, revealed two automated systems which, with modi-
+fications, might be useful for remote nuclear work. One is an "orbital
+vehicle combination cut, bevel, weld carriage concept' developed and
+tested by North American Aviation, Los Angeles, a Division of North
+American Rockwell Corporation, under Air Force Contract; the other is
+a combination of either Wachs (E. H. Wachs Company, Wheeling, Illinois)
+or Fein (Prescott Tool Company, West Boylston, Massachusetts) pipe
+cutters for cutting, plus specially automated Dyna-Surge APW Series
+Systems (Liquid Carbonic Division, General Dynamics Corporation, Chicago,
+Illinois) for welding. The Dyna-Surge system technology originated at
+the Electric Boat Division of the General Dynamics Corporation and was
+veed for their production welding in submarine work. Dyna-Surge weld
+head assemblies employ a stationary cylindrical track, clamped around
+the pipe, with a geared rotating part on which the electrode holder is
+mounted. Torch support and travel components are similar to equipment
+marketed by AB ASEA SVETSMASKINER, the Stockholm, Sweden manufacturer
+fcr special Buropean automated weld machinery, or by Clarke, Chapman
+& Co., Ltd. of England. Wachs and Fein pipe cutters are commongly used
+in coal mining operations, in fabricating gas plant equipment, in
+13
+
+marine salvage work, and in production pre-weld pipe end shaping. A
+still experimental automatic welding machine for large size overland
+transmission piping only is being built by CRC-CROSE, Inc. of Houston,
+Texas, and is now being tried out in a full scale field test on a
+Coastal States Gas Producing Company pipeline in the Southwest .1®
+
+2.6 Continued Need for Remote Welding Development
+
+There were two full-fledged remote welding development programs
+primarily associated with reactor projects, the PAR and the SGR, which
+vere discontinued before remote welding equipment was fully developed.
+Other devices for remote welding have been built and used to perform
+specific Jobs in making repairs to reactor systems.
+
+For a number of years, ORNL has used an automated, remotely
+controlled welding apparatus inside a hot cell to seal radioisotope
+source containers. In this case the containers are small, the job
+is repetitive, and the remote welding equipment does not have to be
+moved about within the cell. In general practice, reactor fuel
+elements are seal welded in thin-walled containers before being placed
+in the shielded carrier when they are to be shipped off site. This
+seal weld is usually made by remotely controlled equipment in a hot
+cell. Other remote welding operations have been performed at various
+times and places using equipment specially adapted for the specific
+Job. The state of the art seems to be that automated welding equip-
+ment has been developed to a point where it is possible to adapt com-
+mercially available equipment tc the performance of specific - and, to
+date, fairly simple - remote welding jobs.
+
+Although automated welding is being used increasingly in shops
+for a variety of applications, there are no present applications of
+automated welding to nuclear reactor system components being welded
+in the field. In the shop production of components for the nuclear
+power systems of submarines, automated welding is being increasingly
+used. Weld insert rings are used to fusion weld Naval joint root
+passes. The Navy reports savings in time and cost over manual welding,
+and claims superior weld quality, also.
+
+Needs for remote welding equipment have become more widespread
+and actual applications of equipment for performing specific remote
+welding jobs have become more numerous. To date, however, no one has
+perfected a generally useful remote welding system, It is instructive
+to consider why the equipment has not been developed to date, even
+though attempts have been made, and to evaluate the prospects for
+success if another attempt is made. The following factors seem impor-
+tant:
+
+1. Limited funding forced previous developers to resort to
+crude control and programming equipment and to limit their
+mechanical designs to oversimplified hardware items.
+16.
+
+17.
+
+18.
+
+19.
+
+1h
+
+2. Welding and programmed control apparatus of the past lacked
+pulsed-arc and arc length regulation, integrated digital
+functional controls and sclid state devices for instant
+response actuation. Today's remote control capabilities
+are much more sophisticated and adaptable to meeting welding
+quality specifications.
+
+3. Miniaturized components and automated welding hardware were
+not available for application in the previously attempted
+remote welding systems. Welding equipment systems that have
+been developed recently for the National Aeronautics and
+Space Administration and for advanced aircraft applications
+are much superior to those that were available in the earlier
+attempts to adapt equipment for remotely controlled welding
+operations.
+
+REFERENCES
+
+Vol. IV, Pennsylvania Advanced Reactor Project, Layout and Main-
+tenance, Parts 1 and 2, WCAP 1104 and 1105; Westinghouse Electric
+Corporation and Pennsylvania Power and Light Company, March 1959.
+
+Memo from P. P. Holz to Distribution, A Preliminary Survey of
+Remote Cutting and Welding Techniques Under Development in the
+United States, MSR-68-4k, February 20, 1968.
+
+Richard H. Freyburg, Assistant Manager of Operations, Consolidated
+Edison Company of New York, Personal communication by telephone,
+October 1, 1968.
+
+Wall Street Journal, July 8-69 issue, Page 23, Column 4, Para-
+graph 5.
+15
+
+3. THE SELECTION OF A SYSTEM TO BE DEVELOPED FOR REMOTE MAINTENANCE
+3.1 "Orbital-Vehicle" System Advantages
+
+The Air Force's orbital vehicle machinery developed by North
+American~Rockwell for pipe joint-replacement maintenance offers a
+number of advantages for cutting and rewelding nuclear piping. A
+single, compact carriage propels interchangeable heads for cutting
+or welding. This single setup for all phases of repair work simpli-
+fies the indexing on the spot to be cut and welded and assures re-
+petitive precision tool alignment. Equipment setup time savings also
+result, especially where weldment repairs might be required.
+
+The tungsten inert gas (TIG) welding process which had been used
+by the Air Force in their work with orbital machinery was also chosen
+for initial tests at ORNL because it offers most promise of meeting
+nuclear weld requirements. This process has several inherent charac-
+teristics that are especially suitable for remote fixed-position
+welding. TIG welding is a low inertia process and is relatively slow,
+which makes it much easier to control and monitor for high integrity
+welds. The amount of molten metal at any time is relatively small,
+creating a quick-freezing puddle with sufficient surface tension to
+counteract gravity. The process thus works equally well whether the
+weld is going up-hill, down-hill or horizontally. The arc length of
+the non-consumable electrode can be maintained more easily than that
+of a consumable electrode. There is no flux or slag associated with
+the process to require special interpass cleaning, although brushing
+to remove the light oxide film is desirable. Filler wire is fed
+directly into the weld puddle. The metal does not have to be trans-
+ferred into a molten state across an electric arc, an operation that
+sometimes results in spatter and uneven bead formations. A system
+with integral wire feed has the capability to complete a weld of
+thicker section than can be made by autogenous welding. It also is
+more likely to provide satisfactory crack-free weld metal of good
+composition, grain size and porosity. TIG equipment can be made
+compact and portable.
+
+3.2 Future System Expansion and Modification Plans
+
+The overall development program for an automated cut-and-weld
+reactor maintenance system is divided into two parts; a system feasi-
+bility study and development phase, and future system expansions and
+modifications along the lines described below.
+
+3.2.1 Development of Additional Modules
+
+The ability to change modules on the orbital vehicle carriage
+suggests that development and application of additional, interchangeable
+modular insert packages might be the easiest way of accomplishing
+additional functions. Since welding operations require strict clean-
+liness control and it is important to keep chips and dirt out of the
+process system, a clean-up module or attachment may be needed. Welding
+requires that oxide and dye penetrant test films be removed from bead
+surfaces before making additional weld filler passes. A mecdular head
+could be developed to apply solvent cleaners and to drive a rotary
+wire brush for physically cleaning the weld. We plan to also develop
+additional modular heads for a welding inspection package, complete
+with TV camera, dial indicators, penetrant inspection devices, etc.
+
+3.2.2 Alternate Carriage for Seal-Weld Capability
+
+Present machinery is designed for work on piping only, with the
+capability of preparing joints for butt-welding, and of performing
+the welds. Investigations have been started to determine whether the
+existing modules along with the programmer can be used for seal welding
+applications. Such a system may include a substitute carriage to "walk"
+about a set of indexed mating contoured seal lips. Motor propulsion
+equipment for this alternate seal-joint carriage should be compatible
+with the orbital vehicle carriage drive so that it can be operated with
+the same controls and instrumentation. An alternate approach under
+consideration for vessel seal-weld closures is based on a free-swinging
+carriage operated from a radius linkage at the centerline of The opening.
+
+3.2.3 Development of Special Features for Nuclear System Applications
+
+A number of additional design modifications will be necessary in
+adapting the present Air Force machinery to provide better installation
+and operation capabilities for nuclear applications. These modifications
+will involve changes to positioning and handling attachments so that all
+of the equipment can be installed and operated from any available over-
+head access.
+
+The Air Force design was modified somewhat before being used to
+fabricate a prototype unit for the ORNL feasibility studies. The ORNL
+prototype, like the Air Force equipment, utilizes readily-machinable,
+light-weight materials, generally aluminum. Reactor maintenance appli-
+cations will require equipment which is rugged, 1s able to be decontami-
+nated and repaired, if necessary, while being kept inside a hot cell,
+and is resistant to radiation and high temperatures. It should be
+possible to incorporate materials and to develop design modifications
+which will adapt the system to nuclear work without reducing the proven
+effectiveness of the overall system design or operations. For initial
+tests with the prototype, significant savings in time and money were
+achieved by using units that incorporate standard industrial components
+and materials. This approach will be continued through most of the
+development program. The more costly units, incorporating special
+materials for ease of decontamination and for resistance to radiation
+and to high temperatures, will only be built after present tests have
+shown complete suitability and performance of the design. For future
+machinery systems we contemplate relocating some electronic control
+components from their present module stations to the programmer, and
+possibly replacing some of the electrical sensing and control equipment
+in the module with fluidic systems to minimize radiation damage problems.
+17
+
+SECTION B
+
+L. PRESENT PROGRAM STATUS
+4.1 General
+
+ORNL representatives visited the North American Aviation Los
+Angeles, California Division of North American Rockwell Corporation
+and the Rocket Propulsion Laboratory, U.S. Air Force Systems Command,
+Edwards Air Force Base, California during March 1968. At that time
+North American Rockwell, as Air Force contractor, had already fabri-
+cated two prototype orbital vehicle machines for cutting and welding
+l- to 3-in. and 3- to 6-in. diameter tubing. Performance testing had
+just been started. Designs had also been completed by NAR for units
+to handle larger diameter pipes; 6- to 9-in., 9- to 12-in., and 1l2-
+to 16-in.
+
+Arrangements were made for the Atomic Energy Commission to receive
+Air Force contractor design data. Design drawings for the 6- to 9-in.
+diameter orbital vehicle machinery were supplied to the AEC during
+April and May 1968. The Commission, in turn, relayed the information
+to ORNL. After detailed review, ORNL redesigned equipment to include
+provisions for remote installation and operation capabilities, and
+prepared detailed drawings and specifications for the commercial
+purchase of mechanical assemblies. Fabrication of the prototype unit
+for testing at ORNL began in August 1968 and was completed during
+February 1969. To save time and initial costs, arrangements were
+made to borrow a spare Air Force programmer to control the operation
+of the equipment for a limited evaluation period. A replacement pro-
+grammer is being fabricated by ORNL and will be completed by September
+
+1969.
+
+The initial ORNL development efforts started in March 1969 and
+were directed toward establishing the feasibility of using remotely
+operated machinery that will cut, bevel, and either seal or strength-
+weld joints and piping for nuclear applications. Initial cutting and
+welding studies and tests closely followed current USAF rocket system
+welding technology developments.
+
+Detailed discussions on early development findings at ORNL are
+reported on in the following chapters on pipe machining and welding
+studies. The development work to date shows that it is feasible to
+use automated orbital machinery for remote cutting and welding.
+
+4.2 ORNL's Prototype Automated Remote Cutting and Welding
+System for 6 and 8-in. Pipes
+
+The Air Force has orbital carriages for the following cutside
+diameter ranges; 3 to 6 in., 6 to 9 in., 9 to 12 in., and 12 to 16 in.
+We selected the 6- to 9-in. carriage for work with 6- and 8-in. pipes.
+All listed carriages use the same interchangeable machining and welding
+heads.
+18
+
+The automated remote cutting and welding machinery package includes
+the following components shown in Fig. 1, 2, and 3: carriage, machining
+head, welding head, weld programmer, and welding power supply. The
+functions performed by these components and brief equipment summations
+are described in the following paragraphs.
+
+L.2.1 Carriage
+
+The carriage provides a rigid, stable platform on which the
+machining head and the welding head can be mounted, indexed, and
+operated. Figure U4 shows the carriage with the welding head. The
+carriage supplies a drive mechanism to rotate the platform around the
+pipe circumference at preset, reproducible speeds, with controls to
+maintain the platform surface at a constant distance from the pipe
+surface so that the milling cutter depth and arc length controls will
+perform properly. The platform will maintain its lateral position
+with respect to the pipe joint while rotating about the pipe, so that
+when modules are changed from cutting, beveling and welding, the align-
+ment will already be correct. The carriage geared actuator arm
+assemblies clamp securely to the pipe; its drive rollers are loaded
+by special torsion bars to maintain controlled roller clamping pressure
+and to compensate for pipe ovalty within commercial specifications.
+Carriage design permits all listed tasks to be accomplished within a
+L 1/2-in. radial clearance.
+
+The carriage structure consists of two side pieces which provide
+a platform for the welding and machining heads, and two end supports.
+These supports contain the water, inert gas and electrical power con-
+nections and switches; the front support also contains the clamping
+device, namely worm gears which position the idle rollers through a
+slider crank linkage. The carriage rotates via a direct drive system
+from motors mounted at the two hinge points of the actuating arms
+within the rollers. The vulcanized high temperature, abrasion-
+resistant viton coating provides the necessary roller traction.
+
+4.2.2 Universal Machining Head
+
+ 
+
+The machining head shown in Fig. 5, can be mounted on the carriage
+to cut pipe or tubing, mill the tube ends square, and bevel the edges
+to the desired configuration for welding. The machining head includes
+an outer housing, a Triac, speed-regulated, 1/l4-hp alr-cooled electric
+drive motor of the type produced for hand drills, plus the drive motor
+housing and cutter assemblies. Two-axis manual cutter adjustment is
+available. Several types of cutter blades can be installed as needed.
+
+L.2.3 Universal Welding Head
+
+ 
+
+The welding head, Fig. 6, can be mounted on the carriage in place
+of the machining head after the cutting and beveling operations have
+been completed. The welding head 1s designed with adjustable vertical
+and horizontal slides to locate the electrode accurately with respect
+to the cut and beveled edges of the weld joint. Filler wire will be
+ 
+
+»
+
+af
+
+Power Source
+
+ammer
+
+Progr
+
+19
+
+“Weld Head
+
+Carriage
+
+3
+Fm
+2
+Q
+3
+8
+
+ 
+
+\
+
+Orbital Machinery Components.
+
+Fig. 1.
+
+ 
+Programmer
+
+em
+
+ere
+
+ 
+
+ES SE A FT
+
+Weld Head
+
+Fig. 2.
+
+ 
+
+Orbital Machinery Components.
+
+ 
+
+ 
+
+| PHOTO 76553
+
+| Cutter Head
+
+sve
+
+SssdaanE
+
+oc
+
+ 
+ 
+
+ 
+
+ 
+
+    
+
+ 
+
+ 
+
+ 
+
+ 
+
+   
+
+PHOTO 76552
+
+Th
+
+ 
+
+Cutter Head
+
+Tc
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+PHOTO 76546
+
+ 
+
+22
+
+ 
+
+ 
+
+(with Weld Head)
+
+Carriage
+
+Fig. kL.
+ 
+
+ 
+
+23
+
+ 
+
+ 
+
+ 
+
+ 
+
+iversal Machining Head
+
+Un
+
+. 5.
+
+Fig
+
+ 
+
+ 
+ 
+
+ 
+
+‘oh
+
+ 
+
+PHOTO 76547
+
+ 
+
+ 
+
+ 
+
+ 
+
+rsal Welding Head.
+
+Unive
+
+6.
+
+Fig.
+25
+
+fed automatically at the desired rate to the weld joint from a spool
+which stores enough wire for multiple filler weld passes. The welding
+head will provide an inert welding gas to the torch cup, will provide
+power and cooling water flow to the torch head, and will oscillate the
+welding electrode across the seam. It will also provide integral
+switches for test operating the wire feed jog, the oscillator, and inert
+gas flow.
+
+L.2.4 Welding Programmer and Control Unit
+
+A pendant-housed start-stop control unit and the console-welding
+programmer contain the measurement recorders and control devices that
+provide for automated welding. The programmer, shown in Figs. 7 and 8,
+is designed to control and/or sequence each of the following weld
+variables or functions; welding current vs. time, maximum welding
+current, welding current pulse amperes and pulse time, current upslope
+time, weld time, current downslope time, welding voltage, welding tool
+speed and start and stop time, wire feed speed and start and stop time,
+arc voltage control voltage, and oscillator frequency.
+
+The welding current and the carriage (tool) drive circuits are
+respectively servo-controlled. The wire feed rate can be adjusted to
+maintain constant electrode/weld puddle distances by using a feedback
+system to monitor the arc voltage and compare it to a preset, pre-
+determined value, and, as required, generate a correction signal.
+Changes in the arc gap are reflected as changes in arc voltage and
+these changes generate a correction signal which changes the filler
+wire speed to build up or to decrease the weld puddle to maintain a
+preset arc gap. The wire feed system also includes a transistorized
+motor control serve system to quantitatively regulate filler deposits
+in response to a tachometer feedback signal. Pipe ovalty corrections
+are regulated by a mechanical cam device which rides the pipe and
+spring loads the weld head within the carriage to tend to maintain a
+constant tool/workpiece spacing.
+
+Lighted buttons are provided for function indication and/or
+selection. Indicating meters are incorporated for tool and wire feed
+speed, arc voltage, and weld current. The unit is designed to provide
+signals which can be used with commercially-available recorders to
+provide permanent records. At present we use a multi-channel Sanborn
+150 Recorder. The Air Force programmer, Fig. 7 also includes provisions
+for punched card input to provide automatic capability for program setup.
+This feature is especially desirable for production work. For the time
+being, however, primarily for economy reasons, we are not using punch
+card techniques in our replacement programmer.
+
+L.2.5 Power Supply
+
+Most commercially-available welding power supply units are compatible
+with the programmer control circuitry and can be employed as power sources.
+We utilize a Lincoln Model TIG 300/300 welder with minor circuit modifi-
+cations. Inductive transient supressors and a transistorized reactor
+4
+
+ 
+
+ 
+
+Fig. T.
+
+ink
+I)
+a E
+
+Programmer, External View.
+
+PHOTO 76551
+
+ 
+
+ 
+
+92
+
+ 
+vy
+
+ 
+
+ 
+
+ 
+
+ 
+
+       
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 8. Programmer, Internal View.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+28
+
+control amplifier shown in Fig. 9 have been added to the welders’
+reactor control circuits. Welder controls for gas and water solenoid
+valve relays are transferred to the programmer.
+
+4.2.6 Equipment Modifications for Remote Work
+
+ 
+
+ORNL's 6- to 9-in.-diameter carriage and the welding and milling
+insert heads incorporate a number of changes and modifications to similar
+Air Force equipment. Our machinery includes actuators, lifting and
+positioning lugs designed for remote tooling and handling. We have
+also eliminated from the original Air Force weld head two disconnects
+in the welding power supply line and the water and gas lines. Our
+cables are integral with the torch and route directly from the torch
+holder through a grommet insert in the adjacent carriage front panel.
+Stray RF currents and potential water leaks are eliminated. Our directly
+coupled torch also permits completely independent weld head (in, or out
+of cell) checkout and replacement. The separate power and control leads
+at opposite ends of the carriage work well in remote installation.
+Separated cords do not tangle while rotating the carriage to loop cables
+prior to cutting or welding, or during actual work operations. We have
+also added a Lossy-Line Absorptive Filter RF Suppressor to provide
+increased protection of wiring and components connecting to the electrode.
+Our wire feeder exit trough is oxide coated to eliminate arcing and
+fusing. Its trough pivot device is altered to permit more flexibility
+and to provide a lock-in feature to center tracking. A similar hori-
+zontal travel locking device was added to the cutter head toc prevent
+lateral carriage motion while cutting. Our cutter tool feed actuator
+includes ratchet depth set control.
+
+5. MACHINING STUDIES
+5.1 General
+
+Considerable time was spent to check and generally confirm Air
+Force machining data and to develop cutting and milling techniques for
+stainless steel and Inconel piping. We noted that cutting criteria
+applicable for 300 series stainless steel pipes do not apply for Inconel
+work. Available Inconel pipe was chosen to approach Hastelloy N material
+characteristics. We were able to prepare beveled pipe joints.
+
+Cutter trials started in late February 1969. Major performance
+tests held during March and April included saw tracking studies and
+runout determinations and machining studies on (in order) 304 stainless
+steel, 347 stainless steel and Inconel piping. We tested 1/16 in. and
+3/32 in. thick high speed steel and Circoloy alloy slitting saws and high
+speed steel single and double bevel cutters. We varied cutter speeds,
+cutter feeds, and carriage travel rates to determine programmed operating
+combinations for acceptable tool performance and pipe surface finish.
+Test efforts also served to evaluate our equipment, and to develop
+acceptable machining techniques for both slitting and beveling pipe to
+prepare desired pipe end configurations for welding. We noted parti-
+cularly that pipe wall thickness variations, even within the allowed
+ 
+
+ 
+
+ 
+
+o
+hi
+
+aE
+
+Supressors
+
+Fig. 9. Modifications to Welding Machine Circuits.
+
+ 
+
+ 
+
+ 
+
+62
+
+ 
+
+ 
+30
+
+code limits for commercial piping, greatly complicate the joint
+machining requirements for dependable weld joint geometries.
+
+5.2 Equipment Evaluation
+
+The machining head appears to have capability to cut pipe, trim
+ends square, and to prepare end bevels. Little difficulty is encountered
+in machining stainless materials; problems, however, arise in cutting
+Inconel because of its work-hardening tendencies.
+
+All ORNL machining tests were performed on horizontal piping.
+Slitting saws and double bevel cutters track true within approx.
+.003 in. Single bevel cutters tend to walk out of, and away from the
+cut, especially on the harder Inconel pipe. Cutter drive motor power
+and speed control capabilities appear adequate. The carriage and
+machining head will withstand loading and vibrations caused by the
+milling cutters with proper travel speed and tool feed selection.
+Improvements, however, are required to provide a stronger and more
+positive cutter depth control and to give more stable longitudinal
+adjustments. A ratchet-controlled worm gear depth control is contem-
+plated for more precise feed capability. A locking clamp already
+installed to the longitudinal adjustment appears to adequately prevent
+axial cutter shifts.
+
+The cutter drive motor and its speed reduction gear train work
+well. We have observed no signs of motor overheating during performance
+tests, even during severe milling operations. The 110 V ac motor is
+rated at about 5 amps; 2.5-amp readings were the highest noted in test
+operations. Motor speed control appears adequate, for speeds ranging
+from gbout 30 rpm to about 120 rpm. Observations to date indicate the
+carriage drive may be the limiting factor on cutting capability. We
+have observed roller slippage on the pipe, and at times have tripped
+the drive roller circuit breaker protection. Cutter feed and carriage
+speed adjustment changes, however, restored operations. During a
+recent maintenance period to revulcanize the roller viton friction
+surfaces we found a broken shear pin on one of the two carriage drivers.
+We do not know when this pin sheared, or for how long we may have
+operated with but a single carriage drive roller. (The other motor
+operated satisfactorily, but slipped within its concentric cannister
+housing. Available indicator signals registered proper dual motor
+operation but not the effect of the sheared pin.) Therefore, we are
+uncertain how much the cutting performance may be limited by the
+carriage drive system. However, we were able to make the machine work
+even with only one motor actually driving its roller.
+
+5.3 Tooling
+
+We have cut with high speed steel and Circoloy alloy slitting saws
+and milling cutters. The alloyed tool teeth appear to stay sharper
+longer, possibly by as much as a factor of one and a half. Early
+results from Inconel machining experimentation indicate that the
+cutting edges of all cutter teeth must be generously relieved to
+31
+
+provide ample clearance for chip fallout. Free falling chips minimize
+work hardening tendencies for Inconel pipe. - It is also quite important
+that all teeth of a cutter engage the work during the cutting. Off the
+shelf commercial cutters used to date appear to cut with usually only
+about a fourth of their teeth. Improved cutting was noted when cutters
+were regound locally to precision specifications; almost seventy-five
+percent tooth engagement can be attained. We further noted the impor-
+tance of tool travel and cutter speed adjustments for Inconel pipe work.
+Available machine shop machining data do not apply to the orbital cutting
+assembly because it does not have the driving power of shop machines.
+Also, dry machining is specified for nuclear system maintenance because
+coolants might contaminate the nuclear system. Therefore the tool
+travel, cutting speeds and tool feed rates must be much lower than
+usual shop practice.
+
+The table on the following page shows the number of inches of cut
+a blade can be expected to make before it must be resharpened. The
+table also shows how deep the blade would cut in traveling the indicated
+number of inches around a 6-in.-diameter pipe, taking a 30-mil or a
+12-mil cut, as indicated. The short cutter life experienced in test
+operations means that blades will have to be replaced frequently. We
+plan to test carbide cutter blades in hopes that they will last longer.
+
+5.4 Machining Feeds and Speeds
+
+Efficient cutting requires the thickest possible chip per cutting
+tooth, but may have to be compromised somewhat to obtain reasonable
+cutter life and proper surface finish. This is particularly true in
+the case of high-nickel steels where the base material tends to work
+harden with the result that chip removal is inadequate or incomplete.
+
+We selected Air Force recommended cutting speeds between 70 and
+80 surface feet per minute for stainless steels and chose 50 feet per
+minute for Inconel in order to achieve reasonable cutter life. The
+cutting speeds correspond to approximately 100 and 62.5 revolutions
+per minute for our 3 inch diameter alloy steel slitting saws. Test
+verified feed per tooth selections compatible with tool strength and
+rigidity were .001 in. for stainless work, and about .0005 in. for
+Inconel. We chose respective travel speeds of 3 1/h in. /min. and
+1 in./min. for the 32 tooth saws based on the formula
+
+TRAVERSING SPEED (in./min.)
+No. TEETH CUTTER x SPEED (rpm)
+
+ 
+
+FEED per TOOTH (mils) =
+
+Our feed per tooth rates are low when compared to rates in standard
+machine shop work, but are still creditable considering our small sized
+and low powered equipment. The depths of cut depend on available horse-
+power and cutter shapes, and on the sharpness of the cutters, as they
+
+in turn affect the power required at the cutter motor spindle. We re-
+peatedly cut .030 in. deep into stainless, and .015 in. into Inconel.
+
+We anticipate deeper cutting capability with the "all carbide cutters”
+now on order.
+Table 1.
+
+Expected Life olf Cutter Blades
+
+ 
+
+Description
+
+Blade Lifetime
+
+ 
+
+In Stainless Steel
+
+In Inconel
+
+ 
+
+ 
+
+ 
+
+Saw Tooth Speed 70 to 80 ft/min 50 ft/min
+Carriage Speed 3 1/4 in./min 1 in./min
+Feed Per Tooth .001 in. .0005 in.
+Inches of Total Depth Inches of Total Depth
+cut, average of cut, 6-inch cut, average of cut,
+depth 30 mils. pipe wall. depth 12 mils. 6-inch
+inches inches inches pipe wall.
+inches.
+1/16-in.-thick slitting saw,
+3 in. dia., 32 teeth
+high speed steel 530 3/k
+1/16-in.-thick slitting saw,
+3 in. dia., 32 teeth
+Circoloy alloy 800 11/8 730 7/16
+3/32-in.-thick slitting saw,
+3 in. dia., 32 teeth
+high speed steel 430 5/8
+3/32-in.-thick slitting saw,
+3 in. dia., 32 teeth
+Circoloy alloy#* 650 7/8 600 11/32
+70° included double angle mill
+2 3/4 in. dia., 20 teeth, 1/2 in. wide
+high speed steel L70 11/16 Loo 1/k
+
+ 
+
+*
+Trade name for Circular Tool Company (Providence, R.I.) special high-speed steel alloyed blades of
+high carbon, medium chrome, high vanadium, high tungsten and medium cobalt composition.
+
+ct
+33
+
+5.5 Machining Techniques for Slitting and Beveling Pipes; Pipe End
+Preparation Requirements for Welding
+
+An important feature desired for pipe weld joints is a perfect
+match for adjoining pipe ends. Pipe inside walls must align and must
+be concentric. Regardless of the geometry of a selected joint, whether
+it is V-bevel, J-bevel, or butt, precision fitup and mating geometrical
+concentricity will be required, along with square-cut ends and a uniform
+gap, or complete contact, of the joint ends.
+
+ASME Materials Specifications, Section Two, Boiler Code for Piping
+permit various diametrical and wall thickness dimensional variations.
+Section SB 167 for Nickel-Chrome Alloy Pipe, as an example, permits an
+allowable eccentricity of pipe inside and outside diameter up to ten
+percent of the nominal wall thickness. Comparable SA 106 Steel Pipe
+Specs allow for 12 1/2 percent thickness variations below nominal pipe
+wall thickness. Diameters for large piping may vary as much as 1/8 in.
+All commercial pipe is governed by these specifications. Our experience
+indicates that piping dimensions vary at least as much as, or slightly
+more than the allowable tolerances.
+
+Figure 10 illustrates problems encountered when we cut commercial
+piping for a J-bevel weld joint with our orbital equipment. The carriage
+rollers ride the pipe outside surface, which then becomes the reference
+surface for the cutter. For simplicity, Fig. 10 shows the end view
+eccentricity about only one centerline. In practice, one encounters
+eccentricities in several planes. The two elevations shown represent
+matched and mismatched joint alignment. Mismatching destroys mating
+inside diameter surface contact and prohibits proper root pass weld
+penetration. To achieve matched and aligned joint surfaces requires
+sensors and controls which will properly regulate the root pass weld
+variables (weld current, -speed, -wire feed, and -arc voltage) to
+adjust for variations of the joint. To date we have no sensing means
+which will automatically adjust the programmed weld variables for non-
+uniform geometries of the weld joint.
+
+Figure 11 illustrates how a remedial cut can be taken to approach
+uniform wall thickness for pipe weld joints. This requires that the
+operator obtain accurate dimensional information from his initial
+slicing cut so that he can properly position and feed the cutter for
+subsequent machining. A wax impression of the pipe end contour could
+be used for remote work applications. If the pipe is contaminated and
+then contaminates the impression device, duplicate non-contaminated
+replicas can be made in hot cells or glove boxes via a recast plaster
+of paris process. This technique of remote replication has been used
+successfully in working with very highly radicactive materials.
+
+Figure 12 shows one way of field matching a pipe end with a pipe
+stub previously welded onto a replacement component. For reactor
+maintenance, replacement items such as pumps, heat exchangers, etc.,
+are all jig prefabricated. A blank end stub of slightly heavier
+schedule pipe, to gain a smaller inside diameter for subsequent fitup
+machining, could be field ground to an impression replica of the pipe end.
+3h
+
+A machining technique has been developed for remotely preparing
+J-bevel pipe ends for welding. Figure 13 schematically represents
+an in-cell maintenance cutting procedure which tends to compensate
+for the variations in pipe wall thickness which, under the ASME Code,
+can be as much as 12 1/2%.
+
+Ll. Step 1: Make a light cut around the pipe with a thick
+slitting saw and inspect for true tool tracking. Continue
+slitting to the predetermined depth which will leave a land
+surface for the root weld.
+
+2. Step 2: On the cutter shaft, mount a hardened steel thrust
+washer and a single-angle milling cutter so that the washer
+will ride in the slit made by the saw and will guide the
+bevel cutter.
+
+3. Step 3: After making the bevel cut, insert a thin slitting
+sawblade and cut through the wall.
+
+4. Make a wax impression of the cut Joint. Make a plaster of
+paris non-contaminated replica.
+
+5. Machine to a constant land wall thickness at the joint by
+cutting metal from segments of the land surface where
+measurements of the replica indicate it 1s too thick.
+
+6. Make a second replication of the joint for use in out-of-
+cell machining on the stub end of a replacement component
+to make it fit the pipe inside the cell.
+
+7. Use information from the replica to set programmer weld
+current curves so that they will compensate for variations
+in the arc gap caused by out-of-roundness or by the machining
+to give constant land wall thickness.
+
+All of our machining operations must be accomplished in the
+standard "milling up" mode of operation where the cutter tooth in
+contact with the pipe is moving in the same direction as the carriage.
+We lack rigidity for reverse, or "climb mill" cutting. Our torsion
+bar clamping action on the carriage roller does not give enough
+friction contact for climb cutting.
+
+6. WELDING STUDIES
+6.1 General
+
+Orbital TIG welding operations on pipe require precise weld joint
+machining to obtain concentric pipe inside diameters and matched pipe
+wall thicknesses as well as near-perfect alignment of the respective
+two joint members. Failure to meet these requirements results in root
+welds that are undercut, lack full penetration, or that have too much
+penetration, resulting in excessive convexity. Fill-pass weld criteria
+ORNL DWG. 69-11837
+
+TT
+
+NE
+| 1
+
+3
+=z
+[a
+=
+<C
+1
+0
+WJ
+x.
+J
+<
+=
+
+ 
+
+2
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+—N—
+
+¢
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+    
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
+
+7
+/
+1 so
+rd oT
+
+ae y No N XN
+
+/ 7 nh Pp Nn Ny
+
+A A RN
+
+i :
+o. pt \,
+
+SECTION END VIEW SECTION
+MATCHED ALIGNMENT MISMATCHED ALIGNMENT
+
+ 
+
+ 
+
+ 
+
+Fig. 10. Orbital Cutter (Riding Pipe 0.D.). Typical "As Cut" Pipe Joints.
+
+Gt
+ 
+
+ 
+
+MODIFIED
+
+Fig. 11.
+
+ORNL DWG. 69-11838
+
+ 
+
+~ | correcTive CUT
+
+]
+
+ 
+
+ 
+
+ 
+
+ 
+
+THICKNESS
+
+ 
+
+ 
+
+= —~ LAND
+
+ 
+
+END VIEW MODIFIED SECTION
+
+Orbital Cutter (Tiding Pipe 0.D.). Corrective Joint Cutting Plan.
+
+9t
+ 
+
+    
+  
+
+ 
+
+- > Zo oe Tr Po
+i 4 7 a oe
+v 2 pA yd
+2 ya Si A
+/ 7 ) pa pd |
+7
+
+ 
+
+"AS CUT” PIPE
+
+ORNL DWG. 69-11839
+
+ 
+
+= FIELD GRIND
+To FT CONTOUR
+TEMPLATE
+
+ 
+
+X. Heavy Tug LD.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+REPLACEMENT COMPONENT X- HEAVY PIPESTU
+
+ 
+
+ 
+
+Fig. 12.
+
+Modified Final Joint Preparation.
+
+  
+   
+ 
+
+MACHINED
+
+ 
+
+LE
+ORNL DWG. 69-11840
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+— PIPE WALL = —
+
+ 
+
+STEP | STEP 2
+SCRIBE BEVEL
+GROOVE BEVEL CUT
+THICK SAWBLADE THRUST WASHER
+
+GUIDED ANGLE MILL
+
+Fig. 13. Pipe Joint ~- Machining Sequence.
+
+ 
+
+ 
+
+STEP3
+
+THROUGHCUT
+
+THIN SAWBLADE
+
+gt
+39
+
+do not appear to be quite so critical, though we note a dependence of
+successive welds on prior weld passes. It is quite simple to lay good
+fillers over good root welds, or over good prior filler welds. It is
+difficult to perform remedial tasks over poor substrates. All these
+observations are based upon our recent work, which has generally in-
+volved extra-heavy 6-in.-diameter, 347 stainless steel pipe prepared
+with V- or J-bevel joints, and always fitted up without joint gap,
+
+and without weld inserts. Remote work on nuclear systems cannot use
+gap Joints or the common weld insert rings.
+
+Test operations with the orbital welding equipment were started
+during late February 1969. The first tests consisted of simply
+placing weld beads around the exterior surface of the pipe. Subse-
+quently, V- and J-bevel pipe-joint root and filler pass weld tests
+were tried. We had hoped that acceptable root pass weldments could
+be obtained without having to do the precision machining that is re-
+quired for close alignment and fitting of mating surfaces. However,
+the test welds showed that preparing the surfaces for precision
+matching and alignment is important in achieving quality welds.
+
+Because it is time consuming and difficult to do precision
+machining by remote control, we plan to experiment with joints in
+which one preapplies weldwire filler metal to one of the two joint
+ends prior to placing the pipe inside the cell. This type of joint
+preparation permits plain fusion root pass welding, and requires no
+other filler wire additions. It should also greatly reduce the require-
+ments for precision joint matching and alignment. Several highly
+successful root pass welds have just been performed by a similar
+method in which the pipe ends were machined to include an integral
+flat washer on one of the two mating J-joint sections. This washer
+permitted the root pass weld to be a single fusion weld which, in the
+tests exhibited excellent bead shape and full weld penetration.
+
+At the moment we still lack essential information to suitably
+program the pipe root pass weld (with filler wire addition) for pipes
+in the horizontal plane. We have found no easy solution to the problem
+of sensing the weld puddle behavior as it relates to consistent full
+weld penetration. Such a sensing capability would permit automatic
+control and would make it possible to do remote welding with far less
+critical specifications for prior joint preparation. We have, however,
+recently coupled a Sanborn 150 Recorder to our weld programmer to study
+simultaneous data printouts of the inter-related weld functions (weld
+current, - travel speed, -wire feed rate, -arc voltage, and -arc
+voltage control). We have just begun to learn how to select and
+introduce proper weld programs for controlled high quality welding.
+There appears to be an excellent chance that we will soon be able to
+develop joint preparation, fitup, and weld criteria for consistent
+reactor quality welding.
+
+We observed manual TIG welding operations in an attempt to study
+Just how a welder actually manipulates his feed wire relative to his
+weld puddle. Slight pulsing of the wire advance motions were noted,
+Lo
+
+with speed adjustments to maintain the wire at the weld puddle's
+lower edge. For the present we lack bullt-in programmer wire feed
+pulse capability. We do, however, have the capability for weld cur-
+rent pulsing with up to 50 amperes peak to peak pulse amplitudes at
+either 40 or 60 pulses per minute. However, these pulses do not give
+the puddle stability observed in manual welding. An improvised method
+of wire feed pulsing was tested and appeared to give improved puddle
+stability, better arc tie-in to the joint walls, and uniform bead
+periphery. A Wavetek wave function generator provided 3 cycles per
+second pulsing with 50% on and off times. Additional trials will be
+scheduled with refined circuitry.
+
+6.2 Preweld Joint Cleaning
+
+Stored metals will form external oxide coatings. These oxides
+are refractory. Excess power (weld current) is required to obtain
+initial weld penetration when metal surfaces are oxide coated, and
+this often results in weld porosity due to hydration of the oxide.
+Once penetration has been achieved, new problems arise. One encounters
+difficulties with weld puddle control, especially in or near overhead
+weld positions. Weld deposits are uneven with balling tendencies and
+void inclusions.
+
+Routine cleaning procedures of stainless steel wire brushing to
+cut oxide coatings and wiping with solvent to remove surface dirt and
+grease traces are necessary for all welds with the present orbital
+equipment. Additional draw filing, or grinding, may be required for
+filler passes to remove sharp notches or protrusions to obtain smooth,
+blended surfaces.
+
+6.3 Joint Fitup Tolerance
+
+Joint mismatch has already been listed as a cause for poor root
+pass welds in horizontal pipe lines. Mismatch is most critical in
+the overhead or 6 o'clock pipe position. Here a slight mismatch of
+adjacent inner diameter pipe jcint lips, commonly referred to as mating
+land surfaces, causes the weld to pull out, or suck back metal due to
+gravity conditions. We concluded that it will be necessary to match
+pipe bottom quadrants most precisely for best weld results, since mis-
+fit conditions can be tolerated to a greater degree in the top quadrant
+surfaces. Pipe joint mating surfaces should preferably make physical
+contact on fitup for radioactive system remote maintenance welding.
+Purge gas losses are minimized with contacting surfaces, and filler
+metal additions are reduced, also.
+
+6.4 Inert Shield Gas
+
+There is a difference in ionization potential of inert gases which
+affect the heat input to the weld zone. Helium requires only about 60%
+of the welding current required for an equivalent weld with argon shield
+gas. Different arc plasma shapes result. Argon spreads the welding
+heat; helium concentrates heat. Air Force experimentation indicated
+Lh
+
+that wide argon plasmas give best results for work with stainless
+welding. All ORNL work has been done with argon shielding gas. We
+have also used argon gas to purge pipe interiors, usually with a 20 cfh
+gas purge flow.
+
+6.5 Electrode Configuration
+
+Air Force experimentation indicated that better welds can be
+obtained by tapering the torch electrode tungsten to a 60° included
+angle. Electrode configuration influences the arc spread pattern.
+The tendency of an arc to spread to an adjacent area causes the weld
+nugget to fuse only intermittently to the jeint sidewalls, resulting
+in lack of fusion and an uneven, knotty-rope appearing surface on the
+weld bead. It is practically impossible to lay subsequent acceptable
+fill passes over such defective surfaces; one must resort to corrective
+interpass machining and blending prior to proceeding with further
+welding. We tentatively standardized on a 60° included electrode
+angle for our stainless welding work.
+
+6.6 Automatic Arc Voltage Control
+
+It is necessary to control both the torch-to-pipe distance and
+the torch electrode-to-weld puddle distance to maintain a constant
+arc length and a constant arc voltage with a selected inert welding
+gas. The orbital system weld head is spring loaded within the carriage.
+A cam follower rides the pipe's perimeter and actuates a spring to
+perpendicularly vary the weld head to work-plece spacing and continu-
+ously compensate for ovalty or local flat spots in the piping. North
+American Rockwell also devised an electronic arc voltage control (AVC)
+system to maintain constant electrode-to-weld puddle spacing. The
+Air Force programmer built by Rockweel includes a feedback system which
+monitors the arc voltage, compares it to a predetermined value, and,
+as required, generates a correction signal to adjust the wire feed rate.
+The AVC system thus actually senses or observes changes in the arc gap
+as changes in arc voltage to increase or decrease the filler wire speed
+to deposit larger or smaller weld puddles to maintain preset gap.
+
+The angle of the tip of the electrode determines where the arc
+will initiate. Arc emission can occur from any spot of the heated
+electrode's tapered emitting surface. Weld bead shape can be some-
+what varied by changing electrode tip angles. Precision, caution
+and care are required even with AVC regulation to confine the arc
+emission direction to keep from bumping into pipe joint sidewalls
+or weld puddles. Additional precautions are necessary to prevent
+contacting the electrode with the filler wire during the overlap
+portion of the weld. The wire feed motor cutoff point must be pro-
+grammed to stop in the initial downslope portion of the weld current.
+Lo
+
+6.7 Pre-Weld Positioning
+
+Pipe ends to be joined by welding must be rigidly held in position
+during welding to prevent weld heat-induced pipe movement at the Joint
+due to expansion and contraction forces. Pipes may be clamped or fusion
+tack welded prior to the root pass.
+
+We plan to use mechanical clamps for remote maintenance welding,
+as machine tack welding presents additional problems: after tacking,
+pipe Joint groove surfaces of the tack must be machined to a thin,
+blended buildup; surfaces must then be wire brushed and solvent cleaned;
+machine tack welding must also be confined to the upper half of the
+pipe to prevent undercutting at the end of the tackweld.
+
+6.8 Root Pass
+
+The ideal root-weld pass requires the shortest possible arc length
+without "sticking" and with additions of as much filler wire as possible
+for crack sensitive metals. For pipe in horizontal runs weld passes
+should start in the overhead portion of a joint to take utmost advantage
+of the chilling effects of cold pipes. Pipe joint lands should ideally
+be uniform in thickness and in width. The angle for wire entry and the
+exit location of the wire feeder guide tube relative to the weld puddle
+are critical. Experimentation to date has followed.the listed Air Force
+recommended settings:
+
+For stainless steel welding: Root Pass Arc Length = 1/16 in.
+
+Filler Wire Rate, approx. lO in./min.
+with .0OW5-in. wire
+
+Tool Drive (carriage) Travel Speed, approx.
+4 in./min.
+
+Pipe Joint Lands, approx. 1/16 in. wide x
+1/16 in. high
+
+Wire Feeder Entry Angle 25 to 30° above
+the tangent point with pipe surface,
+1/4 in. away from the electrode, with
+the wire dragging the groove directly
+below the electrode.
+
+AVC set at 8 1/2 to 9 volts with argon
+purge gas
+
+Start Position approx. 9 o'clock
+
+Some indications of root pass weld quality can be observed from
+programmer voltmeter and wire feed rate meter readings. Both meters
+indicate any variations in arc length. The weld bead is not penetra-
+ting the pipe joint if voltage readings hold steady but wire feed
+43
+
+rates register only below selected rates. Usually a small increase
+
+in welding current will remedy this situation. If, however, the wire
+feeder motor builds up to the set rate, and voltage continues to climb,
+poor welding also results, and the cycle should be stopped at once.
+The problem will usually be an excessive joiut gap formation with too
+much pushthrough in the upper quadrants of the pipe, filler wire bound
+up within the wire feeder drive and not feeding into the weld, or
+excessive puddle fluidity in pipe vertical positions causing puddle
+flow away from the electrode tip.
+
+6.9 Fill Passes
+
+Satisfactory weld fill passes do not appear to present great
+problems. The second weld pass, or first fill pass, requires some
+special care to properly add filler wire and obtain weld buildup
+without affecting the root pass drop-through. Heat input selections
+for this and subsequent passes require only fusion to the previous
+pass and to the joint sidewalls. Oscillation of the weld torch
+assists to assure fusion into the sidewall. Current pulsing tends
+to maintain a stable weld puddle.
+
+Few programmer input changes are required for initial fill passes,
+except to add torch oscillation and to halve the wire feeder exit to
+pipe surface entry angle. Final fill passes can be made with increased
+weld power, wider oscillation, and faster wire feeds. An 11 o'clock
+first filler pass start position generally helps to balance partial
+distortion of the pipe created by the root pass.
+
+6.10 Repair Welding
+
+The orbital welding system can also be employed to repair some
+weld defects. Two common defects are intermittent lack of fusion
+along the sidewalls of a joint, and cold, balled, ropey-like deposits
+along a weld joint sidewall. Resultant defective surfaces then pre-
+vent subsequent weld pass puddles from wetting and flowing smoothly.
+Weld beads exhibit areas of lack of fusion and void inclusions.
+
+Placing the electrode just ahead of the poorly fused area and
+manually starting a new weld pass without filler wire additions or
+oscillation will generally remelt and fuse the weld. Pinholes can
+also be repaired in a similar manner with the torch located directly
+over the pinhole prior to a delayed electrode '"start-fire."
+
+A procedure to fill local weld areas which have been purposely
+ground out to remove weld defects is to place the carriage about 1/2
+in. in front of the area to be filled, set a short arc gap of 1/32 in.,
+and initiate a weld cycle. The AVC wire feed control will start to
+add wire as soon as the arc gap increases once the carriage traverses
+the recessed area. The wire feeder motor will again shut off on the
+far side of the depressed area to permit manual weld downsloping.
+Ly
+
+7. SPECIAL ORBITAL EQUIPMENT MAINTENANCE REQUIREMENTS
+
+Orbital equipment used for maintenance of reactor systems may
+become contaminated. In such cases, repairs to the orbital equipment,
+or component replacement operations may have to be performed in shielded
+hot cells. Viton-rubber-coated roller surfaces may require periodic
+interchange; motors, cutters, torches, etc., may have to be replaced.
+Equipment maintenance procedures are listed for major equipment in-cell
+components which might be subjected to contamination. Work experience
+to date suggests a number of modifications which could be made to the
+orbital equipment to provide better access for repairs to be performed
+by remote control inside a hot cell and to reduce the time required
+for maintenance of the orbital equipment. The changes indicated on
+the basis of experience to date are described in the following para-
+graphs.
+
+7.1 Carriage
+
+7.1.1 Drive Rollers - Minor changes to the wire trough of each carriage
+arm and provisions for an externally accessible,
+flat, Winchester type connector in respective
+motor circuits would permit faster interchange
+for spare roller assemblies. The removal of
+two roller end plugs and two roller end cap
+screws and opening the electrical connector
+frees the drivers.
+
+T.1.2 Idlers - Idler replacement presently requires the somewhat
+tedious disassembly of electrical connectors, the
+carriage rear frame and side walls, and the link
+pins. For maintenance to be performed inside a hot
+cell some simplifications are possible, especially
+with use of modified right angle electrical connector
+replacements. We recommend jigged holddown devices
+for all hot cell idler interchange operations to
+maintain the highly critical centerline alignment of
+the Jjackscrews with the torsion bar gear and the
+torque ara gear.
+
+7.2 Blectrical Items
+
+Access is available for all component electrical wiring and acces-
+sory items by simply removing cover plates. More extensive use of
+miniature connectors might be desirable for electrical system parts
+which might require maintenance during developmental test periods.
+
+7.3 Milling Head
+
+Hot cell jigs will be required to support the milling head for
+cutter replacement. The cutter is replaced by removing the bolt
+holding it to the output shaft. Washers are employed to hold the
+cutter tightly.
+a)
+
+Improvements are necessary for more precise depth of cut adjust-
+ments and for the horizontal cutter placement adjustment. Precision
+worm gear replacements are contemplated for existing miter gears. We
+also plan to add an airline connection through the rear carriage panel
+to modify cutter motor forced cooling and to keep chips generated
+during cutting from entering gear drives, the motor, and the positioning
+adjustments.
+
+No problems are expected for routine cutter motor servicing in-
+volving backplate, control panel and cutter removal. Motor brushes
+can be replaced by simply moving the motor partially out of the housing.
+The gear train connecting the motor to the output shaft is servicable
+by disassembling the motor canister.
+
+For our next model, cutter motor speed control circuitry will be
+eliminated from the head and transferred to the programmer.
+
+7.4 Welding Head
+
+Periodic cleaning of the weld head is important to prevent high-
+frequency arcing. The weld head is disassembled by first removing the
+wire feed spool. The torch, oscillator, and wire feed mechanism slide
+off the vertical guide as a unit after the removal of the vertical
+adjustment knob. The common mounting block is removed by unscrewing
+the horizontal guide pins and the setscrew on the horizontal adjust-
+ment shaft. The wire feed is disconnected from the torch and oscil-
+lator by removing two screws. The feed pressure-adjusting screw
+should be removed to inspect bearing races between rotating disks.
+
+Special, simple remote tooling will be required to replace
+threaded torch assemblies, or to interchange electrodes.
+
+Jigs are recommended to support the weld head for hot cell
+maintenance work. We plan weld head design change improvements for
+our next model's oscillator adjustment cam to the lid latch device,
+and to the horizontal and vertical torch movement gear trains.
+Present items do not work well with remote tooling. We also plan to
+transfer the present "touchdown" light, which indicates electrode
+contact with the work on setup, from the welding head to the programmer.
+
+7-5 General
+
+In the future we also hope to incorporate brighter directional
+lighting for both the milling and weld heads, to possibly enlarge the
+viewport openings, and to alter the front panel of the carriage to
+permit improved viewing for hot cell and operational setups and
+possibly for monitoring use in actual reactor repair use.
+
+We are also investigating fluidic sensing and control devices
+for remotely setting and controlling oscillator operation. This
+would reduce costs, gain reliability, improve weld head rigidity and
+compactness and eliminate maintenance time requirements to place long
+handled tools into the cell to alter the present electro-mechanical
+oscillator's amplitude settings required for successive fill passes.
+SECTION C
+
+8. PROGRAM PROPOSAL: DEVELOPMENT OF REMOTE CUTTING, WELDING AND
+INSPECTION EQUIPMENT FOR REACTOR SYSTEM MAINTENANCE
+
+8.1 Overall Requirements for Remote Cut/Weld Maintenance
+
+The question of how maintenance will be accomplished is one which
+must be answered at the time a reactor system is being designed in
+order that appropriate provisions for maintenance will be included
+in the design. In considering the design of a Molten Salt Breeder
+Reactor, ORNL has explored the reported experience in the whole field
+of reactor maintenance problems and methods of making repairs. The
+advantages of welded joints in nuclear systemsare generally recognized,
+but there is no suitable equipment for performing remote cutting and
+welding operations in the ways reactor system maintenance would re-
+quire. However, there are some new types of equipment which show
+promise for radioactive system applications after further development
+of remote controls and other special features for work in high radiation
+areas.
+
+The orbital cutting and welding equipment developed for the Air
+Force and adapted for remote handling and operation by ORNL demonstrated
+good performance in tests of a prototype unit, and thus gave support
+to the formation of a new philosophy for maintaining piping systems
+and vessel closures in radioactive systems. The new maintenance
+philosophy is to rely on the use of remote cutting and welding equip-
+ment to remove from the nuclear system any component which fails and
+to install a replacement. This provides a great deal more flexibility
+and reliability than a piping system in which flanged joints must be
+opened and resealed by remote control. Remote cutting and welding
+would provide for all maintenance on the piping system and on seal
+welding the flanged openings in vessels. For maintenance of the
+electrical, instrumentation and other systems, long-handled tools or
+special remote control devices would be used in the manner already
+demonstrated in the MSRE and other reactors.
+
+The orbital equipment will require further modifications and
+additions to meet the special needs of remote maintenance operations
+on pipes and vessels, so that, for example, the equipment can be
+positioned at the work site by remote control, without being able to
+see directly what is being done. The Air Force cutting and welding
+equipment has semi-remote controls for the cutting and welding opera-
+ticns and these will require additional special features for fully
+remote control.
+
+Work on radioactive systems not only requires remote controls
+for all operations, but also requires that the maintenance equipment
+be fabricated of materials that resist the damaging effects of radia-
+tion and withstand high temperatures and the corrosive action of
+decontamination chemicals. The performance of remote maintenance
+7
+
+operations will require special attachments for viewing, measuring,
+and sensing from a shielded work area and for performing inspection
+operations by remote control. This will necessitate the development
+of highly specialized apparatus plus new techniques and procedures
+for examination, measurement and inspection. Remotely controlled
+methods for accurately positioning and aligning large pipes must be
+developed in order to be able to do high quality welding on pipe
+Joints. There are many interrelated and difficult problems for which
+solutions are not now available. The development programs described
+below are proposed to provide the needed equipment and techniques for
+remotely controlled, automated cutting and welding on highly radio-
+active piping and components of nuclear systems.
+
+The remote maintenance equipment development program will first
+be concerned with completion of the testing and evaluation of the
+Air Force orbital equipment with special emphasis on improved cutting
+capability for extra hard materials such as alloys with high nickel
+content, and the development of proper techniques for acceptable root
+pass welding. Successful completion of the testing and evaluation
+program should give assurance that the broader, long range development
+program can produce a fully automated and remotely controlled system
+which will meet the rigid quality requirements for maintenance on
+nuclear systems.
+
+8.2 A Long-Range, Three-Phase Development Program for Pipe and Vessel
+Maintenance
+
+The long range program encompasses three phases: general investi-
+gations of welding requirements and remotely controlled equipment for
+welding, an extended pipe-joint program, and a vessel closure program.
+It is proposed that the study of general remote welding problems and
+the development of equipment to handle the specific problems of
+reactor pipe joints and vessel closures should be pursued concurrently.
+Remote welding equipment modifications can be developed, studied, and
+tested at the same time general studies are in progress, with refine-
+ments from the general studies being added as they become available.
+
+8.2.1 Phase I, The General Program
+
+ 
+
+Major investigations under the general program are the basic
+studies of factors that determine the quality of welded joints in
+various metals, the studies of different welding techniques and
+controls needed to assure that weld quality criteria are met, the
+determination of materials and components that will withstand the
+effects of radiation, temperature, and of chemical decontamination
+treatments, the improvement of welding controls and programming appa-
+ratus, the development of equipment and techniques for remote-control
+alignment of components, and the determination of environmental and
+cleanliness criteria. For the applied phase of the general program,
+mockup work is planned to evaluate various new or modified types of
+equipment and remote controls, especially the pipe positioning and
+movement schemes designed to achieve acceptable pipe joint alignment
+prior to welding.
+L8
+
+It is also recommended that the welding metallurgy of irradiated
+materials be investigated. It 1s important to know whether neutron
+irradiated pipe metal shows radiation effects which will affect welding
+and whether minute cracking will occur in heat-affected weld zones.
+
+At present, only limited data are available from tests conducted at
+ORNL. 2° Attempts to weld small corrosion samples removed from the MSRE
+gave effective welds in only 70% of the cases; 2* however, further
+testing indicated that better cleaning of the metal surfaces to remove
+salt residues prior to welding would solve the problem. Test specimens
+should be obtained from actual irradiated sections of reactor pipe in
+which the combined effects of neutron irradiation and thermal cycling
+are present. The Navy, has informally expressed interest in studying
+the welds in highly irradiated sections of nuclear submarine pipe
+systems. Valuable data and maintenance experience might be obtained,
+in cooperation with the Navy, by using the remotely controlled cutting
+and welding equipment to cut out and replace test sections of the ship-
+board nuclear system piping so that the removed sections could be
+subjected to detailed study of the old welds and of new welds made on
+the irradiated metal.
+
+8.2.2 Phase II, The Pipe Joint Program
+
+The continuation of the pipe Joint program will require development,
+and testing of prototype carriages for the larger pipe sizes, design,
+development, and testing of second generation cutting and welding
+heads, and the establishment of specific techniques, methods and equip-
+ment for cutting and welding various metals. It is also planned to use
+the findings of the environmental study and the materials and components
+study, carried out under the general program to upgrade the materials
+and components of the pipe joint maintenance machinery to withstand the
+effects of radiation, temperature, and of decontamination treatments in
+actual nuclear applications.
+
+8.2.3 Phase III, The Vessel Closure Program
+
+ 
+
+A dual approach is suggested for the development of equipment for
+cutting and welding of seals on the manhole-type openings in large
+vessels in reactor systems. The initial cutting, beveling and welding
+work will be performed using various commercially available components
+adapted for remote control. Performance appraisals from these tests
+will permit the development of modifications to overcome the problems
+that are encountered and after further tests, the final component
+specifications will be established for industry to supply complete
+equipment systems for further testing on vessel closure maintenance.
+Another part of the program will be concerned with application of
+orbital vehicle machinery to the special problem of seal welding on
+lips installed around manhole covers. The pipe welding development
+program will determine the applicability of the modular insert carriage
+scheme for remote maintenance work. After obtaining satisfactory per-
+formance on pipe welds, the welding equipment could be mounted on
+special carriages designed to suit the manhole cover geometries. These
+carriages should utilize the same cut, bevel, weld and inspection
+ho
+
+inserts and operate from the same programmer as the pipe welder.
+
+Great time savings and sizeable dollar savings can result from applying
+such a system directly to seal welding. Spare part problems and inven-
+tories are also minimized. The final procurement of the components
+selected to suit the needs of a nuclear environment will incorporate
+the most promising apparatus, materials and components indicated by
+the development and testing activities.
+
+REFERENCES
+
+20. Molten Salt Program Semiannual Report for the Period ending
+February 28, 1966, ORNL Report No. ORNL-3936, p. 117, 1966.
+
+21. Molten Salt Reactor Experiment Monthly Report for August 1968,
+ORNL Report No. MSR-68-123, p. 19, 1968.
+=a TrREQEIMOMItQaGEIERYQOE > TEU EHOI Edson aoaany aa VExSoD=
+
+EEE EER
+
+. G.
+LJ.
+. B.
+. Braunstein
+. Bredig
+
+. Breeding
+
+HEED SE EGE
+
+Hm SHEETING YEPOOW or
+
+o1
+
+Internal Distribution
+
+ 
+
+Director's Office
+. Adams
+
+. Adamson
+
+. Anderson
+
+. Apple
+
+Armstrong, Y-12
+Aubuchon
+
+Baes
+
+Baker
+
+Baker
+
+. Ball
+. Bamberger
+
+Barton
+
+. Bauman
+. Beall
+. Beatty
+. Bell
+ender
+
+. Bettis
+. Bettis
+
+Billington
+
++ Bird
+
+Blanco
+Blankenship
+
+Bohlmann
+Borkowski
+Boyd
+
+Briggs
+
+. Bronstein
+
+. Buchanan
+
+. Burchsted
+
+. Canonico
+
+. Cartwright, Y-12
+. Chandler
+
+. Claffey
+
+Clark
+
+. Cobb
+
+Cochran
+Collins
+Compere
+Cook
+Cook
+Cooke
+Corbin
+
+02.
+
+a = Uw Sow > GG x= a = ao = So > Rp HGDUUsHPODOUHQOWUOU UY HG Ws
+
+B. Cottrell
+
+. Cox
+
+Crowley
+Culler
+
+Cuneo
+Cunningham
+Dale
+
+. Davis
+
+. DeBakker
+
+. Deering, AEC-OSR
+DeVan
+
+. Ditto
+
+. Duggan
+Dworkin
+Dudley
+
+. Batherly
+lias, AEC-Washington
+Emmert
+
+. Engel
+
+. Epler
+
+. Ergen
+Farnham
+
+. Feeman, Y-12
+. Ferguson
+Ferris
+leischer
+Fontana
+Fraas
+Franco-Ferreira, Y-12
+Franzreb
+Friedman
+
+. Fry
+
+. Frye
+
+. Fuller
+
+. Furlong
+
+. Gabbard
+
+. Gall
+
+. Gallaher
+
+. Gibbons
+Googin, Y¥Y-12
+Grimes
+Grindell
+Gunkel
+Guymon
+Hammond
+
+. Hannaford
+
+. Harley
+
+Harms
+Harrill
+
+QUENW GQ REE
+
+om > ‘tg mo Taw DdoomRROdsrRroyOdERdQR Rg qEY RE,
+101.
+102.
+103.
+104.
+105.
+106.
+107.
+108.
+109.
+110.
+111.
+
+112-131.
+132.
+
+133-13k.
+135.
+136.
+137.
+138.
+139.
+150.
+147.
+142.
+143.
+hk.
+145.
+16.
+147.
+148.
+iho.
+150.
+151.
+152.
+153.
+154.
+155.
+156.
+157.
+158.
+159.
+160.
+161.
+162.
+163.
+164.
+165.
+166.
+167.
+168.
+169.
+170.
+171.
+
+—
+rE
+
+Ewwnzomids HE dg E RSG U gag
+
+Momo rEHEPgQOQOUBHnonaHIOHQO
+
+. T.
+
+52
+
+N. Haubenreich 172.
+E. Haynes 173.
+E. Helms 17h.
+G. Herndon 175.
+N. Hess 176.
+R. Hightower 177.
+W. Hill 178.
+R. Hill 179.
+C. Hise 180.
+W. Hoffman 181.
+K. Holmes 182.
+P. Holz 183.
+W. Horton 184.
+R. Housley 185.
+L. Hudson 186.
+R. Huntley 187.
+Inouye 188.
+FT. Jackson 189.
+R. Jasney, Y-12 190.
+H. Jordan 191.
+I. Kaplan 192.
+R. Kasten 193.
+J. Kedl 19k.
+T. Kelley 195.
+J. Kelly 196.
+A. Kelly 197.
+R. Kennedy 198.
+W. Kerlin 199.
+Kerr 200.
+
+. Kertesz 201.
+J. Keyes 202.
+S. Kirslis 203.
+H. Klepper 20k.
+B. Korsmeyer 205.
+S. Kress 206.
+W. Krewscn 207-216.
+E. Lamb 217.
+A. Lane 218.
+G. Lawson 219.
+J. Leonard 220.
+S. Lee 221.
+B. Lindauer 222.
+P. Litman 223-227.
+L. Long 228.
+L. Lotts 229.
+I. Lundin 230.
+N. Lyon 231.
+L. Macklin 232.
+G. MacPherson 233.
+E. MacPherson 234.
+H. Mauney 235.
+
+McClung
+McCoy
+McCurdy
+
+. McElroy
+McGlothlan
+McGuffey
+McLain
+McNeese
+McWherter
+Metz
+Meyer
+Miller
+Moore
+orris
+Morrison
+. Moyers
+Nelms
+Nicholson
+. Oakes
+Osborn
+
+. Parsly
+Patriarca
+
+M. Perry
+
+. W. Pickel
+
+. B. Piper
+
+. I. Redford
+
+. Richardson
+
+. C. Robertson
+. N. Robinson
+. C. Robinson
+. G. Ross
+
+. Roth
+
+. H. Row
+
+. C. Savage
+
+. F. Schaffer
+unlap Scott
+
+. Scott
+
+. Seagren
+
+. Shaffer
+
+. Shersky
+
+. Silverman
+. Skinner
+
+. Slaughter
+. Smith
+
+. Smith, Jr.
+. Smith
+
+. Smith
+
+. Smith
+
+. Smith
+
+. Spiewak
+
+. C. Steffy
+
+HmobdraooRronagErPDIREOES
+
+grmHagnsan amar sitEnGgQuEPHO CDS QU HTX
+
+HHT ORHOQPQR RS mMS
+DEY E=E =U a dE
+236.
+237.
+238.
+239.
+2ko.
+241.
+oho.
+2h3.
+ohh.
+ous.
+246.
+247.
+
+249.
+250.
+251.
+252.
+253.
+254.
+
+278.
+279.
+280-281.
+282.
+283-28L.
+285.
+286.
+287.
+288.
+289-298.
+299-300.
+301-302.
+303-304.
+305-306.
+307-321.
+
+ERGO QHEIUOS EES DE
+
+zzmHaoax>0
+
+F.
+
+HOH REBYEEHAED RE
+
+23
+
+. Stoner, Y-12
+. Strehlow
+
+. Tallackson
+
+. Taylor
+
+erry
+
+. Thoma
+
+« Thompson
+
+. Trauger
+
+. Unger
+
+Walters
+
+. Watson
+. Watson
+
+Watts
+
+. Weaver
+
+Webster
+Weinberg
+Weir
+
+. West
+
+Whatley
+
+255.
+256.
+257.
+258.
+259.
+260.
+261.
+262.
+263.
+264.
+265.
+266.
+267.
+268-269.
+270-271.
+272-274.
+275.
+276-277 -
+
+. White
+Whitman
+Wichner
+. Williams
+Wodtke
+. Wilson
+. Yarosh
+Yaggi, Y-12
+Young
+C. Young
+J. P. Young
+E. L. Youngblood
+F. C. Zapp
+Central Research Library
+Document Reference Secticn
+Laboratory Records
+Laboratory Records (LRD-RC)
+Nuclear Safety Information
+Center
+
+UR <sHOYYQ
+
+al
+
+m2 arosay
+[¢]
+
+External Distribution
+
+ 
+
+Cope, AEC-0OSR
+
+Glambusso, AEC-Washington
+
+. 0.
+L.
+. W. McIntosh, AEC-Washington
+. M.
+. Shaw, AEC-DRDT
+L.
+. S. Zachry, Jr., AEC-ORO
+
+Laughon, AEC-0SR
+Matthews, AEC-0OSR
+
+Roth, AEC-ORO
+
+Smalley, AEC-ORO
+
+AFRPL (RPRPD/Capt. F. M. Cassidy)
+Capt. F. M. Cassidy, USAF, AFRPL, Edwards AFB
+E. E. Stein, AFRPL, Edwards AFB
+Capt. J. L. Feldman, ASD, ASNJD-10, Wright Patterson AFB
+Lt. A. B. Spencer, ASD, ASNJD-20, Wright Patterson AFB
+Division of Technical Information Extension (DTIE)

@@ -1,0 +1,3960 @@
+ 
+
+  
+  
+   
+   
+    
+
+ORNL-TM-3863
+
+ 
+
+DESIGN AND OPERATION OF A
+FORCED-CIRCULATION CORROSION TEST
+FACILITY { MSR-FCL-1) EMPLOYING HASTELLOY N
+ALLOY AND SODIUM FLUOROBORATE SALT
+
+W. R. Huntley
+P. A. Gnadt
+
+MASTER
+
+QISTRIBUTIOR OF THIS DOCOMENT 1S URLRATTED
+
+ 
+
+j
+{
+|
+|
+|
+
+OPERATED BY UNION’ CARBIDE. “o [FOR THE U.S. ATOMIC ENERGY COMMISSION
+
+~ OAK RIDGE NATIONAL LABORATORY
+ 
+
+ 
+
+ 
+
+This report was prepared as an account of work sponsored by the United
+States Government, Neither the United States nor the United States Atomic
+Energy Commission, nor any of their employees, nor any of their contractors,
+subcontractors, or their employees, makes any warranty, express or implied, or
+assumes any legal liability or responsibility for the accuracy, completeness or
+usefulness of any information, apparatus, product or process disclosed, or
+represents that its use would not infringe privately owned rights.
+
+ 
+
+ 
+
+ 
+
+h
+ 
+
+»
+
+©
+
+ORNL-TM-3863
+
+«d
+
+Contract No. W-Th05-eng-26
+
+Reactor Division
+
+DESIGN AND OPERATION
+OF A FORCED-CIRCULA
+TEST FACILITY (MSR-FCL-1) EMPLOYING ASTRLL On Tv ton
+ALLOY AND SODIUM FLUOROBORATE SALT
+
+W. R. Huntley P. A. Gnadt
+a AA
+
+     
+
+— NO TICE
+This report was prepared ss an account of work |
+sponsored by the United States Government. Neither
+the United States nor the United States Atomic Energy
+Commission, nor any of their employees, not sny of
+their contractors, subcontractors, of their employees,
+makes any warranty, express or implied, or assumes any
+legal liability or responsibility for the accuracy, com-
+pleteness or usefulness of any information, apparatus,
+product or process disclosed, or represents that its use
+would not infringe privately owned rights.
+
+ 
+
+ 
+
+ 
+
+JANUARY 1973
+
+OAK RIDGE NATIONAL LABORATORY
+Oak Ridge, Tennessee 37830
+operated by
+
+UNION CARBIDE CORPORATION | |
+| for the j
+
+U.S. ATOMIC ENERGY COMMISSION
+
+DISTRIBUTION OF THIS DOCUMENT IS UKLIMITE
+ 
+
+ 
+ 
+ 
+
+”
+
+rh
+
+Pi |
+
+iii
+
+CONTENTS
+
+1. INTRODUCTION ...... tees essa secs seesasaaanaansaacnnanonnenes
+2. DESIGN AND FABRICATION ..eeeeoecevosoosncnnnanonnnonss seeenos
+2.1 Design Criteria .....ceceeeeee seecsssacssessnnsacnns .
+2.2 General Design Information ........ceeeesevnne feeeoes
+
+2.3 Detailed Design and Fabrication ......ceeveeevveeeses
+2.3.1 Heater ...c.ceescerercconsseonssans cesesasanns
+
+2.3.2 CoOler ....oceneocesrscessoncccasccs veces eons .
+
+2.3.3 Salt pump «cove eccccess cesses saves seers cannes
+
+2.3.4 Salt sampler ....... Ce eceenreteessenreereeanan
+
+2.3.5 BF, system .....00vveunnn ceseseseanas eens oe
+
+2.3.6 Fill and drain ta8nK ...ecveverocsrccoreccesonee
+
+2.3.7 Corrosion specimen design ..... cece seenseensse
+
+2.3.8 Electrical system ......... ceeeens Ceereeeeaans
+
+2.3.9 Instrumentation and control ..........ccc0000
+
+2.4 Quality Assurance .......ecoccee.e eerie eee tereenens
+
+3. OPERATING EXPERIENCE .....ccveeeecessssnconsasssacnssascnnas
+3.1 Heat Transfer Performance of Sodium Fluoroborate ....
+
+3.2 BF Handling ........ srecerasrns Ceeverrssneererresees
+
+3.3 Salt Pump Operation weeeeeeeeeeeeseeenenneoesansnenns
+
+3.4 Corrosion Specimen REMOVAL ....ceeeveeocancaccnncannn
+
+3.5 Salt Sampling ..cscevesccoroccsscerscssosanossscsvons
+3.6 Summary of Corrosion RESULLS ....veeerrresecrarosoans
+CONCLUSIONS tveesoeecacecasnsaassasosnsnssnosssssanca cress scssenans
+RECOMMENDATIONS ¢aveeceenosasanosavresassosassasacasnsanscosacnans
+APPENDIX A. MSR-FCL-1 FLOWSHEET ...cevecocscccencssosconsossas
+
+APPENDIX B. MSR-FCL-1 CONTROL SYSTEM DESCRIPTION AND OPERATING
+PROCEDURES FOR UNATTENDED OPERATION .ecevcececes
+
+APPENDIX C. MSR-FCL-1 SALT SAMPLING PROCEDURE .......ccc0c0en.e
+
+£
+
+ 
+
+OO 0 OO FF ND ND FH HH 4
+
+FE EEE EW NM ONE REE HERR
+FREEFEFEERBNRIRNRLEL AER
+
+ON \n
+w H+
+ 
+
+ 
+
+ 
+ 
+
+8
+
+ 
+
+[
+
+ACKNOWLEDGMENT
+
+The fabrication and operation of the test loop were the joint
+responsibility of the ORNL Metals and Ceramics Division and the ORNL
+Reactor Division. The authors wish to thank the many personnel who
+aided in the design, installation, operation, and postoperational
+examination of this test.
+
+Special thanks are extended to the following personnel who were
+instrumental in the success of the experiment.
+
+H. E. McCoy, Metals and Ceramics Division, and R. E. MacPherson,
+Reactor Division, for thelr guidance of the test program.
+
+J. W. Koger, Metals and Ceramics Division, for metallurgical analy-
+sis throughout the program.
+
+H. C. Savage, Reactor Chemistry Division, for guidance of loop
+operation during the latter portion of the test period and for the
+Control System Description of Appendix B.
+
+E. J. Breeding, R. D. Stulting, and L, C. Fuller, Reactor Division,
+for their contribution to the detailed design of the system.
+ 
+
+ 
+  
+  
+ 
+ 
+ 
+ 
+
+ 
+
+4
+
+a"
+
+rh
+
+DESIGN AND OPERATION OF A FORCED-CIRCULATION CORROSION
+TEST FACILITY (MSR-FCL-1) EMPLOYING HASTELLOY N
+ALLOY AND SODIUM FLUOROBORATE SALT
+
+W. R. Huntley P. A. Gnadt
+
+- ABSTRACT
+
+A forced-circulstion loop (MSR-FCL-1) was assembled and
+operated to evaluate the compatibility of standard Hastelloy N
+with sodium fluoroborate—sodium fluoride eutectic (NaBF,-8
+mole % NaF) coolant salt at operating conditions expected in
+the Molten-Sglt Reactor Experiment coolant circuit. The salt
+velocity in 1/2-in.-0D, 0.042-in.-wall tubing was nominally
+10 fps. Hastelloy N corrosion specimens were exposed to the
+circulating salt at temperatures of 950, 1030, and 1090°F.
+
+The test has operated more than 10,000 hr at these conditions
+and tests are continuing. This report is mainly concerned
+with the design, febrication, and operation of the facility.
+Special problems related to accommodating the BF vapor pres-
+sure of the salt were resolved, and the sodium fluoroborste
+demonstrated heat transfer characteristics that could be
+approximated by conventional correlations such as the Dittus-
+Boelter equation. Corrosion rates generally decreased with
+opersting time; for example, the lowest corrosion rate ob-
+served for the 1090°F corrosion specimens during a 2900-hr
+test interval was equivalent to 0.0003 in. of uniform material
+removal per year.
+
+Keywords: molten salt, corrosion, sodium fluoroborate,
+Hastelloy N, design, operation, centrifugal pump, mass trans-
+fer, heat transfer, MSRE, unattended operation.
+
+1. INTRODUCTION
+
+The sodium fluorcborate (NaBF,—8 mole % NaF) salt mixture is of
+interest as a coolant for the secondary circuit of molten-salt reactors
+because of its low cost (~$0.50/1b) and relatively low melting point
+(725°F). Screening tests in thermal-convection loops! indicate no seri-
+ous problems due to reactions between the salt and the proposed reactor
+
+containment material, Hastelloy N.
+
+ 
+
+13. Ww. Koger and A. P. Litman, MSR Program Semiannu. Progr. Rep.
+Feb. 28, 1969, ORNL-4396, p. 26.
+ 
+
+The forced-circulation loop described here (MSR-FCL-1l) represents a “
+more sophisticated test of the compatibility of the candidate salt and -
+Hastelloy N. High coolant velocities were used, and the design thermal
+gradient was applied to the system. The results from this test will
+assist in the evaluation of the corrosion resistance of the Hastelloy N
+containment materiel and the mass transfer interactions of the contain-
+ment material and salt. Detailed metallurgical results will be presented
+
+separately.
+2. DESIGN AND FABRICATION
+
+2.1 Design Criteria
+
+The MSR-FCL-1 test was designed to evaluate the use of sodium fluoro-
+‘borate? salt in contact with Hastelloy N alloy containment material at
+conditions simulating the secondary-coolant (high-temperature side of the
+steam generator) circuit of molten-salt reactors. One objective of the -
+test was to develop the technology associated with the new salt ry using
+it in a relatively complex operating system. «
+The BFy vapor pressure of the sodium fluoroborate salt is higher
+(e.g., 1h mn Hg at the maximum loop temperature of 1090°F) than the
+vapor pressure of other salts developed for use in molten-salt reactors.
+Accommodating the BF; vapor pressure of the salt at elevated temperature
+in MSR-FCL-1 was a major design problem, since BF; 1s a noxious gas and’
+a design to provide adequate ventilation for personnel protection was
+required.
+An existing system design® was used as a basis for MSR-FCL-1. Cen-
+trifugal pumps, air blowers, electrical transformers, and miscellaneous
+control equipment used in previous corrosion tests of this type were
+
+ 
+
+2Unless otherwise indicated the term sodium fluoroborate will be .
+
+used in this report to designate the NaBF,—8 mole % NaF eutectic mixture.
+8J. L. Crowley, W. B. McDonald, and D. L. Clark, Design and Opera- .
+tion of Forced-Circulation Testing Loops with Molten Salt, ORNL-TM-528
+
+ 
+
+(May 1963). oo o
+oy
+
+Ft]
+
+Ie]
+
+Lil
+
+<)
+
+available. The reuse of the available instrument and control design and
+the existing equipment resulted in a system of limited flexibility; how-
+ever, these design features had been previously tested and funds were
+only available for minimum redesign and fabrication of new equipment.
+
+The hydraulic characteristics of the existing pump were a specific limit-
+ing factor on loop performance.
+
+The facility was originally designed to operate for 10,000 hr and
+to provide a maximum bulk fluid salt temperature of 1125°F, a bulk fluid
+AT of 275°F at a velocity of 7 1/4 fps (3 gpm), and a total heat input
+of 94 kW. However, the loop was not operated at these conditions. After
+the original design was completed and before the loop fabrication was
+complete, the test conditions were changed to more nearly match the tem-
+perature profile of the coolant circuit of the Molten-Salt Reactor Experi-
+ment (MSRE), which was then operating. This modification to program plans
+was a prelude to the proposed introduction of sodium fluoroboraste into the
+secondary-coolant circuit of the MSRE. The test facility was operated at
+a maximum bulk fluid temperature of 1090°F, a bulk fluid AT of 14O°F at a
+velocity of 10 fps (4 gpm), and a total heat input of 53 kW.
+
+Corrosion specimens were introduced into the system at appropriate
+
+“locations to obtaln accurate weight change, chemistry change, and metal-
+lographic data. Periodic removal and reinsertion of the specimens were
+specified at approximately 2000-hr intervals. Salt sampling at approxi-
+mately 500-hr intervals was specified to permit chemical analyses nec-
+essary for characterization of corrosion processes occurring during
+operation. :
+
+Protective instrumentation and an auxiliary power supply weré pro-
+vided in an attempt to prevent accidentsl freezing of the salt due to
+loss of normal electrical supply or a pump stoppage. Originally this
+protective system was to be continuously monitored by facility operators;
+however, evening and night shift operator coverage was discontinued
+during the latter part of the operating period, and the facility hed to
+be modified for unattended operation.
+ 
+
+ 
+
+2.2 General Design Information
+
+A simplified schematic drawing of the test loop is shown in Fig. 1,
+and an isometric drawing of the equipment is shown in Fig. 2. A complete
+flowsheet is included as Appendix A. Sodium fluoroborate is discharged
+downward from the salt pump (model LFB) at a temperature of 950°F and at
+a flow rate of 4 gpm. The salt enters the first of two heat input sections
+and is heated to 1030°F; flows over three Hastelloy N metallurgical speci-
+mens; continues through the second heat input section, where the bulk
+fluid temperature is increased to 1090°F; and: flows. over three additional
+metallurgical specimens before being cooled in a heat exchanger to 950°F.
+The cooled salt then flows over two more metallurgical specimens before
+returning to the inlet of the pump. .
+
+The salt inventory is stored in a sump tank located below the primary
+piping system. A high-purity helium gas blanket is maintained above the
+salt surfaces in this tank and in the pump to minimize salt contamination.
+A dip leg in the sump tank allows the liquid salt to be forced by helium
+overpressure into the circulating system. The sump tank is designed to
+contain approximately twice the salt volume to be circulated. A freeze
+valve serves to isolate the salt in the circulating system from the sump”
+tank inventory. This valve consists of a cooling air line installed
+around the 1/4-in.-0D, 0.035-in.-wall tubing connecting the sump tank to
+the circulating system. Piping of the circulating system is principally
+1/2-in.-0D by 0.042-in.-wall Hastelloy N tubing.
+
+No direct flow measuring equipment is provided in the circulating-
+salt system; provisions are made to measure the flow calorimetrically.
+Three calibrated Chromel-Alumel thermocouples are installed at both the
+inlet and exit of one of the heater sections. By determining the thermal
+
+losses from this section at several temperature levels with no salt in
+the system, it is possible to obtain the net electrical heat input during
+operation. Flow rates can then be calculated from the net electrical )
+power input and the observed temperature rise in the salt as it passed
+through the heater.
+
+Engineering parameters of the system are shown in Teble 1, and com-
+position and physical properties of sodium fluorcborate are shown in
+Table 2.
+ 
+
+o
+
+HN
+
+ORNL-DWG 68-2797R2
+
+SALT
+SAMPLE
+
+LINE AJUSTO SPEDE
+5 hp MOTOR
+
+   
+  
+
+——— ttm me.
+OIL LINES
+TO PUMP
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+  
+
+ 
+
+ 
+
+ 
+
+GAS —_—
+LINES 050 +
+T0
+pump METALLURGICAL
+OPERATING - / SPECIMEN
+PRESSURE 7 psig 1030 *F
+LFB PUMP RESISTANCE HEATED SECTION
+[+ Ad
+1090 fr”
+METALLURGICAL
+SPECIMEN
+FINNED
+COOLER
+I BLOWER
+; METALLURGICAL
+: SPECIMEN HEATER LUG (TYPICAL)
+
+ 
+
+t
+
+—
+SS RESISTANCE HEATED SECTION —
+950 °F
+
+FREEZE
+
+VALVE
+IN AIR
+FLOW RATE - 4 gpm
+| SUMP
+GC
+
+Fig. 1. Simplified schematic of molten-salt corrosion test loop.
+
+VELOCITY 10 fps
+
+ 
+
+wh
+
+ 
+ORNL-LR-OWG 64740RA
+
+        
+ 
+      
+    
+ 
+ 
+  
+ 
+
+RL
+110 kva POWER SUPPLY
+(MAIN POWER) (DETAIL A)
+
+1600-amp BREAKER
+
+    
+
+DETAIL A
+
+METALLURGY
+SAMPLE
+
+OUTLET
+
+ 
+
+DETAIL B
+
+| 10kva POWER SUPPLY
+ill (COOLER PREHEAT)
+
+7 DUMP TANK
+
+Fig. 2. Molten-salt corrosion testing loop and power supplies.
+
+ 
+ 
+
+ 
+
+[4]
+
+£1
+
+ay
+
+«
+
+Fil
+
+Table 1. Selected engineering data for MSR-FCL-1l
+Based on actual operating conditions
+
+ 
+
+Materials, temperatures, and velocities
+
+Tubing and specimens Standard Hastelloy N
+Nominal tubing size 1/2 in. OD, 0.042 in. wall
+Total tubing length 57 ft
+
+Bulk fluid temperature (mex) 1090 °F
+
+Bulk fluid temperature (min) 950°F
+
+Bulk fluid AT 140°F
+
+Flow rate 4 gpm
+
+Liquid velocity } 10 fps
+
+Cooler heat transfer
+
+ 
+
+Heat load at finned cooler 180,900 Btu/hr (~53 kW)
+ILiquid Reynolds number 45,000
+
+Liquid film heat transfer coefficient ~2000 Btu hr! £472 (° F)-t
+Iength of finned 1/2-in.-0D cooler coil . 26 fit
+
+Coolant air flow 995 cfm
+
+Coolant air AT 185°F
+
+Pumping requirements
+
+System AP at 4 gpm 57.5 psi (65 ft)
+Required pump speed 5000 rpm
+
+Salt inventory being circulated
+
+Volume in pump bowl 85 in.®
+Volume in tubing 46 in.2
+Total volume 131 in.2
+Total weight 8.81 1b
+Miscellaneous
+Surface to volume ratio for circulating 7 in.2/in.3
+salt :
+Volume of dump tank 27h in.2
+
+ 
+
+The possibility of leakage of BF, gas through the rotating mechani-
+cal face seal of the pump or from the valves and fittings in the pump
+seal oil lines exists. To protect personnel from this noxious gas, a
+ventilated cabinet is provided to enclose the LFB pump and the gas sys- }
+tem, An induced draft blower exhausts the air from the cabinet through
+ducts to the roof of the building.
+ 
+
+Table 2. Composition and physical properties
+of sodium fluoroborate
+
+ 
+
+Composition (mole %)
+
+NaBF, 92
+NaF . 8
+Approximate molecular weight © 10k
+Approximate melting point (°F) 125
+a 10,656
+Vapor pressure; 1log,, P (mm Hg) = 9.024 — TR)
+At 1090°F 140
+At 950°F | 29
+
+Density? (1b/£t°) = 14.4 — 0.02k7t (°F)
+
+At 1090°F 11k.
+
+At 1020°F 116.2
+
+At 950°F 117.9
+Viscosity? (1b ft hr!) = 0.2121 exp Toy
+
+At 1090°F 2.86
+
+At 1020°F 3.23
+
+At 950°F 3.7
+Heat capacity © [Btu 1b" !(°F)~}] 0.360
+Thermal conductivity ¢° [Btu hr lft? (°F)"1]
+
+At 1090°F 0.23
+
+At 1020°F 0.235
+
+At 950°F | 0.2
+
+ 
+
+83. Cantor et al., Physical Properties of Molten-Salt
+Reactor Fuel, Coolant, and Flush Salt, ORNL-TM-2316, p. 33
+
+(August 1960).
+bg, Cantor, MSR Program Semiannu. Progr. Rep. Aug. 31,
+1969, ORNL~-4hh9, pp. 1H5-4T.
+
+A. S. Dworkin, MSR Program Semiannu. Progr. Rep. Feb. 29,
+1968, ORNL-4254, p. 168.
+
+dy . W. Cooke, MSR Program Semiasnnu. Progr. Rep. Aug. 31,
+1969, ORNL-LL4L9, p. 92.
+
+ 
+ 
+
+HN
+
+ay
+
+«}
+
+<)
+
+In addition, a sheet-metsl enclosure is provided around the salt
+
+piping and heat exchanger to protect operating personnel from gross
+
+liquid leakage. The system piping is considered sufficiently reliable
+
+to preclude the need for special exhaust ventilation from this enclosure
+
+‘for protection against BF; leakage. Favorable ventilation conditions
+exist in the test area, which has a 50- ft-high ceiling and continuous
+
+exhaust ventilation.
+The test loop is shown in Fig. 3 during installation of the heaters
+
+and thermocouples. Figure L shows the. completed installation.
+
+2.3 Detailed Design and Fabrication
+
+2. 3. 1 Heater
+
+The heat input into the salt is accomplished by resistance heating
+
+“two sections of the system piping, each approximately 105 in. long.
+
+Voltage is applied between two lugs attached to the ends of each heated
+length of pipe. Control is common to both of the heat input sections
+(see Fig. 2).
+
+2.3.2 Cooler
+
+Heat is removed from the system by a heat exchanger composed of an
+air-cooled, 26-ft-long, 19-in.-diam coil of 1/2-in.-OD by 0.042-in.-wall
+tubing to which 1/16-in.-thick circular nickel fins are attached (see
+Fig. 3). These fins are brazed to the tubing with Coast Metals 52 fur-
+
+nace braze alloy. The finned coil is inside a sheet-metal housing which
+
+serves as the cooling alr duct.
+
+The salt side pressure drop, as limited by the capacity of the salt
+
+“pump, prohibits the use of a longer heat exchanger coil. Variations in
+fin diameter and spacing are. used to provide a higher heat flux at the
+
+"hot end of the cooler. This geometry creates a flattened salt wall tem-
+
+perature profile which makes possible maximum heat removal without cooling
+the wall at the cold end of the unit below the 725°F melting point of the
+salt. [This feature was important during the design stages, when the
+expected drop in the bulk fluid temperature was from 1125 to 850°F. It
+ 
+
+ 
+
+10
+
+N
+Q
+0
+[le]
+~~
+2
+SE
+I
+a
+
+ 
+
+ 
+
+ 
+
+tallation of heaters and ther-
+
+ins
+
+Test loop assembly during
+
+Fig. 3.
+
+-mocouples.
+«}
+
+oh
+
+   
+
+F
+
+ 
+
+ig.
+
+ 
+
+Lh.
+
+») oo
+
+cod
+a
+
+ 
+
+Corrosion test loop installed in test stand.
+
+ 
+
+   
+
+F)) ”
+
+ 
+
+PHOTO 75688
+
+ 
+
+TT
+
+or
+
+2
+wi
+
+ 
+
+ 
+ 
+
+ 
+
+12°
+
+became less important when the proposed opersting conditions were changed
+to simulate the Molten-Salt Reactor Experiment coolant circuit temperature
+profile (1090-950°F).]
+
+The cooler is resistance heated during preheating of the loop. This
+resistance heat system is also used to keep the salt above the melting
+point during loss of normal building power. Hastelloy N lugs are installed
+at the inlet, midpoint, and exit of the coil for attachment of three
+electrical leads. The lugs project through holes in the air duct to give
+access to the electrical connections. During a loss of normal power the
+voltage is supplied to the central lug of the coil from a diesel-generstor
+unit used for emergency electrical supply.
+
+A hinged door, provided on the air exit side of the cooler housing,
+is closed to reduce the hest losses during preheating and is equipped to
+close automatically during a power outage. The top side of this door
+and the four sides of the air plenum are insulated with Johns Manville
+Kaowool thermal insulation to further reduce the heat losses. . This insu-
+lation is also used to plug the holes where the electrical lugs penetrate
+the air duct.
+
+Air to the cooler is supplied through appropriate ducting by a
+model 200-A-1 American blower with a 3-hp 1725-rpm motor which provides
+a maximum sir flow of 3200 cfm air through the ductwork. However, in
+normal operstion the air flow required is about 1000 cfm. A throttling
+damper is provided to regulate the flow.
+
+Selected engineering data on the actual performance of the cooler
+are shown in Table 1, along with other engineering parameters of the
+
+system.
+
+2.3.3 Salt pump
+
+The salt pump, model LFB, used in this corrosion test is shown in
+Fig. 5. It is a centrifugal sump pump designed at ORNL and features a
+downward discharge. The pump has an overhung vertical shaft, two grease-
+sealed ball bearings, and an oil-lubricasted mechanical face seal above
+the salt liquid level and just below the lower ball bearing. Shaft and
+segl cooling are provided by oil which flows downwsrd through the hollow
+ 
+
+»N
+
+a
+
+wo}
+
+Fi)
+
+FACE SEAL
+
+OIL OUTLET —
+
+tf —
+
+ 
+
+LIQUID LEVEL
+
+SALT INLET—~CGEL
+
+IMPELLER VANE
+
+ 
+
+Fig. 5.
+
+ob
+
+—- |
+(A
+NNN
+
+ 
+
+ 
+
+13
+
+ORNL~-LR—-DWG 30958
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+[3<——oIL IN
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+i Hl
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+23Y2in.
+
+SPARK PLUG
+PROBE
+
+ 
+
+ 
+
+ 
+
+ols in.
+
+DISCHARGE
+
+ 
+
+ 
+
+Molten-salt pump (model LFB).
+ 
+
+1k
+
+shaft through a rotary seal. The oil leaves through holes in the shaft
+located just above the top side of the mechanical face seal. The pump
+requires a gas purge as described in Section 2.3.5. Pump performance
+data taken with water are shown in Fig. 6. The model LFB salt pump was
+selected for this particular test since several pumps were availsble and
+over 400,000 cumulative hours of successful operation had been experi-
+enced in many previous applications at Oak Ridge National Laboratory.
+The head capability of the pump is somewhat lower than desired, and the
+acceptance of this limitation resulted in a maximum liquid velocity of
+10 fps.
+
+The pump tank contains the only free liquid surface in the circu-
+lating system during normal operation with the dump tank isolated by a
+freeze valve. The pump is located at the highest point in the flow cir-
+cuit, and the pump tank acts as a liquid expansion volume. The liquid
+level in the tank is indicated by two spark plug probes which have
+Hastelloy N extensions welded to the center electrodes to make contact
+with the liquid salt at preset elevations. A salt sampling apparatus
+is provided at the pump tank, as described in Section 2.3.4.
+
+2.3.4 Salt sampler
+
+A cross section of the molten-salt sampler is shown in Fig. 7. It
+is used to remove salt samples from the pump tank at approximately 500-
+hr intervals during the test program. (The test loop operation is not
+interrupted during sampling.) The sampler consists of a dip tube with a
+small copper bucket attached on the lower end which is lowered into the
+molten salt in the pump tank. Vacuum and inert-gas back-filling con-
+nections are provided so that the sampler assembly can be attached to
+or removed from the pump tank without contaminating the salt inventory.
+A Swagelok fitting with Teflon ferrules acts as the packing gland on the
+1/4-in.-0D dip tube. The Swagelok nut is loosened, as required, to per-
+mit raising or lowering of the dip tube. The original bucket design had
+a capacity of about 2 g of sodium fluoroborate. A second separate com-
+partment which holds about 0.5 g was added later to provide a separate
+
+sample for an oxygen analysis.
+ 
+
+|
+
+ 
+
+"
+
+Nn
+
+-
+
+4)
+
+Fig. 6.
+
+15
+
+ORNL -LR-DWG 65065A
+
+ 
+
+ 
+
+ 
+
+6000 rpm ~
+
+80
+
+ 
+
+70
+
+ 
+
+€0
+
+ 
+
+8 5000 rpm
+
+50
+
+ 
+
+PUMP HEAD (ft)
+
+a
+
+ 
+
+40 —
+~~ 4000 rpm
+30
+
+ 
+
+ 
+
+® 3000 rpm
+
+10
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0 "a 2 3 4 5 6 7 8
+FLOW (gpm)
+
+Performance characteristics of the LFB salt pump in water.
+ 
+
+16
+
+ORNL -DWG 68-2796R
+
+  
+    
+ 
+  
+
+SWAGELOK
+FITTING
+
+   
+    
+ 
+ 
+
+BUCKET:
+
+VACUUM
+CONNECTION
+SAMPLE
+REMOVAL SECTION
+
+CONNECTION
+NI ~~
+
+PERMANENT
+LOOP ASSEMBLY
+
+BALL VALVE
+
+    
+   
+
+___MAXIMUM LIQUID LEVEL
+TTTMINIMUM LIQUID LEVEL
+
+Yori rrr
+Y2222 ANN
+
+ENTE Ne
+
+ol
+
+\
+
+N
+N
+
+274
+
+N
+
+ 
+
+Fig. T. Cross section of a molten-salt sampling device.
+ 
+
+or
+
+»n
+
+17
+
+2.3.5 BFa system
+
+A relatively complex tubing system is provided to supply He-BF;
+mixtures for use in purging shaft seal oil leakage from the salt pump.
+A simplified schematic of the system is shown in Fig. 8, and the com-
+plete system is shown in the flowsheet of Appendix A. Special pressure
+regulators from Matheson Company with chemically coated nickel bodies
+and Monel diaphragms are used on gas cylinders containing BF; . These
+materials are used to resist attack by HF in case of moisture contami-
+nation of the BF; gas. All gaskets, valve packings, or soft valve seats
+were of Teflon or Kel-F, which are also resistant to attack by HF. A
+standard 200-ft° capacity gas cylinder supplies a gas flow of about
+80 cc/min to the reference side of a thermal conductivity cell; the gas
+flow then continues on to the pump. The gas flow to the pump is used
+to purge seal oil leakage from a catch basin and carry it to an oil
+trap, from which the oil can be drained manually as required. The gas
+flow then returns to the thermal conductivity cell, where a comparative
+megsurement is made to detect any change of BF; concentration in the
+helium.
+
+It was originally thought that a 3% mixture of BF; and helium (for
+a 950°F pump bowl temperature) would be necessary for the purge flow
+through the seal oil leakage catch basin of the salt pump. This require-
+ment was brought about by the fact that the seal oll leakage catch basin
+and the gas space sbove the salt level in the pump are interconnected,
+and thus a possible path for loss of BF; from the salt is created. The
+use of a purge-gas mixture having the same composition as the gas in
+the pump bowl would preclude removal of BF; and a resultant change in
+salt composition. However, it was found in actual operation, as discussed.
+in Section 3.2, that the use of He-BF, mixture was unnecessary. Since
+the loss of BF; from the pump in a pure helium purge was too low to
+Justify the complications attending BF; addition, a pure helium purge
+was used throughout most of the test.
+
+Most of the seal purge system is fabricated of 1/4-in.-0D by
+0.035-in.-wall copper tubing. Brass compression fittings are used exten-
+sively. Check valves are used to preclude BF; backflow into helium supply
+
+lines or backflow of atmospheric moisture into the BF; -He vent lines.
+ 
+
+ 
+
+i
+|
+i
+|
+|
+|
+|
+!
+|
+
+ 
+
+Fig. 8.
+
+18
+
+ORNL-DWG 68-2795
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+FLOW H0
+LI .
+INDICATOR CONDENSER
+oN i
+~~ THROTTLE oIL
+VALVE TRAP
+Dat
+J
+A SEAL PURGE
+TO PUMP
+AN GAS AND
+THERMAL OIL FROM
+CONDUCTIVITY CELL PUMP SEAL
+
+    
+   
+  
+
+FLOW INDICATOR
+
+THROTTLE VALVE
+
+PRESSURE GAGE
+PRESSURE REGULATOR
+
+HELIUM-BF; MIXTURE SUPPLY
+
+Molten-salt forced-circulation corrosion loop — simplified
+schematic — LFB pump seal purge system.
+
+ 
+ 
+
+ 
+
+«
+
+»
+
+5
+
+0
+
+19
+
+2.3.6 Fill and drain tank
+
+The fill and drain tank is fabricated from a 23 3/16-in. length of
+Hastelloy N, 5-in., sched-lLO pipe with 1/2-in.-thick flat heads. The
+five pipe risers located on the cylindrical surface of the tank provide
+for salt addition and removal, spark plug level indication, and gas
+pressurization. A drain line is provided at the bottom of the tank as
+an additional path for salt removal. The tank is electrically insulated
+from ground to prevent the flow of electrical current from the main loop
+tubing, which is resistance heated during certain periods of off-normal
+
+operation.
+
+2.3.7 Corrosion specimen design
+
+ 
+
+Corrosion specimens (see Fig. 1) are used to monitor corrosion rates
+at the points of maximum, minimum, and intermediate bulk fluid tempera-
+tures. The Hastelloy N specimens are approximately 2 5/8 in. long,
+
+0.250 in. wide, and 0.030 in. thick. A total of eight specimens are
+mounted in the three locations. Details of the corrosion specimens
+design and mounting arrangement are shown in Fig. 9. The specimens are
+mounted on the Hastelloy N stringers, inserted into the 1/2-in. tubing,
+and tack welded into position. The section of 1/2-in. tubing containing
+
+the specimens is then butt welded into the system piping.
+
+2.3.8 Flectrical system
+
+The electrical power system is shown schematically in Fig. 10.
+
+Power is supplied to the test facility from a L60-V, three-phase, delta-
+connected building supply. A separate connection from a diesel-generator
+provides emergency power to some of the equipment in the event of a
+failure to the normal building supply.
+
+Upon failure of the normal supply voltage, the diesel-generator is
+automatically started, and an automatic transfer switch connects the
+emergency power supply to the facility. When normal power becomes avail-
+able, the automatic switch returns the system load to this supply.
+
+The heat input for normal operation is provided by two resistance-
+
+heated sections. Voltage is supplied to these sections through a
+ 
+
+ 
+
+ 
+
+ 
+
+20
+
+ORNL-DWG 68-4294R
+
+   
+ 
+  
+ 
+   
+   
+
+TACK WELD
+
+CORROSION
+SPECIMEN
+
+INSERT TAB
+AND THEN
+
+TACK WELD STRINGER
+TO INNER SURFACE
+OF TUBE
+
+Fig. 9. Molten-salt test loop corrosion specimens.
+ 
+
+21
+
+ORNL-DWG 72-9802
+
+DIESEL
+GENERATOR
+13.8kV/460V
+
+ 
+
+ 
+
+ 
+ 
+   
+ 
+ 
+ 
+
+000, 1000 kVA
+3¢ TRANSFORMER
+EMERGENCY
+NORMAL POWER BUS POWER BUS
+DISCONNECT
+SWITCH
+Fe"
+| |
+#0 kVA Fr
+SATURABLE Po |
+
+REACTOR
+
+N_ orowaric TRANSFER
+110 kVA SWITCH
+
+4 20/40-76V
+
+ 
+
+OPERATED CIRCUIT
+
+) 1600A AUTOMATIC
+BREAKER
+
+-
+
+| MAIN LOOP
+| HEATER
+
+H
+
+ 
+
+ 
+
+o—e
+
+ld
+
+CIRCUIT
+BREAKER
+3kVA 3KkVA 25kVA
+460/115V / 460/115V ~ 460/230-115V
+) 5h 3h 3h LUBRICATION
+LIGHTING INSTRUMENT AUXILIARY PUMP COOLER EXADST PUMP
+AND POWER HEATERS MOTOR BLOWER BLOWER
+MISCELLANEOUS i } MOTOR MOTOR
+
+Fig. 10. Schematic of electrical power system.
+
+or
+
+Nn
+
+ 
+
+ 
+ 
+
+22
+
+saturable reactor, which in turn supplies g 110-kVA high-current trans-
+former. Temperature is controlled on these sections by a variation in
+the impedance of the saturable reactor.
+
+During normal operation the circuit breaker, shown in Fig. 2, is
+closed and the electrical potential is applied between the two sets of
+lugs (A&B, C&D). This circuit breaker is opened manually to permit pre-
+heating of the piping system (except cooler) and is automatically opened
+to provide heat to all the system piping (except cooler) under emergency
+conditions. When the circuit breaker is open, the electrical potential
+is applied between lugs A and C, and the resulting two parallel electri-
+cal resistance heating circuits keep the system temperature above the
+freezing point of the salt. Power measuring instrumentation is provided
+to determine the heat input to the system.
+
+A separately controlled resistance-heated circuit is provided for
+preheating the cooler. When normal power is lost, automatic controls
+also apply electric potential to this section of piping to prevent freez-
+ing of the salt.
+
+| Additional electric supply sources are provided for the salt pump
+motor, lube oil pumps, the cooler blower motor, the BF; cublcle exhaust
+
+blower, instrument power, and miscellaneous lighting and auxiliaries.
+
+2.3.9 Instrumentation and control
+
+ 
+
+The salt pump is driven by a 5-hp 44O-V motor connected to a
+variable-speed magnetic clutch. The clutch output torque is delivered
+
+to the pump by V-belts. The speed of the coupled units is regulated by
+
+varying the supply voltage to the magnetic coupling. The normal supply
+
+is from an electronic unit furnished with the magnetic clutch. In the
+event of the loss of the normal clutch control voltage, the loop is
+automatically placed in a standby (preheat) condition.
+
+Pump speed is measured by a tachometer built into the magnetic
+clutch, and alarms are provided for low and high speed. The pump speed
+is checked with a "Strobe" light at the beginning of each test run to
+insure that the desired speed is obtained.
+
+~ The loop temperatures are controlled by a Leeds and Northrup
+
+"Speedomax-H" controller, which senses changes in loop temperature and
+ 
+
+“
+
+»H
+
+.)
+
+23
+
+transmits a signal to the saturable reactor to increase or decrease voltage
+applied to the two resistance-heated sections of the piping.
+
+Controls are also provided to close the outlet damper on the radiator
+air duct, stop the blower motor and the salt pump, and transfer the main
+heat input to the preheat mode in the event of any of the following off-
+normal conditions:
+
+1. low clutch speed,
+
+2. salt high temperature,
+
+3. salt low temperature,
+
+Lk, loss of normal pover to the facility,
+
+5. low lube oil flow to the salt pump.
+
+Bypass switches are provided around most of these instruments to facili-
+tate startup and to provide a means of testing the workability of the
+
+control system during normal operation.
+
+2.4 Quality Assurance
+
+Although the design of the salt circulating system was essentially
+the same as had been used on a previous program, it was reviewed by the
+ORNL Pressure Vessel Review Committee.
+
+Complete histories of the Hastelloy N used in the pressure-containing
+portion of the loop were documented, except for the salt pump, which had
+been febricated and assembled in accordance with ORNL Reactor Division
+Standard Procedures in force at the time. Although records of the mate-
+rials or welding were not availsble, the administrative procedures in
+effect at the time of fabrication provided assurance of the integrity of
+the pump. Since many of these pumps had been operated and hundreds of
+thousands of hours of experience with this type of equipment had been
+accumlated, it was felt that the reliability of the units was suffi-
+ciently established to warrant their use without complete documentation.
+
+The inspection of the materials used to fabricate the salt-containing
+portions of the system other than the pump included ultrasonic tests and
+dye-penetrant checks in accordance with ORNL Metals and Cersmics Division
+specifications MET-NDT 1 through 4.
+ 
+
+ 
+
+2k
+
+Welding of components and assembly into the system were conducted
+in accordance with Metals and Ceramics Division specification PS-23, =
+-25, and -35, which include welder qualification procedures, weld joint
+design, and welding parameter limitations. “Welds were inspected by x-
+ray examination end dye-penetrant methods stated in Metals and Ceramics
+Division specification MET-WR 200 and 201.
+
+Material and cleaning requirements invoked during fabrication in-
+cluded degreasing with perchloroethylene vapor, followed by water and
+alcohol rinses. Before each part was welded into the system, it was
+-agaln wiped with an alcohol-soaked cloth. Both the part and the cleaning
+cloth were visually examined for evidence of foreign material.
+
+All cleanliness, material, and weld inspections were made by person-
+nel other than those having the responsibility for fabrication and assem-
+bly. Weld reports, which included the inspections and materials certifi-
+cations, are on file with the Inspection Engineering Department.
+
+Helium leak tests were made on the completed piping assembly prior
+to installstion of the pump rotary assembly into the pump bowl. Iesk
+testing was done in accordance with ORNL Inspection Engineering Quality
+Assurance Procedure 7. No detectable leaks were observed.
+
+All wiring was given a terminal-to-terminal check prior to energizing.
+Each control function was checked manually to insure that the protective
+schemes were operating properly prior to filling of the system.
+
+Operational procedures, including abnormal condition procedures,
+were prepared to assist the operators. A complete description of the
+operation of the control system was prepared (see Appendix B), and train-
+
+ing sessions were conducted for the personnel.
+3. OPERATING EXPERIENCE
+
+The test loop has been operated for 10,335 hr at design conditions
+for an additional 1135 hr at off-design tempersture. A chart of the
+‘operating history is shown in Fig. 11. For most of this time the system
+was operated at 1090°F maximum bulk fluid temperature and 950°F minimum
+bulk fluid temperature. Figure 12 is a typical temperature profile of
+the system. The inner wall temperatures are estimsted from heat transfer
+calculation.
+ 
+
+.
+
+[}]
+
+25
+
+ORNL-DWG 72-9803
+Il OPERATION AT DESIGN CONDITIONS
+
+CONSTRUCTION OR REPAIR
+[] SHAKEDOWN
+
+ 
+
+DESIGN
+STARTED
+
+ 
+
+I I | I |
+
+ADDED SALT
+TO DUMP TANK
+
+REMOVED METALLURGICAL
+SPECIMENS
+
+       
+ 
+ 
+
+10,335 hr TOTAL TIME
+AT DESIGN CONDITIONS
+
+660hr
+ISOTHERMAL
+\§ OPERATION 1135hr TOTAL TIME AT
+
+ 
+
+ 
+
+ISOTHERMAL CONDITIONS
+
+ 
+
+F J
+
+ 
+
+CONSTRUCTION
+
+       
+ 
+
+LOOP REACHED PUMP OIL SALT LEAK DUE
+
+ 
+
+STARTED DESIGN BEARING FIRE TO OVERHEATING
+CONDITIONS FAILURE
+351 hr AUTOMATION
+ISOTHERMAL OF LOOP
+OPERATION
+I { l I l I l
+JuLy JAN JULY JAN JULY JAN JULY JAN
+1967 1968 1969 1970 1971
+
+Fig. 11. Operating history of test loop.
+ 
+
+26
+
+ORNL-DWG 69-2535
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+| FIRST | | SECOND | = FINNED
+HEATER | | HEATER | | COOLING COIL - To
+—®@ HHH HH — 0
+(of | PUMP
+I
+T ! ® METAL COUPON LOCATION
+| —— LIQUID TEMPERATURE
+| | ——— INNER WALL TEMPERATURE
+1300 [—} — :
+| | |
+1200 |— ri |
+|
+I
+o too Tt
+= re [ !
+W 1000 — —-
+x .
+P lo ee TT
+& 900 — —
+= | |
+F 800 |—1 I |
+| | i
+| |
+700 1 = ]
+| ro
+Io
+0 10 20 30 40 50 60
+
+LENGTH (ft)
+
+Fig. 12. Temperature profile of molten-salt forced-circulation cor-
+rosion loop, MSR-FCL-1, at typical operating conditions.
+
+Ww
+ 
+
+«
+
+a
+
+H
+
+»"
+
+27
+
+After raising the sodium fluoroborate from the sump tank into the
+salt piping proper and establishing the freeze valve, the system is
+started. The salt pump is started and the speed is adjusted to approxi-
+mately 5000 rpm. The main power is transferred to the two resistance-
+heated piping sections by closing the circuit breaker, and the loop tem-
+perature is increased by adjusting the temperature controller. The sys-
+tem differential temperature is established by starting the blower and
+adjusting the damper in the air system duct. For the initial startup a
+flushing charge of salt was run in the salt piping for 478 hr, after
+vhich it was discarded and the working charge of salt was installed.
+
+The reliability of the system during the initial 10,000 hr of op-
+eration was very good, but after this time several difficulties were
+encountered. A pump bearing failure occurred, resulting in damage to
+the pump impeller. Chips were rubbed from the impeller and deposited in
+the salt piping. Extensive repairs to remove these chips from the loop
+piping were necessary. In addition, fatigue failure of an oil line
+resulted in an oil fire, requiring extensive repairs. Subsequently, the
+loop piping was ruptured during an inadvertent overheating transient
+caused by a defective control thermocouple and an operator error during
+the replacement of the thermocouple. Tsble 3 lists the interruptions
+that occurred during the operation period, over half of which (15) were
+due to problems with component auxiliaries such as the pump rotary oil
+seal and drive motor and the blower shaft bearings. Replacement bearings
+in the blower and blower drive motor were required about every six months.
+
+3.1 Heat Transfer Performance of Sodium Fluorcborate
+
+Since no published heat transfer data were gvailable for the sodium
+fluoroborate salt, the heat transfer characteristics of sodium fluoroborate
+were measured in the MSR-FCL-1. Provisions for these heat transfer mea-
+surements were not part of the original design criteria, and the tests
+were made with existing instrumentation which was not highly sophisticated.
+Also considerable uncertainty existed in available physical property data,
+particularly on viscosity and thermal conductivity; so the absolute accu-
+
+racy of results obtained is questionable.
+ 
+
+ 
+
+ 
+
+28
+
+Table 3. MSR-FCL-1 operational interruptions
+
+ 
+
+ 
+
+Number
+Item of
+
+failures
+Rotary oil seal (Deublin) leakage 5
+Salt pump bearing failures 3
+Drive motor and clutch problems 6
+Air blower bearings 2
+Instrument malfunctions 6
+Electrical system difficulties 4
+0il line fatigue failure at pump rotary seal 1
+Other mechanical problems 2
+Total 29
+
+ 
+
+The heat transfer dats were obtained in one -of the resistance-heated:
+sections of the loop piping. This section was 105 in. in length and
+0.410 in. in inside diameter. The tubing inside diameter was determined
+by micrometers, and wall thickness measurements were made with a model 1k
+Bronson Vidi-gage. The flow rate through the tubing was measured calori-
+metrically by observing the power input and the tempersture rise of the
+salt. Heat losses at various temperature levels had been determined pre-
+viously. The specific heat data for the salt presented in Table 2 was
+among the better defined physical property data and had an uncertainty of
++2%. The flow velocity was calculated using salt density data with an
+uncertainty of 5%. Power input measurements were made with instruments
+of 10.5% accuracy.
+
+The tempersture measurements were made with 1/16-in.-OD stainless-
+steel-sheathed, insulated-junction, Chromel-Alumel thermocouples. Bulk
+fluid temperatures at the heater inlet and exit were each measured by
+
+. three calibrated thermocouples. Ten thermocouples located along the
+
+105-in. length were used to obtain the wall temperature in the hegted
+region.
+ 
+
+ 
+
+ 
+
+Li]
+
+n
+
+nN
+
+29
+
+All thermocouples were electrically insulated from the tubing wall
+to preclude an electrical path along the stainless steel sheaths, since
+all portions of the piping were above ground potential during resistance
+heating. Two layers of quartz tape provided electrical isolation from
+the piping and also served to thermally insulate the thermocouples from
+the pipe wall. The ends of the thermocouples were installed in a 180°
+arc around the quartz-tape-covered tube and held in place with a band of
+shimstock spot welded to itself. Two inches of "Hi-Temp" diatomaceous
+earth formed the thermal insulation for the piping. The detail on ther-
+mocouple installation is presented to'emphasize that the configuration
+was not ideal for accurate temperature measurement . The error between
+insulated thermocouples and thermocouples installed directly on the pipe
+wall was later determined to be less than 10°F. The overall AT from
+pipe wall to bulk fluid ranged up to 100°F, so the thermocouple error of
+10°F represents sbout a 10% uncertainty.
+
+Performance data were obtained at heater inlet temperatures from
+974% to 1060°F and heater exit temperatures from 1038 to 1170°F. The
+Reynolds modulus ranged from 5500 to 51,400, and heat fluxes ranges from
+15,750 to 160,000 Btu hr 'ft™2. The measured heat transfer coefficients
+ranged from 267 to 2130 Btu hr 'ft72(°F)™!. The data obtained correlated
+well with the Dittus-Boelter equation as shown in Fig. 13 (using recently
+determined physical property values from Table 2). Although no statisti-
+cal analysis has been made, it is estimated that the error in the mea-
+surements is less than 20%. These heat transfer data constituted the
+first demonstration that sodium fluoroborate performs as an ordinary heat
+
+transfer fluid.
+
+3.2 BF; Handling
+
+The LFB salt pump was designed to operate with approximately 80 ce/
+min of helium purge through the pump shaft seal region to remove traces
+of oil leaking through the rotating face seal (see Fig. 5). The vapor
+pressure of the NaBF, component of the salt mixture, as shown in Fig. 1h,
+produces a BFs partial pressure gbove the salt level in the pump bowl.
+
+Since the helium purge tends to carry some of the BF; out of the system,
+ 
+
+ 
+
+ 
+
+30
+
+3 ORNL-DWG 68-13483R
+
+HEATED SECTION L/D RATIO=256
+© EXPERIMENTAL DATA
+
+Nu 0.8
+Woo =0.023 (Age)
+
+ 
+
+4
+10
+103 2 5 104 2 5 10%
+REYNOLDS NUMBER
+
+Fig. 13. Heat transfer characteristics of NaBF,-NaF (92-8 mole %)
+
+flowing in 0.410-in.-ID tube.
+ 
+
+31
+
+L
+
+ORNL-DWG 72-9804
+1000
+
+500
+
+200
+
+8
+
+ou
+o
+
+n
+©
+
+.
+
+BF; VAPOR PRESSURE (mm Hg)
+
+10
+
+n
+
+10,656
+T(°R)
+
+- logyg £=9.024-
+
+ 
+
+i
+800 900 {000 1100 1200 1300
+
+TEMPERATURE (°F)
+
+_ Fig. 1h. Vapor pressure of NaBF,-NaF (92-8 mole %). (From ORNL-
+TM-2316.)
+
+a
+ 
+
+32
+
+it is possible to change the salt composition by gradual depletion of
+the volatile constituent. As indicated by the NaBF,-NaF phase diagram
+(Fig. 15), the freezing point of the salt mixture changes drastically
+with a change in composition near the eutectic. Therefore this problem
+needed further consideration.
+
+The helium purge, as originally installed, was through the seal re-~
+gion of the pump, which was loosely coupled through an annulus around
+the pump shaft to the helium gas space above the sglt level in the pump
+bowl. It was assumed that BF; vapors from the salt mixture would diffuse
+up the shaft annulus into the seal region and be carried away by the purge
+gas. To avoid the problem of BF; depletion in the salt mixture, a system
+was installed to permit blending BFs into the helium purge to produce a
+BFz concentration in the purge gas equivalent to the concentration in the
+pump bowl. Thus, no net loss of BF; in the system would occur.
+
+The possibility of chemical interaction of the BF in the purge gas
+with the oil in the seal region also had to be considered, and preliminary
+tests were run to see if a problem existed. The amount of BF; in helium
+required to sustain the 92-8% salt mixture was calculated to be 1%, with
+a pump bowl temperature of 850°F, or 3% with the pump at 950°F. Mixtures
+of these two gases were prepared by adding the proper amount of BF; to
+bottles containing helium; however, confirmatory analyses for the concen-
+tration of BF in helium were unsuccessful. Checks with commercial sup-
+pliers of mixed gases revealed that there were no economical methods for
+determining the BF; concentrations in helium in the 1 to 3% range. The
+BF; gas adsorbs on the walls of analytical equipment, resulting in gross
+inaccuracies in analytical results. Attempts at confirmatory analysis
+were abandoned, and the concentrations were assumed to be those predicted
+by the mixing calculations based on volume, temperatures, and pressures.
+
+Tests were conducted to examine the effect of mixtures of 1 and 3%
+BF; in helium of the Gulfspin 35 pump oil under conditions which would
+simulate its use in the pump seal-oil purge system. The results for the
+1% BF; mixture indicated that the seal leakage oil would not be affected
+deleteriously by contact with the mixture. Some discoloration and an
+increase in acidity were noted in the oil after only a few hours of
+
+exposure to the gas mixture; however, viscosity changes over a long
+ 
+
+ 
+
+©
+
+.
+
+TEMPERATURE (°C)
+
+33
+
+ORNL-DWG 67-9423A
+
+ 
+
+1000
+
+ 
+
+8
+
+ 
+
+8
+
+ 
+
+8
+
+ 
+
+8
+
+ 
+
+500
+
+ 
+
+»
+3
+
+ 
+
+ 
+
+300
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+200
+NaF
+
+20 © 40 60 80
+NaoBF, (mole %)
+
+Fig. 15. The system NaF-NaBF,.
+
+NaBF,
+ 
+
+ 
+
+34
+
+period gave no reason to suspect that the small passages of the pump seal
+purge system would become plugged with degraded oil.
+
+Results of two separate room-tempersture tests of approximately one
+week's duration using the 3% BF; mixture with an oil leakage flow rate of
+10 cc/day and a gas flow rate of 80 cc/min indicated that the seal oil
+purge line would probably become plugged during loop operation; thus use
+of this 3% mixture for purging was abandoned. A black sludge, formed in
+the test setup which simulated the pump catch basin, eventually plugged
+a 1/8-in.-diam port (see Fig. 16). In these tests the oil removed from
+the test apparatus was extremely acidic, with a pH from 1.0 to 1.5.
+
+Attempts to determine the composition of the oil sludge were unsue-
+cessful. Infrared spectrophotometric examination indicated that traces
+of water were probsbly removed from the piping system by the sparging
+gas and that the acid formed by the BF; -water reaction had attacked one
+or more of the ingredients of the oil to form the sludge. The BFs; also
+produced, either as products of degradation or by direct addition to some
+component or components, new materials not found in unexposed oil. No
+further effort was made to characterize the degraded oil.
+
+To eliminate BF; in the seal purge stream and the resulting oil deg-
+radation, the purge route through the pump bowl was changed to provide a
+pure helium purge gas flow down the pump shaft. It was thought that by
+providing this purge, helium could be used to remove the legkage oil from
+the oil catch basin in the pump and the helium flow down the shaft would
+deter (except for back diffusion) the BFy vapor from reaching the oil.
+This purge path required the addition of a new outlet gas line from the
+pump bowl and a new line for BF; addition into the pump bowl. The BF;
+addition was required since the helium flow down the shaft and across
+the BF; vapor space in the pump would carry off BF; vapors in even greater
+quantities than had been anticipated with the purge only through the face
+seal region. After one day of operation the outlet line from the pump
+
+‘vapor space plugged with reaction products from the salt, oil, and BF.
+
+As an expedient, a decision was made to return to the original design
+for purging the pump seal with no BF; addition to the purge stream. The
+helium was connected to the pump seal purge line, and the effluent was
+
+carefully monitored for BF; contemination. Measurements from the thermal
+ 
+
+35
+
+ 
+
+ 
+
+a - * PHOTO 75900
+
+ 
+
+*)
+
+ 
+
+ 
+
+: EE
+
+INCHES
+
+ 
+
+Fig. 16. Sludge formation from polymerization of Gulfspin 35 oil
+after one week's exposure of 3% BF j;—He mixture at room temperature.
+
+ 
+
+»
+
+ 
+
+ 
+ 
+
+ 
+
+36
+
+conductivity cell indicated that the helium gas (80 crf /min) leaving the
+pump oil catch basin was contaminated with approximately 0.08% BF; . This
+indicated that the amount of BF, removed from the NaBF; salt during the
+scheduled 10,000-hr operation would not significantly alter the salt com-
+position. Had the BF; depletion been significantly high, plans were to
+replenish the BF by intermittent gas additions to the salt.
+
+During calibration of a thermal conductivity cell which was to be
+used to measure the concentration of BF; in the effluent line from the
+seal purge line, a 1/h-in.-OD copper tubing vent line plugged. A 3%
+mixture of BF; in helium had been purged through the conductivity cell
+and vented to atmosphere in a ventilation system. Reaction products of
+moist air and BF; completely sealed the end of the tube and stopped the
+seal purge (see Fig. 17). An acidic solution was found in the vertical
+line immediately adjacent to the discharge end of the tube, evidently
+formed when the BF; gas came in contact with moisture in the air. Acid
+was also formed on the ventilation hood in the vicinity of the BF, -He
+vent. Enough acid was present to form droplets on the lower edge of the
+hood, which demonstrated that a suitable BF; "scrubber" is required for
+future systems where long-term, reliable venting of significant BF; con-
+centrations must be maintained.
+
+The low BFy concentration in the helium purge from the final con-
+figuration of the shaft seal purge system resulted in little acid accu-
+mulation at the gas purge line outlet. Inversion of the purge line out-
+let port and the addition of a bucket-type catch basin helped to reduce
+the plugging problem at the end of the purge line. No accumulation of
+acid on the air exhaust ducts was visible, but acid reaction products
+were noted at the end of the purge line. As the buildup of these products
+
+was noted, the open end of the copper tubing was either cleaned or cut off.
+
+3.3 Salt Pump Operation
+
+The major problems to be resolved by the use of the model LFB pump
+in this test program involved (1) the effect of the BF; partial pressure
+on the oil in the seal leakage catch basin and (2) the bearing and oil
+
+segl performance at 5000 rpm for sustained periods of operation. The
+ 
+
+37
+
+©
+~
+Oo
+0
+~
+Oo
+—-
+oO
+I
+a
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+mixtures are vented
+
+ion where BFj3~He
+
+Typicel plugging format
+
+7.
+
+Fig.
+to atmosphere.
+
+ 
+
+  
+ 
+
+38
+
+problems relating to BF; reactions with the Gulfspin 35 oil in the pump
+are described in Section 3.2. In addition the bearing and seal lifetime
+was a point of concern since g pump of this type had not been used in
+applications requiring thousands of hours of operation at the relatively
+high speed of 5000 rpm. A series of identical pumps had been operated
+at speeds around 3000 rpm and had demonstrated adequate relisbility dur-
+ing about 450,000 hr of operation.%
+
+Normal operstion conditions for the pump were as follows:
+
+Salt inlet temperature, °F 950
+
+Salt flow rate, gpm L
+
+Pump speed, rpm : 5000
+Coolant oil Gulfspin-35
+Coolant oil temperature, °F 110
+
+Pump tank pressure, psig 7.0
+
+Pump tank cover gas Helium
+Purge gas for seal leakage Helium
+Purge gas flow rate, cc/min 80
+
+The pump was removed for routine maintenance at approximately 2000-
+hr intervals to install new bearings. These bearings have ag relatively
+short lifetime expectancy of about 4000 hr at 5000 rpm. Normally this
+maintenance period coincided with removal of the corrosion specimens from
+the loop piping. However, three bearing failures occurred during opera-
+tion despite the bearing replacement schedule.
+
+The polymerizgtion of oil in the catch basin by reaction with BF;
+was no problem during the 2000-hr operating periods. The leaking seal
+oil was darkened by contact with the BFs and a black coating formed on
+the bottom of the catch basin, but no significant plugging occurred.
+
+This could be a problem, however, in a system where periodic removal and
+cleaning are not possible or perhaps where higher BF; concentrations are
+present. The seal oil catch basin at the conclusion of a typical 2000-hr
+
+run is shown in Fig. 18.
+
+ 
+
+47. L. Crowley, W. B. McDonald, and D. L. Clark, Design and Operation
+
+ 
+
+of Forced-Circulation Testing Loops with Molten Salt, ORNL-TM-528, p. 9
+(May 1963).
+ 
+
+ 
+
+:
+]
+|
+|
+|
+]
+
+*
+
+ 
+
+ 
+
+ 
+
+ 
+
+3
+
+39
+
+ll PHOTO 96312
+
+La
+
+ 
+
+Fig. 18. Typical appearance of the seal oil catch basin of the salt
+pump after 2000 hr operation (model LFB pump).
+ 
+
+Lo
+
+The seal oil leakage rate has averaged approximately 1 cc/day (see
+‘Table 4). The leakage rates were higher than average during short periods
+
+near the end of the test, for reasons that were not discernible.
+
+ 
+
+Table 4. Seal oil leakage rates in
+
+ 
+
+ 
+
+salt pump
+edage  Apimie lew
+| removed operation (ce/day)
+| 12-9-68 13 3.5
+12-18-68 9 2.2
+2-14-69 58 0.34
+3-25-69 3 0.51
+7-22-69 10k 0.17
+| 10-22-69 8 0.27
+12-17-69 38 1.05
+1-29-70 nz 0.81
+b-24-70 66 0.58
+10-16-70 51 0.90
+J 10-19-70 3 20.0
+| 1-11-71 I 2.0
+1-12-71 1 30.0
+
+ 
+
+8pverage leak rate = 1 cc/day.
+
+The seal leakage oil is highly acidic due to its contact with BF;
+tests with litmus paper showed a pH of 1 to 1.5. Analytical results of
+oil samples revealed small amounts of dissolved boron.
+
+The mechanical face seal appeared in good condition upon disassembly
+at the end of each operating period. Although there were no indications
+of impending trouble, the seal was changed as a precautionary measure
+during each pump maintenance cycle. The upper bearing normally showed
+
+evidence of loss of most of its internal lubricant (grease); the lower
+
+ 
+
+TAs
+ 
+
+ha
+
+bearing usually appeared in excellent condition, but both bearings were
+replaced routinely. The upper bearing is affected by the drive belt
+tension and operates under a heavier radial load then the lower bearing.
+The condition of the upper bearing was ample evidence that when the salt
+pump is belt driven, operation at 5000 rpm for 2000-hr periods was a
+maximum practical service limit. -
+
+| The sodium fluoroborate drained easily from the rather complex ge-
+ometry of the salt pump. Normal draining procedure consisted in circu-
+lating the salt at 1000°F and turning the pump at sbout 1000 rpm as the
+‘liquid level was lowered. Typical appearance of the salt-wetted portions
+of the pump after a 2000-hr test period is shown in Figs. 19 and 20.
+
+The white deposits are traces of frozen sodium fluoroborate salt.
+
+3.4 Corrosion Specimen Removal
+
+Corrosion specimens are normally removed for examination at approxi-
+mately 2000-hr intervals, but when operating problems were encountered
+they were removed more frequently. The salt inventory was drained into
+the sump tank, and the piping was cooled to room temperature prior to
+specimen removal. An argon purge flow was maintained through the loop
+during specimen removal to minimize air contamination of the inner sur-
+faces of the remaining piping. Tubing cutters were used to remove the
+tubing that contained the specimens. Immediately after the specimens
+were removed, the open ends of the piping “rere sealed to allow slight
+argon pressurization of the system while the specimens were cleaned and
+inspected.
+
+The specimen stringers were retrieved from the tubing after grinding
+the tack weld which joined them to the inner tubing surface. The grinding
+was done carefully so that the specimens could be reinstalled in the same
+tubing from which they were recovered. The specimens were cleaned of
+residual salt droplets by placing them in warm distilled water for about
+1 hr followed by ethyl alcohol washings and alr drying. Specimen weights
+were then measured and weight changes calculated.
+ 
+
+42
+
+PHOTO 96313
+
+ 
+
+ 
+
+i
+|
+f
+i
+}
+|
+|
+i
+i
+i
+
+ 
+
+ 
+
+ 
+
+Fig. 19. Appearance of the salt pump bowl after draining salt at
+1000°F at conclusion of 2000-hr run (model LFB pump).
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0
+
+ 
+
+ 
+
+43
+
+   
+
+PHOTO 96311A
+
+ 
+
+Fig. 20. Typical salt deposits remaining on support structure and
+heat baffles of LFB pump after draining salt at 1000°F at conclusion of
+2000-hr run.
+
+ 
+ 
+
+ 
+
+Lh
+
+3.5 Salt Sampling
+
+Salt samples were taken at the start of the test and at about 500-hr
+intervals thereafter. The salt was analyzed prior to operation in MSR-
+FCL-1 (Table 5); the original salt charge contained high concentrations
+of metallic impurities (Fe, Ni, Cr, Mo). The changes in concentration
+of these impurities have been rather erratic with time, probably due to
+inadvertent moisture contamination of the salt inventory. Some general
+trends were observed in the salt analyses after several thousand hours
+of operation. For example, the chromium concentration increased from
+66 to ~250 ppm and thereafter remained at that general level, the iron
+concentration dropped from 4LO7 ppm and remained at about 70 ppm, and the
+
+nickel and molybdenum concentrations were reduced to less than 10 ppm.
+
+Table 5. Analysis of sodium fluorcborate salt
+prior to operation in MSR-FCL-1
+
+ 
+
+Na, 01.8%
+
+B 9.14%
+
+F 67.9%
+
+Cr 66 ppm
+Fe 407 ppm
+Ni 53 ppm
+Mo 41 ppm
+
+H 0 ~400 ppm?
+0, ~400 ppm
+
+ 
+
+®pnalysis questionable.
+
+A cross-sectional view of the salt sampler is shown in Fig. 7. A
+copper bucket is attached to the lower end of the sampler assembly, and
+the assembly is then attached to a hydrogen furnace so the bucket is in
+the heated zone, and the bucket is fired in hydrogen at 1100°F for 30 min.
+After firing, the bucket is protected at all times by an argon: atmosphere
+while being moved to the test stand. The sampler container and holder is
+
+C.
+ 
+
+ 
+
+L5
+
+attached to a Swagelok coupling on the pump tank riser. The volume be-
+tween the two closed ball valves is evacuated and back filled with helium
+at least four times before the ball valves are opened to lower the sample
+bucket into the pump tank. The bucket is held below the liquid surface
+for several minutes to insure filling, after which it is raised above the
+lower ball valve and allowed to cool for 30 min. It is then withdrawn to
+a position above the upper ball valve, and the valve is closed. The top
+portion of the assembly, including the upper ball valve, is disengaged,
+and the sample is removed from this assembly within a dry box. The de-
+
+tailed sampling procedure is given in Appendix C.
+
+3.6 Summary of Corrosion Results
+
+ 
+
+The weight changes of the corrosion specimens in MSR-FCL-1 are
+plotted in Fig. 21 for the entire operating period. The corrorion rate
+gradually decreased during the first 9500 hr of operation.
+
+The specimens operating at the highest temperature (1090°F) showed
+the greatest weight loss, which was equivalent to a uniform metal removal
+rate of 0.001 in./year after 9500 hr. The lowest corrosion rate occurred
+during a 2900-hr period (6700 to 9600 hr), when the weight loss rate was
+equivalent to 0.0003 in./year. Corrosion rates would probably be reduced
+if more highly purified salt were used.
+
+Operation difficulties after 9600 hr resulted in an undetermined
+amount of alr and moisture inleakage to the salt system. The drastic
+effects of this inleakage are shown by the sharp increase in the weight
+change at a salt exposure time of 10,000 hr. This behavior is similar
+to that experienced in a thermal convection test loop! when wet air came
+
+in contact with the salt due to a defective cover gas line.
+
+CONCLUSIONS
+
+A materials compatibility loop was assembled and operated for
+10,000 hr to investigate corrosion of Hastelloy N by sodium fluoroborate.
+Automatic controls adequate to prevent damage to the system due to
+
+upsets during unattended periods of operation were developed and applied.
+ 
+
+ 
+
+ 
+
+WEIGHT CHANGES (mg/cm?)
+
+20
+
+46
+
+ORNL-DWG 71-4935R ~
+
+10
+
+    
+   
+
+0
+950°F
+|
+-10 1030°F
+-20
+-30
+-40 1090°F
+-50
+
+0 2000 4000 6000 8000 10,000 12,000
+
+Fig. 21. Weight changes of removable standard Hastelloy N specimens
+in flowing sodium fluoroborate (MSR-FCL-1).
+ 
+
+ 
+
+»
+
+k7
+
+Corrosion specimens and salt samples were routinely removed for
+analysis.
+
+An existing salt pump design and available components were success-
+fully adapted for salt circulation. Operation of the salt pump, model
+LFB, at 5000 rpm for 2000-hr periods is a maximum practical service con-
+dition for the grease-lubricated bearings when the pump is belt driven.
+
+Degradation of the salt pump seal leakage oil due to contact with
+low concentrations of BFy has not been a problem at a salt temperature
+of 950°F during 2000-hr operating periods. In the LFB pump geometry,
+diffusion of BFs vapors from the pump bowl gas space to the seal region
+is sufficiently restricted that the BF, concentration does not become
+critical. Thus purge flows to prevent this diffusion are not necessary.
+This results in a greatly simplified purge gas system.
+
+Heat transfer performance of the sodium fluorcborate sgrees well
+with standard heat transfer-correlations.
+
+Sodium fluoroborate exhibits good drainability at about 1000°F.
+
+In well-ventilated areas relatively simple ventilation and shielding
+enclosures may be used for low-temperature BF; tubing and gas panels
+because of the visual warning provided by the "white smoke" which forms
+from the reaction of BF; with moist air.
+
+Sodium fluoroborate is easily contaminated by air when in the molten
+state, and great care to prevent air inleaskesge is required in all phases
+of operation.
+
+The corrosion rate of Hastelloy N specimens at 1090°F averaged about
+0.001 in./year during 9500 hr of operation and was reduced to about
+0.0003 in./year during the last uninterrupted 2900 hr of operation. The
+corrosion rate increased sharply with air inleakage.
+
+RECOMMENDATIONS
+
+A new system design should be provided for future tests to achieve
+
+improved pump capability and relisbility, higher salt flow velocity,
+
+and a more flexible, rapid specimen removal technique.
+Future tests should be designed to allow corrosion specimen re-
+moval without dumping the seglt inventory. This would prevent dilution
+ 
+
+ 
+
+48
+
+of the circulating salt inventory with the salt remaining in the dump
+tank and simplify interpretation of the corrosion processes.
+
+The design of future salt corrosion test loops should provide an
+emergency heating system which will allow the pump to be stopped with-
+out subsequent freezing of the salt.
+
+A suitable BF; "scrubber" must be developed for future sodium
+fluoroborgte pump systems, so that BF; vent lines can be operated for
+long periods without plugging, acid formation, or back diffusion of
+water vapor into the salt system.
+
+The effect of sodium fluoroborate purity on corrosion rate should
+
+be determined in future pumped corrosion test facilities. Techniques
+
+‘for controlled purification of the salt will be required.
+ 
+
++
+
+ko
+
+Appendix A
+
+MSR-FCL-1 FLOWSHEET
+ 
+
+ 
+
+ym
+[Wel] ouschrion TT Wook wet | watowe.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+= of 9 gf KE. x mr 10 sur _ume &,
+
+Ott, TANK .
+Ame By papaTHER § OM OVEAFLOW
+ors rae Ame
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+   
+ 
+
+8,
+
+#
+i
+
+{
+
+ha
+2
+
+a "%®
+3
+
+AP
+[A
+TX
+&
+za
+
+ 
+
+ 
+
+dna wsv 1d ac
+« Pysy
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
+
+ 
+
+ 
+
+; i
+
+; ©
+
+3
+
+8 & \
+8,
+WATER Yq
+ha i @ uppLY
+Gem ©
+TN
+20 - ‘
+. .
+™N OPERATING PRESS.
+fodtnled ALTURW PROM SHAFT |
+wl
+ON RETURN FROM ANKULUS
+(38) ryruns mah 10s 2 On SUPPLY TO ANNULUS une 10
+saves te METALLURGICAL SPECIMEN
+. Lind 8
+mae RISISTANCE HEATED SECTION
+200m, y WATER (6 HEATER LUG A° LATER LUG 8°
+An s001t ATER LUG §°
+
+ 
+
+ 
+
+ 
+
+ 
+
+i pit vei
+Lm Rr
+1 500 Crt
+
+T
+HEATER Lvs ‘OY ~HEATER LUS 'C”
+Prom —ed Ag3isvance wgaTeD SECTION
+nESTRICTOR
+mers TEFLON TUBE . :
+
+SARE PURGE LNG sul arom)
+
+L 1 Jose }
+
+ 
+
+ 
+
+ 
+
+ 
+
+&.
+
+ 
+
+ 
+
+100¢
+
+. Ld
+EQUIPMENT IDENTIFICATION
+
+ 
+
+9 ®@
+
+Taw a et
+a @
+“B
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+©
+KT x
+: J > A t EQUIPMENT LOCATION
+3 R16 MOUNTED
+rosa & 3 ON GAY CONTROL PANEL
+4 3 AT REAR OF 6 AS-CONTROL PANEL
+VENTIL
+wre Paw ovimiano cmc
+Hun aa une So PANEL MOUNTED
+5
+
+'O NOT PANEL MOUNTED
+|
+
+| EXAMME OF RMIAMENT DESIGNATION
+1 EQUIPMENT LOCATION
+PY -—RQUIPMENT IDENTIFICATION
+V&A QQUISMENT NUMBER
+
+   
+
+ 
+
+   
+
+T& LAYOUT I CX
+MASTER DRAWING LIST A008
+EQUIPMENT LAYOUT Z-008%
+
+FERENCE DAMIER -
+
+GUNTER BY
+Pion Cavern Corronamen
+OE ML. TORI
+
+MSRP. FCL-l “83201
+
+ 
+
+ 
+
+FLOW SHEET
+
+ 
+
+ 
+
+ 
+
+a
+sons ni ONE
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0S
+
+ 
+ 
+
+51
+
+Appendix B
+
+MSR-FCL-1 CONTROL SYSTEM DESCRIPTION: AND OPERATING
+PROCEDURES FOR UNATTENDED OPERATION
+
+CONTROL SYSTEM DESCRIPTION
+Introduction
+
+The control system of MSR-FCL-1l was-revised during July and August
+1970 to permit unattended operation of the loop during evening and night
+‘shift periods. ‘This description is intended to assist in the operation
+of the loop and to provide guidance in the event of any difficulties en-
+countered during operation.
+
+The automatic control system is designed to transfer the loop opera-
+
+" or normal, conditions to "isothermal," or standby,
+
+tion from "design,
+conditions in the event design limits are exceeded or a malfunction of
+equipment occurs.
+
+‘The principal changes in the control system are (1) the circulating
+pump is shut off in the event of an alarm condition, (2) loss of pump
+lube and cooling oil flow is included as an alarm condition that will
+transfer the loop to "isothermal," or standby, condition, and (3) a con-
+trol was added to automatically provide the proper amount of heat to
+
+‘maintain the salt inventory molten with the pump off.
+
+-Normal Operation
+
+In the normal (design) mode of operation, two sections of piping
+between the pump discharge and cooler inlet are ‘heated by direct resis-
+tance heat. This heat is ‘removed in the finned cooler to. provide a
+temperature difference in the circuit. An LFB pump circulates: the molten
+salt, and a constant speed ‘blower with a manually adjusted damper provides
+air flow for heat removal from the finned cooler. During normal operation
+the following conditions exist: Lo
+
+1. salt is circulating in the loop and the pump is ong
+2. the pump lubricating and cooling oil is flowing;
+3. the two direct-resistance-heated sections are supplied with sufficient
+
+power to provide the desired temperature rise in the salt;
+ 
+
+52
+
+4. the air blower is on and the cooler housing door (top of cooler
+housing) is open to provide sufficient cooling to reduce salt tem-
+peratures to desired level;
+
+5. the cooler direct resistance heater is off.
+
+Standb ration
+
+The loop is preheated by direct resistance heating during standby
+operation except in the pump bowl section and the dump tank region, which
+are heated by Calrod electric heaters. Direct resistance heat for normal
+and standby operation is applied through three separate control systems.
+The two main heater sections (used for normal operation) are supplied
+from one control system, and resistance heating of the entire loop (used
+for standby operation) is controlled by a second control system. The
+cooler is preheated by the third separate resistance heat control system.
+During normal (design) operation this heat will not be applied. With a
+loss of salt circulation, the cooler hegter circuit and loop resistance
+heater circuit along with the pump bowl heat will maintain the salt in-
+ventory above the freezing point. During standby operation the following
+conditions exist: : -
+
+1. salt is not circulating; the pump is off (Note: the pump may be op-
+
+erated, if desired, if the alarm interlock relay is manually bypassed);
+
+2. the pump lubricating and cooling oil is flowing;
+
+3. the loop direct resistance heater is energized with the circuit ar-
+ranged to heat the entire loop except the cooler;
+
+4, the cooler direct resistance hester is on;
+
+5. the air blower is off and the cooler housing door is closed.
+
+Automatic Transfer from Normal to Standby Conditions
+
+A 1600-A circuit bresker installed in the main resistance heat supply
+transformer secondary provides a means of transferring from high power
+(normal) operation to standby operation. The following alarms will trans-
+fer the loop from normal to standby conditions:
+
+1. high loop temperature,
+ 
+
+ 
+
+4
+
+53
+
+2. low loop temperature, .
+3. low pump speed,
+4. low lube oil flow (10 sec delay before transfer).
+
+Emergency Power System
+
+An automatic transfer is made to the diesel-generator bus in the
+event of a building power outege. The design includes a time delay, so
+that for an outage of less than 2 sec, the loop will continue on AT op-
+eration. For an outesge of over 2 sec, the diesel generator in the base-
+ment (which will have started immediately upon a power failure) will be:
+timed in to provide control power, resistance heat to the loop, resis-
+tance heat to the cooler, pump power, lube oll motor power, pump bowl
+heat, dump tank heat, and drain line heat.
+
+OPERATING PROCEDURES
+
+Tnitial Startup and Preheat
+
+Refer to £lowsheet, Dwg. 10486-R-001, Rev. 3, for valve locations
+and functions.
+
+1. Caution: Start oil pumps before applying heat to the system to
+prevent accidental overheating of the bearing and seals within the LFB
+pump.
+
+The two lubricating and cooling oil pumps are started by start
+switches (labeled Nos. 1 and 2) in the magnetic amplifier cebinet. The
+pumps are in parallel in the oil circuit, and either or both pumps can
+be turned on. With the control switch in the "off" or "preheat" position,
+the pumps can be started or stopped by the "start" switches. With the
+control switch in the "on" or "automatic" position, operation of the lube
+
+ofl pumps is. controlled by the lube oil flow switch. On loss of oil flow
+
+the standby pump will: be eutomatically started.
+
+2. Preheat the main loop by manually closing the 400-A fused safety
+switch supplying the main resistance heater. The 1600-A circuit bresker
+is open. Set bypass switches 13, 1h, 15, 16, 17, 18, and 22 in the
+ 
+
+ 
+
+54
+
+"preheat" position. The dc supply to the saturable reactor is "on"
+through the magnetic amplifier. Set the potentiometer supplying power -
+to the saturable reactor at ~10 on the potentiometer dial.
+
+3. Preheat the cooler by closing the 30-A fused safety switch
+supplying the cooler resistance. heater circuit. Automatic closing of
+the contactor "CR" in this circuit is permitted through NC contact R8-6.
+Bypass switch 16 (cabinet 2) should be closed ("down" position) manually
+to prevent shutdown of cooler heater when relay R8 is energized.
+
+Lk. ‘Close the 60-A fused safety switch supplying variable trans-
+formers through the 15-kVA transformer. This energizes all auxiliary .
+heating circuits. :
+
+a. Close the fused safety switch labeled "Emergency Power Supply"
+to complete the circuit for diesel power if gs building power failure
+occurs.
+
+b. Heat dump tank to ~900°F. (The dump tank heat should be turned
+on ~12 hr before startup, as the tank heats very slowly.)
+
+c. Heat the drain line (except the freeze valve) to ~800°F.
+
+5. Pressurize the loop with helium to ~3 psig.
+
+a. Close the 30-A fused safety switch to the normal clutch supply
+excitation. ) |
+
+b. Close contact push-button, closing the pump starter and also
+feeding the clutch. Selector switch "SS" is set at "org." ‘Relay R5 is
+closed. )
+
+c. Adjust the pump speed to ~500 rpm (cabinet 1).
+
+d. Set the low pump speed alarm at 400 rpm.
+
+6. The pump seal purge ‘should be flowing through the thermal con~
+ductivity cell at ~80 cc/min.
+
+7. After all loop temperatures are at 850. to 1200°F, position
+valves for the Loop filling operation as follows. Be sure all heater
+
+lug temperatures are at least 900°F. The valve position shown will
+
+allow pressurizing the dump tank from one of the helium cylinders, while
+
+the second cylinder is used to maintain loop purge gas flow and pressure.
+ 
+
+25
+
+e : Closed
+
+7
+
+HV 19 HV 30
+HV 20 HV 46
+HV 21 HV 81
+HV 22 HV 83
+HV 26 HV 84
+HV 27 HV 117
+HV 28 HV 139
+
+i
+
+8. Adjust the flow through FI 17 by opening HV 21 to ~0.2 £i2/hr.
+9. Close HV 21.
+10. Thaw the freeze plug-by closing HCV 110 and turning up the heat
+on the fill line (Variac 8, panel 3). |
+11. Open HV 22 and HV 81 to pressurize the dump tank slowly to push
+salt into loop. Dump tank pressure of ~5 psi above loop is required for
+loop fill. (PI 116 is located in pump enclosure.)
+12. Slow the gas flow to sump by closing HCV 16 when the lower pump
+probe light comes on.
+13. Close HCV 16 when the top pump probe light comes on.
+1k. Close HV 2L.
+"15. Open HV 26 slightly to drop the salt level until the top probe
+light goes off. |
+16. Close HV 26.
+17. Turn off Variesc 8 and start air flow through the freeze valve
+by opening HCV 110. |
+18. When the freeze valve is frozen, open HV 26 to vent the dump
+tank to ~U psig.
+19. Close HV 81, 26, and 8.
+20. Check the pump seal purge and the thermal conductivity cell
+recorder. So
+21. Blover end damper control. permissive relay R8 is now energized
+by manually closing switch 15 ("down position). When the relay is
+closed, it seals itself in through contact R8-3, paralleling switch 15.
+In order to permit shutdown of the blower and damper on long-time loss
+of power, switch 15 is now opened manually. (" up" or normal operating
+position). The cooler blover main control power (switch and bresker on
+
+© the breaker rack) should be off to prevent blower startup until needed.
+ 
+
+ 
+
+56
+
+22. Increase the pump speed to the desired level. For U4 gpm (~10
+fps) a speed of L800 to 5000 is adequate. Check pump for excessive op-
+erational noise, vibration, or a possible oil lesk in the rotary union.
+
+23. With the loop temperatures above 950°F, manually close the
+1600-A breaker (located on the east side of the loop enclosure) and
+slowly increase the main resistance heat potentiometer to ~80% and turn
+off the cooler heater by placing switch 16 in the operate (up) position.
+
+24k. When loop. temperatures start increasing, turn on the cooler
+blower using the start switch and the breaker on the breaker rack. The
+sliding damper on the blower intake should be closed. |
+
+25. Open the door on the top of the cooler housing and engage the
+. solenoid, which will ‘hold the door open.
+
+26. Open the gliding damper a little at a time as required to adjust
+the loop temperature to the desired level. Lock the damper in the final
+position for long-term operation. ;
+
+27. Flace all bypass switches (2 through 18, and 22) in the operate
+or automatic position.
+
+28. Place the building alarm switch (No. 23) in the "up" position
+to activate the building alarm and signal to the plent shift supervisor
+(pss). :
+29. Make final adjustments on the temperature controller (TIC-1,
+cabinet 2) and the blower damper, as required, to obtain the desired
+
+temperatures on the metallurgical specimens.
+Main Transformer — How to Control
+
+The power to the main power supply is controlled by direct current
+on a saturable reactor. With the potentiometer adjustment knob (Mag.
+Amp. Cab. ) at zero, there is still some dc ‘current in the reactor which
+gives what is called "dc leakage current” to the heater section. If the
+Pyr-o-vane controller cuts off de completely, as evidenced by the main
+power supply ‘alarm light coming on, there is still aveilsble vhat is |
+termed "minimum leakage current" to the heater ‘section.
+
+Should the temperature reach the set point of the Pyr-o-vane, the
+dc will be cut off and the loop transferred to isothermal conditions.
+
+ao
+ 
+
+ 
+
+*"w
+
+ 
+
+57
+
+Resistance heat will be reapplied as soon as tempersture has dropped
+below the set point. Therefore, the Pyr-o-vane gives "on-off" control
+of temperature should a high-temperature alarm condition occur.
+
+When an alarm condition has occurred and the loop has been trans-
+ferred to the standby condition, power for resistance heating of the
+entire loop is controlled through the second potentiometer (Mag. Amp.
+Cab.), which must be preset to deliver the correct amount of power to
+keep loop temperatures sbove the salt liquidus temperature (725°F) but
+below ~1200°F. The correct setting for the isothermal heat is deter-
+mined during startup and is indicated on the potentiometer scale,
+
+Position of Control Switches During Normal Operation
+
+The following list of switches snd controls includes a brief expla-
+nation of each as to its function and position during normal operation.
+
+Note: The "up" position is the proper position for all switches
+during normal operation with a AT, except switch 22, which is down or
+in the "automatic" position.
+
+1. Control Csbinet No. 1
+
+a. Switches 1 through 12 are alarm silence switches associated with
+each of the 12 alarm lights. These switches are for acknowledging the
+alarm condition and will silence the bell only. Whenever any of these
+switches are in the "down" (acknowledge) position, the blinker light
+will be on.
+
+b. Clutch supply selector switch ("SB") will be in the "off" po-
+sition to give normal power supply to the clutch. The auxiliary clutch
+supply is disconnected. - B
+
+c. Switch 20, the building and plant shift supervisor (PSS) alarm
+bypass, should be in the "up" position to allow building and PSS signal.
+
+d. Switch 21, the loop containment elr flow alarm, has been re-
+moved. This alarm now is located on the "74 german" annunciator, and
+this switch is no longer needed. }
+
+e. Switch 22, during normal operation, should be in "automatic"
+(down) position to allow pump shutoff for high and low temperature and
+ 
+
+ 
+
+ 
+
+58
+
+low pump speed. On "test" position the switch prevente stopping of ‘the
+pump automatically except on loss of oil flow:
+
+2. Control Cabinet No. 2
+
+ 
+
+a." Switch 13, the low-temperature automatic-operation bypass, will
+be left in open .or "operate" position. When closed, it prevents automatic
+operations due to low temperature. tote This does not bypass the audi-
+ble and visible alarms. . : :
+
+Switch 1h, the automatic operation bypass switch, will be left
+"operate" position. In "test" position it will prevent any of the
+automatic actions from taking place and is to be placed in "test" position
+only when testing the various alarm circuits and during actual "preheating"
+
+or "thawing" of the loop.
+
+“ec. Switch 15, the automatic operation relay reset, will be left in
+the closed or "operate" position to allow automatic operation in the
+event of an alarm condition. The switch is placed in "operate". position
+soon after startup of g loop to allow seal-in of relsy 8, which directly
+performs the automatic operation. Thereafter, it will be used only to
+"reset" the automatic operation circuits (after the cause for same has
+been cleared and the loop is ready to go back on AT), oT
+
+d. Switch 16, the cooler heater control switch, will be left in
+open or 'operate" position. ‘This allows relay action to supply resistance
+heat to the cooler in the vent of an alarm condition requiring it. On
+"preheat" position it will allow heat to be applied to the cooler without
+
+. an alarm condition.
+
+e. Switch 17, the main resistance heater switch, will be left in
+the "operate" or closed position. This will allow the 1600-A breaker
+
+to trip during an alarm condition. In "prehea " position : it will prevent
+
+tripping of the breaker automatically. -
+
+f. Switch 18, the low-speed and low-temperature reset, will be left
+on closed or "operate" position. This serves as ‘a reset for either the
+low-temperature or the low-clutch-speed alarm. When the switch is reset
+after a low-clutch-speed alarm, it will automatically place the clutch
+supply back on the normal supply, provided it is available. When reset
+after low-temperature alarm, it will reset the alarm relay only.
+ 
+
+ 
+
+29
+
+g. Switch 19 is not in use.
+h. A summary table of the switch positions is presented in Table
+B.1l.
+
+Heater and Gas Controls During Normal Operation
+
+1. The cooler heat control variable transformer will be preset dur-
+ing startup to provide sufficient heat to the cooler to prevent freezing.
+This setting (indicated on front dial) should be changed only if the
+cooler heater circuit is in use and an adjustment of cooler temperatures
+is necessary.
+
+2. The cooler preheat voltage meter gives an indication of the
+voltage across the cooler lugs during application of power to the cooler
+coll. It is the only positive indication of power being applied (other
+then temperatures) to the coil.
+
+3. The loop resistance heat control (the potentiometer in the Mag.
+Amp. Cab.) will be preset during stertup to provide sufficient heat to
+the loop piping (except cooler) to prevent freezing if the loop is auto-
+matically transferred to isothermal or standby. The proper setting is
+indicated on the potentiometer dial.
+
+4. The catch basin flowmeter should have a slight bleed of helium
+(~80 cc/min) as indicated by the flow indicator, FI 91, inthe BFj
+cubicle.
+
+5. The pump pressure should be between 6 and 8 psig (the pressure
+recorder is in the pressure recorder cabinet).
+
+6. The dump tank pressure should be between 3 and L psig.
+
+T. The equalizer and vent valves should be closed (HV 84 and HV
+83).
+
+Abnormal Conditions
+
+1. Switch Positions During Standby
+
+During standby (preheat), switches 17, 18, and 19 are open ( "down"
+position), as shown by the operation of alarm light L 11. During "operate,
+all three switches are closed ( "up" position) and the light is off.
+
+n
+Table B.1. Control switch list
+
+ 
+
+ 
+
+ 
+
+: Position
+Number Description Location Normal Preheat
+operation operstion
+
+1 Shuts off loss of normal clutch supply alarm Control cab. 1 Up Down
+2 No longer in use :
+
+3 Shuts off low-clutch-speed alarm Control cab. 1 Up Down
+4 Shuts off loss of power to pump motor alarm Control cab. 1: Up Down
+
+5 Shuts off loss of maln power alarm Control cab. 1 Up Down
+6 Shuts off blower alarm Control cab. 1 Up Down
+T Shuts off loop high-temp. glarm Control cab. 1 Up Down
+8 Shuts off loop low-temp. alarm Control cab. 1 Up Down
+9 Shuts off low lube flow alarm Control cab. 1° Up Down
+10 Shuts off loss of cooler power alarm Control cab. 1 Up Down
+11 Monitors switches 17, 18, 19 Control cab. 1 Up Down
+12 Monitors switches 13, 14, 15, 16 Up Down
+13 Low-temperature control bypass Control cab. 2 Up Down
+1h Time delay relay test switch Control cab. 2 Up Down
+15 Reset for preheat transfer control Control cab. 2 Up Down
+16 Cooler preheat control circuit Control csb. 2 Up Down
+17 Trip circuit bypass for main circuit breaker Control cab. 2 Up Down
+18 Permits low-temperature and low-pump-speed
+
+operation - Control cab. 2 Up Down
+20 Building and PSS alarm bypass - Control cab. 1 Up Down
+21 No longer in use
+22 Permits pump operation at high and low
+temperatures Control cab. 1 Down Up
+
+ 
+
+09
+
+ 
+ 
+
+ 
+
+ 
+
+*
+
+61
+
+Switch 11 must be "off" during "preheat" to shut off bell and flasher.
+When closed during "operate," switch 11 will permit the bell and flasher
+to function should any of the three switches be opened manually (human
+error).
+
+During "preheat," switches 13, 14, 15, and 16 are closed ( "down"
+position), as shown by the operation of alarm light L 12. During
+"operate," all four switches are open ("up" position) and the light is
+off. Switch 12 must be "off" during "preheat" to shut off the bell and
+flasher. When closed during "operate," switch 12 will permit the bell .
+and flasher to function in event any of the four switches should be
+
+closed manually (human error).
+
+2. Pump Speed Low
+
+Low pump speed will cause the following actions automatically:
+
+a. The pump ac motor, and thus the circulating pump, is stopped.
+
+b. The blower is stopped.
+
+c. The door on top of cooler housing is closed.
+
+d. The 1600-A breaker is opened, and the loop is resistance heated
+around entire circuit except for the cooler coil.
+
+e. The power supply to the main loop resistance heater is switched
+from the main loop heat control mode to the isothermal heat control mode,
+which is preset to provide the reduced heat to the loop, as required, on
+loss of salt circulation.
+
+f. The resistance hegt to the cooler coil is turned on.
+
+g. A signal 1s transmitted to the Plant Shift Superintendent's (PSS)
+office.
+
+. 3. Loop Temperature High
+
+A high loop temperature will cause the seme actions as described
+
+in 2, above.
+
+4. Loop Temperature Low
+
+A low-temperature alarm will cause the same actions as in 2, above.
+ 
+
+62
+
+5. High or Low Loop Heater Power
+
+High or low loop heater power will give local, building, and PSS
+elerms only. -
+6. High or Low Loop Pressure
+
+High or low loop pressure will give local, building, and PSS alarm
+only.
+
+T. Loss of Pump Lube Oil Flow
+
+If the pump lube oil flow falls below a preset value, the second
+oil pump will be started automatically. If flow is not returned within
+10 sec, the ac pump drive motor (and thus the salt circulating pump) is
+stopped.
+63
+
+Appendix C
+
+MSR-FCL-1 SALT SAMPLING PROCEDURE
+
+1. Install the sample bucket in the sample holder (Ref. Dwg.
+10L86RO08E.
+
+2. Fire sample bucket at lower end of sample tube in the Reactor
+Chemistry furnace at 600°C for 30 min under hydrogen gas. Be sure to
+light the hydrogen vent on the furnace during firing.
+
+3. Lift the sample bucket out of the furnace to just below first
+ball valve; let it cool under an argon gas purge for 30 min.
+
+4, Lift the sample bucket above top ball valve (HV 114) and close
+the valve to isolate the bucket with 10 psig of argon over pressure.
+Close gas valve HV 137. Remove the sample holder assembly from the fur-
+nace.
+
+5. Install the sample holder assembly on the pump sample line.
+
+6. Set the gas valves in the following order (Ref. Flowsheet Dwg.
+10486RO01E): open HV 61 (for pump purge); open HV 13; open PV 1h fully;
+open HCV 16, 19; close HV 20, 21, 22, 119.
+
+T. Set the vacuum valves in the following order: close HV 132,
+turn on the vacuum pump, open HV 122, 12k, 138, 115, 113, 136. Pump
+the system down to HV 137 and ball valve 112.
+
+8. Close HV 138 (vacuum valve).
+
+9. Open HV 119. Pressurize the system with helium to HV 137 and
+ball valve HV 112.
+
+10. Open HV 11k and HV 137.
+
+11. Close HV 119 (gas valve).
+
+12. Open HV 138 (vacuum valve).
+
+13. Alternately pressurize the system with helium and pump the sys-
+tem down with a Welch mechanical vacuum pump at least four times.
+
+14. Close HV 138 and open HV 119. -
+
+15. Open HV 112 (lower ball valve) and push the sampler to the
+bottom of the pump bowl; leave it in this position for 5 to 10 min.
+
+16. Lift the sampler sbove HV 112 (lower ball valve) and close
+
+valve HV 112.
+ 
+
+ 
+
+6k
+
+17. Let the sample cool for about 30 min.
+18. Close HV 119; open HV 138 .(pump on the sample to remove BF
+gas).
+
+19. Close HV 138; open HV 119; lift the sample above HV 114 and
+close HV 11k; close HV 136, 113, 137, 115, 119. Tighten the Swagelok
+fitting on the push rod. |
+
+20. Remove the semple holder at the Svagelok fitting between HV
+114 and 112 and between HV 115 and 137.
+
+~ 21. Close HV 13. :
+22. Deliver the sample to Metals and Ceramics personnel for
+
+analysis.
+ 
+
+ 
+
+ 
+
+»
+
+« . e
+
+\O Co OW Fw OH
+
+=
+o
+
+11.
+12.
+13.
+1h.
+15.
+
+16.
+
+17.
+18.
+19.
+20.
+21.
+22.
+
+24-7.
+28.
+29,
+30.
+31.
+32.
+33.
+3h.
+
+35-39.
+40.
+4.
+ho.
+13.
+Lh,
+
+88.
+89.
+90.
+91.
+
+65
+
+ORNL-~TM-3863
+
+Internal Distribution
+
+. Anderson
+Baes:
+Beall
+Bettis
+Bettis
+Bohlmann
+Borkowski
+Boyd
+Breeding
+Briggs
+Clark
+Cooke
+Cottrell
+. Crowley
+DeVan
+Distefano
+Ditto
+Eatherly
+Ferguson
+. Ferris
+Fraas
+
+. Fuller
+Gabbard
+Gnadt
+Grimes
+Grindell
+Guymon
+
+. Harms
+
+. Haubenreich
+. Helms
+Hoffman
+Huntley
+Jordan
+Kasten
+Keyes
+Koger
+Krakoviak
+
+.
+.
+
+. -
+-
+
+DoHQOEHBOWNON
+
+HRY RGQn EEE
+
+PUSHY IEEE ION PHO RNG NUE
+HEUPHAIHEORANP ROUEN LPEEY
+
+Ls.
+46.
+47.
+48.
+ho.
+50.
+51.
+52.
+53.
+5k.
+55.
+56.
+57.
+58.
+59.
+60.
+61-62.
+63.
+6L.
+65.
+66.
+67.
+68.
+69.
+70.
+71.
+2.
+73.
+Th.
+75.
+16.
+77.
+78.
+79.
+80-81.
+82.
+83-86.
+87.
+
+M. I. Lundin
+
+“T. S. Lundy
+
+R. N. Lyon
+
+R. MacPherson
+
+H. McCoy
+
+Ho MeCurdy
+
+C. McGlothlan
+McNeese
+McWherter
+
+Metz
+
+Meyer
+
+Miller
+
+. Moore
+
+L. Nicholson
+
+M. Perry
+
+C. Robertson
+
+. W. Rosenthal
+
+H. C. Savage
+
+Dunlap Scott
+
+J. H. Shaffer
+
+M. R. Sheldon
+
+M. J. Skinner
+
+A. M. Smith
+
+A. N. Smith
+
+Spiewak
+
+D. Stulting
+
+. Sundberg
+
+Thoma,
+
+. Weir
+
+. Whatley
+
+. Whitman
+
+L. V. Wilson
+
+Gale Young
+
+H. C. Young
+
+Central Research Library
+Y-12 Document Reference Section
+Laboratory Records Department
+Laboratory Records (RC)
+
+3
+PUR UEEN OEY
+
+SEER SE
+
+PARSE OW
+SfoHTHPE
+
+External Distribution
+
+D. F. Cope, RDT, SSR, AEC, ORNI
+
+David Elias, USAEC, Washington, D.C. 20000
+Norton Haberman, USAEC, Washington, D.C. 20000
+
+Kermit Laughon, USAEC, OSR, ORNL
+ 
+
+66
+
+© 92. T. W. McIntosh, USAEC, Washington, D.C. 20000
+: . M. Shaw, USAEC, Washington, D.C. 20000
+94-96. Directorate of Licensing; USAEC, Washington, D.C. 20545
+97-98. Pirectorate of Regulatory Standards, USAEC, Washington, D.C.
+20545
+99-115. Manager Technical Information Center, AEC, for ACRS
+116. Research and Technical Support Division, AEC, ORO
+117-118. Technical Information Center, AEC

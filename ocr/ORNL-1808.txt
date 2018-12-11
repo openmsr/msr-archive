@@ -1,0 +1,3590 @@
+ 
+
+ 
+
+ 
+
+ 
+    
+
+AEC RESEARCH AND DEVELOPMENT REPORT |. 5 Gy
+(TH
+
+3 yy5k 0349799 0
+
+   
+       
+   
+ 
+   
+     
+   
+   
+   
+   
+     
+
+ENTRAL RESEARCH LIBRARY
+DOCUMENT COLLECTION
+
+DESIGN CALCULATIONS FOR A MINIATURE HIGH-
+TEMPERATURE IN-PILE CIRCULATING FUEL LOOP
+
+“es
+
+M. T. Robinson and D. F. Weekes \ AUI
+
+CENTRAL RESEARCH LIBRARY
+DOCUMENT COLLECTION
+
+LIBRARY LOAN COPY
+
+DO NOT TRANSFER TO ANOTHER PERSON
+
+ 
+    
+  
+
+If you wish someone else to see this document,
+send in name with document and the library will
+arrange a loan.
+
+OAK RIDGE NATIONAL LABORATORY
+OPERATED BY
+
+UNION CARBIDE NUCLEAR COMPANY
+
+A Division of Union Carbide and Carbon Corporation
+
+POST OFFICE BOX P + OAK RIDGE, TENNESSEE
+
+ 
+ 
+
+ 
+
+ORNL-1808
+
+This document consists of 31 pages.
+Copyl Se of 209 copies. Series A.
+
+Contract No, W-7405-eng-26
+
+SOLID STATE DIVISION
+
+DESIGN CALCULATIONS FOR A MINIATURE HIGH-
+TEMPERATURE IN-PILE CIRCULATING FUEL LOOP
+
+M. T. Robinson and D. F. Weekes
+
+With An Appendix on Analog Simulation by
+E. R. Mann, F. P. Green, and R. S. Stone
+
+Reactor Controls Department
+
+DATE ISSUED
+
+SEP 19 1955
+
+OAK RIDGE NATIONAL LABORATORY
+Operated by
+UNION CARBIDE NUCLEAR COMPANY
+A Division of Unioh Carbide and Carbon Corporation
+Post Office Box P
+Oak’ Ridge, Tennessee
+
+x
+
+    
+ 
+
+ARIES
+NERGY 5ST EMS LIBR
+TTA E!
+
+ya °
+
+ 
+Ww Ww NN NNNNNDNNDND— —t tt od md dd
+OCRZEIBNRIRENEESsIcoroo=
+
+Ki
+SESPOEIO-MANE-DEPOOSAON-DPEEMEIIMODIOMATIOOM=-TONNDO
+
+FAT ome MMrn OTOP NIMIEP>PAMSEOMAMPPLCEMPODIITDVOOOODL-TOX
+
+SEGROD/EBBEURS
+
+SoONOCUARAWN~
+
+-
+
+. Billington h a
+nder - Ci
+. Blankenship Ww A
+. Blewitt EIR
+. Blizard py
+
+. Bredig
+rooks (consultant)
+. Browning
+
+. Brundage
+. Callihan
+. Cardwell
+
+. Center (K-25)
+. Chapman
+. Charpie
+
+. Clewett
+. Clifford
+. Cohen
+. Cottrell
+. Cowen
+. Crawfor
+omer
+
+. Crouse
+
+. Culle
+
+ 
+
+INGERNAL DISTRIBUT Ili
+
+. Adamson "
+. Affel 9
+. Baldock
+
+Barton
+
+. Baumann
+. Berggren
+. Betterton, Jr.
+
+4
+3
+Bettis [}
+
+Bopp
+Borie
+
+. Boyd
+
+Boyle
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+  
+
+Bruce
+
+Cathcart
+
+Cleland
+
+Cunnig
+Dis :
+Eml
+Fel
+Fe
+
+DO CMACM PME MENIADN AZO COIMMOEONOEAN “POP MOAEETD
+
+PETC NO ON CEP AONO ZY P MMP MKEAIATEIC AAO X
+
+ORNL-1808
+
+. J. Gray
+. P. Green
+
+R. Grimes
+O. Harms
+
+. S. Harrill
+
+E. Hoffman
+
+. Hollaender
+
+. Holmes
+
+. Householder
+Howe
+
+. Jetter
+
+. Johnson
+Jones
+
+. Jordan
+
+. Keilholtz
+
+. Keim
+Kelley
+
+. Kernohan
+ertesz
+
+. King
+
+Klaus
+Klein
+
+Lane
+Larson
+LaVerne
+
+. Lincoln
+Lind
+Livingston
+Lyon
+MacPherson (consultant)
+. Maienschein
+Manly
+
+Mann
+
+Mann
+
+. McDonald
+. McQuilken
+. Miller
+
+. Miller
+
+. Morgan
+
+. Morgan
+
+. Murphy
+
+. Murray (Y-12)
+. Nessle
+
+. Oliver
+
+. Parkinson
+
+ 
+
+ 
+
+ 
+ 
+
+96.
+
+97.
+
+98.
+
+99.
+100.
+101.
+102.
+103.
+104,
+105.
+106.
+107.
+108.
+109.
+110.
+111.
+112.
+13.
+114.
+115.
+116.
+117.
+118.
+
+. L. Sproull (cons Rant)
+. E. Stansbury
+
+. K. Stevens =
+
+. S. Stone k
+. |. Strough 135-134
+. J. Sturm 3
+
+. D. Susano \
+. A. Swartout :
+. H. Taylor
+
+. B. Trice
+
+. R. Van Artsdalen
+
+MEMEO =EDODOMAPEOIOMMIP>PIZIO
+
+ 
+
+ 
+  
+
+  
+ 
+
+      
+    
+  
+     
+  
+ 
+ 
+  
+  
+ 
+ 
+  
+ 
+   
+ 
+   
+      
+    
+     
+       
+
+M. Reyling 119. F. C. VonderL gle
+F. Poppengiek 120. J. M. Warde
+T. Robinsfg 121. C. C. Webstji#
+W. Savage 122. M. S. WechflEr
+W. Savolaill 123. D. F. Weg gg
+C. Schwein 124. R. A. Well
+. Seitz (consqilihnt) 125. A. M. \iilfberg
+. D. Shipley WR 126. J. C. jilfte
+. Sisman J 127. G. Dfhitman
+. J. Skinner 3 128. E. figner (consultant)
+. P. Smith p 129. G.g@Villiams
+. H. Snell ; 130. Wi Willis
+
+I. Wilson
+SFE. Winters
+JE C. Vittels
+B.D. Zerby
+WCentral Research Library
+b'Health Physics Library
+
+. Laboratory Records Department
+
+. Laboratory Records, ORNL R.C.
+
+. ORNL Document Reference Library,
+Y-12 Branch
+
+EXTEEMAL CEFRIBUTION
+
+146. AFDRER) J
+147. AFDRY
+148. AFSWQ
+
+149. Aircraglb WADC (WCLS)
+
+ 
+      
+   
+ 
+  
+   
+
+150. Argon ational Laboratory
+151. ATIg
+152-154. Atl Egy Commission, Washington
+155. B - pC
+156. CilElle NBlorial Institute
+157. ing — tle
+
+  
+
+158. Aer — er
+159 Mhief of Nc
+160-16 ol. Gasse
+148 Convair — Si
+164-1 CVAC - For
+. Director of L
+8. Directorate o
+. Douglas
+. East Hartford
+171. Equipment Lah
+-175. GE - ANPD
+176. Glenn L. Martin
+177. lowa State College
+178. Knolls Atomic Power Laboratory
+
+   
+  
+  
+  
+   
+  
+
+Research
+CSN)
+Diego
+brth
+
+ratories (WCL)
+
+apons Systems, ARDC
+
+     
+
+       
+
+      
+   
+    
+ 
+
+pn Office
+tory — WADC (WCLE)
+
+ 
+ 
+
+ 
+
+* Reactor Experimental Engineering Library
+
+ 
+179.
+180.
+181.
+182-183.
+184.
+185.
+186.
+187.
+188.
+189.
+190-192.
+193-196.
+197.
+198.
+199.
+200-201.
+202-204.
+205.
+206.
+207.
+208.
+209.
+
+ 
+
+Lockheed ~ Burbank
+
+Lockland Area Office ,
+Los Alamos Scientific Laboratory
+
+Materials Lab (WCRTO)
+
+Mound Laboratory
+
+NACA - Cleveland
+
+NACA — Washington
+
+NDA
+
+North American — Aerophysics
+
+Patent Branch, Washington
+
+Power Plant Laboratory — WADC (WCLPU)
+
+Pratt & Whitney :
+Rand
+
+RDGN Sutherland
+
+SAM
+
+Technical Information Service, Oak Ridge Operations Office
+WADC - Library
+
+WAPD — Bettis Plant
+
+Wright Aero
+
+Assistant Secretary — Air Force, R&D
+Maintenance Engineering Services Division — AMC (MCMTA)
+Division of Research and Medicine, AEC, ORO
+
+ 
+ 
+
+ 
+
+CONTENTS
+Development of Loop Model ........c.ccoeuiiiiiiiiiiiiin tes
+Basis of Heat Transfer Calculations ......cccoieiciiniininininninnne sees 3
+Derivation of Heat Transfer Equations... ....cocceceuiririiminincii tines sees 4
+Solution of Heat Transfer Equations. .......cccoieciiiiini en 7
+NUMEEI CAI DOA. et eters ete st ebsites tears re shot ests ae snares sass a tse b eas sa saab eb abs s ater enn semen cement
+Selection of Best Loop Model .........c.cooriiiienieniiiee inte
+Results of Design Calculations for the Mark VII Loop .......cooimiiiiiiiiiii 10
+Miscellaneous Calculations for the Mark VIH Loop ....cocviimiiiniinicnceine een 1
+Appendix A. Importance of Reynolds Number in Mass Transfer .......ooooiininninnn, 16
+Appendix B. Analog Simulation in an In-Pile Loop-Liquid-Salt Fuel Study.......cooevinriinnnnnn. 16
+Appendix C. Time-Constant Modification through Positive Feedback ..........ccoovivniniinninnnn. 25
+
+ 
+
+ 
+ 
+
+DESIGN CALCULATIONS FOR A MINIATURE HIGH-TEMPERATURE
+IN-PILE CIRCULATING FUEL LOOP
+
+M. T. Robinson and D. F. Weekes
+
+DEVELOPMENT OF LOOP MODEL
+
+The calculations presented in this report have
+been carried out as part of the development of a
+small circulating fuel loop designed for a study
+of the effects of reactor radiation on the inter-
+action of fused fluoride fuels with container
+materials, and particularly with Inconel.! One of
+the principal purposes in making a small loop is
+to simplify construction and operation of the
+equipment to the extent that many loops can be
+run under a variety of conditions. Another con-
+sideration is that a small loop can be examined
+more easily after irradiation. Finally, a suf-
+ficiently small system can be inserted into any
+one of several vertical irradiation facilities in
+either the LITR or the MTR. This will allow high
+thermal- and fast-neutron fluxes to be used and
+will simplify experimental work by eliminating the
+need for elaborate beam-hole plugs.
+
+Two important considerations governed the
+choice of the basic design. Safety of both the
+reactor and the personnel dictated that no portion
+of the loop be left uncooled. This is especially
+important in the region of high thermal-neutron
+flux, since, in case of fuel stagnation, the temper-
+ature of the fuel will rise at a very great rate
+(650°C per second for fuel composition 30 in the
+MTR is a typical figure). Since the time neces-
+sary for taking appropriate corrective action is
+appreciable, a considerable amount of heat should
+be extracted from the high-flux regions of the
+loop to avoid melting of the container and release
+of fuel and fission products into the cooling air
+or into the reactor itself. It is impractical to use
+two cooling circuits so that there will be one for
+emergency use only, since such an emergency
+circuit cannot be operated sufficiently rapidly.
+The second consideration was simplicity, both of
+construction and of design calculation.
+
+ 
+
+"For details of the mechanical design, development
+tests, etc., see reports by J. G. Morgan and W. R. Willis,
+Solid State Semiann. Prog. Rep. Feb. 28, 1954, ORNL-
+1677, po 30; W. R. Willis et al., Solid State Semiann.
+
+Prog. Rep. Aug. 30, 1954, ORNL-1762, p 44 ff.
+
+As a result of these considerations, the basic
+design chosen was a coaxial heat exchanger, bent
+into a close-limbed U-shape. Fuel is pumped
+through the inner member in a loop closed by the
+pump, and cooling air is forced through the sur-
+rounding annulus. Studies have been made of
+several different ways of arranging the cooling-air
+circuit relative to the fuel circuit, as illustrated
+schematically in Fig, 1. Detailed calculations
+to be presented later show the marked superiority
+of the type 3 arrangement, when viewed as to the
+amount and pressure of air required to maintain
+the desired operating conditions,
+
+Studies have been made also of the effects that
+the diameter of the fuel tube and the length of
+the loop will have on the thermal behavior of the
+
+UNCLASSIFIED
+SSD-A-1052
+ORNL-LR-DWG-3772
+
+Uy
+vy
+
+INNER LOOP SHOWS DIRECTION OF FUEL FLOW, OUTER LOOP
+SHOWS DIRECTION OF AIR FLOW
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 1.
+Models.
+
+Air Flow Patterns in Miniature Loop
+
+ 
+TABLE 1. SUMMARY OF LOOP MODELS
+
+ 
+
+ 
+
+Inside Diameter of Outside Diameter of Inside Diameter of a . .
+Mark No. Fuel Tube Fuel Tube Air Tube Length Cooling-Air
+(in) (ins) (in.) (cm) Type
+
+IA 0.100 0.200 0.500 100 1
+IB 0.150 0.250 0.500 100 1
+nA 0.100 0.200 0.500 120 1
+18 0.200 0.300 0.600 120 1
+me 0.100 0.200 0.500 200 1
+Iv 0.200 0.300 0.600 200 1
+v 0.200 0.300 0.600 d 1
+vi 0.200 0.300 0.600 200 4
+vil 0.200 0.300 0.600 400 1
+vill 0.200 0.300 0.600 200 3
+IX 0.200 0.300 0.600 200 2
+
+ 
+
+The length given is the value of the quantity S, defined in section on “Solution of Heat Transfer Equations.’’ The
+length of the U is about one-half this value.
+
+bSee Fig. 1.
+“Mark 11l was inserted to the bottom of the active lattice.
+
+d
+
+Mark V was unsymmetrical; entering the reactor, the length was 60 cm; leaving, it was 140 cm.
+
+system. The air-annulus spacing was not usually
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+$S0-B-1064
+ORNL-LR-DWG-3784 .
+
+\ TTT ede varied but was kept as small as seemed
+- K . . Lo .
+Ty consistent with ready fabrication. Only a little
+« ——— MARK ¥ attention has been paid to positioning of the loop
+E c— — — ——— — » , : .
+s ark Da AND By Ts TIL AND IX relative to the thermal-neutron flux in q reactor,
+8 [—————— MARK 1a aND 1B since one such study showed that little experi-
+2 MARK I .
+Eom mental advantage accrued from a change in po-
+x sae . - .
+3 3 — sition, Table 1 summarizes the dimensions and
+u / LN yemeal MIDPLANE . . .
+z Ln oF LTR | other pertinent data on the 11 configurations
+
+2 . . . .
+s 7 | op OF ACTIVE examined in this report. The locations of the
+z / LATTICE - .
+2 1 1 various models with respect to the thermal-
+z Ce i
+z neutron flux distribution in position C-48 of the
+£ Lt 1 1 A
+© © 0720 20 60 80 100 120 140 160 180 260 220 240 LITR are shown in Fig. 2.
+DISTANCE (cm)
+
+Fig. 2. Location of Miniature Loop Models in
+Position C-48 of LITR Compared with Thermal-
+
+Neutron Flux Distribution.
+
+ 
+
+ 
+ 
+
+BASIS OF HEAT TRANSFER CALCULATIONS
+
+The calculation scheme detailed in the following
+section is based primarily on the principle of the
+conservation of energy in a system which is in
+a steady (time-independent) thermal state. How-
+ever, a number of simplifying assumptions are
+required, both to allow derivation of appropriate
+differential equations and to permit their useful
+solution.
+
+In the derivation of the equations, two important
+assumptions are made. First, all heat is assumed
+to be removed into the cooling air. Transfer of
+heat by radiation from the outer wall of the fuel
+tube and by conduction to external parts of the
+system is specifically neglected. A correction
+could be made for radiative heat transfer, but this
+does not seem to be worthwhile in view of the
+approximate nature of the entire calculation. The
+second important assumption is that all heat flows
+radially out of the fuel tube; this assumption is
+at least reasonable, since the thermal resistance
+radially through the fuel-tube wall is certainly
+small compared with the axial thermal resistance.
+Furthermore, the radial temperature gradient is
+expected to be far greater than the axial one.
+These two assumptions result in a somewhat
+exaggerated calculation of the fuel temperature
+profile and an overestimation of the amount of
+cooling air required.
+
+In the course of solving the heat transfer
+equations, it is necessary to calculate the heat
+transfer coefficients which govern the flow of heat
+between fluid and container wall. For this calcu-
+lation the customary empirical correlations de-
+veloped by engineers for heat exchanger design?-4
+have been employed. These relations apply only
+to cases where so-called established flow con-
+ditions prevail in the fluid. Away from the
+entrance to the cooling annulus, these conditions
+prevail in the cooling air, but the velocity distri-
+bution is changed because of the large rate of heat
+transfer. This will result in somewhat greater
+turbulence in the air stream and, perhaps, in larger
+
+ 
+
+25ee, for example, W. H. McAdams, Heat Trans-
+mission, 2d ed., McGraw-Hill, New York, 1942.
+
+3M. Jakob, Heat Transfer, Wiley, New York, 1949.
+
+4). G. Knudsen and D. L. Katz, **Fluid Dynamics and
+Heat Transfer,’’ Engr. Res. Inst. Bull. 37, Univ. of
+Mich,, Ann Arbor, 1954.
+
+S1bid., p 45 ff.
+
+The situation in the
+fuel is more complex, due to the presence of the
+It seems likely that
+this will couse a substantial increase in turbu-
+lence in the fuel and will probably increase the
+heat transfer coefficients between the fuel and
+the tube wall.
+
+It has also been assumed that the physical
+properties of air and of fuel could be regarded as
+being independent of temperature. A detailed
+justification of this assumption is presented in
+connection with the solution of the equations.
+In any case, it is felt that the importance of this
+assumption is minor, especially in view of the
+large uncertainty (+25%) in the fission power
+generated in the fuel,
+
+heat transfer coefficients.
+
+large volume heat source.
+
+To aid in interpreting the results of the calcu-
+lations which were made at ORNL, certain design
+criteria were adopted. Conditions which matched
+as closely as possible the behavior of an actual
+reactor would have been attractive; however, we
+thought it more important to design an experiment
+sufficiently flexible to allow a real analysis of
+the effects of several variables on the interaction
+of the fuel and the container. The important state
+variables are believed to be the flow velocity of
+the fuel, the intensity of the fission heat source,
+and the temperature range through which the fuel
+moves, These variables are not all independent.
+In particular, for a given fuel flow rate, the
+fission heat source largely determines the temper-
+ature range through which the fuel moves. The
+flow rate of the fuel is specified in terms of its
+Reynolds number, Ref (see Appendix A), the
+intensity of the fission heat source in terms of
+P,, the fission power generated per unit volume
+of fuel at the maximum thermaleneutron flux (in
+terms of the notation in the section entitled ‘‘Deri-
+vation of Heat Transfer Equations’’ P, = BP Bmax)
+and the temperature range experienced by the fuel
+in terms of AT, the difference between the
+maximum and minimum values of the fuel temper-
+ature, We have attempted to design a loop which
+would have the values
+
+nv
+
+Ref = 3000 ,
+
+1000 w/cc ,
+
+nv
+
+Po
+
+nv
+
+AT, 100°C ,
+
+ 
+and which meets the requirement that all fission specified conditions can indeed be met in a
+heat be removed in the loop proper so that no variety of ways, provided an ample supply of
+additional heating or cooling of the fuel would be cooling air is available.
+
+necessary in the pump. It was found that the
+
+ 
+
+DERIVATION OF HEAT TRANSFER EQUATIONS
+
+An element of a concentric tube heat exchanger external sink. The purpose is to find the steady-
+is shown in Fig. 3. Fission heat is generated in state temperature distribution in the system.
+the liquid fuel flowing in the central tube, is trans-
+ferred through the wall to the air flowing in the The symbols employed in the calculations are
+
+annular space r, <r < 74, and is removed to an defined below.
+
+Nomenclature
+
+Coordinates and Dimensions
+
+s = loop axial coordinate (the loop is defined by 0 s 5 g 5)
+r = loop radial coordinate
+ry = inside radius of inner (fuel) tube
+7, = outside radius of inner (fuel) tube
+rq = inside radius of outer (air) tube
+Physical Properties =
+Cpt = specific heat of fuel at constant pressure
+Cpa = specific heat of air at constant pressure -
+k; = thermal conductivity of fuel
+k, = thermal conductivity of air
+k, = thermal conductivity of Inconel, averaged over T, 2rz T,
+
+Ky = viscosity of fuel
+ft, = viscosity of air
+py = density of fuel
+Pp, = density of air
+
+Other Variables
+
+v, = linear velocity of fuel, averaged over < n
+. . . < <
+
+v, = linear velocity of air, averaged over T, = 7 1,
+
+— 2
+W; = fuel current, ariv.py
+
+—- a: 2 2 .
+W, = air current, 7 (rg rv, P,
+by = heat transfer coefficient at r = n
+by = heat transfer coefficient at r = 0) -
+T, = fuel temperature, averaged over r < ig
+
+ 
+
+ 
+Other Variables (continued)
+
+7} = fuel temperature at s = 0
+
+T_, = air temperature, averaged over r, < r < 73
+TO = air temperature at s = 0
+T, = temperature of fuel tube at r = 7,
+T, = temperature of fue! tube at 7 = ,
+
+y = heat removed radially from fuel per unit time and unit of s
+
+¢ = thermal-neutron flux
+
+3 = fission power generated per unit thermal flux and per unit fuel density
+Py = fission power generated per unit volume of fuel at the maximum thermal-neutron flux
+
+Abbreviations
+Ly =y1 Yat;
+a, = 1/Wpe,, = 2/mr ik (Pr]) (Ref)
+
+a, = 1/Wc
+
+3 apa = 2/m(ry + ry)k, (Pra)(Rea)
+
+By = mripB/Wie, = 2\Bpy/ky (PTI) (Ref)
+
+ 
+
+yi = V2mrby = Vaky(Nuf)
+Yo = (Inry/m)/2mk;
+Y3 = V/2mrghy = (rg
+ap = (@3 = XN
+a, = By/2y
+ay = (@4 + a,)/a,
+Dimensionless Heat Transfer Numbers
+(Rea) = 2(r, - 7) Pav ly
+
+(Ref) = 27, Pyvi/iy
+
+(Pra) = pac, /k,
+(Prf) = pyc, /k
+(Nua) = 2(ry ~ r,) by/k,
+{(Nuf) = 2r by /ky
+
+(St) = by/pre vy
+
+In the steady state, in unit time, a mass of fuel
+W, enters the fuel tube of the element at temper-
+ature T, bringing with it a quantity of heat
+We Tp relative to T= 0. The same mass of
+feel leaves at a temperature T, + (dT /ds) ds,
+
+- r)/ rok, (Nua)
+
+Reynolds number of air
+Reynolds number of fuel
+Prandtl number of air
+Prandtl number of fuel
+Nusselt number of air
+Nusselt number of fuel
+
+Stanton number of fuel
+
+taking with it a quantity of heat
+We AT, + (dT /ds) ds] .
+
+The fission heat generated in the element is
+Bp mr ds. A quantity of heat y ds flows radially
+
+ 
+UNCLASSIFIED
+SSD-A-1053
+ORNL-LR-DWG-3773
+
+dT,
+
+dT,
+Ttagg ds: Tar gg ds
+
+ 
+
+Fig. 3. Element of a Cylindrical Heat Exchanger.
+
+out of the fuel tube into the annulus. Conservation
+
+of energy then requires
+aT,
+Mm nriBeép, ~ Wey y———-r=0.
+
+A similar argument can be made for the cooling
+air in the annular element, which receives a
+quantity of heat y ds in the steady state in unit
+
+ 
+
+time. If the air flows in the same direction as the
+fuel, then
+
+dT,
+(20) Y= Wacpa 75—=0
+
+If the direction of air flow is opposite to that of
+the fuel, then
+
+dT
+
+a
+pa jg
+
+For the transfer of heat from the fuel to the tube
+wall at 7; and from the tube wall to air at Tor
+Newton's law of cooling may be written in the form
+
+@) ¥ = 20rh(T = T)) = 2ar,h,(T,~T,) .
+
+(2b) y + Wye =0 .
+
+ 
+
+The usual relation governing radial conduction of
+heat in a cylinder may be written for the temper-
+ature drop through the wall of the fuel tube as
+
+20k (T, ~ T,)
+4 =
+(4) y nye)
+
+If the abbreviations given above are introduced
+into Egs. 1 through 4, the following set of
+equations results:
+
+dT;
+(5) oC Bip ~ ay
+aT,
+(6a) —— = a,y (parallel flow of fuel and air) ,
+ds
+dT,
+(6b) — = ~agy (counter flow of fuel and air) ,
+ds
+7) T; -T, = YY
+(8) T, - T, = YY
+©) y= Ts = yay -
+
+The set of Eqs. 5 through 9, under appropriate
+boundary conditions, describes the dependence of
+the various temperatures on the physical properties
+of the fuel and of air, on the several state
+variables, and on the geometry of the system.
+
+The solution of these equations is difficult
+because of the dependence of the various coef-
+ficients on temperature. On the other hand, the.
+specific heats of ionic liquids (fused salts) are
+generally independent of temperature, Therefore
+it can be assumed that a, is constant, since
+conservation of mass requires that W, be constant,
+regardless of changes of temperature or of
+dimensions of the system. The quantity a, varies
+only as does the specific heat of air. This
+variation, about 6% from room temperature to
+800°C, may safely be neglected because of other
+approximations made in the calculations, par-
+ticularly if Cpa iS evaluated at the mean air
+temperature.
+
+The lack of sufficient data demands that %, be
+taken as constant. Since the variation of p, with
+temperature is small (about 3% per 100°C), it, too,
+may be taken as constant. If, in addition, changes
+of the dimensions of the system with temperature
+are neglected — an assumption justified by the
+very small coefficient of expansion of Inconel — the
+quantities y, and y, may also be assumed to be
+constant. (An average value for the thermal
+conductivity of Inconel has already been used;
+see Nomenclature above.) Also, y3 may be con-
+sidered to be constant, if bh, is evaluated at the
+mean air temperature. The variation of bh, with
+temperature at constant mass flow is not large,
+
+ 
+
+ 
+NUMERICAL DATA
+
+Heat is transferred by forced convection in a
+cylindrical exchanger in accordance with empirical
+relations of the type
+
+(Nu) = f[(Pr), (Re)]
+
+obtained by dimensional analysis of experimental
+data. The systems with which we are concerned
+here are characterized by large ratios of length to
+diameter, and, as was stated earlier, the physical
+properties of the fluids are evaluated at suitable
+mean temperatures and then treated as constants.
+For the case of laminar flow, use has been made
+of the formula derived by Seider and Tate:”
+
+2r, 1/3
+(15) (Nu) = 1.86 2 (Re) 2 (Re <2100)
+
+For fully turbulent flow, the expression proposed
+by Dittus and Boelter8 has been used:
+
+(16) (Nu) = 0.023 (Pr)2/5 (Re)4/5 (Re >10,000) .
+
+In the intermediate region of incompletely de-
+veloped turbulence (2100 < Re < 10,000), the
+suggestions of Sieder and Tate” have again been
+followed. The relation they recommend is presented
+in a graphical form which has been reproduced in
+various places.? Under the special assumption
+used here as to invariability of physical properties
+with temperature, this plot permits determination
+of (St) (Pr)2/3 for any (Re) and any length-to-
+diameter ratio. From this, (Nz) has been calcu-
+lated through the relation
+
+17) (Nu) = (51) (Pr) (Re)
+
+The physical-property data used in the analog
+calculations were obtained from various sources.
+The data for the physical properties of air are
+those derived from McAdams.!'® The physical
+properties of fluoride fuel 44 were obtained from
+Poppendiek!! of the Laboratory, The thermal
+
+conductivity of Inconel is from the data of
+Haythorne.'2 The data are summarized below.
+The thermal-neutron flux used is that measured
+in position C-48 of the LITR.!3 (In earlier calcu-
+lations, values slightly different from those
+shown below were used for Cpfr Bye and p,. The
+difference is only significant o the case of c pf .)
+
+Air (200°C)
+B, = 0.00025 g/cmesec
+c, = 1.05 joules/g-°C
+
+k= 0.0004 w/cm-°C
+
+Fuel 44 (815°C)
+bp = 0.072 g/cm-sec
+c,, = 1.00 joule/g-°C
+k, = 0.0225 w/em-°C
+py = 3.28 g/cm’
+B = 54.0 x 10~13 joule-cm?/g
+Inconel
+
+ky = 0.250 w/cm-°C
+
+ 
+
+TE. N. Sieder and G. E. Tote, Ind. Eng. Chem. 28,
+1429 (1936).
+
+8F. W. Dittus and L. M. K. Boelter, Univ. Calif.
+(Berkeley) Publs, Publs. Eng. 2, p 443 (1930).
+
+See, for example, ref. 3, Fig. 26-1, p 549.
+
+10g, for example, W. H. McAdams, Heat Trans-
+mission, 2d ed., McGraw-Hill, New York, 1942.
+
+My, F. Poppendiek, private communication to D. F.
+Weekes.
+
+12p_ A. Haythome, Iron Age 162, 89 (1948).
+
+By, 1. Robinson, Solid State Semiann, Prog. Rep.
+Feb. 28, 1954, ORNL-1677, p 27. See also Fig. 2 of
+this report.
+
+ 
+
+SELECTION OF
+
+Some typical results obtained for the Mark IA
+configuration are shown in Figs. 4 and 5. While
+none of the curves shown meet the desired
+boundary condition (Eq. 13), several conclusions
+can be drawn. If (Ref) is sufficiently high for
+some flow turbulence to be assured, AT, will be
+very small, say 10°C or less, In order to get
+
+BEST LOOP MODEL
+
+values of AT, near 100°C, it is necessary to use
+very small flow velocities, well within the laminar
+region. It is clear that insufficient fission heat is
+available, If the fuel tube is increased in size, a
+given value of (Ref) will be attained at lower
+linear velocity, allowing fuel to spend a greater
+time in the high-neutron-flux region of the loop.
+
+ 
+
+ 
+ 
+
+This change was made in the Mark 1B and Mark IIB
+models. In the latter case, the problem now was
+removal of the fission heat. Apparently, too
+little heat exchange capacity was available, This
+was remedied by increasing the length of the loop,
+forming the Mark IV configuration,
+
+A study was next made of the effects of the
+cooling-air pattern. Four loop models were used,
+one for each of the patterns shown in Fig. 1.
+The total quantity of air was held constant, giving
+lower values of (Rea) for the two cases with a
+divided cooling annulus. Other things being equal,
+the divided annulus would be preferred, since
+the air pressure drop for a given total air flow is
+much less than for the single-annulus models.
+Some results of the calculations are shown in
+Fig. 6. Due to an error in computing f3,, the
+curves do not correspond to irradiation in position
+C-48 of the LITR but to a flux of identical shape
+and doubled magnitude. The Mark VIII model
+appeared to be most suitable, since, in addition to
+the lower air pressure drop, it had the highest
+value of AT. The final air temperature would
+
+SSD-A-tOT1
+ORNL- LR-DWG-379¢
+
+860
+840
+820
+
+800
+
+Rea = 10,000
+
+FUEL COMPOSITION No.48 IN C-48 OF THE LITR
+
+7;, MIXED-MEAN TEMPERATURE OF FUEL (°C)
+
+ 
+
+0 20 40 60 80 100
+5, DISTANCE FROM INLET (cm)
+
+Fig. 4. Effect of Fuel Flow Rate on Fuel
+Temperature Pattern in Mark 1A Miniature Loop.
+
+be lower for this model, also. On this basis, the
+Mark VIII configuration was adopted for the de-
+tailed study discussed in the next section.
+
+SSD-4-1069
+
+RNL- LR-DWG-37
+840 ORNL- LR-DWG-3789
+
+820
+
+< 10,000
+
+800 = 20,000
+
+Reg
+
+= 30 000
+
+780 €o
+40 0
++ 000
+
+Ref = 3000
+
+7s,» MIXED-MEAN TEMPERATURE (°C)
+
+760
+FUEL COMPOSITION No.44 IN C-48 OF THE LITR
+
+ 
+
+4
+7 ° 20 40 60 80 100
+
+5, DISTANCE FROM INLET (cm)
+
+Fig. 5. Effect of Air Flow Rate on Fuel Temper-
+ature Pattern in Mark 1A Miniature Loop.
+
+SSD-A-
+ORNL -LR-OWG-3793
+
+ 
+
+900 T 7 T T
+Rea =10,000 FOR MARK 1 AND VII
+880 — Rea = 20,000 FOR MARK IV AND IX
+
+Ref » 3000 / p=
+yi
+
+860 / pd
+=a
+
+820 i / MARK 47
+Ym 103
+
+/ 92
+
+ 
+
+ 
+
+5
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+T;, MIXED-MEAN TEMPERATURE OF FUEL (°C)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+800 Ls x
+Ne 7 i 91
+edd / u 85
+780 NG 4
+x
+760 a
+0 25 50 75 100 125 150 175 200
+5, DISTANCE FROM INLET {cm)
+Fig. 6. Effect of Cooling-Air Pattern on
+
+Miniature Loop.
+
+ 
+RESULTS OF DESIGN CALCULATIONS FOR THE MARK VIII LOOP
+
+The Mark VIII loop model is shown in Fig. 7.
+The »###ulations are discussed in detail in
+Appendix B. The results are summarized by the
+plots of 6, and of y vs s given in Figs. 20 to 27
+(see Appendix B). The quantity 6, may be defined
+as T, = T,%. The numerical data are given above
+in ‘““Number Data’’ and a plot of ¢ vs s is shown
+in Fig. 17 (see Appendix B).
+
+Several qualitative remarks can first be made.
+The positions of maximum and minimum fuel
+temperature are quite insensitive to the velocities
+of the two fluids. This allows placement of control
+thermocouples to be made with some precision.
+The value of AT; decreases with increasing (Ref),
+but not indefinitely. The principal resistance to
+flow of heat is at the interface between air and
+fuel tube. At sufficiently high fuel velocities,
+further increases have only a small effect on the
+quantity of heat transferred from the fuel,
+
+From the results in Appendix B, those pairs of
+fluid Reynolds numbers must be selected which
+correspond to ‘‘realistic’’ conditions, namely,
+1. initial air temperature, TY, near room temper-
+
+ature,
+
+2. maximum fuel temperature near 815°C.
+
+From the data of Figs. 24 to 27, the values of
+y{Okoremelected, from which T¢ —- TO is calculated
+by Eq. 10. The values of T9 - TO are plotted vs
+(Rea) for several values of (ref) in Fig. 8, The
+conditions above allow calculations of the
+“‘realistic’’ values of this quantity from
+
+(18) (TP - TD), = 785 ~ (T, - T)) .
+
+real max
+
+The values of (T, ~ T?) _ were obtained from
+the curves of Figs. 20to 23. The resulting set of
+“realistic’’ conditions is indicated by the dashed
+line in Fig. 8.
+
+It is a simple matter to extend these calcu-
+lations to a fuel wattage other than the one used
+here, as long as the shape of the thermal-neutron
+flux is not changed. In fact, if the fuel wattage,
+
+Py, is replaced by a new value, nP,, the curves
+
+10
+
+of Appendix B still apply, but with the y and 6,
+scales simply multiplied by a factor n. Extension
+to a five-times-greater fission wattage is made in
+Fig. 8 (this corresponds roughly to the use of
+fuel composition 44 in position A-38 of the MTR).
+The results of calculations for three different
+wattages are shown in Table 2.
+
+UNCLASSIFIED
+SSD-B-988
+ORNL-LR-DWG-2252
+
+FUEL OUTLET FUEL INLET
+
+ 
+
+ 
+
+ 
+
+5=0
+AIR INLET = ~ = AIR INLET
+I —fl ss — |
+Agar rn
+ii jz
+ih
+FUEL LOOP
+AIR COOLING |
+ANNULUS
+
+ 
+
+ 
+
+ 
+
+ 
+
+[
+nj
+Wn
+S—
+
+AIR OUTLET
+
+Fig. 7. Mark VIII Model of Miniature Loop.
+
+ 
+
+ 
+ 
+
+SECRET
+$SD-B-1067
+
+RNL -LR-DWG-
+
+10,000 ORNL -LR-DWG-3787
+
+8000
+
+6000
+5000
+4000
+
+3000
+2000 THESE CURVES FOR
+
+2700 w/cc
+1500
+
+LOCI OF REALISTIC
+
+Ls
+1 800
+
+=~
+600
+500
+400
+
+300
+
+200
+150 540 w/cc
+
+2
+
+ 
+
+100
+10 152 3 45 7 10° 152 3 45 7 10°
+Rea
+
+Fig. 8. Estimation of Cooling-Air Requirements
+for Mark Vill Configuration of Miniature In-Pile
+Loop.
+
+TABLE 2. CALCULATED THERMAL BEHAVIOR
+OF THE MARK Vill MINIATURE LOOP
+
+ 
+
+Effect of Yolume Heat Source
+
+Po w/cc 540 1,540 2,700
+(Ref) 3,000 3,000 3,000
+(Rea) 16,500 70,000 167,000
+AT, °c 49 134 245
+Effect of Fuel Flow Rate
+(Py = 540 w/cc)
+(Ref) 1,500 3,000 6,000 10,000
+(Rea) 19,000 16,500 15,500 15,500
+AT, °c 102 49 25 25
+(Pg = 2700 w/cc)
+(Ref) 1,500 3,000 6,000 10,000
+(Rea) 368,000 167,000 118,000 118,000
+AT, °c 510 245 125 125
+
+ 
+
+ 
+
+MISCELLANEOUS CALCULATIONS FOR THE MARK Viil LOOP
+
+A decision to select one or another set of
+operating conditions for the miniature loop depends
+in part on a number of things other than the heat
+transfer calculations discussed in this report.
+The necessary additional calculations are summa-
+rized in this section.
+
+Air Pressure Drop, Velocity,
+Temperature Rise, — The pressure drop in the
+air-cooling annulus was calculated by the con-
+ventional expression
+
+Yolume, and
+
+2RT u?(Rea)? 23 is
+9 p? ~p3 ns |
+(ry - r,)? by 4(ry =)
+where
+p, = pressure at air inlet,
+p, = pressure at air outlet,
+R = gas constant,
+S = length of loop,
+{ = friction factor,
+
+ 
+
+and the other symbols are defined in ‘*Derivation
+of Heat Transfer Equations.’ The friction factor
+
+was calculated from the relation of Koo: 14:15
+0.125
+(20) { = 0.00140 + ——— .
+(Re)0-32
+
+The outlet pressure, por was assumed to be 1 atm.
+The results of the calculation for the Mark VIII
+loop are shown in Fig. 9.
+
+The volume of air required to attain various
+Reynolds numbers in the Mark Vil loop is shown
+in Fig. 10. The linear velocity of the air was
+calculated, assuming the pressyre to be the
+average of the inlet and outlet values. The
+results are shown in Fig. 11. The scale of Mach
+
+ 
+
+We c. Koo, Thesis, MIT, 1932 (see ref. 2, p 119).
+
+15The relations proposed by Davis and others specifi-
+cally for annuli differ somewhat from the one used here.
+No appreciable error in the calculated pressure drop
+results from this source (see ref, 4, p 134 tf).
+
+11
+
+ 
+numbers was calculated'® by using the velocity
+of sound in air at 1 atm pressure at 200°C,
+1500 ft/sec. It will be noted that the velocity
+of air is always subsonic in the Mark VIi{ loop.
+
+The rise in temperature of the cooling air may be
+calculated from Eq. 10. The maximum air tempera-
+ture is given by
+
+S S
+
+T (max) = T; 7" 5 .
+There are two values of this quantity, since the
+two branches of the cooling-air circuit experience
+different conditions. The calculated results for
+
+(21)
+
+Yel andbook of Chemistry and Physics, Chemical
+Rubber Publishing Co., Cleveland, Ohio, p 2257,
+27th ed.
+
+UNCLASSIFIED
+SSD-A-1058
+-LR- 3778
+
+PRESSURE DROP (psi}
+
+ 
+
+6 810° 2 4
+Rea
+
+10 2 4
+
+Fig. 9. Cooling-Air Pressure Drop for Mark Vili
+Configuration of Miniature In-Pile Loop.
+
+12
+
+UNCLASSIFIED
+SSD-A-t059
+-LR- 779
+
+ 
+
+VOLUME ( std. cfm}
+
+6 8 10° 2 4 6 8 10°
+
+Rea
+
+100 2 4
+
+Fig. 10. Air Volume Required for Mark VIII
+Miniature Loop.
+
+UNCLASSIFIED
+SSD-A-105T7
+ORNL -LR-DWG-3777
+
+ 
+
+2 TT 1 T°] TT 1
+
+AIR VELOCITY (ft/sec)
+MACH No.
+
+ 
+
+ 
+
+ 
+
+1? LL] | 11 [|
+
+6 8 10 2 4 6 810
+Rea
+
+ 
+
+Fig. 11. Air Velocity for Mark VIII Configuration
+of Miniature Loop.
+
+ 
+
+ 
+the highggimoir temperature for each of the cases
+of Table 2 are shown in Table 3.
+
+Fuel Pressure Drop, Velocity, and Yolume, — The
+pressure drop in the fuel tube was calculated from
+the expression
+
+u¥(Ref)? Lf
+Ap = — —nr—,
+4p,
+
+where L_ is the effective length of the loop; the
+other symbols have been defined before, The
+effective length was calculated by adding to the
+actual length (205 cm) an amount, 150r,, to account
+for the bend at the tip of the loop. The friction
+factor was taken from McAdams.!? The results
+are shown in Fig. 12. The volume flow rate of
+fuel is shown in Fig. 13. The linear velocity is
+shown in Fig. 14.
+
+Thermal-Neutron Flux Depression. — The de-
+pression of the thermal-neutron flux has been
+
+(22)
+
+ 
+
+17y, H. McAdams, Heat Transmission, p 118, 2d ed.,
+McGraw-Hill, New York, 1942.
+
+18y pg. Lewis, A Semi-Empirical Method of Esti-
+mating Flux Depression, MTRL -54-27, March 11, 1954.
+
+TABLE 3. CALCULATED MAXIMUM AIR
+TEMPERATURE IN MARK VIII LOOP
+
+ 
+
+Py = 540 w/cc
+
+Maximum Air Temperature
+
+(Ref) (Rea) 0)
+1,500 19,000 450
+3,000 16,500 500
+6,000 15,500 540
+10,000 15,500 550
+Pg = 2700 w/cc
+1,500 368,000 30
+3,000 167,000 200
+6,000 118,000 290
+10,000 118,000 300
+(Ref) = 3000
+Maximum Air Temperature
+
+Py (w/cc) (Rea) CC)
+540 16,500 500
+1,540 70,000 360
+2,700 167,000 200
+
+ 
+
+ 
+
+estimated by using the treatment of Lewis,'®
+This is based on a correlation of some experi-
+mental data obtained by various workers at the
+MTR. A ‘“‘grayness’’ factor of 0.73 was found
+which is due to fuel alone. The Inconel walls of
+the fuel tube and of the cooling annulus contribute
+UNCLASSIFIED
+
+S50-B-1056
+
+ORNL -LR-DWG-3776
+100
+
+LOOP + CONNECTING
+
+PROPER
+10
+
+Ap, (psi)
+
+0.1
+
+ 
+
+Ref
+
+Fig. 12. Fuel Pressure Drop in Mark VIII Loop.
+
+UNCLASSIFIED
+
+SEB ose 5
+ORNL -LR-DWG-377
+100
+
+v, VOLUMETRIC FLOW ( cc/sec)
+
+ 
+
+10° w0*
+
+Ref
+
+Fig. 13. Volumetric Flow of Fuel in Mark Vill
+Loop.
+
+13
+
+ 
+SSD-B-1068
+A a’ 250 DRNL-LR-DWG-3788
+
+ 
+
+     
+ 
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+100 ORNL -LR-DWG-3774 |
+—]180
+160
+200 — 140
+= 120g
+> wu
+: = 100 3
+z 10 8150 — g
+8 s 80 &
+J > PRESENT PUMP =
+w a — z
+> <Q a
+> > — 60
+a 3 — |
+=
+S 1001— — a0
+PROPOSED 30-cc PUMP —
+— 20
+ANP LOOP 10-cc PUMP —
+/ 0
+1 50— / VOLUME OF CONNECTING TUBES
+10° 10* 10°
+Ref
+VOLUME OF LOOP
+Fig. 14. Linear Velocity of Fuel in Mark Vili o |
+Loop. 0 5 10 15
+DILUTION FACTOR
+another factor of 0.95. The over-all grayness Fig. 15. Dilution Factor in Mark VIII Loop.
+factor is estimated to be about 0.67; that is,
+two-thirds of the thermal flux is available to the Volume of loop proper, em 41.6
+sample. ] ve ] Volume of connecting tubes, cm3 14.4
+Dilution Factor,” — A quantity known as the 3
+“dilution factor’ is of some interest in studying Volume of pump, em 76.2
+in-pile corrosion. This quantity is defined as the Total 132.2
+ratio of the maximum value of the fission power p
+generated in unit volume of fuel to the average ° em=3 0.08
+valve, In a loop of the type being considered, s
+this definition may be stated as f
+y ds
+P (nr3S + V,) 0
+Jo 0" 1 p
+(23) dilution factor = — ©, Dilution factor 10.6
+S
+I y ds The effect of changing the pump volume is
+indicated in Fig. 15,
+where V is the volume of the pump and of any Total Power, — The total fission power generated
+connecting tubes. The present situation in regard in the loop is calculated from Eq. 12. The results
+to the dilution factor is indicated as follows: are shown in Fig. 16.
+
+4
+
+ 
+
+ 
+ 
+
+TOTAL POWER (kw)
+
+50
+
+45
+
+40
+
+35
+
+Od
+oO
+
+nN
+m
+
+nN
+oO
+
+15
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+SSD-B-1065
+ORNL -LR-DWG-3785
+( /
+/
+/ i
+/
+0 0.5 1.0 1.5 2.0 2.5 3.0 35
+
+A MAXIMUM SPECIFIC POWER GENERATION (kw/cc)
+
+Fig. 16. Total Power of Mark VIII Loop.
+
+15
+
+ 
+Seaann
+
+Appendix A
+
+IMPORTANCE OF REYNOLDS NUMBER IN MASS TRANSFER
+
+The frequent argument on the relative importance
+of linear velocity and Reynolds number in mass
+transfer between the container and fuel would seem
+to be settled by appeal to chemical engineering
+experience.!? It is found that excellent results
+are obtained in correlating mass transfer coef-
+ficients for fluids flowing in pipes by means of
+relations of the type
+
+2&7
+
+ 
+
+(24) = f[(Sef), (Ref)] ,
+
+f
+where &’ is the mass transfer coefficient, D, is
+the diffusion coefficient of the transferred species
+in the fuel phase, and (Scf) is the Schmidt number
+for the fuel:
+
+ 
+
+195 ee, for example, G. G. Brown, et al, Unit Oper-
+ations, p 517 #f, Wiley, New York, 1950.
+
+ky
+(25) (Sef) = —.
+
+PP
+The similarity of Eq. 24 to the analogous heat
+transfer equation is evident, the Schmidt number
+replacing the Prandtl number, and the nameless
+group on the left side replacing the Nusselt
+number. Even more striking is the fact that
+for many cases the Dittus-Boelter equation (16)
+applies to mass transfer with the same coefficients
+and exponents as those used in heat transfer, It
+is quite clear, therefore, that the Reynolds number
+is fully as significant in mass transfer as in heat
+transfer, and is definitely the relevant fuel-flow
+variable. Furthermore, an additional statement of
+the surface-to-volume ratio is unnecessary, since
+this information is also given in the Reynolds
+number,
+
+ 
+
+Appendix B
+
+ANALOG SIMULATION IN AN IN-PILE LOOP-LIQUID.SALTS FUEL STUDY
+
+E. R. Mann
+
+F. P. Green
+
+R. S. Stone
+
+Reactor Controls Department, Instrumentation and Controis Division
+
+An analog simulation of an in-pile loop experi-
+ment for ART fluoride fuel was performed by
+means of a portion of the Reactor Controls Com-
+puter to determine the optimum fuel and coolant
+flow rates and the temperature variation of the
+fuel as it traverses the loop for each of 16 flow
+combinations. Constant coefficients for the de-
+scriptive equations and a linear plot of the forcing
+function, flux, Fig. 17, were provided by D. F,
+Weekes. This simulation has provided a series
+of 16 curves of fuel temperature vs instantaneous
+position of the fuel within the 205-cm ‘‘active’’
+portion of the loop and 16 corresponding curves
+displaying the radial heat transfer vs fuel position.
+
+The specifications given state that the proposed
+fuel loop will conform to the following equations
+(the quantities 6, and 6, may be defined as
+T, - TY and T - TY, respectively; all other
+symbols are defined in the nomenclature list in
+
+16
+
+“Derivation of Heat Transfer Equations’’):
+
+ 
+
+ 
+
+ 
+
+(26) ~~ Pig may ; 0<s<205¢em ,
+dy N
+(27) Is + azy = a,o
+and > 0<s<102.5¢em ,
+do,
+8 —
+(28) Is aqzy J
+dy MN
+(29) = ay = a,
+and > 102.5 <s <205em
+0) do,
+= -Q
+ds 3 y,
+
+The analog was established on this basis.
+
+ 
+ 
+
+ 
+
+ee od
+(x10'%) SSD-A-1066
+3.5 ORNL -LR-DWG-3786
+3.0
+
+ 
+
+nN
+wm
+[me
+
+ 
+
+ 
+
+ro
+©
+ee
+
+ 
+
+ 
+
+é, NEUTRON FLUX (neutrons: cm 2+ sec?)
+oO
+meen
+
+oO
+————
+oy
+
+ 
+
+ 
+
+Jal]
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0
+o
+o
+0 T
+wn Oo n © oO uv © o wn o
+© © 0 mn o-oo ©~ Irs) oN
+Q - - =
+
+5, DISTANCE FROM INLET (cm)
+
+Fig. 17. Neutron Flux Distribution.
+
+The differential equations for electrical po-
+tentials in the circuit, Fig. 18, are analogous to
+
+Eqs. 26 through 30, because by Kirchhoff's law
+
+for currents,
+
+E dE, E,
+
+1
+— CC, —— +—=0,
+R, R, dt R,
+
+E
+
+at node “A” ,
+
+ 
+
+E, = GE, , at node ““B'' ,
+
+E E, dE, os
+—_—-—- , —— = 0, atnode “C .
+R, R, dt
+
+Combination of these equations gives
+aE, 1 Gy 1
+
+30) a + _— E, = RC. E ’
+
+t RC RG 1C
+
+UNCLASSIFIED
+SSD-A-1060
+ORNL-LR-DWG-3780
+
+ 
+
+©
+nN
+
+ 
+
+~~
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 18.
+of the In-Pile Loop.
+
+Block Diagram of Electronic Analog
+
+ 
+
+ 
+
+ 
+
+ 
+
+dE G
+1 2 1 1
+(32) — - - E,= — E ,
+dt R,C, R,C, RC,
+dE, 1 1
+(33) —_ = E - E, ,
+dt R/C, R.C,
+
+where G. and G., are the values of G appropriate
+to the two regions of the loop.
+
+If in the loop equations the substitution s = t
+is made and the function ¢(s) is suitably trans-
+formed to ¢(t), the loop equations and electrical
+network equations are analogous. This implies
+that, in the process of solving the problem, the
+quantity ¢(s) is introduced in accordance with
+the condition s = v-t, where v is a velocity,
+selected here as 1 cm/sec. The various constants
+were transformed accordingly, since for the elec-
+trical analog, time is the independent variable,
+
+Figure 19 is a block diagram of the system
+simulator. Operational amplifiers Nos. 1 and 2
+generate the electrical equivalents of the radial
+heat transfer, y, and the fuel temperature, 0
+The remaining five amplifiers are required to
+perform special functions relating to simulator
+operation, such as signal polarity inversion, iso-
+lation, and time-constant modification.
+
+The reactor flux function required in this simu-
+lation could not be generated readily by means of
+
+17
+
+ 
+the standard electronic components on hand. It
+was expedient, therefore, to employ a hitherto unre-
+ported scheme to generate the flux function shown
+in Fig. 17, This system makes use of a Brown
+recorder with an auxiliary 10,000-ohm, ten-turn,
+Helipot ‘‘slide-wire,’’ the rotor being coupled to
+the recording pen drive. The predrawn, calibrated
+flux distribution curve was placed on the strip
+chart, and a dry pen was inserted in place of the
+normal ink-filled pen. During a run the recorder
+pen was made to follow the curve by manually
+changing the recorder input to amplifier No. 5
+(Fig. 19) by means of a 50,000 ohm Helipot. The
+slide-wire output represents the flux ‘“’seen’’ by
+the fuel as it traverses the loop. Since the chart
+speed is 1 cm/sec, the fuel position in centimeters
+measured from the input corresponds to time in
+seconds. This arrangement provides a reasonable
+time scale so that the function generator operator
+can closely follow the calibrated flux curve.
+
+In the interest of convenience, the free pa-
+rameters of the system were fixed as follows:
+
+  
+
+ 
+
+ 
+
+ 
+
+10 uf ,
+
+rman | = Cy
+
+R, = R 7.5 megohms ,
+
+3
+750,000 ohms .
+
+~
+it
+
+This requires that
+
+(34) c, =1- 75a, = Aq ’
+(35) Gy, =1+75%;=(1+4),
+(36) a = 7.5a, ,
+
+10°
+
+Bi
+
+10%
+(38) Rg = —.
+
+%y
+
+The values G, and G, are set by means of
+previously calibrated 25,500-0hm potentiometers.
+The use of two operational amplifiers, for example,
+Nos. 1 and 3 in Fig. 18, to provide accurately
+
+UNCLASSIFIED
+SSD-8-1070
+ORNL- LR-DWG-3790
+
+ 
+
+ 
+
+ 
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+MANUAL
+-50v 2M
+/
+/ AM
+50%
+1 RECORDER
+IM
++50v
+-50v BIAS
+|
+PE voit Box | BN
+. +25v SET 6,
+Swi 12
+25k
+25k
+25K
+(1+ 4) iM
+25k tM TO
+<G—+ RN AN [F410 x
+
+Fig. 19. Block Diagram
+
+18
+
+"RECORDER
+IM
+-50v BIAS
+
+for In-Pile Loop Simulation.
+
+ 
+
+ 
+ 
+
+calibrated time constants over wide ranges has
+not been previously reported, although it has been
+conventional for some time with the ORNL simu-
+lator. The method is described in Appendix C.
+The values of a; and a, are such that G, varies
+between 0 and 1, and G_ varies between 1 and 2.
+The quantity a is set to 7.52, and may vary
+between 0 and 1 (fraction of full-scale). The
+addition of potentiometer P makes it possible to
+vary the effective value of R, from 750,000 ohms
+to infinity with a 25,000-ohm potentiometer.
+
+Each of the resistances R, and R, have four
+different values and are put into the circuit in
+the form of lumped constants, chosen by a four-
+position switch, Pertinent values, both given and
+calculated, are presented in Table 4, The quantity
+20,/a,a, is a correction coefficient needed in
+connection with boundary conditions.
+
+The simulation of y required the breaking up of
+each run into two equal parts. An exponentially
+decaying function describes y in the first half,
+the time constant in each case set by potenti-
+ometer A, in amplifier No. 3, whose gain is less
+than 1. An exponentially increasing function
+describes y in the second half, the time constant
+in each case set by potentiometer (1 + A)) in
+amplifier No. 4, whose gain is greater than 1 and
+less than 2. Because of a small discontinuity in
+y at the mid-point, the simulation must be stopped
+and a new initial condition for y set on potenti-
+ometer Y, This control is necessitated by the
+boundary conditions imposed, which are:
+
+1. coolant to enter at each end at the same
+temperature 0,4 = 0,505) and leave at the
+center,
+
+2. fuel to enter at one end and leave at the other,
+with no net change in temperature ©o = 6/205)
+
+Since there are two distinct and separate coolant
+streams, entering at either end and merging to exit
+at the mid-point of the loop, there is a discon-
+tinvity in 6_ (and hence in y, since 6; is a
+continuous function) at s = 102.5 ecm. This
+requires a correction at mid-point, which may be
+calculated as follows. Let yo, . and yi, 5 be
+
+the values of y just before and just after the
+discontinuity, respectively, From the differential
+equations, it can be shown by integration that
+
+a
+a, +
+
+ 
+
+ 
+
+3
+Yv02.5 = Yo * aa, 9102.5
+a,B, 102.5
+- f éds ,
+a,a, 0
+, @y = G3 )
+Yie2.s = Yo tT 1102.5
+a
+3B 205
+- f ds .
+2%, Jh02.5
+
+Since the flux distribution is symmetrical about
+s = 102.5 cm, it follows that
+
+20,
+
+ 
+
+(39) Yio2.5 = Y102.5 ~ 55 Yro2is
+192
+
+The volt-box input to the 6, generator was used
+only at the initiation of the second half of the
+run in order to start the fuel temperature at the
+final value which is attained during the first half.
+Amplifier No. 5 was used for isolation, and ampli-
+fiers numbered 6 and 7 were used to invert the y
+and 6, signals and to transpose these outputs to
+the center of the recorder scales.
+
+At the start of a run, switches 2 and 3 were
+closed. This set 610 = 0 and allowed y, to be
+set at some tentative value by means of potenti-
+ometer Y. Switches 2 and 3 were then opened
+and the run started. At mid-point the calculation
+was stopped, and switches 3 and 4 were closed.
+Potentiometers T and Y were then used to set
+
+6/102.5 = 0/102.5+ and
+2a,
+
+Yi02.5 = Yi02.5 aa, 102.5 ¢
+
+19
+
+ 
+ 
+
+0c
+
+TABLE 4. NUMERICAL DATA USED IN ANALOG SIMULATION OF IN-PILE LOOP
+
+ 
+
+ 
+
+ 
+
+G G a 2a
+1 2 R R 3
+Case Ref Rea a a a 8 a a a 54 5.3 -
+3 2 1 1 1 2 3
+(1-75) (+75, (7.52) 0 YB, (10%)/a, aa,
+1 1,500 10,000 0.0109 0.0379 0.0080 2.4 0.221 0.190 1.660 0.278 0.860
+2 20,000 0.0092 0.0589 0.0060 0.85 14.4 0.0232 0.110 0.310 1.450 0.442 118K 4.35M 0.665
+3 30,000 0.0089 0.0744 0.0049 11.4 0.079 0.332 1.368 0.558 0.603
+4 60,000 0.0075 0.1060 0.00175 8.0 0.037 0.438 1.131 0.795 0.402
+5 3,000 10,000 0.0114 0.0208 0.0102 20.4 0.221 0.145 1.765 0.156 1.86
+6 20,000 0.0098 0.0342 0.0079 12.4 0.110 0.265 1.592 0.256 1.53
+0.42 0.0116 .
+7 30,000 0.0097 0.0451 0.0071 9.4 0.079 0.272 1.532 0.338 238K 8.61 1.45
+8 60,000 0.0082 0.0707 0.0042 6.0 0.037 0.385 1.315 0.530 1.06
+9 6,000 10,000 0.0127 0.0108 0.0110 19.6 0.221 0.048 1.825 0.081 3.88
+. J . . . . . . 3.28
+10 20,000 0.0100 0.0183 0.0090 0.212 11.6 0.0058 0.110 0.250 1.675 0.137 471K “17.2M
+11 30,000 0.0099 0.0246 0.0085 8.6 0.079 0.258 1.638 0.184 3.16
+12 60,000 0.0083 0.0408 0.0060 5.2 0.037 0.378 1.450 0.306 2.47
+13 10,000 10,000 0.0115 0.0065 0.0112 19.4 0.221 0.138 1.840 0.049 6.50
+14 20,000 0.0099 0.0111 0.0094 0.127 11.4 0.0035 0.110 0.258 1.705 0.083 786K 28 4M 5.50
+15 30,000 0.0098 0.0151 0.009 8.4 0.079 0.265 1.682 0.113 5.45
+16 60,000 0.0080 0.0258 0.0068 5.0 0.037 0.400 1.510 0.194 4.11
+
+ 
+
+ 
+ 
+
+Once this adjustment was made, switches 3 and 4
+were Srened, switch 1 was thrown from t, to ¢,,
+and the second half of the calculation was run.
+This procedure was continued for successive runs
+until a value of y, was found such that 01205 = 00
+
+and ¥,05 = ¥o-
+
+The results of this procedure are illustrated in
+the od curves (Figs. 20-27) and in Table 5,
+which lists the initial heat transfer and the
+maximum temperature excursion for each case,
+along with an estimated statement of accuracy
+for these two parameters.
+
+TABLE 5. RESULTS OF THE ANALOG CALCULATIONS
+
+ 
+
+ 
+
+R R Yo A; Curve Number*
+ef ea (w/em + 3) °c £1 uvrve Number
+1,500 10,000 54.5 101.7 1
+20,000 49.0 99.5 2
+30,000 47.0 98.4 3
+60,000 43.0 91.5 4
+3,000 10,000 55.0 51.5 5
+20,000 52.0 48.3 6
+30,000 50.8 48.3 7
+60,000 47.0 46.7 8
+6,000 10,000 57.0 25.5 9
+20,000 53.0 25.5 10
+30,000 52.5 25.1 1
+60,000 49.0 24.3 12
+10,000 10,000 58.0 26.0 13
+20,000 53.5 24.9 14
+30,000 54.0 23.9 15
+60,000 51.0 23.8 16
+
+ 
+
+*See Figs. 20-27,
+
+21
+
+ 
+Su — -1063
+SSD-B-1072 SSD-B
+
+ORNL-LR-DWG-3783
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+55 ORM LR-DWG -3792 55
+~~
+50 A+
+CURVE Ref [
+No.
+as}
+1 1500
+5 3000
+40T 9 6000
+13 10,000
+35 |
+30
+ON
+25 / 8
+o / 0
+15 13 ©
+TR \ :
+10 N &
+N >
+=
+/ NE
+5 / N w
+N $
+w
+—
+0 a
+w
+>
+w
+«
+
+——
+/
+oN
+
+ 
+
+8,, FUEL TEMPERATURE (°C)
+
+:
+&
+N
+
+[———
+
+ 
+
+t 1
+n -
+oO wm
+al
+-
+I
+Te
+=
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+\ Net
+-25
+Ref CURVE
+1,500 2
+-30 3,000 6 m———
+/ 6,000 0}
+-35 \ / 10,000 14
+-40
+20 40 60 BO 1025 125 145 165 185 205
+-45 \ / s, DISTANCE FROM INLET (cm)
+i
+-50
+ny . . .
+00QRQ 00000 MN VVVVLLY BY BB Fig. 21. Fuel Temperature Variation for
+TURP TLor®00 UBF ROLEE8
+5, DISTANCE FROM INLET (cm) Rea = 20,000.
+
+Fig. 20, Fuel Temperature Variation for
+Rea = 10,000.
+
+22
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+th
+am
+$SD-B-1075
+55 ORNL -LR -DWG -3795
+[3
+50
+CURVE Ref
+sll No
+3 1500 \
+7 3,000 |
+40 1 6,000
+15 10,000 |
+35 \
+30 \ 71
+7 \
+25 7
+20 /
+ed \
+~
+tS / i
+10 / Vz 19 Nh \
+/ | |N
+g / / \ \
+ht 5
+w N
+2 NN
+g 0
+&
+2 Nr
+gS Tr
+- i"
+5 10 AY /
+“ ~~
+=-1
+-15
+soll LIN
+\ 7 /
+\| | NA
+-25 |
+WL
+-35 \
+-40 \ /
+3
+-a5
+-50 =
+0889332838 2882552888
+5, DISTANCE FROM INLET (cm)
+Fig. 22. Fuel Temperature Variation for
+Rea = 30,000.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+wail
+Nv
+ORNL-LR-DWG-3794
+50
+/FN
+4s \
+20 \
+CURVE Ref
+No.
+; BT a 1500
+8 3,000
+30 12 6000
+6 10000 \
+25
+B
+20 | N
+NI A
+{
+1
+0 J SAH
+g | N
+os
+[<4
+2
+g [o}
+w
+a
+5
+os
+-
+2 NO 12,16 _/
+ow Nt
+>
+-15 \ /
+“20 S /
+||
+-25
+-30 \
+-35 f
+-40 .
+-4s *
+°°r99830838208288288]
+5, DISTANCE FROM INLET (cm)
+Fig. 23, Fuel Temperature Variation for
+Rea = 60,000.
+
+23
+
+ 
+Sunny de
+$SD-A-1076 SSD-A-1062
+it ORNL -LR-DWG-3796 ORNL-LR-DWG-3782
+
+   
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+55 60
+TTT
+50 CURVE Reo 7 55
+A\ — — {10,000 /
+~as PY —-— 2 20,000 fr 50
+ETN -———= 3 30,000 ~ BWI 30,000 7 —m——e
+< \ \ ’ / ~~] £
+z
+i NN AY «
+$ 25 WN A G40
+z C7 :
+C 4 Z 35
+2 / A -
+S25 4 Y 30
+NN = 7 -
+N/ ~
+20 9 25
+'s 20
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0 20 40 60 80 1025 125 145 165 185 205
+
+5, DISTANCE FROM INLET (cm) 15
+0 20 40 60 80 1025 125 145 165 185 205
+
+Fig. 24. Heat Transfer Variation for Ref = 1500. Si DISTANCE FROM INLET (cm)
+
+Fig. 25. Heat Transfer Variation for Ref = 3000.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+=.
+SSD-A-1077
+65 ORNL-LR-DWG-3797
+SSD-A-1079
+ORNL-LR-DWG-3799
+60 / 60
+ss \ J 55 1] | Y
+\ Mo | /
+0 CURVE Rea / \ \ CURVE Rea 7 7
+g \! — — 9 10,000 11 / = \ — — 13 10,000 //
+24s A —~— 10 20,000 7] Sas NWN | ———em 14 20,000 4
+ce | NY | m= 11 30,000 Ws z —-— {5 30,000 xX
+i 12 60,000 yA « 16 60,000 /
+2 40 4 i 40 y
+Z w 777
+pt \ * Vy
+& Z 4
+i 35 ‘ E35 7
+Ld V = 7
+I /| <I 4
+x30 Z T30 (AW)
+N 7 /) NW] 7/4
+"NN / < AN N / YY
+25 \ 7 4 25 ANNI / #71
+gk NN
+N\ »
+NZ NV
+20 20 //
+NY, N oy
+5
+"56 20 40 60 80 1025 125 145 165 185 205 90 20 30 60 80 1055 125 145 165 185 205
+Ss, DISTANCE FROM INLET (cm) s, DISTANCE FROM INLET (cm)
+
+Fig. 26. Heat Transfer Variation for Ref = §000. Fig. 27. Heat Transfer Variation for Ref = 10,000.
+
+24
+
+ 
+
+ 
+ 
+
+ 
+
+Appendix C
+
+TIME-CONSTANT MODIFICATION THROUGH POSITIVE FEEDBACK
+
+E. R. Mann
+
+F. P. Green
+
+R. S. Stone
+
+Reactor Controls Department, Instrumentation and Controls Division
+
+If Fig. 18 is considered without the amplifier
+No. 3 feedback loop, the equation of state for
+amplifier No. 1 becomes
+
+R, dE
+40 E, =———E =
+(40) 1g,
+
+1
+R,C;, —
+2-1
+
+Here, the steady-state gain = R,/R,, and the
+time constant = R,C,. As we have seen in
+Appendix B, with the feedback loop in place,
+
+1 C, dE
+(41) E, = E -
+
+(= G 1 G dt
+GD) ER
+Ry, Ry R, Ry
+
+In practice, R, = R,, so that
+
+1
+
+ 
+
+Ry
+
+R,C, dE,
+
+ 
+
+1-6) ar °
+
+Reference to Eqs. 40 and 42 shows that where
+R, = R, the effect of such positive feedback is
+to divide both time constant and gain by (1 - G).
+Where G is less than unity, both the time constant
+and the gain are effectively increased, and
+enormously long time constants are made possible
+without the need for excessively large values of
+R, or C,. Where G exceeds unity, negative time
+constants are created, corresponding to regenerative
+equations. The absolute value may be larger or
+smaller than in the case without feedback, de-
+pending upon whether G is less than or greater
+than 2.
+
+Another case of interest is that
+resistor R, is replaced by a capacitance C, =C,.
+When the Kirchhoff current balance is set up for
+such a circuit, the equations are
+
+in which
+
+gE dE, ) dE, .
+a EE A
+1 2
+(44) E, = GE, ,
+
+R, dE,
+(45) E, = R, E - R,C, (1-0) ~~
+
+Comparison of Eq. 40 with Eq. 45 demonstrates
+that in the case of capacitive position feedback,
+the sole effect is to multiply the time constant
+by (1 — G). Where G is less than unity, this
+effectively decreases R,C, and gives access to a
+range of very short time constants. Where G
+exceeds unity, the analog again enters the domain
+of negative time constants, whose absolute value
+may be larger or smaller than in the case without
+feedback, depending upon whether G is above or
+below 2.
+
+The potentiometer Gr may be calibrated in such
+a circuit, and a linear plot of potentiometer setting
+vs A (or 7) can be drawn for resistive or capacitive
+feedback. For positive time constants this is
+done for two or more settings of Gr by applying a
+constant potential E, allowing the circuit to reach
+equilibrium, ond then disconnecting the driving
+voltage and measuring the e-folding time, 7, of
+the decaying function E,.
+
+For negative time constants this could be done
+for two or more settings of Gr by applying a
+constant potential E, differentiating the output
+E,, and measuring the rise time constant, 7, of
+the expanding derivative. A typical plot of A vs
+potentiometer setting is shown in Fig. 28.
+
+UNCLASSIFIED
+SSD-A-4064
+ORNL -LR-DWG-3781
+
+0.015
+
+m
+~ 0.010
+
+0.005
+
+ 
+
+-0.005
+~ ~0.010
+-0.015
+0 0.5 1.0 1.5 2.0
+GAIN
+Fig. 28, Time-Constant Calibration Technique.
+
+A x

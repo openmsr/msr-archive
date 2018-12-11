@@ -1,0 +1,3222 @@
+Tn
+
+3 4456 0550521 8
+
+CENTRAL RESEARCH LIBRARY
+DOCUMENT COLLECTION
+
+LIBRARY LOAN COPY
+DO NOT TRANSFER TO ANOTHER PERSON
+
+If you wish someone else to see this
+
+document, send in name witl
+
+ 
+
+Cris
+ 
+
+Printed in the United States of America. Available from
+National Technical Information Service
+U.S. Department of Commerce
+5285 Port Royal Road, Springfield, Virginia 22161
+Price: Printed Copy $5.00; Microfiche $2.25
+
+ 
+
+ 
+
+ 
+
+This report was prepared as an account of work sponsored by the United States
+Government, Neither the United States nor the Energy Research and Development
+Administration/United States Nuclear Regulatory Commission, nor any of their
+employees, nor any of their contractors, subcontractors, or their employees, makes
+any warranty, express or implied, or assumes any legal liability or responsibility for
+the accuracy, completeness or usefulness of any information, apparatus, product or
+process disclosed, or represents that its use would not infringe privately owned rights.
+
+ 
+
+ 
+ORNL/TM-5050
+
+Contract No. W-7405-eng-26
+
+NEUTRON PHYSICS DIVISION
+
+ON NUCLEAR FUEL, MASS BALANCES, CONVERSION
+
+RATIO, DOUBLING TIME AND UNCERTAINTY
+
+D. R. Vondy
+
+Date Published: November 1976
+
+OAK RIDGE NATIONAL LABORATORY
+Oak Ridge, Tennessee 37820
+operated by
+UNION CARBIDE CORPORATION
+for the
+ENERGY RESEARCH AND DEVELOPMENT. ADMINISTRATION
+
+|e)
+AK RIDGE NATIONAL LABORATORY LIBRARIES
+
+RRO RRR
+
+3 4y5g 0550523 a
+Abstract . . . . .
+Introduation . ., .
+Conversion Ratio .
+Criticality . . .
+
+Primitive Economic
+
+Stable Breeder-Converter Industry
+
+Doubling Time . .
+
+Breeder Industry Economic Benefit
+Defining Nuclear Fuel
+
+Standard Definitions, Recommendations
+
+Uncertainty . . .
+
+Example Effect of Uncertainty on Breeding Ratio
+
+CONTENTS
+
+Analysis
+
+iii
+
+13
+
+17
+
+29
+
+40
+
+53
+
+55
+
+60
+Abstract
+
+This study addresses certain aspects.of analysis of performance
+
+of and projections for nuclear reactor power plants.
+
+Introduction
+
+There is considerable interest in the performance characteristics of
+nuclear power plants. Concern over availability of fuel from ore
+leads directly to emphasis on the development of plants which breed
+fuel. This discussion addresses several aspects of performance
+
+analysis, some of which have received attention in the literature.l™2
+
+Consider an installed nuclear power capacity of N plants designed for an
+average power level P each and operating at an effective load factor of
+u (total power level relative to total design power level). The rate
+
+of energy generation is given by
+
+dE
+
+at = uPN . . (1)
+
+Given an effective rate of nuclear fuel consumption per unit energy
+generation, and the fraction useful energy conversion, n, the rate of
+
+fuel consumption is known,
+dF dF dE wu __ dF
+dt "ndE dt on VE (2)
+
+Here dF/dE refers to the destruction of nuclear fuel per unit energy
+
+generated,
+
+The amount of useful energy produced over a time interval T is given
+by
+
+T
+dE
+E_(T) = J It dt = uPNT, (3)
+
+The amount of fuel consumed over this period is given by
+
+F(T) = [ [£] dt = [tm [Ea
+
+F _ Eg dF
+
+A
+
+F(T) =
+
+se
+rd
+=
+
+Mean values of the variables were assumed to be appropriate.
+
+The conversion ratio C is defined as the rate of fuel generation relative
+to the rate of fuel consumption. Given a consumption of F(T), the
+production is CF(T), and the difference between generation and consump-
+
+tion is net production,
+
+AF(T) = (C - 1) F(T) = (C - 1) = . (5)
+Thus if C < 1, fuel is used, while for C > 1, fuel is produced or bred.
+
+In common terminology, when C > 1, it is called the breeding ratio.
+
+Given a fuel inventory associated with each plant of I, the committed
+amount of fuel is IN. The net production of fuel, or consumption of it
+
+if negative, relative to the committed inventory, is given by
+
+ 
+
+AF(T) _ PT
+IN I
+
+u dF
+For C > 1, when this ratio is unity, the amount of fuel produced equals
+the inventory, and the required time may be interpreted as a doubling
+
+time,
+
+a] pre ”
+dE
+
+Thus the time required to double the inventory is proportional to the
+
+inventory and to the energy conversion efficiency, and inversely propor-
+
+tional to the other contributions considered. Note that the factor
+
+(C - 1) dF/dE is of basic interest, relative to the fuel inventory. P/I
+
+is the power level per unit fuel inventory. Decreasing the energy conver-
+
+sion efficiency reduces the doubling time (but it also increases the energy
+
+throw away and seriously affects exposure and power density). A short
+
+doubling time is associated with a high load factor.
+Demand for expanding capacity (new, replacing old plants, or both) can be
+satisfied by breeder plants. Consider expansion in generating capacity in
+
+the form
+
+dN(t)
+
+aC bN(t) ; (8)
+
+N(t + T) _ BT
+No -° (9)
+
+Doubling the capacity requires this ratio to double,
+
+bT
+e 9-9; | (10)
+_ _Xn2 .
+Tae = “an(m (11)
+N(t)dT
+This denominator is simply AE(T) or 1 3
+
+TIN T,.
+
+di
+Tie = Tai n2 (12)
+
+This study is directed at a better understanding of the requirements
+
+for analysis by examining the equations for specific situations.
+
+Although the above equations are rather basic, their use can only be
+rather casual; application is subject to interpretation. The 'associated
+fuel inventory" is not defined. Can conversion ratio be determined
+adequately from neutron reaction rates? What is fuel? What are the
+
+effects of fueling plants discretely and losing material in processing?
+Does realistic analysis demand more sophisticated formulas? What are
+
+the effects of uncertainties?
+
+Conversion Ratio
+
+A basic, generic formulation for the conversion ratio is
+
+_ Rate of fuel generation
+Rate of fuel destruction
+
+ 
+
+defined at a point in time. A primitive formulation is
+
+Cp = xX. (13)
+
+where the numerator is the integrated rate of neutron capture
+
+(n, no n) in fertile material,
+
+R, -[ [x NN ()o,  (E) ¢(r,E)dEdr,
+r E n
+
+where N (r) is the concentration of fertile nuclide n at location r, and
+
+¢(r,E) is the local neutron flux at energy E, and
+
+Xe = /f 3 N_ (1) %a,n'® ¢(r,E) dEdr,
+r E m
+
+where the fuel nuclides are indexed m. Special weighting may be applied,
+
+as importance by nuclide or by reaction rate type.
+
+The conversion ratio may be expressed as the ratio of two time derivatives,
+dF
+
+C = ry , (14)
+
+dt
+
+where the superscripts refer to generation (+) and destruction (-).
+The conversion ratio may be related to the mass balances for a period of
+plant operation (fuel exposure), Let Fe be the amount of fuel supplied
+
+(a batch of fuel assemblies or a representative particle of material),
+
+and Fy be the amount of fuel discharged subject to recovery,
+
++ -
+_ dF" dF
+apt f [5 iw) a (15)
+
+and using mean values,
+
+tT, [dF
+_ dF” dt | _
+Fq = Fg + [4 | | dF d dt,
+
+0 t
+
+Fy=F +T [5] Cc -1) .
+
+Considering the relationship between the power level and the energy
+generated, dE = Pdt, the use of mean values yields the more fundamental
+
+formulation
+
+Fy = r+" | &] (c-1 . (16)
+An effective conversion ratio may thus be defined from mass balances as
+
+F, -F
+CL fa Fe
+Ce ltE@m (17)
+
+n dE
+
+If the primary use of the reported values for the conversion ratio is
+for analysis of fuel utilization, then that estimate which best predicts
+the fuel discharge by Equation 17 is the preferred one. What material
+is fuel must be decided, as is disucssed later. Further, account should
+be taken of the difference between fuel discharged and fuel recovered
+
+for subsequent use.
+
+Criticality
+
+A basic requirement for a nuclear plant is that the system be maintained
+critical (ignoring very short time behavior): the rate of generation
+of neutrons must equal the total rate of neutron loss. Fortunately the
+neutron half-life is sufficiently long that decay loss is negligible,
+
+leaving the overall neutron balance
+
+Rate of generation _ G(t)
+
+k(t) = Rate of absorption + leakage T X(t) + L(t)
+
+ 
+
+=1, (18)
+
+where L(t) is the surface leakage, small for large, reflected reactor
+
+cores,
+
+G(t)
+
+/ / Zh (x) vo £,n BE) ¢(r,E) dEdr, and
+
+/ / YN (1) a, eLICH E)dEdr .
+r E n
+
+X(t)
+Expanding the contributions to the denominator of Equation 18,
+
+Gp = Xp +R +X +X +X,
+
+f
+G = 1, ) (19)
+f
+X —-1
+f Xe
+where
+
+Ge = Rate of neutron production
+Xe = Rate of neutron absorption in fuel
+R, = Rate of neutron capture in fertile material
+Xen = Rate of neutron absorption in fission products
+xX, = Rate of neutron absorption in control rod
+Xx, = All other losses.
+
+Note that Ge/X, is an effective eta for the fuel mixture (vog/o,)- In
+
+a reactor, this ratio tends to remain constant unless there is a large
+change in the neutron energy spectrum, except as shift occurs in the fuel
+mixture.
+
+The power level is nearly proportional to G If there is net fuel con-
+
+f°
+sumption, the neutron flux level must increase to maintain the power
+level; this increases the terms in the numerator requiring control rod
+removal to reduce X,. If there is net fuel generation, control rod
+
+insertion may be required. As the fission product poisoning increases,
+
+approximately linearly with time, control rod absorptions must be reduced
+for compensation. One objective in design is to reduce this swing, as
+
+by partial refueling or by tailoring the loading to improve the behavior.
+
+Of primary interest in fuel utilization analysis is not the conversion
+
+ratio but C - 1. Expressing this in the primitive sense
+
+R. Ge X £ + X, + Xx,
+C-l=3=5-2- be . (20)
+f f f
+
+Clearly Ge/X, must be significantly greater than 2 if C - 1 > 0 for
+breeding. Control rod losses, for example, directly reduce C - 1.
+Uncertainty in C - 1 is directly related to reaction rates and is also
+dependent on the requirement for X, to control reactivity swing and
+associated fuel inventory adjustments and their effects as a function
+
+of the multi-refueling history, not simply evaluated.
+
+Results from calculations which ignore the requirements for a critical
+system and the losses in the neutron balance required for control
+generally have no more value than those ignoring practical design re-
+
+quirements.
+
+Primitive Economic Analysis
+
+Evaluation of nuclear reactor plants includes economic considerations.
+The core design which is preferred under a set of economic conditions
+is that which will produce energy at the lowest cost. (Breeder plants
+
+are attractive for the future only because they are expected to produce
+10
+
+energy economically in competition with other schemes.) The cost of
+generating energy involves capital charges and operating costs which
+may have to be considered. Here the fuel cost component is addressed
+
+which could be from fuel ownership or rental.
+
+Consider a reactor plant which achieves a quasi-equilibrium condition
+quickly so that examination of this situation is representative of the
+plant history. The life history of a fuel particle or the contents of
+a batch of fuel assemblies may be followed. There may be fuel make up
+from one or from another plant, fuel recycled from this reactor, and
+exposed fuel recovered for recycle or use in another reactor or sold
+or even thrown away. The history of interest is shown below for the
+
+general situation:
+
+Fuel from ore, converted
+
+Fuel from another reactor, converted
+Recycle fuel, converted
+
+Fuel preparation, fuel element fabrication
+Shipment, accumulation lead
+
+Reactor loading
+
+ 
+
+Energy generation by exposure . Energy
+
+ 
+
+ 
+
+ 
+
+Reactor unloading
+Storage for cooling
+Shipment, scheduling lag
+Reprocessing Fuel Recovery
+Losses of material occur in processing stages and through decay not shown
+
+explicitly. Also, complicated fueling schemes may not admit such a simple
+
+description.
+11
+
+An economic analysis requires that the costs associated with the above
+steps be determined per unit energy generated. Considering only those
+costs associated with fuel and not with processes, a simple formulation
+
+is as follows:
+
+Let
+We be the unit value of fuel supplied,
+W_ be the unit value of fuel recovered,
+E_ be the associated energy generated,
+T_. be the effective lead time,
+T be the effective lag in recovery time,
+i be the effective simple interest charge, and
+
+r be the loss fraction in recovery.
+
+The total cost component of energy generation is given by the sum of
+direct and indirect (interest) costs?,
+
+, _ 1 ; - - 3
+Partial Energy Cost = AS + iT) wr 11) . (21)
+
+Note that the indirect costs are a direct consequence of displacement
+in time between the generation of energy (sale of it) and the purchase
+
+and sale of fuel (or its rental).
+
+As shown in Equation 21, the basic data are fuel mass balances. For the
+more general economic analysis of a plant history, the basic data are
+
+still the mass balances.l»?
+
+ 
+
+80f course the powers that be could decide that sale of produced fuel is
+profitable and income taxable which would have to be accounted for, but
+this is deemed to be unreasonable for power reactors; fuel rental is
+another possibility not addressed.
+12
+
+A source of uncertainty in the economic analysis is the unit value of
+fuel. When one considers sale or purchase of fuel produced by a reactor
+plant, its value is not simply predicted. Generally a multi-plant economy
+would have to be considered and appropriate plant performances determined
+given the necessary coupling of the fuel cycles. A specific situation
+must be assessed. A special set of conditions is of considerable interest
+because of simplicity and applicability: The quasi-equilibrium cycle
+
+for a plant involving a set feed composition (from ore, from another
+reactor discharge, and/or recycle from this plant) and recovered fuel
+used in this plant or in others of the same type. The fuel cycle may
+involve full recycle or throw-away in part, or it may be for a breeder
+supplying fuel to inventory others of the same kind in an industry of
+expanding capacity. At some time in the future, a system consisting of
+two types of plants may be of primary interest with bred fuel used as
+make up for plants which do not breed. These situations avoid the
+uncertainty associated with assigning a unit value to recovered fuel;
+direct economic analysis is possible. Indeed the unneeded unit value
+
+of the fuel may be established, although it depends on the assumptions
+(formulation used and the economic parameters), and hence would be
+
+expected to have a relatively large uncertainty.
+
+Recasting Equation 21 in terms of conversion ratio,
+
+Fe
+
+Ee
+
+Partial Energy Cost = [ua + iT.) - w.(1 -r) (1 - i1,) |
+
+. 1, | dF
+cua-na-md [E] © -o, (22)
+13
+
+useful for casual analysis. For iT, < 1, the last term increases the
+energy cost for C < 1 and decreases it for C > 1; low fuel cost for a
+
+breeder plant is anticipated due to the magnitude of this last term.
+
+In projections for the future there has often been a disregard of the
+fact that increasing the conversion ratio (breeding ratio) in a reactor
+concept generally increases some of the components of the cost of power
+production. Under reasonable ground rules there is some optimum which
+must lie below the highest possible conversion ratio of minimum possible
+
+doubling time.
+Stable Breeder-Converter Industry
+
+It is of interest to examine a possible future situation. Consider part
+of a nuclear power plant industry consisting of two reactor types. A
+fixed total power level is assumed, a fixed rate of energy generation.
+The first plant type produces excess fuel while the second type uses
+
+this excess as make-up. Parameters for the analysis are given below.
+14
+
+ 
+
+Reactor Plant Type 1 2
+Conversion ratio Cy > 1 C, <1
+Fraction of reactor refueled £, £,
+Average relative plant power level g; x:
+Average fuel batch exposure time
+
+Reference ty ty
+
+At power level t;/8y t /s,
+Actual period between fuelings q = £1t,78 4, 2/8)
+Fuel per plant per fueling
+
+From ore Fi Fo
+
+Recycle (from same type) Fa Fo
+
+Make-up (from other type) - LI
+
+Recovered excess generation Foi -
+Number of plants operating Ny N,
+Annual refuelings Nig, /ft) 28, Et,
+Reference plant power level P, P,
+Plant power level 8%; 8,F,
+Total power level N,8.F; 289%
+Total Energy generation in time T Q = N;g,PT Q, = N,g,P,T
+
+ 
+15
+
+A mass balance on the fuel exchanged between the two types of plants
+
+ 
+
+ 
+
+ 
+
+ 
+
+gives
+Fail _ Foy
+»
+4 1
+Yo fa (%2
+N q
+1 m2 1
+Q Fg “2022 23)
+Q F Pf t
+1 m2 1'171
+Basing fuel mass balances on conversion ratios,
+E -
+= 1 dF -r) -
+Foi - ey + ©, D ny dE | a r) Fa
+E -—
+_ 2 dF _ r
+Fn2 =a- Cp) ny dE ly Fo + GT Feo
+E -—
+1 dF —r)—
+N, Fart (C&D ny dE 11 (L-r)=F a,
+N= E (3) . (24)
+1 2 dF_ r 1
+U=cs, dE 5 - Faz + GF
+Considering the special situation where Fi = Fo = 0, and setting
+16
+
+[ar
+(¢,-1) n dE
+
+(1-c,)
+
+No
+j=
+oR
+jm
+J
+=
+
+Z| =
+IR
+|
+
+—
+3
+=
+
+aE 82%2
+dE
+
+dF~
+QQ (¢;-1 ny dE
+dE
+
+1
+
+(25)
+
+ 
+
+2
+
+he
+
+The ratio of the number of plants depends directly on the ratio of the
+rates of net fuel production and consumption and on the power levels
+at which the plants are operated. The electrical energy generation
+rates are in the ratio of the rates of fuel production and consumption.
+Primary contributions come from the energy conversion efficiencies
+
+and the amount of fuel consumed per unit product energy.
+
+Consider the situation where type 2 plants are less expensive to build
+than type 1. The results indicate that given the flexibility, type 1
+Plants should be operated at the highest power level. Increasing the
+conversion ratios of both plant types may be desirable to increase the
+number of type 2 plants, but subject to detailed economic justification,
+There would be a playoff for increasing the efficiency of the type 1
+plants at an associated increase in cost. These clues come from the
+formulation using conversion ratios; they must be representative for
+the situation to produce reasonable predictions from such casual
+analysis, Such casual conclusions are subject to more thorough analysis
+with consideration of all aspects, Required inventories, detailed
+
+scheduling and interruptions for refueling can be assessed given mass
+17
+
+balances for the fuel. These mass balances may be required under several
+operating conditions (different fractions of plant refueled, for example),
+for which the assumption that a value for the conversion ratio is repre-
+
+sentative may not hold. Loss in recovery should not be ignored.
+
+For such analysis it is important that the fuel generated and the fuel
+used be the same thing. If consistent depletion calculations are made,
+there is no problem with mass balances for the heavy metals. But when
+casual analysis is done with conversion ratios, they should be on a
+common basis. If fuel is defined as the fissile nuclides (considering
+these as the primary thermal reactor fuel), then any attempt at optimiza-
+tion or choice between alternatives may produce a distorted result. Thus
+consideration should be given to the likely use of data such as conver-
+
+sion ratio in defining how it is to be calculated.
+
+Doubling Time
+
+The doubling time of a specific breeder reactor type and design is used
+in the sense of supplying the inventory for two reactor plants from the
+fuel recovered from one under appropriate ground rules.2 The rate of
+growth of that segment of a power industry consisting of breeder plants
+is directly related to the doubling time. Only if the doubling time of
+breeder plants is appreciably shorter than the doubling time of the power
+industry can the fraction of plants which are breeders grow to dominate
+
+the industry in a reasonable time given limited fuel for inventory.
+18
+
+Consider a young and fractured nuclear breeder power industry in which the
+
+feed for a plant must come from its own discharge, from an external source,
+
+or from excess production. Given fuel balance data for a plant on the
+
+basis of the batch of material involved each refueling, with allowance for
+
+all losses, account can be made of the capability to inventory plants.
+
+The following terminology is used:
+
+total fuel feed
+
+recycle feed
+
+feed from an external source
+
+recovered fuel .
+
+excess recovered fuel (after recycle to the plant)
+period of time between fuelings,
+
+exposure period for a batch,
+
+lag time between removal and availability for subsequent
+use (after cooling, shipping, processing, refabrication,
+and accumulation)
+
+additional lag time associated with bringing a new plant
+on line at full load,
+
+fraction of the reactor fueled each time.
+
+number of plants fueled and in operation during period n.
+
+These definitions lead to the following relationships:
+
+|
+1
+
+rt
+[}
+
+F +F ,
+X a
+F +F,
+X e
+
+ft .
+o
+19
+
+A simple estimate of doubling time is available. An operating plant
+producing F, excess fuel in period t. will supply the material F /f to
+fuel a second plant after a time, which may be called a primative
+
+doubling time, of
+Fe Fy
+BT TF | TF | (26)
+
+This estimate of doubling time can have but small utility as an index
+
+of performance, yet its simplicity makes use attractive.
+
+A first plant requires a fuel inventory of (F, + F)/f from an external
+source. Recovered material is available as recycle feed only after a
+period of time of t. + Ep If the fuel is managed in a simple way to
+move directly to an equilibrium, refueling on a regular period with no
+complications in the fuel management, and it may be assumed that the rate
+of fuel generation is linear, then the amount of fuel recovered from the
+
+first batch is
+
+up to the time when
+
+n
+ol
++
+eo
+
+F + nfF
+xX e
+
+nf
+
+i
+=
+20
+
+If the excess fuel is accumulated, a second plant can be fueled when
+
+1/f
+
+Fe
+
+FC F > nf + nm
+=]1
+
+that is, after z+ m periods of operation,
+
+is
+
+F |
+t,=t +t, +t 1+-2-f (52) , (27)
+0 1 oO
+
+where the inner bracketed term must be decreased to the next smaller
+integer. The delay in recycle of feed is for a period of t, + tos
+material from an external source had to be supplied for the initial
+inventory, plus that for [e,/t,] refuelings, F { 1/f + [eye 1} where
+
+the bracketed term is truncated.
+
+Special note should be taken of the difference between the delay time
+associated with refueling an operating plant and the delay time associated
+with adding capacity with recovered fuel. It is reasonable to expect that
+there will generally be extra delays associated with bringing new plants
+on line and achieving full load capacity. Here the approach taken is to
+assume that fuel for an operating plant must be recovered from its
+
+discharge (when available). A key variable is the delay time between
+21
+
+the time of removal of fuel from a plant and the time when the excess
+
+fuel produced becomes useful in a new plant.
+
+The analysis of a breeder reactor economy presents a basic difficulty.
+With expansion, a relatively large fraction of the installed plants may
+represent newly added capacity for which an equilibrium condition has not
+established. It will now be assumed that refueling and addition of capac-
+ity occur at the same time for all plants, periodically. It will also be
+assumed that a fraction of each plant is discharged at the end of each
+operating period, and that the excess fuel production is proportioned to
+
+exposure time.
+
+The amount of capacity added at the start of period n is N - N._1° and
+F
+
+the amount of fuel required is x (N - N
+
+It will be assumed that
+
+n-11"
+
+this increased capacity yields fuel in the amount
+
+-_ + 1
+[N N_,] [F, fF] after period n,
+
+-— 1 +
+[N, N _] [F_ + 2fF after period n + 1, or
+
+-— + .
+(N_ N 4] [F, nfF ] at the start of period n + m, mf < 1,
+
+- > 1.
+IN -N _][F +F], mE21
+
+It should be noted that this analysis does not address the situation where
+recovery of fuel is delayed, as due to shuffling and deferred removal of
+blankets, although it could be treated. Such delay in making recovered
+fuel can significantly increase the doubling time. Full treatment of a
+specific situation is possible, but attempts to generalize the treatment
+
+were not fruitful.
+22
+
+The total amount of fuel removed at the end of period j = 1/f is
+
+2 Ny = Nog] [Fe + (§ - mHDEF] +
+
+0
+>. N -N JF +F], ks.
+
+n=-k
+
+This fuel is assumed to be available at the start of period j + m for
+
+refueling and j + 7 for inventory of new plants. A fuel mass balance
+
+yields
+i 0
+> : 1 >
+IN N 4] [F_ + (J n+1)3F] + IN No_,] LF, + Fl
+n=1 =-k
+
+5 . - N, ) ’
+Flim T 3% MNipze1 ~ Nya (28)
+
+a recursion form which requires
+
+N
+n+l
+
+N
+n
+
+= A = constant;
+
+5
+Lt > 4a = A" +d (a-1)Al (29)
+n=1
+and
+
+ft fn2
+23
+
+A plece of interesting information which comes out of this formulation
+is the fraction of fuel feed which is used to inventory new plants,
+
+—3
+
+m~-7
+J +n
+
+Equation 29 appears very useful for analysis although it must be solved
+
+by trial and error (iteratively). Given mass balance data, namely the
+ratio of recovered excess feed to original feed, explicit account is
+
+taken of expanding capacity considering delays and no external fuel
+source. It may be practical to tailor the early fueling history to
+improve performance not accounted for here; however, any delay in recovery
+of produced fuel can be expected to increase the doubling time, requiring
+careful assessment. Of course decreasing the fraction of a plant fueled
+would usually increase down time for fueling decreasing the plant factor,
+reducing availability. Decreasing exposure would decrease the plant
+factor and would increase the losses associated with recovery, processing.
+
+These factors must be considered.
+
+In applying Equation 29, it should be kept in mind that m and I are integers,
+multiples of the generation period. They can be used as non-integers, as
+to produce continuous results over a range of values of the parameters,
+
+but the physical situation represented thereby is less tangible.
+24
+
+Considering a simple situation, let Z =m, £f=1, j=1, t_ =t
+
+ 
+
+Atl _ FF .
+= T ;
+
+x
+(m+l) t_ 4£n2
+
+t 0
+
+a° [i]
+in +
+X
+
+Further, considering that m is t/t, (for £ = 1) raised to the next
+larger integer, the approximation that m is just t/t assumes earlier
+
+use. Allowing for some effect of tis new plant start-up delay,
+
+(30)
+
+ 
+
+Note that losses in processing increase Fo and reduce Fs both increasing
+
+ty . Uncertainty in t associated with such losses may be assessed
+
+d
+
+directly; for a recovery loss fraction of r, replace
+
+Results from the equations may be compared. To judge the effect of vary-
+ing one factor, the others must be fixed. Thus fixing the delay in avail-
+
+ability, m and 7 in Equation 29 depend on j. Typical results are shown
+
+in Table 1 for t/t .
+d o
+25
+
+Table 1. Doubling Time Results.
+
+Values are the ratio of doubling time to batch exposure
+
+time .
+ime, t4/t,
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+F, t ty Equation
+
+F t t
+
+X o o 26 27 29 30
+1 1/10 1 0 2.5 2.08
+
+1 1/3 1 0 2.33 2.06
+
+1 1/2 1 0 2.5 2.04
+
+1 1 1 0 2.0 2.0 2.0
+1/2 1/2 1 0 3.5 3.48
+1/2 1 1 0 3.0 3.42 3.42
+1/4 1/2 1 0 5.5 6.31
+1/4 1 1 0 5.0 6.21 6.21
+1/2 1/2 1/2 0 3.0 2.60
+1/2 1/2 1/2 1/2 3.5 2.79
+
+1 1 1 1 3.0 2.29 2.25
+1/2 1 1 1 4.0 3.73 3.85
+1/4 1 1 1 6.0 6.54 6.99
+1 1 0 0 1.0 1.0 1.0 1.0
+1/2 1 0 0 2.0 2.0 1.71 1.71
+1/4 1 0 0 4.0 4.0 3.11 3.11
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+26
+
+Study of these results shows that delay in availability is indeed
+significant. The delay time in fueling a second plant is dependent on
+how well the fueling schedule fits lag times; it can be longer or shorter
+than the doubling time of a developed industry. Perhaps some weighting
+over the first several generations would be most representative in a
+young industry. The doubling time for a second plant is representative
+
+of that obtained for the developed industry, in this example.
+
+An attempt made to produce useful results considering explicit delays
+
+for an industry expanding exponentially was not fruitful.
+
+Increase in capacity in increments is not the same as an exponential
+increase. If it is assumed that an equivalent of an exponential increase
+
+in capacity is desired,
+N(t) = N(o)e®t ,
+
+and doubling time is given by
+
+La
+t
+N(t) = vol d |
+
+The quantity of energy generated over time t is given by
+
+t
+tr
+
+Tr
+t ;FN(o) | ty ]
+Q(T) = [ PN(t)dt = “ni 2 -1 ,
+
+o
+27
+
+where P is the power level of each plant. With incremental increases
+
+in capacity periodically, the average energy generation between the
+
+midpoints of consecutive periods is
+
+N +N
+_ n ntl
+Q(T) = [5 Jee, .
+
+Equating energy generation, an effective capacity doubling time is given
+
+by
+
+t t N om
+x 2 41] = [1+ 2 oe (31)
+n
+
+ 
+
+which may be solved by careful iteration. This result can be approxi-
+
+mated by basing doubling time directly on capacity,
+
+ 
+
+fa
+
+N+ te
+
+N = 2
+
+n
+t
+2 - a (32)
+r n n+l
+
+N
+28
+
+Typical values from these equations are shown below:
+
+ 
+
+ 
+
+Not1 _d
+N t
+n r
+Equation 31 Equation 32
+1 © ©
+21/20 14.09 14.21
+11/10 7.161 7.273
+6/5 3.692 3.802
+4/3 2.305 2.409
+3/2 1.609 1.710
+2 0.909 1.000
+
+It is interesting that the results from the two equations differ by 0.1.
+
+It is of interest to recast Equation 30 in terms of conversion ratio.
+From Equation 16,
+F + F F E
+e
+RE pL (1-1) 2 - (1-1 x + (C - 1) m2] ,
+
+x £ Fen dE
+
+where r is the fraction loss,
+
+i £n2
+
+t
+t.=lt +t + 7 (33)
+¢ ° pb ) £n fam [ees |
+f
+
+ 
+
+Equating this with the result for an expanding industry, Equations
+
+7 and 12, yields the effective inventory,
+
+.
+i) u dF
+(c 5c, 1) (on
+
+I_ :
+Pom fon +(e) Fe SE |
+Fen
+
+(34)
+29
+
+With fractional fueling, the situation is more involved and the result
+from Equation 26 would be used. Recovery, processing losses should be
+accounted for explicitly (by obtaining C from mass balance data). However,
+the mass balances are considered basic data, more tangible than other
+
+measures of conversion.
+
+Breeder Industry Economic Benefit
+
+Consider a power industry of nuclear breeder reactor plants, the capacity
+expanding. A casual look is taken here at an economic benefit analysis
+required for a selection between possible alternatives, and at the
+
+parameters which play a major role in such evaluation.
+
+For simplification, the continuous capacity expansion form will be
+used,
+
+dP (t)
+
+3c bP(t),
+
+where parameter b is related to the effective doubling time by
+
+P(t + ty) = 2P(t),
+btg
+P(t + tg) = P(t)e —,
+b = 1 n2,
+d
+
+The ability to expand capacity depends on the availability of bred
+fuel for inventory. Given only one plant at the start, a second plant
+could be fueled only after a full inventory had been accumulated. Given
+
+several plants at the start, the capacity would double on the period of
+30
+
+the doubling time. Starting in 1990 with an effective doubling time
+of 10 years, the capacity could increase by a factor of 16 after 40
+years, in year 2030; with a doubling time of 15 years, this could
+
+occur in 2050, and for 25, in 2090, well into the future.
+
+The amount of product from the plants (electrical energy) can be assumed
+to be proportional to the capacity (fixed plant load factor, etc.).
+
+The total of this product for a time period T is
+
+T
+V(T) “f P(t)dT = 2" - 1), (35)
+Oo
+
+increasing rapidly as T increases, and significantly dependent on the
+doubling time, increasing as b increases. The shorter the doubling
+
+time, the more the useful product. For T = 40 years, the product with
+a doubling time of 10 years would be 387% more than for a doubling time
+
+of 12 years,
+
+It is noted that if a substantial fraction of the total demand is to be
+satisfied well into the future with such plants, then the rate of capa-
+city expansion should be no less than the rate of increase of demand,
+
+preferably somewhat more to make an ingress.
+
+It is now assumed that a given amount of reactor fuel is available at
+the start, Each unit of product is considered to have a value and cost
+of its production fixed for a specific reactor plant design. The future
+will be considered out to time T after the start and the situation (con-
+tributions) ignored at and beyond that time. The time variation in
+
+benefit will be removed by the technique of continuous discounting to
+31
+a present value using an effective discount factor i,
+
+T . ,
+B(T) - [ v(t)e it ge, (36)
+0
+
+where V(t) is the net benefit at future time t and B is present value
+of future benefit as expressed. A choice of parameters is made to
+
+explore primary aspects in the form:
+
+V(o) = =CoQs
+
+c
+V(t) [i - 2 dn cof - ce] elt;
+
+B(T) (37)
+
+It
+LO
+tin wt,
+1
+O
++
+—
+etre
+N
+1
+I
+—
+—
+>|
+=
+Sa”
+OQ
+o
+E
+HZ .
+D
+1
+0
+rh
+ed
+—
+o
+~~
+°F
+1]
+Nae”
+oR
+1
+P=
+ee J
+»
+
+where
+
+Q - the amount of fuel available initially,
+
+G ~ the rate of energy production,
+
+I - the associated fuel inventory,
+
+u - the average plant load factor,
+
+n — the efficiency of energy conversion,
+
+C_ - the unit cost of fuel (initial),
+C_ — the charge for the plants and their operation,
+C_ - a cost penalty for the whole operation, as waste and perhaps
+
+assessed damage and even technological uncertainty,
+
+Ce
+
+the fuel cost (without any credit), and
+z = unit value of the product,
+consistent units required, Granted that this simple formulation leaves
+
+much to be desired; usual data must be interpreted carefully and more
+32
+
+complicated relationships would be typical, as of C_ on n, and the
+
+P
+dependence of b on n and u is not shown. Still, fundamental aspects
+
+can be addressed.
+
+Increased benefit is associated directly with independent differences
+in the parameters, assuming it is positive:
+shorter doubling time (larger b),
+smaller inventory,
+lower unit costs,
+lower cost penalty,
+higher plant load factor (which would also reduce the doubling time),
+higher efficiency with the same doubling time,
+higher product worth,
+increase in size (increase in the amount of fuel at the start),
+lower assigned value of the discount factor, and
+
+larger value of T (the further the projection into the future).
+
+By the approach taken, the product must be assigned a value, as from
+some other source than that under analysis as a competitive reference.
+[ne present worth of the benefit could be set zero to determine an un-
+known product value (break-even considering all costs including in-
+direct, usually for a single plant instead of an expanding industry),
+and considering any contributions at the end of the projection time,
+The best economic choice between alternatives is that for which the
+
+product value based on costs is lowest, here in simplicity
+
+IC.
+z = wintmun | oF (1=n) C + ic |.
+unG n e u p
+33
+
+assuming adequate account of all contributions (fuel cost and credit).
+A significant contribution from the fuel inventory is indicated unless
+
+Ce is small, Clearly z must exceed this value to show benefit. |
+
+A comparison is now made between two situations for which only the in-
+ventory and doubling time parameters differ. The difference in benefit
+
+reduces to a comparison of the differences between the results in the
+
+a (b-1i)T
+B(T) (3 » [oes] :
+
+Results are shown below for a selected set of parameters for two
+
+form
+
+situations using i = 0,04, a, = 1.0, and a, = 0.1:
+
+1
+
+ 
+
+ 
+
+Case 1 2
+Relative Fuel Inventory 1.0 1.5
+Doubling Time 12.0 8.0
+d|dr|,_, 0.9 0.57
+B(T=10) 9.85 7.22
+B(T=20) 21.6 18,73
+B(T=28) 32.6 32.7
+B(T=30) 35.7 37.1
+B(T=50) 72.5 113.0
+
+B(T=100) 249,0 1277.0
+
+ 
+34
+
+The results show that the benefit curves cross over as the projection
+time increases, Case 1 is best for T < 28 years, Case 2 for T > 28
+years. Unless this cross over occurs at a relatively short time, the
+choice between the alternatives in such a situation may be difficult to
+make, and it may well depend on considerations not addressed here. But
+given T large enough, the system with the shortest doubling time shows
+the most economic benefit even if a larger fuel inventory is associated
+
+with it, other factors the same.
+
+The economic benefit expected from the differences between two sets of
+parameters may be estimated directly. The amount is directly dependent
+on the number of reactor plants considered at some reference time,
+that is, on the amount of nuclear fuel considered initially, The rela-
+tive economic benefit is now approximated with the simplified equation
+un o (b=1)T -1
+I b-1 ’
+where I is relative plant fuel inventory. The parameter b is allowed
+to be negative (negative doubling time) to admit converter reactors
+such as currently being installed. Setting i=0.04 and T=50, the fol-
+
+lowing results are obtained:
+35
+
+ 
+
+ 
+
+Doubling Time Relative (Plant Factor x Efficiency *+ Fuel Inventory)
+0.5 1,000 1,5 =
+
+6 282 565 847
+8 100 199 299
+10 57 114 171
+15 29 59 88
+17.3 25 50 75
+20 22 44 66
+30 17 34 51
+11 22 33
+-30 7.6 15 23
+-20 6.5 13 20
+-15 5.7 11 17
+-10 4.6 9.1 14
+
+-5 2.8 5.6 8.4
+
+-2.5 1.6 3.2 4.8
+
+ 
+
+Note that a 50% increase in efficiency would be expected to increase
+the doubling time by 50%; the data above indicates that this may or
+may not increase the benefit, although consideration of all factors
+could well show a gain, but basic cost differences would make a primary
+
+consideration which would have to be included.
+
+Consider a present generation water moderated thermal neutron water
+reactor, Assuming effective values for the conversion ratio of 0.6, a
+
+fissile inventory (feed) of 3.0 Kgm/MWe, and a rate of fuel consumption
+36
+
+of 1.7Kgm/MWe-yr, at a load factor of 0.8, the effective doubling
+time is about
+
+3,0 ¢n2 / (-0.6 x .8 x 1,7) = -2.5.
+
+The table above indicates the economic incentive and therefore justifi-
+cation for investment in development of a design which conserves fuel,
+
+up to the break even "breeder" having an infinite doubling time. Moving
+toward the right in the table is also important, increasing efficiency
+and reducing the fuel inventory. But truly significant economic benefit
+is shown toward the top of the table with a breeder design having a short
+
+doubling time,
+
+There is a crucial value of the doubling time, perhaps considered
+critical in some circles. When b=i the result is proportional to T.
+For b<i, the result for all future time is proportional to the re-
+ciprocal of (i-b), independent of T for T large, Assuming the model is
+realistic and that a limited amount of fuel is available for commitment
+(probably only a small fraction of total capacity for power generation
+would be committed to breeders), with only a reservation regarding the
+possibility that the electric demand would be exceeded by the model,
+
+the crucial value of the doubling time is
+n2, (38)
+
+where 1 is the economic discount factor, For i=0.04, this value of the
+doubling time is 17.3 years. The economic benefit over the future
+would be smaller with a longer doubling time than this, relative to
+
+that for a shorter one, If i=0,02, the value is 34 and for i=0,06,
+37
+
+the value is 11.6. What value of the discount factor is appropriate
+
+to analysis of the future utility industry in the United States?
+
+A different model could lead to different conclusions. An attractive
+alternative would be starting with a fixed initial capacity, or fixed
+initial investment in plants (the investment which could include fuel
+inventory cost, or be just the construction labor cost). Such would
+
+be a direct assessment of economic benefit from investment. The higher
+the plant fuel inventory, the more fuel required, and the benefit would
+contain a negative contributing term proportional to the inventory (no
+inverse dependence); multiply the results by relative inventory to
+assess this situation. The benefit would still depend directly on the
+same function of the doubling time, only with a different leading
+coefficient, For the first example above, the cross over time would be
+
+much shorter.
+
+The projector resorts to philosophical arguments to justify assumptions
+
+(to select formulations and parameters). In the extreme, these arguments
+might include, "Real benefit to the individual in our society is measured
+by his happiness and requires an increasing level of gross national pro-
+duct driven directly by an increasing supply of electricity, although
+
+the rate of increase is dependent on the economic climate in which condi-
+tions are expected to decrease this rate of change; an appropriate
+discount factor may be a direct consequence, not primarily influenced
+
+by bank interest rates, Decrease with time of the value of money (capital)
+is the result of maximizing this benefit. Varying interest rates, due to
+
+artificial forcing, produce pathetic consequences and chaos in projections.
+38
+
+Past history is but a clue to the future because it was forced by greed
+and exploitation (will the future be?), Etc." So how do we make
+reliable projections into the future? We tend to use a large value
+
+of the discount factor to cause an estimate of the incremental benefit
+to be conservative, Perhaps the discount factor should be increased
+with the projection time, a dependence of i on t in eq. 36, to dis-
+advantage the predicted benefit due to increasing uncertainty, but
+
+then an argument can be made to decrease it.
+
+Extending the above development to treat two reactor types, let the
+
+first have the shortest doubling time, the fuel production rate being
+
+dQ (t)
+BEC ARE
+
+Using some of this to fuel the second reactor type,
+
+dQ, (t)
+
+qc = b,Q, (t) +b (t).
+
+3
+
+Carrying out the integrals, the economic benefit equation obtained is
+
+ 
+
+ 
+
+ 
+
+. (b,=b.,-1)T
+C u,G 1°73
+1 171 e -1
+* (: - 2) np - = weg) I, "aU? TEED
+C u.G
+2 2%)
++ [ - 2) np - @- wey) I + Ce
+(b,~1)T (by=by=1)T
+e -1 3 e -1
+| ®,-D) J ee] oo bb, )
+
+(b,~1)T
+
+e - 1
+- ( bmi. ) 9
+39
+
+If we consider primary aspects and a long time, a minimum value of the
+
+parameter b; required to realize much future benefit over long time is
+by; >i + by 3
+
+a crucial value of the doubling time is associated with the first plant
+
+type of
+
+_ %n 2
+4 ST + bs ° (40)
+
+It should be possible to determine an optimum ratio of the capacities of
+the two types of plants directly from economic considerations. Then for
+
+T large and b; > by + bg,
+
+Q@ by - bz - bg
+Q bj ’
+
+(2) in 2
+dl d2 ]
+
+ 
+
+ 
+
+by = 41
+3 ( ee) (41)
+1+
+PyIsGin
+or in terms of conversion (breeding) ratios,
+Pjui(C; - 1) Poupy (Co - 1)
+I1mG; - IonsGo
+ba = . 42
+3 P11,G2n2 42)
+14+ o——
+PrI6im
+
+Naturally bg increases as the conversion ratio of the second type plant
+increases. (Note that C, may be <1.) Dedication of fuel to the second
+
+type plant increases the doubling time of the first type from ty to
+40
+
+1
+Vey - bs/fn 2°
+
+Thus, b3/by; is the fraction of the fuel produced by the first type plant
+supplied to the second type. The economic driving force is toward a
+second type plant which produces energy at a lower cost than the first
+type hence increasing the amount of energy generated by the second type:
+increasing its efficiency and reducing its inventory relative to the
+
+first type and increasing the conversion ratio of the first type plant.
+
+Defining Nuclear Fuel
+
+ 
+
+For evaluation of fission reactor power plants, it is often necessary to
+define just what is nuclear fuel. By assigning weights to the individual
+actinide nuclides, the projected performance of two or more different
+designs may be compared. The effects of differences in operation and
+fuel management may be evaluated and the future examined considering the
+many possibilities. Of special interest are fuel utilization and optimum
+performance. The objective must be satisfying the requirements for
+reliable analysis. It does appear that a definition of fuel adequate
+
+for one purpose is quite inadequate for another. Note that even in a
+thermal reactor the fissile nuclides U233, U233, Pu239, and Pu?"! do not
+have equal weights when performance and fuel utilization are assessed,
+
+and relative worths have a dependence on reactor type.
+
+For consistency, it is desirable to satisfy the reciprocal doubling time
+
+expression,
+
+ 
+
+PT ( dF _ (power) (time) consumption rate
+—\5=/)(C€ -1) = :
+I \dE intentory energy generation rate
+
+ 
+
+y (Eeseraiion rate — consumption fate |
+consumption rate
+
+ 
+
+_ _energy net production rate )
+inventory \ energy generation rate/’
+41
+
+by satisfying the individual components, I, dF/dE, and C. Assigning
+
+weight Ww to nuclide n, the form of weighting chosen here is
+
+n n
+
+Cc = ;
+L WX,
+TWX
+
+‘dF _ on "7
+
+dE ’
+L HX,
+
+where Xx is the absorption rate, R is the generation rate, H is the
+energy generation per absorption, and Mo an assigned amount of nuclide n.
+As shown, the conversion (breeding) ratio is independent of the normal-
+ization of the weights, but the other quantities are not, and the values
+
+of these will be meaningful only if care is taken in the normalization.
+
+Consider the total neutron absorption by a nuclide over some interval of
+
+time T in the sense
+XT = $VIN o, h = J. J. Je Nr, t)0, (E)e(r,E,t) dE dr dt ,
+
+where a simple parametric form is used to characterize the behavior:
+effective values for ¢ the flux, V the volume, N the concentration, and
+9 n the absorption cross section. (Difficulties with separability in
+
+?
+
+certain situations must be avoided, as by using reaction rate integrals,
+
+perhaps for individual regions of the reactor.)
+
+A steady-state neutron balance over this period is expressed as
+42
+
+other losses _ 0
+
+LN, 00g - %a,n’ - = or 0 (43)
+
+("Other losses" should be proportional to ¢T.) Importance in the neutron
+balance sense may be considered directly. If a small amount of one
+nuclide were substituted for another, neutron conservation is obtained
+for small T (or a point in time) by neglecting secondary effects:
+
+dN, (vag - 0, a» + dN (vag -o0_ mn)=0,
+
+> a,n
+
+W dn va - 0g
+
+m___no__f,m am
+
+W dN Ye] - a ’
+n m f,n a,n
+
+(44)
+
+Consider that an increase in the amount of fuel loaded into a fuel pin
+requires a decrease in the amount of primary fertile material which can
+
+be loaded. With this physical constraint applied,
+
+dN, Gog - an) + dN (vo 0 - Sa,m + dN (vo, - Sa.) =0.
+
+With dN, = -(dN_ + aN),
+
+ 
+
+Yn dN, _ VO n ~ %,m ~ (vo Sa, 2) .
+= - = — —— — ;
+v dN, VO¢ n %,n (vo o %a, 1)
+wv = VO a - %,n - (vag o - Oat) ? (45)
+
+where % refers to the primary fertile material. usually U238 (or Th?32),
+
+The constraint on feed material is generally recognized. Baker and Ross
+43
+
+showed that Eq. 45 is appropriate in certain fast breeder studies.
+
+Note that the reference fertile material has a zero worth assigned.
+
+A worth may be assigned to the neutrons generated. Given use of ©
+3
+
+neutrons for absorption, vo neutrons are produced. Assigning worth
+
+f,n
+
+Wo to the nuclide and Wy to the neutrons generated,
+
+¥1%,n = W Vos >
+
+or in a relative sense, the return relative to the investment is
+
+W = —— = eta. (46)
+
+No attempt has been made to satisfy neutron balance requirements. Net
+worth is associated with the net generation of neutrons, since only
+
+these are available for producing fuel by capture in fertile material,
+
+W%a,n = Wy, (vog o - %a,n) ?
+
+or in the relative sense
+
+W = -1l=eta-1. (47)
+
+ 
+
+Selection of weights which do not account for the worth of capture
+products is inadequate for much evaluation. There is a penalty asso-
+
+236 4nd pu242
+
+ciated with such nuclides as Pu which are produced from
+capture by high eta fissile nuclides which should be accounted for with
+appropriate weights,
+
+Equating the worth of loss of a nuclide with the value of the
+
+excess neutrons generated, plus value of the capture product, gives
+44
+
+Yarn = wy og 4 - %a,n) + Vn ‘
+
+In a relative sense, Wy may be set to unity, leaving
+
+VO n Som
+—=2 _ 1+ ¥V . (48)
+
+0
+a,n a,n
+
+ 
+
+Of course this weighting ignores many aspects including design con-
+
+straints, and neutron balance requirements were not addressed.
+
+It is of interest to consider that worth of a nuclide in a reactor may
+be associated with its ability to produce useful energy. Thus an im-
+
+portance may be defined as the thermal energy generated per atom de-
+
+stroyed,
+0 .
+W =H _f,n , (49)
+n no
+a,n
+
+where H is the energy generated per fission. Worth of the capture
+
+product may also be considered,
+
+oO ag
+W =H LB y nm (50)
+
+n no
+a,n a,n
+
+ 
+
+This weighting cannot generally be very useful because of the high
+importance assigned to fertile material. Probably better is an average
+
+from Eqs. 47 and 48, or in the relative sense, essentially
+
+ 
+
+noo, (og - %,n + 9% .n + WO oom’ ' (51)
+b
+
+The worth of a nuclide supplied as feed can be expressed in terms of its
+
+worth in the specific reactor and the worths and amounts of other nuclides
+45
+
+produced by exposure. Such analysis is especially complicated by the
+need to account for worth of a nuclide as and where generated and also
+
+its worth as recovered for recycle feed. If the excess feed is for a
+second type of plant, performance of this plant must be considered. To
+
+be reliable, such analysis must consider not only the effects of exposure
+(the length of the exposure), but also satisfy basic design objectives.
+The fact that the use of one fuel nuclide as feed instead of another one
+decreases the doubling time of a breeder reactor or increases the con-
+version ratio of a converter reactor, indicates it has higher worth.
+
+Its relative worth must somehow be related to be real improvement realized
+
+from its use in an assessment which considers all aspects.
+
+Results for the above equations are shown in Table 2 for the more in-
+teresting nuclides under selected thermal reactor conditions using
+
+effective cross sections ignoring high energy effects.
+
+This array of results should indicate that while some weighting of the
+nuclides may be adequate for a specific purpose, it won't be for another.
+Importance in one reactor design won't be the same as in another. The
+subjects of fuel utilization and comparative reactor evaluation present
+
+challenges.
+
+A simple approximation of the mass balance of nuclide n in a reactor
+
+plant operation is
+
+F_(T) = T(X, - R) + z (T) >
+
+where for interval in time T the feed is F, the discharge Z, and X is
+the destruction rate and R the generation rate. Using effective cross
+sections and nuclide concentrations, and considering only primary
+aspects, the expression becomes
+
+F(T) = VoT(N 0 nC No, ) + z (T) .
+
+2
+Table 2.
+
+Relative Nuclide Worths
+
+ 
+
+Relative Nuclide Worth
+
+ 
+
+ 
+
+ 
+
+ 
+
+Data
+Equation
+VO
+Nuclide o, oF eta =5 44 45 46 47 48 49 50 51
+. a
+U23s 348 297 2.08 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0
+Uy236 12 0 0 -0.03 -0.08 0 -0.93 -1.07 0 0 -0.56
+y238 20 0 0 -0.05 0 0 -0.93 -0.11 0 1.01 0.41
+Pu?39 1200 780 1.88 2.81 2.66 0.90 0.81 0.91 0.76 1.01 0.97
+pu2h0 500 0 0 -1.33 -1.26 0 -0.93 -0.10 0 0.71 0.31
+Pu2tl 1060 750 2.14 3.22 3.05 1.03 1.06 0.91 0.71 0.71 0.87
+Pu?h2 40 0 0 -0.11 -0.10 0 -0.93 -1.07 0 0 -0.56
+
+ 
+
+9Y
+47
+
+For some situations it is appropriate to define a doubling time as that
+required to produce an excess of fuel equal in amount to the reactor
+
+contents. This is done here with weights assigned to the nuclides as
+
+LW, [7,(m) -F(D] =V L WN
+
+ 
+
+ 
+
+L LALA
+Ty = . (52)
+¢ L Ny (sm - W\%,n
+If we define a breeding ratio as
+L Wooo
+Cc = s
+L Wo ¥%,n
+T, = 1 (53)
+LY NWo
+a nna,n
+(c-1)¢
+L Na
+n
+
+Note that the doubling time so expressed is inversely proportional to
+the flux level (i.e., to the power level), and independent of the
+
+normalization of the weights assigned to the nuclides.
+Alternative definitions of the doubling time may be of interest.
+
+Consider that over period Tq the total feed to the reactor includes some
+
+initial loading so that the total feed is
+
+L w [F_(0) + F (Ty) .
+48
+
+The discharge may include some quantity at the end of a discrete period,
+
+total
+
+h
+L Wz (Ty) .
+
+The amount of fuel required to inventory a second plant is }, Ww F_(0).
+
+Doubling occurs when
+
+2 Wal, (Ty) - F(T] =L WFO ,
+
+ 
+
+1
+(tT) =
+‘ L n%,n
+c - ve | 2
+LF (OW
+n
+
+In a situation where quasi-equilibrium with recycle is considered, a
+
+fraction of the discharge material is used as feed,
+
+F(T) = £2.(T) + (TD) >
+
+where a nuclide dependence is shown as £ (chemical separation presumed
+but not isotopic, and make-up Sn allowed, as of fertile material) giving
+
+excess production of
+
+1 -£32(T) - 8 (T) =TR_ -X),
+
+leading to the same expression for the doubling time as above relative
+
+to the inventory, but
+49
+
+(T) =
+4 NWo
+
+nna,n
+n
+
+W_[s (T) + F (0)]
+
+(C - 1)Vv¢
+
+Special external feed complicates the situation, as does partial discharge
+and refueling of less than the whole plant each time. In its absence,
+
+or ignoring any contribution from external feed, the discharge and feed
+compositions are identical for quasi-equilibrium (equal £ for isotopes),
+
+So
+
+T 1 - 1 (54)
+
+ 
+
+regardless of which nuclide is referenced. The results are independent
+of any assigned weights, but not when different recycle fractions are
+
+involved as make-up.
+
+An idealized situation will be considered involving a fertile nuclide
+number 1 and a fissile nuclide number 2. Fission by the fertile nuclide
+will be ignored. The following quantities will be fixed:
+
+o ) - N.o
+
+N, (vo 1%a,1 neutron balance,
+
+£,2  “a,2
+
+Nyog of , power level,
+N, + N, , fuel pin loading.
+
+The conversion (breeding) ratio is calculated as
+
+(5) 9,1
+C = N5
+2 a,2
+50
+
+The doubling time is calculated as
+
+1
+
+d= /N, :
+¢ N, ‘a1 - cue)
+
+T
+
+Note that there are severe constraints. Certainly
+
+Ny(vog 9 = 9,0) > No, 4
+
+For C > 1,
+
+ag >
+
+a,2 o
+
+Z| =
+[=
+
+9 a,1 °’
+
+Perturbations about a reference case will be examined. For the refer-
+ence, selected values are o
+,2 = 20, ©
+ence conditions of N;/Ny = 6 and ¢ = 0.01 n/bn-yr (or 3.171 x 101%
+
+al" 5 for the fertile material and for the
+,
+
+fuel, 0, £,2 = 15, Vag 9 = 55, rather favorable. At the refer-
+n/em?-sec), the conversion ratio is 1.5 and the doubling time is 10
+years. Data for other cases considering different nuclear properties
+
+and results are shown in Table 3.
+
+Note from these results that a 20 percent reduction in the fertile
+nuclide cross section reduced the breeding ratio; however, compensation
+by adjusting the nuclide densities resulted in a gain from reducing the
+fissile inventory and a decrease in the doubling time. A 10 percent
+increase in the fuel nuclide absorption cross section resulted in a
+serious decrease in the breeding ratio and a large increase in the
+doubling time. These results are of interest when the effects of cross
+section uncertainties are considered: a difference in the fertile
+nuclide absorption cross section can be compensated for with much smaller
+
+effect on performance than difference in the fissile nuclide absorption
+
+cross section.
+Table 3.
+
+Results of Perturbing a Simple Situation
+
+ 
+
+ 
+
+Case a b c d e f g
+Fertile
+5, 5. 4. 5. 4 5. 5 5.
+Fissile
+o, 20. 20. 15. 16. 22. 20. 20.
+Of 15. 15. 12. 12. 15. 17. 15.
+Vo. 55. 55. 44, 44, 55. 55. 50.
+eta 2.75 2.75 2.75 2.75 2.5 2.75 2.
+eta-1 1.75 1.75 1.75 1.75 1.5 1.75
+vo=0_ 35. 35. 29. 28. 33. 35. 30.
+Fissile vo-o, plus fertile
+o, 40. 39. 34. 32. 38. 40. 35.
+c
+Last row xX 5 30. 29.25 27.2 24, 25.91 34. 26.26
+a
+Relative flux level 1.0 1.182 1.062 1.061 0.950 0.882 0.875
+Relative fissile inventory 1.0 0.846 1.176 1.179 1.053 1.0 1.143
+N;/Np 6. 7.273 4.952 4,935 5.650 6. 5.125
+Conversion ration, C 1.5 1.455 1.651 1.234 1.284 1.5 1.281
+Relative inventory + (C -'1) 2.0 1.86 1.81 5.04 3.70 2.0 4.06
+10. 9.31 9.65 25.1 16.8 11.3 20.3
+
+Doubling time
+
+ 
+
+1s
+52
+
+Considering the above cases apply to different fertile, fissile nuclide
+pairs, it is noted that any simple measure of fuel worth may be inade-
+quate to reflect performance. Keep in mind that a special situation was
+treated and several contributions have been ignored, including capture
+products, intermediate nuclides, fission of the fertile material, space,
+
+time effects, and so on.
+
+The effects of mixtures of these sets of nuclides can be considered in
+the uncoupled sense, and possible weightings assessed. Quite generally
+a fertile nuclide which has a large capture cross section plays a major
+role in fuel production while a fuel nuclide having a large absorption
+
+cross section is consumed preferentially.
+
+The worth of a nuclide as it exists while being consumed and produced in
+a reactor may be quite different than its worth as loaded. It is essen-
+tial in a reactor having a high breeding ratio, for example, to produce
+some fuel in the blanket where the reactivity importance is low; maximum
+fuel generation cannot be achieved if a reactivity increase associated
+with increase in the fuel inventory must be compensated with control rod
+absorptions. Certainly weighting reaction rates with the adjoint flux
+solution to the neutron balance equation will not satisfy needs for
+
+estimating nuclide worths.
+
+Special significance is attached to the worth of material loaded as
+
+fuel, and only careful assessment will produce this information. Some
+criteria is needed on which to base worths in the sense of fueling
+substitution. Quite generally, such substitution will cause a difference
+in performance. The doubling time for a breeder would be altered. It
+
+is likely necessary to perform a detailed economic analysis for a postu-
+lated future industry satisfying some specified demand load to adequately
+associate worth values to individual nuclides. In such assessment, it
+appears necessary to consider that the expanding capability will level
+out, and that more than one reactor concept will be involved, especially
+
+breeders fueling converters.
+53
+
+Standard Definitions, Recommendations
+
+The objectives of specifying reference or standard definitions are to
+
+promote uniformity, ease understanding and facilitate comparisons of
+
+results. Thus reference prescriptions could be offered for calculating
+
+doubling time, conversion ratio, fuel consumption, and fuel nuclide
+
+weighting. Considering that different objectives seem to require some-
+
+what different prescriptions, suitable reference prescriptions are not
+
+found.
+
+I.
+
+II.
+
+IIT.
+
+IV.
+
+Rather the following recommendations are made:
+
+Carefully document in detail the formulations used in generating
+
+results reported.
+
+Report conistent and complete information for assessment of fuel
+utilization (typically fuel mass balance, conversion ratio, energy
+
+per unit fuel destruction, doubling time).
+
+Qualify the importance of reported results regarding their merit
+considering the quality of the analysis; for example, extrapolation
+of information obtained at a newly fueled state to predict per-
+formance history, or analysis which ignores realistic requirements
+for heat removal and structural integrity (design constraints) is
+
+of limited utility.
+
+When detailed analyses are done, generate and report adequate
+
+information to support extended analysis:
+
+1. Detailed mass balances for the actinides including make-up
+and recycle feed, recoverable discharge, and internal and
+external inventories.
+
+2. Neutron balances showing primary neutron reaction rates in the
+actinides.
+
+3. Fuel utilization information including an assessment of worth
+of those fuels which may reasonably be expected to be available
+
+for feed including that produced and recoverable for recycle.
+
+Certain information is of special interest when breeder reactors
+
+are studied, and should be reported:
+54
+
+1. Inventory doubling time using external feed.
+
+2 Inventory doubling time with recycle (quasi-equilibrium).
+3. An early industry doubling time.
+
+4, Worth of excess product in a second reactor type (usually a
+
+converter).
+
+For an early industry doubling time, it is recommended that starting
+with a new plant, a second, third, and fourth plant be fueled using only
+produced, recovered fuel after refueling requirements have been satis-
+fied with reasonable delay in availability for refueling. Half of the
+time from when the first plant must be fueled to the time the fourth
+plant can carry full load is a measure of doubling capability in an
+early industry, of considerable interest along with the amount of fuel
+
+which is required as external feed.
+
+An industry composed of a mixture of breeder reactors and converters is
+distinct possibility for the future. Thus it is of interest to assess
+the worth of recovered fuel in excess of refueling requirements as
+converter reactor feed. Other reasonable possibilities should also be
+examined. For example, one type of design may be proposed to produce
+much fuel to inventory a second type; not only is the early history of
+plants coming on line of interest, but also a future time when there
+could be three different types of plants involved, one a converter (or
+
+perhaps the first type would phase out).
+
+A complete analysis includes an assessment of reliability and uncer-
+
+tainty in reported results, The assessment should cover the data and
+the methods employed and the specific formulations applied. Lacking
+
+other techniques, the effects on the results may be displayed for
+
+perturbations.
+55
+
+Uncertainty
+
+The uncertainty in a reported value for a quantity which can not be
+uniquely defined independent of the situation may naturally be assumed
+to be large and the quantity probably unreliable for general use. Such
+is the case regarding conversion ratio, Mass balances for the nuclides
+of interest are judged here to be basic data and uncertainty in reported
+values is of considerable interest. Given uncertainty information for
+the reference data (nuclide concentrations and broad-energy-group micro-
+scopic cross sections), hopefully uncertainty in the calculated mass
+
+balances can be established.
+
+To study the uncertainty associated with a quantity which depends on
+reaction rates, Equation 13 for the conversion ratio will be addressed.
+An alternative formulation would not significantly alter the aspects
+
+addressed here.
+
+The change in conversion ratio from any cause is given directly in the
+
+limit of zero change by
+
+ 
+
+where x refers to most any variable. The collective effect of a number
+
+of changes is given, to first order, by
+
+8X, TI (55)
+56
+
+where § refers to a change in the quantity following it (as of a nuclide
+
+concentration or of a microscopic cross section).
+
+Let us consider an appropriate, specific neutron balance for a reactor
+
+at some point in time:
+
+Capture rate in fertile material 0.48
+Absorption rate in fissile material 0.40
+All other neutron losses 0.12
+
+Total 1.00
+
+This data yields a value of the conversion ratio,
+
+_ 0.48 _
+C= 0.40 1.20,
+
+a breeding condition of course.
+
+Consider that there are uncertainties associated with the reaction rates.
+If there is a 95 percent confidence level of +5 percent in each (normal
+distribution) an approximate 95 percent confidence level of uncertainty
+
+in C is given from the skewed probable distribution by
+
+0.48 + 0.024 _ +0.082 _ +0.068
+C= 0.20 + 0.020 1:20 5.076 = 1-20 E 0.063
+
+If these uncertainties were of equal density over fixed bands of #5
+
+percent, direct calculation gives the extremes of uncertainty in C as
+
+_ +0.126
+¢=1.20 4 114
+
+however, the probablity density drops off to zero at the extremes.
+57
+
+When uncertainties are normally distributed and quantities are additive,
+
+the appropriate formulation is
+
+1
+
+Bto = (34) + Yo? , | (56)
+
+where the quantities Y sum to the result B and may individually be posi-
+tive or negative. Note that ¢ here refers to standard deviation (not
+cross section); it may represent one standard deviation or any multiple
+of it. A different form is desired for use here, one involving relative
+
+uncertainties,
+
+(57)
+
+ 
+
+i = fY B = Y., .
+since oy iti > i
+
+Considering the form of the uncertainty contribution, Equation 26, the
+
+appropriate weighting here evidently is
+
+ 
+
+w
+
+C(lL +f) =
+
+_£ + 2 2 }
+od =X, liege +f, . (58)
+precise only for f£ = 0,
+
+aR
+] _ 1 c .
+where typically £, = R_ 2 8%, aX, . Using the data above
+
+.
+1
+58
+
+_ 0.48 2 2 | _
+CL: £) =o {i + Y (0.05) + (0.05) = 1.20 [1 + 0.071].
+
+This result is in substantial agreement with the first result above.
+However, one must address the situation carefully and be especially wary
+of the precision and meaning of uncertainty estimates, especially so when
+
+they are large.
+
+Importance weighting may be applied given an appropriate function ¢* which
+satisfies the specific situation within applied constraints .? Typically,
+the local importance of capture by a fertile nuclide relative to the total
+
+importance is given by
+
+1 *
+1, Mao E) ¢ (r,E) $ (r,E)drdE,
+
+where
+
+I - [fxr wo em ¢ (r,E) ¢*(r,E) dEdr.
+r En
+
+A change in N or 0 is expected to have a local relative importance of
+
+i SIN, (r) o_ (n,E)] ¢ (r,E) ¢* (x,E) dEdr.
+
+And the total of the contributions is the sum. Similarly there is a contribution
+
+to the fuel absorption term, and a direct result is obtained from Equation (38).
+
+A suitable weighting function is not simply defined; refer to the
+expanding amount of literature on the subject and consider that
+objectives may not be satisfied by simply improving the conversion
+ratio.
+29
+
+Generally it would be fundamentally incorrect to report an uncertainty
+
+in the conversion ratio based on the above or similiar analysis. Con-
+sider the uncertainty in the microscopic capture cross section of a
+fertile nuclide. If the cross section was actually higher than the value
+used, the fertile loading might simply be reduced, thereby effecting about
+the same reaction rates; the attempt would be made to hold No constant
+in some integral sense. Consider that the cross section of structural
+material was high; a lower value allows decrease in the fissile-to-fertile
+nuclide ratio to effect a critical system which would be expected to
+increase the conversion ratio. Yet the above equations do not consider
+this aspect. More sophistication is deemed necessary. It may generally
+be necessary to consider any specific situation special to assess the
+uncertainty because of practical considerations. In analysis of a core
+which satisfies design, performance requirements, some changes may be
+admitted, others not. It will be assumed here that the heavy metal
+content of the fuel pins or plates (the total inventory) can not be
+
+adjusted.
+
+A reactor plant is maintained at the state of criticality on the average
+during its operation. Generally the estimate of fuel conversion is accurate
+only if the calculation is an accurate approximation to this state;
+
+otherwise, there is a direct contribution of uncertainty. When there is
+a swing in the reactivity (control absorber requirement) then end-of-cycle
+
+conditions must be satisfied; these may include a small amount of neutron
+
+loss to control rods to allow operation. Those uncertainties which lead
+60
+
+to uncertainty regarding the satisfaction of end-of-cycle conditions will
+make a direct contribution to the uncertainty in the estimate of any
+neutron reaction rate integral, in conversion ratio and in doubling time
+
+of a power industry consisting of breeder plants.
+
+Example Effect of Uncertainty on Breeding Ratio
+
+The situation is considered where it, is possible to adjust integrated
+reaction rates in the heavy metals, as by changing concentrations, the
+fertile and fissile loadings, or the positioning of specific fuel assem-
+blies to alter importance. The assumption made is that if the absorption
+rate in fuel is adjusted a given amount, the capture rate in fertile
+material changes an equal amount of opposite sign. The equations for
+
+breeding ratio and the multiplication factor applied are
+
+R
+B=
+
+. NA
+
+“a+rR+x "1 (n-1)A = R + X
+
+where
+B = the primitive breeding ratio
+R = the neutron capture rate in fertile material
+A = the neutron absorption rate in fuel
+X = all other neutron losses
+n = neutrons generated per neutron absorbed in fuel in the integral
+
+sense (mo = vo).
+61
+
+The primary properties of the fuel are considered here to be % and n.
+(See later discussion.) Consider that R is uncertain by AR. Allow
+some adjustment within the constraint of k=1: (n-1)6A = 6R + AR. As
+a first-order approximation, assume SA = -6R which might be effected by
+
+adjusting concentrations,
+
+— rN ——— a —
+
+‘(n-1)8A = 6R + AR = -6A + AR ;
+
+Consider n = 2.5 and initial values
+
+ 
+
+Start AR = -.05 Adjusted
+
+‘A 4 4 .38
+
+R i] 45 47
+
+X 1 Al Al
+SUM 1.0 95 .95
+nA 1.0 1.0 .95
+
+B 1.25 1.125 1.237
+AB -.125 | -.013
+
+AB (R
+B (%) 1.0 0.1
+62
+
+Consider that A is uncertain by AA.
+
+(n-1) (SA + AA) = SR
+
+Assume SA = -0R;
+
+(n-1) (SA + AA) = =A
+
+(n-1)AA + n6A = 0 3
+
+SA = -(n-1)AA
+n
+
+sr = n-L)AA
+n
+
+AB _ SR _ (SA + AA)
+
+ 
+
+ 
+
+B R A
+AB _ MA n-1-38
+B A nB ’
+AB A _n-1-8
+B AA nB
+Start AA = +.05 Adjusted
+A A 45 42
+R .5 «5 .53
+X ol .1 .1
+SUM 1.0 1.05 1.05
+nA 1.0 1.125 1.05
+B 1.25 1.111 1.262
+AB -.139 +.012
+AB [A
+B (%) -.89 .077
+63
+
+Consider that n is uncertain by An.
+
+AAn + (n-1)8A = 6R
+Assume SA = -0R; AAn + (N-1)8A = -6A
+
+AAN + NGA =0
+
+ 
+
+ 
+
+ 
+
+sa = -480
+n
+sr= do
+n
+
+AB _ SR - 8A = An +A ;
+
+B R A Rn n
+
+AB , An |B + 1| ;
+
+B n B
+
+AB n _B+1
+
+B Mn B
+
+Start An = -.05 Adjusted
+A Wh oh .408
+R «5 «5 .492
+X .1 Ll .1
+SUM 1.0 1.0 1.000
+nA 1.0 .980 .9996
+B 1.25 1.25 1.206
+AB -.044
+AB (A
+B (&) 1.76
+64
+
+Consider that X is uncertain by AX.
+
+(n-1)6A = 8R + AX
+
+Assume SA = -6R; néA = AX;
+sa = 22
+Toon
+6r = 2X ;
+n
+AB | -AX _ AX -0X (X{L if,
+B ~~ Rn An X InjIlrR A[?
+
+ 
+
+wig
+w=
+
+RR
+
+1
+=|
+3
+= [>
+—_
+
+=
+w+
+=,
+
+»
+
+Start AX = .05 Adjusted
+A 4 4 42
+R .5 5 , 48
+X 1 .05 .15
+SUM 1.0 .95 1.05
+nA 1.0 1.0 1.05
+B 1.25 1.25 1.143
+AB 0 -.107
+
+AB fX -
+3 (%) 171
+65
+
+The results for the approximation equations are summarized below; they are
+
+adequate approximations.
+
+ 
+
+ 
+
+ 
+
+ 
+
+Contributor Relative Equation Example
+
+Fertile Capture 2 (5) h-1-8 ‘0.10
+B AR n
+
+Fuel Absorption (4) R-1-8 0.08
+B A nB
+AB [n B+1
+
+Fuel n B (3) B 1.8
+AB (X_ -X (B+1
+
+Other Losses B (%) nA ( B ) 0.18
+
+Clearly the relative error in n is of primary concern. Some results are
+sensitive to the specific values of n and B and therefore quite dependent
+on the specific situation. Finally, the analysis presupposes that the
+adjustments can be made--are not only physically possible but reasonable
+within core design restraints--and that the low order approximation of
+importance produces reasonable results. It is quite likely that imposing
+physical and practical constraints causes symmetrical uncertainty data
+
+(as of cross sections) to produce unsymmetrical uncertainties in results.
+
+Note that the compensation significantly reduced the effect of uncertainty
+in reaction rate on breeding ratio for capture in fertile or absorption
+
+in fissile material:
+66
+
+ 
+
+ 
+
+Contributor Relative Effect
+Uncompensated Compensated
+Fertile Capture 1.0 0.10
+Fuel Absorption -0.89 0.08
+Fuel n 0 - 1.8
+Other Losses 0 -0.18
+
+ 
+
+Of course if the "other losses are uncertain, there will be an effect on
+the conversion ratio, not reflected by the uncompensated result. So the
+neutron balance must be considered. If a core design has been optimized
+with reference cross sections, it may not be possible to achieve the full
+reduction in uncertainty indicated above from the uncompensated ease to the
+
+compensated one.
+
+Uncertainty in the value of 1n of the fuel is identified as of most impor-
+
+tance in the situation considered above.
+
+It is also of interest to consider that more than one fertile nuclide and
+
+more than one fissile nuclide are involved. Consider two of each.
+
+Since AB = + ey (2 + te)
+= = ’
+B RFR, A +A,
+RAR \ 6, | R,
+B © ER |R +R, R, |F *]
+ea oa ey oa,
+A | A +A A, |a +4
+
+=
+=
+No
+No
+=
+nN
+67
+
+Thus the uncertainty contribution to that in B from a specific nuclide is
+
+proportional to its relative contribution to the total reaction rate of
+
+the type of interest.
+
+When two fuels are involved, we should consider the effect of uncertainty
+
+in n specifically;
+
+consider
+
+Assume
+
+and that
+
+&, (ny~1) + A,(n,-1) =R+X
+
+A bn, + SA; (n;-1) + 84, (n,-1) = §R
+
+SA, + SA, = -6R
+
+A 2
+
+SA. OA A
+—3 = —2 or that 6A, = 32)
+1 2
+
+A, Al +A,
+Abn, + 8A, [(n-1) + x (n,~1)] = -6A, EK
+
+A? )
+SA, = -An —_—
+1 1 (= + Ayn,
+
+AA
+21
+SA, = -An tn
+2 1 Any + Ayn,
+
+6R = +An Aj (A) + AY)
+Ang + Ayn,
+68
+
+BB. oan (252) A ) :
+B 1 B Ang + An,
+
+B An B Any + Aon,
+
+a weighting on the relative amount of neutron production.
+
+It may be desirable to re-interpret the basic cross section data of the
+fuel. Let us consider that v is known and that the equations are given by
+
+considering the fission rate F and the capture rate y in fuel.
+
+ 
+
+=~
+n
+
+vF
+
+Fru +R+x 1
+
+without compensation,
+
+ 
+
+ 
+
+ 
+
+That is
+
+AB(F }___F _ __E .
+
+B SF F+0U A
+
+sR (U_ u_ =-2
+
+B 6U F+U
+Consider compensation in the sense of SA. = -6R, given uncertainty in F or
+U. Assuming -6R = 6A = &U + 6F and oa = ot , the compensated results
+
+obtained are:
+69
+
+AB[F \ v-1\(/B+1)_ B }
+
+(x) | v )( B ) 2
+
+._U [(UuB2+RB+R .
+vF BR
+
+Consider the example case above and letting U = 0.12,
+
+AB(F \  _
+22) 0 |
+
+AB (U\
+3 (i) - 0.24
+
+Without compensation, these have values of -0.7 and -0.3 respectively.
+Assuming that such compensation is necessary and can be achieved, the
+indication is that uncertainty in either the fuel fission cross section
+
+or the fuel capture cross section leads to more uncertainty in the breeding
+ratio ( with compensation) than does the uncertainty in the fertile
+material capture cross section (or than the absorption cross section of
+
+the fuel given n), in the relative sense. Reasonable compensation does
+
+not as dramatically reduce the associated uncertainty in the breeding
+
+ratio as it can in the case of fertile capture.
+
+It is noted that a more sophisticated mathematical analysis of uncertainty
+is desirable than the rather pedestrian discussion above.l0 Still there
+1s considerable utility in applying such analysis to assess the situation
+in a direct way which is readily understood if the limitation on inter=~
+
+pretation and use of such results is recognized.
+70
+
+There is difficulty associated with analysis of the effects of uncertain-
+ties assoéiated with cross sections. Establishing realistic uncertainty
+
+data is quite difficult considering the nature of experimental measurements.
+
+Also, data is normalized in some sense to effect agreement with integral
+
+measurements in the generation of "evaluated" data which is then used in
+
+analysis; this procedure reduces uncertainty of the data, but the remaining
+
+uncertainty is not easily established. Quite generally the analyst attempts
+a reasonable assessment by selection from the possibilities. Often aspects
+
+not considered lead to more uncertainty than predicted, while results are
+
+reported as if they were absolute.
+10.
+
+71
+
+M. W. Rosenthal, et al., "A Comparative Evaluation of Advanced Con-
+verters,' USAEC Report ORNL-3686 (January 1965).
+
+H. L. Wyckoff and P. Greebler, "Definitions of Breeding Ratio and
+Doubling Time," Nuclear Technology 21: 158 (1974).
+
+NUS Corporation, "Guide for Economic Evaluation of Nuclear Reactor
+
+Plant Designs," USAEC Report NUS-531 (January 1967).
+
+P. V. Evans, Ed., "Appendix: Definitions of Fast Reactor Breeding
+and Inventory," Proc. London Conf. Fast Breeder Reactors, p. 947,
+Pergamon Press, New York (1967).
+
+K. 0. Ott, "An Improved Definition of the Breeding Ratio for Fast
+Reactors, ' Trans. Amer. Nucl. Soc. 12: 719 (1969).
+
+P. Goldschmidt, "Breeding Ratio for Fast Reactors,'' Nucl. Appl.
+Technol. 9: 450 (1970).
+
+C. R. Adkins, "The Breeding Ratio with Correlation to Doubling Time
+and Fuel Cycle Reactivity Variation," Nucl. Technol. 13: 114 (1972).
+
+R. W. Hardie, R. P. Omberg and R. B. Rothrock, "Implications of
+Recent Trends on LMFBR Performance Characteristics," ANS Atlanta
+Topical Meeting (September 1974).
+
+Karl 0. Ott and Robert C. Borg, ''Derivation of Consistent Measures
+
+for the Doubling of Fast Breeder Reactor Fuel," Purdue University
+PNE-76-108 (March 1976).
+
+G. P. Cecchini and M. Salvatores, "Advances in Generalized Pertur-
+bation Theory," NS & E Technical Note, p. 304 46 (November 1971).
+WoL BW
+
+14,
+15.
+16.
+17.
+18.
+19.
+20.
+21.
+22.
+23.
+24,
+25.
+26.
+27.
+28.
+29.
+30.
+31.
+
+86-87.
+
+88.
+
+73
+
+ORNL/TM-5050
+
+INTERNAL DISTRIBUTION
+
+Abbott
+
+. Allen
+Bartine
+Bennett
+Chapman
+
+. Childs
+
+Cox
+
+Cramer
+Culler
+Cunningham
+Delene
+Drischler
+Engel
+Engle, Jr.
+Flanagan
+Bord
+Fowler
+Gift
+Goldstein, consultant
+. Greene
+Jenkins
+Kerr
+Lillie
+Maienschein
+Miller
+Mynatt
+Nestor
+Oblow
+
+. Peelle
+
+TRH ICZ2ECO@EEEERON
+
+ATH OHPHEHRDDGUEODEEE OIC OHNO IHEP
+
+IREmSOPHUOR
+
+32.
+33.
+34.
+
+35.
+
+36.
+37.
+38.
+39.
+40.
+41.
+42,
+43.
+44,
+45.
+46.
+47.
+48-58.
+59.
+60.
+61.
+62.
+63.
+64.
+65.
+66-67.
+68.
+69-70.
+71.
+72.
+73-85,
+
+G. Perey
+
+M. Perry
+
+. M, Petrie
+
+Postma
+
+Prince
+
+Reed
+
+Rhoades
+
+Robinson
+
+Selby
+
+. Simpson
+
+Sims
+
+Swanks
+
+Tang
+
+Thomas
+
+Tobias
+
+Tomlinson
+
+Vondy
+
+Weisbin
+
+. Whitesides
+
+. Zucker
+
+aul Greebler, consultant
+
+W. W. Havens, consultant
+
+A. F. Henry, consultant
+
+R. E. Uhrig, consultant
+Central Research Library
+Y-12 Document Reference Section
+Laboratory Records Department
+Laboratory Records, ORNL, RC
+ORNL Patent Office
+
+NPD Reports Office
+
+F
+A
+L
+H
+B
+D
+W
+J
+D
+D
+T
+J
+J
+M
+D
+C
+G
+
+mE ITH FEED RECO E
+
+Ww
+E
+A
+P
+
+EXTERNAL DISTRIBUTION
+
+Energy Research and Development Administration, Division of
+Reactor Development and Demonstration, Washington, DC 20545:
+
+Director
+
+Energy Research and Development Administration, Oak Ridge Operations,
+Research and Technical Support Division, P. 0. Box E, Oak Ridge,
+
+TN 37830: Director
+89-115.
+
+116.
+
+117.
+
+118.
+
+119.
+
+120.
+
+121.
+
+122,
+
+123.
+
+74
+
+Technical Information Center (TIC)
+
+Paul Dickson, Westinghouse Advanced Reactors Division, P. O.
+Box 158, Madison, Pennsylvania 15663
+
+Dick Doncals, Westinghouse Advanced Reactors Division, P. O.
+Box 158, Madison, Pennsylvania 15663
+
+Ralph Cerbone, Manager, GCFR Nuclear Analysis Branch, General
+Atomics, Inc., P. O. Box 81608, San Diego, California 92138
+
+Wolfgang Barthold, Argonne National Laboratory, 9700 South
+Cass Avenue, Argonne, Illinois 60439
+
+Bob Neuhold, Energy Research and Development Administration,
+Washington, D. C. 20545
+
+John Lewellan, Energy Research and Development Administration,
+Washington, D. C. 20545
+
+Phil Hemmig, Energy Research and Development Administration,
+Washington, D. C. 20545
+
+Sterling Bailey, General Electric Company, Breeder Reactor
+Department, 310 DeGuigne Drive, Sunnyvale, California 94086

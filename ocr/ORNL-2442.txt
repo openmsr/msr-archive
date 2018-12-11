@@ -1,0 +1,1824 @@
+       
+    
+   
+  
+   
+
+CENTRAL BEATARCH LIBRARY
+DCCUMENT COLLECTION
+ORNL-2442 cy 79
+C-84 - Reactors = Special ford
+AEC RESEARCH AND DEVELOPMENT REPORT of Aircraft Reactors =
+M-3679 (20th ed., Rev.) 3A
+
+@®
+
+GC
+
+THERMAL STRESS ANALYSIS OF THE ART HEAT
+
+Zs
+
+LASSIFIER
+
+oud
+
+.
+
+EXCHANGER CHANNELS AND HEADER PIPES
+
+i:
+
+te
+
+EY D. L. Platus
+
+2
+
+14
+
+3.5 CENTRAL RESEARCH LIBRARY
+3 DOCUMENT COLLECTION
+
+3 i LIBRARY LOAN COPY
+i i DO NOT TRANSFER TO ANOTHER PERSON
+
+    
+   
+
+If you wish someone else to see this
+document, send in name with document
+and the library will arrange a loan.
+
+ 
+
+OAK RIDGE NATIONAL LABORATORY
+operated by
+UNION CARBIDE CORPORATION
+for the
+U.S. ATOMIC ENERGY COMMISSION
+ 
+   
+
+ORNL -2442
+
+C-84 - Reactors =~ Special Features
+of Aircraft Reactors
+
+M-3679 (20th ed., Rev.)
+
+This document consists of 38 pages.
+Copy 77 of 227 copies. Series A.
+
+Contract No. W~7405-eng-26
+REACTOR PROJECTS DIVISION
+
+THERMAL STRESS ANALYSIS OF THE ART HEAT
+
+EXCHANGER CHANNELS AND HEADER PIPES
+
+D. L. Platus
+
+DATE ISSUED
+
+MAD © A109
+
+amg
+
+0 SOAR RIDGE NAT TONAL LABORATORY
+” ak: Ridge, Tennessee
+“This do pr BEE
+defined | nati operated by
+
+   
+ 
+
+vo smn common i
+
+ 
+
+ 
+
+ 
+
+   
+
+© mie 3 4uSh 03b1227 7
+
+ 
+ 
+
+ 
+
+ 
+ 
+
+NOMENCLATURE
+
+Subscripts on Deflections:
+
+ 
+
+5%,8y,82
+ép, én
+
+§9, 8g, SQ angular deflections with rotation vectors parallel to x-, Y=,
+
+Spr 8,
+
+deflections due to in-plane bending of channel
+deflection due to out-of-plane bending of channel
+deflection due to rigid-body rotation of plane of
+channel about y-axis
+
+deflections due to relative thermal expansion of channel
+
+deflections due to deformations of header pipe
+
+rectangular coordinates
+
+coordinates of point b
+
+distance from origin to point b
+
+angle between negative x-axis and ob
+
+radius of curve of channel
+
+maximum radius of header pipe
+
+length of header pipe
+
+directions in xz-plane, parallel and normal to plane of
+curve, respectively
+
+deflections parallel to x-, y-, and z- axes, respectively
+
+deflections in plane and normal to plane of curve, respectively
+
+and z- axes, respectively
+
+angular deflections with rotation vectors parallel to p and n,
+
+respectively
+
+forces parallel to x- and z- axes, respectively
+
+ 
+M
+
++ 9
+
+9
+
+5
+
+—
+
+Bolg dt
+
+G2
+
+forces parailel to p and n, respectively
+moments parailel to X=; y-, and z- axes, respectively
+
+Tmo
+
+moments paraliel to p and n, respectively
+moments tangent, radial, and normal to plane of curve at
+squator, respactively
+
+resultant bending moment acting on header pipe
+
+x= and y= components of M,
+
+1
+
+normal stresses
+
+i.
+
+stresses due to ip-piane bending of channel
+
+stresses due to out-of-plane bending of channel
+
+in
+®)
+
+shear stress or twisting stress
+a functicn of the cross section used in calculating shear stress:
+
+a function of the section used in calculating torsional
+
+n
+
+Ios
+
+un
+
+rigidity
+
+moment of inertia of channel cross section about an axis
+
+radial to the curve
+
+moment of inertia of channel cross section about an axis
+
+normal to plane of curve
+
+section modulus of channel about an axis radial to the curve
+section modulus of the channel about an axis normal to the curve
+moment of inertia of cross section of header pipe
+
+polar moment of inertia of cross section of header pipe
+poisson's ratic
+
+modulus of sliasticity
+E
+
+shear modulus, G = NL +7)
+
+==Bpg coefficients in set of linear algebraic equations
+
+linear coefficient of expansion; angle describing direction of My
+
+temperature
+   
+
+AES
+
+BAR Rg a
+Exe sp A, y oo
+55 Ps sates. is Cy }
+
+A Cf
+poh EE ————
+
+THERMAL STRESS ANALYSIS OF THE ART HEAT EXCHANGER
+CHANNELS AND HEADER PIPES
+
+ 
+  
+    
+
+This report summarizes the study which was made to determine the
+stresses; deflections, and the forces and moments acting on the ART
+heat exchanger channels and header pipes due to relative thermal expan-
+
+sion between the channels and the pressure shell at full power operation.
+
+Introduction
+
+Figure 1 shows a sketch of a channel and header pipes, and a portion
+of the pressure shell to which they are connected. During full power
+operation the temperature of the channel will be higher than that of the
+pressure shell, and thereby produce relative thermal expansion. The
+resulting forces and moments will cause deformation of the channel, the
+header pipes, and the thermal sleeves which connect the pipes to the pres-
+sure shell. The stresses due to these loads will be transmitted to the
+incoming NaX piping.
+
+Figure 2 shows the idealized system used for the analysis. The
+channel was treated as a semi-circular-arc curved-beam connected directly
+to the header pipes, which were treated as cantilever beams. This analysis
+assumes that there is no deformation in the incoming NaK piping, or in the -
+thermal sleeves. It is expected that this assumption will yield an ade-
+quate initial estimate for the analysis of the channel.
+
+Because of symmetry it was sufficient to consider only one-half of
+the channel and one header pipe. The channel was assumed fixed at the
+
+mid-point and the deflections due to the relative thermal expansion were
+
+applied to the system. Elastic theory was assumed for all calculations.
+
+ 
+FIG.1- SKETCH OF CHANNEL, HEABPER PIPES AND ORIENTATION IN
+REACTOR
+ORNL -LR-DWG. 27494
+INLET |
+NaK PIPE [|
+
+ 
+
+NORTH CC)
+HEADER
+1 \_
+
+   
+   
+ 
+
+ 
+
+x
+Oo
+5 PRESSURE
+< SHELL
+wl
+oc
+oH .
+SECTION A-A
+I
+LINER (XX)
+SOUTH
+| HEADER
+1 if. -THERMAL
+Hl SLEEVES .
+OUTLET
+NaK PIPE
+
+—
+ORNL-LR-DWG. 27495
+
+ 
+
+ 
+
+FIG.2—- SKETCH BEAM STRUCTURE USED TO
+APPROXIMATE CHANNEL AND HEADERS
+
+eT
+
+-5=
+
+ 
+RR
+
+Thermal Expansions
+
+The total vertical expansion of the channel relative to the
+pressure shell was reported in ART Design Memo 8-D-5 as 82 mils.
+This was assumed to be distributed equally between the sections
+above and below the mid-point, so that 41 mils was the vertical
+deflection used in the calculations.
+
+For the radial expansion, the channel was assumed to be at an
+average temperature of 1425°F and the pressure shell at 12Lo°F,
+Taking the radial position of the header pipes to be 19.59 inches,
+this gives a radial deflection of 32 mils,
+
+Method of Analysis
+
+Deflection equations were written to determine the forces and
+
+moments acting on the channel at point b, from the thermal expansions
+
+applied between points a and c. The coordinate system is shown in
+Fig. 3. Since the channel is free to grow radially, forces were not
+applied in the y-direction. The modes of deformation included in-
+plane and out-of-plane bending of the channel from flexure and torsi
+and deformation of the header pipe by flexure and torsion.
+
+The deflections for point b due to deformation and rotation of
+
+on
+
+the
+
+channel may be expressed by the following equations, in which the sub-
+
+scripts refer to the modes of deflection.
+
+dx = xp + Sx + Sx,
+Sz = Szp + Sz), + dz,
+do = dep + doy
+Sg = Oy + S¢.
+Sy = Srp + 81g
+
+we
+
+wb. wR
+
+(1)
+(2)
+(3)
+(1)
+(5)
+
+ 
+ 
+
+ORNL -LR-DWG. 27496
+
+ 
+
+ 
+
+FIG.3- COORDINATE SYSTEM SHOWING FORCES AND MOMENTS
+ACTING ON CHANNEL AND, HEADER PIPE
+
+-7-
+
+ 
+aM
+
+The relative thermal expansions applied between points a and c
+must be equal to the differences in the deflections of point b caused
+by deformations of the channel and those caused by deformations of the
+header pipe. Hence, the following relations may be written, in which
+the subscripts T and H refer to the applied relative thermal expansions
+
+and the deflections due to deformation of the header pipe, respectively’.
+
+Sx + Sx + 8x, - Sxg = Sx, (6)
+Sz, + Sz + dx, = = Sz, (7)
+Sep + Soy -Sey = 0 (8)
+SB, +S. - Sf; = © (9)
+§7p +87 = Sry = O (10)
+
+By expressing the deflections in Eqs (6) through (10) in terms of
+the loads acting on the channel at point b, a set of equations results
+from which these loads may be determined. Since the rigid body rotation
+of the plane of the channel about the y-axis is an unknown in addition
+to the five loads Fos Fs Ms Mv, and M, an additional equation is re-
+
+quired, and may be written by summing moments about the y-axis.
+
+IM, = My +Fz -Fx = 0 (11)
+Deflections From In-Plane Bending of Channel
+
+It is seen from Fig. 3; that the force and moment producing in-
+plane bending of the channel are P and Myo These may be resolved into
+
+forces and moments parallel to the coordinate axes.
+
+P = F sin g - F, cos ¢ (12)
+
+My = M_sin ¢ + M, cos ¢ (13)
+
+1. The applied relative thermal expansions are taken as positive for both
+the x and z directions. Note also that the deformation of the header
+pipe in the z direction has been neglected.
+
+a. _
+
+-8- *
+The deflections due to these loads with respect to the p- and
+
+: 2
+n- axes are given by
+
+2
+5 Mp
+§& = I Fm (14)
+P I EL, © EI
+2
+- Pr 7
+$v - ET, + 2 BI, (15)
+
+Resplving these deflections into components along the coordinate axes,
+
+xp = «8p cos ¢ (16)
+dz, = &p sin § (17_
+Je, = &Y_ sin ¢ (18)
+Srp = JY, cos ¢ (19)
+
+Substituting Eqs (12) through (15) into Eqs (16) through (18),
+
+3
+$x = I FT (F, cos § - F, sin §) cos ¢
+(20)
++ mr sin ¢ + M, cos ) cos ¢
+ro
+Szp = - Le (7, cos § - F, sin @) sin ¢
+N
+(21)
+
+2
+* ET (M, sin ¢ + M, cos @) sin ¢
+
+2, See Ref. 1, Part 1, PP. 7-8,
+
+ 
+2
+dep = mT (F, cos § - F, sin @) sin ¢
+(22)
++ Tar (M, sin ¢ + M cos @) sin ¢
+re
+§7p = i (F, cos g - F, sin @) cos ¢
+(23)
++ Zr (M, sin @ + M, cos @) cos ¢
+
+Deflections From Out-of-Plane Bending of Channel
+The force and moments producing out-of-plane bending of the channel
+
+are N, Mp, and Me Resolving N and My along the coordinate axes,
+N = F_ sin ¢ + F, cos ¢ (24)
+M, = M sin ¢ - M_ cos @ (25)
+
+The deflections due to these loads with respect to the n, p, and y
+3
+
+axes are given by
+
+ty 1\ i RE WARE
+Sn = wr” [14 (2 - 2) | + &® = —z z. = - xe - 1) ces)
+
+D
+
+3, See Ref. 1, Part 2, pp. 13-16,
+
+. xX
+. x
+
+-10-
+
+ 
+
+ 
+2 Mr
+SNe 1,1 AoA) xX LL
+Vp = 3 Ca + For CE > % (27)
+
+2 r
+Nr 1 Ni]. Vp 1 x 11
+ty == z ET, © € - Ly | 2 B- %) tM & * %) (28)
+
+Resolving &'n and SY, into components parallel to the coordinate axes
+
+$xy =n sin ¢ (29)
+82; = dn cos ¢ (30)
+Sry =9Y, sin ¢ (31)
+Joy = - Yi, cos ¢ (32)
+
+Substituting Eqs (24) through (27) into Egs (28) through (32),
+
+Je, SEs singer cos 9) | 5T (2 - 1% z |
+
+(33)
+11 1,1
+- 5 (M, cos § - Mu, sin §) Es
+F¥y = r(F, sin ¢ + F, cos 0) 1% + - 2) sin ¢
+22 1 .
+- 5 (M, cos § - M, sin ?) (% I a sin ¢ (34)
+
+2
+. on | I) Ls
+* >, [1 FI e-D]ens
+
+ 
+ 
+
+dry
+
+Joy
+
+2
+
+2a
+2
+2
+
++
+
+2
+
+it
+
+(M, cos § - M, sin ))
+
+r TT 1 amy 1
+Zo, | =-(-D&
+
+vo.
+
+wah
+
+1 1
+FI, + %) cos @
+
+cos ¢
+
+r . 1 1 .
+= (F, sin § + F, cos @) snd
+
+. 1 .
+- Lr (M cos ¢ -M sing) 5+ a) tn
+
+Tr 1 1 .
+En (F-&) sin ¢
+
+P
+
+2
+r . 1 1
+=- = (F, sin ¢ + F, cos 0) (2 + =) cos
+
+T
+
+r
+oz M (5
+
+I
+
+I . 1 1
++r (M, cos § - M, sin ¢) 3 &) cos ¢
+
+1 Sy
+== - -=— | cos @
+p BK
+
+1 Jos @
+
+Jz, = r(F, sin § + F_ cos 0 Fok (2 - 2 ox
+
+(35)
+
+(36)
+
+(37)
+ 
+
+Deflections From Rigid-Body Rotation of Channel About y-axis
+
+ 
+
+- The x- and z- deflections from rigid-body rotation of the channel
+
+about the y-axis are given by
+
+Sz. = TF 8g cos § (38)
+§x.. = ob 84. sin ¢ (39)
+
+Deflections From Deformation of Header Pipe
+
+ 
+
+Since the loads acting on the channel are transmitted to the
+header pipe in the opposite directions, the deflections of the header
+
+pipe may be written in terms of these loads.
+
+3 2
+ey (0 .
+
+H EI
+
+Jog = - (41)
+
+1 rl
+: Ity = (x i} ) (42)
+
+. : = Zz
+
+Solution of Deflection Equations
+Substituting Eqs (20)=(23), (33)-(37), (38), (39), and (40)-(L3)
+
+into Eqs (6)-(11) gives six equations in six unknowns. These can be
+
+ 
+
+written in terms of coefficients 8177 through 8167 as follows:
+
+‘ L, Note that the distance from the origin to b has been denoted by ob
+
+instead of r. Since the channel is not circular, the actual distances
+have been used in Eqs (38) and (39) instead of an average radius. The
+discrepancy involved here is small since ob = 24.1 inches and r has been
+
+taken as 21.9.
+
+a oon
+
+“13-
+
+ 
+ 
+
+aqq Fe tags F, tas M +a) Mo + 85 M, + ag g. = $x, }
+201 Fx * pp Fy + aps My + ap, My + ays M+ ays 8 = - zg
+8x Fx + 2x F ota; M +a; M + ass M, = 0
+21 Fe + an F, + 2,3 M + ay), M, + 8s M, + aL6 g. = 0 (44)
+59 Fe tag F, + a5, LN My + ag M, = 0
+ag1 Fo + 260 F, + ag), M, = 0
+where, 3 3
+SOE REY Aen? NV
+ag] =r |} 57 +3 - 2) Ft |sin @ +f FT cos dg + =HT
+P N q
+a SOT (#2) Al singeos 6-L I sing cos g
+12 = 5 EL, "\I0 GK © EI,
+2 2
+r 1 1 r .
+SOREE NE + GF) in # cos § + gr sin § cos ¢
+re Tr 1 Ty 1 £2
+1 TT |Z e-em d- |
+P H
+2 2
+r 1 1 , 2 r 2 -
+85 = 5 3 sind + Fr cos"
+
+5
+1 . i
+851 = ro L = + (r- 2) >] sin @ cos @ - F BT sin § cos §
+
+P
+
+3
+=p |T 1 37 1 2 roi?
+Bop = T 1 FI, + (F-2 2] cos$ + J gr sind
+
+ 
+23
+
+ol
+
+25
+
+36
+
+31
+
+32
+
+33
+
+az)
+
+35
+
+241
+
+80
+
+a3
+
+i
+
+il
+
+i
+
+il
+
+i
+
+lnk
+amy tN
+
+2 2
+r 1 1 2 r .. 2
+7 (3 a) Wry eo
+
+P
+Pra hom) 4
+2 |2 EL, C 2) Ex | °°
+2 2
+r 1 1 . r .
+5 (% +) sin § con 9 - Jr sin § cos ¢
+P N
+ob cos §
+ne 1
+- 5 (2 + &) sin §f cos § + z= sin @ cos ¢
+2 2
+1 1 2 2
+- 5 FT; i cos”f - ET sing
+
+P
+1 1 . nor
+yg % 3) sin § cos § + 3 7 sin ¢ cos ¢
+P N
+2 [mr 1 7 = ©
+lL = -- sin § -
+2 LL El, ¢ N& 2ELy,
+
+TF 6-9 es
+
+1 1
+(5 - ) 9
+
+fH
+
+ 
+ALY
+
+as),
+
+55
+
+gg1
+
+agp
+
+Bel
+
+fl
+
+ul
+
+i
+
+fl
+
+vox y
+1 1 J
+r [= + | + =
+fr (5 %) El
+r 1 1 in ¢
+5 (5 -&) sin
+P
+1
+2 2
+© (1 1\ 2 or 2
+> = + &) sing + g=— cos“g
+N
+2 2
+LA EE A z
+5 (Fra) tnd eos d - Eo sin § cos ¢
+mn 1 1 , mT r
+-FT FL * sin § cos § + 5 FT, Sin # cos ¢
+r / 1 1
+: ( - &) oun ¢
+
+T 1 1 2 I r 2
+Ir (2 + % sing + 5 FT cos
+
+«l6-
+amy F8d
+
+Results
+Equations (44) were solved with the aid of an IBM-650. The
+numerical data and values of the coefficients are given in Appendix
+
+A, The following results were obtained:
+
+3
+
+F = 565.9 1bs.
+F_ = =k26.7 lbs.
+M,o= - 5462 in-1bs.
+(45)
+My = 391 in-lbs.
+Mo= = 6620 in-lbs.
+
+- 3468x1077 radian
+
+Su
+i
+
+Calculation of Deflections
+
+The y-deflection at b relative to point a can be calculated from
+
+5
+
+the loads producing in-plane bending”.
+2
+
+dy = pro ( _ D ill (46)
+
+ 
+
+cElyg Ely
+
+Substituting P and M_ from Eqs (12) and (13) into Eq (46),
+
+N
+
+3 2
+dy = - oi (F, cos g - F, sin g) - ( - 1) mT (M, sin g + M, cos 3g) (47)
+
+5. See Ref. 1; pp. 7=8.
+
+SN SE
+
+<17=-
+Using the values (45) for the forces and moments in Eq (47),
+
+8y = - 0.037% in.
+
+This result indicates that the channel will expand 37 mils towards Shell V,
+at the equator, in addition to the free relative thermal expansion reported
+in ART Design Memo 8-D-5.
+
+Since there are no forces on the channel in the y-direction, the y-
+deflection at b, relative to the actual coordinate system, is zero.
+
+The x-deflection at b can be calculated by summing the in-plane and
+cut-of-plane x-deflections for the channel, or from the deflection of the
+
+header pipe. Taking the latter, and using Eq (LO),
+
+1 FA M f°
+3x = “5 (5 - —5—| = - 0.00299 in.
+H
+
+The angular deflections at b can be calculated from the deformation
+of the header pipe, using Eqs (41), (42), and (43).
+
+So = =X = 1.785x10"° rad.
+
+i
+
+gp - 2 (5 .
+b 7 |= - mf = 5.657x10 rad.
+
+M0
+
+H
+
+= 2 .813x10° rad.
+
+&
+
+x
+c
+
+11
+1
+1
+
+Stresses in Channel at Header
+
+ 
+
+The stresses in the channel at point b (Fig. 2) can te calculated
+from the moments, M. My, and M,. From Eqs (12), (13), (24), and (25),
+with the values from (45),
+
+-18-
+-_— a
+
+P = F_ sin dg - F_ cos g = - 708.5 1bs.
+My = M sing + M, cos 4 = - 8563 in-lbs.
+N = F_ sin ¢ + F, cos § = « 16.22 1bs.
+
+i
+=
+
+572 in-lbs.
+
+i
+
+My z sin ¢ - M, cos @
+
+The maximum bending stresses due to My and Mp are calculated as
+
+follows:
+op = t= = %83psi
+P
+oy = Tz, = 8234 psi
+
+The maximum shear stress due to LL may be estimated by an
+approximate nethoa®, This stress occurs at or near the inside corner
+
+of the channel. (See Fig. 4)
+
++ =X (48)
+
+ 
+
+where
+K = -a function of the cross section of the channel used in
+calculating the torsional rigidity’
+hb
+= 0.09295 in
+C = BL. B + [0.2 1n € - 2) - 0.238 — tan h | (49)
+1 + >
+164
+
+See Ref. 2, pp. 170-181,
+
+7. The evaluation of K is given in Appendix B.
+
+YY ova
+
+-19-
+
+ 
+ 
+
+where
+D = diameter of the largest circle inscribed in the cross -
+section = 0.45 in.
+r = radius of curvature of the boundary at the point -
+(negative when Eq 49 is used) = =~ 0.110 in,
+A = area of the section = 2.582 in
+¢ = angle through which a tangent to the boundary rotates
+
+in turning or traveling around the reentrant portion,
+measured in radians = JI/2
+For these values,
+C = 0.8612 in.
+
+Using Eq (48) with the above values of C and K,
+
+T = 3623 psi
+
+max
+
+Stresses in Channel at Equator
+
+ 
+
+The moments tangent, radial, and normal to the curve at the equator
+
+may be expressed from equilibrium conditions, (see Figs. 3 and 5).
+
+My = My + Nr = 217.2 in-1bs. -
+M, = LL = ~ 391 in-lbs.
+M o=- My + Pr = - 6954 in-1bs.
+
+The maximum bending stresses due to M. and M given by
+
+0 = 1 = x 57 psi
+
+0 = . = - 6687 psi
+
+ 
+ 
+
+ORNL -LR-DWG. 27497
+
+FIG.4- CROSS-SECTION OF CHANNEL
+
+ORNL -LR-DWG. 27498
+
+Mi
+
+FIG. 5-SKETCH SHOWING PRINCIPAL MOMENTS
+] ON CHANNEL AT EQUATOR
+
+Eh
+
+“01a
+ 
+
+hE
+aT FP
+
+The maximum shear stress due to M, can be calculated by Eq (48).
+
+Using the same C/K ratio as before,
+
+Trax = 2013 psi .
+
+Stresses in Header Pipe
+Bending stresses are produced in the header pipe from Fo M, and
+Me Referring to Fig. 3 the moment in the y-direction at the fixed
+
+end of the pipe due to Fe. and ¥, is given by
+
+Myo = M_ -F_ J =- 3853 in-1bs.
+
+The moment in the x-direction at the fixed end is
+Mg =M, = - 5462 in-1bs.
+
+Taking the vector sum of these moments gives a maximum bending
+
+oan
+
+moment,
+
+My, = ow 6684 in-1bs.
+
+The maximum bending stress due to this moment is given by
+= + 6282 psi .
+
+The maximum shear stress due to M, is given by
+
+Mr
+T= —E
+
+H
+max Jy
+
+ 
+
+= - 3111 psi
+
+-22- . ‘ve
+Hoy. A
+
+ 
+ 
+
+“ay
+a AN
+¢ A .
+
+Thermal stresses are produced in the header pipe Prom radial
+and axial temperature gradients, in addition to those caused by relative
+thermal expansion of the channel. Figure 6 shows the north and south
+headers and pipes with the approximate temperatures of the surrounding
+fluids.
+
+The axial temperature gradients should be small except in the
+regions close to the headers which are subjected to cross-flow from the
+fuel, Because of the azimuthal variation in heat transfer coefficients
+and the complicated geometry of these regions, it is possible that
+thermal cycling of these small sections of pipe could occur. Although
+these temperature fluctuations would be difficult to calculate, small
+thermal shields welded to the headers might be warranted.
+
+Because the layer of fuel surrounding the header pipes over most
+of their lengths is very thin, an estimate of the radial temperature
+profiles may be calculated using simple conduction with semi-infinite
+slab geometry. With the temperatures indicated in Fig. 6, these cal-
+culations give temperature differences across the walls of 23% and 32°F
+for the north and south header pipes, respectively. The stresses in
+
+the outside walls due to these gradients can be calculated by
+
+QEAT
+= == 4
+We 0 tov 42)
+
+giving - L574 psi for the north header pipe, and 6176 psi for the south.
+The bending and twisting stresses may now be combined with the
+
+stresses due to the radial temperature gradient in the header pipe in
+
+order to get the maximum normal and shear stresses. Figure 7 shows
+
+the fixed end of the header pipe, the direction of the resultant bending
+
+moment, and the bending stresses due to Myre Since the twisting stresses
+
+2%.
+ 
+
+1600 °F FUEL
+A F Na
+
+J 1500°F NaK
+
+ORNL -LR-DWG. 27499
+
+FIG.6 ~SKETCH SHOWING NORTH AND SOUTH HEADER
+PIPES APPROXIMATE FLUID TEMPERATURES
+
+TENSION 42
+
+23
+
+MAXIMUM STRESSES
+FOR SOUTH HEADER |
+
+PIPE
+
+X
+
+ 
+
+Ne]
+
+COMPRESSON
+
+O
+
+ 
+
+ORNL -LR -DWG. 27500
+
+MAXIMUM STRESSES
+FOR NORTH HEADER
+PIPE
+
+FIG.7- FIXED END OF HEADER PIPE SHOWING BENDING
+STRESSES AND ELEMENTS: AT2WHICH MAXIMUM
+STRESSES OCCUR
+
+i.) To.
+
+ 
+
+ 
+and temperaturg Lrgogent stresses are uniformly distributed around the
+header pipe, the direction of My determines the location of the maximum
+stresses in the pipe. For the north header pipe, the temperature
+gradient stresses are compressive at the outside wall, so the maximum
+stresses occur where the bending stress is a maximum in compression,
+This element is at the outside wall, 90° clockwise from the direction
+
+of - My and an angle a counterclockwise from the positive y-axis, where
+
+For the south header, the temperature gradient stresses are tensile
+at the outer wall, so the maximum stresses occur where the bending
+stress is a maximum in tension. This point is 180° from the point of
+maximum stress in the north header pipe, or an angle a counter clock-
+wise from the negative y-axis, when the south header pipe is oriented
+as in Fig. 7 (eg the z-axis is directed away from the equator).
+
+The maximum stresses can be calculated for the north and south
+header pipes from the combined stresses acting on the elements in the
+outer walls of the header pipes, as shown in Fig. 7. The stresses
+acting on these elements are shown in Fig. 8. The maximum normal and
+
+shear stresses are given by
+
++ FE (Lb)
+
+max
+
+ 
+
+0, = GC,
+ou - [222) + # 5)
+
+cS TE
+Waa
+
+¥
+-25-
+
+ 
+ORNL -LR-DWG. 27501
+
+ 
+
+ 
+
+ 
+
+ 
+
+J,= -11,258
+Ca, r==31
+G, = -4574
+G, = 12,860
+= = 3}
+
+ 
+
+G, 6176
+
+ 
+
+ 
+
+ 
+
+FIG.8 ~ELEMENTS UNDER MAXIMUM STRESS IN
+OUTSIDE WALL OF (a) NORTH HEADER PIPE;
+
+(b) SOUTH HEADER PIPE (STRESSES IN PSi)
+
+ds Co op
+
+-26-
+For the north header pipe,
+
+o
+max
+
+i
+
+T.
+max
+
+For the south header pipe,
+
+Q
+Hl}
+
+max
+
+3
+i
+
+max
+
+- 12,480 psi
+
+4565 psi.
+
+14,080 psi
+
+4565 psi.
+ 
+
+References
+
+D. L. Platus and B. L. Greenstreet, "Deflection Equations for
+
+Various Loadings of Circular-Arc Curved Beams", CF 57-4-06.
+
+R. J. Roark, Formulas for Stresses and Strain, Third Edition,
+1954, pp 170-181.
+
+ 
+
+S. Timoshenko and J. N. Goodier, Theory of Elasticity, Second
+Edition, 1951, p. 287.
+
+ 
+
+S. Timoshenko, Strength of Materials, Part II, 1941, pp 270-271.
+
+=D08-
+bE
+a
+
+i : 13
+aw fil
+
+Appendix A
+
+ 
+
+Numerical Data
+. 6 _
+X, = - 19.59 in. GC = 5.8x10° psi
+zy, = 14.08 in. Ip, = 20.72 in
+Tr = 21.9 in. Ty = 2.46 in
+ob = 24.125 in, K = 0.09295, tn"
+I = 7.50 in. Ip = 1.53 in, 2-1/2 inch
+E = 15x10" psi Ig = 3.06 in Sch 40 Pipe
+Vv = 0.3 $xq, = 0.032 in.
+dq = 0.041 in.
+Numerical Values of Coefficients Used in Eqs (Lk)
+aj; = 2558. 7x10"° ay) = 5212.6x10™°
+a. =  3212.9x107° a =  4693.5x10°°
+12 6 22 -6
+815 = - 206.19x10 85 = = B95. Tea10_
+a), = - 112.55%10" ay), = - 154.8610
+815 = 161.18x10 8,5 = 206,19x10
+a1 = 14.079 arg = 19.59
+8,, = - 206.19x10™°
+31 6
+a = =~ 299.88x10
+32 -6
+a = 21.17%x10
+33 6
+a = 16.55x10
+3h 6
+zs = - 15.787x10
+
+-29-
+81
+8p
+83
+ni
+as
+a6
+
+261
+
+Bp
+
+Fol
+
+6
+
+- 112.53x10" a
+6 o1
+26 2
+16.55x10 a
+i; 53
+32 ,464x10 ‘ ag),
+- 11.896x10 855
+1.0000
+14.08
+19.59
+1.0000
+
+161.18x10"
+
+6
+
+£06.17x10™°
+
+- 1. 787x108
+- 11.896x10~°
+11.986x10~°
+
+ 
+
+ 
+Appendix B
+
+Evaluation of Torsional Rigidity Factor, K
+
+For a narrow rectangular beam of length b and width c, XK can be
+
+approximated using the membrane analogy to give
+
+K = 3 be (B1)
+
+9
+
+Similarly, for a narrow trapezoidal section”,
+
+1 2 2
+K = 55 b,(cy + c,)(cy + c;) (B2)
+
+For a cross-section built up of narrow elements, K can be
+approximated by summing the K's for the individual elements™C,
+Thus, for the channel (Fig. 4), by summing two trapezoidal sections
+
+and one rectangle,
+
+CN z b, (cg + ep)(cs + 2) (B3)
+
+8. See Ref. 4, p. 270.
+9. See Ref. 4, p. 271.
+10. See Ref. 3, p. 287.
+
+_—
+
+-31-
+
+ 
+Using Eq (B3) with -
+b = 5.00 in. 1 = 0.10 in. -
+c = 0.125 in. Cs = 0.50 in.
+by = 2.45 in,
+
+0.09295 in
+
+=~
+i
+
+ 
+
+ 
+ 
+
+Loon LN
+
+e -
+
+°
+
+O
+CURQOUEPPENORIIFILPONDLE ERODE OOPHET DG
+
+81.
+82-84.
+85-86.
+
+87.
+
+88.
+
+89.
+90-92.
+
+Amos
+Billington
+Blankenship
+Blizard
+Boch
+Borkowski
+Boyd
+Breeding
+Briggs
+Cardwell
+Center (K-25)
+Charpie
+Cotton
+Culler
+DeVan
+Douglas
+Emlet (K-25)
+Ferguson
+Fraas
+
+Frye, Jr.
+Furgerson
+Gray
+Greenstreet
+. Grimes
+
+Guth
+
+S. Harrill
+
+L. Heestand
+
+W. Hoffman
+Hollaender
+Householder
+Jordan
+Kasten
+Keilholtz
+Kelley
+Kerrebrock
+Lane
+
+-
+
+a
+
+Pr cHODWREEPODCOKEPEIROHOGE YHOO
+
+PrHsmEe
+
+ORNL -2442
+
+C-84 ~ Reactors =~ Special Features Hi
+of Aircraft Reactors
+M-3679 (20th ed., Rev.)
+
+INTERNAL DISTRIBUTION
+
+ 
+
+37.
+38.
+39.
+40.
+41.
+42,
+43.
+44,
+45,
+46.
+47.
+48.
+49.
+50.
+51.
+52.
+53.
+54,
+55.
+56.
+57.
+58.
+59.
+60.
+61.
+62.
+63.
+64.
+65-67.
+
+68-75.
+,. 16,
+77-79,
+
+80.
+
+EXTERNAL DISTRIBUTION
+
+ 
+
+Division of Research and Development, AEC, ORO
+Air Force Ballistic Missile Division
+
+AFPR,
+AFPR,
+AFPR,
+AFPR,
+AFPR,
+
+Boeing, Seattle
+
+Boeing, Wichita
+Curtiss-Wright, Clifton
+Douglas, Long Beach
+Douglas, Santa Monica
+
+-33-
+
+FOPOIHSPLEHPRRRAPEIP ORLA EIER
+
+ORNL
+
+gH aN<<mOoOoEOWM
+
+PumoPEOEaz
+
+.
+
+Livingston
+MacPherson
+MacPherson
+Manly
+McNally
+Meghreblian
+Morgan
+Murphy
+Murray (Y-12)
+Nelson
+
+atriarca
+
+Perry
+Savage
+Savolainen
+Schultheiss
+Senn
+Shipley
+Skinner
+Snell
+Stanek
+Swartout
+
+Taboada
+
+Tallackson
+
+Taylor
+
+Trauger
+
+Weinberg
+
+Winters
+
+Yarosh
+
+- Y-12 Technical Library,
+
+Dccument ‘Reference Section
+Laboratory Records Department
+Laboratory Records ORNL R.C.
+Central Research Library
+Reactor Experimental
+Engineering Library
+
+ 
+
+ 
+93.
+94-95,
+96.
+
+97.
+98-99,
+100.
+101.
+102.
+103-116.
+117.
+118-120.
+121.
+122.
+123.
+124,
+
+125,
+126-131.
+
+132.
+133.
+134-135.
+136.
+137.
+138.
+139.
+140.
+141.
+142,
+143.
+144,
+145.
+146.
+147-150.
+151.
+152,
+153.
+154,
+155.
+156.
+157.
+158.
+159.
+
+AFPR, Lockheed, Burbank
+
+AFPR, Lockheed, Marietta
+
+AFPR, North American, Canoga Park
+
+AFPR, North American, Downey
+
+Air Force Special Weapons Center
+
+Air Materiel Command
+
+Air Research and Development Command (RDGN)
+Air Research and Development Command (RDTAPS)
+Air Research and Development Command (RDZPSP)
+Air Technical Intelligence Center
+
+ANP Project Office, Convair, Fort Worth
+Albuquerque Operations Office
+
+Argonne National Laboratory
+
+Armed Forces Special Weapons Project, Sandia
+Armed Forces Special Weapons Project, Washington
+
+Assistant Secretary of the Air Force, R&D
+Atomic Energy Commission, Washington
+
+Atomics International
+
+Battelle Memorial Institute
+
+Bettis Plant (WAPD)
+
+Bureau of Aeronautics
+
+Bureau of Aeronautics General Representative
+BAR, Aerojet ~General, Azusa
+
+BAR, Convair, San Diego
+
+BAR, Glenn L. Martin, Baltimore
+
+BAR, Grumman Aircraft, Bethpage
+
+Bureau of Yards and Docks
+
+Chicago Operations Office
+
+Chicago Patent Group
+
+Curtiss-Wright Corporation
+
+Engineer Research and Development Laboratories
+General Electric Company (ANPD)
+
+General Nuclear Engineering Corporation
+Hartford Area Office
+
+Idaho Operations Office
+
+Knolls Atomic Power Laboratory
+
+Lockland Area Office
+
+Los Alamos Scientific Laboratory
+Marquardt Aircraft Company
+
+Martin Company
+
+National Advisory Committee for Aeronautics, Cleveland
+
+“34
+
+a
+
+ad
+160,
+161.
+162,
+163.
+164.
+165.
+166.
+167.
+168.
+169.
+170.
+171-174.
+175.
+176.
+177.
+178.
+179.
+180.
+181.
+182.
+183-184.
+185-202.
+203-227.
+
+National Advisory Committee for Aeronautics, Washington
+Naval Air Development Center
+
+Naval Air Material Center
+
+Naval Air Turbine Test Station
+
+Naval Research Laboratory
+
+New York Operations Office
+
+Nuclear Development Corporation of America
+
+Nuclear Metals, Inc.
+
+Office of Naval Research
+
+Office of the Chief of Naval Operations (OP-361)
+Patent Branch, Washington
+
+Pratt and Whitney Aircraft Division
+
+San Francisco Operations Office
+
+Sandia Corporation
+
+School of Aviation Medicine.
+
+Sylvania~Corning Nuclear Corporation
+
+Technical Research Group
+
+USAF Headquarters
+
+USAF Project RAND
+
+U.S. Naval Radiological Defense Laboratory
+University of California Radiation Laboratory, Livermore
+Wright Air Development Center (WCOSI-3)
+
+Technical Information Service Extension, Oak Ridge
+
+-35-

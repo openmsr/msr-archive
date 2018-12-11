@@ -1,0 +1,3223 @@
+ 
+
+ 
+
+ 
+
+ 
+
+ORNL-TM-2571
+Ta
+on
+~
+Contract No. W-7405-eng-26
+Reactor Division
+. THEORETICAL DYNAMIC ANALYSIS OF THE MSRE WITH ?33U FUEL
+3
+4 R. C. Steffy, Jr. .P. J. Wood
+LEGAL NOTICE ;
+. This report was prepared as an of Govt } P d work. her the United i
+:' States, nor the Commiasion, nor any person acting ok behalf of the Commission: i
+i A. Makes any warranty or representation, expressed or implied, me respect el the aocu-
+| ation, en ad or procens as a this rooret may not infringe |
+| privately owned rights; or | ! :
+tf . ._. B. Assumes any liabilities with respect to the uge of, or for damages resulting from the
+|. use of any information, apparatus, method, or process disclosed in this report.
+f As used in the above, ‘‘person acting on behalf of the Commission” includes any em-
+i ployee or contractor of the Commission, or employ: of such contractor, to the extent that
+| such employee or contractor of the Commission, or employee of such contractor prepares,
+t “disseminates, or provides access to, any information pursuant to his employment or contract
+he Ce Te
+JULY 1969
+# OAK RIDGE NATIONAL LABORATORY
+. ~ Oak Ridge, Tennessee
+wv operated by
+UNION CARBIDE CORPORATION
+) for the
+- U.S. ATOMIC ENERGY COMMISSION
+
+GIRIRIBUTION O5 tHIS COCUMENZ & UNUM TED
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+I
+
+ 
+
+(a
+
+ 
+ 
+
+3
+
+»
+ 
+
+ 
+
+"
+
+&«)
+
+y
+*) en n
+
+ai
+Ea
+
+iii
+
+CONTENTS
+
+Abstract 00 06080000000 e0 ses tastes sessesscesessssegsstsssnssasssosscsse
+
+1. Introduction €e0000000r0rre0000000000000000000000000000000 0
+
+2. Model Description and Verification ...ceceesesceccecscocccenas
+3. Transient-Response ADLYSiS eeeveeeceecersoasaascoscanssssons
+4. Frequency-Response ANBLYSEIS vevaseeneeesnsssnensesencasannees
+4.1 Calculated Frequency Response of Power to Reactivity oes
+4.1.1 For Noncirculating Fuel ..eccecevececccocesoscone
+
+4.1.2 For Circulating Fuel ..c.cccececcecrcacereccconcces
+
+4.2 Effect of Mixing in the Fuel LOOP ceececccsccccscscsccss
+4.3 Sensitivity of dn/ng-8k to Parameter Changes ....eeeeees
+4.4 Frequency Response of Outlet Temperature to Power ......
+5. Stability Analysis ceieeesescsscecsocsssccccsvsrscscacosveccons
+5.1 Pole Configuration — Eigenvalues .cseeeeseccescccssccosssss
+5.1.1 Theoretical DisSCuSSIONS teecececccocscssccnassanee
+
+5.1.2 Eigenvalue Calculation Results .ecececeecescasccnss
+
+5.2 Modified Mikhailov Method seevececcecoccccsssoscacanssnns
+5.2.1 Theoretical DiscusSSion .cccscececcsccscscsscscsse
+
+5.2.2 Results of Applying the Mikhailov Stability
+Criterion eceiececrerccsnocennsovsososssesssssecnsee
+
+6. Concluding DiSCUSSION ceesesecscsccssecossscnsccccscnssssssscs
+
+‘Acknowledgments ceccecssorecsscecssvesvessescccsscesncsccssanconoe
+
+References eee esses sss esses esse ses esse tosses escsss esses esse
+
+‘Appendix. Padé Approximations TS
+
+Page
+
+oO NH OH
+
+10
+11
+11
+11
+14
+16
+18
+19
+19
+19
+24
+26
+26
+
+28
+34
+34
+35
+37
+
+ 
+ 
+
+A
+
+IF]
+
+ 
+
+we
+
+A
+
+tp
+ 
+
+2
+
+i)
+
+vogh
+
+THEORETICAL DYNAMIC ANALYSIS OF THE MSRE WITH 233U FUEL
+
+R. C. Steffy, Jr. and P. J. Wood¥
+
+Abstract
+
+A study undertaken to characterize the dynamics of the
+233y-fueled MSRE prior to operation revealed that the system
+is inherently asymptotically stable at all power levels above
+zero. The motivation for these studies was the expected dif-
+ference between the MSRE dynamic response with 233U fuel and
+with 2357 fuel because of the smaller delayed-neutron frac-
+tion of 233yU, An existing system model, previously verified
+for 235y fuel, was modified for use in this work. The reac-
+tor system response to:reactivity perturbations is rapid and
+nonoscillatory at high power, and it becomes sluggish and
+oscillatory at lower powers. These characteristics were de-
+termined by three methods: (1) transient-response analyses,
+including a check of the validity of the linear model, (2) a
+frequency-response and sensitivity study, (3) stability analy-
+ses, both by inspection of the system eigenvalues and by ap-
+plication of the recently developed, modified Mikhailov cri-
+terion.
+
+Keywords: MSRE, ?33U fuel, stability, eigenvalues,
+modified Mikhailov criteria, frequency response, sensitivity,
+time response, Padé approximations.
+
+1. Introduction
+
+As a preliminary step in the development of a molten-salt-fueled
+breeder reactor, the Molten Salt Reactor Experiment (MSRE) was fueled with
+233y to perform the necessary physics and chemistry experiments on this
+first 233y-fueled nuclear power reactor. Before nuclear operation, it was
+important to anticipate the dynamic behavior and the inherent.stability of
+
+“the system in order to insure safe, orderly operation and to plan safe,
+
+definitive experiments.
+
+The principal motivation. for evaluating the operating characteristics
+of the 233y-fueled MSRE after more than 70,000 Mwhr of power operation
+with 235U fuel is that .223U has a much smaller delayed-neutron fraction
+
+ 
+
+*Currently Assistant Director of MIT School of Chemical Engineering
+Practice at Oak Ridge National Laboratory.
+
+ 
+ 
+
+2
+
+(B) than that of 23°U. The 233y fuel was ‘expected to have operating char-
+acteristics somewhat different from those of 23°U end, in particular, a
+faster response to reactivity perturbations. Table 1 lists the predicted
+basic nuclear-kinetics properties of the MSRE with ?33U fuel and compares
+them with those of the reactor with 23°U fuel.
+
+Several different techniques were used in analyzing the dynamics of
+‘the 233U-fueled MSRE, primarily because each technique either gave infor-
+‘mation unavailable from the others or used different approximate treat-
+ments to describe the system. In performing the ‘dynamics analyses a model
+developed by Ball and Kerlin' was modified slightly and used to describe
+the MSRE with 233U fuel. (This model did not include the effect of the
+reactor control system.) The time response of the reactor system to a
+reactivity perturbation at several power levels was calculated first. The
+‘computer code MATEXP, 2 which calculates the time response of a multivari-
+able nonlinear system with pure time delays, was used in this study. Next
+. the system frequency response was determined by using the computer code
+SFR-3 (Ref. 3). This code was also used to determine amplitude ratio (or
+gain) sensitivity to changes in the system variables (i.e., the ratio of
+‘the change in amplitude ratio to the corresponding change in a system vari-
+‘able was determined as a function of frequency). Finally, the absolute
+stability of the system was investigated by two techniques. The system
+eigenvalues were calculated at several powers to determine whether oscil-
+lations induced in the system would increase or decrease in amplitude,
+and the Mikhailov stability criterion, as modified by Wright and Kerlin,*
+was used to obtain this same information with fewer approximations ‘in the
+mathematical model.
+
+"Linearized system equations were used in the frequency-response and
+sensitivity calculations and in both types of stability analysis. This
+was necessary because general calculational methods do not presently exist
+that would permit these types of analysis with a set of nonlinear system
+equations. The ‘time-response calculations utilized the nonlinear equa-
+tions. This was possible because they involved an iterative procedure |
+
+that provided for -updating the nonlinear terms after each iteration.
+
+¥)
+
+v)
+ 
+
+Too @a 0"
+
+Table 1. Comparison of Nuclear Parameters Used in Dynamics Analyses
+of ‘MSRE with 233U Fuel and with 23%U Fuel
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+233y Fuel 2359 Fuel?
+: By, Delayed-Neutron . Bis Delayed-Neutron
+Group Ais Decay Fraction Aj» Decay "Fraction
+eels - aS -
+sec” Circulating, sec” . Circulating,
+Static Effective Static Effective
+| xX 1074 x 10™4 x 10™4 x. 1074
+1 0.0126 ‘2.28 1.091 0.0124 2.23 0.52
+2 0.0337 7.88 3.848 0.0305 14.57 3.73
+3 0.139 6.64 4.036 0.111 + 13.07 4.99
+4 0.325 7.36 5.962 0.301 26.28 16.98
+5 1.13 1.36 1.330 1.14 . 7.66 7.18
+6 2.50 0.88 0.876 ‘3.01 2.80 2.77
+Total B 26.40 17.14 Total B 66.61 36.17
+Prompt neutron generation 4 Xx 1074 2.4 x 1074
+time, sec : :
+Temperature coefficients
+of reactivity, °F |
+Fuel salt | —6.13 x 107° —4.84 x 107°
+Graphite —3.23 x 107° -3.70 x 10°
+
+ 
+
+8Data from Ref. 1.
+
+[2
+
+ 
+
+ 
+ 
+
+ 
+
+4
+
+2. Model Description and Verification
+
+A mathematical model was required to describe the dynamic ‘behavior
+of the ??3U-fueled MSRE. The model chosen for this study was essentially
+that called the "complete model" in Ref. 1, which was developed to analyze
+the dynamics of the 235y_fueled MSRE. The justification for using this
+model was its good agreement with experimental results when applied to
+the 235y. fueled system. ?
+
+Some changes were made in the model of Ref. 1, however, before it
+was applied to the ?33U-fueled system. The experimental results of the
+previous testing program did not verify the dip in the calculated frequency
+response curve at approximately 0.25 radian/sec, . which. corresponds to a
+fuel circulation time of approximately 25 sec. This was attributed to .in-
+sufficient mixing of fuel salt in the external loop of ‘the theoretical
+model. To provide the model with more mixing, an additional 2-sec first-
+order ‘time lag (mixing pot) was incorporated at the core outlet. This is
+a reasonable approximation for the mixing in the upper and lower reactor-
+vessel plenums.
+
+The chief features of the 44th-order model, shown in Fig. 1, are the
+following:
+1. The reactor core was divided into nine regions, each of which
+was split into two fuel lumps and one graphite lump. Consideration was
+given to the nuclear importance of thermal disturbances in each of the
+lumps. (The term "lump" as used in mathematical modeling refers to a seg-
+ment of a physical system that is considered to have constant properties
+throughout and which interacts with its surroundings through only those
+properties.) :
+
+‘2. A five-lump representation of the fuel-to-coolant heat exchanger
+‘was used, with heat being exchanged to a single metal lump at the tempera~-
+‘ture of the fuel leaving the first of two fuel lumps and heat being ex-
+-changed from the metal lump to the coolant at the outlet ‘temperature of
+‘the first of two coolant lumps.
+
+-3. A three-lump coolant-to-air radiator. was used in which the coolant
+transferred heat to a single metal lump at the temperature of the coolant
+leaving the first of two coolant lumps.
+
+¥)
+
+¥)
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+5
+3
+ORNL-DWG 68—10067R
+3.77-sec DELAY
+A
+47+sec DELAY
+2-sec MIXING POT
+AIR
+| 4 7 9 : ] STREAM
+. FUEL COOLANT COOLANT |
+LUMP LUMP LUMP
+4
+3 6 MSRE CORE
+(9 REGIONS) i
+8 |---| METAL |--- TT
+x 2 5 \ 1
+FUEL COOLANT COOLANT
+LUMP LUMP LUMP
+J ] ] J
+FUEL-SALT HEAT RADIATOR
+{
+EXCHANGER 8.24560 DELAY
+8.67-sec DELAY
+Fig. 1. Schematic Drawing of MSRE Showing System Divisions Used in
+Mathematical Analysis. i
+4
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+4. A linear model of the reactor kinetics equations was used in all
+studies, except the time-response calculations, in which nonlinear kinetics
+‘effects were taken into account. .
+
+5. The neutron kinetics equations were represented by a mathematical
+expression that accounted for the dynamic effect of circulating precursors
+(except for the eigenvalue calculation, which required the use of effec-
+tive delayed-neutron fractions).
+
+6. Xenon poisoning was assumed to be at steady state and not influ-
+
+enced by small perturbations.
+
+3. Transient-Response Analysis
+
+Time responses were obtained at several power levels to provide a
+physical picture of the reactor response to reactivity perturbations such
+as control rod motions. The computer code MATEXP? applied in this analy-
+sis makes use of the matrix exponentiation technique of solving a system
+of nonlinear ordinary differential equations (with pure time delays) of
+the form
+
+Soa) TR), (1)
+where
+X = the solution vector (system state variables),
+A = system matrix (constant square matrix with real coefficients),
+MA(X) = a matrix whose elements are deviations from the values in A,
+[thus AA(X) x includes all nonlinear effects and time delay
+terms],
+f(t) = forcing function.
+
+The predicted response of the reactor power to a step reactivity in-
+crease of 0.02% 8k/k is shown in Fig. 2 for various initial powers. These
+response curves point out several important characteristics of the MSRE.
+At 8 Mw the maximum power level is reached during the first second after
+the step reactivity input. The rapid increase in reactor power is accom-
+panied by a rapid increase in fuel temperature in the core, which, coupled
+
+with the negative temperature coefficient of reactivity, more than
+
+*)
+
+LB)
+ 
+
+»n
+
+n
+
+(2 ORNL-DWG 68-10077R
+
+  
+
+1.0
+0.8
+0.6
+
+0.4
+
+A POWER (Mw)
+
+0.2
+
+-0.2
+0.8
+
+0.6
+0.4
+0.2
+
+A POWER (Mw)
+
+ 
+
+-0.2 |
+
+A POWER (Mw)
+
+A POWER (Mw)
+
+ 
+
+~04
+0.20
+
+0.16
+042
+0.08
+0.04
+
+A POWER (Mw)
+
+-0.04
+
+ 
+
+-0.08 -
+0 100 200 300 400 500 600 700 800 800 1000
+
+TIME (sec)
+
+' Fig. 2. Calculated Power Response of the %23U-Fueled MSRE to a
+0.02% 8k/ k Step Reactivity Insertion at Various Power Levels.
+
+ 
+ 
+
+ 
+
+counterbalances the step reactivity input, so the power level begins to \/
+decrease. The temperature of the salt entering the core is constant dur-
+‘ing this interval, and when the power has decreased enough for the reac- +
+‘tivity associated with the increased nuclear average temperature to just
+cancel the step reactivity input, the power levels for a brief time (from
+~6 to ~17 sec after the reactivity input). About 17 sec after the reac-
+tivity increase, the hot fluid generated in the initial power ‘increase
+has completed its circuit of the loop external to the core, and the nega-
+tive temperature coefficient of the salt again reduces the reactivity so
+that the power level starts down again. - At large times the reactor power
+‘has returned to its initial level, and the step reactivity input has been
+counterbalanced by an increase in the nuclear average temperature in the
+core. The short plateau observed in the time-response curve at.8 Mw was
+also noted in the 5-Mw case. At lower powers, however, the slower system
+response prevents the reactor from reaching the peak of its first oscilla-
+tion before the fuel has completed one circuit of the external fuel loop.
+The plateau therefore does not appear in the lower power cases.
+
+An important characteristic of the MSRE dynamic response is that as
+:the power ‘is decreased the reactor becomes both sluggish (slower respond-
+ing) and oscillatory; that is, at low powers the time required for oscil-
+lations to die out is much larger than at higher powers, and the fractional
+
+)
+
+amplitude of the oscillations (A power/power) is larger.
+
+As part of the time-response analysis, the validity of the linear ap-
+proximation for reactivity perturbations roughly equivalent to 1/2 in. of
+‘control rod movement (0.04% 8k/k) was checked. The results of this analy-
+sis are shown in Figs. 3 and 4 for 8- and 0.1-Mw operation. At 8 Mw the
+linear approximation is fairly good, but at 0.1 Mw it is poor. This re-
+sult can be understood by considering the general form of the neutron-
+
+kinetics equations:
+
+ 
+
+ddn po ~ Br ng 5p 6 d5pdn
+—_— = ————— 8n + + ABC, + —— , (2) ?
+i771 1 .
+
+dat l l i=1
+
+3
+ 
+
+© -d
+
+n
+
+. »n
+
+ORNL —DWG 68—10065R
+
+ 
+
+2,5
+
+2.0
+
+ 
+
+ww LINEAR
+
+\ ~——NONLINEAR
+
+ 
+
+A POWER (Mw)
+on
+-
+(7
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+{1.0
+\
+\
+0.5 \
+. - \S
+NG
+0
+0 10 20 30 40 50
+TIME (sec)
+
+Fig. 3. Power Response of the ?33U-Fueled MSRE Initimlly Operating
+at 8 Mw to a 0.04% Step Reactivity Insertion as Calculated with Nonlineer
+and Linearized Kinetics Equations.
+
+ORNL—DWG 68-{0066R
+
+L—
+
+ 
+
+0.6
+
+—NONLINEAR /
+
+LINEAR /
+0.4 /
+
+/
+
+ 
+
+0.5
+
+ 
+
+ 
+
+ 
+
+ 
+
+A POWER (Mw)
+©
+[
+~~
+
+ 
+
+<
+\
+
+ 
+
+\
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0 40 20 30 40 50
+} TIME (sec)
+
+Fig. 4. Power Response of the 233U-Fueled MSRE Initially Operating
+at 0.1 Mw to a Step Reactivity Insertion of 0.04% as Calculated with
+Nonlinear and Linearized Kinetics Equations.
+
+ 
+ 
+
+10
+
+where
+
+dn = deviation of power from its initial value (ng),
+po = reactivity necessary to overcome effect of fuel circulation,
+Br = total delsyed-neutron fraction,
+! = neutron generation time in system,
+Op = deviation of reactivity from its initial value,
+N = decay constant for ith delayed-neutron precursor,
+
+5C4 = concentration of ith delayed-neutron precursor.
+
+The last term in Eq. (2), 5p8n/!, is the nonlinear term. In the
+8-Mw case the maximum deviation of the power from the initial power is
+only about 30% of the initial power, whereas in the 0.1-Mw case the maxi-
+mum deviation is 560% of the initial power and is still increasing after
+50 sec. When the dn term is this large with respect to the ng term, the
+nonlinear terms in the kinetics equation play a much larger role than the
+linear terms. Thus, neglecting the nonlinear terms may lead to signifi-
+cant ‘error if the power -deviates from its initial level by more than a
+few percent. For the time-response analysis, it was necessary to include
+the nonlinear terms to obtain realistic results; however, use of the lin-
+earized equations in the frequency-domain analysis (Section 4 of this re-
+port) is acceptable because the analysis is based on small reactivity and
+
+power perturbations that oscillate around their initial values.
+
+4. Frequency-Response Analysis
+
+Because a closed-loop frequency-response analysis provides informa-
+tion about relative system behavior, the linear MSRE model was studied at
+different power levels from this point of view. The linear system equa-
+tions were first Laplace transformed and then solved for the ratio of an
+output variable (such as power or temperature) to an input variable (such
+
+as reactivity). This ratio, called a transfer function, is
+
+ 
+
+.
+ 
+
+”
+
+n
+
+n
+
+Ral
+
+where
+G(S) = transfer function,
+0(8) = the output variable,
+I(S) = input variable,
+S = Laplace transform variable.
+
+For a stable system, S may be replaced by jw, where J = V-1 ana w is the
+
+frequency of an input sine wave. With this substitution, G(jw) is a com-
+
+plex number; the magnitude of G(jw) is called the gain or the magnitude
+ratio and is the ratio of the amplitude of an input sinusoid to that of
+an output sinusoid. The phase of G(jw) is the phase difference between
+
+the input and the output sinusoids. A plot of G(jw) and the phase of
+
+G(jw) versus w is referred to as a Bode diagram or a frequency-response
+plot. A Bode plot provides qualitative stability information in the peaks
+of ‘the magnitude ratio curves. High, narrow peaks indicate lower stability
+
+“than flatter, broader peaks.
+
+There are two basic reasons for calculating the frequency response
+
+of a system. First, the frequency-response curves are good indicators of
+
+system performance, and second, the frequency response of a system may be
+
+‘experimentally determined. The latter consideration is important because
+
+it provides a means for checking the validity of a model. When the ex-
+
+ perimentally determined frequency response of the system is in agreement
+
+with that of the theoretical model, confidence is gained in the conclusions
+drawn from the stability analysis applied to the model.
+4.1 Calculated Frequency Response of Power to Reactivity
+
+4.1.1 For Noncirculating Fuel. The calculated frequency response
+of the MSRE for ‘the noncirculating, . zero-power,. 233U-fueled condition ‘is
+
+~ shown in Fig. 5. These curves are very similar to those of the classic
+
+zero-power reactor, and reference curves may be found in most textbooks
+on ‘reactor dynamics.® 7 At zero power, temperature feedback effects are
+not important, so.the calculated response is that of ‘the neutron-kinetics
+
+equations.
+
+4.1.2 For Circulating Fuel. A set of frequency-response curves for
+circulating ?33U fuel is shown in Fig. 6. These curves show the effect
+
+ 
+ 
+
+40,000
+
+12
+
+ORNL —DWG 68— 10079R1
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+mm
+©
+& .
+eS 1000
+fy
+Q
+g
+x
+Ww
+Q
+>
+E
+=z
+9 100
+=
+10
+0.004 0.04 04 1 } 10 {00
+FREQUENCY (radians /sec)
+0
+-{0
+-20
+- AT] NN
+Eg 0 va NN
+- A N
+a -40 N
+S V1 \
+< \
+w —50
+0 N
+g N
+TT / / AN
+-70
+A NJ
+-80
+| __ + TH
+-90
+0.004 0.04 041. 4 10 4100
+
+FREQUENCY (radians /sec)
+
+Fig. 5. Theoretical Frequency-Response Plots of &n/nq- 8k for the
+233y_Fueled MSRE at Zero-Power and with No Fuel Circulation.
+ 
+
+ 
+
+ 
+
+N
+
+-
+
+n
+
+MAGNITUDE RATIO (37/734)
+
+13
+
+ORNL-DWG 68-1Q08IR2
+10,000 ’ ’
+
+5000
+"2000
+1000
+
+500
+
+200
+{00
+
+50
+
+20
+
+ 
+
+10
+1073 2 5 102 2 5 0! 2 5 0° 2 5 1 2 5 {0°
+FREQUENCY {radians/sec) -
+
+PHASE (deg)
+
+ 
+
+03 2 5 1072 2 5 40° 2 5 10° 2 5s 2 5 102
+FREQUENCY (rodians/sec)
+
+Fig. 6. Theoretical Frequency-Response Plots of 8n/nq- 8k for the
+233y-Fueled MSRE at Various Power Levels with Fuel Circulation.
+
+ 
+ 
+
+ 
+
+14
+
+of power over the range from zero to 8 Mw. The primary reason for the
+change in curve shape as the power level is changed is the change in mag-
+nitude of the temperature-feedback effect. At higher power levels a
+smaller percentage change in power ‘level causes a larger absolute tempera-
+ture change which, in turn, affects reactivity through the negative tem-
+perature coefficient.
+| At higher power levels, the maximum peaks of the magnitude-ratio
+plots decrease, and these maximums are reached at higher frequencies.
+This implies that after a reactivity perturbation, the relative power re-
+sponse sn/ng will be of smaller magnitude and will tend to return to zero
+faster at high power levels than it will at lower power levels. (This
+observation was also made in the time-response calculations of the pre-
+ceding section.)
+
+The dip in the higher power curves at approximately 0.25 radian/sec
+(corresponding to the fuel loop transit time of ~25 sec) results from tem-
+perature feedback from the external loop. During a periodic reactivity
+perturbation at a frequency of about 0.25 radian/sec, the fuel in the
+core during one cycle would return to the core one period later and pro-
+‘duce a reactivity feedback effect that would partially cancel the exter-
+nal perturbation. With the 2?°U fuel the amplitude ratio of the frequency-
+response curves was relatively low at this frequency, and the dip was not
+as pronounced. However, the amplitude ratio of the frequency-response
+curves for the 233U fuel loading are relatively high out to greater than
+1 radian/sec, so the loop feedback is emphasized. The more negative tem-
+perature coefficient of reactivity for the 233y fuel also tends to -empha-~
+size the effect of loop feedback.
+
+4.2 Effect of Mixing in the Fuel Loop
+
+| The curves in Fig. 6 were calculated with the model discussed in
+Section 2 of this report. The choice of a 2-sec mixing pot at the core
+outlet was based on the estimated mixing that occurs in the reactor ves-
+sel plenums but was somewhat arbitrary, and it was therefore desirable to
+explore the effect of different mixing approximations on the frequency-
+
+response curves. Figure 7 shows the effect on the 8-Mw frequency-response
+ 
+
+ 
+
+Nn
+
+»
+
+15
+
+ORNL-DWG . 68 -f0080R
+
+ 
+
+2000
+5-sec MIXING POT
+2-sec MIXING POT
+PT ~
+3 1000 em wm wees PURE DELAY
+«®| o
+NL
+g
+a S500
+@
+w
+o
+>
+E +
+2
+9 200
+2
+100
+1072 2 5 10! 2 5 10° 2 5 10!
+
+FREQUENCY (radians/sec)
+
+ 
+
+80
+
+ 
+
+60 AN
+
+ 
+
+40 — N
+
+ 
+
+20
+
+7
+~~ =
+Zo
+
+eZ
+
+ 
+
+PHASE ANGLE (deg)
+yr
+A
+77
+
+ 
+
+~N
+
+ 
+
+N
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+N
+-60
+
+1072 2 5 107 2 Ss 10° 2 5 10"
+‘FREQUENCY {radians /sec)
+
+Fig. 7. Theoretical Frequency-Response Plot of &n/ng*8k for the
+233y-Fueled MSRE Operating at 8 Mw for Various Amounts of Mixing in the
+Circulating Loop. Co
+
+ 
+ 
+
+ 
+
+16
+
+curve of varying the lag time of the mixing pot from O to 5 sec. (Note
+that mixing was still assumed to occur in each "lump" of the reactor and
+heat ‘exchanger and that in this -analysis the effect of additional mixing
+was considered.) The use of pure time delays (i.e., no mixing) to describe
+flow in lines external to the core gives a plot with sharp curves. As the
+time in the mixing pot increases, the curve becomes smoother. At low fre-
+quencies (<0.06 radian/sec) and at high frequencies (>1.0 radian/sec) the
+effect of mixing is negligible. At low frequencies the fuel temperature
+changes slowly enough for the effects of additional mixing in the lines
+
+to become insignificant, and at high frequencies, the neutron-kinetics ef-
+fects dominate and temperature feedback from the external loop is unimpor-
+tant.
+
+The amount of mixing in a circulating fuel, such as in the MSRE, is
+not easily determined analytically. The quantity of interest is not really
+the amount of salt "mixed" with other salt but, rather, the extent to which
+the temperature of a slug of salt is affected by its surroundings during
+its journey around the loop. Physical mixing of the salt, conductive heat
+transfer with adjoining slugs of salt, convective heat transfer to the
+pipe wall, and heat transfer in the heat exchanger all result in "mixing"
+the salt temperature. The experimental results of the 233y testing pro-
+gram may permit a determination of the size of the mixing pot that best
+describes the actual physical situation in the MSRE.
+
+4.3 Sensitivity of dn/ne” Ok to Parameter Changes
+
+The equations used to model the MSRE contain many independent parame-
+ters. Most of these are well known, but conditions may be postulated un-
+der which their values might change. The effects on the magnitude ratio
+of changes in each individual parameter were determined by performing a
+sensitivity analysis. > The results of this analysis for selected vari-
+ables are shown in Fig. 8.
+
+The frequency range in which each variable is most important is &
+parent from the curves. In principle the theoretical frequency response
+could be compared with the response determined experimentally and the pa-
+rameter that might be changing could be selected, or it could be determined
+ 
+
+»
+
+»
+
+17
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ORNL — DWG 68—10082
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0 TF
+TIN os2 T
+08 \ IA HEAT EXCHANGER
+’ LM 1 \J/ HEAT TRANSFER
+4 0.08 COEFFICIENT,
+06 -
+\ 004
+04
+0
+0.2 | FUEL TEMPERATURE]
+COEFFICIENT
+-0.04
+0 Ho
+-02
+© 04
+e Lo 0.08 -SALT
+Ww 03 aN GRAPHITE TEMPERATURE HEAT EXCHANGER
+2 N COEFFICIENT 0.06 HEAT TRANSFER
+E oz \ COEFFICIENT
+Zz 0.04
+ul 04 NC
+z NU © 002
+5 © 7
+2 0
+Z -od
+E -0.02
+2 -02 :
+w -0.04
+oO
+Le -o03
+o 03 N 02
+E N MIXING
+cooz N GRAPHITE HEAT CAPACITY 04 TIME
+o
+2 od N 0
+a NN
+NU
+Z o ; -0.4
+z P|
+wu =0d . 1 ~=0.2
+10 N 0.2 —TT :
+2 / i Co THI
+3 (iN LE RH
+© os N 0 rt - -
+z / FUEL HEAT dh CLE
+S os 7 \ Tf CAPACITY -0.2 wi ed
+1 Co
+g HA NEUTRON GENERATION TIME||| \ 2
+E 04 | -0.4 \ rt
+Ww N\ HE
+oS \ ! h
+o o2 -0.6 y a.
+E [1
+g o oo ~0.8 N+
+NT NL *
+-02 -1.0
+0 SH
+N TT
+J
+-0:2 \ J
+-0.4 \ —
+Bott / :
+-0.6 :
+-0.8
+\/
+~1.0 )
+0004 001 of 1 10 100 - 0.001 004 od t 10 100
+FREQUENCY (radians /sec) FREQUENCY (radians /sec)
+Fig. 8. Curves Showing the Sensitivity of the Amplitude I Ratio to
+
+Change in Various System Parameters.
+
+ 
+ 
+
+ 
+
+18
+
+that the value of a certain parameter was estimated incorrectly in the
+theoretical model. In practice, it is more likely that an actual change
+in system performance would affect more than one parameter. For example,
+a change in fuel-salt flow rate would affect the temperature feedback,
+effective delayed-neutron concentration, prompt temperature effects in the
+core, and heat transfer in the heat exchanger. ‘The frequency response .
+would be expected to change in the region where each of these variables
+was important. Certainly any appreciable change in fuel-salt flow rate
+could be detected by an experimental frequency-response determination,
+but to pinpoint the exact cause might be difficult. There are changes
+other than fuel-salt flow rate that might have an effect on only one or
+two parameters. For these changes, it might be possible to determine the
+exact cause of the anomalous behavior. Under any conditions, the sensi-
+tivity analysis gives valuable information as to the frequency range in
+which each parameter affects the system response and the relative jmpor=-
+
+tance of each parameter.
+
+4.4 Frequency Response .of Outlet Temperature to. Power
+
+Analyses of experimental data taken at the end of operation with 235U
+fuel showed that temperature perturbations were being introduced into the
+core as a result of heat transfer fluctuations at the radiator. These
+. were significant enough in some cases to appreciably affect the experimen-
+tal frequency-response determination. This, together with the mixing
+problem, led to a calculation of the frequency response of the reactor
+outlet temperature with respect to power (5T/8n) to provide a means of
+determining the effect of extraneous temperature disturbances.
+
+From a theoretical standpoint, many temperature-to-power frequency
+‘responses may be calculated. However, only those that may be experimen-
+tally verified are of use in comparing a theoretical model with a physi-
+cal system or in determining the effect of outside influences (such as
+wind velocity affecting the radiator heat transfer) during an actual test.
+The model discussed previously was modified to include a term that rep-
+-resented the fuel-salt temperature, as recorded by a thermocouple, 2.5
+sec ‘downstream of the outlet of the 2-sec mixing pot. This position was
+
+chosen because it corresponds to the location of a particular thermocouple.
+ 
+
+ 
+
+»
+
+»
+
+L]
+
+19
+
+with a convenient output. The response of a thermocouple located on the
+outside of a fuel-salt pipe to a change in fuel-salt temperature was found®
+to be adequately approximated by a l-sec pure time delay plus a 5-sec
+first-order lag. - A schematic diagram of the model that incorporates these
+changes is shown in Fig. 9.
+
+Figure 10 gives the frequency response of ‘the salt temperature to
+power changes and the thermocouple response to power changes. At low fre-
+quencies these are the same, but at high frequencies there is an increas-
+ing difference between the frequency response of salt temperature to power
+changes and that of the indicated temperature to power changes because of
+the finite time required to transfer heat through the pipe wall.
+
+The effect of fuel mixing-on the 8T/8n frequency response may also
+
+be seen in Fig. 10. In addition to the 2-sec mixing pot at the reactor
+
+outlet, a 5-sec mixing pot was included between the heat exchanger and the
+core. This caused the frequency-response plot to be smoothed between 0.1
+and 0.3 radians/sec but had no noticeable effect at other frequencies.
+
+The differences in magnitude of the 8T/5n curves at low frequencies
+for different power levels is caused by heat transfer changes at the ra-
+diator. The tube-to-air heat transfer coefficient was assumed to vary
+
+with the air flow rate to the 0.6 power. The air flow rate was assumed
+
+© to vary linearly with the power level.
+
+5. Stability Analysis
+
+5.1 Pole Configuration — Eigenvalues
+
+5.1.1 Theoretical Discussions. In general, if a reactor system can
+be represented by the block diagram shown in Fig. 11, its closed-loop
+power-to-reactivity transfer function can be written as
+
+5n _ GG :
+Bk 1+ GH ® (3)
+
+In this application, G is the transfer function of the reactor kinetics
+
+and H is the transfer function for the system feedback, which includes the-
+
+effect of prompt temperature changes in the core, as well as delayed tem-
+
+perature effects caused by the salt circulation. The denominator of this
+
+ 
+ 
+
+20
+
+ORNL-DWG 68-10083R
+THERMOCOUPLE RESPONSE
+
+ 
+
+RELATIVE THERMOCOUPLE
+sec PURE DELAY POSITION ON OUTLET PIPE
+
++ .
+
+2.5-sec PURE DELAY
+
+ 
+
+ 
+
+2-sec
+
+MIXING SALT FLOW
+POT —
+(1st-ORDER
+LAG)
+
+HEAT COT
+REACTOR EXCHANGER —
+CORE
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. 9. Schematic Diagram of MSRE Model Including the Model Repre-
+sentation of a Thermocouple's Response to a Change in Salt Temperature.
+ 
+
+ 
+
+ 
+
+21
+
+( Co : ORNL-DWG 68-10078R
+
+1000
+
+500 === SALT TEMPERATURE RESPONSE,2-sec SALT MIXING POT
+~ ~~ TC RESPONSE, 2-sec SALT MIXING POT
+===«TC RESPONSE, 2-sec AND 5-sec SALT MIXING POTS
+
+200
+
+o
+
+100
+
+50
+
+- nN
+a oO Oo
+
+MAGNITUDE RATIO (3T/8n)
+Nn
+
+0.5
+
+ 
+
+107% 074 1073 1072 10! 10°
+
+PHASE (deg)
+
+ 
+
+1078 04 1073. 1072 0! 10°
+: FREQUENCY (rodians/sec) :
+
+Fig. 10. Frequency-Response Plots of Salt Temperature (in the Out-
+let Pipe) to Power Changes and Thermocouple (on the Outlet Pipe) Response
+to Power Changes for Various Amounts of Salt Mixing at Power Levels of
+1 Mw and 8 Mw.
+
+ 
+ 
+
+ 
+
+22
+
+ORNL-DWG 68- 11681
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+6
+3k INPUT: 8k NET! REACTOR KINETICS 8n
+To TRANSFER FUNCTION (NUCLEAR)
+POWER
+3k FEEDBACK
+H
+REACTIVITY TO
+
+ 
+
+ 
+
+NUCLEAR POWER
+TRANSFER FUNCTION
+
+ 
+
+ 
+
+ 
+
+Fig. 11. - General Block Diagram of a Nuclear Reactor.
+ 
+
+ 
+
+ 
+
+23
+
+transfer function, 1 + GH, is a polynomial (called the characteristic
+polynomial) in the Laplace transform variable S. The roots of this poly-
+nomial are the poles of the system transfer function. These roots are
+equal to .the eigenvalues of the system coefficient matrix, A. . A necessary
+and sufficient condition for linear asymptotic stability is that the syg-
+tem poles (and therefore the eigenvalues of A) have negative real parts.
+This criterion gives a definite answer to the question of linear stability.
+If the physical system has an N X N coefficient matrix (N linear equations
+‘in N system state varisbles), it will have N eigenvalues. The dominant
+-eigenvalues of a stable system are the complex eigenvalues nearest to the
+imaginary axis. These eigenvalues dominate the time response of a system
+Af the other eigenvalues ‘are relatively far removed from-the imaginary
+axis. Two things can be learned about the behavior of a system from the
+location in the complex plane of the dominant eigenvalues. First, after
+
+a stable system has been perturbed, the amplitude of the oscillations in
+a system variable decreases exponentially with a time constant equal to
+the inverse of the distance of the dominant eigenvalue from the imaginary
+axis. Second, the transient overshoot of the system is determined by the’
+effective damping ratio, § (Ref. 9). This damping ratio is determined by
+the angle Pp a vector from the origin of ‘the complex plane to the dominant
+
+-eigenvalue makes with the imaginary axis:
+tan B
+
+f= ————
+
+(4)
+
+As tan B increases from O to =, & increases from O to 1. The value of &
+determines how large the overshoot of the system is during a transient.
+Small values of § indicate larger overshoot than large values. .
+
+One characteristic of a zero-power ‘reactor is a. pole of the system
+‘transfer function at ‘the intersection of ‘the real and imaginery axes.
+Since the system eigenvalues correspond to the system poles, this also
+implies an eigenvalue at the origin. The output. (for a reactor, the power)
+of a system of this type will increase as long as there is a positive in-
+put (reactivity) but will level out when there is no input.
+
+.
+
+ 
+ 
+
+24
+
+0 vas used to determine the
+
+"The computer code of Imad and Van Ness!
+eigenvalues of the system matrix, but before the eigenvalues of ‘the sys-
+tem could be determined, an approximate treatment of the pure time delays
+"in ‘the system model was necessary. An eighth-order Padé approximation
+(see Appendix) was used for all time delays except the one representing
+the circulation of the delayed-neutron precursors around the ‘external
+loop. To account for the fact that the fuel was circulating, a set of
+effective delayed-neutron fractions (Bepr) was used in the ‘eigenvalue
+calculation. - I.
+
+© 5.1.2 Eigenvalue Calculation Results. Figure:12 shows several of
+
+the dominant eigenvalues plotted for various power levels. The real part
+
+ 
+
+of each calculated eigenvalue is negative, with the general trend being
+toward smaller absolute values with decreasing power level. The negative
+real parts insure linear asymptotic stability, and the trend toward smaller
+absolute values with decreasing power level again points to a higher de-
+gree of stability at higher power levels. The eigenvalues that lie rela-
+tively far removed from the real axis (those with positive imaginary com-
+ponents between 0.20 and 0.30) are a result of the coupled energy-balance
+‘equations and are relatively independent of nuclear power. They do, how-
+ever, exhibit some power dependence, primarily because of the variation
+in heat transfer coefficient at :the radiator with power level. - The physi-
+cal implication of these eigenvalues is that any temperature disturbance
+in the system would tend to cause slight temperature oscillations around
+the system, even if the nuclear power were zero. The eigenvalues for the
+nuclear kinetics equations were all on the real axis for the Zero-power
+condition.
+
+The calculation for zero power resulted in a. dominant eigenvalue with
+"a real part equal to ~0.36 X 10~7 sec”! and an imeginary part equal to
+0.0. By proper manipulation of one coefficient in the system equations in
+the fifth significant digit (the coefficients are generally not known to
+better than four places) the value of the real part of the dominant eigen-
+velue could be changed from a small negative velue to a small positive
+value. While from a mathematical standpoint the positive sign would imply
+instability, it must be realized that within the accuracy of the calcula-
+tion, both these values are zero. A calculated value of identically zero
+ 
+
+Fig. 12.
+
+IMAGINARY AXIS (sec)
+
+25
+
+ORNL-DWG 69 -{67R
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0.3
+or NC
+*w
+0.2 —— POWER FOR EIGENVALUE
+CALCULATION
+® 8 Mw
+® 5Mw
+A {Mw
+v O4Mw
+¢ ZERO
+SOLID LINES INDICATE
+POWER DEPENDENCE OF
+O.4 b—— A PARTICULAR EIGENVALUE
+\ 1.
+o ded TSS
+/ al.
+NEGLIGIBLE
+ot POWER
+DEPENDENCE’
+-04
+-0.2
+. &v-4 o ra
+-0.3
+044 042 Of0 008 006 004 002 0
+
+REAL AXIS (sec)
+
+Plots of Several of the More Dominant Eigenvalues of the
+
+233y.Fueled MSRE for Various Power levels.
+
+ 
+ 
+
+26
+
+(the expected value at zero power) would have resulted only if absolute
+precision had been maintained throughout the calculation.
+
+As a point of general interest, a set of system equations with an
+eigenvalue with real part equal to -1 X 10-6 sec™! implies that a perturbed
+system, after the input perturbations has vanished, spontaneously returns
+to. its original state with a time constant of 10° sec (11.5 days); simi-'
+larly, an eigenvalue with real part equal to +1 X 10"6 sec”! would spon-
+taneously deviate away from its original state with an 11.5-day time con-
+stant. While the difference in stability between these two cases is ob-
+vious, neither would represent a difficult problem to the control system
+designer, and either case would represent acceptable system behavior; or,
+conversely, for a particular application, if one of these was unacceptable,
+both would probably be unacceptable.
+
+The eigenvalues that form the curve which goes to the origin at zero
+power (see Fig. 12) were used to calculate the damping ratio, £. Results
+of this calculation are listed below:
+
+Power ¢, Damping
+
+(Mw) Ratio
+0.1 0.16
+1.0 0.37
+5.0 0.96
+‘8.0 0.99
+
+Since there are eigenvalues on the real axis that have real parts of about
+the same magnitude as those used in the calculation, the system damping
+ratio cannot alone be used to determine the system oscillatory behavior;
+however, it is useful as a relative indicator. The damping ratio again
+emphasizes the MSRE characteristic of being less oscillatory at high power
+
+‘levels than at low power.
+
+5.2 Modified Mikhailov Method
+
+5.2.1 Theoretical Discussion. An alternate technique for determin-
+‘ing absolute stability of a linear system was recently developed by Wright
+and Kerlin® along the lines of the method of Mikhailov. The chief advan-
+‘tage of this method over the eigenvalue technique is that no approximations
+ 
+
+27
+
+are necessary to treat pure time delays. The technique of Wright and
+Kerlin is based on a linear constant-parameter system of order N, which
+can be written as a set of coupled, first-order differential equations
+with constant coefficients:
+
+St) A X(t) + R(t,7) + 5 £(t) , (5)
+
+where
+
+x(t) = column vector of system state variables,
+
+A = constant N X N coefficient matrix,
+f(t) = forcing function,
+B = column vector of coefficients of £(t),
+R(t,T) = matrix of time delay terms, each of the form
+
+Tix (t - Tyy) .
+A Laplace transform of Eq. (5) yields
+S X(S) = A X(S) + R(S,T) +B £(S), (6)
+
+where S is the Laplace transform variable. The transform of one of the
+
+time-lagged elements,
+Ty 4%, (t - Tyg) ,
+
+is
+
+Ts x,(8) ST s
+
+so R(S, 7) may be written
+R(S,7) = L(S) x(s) , (7)
+
+where L(S) is a matrix composed of the Tyg e"S™ terms. Substitution
+into Eq. (5) and manipulation yields
+
+x(s) ;
+— =—[A-ST+1]"'E, (8)
+£(s)
+
+i
+
+where I is the identity matrix, and super —1 indicates the inverse matrix.
+
+ 
+ 
+
+28
+
+The absolute stability of the system is determined by the location of the
+
+roots of ‘the equation
+det (A-SI +1L1L)=0.
+
+The values of S for which the sbove equation is satisfied are the system
+eigenvalues or characteristic roots.
+
+In their development of the modified Mikhailov stability criterion,
+‘Wright and Kerlin defined a quantity M(S) as
+
+D(s)
+M(s) == (9)
+P(S)
+where
+D(S) = det (A— SI +L) , (10)
+P(S) = det (T — 8I) , (11)
+
+and T is an N X N diagonal matrix, each element of which is the negative
+of the absolute value of the corresponding elements of the A matrix. The
+quantity P(8) can be considered to be a factor that normalizes D(S) in
+both magnitude and phase. The stability criterion associated with M(S)
+is that "the number of zeros of the system determinant det (A— SI + L)
+
+in the right half plane ‘equals the negative of the number of counterclock-
+‘wise encirclements of the origin by the vector M(jw) as w goes from — to
+400, "4 While hot explicitly stated in this quotation the important parame-
+"ter is the net number of encirclements of the origin, with clockwise en-
+circlements counting negative and counterclockwise encirclements counting
+positive. Because of symmetry about ‘the real axis it is necessary only
+“to plot M(jw) for w running from O to +o©. It can also be shown that M(jw)
+approaches 1.0 as. w becomes large, so a finite number of w values can com--
+pletely describe the motion of M(jw).
+
+5.2.2 Results of Applying the Mikhailov Stability Criterion. By
+using a computer program developed by Wright and Kerlin, plots were gen-
+‘erated of M(jw) for w running from O to +o. Figures 13 through 17 show
+these plots for several power levels. As shown, at significant power lev-
+
+els there are no .encirclements of the origin as w goes from —© to *«. As
+ 
+
+ 
+
+ 
+
+29
+
+ORNL-DWG 68-10076
+
+ 
+
+| ]
+hs vd ~ ~~ 26R0 POWER
+: "/ ~~ NL
+
+o
+
+ 
+
+ 
+
+o
+7
+7
+
+ 
+
+\
+
+ 
+
+IMAGINARY AXIS
+o
+»
+
+©
+nN
+=
+
+ 
+
+ 
+
+ 
+
+0 NN V ¢
+w i IN ~~ | jw=
+(a)
+-0.2
+
+-06 -04 -02 0 0.2 04 06 08 (10 t.2
+REAL AXIS * -
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ORNL—DWG 68 —10069
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+(x10
+0
+ZERO S/
+
+® POWER INTERCEPT
+% -0.5 -6.5344 x10” °
+Ld ; / w=0
+>
+x
+=
+z /
+2 1.0
+: /
+
+—1.5 /
+
+(8) .
+-2.0 3
+(x07) -0.8 -06 -04  -0.2 0
+
+REAL AXIS
+
+Fig. 13. Modified Mikhailov Plot for MSRE Operating with 2337 Fuel
+at Zero Power. (a) Complete plot. (b) Near origin.
+
+ 
+ 
+
+30
+
+ORNL-DWG 68-10075
+
+   
+
+=
+nN
+
+POWER =1 kw
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+10
+08
+0
+x
+<4 as
+>
+oe
+<I
+Z
+goa
+=
+02
+0
+-02
+~-06 -04 .-02 O O02 O04 06 08 10 12
+REAL AXIS
+ORNL-—DWG 68—10074
+-6
+(x10) LN
+8 / N
+6
+INCREASING
+FREQUENCY
+4
+° /
+x
+<{
+x
+z 2
+4
+z POWER = 1{ kw
+<
+2
+0
+w=0
+-2 7
+(0)
+-4
+(x10 -20 -45 —10 -05 0 05
+REAL AXIS
+
+Fig. 14. Modified Mikhailov.Plot for MSRE Operating with ?33U Fuel
+at 1 kw. (a) Complete plot. (b) Near origin.
+ 
+
+ 
+
+31
+
+ORNL-DWG 68-10073R
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+| T
+POWER = 100 kw
+1.0 L
+INCREASING
+FREQUENCY NG
+0.8 A  —— ~ N
+wn
+= 0.6 / » NS
+: {LX
+=
+Zz \,
+e 0.4 \ 3%
+: NB
+0.2: \ \ 7
+0 —— NC — “om
+w=
+Pomme
+—02 (0) |
+-06 -04 -02 O 02 04 06 08 10 4.2
+REAL AXIS
+ORNL-DWG 68-10072
+(x10°3)
+1
+- POWER = 100 kw
+Xo — Ba
+=0
+z - LT ’
+~~
+z -{ = RN
+z :
+a CREASING
+z | Bicreasive
+-2 =
+~T
+lo
+x03) 6 -5 -4 -3 ~2 = 0 f
+
+REAL AXIS
+
+Fig. 15. Modified Mikhailov Plot for MSRE Operating with 2337 Fuel
+et 100 kw. (a) Complete plot. (b) Near origin.
+
+ 
+ 
+
+ 
+
+Fig. 16.
+
+at 1 Mw.
+
+°
+
+IMAGINARY AXIS
+o
+ow
+
+ORNL-DWG 68~{00T{
+
+ 
+
+| INCREASING
+
+reABOT —
+/ zd pl p=
+
+POWER = {Mw
+
+ 
+
+ 
+
+\
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+0
+w= 0 w=0
+~~
+(a)
+-0.5
+-050 -025 O 025 050 075 1.0 1.25
+REAL AXIS
+i ORNL-~-DWG 68~— {0070
+(x10)
+12 b——
+ol Ba
+TT —
+
+o
+®
+
+IMAGINARY AXIS
+o
+>
+
+-04
+
+ 
+
+ 
+
+POWER = { Mw
+
+ 
+
+ 
+
+(5
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+\
+w=0
+
+ 
+
+ 
+
+ 
+
+-06 -04
+
+(a) Complete plot.
+
+-0.2 0 0.2 04
+REAL AXIS
+
+(b) Near origin.
+
+06 (x40)
+
+Modified Mikhailov Plot for MSRE Operating with 233U Fuel
+
+wh
+
+w
+ 
+
+ 
+
+Cy
+
+ut
+
+Fig. 17.
+
+33
+
+ORNL-DWG 68-40068R
+
+ 
+
+ye
+
+ 
+
+1.5
+
+N
+POWER = 8 Mw / eresnc
+FREQUENCY
+
+ 
+
+ 
+
+ 
+
+. 0.5
+
+ 
+
+IMAGINARY AXIS
+oO
+
+|
+
+ 
+
+|
+o
+on
+
+ 
+
+-1.0
+
+ 
+
+ 
+
+ 
+
+N—
+
+ 
+
+ 
+
+ 
+
+ 
+
+-1.5
+~2
+
+Modified Mikhailov Plot for MSRE Operating with 222U Fuel
+
+0
+
+1 2 3
+
+REAL AXIS
+
+ 
+ 
+
+34
+
+in the eigenvalue calculation, the results of zero-power calculations
+were highly sensitive to small changes in coefficients in the system ma-
+trix. While the zero-power plots actually show an encirclement of the
+origin when the total plot from —=o to + is considered, the intercept at
+—6.5 x 1078 should, of course, be interpreted as passing through the ori-
+gin. This is typical for a zero-power reactor.
+
+Application of the modified Mikhailov stability criterion to the set
+of system equations that describe the MSRE verifies that the MSRE is in-
+herently stable at all power levels.
+
+6. Concluding Discussion
+
+The overall result of this study is a determination that the MSRE
+fueled with 233U is an inherently stable system at all power levels of
+interest. The response of the uncontrolled system at powers. above zero
+power, as seen in the transient analysis and corroborated by the eigen-
+values, is rapid and nonoscillatory at high powers and becomes sluggish
+and oscillatory at low powers. It is recommended that the 233U-fueled
+MSRE be subjected to a testing program at powers from zero to full power
+to experimentally verify the predicted response. These experiments should
+be performed in such a way that both the on/0k and 8T/on transfer functions
+can be determined, since both can now be compared with theoretical predic-
+
+tions.
+
+Acknowledgments
+
+The authors are grateful to T. W. Kerlin of the University of
+Tennessee and S. J. Ball for their assistance and advice. The help of
+J. L. Iucius in assisting with programming difficulties is also acknowl-
+
+edged.
+ 
+
+ 
+
+ 
+
+uh
+
+4.
+
+35
+References
+
+S. J. Ball and T. W. Kerlin, Stability Analysis of the Molten-Salt
+Reactor Experiment, USAEC Report ORNL-TM-1070, Oak Ridge National
+Laboratory, December 1965.
+
+S. J. Ball and R. K. Adams, MATEXP, A General Purpose Digital Com-
+
+‘puter Program for Solving Ordinary Differential Equations by the Ma-
+trix Exponential Method, USAEC Report ORNL-TM-1933, Oak Ridge National
+
+Laboratory, Aug. 30, 1967.
+
+T. W. Kerlin and J. L. Lucius, The SFR-3 Code — A Fortran. Program for
+Calculating ‘the Frequency Response of a Multivariable System and Tts
+Sensitivity to Parameter Changes, USAEC Report ORNL-IM-1575, Oak
+
+‘Ridge National Laboratory, June 1966.
+
+W. C. Wright and T. W. Kerlin, An Efficient, Computer-Oriented Method
+for Stability Analysis of Large Multivariable Systems, Report NEUT
+2806-3, Nuclear Engineering Department, University of Tennessee, July
+
+"1968.
+
+T. W. Kerlin and S. J. Ball, Experimental Dynamic Analysis of the
+
+‘Molten-Salt Reactor Experiment, USAEC Report ORNL-TM-1647, Oak Ridge
+
+National Laboratory, October 1966.
+
+M. A. Schultz, Control of Nuclear Reactors and Power Plants, p. 116,
+
+McGraw-Hill, New York, 1961.
+
+G. Robert Keepin, Physics of Nuclear Kinetics, pp. 328-329, .Addison-
+Wesley, Reading, Mass., 1965.
+
+S. J. Ball, Oak Ridge National Laboratory, personal communication to.
+R. D. Steffy, Jr., July 24, 1968.
+
+D. R. Coughanowr and L. B. Koppel, Process Systems Analysis and Con-
+
+trol, pp. 86, 187, McGraw-Hill, New York, 1965.
+
+~-F. P. Imad and J. E. Van Ness, Eigenvalues by the QR Transform,
+.Share-1578, Share Distribution Agency, IBM Program ‘Distribution,
+White Plains, N. Y., October 1963.
+
+G. S. Stubbs and C. H.. Single, Transport Delay Simulation Circuits,
+USAEC Report WAPD-T-38 and Supplement, Westinghouse Atomic Power
+Division, .1954.
+
+ 
+ 
+
+ 
+
+re
+
+““
+ 
+
+ 
+
+-
+
+‘to mathematically approximate pure time delays. Such a treatment, for
+
+mation must be substituted for .e”
+
+37
+
+Appendix
+
+PADE APPROXIMATIONS
+
+In the analysis of physical systems it ‘frequently becomes necessary -
+
+‘instance, would be necessary to relate the outlet ‘temperature to the in-
+
+let temperature of a fluid flowing in plug flow through an adiabatic pipe
+if the axial heat conduction were negligible. If the inlet temperature
+
+is x(t) and the delay time is T, the outlet temperature will be x(t — T).
+The Laplace transform of a delayed variable x(t = T) is x(8) eI5, and if
+
+a system containing time delays is to be analyzed simply, a linear approxi-
+
+Ts, One technique for approximating
+
+~TS
+
+e ‘is as an infinite series:
+
+TS mg? 73g3 még
+e = 1—-—TS tS mmr. ° ° (1)
+
+An approximation to this expansion is
+
+8 —
+
+HID
+
+-TS
+
+e eee. (2)
+
+IR
+
+ 
+
+ 
+
+. 2s? 1383
+= 1 - IS + =5— 7
+
+S +
+
+Ml
+
+Unfortunately this approximation does not converge rapidly for large val-
+
+ues of TS. A better approximate treatment is the Padé approximation:®
+
+ 
+
+'n 1-—2r 1.8. + 1282 oe
+oI ~ rr r (3)
+- - 2
+r=1 1 + 20 TS + 1282
+rr r
+where
+n
+T = Delay time = ) ATT “ (4)
+r=1
+
+The order of this approximation is 2n. . Stubbs and Single! have suggested
+
+that the criterion for selection of I. and Ty be such that the actual phase:
+shift,
+
+ 
+ 
+
+38
+
+2I'tw-
+¢ = 2 tan"? ed
+
+1~ 724
+
+is as close as possible to the ideal phase shift for a pure time delay,
+
+do = 4ltw
+
+To meet this criterion, .they have suggested (for an eighth-order Padé
+approximation) that the following values be used:
+
+In =Vs/2
+
+Iz = 0.40
+
+T3 = 1.0
+
+r, =0.5 -
+11/72 = 1.68
+13/1; = 1.14
+
+For ‘this choice of constants the phase error (¢ — do) in the Padé approxi-
+
+mation is less than one degree at wT = 13.5 radians. At higher frequen-
+
+cies this error increases, and at lower frequencies it. decreases.
+
+The following linear equations have been developed for the eighth-
+order Padf approximation, where X35 is the variable input :to the time de-
+lay, xo is the delayed variable output of the time delay, T is the delay
+
+‘time, and y; through ys are Padé variables:
+
+dy
+— = =3,91715x, + 3.91715x¢
+dt +
+®
+dy2 10
+— = =19.5858x, — — y1 — 19.5858xq
+at oor
+dys 10
+= 7 45.8441x; — — ya + 45.8441x¢
+dat T
+dys 10
+_—= —65.8083x, — — y3 — 65.8083x¢
+
+dat T
+
+(5)
+
+(6)
+
+(7)
+
+(®
+
+et
+ 
+
+ 
+
+dys
+
+dt
+
+dye
+
+dat
+
+dyq
+
+dt
+
+dye
+
+dt
+
+ 
+
+39
+
+10
+= —64., 1135x, -— ys +t 64.1135x¢9
+Tig
+10
+= —43.8169x, — — 5 — 43.8169x¢
+T
+10
+= -20.6831x, — — ye + 20.6831xo
+T
+10
+—_— = —6.3308x, - — yy = 6.3308x¢
+T
+10
+Xg = Xx; + T ys
+
+For a further discussion of this method see Stubbs and Single.!?!
+
+(9)
+(10)
+(11)
+(12)
+
+(13)
+
+ 
+ 
+
+ 
+
+mu
+
+PW
+
+ 
+
+ 
+ 
+
+«eo eo
+
+. .
+
+OVRITLI™WH
+
+RESEL
+
+15.
+16.
+
+17.
+
+-18.
+‘19.
+
+20.
+
+21.
+: 22 .
+
+23. M
+
+bea
+25.
+26.
+R27,
+‘28,
+29.
+30.
+31.
+32.
+33.
+34.
+35.
+-36.
+37.
+38.
+
+39.
+
+41
+
+ORNL-TM-2571
+
+ 
+
+Internal Distribution
+L. Anderson 40," T. 8S. Kress
+.K. . Adams 41. R. C. Kryter
+F. Baes “42, M. I. Lundin
+J. Ball ~ 43. R. N. Lyon
+F. Bauman “44, R. E. MacPherson
+E. Beall 45. H. McClain
+S. Bettis 46. H. E. McCoy
+Blumberg 47. H. C. McCurdy
+. . G. Bohlmanh 48. A. J. Miller
+J. Borkowski 49. R. L. Moore.
+B. Briggs , .50. E. L. Nicholson
+R. Cobb 51. L. C. Oakes
+L. Compere 52, .A. M. Perry
+B. Cottrell ‘53. H. B. Piper
+L. Crowley "54. B. E. Prince
+L. Culler 55. G. L. Ragan
+"J.- Ditto : 56. J. L. Redford
+P. Eatherly 57. M. Richardson
+R.. Engel 58. J. C. Robinson
+P. Epler 59-60. M. W. Rosenthal
+.E. Ferguson 61. A. W. Savolainen
+M. Ferris 62. Dunlap Scott
+P. Fraas 63. M. J. Skinner
+K. Franzreb 64. A. N. Smith
+N. Fry 65. I. Spiewak
+‘H. Gabbard : 66-75. R. C. Steffy
+B. Gallaher “76. .D..A. Sundberg
+. R. Grimes 77. J. R. Tallackson
+G. Grindell 78. R. E. Thoma
+H. Guymon 79. -D..B. Trauger
+.H. Harley .80. . J. R.. Weir
+N. Haubenreich ‘81. M. E. Whatley
+-Houtzeel 82. J. C. White
+L. Hudson : 83. G. D. Whitman
+R. Kasten 84-93. P. J. Wood
+J. Kedl 94. Gale Young
+W. Kerlin . ‘95.96. Central Research Library
+T. Kerr © 97-98, Y-12 Document Reference Section
+I. Krakovisk .99-101. Laboratory Records Department
+
+102. Laboratory Records (IRD-RC)
+
+ 
+ 
+
+42
+External ‘Distribution
+
+: 103. C.. B. Deering, AEC-OSR
+
+104-105. T..W. McIntosh, .AEC, Washington, D.C.
+
+"106-120. Division of Technical Information Extension (DrIE)
+121. Laboratory and University Division, ORO
