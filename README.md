@@ -3,6 +3,8 @@ curated documents pertaining to early molten salt reactor research.
 
 rescanned with optical character recognition (ocr) using [ocrmypdf](https://github.com/jbarlow83/OCRmyPDF), [tesseract](https://github.com/tesseract-ocr/tesseract), and training set '[tessdata_best](https://github.com/tesseract-ocr/tessdata_best)'.
 
+note that github's pdf viewer isn't capable of marking text or searching documents, this inadequacy has been reported to [github](https://github.com/isaacs/github/issues/1427) and will hopefully be rectified soon.
+
 ### Nuclear Science and Engineering, **2** 2 (February 1957).
 | article | filename | ocr |
 |:--------|:--------:|:------:|
