@@ -3,12 +3,12 @@
 
 ---
 
-poor text formatting of many of the publically available pdf scans of documents pertaining to early molten salt reactors make it cumbersome to sift out specific details.
+poor text formatting in many of the publically available pdf scans of documents pertaining to early molten salt reactors make it cumbersome to sift out specific details.
 this repository is intending to make a searchable archive of ocr text files of documents pertaining to molten salt reactors, the need which stem from the [msre cad file project](https://github.com/openmsr/msre).
 
 documents are rescanned with optical character recognition (ocr) using [ocrmypdf](https://github.com/jbarlow83/OCRmyPDF), [tesseract](https://github.com/tesseract-ocr/tesseract), and training set '[tessdata_best](https://github.com/tesseract-ocr/tessdata_best)'.
 
-disclaimer: this repository is **not** intended to be a distribution pdf documents, or an infringement on any possible copyright claims. for the original documents we refer to other sites, such as ornl's [library catalog](https://libcat.ornl.gov/) or [energyfromthorium](http://energyfromthorium.com/pdf/).
+disclaimer: this repository is **not** intended to be a distribution of pdf documents, or an infringement on any possible copyright claims. for the original documents we refer to other sites, such as ornl's [library catalog](https://libcat.ornl.gov/) or [energyfromthorium](http://energyfromthorium.com/pdf/).
 
 **_note that github's pdf viewer isn't capable of marking text or searching in documents, this inadequacy has been reported to [github](https://github.com/isaacs/github/issues/1427) and will hopefully be rectified soon._**
 
