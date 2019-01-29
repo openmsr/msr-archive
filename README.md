@@ -4,7 +4,7 @@
 ---
 
 poor text formatting in many of the publically available pdf scans of documents pertaining to early molten salt reactors make it cumbersome to sift out specific details.
-this repository is intending to make a searchable archive of ocr text files of documents pertaining to molten salt reactors, the need which stem from the [msre cad file project](https://github.com/openmsr/msre).
+this repository is intending to make a searchable archive of ocr text files of documents pertaining to molten salt reactors, the need of which stem from the [msre cad file project](https://github.com/openmsr/msre).
 
 documents are rescanned with optical character recognition (ocr) using [ocrmypdf](https://github.com/jbarlow83/OCRmyPDF), [tesseract](https://github.com/tesseract-ocr/tesseract), and training set '[tessdata_best](https://github.com/tesseract-ocr/tessdata_best)'.
 
