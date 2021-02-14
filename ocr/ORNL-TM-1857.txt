@@ -1,85 +1,5 @@
  
-
- 
-
-  
-
-- re
-HL
-
-~ OAK RIDGE NATIONAL LABORATORY
-= = operated by
-UNION CARBIDE CORPORATION =
-NUCLEAR DIVISION
-for the
-U.S. ATOMIC ENERGY COMMISSION
-: ORNL- TM- 1857
-
-IY het
-
-   
-
-COPY NO. -
-KL
-DATE - June 12, 1967
-
-PHYSICS PROGRAM FOR MOLTEN-SALT BREEDER REACTORS
-
- 
-
-A.M. Perry gE RB
-
- 
-
-ABSTRACT
-
-The sources of possible error in estimates of breeding per-
-formance of a Molten-Salt Breeder Resctor are discussed. Un-
-certainties In cross sections may contribute an uncertainty of
-about +0.026 in breeding ratio. Other sources of error may arise
-from assumptions regarding behavior of fission products, or from
-inadequacies in methods of computation. A reactor physics de-
-velopment program is outlined which should provide a sound basis
-for design of a reactor experiment.
-
- 
-
-NOTICE This document contains information of a: preliminary “nature
-and: was. prepared primarily for infernal use at the Oak Ridge National
-Laboratory. It is subject to revision or correction ond therefore does
-not represent: a final report.
-
- 
  
-
- 
-
- 
-
- 
-
-LEGAL ROTICE
-
-This: esport was prepared os on occount of Government sponsored work, Neither the United States,
-
-nor: the Commission; nor ony person ecting on behalf of the: Commission:
-
-A. Makes any warranty oe representation; expressed or implied, with respect to the accuracy,
-completeness; or usefvinsss of the information contained in this reper, or thai the use of
-any information, upparefus, method; or process disclosed "in thiz ‘report’ may net infringe
-arivately owned rights; ov
-
-B. Assumes any liabilities with respect vo the use of, or for damages resulting from the vee of
-ony information, npparatus, method, or process disclosed in this rupert.
-
-Ase used in the above, ‘person weting on behalf of the Commission’ includes ony employee or
-
-cantractor of the Commission; of employee of such contractor, io the extent that such employes
-
-or centiottor of the Commission, or emplayee of such contractor prepares, disseminates, or
-provides access to, uny informstion purgnent to his employment or contract with the Commission,
-
-or hig employment with such confractor.
 
  
 
@@ -91,87 +11,141 @@ or hig employment with such confractor.
 
  
  
+
+ 
+
+INTRODUCTION ....
+
+ANALYSIS OF UNCERTAINTIES ... |
+
+2.1
+2.2
+
+2.%
+MSBR
+
+5.1
+
+3.2
+5.3
+3.4
+5.5
+3.6
+
+MANPOWER AND COST ESTIMATES ..
+CONCLUSIONS .... o
+
+ACKNOWLEDGMENTS ..
 
 CONTENTS
 
-1. INTRODUCTION ....
-2. ANALYSIS OF UNCERTAINTIES .. i
-2 @ 8 OC © 0 JO & PL S668 CER OO dE ECO 8
+Crogs Sections ...
+Computational Methods i,
 
-2.1 Cross Sections ...
-a Cesccsseosse anatase onacen 9
-. . ® 8 8 Cec OD OS A SEO CEU ORES SE OEE QD
-3 ssumptions Regarding Salt Chemistry .
-ceccsaccnsases ees 21
+A .
+ssumptions Regarding Salt Chemistry
 
-%, MSBR REACTOR PHYSICS PROGRAM
-4 B 8 CC 0 GQ OBB PER EC Cs OE 27
+REACTOR PHYSICS PROGRAM
 
-> [ernest of Dynamic Characteristics
-3.1.1 Stability Analysis ....... Ce rerneneee. 27
-3,1.2 Transient Analysis ...... tereresescccercacenen o8
-i 3.1.3 Flux Flattening ........ teesocessecessseencoos 29
-%.2 Investigation of Alternate Core ete 29
-3.3 Development of Methods . ENS seer ccsnecccne 30
-1h Gross Seatinn Salemi ecb eerereravesesaseseceoanntse 30
-5.5 Development of Computer J 21
-3,6 Experimental Physics Program Cr 30
-2.,6,1 Dynamics Experiments 33
-cestecscosans 35
+Investi i
+igation of Dynamic Characteristics
 
-» T aaa ee ° ° 6
-i ©6506 00 0eE0 06 eee
-do CONCLUSIONS sees ® 6 Ue 8 Ceo 6 bee PQ eoes ees 6
+z2.,1.1l OStability Analysis ...
 
-6. ACKNOWLEDGMENTS ..
+%2.1.2 Transient Analiysis ...::jo.'.".'.
+3.1.% Flux Flattening ,........:...ae...
+Investigation of Alternate Core De;;.“..o
+Development of Methods .. o
+Cross Section Evaluation :n'..."“...-..
+Development of Computer Cod;;‘.n......ai..
+Experimental Physics Program .::::“.'D‘.
+
+3.6.1 Dynamics Experiments ..
 
 LEGAL NOTICE
-yernment sponsored work. Neither
-ting on behalf of the Commission:
 
-expressed or implied, with respect to the accu-
-mation contained in this report, oF that the use
-cess disclosed in this report may not infringe
+nt sponscred work.
+behalf of the Commisgsion:
+d or implied, with Tes
+ntained in this rel
+josed in this Tepo
 
-s an account of GO the United
-nor any person &¢
-or representation,
-fulness of the infor!
-method, oF Pro
+count of Governme
+peraon acting on
+sentation, expresse
+{ the information co
+, ar process disc
 
-This report was prepared al
-States, nor the Commission,
-A. Makes any warranty
-racy, completeness, or use!
-of any information, apparatus,
-privately owned righte; oF
-B. Assumes any 1iapilities with respect to the use of, or for damages resulting
-use of any information, apparatus, method, or process disclosed in this report.
-As used in the above, ‘‘person acting on pehalf of the Commission®’ includes any em-
-or employee of such contractor, to the extent that
-or employee of guch contractor prepares,
-to his employment or contract
+8 &N A<
 
-rom he
+This report Was prepared a
+noT any
 
-ployee or contractor of the Commiseion,
-such employee oT contractor of the Commission,
-dissemingtes, oF provides access to, any information pursuant
-with the Commission, oF his employment with such contractor.
+States, novr the Commission,
+A. Makes auy warranty or repre
+racy, completeness, or usefuinese O
+of any information, apparatus, meth
+privately swned rights; oT
+B, Assumes any iaptiities with respect to the
+uge of any information, apparatus, method, or process
+Ag used in the above, ‘‘person acting on pehalf o
+ployee oF contractor of the Commisgion,
+such employee oT contractor of the Commigsion,
+digeemingtes, or provides access t, any information purau
 
- 
+with the Commisston. t with such contractoT.
 
- 
+use of, or for damages I'e
+disclosed in this report.
+i the Commission
+¢ such contractor, to
+
+or employee of
+ant io his employ
+
+or hig employmen
+
+Neither the United
+
+pect to the accu-
+port, or that the use
+ri may not infringe
+
+suliing from the
+
+» includes any em-
+the extent that
+guch contractorl prepares,
+ment or contract
+
+18
+2l
+
+27
+
+2T
+28
+29
+29
+3C
+30
+z1
+32
+35
+35
+
+26
+38
+
+T T
  
 
-“
+-
 
  
 
  
- 
-
-PHYSICS PROGRAM FOR MCLTEN-SALT BREEDER REACTORS
+PHYSICS PROGRAM FOR MOLTEN-SALT BREEDER REACTORS
 
 A. M. Perry
 
@@ -182,76 +156,102 @@ concept that emerges from the design studies conducted at ORNL is the
 prospect that very low fuel-cycle costs will coincide with very good
 fuel utilization, that in fact the curve of fuel-cycle cost versus
 doubling time will possess a minimum at a doubling time as short as 15
-to 20 years, and that this minimum fuel cost will be as low as 0.3-0.k
-mills/kvar(e). Our present estimates of the fuel-cycie cost as a
-function of annual yield are shown in Fig. 1 for two cases, i.e., with
-and without continuous removal of 223Pa.
+to 20 years®, and that this minimum fuel cost will be as low as 0.3-0.4
+mills/kwhr(e). Our present estimates of the fuel-cycle cost as a
+function of annual yield are shown in Fig. 1 for two cases, i.e.,, with
+and without continuous remcval of 2°°Pa,
 
-That a reactor comprising essentially graphite, thorium, and 22°U
+That & reactor comprising essentially graphite, thorium, and 227U
 should be able to breed is not in itself surprising, for we have long
 had reason to believe that this is possible, provided the fuel is re-
-processed at a sufficiently rapid rate. That such rapid processing can
+preocessed at a sufficiently rapid rate. That such rapid processing can
 be accomplished economically, however, and that a very high fuel specific
-power can be maintained while keeping neutron losses in 233pg to a very
+power can be maintained while keeping neutron losses in #°7Pa to a very
 low level, appear to be unique properties of the fluid fuel reactor.
 
 It must be remembered that the excellent fuel-cycle characteristics
 projected for the Molten-Salt Breeder Reactor are based on a combination
 of a low net breeding gain and a high specific power. A net breeding
 gain of about 0.05-0.06 was found to be optimum (i.e., corresponds to
-near-minimum fuel cost) for the current reference MSBR design.
+nesr-minimum fuel cost) for the current reference MSBR design.
 
 This is of course a very small margin for breeding, and the calcu-
 
 lation of it is subject to some uncertainty. In considering the merit
 
-*mroughout this report, doubling time is defined in terms of
+ 
+
+*Throughout this report, doubling time is defined in terms of
 compound interest, i.e., doubling time = 0.693/(annual yield). It thus
-applies to an expanding system of reactors, rather than to a single
-reactor. (Annual yield is, of course, the annual fractional increase
+applies to an expanding system of reactors, rather than to a singie
+reactor. {Annual yield is, of course, the annual fractional increase
 in fissile inventory.)
-4
+ 
 
-Doubling Mme (years)
+ArE )
 
-160 50 30 20 15 iz 10
+@
+B,
+%
+
+ime {
+
+T
+
+Deoubling
+
+20
+
+NEY
+
+L
+v
+
+A0
+i Trom Blanket.
+
+50
+&)H’ith@ut 233pg Remova
+
+b)ﬁith 253?& Bemoval,
+
+100
+
+{ {o)ayugfaryyu] ﬁwu
 
  
 
-"dui thous 23%Pe Removal from Blanket.
-Phen 2533p, Removal.
+&
 
-Oe
+fnnuael Fuel Yiel
 
-[o]
-©
+3 (8
 
-Fuel-Cycle Cost {mills/kwhr{e}}
+ield.
 
-Qo
+S
+Yi
 
-0.2:
+£
 
- 
+Fuel~-Cycle Cost
 
- 
-
-Fig. 1. Fuel-Cycle Cost Versus Annual Fuel Yield.
+Fig, 1.
 
  
-had of the MSBR concept, we must attempt to appraise realistically the
+e of the MSBR concept, we must attempt toc appraise realistically the
 possible magnitude and importance of uncertainties in the calculated
 characteristics of the reactor, and to consider what steps may be taken
 to reduce these uncertainties.
 
-A description of the Molten-Salt Breeder Reactor concept and of
-our current reference design for an MSBR is given in the report ORNL~
-3096 (Ref. 1), and will not be repeated here. Some of the important
+A description of the Molten-5alt Breeder Reactor concept and of
+our current reference design for an MSBR is given in the report ORNL-
+3996 {(Ref. 1), and will not be repeated here. Some of the important
 characteristics that are relevant to a discussion of reactor physics
-problems are given in Tables 1 and 2. (These characteristics are ap-
+problems are given in Tables 1 and 2. {These characteristics are ap-
 propriate to a single 2225 Mw(t) reactor, operating at an average core
-power density of 80 kw/liter. While they differ slightly from those of
-a 555 Mw(t) modular core operating at 40 kw/liter, the differences are
+power density of 80 kw/litere While they differ slightly from those of
+a 555 Mw(t) modular core operating at 40O kw/liter, the differences are
 
 not material to the present discussion.)
 
@@ -261,219 +261,220 @@ Table 1. MSBR Performance
 
  
 
-Without Pa With Pa
+Without Ps With Pa
 Removal Removal
 
-Nuclear breeding ratio 1.0538 1.07k
+Nuclear breeding ratio 1.0538 1.074
 Fissile consumption (Inventories
 per year at 0.8 plant factor) 1.03 1.17
 Fissile losses in processing
 (Inventories per year at 0.8 plant
 factor) 0.006 0.007
-Fuel yield, % per annum I, o6 7.95
+Fuel yield, % per annum I, 06 7.95
 Neutron production per fissile
-absorption; ne 2.221 2.227
-Specific power, Mw(t)/kg fissile 2.89 3.26
-Fuel-cycle cost, mills/kwhr(e) 0.45 0.3%
+absorption; e 2.221 2.227
+Specific power, Mw(t)/kg fissile 2.89 3,26
+Fuel-cycle cost, mills/kvhr(e) 0.45 0.%%
 Doubling time, years 14 8.7
 
  
 
-“Here defined as 0.693/ (annual yield).
-
-iP. R. Kasten, E. S. Bettis, and R. C. Robertson, Design Studies
-of 1000-Mw(e) Molten-Salt Breeder Reactors, USAEC Report ORNL-%996,
-Oak Ridge National Laboratory {August 1966).
+“Here defined as 0.693/(anmual yield).
 
  
- 
 
- 
+1P, R. Kasten, E. S. Bettis, and R. C. Robertson, Design Studies
+of 1000-Mw(e) Molten-Salt Breeder Reactors, USAEC Report ORNL-3%996,
+Oak Ridge Nationasl Laboratory {August 1966).
+Table 2. MSBR Neutron Balance
 
  
 
  
 
-Table 2. MSBR Neutron Balance -
+ 
+
+ 
+
 Absorptions
 Material
 Without Pa Removal With Pa Removal
-
-232m 0.9710 0.9970
-233pg 0.0079 0.0003
-2337 0.9119 0.9247
-2347 0.09% 0.0819
-235y 0.0881 0.0753
-236y 0.0115 0.008
-25TNp 0.0014 0.0010
+2327 0.9710 0.9970
+233Ppg 0.0079% 0.0003%
+233y 0.9119 0.92L7
+234y 0.0936 0.0819
+235y 0.0881 0.075%
+236y 0.0115 0.008L
+2T Np 0.001k 0.0010
 238 0.0009 0.0005
-Carrier salt (except ©Li) 0.0623 0.0648
-SLi 0.00%0 0.0025
-Graphite 0.0300 0.0323
-135%e 0.0050 0.0050
-149gm 0.0069 0.0068
-15%5m 0.0018 0,00L7 .
-Other fission products 0.0196 0.0185
+Carrier salt (except ®Li) 0.0623% 0.0648
+51,1 0.00%0 0.0025
+Graphite 0.0300 0.032%
+135¥e 0.0050 0.0050
+149 g 0.0069 0.0068
+151gm 0.0018 0.00L7
+Other fission products 0.0106 0.0185
 Delayed neutron losses 0.0050 0.0049
-Leakage 0.0012 0.0012 .
-Total 2.2211 2.2268
+Leakage 0.0012 0.0012
+Total 2.2211 2,268
 
  
 
 2. ANALYSIS OF UNCERTAINTIES
 
-Because of the operating flexibility of fluid fuel reactors, which
-allows criticality to be maintained by adjustment of fuel concentration,
+Because of the operating flexibility of fluid fuel reactcrs, which
+allows criticality to be maintained by adjustment of fuvel concentration,
 we are not primarily interested in the problem of calculating the criti-
+
 cality factor per se. We are concerned instead with the fraction of
+
 source neutrons that is available for absorption in the fertile materials.
-Estimates of this quantity mey be uncertain because of uncertainties in
-cross sections, in methods of computation, or in the assumptions made
+
+Estimates of this quantity may be uncertain because of uncertainties in
+cross sections, in methods of computation, or in the assumptions mede
 regarding the behavior of fission products in the reactor system. These
 
 sources of uncertainty are discussed in the following sections.
-
- 
-is 2.1 Cross Sections
+i 2.1 Cross Sections
 
 There are comparatively few nuclides in the MSBR for which cross
-section uncertainties lead to appreciable uncertainty in estimates of
+section uncertainties lead to apprecliable uncertainty in estimates of
 the breeding performance of the reactor; only two or three nuclides
 have cross section uncertainties that could, alone, affect the breeding
-ratio by as much as 0.01.
+ratio by as much as 0.0l.
 
-The outstanding example, of course, is the 2270 itself. Here the
-important quantity is the average value of 1, averaged over the entire
+The outstanding example, of course, is the 233U itself. Here the
+important quantity is the average value of 7, averaged over the entire
 reactor spectrum. This quantity may be uncertain for at least three
-reasons: (1) the value cof 7 at 2200 m/sec is uncertain by perhaps 0.3%,
-(2) the variation of n with neutron energy in the range below 0.5 ev is
+reasons: (1) the value of n at 2200 m/sec is uncertain by perhaps +0.3%,
+(2) the variation of 1 with neutron energy in the range below 0.5 ev is
 not known well enough to establish 7 (in a thermal neutron spectrum with
-kT ~0.1 ev) to much better than 1%, and (3) n in a 1/E spectrum above
+kT ~0.1 ev) to much better than 1%, and (3) 1 in a 1/E spectrum above
 0.5 ev is also subject to an uncertainty of about 1%. The uncertainty
-in the thermal average value of n produces an uncertainty of about
-+£0.02 in breeding ratio, and appears to be by far the most important
+in the thermal average value of 7 produces an uncertainty cf about
++0.02 in breeding ratio, and appears to be by far the most impcrtant
 
-° source of uncertainty in breeding ratio.
+o source of uncertainty in breeding ratio.
 
-The ambiguity in the epithermal vn is, fortunately, not so signifi-
+The ambiguity in the epithermal % is, fortunately, not sc signifi-
 cant now as it has been until recently. The ambiguity arose from a
-discrepancy that appeared to exist between average epithermal « values
+discrepancy that appeared to exist between average epithermal ¢« values
 as deduced from differential fission and total cross section measure-
-ments on the one hand, and from direct integral measurements of « on the
-other hand. The differential measurements yield a value of o,% averaged
-over a 1/E spectrum above 0.5 ev; of about 0.23. This value is subject
-to appreciable uncertainty, however, because o, must be deduced by sub-
-traction of Op and Og from the measured Ope Furthermore, an adequate
-statistical analysis of the probable error in ¢, as derived from the
+ments on the one hand, and from direct integral measurements of @ on the
+other hand. The differential measurements yield a value of «,% averaged
+over 3 l/E spectrum above 0.5 ev, of ahout 0.23. This value is subject
+to appreciable uncertainty, however, because Gé must be deduced by sub-
+traction of O and O from the measured GT' Furthermore, an adequsate
+statistical analysis of the probable error in o, as derived from the
 differential cross sections, has not been made. The integral & measure-
-ments are performed by measuring the 2347 and fission product concen-
+ments are performed by measuring the 274U and fission product concen-
 
-trations in irradiated 223U samples. Results of the three most recent
-
-ZRased primarily on the measurements of Moore et al. (M. S. Moore,
-L. G. Miller, and CO. D. Simpson, Phys. Rev., 118, 71k (190).
+trations in irradiated ©2°U samples. Results of the three most recent
 
  
+
+“Based primarily on the measurements of Moore et al. (M. S. Moore,
+L. G. Miller, and O. D. Simpson, Phys. Rev., 118, 71k (1960).
 10
 
-measurements of this type are as follows:
+measurenents of this type are as follows:
 
-Halperin 4 = 0.171 + 0.017 Ref. 3
-Esch and Feiner T= 0.175 + 0.008 Ref. 4
-Conway and Gunst T= 0.175 + 0.006 Ref. 5
-Average To = 0.175 + 0.005
+HEalperin a = 0.171L + 0,017 Ref. 3
+Esch and Feiner G = 0.175 + 6.008 Ref. L
+Conway and Gunst T = 0.175 + 0.006 Ref. 5
+Averasge T = 0,175 + 0.005
 
 We believe that the close agreement among these independent measure-
 ments and the inherently greater accuracy of the direct integral «
-measurement support the lower value of « in the epithermsl energy range.
-The value used in the MSBR analyses was « = 0.173, leading to an average
-value of n, in a 1/E spectrum above 0.5 ev of 2.13, It may be noted
-that an uncertainty of 0.01 in a (30.5 ev) generates an uncertainty of
-about 0.006 in the breeding ratio, for the MSBR reference configuration.
+measurement support the lower value of ¢ in the epithermal energy range.
+The vslue used in the MSBR analyses was & = 0,173, leading to an average
+value of n, in a l/E spectrum above 0.5 ev of 2.1%. It may be noted
+that an uncertainty of 0.01 in o (>0.5 ev) generates an uncertainty of
+about 0.006 in the breeding ratic, for the MSBR reference configuraticn.
 
-A similar discrepancy between differential cross section measure-
-ments and direct O measurements in the epithermal region has existed for
-2357, In recent months the « values deduced by de Saussure, Gwin, and
+A similar discrepancy between differentisl cross secticon measure-
+ments and direct ¢ measurements in the epithermal region has existed for
+2357, In recent months the o values deduced by de Saussure, Gwin, and
 Weston® from their measurements of fission and capture cross sections
-for #250 are in much closer agreement with the integral « measurements
-for 2350 than any values previously derived from differential cross
+for =2U are in much closer agreement with the integral « measurements
+for 22U than any values previously derived from differential cross
 section measurements, and there is good reason to hope that this trouble-
-some discrepancy ls very neariy resolved. Similar experiments for ©
+some discrepasncy is very nearly resclved. Similar experiments for ¢
 
 f
-and 6 for 233U are now underway by Weston, Gwin, de Saussure, and their
+and ¢ for 2337 are now underway by Weston, Gwin, de Szussure, and their
 
-3J. Halperin et al., The Average Capture/Fission Ratio of 233U for
+ 
 
-Epithermal Neutrons, Nucl. Sci. Eng., 16(2): 245 (June 1963).
+3J. Halperin et al., The Average Capture/Fission Ratic of 233U for
 
-“L. J. Esch and F. Feiner, Survey of Capture and Fission Integrals
-of Tissile Materials, paper presented at the National Topical Meeting ~
-Reactor Physics in the Resonance and Thermel Regions, February 1966,
-San Diego, California.
+Epithermal Neutrons, Nucl. Sci. Eng., 16(2): 2L5 (June 1963).
 
-5D. E. Conway and S. B. Gunst, Epithermal Cross Sections of 2323U,
+L. J. Esch and F. Feiner, Survey of Capture and Fission Integrals
+of Fissile Materials, paper presented at the National Topical Meeting —
+Reactor Physics in the Resonance and Therral Regions, February 1966,
+can Diego, California.
+
+5D. E. Conway and S. B. Gunst, FEpithermal Cross Secticns of 233U,
 Technical Progress Report Reactor Physics and Mathematics for the Period
 October 1, 1965 to January 1, 1966, USAEC Report WAPD-MRJ-32, p. 9,
 Bettis Atomic Power Laboratory.
 
-6G. de Saussure et al., Measurement of «, the Ratio of the Neutron
-Capture Cross Section, for “75U in the Energy Region from 3.25 ev to
-1.8 kev, USAEC Report ORNL-3738, Ozk Ridge National Laboratory, April
-1965, and subsequent private comrmmications.
+©G. de Saussure et al., Measurement of &, the Ratio of the Neutron
+Capture Cross Section; for 2357 in the Energy Region from 3.25 ev 1o
+1.8 kev, USAEC Report ORNL-3738, Osk Ridge National Laboratory, April
+1965, and subsequent private comrunications. |
 11
 
-a collaborators at RPI.” These measurements, (when combined with other
-data at energies above 1 kev), yield a value for , averaged over a (1/E)
-spectrum above 0.5 ev, of 0.188 x 0.01, in much closer agreement with
+collaborators at RPI.? These measurements, (when combined with other
+data at energies above 1 kev),’ yield a value for o, averaged over a (1/E)
+spectrum above 0.5 ev, of 0.188 + 0.0, in much closer agreement with
 the integral measurements cited above. We believe, therefore, that the
-range of uncertainty in « has been significantly reduced by these
-measurements, and can herdly exceed % 0.01, centered around & mean value
+range of uncertainty in o has been significantly reduced by these
+measurements, and can hardly exceed * 0.0l, centered arcund & mean value
 close to that of the integral measurements.
 
-In addition to the related uncertainties in 1 and in @, there is
-also an uncertainty in the value of p = (1 + @). This is not of any
+In addition to the related uncertainties in 7 and in @, there is
+also an uncertainty in the value of p = n(l + o). This is not of any
 consequence in the subcadmium energy range, since n is a directly
-measured quantity. In the epicadmium range, however, rn is deduced from
-a and py, and must reflect uncertainties in both of these guantities.
+measured quantity. In the epicadmium range, however, 7 is deduced from
+o and y, and must reflect uncertainties in both of these guantities.
 
-It is difficult to assess the uncertainty in p because of what appear to
+It is difficult to assess the uncertainty in p because of what appear o
 be systematic discrepancies between determinations by various methods.
-Nonetheless, we presently believe it is unlikely that v lies outside
+Nonetheless,; we presently believe it is unlikely that p lies outside
 
-the range 2.50 £ 0.01. The combined effect of the uncertainties in a
-and in p is an uncertainty of about 1% in Ms in the energy range ¥ > 0.5
-ev.
+the range 2.50 £ 0.01. The combined effect of the uncertainties in «
+and in p is an uncertainty of about 1% in ﬁ, in the energy range E > 0.5
+ev,
 
 Uncertainty in the value of n averaged over the thermal neutron
-spectrum is important because ~70% of the absorptions in 22U occur in
-the subcadmium neutron renge. Direct measurements of 1(E)/n(0.025 ev)
+spectrum is important because ~70% of the absorptions in 227U occur in
+the subcadmium neutron renge. Direct measurements of 7(E)/n(0.025 ev)
 have been made by several investigators since the early 1950's. The
-existing measurements are not in good agreement with each other or with
-values deduced from differential cross section measurements, nor do
-they have the very high precision required to determine < Moave to an
-error as small as that in n_ itself [q = n{0.025 ev) ].
+existing measurements are not in good agreement with each cother or with
+values deduced from differential cross section measurements, nor 4o
+they have the very high precision required to determine <n/no>évg to an
+error as small as that in n_ itself [n = 2(0.025 ev)].
 
 The problem is illustrated by the data shown in Fig. 2, where the
-symbols represent direct relative n measurements, normalized to Ng =
-2.204%, and the solid line represents the values used in the MSBR design
+symbols represent direct relative n measurements, normalized to Ty =
+2.29&*, and the sclid line represents the values used in the MSBR design
 
-studies. Averaging over a Maxwellian flux distribution peaked at C.1l ev,
+studies. Averaging over a Maxwellian flux distribution pesked at 0.1 ev,
+
+ 
 
 7L. W. Weston et al., Measurement of the Neutron Fission and Capture
-Cross Sections for 233U in the Energy Region 0.4 to 1000 ev, USAEC Report
-ORNL-TM~-1751, Oak Ridge National Laboratory, April 1967.
+Cross Sections for 233U in the Fnergy Region O.4 to 1000 ev, USAEC Report
+ORNL-TM~-1751, Oak Ridge Naticnal Laboratory, April 1967.
 
 *
 Except for the Harwell (1966) measurements, which are normalized
 to a value of 2.29 at 0.073 ev.
+ 
 
- 
-5
-
- 
-
- 
+   
 
  
 
@@ -485,7 +486,7 @@ to a value of 2.29 at 0.073 ev.
 
  
 
- 
+   
 
  
 
@@ -499,7 +500,7 @@ to a value of 2.29 at 0.073 ev.
 
  
 
- 
+  
 
  
 
@@ -513,7 +514,8 @@ to a value of 2.29 at 0.073 ev.
 
  
 
- 
+               
+  
 
  
 
@@ -574,6 +576,20 @@ to a value of 2.29 at 0.073 ev.
  
 
  
+
+ 
+
+  
+
+ 
+
+ 
+
+  
+
+ 
+
+    
 
  
 
@@ -647,94 +663,7 @@ to a value of 2.29 at 0.073 ev.
 
  
 
- 
-
- 
-
- 
-
- 
-
- 
-
-      
-
   
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-  
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
  
 
@@ -754,6 +683,142 @@ to a value of 2.29 at 0.073 ev.
 
  
 
+  
+
+ 
+
+ 
+
+   
+
+K
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
+
+ 
+
+  
+
+ 
+
+ 
+
+   
+
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
+
+ 
+
+ 
+
  
 
  
@@ -766,6 +831,14 @@ to a value of 2.29 at 0.073 ev.
 
  
 
+     
+
+ 
+
+ 
+
+ 
+
  
 
  
@@ -796,6 +869,8 @@ to a value of 2.29 at 0.073 ev.
 
  
 
+  
+
  
 
  
@@ -950,69 +1025,142 @@ to a value of 2.29 at 0.073 ev.
 
  
 
-;
-I
-Ir J
-i RY
-HH ke
-Ha ; fi CITT
-! + LT]
-TT SNES NRENREN ERY
-: - EF p
-i & TF EET
-£ © i
-LH H on Eh
-jililE ® © = f=
-£ v2 Q eps
-TT VTE © a 43 eT
-: § z = o rh Ee
-Fr Ailing I § 5 ~ 8 OEY
-BS * ja - g oo = oan
-“+ : i : ¢ 4d Bd p F
-: Tt REED fh 2 ££ 8 5 Fo pe
-1 + r + 4 F 2 w = -
-PEE cdc ed di
-: i i : IE - : = 4 8 Ee : 9
-bys + ror ibe bb 1 a) ert rt b+
-1 irs biiTi 3 5 © © << OTE
-T HH : PAL 3 ad
-i SH GHHt 8 2 Ee g SHH
-dq. Sa . +1 i R 2 ~~ 4 a ? a ke fa
-Pid Er & & 7 :
-Lid fob B + ¥ -
-INA . = J
-Poi Lo = 8 £ 2 > a -
-i mm
-lee | O Eo
-i ‘ f=. .
-He . g HEL
-aia } 2 1
-foddobgoe 4 + += Ft 11
-bob -e 4 +  . .
-bin ii : I I 1 1
-Dl + . ]
+ 
 
  
 
  
 
+0
+
+SRR
+U
+ERERE:
+T +
+v F e i -
+ity b
+,m._.r‘w.:.“ e
+- it :
+L. . L v 1 . '
+E Lt LI
+f N L 3 v !
+b . + ._. o [ . P i i !
+i- . i . s, . . . Lo P v ! i
+- b G o4 s vl A . i
+m.|+: .w L‘ er w”| g e p— e n ‘omk 4 @ . -+ m H n L_
+" . * . . . - . . . . . [ » . ¥ ! v
+‘" i . M Vo “ o A, i PN “Q C oy . i : [
+.,m.;;?:,.w,,,.u.__m S P : :
+o4 + a e P : i . : T P [
+Pl b ol o @ ot b 1
+: i ; P e e Mo T EEREREEE i
+s : : [ Sy Vol Pty b bt s !
+AN : .b~ﬂ.‘_“.. O [had bdy i
+et A + TR poe i B Bib gt e+ i
+- =t b B O : tmp e b oped s b
+_ F ~4 ] Sty sy “@ : T ﬁm. i t b vy
+H ¢ Pt b e - s i . P i -+ P
+FEE T A e e i L
+..:..w...T.H. “eped Lyt s .m_’m 4 ; ,® Vo o : C i
+I T " T YT YT [ T
+- 1 i i ] N [P v o i s oo
+4 b ¢ 4 m*?., . I Vo .. [ et .
+- - - i+ Sop o1 s . “ ] s
+w H s dop b pobe g P - [ P4
+| PR O e B T dty s
+— - 2 bl L . i .
+T DT o Tend T
+bbb R sl Y e A SR
+b bos- : i P b . ; A ¢ _id SRR I
+4 .nvw M. Hw* m.m 7. L b 4 gt
+: B : P b a ey . } 14 Tt
+1 P i q4-% 4 S boeod o - I - - 4-4 4 S S B O
+t Lyt . . [ P b 44 L-1 s b et e
+' [ Foy : Pt B +-4- R
+4 ook | . + vq P o - 4 e n}.%i.l
+’ sl . { : bt Ak -
+-+ T T T I S
+i ESREE i G dddty
+5 L B Tl :
+H bl 1 _ :
+2 i A m
+- Fohoby b { i : idld i LE
+m. m wm , M " 4 « 4
+Lopolodg g b Jddda ik @
+- : W ;L Pt ! .m t +2
+N T b S m 4 L n
+: e T . ,. TTHTE @
+3 b5 1. LI SE . ;
+i Cli i Af e w8 S
+i 4 : + »
+Er Tt e i T iR m |~ £ o
+bbbt p b e T £ & = ~ b
+e b e e -4 g & o
+Aoy : [ s boroah IR [ ¢ o M o
+o] P vy m._ srrT b ol T =
+4 4t < gt Ao G [ 4o .mrun . - m m m
+- o1 k- ek ek by s Bl . @ @
+-t o4 - 4 + + kb e o ok b - C b 3 Wi M
+a4 b . g g4 e h ‘ P - & B e f
+T3 Ea Sl opeeet eep e A 2 -+ + <)
+T P bRt B oS R e
+rryrd vt Prrbbbibt i 11t @ o 4
+DL e R
+IRAERRRTRARARERETILLE SESIEEEEI
+Vet b 4o L3 A b4t b 4 - -+ 2 e O =l
+—hee d H..w't i g .H. § oAb 4 } b R m 4 off a
+- bbb bt b b e b fobobod e o >
+et e Pt T2 d 88
+s b e : ‘ i . + b v -4 Hﬂi.t»..ﬂi b 5 m -
+Py m 4+l _,;-ww+ i 4.w § . . iohd - m i
+Pe bbby -k i ! . w;.:m +9
+.o i I Poe b C: o e ¢ . ~ T T
+Pl by ._ bl & o
+' : i i ] . & ¢ by
+_ ; wt.w } +—4 ! ; g - . m W*_ »_« oA © Or
+1 ov or o W o N - v s bt b
+Eorob ot » 44 d-i 0 P : bt i G
+Peppess AR ERE R RRRE b :
+Pl Proilia it s de [} O
+[ i _ um« i Doy 4 : i v Yo b
+[ i : i . I by 1 ! [ Pt b
+[ i i . [ o i oo Py l ﬁ
+—r deopeegod - : i i— : 4 i . i fod -} a
+by e} [ . Coror i [ w . Lo w o n.ﬁ; H_ &
++oped b 4t . I Sy kb teb g e o oio s i . . +
+AT Tt m b b hadg e 4 Mm LorELRi il -
+chmbee bog g i - bebea i bobd o ode 4 * Vbbb g fop -+
+e g Ebercb e o b e b e gy oot bbb T = —r - -
++ wﬁ, - . B m.i@ o b b4 s dob b gniet poib i M mw” I : ,IM‘ N
+Poe4op %y" ped e ﬁ.e i f-p 4 e ! : +m.". .v..+.4, ...w|4 1 b . »‘v 1 = ‘M 5
+Lo .M . - b e %, .- qL H M., b Ap A,T.T - _ -} Rt ST T . - m_
+oo okog i . b e L. bt baRE dod e b e e b4k ,.MLI ; L b
+bbb e e g T 4 j + 15
+B
+
  
+
+2.4
+
+—_ 2.
+
+2
+
+o
+
+2
+
+uotidrosge /sucainau) b
+
+r=f
+
+°
 
-(uo3diosqe/sucainsu) U
+&
 
 2.0
 
-0.1
-
-Neutron Energy (ev)
-
-0.05
-
-.02
-
-0
-
-0
+Neutron Fnergy (ev)
 
 Relative Eta of 2337,
 
@@ -1021,13 +1169,16 @@ Fig. 2.
  
 
  
-13
-hd one can easily obtain values for 7 ranging from 2.26 to 2.30 and the
-true value could possibly, though not probably, lie outside this range.
+ 
 
-This uncertainty in the average thermal n of 22U remains the most
-important single contributor to uncertainty in the breeding ratic of an
-MSBR. The o, and Op measurements of Weston et al. are now being ex-
+13
+
+one can easily obtain wvalues for H'ranging from 2.26 to 2.30 and the
+true value could possibly; though not probably, lie outside this range.
+
+This uncertainty in the average thermal n of 222U remains the most
+impeortant single contributor to uncertainty in the breeding ratic of an
+MSBR. The Ué and Gf measurements of Weston et al. are now being ex-
 tended downward in energy to about 0.02 ev, and it is expected that this
 will significantly reduce the uncertainty in the average value of 1.
 
@@ -1036,69 +1187,67 @@ important parasitic neutron-absorbers, is fluorine. As is true of other
 light elements, the resonances of fluorine are predominantly scattering
 resonances, and the radiative capture widths are difficult to determine
 accurately. The capture widths are not know to better than +3%0%, and
-the high-energy {(n,q) cross sections are equally uncertain. These un-
-certainties affect the estimated breeding gain to the extent of sbout
-0.005; while not large in an absolute sense, this is a non-trivial
+the high-energy {n,a) cross sections are equally uncertain. These un-
+certainties affect the estimated breeding gain to the extent of about
+C.005; while not large in an absolute sense, this is a non-trivial
 fraction of the breeding gain, and it would facilitate further design
-and optimization of molten-salt reactors to have improved accuracy in
+and coptimization of molten-salt reactors to have improved accuracy in
 these cross sections of fluorine. A more accurate determination of the
 resonance capture integral would itself be an appreciable help in re-
 ducing the limits of uncertainty in the fluorine absorption rate.
 
 Uncertainties in remaining cross sections, including Li, Be, C, Pa,
-and fission products, probably do not contribute an uncertainty in
-breeding ratic greater than about 0.01.
+and fission products, prcbably do not contribute an uncertainty in
+breeding ratio greater than about 0.01.
 
-The effective cross sections of thorium may indeed be subject to
+The effective cross sections of thorium may indeed bhe subject to
 considerable uncertainty, arising from uncertainties in resonance pa-
-rameters, from methods of computation of resonance self-shielding, and
+rameters, from methods of computaticon of resonance self-shielding, and
 from variations in geometry of the fertile salt passages. Variations
 in passage geometry may well contribute the greatest uncertainty in
-thorium absorption rate. Further analysis of this possibility is re-
-quired, but is likely to lead to requirements on the mechanical design
-of MSBR cores, rather than to the need for further measurements of cross
+thorium abscrption rate. Further analysis of this possibility is re-
+quired, but is likely to lead to requirements orn the mechanical design
+cf MSBR cores, rather than to the need for further measurements of cross
 sections or resonance integrals. Uncertainties in cross sections of
-234)] and 23°U are of minor consequence, since these materials reach
+23411 and 236y are of minor consequence, since these meterials reach
 
-equilibrium concentrations rather quickly. The 27%U is a fertile
+equilibrium concentrations rather quickly. The 224U is a fertile
+1y
 
- 
-1h
-
-material, while 2°%U is a poison. The equilibrium absorption rate in
+material, while =°°U is a poison. The eguilibrium absorption rate in
 each depends primarily on the capture-to-fission ratio of the fissile
-precursors, °°U and #°°U; however, there is some small dependence on
-the 224U and 27°U cross sections because some of the material is ex-
-tracted from the fuel stream, zlong with the fissile isotopes, a5 excess
+precursors, = -U and #7°U; however, there is some small dependence on
+the 224U and 27U cross sections because some of the material is ex-
+tracted from the fuel stream, along with the fissile isotopes, as excess
 production.
 
-The 235U cross sections are known with about the same precision as
-those of 233U, but are of far less importance, since less than 10% of
-the fissile-material absorptions are in 235U.
+The 275U cross sections are known with about the same precision as
+those of 237U, but are of far less importance, since less than 10% of
+the fissile-material absorptions are in 2251,
 
-The various cross section uncertainties that contribute signifi-
+The various cross secticn uncertainties that contribute signifi-
 cantly to uncertainty in the estimated breeding performance are sum-
-marized in Table 3. In this table, we show nominal ranges of uncertainty
+marized in Teble 3. In this table, we show ncminal ranges of uncertainty
 as fractional deviations from what we believe to be the most probable
-values. We refrain from calling these deviations probable errors, be-
-cause 1n many cases they do not represent standard deviations of a
+values. We refrain from calling these deviations prcbable errors,; be-
+cause in many cases they do not represent standard deviations of a
 normal error distribution, and hence do not really represent confidence
-limits in a conventional statistical sense; they do represent our present =
-Judgment of the ranges within which the true values have perhaps a 50%
+limits in a conventiocnal statistical sense; they do represent our present -
+Judgment of the ranges within which the true values hsave perhaps a 50%
 or greater probability of falling. Also shown are the corresponding un-
-certainties in breeding gain. In the case of 222U, 2°4U, and 23°U, the
-consequent changes in #35U/233U absorption ratio and in 2>°U absorption
-rate are taken into account in the indicated uncertainties in breeding
-gain,
+certainties in breeding gain. In the case of 227U, 274U, and 22°U, the
+consequent changes in £°°U/223U absorption ratio and in Z°%U absorption
+rate are taken intc account in the indicated uncertainties in breeding
+gain.
 
-Since the uncertainties listed in Table 3 are all independent; and,
-with respect to the most probable values of the various cross sections,
-positive and negative deviations are equally likely, we have combined
-them by taking the square root of the sum of the squares as the overall
-uncertainty in breeding ratio attributable to cross section uncertainties.
+Since the uncertainties listed in Table 3 are sll independent; and,
+with resgpect to the most probable values of the various cross sections,
+positive and negative deviastions are equally likely, we have combined
+then by teking the sguare root of the sum of the squares as the overall
+uncertainty in breeding ratic attributable to cross section uncertainties.
 
-The resulting value, (z62)*/2 = 0.026, reflects primarily the uncertainty
-in the average thermal 71 of 237U.
+The resulting value, (Z&?)l/g = 0.026, reflects primarily the uncertainty
+in the average thermal 7 of 237U,
 
 The effect of cross section uncertainties can also be appreciated
 by reference to Fig. 3. The various curves of fuel-cycle cost versus
@@ -1114,52 +1263,51 @@ on Breeding Ratio
 
  
 
-Nuclide Cross Section 50° AC &BRY
-233y n 0.00% | £0.007
-[7 (t)/ng] 0.01 +0.022
-7 (£) 0.01 +0.009
-235y q(t) 0.01 +0.003
-5 (f) 0.013 +0.001
-2347] 0, (t) 0.1 0.03% --
-ag (f) 0.25 0.049 +<0.001
-2367 a, (t) 0.1 -- --
-a (fF) 0.3 0.008 +<0.001
-233pg o, (t) 0.1 --
-oc (f) 0.1 0.0003 --
-19g a, (t) 0.07 0.013 +0.001
-o, (£) 0.3 0.008 +0.003
-o(n,a) (f) 0.3 0.006 +0.002
-Tri a, (t) 0.1 0.02 +0.002
-a, (f) 0.1 0.001 --
-“Be 0, (t) 0.1 0.002 --
-pall TEM) ow
-0,0 . .003
-F.P. 0, (t) 0. 0.0L +0.001
-o, (£) 0. 0.01 +0.003%
+Nuclide Cross Sectiona 6&b AC SBRd
+233y 1, 0.00% | £0.007
+(7 (t)/n,) 0.01 +0.022
+1 (f) 0.01 +0.,009
+2357 n (%) 0.01 +0.00%
+7 (f) 0.013 +0.001
+23477 o, {(t) 0.1 0.033% -
+g (f) 0.25 0.049 +<0,001
+236y; a (%) 0.1 - --
+o (f) 0.% 0.008 +<0,001
+233pg o, (%) 0.1 -
+o, (£} 0.1 0,0003 --
+1op T, (t) 0.07 0.01% +0.001
+o, () 0.3 0.008 +0.003
+o(n,a) () 0.% 0.006 +0.002
+Tri o (t) 0.1 0.02 +0.002
+o (f) 0.1 0.001 --
+%Be o (t) 0.1 0.002 -
+GP,En(§§) g'i5 20229 }- %0.002
+0,0 . .003%
+F.P. o, (t) 0. 0.0L +0.001
+o (f) 0. 0.01 +0.00%
 
  
 
 ®The notation (t) signifies the energy range below 1.86
 ev, and the notation (f) signifies energies above 1.86 ev,
-except for 223U and #°SU where the break point is 0.5 ev.
+except for “~°U and #°°U where the break point is 0.5 ev.
 
-Peo is the fractional uncertainty in the cross section.
+bﬁa is the fractional uncertainty in the cross section.
 
-c . . . .
-Approximate typical absorptions, relative to ne source
+cApproximate typical sbsorptions, relative to ne source
 neutrons; may vary, of course, from case to case.
 
-Uncertainty in breeding ratio resulting from indicated
+dUncertainty in breeding ratio resulting from indicated
 cross section uncertainty.
+
+S
 FUEL CYCLE COST [mills/kwhie]
 
-07
-
  
 
- 
+Q7
 
-06 /
+os /
 
  
 
@@ -1219,41 +1367,40 @@ N\
 
  
 
-04 er
-am [an /
+ 
 
-03 A
-G2
-
+ffﬁﬁ S
+— ]
+04 ]
+— e /
+03 )
+0.2
 1) REFERENCE CROSS SECTIONS - WiTH Pa REMOVAL
-
-2) REFERENCE CROSS SECTIONS ~ WITHOUT Pa REMOVAL
-ok] 3} INCREASED FLUORINE ABSORPTION
-
-43 ALL ABSORPTION CROSS SECTIONS INCREASED EXCEPT
-
-q, ?
-0 5) ALL CAPTURE CROSS SECTIONS INCREASED 10%
-5 4 -3 -2 0 i 2 3 4 5 6 7 8 S
+2) REFERENCE CROSS SECTIONS - WITHOUT Pa REMOVAL
+o 3) INCREASED FLUORINE ABSORPTION
+4) ALL, ABSORPTION CROSS SECTIONS INCREASED EXCEPT
+us ?
+o 5} ALL CAPTURE CROSS SECTIONS INCREASED 10%
+5 -4 -3 2 -4 0 { 2 3 4 5 6 T 8 9
 
 ANNUAL FUEL YIELD (% /yr)
 
-Fig. 3. The Effect of Cross Section Uncertainties on the
+Fig. 3. The Effect cf Cross Section Uncertainties on the
 MSBR Performance. :
 
-0
-17
+10
+L7
 
-hd section values used in the calculations. Curves 1 and 2, which also
-appear in Fig. 1, are the reference curves with and without 2>Pa re-
+s section values used in the calculations. Curves 1 and 2, which also
+appear in Fig. 1, are the reference curves with and without 235pa re-
 removal, respectively. Curve 3 results from increasing just the fluorine
-absorption cross sections, for the case without Pa removal; while curve
-L results from increasing the absorption cress sections of all con-
+absorption cross sections, for the case without Pa removal, while curve
+4 results from increasing the absorption cross sections of all con-
 stituents of the core (except the heavy elements Pa, U, and Th) by the
 
 percentage amounts shown in Teble L.
 
-Table 4. Assumed Increases in Capture
+Table 4, Assumed Increases in Capture
 Cross Sections
 
 (Percent of reference values)
@@ -1262,14 +1409,14 @@ Cross Sections
 
  
 
-Isotope Thermal 0, Epithermal 9,
-6Li 1 10
-ALi 11 10
-Be 11 15
-: c 9. 9
-F 7 32
-149g, 10 20
-151g, 10 20
+Isotope Thermal aé Epithermal Ué
+SLi 1 10
+o Ld 11 10
+Be 11 i5
+- c 9 S
+¥ T 32
+149q, 10 20
+151gy, 10 20
 Other fission
 products 10 10
 
@@ -1282,127 +1429,157 @@ crease of about 0.03 in the average value of 7.
 
 All of the perturbations represented by curves 3, 4, and 5 are re-
 lative to curve 2, i.e., without Pa removal. Comparison of these with
-curve 1 shows the very substantial incentive for continuous removal of
+curve 1 shows the very substantial incentive for continucus removal of
 the Pa. (All of the perturbations shown are in the unfavorable di-
 rection, representing an adverse resolution of all cross section un-
 certainties. Deviations in the other direction are of course equally
 
-likely, so far as cross section uncertainties are concerned.)
+likely, so far as cross section uncertainties are concerned., )
 18
 
-In summary, the cross sections which particularly require further
+In summary, the cross sections which particularly require further e
 investigation are:
 
-1) the variation of 5 of 237U with neutron energy in the range of
-0.01 to L ev;
+1) the variation of 7 of 27U with neutron energy in the range of
+0.0l to 1 evy
 
-2) the absolute values of 7 and py at 0.025 ev;
+2) the absolute values of 7 and p at 0.025 ev;
 
-3) the radiative capture width, the (n,Q) cross section, and the
-resonance capture integral of °F.
+3} the radiative capture width, the (n,Q) cross section, and the
+rescnance capture integral of 1°F,
 
 Further analysis of data already available may either reduce the
-uncertainties assigned to some irportant quantities, such as the average
-epithermal a, or may pinpoint specific measurements which would be
+uncertainties assigned to some important quantities, such as the average
+epithermal «Q, or may pinpcint specific measurements which would be
 
 especially helpful in reducing such uncertainties.
 
 2.2 Computational Methods
 
 Verification of computational methods, without ambiguity from cross
-section uncertainties; is usually difficult to obtain. However, our
+section uncertainties;, is usually difficult to obtain. However, cur
 experience with the MSRE leads us to believe that on the whole our
-methods are quite adequate to deal with this type of reactor. Briefly, -
-the methods employed in the statics calculations were one-~ and two-
-dimensional multigroup diffusion theory. The neutron spectrum and group-
+methods are quite adequate to deal with this type of reactor. Briefly, :
+the methods employed in the statics calculations were one~ and two-
+dimengional multigroup diffusicon theory. The neutron spectrum and group-
 averaged cross sections were obtained from GAM-THERMOS cell calculations.
-A compariscen of predicted and subsequently observed values for some of
-the important characteristics of the MSRE is given in Table 5.
+A compariscon of predicted and subsequently observed values for some of
+the important charscteristics of the MSRE is given in Table 5.
 
-The good agreement betwesn predicted and observed values lends con-
-siderable confidence in the validity of the methods employed. Similar
+The good agreement betweén predicted and observed values lends con-
+siderable confidence in the wvalidity of the methods employed. OSimilar
 methods were used by General Atomic in the prediction of critical loadings
-for the Peach Bottom Reactor; which is complicated by nonuniform distri-
-butions of fertile material and poisons, by singularities such as control
-rods and poisoned dummy fuel elements, and by appreciable self shielding
-of the heterogeneously distributed thorium. Observed reactivities were
+for the Peach Bottom Reactor, which is complicated by nonuniform cistri-
+butions of fertile msterial end poisons,; by singularities such as control
+rods and poisoned dumny fuel elements, and by appreciable self shielding
+of the heterogenecusly distributed thorium. Observed reactivities were
 nonetheless within 0.005 of predicted values, and since this agreement
-prevailed over a range of core loadings, the possibility of chance cancel-
-lation of systematic errors is considerably reduced.
+prevailed over & range of core loadings, the possibility of chance cancel-
+laticon of systematic errors is considerably reduced.
 
-It must be acknowledged, however, that the MSBR configuration is
+It mast be acknowledged, however, that the MSBER configuration is
 
-somewhat more complicated than that of the MSRE, and has complexities of ud
+somewhat more complicated than that of the MSRE, and has complexities of s
 19
 
-“a Table 5. A Comparison of Predicted and
-* Observed Characteristics of the MSRE
+ 
+
+: Table 5. A Comparison of Predicted and
+‘ Observed Characteristics of the MSRE
 
  
 
-Characteristic Predicted Observed
+Charscteristic Predicted Observed
 
  
 
-Critical concentration of 235U,
+Critical concentration of 275U,
 
-g/liter 33.06 33,1
+g/liter 33,06 33,1
 
 Fuel concentration coefficient
 
-of reactivity, ba 0.234 0.223
+of reactivity, gi ﬁ 0,234 0.223
 Isothermal temperature coef-
 
-ficient of reactivity, 8k/k/°F -8.1 x 10™5 —7.3 x 10-5
+ficient of reactivity, &k/k/°F ~8.1 x 10" 7.3 x 10-%
 Reactivity worth of three
 
-control rods, % &k/k 5.46 5.59
+control rods, % 8k/k 5 o 46 5.59
 
 Reactivity effect of fuel
 circulation (loss of delayed
-neutrons), % 8k/k 0.222 0.21
+neutrens), % Sk/k 0,222 0.21
 
  
 
-a somewhat differenti character from those of the Peach Bottom Reactor.
+a somewhat different character from those of the Peach Bottom Reactor.
 
 A sketch of the present concept for an MSBR lattice cell is shown in
 Fig. 4, from which one may appreciate the importance of a careful calcu-
 lation of the space- and energy-dependence of the neutron flux, both
-
 for thermal neutrons and for resonance neutrons. While estimates of the
 potential performance of the MSBR concept are not seriously affected by
 errors of a few percent in calculating these details of the flux distri-
 butions, the design calculations for a particular reactor require higher
-precision, primarily to provide assurance against fuel cost penalties
+precision, primarily ﬁo provide assurance against fuel cost penalties
 that might arise if the critical fuel concentration were appreciably
 different than expected. Although we have no a priori reason to doubt
 the adequacy of presently available methods, it will be necessary to
 verify their adequacy both by investigating the effect of further re-
 finements in technique (cf. Sec. 3.3) and by comparisons between calcu-
 lations and the results of carefully selected experiments which reproduce
-the details of the MSBR cell geometry (cf. Sec. 3.6).
 
- 
+the details of the MSBR cell geometry (cf. Sec. 3.6).
 20
 
-      
+     
 
-MODERATOR GRAPHITE} ——— SNS BLANKET PASSAGE
-Nf NWA Wi Sf
+MODERATOR GRAPHITE) ——— .
 
-FUEL PASSAGE (UP) mmm FUEL PASSAGE (DOWN)
+FUEL PASSAGE (UP}——— —— ST s FUEL PASSAGE (DOWN)
+34 0D FUEL TUBE |
 
-34 0D FUEL TUBE-——
+ 
 
-MODERATOR HOLD
+MOGERATOR HOLD
 DOWN NUT GRAPHITE)
 
  
 
  
 
-Te Nr Ee
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+AR W et
+
+' . —SPACER
+
+e} ——METAL TO GRAPHITE
+e SLIP~JOINT
+
+i
+
+ 
+
+T ————METAL TO GRAPHITE
+E' BRAZED JOINT
+
+i |~ —BRAZED JOINT
 
  
 
@@ -1438,7 +1615,8 @@ Te Nr Ee
 
  
 
- 
+4 T
+= "'M \-r | Ei«——i‘-'ua_ INLET
 
  
 
@@ -1458,60 +1636,30 @@ Te Nr Ee
 
  
 
- 
+- k) e b PLENUM
+- S AW
+
+. . =—-—-FUEL OUTLET
+e PLENUM
+] _ — .
+! +
 
  
 
- 
+Fig. L. Molten-Salt Breeder Reactor Core Cell.
+21
 
- 
-
-1 } ® fod
-..— SPACER
-a |_——METAL TO GRAPHITE
-asin SLIP -JOINT
-Fr —
-T——— METAL TO GRAPHITE
-BRAZED JOINT
-| __— —BRAZED JOINT
-rere
-1 (
-FE B
-=A 2 Ke & ——FUEL INLET
-i. i” PLENUM
-CJ 4 A. ,
-: == ~FUEL OUTLET
-4 : PLENUM
-
- 
-
-JE FEY
-
-” —
-1
-
-4
-
-Fig. 4. Molten-Salt Breeder Reactor Core Cell.
-
- 
-
- 
- 
-
-21
-
-2.3 Assumptions Regarding Salt Chemistry
+S 2.3 Assumptions Regarding Salt Chemistry
 
 As is well known, the conversion ratio in a thermal-neutron reactor
 depends very much on the rate of processing of the fuel, largely because
 it is by this means that neutron losses to fission products may be con-
 trolled. In the processing scheme proposed for the fuel salt of the
-MSBR, the thirty or more chemical elements of which significant amounts
+MSBR, the thirty cr more chemical elements of which significant amounts
 are present in the fission products may be expected to behave in quite
 different ways, depending on their chemical and physical properties in
 a very complex environment. The assumptions that were made regarding
-fission product behavior in the MSBR studies are cited in Table 6. (For
+fission product behavicr in the MSBR studies are cited in Teble 6. (For
 
 a description of the processing system, see Ref. 1.)
 
@@ -1520,20 +1668,20 @@ in MSBR Reactor and Processing System
 
  
 
-1. Elements present as gases; assumed to be partly
+l. Elements present as gases; assumed to be partly
 absorbed by graphite and partly removed by
 
 gas stripping (1/2% poisoning assumed): Kr, Xe
 
-2. Flements that plate out on metal surfaces;
-assumed to be removed instantanecusly: Rh, Pd, Ag, In
+2. FElements that plate out on metal surfaces;
+assumed to be removed instantaneocusly: Rh, Pd, Ag, In
 
 3. Halogens and elements that form volatile
-fluorides; assumed to be removed in the Se, Br, I, Nb,
-fluoride volatility process: Mo, Ru, Te, Te
+fluorides; assumed to be removed in the Se, Br; I, Nb,
+filuoride volatility process: Mo, Ru, Te, Te
 
-4, Elements that form stable fluorides less Sr, Y, Ba, la, Ce,
-volatile than LiF; assumed to be separated Pr, Nd, Pm, Sm, Eu,
+I, FElements that form stable fluorides less Sr, Y, Ba, La, Ce,
+volatile than LiF; assumed to be separated Pr, N4, Pm, Sm, Eu,
 by vacuum distillation: Gd, Tb
 
 5. Elements that are not separated from the
@@ -1542,59 +1690,60 @@ by salt discard: Rb, Cd, Sn, Cs, Zr
 
  
 
-In most instances, (except perhaps for groups 2 and 3} we still be-
-lieve these to be the most probable modes of behavior. It must be
+Tn most instances, (except perhaps for groups 2 and 3) we still be-
+lieve these to be the most probable medes of behavior. It must be
 acknowledged, however, that these assignments are not in all cases certain,
 and one must ascertain the effect on MSBR performance of possible, if
 
-improbable, deviations from these assumptions.
-ny
-no
+imprcbable, deviations from these assumptions.
+
+...............
+X
+N
+o
 
 Because of their combination of high fission yield and high neutron-
 absorption cross section, and because their fluorides are probably not
-more stable than thelr carbides, one is particularly led to examine alter-
-native modes of behavior for the elements of group 3; especially molybde-
+more stable than their carbides; one is particularly led to examine alter-
+native modes of behavicr for the elements of group 3, especially molybde-
 num and technetium. It is entirely possible, even probable, that these
 elements will form neither fluorides nor carbides, but will rather form
-inter-metallic compounds with other metallic fission products, e.g., those
+inter-metallic compounds with cther metallic fission products, e.g., those
 of group 2, or simply remain in the salt as colloidal suspensions of the
-metal. In this event, these elements would still be removed in the vacuum
+metal., In this event, these elements would still be removed in the vacuum
 distillation process, and there would be no change in the neutron balance.
 There remains the possibility that some fraction of these group 3 fission
 products might react with the graphite moderator, forming metal carbides,
 and hence remain indefinitely in the core. Deposition of several fission
-products, including Mo, Nb, Ru, and Te, has in fact been observed on
+procducts, including Mo, Nb, Ru, and Te, has in fact been observed on
 graphite specimens in contact with the fuel salt in the MSRE. If one
 assumes that these samples are typical of all the MSRE graphite, one can
 calculate the fraction of each fission product species that remains in
 the core. These fractions, calculated from activities observed on the
-graphite specimens removed from the MSRE in July 1966, are shown in Table
-T. It is immediately obvious, of course, that any mechanism that can leave
-fission products in the core indefinitely is potentially very serious,
-especially so in a reactor with very high specific power. It can easily be
+graphite specimens removed from the MSRE in July 19666, are shown in Table
+7. It is immediately obvious, of course, that any mechanism that can leave
+fission preducts in the core indefinitely is potentially very serious,
+especilally so in a reactor with very high specific power. It can easily be
 shown that the additional neutron absorption that would result would be
 nearly proportional to the fraction, f, of the atoms in this group that
 remain in core, instead of being removed in processing. The time required
 for each species to saturate depends, of course, on its cross section.
 
-The poisoning effect of each of several fission product nuclides that
+The poisoning effect of each of several fission product auclides that
 would result from 100% retention on the graphite of an MSBR is shown in
 Table 8 as a function of time, in full-power years, after startup of the
-reactor. As an application of the informstion given in Table 8, Table 9
-shows the average poisoning that would result in en MSBR if the various
-nuclides were deposited to the extent observed in the MSRE {as shown in
+regctor, As an application of the information given in Table &, Table 9
+shows the average poisconing that would result in an MSBR if the various
+nuclides were deposited to the extent cobserved in the MSRE {(as shown in
 Table 7). (Two different assumptions were made regarding the behavior of
 
-9%Mo, thet is, that it behaves either like its precursor, Z°Nb, or like
-
-Sd
+95Mo, that is, that it behaves either like its precursor, “°Nb, or like
 23
 
 Table 7. Fission-Product Deposition in the Surface
-Layers? of MSRE Graphite
+Layersa of MSRE Graphite
 
-(Percent of Total?)
+(Percent of Totalb)
 
  
 
@@ -1602,39 +1751,42 @@ Graphite Location
 
  
 
-Isotope
-
  
 
-Top of Middle of Bottom of
-
+Isotope Top of Middle of Bottom of
 Core Core Core
-29Mo 13.4 17.2 11.5
-1327e 13.8 13.6 12.0
-103Ry 11.k 10.3 6.3
-25Nb 12 59.2 62.4
-1311 0.16 0.33 0.25
-957 0.33 0.27 0.15
-ledge 0.052 0.27 0.1k
-893 3.24 3.30 2. 7h
-140pg 1.38 1.85 1.1h
-14loe 0.19 0.63 0.36
-137Cs 0.07 0.25 0.212
+9SMo 13,4 17.2 1l.5
+132me 13.8 13.6 12,0
+103wy, 11,k 10.3 6.3
+9SNp 12 59.2 62.4
+1317 0.16 C.33 0.25
+9574 0.33 0.27 0.15
+1440, 0,052 0.27 0.1k
+895y 2,2k 3.30 2.7k
+140p, 1.38 1.85 1.1k
+1410, 0,19 0.6% 0.36
+1370 0.07 0.25 0.212
 
  
 
-*Average of values in 7 to 10 mil cuts from each
+aAverage of values in 7 to 10 mil cuts from each
 of three exposed graphite faces.
 
-be pressed as percentage of the quantity of each
+bExpressed as percentage of the guantity of each
 species produced in the reactor that would be deposited
-on graphite if each cw® of the 2 X 10% cw” of moderator
+on graphite if each cm® of the 2 X 10° cm® of moderator
 had the same concentration as the specimen.
-2k
+ol
 
-Table 8. Ioss of Breeding Ratio Corresponding to ‘aw ;
+ 
+
+Table 8. Ioss of Breeding Retic Corresponding to
 Complete Retention of Certain Fission
-Products in the MSBR Core
+Products in the MSER Core
+
+ 
+
+Time After Startup (full-power years)
 
  
 
@@ -1646,46 +1798,43 @@ Products in the MSBR Core
 
  
 
--1 Time After Startup (full-power years)
-Nucl] (09)
-uclide ( )
-ye 2 5 10 15 20
-95Mo 5.4 0.0167 0.0323 0.0453 0.0507 0.0528 !
-Mo 36.2 0.0026 ~~ 0.0062 0.0115 0.0163 0.0201
-98Mo 116 0.0008 0.0020 0.0038 0.0055 0.0073
-100y, 118 0.0007 0.0017 0.0033 0.0049 0.0065
-9970 3.9 0.0174 0.0312 0.0399 0.0425 0.0434
-10iRu 9.1 0.0055 0.0118 0.018% 0.0222 0.0244
-102gy 53 0.0008 0.0020 0.0036 0.0051 0.0066 |
-104py 82 0.0002 ~~ 0.0005 0.0010 0.0015 0.0019
-*03Rh 0.51 0.0166 ~~ 0.0169 0.0169 0.0169 0.0169 i
-105g 7.5 0.0012 0.0024 0.0035 0.0041 0.0045
-107pg 11.4 0.0002 0.0004 0.0006 0.0007 0.0008 A
-126me 58 0.0001 0.0002 0.0004 0.0006 0.0008
-128mg 290 — 0.0001 0.0003 0.0004 0.0006
-130mg 193 0.0002 0.0006 0.0012 0.0018 0.0023
-Total 0.0631 0.1083 0.149% 0.1732 0.1889
-°"Mo, 28Mo, 0.0041 0.0099 0.0186 0.0267 0.0339
-100,
-10igRy, 102Ry, 0.0065 0.0143 0.0230 0.0288 0.0329
-104Ry
-126mg, 128mg 0.0003 0.0009 0.0019 0.0028 0.0037 :
-130m, |
-
-P 0.035 C.067 0.099 G.120 0.136
-
  
+
+Nuclide (%ii;l
+2 5 10 15 20
+2 9Mo 5.4 0.0167 0.0323 0.0453 0.0507 0.0528
+?7Mo 36.2 0.0026 0.0062 0.0115 0.0163 0.0201
+8o 116 0.0008  0.0020 0.0038  0.0055 0.0073
+100yq 118 0.0007 0.0017 0.0033 0.0049 0.0065
+?297¢ 3.9 0.0174 0.0312 0.0399 0.0425 0.0434
++01Ry 9.1 0.0055 0.0118 0.0184 0.0222 0.0244
+102gy 53 0.0008  0.0020  0.0036  0.0051 0.0066
+104py 82 0.0002 0.0005 0.0010 0.0015 0.0019
+103Rn 0.51 0.0166 0.0169 0.0169 0.0169 0.0169
+105 7.5 0.0012 0.0024 0.0035 0.0041 0.0045
+107pg 11.4 0.0002  0.0004  0.0006  0.0007  0.0008 i
+126mg 58 0.0001  0.0002 0.0004 0.0006 £.0008
+128 290 —- 0.0001  0.0003 0.0004 0.0006
+13 0mg, 193 0.0002 0.0006 0.0012 0.0018 0.0023
+Total 0.0631  (.1083 0.1494 0.1732 0.1889
+Mo, 98Mo, 0.0041 0.0099 0.0186 0.0267 0.0339
+T0%40
+101Ry, 10%Ry, 0.0065  0.0143  0.0230  0.0288  0.0329
+104Ru
+126me  128pe 0.0003  0.000¢  0.0019  0.0028  0.0037
+130Te
+P 0.035 C.067 0.099 C.120 0.136
 
  
  
 
 25
 
-Table 9. Average Poisoning as a Function of Exposure with
+Table 9. Average Polsoning as a Function of Exposure with
 Deposition Fractions from First MSRE Samples
 
-= 1 rt
-P-z J. P(t! )at!
+- 1 t
+P =z j; P4 )at!
 
  
 
@@ -1694,519 +1843,533 @@ Time (years)
  
 
 Assumption
-2 5 10 15 20
+| 2 5 10 15 20
 
  
 
-95Mo acts like ®°Nb 0.0072 0.0151 0.0229 0.0278 0.0320
-5Mo acts like Z®Mo 0.0043 0.0081 0.0121 0.0147 0.0166
+95Mo acts like ®°Nb 0.0072 0.0151 0.0229 0.0278 0.0%20
+FSMo acts like Mo 0.004% 0,008L 0.0121 0.0147 0.0166
 
  
 
-9SMo.) Table 8 also lists the combined contributions of several groupings
-of isotopes and the totals for all the isotopes listed. The poisoning,
-P(+), shown in Table 8 represents the current loss of breeding ratio at
+99Mo.) Table 8 also liste the combined contributions of several groupings
+of isotopes and the totals for all the isotopes listed. The pcisoning,
+P(t), shown in Table O represents the current loss of breeding ratio at
 time t after startup with clean graphite; also given in Table 8 is the
-average loss in breeding ratio, defined by P = (1/t) [° P(t’ )at’.
+average loss in breeding ratic, defined by P = (1/t) j‘t P{t’ )at’.
 
-The noble metals (group 2 in Table 6) constitute Snother group of
+The noble metals (group 2 in Teble 6) constitute Snother group of
 fission products whose behavior may well be different from that assumed
 in the MSBR studies. Since about two tons of these materials (mostly
 ruthenium) will be produced by one 1000-Mw(e) reactor over a 30-year
 period, one would prefer that they not deposit on metal surfaces, as was
-assumed to occur almost instantaneously. The alternative, and more likely,
+assumed to occcur almost instantaneously. The alternative, and more likely,
 possibility seems to be that they will react with other fission products
-(esg.; molybdenum), forming intermetallic compounds, or remain in ele-
+(evg.; molybdenum), forming intermetallic compounds, or remain in ele-
 mental form, and in either event be removed in the residue of the vacuum
 distillation process. A calculation of the additional poisoning that
 would result from having these nuclides remain in the fuel stream for the
-normal processing cycle indicates a maximum loss of breeding ratio of
+nermal processing cycle indicates a maximum loss of breeding ratio of
 0.001, which is certainly nothing to worry about.
 
 If, for any reason, all of these nuclides were to remain in the
 core indefinitely, the asymptotic poisoning effect would be about 0.08.
 This would of course be serious, but the probability of its occurrence
 
-seems vanishingly small.
+seems vanishingly small,
 26
 
-The behavior of xenon (and krypton) in an MSBR system is, of course, ©
-very important, with some 0.04 in breeding ratio dependent on nearly
+The behevior of xenon {and krypton) in an MSBR system is, of course, &
+very importent, with some 0.0h in breeding ratio dependent on nearly
 complete removal of these gases by sparging with helium in the fuel pump.
 Experience with operation of the MSRE gives every assurance that this
-can in fact be done. The residual xenon poiscning in the MSRE appears %o
-be appreciably less than anticipated on the basis of the known permeability
+can in fact be done. The residual xenon poiscning in the MSRE appears to
+be appreciably less than anticipated on the hasis of the known permesbility
 of the graphite, an observation which may be accounted for by some slight
 entrainment of small helium bubbles in the circulating fuel salt.
 
-The assumption with respect to group 5 fission products is that they
+The assumption with respect to group 5 fission procucts is that they
 remain in the fuel salt essentially indefinitely. It is perhaps at least
-as likely that cadmium and tin will behave like group 2, that is, as Just
+as likely that cadmium and tin will behave like group 2, that is, as Jjust
 discussed, be removed in the regular fuel processing cycle. Such a con-
 tingency could only improve the breeding ratio. However, the combined
-yield of all the fission product chains from mass number 111 to mass
-number 124 is only about 0.3%, so that at most a gain in breeding ratio
+yvield of all the fission product chains from mass number 111 to mass
+number 124 is only about 0.3%%, so that at most 2 gain in breeding ratio
 of 0.00% might be realized.
 
-The reasons for the fission product behavior observed in the MSRE »
-are not yet fully understood. The role of various factors which may
-infiuvence this behavior, and the most promising means of limiting the
+The reasons for the fission product behavior observed in the MSRE o
+are not yet fully understood. The role of varicus factors which may
+influence this behavior, and the mest promising means of limiting the
 deposition of fission products will be thoroughly investigated in a
-research program described in ancther report.® The subject is introduced
-here because the behavior of fission products congtitutes the principal
+research program described in another report.8 The subject is introduced
+here because the behavior of fission products constitutes the principal
 source of uncertainty in the expected nuclear performance of an MSBR.
 
-An additional assumption of some consequence, not listed in Table
-6, is that the 237Np formed by neutron capture in 2?%U will be removed
-from the fuel stream by the fluoride volatility process. If this were
-not the case, and the “Np were to remain in the fuel stream, along with
+An additicnesl assumption of some consequence, not listed in Table
+6, is that the 237Np formed by neutron capture in 2°°U will be removed
+from the fuel stream by the fluoride volatility process., If this were
+not the case, and the 2°"Np were to remain in the fuel stream, along with
 the uranium, there would be a loss of ~0.01 in breeding ratio. We be-
-lieve that the neptunium can in fact be removed, by proper operation of
-the sorbers in the fluoride volatility process, and the potential loss in
+lieve that The neptunium can in fact be removed, by proper operation of
+the sorbers in the flucride volatility process, and the potential loss in
 
-breeding ratio just cited indicates that there is good reason tc do so.
+breeding ratio Jjust cited indicates that there is good reason tc do s0.
 
-8W. R. Grimes, Chemical Research and Development for Molten-Salt
-Breeder Reactors, USAEC Report ORNL-TM-1853, Oak Ridge National
-Laboratory, June 1957. wd
- 
+ 
 
-ns
+&4. R. Grimes, Chemical Research and Development for Molten-Salt
+Breeder Reactors, USAEC Report ORNL-TM-1853, Osk Ridge National
+Laboratory, June 1957, id
+o 3. MSBR REACTOR PHYSICS PROGRAM
 
-3. MSBR REACTOR PHYSICS PROGRAM
-
-As a result of the analyses summarized in the preceding sections;
+As a result of the analyses summarized in the preceding sectlions;
 we are quite confident that an MSBR will breed under conditions that
-produce minimum or near-minimum fuel costs. There are nonetheless a
-number of sspects of the physics of MSBR reactors which require further
-investigation, both to establish an adequate basis for the detailed
-design of an MSBR and to gain a much better understanding of the dynamic
+produce minipum or near-minimum fuel costs. There are nonetheless a
+number of aspects of the physics of MSBR reactors which require further
+investigation, both to establish an adeguate basis for the detailed
+design of an MSBR and to gain a much hetter understanding of the dynamic
 
 characteristics of these reactors.
 
 3.1 Investigation of Dynamic Characteristics
 
 The design studies of molten-salt breeder reactors that have been
-carried out up to the present have emphasized the normal; steady-state
+carried out up to the present have emphasized the normal,; steady-state
 behavior of such reactors, in order to determine their potential per-
-formance with respect to the goals of resource utilization and economic
+formance with respect to the goals of rescurce utilization and econocmic
 power. Less attention has been directed to such questions as the dy-
-nemic response characteristics of an MSBR, as influenced in detail by
-the design parameters, and to possible abnormal modes of behavior that
-might result from failures anywhere in the system.
+namic response characteristics of an MSBR, as influenced in detail by
+the design parameters, and to possible sbnormal modes of behavior that
+might result from fallures anywhere in the systen.
 
-In order to take full advantage of its breeding potential, the MSBR
+In order tc take full advantage of its breeding potentisl, the MSBR
 design must minimize neutron losses to control rods and associated hard-
-ware (such as thimbles). This implies that it is highly desirable for
+ware (such as thimbles)., 'This implies that it is highly desirable for
 the MSBR to be strongly self-regulating.
 
-While there are no reasons to suspect unsatisfactery dynamic be-
-havior in the MSBR; the system has new features whose effect on dynamics
+While there are no reasons to suspect unsatisfactory dynamic be=-
+havior in the MSBR, the system has new features whose effect on dynamics
 cannot be predicted quantitatively on the basis of past experience. For
-instance, the system will use circulating 2330 fuel, and the small de-
-layed neutron fraction of 233U will be reduced to an even smaller ef-
+instance, the system will use cireculating 237U fuel, and the small de-
+layed neutron fraction of 237U will be reduced to an even smaller ef-
 fective value by fuel circulation. Also, the system is a heterogeneous,
-two-fluid, circulating fuel reactor and consequently has almost every
-time delay conceivable in a reactor system (heat transfer from graphite
-to fuel, fuel transport in the core, blanket transport in the core, etec.).
+two-flunid, circulating fuel reactor and conseguently has slmost every
+time delay conceivable in & reactor system (heat transfer from graphite
+toc fuel, fuel transport in the core, blanket transport in the core, etc.).
 The negative temperature coefficients of reactivity which are to be de-
-signed into the system are no guarantee of stability unless the time lags
 
-are suitable.
+S signed into the system are no guarantee of stability unless the time lags
+
+are suitable,
  
 
 28
 
-The experience acquired with the MSRE provides understanding about
+The experience acquired with the MSRE provides understending ebout
 this type of system which will aid in analyzing the MSBR. The pre-
-dictions of MSRE dynamic behavior’ were experimentally confirmed,*® in-
-dicating that satisfactory mathematical models end analysis procedures
-were used. Experience with the proposed 233y loading in the ‘MSRE will
-further extend our understanding.
+dictions of MSRE dynemic behavior® ‘were experimentally coni‘irmed,lo in-
+dicating that satisfectory mathematical models and analysis procedures
+~ were used. Experience with the proposed 233U loading in the MSRE will
+further extend our understanding. | g
 
-3.1.1 Stability Analysis.
+3.1,1 Stability Analysis
 
-Anelysis of the dynamic behavior of the MSRE was based on calcu-
-lations of the eigenvalues of the time-dependent equations for. the
-neutron density, on analysis of the ‘system frequency response (trensfer
-functions) end on computation of the transient response to various
-perturbations in system operating parameters, These methods must be
-epplied to clarify the complex relationship existing between the dy- |
-namic behavior of the MSBR system and the design parameters. The anal-
-ysis must of course include calculation of all temperature- and power=
-‘dependent reactivity effects. An investigation of the effects of long-
-term dimensional changes in the graphite structures (resulting from fast
+Anelysis of the dynamic behavior of the MSRE“was based on calcu-
+lations of the eigenvalues of the time-dependent equations for the
+neutron density, on analysis of the system frequency response (transfer
+functions) and on;computation_of,the transient response ‘to various
+perturbations in system'operating'parameters. - These methods must be
+epplied to clerify the complex relationship existing between the dy-
+namic behavior of the MSBR system -and the design parameters. The anal-
+ysis must of course include calculation,o: all temperature- and'power-
+‘dependent reactivity effeets.~:An“investigation'of_the-effects-Of'long-
+
+term dimensional changes in;thefgraphite‘structures;(resulting from fast
+
 neutron bombardment), and of tolerances or indeterminacy in the geometry
-of the salt passages will be required. .The possibility of oscillations
-or other instabilities associated vith movement of graphite structures,
-end concomitent changes in selt-passege geometry, although hough to be
-remote, must be investigated. -
+of the salt passages will'befreduired The possibility of oscillations
+or other instabilities -assoclated. with" mDVement of graphite structures,
+end concomlitent changes in saltfpassage geometry, although thought to be
+remote, must be investigated. ' Lome - . ‘
+Drawing upon these studies, and the transient analyses described
+below,a conceptual control.and safety system.must be developed which
+involves the smallest possible steady-state loss of neutrons to elements
 
-Drawing upon these studies, and ‘the transient ‘enalyses described
-belov,a conceptual control: and: safety system mst be developed which
-involves the smallest possible ‘steady-state loss of: neutrons to elements
-of the control system, while providing ample operational: flexibility y and
-protection. ToT
+of the control system, while providing ample operational flexibility andf
+
+protection.;._-
 
  
 
-®s. J. Ball and T. W. Kerlin, Stability Analysis of the Molten-Salt
-Reactor Experiment, USAEC Report ORVL- --1070, Oak Ridge National
-Laboratory, December 1965.
+95 J. Ball end T W Kerlin, Stability Analysis of the Molten-Salt;
 
-10R, B. Briggs, Molten-Balt Reactor Progren Semtannuel Progress EE
-Report for Period Ending February 28, 1966, USAEC Report ORNL-3936, Oak
-Ridge National Laboratory, June 1966,
+Reactor Experiment, USAEC Report OFNL TM-lO'(O, _Oa.k Ridge National
+Laboratory, December 1965
+
+- 19R. B. Briggs, Molten—Salt Reactor Program Semiannual Progress R
+
+Report for Period Ending February 28, 1966, USAEC Report 0RNL-'5956, Oak
+Ridge National Laboratory, June 1966
+
+b
 29
-Lo A program of experimental investigations must be developed for the
-breeder reactor experiment in order to provide additional verification
+
+@ - A program of experimental investigations must be developed for the
+breeder reactor experiment in order to provide additicnal verification
 of the models and physical properties employed in the analysis for the
 MSBR configuration. Extensive pre-analysis of the experiments, to
-facilitate selection of the best experimental conditions; will greatly
+facilitate selection of the best experimental conditions, will greatly
 
 enhance the value of the experiments themselves.
 
 3.1.2 Transient Analysis
 
-Because of the mathematical methods used, the dynamic analyses
+Because of the mathematical methods used; the dynamic analyses
 discussed above deal primarily with the effect of comparatively small
 disturbances in the reactor system, and are therefore principally
-applicable to normal operating conditions of the reacter. Larger dis-
+applicable to normal operating conditione of the reactor. lLarger dis-
 turbances can of course arise from abrupt changes in load, from pump
 stoppages, or from any of a number of other rapid changes in operating
 conditions. The effects of such changes must be analyzed to determine
 whether system temperatures will inherently remain within acceptable
-limits or whether, on the contrary, specific control actions must be
-taken. Additional studies will be required in connection with the
+limits or whether, on the contrary, specific ccntrol actions must be
+taken. Additional studies will be required in connection with the |
 safety analysis of the MSBR. All possible sources of positive re-
-activity addition must be identified and evaluated; including those
-which might result from failures outside the nuclear system proper, and
+activity addition must be identified and evaluated, including those
+wvhich might result from failures outside the nuclear sysitem proper, and
 could therefore be regarded as secondary criticality accidents.
 
 The methods presently available for studying nuclear excursions in
 an MSBR must be carefully examined; some extensions and improvements in
-these methods may well be required, particularly with regard to the
+these methods may well be re@uiredg particularly with regard to the
 transient temperature distribution within the core and the transient
 
 distribution of delayed neutron precursors.
 
 3.1.3 Flux Flattening
 
+ 
+
 The length of time during which the graphite structures in an MSBR
 can continue to perform their function depends partly on the fast neutron
-flux level (i.e., on power density) and partly on the gradient of the
+flux level {i.e., on power density) and partly on the gradient of the
 
 power density, as well as on the nature of the graphite itself. The use-
 
+S
+
 ful life of the graphite may be extended somewhat by flattening the power
-distribution, as for example by varying the size of salt passages from
+ 
+
+distribution, a&s for example by varying the size of salt passages from
 place to place within the core. Such variations could also influence
-the reactivity coefficients associated with these salt passages. Both
+the reactivity coefficlients associated with these salt passages. Both
 the desirability of flux flattening and the effect of doing so on
 
 reactivity coefficients should be investigated.
 
 3.2 Investigation of Alternate Core Designs
 
-While it is unlikely that there is any configuration for an MSBER
+While it is unlikely that there 1s any configuration for an MSBR
 that would have significantly better breeding performance at low cost
-than does the present reference design, there may be alternate core
-configurations that could yield essentially the same performance while
-rossessing different, and perhaps desirable, mechanical features. A
+than does the present reference design, there may be aliernate core
+configurations that could yield essentially the same performence while
+possessing different, and perhaps desirable, mechanical features. A
 search for such alternatives should be carried forward to provide addi-
 tional assurance that the prototype reactor design will represent the
 
 best basic core concept. -
 
-2.5 Development of Methods v
+2.5 Development of Methods :
 
 Further improvement and refinement of computational methods is
 needed in order to establish a satisfactory level of confidence in the
 procedures — whether most elaborate or relatively simple — that will be
-used in design of a specific MSBR, such as the 150-Mw reactor experiment,
+used in design of a specific MBBR, such as the 150-Mw reactor experiment,
 and in order to provide for precise interpretation of related lattice
 physics experiments (cf. Sec. 3.6). As is usual in geometrically complex
-reactor lattices, the key problems relate to the calculation of ¢(xr,E),
+reactor lattices, the key problems relate to the calculation of ¢(£,E),
 the neutron flux as & non-separable function of position and energy, in
-the source-energy region, in the resonancé region and in the thermelization
+the source-energy region, in the resonancé region and in the thermalization
 range. Problems of this sort are present in many types of reactor lattices,
 and cannot be said to have been fully resolved. The special features of
-the MSBR lattice relate tc the physical separation of the fissile and fer-
-tile materials in separate salt streams, to the geometrical irregularities
+the MSBR lattice relate to the physical separation of the fissile and fer-
+tile materials in separate salt streams, to the gecmetrical irregularities
 of salt passages, and to the significant scattering contribution of the fuel
 salt itself. Both two-dimensional multigroup neutron-transport methods
 
 and Monte Carlo methods should be tested, and one or both approaches used
 31
-
-a in the analysis of lattice experiments to determine the amount of detail
-in the description of ¢(x,E) that it is necessary to cbtain in order to
+e in the analysis of lattice experiments to determine the amount of detail
+in the description of ¢(§,E} that it is necessary to obtain in order to
 account for all important characteristics of the MSBR lattice.
 
-In the same vein, and in view of the dominant importance of calcu-
+In the same vein, and in view of the dominant importence of calcu-
 lating correctly the spectrum-averaged capture-to-fission ratio for
-2333, it is highly desirable to develop suitable procedures for calcu-
+233y, it is highly desirable to develop suitable procedures for calcu-
 lating Doppler-broadened; self-shielded cross sections for the fissile
 materials without assuming asymptotic flux shapes above each resonance,
-and, of course, to do this in a complex heterogeneous lattice. It is
-not likely, in fact, that any really large effects, in an MSBR; are
-associated with the details of the flux distributions implied by such
+and, of course, to do this in a complex heterogenecus lattice. It is
+not likely, in fact, that any really large effects,; in an MSBR; are
+associated with the details of the flux distributvions implied by such
 refinements of analysis. However, the objective of achieving an un-
-usually high degree cf reliability in the design calculations in order
+usually high degree of reliability in the design calculations in order
 to guarantee the performance of the reactor within very narrow limits
 requires both meticulous attention to detail in the calculations, and
 supporting experimental work (Sec. 3.6).
 
 Because of the relatively small size of an MSBR core, which results
 from its high power density, and because of the continuous removal of
-xenon from the fuel salt; as well as the thorough mixing that would occur
-even if xenon were present in the salt, there will be no tendency towards
+xenon from the fuel salt, as well as the thorough mixing that would occur
+even if xenon were present in the salt, there will be no tendency towsrds
 flux instabilities of the kind normally expected in large power reactors.
 The question of non-separable time- and space-dependent effects will
-nevertheless arise in connection with the analysis of potential accidents.
-Further investigations will be required to determine what extensions in
-computational technique may be needed te describe the reactor adequately
-for such transient analyses; and, depending on the outcome of these in-
+nevertheless arise in connection with the analysis of poctential asccidents.
+Further investigations will be regquired to determine what extensicns in
+computational technique may be needed to describe the reactor adegquately
+for such transient analyses, and, depending on the outcome of these in-
 vestigations, additional work mey be necessary to accomplish the indi-
 
 cated development of methods.
 
-3.4 Cross Section Evaluation
+3. Cross Section Evaluation
 
 There is a constantly accelerating rate of acquisition of new experi-
 mental information on neutron cross sections of interest in reactor
-calculations. Such information must be collected, evaluated, and assimi-
+calculations. OSuch information must be collected, evaluated, and assimi-
 
-fr lated into our computational structure. Many of the cross sectiouns
+G lated into our computational structure. Many of the cross sections
  
 
 32
 
-discussed in Sec. 2.1, while not individually contributing major un-
-certainties in the nuclear. calculations for en MSBR, need further analy-
-sis and evaluation to ensure that best values are employed in our anely-
+‘discussed in Sec. 2.1, while not individually contributing major un-
+
+- certainties in the nucleer-celculetione for en MSER, need'furtherrenely-
+sis end evaluation to ensure that best values are employed in our enaly-
 ses and that uncertainties and sources of error are more quantitatively
-assessed than has yet been done. CC
+assessed than has yet been done, - ‘
 
-The assimilation of new information on 233U cross sections, espe-
-cially, requires significant effort, in determining the resonance pa~
-rameters that best fit the experimental date, in deriving statisticel
+The aesimiletion of new information on 233U CYOSS eections, espe-
+cielly, requires eignificent_effort,'in determining-thezreeonence pa~
+rameters. ﬁhet best fit the experimentel date, in deriving“etefieticel'
 distributions of these parameters for use in the unresolved resonance
-region (including proper allowance for resonances not identified in the
-differential cross section measurements), and in expressing the resulting
-information in terms best suited for reactor computations. Some of this
-work is customarily end appropriately performed by the experimenters
-- themselves, notably the fitting of parameters to the resolved resonances;
-but the reactor physicist still has much to do, especially if the desired
-representation of the cross sections for the purpose of reactor celcus
-lations is not in terms of the conventionel parameters.
+region (1nc1uding proper allowance for resonances not identified in the
+differential cross section measurements), and in expreeeing the resulting
+information in terms best suited for reactor computations, _Sohe'of'this
+wvork 1is oustomerily and epproprieteiy performedby the experimentere
+.themselves, notably,the fitting'of'perameters“to-the resolved resonencee;
+but the reactor physicist etill;hee much.toido, eepeciellylif the desired
+representation of the cross eections for'fhe'purp0se-of'reactor ceicu-
+latione is not in terms of the conventional. peremetere. -
 
-In addition to enelysis, evaluation, end, in some instances, the:
-theoreticel calculation of needed cross section date, the maintenance
-of an up-to-date cross section library is a regular housekeeping chore
-that each major reactor project must acknowledge and support.
+In addition to enelyeie, evaluation, and, in some 1nstances, the
+- theoretical celculation of needed cross eection date, the maintenance
+of en up-togeete,croee section library is e‘reguler housekeeping chore
+that each mejor reector project must ecknowledge and support. -
 
-3.5 Development of Computer Codes
+3, 5 Development of Computer Codes -
 
-“In support of the 'MSER design studies, vaich culminated in the res-
-erence design described in ‘Ref. 1, & procedure was devised for finding
-automatically the optimum combination of as many as twenty variable pa-
-rameters of the reactor system, such as core size and height- to-dlemeter
-ratio, fuel- and fertile-stream volume fractions, thorium and ‘urenium
-concentrations in the salt, blanket thickness, processing: rates, fertile
-salt hold-up volume, end others. Called OPTTMERC, the program uses
+“In. eupport of the MSBR deeign studiee, which culmineted in the ref—
+erence design described 1in- Ref. 1, & procedure wae devieed for finding
+eutometieelly the optimum combinetion of es meny as. twenty varieble pe—‘
+remeters of the reactor eyetem, such ee core eize and height-to-diemeter
+retio, fuel- and fertile-stream volume frections, thorium end urenium |
+| concentretione in the eelt, blenket thicknese, proceeeing retee, fertile
+- salt hold-up volume, end others. Celled OPTIMERc;llthe progrem usee
 
  
 
-13% P. Baumen end J. L. Lucius, OPTIMERC: “A. Reactor Design
-Optimization Code, Oak Ridge National Laboratory (to be issued).
+| 11}1 F. Bauman end J. L. Lucius, oprmeac ‘A Reactor Design
+_thimizetion Code, Osk Ridge Netional Leboratory (to be issued).
+
+#
  
 
 33
 
 one-dimensional multigroup diffusion theory, alternating between radial
 and axial directions in the core to synthesize a two-dimensional model,
-and generates space- and energy-integrated reaction rates for each type
-of nuclide. The isotope chain equations are solved to find the equilib-
+and generates space- and_energyfintegrated reaction rates_for each type
+"~ of nuclide.  The isotope‘chain'equations areosolved to‘find the equilib-
 rium fuel concentrations corresponding with a specified processing rate.
-‘Solutiéns of the diffusion equations and of the isotope equations are
-interleaved in a convergent iterative procedure which is better described
-in Ref.9 . The program systematically searches (by a method of steepest
+.'Solutions of the diffusion equations ‘and of the 1sotope equations are
+interleaved in & convergent iterative‘procedure which is better described
+in Ref*g . The program systematically'Searches (by a method of~Steepest
 gradient) for that combination of variables that gives the optimum value
-for a selected figure of merit, such as lowest power cost. This code
+for a selected figure of merit, such as. 1owest power cost. This code '
+has proven to be extremely useful in arriving at an optimum.core design.
+It still hes some restrictions whose removal will meke the tool still
+more. useful and convenient in evaluating proposed alternative core con-
 
-has proven to be extremely useful in arriving at an optimum core design.
-It still has some restrictions whose removal will make the tool still
-more useful and convenient in ‘evaluating proposed alternative core con-
-cepts and possibly in exploring the changes in design and operating
-conditions that might result from changing conditions in the nuclear
+o cepts and possibly in exploring the changes in design and ‘operating
+
+conditions that might result from changing conditions in the nuclear o
 power industry, such as increases in the cost of fissile material. These
-improvements will require a fairly modest effort, and should be undertaken.
+ improvements will require a fairly modest effort, and should be underteken.
 
-‘In connection with the maintenance of a master-cross-section library,
-from which date can be retrieved and processed for various specific com-
+-In connection with the maintenance of & master-cross-section library,
+'from‘vhich datea can'be retrieved and processed for various specificncom-
 putational needs, data-handling procedures need to be improved and some
-additional codes developed to facilitate full and reliable use of the
+additional codes developed to facilitate full and relisble use of the
 library.
 
 Many of the computer codes that will be used in further analyses of
-the MSBR reactor need to be transcribed for the latest generation of
-digital computers, and in some instances altered and improved to take
-full advantage of computer capability.
+the MSER reactor need to be transcribed for the latest generation of
+digital computers, and in some instances altered and improved'to‘take'
+full adventege of computer capability. R
 
 3.6 Experimental Physics Program
 
 As was discussed in Sec. 2.2, the general approaches employed in
 the MSBR studies have proven quite effective in analysis of the MSRE,
-the Peach Bottom Reactor, and others. However, the validity of these
-approaches, or of the improvements discussed in Sec. 3.3, as applied to
-the complex lattice geometry of an MSER, should be confirmed by a few
-
+~ the Peach Bottom Reactor, and others. However, the validity of these
+approaches, or of the improvements discussed in Sec. 3. 5, as applied to
+~ the complex lattice geometry of an MSBR, should be confirmed by a few
 well-selected and carefully executed experiments on the characteristics
  
 
-3h
+3 -
 
-of an MSBR lattice. The most appropriate type of experiment. to £111
-this need appears to be the kind of lattice substitution measurement,
-and associated flux and activation measurements, that can be made in :
-the Physical Constants Test Reactor (PCTR) and the High-Temperature
-Lattice Test Reactor (HTLIR) at the Pacific Northwest Laboratories.
+of an MSBR lattice. The most appropriate type of experiment. to 111
+'this need appears to be the kind of lattice substitution measurement,
+and associated flux and activation measurements, that- can be made in
+the - Physical Constants Test Reactor (PCTR) and the High- Temperature
+,Lattice Test Reactor (HTLTR) at the Pacific Northwest Laboratories.» -
 Extremely accurate determinations of lattice reactivity can be made with
-a small number of typical lattice cells, requiring far less material
-and fabrication cost than would be needed for exponential or criticel
-experiments. For lattices with k,, close to unity, and with'e precision
-of perhaps 5% in determining (kg - 1), one may expect to determine k,
-for the lattice to within about +0.001, or possibly better. .
+& small number of typical lattice cells, requiring far less materiel
+and fabrication cost than would be needed for exponential~or critical
+, experiments. For lattices with k, close to unity, and with & precision
+- of perhaps 5% in determining (k -l), one may expect to determine Keo
+for the lettice to. within about +0.001, or possibly better.=w '
 
-. A measurement of k, does not by itself, of course, provide an un-
-ambiguous determination of breeding ratio. A nearly direct measurement
-of this important quantity can be obtained by measuring ‘the ratio of
-absorptions in thorium to fissions in 233y; i.e,, (Aoz/Fz3). In natural
-or slightly enriched uranium systems, the analogous ratio, (Aze/Fzs),
-can be measured to within about 1%, or possibly a little better, if
-extreme care is taken, Far less experience has been accumileted with
-the thorium-2>>y system (which, of course, involves: different character-
+- A measurement of k,, does not by itself, of course, provide an un-
+‘ambiguous determination of breeding ratio. A nearly direct: measurement
+of this important quantity can be obtained by measuring the ratio of
 
-istic decay gamma rays), end it is not guite clear how high a precision:
+absorptions in thorium to fissions in 233y, i.e., (Aoa/Fé3) -~ In natural
 
+or slightly enriched uranium systems, the analogous ratio, (Aee/Fbs):
+cen be measured to within about 1%, or possibly a little better, if
+extreme care 1s taken, Far less experience has been accumulated with
+
+the thorium-2>3y system.(which, of course, involves: different. character-'
+
+istic decay gamma rays), and it is not quite. cleer hOW'high a precision
 cen be achieved in this measurement. Further investigation of this
 question will be required, and some development work may be needed,
-before we can determine just how much information can be obtained, and
-with what precision, - It, appears. nevertheless that a program of such’
-lattice. ‘measurements on the PCTR or the HTLIR, including determinations
-of reactivity, flux distributions, and activation ratios can go far to
-provide the detailed understanding. of the lattice characteristics that
-will be ‘required for the ‘design. of an MSER.
-In connection with. PCTR and HTLTR experiments, it is. both Possible
+before. we can determine Just how mich information cen be obtained, and
+_‘with vhat precision. \It appears nevertheless that & program ‘of such "
 
-- and desirable to obtain ‘additional information related to ‘various: re= .
+ lattice. measurements on the PC'i‘R or the HTLTR, including determinations
 
-- activity coefficients for the lattice under study. Temperature coef-
+of reactivity, flux distributions, and - activaticn ratios ‘can gc far to
+provide the detailed understanding of the lattice characteristics that
+7will e required for the design of an MBBR ' '
+_ In connection with PCTR and HTLTR experiments, it is both possible
+- and desirable to obtain additional information related to various re- .
 
-ficients, density coefficients, effects of. displecement of various. come
+A_ activity coefficients for the 1attice under study.r Temperature coef- ,;v_
+| ficients, density coefficients, effects of displacement of various com-:g
 
-ponents of the lattice cell, can. all be measured with high accuracy. if
-the experiment is appropriately destgned with these measurements in
+ponents of the 1attice cell,can all.be measured with high accuracy if
+the experiment is appropriately designed with these measurements in
 
-»
-55
+Ll
+52
 
-hd mind. In addition, there will be a velocity selector available at the
+mind. In additicn, there will be a velocity selector available at the
 HTLTR, with which one can undertake measurements of the low-energy
 neutron spectrum as a function of position in the lattice cell.
 
 By performing some of these measurements (e.g., reactivity and
-activation ratios) on various lattice configuretions, some of which may
+activation ratios) on various lattice configurations, some of which may
 not be typical of an MSBR per se, but which are chosen to emphasize one
-or another particular aspect of the neutron balance, one may gain further
+or snother particular aspect of the neutron balance, one may gain further
 understanding of the detailed behavicr of the neutrons in an MSBR lattice.
 
 Questions of exact experimental design, such as use of frozen salt
 as opposed to molten salt, the method of containing the salt, and so
-forth, have not been explored. Some of the lattice cells — perhaps as
-few as seven — should contein primarily 237U as fissile material. For
-this purpose, not more than a kilogram or two of 233U should be required.
+forth, have not been explored. Some of the lattice cells -~ perhaps as
+few as seven — should contain primarily 77U as fissile material. For
+this purpose, not more than a kilogram or two of 27U should be required.
 
-Further work is needed to develop a detailed experimental program
+Further work is needed to develop a detailed experimental progfam
 along these lines, and to determine how many separate lattices should be
-investigated. In order to estimate the scope of the effort required in
+investigated. In order tc estimate the scope of the effort required in
 these experiments, we assume that not more than five lattices would be
-studied, and that three of these would be studied in the PCTR; and two
+studied, and that three of these would be studied in the PCTR, and two
 in the HTLTR.
 
-3.6.1 Dynemics Experiments
+3.6.1 Dynamics Experiments
 
 While the lattice studies in the PCTR and HTLTR can provide some
-information on reactivity coefficients, they cannot, of course, tell us
-anything about the overall dynemic behavior of an MSBR. Such studies
-will have to be carried out on the reactor experiment. A detailed
+information on reactivity coefficients, they cannot,of course, tell us
+anything about the overall dynamic behavior of an MSBR. ©Such studies
+will have to be carried cut on the reactor experiment. A detailed
 program for these experiments must be planned in advance, in order to
-ensure that adequate provision is made for them in the design of the
+ensure that adequate provision is made for them in the design cf the
 reactor. The experiments will include measurements of frequency re-
 sponse and transient response to various perturbations in system op-
 erating parameters, as a function of reactor power level, fuel circu-
 lation rate, and control mode.
 
-The experiments themselves and the associated analysis will of
-course follow completion of the prototype, and are not included in the
+The experiments themselves and the asscociated analysis will of
+course follow completion o¢f the prototype, and are not included in the
 
-Ep time period covered by this report.
-36
+time period covered by this report.
+%6
 
-Lk, MANPOWER AND COST ESTIMATES _
+Y, MANPOWER AND COST ESTIMATES @
 
 Results of most of the investigations discussed in Sec. 3 should be
 available as a basis for the detailed design of the experimental MSBR.
 According to the proposed schedule for this reactor, the design should
 begin in FY 1968 and be completed by the end of FY 1971. The reactor
-physics program outlined in this report should therefore largely be com-
-pleted by the end of FY 1670, and the manpower allocations and cost
-estimates shown in Teble 10 have heen prepared with this schedule in mind.
-The total cost of the program, over the three-year period FY 1968 to
-FY 1970, is estimated to be about $1,100,000.
+physics program outlined in this report should therefore largely be com- |
+pleted by the end of FY 1970, and the manpower allocations and cost i
+estimates shown in Taeble 10 have been prepared with this schedule in mind.
+The total cost of the program, over the three~yesr period FY 1968 to
+FY 1970, is estimated to be about $3,100,000.
 
 The program outlined above is designed to provide, by the end of
 FY 1970, a secure basis for the design of the 150-Mw reactor experiment.
 In the ensuing fiscal years, 1971-1975, it will be necessary to carry on
-a continuing program of reactor physics investigations in support of the i
+a continuing program of reactor physics investigations in support of the 73
 MSBR concept. This program will comprise further analysis and evaluation
-of new cross section information as it becomes available, continuing s
+of new cross section information as it becomes available, continuing =
 improvement and refinement of methods of analysis, further studies of i
 
 operational problems and characteristics of molten-salt breeder reactors
 
+e et e r
+
 as influenced by details of design, the search for better or more ec-
-cnomical approaches to reactor control, and a continuing study of potential
+cnomical approaches tc reactor control, and a continuing study of potential
 
-safety problems — in short, a continuing effort to gain a more complete
+safety problems — in short, a continulng effort to gain & more complete
 
-understanding of the characteristics of this reactor concept; so that the
+understanding of the characteristics of this reactor concept, so that the
 
 twin objectives of safe, reliable operation and economical power pro-
 
-duction can be most satisfactorily accomplished. A need for additional |
-supporting experimental work may be recognized as the program progresses.
-
+duction can be most satisfactorily accomplished. A need for additional {
+supporting experimental work may be recognized as the program progresses. |
 We believe that a support level of $200,000 per year for the five-year
 
-period FY 1971~FY 1975 will be required for this program.
+period FY 1971~FY 1075 will be required for this program.
 
-5. CONCLUSIONS
+5. CONCLUSIONG
 
-The reactor physics efforts that have been discussed in this report j
-should provide a sound basis for thoroughly reliable assessments of the
+The reactor physics efforts that have been discussed in this report !
+should provide a sound hasig for thoroughly reliasble assessments of the
 
-performance of a thermal molten-salt breeder reactor as proposed in
-
- 
- 
-
-Table 10. Manpower and Cost Estimates for MSBR Physics Development Program
+performance of = thermal molten-salt breeder reactor as proposed in
+Table 10. Manpower and Cost Estimates for MSBR Fhysics Development Program
 
  
 
-FY 1968 FY 1969 FY 1970 3~Year Total
+FY 1968 FY 1969 FY 1970 3-Year Total
 
  
 
@@ -2217,163 +2380,202 @@ FY 1968 FY 1969 FY 1970 3~Year Total
  
 
 Section Activity
-MY  Cost® MY  Cost® MY  Cost® MY Cost?
+MY  Cost® MY  Cost® MY  Cost® My Cost®
 3.1 Investigation of Dynamic Characteristics 0.7 24 1.6 60 2.2 84 4.5 168
-3.2 Investigation of Alternate Core Designs 0.5 18 1.0 38 0.5 20 2.0 76
+3.2 TInvestigation of Alternate Core Designs 0.5 18 1.0 38 0.5 20 2.0 76
 3.3 Development of Methods for Analysis 0 1.5 56 1.2 46 2.7 102
 3.4 Cross Section Evaluation 0.5 18 0.5 18 0.5 18 1.5 54
-3.5 Development and Improvement of Computer 0.5 18 1.0 38 1.0 38 2.5 9%
+3.5 Development and Improvement of Computer 0.5 18 1.0 38 1.0 38 2.5 9
 Codes
 
 3.6 Experimental Physics Program
 
-lattice experiments — planning, 0.5 18 2.0 75 2.0 75 4.5 168
+Lattice experiments — planning, 0.5 18 2.0 75 2.0 75 4.5 168
 design, analysis
 
 Procurement, measurements 200° 200P 400
 Dynamic experiments — planning 0.3 10 0.4 15 0.6 23 1.3 48
-Totals 3.0 106 8.0 500 8.0 504 19.0 1110
+Totals 3.0 106 g.0 500 8.0 504 19.0 1110
 
  
 
-8Costs are distributed roughly 80% for direct salaries and overhead, and 20% for computer
+®Costs ere distributed roughly 80% for direct salaries and overhead, and 20% for computer
 charges. (Cost in thousands.)
 
-bTncludes estimated costs for all necessary hardware, including fuel, but not including value of
-
-fissile material used; includes also estimated expenses of Pacific Northwest Laboratories for per-
+bIncludes estimated costs for all necessary hardware, including fuel, but not including value of
+figsile material used; includes also estimeted expenses of Pacific Northwest Laboratories for per-
 forming experiments.
 
 Le
 38
 
-Ref. 1, and, together with operation of the reactor experiment, should
+i b
+
+Ref. 1, and, together with cperation of the reactor experiment, should
 permit selection and detailed design of a full-scale MSBR. The proposed
-program will result in improved nuclear data, in a much better under-
+program will result in improved nuclear data, in & much better under-
 standing of the dynamic characteristics of such reactors, and in con-
 
 firmed method of computation.
+
 6. ACKNOWLEDGMENTS
-The author acknowledges with thanks the invaluable assistance of
+
+The author acknowledges with thanks the invaluaeble assistance of
 
 C. W. Craven, Jr., T. W. Kerlin, B. E. Prince, and others in the
 
-preparation of this report.
+preparaticn of this report.
+g CRNL-TM-1 85 7
 
- 
-
-!
-1
-1
-t
-1
-i
- 
-
- 
-
- 
-
-ORNL-TM-1857
 Internal Distribution
-1-50. MSRP Director's Office 96. H. A. Friedman
-Room 325, 9204-1 97. J. H. Frye, Jr.
 
-5L. R. K. Adams 98. CC. H. Gabbard
-52. G. M. Adamson 99. R. B. Gallaher
-53. R. G. Affel 100. J. H. Gibbons
-54. L. G. Alexander 101. HE. E. Goeller
+ 
+
+1-50. MSRP Directorts Office 9. H. A. Friedman
+Room 325, 920L-1 97. J. H. Frye, Jr.
+51. R. K. Adams 98. C. H. Gabbard
+2. G. M. Adamson 99. R. B. Gallsher
+53%. R. G. Affel 100. J. H. Gibbons
+54. L. G. Alexander 101. E. E. Goeller
 55. R. F. Apple 102, W. R. Grimes
-56. C. F. Baes 10%. A. G. Grindell
-57. J. M. Baker 104. R. H. Guymon
-58. 8. J. Ball 105. J. Halperin
-59, H. F. Bauman 106. B. A. Hannaford
+56. C. F. Baes 103, A. G. Grindell
+57. J. M. Baker 104k. R. H. Guymon
+58, 8. J. Ball 105. J. Halperin
+59. H. F. Bauman 106. B. A. Hannaford
 60. S. E. Beall 107. P. H. Harley
 61. M. Bender 108. D. G. Harman
-62. E. S. Bettis 109. C. S. Harrill
-63, F. F. Blankenship 110. P. N. Haubenreich
-64. R. E. Blanco 111. F. A. Heddleson
+62, E. S. Bettis 109. C. S. Harriil
+6%, F. F. Blankenship 110. P. N. Haubenreich
+6L4. R. E. Blanco 111. F. A. Heddleson
 65. J. 0. Blomeke 112, P. G. Herndon
-66. R. Blumberg 113. J. R. Hightower
+€6. R. Blumberg 113. J. R. Hightower
 67. E. G. Bohlmann 114. H. W. Hoffman
-68. ¢C. J. Borkowski 115. R. W. Horton
-69. G. E. Boyd 116, T. L. Hudson
+68. ¢. J. Borkowski 115. R. W. Horton
+69. G. E. Boyd 116. T. L. Hudson
 70. J. Braunstein 117. H. Inouye
-71. M. A. Bredig 118. W. HE. Jordan
-72. R. B. Briggs 119. P. R. Kasten
+7l. M. A. Bredig 118, W. H. Jordan
+72. R. B. Briggs 118. P. R. Kasten
 73. H. R. Bronstein 120. R. J. Kedl
-74. G. D. Brunton 121. M. T. Kelley
-75. D. A. Canonico 122, M. J. Kelly
-76. 8. Cantor 123. C. R. Kennedy
-77. W. L. Carter 12k, T. W. Kerlin
-78. G. I. Cathers 125. H. T. Kerr
+T4, G. D. Brunton 121, M. 7. Kelley
+75. D. A, Canonico 122, M. J. Kelly
+76. 8. Cantor 123, C. R. Kennedy
+77. W. L. Carter 124, T. W. Kerlin
+78. G. I. Cathers 125, H. T. Kerr
 79. J. M. Chandler 126. 8. 8. Kirslis
-80. E. L. Compere 127. A. I. Krakoviak
-81. W. H. Cook 128. J. W. Krewson
-82. L. T. Corbin 129. C. E. Lamb
+80. E. L. Compere 1l27. A. I. Krakoviak
+8l. W. H. Cook 128. J. W. Krewson
+82, L. T. Corbin 129, C. E. Lamb
 83. J. L. Crowley 130. J. A. Lane
-84, TF. L. Culler 131. R. B. Lindauer
-8. J. M. Dale 132, A. P. Litman
-8. D. G. Davis 13%, M. I. Lundin
+8. F. L. Culler 131. R. B. Lindauer
+8. J. M. Dale 132. A, P. Litman
+&6. D. G. Davis 133, M. I. Lundin
 87. G. de Saussure 134, R. N. Lyon
-88. 8. J. Ditto 135. R. L. Macklin
-89. A. S. Dworkin 1%6. H. G. MacPherson
-90. J. R. Engel 137. R. E. MacPherson
-91. E. P. Bpler 1238. FP. C. Malenschein
-92, D. E. Ferguson 139, C. D. Martin
-9%. L. M. Ferris 140. CC. E. Mathews
-ok, J. L. Fowler 141. R. W. McClung
-95. A. P. Fraas lke, H. E. McCoy
- 
+88. 8. J. Ditto 135, R. L. Macklin
+8. A. S. Dworkin 1%. H. G. MacPherson
+90. J. R. Engel ' 137. R. E. MacPherson
+9l. E. P. BEpler 138, F. C. Maienschein
+92. D. E. Ferguson 139, C. D. Martin
+93, L. M. Ferris 140. C. E. Mathews
+o, J. L. Fowler 141. R. W. McClung
+________ 05. A, P. Fraas 1h2, H. E. McCoy
+
+R
+143,
+1hk,
+145,
+146,
+17,
+148,
+149,
+150.
+151,
+152.
+153,
+154-168,
+169.
+170.
+171.
+172.
+173.
+17k,
+175,
+176,
+177.
+1i78.
+179.
+1.80.
+181.
+182.
+183,
+184,
+185,
+
+227322l ,
+205,
+D06,
+227,
+008,
+
+229-243%,
+2k,
+
+oh5 =246,
+247,
+248,
+
+2LG=-063,
+26k,
+
+265-266.,
 
  
 
-143, H. C. McCurdy 186. 0. L. Smith
-14h, H. F. McDuffie 187. P. G. Smith
-145. C. K. McGlothlan 188. W. F. Spencer
-146, C. J. McHargue 189. I. Spiewak
-147. L. E. McNeese 190. R. C. Steffy
-148. A. 8. Meyer 191. H. H. Stone
-149. R. L. Moore 192. J. R. Tallackson
-150. J. P. Nichols 19%. E. H. Taylor
-151. E. L. Nicholson 194. R. E. Thoma
-152. L. C. Qakes 195. J. S. Watson
-153. P. Patriarca 196. C. F. Weaver
-154-168. A. M. Perry 197. B. H. Webster
-169. E. B. Piper 1908. A. M. Weinberg
-170. B. E. Prince 199. J. R. Weir
-171. J. L. Redford 200. W. J. Werner
-172. MM. Richardson 20L. K. W. West
-173. R. C. Robertson 202. L. W. Weston
-174. H. C. Roller 203. M. E. Whatley
-175. H. C. Savage 204. J. C. White
-176. C. E. Schilling 205. L. V. Wilson
-177. Dunlap Scott 206. G. Young
-178. H. E. Seagren 207. H. C. Young
-179. W. F. Schaffer 208-209. Central Research Library
-180. J. H. Shaffer 210-211. Y-12 Document Reference
-181. M. J. Skinner Section
-182, G. M. Slaughter 212-221, Laboratory Records Department
-183, A. N. Smith 222. Laboratory Records Department,
-184. F. J. Smith LRD-RC
-185. G. P. Smith
+H. C. McCurdy 18. 0. L. Smith
+H. F. McDuffie 187. P. G. Smith
+C. K. McGlothlan 188, W. F. Spencer
+C. J. McHargue 189, I. Spiewak
+L. E. McNeese 120. R. C. Steffy
+A. B, Meyer 161. H. H. Stone
+R. L. Moore 192. J. R. Tallackson
+J. P. Nichols 193. E. H. Taylor
+B. L. Nicholson 194, R. E. Thoma
+.. C. Qakes 195, J. S. Watson
+P. Patriarca 196. C. F. Weaver
+A, M. Perry 197. B. H. Webster
+E. B. Piper 198, A. M. Weinberg
+B. E. Prince 199. J. R. Weir
+J. L. Redford 200, W. J. Werner
+M. Richardson 20L. X. W. West
+R. C. Robertscn 202. L. W. Weston
+H. C. Roller 203, M. E. Whatley
+H. C. Savage 204, J. C. Waite
+C. E. Schilling 205. L. V. Wilson
+Dunlap Scott 206. G. Young
+H. E. Seagren 207, H. C. Young
+W. F. Schaffer 206-209. Central Research Library
+J. E. Shaffer 210-211. 7Y-12 Document Reference
+M. J. Skinner Section
+G. M. Slaughter 212-221., Laboratory Records Department
+A, X, Smith 222. Laboratory Records Department,
+F. J. Smith LRD~RC
+G. P. Smith
 External Distribution
-223-224, D. F. Cope, RDT-OSR
-225. A. Gismbussc, AEC-Washington
-226. R. E. Heineman, Pacific Northwest Laboratory, Richland, Washington
-227. W. J. Larkin, AEC, ORO
-228. C. L. Matthews, AEC, ORO
-229-243, T. W. McIntesh, AEC-Washington
+D. F. Cope, RDT-CSR
+A, Gismbusso, AEC-Washington
+R. E. Heineman, Pacific Northwest Laboratory, Richland, Washington
+W. J. Larkin, AEC, ORO
+C. L. Matthews, AEC, QRO
+T. W. McIntosh, AEC-Washington
+H. M. Roth, AEC, CRC
+Milton Shaw, AEC-Washington
+W. L. Smalley, AEC, ORO
 
-okh, H. M. Roth, AEC, ORO
-245-246, Milton Shaw, AEC-Washington
-247. W. L. Smalley, AEC, ORO
-248. R. F. Sweek, AEC-Washington
-249-263, Division of Technical Information Extension (DTIE)
-26k, Research and Development Division, ORO
-265-266. Reactor Division, ORO
+R. F. bweek, AEC-Washington
 
- 
+Division of Technical Informaticn Extension (DTIE)
+Research and Development Division, ORO
+
+Reacteor Division, ORO
  
 
  

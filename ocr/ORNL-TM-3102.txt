@@ -1,36 +1,33 @@
-Ex
+3% .
 
-Nf .
+ 
 
-yl
+:‘\'4__,\; -
 
-    
+   
 
-.
+" QASTER
 
 OAK RIDGE NATIONAL LABORATORY
 
-MASTER
-
 operated by
-UNION CARBIDE CORPORATION * NUCLEAR DIVISION
+UNION CARBIDE CORPORATION  NUCLEAR DIVISION
 for the
 
 U.S. ATOMIC ENERGY COMMISSION
 ORNL- TM- 3102
-
- 
 
 MSBR CONTROL STUDIES: ANALOG SIMULATION PROGRAM
 
 W. H. Sides, Jr.
 
 NOTICE This document contains information of a preliminary nature
-and was prepared primarily for internal use at the Oak Ridge National
-Laboratory. It is subject to revision or correction and therefore does
+and was prepared primarily for internal use at the Qak Ridge National
+Laboratory. 1t is subject to revision or correction and therefore does
+
 not represent a final report.
 
-UISTRIBUTION OF THIS DOCUMENT 1S UNLIMITER;
+UISTRIBUTION OF THIS DOCUMENT IS UNLIMITER;
  
 
  
@@ -39,9 +36,9 @@ This report was prepared as an account of work sponsored by the United
 States Government. Neither the United States nor the United States Atomic
 Energy Commission, nor any of their employees, nor any of their contractors,
 subcontractors, or their employees, makes any warranty, express or implied, or
-assumes any legal liability or responsibility for the accuracy, completeness or
+assumes any legal liability or responsibility for the accuracy, completaeness or
 usefulness of any information, apparatus, product or process disclosed, or
-represents that its use would not infringe privately owned rights.
+represents that its use would not infringe privately owned rights,
 
  
 
@@ -58,16 +55,16 @@ W. H. Sides, Jr.
 
  
 
-This report was prepared as sn account of work
+This report was prepared as an account of work
 sponsored by the United States Government, Neither
 the United States nor the United Staies Atomic Energy
 Commission, nor any of their employees, nor any of
 their contractors, subcontractors, or their employees,
 makes any warranty, express or implied, or assumes any
 legal liability or responsibility for the accuracy, com-
-pleteness or usefulness of any information, apparatus,
-product or process disclosed, or represents that its use
-would not infringe privately owned rights.
+pieteness or usefulness of any iaformation, apparatus,
+produci{ or process disclosed, or represents that its use
+waould not infringe privately owned rights.
 
  
 
@@ -82,25 +79,25 @@ Oak Ridge, Tennessee
 operated by
 UNION CARBIDE CORPORATION
 for the
-U.S. ATOMIC ENERGY COMMISSION
+U. 8. ATOMIC ENERGY COMMISSION
 
-SISTRIBUTION OF THIS DOCUMENT IS UNLIMITED
+SISTRIBUTION OF THIS DOCUMENT IS UNIJMIT}EP
 iii
 
 CONTENTS
 
-LC IntrOdUCHION LL 1
-. Description of the Plant and Control System ........... iii 1
-. Simulation of the System ....... 7
-30 MOE] «tee ee ee 7
-3.2 System Equations and Analog Computer Program ........................... 9
-3.2.0 Reactor Core ote 9
+CIErOdUCION . . e e e e 1
+. Description of the Plant and Control System . ......... ... .. . . i, 1
+. Simulation of the SysStem .. .. ... e e 7
+B MoOdEl .o e e e 7
+3.2 System Equations and Analog Computer Program ............ ... ... .. ... L. 9
+320 Reactor Core ..o i e e 9
 
-3.2.2 Primary Heat Exchanger... ........ oie 15
+3.2.2 Primary Heat Exchanger ... ....... ... ... ... .. . ... e 15
 
-3.2.3 Steam Generator ..... oot intuit 19
+3.2.3 Steam Generator ..o v ittt c e ettt et e e e e e 19
 
-3.2.4 Control SYStemM ott ee ee 25
+324 Control SYstem . ..ottt e e e 25
 MSBR CONTROL STUDIES: ANALOG SIMULATION PROGRAM
 
 W. H. Sides, Jr.
@@ -110,7 +107,7 @@ ABSTRACT
 This report describes the mathematical model and analog computer program which were used in
 the preliminary study of the dynamics and control of the 1000-MW(e) single-fluid Molten-Salt Breeder
 Reactor. The results and conclusions of the study were reported earlier in Control Studies of a
-1000-Mw(e) MSBR, ORNL-TM-2927 (May 18, 1970), by W. H. Sides, Jr.
+1000-Mwfe) MSBR, ORNL-TM-2927 (May 18, 1970), by W. H. Sides, Ir.
 
  
 
@@ -127,7 +124,7 @@ For the purposes of the analysis, the MSBR plant consisted of a graphite-moderat
 (secondary salt), a shell-and-tube supercritical steam generator, and a possible control system. The analog
 simulation of the plant consisted of a lumped-parameter heat transfer model for the core, primary heat
 exchanger, and steam generator; a two-delayed-neutron-group model of the circulating-fuel nuclear kinetics
-with temperature reactivity feedbacks; and the external control system.
+with temperature reactivity feedbacks; and the external control system,
 
 The simulation was carried out on the ORNL Reactor Controls Department analog computer. So that
 the model would have the maximum dynamic range, the system differential equations were not linearized,
@@ -143,11 +140,11 @@ graphite-moderated molten-salt reactor, 4 shell-and-tube primary heat exchangers
 supercritical steam generators (Fig. 1). The reactor core contained two zones: a central zone, a cylinder
 ~14.4 ft in diameter and ~13 ft high with a primary-salt volume fraction of 0.132; and an outer zone, an
 annular region ~1.25 ft thick and the same height as the central zone. The salt volume fraction in this
-region was 0.37. The primary salt, bearing >23U and 232 Th, flowed upward through the graphite core in a
+region was 0.37. The primary salt, bearing 2?3U and 232 Th, flowed upward through the graphite core in a
 single pass and then to the tube side of one of four vertical single-pass primary heat exchangers, each ~19 ft
 long, 5 ft in diameter, and constructed of Hastelloy N. The salt flow rate at design point was 9.48 X 107
-lb/hr. The design-point temperature of the salt entering the core was 1050°F and that at the core outlet was
-1300°F. The liquidus temperature of this salt was approximately 930°F.
+Ib/hr. The design-point temperature of the salt entering the core was 1050°F and that at the core outlet was
+1300°F. The liquidus temperature of this salt was approximately 930°F,
 
 The heat generated in the primary salt in the core was transferred from the tube side of the primary
 heat exchangers to a countercurrent secondary salt passing through the shell side. This salt flowed in a
@@ -155,72 +152,92 @@ closed secondary loop to one of four horizontal supercritical steam generators. 
 
  
 
-lw. H. Sides, Jr., Control Studies of a 1000-Mw (ej MSBR, ORNL-TM-2927 (May 18, 1970).
-ORNL-DWG 70-8883
+1w, H. Sides, Jr., Control Studies of a 1000-Mw(fe) MSBR, ORNL-TM-2927 (May 18, 1970).
+PRIMARY
+
+ 
+
+ 
+
+SALT PUMP
+(4)
+n""
+REACTOR
+VESSEL=a|
+= | EVEL CONTROL®
+9.48 X107 Ib/hr
+at 1300°F
+PRIMARY
+GRAPHITE HEAT EXCHANGER
+MODERATOR—" (4)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+9.48 X 10" Ib/hr at 1050°F
+
+Fig. 1. Flow Diagram of MSBR Plant,
+
+ORNL-DVWG 70-8883
 
    
  
     
-  
-
-PRIMARY SECONDARY
-
+ 
+    
  
 
- 
+SECONDARY
+SALT PUMP
 
- 
+(4)
 
- 
+1X 10" Ib/hr STEAM ai 1000°F
 
- 
+— i — . i ety . —— . i o o
 
- 
+l96X10° 1o/hr .
+5X10° b/ hr
 
- 
+712 X10" 1b/br at 1150°F
 
- 
+6.16 X 10" Ib/hr at 1150°F
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-SALT PUMP SALT PUMP
-(4) 4)
-Gg
-REACTOR (— X10 Io/hr STEAM at 1000°F_ __
-VESSEL] 1X10’ Ib/hr FEED WATER at 700°F _
-= LEVEL CONTROL 5X10°1b/ hr -
-9.48 X10" Ib/hr REHEAT STEAM at 1000°F
-at 1300°F
-712 X10" Ib/hr at 1150°F
-PRIMARY
-GRAPHITE be HEAT EXCHANGER 6.16 X10” Ib/hr at 1150°F
-MODERATOR—"T (4)
 REHEATER
-850°F STEAM GENERATOR @)
+850°F STEAM GENERATOR
 
  
 
  
 
-T= 9.48 X10" Ib/hr_at 1050°F (16)
+19 @)
 
 REHEAT STEAM at 650°F
 
@@ -228,10 +245,16 @@ REHEAT STEAM at 650°F
 
  
 
-Fig. 1. Flow Diagram of MSBR Plant. The quantities shown are totals for the entire plant.
+ 
+
+The quantities shown are totals for the entire plant.
 ORNL DWG. 71-3380
 
-Poemano
++ PDEMAND
+
+ROD T (1000°F)
+DRIVE Y Mset
+SERVO
 
  
 
@@ -255,7 +278,7 @@ Poemano
 
  
 
-+ Twa, {1000°F)
+  
 
  
 
@@ -269,34 +292,7 @@ Poemano
 
  
 
-Twa
-Fo Jw
-
-.
-P, ) PRIMARY F, STEAM
-HEAT GENERATOR
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
+&
 
  
 
@@ -326,7 +322,8 @@ HEAT GENERATOR
 
  
 
- 
+P, /D PRIMARY ., STEAM
+HEAT GENERATOR j
 
  
 
@@ -350,18 +347,32 @@ HEAT GENERATOR
 
  
 
-EXCHANGER Z pec
-REACTOR 2
-Tc Fa
-Ti «
-ri <
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+EXCHANGER — Bec
+REACTOR % °F
+- 3
+Tei
+l ri < I
 700°F
 
 Fig. 2. Simulation Model of Plant and Control System.
 
 one for each primary heat exchanger, were independent of each other, with each loop supplying heat to
 four steam generators. Thus there was a total of 16 steam generators in the plant. The design-point flow
-rate of secondary salt in each loop was 1.78 X 107 lb/hr. At the design point the secondary-salt cold-leg
+rate of secondary salt in each loop was 1.78 X 107 Ib/hr. At the design point the secondary-salt cold-leg
 temperature was 850°F, and the hot-leg temperature was 1150°F. The liquidus temperature of this salt was
 ~725°F.
 
@@ -383,14 +394,14 @@ chosen because of the relatively tight coupling which existed between steam temp
 flow rate. The measured steam temperature was compared with its set point of 1000°F, and any error
 caused the secondary-salt flow rate to change at a rate proportional to the error if the error was 2°F or less.
 If the error was greater than 2°F, the rate of change of the secondary-salt flow rate was limited to its rate of
-change for a 2°F error, which was approximately 11%j/min.
+change for a 2°F error, which was approximately 11%/min.
 
  
 
-2 General Engineering Division Design Analysis Section, Design Study of a Heat Exchange System for One MSBR
+2General Engineering Division Design Analysis Section, Design Study of a Heat Exchange System for One MSBR
 Concept, ORNL-TM-1545 (September 1967).
 
-31.R. Tallackson, MSRE Design and Operations Report, Part IIA: Nuclear and Process Instrumentation, ORNL-TM-729
+31 R, Tallackson, MSRE Design and Operations Report, Part IIA: Nuclear and Process Instrumentation, ORNL-TM-729
 (February 1968).
 To control the reactor outlet temperature, an external plant-load demand signal was used to obtain a
 reactor outlet temperature set point. The outlet temperature set point was a linear function of load
@@ -402,8 +413,8 @@ function of inlet temperature during a transient and thus a function of dynamic 
 of reactor power (from neutron flux) was compared with the reactor power set point, and any error was fed
 to the control rod servo for appropriate reactivity adjustment. Under normal conditions, the control rod
 servo added or removed reactivity at a rate proportional to the reactor power error if the error was 1% or
-less. If the error was greater than 1%, the addition or removal rate was limited to the rate for a 1% error,
-which was about 0.01%/sec. The maximum magnitude of reactivity that the simulation allowed was 1%.
+less. If the error was greater than 1%, the addition or removal rate was limited to the rate fora 1% error,
+which was about 0.01%/sec. The maximum magnitude of reactivity that the simulation allowed was £1%.
 
 The physical constants used in this simulation are summarized in Table 1. The various system volumes,
 masses, flow rates, etc., calculated from the constants are listed in Table 2.
@@ -421,25 +432,19 @@ Properties of Materials
 
  
 
- 
-
- 
-
- 
-
-Cp 0 k
-[Btulb™! °F) (Ib/ft3) [Btu hr! °F)! ft71}
+Cp p k
+[Btulb ™! (°F)7!] (b/ft3) {Btu hr ™! (°F)~! ft 1)
 Primary salt 0.324 207.8 at 1175°F
 Secondary salt 0.360 117 at 1000°F
 Steam
-726°F 6.08 22.7
-750°F 6.59 11.4
+726°F 6.08 227
+750°F 6.59 114
 850°F 1.67 6.78
 1000°F 1.11 5.03
 Hastelloy N
-1000°F 0.115 548 9.39
-1175°F 0.129 11.6
-Graphite 0.42 115
+1600°F 0.115 548 9.39
+1175°F 0.129 il1.6
+Graphite 042 115
 Reactor Core
 Central Zone Outer Zone
 Diameter, ft 144 16.9
@@ -447,24 +452,41 @@ Height, ft 13 13
 Salt volume fraction 0.132 0.37
 Fuel 233y
 Graphite-to-salt heat transfer coefficient, 1065
-Btu hr! ft72 (°F)!
-Temperature coefficients of reactivity, (°F)!
-Primary salt -1.333X1075
-Graphite +1.056 X 1075
-Thermal-neutron lifetime, sec 3.6 Xx107%
-Delayed neutron constants, 8 = 0.00264
-i Bi A; (sec™!)
+Btuhr7! ft72 (°F)~!
+Temperature coefficients of reactivity, (°F)~!
+Primary salt -1.333 X 1075
+Graphite +1.056 X 1073
+Thermal-neutron lifetime, sec 3.6 X107
+Delayed neutron constants, g = 0.00264
+i B; A; (sec™!)
 1 0.00102 0.02446
-2 0.00162 0.2245
+2
+
+0.00162 0.2245
+
+ 
+
 Heat Exchangers
+
+ 
+
+ 
+
+ 
+
 Primary
 Heat Steam Generator
 Exchanger
+
 Length, ft 18.7
+
 Triangular tube pitch, in. 0.75 0.875
+
 Tube OD, in. 0.375 0.50
+
 Wall thickness, in. 0.035 0.077
-Heat transfer coefficients, Btu hr! ft ~2 (°F)! Steam Qutlet  Feedwater Inlet
+
+Heat transfer coefficients, Btu hr ™! ft =2 (°F)~1 Steam Qutlet  Feedwater Inlet
 Tube-side fluid film 3500 3590 6400
 Tube-wall conductance 3963 1224
 Shell-side fluid film 2130 1316
@@ -480,7 +502,7 @@ Primary-salt flow rate, Ib/hr
 
 Steady-state reactivity, pg
 
-External loop transit time of primary salt, sec
+Externatl loop transit time of primary salt, sec
 
 Heat generation, MW(t)
 
@@ -492,9 +514,9 @@ Graphite volume, ft3
 
 Primary salt mass, Ib
 
-Graphite mass, 1b
+Graphite mass, b
 
-Number of graphite elements
+Number of graphite clements
 Heat transfer area, ft?
 
 Average primary-salt velocity, fps
@@ -502,7 +524,7 @@ Core transit time of primary salt, sec
 
 Reactor Core
 
-7.68 X 10% [2250 MW(t)]
+7.68 X 107 [2250 MW(t)]
 9.48 x 107
 
 0.00140
@@ -527,11 +549,11 @@ Primary Heat Exchanger
 
 Total for each of four exchanges, tube region only
 
-Secondary-salt flow rate, Ib/hr
+Secondary-salt flow rate, ib/hr
 Number of tubes
 Heat transfer area, ft?
 
-Overall heat transfer coefficient, Btu hr! ft 72 (°F)!
+Overall heat transfer coefficient, Btu hr™! ft =2 (°F)~!
 
 Tube metal volume, ft3
 Tube metal mass, 1b
@@ -543,6 +565,8 @@ Transit time, sec
 
 Primary Salt (Tube Side)
 
+Steam Generator
+
 1.78 x 107
 6020
 11,050
@@ -552,7 +576,7 @@ Primary Salt (Tube Side)
 
 16,020
 
-Zone II
+Zone 11
 
 420
 0.37
@@ -572,8 +596,6 @@ Secondary Salt (Shell Side)
 
  
 
-Steam Generator
-
 57
 11,870
 10.4
@@ -581,23 +603,23 @@ Steam Generator
 
 Total for each of 16 steam generators, tube region only
 
-Steam flow rate, Ib/hr
+Steam flow rate, 1b/hr
 Number of tubes
 
-Heat transfer area, ft?
+Heat transfer area, ft2
 Tube metal volume, ft3
-Tube metal mass, 1b
+Tube metal mass, lb
 
 Volume, ft3
 
-Mass, Ib
+Mass, 1b
 
 Transit time, sec
 Average velocity, fps
 
 Steam (Tube Side)
 
-7.38 X 10°
+7.38 X 103
 434
 
 4102
@@ -606,19 +628,21 @@ Steam (Tube Side)
 
 12,203
 
-20
-
-235
-
-1.15
-~62.8
-
 295
 34,428
 2.68
 6.97
 
 Secondary Salt (Shell Side)
+
+ 
+
+20
+
+235
+
+1.15
+~62.8
 
 102
 11,873
@@ -643,17 +667,17 @@ The mass flow rate of the primary salt in the two zones of the core was determin
 generation rate in each zone, so that the temperature rise of the primary salt in the two zones was equal.
 Thus, 81.4% of the flow passed through the central zone and 18.6% through the outer zone.
 
-A two-delayed-neutron-group approximation of the circulating-fuel nuclear kinetics equations® was
-used in the model. This allowed the delayed-neutron precursor concentration term Cit — 7, ) (see Sect.
+A two-delayed-neutron-group approximation of the circulating-fuel nuclear kinetics equations* was
+used in the model. This allowed the delayed-neutron precursor concentration term C/(t — 7, ) (see Sect.
 3.2.1) to be simulated directly with two of four available transport lag devices. The delayed-neutron
-fraction for 233U was 0.00264, and the prompt-neutron generation time was 0.36 msec. The coefficient of
-reactivity for the primary salt was —1.33 X 1075 8k/k per °F, which was divided equally among the six
-primary-salt lumps of the core model. The temperature coefficient for the graphite was +1.06 X 107° 8k/k
+fraction for 232U was 0.00264, and the prompt-neutron generation time was 0.36 msec. The coefficient of
+reactivity for the primary salt was —1.33 X 107° 8k/k per °F, which was divided equally among the six
+primary-salt lumps of the core model. The temperature coefficient for the graphite was +1.06 X 107° §k/k
 per °F, which was divided equally among the three graphite lumps.
 
 The model was designed to accommodate a variable flow rate of the primary salt as well as the
 secondary salt and steam. The required variations of film heat transfer coefficients with the various salt and
-steam flow rates were included.’ The film coefficient for secondary salt on the shell side of the primary
+steam flow rates were included.” The film coefficient for secondary salt on the shell side of the primary
 heat exchanger and steam generator was proportional to the 0.6 power of the flow rate. The film
 coefficient for steam on the tube side of the steam generators was assumed to be proportional to the 0.8
 power of the flow rate. The variation of the film coefficient in the reactor core and on the tube (primary
@@ -669,18 +693,47 @@ generator.
 
 The secondary salt in the steam generator was axially divided into four lumps of equal mass, as in the
 primary heat exchanger. The steam on the tube side was likewise divided into four equal lumps spatially,
-but of unequal mass. Under design conditions the supercritical steam density varied from 34 Ib/ft® at the
-feedwater inlet to 5 Ib/ft> at the steam outlet.’ The density of the steam in the lump nearest the feedwater
+but of unequal mass. Under design conditions the supercritical steam density varied from 34 Ib/ft* at the
+feedwater inlet to 5 1b/ft® at the steam outlet.® The density of the steam in the lump nearest the feedwater
 entrance was taken as the average density in the quarter of the steam generator represented by that lump,
-or 22.7 Ib/ft>. The densities of the remaining three steam lumps were determined in a similar manner. The
+or 22.7 Ib/ft?. The densities of the remaining three steam lumps were determined in a similar manner. The
 
  
 
-45. MacPhee, “The Kinetics of Circulating Fuel Reactors,” Nucl. Sci. Eng. 4,588-97 (1958).
-$Private communication from H. A. McLain, ORNL.
+#J. MacPhee, “The Kinetics of Circulating Fuel Reactors,” Nucl. Sci. Eng. 4, 588-97 (1958).
+>Private communication from H. A. McLain, ORNL.
 SPrivate communication from T. W. Pickel, ORNL.
-<¢ OF CORE Th
+¢ OF CORE T
 
+Tro S— Tss
+A
+
+  
+
+Bl
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
  
 
  
@@ -867,42 +920,36 @@ SPrivate communication from T. W. Pickel, ORNL.
 
  
 
-Tro cr Tsa ~~
-- - )
-] | CL A =A !
-ZONE I CU zone Ek r Ny [ TL
-pri salt] | | [PRISALT SEC SALT] + [sec sar
-! Tpa | Tr | Ts Tss RN
-| ‘ | . AN 1073 | \
-1 GRAPHITE PRISALT| | § TUBE i \
-Tg M Tps | | Tis \
-[Pri SALT | |PRI SALT NSEC sal] | | |sEC SALT
-| NY Tes i Tps Tss |] Tse
-1 ! ! 996
+|
+---------- — - e e = —— -——)f————_— e, ——e— r— ey e | e . sttt
+ZONE T T ZONE TT i T | [
+i PRE SALT| | ' ! PRITSALT SECTSALT ‘ i SECTSALT
+- Toa | | | PN se | ss N
+| . \ ! \\ | i 1073 |\
+| GRAPHITE | PRISALT| | | 4 TUBE r | N
+] T '\ | Tps i i Tt M | l
+| ™\ |PRi sALT | : | {PRI SALT Nsec sauf | | |sec saLt
+| N Tes i | ! Tpe Ts 3 | I Tsg
+! ! ' 996
 GRAPHITE !
-| Tgs (7, ¥ | | (FY
-‘ | :
-PRI SALT | PRI SALT SEC SALT]! |! SEC SALT
-Tpe | 1 , Tpe MN Ts, | | Tsy N
-: 923 \
-| GRAPHITE — Ny Tue | | \
-LEN | wo te Lo
-| NC |PRESALT] | | [PRI saLT Nees || | [sec saLT
-| 4) Tp ' A ! | Tri Ts Tss
-t | | 1 . 850
-L ———————— —b— Jd ee —— SE J of
-\
-| To t T Ba T
-rt ¢ S8
+! I (i N
+I - | '
+i PRI SALT | i I PRI SALT sscsmi l SEC SALT
+1 Tpa [ \ : ' Tpe N Ts» , ! Tst N
+I PHIT ‘ | | “«| TUBE | | N
+. [GRAPHITE [ PRI SALT] , \ | !
+! Tg2 \\ i Tos ! | Ttz M ! |
+| N PRESAT] | | | [PRISALT e saT || | [SEC sALT
+I 4 TPT ' A ' { Tri T l i Tss
+1 I ! ! 1 \ 850
+I_ _________ — _-J [ —_ — I
+| Yy “ I_T._.l Y
+it} - 2
+| T . W
 REACTOR CORE PRIMARY HEAT EXCHANGER STEAM
 
 Fig. 3. Lumped-Parameter Model of MSBR Plant.
-ORNL DWG. 71-3378
-1.0 - Pr
-
-/
-
-/
+ORNL DWG, 71-3378
 
  
 
@@ -910,18 +957,11 @@ Fig. 3. Lumped-Parameter Model of MSBR Plant.
 
  
 
-0.8
+ 
 
  
 
-a
-
-/ \1-PRIMARY
-HEAT EXCHANGER
-
  
-
-0.6
 
  
 
@@ -929,55 +969,100 @@ HEAT EXCHANGER
 
  
 
-TO THAT AT DESIGN FLOW
+7
+///
+L
 
-o ~
+ 
 
-0.2 w
+ 
 
-/
-— 7
+1.0 : >
+[N /
+o
+
+S 0.8 - /
+2 //
+L
+
+o Vi
+
+< £ //
+
+=y /
+
+w = 0,6 7
+
+S 2 CORE /
+
+=
+
+S e / /" M-PRIMARY
+oo / HEAT EXCHANGER
+w T 04 /
+
+L. I .
+
+vy //
+
+= O
+
+=" /
+
+'—-
+
+'—..
+
+=L
+
+[T
+
+xr
+
+| .
+
+o
+
+o
+
+'—
+
+L
+
+o
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
 
 0 0.2 0.4 0.6 0.8 1.0
-RATIO OF REDUCED FLOW RATE TO DESIGN FLOW RATE
-
- 
-
- 
-
- 
-
-RATIO OF HEAT TRANSFER COEF FICIENT AT REDUCED FLOW
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
+RATIC OF REDUCED FLOW RATE TO DESIGN FLOW RATE
 
 Fig. 4. Variation of Film Heat Transfer Coefficient with Primary-Salt Flow Rate in the Reactor Core and Primary
 Heat Exchanger.
@@ -986,7 +1071,6 @@ axial temperature distribution in the steam was nonlinear also and was determine
 design-point temperatures in each half of the steam generator. The specific heat of each lump was
 calculated from the enthalpy and temperature distributions. In the model, these resulting design-point
 values of density and specific heat were assumed to remain constant during part-load steady-state
-
 conditions and during all transients.
 
 3.2 System Equations and Analog Computer Program
@@ -995,213 +1079,283 @@ The spatially lumped parameter model used to describe the plant heat transfer sy
 Fig. 3.
 3.2.1 Reactor Core. In the graphite the heat transfer equation was:
 
-dTy;
-8! ~ (T.. —T.. .
-Myi Cog dr hie AgiTy — Toi) + hegi Fr M
+T
+
+Myi Cpg dt
+
+=hfg Agl(Tp — Tgi)+kgiPr > (1)
+
 where
-T,; = temperature of graphite lump 7,
-T,, = temperature of primary salt lump to which heat is being transferred,
-My =Mg, = mass of graphite lump in core zone I,
-Mg 3 = mass of graphite lump in core zone II,
-Cog = specific heat of graphite,
+Ty; = temperature of graphite lump i,
+
+T, = temperature of primary salt lump to which heat is being transferred,
+
+Mgy =M, =mass of graphite lump in core zone I,
+
+M, 3 = mass of graphite lump in core zone I,
+
+Cpg = specific heat of graphite,
 10
 
-hee = graphite-to-primary-salt heat transfer coefficient,
+hfg = graphite-to-primary-salt heat transfer coefficient,
 
-Ag1 =Agy = heat transfer area of lump in zone I,
+Agy = Agy = heat transfer area of lump in zone I,
+Ag3 = heat transfer area of lump in zone II,
+kg; = fraction of fission heat generated in graphite lump 7,
 
-Ags = heat transfer area of lump in zone II,
-kg; = fraction of fission heat generated in graphite lump i,
 P, = reactor heat generation rate.
 
 In the primary salt:
 
-dT;
-My; Cor =fFy Cu(Tyi_1 — Tp) + hg Api(Ty — Tp) + kp; Py, 2)
-
+dT,;
+Mpi Cpf'?;ﬂ =fF1 Cp]‘{Tpi-—l — Tpt) + hfg Api(Tg — Tpl) + kpiPr s (2)
 where
+Tpl- = temperature of primary-salt lump i,
+Mpy =My =Mpy3 = My, = mass of primary-salt lump in core zone I,
 
-Ty; = temperature of primary-salt lump /,
-Mp1 =Mpy =My,3 =M, 4 = mass of primary-salt lump in core zone I,
-Mps =M,¢ = mass of primary-salt lump in core zone II,
-G 7s specific heat of primary salt,
-F, = total primary-salt mass flow rate,
-f= fraction of primary-salt mass flow rate in zone I,
+Mp5 =Mp6 = mass of primary-salt lump in core zone II,
+Cp F= specific heat of primary salt,
+F, =total primary-salt mass flow rate,
+f = fraction of primary-salt mass flow rate in zone I,
+Apy =Apy =Ap3 = Ay = heat transfer area of lump in zone I,
+Aps =A,6 = heat transfer area of lump in zone II,
 
-A App =Ap3 = Apy = heat transfer area of lump in zone I,
+kp ; = fraction of fission heat generated in primary-salt lump /.
 
-pl =~
-Aps =Ape = heat transfer area of lump in zone II,
+The reactor outlet temperature T, , was given by:
 
-kp ; = fraction of fission heat generated in primary-salt lump i.
+TFO:pr4+(1_f)Tp6‘ (3)
+The heat transfer coefficient hg, varied with the primary-salt mass flow rate, as follows:
 
-The reactor outlet temperature T,, was given by:
+hg = hrgo Mg s
 
-Too =/Tpy + (1 =) Tp (3)
-The heat transfer coefficient hig varied with the primary-salt mass flow rate, as follows:
-
-hig = hrgo gE) »
-
-where fp, is the design-point value of the graphite-to-salt heat transfer coefficient. A diode function
-generator was used to simulate the function he (F 1), which is shown in Fig. 4 labeled “core.”
+where %z, is the design-point value of the graphite-to-salt heat transfer coefficient. A diode function
+generator was used to simulate the function s, (F', ), which is shown in Fig. 4 labeled “‘core.”
 
 The fraction of the total primary-salt mass flow rate that passed through zone I (and the fraction of the
 total heat generated in zone I) was given in Sect. 3.1 as 0.814. The fraction of heat generated in the primary
 salt as compared with the graphite in both zones was 91.9% in the salt and 8.1% in the graphite. Thus in
 zone II,
 
-ke3 =0.186 X 0.081 = 0.0151, 4)
+kg3 =0.186 X 0.081 =0.0151, 4)
 and
 
-kps =kpg = 0.186 X 0.919 X 0.5 = 0.0857 . (5)
+kys =k, =0.186 X 0.919 X 0.5 =0.0857 . (5)
 11
 
 In zone |,
-
-kg =kgy =0.814X 0.081X 0.5 =0.0329 . (6)
+kg1 = kg2 =0.814 X 0.081 X 0.5=0.0329. (6)
 
 The axial distribution of the reactor heat generation rate in the primary salt in core zone I was assumed to
 be a chopped cosine distribution with an extrapolation distance of 8 ft. Then, in the primary salt in zone I,
 
-0.3887 /f0.57
-=k, =0.814X 091 i a /} i ) x S
-kp1 =kps =0 off 02 sin x dx Jr sinx dx) X 0 0)
-=0.1749 ,
-05m 0.5m
-kpy =kp3 =0.814X 0919( f°" nx ax [f° sin x dx) X 0.5 8)
+0.3887 /ro.sx
+kp1 =kps =0.814 X 0919(-[0.276« sin x d’x/[o.”(m smxdx) X 0.5 (7)
+=0.1749,
+0.5 0.5
+kyy =kp3 =0.814 X 0919(-[0.38817 s1nxdx/[‘0'2761r smxdx) X 0.5 (8)
 =0.1992.
 
 The constant coefficients in the equations were calculated using Tables 1 and 2. Thus in Eq. (1),
 
  
 
-Rigo Ag1 1065 Btu X 15,039 ft? X 1b-°F X hr ©)
-Mei Cog hr-ft2-°FX 1.06 X 10% 1b X 0.42 Btu X 3600 sec
-= 0.0998 sec! ,
-where hz, = design-point primary-salt-to-graphite heat transfer coefficient, and
-kei Pro _ 0.0329 X °F X 7.68 X 10° Btu X hr (10)
+hrgo g1 _ 1065 Btu X 15,039 ft* X 1b-°F X hr ©)
+M1 Cpg  hrft?-°F X 1.06 X 10° 1b X 0.42 Btu X 3600 sec
+=0.0998 sec ! ,
+where 715, = design-point primary-salt-to-graphite heat transfer coefficient, and
+kg1 P _0.0329 X °FX 7.68 X 10° BtuX hr (10)
 
  
 
-Myy Cpe 0.4452 10° Btu X hr X 3600 sec
+My Cpy  0.4452X 10° Btu X hr X 3600 sec
 
-=1.577°F/sec ,
+=1.577°F/sec,
 
-where P, = design-point power level [2250 MW(t)]. The coefficients in the remaining graphite equations
+where P,y = design-point power level [2250 MW(t)]. The coefficients in the remaining graphite equations
 (i = 2, 3) were similarly calculated.
 For the primary-salt heat transfer equation (2) the constant coefficients are
 
-fFio_ 0814X 948X107 IbX hr
+fFio_ 0814X9.48X 107 Ib X hr
 
  
 
  
 
 11
-M,; 0.25X 58,074 1b X hr X 3600 sec (an)
-=1.476 sec",
-where F, o = design point value of primary-salt mass flow rate,
-hfe0 Apr © 8.008X 10° BtuX b-"F X hr a2)
+M, 0.25X 58,074 1b X hr X 3600 sec ()
+=1.476sec™" |
+where ', , = design point value of primary-salt mass flow rate,
+hfgo Ap1  ~ 8.008 X 10° BtuX Ib-"F X hr 12)
 
-My, Cop 1451910 X hr"F X 0.324 Btu X 3600 sec
+M,y Cpy 1451916 X hr-"F X 0324 Btu X 3600 sec
 
-=0.4729 sec”! ,
+=0.4729 sec”! |
 12
 
 and
 
-kp1 Bo 0.1749 X °F X 7.68 X 10° Btu X hr
+kp1 Pro _0.1749 X °F X 7.68 X 10° Btu X hr
 
- 
+Myy Cpr 4704 Btu X hr X 3600 sec
+
+=79.32°F/sec .
+
+The coefficients for the remaining primary-salt equations (f =
+The unscaled heat transfer equations for the core were thus
+
+dT, L
+272l _ 59998 hfg(Fl) (Tp3 — Tg1)+ 1.577—L
+
+dt PrO
+T2 = 0.0998 i (F ) (Toy - Ton)+ 157721
+
+ar OO ) gy~ Tga) + 1. By’
+T,y P
+
+—E2= 01722 by (F) (Tys — Ty3) + 1. 3”0P— :
+dT F
+
+dlzl = 1_476F_1 (T,; ~ Tp1) + 04729 hyo(F, ) (T, —
+
+10
+
+dT,
+
+Pl 476 (
+
+ar
+dT, F
+
+d?3 = 1-476F_1 (Tpa — Tp3) + 04729 hp (F ) (T —
+
+10
+
+dT, F
+
+p4 _ 1 _
+b4 1.476_FT0 (T3 — Tpa) + 04729 hpy(F) ) (T
+dT
+71;5 = 0. 1599 ( — Tys) + 02112 g, (F)) (T3
+dT
+
+p6 —
+—ps 0. 1599 ( Tpe) + 02112 hey (F ) (T3
+
+T,q =0.814T,, +0.186T,¢
+
+P
+Tp2) + 04729 hyy(F)) (Tgy = Tpy)+90.24 57,
+
+2—6) were similarly calculated.
+
+P
+T, )+7932 L
+
+ro
+
+ro
+
+P
+Tp3)+ 90.24__" |
+
+Pro
 
  
 
          
 
-My Cyr 4704 Btu X hr X 3600 sec (13)
-=79.32°F/sec .
-The coefficients for the remaining primary-salt equations (i = 2—6) were similarly calculated.
-The unscaled heat transfer equations for the core were thus
-dTy1 P
-gl _ r
-— =0.0998 hg (F)) (Tyy — Tgp) + 15775" , (14)
-9122 = 0.0998 FHT, ~T y+ 157750 (15)
-dt : fei 17 pl fg2) P,’
-dT, P,
-= = 0.1722 hg, (F |) (Ts — Tp3) + 1. 32055, (16)
-dT F Pp
-= = 1.476 (Ty; — Tp1) + 04729 hey (F,) (Ty, — Thi) + 79.32 5 , 17
-t 10 ro
-dT, Pp
-—b2- = 1 476.1 = (T p1 = Tp2) + 04729 hye (F) (Tgp — Ty) + 90.245, (18)
+PrO
+
+P
+7;5)+1836_1.,
+
+Pr()
+
+Pr
+Tps)+18.36 5,
 ro
-dT. F P
-—B = 1476 ZL (Ty; — Tp3) + 04729 hyp (F) (Ty — Tpa) + 90.2457, (19)
-10 ro
-ar F
-be = 1.476 1 (Ty3 — Tyg) + 04729 hyo (Fy) (Ty — T, 3250, (20)
-10 ro
-dT, Pp
-Spot - i= Tps) + 0.2112 hy (Fy) (Tgs — Tps) + 18.36 52, @n
-ro
-dT, p
-26 =, 1599 11 ~ (Tps = Tp) + 0.2112 hg (Fy) (Tyg = Tps) + 18.36 pT. (22)
-ro
-Tyo =0.814T,, + 0.1867, . (23)
+
+(13)
+
+(14)
+
+(15)
+
+(16)
+
+(17)
+
+(18)
+
+(19)
+
+(20)
+
+(21)
+
+(22)
+
+(23)
 
 A two-delayed-neutron-group approximation of the circulating-fuel point-kinetics equations was used
+
 for the nuclear behavior of the core. The equations were:
 
-dP, _p—8
-oT BAG +1,C, s 24)
+P, p—8
+_____P+ +
+—F = A C NGy,
+
+(24)
 13
 
  
 
-dc; _B; 1 e MTL
-
-=p \Ci——C;+ Ct—1,), (25)
-
-dt 1 1 7, i . I L
-
-p=po + Loy AT, + Bag ATy +p, , (26)
-1 1
-
+—AgT
+%%=§11P,-—7\,-C,-—-T-I;Ci+e CILC,.(tMrL), (25)
+p=p0+Eapl~ATpl-+Eagl-ATgi+pc , (26)
+1 I
 where
 
 P, = reactor heat generation rate,
 C; = modified delayed-neutron precursor concentration,
-g; = delayed-neutron fraction,
+B; = delayed-neutron fraction,
 A; = delayed-neutron precursor decay constant,
-{ = neutron generation time,
-7, = transit time of primary salt through core,
-7;, = transit time of primary salt through external loop,
+
+! = neutron generation time,
+
+T, = transit time of primary salt through core,
+
+7, = transit time of primary salt through external loop,
 p = reactivity,
+
 po = steady-state design point reactivity (associated with flowing fuel),
-ap; = temperature coefficient of reactivity of salt lump pi,
-0; = temperature coefficient of reactivity of graphite lump gi,
-AT); = variation from design-point temperature of salt lump pi,
-AT; = variation from design-point temperature of graphite lump gi,
+
+ap,; = temperature coefficient of reactivity of salt lump pi,
+
+a,; = temperature coefficient of reactivity of graphite lump g,
+AT),; = variation from design-point temperature of salt lump pi,
+AT,; = variation from design-point temperature of graphite lump £,
 p. = control rod (or other externally introduced) reactivity.
 Variation of the primary-salt flow rate through the core varies the value of the transit times 7, and 7,
 
 inversely proportional to flow rate. Provision was made in the simulation for these variations to enable
-study of transients in the primary-salt flow rate. The variation of the transit times with flow rate was given
+study of transients in the primary-salt flow rate, The variation of the transit times with flow rate was given
 
 by
 
-Te = Teco (7) 7)
+T, = Teo (Fillc)—l 27
 and
 
-TL =TLo (7) ; (28)
+T, =TLo (%)—l , (28)
 where
 
-Tp = transit time of primary salt through the core at design-point flow rate,
-T1o = transit time of primary salt through the external loop at design-point flow rate,
+T.o = transit time of primary salt through the core at design-point flow rate,
+Ty o = transit time of primary salt through the external loop at design-point flow rate,
 
-F|[F, = relative primary-salt flow rate.
+F|[F,, = relative primary-salt flow rate.
 
-The value of 7; , was as given in Table 2, and the transit time of the primary salt through the active
+The value of 7, was as given in Table 2, and the transit time of the primary salt through the active
 core was taken to be 3.57 sec (ref. 5).
 14
 
@@ -1209,42 +1363,49 @@ The negative temperature coefficient of reactivity for the primary salt was divi
 six primary-salt lumps in the core model. Similarly, the positive coefficient of the graphite was divided
 equally among the three graphite lumps.
 
-The nuclear constants for the two-delayed-neutron-group approximation for >*3U were as given in
-Table 1. The steady-state design-point reactivity po, was given by?
+The nuclear constants for the two-delayed-neutron-group approximation for 2?3U were as given in
+Table 1. The steady-state design-point reactivity p, was given by?
 
-Po =B— J Nb : (29)
-SNH) (1 —eMTLO)
+ 
+
+po=6- 5 M @9)
+SNt (/r) (1 —eMTLO)
 which yields
-5 =0.001403 . (30)
+po = 0.001403 . (30)
 
 After calculation of the various coefficients, the unscaled kinetics equations for the relative reactor
 power (neutron density) and relative delayed-neutron precursor concentrations are
 
  
 
-d(P P, c,
-dB /Fr) =2778p ~L — 7.333 P1100 SL +2336 _2 | (31)
-Tar PPro Py Cio Coo’
-d(C, /C F
-dCi/C0) _ 60630 Lr _ 0.0045 EL 02801 51 C1
-dt Pro Cio FioCio
-c (¢- 6.048
-+0.2801 = exp - oa) NN FilFie) 32)
-Fie Fi [Fy Cio
-F, C
-UG1Co0) _ 4306 Er _ 02245 2 — 0.2801 = 2
-dt Pry Cao Flo Cho
-(¢- 6.048 )
-F 1.358 2 F,/F,o
-+0.2801 |=L exp i) — Ur I0f (33)
-2 ( Fy[Fyo Cro
-p= 0.001403 — J 0.2222 AT; i, 0.3520 AT; +p, . (34)
+ 
+
+d(P,/P P P c ¢
+d Py ro Cio Ca0
+d(C,/C P F
+(€,/Cy0) _ 0.0630 -7 — 0.0245 S gagor ‘1
+dt PFO ClO 10 ¥10
+c (r 6.048 )
+F 0.1479 1\"
++0.2801 [_1 exp (_ )J Fi[Fyo (32)
+FlO FI/Fl() CIO
+p F, C
+d(Cz/C20)= 04326 —" — 0.2245 Ez_ 028011 =2
+dr P, Cro 10 C20
+6.048
+C, [t - —=——
+F 1.358 2( Fl/Flo)
++0.2801 | =L exp (- ) ’ (33)
+[Fxo ( F1/F10 ] C20
+6 3
+p =0.001403 — L 0.2222 AT, + L 03520 AT, +p, . (34)
+
 i=1 i=1
 
 The functions in brackets containing the exponentials in Eqs. (32) and (33) were generated by means of
 diode function generators.
 
-Equations (14) through (23) and (31) through (34) formed the complete ‘set for the thermal and
+Equations (14) through (23) and (31) through (34) formed the complete 'set for the thermal and
 neutronic behavior of the reactor core in this model.
 
 The system variables in these equations and in those for the primary heat exchanger, steam generator,
@@ -1253,40 +1414,39 @@ and control system given in the three following sections were scaled for the ana
 
 The allowable computer voltage range from 0 to 100 V corresponded to a temperature range from 0 to
 2000°F for all temperatures in the simulation. Therefore the computer variable representing temperature,
-Vr, corresponded to system temperature, 7, as
+V., corresponded to system temperature, 7, as
 
 T
 
-Yr=2"
+VT:Z).
 
 (35)
 
-For all flow rates the computer voltage range of 0 to 100 V corresponded to a relative flow-rate range of 0
-to 1.25. Thus, the design-point flow rate (1.0) corresponded to a computer voltage Vp of 80 V, or
+For all flow rates the computer voltage range of 0 to 100 V corresponded to a relative flow-rate range of O
+to 1.25. Thus, the design-point flow rate (1.0) corresponded to a computer voltage ¥V of 80 V, or
 
 F
-Vp=80—.
-FF, (36)
+Vp=80— .
+FUF, (36)
 
 The relative power level, P/P,, was similarly scaled. The computer variable representing power was
 
 P
-=80— .
-Vp 0p (37)
+= 80— .
+V=805 (37)
 
-The computer variables, V},, representing the relative heat transfer coefficients, 1(F), were generated using
-diode function generators with the relative flow rate Vj as the input. The computer variables were directly
+The computer variables, ¥, representing the relative heat transfer coefficients, 4(F), were generated using
+diode function generators with the relative flow rate ¥ as the input. The computer variables were directly
 proportional to the relative heat transfer coefficients such that the design-point value of A(F) corresponded
-to a computer voltage V;, of 80 V,
+to a computer voltage V;, of 80 V.
 
-The scaling for the relative delayed-neutron precursor concentration, C;/C;,, in the nuclear kinetics
-equations was similar to that for flow rate and power level. The computer variable V; was
+The scaling for the relative delayed-neutron precursor concentration, C;/C,, in the nuclear kinetics
+equations was similar to that for flow rate and power level. The computer variable ¥ ; was
 
-Voi = 30 : (38)
+Vi =80 C& . (38)
 
-1
-
-Reactivity was scaled such that the range of the computer variable V,, of 0 to 100 V corresponded to
+I
+Reactivity was scaled such that the range of the computer variable ¥, of 0 to 100 V corresponded to
 reactivity of 0 to 1.0%, or
 
 V,=10°p. (39)
@@ -1297,188 +1457,125 @@ Fig. 5.
 3.2.2 Primary Heat Exchanger. The heat transfer model of the primary heat exchanger is shown in
 Fig. 3. For the primary-salt stream:
 
-dT;
-
-M,; Cor 2 =F, Cor (Tpi—1 — T,)+ he A, (Ty; — Ty) . (40)
+dT,;
+Mp; Cpr —d% =Fy Cop (Tpiy =Tyt hpAp Ty — Ty} - 40)
 
 For the tube walls:
 
-dT;
-My; Cor =he dp (Tp; = T+ hsp Ap (Ty — Ty) (41)
-F, (80.00v = DESIGN POINT)
+dT,;
+Mti Cpt”d_tn =thp (Tpi m th)+ hsp Ap (Tsi - Tti) . (41)
+F, (80.00v* DESIGN POINT)
 
  
 
 Fig. 5. Analog Computer Program for the Heat Transfer and Nuclear Kinetics Equations for the Core.
+
+ORML WG, 77-3374
 
 91
 17
 
 For the secondary-salt stream:
 
-dT;
-My; Cps = = F, Cps (Tsi—1 = Tg) + hsp Ap (Ty; = Ty) ’ (42)
+aT;
+M Cps 7;‘1' =F, Cps (Tsi~l — Tt hsp Ap (T;; — Tsj) ; (42)
 
 where
 
-T,; = temperature of secondary-salt lump i ,
-
+T,; = temperature of secondary-salt lump 7 ,
 T,; = temperature of tube wall lump i,
-My, =M,g =M,q =M,; = mass of primary-salt lump,
+M7 =M,g =M, =M,; = mass of primary-salt lump,
 M,; =M,, = mass of tube wall lump,
-M,
+My =My =M.3 =My, = mass of secondary-salt lump,
+C,¢ = specific heat of tube wall (Hastelloy N),
+C
 
-1 = My = M3 = M4 = mass of secondary-salt Jump,
-
-Cp = specific heat of tube wall (Hastelloy N),
-Cys = specific heat of secondary salt,
+p
 F, = secondary-salt mass flow rate,
-hy = primary -salt-to-tube-wall heat transfer coefficient,
+
+¢ = specific heat of secondary salt,
+
+h¢ = primary-salt-to-tube-wall heat transfer coefficient,
 hg p= tube-wall-to-secondary-salt heat transfer coefficient,
 
-A4,= heat transfer area of primary heat exchanger lump.
+Ap, = heat transfer area of primary heat exchanger lump.
 
-Heat transfer coefficients in the above equations were calculated as follows. The term hg in Egs. (40)
+Heat transfer coefficients in the above equations were calculated as follows. The term hyin Egs. (40)
 and (41) included the film resistance inside the tube and one-half of the tube wall resistance. The other half
-of the tube wall resistance and the outside-film resistance were included in the term hyp in Egs. (41) and
+of the tube wall resistance and the outside-film resistance were included in the term hsp in Egs. (41) and
 (42). When the flow rate of the primary salt was changed, the film coefficient varied with flow, as shown in
 Fig. 4, while the tube wall conductance was maintained constant. Similarly, the film-coefficient part of the
-term hg, varied as the 0.6 power of the secondary-salt flow rate, and the tube-wall-conductance part was
+term hg,, varied as the 0.6 power of the secondary-salt flow rate, and the tube-wall-conductance part was
 constant. The calculation was performed on the analog computer by means of a diode function generator as
 
-hp = ho hp (Fy) (43)
+hp=hey he (F)) (43)
 and
-hyp = spo hsp (Fy) » (44)
+hsp = hspo hsp (F,), (44)
 
-where hg, is the design-point primary-salt-to-tube-wall heat transfer coefficient and spo is the design-point
+where Az, is the design-point primary-salt-to-tube-wall heat transfer coefficient and hspo is the design-point
 tube-wall-to-secondary-salt heat transfer coefficient. For example, from Table 1:
 
-1 05 \™
-h = 45
-fo (5% ) (45)
-=2428 Btu hr! ft °F)! .
-
+1 05 \™*
+hey = [——+ —= 45
+fo (3500 3963) (42)
+=2428 Btuhr ! ft7 (°F) 7! .
 A diode function generator performed the following calculation:
 
-1 0.5 I" 46)
+1 0.5 }"’ 46)
 
-= ——— A ——
-hE) eee 3963
+= —-—+_
+iFL) [1316G(F1) 3963
 18
 
-where G(F,) is the curve for the primary heat exchanger given in Fig. 4.
-
-and
-
-The coefficients for Eqs. (40) through (42) were calculated using Table
+where G(F, ) is the curve for the primary heat exchanger given in Fig. 4.
+The coefficients for Eqgs. (40) through (42) were calculated using Tables 1 and 2. For example, in Eq.
 (40),
 
-Flo 9.48 X 10” Ib X hr
-
  
 
-My, - 0.25 X 47,480 1b X hr X 3600 sec
-
-=2218 sec”!
-
-hg A, _ 2428 Btu X 11,050 ft? X 1b-"F X hr
-
  
-
-Mp, Cor Thre CF X 11,870 1b X 0.324 Btu X 3600 sec
-
-=1.938sec”!.
-
-dT F
-p71 = 1
-—£-=2218 Fo (To
-
-dT F
-ZTp8=90218 _L(T
-dr Fg p7
 
  
 
  
 
-dTp9 =2718 Fy
-dt Flo
-dT,
-dt
-dT; _
-ar = 3,608 he FD) (Tye
-dT, _
-dT F,
-—===0.5737—=(T. —
-dt Fy (Te
-dTs) F,
-=0.5737 == (T,
-dt Foo °F
-dT.
-
  
 
-dt ,
-
-dT,
-
-F
-
-53 = 2
-=0.5737—=
-
-737 ; (T;,
-
+Fio 9.48 X 107 Ib X hr 47
+M,; 025X 47,480 1b X hr X 3600 sec
+=2218sec™!,
+and
+heo Ay _ 2428 Btu X 11,050 ft*> X 1b-°F X hr 48)
+Mpq Cpf hr-ft*-°F X 11,870 1b X 0.324 Btu X 3600 sec
+=1.938sec”! .
 The unscaled heat transfer equations for the primary heat exchanger were
-= Tp) + 1.938 hdF) (Ty) = Tq),
-
-— Tpg) + 1.938 he Fy) (Ty - Tp7) ’
-(Tyg — Tyo) + 1.938 hp (F)) (Tyy — Tyo) ,
-
-; F
-1=2218 Fo (Tp Ty) + 1.938 hp (Fy) (Tyg — Tp),
-
-— T;1) +2495 hy, (F) (Tez — Ty)
-
-Typ ) +2495 hy, (F,) (Ty) — Tp)
-
-Typ) + 0.4159 ho, (Fy) (Tyg — Typ)
-
-— Typ) + 04159 he, (Fy) (Ty — Typ)
-
-— Ty3) + 04159 hg, (Fy) (Ty — Ty) ,
-
-F
-—_— = 0.5737 —= Tes — Toy) t 0.4159 hyp, Fy) (TH - Ti3) .
-
-2
-dr Fo
-
-s 1 and 2. For example, in Eq.
-
-(47)
-
-(48)
-
-(49)
-
-(50)
-
-(51)
-
-(52)
-
-(53)
-
-(54
-
-(55)
-
-(56)
-
-G7
-
-(58)
+dT F
+d!;7 = 2218F_1_ (TrO - Tp7) + 1.938 hf(Fl) (Tl‘l - Tp7) 3 (49)
+10
+dT, F _
+dI;S = 2_213F_1 (T — Tpg) + 1.938 he (Fy)(T;) — Tpq) (50
+10
+dT F
+—2=2218 L (Tyg ~ Tpo) + 1938 hp (Fy) (Tyy — Tpo) 1)
+10
+dT,; F
+10
+dTy 7
+7 =3.608 hf' (Fl) (Tp'] — Ttl) + 2495 hSp (F2) (TS3 — Tfl) , (53)
+dT,, 54
+L2 =3.608 hy (F)) (Tyg — Trp )+ 2495 hyy (F3) (Tyy —Tpa), (4)
+dT, F
+dst‘l = 0'5737F_2 (T, — Ty)+ 04159 hsp(F?.) (T — Tgy) s (55)
+20
+dT, F
+d;2 = 0'5737F_2 (T51 — T52) + 04159 hey (Fy) (Tyy — Tg1) s (56)
+20
+dT, F
+df = 0.5737# (Tgy — Ty3) + 04159 hy, (F) (T — Ty3) (57)
+20
+dT F
+_djf‘. =0.5737 ?i (T3 — Tgq) + 04159 hyp, (F) (T4 ~ Ti3) - (58)
+20
 19
 
 The scaling of these equations for the analog computer is given in Sect. 3.2.1.
@@ -1488,29 +1585,31 @@ The analog computer program for these equations is shown in Fig. 6.
 secondary-salt stream:
 
 dT;
-My; Cos = = Fy Cps (Tsi—1 - Tg) + hg Ag (Ty = Ty) : (59)
+
+Mg; Cps dSI =F, Cps (Tsz'—l sz) + hssA (Tn sz) (59)
 
 For the tube walls:
 
-dT; _
+dTy;
 
-My; Cot—1 hes Ay (Ty; = Ty) + hi Ay (Ty; = Ti) : (60)
+ti Cpt—5 = tgg At Ty — Teg) + gy A (T — Ti) - (60)
 For the steam:
-Mc. wip c (Topi 1 — Toy) thy; A (Tp; = T,0) 61)
-wi ~pwi gp 3 Ypwi VYwi-1 wi wi “is \L ti wi’ >
+dT,,; _ .
+My priT_F3 Cowi (Typi -1 = Tyi) + Ry Ag (T — Ty 5 (61)
 
 where
 
-T,,; = temperature of steam (water) lump 7,
-Mes =Mg = My; = Mg = mass of secondary-salt lump,
-M.,; = mass of steam lump i,
-Cpwi = specific heat of steam lump i,
-F5 = steam mass flow rate,
-hye = secondary-salt-to-tube-wall transfer coefficient,
+T,,; = temperature of steam (water) lump i,
+M =M =M.7 = Mg = mass of secondary-salt lump,
+M,,; = mass of steam lump i,
+Cpwi = specific heat of steam lump 4,
+F4 = steam mass flow rate,
+h,, = secondary-salt-to-tube-wall transfer coefficient,
 h,,1 = tube-wall-to-steam heat transfer coefficient for the water inlet half of the steam generator,
 h,,3 = tube-wall-to-steam heat transfer coefficient for the steam outlet half of the steam generator,
-Ag = heat transfer area of the secondary-salt and steam lumps,
-A; = heat transfer area of the tube lumps.
+A = heat transfer area of the secondary-salt and steam lumps,
+
+A4, = heat transfer area of the tube lumps.
 
 The heat transfer coefficients in these equations were calculated in the same manner as were those in
 the primary heat exchanger (Sect. 3.2.2); namely, half of the tube wall resistance was included with the
@@ -1520,17 +1619,11 @@ secondary-salt (shell) side varied as the 0.6 power of the secondary-salt flow r
 (steam) side varied as the 0.8 power of the steam flow rate. The simulation of these coefficients was
 performed with a diode function generator as
 
-hg = hgso hg * 2) ’ (62)
-hy1 =hy1o hw1 Fs), (63)
+hss = hssO hss (F 2) s (62)
+hywt =hy1o M1 F3) (63)
 
-Ryy3 = hy30 bys (Fs), (64)
-IC. ORNL DWG. 71-3373
-
- 
-
- 
-
-   
+hw3 = hw30 hw3 (F3) ’ (64)
+“Teo & IC. ORNL BWG. 71-3373
 
  
 
@@ -1556,7 +1649,43 @@ Ryy3 = hy30 bys (Fs), (64)
 
  
 
-  
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
 
  
 
@@ -1598,24 +1727,29 @@ Ryy3 = hy30 bys (Fs), (64)
 
 05750
 05199
-Taq D
+Tl4 D
 Fig 7
-oI!
-he Ic. F
-Ti-Tyr 05883
-38
-“Th
-4Xio
-Fa
-oT
-he Lc. ToT) hep Fa Ts The
-Tia~Too 0.5207
-308
-~Ti2
+o717
+he T F2 Te3~Taa
+Ty-Ter 05883
+3.8
+“T
+X0
+1C.
+05053 “Tae
+05199
+Tez
+o7l
+“Toa he LS. T2 T hsp | Fa - Ts1~Taz
+Tia~Toe 0.5207
+318
+“Tiz2
 4510
+Fy
+-Ts
 DFG DFG
-(Fy haplF2}
-(ie) helFy *® -T,
+hy(Fy) hsp{Fal
+}
 
  
 
@@ -1633,10 +1767,8 @@ DFG DFG
 
  
 
- 
-
-fF TIME | 7,
-Fy (80.COv= DESIGN POINT} (ss) DELAY
+F, TIME | 7,
+F, (80.0Ov= DESIGN POINT} @ DELAY
 Tz
 
  
@@ -1645,44 +1777,52 @@ Tz
 
 Fig. 6. Analog Computer Program for the Heat Transfer Equations for the Primary Heat Exchanger.
 
-0C
+0T
 21
 
-where the “zero” subscript refers to the design-point value. For example, hq was calculated as follows,
+where the “zero” subscript refers to the design-point value. For example, Ao, was calculated as follows,
 using the information in Table 1:
 
-hoo 1,05 -1 os
-ss0~ \ 1316 1224 (65)
-=8559 Btuhr™! ft™2 (°F)! |
+hooo L, 053 - 6
+ss0 7 V1316 1224 (65)
+=855.9 Btu hr ! ft™2 (°F)™! .
 
 A diode function generator performed the following calculations:
 
-1 0.5 |!
-=} —
-gs (2) err t= (66)
+ 
+
+1 05 ]!
+F,)= + _
+hs (F3) [1316 (F,/F, )05 1224} (66)
 
 The other heat transfer coefficients were similarly calculated.
-The coefficients of Eqs. (59) and (60) were calculated using Tables 1 and 2. For example, in Eq. (59):
-
-F, 7.11 X 10° Ib X hr 67)
-Ms 47,492 1b X hr X 3600 sec (
-
-=0.4159 sec! .
-
-ho A; _ 855.9 Btu X 16,408 ft> X 1b-°F X hr “5
-Ms Cy, 47,4921b X hr-ft2-"F X 0.36 Btu X 3600 sec
+The coefficients of Eqgs. (59) and (60) were calculated using Tables 1 and 2. For example, in Eq. (59):
 
  
 
-=0.2282sec!.
+ 
+
+F, 711X 10°IbX hr )
+MsS 47,492 1b X hr X 3600 sec
+
+=0.4159 sec”! .
+hoo A, 8559 BtuX 16,408 ft> X 1b-°F X hr )
+
+ 
+
+ 
+
+M5 C, 47,4921b X hr-ft>-"F X 0.36 Btu X 3600 sec
+
+=0.2282sec”! .
 
 The masses and specific heats of the steam lumps in Eq. (61) were calculated as follows. The
 temperature and pressure distributions of the steam in the steam generator at design point were obtained
 from ref. 6. At the midplane in the steam generator the temperature and pressure were, respectively, 750°F
 and 3711 psi. From the steam tables, the enthalpy here was 1087 Btu/lb. At design point, the enthalpy of
 the water was raised from its inlet value of 770.8 Btu/lb to the steam outlet value of 1421 Btu/lb, an
-increase of 650.2 Btu/lb. The enthalpy rise from 770.8 to 1087 Btu/Ib in the water inlet half of the steam
-generator was equally divided between lumps wl and w2, and that from 1087 to 1421 Btu/lb equally
+increase of 650.2 Btu/lb. The enthalpy rise from 770.8 to 1087 Btu/lb in the water inlet half of the steam
+generator was equally divided between lumps w1 and w2, and that from 1087 to 1421 Btu/lb equally
 divided between lumps w3 and w4. Thus, 48.6% of the heat was transferred in the water inlet half and
 51.4% in the steam outlet half of the steam generator. The average temperature of the steam in the water
 inlet half was (from ref. 6) ~726°F. The average temperature in the steam outlet half was about 850°F.
@@ -1693,42 +1833,42 @@ The total change in temperature of the secondary salt in the steam generator at 
 Since the specific heat of this salt was constant, the 48.6% of the heat transferred in the steam outlet half
 of the steam generator represented a change in salt temperature of 145.9°F, or a temperature at the
 midplane of the exchanger of 995.9°F, which compared well with that given by ref. 6 (997°F). This was
-the design-point temperature for salt lump 56. The temperatures of lumps s5 and s7 were the average in the
+the design-point temperature for salt lump s6. The temperatures of lumps s5 and s7 were the average in the
 two halves of the exchanger, or 1073 and 923°F respectively.
 
 The overall temperature difference for heat transfer between salt and steam in the water inlet end of the
-exchanger (between lumps s7 and wl) was 197°F. In the steam end the difference (between lumps sS and
+exchanger (between lumps s7 and w1) was 197°F. In the steam end the difference (between lumpss5 and
 w3) was 223°F. The values of the average heat transfer coefficients for the steam generator were also
 22
 
 obtained from ref. 6. The average secondary-salt (shell side) film heat transfer coefficient and average tube
-wall conductance over the entire exchanger were 1316 and 1224 Btu hr ft™2 (°F) respectively. The
+wall conductance over the entire exchanger were 1316 and 1224 Btu hr ™" ft ™ (°F)™' respectively. The
 average film heat transfer coefficient on the steam (tube) side over the water inlet half of the steam
-generator was taken to be 6400 and that for the steam outlet half was 3590 Btu hr? ft (°F). The
+generator was taken to be 6400 and that for the steam outlet half was 3590 Btu hr ™! ft ™2 (°F)™'. The
 average overall heat transfer coefficients in the water inlet half and the steam outlet half were about 577
-and 539 Btu hr! ft™2 (°F)! respectively. The heat transfer area in each half was, then, 2051 ft. The area
+and 539 Btu hr ™! ft™ (°F) 7! respectively. The heat transfer area in each half was, then, 2051 ft2. The area
 of each lump was
 
-2051X 16
-Ag =—"—"""
+2051 X 16
+A =" "
 
-5 3 (69)
+= (69)
 
-= 16,400 ft? .
+= 16,400 ft* .
 
 The enthalpy and temperature of each steam lump were used to calculate the effective specific heat. For
 
 example:
 
-1
-Cow1 = (1087 — 770.8)/(726 — 700) (70)
+]
+Cpw1 =7 (1087 — 770.8)/(726 — 700) (70)
 
-= 6.08 Btulb™ (°F)! .
+= 6.08 Btulb™ (°F)7! .
 
-The value of each C, is given in Table 1. The value for the density of the steam for each of the four
+The value of each C is given in Table 1. The value for the density of the steam for each of the four
 
-wi
-steam lumps was obtained from ref. 6 as the average density of the steam in each quarter of the steam
+wl
+steam lumps was obfained from ref. 6 as the average density of the steam in each quarter of the steam
 generator.
 
 The steam generator was about 72 ft long. The number of 0.5-in.-OD tubes was calculated from the
@@ -1739,25 +1879,23 @@ were then calculated. For example, the total flow area in the 434 tubes of each 
 
 ft. The mass of steam lump w1 was
 
-M,,; =16X 0.284 ft* X Zhi X 22.7 Ib/ft (71)
-= 1860 lb.
+M, =16 X 0.284 ft* X 74—2ft X 22.7 Ib/ft? (71)
+= 1860 1b.
 Similarly,
-M,, =9341b, (72)
-M,,5 = 555 1b, (73)
+M., =9341b, (72)
+M,,4 =555 Ib, (73)
 M4 =4121b. (74)
 
-The design-point flow rate of the steam was 1.181 X 107 lb/hr. Then
+The design-point flow rate of the steam was 1.181 X 107 Ib/hr. Then
 
-Fy, _ 1.181X 107 IbX hr a5)
-M,,, 18601bX hr X 3600 sec
+Fy,  1.181X 107 Ib X hr 79)
+M, 18601b X hr X 3600 sec
 
-wl
-
-=1.764 sec”! .
+=1.764 sec! .
 23
 
-The term h,,{o was calculated in a manner similar to that for hg, [see Eq. (65)]. Its value was 1771 Btu
-hr! ft™ (°F). Then
+The term h,, ;o was calculated in a manner similar to that for &, [see Eq. (65)]. Its value was 1771 Btu
+hr~! ft72 (°F)™'. Then
 
  
 
@@ -1765,45 +1903,53 @@ hr! ft™ (°F). Then
 
  
 
-hy104s _ 1771 BtuX 16,400 ft* X 1b-°F X hr 76)
-M1 Cy 1860 1b X hr-ft”- °F X 6.08 Btu X 3600 sec
-=0.7134 sec".
+ 
+
+ 
+
+ 
+
+ 
+
+hwiods _ 1771 BtuX 16,400 ft*> X 1b-"F X hr 76)
+M1 Cpyy 1860 1b X hr-ft*- °F X 6.08 Btu X 3600 sec
+=0.7134sec”!.
 The unscaled analog computer equations for the steam generator were:
-dr, F
-—2 = 0.4159 == (Ty, — Tys) + 0.2282 hg (F,) (Ty3 — Tis). (77)
+deS F2
+—2 = 04159 2 (T, — Ty5)+ 02282 hy, (F))(Ty3 — Tys), (77)
 20
-dr, F
-—¢ = 0.4159 2 (Tys — Tyg) + 02282 hy (F) (Ty3 — Tis), (78)
-20
-dT, F
-— = 0.4159 22 (Tg ~ Tyg) + 0.2282 hig (F,) (Tyg — Tyg) , (79)
+dT F
+d;f» =0.4159 =2 (Tys — Tg) + 02282 1y (F,) (Tyy = Tis) (78)
 20
 dT, F
-—* = 04159 =2 (Ty — Tyg) + 02282 hy (Fy) (Tyg = Typ) (80)
+51 = 0.4159 22 (Ty — Tyg) + 02282 hyg () (Ty4 — Ti) (79)
 20
-dT,s
-—2 = 0.6950 hg (Fy) (Tys — Ty3) + 1.107 hyy3 (F3) (Tyy3 = Ts) » (81)
-dTy4
-220.6950 hg (F) (Tyg = Tpq) + 1.570 hyyy (Fy) (Ty = Ta) (82)
-dr, F
-1 = 1.7642 (100 = T,,;) + 0.7134 yyy (Fy) (Ty = Typ) (83)
-30
-dT,,, F,
-ar =3.513 7. (T,,1 ad T,,)t 1.312 Rut (F3) (Tyq — T,1) , (84)
-30
 dT, F
-22 = 59122 (Typ — Tyy3) + 7.161 yz (F3) (Ty — Typ3) (85)
+__d;S =0.4159 }-;-,-?— (Tg7 ~ Tgg) + 02282 hy (F,) (Tyq — Tq7) (80)
+20
+dT,,
+—22 206950 g (F,) (Tys — Ty3)+ 1107 kg (F3)(T,,3 - Ts3), (81)
+dT 44
+4= 0.6950 hes (F,) (Tyy — Tpa) + 1.570 hyyy (F3) (Tyyy — Tra) (82)
+dT F
+____d‘;’l = 1.764_F_i (700 — T, )+ 0.7134 hy (F3) (Ty4 — T,,1), (83)
 30
-dr, F
-— = 7.969 = (Ty3 — Tyas) + 1448 hy (F3) (Tp3 — Toy3) (86)
+dT F
+T\;f% =3.513 F_3_ (Ty1 — Tyyp) ¥ 131200 F3) (Trg — Tp1) (84)
+30
+dT F
+03 2591222 (T, = Ty3) + 7161 3 (3) (Ty3 = Tya) (85)
+30
+dT F
+2 =7.969 =2 (Tyy3 — Typa) + 1448 hyy3 (F3) (Ty3 = Tyy3) (86)
 30
 
 Transport delays were used in the hot and cold legs of the secondary-salt loop to account for the transit
 time of the secondary salt between the primary heat exchanger and the steam generator. Thus, from Fig. 3,
 
-Tq =Ty(t +11), 87)
+Toq =Tyt +71), (87)
 
-Teg = T.(t + Ta) . (88)
+Tog =To(t+72). (88)
  
 
  
@@ -1888,41 +2034,21 @@ Teg = T.(t + Ta) . (88)
 
  
 
-ORNL DW 3.
-I.C.
-50.00
-18.10
-Twa
-9.96
-028852 c ‘ i
-Tes hes
-Tia Tas 46.80
-1384
-“Tia
-0.8688 Ic
-1
-42.50 v3
-8.95! A
-Tus
-ve 73%0
-035199 . — ‘, tn
-© 6 —
-’ hua(Fa)
-Fs
-4391
-0.2852 )
-Ty hes 1C. Tia~ Twi Dui F3 Twi Tw2
-Tie Tar 1032
-1.963
-“Tia
-0.6688
-05s
-DF DFG
-h, (Fa)
-he (Fa) wi (F3
-Fs Fs
-Fp T
-Fig. 8
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
 
  
 
@@ -1950,15 +2076,46 @@ Fig. 8
 
 Fig. 7. Analog Computer Program for the Heat Transfer Equations for the Steam Generator.
 
- 
+QRNL DWG.
+-T, TIME | 7, G
+7 50.00
+18.10
+2852 2.96|
+0' —_—
+Tss hee <. Tia~Ty3 Nw3 F3 " T3 Tus
+TiaTas 46,80
+1.384
+~Tia
+08688
+“Tus
+05199 \7
+= 3 DFG
+s
+ha(Fa)
+Fs
+0.2852
+1. F
+Ty hes 3
+T Taz 2032
+1.963
+“Tia
+0.8688
+05199
+F3
+DFG DFG
+F
+LMY Ry (Fa)
+F Fyl
+Fp T
+Fig. 8
+
+71-337%
 
  
 
-71-3376
+{8000y =DESIGN POINT)
 
- 
-
-$C
+¥C
 25
 
 The values used for 7, and 7, were 14.5 and 11.9 sec, respectively, at the design-point flow rate of the
@@ -1972,140 +2129,97 @@ program for the steam generator is shown in Fig. 7.
 varying the secondary-salt flow rate and thus the heat input to the steam generator. An error in steam
 temperature caused the flow rate to change at a rate proportional to the error, that is,
 
-dF.
-—r = —a(T,,4 — 1000°F) , (89)
+dF
+—7 = —a(T,,4 — 1000°F) (89)
 
-where F), is the secondary-salt flow rate, T,, 4 is the outlet steam temperature, and « is the controller gain.
-The controller gain « used in the simulation was approximately 5.5%/min change in flow rate for each
+where F, is the secondary-salt flow rate, T, 4 is the outlet steam temperature, and « is the controller gain.
+The controller gain a used in the simulation was approximately 5.5%/min change in flow rate for each
 1°F error in steam temperature for errors of 2°F or less. For errors greater than 2°F, the rate of change of
 flow rate was limited to 11%/min. No optimization was carried out to obtain these values, but they
 produced reasonably good system response.
-Reactor Outlet Temperature Controller. The reactor outlet temperature set point was determined by
+Reactor Qutlet Temperature Controller. The reactor outlet temperature set point was determined by
 the plant load demand (Fig. 2). The set-point equations were:
 
-Tro, =350P omana T 950 (0.5<P<1.0) 90)
+nget =350P3omang T 950 (0.5<P<1.0) (90)
 and
-Troy, = 250Pgemana +1000 (0<P<0.5), on
+T"Oset =250P 3. mang T 1000 (0<P<0.5), (91)
 
-where To, is the reactor outlet temperature set point and Pye, ,pq iS the fractional plant load demand.
+where Tyo . is the reactor outlet temperature set point and Pgpp,p 4 is the fractional plant load demand.
 This set of equations was chosen so that the resulting steady-state reactor inlet temperature would decrease
 linearly with load from 1050°F at full load to 1000°F at 50% load and remain constant at 1000°F for loads
 below 50%.
 
 The reactor power-level set point was proportional to the difference between the outlet temperature set
-
 point and the measured reactor inlet temperature, that is,
 
 P
+Fse
 
-a =AT,,,, ~-T), (92)
+t =A(Trose - Tri) ’ (92)
 
-set t
-
-where P,_ is the reactor power level set point, 7}; is the measured reactor inlet temperature, and 4 is the
-
+t
+where P . is the reactor power level set point, T,; is the measured reactor inlet temperature, and 4 is the
 proportionality constant.
 
-The proportionality constant A was itself proportional to the primary-salt flow rate. The assumption of
+The proportionality constant 4 was itself proportional to the primary-salt flow rate. The assumption of
 constant specific heat of the primary salt is thus implied here. However, it is not necessary to assume
 constant specific heat in an actual operating control system of this type. Additional circuitry may be
-provided to compensate for this effect, as was demonstrated in the MSRE control system.?
+provided to compensate for this effect, as was demonstrated in the MSRE control system.>
 
 A reactor-power-level error was obtained by subtracting the set-point value from the measured value
-
 (from neutron flux), that is,
 
-e=P,—P, . (93)
+€e=P, - P, . (93)
 26
 
 This power error € was the input signal to a control rod servo described by the second-order transfer
 function:
 
-TG) = $2 +2tws + w? els)’
+T =
+) s2 +2tws + w? els)’
 
-04)
+(94)
 
 where G is the controller gain, w is the bandwidth, { is the damping factor, and O(s) is the Laplace
-transform of the servo output, dp,./dt.
+transform of the servo output, dp,/dt.
 
 In this simulation the bandwidth was 5 Hz and the damping factor was 0.5. These values are typical of
-the kind and size of servo which may be used in this control-rod-drive service. The gain of the controller G
-was such that, for lef = 1% of full power, the control reactivity addition or withdrawal rate was about
-0.01%/sec; that is,
+the kind and size of servo which may be used in this control-rod-drive service. The gain of the controller &
+was such that, for [e] = 1% of full power, the control reactivity addition or withdrawal rate was about
+0.01%j/sec; that is,
 
-— 0.01%/sec , 95)
+7—0.01%/36(3 s (95)
 
 where p,. is the control reactivity.
 
 For power level errors greater than 1% of full power, the reactivity addition or withdrawal rate was
-limited to 0.01%/sec. Integration of Eq. (95) yields the value for the control reactivity in the kinetics
+limited to 0.01%fsec. Integration of Eq. (95) yields the value for the control reactivity in the kinetics
 equations of Sect. 3.2.1.
 
-The steam flow rate F; was obtained directly from the power demand, Py, 05q- A S-sec first-order lag
+The steam flow rate F; was obtained directly from the power demand, Pye,.04- A S-sec first-order lag
 was included to obtain some simulation of the response of the steam valve:
 
-dF; a 1
+dF, a 1
+3=
 
-3
-“dr =—Pdemand © —-F ’ (96)
-where a is a proportionality constant and 7 is the time constant (5 sec).
+dr _;Pdemand (7) _;FB ? (96)
+where g is a proportionality constant and 7 is the time constant (5 sec).
 
 The scaling of the equations for the analog computer is given in Sect. 3.2.1. The analog computer
-program for the control system part of the siraulation is shown in Fig. 8.
-—_—
-
-LOAD :
-DEMAND
-
-—Ref
-
-DEMAND,
-
-—Ref.
-
-8
-2
-
-COMPARATOR
+program for the control system part of the siraisiation is shown in Fig. 8.
+ORNL DWG. 71-3377
 
  
 
-Fy (80.00v = DESIGN POINT } mremresemaany
+{ E )
+Fig 6
+@
 
- 
-
-0.
-
-nN
-x
-«
-
-¢
-
-0.4750
-
-0.1563
-
- 
-
-0.
-
-g
+Fig. 7
 
  
 
  
-
- 
-
-LOAD
-DEMAND,
-
-Ref.
-
- 
-
-0.4000
 
  
 
@@ -2115,6 +2229,37 @@ STEAM TEMPERATURE CONTROLLER
 
  
 
+F, (80.00v = DESIGN POINT }
+
+ 
+
+COMPARATOR
+0.2188 6400
+
+: -p,
+
+LOAD oot
+
+DEMAND =Q, ~
+) \ P
+
+—Ref =) 4 2 |
+
+0.4750 \ O Tro,,,
+
+Tri=T
+LOAD 383 o o - T O 31,42
+DEMAND, & n ! |
+—Ref. -0 l J
+
+0
+
+ 
+
++001% /SEC. |
+LIMIT
+31,42 1
+
  
 
  
@@ -2125,21 +2270,13 @@ STEAM TEMPERATURE CONTROLLER
 
  
 
->
-
-Tri “Troge
-
-6.400
-
-Pres
+ 
 
  
 
  
 
-31.42
-
-31.42
+  
 
  
 
@@ -2151,68 +2288,58 @@ Pres
 
  
 
- 
-
-£001% /SEC.
-
-St
+’
 
  
 
  
 
-CONTROL ROD DRIVE SERVO
+:
 
-REACTOR OUTLET TEMPERATURE CONTROLLER
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+1 9 CONTROL ROD DRIVE SERVO
+LOAD
+-Ref, .
+0.4000 REACTOR OUTLET TEMPERATURE CONTROLLER
 
 Fig. 8. Analog Computer Program for the Control System.
 
- 
-
-ORNL DWG. 71-3377
-
- 
-
 LT
-14—
-
-91.
-
-93.
-94-95.
-
-96. M. Shaw, Division of Reactor Development and Technology, U. S. Atomic Energy Commission, Washington
-
-97.
-98.
-99-100.
-
-29
+29
 
 INTERNAL DISTRIBUTION
 
 1. J. L. Anderson 35.
-2. C.F. Baes 36.
+2. C. F. Baes 36.
 3. H. F. Bauman 37.
 4. S. E. Beall 38.
 5. C. E. Bettis 39.
 6. E. S. Bettis 40.
 7. E. G. Bohlmann 41-60.
 8. C.J. Borkowski 61.
-9. G.E. Boyd 62.
+9. G. E. Boyd 62.
 10. R. B. Briggs 63.
 11. O. W. Burke 64.
-12. F. H. Clark 65-66.
-13. C. W. Collins 67.
-15. D. FE. Cope 68.
+12. F. H. Clark 65—66.
+13. C. W.Collins 67.
+14—15. D. F. Cope 68.
 16. F. L. Culler 69-70.
 17. S.J. Ditto 71.
-18. W. P. Eatherly 72.
+18. W.P. Eatherly 72.
 19. J. R. Engel 73.
 20. D. E. Ferguson 74.
-21. L.M. Ferris 75.
+21. L. M. Ferris 75.
 22. W.K. Furlong 76.
-23. W.R. Grimes 77.
+23. W. R. Grimes 77.
 24. A. G. Grindell 78.
 25. P. N. Haubenreich 79.
 26. R. E. Helms 80.
@@ -2221,7 +2348,7 @@ INTERNAL DISTRIBUTION
 29. P. R. Kasten 83.
 30. T. W. Kerlin 84-85.
 31. R. B. Korsmeyer 86.
-32. M. I. Lundin 87-89.
+32. M. 1. Lundin 87-89.
 33. R. E. MacPherson 90.
 34. H. E. McCoy
 
@@ -2229,43 +2356,47 @@ EXTERNAL DISTRIBUTION
 
 ORNL-TM-3102
 
-McLain
-McNeese
-McWherter
+=
 
-Nicholson
+cLain
+cNeese
+Wherter
 
-Perry
-Pickel
+gZZZ
 
-. C. Robertson
+oore
+icholson
+akes
+arker
+erry
+ickel
+
+C Robertson
 M. W. Rosenthal
 G. S. Sadowski
 Dunlap Scott
+
 W. H. Sides, Jr.
 M. J. Skinner
+
 O. L. Smith
 
 D. A. Sundberg
 R. Tallackson
 
-H. A.
-L.E.
-J.R.
-H. J.
-R.L.
-E. L.
-L.C.
-R. B.
-A.M.
-TW.
-R
+ggwor*r'u’ﬁmrp
+Qo Z
 
-Trauger
+AP ICOHIT-C T
+"U'-U"U
 
-. Watson
+E.
 
-. Weinberg
+B. Trauger
+
+M. Watson
+
+M. Weinberg
 
 R. Weir
 
@@ -2289,22 +2420,24 @@ G.
 A.
 J.
 
-C. B. Deering, Black and Veatch Engineers, 1500 Meadowlake Parkway, Kansas City, Missouri 64114
+91. C. B. Deering, Black and Veatch Engineers, 1500 Meadowlake Parkway, Kansas City, Missouri 64114
 92. Ronald Feit, Instrumentation and Control Branch, Division of Reactor Development and Technology,
 
-U. 8. Atomic Energy Commission, Washington, D.C. 20545
+U. S. Atomic Energy Commission, Washington, D.C. 20545
 
-George McCright, Black and Veatch Engineers, 1500 Meadowlake Parkway, Kansas City, Missouri 64114
-T. W. McIntosh, Division of Reactor Development and Technology, U. S. Atomic Energy Commission,
+93. George McCright, Black and Veatch Engineers, 1500 Meadowlake Parkway, Kansas City, Missouri 64114
+94-95. T. W. MclIntosh, Division of Reactor Development and Technology, U. S. Atomic Energy Commission,
 
 Washington, D.C. 20545
 
+96. M. Shaw, Division of Reactor Development and Technology, U. S. Atomic Energy Commission, Washington
+
 D.C. 20545
 
-J. A. Swartout, Union Carbide Corporation, New York, N.Y.
+97. 1. A. Swartout, Union Carbide Corporation, New York, N.Y.
 
-Laboratory and University Division, AEC, ORO
-Division of Technical Information Extension
+98. Laboratory and University Division, AEC, ORO
+99—-100. Division of Technical Information Extension
 
 3
 

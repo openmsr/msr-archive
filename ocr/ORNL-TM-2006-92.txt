@@ -4,9 +4,13 @@ NATIONAL LABORATORY
 MANAGED BY UT-BATTELLE
 FOR THE DEPARTMENT OF ENERGY
 
+ 
+
 UT-BATTELLE
 
 ORNL-27 (4-00)
+
+ 
 
 ORNL/TM-2006/92
 
@@ -19,7 +23,7 @@ Reactors
 C. W. Forsberg
 Oak Ridge National Laboratory
 
-June 2006
+Junhe 2006
  
 
  
@@ -61,7 +65,7 @@ Berkeley, California
 
 James E. Cahalan and Temitope Taiwo
 Argonne National Laboratory
-Argonne, Illinois
+Argonne, [llinois
 
 Jeffrey A. Enneking and Richard A. Kochendarfer
 Areva NP, Lynchburg, Virginia
@@ -86,59 +90,59 @@ under contract DE-AC05-000R22725
 CONTENTS
 
 Page
-LIST OF FIGURES Looe eee eee eee eee, Vv
-LIST OF TABLES ... coo eee eee eee eee eee eee eee, vi
-ABBREVIATIONS AND ACRONYMS LL. ooo eee eee eee eee vii
-ABSTRACT occa, 1X
-SUMMARY ooo eee eee eee eee eee eee eee Xi
-I. INTRODUCTION... eee eee eee eee eee eee eee eee eee eee 1
-2. DESCRIPTION OF THE LS-VHTR .......ooiiiiiiiii eee 3
-2.1 SYSTEM DESCRIPTION. ........ooiiiiiiiie eee eee eee eee eee 3
-2.2 COOLANT SALT OPTIONS AND IMPLICATIONS FOR REFUELING.............cc.cooiennnn 5
-2.3 FUEL DESIGNS AND IMPLICATIONS FOR REFUELING ...........cccooooiiiiiiieieeeeeee 5
-24 DECAY HEAT AND IMPLICAITONS ON REFUELING ..........cc.oooiiiiiieeeeeee 6
+LIST OF FIGURES ... oo, v
+LIST OF TABLES ... oo, vi
+ABBREVIATIONS AND ACRONYMS L. oo vii
+ABSTRACT ... e, 1X
+SUMMARYY oo X1
+1. INTRODUCGTION ... ..o, 1
+2. DESCRIPTION OF THE LS-VHTR .. ..o 3
+2.1 SYSTEM DESCRIPTION.........ooiiiiiiie oo 3
+2.2  COOLANT SALT OPTIONS AND IMPLICATIONS FOR REFUELING..............cc.ccooeen 5
+2.3  FUEL DESIGNS AND IMPLICATIONS FOR REFUELING ...........cccoooiiiiiiiiceee 5
+24 DECAY HEAT AND IMPLICAITONS ON REFUELING ..........ccccoooiiiiii e 6
 
 3. MECHANICAL OPERATIONS IN LIQUID SALT: EXPERIENCE FROM
-MOLTEN SALT REACTORS... ooo eee eee eee. 9
-4. HIGH-TEMPERATURE REACTOR REFUELING EXPERIENCE................c.cooooiiiiiiiii 11
-4.1 PRISMATIC-GRAPHITE-FUEL HIGH-TEMPERATURE REACTORS................c..oooo 12
-4.1.1 Prismatic-Fuel Gas-Cooled High-Temperature Reactors.....................cc.cooeiviiinnn, 13
-4.1.2 Prismatic-Fuel Liquid-Salt-Cooled High-Temperature Reactors................................ 13
-4.2 PEBBLE-BED REACTOR ........ocoiiiiii ieee eee, 19
+MOLTEN SALT REACTORS ... ..o 9
+4. HIGH-TEMPERATURE REACTOR REFUELING EXPERIENCE................c.oooiiiiiii 11
+4.1 PRISMATIC-GRAPHITE-FUEL HIGH-TEMPERATURE REACTORS................c...oooo . 12
+4.1.1 Prismatic-Fuel Gas-Cooled High-Temperature Reactors.....................cc.ccooeioiiinnn, 13
+4.1.2  Prismatic-Fuel Liquid-Salt-Cooled High-Temperature Reactors................................. 13
+4.2 PEBBLE-BED REACTOR ........ooiiiiiii oo, 19
 4.2.1 Pebble-Bed-Fuel Liquid-Salt-Cooled High-Temperature Reactors............................... 21
-4.3 STRINGER OR ASSEMBLY HIGH-TEMPERATURE REACTORS ...............coooiiii 21
+4.3 STRINGER OR ASSEMBLY HIGH-TEMPERATURE REACTORS ...............cooioii . 21
 43.1 Stringer or Assembly Gas-Cooled High-Temperature Reactors ................................... 21
 4.3.2  Stringer- or Assembly-Fuel Liquid-Salt-Cooled High-Temperature Reactors.............. 27
-5. FAST REACTOR EXPERIENCE ..........cccoiiiiiiiii eee 31
-5.1 COMMON SODIUM AND SALT REFUELING CHARACTERISTICS ..........c.cooveiii 31
-5.2 FAST REACTOR REFUELING EXPERIENCE ..............ccooooiiiiiioi eee 32
-5.2.1 EBR-II Fuel-Handling System... 32
-5.2.2  FFTF Fuel-Handling System... eee 34
-5.2.3 CRBRP Fuel Handling System... 38
+5. FAST REACTOR EXPERIENCE ..........cccoiiiiiiii e 31
+5.1 COMMON SODIUM AND SALT REFUELING CHARACTERISTICS .............coooeie 31
+52 FAST REACTOR REFUELING EXPERIENCE .............coooiiiiiiii e 32
+52.1 EBR-II Fuel-Handling System ... 32
+5.2.2  FFTF Fuel-Handling SysStem ... 34
+52.3 CRBRP Fuel Handling System..................coii e 38
 
 111
 CONTENTS (continued)
 
-5.3 LIQUID-SALT-COOLED REFUELING..........c.ccoiiiiiiiiio eee 40
-5.3.1 Primary-System Refueling Temperatures... 40
+5.3 LIQUID-SALT-COOLED REFUELING.........cccccooiiiiiiiiiie oo 40
+5.3.1 Primary-System Refueling Temperatures. ... 40
 
-5.3.2 In-Vessel Fuel-Handling Equipment Design and Fuel Restraint Design ...................... 42
+5.3.2 In-Vessel Fuel-Handling Equipment Design and Fuel Restraint Design ..................... 42
 
-5.3.3 Design Requirements Relevant to the LS-VHTR ......................... 42
+5.3.3 Design Requirements Relevant to the LS-VHTR ... 42
 
-6. INSTRUMENTATION AND CONTROL ........oooiiiiiiiiiiieee eee, 45
-6.1 PRECISION METROLOGY .....ooiiiiiiii ieee eee 46
+6. INSTRUMENTATION AND CONTROL ........oooiiiiiiiiiiceee oo, 45
+6.1 PRECISION METROLOGY ..ot 46
 
-0.2 SPECTROSCOPY .....ooooiiiiio eee eee eee eee eee eee eee 48
+0.2  SPECTROSCOPY ..., 48
 
-0.3 TELEVISION... eee eee eee eee eee 48
+6.3 TELEVISION ... e, 48
 
-7. CONCLUSIONS Lee eee eee eee eee, 49
-8. REFERENCES .... oo eee eee eee eee 51
-APPENDIX A FFTF FUEL-HANDLING SYSTEM .......cooiiiiiiiioe eee A-1
-APPENDIX B CRBRP FUEL-HANDLING SYSTEM. ........coooiiiiiiii eee B-1
+7. CONCLUSIONS e, 49
+8. REFERENCES ... ..o, 51
+APPENDIX A FFTF FUEL-HANDLING SYSTEM .......oooiiiiiiiiie e, A-1
+APPENDIX B CRBRP FUEL-HANDLING SYSTEM.........coooiiiiiiiee e, B-1
 
-1v
+v
 Figure
 
 S.1
@@ -181,96 +185,96 @@ Al
 A2
 A3
 A4
-AS
+A5
 A.6
 A7
 
 LIST OF FIGURES
 
 Page
-High-temperature reactor fuel types and core configurations. ......................occcoeoiiiiiiiieee X11
-Schematic of the LS-VHTR ..........c.coiiii eee 3
+High-temperature reactor fuel types and core configurations.......................cooooooiii i X111
+Schematic 0f the LS-VHTR ... e 3
 Elevation view of the AHTR with metallic internals (AHTR-MI) for normal operation (left) and
-refueling (right) MOAES ............o iii eee, 4
-Temperature rise per unit time as a function of cooling time... 7
-High-temperature reactor fuel types and core configurations.......................ccooooeioiiiiiiiiii eee 11
-Prismatic high-temperature fuel... 12
-Schematic of Fort St. Vrain refueling machine... 14
-Photograph of Fort St. Vrain refueling machine... 15
-Example of a top-locking mechanism for a prismatic-fuel reactor........................coocooiiiiinl, 17
+refueling (right) MOdeS ... ..., 4
+Temperature rise per unit time as a function of cooling time ..................................................... 7
+High-temperature reactor fuel types and core configurations........................ccooccoooiiiiiiii e 11
+Prismatic high-temperature fuel...................... e 12
+Schematic of Fort St. Vrain refueling machine................................. . 14
+Photograph of Fort St. Vrain refueling machine......................................... 15
+Example of a top-locking mechanism for a prismatic-fuel reactor........................cco.ccoiiiil 17
 Vertical cross-section of the AHTR-MI for normal operation (left) and
-refueling (right) MOAES .............ooii eee, 18
-Horizontal cross section of the AHTR-MI, showing the refueling port locations ...................... 19
-Pebble-bed UCL ............ooo eee 20
-German THTR COTE ........ooiiiiiii eee eee eee, 20
-Refueling of a helium-cooled pebble-bed reactor........................coo i 22
-Refueling of a salt-cooled pebble-bed reactor... 23
+refueling (right) MOdes ..., 18
+Horizontal cross section of the AHTR-MI, showing the refueling port locations........................ 19
+Pebble-bed Ul ...... ... 20
+German THTR COTE ... e, 20
+Refueling of a helium-cooled pebble-bed reactor........................o 22
+Refueling of a salt-cooled pebble-bed reactor ......................oo 23
 Schematic of pebble recirculation system being studied at the University of California, Berkeley,
 
 showing pebble insertion into the coolant cold legs for injection at 32 locations around the
 
-bottom inlet plenum of the reactor... 24
-Advanced Gas-Cooled Reactor, stringer, and fuel element... 25
-Dungeness B Advanced Gas-Cooled Reactor... 26
-Stringer for an LS-VHTR Lee 27
-Stringer fuel assembly for an LS-VHTR eee 28
-Japanese High-Temperature Test Reactor fuel assembly with fuel rod........................................ 29
-Moderator block with stringer fuel assembly ..................... 30
-EBR-II fuel-handling System ...............oooiiiii eee 33
-General arrangement of FFTF reactor refueling facilities... 35
-FFTF closed loop ex-vessel machine (red machine on rail tracks).............................l 36
-FFTF driver fuel-handling SEQUENCE...................ooiii ieee eee 37
-FFTF driver fuel-handling sequence between interim decay storage and reactor vessel. .............. 37
-CRBRP reactor refueling System... eee, 39
-CRBRP reactor vessel head rotating plugs... 41
-Thermal profile for FFTF fuel and test assembly handling ................................................. 42
-Mirror system for transmitting signals into and out of the reactor vessel...............................oo.... 45
-Image of a dime obtained by laser scanning of the surface from a distance of 4.2m. ................ 46
+bottom inlet plenum of the reactor................... 24
+Advanced Gas-Cooled Reactor, stringer, and fuel element.................................................... 25
+Dungeness B Advanced Gas-Cooled Reactor.....................coooiiii e 26
+Stringer for an LS-VHTR ... e 27
+Stringer fuel assembly foran LS-VHTR ... 28
+Japanese High-Temperature Test Reactor fuel assembly with fuel rod....................................... 29
+Moderator block with stringer fuel assembly ... 30
+EBR-II fuel-handling syStem ...... ... 33
+General arrangement of FFTF reactor refueling facilities ... 35
+FFTF closed loop ex-vessel machine (red machine on rail tracks)........................................ 36
+FFTF driver fuel-handling SEQUENCE...................ooii e 37
+FFTF driver fuel-handling sequence between interim decay storage and reactor vessel............... 37
+CRBRP reactor refueling sSyStem ..o, 39
+CRBRP reactor vessel head rotating plugs ... 41
+Thermal profile for FFTF fuel and test assembly handling ...................................................... 42
+Mirror system for transmitting signals into and out of the reactor vessel...............................o...... 45
+Image of a dime obtained by laser scanning of the surface from a distance of 4.2 m. ................. 46
 Precision metrology surface inspection of the first-wall component of a fusion reactor............... 47
-General arrangement of reactor refueling facilities ........................... A-2
-Closed loop ex-vessel machine... eee A-3
-Driver fuel-handling SEQUENCE... eee A-4
-Driver fuel-handling sequence between interim decay storage and reactor vessel.................... A-5
-FLIOOT VALVE o.oo eee eee A-6
-Schematic of closed loop ex-vessel machine and transporter... A-8
-Bottom loading transfer Cask... A-9
+General arrangement of reactor refueling facilities ... A-2
+Closed loop ex-vessel machine ... A-3
+Driver fuel-handling SEqQUENCE ... A-4
+Driver fuel-handling sequence between interim decay storage and reactor vessel..................... A-5
+FIOOT VALVE ... A-6
+Schematic of closed loop ex-vessel machine and transporter...........................oooiiii, A-8
+Bottom loading transfer Cask ... A-9
 LIST OF FIGURES (continued)
 
 Figure Page
-A.8 Core component conditioning StAtIONS. .............ccooiiiiiiii iii eee A-10
-A9 Interim deCay STOTAZE ..........oooviiii ieee eee A-12
-A.10 Fuel storage facility (under CONStrUCtION) ...............oooiiiiiiii eee A-13
-A.11  In-vessel handling machine.......................... eee A-15
-A.12 Plan view showing locations of in-vessel handling machines................................................. A-16
-A.13 Reactor cutaway showing in-vessel handling machines... A-17
-A.14 Thermal profile for fuel and test assembly handling... A-18
-B.1 CRBRP reactor refueling SyStem ..............ooooiiiiii eee B-2
-B.2 CRBRP reactor-vessel-head rotating plugs... eee B-4
-B.3 In-vessel transfer machine ....................c..coiiii eee B-7
-B.4 Auxiliary handling machine....................... eee B-8
-B.S Auxiliary-handling-machine floor valve... B-9
-B.6 IVTM port @dapter......ccooooiii eee eee eee B-10
-B.7 Ex-vessel transfer Machine ....................occoiiiiiiii ieee B-12
-B.8 EVTM gantry-troll@y ..........oooo eee eee B-13
-B.9 EVTM cold-wall cooling CONCEPL.........cc..ooiiiiii eee eee B-14
-B.1I0 Core COMPONENL POL.......ooiiiiiiii eee eee eee eee eee eee eee eee eee B-15
-B.11 Reactor fuel transfer port adapter assembly... B-16
-B.12 Rotating guide tube... B-18
-B.13  Ex-vessel storage tank... B-19
+A8 Core component conditionIng StAtIONS. .............ccooiiiiiii oo A-10
+A9 Interim deCay STOTAZE .........coooeeii i A-12
+A.10  Fuel storage facility (under COnStruCtion) ..................oooiiiiii e A-13
+A.11  In-vessel handling machine.......................... e A-15
+A.12  Plan view showing locations of in-vessel handling machines................................................. A-16
+A.13  Reactor cutaway showing in-vessel handling machines....................................................... A-17
+A.14  Thermal profile for fuel and test assembly handling .......................................................... A-18
+B.1 CRBRP reactor refueling SyStem ..o B-2
+B.2 CRBRP reactor-vessel-head rotating plugs................ooiiiii e B-4
+B.3 In-vessel transfer machine ... B-7
+B.4 Auxiliary handling machine....................... B-8
+B.5 Auxiliary-handling-machine floor valve..................... B-9
+B.6 IVTM pOrt @dapter.... ..o e B-10
+B.7 Ex-vessel transfer machine ....................oooooiiiiiii i B-12
+B.8 EVTM gantry-trolley ... e B-13
+B.9 EVTM cold-wall cooling CONCEPL.........cc..ooiii e B-14
+B.1I0  Core COMPONENL POL......oooieiiii e B-15
+B.11  Reactor fuel transfer port adapter assembly ... B-16
+B.12  Rotating guide tube ... B-18
+B.13  Ex-vessel storage tank..............oooo i B-19
 
 LIST OF TABLES
 
 Table Page
-S.1 Comparison of refueling Operations. ..............cc...ooiiii iii, X1V
-2.1 Candidate Quid SAILS ....... ccc 6
-3.1 Characteristics and operation time for ORNL salt and liquid metal pumps.............................oo 9
-4.1 Comparison of FSV, commercial HTGR, and LS-VHTR reactor cores..................ocooeeviiiiiionn.. 15
-4.2 Pebble-bed TCACIOTS ..........ooiiiiii ieee 22
-5.1 Example capital cost estimate for PENS... 32
-B.1 Characteristics of the IVT... eee eee, B-8
-B.2 EVTM performance charaCteriStiCs..............ooooiiiiiiii ieee B-11
-B.3  EVST performance characteristics. .............oooiiiiiiiii ieee eee B-20
-B.4 EVST major components and functions. .....................ooooiiiii iii B-20
+S.1  Comparison of refueling Operations. ... e, X1V
+2.1 Candidate HQuId SIS ....... .o 6
+3.1 Characteristics and operation time for ORNL salt and liquid metal pumps............................... 9
+4.1 Comparison of FSV, commercial HTGR, and LS-VHTR reactor cores..................cocooooviiiiiienn.. 15
+4.2 Pebble-bed TCaCIOTS ... ..ot 22
+5.1 Example capital cost estimate for PENS ..., 32
+B.1 Characteristics 0f the IVTIML.. ... e, B-8
+B.2 EVTM performance charaCteriStiCs..............ooooiiiiiii oo B-11
+B.3  EVST performance characteriStiCs..............oooiiiiiii oo B-20
+B.4 EVST major components and functions.......................oooiiiii e B-20
 
 vi
 AGR
@@ -369,7 +373,7 @@ spent nuclear fuel
 
 Thorium High-Temperature Reactor
 
-vil
+Vil
 Blank page
 
 viii
@@ -398,7 +402,7 @@ and different refueling strategies are being evaluated. Each is a liquid-salt-co
 moderated gas-cooled high-temperature reactor. The findings indicate that several approaches for
 refueling a LS-VHTR are viable. The study results are described in this report.
 
-1X
+X
 Blank page
 SUMMARY
 
@@ -440,7 +444,7 @@ e Pressure. The reactor operates at atmospheric pressure with coolant boiling po
 Although there 1s a reactor vessel, there is no heavy-wall pressure vessel that limits access to the
 reactor core.
 
-» Environment. Liquid salts will slowly react with water or moisture in air. An argon or equivalent
+* Environment. Liquid salts will slowly react with water or moisture in air. An argon or equivalent
 atmosphere must be maintained above the liquid salt. The liquid salts are transparent and have
 physical properties similar to those of water.
 
@@ -474,7 +478,7 @@ study examines (1) the experience base for refueling gas-cooled reactors with ea
 fuels and reactor core designs and (2) the applicability of that experience to a liquid-salt-cooled reactor.
 Each option has specific advantages and disadvantages.
 
-e Prismatic graphite-block fuel with traditional refueling. The LS-VHTR would be fueled with
+e  Prismatic graphite-block fuel with traditional refueling. The LS-VHTR would be fueled with
 prismatic fuel and refueled when shut down. This particular fuel geometry provides a large latitude
 for the reactor core designer in the choice of (1) fuel-moderator-coolant ratios and (2) core geometry.
 
@@ -488,7 +492,7 @@ operations and has not been demonstrated to be capable of being refueled on line
 e Pebble bed. In a pebble-bed LS-VHTR, the core is filled with pebbles, which flow through the core
 over a period of time. The gas-cooled variant of this option was developed in Germany. A gas-
 cooled pebble-bed test reactor is operating in China, and a precommercial gas-cooled pebble-bed
-reactor is currently being built in South Africa. Refueling in a liquid-salt-cooled pebble reactor
+reactor 1s currently being built in South Africa. Refueling in a liquid-salt-cooled pebble reactor
 would be relatively easy and would be done online, as is the case with the gas-cooled reactors.
 Unlike other fuel forms, the ratio of fuel and moderator to liquid coolant 1s fixed in a pebble-bed
 reactor. This places major constraints on the choice of coolant (it most likely will require the use of a
@@ -499,14 +503,14 @@ salt-cooled pebble-bed reactor have been conducted at Delft University in the Ne
 
 o Stringer fuel assembly. The LS-VHTR can be designed with a graphite core, channels in the reactor
 core, and stringers of fuel assemblies that fit within holes in the graphite. Conceptually, the core
-design is similar to the 14 operating British Advanced Gas-Cooled Reactors (AGRs) with the
+design 1s similar to the 14 operating British Advanced Gas-Cooled Reactors (AGRs) with the
 following exceptions: (1) for the LS-VHTR, the gas coolant (carbon dioxide) is replaced with a
 liquid salt, and (2) a graphite-based fuel assembly may be used, rather than the stainless-steel-clad
 pins of the AGR. The removal of a single stringer removes all of the fuel in a particular channel in
 
 one movement. As with prismatic fuel, stringer fuel allows the coolant void fraction to be controlled,
 
-and thus provides the flexibility to use lower-cost salt compositions. As with the AGR, it 1s
+and thus provides the flexibility to use lower-cost salt compositions. As with the AGR, 1t 1s
 potentially possible to perform refueling online with stringer fuel assemblies, allowing similar
 benefits for capacity factor and fuel utilization as with pebble fuels. Although this design option
 
@@ -521,9 +525,9 @@ Stroke
 Fuel Transfer
 Mechanism
 
-20-m 1
+20-m T
 |
-ii
+il
 
   
  
@@ -550,13 +554,13 @@ Head
 
  
 
-iY
-Oo
+Y
+o
 8
-N° ¢
-[ | J] [7 \
+\/ e
+[ [ ][/ \
 0
-A
+v
 
  
 
@@ -570,13 +574,13 @@ A
 
 (~14 m)
 
-N Stainless
+- Stainless
 Steel Pins
 
 Plug Unit
 
-|
-|
+‘I
+7|
 ~
 ~
 ~
@@ -586,14 +590,14 @@ Plug Unit
 ~
 ~
 ~
-£1
-Fh nN
-Hh o1
-0
-Ey oO
-oly 3
-go!
-oD
+f
+£ N
+e o1
+w
+Ey O
+oty 3
+o7
+D
 Q
 =
 
@@ -617,21 +621,21 @@ Q
 
  
 
-y Ll = a— Graphite
-= Sleeve
-on _ Fual-Handling —]
-Annular oo ee ’ Hole Dowel Pin £ —T
-Channel —, : Fuel Elements IE []
-A in Reactor wi? [7 .
-Graphite | Core ol BAN i
-Block{ = 0 CT
-v5 Fuel Element
-i J Stringer
-Lun 520 mm (not to scale)
-| c 10) Il |
-7 Dowel Socket 1 ro
-Tl ad
-eg
+y L = a—Graphite
+A B T Sleeve
+. _ Fual-Handling ]
+Annular I:;i::;a::m ' Hoia _.:’l Dowel Pin % —
+Channel—, % : Fuel Elements EIE [
+N in Reactor w(? [
+Graphite | Core 3l BN i
+Slockn{ =0 T
+v 5 Fuel Element
+i T Stringer
+L %50 mm (not to scale)
+| c 10T Il |
+,f’” Da.-.-él_é;:h;:-"'l“: _f;i{’a
+T e, e
+"-.__I.r__.-'
 Prismatic Fuel Block Stringer Pebble Bed )
 
  
@@ -695,7 +699,7 @@ High-temperature reactors
  
 
 Environment LWR HTGR Pebble AGR LMR MSR | LS-VHTR
-Metal-pin | Prismatic Pebble Metal-pin Metal-pin oo Prismatic
+Metal-pin | Prismatic Pebble Metal-pin Metal-pin . Prismatic
 
 Fuel form assembly | graphite bed assembly assembly Liquid graphite
 
@@ -703,13 +707,13 @@ Temperature (°C) <<100 <100 950 640 (750) 370 (540) 654 550
 
 Pressure (bar) 1 1 40 43 1 1 1
 
-Coolant environment Water Helium Helium Carbon Sodium Molten Liquid salt
+Coolant environment Water Helium Helium Carbpn Sodium Molten Liquid salt
 
 dioxide salt
 Visibility Clear Clear Clear Clear Opaque Partly Clear
 opaque
 
-Assemblies per MW(e) | 0.2-0.4 4.5 0.5 0.5 0 0.22
+Assemblies per MW(e) | 0.2-0.4 4.5 0.5 0.5 0 0.2—2
 
 No. of reactors >300 2 3 14 >20 2 0
 
@@ -739,18 +743,18 @@ reactors.
 
 The refueling studies that have been initiated have led to several conclusions.
 
-* Limits. No fundamental difficulties were identified for refueling an LS-VHTR. In terms of refueling
+e Limits. No fundamental difficulties were identified for refueling an LS-VHTR. In terms of refueling
 conditions (temperature, salt environment, pressure, etc.), the key technologies and experience for
 refueling operations already exist. However, no refueling has been performed under the specific
 combination of conditions that 1s expected for the LS-VHTR. As with any new reactor concept, the
 development of the refueling machine will require significant detailed mechanical design and testing.
 
-* Fuel forms. The three alternative fuel forms for an LS-VHTR have very different characteristics and
+*  Fuel forms. The three alternative fuel forms for an LS-VHTR have very different characteristics and
 different refueling strategies. Trade studies will be required to determine the optimum reactor core
 and fuel configuration. Our preliminary assessment suggests that both pebble bed and stringer-type
 cores would be easier and faster to refuel than the Fort St. Vrain prismatic cores.
 
-» Instrumentation. The optical characteristics of the liquid-salt coolant and recent advances in optical
+o Instrumentation. The optical characteristics of the liquid-salt coolant and recent advances in optical
 
 technologies may result in major improvements in instrumentation capabilities relative to those used
 in existing sodium-cooled and high-temperature reactors.
@@ -758,7 +762,7 @@ in existing sodium-cooled and high-temperature reactors.
 XV
 Blank page
 
-xvi
+xvil
 1. INTRODUCTION
 
 The Advanced High-Temperature Reactor (AHTR) 1s a new reactor concept (Ingersoll and
@@ -769,7 +773,7 @@ hydrogen production with peak coolant temperatures near 950°C. A critical econo
 reactors 1s safe fast refueling for high plant availability. The liquid salts have high melting points; thus,
 the AHTR refueling temperatures will be between 400 and 550°C, higher than those for many other
 reactors. Furthermore, the refueling operations will be conducted in liquid salt. A series of investigations
-were Initiated to understand the refueling challenges and options. Because no LS-VHTR has yet been
+were 1nitiated to understand the refueling challenges and options. Because no LS-VHTR has yet been
 built, there 1s no directly applicable experience in these activities. However, a large experience base
 exists in refueling many types of high-temperature reactors (Paget, 1967). Integrated studies at
 
@@ -811,7 +815,7 @@ The LS-VHTR, also called the AHTR, is a new reactor concept that combines in a n
 established technologies: (1) coated-particle graphite-matrix nuclear fuels, (2) Brayton power cycles,
 
 (3) passive safety systems and plant designs previously developed for liquid-metal-cooled fast reactors,
-and (4) low-pressure liquid-salt coolants. The peak coolant temperatures are between 700 and 950°C,
+and {4 ) low-pressure liquid-salt coolants. The peak coolant temperatures are between 700 and 950°C,
 with the specific design temperature dependent upon the mission. The highest-temperature variant of the
 AHTR, the LS-VHTR, will be for hydrogen production and may have peak coolant temperatures of
 ~950°C. The AHTR designs for electricity production will likely have lower peak coolant temperatures.
@@ -819,56 +823,73 @@ AHTR, the LS-VHTR, will be for hydrogen production and may have peak coolant tem
 A system schematic is shown in Fig. 2.1, while Fig. 2.2 shows a specific design concept. During
 operation, heat is transferred from the reactor core by the primary liquid-salt coolant to an intermediate
 heat-transfer loop. The intermediate heat-transfer loop uses a secondary liquid-salt coolant to move the
-heat to a thermochemical hydrogen production facility or to a turbine hall to produce electricity. If
+heat to athermochemical hydrogen production facility or to a turbine hall to produce electricity. If
 electricity is produced, a multi-reheat nitrogen or helium Brayton power cycle (with or without a
 bottoming steam cycle) is used. Electrical efficiencies are expected to be near 50%. Alternative design
 configurations are being considered, including three alternative-decay-heat removal systems, five
 alternative fluoride salts, and three reactor fuel configurations.
 
-asa5e
+08 068
 
 Passive Decay Hydrogen/Brayton-Electricity
 Heat Removal Reactor Production
 Oxygen
 
 DRACS Hot Air Out
+Air Heat
 
  
-
  
-
- 
-
-  
  
 
  
 
    
-    
   
 
  
 
-Air Heat
-Hot Salt Ha
-| Water
-Cold Salt
+   
+  
+
+ 
+
+ 
+ 
+  
+
+,_‘ ~ Primary Salt
+(Closed System) Gas
+Compressor
+
+ 
+
+ 
+
+Exchanger
+" Hot Salt &
+3 Cold Sai | 2
+Air Inlet \ Watat
+"@ % Cold Salt
 Hot Liquid Salt
-Hot Salt
-Intermediate Heat |
-Fluidic Diode
-Exchanger Cold Salt Generator
-(In-vessel
-or Ex-vessel)
-PRACS Heat < Cool Pool Salt Helium or Nitrogen Recuperator
-Exchanger Primary Salt
-(Closed System) oi
-‘Compressor
+— Vessel Hot Salt
+idic Di ~Intermediate Heat |
+Fluidic Diode - =
+e[ WXCHARGAT Cold Salt Generator
+[ ™l {In-vessel
+| or Ex-vessel)
+PRACS Heat | | ~Cool Pool Salt e — Reaanier
+Exchanger— \ |
+&»}‘
+
+ 
+
+™. ™ ™
+
 Cooling Water
 
 Fig. 2.1. Schematic of the LS-VHTR. (DRACS = direct reactor auxiliary cooling system;
-PRACS = pool reactor auxiliary cooling system.)
+PRACS = pool reactor auxiliary cooling system. )
 POWER REFUELING
 
 Neutron control OPERATION
@@ -894,7 +915,7 @@ Shielding plug
 
 Refueling machine
 Reactor cover
-Control rods It Local fuel
+Control rods it Local fuel
 Transfer gantry Fuel transfer storage hot cell
 
 1
@@ -903,9 +924,9 @@ surface elev.
 
 Pump seal bowl |
 Pump impeller
-IHX modules
+[HX modules
 
-Reactor core 19.5 m
+Reactor core 19.5m
 
 Radial reflector
 Reactor vessel
@@ -923,7 +944,7 @@ cavity liner
 
  
 
-0m
+0Om
 
 Fig. 2.2. Elevation view of the AHTR with metallic internals (AHTR-MI) for normal operation (left)
 and refueling (right) modes. [HX = intermediate heat exchanger; DHX = decay heat exchanger;
@@ -977,16 +998,16 @@ Fluoride| Composition | Melting point [Density
 
  
 
-Salt | (mole %) CC) |(@/em) Notes
+Salt | (mole %) ©C)  |(@/em) Notes
 Best neutronics, Be toxicity, high Li cost,
-'LiBe 67-33 460 1.94 |experience: MSRE, no gamma emitters, low
+'LiBe 67-33 460 1.94 lexperience: MSRE, no gamma emitters, low
 density (fuel buoyancy)
 NaBe 57-43 340 2.01 [Low MP, Be toxicity, low density (fuel buoyancy)
-— 5
-1 NaZil 26-37-37 136 279 Small addition of expensive Li (2 wt %), low
+— , , S
+T iNaZil 26-37-37 136 279 Small addition of expensive Li (2 wt %), low
 
 toxicity
-Inexpensive, low toxicity, experience: aircraft
+[nexpensive, low toxicity, experience: aircraft
 nuclear propulsion salt
 
 [nexpensive, max freeze protection with minimum
@@ -995,7 +1016,7 @@ neutronic questions
 
  
 
-NaZr | 59.5405 500 3.14
+Nazr | 59.5-40.5 500 3.14
 
  
 
@@ -1052,7 +1073,7 @@ online.
 In last 40 years, the fuel burnup in light-water reactors (LWRSs) has increased from ~20,000 to
 ~60,000 MWd/ton. This increased burnup has reduced refueling operations and was a major factor in
 reducing refueling times. The same economic drivers exist for the LS-VHTR and may result in
-significant reductions in refueling time as the technology is developed.
+significant reductions in refueling time as the technology 1s developed.
 
 Coated particle fuels have been shown to be capable of sustaining much higher burn up levels than LWR
 fuels. Refueling durations for reactors with offline refueling will ultimately be constrained by the
@@ -1069,12 +1090,12 @@ operational constraint in refueling. In sodium-cooled fast reactors, it is usual
 constraint in terms of refueling. For the LS-VHTR, however, this major refueling challenge will be
 significantly less than in water-cooled and sodium-cooled power reactors for the following reasons.
 
-e Power density. The expected power density of the LS-VHTR is about 10 W/cm” vs 50 W/cm” for
+e Power density. The expected power density of the LS-VHTR is about 10 W/cm® vs 50 W/cm® for
 boiling-water reactors, 100 W/cm” for pressurized water reactors, and several hundred watts per cubic
 centimeter for sodium-cooled fast reactors. The decay heat from SNFs 1s roughly in proportion to the
 power densities during operations.
 
-* Peak fuel temperatures. The high-temperature reactor fuels operate at temperatures up to 1250°C.
+*  Peak fuel temperatures. The high-temperature reactor fuels operate at temperatures up to 1250°C.
 This factor makes it much more difficult to cause fuel failure during refueling by overheating than 1s
 the case with other types of SNF.
 
@@ -1144,7 +1165,7 @@ Fig. 2.3. Temperature rise per unit time as a function of cooling time. PD = pow
 pebble and stringer fuels that will be refueled online, reliable cooling of the removed SNF will be
 required as is done for gas-cooled high-temperature reactors with on-line refueling (Sect. 4.3). For offline
 refueling, there will be a day or two after shutdown before the reactor refueling is started. This greatly
-reduces the cooling requirements for the SNF, as shown in Fig. 2.3, and in most cases will allow
+reduces the cooling requirements for the SNF, as shown in Fig. 2.3, and 1n most cases will allow
 conduction and natural circulation to provide the required decay-heat cooling—as has been done in the
 refueling of high-temperature gas-cooled reactors (Sect. 4.1). The estimates in Fig. 2.3 provide a
 conservative upper bound for the type of temperature rises that would be obtained.
@@ -1214,28 +1235,28 @@ Table 3.1. Characteristics and operation time for ORNL salt and liquid metal pum
  
 
 . ya Head Flow Speed | Temperature | Number Total
-Model Fluid (ft) | (gal/min) | (rpm) (°F) built hours
-LFB Na, Nak, 1) 5 6000 1100-1400 46 466,000
+Model Fluid (ft) | (eal/min) | (rpm) (°F) built hours
+LFB Na, Nak, 1 ) 5 6000 1100—1400 46 466,000
 and MS
-DANA Na, Nak, 1 5 150 3750 1000-1500 10 57.000
+DANA Na, Nak, 1 5 150 3750 1000—1500 10 57.000
 and MS
-DAC MS 50 60 1450 1000-1400 3 4,000
+DAC MS 50 60 1450 1000—1400 3 4,000
 In-Pile Loop MS 10 1 3000 8 14,000
-MEF Rags and 50 700 3000 1100-1500 3 41,000
-PKA Rags and 400 375 3550 700-1500 2 21,500
-PKP Rags and 380 1500 3500 700-1500 4 45,000
-MSRE fuel MS and 1000-1225 31.600
-salt pump Helium 50 1200 75 100-1200 2 6,000
-MSRE coolant | MS and 1000-1225 24.600
+MEF Naﬁ;‘nd 50 700 3000 1100-1500 3 41,000
+PKA Naﬁ;‘nd 400 375 3550 700—1500 2 21,500
+PKP Naﬁ;‘nd 380 1500 3500 700—1500 4 45,000
+MSRE fuel MS and 10001225 31,600
+salt pump Helium >0 1200 175 100-1200 2 6,000
+MSRE coolant | MS and 10001225 24.600
 salt pump Helium 78 800 1775 100-1200 2 4,000
-MSRE Mark-2 MS 50 1200 1175 1000-1300 1 14.000
+MSRE Mark-2 MS 50 1200 1175 10001300 1 14,000
 fuel salt pump
 ALPHA MS 300 30 6500 850-1400 1 6,000
 Total 82 734,700
 
  
 
-"MS refers to tests in liquid salts (clean salts) and molten salts that contained uranium, thorium, and
+*MS refers to tests in liquid salts (clean salts) and molten salts that contained uranium, thorium, and
 fission products.
 These large programs developed the base technology for handling liquid fluoride salts including pumps,
 bearings (Smith 1961), valves, filters, cover-gas isolation systems between the salt and the atmosphere,
@@ -1256,7 +1277,7 @@ Corrosion rates in clean salt were very low compared with those in uranium-beari
 to corrosion rates seen in other power reactors. The ORNL experience provides real-world data on
 operations with liquid salts that have compositions similar to those being considered for the LS-VHTR.
 
-Because it is a liquid-fuel reactor, the MSR did not require traditional refueling equipment. The fuel was
+Because it 1s a liquid-fuel reactor, the MSR did not require traditional refueling equipment. The fuel was
 simply drained or pumped from the reactor. However, the graphite moderator in the reactor core was
 expected to be damaged by high-energy neutrons and to require replacement one or more times in the
 lifetime of a commercial reactor. Although studies were conducted to determine how to replace the
@@ -1348,35 +1369,35 @@ variants that incorporate salt cooling.
 Stroke
 Fuel Transfer
 Mechanism
-Nr
+N
 Grapple
 Head
 25cm
-‘ Tie Bar
-= — (~1-cm diam)
-ji] £ A A El MEN
-Fuel- 3 T° / ~~ Stainless
-Handling 0 / Steel Pins
+| ‘ :‘rTie Bar
+= o (~1-cm diam)
+:) <E|- “ d ii=ri i:‘ﬁl?w"
+Fuel- 3 o / N Stainless
+Handling o / Steel Pins
 Probe 7
-\ — 1 ii
-NER v E a— Graphite
-7 ~ = rH T Sleeve
-Fuel-Handling ~~ Tr Tr] 1
-Fuel Rod-, 0
-ey Hol . —
-Annular Coolant | Dowel Pin o [|
-Channa] — == Fuel Elements & E
-==. in Reactor n° ~
-Graphite = | Core 1 ©.
-Block AU LHF Cl [B ST
-| I Fuel Element
-x
-Ti Stringer
-i SE mm (not to scale)
-“1
-kL {MH At
-~~ Dowel Socket” Ly |
-Ts) my, ~~
+\ [ "1 B
+L v L £ a—Graphite
+/ ] = A H T Sleeve
+Fuel-Handhng ~ T T -
+Fuel Red-, °
+Y Haol . —
+Annular Coolant |/ DowelPin o [
+Charnnal— ﬁh Fuel Elements QE) £
+e in Reactor m(® M
+(Graphite I "’:E%ﬁ:’] | Core 1N .
+Block- WU L7 Tl \I/
+[ I Fuel Element
+S
+T Stringer
+H S5 mm (not to scale)
+1
+o r J[l_____“- _.-'"'_.—-
+" Dowel Socket" 1y |~
+---""'i'ﬁ"-‘-:i_-"l_:_r.-u ~
 Prismatic Fuel Block Stringer Pebble Bed )
 
  
@@ -1406,22 +1427,32 @@ The graphite-matrix coated-particle fuel can be incorporated into prismatic grap
 are the fuel assemblies for HTGRs. Several variants of this specific fuel form exist. The graphite block
 has coolant channels. Typically, the microspheres are incorporated into graphite fuel compacts in which
 the microspheres are mixed with graphite powder and compressed. The compacts are then placed in fuel
-holes drilled into the prismatic graphite block.
-
- 
-     
- 
-
-— Pyrolytic Carbon
+holes drnlled into the prismatic graphite block.
 
  
 
-Silicon Carbide
-~— Porous Carbon Buffer
+—f§——— Pyrolytic Carbon
+| Silicon Carbide
+——Porous Carbon Buffer
 
-~~ Fuel Kernel
+T Fuel Kernel
+
+ 
+
+ 
+
+ 
+
+ 
 
 FUEL PARTICLE
+
+U
+
+—
+
+  
+
 FUEL COMPACT FUEL ASSEMBLIES
 
 Fig. 4.2. Prismatic high-temperature fuel.
@@ -1455,7 +1486,7 @@ prestressed-concrete reactor vessel (PCRV), removed the SNF blocks via a robotic
 from the refueling machine, withdrew the SNF from the reactor vessel, and then placed the SNF in a
 transfer cask. The operations were controlled by computer with operators monitoring the progress. This
 strategy results in short refueling outages for movement of the SNF. The SNF in the cask was then
-transferred to dry storage wells with water-cooled walls. To avoid the potential for fire if the SNF were
+transferred to dry storage wells with water-cooled walls. To avoid the potential for fire 1f the SNF were
 exposed to air, the SNF temperature in the transfer cask and storage facilities was limited to ~400°C
 (750°F). Fresh fuel was then loaded in the reverse order.
 
@@ -1479,67 +1510,64 @@ helium reactor (GT-MHR) machine [General Atomics, 1996], the follow-on gas-coole
 plants designed in the 1970s.
 
 13
-a6.014m2
-Drive Sprockets
+\ 05-014R2
+Drrive Sproc
 
    
-   
   
-   
+  
+  
+  
+ 
 
-Hoisting Chain
+Hoisting
+
+-
+
+ 
+
+ 
 
   
-  
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
  
 
 Fuel Transfer
-
-Refueling Mechanis
+Refueling M
 Machine
-
-i=.
-=== "1 Reactor
-- Vessel
-
-20m
-Stroke
-
- 
-
- 
-
-Shielding:
-
- 
-
- 
-
+= Shield
+Grapple =
+Head Heactor
+Vessel
 Grapple
-Head:
-Grapple Hea
 
 Fuel Elements in
 Storage Rack
 
  
 
- 
+Reactor ksolation
 
-Reactor Isolation
-Valve
+Counterweight Valve
 
- 
+F Reactor
+Core
 
-Counterweight.
-| Reactor
+Tep of Reactor
 
-Core Top of Reactor
-
-Cask Valve:
+Cask v
 
 Fuel Elements in
-Reactor Gore
+Reactor Core
 
 Refueling Sleeve
 
@@ -1550,7 +1578,7 @@ and refueling machine placing fuel element in transfer cask.
 The number of fuel elements to be moved may be significantly less in an LS-VHTR compared with the
 historical experience with large prismatic-fueled gas-cooled reactors.
 
-Plant efficiency. The earlier HTGRSs used a steam cycle that had a lower electricity-to-heat ratio than
+Plant efficiency. The earlier HTGRs used a steam cycle that had a lower electricity-to-heat ratio than
 that of the LS-VHTR. This lower efficiency implies that these gas-cooled reactors require (1) more
 thermal energy, (2) more fuel assemblies, and (3) more refueling operations per unit of electrical. As
 shown in Table 4.1, the number of fuel blocks that must be handled per unit power output is expected
@@ -1567,11 +1595,9 @@ would be required to determine the optimum fuel element height.
 14
  
 
-Fig, 44. Photograph of Fort St. Vrain refueling machine.
+Fig. 4.4. Phoiograph of Fort 5. Vrain refueling machine.
 
-Table 4.1. Comparison of FSV, commerial HTGR, and LS-VHTR reactor cores
-
- 
+Tahle 4.1. Comparison of F5V, commerrial HTGR, and L5 VHTE reacior cores
 
  
 
@@ -1593,27 +1619,29 @@ Table 4.1. Comparison of FSV, commerial HTGR, and LS-VHTR reactor cores
 
  
 
-Property FSVR__| Commerial HTGR | _LSVHIR
-Grom power [MWK 52 3000 200
-Tet power MAGE] E27] Tien JE
-Huber of fuel colums 25 257 2%5
-‘Mune of fuel blocks per coum: e 3 i
-“Total marber of fue blocks 57) EI] 650
-usher of blocks per MW(e) as 34 20
+ 
+
+Property FSYR Commercial HTGR" L5 VHIR
+Gross power [IWIWI(L] B 2000 2400
+et poarer [IvIW(e]] AL 1 140 100"
+Fumber of fuel columns 250 407 265
+Murrher of fuel blocks per column £ & 10
+Total mmber of fuel blocks 1534 4044 2650
+Muroher of blocks per IWIWie) 45 4.4 20
 
  
 
-“Cone cial HTGRS were ordered and partly designed but not bt
-“Vit ml-eheat bel cooled Braston powercyel, the paver outputs 1357 MW(e) for sat exit
-erpentues of 1000 and 1235 MW(e) for sltext: brugeraties of SUC. Several coolant exit
+*Comtnercial HTGEs were ordered and partly designed but not banlt.
+"With a raulti-reheat helinra-cooled Brayton power oyele, the ponwer ontput is 1357 WOV (e) for a4t exit
+teraperabires of 1000°C and 1235 IIWie) for salt exy termperatures of B00°C. Sesveral coolant exit
 
-peratures are bing considered.
+ternperature s are being conside red.
 
 15
 
  
 Beyond the obvious difference that the salt-cooled reactor will refuel at higher temperatures in liquid salt,
-potentially significant differences are noted for refueling HTGRs when compared with LS-VHTRSs.
+potentially significant differences are noted for refueling HTGRs when compared with LS-VHTRs.
 
 Refueling machine size. The LS-VHTR 1s a low-pressure reactor with a flat vessel lid above the
 reactor core; the distance between the top of the reactor core and the top of the reactor vessel is only a
@@ -1633,7 +1661,7 @@ hold-down mechanisms are required to hold the fuel in place—as are used in a n
 of reactors.
 
 A variety of options are available to hold fuel in place. One or more of these features would likely be
-adopted if prismatic fuel is used.
+adopted 1f prismatic fuel 1s used.
 
 Lock-down mechanisms. One option is a mechanical locking device on the bottom of each fuel block
 that would engage the fuel-handling indent on the next lower fuel block. The bottom reflector block
@@ -1660,22 +1688,22 @@ that slide sideways to allow access to one column of fuel assemblies at a time. 
 plate and fuel assembly springs to hold the LWR fuel assemblies in place.)
 
 16
-0608S
+DE-DES
 
-———— Beams slide as
-necessary to
+e Beams slide as
+necessaryto
 access fuel
 assemblies
 
-  
-  
+Pins slide <
+
    
 
 Fig. 4.5. Example of a top-locking mechanism for a prismatic-fuel reactor.
 
 Several variants of the AHTR are being examined (Forsberg, 2006a). One variant (Peterson and
 
-Zhao, 2006) is the AHTR with metallic internals (AHTR-MTI), which has a design strategy to minimize
+Zhao, 2006) is the AHTR with metallic internals (AHTR-MI), which has a design strategy to minimize
 the number of high-temperature components. The proposed refueling method for this design variant is
 described as an example of an option for refueling a prismatic-fuel LS-VHTR. Figure 4.6 shows a
 vertical cross section of the reactor during normal operation and during refueling operations, while
@@ -1687,17 +1715,17 @@ and maintain column alignment.
 The initial steps in refueling are somewhat similar to those for the EBR-II (see Sect. 5). The control rod
 drives are disconnected, and the vessel lid is partly raised. Refueling of the AHTR-MI is performed using
 the same general approach that was developed and demonstrated for the FSVR, using a refueling machine
-with a grappling mechanism, and refueling the core by sector. However, unlike that for HTGRs, the
+with a grappling mechanism, and refueling the core by sector. However, unlike that for HTGRSs, the
 AHTR-MI design includes a fuel transfer channel, shown in Fig. 4.6, which allows more-rapid fuel
 movement than is possible with the transfer cask systems used for HTGRs. The fuel elements do not
 require transfer to a shielded cask; they can be directly transferred to an intermediate storage facility that
-is located outside the primary reactor vessel.
+18 located outside the primary reactor vessel.
 
 17
 POWER REFUELING
 
 Neutron control OPERATION
-assembly
+assembly ;
 
 Shielding plug
 
@@ -1723,8 +1751,8 @@ Refueling machine
 
 Reactor cover
 
-Control rods Local fuel
-Transfer gantry vit Fuel transfer storage hot cell
+Control rods ;;; Local fuel
+Transfer gantry vt Fuel transfer storage hot cell
 
 Buffer salt free
 surface elev.
@@ -1739,7 +1767,7 @@ Radial reflector
 Reactor vessel
 
 DHX w/ baffles
-PHX w/ baffles
+PHX w/ baftles
 
 Buffer salt tank
 
@@ -1747,14 +1775,14 @@ Cavity refractory
 insulation
 
 Water-cooled
-cavity liner =~ = —
+cavity liner =~ -
 
  
 
-l<
-I~
+L
+™
 
-Om dm
+Om 4m|<
 
 Fig. 4.6. Vertical cross-section of the AHTR-MI for normal operation (left) and refueling
 (right) modes. IHX = intermediate heat exchanger; DHX = decay heat exchanger; PHX = pool
@@ -1774,7 +1802,7 @@ reactor 1s a low-pressure machine that makes practical a horizontal transfer tub
 
  
 
-Replacable reflector | 16.0 m N
+Replacable reflector [t 16.0 m N
 9.0m |
 
 -
@@ -1819,14 +1847,14 @@ system channels (46
  
 
 DHX module (8) |
-PHX module (8) : | 20°
-IHX sector and
+PHX module (8) | 20°
+IHX sector and ' ’
 modules (8)
-Primary pump(4) ~~ ZN.
-Buffer tank | |
+Primary pump(4) ; ~
+Buffer tank 5 |
 Refractory cavity insulation
-Cavity liner —
-0m 4m
+Cavity liner I
+0 m 4 m
 
 Fig. 4.7. Horizontal cross section of the AHTR-MI, showing the refueling port locations.
 IHX = intermediate heat exchanger; DHX = decay heat exchanger; PHX = pool heat exchanger.
@@ -1840,9 +1868,12 @@ The vertical structures are channels for control rods.
 
 19
    
-      
  
+     
+  
+   
  
+    
 
 5mm Graphite layer
 
@@ -1852,23 +1883,23 @@ in Graphite Matrix
 Dia. 60mm
 Fuel Sphere
 
-Pyrolytic Carbon 40/1000mm
-Silicon Carbide Barrier Coating 35/1000mm
-Inner Pymlytic Carbon 40/1000mm
-Porous Carbon Buffer o5/1000mm
+Pymlytic Carbon 40/1000mm
 
-Dia. 0,92mm Oo
+Silicon Cartide Bamier Coating 3571 000mm
+Inner Pymdytic Carbon 4¢/1000mm
+
+Porous Carbon Bufferss/1o0omm
+
+Dia. 0,92mm .
 TRISO
 Dia.0,5mm
 
-Coated Particle uranium Dioxide
+Coated Particle Uranium Dioxide
 Fuel Kernel
 
-  
- 
- 
-
 Section
+
+ 
 
 Fig. 4.8. Pebble-bed fuel.
 
@@ -1886,7 +1917,7 @@ bottom. The pebbles go through the reactor core several times before being fully
 pebbles are sent through a radiation detector that determines burnup as well as the disposition of the
 pebble as SNF for disposal or for recycle back to the core for additional burnup. PBRs operate with very
 low excess reactivity and relatively low enrichments. A simplified schematic of the refueling system is
-shown in Fig. 4.10.
+shown 1n Fig. 4.10.
 
 4.2.1 Pebble-Bed-Fuel Liquid-Salt-Cooled High-Temperature Reactors
 
@@ -1909,7 +1940,7 @@ pebbles can be injected into the primary coolant piping to be carried to the rea
 refueling may be greatly simplified. Furthermore, pebble transport hydrodynamics can be reproduced in
 scaled experiments using water and polypropylene spheres, where the Reynolds and Froude numbers,
 which govern pebble bed motion, are matched at approximately 50% geometric scaling. A schematic of
-one approach is shown in Fig. 4.12. The option also exists to add mass to the pebbles, causing them to
+one approach 1s shown in Fig. 4.12. The option also exists to add mass to the pebbles, causing them to
 sink in the coolant and permitting refueling via a process similar to that for the existing PBRs.
 
 4.3 STRINGER OR ASSEMBLY HIGH-TEMPERATURE REACTORS
@@ -1929,7 +1960,7 @@ bulk gas exit temperature 1s ~640°C, with a peak channel temperature of ~750°C
 1s ~43.3 bar. The reactors have steam power conversion cycles.
 
 21
-Table 4.2. Pebble-bed reactors”
+Table 4.2. Pebble-bed reactors®
 
  
 
@@ -1962,32 +1993,38 @@ bulk gas exit temperature 1s ~640°C, with a peak channel temperature of ~750°C
  
 
 Characteristic AVR THTR HTR PBMR
-Country Germany Germany China South Africa
+Country Germany Germarny China South Africa
 Initial Operation 1967 1984 2004 2011
 Shutdown 1988 1990 Not applicable Not Applicable
 Heat [MW(t)] 10 400
 Power [MW(e)] 15 300 Not applicable 165
-Tou (°C) 950 750 700 900
+Tout (°C) 950 750 700 900
 Tin (°C) 270 250 250 500
 Pressure (bar) 11 40 30 90
 
-Fresh oe
-Fuel J]™a
+Fresh e
+Fuel \\
 
 Elevator
 
+ 
+
+ 
+
 Recycled
 Pebble
+Fuel
+
+ 
 
 Spent Nuclear Fuel
 
 Fig. 4.10. Refueling of a helium-cooled pebble-bed reactor.
 
->
+7
 
-   
-      
-     
+ 
+
  
 
 Pebbles Exiting
@@ -1995,75 +2032,78 @@ Reactor
 
 22
 
-~
-
- 
-
- 
-
- 
- 
-
-— Helium Flow
-
-Gas T= ~— Helium Flow
-
- 
- 
-
- 
-
-Fresh Fug emp |
-resh Fuel Sorter
-\
-
-06052
-
-Pebbles Exiting Reactor
-
- 
-
-Spent
-Nuclear
-Fuel
-
-Recycled
-Pebble Fuel—]
-
-Hydraulic or
-Mechanical ~~
-Delivery
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-    
- 
+  
+   
   
  
 
  
 
-a Grid Structure
+ 
 
+ 
+
+ 
+ 
+
+—  Helium Flow
+
+ 
+05002
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fresh Fuge| sy ;
+F Sorter / Pebbles Exiting Reactor
+.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+   
+
+Spent Grid Structure
+Nuclear /
+Fuel
 Hot Liquid Salt Out
-<— Cold Liquid Salt In
-
+__=+— (old Liquid Salt In
+Recycled —
+Pebble Fuel—
 Low Pressure
 Reactor Vessel
+Hydraulic or
+Mechanical —
+Delivery
+—— Neutron Absorber
 
-l—— Neutron Alsorber
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
 
  
 
@@ -2072,8 +2112,8 @@ l—— Neutron Alsorber
 Fig. 4.11. Refueling of a salt-cooled pebble-bed reactor.
 
 23
-Pebble Injection ~~ Pebble
-insertion plunger Insertion
+Pebble Injection ~ Pebble
+insertion plunger  1nsertion
 standpipe port
 (typ. 32)
 
@@ -2145,12 +2185,12 @@ the SNF pins for the purposes of disposal. It is not reused.
 24
 06-025R
 
-No
->
+N\ o
+-
 \
 
 \
-EI
+=l
 
  
 
@@ -2191,28 +2231,28 @@ EI
 
  
 
-Re 25cm
-_ 7 _ = Tie Bar
-, l= || _ (GER (~1-cm diam)
-. SIE F pg
-Sl 5 J “stainless
-ao | / Steel Pins
-— /
-= J
-/ .
-I I S a— Graphite
-. — a = / ~—
-Graphite Ay BH Sleeve
+e 25cm
+_ 7 . - ‘/'/—Tie Bar
+, El= || . ’/;{ﬂf%h\i\ (~1-cm diam)
+. SIE F § /ey
+Sl B / \-Stainless
+o g / Steel Pins
+) /
+=
+// .
+N I S a— Graphite
+. — = / ~—
+Graphite Ay B/ Sleeve
 Reactor Core— LV
-v0)
-© <
-Ele HO
-Prestressed- olf |] NY
-Concrete wiz | “NL
-Reactor © Xo py
-3 _— ee
-Vessel— | IC i
-r-. I Fuel
+2]
+c <
+Ele B
+Prestressed- olE |
+Concrete Wz | N
+Reactor © X J
+0 —_— e
+Vessel/ I i
+- Fuel
 Element
 Stringer
 Advanced Gas-Cooled Reactor (not to scale)
@@ -2241,9 +2281,9 @@ hot channels.
 
 Fig. 4.14. Dungeness B Advanced Gas-Cooled Reactor. (Courtesy of British Energy.)
 
-‘When the plants were originally built, the AGRs were refueled online at full power for several years. A
+When the plants were originally built, the AGRs were refueled online at full power for several years. A
 cracked graphite sleeve in one of the Hinkley Point B reactors led to a change in the refueling strategy.
-Ata certain point when fresh fuel was being loaded into the operating reactor, the gas pressure inside the
+At a certain point when fresh fuel was being loaded into the operating reactor, the gas pressure inside the
 graphite sleeves in the reactor core exceeded the external coolant pressure, leading to tensile stresses and
 cracking in the graphite sleeve. The evaluations indicated that the full-power online refueling was
 practical but that the cost of in-core retrofits to modify the gas flow dictated different solutions for
@@ -2294,16 +2334,16 @@ has been performed. A significant fuel development effort would be required.
 
  
 
-| a— Graphite
-wl = Sleeve
+|/ a—Graphite
+vl = Sleeve
 0
-Cc o o °
-& _ AR
-o £ o o o
-|
-3 | -
+C o o °
+GE) _ o"(>“;°o
+Q 5 o o o
+|z
+E || -
 
-] Moderator
+] Moderato.r
 
 Y = Elements in
 
@@ -2323,9 +2363,9 @@ SiC
 
 Low-Density PyC—
 
-Ne
+N
 
-a 26 MIM-»>
+- 26 MIM->
 
  
 
@@ -2342,7 +2382,7 @@ Particle
 
 \
 
-y
+Y
 
  
 
@@ -2395,22 +2435,22 @@ Dowel Pin
 
  
 
-N\
+AN
 
 Fuel-Handling
 Fuel Rod Hole
-Annular Coolant .
-Channel —_ Leen IN
-~~ Plug sea oe
-EH . ; To
+Annular Coolant @/
+Channel—_ e I\
+/—Piug @5%%@@@
+& . ; T
 ; Graphite = | >
-| ~Fuel Block] HS
-Compact SH
-~—Graphite |
-Sleeve | ©
-Phi
-| fh
-> 34 mm dd] |
+| ~Fuel Block~| S
+Compact S
+~+—Graphite |
+f Sleeve |-
+i
+| )
+> 34 mm U] ]
 < Dowel Socket
 Fuel Rod Fuel Block
 
@@ -2436,7 +2476,7 @@ Handling Hole
 
 _—Fuel Pins
 
-_—— Coolant Channel
+_——Coolant Channel
 
 ——— Graphite Sleeve
 
@@ -2448,7 +2488,7 @@ _—— Coolant Channel
 
  
 
-~~~ Graphite
+T~ Graphite
 
 Fig. 4.18. Moderator block with stringer fuel assembly.
 
@@ -2468,7 +2508,7 @@ before being cancelled. These machines provide a large experience base in refuel
 
 The facility designs and many of the refueling characteristics of the LS-VHTR are similar to those of
 sodium-cooled fast reactors. As a consequence, much of the refueling technology for sodium-cooled fast
-reactors is applicable to an LS-VHTR with relatively minor changes required. This technology is
+reactors 1s applicable to an LS-VHTR with relatively minor changes required. This technology is
 reviewed herein. The reactors have the following similarities.
 
 » Low pressure. Both types of reactors use coolants with vapor pressures significantly <1 atm. The
@@ -2477,9 +2517,9 @@ rotating plugs allow refueling machines to be positioned above any location in t
 unlike high-pressure gas-cooled reactors, in which the access is limited. This is a major advantage for
 refueling and maintenance operations.
 
-* Controlled atmosphere. Sodium reacts rapidly with air and water, while liquid salts react very slowly
+*  Controlled atmosphere. Sodium reacts rapidly with air and water, while liquid salts react very slowly
 (see Sect. 3). In both cases, an inert atmosphere must be maintained above the liquid coolant to
-ensure coolant purity. Argon has been traditionally used as the cover gas in fast reactors because it is
+ensure coolant purity. Argon has been traditionally used as the cover gas in fast reactors because it 1s
 chemically inert, inexpensive, and dense relative to air. A heavy gas will remain in place whereas a
 light gas such as helium tends to move upward through the seals in the reactor-lid plugs while air
 tends to move downward. It is likely that argon will also be the cover gas for the LS-VHTR for
@@ -2487,7 +2527,7 @@ similar reasons. Both sodium and liquid-salt vapors can “freeze out” on cold
 avoided by the use of inert-gas purge flows to keep joints (such as in the rotating plug) free of frozen
 coolant.
 
-* High temperatures. Both reactors operate at high temperatures. The peak refueling temperatures in
+* Hightemperatures. Both reactors operate at high temperatures. The peak refueling temperatures in
 some sodium-cooled fast reactors are similar to those of the LS-VHTR. The EBR-II in Idaho had a
 nominal refueling temperature of 370°C, whereas the FFTF at the Hanford site in Washington had a
 nominal refueling temperature of 315°C. However, the peak allowable fuel-handling temperatures for
@@ -2544,7 +2584,7 @@ materials compatibility and strength characteristics. In liquid-sodium systems, 
 typically stainless steel (316 or 304), which has excellent strength properties to 550°C and beyond.
 
 5.2.1 EBR-II Fuel-Handling System
-The EBR-II fuel-handling system is designed to facilitate loading of fresh fuel into the reactor and
+The EBR-II fuel-handling system 1s designed to facilitate loading of fresh fuel into the reactor and
 removal of SNF from the reactor to the adjacent fuel cycle facility (EBR-II, 1971; Koch). The fuel-
 
 handling system is displayed in Fig. 5.1, which shows the reactor, the fuel gripper, and the hold-down
@@ -2554,183 +2594,93 @@ mechanisms, the transfer arm, the storage basket, and the fuel-unloading machine
 STORAGE BASKET SUPERSTRUCTURE
 
  
-
  
-
  
-
  
-
  
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-GRIPPER DRIVE MECHANISM
-REACTOR COVER LIFTING MECHANISM PE
-— [I
-H TRANSFER FUEL UNLOADING MACHINE
-OPERATING
-CONTE OD DRIVE PEDESTAL RADIAL BIOLOGICAL
-IN
-LATFORM a /
-ROTATING PLUGS PLUG 7
-SEALS |.
-OPERATING IW
-FLOOR
-REACTOR
-COVER .
-LOCKING 3 4
-MECHANISM i) COFFIN PIT
-TOP
-BIOLOGICAL A 3
-SHIELD {7 I
-SODIUM LEVEL — ee] ee INTERBUILDING
-REACTOR COVER — | = 1lli=
-LIFTING COLUMN (2) BLAST SHIELD
-
- 
-
- 
-
-REACTOR COVER
-(RAISED POSITION)
-
-REACTOR COVER
-LOCKING MECHANISM (3)
-
-CONTROL ROD DRIVE SHAFT(12)
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-REACTOR —m8mMm8¥——— |
-
-NEUTRON SHIELD em
-
- 
-
-RE-6-20063-E
-
- 
-
- 
-
- 
-
- 
-
   
  
-    
  
-
  
-
  
-
+  
+  
  
-
  
-
  
-
+  
+  
  
-
+  
+  
+  
+  
+  
  
+   
 
-GRIPPER MECHANISM
+GRIPPER DRIVE MECHANISM
+
+REACTOR COVER LIFTING MECHANISM
+
+FUEL UNLOADING MACHINE
+
+   
+
+TRANSFER
+A
+
+OPERATING
+
+CONTROL ROD DRIVE
+
+RADIAL BIOLOGICAL
+LIFTING PLATFORM SHIELD
+
+ROTATING PLUGS
+OPERATING
+FLOOR
+
+REACTOR
+COVER
+LOCKING
+MECHANISM
+
+TOP
+BIOLOGICAL
+SHIELD
+
+COFFIN PIT
+
+INTERBUILDING
+
+SODIUM LEVEL COFFiN
+
+REACTOR COVER
+
+LIFTING COLUMN (2) BLAST SHIELD
+
+REACTOR COVER GRIPPER MECHANISM
+
+(RAISED POSITION)
 
 FUM GRIPPER
+REACTOR COVER
 
-TRANSFER ARM
-PRIMARY TANK
+LOCKING MECHAN!SM (3) TRANSFER ARM
+
+CONTROL ROD DRIVE SHAFT(12) PRIMARY TANK
 
 SUBASSEMBLY
 
-‘oy TTT SUBASSEMBLY HOLDDOWN
-
+SUBASSEMBLY HOLDDOWN
 MECHANISM
 
-TT STORAGE BASKET
+REACTOR STORAGE BASKET
 
- 
+NEUTRON SHIELD
+
+RE 6-20063-E
 
 Fig. 5.1. EBR-II fuel-handling system.
 
@@ -2786,7 +2736,7 @@ reactor component is the closed loop ex-vessel machine (CLEM), shown in Fig. 5.3
 components into the reactor vessel and removes all components from the reactor core. Fresh driver fuel
 and all SNF is transferred to and from the reactor in a core component pot (CCP) that can be inserted
 or removed through one of three fuel transfer ports in the reactor vessel top cover. The in-reactor
-components consist of three in-vessel handling machines (IVHMs) plus the three in-vessel storage modules.
+components consist of three in-vessel handling machines (IVHMSs) plus the three in-vessel storage modules.
 The FFTF requires three IVHMSs because of closed test loops in the reactor core which interfere with direct
 access to the entire reactor core with one machine.
 
@@ -2796,15 +2746,14 @@ assembly is flooded with argon and heated to ~450°F (232°C). The assembly is t
 bottom-loading transfer cask and is transported, in an argon atmosphere, to the interim decay
 storage vessel. The assembly is then lowered into a sodium-filled CCP in the interim decay
 storage vessel. The assembly is held in liquid sodium at 500°F (260°C) to 600°F (316°C) until the
-reactor is shut down for refueling.
+reactor 1s shut down for refueling.
 
 34
  
 
 FUEL STORAGE
 
-am [|
-T=
+1 | =
 
  
 
@@ -2820,32 +2769,37 @@ T=
 
 /’
 INTERIM DECAY
+BOTTOM LOADING ' / STORAGE CELL
+
+ 
+
+TRANSFER CASK ™~
+(BLTC) .
 
  
 
  
 
- 
-
- 
-   
- 
+    
+  
 
  
 
  
 
- 
-
-BOTTOM LOADING : STORAGE CELL
-TRANSFER CASK ~~
-(BLTC) a
 INTERIM EXAM AND
-ey i “ MAINTENANCE CELL
-RAILS
-T
-CORE COMPONENT — | TEST ASSEMBLY
-CONDITIONING CONDITIONING STATION
+" MAINTENANCE CELL
+
+\ TEST ASSEMBLY
+
+CONDITIONING STATION
+
+ 
+
+ 
+
+1
+CONDITIONING ( )
 STATIONS (2)
 
  
@@ -2858,42 +2812,37 @@ STATIONS (2)
 
  
 
-— am we —- o e— -— a
-
-N :
-NN REACTOR VESSEL
-
-NN / AND REACTOR HEAD
-== ~L
+ 
 
  
 
  
 
+REACTOR VESSEL
+/ AND REACTOR HEAD
 IN-VESSEL
-~~ HANDLING
+
+~— \ / HANDLING
+
 MACHINES (3)
 CLEM CLEM IN
 RAILS PARKED
-: POSITION
+. POSITION
 
 Fig. 5.2. General arrangement of FFTF reactor refueling facilities.
 
 35
  
 
-Fig 53. FFTF choad Joop exc vessel machine (rsd machine on xsl tral).
-geal ee
+Fig, £.3. FFTF chzaad lbop ex-vessel naachime {red nxarhme onrail tracks)
 
-m———
+36
+—
+— L -
+=3
 
-TT TTX
-'at— CLOSED LOOP Ae
-
-Te—
-EX-VESSEL MACHINE — |
-
- 
+lat— CLOSED LOOP ™~ s
+EX-VESSEL MACHINE —L.—' |
 
  
 
@@ -2901,93 +2850,117 @@ EX-VESSEL MACHINE — |
 
  
 
-SPENT FUEL TO : | T
-FUEL STORAGE _ - - /
-
-i j /
-FACILITY, — — 5 — |N-VESSEL HANDLING
-
-      
-   
-    
- 
  
 
+SPENT FUEL TO
+FUEL STORAGE -
+Ty -
+FACIL - ";
+INCOMING
+FRESH FUEL
+
+ 
   
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-  
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
 MACHINE
-INCOMING
-FRESH FUEL | BOTTOM LOADING
-TRANSFER CASK ye
-|
+
+N
+
+REACTOR
+
+-
+= ! T :
+(bl _ /
+I | - | /
+IN-VESSEL HANDLING
+
+   
+
+BOTTOM LOADING
+TRANSFER CASK
+
+ 
+   
+   
+   
+ 
+ 
+ 
+
 CORE
 COMPONENT
-\ CONDITIONING ER
-: STATION 0
-STORAGE REACTOR
-Fig. 5.4. FFTF driver fuel-handling sequence.
-CLOSED LOOP TF
-EX-VESSEL |_|
-MACHINE EEE
-(CLEM)
-DO —wmemmpe——0O0
-[~ IN-VESSEL
-HANDLING
-: MACHINE
-A vim)
-IN-VESSEL
-STORAGE —» REACTOR
-MODULE CORE
-INTERIM DECAY REACTOR
+CONDITIONING 'NTE“':‘("
+STATION DECA
+_STORAGE
 
+  
+
+Fig. 5.4. FFTF driver fuel-handling sequence.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+CLOsEDLlOOP %
+||
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+EX-VESSEL
+MACHINE HHEHR1t
+(CLEM)
+DO—wemaw——OQO
+IN-VESSEL
+| HANDLING
+- MACHINE
+- vHM)
+IN-VESSEL
+STORAGE ——» | REACTOR
+MODULE CORE
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+REACTOR
+
+INTERIM DECAY
 STORAGE
 
 Fig. 5.5. FFTF driver fuel-handling sequence between interim
@@ -3028,12 +3001,12 @@ Refueling operations can be accomplished only when the reactor is shut down.
 A view of the general arrangement of the fuel-handling system 1s shown in Fig. 5.6. New fuel assemblies
 arrive at the plant in shielded and cushioned containers. They are unloaded and inspected in a shielded
 new fuel-handling facility located in the reactor service building (RSB). Upon acceptance of a core
-component, it is stored in a subcritical array in a storage facility located in the floor of the new fuel-
+component, it 1s stored in a subcritical array in a storage facility located in the floor of the new fuel-
 handling facility.
 
 In preparation for the refueling cycle, new fuel assemblies are removed from the storage facility in a
 shielded transfer machine and inserted into a gas-filled thimble in the EVST. During the course of this
-operation, the air atmosphere in the shielded transfer cask is exchanged for an inert, dry argon
+operation, the air atmosphere in the shielded transfer cask 1s exchanged for an inert, dry argon
 atmosphere, which is compatible with the liquid sodium environment in the EVST. The new core
 components are loaded into preheat tubes in the EVST at 475°F (246°C). After preheating, the EVTM is
 used to transfer the fresh fuel assemblies to sodium-filled core component pots (CCPs) that are also
@@ -3049,71 +3022,75 @@ into a transfer position on the periphery of the reactor core in the reactor ves
 SDD 41
 Rev 1
 
-RS8 PLUG STORAGE
+RSB PLUG STORAGE
 
-       
- 
- 
-  
+    
   
   
  
  
+    
  
-  
-  
-  
-  
-  
+ 
 
-NEW FUEL UNLOADING STATION
+MEW FUEL UNLDADING STATION
 
-SB (HARDENED STRUCTURE)
+RSB CRANE
+(REF]
+
+?:n I.HARDENED STRUCTURE]
+EF
+
+RSB (NON-HARDENED STRUGTURE}
 
 POLAR CRANE
-EF) 8 (NONHAROENED STRUCTURE)
+[AEF)
+{REF}
+RCE
+{REF)
 
-Res
-te)
+HATCH COVER
+(STORED POSITI N}
 
-MATCH COVER
-{6TORED POSITION)
 MEZZANINE
+S
+*--
 
-Ann
-(NSTomace Pm)
+AHM -
+{IN STORAGE PIT} —
 
-FUEL TRANSFER PORT
-ABAPTER STORAGE.
+FUIEL TRANSFER PORT
 
-IVIM MAINTENANCE
-&/STORAGE FIT
+ADAPTER STORAGE
+IV TM MAINTENANCE
+& STORAGE PIT
 
-SPENT FUEL SHIPPING CASK REF)
-
+SPENT FUEL SHIPPI NG CASK (REF)
 REFUELING COMMUNICATION CENTER
+EVET Figure 2,1-1, Reactor Refueling
 
-Figure 21-1. Reactor Refueling
-
-PRIMARY SECONDARY CROL
+PRIMARY & SECONDARY CRDL
+STORAGE, AHM FLOOR VALVES
 System (Perspective)
 
-ETORAGE, AMM PLOOR VALVES
-\VTM PORT PLUG STORAGE® AHM FLOOR VALV
+CASK SHAFT
 
-IVTM DRIVE STORAGE
-He
+MY e
 
  
 
-\VTM PORT ADAPTERS STORAGE
-SPENT FUEL SHIPPING CASK (REF)
+IVTM PORT PLUG STORAGE' AHM FLOOR VALV '
+|VTM DRIVE STORAGE — 3 ]
+u .
+\VTM PORT ADAPTERS STORAGE —oc 2 FHE
+EV'TM GANTRY
+| SPENT FUEL SHIPPING CASK (REF)
+& TRANSFORTER
 
-3 TRANSPORTER.
+EVTM
 
 EVTM FLOOR VALVE
-5 FUEL TRANSFER
-PORT ADAPTER
+ER
 
 Fig. 5.6. CRBRP reactor refueling system.
 
@@ -3144,7 +3121,7 @@ cooled fast reactors.
 5.3.1 Primary-System Refueling Temperatures
 
 This survey of the EBR-II, FFTF, and CRBRP fuel-handling design, operation, and experience has shown
-that the temperature at which fuel handling was conducted in these systems was dictated by design
+that the temperature at which fuel handling was conducted 1n these systems was dictated by design
 choices. For example, in the EBR-II, fuel handling was conducted at 700°F (371°C), because this was the
 design bulk temperature for the primary tank environment (i.e., the normal operating reactor coolant inlet
 temperature). This temperature was selected to provide margin above the coolant melting temperature
@@ -3176,16 +3153,26 @@ below the fuel temperature limit.
 40
  
 
+CRDM
+
+Liquid Level Monitor
+
  
+
+Support Column
+
+Fig. 5. 7. CRBRP reactor vessel head rotating plugs.
+
+41
 06-068
 
-<+— Preirradiation x — Post Irradiation=—
+-+— Preirradiation —>| |<— Post Irradiation—
 
 CCCS Inerting and BLTC Transfer Interim CEM Transfer | Refuel | Reactor | Refuel CLEM Transfer Interim BLTC Transfer of Fuel Storage
 Preheating (Maintains Preheat Decay (Maintains Preheat Operation Decay Irradiated Fuel Facility
 (Typical for Core Temperature) Storage Temperature) 1050°F 1000°F Maximum for Storage
-Components) Max Na | Short Term Transfer
-Outlet | 1000°F | of All Fueled
+Components) Max Na o | Short Term Transfer
+Outiet | 1000°F | o Al Fueled
 (Rated | Max Assemblies
 Operation)| _ASSY
 
@@ -3197,7 +3184,7 @@ Operation)| _ASSY
   
  
 
-782%F
+782°F
 
 Rated Nom
 
@@ -3234,20 +3221,20 @@ Operation
 LL
 L
 o 680°F E Assy
-5 Min Na E Temp 500%F 500°F
-© 0 Inlet ERanged = f-——-——"-1 ——
-© _ _MaxNa 500° _ 400°F | (Initial ] LAW 7g]
-S 400°F Nom 400°F Nom MinNa| Core) 400° Normal
-E -—— 400°F Nom Assy
-oD Temp
-= Assemble Temp Range
-| ____ 370°F | ———————
-AEE Non | _MinNa370F _
-Note: The core component or test ass’y A — Time break, temperature remains constant
+’5 MinNa E Temp 500°F 500°F
+© 0 Inlet ERangegd = f-—————"-1 ——
+o _ _MaxNa 500 _ 400°F | (Initial ) LKW =]
+S 400°F Nom 400°F Nom MinNa| Core) 400°F Normal
+E -—— 400°F Nom Ass’y
+D Temp
+- Assemble Temp Range
+_______ 370°F | ———————
+A B0 Non | _MinNa370°F _
+Note: The core component or test ass’y —J\ — Time break, temperature remains constant
 
-temperature indicated refers to the = )
+temperature indicated refers to the . )
 cladding and for post irradiation Facility or fluid temperatures
-handling is the centerpin. ~~ ====- Assembly temperatures
+handling is the centerpin. =~ = === Assembly temperatures
 
  
 
@@ -3261,14 +3248,14 @@ Original Figure: HEDL 8009-191.1
 
  
 
-70% Increasing Time —>
+70%F Increasing Time —
 
 Fig. 5.8. Thermal profile for FFTF fuel and test assembly handling.
 
 5.3.2 In-Vessel Fuel-Handling Equipment Design and Fuel Restraint Design
 
 If it 1s assumed that the in-vessel fuel-handling machine can be constructed of the same advanced alloy as
-the reactor vessel (750°C operating temperature), then it is reasonable to expect that the LS—VHTR design
+the reactor vessel (750°C operating temperature), then it 1s reasonable to expect that the LS—VHTR design
 of the in-vessel fuel-handling machine could closely resemble the design proposed for the GT-MHR
 machine (General Atomics, 1996). This machine is very similar to the Fort St. Vrain machine
 
@@ -3296,7 +3283,7 @@ that this requirement is more critical for a sodium reactor with an opaque coola
 salt cooled reactor where optical techniques can be used to monitor and guide the refueling process
 (see Sect. 6).
 
-Positioning of grippers for fuel elements is performed with automated computer control; components
+Positioning of grippers for fuel elements is performed with automated computer control,; components
 are designed with guides (funnels, slides, ports) to facilitate mating and gripping operations.
 
 To the extent possible, sensing mechanisms are employed to verify all positioning, grasping,
@@ -3346,17 +3333,18 @@ sensors, etc.), liquid salts allow the use of optical systems. Salts are transpa
 transparency into the infrared from 2500 to 5000 nm (4000 to 2000 wave numbers). In other words, these
 salts are transparent over a wider range of the spectrum than is water. The liquid salt, depending upon its
 composition and activation, provides some radiation shielding for the optical systems. The coolant
-properties create new sensor options.
+properties create new sensor options,
 
 Laser signals into the reactor vessel and return signals would be transmitted by the use of mirrors placed
 either in a periscope with a diamond or sapphire window or directly in the liquid salt (Fig. 6.1). Polished
-noble-metal mirrors can be immersed in the salt. Because the salt is a fluxing agent, the mirrors would be
+noble-metal mirrors can be immersed in the salt. Because the salt 15 a fluxing agent, the mirrors would be
 expected to remain clean (something that would not occur in water or in most other fluids). The signal-
 to-noise ratio of a laser or other light signal can be maximized by (1) choosing the frequency of the light,
 (2) using polarized light, and (3) adjusting the power level of the laser.
 
-Laser and ~~ Refueling Machine
-Electronics —___
+Laser and o Retueling Machine
+Electronics \ﬁ
+II
 
  
 
@@ -3370,28 +3358,16 @@ Electronics —___
 
  
 
-  
-  
-  
-
-| — Liquid Salt Level
-
  
 
  
 
- 
+_— Liquid Salt Level
 
  
+   
 
-Mirror — la Reactor Vessel
-
-Laser Light —]
-
-    
-
-Reactor
-Core
+Mirror —T [ U |l Reactor Vessel
 
  
 
@@ -3402,8 +3378,8 @@ Fig. 6.1. Mirror system for transmitting signals into and out of the reactor ves
 45
 6.1 PRECISION METROLOGY
 
-Precision metrology is the use of multiple laser range finders at defined locations with appropriate
-software systems to map three-dimensional environments. Itis used today to map everything from
+Precision metrology 1s the use of multiple laser range finders at defined locations with approprate
+software systems to map three-dimensional environments. [t1s used today to map everything from
 chemical refineries to railroad right-of-way clearances to the inside of fusion energy machines
 
 (Kugel et al. 2001; Menon and Slotwinski, 2004). Multiple lasers at well-defined locations measure the
@@ -3412,7 +3388,7 @@ high-end systems, selected by the operator. There is a massive industrial experi
 commercial suppliers for a variety of applications. However, the technology has not been developed for
 liquid-salt systems and development would be required for this specific application. Frequencies for the
 LS-VHTR would be selected for the best transmission of light through the salt where there is not
-significant light emissions from the reactor systems (such as from thermal radiation). Polarized light can
+significant light emissions from the reactor systems (such as from thermal radiation). Polanzed light can
 be used to further boost the signal to noise ratio. Software programs create a three-dimensional model of
 the environment.
 
@@ -3425,28 +3401,31 @@ designed for much higher resolution and more challenging conditions. Systems for
 are being designed and tested for radiation levels of 10° rad/h under vacuum conditions and 6-T magnetic
 fields. The lasers and other equipment are located outside the hostile environment.
 
-Range (meters) — median filtered 3x3
-Te 41008
+Hange imeters) — median filtered 3x3
 
  
 
-41997
-
-4.1996
-
-41995
-
+250 41898
+41897
+2001 41996
+41895
 41004
 
-41993
+41992
 
-4.1992
+41892
 
-4.1991
+ 
+
+41891
 
 4199
 
-4.1989
+41989
+
+ 
+
+S
 
  
 
@@ -3455,40 +3434,49 @@ Te 41008
  
 
  
+
+ 
+
+] 50 100 150 200 250
 
 Fig. 6.2. Tmage of a dime obtained by laser scanning of the surface
 from a distance of 4.2 m.
 Precision metrology has multiple applications for a LS-VHTR.
 
 * Refueling. Precision metrology will allow operators to see operations and provide the refueling
-machine with information where everything is located. Modern robotic systems, including refueling
+machine with information where everything 1s located. Modern robotic systems, including refueling
 machines, have control systems to prevent collisions with solid objects. Precision metrology creates
 three-dimensional maps to provide the input to those systems.
 
-«Vibration analysis. The system detects component vibrations that may indicate potential problems.
+»  Vibration analysis. The system detects component vibrations that may indicate potential problems.
 
-* Fluid flow. If small nanoparticles are present in the fluid, the liquid-salt flow velocities can be
+s Fluid flow. If small nanoparticles are present in the fluid, the liquid-salt flow velocities can be
 measured. This technique is used in the laboratory and in parts of the chemical industry.
 
-«Inspection. Regular scans of the reactor interior can confirm that no significant unplanned changes in
+» Inspection. Regular scans of the reactor interior can confirm that no significant unplanned changes in
 geometry have occurred. This includes finding loose parts and conducting inspections to see that no
 significant changes in surfaces—the same application as used in fusion devices. The high-precision
 systems being developed for fusion applications are designed to find cracks and other damage on the
 interior surfaces of fusion machines, as shown in Fig. 6.3.
 
-Berylium Divertor 9/6/96
+Benyllium Divartor 9/6/96
+
+-4.865
+
+4,67
+
+4675
+
+-4.68-
+
+-4.685 -
 
  
 
- 
+-4.69
+100
 
- 
-
- 
-
- 
-
- 
+  
 
 Fig. 6.3. Precision metrology surface inspection of the first-wall component of a fusion reactor.
 
@@ -3506,10 +3494,10 @@ high-temperature salt properties (purity, composition, etc.) can be measured by 
 standard technique used in the chemical industry for online monitoring of the chemical composition of
 flowing streams in chemical plants. Properties that can be measured include the following.
 
-» Temperature. Remote high-temperature measurement systems traditionally use some form of
+o  Temperature. Remote high-temperature measurement systems traditionally use some form of
 spectroscopy to determine temperature.
 
-» Salt purity, density, chemical composition, and other properties. In the laboratory, high-temperature
+»  Salt purity, density, chemical composition, and other properties. In the laboratory, high-temperature
 salt properties are measured by spectroscopy. Laser or other light is sent through the salt, and the
 transmission of the light 1s measured as a function of frequency. In more sophisticated systems,
 secondary emission lines are measured. Salt impurities that can be measured to very low
@@ -3518,7 +3506,7 @@ state can also be measured. This 1s likely to be the preferred method for monito
 of impurities and the redox potential of the salt and thus the performance of the salt cleanup systems.
 It would be the equivalent of the instrumentation used to monitor water chemistry in an LWR.
 
-* Radiation decay. In some salts, neutron activation of the salt leads to a radioactive decay process that
+*  Radiation decay. In some salts, neutron activation of the salt leads to a radioactive decay process that
 creates high-energy electrons. As the electrons in the salt slow down, photons are emitted that peak
 in the blue part of the visible spectrum. Because this part of the spectrum is far from the thermal
 infrared signal caused by the high temperatures, it will be detectable. Depending upon half-lives of
@@ -3560,7 +3548,7 @@ Althaus, D., and N. Brahy. 1987. Refueling System Fabrication and Testing,” Nu
 Cabell, C. P. 1980, A Summary Description of the Fast Flux Test Facility, HEDL-400, Hanford
 Engineering Development Laboratory, December.
 
-Cahalan, J. E., and T. A. Taiwo, 2006, Liquid Salt—Very High-Temperature Reactor: Survey of Sodium-
+Cahalan, J. E., and T. A. Taiwo, 2006, Liguid Salt—Very High-Temperature Reactor: Survey of Sodium-
 Cooled Fast Reactor Fuel Handling Systems for Relevant Design and Operating Characteristics,
 ANL-GenlV-069, Argonne National Laboratory, Argonne, Illinois, March 31.
 
@@ -3604,7 +3592,7 @@ Impacts,” (CD-ROM), 2006 International High-Level Radioactive Waste Management
 April 30-May4, 2006, Las Vegas, Nevada.
 
 Forsberg, C. W. 2006d, “Developments in Molten Salt and Liquid-Salt-Cooled Reactors, Paper 6292
-(CD-ROM), International Congress on Advanced Nuclear Power Plants, June 4-8, 2006, Reno, Nevada.
+(CD-ROM), International Congress on Advanced Nuclear Power Plants, June 4-8, 20006, Reno, Nevada.
 
 General Atomics, 1996, Gas Turbine-Modular Helium Reactor (GT-MHR) Conceptual Design
 Description Report, General Atomics Report 910720, San Diego, California, Rev. 1, July.
@@ -3629,7 +3617,7 @@ of NSTX Surfaces Using Coherent Laser Radar Ranging,” Review of Scientific Ins
 533-536 (January).
 
 Menon, M. M., and A. Slotwinski, 2004, “Novel Doppler Laser Radar for Diagnostics in Fusion
-Reactors,” Review of Scientific Instruments, 75, 4100-4102.
+Reactors,” Review of Scientific Instruments, 75, 4100—4102.
 
 Mottershead, K. J., D. W. Beardsmore, and G. Money, 1995, “Dropped Fuel Damage Prediction
 Techniques and the DROFU Code,” Paper 43, Proceedings of the International Conference on Fuel
@@ -3650,7 +3638,7 @@ Facility Fuel Handling Experience—November 1979 to August 1988,” Nuclear Tec
 (September).
 
 52
-Rosenthal, M. W_, P. N. Haubenreich, and R. B. Briggs, 1972, The Development Status of Molten Salt
+Rosenthal, M. W, P. N. Haubenreich, and R. B. Briggs, 1972, The Development Status of Molten Salt
 Breeder Reactors, ORNL-4812, Oak Ridge National Laboratory, Oak Ridge, Tennessee.
 
 Smith, P. G. 1961. “High-Temperature Molten-Salt Lubricated Hydrodynamic Journal Bearings,” ASLE
@@ -3675,7 +3663,7 @@ This appendix provides a brief description of the Fast Flux Test Facility (FFTF)
 its operation as described by Cabell (1980) and in the Fast Flux Test Facility System Design Description
 (FFTF, 1983). The description 1s limited to those system features that are potentially relevant to the
 refueling of a liquid-salt very high-temperature reactor (LS-VHTR). Because the FFTF was designed as a
-reactor to test fuel, it has additional capabilities and equipment compared with a sodium-cooled fast
+reactor to test fuel, i1t has additional capabilities and equipment compared with a sodium-cooled fast
 reactor designed only to produce electricity.
 
 A.1 FFTF FUEL-HANDLING SYSTEM
@@ -3706,11 +3694,11 @@ sodium at all times to ensure effective cooling. This is accomplished by transfe
 assembly 1n its own pot of sodium—the CCP. CLEM is also used to transfer a variety of other
 components within the reactor containment.
 
-* Reactor refueling systems. A series of systems associated with the reactor and reactor vessel are
+*  Reactor refueling systems. A series of systems associated with the reactor and reactor vessel are
 required for refueling. Outside the reactor vessel these include three fuel transfer ports, eight test
 position spool pieces, two floor valve adapters and the test transfer port, and the reactor containment
 building cranes. Inside the reactor vessel are three in-vessel handling machines (IVHMs) and three in-
-vessel storage modules. Three [VHMs are required because of the mission of the FF TF that requires closed
+vessel storage modules. Three [VHM s are required because of the mission of the FFTF that requires closed
 test loops in the reactor core which interfere with direct access to the entire core with one machine.
 
 FFTF was designed for a cycle of 102 days of operations and 28 days for refueling. In a refueling outage,
@@ -3723,8 +3711,8 @@ A-1
 
 FUEL STORAGE
 
-FACILITY TT
-®
+FACILITY \
+™
 i <>
 
  
@@ -3739,12 +3727,12 @@ i <>
 
  
 
-/’
+,
 INTERIM DECAY
 BOTTOM LOADING
 
 | STORAGE CELL
-TRANSFER CASK ~~__ | /
+TRANSFER CASK ~_|_| / \
 
  
 
@@ -3755,54 +3743,55 @@ TRANSFER CASK ~~__ | /
  
 
  
+  
 
  
 
-I INTERIM EXAM AND
+ 
 
-BLTC ____ —— —_— " MAINTENANCE CELL
-RAILS TS
-=== / NS
-Sa 1
-CORE COMPONENT <7 O NN TEST ASSEMBLY
-CONDITIONING 1) CONDITIONING STATION
+i INTERIM EXAM AND
+:ALITL% —_— -_— " MAINTENANCE CELL
+/T', "'\ '
+
+0 e ce—
+CORE COMPONENT /j\ Q \ TEST ASSEMBLY
+
+7 |
+CONDITIONING ) CONDITIONING STATION
 STATIONS (2) N
+o
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-REACTOR VESSEL
-> AND REACTOR HEAD
-
+\ .
+~ |
+Lo 2D 1] | |
+\\\\A REACTOR VESSEL
+NGO / AND REACTOR HEAD
 IN-VESSEL
-~~ HANDLING
+SNSNS— ) HANDLING
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
 
 MACHINES (3)
 CLEM CLEM IN
@@ -3812,14 +3801,14 @@ RAILS PARKED
 Fig. A.1. General arrangement of reactor refueling facilities.
  
 
-Fig A2. Closed loop ex-vessel machine (non-shaded component).
+Fig. A.2. Closed loop ex-vessel machine (non-shaded comp onent).
 A.2 SYSTEM FUNCTIONS
 
 The reactor refueling system handles three types of core assemblies: 12-ft assemblies, such as
 driver fuel; 40-ft assemblies, such as fuels open test assemblies, which are loaded into the reactor
 full-length but are cut into two sections before removal; and 40-ft assemblies, such as materials open-
 test assemblies, which are loaded into and removed from the reactor as full-length sections. The
-typical sequence for driver fuel-handling operation is summarized in Sect. A.2.1, and a brief
+typical sequence for driver fuel-handling operation 1s summarized in Sect. A.2.1, and a brief
 description of contamination control and inventory control practices is provided in Sect. A.2.2. The
 FFTF refueling systems are more complex than those of a power reactor because the FFTF is a fuel
 testing machine that must handle many special test fuel assemblies, many of which require special
@@ -3827,34 +3816,28 @@ handling.
 
 A.2.1 Fuel Handling
 
-Fuel handling involves a series of complex operations (Figs. A.3 and A. 4). After receipt and unpacking
-of the fresh fuel assemblies from the fuel fabrication plant, each 12-ft fuel assembly is lowered by the
-crane into one of the two core component conditioning stations. In this station, the assembly is flooded
-with argon and heated to ~232°C (450°F). The assembly is then picked up by the bottom-loading
-transfer cask and is transported, in an argon atmosphere, to the interim decay storage vessel. The
-assembly is lowered into a sodium-filled CCP in the interim decay storage vessel, where it is
-held in liquid sodium at 260—316°C (500—600°F) until the reactor is shut down for refueling.
+Fuel handling involves a series of complex operations (Figs. A.3 and A.4). After receipt and unpacking
+of the fresh fuel assemblies from the fuel fabrication plant, each 12-ft fuel assembly 1s lowered by the
+crane into one of the two core component conditioning stations. In this station, the assembly 1s flooded
+with argon and heated to ~232°C (450°F). The assembly 1s then picked up by the bottom-loading
+transfer cask and 1s transported, in an argon atmosphere, to the interim decay storage vessel. The
+assembly is lowered into a sodium-filled CCP in the interim decay storage vessel, where it 1s
+held in liquid sodium at 260-316°C (500—600°F) until the reactor is shut down for refueling.
 
- 
+e
 
-ee —
+s —
+Sy
 
-ER
-lt— CLOSED LOOP Ae
-EX-VESSEL MACHINE |
+T
+lat— CLOSED LOOP - At
+EX-VESSEL MACHINE
 
-HP T /
-i | /
-— |N-VESSEL HANDLING
+- T /
+j ! /
+IN-VESSEL HANDLING
 
-SPENT FUEL TO -—
-FUEL STORAGE Tamir
-FACILITY _ = = Yi
-INCOMING MACHINE
-FRESH Fue BOTTOM LOADING of
-TRANSFER CASK :
-CORE
-COMPONENT 7 | .
+MACHINE
 
  
 
@@ -3868,9 +3851,17 @@ COMPONENT 7 | .
  
  
 
-CONDITIONING
+SPENT FUEL TO -
+FUEL STORAGE e L.
+FACILTY _ o =
+
+|NCOM|NG
+TRANSFER CASK
+CORE
+COMPONENT )
+conpiTioNING  INTERIM |
 DECAY
-STATION STORAGE REACTOR
+STATION ' STORAGE REACTOR
 
 Fig. A.3. Driver fuel-handling sequence.
 
@@ -3896,10 +3887,10 @@ MACHINE
 IN-VESSEL
 HANDLING
 
-MACHINE
-“1 (Vim)
-
+- MACHINE
+A T vhm)
 IN-VESSEL
+
 STORAGE
 MODULE
 
@@ -3914,12 +3905,12 @@ STORAGE
 Fig. A.4. Driver fuel-handling sequence between interim decay storage and reactor vessel.
 
 After the reactor has been shut down, plugs are removed from the fuel transfer ports on the reactor
-vessel lid and adapters and floor valves are installed on the ports. The control rod drive shafts are also
+vessel lid and adapters and floor valves are installed on the ports. The control rod drive shafis are also
 disconnected, and the instrument trees are moved to their stored positions. The CLEM then picks up
 the CCP containing the fresh fuel assembly from the interim decay storage vessel, moves it to above the
-reactor vessel, and lowers it into the reactor vessel through a fuel transfer port.
+reactor vessel, and lowers it into the reactor vessel through a fucl transfer port.
 
-In the reactor vessel, the [VHM removes the SNF assembly from the core and places it into an in-vessel storage
+In the reactor vessel, the IVHM removes the SNF assembly from the core and places it into an mn-vessel storage
 module position. The IVHM then removes the new assembly from the CCP and places it into the core.
 Finally, the IVHM removes the SNF assembly from the in-vessel storage module and places it into the
 empty CCP.
@@ -3928,7 +3919,7 @@ A-5
 The CLEM then picks up the CCP, containing the SNF assembly, and transfers it to the interim decay
 storage vessel. The cyclic process of moving fresh fuel to the reactor core and SNF back to the
 interim decay storage vessel continues until all the refueling operations have been completed.
-Before reactor startup, the IVHMs are placed in their “stored” positions in the reactor, the
+Before reactor startup, the IVHMSs are placed in their “stored™ positions in the reactor, the
 instrument trees and control rod shafts are restored to power-operation status, the adapters and floor
 valves are removed, and the fuel transfer ports are sealed with their plugs.
 
@@ -3948,43 +3939,44 @@ facilities requires the use of equipment such as floor valves (Fig. A.5) and ada
 to the particular facility or port involved. The most important adapters are the two floor valve
 adapters and the test transfer port.
 
- 
-  
- 
- 
-     
   
   
-    
+ 
+  
+   
+ 
+ 
+ 
 
-REMOV~-  coNTROL
-
-y ABLE CONNECTION
-
-LEAD BRICK LIFTING
-
+PORT
 SEAL PLATE LEAD SHIELD PLUG
-ROTATING ©
-
+ROTATING | -
+GATE X RACEWAY
+/-——'-\
+REMOV- " conTROL
+LEAD BRICK ﬁl?:'_—rfNG CONNECTION
 SHIELD |
-BODY BOLTS (3) 7 CONTROL BOX
+BODY BOLTS (3) L©7 CONTROL BOX
+GAS
 CONNECTION
-O-RING SEALS
-> Cy -
-| 2
-oA SEA SIAIA TYTN y ll -~ <0 Ge
-BALL BEARING C dd : 3 50
+O-RING SEALS |
 
-IN | .
-SEAL PLATE so HC <
-< PURGE
+   
+  
+ 
+   
 
-BEVEL GEAR CONIEL
-VE
-SOLENOID VALVES LOCAL INDICATORS
+N b
+SEAL PLATE ~.
+T~ PURGE
+
+BEVEL GEAR SR?JESOL
+LENOID VALVES
+
+SOLENO LOCAL INDICATORS
 VALVE OPERATOR PILOT LIGHTS
 
-Fig. AS. Floor valve.
+Fig. A.S. Floor valve.
 
 A-6
 A.2.3 Inventory Control
@@ -4006,7 +3998,7 @@ The CLEM 1s 61 ft high, weighs 217 tons, and moves on a 40-ft-wide transporter o
 operating deck (Fig. A.6). The CLEM has a 10-kW(t) heat removal capability and handles one
 component at a time. The temperature of the CLEM is controlled by a cold-wall cooling system and an
 electrical heating system. The cold-wall cooling system consists of an 8-in. pipe having an array of
-straight fins attached to the outside. The normal cooling mode for the CLEM is by internal
+straight fins attached to the outside. The normal cooling mode for the CLEM 1is by internal
 radiation of heat from the outer wall of the sodium-cooled CCP (with SNF assembly) to the cold
 wall, which is externally cooled by ambient air circulated over the fins. During normal core
 component handling operations, the fuel pin cladding temperature of the driver fuel is limited to
@@ -4016,15 +4008,15 @@ The CLEM operator controls all machine operations from the control console in th
 the transporter trolley. The control of CLEM is semiautomatic; that is, operations are performed
 automatically after the operator initiates a command. Interlocks to control the machine's operations
 have been incorporated into the design to meet safety requirements. Manual overrides are also provided to
-permit the operator to take control if necessary. The grapple speed and push-pull load requirements in
+permit the operator to take control 1f necessary. The grapple speed and push-pull load requirements in
 handling fuel are controlled through all modes of operation. Indexing of the CLEM to a refueling
 station 1s accomplished by manually operated controls.
 
 The CLEM is hermetically sealed to a refueling station by lowering the movable closure valve, which
 mates with a floor valve. Sealing this interface is accomplished by two inflatable seals (providing
 a double barrier), which engage the floor valve. The air trapped between the movable closure valve
-and floor valve is purged by the plant argon supply and vent system through hose connections made
-after the CLEM is indexed to a fuel transfer port or test transfer port.
+and floor valve 1s purged by the plant argon supply and vent system through hose connections made
+after the CLEM 1is indexed to a fuel transfer port or test transfer port.
 
 Electrical and instrumentation connections are also made at each refueling station to control and
 monitor the operation of the floor valve and provide the interlock connections to ensure safe
@@ -4038,7 +4030,7 @@ as moving test assemblies from the closed loops to the examination cell and assi
 of the fuel within the cell.
 
 A-7
-GRAPPLE
+' GRAPPLE
 — DRIVE
 
  
@@ -4167,45 +4159,35 @@ A-7
 
  
 
- 
-
- 
-
- 
-
- 
-
-= SYSTEM
-AIR |
-EXHAUST 7 ___ BLOWER
-| I] rel
+| =T SYSTEM
+1 1 |.
+AIR . |
+EXHAUST\\"!! I | “ __ BLOWER
 CHAIN FALL
-| I CAVITY
-LADDER |
-1 A
-: SHIELDED
-| 1 WITH
-< | ot GRAPPLE
-|
-u TROLLEY
-1 " - PLATFORM
-CONTROL TY «4 H "
-CAB
-~~
-— TRANSPORTER
-OPTICAL ||
-INDEXING il
-SYSTEM I
-| | MOVABLE
-\_ J CLOSURE
-\ 7 ON '5
-§
+i L—— "~ cauiTy
+LADDER | I
+T « SHIELDED
+ne I , WITH
+el — GRAPPLE
+U/ \
+g | TROLLEY
+‘ " “ PLATFORM
+CONTROL Y ¥—{- " " |
+CAB -
+- TRANSPORTER
+OPTICAL H
+INDEXING P il
+SYSTEM w— f
+U——UJ MOVABLE
+) CLOSURE
+l\\ ’/"- ‘ o~
+j l »
 
-   
+ 
 
--—
-p=
-ht wm
+ 
+
+ 
 
  
 
@@ -4216,22 +4198,22 @@ Fig. A.6. Schematic of closed loop ex-vessel machine and transporter.
 A-8
 A.3.2 Bottom-Loading Transfer Cask
 
-The bottom-loading transfer cask (Fig. A.7) transfers core components up to 13.5 ft long between transfer
-stations inside and outside the FF TF containment building. The transfer cask is a single-barrel,
+The bottom-loading transfer cask (Fig. A.7) transters core components up to 13.5 ft long between transfer
+stations inside and outside the FFTF containment building. The transfer cask is a single-barrel,
 internally cooled machine that travels onrails through the equipment airlock (Fig. A.3) and in-line
 with the core component conditioning stations (preheating of fresh fuel before fueling) and interim decay
 storage (cooling of SNF before transfer out of containment). The transfer cask grapple reaches through a
 floor valve on the operating floor and into each transfer station or cell to install or remove a core
-component for transfer to another station. The transfer cask is about 10 ft wide by 22 ft long by 19 ft
+component for transfer to another station. The transfer cask 1s about 10 ft wide by 22 ft long by 19 ft
 high and is made up of three main parts: the cask, the dolly, and the control system. The total weight
 of the cask is 72.5 tons.
 
-MOTOR CONTROL -
-EQUIPMENT
+MOTOR CONTROL - CASK:
+EQUIPMENT ‘
 
  
 
-COMPRESSOR ~~
+COMPRESSOR
 
   
  
@@ -4249,11 +4231,9 @@ RELEASE
 
  
 
- 
-
-DT
+e B
 RAIL ANCHOR WHEEL BEARING
-ASSEMBLY : ASSEMBLY
+ASSEMBLY | ASSEMBLY
 
 Fig. A.7. Bottom loading transfer cask.
 
@@ -4279,44 +4259,29 @@ separate cells, up through the vaults, to maintain an average cell wall temperat
 (100°F) throughout the station.
 
 INERT AND PREHEAT GETTER/HEATER CELL
-> CELL WITH
+" CELL WITH
 FUEL ASSEMBLY
 
-   
-   
+     
+      
+ 
+  
 
- 
- 
+  
 
 GETTER/HEATER
 CELL
 
-   
- 
-  
-
 ARGON BLOWER
 (TYP)
 
-BOTTOM LOADING
-TRANSFER CASK
-. TRACK .
-
  
 
  
 
  
 
-T-71A
-(SOUTH)
-
  
-
- 
-
-NITROGEN
-COOLANT (TYP) —
 
  
 
@@ -4326,8 +4291,13 @@ COOLANT (TYP) —
 
  
 
-NN
-INERT AND PREHEAT CELL
+ 
+
+ 
+
+ 
+
+ 
 
  
 
@@ -4337,9 +4307,29 @@ INERT AND PREHEAT CELL
 
  
 
-TRANSFER ce—""
+ 
+
+|
+|
+L !
+L |
+z 1 1
+| | BOTTOM LOADING
+I : TRANSFER CASK
+| i : . TRACK .
+* b
+T-71B. b ;
+(NORTH) ! H
+K : T-71A
+j ‘ (SOUTH)
+NITROGEN | .
+COOLANT (TYP)— i \—J’\ |
+_ A
+TRANSFER CELL/’ INERT AND PREHEAT CELL
 
 Fig. A.8. Core component conditioning stations.
+
+A-10
 Each station contains a heater-getter cell for heating the argon and an inerting-preheating cell. One
 station also contains a transfer cell that permits transfer of upto 13.5-ft long components between the
 CLEM and the bottom-loading transfer cask.
@@ -4370,7 +4360,7 @@ basket submerged in liquid sodium in a stainless steel tank surrounded by a guar
 positions are provided for 112 core components 12 ft long in the upper section of the storage basket.
 Ten storage tubes are included near the center of the basket to store the 40-ft test assemblies.
 
-The sodium temperature is held between 260 and 316°C (500 and 600°F). During normal operation, two
+The sodium temperature 1s held between 260 and 316°C (500 and 600°F). During normal operation, two
 independent cooling systems are available. The interim-decay-storage sodium-cooling system
 circulates sodium from the storage tank to an intermediate sodium/sodium-potassium heat
 exchanger. The secondary sodium-potassium coolant in turn is cooled by a Mobiltherm cooler. If the
@@ -4395,15 +4385,15 @@ A-11
 BLTC
 RAILS
 
-       
- 
+      
 
-~ STORAGE
+~STORAGE
 i BASKET
 
-~ CORE
-COMPONENTS
-STORAGE
+"~ CORE
+
+* COMPONENTS
+ STORAGE
 TUBES (112)
 
 GUARD
@@ -4415,7 +4405,7 @@ VESSEL
 TEST
 ASSEMBLY
 STORAGE
-TUBES (10)
+TUBES {10)
 
 Fig. A.9. Interim decay storage.
 
@@ -4428,14 +4418,16 @@ A.3.7 Interim Examination and Maintenance Cell
 
 The interim examination and maintenance cell is a shielded hot-cell complex that conducts nondestructive
 examinations of test assemblies and core components under controlled argon-atmosphere conditions.
-(Its location is shown in Fig. A.1). The hot cell can also be used to perform limited maintenance of plant
+(Its location 1s shown in Fig. A.1). The hot cell can also be used to perform limited maintenance of plant
 equipment or to prepare plant equipment for transfer to other maintenance facilities. The cell
 contains equipment necessary for disassembly, reassembly, and requalification of test assemblies and
 components. Nondestructive examinations that can be performed include dimensional checks, weighing,
 gamma scanning, visual inspections, and photography. Sodium removal facilities are also included.
 Cell ceiling valves and an access plug located over the cell provides for transfer of all core
 components and maintenance equipment in and out of the cell.
-A.3.8 In-Vessel Handling Machines (IVHMS)
+
+A-13
+A.3.8 In-Vessel Handling Machines (IVHMSs)
 
 The function of thethree IVHMs (Fig. A.11) is to move 12-ft core assemblies back and forth between the
 reactor core and the in-vessel storage modules, and between the storage locations in the modules and the
@@ -4443,13 +4435,13 @@ CCPs located beneath the three fuel transfer ports. The transfer ports are the l
 CLEM can transfer a CCP into or out of the reactor vessel. All movements are conducted under
 sodium.
 
-Each of the three IVHMSs services its own 120-degree sector of the reactor core. Most sodium-cooled
+Each of the three IVHMs services its own 120-degree sector of the reactor core. Most sodium-cooled
 reactors have a single IVHM or equivalent machine. The FFTF has three machines because various
 instrumentation systems and special irradiation assemblies restrict access to the top of the reactor core
 from any one location. The multiple machines are a consequence of the fuel-testing mission of the
 reactor. Figure A.121sa plan view showing the locations of the [IVHMs and the in-vessel storage modules.
-Figure A.13 isan elevation view showing one of the [VHMSs in its position in the reactor. Each [VHM
-has associated with it in-vessel storage modules with 26 positions for fuel assemblies.
+Figure A.13isan elevation view showing one of the [VHMSs in its position in the reactor. Each [VHM
+has associated with 1t in-vessel storage modules with 26 positions for fuel assemblies.
 
 Each IVHM includes a large plug (known as the reactor refueling plug) installed in the reactor head.
 Eccentrically mounted on the plug, inside the vessel, 1s an arm structure. Attached to this structure is a
@@ -4476,9 +4468,10 @@ points. The argon-filled section of the vault contains storage positions for var
 Air cells are provided for general purpose storage.
 
 A-14
-  
+    
+   
 
-I~ CHAIN HOIST ASSEMBLY
+\ CHAIN HOIST ASSEMBLY
 
 RRP DRIVE MECH.
 
@@ -4495,7 +4488,16 @@ STEM ARM
 ~ARM STRUCTURE
 GRAPPLE
 
-RISING STEM
+RISING STEM .
+
+  
+
+{
+
+      
+ 
+
+¢
 
 FOOT & TOE
 ASSEMBLY
@@ -4503,24 +4505,30 @@ ASSEMBLY
 Fig. A.11. In-vessel handling machine.
    
 
-PLUG [VHM IN STORED
-
-POSITION
-
-REACTOR CORE
+ 
 
  
 
-FUEL TRANSFER
-PORT (3)
+PLUG IVHM IN STORED
+POSITION
+L7
+O
+O 3
+REACTOR CORE - Y
+® T
+o
+5 o\ O FUEL TRANSFER
+. PORT (3)
 
-IVHM IN EXTENDED 2
-POSITION NAL RG INSTRUMENT TREE (3)
+IVHM IN EXTENDED
 
-NL) (SHOWN HERE IN
-STORED POSITION)
+POSITION INSTRUMENT TREE (3)
 
+OO
+(SHOWN HERE IN
+\/(i_\\/_/// STORED POSITION)
 IN-VESSEL
+
 STORAGE CORE RESTRAINT
 MODULE (3) ACTUATING SHAFT
 
@@ -4528,14 +4536,14 @@ Fig. A.12. Plan view showing locations of in-vessel handling machines.
 
 A.4 SYSTEM THERMAL PROFILE
 
-Core components and test assemblies are exposed to a variety of environmental temperatures as they are
+Core components and test assemblics are exposed to a variety of environmental temperatures as they are
 routed through the FFTF fuel-handling system. In general, the assemblies going into the reactor are
 heated, and those being removed are cooled. The transfer between the machine and facility must be
 a controlled operation; therefore, design points and temperature ranges have been imposed on each item
 of equipment to provide a nominal thermal profile as shown in Fig. A.14. This figure is provided to
 allow visualization of temperature conditions that are intended and expected. Some approximations
-are included in this profile as it covers many diverse conditions that are encountered during normal
-operation of the system. Even if the incoming assembly is a recycled test assembly, and therefore,
+are included 1n this profile as 1t covers many diverse conditions that are encountered during normal
+opcration of the system. Even if the incoming assembly is a recycled test assembly, and thercfore,
 has some decay heat, the temperatures are expected to be nominally as shown. The reactor
 temperature shown in the center of the profile were obtained from the reactor system design description
 or from reports by the reactor designer but are included here more as reference indicators for the
@@ -4543,14 +4551,13 @@ right-hand side of the figure, which covers removal of the core components and t
 the core.
 
 A-16
-N
-2
-a= oS w
-2¢ B52 _
-wT ox
-=>0uWw wags
-Truly <I>
-2022 £r==
+ 
+
+ 
+
+ 
+
+TRl 2, :
 
  
 
@@ -4558,7 +4565,23 @@ Truly <I>
 
  
 
--vessel handling machines.
+o
+S ‘;'“"-é"o‘."sg;"ﬁ*g‘
+- ¥ ) AStt
+BEABSAYE vam
+: % MECHANISM
+% [SEE FIG. 12-12]
+
+:-‘5.9.; ','.‘” : ot “- A :
+g O R
+-49.7.7.. N o . 'S ['—
+
+ 
+
+___IN-VESSEL
+HANDLING
+MACHINE
+[IVHM]
 
  
 
@@ -4574,18 +4597,34 @@ Truly <I>
 
  
 
-Fig. A.13. Reactor cutaway showing in
+ 
 
-A-17
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fig. A.13. Reactor cutaway showing in-vessel handling machines.
 06-068
 
--4— Preirradiation rn — Post Irradiation=—-
+-4— Preirradiation —>| |<— Post Irradiation=—-
 
 CCCS Inerting and BLTC Transfer Interim CEM Transfer | Refuel | Reactor | Refuel CLEM Transfer Interim BLTC Transfer of Fuel Storage
 Preheating (Maintains Preheat Decay (Maintains Preheat Operation Decay Irradiated Fuel Facility
 (Typical for Core Temperature) Storage Temperature) 1050°F 1000°F Maximum for Storage
-Components) Max Na or | Short Term Transfer
-Outiet | 1900°F | "of All Fueled
+Components) Max Na o | Short Term Transfer
+Outiet | 1900°F | " ot All Fueled
 (Rated | Max Assemblies
 Operation)| _ASSY
 
@@ -4609,17 +4648,17 @@ Rated
 Operation
 —
 LL
-LL
-[}) 680°F ’
-5 Min Na 500%F 500°F
-+B 0 Inlet Ranged ~~ fr----===-1 =
-s _ _Max Na 500°F - 400°F (Initial ] 14K =
-8S 400° Nom 400°F Nom ~~ |MinNa| Core) 400% Normal
-£ AN, — -— 400°F om Assy
+L
+[} 680°F ’
+’5 Min Na 500°F 500°F
+= 0 et ERanged ~  fr----===-1 ——
+E _ _N_la&N_aéoi)oE - 400°F (Initial ] 14K ==
+8 400°F Nom 400°FNom  |MinNa| Core) 4&0* Normal
+£ N, — -— 400°F om Assy
 @ Temp
 = Assemble Temp Range
-Le a 3 70°F | —_—
-ASO Non | _MinNa 370° _
+_______ 3 ZOiF- —
+A0 Non | _MinNa §70°F _
 
  
 
@@ -4637,10 +4676,10 @@ ASO Non | _MinNa 370° _
 
  
 
-Note: The core component or test ass’y A— Time break, temperature remains constant
-temperature indicated refers to the » }
-cladding and for post irradiation Facility or fluid temperatures
-handling isthe centerpin. ~~ m= mama. Assembly temperatures
+Note: The core component or test ass’y —/\r— Time break, temperature remains constant
+temperature indicated refers to the " )
+cladding and for post irradiation Fagility or fluid temperatures
+handling isthe centerpin. = m=a-. Assembly temperatures
 
  
 
@@ -4670,7 +4709,7 @@ because of (1) an assembly with particularly high decay heat or (2) an experimen
 cooling of a core component before some type of post-irradiation inspection or test. The post-
 irradiation conditions for CLEM and the interim examination and maintenance cell are not shown for
 these cases. The remaining portion of the figure shows the removal of irradiated fuel (drivers or pins)
-intended for storage. Few limits have been identified for this fuel and cladding. Asindicated, the
+intended for storage. Few limits have been 1dentified for this fuel and cladding. Asindicated, the
 1.4-kW assemblies will follow the nominal profile, but due to the many variables involved, temperatures
 could be higher. The temperatures need to be limited only for safety reasons.
 References
@@ -4738,71 +4777,75 @@ B-1
 SDD 41
 Rev 1
 
-RS8 PLUG STORAGE
+RSB PLUG STORAGE
 
-       
- 
- 
-  
+    
   
   
  
  
+    
  
-  
-  
-  
-  
-  
+ 
 
-NEW FUEL UNLOADING STATION
+MEW FUEL UNLDADING STATION
 
-SB (HARDENED STRUCTURE)
+RSB CRANE
+(REF]
+
+?:n I.HARDENED STRUCTURE]
+EF
+
+RSB (NON-HARDENED STRUGTURE}
 
 POLAR CRANE
-EF) 8 (NONHAROENED STRUCTURE)
+[AEF)
+{REF}
+RCE
+{REF)
 
-Res
-te)
+HATCH COVER
+(STORED POSITI N}
 
-MATCH COVER
-{6TORED POSITION)
 MEZZANINE
+S
+*--
 
-Ann
-(NSTomace Pm)
+AHM -
+{IN STORAGE PIT} —
 
-FUEL TRANSFER PORT
-ABAPTER STORAGE.
+FUIEL TRANSFER PORT
 
-IVIM MAINTENANCE
-&/STORAGE FIT
+ADAPTER STORAGE
+IV TM MAINTENANCE
+& STORAGE PIT
 
-SPENT FUEL SHIPPING CASK REF)
-
+SPENT FUEL SHIPPI NG CASK (REF)
 REFUELING COMMUNICATION CENTER
+EVET Figure 2,1-1, Reactor Refueling
 
-Figure 21-1. Reactor Refueling
-
-PRIMARY SECONDARY CROL
+PRIMARY & SECONDARY CRDL
+STORAGE, AHM FLOOR VALVES
 System (Perspective)
 
-ETORAGE, AMM PLOOR VALVES
-\VTM PORT PLUG STORAGE® AHM FLOOR VALV
+CASK SHAFT
 
-IVTM DRIVE STORAGE
-He
+MY e
 
  
 
-\VTM PORT ADAPTERS STORAGE
-SPENT FUEL SHIPPING CASK (REF)
+IVTM PORT PLUG STORAGE' AHM FLOOR VALV '
+|VTM DRIVE STORAGE — 3 ]
+u .
+\VTM PORT ADAPTERS STORAGE —oc 2 FHE
+EV'TM GANTRY
+| SPENT FUEL SHIPPING CASK (REF)
+& TRANSFORTER
 
-3 TRANSPORTER.
+EVTM
 
 EVTM FLOOR VALVE
-5 FUEL TRANSFER
-PORT ADAPTER
+ER
 
 Fig. B.1. CRBRP reactor refueling system.
 
@@ -4823,9 +4866,9 @@ fuel-handling cell and are within the coverage of the EVTM.
 Following inspection, the atmosphere of the shipping container inside the unloading station is changed
 from air to argon to be compatible with the EVTM and EVST. The EVTM is mated with the shipping
 container through an adapter assembly, which is a part of the new fuel-unloading station. The EVTM
-removes the new core assembly and transfers it to the EVST. The assembly is placed in a preheat tube in
+removes the new core assembly and transfers it to the EVST. The assembly 1s placed in a preheat tube in
 the EVST, where it is slowly heated in argon to approximately the same temperature as the sodium in the
-tank. After preheating, the EVTM is used to transfer the assembly to a sodium-filled CCP in one of the
+tank. After preheating, the EVIM is used to transfer the assembly to a sodium-filled CCP in one of the
 storage positions in the tank. The new core components are loaded into the EVST at 475°F (246°C) until
 a reactor reload worth of fuel has been accumulated for refueling.
 
@@ -4837,8 +4880,8 @@ plugs by the EVTM, and transfer of the plugs to the reactor-service-building plu
 
 B.1.2 Refueling
 
-After the reactor is shut down, the equipment hatch between the reactor service building and the reactor
-containment building is opened. The sodium in the reactor vessel is cooled down to refueling
+After the reactor 1s shut down, the equipment hatch between the reactor service building and the reactor
+containment building is opened. The sodium 1n the reactor vessel 1s cooled down to refueling
 temperature, the control rod drive lines are disconnected from the absorber assemblies and raised, and the
 upper internals are raised, permitting rotation of the plugs in the reactor vessel head (Fig. B.2). At the
 same time, the reactor cover gas 1s purged and purified to reduce radioactivity levels in the gas to a very
@@ -4850,7 +4893,7 @@ containment-building polar crane. The various port plugs are then removed by the
 machine and the EVTM and are placed in plug storage locations within the reactor containment building
 and reactor service building. The IVTM in-vessel section is then installed using the auxiliary handling
 machine. At this point, the floor valve and adapter on the IVTM port are removed and the IVTM drive
-section is installed; all these operations are performed by the polar crane. The IVIM then undergoes a
+section 1s installed; all these operations are performed by the polar crane. The IVIM then undergoes a
 simple checkout, to ensure that all electrical and gas services have been connected properly, followed by a
 check of the reactor lid rotating plugs, to assure that core positions can be properly indexed. This
 completes the preparations of the reactor refueling systems for the process of refueling.
@@ -4858,10 +4901,22 @@ completes the preparations of the reactor refueling systems for the process of r
 B-3
  
 
+CRDM
+
+Liquid Level Monitor
+
  
+
+Support Column
+
+CRBRP reactor-vessel-head rotating plugs.
+
+Fig. B.2.
+
+B-4
 In the process of refueling, the EVTM first moves an empty sodium-filled CCP from the EVST into a
 transfer position on the periphery of the reactor core. The EVTM then returns to the reactor service
-building and removes a new fuel assembly in a sodium-filled CCP from the EVST while the IVTM in the
+building and removes a new fuel assembly in a sodium-filled CCP from the EVST while the IVTM i1n the
 reactor vessel removes an SNF assembly from the reactor core and deposits it into the empty CCP. The
 EVTM then places a CCP with a new fuel assembly in a second transfer position inside the reactor vessel
 and removes the sodium-filled CCP with the SNF assembly. The SNF assembly is transferred to the
@@ -4872,12 +4927,12 @@ vertical push-pull machine mounted on the small rotating plug which forms part o
 assembly in the head of the reactor vessel (Fig. B.2). By grappling a fuel assembly, raising it above the
 core with the IVTM, and rotating the plugs, SNF is transferred from a core position to a transfer position
 within the reactor vessel. The SNF is deposited into a CCP, which is then picked up and removed by the
-EVTM. The IVTM can be indexed over any core or transfer position in the reactor. When the EVIM is
+EVTM. The IVTM can be indexed over any core or transfer position in the reactor. When the EVITM is
 at the reactor, the IVTM and rotating plugs must remain stationary.
 
 After refueling is completed, operations to terminate refueling begin. The process used to terminate
 refueling is essentially the reverse of that used to prepare for refueling. The upper internals are lowered,
-control rod drive lines are lowered and reconnected, and the reactor instrumentation is checked out. The
+control rod drive lines are lowered and reconnected, and the reactor instrumentation 1s checked out. The
 equipment hatch is then closed and leak checked, and the reactor is made critical and returned to full
 power.
 
@@ -4894,7 +4949,7 @@ To minimize power costs, refueling downtime must be minimized. Twenty days has b
 average reactor refueling. This begins with reduction of reactor power from 100% to the power level at
 which the reactor is shut down. Two strategies are used to minimize refueling downtime.
 
-* Maximize off-line operations. The majority of the refueling equipment and facilities are located in the
+*  Maximize off-line operations. The majority of the refueling equipment and facilities are located in the
 reactor service building, which is adjacent to the reactor containment building. This maximizes the
 number of operations and maintenance that can be performed while the reactor is still operating.
 Important fuel-handling facilities and equipment located in the reactor service building include the
@@ -4903,13 +4958,13 @@ storage facilities, and a communications center from which refueling and other f
 operations are coordinated. Equipment and facilities located in the reactor containment building are
 limited to those involved with fuel handling in the reactor; they include the IVTM, the auxiliary
 handling machine, and miscellaneous storage facilities. Unlike FFTF (Appendix A), the IVTM does
-not remain in the reactor during operations. This allows checkout and maintenance of the [VIM
+not remain in the reactor during operations. This allows checkout and maintenance of the [VTM
 during reactor operations.
 
 » Efficient refueling. The design of the refueling system minimizes refueling time by minimizing the
 
 number of operations that must be done during the refueling outage. In the sodium-cooled fast
-reactor, where the decay heat levels per SNF assembly are very high, a key part of the strategy is
+reactor, where the decay heat levels per SNF assembly are very high, a key part of the strategy 1s
 
 B-5
 movement of the SNF in CCPs. These small sodium-filled transfer vessels keep the SNF under
@@ -4920,7 +4975,7 @@ B.3 SYSTEM COMPONENTS
 B.3.1 In-Vessel Transfer Machine
 
 The IVTM transfers fuel and core components to and from the reactor core to positions at the edge of the
-reactor vessel where the EVTM can reach them. The IVTM has following operational capabilities:
+reactor vessel where the EVIM can reach them. The IVTM has following operational capabilities:
 
 Grapple and release core assemblies
 
@@ -4928,19 +4983,19 @@ Raise and lower core assemblies
 
 Provide hold-down of adjacent core assemblies
 
-Uniquely identify core assemblies
+Uniquely 1dentify core assemblies
 
 Orient and center core assemblies for insertion in the core
 
-Nh Wh =
+SNk LW =
 
 The IVTM consists of two principal subassemblies (Fig. B.3). The in-vessel section contains the grapple,
-centering device, identification mechanism, the hold-down mechanism, and the seals for reactor cover gas
+centering device, 1dentification mechanism, the hold-down mechanism, and the seals for reactor cover gas
 containment. The ex-vessel section contains the drive equipment, which powers the in-vessel section
 mechanisms. The IVTM is a straight push-pull machine; horizontal translation is accomplished by
 rotation of the plugs in the reactor head.
 
-The lower portion of the in-vessel section is exposed to reactor sodium and the cover gas. It is installed
+The lower portion of the in-vessel section is exposed to reactor sodium and the cover gas. It 1s installed
 and removed using the auxiliary handling machine, which provides a shielded inert-gas environment.
 
 The drive section 1s exposed only to the reactor-containment-building air environment and can be
@@ -4959,10 +5014,10 @@ reactor and to storage facilities within the reactor containment building. These
 involve preparation for (and termination of) refueling and include (1) removing the I[IVTM port plug and
 installing the IVTM in-vessel section and (2) returning these items after refueling. The auxiliary handling
 machine is also used to support maintenance functions such as removal and installation of control rod
-drive lines and core inlet modules. The auxiliary handling machine is similar in concept to the EVM,
+drive lines and core inlet modules. The auxiliary handling machine is similar in concept to the EVTM,
 but it has been simplified due to the less-demanding requirements of the components it handles. The
 major differences are (1) no systems are needed to manage radioactive decay heat, (2) less radiation
-shielding is required, (3) fewer requirements are associated with the management of sodium drainage
+shielding 1s required, (3) fewer requirements are associated with the management of sodium drainage
 from components, and (4) less stringent requirements exist for speed of operation. The auxiliary handling
 machine is used only within the reactor containment building and is transported from station to station by
 the polar crane.
@@ -4970,8 +5025,8 @@ the polar crane.
 B-6
 BAIL ASSEMBLY
 
-kJ #
-ARGON PANEL ——_| Ag
+.‘ #
+ARGON PANEL\ \ g
 
  
 
@@ -5011,16 +5066,16 @@ GRAPPLE
 
  
 
-Re
+[
 
-i —
+—
 
 SDI
-Re!
+Re
 
-| _~ WORK PLATFORM
-i DRIVE SECTION SUPPORT
-— STRUCTURE
+|~ WORK PLATFORM
+? DRIVE SECTION SUPPORT
+/ STRUCTURE
 
 CIRC
 
@@ -5028,7 +5083,7 @@ p-— UIT BREAKER
 PANELS
 
 E
-o—— ON-BOARD
+o —— ON-BOARD
 
 CONTROL PANEL
 
@@ -5055,7 +5110,7 @@ SYSTEM
 CORE ASSEMBLY IDENTIFICATION-
 ORIENTATION PAWL
 
-—
+L
 
 HOLDDOWN SLEEVE
 
@@ -5064,7 +5119,7 @@ L
 CORE ASSEMBLY
 CENTERING DEVICE
 
-vd
+v
 
 7
 
@@ -5107,7 +5162,7 @@ Design capability
 
 “Design concept; straight push pull, rising stem, with triple rotating plugs
 
-Kev £44
+Kev <44
 
    
  
@@ -5121,16 +5176,16 @@ Kev £44
 
 HANDLING BAIL _
 
-~~
+T~
 
-IOTIER LIMAMAY
+CHOTIER LIMAMAY
 
-QI TEN NTVVUR
+QW0 ITEN NTVVUR
 
 GRAPPLE DRIVE SYSTEM
 
-SHR
-Rg]
+SR
+R
 
  
 
@@ -5138,27 +5193,27 @@ Rg]
 
  
 
-fm)
+o)
 I
 
-A XE]
+A XEl
 
  
 
-{NN N/
+(N N N7
 —T—
-Co
+o
 
 DRIVE SERVICE PLATFORM
 
-CHAIN STORAGE TUBE - _—
+CHAIN STORAGE TUBE - /
 
-8 = Tu
+S ‘\ T %
 ==
 
 ==
 
-| CASK BODY
+T CASK BODY
 
  
 
@@ -5166,15 +5221,15 @@ CHAIN STORAGE TUBE - _—
 
  
 
-WY AX _WTY ”
+Y N“\!\!’ .
 
  
 
  
 
-= [
-BRS |
-ES
+I‘_i [
+B L
+S
 
  
 
@@ -5210,8 +5265,8 @@ EXTENDER
 
  
 
->
-[=
+-y
+[~
 
 Fig. B.4. Auxiliary handling machine.
 B.3.3 Floor Valves
@@ -5220,14 +5275,14 @@ The function of the floor valves (Fig. B.5) is to seal a reactor port or other f
 various phases of the refueling operation when the port plug is removed. The floor valves prevent the
 release of radioactivity-contaminated gas and shield the building operating floor environment from
 radiation. Floor valves are portable items of equipment. Two basic sizes are used—one for the transfer
-of core assemblies (used with the EVTM) and another with a larger opening (used with the auxiliary
-handling machine] for the transfer of the in-vessel section of the IVTM and other components. Both
+of core assemblies (used with the EVTM) and another with a larger opening {(used with the auxiliary
+handling machine} for the transfer of the in-vessel section of the IVTM and other components. Both
 types have the same basic design, except for the interior opening size and differences in the thickness
 of the shielding surrounding the central cavity. To simplify nomenclature, the portable floor valves are
 identified as EVTM floor valves and auxiliary-handling-machine floor valves, depending on the
 principal mating machine. The auxiliary-handling-machine floor valves are normally used at three
 locations in the reactor containment building during refueling—the IVTM port on the reactor head, the
-IVTM port plug storage pit, and the [IVTM storage and maintenance facility. These valves are also
+IVTM port plug storage pit, and the IVTM storage and maintenance facility. These valves are also
 stored in the reactor containment building. The floor valve design is similar to that developed for the
 FFTF program.
 
@@ -5236,21 +5291,47 @@ THROUGH PORT
 SHIELD
 PLUG
 
+    
+  
    
-     
 
 UPPER FLANGE
 (VALVE COVER)
 
-ASSEMBLY
-Luton
+HINGED
+PANEL
+
+VALVE
+
+BODY jf
+BEVEL
+
+VALVE
+ROTOR  CEAR
+
+BEARING
+
+DRIVE
+HOUSING
+ASSEMELY
+
+OPERATING
+CONSOLE
+FRONT PANEL
+
+  
+
+CLUTCH
+
 MANUAL
 
 VALVE
-OPERATOR
-UNIT
 
-Fig. B.S. Auxiliary-handling-machine floor valve.
+OPERATOR POWER
+DRIVE
+UMNIT
+
+Fig. B.5. Auxiliary-handling-machine floor valve.
 B.3.4 Port Adapters
 
 The port adapter provides an isolated shielded area connecting a port in a facility located below operating
@@ -5269,17 +5350,19 @@ floor valve. Figure B.6 shows the IVTM port adapter installed on the reactor sma
 AHM FLOOR
 VALVE
 
-RNR
+....,,< .
+R
 
-~~
+I~
 
-DN
+..
+D
 
 IVTM HANDLING
 SHROUD
 
-RRR
-RTA
+SRR R
+TR
 
     
  
@@ -5291,18 +5374,18 @@ RTA
        
  
 
-SS
-RRR
+S
+R
 
   
 
 KT
-2
+2R
 
  
 
-EL AK
-LL
+EL A K
+L
 
   
 
@@ -5316,8 +5399,8 @@ LL
 
   
 
-CIONDR
-Sa
+CIONDK
+R
 
 o
 
@@ -5325,35 +5408,37 @@ o
 
   
 
-LL
+..-
+QL
 
-RL
+..,.4..,..
+QAL
 
 3
-SLATARL STS
+SLATARL ST
 
  
 
-Kd NS
-LAL
+Kl S
+LA
 
 QX
 
        
   
 
-Sd
+L
 2
 
 J
-7X
+a
 
-Sa
+S
 
 SEAL PLATE
 (NOZZLE)
 
-TATAT
+AT
 AR
 
  
@@ -5364,22 +5449,22 @@ LK
 
  
 
-RD
+RN
 
 Sula
 
  
 
-rE
-2
+e
+2z
 
  
 
-5 bi i
-IVTM NOZZLE \ & 3
-AN ps
-~~ _“— SMALL ROTATING
-GOS AL LE PLUG (SRP)
+5 b2 i
+IVTM NOZZLE \\\ & )
+AN i
+‘ —~~ _“— SMALL ROTATING
+S AL L E PLUG (SRP)
 
 9116-1
 
@@ -5401,7 +5486,7 @@ Provide cooling for SNF assemblies
 
 Provide radiation shielding
 
-Non k wh =
+No kW=
 
 The EVTM, shown in Fig. B.7, is a shielded, inerted, single-barrel machine. The major performance
 characteristics of the EVTM are summarized in Table B.2. The machine has provisions for maintaining
@@ -5420,7 +5505,7 @@ Heating Electrical
 Cooling Cold wall
 Design capability 20 kW
 Grapple drive and actuation Chains
-Grapple vertical force capability oot oh
+Grapple vertical force capability :zgggﬁbpgg}lll
 Grapple speed ~24 ft/min (maximum)
 Components handled CCP, core assemblies, port plugs
 
@@ -5435,111 +5520,126 @@ primarily by thermal radiation and secondarily by conduction across a stagnant a
 cold wall is cooled by forced convection of ambient air circulated past the axial fins. This cooling system
 has a blower with the capacity to circulate sufficient air to maintain the fuel cladding temperature below
 the normal temperature limit. In case of blower failure or complete loss of all power, natural-convection
-airflow 1s sufficient to maintain the fuel cladding temperatures below its fuel failure limit.
+airflow 1s sufficient to maintain the fuel cladding temperatures below its fuel failure limait.
 
 B-11
-      
+ 
 
  
 
  
 
- 
+  
 
- 
-
- 
-
- 
-
-GRAPPLE
-DRIVE
+X
+Ul L —— GRAPPLE
+DRIVE = %
 SYSTEM
-
-Hl |
-
-|
-
-i
-
-N
-<, |
-al
-rey i
-VIEWPORT NS
-ASSEMBLY NE TV CAMERA
-ASSEMBLY 1° 9) | a
-<8) { Ts AL SS
-Lag TV CAMERA
-B (2 REQD)
-Ne — I
-
-CLOSURE ars
-VALVE AR
+VIEWPORT
+Y anPORT S \ TV CAMERA
+s d ;:\_'_ r N
+DRIP PAN N, ./ 22NN f\gEEMIB)f\';
+ASSEMBLY\,. /1 LK cig
+; TV CAMERA
+(2 REQD)
+CLOSURE
+VALVE
 ASSEMBLY
 
-77(805)11-3B
+77(805)11-38
 
 Fig. B.7. Ex-vessel transfer machine.
-   
-  
-    
+ 
+
  
-   
 
-EVTM
+ 
 
-TROLLEY
+ 
 
-/ EVTM GANTRY
+ 
 
-CAB
+ 
 
-JUNCTION BOXES
+ 
 
-CABLE TRACK LOOP
+R EVTM
 
-RUB CABLE TRACK
-SUPPORT ROLLER
-CABLE S
+/TROLLEY
 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+“TS~CABLE CARRYING | RUB CABLE TRACK
+
+ 
+
+iy =
+J = TRACK SUPPORT ROLLER
+i '?‘% 4T
+WSS\ CABLE S |
 RSB CABLE TRACK 2
-SUPPORT STATION 77(8110)11-1B
-
- 
+SUPPORT STATION 77(8110)11-1B |
 
 Fig. B.8. EVTM gantry-trolley.
- 
+Na NATURAL CONVECTION
+
+COLD WALL
+
+st
+
+ 
+
+ 
+
+  
+   
+
+1
 
  
 
 SHIELDING
 
-COLD WALL
+   
+ 
 
-ELECT. HEATERS
-
-CORE COMPONENT POT
+N\
+NC
 
  
 
- 
+,Z/i——cou) WALL
 
- 
-
-FUEL ASSEMBLY
-
- 
-
-Na NATURAL CONVECTION
-
-=
-
-==
-
-COLD WALL
-
-7 soaonann ARGON
+/ ° : é ELECT. HEATERS
+7 \-\ x./ /,/);
 
  
 
@@ -5557,31 +5657,41 @@ COLD WALL
 
  
 
-AIR BLOWER — FORCED CONVECTION ve
-AIR FLOW
+ 
+
+ 
 
  
 
  
 
-i
+ 
 
  
 
-BUTTERFLY VALVE — OPEN FOR
-NATURAL CONVECTION (AIR)
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+7
+7 | '_____VZ-——-STAGNANT ARGON
+/,/ % 2/ CORE COMPONENT POT g
+Na : X /
+Ar W/ FUEL ASSEMBLY I GB_I// | Zl
+AIR BLOWER — FORCED CONVECTION —-[ _
+AIR FLOW - |
+BUTTERFLY VALVE — OPEN FOR l |
+NATURAL CONVECTION (AIR) 74-JY11-36-52B
 
 Fig. B.9. EVTM cold-wall cooling concept.
 
- 
-
- 
-
- 
-
- 
-
-74-JY11-36-52B
+B-14
 
  
 B.3.6 Core Component Pot
@@ -5597,13 +5707,13 @@ consequent operational and contamination problems. The CCP is used to receive co
 in-vessel transfer, to transport them in the EVTM, and to store them in the EVST and fuel handling cell.
 A CCP is needed for every storage position in the EVST.
 
-“TN
-0)
-~N——"
+""'“\\
+)
+\—//
 
 (
 
-7
+7z
 A
 
 A
@@ -5614,14 +5724,14 @@ GRAPPLE ENGAGEMENT LIP
 
 SIPHON DRAIN INLET (TYPICAL)
 
-|
+/
 
  
 
  
 
 SIPHON DRAIN OUTLET (TYPICAL)
-| —
+|~
 
  
 
@@ -5631,7 +5741,7 @@ SIPHON DRAIN OUTLET (TYPICAL)
 
  
 
-Ns
+s
 74-JY11-36-54C
 
 Fig. B.10. Core component pot.
@@ -5663,9 +5773,9 @@ ANNULUS
 
  
 
-oS
+IR
 _—
-~
+//TI
 
 FLOOR VALVE
 ACCESS PLATFORM
@@ -5693,17 +5803,17 @@ DRIVE.
 
     
 
-eof
+e
 
-joe —t NL]
+ouen_ —t N 1 ]
 
-JA oT :
-F 1 3 \ D i. .
-I) — pe
-2D) AN ai EA: d . I =
-k ’ URRY ZINN BN oF
-Ne Ne 3 \ FILIR i nN —
-} 5
+L T .
+F 1 3 7 D .o .
+1p\% — o e
+2D A7 i A d . i\?’ -
+k v URAIGY ZIN N
+‘\"’/{/§, e 3 s B L :_/
+} o5
 
  
 
@@ -5712,7 +5822,7 @@ Ne Ne 3 \ FILIR i nN —
 
 The function of the rotating guide tube (Fig. B.12) 1s to provide a means by which the EVTM can insert a
 new core assembly in a CCP into one of two fixed in-vessel transfer positions and remove an SNF
-assembly in a CCP from the other transfer position, without requiring the EVM to decouple from the
+assembly in a CCP from the other transfer position, without requiring the EVITM to decouple from the
 reactor vessel and recouple to the reactor vessel over a second refueling port. Elimination of this
 decoupling and recoupling procedure results in a savings of several days of reactor downtime per
 refueling. The rotating guide tube is a straight tube with an eccentric lower end that is mounted on the top
@@ -5736,7 +5846,7 @@ provided in Table B.3. Major EVST components and their primary functions are lis
 
 The storage vessel and turntable are top supported. The guard tank 1s bottom supported. The closure
 head and turntable loads are transmitted to the storage vessel flange, which in turn, transmits the loads
-through the storage-vessel support structure to the vault concrete. No seismic restraint is required
+through the storage-vessel support structure to the vault concrete. No seismic restraint 1s required
 between the turntable and storage vessel.
 
 The storage vessel is surrounded by the guard tank as a safety measure to protect against any sodium
@@ -5755,54 +5865,55 @@ but 18 of these are reserved for EVST neutron absorbers and are not available fo
 
 Nine storage positions in various rows of the upper tier and nine corresponding positions in the lower tier
 contain B,C-filled neutron absorber assemblies and are inaccessible for fuel storage. The purpose of the
-absorber assemblies 1s to limit the value of ks for the EVST to <0.95.
-=
-Bl
-2 3
-« © ec 2
-w ww w
-aoc 2 2 oc a>
-Sw 9 oc Ow o w =
-8 wi o 8 a 0
-fa © 5 =< S < of w
-wn a O
-cg + xc cg cn £ 2 <
-; a < o =< ©
-eet TN
-(EST RE 8
-HA Sl) QD
-SS Or
+absorber assemblies 1s to limit the value of k. for the EVST to <0.95.
+ 
 
-      
+              
 
-CZ 7
-
-NN eles NOS = ei on
-x SISSIES /4 NZ
-
- 
-
- 
-
- 
-
-    
-
-V
-TN
-5
+     
 
    
  
 
+= g
+: 3
+: 3 :
+0
+o @ o P 5
+w L w =
+549§ 88 ¢ 4 53 ®
+0. M H Q a W Q e =
+fo @ 5 < B < ou w
+L c Lo o c 238 9
+v T < a2 ¢ £< x
+P S w = 19 o
+=30~ | X\ / > o 5 &
+1@ 7ot / i w = a o
+4\ o;./ll .v..,,,,rl! _1 S P Qo
+/ IR mukﬂﬁk..‘..’_, ¥ 4 ¢ |/,//1\\ Y X \ oF
+
+ 
+
+                 
+
  
 
  
 
-: & rao SEs SY SAS SVS aa
-ak PR RZER GZ,
-a EE
-\ AL PA AR NT RRA NTT a 0
+ 
+
+ 
+
+ 
+
+RIS N Ty 777 77 7 AR
+é*\m‘ha\\\ STIILEI LSS SIS LSS “
+
+, .“b/iﬂlrﬁw.\//l/ﬂ///////////////////////////w
+
+,
+%\M R G SSSSSSSSSSSSSS
+h.ﬁ B
 
  
 
@@ -5810,73 +5921,96 @@ a EE
 
  
 
-eed
+ 
 
-AD a SSS
+....................
 
-Ep hh NR
+ 
 
-. i an))N
-Ha “OX .
+ 
 
-\ = SISTED 7772 Brose Srey rrzrrn —
+ 
 
-CX CCE SSRIS A |
-Ady. =
+P V&Wvﬁ%]\\léi
+|ll\..M \\\ KRR @\\\\% —~
 
-  
+-
 
->
+ 
+
+ROTATING
+PLUG ™
+
 SODIUM LEVEL ~
+OFFSET FUNNEL
 
 LARGE
-ROTATIN
-PLUG
-
-=
-ww
-=
-<
-=
-LW.
-=
-w
-nN
-S
-LT
-Oo
-
-j-
-Oo
-a
-—-
-Zz
-Lil
-2
-o
-a.
-=
-Q
-Oo
-w
-3
-
-80-JU16-154A
+CORE COMPONENT POT
 
 Fig. B.12. Rotating guide tube.
 B-18
-STRIKER PLATE TT FUEL TRANSFER PORTS
+STRIKER PLATE /——"—\ FUEL TRANSFER PORTS
 
-  
- 
-   
+_/COOLING SLEEVE
+
        
-    
+     
+ 
+ 
+
+          
+  
+  
    
+
+ 
+
+CLOSURE HEAD /7 L N e
+SN
+| ) { CONTROLS
+~ | COC D O ASSEMBLY
+L - ) ‘,\\\\_:,,« S v:w// {/;” A o W..__
+
+ROLLER BEARINGS
+RSB OPERATING /
+
+SODIUM LEVEL
+
+/{ .
+
+\;l’l’,& 2
+PN
+
+PREHEAT TUBES
+
+X0
+
+3
+
+r 'L S R
+Pl
+
+(N
+T
+)
+RN
+. "
+e i d ¥
+.
+q N
+\ N S, \\
+) Y )
+y \ R
+
+N/
+
+_ SODIUM INLET
+- (ROTATED 90°
+
+" FOR CLARITY)
+
   
   
-  
-   
 
  
 
@@ -5888,7 +6022,17 @@ B-18
 
  
 
- 
+VESSEL SUPPORT on
+STRUCTURE o
+R
+INSULATION
+
+SODIUM OUTLET AND HEATERS
+
+STORAGE TUBES
+CORE / L
+COMPONENT POTS < K
+(2 tiers) i o !
 
  
 
@@ -5896,39 +6040,38 @@ B-18
 
  
 
-\_ COOLING SLEEVE
-A { CONTROLS
-. ASSEMBLY
-~~ RN - pg
-| I, } yg $ Sa FASS ~~ a Li
-Tage
-SN A N 3 be NO ne
-Neen
-ROLLER BEARINGS xs PRN: 5 wo
-[gS As
-RSB OPERATING NG SN". 7. PREHEAT TUBES
-FLOOR o ERA N's
-I as
-> ip ~~? SODIUM INLET
-SODIUM LEVEL — 2: Neff 5 + (ROTATED 90°
-. | “FOR CLARITY)
-PS br ee
-VESSEL SUPPORT ASN UAL
-STRUCTURE F 18 ane C.
-i “i 1 SEs
-fa INSULATION
-SODIUM OUTLET —: 1 [f}\} AND HEATERS
-" | STORAGE TUBES
-CORE 0
-COMPONENT rors < [4
-(2 tiers)
-| SODIUM INLET LINE
-x].
-TT —
-STORAGE VESSEL 5 GUARD TANK
-Vd ] Tee f
-. TURNTABLE EN
-Pe ASSEMBLY x 75-AU13-71-1A
+. SODIUM INLET LINE
+
+rd
+-
+------
+
+ 
+
+ 
+
+vy
+
+T GUARD TANK
+
+STORAGE VESSEL—" .
+
+'l
+A
+
+3 7. TURNTABLE
+b ASSEMBLY
+
+ 
+
+ 
+
+|
+
+/
+
+/
+X, 75-AU13-71-1A
 
 Figure B.13. Ex-vessel storage tank.
 Table B.3. EVST performance characteristics
@@ -5974,7 +6117,7 @@ from the thimble wall to the assembly by both gas conduction and thermal radiati
 normal conditions, the preheat tubes reduce the effective storage capacity of the EVST. In addition, each
 row has 1 vacant storage position in each tier for ease of shuffling, reducing the effective storage capacity
 by another 18 positions, to a usable total of ~600. In the event that the entire storage capacity is needed
-(e.g., in case of a complete core unloading), the preheat tubes can be removed and the vacant positions
+(e.g., 1n case of a complete core unloading), the preheat tubes can be removed and the vacant positions
 filled.
 
 Access to the storage positions is obtained through nine fuel transfer ports in the closure head, which are
@@ -6007,7 +6150,7 @@ B-21
 Blank page
 
 B-22
-0
+o
 
 10.
 11.
@@ -6025,7 +6168,7 @@ B-22
 
 28.
 
-29.
+A
 
 30.
 
@@ -6035,13 +6178,13 @@ B-22
 
 33.
 
-34.
+34,
 
 35.
 
 36.
 
-XNA N ELD =
+X® NN B LD =
 
 ORNL/TM-2006/92
 
@@ -6066,31 +6209,31 @@ ORNL/TM-2006/92
  
 
 INTERNAL DISTRIBUTION
-S.J. Ball (ballsj@@oml. gov) 13. G. E. Michaels (michaelsge@ornl.gov)
-J. L. Binder (binderii@omi. cov) 14. L. J. Ott (ottlj@ornl.gov)
-J. J. Carbajo (carbajojj@ornl.gov) 15. C. V. Parks (patksev@orml. gov)
-K. T. Clarno (clarnokt@ornl.gov) 16. A. L. Qualls (quallsal@ornl. gov)
-W. R. Corwin (gorwinwii@oml. gov) 17. J. E. Rushton (rushionigiornl.goy)
-G. F. Flanagan (flanagangf@ornl. gov) 18. D. F. Williams (williamsdfli@oml gov
-C. W. Forsberg (forsbergew(@ornl. gov 19. D. F. Wilson (wilsondf(@ornl.gov)
+S. J. Ball (ballsji@oml. zov) 13.  G. E. Michaels (michaelsge@ornl.gov)
+J. L. Binder (binderii@omi.cov) 14. L. J. Ott (ottlj@ornl.gov)
+J. J. Carbajo (carbajojj@ornl.gov) 15. C. V. Parks (patksev@orml.gov)
+K. T. Clarno (clarnokt@ornl.gov) 16. A. L. Qualls (quallsal@ornl gov)
+W. R. Corwin (gorwinwii@oml.goy) 17. J. E. Rushton (rushionigiornl.goy)
+G. F. Flanagan (ﬂanagangf@ornl gov) 18. D. F. Williams (williamsdfi@oml gov
+C. W. Forsberg (forsbergew(@ornl. gov 19. D. F. Wilson (wilsondf@ornl.gov)
 J. C. Gehin (gehinjc@ornl. gov) 20. T. L. Wilson, Jr. (wilsontljr@ornl.gov)
-S. R. Greene (groonessiy gral. gov) 21. G.L. Yoder, Jr. (yodergljr@ornl.gov)
-G. E. Kulynych (kulvnveheetwoml. gov) 22. Office of Technical Information and
-D. T. Ingersoll (ingersolidi@oml. gov) Classification (jehnsonimi@orml.gov)
+S. R. Greene (Ofuﬁl’}c‘ﬂ"/l grol.gov) 21. G. L. Yoder, Jr. (yodergljr@ornl.gov)
+G. E. Kulynych (kulynveheetwomi.gov) 22. Office of Technical Information and
+D. T. Ingersoll (ingersolidi@omml.gov) Classification (jehnsonimi@ornl.gov)
 G. T. Mays (maysgt@ormL.sov)
 
 EXTERNAL DISTRIBUTION
 
 B. Anderson, 3315 Old Forest Road, P.O. Box 10935, Lynchburg, Virginia 24506-0935
-[iilanderson@areva.com)
+[iiLanderson@areva.com)
 
 T. L. Cook, U.S. Department of Energy, NE-20/Germantown Building,
 
-1000 Independence Ave., SW, Washington, DC 20585-1290 [frevor.cocki@hg. dog. gov]
+1000 Independence Ave., SW, Washington, DC 20585-1290 [frevor.cocki@hg.dog.gov]
 
 C. B. Davis, Idaho National Laboratory, 2525 N. Fremont Avenue, P.O. Box 1625,
 
-Idaho Falls, Idaho 83415 [cliff davis@inl. gov]
+Idaho Falls, Idaho 83415 [¢iiff. davis@inl.gov]
 
 J. E. Cahalan, Argonne National Laboratory, 9700 S. Cass Avenue, Argonne, Illinois 60439
 [jecahalan@anl.gov]
@@ -6102,7 +6245,7 @@ G. L. Hawkes, Idaho National Laboratory, 2525 N. Fremont Avenue, P. O. Box 1625,
 Idaho Falls, Idaho 83415 [grant.hawkes@inl.gov]
 
 R. Kochendarfer, 3315 Old Forest Road, P. O. Box 10935, Lynchburg, Virginia 24506-0935
-[richard kochendarfer@areva.com]
+[richard. kochendarfer@areva.com]
 
 T. K. Kim, Argonne National Laboratory, 9700 S. Cass Avenue, Argonne, Illinois 60439
 [tkkim@anl.gov]
@@ -6111,7 +6254,7 @@ T. K. Larson, Idaho National Laboratory, 2525 N. Fremont Avenue, P. O. Box 1625,
 
 Idaho Falls, Idaho 83415 [thomas.larson@inl.gov]
 
-P. E. MacDonald, 2943 Sonterra Drive, Cedar Hill, Texas 75104 [pemeedarhilicovahoo.com|
+P. E. MacDonald, 2943 Sonterra Drive, Cedar Hill, Texas 75104 [pemecedarhilicovahoo.conm|
 T. O’Connor, U.S. Department of Energy, NE-20/Germantown Building,
 
 1000 Independence Avenue, SW, Washington, DC 20585-1290
@@ -6120,7 +6263,7 @@ T. O’Connor, U.S. Department of Energy, NE-20/Germantown Building,
 
 P. F. Peterson, University of California, Berkeley, Nuclear Engineering Department,
 
-4153 Etcheverry Hall, Berkeley, CA 94720-1730 [petersoni@nue berkeley. edu]
+4153 Etcheverry Hall, Berkeley, CA 94720-1730 [petersoni@nue berkeley.edu]
 
 P. S. Pickard, Sandia National Laboratories, P. O. Box 5800,
 
@@ -6159,14 +6302,14 @@ K. Sridharan, University of Wisconsin, 1500 Engineering Drive, Madison, Wisconsi
 [kumariwengr wisc.edy]
 
 J. W. Sterbentz, Idaho National Laboratory, 2525 N. Fremont Avenue, P. O. Box 1625,
-Idaho Falls, Idaho 83415 [james.sterbentz@inl. gov]
+Idaho Falls, Idaho 83415 [james.sterbentz@inl.gov]
 
 T. A. Taiwo, Argonne National Laboratory, 9700 S. Cass Avenue, Argonne, Illinois 60439
 [taiwo@anl.gov]
 
 R. M. Versluis, U.S. Department of Energy, NE-20/Germantown Building,
 
-1000 Independence Ave., SW, Washington, DC 20585-1290 [rob versiuisi@hg dog. cov]
+1000 Independence Ave., SW, Washington, DC 20585-1290 [rob. versiuisi@hg dog. cov]
 
 K. D. Weaver, Idaho National Laboratory, 2525 N. Fremont Avenue, P. O. Box 1625,
 Idaho Falls, Idaho 83415 [kevan.weaver@inl.gov]

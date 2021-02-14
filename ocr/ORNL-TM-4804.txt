@@ -1,5 +1,7 @@
-pr ~129 3
+e ~1729 %
 ORNL-TM-4804
+
+ 
 
  
 
@@ -16,11 +18,7 @@ C. W. Nestor
 
  
 
-7
-
-OAK RIDGE NATIONAL LABORATORY
-
-OPERATED BY UNION CARBIDE CORPORATION FOR THE U.S. ATOMIC ENERGY COMMISSION
+OPERATED BY UNION CARBIDE CORPORATION = FOR THE U.S. ATOMIC ENERGY COMMISSION
 
  
  
@@ -37,18 +35,18 @@ Price: Printed Copy $5.45; Microfiche $2.25
 
  
 
-This report was prepared as an account of work sponsored by the United States
+This report was prepared as an account of werk sponsored by the United States
 Government. Neither the United States nor the Energy Research and Development
 Administration, nor any of their employees, nor any of their contractors,
 subcontractors, or their employees, makes any warranty, express or implied, or
 assumes any legal liability or responsibility for the accuracy, completeness or
 usefulness of any information, apparatus, product or process disclosed, or represents
-that its use would not infringe privately owned rights.
+that its use would neot infringe privately owned rights.
 
  
 
  
-ORNL-TM~4804
+ORNL-TM-4804
 UC-76 — Molten Salt
 Reactor Technology
 
@@ -69,13 +67,13 @@ This report was prepared as an account of work
 sponsored by the United States Government. Neither
 the United States nor the United States Energy
 Research and Development Administration, nor any of
-their employees, nor any of their contractors,
-APR] L 1975 subcontractors, or their ] employees, makes any
+theit employees, nor any of their c¢ontractors,
+APR‘ L ]975 subcontractors, or tpeir ) employees, makes any
 warranty, express or implied, or assumes any legal
 liability or responsibility for the accuracy, completeness
 or usefulness of any information, apparatus, product or
 process disclosed, or represents that its use would not
-infringe privately owned rights.
+infringe privately owned rights,
 
  
 
@@ -83,9 +81,7 @@ infringe privately owned rights.
 
  
 
- 
-
-OAK RIDGE NATIONAL LABORATORY &
+OAK RIDGE NATIONAL LABORATORY :$
 
 Oak Ridge, Tennessee 37830
 operated by
@@ -93,24 +89,26 @@ UNION CARBIDE CORPORATION
 for the
 U.S. ENERGY RESEARCH AND DEVELOPMENT ADMINISTRATION
 
-~yips NOCUMENT UNLIMITE
-QISTRIBUTION OF THiS DOSUMERS i
-i!
+ prare mAanUAENT UNLIMITE
+DISTRIBUTION OF THIS DOCUMERS 7 1}[
+i !
 iii
 
 CONTENTS
 
-Abstract ® ® 8 6 8 © oo oo * 3 & so & oo eo 2 oo oo
+Abs tract * s . . . . L4 . L * - * - * * . - *
 
-I. Introduction « « « « oe o © os o os o o os
+I. Introduction . L] ° . *® . e . - * . - - *
 
-ITI. Derivation of Equations and Computational Procedures
+IT. Derivation of Equations and Computational Procedures
 
-ITI. Solution of Equations . « « « « « « «
-IV. Nomenclature . « o « o s o o ¢ s o o
+ITI. Solution of Equations . .« « &« « « o &
+IV. Nomenclature . « « ¢ o o« o s o o o o o
 V. Computer Program, Input Instructions and
 
-Appendix — Program Listing . + + « « « « « «
+Appendix — Program Listing . ¢« o« ¢« ¢ o ¢ o &
+
+o * * * - . .
 
 23
 
@@ -119,71 +117,35 @@ Appendix — Program Listing . + + « « « « « «
 49
 
 65
-Fig.
-Fig.
-Fig.
-Fig.
-Fig.
-Fig.
-Fig.
-Fig.
+LIST OF FIGURES
 
-Fig.
+Fig. 1. Molten-Salt Breeder Reactor System. . . . . .
+Fig. 2. Sketch Of F(CK) VS CK . o - L ] L ] . . * . L * *
+Fig. 3. Sketch of G(C,) VS8 C, « « & o« « s s o o o o &
+K K
+Fig. 4. Sample Problem Input .« « o o ¢ ¢ « o o o o &
+Fig. 5A. List of Parameter Values Used in Calculation
+Fig. 5B. Output from Iterative Calculations . . . . .
+Figo SC. Output Sumary e & ® e+ & * % ® & 5 & & s s @
 
-5A.
+Fig. 5D. Output Produced by "CHANGE" Command. . . . &
 
-5B.
+Fig. 5E. List of Parameter Values Used in Calculation
+"CHANGE" Command. « o « o o o o -6 o ¢ ¢ o o o o s o
 
-5C.
+Fig. 5F. Output from Iterative Calculations With New Parameters
+Fig. 5G. Output Summary (New Parameters). « o« o « o« o s o o o o
 
-5D.
+Fig. 5H. Response to Unrecognized Command Card. « « « ¢« ¢« « « o
 
-5E.
-
-LIST OF FIGURES
-
-Molten—~Salt Breeder Reactor System, . « « .
-Sketch of F(Cp) vs Cx * 4 ce oe 8 st st st 0 ss
-Sketch of G(Cp) vs Cx eo os oe 8 so a so 8 so so »
-Sample Problem Input . « « « o o o ¢ o o o
-List of Parameter Values Used in Calculation
-Output from Iterative Calculations « « . . .
-Output SUMMATY « « o o o os os o 5 os © o o oo o
-
-Output Produced by "CHANGE" Command. . . . .
-
-List of Parameter Values Used in Calculation
-
-"CHANGE" Command ® eo 8 @ eo eo ss 8 6 O° & 2 * ¢ +o + = oo
-
-Fig.
-Fig.
-Fig.
-
-Fig.
-
-5F.
-
-5G.
-
-5H.
-
-51.
+Fig. 5I. Normal Ending Message. . « « ¢ s o ¢ ¢ & o &
 
 After
-
-Output from Iterative Calculations With New Parameters
-
-Output Summary (New Parameters). « « o « o o s o o o
-
-Response to Unrecognized Command Card. « « « o « « o
-
-Normal Ending Message. « « « « o ¢ ¢ o oo o
 
 27
 28
 52
-53
+33
 55
 56
 
@@ -195,8 +157,7 @@ Normal Ending Message. « « « « o ¢ ¢ o oo o
 62
 
 63
- 
-A METHOD FOR CALCULATING THE STEADY-STATE DISTRIBUTION
+A METHOD FOR CALCULATING THE STEADY-STATE DISTRIBUTION
 
 OF TRITIUM IN A MOLTEN-SALT BREEDER REACTOR PLANT
 R. B. Briggs and C. W. Nestor, Jr.
@@ -208,7 +169,7 @@ carrier salt. At the operating temperature of a large power reactor,
 tritium is expected to diffuse from the primary system through pipe and
 vessel walls to the surroundings and through heat exchanger tubes into
 the secondary system which contains a coolant salt. Some tritium will
-pass from the secondary system into the steam power system. This report
+pass from thé secondary system into the steam power system. This report
 describes a method for calculating the steady state distribution of
 tritium in a molten salt reactor plant and a computer program for making
 the calculations. The method takes into account the effects of various
@@ -228,33 +189,33 @@ ferred to a coolant salt that circulates in the secondary system and,
 thence, to water, producing steam to drive a turbine-generator in the
 steam system.
 
-Fission products and other radioactive materials are produced in
+Fission products and other radiocactive materials are produced in
 large amounts in the fuel salt. Much smaller amounts are produced in
 the coolant salt by the flux of delayed neutrons in the primary heat
-exchangers. The radioactivity is normally confined by the ‘walls of
+exchangers. The radioactivity is normally confined by the 'walls of
 the piping and vessels. However, tritium is produced in the salts,
 partly as a fission product, but mostly by absorption of neutrons by
 lithium in the fuel salt. At the high temperature of an MSBR, tritium
 diffuses through metals and might escape to the environs in amounts
-that would be cause for concern.
+thgt would be cause for concern.
 
 The purpose of this report is to describe a method for calculating
 the distribution of tritium in and its escape from an MSBR plant. We
 assume that the tritium, born as tritium ions, is present in the fuel
-salt primarily as tritium molecules® and tritium fluoride molecules.
+salt primarily as tritium molecules® and tritium fluoride molecules. ¥
 
-The ions are estimated to be produced at a rate of 2.6 X 10% /MWsec™**
+The ions are estimated to be produced at a rate of 2.6 X lOlh/MWsec***
 
  
 
 *Tritium molecules are intended to include HT and H, molecules
 when hydrogen is present.
 
-#%Tritium fluoride molecules are intended to include tritium (and
+*%Tritium fluoride molecules are intended to include tritium (and
 hydrogen) ions associated with fluoride ions in the salt.
 
-**%9420 Ci/day in a 2250 MW(t), 1000 MW(e) plant.
-ORNL-DWG 68—-1185EB
+**%2420 Ci/day in a 2250 MW(t), 1000 MW(e) plant.
+ORNL-DWG 68~1185EB
 
  
 
@@ -274,68 +235,44 @@ hydrogen) ions associated with fluoride ions in the salt.
 
 PURGE STREAM PURGE STREAM
 FOR REMOVAL OF TRITIUM FOR REMOVAL OF TRITIUM
-~~ FROM FUEL SALT FROM COOLANT SALT
+—~ FROM FUEL SALT FROM COOLANT SALT
+) A
 PRIMARY SECONDARY
-SALT PUMP NaoBF,—NaF SALT PUMP
+SALT PUMP NaBFy—NaF SALT PUMP
 
  
 
  
 
-Li)
-
- 
+1
 
 COOLANT SALT
 
-    
- 
  
 
  
 
  
 
-1450 °F
+ 
 
  
 
+   
+
+ 
+
+ 
   
-  
-
- 
-
- 
-
-1300°F "mp
-GRAPHITE
-MODERATOR
-
-REACTOR
-HEAT
-
-EXCHANGER HR
-
- 
-
-1050 °F = _
-
-ai im,
-
-  
-
-7
-
- 
-
-STEAM GENERATOR
-
-LiF -BeF,-ThF, ~ UF;
-aay ° SUPERHEATER, AND
-
      
 
+11150 °F
+
+   
+
  
+
+{300°F wp
 
  
 
@@ -343,10 +280,32 @@ aay ° SUPERHEATER, AND
 
  
 
-FUEL SALT ~~ REHEATER re
-1000 °F
+ 
+
+  
+  
+
+ 
+
+ 
+
+ 
+
+ 
+
+GRAPHITE
+MODERATOR
+REACTOR
+HEAT _
+EXCHANGER Hi
+1050 °F €W
+TLiF -BeF,-ThFy-UF, STEAM GENERATOR
+FUEL SALY SUPERHEATER, AND
+—-— A T
+1000 °F '
+——
 TURBO-
-GENERATOR | L—*™=
+GENERATOR | L—==
 STEAM
 
 Fig. 1. Molten Salt Breeder Reactor System.
@@ -375,9 +334,9 @@ core.
 Provision is made for purging tritium from the primary system by
 circulating a stream of salt through an apparatus which extracts gaseous
 tritium and tritium compounds. A contactor in which tritium and tritium
-fluoride are transferred to a gas phase by virtue of their vapor
+fluoride are transferred to a gas phase by virtue of their wvapor
 pressures would be such an apparatus. Current designs for MSBR's
-provide for sparging of the fuel salt with helium bubbles in the
+provide for sparging c¢f the fuel salt with helium bubbles in the
 primary system to remove krypton and Xenon. Tritium and tritium
 fluoride would be removed also. The sparging process can be treated
 
@@ -402,7 +361,7 @@ compound will be extracted by the sorption and/or purge process.
 The steam system and the cells around the reactor primary and
 secondary systems are considered to be sinks for tritium. Tritium
 reaching the steam system is assumed to exchange with hydrogen in the
-water, and that reaching the cells is assumed to be oxidized to water.
+water, and thdat reaching the cells is assumed to be oxidized to water.
 The partial pressure of tritium is effectively zero.
 
 In the calculations we assume that tritium and hydrogen behave
@@ -425,7 +384,7 @@ But the flow of tritium would decrease by a factor of 10 because of the
 adding hydrogen may not be so dramatic, but the calculational method
 provides for addition of hydrogen to the primary and secondary systems
 and for hydrogen to be present at a specified concentration in the
-steam system so that the effects can be studied.”
+steam system so that the effects can be studied.*
 
 The calculational model describes the behavior of tritium in an
 MSBR plant to the extent that it is known or has been inferred at the
@@ -438,12 +397,13 @@ the chemical reactions and physical processes that will ultimately be
  
 
 *The calculational procedure might have been developed to treat hydrogen
-and tritium as separate species, Separate values then could be assigned
+and tritium as separate species. Separate values then could be assigned
 to important parameters, such as solubility and diffusion coefficients,
 for each species. Interaction between hydrogen and tritium would be
 taken into account by the equilibrium relationship
 
-Pup! Pya oj = k, for the reaction H, + T, Z HT
+péT/pHQ *Pp, = kp for the reaction H, + T, ¥ HT .
+
 However, kp has a value near 4 at temperatures of interest, which signi-
 fies that hydrogen and tritium interact as though they are the same
 species. Also, there are substantial uncertainties in the values for
@@ -493,7 +453,7 @@ only hydrogen and tritium molecules are assumed to be able to sorb on
 the metal surfaces, dissociate, and diffuse through the metal walls.
 The various paths are defined and the distribution is calculated by the
 
-use of the following set of equations.”
+use of the following set of equations.*
 
 A. In the primary system:
 
@@ -501,39 +461,39 @@ A. In the primary system:
 of the piping in the hot leg from the reactor vessel to
 
 the heat exchanger:
-Q = h1A1 (Cp — C1) (1a)
+Q1 = h1A1(CF — C1) (1a)
 
 Transport through the pipe wall to the surroundings where
+
 the hydrogen pressure is assumed to be negligible:
 
-1
+- p1A1 [(kl_cl)? _— 0] - RJLAI (klcl).r . (1b)
 
-1
-U = pia [kc — 0] _ pas (kep®
+Qi ty t,
 
-te t, . (1b)
-
-2, Transport of hydrogen to and through the walls of the cold-
+2. Transport of hydrogen to and through the walls of the cold-
 
 leg piping from the heat exchanger to the reactor vessel:
 
-#Symbols are defined in Section IV, Nomenclature.
+ 
+
+*Symbols are defined in Section IV, Nomenclature.
 10
 
-Q2 = hah (Cp = C2) (2a)
+Q2 = thz(CF - C3z) (2a)
 1
 5
 
-= baits kala) . (2b)
+- EzAziszz) . (2b)
 
 Transport of hydrogen to and through the walls of the
 reactor vessel and the shells of the heat exchangers in
 
 the primary system:
 
-Qs = hsAs (Cp — Cs) (3a)
-+
-= atatitial (3b)
+Qs = hsAs(Cp — Ca) (3a)
+z
+- EaA:(kSCB) (3b)
 3
 
 Transport of hydrogen to and through the walls of the
@@ -541,55 +501,57 @@ Transport of hydrogen to and through the walls of the
 tubes in the primary heat exchangers into the secondary
 
 system:
-Qs = huh, (Cp — C4) (4a)
-4Ag + +
-= bate [(kuC)® = (k12C12)7] (4b)
+Qe = haAa(CF'“ Ca) (4a)
+Puhs + z
+= . [(kacu) = (k12C12) ] . (4b)
 
 Transport of hydrogen to the surfaces of the graphite
 
 in the reactor vessel or to other sorber:
 
-Qs = hsAs (Cp - Cs) . (5a)
+Q5 = h5A5(CF - Cs) . (Sa)
 Sorption by the graphite or other sorber assuming that
 the sorbing surface is replaced continuously and that
 the concentration of sorbed gas is proportional to the
 square root of the partial pressure:
 +
-Qs = BW ;As5(ksCs)” (5b)
+Qs = B;W,As (ksCs) . (5b)
 
 Removal of hydrogen by purge:
 
-Qe = FiE.Cp © (6)
+Qe = F1E1CF . (6)
 11
 
 7. Transport of hydrogen fluoride to and removal by sorber:
-Qs = hsA; (Cup — Cy) (7a)
+Q; = h7A7(CFF'“ Cs) (7a)
 
 1
-B,W2A, (k,Cr) 7 (7b)
+B,W.A, (k,Cy)~ . (7b)
 
 8. Removal of hydrogen fluoride by purge:
 
-Qs = F2E,C (8)
+Qs = FLE;C . (8)
 
-FF °
+FF
+
 Because the molecular species involved may contain different numbers
 of hydrogen atoms, all the calculations are done in terms of atoms of
 hydrogen. This does not mean that the hydrogen necessarily diffuses as
 single atoms, but only that a transport unit is one hydrogen atom and
 the parameters are expressed in terms of single hydrogen atoms. A
 Q value of 1 then represents the transport of one-half molecule of H,,
-one molecule of HF, or one-fourth molecule of a compound like CH,, all per
+one molecule of HF, or one-fourth molecule of a compound 1like CH,, all per
 unit time. Likewise, a C value of 1 represents a concentration of one-
-half molecule of H,, one molecule of HF, or one~fourth molecule of CH,,
+half molecule of H,, one molecule of HF, or one-~fourth molecule of CH,,
 all per unit volume.
-If the rates of inflow of tritium and hydrogen atoms (R; and Rs,
-respectively) to the primary system are given, a material balance over
 
+If the rates of inflow of tritium and hydrogen atoms (R; and R,,
+respectively) to the primary system are given, a material balance over
 the primary system gives
 
-Ri +R2= Z2Q, . (9
-
+8
+R; + R = I Q. (9)
+i=1 *
 In our calculations, all flow rates in the sum on the right-hand side
 
 of Eq. 9 are positive or zero except for Q,, the transport through the
@@ -602,90 +564,88 @@ negative or zero, depending on the conditions in the various systems.
 Hydrogen is present in and is removed from the primary system as hydrogen
 
 fluoride, but we provide no input of HF. It is produced by the reaction
-UF, + +H, & UF, + HF ,
+UF, + +H, < UF, + HF ,
 
 which has an equilibrium quotient
 
-X(UFs) PHF)
-X(UF)  [p(H,)]
+X(UFs)  _BPAER)
+
+XUR) [P (Ha) ]
 
 or
 
-X(UFy) | “Cr .
+X(UFy) | “7“rF 1
 
 Corrosion and other chemical considerations make it desirable to maintain
 the ratio X(UF5)/X(UF,) = 1/U at a constant value,* so the concentration
 of HF in the bulk of the salt can be related to the hydrogen concentration
 by
 
-1
-Cop = oo (ksCy)? - (10)
+2
+Cop = -11\-{{-{71 (ksCp)? . (10)
 
-We replace Cer by the equivalent function of Ce in Eqs. 7a and 8 to obtain
+We replace CFF by the equivalent function of C_, in Eqs. 7a and 8 to obtain
 
-expressions for Q, and Qg in terms of Cpe
-
+F
+expressions for @, and Qg in terms of CF'
 B. Secondary System:
-
-1. Hot~leg piping:
-
-Qio0 hioh10(C, — Cio) (11a)
-
+1. Hot-leg piping:
+Qio0 = thAlO(CC — C10) (11a)
 1
-Biohie (0,07
-10
+- Piohio (kloclo)f . (11b)
 
-il
+Cio
 
-. (11b)
+ 
 
 #This might require that hydrogen be added to the primary systems as
 a mixture of hydrogen and hydrogen fluoride.
 13
 
 Cold-leg piping:
-Q11 = hpAn (C. - C11)
 
-= a (11630)?
+Q11 = hy1An, (CC - C11)
+
+= EA%ALL (k110111%
 11
 
 Transport through the primary heat exchanger tubes into the
 primary system:
-Quiz = hi2Ay (Cy - C12)
+Qrz = hi24y (C. - Ci2)
 
-1 1
-= ets fg, 00072 - tence] .
+| 1
+= %‘?‘u‘[(kmczz)f - (kuCu)T] .
 
 Transport through the steam generator tubes into the
-steam system:
+Steam system:
 
-Qi3 = hi3A;s (C - C13)
+Qi3 = hi3A;; (CC - C13)
 
 A 1 1
-= Basis [cs 501 09% - (ka1C21)?] .
+= P‘%?—Bl—i [(k13€13)7 - (RZICZI)TJ .
 
 Transport through the superheater tubes into the steam
 
 system:
 
-Qiv = hiuAygy (C, - C14)
+Qiy = hitAqy (CC - C1y)
 
 A 1
-= Bee [ruern? - (k22C22)?] .
+= R‘l—‘l&i [(kmcm)%" (kzzczz)r] .
 
 Transport through the reheater tubes into the steam system:
 
-Q15 = hisA;s (Co - C15)
+Q15 = hisA;s (CC - C15)
 
 1
-Pisdis [crscin? = (k23C2 7] .
+P‘uti\—;i [(kzsCls)% ~ (k23C2 3)7] .
 
 Removal by sorber as hydrogen:
 
-Q16 = higAis (C; - Cig)
+Q16 = higAis (CC - Cig)
 
 1
-B3W3A1s(k16C16)°
+B3WsA16(k16C1g)° .
 
 (12a)
 
@@ -714,20 +674,21 @@ B3W3A1s(k16C16)°
 
 8. Removal by purge as hydrogen:
 
-Q.7r = FaEsC, . (18)
+Qir = FSEBCC . (18)
 
 9. Removal by sorber as HF:
 
-Qis = hieAis (Cop — Cis) (19a)
+Qis = h1eA1a(CCF — C1s) (19a)
 
 1
-B,WuAi1e(ki1sCia)? (19b)
+BuWuhia(kisCia) > - (19b)
 
-10. Removal by purge as HF:
+10, Removal by purge as HF:
 
-Qie = FLELC . (20)
+ng = FqEqC . (20)
 
 CF
+
 Since we assume that the hydrogen fluoride does not release hydrogen
 to diffuse through the metal walls, and that there are no chemical reac-
 tions in the secondary system that make the concentrations of hydrogen and
@@ -740,10 +701,10 @@ the two species for the distribution of total tritium and hydrogen:
 Rs + Ry = I Q (21a)
 i=10
 
-Rs = Qi18 + Q19 (21b)
+Rs = Q18 + Q1o -« (21b)
 
 In these equations all the R's and all the Q's have positive or
-zero values except for Q;2, Qi3, Q:4 and Q,s, which can have negative
+zero values except for Qi2, Qi3, Q14 and Q;s5, which can have negative
 
 values.
 
@@ -752,106 +713,91 @@ C. Steam generator system:
 1. Transport through the steam generator tubes into the secondary
 
 system:
-Q1 = hp 1813(Cg - Cy1) (22a)
+Q1 = h21A13(CSG -~ Cz1) (22a)
 A 1 1
-= paatas fg, 1021) 7% = (kk ci?) . (22b)
+= E'l—ta‘*z—s‘[(kzlcz D7 - (&, 3C13)7] . (22b)
 13
 
 2. Transport through superheater tubes into the secondary system:
 
-Qz2 = ho2814 (Cog - C22) (23a)
-3.
-
-In the steam system the values for C
-
-15
+Qz2 = hzzAlu(CSS - Cz2) (23a)
+15
 
 A 1 1
-= Basle [ns - Grven?] . (23b)
-Transport through the reheater tubes into the secondary system:
-Qz3 = h23A15(Cqp = C23) (24a)
+= E‘l'i';:i [(kzzczz)z_ - (klucw)?] . (23b)
+3. Transport through the reheater tubes into the secondary system:
+Q23 = hz3A15(Cop = C23) (24a)
 A 1 1
-= Biasis [ocarca® - rscanrt] . (24b)
+= PJ‘f:—lji [(kzaczs)r - (kzscls)y] . (24b)
 
-sa’ Cog and Cor will be given.
+and C_._ will be given.
+
+I
+n the steam system the values for CSG’ CSS SR
 
 The steam flows will be so large that the diffusion of hydrogen through
-
 the metals should not have much effect on the concentration of hydrogen
-
 in the steam. Under these assumptions, we do not require a material
-
 balance over the steam system. If hydrogen is added to the feed water
-
 as hydrazine or in some other manner to give a specified ratio of
-
 hydrogen to H,0, then this ratio, coupled with the steam tables, can be
-
 used to calculate the hydrogen concentrations in the water and steam in
-
 the steam-raising equipment. Without addition of hydrogen the
-
 concentrations are established by the dissociation of water.
 
 We now need to solve the above equations to obtain values for all
-
 the flow rates and concentrations. We carry this out in the following
+sequence, discussed in more detail in Sec. IIIL.
 
-sequence, discussed in more detail in Sec. III.
-
-1.
-
-Calculate C Cig, Q1s and Q,9 from equations 19a, 19b, 20
+1. Calculate C Cis, Q18 and Q;9 from equations 19a, 19b, 20
 
 and 21b.
 
 CF’
 
-Assume a value for Cee
+2. Assume a value for CC.
 
-Calculate Q;p, Q11, Qi16s Q17 and Cys from equations lla, 11b,
+3. Calculate Qip5, Q115 Qi15, Q17 and C;¢ from equations 1lla, 11b,
 12a, 12b, 17a, 17b and 18.
 
-Calculate Qi3, Qiu, Qis, C13, Cis and Cis from equations léa,
-14b, 15a, 15b, 16a, 16b, 22a, 22b, 23a, 23b, 24a and 24D,
+4. Calculate Qi13, Qis, Qis, Ci13, Ciy and Ci1s from equations léa,
+14b, 15a, 15b, 16a, 1l6b, 22a, 22b, 23a, 23b, 24a and 24b,
 noting that the steam system and the secondary system are
 
-coupled by the relationships Qi3 = -Q231, Qiy = —-Q22 and
-Qis = -Qz23.
+coupled by the relationships Qi3 = -Q21, Q14 = -Qz22 and
+Qis = —Q23.
 16
 
 5. Calculate Q;, from the material balance, Eq. 2la.
 
-6. Calculate Cp C12 and Cy from Eqs. 4a, 4b, 13a, 13b, the
-relationship Qy = -Qi2 and the value of Qi, obtained in step 5.
+6. Calculate CF’ Ci12 and Cy from Eqs. 4a, 4b, 13a, 13b, the
+relationship Q4 = -Q;» and the value of Qi» obtained in step 5.
 These concentrations should all be positive. If any one of them
 is negative, steps 3 through 6 must be repeated with a larger
 
-value of Cee
+value of CC.
 
-7. When positive values have been found for Cro C12 and Cu,
+7. When positive values have been found for CF’ Ci2 and Cy4,
 
-calculate Qi, Q2, Q3, Qs, Qs, Q7, Qs, Cs, Cpp and Co.
+calculate Qi, Q2, Q3,5 Qs Q65 Q7,5 Qss Cs, Cpp and Cy.
 
-8. Calculate Rp from
+8. Calculate RF from
 
 8
-Rp= 1 Q; - (Ry + Rp) .
-i=1
-If Rp is positive, hydrogen must be added to the primary system
 
-in order to maintain a balance. This means that Co is too large,
+Rp = iil Qi - (R; + Rp) &
+If RF is positive, hydrogen must be added to the primary system
+in order to maintain a balance. This means that CF is too large,
+which in turn means that CC is too large, and steps 3 through 8§
+must be repeated with a smaller value of CC. If RF is negative,
+CC is too small and steps 3 through 8 must be repeated with a
+larger value of CC.
 
-which in turn means that Ce is too large, and steps 3 through 8
-must be repeated with a smaller value of Ce If Rp is negative,
-Ce is too small and steps 3 through 8 must be repeated with a
-
-larger value of Ce
-
-When this process has been repeated until the ratio RFR, is
-1 2
+When this process has been repeated until the ratio is
 
  
+
+R, + R,
 
  
 
@@ -873,44 +819,37 @@ added compound.
 
  
 
-*H,, HT and T..
+*H,, HT and T,.
 17
 We now proceed with the calculation of the tritium distribution.
 
 D. Primary system:
 1. Transport through walls of hot-leg piping:
 
-Qs1 = Cpr Q1 (25)
+Qs1 = UFT Q; . (25)
 
-Cr
+“r
 
 2. Transport through walls of cold-leg piping:
 
-Qg2 = °rr Q (26)
+Q32 = EEI Q2 . (26)
 
-Cr
+“r
 
 3. Transport through wall of reactor vessel and shells of heat
 
 exchangers in primary system:
+Q33 = _FT Q3 . (27)
 
-Qs33 = FT Qs . 27)
-
-4. Transport through walls of primary heat-exchanger tubes
+4, Transport through walls of primary heat-exchanger tubes
 
 into the secondary system:
 
-Q3y = hyAy (Cor - Cay) (28a)
-
-Pushy | KuCau _ _kjpCua
-ty (ky Cy)? (k12C12)2
-
- 
+Qay = hyA,y (CFT - Cay) (28a)
 
 il
 
-. (28b)
-
+B [decsr ~ osery| - (260)
 Equations 25 through 27 are straightforward, simply indicating that
 the amount of tritium flowing with hydrogen is proportional to the fraction
 of the concentration that is tritium when the flow of both is into a sink
@@ -923,24 +862,32 @@ additional explanation.
 18
 
 The rate of transport of hydrogen through a metal wall can be
+
 expressed as
-Q=2 (cl -c,
+
+I) .
+
+_DA v _
+Q= t (CI Co
+
 where D is the diffusivity of hydrogen atoms in the metal, the C's are
 the concentrations of hydrogen atoms dissolved in the metal at the inner
 (I) and outer (0) surfaces, t is the metal thickness and A is the surface
-
 area. Assuming no interaction of tritium and hydrogen atoms as they
-
 diffuse through the metal, the rate of transport of tritium is
 
-- 1
-T t TI Cro?
+_DA
 
+QT t
+
+¥ t
+- C .
+(o 0
 The concentration of hydrogen + tritium atoms in the metal at the
 surface is
 
 1
-¢' = se? = sao)? ,
+¢ = s = so)?
 
 where S is a solubility coefficient and P is the partial pressure of
 hydrogen + tritium and is equal to the product of Henry's law coefficient
@@ -950,160 +897,165 @@ Assuming that the ratio of tritium to hydrogen + tritium in the metal
 at the surface is the same as that in the salt at the surface, we can
 
 write
-rt — ff Cr1 = + C1 _ kiCrp
-Cc = (CV —— = S(k Cc ) —_— = —_—T
-TI T C II Cc . >
-1 1 (k Cp)
+v — CTI — %-CTI kICTI
+C —C————S(kC) _.._._.=S_..._.._.1.
+TI T C I'T” C | s
+I 1 (kICI)
 
 and a similar expression for the outer surface. Then,
 
-DSA kCor %6C10
+kiCr kqCro
+1 = 1
 
-Q = T —
-T t =
-(kCp)2 (koCo)
+(kICI)f- (kOCOy?
 
  
 
-1 ’
-2
+_ DSA
+U = 7%
 19
 
 and by substituting the permeability coefficient, p, for the product,
 DS, we obtain Eq. 28b. This treatment is necessary here because
 
-the net flows of hydrogen and tritium may be in opposite directions.
+the net flows of hydrogen and tritium may be in opposite directionms.
 The equations provide a means for taking into account the effect of the
 mass action laws on the concentrations of tritium in the metal and its
 transport through the metal.
 
 5. Removal by graphite or other sorber:
 
+C
 FT
-Q35 = Qs « (29)
+Q35 = T Qs » (29)
 F
 6. Removal by purge:
 C
 FT
-Q3p = ra Q¢ (30)
+Q3 = Rl Qg (30)
 F
 
 7. Removal by graphite or other sorber as tritium fluoride:
 
-Cpr
+CFT
 
-Q37 = 7 Q7 » (31)
+Q37 = = Q7 , (31)
 Cr
 
 8. Removal by purge as tritium fluoride:
 
 C
-Qag = SE Qs - (32)
-" ;
+Qag = EEE'QB . (32)
+7 :
 
 The tritium balance over the primary system is:
 
 38
-R, = 2 Q . (33)
+Rl = 2 Qi . (33)
 i=31
 E. Secondary system:
 1. Hot-leg piping:
 C
 CT
-Quo = 5 Quo (34)
+Quo = ¢ Qo - (34)
 20
 
 2. Cold-leg piping:
 C
-
-Qui = = Qi1 (35)
+CT
+Qui =5 Q1 (35)
 C
 
 3. Transport through primary heat exchanger tube walls into
 
 primary system:
 
- 
-
-Quo = hy2A4 (Cor - Cy2). (36a)
-_ PuAy | _k31oCup  _ kuCsu 36b
-ty hei (kyCy)1 | (36b)
+Quz = R128u(Cop = Cuz) (36a)
+= -E-li-l}-ii _klz_C"f_z__' - kquq v .
+ty [(klzclz)’f (kaCoa)i | (36b)
 
 4. Transport through steam generator tube walls into the steam
 
 system:
-Quj = h13A13(C - Cu3) (37a)
-= P1sMis KigCus, | (37b)
 
-tis (ki13Ci3p
+Qus = h13A13(CCT ~ Cy3) (37a)
+
+_ P13Ais klgcual
+tiy (ki13Ci3f2
+
+. (37b)
+
 Calculations of the tritium distribution are based on the assumption
 that tritium will exchange so rapidly with the hydrogen in the steam to
 form tritiated water that the tritium concentration will be effectively
-zero.
+Zero.
 
 5. Transport through the superheater tubes into the steam system:
 
-Quy = h1uA1s (Cp - Cyu) (38a)
+Quy = hluAlu(CCT - Cuy) (38a)
 
-tis (k14C1u)T
+_ PauAyy _kiuCuy
+= 1 . 8b
+tiv  (ki14C1y)7 (38b)
 
 6. Transport through the reheater tubes into the steam system:
 
-Qus = hisA1s (Cop - Cus) + (39a)
-= PisAis  _kysCus (39)
+Qus = h1sA15(Cop = Cus) © (39a)
+- Pisfis  _kisCus | (39b)
 
-tis (k15C15)2
+ti1s (k15C15)7
 21
 
 7. Removal by sorber as tritium:
 
 C
-Que = a Qi6 = (40)
-C
+Qus = == Qe « (40)
+
+“c
 
 8. Removal by purge as tritium:
 
 C
-Qur = =k Qi7 (41)
+Quz = 7§I'Q17 . (41)
 
 C
 
 9. Removal by sorber as tritium fluoride:
 
 C
-Que = Qis (42)
-
+Quo = == Qis - | (42)
 C
+
 10. Removal by purge as tritium fluoride:
 
-Cc
-Quo = == Qs . (43)
-
+C
+Quo ='?§2 Qio o (43)
 C
 
 The balance over the secondary system is:
 
 49
+R.3 = z Qi . (44)
 i=40
 
 Since the tritium concentration in the steam system is assumed to
 be negligible, no equations are needed for the steam system.
 
 To calculate the distribution of tritium, we solve Eqs. 2544 in
-the following sequence, discussed in more detail in Section III,
+the following sequence, discussed in more detail in Section III.
 
-1. Assume a tritium concentration, C,, , in the secondary system
+1. Assume a tritium concentration, C T° in the secondary system
 
-CT
-and calculate Quo, Q41s Qus through Q.s from Eqs. 34, 35, 37a,
+C
+and calculate Qso0, Q415 Qus through Q,s from Eqs. 34, 35, 37a,
 
 37b, 38a, 38b, 39a, 39b, 40, 41, 42 and 43.
-2. Calculate Q,, from the material balance, Eq. 44.
+2. Calculate Q42 from the material balance, Eq. 44.
 
-3. Calculate Cpr from Eqs. 28a, 28b, 36a and 36b, the relation-
-ship Qs4 = -Q42 and the value of Q,, from step 2, If the value
+3. Calculate CFT from Eqs. 28a, 28b, 36a and 36b, the relation-
+ship Qs34 = -Q42 and the value of Q4. from step 2., If the value
 
-of Cor is negative, increase the estimate for C,., and repeat
+of CFT is negative, increase the estimate for C,, and repeat
 
 CT
 
@@ -1113,124 +1065,131 @@ F
 proceed to step 4.
 22
 
-Calculate Qs, Qs32, Qss, Qss, Qs6, Qaz and Qse from Egs. 25-32.
+Calculate Q3;, Q32, Qs33, Q3ss, Qse, Qs> and Qse from Egs. 25-32.
 
-Calculate Res where
+Calculate RF’ where
+
 38
 
-= I Q,—R
-Fn
+= I Q, — R,
+Tl
 
 is the term that must be added to the left side of Eq. 33 in
 
 order for the equation to balance. If R, is positive, tritium
 
 F
-must be added to the primary system, so Cor and Cor are too
-large; if Rp is negative, Cor and Cor are too small. Adjust
-the value of Cor and repeat steps 1 through 5. When |RL/R. |
+must be added to the primary system, so CFT and CCT are too
+large; if RF is negative, CFT and CCT are too small. Adjust
+the value of CCT and repeat steps 1 through 5. When IRF/R1|
 
 is sufficiently small, the calculations are finished.
 23
-ITI. SOLUTION OF EQUATIONS
+ITTI. SOLUTION OF EQUATIONS
 
 In the procedure discussed above, we begin with the calculation of
 
-Cop? Cissy Qi1s and Q;o with Eqs. 19a, 19b and 20, and the material balance,
+CCF’ Cisy Qie and Q,s with Eqs. 19a, 19b and 20, and the material balance,
 
 Eq. 21b:
-Qis = hiehie (Cop — Cis) (19a)
-+
-= B,W4A15(k18C18)° » (19b)
-Qs = FLE.C.p ’ (20)
-Rs = Qi + Qio (21b)
+Qis = hlBAla(CCF — Cia) (19a)
+3
+= Bu,WsA;15(k18C1s)” (19b)
+Qio = FhEhch s (20)
+Rs = Qis + Q15 - (21b)
 
-Eq. 19b requires that Q.s > 0 and Eq. 20 requires that Qi: > 0, so if
-Rs = 0, 21b requires that Qs = Q;5 = 0. If Rs > 0, we combine 21b, 20
+Eq. 19b requires that Q,s > 0 and Eq. 20 requires that Qi > 0, so if
+Rs = 0, 21b requires that Qs = Q;9 = 0. If Rs > 0, we combine 21b, 20
 
 and 19a to obtain
 
-Rs = Quis = F4E,C = Rs — hihi (Cp = Cis) >»
+Rs - Q8 = FLE,C_ = Rs — h1aA15(CCF = Ci1s8) »
 
 CF
-or
-Cc = Rsth;sA;6Cys .
 
-CF F,E,+h,sA;8 (19¢)
+or
+
+c . = RsthiahA1eCis
+CF Fqu‘i‘hlaAla (]_QC)
 
 Substituting 19c into 19a, setting the result equal to 19b and collecting
-
 terms we obtain
 
 1
-0 — Cis = BCis » (194d)
+o — Cis = BCig » (194d)
 
 where we have defined
 
 Rs
-FE, °°
+F,E, °’
+
+_ F‘.E¢.+hleAla} [Bhw‘.} 4
+P = [ FLE, His [kls] ’
 
  
 
-o =
+u:
 
 and
 
-~ PuEtizaas] [Bae | +
-= | FuE, ie] [kre]
+ 
 24
 
-Squaring both sides of 19d results in a quadratic equation for Cis}
+Squaring both sides of 19d results in a quadratic equation for C;s}
 since the right-hand side of 19d is positive, we want the root of this
 
-quadratic which is less than 0. We have
+quadratic which is less than a. We have
 
-c3, - (20+8%)C; 6 + o? = 0 9
+Cfa —'(2a+32)cle +0* =0 >
+
+_2a+B2 + V(2a+B>) 2 ~4a
+
+C
+18 5
+
+To obtain the root less than o, we want the root with the negative sign.
+To avoid possible loss of significant figures, we note that the product
+
+of the roots is &2, so that we can write the solution in the form
+
+2
 
  
 
-_ 2a+B% + V(2a+B*) *— 4a?
-
-C
-18 2
-
-To obtain the root less than 0, we want the root with the negative sign.
-To avoid possible loss of significant figures, we note that the product
-
-of the roots is a?, so that we can write the solution in the form
-
-Cs = . (19e)
-+E (1+ 1422
-a+ 3
+o
+ClB = 2 . (lge)
+a+-B— 1+ \/l+—ng-
+2 B
 Then we have
 1
-Qie = BuWiA1s(k18Cis)” , (19b)
-_ Rs + higA;5C;
-Cer FL,E, + hisA1s (19)
+Qis = BhwhAls(klecls)T-, (19b)
+_— R5 + hlBAIBC].B
+CCF = TF.E. + DioAss (19¢)
 and
-Qe = FuELClp . (20)
+Qo = F&Euch . (20)
 
-With some value for Co we proceed to the calculation of Q;o, Qi,
+With some value for CC we proceed to the calculation of Qio, Qi:,
 
-Qi65 Qi7 and C;6. Egs. lla, 11lb, 12a and 12b read
+Q165 Q17 and Cis. Egs. 1la, 11b, 12a and 12b read
 
-Qio = hiof10(C, — C10) >» (11a)
-1
-Qio0 = Erofio (k10C10)2 (11b)
+Qio = h1oA10(CC — C10) » (11a)
+A 1
 
-Qi: = haf: (C, — C11) (12a)
+Qio = Ei%:LQ (kIOCIO)E., (11b)
+
+Qi1 = hllAll(CC — C11) > (12a)
 25
 
 A 1
-Quy = Basu (ky1C11)7 (12b)
+Qi = P—;—l—l (k1:1C11)2 (12b)
 
-These equations (11 and 12) are identical in structure, as ave Eqs. 1,
+These equations (11 and 12) are identical in structure, as aive Egs. 1,
 
 2, 3, 5, 7, 17 and 19. For Egs. 11 and 12 we define
 
  
 
-C, =¢C a =k,
+C1=C Ol=ki
 
 c’ t.h
 
@@ -1238,12 +1197,12 @@ ii
 
 and Eqs. 11 and 12 then can be written in the form of quadratics in the
 
-concentration Ct
+concentration Ci:
 
-2 _ 2 _
-Cs (2C, +a) C, + Ci 0.
+2 2 _
+Ci (2C1+a)Ci + C]_ 0o .
 
-From Eqs. 11b and 12b, the flow rates Q:o and Q,; must be positive, so
+From Egs. 1lb and 12b, the flow rates Q;o and Q,; must be positive, so
 
 that the root desired in each case is the smaller one. We have
 
@@ -1252,422 +1211,448 @@ that the root desired in each case is the smaller one. We have
  
 
 C Cy i 10, 11
-: = s 1 = ’ ’
-* vg (1+ 1)
-2 ao
+. = s 1 % ’ ’
+* c1+9‘-(1+ 1+Cl)
+
+2 o
 and
-PA, 1
-_ tid = .
-Q =< (k;C)) , 1 =10, 11 .
+
+P.A, 1
+
+_ i = . _
 i
 By putting
-Ca = Cs»
+Cl = CC ’
 
-BaWs \°
-= (32 >) kis »
+BsWs
+=(§12)k16 ’
 Cis can be calculated in the same fashion (Eqs. 17a and 17b) and the
 
-flow rates Qe and Q,; are
+flow rates Q.6 and Q,, are
 
 1
-Qis = BsWsAse(k16Cis) 2 ’
+Qi = BawsAls(k1sc1s)7-s
 
-Qi7 = FaEsC, .
+Qi7 = FsEscC .
 26
 
-We continue with step 4, the calculation of the flow rates Qs,
-Q.s and Q.s, and the corresponding concentrations C;s, C,4 and C,s,
-using Eqs. l4a, 14b, 15a, 15b, 16a, 1l6b, 22a, 22b, 23a, 23b, 24a and
+We continue with step 4, the calculation of the flow rates Q,s,
+Q14 and Q;s, and the corresponding concentrations C;s, C;, and C,s,
+using Eqs. l4a, 14b, 15a, 15b, 16a, 16b, 22a, 22b, 23a, 23b, 24a and
 24b. Note that the secondary system and the steam system are coupled
 
 by the equations
 
-Qis = =Q21, Q14 = =Q22 and Qs = -Q2s5
+Qis = =Q21, Qia = Q22 and Q15 = -Q23 .
 
 The three equations 14, 15 and 16 all have the same structure and can
 
 be written in the form
 
-Px + +
-(C1) = 5 [ae0® = agent] @)
-hy (C=C) = h (C2—Cp) , (b)
+ 
 
-where K = 13, 14 and 15, C, = C,, L = 21, 22 and 23, and we identify
+P 1 1
+— = K T _ T
+=G oo - aep?] (2)
+h, (C; —Cz) = h (C:—Cp) , (b)
+where K = 13, 14 and 15, C, = CC’ L =21, 22 and 23, and we identify
+C. as CSG’ CSS and CSR for K = 13, 14 and 15, respectively. We can
+solve Eq. b for CL:
+ht(cl-C) +hC2 h
+c =X K L - K,-c)+c, . (c)
+L hL hL K
 
-Cc?
-Ca as C
-
-3G? Cog and Cop for K = 13, 14 and 15, respectively. We can
-
-solve Eq. b for Cpt
-
-‘LTT wT
-
-(C.—cC) + Cs. (c)
-L K
-
-Sil
-
-Since C. must be non-negative, there is a maximum permissible value
+Since C, must be non-negative, there is a maximum permissible value
 
 L
-cman) which is the value such that
+Cémax)’ which is the value such that
 h
-BS - - cme) + Ca = 0 ’
+K (c1 c(max)) +Co =0,
 h K
 L
 or
 h
-cman) _ oy Lg, (a)
-K hy,
+clmax) C, + 2 Cs . (d)
+K hK
 
-If we substitute (c¢) into (a) and rearrange, we have
+If we substitute (c) into (a) and rearrange, we have
 27
 
-po 4h 3 +
-G = Ce [Re © 0 +o] = [] ( ©)
+k + | * %‘l
+Ce = Co v gk & (G0 * G _[kKCK] ’ (e)
 KK L
 or, more concisely,
-Cx = F(C) .
+CK = F(CK) .
 
 To locate the solutions (if any) of this equation, we need to
 
 (max)
 
-examine the behavior of FC) for 0 < C, < Cx . We find that
+examine the behavior of F(CK) for 0 < C 5_CK . We find that
 
 K
 
-F(0) > 0
+F(0) >0
 and
 
-F'(C) <0, F'(0) = —=
-1"
-F'(C) > 0.
+F'(CK) < 0, F'(O) = =®
+F"(CK) _>_ 0.
 
-The graph of F(C then looks like the curve in Fig. 2.
+The graph of F(CK) then looks like the curve in Fig. 2.
 
-‘x
+“k
 
-F(Cp)
+F(CK).
 
  
 
-ol Cy
-Fig. 2. Sketch of F(Cy) vs Cx
+ 
+
+0 CK
+Fig. 2. Sketch of F(CK) vs CK.
 
 (max)
 
-For there to be a solution between zero and Cx
+For there to be a solution between zero and CK
 
 , we must have
 
 (max)
 
-x
+“k
 
-> Fc") and upon substitution of our expression (d) into
-F(Cy)» we find that this condition is satisfied. We will now examine
+> F(Cémax)) and upon substitution of our expression (d) into
+F(CK), we find that this condition is satisfied. We will now examine
 
 the function
 
-G(Cp) =C,6 ~~ () .
+G(CK) = C_ — F(CK) .
 
 K
 28
 
 We note that
 
-G(0) = -F(0) <0
-cc max) > 0
+G(0) = =F(0) <0
+
+(max)
+
+G(CK
+
+) >0
 
 and
 
-G' (Cy) =1 — FC) > 0 [since F' (Cp) <0].
+G'(CK) =1 —-F'(CK) > 0 [since F'(CK) < 0] .
 
-This insures that G(Cp) has one and only one zero in the range
+This insures that G(CK) has one and only one zero in the range
 
- 
-
-(max) : "n 1" "
-< = —- <
-0 SCC . Since G (Cp) F (Cp) » G (Cx) < 0, and the graph
-of G(Cy) looks like the curve shown in Fig. 3.
 (max)
-G(Cy )
-0 (max)
+
+< : " = " " <
+0<CcC E-CK . Since G (CK) F (CK), G (CK) < 0, and the graph
+
+K
+of G(CK) looks like the curve shown in Fig. 3.
+
+(max)
+
+' c(c"))
 
  
 
-GO) [”
+ 
 
-Fig. 3. Sketch of G(Cp) vs Ce
+ 
 
-(1)
+G(0)
 
-r ) < 0 (for example,
+Fig. 3. Sketch of G(CK) vs CK
 
-With a suitable ct we can compute G,; = G(C
-
-starting with oi = 0) and with a suitable c(? Gz = ac?) > 0
-
-K hb]
-(2) _ (max) (T)
-K K K °
-
-(C , to start). An approximation to the solution C is
+With a suitable Cél) we can compute G, = G(Cél)) < 0 (for example,
+starting with Céi) = () and with a suitable Céz), G, = G(Céz)) >0
+(Céz) = Cémax), to start). An approximation to the solution CéT), is
 
 derived from the inverse linear interpolation:
 
 (1) _ (2)
-c(D _ G2Cp G1Cy
-K Ga -- G, ’
+(D) _ G2Cy G1Cy
+K G2 - G]_ >
 
-as shown in Fig, 2, A better approximation can be derived with inverse
+as shown in Fig. 2. A better approximation can be derived with inverse
 
 quadratic interpolation:
 
-(0-6) (0-62) (0-6) (0-6) (0-G1) (0-G2)
-(x) T cD , r_ ( (D
+(X) (O-GT) (O_G2) (1)
 
-TEE) Gt kK FT oy KY Een Gen Kt
+(O_Gl) (O—GT) (2) (O_Gl) (O"Gz)
+= e————————— (O
+K~ (6:-6) (G:~62) K
+
++ e c{D
+
+C t .
+(Gz*G1)(G2-GT) K (GT—Gl)(GTQGI) K
 29
 
-With GM(Cp) 2 0 as shown and G' (Cp) > 0, G_, = act) will be positive
-
+With G"(CK)_i 0 as shown and G'(CK) >0, GT = G(CéT)) will be positive
 T
 
-T
-and cP should be larger than the root. If ct is larger than cf )
-we replace ct? by cP, G2 by Gos and repeat the inverse linear inter-
+and CéT) should be larger than the root. If Céx) is larger than Cé ),
 
-c (x) (T)
+we replace Céz) by CéT), G2 by GT’ and repeat the inverse linear inter-
 
-polation. If, however, is smaller than Cx , we calculate
+i (x) , (T)
 
-K
-1 Xx
-CG = ccd; and if this value is negative, we replace c ) by cf )
-Gi by G_, ci? by cD and G, by Gj, and repeat the inverse linear
+polation. If, however, CK is smaller than CK , we calculate
 
-interpolation. If GC is positive, we replace ct by ec and G, by G,
+GX = G(Cé%)); and if this value is negative, we replace Cél) by Cé#),
+
+G, by Gx’ Céz) by CéT) and G, by GT’ and repeat the inverse linear
+
+interpolation., If GX is positive, we replace Céz) by Céx) and G, by GX
 
 and repeat the inverse linear interpolation. We terminate this process
 
 when
 (T)
-“x
-(x)
-Cx
+&
+(%)
+CK
 
 1 <C
 
-TOL °*
+TOL °
 
-or when we have done 50 iterations. The tolerance CooL is defined in a
+or when we have done 50 iterations. The tolerance CTOL is defined in a
 DATA statement in our program. We have found that the procedure converges
-in about four iterations for CooL = 10~° and in about six iterations for
+in about four iterations for CTOL = 10™° and in about six iterations for
 
-— i
-CooL 1077.
+_ -7
+CTOL 1077,
 
-The required flow rates Qis, Q21, Qiss Qz2, Qis and Qs can now be
+The required flow rates Q;s;, Q215 Qias Qz22, Q15 and Q23 can now be
 
 computed from
-Q; = hyA; (Cp = Cy)
+Q; = hiAi(CC-— ci)
 
-Qi48 = -Q,, i= 13, 14, 15,
+Qg = ~Q» 1 =13, 14, 15 .
 
 The flow rate of hydrogen and tritium through heat exchanger tube
 
 walls from the secondary to the primary system, Q,,, is
-
-Qi2 = Rs + Ry — (Qi0 + Qi: + Quis + Quis + Qis + Qi + Q:17) ’
+Qiz = Rs + Ry — (Qio + Q1 + Qis + Qus + Qs + Q16 + Qy7) ’
 
 and from Eq. 13a,
 
-Cio = C —Ju2
-C hiA,
+C12=C_££_.
+C hi.A,
 30
 
-If the value for C,, is negative, we have used too small a value for
-Cos so we double our previous guess and start over at step 3. If the
+If the value for C,. is negative, we have used too small a value for
+CC’ so we double our previous guess and start over at step 3. ' If the
 computed value is positive, we proceed to calculate (Eq. 13b)
 
-1 ¥  Qiata]?
-C, = Ka [(eaaCin)® = Bs5Es]
+1 3 t,]?
+Cy = E:’[(klzc1z)]-—'%ii;f]
 
 ’
 
 and finally,
 
-cc —Qz2
-Co Cs, hohs
+- _9;2
+CF Cu hyAg
 
 If the computed value for C_ is negative, we need a larger value for
 
 F
-Ces so we double our previous guess and return to step 3. If positive,
-we proceed to step 7, the computation of the remaining flow rates Qi,
-Q2s Q3, Qs, Qs, Q7 and Qs and the concentrations Cs, Cpr and C7.
-We can write Eqs. 1, 2 and 3 in the form
-Pify +
-Qq = ha; (Cp = Cy) = Tt, (k,C)" » i=1, 2,3,
+CC’ so we double our previous guess and return to step 3. If positive,
+we proceed to step 7, the computation of the remaining flow rates Q,,
+Q2, Q3, Qs, Qg, Q7 and Qs and the concentrations Cs, Cop and Cy.
+
+We can write Egqs. 1, 2 and 3 in the form
+
+P.A, 1
+= - _ 11 z s =
+Qi = hiAi (CF Ci) . (kici) , 1 1, 2, 3,
 
 and with
 
  
 
 the resulting quadratic equations can be solved in the same way as
-those for C;y and C;;. Egs. 5 can be manipulated into the same form
+
+those for C;, and Cy;. Egs. 5 can be manipulated into the same form
 
 with
 
-_ [BW |?
-a = hs ks
+_{Bw; }?
+o = hs k5
 
 so that we can calculate Cs, and from it
 
 1
-Qs = B1WiAs (ksCs)? (5b)
+Qs = B1WiAs (ksCs)Z . (5b)
 31
 
 Again, Eqs. 7a and 7b can be written as a quadratic for C; with
 
-BoWy |?
-ce)
-so that we can calculate
+BoWo |2
+o "_—‘]:2172 k7
+s0 that we can calculate
 1
-Q7 = BaWaAy (ksCy)7
-Qs = F2E2Cpp
+Q7 = BoWpAy (k7Cy)7
+Qg = FzEchF
 and
 8
-Ry = 2 Q. - Ry - Rez
+R.= 2, Q -Ri-Re
+; i
 i=1
-where Cor is
+where CFF is
 1
-= Mu -
-Cop = my . (10)
+. MU T
+o 6(50}_,) : (10)
 
-This is the end of the first part of the procedure if Rp is small
+This is the end of the first part of the procedure if RF is small
 
 enough. We test the condition
 
 Rp
 
-R1+R2
-
- 
-
-<
-ror
+Ri+R,
 
  
 
  
 
-(where the quantity Toor, is defined in a DATA statement in our
+ 
+
+TTOL
+
+(where the quantity TTOL is defined in a DATA statement in our
+
 program) and if it is satisfied, we proceed to the second part. If
-not, we adjust Cc in a variety of ways, depending on what information
+
+not, we adjust C, in a variety of ways, depending on what information
+
+C
+
 we have accumulated so far. We carry out a preliminary search for
-two values of Co which bracket the root, i.e., one for which Rp is
-negative and the other for which Ry is positive. If this is the
 
-first iteration or if both our present and previous values of Rp
+two values of CC which bracket the root, i.e., one for which RF is
 
-have the same sign, we multiply Ce by a factor m such that
+negative and the other for which RF is positive. If this is the
+
+first iteration or if both our present and previous values of RF
+
+have the same sign, we multiply CC by a factor m such that
 
 -R_/(R1+R3)
-m = 10 “F
+m = 10 RF
 32
 
 but limited to the range
-.01 <m < 100 .
+.01 <m <100
 
 When we have bracketed the root, we combine inverse linear and
 inverse quadratic interpolation in much the same way as we did for
-the solution of the equations for Ci, C14 and Cis, keeping the root
+the solution of the equations for C;3, Ci;n and Ci15, keeping the root
 bracketed and attempting to reduce the length of the interval con-
 taining the root. When this process has converged, we proceed to
 the tritium calculation.
 
-With a value for C T° the concentration of tritium in the
-
-C
+With a value for CCT’ the concentration of tritium in the
 
 secondary salt, we compute
 
 C
-
-Quo = = Qio0 (34)
+Qu 0 ='EEI Q1o (34)
 C
 C
-
-Quy = = Q11 (35)
+Qyy = EEE Qi1 (35)
 C
 
-and from Eqs. 37a, 37b, 38a, 38b, 39a and 39b we obtain
+and from Egs. 37a, 37b, 38a, 38b, 39a and 39b we obtain
 
- 
+]
+h1st13(C13/k13)%/pyy
+Cus = 1 C 37
+“* 7 1+hyst13(Crs/k13)% /prs CT (37¢)
 
- 
+_ pP13A13
+Qus t13(C13/ky3)? Cus (370)
 
- 
+1
+h14t14(614/k14yT/P1u (38¢c)
 
-cur = PEG oe
-Qu3 = TRA Cy 3 (37b)
-cu = Prati ou (e
-Qua = CIOS} Cus (38b)
-cus = pESisGla ras (9)
-Qus = ___PpisAis | Cus (39b)
+C = C
+T 1hyet1s (Cru/kys)E /piy  CT
 
-t15(C1s/ky5)?
+PisAqy
+=-—-—-————-——_—.—_—.‘
+Qus t1u(Cry/kyy)? Cu (38b)
+
+1
+h15t15(C15/k15)77P15 (39¢)
+
+C =
+"3 7 1+h;st15(Cys5/kys)% /p1s CT
+
+Qus = __pisAis  Cus (39b)
+t15(C1s5/ky5)?
 33
 
-Cer
-Q 130 = C Qs 1 = 16, 17, 18, 19 (40-43)
-Qu2 = R3=Quo~Qu1-Qu3=Quu-Qus5-Que=Qu 7-Que—Quo (44)
+CCT
+Qysp = EE_ Qs 1= 16, 17, 18, 19 (40-43)
+Qu2 = R3=Qu0-Q41-Qu3-Qus=Qus5-Que~Qu 7~Qu=Qu o (44)
 and finally
-= _ Quo
-Coz = Cop = HAG :
+= _ Qua
+Gz = Cop = §,A0 .
 
 If this value is negative, we have used too small a value for
-Cor in the same way as before, we double Cor and try again, starting
 
-at Eq. 34. When we have found a positive C,;, we compute
+C in the same way as before, we double C and try'again, starting
+
+cT’ CT
+at Eq. 34. When we have found a positive C,2, we compute
 
 3
-a Cy2 _ £uQuo
-Cou () (Ci2/k12)¥ ~ DuA,
+- [ Cu Cyo _ tuQuo
+Cau (ku) (C1z/k12)¥ PuAy
 
-Again, if Ca, is negative, we need to double C and try again.
+Again, if C3, is negative, we need to double C_, and try again.
 
 CT
 
 When we have found a positive Cj3,, we compute
 
-= _ Qua
-Cor Cau hyAy
+= _ _Quo
+CFT Css hyAy
 
-and continue with the doubling scheme until C42, C34 and Cor are all
+and continué with the doubling scheme until Cy2, C3y and CFT are all
 
 positive. We can now compute the flow rates
 
-Cpr
-A044 “tw i=1, 2, 3, 5, 6, 7, 8
+CFT
+Q30+i =“C_~Qi’ i=1, 2, 3, 5, 6, 7, 8
+F
+
 and
-38
 
-Our test is now on |Rp/r4] and we use the same adjustment and
+§?
+= Q. -~ Ry .
+¥ i=31
 
-interpolation procedures as for Ce:
+OQur test is now on |RF/R1|’ and we use the same adjustment and
+
+interpolation procedures as for CC.
 35
 
-IV. NOMENCLATURE
+Iv, NOMENCLATURE
 
-A = surface area, cm?
+A = surface area, cm®
 
-A
+A1
 
 hot leg of primary system (piping and
 pumps)
@@ -1700,31 +1685,39 @@ sorber of hydrogen
 
 sorber of hydrogen fluoride
 
+ 
+
 Reference
 
 Value® Name*#*
 
+ 
+
 A
 
-6 X 10°
+6 X lO5
 
-5X 10°
+5X lO5
 
-3.5 X 10°
+3.5 X 106
 
-4.9 X 10’
+4.9 X 107
 
-5.2 X 10’
+5.2 X 107
 
-5.2 X 10’
+5.2 X lO7
 
-1.1 X 10
-8.8 X 10
-3.1 X 10
+1.1 X 107
 
-2.7 X10
+8.8 X 106
 
-1.8 X 10
+4.9 X 107
+
+3.1 X lO7
+
+2.7 X 107
+
+1.8 X lO7
 
 *The reference values are based on the design of a 1000 MWe molten salt
 breeder reactor plant described in ORNL-4541.
@@ -1732,45 +1725,47 @@ breeder reactor plant described in ORNL-4541.
 parameter is not used in the program.
 36
 
+ 
+
 Reference
 Value Name
-B = sorption factor, atoms/cm*atm®/? B
+B = sorption factor, atoms/cmaatml/2 B
 21
-B, = hydrogen + tritium on core graphite 3X10
+Bl = hydrogen + tritium on core graphite 3 X10
 21
-B, = hydrogen fluoride on core graphite 3 X10
-B., = hydrogen + tritium on sorber in secondary
+B2 = hydrogen fluoride on core graphite 3 X 10
+B = hydrogen + tritium on sorber in secondary
 3 18
-system 1X10
+system 1 X 10
 B = hydrogen fluoride on sorber in secondary
 4 18
-system 1X 10
-C = concentration, atoms/cm?
-Cp = hydrogen + tritium in bulk of primary salt CF
-Cop = hydrogen + tritium as hydrogen fluoride in
+system 1X10
+C = concentration, atoms/cm®
+CF = hydrogen + tritium in bulk of primary salt CF
+CFF = hydrogen + tritium as hydrogen fluoride in
 bulk of primary salt CFF
-Cor = tritium in bulk of primary salt CFT
-Ce = hydrogen + tritium in bulk of secondary salt CC
-Cop = hydrogen + tritium as hydrogen fluoride in
+CFT = tritium in bulk of primary salt CFT
+CC = hydrogen + tritium in bulk of secondary salt CC
+CCF = hydrogen + tritium as hydrogen fluoride in
 bulk of secondary salt CCF
-Cor = tritium in bulk of secondary salt CCT
-Cee = hydrogen in bulk of water in steam generator 10
-(672°K) 2 X10 CSG
-Cog = hydrogen in bulk of steam in superheater 11
+CCT = tritium in bulk of secondary salt CCT
+CSG = hydrogen in bulk of water in steam generator 10
+(672°K) 2 X 10 CSG
+CSS = hydrogen in bulk of steam in superheater 11
 (783°K) 9 X 10 CSS
-Cor = hydrogen in bulk of steam in reheater 11
-(755°K) 1X10 CSR
-Cy = hydrogen + tritium in salt at surface of hot
+CSR = hydrogen in bulk of steam in reheater 11
+(755°K) 1 X 10 CSR
+Cl = hydrogen + tritium in salt at surface of hot
 leg of primary system C
-Cc, = hydrogen + tritium in salt at surface of
+C2 = hydrogen + tritium in salt at surface of
 cold leg of primary system
-Cy = hydrogen + tritium in salt at surface of
+C3 = hydrogen + tritium in salt at surface of
 
 reactor vessel and heat exchanger shells
 37
 
 Reference
-__ Value ~~ Name
+___Value =~ Name
 
 hydrogen + tritium in salt at surfaces
 of heat exchanger tubes in primary
@@ -1810,45 +1805,44 @@ of sorber in secondary system
 38
 
 Reference
-Value Name
-€20 =
-Coq = hydrogen in steam at surfaces of steam
+__Value = Name
+€0 7 7
+C21 = hydrogen in steam at surfaces of steam
 generator tubes in steam system
-Cry = hydrogen in steam at surfaces of super-
+022 = hydrogen in steam at surfaces of super-
 heater tubes in steam system
-Cog = hydrogen in steam surfaces of reheater
+C23 = hydrogen in steam surfaces of reheater
 tubes in steam system
 C — = ——
 24 C33
-Cay = tritium in salt at surfaces of heat
+C34 = tritium in salt at surfaces of heat
 exchanger tubes in primary system
-€357C41 = =
-Co = tritium in salt at surfaces of heat
+C357C41 = 7
+C42 = tritium in salt at surfaces of heat
 exchanger tubes in secondary system
-Cus = tritium in salt at surfaces of steam
+C43 = tritium in salt at surfaces of steam
 generator tubes in secondary system
 C = tritium in salt at surfaces of super-
-44 .
+A .
 heater tubes in secondary system
-Cys = tritium in salt at surfaces of reheater
+045 = tritium in salt at surfaces of reheater
 tubes in secondary system
 E = efficiency E
-Es = removal of hydrogen + tritium from purge -1
+El = removal of hydrogen + tritium from purge _1
 stream in primary system 5 X 10
-E, = removal of hydrogen fluoride from purge
-2 i : =2
+E2 = removal of hydrogen fluoride from purge _>
 stream in primary system 1.7 X 10
 E = removal of hydrogen + tritium from purge
 3 . : -1
 stream in secondary system 1.8 X 10
-E, = removal of hydrogen fluoride from purge 3
+E4 = removal of hydrogen fluoride from purge 3
 
-stream in secondary system 1.8 X 10°
+stream in secondary system 1.8 X 10~
 39
 
 F = flow rate, cm®/sec
 
-Fy
+B
 
 purge stream for removal of hydrogen +
 tritium from primary system
@@ -1889,10 +1883,12 @@ hydrogen through secondary salt to surfaces
 of hot leg in secondary system
 
 Reference
-Value
+Value Name
 
 3.6 X 10
+
 3.6 X 10
+
 5.0 X 10
 
 5.0 X 10
@@ -1902,17 +1898,14 @@ Value
 6.0 X 10
 
 9.0 X 10
+
 1.9 X 10
 
-3.0 X 107°
+3.0 X 10>
 
-3.0 X 107°
+3.0 X 10>
 
 7.4 X 1072
-
-Name
-
-F
 11
 
 12
@@ -1941,7 +1934,7 @@ F
 
 Henry's law coefficient,
 
-0.83 X 1072
+0.83 x 10 %% [k'
 
 hydrogen
 
@@ -1999,10 +1992,9 @@ of steam
 
 hydrogen
 
-through water to surfaces of tubes
+through water
 generators in steam system
-
-through steam to surfaces of tubes
+through steam
 generators in steam system
 
 through steam to surfaces of tubes
@@ -2015,35 +2007,59 @@ atom H
 moles H, -1
 (cm® melt) (atm.)
 
+ 
+
 Reference
 
-Value Name
+Value
 
-3.4 X 1072
+Name
 
-9.7 X 102
+ 
 
-4.3 X 1072
+to surfaces of tubes
 
-4.7 X 1072
+to surfaces of tubes
 
-4.0 X 102
+3.4 X 10
+9.7 X 10
+4.3 X 10~
 
-8.0 X 10 +
+4.7 X 10
+4.0 X 10~
 
-8.0 X 107%
+8.0 X 10
+
+8.0 X 10
 
 5.8
+
 12
 
 30
+
+2
+
+2
+
+2
+
+2
+
+2
+
+1
+
+1
 41
 
 -1
 
--241. , moles HF
-10 g (cm® Ee
+ 
 
+10-24 [k' moles HF ]
+
+(cm® melt) (atm.)
 hydrogen in primary salt in hot leg in
 primary system (973°K)
 
@@ -2060,7 +2076,7 @@ exchangers in primary system (908°K)
 hydrogen in primary salt in reactor core
 in primary system (923°K)
 
-——
+— —
 
 hydrogen fluoride in primary salt in
 reactor core in primary system (923°K)
@@ -2072,7 +2088,7 @@ hydrogen in secondary salt in cold leg in
 secondary system (723°K)
 
 hydrogen in secondary salt in heat
-exchangers in secondary system (809 °K)
+exchangers in secondary system (809°K)
 
 hydrogen in secondary salt in steam
 generators in secondary system (783°K)
@@ -2081,35 +2097,33 @@ hydrogen in secondary salt in superheaters
 in secondary system (866 °K)
 
 hydrogen in secondary salt in reheaters in
-secondary system (810°K) -
+secondary system (810°K)
 
 Reference
 Value
 
-1.2 x 107%
+1.2 x 10°%
 
-2.0 x 101
+2.0 X 1071
 
-1.5 x 101
+1.5 X 107+
 
-1.5 X 107%
+1.5 X 1071
 
-1.4 Xx 107%
+1.4 x 1071
 
-1.5 x 1071
+3.4 X 10+
 
-3.4 X 1077
+5.0 X 1071
 
-5.0 x 101
+4.0 X 1074
+
+4.5 X 10+
+
+3.5 X 10+
 
 4.0 X 1071
 
-4.5 X 1071
-
-3.5 x 1071
-
-4.0 X 101
-
 7
 
 7
@@ -2119,8 +2133,6 @@ Value
 7
 
 7
-
-9
 
 8
 
@@ -2135,59 +2147,116 @@ Value
 8
 
 Name
-42
+16
+
+17
+
+18
+
+19
+
+20
+
+21
+
+22
+
+23
+
+42
+
+hydrogen in secondary salt in contact
+with sorber in secondary system (773°K)
+
+hydrogen fluoride in secondary salt in
+contact with sorber in secondary system
+(773°K)
+
+hydrogen in steam in steam generators in
+steam system (660 °K)
+
+hydrogen in steam in superheaters in the
+steam system (755°K)
+
+hydrogen in steam in reheaters in steam
+system (714 °K)
+
+equilibrium quotient for reduction of UF4 by
+hydrogen, atnﬁ/ﬁ (923°K)
+
+permeability coefficient for hydrogen in metal
+
+(atoms H) (mm)
+
+16 , (cm® H, STP) (mm)
+
+ 
+
+ 
+
+(sec) (cm?) (atm) 2/2
+
+~—— = 1.5 X 10
+
+at average temperature of metal in hot leg
+in primary system (973°K)
+
+at average temperature of metal in cold
+leg in primary system (838°K)
+
+at average temperature of metal in reactor
+vessel and heat exchanger shells in
+primary system (873°K)
+
+at average temperature of metal in tubes
+in heat exchangers in primary system
+(873 °K)
 
 Reference
-Value Name
-kig = hydrogen in secondary salt in contact -18
-with sorber in secondary system (773°K) 4.4 X 10
-ky = -
-kig = hydrogen fluoride in secondary salt in
-contact with sorber in secondary system -20
-(773°K) 1.1 X 10
-19 = =" —"
-Kyo = —= —_—
-Koy = hydrogen in steam in steam generators in -20
-steam system (660 °K) 4,5 X 10
-ko, = hydrogen in steam in superheaters in the -20
-steam system (755°K) 5.1 X 10
-kyq = hydrogen in steam in reheaters in steam -20
-system (714 °K) 4.8 X 10
-equilibrium quotient for reduction of UF, by -6
-hydrogen, atm? (923°K) 1.12 X 10 M
-permeability coefficient for hydrogen in metal P
-H 3
-(atoms H) (mm) - 1.5 X 1016, (cm H, STP) (nm)
-(sec) (cm?) (atm) 1/2 (hr) (ecm ) (atm)
-Py = at average temperature of metal in hot leg 15
-in primary system (973°K) 2.1 X 10
-P, = at average temperature of metal in cold 14
-leg in primary system (838°K) 6.7 X 10
-Py = at average temperature of metal in reactor
-vessel and heat exchanger shells in 14
-primary system (873°K) 9.0 X 10
-P, = at average temperature of metal in tubes
-in heat exchangers in primary system 14
-(873 °K) 9.0 X 10
+Value
+
+4.4 X 10718
+
+4.5 X 10”29
+
+5.1 X 10720
+
+4.8 X 10'20
+
+1.12 X 107°
+
+(hr) (cm?) (atm) /2
+
+2.1 X 1015
+
+6.7 X 1014
+
+9.0 X 1014
+
+9.0 X 1014
+
+Name
+
+M
 43
 
-P5~Pg = -
+ps_pg = -
 
-Pio = at average temperature of metal in hot leg
+Pig at average temperature of metal in hot leg
 in secondary system (893°K)
 
-P11 = at average temperature of metal in cold
+pll = at average temperature of metal in cold
 leg in secondary system (723°K)
 
-P12 7 Py
+Pi2 = Py
 
-Pi3 = at average temperature of tubes in steam
+p13 = at average temperature of tubes in steam
 generators in secondary system (723°K)
 
 P14 = at average temperature of tubes in super-
 heaters in secondary system (838°K)
 
-Pig = at average temperature of tubes in
+Pys = at average temperature of tubes in
 
 reheaters in secondary system (773°K)
 = pressure, atm, or other appropriate units
@@ -2195,45 +2264,50 @@ reheaters in secondary system (773°K)
 = rate of transport, atoms of hydrogen and/or
 tritium per second
 
-Q = hydrogen + tritium through walls of hot
+Q1 = hydrogen + tritium through walls of hot
+leg in primary system '
+
+Q2 = hydrogen + tritium through walls of cold
 leg in primary system
 
-Q, = hydrogen + tritium through walls of cold
-leg in primary system
-
-Qs = hydrogen + tritium through wall of reactor
+QB = hydrogen + tritium through wall of reactor
 vessel and shells of heat exchangers in
 primary system
 
-Q, = hydrogen + tritium through walls of tubes
+Q4 = hydrogen + tritium through walls of tubes
 in heat exchangers from primary system to
 secondary system
 
-Qs = hydrogen + tritium to core graphite in
+Q5 = hydrogen + tritium to core graphite in
 primary system
 
-Qg = hydrogen + tritium to purge in primary
+Q6 = hydrogen + tritium to purge in primary
 system
 
 Reference
 Value
 
-1.1 X 10%?
+15
+
+1.1 X 10
+
+1.8 X lOl4
+
+9.0 x 10%*
 
 1.8 X 1014
-9.0 X 10%
 
-1.8 X 10%
+6.7 X 1002
 
-6.7 X 1074
-
-3.5 X 101%
+3.5 X 1014
 
 Name
 44
 
 Reference
-__ Value = Name
+Value Name
+
+ 
 
 hydrogen fluoride to core graphite in
 primary system
@@ -2249,7 +2323,7 @@ cold leg in secondary system
 
 hydrogen + tritium through walls of
 tubes in heat exchangers from secondary
-system to primary system = -Q,
+system to primary system = —Q4
 
 hydrogen + tritium through walls of the
 steam generator tubes from the secondary
@@ -2278,20 +2352,20 @@ system
 hydrogen through walls of steam generator
 tubes from steam system into secondary
 
-system = -Q 4
+system = -Ql3
 45
 
 Reference
-__Value = Name
+Value Name
 
 hydrogen through walls of superheater
 tubes from steam system into secondary
 
-system = “Qi
+system = —Q14
 
 hydrogen through walls of reheater tubes
 from steam system into secondary system =
-“Qs
+Qs
 
 tritium through walls of hot leg in
 primary system
@@ -2327,63 +2401,70 @@ secondary system
 tritium through walls of heat exchanger
 tubes from secondary system into primary
 
-system = -Q3,
+system = -Q34
 46
+
+ 
 
 Reference
 Value Name
 Q = tritium through walls of steam generator
-43 ;
+43 .
 tubes from secondary system into steam
 system
-Qs = tritium through walls of superheater tubes
+Q44 = tritium through walls of superheater tubes
 from secondary system into steam system
-Qs = tritium through walls of reheater tubes
+Q45 = tritium through walls of reheater tubes
 from secondary system into steam system
-Us = tritium to sorber in secondary system
-Qy7 = tritium to purge in secondary system
-Ug = tritium fluoride to sorber in secondary
+Q46 = tritium to sorber in secondary system
+Q47 = tritium to purge in secondary system
+Q48 = tritium fluoride to sorber in secondary
 system
-Qu = tritium fluoride to purge in secondary
+Q49 = tritium fluoride to purge in secondary
 system
 rate of production or addition, atoms/sec R
-R, = tritium in primary system 5.8 X 1017
-R, = hydrogen to primary system 0
-Ry = tritium in secondary system 0
-R, = hydrogen to secondary system 0
-Rg = hydrogen fluoride to secondary system 0
-Ry = hydrogen or tritium to primary system
+Rl = tritium in primary system 5.8 X lO17
+R2 = hydrogen to primary system 0
+R3 = tritium in secondary system 0
+R4 = hydrogen to secondary system 0
+R5 = hydrogen fluoride to secondary system 0
+RF = hydrogen or tritium to primary system
 in order to obtain overall material
-balance -—
+balance -
 temperature, °K
 wall thickness, mm T
-ty = hot leg in primary system 13
+tl = hot leg in primary system 13
 t = cold leg in primary system 13
 
 2
 47
 
+ 
+
 Reference
 Value Name
-ty = reactor vessel and heat exchanger shells
+t3 = reactor vessel and heat exchanger shells
 in primary system 50
-t = tubes in heat exchangers in primary
+t4 = tubes in heat exchangers in primary
 system 1
-tio = hot leg in secondary system 13
-ti = cold leg in secondary system 13
-f12 7 5
-t3 = tubes in steam generators 2
-ta = tubes in superheaters 2
-ts = tubes in reheaters 1
-U = ratio Xp Xp 100 U
+t.._ = e
+5 %9
+t10 = hot leg in secondary system 13
+t1l = cold leg in secondary system 13
+f12 7 %
+t13 = tubes in steam generators 2
+t14 = tubes in superheaters 2
+t15 = tubes in reheaters 1
+= i U
+U = ratio XUF /XUF 100
 4 3
-W = replacement rate, fraction/sec Ww
-Wy = core graphite or other sorber of hydrogen
+W = replacement rate, fraction/sec W
+wl = core graphite or other sorber of hydrogen
 in primary system 1
-W, = core graphite or other sorber of hydrogen
+W2 = core graphite or other sorber of hydrogen
 fluoride in primary system 1
-wy = gorber of hydrogen in secondary system 1
-w, = gorber of hydrogen fluoride in secondary
+W3 = sorber of hydrogen in secondary system 1
+W4 = gorber of hydrogen fluoride in secondary
 system 1
 
 X = mole fraction
@@ -2408,41 +2489,42 @@ The three options currently available to the user are
 
 (a) OUTPUT
 
-(b) OUTPUT __ALL_CRBE* all commands begin in column 1; (the
+(b) OUTPUT__ALL“CRBE* all commands begin in column 1; (the
 
 underline indicates a blank space)
 
-(c) OUTPUT ALL PRINTER
+(c) OUTPUT __ALL PRINTER
 With choice (a), the summary output is sent to logical unit 20 and all
-other output is sent to logical unit 6 (the line printer); with choice
+oﬁhef output is sent to logical unit 6 (the line printer); with choice
 (b), all output is sent to logical unit 20; and with choice (c¢), all
-output is sent to logical unit 6. For choices (a) and (b), appropriate
+output is sent to logical unit 6, For choices (a) and (b), appropriate
 
 data definition (DD) statements for unit 20 must appear in the user's
 
 job control language.
 
+ 
+
 *The program was designed to be used from a remote terminal with the
 ‘Conversational Remote Batch Entry system; hence the use of "CRBE" as
 a keyword. However, the program in no way depends upon the availability
-of the CRBE system,
+of the CRBE system.
 50
 
 To change various system parameters, the command is
 
-CHANGE XXX
+CHANGE__XXX
 
 where XXX is replaced by the appropriate variable name as listed in
 
-Sec. IV.
+Sec, IV,
 
-(Cp Cops eens Cor
+(CF 2 CFF’
 
-parameter value in cols. 1-10.
+parameter value in cols. 1~10.
 
 If the variable name refers to one of the named concentrations
-
-), the next line of input must contain the new
+csns CSR)’ the next line of input must contain the new
 
 If the variable name refers to any of
 
@@ -2456,7 +2538,7 @@ variables specified by the subscripts n
 
 1
 
-through ny.
+through n,-
 
 and the new values for the
 
@@ -2470,7 +2552,9 @@ starting index of zero.
 
 CARD COLUMN
 
-End with a line with a
+End with a 1
+
+ine with a
 
 The following example illustrates the format.
 
@@ -2526,37 +2610,50 @@ The following example illustrates the format.
 
  
 
-1 " ' H 56 7 's 910 112 13[14{15[16|17{18 18 |20 2112.23 24 25 26]27 28129 |30 31 32133134 35{36}37
+1 72 E3 E4 ?5}6; 7 8910 11{12 13114|15|16|17{18 |19 {20 21!22523524%25 26|27 12829 |30 |31 3:?33%34 35136137
 CHANGE A
-1 3 1.2 + 6 1.0 + 6 7.0 + 6
-13 6 2. +6
+1 3] 1., 2 +6;f 1.0 +6| 7.0 + 6
+13 6 2 . + 6
 0
-This will insert new values for Ars Ays Ay and Aq of 1.2 X 10°,
-1.0 X 10°, 7.0 X 10° and 62 X 108, respectively. If only one value is
+This will insert new values for Al, A2, A3 and A13 of 1.2 X 106,
+
+1.0 X 106, 7.0 X 10
+
+6
+
+and 62 X 106, respectively.
 
 to be changed, the second subscript need not appear.
 
-The user can supply starting estimates for Ce
+The user can supply starting estimates for CC
 
 and C
 
-oT? the concen-
+If only one value is
+
+o’ the concen-
 
 trations of hydrogen plus tritium and tritium in the bulk of the
 
-secondary salt, with the "CHANGE" command.
+secondary salt, with the "CHANGE'" command.
 
-the program will use
+11
 
-1X 10!
+the program will use 1 X 10
+
+for C
+
+C and
 
 If no values
 
+10
+
+1 X10 for C
+
+CT
+
 are supplied
-
-for C, and 1 X 1010 for Core
-
-C
 
  
 51
@@ -2570,28 +2667,24 @@ For subsequent cases, all parameters will have the values present at
 the end of the preceding calculation; to change the parameters, the
 user can supply additional "CHANGE" commands. To reset parameters to
 their reference values, the command is
-RESET __ XXX
+RESET XXX
 If "XXX" is left blank, all parameters will be reset; if "XXX" is the
 name of a subscripted variable, all entries with the given name will
-be reset; and if "XXX" is the name of one of the named concentrations
-C
+be reset; and if "XXX'" is the name of one of the named concentrations
 
-(c cosy Cop) then just that concentration will be reset. If,
+(C., C oo CSR) then just that concentration will be reset. If,
 
-FF’
-
-for example, after running the case specified by the "CHANGE" command
-
-F’
-
+F’> “FF’
+for example, after running the case specified by the '"CHANGE" command
 in the example, a user put
-RESET___ A
+RESET___A
 then all the A's would be reset to their reference values.
 The program will stop when an end-of-file condition is detected
 on the standard input unit, i.e., when it runs out of data.
 The input and output for a sample problem are shown in Figs. 4
 and 5. Reference values from Section IV were used in the sample calcula-
 tion. The results indicate that 30 percent or more of the tritium might
+
 reach the steam system in a large power reactor unless special measures
 
 are taken to confine the tritium.
@@ -2667,210 +2760,243 @@ are taken to confine the tritium.
 
  
 
+4516 (718910 11!1213 14115|16 |17 |18 |19 |20)21|22|23 |24 |25|26 127 {28]29 |30 |31|32(33|34|35(36/37}38
+
  
 
-1 23 4516 171819]10 11213 1411516 |17(18 [19 |20121|22|23 {24 |25|26127 }28{29 |30{31|32(33|34{35(36[37]38
-//XXX1 J¢B (nnnnn), '"ADDRESS',CLASS=A
-// EXEC FQORTHLG,GHSIZE=62K
-//LKED.SYSIN DD =*
-HEX DECK
+cd QO B 8 ~ -~ ~— Y
+m Qg o~ »
+H =2 0O w2 H4d 0
 
-/ %
-//G¢.FTO5F001 DD *
-@UTPUT ALL PRINTER
-RUN
-CHANGE A
+~ ~ M
+~ ¥* H d
 
-1 3 1.2 +6 1.0 +6 7.0 + 6
+/ X
 
-13 + 7
-
-0
-RUN
-ZILCH
-/ *
-//
+XX1 J¢B (nnonnnonn), "ADDRESS ', CLASS=A
+EXEC FHRTHLG,GHSIZE=62K
+KED.SYSIN DD *
+HEX DECEK
+@ . FTO5F001 DD *
+PUT ALL PRINTER
+N GE A
+2 +6 1.0 +6 7.0 + 6
++ 7
+CH
 
 Fig. 4. Sample Problem Input
 VALUES IN
 
-ARRAY V
+ARRAY
 
-MAME A DIMENSION 20 USED
+MAME A  DIMENSION 20 USED
 
-1 2
+1
 
-6.000000 05
+6.,00000D0 05
 -1.000000 00
 
-5.000000 0S
-5.200000 07
+— . 8.80000D 06 = 4900000 07
 
-—_8.80000D 06 = 4900000 07.
+ 
 
-0.0 -1.00000D CO
+e - 5200000001
 
-NAME B DIMENSICN
+NAME F
+1
 
+3.60000D 05
+ NAME H
+1
+
+1.600000~02
+-1.C0000D 00
+_3.40000C-02
+
+8.00000D-01
+
+$.800000 00
+
+Fig. DA.
+
+DIMENSICA
+
+DIMENSTION
+
+v
+
+2
+
+5.000000 05
+5200000 07
+
+C.0 -1.00000D0 CO
+NAME B DIMENSION 5 USEED
+1 2
+_ 3.000000 21  3.C0000D0 21
+NANME C DIMENSION 50 USED
+| 2
+0.0 0.0
+0.0 0.0 _
+0.0 0.0
+0.0 040
+0.0 0.0
+0.0 0.0
+0.0 0.0
+e 00 060
+0.0 0.0
+NAME CN DIMENSION 10 USED
+1 2
+. ~1l2000000 00 -1.C00000 00
+1.00000D 10 2.000000 10
+NAME £ CIMENSION 5 USED
 1 2
 
-5 USEC
+1.70000D0-02
 
-3.000000 21 _. .3.€00000 21
+S USED
+2
 
-NAME C DIMENSION 50 USED
-1 2
-0.0 0.0
-0.0 = 0.0 _
-0.0 0.0
-0.0 0.0
-0.0 0.0
-0.0 0.0
-0.0 0.0
-—0a0 00
-0.0 0.0
-NAME CN CIMENSICN 10 USED
-1 2
-——...=l=000000 00 -1.,C00000 00
-1.000000 10 2.000000 10
-NAME € CIMENSION 5 USED
-1 2
+3.600000 05
 
-— -52000000—-01. 1.700000-02
+25 USEL
+2
 
-NAME F DIMENSICN S USED
-
-1 2
-
-3.600000 05 3.600000 0S
-
-NAME H DIMENSION 25 USEC
-
-1 2
-
-1.600000~-02
--1.C0000D0 00
-__3.40000C-02
-8.00000D0-01
-5.800000 00
-
-6.,00000D-03
+6.000000-03
 3.000000-03
-9.70000D~-02
+9.70000D~02
 -1.00000D0 00
-1.200000 01
+1.20000D0 0Ol
 
-Fig. 5A.
+S STARTS
 
 53
 
-18 STARTS AT
+18 STARTS
 3
 
-3.500000 O06
--1.0C0GC0D 00
-. 3.100000 a7
+AT
 
+3.500000
+-1.0C000D
+3.100000
 0.0
+
+06
+0o
+a1
 
 4 STARTS
 3
 
 AT
 
-. 1.000000 18
+. 1000000 18
 
-45 STARTS AT
+45 STARTS
 3
 
-¢ o 0 8
-ooo O0O000OOo
+AT
 
-ooo O0O
-.
+DO0O00D0O0O0O00O0
+¢
+CO0OO0O0DOOO
 
-.
-o
-
-S STARTS AT
+AT
 3
 
--1.00000D0 00
-9.000000 11
+9.00000D
+
+00
+i1
+4 STARTS AT
+3
+
+1.8C000D-01
 
 4 STARTS AT
 3
 
-1.8C00aD-01
-
-4 STARTS AT
-3
-
-5.000000 05
+5.0C000D 05
 
 23 STARTS AT
 3
 
-9.0C0000-05
+9.0C0000~-05
 -1.000000 00
-4.3C0000D-02
+4.3C0000-02
 8.000000-01
 3.000000 01
 
 4
-4.900C00 07
 
--le«000CCE ©O
+4.900C00 07
+-l 000CCC 0O
 2. 700CCC 07
 
 21
 4
+
 1.000CCD 18
 
 26
-
 4
 
-1.000CCD 11
-1.000CC0 11
+0.0
+0,0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+
+16
+4
+
+1. 000CCD 11
+1.000C0CD 11
 
 86
 4
 
-1.800CCC-C3
+1. 800CCC-C3
 
 91
 4
 
-9.00CCCC C5
+5.00CCCC G5
 
 96
 4
 
-1.900CCC~02
--l« COCCCD 00
-4.700CC0-02
--1.000CCD 0C
+1« 90GCCC~-02
+-1 COCCCD 00
+4.700CCC-02
+-1.000CCD ©C
 
 5
 
-5.2C€C00D 07
+5.2CC00D 07
 1.100000 07
-1.800000 07
+1.80000D0 07
 
-ODDOMOCOODDOO
+LI
+ODOOOCOHODOO
 
-DOO OHODOODODOOD
+OO0 OOO0O0
+s 0 8 8
 
 5
--1.C€0000D 00
+-1.CC000D 00
 
-S
+5
 
-3.000000-03
-7.400000—-02
-4.CC000D-02
--1.€0000D0 OC
+3.000000—-03
+1.400000—02
+4.CC0000-02
+-1.€0000D OC
 
 List of Parameter Values Used in Calculation .
 VALUES IN ARRAY V
@@ -2878,55 +3004,45 @@ List of Parameter Values Used in Calculation .
 NAME K DIMENSION 25 USED
 1 2
 
-1.200000-17 2.000000-17
+1.200000-17 2.00000D0-17
 
 -1.00000C 00 1.500000-19
 
-—  5400000D-18 _ 4.00000D-18
+—  _5400000D0-18 _ 4.00000D-18_
 
-4.400000-18 -1.000000 GO
-4.50000D0-20 5.10000D-20
-NAME P DIFENSION 20 USED
+4.400000-18 -~1.000000 QO
+4.500000-20 5.10000D0-20
+NAME P DIFMENSION 20 USED
 
 1 2
 
-2.100000 15 6.700000 14
-
--1,000000 00
-1.800000 14
-
--1.000000 00
-9.000000 14
-NAME Rr
-
-CIMENSION 10 USED
-
-i - Co
-
-5.800000 17 0.0
-
-NAME T DIMENSION 20 USED
-1 2
-1.300000 01 1.300000 01
--1.000000 00 =-1.000000 CO
-1.300000 01 1.00000D 00
+2.10000D0 15 6.70000D0 14
 
  
 
-NAF DIMENSION
-cb 2
+ 
 
-5 USED
-
-1.000000 00 1.000000 00
-
-NAME HM CIMENSION 1 USED
+1.80000D0 14 9.00000D 14
+NAME R CIMENSION 10 USED
+1 ~ - S
+5,800000 17 0.0
+NAMF ¥ DIMENSION 20 USED
 1 2
-© 1.120000-06
-NAME U DIMENSION 1 USED
+© 1.300000 01  1.300000 Ol
+-1.000000 00 -1.000000 QO
+1.30000D0 01 1.00000D0 00
+NAMF W DIMENSIONM 5 USED
+e ML 2
+
+1.000000 00 1.00000D0 00
+
+NAME M CIMENSION 1 USEC
+1 2
+ 1.120000-06
+NAME U  DIMENSION 1 USED
 1 2
 
---... bo00000D 02
+~ ... 12000000 02
 
 54
 
@@ -2935,70 +3051,85 @@ NAME U DIMENSION 1 USED
 
 AT
 
-1,500000-17
--1.0C0000 00
+1.500000-17
+
+-1.0C000D
+
+00
+
 _4+500000-18
+1.,100000-20
+4.800000-20
 
-1.100000-20
-
-4,800000-20
-
-15 STARTS AT
+15 STARTS
 3
 
-9.000000
+9.000000D
 -1.000000
-1.8C000D0
-
-14
-ao
-14
+1.8C000D
 
 S STARTS
-3
-
-AT
+3.
 
 0.0
 
 15 STARTS
 3
 
+5000000
+-1.000000
+2.00000D
+
+4 STARTS
+3
+
+1.000000
+
+1 STARTS
+3
+
+1 STARTS
+3
+
 AT
 
-5.000000
-- 1 «000000
-2.000000
+14
+00
+14
+
+AT
+
+AT
 
 01
 00
 00
-4 STARTS AT
-3
 
-1.000000 00
+AT
 
-1 STARTS AT
-3
+00
 
-1 STARTS AT
+AT
 
-3
+AT
 
 121
 4
 
 le 500CCD~-17
-~-1.000CCC 00
-3.500CC0-18
-~-1.€00CCD CO
 
+-l.000CCL
+
+00
+
+3.500CC0-18
+
+-1sCOCCCD
 146
 4
-
-9.000CCD 14
-~1.000CCD 00
-6.700CCD 14
+9.000CCD
+-1.000CCD
+6. 700CCD
 
 166
 4
@@ -3008,144 +3139,104 @@ le 500CCD~-17
 176
 4
 
-L.000CCD
+1.000CCD
 -l.000CCC
-2.000CC0
-
-ce
-00
-ao
+2.000CCOD
 
 196
 4
-1.000CCD OC
+
+1.000CCD
 
 201
 4
 
 202
 
-Fig. 5A. (Continued).
+Fig. 5A. (Continued) .
 
-- 1600000
+co
 
-5
-
-1.4C0000~117
-3.4C000D0~18
-40€00000-18
--1.€00000 00
-
-5
-
--1.€0000D
-1.100000
-3.500000
-
-0c
-15
 14
+00
+14
+
+co
+0o
+]¢)
+
+00
+
+S
+
+1.4C0000-117
+3.4C€0000~-18
+4,C€00000-18
+
+-1.€00000
+
+5
+-1.C0000D
+1.100000D
+3.500000
 5
 
 C.0
 
 5
 
--1.€00000 0C
-1.300000 01}
-GC
+-1.€00000D
+1.30000D
+
+- 1.€0000D
+
+co
+
+oc
+15
+14
+
+00
+
+cC
 55
 
-I TERAT IVE SOLUTION FOR CC
+I TERATIVE SOLUTION FOR CC
 
-NCC CCl ccL CCX
+NCC CCl1 CCL CcCX RFX cc2
+0 3.47462D 17 1.00000D 11
+1 2.52116D 10 ~2.91224D 17
+2 2.52116D 10 5.93131D 10 1.62379D 16 1.00000D0 11
+5.742380 10 1.92741D 14
+4 2.52116D 1C 5.,740250 10 1.13535D 13 5.742380 10
 
-0
-1 2.52116D 10
-2 2.521160 10 5.931310 10
-5.742380 10
-4 2.521160 10 5.740250 10
-5.740120 10
+5.74012D 10 1.02747D 08
 ITERATIVE SOLUTION FOR CCT
 
-NCC CCl CCL CCX
+NCC CCl cCL CCX RFEX Cc2
+0 1.000000 10 -4.71400D 17
+1 4.,33784D 16 5.74012D0 10
 
-0 1.000000 10
-1
-
-Fig. 5B. Output from Iterative Calculations.
-
-RFX
-
-3.474620
--2.91224D
-1.62379D
-1.927410
-1.135350
-1.02747D
-
-RFX
-
--4.71400D
-4.337840
-
-17
-16
-
-cc2
-1.000000 11
-1.000000 11
-
-5.742380 10
-
-cc2
-
-5.740120 10
+Fig., 5B, Output from Iterative Calculations.
 56
 
 OUTPUT SUMMARY
 
 STEAM SYSTEM
-FLOW OF H # T INTO STEAM SYSTEM
+FLOW OF H + T INTO STEAM SYSTEM
 FLOW OF T INTO STEAM SYSTEM
-FLUW OF H INTO STEAM SYSTEM
+FLOW OF H INTO STEAM SYSTEM
 FRACTION OF T INTO STEAM SYSTEM
 
 SECONDARY SYSTEM
 FLOWS
 H + T INTO SECONDARY FROM PRIMARY
 T INTO SECONDARY FROM PRIMARY
-H + 7 THRU PIPE WALLS INTO CELLS
-T THRU PIPE WALLS INTO CELLS
+H « T THRU PIPE WALLS INTO CELLS
+T THRU PIPE WALLS INTQO CELLS
 SORPTION BY SINK
 H + T
 T
-HF
-TF
-REMOVAL BY PURGE
-H +7
-T
-HF
-TF
-FRACTION OF 1
-PASSING THRU PIPE WALLS
-SORBED BY SINK AS T
-SORBED BY SINK AS TF
-REMOVED BY PURGE AS T
-REMOVED BY PURGE AS TF
-CONCENTRATIONS IN SECONDARY SALT
-
-H + T (CC)
-T (CCT)
-HF (CCF)
-
-PRIMARY SYSTEM
-FLOWS
-H + T THRU WALLS INTO CELL
-T THRU WALLS INTO CELL
-SORPTION BY SINK
-H+ T
-I
 HF
 TF
 REMOVAL BY PURGE
@@ -3154,235 +3245,239 @@ T
 HF
 TF
 FRACTION OF T
-PASSING THRU WALLS INTO CELL
+PASSING THRU PIPE WALLS
 SORBED BY SINK AS T
-SURBEL BY SINK AS TF
-REMOVED BY PURGE AS 7
-REMOVED BY PURGE AS TF
-CONCENTRATIONS IN PRIMARY SALTY
-H + T (CF)
-T{CFT)
+- SORBED BY SINK AS TF
+REMOVED BY PURGE AS T
+REMOVED BY PURGF AS TF
+CONCENTRATIONS IN SECONDARY SALT
+H + T (CC)
+T (CCT)
+HF {(CCF)
+
+PRIMARY SYSTEM
+FLOWS
+H + T THRU WALLS INTO CELL
+T THRU wWALLS INTO CELL
+SORPTION BY SINK
+H+ T
+T
+HF
+TF
+REMOVAL BY PURGE
+H+ T
+Y
+HF
+TF
+FRACTION OF T
+PASSING THRU WALLS INTQO CELL
+SORBED BY SINK AS T
+SURBEE BY SINK AS TF
+REMOVED BY PURGE AS T
+REMCVED BY PURGE AS TF
+CONCENYRATIONS IN PRIMARY SALT
+H ¢« T (CF)
+T(CFT)
 HF (CFF)
 
-Fig. 5C. Output Summary.
+Fig, 5C. Output Summary.
 
 1.710720 17
-1.763100 17
--5.238000 15
+1.76310D0 17
+-5.,238000 15
 3.03983D-01
 
-17
-17
-16
-16
+2.385010 17
+2.39047D 17
+6.226260D 16
+5. 793000 16
 
-2.385010
-2.390470
-6.226260
-5.793000
-
-COOCo
-¢ + bs
-OO0OO0oO
-
-5.166110
-4.806620
+0.0
+0‘0
 0.0
 0.0
 
-15
-15
-
-9.98793D-02
+5.16611D 15
+4.80662D 15
 0.0
 0.0
-8.28727D-03
+
+0.0
+0.0
+8.287270-03
+g.0
+
+5.740120 10
+5340690 10
 0.0
 
-5.740120
-5.340690
-0.0
-
-10
-10
-
-3.684360
-3.67847D
-
-15
-15
+3.6B84360 15
+2.67847D 15
 
 4.45130D 16
-4.444190 16
+4.44419D 16
 2.328070 17
-2.324350 17
+2.32435D 17
 
-5.136120
-5.127910
-9.133210
-9.118610
+5.136120 16
+5.127910D 16
+9.13321D 15
+9,11861D 15
 
-6.342190-03
+6.34219D-03
 1.66239D-02
-4,007500~-01
+4., 007500~-01
 8.84122D-02
 1.572170-02
 
-2.853400 11
-2.848840 11
-1.492350 12
+2.85340D0 11
+2.84884D 11
+1.49235D 12
 57
 
 A t 1. 3)
-—..—-ke20000C 06 1.000000 Q6 7.49CCCAD 06
-A (13,13)
-6.200000 07
+——..— 1e20000C 06 _1.000000 Q6 7.00CCOD Q6
+A (13.13)
+6.20000D 07
 
-Fig. 5D. Output Produced by "CHANGE" Command.
+Fig. 5D. Output Produced by '"CHANGE" Command.
 58
 
 VALUES IN ARRAY V
+" DIMENSTON 20 USED 18 STARTS AT
+1 2 3
 
-MANE A DIMENSTON 20 USED 18 STARTS AT
-1 2 3
-1.200000 06 1.000000 06 7.000000 06
--1.€00000 00 5.200000 07 -1.000000 00
-oC ___B.80000D 06 _ 4.900000 07 _ 6.200000 07
-0.0 -1.000000 60 0.0
-MAME B DIMENSION 5 USEC 4 STARTS AT
-1 2 3
-3.000000 21 3.000000 _21_ __1.0C000D 18
-NAME C DIMENSION SO USED 45 STARTS AT
-1 2 3
-7.944140 07 6.585480 07 1.620350 05
-_  0eQ _ _1.622450-0Q5_. (0.0
-2.996290 09 2.87318D 11 6.774C8D 08
-4.061490 02 0.0 0.0
-2.038670 10 9.001530 11 1.000690 11
-0.0 0.0 0.0
-0.0 0.0 0.0
-ee _Qa0 ______._Q«D . CaO
-0.0 1.055700 11 3.167720 08
-NAME CN DIMENSION 10 USEC 9 STARTS AT
-1 2 3
-3.118030 11 1.56002D_12 = 2.901430 11
-5.435520 10 2.000000 10 9.000000 il
-NAME E DIMENSION 5 USEC 4 STARTS AT
-1 oo 2 3
+AANE A
 
-—5.000000-0) 1.70000D0-02 _ 1.800000-01
+1.20000D 06 1.000000 06 1.000000 06
 
-_ NAME F = OIMENSION 5 USED 4 STARTS AT
-1 2 3
-3.600000 05 3.600000 05 5.000000 05
+-1.€00000 0O 5.200000 07 -1.0000G0 00
+
+—— 82800000 06 = 4900000 07 = 6.20Q000 Q7
+0.0 ~1.000000 QO 0.0
+
+hAME B DIMENSION 5 USEC 4 STARTS AT
+1l 2 3
+
+—  3.000000 21  3.000000 21 1.0C000D 18
+MNAME C DIMENSION 50 USED 45 STARTS AT
 
  
 
-NAME H DIMENSION 25 USED 23 STARTS AT
 1 2 3
 
-1.600000-02 6.000000-03 9.00000D-05
+7944140 07 6.585480 07 1.620350 05
+0.0 -—-1e622450-05. C.0 = .. .
+2.996290 09 2.873180 11 6.7T74C8D 08
+4,061480 02 0.0 0.0
 
--1.000000 00 3.000000-03 ~-1.0C000D 00
+2.03867D 10 9.00153D0 11 1.0006%9 11
+0.0 0.0 0.0
 
-— 3.,40€000-02 9.70000D0-02._.
-8,00000D0-01 -1.000000 CC
-5.800000 00 1.200000 01
+0.0 0.0 0.0
 
-8.000000~-01
-3.000000 O01
+e QaQ Q0 . Qa0 .
+0.0 1.055700 11 3.167720 08
 
-Fig. 5E.
+NAPE CN DIMENSION 10 USEL S STARTS AT
+1 2 3
+
+3118030 11  1.56002D0 12 . 2.901430 11
+5.43552D 10 2.000000 10 9.0C0000 11
+
+NAME E DIMENSION 5 USEC 4 STARTS AT
+1 S 2 3
+
+—_— 5.000000-0) 1.70000D-Q2  1.800000-01
+
+NAKE F OIMENSION 5 USEC 4 STARTS AT
+1 2 3
+
+ 3.600000 05 3.600000 05 5.000000 05
+
+ 
+
+MAME H DIMENSION 25 USED 23 STARTS AT
+1 o 2 3
+
+1.600000-02 6.000000~-03 9.00000D-05
+-1.000000 0O 3.,000000~-03 -1.0C000D0 GO
+
+3,40€000-02 9,70000D-02_ 4.300000—-02 .
+
+8.,000000-01 -1.0000C0 CC 8.000000-01
+5800000 00 1.200000 01 3.000000 01
+
+Fig. 5E. List of Parameter Values Used
 "CHANGE" Command.
-
-. 4.300000-02
-
-List of Parameter Values Used
 
 4
 
-4+ 900CCD
--1.000CC0
+4.900CCC 07
+-1.000CC0 0O
 
-2 T00CCD
+- 2«T700CCD 07
 
 21
 4
 
-1.000CCD
+1.000CCD 18
 
 26
 4
 
-7.732730
+T.732730 10
 0.0
-1.3795¢€C
+1.3795EC 10
 0.0
+0«0
 0.0
+2.86783D 10
 0.0
-2.86783D
-0.0
-4e745S1C
+4«745617C 08
 
 76
 4
 
-.5«2842CD
-1. 000CCC
+. 542842CD 1Q
+L. 000CCC 11
 
 86
 4
 
-. b= 8Q0CCL-03
+- 1. 800€CE-03
 
 91
 4
 
-5.000C0D
+5.000C00 05
 
-$6
+%6
+
 4
 
-07
-00
-01
+1.500CCD~-02
+-1« 000CCLC 00
 
-18
+4.700CCE~-02
 
-ic
-
-10
-
-10
-
-08
-
-1Q
-11
-
-05
-
-1.900CCD~-02
-~1.000CCL 00
-44700CCL-0Q2
-
--1.COCCCD COC
+-1.COCCCD CO
 
 5
 
-5.200000 017
+5200000 07
 1.100000 07
 1.800000 07
 
-5
+S
 
-6.9443 80-09
+€.544380~-09
 6.13618D 08
-1.413130 0S
+1«41313D 0S
 0.0
 C.0
 C.C
-C.0
+0.0
 0.0
 1.165100 08
 
@@ -3390,10 +3485,8 @@ C.0
 
 3.000000-03
 1. 40000002
-
-. 4.00000D-02
-
--1.C00000 00
+4.C0000D-02
+-1.C0000D0 0C
 
 in Calculation After
 VALUES IN ARRAY V
@@ -3402,83 +3495,92 @@ in Calculation After
 
  
 
+ 
+
 59
 
-"NAME K DIMENSION 25 USED 23 STARTS AT 121
+MAME K DIMENSIOM 25 USED 23 STARTS AT 121
 1 2 3 4
-1.200000-17 2.00000D0-17 1.500000-17 1.500CC0-17
--1.000000 00 1.500000-19 =1.000000 00 =-1.COCCCD OC
-oe _54000000-18  4.000000-18 4.500000~-18 3.5000CC-18
-4.40000C-18 -1.000000 00 1.100000-20 =-1.000¢C0 00
-4.500000-20 5.100000-20 4 .80000D0-20
-NANE F DIMENSION 20 USED 15 STARTS AT 146
+1.200000-17 2.00000D-17 1.5C0000-17 1.500CC0-17
+-1.000000 00 1.500000-19 -1.000000 00 =1.C00CCD OC
+. _5.00000D0-18 . 4.000000=18 4.500000-18 3.5000CC~18
+4.40000C-18 -1.000000 00 1.100000-20 =-1.000€CD GO
+4.500000-20 5.10000D-20 4.800000-20
+NAME F DIMENSION 20 USED 15 STARTS AT 146
 1 2 3 4
-© 2.100000 15 6.700000 14 9.000000 14 9.000000 14
--1.€0000D0 00 =-1.,000000 00 =-1.000000 00 =-1.00CCCD OO
-1.800000 14 9.000000 14 1.800000 l4 6.700CCD 14
+© 2.100000 15 6.700000 14 9.000000 14 $.000000 14
+-1.000000 00 ~1.000000 00 =-1.000000 00 =-1.C0CCCD 0O
+1.800000 14 9.00000D0 14 1.800000 14 6.700CCD 14
 NAME R DIMENSION 10 USEC 5 STARTS AT 166
-2 3 4
+e X2 3 4
 5.800000 17 0.0 0.0 0.0
-NAME T OIMENSION 20 USED 15 STARTS AT 176
+NANE T OIMENSION 20 USED 15 STARTS AT 176
 1 2 3 4
-© 1.300000 01 1.300000 01 5.00C000 01 1.000CCD GO
-~1.C00000 00 =-1.000000 00 =-1.000000 00 —1.000CCC OO
-1.300000 01 1.0000€D OC 2.000000 00 2.000CCC 00
+© 1.300000 01 1.300000 01 5.000000 01l 1.000CCD GO
+~1.€00000 00 ~1.000000 00 —-1.000000 00 —1.000CCC GO
+1.300000 01 1.0000CD OC 2.000000 00 2.000CCC 0O
 NAME W DIMENSICN 5 USED 4 STARTS AT 196
-_ lo 2 3 4
-1.€00000 00 1.000000 G0 1.000000 00 1.000CCC 00
+] Y2 3 4
+1.C00000 00 1.00000D 00  1.000000 00 1.000CCC 00
 NAME M CIMENSION 1 USEC 1 STARTS AT 201
 1 2 3 4
-Re
-NAME U DIMENSION 1 USED 1 STARTS AT 202
-1 2 2 4
-__leCO0OQOD 02
+e o e e
+NAME U DIMENSION 1 USEC 1 STARTS AT 202
+1 2 3 4
+1.00000D 02
 Fig. 5E. (Continued).
 
 5
-1.400000—-17
-3.40000D-18
 
-4,C0000D-18
--1.C0000D OC
+1.400000—17
+3.40000D~18
+4.CC000D~18
 
-5
-~1.C0000D OC
-1.100000 15
-3.500000 14
-5
-
-CeC
+-1.€C0000D
 
 5
+~1.C0000D
+1.100000
+3.500000
+5
 
--1.C00000D
+C.C
+
+5
+
+~1.€00000D
 1.300000
 1.C00000
 
+oC
+
+acC
+
+14
+
 00
 
-14]
+0¢
 60
 
 ITERATIVE SOLUTION FOR CC
-NCC Cl CCL ccx
+NCC CCl1 CCL CCX
 
 0
-1 3.241680 10
-2 3.241680 10 4.445220 10
+1 3.24168D 10
+2 3.24168D 10 4.44522D0 10
 4.41906D 10
-4 3.241680 10 4.419000 10
-ITERATIVE SOLUTION FOR CCT
+4 3.241680 10 4.41900D 10
+ITERATIVE SCLUTION FOR CCT
 
-NCC CCl CCL cCx
+NCC CCl CCL CCX
 
 0
-1 2.672770 10
+1 2.6727T70 10
 
-RFX
+RF X
 
-1.440890
+1.44089D
 -1.339230
 2.914080
 6.331820
@@ -3486,7 +3588,7 @@ RFX
 
 RFX
 
-1.745650
+1.74565D
 -2.02375D
 
 17
@@ -3498,35 +3600,35 @@ RFX
 17
 17
 
-cc2
+ccz
 5.740120 10
-5.740120 10
+5.74012D 10
 
 4.41906D 10
 
-cc?
+CcCc2?
 
-54340690 10
+5340690 10
 
 Fig. 5F. Output from Iterative Calculations With New Parameters.
 61
 
-OUTPUT SUMMARY
+QUTPUT SUMMARY
 
 STEAM SYSTEM
-FLOW OF H ® T INTO STEAM SYSTEM
+FLOW OF H @ T INTO STEAM SYSTEM
 FLOW OF T INTO STEAM SYSTEM
-FLOW OF H INTO STEAM SYSTEM
-FRACTION OF 7 INTO STEAM SYSTEM
+FLOW OF H INYO STEAM SYSTEM
+FRACTION OF T INTO STEAM SYSTEM
 
 SECONDARY SYSTEM
 FLOWS
 H + T INTO SECONDARY FROM PRIMARY
-T INTO SECONDARY FROM PRIMARY
+T INTO SECONDARY FROM PR IMARY
 H + T THRU PIPE WALLS INTO CELLS
 T THRU PIPE WALLS INTO CELLS
 SURPTION BY SINK
-H+ T
+H+T
 T
 HF
 TF
@@ -3539,10 +3641,10 @@ FRACTION OF T
 PASSING THRU PIPE WALLS
 SORBED BY SINK AS 7
 SORBED BY SINK AS TF
-REMOVED BY PURGE AS T
+REMOVED BY PURGF AS T
 REMOVED BY PURGE AS TF
 CONCENTRATIONS IN SECONDARY SALT
-H eT (CC)
+H e7T (CC)
 T (CCT)
 HF (CCF)
 
@@ -3550,48 +3652,48 @@ PRIMARY SYSTEM
 FLOWS
 H + T THRU WALLS INTO CELL
 T THRU WALLS INTO CELL
-SORPTION BY SINK
-H +7
+SURPTION BY SINK
+H + T
 T
 HF
 TF
 REMOVAL BY PURGE
-H+ T
+H+ X
 T
 HF
 TF
-FRACTION OF 7
+FRACTION QF T
 PASSING THRU WALLS INTO CELL
 SORBED BY SINK AS T
 SORBED BY SINK AS TF
-REMOVED BY PURGE AS T
+REMOVED BY PURGF AS T
 REMOVED BY PURGE AS TF
-CONCENTRATIONS IN PRIMARY SALT
-H + 7T (CF)
+CUNCENTRATIONS IN PRIMARY SALT
+H + T (CF)
 T(CFT)
 HF (CFF)
 
 Fig. 5G.
 
-1.858510 17
-1.899890 17
-4.138110 15
-3.27568D-01
+1.85851D 17
+1.89989D 17
 
-2.380320 17
+-4.13811D0 15
+
+3.275680-01
+
+2.38032D 17
 2.384640 17
-4.82035D 16
+4, 82035D 16
 4.47799D 16
 
 0.0
-0.
-O.
-Oe
+0.0
+0.0
+0.0
+3.97710D 15
+3.69463D 15
 
-O00
-
-3.977100 15
-3.694630 15
 0.0
 0.0
 
@@ -3606,528 +3708,545 @@ O00
 0.0
 
 7.26328D 15
-7.254100 15
+7.25410D 15
 
 4.38759D 16
-4.382050 16
+4.38205D 16
 2.31135D 17
-2.308430 17
+2.30843D 17
 
 5.06261D 16
 5.05621D 16
-9.067610 15
+9.06761D 15
 9.05616D 15
 
 1.25071 0-02
-T.55526D-02
-3,98006D-01
+T.555260-02
+3.98006D-01
 8.71760D-02
-1. 561410-02
+1.561410-02
 
-2.812560 11
+2.81256D 11
 2.809010 11
-1.481640 12
+l.48164D 12
 
-Output Summary (New Parameters).
+Qutput Summary (New Parameters).
 ERRCR -
 
-. CARD IMAGE 1S
+UNRECNGNTZEC INPLT
 
-UNRECNGNIZEC INPLT
+.. CARD IMAGE 1S5 1 2 3 4
 
-en 1 BU
-123456789012345€18S
+17345673901 2345€678501234567890123456765C12345678
 ZILCH
 
-Fig. 5H.
+5 6
+901234567890123456789
 
-2 - 3. 4 5
-0123456789012345617£6C12345678950123456789
+Fig. 5H. Response to Unrecognized Command Card.
 
-Response to Unrecognized Command Card.
+7 8
+01234567850
 
-6 7 8
-012345678901234567890
-
-Z9
+29
 63
 
- ACRMAL STOP — ALL CATA PRCCESSED
+" NGRMAL STOP ~ ALL CATA PRCCESSED
 
- 
+IHCO021 STOP 0
 
-IHC0021 STOP 0
-
-Fig. 5I. Normal Ending Message.
+Fig., 5I. Normal Ending Message.
 65
 
 APPENDIX
 
 PROGRAM LISTING
-LFVFI
+tFVFI
 
-ISN
+1SN
+1SN
 TSN
-TSN
-ISN
+I SN
 
 TSN
+1SN
+
 TSN
+
+TSN
+iSN
+TSN
+
+TSN
+
+TSN
+I SN
+
+¥ SN
 
 iSN
-
-ISN
-ISN
-TSN
-
-TSN
-
-1SN
-ISN
-
-ISN
-
-ISN
 TSN
 TSN
 
 TSN
 TSN
-ISN
+ESN
+TSN
+15N
+SN
 TSN
 TSN
-ISN
-TSN
-ISN
-ISN
-1SN
+ISh
+I SN
 
 1SN
 TSN
-ISN
+[ SN
 TSN
-ISN
+I SN
+¥ SN
 TSN
-TSN
-ISN
+{SN
 
-ISN
-ISN
-ISN
+ESN
+I SN
 TSN
 TSN
 TSN
-ISN
-ISN
+TSN
+I5N
+1SN
+TSN
+FSk
+TSN
+1SN
+15N
 TSN
 TSN
-ISN
-ISN
-TSN
-TSN
+I SN
 TSN
 ISN
-ISN
-ISN
-TSN
 TSN
 fSN
-ISN
-ISN
+F SN
+15N
 TSN
-ISN
-ISN
 TSN
-ISN
+I SN
+SN
+TSN
+TSN
 TSN
 1SN
 
-21.6
+1.6
+
+66
+
+nEc 12} 087260 FORTRAN H DATE
+COMPIIFR CPTIOANS = KNAMF=  MAINLUPT=UZ2¢L INECNT=G5.SI2E=0000K,
+SGLRCFEBLDICeNUL ISToACCECK.LEACNDOMAPMCEDIT,NOICNOXREF
 
 0002
-0003
-0004
+o003
+0onns
 0005
 
-0006
-0007
+nnoe
+0oon7
 
-0008
+on0a
 
-000%
-oolo
-ooll
+0009
+Qolo0
+oot
 
 0012
 
-0013
-0014
+00113
+a0l4
 
-0a1s
+0015
 
-aot e
-a0?
-Gols
+ante
+0017
+cola
 
 0020
-0022
-0024
-c02s5
-0026
-00217
+onz2
+anza
+€025
+00zé6
+06217
 0029
-0030
-6n3l
-0032
+00130
+cnsl
+003z
 
-0033
-n03a
+no3d
+N34
 0035
 0036
-anil
-0038
+003y
+0oa3a
 0039
 0040
 
-0041
+N04l
 0043
 0044
 0046
 0047
 0049
-agso0
-051
-a0s2
-00513
+aa50
+cos1
+0052
+00%13
 0054
-0055
-0056
+nnss
+on%56
 0057
 0058
-acs9
-0060
+aee9
+anen
 0061
 0062
 0064
 noes
-co67
+ca67
+Q068
 0068
-006S
 a07¢
-ao71
-ant?
-0073
-0074
+ao7
+anT?
+0cv3
+o074
 an7s
 
-Anmanan0nN
+NN
 
-nen
+MO
 
-~
+m
 
-Xela)
+SO
 
-66
+EMPLICTT REALSD (A~He 0-4)
 
-(EC 72) 08/7260 FORTRAN H DATE
-COMPILER CPTIONS = NANF= MAIN UPT=U2.LINECNT=G5,SIZE=0000K,
-SOLRCESEBLDICeNUL ISToACCECK,LCACSNOMAP,NCEDIT NOI CoNOXREF
+RFAL*A K,V
 
-IMPLICIT REAL®B (A=Hs 0-4)
-REAL®A K,V
-REAL®S HALL oHCUTSHLRRWHPRT HCFA, FRES, FRUNGHBLK + FTEE JC ARD
-DIMENSICN 80204. BI%)e CI50)s CNILEODs E(S)s F(5)s HI25)e
-1 K{25)e FL20}s RE10De TE20). WiS)e CARC(20)., VALU(T)
-DIMENSION C(S0)
-FQUIVALENCE (ALLI.VILI). (BU1)ev(210), (CCLIavi260),
-1 {CALL VIT60)e CETLIVIBO) De (FULDeVIGI)IaiH{LDoVISO))e
-2 (KEL evIA2U0)e (PLL) avILG6) de (RUDI VILE6IDs LTOLIGVILTEND,
-3 WIL ev(1S63)e MeV I201D de (Lovi2C21)
-FOQUIVAUFNCE (CNEL)oCF)e (CNUZ)eCFFYe (CNI3},CFT)s (CN(4}.CCH,
-1 (CMI5)oCCFle (LNCOJoLLTIs (CMUTD4CSGYs (CNUBI4CSS)e (CNES) CSR)
-COMNON/RLK2/ The TOUT IPR KCLT, KPR
-CCMNCN /BLKL/ ¥i250)
-COMMCN/BLKY/ TUIMI20), IUSE(ZC)s NMU20)e IBEG(2C)e NMCA{1C),
+REAL*4 HALL+HCUToHLRRVHPRT ¢ HCFALFRES. FRUNHALK FTEELCARD
+DIMENSECN AL200 BU%)e CU50)s CNELOs E(S)e FUS)s H{25),
 
-1 ANVARGANCN
-DATA FALL/4HALL /«HUUT/4HUUTP/,FCREB/4FCRAF/ JHPRY/4HPRIN/,
-1 HCHA/4HCHANS J HRES/4HRESE/o FRUN/GHRUN / oHBLK/ 4H /
+1 Kt{25ke FL20). RELODe TH20G) s WlS)e CARCE20). VALULT)
+NIMEASITN CLS0)
 
-NATA XCLCG/2.3L0/ HT EE/4HT /
-DAYA CICL/1.C=7/+ TTUL/L1.0-T/
+FOUIVALENCE {ALLIoVIAb)e (AULIavIE210). (CELIeVIZEM),
+1 (CRELYaVIT6) e (ECLIaVIBG) e (FLEDaVIGL)IaiHIL) VLSO ),
+2 (KALYov{L21))e (PLLIGvILab) e (RODFeVILE6I)e [ T(LbaVi1TE)),
+3 fWik v (1563 ). IMeViZOLdde (LeVIZ2C2}H)
 
-CTOL ANC TTGL ARF THE CONVERGENCE TOLERANCES FOR CSCLVE
-ANE TE RESPECTIVELY.
+FQUIVALFNCE (CN(L)oCFIy TCNI2D4CFFIe [CNE3DLCFT)e (CN(4)CCH,
+1 (CM{5)eCCFYe (iN{OodoeCLTHs (CALTILCSGYe (CN(B)CSS)s (CNES).CSRI
+COMNONZRLK2/ The 10UTe IPR4 KCLTe KPR
 
-MALIN PRCGRAM FUR CALLULATICN OF MSER TRITIUM FLOW
+CCMMCN /BLKL/ ¥iE250)
 
-SET LP REFERENCE VALUES IN WORKING ARRAY V
-CALL SETREF(HPLK)
-RF ED A CARD AND CHELK FOR INSTRUCTIONS
-100 RFACIIN.1.ENC=9%7) CARL
+COMMCN/RLKY/ 1UIMIZ0). TUSE(ZC)y NM{2C)s [BEG(2C)s NMCA{1GC),
 
-FCRMAT(2084)
-[F{CARDEL) JNFLHUUT) GU TD 12C
+1 AVARJACN
+DATA +ALL/4HALL /o HUUT /4HUUTP /o FCREZAFCRAE/ JHPRT/Z4HPRIN /Y
+1 HCHA/4HCHANS HRES/SHRFSE/ s FRUN/GHRUN / +HBLK/&H /
 
-SET CUTFUT UMT NUMBERS
+NATA XTLCG/2 3607 +HIEE/ 4KT /
+DAYA CTICL/1.C~7/s TTUL/LWD-T/
 
-TF{CARD(3) LNF.HALL) GU TO 11€
-EFICARDL4) LNELHCKE) GO TO 105
-1C4 KOUT=TCLY
-KPR=ICUT
-G0 70 100
-1C5 IF{CARDI4)LFCLHPRT) GO TO 11C
-WRT TE(KILT 2)
-2 FORMAT CLTFUT NUT SPECIFIEC CORRECTLY')
-WRITFIKCUT 20) ilel=ls8)e CARL
-20 FORMAT(Y CART IMAGE IS*.1Xe8(SXIL)/15Xs8(10H12345678901/15X,2044/
-11x)
-WRITELKIUT 21)
-FORMAT(* ALL CUTPUT TU SUMMARY LNIT*)
-GC TC 1C4
-110 KEUT=[FF
-114 KPR=IPR
+CTOL ANC TTGL ARE THE CONVERCENCE TOLERANCES FOR C SCLVE
+ANL TF RESFPECLTIVELY.
 
-2?
+MALN PRCGRAM FUR CALLULATICN OF MSER TRITIUM FLOW
+
+SET LP REFERENLE VALUES TN WORKING ARRAY V
+CALl SETREF(HELK)
+RFAD A CARD AND CHELX FOR INSTRLCTIONS
+100 RFACHIM I ENC=94T) CARD
+
+FCRMATLIZ0AG)
+[F{CARDEL) JNFLHUUTY GU TD 12¢C
 
 -
 
-Ga 1C 100
-115 KCUT=JCLT
-GO 1C 114
-CHFCK FOR CHANGES IN WORKING VALUES
-120 TFICARDIL) JNELHCHAD GU TO 135
-CALL PAVCH{CARUL I) + NMaNVARINK)
-TF{AK. MELO) GC TU 125
-CALL MBYCHICARDI3) « NMCNaNCNs NC)
-TF{NC.AE,0) GC TO 121
-WRITE (KCUT 04)
-4 FORMAT(® ERRCR IN CHANGE SPECIFICATIONS!)
+SET CUTFUT UNIT NUMBERS
 
-1C6 WRITF(KCUTL20) (fel=lends CARL
-60 10 100
+TFICARD(3) JNFuBALL) GO TO 11€%
+EFICARDLA) .NEoHLKY) O TO 105
 
-121 RFACLINGT} VALUIL)
+1C4 XOUT=TCLT
+KPR=TCUT
+G 70 100
 
-FCRVATIEL0LO)
+1C5 [FICARDIG) JFCHPRTY GO TO 1IC
+WRITE(K{LT.2)
 
-J=IREGI4)+NC-1
+2 FORMATUY CLTFUT NUT SPeCIFIEC CORRECTLY')
 
-ViJIavaLU(L}
+WRITFIKCUT 20} (Bel=1+8)e CARL
 
-WRITE(KCUT 12) CARD(3)eVALULLD
+20 FORMATHY CARC IMAGE IS',1Xe8(SXIL)/1SX48{10HL23456T8901/15X420A4/
 
-FCRFATIIXe 840 1PELSL5)
+1 1x)
 
-60 1 100
+WRITEIK{UT .21
 
-125 RFACUTA G2) N1oN2oVALY
+FORMAT(* ALL CUTPUT TU SUMMARY LNIT')
 
-FORMAT(213,7F LUO)
+GC TC 1C4
 
-IFIN.FC.0) GC TU 10D
+110 KCUT=[FF
 
-J=UREG AK) ~1¢N1
+L14 KPR=IPR
 
-IF(M2.,FEC.0} M2=N1
+?
+
+—
+
+GG 1C 160
+LIS KCUT=ICLTY
+GO 1L 114
+CHECK FCR CHANGFS IN WURKIMG VALUES
+120 TFICARDIL) JNELHCHAD GU TG 135
+CALL MAYCH{CARULI) eNMsNVARyNK)
+TF{AKLMELD) GE TU 49
+CALL MATCHICARUD(I )« NHCNoNCNLANC)
+IF{ANC.AFLO GO TO 121
+WRITE LKCUT 44 )
+4 FORMATLY ERRCR IN CHANGE SPECIFICATICNS?)
+
+1C6 WRITFIKEUT20) (i+i=1e8)s CARL
+G0 10 100
+
+121 RFAC{IN.T} VALUILL)
+
+FCRWATIEID.O)
+
+JEIREGI4)+NC-1
+
+Vidi=vaLu(l}
+
+WRITE{KCUT<12) CARD{S).vALULL)
+
+FCRWAT(1XoAGe1PELG.S)
+
+GO TC 1G0
+
+125 RFACUTING2) N1l N2s.VALU
+
+FURMAT{2E3,TF U0)
+
+IFIMN.FC0) GC TU 100
+
+J=TREGIAK)I~1+N1
+
+IF(N2.FL.0) N2aN1
 
 L=i
 
-NOD 130 Msh1oN2
+00 130 h=h],N2
 
-VJ =vALULL)
+ViJizvatulL)
 
-P=L+1
+I=L+1
 
-J=d+l
+J=Jd+1
 
-CONTINUE
+CONTIALF
 
-Nv=R2-N1+1
+Ny=A2=-h1+¢1
 
-WRETEAKCLY o 13} CARDE33oNLoN2, {VALUEL) sL=14NV)
+WRETEAKLLY o13} CARDE3 ) oNLoN2,AVALULL ) sL=LsNV)
 
-FORMAT UIXo Rb ot 4900240000124") /(1X1PSFL4.5))
+FORMATIIN B o432+ k24" 1/ (1X1PSFL4.5)])
 
 -
 
-~
+—
+N
 
+W
+
+i3
+
+o
+
+—
 w
 
-13
-
->
-
-w
-
-T4.3C4/09.17.44
+T4.3C4709,17.44
 TSN
 
 ISN
-ISN
-ISN
-TSN
-
-ISN
-1SN
-
-ISN
-ISN
-ISN
-ISN
-ISN
-
-ISN
-ISN
+SN
 1SN
 TSN
 
-ISN
+TSN
 TSN
 
+TSN
 1SN
 ISN
 1SN
-15SN
 TSN
+
 TSN
-ISN
-ISN
 1SN
-ISN
-ISN
-{SN
-ISN
+15N
+TSN
+
+I SN
+15N
 
 TSN
+1SN
+15N
+1SN
+1SN
+1SN
+SN
 ISN
+I &N
+TSN
+ISN
+[SN
+TSN
 
-ISN
 TSN
-TSN
-TSN
-ISN
-ISN
-ISN
+1SN
 
-ISN
+{5N
 TSN
 TSN
-ISN
-ISN
-fSN
-ISN
-ISN
+1SN
+15N
+SN
+TSN
+
+I SN
+1SN
 TSN
 ISN
+ISN
+FSN
+SN
 TSN
+TSN
+[SN
+15N
+TSN
+1SN
+I SN
 ISN
-ISN
-ISN
-ISN
-ISN
+I SN
 TSN
 
 15N
+18N
 1SN
-ISN
 
-ac76
+0476
 
-0017
-0679
+0Ty
+ocTe
 00R1
 0082
 
-0083
+00813
 0084
 
-0086
+00as
 0087
-o089
+Q089
 0090
 0091
 
 0092
 0094
 0096
-0097
+00s7
 
-0098
+G094
 ao99
 
-oto1
-0102
-0104
+0ol
+akaz
+a104
 010%
-0106
+ni0&
 0107
-0109
-oto
-all
-oli?
+o109
+o110
+o111
+otz
 0113
-Oils
-0115
+Nil4
+o115
 
 0116
-o11e
+oL1e
 
-o120
-0121
+0120
+n12
 0122
-023
+0z
 0124
-0125
-0126
+al12s
+al?s
 
-0127
+a¥27
 0128
 0129
 0130
-ati
+at3il
 0132
-0134
-013%
+al134
+0135
 0136
 0137
 0138
 0139
 0140
 0141
-ala?
+0147
 0143
-0144
+Gl4e
 
-oles
-N46
-Ol48
+0Les
+Nl4é
+0148
 
-aao
+A0
 
-ono
+oD D
 
-ono oon
+N D OO
 
-aon
+DOoOn
 
-ann [2XaXa) an
+[nlia Na SoOn SO
 
-Donn
+SN D
 
-AnOnn
+Sooon
 
 13
 
-w
+W
 
 136
 
 137
 
-w
+\n
 
 150
 
@@ -4137,561 +4256,571 @@ w
 
 152
 
-©
+x
 
-15
+L5
 
-on
+v
 
->
+&>
 
 160
 
-2co
+2ca
 
-25
+2(5
 
-3co
+3ca
 
 67
 
-GC IC 125
-CHFCK FCR RESET — PUT REFERENCE VALUES BACK INTO V
+GC TC 125
+CHECK FCR RESET — PUT REFERENCE VALUES BACK INTO ¥
 
-[FECARDIL)JNELHRES) GU TO 15C
-IFICARDI3).NEL.HBLK) GU TU 1317
-CALL SETREF(CARDII)
+[FECARDIL}NELHRES) GU TO 15C
+IFLCARDI3}.NELHBLK) GU TO 137
+CALL SETREF(CARDIN)
 
-6G TC 100
+GG TC 100
 
-NAME AQT PLANK — TEST AGAINST NM ARRAY
+NAME NOT PLANK — TEST AGAIMNST NV ARRAY
 
-CALL MATCHICARDL(3I} JNMoNVAR, NK)
-TFIAK,NELD) GC TO L36
+CALL MATCHICARDI(3 )} JNN+NVAR,NK)
+TFUAKLNELD) GC TO L36
 
-AO MATCH FOUND IN NM — TRY AMCN
+A0 MATCH FOUND IN NM = TRY MMCN
 
-CALL MATCHICARD(3) 4 NNCNeNCNo AC)
-IFIM.MNELO) GC TO 136
+CALL MATCHICARD(3 )+ NMCNoNCNs AC)
+IFIM.NELO) GC TO L1306
 
-WRI TE{KCUT 5)
+WRITE{ KUY ,5)
 
-FORPAT(" ERRCR IN RESET SPECIFICATIONS®)
-6C TC 1¢cé
+FORPAT(' ERRCR In RESET SPECIFICATIONS?)
+6C TIC 1¢é
 
 CHECK FCR PRINT
 
-IF(CARDI1).NELHPRT} GO TO 155
-IFLCARC(3) LNE.HBLK) GU TO 152
-CALL LCCK{CARD(3))
+IF{CARDIL).NELHPRE) GO TO 155
+IF{CARCU3) NELHBLK)Y GU TO 152
+CALL LCCK{CARDI3})
 
-60 10 100
+60 10 160
 
-MAME NCT BLANK —- TEST AGAINST NM ARRAY
+MAME NCT ELANK — TEST AGAINST NV ARRAY
 
-CALL FATCHICARDII) «NMoNVARINK)
-IFIAKLAELO) GC TD 151
+CALL MATCHACARDII) cNMeNVARSNK)
+IFIAKL.AELOQ) GC TO 151
 
-AC PATCH FCUNU IN NM ~- TRY AMCN
+AC MATCH FCUND IN NM - TRY AMCN
 
-CALL PATCHUCARDE3) +NMCNGNCNWAC)
-TF{NC.NELO) GC TO 151
+CALL MATCH{CARDE3) +NMCNNCNWAC)
 
-WRI TE(KCUT.8)
+TF{AM .NELO) GC TO 151
 
-FORMATL® ERRCR IN PRINT SPECIFICATIONS')
-60 1C 1C6
+WR] TE(KCUT.8)
 
-JFECARD (1). EC.HKUN) GO TO 160
+FORMATI® ERRCR IN PRINT SPECTFICATIONSY)
+G0 1C 1Cs
 
-WRITE (KCUT «6)
+TFICARC (1) EC.HKUNY GO TO 160
+WRITE(KLUT «6)
 
-FORMATI® ERRCR —~ UNRECOGNIZEC INPLT')
-60 TC 106
+FORMATI® ERRCR ~ UNRECOGNIZEC INPLT')
+60 1C 106
 
 KTRY=1
 
-1SW=1
+[SW=}
 
 NCC =0
 
-€C2=0.00
+cC2=0,D0
 
-CHECK FCR FAILURE TO SET CC ANC CCT
+CHFCK FCR FAILURE TO SET CC MNC CCT
 
-TFICC.LEL0.00} CC=i.D11
-IF(CCTL.LELO.CO) CCT=1.D10
+I#1(C.LEL0.00) CC=1.D11
+IFICCT.LELO.CO} CLT=LaD10
 
-FRIAT WORKING ARRAY V UN LINE PRINTER
+FRIAT WCRKING ARRAY V UN LINE PRINTER
 
 KSAV=KCLT
+KOUT=[FR
 
-KOU T=1FR
-
-CALL MEWPG
-CALL LOCKEKBLK)
+CALL MFWPG
+CALL LCCKR{HBLK)
 CALL NEWPG
-KOUT=KS av
+KOUT=KS AV
 
-GC 1C 2¢0
+GG 1C 200
 
-GET C(18)s CCFe Q{183 AND €(19)
-ECS. 194.8. 20. 218
+GET C(18)+ CCF. QU183 AND ¢(19)
+ECS. 194,84 20, 218
 
-clt18)=0.D0
+Cl18)=0.00
 
 CCF=0.00
 
-c{18)=0.C0
+ci{1a)r=0.c0
 
-0(19)=0.LC0
+Q(19)=0.CO
 
-CALL MEWPG
+CALL MEWFG
 
-TF(RIS) LEC.0.D0) GU TU 205
-FE=F(4)0E(4)
+TFERIS) JECL.0.D0) GO TU 205
+FE=F (4 )%E(4)
 
-HA=H{18)%A(18)
+HA=H{1A}*A(18)
 
-FEPH3HASFE
+FEPH=HA+FE
 
-Buw=R{4)enia)
-AFSCx{BRSFEPH/IFERHILB)))ox20x (18)
-ALFA=R{S)}/FE
+BW=PR{&4)*nid)
+AFSCxIBWSFEPH/IFE®HILB)))e*29K(]18)
+ALFA=R{S)/FE
 
-CUI1B)=ALFA®R2/{ ALFA+.5DU%BESC*{1.DC+DSCRTI1.00¢4,COSALFA/BESQ)))
-CULB)=PR*A (4) *DSQRT(C(IBI*K(18)}
-CCFz{R(5)+FAPCL{18))/FEPH
-Ql16)=CCF*FE
+CUlB)=ALFASR2 /L ALFA+.5DUSBESC* {1.DC+DSCRTIL.D0¢4,COSALFA/BESQ)))
+CULB)=Ph*A (&) ¥DSORTI(C{LB)*K{18))
+CCF=({R(S5)*+rASC (LG )/FEPH
 
-CONTINUE
+QU 15)=CCFoFE
 
-REGIM CALCULATION OF QUANTITIES CEPENCENT ON CC
-GET CIC) CCLL)s QL10)s CUI}
-FOS. 114,R¢ 12448
+CONTINLE
 
-NCC=NCCe]}
-IFINC.LE.S0) GO TD 301
-WRITE(KCUT 435) HBLK
+AEGIM CALCULATION GF QUANTITIES CEPENCENT ON CC
+GET CUEC)s CULL)s QLAO)s €M1}
+FOS. 11A.Ry 12448
+
+NCC=NCC+]
+IFINCCLLELSO) GO TD 301
+WRITEIKILT 35} HALK
 
 PAGE 002
 TSN
+1SN
+1SN
+TSN
+15N
+1SN
+I SN
+
+1SN
+15N
 TSN
 TSN
-TSN
-ISN
-ISN
-ISN
 
 ISN
-TSN
-TSN
-ISN
 
-ISN
-
+15N
 TSN
-ISN
 
-ISN
+1SN
 1SN
 ISN
 TSN
 TSN
 TSN
-ISN
-1SN
+I SN
+15N
 
-ISN
-ISN
+TSN
+I SN
 
-158
-TSN
-1SN
-TSN
+15N
+15N
 1SN
 TSN
-
-TSN
-TSN
-ISN
-ISN
-ISN
-
-TSN
-ISN
-ISN
-ISN
-
-TSN
-TSN
 1SN
-ISN
-TSN
-ISN
-TSN
+18N
 
+15N
+15N
+15N
+SN
 ISN
+
+I SN
+SN
+15N
+I SN
+
 TSN
+tSn
+1SN
+15N
+1SN
+I SN
+T8N
+
+I &N
+
+[ SN
+T8N
 ESN
 TSN
 
+15N
+15N
 TSN
-ISN
-1SN
 
-{SN
+I SN
+1SN
 TSN
-1SN
-1SN
-ISN
-1SN
+TSN
+TSN
+15N
 
 0149
-aisa
+oi5aG
 0151
-0182
+01s?
 0153
 0154
 0155
 
-0156
-a157
+Disse
+o157
 0158
 0159
 
-0le0
+0lso
 
-olsl
-0162
+Olsl
+o162
 
-el
-a165
+0163
+al69
 0166
-0167
-ai&8
+ale?
+olag
 0169
 0170
-on
+olmn
 
-otr2
+orr2
 0173
 
-C174
-ai76
-cir?
+Gl 74
+Ci7s
+c177
 0178
-gL7s
-0180
+g7
+U180
 
 0181
 01813
 0184
-0185
+a1 85
 0186
 
-0187
-018R
-189
-alsa
+GIR7
+0188
+t189
+at9a
 
-019i
-a192
-0193
+0l91
+LR
+ale3
 0194
-Gl96
-0197
-at9s
+Glgs
+0le?
+a198
 
-al199
+G199
 
-0200
-0202
-0204
+Q200
+az07?
+G204
 0205
 
-0206
+206
 0207
-0268
+6268
 
 0210
 021
-0212
+0’1z
 0213
-ats
+0215
 0216
 
-mao
+M Oo
 
-non
+DO N
 
-an
+OO
 
-C
+G
 
-Don
+SO n DO~
 
-a
+aon
 
-ano Aon non
+fa N le e
 
-=
+o
+
+DO
 
 68
 
-35 FORMAT(® FATLURE IN SULUTION FOR CC*.81)
-GC 10 1CO
+35 FORMATL® FAILURE IN SULUTION FOR CC'.81)
+G 10 1C0
 
-3c
+ic
 
-EI
+ag
 
 1
 
-w
+W
 
-315
+15
 30
 
-DO 305 I=1G.11
+Do 305% I1=1G,11
 
-ALF ASK) (PIII/UTLLI®HLL)) )*e2
-CALL COLACICC ALFALCLLY)
+ALF A=REL)I(PRID/LTLLIOHEL)) )¥*2
+CALL COLACECCALFALC(LY)
+OQIT)=PUEY®*ALL)*DSARTIKIII*CLLIINTILIY
+CONTINLE
 
-OT )=PUE)SACL)*OSORTIKIII*CLLIII/TLI)
-CONTINUE
+GET Cl{lel, Cliad — EuS. 174.8
 
-GET Cll6}. Gllad — EUS. 174.8
+Bw=R{3)%n(2)
+ALFAaK(16)%{PH/H{Lb) }*%2
 
-Bw=fi3)en{2)
-ALFA=K{L16)9(PW/H(L1b)I*e2
+CALL CCLADICC,ALFALCLLE))
+0{Ll6)=BweA{16)0USURTIK (L6 IEC{16))
 
-CALL CCLADICC ALFAJCLLO))
-Q(l63=BwtA{L6)SUSURTIK{L6I*C{16))
+GET Ci17) - EQ. 18
+QILTAI=FLII*ELI)*LL
 
-GET CH17) - EQ. 18
-QILTI=F(II*ELII*CC
+GEY C(13)« 0(13}s Cll4)se Cl14), CL15), O(15)
+ELS. 14A8.BFs 22As LD9AsB. 234, L6A.Be 244
 
-GEY C(13)« Q{13})s Clléede Cl14), CL1S), O(15)
-ECS. 1448,B, 22A¢ L15A¢Be 234s 16448. 244
+IGOCF=Q
 
-IGOCF=0
+CALL CSCLVEICCSCSGePIl3)aTE13)sF (130 (21)eK{130.K121)4CTCL
+1 IGLCCF.CL13),CL21))
 
-CALL CSCLVEICCCSGePI13)eT{13)sP(13)eF(210eK(13),K121)4CTCL,
-1 IGCCF.C(13).C(21))
-
-IFCIGCCFLLELQ) GU TO 32u
+TFLIGCCFaLELO) GU TU 320
 
 K1=13
 
 K2=21
 
-€2=CSG
+€2=C56G
 
-WRI TF(KCUT +301 KieK2
+WRITFUKCUT«301 KiekZ
 
-FCREATL® FAILURE IN SULUTION FCR C{'y 124%) AND C(*.12.%)')
-1GO0CF==1
+FCRFATLE® FAILURE IN SULUTION FCR C{",12+*) AND CU*s12.:"}7}
+IGO{F==1
 
-CALL CSCLVE(CCoC2oPUKEIoTUKLIoF{KLIokF(K2)oKiKL) K{K2}oCTOLS
-1 IGLCF.C(K1)CEK2))
+CALL CSCLVE{CCAC2eP UKL e TUKLIoF{KL o (K2IoKIKL) (KEK2)CTOL S
+1 IGLCF.ClK1).CIKZ))
 
-60 10 100
+GO 0 160
 
-320 CALL CSCLVFICC.CSSeP lla) oe Tli4)obi1a)ehi22)0KIL4) K122)CTCL,
+320 CALL CSOLVFICCCSSePllaloTlladatihaber[22)oKI14YaKE22).CTCL,
 
-1 IGCCFe Collab CL2211
-IFUIGCCFLLELQ) GU TO 425
-K1=14
+I IGCCF«Col4FCL2211
+[FUIGCCFLLELC) GU TO 425
+Kl=14
 K2=22
-C2=0S8S
-G0 YQ 315
+C2=C8S
+G0 10 315
 
-325 CALL CSCIVELCCeCSRePLLO) TELS or l1Shorl22)eKE15)0KI23) CTCL,
+325 CALL CSCLVEECCCSRePLLOI T UL e r L Sda b {220 RKL15)4KE23).CICL,
 
-330
+3130
 
 33
 
-5
+8
 
-80
-
-3136
+33
 
 34
 
 B
 
-SC
+5(
+
+5
+
+o
+
+&
 
 0
 
 1
 
-a
+O
 
-1 [GCCFC{151.CUL23}}
-FFIIGCCFLLELO) GO TO 330
+1 {GOCFeCHII5)CiZ3))
+TFITGOCFLLELO) GO FO 330
 Kl=15
 K2=23
-C2=CSR
-G0 TO 31%
+C2=CSK
+GO TO 318
 
-COL3)eQ(Z2Ll0ewli%}e(224.Q1150.0122}
+Cl13) Q21 )ewiladsQt224.Q1151.012231}
 
-Do 335 1=12,15
-QUIN=HEEI*ACI)x(CC-CULLN)
-QB +I )=-CL1)
+nao 3% (=12,15
+QUIN=HUE® AL )*(CC-CHL})
+QiB+11=-C(1)
 
-CONTIALF
+CONTIALEF
 
-GET CUZ}. Clu) Anu C{12}1 - EQS. 214. 13A.8
+GET COlZ). Clwl Anl C{22) - EQS. 214, 13A.R
 
-C112)=R(3)4R(4}-0010I~0LL1I=-CM123=-CMR4I-0(15)-0(16)-01( 17)
-Qa )=-C(12)
+CLLI2)=RI3)D4R14-C{1GI~0IL II=C 01 2)=C (R4 3-0(15)-Q116)-0117)
+Qle=-C(12}
 
-CLL20=CC-C(12)/ (HII) %Aa(4})
+CeL20=C0-C{l2)/(HIl21 %A (4} )
 
-TF{Ci12).6Y.0.D00) GO TU 340
+TF{Ci12}3.6Y,0.00) GO TU 340
 
 1c=12
 
-WRT TE(KCLT 480) NCCeHBLKeCCe FC CHICH
+WRT TE(KCLT+80) MCCoHBLKeCCe ECeCICH
 
-FORMATI1Xe13,*% CLP0ALle? =%, JFELIGL5," CU',12,%) =*,E14.5)
+FORMATIIXa13,7 CLOSALeY =%, JPEL4.5," CL'0124*) =*4E]4.5)
 
-TF C112) 1S NEGATIVE. ADJUST CC ANC TRY AGATA
-CO=CL +0 C
+TF C112) 1S NEGATIVE. ADJULST CC ANC TRY AGATA
+CO=C0e0C
 
-SEE IF AN UPPER LIMIT (CC2Z) WAS FCULNC.
-IF SC. CC NOT EXCEED IT.
+SFE IF AN UPPER LIMIT (LCZ2§ wAS FCLNE.
+IF SC. CC MOT FXCEED 1T
 
-TF{CC2.EC.C.CO} GO TU 300
-TF(CC.LT.0C2) GU TU 300
-CC=0,50C*{CC2+4u.5D0%CC)
-6C 1C 300
-GET Cl4) AND Cr ~ FOS. 132.8 44.8
-CAI =(DSCRI(IKIL2)®C LULZ I=UE12)9TL4)/IPLA)¥ALG)) )*e2/K (4)
-CF=C(4)-Cl12)/(Hl4)%A(4})
-IFICF.GTL0.CC) GO TO 500
-IF CF IS NEGATIVE, ADJUST CC ANC TRY AGAIN
+IF{CC2.EC.CaCO} GU TO 300
+TA{CC.ALY.CC2) GU TU 300
+CC=C0.50C*(CC24u.5D0%LC)
+6C 1€ 300
 
-WRI TE(KCLT 81) NCCoHBLKeC Lo HEBLKGCF
+GET Cd4) AND Cr — EQS. 13248 &£.8
 
-FORMATEIXeTI3e® LCPeAly? =2, JPE14.5,% CF?yALe' =1,El4a5}
-GC IC 336
+Clar={DSCRTI(KIL2I®ECELZII-ULLZI*TLA)/IPL4bvAL4)) h*e2/K(4)
+CF=C(4)-Cl12)/(Hl4)®A(%))
+IFICF.GTLO.CC) GO TO 500
 
-TF(KTRY.AELL) GG TO 501
+IF CF IS NEGATIVE. AUJUST CC ANC TRY AGAIN
 
-RF1=0.CO
+WRETE(KCLT 811 NCCoHBLKCCoHELKSCF
 
-RF2z0.0C
+FORMATULXeT3 " LC%eALl,y? =4, JFEL4.5.% (F',4Ls" =*,€l4.51)
+G TC 316
 
-PAGE 003
-TSN
+IF{KTRY.AELL) GO TO 501
+
+RF1=0.CC
+
+RF2=0.1C
+
+PAGE 0063
+1SN
+15N
+I SN
+ISN
+
+1SN
+I SN
+1SN
+ISN
+SN
+
 TSN
-ISN
-ISN
+TSN
+1SN
+1SN
+
+1SN
+
+TSN
 
 ISN
-ISN
 TSN
+TSN
+1SN
+
+TSN
+
+I SN
+TSN
+15N
+
+15N
+
+15N
+
+I SN
+15N
+TSN
+SN
+SN
+1SN
+15N
 ISN
+1SN
+ISN
+1SN
+
+1SN
+SN
+15N
+
+1SN
+1SN
+TSN
 [SN
-
-TSN
-TSN
 ISN
-TSN
-
-TSN
-
-TSN
-
-ISN
-ISN
-TSN
-1SN
 
 1SN
 
-ISN
-ISN
-ISN
+I SN
 
-ISN
-
-ISN
-
-ISN
-ISN
-TSN
-ISN
-ISN
-1SN
-ISN
-ISN
-TSN
-ISN
-ISN
-
-ISN
-ISN
-TSN
-
-TSN
-ISN
-Isa
-ISN
-ISN
-
-ISN
-
-ISN
-
-0217
-0218
+02T
+0r18
 0219
 0220
 
 0221
-0277
+0222
 0223
 0224
-0725
+0225
 
 0226
-0221
-0228
-€229
+0227
+0728
+£229
 
 0230
 
-023
+021N
 
 0232
-0233
-0234
+02313
+n234
 0235
 
 0236
 
-02137
+021317
 02138
 0239
 
 0240
 
-0242
+N242?
 
 0244
 0246
-0247
-0248
+024
+024PR
 0749
-0750
-0751
+07250
+02%1
 0252
 0253
 0254
@@ -4703,52 +4832,52 @@ ISN
 
 0259
 0260
-0262
+0z26?
 0263
 0264
 
-026%
+0265
 
 0266
 
-ann nn
+annno
 
-ann
+SN
 
-oMmD Doan
+oS00 DM n
 
-ABO omn noD
+SO0 e oS00
 
-fx Xa ¥al
+MO
 
-hoon
+SO0
 
-noon
+Do
 
-aan
+oao
 
-anon
+onon
 
-ann
+oM n
 
-noo
+NS
 
 50
 
 5C1
 
-5C5
+5(6
 
 55
-530
-56
+510
+58
 
 515
 
 516
 51
 
-52C
+52¢C
 
 530
 
@@ -4760,569 +4889,573 @@ KTRY=2
 
 NCC =0
 
-WRITE (KCLT¢SCIHALK
+WRITE(KCLTSCIHALK
 
-FORMATI® ITERATIVE SOLUTICN FCR CCYoAL/EX/
-Tf MCC bX a CCL ilXa?COL oe LAX COX a 1EXe RFX? (LAX, CCE /1XD
+FORMAT(® ITERATIVE SOLUTIGN FCR CCY'oAL/EX/
+i % ACC'o6Xe"CCL e kLXotCOLYs L1Xe®COX 21X "RFX 411X, *CC 271X}
 
 BEGIN CALCULATION OF QUANTITIES CEPENCENT ON CF
-GET Cil)e Cl2)s C3), QLL)e QU2)e CHI)
-EQS. 1448s 24¢8B¢ 3A.B
+GET Cilde Ci20s CU3). GlL)s Ct2)e CLI)
+FQS. tdeBe 2heBe 3A:B
 
-DC 505 Ist.3
+DC 505 I=l.3
+ALFA=zR(TI*(PALI/CTCLI*HiTl)ine2
 
-ALF A=K(TI®(PAII/(TC List) hne2
+CALL CCUADICF, ALFALCILY)
 
-CALL CCUACICF.ALFALCILY)
+(T N=PLI)*ALT)®OSURTLKLII*CAIII/TLT)
+CONTIMLE
 
-OUT )=P{I)ALT)*DSURTIKLII*CRIDI/TLTY
-CONTINLE
+CET CES)s CI%) ~ EQS. 5.8
+Ru=P{l)*wi1}
+AtFA=K[5)® (BN/HI5) ) 682
+CALL CCLADICF ALFALCLIS))
+DIS)=ARAIS)EDSCRTIK{SI®C(5))
 
-CET C{S)e Cl) ~ EOS. 54.8
-Ru=P{liowi])
-ALF AK (5) (BR/HI5) 682
-CALL CCLADICF JALFALCIS))
-Q(S)=ARsA(S)I*DSCRTIK(S)I*C(5))
-GFY C{6) ~ EC. &
-Ql6)=F{1)*EL]1}*CF
-CET CFF - EC. 10
-CFFEaMeLADSCRTEKISISCFI/KLT)
-CET C(7)e CIT) ~ EQS. TA.E
-RexPl2)ou{c}
-ALF A=K(TI® (BW/HIT))*s2
-CALL CCLAD(CFF.ALFALCLTI)
-07 )=BhoALTI*DSCRTIK(TICCLTI)
-CFY CIB) ~ EC. 8
-QU8)=F(2)%EL2)&( FF
-CALCULATE RF FOR EQ. 9
-RSUM=R(LI+RI2)
-RFE=CI1ISCE2) CEI +QI4I4Q(5) ¢CLOI+0(T)eQ(E)-RSUM
-TE=RF /RSUM
-TEST CCAVERGENCE
-TF{OABS(TE).LT.TTUL) GO TO 7CC
-ACT CCAVERGED ~ CHECK KTRY TO SEE WHAT NEXT
-EFCKTRY AF.2) GU TO 540
+GFY Cia) - EQ. &
+Ql6)=F{1)*E(1)%CF
 
-KTRY=2 MEANS PRELIMINARY SEAACKF FCA CCI AND CC2
-WHICH BRACKET THE ANSWER
+GET CFF ~ EC. 10
+CFFxNMeLODSCRTIKISI*LFI/KLTY
 
-IF (RF.CT.0.[0) GU TOU 510
-ccl=Cc
+CET C€(The CITY — EQS. TA.P
+AR=P{209u{Z}
+ALFA=K(TI*(Bu/HITI)*%2
+CALL CCLADICFF.ALFALCLT)I
+QU7 I=EwsALTI*OSCRTIKLTI®C{TH)
 
-RF] =RF
+CET CI{B) -~ FGe 8
+CUAI=F{2)%EL2)¢CFF
 
-WRITE (KCUT 55) NCLoCCL4RFL
-FORMATIIXe 13, 1PELS25ecBXe ELSE)
-GC 10 515
+CALLLLATE RF FOR EQ. 9
+RSUM=RILI+RI2])
+RFEECILISCA2I4CEII+Q {4 40{5)4CLI6 )40 LT 10Q(EB)-RSUM
+TEx=RF /RSLM
 
-cc2=cC
+TEST CCMVERGENCE
+IFLOABSITE).LT.TTOL) GO TG 7CC
+
+ACT CONVERGED ~ CHECK KTRY 7O SEE whAT NEXT
+EFUKTRY . AFL2) GU TO 540
+
+KTRY=2 FEANS PRELIMINAWY SEAACKH FOR CC1 AND CC2
+WHTC+ BRACKET THE ANSWER
+
+IF (RF.CT.0.[0) GU TO 510
+ccl=CC
+
+/F1 =RF
+
+WRTITEIKCUT +5%5) NCL+LCLWRF
+FORMATILINGI3.1PEL 9B ectiXo EL14aE)
+GC 10 515%
+
+ccz2=cC
 
 RF2 =RF
 
-WRITELKCUT 456) NCCeRFZ.CC2
-FORMAT{1Xe13,42%e IP2E1445)
-IFLRFI*RF2) 530.520.5216
+WRITE(KCUT «56) MC.RFZ.CL2
+FORMATLLIX 13,4244 1P2F14.5)
+IFIRFI*RF2) 530.520e5186
 
-RF1#RF2 POSITIVE SHOULD NEVER FAFFEN — SOMETHING WRCNG
-WRITE(KCLUT 51) HBLK
-FCR¥AT(® RFIPRF2 POSITIVE = SCMETHING FCULED UP IN CC® .Al)
-GO TC ico
+RFEL1®RF2 PCSITIVE SHOULD NEVER FAFPEN ~ SOMETHING WRCNG
+WRITE(KCUT 51} HBLK
+FCRMATIY RFIPRF? POSITIVE = SCVMETHIMG FCULED UP IN CC*,AL)
+GO TC iCO
 
-STILL LCCKIAG FUR ONE LIMIT - ALJUST CC AND TRY AGAIN
-KEEP ADJUSTMENT FACTOR LESS THAN 1CO AND GREATER THAN 01
+STILL LCCKIANG FUR ONE LIMIT = ALJUST CC AND TRY AGAIN
+KEEP AQJUSTMENT FACTOR LESS THAN 1C0 AND GREATER THAN .01
 
-TEXCLG=TE*XCLLG
-TFICABSUTEXCLG)4GTa%206D0) TEXCLC=DSIGN(4.6D0,TEXCLG)
-ADJaDLCGICC)-TEXCLG
-CCxCEXPULACY)
+TFXCLG=TE*XCLEG
+TFICABSITEXCLG) oGl o426D0) TEXCLE=OSIGNI4.6D0,TENCLG)
+ADJ=DLCGICCH-TEXCLG
+CCxCEXPUALY)
 G0 10 300
-RF1®AF2 NEGATIVE — ANSWER ERACKETEL
+RF1*AF2 NFGATIVE — ANSWER ERACKETEL
 KTRY=3
-INVERSE LINEAR INTERPOLATICA
+IAVERSE LINEAR INTERPOLATICA
 
-CLL={RF1*CC2 - RF2¥CCLI/(RF1-RF2)
+CCL=tRF1*CC2 -.RFZ¢CC1II(RF1-FF2)
 
 PAGE 004
 TSN
-ISN
+I SN
+1SN
+1SN
 TSN
-ISN
-ISN
+SN
+I SN
+15N
+
+15N
+TSN
+1SN
+
+15N
+1SN
+TSN
+{5N
+TSN
+15N
+1SN
+FSN
 [SN
 ISN
-ISN
-
 1SN
+T5N
 TSN
-ISN
-
-ISN
+15N
+TSN
+15N
+I SN
 1SN
-TSN
-{SN
-TSN
-ISN
-TSN
-TSN
-[SN
-ISN
-ISN
-TSN
-TSN
-ISN
-ISN
-{SN
-ISN
-ISN
-ESN
+[ SN
 
-ISN
-ISN
-ISN
+fSN
+I SN
+iSN
 TSN
 
 TSN
 1SN
-ISN
-ISN
-TSN
-ISN
-ISN
-TSN
-ISN
-ISN
+1SN
+15N
+1SN
+1SN
 1SN
 TSN
-ISN
-ISN
+I SN
+I SN
+1SN
+TSN
 TSN
 ISN
 TSN
-ISN
-ISN
+TSN
+TSN
+I SN
+I SN
 1SN
 
-TSN
-1SN
-TSN
-
 ISN
+135N
+15N
+
+15N
 TSN
 1SN
+15N
+I SN
+1SN
+1SN
+I SN
+
+i SN
 1SN
 ISN
-TSN
-1SN
-1 SN
+15N
 
-ESN
-TSN
-ISN
-TSN
-
-0267
-0268
-0270
-0271
+02ael
+0768
+Q2710
+0zT1
 02712
-0273
-0274
-€216
+02713
+274
+C2146
 
-0278
-a2719
+027s
+0279
 0280
 
-C281
-0282
+ozR1
+O2R2
 0283
 0284
-0285
-G?87
+028%
+Q287
 0289
 0290
 0292
-0293
-0294
-0295
+6293
+0794
+Q285
 0296
 0298
-29s
+7299
 0300
 0301
-0302
+o302
 0303
 
 0304
-a3a6
+03046
 0307
-0308
+030A8
 
-0309
-031
-0313
-031%
-0316
+01309
+N3t
+03r3
+0314
+a3te
 0317
-03a
-0319
-0320
+0314
+nig
+0370
 0321
 0323
-0325
+n3zs
 0326
 0327
 0328
 0329
-03130
-0331
+6330
+033l
 0332
 0333
 
 0334
-0335
-0336
+033%
+G336
 
-a3i37
+0337
 0338
 0340
 0341
-0342
+03427
 0343
-(344
+0344
 0345
 
 0346
 0347
-C348
-C349
+C34R
+349
 
-Noon
+[aNgalal
 
-moo
+o0
 
-anno
+S0 nn
 
-oon
+SOoN
 
-anon
+O oOMm
 
-a
+o5
 
-53
+o
 
-~
+5317
 
 540
 
 52
 542
 
-Sab
+544
 
 545
 
-550
+250
 
 55%
 556
 
 5
 
-»
+el
 
 560
 
-S56
+56
 
->
+N
 
 57C
 
 515
 
-58
+580
 
-a
-
-585
-S4
+58%
+54
 
 7CQ
 
-7¢5
+7€5
 
-7¢C6
+7Ce
 
 70
 
-KTRY=4
+KTRY=z4
 
-FF{ISw.EC.2) GG TO 537
-CC=CCL
+EF{ISw.ECa2) GG TU 537
+Ci=CCL
 
-6C IC 3CO
+60 1C 3Co
 
-cer=ccL
+CCT=CCL
 
 GC 1C 7C5
 
-IFEXTRY.ECL3) GU TO 535
-TFIKTRYNEL4) GG TU 555
+IFIRTRY.ECL3) GU TO 535
+IFIKTRYJNELG) GG TU 555
 
-KTRY=4 MEANS INVERSE LINEAR INTERPCLATION HAS BEEN
-CUPFLETED AND RFICCL) CALCLLATEC
+KTRY=4 MEAMS INVERSE LINFAR INTERPCLATION HAS BEEN
+CCPFLETED AND RFECCL) CALCLLATED
 
-WRITE (KCUT 452) NCCoLCLaCCoRF,(C2Z
-FORMAT(IXs13,1P2E1445¢164Xe2E14.5)
+WRITE(K{LT452) NLCoLCLl.CLC.RF,(C2
+FORMATI{1XsI3,1P2E1445¢14X+2E14.5)
 RFT=RF
 
-INVERSE CULAURATIC INTERPCLATICN
+INVEFSE CLAURATIC INTERPCLATICN
 
-DI=RFL1-RFT
+D1=kF1-RFT
 
-N2=&F2=-RFT
+N2=kF2=-PFT
 
-D3=02-N1
+D3=C2-N1
 
-COX=CCLORFI*FF2/ (DL*0Z)-CCLoRFT*RF2/{C1*D3) +CC2%RFL*RFT1/{D2#D3)
-TFICCXalTLCCL) GU TO 545
-TFECCXaCTLCL2) GN TO S545
-KTRY=S
+COX=CCLORF I®FF2/ (DL*0DZ)-CCLoRFT*RFZ/{C1*D3)+CC2%RFL2*RFT/{D2%D3)
+TRICCXLLTLCCL) GU TU 545
+TFICCXLCTLCC2) G TO 545
+KTRY=5
 
-TF{ISWLECLZ) GO TQ S4e
-CC=CCx
+TF{ISwaECa2) GO TU 544
+CC=CCX
 
-GC TC 3Co
+GC 1C 3Co
 
-COT=CCX
+COT=C0X
 
-GO 1C 7CS
+GO 1C 71Cs
 
-[FIRFTLLT.C.CC) GO TO 550
-ccz=cClL
+IFIRFTLLTLCL.CC) 6O TO 550
+€cz=CcCL
 
-RF2 RFT
+RFZzRFT
 
 GO 10 520
 
-cc1=cai
+cCl1=CCt
 
-RF1=RFT
+RF1=RF1T
 
-GC TC 530
+GC TC S20
 
-KTRY=5 MEANS INVERSE QUACRATIC INTERPOLATION HAS BEEN
-COMPLETED AND RFUCCX) CALCLLATELC
+KYRY=5 PEANS INVERSE QUALCRATIC INTERPOLATION HAS BEEN
+COCMPLETED AN RFLCCX) CALCLLATEL
 
-IFIKTRY.NFLSY GU TO 585
-RFX =RF
+TFIKTAYNELSY GU TO 585
+RFX=RF
 
-WRITE(KCUT «53) CCXeRFX
-FCRMAT(IZ2X41F2E10.5)
+WRITE(KCUT +52) CCX+RFX
+FCRMAT(IZ2X«1FZE14.51)
 
-TEST RFT AND RFX TOU SEk WHAT NEW LIMITS ARE
+TEST AFT AND RFX T0O SEE WHAT NEW LIMITS ARE
 
-TFIRFX.CT.C.LO) GO FO 570
-IFLRFTLGT.0L.E0) GU TO S65
-IF(DABS (RFX) .GT.DABS(RFT}} GC TC S¢¢
-€Cr=CCX
+TFIRFX.CTLC.LO) GO TQ 570
+IFIRFTLGT.0L.E0) GU TG 585
+IFCDABS(RFX) .GT.DABS(RFTR) EC TC StQ
+CC1=CCX
 
 RF1=RFX
 
-GD 10 530
+GO 10 530
 
-ccz=cctL
+ccz=CCL
 
-RF2=RFT
+RFZzRFT
 
 GC TC 560
 
-IFIRFT.LT.0.C0) GO TU 580
-IF(RFX.CTLRFT) GO TO 565
-CC2=CCX
+TFIRFTLLT.0.C0) GO T4 580
+IFIRFX.CTLRFT) GO T 565
+CL2=CCx
 
-RF2 =RFX
+RFZ zRF X
 
-Gr IC 530
+G TC 530
 
-€C1=CCL
+CCl1=CCL
 
-RFL1=RFT
+RFL=RFT
 
-GO 10 515
+GO 1C 575
 
-WRITE(KCUT +54) KTRY
+WRITECKCUT +54) KTRY
 
-FORMATIL® KTRY =t.14/' ERRUR®)
-Gr TC 100
+FORMATIL? KTRY =t,.]4/% FRRUR'*)
+G6r 1C 100
 
-CALCLLATICN OF TRITIUM ODISTRIBUTICA - CCT SEY BY
-CHAMGE INSTRUCTIUN
+CALCLLATICN OF TRITIUM DISTRIBUTICA - CCT SEY BY
+CHAMAGE ENSTRUCTIUN
 
-KTRY=1
-TSwW=2
-NCC 120
+KTRY=]
+I5SW=2
+NCC T=0
 
-GET C(4C) AND Qlel) ~ EQS. 34 ANLC 35
+GET CL4C) AND QU&l) ~ EQS. 34 AND 35
 
-NCC TsNC(T+1
-TFiNCCTLLELS5C) GU TO 706
-WRITE(KCUT +35) HTEE
+NCCTsNCCT+1
+TF{MCCTLLELS0) GU TO 706
+WRTTEIKCUT435) HTEE
 
 GC 1C 100
 
 RATIC=CCT/CC
-ClaCI=RETIC®C(LO)
-Ot41)=RATIC*C (11)
-QSUM=C(41)+0 140)
+ClaC)=RETI(®C{LO)
+C{41)=RATIC*C L1}
+QSUKF=C141)+40140)
 
-GET Cl43)eCl4aa)eCla5dot{a2).Cl44)sC145) ~ EQS. 374.8, 384.8, 394.8
+GET CU431eCl44)eCl45)sC163)00(a4)s0145) = EQSs 3TA, B, 3B8A.B, 394,68
 
-OC 710 I=43+45
+0OC 710 =43445
 
-J=l-30
-TC=TLJISLSCRT(CISI/KIS)
-HICCP=TC*HLJDI/ PLS)
+J=[-30
+TE=T{JISLSCRYICIGI/KLIN)
+HICCP=TC*H{JI/P L)
 
 PAGE 005
 TSN
-ISN
-158
+15N
+TSN
+1SN
+
+TSN
+15N
+ISk
 ISN
 
-ISN
-TSN
+1SN
+1SN
+
+1SN
+15K
 1SN
 [SN
-
-{SN
 ISN
+I SN
 
-ESN
+TSN
+
+15N
+1SN
+15M
+
+TN
 1SN
 1SN
-[SN
-ISN
 ISN
 
-ISN
-
-1SN
+I SN
 1SN
 TSN
-
 TSN
-ISN
-ISN
-ISN
-
-TSN
-ISN
-ISN
-TSN
-TSN
+¥ SN
 1SN
 ISN
 TSN
-ISA
-ISN
-TSN
-TSN
-ISN
-ISN
-TSN
-TSN
+ISh
+i SN
 1SN
-ISN
-ISN
-ISN
 TSN
 TSN
 ISN
+1SN
+15N
 TSN
-ISN
-[SN
-ISN
-
+I SN
+1SN
+TSN
 TSN
 TSN
 TSN
 1SN
-ISN
-TSN
-ISN
-TSN
-TSN
-ISN
+18N
+5N
 TSN
 
-ISN
-1SN
-ISN
+15N
+18N
+TSN
+18N
+SN
+TSN
+TSN
+15N
+FSN
+I SN
+T SN
 
-1350
-0351
-0352
+TSN
+TSN
+15N
+
+03150
+n3451
+0152
 0353
 
-C364
+0354
 035%
-0356
-013517
+03156
+03151
 
-0358
+0358R
 0359
 
 0360
 0361
 0363
 1364
-036%
+Q365
 0366
 
 0367
 
-0368
-037¢C
+0348
+03710
 0371
 
 0372
-n373
-0375
+ni73
+G37s
 0376
 
 0377
 0379
 0380
-0381
-N382
-0383
+0331
+N3R2
+03R3
 0384
-C385
+C3RS
 0386
 0387
-0389
-0390
-€3s1
-0392
+Q389
+g39q
+€351
+a3e?
 0393
 0395
 0397
 0399
 0400
-040%
+040}
 0402
 0403
-0404
-040%
+04 0%
+0405
 0406
-0407
+n407
 0408
 
 0409
 0410
-0412
+04l2
 0413
 0414
 0415
@@ -5333,238 +5466,229 @@ C385
 04213
 
 0424
-0425
-D426
+04?5
+ND&26
 
-ano
+[a R o)
 
-noo
+SO0
 
-non
+SOt
 
-0
+o
 
-onn
+Cvn D
 
-anno
+Moo n
 
-Anan
+inlnlie el
 
 71
 
 PAGE 006
 
-CLL IsCCI*+TCLP/ LLL DUCHILOP)
-QEII=e (Jie aty)ecld/TC
-QSuM=CIT)+CSUPM
+CiLI=sCOTorICCP/LL . QUSHILOP)
+FIEREL NI Y INELIAN G IS I
+QSUM=CITI+ESUN
 
-710 CONTINUE
+T10 CONTINLE
 
-GET C146) THRU Ul49) — EQS. 40 THRU 43
+GET Cl46) THKU Wi49) — EQS. 40 THRU 43
 
-DO 715 1246449
-Ci1)=Q(1-30)*RATIO
-OSUM=C{T Ie SUM
-CCNYINUE
+0o 715 1246449
+Ci1)=Q{ I=-3C)*RATIO
+QSUM=C{TIeClSUM
 
-ow
+715 CCNTINLUE
 
-7
-GET Ci42) ANU U(34) — EC. 44 — MATERIAL BALANCE
+o
 
-Q{42)=F(I1~-CSUM
-Qi34)=-Cl42}
+GET Ci42) ANU Ul34) — EC. 44 — MATERTAL BALAMCE
 
-CFT C42) -EU. 36A — CHECK FCR POSITIVE
+Cl{4?2bsFlA)=LSUM
+Qi34)12-Cl42)
 
-Cle2)=CCY-Cla2)/inll2)%Ale))
-IFEC(423.GT.C.0U2 GO TU 725
+CFT Cl42) —EU. 36A - CHECK FCR POSITIVE
+
+Cla2)=CLV=Cla2)/ il l2)nal4))
+[F{C(42).GT.C.00 6O TU F25
 1C=42
-721 WRITEIKCUT 80) MLTsHIEL, CCT IC, CLIO
-720 CCT=CCT+CCT
-GE 1C 1705
+721 WRITEUKEUT 80) MLToniEE, CCTIC,CLIC)
+T20 COT=CCT+CCT
+GC 1C 105
 
-C42) FCSITIVE ~ GET Ci34) - EQ. 288 - CHECK FCR POSITIVE
+Cle2) FCSITIVE = GET Ci34) - EQ. 288 - CHECK FCR POSITIVE
 
-725 C134) a(0042) /CSURTICEL2)/KIL21I=-T(4)SCL42}/ {PLL I*A(4) })I*DSORT(CLA)
-s/ktal)
-IFLC134}.67.0.C0) GO TO 730
+125 ({340 s {0{42) /CSURTIC LM/ REE2DI-TLAISCL42)/{PL4I*A14) ) )*DSORT{LLS)
+s$/Kita))
+FFIC134).GT.0.CO} GU TG 730
 fC=34
-GC Y0 721
+GO 10 721
 
-C(34) PCSITEIVE - GET CFV - EC. 8A ~ CHECK FCR POSITIVE
-73C CFT=CI34)-C{420/1H{4I*AL4))
-TF(CFT.GT.0.) GG TO 735
-WRETE(KTUT +81) NCLToHTEE+CCToFTEELCFT
-GC TC 12¢
+C(34) PCSITIVE - GET CFV - EC. 782 -~ CHECK F(R POSETIVE
 
-CFTe CL34) ANU Ci42) ALL FCSITIVE - CHECK KTRY
-FOR KREXT STEP
+730 CFT=CI34)}-Cl42i/inladxilad)
+TF{CFTAGT.04) GO TO 73H
+WRETEIKCUTs81) NLLT HTEE+CCTLFTEE.CFT
+GC TC 12C
 
-3
+CFTe CL24) ANU Cil42) ALL FCSITIVE - CHECK KTRY
+FOR MEXT S5TEP
 
-wn
-
-FFUKTRY MEL) GU TD 750
+T3S TFEKTRYLAELL) GU TN 750
 KTRY=2
-RF1=0.0C
-RF2=0.CC
-NCC T=0
-WRITE (K(LT +50) HTEE
-750 RATIF=CFY/CF
-QTS¥=0.C0
-no 755 1=31.238
-TFET.ECL34) CC TQ 755
-O(1)=RATIF*QLI-30)
-755 CQTISA=LTSPeLL])
-RF=CTSM~RI1)
-TF=RF/R(1)
-TFICARSITE)LLTLTTUL) GU TU 9CC
-IFEKTRY AFL2) GO TD 790
-TF{RF.CT1.0.00) GU TO 760
-cCl=CCT
-RFL2RF
-WRETECKCUT 455) NCCT LCCLeRFL
-GC IC 7&5
-160 CC22CCT
-RF? =RF
-WRI TELKCLT +56} NCCTWRF2.002
-765 IF{RF1#RF2) 530,770,766
-766 WRITE(KCUT.51) HIEE
-G0 ¥C 100
+RF1z20.0C
+RF2=0.C0
+NCC 1=0
+WRITE(KCLT+50) HTEE
+750 RATIF=CFT/CF
+QTS¥=0.L0
+no 155 I1=31,38
+TFET.ECa341 CC TO 755
+O(1 )=RATIF*QI[-30}
+755 QISM=CTISMeLL])
+RF=CTSVM~R{1}
+TF=RF/A(])
+[FICARSITEN.LTTTUL) 6L TU 9CC
+TFEXTRY AFL2) GO TO 790
+TF{RFLETL0.00) GU 10O 760
+cC1=CCT
+RFL=2RF
+WRETECKCLT «55) NCCT.CCLoRFL
+GC L 7¢5%
+760 CC2=CCT
+RF2 zRF
+WRITE(KCLT +56) NCCTRF2,L(2
+765 LFE{RELI*RF2) 530,770, 764
+766 WRITEULKEUT51) HIFE
+60 7€ 100
 
-STILL LLCKING FUR ONE LIMIT = ACJLST CCT AND TRY AGAIN
-KEEF ADJUSTMENT FACTOR LESS THAM JCO AND GREATER THAN 01
+STILL LCCKING FUR ONE LIMIT = ACJLST CCT AND TRY AGAIN
+KEEF ADJUSTMENT FACTOR LESS THAM JCO AND GREATER THAN .01
 
-770 TFXCLG=TF*XCLLG
-IF(DABS{TEXCLG)a6T 42600) TEXCLE=DSTCN{ 446000 TEXCLG)
-ADJ=CLLCEICCT)-TEXCLG
+770 TFXCLG=TE*XCLLG
+IF(DARSITEXCLG) 6T o4a6D0) TEXCLEXCSICN(4460C, TEXCLG)
+ADJ=CLOCHCCT )=TEXCLG
 
-CCT=CEXFLACID
-GC 10 C5
-750 TFOKTRYLEC.3) GU TO 535
-TFIKTRY NEL) GO TO 795
-WRT TEUKCUT 452) NCCTSCCLeCCTo RFI CC2
-Gf IC 542
-795 IFIKTRYLAELS) GG TO 585
-GQ TC 556
+CCT=CEXFLACJI
+Gr 10 7C5
+750 {FUKTRYLEC.3) GU TO 35
+IFIKTRY AEe4) GO FO 7495
+WRTITEIRCUT 452 NCCT+CCEoCCToRFoLC2
+G ¥C 542
+195 IFIKTRYLAF.5) GG TO 545
+GO T1C 556
 
-CLTPLT SECTION
-SUMMARY OUTPUT TO UNIT KOUT
+CLTPLT SECTEON
+SUMNARY QULTPUT TO UNIT KGOUT
 
-900 CALL NEWPG
-WRITE LKCUT 92}
-$2 FCRMAT(® OLTPUT SUMMARY'/ 1X)
+900 CALL NERPG
+WRTTE LKCUT 92}
+G2 FCRMAT{® OLTPUT SUMMAKY'/1X)
 72
 
-ISN C427 OHTSS=C(13)eCll4a) +0)
+ISN €427 OMTSS=CI13)eCI14)+0415)
 
-TSN (0428 QISS=CL43)40144)+0(45
+TSN Q428 QISS=C {43040 4a)+Ui45)
 
-TSN 0429 CHS $=CHT1SS-QTSS
+TSN 0429 OHS $=ChTS5-0TSS
 
-TSN 0430 RSUM=1.CO0/{R(1I+R(3))
+TSN 0430 RSUM=1.00/7{R{LI+R(3))
 
-ISN 0431 FRTSS=RSLWOCTSS
+ISN 0431 FRTSSxzRSLM*CTSS
 
-ISN 0432 WRITE [KCUT 493) OHTSS.QISSeCHSS,FRTISS
+ISN 0432 WRITELKCUT 497) QHTSS OTS5S5CHSS,FRTSS
 
-ISN 0433 §3 FORMAT{* STEAM SYSTEM? /5Ke*FLCh CF H ¢ T INTO STEAM SYSTEM',
+15N D433 S3 FORMATL* STERAM SYSTEM*/5X+*FLCR CF H ¢ T INTO STEAM SYSTEM!,
 
-1 1PEL6L.S/SXe "FLOW UF T INTO STEAM SYSTEM*,E2045/5X¢ ‘FLOW CF H ¢,
-2YINTO STEAM SYSTEM? o£20.5/5X«*FRACTION OF T INTC STEAM SYSTEM‘,
-3 Fiée.5/1x)
+1 1PELG6.5/5Xe"FLOW UF T INTOD STEAM SYSTEM*,E20.5/5Xe*FLLCW CF H %,
+2*INT0 STEAM SYSTEM®o£Z20.5/5X«*FRACTION OF T INYC STEAM SYSTEM®,
+3 Flé.5/1x%)
 
-TSN 0414 QhTFr=Cl10}e CHL)
+TSN Q0414 QhTFu=CC10I¢CE11)
 
-TSN 0435 OTPw=L140)4C 4)
+TSN 0435 OTPW=CL40)+CE41)
 
-TSN 0436 FRTPR=CTPRORSUM
+TSh 0416 FRTPR=CTPRORSUM
 
-TSN 0437 FISSK=C{461%RSUM
+1SN 0637 FISSK=C {46 3RSUM
 
-ISN 0438 FRYSF=C(48)%RSUM
+1SN 0438 FRYSF=CL4B)*RSUMN
 
-1SN 0439 FRRET=C{47)%RSUM
+1SN 0439 FRRFT=C{4TI*RSUM
 
-ISN 0440 FRRPF=({49)%RSUM
+TSN 0440 FRRPF=C{49)%RSUM
 
-ISN 0441 WRITELKCUT +94) Ql4ale0i34) sOHTFNCCTPR, CULE} Q(46340(18)4Cl4B),
-1 GULT7)eClaT) oClLT)eQ(49)e FRTPFTSSKeFRTSFeFRRPT, FRRPF
+TSN 0441 WRITEAKLLT+94) Qlals0i34) s OHTFMoCTPRsCULE) ¢ Q(463,0(180,C148),
+L CUL7)4CH4T) oClLT)eQ(eY)e FRTPReFTSSKsFRTSF«FRRP T, FRRPF
 
-ISN 0442 WRITELKCUT 95) CCoLCTCLF
+ISN 0442 WRITELKCUT«95) CC+CLTWCLF
 
-TSN 0443 G4 FORPAT(' SECONDARY SYSTEMS /¢ FLORS?/5Xs*H ¢ T INTC SECONDARY ¢,
+1SN 0443 B4 FORFMAT(Y SECCNDARY SYSTEMS/® FLORS? /5X,*H ¢ T INTC SECONDARY ¢,
 
-LOFRCKF PRIMARY ',1PEL4.5/5K*T INTO SECCNLCARY FROM PRIMARY®,E18.5/
-2 SXe'H ¢ T THRU PIPE WALLS INTC CELLS®¢EL15.5/5Xe*T IHRL PEPE *,
-BOWALLS INTC CELLS*<EL9.5/! SCRPTION RY SINK*/SXe'H ¢ T¢,28X,
+LYFRCF PRINMARY 'S IPEL1445/5K+'T INTO SECCNLCARY FROM PRIMARY?,E18.5/
+7 S5Xe'H ¢ T THRU PIPE wALLS INTC CELLS®¢EL5a5/5Xe*T THRL PIPE '
+FOWALLS INTC CELLSYWEL9.5/" SCRPTION BY SINK'/SXe'H ¢ T4,28X%.
 
-4 F 14a5/5Xe T*e32A0EL@e5/5Xe *FF*e31XeE14.5/5Xe TF 431 XsEL4.5/
+G F L4aB/5Xe ' T o32A0ELaad /5K e "FF Py 3XeEL&.5/5XKe ' TF e 31 XsEL4.5/
 
-5° REVIVAL PY PURGE®/5Xe*H ¢ T'o2EXeE14a5/5Xe*T*0432X¢EL14.5/5X,
-HFHF * 43 1XeE14.5/5Xe PTF e31XeE14.5/" FRACTION GF T'/S5X.'PASSING',
-Tt THRU FTPE WALLS *¢10Xekl%45/5X.*SCRPED BY SINK AS T',14X.ELl4.5/
-8 SX+*SCRREC PY SINK AS TF'+13X,E14.5/5X, *REMOVEL BY PURGE AS T*,
-9 12XsE14.5/5X« 'KEMUVED BY PURCE AS TF*,11XsE16.5)
+51 REFMCVAL PY PURGE"/5Xe®H ¢ T 2EXE14a5/5Xe Tt 432X4Ei%.5/5K,
+GFHF * 431X e E14.5/5XK+* TFY 431 XeEl4.5/" FRACTION CF T*/SXs"PASSING',
+Tt THRU FTPE WALLS "o lO0xe kLl %.5/5X+*SCRPED BY SINK AS T'.14X.EL14.57
+8 SXe*SCRREL PY SINK AS TF's 13X, ELl4.S5/5X+"REMOVELC BY PURGF AS T¢,
+9 12XsFE14.5/5X "HEMUVED HY PURCE AS TF®,L1XeEk4.5)
 
- 
+ISN Q444 9% FORNAT(* COMNCENTRATIONS IN SECCNCARY SALT'/S5X,*H ¢ T (CCY*,23X.
+1 IPFLl4u5/5Xe"T {CLT)}? 426X eEL145/5Xs'HF (CCF)'¢25XsELl%.5/1X/1X)
 
- 
+ISN D445 CrTaaCl1eC(2)¢C(3)
 
-ISN 0444 95 FORMAT (* CONCENTRATIONS IN SECCNUARY SALT'/S5X.*H ¢ T (CC)*,23X,
-1 IPF14.5/5Xe*T {CLT}? o26XeE145/5Xe*HF (CCF) 25XeE14.5/1%/1X}
+SN 0446 OTW=Cl311eC{32)+0(33}
 
-ISN 0445 QrThaCI104C{2)4G13)
+TSN 0447 FRTY®C=CTho*RSUN
 
-TSN 0446 OTW=Cl213¢C(32)+0(33}
+1SN D448 FISST=C (35 )%RSUM
 
-TSN C447 FRY®C=(The*RSUNM
+TSN 0449 FISSTF=C(3T7)9%RSUM
 
-ISN 0448 FISST=CI35)%RSUM
+ESN 0450 FTRPT=C(36)*RSUM
 
-ISN 0449 FTISSEF=C(37)%RSUM
+TSN 0451 FTRFTF=C{3E}*RSUM
 
-ESN 06450 FTRPY=C(36)%RSUM
+TSN 0452 WRETE(KCUT 96} CHTW LT wew(5)CE35),C0T7).0(3T),0(62.0(3€&1,C18),
+1 CI38)«FRTRCAFTISST,FTSSIF.FTRFYLFTRPTF
 
-ISN 0451 FTRETF=C{38)*RSUM
+1SN 0453 WRITEIKTLY +97) LF+CFTWLFF
 
-TSN 0452 WRITEAKCUT «96) OHTW UTwew(5)eC135)4C(T71.0(37),0(62.0(3€3,C1(8),
-1 CI38)eFRTRCAFTISSToFTISSTFFTRFILFTRPTF
+TSN Q454 96 FORMATUI® PRIMARY SYSTEM'/? FLCWS*/5%: 'K + T THRU wALLS INT) ¢,
 
-ISN 0451 WRITE(KTLT 97) CFoCFT.CFF
+VICELLY 4 1PE2145/5X+*T THRU WALLS INTO CELL'+11XeEl4eS/" SORPTION
+2BY SENKI/SXe'H & T'o20XeEL4a5/5XKe T 222X E14a5/5Xs "HF* 31 XeEL4.5/
+3 GX'TF*eIIXWEl4.5/" REMOVAL BY PLRGE*/SXe'H ¢ T?,28x,E14.5/5X,
+LT 32 XeEL4aS/oKe *HF? e31XeE14.5/5X ' TF?,31XWEL4.5/" FRACTION OF
+5T*/5Xs "PASSING THRU wALLS ENTC CELL',E19.5/5X.*SORBED BY SINK AS *
+hotTP e 14XsE14.5/9K " SURBED BY SIAK AS TF® J3X,E14.5/5X. "REMOVED *,
+T*RY PURGE AS T'.lZ2Xekl4a%/5X¢"REMOVEL BY PURGE AS TF*,11X.El4.5)
 
-TSN 0454 96 FORMAT UL® PRIMARY SYSTEM'/ FLCWS*/SXe'K + T THRU BALLS INTO ?,
-
-VICELLY41PE21.5/9X¢"T THRU WALLS INTO CELL'+11X+El4a5/" SORPTION
-2BY SINK®/S5Xe'H + T'e28XeFL4a5/5Xe TP 022%, E14.5/5Xs HF ¢ 431XsE14.5/
-3 S5Xe*TF*eI1XsE14.5/" REMOVAL BY PLRGE'/S5Xe'H ¢ T0,283,E14.5/5X,
-AIT 32XeE14aS5/0Ke CHF a3 1XeE14.5/5X0 TF 4 AIXIEL4.5/" FRACTION OF
-ST*/5Xe "PASSING THRU WALLS [NTC CELL*,E19.5/5X¢ SORBED BY SINK AS *
-Bo tT oe laXeE14.5/9Ke *SUKBED BY SINK AS TF®, 3X, E14.5/5Xs "REMOVED *
-T*RY PURGE AS T9.12Xekl4a%/5Xe "REMCVEL BY PURGE AS TF',11X,E 14.5)
-
-ISN 0455 67 FCRMAT('  CCACENTRATEUNS IN PRIMARY SALT*/S5X,*k ¢ T (CF) *¢23Xs
-1 IPEL4a5/5Xe *TULET) * a2 Xe EL4aS/5Xs "FF (CFF) 'e25X,F14a5)
-TSN 0456 CALL NEWFG
-TSN 0457 60 TC 160
-c
-C END CF FILE DETECTEU UN INFLT UNITY
+ILSN 0455 ST FCRMAT(® CONCENTRATEUNS IN PRIMARY SALT*/5X.*H + T {CF)*423X,
+1 IPEL4.5/5Ke ' TULFT) * 42X EV4L5/5Xe "HF [CFF)'e25X,Fl4a5)
+TSN 0456 CALL MEWFG
+FSN 0457 Gr TC 160
 C
-ISN 0458 557 CALL MFWFG
-ISN 0459 WRI TE(KCLT 499)
-TSN 0460 99 FORMAT? NCRMAL STOP — ALL CATA PRCCESSEC®)
-ISN 0461 STCF
+C END €F FILE ODETECTEL uN INFLE UMIT
+8
+TSN 0458 $G7 CALL MFRFPG
+ISN 0459 WRITEIKLLT.99)
+TSN D46C $9 FNHEAT{® NCRMAL STOP — ALL CAYA PROCESSECY)
+1SN 0461 STCF
 ISN 0462 END
-OPTIONS IN FFFECTH NAME:  MATA.OPT=02,LINECNT=95,ST2E=CCCOK,
-aNPTICNS IN FEFFCTH SCURCE«EBCCICINOL IST NCOECK,LCAL,NCMAP,NOEDT T,NOIDs NCXREF
-SSTATISTICS* SOURCF STATEMENTS = 461 JPRNGRAM SIZE = 10188
+*NOPTINAS 1IN FFFECT® NAME= MATAGOPT=02.LINECNT=9E,STIZE=CTCOK,
+®NPTICNS IN FFFFCTH STURCF+EBCCIC NOLISToNCDECKLCAC,NEMAPLNOEDT ToNOID+ MCXREF
+®STATISTICS* SOURCF STATENEMIS = 48] +PHOGRAM SIZE = 10188
 
-*STATISTICS* NO DIAGNOSTICS GENERATED
+*STATISTICS* NN DIAGNOSTICS GENERATED
 
-sesaxs END CF COMPILATION #98333 45K BYTES OF CORE NOY USED
-
-PAGE 007
+sesksd FND CF COMPILATION #9333 45K BYTES OF CORE NOTY USED
 LEVFL
 
 ISN
@@ -5572,93 +5696,104 @@ TSN
 
 TSN
 TSN
-1SN
+15N
 TSN
 
 TSN
 ISN
 
-ISN
+[SN
 TSN
 
-ISN
+TSN
 
-*OPTINNS IN EFFFCT®
-SOPTIONS IN FFFFCY®
-®STATISTICSS
-STATISTIC S*
+*OPTINNS IN EFFFCT*
 
-soaks FND CF COMPILATION ##%ess
+SOPTIGNS IN FFFFCT®
 
-21.4
+21.6
+
+a6nz
+00013
+
+Q004
+000%
+0006
+a0o7?
+
+oqos
+0009
+
+0010
+noil
+
+eo12
 
 (DFC 72)
 
 73
 
-0S/360 FORTRAN MH
+0S/36C FCRTIRAN H
 
-COMPILER CPTIONS —- NAME: MAINJOPT=02.LINECNT=G5,S12F=0000K,
+COMPILER CPTIOMNS - glPE* MAINLOPT=02.L INECNT=95,S512F=0000K,
 
-0002
-00013
+OO O0
 
-0004s
-0005
-0006
-6007
+ESTATISTIC S
 
-0008
-0009
+SSTATISTICS* NOD
 
-00t0
-no1l
+*nxsed £ND CF COMPILATION #d#ess
 
-0012
+&
 
-moo O00
+L
 
-NO
-
-SOURCE «£BCOICe NOL IST + NODECK<LCAC/NOMAP o NOED IT 4 NCID4NOXREF
+CURCE «EBCOICe NOLIST +NODECK«LCALC4NOMAP « NOEDET o NCIDJNOXREF
 
 BLOCK CATA
+CCMFON /BLK3/ IDIMI20). IUSEL20). NMUZCH. IBEG(ZO0}e NMCN(10},
+& MAR, ACN
 
-CCMMON /BLK3/ IDIMI20)0. TUSEL20)., NMUZQ), IBEG(Z20}. NMCN(10},
-& NVAR, ACN
+DATA
+DATA
+DATA
+DATA
 
-&
+NAT A
+DATA
 
-&
+ICGIM / 20056504 10+5¢5¢25¢25+2C+1Co20050Llels6%0/
+ILSE / 1Bo%v%eDs Fetoe90234230k5¢ 59 15:40kelet®0/
+IBEG / 102Le26+764B6¢91aS€e1210186,166417641%64201:20246%0/
+AM/4HA shHn + 4HC v4hFCN 4 4FF v 4HF +4HH .
+4HK soHP o 4HH o &FT i o 4HM v 4HU /
+NVAR, NCMN / 14, 9 /
+NFCN /7 4HGF o 4HUFF o 4hCFT o &4FCC G 4HCCF o 4HCCT o 4HCSG o
+QHCSS o 4HCSR +4H /
 
-DATA IDIM / 2045050910050 542%42502C+1Ce2045010146%0/
+COMPCHh FBLK2/ INe LIOUT. IPRs KCLT. KPR
 
-DATA TLSE / 1Be4s43s 904049234230 15¢ 5515+40101.6%0/
+DAT &
 
-DATA IBEG / 1024026+76486¢91e5601210146416641760¢1564201+20246%0/
-DATA AM/4HA shnn * 4HC 24FCN J 4HE o 4HF + 4hH .
+N
 
-4HK eoHP « 4HR o&+T [Xia] » 4HM v4HU /
+Ihs TCUTs IPK /5« 20+ &/
 
-DATA NVAR., NCMN / 14. 9 /
-DATA NPCMN / 4HCF  o4RCFF o4HCFT o4HCC  (4HCCF + 4HCCT + 4HCSG »
+= INFUT UNIT NO.
 
-4HCSS +@HCSR 44H /
+1ICUT - BUXILIARY OUTPUT UNIT NC,
+IPR — LINE PRINTER UNIT NC.
 
-COMPCA /BLK2/ INe 10UT. IPRs KCUT. KPR
-DATA Ihe ICUTs IPK 7/54 20s 6/7
+FND
 
-IN = INPUT UNIT NO.
-ICUT — AUXILIARY OUTPUT UNIT NC.
-IPR ~ LINE PRINTER UNIT NC.
+MAME=  NAINSOPT=02.L INECNT=$5,512E=0Q0C0K,
 
-NAME=z  NAIN,OPT=02,L INECNT=$5,SIZE=0CCOK,
+SCURCEvEBCLLCNOLIST o NODECKLCALNCHMAP,NOEDIToNDID . ACXREF
 
-SCURCE«EBCCICNOLIST+NODECK+LCAC+NCMAPNOEDIToNO ID NCXREF
+SCURCE STATENMENTS = Ll +PROGRAVM SIZE = 8
 
-SCURCE STATEMENTS = 11 +PROGRAM SIZE = 8
-
-DIAGNOSTICS GENERATED
+DIAGNOSTICS GEMERATED
 
 125K BYTES OF CORE NCT USED
 
@@ -5669,277 +5804,276 @@ DATE 74.304/09.19.05
 
 ISN
 TSN
-ISN
-
 TSN
-ISN
+
+PSN
+T5N
 
 1SN
+SN
 TSN
-TSN
-ISN
+I SN
 
-ESN
-
-TSN
-
-TSN
+FSN
 
 ?l.6
 
-COMPILER CPYIGMNS = MNAMEx MAIN,OPT=02
+COMPILER CPTIONS = MAMEx MAIN,OPT=Q2
 
-00a?
+0007
 
 0003
 0004
-0005
+Q005
 
 0006
 0007
 
-0008
-0009
+00048
+nons
 0010
 0011
 
-ca12
+cal1z
 
-0011
+TSN 0011
 
-0014
+I5N 0014
 
-{DEC 72)
+(DEC 72)
 
-EXaXsXal
+SO0 D
 
-anon
+Ooon
 
-ann oon
+SN OO D
 
-ONN ANN on AnD ann
+[aEulal SO n o nn Coo D Do
 
-Dan AOoO
+DN [z Nalal
 
-onan
+ann
 
-Doan
+SO
 
 74
 
-0S$/36C FCRIRAN MW CATE 74.3G4/09.19.12
+NS/34C FCRATAMN MW CATE T4.,304/09.19.12
 
-oLINECAT=G5,STZE=Q00CK,
-SOURCE.EBCOICNOL EST oANCTECK +LCAC+NOMAP, NOED IT» NOI C+ NOXREF
+oL INECAT =SS5, SIZExQ000K,
+SOURCEEBCOICNUOL ISToNCCECKLCAC,NOMAP, NOEDIT o NOIC+NOXREF
 
-SUBRCUYINE SETREF {NAME}
-SETS VARIABLES TQ THEIR REFERENCE VALUES. IF NAME IS BLANK.
-ALL VARTAELES AS SPECIFIEC IN THE ARRAY NM WILL BE SET.
-TIF NAME 1S PhNT, ALL VARIABLES IN THE ARRAY VREF
-WiLL BE PRINTED.
+SUBRCUTTNE SETREF (NAME])
+SETS VARIABLES TD THEIR REFERENCE VALUES. IF NAME 1S BLANK.
+AtL VARIAELES AS SPECIFIEC IN THE ARRAY NM wWILL BE SET.
+IF NAME 1S PhNT, ALL VARIABLES IN THE ARRAY VREF
+Wikl BE PRINTED.
 
-IMPLICIT REAL®3 (A-Hs 0-1)
+IMPLICIT REAL®E {A~hs0-1)
 
-REAL®4 WWRC.VWeWORD
+REAL%4 VWRC+VWeWdRD
 
-CCMMCA/BLKI/ TUIML20)s BUSE(ZC)s NMU20)s IBEGi._se NMCMN{1C).
-1 NVARJACN
+CCMPCA/RALKY/ TUIM{20)s IUSE(2C)s NMU20)e EBEGi..ss NMUMLCH,
+i NVARLACN
 
-DIMENSICA VREF(250). VOLE155), vC2(15)
+DIMENSICMN VRFFIZ290). VOLE155). vQ2{15)
 
-EQUIVALENCE {VUL(1).VREFI96)), (VO2(1),VREFI(1T76))
+EQUIVALENCE IVEL{L).VREFI96))s (VO2LL).VREFEL1TE))
 
-v@1 ANC VC2 ARE OUMMY ARRAYS USEC IN THE INITIALIZATION OF
-PARYS OF VREFe THE REFERENCE ARRAY,
+V01l ANC VC2 ARE OUMMY ARRAYS USEC IN THE INITIALIZATION OF
+PARYS OF VREFs THE REFERENCE ARRAY .,
 
-DATA TRLINK/4H /« IPRT/4HPRAT/
-DATS VRRD/4HVREF/ + VW/4HV /
-CCMFCN/BLKZ/INe LOUTs PRs KCLT, KPR
-CCMMEN /BLKL/ VI250)
+DATA [RLMK/4H £ o IPRT/4HPRAY/
 
-THE COMMENT CARUS INTERSPERSED AMONG THE FOLLOWING
-CONTINUATION CARDS CAUSE AC TROUBLE WITH THE ORNL CCMPILFR.
-THIS IS CCNTRARY TO THE RULE ON PG. 12, 6C28-6515-8,
-IBV SYSTEM/360 AND SYSTEM/3T0 FCRTRAN IV LANGUAGE.
+DAT2 VRFRD/4HVREF/ o+ V/4HV /
+
+CCMMCN/BLKZ/INe EOUTs IPRs KCLT. KPR
+
+COMMCN /BLKL/ vi250)
+THF COMPENT CARUS INTERSPERSED AMOMNC THE FOLLOWING
+CCNTTALATION CARDS CAUSE MO TROULEBLE WIFTH THE GRNL CCMPILFR.
+TH1S IS CCNTRARY TO THE RULE ON PG. 12, GC28-6515-8,
+TRV SYSTEN/360 ANL SYSTEM/370 FCRTRAN IV LANGUAGE.
 
 DATA VREF
-REFERENCE VALUES FOR ALI)
+REFERENCE VALUES FOR ALL)}
 
-1/.6060050603.506049406022.C60-1.00052.0642%~1.00 s11.0€48.8D6¢
-2 49.D06+31aC6027.06018.0600.CCe=1.D000.D00,2%-1.0C
+17.6C60050603.%00049.1060224C060=1200052.0602%2~1.00 +11.0€48.,8D6¢
+2 49.06031aC6¢27.06018.060U0aCCe=1.00:0.0042%~1.0C &
 
-REFERENCE VALUES FOR 81)
+REFFRENCE VALUES FOR di1)
+
+3e021e3e0élelalilbolallBe-1.CC,
 
 ~
 
-3002103021 01a0l801.0180~1.0C,
+REFERENCE VALUES FOR CL1) RRE ALL ZERC
 
-REFERENCE VALUES FOR CET) ERE ALL 2ERC
+W
 
-w
+45%0.0C +5%-1.00 o«
+REFEREMCE VALUES FOR CNLI)
+4 6%-1,LC +2.C10e%aDidedaiile=)aCCy
 
-4530.00 «5%-1.00
-REFERENCE VALUES FOR CMLL)
-4 6%-1.L0 +2.C10e9.01001.011e~1.CCo
+REFERENCE VvALUES FUR ELT)
 
-REFERENCE VALUES FUR ELI)
+WA
 
-w
+«500s. (1700, .1800,.0016D0+=1.C0,
+REFFREMNCE VALUES FUR F(I1)
+6 3o D5+ 2abC5+5.05¢%.5e=1.D0/
+REFFRENCE VALUES FOR HIUE)
+DATA vC1/
+1 1.b60=206e0=20%e)=5a1a90~2e3,0-34=1.0Cs3.0-3,2%=1.0C
+7 74402430840~ 249.TD=20%230-244,70~2+% 400~ 2+ o 8D0+~1.00+,8D0s
+3 2%=-1.CC +5.8D0042400430.C042%-1.0C &
+FEFERENCF ValuES FUR KIET1}
+4 1u2D-17+2aD0-1701090~1T701e5C0-17¢1040-11e~1400s1+50~19,42%=1.00¢
+53e40-18s5.0-18s4a0=1de4a50-1803450~1804a0-18.4.40-184~1.DC,
+X 1410=2C02%=1e00e%e50~2009.1C~2C44+8L-2Co29=]1,0C,
+REFERENCE VALUES FDR P{(I1)
 
-«50004 C1700441800,.0018D00¢~1.C00
-REFERENCE VALUES FUR F(I)
-6 3.6D502.60505.0545.050=1.D0/
-REFERENCE VALUES FOR HIT)
-NaTA NC1/
-1 1.6D0-2164C=309e0=541a90~203.0=3¢=1.0Cs3.0-3,2%-1.0C +
-? 7.4D=2+324D-2,9.7D=2¢4230-2¢44.10~2+4 400-24 .8D00+~1.00+.8D0,
-3 2¢-1.CC +5.8D0442400430.C0,2#%-3.0C
-REFEFENCF VALUES FUR Kil)
-4 1420-1722.0-1701e50-1701.50-17¢1.40-17¢-1,00+1.50-19,2%-1.00.
-53.4C-18+5.0-1844.0~18¢4.50-1803450-18+4.0-1844.40-18,~1.0Cs
-X 1e10=2Ce2%~1.00e4e5U~200941L0-2Co4.8L-2Co2%~1,0Cs
-REFERENCE VALUES FDR P(I)
+62.1D15+62TC1449.0014¢9,0014,459~1.CCe1a1015 12801449200 1441.8014,
+TO.TCl4e3a5C1445%-iaD00
 
-62.1D15662TCh409.0014092001645%~1.CCo1a1015¢ 1.8D14+9.001441.8014,
-T6.7C1403e5C14¢5%-1.000
+REFERENCE ¥ALUES FUR RID)
+B S.ED1T+4%C.CC oo®~f.00 /
+REFFRENCE VALUES FUR T}
 
-REFERENCE VALUES FUR RID)
-8 5.,ED1744%C.CC oo%~i.00 /
-REFFFENCE VALUES FUR T (1)
+DATA v(C2/
+L 2%13.C0 +50.0001a00e5%=31.00 +2%13.0C 1.0002%2.0C +1oCCo5%-1.00,
 
-DAYA v(2/
-1 2%13.C0 +50.00s1.0005%=1.00 +2%13.0C +1.00,2%2.0C +1.8C,5%-1.00,
+KEFEFENCE VALUES FOR Wik}
+2 4%1.00C +-1.CCs
 
-REFEFENCE VALUES FOR Wil)
-2 4%1.00 +~1.CCs
-
-REFERENCE VALUE FOR M
-31.120-64
+REFERFMCE VALUE FOR M
+31t 20-¢¢
 
 REFEREMCE VALUE FOR U
 
-4“ 1.2/7
-ISN
-TSN
-
-ISN
-TSN
-
-TSN
-i SN
-TSN
-ISN
-ISN
-ISN
-ISN
-ISN
-
-TSN
+& laf2/
+1SN
 1SN
+
+SN
+ISk
+
 TSN
-ISN
-ISN
 iSN
-ISN
+TSN
+TSN
+TSN
+I SN
+I SN
 1SN
-ISN
-ISN
-TSN
-ISN
-ISN
 
-ISN
 TSN
-ISN
-TSN
-ISN
-ISN
-ISN
 15N
-ISN
-1SN
-ISN
-
+I SN
+TSN
 15N
 1SN
-TSN
-ISN
-ISN
-ISN
-TSN
-TSN
 ISN
 1SN
 ISN
+15N
+15N
+TSN
+I SN
+
+1SN
+TSN
 ISN
+TSN
+ISN
+15N
+1SN
+15N
+1SN
+15N
+15N
+
+1SN
+TSN
+TSN
+TSN
+I SN
+1SN
+TSN
+ISN
+TSN
+TSN
+1 SN
+1SN
 SN
 ISN
 
 TSN
 
-ISN
+I SN
+18N
+
+1SN
+TSN
+TSN
+TSN
+TSN
+TSN
+TSN
+TSN
 1SN
 
-ISN
-ISN
-TSN
-[SN
-ISN
-ISN
-ISN
-TSN
-1 SN
+na1s
+o017
 
-als
-0017
-
-0019
+o019
 0020
 
-0022
-0023
-an2s
-0026
+onz2?
+06?23
+anzs
+anze
 0027
 0028
-0029
+nozge
 0030
 
 00131
 0032
-0033
+nniil
 0034
-003%
-00136
-0037
+0035
+onis
+Q037
 0038
 0039
 0040
-00st
-0042
+0%t
+nne2
 0043
 
 0044
 0045
-0046
-004?
-n048
+an&eé
+0oa?
+nag48
 0050
 0051
-0052
+
+0057
 0053
-0054
-008%
+ons4
+0055
 
 0056
-0057
-a0s8
-0059
+nans?
+oosa
+n0ss9
 0060
 0061
-0062
+nnez
 0063
-0064
+064
 0065
 0066
 0067
@@ -5948,457 +6082,360 @@ a0s8
 
 0070
 
-0072
+aoT?
 0073
 
-007%
+nors
 0076
-0Qre
+ngre
 0079
-0080
-6081
+0a80
+0OR1
 00a?
-0083
-A084
+n0A3
+0084
 
-aon
+SO
 
-on
+DD
 
-aon n0n
+SOM OO0
 
-a
+SO0
 
-on
+Son
 
-aOn oon nan
+S oD lalaEaBalsiel
 
-oo
+SO N
 
-3C0
+300
 
-—-
+-
 
-1C1
+1€1
 
 1€2
 
 1c3
 
-1cs5
-1i0
+1cs
+110
+
+115
 
 ~
 
 120
 
-w
+W
+
+»
+
+13
+
+o
 
 >
 
-12
+301
 
-w
-
-130
-
-o>
-
-3c1
-
-wn
+o
 
 75
 
 CHECK NAME
 
-TF{NAMELEQLIBLAK) GO TO 102
-TFIMAPELECLIFRT) GU TO LAS
+TFERAPELEQLIBPLAKY GO TO A02
+TFIMNAPELEC.IFRT) GU TO k15
 
-LECK FCF MATCH IN NM TABLE
+LECK FCF vaTCH IN NM TABLE
 
-CALL MATCHINANME «MMs NV AK. NK)
-IFINKLAELO) GC TO LUI
+CALL MATCHINAME oiMs NVAK. NKJ
+TFiMK.hFLO) GO TO LUL
 
-MC MATCH FCUND — PRINT MESSAGE
+MO MATCF FCUND — PRINT MESSACE
 
-CHECK NAME AGAINST CN TABLE
+CHECK ABME AGAINST O TABLE
 
-CALL FATCHINBAME.NMCNoNCNe KC)
+CALL MATCHINAME JNMUNJNCNe KC)
 
 TFIKCLECLO) GC TO 300
 
-J=IBEGl4)4XC~-])
+JIBEGI&IeXC-1]
 
-VIJI=VREFLJ)
+VIiJI=VREFLJ)
 
-RFETLRN
+RFTLRA
 
-WRITE (K(LT+1) NAME
+WRTTE{KCLT 1) NAME
 
-FNRFATLLIX/® AC MATCH FOR *4A4¢* IN SETREF —- NO CHANGE IN v'}
+FORMATUIX/®* AL MATCH FOR *4A4e* IN SETREF - NO CFANGE [N v'}
 RETLRA
 
-MAME = AMINK)
+NAME = RAM{AK)
 
-N= MK
+Ni=hK
 
-NZ =NK
+N7 =hK
 
-GC YC 1C3
-Nl=1
+GC 1C 1C3
+Nl=]
 
-N2=AVAR
+N2=hVER
 
-DE 11C M=N1,A2
-T1=1LSELN)
-J=TREGIN)
+BE 118 M=N1,A2
+T1=1LSELM)
+J=TREGIMN]
 
-NO 105 I=l.I7
-VIJI=VREF (J)
-RENESY
-CONTINUE
+PO 105 I=141T7
+VIJIsVREF{J}
+J=d+l
+CONTINLE
 RETLRA
 
 FRINT ALL REFERENCE VALUES
 
 LINES=5C
 
-WORC=VvaRC
+WORCzVvWRE
 
-DO 130 A=1eNVAR
+DO 130 M=14NVAR
 
-1T=TUSEIN)/S+4
-TFLLINES+ITLLELSU) GO TO 120
-CALL NEWFG
+1T=TUSEIND /544
+TFCLINES+#ITLLELSU) GO TO 120
+CALL MEWFG
 
-WRETE(KRCLT 42) wLRD
+WRETEIKRCLT+2) wLROD
 
-FORMATL® VALUES IN ARKAY *,A4)
+FORMATL® VALUES IN ARKAY *.A4}
 LINES=C
 
-WRITECKCUT 3) NMINDo JOEMIND « TUSEINDSTBEGIN) o {10 1=145)
-FORVATUIX/¢ NAME %oA4s® DIMENSICN®oT40* USED®s[4,* STARTS AT14/
-1 7Xe4(11e13X)eid/71X)
+WRTTECKCUT3) NMINI JOTMIND o TLSEINDSTREGIN) o e I=145)
+FORNMATILIX/ Y NAME %4A4e? DIMENSICN® o I4,* USED's14," STARTS AT*I4/
+1 7Xe4(11413X)1071X)2
 
-JI1=1BEG{N)
-
-T1=J1
-
-J2=T1+ILSEIN)-]
-
-Ne 125 J=Jled2+5
-T12=FING(1144,42)
-
-WRITE(KCLT 4) (VREFIL)I=i1012)
-FORMAT(IX.1PSEL%.5)
-
-Il=12+1
-
-CONTIALE
-
-LINFS=LENFSeIT
-
-CONTENLE
-
-RETLRM
-
-FNTRY LCCK
-
-WORC=Vh
-
-FRINTS VALUES IN V SELECTEL BY NAME. IF NAME
-IS BLANK. PRINT ALL.
-
-CHECK MAME
-IF{MAPELEC.TRLNK} GU TO 132
-LCCK FCF MATH IN TABLE
-
-CALL MATCHINANE NMeNVARJNK])
-TFOAK.NELD) GC TO 201
-
-CHECK NAME AGAINST CN TABLE
-
-CALL MATCHINANE NMLNJNCNe KC)
-
-IFIKC.EC.0) GC TO 301
-
-JTREGI4)¢KC~1
-
-WRT TEIKCLT «6) NMCN(KChe Jo VIEJ)
-
-FORPATEIX/1XeA4e® =VItel34)e VALUE =441PEL4.S)
-
-RFTLRN
-
-WRT TE(KCLT 5) NAME
-
-FORMAT {L1X/® NC MATCH FOUND FCR *,A4,' IN LDOK = NO PRINT®)
-RETLRA
-
-PAGE 002
-ISN
-ISN
-
-ISN
-ISN
-ISN
-
-1 SN
-1SN
-ISN
-TSN
-1SN
-ISN
-ISN
-ISN
-TSN
-ISN
-TSN
-ISN
-ISN
-TSN
-ISN
-ISN
-TSN
-ISN
-ISN
-1SN
-
-0085
-G0R6
-cea
-008R
-0089
-
-€0s0
-009t
-0827
-80913
-€09s
-ongé
-00917
-€098
-0099
-Qlo¢
-0101
-0102
-oto3
-0104
-010%
-0106
-a107
-0108
-olo9
-olla
-
-ono
-
-2C1
-
-132
-
-135
-
-140
-
-145
-
-150
-
-SOPTIDNS IN FFFFCT®
-
-S(PTIONS IN EFFFCT®
-
-*STATISTIC Se
-*STATESTIC S*
-
-sskekk END (F COMPILATION #swisn
-
-NOD
-
-76
-
-N1=RK
-N2=hK
-
-GO TC 13%
-Ni=1
-N2=AVAR
-
-FRIMNT SELECTED VALUES IN Vv
-
-LINFS=5C
-
-DG 150 h=A1.N2
-
-IT=1USFIN) /5+¢4
-TFOLINESOITLLELS0) GO TO 140
-CALL NEWPG
-
-WRITF(KCLT +2) WORD
-
-LINFS=0
-
-WRITECKCUT 3) NMIN)oIDIMINY STUSE(ND, TBEGINDlTo I=] 2)
-J1=IBEG{N)
+J1=1BEG{N)
 
 11=J1
 
-J2=T1¢TLSEIN)-]
+J2=T14+TLSEIN)-1
 
-NO 145 J=Jled2.9
-12=rIM0(1104,42)
+N0 125 Jd=dled2.%
+12=FING LT 144,020
 
-WRIVE(KCUT 4) (Vil)el=01s12)
+WRITE{K(LY 4 ) (VREFIL)I=i1412)
+FORMAT{IXs1PSEL%.5)
+
 Il=12+1
 
-CONTINLE
+CONTIMLE
 
-LINFS=LINES#IT
+LINFS=LENFSelT
 
-CONTINUE
+CGNTIMLE
 
-RFTURM
+RETLRA
 
-END
+FNTFY LCCK
 
-NAME PAINGUPT=02,LINECAT=SS5,S12F=QC00K
+WORC=Vh
 
-SCURCE. EBCCICo NOL ISTNUCECK,LCAC,NCMAPSNOEDT ToNOIO + NOXREF
+FRIMNTS VALUES IN V SELECTEL BY AAME. IF NAME
+IS PLAKK. PKRINT ALL.
 
-SPURCE STATEMENTS = 109 «PROGRAM SIZE = 3996
+CHECK MNAME
+IFIMAPELEC.TIRLNK} GO TO 132
+LCCK FCF MATCH IN TABLE
 
-CIAGNOSYICS GENERATED
+CALL MATCHINANME JNMeNVARNK]
+TFOAKLMNELD) GC TO 201
 
-106K BYTES OF CORE NCT USED
+CHECK MEMF AGAINST CN TABLE
+
+CALL FATCHINAME+NMUNoNCHe KC)
+
+IF[#C.EC.0) GO TO 301
+
+JaTBEG(4)ekC~1
+
+WRITEIKCLT«6) NMCNIKCIe Jo VEJD
+
+FORMATELX/1XoAdet =VI?oI34%)e VALUE =%+ 1PELG.5)
+
+RFTLRN
+
+WRITEIKCLUT«5) NAME
+
+FORMATY{1X/® NC MATCH FOUND FCR *.A4,% [N LDOK — NO PRIAT®)
+RETLRA
+
+PAGE 002
+76
+
+1SN 0085 2C1 Nl=hK
+1SN OOR& N7=hK
+1SN CCR7 G0 TC 135
+iSN 00AR 132 Ni=1
+1SN 00R9 NZ2=AVAR
+C
+c FREMT SELECTED VALUES IN Vv
+c
+1SN €0S0 135 LINFS25C
+1SN 0091 DG 150 M=Al,h2
+1SN 0097 IT=LUSFIN /544
+TSN 0093 TECLENESOITLIELS0) GO TO 140
+1SN €095 CALL NFWPG
+1SN 009¢ WRITE(KCLT .2} WORD
+1SN 0097 L TNFS=0
+ISN €098 140 WRITECKCUTL3) AMIN) o IDIMENI G TUSEIND, TEEGINDG (T, [ 1, 5)
+1SN 0099 JE=IREGIN]
+1SN c10¢ 11=J1
+TSN 0101 J2= T1¢TLSEIN)-]
+1SN 0107 PO 145 J=Jled2.45
+1SN 0103 12=0ENQLI144,02)
+TSN 0104 WRITE(KCUT 4) (VIEla1=11412)
+1SN 6105 1=12+1
+1SN 0106 145 CONTINLE
+1SN 0107 LINFS=LTMES#IT
+ISN 0108 150 CONTIMUE
+1SN 0109 RETURM
+1SN olla END
+*OPTINAS IN FFFFCTS NAME=  PAINCUPT=02.LINECNT=S5,SIZF=0CO0K,
+€NPTINNS IN EFFECT* SCURCE+ EBCCICo NOLISToNUCECK.LCAC.NCMAPSNOEDT TaNOID o NOXREF
+*STATESTICS® SFLRCF STATERERTS = 109 +PROGRAM SIZE = 3996
+
+*STATESTICS* NN CIAGNOSTICS CEMEFRATED
+
+skekkk END (F COMPELATION #%wdsn 106K BYTES OF CORE NET USED
 
 PAGE 003
 77
 
-LFVFL 21.6 (DEC 72) 0S726C FORTRAN H DATE T4.3C4/09.19.44
+LFVYFL  21.6 (DEC 72) 057280 FORTRAN H DATE  T4.3C4/09.19.44
 
-COMPILER CPTINNS — AAME=  MAINOPT=02,L INECAT=95,ST2E=C000K,
-SCLRCES £8COICeNOL ISToNCCECK ot CAC NOMAP, NOEDIT + NCEDs NOXREF
+COMPILER (PTINKRS — MAME= MAINSOPT=02.L FMECAT=95,512E=0000
+SCLRCE-&HCUIC-NGLIST-ICEFCK.LCID.NDHAP.hDEDlT.kOID NOXREF
 
-ISN 0002 SUBRCLYINE CSCLVEICLeC2ePKeTKerKoHLoKKoKL EPS, IGOCF.CKHCL) csoL 100
-[SN 0003 IMPLICIT REAL®B (A~-Hes 0-2)
-1SN 0004 REAL®8 KK, KL
-1SN 0005 TEST=1CC.LO
-ISN 0006 ASSIGN $5 TC KX cso. Lio
-ISN 0007 HKAFL=H KHL csoL 115
-ISN 0008 PCTH=PK/(TKEHK) csoL 122
-1SN 0009 CKMAX=C1+4C2/FKCHL
-C csoL 130
-C CHECK F(R SCLUTION ¢soL 131
-C csoL 132
-[SN 00t0 CK2=CKFAX CSOL 133
-TSN 0011 G22CK2-C1+FOTH®DOURT (KK®CK2)
-158 0012 IF{G2.GT.0.} GO TQ 8&5 CsoL 135
-ISN 0014 ASSIGN 120 TC K CsaL 136
-1SN Cols PRINT 4 cso 137
-ISN 0016 4 FORMAT(YING SCLUTIUN®) CsCL 138
-ISN 0017 1G (F=1 CsOL 139
-TSN 0018 GC IC 90 CSOL 140
-ISN 0019 85 [F({IGICF.CF.0) GU TO 95 CsSoL 141
-C COL 142
+ISN 0002 SUBRCLYINE CSCLVEICLeC2ZePKe THKolrKoHLoKKoKL+EPS, ICOCF.CKWCL) CsaL 1co
+ISN 0003 IMPLICIT REAL®*3 (A-HeO-1)
+1SN G0C4 REAL®8 k¥, KL
+1SN 00CS TEST=1CC.LO
+1SN 0006 ASSIGK S5 TC K csoL Lie
+ISN Q007 HKOFL=H k/HL csoL 115
+ISN Q008 PCTH=PK/{TKEHK) csoL 122
+1SN Q009 CKMAX=C14C2Z/FKCHL
+c csoL 130
+c CHECK F{R SCLUTION csoL 131
+C CSOL 132
+ISN 0010 CKZ2=CKFAX csoL L33
+TSN OGL1 G2=CK2-C1+FUOTH®OSURTIKK®LK2Z)
+15N 0O01Y2 IFLG2.GT.0.} GO TG &5 CsSoL 135
+ISN 0014 ASSIGM 120 TC K csaL 136
+1SN 0015 PRINT & csSOL 137
+1SN 0016 4 FCRMATICING SCLUTIUN®) CSCL 138
+15N Q0L7 167 (F=1 CsoL 139
+TSN 0018 GC IC 90 CSCL 140
+TSN QOI9 85 IF{IGITF.CF.0) LU TO 95 CSOL 1461
+C csoL 142
 C FEACING FCR DEBUG PRINTOUT CSCL 145
-C CSCL 150
-ISN 0021 SO PRINT 1s Cls £2 PKe TKe hKe Flo KKe KL EPS CSCL 155
-ISN 0022 1 FORMAT(VICSOLVE AKGUMENTS®/1FCo6Xs*C1%e12Xs C20 4 12Xo PK 912Xe * TK? ,CSCL 160
-X 12Xs
-1 THEO 12Xs "HL oe 12Ke ' KK? o 1 2X KL 12 X*EPS® /IXo1PIEL4.5/( TT 6X, CsSOL 161
-2 CRY elIXo®CRT LI Xe?CX? 4 L2X0"CK2%1CXo "TEST / 1X) cscL 162
-ISN 0023 GC YC KX. (S5.130) CSCL 163
-C csaL 165
-Cc START ITERATIONS FUR CK csoL 170
+[ CSCL 150
+1SN 0021 S0 PRIMF 15 Cls C2¢ PKRe THse hKe FlL¢ KKse KLso EPS CSCL 155
+1SN 0022 L FORMAT{VICSOLVE AKGUMENTS®/1FCe6XeCL s 12Xs P2 4 12Xe*PK* 412X *TK*,CSCL 160
+X 12X
+1 "HKE G 12X THLY e 12Ke " KK ¢ 12X KLY o 12ZX*EPS 71X 1P9EL 4.5/ ( 1T 46X, CSOL 161
+2 LKLY alIXe?CRT o i Xe?CXY o L2X4"CK2 ICX"TEST*/IX) CsCL 162
+1SN 0023 GC TC Ko (S5.1300 CsSCL 163
+C csoL 165
+C START iTERMIUONS FUK CK csoL 170
 C csoL 175
-ISN 0024 65 CK1=0. CsCL 176
-ISN 0025 CKCLD=Cx1
-TSN 0026 CLIK {HK{HL*CL+C2)
-ISN 0027 Gl=—(CL14PCTHRDSQRT (CLL)
-ISN 0028 no 115 17=1.50 <soL 180
+ISN 0024 65 CKI=0. CS5CL 176
+ISN Q00?25 CKCLO=CK]
+TSN 0026 CLI=KL* [HK{HL*CL+C2)
+ISN 0027 Gl=—{C1+PCTH*OSQRTICLL))
+ISN 0028 nao11s 1T=1.50 CsOL 1BQ
 C
-« IAVERSF LINEAR INTERPOLATICN ANC CHECK FCR CCNVERGEAGE
+< INVERSE LINEAR INTERPOLATICN ANL CHELK FCR CCNVERGEMGE
 C
-ISN CC28 CKT={CKI#G2-CK2*G1)/ (62-61) csCcL 182
-1SN 0030 IF{CARS(CKCLC/CKT~1.00).LT.EPS) GO TO 120 Csot 183
+ISN CC29 CKT={CKLI*G2-CKR2*GLI/ LG2-G ] csoL 182
+1SN 0030 IF{CARSICKCLLC/CKT~1.D0}LTLFPS) GO TO 120 CSOt 183
 c
-Cc IF ACT CONVERGED. TRY INVERSE QUADRATIC INTERPCLATICN
-C
-ESN C032 CLT=KLY (KKCHESICL-CKT)#C2)
-ISN 0033 FF=C1oPCTHIICSORTICLT)~DSURT (KK*CKTH})
-TSN 0034 G=C KT-FF CsoL 192
-ISN 0035 DG1=6-G1 CsoL 193
-ISN 0036 062 26-62 CSOL 194
-ISN C037 DG3=DG2-DG} csoL 195
-ISN 0038 CX=~G¥G2ACKL/{DGI®LGL) ¢6L¥G29CKT/{CCI*LG2I+G1*G*CK2/1DG3*DGR} csoL 196
-ISN 0039 TFL IGCCFL.GELC) GU TO 200 CSCL 240
-C CSOL 245
-Cc CEBULG FRINTOUT £soL 250
-« csgL 255
-ISN 0041 PRINT ZoIToCKIeCKTeCXeCK2, TEST
-ISN 0042 2 FCRMAT(IXIIIPSFlal5}
-TSN 0043 2C0 IF(CX.LELCKL) GO TO 102 csoL 197
-TSN 0045 {FICX.GELCKT) GO TO 102 csaL 198
-1SN 0047 TEST2DABS{CKCLU/CX=1eD0)
-TSN 0048 IFITESTL.CTLEFS) GO TO 201
-TSN 0050 CKT=CX
-ISN 0051 GC TC 12¢
-1SN 0052 201 CLX=KLO(HKCHL®IC1-CX)+C2)
-TSN 0053 FX=C14PCTH* {DSURT ICLXI~=DSORT (KK*CX))
-ISN 0054 GX=(X-FX csGL 201
-ISN 0055 CKELD=CX
-1SN 0056 TF{CXe1TuCul GO TU Luk csoL 202
-ISN 0058 Cx2=CX CsoL 203
-TSN 0059 G2=GX CsoL 204
-ISN 0068 G0 10 11S
-ISN 0061 1€1 CXi=Cx CSCtL 206
-ISN 0062 G1=6X cso 207
-TSN 0063 GO TO 105 CsoL 208
-1SN 0064 1C2 TEST=CABS(C(KCLO/CKI=1.D0) CsCL 225
-ISN 0065 CKOLD = CKTY CSCL 226
-ISN 0066 IFITESTLLELEFS) GU TO 120 csoL 227
-ISN 00648 IF (6 -EC. 0.CO) GG TO L120 csoL 230
-ISN 0070 IFIG.GYa0.) GC TO 105 CSoL 231
-ISN 0072 Gl=G csaL 232
-ISN 0073 CXL =CKT csaL 233
-ISN 0074 GC TC 115
-1SN 0075 1C5 G2=G CSOL 235
-ISN 0076 CK2=CKY cso 236
+C IF NCT CCAVERGEDs TRY INVERSE OGUADRATIC INTERPTLATICN
+c
+ESN €032 CLT=KL? (HECHLE®I{CL-CKT)+C2)
+ISN 0033 FF=C14PCTHI[CSORT(CLT)~DSURTIKK*CKTH)
+TSN 00%4 G=C kT-FF csoL 192
+TSN 0035 DGL=6G~G1 cSoL 193
+1SN 0036 062 =G6-G2 CS04L 194
+ISN 0037 D€3=DG2-DG 1 csoL 195
+ISN 0038 CA=~GHG2RCKL/{0GI®LG L) ¢GLPG29CKT/ICCI*CG2)+4G1*G*CK2/{DGA*DG2} CsSOL 196
+I SN 0039 TFUIGCCF.GELC) GU TO 200 CSCL 240
+C CSCL 245
+c CEBLG FRINTOUT £soL 250
+T csaL 255
+I SN 0041 PRINT ZoIT+CKE«CRTSCXeCRZ2TEST
+TSN 0042 2 FCRMATUIXT34EP5FLl4a5)
+1SN 0043 200 IF{CX.LELCKLY GO TO 102 csoL 197
+1SN 0045 IFICXCGELCKT) GO TO 102 €saL 198
+1SN 0047 TEST#DABS{CKRCLUO/CX=La00)
+TSN 0048 TF{ TESTLETLEFS) GO TG 20l
+TSN DOSO CKT=CX
+ISN 0051 GC TC 120
+1SN G052 201 CLX=KLO{HKCHL*AC1-CX)+C2)
+TSN 0053 FX=C1+PCTH® (DSURFICLXI-DSORTIKK®CX))
+TSN 0054 GX=CX-FX CSCGL 201
+1SN 0055 CKNLD=CX
+TSN 00%6 IF{GXatTaCul GO TU 11Ul csoL 202
+ISN 0058 CK?2=CX csoL 203
+TSN 0099 G2=GX CE0L 204
+TSN 00s0 6N T0 1S
+ISN 0061 1€1 CKE=CX CSCL 206
+1SN 0062 Gl=GX csoL 207
+1SN 0063 GO0 10 105 csoL 208
+15N 0064 1C2 TEST=DABS(CKCLD/CKT-1.D0) CsCcL 225
+1SN D065 CKOLD = CKY CSCL 228
+ISN 0066 IF(TESTLLELEFS) GU TN 120 csoL 227
+ISN 00648 IF (G «<EC. 0.CO) GG TO L20 csoL 230
+ISN Q070 IFIG.GT0.) GC TD 105 csoL 231
+ISN 0072 Gl=6 CsaL 232
+TSN ODT3 CK1=CKXT csoL 233
+ISN 0074 Gr TC 115
+1SN 0075 105 G2=G CSCL 235
+ISN 0076 CK2=CKT csoL 236
 ISN 0017 115 CONTIMLE
-c csot 275
-Cc FRINT NOCN-CONVERGENLE ALARM €sCt 280
-« csoL 285
-TSN 0078 PRINT 3 €saL 290
-TSN 0079 3 FCRMAYU'O C(SCLVE UNABLE TC FIN ROCT*) CsOoL 295
+c csotL 27%
+C FRINT NCN~CONVERGENLE ALARY¥ €S0t 280
+C csOL 285
+TSh 0078 PRIANY 3 csaL 290
+TSN 0079 3 FCRMAT IO (SCLVE UNABLE TC FINC ROCT*) csoL 295
 78
 
-ISN 00AC TGOLF=MAXO (1+ IGUOE*L)
+ISN 00AQ TGOUF=MAXO (1,4 IGUOF*L)
 
-1SN 0081 RETURN
+TSN 0081 RETURNM
 
-ISN 0082 120 CKk=CKT
+TN 0082 120 Crk=CKY
 
-{SN 0083 CL=rRCHL®(1-CK) C2
+ISk 00A3 CL=rMRCRLR(UL-CK)+C2
 
-ISN 0084 130 RFTLRA
+TSN 0084 130 RFTLRA
 
-TSN 0085S END
-*NPTIOAS IN FFFECT® MAME=  MAIN.OPT=02 LINFCNT=G5,S1ZE=CCCOK,
-*0PYIONS IN FFFECT® SCURCE+EBCCICSNOLISToNGOECKoLCAL JNCMAP,NOED 1 ToNO ED + NOXREF
-STATISTICS SCURCE STATEMENTS = B4 «PROGRAM SIZE = 2024
+1SN 008RS END
+*NPTIONS IN FFFECTe MAME=  MAINGPT=02 LINFONT=G5,STZE=CCCOK,
+SOPYIONS IN FFFECT# SCURCE+EBCCIC,NOLESTe NGOECKsLCAL,NCHAP,NOEDIT+NO KD+ NOXREF
+*STATISTIC S SCURCE STATEMENTS = d4 +PROGRAM SI2E = 2024
 
-#STATISTICS® NO NIAGNCSTICS GENERATED
+SSTAYISTICS* ND NIAGNCSTICS GENERATED
 
-enoes END (F COMPILATION #osves
+sektds END (F COMPILATICN #esdsx
 
 CSCL
-cso
-csoL
+CsotL
 
-cscL
-csoL
+CSoL
+
+csCL
+csaL
 
 300
 305
@@ -6407,107 +6444,139 @@ csoL
 320
 325
 
-121K BYTES OF CORE NCT USED
+121K 8YTES OF CORE NCT USED
 
 PAGE 002
 79
 
-LEVEL 21.6 (DFC 72) €S/360 FCRTRAN H DATE
-COMPILFR CPTIONS — NAWE= MAINeOPT=024LINECNT=65,S12E=0000
-SCURTE.EBLDIC NOL SST I NCOECK.L LAC. NORAD C NOED IT. AOLC.NOXREF
-1SN 0002 SURRCLTINE NEWPG NEWP 100
+LEVFL  21.6 (NFC 72 CS/360 FCRTIRAN M DATE
+COMPILFR CPTIONS — NAKE= MAINGPT=02, | INECNT=65,5I2E=0000
+SCLRCE.FBLDIC.NOL IST, RCCECK.LCAC.NOHAP.ADEDIT NOICeNOXREF
+1SN 0002 SURRCLTTINE NERPG NEWP 100
 c NEWP 105
-€ IF THE SUKMARY OUTPUT UNIT (KOUT) IS THE LINE PRINTER {IPR}, NEWP 110
-c EJECT TC A NEw PAGE. IF NCTe PRINT 5 BLANK L INES. NEWP 115
-¢ NEWP 120
-TSN 0003 CCMMCA /BLK2/ INe [UUTe IPRs KCUT, KPR NEWP 125
-1SN 0004 TF(KCUTLEC.TFR) Gu TU U0 NEWP 130
-ISN 0006 WRITE (KCUT +1) NEWP 135
-1SN 0007 I FORMATIIX/IX/IX/1X/ 1X) NEWP 140
-ISN 0008 RETLRA NEWP 145
-ISN 0009 100 WRITE(KLUT 2) NEWP 150
-ISN 0010 2 FORMATUIHL) NEWP 155
-ISN a01t RETURN NEWP 160
-ISN 0012 END NEWP 165
-*APTIONS IN FFFFCTS MAFEa  PAIN,OPT=024LINECNT®S5,SI2E=0CO0K,
+« IF THE SUNFARY NUTPUT UNIT (KOUT) IS THE LINE PRINTER {IPR), NEWP 110
+C EJECT TC & NEw PAGE. IF NCT, PRINT 5 BLANK L INES. NEWP 115
+I NEWP 120
+1SN 0003 CCMMCN /BLK2/ INe [UUTe IPRs KCUT, KPR NEWP 125
+15N 0004 TF{KCUT.EC.IFR) Gu TU 1L NEWP 130
+1Sh 0006 WRI TECKCUT o1 ) NEwP 135
+1SN 0007 L FORMATLIX/IX/LIX/LX/ 1K) NEWP 140
+TSN 0008 RETLRA NEWP 145
+1SN 0009 100 WRITE(KLUT+2) NEWP 150
+1SN 0010 7 FORFATLEHL) NEWP 155
+1SN aolt RFETLRN NEWP 160
+1SN 0012 END NEWP 165
+*OPTIONS IN FFFFCT®# MAWEa PAIN,OPT=D24LINECNT*G5,SIZE=QCOOK,
+*OPTIONS IN EFFFCT® SCURCEEBCCIC NULISTeNGOECK+LCACoNCMAPNOEDIToNDED o NOXREF
+ESTATISTICS* SCLRCE STATEMENTS = 11 +PRCGRAF SIZE = 260
+SSTAVISTICS® NO DIAGNOSTICS GENERATED
+axesds FNOD (F COMPILATION 9*dnes 133K BYTES OF CORE NCTY USED
+LEVFL  21.6 IDFC 12} C5/260 FCRTRAN H DATE
+COMPIIFR CPTIONS — MANEZ  MAINDPTZ02,L INECNT=$5,512E=0000K .
+SCURCE £ BLDICeNOL ST ACEECKLCACNOMAP, NOEDIT « NOI D+ NOXREF
+1SN 0002 SLARCLTINF CCUALECLsALFA, CK)
+¢ CCUA 105
+r. SCLVFS THF OQUAURATIC EGUATICA Cgua 110
+C CQuUA 115
+C Crsaz - (7901 + ALFAJECK + Clis*z = C
+o CCoUA 125
+< FCR THE ROOT CK WHICH IS LESS VHAN C1/KK. CCUA 130
+o CCuUA 135
+1SN 0003 IMPLICITY REAL#8 {A=~H.0U-Z)
+1SN 0004 RFAL*8 KK CQUA 140
+1SN 2009 T=C17%XK CCOUA 145
+1SN 0006 CRK=CI*2/(CL4.590ALFAR [ L. ¢USORT(4.*C1/BLFA+LL) )}
+SN 0007 RFTLRA CCUA 155
+1SN 0008 END CCUA 160
+*NPTIONS IN FFFFCTH MNAME=  MATNGLPT=024 LINECNT=S5,S12E=CCCAK,
 
-OPTIONS IN FFFFCT®
+*OPTIONS IN FFFFECT*
+®STATISTIC S*
 
-SCURCEEBCCICoNULISTeNGOECKeLCAC+NCMAPNOEDIToNOID 4 NOXREF
+*STATISTIC S
 
-®STATISTICS* SCLRCE STATEMENTS = 11 «PRCGRAM SIZE = 260
-SSTAVISTICS® NO DIAGNOSTICS CENERATED
-axesss FND (F COMPILATION #sdses 133K BYTES OF CORE NCT USED
-LEVFL 21.6 (DFC 72) €S/260 FCRTRAN H DATE
-COMPILER CPTIOAS — MANEZ  MAINCDPTI=U2,L ENECNT=GS5,512E=0000K
-SCURCE+£BCDICONOLIST,ACCECKL TAC NOMAP , NOEDIT s ACID + NOXREF
-ISN 0002 SLRRCULTINF CCUADICLe ALFA, CK)
-C Ccua 105
-[4 SCLVFS THF QUAORATIC EGUATICA CQuUA 110
-Cc cQua 11s
-GC Creag - (2901 + ALFAJECK + Cissz = C
-C cQua 125
-C FCR THE ROOT CK WHICH IS LESS THAN Cl/KK, CCUA 130
-€ CCUA 135
-TSN 0003 IMPLICIT REAL®E (A-HeU-2)
-ISN D004 RFAL*8 KK CQUA 140
-ISN 000% T=(1/7KK CQuUA 145
-TSN 0006 CR=CI%%2/7 (C14. 9%AL FAR L.+USCRT(4.%C1/7ALFA+LL) DD
-ISN 0007 RFTLRA CCUA 155
-TSN 0008 END CCus 160
-«OPTIONS IN FFFFCTH NAME=  PAINSCPF=02¢ LINECNT=SS,S[ZE=CCCOK,
+AR AN
 
-*OPTIONS IN FFFECT® SCURCECEBCCICONOL ISTANCCECKSL
+LFVFI
 
-CACoNOMAP NOEDIT,NO ID. NOXREF
+TSN
 
-«STATISTICS SCURCE STATEMENTS = 7 PROGRAM SIZE = 444
-ASTAVISTICS* NO DIAGNOSTICS GENERATED
-Sakws® END (F COMPILATION sosses 133K BYTES OF CORE NCT USED
-LEVEL 21.6 (BFC 12) CS/2€C FORTRAN H DATE
-COMPIIFR CPTIONS — NAME= MAINJUPT=02.L INECAT=S5.S1ZE=0000
-SOURCE. Ea IC not 18 F NCEE CR LEAL NOMAD ONOED IT + NDI CY NOXREF
-1SN 000? SUBRCUTINE MATCH (NAME. NTAB. ANs AMAT)
-c
-C SEARCHES THF ARRAY NTAB WITH NN [TEMS FOR THE FIRST
-c CCCLRREMCE UF NAME. I+ NAME IS NCT FOUND IN NTABe NMAT
-C IS RETUENEC WITH THE VALUE ZERO.
-c
-ISN 0co3 DIMFASICN ATAP (10)
-ISN 0006 NMAT = ©
-ISN 0005 DC 100 As1.NA
-ISN 0006 IF UICCMPAINAME, NTABIN)e 4) JAE. C) GO TN 100
-ISN 0008 NMAT = A
-ISN C09 RFTLRA
-ISN 0OolQ 160 CONVINGE
-15N 0011 RETLRN
-1SN 0012 EAD
-*NPTICNS IN FFFFCT® MAMEx  WATNGOPT=02,LINECNT=S5,STZE=GCOOK
+15N
+I SN
+TSN
+[SN
+I SN
+I 5N
+T8N
+15N
+1SN
 
-BOPTIONS IN FFFFCT®
+eNPTICNS IN FFFFCT»
+BOPTTIONS [N FFFFCT®
+KSTATISTIC S
 
-STATISTICS» SCURCF STATFMENTS = 11
+cSTATISTICS
 
-STATISTICS® ND DIAGNOSTICS GENERATED
+RS RS
 
-#ssu® FND CF COMPILATION ##ss%¢
-NU
+STATISTICS®
 
-STATISTICS®* CIAGNCSTICS THIS STEP
+SCULRCEFLEBCCICONDL ISToNCCECKoLCACSNOMAPZNOEDT Y. NOID + NOXREF
 
-«PROGRAM SIZE =
+SCLRCE STATEREMNTS = T «PROCRAM SIIE = 444
 
-SCURCE«FRCLICNOLISToNULDECKSs LOCAL NCNAPSNOEDITWNOID. NCXREF
+N0 DUAGNOSYICS CERNERATED
 
-398
+FND (F COMPILATION sossus 133K BYTES GF CORE NOT USED
 
-133K BYTES OF CORE NOT USED
+21.6 (ODFC 72} C5/32€C FCRTRAN H DATF
 
-7443C4/09.20.10
+NAVME= MaINUPT=02.L INECAT=65,.S1ZE=0000
 
-74.304/09.20.25
+COMPTIFR CPTIONS —
+SCURCESEBCUICNUL IST . hCDiCK.LCAC.NGHAF‘hUEDiToNDID-NDKREF
 
-74.304/09.20.38
+0002 SUBRCUTINE MATCH (NAME. NTAB. Mo NMAT)
+C
+C SEARCHFFS THF ARRAY NTAB WITH NN ITEMS FOR THE FIRST
+[# CCCLRRFMCE OF NAME. I+ NAME IS NCT FOUNG TN NTAB. NMAT
+C IS RETUENEC wITH THE VALUE ZERO.
+C
+
+ocel DIMFASICN AT2P (10)
+
+acoe NMAT = O
+
+a00s NG 100 Axl.NA
+
+0006 IF [ICCHMPAINAME., NTABIN). &) .AE. C) GO TO 100
+
+o008 NMAT = M
+
+cend RFTLRM
+
+Qo1l4q 1G0 CONTINGE
+
+noll RFTLRM
+
+oni 2 FAD
+
+MAFEx  PATNLOPT=02+LINFCNT=S5.STZE=GCO0K .
+
+SCURCE«FRCCICNOLISToNUDECKLCACJNCMAPLNOEDIT¢NOID« NCXREF
+
+SCURCF STATFMENTS = 11 +PROGRAM STZE = 398
+
+ND  OTAGNCSTEICS GEMERATED
+FND CF COMPILATION s#ess¢ 133K €YTES OF CORF NOT USED
+
+NG CTAGNCSTICS THI1S STEP
+
+74.3C4/09.20.10
+
+74.304/09.20, 2%
+
+T4.304/09,20,38
 81
 
 ORNL-TM-4804
@@ -6517,15 +6586,15 @@ INTERNAL DISTRIBUTION
 
 1. L. L. Anthony 59. W. R. Huntley
 
-2. R. F. Apple 60. CC. R. Hyman
+2. R. F. Apple 60. C. R. Hyman
 
-3. CC. F. Baes, Jr. 61. P. R. Kasten
+3. C. F. Baes, Jr. 61. P. R. Kasten
 
-4, C. E. Bamberger 62. C. W. Kee
+4., C. E. Bamberger 62. C. W. Kee
 
 5. J. T. Bell 63. J. R. Keiser
 
-6. M. Bender 64. 0. L. Keller
+6. M. Bender 64. 0., L. Keller
 
 7. E. S. Bettis 65. A. D. Kelmers
 
@@ -6534,23 +6603,23 @@ INTERNAL DISTRIBUTION
 9. J. Braunstein 67. W. R. Laing
 
 10. M. A. Bredig 68. R. B. Lindauer
-11. R. B. Briggs 69. R. E, MacPherson
-12. C. R. Brinkman 70. G. Mamantov
+11. R. B. Briggs 69. R. E., MacPherson
+12, C. R. Brinkman 70. G. Mamantov
 
 13. H. R. Bronstein 71. D. L. Manning
-14. A. A. Brooks 72. W. R. Martin
+14, A. A. Brooks 72. W. R, Martin
 15. C. H. Brown 73. L. Maya
 16. J. Brynestad 74. G. T. Mays
 17. S. Cantor 75. H. E. McCoy
 
 18-27. J. A. Carpenter 76. H. F. McDuffie
 28. H. P. Carter 77. C. J. McHargue
-29. J. A. Carter 78. H. A. McLain
+29, J. A. Carter 78. H. A. McLain
 30. W. L. Carter 79. B. McNabb
 31. B. R. Clark 80. A. S. Meyer
-32. R. E. Clausing 81-85. CC. W. Nestor, Jr.
+32. R. E. Clausing 81-85. C. W. Nestor, Jr.
 33. E. L. Compere 86. M. R. Patterson
-34. J. A. Conlin 87. S. K. Penny
+34, J. A. Conlin 87. S. K. Penny
 35. W. H. Cook 88. F. A. Posey
 36. J. H. Cooper 89. H. Postma
 37. R. M. Counce 90. C. E. Prince
@@ -6559,18 +6628,18 @@ INTERNAL DISTRIBUTION
 40. J. M. Dale 93. M. W. Rosenthal
 41, J. H. DeVan 94. H. C. Savage
 42. J. R. DiStefano 95. M. R. Sheldon
-43. W. P. Eatherly 96. M. J. Skinner
+43, W. P. Eatherly 96. M. J. Skinner
 44-46. J. R. Engel 97. A. N. Smith
 
 47. G. G. Fee 98. F. J. Smith
-48. D. E. Ferguson 99. TI. Spiewak
-49. L. M. Ferris 100. R. A. Strehlow
+48. D. E. Ferguson 99. 1I. Spiewak
+49, L. M. Ferris 100. R. A. Strehlow
 50. R. H. Fowler 101. D. J. Strickler
-51. L. O. Gilpatrick 102. J. G. Sullivan
-52. W. R. Grimes 103, 0. K. Tallent
-53. R. H. Guymon 104. R. E. Thoma
-54. W. 0. Harms 105. D. B., Trauger
-55. P, N. Haubenreich 106. T. N. Washburn
+51. L. O. Gilpatrick 102, J. G. Sullivan
+52. W. R. Grimes 103. 0. K. Tallent
+53, R. H. Guymon 104. R. E. Thoma
+54, W. 0. Harms 105. D. B. Trauger
+55. P. N. Haubenreich 106. T. N. Washburn
 56. R. W. Henderson 107. J. R. Weir
 57. J. R. Hightower, Jr. 108. G. W. Westley
 58. B. F. Hitch 109. J. C. White
@@ -6590,36 +6659,41 @@ INTERNAL DISTRIBUTION
 
 132-235.
 
+A..
+
+G.
+R.
+M
+J
+
 82
 
-G. E. Whitesides
+. Whitesides
+. Wichner
+Wilkinson
+Young
+Zucker
 
-R. P. Wichner
-
-M. K. Wilkinson
-
-J. P. Young
-
-A. Zucker
+R Y
 
 Central Research Library
 Document Reference Section
+
+EXTERNAL DISTRIBUTION
 
 119.
 120-122.
 123.
 124-125.
 
-126,
+126.
 127.
-
-EXTERNAL DISTRIBUTION
 
 K-25 Library
 
 Laboratory Records
 
-Laboratory Records - RC
+Laboratory Records — RC
 
 MSRP Director's Office,
 4500NM, Rm. 147
@@ -6634,11 +6708,8 @@ Operations Office, Post Office Box E, Oak Ridge, Tenn. 37830
 Director, Reactor Division, ERDA, Oak Ridge Operations Office,
 Post Office Box E, Oak Ridge, Tenn.
 Director, Division of Reactor Research and Development, ERDA
-
-Washington, DC 20545
+Washington, DC 20545 '
+For distribution as shown in TID-4500 under UC-76, Molten-Salt
+Reactor Technology
 
 37830
-
-For distribution as shown in TID-4500 under UC-76, Molten-Salt
-
-Reactor Technology

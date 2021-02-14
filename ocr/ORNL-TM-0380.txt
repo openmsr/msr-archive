@@ -1,20 +1,24 @@
  
 
--—
+-
 
   
 
-OAK RIDGE NATIONAL LABORATORY ;
+OAK RIDGE NATIONAL LABORATORY
 operated by
+
 UNION CARBIDE CORPORATION
 for the
-U.S. ATOMIC ENERGY COMMISSION
 
-ORNL- TM ~- 380
+U.5. ATOMIC ENERGY COMMISSION
 
-COPY NO. - / 3 &
+ 
 
-DATE - October 13, 1962
+ORNL- TM~- 380
+
+' COPYNO. - /9 &£
+
+DATE —  October 13, 1962
 
 PREDICTION OF EFFECTIVE YIELDS OF DELAYED NEUTRONS IN MSRE
 
@@ -24,7 +28,7 @@ ABSTRACT
 
 Equations were developed and calculations were made to determine the ef-
 fective contributions of delayed neutrons in the MSRE during steady power oper-
-ation. Nonledkage probabilities were used as the measure of relative importance
+ation. Nonleakage probabilities were used as the measure of relative importance
 of prompt and delayed neutrons, and the spatial and energy distributions of the
 prompt and delayed neutron sources were included in the calculation of these
 probabilities.
@@ -38,14 +42,12 @@ be used in future digital calculations of MSRE kinetic behavior.
 
 NOTICE
 
-This document contains information of a preliminary nature and was prepared
+This document contains information of a preliminary nature ond was prepared
 primarily for internal use at the Oak Ridge National Laboratory. It is subject
-to revision or correction and therefore does not represent a final report. The
+to revision or correction and therefore does not represent a final report, The
 information is not to be abstracted, reprinted or otherwise given public dis-
 semination without the approval of the ORNL patent branch, Legal and Infor-
 mation Control Department,
-
- 
  
 
  
@@ -66,12 +68,12 @@ privately owned rights; or
 B. Assumes any liabilities with respect to the use of, or for damages resulting from the use of
 any information, apparatus, method, or process disclosed in this report.
 
-As used in the above, ‘‘person acting on behalf of the Commission’ includes any employee or
+As used in the above, *‘person acting on behalf of the Commission’ includes any employee or
 
-contractor of the Commission, or employse of such contractor, to the extent that such employee
+contractor of the Commission, or amployse of such contractor, to the extent that such employee
 
-or contractor of the Commission, or employee of such contractor prepares, disseminates, or
-provides access to, any information pursuant to his employment or contract with the Commission,
+or contractor of the Commission, or employee of such contractor prepcres, disseminates, or
+provides access to, ony information pursuant to his smployment or contract with the Commission,
 
 or his employment with such contractor,
 
@@ -83,7 +85,7 @@ or his employment with such contractor,
 INTRODUCTION
 APPROACH TO THE PROBLEM
 DERIVATION OF EQUATIONS
-Steady-State Concentrations of Precursors
+Steady~-State Concentrations of Precursors
 Normalized Source Distributions
 Expansion of Sources in Series Form
 Fraction Emitted in the Core
@@ -99,109 +101,110 @@ Neutron Diffusion Length
 
 Nomenclature
 
-gy
-vo ww KR
+o
+\osl-slwwm
 
 10
-1
+11
 12
 13
 18
 
-m
+P
 
-23
+e3
 2k
 2k
 INTRODUCTION
 
 The kinetics of the fission chain reaction in a circulating-fuel
-reactor are influenced by the transport of the delayed neutron precursors.
-This fact makes a rigorous treatment quite complicated.’ The approach
+resctor are influenced by the transport of the delayed neutron precursors.
+This fact makes a rigorous treatﬁent quite complicated.l’2 The approach
 generally followed is to drop the transport term from the precursor equa-
-tion (making the kinetics equations identical with those for stationary
+tion (making the kinetics equations identical with those for stationﬁry
 reactors) and make an approximate allowance for the precursor transport
-oy replacing the delayed neutron fractions, B,, with "effective" values,
-B; This approximation is used in ZORCH, the computer program recently
-developed for analysis of the kinetics of the MSRE.S
+bz replacing the delayed neutron fractions, ﬁi, with "effective" values,
+Bi. This approximation is used in Z0RCH, the computer program recently
+developed for analysis of the kinetics of the MSRE.,3
 
-The purpose of the work reported here is to obtain values for B,
+The purpose of the work reported here is to obtain values for 3§
 to be used in the MSRE analyses.
 
-APPROACH TO THE PROELEM
+APPROACH TO THE PROBLEM
 
 The importance of delayed neutrons is enhanced in fixed-fuel reactors
-because the energy spectra of the delayed neutrons lie at much lower en-
-ergies than that of the prompt neutrons. 'The differences in energy spectra
-make the delayed neutrons more valuable because they are less likely to
+because the energy spectra of the delayed neutrons lie at much lower en-~
+ergies than that of the prompt neutrons. 'he differences in energy spectra
+make the delsyed neutrons more valuable because they are less likely to
 escape from the reactor in the course of slowing down to thermal energies.
 This effect is, of course, also present in circulating-fuel reactors. Of
-greater importance, however, in these reactors is the spatial distribution
+greater importance, however, in these reactors is the gpatial distribution
 of the delayed neutron sources. Many of the delayed neutrons are emitted
-outside the core and contribute nothing to the chain reaction. Further-
+outside the core and contribute nothing tc the chain reaction. Further-
 more, those delayed neutrons which are emitted in the core are, on the
-average, produced nearer to the edges of the core than are the prompt
-neutrons, which tends to further reduce the contribution of a particular
-group of delayed neutrons.
+aversge, produced nearer to the edges of the core than are the prompt
+neutrons, which tends to further reduce the contribution of a particulaxr
+group of delajéd neutrons.
 
  
 
-1. A. Fleck, Jr., Kinetics of Circulating Reactors at Low Power,
-Nucleonics 12, No. 10, 52-55 (1954).
+lJ. A. Fleck, Jr., Kinetics of Circulating Reactors at Low Power,
+Nucleonics 12, No. 10, 52-55 (1954 ).
 
-2g. Wolfe, Reactivity Effects Produced by Fluid Motion in a Reactor
-Core, Nuclear Sci. and Eng. 13, 80-90 (1962).
+2B. Wolfe, Reactivity Effects Produced by Fluid Motion in a Reactor
+Core, Nuclear Sci. and Eng. 13, 80~90 (1962).
 
-3c. W. Nestor, Jr., ZORCH, an IBM-TO90 Program for Analysis of Simu-
+3¢. W. Nestor, Jr., ZORCH, an IEM-TO90 Progrem for Analysis of Simu-
 lated MSRE Power Transients With a Simplified Space-Dependent Kinetics
 Model, ORNL TM -345 (Sept. 18, 1962).
 The contribution of delayed neutrons during a power transient in a
-circulating-fuel reactor is affected by the continual change in the shape
+circulating-fuel reactor 1s affected by the continual change in the shape
 of the spatial source distribution. Thus the use of an "effective" frac-
 tion for a delay group in analyzing such transients is, in itself, an
-approximation. If this approximation is made, and a single set of "ef-
+epproximation. If this approximation is made, and a single set of "ef-
 fective" fractions is to be used in the analysis of a variety of trans-
 ients, it would seem that the values should be the fractional contributions
 of the various groups to the chain reaction under steady-state conditions.
 The problem at hand is to calculate these contributions.
 
 It has been the practice in the analyses of circulating-fuel reactors
-to take 8/8, to be just the fraction of the ith group which is emitted
+to take /B, to be just the fraction of the ith group which is emitted
 inside the core. This implies that the importance of the delayed neutrons
-is equal to that of the prompt neutrons; which would be true if the ine
+is equal to that of the prompt neutrons; which would be true if the in-
 crease in importance due to lower source energies exactly offset the de-
 crease due to the distortion of the spatial distribution in the core.
 
 The further approximation is usually made in computing the fraction emitted
 in the core that the precursor production is uniform over the core volume.
-We shall seek to improve the evaluation of B, by calculating more accu=
+We shall seek to improve the evaluation of 5; by calculating more accu=-
 rately the spatial distribution of precursors and by taking into account
 more explicitly the effect of the spatial and energy distributions on the
 importance of the delayed neutrons.
 
-In a discussion of fixed~-fuel reactors; Krasik quotes Hurwitz as de-
-fining 8/8, as "essentially the probability that a delayed neutron of
-the ith kind will produce a fission divided by the probability that a
+In a discussion of fixed-fuel reactors, Krasik quotes Hurwitz as de-
+fining ﬁ:/ﬂi as "essentially the probability that a delayed neutron of
+the ith kind will produce & fission divided by the probability that a
 
 prompt neutron will produce a fission," and adds that "for a simple re-
 actor this probability is given by the ratio of the nonleakage probabil-
-ities of the respective types of neutrons." Let us adopt the definition
-of B,/B, as the ratio of the nonleskage probabilities. Suppose that the
-nonleakage probability for prompt neutrons is L- and for the delayed
-neutrons which are actually emitted in the core it is P,. Of a particular
-group, only the fraction 0, is emitted in the core so the nonleakage prob-
+ities of the respective types of neutrons."lL Let us adopt the definition
+of ﬁ;/si as the ratio of the nonleskage probabilities. Suppose that the
+nonleakage probability for prompt neutrons is Ppr and for the delayed
+neutrons which are actually emitted in the core it is Pi' Of s particular
+group, only the fraction Gi is emitted in the core so the nonleakage prob-
 
-ability for all neutrons of the ith group is ep, Therefore
+ability for all neutrons of the ith group is eiPi. Therefore
 
  
 
-hs, Krasik, "Physics of Control," p 8-10 in Nuclear Dp
-Hendbook, ed. by H. Etherington, McGraw-Hill, New York, 1950.
+hso Krasik, "Physics of Control," p 8-10 in Nuclear Engineering
+Handbook, ed. by H. Etherington, McGraw-Hill, New York, 1958.
+B,0,P
+B, = ()
 
-~
-x POF @)
-Bi =
-pr
+1 pr
+
+ 
 
 The nonleakage probabilities can be expressed in a simple form if
 the reactor is treated as a bare, homogeneous reactor. The source of
@@ -209,12 +212,12 @@ prompt neutrons in the reactor is proportional to the fission rate, which
 follows closely the shape of the fundamental mode of the thermal neutron
 flux. In a homogeneous, cylindrical, bare reactor this is:
 
-@(r,z) = gg, (2.k r/R) sin(z/H) (2)
+#(r,z) = ¢0J0(2,h r/R) sin(s=z/H) (2)
 For the prompt neutrons, with this spatial source distribution
-A (3)
-Pr 14+ 128°
+P = ..E:E?L_ (3)
+Pr 1 4+ 128°
 where
-= (32) (1) ©
+£ - (22) () 2
 
 The spatial distributions of the delayed neutron sources are not the
 same as that of the prompt neutrons because of the transport of the pre-
@@ -222,205 +225,213 @@ cursors in the circulating fuel. The source distributions can be calcu-
 lated from power distribution, fuel velocities, system volumes, etc.
 (This is done for a simple cylindrical reactor in the next section.) It
 is convenient, for the purpose of calculating leakage probabilities, to
-expand each source function in an infinite series:
+gxpand each source function in an infinite series:
 
-QQ OO
-8, (r,2) = 2 2 A, J (3.7/R) sin(nwz/H) (5)
+oo QO
+s, (r,2) = mg n:Zl A, 3 (3.r/R) sin(am/H) (5)
 
-where j is a root of J_ (x) = 0, (See Appendix for derivation of non-
+where j 1s a root of‘Jo(x) = 0. (See Appendix for derivation of non-
 leakage probabilities.) For neutrons with a source distribution
 
-Son = Amn J (3,xr/R) sin(nnz/H) (6)
+S = AL Jo(er/R) sin(nmz/H) (6)
 
 the nonleakage probability is
--B° T
-
-e = (7)
-P = =m
-m4, 1°p
+P = _.‘?.......2_...2.,.. (7)
 
 where
 
-Le (BF (3) »
+- (2) (8
 
-For the ith group of delayed neutrons, then”
-“Top 1
-RrH
-Lat) a (3) sin a a = ow dr dz
-mn © o 1+ 18
-
-P, = (9)
-
-te 75, (r,0) 2x ar az
-oO 0
+For the ith group of delayed neutrons, then
 
  
 
-Note that the age, Tis is the appropriate value for neutrons with the
-source energy distribution of group i.) If sfr,z) is normalized to one
-fission neutron, then the dsuouinstor in (9) is B;6; Thus, from (1),
-the numerator in (9) is just BLP =" The numerator can be integrated
+RrH m nrz
+%%Ai ffoj;) <_R sin( >1+L232 2mr dr dz (9)
+P =
 
-to give
--B2 T
-J, (3) m i
-* 2 1m e
-B.P = LHR"fP 2) )) A, me (10)
-iPr m=l n=1,3.. mn In 1+1L B®
+Jn J~ S, (r,z) 2 dr dz
+0o o
+
+ 
+
+Note that the age, Ty is the appropriate value for neutrons with the
+source energy distribution of group i.) If Sir,z) is normslized to one
+fission neutron, then the dencmlnator in (9) is B;6;+ Thus, from (1),
+the numerator in (9) is just Bi or The numerator can be integrated
+
+ 
+
+to give 5
+' =B~ T
+J, (3 ) m i
+BB, = RT ) ) A _ 2B e 5 (10)
+1P m=l n=1,3.. 2dn 1418
 
 (Only odd values of n remain in the summation because the contribution
 of all even values of n to the integral is zero.)
 
 The approach we shall follow in calculating effective delayed neutron
-fractions is then as follows: calculate the steady-state source distri=-
-butions, 8S 4(rs2), in a bare, homogenized approximation of the MSRE core;
-evaluate the coefficients, A; 3 compute B, from (10). By "bare, homo-
-genized approximation" we mean a reactor in which the flux is assumed
-to vanish at the physical boundary and in which the composition is uniform
+fractions is then as follows: calculate the steady-state source distri-
+butions, S (r,z), in a bare, homogenized approximation of the MSRE core;
+evaluate the coefficients, A, ; compute B from (lO) By "bare, homo-
+genlzed approximation" we mean a reactor in which the flux is assumed
+
+To vanish at the physical boundary and in which the composition is uniform
 
  
 
-Tt is assumed here that the fuel volume fraction, f, is not a
+5It is assumed here that the fuel volume fraction, £, is not a
 function of r. This is also implied in (2) and (3).
-so that (2) applies.’ We shall also assume that the fuel velocity is
+so that (2) applies.6 We shall also assume that the fuel velocity is
 
 uniform over the entire core.
 
 DERIVATION OF EQUATIONS
 
-Steady-State Concentrations of Precursors
+Steady=-State Concentrations of Precursors
 
-Let us derive the formulas for the steady-state concentration of the
+Let us derive the formula for the steady-state concentration of the
 precursor of a group of delayed neutrons as a function of position in the
-
 core.
+
 Begin by considering an elemental volume of fuel as it moves up
 through a channel in the core. The precursor concentration in the fuel
-
 as it moves along is governed by
-de _
-T° BvEp(r,2) = Ac (11)
+
+de
+T - 5vz:f¢(r,z) - Ac (11)
 
 The fuel rises through the channel with a constant velocity v so
 
  
 
-de _ dcfdz _ 1 dc
-az = = i ~ v at (12)
+ 
+
+de _ defdz _ 1 dc
+iz = d'b/ a& - 7 at (12)
 With the substitution of (2) and (12), equation (11) becomes
-a _ Po 5 (8 Vem 2.2 (13)
-az v o R H v
-Along any channel r is constant and at steady state when g, is not
+de —-————szf% g (82E e B Do (13)
+dz v o R H v
+Along any channel r is constant and at steady state when ¢0 is not
 changing, (13) can be integrated to give
-2.4r
-pv fg NI (==) - _
-(rz) = —LC 0B fin 2 (cop oY) | cel
-2 TV 2
-A+ (57)
-(14)
+2. hr
+BvE BN (5 A/ ,,
+c(r,z) = R sin 2 - & (cos 3§ - 'Rz/v + c e Az /v
+5 5 H H o
+AT+ (H -
+(1h4)
 
-where cy is the concentration in fuel entering the core at z = 0.
-The concentration at the outlet of a channel is given by (14%) with
-
- 
-
-6mm the actual MSRE core, the flux deviates from (2) because of the
-depression sround the rod thimbles and because the flux does not vanish
-at the physical edge of the core.
-BES, (1 + e NEY) 3, C= ) NEV
+where s is the concentration in fuel entering the core at z = 0.
+The concentration at the outlet of a channel is given by (14) with
 
  
 
- 
+6In the actual MSRE core, the flux deviates from (2) because of the
+depression around the rod thimbles and because the flux does not vanish
+at the physical edge of the core. \
+B1"2’f‘¢0(l‘ + e-7\H/V) Jo(?ﬂ%a ) -7\H/v
+
+c(r,H) = +ce
+
+Lo (2]
+
+(15)
 
  
 
-c(r,H) = +c (15)
-2
-1+ NN ov
-4 H
 The concentration of precursors in the fuel leaving the core is
 the mixed mean of the streams from all of the channels.
-JR c(r,E)v(r)f(r) 2m ar
-ec; = 2 - (16)
-J v(r)f(r) 2m ar
-0
-We have assumed that f and v are constant across the core. With this
-assumption, substitute (15) in (16) and integrate to obtain
-At
-- t .
-Cee A . 2pvE PB Re +e ) J, (2 405) an
-1 0 At 2
-2.405 n : + ( = ]
-1d
-where t, has been substituted for E/v. The precursors decay during
-the time t, required for the fuel to pass through the external loop.
-Thus
-“Nt
-= ce (18)
-Equations (17) and (18) can be solved for cy
-“Nt “Nt
-pv gt (1 +e ) e J. (2.405)
+
+fR c{r,E)v(r)f(r) 2mr dar
+c, = & (16)
+fR v(r)f(r) 2 ar
+)
 
  
 
-2.405x L + (Ze) L - AY
+We have assumed that f and v are constant across the core. With this
 
-When this is substituted into (14) the desired expression for c(r,z) is
+assumption, substitute (15) in (16) and integrate to obtain
+=At
+- £ ¢ .
+7‘tc 2Bv2f¢0 9(1 + e ) Jl(a 405)
+
+ 
+
+c; = c_e + 7\tc 5 (aT)
+2.405 « [l + ( ——-—) }
+T
+where tc has been substituted for H/v. The precursors decay during
+the time tx required for the fuel to pass through the external loop.
+Thus
+'ch
+¢, = cqe (18)
+Equations (17) and (18) can be solved for cye
+=-7\tc -7\tx
+vzt (1 + e ) e J. (2.405)
+
+ 
+
+* 2.405x [1 + (7-\-‘;9-)2} {1 - ewk(tcﬁutx)]
+
+When this is substituted into (1%) the desired expression for c(r,z) is
 obtained.
-Normalized Source Distributions
+Normaldzed Source Distributions
 
 As explained on page 6 it is desirable to normalize the delayed
 neutron source to one fission neutron so that the integral over the
 
-core volume will equal PO. The rate of neutron production is
+core volume will equal BO. 'The rate of neutron production is
 
  
 
-RH
-N = J ve, = VES I] 5 (BE) sin (FF) f 2x dr dz (20)
-fe
+R H
+N = Vfv}:f;éa.vf_,c = vE g ofaf Jo(aél*r)sin (Z) fomaraz (20)
+fc
 
 Assuming, as before, that the fuel volume fraction is not a function
 
 of r, integration gives
 
 2
-N = LHR“f VIB, J, (2.405)/2.405 (21)
+N = L4HR“f v2f¢o Jl(z.h05)/2..1+05 - (21)
 
-for the total rate of neutron production. The normalized source
+for the total tate of neutron production. The normalized source
 distribution is
 
-s,(r,z) = Ae, (r,2)/N (22)
+Si(r,z) = Kici(r,z)/ﬂ (22)
 
 Substitution of (14), (19) and (21) into (22) gives for each group
 
  
 
- 
-
--At_z/H - At z/H
-S(r,z) = 5.8 ¢ + B sin z - 8, COs E+ 5,8 ¢ | 5 (BARE )
+At _z/H - At z/H
+s(r,z) = 5.8 ¢ + [Sl sin gﬁ - 8, COs §5-+ 8,8 ¢ ] JQ’(?-il-t%z-:E )
 (23)
 where
-=~ht At
-L+e S)e X (At /x)
-Ss = B (24)
-° 5 AE \2 At, +t)
-emir [1+ (52) ][2-e “|
+=N\t -\t
+(L+e S)e X (ktc/n)
+8 = B (21"')
+° 5 At N2 A, + t)
+25121’[14-(-—;94)][1-:-3 "]
 2
 2.405 (At /x)
-s; = B < (25)
-
-I ER°f 2 + (Ze lnc
-10
-
-2.405 (Mt /x)
-s5,= B = (26)
-
-4 ER°f E + (ZY | J, (2.405)
+s, = B . (25)
 
  
+
+I EROf [1 + (7—\;-"-)2%1(2-1&95)
+10
+
+2.405 (Atc/u)
+= B (26)
+
+4 ER°f [1 + (7—\;9- )2 } Jl(2.1+05)
+
+ 
+
+8o
 
 Expansion of Sources in Series Form
 
@@ -428,25 +439,27 @@ For the purpose of calculating the nonleakage probability let us
 represent S(r,z) by an infinite series which vanishes at 2 = 0, z = H
 
 and r = R.
-©
 
-S(r,2) = ), A I (or) sin(y z) (21)
+@ ©
+S(r,2) = )y ) Ay Ioar) sin(rz) (27)
 
-m=l n=l
+m=l n=1
 
-The condition that S(r,z) venish at r = R is satisfied if a = i /R
-where J is the mth root of J ox) = 0. The boundary conditions at the
-ends are satisfied by 7,= nx/L.
+The condition that S(r,z) venish at r = R is satisfied if a_= ,jm/R
+vhere j is the mth root of J c)(x) = 0. The boundary conditions at the
+ends are satisfied by = nsr/L.
 
-Expansion of the functions in {23) gives!
+Expansion of the functions in {23} g:’ures7
 
-i 2/L a, 1) % r re [Le + (= ae Ts JE r ) i. am )
+- Qo - t
+.. 7\th/1- hs 22 [1 + (P c:l i (f‘:’f..) o w_)
+c sl A% Iy l(j ) \t o R H
 
-5 2
-7
-
-2 Is (Ber) 5 a (-1) P sin SEZ
+2
+()
 n
+
+S, 5 (2_%(:){_2_1_-_) io [1 + (-1)? ]n sip B2
 
  
 
@@ -454,105 +467,108 @@ n
 
 (28)
 
-i
-i
-
-2.405 r nz
-(B25 en
+2.#02’ r 2z
+JO ( R ) cos a
 
  
 
-n=2 -1 a
+ 
+
+n=2 - 1 i
 (29)
-At
-§,7 (on £) [M/E 25 _ 25, (B22) > bid - th 1+ (1) e © in B22
+2405 Y MA/E 405 r 1+ ()™ e -Mc ' Bz
+S2JO<R )e - ( >§[n+(-——-) T
 (30)
 
  
 
-Tror a discussion of expansion in series of Bessel functions and
+7For a discussion of expansion in series of Bessel functions and
 half-range sine series expansions see, for instance, C. R. Wylie, Jr.,
-Advanced Engineering Mathematics, 2d ed., p 432-37 end 253-57, McGraw-Hill,
+Advanced Engineering Mathematics, 2d ed., p 432-37 and 253=57, McGraw-Hill,
 New York, 1960,
 Thus for m = 1 and n = 1
-=At
 
-25
-2 1
-Aa = 2[s, + * 5ST, z. wT | = tS (31)
-1+ (== °)
+2 Ss
+0 } 1l+e +s (31)
+
+>
+Ay = ¥&2+&M5QQA®)
+
+Form=1and all n > 1
+
+At
+_fn 28, 14+ (1) e © 1+ (-1)%
+A7 115273 105 J. (2.405) RN 2 - 5, 5
+n 1[ ° l o 2+ c n “l
 
  
 
-Form =1 and all n > 1
-
-A
-= 2] Se + 2. wi 2. 57 ; 2h J j "2 eet }
-jo
-(32)
-
 Form >1 and all n
 
-- AE
-A = 4 sn [ 14 RS °] (33)
-mn SINE) (= At, e)’
-2 +
+b = 3G , (7"% (33)
+n~ +( —
 
 Fraction Emitted in the Core
 
 The equations derived in the foregoing sections permit the evaluation
-*
-of By without the explicit calculation of 8, Further insight may be ob-
-tained by calculating ©, and this can be done most easily by using the
+% ‘
+of B without the explicit calculation of ei. Furtheér insight may be ob-
+tained by calculating ei;'and this can be done most easily by using the
 
 relation
 
-02] « — 9 (34)
-
+Qe = c )
+1 0
 where Q is the volumetric circulation rate of the fuel. This is given
 by
-2 =
-Q = xn Rtv (35)
+2 -
+Q = % R°%v (35)
 
-When (35), (21), (19), and (18) are substituted in (34), the result
+When (35), (21), (19), and (18) are substituted in (3%), the result
 simplifies to
 
-“At, Jit
-At <2 A (5 =)
-(Ey TEE
+—Kitc ~Ritx
+9__.1._%[ l- )2][(l+e )@ - e )] (36)
+
+ 
+
+ 
+
+-Ai(tc + ’cx)
+1l =@
 
  
 12
 
 It is of interest to compare this relation, which takes into account
 the spatial distribution of the precursor production, with the relation
-obtained’ when the precursor production is assumed to be flat over the
+obtained when the precursor production is assumed to be flat over the
 
 core volume. The latter relation is
 
  
 
-iy Muy,
+. At : At
 
-1 l=-e J -e .
+_ 1 l-e (L - e ) .
 
-i= 1 -%z% | FT) | (37)
-1c 1 -e 1 Cc xX
+6= 1-5% [ I T T ] (37)
+1 C 1 - e 1 C X
 
-The digital programs for MSRE kinetics calculations (MURGATROYD
-and ZORCH™ 0) have as an integral part the computation of delayed neutron
+The digital programs for MSRE kinetics calculations (MURGATROID9
+and ZORCHlO) have as an integral part the computation of delayed neutron
 fractions from precursor yields and decay constants and the reactor
 residence times, all of which are input numbers. The fraction computed
-and used for each group is Py t 5 where Cs is given by equation G17).
-Therefore, in order to have the kinetics calculations done with By for
-the fractions, it is necessary to put in a fictitious value of By» equal
+and used for each group is B gi where § is given by equation (37)
+Therefore, in order to have the kinetics calculations done with B for
+the fractions, it is necessary to put in a fictitious value of Bi, equal
 
-to B,/¢,
+tos/g
 
 Effective Fraction in Noncirculating System
 
 The change in the effective delayed neutron fraction between non-
-circulating and circulating conditions is a factor in determining control
+circulating and circulating conditions 1s a factor in determining control
 rod requirements.
 
 In the noncirculating core, the source of delayed neutrons has the
@@ -560,25 +576,22 @@ In the noncirculating core, the source of delayed neutrons has the
 same shape as the source of prompt neutrons and
 
 2
-
-. Jn
-
-Bis = By a (38)
-ll pr
+. Pty
+Pig = Py 3 (38)
+-B T
+o 1l pr
 
  
 
-8p. R. Kasten, Dynamics of the Homogeneous Reactor Test, ORNL-2072
+8P R. Kasten, Dynamics of the Homogeneous Reactor Test, ORNL-2072
+(June 7, 19%6).
 
-(June 7, 1956).
-
-C. W. Nestor, Jr., MURGATROYD, An IBM-7090 Program for the Analysis
+9C. W. Nestor, Jr., MURGATROYD, An IBM~70900 Program for the Analysis
 of the Kinetics of the MSRE, ORNL-TM-203 (Apr. 6, 1962).
-
-10, W. Nestor, Jr., ZORCH, an IBM=7090 Program for Analysis of Simu- T
+loC W. Nestor, Jr., ZORCH, an IBM=7090 Program for Analysis of Simu- T
 lated MSRE Power Transients with a Simplified Space-Dependent Kinetics
-Model, ORNL-TM=-345 (Sept. 13, 1962).
-a
+Model, ORNL-TM-345 (Sept. 18, 1962]. ’
+“\
 
 13
 
@@ -586,21 +599,24 @@ It may also be of interest to compare the magnitudes of the delayed
 neutron source distributions under static and circulating systems. In
 the static system
 
-pve fg BEE ) sin(F)
-
-8, (r,z) = - 5 (39)
+2.4 r T
+VIP I (=) sin(=)
+8y, (r,z) = P2l g (39)
 
  
+
+N
 
 N is given by (21), and (39) reduces to
 
-B. 2.405 ol
-s, (r,z) = x J (2X) sin(%B) (40)
-is’ LHRPF 3, (2.405) © R H
-
  
 
-The same result is obtained if one substitutes te = t, = in
+B. 2.405
+Sis(r,z) = = o (2%%#5 ) sin(3%0 (+0)
+
+LHRPP 3, (2.405)
+
+The same result is obtained if one substitutes tc = tx = o in
 
 equations 23-26.
 
@@ -609,60 +625,73 @@ RESULTS OF MSRE CALCULATIONS
 The equations derived in the preceding section were used in calcu-
 lations for a simplified model of the MSRE core. (See Appendix for data
 used.) Results are summarized in Table 1. The table shows that the core
-residence time, ih units of precursor half-lives, ranges from 0.2 for
-the longest=-lived group to 41 for the shortest-lived group. Because of
+residence time, in units of precursor half-lives, ranges from 0.2 for
+the longest-lived group to 41 for the shortest-lived group. Becsuse of
 this wide range, the shapes of the delayed neutron sources vary widely.
-Figure 1 shows axial distributions at the radius where J (2. r/R) has
+Figure 1 shows axial distributions at the radius where Jo(z.h r/R) has
 its average value, 0.4318. The source densities were normalized to a
-production of one fission neutron in the reactor. For the longest-lived
-group, the So term, which is flat in the radial direction, is by far the
+production of one fission neutron in the reactor. For the longest=-lived
+group, the SO term, which is flat in the radial direction, is by far the
 largest. This term is relatively insignificant for groups 3-6. For the
-very short-lived groups, the 5, term predominates, i.e., the shape ap-
+very short=lived groups, the Sl term predominates, i.e., the shape ap-
 proaches that of the fission distribution.
 
 Figure 2 shows the twofold effect of circulation in reducing the
 contribution of the largest group of delayed neutrons. The reduction
 in the number of neutrons emitted in the core is indicated by the dif-
 ference in the areas under the curves. The higher leakage probability
-with the fuel circulating is suggested by the shift in the distribution,
+with the fuel circulating is suggésted by the shift in the distribution,
 which reduces the average distance the neutrons would travel in reaching
 
 the outside of the core.
-ORNL~-LR-Dwg. 75652
+ORNL~LR-Dwg. 75652
 
-1h
+LIIETT
+
+Tl
+
+e e
+
+1k
+
+e b o
 
  
-ORNL~LR-Dwg. T5653
-Unclassified
+ORNL~LR-Dwg. 75653
+Unclagsified
 
 15
 
  
-Table 1. Delayed Neutrons in MSRE
+
+ 
+Table 1.
+
+Delayed Neutrons in MSRE
 
  
 
  
 
-Group 1 2 3 4 5 6
-ty (sec) 55.7 22.7 6.22 2.30 0.61 0.23
-t/t 0.17 0.41 L510 h.o7 15 41
-A 0.30 0.72 2.6k 7.15 27 72
-s./5, 65.7 9.24 0.30 3.6 x 1072 9 x 1070 2 x 10723
-S,/8, 27.0 10.99 3.01 1.11 0.29 0.11
+ 
+
+Group 1 2 3 h 5 6
+t_é_ (sec) 55.7 22.7 6.22 2.30 0.61 0.23
+t,/ty 0.17 0.4 1.5 4.07 15 k1
+tx/tl 0.30 0.72 2.6k 7.15 27 72
+s./s, 65.7 9.24 0.30 3.6 x 107 9 x 10710 2 x 10723
+se/s:L 27.0 10.99 3.01 1.11 0.29 0.11
 6, 0.364 0.371 0.458 0.709 0.960 0.994
-P 1/ Por 0.676 0.71.8 0.868 0.906 1.010 1.031
-B,/B, 0.246 0.266 0.398 0.672 0.970 1.025
-ts 0.364 0.370 0.448 0.669 0.906 0.965
-Pis/Por 1.055 1.039 1.043 0.948 1.010 1.031
-10* Bs 2.11 14.02 12.54 25.28 7.40 2.70
-10° By 0.52 3.73 4.99 16.98 7.18 2.77
-10" By, 2.23 1k .57 13.07 26.28 7.66 2.80
+P i/PPr 0.676 0.718 0.868 0.906 1.010 1.031
+8. /B, 0.246 0.266 0.398 0.672 0.970 1.025
+£ 0.364 0.370 0.448 0.669 0.906 0.965
+is/Ppr 1.055 1.039 1.043 0.948 1.010 ~1.031
+10* By 2.11 1h.02 12.54 25.28 7 .40 2.70
+10* B, 0.52 3.73 %.99 16.98 7.18 2.77
+10“ B:s 2.23 14 .57 13.07 26 .28 7.66 2.80
+; « {
 
 9T
-
- 
 7
 
 Totals for all six groups taken from Table 1 are listed in Table 2
@@ -673,14 +702,14 @@ Table 2. Total Delayed Neutron Fractions in MSRE
 
  
 
-Actual yield, 28,
+Actual yield, ZB:L
 
 *
-Effective fraction in static system, 2.8;
-Fraction emitted in core, circulating, 218.0,
+Effective fraction in static system, ZBis
+Fraction emitted in core, circulating, Zaiei
 
-vx
-Effective fraction, circulating, 2.8;
+T %
+Effective fraction, circulating, Zﬂi
 
 0.006405
 0.006661
@@ -698,28 +727,31 @@ It is desired to calculate the probability that a neutron from a
 distributed source of specified shape and initial energy will be absorbed
 as a slow neutron in a cylindrical, bare reactor.
 
-Consider the neutrons to be born at energy Eo with a spatial distri-
-bution 8, (r,z). Use age treatment to describe slowing down, i.e.,
+Consider the neutrons to be born at energy Eio with a spatial distri-
 
-via (r,2,7) = un (ry2,7) (a1)
+bution Si(r,z). Use age treatment to describe slowing down, i.e.,
 
-alr,z,7, ) 8, (r,z) (a2)
+'V2q (r;z,7) = %;‘ (r,z,'r) (al)
+
+I
+
+Q(r:z:'rio) Si(r:Z) (a2)
 
 The steady-state equation for the thermalized neutrons is
 
-2 I Po
-Dy g, (r,z) - zg, (r;z) + a; (r,2,7,,) = 0 (a3)
+D v°g, (r,2) - 5.8, (r,2) + q,(r,z,7y,) = O (a3)
+
 The probability to be calculated is
 
 R H
-J zg. (r,z) 2m dr dz
-0
+f Za¢i(r,z) 2mr dr dz
 
-P = (ak)
-[RE 8, (r,2) 2r dr dz
-0 ©
+P, = (akt)
+fRfH Si(r;,z) 2 dr dz
+© 0
 
-Oe
+O
+O
 
  
 
@@ -727,63 +759,62 @@ If (al) is solved with the condition that q vanish at the boundaries
 
 and be finite everywhere inside the reactor, the solution is
 
-0 @ 2
-Jr. -B° (1 ~- 1, )
-_ m . ne mn io _
-. {= 2, 2 am Jo ( = ) sin (az )e (a5)
-m=1 n=l
+@ Jr . -Be('c-"t)
+q, = Z Z a, J (-—E—)sin<m>e m 1o (a3)
+- i imm "o R H
+m=1 n=1
 where
-2 Jm \2 nn \2
+5 jg"e n:r\e .
+- (B) (F) ()
 
-It is possible a priori to represent 5, (r,z) and g,(r;z) by series
+It is possible a priori to represent Si(r,z) and ¢i(r,z) by series
 
 ¥
-© x I Tr
-8, (r,z) = 2 L And (EE ) sin (a7)
-00 OO Jr }
-8, (r,z) =) 2 Fim 7, (& ) sin - (a8)
+19
 
-From (a2), (a5), and (a7) it is evident that
-
-Sm = Am (a9)
+D- 20 - “
+s, (r,2) = A g (J’L)sm nrz (a7)
+iv? 0ol el imn "o R H .)
+| 00 CO J I‘ '
+¢i(r,z) ?mg r;-l Fom o( ) sin (—-—-—) (a8)
+From (a2), (a5), and (&7) it is evident that
+8y zAimn (a9)
 And if @ is represented by (a8),
-oo QQ J; r
+o0 QO J T
 2
-Dyvg= - D) 5, (£ ) sin (22) (220)
-m=. n=l Bn Fim Is
+DV'f= - D . ( )s:.n(—-—-— (a10)
+mz; n=l mn 1mn O
 
-Substitute (a5), (a9) and (alO) into (a3). Because of the ortho-
+Substitute (a5), (29) and (alO) into (a3). Because of the ortho-
 gonality of the functions, one has for each mn
-2
 
-=B_
 2 m i .
-DBF, IF tA oe = 0 (a11)
-where, for convenience, Ten ~ Tio is represented by t 5° From (all)
-2
--B" T
-A mn i
-_ imme
-Fon = 5 53 (a12)
+DanF ):a F + A e = 0 (ail)
 
-a 1+L° Bo
+vhere, for convenience, Ten = Yio is represented by <t 5° From (all)
+
+B2 1
+F = Aimn e m 1
+imn e 1 4+1° 132
+
+(a12)
 
 Now one can write
 
-Bt
-RH Jr.
-m Cs nnz
-A J EIENCIET"
-3 wn rr =) 0 R H
-m=l n=l
+2
+R .H J T
+m C nna
+A J (-—-—-v-—)sn.n(——>2nrdrdz
+z mn( )ofof o\ R H
+m*ln—l
 P, =
-i R =
-[J 8, (r,2) 2m dr dz
-oO oO
+i R H
+[ [ s,(ryz) 2 ar az
+o O
 
  
 
-(a13)
+(al13)
 
 This is the expression for the nonleakage probability given in the
 text as equation (9).
@@ -792,33 +823,32 @@ Now consider a special case where the neutron source is proportional
 to the flux, namely the fission neutrons born at the site of the fission.
 20
 
-8, (r,z) = kz §. (r,2) (ak) —-
-If k is not a function of position, insertion of (ald) into (ak) gives
-
-1
-P; = (15)
+8, (r,z) = kzéﬁi(r,z) (ak) -
+If k is not a function of position, insertion of (alli) into (ak) gives
+L
+Pi = E (33-5)
 
 Let us find an expression for k as follows: Substitute (a7) and (a8)
-for 5; and #, in (alk). This results in the relation
+for S, and ¢i in (al%). This results in the relation
 
-Atm = kz, Fim (a26)
+Ai‘mn - k%a Fimn (a16)
 Substitute this in (al2)
--B° T,
-ke = (a17)
-F = PF, ——————— al
-imn im 1+ 1.2 B®
+B> 1,
+ke 7 - (a17)
+F = F, al
+imn im 1+ L2 Be
 mn
-This is satisfied for all mn for which F, = 0. If PF, #0, it
-imn imn
-must be that
-5 Ts
-“
-Le —= 1 (a18)
-1+L B
+This is satisfied for all mn for which F, = 0. IfF.__ # 0, it
+lmn imn
+must be that &
+-Qin Ti
+L
+Lo —= 1 (a18)
+1+ L B
 mn
 
-Because Bo is, in general, different for each mn, (al8) can only be
-true for one mn and therefore Fim must be zero for all but that mn.
+Because Ein is, in general, different for each mn, (al8) can only be
+true for one mn and therefore Fimn must be zZero for all but that mn.
 
 It can be shown by consideration of the time-dependent neutron equations,
 that in a reactor free of extraneous sources, the steady-state flux
@@ -827,78 +857,69 @@ corresponds to the fundamental mode, i.e., m =n = 1. (See Glasstone
 and Edlund, 12.37 = 12.41.) Therefore
 
 2
-“Bl Tg
-e
-
-2
-1+ LE
+1 e"B:LJ. Ty (at0)
+P = =-= -~ al9
+ik 4, Lzﬂfl
 
 This is the expression used in the text as the nonleakage probability for
-
-(a19)
-
-ry
-I
-w-
-
 the prompt neutrons.
 Data for MSRE Calculations
 
 This section presents the data which were used in calculations for
-the MSRE. It includes dimensions aad properties of the reactor and data
+the MSRE. It includes dimensions and properties of the reactor and data
 
 on delayed neutrons.
 MSRE Dimensions
 
-Reactor dimensions which are required are H, R, f, v (or t,) and t,
+Reactor dimensions which are required are H, R, f, v (or tc) and t_.
 
 For R let us use 27.75 in., the inside radius of the INOR-8 can
 around the core.
 
-Assigning values to H and v is not simple, because the fission dis-
-tribution extends past the limits of the graphite core into the —a
+Assigning velues to H and v is not simple, because the fission dis-
+tribution extends past the limits of the graphite core into the uppéf
 and lower heads. The axial distribution of the fission rate closely
-follows sin(mz/H) where H is 77.7 in. The longest graphite stringers
-are 68.9 in. long, and the channel region is only 62 in. Further com-
+follows sin(mz/H) where H is 77.7 ian. The longest graphite stringers
+are 68.9 in. long, and the channel region is only 62 in. Further com=-
 plicating the situation is the fact that outside of the channeled region,
 the fuel velocity is lower than in the channels (because the volume
 fraction of fuel is much higher in the end regions). There are also
-radial variations in the fuel volume fraction and chammel velocity. (In
+radial variations in the fuel volume fraction and chamnel velocity. (In
 the central channels the fuel velocity is over three times the 0.60 ft/sec
 which is found in more than three-fourths of the channels.) Let us use
 the following simplifications. Consider the "core" to be bounded by the
 horizontal planes at the extreme top and the extreme bottom of the graphite.
-This gives H = 68.9 in. Enclosed by these boundaries is a total volume
-of 96.4 £3, of which 25.0 £3 is occupied by fuel. Thus f = 0.259. The
-residence time of fuel in the "core," at a flow rate of 1200 gpm, is 9.37
-sec. The velocity, B/t,, is 0.61 ft/sec. The total volume of circulating
-fuel is 69.1 3, for a total circuit time of 25.82 sec. Thus Tt, = 25.82
-- 9.37 = 16.45 sec.
+This gives H = 68.9 in. Enclosed by these boundaries is & total volume
+of 96.k4 fts, of which 25.0 ft3 is occupied by fuel. Thus £ = 0.259. The
+residence time of fuel in the "core,” at a flow rate of 1200 gpm, is 9.37
+sec. The velocity, H/tc, is 0.61 ft/sec. The total volume of circulating
+fuel is 69.1 fb3, for a total circuit time of 25.82 sec. Thus t, = 25.82
+-~ 9,37 = 16.45 sec.
 
 Precursor Yields and Half-Lives
 
 For yields and half-lives of the delayed neutron groups, let us use
-the data of Keepin, Wimett and Zeigler for fission of y232 by thermal neu-
-trons. + These are given in Table A-l.
+the data of Keepin, Wimett and Zeigler for fission of U235 by thermal neu-
+trons.ll These are given in Table A-l.
 
  
 
-1g, Krasik, "Physics of Control," p. 8-4 in Nuclear pe
-Handbook, ed. by H. Etherington; McGraw-Hill, New York, 1950.
-ee
+Hg, Krasik, "Physics of Control,"” p. 8=4 in Nuclear Engineering
+Handbook, ed. by H. Etherington, McGraw-Hill, New York, 1950.
+22
 
  
 
  
 
 Table A-l. Precursor Data
-Group 1 2 3 L 5 6
+Group 1 2 3 L 2 6
 Half-life (sec) 55.7 22.7 6.22 2.30 0.61 0.23
-Decay constant, 0.0124 0.030% 0.111% 0.3013 1.140 3.010
-A (sec)
-Frac ional yiepd 2.11 1k.02 12.54 25.28 7.40 2.70
+Decay constant 0.0124 0.030% 0.1114% . 0.3013 1.140 3.010
+K (sec™l)
+Fra.c ional yle 2.11 1k.02 12.54 25,28 T.40 2.70
 
-pd By» (0/10
+10 B;» (n/10
 
  
 23
@@ -908,32 +929,34 @@ Neutron Energies and Ages
 The age of neutrons is given by
 
 E
-_ co D dE
-T = J Gl = = (a20)
+_ c D dE
+T = Ef ol . = (a20)
 
 The age of prompt neutrons, which have an initial mean energy of about
-2 Mev, is about 292 on’ in the MSRE core at 1200°F. 2 Let us estimate
+2 Mev, is about 292 cm? in the MSRE core at 1200°F.12 Let us estimate
 
 the age to thermal energy of the delayed neutrons as follows.
 
-E N E
-. (XD o 4&6 _ ( D_ _° a2l)
-te &) Je, E (&) “ Ben
-5%av av
+E '\ E
+— D o g@.: —]-3-— ....9. a2l
+' <?§7:) J;th B <$ZE-) - Ben (o2t
+57av av
 Therefore use the approximation that
-in (E/E)
+in (Ei/Eth)
 
-T, = In (E_JE J T (a22)
-i in Bor En pr
+Y W, R (e22)
+i in Epr Eth pr
 
 The average energy of thermal neutrons at 1200°F is 0.119 ev.
+Goldsteinl3 reviewed the data on delayed neutron energies and
 
-Goldstein > reviewed the data on delayed neutron energies and
 recommended values for the first five groups. His values are given
-in Table A-2, together with values of Ts calculated from (a22). No ex-
+
+in Table A-2, together with values of 7, calculated from (a22). ©No ex-
+
 perimental values for the mean energy of the shortest-lived group are
 
-available, so a value of 0.5 Mev was assumed.
+available, so & value of 0.5 Mev was assumed.
 
 Table A-2. Neutron Energies and Ages to Thermsl in MSRE Core
 
@@ -947,36 +970,36 @@ Table A-2. Neutron Energies and Ages to Thermsl in MSRE Core
 
 Group 1 2 3 4 5 6 Prompt
 
-Mean Energy (Nev) 0.25 0.46 0.40 0.45 0.52 0.5 2.0
+Mean Enersya(MEV) 0.25 0.6 040 0.5 0.52 0.5 2.0
 
-Age, 7; (cm”) 256 ~~ 266 ~~ 26k 266 269 268 292
+Age, 7, (cm”) 256 266 26k 266 269 268 292
 12
 
 This number is the ratio D/Z for fast neutrons calculated by
 MODRIC, a multigroup diffusion calculation.
 
-13g, Goldstein, Fundemental Aspects of Reactor Shielding, p 52,
+134, Goldstein, Fundamental Aspects of Reactor Shielding, p 52,
 Addison-Wesley, Reading, Mass. (1959).
 24
 
 Neutron Diffusion Length
 
 In the main body of the MSRE core the square of the diffusion length
-for thermal neutrons is 210 orf. Tais is for the core at 1200°F, contain-
+for thermal neutrons is 210 cm?. This is for the core at 1200°F, contain-
 
-ing fuel with no thorium and sbout 0.15 mole percent uranium.
+ing fuel with no thorium and about 0.15 mole percent uranium.
 
 Nomenclature
 
-coefficients in series expansion of S
-coefficients in series expansion of a;
+coefficients in series expansion of Si
+coefficients in series expansion of q;
 geometric buckling
 
 precursor concentration in fuel
 
 c entering core
 
-mixed mean c¢ leaving core
+mixed mean c leéviag core
 
 neutron diffusion coefficient
 
@@ -993,11 +1016,11 @@ height of cylindri:zal core
 
 Bessel functions of the first kind
 
-mth root of J (x) = 0
+mth root of Jc(x) =0
 
 neutron multiplication factor
 
-neutron diffusion length
+neutfon diffusion length
 
 total rate of neutron production in reactor
 nonleakage probability
@@ -1005,9 +1028,9 @@ nonleakage probability
 volumetric circulation rate of fuel through core
 
 neutron slowing-down density
-Th
+!*_*ijm
 
-ve TD
+v
 
 Subscripts
 i
@@ -1020,7 +1043,7 @@ Nomenclature = cont'd
 
 radial distance from core axis
 
-value of r where J (2.4r/R) = 0.432.
+value of r where JO(E.hr/R) = 0.432,
 
 outside radius of cylindrical core
 
@@ -1034,93 +1057,92 @@ half-life of precursors
 
 fuel velocity in core
 
-axisl distance from bottom of core
+axial distance from bottom of core
 
 fraction of neutrons which belongs to ith group
 
 "effective" fraction
 
 calculated fraction of neutrons of group.i which is
-emitted in core, assuming flat production of
+emitted in core, assuming fiat production of
 precursors
 
 fraction of neutrons of group i which is emitted
-© in core
+~ in core
 
 precursor decay constant
 
 total neutrons produced per fission
 average decrement in log E per collision
-neutron sbsorption cross-section
+neutron absorption cross=-section
 neutron age
 
 neutron flux
 
-8 group of neutrons
+a8 group of neutrons
 prompt neutrons
 
 noncirculating system
 26
 
 Distribution
-1-2. MSRP Director's Office, SL. J. P. Jarvis
+1-2. MSRP Director's Office, 5L. J. P. Jarvis
 Rm. 219, Bldg. 9204-1 52. W. H. Jordan
 3. G. M. Adamson 53. P. R. Kasten
-L. L. G. Alexander 5h. R., J. Kedl
-5. S. E. Beall 55. M. T. Kelley
-6. M. Bender 56. M. J. Kelly
-T. C. E. Bettis 57. S. 8S. Kirslis
-8. E. S. Bettis 58. J. W. Krewson
+4. L. G. Alexander 54, R. J. Kedl
+5. S. E, Beall 55. M. T. Kelley
+6. M. Bender ' 56. M. J. Kelly
+T. C. E. Bettis 5. 5. S. Kirslis
+8. E. 8. Bettis 58. J. W. Krewson
 9. D. S. Billington 59. J. A. Lane
 10. F. F. Blankenship 60. W. J. Leonard
-11. A. L. Boch 61. R. B. Lindauer
+11. A, L. Boch 61. R. B. Lindauer
 12. E. G. Bohlmann 62. M. I. Lundin
-13. S. E. Bolt 63. R. N. Lyon
-14. C. J. Borkowski 64. H. G. MacPherson
+13. 8. E. Bolt 63. R. N. Lyon
+ik, C. J. Borkowski 64. H. G. MacPherson
 15. C. A. Brandon 65. F. C. Maienschein
-16. F. R. Bruce 66. W. D. Manly
+16. F. R. Bruce 66. W. D, Manly
 17. O. W. Burke 67. E. R. Mann
-18. S. Cantor 68. W. B. McDonald
+18. 8. Cantor 68. W. B. McDonald
 19. T. E. Cole 69. H. F. McDuffie
-20. J. A. Conlin 70. C. K. McGlLothlan
-21. W. H. Cook Ti. A. J. Miller
-22. L. T. Corbin 72. E. C. Miller
+20. J. A. Conlin T70. €. K. McGlothlan
+21. W. H. Cook T1. A. J. Miller
+22. L. T. Corbin 2. E. C. Miller
 23. G. A. Cristy 73. R. L. Moore
-2425, J. L. Crowley 74. J. C. Moyers
+2h«25, J. L. Crowley T4. J. C. Moyers
 26. F. L. Culler 75. T. E. Northup
 27. J. H. DeVan 76. W. R. Osborn
 28. R. G. Donnelly 77. P. Patriarca
 29. D. A. Douglas 78. H. R. Payne
 30. N. E. Dunwoody 79. A. M. Perry
 31. J. R. Engel 80. W. B. Pike
-32. E. P. Epler 81. B. E. Prince
+32, E. P. Epler 81. B. E. Prince
 33. W. K. Ergen 82. J. L. Redford
 34. D. E. Ferguson 83. M. Richardson
 35. A. P. Fraas 8k. R. C. Robertson
 36. J. H. Frye 85. T. K. Roche
-3f. J. H. Frye 86. M. W. Rosenthal
+37. J. H. Frye 86. M. W. Rosenthal
 38. C. H. Gabbard 87. H. W. Savage
 39. R. B. Gallaher 88. A. W. Savolainen
 40. B. L. Greenstreet 89. J. E. Savolainen
 41. W. R. Grimes 90. D. Scott
-42. A. G. Grindell gl. C. H. Secoy
+42. A. G. Grindell 9l. C. H. Secoy
 43. R. H. Guymon 92. J. H. Shaffer
-LL, P. H. Harley 93. M. J. Skinner
-45, C. S. Harrill 9k. G. M. Slaughter
-46. P. N. Haubenreich 95. A. N. Smith
-47. E. C. Hise 96. P. G. Smith
+44, P. H. Harley 93. M. J. Skinner
+45, C. 8. Harrill 9k. G. M. Slaughter
+k6. P. N. Haubenreich 95. A. N. Smith
+k7. E. C. Hise 96. P. G. Smith
 48. H. W. Hoffman 97. I. Spiewak
-Lg, P. P. Holz 98. J. A. Swartout
-50. L. N. Howell 99. A. Taboada
+49, P. P. Holz 98. J. A. Swartout
+50. L. N. Howell 99, A. Taboada
 Distribution - cont'd
 
 100. J. R. Tallackson
-101. R. E. Thoms
-
+101L. R. E. Thoma
 102. D. B. Trauger
 103. W. C. Ulrich
 104. B. S. Weaver
-105, C. F. Weaver
+105. C. F. Weaver
 106. B. H. Webster
 
 107. A. M. Weinberg
@@ -1136,7 +1158,7 @@ Lg, P. P. Holz 98. J. A. Swartout
 115. Document Reference Section
 116-118. Laboratory Records
 
-119. ORNL-RC
+119. ORNL=RC
 
 External
 
@@ -1144,9 +1166,9 @@ External
 AEC, ORO
 122. H. M. Roth, Division of Research
 and Development, AEC, ORO
-123. PF. P. Self, Reactor Division,
+123. F. P. Self, Reactor Division,
 AEC, ORO
 124-138. Division of Technical Information
-Extension, AEC, ORO
+Extension, AEC, CRO
 139. W. L. Smalley, AEC, ORO
-140. J. Wett, AEC, Washington
+14k0. J. Wett, AEC, Washington

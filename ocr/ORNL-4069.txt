@@ -4,8 +4,27 @@
 
  
 
-© ORNL-4069
--UC-80 —- Reactor Technology
+ 
+
+| ORNL-4069 | e T
+UC 80 Reactor Technology-_ R
+
+ 
+
+ 
+
+_DEVELOPMENT OF A MODEL FOR COMPUTING
+
+__‘_-';_'.'35xe MlGRATION IN THE MSRE ]
+
+ 
+
+R
+
+   
+
+R J Kedl
+A Houfzeel
 
  
 
@@ -13,18 +32,13 @@
 
  
 
-DEVELOPMENT oF A MODEL FOR ue |
+ 
 
-©
-
-cians a TAR SIRE Sekopstiony
-
-em MIGRATION IN THE MSRE
-
-~~,
-
-R J. Kedl
-“A. Houtzeel
+> OAK RIDGE NATIONAL I.ABORATORY
+L L operuted by e et T
+UN!ON CARBIDE CORPORAT!ON K
+o ferthe
+u 5. ATOMIC ENERGY. COMMISSION
 
  
 
@@ -33,26 +47,16 @@ R J. Kedl
  
 
  
-
-0AK RIDGE. NATIONAL LABORATORY
-oo Ln operated by
-UNION CARBIDE" CORPORATION -
-- ~ for the =
-u.s. ATOMIC ENERGY COMMISSION
-
- 
-
- BISIRIBUTION OF THIS DOCUMENT IS it |
 
  
  
 
  
 
-Printed in the United States of America. Available from Clearinghouse for Federal
-Scientific and Technical Information, National Bureau of Standards,
-U.S. Department of Commerce, Springfield, Virginia 22151
-Price: ‘Printed Copy $3.00; Microfiche $0.65
+-Prmmd in the Umfed Sfafes of Amenca. Avuulable from Clearinghouse for Fedeml
+Scmni:flc ond Technical” informohon, National Bureau of Slon&urds,
+‘U.S. Depar?mer_ﬂ of‘Commorc_e, Springfield, Yirginia 22151
+Price: Printed Copy- $3.00; Microfiche $0.65
 
  
 
@@ -64,28 +68,25 @@ Price: ‘Printed Copy $3.00; Microfiche $0.65
 
 LEGAL NOTICE
 
-This report was prepared as an’ account of Government sponsofed work. "Neither the United States,
+This report was prepcred as an account of Govemmanf sPonsored wurk ‘Neither the Umteé Sfo!'es
 
-nor the Commission, nor any person acting on behalf of the Commission:
+nor the Commission, nor any person acting on behalf of the Commisslon. ‘
 
-A. Makes any warranty or representation; expressed or implied, with respect to the accuracy,
-completeness, or usefulness of the information contained in this report, or that the use of
-any information, apparatus, method, or process disclosed in this report may not infringe
-privately owned rights; or
+A. Mukes any warranty or represenfuhon, axpressed or implied, with respect to fhe accuracy,'rr
+COmp|e|‘eness, or usefulness of the nformuhon contained .in this reporf or ﬂhcﬂ the ‘use of
+any _information, uppurutus, mefhod or process dlsclosed in  this repott mny not mfrmga':f
+privately owned rights; or - : : ’
 
-BB, Assumes any liabilities with respect to. the use of, or for damages resulting from the use of .
-any information, apparotus, method, or process disclosed in this report.
+.B. Assumes any liabilities with respect to tha use of or for damages resulﬂng from the use of _
+any information, uppuruius, method, or process disclosed in this report. o :
 
-As used ‘in the above, *‘person acting on behalf of the Commission’ includes any employee of
+As used in the above, * person acting .on behalf of the Commiss:on -includes ‘any emﬁloyee or
 
-contractor of the Commission, or employee of such contractor, to the extent that such employee
+4_ ‘confract:r of the Commuss:on, or amployee of sm:h contractor, to I'he extent that such employee
+:or contractor “of the Commnssaon, or empioyee of such contractor prepares, disseminstes, or
 
-or contractor ‘of the Commission, or employee of such contractor prepares, disseminates, or
-provides aceess to, any information pursuant to his employment or contract with the Commissien,
-
-or his employment with such contractor. -
-
- 
+provndes access to, any information _pursuant ta. his employment or confrucf with the Commnssnon,
+er hls employmenf W|‘|‘I'I such contractor. - - : .
 
  
 
@@ -104,152 +105,164 @@ or his employment with such contractor. -
  
 
  
-ad | CESTI PRICES
 
-So Ha $30, ux. 6S”
-\&/ nl
+ 
+ 
 
-| : ORNL-4069
+ 
 
+CESTI PRICES
+
+H*Q';?-l;nn_._é_é:
+
+ORNL-4069
 Contract No. W-7405-eng-26
-
 Reactor Division
 
-a as
-4 i
-
 DEVELOPMENT OF A MODEL FOR COMPUTING
-135% MIGRATION IN THE MSRE
+135%c MIGRATION IN THE MSRE
 
 R. J. Kedl A. Houtzeel
 
  
 
- 
-
 LEGAL NOTICE
 
-This report was prepared as an of Gov ed work, her the United
-States, nor the Commission, nor any person acting of behalf of the Commission:
+This report was prepared as an account of Government sponsored work. Neither the United
+States, nor the Commission, hor any person acting on behalf of the Commieaion:
 
-A. Makes any warranty or representation, expressed or implied, with respect to the accu-
-racy, completeness, or usefulness of the information contained in this report, or that the use
-of any information, apparatus, method, or process disclosed in this report may not infringe
+A. Makes any warranty or representation, expredsed or implied, with respect to the accu-
+racy, completeneas, or usefulness of the informatior| contained in this report, or that the use
+of any information, apparatus, method, or proceas disclosed in this report may not infringe
 privately owned rights; or
 
 B. Assumes any liabilities with respect to the use of, or for damages resulting from the
-use of any infor method, or p in this report.
+use of any information, apparatus, method, or proceds disclosed in this report. .
 
-As used in the above, ‘‘person acting on behalf of the Commission” includes any em-
-ployee or contractor of the Commission, or smploybe of sich contractor, to the extent that
-
- 
-
- 
-
- 
+As used in the sbove, ‘‘person acting on behalf of the Commission” includes any em-
+ployee or contractor of the Commission, or smployée of suck contractor, to the sxtent that
+such employee or contractor of the Commission, Ziemployee of such contractor prepares,
+disseminates, or provides acceds to, any information pursusnt to his employment or contract
+with the Commission, or his employment with such contractor,
 
  
 
-- - such employee or contractor of the C [2 ployee of such prep ,
-ae - disseminates, or provides access to, any information pursuant to his employment or contract
-- s with the C or his employ with such cf .
+VJUNE 1967
 
-JUNE 1967
+~
 
-: OAK RIDGE NATIONAL LABORATORY
+OAK RIDGE NATIONAL LABORATORY
 Oak Ridge, Tennessee
-; operated by
+. operated by
 UNION CARBIDE CORPORATION
+for the
+U.S. ATOMIC ENERGY COMMLISSION
 
-oo’ for the
-
-U.S. ATOMIC ENERGY COMMISSION
-
-BIETREUTION OF THIS DOCUMENT IS UNLIMITED,
+BETRIEUNON OF THIS DOCUMENT IS UNLIMITED
 
  
  
+
+3
+w
  
 
  
 
- 
+LA
 
-HY “§
+C
+
+‘h‘ﬁ? ﬁi
 
 iii
 
-CONTENTS
+CONTIENTS
 
-Page
+Abstraoct ..;O......C‘...'.\............................OO..'...‘....
 
-ADSELOCE ooo eeeeeesnsossecesassasossesssnnsscssonssssssessesnsss
+Descriptioﬂ Of the MORE cvcecncccscscans
 
-Description Of the MSRE +eeeeeeeeennnceeoennnnnsaseennnnnnseos ..
+Krypton-85 Experiment.............................;..
 
-Krypton-85 Experiment Soo 00 ees sees 0000000008000
+Description of the Problem ....c0ccce0s0see.
 
-Description of the Problem .ccoceeoccecscecsccss
+Description of the Experiment-............
 
-Description of the Experiment ce.ceeececeescesscsccvsccecsnns
+Procedure and Description of Runs
 
-Procedure and Description of RUNS seeecessecccsccccecssencnas
+General Approach
+Pump Bowl Dynamics
 
-Analysis of the 85kr Experiment ts eeeesesecssseessssssacansaraons
+Xenon Stripper Efficiency .
 
-General Approach .ccceceecscceccssssvscsonssnss
-Pump Bowl Dynamics ....... cecectesessenecnnns .
+- Mass Transfer to Graphite
 
-Xenon Stripper Efficiency cecvceseesceccecennes
+Capacity Considerations ...
+Xenon-135 Poisoning in the MSRE
 
-- Mass Transfer to Graphite ....... verse crecesaccss cease esene
+Analysis of the 85Kr Experiment .....
 
-Capacity Considerations e..ccecececscescocnnns
+'l.ll..'............'l..'..'
 
-Xenon-135 Poisoning in the MSRE ...eeeecersccnsces
+4 5 & & 0 a8 s 0B
 
-General DiSCUSSION ceveeocscescsoscssccscsoasennns eevcscesed
+* P& 850 H e
 
-Dissolved Xenon Source Terms and Considerations .ee.eecec..
+s 8 0 5 * 8 &0
 
-~ Dissolved Xenon Sink Terms and Considerations ...... ceeass
+General DiscUSSIiON ceevescscssvsesescsccncs
 
-Other Assumptions and Considerations ....ccciceeeen seeeces
+Dissolved Xenon Source Terms and Considerations .....
 
-Xenon-135 Generation Rate ....ccccccvvnneenn..
+" Dissolved Xenon Sink Terme and Considerations .
 
-Xenon-135 Decay Rate in Salt ............0..
-Xenon-135 Burnup Rate in Salt ......... Pe
+Other Assumptions and Considerations ..........
 
-Xenon-135 Stripping Rate erat eetereiiiieeeeeieaaaas
+Xenon-135 Generation Rate .
 
-Xenon-135 Migration to Graphite i..cceviecnes
-Xenon-135 Migration Rate to Circulating Bubbles ..........
+Xenon-135 Decay Rate in Salt .....cc0..
 
-Xenon-135 Concentration Dissolved in Salt .....coveeraens.
+‘Xenon-135jBurnup Rate in Salt .
 
-Xenon-135 Poisoning Calculations secoseecsceseccccecnccecesen
+Xenon-135 Stripping Rate ..........;.,5............,.
+
+* 0 8 0 0 85 00088 P s S b
+
+Xenon-135 Migration to G’raphite e s e s e s e es a0 se
+Xenon-135 Migration Rate to Circulating Bubbles ..e.uuec.ss
+
+Xenon-135 Concentration Dissolved in 881t ceescesccocacoes
+
+Xenon-lBSrPoisoning Caleulations veeecevesensoecconcscrsasnns
 
 Estimated 135Xe Poisoning in the MSRE Without
-Circulating Bubbles .ccoceceecascenqoccscesccssescnccones
+circl]latingBubbleS ..........‘....*.......‘.‘..".'.....
 
-Estimated 135Xe Poisoning in the MSEE With
+Estimated 135Xe Poisoning in the MSRE With
 
-Circulating Bubbles "sess srs sssss sce ss sess sss reese.
+CirculatingB.ubbles Il..l‘....v........'.....O...'....I’...'
 
-Conclusions Sees sees s es es esse Nsass sss sss esses seas RRR IELETS
+Conc,luSionS .l'l..-ll..O.I'il'.l..!........‘.....'..t........‘..l..
 
-Acknowledgments «ccoeecececascensoccnccsccercrcscsooscnsacsonnas
+Acknowledgments ...sceceseocecsaneass
 
-References ceeoceceecsscsccnsssscoascsosssensssoncas
+References ‘..‘.........I......'.....'........'....‘.‘.‘
+
+.8 00 e PP
+
+¢ o8& s s
+
+page
 
  
 
-Oo 22 Nn HH
+O 33Ny
 
 12
+
 18
+
 18
 25
 29
@@ -260,7 +273,7 @@ Oo 22 Nn HH
 41
 42
 
-SRERRRD
+SRERERRG
 
 47
 48
@@ -280,92 +293,94 @@ SRERRRD
 
  
 
-Appendix A.
-Appendix B.
-Appendix C.
+ 
 
-Appendix D.
+Appendix A.
+
+Appendix'B..'
+Appendix C.
+Appehdix D.
 
 iv
 
-MSRE Parameters «eceeceessscssscssssssasessacsnsces
+mREParameterS .....‘.‘OI‘..’...........l;‘.‘I.........
 
-‘Salt-to-Graphite Coupling so 00000 ses 0s00 ses ROBO IPS
+Sa.lt-tO-GI‘aphite Coupling -orc_o.oo.oooooo-‘oo-oaoo--o
 
-Theoretical Mass Transfer Coefficients Yeeeennnaann
+_Theoretical Mass Transfer Coefficients }........,;.
 
-Nomenclature ssesessesencsstoesesses assess csscsances
+NomenCJ.atlJre .'C.Illl.l.I...-...0.0....‘0“"........
 
 65
 66
-
 71
+
 73
 
-oft
+of 4
 
-~)
-vv
+~.i
+Y
  
 
  
-
-« .
 
  
 
 1
 
-DEVELOPMENT OF A MODEL FOR COMPUTING 13%Xe =
+DEVELOPMENT OF A MODEL FOR COMPUTING 12%Xe
 MIGRATION IN THE MSRE
 
-.R. J. Kedl A. Houtzeel
+- R. J. Kedl A. Houtzeel
 
 Abstract
 
-The Molten Salt Reactor Experiment (MSRE) is a fluid-
+ The Molten Salt Reactor Experiment (MSRE) is a fluid-
+
 fueled reactor with a potential as a thermal breeder. Because
 of the importance of neutron economy to the breeder concept, it
-is necessary to know the dynamics of 135%e in the circulating-
-fuel system. There are several "sinks" where xenon may be de-
+is necessary to know the dynamics of 135%e in the 01rculat1ng—
+
+- fuel system. There are several "sinks" where xenon may be de-
 posited from the fuel, notably in the gas space of the pump
 
-~ bowl and in the voids of the unclad graphite of the reactor
-core. Since '2%Xe in the core impairs the neutron economy, it
+- bowl and in the voids of the unclad graphite of the reactor
+core. Since *?%Xe in the core impairs the neutron economy, it
 is important to understand the mass transfer mechanism involved
 and the parameters that may be varied to control it.
 
-This report deals primarily with developing a model for
-computing the migration of 135%e in the MSRE and with experi-
+This report deals prlmarlly with developing 'a model for
+computing the migration of. 135%e in the MSRE and with experi-
 ments conducted to establish the model. A preoperational ex-
-periment ‘was run in the MSRE with 85kr tracer, and many of the
-gas-transport constants were inferred from the results. Equiva-
-lent transport constants for calculating the 135Xe migraticn
+periment ‘was ‘run in the MSRE with 85kr tracer, and many of the
+gas~-transport constants were 1nferred from the results. Equiva- .
+lent transport constants for calculatlng the *35Xe migraticn
 
-“gave a poisoning of about 1. 4% without circulating bubbles and
+- “gave & poisoning of about 1. 4% without circulating bubbles and
 well below 1% with bubbles. Preliminary measurements made on
-the critical reactor show xenon poisoning of 0.3 to 0.4%. Since
-‘physical measurements confirm that there are bubbles in the sys-
+the critical reactor show xenon poisoning of 0.3 to 0.4%. Slnce
+1phys1cal measurements confirm that there are bubbles in the sys-
 tem, the conclusion is drawn that the computation model, the
-krypton experiment, and reactor operation agree.
+krypton experlment and reactor operatlon agree.
 
-The goal of the Molten Salt Reactor ‘Program is to develop an effi-
-cient pover-producing, thermal-breeding reactor. The Molten Salt Reactor
-Experiment (MSEE) is one step. toward that goal, although it is not a
+The goal of the Molten Salt Reactor Program is to develop an effi-
+01ent power-produclng, thermal—breedlng reactor. The Molten Salt Reactor
+Exper1ment (MSRE) is one step toward that goal, although it is not a
 
-breeder. Nuclear poisons, notably 135%e, can detract significantly from
+breeder. Nuclear p01sons, notably 135Xe, can detract S1gn1f1cantly from
 
-“the breeding potential. It was therefore considered appropriate to in-
+fthe breed1ng potentlal It was therefore con31dered approprlate to in-
 
-vestigate in some detail the dynamics of noble, gases in this pilot-plant-
+:vestigate in some detall the dynamlcs of noble gases 1n th1s pllot-plant-
 
-scaled reactor and with ‘this information to predict quentitatively ‘the
-xenon poisoning. Le :
-The 135%e poisoning is a function of the steady-state 135%e c concen-
+scaled reactor and w1th thls 1nformatlon to predlct quantltatlvely the _
+xenon p01soning.%v: } _ _
+The 135%e polsonlng is a functlon of the steady-state 135Xe concen-
 
-‘tration in the reactor core. It is computed by balancing the rates as-
+'tratlon 1n the reactor core.‘ It is computed by balanclng the rates as—
 
-‘sociated with the various source and sink terms involved. Since the MSRE
+'soclated w1th the varlous source and s1nk terms 1nvolved. Slnce the MSRE
 
 is fluid fueled, xenon and iodine are generated directly in the salt, ‘and
 
@@ -376,136 +391,167 @@ is fluid fueled, xenon and iodine are generated directly in the salt, ‘and
 
  
 
- 
+the source term is essentially a constant.  The sink terms, however, are
+more complex. Xenon may be removed from the system via a stripping de- '
 
-the source term is essentially a constant. The sink terms, however, are
-more complex. Xenon may be removed from the system via a stripping de-
-vice, it can decay or be burned up in the salt, or it may be absorbed by
+vice, it can decay or be burned up in the-éalt, or it may be absorbed by
+
 . the graphite and ultimately decay or burn up. Xenon may also be absorbed
-by circulating helium bubbles, which complicate the model because of
-their relatively unknown dynamics.
 
-This report is concerned principally with developing a model for
-estimating the 135%e poisoning in the MSRE. However, the first part dis-
-cusses an experiment, referred to as the krypton experiment, in which
+by circulating helium bubbles, which complicate the model because of
+their relatlvely unknown dynamics.
+This report is concerned principally W1th developing a model for
+
+estlmatlng the 135%e p01son1ng in the MSRE. waever, the first part dls-
+
+cusses. an experiment, referred to as the krypton experiment, in which
 
 some of the more elusive rate constants were evaluated.’
 
 DESCRIPTION OF THE MSRE
-/ . . I
+The MSEE is a circulating-fluid-fueled graphite;moderated{single-
 
-The MSRE is a circulating-fluid-fueled graphi te-moderated 'single-
 region reactor. The fuel consists of uranium fluoride dissolved in a
-mixture of lithium, beryllium, and: zirconium fluorides. The normal oper=-
+mixtume of lithium, beryllium, and zirconium fluorides. The normal oper=-
 ating temperature is 1200°F, and the thermal power level is 7.5 Mw. The
 reactor system consists of a primary loop containing the core and a sec-
-ondary loop to remove the heat. Our concern is only with the primary
-loop, a schematic diagram of which is shown in Fig. 1. Essentially it
-consists of a pump, heat exchanger, and reactor core. A detailed de-
-scription of the MSRE is contained in Ref. 1, and pertinent design pa-~’
-rameters are listed in Appendix A. -
+ondary loop to remove the heat. Our ‘concern is only with the primary
+loop, & schematic diagram of which is shown in Flg. 1. EsSentiaily it
+consists of a pump, heat exchanger, ‘and reactor core. A detailed de-
+seription of the MSRE is contained in Ref. 1, and pertinent design pa-'
+remeters are listed in Appendix A. ~
 
 " Figure 2 shows details of the fuel pump. It is rated for 1200 gpm
-at a 48.5-ft head. The volute is completely enclosed in a vessel re-
-ferred to as the pump bowl, which serves primarily as an expansion vol-
+at a 48.5-f% head.' The volute is completeiy enclosed in a vessel re-
+ferred to as the pump bowl, which serves prlmarlly as an expansion vol-
 ume for the fuel salt. The overflow tank serves as an additional expan-
-sion ‘volume for the system and is fed by an overflow line that penetrates
-up into the pump bowl. The normal operating helium pressure in the pump
-bowl is 5 psig, which is also the pump suction pressure. There is a
-continuous flow of salt and helium through the pump bowl. The principal
-salt flow is through the xenon stripper, which is a toroid containing
-numerous small holes that spray salt through the helium atmosphere. The
-"salt flow is controlled with an orifice and has been calculated to be
+
+51on volume for the system.and is fed by an overflow llne that penetrates
+
+up 1nto the pump bowl. The normal operatlng hellum.pressure in the pump
+
+bowl is 5 psig, which is also the pump suctlon pressure. -There is a
+continuous flow of salt and hellum.through the pump bowl. The pr1nc1pal
+
+salt flow is through the xenon strlpper, which is a toroid contalnlng
+
+numerous small holes that spray salt through the hellum atmosphere. The -
+
+'"salt flow is controlled with an orifice and has been calcu;ated to be
  
 
  
 
-« Fh
+e b s
 
- 
+(\‘h '.1 Yy
 
-C
+S
 
- .
+st |
+
+.
 
 ORNL-DWG 67-1955
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
 PUMP
+
+ 
+
+ 
+
 MOTOR
-TOTAL FLOW - a PRESSURE Ref. H[LEURGE GAS 5 4 STD fiter/min
-0.9 STD liter/min il FF GA
-BUBBLER (2) 9 S —e=3.3 STD liter/min
-XENON STRIPPER— : SAMPLER-ENRICHER PENETRATION -
-SALT LEVEL: 7 AL
-PUMP BOWL—" “HX = 5a
-VOLUTE—" Tf “SECONDA
-1. (( HEAT EXCHANGER SYSTEM RY
-] | E So PIPING
-OVERFLOW TAN : i =
-"CONTROL ROD
+TOTAL FLOW - {B”BE“'ER PRESSURE Ret. [{[EERBSECAS L 5 4 570 iiter/min
+0.9 STD fiter/min - e ] FF GA
+BUBBLER (2} OFF GAS 3.3 STD liter/min
+XENON STRIPPER— . ] : I SAMPLER-ENRICHER PENETRATION -
+SALT LEVEL 7H] AL
+. 7, :
+PUMP BowL—" e
+
+ 
+
+VOLUTE:
+
+ 
+
+OVERFLOW TANK|
+
+  
+
+. CONTROL ROD -
 CONNECTIONS
-i © SALT FLOW RATE,
-= gpm
-} =
-3
-FREEZE FLANGE
-|lcore
-J U\
+
+ 
+
+ 
+
+ 
+
+ 
+
+SALT FLOW RATE,
+" 1200 gpm
+
+ 
+
+ 
+
+ 
+
+ 
+
+l‘nFREEZE FLANGE
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
 
 FREEZE VALVE FOR
-A FILLING AND DRAINING
+‘T FILLING AND DRAINING
 
-Fig. 1. Schematic Diagrem of MSRE Primaiy Loop.
-about 50 gpm, but it has not been measured directly. The resulting high-
+Fig. 1. Schematic Diagram of MSRE Primary Loop.
 
-velocity jets impinging on the molten salt cause a large amount of splash-
-ing and turbulence; consequently, bubbles are transported into the loop.
-
+about 50 gpm, but it has nhot been measured directly The resultlng high-
+velocity Jjets impinging on the molten salt cause a large emount of splash-
+'ing and turbulence;'consequently, ‘bubbles are transported'lnto the loop.
 "It will be shown later that a very small quantity of circulating bubbles
+has & very pronounced effect on xenon dynamlcs.' In addition to the strip-
+per there is salt flow of about 15 gpm' from behind ‘the 1mpeller, through
+‘& labyrinth along the shaft, end into the pump bowl. The principal helium
+flow through the pump bowl is 2. éwstd liters/min purgeﬂdowﬂ'the shaft to
 
-has & very pronounced effect on xenon dynamics. In addition to the strip-
-per there is salt flow of about 15 gpm from behind the impeller, through
-a labyrinth along the shaft, and into the pump bowl. The principal helium
-flow through the pump bowl is 2.4 std liters/min purge down the shaft to
-prevent radioactive gases and salt mist from reaching the bearing region
+ ‘prevent radiosactive gases and salt mist from reaching the bearing region
 
 of the pump. There is an additional helium flow of 0.9 std liters/min
 
@@ -516,74 +562,74 @@ of the pump. There is an additional helium flow of 0.9 std liters/min
 
  
 
-ORNL-~LR-DWG-56043-BR1
+ORNL-LR-DWG-56043-BRI
 
-     
- 
- 
- 
-   
-  
- 
    
   
  
  
+   
+   
  
    
   
+ 
+ 
+ 
+   
+   
   
    
   
+   
+ 
+ 
   
  
- 
- 
-  
   
  
 
 SHAFT WATER
-COUPLIN : COOLED
-: MOTOR
+COUPLING - COOLED
+. MOTOR
 
-‘SHAFT SEAL
+'SHAFT SEAL
 
 LEAK
 DETECTOR
 
-: UBE OIL BREATHER
+UBE OIL BREATHER
 LUBE OIL IN
 
 .
 
 BALL BEARINGS
-
 (Face to Face) BEARING HOUSING
 
 BALL BEARINGS GAS PURGE IN
 
 (Back to Back) SHAFT SEAL
 
-SHIELD COOLANT PASSAGES
-(In Parallel With Lube Oil)
+LUBE OIL ouT SHIELD COOLANT PASSAGES
 
+{In Parallel With Lube 0il)
 SHIELD PLUG
 
-LUBE OIL OUT
+GAS PURGE OUT
 
 SEAL OIL LEAKAGE
-DRAIN -
+DRAIN :
 
-LEAK DETECTOR GAS PURGE OUT
+LEAK DETECTOR
 
 SAMPLER ENRICHER
-(Out of Section)
 
 GAS FILLED EXPANSION
+(Out of Section)
+
 SPACE
 
-STRIPPER
+ENON STRIPPER
 (Spray Ring)
 
 SPRAY
@@ -593,137 +639,137 @@ HELIUM
 OPERATING
 LEVEL
 TAGNANT
-GAS .
+GAS ’
 HELIUM BUBBLER
 CONFIGURATION
 
 .To Overflow Tank
 Fig. 2. MSRE Fuel Pump.
 
-from two bubblers and one pressure-reference leg, which comprise the bub-
+from two bubblers and one pressure-referenc_e leg, whichl cornprise the bub-
 bler level indicator. Helium for each bubbler goes through a semitoroid
-located in the pump bowl, as shown in Fig. 2. Helium enters the semi-
-toroid at the end and leaves in the middle; therefore, half the semi-
-toroid is stagnant gas. This stagnant kidney will be referred to in the
-analysis of the krypton experiment.
-
+located in the pump bowl, as shown in Fig. 2. Helium eﬁters the semi-
+tor01d at the end and leaves in the middle; therefore, half the semi-
+toroid :|.s stegnant gas. This stagnant kidney will be referred to in the )
+ana.lysm of the krypton experiment. , , _ o -
 Figure 3 is an isometric view of the reactor core. Fuel salt enters
 
 the core vessel through a flow distribution volute and proceeds down an
 
-CU
+O
 
-( A |
+(!_}__Q\ l‘w
 
-%®
-
-TC
+¢
  
 
-5:
+5.
+
+annular-region bounded by the vessel wall and the moderator. container.
 
  
 
-annular region bounded by the vessel wall and the moderator container.
-. The fuel then travels upward through the graphite moderator region and
-out the top exit pipe. . Figure 4 shows how the moderator bars fit to-
-
-gether to form fuel channels. ' The graphite is unclad and in intimate
-
-ORNL-LR-DWG 61097R{
-
- 
-
-FLEXIBLE CONDUIT TO
-CONTROL ROD DRIVES
-GRAPHITE SAMPLE ACCESS POR Co
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
+  
    
-
+   
  
-
-< »~COOLING ‘AIR LINES
-‘we oP
-He
-z © ©
-Ll ~ACCESS PORT COOLING JACKETS
-“ [I a
-| FUEL OUTLET- SI EACTOR ACCESS PORT
-CONTROL ROD THIMBLES
-OUTLET STRAINER
-CORE tHE
-CENTERING GRI «
-~ |
-= )
-v »
-I
-\ ne FLOW DISTRIBUTOR
-. 4
-} . os s : a
-GRAPHITE-MODERATOR ° me] a PE
-| STRINGER ) = a ok
-‘ & oq, oF
-Loa
-o ) A
-| FUEL INLET
-7 | oe
-i REACTOR CORE CA
-REACTOR VESSEL
-VESSEL DRAIN LINE a SUPPORT GRID
-
-Fig. 3. Reactor Vessel and Access Nozzle.
-
- 
-
- 
- 
-
- 
-
- 
-
- 
-
-6
-
-contact with the fuel salt, and therefore 135%e may diffuse into its
-porous structure; the graphite acts as a '3%Xe concentrator in the core.
-The theoretical void percentage of MSRE graphite (grade CGB) is 17.7%,
-and slightly over half of it is accessible to a gas such as xenon. 2
-Other pertinent properties of this graphite are listed in Appendix A,
-and more detailed information is available in Refs. 3 and 4. The rate
-at which 25Xe diffuses to the graphite .is a function of the salt-to-
-graphite mass transfer coefficient, which is, in turn, a function of the
-fuel-salt Reynolds number. :
-
-The moderator region can be divided into three fluid dynamic regions
-.of interest. First there is the bulk of the graphite (~95%), which is
-characterized by salt velocities of about 0.7 ft/sec and a Reynolds num-
-
-ber of about 1000. One would expect laminar flow; however, the entrance
-
-ORNL~LR-DWG 56874 R
-
     
    
 
-PLAN VIEW
+  
+   
+
+ 
+
+ 
+
+   
+
+          
+ 
+  
+    
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+_ - The fuel then travels upward through the graphite moderator region and
+f ' out the top exit.pipe. . Figure 4 shows how the moderator bars fit to-
+gether to form fuel channels. ' The graphite is unclad -and in intimate
+ORNL-LR~ DVIG/ S1097R4
+] _ . __FLEXIBLE CONDUIT TO
+A CONTROL ROD DRIVES
+§ GRAPHITE SAMPLE ACCESS POR S~ ‘ .
+Lo ~COOLING AR LINES
+%
+o~
+FUEL OUTLET- N
+CONTROL ROD THIMBLES
+3 - ‘ ‘i OUTLET STRAINER
+| CORE |
+! CENTERING GRID it
+i Jd0
+3|
+N
+KR FLOW DISTRIBUTOR
+R
+AP A» ¢
+SRR
+o
+) GRAPHITE-MODERATOR
+- STRINGER— _
+A
+. ‘ FUEL INLE'I'-/
+REACTOR CORE CAN—"
+]
+REACTOR VESSEL—"
+ANTI-SWIRL VANES CMODERATOR
+VESSEL DRAIN LINE SUPPORT GRID
+= Fig. 3. Reactor Vessel and Access Nozzle.
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+contact w1th the fuel salt, and therefore 135Xe mey dlffuse 1nto its
+porous structure; the graphlte acts as & 13%Xe concentrator in the core.
+The theoretical void. percentage of MSRE graphite (grade CGB) is 17. 7%,
+and slightly over half of it is accessible to a gas such as xenon.2
+Other pertinent properties of this graphite are listed in Appendix A,
+
+and more detailea information is available in Refs. 3 and’é. The rate
+
+- at which 135Xe diffuses to the graphite.is a function of the salt-to-
+
+graphite mass transfer. coeffr01ent Whlch is, in turn, a function of the
+
+- fuel-salt Reynolds number.
+
+The moderator reglon can be d1V1ded into three fluid dynamic regions
+
+of interest. First there 1s_the bulk of the graph1te_(~95%), which is
+
+characterized by salt velocities of about 0.7 ft/sec and a Reynolds num-
+
+ber of about 1000. One would expect laminar flow; however, the entrance
+. ," L B} —
+
+ORNL-LR-DWG 56874 R
+
+   
+  
 
 TYPICAL MODERATOR STRINGERS
 
@@ -731,11 +777,11 @@ SAMPLE PIECE
 
 NOTE: NOT TO SCALE
 
-‘2,
+(@’,
 
-Fig. 4. Typical Graphite Stringer Arrangement.
+Fig§'4.' Typical Graphite Stringer Arrangement.
 
-Nd
+o
  
 
  
@@ -744,50 +790,52 @@ Nd
 
  
 
-EU
+A“ «
 
-to these channels is orificed and quite tortuous because of a layer of
+to these channels is orificed end quite tortuous because of a layEr of
 graphite grid bars across the bottom of the moderator that are used to
-space and support the core blocks. The effective mass transfer coeffi-
+space and support the core blocks. The effective mass trahsfer coeffi-
 cient is probably somewhere between the coefficients for laminar flow
-
 and turbulent flow. The second fluid dynamic region is composed of the
 centermost channels in the core (about 18). : They do not have orificing
 grid bars below them, so the fuel velocities are higher, about 1.8 ft/sec,
 and give a Reynolds number of about 2500. Accordingly the mass transfer
 coefficient is higher than for the bulk of the graphite and is for tur-
-bulent flow. This region comprises about 1.5% of the graphite and is in
-a zone of high nuclear importance. The third fluid dynamic region is
+bulent flow. This region comprises about 1.5%_of the graphite and is in
+a zone of high nuclear importance. The third“fluidtdynamic region is
 
-the lower layer of graphite grid bars mentioned above, which do the ori-
-ficing. These grid bars are subject to high salt velocities, a maximum
+the cherulayer of graphite grid bars mentioned above, which do the ori-
+
+~ ficing. These grid bars are subject to high salt velocities, a maximum
+
 of about 5 ft/sec, and comprise a fluid dynamic entrance region. In ad-
-dition, the jets formed by the grid bars impinge on the bottom of the
+dition, the jets formed by the grid bars impinge on the bottom.of the
+
 core blocks. The entire region then is subject to much higher mass trans-
-fer coefficients than the bulk graphite. This region is not too well
+fer coefficients than the bulk graphite."This region is not too well
 defined but probably comprises about 3.5% of the total graphite. It is
 
 in a zone of very low nuclear importance.
 
 KRYPTON-85 EXPERIMENT
 
-Description of the Problem
+‘Deseription of the Problem
 
-Xenon-135 poisoning in the MSRE was considered previously, *77 but
+Xenon-135 p01son1ng in the MSRE was. cons1dered prev1ously,5__7 but
 
-‘these calculations were generally of an approximate design nature be-:
+cthese calculatlons were generally of an approx1mate design nature be-:
 
-cause of lack of information on the values of the rate constants in-
-volved. | In order to calculate the steady-state 13570 poisoning in the
-reactor, it was first necessary to compute the 135%e concentration dis-
+cause of lack of 1nfbrmat1on on the values of the rate constants in-
+volved.: In order to calculate the steady -state 135Xe poisoning in the
 
-solved in the salt. This was done by equating the various source and
+reactor, it was first necessary to compute the }35Xe concentration dis-~
 
-sink rate terms involved, and solving for the xenon concentration. The
+~solved in the salt. This was done by equating the various source and
+_sink rate terms involved and solv1ng for the xenon concentration.. The
 
-. most significant 135K source tern is that which comes from the decay
+_ most signlflcant 135Xe source term 1s that Wthh comes from the decay
 
-of 1351, in addition a small amount is produced directly from fission.
+of 1351 in addition a small amount is produced dlrectly from fission.
 
 The sink terms are discussed in some detail later, but we will initially
 
@@ -804,30 +852,33 @@ consider only the following terms and their associated rate constants:
 
 Principal Rate
 
-135 :
+135 : _
 Xe Sink Term Constants Involved
 
  
 
-1. Dissolved 135Xe that may be Stripping efficiency
-transferred to the off-gas
+ 
+
+1. Dissolved 13°Xe that may be ' Stripping efficiency
+' transferred to the off-gas |
 . system via the xenon strip-
-per ;
 
-+ 2+ Burnup of dissolved 13%Xe as ~~ Burnup constant
-it passes through core
+per _ |
+- 2. Burnup of dissolved '?°Xe as  Burnup constant
+it passes through core ' '
 
-3. Decay of dissolved 135%e . Decay constant
+3. Decay of dissolved 135%e - Decay constant -
 
 4. Migration of dissolved 135%e Mass transfer coefficient, dif-
 to the graphite; ultimately fusion coefficient of xenon
 this 135Xe will either de- in graphite, decay constant,
-cay or be burned up and burnup constant’
+cay or be burned up and burnup constant ‘
 
-5. Dissolved }3°Xe that may be Mass transfer coefficient, de-
-transferred into circula- cay constant, burnup constant;
+5. Dissolved 135%e that may be - Mass transfer coefficient, de-
+
+- transferred into circula- cay constant, burnup constant,
 ting helium bubbles, if and bubble stripping effi-
-present; this 135%e will ul- ciency in the pump bowl
+present; this '3%Xe will ul-  ciency in the pump bowl
 
 timately be burned up, de-
 cay, or be stripped in the
@@ -835,29 +886,31 @@ cay, or be stripped in the
 pump bowl
 
 The stripping efficiency of the pump bowl spray ring was measured
-at the University of Tennessee as part of a masters degree thesis.®»?
-This work was done with a CO,-water system maintained bubble free and
-later confirmed with and Oj-water system, also maintained bubble free.
+at the University of Tennessee as part of a mesters dégree thesis.8»?
+This ﬁork was done with a COg-ﬁater system maintained bubble free and
+later confirmed with and O,-water system, also maintained bubble free.
 
 A prototype of the xenon stripper was used in these tests. It was felt
-desirable to check the results with a xenon and salt system, particularly
-with circulating bubbles present.
 
+desirable to check the results with & xenon and sal# system, particulériy
+
+with circulating bubbles present. )
 Xenon-135 burnup and decay rates are relatively well known. Migra-
-tion of xenon to graphite is controlled ‘by the mass transfer coefficient
-and by the diffusion coefficient of xenon in graphite. The mass trans-
-fer coefficient can be estimated from heat-mass transfer analogies (see
-Appendix C), but the unknown mode of fluid flow (laminar or turbulent);
-‘the unwettability of graphite by molten salt, the question of mass trans-
-fer to a porous surface rather than a continuous surface, and some natu-
+tion of xenon to graphite is controlled-by the mass transfer coefficient
+and by the diffusion coefficient of xenon in graphite; The mass trans-
+
+- fer coefficient can be estimated from heat-mass transfer anaiogies (see
+Appendix C), but the unknown mode of fluid flow (lamiﬁar or turbulent);
+'the unwettability of graphite by molten salt, the question of mass trans-
+fer to a porous surface rather than s continuous SurfaCe, and some natu-
 ral resistance toward assuming a high degree of reliability for the heat-
 mass transfer analogies made the estimated coefficients seem questionable.
 
-The quantitative effect of circulating bubbles was almost completely
+The quantitative-effect of circﬁlatihg bubbles was almost completely
 
-m2
+el
 
-CG
+G
 
 r
  
@@ -866,15 +919,11 @@ r
 
  
 
- 
+Wt
 
- 
+u“‘
 
-"
-
-ol
-
-oA
+o
 
 <
 
@@ -884,11 +933,12 @@ oA
 
 9
 
-unknown, except that their effect would be prominent because of the ex-
-tremely low solubility of xenon.in salt. In addition there may be other
-effects not considered. Generally the state of knowledge of the rate
+- unknown, except that their effect would be prominent because of the ex-
+
+tremely low solubility of xenon in salt. In addition there may be other
+effects not considered. Generally fhe state of knowledge of the rate
 constants was considered somewhat wanting. Each of these rate constants
-could be investigated individually in the laboratory, but this would be
+could be investigated individually in the laboratory, but this would Sé
 too expensive and time consuming. Rather, after other approaches were
 considered, it was decided to conduct a single summary experiment on the
 reactor and extract as many of the rate constants as possible, or at
@@ -901,29 +951,35 @@ _ Description of the Experiment
  
 
 Essentially the experiment was divided into two phases and took place
-during the precritical period of MSRE operations. The first phase was
-an addition phase and. consisted of adding 85Kr to one of the pump-bowl
-level-indicator bubbler lines at a steady rate for a period of time. Dur-
-ing this phase the pump bowl reached some equilibrium 85Kr concentration
+during the précritical period of MSRE operations. The first phaSe was
+an addition phase and consisted of adding ®°Kr to one of the pump-bowl
+level-indicator bubbler lines at a steady rate for a period of time. Dur- -
+ing this phase tpe pump bowl reached some equilibrium 85Ky concentration:
 almost immediately; then the salt dissolved krypton via the xenon-strip-
-per spray ring; and the graphite absorbed krypton from the salt. The
-second phase began by turning off the krypton flow but maintaining all
-bubbler and purge helium flows. Then the reverse processes took place.
-The pump bowl purged clean of krypton; the salt was stripped; and finally
+per sprayfring;‘and the graphite absorbed krypton from the salt. The
+second'phasé'began by turning off the krypton flow but maintaining all
+bubbler and purge helium flows. Then the reverse processéS'took place.
+The pump bowl purged clean of kryptoﬁ; the'salt ﬁas stripped; and finally
 the graphite was leached. During the entire experiment the off-gas line
 
-was monitored continuously with a radiation counter. By analyzing the
+wes monitored cdntinuously with a radiation counter. By analyzing the
 
-krypton concentration decay rate if the off-gas during the stripping
+krypton cdnCentration‘decay rate i the off-gas during the stripping
 
 phase of the experiment, we evaluated some of the rate constants in-
-volved. The experiment had the advantage of evaluating the actual reac-
-tor under operating conditions rather than models under simulated con-
-ditions. The experiment had the limitation that several parameters had
-to be evaluated from essentially a single sét of data and were therefore
-subject to a certain amount of personal interpretation. Also, transient
-experiments are inherently more difficult to analyze than steady-state
-experiments. Xrypton-85 was chosen for the experiment primarily for ease
+volved. The experiment'had'the advantage of evaluating the actual reac-
+
+tor under operating conditions rather than models underrsimulated con-
+
+‘ditions. The experiment had the limitation that several parameters had
+
+to.be evaludted from esséntially:a single set of data and were therefore
+
+subject to a certain'amouht_ofjpersonal'interprétation. Also, transient
+
+experimehts are inherentlyfmorewdifficult to analyze than steady-state
+experiments. Krypton-85 was chosen for the experiment primarily for ease
+
 of continuous monitoring at low concentrations in the off-gas line; also
 
 its low cost and availability were considerations.
@@ -933,56 +989,57 @@ its low cost and availability were considerations.
 
  
 
+ 
+
 10
 
-Figure 5 is a schematic diagram of the krypton experiment facilities.
-Basically, it consists of an addition station and a monitoring station.
-The addition station controls the flow of an 8%Kr-He mixture into bubbler
-line 593. The normal bubbler flow of pure helium (0.37 std liters/min)
-was maintained to transport the krypton-helium mixture into the pump bowl.
-The reactor contains two bubblers. The second bubbler was used to per-
-form its various reactor control functions.
+Figure 5 is a schematic diagram of the krypton experiment‘facilities.
+Bésically, it consists of an addition station ahd a monitoring station.
+The'additioﬁ station controls the flow of aﬁ 8 5Kr-He mixture into bubbler
+line 593. The normal bubbler flow of Pure helium (0.37 std liters/min)
+was maintained to transﬁort the krypton-helium mixture into the pump bowl.
+The reactor contains two bubblers. The second bubbler was used to;per-
+form its various reactor control functions. |
 
-The krypton-helium container was made from 12-in. sched.-80 carbon
+- The krypton-helium container was'made‘from 12-in. sched.-80 carbon
 steel pipe and pipe caps and was about 5 ft long. It was hydrostatically
-tested at 520 psig. On one end was a U-tube and valve arrangement that
-was used to transfer Kr from its shipping container to the experiment
+tested at 520 psig. On one end was a‘U-tube and valve arrangement that
+was used,to transfer &%Kr from its shipping container to the experiment
 container. The transfer was accomplished by first evacuating the experi-
-. ment container and then opening the valve on the shipping container. This
-‘resulted in about 95% transfer. The remaining krypton was transferred by
-using the U-tube as a cold trap and freezing it with liquid nitrogen.
 
-ORNL-DWG 67-1956
+, ment container and then opening the valve on the shippihg container. This
+‘fesulted in about 95% trdnsfer. The remginihg krypton was transferred by
+
+using the U-tube as & cold trap and freezing it with liquid nitrogen.
+
+ORNL-DWG &7-1956
+
+      
+  
+
+ 
+
+ 
+
+ 
+
+ 
+   
+
+ 
 
 ROCKER DRIVE
-
-   
-    
-
- 
-
- 
-
- 
-
- 
-     
- 
-
- 
-
- 
-
- 
-
-' MSRE BUBBLER ¥
-H FCO "LINE 593 "RADIATION
-LIMITING FLOW VALVE © MONITOR ¥
-—— Pé
+/ y /MSRE BUBBLER ¥
+_._._ LINE 593 " RADIATION x
+’ MONITOR
++ L il
 A
-Ba) Kr-He
-\_ / CONTAINER kt etl
-TRAI B
+BALLY  Kr-He —a
+\. ./ CONTAINER £ o B =
+
+ 
+
+ 
 
  
 
@@ -992,12 +1049,13 @@ TRAI B
 
 ale
 
-re
+L]
+
+4 F@ _ MONITOR
+
+SYSTEM
 
  
-
-MONITOR
-SYSTEM
 
  
 
@@ -1017,113 +1075,121 @@ ADDITION SYSTEM
 /
 VALVING SET UP FOR ADDITION PHASE OF EXPERIMENT
 
-Ce OFF GAS
+tMSRE OFF GAS
 
 LINE 522
 
  
 
-Fig. 5. Schematic Diagram of Experimental Equipment.
+Fig. 5. Schematic Diagram of Experimentel Equipment.
 
 «
 
-4
+C
 
-Co
+.
  
+
+ 
 
  
 
 #
 
-3
+3 |
 
 "
 
-+4
++§
 
-uh
+i
+
+o
 
 ”
 
 11
 
-- This two-step process resulted in the almost perfect transfer of the 120
+- This two-step procéss resulted in the almost perfect transfer of the 120
 
 curies of 8%Kr purchased. The experiment container was then pressurized
-to 180 psig with helium. After the first run it was further pressurized
+to 180 psig with helium. - After the first run it was further pressurized
 with helium to 275 psig. Dilution was necessary in order to have enough
 
-gas to measure and control adequately. The original 120 curies of 85gy
+gas to measure and control adequately. The original 120 curies of 85Ky
 
-. amounted to only about two liters, and this had to be added continuously
+- amounted to only about two iiters, and this had to be added continuously
 
 to the reactor for a period of several days.
 
-Based on experience of the personnel in the Isotopes Division of
+Based on experience of the personnel in tﬁe Isotopes Division of
 ORNL, krypton mixed with helium will tend to settle out over a period
 of time. To counter this effect the krypton-helium container was equipped
-with a hermetically sealed agitator. It consisted of an 8-in. aluminum
+with & hermetically sealed agitator. It consisted of an 8-in. aluminum
 ball inside the tank that rolled back and forth as the tank was rocked.
 A large coil of 1/4-in. stainless steel tubing was located between the
-krypton-helium container and flow control equipment to compensate for
-the rocking motion. The limiting flow valve was set to limit the flow
+krypton-helium container-and flow control equipment to compensate for
+the rocking motion. The limiting fldw valve was set to limit the flow
 from the container to about 20 std liters/hr in case of a complete rup-
-ture downstream. The remainder of the flow control system consisted of
-conventional filters (5 to 9 pk), pressure gages, and low-capacity valves.
-The flowmeter was a Hanover matrix type and was calibrated for various
-outlet pressures.
+ture downstream. The-remaindei.of7the_flow control system consisted of
+conventional filters (5 to 9 u), pressure'gagéé, and low-capacity valves.
+The flowmeter was a Hanovef-matrix type and was calibrated for various
+outlet pressures. |
 
 As shown in Fig. 5, all the reactor off-gas from the pump bowl went
-through the monitoring station. It could pass through either one of two
+through the monltorlng station. It could pass through either one of two
 identical monitors or a bypass line. The monitors were labeled A and B.
 Monitor B was used for all runs.: Monitor A was intended as a spare but
-was never needed. They were designed for a range of five decades of ac-
-tivity. ‘Each consisted of four amperex 90NB GM tubes, which were shielded
-as follows: |
+was never neéded. They were designed for a range of five decades of ac-
 
-GM Tube
+tiViﬂy. 'Each consisted of four amperex ‘90NB GM tubes, which were shlelded
 
-or Shielding
-None
-2 100 mg of plastic per em?
-~100 mg/cm? plastic window (7.62 X 2. 54 cm)
-in 5.9 g/cm? brass container
-4 5.9 g/cm? brass container
+as follows:
+
+GM Tﬁbe
+
+No. - Shielding -
+- None S
+2 . 100 mg of plastic per cm?®
+~100 mg/cm lastic window (7.62 X 2. 54 cm)
+in 5.9 g/cm® brass container
+4 5.9 g/em? brass container
 
  
  
 
  
 
+ 
+
 12
 
-The four GM tubes were suspended in a 2-liter stainless steel labo-
+The four GM tubes were suSpended in a 2-liter stainless steel labo-
 
-ratory beaker. The monitors were calibrated with small samples of 8 5Kr.
+ratory'beaker.- The monitors were calibrated with small samples of 8 5kr.
 
 - During the first run of the experiment, it was found that the plastic
-shielding on GM tube No. 2 absorbed 85Kr and gave a false count rate;
+shielding on GM tube No., 2 sbsqrbed 85kr and gave a false count rate;
 
-also it affected other tubes in the array. To correct for this, the plas-
+also it affected other tubes in the array. To correct fbr this, the plas-
 
-tic was removed and GM tube No. 2 became identical with tube No. 1. The
+‘tic was removed and GM tube No. 2 became identical with tube No. 1.. The
 
 GM output was fed into a decade scaler and a count rate meter. The de-
 cade scaler was used for recording data, and the count rate meter was
-used for experiment control assistance.’
+used for experiment control assistance.’ ‘
 
-Much consideration was given to the safety aspect of handling 120
-curies of 85Kr. The half-life of ®°Kr is 10.3 y and it gives off 0.695-
-and 0.15-Mev beta particles and a 0.54-Mev gamma ray. The daughter prod-
-uct is 85Rb, which is stable. The area in which the experiment was con-
-ducted was equipped with radiation detectors and air monitors. A con-
-tinuous flow of air (17,000 to 20,000 cfm) was maintained through the re-
-actor building and released to the atmosphere through a 100-ft stack.
-Bricks were stacked around the krypton-helium tank, and the activity level
+Much considerstion’was givén,to the safety aspect of handling'120-
+curies of 8%Kr. The half-life of 8°Kr is 10.3 y and it gives off 0.695-
+and 0.15-Mev beta particles and a 0.54-Mev. gamma ray. The daughter prod-
+uct is 87Rb, which is stable. The area in which the experiment was con-
+ducted was equipped with radiation detectors. and air monitors. A con-
+tinuous flow of air (17,000 to‘20,000 cfm).ﬁas maintained through the re-
+actor building and released to the atmosphere through a 100-ft stack.:
+Bricks were stacked around the krypton-hslium tank, and the activity level
 outside the bricks was negligible. Special beta-sensitive monitor badges
-were worn by personnel operating the experiment. Detailed procedures for
-transferring 85k, pressurizing the container, and conducting the addition
+were worn by personnel operating the experimént. Detailed procedures for
+transferring 85Kr, pressurizing the container, and conducting the additidn
 and stripping phases of the experiment were written and approved by ap-
 
 propriate personnel.
@@ -1132,14 +1198,15 @@ Procedure and Description of Runs
 
 The procedure used to start the addition phase was to adjust the
 
-. krypton-helium container regulator so that the pressure gage just up-
+- krypton-helium container regulator so that the pressure gage Just up-
 
 stream of the main flow control valve was about 10 psig, that is, about
 
-5 psi over the pump bowl pressure. The flow rate was then controlled |
+- 5 psi over the pump bowl pressure. The flow rate was then controlled
+
 with the main flow control valve. During the addition phase the system
 was checked every 1/2 to 1 hr, and the flow control was adjusted as nec-
-essary to maintain a constant activity in the off-gas line. The krypton-
+essary to maintain a constant activity in the off-gss line. The krypton~-
 helium container was agitated for about 15 min every 2 to 4 hr. For
 various runs the krypton-helium injection rate ranged from 2 to 6.3 std
 
@@ -1147,72 +1214,73 @@ liters/hr but was held constant for each run.
 
 «
 
-¢
+#
 
-(
+(o
 
-C
-«7
+C “‘I“
+w
  
 
  
 
  
 
-[2]
+"
 
-C
+rﬁ‘l
 
-«
+«)
 
 4
 
-ot
+4
 
 13
 
 Zero time in the procedure was defined as the time when the krypton-
-helium flow was turned off. This was accomplished by closing the krypton-
+helium flow was turned.off. This was accqmplished by closing the krypton-
 off valve and then the regulating valve. It took a minute or so before
-the monitor started dropping because all the lines had to be purged. At
-the start of the stripping phase, a l-min count was taken every 1 1/2 min.
+the monitor started dropping_because all the lines had to be purged. At
+the start ef the stripping phase, a l-min count was taken every 1 1/2 min.
 The times gradually increased until at the end of the long runs (2 and
-3) a 1/2-hr count was taken every hour. Note from Figs. 1 and 2 that
+3) a 1/2-hr count was teken every hour. Note from Fige. 1 and 2 that
 there are two essentially stagnant lines entering the pump bowl, the sam-
 pler-enricher line and the overflow line. These lines were purged free
-of 85Kr before the stripping phase started and at various times during
+of 8%Kr before the stripping phase sterted and at various times during
 the stripping operation.
 
-Six 8%Kr addition and stripping runs were made. Table 1 summarizes
-the operational parameters in these runs. Figures 6 through 11 show the
+Six 85Kr addition and stripping runs were made. Table 1 summarizes
+the operational parameters ih these runs. Figures 6 through 11 show the
 results of these runs. The count rate in the off-gas monitor is plotted
 against time during the stripping phase and has been corrected for dead
 time of the GM tubes. No correction was necessary for the decay of 8 5Ky
-because its half-life is ‘so Tong compared with the time scale of each
+because its-half-life is so leng compaied with the time scale of each
 run. As pointed out previously, the data from run 1 are erroneous be-
-cause of 8°Kr absorbed on the plastic shielding a GM tube 2. This plas-
+cause of &%Kr absorbed on the plastic ehielding s GM tube 2. This plas-
 tic was removed for subsequent runs. Nevertheless, as an added check,
 the monitors were purged periodically with pure helium, and a background
 count was measured. In all cases after run 1 the background count for
-tubes 3 and 4 was less than 15 cpm.
+tubes 3 and 4 was less then 15 cpm. |
 
-Objectives associated with each run were the following:
+Objectives associated with each run were‘the.following:
 
-Run No. : Objective
+Run No. o ’ Objective
 1 Check adequacy of equipment and procedures
-2 ~ First of two long-term runs: get a feeling
+2 . First of two long-term runs: get a feeling
 
-for the mass transfer coefficient from salt
-to graphite
+for the mass transfer coeff1c1ent frcm salt
+to graphlte
 
-3 ‘Second long-term run: obtain good values for
-mass transfer coefficient to graphite
-4 Determine stripping efficiency and other short-
-term effects with salt level. in pump bowl at
-61% scale
+3 ’Second long-term run: obtain good values for
+
+mass transfer coeff1c1ent to graphlte
+b Determlne strlpping efflclency and other short-
+L term effects w1th salt level. in pump bowl at
+61% scale .
 
 Same as 4, with pump bowl level at 70% scale
-Seme as 4, with pump bowl level at 55% scale
+Same as 4, with pump bowl level at 55% scale
 
  
  
@@ -1223,71 +1291,70 @@ Table 1.
 
  
 
-Summexy Description of Runs of Krypton Experiment
+Summs.xy DeScription'of_Runs'of Krypton Experiment
 
  
 
-on won
-
  
 
-Starting Time Pressure In Pressure In Mean Count Rate® Total Total Time Salt level in Total He Flow
-. of Addition Kr Kr-He In Lin Pump Bowl Through
-Run Phase of -He Con-  Kr-He Con- p40 tion 0ff-Gas Line  Kr-fle ~~ ~~ of from Bubbler ough Pump
-No Experiment tainer at tainer at Flow Rate During Addition Addition Stripping Level ~ Bowl (Purge Plus
-° Start of Run End of Run (std 1liters/hr) Phase (hr) Phase Indicator Bubbler Flows)
-Time Date (psig) (psig) (counts/min) (nr) (4 soale) (std Liters/min)
-1420 2/5/65 180 179 2.03 3570 6 14 71 3.3
-.1130 2/6/65 275 240 3.57 4470 57.5 62 60 to 70 3.3
-1613 2/11/65 240 81 3.67 44.29 279 149 €0 3.3
-1545 3/1/65 81 75 6.30 7340 5.9 5.0 61 a 3.3 Ke
-1020 3/2/65 75 70 6.2% 7081 5.5 7.2 70 3.3
-0920 3/3/65 70 66 6.33 7149 5.3 12.3 55.5 3.3
-%Count rate as measured by monitor B4, corrected for dead sims, and averaged over the en-
-tire pdaition phase.
-b120 curies 85kr added to krypton-helium container, end container pressurized to 180 pete
-with helium before run 1. ’
-CKrypton-helium container pressurized to 275 psig with helium between runs 1 end 2.
-Cc C,
-«= < \ “¢
+o
 
-«®
+Krypton-helium container pressurized to 275 psig with helium between runs 1 and 2.
+
+(&
+
+Szgrﬁgftﬁ’;e Pressure In Pressure In _— Mean Count Rate® Total  Total Time °°Lu LTel 1% nota) pe Flow
+Runi Phase of Kr-He Con- Kr-He Con- Injection In Off-Gas Line Xr-He of from Bubbler Through Pump
+No Experiment tainer at tainer at Flow Rate During Addition Addition Stripping Level Bowl (Purge Plus
+* , Start of Run End of Run (std 1iters/hr) Phase Phase Indicator Bubbler Flows)
+Mime Date (psig) (psig) (counts/min) - (hr) (% scale) (std 1iters/min)
+1 20 2/5/65 180 179 2.03 3570 6 14 7 3.3
+2° 1130 2/6/65 275 240 3.57 4470 57.5 62 60 to 70 3.3 |
+3 1613 2/11/65 240 81 3.67 44,29 279 149 €0 3.3
+4 1545 3/1/65 81 75 6.30 7340 5.9 5.0 61 o " 3.3 I
+5 1020 3/2/65 75 70 64 2% 7081 5.5 7.2 70 . 3.3
+6 0920 3/3/65 70 66 6.33 7149 5.3 12.3 55.5 3.3
+Count rate as measured by monitor B4, corrected for dead time, and averaged over the en-
+tire addition phase.
+b120 curies 85Ky added to krypton-helium container, and container pressurlzed to 180 psig
+with helium before run 1. '
+
+%
 
  
-COUNT RATE (counts/min)
+C ' - 4
+
+COUNT RATE {counts/min)
 
  
-
-   
 
 ORNL-DWG 67-1957
 
 MONITOR B2
 
-on
+o
 
 ITOR B3
 
-nN
-¢T
-
--
-
-MONITOR B4.
-
-10
+2 =
+- MONITOR B4
+10t
 
  
 
-0 50 100 L150 200 250 300 350 400 450 500 550 600 650 700
+TIME AFTER %%Kr FLOW TURNED OFF {min)
 
-TIME AFTER %kr FLOW TURNED OFF (min)
-
-Fig. 6. Results of Krypton Experiment Run 1. Count rate in off-gas
+PFig. 6. Results of Krypton Experiment Run 1. Count rate in off-gas
 monitor corrected for dead time. -
+
+0o = 50 100 150 200 250 300 350 400 450 500 550 600 650 700
+
+¢t
 
  
  
+
+ 
 
  
 
@@ -1295,99 +1362,102 @@ ORNL-DWG 67-1958
 
 10%
 
-CORRECTED FOR DEAD
+CORRECTED FOR DEAD TIME
 
 COUNT
 
 READINGS
 
 "
-om
+m
 5
-BE
-=z
-Oo
+B
 =
-©
--
 o
-ug
+=
+o
+-
 a
+e
+o
 2
-on
-=
-B=
+w
+=t
+-
 a
-=
-3
-Q.
-OQ,
-~
-«ft
-<<
+-
+5
+Q
+O
+i
+-
+<t
 
 16
 
-uw 0g HO4 340 dnd 13n3"
+W OE HO4 440 dWNd T3N3
 
-€ INVL MOTRINO a3ound
-|
-3NIT ¥37dWVS a398Nd
+-
 
-ONILJIYG M04 Y3T88na § °
+€ MNVL MCI4H3A0 omwm:.m._
+[ 1
+3NIT ¥3dWVS a394Nd
+
+ONILI¥a MO ¥3T8ang § °
+
+*
 
 »
+
+€ 3N MOTJY3A0 Q32und
+4
+
 .
 
-€ 3NIT MOTJH3A0 a39uNnd
-3
+®
 
-UI En 490 dNNd om 8°
-{NOILYNINVLNOD ON} ONNOHONOVE QINOHY,
+..
 
-oe
-SINIL 9 MNVL MOTJHIAO gaound””
+U €., 440 dNNd_,. ¢
+(NOLLYNIWVLINOD ON) QNNOHONOVE Q3INOHD
 
-[x]
-m—
+ol
+SINIL 9 HNVL MOTSNIA0 Q30MNd
+
+[
+I "
 
  
 
-0 ~N < 0 ~
-©
+'2] o < n o
+o
 
-(ut /s}unc) 31ivd INNOD
+{utwyspuncd) 31vd LNNOD
 
 10°
 
-TIME AFTER %5kr FLOW TURNED OFF (hr)
-
-Results of XK
-
 rypton Experiment Run 2.
+
+TIME AFTER %% FLOW TURNED OFF (hr),
+
+Results of X
+
+;
 
 Fig. 7.
 
-“
+1]
 
-(&
+(o
  
 
- 
+COUNT RATE (counts/min}
 
-COUNT RATE (counts/min)
+A | | o4 e | o .
 
-3
+e
 
-on
-
-103
-
-4
-
-4 “
-
-ORNL-DWG 67-1959
+ORNL-DWG 67-19%9
 
  
 
@@ -1463,51 +1533,41 @@ ORNL-DWG 67-1959
 
  
 
-Fig. 8.
+Pk ALL COUNT RATES CORRECTED FOR DEAD TIME
+5 |l—a ALL COUNT RATES CONVERTED TO MONITOR B3 READFNGS
+* g STAGNANT OVERFLOW LINE AND SAMPLER LINE WERE PURGED
+o 1 o WITH CLEAN He BEFORE 85Kr FLOW WAS TURNED OFF
+.-§ 5 . PUMP BOWL LEVEL 60% .
+. =
+» d w "'J it =z
+2 FEz—z z <
+52 § 3. u g |
+ey l&‘% z . o < s
+7] = wus . 9 - =
+o{D a -l U wi w
+o« 3 3 o 5=z g z
+0t = d—a 3 -5 5- &y 5
+T\ giC o8 ¢35 5
+- YT S o — O =
+aw Q. w
+N — 9 o =z
+) r= w = L=
+{ 2 £ 2o
+5 \\K{ ) 25 8'; =
+- J"-n._“.."“” S ‘ " ,a:ﬁ
+20t eV atanine , e
+.l....i......Oi'.......... N
+' ' Tietee. 0"0"".""'000000'000 “se tegnve'y
+. : : - : . ‘ * sedtse . ...‘.'.o.o...
+2 . '*4 e ..I..'_
+103 : -
+0 ' 10 - 20 ' 30 40 50 60 70 80 80 100 10 120 130 140 150
 
 TIME AFTER 85Kr FLOW TURNED OFF (hr)
 
-Results of Krypton Experiment Run 3.
+. Fig. 8. Results of Krypton Experiment Run 3.
 
-PP ALL COUNT RATES CORRECTED FOR DEAD TIME
-lo ALL COUNT RATES CONVERTED TO MONITOR B3 READINGS
-- 2 STAGNANT OVERFLOW LINE AND SAMPLER LINE WERE PURGED
-fo Ww o WITH CLEAN He BEFORE 85Kr FLOW WAS TURNED OFF
-LZ Z PUMP BOWL LEVEL 60%
-; 5
-3 2 zZ © 0
-ol Ww ~ w Zz
-WEEE =
-22 5 1. u 0
-x iL ow = 35 z
-948 E2 5. ~
-wa J a = w
-2 3 wu 2
-oc 3 x Lz Q . 5
-Hz o—ab £5 Ew 5
-TN gic ak $5 5
-od m= Ox Tw
-LN —0Oa » © 2 o u xrZ
-i 5% aa Es
-aon x= Be
-SS 5d w
-| 23 of
-<
-- Pr S | Nt]
-sooo eet’ im, couons 23
-Soe TT ee Tague svt cs . |
-. . Stes,. eee
-. ssg0e®® ee 00e taiennas Brett tetetega,,, .
-oe °® es
-0 10 © 20 30 40 50 60 70 80 90 100 10 120 130 140
-
-150
-
-.. »
-
-C
-
-LT
+--
 
  
  
@@ -1522,49 +1582,57 @@ ALL COUNT RATES CORRECTED FOR DEAD TIME
 
 ALL COUNT RATES CONVERTED TO MONITOR B3 READINGS
 
-STAGNANT OVERFLOW | LINE AND SAMPLER LINE WERE PURGED WITH
-CLEAN He BEFORE S%kr FLOW WAS TURNED OFF
+STAGNANT OVERFLOW LINE AND SAMPLER LINE WERE PURGED WITH
+CLEAN He BEFORE °%kr FLOW WAS TURNED OFF
 
 PUMP BOWL LEVEL 61%
 
-10%
-Z2 9 u
+108
+
+c
+= [}
+E z
+> 3
+£ x
+g 9 u
 8 . z
-2 2
-<T wn
-. 2
-E Z
-SZ x
-8 z
-oo 2 £
-z
-9
-w
+o 2
+« %
+v 2
+= g
+2 5
+Q Z
+o 2 a
+=
+S
+L
 &
 4 >
 10 o
 o
 &
-/ «
->
+/ @
+2
 a
 
-oa
-®
-———
+o
+o
+i
 
  
 
-0 30 60 . 90 120 150 180 . 210 240 270 300
+o 30 60 . 90 120 150 18O . 210 240 270 300
 TIME AFTER 85Kr FLOW TURNED OFF (min)
 
 Fig. 9. Results of Krypton Experiment Run 4.
 
-ANALYSIS OF THE ®5Kr EXPERIMENT
+ANAIYSIS OF THE ®°Kr EXPERIMENT
 
 General Approach
 
-Analysis of the 8 5ky experiment is concerned with the stripping
+ 
+
+Analysis of the 8 5Ky experiment is concerned with the stripping
 phase of the runs. The principal stripping processes involved, in order
 of occurrence, are purging the pump bowl, stripping the salt and asso-
 ciated circulating bubbles (if present), and then leaching the graphite.
@@ -1572,76 +1640,83 @@ Other leaching processes of no fundamental interest but of importance
 because they contribute to the measured flux decay curve are diffusion
 out of the stagnant bubbler kidney described earlier and leaching 85kr
 that may have been trapped in gas pockets located in the primary loop.
-Locations ‘of potential gas pockets in the loop are in the freeze flanges,
+Locations of potential gas pockets in the loop are in the freeze flanges,
+
 graphite access port, and the spaces formed by the assembly of the core
 
-Ld
+¥
 
-«
-COUNT RATE {counts/min)
+o
+ 
 
-C " th @ a Cc’ »
+COUNT RATE {counts/min)
+
+ 
+
+ 
+
+&% o ' ' P a ' )
 
 ORNL-DWG 67-1961
 
-. ALL COUNT RATES CORRECTED FOR DEAD TIME
-ALL COUNT RATES CONVERTED TO MON!TOR B3 READINGS
+- ALL COUNT RATES CCRRECTED FOR DEAD TIME
+ALL COUNT RATES CONVERTED TO MONITOR B3 READINGS
 STAGNANT OVERFLOW LINE AND SAMPLER LINE WERE PURGED WITH
-CLEAN He BEFORE 85Kr FLOW WAS TURNED OFF
+CLEAN He BEFORE 8Kr FLOW WAS TURNED OFF
 PUMP BOWL LEVEL 70%
 
-6T
-
 w
-=
+_Z
 3
 x
-ul
-2
+w
+'
 a
 =
-<
-on
-a
-ul
+oL -
+n
+o
+w
 ©
-x
+@
 S
 a
-{
+!
 
- 
-
-o 3 60 90 120 150 180 210 240 270 300 330 360 390 420
-TIME AFTER ®5kr FLOW TURNED OFF (min)
+90 120 150 180 210 240 270 300 330 360 390 420
+TIME AFTER ®5ky FLOW TURNED OFF (min)
 
 Fig. 10. Results of Krypton Experiment Run 5.
 
+6T
+
+o
+
  
 
  
-   
+ 
 
-~
-ORNL-DWG 67-1962
+. ™~
+' , ’ : ORNL-DWG 67-1962
+5
 
 ALL COUNT RATES CORRECTED FOR DEAD TIME
 
-ALL COUNT RATES CONVERTED TO MONITOR B3 READINGS .
+ALL COUNT RATES CONVERTED TO MONITOR B3 READINGS ,
 
 STAGNANT OVERFLOW LINE AND SAMPLER LINE WERE PURGED WITH
-CLEAN He BEFORE 85Kr FLOW WAS TURNED OFF
+CLEAN He BEFORE 8%Kr FLOW WAS TURNED OFF
 
-PUMP BOWL. LEVEL 555%
+PUMP BOWL LEVEL 555%
 
  
 
 COUNT RATE (counts/min)
+oc
 
-02
-
-0 50 100 150 200 250 300 350 400 450 500 550- 600 650 700
-TIME AFTER 85Kr FLOW TURNED OFF (min)
+0 50 100 10 200 250 300 350 400 450 500 550 600 650 700
+| o TIME AFTER 85Kr FLOW TURNED OFF (min) | '
 
 ‘Fig. 11. Results of Krypton Experiment Run 6.
 
@@ -1652,263 +1727,314 @@ TIME AFTER 85Kr FLOW TURNED OFF (min)
 
  
 
-C »
+ 
 
-*®
+ 
 
-n
+| (u)
 
-od
+"
 
-AY
+1
+
+o
+
+-Af
 
 21
 
 blocks. There are various bits of evidence that pockets actually exist,
-although their location:and capacity are not certain.
+although their 1ocation:and-capacity-are.not,certain.-
 
-The fuel salt circuit time around the loop is 25 sec, which is short
+The fuel-salt circuit time around the loop is 25 sec, which is short
 compared with the time scale of the stripping process involved, so the
-fuel loop can be considered as a well-stirred pot. At any specific time
+fuel loop can be considered as a well-stirred pot.{’At,any specific time
 therefore, the krypton concentration is considered to be constant through-
-out: the loop. In the simplest case, it can.be shown that each transient
-stripping process, when unaffected by any other stripping process, will:
-obey an exponential decay law; that is at time t,
+outathe,loop. In the simplest case, it can be shown that each transient
 
-Kr flux, = Kr flux e OF,
+stripping process, when unaffected by any other stripping process, will-
 
-© In the actual case, however, each stripping process will affect every
+- obey an exponential decay law; that is at time %,
+
+Kr flux_ = Kr flux_ i
+
+- In the actual case, however, each stripping process will affect every
 
 other stripping process to a greater or lesser extent. Note that pump
 
-" bowl purging, salt stripping, and graphite leaching are series processes;
+" bowl purging, salt Stripping,'and graphite leaching are series processes;
 
-that is, they occur in the sequence given; while leachings of the several
+that is)_they occur in the sequence given; while leachings of the several
 graphite regions are parallel processes; that is, they occur simulta-
 neously after the krypton concentration in the salt starts to drop. Quali-
 
- tatively, the measured decay curve would be expected to be the sum of the
+" tatively, the measured decay curve would be expected to be the sum of the
 
 contributions of each leaching process, as shown in Fig. 12. Note that
 
-'ORNL-DWG 67-1963
+~ ORNL-DWG 67-1963
 
- 
-
-———
-
-    
  
 
 CUMULATIVE Kr FLUX FROM REACTOR
 
-PURGING Kr IN PUMP BOWL
+ 
+  
+
+PURGING Kr IN PUMP BOWL'
 STRIPPING Kr IN SALT
 
  
+
+   
+
+ 
+
+1LOG COUNT RATE (counts/min)
+
+—-— - — —— -
+
+ 
+
+ 
+
+ 
+
+TiME -
+
+ Fig. 12. Qualitative Breakdown of Cumulative Flux Decay Curve into
+Its Components. _ -
+
+ 
+ 
+
+ 
+
+the count rate in the off-gas line is plotted'on the ordinate and is a
+unit of concentration; however, since the off-gas is flowing at a con-
+stant rate, it also represents the 85kr flux leaving the reactor.
+
+of the component curves should approach an exponential decay after the
+
+22
+
+,inltlal transient.
+
+Now the problem is to separate these 1nd1V1dual processes from the
+
+measured flux curve, with the realization that there may be other leach-
+
+ing processes
+
+the breaking down of a single composite data curve into several iqdividual
+- processes and the determination of rate constants for each is qulte com-
+
+plex and necessarlly subject to a certain amount of personal 1nterpreta-
+
+tion.
+
+Two approaches were used in analyzing the data.
+ful method consisted of an exponentlal peeling technlque, as shown quali- |
+tatively in Fig. 13 for run 3. The assumption is made that the tail of
+the decay curve is determined completely by leaching the slow (bulk) rate
+constant graphite.
+the slowest exponential that fit asymptotically on the curve and subtract
+
+it from the data.
+
+not accounted for. It should be pointed out again that |
+
+The procedure was then to determine the equation for
+The next exponential equation that fit asymptotically
+
+ORNL-DWG 67-1964
+
+The most success-
+
+ 
+
+-
+
   
+  
+ 
+  
+
+CUMULATIVE Kr FLUX FROM REACTOR
+
+STRIPPING Kr IN SALT
+URGING Kr FROM PUMP BOWL
+
+ 
+
+ 
 
 LOG COUNT RATE (counts/min)
 
  
 
-Kr LEACHED FROM VARIOUS GRAPHITE REGIONS
+ 
+ 
+ 
+
+r LEACHED FROM VARIOUS
+. GRAPHITE REGIONS
+
+ 
+
+ 
+
+\
+\
+\
+\
+\
+\
+i
 
  
 
  
 
  
+
+- Fig. 13.
 
 TIME
 
-© Fig. 12. Qualitative Breakdown of Cumulative Flux Decay Curve into
-Its Components. Co
+Actual Method Used to Break Down Cumulative Flux Decay Curve
 
- 
+1nto Its Components.
+
+(;j -
+
+o
  
-
- 
-
-22
-
-the count rate in the off-gas line is plotted on the ordinate and is a
-unit of concentration; however, since the off-gas is flowing at a con-
-stant rate, it also represents the 85Kr flux leaving the reactor. Each
-of the component curves should approach an exponential decay after the
-‘initial transient.
-
-Now the problem is to separate these individual processes from the
-measured flux curve, with the realization that there may be other leach-
-ing processes not accounted for. It should be pointed out again that
-the breaking down of a single composite data curve into several individual
-processes and the determination of rate constants for each is quite com-
-plex and necessarily subject to a certain amount of personal interpreta-
-tion. | A -
-
-Two approaches were used in analyzing the data. The most success-
-ful method consisted of an exponential peeling technique, as shown quali-
-
-tatively in Fig. 13 for run 3. The assumption is made that the tail of
-the decay curve is determined completely by leaching the slow (bulk) rate
-constant graphite. The procedure was then to determine the equation for
-the slowest exponential that fit asymptotically on the curve and subtract
-it from the data. The next exponential equation that fit asymptotically
-
-ORNL-DWG 67-1964
-
- 
-
-  
-   
- 
-    
-
- 
-
- 
-   
-
- 
-
- 
-
- 
-
- 
-
-«
-
-E
-&
-> .
-£ &
-8 .
-> CUMULATIVE Kr FLUX FROM REACTOR
-bu
-a STRIPPING Kr IN SALT y
-EM URGING Kr FROM PUMP BOWL
-3 |v
-oO
-8 -
-3 r LEACHED FROM VARIOUS
-0 . GRAPHITE REGIONS
-
-\
-
-\
-
-\
-
-\
-
-A
-
-TIME
-~ Fig. 13. Actual Method Used to Break Down Cumulative Flux Decay Curve \ jo
-
-into Its Components .
- 
-
- 
-
- 
 
 C
 
-Ii
+ 
+
+o
 
 W
 
-oF
+ 
+
+(Y
 
 A}
 
-1)
+@
+
+ 
+
+ 
 
 23
 
-on the remaining data was then determined and again subtracted. This
-procedure was repeated to a logical conclusion; that is, until continued
+on the remaining data was then determined and_again subtracted. This
+procedure was repeated to a logicalféonclusion; that is, until continued
 subtracting from the data gave negligible values. This procedure for
 
-run 3 resulted in five exponentials, which is somewhat significant be-
+run 3 resulted in five exponehtials,‘which is somewhat, significant be-
 cause of the five major stripping operations (pump bowl, salt, including
-bubbles, and three graphite regions). This general approach is in error
+bubbles, and three gr@phite regions). This general approach is in error
 in that it assumes that each stripping process starts at zero time and
 proceeds independently at all others. It will be seen, however, that this
-approach is adequate for both the very slowest rate constant processes
+approach is adequate for both the very slowest rate constant prodésses
 (leaching bulk graphite) and the very fastest rate constant processes
 
 (purging pump bowl), but it is inadequate for intermediate processes
 
 (stripping salt and faster rate constant graphite). Figure 14 shows the
 
-results of this exponential peeling process on run 3. The rate constants
+results of this exponentiallpeeling process on run 3. The rate constants
 are a function only of the slopes of the exponentials involved, so abso-
-lute calibrations of the monitor and detailed knowledge of the 85Kr con-
+lute calibrations of the monitor and detailed knowledge of the ®°Kr con-
 
-‘centrations are not necessary. Numerical results of peeling run 3 and
+centrations are not necessary. Numerical results of peeling run 3 and
 
-their interpretation are given in Table 2. This approach to analyzing
+their interpretation are given in Tablé 2. This ‘approach to analyzing
 the data was the principal method used. It is of necessity confined to
-the fastest and slowest rate processes involved. But when applied to
+the fastest and slowest rate procesées ﬁnvolved. But when applied to
 
-these processes, the results have a high degree of reliability, as will
+these proCesses, the results have a high degree of reliability, as will
 
-be seen.
+| be seen.
 
-A second method of analysis of the data was undertaken primarily as
+A second method of analy51s of the data was undertaken primarily as
 an attempt to determine rate constants for the intermediate processes in-
-volved, such as stripping efficiency and mass transfer to the faster rate
+volved,_Such as stripping efficiency ahd'mass transfer to the faster rate
 constant graphite regions. In this approach, unsteady-state differential
-equations were set up around the pump bowl gas phase, fuel salt, and
-three graphite regions. The resulting five equations could be solved
-simultaneously for the rate constants involved. Physically this was done
+equatlons were set up" around the pump bowl gas phase, fuel salt, and
+three graphite regions. The resulting flve equatlons could be solved
+simultanedusly for the rate constants involved. Physically this was done
+
 with a computer, and the rate constants were solved for by the method of
 
-steepest. ascent. The approach was not too successful, probably for the
+~ steepest. ascént. The approach'was not too successful, probably for the
 
-following reasons:
-1. There were actually more than five 8 kr sources in the system,
-so the mathematicel model was overly simplified. Primarily the effects
+follow1ng reasons | _ '
+1. There were actually moré than five 85Kr sources in the systenb =
+s0 the mathematlcal model was overly 51mp11f1ed.',Prlmarllymthe,effects‘_
 
 of circulating bubbles were not adequately accounted for,
 
  
-COUNT RATE (counts/min)
+E
+
+E
+2
+3
+e
+o
+o
+-
+=
+2
+O
+L&)
 
  
 
-10%
+105
 
 10
 
-10%
+103
 
-=0119 hr
 102
-0 10
 
  
 
-- ORNL-DWG 67-1965
+= 0119 hr
 
-sive . . .
-{ | feseteseteterrnasasesenta tacts...
+10
 
-Yo ® 198 hr
+ 
 
-20 30 40 50 60 © 70 80 ‘90 100 10 +120 130 140 150
-; ‘ TIME (hr) -
+- ORNL-OWG 67-1965
+
+Seteteqgye, SerTesnne uo'-l-l.-l-o.“l-iuoo .o‘
+
+ 
+
+20 30 0 50 60 70 80 90 100 "w 120 130 140
+
+TIME (hn) o : -
 
 Fig. 14. Results of Exponential Peeling of Krypton Experiment Run 3.
 
-/
+i
 
-ND
+150
 
-7c
+N
+
+e
+
+ 
 
  
  
@@ -1917,15 +2043,15 @@ ND
 
 C
 
-Is
+o
 
-MW
+W
 
-(wn
+(W
 
-»
+N
 
-$
+H
 
 25
 
@@ -1937,36 +2063,38 @@ of Krypton Experiment
  
 
 Count-Rate
-Peeled-Curve Intercept at Rate Constant
-Half-Life Process .
-(br) Zero Time Determined
-(counts,/min)
+P;gi;diggx.e Intercept at Process Rete Constant
+(Br) € Zero Time ° Determined
+(counts/min)
 198 3,574 Mass transfer to slow- Mass transfer coeffi-
 est rate constant cient
 (bulk) graphite
-15.5 2,178 Mass transfer to next Mass transfer coeffi-
+15.5 - 2,178 Mess transfer to next Mass transfer coeffi-
 faster rate constant cient
 graphite
-4.52 2,114 (a)
-1.039 44,945 (b)
+4.52 ' 2,114 (a)
+1.039 4,945 (b) S
 0.119 520,000 Pump bowl purging Purging efficiency
 
  
 
-8probably influenced mainly by mass transfer to fast rate constant
-graphite but may also be biased by other processes; generally has a low
+aProba.bly influenced mainly by mass transfer to fast rate constant
+graphite but may also be biesed by other processes; generally has a low
 
 degree of confidence.
 
-probably influenced mainly by stripping of the salt but is also
-probably biased by other processes; has a low degree of confidence.
+Pprobably influenced msinly by stripping of the salt but is also
+probebly biased by other processes; has a low degree of confidence.
 
 2. The approach required accurate knowledge of the initial concen-
-tration of the krypton in all regions involved (boundary values). This
+
+tration of the krypton in all regions involved (boundary values).
+
+This
 
 could not be done for the graphite for reasons to be discussed later in
 
-the section on Capacity Considerations.
+the section on,Capacity‘Considerations;
 
 The results of the second method will not be presented here.
 
@@ -1984,28 +2112,25 @@ Schematically the pump bowl can be represented as follows:
 
  
 
-— Xe:
-
  
 
- 
-
-He purge Vep = Volume of gas phase
-Q._ = £t3/hr at 1200°F ck = Average 8%Kr concen-
+He purge Vgp = Volume of gas phase
+Q.= £t3/hr at 1200°F ck = Average 8%Kr eoncen-
 gp and 5 psig tration in gas phase
-er
-| ’ © salt phase
-Qgp = £3 salt/hr
-ck = 85Kr concentration in
-salt Salt back to
-loop
-¥. = Void fraction
+r* K
+- ’ " Salt phase
 
-s/
+ 
+
+ 
+
+_Xel
+
+SI
 
 Monitor
 Of f-gas
-About line
+About | 1ine
 70°F
 
  
@@ -2020,10 +2145,27 @@ i
 
 Salt stripping efficiency
 
+I
+
 Bubble stripping efficiency
+
+Qsp = Tt3 salt/hr
+
+Salt back to
+
+ck = 85kr concentration in
+s
+salt
+Y. = Void fraction
+
+loop
 
  
  
+
+ 
+
+ 
 
  
 
@@ -2031,45 +2173,45 @@ Bubble stripping efficiency
 
 The dilution of 8%Kr in the gas phase of the pump bowl is given by*
 
-ac Q E QS Q vs’
+dc Q E . Q.S Q Vs’ .
 
-_&__ Bp ok, Sp ok, Sp ok,
+_E.=__EP_CK+_§B_CK+_SL_CK.
 
-at v g  V s © V B
-gp gp gp
+dt Vv g Vv 8 v B
+£p &P £p
 
-In the first term ck is the mean &°Kr concentration in the gas phase of
-the pump bowl and the product BC; is the concentration in the off-gas
-line; therefore,. E can be thought of as a mixing efficiency. The second
+In the first term C~ is the mean ®%Kr concentration in the gas phase of
+the pump bowl and the product Ec: is the concentration in the off-gas
+iine; therefore,- E can be thought of as a mixing efficiency. The second
 term represents the rate at which krypton is stripped from the salt,
 where S is the stripping efficiency. The third term is the rate at which
-. krypton is stripped from the circulating bubbles, where V is the void
-fraction and S/ is the bubble stripping efficiency.
+.krypton is stripped from the circulating bubbles, where ¥ is the void
+- fraction and S/ is the bubble stripping efficiency.
 
-If these three terms are evaluated at the beginning of the stripping
+If these three terms are evaluated at the beginning of the‘stripping
 phase, the second term is approximately 1/500 of the first term, so it
 
-‘can be neglected. The third term is about 1/20 or less of the first term
+“can be neglected. The third term is about 1/20 or less of the first term
 
-for expected values of V and S/. It must be neglected because of inade-
-quate knowledge of Vv and S/. The error introduced, however, will not be
-great. The above equation also neglects the 85Kr contribution by the
+for expected values of ¥ and S/. It must be neglected because of inade-
+quate knowledge of V¥ and S8/. The error introduced, however, will not be
+great. The above equation also neglects the 85Ky contribution by the
 stagnant kidney in the bubbler line semitoroid, but estimates indicate
 that this is also an adequate assumption.
 
 Neglecting the second and third terms, the equation is
 
 k
-ac Q_E
-8 _ _ 8p ok
-at Vv g’
+dC E
+__ﬁz_QiLck
+dt v g’
 gp
 
-and, solving for cs at time t, gives
+and, solving for Cz at time t, gives
 
-- E/V_)t
-ck = ck Op / ep)
-g go ’
+- E/V_ )t
+Kk e.(Qg_.p Vo)
+g g0 ?
 
 which, evaluated at concentration half-life conditions, is
 
@@ -2077,52 +2219,64 @@ which, evaluated at concentration half-life conditions, is
 
 *See Appendix D for nomenclature.
 
-«
+L
+
+v
  
+
+ 
+
+ 
+
+ 
+
+a
+
+13y
+
+..A\‘
+
+C
+
+9
 
 27
 
-C
-pe
+Q
+W‘
 
-— t
-=1/2 =e (Qgp®/ Vp) 1/2 _ 0.693
+: t
+v - S o
+
+t
 
 2
 
-Q
-x
+AP
 
-g0
-
- 
-
+go
 or, solving for E,
 
- 
-
-0.693V
-. : E =
-- t1/ 29%,
-
- 
+04693V
+) : : EF = —___£p
+. ' tl/2Q‘
+~ gp
 
 Figures 15 and 16 show the initial transients for runs 1 through 6.
 Since the bubbler line stagnant kidney and the salt stripping have little
 
 ORNL-DWG 67-1966
 
-A RUN {, HALF-LIFE OF CURVE = 6.8 min
+A RUN 1, HALF-LIFE OF CURVE = 6.8 min
 ® RUN 2, HALF-LIFE OF CURVE = 6.3 min
-O RUN 3, HALF-LIFE OF CURVE =83 min —
+O RUN 3, HALF-LIFE OF CURVE =83 min — |
 
-   
+  
+ 
   
 
  
 
-4
-
  
 
  
@@ -2131,34 +2285,29 @@ O RUN 3, HALF-LIFE OF CURVE =83 min —
 
  
 
-10%
+103
 
  
 
  
 
-COUNT RATE (counts/min)
+| COUNT RATE {counts/min)
 
  
 
-yh
-Oo
-
- 
+o
 
  
 
  
 
-N=
+ 
+
+| ’\‘. B \o
 
  
 
-0
-
- 
-
- 
+o
 
  
 
@@ -2178,17 +2327,21 @@ N=
 
  
 
-0 5 10 15 2 25 30 35 40 45
-TIME (min)
+ 
 
-i Fig. 15. Expanded Plot of Data for the First Half Hour of Runs 1,
-] No : 2, and 3. All count rate data taken with monitor B4 and corrected for
-dead time.
+ 
 
-9
+O 5 10 15 20 25 30 35 40 45
+“TIME (min)
+Fig. 15. Expanded Plot of Data for the First Half Hour of Runs 1,
+
+2, and 3. All count rate data taken with monitor B4 and corrected for
+dead time. :
 
  
  
+
+ 
 
  
 
@@ -2261,61 +2414,66 @@ ORNL-DWG 67-1967
 
  
 
-10% : :
-A RUN 4, HALF-LIFE OF CURVE = 7.6 min|
-® RUN 5, HALF-LIFE OF CURVE = 6.3 min
-© RUN 6, HALF-LIFE OF CURVE = 84 min
-Fo=6 R
+ 
+
+104 ‘ ' _ |
+A RUN 4, HALF-LIFE OF CURVE = 7.6 min
+® RUN 5, HALF-LIFE OF CURVE =6.3 min
+O RUN 6, HALF-LIFE OF CURVE = 84 min
+- A\ .
 5
 2
-9
+°
 \
-10° \ —\o
-® \
-Oo
-Aa \
-\ Oo
-5 \ A o
-\ eo  |A
-0 5 10 15 2 25 30 35 40
-TIME (min) :
+\ A\
+b T\
+0
+AV
+\\ O
+5 \‘ Al o
+| Ao  |A
+0 5 10 15 20 25 30 35 40
+TIME (min) —
 
 All count rate data taken with monitor B4 and corrected for
-
-iw
  
 
  
 
-#
+ 
+
+ 
+
+ 
+
+ 
+
+ 
 
 »
 
-oy
-
- 
-
- 
-
-AN
-
 "
 
- 
+o
 
- 
+A -
+
+)
 
 29
 
-¢
+t
 
-effect on. the initial transients, this section of the curve is determined
-almost completely by pump bowl dynamics. A tangent line is shown on each
-curve and its half-life is given. Note that the half-life measured in:
+effect on the initial transients, this section of the curve is determined
+
+almost completely by pump.bowl‘dynamics. A tangent line is shown on each
+
+curve and its half-life is given.  Note that the half-life measured in
+
 the monitor at about 70°F is identical to the reactor half-lives where
-the operating temperature is 1200°F. Runs 1 through 6 gave the results
+the operating temperatnre is 1200°F. Runs 1 through 6 gave the results
 listed in Table 3. The average pump bowl purging efficiency is 69%, and
-it is not a strong function of pump bowl level.
+it is ndt‘a‘strong function of pump bowl level.
 
 Table 3. Pump Bowl Purging Efficiencies Obtained in
 Runs 1 Through 6 of Krypton Experiment
@@ -2324,35 +2482,35 @@ Runs 1 Through 6 of Krypton Experiment
 
  
 
-Indicated Pump Volume of Gas Half-Iife Pump Bowl
-Run Bowl level at Phase in of Curve Purging
+Indicated Pump Volume of Gas Half-Tife Pump Bowl
+Run Bowl Ievel at Phase in of Curve Purging
+No. Start of Stripping = Pump Bowl (min) Efficiency
 
-No. Start of Stripping Pump Bowl (min) Efficiency
-% scale) (ft?) (%)
-1 71 1.75 6.8 61
+% scale) (£t?) | (%)
+1 71 ‘ 1.75 6.8 6l
 2 60 2.23 6.3 84
-3 60 2.23 8.3 64
-4 61 2.19 7.6 68
-5 70 1.79 6.3 : 67
+3 60 - 223 8.3 64
+4 61 2.19 7.6 . 68
+5 70 o - 1.79 6.3 : 67
 6 55.5 2.43 8.4 68
 
  
 
-Xenon Stripper Efficiency
+Xénon Stripper Efficiency
 
-‘As pointed out previously, values for the stripping efficiency could
+As pointed out previously, values for the stripping efficiency could
 not be extracted from the data with any degree of accuracy, even though
-runs 4, 5, and 6 were performed with this goal in mind. Very rough cal-
-culations do indicate that the stripping efficiencies are more or less
+runs 4 5, and 6 were performed with this goal in mind. Very rough cal-
+culatlons do indicate that the strlpplng efficiencies are more or less
 
-consistent with those measured at the University of Tennessee in a COa-
+con81stent with those measured at the Unlver51ty of Tennessee in a 002-
 
-‘water system, but the calculations are so approximate and dependent on
+'water system, but the calculations are so approximate and dependent on
 
-hazy assumptions that they will not be presented here.
-‘Mass Transfer to Graphite
+hazy assumptlons that they W1ll not be presented here.
+~ 'Mass Transfer to Graphite
 
--. To review briefly the graphite regions, recall that three regions
+a;To;review_briefly,the_grephite-regions,;recall that three regions
 
 were identified from fluid dynamic considerations. First there is the
 
@@ -2366,113 +2524,109 @@ were identified from fluid dynamic considerations. First there is the
 30
 
 bulk graphite region (~95%) that is characterized by salt velocities of
-about 0.7 ft/sec and a Reynolds number of about 1000. The mass transfer
+about 0.7 ft/seé and a Reynolds number of sbout 1000. The mass transfer
 coefficient will be between that for laminar and that for turbulent flow.
-Second, there is the graphite associated with the centermost fuel chan-
+Second, there is the graphite éssodiated_with the centermost fuel chan-
 nels, which comprises about 1.5% of the graphite. The fuel velocity and
 the mass transfer coefficient in this region will be higher than in the
-bulk graphite region. Third, there is a region of structural graphite
+bulk graphite region. Third, thefe is a region of structural graphite
 across the bottom of the core. It is difficult to determine the exact
-boundary of this region, but it probably consists of approximately 3.5%
-of the graphite and is in a zone of low nuclear importance. It is char-
+boundary'of'this region, but it probably consisﬁs of approximately 3.5%
+of the graﬁhite and is in a zone of low nuclear impgftance. It is char-
 acterized by orificing effects, impingement of salt, and fluid dynamic
 entrance regions; therefore it will have the highest mass transfer coef-
-ficients. |
+ficients. | o o
 
-The first question to be resolved concerns salt-to-graphite coupling
-via the mass transfer coefficient. The krypton flux from the graphite
+The first questioh to be resolved concerns salt-to—graphite coupling
+via the mass transfer coefficient. The krypton flux from the'graphite
 
 can be expressed as
 
-Kr flux from graphite = noha (Ch - Cs) ,
-where ct, is conventionally defined as the krypton concentration in the
+Kr flux from graphite = hﬁAG(cls{i - Cl;) s
+where Cgi is conventionally defined as the krypton concentration in the
 salt and at the interface, where the interface is continuous. In this
 case the salt-gas interface is inside a pore that occupies only a small
-fraction of the total graphite surface area. Therefore we need a rela-
+fraction of the total graphite surface area. Therefofe we need a rela-
 tionship between this concentration at the pore interface and the more
-conventional ck. This is discussed in Appendix B, where it is shown
+conventional Cgi' This is discussed in Appendix B, where it is shown
 that the mean concentration of krypton in a continuous salt film across
+
 the graphite surface is approximately equal to the krypton concentration
+
 in the salt at the salt-gas interface inside a graphite pore.
 
-The rate at which 8%Kr is leached from the graphite is a function
+~ The rate at which 8%Kr is leached from the graphite is a function
 of several parameters; for instance, the diffusivity of krypton in graph-
-ite, the mass transfer coefficient, and the 85Kr concentration dissolved
+ite, the mass transfer coefficient, and the 8 5kr concentration dissolved
 in the bulk salt, which is in turn a function of the xenon stripper effi-
-ciency. The general approach in the graphite analysis will be to first
+ciency. The general ipproach in the gfaphite analysis will be to first
 
-show that this rate is very insensitive to expected values of the dif-
+~ show that this rate is very insensitive to expected values of the dif-
 
 fusion coefficient of krypton in graphite. This being true, we can
 
-“a
+a
 
-]
+u
  
 
  
 
-a
+2t
 
 C
 
-4
+i}
 
-8)
+®
 
-D]
+)
 
 31
 
 determine a relationship between the mass transfer coefficient and the
+
 stripping efficiency, any combination of which will result in a flux curve
-as measured. Then By weighting this relationship with the value of strip-
+
+- as measured. Then by weighting this relationship with the value of strip-
+
 ping efficiency measured at the University of Tennessee, theoretical
 values for the mass transfer coefficient (see Appendix C), and other con-
-siderations, we will obtain a very narrow range of possible values for
-
+siderations, we ﬁill obtain a very narrow range of possible values for
 the mass transfer coefficient. Generally, this procedure will be fol-
 lowed for all the graphite regions considered. Most of the calculations
-will be confined to run 3, which was concerned primarily with measuring
-graphite rate constants.
+will be confined to run 3, which was éohéerned primarily with measuring
+graphite rate constants. |
 
 Consider the ®%Kr flux from graphite as a function only of its in-
-ternal resistance (%z) and its external resistance (s)- Also specify
+ternal resistance (Dg) and its external resistance (Fﬁ). Also specify
 that, for times equal to or greater than zero, the krypton concentration
-dissolved in the fuel salt is zero. Cylindrical geometry is used; that
+dissolved in the fuel salt is Zéro. Cylindrical geometry is used; that
 is, each core block is considered to be a cylinder, the surface area of
-which is equal to the fuel channel area associated with a single core
-block. The volume of a graphite cylinder of this sort is very close to
-the volume of the actual core blocks of the same length. The differen-
-tial equation that describes this case is
+which is equai'to the fuel channel area asSociated with a single core
+block. The volume of a graphité cylinder of thié sort is very close to
+the volume of the gctual core blocks of the same length. The differen-
 
-dc 130g
+tial equation that déséribes this case is
 
-k
+2k k .
+BVCG 1 BCG _e ?Sg
 
-<x
-: 2
-
-dr? r dr Dy ot
-
- 
-
-+= =
+. )
+dr? r Or D, Ot
 
 with boundary conditions
 
-k
+k .k o
 
-k
+Cg = Cg, 86t = O,
+dcg B
+—=f=0a2atr =0,
 
-Cg = Coo 86 = 0,
-ag)
-—J=0atr=0,
-
-r
-ack h_HRT
-Gg) __ =m Cn at r =r.
-ar | oF G v
+- |
+ack h_ HRT
+&) __.m C.atr =1 .
+ar/ D C b’
 
  
  
@@ -2483,58 +2637,64 @@ ar | oF G v
 
 32
 
-The solution to this equation is
+The solution to this equation 'is
 
-K
+, , K »
 
-x kx © 1 J, (Mn) — fom) 20/r2e] ¢ r
+K Lx & 1 Jl(Mn) -_-[(Mn)2DG/_r§eE|t r |
 
-Co = Cy, —_———  JofMn —]),
-n=1 Mn J§(Mn) + 32 (Mn) ry
+CG’_~2CG0 — , e . - dyfMn —},
+n=1 Mn J3(Mn) + 32 (Mn ) Ty
 
 where the eigenfunction is
 
-J, (Mn) i} h HRTr,
+J, (Mn) _ h HRTr,
 
-om FE
+o E
 
-Mn = rr -
+'e
+
+Mn = r - 2
 b k
-\ Dg
+\ D,
 
-where 7 is the eigenvalue. Now, differentiating with respect to r and
+where 7 is the eigenvalue. Now, differentiating with respéct to r and
 
 Mn
-
- 
 
 and
 
  
 
-evaluating at r = Ts We have
-K k —- k,
-cg) XG R 320m) - [en 207 r2e |
->
-ar r ry n=1 J5(Mn) + J%(Mn)
+evaluating at r = Ty We have
+k k —- : k, ,
+g\ X, R I3(Ma) - - [(Mn) EDG/r,se]t
+‘ >
+dr r, n=1 Ji(Mn) + J3(Mn)
+
+rb b
 
 and, substituting into the flux equation at the surface of the graphite,
 
  
 
-Flux, =——|—
-b € \dr ry
-we obtain
-kk 2 -[c 2K 2¢]
-xk DCs J3(Mn) (Mn) °Dy/rie|t
-Flux, = ) e .
+ 
 
-bre na J2(Mn) + J2(Mn)
+Dlé dc}é
+Flux, = ——|—
+b € \dr ry
+we obtain _
+Kk o .2 _[ ok, 5
+K DCoa, JZ(Mn) (Mn) DG/rbe t
+Flux = 23 . e .
+r : 2 2
+b r € n=l Jg(Mn) + J§f(Mn)
 
 From this equation it can be seen that the krypton flux from any
 given grephite region is the sum of a series of exponentials, with the
-slope of each exponential being determined by the exponent of e. The
-problem now is one of relating these exponents to the slopes of the peeled
+slope of each exponential being determined by the exponent of e. The.
+
+problem now is one of relating these exponentsito the slopes of the peeled
 
 «
  
@@ -2543,39 +2703,40 @@ problem now is one of relating these exponents to the slopes of the peeled
 
  
 
-1»
+ 
+
+3t
 
 C
 
+”
+
+)
+
 "
 
-2)
-
-"w
-
-nN
+4]
 
 33
 
 flux curves. Considering run 3 it is obvious that the slowest exponent
 (t1/2 = 198 hr) is related to the bulk graphite, and it is expected that
-the next exponential (t12 = 15.5 hr) is related to the graphite region
+the next exponential (t1/2 = 15.5 hr) is relafed to the graphite region
 located at the center line of the core. The next exponential (t1/2 = 4.52
 hr) has a fairly low order of confidence in equating it to any specific
-graphite region and will not be considered. It can be shown that for
+graphite region and wiil not be considered. It can be shown that for
 each of the two graphite regions considered, only the first term of the
 above series is significant. Therefore the exponent of e can be related
-
 to the measured half-life, as follows:
 
-(Mn) 2D}
-—L £3,, = 0.693 .
-r-e
+(Mn, ) 2D
+—L ¥ $1/, = 0.693 .
+r-€
 
 b
 
-Now, by evaluating this equation in conjuhction with the eigenfunction
-equation, we can relate values of h, and Dg» This was done with the fol-
+Now, by evaluating this eguation in conjunction with the eigenfunction
+equation, we can relate valueé‘of h and Dg. This was done with the fol-
 lowing parameter values, and the results appear in Fig. 17:
 
 t1/2 (bulk graphite) = 198 hr (run 3), |
@@ -2584,25 +2745,26 @@ t1/2 (center-line graphite) = 15.5 hr (run 3),
 
 € = 0.10,
 
-ry = 0.0905 ft,
+r, = 0.0905 ft,
 
-H = 8.5 x 107% moles/cc-atm,
+H=8.5X 107° moles/cc-atm,
 
-HRT = 6.43 Xx 1074.
+CHRT = 6,43 X 1074, |
 
-The ‘ordinate represents the range in which Dy is expected to lie. Note
+The ‘ordinate represents the range in which‘Dg is expected to lie. Note
 
-that: for bulk graphite the value of BS is almost ‘completely independent
+/ thét:for bulk graphite the value of h;-is almost completely independent
 
-of DS; therefore the mass transfer coefficient is controlling the krypton
+of Dg; therefore the mass transfer coéfficient'is’controlling the krypton
 flux from this graphite region. For the center-line graphite region,
 
-the dependence of flux on DY becomes significant only at low values of
-It is difficult to extract ne information from run 2 because the
+the depéndence'of flux on Dg becomes significent only at low values of
+Dg. . S | e
+It is difficult to extract hﬁ information from run 2 because the
 time intervals involved were too short. The krypton addition and strip-
-ping phases were about 60 hr each. During this relatively short addition
-time the bulk graphite reached only about 20% of its -saturated value, in
-contrast to run 3, where it reached about 70% of its saturated value.
+ping‘phaseé were about'60 hr each. .Duringvthis rélatively short addition
+timekthe bulk grgphite reached only about 20% of its -saturated value, in
+contrast to run 3} where it reached about 70% of its saturated value.
 
 For both runs the center-line graphite region (t1/2 = 15.5 hr in run 3)
 
@@ -2613,7 +2775,13 @@ For both runs the center-line graphite region (t1/2 = 15.5 hr in run 3)
 
  
 
-ORNL-DWG 67-1968
+ 
+
+D& (F1%hr)
+
+105
+
+ORNL-DWG €7-1968
 
  
 
@@ -2621,105 +2789,116 @@ REGION
 AFTER BULK GRAPHITE
 (CENTER-LINE REGION OF
 
-1075
+10°4
 
 5
-0 od 02 03 04 05 O06 Or 08
+0o ol 02 03 04 05 06 07 o8
 
-h¥ ges (F708)
+hEgss (F17hF)
 
-Fig. 17. Relationship Between Dh and ht That Fits Graphite Leaching
-Curves Peeled from Run 3.
+Fig. 17. Relationship Between Di and hi That Fits Graphite Leaching
+Curves Peeled from Run 3. '
 
-was almost completely saturated. After stripping for 60 hr in run 2, the
+was almost completély saturated. After stripping for 60 hr in run 2, the |
 
-slope of the flux curve is not determined by a single graphite region
-but is still under the influence of two grephite regions, and it cannot
+slope of the flux curve is not determined by a single graphite ;egioﬂ
+
+but is still under the influence of two graphite regions, and it cannot
+
 be peeled by the same technique as run 3. Nevertheless, run 2 was looked
-at, and without presenting any results, it will be stated that it was
-consistent with run 3. B
-Now, since ne is not a strong function of p=
+
+at, and without presenting any results, it will be stated thét it was
+
+consistent with run 3.
+
+Now, since hﬁ is not a strong function of Dk, we can determine the
 
 G
-relationship between ne and S (stripping efficiency). This will be done
 
-, we can determine the
+relationship between hﬁ and S (stripping efficiency). This will be done
 
 for the bulk graphite region after sufficient time so that other tran-
 
 sients are negligible. First, we will make the following rate balance:
 
 Kr flux from xenon stripper = Kr flux from graphite
-+ dilution rate of Kr in salt,
 
 where
 
-Kr flux from xenon stripper = SQ Cs ’
+Kr flux from xenon stripper = 8Q C_,
 
-i
+{
+
++ dilution rate of Kr in salt,
+
+Sp s
  
 
-Ei
+ 
 
-C
-i \
-
-©
-
-n
+8 ke bt b
 
  
 
  
+
+ 
+
+3%
+
+(!?
+! \
+
+0
+
+»
 
 35
 
- _.._ .¥B, ,k _ .k
-Kr flux from graphite = h AL(Cys Cg.)
+\ . _ ., kB k k
+Kr flux from graphite = N "A,(C ; = C.),
 
-ack ~
-Dilution rate of Kr in salt = Vg =,
+Cack ~
+Dilution rate of Kr in salt = -V —=.
 
 dt
-
 Then, substituting,
 
-. k
-dc
-sq c= WB (ck, - cf) -v —£.,
-sp s m G' si Ts S gt
+’ - dck
+sq c& = n8a (cF. - ") -v £,
+sSp S m G si s S 3t
 
 In order to solve this equation, krypton concentrations must be converted
 
 to krypton fluxes because this is the form of the data. The measured
 
-krypton flux is related to the stripping rate as follows:
+\'krypton flux is related to the stripping rate as follows:
+
+/s
 
  
 
  
 
-_ k
-Flux = SQpCs 5
+Flug_= SQ,SPCS 3
 and
-d flux act
-- = SQ -_— .
-at SP "dat
+d flux dcg
+at SP 'dt
 Rearranging gives
-ck _ Flux
-J
-'s SQ,
-and Sn
-ac’ 1 4 flux
+Ck _ Flux
+2
+8 SQSP
+and ‘ S
+dcg 1 4 flux
 
  
 
- 
+at 5@, at T
 
-and now, confining ourselves to one graphite region, and specifically the
-bulk graphite from run 3 (ti,2 = 198 hr), it can be shown that
+and now, confining ourselves to one gréphite region,rand‘specifiCally the
+bulk graphite from run 3 (t1,2 = 198 hr), it can be shown that
 
-—— Flux, o—0.693t/t1/2
+Plux < Flux e—0.693t/t1 /2
 
  
  
@@ -2732,179 +2911,169 @@ bulk graphite from run 3 (ti,2 = 198 hr), it can be shown that
 
 and
 
-d flux =0.693 flux
-at t1/2
+d flux =-0.693 flux0
+at ti/2
 
  
 
-—~(0.693/%12)t }
+e—-(0.693/t1/2)t _
 
 Substituting into the above equations gives
 
-ok FLUX,  —(0.693/t12)%
-s SQ
+ 
 
-and
-
-)
-ac; -0.693 flux, o—0.693/t1/2)t
-
-dt = SQ.pt,
+ok T {0.693/%12)t
+= Se———
+s SQ : -
+Sp
+and ’
+ac®  -0.693 flux '
+s _ _° 0 64(0,693/1;1/2)’0 | | .
+at 5t .
+P 1/2
 
 Further, substituting these into the original rate balance we get
 
-Flax o—0-693/t1/2)t _ kB, [k _ flux, ~0.693/t1/2)t\
-0 mG \'si 5Qp
+Flux e;(o.693/t1,2)t _ thA’ ok _ tlux, —0.693/t1/2)t)
+0 ' m "G \si SQ‘Sp _ ‘
 
-0.693V_ flux
-S 0
-
-+ e0:693/t1/2)t
+| S T 0.6/t
 
  
 
  
 
-SQ _t
-%p 1/2
-. k
-Solving for Cos gives
-flux WBA 0.693V
-ok of, , mG _ ’ s .—(0.693/%12)t
-si kB S Ss t ’
-hy Ag %p %p 1/2
+ 
 
+ 
+
+SQ. _t
+QBP 1/2
+. k . -
+Solving for CSi gives
+| flux WA, 0.693V
+Ko of, , mG_ ‘ s e—(0.693/t1/2)t
+si kB g so t ?
+by 4 | Qsp Q'SP 1/2
 and in its differential form,
+ac®.  -0.693 flux nBA . 0.693V
+si o o f, , mG _ s e—(0.693/t1/p_)t
+- kB ?
+- SQ. SQ _t
+at tioh A, Up Qsp 1/2
 
- 
-
-k kB
-acy; =0.693 flux, L. Hy Ag 0.693, ~(0.693/t1 2)
-- kB ’
-SQ, 8
-at t1/2hy Ag “sp %p®1/2
-
-which relates cs, and act, /at to the measured slope of the flux curve and
+which relates Cgi and dcgi/dt to the measured slope of the flux curvenand
 the various physical parameters involved. At this point we will set up
 
-a rate balance on the bulk graphite, as follows:
+& rate balance on the bulk graphite, as follows: ' : ' - ' -
 
 Kr flux from graphite = dilution rate of Kr in graphite,
 
-oh
+N\
  
 
- 
+$h
 
  
 
-v7
+ 
 
-sh
+W
 
-a
-
-nN
+)
 
 ¥
+
+ 
 
 37
 
 where
 
-.. KB Kk _ k
-Kr flux from graphite = WL ALC; cg) 5
-
-k
-ac,
-
-Dilution rate of Kr in graphite = mA = ;
-
+... _ KB k
+Kr flux from graphite = h AG(CSl
+acy
+Dilution rate of Kr in graphite = —VG ;;:-,
 or
 kB
 m
 
-As (kk
-Cas = Cy ’
+As 1 x X
+Csi _CS ’
 G
+
+k
+dCG
+dt
 
  
 
-k
-aCq
-t
+B
+<l|¢
 
-<|”;
-
-where ck is the mean krypton concentration in the graphite. Now in the
+where Ck is the mean krypton concentration in the graphite. Now in the
 
 G
-previous analysis it was shown that for the bulk graphite, He is inde-
-pendent of Dy over the range of interest. One consequence of this re-
+previous analysis it was shown that for the bulk graphite, hﬁ?’is inde-
+pendent of Dg over the range of interest. One consequence of this re-
 sult is that the krypton concentration profile across a graphite core
 
 block is essentially flat. We can therefore say that
 
-k . Kk
-Ce = Cai
 and also, from Henry's law,
-ck _ HRT ck _ HRT ck .
 
-si. ee Gi € G
+k _ HRT k _ HRT .k
+csi-— e %e1 = %%
 
 Substituting this into the graphite rate balance, we have
 
+\ ok kB
+S
+
  
 
-k . _ kB
-: dc. Cy
-si _ hy A HRT (ct _ ck)
-dt Vy si s/°
+dt ; ,EVG - \Usi s/ ®
 
-’ Substituting previously derived relations for ck si’ ack 1/4% and cs Anto
+) Substltutlng prev1ously derlved relations for C o1’ dC /dt, and C 1nto
 
-the above equation, and solving for rn, we have,
+the above eqnatlon, and solv1ng for hﬁ?, we have, -
 
-0.693¢ ( 0.693V_ )
-7 (os)
-1B A HRTt 1 SQ,
+0.693€ ( D.693VS )
+—_— ] - ———]
+A_HRTt -t sqsp
 
-hn 1/2 1/2
+th‘~ G r/2 1/2
 
-m ~ I 0.693 [fe Vg
-Vv. “85q ¢t HRT © TV.
-SP 1/2
-
-G G
+m 1 0.693 [¢€ vs)
+— e —— | m— - —
+- BRT ~ V
+Vo 5ot 5
 
  
  
 
  
 
+ 
+
 38
 
-We now evaluate ne as a function of S for the following values of other
+We now evaluatehﬁ?.as_a function of S for the following values of other
 
-parameters:
+parsmeters:
 
-t = 198 hr (bulk graphite),
-
+) /2 = 198 hr (bulk graphite),
 e = 0.10,
-
 A = 1450 ft? (channel surface area in bulk graphite region),
-V, = 64.8 ft? (volume of graphite in bulk region),
-
-G
-Vv, = 70.5 ft? (volume of salt in loop),
-Up = 50 gpm,
-
-H = 8.5 x 10~° moles/cc.atm,
+Vg = 64.8 ft? (volume of graphite in bulk region),
+g = 705 £t (volume of salt in loop),
+Q‘sp = 50 gpn, | '
+H = 8.5 X 10~° moles/cc.atm,
 HRT = 6.43 X 107%.
-The results of this calculation are shown in Fig. 18, where the mass trans-
-fer coefficient (nf) is plotted against stripping efficiency (s). In
+The results of this calculation are shown in Fig. 18; where the mass trans-
+fer coefficient (hﬁ) is plotted against stripping efficiency (s). Im
 -this figure the superscript B refers to the bulk graphite region. Also
-shown on this plot is the theoretical expected range of ne based on
+shown on this plot is the theoretical expected range of hﬁ?’based on
 
 ORNL-DWG 67-1969
 
@@ -2916,10 +3085,14 @@ ORNL-DWG 67-1969
 
  
 
-. 0.4 T T T T 1 1
-j SHADED AREA - EXPECTED REGION WHERE h*Ch vs.
-: S CURVE SHOULD LIE FOR CENTER-LINE GRAPHITE
-03 THEORETICAL hX°“ FOR CENTER-LINE GRAPHITE
+ 
+
+ 
+
+- 04 T T T T 1 T kCL
+] | | SHADED AREA - EXPECTED REGION WHERE hle’~ VS.
+, S CURVE SHOULD LIE FOR CENTER-LINE GRAPHITE
+0.3 THEORETICAL hXCL FOR CENTER-LINE GRAPHITE
 
  
 
@@ -2927,16 +3100,42 @@ j SHADED AREA - EXPECTED REGION WHERE h*Ch vs.
 
 REGION iN TURBULENT FLOW
 
-|
+{ | |
+]
 
-0.2 SHADED AREA - EXPECTED REGION WHERE ht vs. s |
+0.2 SHADED AREA - EXPECTED REGION WHERE K vs. S.
 CURVE SHOULD LIE FOR BULK GRAPHITE
 
-THEORETICAL h® FOR TURBULENT
+THEORETICAL h'® FOR TURBULENT|
 FLOW FOR BULK GRAPHITE
 
-_EaE OY
-NN
+\\\\\ \\\;
+N
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+h
+o
+
+ 
+
+ 
+
+ 
+
+ 
+
+h& MASS TRANSFER COEFFICIENT (ft/hr)
 
  
 
@@ -2960,8 +3159,6 @@ NN
 
  
 
-hk MASS TRANSFER COEFFICIENT (ft/hr)
-
  
 
  
@@ -2972,87 +3169,67 @@ hk MASS TRANSFER COEFFICIENT (ft/hr)
 
  
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-V
+74
 %
-V) £
-01 Z 5%
-g THEORETICAL hE FOR LAMINAR
-VA } FLOW FOR BULK GRAPHITE
-—
-,~TEXPECTED RANGE OF S
-0 ] | |
+4
+0.1 ;ﬂ//
+7 THEORETICAL h*2 FOR LAMINAR
+A { FLOW FOR BULK GRAPHITE
+\\_;
+,C'EXIPECTEDI RANGIl-: OF S
+0
 
  
 
-0 10 20 30 40 5 60 70 80 90 100
+0 10 20 30 40 50 60 70 80 S0 100
 S, STRIPPING EFFICIENCY (%)
 
-Fig. 18. Relationship Between nt and S for Bulk and Center-Line
-Graphite Regions.
+Fig. 18. Relationship Between hﬁ and S for Bulk and Center-Line
+Graphite Regions. '
  
 
  
 
  
 
+"
+
+"
+
 »
 
-a»
-
-»
-
-0
+i
 
 C
 
 39
 
-laminar and turbulent flow; it displays the uncertainty in the diffusivity
-of krypton in salt. In addition the expected range of stripping effi-
-ciency is outlined. Note that the calculated curves fall within the ex-
-pected range. | |
+laminar and turbulent flow;‘it displaeys the uncertainty in the diffusivity
+of krypton in salt. Iniaddition the expected range of stripping effi-
+ciency is outlined.. Note that the calculated curves fall within the ex-
+pected range. . | o |
 
-‘In order to pick out more explicit values of ne, we can weight this
+‘In order to pick out more exp11c1t values of th, we can weight this
 curve with the following two considerations. First, it is expected that
 some circulating bubbles were present, as will be shown in the next sec-
-tion on Capacity Considerations. Furthermore, it is expected that cir-
+tion on Capacity Consiuerations. Furthermore, it is expected that cir-
 culating bubbles increase the effective stripping efficiency to the high
-end of the indicated range, and likely even highet. Second, most of the
-salt in the bulk graphite region is of a laminar character, rather than
-turbulent, so ne ought to be on the lower end of the expected range.
+end of the indicated range, and Iikely even highef. Second, most of the
+salt‘in the bulk graphite region is of a leminar character, rather than
+turbulent, 80 hﬁ? ought to be on the lower end of the expected range.
 Therefore, from Fig. 18 and with the above weighting considerations, we
+might pick out.a probeble range of h;B to bulk graphiteras
 
-might pick out a probable range of he to bulk graphite as
-0.05 < KE < 0.09 ft/nr .
+0.05 < K> < 0.09 ft/nr .
 
-The next graphite region (t1/2'= 15.5 hr), interpreted as the center-
+The next graphite region (t1/2'='15;5 hr), interpreted as the center-
 line graphite region, is more difficult to handle. The previous deriva-
-tion assumes that all the krypton dissolved in salt comes from the graph-
+tion assumes thateall_the krypton dissolved in salt comes from the graph-
 ite region under consideration. Now, when working with the center-line
-region, we must also consider the krypton dissolved in salt that origi-
+region, we must also considef the krypton dissolved in salt that origi-
 nates in the bulk graphite. ‘An equation whose derivation is similar to
 
-the above and which partially compensates for this is
+the above and which partislly compensates for this is
 
  
 
@@ -3060,25 +3237,24 @@ the above and which partially compensates for this is
 
  
 
-0. 693eVS" niEyB
+0. 693eVCL nEBy B
 
-1 + m G
+A-l-_'_mG
 
-: WLC “HRT ‘QS
+| : - ACLtCL HRT 'q. S
+hkCL'z _ . 1/2 : 8P . ,
+m o EByB 0.693eVCY +CL 'fluiB o
 
-peel | 1/2 sp ,
+S .m G G 1/2
+1+ - T Tn. J-*'fﬁ“"'"ﬁi
+Qg8 QSPStllzuRT | 1-,1/2 Flux;
 
-m hiBaB 0.693eVCr +L prud
-- mG G 1/2 0
-1+ -— <r. 1 TF oT
-qf rts SRT f 12 FLUX
+where the superscrlpts CL and B 1ndlcate center-llne and bulk gr&phlte
+reglons, respectlvely The equatlon was evaluated with the Same parame-
 
-where the superscripts CL and B indicate center-line and bulk graphite
-regions, respectively. The equation was evaluated with the same parame-
+‘ter values as before and With the follow1ng additional ones, and for &
 
-‘ter values as before and with the following additional ones, and for a
-
-given value of § the value of He was taken from the previous calculation
+glven value of S the value of hﬁ? was taken from the prevlous calculation
 
  
  
@@ -3089,46 +3265,48 @@ given value of § the value of He was taken from the previous calculation
 
 for the same void fraction:
 
-2 - 15.5 hr (center-line graphite region),
-ACL = 14,5 ft? (channel surface area in center-line region),
-vg = 0.682 £t3 (volume of graphite in center-line region),
-FluxB = 3574 counts/min (intercept of peeled curve at t = O for
+t$?2,= 15.5 hr (center-line g;aphite rggion),
+
+ACL = 14.5 £t2? (channel surface area in center-line region),
+| VgL =-0.682 ft3 (volume of graphite in center-line region),
+Fluxg = 3574 counts/min (intercept of ?éeled curve at t = O for
 
 bulk graphite),
-2178 counts/min (intercept of peeled éurve at t = 0 for
+2178 counts/min (intercept of peeled curve at t
 bulk graphite).
 
+0 for
+
+i
+"
+
 The results of this calculation appear on Fig. 18. Also shown is the
+theoretical range of hﬁ?L based on turbulént flow and displ&ying'therun-
+cértainty in diffusivity of krypton in salt. The equation for hﬁ?L is
+invalid at low values of S b¢Cause kﬁ? approaches infinity; hen;g the
+lines are terminated as they approach the equivalent line for hm . Nev-
+ertheless, it seems that a reasonable range of hﬁPL for the MSRE would
 
-theoretical range of Be based on turbulent flow and displaying the un-
-certainty in diffusivity of krypton in salt. The equation for HE is
+be between 0.25 and 0.4 ft/hr.
 
-invalid at low values of S because Ke approaches infinity; hence the
-lines are terminated as they approach the equivalent line for ne. Nev-
-ertheless, it seems that a reasonable range of neo for the MSRE would
-
-be between 0.25 and 0.4 ft/nr.
-
-Capacity Considerations
-
- 
+Capecity Considerations
 
 In addition to rate constant determinations from slopes of the peeled
 exponentials, we should be able to integrate under the curves and deter-
 mine information on the capacity of the system. For instance, the inte-
-gral of the bulk graphite curve (t12 = 198 hr) should yield the approxi-
-mate 85Kr capacity of this graphite. Then, from knowledge of the 8%Kr .
+gral of the bulk graphite curve (t1/2 = 198 hr) should yield the approxi-
+mate ®°Kr capacity of this graphite. Then, from knowledge of the 8%Kr .
 addition concentration, we could compute the approximate grephite void
 fraction available to krypton. When this calculation was performed with
-the addition concentration taken as the mean pump bowl concentration,
-the graphite void fraction came out to be about 0.40. This is obviously
+the addition concentration taken as the mean pump bowl concentrétion,
+the graphite void fraction came out to be sbout 0.40. This is obviously
 incorrect, even when the rough nature of the calculation is considered.
 The reason for this is that krypton was added through a bubbler, and it
-bubbled up through the salt at approximately one order of magnitude higher
-in concentration than in the pump bowl proper. These highly concentrated
+bubbled up through the salt at approximatély one order of magnitude higher
+in concentration than in the pump bowl proper. These highly concéntrated
 krypton bubbles were caught in the turbulent and recirculating zone formed
-by the spray ring. Very likely some of these bubbles, or micro bubbles,
-were carried into the primary loop and circulated with the salt. The re-
+by the spray ring. Very likely some of these bubbles, or micro bUbblés,
+were cerried into the primary loop énd circulated with thersalt. - The re-
 sult was that the concentration of dissolved krypton in the fuel salt was
  
 
@@ -3136,167 +3314,181 @@ sult was that the concentration of dissolved krypton in the fuel salt was
 
  
 
-a
+o
 
-Ya
+¥a
 
 41
 
 much higher than it would have been based on the mean pump bowl concen-
 tration. Now, if we compute the graphite void fraction based on the dis-
 solved krypton in the salt being in equilibrium with the bubbler addi-
-tion stream, the result is about 0.04, and this is lower than would be
-expected. The true void fraction is between the limits of what can be
+
+-tion stream, the result is about 0.04, and this is lower than would be
+
+expected.> The true void fraction is between the limits of what can be
+
 calculated, and insufficient information is available to compute it more
-accurately. The same is true for all other graphite regions and the fuel
+
+‘accurately. The same is true for all other graphite regions and the fuel
+
 salt, therefore little useful information on capacity is available from
-the data. It should be pointed out that the choice of a bubbler line
-for 85Kkr addition as opposed to the pressure reference leg, which would
-not have given this deleterious effect, was dictated by other consider-
+the data. It should be pointed out thet the choice of & bubbler line
+
+for 85K:r-.rzu,rfi.d.:i.’cion as opposed to the pressure reference leg, which would
+not have given this deleterious effect, was &ictated by other consider-
 
 ations.
 
 XENON-135 POISONING IN THE MSRE
 
-General Discussion
+General Discussion -
 
-To calculate the steady-state 125Xe poisoning in the MSRE, it is
+To calculate the steady-state 135%e poisoning in the MSRE, it is
 first necessary to compute the steady-state 135%e concentration dissolved
-in the salt. This is because.the *3%Xe is generated exclusively in the
-salt, at least it is assumed to be. The xenon concentration in the salt
-is computed by equating the source and sink rate terms involved. The
+in the salt. This is because-the 13%Xe is generated exclusively in the
 
-most significant of these terms and considerations involving them are
+salt, at least it is assumed to be. The xenon conéentration in the salt
 
-~ discussed below.
+is cdmputed'by equating the sourcé and sink rate terms involved. The
+_most Significant of these terms and considerations involving them are
 
-Dissolved Xenon Source Terms and Considerations
+- discussed below.
 
-1. Xenon Direct from Fission. The 135Xe generation rate direct
+Dissolved Xenon Sburce Terms and-Considerations |
 
-from fission ‘is about 0.3% per fission.
+1. Xenon Direct from Fission. The 135%e generatlon rate dlrect
 
-2. Xenon from Iodine Decay. The *35T generation rate is 6.1% per
-fission, either direct or from the decay of 1357e, It in turn decays to.
-135¢c with a 6.68-hr half-life. The total 13°Xe generation rate is there-
+ 
+
+from fission 'is about 0.3% per fission.
+
+2. Xenon from Iodine Decay.j The 1371 generatlon rate is 6.1% per
+f13$1on, elther direct or from the decay of 135Te, It in turn decays to.
+135Xe with a 6.68-hr half-llfe. The total 135y¢ generatlon rate is there-
 fore 6.1 + 0.3 = 6.4% per fission, and, as will be seen from the next
+
 consideration, is confined completely to the salt phase. Since the prin-
 
-“cipal 135%e source is from the decay of iodine and since the 1351 nalf-
+“cipal 3%Xe source is from the decay of iodine and since the 35I half-
 
  
  
 
  
 
-42 LT
+42 L
 
 life is long compared with the fuel-loop cycle time (25 sec), it will be
-assumed that 13%Xe is generated homogenecusly throughout the fuel loop.
-3. Iodine and Tellurium Behavior. Since '3°1 and 13°Te are pre-
-
-cursors of 135%e, their chemistry is important. In this model it is as-
+assumed that 135Xe is generated homogenecusly throughout the fuel loop.
+3. Iodine and‘TelluriuﬁvBehavior. Since 35T and '35Te are pre-
+cursors of l35Xe, their chemistry is important. In this model it is as-
 sumed that both elements remain in solution as ions, and therefore will
-
-not be removed from solution by the xenon stripper or diffusion into the
-
-| grephite. Concerning iodine, its thermodynamic properties indicate this
-
-10 Recent evidence from the reactor also indicates this to
-
-to be true.
-be true. Some iodine has been found in the off-gas system (but very 1lit-
+not be removed fromISOlution.by the xenon stripper or diffusion into the
+| graphite. Concerning iodine, its thermodyneamic properties indicate this
+to bé true.19® Recent evidende from the reactor also indicates this to
+be true. Some iodine has been found in the‘off#gas system (but very 1lit-
 tle, if any, 135I), but this is due to the volatilization of the precur-
-sor tellurium. Since *35Te has such a short half-life (<0.5 min), very
-
-little of it will have a chance to volatilize; therefore this effect is
-
-neglected. It is also assumed for this model that iodine and tellurium
-will not be absorbed on any internal reactor surfaces, such as the con-
+" sor tellurium. Since ?5Te has such a short half-life (<0.5 min), very
+little-pf it will have a chance to voletilize; therefore this effect is
+neglected. It is also assumed fo} this model that iodine ahd tellurium
+will not be absorbed on any internsal reactbr surfaces, such as the con-
 
 tainment metal and graphite.
 
 Dissolved Xenon Sink Terms and Considerations
 
-1. Xenon Decay. ZXenon-135 decays with a half-life of 9.15 hr, and
-decay takes place throughout the entire fuel loop.
+1. Xenon Decay. Xenon-135 decays with a half-life of 9.15 hr, and
+decay takes place throughout the entire fuel lodp. | _
 
-2. Xenon Burnup. Xenon-135 has a neutron absorption cross section
-of 1.18 X 10° barns averaged over the MSRE neutron spectrum. 1?
+2. Xenon Burnup. Xenon-l1l35 has a neutron absorpﬁion cross section
+of 1.18 X 10° barns averaged over the MSRE neutron spectrum.l?! |
 
-3. Xenon Stripper Efficiency. As noted earlier, the efficiency of
-the xenon stripper was measured at the University of Tennessee with a
-COo-water system? and confirmed later with an Os-water system.1? Both
+3. Xenon Stripper Efficiency. As ﬂoted earlier, the'efficiency of
+the xenon stripper was meaéured at the University of TennesSee with a
+COg-water systemP and confirmed later with an Os-water systen/l;l2 Both
 tests were for a bubble-free system. The measured rate constants were
 
-then extrapolated to a xenon-selt system.’
+then extrapolated to a xenon-salt system.?
 
-The stripping efficiency is
-defined as the percent of dissolved gas transferred from the salt to the
-gas phase in passing through the xenon stripper spray system. In magni-
-tude it turns out to be between 8 and 15%.
+The stripping,efficiency is
+defined as the percent of dissolved gas transférred from the salt to the
+gas phase in passing through the xenon stripper spray system. In magni-_
+tude it turns out to be between 8 and 15%. | |
 
 4. Xenon Adsorption. Xenon is not adsorbed on graphite signifi-
-cantly at these temperatures, 13,14 and it is very unlikely that it will
-be adsorbed on metal surfaces.
+cantly at these temperatures,'?s1% and it is very unlikely that it will
+be adsorbed on metal surfaces. ‘ |
 
-5. Xenon Migration to Graphite. The amount of xenon transferred
-to the graphite is a function of the mass transfer coefficient, diffusion
+5. Xenon.Migrationhto Grephite. The amount of xenon transferred
+to the graphite is & function of the mass transfer coefficient, diffusion
 
-coefficient of xenon in graphite, and the burnup and decay rate on the
+- coefficient of xenon in graphite, and the burnup and decay rate on the
  
 
  
 
  
 
-Fil
+ 
+
+ 
+
+Fi
 
 43
 
 graphite. During manufacture, this graphite was impregnated several times
 
--to obtain a low permeability. Diffusion experiments? with a single sam-
+-to obtain a low permeability. Diffusion experim.ents2 with a single sam-
 
 ple of CGB graphite yielded a diffusion coefficient of xenon in helium
-at 1200°F and 20 psig of about 2.4 X 107° cm?/sec (9.2 X 10~° ft2/hr).
+at 1200°F and 20 psig of about 2.4 X 1077 cm?/sec (9.2 x 10~° f£t2/hr).
 This was measured in a single sample of graphite and may not be repre-
-sentative of the reactor core; however, jit will be seen later that the
-poison fraction in the MSRE is not a strong function of the diffusivity.
-As previously pointed out, the core graphite may be divided into three
-fluid dynamic regions, bulk, center line, and lower grid. The krypton
+
+sentative of the reactor core; however, it will be seen later that the
+
+poison fraction in the MSRE is not a Strongifunctidn of the diffusivity.
+
+As previously pointed out, the core,graphite may be divided into three
+fluid dynamic regions, bulk, center iihe, and lower grid. The krypton
 experiment did not yield any reliable information on the lower-grid re-
-gion, and since it is in a region of very low nuclear importance, it will
+gion,.and since it is in a region of very low nuclear importance, it will
 not be considered. The bulk and center-line regions will, however, be
 considered.
 
-6. Xenon Migration to Circulating Bubbles. ‘As will be seen, the
-effect of circulating bubbles is very significant because xenon is so
+6. Xenon Migration to Circulating Bubbles. ‘'As will be seen, the
+effect of circulating bubbles iS'very significant because xenon is so
 insoluble in salt. Although information on circulating bubbles is meager,
 they will be considered.
 
 Other Assumptions and Considerations
 
-1. The '35Xe concentration dissolved in the fuel salt was assumed
-to be constant throughout the fuel loop. From the computed results it
-can be shown to change less than 1%.
+1. The '25Xe concentration dissolved in the fuel salt was assumed
+to be constant'throughout the fuel loop. From the computed results it
+can be shown to change less than 1%. |
 
-2. It was assumed that the 125Xe isotope behaves independently of
-all other xenon isotopes present. |
+2. Tt was assumed that the 13%Xe isotope behaves independently of
+all other xenon 1sotopes present. |
 
-3. The 135%e generated in the laminar sublayer of salt next to the
+3. The 135%e generated in the lamlnar sublayer of salt next to the
+graphlte was considered as orlglnatlng in the bulk salt.
 
-graphite was considered as originating in the bulk salt.
+4. The core was con51dered as belng composed of 72 annular rlngs,
 
-4, The core was considered as being composed of 72 annular rings,
+© / Cofe
 
-[y
+: Core elemen
+"
+Wy
+
+N—
 
 as shown below
 
-Core
+" l‘l
 
-Core element "e"
+ 
 
  
 
@@ -3309,109 +3501,105 @@ Core element "e"
 
 44
 
-Average values of parameters such as neutron flux, percent graphite, mass
-transfer coefficient, ete., were used for each ring.
+'Average values of parameters such as neutron flux; percent grsphite, mass
+transfer coeffioieﬁt, etc., were used for each ring; |
 5. The reactor system was assumed to the isothermal at 1200°F.
-Consistent with all previous assumptions, the rate balance of 135%e
+Consistent with all previogs assumptions, the rate balance of 135%e
 dissolved in the fuel salt at steady state is the following:
 
-Generation rate = Decay rate in salt + burnup rate in salt
+.Generation rate = Decay rate in salt + burnup rate in salt
 + stripping rate + migration rate to graphite
 
 + migration rate to circulating bubbles ,
 
-\
+4
 
-where the units of each term are '3°Xe atoms per unit time. Each term
+where the units of each term are *3%Xe atoms per unit time. Each term
 
-will now be considered separately. } : .
+will now be considered separately.
 
-_Xenon-135 Generation Rate
+~Xenon-135 Generation Rate
 
-The total 3°Xe yield is 6.4% per fission. The corresponding 13Xe
-generation rate is 5.44 X 1019 135%e atoms per hour at 7.5 Mw.
+The total 3°Xe yield is 6.4% per fission. The corresponding 12°Xe
+generation rate is 5.44 X 1012 135%e atoms per hour at 7.5 Mw.
 
 Xenon-135 Decay Rate in Salt
 
-The decay of 135Ye dissolved in salt is represented as follows:
+The decay of 135%e dissolved in salt is represented as follows:
 
-0.693V_C
-Decay rate in salt = ——m—— .
-
-X
-t1,2
+0.693V_C%
+Decay rate in salt = _
+- t1/2
 
 Xenon-135 Burnup Rate in Salt
 
-i
-
-The burnup rate of *3%%e dissolved in salt is expressed incrementally
-
-by dividing the core into the 72 elements described above and is as fol- +
+The burnup rate of-135Xe dissolved in salt is expressed incfementally
+by dividing the core into the 72 elements described above and is as fol-
 
 lows:
-72 :
-. _ X Xx
-Burnup rate in salt = Lz $00 £.V.Cy .
+.72
+
+: _ x X
+Burnup rate in salt = ;ZL ¢2eo feV'ecs .
 
 Xenon-135 Stripping Rate
 
 Recalling that the stripping efficiency (S) is defined as the per-
-centage of 135¥e transferred from salt to helium in passing through the
+centage of 35Xe transferred from salt to helium in passing through the
  
 
-|
-
  
 
- 
-
-[4
+3
 
 45
 
-pump bowl stripper, the stripping rate is expressed as
-. cos _ Xx
-Stripping rate = pC .
+pump bowl stripper, the strippiﬂg rate is expressed as -
+, i _ X
+Strlpplng rate = Q,SPSCS .
 
 Xenon-135 Migration to Graphite
 
-Each graphite core. block will be assumed to be cylindrical. This
+Each graphite Qorevblock will be assumed to be cylindrical. This
 seems to be a good compromise between the true case and ease of computa-
 tion. The surface-to-volume ratio for a cylinder is very close to the
 channel surface area-to-volume ratio of the actual core blocks. Diffu-
-sion of '3%Xe inside cylindrical core blocks at steady state and with a
+sion of 135Xe inside cylindrical core blocks at steady state and with a
 
 sink term is as follows:
 
  
 
-a’cy lacy oe,
-t——=—=(¢ + N)Cy
-dr rdr D, 2
-G
+2 X X :
+da<cC 1l dacC €
+
+G+___q=_x(¢x+-)\2{)c}é.
+dr r dr Dy 2
+
 Solving for the following boundary conditions
+
 CE = finite at r = 0,
-X - 0X =
-Ca CEs at r =r,
-"we obtain .
-« x Ler)
-Cs = Cas 7
-Co I,(Br,)
-where
-€
-p% = — (4,0° +2),
-D
-G So Le
-I, = zero-order modified Bessel function of the first kind.
+CG cGi at r rs
+- we obtain 7 | | .
+« x L (Br)
+%6 = o1 <
+- I,(Br,)
+where o
+| €
+p* = = (4,00 + A%,
+D . :
+| I0 = zero-order modified Bessel'function of the first kind.
 
-Differentiating and evaluating at r,, we have
+Differentiating and evaluating at r;, we have
 
-zl o I, (pr)
-T YGi | °
-dr r, L,(pr;)
+x\ las
+ESQ L 11(5?1)
+¢ *
+dr / - IO(Brl)
 
-The 12°Xe flux in the graphite and at the surface (r = r,;) is given by
+1l
+
+The '?°Xe flux in the grephite and at the surface (r = r,) is given by
 
 ~
 
@@ -3422,132 +3610,143 @@ The 12°Xe flux in the graphite and at the surface (r = r,;) is given by
 
  
 
-x
-8
-dr Jy ’
+. Dg dcz
+F l'llX = == | — 3
+’ r 1 € dr r
 
 1
-
 or, substituting the previous equation, we obtain
+X
+DG Il(ﬁrl)
 
-xX
-Da I (pr)
+Pluxs = X, g2 Al
+T e I (Br.)
+0 1
 
-=X p21,
-1 Gi” I,(pr,)
+The '?5Xe flux can also be represented by
 
-The 135Xe flux can also be represented by
+o Flux 6: HRT x') .
+e
 
-- Fl Tux =n x - HRT cs) .
-Try Te
+Combining the last two equations by e]_'_i.mine.‘l:ingC}(';:.L
 
-Combining the last two equations by eliminating Cai
+Flux. , we obtain
+i rlA
 
-Flux® s we obtain
-TC
+X X
+hmc 5
 
-x Hy Co
-Flux = =e
-r I HRT I (pr)
-1 +
+ 
+
+Fluxﬁ = <
+1 hmBRT Io(ﬁrl)
+1+ —_—
 
  
 
 X
 
-BD, I (pr)
+BD, Il(Brl)
 
-in units of '35Xe atoms/hr.ft2. Because of the flux distributions, graph-
+in units of *3°Xe atoms/hr.ft?. Because of the flux distributions, graph-
 
-and then solving for
-
-ite distributions, and the various fluid dynamic regions, the core will
-
+ite distributions, and the various fluid dynamic regions, the
 be handled incrementally as the 72 regions described earlier.
-solve for the total '2°Xe flux into the graphite, as follows:
+solve for the total 135%e flux into the graphite, as follows:
 
-72 ny Fr c*
-Migration rate to graphite = ), —_—
-e=1 Hh HRT'I (Br)
-1 + Ze _ 0\Fe’y
-Be Dg I3(Bcr,)
+ 
 
-in units of 135Xe atoms per hour, where
+- 72 h JVFC
+Migration rate to graphite = z ee’s
+e=1 h* HRT I (B r.)
+me 0 e 1
+
+1+
+
+ 
+
+. X
+Be Dg I;(Br,)
+
+in units of '?°Xe atoms per hour, where
 
 volume of core element,
 
-Vv
+graphite volume fraction at V
 
+v
 e
-Fo graphite volume fraction at V o?
+
+F
+€
 Y
 
-fuel channel surface area-to-graphite volume ratio.
+fuel channel surface area-to-graphlte volume ratlo.
 
-We can now
+and then solving for
+
+core will
+
+W? can now
  
 
  
 
  
 
-bo
+ 
 
-+
+b
+
+"
 
 »
 
 47
 
-It is assumed that Y is constant throughout the core moderator region
-and has a value of 22.08 f£t~'.
-
+It is assumed that Y is éonstaht throughout the core moderator region
+and has a value of 22.08 ft~', |
 Xenon-135 Migration Rate to Circulating Bubbles
 
-The rate of 13%Xe migration to the circulating bubbles is represented
+The rate of >3%Xe migration to the circulating bubbles is represented
 
 by
-Migration rate to bubbles = hphqg (cx - cl;
+Migration rate to bubbles = hBAB (?ﬁ —fC:i
 
-in units of '3%Xe atoms per hour. The salt film is by far the control-
-ling resistance; therefore the 135%e concentration in the bubble is uni-
+in wnits of *3%Xe atoms per hour. The salt film is by far the control-
+ling resistance; therefore the 12°Xe concentration in the bubble is uni-
 form and at equilibrium with the concentration in the salt at the inter-
 
 face. Consequently the previous equation can be written as
-. . _ x _ x
-Migration rate to bubbles = hep c: HRTCY ) .
+. . _ X _ x\
+Migration rate to bubbles = hBA.B (CS HRTCB) .
 
 At steady state the migration rate to the bubbles equals the rate
-
-that *3°Xe is removed from the bubbles, therefore
+that '3°Xe is removed f?om the bubbles, therefore
 
 Migration rate to bubbles = Decay ratep
-+ burnup ratey + bubble stripping rate ,
++ burnup rateB + bubble stripping rate ,
 
 where
-_ bd
-0.693V_yCq
 
-X
-ty
+L X
+O.693Vé¢CB
 
-0. yasoX
-%p?® Cy 2
+X J .
 
-Decay rate in bubbles s
+_tl/z'
+Q‘SPIIIS CB 2 .
 
-Bubble stripping rate
+Decay rate in bubbles
 
-Burnup rate in bubbles
+‘Bubble stripping rate
 
-72
+_ 72
 
-x X
-)) 6,00 EV ICE 5
-e=1 =
-
-and the burnup rate of '3%Xe in the bubbles is handled the same as in the
-salt, that is, by dividing the core into 72 elements of volume and adding
+. X X
+Burnup rate 1n bubbles ;Za ¢2ec feVéwCB >
+and the burnup rate of 25Xe in the bubbles is handled the same as in the
+selt, that is, by dividing the core into 72 elements of volume and adding
 up the burnup in each element. Substituting the individual rate terms in
 
 the removal rate balance equation we get
@@ -3559,137 +3758,145 @@ the removal rate balance equation we get
 
  
 
+ 
+
 48
 
-. 0.693V vey
-Migration rate to bubbles = —3
-tz
-72
-X X 1m X
-+ /
-) Qed £ Ve iCh + Apts Cs
+| ~ 0.693V_yCq
+Migration rate to bubbles = — ~ s
+tl/g.
 
-e=1
+X, X |, yaX
+'+‘2; Q'2e°- fevewCB * QSPWS CB
 
-Now, this equation may be solved simultaneously with the previous equation
+_wa, this equatlon may be solved 31mu1taneously with the prev1ous equatlon
 
-to eliminate Cpe This results in
+to eliminate CB This results in
 
-X
-bgApCs
-by RT
-0.693V.y "2
-—= +), QFE VY + Q Js -
+' X
 
-1/2 e=1
+bpApCs
+
+. _DpAgHRT :
+0.693V_y 72 | | |
+
+Tt L QY * g w' -
 
  
 
-Migration rate to bubbles =
+Migration rate to bubbles = '
 1 +
-
- 
 
 in units of 135Xe atoms per hour.
 
-Xenon-135 Concentration Dissolved in Salt
+Xenon-135 Concentration D;ssolved in Salt
 
-The 135Xe concentration dissolved in salt may now be solved for by
+The 1?5Xe concentration dissolved in salt may now be solved for by
 substituting the individual rate equations into the original rate balance.
-This will yield
+This will yield |
 
-0.693V CX 72
+0.693chx 72
+
+5.4 x 10'% = ———25. 8 X X
+t z ¢2e°- fevecs
 
  
 
  
 
-5.44 x 10° = —— 8.8 ¢_ or ver
-$12 Lz 2¢ "ee’s
+ 
+
+ 
+
+1/2 e=}1
 72 ’
-nh YF V CY oo
-+ Q 8c + ), ees .
-Pp esl nh HRT I (Br) |
-1 + me ge
-xX : -
-Peg I, (Ber) :
-bgeC
-. Co
-HRT ’
-. highs
-0.693V.y = 72
-—=- + q pI * LGTY
-t1/2 e=1
+| h YF v X -
++ Qg sc’sc + ), e e’s | .
+p e=1 hX HRT I (B r.) |
+1+ me 0 el _ f
+X . : ; :
+BeDG_'Il(Berl) ‘ | . ‘:_
+X
+C o »
+. hpAsCo o
+| BT ’
+1+ o
+0.693V_y - - 72
+/
+Tt Q¥ + AR |
+1l/2 €=1 _ T
 
-where the units of each term are 135Xe atoms per hour.
+where the units of each term are '35Xe atoms per hour.
  
+
+ 
 
  
 
 »
 
-a
+it
 
 49
 
 Xenon-135 Poisoning Calculations
 
- 
-
 The xenon poisoning as obtained in this report is defined as the
 
-number of neutrons absorbed by 135%e over the number of neutrons (fast
+number of neutrons absorbed by 12°Xe over the number of neutrons (fast
 
-and thermal) absorbed by 235y and weighted according to neutron impor-
+~and thermal) absorbed by 235y and weighted according to neutron impor-
 
-tance!’ it is expressed as a percentage. The weighting function is the
+15
+
+tance; it is expressed as a percentage. The weighting function is the
 
 adjoint flux. When considering the core incrementally it is given by
-
-72
-$59, LVCE + ), ox FVTq V3 £_V Ch
-e=1
-
-72
-Ls 2¢'2ee es 2ee'e’G © PerefeVe
-
-Pr = : ’
-Tn 8%) £V.Co
+| | 72 72
+X =X X X
++ + 4
+Z; o 2e 2efev Cs — ° ¢§e¢2eFeveCG z; ° ¢§e¢2efeve¢CB
+= oo e=1 e=1
 
  
 
+Eume IR
+
+ees
+
 where the first term in the numerator is the rate dissolved 135%e is
-
-burned up, the second is the rate 135¥e in the graphite is burned up,
-
-and the third is the rate '3°Xe in the bubbles is burned up; all terms
-
+burned up, the second is the rate 135%e in the graphite is burned up,
+and the third is the rate 135Xe in the bubbles is burned up; all terms
 are weighted with the adjoint flux. Now, the term representing the rate
-
-135%e in the graphite is burned up cen be replaced by the 135%e flux
+135%e in the graﬁhite is burned‘up.can be replaced by the 135%e flux
 
 into the graphite times the fraction burned, that is
 
-hy JV F CY ¢ oT
+ 
 
-o RIMAGE Xx ’ = x
-h HRT I (B.r.) \¢_o +N
+hﬁeYVeFeC: ¢ ecg’
+o ¢2eFeVeCG X ’ 2x X
+h HRT I (B.r ) \¢ o + A
+1+ me o' €1 2e
 
-1 + =e 0 e 1 2e
+ 
+
 X
-Pela I,(Br,)
+5eDG Il(Berl)
 
-With this substitution the poisoning of 135%e in the MSRE can be computed.
-The reactivity coefficient is related to the poisoning by a constant,
-which is a function only of the nuclear parameters. ‘This has been evalu-
+With this substltutlon the p01son1ng of 135Xe in the MSRE can be computed.
 
-ated’ and is
-(8k/k)* = 0.752 P* .
-Estimated 135%Xe Pot soning in the MSRE Without Circulating Bubbles
+The react1V1ty coefficient is related to the poisonlng by a constant,
 
-With the equations given above, 135%e poisoning has been computed
+- which is a functlon onLy of the nuclear parameters. This has been evalu-
 
-for the MSRE for a variety of conditions subject to the assumptions dis-
+ated15 and is
+(8k/K)* = —0;752 P .
+Estimated 135Xe P01son1ng in the MSRE Without Clrculatlng Bubbles
+
+Wlth the equatlons given above,_135Xe poisoning has been computed
+
+for the MSRE for s varlety of conditions subject to the assumptions dis-
 
 cussed earlier. The procedure was to first solve for the steady-state
 
@@ -3702,185 +3909,181 @@ cussed earlier. The procedure was to first solve for the steady-state
 
 135%e concentration dissolved in the salt, and then from this to compute
 the poisoning. A code was set up to do these calculations on a computer.
-The neutron fluxes used were those reported in Ref. 15 and corrected with
-more up to date information.'! Values of many parameters used are given
-in Appendix A, and others were taken from standard reference manuals.
-Nominal values of various important rate constants and other varisbles
+The neutrpn'fluxes used were those reported in Ref. 15 and corrected with
+more up to date information.'' Values of meny parameters used are given |
+in Appendix A, and others were taken'fram standard reference manuals.
+Nominal values of various important rate constants and other variables
 were chosen, and the variation of poison fraction with these parameters
-was computed. These nominal values may be interpreted as approximate
-expected values. The first case to be discussed will be the bubble-free
-"situation. Then the case of circulating bubbles will be discussed.
+waS'computed; These nominal values may be interpreted as approximate
+expected values. The first case to be discussed will be the.bubble7free
+" situation. Then the case of circulating bubbles will be discussed.
 
-In the bubble-free case the following nominal values of various pa-
+In the bubble-free case the folloﬁing nominal values of various pa-
 
 rameters were chosen:
 
-‘Available void fraction in graphite, « 0.10
+‘Available void fractidn in graphite, ¢ © 0.10
 Diffusion coefficient of Xe in graphite, 1 x 1074
-Dg, ft3 of void per hr per ft of graphite
+D, ft? of void per hr per ft of graphite
 
 Mass transfer coefficient to bulk graph- 0.0600
-ite, nXB, ft/hr
+ite, hXB, ft/hr |
 
 Mass transfer coefficient to center-line 0.380
-graphite, hXCL, ft/hr
+graphite, hﬁgL, ft/hr
 
 Stripping efficiency of spray ring, S, % 12
 
 Reactor thermal power level, Mw 7.5
 
 The pump bowl mixing efficiency was found to have a negligible effect and
-was not considered. .
-The results of the calculation are given in Figs. 19 and 20. Each
-plot shows the poisoning as a function of the parameter indicated, with
+was not considered. »
+The results of the calculation aré given in Figs. 19 and'20. Each
+~ plot shows the poisoning as & function of the parameter indicated, with
 all others being held constant at their nominal values. The circle in-
 dicates the nominal value. From these plots the following observations
-can be made. |
-1. For the bubble-free case, the 135Xe poisoning in the MSRE should
-be 1.3 to 1.5%. oo
-2. Generally speaking the poisoning is a rather shallow function
+can be made. | | , (
+1. For the bubble-free case, the 135%e poisoning in the MSRE should
+be 1.3 to 1.5%. | R | |
+2. Generally speeking the poiéoning is a rather shailow fﬁnction
 of all variables plotted. Note particularly the insensitivity of poison-
-ing to available graphite void (Fig. 20) and the diffusion coefficient
-(Fig. 20). The reason is that h controls the 13%Xe flux to the graph-
-
-_ite. .This could be an important economic consideration in future reactors
+ing to dvail&ble graphite void (Fig. 20)'and the diffusion cdefficient’
+(Fig. 20). The reason is that nz'éontrois the '3°Xe flux to the graph-
+.ite. .This could be an important economic consideration in future reactors
  
 
  
 
- 
+»
 
- 
+»
 
- 
+»
 
- 
+13%%e POISONING (%)
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
+135¢4 POISONING (%)
 
 51
-\o/ 3 ORNL-DWG 67-1970
-oO 2 ~
-=z
-= ’
-8 J
-© —
-as 1
-»
-(a)
-0 -
-0 002 004 006 008 oto of2
-MASS TRANSFER COEFFICIENT - BULK GRAPHITE (ft/hr)
-© 3
-- ~~ rd
-&
-2
-Z
-z
-8
-3 °
-&
-«©
-1
-»
-(»)
-| .
-0
-0 od 0.2 03 04 05 06
-MASS TRANSFER COEFFICIENT - CENTER-LINE GRAPHITE (ft/hr)
-3
-g
-oO 2 .
-Zz
-} z NL
-- 2 | ~~
-= . ~~] .
-© [—
-2 ha ———
-{e)
-0
-0 10 20 = 40 50 100
-STRIPPING EFFICIENCY (%)
-Fig. 19. Predicted 12°Xe Poison Fraction in the MSRE Without Cir-
-culseting Bubbles at 7.5 Mw(t). See body of report for values of other
-parameters.
+
+ORNL-DWG 67-1970
 
  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+135y POISONING (%)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+STRIPPING EFFICIENCY (%)
+
+ 
+
+/
+(9)
+0 0.02 - 004 0.06 008 010 012
+MASS TRANSFER COEFFICIENT. - BULK GRAPHITE (ft/hr)
+~
+@
+(8)
+0 o4 0.2 03 04 05 06
+MASS TRANSFER COEFFICIENT - CENTER-LINE GRAPHITE (ft/hr)
+. \0\
+——-—_\
+(e)
+0 10 20 30 40 50 100
+
+Fig. 19. Predicted 125Xe Poison Fraction in the MSRE Without Cir-
+
+culating Bubbles at 7.5 Mw(t).’
+
+parameters.
+
+See body of report for values of other
 
  
  
 
  
 
-. oo 50
+N - - 52
 
-of this type. For instance, if xenon poisoning is the only consideration,
-the permeability specifications may be relaxed somewhat.
-Other numbers of interest are given below. For the nominal case,
+of this type. For instance, if xenon poisoning is.the only consideration,
+the permeability specifications may be relaxed somewhat. |
+‘Other numbers of interest are given below. For the nominal case,
 
-the 135Xe distribution to its sink terms is
+the *3%Xe distribution to its sink terms is
 
 ORNL-DWG 67-1971
 
@@ -3972,62 +4175,58 @@ ORNL-DWG 67-1971
 
 2
 2
-2 o
-Z
-
-, 3 1
+g O
+=z .
+{ 8 1
 g
-OQ
-2 (a)
-t .
+O
+gx (2}
+’ .
 0
 0 5 10 15 20
 AVAILABLE GRAPHITE VOID FRACTION (%)
-
 3
-g,
-Lu
-Z
-: | yd
-g o”
-g pd
-2 1 :
-
-10)
-0
+g, —
+o
+=
+z | /
+2 o’
+g /
+2 1 .
+(&) .
+oL -
 1 10 100
 REACTOR THERMAL POWER LEVEL (Mw)
-
 3
-=
+2
 o 2
-Zz
-Z
-2
-2 o
-2
-2
 =
-0
+=
+8
+5 o
+e
+2
+3 1
+()
+o 7 ,
+0% 2 5 104 2 5 1073
 
-(ec)
-0
-10% 2 5 104% 2 5 1073
-
-DIFFUSION COEFFICIENT OF Xe IN GRAPHITE (f1%/hr)
+DIFFUSION COEFFICIENT OF Xe IN GRAPHITE (f1%/hn)
 
 Fig. 20. Predicted 13°Xe Poison Fraction in the MSRE Without Cir-
-culating Bubbles at 7.5 Mw(t). See body of report for values of other
+culeting Bubbles at 7.5 Mw(t). See body of report for values of -other
 parameters. :
  
 
  
 
+ 
+
 b
 
-bo
+=
 
-ot
+[
 
 53
 
@@ -4036,50 +4235,49 @@ ot
 Decay in salt 3.4%
 Burnup in salt - 0.9
 Stripped from salt 31.0
-Migration to graphite 64.7
+Migration to graphite 64 .7
 100.0%
 
-Of the 13°Xe that migrates to the graphite, 52% is burned up and 48% de-
+Of the 135Xe that migrates to the graphite, 52% is burned ﬁp and 48% de-
 cays, averaged over the moderator region. Again, for the nominal case,
 96.4% of the total poisoning is due to 135%e in the graphite and only
-3.6% is due to the '?°Xe dissolved in the salt.
+3.6% is due to the 135%e dissolved in the salt.
 
-Estimated }35Xe Poisoning in the MSRE with Circulating Bubbles
+Estimated.135XeAPoisoning in the MSRE with Circulating Bubbles
 
  
 
-' Xenon, and all noble gases for that matter, is extremely insoluble
+" Xenon, and all noble gases for that matter, is extremely insoluble
 
 in molten salt. From the Henry's law constant,
-
-Cc, = 2.08 x 107 cy at 1200°F ,
+Cy = 2.08 x 107 ¢ at 1200°F ,
 
 where the units of concentration are xenon atoms per unit volume. A sim-
 ple calculation would show that with a circulating void fraction of 0.01
-and the xenon in the liquid and gas phases in equilibrium, about 98% of
+and the xenon in the liqﬁid.and gas‘phases in equilibrium, about 98% of
 the xenon present would be in the bubbles, or if the void fraction is
 0.001, 83% of the xenon would be in the bubbles. We would therefore ex-
-pect that a small amount of circulating helium bubbles would have a pro-
-nounced effect on 35Xe poisoning.
+pect that a small amount of circulating hellum bubbles would have a pro~
+nounced effect on 135Xe polsoning.
 
 Circulating bubbles have been observed in the MSRE. The most sig-
-nificant indications come from "sudden pressure release tests." These
-experiments -consist of slowly increasing the system pressure from 5 to
+nificant indications come from "sudden pressure release tests.” These
+experiments consist Qf slcwly.increasing the system pressure from 5 to
 
-15 psig and then suddenly venting the pressure off. During: the pressure
+15 psig and then suddenly venting‘the'preSSUre off. Dﬁring'the pressure
 
 release phase, the salt level in the pump bowl rises and the control rods
 
 are withdrawn; both motions indicate that circulating bubbles are present.
-Void fractions can be computed from these tests that range from O to 0.03
+Void fractions can be computed from these tests that range from 0 to 0.03
 but are generally less than 0.01. The reactor operational parameters
-that control the void fraction are not completely understood, and it ap-
-pears to be a quite complex phenomenon. For instance, the void fraction
-may be a function of how long the reactor has been operating.
+that control the void fraction are not cempletely understood, and it ap-
+pears to be a Quite complex phenemehon} fof instance, the void fraction
+may be a function of how long the reactor has been opereting.
 
 The bubble diameter is extremely difficult to estimate. The only
 
-direct source of information on this point is from a water loop used for
+"direct source of information on this point is from a water loop used for
 
  
  
@@ -4090,71 +4288,82 @@ direct source of information on this point is from a water loop used for
 
 54
 
-MSRE pump testing. In this loop the pump bowl is simulated with Plexiglas “
-so that the water flow can be observed. The bubbles that migrated from
-~ the pump bowl into the pump suction could be seen and were about the size
-of a "pinpoint." For lack of any better measurement they were taken to
-be in the order of 0.010 in. in diameter. As will be seen, this is not a
-critical parameter in these calculations.
+“i'?
 
-Information in the literature on mass transfer to circulating bub-
+MSRE pump—testing. In this‘lobp the pump bowl is simulated with Plexiglas
+so that the water flow can be observed. The bubbles that migrated from
+‘, the pump bowl into the pump suction could be seen and were about the size
+of a "pinpoint." For lack of any better measuremeht they were taken to |
+be in the order of 0.010 in. in diameter. As will be seen, this is not a
+critical parameter in these calculations. o | |
+~ Information in the literature on mass transfer to circulating bub-
 ‘bles is meager. Nevertheless, from Refs. 16 through 19 and other sources,
 the mass transfer coefficient was estimated to be in the range 1 to 4
-ft/hr and practically independent of diameter. Again it turns out that
-this is not a critical parameter, even over this fourfold range. It is
-also assumed that the existence of circulating bubbles will have no ef-
+ft/hr and practically'indepehdent of diameter; Again it turns out that
+this is not a critical.paraﬁeter, even over this fourfold range. It is
+also assumed that the existence of circulating bubbles will haveiﬁo ef-
 fect on the salt-to-graphite mass transfer coefficient. This is equiva-
-"lent to saying that the circulating bubbles do not come in contact with
-the graphite in any significant quantities.
-
+" lent to saying that the circulating bubbles do not come in contact with
+the graphite in any significant quantities. |
 A parameter that is quite critical is the bubble stripping effi-
-ciency. This is defined as the percentage of 135Ye enriched bubbles that
+ciency., This is defined as the percentage of 135%e enriched bubbles that
 burst in passing through the spray ring and are replaced with pure he-
-lium bubbles. At this time there is no good indication as to what this
+lium bubbles.- At this time there.is no good indication as to what this
 value is. It is probably a complex parameter like the circulating-void
 fraction and depends on many reactor operational variables. For lack of
 any better information, a nominal value was taken as 10%, because this
 is about the salt stripping efficiency, but it could just as easily be
-in the order of 100%.
+in the order of 100%. |
+Xenon-135 poisoning has been computedifor the following range of ' .
 
-Xenon-135 poisoning has been computed for the following range of .
+variables pertaining to circulating bubbles.
 
-variasbles pertaining to circulating bubbles.
-
- 
-
-Nominal Range *
-Parameter Value ~~ Considered
-Mean circulating void volume 0-1.0
-Mean bubble diameter, in. 0.010 0.005-0.020
-Mean bubble mass transfer coeffi- 2.0 } 0.54.0
+| | Nominal = = Range -
+Parameter Value - Considered
+Mean circulating void volume ~ 0-1.0
+~ Mean bubble diameter, in. 0.010  0.005-0.020
+Mean bubble mass transfer coeffi- = 2.0 0.5~4.0
 cient, ft/hr
-Mean bubble stripping effi- oo 10 0-100
+Mean bubble stripping effi- - 10 . 0—-100 ,ﬁ
 
-ciency, % | SU
+ciency, % : : o | .(HJ
  
 
  
 
-»
+h
 
-jd
+»
 
 55
 
-Again the nominal value can be interpreted as the expected value but with
+Again the nomina.lr value can be interpreted as the expected value but with
 
-much less certainty than in the bubble-free case.
-
-All other parameters
+much less certainty than in th‘e'bubble-ffee case. All other parameters
 
 not pertaining to the bubbles were held constant at the nominal value
 
-given for the bubble-free case. Figures 21 and 22 show the computed
+given for the bubble-free case. Figures 21 and 22 show the cdmputed
 
-135%e poisoning as a function of circulating void volume with other pa-
+135%e poisoning as a function of circulating void volume with other pa~
 
 rameters ranging as indicated. Parameters not listed on these plots were
+
+1.2
+
+0.8
+
+0.6
+
+135y%e POISONING (%)
+
+0.4
+
+02
+
+135%e POISONING (%)
+
+10
 
 ORNL-DWG 67-1972
 
@@ -4162,134 +4371,110 @@ ORNL-DWG 67-1972
 
  
 
-  
-
- 
-
- 
-
- 
-
- 
-  
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
    
-  
-
- 
-
- 
-
- 
-
     
 
  
 
  
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-1.4
-1.2
 BUBBLE MASS TRANSFER
-~ 10 COEFFICIENT
-s (ft/hr) .
-o
-5 0.8
-oO
-«a
-€ os
-Q
-x
-nn
-~n
-<= 04 —
-———— |
-——
-0.2
-(a)
-o
-1) 025 050 075 1.00 1.25
-MEAN BUBBLE CIRCULATING VOID (%)
-1.4
-1.2
-~ 10
-2
-> MEAN BUBBLE DIAMETER
-Z os Jin)
-2 0020
-© 0010
-g os 005
-0
-x
-©
-< 04 —
-E——— |
+COEFFICIENT
+
+“(ft/hr)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+    
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+05
+L 1.0
+20
+| -40
+&‘\
+(@)
+) 025 050 075 .00 | 1.25
+‘ MEAN BUBBLE CIRCULATING VOID (%) -
+" MEAN BUBBLE DIAMETER
+' (in) -
+L0020
+0010
+005
 |
-0.2 —
-(5)
-0
-0 025 0.50 075 1.00 1.25
+{5}
+0 0.25 . 0.50 0.75 100 125
 
 MEAN BUBBLE CIRCULATING VOID (%)
 
-Fig. 21. Predicted 135Xe Poison Fraction in the MSRE with Circu-
-lating Bubbles at 7.5 Mw(t). See body of report for values of other
+Fig. 21. Predicted 13°Xe Poison Fraction in ‘the MSRE with Circu-
+
+lating Bubbles at 7.5 Mw(t).
 
 parameters.
+
+See body of report for values of other
 
  
  
@@ -4298,73 +4483,60 @@ parameters.
 
  
 
-56
+-
+ORNL-DWG €7-1973 . - u
 
-CO
-ORNL-DOWG 67-1973 - -
+BUBBLE STRIPPING EFFICIENCY (%)
 
-BUBBLE STRIPPING EFFICIENCY {%)
-]
+-
 
->
+0
 
-wn
+-
+n
 
  
 
-g 10
+:\-.5' 1.0
 2
-
-S 0.8
-oO
-0
-
-Bos
-©
-x
-
-a .
-
-- 04
-
-0.2
-
-0
-
-0 0.25 050 075 1.00 1.25 .
-MEAN BUBBLE CIRCULATING VOID (%) : %
-
+-z 08
 o
-= N
-
-35s POISONING {%)
-wm
-
-Nn
+@
+.8 os
+P
+*
+3 .
+- 04
+0.2
+0 .
+0 0.25 0.50 0.75 1.00 1.25 .
+MEAN BUBBLE CIRCULATING VOID (%) : ®
 
  
 
-0 Ol 02 03 04 05 06 67 08 O09 10 1.1
+135%s POISONING {%)
+
+0 0. 02 03 04 05 06 07 08 09 10 11
 MEAN BUBBLE CIRCULATING VOID (%)
 
-Fig. 22. Predicted 125Xe Poison Fraction in the MSRE with Circu-
-lating Bubbles at 7.5 Mw(t). See body of report for values of other -
-paerameters.
+Fig. 22. Predicted 1?°Ye Poison Fraction in the MSRE with Circu- 7
+lating Bubbles at 7.5 Mw(t). See body of report for values of other .
+parameters. ' :
 
 held constant at their nominal values. From these figures, the following
 observations can be made: |
-1. Circulating bubbles have a very pronounced effect on ‘3Xe poi-
-soning, even at very low void percentages. }
-2. The '3%Xe poisoning is a rather weak function of the bubble mass
-transfer coefficient and diameter over the expected range.
+1. Circulating bubbles have a very pronounced effect on 135%e poi-
+soning, even at very low void percentages. . | '
+2. The '25Xe poisoning is a rather weak function of the bubble mass
+transfer coefficient and diameter over the expected range. |
 
 3. The poisoning is a strong function of the bubble stripping effi-.
 
-OC
+O
 
-A]
+LA
 
-ciency. .
+ciency..
  
 
  
@@ -4373,45 +4545,46 @@ ciency. .
 
 ¥
 
-ph
+’.fl
 
 57
 
 Figure 22 also shows the contribution of each system (salt, graph-
-ite, and bubbles) to the total 135Xe poisoning. All parameters are fixed
+ite, andﬁbubbles)'to“the total 13°Xe poisoning. All parameters are fixed
 at their nominal values. This figure illustrates how bubbles work to
-lower the poisoning. As the circulating void is increased, more and more
+lower the-poisoning.\ As the circulating void is increased, more and more
 of the dissolved xenon migrates to the bubbles, as noted by the rapidly
 increasing contribution to poisoning by the bubbles. In contrast to the
-bubble~-free case in which the 135Ye in the graphite is the greatest con-
-tribution to poisoning, the 135%e concentration of the salt is rapidly
-reduced by the bubbles and is thus not available to the graphite.
+bubble-free case in which the 135%e in the graphite is the greatest con-
+tribution to poisoning, the 135Xe concentration of the salt is rapidly
+reduced by the'bubbles and is thus not available to the graphite.
 
 At the time this report was written, there was no accurate knowledge
 of the extent of 13°Xe poisoning. Preliminary values based on reactivity
-balances indicate it is in the range 0.3 to 0.4%. This is considerably
+balances indicate it is' in the range 0.3 to 0.4%: This ie considerably
 below the value calculated for the bubble-free case, but it is well within
-the expected range when circulating helium bubbles are considered. We
-conclude therefore that this model probably does accurately portray the
+the expected range when circulating'helium bubbles are considered. We
+conclude therefore that'this model probably does accurately portray the
 physical reactor, and good agreement depends only on reliable values of
-the various parameters involved. Work is currently under way to esti-
-mate more accurately the circulating void fraction and to determine what
-operational variables-affect it. An attempt will also be made to esti-
+the variocus parameters involved. Work is currently under way to esti-
+mate more aCCurately the circulating void fraction and to determine what
+operational variables affect it. An attempt will also be made to esti-
 mate the bubble stripping efficiency, although this may be quite an elu-
 sive parameter to evaluate. Actually, the most recent information seems
-to indicate that the circulating void fraction (Vv) is in the order of
-0.1 to 0.3% and the bubble stripping efficiency (S87) is in the range of
-50 to 100%. Equipment is currently being built to measure 135Xe poison
+to indicate that the circulating void fraction (V) is in the order of
+0.1 to 0.3% and the bubble stripping efficiency (S/) is in the range of
+50 te 100%. Equipment is currently being built to measure 135Xe poison
 
 fractions more accurately.
 
 CONCLUSIONS
 
-The analyses presented indicate the following:
+The analyses presented indlcate the follow1ng
 
-1. A transient experiment such as the 8 5Kr experiment can be useful |
+1. A transient experiment such as the B5Kr experlment can be useful\
 in determining rate constants and other information for a complex process
-such as noble gas dynamics in the MSRE. There are serious limitations,
+such as noble gas dynamics in the MSRE. Thg:e are serious limitations,
+
 however, and a detailed study should be made beforehand.
 
  
@@ -4419,68 +4592,64 @@ however, and a detailed study should be made beforehand.
 
  
 
- 
-
 58
 
 2. The krypton experiment indicated that mass transfer coefficients
-computed from heat-mass transfer analogies are quite good for the molten-
-salt porous-graphi te system.
+- computed from heat-mass transfer analogies are quite good for the molten-
+salt porous-graphlte systemn. ‘
 
-3. If the MSRE could be operated bubble free, the computed 1357
-poisoning would be 1.3 to 1.5% at 7.5 Mw. However, the reactor does not
+3. If the MSRE could be operated bubble free, the computed 135Xe
+poieoning would be 1.3 to 1.5% at 7.5 Mw. However, the reactor does not
 operate bubble free, so the poisoning should be considerably less. This
 results from the extreme insolubility of xenon in salt. When the model
-is modified to include circulating bubbles, the computed values can be
-) made to agree with preliminary measured values (0.3-0.4%) by adjusting
-bubble parameters used over reasonably expected ranges. It would seem
-therefore that the model does portray the physical reactor. However,
+is'modified to ineclude circulating bubbles, the computed values can be
+made to agree with preliminary‘measured values (O-3—O.4%)_by adjusting
+bubble parameters used over reasonablj'expected ranges. 1t would seem
+therefore that the model does portray the physical reactor. waever,
 to prove this conclusively, we must have accurate knowledge of the bub-
 ble parameters, and with these calculate precisely the 135%e poisoning.
-We think the model is quite representative of this system and can easily
-be extended to other fluid-fueled reactors of this type.
+We think the model is quite representative of this‘system and can easily
+be extended to other fluid-fueled feactors of this type. '
 
-4. This model should not. be taken as final. For instance, it wes
-assumed that iodine does not volatilize. If it is later determined that
-iodine does volatilize, the model will have to be adjusted accordingly.
+4. This model should not be taken as final. For instance, it wes
+assumed that iodine does not volatilize. If it is later determined thet
+iodine does'volatilize, the model will have to be_ adjusted accordingly.
 
-. 5. The circulating helium bubble concept should be considered se-
-riously as a 13%Xe removal mechanism in future molten-salt reactors. He-
+. 5. The cifculating helium bubble concept should be considered se-
+riously as a '35Xe removal mechanism in future molten-salt reactors. He-
 lium bubbles could be injected into the flowing salt at the core outlet
 and be removed with an in-line gas separator some distance downstream.
 
-6. The insensitivity of 135%e poisoning to the graphite void frac-
+6. The insensitivity of 135Xe poisoning to the graphite void frac-
 tion and diffusion coefficient should be noted. This indicates that the
 tight specifications of these variables for the sole purpose of lowering
-
-the 135Xe poisoning might not be necessary. Considerable savings could
-
-\
-be realized in future reactors. This phenomenon occurred in the MSRE be-
-
+the *35%e poisoning might not be necessary. Considerable savings could .
+be realized in\future reactors. This phenomenon occurred in the MSRE be-
 cause the film coefficient is the controlling mechanism for transfer of
 135%e to the graphite. Each future reactor concept would have to be
-studied in detail to assure that this was still true before the above
+studied in detail to assure that this was still true before the above.
 
 statement was applicable.
  
 
+ 
+
 »
 
-y
+¥
 
-3?
+»?
 
 59
 
-ACKNOWLEDGMENTS ~~
+* ACKNOWLEDGMENTS
 
 We are indebted to H. R. Brashear of the Instrumentation and Con-
 
-“trols Division for designing, building, and calibrating the radiation
+trols Division for designing, building, and calibrating the radiation
 
-detectors used to monitor ( %Kr,. to T. W. Kerlin of the Reactor Division
-for his assistance in the unsteady-state parameter evaluation used in
+detectors used to monitoi($5Kr,~to T. W.rKerlin'of the Reactor Division
+for his assistance in tﬁe_ﬂnsteady-state parameter evaluation used in
 the krypton experiment analysis, and to the members of the MSRE operat-
 
 ing staff for assistance in preforming the krypton experiment.
@@ -4490,23 +4659,27 @@ ing staff for assistance in preforming the krypton experiment.
 
  
 
+ 
+
+N
+
+7.
+
+8.
+
 10.
 
 11.
-
 12.
-
 13.
-
-14 Ld
+14.
 
 15.
 
-16a
+16«
 
 60
-
-REFERENCES
+' REFERENCES
 
 R. C. Robertson, MSRE Design and Operation Report, Part I, Descrip-
 tion of Reactor System, USAEC Report ORNL-TM-728, Oak Ridge National
@@ -4515,11 +4688,11 @@ Laboratory, January 1965.
 Oak Ridge National Laboratory, Reactor Chemistry Div. Ann. Progr.
 Rept. Jan. 31, 1965, USAEC Report ORNL-3789.
 
-Oak Ridge National Laboratory, Molten-Salt Reactor Program Semiann.
+Oak Rldge National Laboratory, Molten-Salt Reactor Program.Semlann
 Progr. Rept. July 31, 1964, USAEC Report ORNL-3708.
 
 F. F. Blankenship and A. Taboada, MSRE Design and Operation Report,
-Part IV, Chemistry and Materials, USAEC Report ORNL-IM-731, Oak
+Part IV, Chemistry and Materials, USAEC Report ORNL-TM-731, Oak
 Ridge National Laboratory (to be published).
 
 I. Spiewak, Xenon Transport in MSRE Graphite, Oak Ridge National
@@ -4527,45 +4700,51 @@ Laboratory, unpublished internal report MSR-60-28, Nov. 2, 1960.
 
 G. M. Watson and R. B. Evans, III, Xenon Diffusion in Graphite: Ef-
 fects of Xenon Absorption in Molten Salt Reactors Containing Graph-
-ite, Oak Ridge National Laboratory, unpublished internal document,
-Feb. 15, 1961.
+ite, Oak Ridge National Laboratory, unpubllshed internal document,
+Feb. 15, 196l.
 
-H. S. Weber, Xenon Migration to the MSRE Graphite, Oak Ridge National
+H. S. Weber, Xenon Migration to the MSRE Graphlte, Oek Ridge Natlonal
 Laboratory, unpublished internal document.
 
 J. R. Waggoner and F. N. Peebles, Stripping Rates of Carbon Dioxide
-from Water in Spray Type Liquid-Gas Contactors, University of Ten-
-nessee Report EM 65-3-1, March 1965. oo
 
-Letter from F. N. Peebles to Dunlap Scott, March 31, 1965, Subject:
+from Water in Spray Type Liquid-Gas Contactors, Unlver51ty of Ten-
 
-Converting Stripping Rates from CO;-Water System to Xe-Salt System.
+nessee Report EM 65-3-1, March 1965.
+
+Ietter from F. N. Peebles to Dunlap Scott, March 31, 1965, Subaect-
+
+Converting Stripping Rates from COp-Water System to Xe-Salt System.
 
 F. F. Blankenship, B. J. Sturm, and R. F. Newton, Predictions Con-
-cerning Volatilization of Free Iodine from the MSRE, Oak Ridge Na-
+cerning Volatilization of Free JTodine from the MSRE, Oak Ridge Na-
 tional Laboratory, unpublished internal report MSR-60-4, Sept. 29,
-1960. }
+1960. ’
 
 B. E. Prince, Oak Ridge National Laboratory, personal communication
 to authors.
 
-F. N. Peebles, University of Tennessee, personal communication to
-authors.
+F. N. Peebles, University of Tennessee, personal commumnication to
 
-AN
-F. J. Salzano and A. M. Eshaya, Sorption of Xenon in High Density
+_ authors.
 
+F:'J. Salzano and A. M. Eshaya, Sorption of Xenon in High Density
 Graphite at High Temperatures, Nucl. Sci Eng., 12: 1-3 (1962).
+
 M. C. Cannon et al., Adsorption of Xenon and Argon on Graphite,
 
-‘Nucl. Sci. Eng., 12: 4~9 (1962).
+‘Nucl. Sci. Eng., 12: 49 (1962).
 
-P. N. Haubenreich et al., MSRE Design and Operation Report, Part III,
-Nuclear Analysis, USAEC Report ORNL-TM-730, Oak Ridge National Labo-
-ratory, Feb. 3, 1964.
+ 
+
+P. N. Haubenreich et al., MSRE Design and Qperation Report, Part III,
+Nuclear Analysis, USAEC Report ORNL—TM—?BO, Oak Rldge National Labo-
+ratory, Feb. 3, 1964 .
 
 E. Ruckenstein, On Mass Transfer in the Continuous Phase from Spheri-
-cal Bubbles or Drops, Chem. Eng. Sci., 19: 131-146 (1964).
+cal Bubbles or Drops, Chem. Eng. Sc1., 19: 131-146 (1964).
+
+ 
  
 
  
@@ -4574,110 +4753,110 @@ cal Bubbles or Drops, Chem. Eng. Sci., 19: 131-146 (1964).
 
 »
 
-vw
+v
 
 17.
 
 18.
 
-19.
+19.,
 
 20.
 
-21.
+. 21.
 
 6l
 
-Ii et al., Unsteady State Mass Transfer For Gas Bubbles — Liquid
-Phase Controlling, Amer. Inst. Chem. Engrs. J., 11(4): 581-587 (July
-1965).
+Ii et al., Unsteady State Mass Transfer For Gas Bubbles - quuld
+Phase Controlling, Amer. Inst. Chem. Engrs. J., 11(4) 581-587 (July
+1965)
 
-P. Harriott, Mass Transfer to Particles, Part I — Suspended in Agi-
-tated Tanks; Part II — Suspended in a Pipeline, Amer. Inst. Chem.
-Engrs. J., 8(1): 93-102 (March 1962).
+P. Harrlott Mass Transfer to Partlcles, Part I — Suspended in Agi-
+tated Tanks Part II — Suspended in a Pipellne, Amer. Inst. Chem,
+Engrs. J., 8(1) 93-102 (March 1962).
 
-S. Sideman et al., Mass Transfer in Gas-ILiquid Contacting Systems,
+S. Sideman et al., Mass Transfer in Gas-Liquid Contacting Systems,
 Ind. Eng. Chem., 58(7): 3247 (July 1966).
 
-R. B. Bird, W. E. Stewart, and E. N. Lightfoot, Transport Phenomena,
-Wiley, New York, 1960. -
+R. B. Bird, W. E. Stewart, and E. N. Lightfoot, Transport Phenomena,,
+Wiley, New York, 1960.
 
-C. V. Chester, Oak Ridge National Laboratory, personal communication
-to authors. -
+C. V. Chester, Oak Rldge Natlonal Laboratory, personal communlcatlon
+to authors.
 
  
  
 
  
 
+ 
+
+ 
+
+¢
+
+¥
+
 63
 
 APPENDICES
 
  
-
- 
  
 
-om
-
- 
-
  
  
 
  
 
- 
+  
  
 
  
 
  
 
-3
-
- 
+»
 
 65
 
-* Appendix A
+" Appendix A
 
 MSRE PARAMETERS
 
 General
 
-Normal thermal power level, Mw
-
-Nominal operating temperature ’ °F
+Normal thermal power level, Mw )
+Nominal operating temperature, °$
 Operating pressure in pump bowl, psig
-Fuel salt flow rate, gpm
+Fuel salt flow rate, gpm '
 
-Fuel salt volume, ft>
+Fuel salt volume, £t
 
-Graphite volume, ft?
+Graphite volume, ft>
 
 Xenon stripper flow rate (estimated), gpm
 Salt flow along shaft to pump bowl, gpm
-Total bypass flow {sum of above), gpm
+Total bypass flow (sum of above), gpm
 Fuel loop circuit time, sec
 
-Graphite
+‘Graphite
 
-Grade }
-Bulk density, g/cm?
-Porosity, accessible to kerosene, %
+Grade ‘
+Bulk density, g/cm3
+
+Porosity, sccessible to kerosene, %
 
 " Porosity, theoretical, %
 
-Porosity, available to xenon and krypton, * %
-Fuel salt absorption at 150 psig (confined to surface), %
-Wettability
+Porosity, available to xenon and krypton,* %
+Fuel salt absorption at 150 psig (confined to surfa,ce), %
+Wettability '
 
-Graphite surface ares in fuel channels, ft? } ,
+Graphite surface area in fuel channels, ft? ' .
+- Diffusivity of Kr at 1200°F in gra.phlte (filled with He),
 
-Diffusivity of Kr at 1200°F in graphite (filled with He),
-Kr atoms/hr.ft graphite (Kr atoms/ft> gas)
+Kr atoms/hr.ft graphite (Kr atoms/ft gas)
 
 Diffusivity of Xe at 1200°F.in graphite (filled with He),
 Xe atoms/hr.ft graphite (Xe atoms/ft> gas)
@@ -4686,52 +4865,55 @@ Equivalent diameter of fuel channels in bulk graphite, ft
 
 Fuel Salt
 
-Liquidus temperature, °F
+ILiquidus temperature, °F
 
-Density at 1200°F, 1b/ft3
+Density at 1200°F, 1b/ft?
 
-Viscosity at 1200°F, 1b/ftshr
+Viscosity at 1200°F, 1b/ftehr 7
 
 Diffusivity of Kr at 1200°F (based on several estimated values), £t2/hr
-Diffusivity of Xe at 1200°F (based on several estimated values), ft3/nr
+Diffusivity of Xe at 1200°F (based on several estimated values), f£t?/nr
 
-Henry's law constant for Kr at 1200° F, moles of Kr per cc of salt
+Henry's law constant for Kr at 1200°F, moles of Kr per ce of galt
 per atmosphere
 
-Henry's law constant for Xe at 1200° F, moles of Xe per cc of salt
-per atmosphere. . }
+Henry's law. constant for Xe at 1200°F, moles of Xe per cc of salt
+per atmosphere . . .
 
  
 
-*From Ref. 2.
-Not wet by fuel salt at ‘operating conditions.
+*From Ref. 2. \ |
+ot wet by fuel salt at operating conditions.
 
 7.5
+
 1200
 
 1200
 70.5
-62
+€9
 50
 15
 65
 25.2
 
 CGB
+
 1.82-1.87
+
 4.0
 
-17.7,
+17.7.
 
 ~10
 
 0.20
 
-t
+1
 
 1520
 
-~1.0 x 107%
+~1.0 X 1074
 
 ~0.92 x 1074
 
@@ -4743,11 +4925,12 @@ t
 
 18
 
-4.3 Xx 1077.0 x 107°
-3.9 X 107%=6.4 x 107
-8 x 1079-9 x 10°
+4.3 X 107%=7.0 x 103
+3.9 X 107%=6.4 x 10~%
 
-2.75 x 10°
+'8 X 107°-9 x 10-°
+
+2,75 x 102
 
  
  
@@ -4755,122 +4938,104 @@ t
  
 
 66
-
-- Appendix B
-
-SALT-TO-GRAPHITE COUPLING
+,Appendix B
+SALT-TO-GRAPHLITE COUPLING —
 
 A question exists concerning the process of mass transfer from a
-
-fluid to a porous medium as opposed to a continuous or homogeneous me-
+fluid to a porous medium as opposed to & continuous or homogeneous me-
 
 dium. For example, the krypton flux from graphite to salt is given by
 
-k _.k, ec _
-Flux = bh A. (Cp
+Lok ok, (k _ k)'
+Flux- = h A (C.p — C.) »
 
-/
-
-k .
-ct) ?
-
+/ _ :
 where A, is the total channel surface area of the graphite. The term
+hﬁ is defined so that Cgf is not the krypton concentration in salt at
 
-G
-
-ne is defined so that ct, is not the krypton concentration in salt at
 the salt-gas phase interface (located at a pore opening), but rather is
-
 some continuous concentration across the entire surface of the graphite.
-
-This is shown schematically below and would be similar for the case of
+‘This is shown schematically below and would be similar for the case of
 
 xenon flowing from salt to graphite.
 
-Direction of Kr Flow
+/
+Direction of Kr Flow / -
+w— i
+
 Boundary Layer
 
-Flowing
-Salt
-(ck)
+ 
 
-Salt-Gas Phase Interface (CK
+Flowing .
+Salt Schematic Pore Containing He and Kr
+
+(s | 7/
+/// Schematie Gra.phlte
+' Matrix
+/ / / Ll
 
 Region of Conventional Mass Transfer
-Where hE Is Applicable
+Where hlll‘l Is Applicable
 
-Equal Kr Concentration Profile (ck,)
+Vv
+Equal Kr Concentration Profile ( Ckf) 7
+In this region Kr is transported from ) .
+the pore interface to the equal con- | .
+" centration layer by a process of pure //
 
-In this region Kr is transported from
+Salt-Gas Phase Interface (CSl) —
 
-the pore interface to the equal con- |!
-‘centration layer by a process of pure
-diffusion
-
-zn,
-
-g.
-
- 
-
-  
+i
 
  
 
  
 
-i)
-s1/ TT Schematic Pore SS 7 and Kr
-
-cL Conte
-Matrix
-
-LLL
+ 
  
 
  
 
  
 
-»
+o
 
 67
 
-The mean pore entrance diameter for CGB graphite is less than: 0.1 UM
-and probably closer to 0.02 {, which is extremely small compared with the
-boundary layer thickness. It seems reasonable, therefore, that krypton
-is transported from the pore opening to.the continuous concentration layer
-by a process of pure diffusion. Then from the - continuous layer to the
+The mean pore -entrance diameter for CGB graphite is less than:0.1 M
+
+and probably closer to 0.02 y, which is extremely small compared with the
+
+boundary layer thickness. It seems .reasonable, therefore, that krypton
+is transported from the pore opening to the continuous concentration layer
+by a process of pure diffusion. Then from the'continuoﬁs layer to the
 bulk salt, krypton will be transported by conventional fluid dynamic mass
 transfer. Note that since salt will not wet graphite, and because of
-the small pore size, the salt-gas interface will certainly not penetrate
+the small pore size, the salt-gas interface wili certainly not penetrate
 inside a pore. Also inherent in this analysis is the idea that salt will
-touch the solid graphite matrix, even though it.will not wet it, and
-therefore the salt-gas phase interface will exist only at the pore open-
-ing. In order to couple the salt to the graphite, it is necessary to
-develop a relationship between ct, and ck, . Actually it will be shown
-that C5, =~ c¥_. |
-
-si sf .
-In this development we consider a simplification of the previous
+touch the solid graphite matrix, even though it .will not wet it, and
+therefore the salt-gas phase interfane will exist only at the pore open-
+ing.' In order to couple the salt to.the graphite, it is necessary to
+develop a relationship between c:ls‘f and cgi. ActuaXly it will be shown
+that Cr, =~ CF,. ;
+st
+In this development we con31der a 81mp11f1catlon of the previous
 
 figure, as follows:
 
-Boundary Layer
+Boundary Layer . E;
 
  
 
-RX
-
+   
  
 
-s Unit Transfer
-Cell
+S Unit Transfer
+| Cell
 
 Interface
-
-Cd
-«st— Pore
+—-tm POTE
 
  
 
@@ -4878,36 +5043,39 @@ Cd
 
 7
 
-The pure diffusion region associated with a single graphite pore is ap-
+The pure diffusion region;aésqciatedeith a Single gréphite‘pore is ap-
 proximated in spherical geometry. The inner hemisphere at constant con-
-centration cs, and radius ry is the source for krypton that diffuses
 
-through salt to the outer hemisphere at constant concentration ct, and
+centration Ck and radius rs is the source for krypton that dlffuses
+
+through salt to the outer hemlsphere at constant concentration C of and
 
  
  
 
  
 
+ 
+
 68
 
-et Associated with each pore is a unit transfer cell of cross-
-sectional area mr3, through which krypton is transferred by conventional
+f.” Associated with each pore-is a unit transfer cell of cross-
 
-radius r
+sectional area wr%, through which krypton'is transferred by’conventiOnal
 
-mass transfer from the position of ck. to the bulk salt at concentration
-cf + The term rs is taken as half the mean pore entrance diameter and ra
-is related to it with the graphite void fraction.
+| redius r
 
-The general equation for diffusion in spherical coordinates at steady
+mass transfer from the position of Ck to the bulk salt at concentration
+C + The term r; is taken as half the mean pore entrance diameter and r,
+is related to it with the graphite void fraction. _
+The general equation for diffusion in spherical coordlnates at steady
 state, and when concentration is a function only of the radius, is
+'dzck 2 de
 
-2
-d ck 2 ack
+S S o
++-—==-0.
 
-S+-—2-0.
-ar? r dr
+dr? r dr
 
  
 
@@ -4915,80 +5083,78 @@ Solving with boundary values, as discussed above,
 
  
 
-oor,
-k _ k l—-—
-Cs ™ Csi _ r
-k k ~~ or, °
-Cor Csi 1 -==
-f
+. : ’ : ri
+k_  k - —
+Cs ™ Cas _ r
+k k =~ r,
+Csf Csi 1 —-;i
+t
 Differentiating with respect to r,
+
 k k k
-acs _ Ti Csr ~ Cai
-dr r?
-f
+EEE _ fi_csf si
+dr ]:'2 1 - ;3'_-
+
+s
 
 gives
 
-Flux = DA — S252,
+ Flux_ = -pa_ —-SL sl
 
-‘hh
+‘e
  
 
  
 
  
 
-[1}
+al
 
 69
-
-Then, solving at r = r_, for a hemisphere (A, = arr?) , we obtain
-
-f
-k k
-Cc .-C,
-Flux = —orr, DF sf 52 ’
-re “Tis ro
-1-
+Then, solving at r =1 £ for a hemisphere (Ar = 2171'?.) , we obtain
+- k Cls{f ~ Clsfi \
+Flux = =27r.D
+re “TiTs re
+1 - 2
 f
 
 Without going into the considerations, we will state that a reasonable
 
-relationship between rs and To is
+relationship between r, and re is
 
-ry = Tr (2) :
+6)1/2'
+i T e (5 .
 
-Substituting this into the equation for flux gives
+Substituting this into the equation for fluxr gives
 
-i f
-(5)
-—  o— _\3/ _
-Flux = 2m DD ct, 5) .
+, f
+(5)1/2
+. x _\3 kK k)
+Fluxrf - ’mes (csf- Csi) ’
 
-§ 2-9
+/1] 2
 
-Now, at steady state, this diffusion flux at re must equal the convective
-flux. through the unit cell, where
+€
+1-(3)
+Now, at steady state, this diffusion flux at Ta must equal the convective
+flux . through the unit cell, where
 
-x kk
-FIX nit cell = Pufunit cell (ck cs) ’
+.S k _ K
+FLUX it cell ~ Nfunit cell (csf cs) ’
 or
-_ oak fk 5)
-FluXonis cell eZ Co, Cs)
+o kfk _ k)
+FlU it cell ey (Csf Cs)
 
-Therefore, equating flux, and flux 11s We obtain
+Thergfore , equating f‘lv.xrf and f:l_.uxuni £ cell’ V€ obtain
 
- 
+' | /o\L]2
+ok _ ok opk (g) 7
 
-unit ce
-k _ k Xk £)*
-Cor Cs 2 (5
-k k k
+S s 3 :
+k _ Kk k e\ /2
+Cs1 = Csz e 1 - (%)
 
-- 1/2
-Csi ~ Car Teh 1- (5)
-
-Solving for the following parameter values,
+Solving for the following parameter va.lues,
 
  
  
@@ -4997,35 +5163,40 @@ Solving for the following parameter values,
 
 70
 
-DE = 4.26 x 107° £t2/hr,
-nk = 0.06 ft/hr (approximate for bulk graphite region),
-r; = 0.1 i (actually probably closer to 0.02 H),
-€ = 0.10,
-re = 0.446 H,
+DS = 4.26 x 1075 £t2/nr,
+hE = 0.06 ft/hr (approximaté for bulk graphite region),
+r; = O;l.u (actually probably closer to.0.02 ),
+€ = 0.10, |
+ro = 0.446 W,
+
 we obtain
 
 k k
-c.—-¢C
+C - C
 sf s
-= 217 ’
+- = 217 s
 k k
-C.-C
+C. —C .
 si sf
 
-which says that the concentration difference between ck, and ce is neg-
-ligible compared with the difference between ce and ck. Another way of
-putting it is that ck, x ck. The equation at the beginning of this ap-
-pendix can now be written Co
+‘which says that the concentration difference between Cgi anﬁrcgf is neg-
+ligible compared with the difference between Cgf and Cg. Another way of
+putting it is that CX; ~ CKp. The equation at the beginning of this ap-
+pendix can now be written ' ' o
 
-Flux® = na (ct, - ck) i
-mG\ si s
+k
+
+Flux® = n¥a (ck. - ck) ]
+m G\ si S
 
 th
  
 
+C
+
  
 
-C
+ 
 
 71
 
@@ -5035,59 +5206,51 @@ THEORETICAL MASS TRANSFER COEFFICIENTS
 
 Theoretical mass transfer coefficients between fuel salt and graph-
 ite may be estimated by using standard heat transfer coefficient relation-
-ships and the analogy between heat and mass transfer.?® These conversions
-are brought about by substitution of equivalent groups from the following
-table into the appropriate heat transfer coefficient relationship. They
+ships and the analogy between heat and mass transfer.2°% These conversions
+are brought about by‘sﬁbstitufion.of equivalent groups from the following
+table into the apprOpriate heat transfer coefficient relationship. They
 
 apply for either laminar or turbulent flow.
 
-Heat Transfer " Mass Transfer
+HEat Transfer " Mass Transfer
 
  
 
  
 
-Quantity Quantity
-: pd Vv pd Vv
-Re = —3 Re = —3
-d_, hd
-wa = eq Wy = ed
-k D
-Cc. nu
-Pr = £- Se = =
-k eD
+Quantity - Quantity
+: pd_ Vv pd_ vV
+B | H
+, d_, hda
+k | D
+- Pr = L . Se = E_
+k ' PD
 
 Applying these substitutions to the Dittus-Boelter equation for turbulent
-flow, we have,
+flow, we have, |
 
-1. for heat transfer,
+1. Tfor heat transfer,
 
-k bd v\0+8 2)"
-= — (—=2 2
-ot E )
-
- 
+- — (—=2 P
+-0 - (55) T (3)
 
 €q
 
 2. for mass transfer,
 
-SN .
+o .
 
-D (ee) (L J
-h = 0.023 i — 3D | .
+hm = 0.023 I _IJ-— Eﬁ | .
 
-eq
+eq _
 
-For laminar flow the following equations can be used:
+For laminar flow the following equations cah be used:
 
 l. for heat transfer,
 
-©
-L d
-
-h, = 1.86 7 [Re Pr =2|  =1.86 =— (—2-2}
-| eq eq
+Tk deq 1/3 k pd2 ve \1/3
+h, =1.86 7— [Re Pr =] =1.86 — /2 ,
+| “eq eq.
 
  
  
@@ -5098,32 +5261,32 @@ h, = 1.86 7 [Re Pr =2|  =1.86 =— (—2-2}
 
 2. for mass transfer,
 
-D a 1/3 D 32 w1/3
-_ —_ La = 1.86 — | —2.
-h = 1.86 3 fe Sc eq) = 1.86 3 ( 0)
+1/3 2 A\1/3
+h =1.86 —D— G{e Sc ?E_‘i) = 1.86 i fﬂz
+m g U T a DL
 
-eq eq
+eq
 
-Calculated values of hy for krypton would then be as follows:
+~ Calculated valués of h.m for krypton would then be as follows:
 
-hy, Mass Transfer
+h., Mass Transfer
 Coefficient (ft/hr)
 
  
 
-Center-Line
+| - Center-Line
 Bulk Graphite Graphite Region
 
  
 
-Turbulent flow 0.115~0.155 0.250~0.338
-Laminar flow - 0.048-0.067 Lo ~
+Turbulent flow  0.115-0.155 0.250-0.338 _
+Laminar flow - 0.048-0.067  -‘ - o ' -
 
-where the range in h reflects the range of DS given in Appendix A. This
-range in Df represents an expected range as determined from three sources:
-1. as measured indirectly?! from analogy of the noble gas-salt system
+where the range in hm reflects the range of Dg given in Appendix A. This
+range in Di represents an expected range as determined from th:eé sources:
+1. as measured indirectly®!' from analogy of the noble gas-salt system
 
-to the heavy-metal ion-water system,
+to the heavy-metal ion-water system, '
 2. estimated from the Stokes-Einstein equation,
 
 3. estimated from the Wilke-Chang equation.
@@ -5137,16 +5300,16 @@ Term
 
  
 
-Qo
+Q.
 
-eq
+€q
 
-Hp ome | sn =H O
+o gr bp‘ o f&‘éﬁ_éﬁ m H O
 
-Fem rera
+g§> O WY B R G
 
 o
-Jd
+’d .
 
 H
 
@@ -5154,7 +5317,7 @@ H
 
 Appendix D
 
-NOMENCLATURE
+NOMENC LATURE
 
 Definition
 
@@ -5162,11 +5325,12 @@ Definition
 
 Surface area
 
-Noble gas concentration
+Noble gas concentration 7
 
 Noble gas concentration in gas phase
-Noble gas concentration in graphite
-Noble gas concentration in salt
+Noble gas concenfration in graphite  
+Noble gas concentfation-in salt
+
 Heat capacity
 
 Equivalent diameter of flow channel
@@ -5178,7 +5342,7 @@ Void fraction of graphite
 
 Volume fraction of salt in element Vg
 
-Volume fraction of graphite in element Veg-
+Volume fraction of graphite in element Vg~
 
 Neutron flux
 
@@ -5189,20 +5353,21 @@ Mass transfer coefficient
 Modified Bessel functions of the first
 kind
 
-Bessel functions of the first kind
-Thermal conductivity -
+Bessel functions of the flrst klnd
+Thermal conduct1V1ty
 Length of fuel channel
 
 Radioactive decay constant
-Poisoning |
+
+Poisoning
 
 Volumetric flow rate
 
-Volumetric flow rate of helium at 1200°F
+Volumetric flow rate of hellum at 1200 F
 
 and 5 psig through pump bowl
 
-Volumetric flow. rate of salt through
+Volumetric flow‘rate-of.salt through
 xenon stripper
 
 Radius
@@ -5214,72 +5379,64 @@ Units
 
  
 
-ft?
-atoms /ft>
+£t2
 atoms /ft>
 
-atoms /£t3
+o a.toms/ft3
+‘1_atoms/ft3
 
-atoms /ft>
+atoms/ft3
 Btu/1b.°F
 ft
 
-ft2/hr
+f£t2/hr
 
 %
 
-neutrons /cm?- sec
-moles/ccsatm
-Btu/hr.ft2. °F
+neutrons/cmz-sec
 
- ft/hr
+moles/cc-atm
 
-Btu/hr.ft.°F
-ft
+~ Btu/hr.f£t?.°F
+- ft/hr
 
-pel i
-
-%
-£3 /hr
-£3 /hr
-
-£t3 /hr
-
-ft
-
-ft
+Btu/hr . ft- °F
 
  
  
 
  
 
-Term
+ 
+
+Termr
 
  
 
-nn ov. Hw
+v v o
 
-gq’
+g/
 
-* © RB OM
+* g KB X
 
 CL
 
 74
-- Definition
 
-Universal gas constant
-Density of salt
+- Definition.
 
-Stripping efficiency, defined as the per-
+~ Universal gés constant
+
+Dens1ty of salt
+
+Stripping efflclency, defined as the per-
 centage of dissolved gas transferred from
 liquid to gas phase as salt is sprayed
 
-- through the xenon stripper
+‘ through the xenon stripper
 
-Bubble stripping efficiency, defined as
-the percentage of 135Xe containing bub-
+Bubble stripping efflclency, defined as
+the percentage of 1 35Xe containing bub-
 bles that burst in passing through the
 stripper and are replaced with pure
 helium bubbles.
@@ -5292,12 +5449,14 @@ Time
 
 Absolute temperature
 
-Fluid velocity
+'Fluid velocity
 
 Volume of salt in primary loop
-Volume of graphite in core
-Volume at gas phase in pump bowl
-Volume of core element e
+
+| Volume of grephite in core
+
+Volumg at gas phase in pump bowl
+Vblume of core element e '
 Arbitrary constant
 
 Viscosity
@@ -5308,19 +5467,19 @@ graphite volume in core
 Average void fraction of helium bubbles
 circulating with salt in primary loop
 
-Superscripts
+Supefscrigts
 
-135y,
+135%e
 
-85k,
+85Ky
 
-2353
+235y
 
-Adjoint flux
+Aﬁjoint flux
 
 Mean
 
-Bulk graphite region
+Bﬁlk graphite regidn
 
 Center-line graphite region
 
@@ -5328,116 +5487,102 @@ Units
 
  
 
-cc-atm/°K-mole
-lb/ft?
-
+cc-atm/fomole
+1b/1t3
 %
 
-barns oo -
+barns - -
 
-hr oo .
-
-hr
+he -
 °K
 
 ft/sec
 
-£3
+£t3 |
 
-£t3 _
-£3
+£e3 ' _
+£t3
 
-£3
+ft3
 
-1b/ft.hr
-f=!
- 
+lb/ft-hr
+-1
+.
 
  
 
-ui
+i
 
-nun BR 3d oo B HB Pp Q@® HH 0 Wo nH
+Ww o v W
+
+n X dJ o B H I Q@A M H O
+
+75
 
 Subscripts
+
 Fast neutrons
+
 Thermal neutrons
-
 Boundary
+
 Circulating bubbles
-
 Element of core volume
-
 Film
+
 - Gas phase
+
 Graphite
 Heat
 Interface
 Mass
+
 Initial conditions
-Pump bowl
+
+- Pump bowl
+
 At radius r
 Salt phase
-
-75
 
  
  
 
  
 
-2.
-3.
-be
-5.
-6.
-7.
-8.
-9,
-10.
-11.
-12.
-13.
-14-22.
-23
-2%.
-25.
-26.
-
 76.
 
-77.
+77
 
 78.
 79-80.
-81-358.
+81—-358.
 
-Cc.
+C.
 S.
-Ww.
+W.
 S.
 F.
 E.
 H.
-Ww.
-c.
+W.
+C.
 E.
-Ww.
+W.
 F.
 J.
 R.
 G.
 T.
 C.
-H.
+HC
 
 A.
 
 T. W. McIntosh, AEC, Washington
 
 F.
-J.
-bp.
+Je.
+P.
 E.
 F.
 G.
@@ -5445,12 +5590,12 @@ R.
 L.
 E.
 L.
-H.
+
 L.
 R.
 J.
-Ww.
-S.
+W.
+Se
 E.
 G.
 
@@ -5461,30 +5606,32 @@ ORNL-4069
 
 Internal Distribution
 
-Baes, Jr. 27.
+ 
+
+Ba-es, JTr. 2‘7-
 Ball 28.
 Barthold 29.
 Beall 30.
 Blankenship 31.
-Bohlmenn 32.
+Bohlmann 32.
 Brashear 33.
 Carter 34,
-Center (K-25) 350.
-Compere 41.
-Cook 42.
+Center (K-25) 35—%0.
+Compere - 4l.
+Cook 42
 Culler 43.
-Engel bt,
-Kedl 45-47.
-Keilholtz 48-49,
-Kress 50-74.
+Engel ble,
+Kedl 4547,
+Keilholtz 4849,
+Kress 5074,
 Larson (K-25) 75.
 MacPherson
 
 R. E. MacPherson
 
-A. P. Malinauskas
+A. P. Malinsauskas
 
-C. D. Martin, Jr.
+C. D. Martin, dJr.
 
 H. A. Mclain
 
@@ -5514,11 +5661,13 @@ Laboratory Records, RC
 
 External Distribution
 
+ 
+
 Giambusso, AEC, Washington
 
 Division of Research and Development, AEC, ORO
 Reactor Division, AEC, ORO
 Given distribution as shown in TID-4500 under Reactor Technology
-Category (25. copies — CFSTI)
+Category (25 copies — CFSTI)
 
  

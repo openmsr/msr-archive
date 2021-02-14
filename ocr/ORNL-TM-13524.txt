@@ -16,63 +16,63 @@ November 1997
 U.S. Department of Energy.
 CONTENTS
 
-LIST OF FIGURES . © oo ee ee ddd, V
-LIST OF TABLES . «oe ee ee ee ddd, Vii
-ACRONYMS ee 1X
-EXECUTIVE SUMMARY ©. ee ee sede i i, x1
-ABSTRACT . oe XV
-1. INTRODUCTION . . ee esse 1
-1.1 BACKGROUND ee 1
-1.2 GOALS OF THIS REPORT . .. eee. 1
-1.3 REPORT STRUCTURE . . eee. 2
-1.4 METHODOLOGY . . i ee dda. 2
-2. APPROACHES TO CRITICALITY CONTROL . . .... ei. 3
+LIST OF FIGURES . . .o e e e e e e e e s i i, v
+LIST OF TABLES . . . e e e e e e e e e e s i i, Vil
+AC R ON Y M . e, 1X
+EXECUTIVE SUMMARY . .. e e e e e e s i i, X1
+AB ST R ACT . .o e, XV
+1. INTRODUCTION . .. . e e e e s 1
+1.1 BACKGROUND .. e e, 1
+1.2 GOALS OF THIS REPORT . .. .. e e, 1
+1.3 REPORT STRUCTURE . . ... e i 2
+1.4 METHODOLOGY . ..o e e e e i s i, 2
+2. APPROACHES TO CRITICALITY CONTROL . . . ... e 3
 3. BASIS FOR NUCLEAR CRITICALITY CONTROL BY ISOTOPIC DILUTION ..... 5
 
 3.1 PRECEDENTS: THE STRATEGY FOR CRITICALITY CONTROL OF
 
-WASTE 2 U Lo 5
+WASTE 27U .. 5
 
 3.2 CRITICALITY CONTROL IN WASTE PROCESSING OPERATIONS ........ 6
-3.2.1 Process Options for 22U ......... iii 6
+3.2.1 Process Options for 22U .. ... ... ...t 6
 
-3.2.2 Characteristics of Waste Process Operations ........................ 6
+3.2.2  Characteristics of Waste Process Operations ........................ 6
 
-3.2.3 Current Criticality Control Practices .............................. 7
+3.2.3  Current Criticality Control Practices .............................. 7
 
-3.24 PU Processing Example Case .............uuiiuieineannnnn. 8
+3.24 2¥U Processing Example Case ... ...........uuiuieiiieiaennan. 8
 
 3.3 CRITICALITY CONTROL IN DISPOSAL FACILITIES .................... 9
 3.3.1 Concerns About Nuclear Criticality in Repositories .................. 9
 
-3.3.2 Specific Nuclear Criticality Scenarios .................ccuuire.n... 9
-3.3.2.1 Package Criticality ......... 00min. 11
+3.3.2  Specific Nuclear Criticality Scenarios . .................cuiine.n... 9
+3.3.2.1 Package Criticality ......... ..., 11
 
-33.22 Zone Criticality ......... cc. 11
+3322 ZoneCriticality ......... ... 11
 
-3.3.2.3 Factors Affecting Isotopic Dilution Requirements for *°U . . . .. 13
+3.3.2.3  Factors Affecting Isotopic Dilution Requirements for *°U . . . .. 13
 
 3.3.3 Institutional and Legal Requirements for Repository Criticality Control . . 14
-3.3.3.1 Current Requirements ...................... cio. .... 14
+3.3.3.1 Current Requirements ................ ... .. .......... 14
 
-3.3.3.2 NWTRB Recommendations ............................. 15
+3.3.3.2 NWTRB Recommendations . ............................ 15
 
-3.3.4 Conclusions o.oo 15
+334  Conclusions ... ...t e 15
 
 111
 CONTENTS (continued)
 
-4. ISOTOPIC DILUTION OF ZU otitis 17
-4.1 METHODOLOGY . .. ee ee eee eee 17
-4.2 RESULTS 18
-4.3 NEUTRONIC CONCLUSIONS . eee 18
-5. CONCLUSION . Lo ee ee ee ee ee ee eee 19
-6. REFERENCES ee ee eee 21
+4. ISOTOPIC DILUTION OF U . ...ttt e e e e e 17
+4.1 METHODOLOGY ... e e e e e e 17
+4.2 RESULTS .. 18
+4.3 NEUTRONIC CONCLUSIONS ... e 18
+5. CONCLUSION . . e e e e e e e e e 19
+6. REFERENCES ... e e e e e e 21
 
 Appendix A: NEUTRONIC ANALYSIS OF **U CRITICALITY CONTROL
-REQUIREMENTS . eee A-1
+REQUIREMENTS . .. e A-1
 
-1v
+v
 Fig. 1
 Fig. 2
 
@@ -95,15 +95,15 @@ Table A.6
 LIST OF TABLES
 
 Allowable enrichment levels for 2°U without nuclear criticality controls . ... .. 7
-Use of isotopic dilution for control of ***U nuclear criticality ................ 8
-Computational results . ........ A-8
-Example SCALE XSDRNPM input for result No. 51 ...................... A-12
-SCALE calculated vs regression predicted values ......................... A-14
-Influence of **U and **U on infinite systems of >°U diluted with **U ........ A-16
-Characteristics of CEUSP material .................................... A-18
-k_ vs water volume fraction . . ......... iui ee. A-19
+Use of isotopic dilution for control of U nuclear criticality ................ 8
+Computational results . .. ... e A-8
+Example SCALE XSDRNPM input forresult No. 51 ...................... A-12
+SCALE calculated vs regression predicted values ... ...................... A-14
+Influence of ***U and U on infinite systems of *°U diluted with **U ........ A-16
+Characteristics of CEUSP material ........... ... ... ... ... ... ..... A-18
+k. vs water volume fraction . . ... ... ... ... e A-19
 
-vii
+Vil
 ANS
 CEUSP
 CFR
@@ -173,9 +173,9 @@ fissile materials, which potentially include ***U. Part of this material will be
 medical, and industrial uses. However, a portion of the inventory may be declared excess and
 consequently may require disposal.
 
-Uranium-233 has a smaller critical mass than does either *’U or **’Pu and has other fissile properties
+Uranium-233 has a smaller critical mass than does either U or **’Pu and has other fissile properties
 that are also significantly different from other fissile isotopes. This report addresses the unique
-criticality issues associated with processing and disposal of ***U and suggests the use of isotopic dilution
+criticality issues associated with processing and disposal of U and suggests the use of isotopic dilution
 
 to minimize nuclear criticality control problems.
 
@@ -188,13 +188,13 @@ economic incentives to (1) use existing facilities and (2) avoid complex critica
 licensing issues associated with the high-level waste (HLW)/spent nuclear fuel repository program.
 
 Existing U.S. Department of Energy (DOE) HLW vitrification facilities and proposed transuranic
-waste processing facilities may be able to process ***U. However, these facilities are not designed for
+waste processing facilities may be able to process **U. However, these facilities are not designed for
 significant concentrations of fissile materials. If such facilities are to be used, it is not possible to rely on
 traditional geometry or chemical (e.g. neutron absorbers or fissile concentration) controls to maintain
 nuclear criticality safety without substantial modifications of plant equipment and operations.
 
 If neither geometric nor chemical control is practicable for nuclear safety in a processing facility,
-isotopic dilution (enrichment) 1s the best remaining criticality control option. Isotopic dilution is the
+1sotopic dilution (enrichment) 1s the best remaining criticality control option. Isotopic dilution is the
 addition of ***U sufficient such as to lower the ***U enrichment level below that at which nuclear
 criticality can occur. It is important to note that all uranium isotopes have the same chemical
 characteristics; therefore, the >**U used to isotopically dilute the ***U will not separate from the fissile
@@ -232,10 +232,10 @@ CONTROL OF NUCLEAR CRITICALITY BY ISOTOPIC DILUTION
 
 The work presented herein determined that to ensure control of nuclear criticality in >**U by isotopic
 dilution with ***U, the **U concentration must be reduced to <0.66 wt %. In terms of nuclear criticality
-safety, this concentration is equivalent to *°U at an enrichment level of ~1.0 wt %—a level which will
+safety, this concentration is equivalent to °U at an enrichment level of ~1.0 wt %—a level which will
 not result in nuclear criticality under conditions found in processing or disposal facilities. These uranium
-isotopic concentrations avoid the need to control other parameters to prevent nuclear criticality; that is,
-the ***U can be treated as another radioactive waste. At these concentrations, nuclear criticality will not
+1sotopic concentrations avoid the need to control other parameters to prevent nuclear criticality; that is,
+the U can be treated as another radioactive waste. At these concentrations, nuclear criticality will not
 occur in a geological environment, over time, nor in waste processing operations that have not been
 designed for fissile materials.
 
@@ -243,8 +243,8 @@ For mixtures of Z*U and **’U, the amount of DU (with 0.2 wt % **U) in grams (g
 
 criticality control by isotopic dilution in a water-moderated system is the following:
 
-xii
-g DU = 188: ¢¥°U + £4 + g of enriched uranium, (E.1)
+Xii
+g DU = 188 ¢ U + (EO—_Sl) - g of enriched uranium, (E.1)
 
 where
 
@@ -255,7 +255,7 @@ g of DU (0.2 wt % >U)
 the wt % of **U, where the g of enriched uranium = total U - **U
 
 In Eq. (E.1), #*U and ***U may be considered to be **U—providing the atom ratio of the (**U +
-23%U):*U does not exceed 1.0. If the quantity of grams DU calculated using Eq. (E.1) is negative, the
+29U):*°U does not exceed 1.0. If the quantity of grams DU calculated using Eq. (E.1) is negative, the
 uranium material already contains sufficient Z*U such as to ensure subcriticality; therefore, no additional
 
 DU is needed.
@@ -274,14 +274,14 @@ Energy: 1995 Findings and Recommendations, Arlington, Virginia.
 U.S. Nuclear Regulatory Commission, 1997. The Potential for Criticality Following Disposal of
 Uranium at Low-level Waste Facilities, NUREG/CR-6505, Washington, D.C.
 
-X1il
+X111
 ABSTRACT
 
 The disposal of excess *’U as waste is being considered. Because *°U is a fissile material, one of
 the key requirements for processing ***U to a final waste form and disposing of it is to avoid nuclear
 criticality. For many processing and disposal options, isotopic dilution is the most feasible and preferred
 option to avoid nuclear criticality. Isotopic dilution is dilution of fissile **U with nonfissile **U. The
-use of isotopic dilution removes any need to control nuclear criticality in process or disposal facilities
+use of 1sotopic dilution removes any need to control nuclear criticality in process or disposal facilities
 through geometry or chemical composition. Isotopic dilution allows the use of existing waste
 management facilities, that are not designed for significant quantities of fissile materials, to be used for
 processing and disposing of **U.
@@ -289,7 +289,7 @@ processing and disposing of **U.
 The amount of isotopic dilution required to reduce criticality concerns to reasonable levels was
 determined in this study to be ~0.66 wt % ***U. The numerical calculations used to define this limit
 consisted of a homogeneous system of silicon dioxide (Si0,), water (H,0), ***U, and depleted uranium
-(DU) in which the ratio of each component was varied to determine the conditions of maximum nuclear
+(DU) 1in which the ratio of each component was varied to determine the conditions of maximum nuclear
 reactivity. About 188 parts of DU (0.2 wt % ***U) are required to dilute 1 part of ***U to this limit in a
 water-moderated system with no SiO, present. Thus, for the U.S. inventory of ***U, several hundred
 
@@ -309,7 +309,7 @@ If #*U is declared a waste, there are economic incentives to use existing waste 
 prepare the material for disposal. Much of the ***U contains significant quantities of ***U and its highly
 radioactive daughter products. The characteristics of these materials may require that processing for
 waste management occur in hot cells. Because of the cost of such facilities and the relatively small
-quantities of **U (<2 t), it would be sensible to use current waste management facilities. However, these
+quantities of U (<2 t), it would be sensible to use current waste management facilities. However, these
 facilities were not designed for significant concentrations of fissile materials and for addressing any
 resulting nuclear criticality control issues. Therefore, criticality control is the major technical issue
 associated with using these facilities for ***U processing.
@@ -321,9 +321,9 @@ disposal. Because fissile materials can be used for nuclear weapons, materials w
 concentrations were not considered for disposal before the end of the cold war. Consequently, disposal
 of such fissile materials imposes the addition of criticality control to other requirements for safe disposal.
 
-Uranium-233 has a smaller critical mass than does either *’U or **’Pu and has other fissile properties
+Uranium-233 has a smaller critical mass than does either U or **’Pu and has other fissile properties
 that are also significantly different from other fissile isotopes. This report addresses the unique
-criticality issues associated with processing and disposal of ***U and suggests the use of isotopic dilution
+criticality issues associated with processing and disposal of U and suggests the use of isotopic dilution
 
 to minimize nuclear criticality control problems.
 
@@ -373,7 +373,7 @@ above constraints. Because all uranium isotopes have the same chemical character
 separate from the fissile uranium (which could be ***U or ***U) in any normal chemical process, either
 before or after disposal.
 
-If the #**U is declared waste, isotopic dilution converts the material from a fissile material for which
+If the ***U is declared waste, isotopic dilution converts the material from a fissile material for which
 nuclear criticality is a major safety concern into another type of very low-enriched uranium waste for
 which nuclear criticality 1s not a significant concern. This approach simplifies waste management
 operations in two ways:
@@ -417,7 +417,7 @@ impurities, including *°U) is to be isotopically diluted with ***U to eliminate
 criticality concerns and disposed of as waste. For HEU that is declared waste, the EIS recommended
 blending down to 0.9 wt % ***U to eliminate criticality concerns. This conservative value was chosen to
 bound the environmental impacts of uranium-processing operations. (The homogeneous nuclear
-criticality limit for *°U is ~1 wt % ***U.) The lower the final enrichment of the waste uranium, the more
+criticality limit for U is ~1 wt % ***U.) The lower the final enrichment of the waste uranium, the more
 DU that must be added to the HEU, the larger the processing requirements, and the more waste there will
 be to dispose of. It is also noteworthy that a recent U.S. Nuclear Regulatory Commission (NRC) report
 made similar recommendations on the use of DU for criticality control in various disposal facilities
@@ -432,13 +432,13 @@ fact, the historical geological records (Brookins, 1990; Cowan, July 1976; and S
 1995) show that nuclear criticality has occurred in natural uranium ore bodies in the past. At the
 Oklo, Africa, site, 15 natural nuclear reactors have been identified which operated when the *°U
 enrichment of natural uranium on earth was ~3.6 wt %. When these natural reactors shut down,
-the 2°U enrichments were as low as 1.3 wt %—an enrichment which is equivalent to the fissile
+the *°U enrichments were as low as 1.3 wt %—an enrichment which is equivalent to the fissile
 enrichment of full-burnup light-water reactor (LWR) spent nuclear fuel (SNF). Today, natural
 
 uranium deposits have a >**U enrichment level of 0.71 wt %. Nuclear criticality can now no
 longer occur in natural uranium ore bodies because of these low enrichment levels.
 
-* The French Atomic Energy Commission (Commissariat Francais a L’Energie Atomique) has
+e The French Atomic Energy Commission (Commissariat Francais a L’Energie Atomique) has
 studied the conditions during which natural nuclear reactors formed (Naudet, 1977). Its analysis
 indicates that nuclear criticality could occur at enrichments as low as 1.28 wt % **°U, but
 criticality becomes more reasonably probable in some geological environments as enrichments
@@ -448,7 +448,7 @@ approach 1.64 wt % **°U.
 * Criticality standards [American Nuclear Society (ANS), October 7, 1983] and laboratory
 experiments (Paxton and Pruvost, July 1987) with the types of materials found in the natural
 environment indicate that nuclear criticality could, in theory, occur with fissile enrichment
-concentrations as low as 1 wt % **’U, but no experimental evidence exists that such an event has
+concentrations as low as 1 wt % ***U, but no experimental evidence exists that such an event has
 occurred in nature. Such criticality in a natural system would require nearly incredible
 conditions.
 
@@ -507,16 +507,16 @@ concentrations of uranium will not necessarily remain dilute throughout the enti
 These intrinsic characteristics of most large-scale waste processing facilities imply that the only
 viable nuclear criticality control strategy for such facilities is isotopic dilution of the fissile uranium with
 
-23817.
+238U.
 3.2.3 Current Criticality Control Practices
 
 Nuclear criticality is avoided in chemical processes that are not designed for geometric nuclear
 criticality control by either not allowing fissile material into the waste management systems or by
 limiting the enrichment level of uranium fed to these systems. Table 1 shows the allowable enrichment
-levels for **°U in different facilities for which no other criticality controls are required. Table 2 shows
+levels for U in different facilities for which no other criticality controls are required. Table 2 shows
 the allowable enrichment levels after isotopic dilution for #°U at different DOE facilities at which
 
-isotopic dilution is conducted as a pretreatment option before fissile wastes enter the treatment system.
+1sotopic dilution is conducted as a pretreatment option before fissile wastes enter the treatment system.
 
 Table 1. Allowable enrichment levels for 2*U without nuclear criticality controls
 
@@ -528,17 +528,17 @@ Site Allowable **°U Reference
 Y-12¢ 1.0 Lockheed Martin Energy System (LMES),
 February 1995
 ETTP? 0.93 LMES, February 1995
-Hanford® 1.0 Westinghouse Hanford Company (WHC), 1994
+Hanford* 1.0 Westinghouse Hanford Company (WHC), 1994
 Hanford? 0.71 WHC, 1994
 
  
 
 “Limits for liquid disposal systems.
 
-’Limits for liquid disposal system, uranium enrichment facility with associated variable enrichments.
+*Limits for liquid disposal system, uranium enrichment facility with associated variable enrichments.
 ‘As homogeneous solutions, compounds, and metals.
 
-‘Any amount (except as reflectors).
+YAny amount (except as reflectors).
 8
 
 Table 2. Use of isotopic dilution for control of **U nuclear criticality
@@ -547,7 +547,7 @@ Table 2. Use of isotopic dilution for control of **U nuclear criticality
 
  
 
-Site Allowable **U Reference
+Site Allowable U Reference
 Oak Ridge National Laboratory 1.00% LMES, February 1995
 Savannah River Technical Center 0.65% Westinghouse Savannah River
 Company,
@@ -560,20 +560,20 @@ These criticality control limits are based on decades of theoretical analysis, l
 requirements for criticality controls (ANS, 1983).
 
 The allowable **°U assay chosen for criticality control by isotopic dilution depends upon a number of
-technical factors. If the wastes to be disposed of are solutions, a higher assay of **°U can be allowed
+technical factors. If the wastes to be disposed of are solutions, a higher assay of U can be allowed
 because the **U is isotopically mixed with the waste. If the wastes contain solids, isotopic exchange of
-the 2°U with the #**U will occur, over time, but the process may be slow. In such cases, added DU may
+the 2°U with the #*U will occur, over time, but the process may be slow. In such cases, added DU may
 
 be required to compensate for mixing uncertainties.
-3.2.4 *U Processing Example Case
+3.2.4 U Processing Example Case
 
-One of the vitrification options for disposition of >**U involves the use of the DWPF. This option
+One of the vitrification options for disposition of ***U involves the use of the DWPF. This option
 provides an example of the issues associated with nuclear criticality in process operations. This example
 also shows the need to examine the specific issues associated with each option. Feed to the DWPF is
 from an HLW tank farm. Either the tank farm or the DWPF may place mass limits on ***U feeds. In this
 example, the HLW tank farm currently contains 160 t of uranium with an average enrichment of ~0.5 wt
-% **U. Most of this uranium is in only a few tanks. Because the quantities of 2*U for disposal are
-relatively small, if the ***U is mixed with the HLW in the high-uranium tanks, isotopic dilution would
+% ***U. Most of this uranium is in only a few tanks. Because the quantities of 2*U for disposal are
+relatively small, if the **U is mixed with the HLW in the high-uranium tanks, isotopic dilution would
 lower the enrichment to levels sufficient to remove criticality concerns for feed to the DWPF. Thus, in
 this example, the criticality issues are (1) acceptance by the tank farm of the ***U and (2) ensurance that it
 is possible to mix the ***U uniformly with the existing HLW. In this case, it may be feasible to partly
@@ -595,7 +595,7 @@ specific details about how the requirements are to be achieved may differ.
 
 Nuclear criticality must be avoided in any disposal site to prevent the release of radionuclides to the
 environment. Evidence from nuclear reactors naturally occurring in the geological past [Cowan, July
-1976; International Atomic Energy Agency (IAEA), 1975; IAEA, 1977; and Smellie, March 1995]
+1976; International Atomic Energy Agency (IAEA), 1975; TAEA, 1977; and Smellie, March 1995]
 indicate that such events have generated both added radioactivity and heat over time periods of hundreds
 of thousands of years. The heat generated creates higher disposal site temperatures that accelerate
 chemical reactions which, in turn, degrade waste packages and waste forms. This added heat also causes
@@ -608,7 +608,7 @@ rather that criticality may occur sufficiently and often for a long enough perio
 generate significant amounts of heat, which is a driver for groundwater movement and, hence,
 radionuclide transport.
 
-If the #**U material is disposed of in a repository with SNF or HLW, there is initially significant
+If the ***U material is disposed of in a repository with SNF or HLW, there is initially significant
 radioactive decay heat. To minimize the potential impacts of heat on repository performance, the waste
 1s packaged in long-lived waste packages. The radioactive decay heat is expected to decrease to low
 levels before the waste packages degrade significantly. Nuclear criticality, should it occur, would most
@@ -624,20 +624,20 @@ packages (zone criticality). In both classes, there are many possible scenarios.
 described below.
 10
 
-INITIAL CONDITIONS (T = Tj)
+INITIAL CONDITIONS (T = T)
 
     
      
 
-EOE
+XKL
 
   
   
  
 
-— WASTE
+—  WASTE
 WATER PACKAGE
-errr ie
+e e
 
 FLOW
 
@@ -648,7 +648,7 @@ FLOW
 ORNL DWG 95C-555R
 
 x NEUTRON ABSORBER
-OC URANIUM
+O URANIUM
 
 Fig. 1. Alternative disposal facility criticality scenarios.
 11
@@ -659,7 +659,7 @@ package. In particular, it is known (Vernaz and Godon, 1992) that boron and cert
 poisons will leach preferentially from a waste package (Fig. 1). Subsequently, if the waste package
 contains sufficient fissile material, criticality could occur. This type of nuclear criticality is primarily
 associated with large waste packages loaded with many critical masses of fissile material. The
-probability of a nuclear criticality occurrence is highly dependent upon the details of the waste package
+probability of a nuclear criticality occurrence 1s highly dependent upon the details of the waste package
 
 design and the waste form selected.
 3.3.2.2 Zone Criticality
@@ -691,22 +691,23 @@ situations, this is an important distinction.
 ORNL DWG 95C-783R2
 FORMATION OF URANIUM ORE DEPOSITS FROM URANIUM IN ROCK
 
-Wl RAIN fro
-rales HE
+\\\\\\\‘\ RAIN /\l
+%EBEE HEB
 
 ROLL FRONT URANIUM
 \ DISSOLVE URANIUM IN DEPOSIT
-OXIDIZING GROUNDWATER (Us —= J)
+OXIDIZING GROUNDWATER (U5+ —= |J4)
 
  
 
  
 
-  
+   
+ 
 
 REDUCING GROUNDWATER REDUCING GEOLOGY
 
-O- OXIDIZING
+\\;\:“‘ OXIDIZING
 
 GROUNDWATER (LITTLE URANIUM) (ORGANIC, ETC.)
 
@@ -729,15 +730,15 @@ FORMATION OF URANIUM ORE DEPOSITS FROM URANIUM WASTES
 
  
 
-\ WM RAIN
-VAAN
+\\ \\\\‘ RAIN
+VAN
 OXIDIZING URANIUM
 GROUNDWATER DEPOSIT
-\ \ (Ue — — U4)
-NN DISSOLVED URANIUM REDUCING GROUNDWATER
-Ne eee - eeeeeeeelgi
+\ ¥ (U6+ _____ - U4+)
+N DISSOLVED URANIUM REDUCING GROUNDWATER
+\\m. e - el
 IN GROUNDWATER (LITTLE URANIUM)
-C DEGRADED Ron (WASTE PACKAGE,
+C DEGRADED (\-IRON (WASTE PACKAGE,
 WASTE PACKAGE ROCK BOLTS, ETC.)
 
 Fig. 2. Natural and man-made formation of uranium ore deposits.
@@ -759,7 +760,7 @@ these postulated criticality events appear to require special conditions that ar
 studies (Kastenberg et al., September 1996) show that use of isotopic dilution with ***U eliminates these
 
 theoretical criticality concerns.
-3.3.2.3 Factors Affecting Isotopic Dilution Requirements for **U
+3.3.2.3 Factors Affecting Isotopic Dilution Requirements for U
 
 Uranium geochemistry, the characteristics of uranium ore bodies, and naturally occurring nuclear
 reactors define the chemical and geometric conditions under which uranium may be found in the natural
@@ -789,7 +790,7 @@ Until very recently, the only concentrated fissile-containing material that was 
 was LWR SNF. For this reason, most of the institutional and legal requirements addressing nuclear
 criticality issues were developed in the context of LWR SNF. This will change as consideration is given
 for disposal of other fissile materials. In terms of heavy metal, LWR SNF is typically 1.5 wt % fissile
-materials (primarily >*U and **Pu) and 98.5 wt % **U.
+materials (primarily U and **Pu) and 98.5 wt % **U.
 
 3.3.3.1 Current Requirements
 
@@ -850,19 +851,19 @@ a potentially intractable analysis of external criticality into a comparatively 
 
 3.3.4 Conclusions
 
-Except for the use of >**U as a neutron absorber, neither geometry nor neutron absorbers can prevent
+Except for the use of »**U as a neutron absorber, neither geometry nor neutron absorbers can prevent
 nuclear criticality with certainty in a repository over geological time spans because of two problems:
-* Geometry. In nature, uranium migrates via groundwater and other mechanisms. Uranium is
+*  Geometry. Innature, uranium migrates via groundwater and other mechanisms. Uranium is
 
 concentrated from levels of parts per million in granite to >80 wt % uranium in some ore
 deposits.
 
-» Neutron absorbers. In a geological environment, uranium can separate from other neutron
+*  Neutron absorbers. In a geological environment, uranium can separate from other neutron
 absorbers. However, theory, laboratory experiments, and field geology all indicate that isotopes
 of a given element cannot be separated by geochemical processes. Therefore, 2**U will not
 separate from **°U or #*U under these conditions.
 
-Technical, legal, and regulatory factors indicate that isotopic dilution of **U with >**U is the
+Technical, legal, and regulatory factors indicate that isotopic dilution of ***U with >**U is the
 
 preferred method for nuclear criticality control in a waste processing facility or a geological repository.
 
@@ -886,13 +887,13 @@ energy through hydrogen-neutron scattering can increase the probability of neutr
 and can also increase the probability of neutrons being lost from the system by capture in hydrogen.
 Other neutron-absorbing compounds consisting of iron, calcium, and sodium cannot be ensured to be
 present in any specific proportion; consequently, they were not considered in this study. Therefore, only
-combinations of ***U, *U, Si0,, H,0, and DU were evaluated. The Standardized Computer Analyses for
+combinations of **U, *°U, Si0,, H,0, and DU were evaluated. The Standardized Computer Analyses for
 Licensing Evaluation (SCALE) software and neutron cross-sections (SCALE, April 1995) were used to
 evaluate subcritical mixtures of these materials. The selected subcritical value for the infinite-media
-neutron multiplication factor (k.) for the ***U mixtures was <0.95. The limiting subcritical enrichment
+neutron multiplication factor (k.) for the U mixtures was <0.95. The limiting subcritical enrichment
 for °U (Paxton and Pruvost, July 1977) for optimumly moderated homogeneous aqueous systems is
 well-defined to be 1 wt % ***U. This value was used to define the subcritical DU dilution relationship for
-uranium enriched in #°U. Using the results of the computational study for ***U dilution and the
+uranium enriched in #*°U. Using the results of the computational study for ***U dilution and the
 knowledge about the subcriticality of aqueous homogeneous 1 wt % ***U enriched uranium, a simple
 equation was developed to define the necessary DU dilution to ensure the subcriticality of a mixture of
 233U and uranium enriched in Z°U. The developed relationship for the most restrictive combinations of
@@ -908,7 +909,7 @@ options cannot be guaranteed, the results of this isotopic dilution study were r
 17
 18
 
-restrictive possible combination of materials (i.e., SiO,, H,O, DU, #°U, ***U, and #**U) that will ensure
+restrictive possible combination of materials (i.e., SiO,, H,O, DU, *°U, ***U, and #**U) that will ensure
 subcriticality. This approach also ensures criticality control for typical process systems. As determined
 from these computational studies and published data that are presented in the appendix to this report, the
 most restrictive combination of materials is a homogeneous mixture of uranium and water. For this
@@ -920,20 +921,20 @@ study, the mixture was assumed to be a mixture of water molecules and uranium at
 A simple equation was developed to ensure the subcriticality of **U and uranium enriched in *°U by
 dilution with DU, specifically 0.2 wt % **U (see Appendix A). The mass of DU is expressed in terms of
 
-2331 and enriched uranium masses as:
+233U and enriched uranium masses as:
 
-g DU = 188: ¢*°U + 54 + g of enricheduranium, (1)
+g DU = 188 ¢ U + (EO—_Sl) - g of enricheduranium, (1)
 
 where
 
 DU
 E
 
-sof DU (ie., 0.2 wt % 2°U)
+gof DU (ie., 0.2 wt % 2°U)
 the wt % of *U where the g of enriched uranium = total U - **U.
 
 In Eq. (1), #*U and ***U may be considered to be ***U—providing that the atom ratio of the (**U +
-2U):**U does not exceed 1.0. If the calculated quantity of g¢ DU using Eq. (1) is negative, the uranium
+2U):**U does not exceed 1.0. If the calculated quantity of ¢ DU using Eq. (1) is negative, the uranium
 material already contains **U sufficient such as to ensure subcriticality and no additional DU is needed.
 
 A more general equation which applies to DU of other than 0.2 wt % **U is presented in Appendix A.
@@ -955,12 +956,12 @@ enriched uranium and water-moderated system, the potential for an autocatalytic 
 made critical as a mixture of U and H,O.
 5. CONCLUSION
 
-To avoid nuclear criticality issues in process or disposal facilities with uranium containing **U, it is
-recommended that the ***U be diluted with 188 parts by weight of DU (0.2 wt % **U) per part ***U.
+To avoid nuclear criticality issues in process or disposal facilities with uranium containing U, it is
+recommended that the ***U be diluted with 188 parts by weight of DU (0.2 wt % **°U) per part ***U.
 Because this degree of dilution with DU ensures subcriticality of optimumly water-moderated,
-homogeneous mixtures of *°U, less optimumly water-moderated mixtures have further subcritical k_
+homogeneous mixtures of *°U, less optimumly water-moderated mixtures have further subcritical k.
 values, thereby compensating for uncertain nuclear parameters for dry (less water-moderated) mixtures of
-2, #°U, and #*U. Additional DU would be required for any other fissile uranium isotopes in the
+23U, #°U, and #*U. Additional DU would be required for any other fissile uranium isotopes in the
 uranium-containing materials. If significant ***U is already present in the material, an evaluation should
 be performed to determine if the material is already diluted sufficiently such that subcriticality can be
 
@@ -1031,9 +1032,9 @@ Disposal Studies and Program to Resolve Disposal Cost Questions, Westinghouse Sa
 Company, Aiken, South Carolina.
 
 Paxton, H. C. and N. L. Pruvost, July 1987. Critical Dimensions of Systems Containing *>U, **’Pu, and
-3: 1986 Revision, LA-10860-MS, Los Alamos National Laboratory, Los Alamos, New Mexico.
+3U: 1986 Revision, LA-10860-MS, Los Alamos National Laboratory, Los Alamos, New Mexico.
 
-Rechard, R. P., et al., 1993. Initial Performance Assessment of the Disposal of Spent Nuclear Fuel and
+Rechard, R. P., et al., 1993. [nitial Performance Assessment of the Disposal of Spent Nuclear Fuel and
 High-Level Waste Stored at Idaho National Engineering Laboratory, SAND93-2330, Sandia National
 Laboratory, Albuquerque, New Mexico.
 
@@ -1086,25 +1087,25 @@ NEUTRONIC ANALYSIS OF #°U CRITICALITY CONTROL REQUIREMENTS
 A.1 INTRODUCTION
 
 This appendix provides the bases for guidance in using depleted uranium (DU) (specifically 0.2 wt %
->U and 99.8 wt % ***U) as a diluent to ensure the subcriticality of an infinite homogeneous mixture of
+23U and 99.8 wt % ***U) as a diluent to ensure the subcriticality of an infinite homogeneous mixture of
 233U plus quartz sand [silicon dioxide (Si0,)], light water (H,0), and uranium enriched in ***U. The
 considered range of parameters defining optimum-moderation, maximum, infinite-media neutron
-multiplication constant, k_, was
+multiplication constant, k., was
 
-« 0<gSi0,/g*’U <1480
+e 0<gSi0,/g*°U <1480
 
-« 0<gH,0/g*U<22
+e 0<gH,0/g*U <22
 
-« 0<gDU/g*U <188
+e 0<gDU/g*U <188
 
-Various combinations of ***U, Si0O,, H,O, and DU were computed to define subcritical (i.e., k., <0.95)
+Various combinations of ***U, Si0O,, H,0, and DU were computed to define subcritical (i.e., k., <0.95)
 mixtures of these materials. The computations were performed with the SCALE software and neutron
 cross sections (SCALE, April 1995). Additionally, the limiting subcritical (Paxton and Pruvost, July
 1987) 1 wt % **°U enrichment for optimumly moderated, homogeneous aqueous systems and about 5.1 wt
 % ***U enrichment for unmoderated, homogeneous metal systems were used for establishing a subcritical
 DU dilution relationship for uranium enriched in 2*U. Also, the effects of nonfissile fissionable ***U and
->U were examined to demonstrate that the ***U and **°U may be considered to be ***U—providing that the
-total mass of >**U plus ***U does not exceed the mass of **’U in the homogeneous mixture. Using the
+U were examined to demonstrate that the ***U and **°U may be considered to be ***U—providing that the
+total mass of ***U plus ***U does not exceed the mass of **’U in the homogeneous mixture. Using the
 results of the computational study and the knowledge about the subcriticality of aqueous, homogeneous 1
 wt % **U-enriched uranium and 5.1 wt % **U-enriched uranium, simple algebraic equations were
 developed to define the necessary DU dilution to ensure the subcriticality of these materials. The
@@ -1149,12 +1150,12 @@ enriched uranium is
 
  
 
-Sio H,0 SiO H,0
-35.38 - 0.026" = 2| 4 100.6: | — - 0.1436 = 21. =
-I = gu gu gu g =U
-SiO H,0 Sio H,0
-1 +02597 | 222] 4 04991 | E27 | - 0.000626: | S22 | 222
-g 23317 g 2337 g 2337 g 23317
+Sio H,0 Sio H,0
+35.38 - 0.026- gm 2| 4 100.6- | £ zgi - 0.1436- gm 2. gzgi
+I = g™y gy g U g =°U
+Sio H,0 Sio H,0
+1 +02597- | 222 4 04991 | E27 | ~ 0.000626- | 202 - | 222
+g 233U g 233U g 233U g 233U
 
  
 
@@ -1174,7 +1175,7 @@ g 23317 g 2337 g 2337 g 23317
 
  
 
-+ ce 3 + g of enriched uranium,
++ ( EO_S 1) - g of enricheduranium,
 
 (A.1)
 
@@ -1183,9 +1184,9 @@ A-3
 
 g of enriched uranium = gtotal U - g #*U
 
-DU = DU (ie. 0.2 wt % *°U)
+DU = DU (ie., 0.2 wt % *°U)
 
-E = enrichment of uranium as wt % >*°U
+E = enrichment of uranium as wt % U
 for
 
  
@@ -1200,31 +1201,31 @@ relationship may be used:
 
 E - 5.1
 
-DU = 36 ¢25U +
-S S | 4.9
+DU = 36 - ¢ 25U +
+s s ( 4.9
 
-| + g of enricheduranium. (A.2)
+) - g of enricheduranium. (A.2)
 
-If no controls are available on the range of SiO, or H,O content, then the optimization of Eq. (A.1)
+If no controls are available on the range of Si0, or H,O content, then the optimization of Eq. (A.1)
 
-with H,O moderation and no SiO, results in the following relationship that should be used:
+with H,O moderation and no Si0, results in the following relationship that should be used:
 
 E -1
 
-DU = 188 + g**¥U +
-: : | 0.8
+DU = 188 - g**¥U +
+: : ( 0.8
 
-| - g of enricheduranium. (A.3)
+) - g of enricheduranium. (A.3)
 
 This results in a mixture of uranium that contains <1 wt % **U and <0.53 wt % **U.
 Equations (A.1) through (A.3) were derived for and are applicable only when using DU with 0.2 wt %
->U. These equations take into account that some of the ***U in the DU must be used to dilute the **U
+>U. These equations take into account that some of the ***U in the DU must be used to dilute the **°U
 
 that is also present in the DU. A more general equation (when using DU with other enrichments) is
 
 1
 
-— (150.4 g2B3. 99 g235_ g 2%) (A)
+— (150.4 g2, 99 g235_ g238> ’ (A4)
 
 DU(z) =
 
@@ -1232,30 +1233,30 @@ DU(z) =
 A-5
 
 where
-DU(z) = gDU with *°U content of z wt %
-gs = g>”’U in material to be isotopically diluted
-gs = g>”U in material to be isotopically diluted
-g?3® = g**U in material to be isotopically diluted
+DU(z) = gDU with*°U content of z wt %
+g3 = g *’U in material to be isotopically diluted
+g = g >”U in material to be isotopically diluted
+g?3® = g U in material to be isotopically diluted
 
 The resulting mixture will contain no more than 0.66 wt % ***U and no more than z wt % **U.
 
-The development of the relationships expressed in Eqs. (A.1) through (A.4) is provided in Sect. A.2.
+The development of the relationships expressed in Egs. (A.1) through (A.4) is provided in Sect. A.2.
 
 A.2 BACKGROUND
 
 A need existed to develop guidance in terms of nuclear criticality safety for the processing and
 disposition of fissile >**U in systems for which neither geometric nor chemical compositional controls can
 be ensured. Guidance was sought particularly on how to denature ***U by diluting it with DU to a similar
-state as ~1 wt % **°U optimumly water-moderated, enriched uranium or 5.1 wt % **U-enriched uranium
-as unmoderated metal. Such dilution must ensure the same level of criticality safety of the ZU as very-
+state as ~1 wt % ***U optimumly water-moderated, enriched uranium or 5.1 wt % ***U-enriched uranium
+as unmoderated metal. Such dilution must ensure the same level of criticality safety of the U as very-
 low-enriched ***U in an infinite, homogeneous system. Any homogeneous, aqueous medium of ***U can
 be denatured with DU to a limiting subcritical weight percent with a similar level of criticality safety as 1
-wt % *U enriched-uranium solutions or 5.1 wt % **U unmoderated uranium metal.
+wt % **U enriched-uranium solutions or 5.1 wt % **U unmoderated uranium metal.
 
-Because “down-blending” of the *U may also include the use of a homogeneous fixing agent (e.g.,
-borosilicate glass or concrete), it is necessary to consider a “surrogate” material for calculating the
+Because “down-blending” of the **U may also include the use of a homogeneous fixing agent (e.g.,
+borosilicate glass or concrete), it i1s necessary to consider a “surrogate” material for calculating the
 denaturing guidance. Consequently, infinite-media tertiary mixtures of water, S10,, and uranium metal
-(i.e., °U + #°U + #"U) were evaluated to develop denaturing, “dilution equation” guidance. Though no
+(i.e., U + #°U + #*U) were evaluated to develop denaturing, “dilution equation” guidance. Though no
 benchmarks of homogeneous uranium metal, water, and SO, mixtures exist, the average neutron energy
 causing fission in such systems is very similar to well-moderated aqueous ***U systems, for which
 benchmarks do exist. There still remains an issue regarding the adequacy of silicon cross sections. This
@@ -1266,13 +1267,13 @@ will provide merely greater confidence in the use of differential cross sections
 
 Regardless of shortfalls in the experimental data, computational studies of the referenced tertiary
 systems were performed. Additionally, computational studies were performed to examine the influence of
-2¥U and *°U on variably moderated systems having various 2°U:***U, #*°U and ***U atom ratios. The
+24U and *°U on variably moderated systems having various Z°U:***U, #*°U and ***U atom ratios. The
 results of those studies and an equation that was developed from a multilinear regression of the
 
 independent variables
 A-6
 
-to estimate the dependent parameter, g of DU per g of *°U, are provided in this appendix. Also, a term
+to estimate the dependent parameter, g of DU per g of »*°U, are provided in this appendix. Also, a term
 was added to that equation to account for the required addition of DU for diluting uranium enriched in
 
 23U so that this equation is useful in analyzing materials that contain mixtures of ***U and **U.
@@ -1291,7 +1292,7 @@ have very small probabilities for capturing neutrons, thereby permitting neutron
 material until they are absorbed in uranium or they are degraded in energy by scattering with hydrogen.
 Neutron absorption in uranium results in either the neutron being lost from the system through a capture
 process or fission being caused that results in further neutron production. The degradation of neutron
-energy through hydrogen-neutron scattering can increase the probability of neutrons causing **°U fission,
+energy through hydrogen-neutron scattering can increase the probability of neutrons causing ***U fission,
 but can also increase the probability of neutrons being lost from the system by capture in hydrogen.
 Because other neutron-absorbing compounds found in many process and geological systems, including
 iron, calcium, and sodium, cannot be ensured to be present in any specific proportion, they were not
@@ -1300,11 +1301,11 @@ The SCALE software and neutron cross sections (SCALE, April 1995) were used to e
 mixtures of these materials. The selected subcritical value for the infinite-media neutron multiplication
 factor (k.) for the *U mixtures was k. <0.95. The limiting subcritical enrichment of ***U (Paxton and
 Pruvost, July 1987) for optimumly moderated, homogeneous, aqueous systems is well defined to be 1 wt
-% **U and 99 wt % ***U. The 1 wt % **’U value was used for defining the subcritical DU dilution
-relationship for uranium enriched in ***U. Using the results of the computational study for ***U dilution
+% U and 99 wt % ***U. The 1 wt % **’U value was used for defining the subcritical DU dilution
+relationship for uranium enriched in **U. Using the results of the computational study for ***U dilution
 and the knowledge about the subcriticality of aqueous homogeneous 1 wt % *°U enriched uranium, a
 simple equation was developed to define the necessary DU dilution to ensure the subcriticality of a
-mixture of ***U and uranium enriched in **’U. The developed relationship for the most restrictive
+mixture of ***U and uranium enriched in **U. The developed relationship for the most restrictive
 combinations of ***U, enriched uranium, and DU is based upon the commonly accepted concept that two
 or more mixtures of optimumly water-moderated, subcritical (i.e., maximum k_ <1.0), infinite-media
 fissile materials may be homogeneously combined and remain subcritical if the composition of the
@@ -1312,31 +1313,31 @@ fissile materials may be homogeneously combined and remain subcritical if the co
 materials remains homogeneous.
 A-7
 
-Because the physical and chemical conditions of ***U and *U cannot be guaranteed in certain waste
+Because the physical and chemical conditions of **U and *U cannot be guaranteed in certain waste
 management processing systems nor in subterranean storage or disposal over geological time periods, the
 results of this isotopic dilution study were reduced to the most restrictive possible combination of
-materials (i.e., SiO,, H,0, DU, #°U, ***U, and **U) that will ensure subcriticality. As determined from
+materials (i.e., SiO,, H,0, DU, #°U, ***U, and ***U) that will ensure subcriticality. As determined from
 these computational studies and published data, the most restrictive combination of materials is a
 homogeneous mixture of uranium and water. For this study, the mixture was assumed to be a mixture of
 
 water molecules and uranium atoms.
 
-A.4 COMPUTATIONAL APPROACH AND RESULTS
+A4 COMPUTATIONAL APPROACH AND RESULTS
 
 The neutronic computations performed in this study used the SCALE system, AJAX, and CSAS1X
 sequence (BONAMI, NITAWL, XSDRN), with the 238-energy group ENDF/B-V neutron cross-section
 library. The computations were executed on the Oak Ridge National Laboratory (ORNL) Computational
 Physics and Engineering Division Nuclear Engineering Applications section workstation, CAO1. The
 AJAX, BONAMI, NITAWL, XSDRN, and cross-section data set identifiers and creation dates are
-AJAX—09/13/95, 000008; BONAMI—09/13/95, 000002; NITAWL—09/18/95, 000001;
+AJAX—09/13/95, O00008; BONAMI—09/13/95, O00002; NITAWL—09/18/95, O00001;
 XSDRNPM—09/13/95; and scale.rev03.xn238—06/08/95, respectively.
 
 Historic validation studies (Jordan, Landers, and Petrie, December 1986; Primm, November 1993)
 using ENDF/B-V neutron cross sections have demonstrated that water-moderated, homogeneous, single-
-and multiunit ***U critical systems have calculated k's >0.95 (average k.; ~0.99). Therefore, the
+and multiunit ***U critical systems have calculated k_’s >0.95 (average k., ~0.99). Therefore, the
 CSASI1X sequence was executed for various combinations of SiO,, H,O, **U, and DU (0.2 wt % **U and
 99.8 wt % ***U) to calculate subcritical, infinite, homogeneous, medium, multiplication factors, k_’s,
-approximating 0.95 (0.98 for some systems). The use of a k. acceptance value of 0.95 for this *°U
+approximating 0.95 (0.98 for some systems). The use of a k. acceptance value of 0.95 for this U
 scoping study is not fully justified (i.e., integral experimental data for combined SiO, H,O, ***U, and **U
 mixtures is not available for data testing and validation). Additionally, specific validation and analytical
 studies involving the use of configuration-controlled hardware and software relative to these systems and
@@ -1345,21 +1346,21 @@ benchmark data is a primary hurdle for researchers before they can complete such
 
 Because of the multiple parameters involved in this study, step-wise approaches were used to establish
 the parameter space that maintains subcriticality for the combinations considered. That is, each infinite
-homogeneous material was assumed to consist of a selected volume fraction of SiO, (assumed theoretical
+homogeneous material was assumed to consist of a selected volume fraction of Si0O, (assumed theoretical
 density = 1.5888 g SiO,/cm’ = 60% of maximum actual 2.65 g SiO,/cm?), a volume fraction of H,O
 (assumed theoretical density = 0.99823 g H,0/cm?), and a volume fraction of uranium metal (assumed
 
-theoretical density = 18.90 g U/cm?). The wt % of **°U was varied within the uranium metal, but the wt %
+theoretical density = 18.90 g U/cm?). The wt % of *°U was varied within the uranium metal, but the wt %
 A-8
 
-of 2U remained constant (at 0.2 wt % **°U in the metal). The wt % of ***U was varied inversely with the
-233U to compensate for the values of 2*U wt %. The wt % of ***U in the uranium was chosen to
-approximate k. <~0.95 for any selected volume fraction of H,O moderation for given SiO, volume
+of 2*U remained constant (at 0.2 wt % **°U in the metal). The wt % of ***U was varied inversely with the
+23U to compensate for the values of 2*U wt %. The wt % of ***U in the uranium was chosen to
+approximate k. <~0.95 for any selected volume fraction of H,O moderation for given Si0, volume
 fractions up to 0.6. That is to say, for a given SiO, volume fraction and ***U wt % in the uranium, any
 variation in H,O volume fraction would not exceed a calculated k_ of about 0.95. The selection of the
 subcritical 2**U weight fraction was an iterative process for each assumed SiO, volume fraction.
 Parametric input data and results for some of the calculations are provided in Table A.1. The results
-are expressed in terms of D (g of DU per g of >**U), S (g of SiO, per g of ***U), H (g of H,O per g of **U),
+are expressed in terms of D (g of DU per g of **U), S (g of SiO, per g of ***U), H (g of H,O per g of **U),
 
 and K (k_, of the mixture).
 
@@ -1370,13 +1371,13 @@ Table A.1. Computational results (continued)
  
 
 Result D S H K
-No. (gDU/g*PU) (gSi0/g 2U)  (g H,0/g >) (k.)
+No. (gDU/g*PU) (g Si0/g 2U) (g H,0/g **U) (k.)
 1 187.6792 0.0000 26.9434 0.9447
 2 187.6792 0.0000 25.6252 0.9463
 3 187.6792 0.0000 24.3979 0.9474
 4 187.6792 0.0000 23.2525 0.9482
 5 187.6792 0.0000 22.1810 0.9486
-6 187.6792 0.0000 21.1764 0.9487
+6 187.6792 0.0000 21.1764 0.9487¢
 7 187.6792 0.0000 20.2327 0.9484
 8 187.6792 0.0000 19.3445 0.9479
 9 187.6792 0.0000 18.5071 0.9471
@@ -1404,7 +1405,7 @@ Table A.1. Computational results (continued)
 
 Result D S H K
 
-No. (gDU/g*PU) (gSi0/g 2U)  (g H,0/g >) (k.)
+No. (gDU/g*PU) (g Si0/g 2U) (g H,0/g **U) (k.)
 20 184.5288 5.0310 18.6496 0.9476
 21 181.4818 16.1474 30.9431 0.9360
 22 181.4818 15.3401 28.9141 0.9398
@@ -1412,7 +1413,7 @@ No. (gDU/g*PU) (gSi0/g 2U)  (g H,0/g >) (k.)
 24 181.4818 13.9455 25.4094 0.9451
 25 181.4818 13.3392 23.8856 0.9466
 26 181.4818 12.7834 22.4887 0.9475
-27 181.4818 12.2720 21.2037 0.9478
+27 181.4818 12.2720 21.2037 0.9478°
 28 181.4818 11.8000 20.0174 0.9477
 29 181.4818 11.3630 18.9191 0.9470
 30 181.4818 10.9572 17.8992 0.9459
@@ -1421,7 +1422,7 @@ No. (gDU/g*PU) (gSi0/g 2U)  (g H,0/g >) (k.)
 33 177.5714 23.7021 25.3161 0.9439
 34 177.5714 22.5170 23.5788 0.9457
 35 177.5714 21.4448 22.0068 0.9467
-36 177.5714 20.4700 20.5778 0.9470
+36 177.5714 20.4700 20.5778 0.9470°
 37 177.5714 19.5800 19.2731 0.9466
 38 177.5714 18.7642 18.0770 0.9455
 39 177.5714 18.0136 16.9767 0.9439
@@ -1431,7 +1432,7 @@ No. (gDU/g*PU) (gSi0/g 2U)  (g H,0/g >) (k.)
 43 171.4138 36.2343 25.0423 0.9445
 44 171.4138 34.1028 23.0335 0.9468
 45 171.4138 32.2082 21.2480 0.9479
-46 171.4138 30.5131 19.6504 0.9480
+46 171.4138 30.5131 19.6504 0.9480°
 47 171.4138 28.9874 18.2126 0.9472
 48 171.4138 27.6071 16.9117 0.9455
 A-10
@@ -1443,7 +1444,7 @@ Table A.1. Computational results (continued)
  
 
 Result D S H K
-No. (gDU/g*PU) (gSi0/g 2U)  (g H,0/g >) (k.)
+No. (gDU/g*PU) (g Si0/g 2U) (g H,0/g **U) (k.)
 49 171.4138 26.3522 15.7290 0.9431
 50 171.4138 25.2064 14.6492 0.9400
 51 165.6667 70.0529 35.2109 0.9176
@@ -1460,19 +1461,19 @@ No. (gDU/g*PU) (gSi0/g 2U)  (g H,0/g >) (k.)
 62 155.2500 112.5850 38.9049 0.9016
 63 155.2500 98.5119 33.0103 0.9207
 64 155.2500 87.5661 28.4255 0.9335
-65 155.2500 78.8095 24.1577 0.9417
+65 155.2500 78.8095 24771577 0.9417
 66 155.2500 71.6450 21.7568 0.9462
-67 155.2500 65.6746 19.2556 0.94774
+67 155.2500 65.6746 19.2556 0.9477¢
 68 155.2500 60.6227 17.1399 0.9469
 69 155.2500 56.2925 15.3262 0.9440
 70 155.2500 52.5397 13.7543 0.9394
 71 139.0000 250.0000 23.6428 0.8608
 72 139.0000 250.0000 25.815803 0.8626
-73 139.0000 250.0000 26.954066 0.8629
+73 139.0000 250.0000 26.954066  0.8629
 74 139.0000 250.0000 28.129047 0.8629
-75 139.0000 250.0000 29.342552 0.8625
+75 139.0000 250.0000 29.342552  0.8625
 76 139.0000 250.0000 30.596507 0.8618
-77 90.0000 499.4865 20.191625 0.8383
+77 90.0000 499 .4865 20.191625 0.8383
 A-11
 
 Table A.1. Computational results (continued)
@@ -1482,16 +1483,16 @@ Table A.1. Computational results (continued)
  
 
 Result D S H K
-No. (gDU/g*PU) (gSi0/g 2U)  (g H,0/g >) (k.)
-78 90.0000 499.4865 21.794135 0.8411
-79 90.0000 499.4865 23.435259 0.8428
-80 90.0000 499.4865 25.116411 0.8436
-81 90.0000 499.4865 26.839073 0.8434
-82 90.0000 499.4865 28.604802 0.8426
+No. (gDU/g*PU) (g Si0/g 2U) (g H,0/g **U) (k.)
+78 90.0000 499 .4865 21.794135 0.8411
+79 90.0000 499 .4865 23.435259 0.8428
+80 90.0000 499 .4865 25.116411 0.8436
+81 90.0000 499 .4865 26.839073 0.8434
+82 90.0000 499 .4865 28.604802  0.8426
 83 35.3640 0.0000 0.0000 0.9477¢
-84 11.9870 71.3500 0.0000 0.9509
-85 4.4600 199.0000 0.0000 0.94994
-86 1.6596 499.0000 0.0000 0.9487
+84 11.9870 71.3500 0.0000 0.9509¢
+85 4.4600 199.0000 0.0000 0.9499¢
+86 1.6596 499.0000 0.0000 0.9487¢
 87 0.4400 999.0000 0.0000 0.9498“
 88 0.0000 1480.4800 0.0000 0.9505¢
 
@@ -1505,14 +1506,14 @@ An example SCALE input for Result No. 51 of Table A.1 is provided in Table A.2.
 
 A.5 INTERPRETATION OF RESULTS
 
-The results of Table A.1 that are marked a [optimumly moderated (i.e., maximum k_) for given
-mixtures] were input into the statistical graphics program called STATGRAPHICS Plus 5.2
+The results of Table A.1 that are marked a [optimumly moderated (i.e., maximum k) for given
+mixtures| were input into the statistical graphics program called STATGRAPHICS Plus 5.2
 (STATGRAPHICS, November 15, 1991) and were statistically fit by its multiple regression program. The
-calculational results demonstrate that the required dilution of >**U with DU is proportional to the volume
-fraction or mass fraction of H,O or SiO, in the homogeneous mixture. Furthermore, the plots indicate that
+calculational results demonstrate that the required dilution of ***U with DU is proportional to the volume
+fraction or mass fraction of H,O or Si0O, in the homogeneous mixture. Furthermore, the plots indicate that
 the proportional behavior becomes asymptotic at increased fractions of H,O and Si0,. Therefore, the
 form of the regression equation was taken to be the product of two quotients, each made up of linear
-relationships, for the independent variables, S (g SiO,/g **U) and H (g H,0O/g #*U), resulting in the
+relationships, for the independent variables, S (g SiO,/g ***U) and H (g H,O/g *U), resulting in the
 dependent variable, D (g DU/g ***U), computational result.
 A-12
 
@@ -1524,16 +1525,16 @@ Table A.2. Example SCALE XSDRNPM input for result No. 51
 rm ft70f001
 rm ft51f001
 rm ft52f001
-#In -s /home/rqw/scale/data/xn199.r3 {t51f001
+#In -s /home/rqw/scale/data/xn199.1r3 {t51f001
 #In -s /home/eSa/sammy/u235bench/data/libampxfff2 {t52f001
 In -s /scale/scale4.3 _ibm/data/scale.rev03.xn238 ft5 1f001
 end
 #ajax
 0$$ 70 51 1$$ 1 ¢
-28% 51 6 t
+288 51 6 t
 3$$ 1001 8016 14000 92233 92235 92238 t
 end
-=csaslx ~~ parm=size=600000
+=csaslx  parm=size=600000
 casel2 uranium/si/h2o study, 1.0 wt% uf=0.10, 02-22-96
 199¢r inth*
 arbmsio2 1.5888 2011 8016 2 14000 11 0.5 end
@@ -1545,25 +1546,25 @@ end
 
  
 
-“Reference to the 199gr is an artifact of the cross-section library unit identification for the ENDF/B-V
+*Reference to the 199gr is an artifact of the cross-section library unit identification for the ENDF/B-V
 238-energy group library.
 A-13
 
 That 1s
 
-a+ b-S d + eH
-D=—-—|  |———— (A.5)
-1 + ¢-S 1 + f-H
+a+ b-S d + eeH
+D=—-—|' |———— (A.5)
+1 + ¢S 1 + f-H
 
 The product of the two quotients then becomes
-D = @ +bS + cH + d’-S-H)
+D - @ +b"S +c¢c’*H + d’-S-H)
 
 ) (A.6)
-(1 +e’sS + f“H + g’-S-H)
+(1 +e”sS +f“H + g’-S-H)
 
  
 
-where a’, b’, c¢’, d’, e’, {’, g’ are the resultant regression coefficients.
+where a’,b’, ¢’, d’, e’, ', g’ are the resultant regression coefficients.
 
 The multiple nonlinear regression of this relationship resulted in the following equation:
 
@@ -1622,19 +1623,19 @@ The multiple nonlinear regression of this relationship resulted in the following
  
 
 Sio H Sio H,0
-35.38 - 0.026 | 222| + 100.6 | 2 | - 0.1436- | 222]. | 22
-; DU _ 0 23y 0 23y 0 233y 0 23y
-, B33 Si0, HO SiO HO
-1 + 0.2597: . 0491- | 222] 0.000626: | E2202 | E12
-0 23315 0 23315 0 23315 g 2331)
+35.38 - 0.026- | 22| + 100.6- | S22 | - 0.1436- | 222 | 22
+; DU _ o 23y o 23y 0 233y 0 23y
+, B33y Si0, T Sio HO
+1+ 0.2597- . 0491 | 222~ 0.000626- | 2202 L[ B2
+o 23315 o 23315 o 23315 g 2331y
 (A.7)
 for
 gS 0gH,O
 2 <1480 @ 2
-g U g 233y
-gSi0 gH.0
-2 <66 @ 19 < =2— < 22.
-g 233 g 23317
+g U g 233U
+gSi10 gH.0
+2 <66 @ 19 < =2 < 22,
+g 233y g 23317
 
 Table A.3 provides the observed (i.e., SCALE calculated) and predicted values for the multiple
 
@@ -1647,8 +1648,8 @@ ensure subcriticality in an infinite, optimumly water-moderated, homogeneous med
 
 an additional term to account for enriched uranium commingled with 2*U. The additional term is:
 
-gbU _[E-1 AD)
-g UGE) 0.8
+gbU _(E-1 AS)
+g U(E) 0.8 ’ '
 
 where U(E) is enriched uranium at E wt % **°U.
 
@@ -1682,7 +1683,7 @@ Table A.3. SCALE calculated vs regression predicted values
 
 SCALE Input SCALE Input SCALE Calculation Regression
 g Si0o, g H,0 g DU g DU
-Table = Result ¢ 2g 2 2p ¢ 2g 2 y
+Table l;.l Result ¢ 23y ¢ 2y ¢ 2y ¢ 2y
 
 0.
 
@@ -1744,11 +1745,11 @@ of Si0,, H,0, **U, and uranium enriched in the ***U isotope is then
  
 
 Sio H,0 Sio H,0
-35.38 - 0.026 - = 21 + 100.6 - = ~ 0.1436 - = 2 =
-r DU = g—U gu gu gu) |. g 23
+35.38 - 0.026 - gm 21 +100.6 - gzgi - 0.1436 - g233 2 g23§
+r DU = g~V g~u gu gu) |, g 23
 Sio H,0 Sio H,0
-1 +02597 - | £222 + 04991 - | E22 - 0.000626 - | £222 2
-g 3u g 23317 g 23317 g 23315
+1+ 02597 - | 2222 4 04991 - | 222 - 0.000626 - | 2222 S0
+g 33U g 233U g 233U g 233U
 
  
 
@@ -1768,7 +1769,7 @@ g 3u g 23317 g 23317 g 23315
 
  
 
-+ bo Y - g of enriched uranium,
++ ( EO_S 1) - g of enriched uranium,
 
 (A.9)
 
@@ -1784,42 +1785,42 @@ sufficient such as to ensure subcriticality and no additional DU is needed.
 If the enriched uranium, DU, and ***U mixture can be ensured to remain as unmoderated [i.e., no other
 scattering media (e.g., iron, water, silicon, etc.)] metal, the result No. 83 of Table A.1 can be used with the
 
-knowledge of the limiting critical enrichment for *°U to develop the following relationship:
+knowledge of the limiting critical enrichment for **°U to develop the following relationship:
 
 E - 5.1
 
-DU = 36 ¢25U +
-S S | 4.9
+DU = 36 - ¢ 25U +
+s s ( 4.9
 
-| + g of enriched uranium. (A.10)
+) - g of enriched uranium. (A.10)
 
-If no controls are available on the range of SiO, or H,O content, then the optimization of Eq. (A.1)
+If no controls are available on the range of Si0, or H,O content, then the optimization of Eq. (A.1)
 
-with H,O moderation and no SiO, results in the following relationship that should be used:
+with H,O moderation and no Si0, results in the following relationship that should be used:
 
 E -1
 
-DU = 188 + g*¥U +
-: : | 0.8
+DU = 188 - g*¥U +
+: : ( 0.8
 
-| + g of enriched uranium. (A.11)
+) - g of enriched uranium. (A.11)
 
 This results in a mixture of uranium that contains <1 wt % >**U and <0.53 wt % >**U.
 A-16
 
 Further calculations were performed to provide ensurance that the nonfissile fissionable uranium
-isotopes of >**U and **°U can be assumed to be >**U in the dilution of ***U and ***U using the previous
+isotopes of ***U and **°U can be assumed to be ?**U in the dilution of ***U and ***U using the previous
 relationships if the atom ratio of (***U + #°U)/*°U is <1.0. Results of these calculations are presented in
 Table A.4.
 
 The first column in Table A.4 demonstrates the effect of substituting »**U or **°U for ***U in
-optimumly water-moderated systems. At 1 atom % ***U in **U, the k_ of the mixture is 0.994. The
-substitution of **U or **U reduces the k. substantially. Likewise, the addition of ***U or **°U to 1 atom %
+optimumly water-moderated systems. At 1 atom % ***U in **U, the k. of the mixture is 0.994. The
+substitution of **U or U reduces the k. substantially. Likewise, the addition of ***U or **°U to 1 atom %
 2¥U in a ***U optimumly water-moderated mixture reduces the k. through thermal neutron absorption.
 
 The second column in Table A.4 demonstrates the effect of extreme oxygen moderation of
 
-Table A.4. Influence of >**U and ***U on infinite systems of **U diluted with >*U
+Table A.4. Influence of >**U and ***U on infinite systems of **U diluted with **U
 
  
 
@@ -1834,22 +1835,22 @@ metal ratios system
 system atom ratios atom ratios
 (H:**U = 500,
 
-0:>°U = 250) k. (0:**U = 100,000) k. (0O:*°U = 100) k.
-20:20 = 100 0.430 2U2U = 100 0.102 2U:2U = 100 1.400
-UU = 100 0.847 UU = 100 0.804 PUA U=100 0.670
-UU = 100 0.994 28UPU = 100 1.030 PUA U=100 0.480
-UU = 100 0.895 UU = 100 0.92 PUA U=100 0.500
+0:>°U = 250) k. (0:**U = 100,000) k. (0O:°U = 100) k.
+202U = 100 0.430 2U2PU0 = 100 0.102 202U = 100 1.400
+U0 = 100 0.847 U0 = 100 0.804 PUAU=100 0.670
+U0 = 100 0.994 28U2U = 100 1.030 PUAU =100 0.480
+U0 = 100 0.895 20U = 100 0.92 YU =100  0.500
 
-23417:235 =1 BABY =1 23417:235 =1
-28U2U = 100 0.972 28UPU = 100 1.017 PUAU=100 0.476
+234U:235U =1 234U:235U =1 234U:235U =1
+28U2U = 100 0.972 28U2U = 100 1.017 PUAU =100 0476
 
-23617.235J =1 2617.27 =1 23617.235J =1
+236U:235U =1 236U:235U =1 236U:235U =1
 
  
 
 neutrons without the presence of hydrogen as a thermal neutron absorber. Clearly, a 1-atom % mixture of
-2¥U in #*U is super-critical because of the lack of hydrogen neutron absorption. Again, the substitution of
-ZU or #°U reduces the k. substantially. However, the addition of 1 wt % ***U to a 1 wt % **U in Z*U
+23U in #*U is super-critical because of the lack of hydrogen neutron absorption. Again, the substitution of
+24U or #°U reduces the k. substantially. However, the addition of 1 wt % ***U to a 1 wt % **°U in #*U
 mixture 1s inadequate to ensure subcriticality. The third column demonstrates the effects of substituting or
 adding ***U or #*°U in poorly oxygen-moderated systems. As can be observed, 2**U or **°U can be a
 contributor to the “fast fission” process.
@@ -1865,43 +1866,43 @@ A.6 DEVELOPMENT OF GENERAL DILUTION EQUATION (A4)
 Equations (A.1) through (A.3) were derived for and are applicable only when using DU with 0.2 wt %
 2¥U. A large proportion of the DU stored in the United States has approximately this same composition,
 and there is enough of this material to isotopically dilute all of the excess ***U slated for disposal.
-However, if it is decided that excess *U will be coprocessed with another waste stream before disposal,
+However, if it is decided that excess 2*U will be coprocessed with another waste stream before disposal,
 the 2°U and ***U content of the other waste stream may vary considerably from that found in average DU.
 Therefore, a more general isotopic dilution equation was derived from Eq. (A.3) that allows the use of
 uranium material with up to 1 wt % ***U for isotopic dilution of **U.
 
 This general equation must take into account that some of the Z*U in the DU must be used to dilute
-the *°U that is also present in the DU. As discussed concerning Eq. (A.8), the **U in the mixture must be
+the 2°U that is also present in the DU. As discussed concerning Eq. (A.8), the *’U in the mixture must be
 maintained below 1 wt % in order to maintain subcriticality. Therefore, 99 parts of Z*U are needed to
-dilute every part of >**U in the mixture. Mathematically, the grams of ***U needed to dilute the **Uin 1 g
-of DU with z wt % **°U is 99 x (2/100) or (992/100). To determine how many grams of ***U per gram DU
-are available to isotopically dilute >**U, the mass of **’U and the mass of ***U required to dilute the *°U
-must be subtracted. Mathematically, the grams of 2*U in 1 g of DU with z wt % **°U that are available to
+dilute every part of >**U in the mixture. Mathematically, the grams of ***U needed to dilute the *’Uin 1 g
+of DU with z wt % **°U is 99 x (z/100) or (992/100). To determine how many grams of ***U per gram DU
+are available to isotopically dilute ***U, the mass of **’U and the mass of ***U required to dilute the *°U
+must be subtracted. Mathematically, the grams of 2**U in 1 g of DU with z wt % **°U that are available to
 dilute the ***U is
 
 z 997
 
-LT oy
+- L T2 o1y
 100 100
 
-Therefore, the quantity of DU with z wt % **°U, or DU(z), that is required to obtain 1 g of ***U for isotopic
+Therefore, the quantity of DU with z wt % U, or DU(z), that is required to obtain 1 g of ***U for isotopic
 dilution of **U is 1/(1 - z).
 
 From Eq. (A.3), it takes 188 g of DU (0.2) to dilute 1 g of ***U to ensure subcriticality. This quantity
-of DU contains 0.376 g >*’U. To dilute this ***U content to 1 wt % requires 188 x (99 x 0.2/100) or 37.224
+of DU contains 0.376 g >**U. To dilute this ***U content to 1 wt % requires 188 x (99 x 0.2/100) or 37.224
 g of 2*U. Therefore, the quantity of ***U from the 188 g DU(z) that is remaining to dilute the **°U is 188 -
-2U - #8U needed to dilute the **°U, or 188 - 0.376 — 37.224 = 150.4 g. This implies that 150.4 g of ***U
-are required to dilute 1 g of ***U to ensure subcriticality and that, therefore, the 2**U must be diluted to
+23U - U needed to dilute the **°U, or 188 - 0.376 - 37.224 = 150.4 g. This implies that 150.4 g of ***U
+are required to dilute 1 g of ***U to ensure subcriticality and that, therefore, the 2*U must be diluted to
 1/150.4 or 0.66 wt %.
 
 Therefore, a more general equation when using DU with other enrichments is
 
-DUG) = ~ Lo (150.4 g7+ 99 g2- g2%) (A4)
+DU() = ~ L (1504 g7+ 99 g7~ ¢2%) (A4)
 where
-DU(z) = gDU with *°U content of z wt %
-gs = g>”U in material to be isotopically diluted
-gs = g*”U in material to be isotopically diluted
-g?3® = g>*U in material to be isotopically diluted
+DU(z) = g DU with *°U content of z wt %
+g3 = g *”U in material to be isotopically diluted
+g = g ™”U in material to be isotopically diluted
+g?3® = g ”*U in material to be isotopically diluted
 
 The resulting mixture will contain no more than 0.66 wt % ***U and no more than z wt % **U.
 
@@ -1913,7 +1914,7 @@ ORNL has a large quantity of contaminated ***U in temporary storage. The materia
 from the Consolidated Edison Uranium Solidification Program (CEUSP), is a solid, monolithic material
 with uranium, gadolinium, and cadmium oxides. Information regarding the material is presented in Table
 
-AS.
+A.S.
 
 Table A.5. Characteristics of CEUSP material
 
@@ -1925,16 +1926,16 @@ Table A.5. Characteristics of CEUSP material
 
 Weight
 Material inventory % U % total kg
-»2y 0.01 <1.0
-2U 9.69 101.0
->U 1.39 14.5
+2y 0.01 <1.0
+2y 9.69 101.0
+21U 1.39 14.5
 2351) 76.52 797.8
-2361) 5.60 58.4
+236() 5.60 58.4
 2381) 6.80 70.9
 uo, 64.1 1072.6
 CdO 19.6 328.0
 Gd, 0, 2.2 36.8
-Other metal contaminants 14.1 235.9
+Other metal contaminants 14.1 2359
 Total uranium 1042.6
 
 Total CEUSP material 1673.3
@@ -1948,12 +1949,12 @@ remain intimately mixed with the uranium, no credit can be taken for their prese
 the dilution equation. Only the mass of elemental uranium can be applied in the dilution equation.
 
 The 101.0 kg of **U from Table A.5 is applied to the dilution equation separately from the remaining
-mass of uranium. Converted to grams, the mass of **U is 101,000 g **U. The remaining mass of uranium
-is then 1042.6 - 101.0 kg = 941.6 kg U or 941,600 g U. Therefore, the effective enrichment of the
+mass of uranium. Converted to grams, the mass of **U is 101,000 g ***U. The remaining mass of uranium
+is then 1042.6 - 101.0 kg =941.6 kg U or 941,600 g U. Therefore, the effective enrichment of the
 remaining uranium is (100) x (797.8 kg *°U) / (941.6 kg U) = 84.73 wt %. Substituting into Eq. (A.10):
 
-g DU = 188: ¢*°U + 54 + g of enriched uranium
-g DU = 188 + 101,000 + (BR) + 941,600
+g DU = 188 ¢ U + (EO—_Sl) - g of enriched uranium
+g DU = 188 - 101,000 + (%) - 941,600
 g DU = 117,538,210.
 
 This is to say that it will require a dilution of about 117 t DU (0.2 wt % ***U) to denature the CEUSP
@@ -1976,7 +1977,7 @@ Table A.6. k_ vs water volume fraction
 
  
 
-Water-volume fraction k._
+Water-volume fraction k.,
 0.65 0.9817
 0.67 0.9867
 0.70 0.9921
@@ -1988,10 +1989,10 @@ Water-volume fraction k._
 
  
 
-The relatively large k_ values result from the mixture being predominately **’U (subcritical acceptance
-criterion for 1 wt % *°U having a calculated k_ ~1.00) as compared to systems that are predominately **U
+The relatively large k. values result from the mixture being predominately U (subcritical acceptance
+criterion for 1 wt % *°U having a calculated k_ ~1.00) as compared to systems that are predominately ***U
 
-(k., < 0.95 for a subcritical acceptance criterion for optimumly moderated >**U (Primm, 1993).
+(k.. < 0.95 for a subcritical acceptance criterion for optimumly moderated ***U (Primm, 1993).
 
 A.8 CONCLUSIONS
 
@@ -2029,19 +2030,19 @@ Laboratory.
 Kastenberg, W. E., et al., September 1996. “Considerations of Autocatalytic Criticality of Fissile
 Materials in Geological Repositories,” Nucl. Tech. 155(3), 298.
 
-Paxton, H. C., and N. L. Pruvost, July 1987. Critical Dimensions of Systems Containing *°U, *** Pu, and
-#33 1986 Revision, LA-10860-MS, Los Alamos National Laboratory, Los Alamos, New Mexico.
+Paxton, H. C., and N. L. Pruvost, July 1987. Critical Dimensions of Systems Containing *°U, ***Pu, and
+33U 1986 Revision, LA-10860-MS, Los Alamos National Laboratory, Los Alamos, New Mexico.
 
 Primm, R. T. Ill, November 1993. Criticality Safety Studies of Building 3019, Cell 4 and In-Line Storage
 Wells, ORNL/TM-12374, Martin Marietta Energy Systems, Inc., Oak Ridge National Laboratory.
 
 SCALE: A Modular Code System for Performing Standardized Computer Analysis for Licensing
-Evaluation, April 1995. NUREG/CR-0200, Rev. 4 (ORNL/NUREG/CSD-2/R4), Vols. 1, II, and III,
+Evaluation, April 1995. NUREG/CR-0200, Rev. 4 (ORNL/NUREG/CSD-2/R4), Vols. 1, 11, and III,
 Martin Marietta Energy Systems, Inc., Oak Ridge National Laboratory, Oak Ridge, Tennessee.
 
 STATGRAPHICS Plus 5.2 for IBM PC 386/486, November 15, 1991. Copyright 1991 by STSC, Inc.,
 2115 East Jefferson Street, Rockville, Maryland 20852.
-Xo
+O
 
 10-14.
 15-19.
@@ -2070,24 +2071,24 @@ TT.
 
 78.
 
-PONE BD =
+XN R WD =
 
 ORNL/TM-13524
 
 INTERNAL DISTRIBUTION
-C. W. Alexander 46. H. J. Monroe
+C. W. Alexander 46. H.J. Monroe
 J. M. Begovich 47. D. E. Mueller
-L. F. Blankner 48. C.V. Parks
-H. E. Clark 49. B.D. Patton
-E. D. Collins 50. L.M. Petrie
+L. F. Blankner 48. C. V. Parks
+H. E. Clark 49. B. D. Patton
+E. D. Collins 50. L. M. Petrie
 S. O. Cox 51. B. A. Powers
-A. G. Croff 52. R.T. Primm, III
+A. G. Croff 52. R.T.Primm, III
 M. D. DeHart 53. D. W. Ramey
 W. D. Duerksen 54. D. A. Reed
 K. R. Elam 55. D. E. Reichle
 C. W. Forsberg 56. K.D. Rowley
 L. L. Gilpin 57. J. E. Rushton
-N. M. Greene 58. A. R. Sadlowe
+N. M. Greene 58. A.R. Sadlowe
 S. R. Greene 59. B. W. Starnes
 M. J. Haire 60. J. O. Stiegler
 C. M. Hopper 61. S. N. Storch
@@ -2164,7 +2165,7 @@ Washington, D.C. 20024.
 Ray Cooperstein, U.S. Department of Energy, Mail Stop DP-45,
 19901 Germantown Rd., Germantown, Maryland 20874.
 
-A. I. Cygelman, U.S. Department of Energy, Office of Fissile Materials
+A. L. Cygelman, U.S. Department of Energy, Office of Fissile Materials
 Disposition, DOE/MD-3, Forrestal Bldg., Rm. 6G-092,
 1000 Independence Ave., S.W., Washington, D.C. 20585.
 
@@ -2230,7 +2231,7 @@ Tim Hunt, U.S. Defense Nuclear Facilities Safety Board, Suite 700,
 
 110.
 
-111.
+I11.
 
 Brent Ives, Lawrence Livermore National Laboratory, 7000 East Ave.,
 Livermore, California 94550.
@@ -2357,7 +2358,7 @@ Baton Rouge, Louisiana 70803.
 Wendell L. Williams, U.S. Department of Energy, MD-4, 6G-081,
 1000 Independence Ave., S.W., Washington, D.C. 20585.
 
-Jesse L.. Yow, Jr., Lawrence Livermore National Laboratory, University of
+Jesse L. Yow, Jr., Lawrence Livermore National Laboratory, University of
 California, 7000 East Ave., Livermore, California 94550.
 
 Loong Yung, Advanced Integrated Management Service, Suite B3,

@@ -7,77 +7,137 @@ Contract No. W-7405-eng-26
 
 CHEMICAL TECHNOLOGY DIVISION
 
-MRPP — MULTIREGION PROCESSING PLANT CODE
+MRPP - MULTIREGION PROCESSING PLANT CODE
 
 C. W. Kee and L. E. McNeese
 
 SEPTEMBER 1976
 
+NOTICE
+This report was prepared as an accoumt of work
+sponsoted by the United States Government. Neither
+the United States nor the United States Energy
+
+   
+ 
+ 
+  
  
 
-. ; NOTICE
-I€port was prepared as an account of
-Th 4 We
-sponsored by the United States Government, Moi
+   
 
-or usefulness of any information, a
+warranty, express or implied, or assumes any legal
+liability or responsibility for the agcuracy, completeness
+or usefuiness of any information, Apparatus, product or
+process disclosed, or represents that its use would not
+infringe privately owned rights,
 
-t » Apparatus, product or
-process disclosed, OF represents that its use would not
-infringe privately owned rights.
-
-0OAX RIDGE NATIONAL LABORATORY
+0AX RIDGE NATIONAL LABORATORY
 Oak Ridge, Tennessee 37830
 operated by
 UNION CARBIDE CORPORATION
 for the
-ENERGY RESEARCH AND DEVELOPMENT ADMINISTRATION
+N
+ENERGY RESEARCH AND DEVELOPMENT ADMINISTRATIO
 
-OF WTC LNG2E ere
-ABSTRACT + . vv v4 ts 6 vo 0 so so a o o a o« o +
-INTRODUCTION © & vv 4 «vv 6 to a vo so a eo vo os a uo
-EQUATIONS AND ASSUMPTIONS « « « « vv « « o o o o o o
-2.1 Model for the Reactor . . + + + + « « & +
-2.2 Model for the Processing Plant . . . . . «. . . . .
-NUMERICAL METHODS EMPLOYED . . + +. « « 4 « « « o« « +
-3.1 Solution of Reactor Material Balance Equations .
-3.2 Solution of the Processing Plant Material Balance
-Equations « « « + ¢ + « ¢ 0 0 0 0 4 4 eee ea a
-3.3 Iteration with Reactor Code . . « . « « « + « +
-3.4 Calculation of Molar Volumes . + + + «+ + + « + «
-3.5 Correction of Distribution Coefficients . . . . .
-3.6 Investigation of Faster Solution Methods . . . . .
-LIMITATIONS AND SPECIAL CONSIDERATIONS . . « + + « «
-4.1 Limitations of Steady State Calculation . . . . .
-4.2 System of Units . « « « « « vt «tv vo 0 so
-4.3 Description of Particular Items Using Mass Transfer
-Coefficients « « « « 4 ¢ 4 « ¢ vo 4 ¢ « & « o oa
-4.4 Uses Requiring Modifications . . . . . . . . . . .
-REFERENCES + + « 4 4 +t ¢ tv ¢ 4 so « so os a so so so os oa o
-APPENDIX A: DESCRIPTION OF SUBROUTINES USED . . . . .
-APPENDIX B: INPUT . © ¢ v 4 + +o « o « o o o o oo so o
-APPENDIX C: OUTPUT . . ¢ uv « o o « oa o « o os os « a o «
+07 WTHCLHMETZE iy
+ABSTRACT
+
+INTRODUCTION
 
 iii
 
 TABLE OF CONTENTS
 
-13
+EQUATIONS AND ASSUMPTIONS .
 
+2.1 Model for the Reactor
+
+2.2 Model for the Processing Plant .
+
+NUMERICAL METHODS EMPLOYED
+
+3.1
+3.2
+
+Equations .
+
+3.3
+3.4
+3.5
+3.6
+
+LIMITATIONS AND SPECIAL CONSIDERATIONS
+
+4.1
+4.2
+4.3
+
+System of Units
+
+Coefficients .
+
+4.4
+REFERENCES
+APPENDIX A:
+APPENDIX B:
+
+APPENDIX C:
+
+DESCRIPTION OF SUBROUTINES USED
+
+INPUT
+
+»
+
+OUTPUT .
+
+-
+
+»
+
+*
+
+Iteration with Reactor Code
+
+Calculation of Molar Volumes .
+
+Uses Requiring Modifications .
+
+.
+
+Correction of Distribution Coefficients
+
+Limitations of Steady State Calculation
+
+-
+
+Solution of Reactor Material Balance Equations .
+
+Solution of the Processing Plant Material Balance
+
+Investigation of Faster Solution Methods .
+
+Description of Particular Items Using Mass Transfer
+
+. 13
+13
 . 14
-«15
+
+15
 . 16
-«17
-. 20
 
 . 21
 . 22
 
 . 22
-. 23
-MRPP - MULTIREGION PROCESSING PLANT CODE
 
- 
+. 25
+. 27
+42
+
+. 60
+MRPP - MULTIREGION PROCESSING PLANT CODE
 
 C. W. Kee and L. E. McNeese
 
@@ -94,12 +154,14 @@ generalized description of a processing plant flowsheet;
 it also performs the iterative adjustment of flowsheet
 parameters for determination of concentrations throughout
 the flowsheet, and the associated effect of the specified
-processing mode on the overall reactor operation.
+processing mode on the overall reactor operation,
+
+ 
 
 1. INTRODUCTION
 
 In a reactor such as a Molten~Salt Breeder Reactor for which contin-
-uous processing is planned, the ability to compare alternate processing
+uous processing is planned, the ability to compare alternate proceésing
 methods is essential in determining the effect of small changes in proces-
 sing method on the steady-state operation of a reactor and processing plant.
 Because of the degree of interaction between the reactor performance and
@@ -153,12 +215,12 @@ from the authors.
 The multiregion processing plant code is based on a model in which
 a MSBR and the associated processing plant are represented by separate
 regions of uniform composition; allowance is made for continuous flow
-between regions, radioactive decay of materials in each region, and trans-~
+between regions, radioactive decay of materials in each region, and trans-
 fer of materials between regions in order to represent common mass transfer
 effects. Allowance is also made for fission and neutron capture reactions
 in regions representing the reactor. The equations which describe regions
-in the processing plant are similar to those for the reactor; however, the
-reactor is represented by a separate code, MATADOR, 2 which receives input
+in the processing plant are similar to those for the reactor; howeﬁer, the
+reactor is represented by a separate code, MATADOR,2 which receives input
 from a single region of the processing plant (the region from which proc-
 essed salt is returned to the reactor). The equations for the processing
 plant are described separately from those for the reactor to accommodate
@@ -179,32 +241,34 @@ reactor is treated as a single region; however, the reactor program treats
 the reactor as a multiregion system. The equations permit the use of
 terms which are not necessary for every region; for example, flow of
 material between any two regions can be specified, but this seldom occurs.
-The equations have been described previously,’ although much of that
+The equations have been described previously,2 although much of that
 description is repeated here.
 
 The accumulation rate of species i in the fuel salt in the reactor
-is the input rate of species i by feed, fission, radioactive decay, and
+is the input rate of species i by feed, fission, radiocactive decay, and
 neutron capture in the fuel salt, graphite, and circulating bubbles minus
 the disappearance rate of species i due to radioactive decay, neutron
 capture, deposition on exchanger surfaces, and chemical processing. At
-steady state, this rate of accumulation is zero, so that:
+steady state, this rate of accumulation is‘zero, so that:
 
-0 = (ves Ay + ¢ Vets 9 + Ay 8; 5 + Ahy + Si4 + ¢ e713)";
+0 = E:(Yeij Aj + ¢ vcfij Gj + Ag gij + Abhij + Sij + ¢ chijgf%)cj
 
-3
+.
 
-+ Fe, - (2 FOV HFA G+ AR +S, + ?y)es (1)
+J
+
++ Fcio - (D\iv + oiqavc + F + Ag Gi + AbHi + Si + Pi)ci, (1)
 where
 
-surface area of circulating bubbles, en?
+surface area of circulating bubbles, cmz,
 
-surface area of graphite, w?,
+surface area of graphite, cmz,
 
 volumetric flow rate of fuel salt to the reactor, cc/sec,
 coefficient for loss of species i by diffusion into
 graphite, cm/sec,
 
-coefficient for loss of species i by migration to bubbles,
+coefficient fbr loss of species i by migration to bubbles,
 cm/sec,
 
 effective chemical processing rate for species i, cc/sec,
@@ -234,15 +298,14 @@ species j to gas bubbles, cm/sec,
 rate of production of species i from species } plated on
 the heat exchanger surfaces, cc/sec,
 
-fission yield of species i from fission of species j,
+fission yield of species i1 from fission of species j,
 . -1
-Af = radioactive disintegration constant of species i, sec 7,
+Ai = radioactive disintegration constant of species i, sec 7,
 . 2
-0; = average neutron-capture cross section of species i, cm,
-A . 2
-Ops = average fission cross section of species i, cm ,
+Ui = average neutron-capture cross section of species 1, cm ,
+Ufi = gaverage fission cross section of species i, cm ,
 -2 ~1
-$ = average neutron flux, ecm ~ sec ~.
+¢ = average neutron flux, cm = sec .
 
 Thus, for I nuclides, this equation is a system of I simultaneous alge-
 braic equations and I unknowns. Two other sets of I equations and I
@@ -252,7 +315,7 @@ a region in which the evolving gas bubbles and the materials plated out
 outside the reactor core are held in contact with fuel salt so that sol-
 uble decay products may be returned to the reactor.
 
-All three sets of I equations are solved by the Gauss-Seidel
+All three sets of I equations are solved by the Gauss—Seidel
 successive substitution algorithm, with iteration occurring over each
 of the successive sets of I equations. Because of the size of the
 diagonal terms, the system of equations converges rapidly. Direct sol-
@@ -260,29 +323,29 @@ utions were not used because of the storage required for remembering a
 coefficient matrix.
 
 The treatment of diffusion of noble gases into and decay products
-out of the graphite uses a model developed by Kedl and Houtzeel.> This
+out of the graphite uses a model developed by Kedl and Houtzeel.3 This
 model assumes that the graphite moderator is replaced by semi-infinite
-solid cylinders with the same surface-to-volume ratio, and that the
+solid cylinders with the same surface-~to-volume ratio, and that the
 graphite is coated with a low permeability material to a depth of 1 mil.
 Diffusion of noble gases into the graphite occurs through a liquid film
 and the coating, and is simulated by a lumped resistance model. The
 model developed for the migration of noble gases and noble metals to
 circulating helium bubbles is an extension of the model proposed by Kedl
 
-and Houtzeel.> Both of these models are described in ref. 2.
-Once the set of concentrations is obtained, it is possible to cal-
+and Houtzeel.3 Both of these models are described in ref. 2.
+Once the set of concentrations is obtained, it is possible to cal~
 culate heat generation rates, fission product poisoning, production rates
 of the materials in the reactor, inventory in moles of the material in
 the reactor, the uranium mole fraction, and the breeding ratio. The
 breeding ratio is calculated by assuming that it varies linearly with
 small changes in the fission product poisoning. Thus, the breeding ratio
 is determined from the difference between the reference fission product
-poisoning (from rOD* calculations) and the calculated fission product
+poisoning (from R.OD4 calculations) and the calculated fission product
 poisoning.
 
 In calculating the fission product poisoning, the poisoning from
-13546 is excluded because it was also excluded in the reactor design code,
-ROD, where it was always assumed to be one-half of 17. While MATADOR
+135Xe is excluded because it was also excluded in the reactor design code,
+ROD, where it was always assumed to be one-half of 1Z. While MATADOR
 calculations of fission product poisoning include absorptions by the
 noble gases and noble metals in the gas bubbles, noble metals plated
 onto surfaces outside the reactor core are not assumed to absorb neutrons.
@@ -305,101 +368,81 @@ tions. Any two regions may be linked by flowing streams or by rate
 expressions, and each region may have feeds or discards. (These are
 
 streams which do not connect two regions in the plant.)
-
-2.2.1 Material balance equations
+2.2,1 Material balance equations
 
 The rate of accumulation of nuclide i in a region (0 at steady
-
-state) is the rate of appearance of i in the region from feed streams,
-
-from flowing streams from other
-regions, and from production of
-minus the rate of disappearance
-mass transfer to other regions,
+state) is the rate of appearance of 1 in the region from feed streams,
+from flowing streams from other regions, from mass transfer from other
+regions, and from production of other nuclides by radiocactive decay
+minus the rate of disappearance of i from the region by flow out, by
+mass transfer to other regions, and by radioactive decay. Thus, at
 
 steady state in region n:
+0 = A.e,.(V + K, V C.
+)j: ] 13( 5,n j.n B,n) j,n (2)
+3#
 
-0 = 2 Ase; 4
-j#i
++ +
+i FSm,n Ci,m + é FBm,n Ki,m Ci,m FIi,n
 
-+ I F Cc. +
+m¥n m#n
 
-regions, from mass transfer from other
-other nuclides by radioactive decay
-of i from the region by flow out, by
-
-and by radioactive decay. Thus, at
-
-s,;n ¥ X50"8,00% 0 2)
-
-F K c + F
-
-Sm,n “i,m Bmn,n i,m “i,m Ii,n
-m m
-mFn m¥n
-+ 2 [a2 i,m - (k;a)) om 4 pn
-m#n
-- 20g + Kin B,0’ ®i.n
-- + K, F + K, + D
-%i,n z Fon,m + Dg Rn z Bn,m i,n Bn
-mFn m#n
++ 2: [(kia)m,n Ci,m - (kia)n,m ci,n]
 where
 
-e..
+e' *
 1]
 
-Al =
+A
 
-1
+i
 
 subscripts
 
-Hence, there is
+discard rate of phase S from region n, cm3/sec,
 
-discard rate of phase S from region n, cm/sec,
-
-flow rate of phase S from region m to region n, m/sec,
+flow rate of phase S from region m to region n, cm3/sec,
 feed rate of nuclide i to region n, moles/sec,
-distribution ratio for nuclide i in region mn,
+distribution ratio for nuclide i in region n,
 
 volume of phase S in region n, cc,
 
 concentration of nuclide i in first phase of region n,
-moles/cc,
+moles/cec,
 
 fractions of disintegrations of species j which lead to
 formation of species i,
 
 mass transfer rate constant for transfer of species i
-from region m to region n, em’ /sec [the ratio of (ja) n
-and (jad) is a distribution function, as discussed
+from region m to region n, cm3/sec [the ratio of (kia)m,n
+and (kia)n,m is a distribution function, as discussed
 
 in Sect. 2.2.2],
 
-. . -1
-decay constant for nuclide i, sec =, and
+- - —l
+decay constant for nuclide i, sec ~, and
 
 B and S = phases
 i and j = nuclides
 m and n = regions.
 
-one equation and one unknown for each nuclide in each
+Hence, there is one equation and one unknown for each nuclide in each
 
 region. There are 52,500 equations for 750 nuclides in 70 regions.
 
 Because of the number of equations and the number and size of recycle
 
-streams present
+streams present in a flowsheet, the Gauss-Seidel iteration is too time
 
-in a flowsheet, the Gauss-Seidel iteration is too time
+consuming.
 
-consuming. Since neutron captures are neglected, it is possible to
+Since neutron captures are neglected, it is possible to
 
 arrange the nuclides so that each nuclide precedes all of its decay
 
-daughters. For
+daughters.
 
-N regions, there is one set of N equations with N unknowns
+For N regions, there is one set of N equations with N unknowns
 10
 
 for each nuclide. By arranging the nuclides in the proper order and
@@ -417,153 +460,150 @@ made for unknowns that were calculated previously. In this case, the
 lower triangular matrix has off-diagonal terms in row i and column j of
 
 the form:
--A,e.. V
-jij =i’
+-A,e.. V., ,
+j il =i
 where
-Xi = diagonal matrix with the nth term on the diagonal being
-Vo. +
+Eﬁ = diagonal matrix with the nth term on the diagonal being
+V.. +
 
-Sn Rin Ven :
+Sn Kj,n VBn ’
 The terms on the diagonal (i=j) are matrices of the form:
 
-R. + A, V. .
-~1 1/81
+R. + A, V., .
+~1 141
 
-Ry is a matrix whose element in row n and column m is
+P
 
-~~
+'51 is a matrix whose element in row n and column m is
 
-Cm =D (Fs. + Yim Fom,n + ey] + h Sm [Fsam + Kin Fn,m
+ot
+
+(én,m - [%Sm,n + Kim FBm,n + (kia)m,%] + ;% sn;m [?Sn,m + Ki,n FBn,m
 
 +
-32), | + Den + Kim anf ’
+(kia)n,m] + DSn t Ki,n DBnt ?
 
-Or
-Il
+O
+il
 
 1 if n=m, and
 
-[eo]
-|
+o
+"
 
-0 if n+#m.
+0 if n#m.
 11
 
 The resulting system of equations, when used with a constant vector
 
-indicating feed streams, is the set of Eqs. (2).
+indicating feed streams, is the set of Egs. (2).
 2.2.2 Mass transfer coefficients
 
 Three models were used for mass transfer between liquid and gas
-phases. For transfer of noble gases to gas bubbles, the overall liquid
+phases. TFor transfer of noble gases to gas bubbles, the overall liquid
 mass transfer coefficient was estimated from the Hughmark correlation
-given by Schaftlein and Russell.’ This is substituted into the relation
+given by Schaftlein and R.ussell.5 This is substituted into the relation
 for mass transfer:
 
-Ny = Koptpleg — Hey) = Kyphgey = KopAgH cys
+N; = Kop2gley — Heg) = Kypagey — KopAgh ¢,
 where
 
-bubble surface area, en,
+bubble surface area, cmz,
 
-oF
+o
 
 H = Henry's law constant, moles/cc (liq) per mole/cc (gas),
-Xow = overall liquid mass transfer coefficient, cm/sec,
-N; = rate of mass transfer, moles/sec,
+Ky = overall liquid mass transfer coefficient, cm/sec,
+Ni = rate of mass transfer, moles/sec,
 
-cy and cq = concentrations in liquid and gas, moles/cc.
+cy and c, = concentrations in liquid and gas, moles/cc.
 
 This equation is broken into two contributions to matrix terms analogous
 
 to a flow rate so that:
 
-(kya), on = Kop 4p
+(kja)) m = Koo 4B
 
-(kya), = KoL Ag i= Hlkga), os
+(kia)m,n = KOL AB H = H(kia)n,m’
+
 where region n is the liquid phase, and region m the gas phase.
 
 In addition to this transfer, the rate of mass transfer at the
 surface between the liquid and cover gas must also be considered. For
 volatile components, the mass transfer resistance is assumed to be across
 
-a liquid film of thickness Xo:
+a liquid film of thickness XR:
 12
-
-D,A D,A D,A
 
  
 
-= - = - 7% 5
-Ny L s (cg Hey) 2 g cy 2 s H cy» (5)
-2 2 2
+N, = DQAS (c, - Hc ) = DQAg c, — DQAS He |, (5)
+L X % 8 X ¢ X g
+% 2 2
 where
-D, = diffusivity in liquid, am? /sec,
+DQ = diffusivity in liquid, cmz/sec,
 2
-Ag = gurface area, cm ;
+A.S = surface area, cm ;
 thus,
-(kja)) nm = (DA) /Xy
-(kjadn = (Dy A H) /X, = Hlkja), 0 . (6)
+
+(kia)n m (DQAS)/XR
+
+(kia)m,n (DRAS H)/XQ = H(kia)n,m . (6)
 
 The same model is used to describe transfer of nonvolatile decay products
-of volatile fission products across a gas film of thickness Xgs however,
+of volatile fission products across a gas film of thickness Xg; however,
 since the transfer from liquid to gas is zero, there is only one term.
 All of these terms must be added to obtain the matrix coefficients that
 are used.
 
 In both models the design criterion is based on some consideration
-other than the removal of volatile nuclides. For example, the gas rate
+other than the removal of volatile nuclides. TFor example, the gas rate
 might be based on the amount of reductant necessary for a hydrofluorinator
 or a hydrogen-sparged vessel, or on the amount of argon needed for a level
 probe in a surge tank. In a fluorinator, however, the design is chosen
 to achieve a specified performance such as per cent removal of uranium.
 For zero inlet concentration in the gas, a material balance gives:
 
-Freq = Face + Frep = PoFicr + Fier»
+F.c. =F.c.+ F c = PRFLCI + FLCL,
 
 or
 
-c
-cp = a - Pp) cri ep = L , (7
-
-(1-7?)
+cp = (1 - PR) cyi Cp = L . (7)
 13
 
 where
-
-F1,Fg = flow rates in liquid and gas, cc/sec,
-
-“1°10 % = concentrations in inlet liquid, outlet liquid, and
+FL’FG = flow rates in liquid and gas, cc/sec,
+CIfCL’CG = concentrations in inlet liquid, outlet liquid, and
 outlet gas, moles/cc,
+P = percent removal;
 
-Pr = percent removal;
+R
 
-thus, the transfer across the interface is P_ F, c¢ Substituting for
+thus, the transfer across the interface is P_ F. c Substituting for
 
-RL TIT
+R L T
 
-Crt
+CI:
 
-N, =F Pr c. (8)
+P
+N, =T R . (8)
+i L-zzuzeﬁgy cL
 
-i L =
-(1 - Pp)
-
-In the simulation, Fo was included as a parameter independent of the
-element, and P/Q - Po) was listed as a constant that depended on the
+In the simulation, FL was included as a parameter independent of the
+element, and PR/(l - PR) was listed as a constant that depended on the
 
 element number.
-
 3. NUMERICAL METHODS EMPLOYED
 3.1 Solution of Reactor Material Balance Equations
 
 The number of equations to be solved by the reactor code is equal
-to the number of nuclides, 739. The coupling of the equations used for
+to the number of nuclides, ®739, The coupling of the equations used for
 the salt in the drain tank with those used for the gas bubbles adds two
 additional sets of the same number of equations. The direct solution
 of such a set of equations would require a method that would take advan-
-tage of sparseness and might need only limited pivoting to minimize fill.
+tage of sparseness and might need only limited pivoting to minimize f£ill.
 These problems are eliminated by the use of an iterative solution, pro-
-viding the solution is obtained in a reasonable numbar of iterations.
+viding the solution is obtained in a reasonable number of iterations.
 
 The number of iterations has always been less than 30.
 14
@@ -577,7 +617,7 @@ and storage of even the nonzero terms could easily exceed the storage
 capacity of machines available; therefore, a direct Gauss reduction
 could not be used. Various approaches were made by using a Gauss-Seidel
 iteration. The best method was found to be a series of solutions for
-all nuclide concentrations in the flowsheet; the nuclides were considered
+all nuclide concentrations in the flowsheet:; the nuclides were considered
 one at a time so that some nuclides required only a few iterations. Even
 with the rearrangement of nuclides, which necessitated only one solution
 for each species, the time requirements were still excessive; this was
@@ -588,7 +628,7 @@ half-lives.
 For each successive nuclide, a 70 by 70 matrix was solved to obtain
 the concentration of that nuclide in each of 70 regions. The time
 requirement for a direct solution for all concentrations in the processing
-plant by this method was quite reasonable - less than a minute for the
+plant by this method was quite reasonable — less than a minute for the
 IBM 360/91. In addition, the memory requirements were essentially the
 same as those for the iteration technique. The storage of the solution
 vector is a significant fraction of the storage requirement, and for
@@ -597,7 +637,7 @@ larger flowsheets (the IBM 360/91 at ORNL was able to handle 250 regions)
 the solution vector uses most of the storage.
 15
 
-3.3 Iteration with Reactor Code
+3.3 TIteration with Reactor Code
 
 The existence of this reasonably rapid solution for the processing
 plant calculation enabled iterations with the MATADOR routine which
@@ -646,7 +686,7 @@ of the two phases in certain regions for use as a conversion factor to
 convert the distribution coefficients from ratios of mole fraction to
 the ratio of concentrations in moles per cubic centimeter. This problem
 is not alleviated by use of molar flow rates and mole fractions, because
-the parameters must be such that the mole fractions add up to 1.0.
+the parameters must be such that the mole fractions add up to 1.0,
 
 Between iterations, each flow rate from a region is expressed as
 a fraction of the total flow from that region. The molar volume of each
@@ -662,164 +702,158 @@ conversion factor for the distribution coefficients.
 
 For a given region n, the set of concentrations of that region is
 the solution of:
-[*s FAV FE Fp t Vs.) “in " 3 ‘egy Us on * 8 0VB,n)% on
-+ (INPUT); 9
+[ S + Aivs,n + Ki,n(FB + AiVB,n{}Ci,n = § Ajeij(vs,n + K'j,nVB,n)cj,n
++ (NPUT), (9)
 
 where
 
-Fg = J Fon ,m + Ds and
+FS = L FSn,m + Dn’ and
 
-(INPUT), = total input of nuclide i to region n from feeds or other
-
+(INPUT)i 0 = total input of nuclide i to region n from feeds or other
+b
 regions.
 
 From a table of valences, it is possible to calculate an equivalent
 density in the second phase in equivalents per cubic centimeter. It is
 this number which must remain constant through any series of reductive
 extraction operations to satisfy the condition of an equivalent balance.
-The equivalent density, E, in the second phase that enters the region
+The equivalent density, Eo’ in the second phase that enters the region
 may be a calculated variable or an input variable. In either case, the
-variable Drs = Kin must be determined so that
+variable DLi = KLi,n must be determined so that
 
-E - E = 0,
+E-E =0,
+
+0
 where
 
-E = z En = L(VAL) Kon © n = total number of equivalents per
+E=LE N = E(VAL)i K = total number of equivalents per
+
+1“1, 1,n °i,n
 
 milliliter in the bismuth phase, and
 
-(VAL) = valence of i in salt.
+(VAL)i = valence of i in salt.
 18
 
 We have also defined:
 
+K, =A D . (10)
+
 since
 
-log K = A log D., + A ,
+log K = A log D., + A , (11)
 
 i,n Li c
 
-where Al and AL are constants.
+where A.n and AC are constants.
 
-(10)
+The proper value of D ., can be found iteratively by Newton's method
 
-(11)
-
-The proper value of D can be found iteratively by Newton's method
+Li
 
 if we have a means for evaluating
 
 d
--— (E-E) .
-db; , 0
+— (E - E ) .
+dDLi 0
 
 Although the specific derivative may be found, an approximation is given
-
 because it requires less time and memory, involves terms all of the same
-
-sign, and still arrives at the proper D i It is convenient to redefine
-
-L
+sign, and still arrives at the proper DLi' It is convenient to redefine
 
 the constant terms:
 
+A F,+ A, V
+i
+
+ 
+
  
 
  
 
-Ag) = Fg tA Veo
-A, = Fo + Ap VE.n
-(PROD) = z Aei3 Vs pn + Ky ,2"8,0°%,n
+1 S S,n
+A2 = FB + Ai VB,n
+(PROD)i = § Ajeij(vs,n + Kj,nVB,n)Cj,n + (INPUT)i,n .
 so that
-. } (PROD)
-i,n Aq + Kat
-. } (PROD) Kin (VAL)
-i,n Ay + Kn
-By obtaining the derivative of E - E
+(PROD)i
+c, = —
+i,n Al + Ki,nAZ
+PROD), K, VAL) .
+. ] ( )4 1,n( )¢ (12)
+i,n Al + Ki,nAZ
+By obtaining the derivative of E - E0
 d d d
-(E-E) = E=%-=— (E, )
-db; . o dp, . i dp, . i,n
+(E-E) = E=3%—+— (B, ) (13)
+dDLi o dDLi i dDLi i,n
 
 from Eq. (12):
-
-+ (INPUT) n°
-
-(12)
-
-(13)
 19
 
-dE, K., A dK
+dE, K. A dK
 
  
 
 i,n _ 1 _ i,n 2 i,n , (14)
-ap, ~ (PROD), (VAL), [= 2 5] ~a
-Li 1 i,n 2 (Ay + K, oho) Li
+ap, . - (PROD), (VAL), | 3= % % 7| ~ap
+Li 1 i,n 2 (A1 + Ki nAZ) Li
 
-assuming that (PROD) is independent of Dye While this assumption is
+assuming that (PROD) is independent of D While this assumption is
+
+ 
 
  
 
  
 
-5,
-d Ky n APL n
-SLL = K. (15)
-d Dry Drs Dp; Ion
+Li®
+Aﬂ
+d Ki n nAcDLi n
+_L= -
+iD D 5 %o (15)
+Li Li Li
 for
-D; #0,
+D ;#0,
 then
-aE; 0 (PROD) (VAL) K; A A
-dp; ; A + Ky hy Ap + Ky Ay) Dy
+aE; ,  (PROD) (VAL), K, o A, A,
+db; 5 Ay K af A+ K o Dy
 A A
-E Ll 12 (16)
+E 1 a_ (16)
 
-i,n Ay + K; nf Db,
+1 i,n 2 DLi
 
-Thus, as calculations are made for E = E ,» calculations are easily
+Thus, as calculations are made for E = % Ei 0’ calculations are easily
+s
 
-i,n
 made for
+dE d
+— = — (E, ). (17)
+dDLi i dDLi i,n
 
-dE
-
-db 5
-
-(17)
-
- 
-
-Il
-He
-|
-lan
-tr
-a?
-
-The proper Db; for use in the next iteration can be obtained by allowing
+The proper DLi for use in the next iteration can be obtained by allowing
 
 convergence of
 
+ 
+
 d
-Op m1 = Opin +E - ET E - Ey) : (18)
+(DLi)m+l - (DLi)m + (E - Eo)/dDLi
 
-Since (PROD), is dependent upon D.., two terms have been left out.
-
-Li
+(E-E) . (18)
+Since'(PROD)i is dependent upon DLi’ two terms have been left out.
 Some provision must also be made for the failure of this scheme to converge.
-The calculation procedure examines the sign of E - Ej in order to contin-
-uously specify upper and lower bounds for Dre Any new Drs value that
+The calculation procedure examines the sign of E - EO in order to contin-
+uously specify upper and lower bounds for DLi' Any new DLi value that
 
 is outside this interval is replaced with the value at the midpoint of
 
-the interval. This value of Ds might tend to overcorrect in a flowsheet,
+the interval. This value of DLi might tend to overcorrect in a flowsheet,
 20
 
 especially if these regions are in series. As a means of providing a
 damping effect, the value returned for the next iteration is a weighted
 
-average of this value and the old value.
+average of this value and the old wvalue.
 
 3.6 Investigation of Faster Solution Methods
 
@@ -841,17 +875,17 @@ be determined in these subsequent iterations.
 Before the introduction of changing flowsheet parameters, the
 number of row operations required for a 50 by 50 flowsheet matrix was
 determined. Between 200 and 280 row operations were performed with
-about 80% of the calculational time required for operations on the
+about 807% of the calculational time required for operations on the
 coefficient matrix. The number of constants needed for all nuclides
 requires more memory than is available as fast memory; however, because
 the constants need only be accessed sequentially, storage on a direct
 
-access device is sufficient, and only a small buffer space is required.
+access device is sufficient, and only a small buffer space is required,
 21
 
-4, LIMITATIONS AND SPECIAL CONSIDERATIONS
+4, LIMITATIONS AND SPECIAL CONSIDERATTIONS
 
-4.1 Limitations of Steady State Calculation
+4,1 Limitations of Steady State Calculation
 
 A number of problems arise from the consideration of a steady state
 process (i.e., flowsheet steps that are designed to be intermittent). A
@@ -899,11 +933,11 @@ by the calculation of concentrations in moles per cubic centimeter.
 The greatest alteration required in such a change of units is the
 replacement of the output headings. By such label changes, it would
 be possible to treat any system of equations of this form.
-4.3 Description of Particular Items Using
+4,3 Description of Particular Items Using
 Mass Transfer Coefficients
 
 In most simulations, the use of mass transfer coefficients was
-limited to gas-liquid contacts requiring one region for the gas phase
+limited to gas—liquid contacts requiring one region for the gas phase
 and one region for the liquid phase containing only one or two liquids.
 It was assumed that the noble gas concentrations were small enough so
 that no appreciable error would occur by treating the gas bubbles as if
@@ -914,15 +948,15 @@ might be described as having more than one gas region. The bulk gas
 23
 
 would be a separate region from the gas bubbles, and the gas bubbles
-in separate liquids could easily be separate regions. If the gas con-
+in separate liquids could easily be separate regions, If the gas con-
 centration changes as it rises through the liquid and is not small
-relative to its equilibrium concentration, the gas at various levels
-in the liquid would be in different regions and would represent a
+rélative to its equilibrium concentration, the gas at wvarious levels
+in the liquid would be in différent regions and would represent a
 column.
 
 Careful consideration has also been given to simulation of mass
 transfer-limited transfer rates as a replacement of equilibrium stages
-in a liquid-liquid contactor. For turbulent flow when transfer is lim~
+in a liquid-liquid contactor. For turbulent flow when transfer is lim-
 ited by eddy diffusivity, the only difficulty arises in specification
 of the distribution coefficients at the interface. This case can be
 described by three regions: the bulk liquid phase S, the bulk liquid
@@ -931,12 +965,12 @@ the interface region and the bulk liquid region are the rates of eddy
 transport in each phase. The product of eddy diffusivity and concentra-
 tion driving force in each phase is implicitly obtained in two flow rate
 terms for each phase in the same manner described in the section on mass
-transfer coefficients. In this case, the distribution coefficients can
+transfer coefficients. 1In this case, the distribution coefficients can
 still be determined iteratively by the same technique used for equilib-
 rium stages even though the distribution coefficients are not expected
 
 to be the same.
-4.4 Uses Requiring Modifications
+4.4 VUses Requiring Modifications
 
 It is possible to consider flowsheets involving batch processes
 that might not be represented by either an equilibrium process or a rate
@@ -981,40 +1015,29 @@ Progr. Rep. Aug. 31, 1967, ORNL-4191, pp. 245-47.
 
 M. J. Bell and L. E. McNeese, Engineering Development Studies for
 
- 
-
-Molten~-Salt Breeder Reactor Processing No. 1, ORNL/TM-3053 (November
+Molten-Salt Breeder Reactor Processing No. 1, ORNL/TM-3053 (November
 
  
 
 1970), pp. 38-48.
 
 R. J. Kedl and A. Houtzeel, Development of a Model for Computing
-135
 
- 
-
-Xe Migration in the MSRE, ORNL-4069 (June 1967).
+135Xe Migration in the MSRE, ORNL-4069 (June 1967).
 
  
 
 H. F. Bauman et al., ROD: A Nuclear and Fuel-Cycle Analysis Code for
-
- 
-
 Circulating-Fuel Reactors, ORNL/TM-3359 (September 1971).
-
- 
 
 R. W. Schaftlein and T. W. F. Russell, "Two-Phase Reactor Design,"
 Ind. Eng. Chem. 60(5), 12-27 (1968).
-W. L. Carter, ORNL, personal communication, June 1972.
+
+W. L. Carter, ORNL, personal communication, June 1972,
 
 M. J. Bell, ORIGEN - The ORNL Isotope Generation and Depletion Code,
 
- 
-
-ORNL-4628 (May 1973).
+ORNL~4628 (May 1973).
 27
 
 APPENDIXES
@@ -1035,7 +1058,7 @@ Subroutine MATADOR
 
 MATADOR directs all the reactor calculations. It begins by reading
 the input defining the reactor and the variables that will provide an
-initial guess for process plant removal rates. Through several calls
+initial guess for process plant removal rates, Through several calls
 to GRAPHT, it sets up the coefficient matrix for nuclear transitions
 in the graphite. Whereas this matrix is stored separately from the
 corresponding matrix for transitions in the salt, the processing plant
@@ -1071,7 +1094,7 @@ estimate being made for only the first call to MATADOR. Solutions are
 then obtained for the noble gases and noble metals that are in contact
 with salt both inside and outside the reactor. Noble gases leaving the
 holdup region inside the reactor are sent to the region outside the
-reactor. The diagonal elements and the constant vectors are defined so
+reactor. The diagonal elements and the constant vecéors are defined so
 that the calculations provide the holdup in moles for noble gases and
 noble metals, and the flow rate into the salt in moles per second for
 all other materials. The calculation actually assumes that the returning
@@ -1090,16 +1113,16 @@ Several output parameters are calculated before calling KEE, which
 controls output; these are fission product poisoning per fissile absorp-
 tion, nuclide production rates, molar volume, uranium mole fraction, and
 breeding ratio. If the input variable KARD is nonzero, punched output
-is obtained. If KARD is positive, the concentrations are in a format for
-input to the CALDRON® code; if KARD is negative, the concentrations are
-in a format for input to ORIGEN. The ORIGEN input can also be prepared
+is obtained. 1If KARD is positive, the concentrations are in a format for
+input to the CALDR.ON6 code; if KARD is negative, the concentrations are
+in a format for input to ORIGEN.2 The ORIGEN input can also be prepared
 
 by the calling program so that a modified ORIGEN code may be used as a
 
 second job step.
 Subroutine AMATRX
 
-The main function of AMATRX is the construction of the matrix A,
+The main function of AMATIRX is the construction of the matrix A,
 which contains decay and capture rates for all transitions between iso-
 topes, except fission. The subroutine reads the data in the format
 described in the section on input and writes a table summarizing the
@@ -1130,7 +1153,7 @@ NONOs being stored in NON. In these variables only members of a given
 group produce nuclides in that group. Similarly, there is a set of
 vectors indicating the production rate of fission products from the
 fission of actinides. These variables are denoted by F, LOF, KF, and
-NOF,
+NOF.
 
 A vector NSTAR is constructed so that for any NUCL with atomic mass
 NMASS, atomic number NATNO, and isomeric state (0 or 1) NISOM:
@@ -1139,7 +1162,7 @@ NSTAR = NTEMP + NATNO*10
 
 for positron emitters, and
 
-NSTAR = NTEMP ~ NATNO*10
+NSTAR = NTEMP -~ NATNO#*10
 for all others, where
 NTEMP = NMASS*10000 + 1000 + NISOM.
 A vector I0 is constructed which contains the ordinal numbers of all
@@ -1154,7 +1177,7 @@ includes positron emitters with decreasing atomic numbers for a given
 atomic mass, followed by other nuclides with increasing atomic numbers.
 This sequence includes all nuclides before any of their decay daughters
 as long as all decays represent a loss of energy, mass, or reduction in
-E + Mc?, rather than a capture of some kind. This sequence is used
+E + MCZ, rather than a capture of some kind. This sequence is used
 later in the processing plant code as the order of calculation.
 
 The variables are dimensioned so that as many as 800 nuclides can
@@ -1162,24 +1185,18 @@ be included, of which as many as 100 may be actinides; in addition,
 there may be as many as 1500 production rates of nuclides from other
 nuclides by decay or neutron absorption. The nuclear library contains
 
-739 nuclides, 99 actinides, and 1466 production rate terms.
-Subroutine GRAPHT (DIS1, CAP1, DIS2,CAP2,COEFF,N,I,P2,VR,DEP,D1,P1,FLUX2)
+739 nuclides, 99 actinides, and 1466 production rate terms,
+Subroutine GRAPHT (DIS1, CAP1, DIS2,CAP2,COEF¥,N,I,P2,VR,DEP,D1,P1,FLUX2)
 
 The subroutine GRAPHT calculates rate coefficients for fission
-
 product deposition in graphite based on the diffusion model described
-
-in ref. 2, and the variable names are analogous: EN=n, EL=1, ENSQ=n’,
+in ref. 2, and the variable names are analogous: EN=n, EL=1, ENSQ=n2,
 etc. The calculations are made to determine FLUX2, which is returned
-
 to be inserted in a matrix G, and is analogous to the matrix A (described
 with AMATRX). This value represents the contribution to the concentra-
-tion of species i from diffusion into graphite of species J (A, 814° as
+tion of species i from diffusion into graphite of species j} (Ag gij’ as
 described earlier). The adjusted diagonal matrix element for the parent
-
-isotope (G,), the contribution to poisoning by both parent and daughter
-
-3
+isotope (Gj)’ the contribution to poisoning by both parent and daughter
 isotopes in the graphite, and the deposition rates of nonvolatile daugh-
 ters are also calculated.
 
@@ -1196,7 +1213,7 @@ Subroutine BESI(X,N,BI,IER)
 This is a library routine which computes the Bessel function, BI,
 of order N with argument X, where N and X are greater than or equal to
 
-zero. LER is used as an error indication.
+zero. IER is used as an error indication.
 
 IER = meaning
 
@@ -1206,7 +1223,7 @@ IER = meaning
 
 2 = X is negative
 
-3 = underflow, BI.LT.l1l.E-69,BI set to 0.0
+3 = underflow, BI.LT.1.E-69,BI set to 0.0
 4 = overflow, X.GT.170 where X.GT.N
 
 Only Bessel functions of orders 0 and 1 are required by GRAPHT.
@@ -1230,12 +1247,12 @@ to uranium and is returned to the reactor. A call to another entry point
 matrix elements, thus assuming that the link to the processing plant
 
 routines takes this into account.
-Subroutine GAUSS (XEQL,C,D,%*)
+Subroutine GAUSS (XEQL,C,D,*)
 
 GAUSS solves the matrix equation:
 
 A(XEQL) = C ,
-A N
+A "
 
 where A is the coefficient matrix, and reciprocals of the diagonal ele-
 ments are given by D. A nonstandard return is made if the system does
@@ -1247,14 +1264,14 @@ Subroutine KEE
 
 Subroutine KEE ensures that subroutine RESULT (described next) is
 called if this is the last call to MATADOR as indicated by the logical
-variable ILLOG. Subroutine KEE prints the number of calls to MATADOR
+variable ILLOG, Subroutine KEE prints the number of calls to MATADOR
 
 and a convergence message, and calls RESULT at specified intervals.
 Subroutine RESULT (XEQL)
 
 RESULT prints output tables for a given set of reactor concentra-
 tions (XEQL). It first calculates the number of moles of material in the
-stream returning to the reactor for use in the calculation of mole frac~
+stream returning to the reactor for use in the calculation of mole frac~-
 tion for that stream. It then initializes or calculates other important
 
 variables such as:
@@ -1263,7 +1280,7 @@ variables such as:
 FISSL = the mass of materials lost due to fission,
 
 FISSN = absorption rate by the five fissionable isotopes,
-FISSA = absorption rate by fissile isotopes,
+FISSA = agbsorption rate by fissile isotopes,
 
 DMOLAR = molar density,
 
@@ -1274,7 +1291,7 @@ in graphite.
 
 The program calculates the gamma heat rate in the salt, the absorp-
 tion rate in the salt normalized to absorptions per fission, the removal
-rate due to chemical processing, and the contribution to radioactivity
+rate due to chemical processing, and the contribution to radiocactivity
 in the salt for each of the three groups of nuclides (light elements,
 actinides, and fission products). A series of calls to subroutine SORT
 is used to identify the 25 most important materials in each category.
@@ -1307,7 +1324,7 @@ processing,
 
 SRATE = sum of the removal rate for each nuclide group,
 
-SHEAT = sum of the heat generation rates in each group, and
+SHEAT = sum of the heat genefation rates in each group, and
 
 SCAPT = sum of the absorption rates in each group.
 
@@ -1364,7 +1381,7 @@ included. The program then calls OUTO and stops.
 BLOCK data. A block data subroutine is used to initialize the
 100-element variable ELE to the element symbols, and the variable STA(1)
 
-and STA(2) to blank and "™M".
+and STA(2) to blank and "™".
 37
 
 Subroutine EQKN
@@ -1374,11 +1391,11 @@ the distribution coefficient matrix, EQK. The data are selected for
 characterizing a region by matching an input variable (NS) in the data
 with the input variable (NSTR) corresponding to the region. For region
 REGION(N), the distribution coefficient for the element with atomic
-number NZ is EQK((N-1)*100+NZ). For NS = 1 or NS = 2 the value of NSTR
+number NZ is EQK((N-1)*100+NZ). TFor NS = 1 or NS = 2 the value of NSTR
 is used to choose between two temperatures. If NS = NSTR(N), the calcu-
 lation assumes a temperature of 640°C; if NS+20 = NSTR(N), the calculation
 assumes a temperature of 550°C. Sufficient data is stored in variables
-TAE, AIE, AKE, and BKE to later allow a different calculation for these
+IAE, AIE, AKE, and BKE to later allow a different calculation for these
 
 distribution coefficients in VOLUME.
 Subroutine VOLUME (NLEFT)
@@ -1431,13 +1448,13 @@ simulating the oxide precipitation flowsheet that involved nonlinear-
 ities, nonequilibrium contacts, and batch operations.
 39
 
-Subroutine MATQD (A,X ,NR,NV,DET ,NA,NX)
+Subroutine MATQD (A,X,NR,NV,DET ,NA,NX)
 
 MATQD solves a system of linear algebraic equations in double
 precision, with coefficient matrix A and constant vector X, and returns
 with the solution vector in X. Any number, NV, of systems of equations
 with the same coefficient matrix may be solved by including NV constant
-vectors, each of which occupies the first NR position in consecutive
+vectors,each of which occupies the first NR position in consecutive
 segments in X of length NX; thus,
 
 A = the coefficient matrix, where the element in row I and
@@ -1478,7 +1495,7 @@ sion has been used to replace the library version in one other instance,
 and it achieved a solution in one-third the time required previously.
 Subroutine OUTO
 
-OUTO supplies input for the modified ORIGEN’ code used as a second
+OUTO supplies input for the modified ORIGEN7 code used as a second
 job step and prints all output tables that supply concentrations or heat
 generation rates. It requires the function NOAH, described previously,
 for producing alphameric names from nuclide identifications. It also
@@ -1492,20 +1509,17 @@ loss rates from the processing plant, where
 
 REG = list of region names,
 
-RA = list of first-phase names,
+RA = 1list of first-phase names,
 RB = list of second-phase names,
-XI. = first-phase loss rates,
+XL = first-phase loss rates,
 
 YL = second-phase loss rates, and
-NR = number of regioms.
+NR = number of regions.
 
 Miscellaneous Short Routines
 
 Subroutine SORT (X,LABEL,Y,NAME,NX,NY)
-
- 
-
-SORT makes one pass through the vector, Y, and inserts the values
+SORT makes one pass through the veCtor, Y, and inserts the values
 
 of Y and NAME in the vectors X and LABEL so that the X values are in
 41
@@ -1522,11 +1536,11 @@ ZERO zeroes the space between address A and B inclusive in units
 
 of N bytes.
 
-Subroutine HALF (A.I)
+Subroutine HALF(A.I)
 
  
 
-HALF computes the decay constant, A, in units of sec from the
+HALF computes the decay constant, A, in units of sec—l from the
 half-life A in units denoted by I, where I corresponds to IU in the
 
 nuclear library.
@@ -1536,7 +1550,7 @@ Function NOAH (NUCLI)
 This routine constructs a three-word alphameric symbol for an iso-
 tope from its six-digit identifying number, NUCLI. The three words
 consist of the symbol for the chemical element, the atomic weight, and
-either a blank or an "M" to designate a ground state or metastable state.
+either a blank or an '"™M" to designate a ground state or metastable state.
 
 These symbols are used only when printing output tables.
 42
@@ -1544,98 +1558,72 @@ These symbols are used only when printing output tables.
 APPENDIX B: INPUT
 
 The input description is arranged by subroutine names in the order
-
 in which they are called. The input description is further divided so
-
 that each type of input card can be identified. The argument list and
 
 the format are given for each read statement.
 
 Nuclear Library (AMATRX)
 
-A.
-
-B.
-
-NDT:
-
-card 1:
-
-card 2:
-
-card 3:
-
-(-110) used to determine format for nuclear library.
-
-80 character title; alphameric format
-
-ERR, NMO, NDAY, NYR, NGO
-
-FORMAT (F10. 5,412)
-
+A. NDT: (-I10) used to determine format for nuclear library.
+B. card 1: 80 character title; alphameric format
+card 2: ERR, NMO, NDAY, NYR, NGO
+FORMAT (F10.5,412)
 ERR = number below which constants (decay constants,
 etc.) will be assumed to be zero
-
 NMO, NDAY, NYR = date, month, day, year used as heading
-
 NGO -- no longer used.
-
-NSORS(I),I=1,5
-
-FORMAT (5I10)
-
+card 3: NSORS(I),I=1,5
+FORMAT (5110)
 The six-digit identifying numbers for the five fissionable
-
-233 235, 2325, 238 239%...
-
-materials U, , s U, and These must
-
-be in order, because they refer to colums of data on
-
+materials 233U, 235U, 232Th, 238U, and 239Pu. These must
+be in order, because they refer to columns of data on
 fission product yields.
-
-The six-digit identifying numbers are made up so that the highest
-
+The six~digit identifying numbers are made up so that the highest
 order digits give the atomic number, the next three digits give the atomic
-
 mass, and the lowest order digit is 0 for ground state and 1 for excited
 
-state.
-
-This is the same system used by the ORTGEN’ code. The next cards
+state. This is the same system used by the ORIGEN7 code. The next cards
 43
 
-describe the properties of each nuclide in the nuclear library. If the
+describe the properties of each nuclide in the nuclear library. 1Lf the
 previously read variable, NDT is nonzero, the library is read from unit
-7 in the formats given in ref. 7. Unit 7 has usually been a series of
+7 in the formats given in ref. 7. 7Unit 7 has usually been a series of
 
-disc files. For NDT=0 the library is read on unit 50 in the format and
+diéc files. For NDT=0 the library is read on unit 50 in the format and
 
 order given here.
 
 *
 Light Elements
 
-NUCL (I), DLAM,IU,FBT,FP,FPI,FT,FA,SIGTH,FNG1,FNA,FNP,RITH,FINA,FINP
+ 
+
+NUCL(I), DLAM,IU,FBI,FP,FPI,FT,FA,SIGTH,FNG1,FNA,FNP,RITH,FINA,FINP
 SIGMEV,FN2N1,FFNA,FFNP,Q,FG
-FORMAT (16,F5.3,I1,5F5.3,E5.2,3F3.3,E5.2,2F3.3,E5.2,3F3. 3,F4,3,F3,3,F6.3)
+FORMAT (16,F5.3,11,5F5.3,E5.2,3F3.3,E5.2,2F3.3,E5.2,3F3.3,F4,3,F3,3,F6.3)
 
 Ended by NUCL(I)=0
 
 Actinides
-NUCL (I) ,DLAM,IU,FBI,FP,FPI,FT,FA,SIGNA,RING,FNG1,SIGF,RIF,SIGFF,SIGN2N,
+NUCL(I) ,DLAM,IU,FBI,FP,FPI,FT,FA,SIGNA ,RING,FNG1,SIGF,RIF,SIGFF,SIGN2N,
 FN2N1,Q,FG,SIGN3N,FSF
-FORMAT (I6,F5.3,I1,5F3.3,2E5.2,F3.3,4E5.2,F3.3,F4.4,F3.3,2E5.2)
+FORMAT (16,F5.3,11,5F3.3,2E5.2,F3.3,4E5.2,F3.3,F4.4,F3.3,2E5.2)
 Ended by NUCL(I)=0
 
 SIGN3N, and FSF are not used.
 
-%*
+%
 Fission Products
-NUCL (I) ,DLAM, IU, FBI,FP,FPI,FT,SIGNG,RING,FING1,Y23,Y25,Y02,Y28,Y49,Q,FG
-FORMAT (16,F5.3,11,3X,4F3.3,2E5.2,F3.3,5E5.2,F4.3,F3.3)
+
+ 
+
+NUCL (1) ,DLAM, IU,FBI,¥P,FPI,FT,SIGNG,RING,FING1,Y23,Y25,Y02,Y28,Y49,Q,FG
+FORMAT (16,F5.3,1I1,3X,4F3.3,2E5.2,F3.3,5E5.2,F4.3,F3.3)
 
 Ended by NUCL(I)=0
+
+ 
 
 *
 These variable names are not the names of program variables but
@@ -1654,7 +1642,7 @@ FLUX, POWER, FLOW1l, THERM, RES, FAST, FPABS
 
 FORMAT (8F10.5)
 
-FLUX = nominal--flux, i sect
+FLUX = nominal--flux, c:mm2 sec-l
 
 POWER = power, MW(t)
 
@@ -1669,12 +1657,12 @@ FPABS = reference fission product absorption.
 
 EPS, ERR, MAX, KARD
 
-FORMAT (2F10.3,215)
+FORMAT (2F10.3,21I5)
 
 EPS = error criterion in Gauss-Seidel solution
 
 ERR = number less than which concentrations will be considered
-zero
+Zero
 
 MAX = maximum number of iterations allowed for solution
 
@@ -1686,16 +1674,16 @@ FORMAT (8E10. 3)
 
 AREA = graphite area, cm
 
-VOL = salt volume, cc
+VoL = salt volume, cc
 
 RADIUS = graphite rod radius, cm
 
-PORTY = graphite porosity, cc-void/cc
+PORTY = graphite porosity, ce-void/cc
 
 FIIM = mass transfer coefficient for krypton, cm/sec
 45
 
-diffusivity of krypton in pores, en’ /sec
+diffusivity of krypton in pores, cm2/sec
 
 DIFFY =
 
@@ -1705,9 +1693,9 @@ SOLBTY = solubility of krypton in fuel salt (mole/cc of liquid)/
 VRATIO = ratio of graphite volume to salt volume in core;
 
 if AREA=0 next card is type G.
-E. TIGAS, IDAU, IENT, I3, I3DEP, NEXT
+E. 1IGAS, IDAU, IENT, I3, I3DEP, NEXT
 
-FORMAT (4X,16,4X,16,15,4X,16,21I5)
+FORMAT (4X,16,4X,16,15,4X,16,215)
 
 IGAS = gas identifier
 IDAU = identification of daughter
@@ -1725,40 +1713,31 @@ NEXT = number used to control program
 < 0 read type F card followed by one of type E.
 The first set refers to daughters of krypton, the next set after the
 type F card refers to daughters of xenon.
-F. FILM,DIFFY,SOLBTY
-FORMAT (3E12. 5)
+F. TFILM,DIFFY,SOLBTY
+FORMAT (3E12.5)
 The variables are defined in the same way as those of card type D. After
 
 this card, the next card read is of type E.
 46
 
-INPUT(I),X(1),I=1,4
-FORMAT (4(I5,F10.3))
+G. INPUT(1),X(1),I=1,4
+FORMAT (4 (I5,F10.3))
+INPUT = six-digit identifier of nuclide
+X = composition in atom fraction or mole fraction.
+The materials fed to the reactor are 7Li, 9Be, 232Th, and 19F.
 
-INPUT
-
-six-digit identifier of nuclide
-
-X
-
-composition in atom fraction or mole fraction.
-
-9 232 19
-
-The materials fed to the reactor are Li, Be, Th, and “°F.
-
-The molar feed rate is FLOWl * X(I) in g-atom/sec.
+The molar feed raté is FLOW1 * X(I) in g-atom/sec.
 
 H.
 
-TIME (N),N=1,10
+TIME(N) ,N=1,10
 
-FORMAT (10E8.1)
+FORMAT (10E8. 1)
 
 TIME(N) = the removal time for group N of elements.
 NP(I),I=1,100
 
-FORMAT (40(T2))
+FORMAT (40(12))
 
 NP(I) = the group number for element with atomic number I.
 NZ(1),EFF(I),I=1,8
@@ -1773,40 +1752,40 @@ specified. As many cards as necessary may be used with input of EFFs,
 
 stopping when NZ=0 is encountered.
 
-K.
+Kl
 
 THETA = six values,
 FORMAT (8F10. 3)
-THETA(l) = holdup time of group 1 elements (noble gases) in the
+THETA(1) = holdup time of group 1 elements (noble gases) in the
 
 circulating gas bubbles.
 
 THETA(2) = holdup of group 2 elements (noble metals) deposited
-in the reactor core.
+in the reactor core,
 THETA(3) = holdup of group 3 elements (seminoble metals) deposited
 
-in the reactor core.
+in the reactor core,
 47
 
 THETA(4) = holdup of group 1 elements in contact with salt
 outside the flux of the reactor. The gas is assumed
 to be the effluent of gases from the reactor.
 
-THETA (5) ,THETA(6) = holdup time of group 2 and 3 elements,
+THETA(5) ,THETA(6) = holdup time of group 2 and 3 elements,
 respectively, in contact with salt outside the
-reactor.
+rTeactor.
 
 L. NTIME(I),PUNIT(I),I=1,10
 
-FORMAT (10(I4,A4))
+FORMAT (10 (I4,A4))
 
 NTIME(I) = the removal time of group I elements expressed in units of
 PUNIT(I); these are used only for printout purposes when going through
 MATADOR for the first time.
 
-M. Nz(I),EFF(1),I=1,8
+M. NZ(I),EFF(I),I=1,8
 
-FORMAT (8(13,F7.4))
+FORMAT(8(13,F7.4))
 
 The variables are dummy variables with no relation to the variables
 read as card type J. Here NZ is an atomic number as before, but EFF is
@@ -1821,9 +1800,9 @@ The main program primarily reads input describing the flowsheet and
 variables which control execution and output. The cards that follow are
 read from unit 2:
 
-A. 11,12,13,14,15,16,17,18,19,110,NWASTE,I12,113,114,I15
+A. 11,12,13,14,15,16,17,18,19,110,NWASTE,T12,113,I14,T15
 
-FORMAT (16I5)
+FORMAT (161I5)
 48
 
 Explanation of variables:
@@ -1832,21 +1811,21 @@ I1
 
 12
 
-13
+I3
 
 I4
 
 I5
 
-I6
+16
 
-I7
+17
 
 I8
 
-19
+I9
 
-110
+I10
 
 NWASTE
 
@@ -1858,7 +1837,7 @@ I14
 
 I15
 
-If I1.GT.0 flowsheet input concentrations and removal
+If 11.GT.0 flowsheet input concentrations and removal
 efficiencies are input from previous cases with I2.GT.O.
 If I2.GT.0 punch output to be read if I1.GT.O
 
@@ -1874,24 +1853,24 @@ input when I8.GT.O.
 
 Not needed
 
-If 18.GT.0 flowsheet information is read from cards
+If I8.GT.0 flowsheet information is read from cards
 punched earlier.
 
 No averaging is done on concentrations until I9 itera-
 tions are complete.
 
 If I10.GT.0 averaging is not done on concentrations
-between iterations.
+between iterationms.
 
 Number of waste streams
 
 If the number of iterations is less than this, nuclides
-are not excluded because they do not affect Ds values.
+are not excluded because they do not affect DLi values.
 I13 iterations are made at end in which nuclides do not
-affect bs values, and are not excluded.
+affect DLi values, and are not excluded.
 
 If I14.GT.0, the program supplies MATADOR with a
-derivative of reactor inlet concentration with respect
+derivative of reactor inlét concentration with respect
 to reactor outlet concentration,
 
 If I15.GT.0, the program starts output section after
@@ -1900,131 +1879,76 @@ I15 minutes of calculation.
 49
 
 B. EPS, ERR, MAX
-
-FORMAT (2F10.3, 15)
-
+FORMAT (2F10.3, 1I5)
 Explanation of variables:
-
-EPS
-
-ERR
-
-MAX
-
+EPS Convergence criterion divided by 10 (typical value).
+ERR Number below which concentrations are set to 0.0.
+MAX Not used.
 C. WIDX
-
-Convergence criterion divided by 10 (typical value).
-Number below which concentrations are set to 0.0.
-
-Not used.
-
 FORMAT (F10.3)
-
 WIDX = the weighting factor given to DXIN.
-
 D. NREG, NINX, NINY, NINP, NRATE, KRATE, JRATE
-
 FORMAT (1615)
-
 Explanation of variables:
+NREG Number of regions.
 
-NREG
+NINX Number of first-phase flowing streams.
 
-NINX
+NINY Number of second-phase flowing streams.
+NINP Number of feed streams in processing plant.
+NRATE Number of rate streams using a scale factor and a
 
-NINY
-
-NINP
-
-NRATE
-
-KRATE
-
-JRATE
-
-Number of regions.
-
-Number of first-phase flowing streams.
-
-Number of second-phase flowing streams.
-
-Number of feed streams in processing plant.
-
-Number of rate streams using a scale factor and a
 table number.
-
-Number of rate streams described by parameters of
-gas-liquid contact for gas bubbled into tank.
-
-Number of rate streams proportional to the first-
+KRATE Number of rate streams described by parameters of
+gas—~liquid contact for gas bubbled into tank.
+JRATE Number of rate streams proportional to the first-
 phase flow rate (these are fluorinators described by
-
 a percent removal mechanism).
-
 Many of these are used as limits for implied do-loops for input
 
 described below.
 50
 
 E. REGION(N), VOLX(N), VOLY(N), XLIB(N), NV(N), NSTR(N), IP(N), NC(N),
-
 REGA(N), REGB(N), EIN(N), N=1, NREG
-
 FORMAT (A8, 2X, 3E10.0, I2, I3, I2, Z3, A8, 2X, A8, E12.0)
-
 Each of these cards describes a region. Three are NREG cards.
-
 Explanation of variables:
 
-REGION
+REGION Name of region, 8 characters.
 
-VOLX
+VOLX Volume of the first phase, cc.
+VOLY Volume of the second phase, cc.
+XLIB Parameter for equilibrium (e.g., lithium distribution,
 
-VOLY
-
-XLIB
-
-NSTR
-
-IP
-
-Name of region, 8 characters.
-Volume of the first phase, cc.
-Volume of the second phase, cc.
-Parameter for equilibrium (e.g., lithium distribution,
 temperature). Number of column applicable in table
 of valences NV.LT.0 implies a correction is to be
 made to XLIB.
-Number indicating the type of equilibrium.
-Controls printout on the basis of binary representation.
+NSTR Number indicating the type of equilibrium.
+IP Controls printout on the basis of binary representation.
 IP=0 Printing includes both phases.
 IP=1 First phase information stored in left half
 of line.
 IP=2 Second phase information stored in left half
 of line.
-IP=3 Tirst phase information stored in right half
+IP=3 TFirst phase information stored in right half
 of line.
 IP=4 Second phase information stored in right half
-
 of line.
-
 Printout of a line occurs when a region has IP=0 or when two successive
-
-regions have IP#0.
-
-One of these should have a value of IP=l or 2, and
+regions have IP#0. One of these should have a value of IP=l or 2, and
 
 the other should have IP=3 or 4.
 51
 
 NC This variable has three hexadecimal digits. The
-first digit has a value from 0 to 3. Its binary
+first digit has a value from O to 3. TIts binary
 digits indicate the phases whose molar volumes must
 be iteratively recalculated. Its values are:
 
 0-00 Neither molar volume is to be recalculated.
 1-01 Second phase molar volume calculations only.
-2-10 First phase molar volume calculations only.
+2-10 TFirst phase molar volume calculations only.
 3-11 Both phases require molar volumes calculation.
 The next two hexadecimal digits are used to identify
 the first and second phases, respectively. Even when
@@ -2053,24 +1977,24 @@ COMP Feed rate of INPUT to RINTO, moles/sec.
 ICP ICP.GT.0 identifies streams included in calculation
 of second phase inlet equivalent density.
 G. NSET
-FORMAT (1615) (only one variable read).
+FORMAT (16I5) (only one variable read).
 NSET is the number of cards of type H is NSET.GT.O.
 H. RDEF(I), INDEF(I), DCOMP(I), I=1, NSET
-FORMAT (A8, 2X, I10, E12.0)
+FORMAT (A8, 2X, 110, E12.0)
 These cards list the places where certain concentrations are
-defined. They might be bismuth in a bismuth supply tank or "0.5
+defined. They might be bismuth in a bismuth supply tank or 0.5
 Li-Bi solution in a supply tank of that material.
 RDEF Region name, 8 characters.
 INDEF Numerical name of nuclide.
 DCOMP The concentration in moles/cc of nuclide INDEF in
 region RDEF.
 I. RXFROM(J), RXTO(J), XRATE(J), J=1, NINX
-FORMAT (A8, 2X, A8, El12.0)
+FORMAT (A8, 2X, A8, E12.0)
 RXFROM Region name, 8 characters.
 RXTO Region name, 8 characters.
-XRATE Flow rate of material of the first phase, cc/sec,
+XRATE TFlow rate of material of the first phase, cc/sec,
 from region RXFROM to region RXTO.
-J. RXFROM(J), RYTO(J), YRATE(J), J=1, NINY
+'J. RXFROM(J), RYTO(J), YRATE(J), J=1, NINY
 FORMAT (A8, 2X, A8, E12.0)
 Variable definitions are analogous to variables read as type I,
 except that flows are second-phase flow rates. The cards of types F, H,
@@ -2091,12 +2015,12 @@ Cards of type K, L, and M are read only if NWASTE # O.
 K. RWASTE(IW), IW=1, NWASTE
 FORMAT (10A8)
 RWASTE Names of destination of streams to be sent to
-ORIGEN.’
-L. FWASTE (IW), IW=1, NWASTE
+ORIGEN.7
+L. TFWASTE (IW), IW=1, NWASTE
 FORMAT (10F8.0)
 FWASTE Multiplying factor to be used for these streams.
 M. KWASTE (IW), IW=1, NWASTE
-FORMAT (1018)
+FORMAT (10I8)
 KWASTE Used by OUTO to make a distinction between elements
 in these streams.
 N. DET
@@ -2106,7 +2030,7 @@ in the input stream.
 0. Read only if I1.GT.O
 X10 (800 values)
 
-FORMAT (2044)
+FORMAT (204A4)
 54
 
 XI0 is the list of concentrations punched from previous programs.
@@ -2116,7 +2040,7 @@ card does not identify the card as an end-of-file or end-of-
 
 information indication.
 
-Next is read (if I1.GT.0):
+Next is read (if I1.GT.O):
 
 DXIN (800 values)
 
@@ -2124,7 +2048,7 @@ FORMAT (20A4)
 
 DXIN may be removal efficiencies or molar flow rates; their
 values are examined for indications of which one they represent,
-and the other is then calculated. This is not a fool-proof
+and the other 1s then calculated. This is not a fool-proof
 
 method of identification, however.
 
@@ -2138,7 +2062,7 @@ several variables determined from these. This is done to allow the use
 
 of the parameter values arrived at in previous runs and thus save recal-
 
-culation by iterations.
+culation by iterationms.
 
 P.
 
@@ -2146,18 +2070,19 @@ Read only if NRATE.GT.O
 
 RXNA(I), RXNB(I), SCFACT(I), NFORM(I), I=1, NRATE
 
-FORMAT [2(A8, 2X, A8, E12.0, IS, 5X)]
+FORMAT [2 (A8, 2X, A8, E12.0, I5, 5X)]
 
 Elements are assumed to go from the region RXNA to the region
 RXNB at a rate equal to the product of their concentration,
 the value of SCFACT, and the value listed in the rate table
 
 opposite the element symbol in column NFORM. If NFORM is
-55
+R.
 
-greater than 100, the table used is NFORM-100, but the table
+55
 
-values are changed to 1 except where the value is 0.0.
+greater than 100, the table used is NFORM—lOO, but the table
+values are changed to 1 except where the value is 0.0,
 
 There are JRATE cards of this type.
 
@@ -2165,65 +2090,42 @@ REGL, REGG, ITH, COMM
 
 FORMAT (A8, 2X, A8, 2X, I5, 5X, 25Al)
 
-REGL
+REGL Name of region at origin of the stream.
 
-REGG
-
-ITH
-
-COMM
-
-Name of region at origin of the stream.
-Name of region at destination of the stream.
-Column number of rate constant table.
-
-25-character comment to appear in output listing.
+REGG Name of region at destination of the stream.
+ITH Column number of rate constant table.
+COMM 25-character comment to appear in output listing.
 
 Streams of this type use a scale factor equal to the flow of
-
 material through REGL.
-
 There are KRATE cards of this type.
-
 REGL, REGG, AKL, AB, AS, XG, XL, ITD, ITH, ITC
-
-FORMAT (A8 ,2X, A8, 2X, 5F10.7, 213, I2)
+FORMAT (A8 ,2X, A8, 2X, 5F10.7, 2I3, I2)
 
 REGL, REGG, ITH are defined as above.
 
-AKL
-
-AS
-
-XG
-
-XL
-
-ITD
-
-ITC
-
-Overall liquid phase mass transfer coefficient,
+AKL Overall liquid phase mass transfer coefficient,
 cm/sec.
 
-Bubble area, em’.
+AB Bubble area, cmz.
 
-Surface area, en’.
+AS Surface area, cmz.
 
-Thickness of stagnant gas through which diffusion
+XG Thickness of stagnant gas through which diffusion
 occurs.
 
-Thickness of stagnant liquid through which diffusion
+XL Thickness of stagnant liquid through which diffusion
 occurs.
 
-Column number giving gas phase diffusivities.
-Variable controlling input. If ITC is not 0, the
+ITD Column number giving gas phase diffusivities.
+
+ITC Variable controlling input. If ITC is not 0, the
 
 next card will be an extension of this card and
 56
 
 will replace the value of the comment with the
-first 25 characters on the next card,
+first 25 characters on the next card.
 This type of card produces three rate streams which represent mass
 transfer to and from the gas at the bubbles and at the surface, and
 the transfer of nonvolatile nuclides from the gas to the liquid at the
@@ -2233,7 +2135,7 @@ FORMAT (20A4)
 FMT is in the form of a format instruction and is the heading
 printed at the top of the table of rate constant data read next.
 T. RDATA(I), I=1,800
-FORMAT (8X, 8E8.0)
+FORMAT (8X, 8ES8.0)
 
 RDATA Contains the data referred to by column number
 by variables ITH, ITD, and NFORM. The data should
@@ -2241,7 +2143,8 @@ be arranged on cards so that cards are in order of
 atomic number (100 cards) with the columns con-
 taining the numbers described previously. These
 can be diffusivities, Henry's law constants,
-PR/(1-PR) (where PR is percent removal), or any
+
+PR/ (1-PR) (where PR is percent removal), or any
 other constants which might vary with atomic
 number.
 
@@ -2258,29 +2161,29 @@ cards read contain:
 
 A. LZ, NS, NT, AN, A, B, ENAME
 
-FORMAT (13, 212, 8X, F2.0, 10X, E8.0, 2X, E8.0, 33X, A2)
+FORMAT (I3, 212, 8X, F2,0, 10X, E8.0, 2X, E8.0, 33X, A2)
 
-B. LZ2, NS2, REF
+B. Lz2, NS2, REF
 
-FORMAT (I3, I2, 75A1)
+FORMAT (13, I2, 75Al1)
 
 LZ atomic number
 
-fl
+i
 
 NS = number identifying the type of equilibrium corresponds
 
 to NSTR in the description of regions.
 
-NT = identifies the type of equation involved.
+NT = didentifies the type of equation involved.
 0 End of input, return
-1 log; ®) = (AN) log; XLIB + A+B/T (in ° K)
+1 1oglO(D) = (AN) log10 XLIB + A+B/T (in ° K)
 2 D=A
 3,4 log(P) = A/(273.2 + XLIB) + B
 D Distribution coefficient
-
 XLIB Constant read with region descriptions
 P Partial pressure
+
 AN, A, B = data
 ENAME = elemental symbol name for output of equilibrium
 LZ2, NS2 = not used
@@ -2299,12 +2202,14 @@ output tabulation, it is assumed that all cards specifying a particular
 type of equilibrium are together and that these are separated by title
 changes.
 
-The program prints the form of the equation in the output table.
+The program prints the form of the equation in the output table,
 The space allowed between constants on input cards may be used to type
 
 the equation that will be used.
 
 INPUT TO VOLUME
+
+ 
 
 All input to VOLUME is read from unit 2 and is used to make estimates
 of molar volumes and a table of valences.
@@ -2317,7 +2222,7 @@ to regions and identifies the phases present. The values
 identify the column numbers in VOLC.
 
 B. VOLC
-FORMAT (8X, 8ES8.0)
+FORMAT (8X, 8E8.0)
 Eight hundred values are read, corresponding to 8 values each
 (1 card) for the elements in increasing order of atomic number.
 
@@ -2328,7 +2233,7 @@ rows, which correspond to elements. VOLC contains the contri-
 bution of the elements to the molar volume of each of the phases.
 VAL
 
-FORMAT (8X, 8ES8,0)
+FORMAT (8X, 8E8,0)
 
 VAL has 800 values arranged similarly to VOLC. The values of
 VAL are valences for use in contactors, with columns being
@@ -2417,7 +2322,7 @@ hundredths of a second is printed at various points in the calculation.
 When the time limit or convergence criterion is met, another call
 is made to RESULT to obtain output summarizing the reactor calculations.
 A partial listing of the flowsheet description is made which reflects
-the new flow rates used. A table, whose heading gives the half-life
+the new flow rates used. A table, whose heading gives the half-1life
 and removal time of the nuclide, is included for each nuclide in the
 library. The table lists the concentration (moles/cc), the inventory
 (in moles and in curies), and the total flow rate (in moles/day) of the
@@ -2454,9 +2359,12 @@ which output was obtained. The reactor concentrations and processing
 plant removal times can also be used to eliminate many of the iterations
 
 required when a flowsheet with similar performance is used.
+
 Qutput to be Used by ORIGEN
 
-A copy of ORIGEN’ was obtained, and modifications were made to allow
+ 
+
+A copy of OR.IGEN7 was obtained, and modifications were made to allow
 the printing of only those tables specified by input variables, to allow
 input formats to be used which require flow rates in a form convenient
 for output by the processing plant code, and to allow input to be read
@@ -2467,8 +2375,8 @@ In all programs used to date, this output was written on a disc file
 read by ORIGEN in a second job step.
 
 The first streams included are specified by the input variables
-NWASTE, RWASTE, FWASTE, and KWASTE, For output stream IW (KNWASTE), the
-variable RWASTE (IW) gives the name of the destination of all streams that
+NWASTE, RWASTE, FWASTE, and KWASTE. TFor output stream IW (SNWASTE), the
+variable RWASTE(IW) gives the name of the destination of all streams that
 
 are included. Streams that are discarded may be sent to a nonexistent
 64
@@ -2483,14 +2391,14 @@ KWASTE*EQ*0 streams from either phase are considered,
 KWASTE*GT*0 only second-phase streams are considered.
 The molar flows of streams meeting these requirements are added and
 multiplied by ABS[FWASTE(IW)] before being sent to ORIGEN and included
-in the total. For the special case of KWASTE(IW)°NE:0, and FWASTE (IW)
+in the total. TFor the special case of KWASTE(IW)'NE:0, and FWASTE(IW)
 between -0.001 and 0.0, the value of FWASTE(IW) is 0.001 when considering
 isotopes of neptunium. Streams are then output which represent 5 liters
 of salt sticking to the graphite divided by the number of days in 4 years,
 these represent daily discard rates of noble metals from the reactor core,
 noble gases from the salt drain tank, and noble metals from outside the
 reactor core. All of these, except the salt sticking to the graphite,
-are added to the flow output streams with FWASTE(IW):GT:0; the total is
+are added to the flow output streams with FWASTE(IW)-GT-0; the total is
 output to represent total daily waste other than graphite removal.
 Finally, the daily rate of deposition of materials on the graphite is
 
@@ -2507,7 +2415,7 @@ output as a stream that ORIGEN will assume is irradiated for 4 years.
 65
 
 ORNL/TM-4210
-Dist. Category UC-76
+Dist. Category UC~76
 
 INTERNAL DISTRIBUTION
 
@@ -2515,13 +2423,12 @@ MSRP Director's Office
 C. E. Bamberger
 Bender
 
-E. Brooksbank
+. Brooksbank
+Brown, Jr.
 
-H. Brown, Jr.
+. Burch
 
-D. Burch
-
-L. Carter
+Carter
 Cochran, Jr.
 Counce
 
@@ -2558,25 +2465,22 @@ Kerr
 
 Lenhard, ERDA-ORO
 
-.
+ommM
 
-MEEEEomE
-o
+*
 
-Gm mL
+CEPOOSLEEARRAPNYALANANE IR0 RR
 
-PRON Sp REP EAR HRN FC RR
-
-CEPOOSupmRRRrCD
+POAPrEPppRRAPERNREARRORNNNERNRD S
 
 48.
-49.
+49,
 50.
 51.
 52.
 53.
 54.
-55,
+55.
 56.
 57.
 58.
@@ -2598,38 +2502,35 @@ CEPOOSupmRRRrCD
 74.
 75.
 76-77.
-
 78.
-
 79-81.
 82.
 
 . MacPherson, UT
 
 . MacPherson
-
-. Malinauskas
+Malinauskas
 
 . Matthews, ERDA-ORO
-. Mays
+Mays
 
-. McCoy
+McCoy
 
-. Pickel
+Pickel
 
-Postma
+ostma
 
-W. Rosenthal
+. Rosenthal
 
-C. Savage
+Savage
 
-D. Scott
+Scott
 
-T. Shannon
+Shannon
 
-J. Skinner
+Skinner
 
-J. Smith
+. Smith
 
 W. Snider
 
@@ -2662,13 +2563,15 @@ Document Reference Section
 Laboratory Records (3)
 Laboratory Records (LRD-RC)
 
-ZT EHHEYEHO
+*
 
 -
 
-RESRUP LH LPURPLARLOEREAEOOPRPE
+GouHUOUOERZWwE S YR
 
-PROARENEAED
+WEORPPRUPPERPEARNOEERRADOOPTE
+
+PROEEENARNFO
 88.
 
 89.
@@ -2679,12 +2582,15 @@ PROARENEAED
 
 CONSULTANTS AND SUBCONTRACTORS
 
-83. J.
-84. C.
-85. E.
-86. W.
-87. R.
-EXTERNAL
+83. J. C. Frye
+
+84. C. H. Ice
+
+85. E. A. Mason
+86. W. K. Davis
+87. R. B. Richards
+
+EXTERNAL DISTRIBUTION
 
 Research and Technical Support Division, ERDA, Oak Ridge
 Operations Office, P. 0. Box E, Oak Ridge, Tenn. 37830
@@ -2692,22 +2598,7 @@ Director, Reactor Division, ERDA, Oak Ridge Operations
 Office, P. 0. Box E, Oak Ridge, Tenn. 37830
 
 Director, ERDA Division of Reactor Research and Development,
-
 Washington, D.C. 20545
 
 For distribution as shown in TID-4500 under UC-76, Molten
-
 Salt Reactor Technology
-
-Frye
-
-Ice
-Mason
-Davis
-Richards
-
-. -
-
-oR m0
-
-DISTRIBUTION

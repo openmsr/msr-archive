@@ -1,74 +1,72 @@
  
 
-Y |
+i |
 ~ OAK RIDGE NATIONAL LABORATORY
 operated by
-2 UNION CARBIDE CORPORATION EB
-NUCLEAR DIVISION
+: UNION CARBIDE CORPORATION m
+! NUCLEAR DIVISION
 . for the
 
 U.S. ATOMIC ENERGY COMMISSION
-ORNL- TM - 3007
+ORNL- TM~- 3007
 
  
 
-- -
+-5 -
 
 AN EXTENDED HYDRAULIC MODEL OF THE MSRE CIRCULATING FUEL SYSTEM
 (Thesis)
 
 W. C. Ulrich
 
-ur Submitted to the Graduate Council of the University of Tennessee in
+“wr Submitted to the Graduate Council of the University of Tennessee in
 partial fulfillment for the degree of Master of Science.
 
 DISTRIBUTION OF THIS DOCUMENT IS UNLIMITED
  
 
-wm ee ce — LEGAL NOTICE vom oom mm mn + oe
+e e e e LEGAL NOTICE - e m e s e e
 
 This report was prepared as an account of Government sponsored work. Neither the United States,
 
 nor the Commission, nor any person acting on behalf of the Commission:
 
-A. Mokes any warranty or representation, expressed or implied, with respect to the accuracy,
-completeness, or usefulness of the information contained in this report, or that the use of
+A, Moakes any warranty or representation, expressed or implied, with respect to the accuracy,
+completenass, or usefulness of the information contained in this report, or that the use of
 any information, apparatus, method, or process disclosed in this report may not infringe
 privately owned rights; or
 
 B. Assumes any liabilities with respect to the use of, or for damages resulting from the use of
-any information, apparatus, method, or process disclosed in this report.
+any information, apporotus, method, or process disclosed in this report. :
 
-As used in the above, '‘person acting on behalf of the Commission’ includes any employee or
+As used in the obove, '“person acting on behalf of the Commission® includes any employee or
 
-contractor of the Commission, or employee of such contractor, to the extent that such employee
+contractor of the Commission, or employee of such coentractor, to the extent that such employee
 
-or contractor of the Commission, or employee of such contractor prepares, disseminates, or
+or controctor of the Commission, or employee of such contractor prepares, disseminates, or
 provides access to, any information pursuant to his employment or contract with the Commission,
 
-or his employment with such contractor.
+or his employment with such contracter,
 
  
-LEGAL NOTICE ——
+LEGAL NOTICE———
 
-This report was prepared as an account of Government sponsored work. Neither the United
-States, nor the Commission, nor any person acting on behalf of the Commission:
+This report was prepared as an account of Government sponsored work. Nelther the United
+States, nor the Commission, nor any person acting on behalf of the Comtmisaion:
 
-A. Makes any warranty or representation, expressed or implied, with respect to the accu~
+A. Makes any warranty or representation, expressed or implied, with respect to the accu-
 racy, completeness, or usefulness of the information contained in this report, or that the use
 of any information, apparatus, method, or process disclosed in this report may not infringe
 privately owned rights; or
 
-B. Assumes any liabilities with respect to the use of, or for damages resulting from the
-use of any information, apparatus, method, or process disclosed in this report.
+B. Assumes any llabilities with respect to the use of, or for damages resulting from the
+use of any information, apparatus, method, or process disclosed in this report,
 
-As used in the above, ‘‘person acting on behalf of the Commission” Includes any em-
+Asp used in the above, '‘person acting on behall of the Commisaion® Includes any em-
 ployee or contractor of the Commission, or employee of such contractor, to the extent that
-
-such or c of the ( or of such prepares, ORNL-TM- 3007
-disseminates, or provides access to, any information pursuant to his employment or contract
-
-with the Commission, or his employment with such contractor.
+such employee or contractor of the ( or employee of such tractor prepares, ORNL_TM_ 3007
+disseminates, or provides acceas to, any information pursnant to his employment or coantract
+with the Commigesion, or his employment with such contractor.
 
  
 
@@ -78,9 +76,7 @@ with the Commission, or his employment with such contractor.
 
  
 
- 
-
-Contract No. W-TLO5-eng-26
+Contract No. W-TLOS-eng-26
 
 REACTOR DIVISION
 
@@ -93,28 +89,29 @@ partial fulfillment for the degree of Master of Science.
 
 JUNE 1970
 
-OAK RIDGE NATIONAL LABORATORY
+OAK RIDGE NATIONAL LABCRATORY
 Oak Ridge, Tennessee
 operated by
 UNION CARBIDE CORPORATION
 for the
 U. 5. ATOMIC ENERGY COMMISSION
 
-PISTRIBUTICH OF THIS DOCUMENT 15 SNLLAITED
-re
-2
+ver e TS DOCUMENT 15 UNLLIMITES
+BISTRIBUTIOH OF TI5 DOCUMENT 15 URLLIALED
+(3§
+5
 ACKNOWLEDGEMENTS
 
 The author is indebted to Dr. J. C. Robinson of the University of
-Tennessee for the overall guidance he provided on this work, The teaching
+Tennessee for the overall guidance he provided on this work. The teaching
 skill, patience, and help he offered at critical periods is greatly
-appreciated.
+appreciated,
 
-Thanks are due also to Dr, J. E. Mott of the University of Tennessee
+Thanks are due also to Dr, J, E, Mott of the University of Tennessee
 for several valuable suggestions which he made during the development of
-the hydraulic model.
+the hydraulic model,
 
-The assistance of the management of Oak Ridge National Laboratory
+The assistance of the management of Oak Ridge National Laboratory*
 in granting the author the necessary leave of absence to pursue his studies,
 and in furnishing the use of computer facilities, graphic arts, and repro-
 duction services in connection with the publication of this thesis is
@@ -138,7 +135,7 @@ for her, Without it, none of this would have been possible.
 Operated for the United States Atomic Energy Commission by Union
 Carbide Corporation.
 
-ili
+iii
 ABSTRACT
 
 The hydraulic portion of a combined hydraulic-neutronic mathe-
@@ -149,7 +146,7 @@ to the fuel pump and helium cover-gas system.
 
 The extended hydraulic model was combined with the original neu-
 tronic model and programmed for computations to be made by a high-speed
-digital computer.
+digital computer,
 
 By comparing the computed results with experimental data, it was
 concluded that pressure perturbations introduced by the fuel pump were
@@ -157,10 +154,10 @@ the main source of the naturally occurring neutron flux fluctuations in
 the frequency range of one to a few cycles per second.
 
 It was also noted that the amplitude of the neutron flux-to-
-pressure frequency-response function was directly proportional to the
+pressure frequency-response function was directly propcrtional to the
 pressure in the fuel-pump bowl; however, further work will be required
 before completely satisfactory results are obtained from the extended
-model. Recommendations are proposed which should prove useful in future
+model, Recommendstions are proposed which should prove useful in future
 
 modeling of similar hydraulic systems.
 
@@ -168,49 +165,54 @@ iv
 TABLE OF CONTENTS
 
 CHAPTER PAGE
-INTRODUCTION & 4 vo 4 o o o o o os o o os o o os os o os so o o os o oo 1
-1. DESCRIPTION OF THE OPEN-LOOP MODEL +. +. 4 ¢ 4 « o o o « o o L
-2. DESCRIPTION OF THE EXTENDED MODEL + + « + « + & & o os os o o 9
+INTRODUCTION & v 4 & & o o o o o o o o o s o s o o s o« o o o o o« o 1
+1., DESCRIPTION OF THE OPEN-IOOP MODEL . & 4 4 o o o o o s o o« L
+2. DESCRIPTION OF THE EXTENDED MODEL & v & & « & o o o o o o o o 9
 Physical Characteristics of the Fuel Pump and
-Fuel-Pump BOWL . . © uv 4 ¢ ¢ vo 4 so eo o o oo o oo o a 9
+Fuel=Pump BOWL . . . v &« v ¢« ¢ o o o o o o o o o o s « o 9
 Assumptions Made in the Development of the Model . . . . . 11
 Procedures Used in Deriving the Equations for the Model . . 14
 3. RESULTS OF CALCULATIONS MADE WITH THE EXTENDED MODEL
-COMPARED TO EXPERIMENTAL DATA . . +. + 4 v 4 oo oa oo o o « = 30
-L, CONCLUSIONS AND RECOMMENDATIONS + + + vo + « o « o oo oo « 37
-LIST OF REFERENCES . . & 4 & vv tc vs 4 0 oa so o os « so o os o o oo 41
+COMPARED TO EXPERIMENTAL DATA . . & ¢ ¢ 4« o « o o & o o + & 30
+L., CONCIUSIONS AND RECOMMENDATIONS o & v & ¢ « « o « o o o o o« « 37T
+LIST OF REFERENCES . & v 4 & 4 ¢ 4 « o o o o o o o « o o« s o o o o H1
 
-APPENDIX s e eo ss 0 . . » . ¢ o . e eo 8 ee oo ¢ oo ss 2 s&s oe o . . . 43
+APPENDIX - . . -* * * * * 2 * * - . . - . . * . . . . - - - - . . . uB
 LIST OF FIGURES
 
-FIGURE PAGE
+FIGURE
 
-1. Model Used to Approximate the Molten Salt Reactor
+l.
 
-no
-
-Experiment Fuel Salt TOOP +o + +o « « ¢ + oo « « + oa oo o »
-2. Extended Hydraulic Model of the Molten Salt Reactor
-
-Experiment Fuel Salt LOOP + . 4 « « o o o © o o o ¢ o o 3
-3. Molten Salt Reactor Experiment Fuel Pump and
-
-FTuel-Pump BOWL. + « 4 4 « o o o o o o o o 5s os os os oo oa « » 10
-L, Hydraulic Performance of the Molten Salt Reactor
-
-Experiment Fuel PUmP . « o « o « « « « o o so o os o os o 12
-5. Square of the Modulus of the Pressure in the Molten Salt
-
+Model Used to Approximate the Molten Salt Reactor
+Experiment Fuel Salt TloOP « v ¢ o + o + & o o &+ o o o o o
+Extended Hydraulic Model of the Molten Salt Reactor
+Experiment Fuel Sall LoOP ¢ v ¢ ¢ o o o o o o o o o o
+Molten Salt Reactor Experiment Fuel Pump and
+Fuel-Pump BOoWl., . . o & ¢ ¢ o o o o ¢ o o o o o o s a o o
+Hydraulic Performance of the Molten Salt Reactor
+Experiment Fuel PumpP . ¢ o ¢ ¢ ¢ o« o &+ o o s o o o s+ o
+Square of the Modulus of the Pressure in the Molten Salt
 Reactor Experiment Fuel-Pump Bowl; Case 1: F = 1.0,
+AP14 = 0.0, AP1s = 0.0; Case 2: APja = 1.0, AP35 = 0.0,
+= 0.0 o o o o o o o s o o o ¢ o o a o o o o o s s o o
+Modulus of the Neutron Flux-to-Pressure Irequency-Response
 
-APi4 = 0.0, AP1s = 0.0; Case 2: APj;4 = 1.0, AP1s = 0.0,
-
-FF = 0.0 o ¢ 0 oo oo a a o o 0 0 so a « a oo o 8 oo oo 33
-Cc. Modulus of the Neutron Flux-to-Pressure Frequency-Response
-
-Function for the Molten Salt Reactor Experiment . . . . . 36
+Function for the Molten Salt Reactor Experiment e s o o o
 
 vi
+
+PAGE
+
+PO
+
+10
+
+12
+
+33
+
+36
 Symbol
 
 LIST OF SYMBOLS
@@ -219,7 +221,7 @@ Description
 area
 orifice coefficient for fuel salt
 orifice coefficient for gas
-concentration of ith group of delayed neutron precursors
+concentration of ith'group of delayed neutron precursors
 
 conversion constant from fission rate to the desired
 units for power density
@@ -264,7 +266,7 @@ heated perimeter
 wetted perimeter
 pressure
 heat flux
-fuel pump volumetric flow rate
+fuel pump veoclumetric flow rate
 power density
 universal gas constant
 Iaplace-transformed time variable
@@ -274,7 +276,7 @@ velocity)
 
 time variable
 
-absolute temperature
+absclute temperature
 
 fuel salt temperature
 
@@ -290,7 +292,7 @@ volume of fuel salt
 volume of gas
 
 velocity of the fuel salt
-velocity of the gas
+veloclity of the gas
 
 velocity of the neutrons (one group)
 Symbol
@@ -310,7 +312,7 @@ fraction of the "unit cell" power density generated in
 the fuel salt
 
 deviation about the mean, incremental quantity, or per-
-turbed quantity
+turbed guantity
 
 decay constant for the ith group of delayed neutron
 precursors
@@ -325,17 +327,17 @@ density of the moderator
 absolute value of the slope of the fuel pump head —
 capacity curve at the normal volumetric flow rate of the pump
 
-macroscopic neutron absorption cross section
+macroscoplic neutron absorption cross section
 macroscopic neutron fission cross section
 total wall shear stress due to friction
 neutron flux
 
 fuel pump bowl volume
 
-the Laplacian, or differential, operator
+the Laplaclan, or differential, operator
 
 average
-INTRODUCTION
+INTROTDUCTION
 
 An analytical model for determining the void fraction of helium
 circulating in the Molten Salt Reactor Experiment (MSRE) fuel salt loop
@@ -343,11 +345,11 @@ by relating neutron flux to pressure using frequency response techniques
 was formulated by Robinson and Fry.! The hydraulic portion of this com-
 bined neutronic-hydraulic analytical model was not complete, however, in
 that it did not contain a specific representation of the fuel pump and
-fuel-pump bowl. (See Fig. 1.) Omission of these two items resulted in
-an open-locp hydraulic system which was closed by applying boundary con-
-ditions? which approximated their effects on the system,
+fuel-pump bowl. (See Fig, 1.) Omission of these two items resulted in
+an open=-loop hydraulic system which was closed by applying boundary con-
+ditions® which approximated their effects on the system,
 
-The scope or purpose of the work described below includes (1) ex-
+The scope or purpose of the work described below includes (l) ex-
 tending the hydraulic portion of the original model by explicitly in-
 cluding the fuel pump and fuel-pump bowl to close the loop (see Fig. 2),
 (2) combining the extended hydraulic model with Robinson and Fry's original
@@ -356,25 +358,35 @@ pressure, and (3) attempting to validate the mathematical models by com-
 paring results obtained from experimental measurements with predictions
 
 made by the two models,
-ORNL—DOWG 68-8417
+ORNL—DWG 68 -8417
 
-OUTLET
-
- 
-
-INLET
+OQUTLET
 
  
 
-J\
+INLET T
 
-Ly UPPER PLENUM Lg
+ 
+
+A !
+
+L, UPPER PLENUM Lg
 
  
 
  
 
-be es — — ——— ————,—— a —_—— —— — =]
+ 
+
+ 
+
+el
+
+ 
+
+. — . — e —————— e dma m——— e
+
+ 
 
  
 
@@ -395,8 +407,10 @@ REGION
 
  
 
-¥
-tes / LOWER PLENUM XU
+ 
+
+T
+#Ls L/ LOWER PLENUM \J
 
 FIGURE 1. Model Used to Approximate the Molten Salt Reactor
 Experiment Fuel Salt Loop
@@ -404,7 +418,7 @@ Experiment Fuel Salt Loop
  
 ORNL-DWG 70-1376
 
-He (9) ® he
+He (9) 0 e
 
  
      
@@ -416,21 +430,18 @@ BOWL
 
 13
 
-  
     
 
 FUEL PUMP
 
-Te
+G
 
-  
+     
 
-®@
+@
 
   
    
-
-  
 
   
 
@@ -441,26 +452,28 @@ UPPER PLENUM
    
 
  
+
+ 
  
 
 CHANNELED
 REGION
 
-  
    
 
 LOWER PLENUM
 
-FIGURE 2. Extended Hydraulic Model of the Molten Salt Reactor
+  
 
+FIGURE 2. Extended Hydraulic Model of the Molten Salt Reactor
 Experiment Fuel Salt Loop
 CHAPTER 1
 
-DESCRIPTION OF THE OPEN-LOOP MODEL”
+DESCRIPTION OF THE OPEN-LOOP MODEL™
 
-The technique for determining the void fraction in the MSRE
+The technique for determining the wvoid fraction in the MSRE
 circulating fuel salt consists of analyzing fluctuations in the neutron
-flux signal caused by induced pressure fluctuations in the fuel-pump bowl.
+flux signal caused by induced pressure fluctuations in the fuel-pump bowl,
 In the development of the analytical model, the compressibility of the
 entrained gas was postulated as the mechanism having the greatest
 effect on that reactivity induced by pressure perturbations. The primary
@@ -469,49 +482,48 @@ of the mass of the gas, of mass of the fuel salt, of momentum, of energy,
 
 of neutrons, and of delayed neutron precursors. In particular, with the
 
-assumption of one-dimensional flow, the governing equations are:*
+assumption of one-dimensicnal flow, the governing egquations are:?
 Equation of state for the gas,
-o. = P/RT. (1)
+o = P/RT, (1)
 g
 Conservation of mass for the gas,
-9 2
-ST (02) +35 (070) = O. (2)
+o 2
+ST (00 + 35 (o 70) = o (2)
 Conservation of mass for the fuel salt,
-$5 Teed =) + 2 [ogVp(1 = 0] = © (3)
-dt Pr dz tPr'f :
+5 Toe(l - Q)] + 5 [opVp(i - @] = O (3)
+ot LPr 9z Pf'f '
 Conservation of momentum for the gas-salt mixture,
 
-2 2
-St [egVe(l - 0) + p70] + 57 [oeVa(1 - @) + 0 V0] =
+3
+3t legVe(l ~a) + oV 0] + 7?; [ogVE(1 = @) + p Vi) =
 
-jo]
+@
 
-oP Ww
+oP _ W
+"8 % T Wwd [l - @)+ pale.
 
-“83 Twa ~ [ppl a) +00].
-
-The assumed relationship between Va and Ve is
+The assumed relationship between Vf and Vg is
 
  
 
 Conservation of energy in the salt-gas mixture,
 
-Sd } 9 -
-= [opu, (1- a) + 04u0] +37 [ogVehe (1- a) + pV 0,0]
+<
+St [quf (l - a) + Dguga] + Dz f f £ (l @) + ngghgoc]
 
 ap
-h vor
-a Te
+h on
+A TR
 
 Conservation of energy in the graphite moderator,
 
-07,
+55IM
 
-on Cg = (mp) Eg TH
+o Oy <2 = (- 9) Wiy M
 
  
 
-(4)
+()
 
 (5)
 
@@ -520,87 +532,84 @@ on Cg = (mp) Eg TH
 (7)
 
 (8)
-Coulomb's law of cooling:
+Coulomb's law of ccoling:
 
-QQ
-11
+Q2
+{1
 
-h(T_ - T.). (9)
+h(TW ~ Tf). (9)
+
 Power density,
-= C_Z_.¢ . (10)
+= C I ¢ . (10)
 
 Conservation of neutrons (one-group diffusion model),
 
-6
+&
 
-yl X = V-DV¢ + [v(1 - B)Z -Z Jo - A.C (11)
-n ot rr Tal Ly tii
+V-l'@g = V-DVo + [v(l - B)Z -z J¢ +y %, C (]_1)
+n ot f a Lo MYy
 1=1
 Precursor balance equations,
 
-£6 - A.C. - == (VC.) (12)
+ic—i-— Zcb-?xC“"‘é'“(VC) (12)
 
-t © Piver “i Jez i)
+t = Piver i¥1 T Jz i)
 
-for i=1,2, ....6.
+fori=1,2, . . . . 6.
 
 Since the interest is in small deviations about steady state, it
 was assumed that linearized representation of the governing equations (1)
 through (12) would adequately describe the system. It was further assumed
 that velocity fluctuations would not significantly affect the precursor
 balance, and that the fluctuations in the density of the gas are propor-
-tional to fluctuations in the pressure. This latter assumption is based
-on the linearized version of Eq. (1), i.e.
+tional to fluctuations in the pressure., This latter assumption is based
+on the linearized version of Eq. (1}, i.e.
 
-Np =
+bo, = o, (BT (13)
 
-1
-2 Og0 (13)
-
-Pp T
-0 0
-
-The last term of Eq. (13) was dropped because of the larger energy input
+The last term of Egq. (13) was dropped because of the larger energy input
 necessary to change the temperature compared to that required to change
 
 the pressure.
 With the assumptions set forth above, the linearized equations
 generated from Egs. (1) through (6) can be solved independently of those
-obtained from Egs., (7) through (12). The former set of equations is re-
+obtained from Egs, (7) through (12). The former set of equations is re-
 ferred to as the hydraulic model and the latter set as the neutronic model,
 
-The dependent variables in Egs, (1) through (6) are Ves Vy a, Pg?
-P, and S, This set can be reduced to a set of three coupled differential
+The dependent variables in Egs. (1) through (6) are Vs Vg, Py
+P, and S. This set can be reduced to a set of three coupled differential
 equations with three dependent variables in their linearized version.
 
-The dependent variables retained in these studies were AV, Ao, and AP.
+The dependent variables retained in these studies were ANf, N, and AP.
 
 Therefore, the equations defining the hydraulic model were transformed to
 
 the frequency domain and written as
-A(z,s) dls) - B(z,s) X(z,8) = 0, (14)
+
+dX{z,s
+A(z,s) ——éz*"l - B(z,s) X(z,s8) = 0, (1k)
 where X(z,s) is the column matrix
+AVf(Z) S)
 
-AV (2,5)
-X(z,s) = |XX (z,8) (15)
+X(z,s) = |2a(z,s) (15)
 
-AP (2,5)
+AP (z,8)
 
 and A(z,s) and B(z,s) are 3 x 3 square matrices.
 
 The solution to Eq. (1k) is
 
-X( z + Az,8) = exp[Q(s) Az). X(z,s) , (16)
+X( z + Az,s) = exp[Q(s) Amﬂix(z,s) , ' (16)
 where
-2+A7
-Ww) = 5] alte) a (27)
-and Q(z’,s) = A 1(z,s) B(z,s) .
+Z2+A\7
+) = 5 et @, (27)
+and Q(z’,8) = A"1(z,5) B(z,8) .
 
-The matrix exp[Q(s) Az] can be evaluated using matrix exponential
+The matrix expﬁ@(s) Az can be evaluated using matrix exponential
 techniques similar to those described in Reference 6. Before the solution
 can be completed, the boundary conditions appropriate to the system must
 
-be specified.
+be specified,
 To assign boundary conditions, a physical description (model) of
 the actual system must be considered. The model chosen to represent the
 more complex actual system is presented in Fig. 1, page 2. In particular,
@@ -610,11 +619,11 @@ six regions were chosen:
 
 comer, Lj:
 
-2. the downcomer, Lg;
+2., the downcomer, Lg;
 
-3. ‘the lower plenum, Lax;
+3. the lower plenum, Lz;
 
-4, a large number of identical parallel fuel channels’, La:
+L., a large number of identical parallel fuel channels*, Lg:
 
 5. the upper plenum, Lg: and
 
@@ -623,28 +632,28 @@ comer, Lj:
 The, perhaps, significant features left out of the physical model
 are the heat exchanger and details of the pump bowl. The omission of the
 heat exchanger will certainly restrict the lower frequency of applicability
-of the neutronic model, but it is believed that this would not affect the
-hydraulic model. The effects of the pump bowl on the system were approxi-
+of the neutronic model, but 1t is believed that this would not affect the
+hydraulic model, The effects of the pump bowl on the system were approxi-
 mated by the boundary conditions between regions 1 and 6.
 
 The matrix represented by the exponential term of Eq. (16) was gene-
-rated for each region. Then, continuity equations were applied between
+rated for each region., Then, continuity equations were applied between
 each region, along with the pressure fluctuations inserted at the pump bowl,
 to permit the solution of the closed-loop system; i.e., the output of
 region 6 was the input to region 1. This permitted the evaluation of the
 void fraction distribution up through the MSRE core, which will be required
 
-for the solution of the equations describing the neutronic model.
+for the solution of the egquations describing the neutronic model.
 
  
 
 *
 The reactor actually consists of hydraulically different parallel
-channels, but to date no attempt has been made to model them.
+channels, but to date no attempt has been made to model them,
 CHAPTER 2
 DEVELOPMENT OF THE EXTENDED MODEL
 
-Physical Characteristics of the Fuel Pump and Fuel-Pump Bowl?
+Physical Characteristics of the Fuel Pump and Fuel-Pump Bowl?”
 
 In discussing the extended hydraulic model of the MSRE circulating
 fuel system, it may be helpful to begin with a brief description of the
@@ -653,14 +662,14 @@ shown in Fig. 3.
 
 The fuel-salt circulation pump is a centrifugal sump-type pump with
 an overhung impeller. It is driven by an electric motor at ~ 1160 rpm and
-has a capacity of about 1200 gpm when operating at a head of 48.5 ft. The
+has & capacity of about 1200 gpm when operating at a head of 48.5 ft., The
 36-in.-diameter pump bowl, or tank, in which the pump volute and impeller
 are located, serves as the surge volume and expansion tank in the primary
 circulation system.
 
 The pump bowl, or tank, is about 36 in. in diameter and 17 in. high
-at the centerline, The normal fuel salt level in the bowl is about 11 in.
-from the bottom, measured at the centerline.
+at the centerline. The normal fuel salt level in the bowl is about 11 in.
+from the bottom, measured at the centerline,
 
 A bypass flow of about 60 gpm is taken from the pump-bowl discharge
 nozzle into a ring of 2-in.-diameter pipe encircling the vapor space inside
@@ -672,48 +681,62 @@ to the vapor space.
 The bypass flow circulates downward through the pump bowl and re-
 
 enters the impeller. The spray contains a considerable volume of cover
-ORNL~DWG 69-10172a4
+ORNL-DWG 69- 1017241
 
-   
-   
- 
- 
-   
+SHAFT
+PURGE
 
 OFFGAS
 LINE
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
 BUBBLER
-
-SPRAY RING
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-PUMP BOWL
-
+' / = | SPRAY RING
+1OOE I!J / LI
+F —_Z
+E -'L_'—'~;~- -
+: _
+7 DISCHARGE
+i MPELLER
+VOLUTE o {}_ - peL
+T PUMP BOWL
 SUCTION
 
 FIGURE 3. Molten Salt Reactor Experiment Fuel Pump and Fuel-Pump Bowl
 
-01
+0T
 11
 
 gas in the liquid, and the tendency for this entrainment to enter the pump
 is controlled by a baffle on the volute. Tests indicated that the liquid
 returning to the impeller will contain 1 to 2 volume percent of gas.
 
-A purge flow of about L4.2 std liters/min of helium is maintained
+A purge flow of about 4.2 std liters/min of helium is maintained
 through the pump bowl to act as a carrier for removing fission-product
 
 gases and to control the pressure in the system.
@@ -722,64 +745,72 @@ Assumptions Made in the Development of the Model
 
 To extend the hydraulic model to include the fuel pump and fuel-
 pump bowl, it was necessary to make some assumptions concerning the various
-regions involved as shown in Fig, 2, page 3.
+regions involved as shown in Fig., 2, page 3.
 
 Including the fuel pump and fuel-pump bowl in the model actually
 introduced four components into the system: (1) the fuel pump itself,
 (2) the bypass flow connections, (3) the fuel-pump bowl, and (4) the helium
-supply and removal system. The assumptions made for each of these com-
+supply and removal system, The assumptions made for each of these com-
 
 ponents are listed below.
 
 1. Fuel Pump
 
 Assume that the relative concentration of gas to fuel salt does not
-change as the fluid passes through the fuel pump. This assumption was made
+change as the fluid passes through the fuel pump, This assumption was made
 because the residence time of material in the pump is very short, i.e.,
 there is practically no holdup of circulating fluid in the pump.
 
-Further assume that the 1150-rpm fuel pump head~capacity curve
+Further assume that the 1150-rpm fuel pump head-capacity curve
 
 (Fig. 4) can be represented by an equation such as
 
-e - H- oq. (18)
-ORNL-DWG 64-3998 R
+é_g - H- oq. (18)
+H ,TOTAL HEAD (ft)
+
+60
+
+50
+
+40
+
+30
+
+20
+
+10
+
+ORNL-DOWG 64-3998 R
 
  
 
  
 
-IMPELLER DIAM: 11%; in. / CONSTANT
-MOLTEN -SALT TEMPERATURE: 1200°F ~~ RESISTANCE
-~~ ~ Vad
-Ne
-~1 fiso
-> Qus0rem
+ 
+
+ 
+
+IMPELLER DIAM: 11 Y5 in. / CONSTANT
+MOLTEN-SALT TEMPERATURE: 1200°F ~¢ RESISTANCE )
+iy, ey /
+e
 
 y
 
+\q\/
+> \HSOrpm
+
  
 
-/
-~~
-~~
-030
+I’
+
+- /
+~Y 7
+~ ’,
 
 7
-A
 
- 
-
-H , TOTAL HEAD (ft)
-
-~e y 4 J
-pou
-—
-S—
-/ J ~ 2%
-aS
-my
-Z] ~~
+/41030
 
  
 
@@ -793,7 +824,16 @@ Z] ~~
 
  
 
- 
+[~
+L / ==
+9= —— 1L S L
+/ / L7 ~dro0 T
+'h-fh .
+_ ™~ =~ 600 s
+=~ 4\./ ™~
+PUMP HYDRAULIC / A
+
+BALANCE LINE -+
 
  
 
@@ -807,62 +847,70 @@ Z] ~~
 
  
 
-el ~~
-J? —_—— 7 ~ o
-/ J 7 ~ro0 LS
-made —
-/ “—— ow vd ~~ 7
-Pa ~ ~
-7 ~~ fo ~
-PUMP HYDRAULIC ~ 1
-BALANCE LINE +
-200 400 600 800 1000 1200 1400 1600
+ 
+
+200
+
+FIGURE L.
+
+400 600 800 1000 1200 1400
 
 Q , FLOW RATE (gpm)
 
-FIGURE 4. Hydraulic Performance of the Molten Salt Reactor Experiment
+Hydraulic Performance of the Molten Salt Reactor Experiment
+
 Fuel Pump
 
-ct
+1600
+
+ol
 13
 
 2. Bypass Flow Connections
 
 For the 60-gpm bypass flow that is diverted from the pump discharge
 and sprayed into the fuel-pump bowl, assume that this connection (region 11)
-can be considered as an orifice and the flow rate represented by an equation
+can be considered as an orifice and the flow rale represented by an equation
 
 of the form®
 
-my; = A11C11./2p(Ps = Piz) . (19)
+Myy; = A13C13./20(Ps - P13) . (19)
 
 At steady-state conditions (no change of level in the fuel-pump
 bowl) the amount of fluid returning to the main loop flow across the baffle
 on the volute at the pump suction is equal to the amount of bypass fluid
-leaving the main loop at the pump discharge through region 11. Therefore,
+leaving the main loop at the pump discharge through region 11, Therefore,
 assume that the bypass flow connection identified as region 12 can also be
 considered as an orifice and the flow rate represented by an equation of
 
 the form
 
-mip = A;Liz./20(P13- Pg) . (20)
+My = AjLis,./20(P13 - Pg) . (20)
 
-It is further assumed that Eqs. (19) and (20) can each be written
+It is further assumed that Egs. (19} and (20) can each be written
 as two separate equations: one for the fuel salt mass flow rate, and one
 for the gas mass flow rate. The orifice coefficients will be different
 
 depending on which material is being considered. Thus we have
 
-Mery = A11Cp.  V20p, (Po - P13) ’ (21)
-m = A44C etree
+ 
 
-g11 gil V2, (Ps - P13) 5 (22)
-Bein = Arzly ov/20p, (P13 - Pg), (23)
-1h
+ 
+
+ 
+
+Bryy T Allcfll\/gpfll(P9 - Pis) (21)
+m = AllC
+
+g1l gllx/épgli(Pe - P13) , (22)
+Men = Alchlz\/épfle(Pl3 - Pg) (23)
+1k
 
 and
 
-Pore = Maelo) v0, (Fis - Pg) (2k)
+ 
+
+me = M, Vo, (Piz- o) - (L)
 
 3. Fuel-Pump Bowl
 
@@ -872,7 +920,7 @@ volume because the residence time of helium in the gas space is on the
 
 order of five minutes, and the fluid is agitated by the spray.
 
-4, Helium System
+4. Helium System
 
 The helium inlet and outlet pressures are either known or assumed
 to be known, and the assumption is made that the flow of helium into and
@@ -880,124 +928,148 @@ out of the fuel-pump bowl gas space can be represented by orifice-type
 
 equations such as
 
-Mois = braCy 4 V20,,, (Pia - P13) (25)
+ 
+
+ 
+
+mg14 = Al4cg14\/20g14 (P14 - Pl3) (25)
 for the inlet (region 1k),
 and
 
-"gis 7 A15Cg, v20q,, (Bys = Fis) (26)
+mgl5 = A15Cg15 \/20%15 (Plj - P15) - (26)
 
-for the outlet (region 15).
+for the outlet (region 15),
 
-Procedures Used in Deriving the Equations for the Model
+Procedures Used in Deriving the Eguations for the Model
 
 Using the assumptions discussed above, and writing mass balance
 equations for the gas and fuel salt across the various regions, a set of
-13 simultaneous equations was obtained.
+13 simultaneous equations was cobtained.
 
 1. Fuel salt mass balance for the fuel-pump bowl:
 
-J = -
-at = Mea Mean (27)
+fas _
+at = Tri1 0 Meap 0 (27)
 
-—
+———"
 15
 
 or expressing the mass flow rates in terms of fuel salt density, void
 
 fraction, fuel salt velocity and flow areas, this becomes
 
-Meo
+delB
 
-0 = lop(l = a), AY [op(1 = a)V,. Ay (28)
+i = [ep(1 - o)V, Al - [op(1 - )V, Ay (28)
 
 2. Gas mass balance for the fuel-pump bowl:
 
-aM
-—E13 _ - -
-dt - M11 Tio + Moi Mois ? (29)
+aMm
+—E1l3 _ - -
+dt - mg11 mg12 * mg14 mng ? (29)
 or
-Yaz
-= ov A - ov A + V A - Vv A . 0
-dt (og g ) a (og g ) io (pg g ) ia (og g ) 1s (3 )
+s
+= oV _ A - oV _ A + V A - V A . 0
+dt (pg g )11 (pg g )12 (pg g )14 (pg g )15 (3 )
 3. Pressure-head relationship for the fuel pump:
 From Equation (7)
-Pg = Pg
-—— = H- oq . (31)
-p
+Po - Pg
+_— = H - OQ . (31)
+P
 But
-Te
-Q = a s (32)
-po
+Tp
+Q = _—..:a » (32)
+o
 SO
-Po - Pg = Hp - om, , (33)
 or
 
-[pp(L = @) + ps + [pp(l = Q) + pO ]o
-
-Ps - Pg = H 5 - 0(PVA)g, (3h)
+[ep(1 - @) + p alg + [pa(1 - @) + p ] |
+Po - By - H—Z R B (P A)a, (3)
 
  
 16
 
-4, Fuel salt mass balance for the fuel pump:
+4, TFuel salt mass balance for the fuel pump:
 
-Meg = Mpg 2 (35)
+me, = Mg (35)
 or
-[ppl = 0) VAL, = [pg(1- 0) VAT . (36)
-Assuming that Pre Pros and since A, = Ag, this reduces to
-(1-0) Vel, = [(1-0a) Vo, (37)
+[pp(1 - @) VAL, = [ep(l - @) VAT . (36)
+Assuming that Prg Pro and since A, = Ag, this reduces to
+(L-a) V], = [(1-0) Ve, (37)
 
 5. Gas mass balance for the fuel pump:
 
-"ee - "go ’ (38)
+Mo = Tgg s (38)
 or
-= A
-(pg @V, A)g (pg VA) » (39)
-which reduces to
-= . L
-(og @ Vg (og @V.)o (ko)
+(o @V, 8, = (og @V A)g (39)
+which reduces *to
+= . 40
+(pg @ V. )g (og @ V.)o (40)
 
 6. Fuel salt mass balance at the junction of regions 1, 9, and 11:
 
-(41)
-
-m = m + m
-fo fi A
-
+Meg = Tp, T Meyy (41)
 or
-
-[op(1 - a) VAT = [op( = a) VAT + [op(1 - a) VAT, . (42)
-
-Assuming that Op, this becomes
-
-Pro = Ppp 7
+[op(1 = Q) VLAY, = [po(l - ) VLAY + [pp(1 - @) VAT, . (42)
+Assuming that Opy Pro = Ppiq 2 this becomes
 17
-[(1-0) VeAly = [(1-0) VA) + [(1- 0) VAL, . (43)
+
+[(1-0a) VoA, = [(1- o) Vel + [(1 - o) VAT, (43)
 
 T. Gas mass balance at the junction of regions 1, 9, and 11:
 
-m = m__ +m (4k)
-go gl g11
+m = m 4 om (4h)
+g9 g1 g11
 or
-aV A = aV A) + aV A . L
-(og a V A) (og a V 4), (pg @ VA), (45)
+oV A = aV A + oV A . L
+(og @V A, = (pg @V A), + (o 0V A), | (45)
 8. Fuel salt mass balance at the junction of regions 6, 8, and 12:
-Mpg = Me +m, (46)
+Trg = Mg * Tf1z s (46)
 or
-[op(1 = @) VAAL = [op(1 - @) VAT, + [op(1 = 0) VAT, . (47)
-Assuming that Prag = Peg = Prins this becomes
-(1 - a) Vel, = [(1- a) VAL + [(1 - a) VAT (48)
+Top(l = ) VAL, = [pp(1 - @) VAT + [0p(1 - 0) VAT, . (7)
+Assuming that Pre = Prg Pryo 2 this becomes
+[(1- a) VA, = [(1-q VAT + [(1- a) VAT - (L8)
 9. Gas mass balance at the junction of regions 6, 8, and 12:
-Mes = "ge + Maao y (49)
+mga = mge + mg12 » ()4-9)
 or
 aV A = aV A) + aV A . 0
-(og @ VA), = (pga VA) + (0 av A), (50)
-10. Volume balance for the fuel-pump bowl:
-Me M
-— + |B = Vv + Vv = const. = vy, (51)
+(pg @ V. A), (pg @V A)g (pg @ VA, , (50)
+10. Volume balance for the fuel-pump bowl;
+Mf M
+— + | B = v + v = const. = V¥, (51)
 
-Of [13 Pelys
+Pr 1= gl
 18
+
+(pp My + 0, Mp) 5 = ¥lop pg), 5
+
+Void fraction relation between regions 1 and 9:
+
+the junction of regions 1 and 9 it is assumed that
+
+Void fraction relation between regions 9 and 1l:
+
+At the Junction of regions 9 and 11 it is assumed that
+
+ng = (111
+
+Void fraction relation between regions 6, 8, and 12:
+
+The void fraction in region 8 may be written as
+
+or
+11,
+At
+120
+130
+But
+and
+SO
+
+or
+
+\
+2
 
   
 
@@ -1005,70 +1077,75 @@ Of [13 Pelys
 
  
 
-or
-(op Mg + Pg Mo) 5 = ¥(op Pg) 15 . (52)
-11, Void fraction relation between regions 1 and 9:
-At the junction of regions 1 and 9 it is assumed that
-a, = a . (53)
-12, Void fraction relation between regions 9 and 11:
-At the junction of regions 9 and 11 it is assumed that
-ag = Op; - (54)
-13. Void fraction relation between regions 6, 8, and 12:
-The void fraction in region 8 may be written as
-\
-!
-v |
-Us = Vv + v Tm me : (55)
-gs Is =, zt
-Pg Pe
+v
+o /88
+8 v + v T fm m \ ‘
+gs Ts & 1t
+Dg Qf
 8
-But
-= +r 6
-gr Tee Pgaz (56)
-and
-Pra = Trg Pei (57)
-SO
-mom
-~gl= 26
-e P
-gs £8
-Y% = mw om ne. Wp ’ (58)
-gle | _g6 4 Li
+m = m + m
+g8 g6 g1z
+ju!1 = m + m
+fa fe fiz "’
+m _oom
+gl L g6
+o = Pga  Pgs
+g8 ~ m___ m Moo Moo ’
+g1 2 + 26 + + 1
 
-or
+(52)
+
+(53)
+
+(54)
+
+(55)
+
+(56)
+
+(57)
+
+(58)
 19
-
-(0 V 08) . (pV, 00)
-- 5 3 (59)
-8 = (pV oh), , (pV 0A)  [pp(l = A)VA]  [op(1 - 0)VAT,
-
-+ +
-Pgs Pgs Pra Pre
 
  
 
-6
+(o V,08) . (p V 0h),
+0
+
+0
+o8
+o " T m . G, Tl VAL o0 VAT,
+Pga Peg Pfg Pre
+
+(59)
+
+ 
 
 The next step was to write these 13 equations in linearized, per-
 turbed form, as shown by the following examples.
-Referring to Eq. (40), page 16, the equation representing the gas
+Referring to Eq, (40), page 16, the equation representing the gas
 
 mass balance for the fuel pump written in perturbed form is
-[(pgo + Bog) (ay + 20) (V+ AV )]g =
 
-[pg + B05) (0, + A) (V+ AF )1,.(60)
+[(pgo +.Apg)(ab + Aa)(vgo + Ayg)]s =
+oy * A0 ) (@, + 00)(V_ + AV )],.(60)
 
-Carrying out the indicated multiplication, the following result
+Carrying out the indicafed multiplication, the following result
 is obtained. (Since both sides are identical except for the regions in-
 volved, only the general procedure will be described.) The left-hand
 
 side thus becomes
 
-(V. oa +V
+(v
 
-go Pgo %o 20 Peo Ny + ay LJ Bo, + ay Poo AV, +
++ V 0
 
-ogo 0% AV, + 0 Bo, Ng
+g0 Pgo a, g0 N+ a Vgo Apg + Q Poo /_\.Vg +
+
+g0
+
+0 OAOlAVg + Q. Apg AVg)8 .
 
 g
 
@@ -1077,88 +1154,89 @@ term, which contains only steady-state quantities, cancels out.
 Furthermore, the last two terms which contain the product of two perturbed
 quantities, and are assumed small compared to the remaining terms, were
 
-dropped. This gives the linearized form of Eg. (40) as
+dropped. This gives the linearized form of Eg. (L) as
 
-(
-
-V pop M+a V_ No +a p AV) =
-go "go o go Tg o "go T g's
++ =
+(VgO pgo N+ Q!O VgO Apg Odo pgo AVg)B
 20
 
-(Vo
-go "go A + a Veo Lo, +a Pgo Ng . (61)
-The linearized version of Eq. (1), page 4, is
+(V.. »
+go "go A + Vgo Apg + 00 AVg)g . (61)
 
-so, = & (62)
-0
-and the linearized form of the relationship between Veg and Ve 5
+The linearized version of Eq. (1), page L, is
+
+ADg = ﬁ?__{%_ ’ (62)
+o
+and the linearized form of the relationship between Vg and Vf »
 Eq. (5), page 5, is
-1- a ve (1 - XK)
+1 - o Vfo(l - K)
 
-NN = TT AN + NA. (63)
-& K % £ (X - a)?
+AN = T N+ N . (63)
+e Koa ot (x-0a)°
 
 Now referring to Fig. 2, page 3, it is noted that at the junction
 
-of regions 1, 9, and 11 the pressures P; = Pg = P13, and at the
+of regions 1, 9, and 11 the pressures P, = Pg = P13, and at the
 junction of regions 6, 8, and 12, the pressures Pg = Pg = Pio.
-Linearized, these equalities become AP; = APs = AP; and APs =
-APs = AP, respectively.
+Linearized, these equalities become AP; = APo = AP;; and APs =
+APs = AP,z, respectively.
 
-Substituting Eqs. (62) and (63) and the pressure equalities into
+Substituting Egs. (62) and (63) and the pressure equalities into
 Eq. (61) gives the final linearized perturbed form of the gas mass balance
 
 for the fuel pump:
 
- 
-
-l-«o 1-a -
-go fo \K - « o "go K - « f o "go fo 2
-0 0 (k - a)
+1l -« 1l - ¢«
+0 , o (1 - X)
+pgo Vfo K-« oo+ % pgo K-« AVf T ao pgovfo _ 5ﬁ1
+0 o (k - o)
 8
-a V 1 -« 1 -«
-o fo o 0
-1 TRT K-«o APs = Pgo "fo | K - a Ax
-°
+advfo 1 - e e - 1 - a -
+RT K- o & = |Pgo 'folK -
+0 o 0
 8
-1-«
-1 -K
-+ WV
-Peo K-« A T Peo fo (XK - ye A
-© o
-a Ve l-«
-+ o | —2l Ap, (64)
+1 -
+0 1L - K
+— | AV
+* Otopg;o K-« & T Oﬂopgo fo (K - o )2 £
+o o
+o Vf 1 -
++ _—— 2 JAV-E T (6)4)
 
  
+
+RT K-«
+0 0
+
+a
 21
 
 For another example, consider Eq. (27), the fuel salt mass balance
 
 for the fuel-pump bowl, page 1k, Linearized, this becomes
 
-d
-dt AM = Anes - Bie, (65)
+A - Am. - Am
+
+dat i3 f11 fio (65)
 
 Linearizing the orifice relationships for the fuel salt mass flow
 rates for regions 11 and 12 as given by Eqs. (21) and (23), respectively,
 
 page 13, gives
-2 a2
-11 Cra Pp
+2 w2
+11 Cfll e
 
-mg = TT (&Ps - AP), (66)
+Amfll = m (AP9 = APl:,)) 2 (66)
 foi1
 
 and
 
-A® 2
-12 fae Pr _
-An = (&Py3 - AP) (67)
+A2 2 5
+Am .ol (AP15 - APg) . (67)
 
-fiz ~ m
-foaz
+a2z foro
 
-Substituting Eqs. (66) and (67) into Eq. (65) and using the line-
+Substituting Egs. (66) and (67) into Eq. (65) and using the line-
 arized pressure equalities mentioned above, the linearized fuel salt mass
 
 balance equation for the fuel-pump bowl becomes
@@ -1166,12 +1244,12 @@ balance equation for the fuel-pump bowl becomes
  
 
 2 2 2
-AZ p A= C 0p
-4d 11 11 fr 12 fi2 "Ff
-av Mes] = Tao ST are
-foi: foiz
-AL (A2. C2. + A2_cZ2 ) AP (68)
-Meoqy © 13 fii 12 “fiz 13
+AZ p A= C 0
+d 11 fll r fiz "f
+o, ] - APy + —E—==— AP
+fo1i: foiz
+.t (A2 CE _+ A®_CZ2_) AP (68)
+Mooy, & 1% fi1 12 “fie 13 -
 
 The next step was to Laplace transform the time variable to the
 frequency domain. Thus, the linearized, perturbed, Laplace-transformed
@@ -1181,21 +1259,22 @@ version of Eq. (68) is
 
  
 
-1 12 1 f
-5 AY _ 1 ~ fii "Ff AP, + en fio AP
-fo11 foie
-oe (A2.c2. + A2_C2 ) AP (69)
-Melly 11°f11 12 fio 13
+2 A2 > A2
+A7y Cri1 Pr Al Crio P
+Sy, = T AR T e AR
+foi1: fole
+2 (A2 c2 + A®_CZ ) AP (69)
+Mooy 11°f11 12 ‘T2 13 -
 
 As a result of performing the manipulations described in the above
 examples on the remaining 11 equations, a set of 13 linearized, perturbed,
 
-Iaplace-transformed equations containing 16 unknowns was obtained.
+ILaplace-transformed equations containing 16 unknowns was obtained,
 
-Method Used to Solve the Equations Derived for the Model
+Method Used to Solve the Bquations Derived for the Model
 
 In order to solve the set of 13 equations containing 16 unknowns
-just derived, three more equations were needed, These three additional
+Just derived, three more eqguations were needed, These three additional
 equations were obtained from the original hydraulic model.
 
 In the original model, the variables in region 6 are related to those
@@ -1203,21 +1282,21 @@ in region 1 by means of a transfer function. In matrix form, this re-
 
 lationship can be expressed as
 
-[X(z,8)1e = B(s)[X(z,8)]1 - (70)
+[X(z,s)]e = B(s)[X(z,8)]1 - (70)
 
 where X(z,s) is the column matrix
 
-X(z,8) = | av, (z,8)]
-Lo (2,8)
-AP (z,8) ’ (71)
+X(z,8) = [ &V, (2,9)]
+o (z,8)
+NP (z,8) ’ (71)
 
 and B(s) is the 3 x 3 square transfer function matrix which relates the
-state vector X(z,s) at the outlet of region 6 to the state vector X(z,s)
+state vector X(z,s) at the outlet of region & to the state vector X(z,s)
 
 at the inlet to region 1.
 23
 
-Expanding the matrix form of Eq. (70) gave the necessary three
+Expanding the matrix form of Eq. (TO) gave the necessary three
 additional equations to complete the set of 16 equations containing 16
 unknowns,
 
@@ -1226,243 +1305,271 @@ follows:
 
 1. Fuel salt mass balance for the fuel-pump bowl:
 
+ 
+
 2 2]
-A CAs + Chie AP - (CpA)Z Pr AP
 13 1
-fi3 Pra Prism 11 Ma
+13 P Ofyo 11 mfo
 11
-2 ’r
-- (CA), m | OF =O (72)
-fo
+2 ’
+- (CfA)lz m | & = O (72)
+: fo
 12
-2. (Cas mass balance for the fuel-pump bowl:
-Ts P Oo = Pao
-s + Rl == (cA)2 —5= + (cA) |=
-g g 20 g "12 go
+2. Gas mass balance for the fuel-pump bowl:
+TO : P Q o P O
+s + Rl = (cA)2, Eg_ + (C_A) ag“
+g g o0 g "12 20
 13 11 12
-p
-2 [|.&° 2 [80
-* (CA)1, m * (CAL, m EE
+pgo pgo
++ (c A)Z + (C_A)Z AP =
+g ‘14 |m g ‘1simnm
 g0 go
-14 15
-T (), - (P) p
-_ 2 _0 0’9 o’13 go
-(CA) 1a R v R(m_ T) + m AP;
+14 , 15
+T (), - (P) o
+_ o _0 0’9 0’13 g0
+(CgA)ll R v R{m T ) T APy
 g go o’11 go
 13 11
 T
-+ (c )2 Rrl-2 (B),5- (P.) - Poo
-g 12 v R(m T ) mn APg =
-&/ 13 go o’iz go
++ (c_4)2_ Rl Bis— (Bo)y - (g
+g "1z \V R{m_T) m APg =
+&/ 13 go "o’z go
+
+12
  
 
  
 
- 
-
- 
-
- 
-
- 
-
- 
-
-> Ts Pgo (FB), i} (), 5
-(CA)7, RS m + R(m__T) oF
-g go g0 0734
+o Ts Pao (Po) 14 (PO)13
+(CgA)14 e m * Rm_ T) AP14
+g go g0 0O'14
 13 14
-T o (2), - (FP)
-+ (C A)2 rl 2 20 _ 0713 = 01s AP . (73)
-g 1s \v m R(m_ TT) 15
-g g0 g0 0O'3g
+T P - (P
+P enz f=2| [[=e) - Folis ™ Fols f (73)
+g 15 |V m R(m T) 15
+g g0 g0 0O'1s
 13 15
-3. Pressure-head relationship for the fuel pump:
-a a
-H | © - Alo H -
-PUR |T | [AR trem |) [Fe +2 ler Tego) 4%
-i _ =
-+ 5 (op Peo) s + .062L (peh) AV og = FF, (74)
-4, Fuel salt mass balance for the fuel pump:
-(1-0), Neg (Veo)e A = (1 - gq Mpg + (Veo)o 20 = 0 . (75)
-5. Gass mass balance for the fuel pump:
-1- oo a (1 - K) ave, 1-0
-0 V + = No + —=1 AP
-- - 6
-go fo | K eR (x - 0)? 8 RT K a
-8 8
-l-o¢ 1-0 a (1 - KX)
-+ lop ol AV. - |p V ° 2— 5 Ao
-0"go K a . bigs] go fof K - a (X - o ) 1
-0
-a Ve, 1- a, 1 - Ay
-NTE, Koa) YT YP k-a | Yn = 0 (76)
 
-9 9
+3. Pressure-head relationship for the fuel pump:
+
+a
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+H | o - H i o H B,
+1 7R T APy = WL+ g T | 2P *+ 5 (op = pgo) A%
+i - -
++ 5 (pf ng)Q + .062)+ (pfA)B AVfB = I ., (T’-l-)
+4., TFuel salt mass balance for the fuel pump:
+(1 - ao)a Avfs - (Vfo)s ma - (- ao)ea Avfg * (Vfo)9 mg = 0 . (75)
+5. Gass mass balance for the fuel pump:
+1- oo cxo(l - X) aVe, 1-a
+o V + Lo+ —1 AP
+- - &
+go fo | K o (X - ao)g 8 RTO K a
+8 8
+1-a 1-a oaO(l-K)
++ ]l p ~ ANV, - oV - + —3 A0
+o"go K Odo 8 go fol K ao (X - o) 1
+8 o
+aovfo 1 - Oio 1l - Odo
+TR, K-a) YT | %% k-a | N T 0 (76)
 25
 6. Fuel salt mass balance at the junction of regions 1, 9, and 11:
 
-Nog = Np - .0061h N. = 0 (77)
+oo = M - .0061h N. = 0 (1)
 
-7. Gas mass balance at the junction of regions 1, 9, and 11:
-
- 
+7. Gas mass balance at the junction of regions 1, 9, and 1l:
 
  
 
- 
-
- 
-
-Ie 1-K Veo 1- oy
-Peo K = a] Neo * |Peo'to zl Me + I VRr X q
-of (K - a) 0 0
-© 9
-Vv l1-« Vv l-«
-_ fo 0 _ fo
-RT K- o 0061 V7 Ta AP)
-of, 0 of,
-1-«
-0 1 -K
-.00614 Peo XK = a Vey .0061k Pao Veo > 11
-0 (K- a)
-11 © 11
-1l-a 1-K
-- 1p ~ AV - ip No = 0 (78)
-go K a f1 go fo (X ) 1
+Lo g 1 - K Voo 17 9%
+pgo K-« Ayfg * pgovfo Z| Mdo + RT K «
+oo (K - o) 0 o
+o S
+Vv l -« v 1 -«
+fo o _ fo 0
+k- o .0061L T " o AP,
+0 of, 0 of
+1 -« 1 - K
+- .0061k4 Peo K = o AVery ™ .0061k4 Pao Vfo Z 11
+o (K - o)
+11 o 11
+1l -« 1 -K
+- ip = AV - 0 I = 0 (78)
+go K o f1 go fo (X ao) 1
 
 1
 
 8. Fuel salt mass balance at the junction of regions 6, 8, and 12:
 
-Np = Ng = 127 MN. = O (79)
+Mo - N, = 12T N, = O (79)
 
 9. Gas mass balance at the junction of regions 6, 8, and 12:
 
- 
+‘_l
+§
+Q
+<
+I
+Q
+
+0 1l - K fo 0
+0 - AV 0 Do+ ~
+go K a fa go fo (K - o )2 8 RTD K a
+o
+8
+Yoo 1%\ | (Yo IT%) g o %) 4 -
+RTO K - RTO K - Qb 6 go K - ab fe
+lo.
+
+13
+
+ll.
+
+26
 
  
 
-l1-¢ Vv l-q«
-0 1 - XK fo 0
-Pp To] AV +ip Vo — | Lo + BT KT - ry
-go K ay fs go fo (XK - 0 )2 8 RT K a,
-8 o 8
-Vso 1-0, - 127 Veo 1-a, Ap - |p 1-o IN
-RT XK - oy RT X - a, 6 go K - a fe
+1l - K L- ao
+P N - 127 o — AV
+go fo (K - o )2 6 go K a f
+s =
+1 - K
+L27 Jp, Vo, T M. = O
+go fo (K - o )2 12
 
-6 12 [)
-26
-
- 
-
-v, —L=E | ao oao7 _% AV
-Pgo’ fo (X - 0)? 6 Peo K - a fie
-© 5 12
-1-K
-- 12 Vv, =
-T {0goVs0 af Ao 0 (80)
-Oo
+o
 12
 
-10. Volume balance for the fuel-pump bowl:
+ 
 
-P 10,541 Pro Peo
-—en. -— 2 20 2 _£
+ 
 
-RT Ape 5+ prs (RT ) + C27, m * (M7, m
-0 0/13 go go
-
-13 11 12
-Pao 0,0 7085
-(cgh)® |o= sca), 2 mm |
-€ 14 Meo & "3s "go (RT), 5 +2
-14 15
-
-p (P) -(p)
-- 2 20 Og O13
-Pris (CeA)Z) m + AP
-
-Rm T
-g0 ( g0 11 *
+Volume balance for the fuel-pump bowl:
+10,541 Poo
+MM + 0 — + (C A)2 —£0 + (C A)
+fi13 fi13 (RTO)13 g /11 mgo g
 11
-+ (C.A)2 Cia” Boo | fo) |p
-Praiz Vf a2 (Rm _T ) m 6 =
-go 0’12 g€0 1,5
-o ()),, ~ (B)
-go 0’14 0/13
-oq. (CA)? + AP
-f13 ‘Vg 14 oo (Rm oT), 14
+o o 7085
+€ o]+ M\ - my
+14 g0 & go 0’13
+14 15
+, P - (P
+] e "0 (B, - (B) .
+Pfrs Vel g, m (Bm T )
+go g0 0711
+11
+P (C A)2 (PO);B ] (PO)8 - *_pg.g__
+m
+fiz Vf /a2 (ngOTo)lg go /.,
+(c A)g pgo . (Po)14 - (PO)lB
+Pris VYo /s | fm (Bm T )
+go g0 0714
 14
-o (P)),5 - (RB)
-2 go _ 0/13 0/315
-T Preys (CM) Ts m (Rm_ T ) AF (81)
-go go 0’ 15
-1s
+P - (P
+Pris Vg 1s] | m (Rm T )
+go go 0’18
+15
+Void fraction relation between regions 1 and 9:
 
-11, Void fraction relation between regions 1 and 9:
+Aag ~ Aal = 0
 
-fog = Mo = 0 (82)
+1z
+
+&
+
+Pgo
+
+l12in
+
+AP
+
+1
+
+go
+
+13
+
+iz
+
+(80)
+
+(81)
+
+(82)
 27
 
 12, Void fraction relation between regions 9 and 11:
 
-ro = ha o= 0 (83)
+oy - bo o= 0 (83)
 
-13. Void fraction relation between regions 6, 8, and 12:
-
- 
+13. Void fraction relation between regions 6, 8, and 12;
 
  
 
  
 
-[AQ - 1,2 (a), - KX a 15 (1- 4g Aes
-%
-+ [AQ - a) 1, (0) Ax - ale a - A) 4g Ape
-a (K - 1) 1- a
-(Ae), mg (K - 0)? TK - a, YN
-0 12
-oa (K - 1) 1- a |
-+ (AV.0) (1 - a), 0)? - oy - T= ol. - (a) 220, = 0 (84)
+o
+(A(1 - Oéo)]lz (Qb)a Tk -oab 1o (1 - Odo)ea Ayfle
+odO
++ [A(1 - ) 1. (oxo)8 "l . (L - 050)8 Vo
+a (K - 1) 1 - o
+* (Avfo)lg (1 - ao)a (X - o )2 T K- a - (Qb)a AalE
+O 12
+aO(K - 1) 1-a L
++ (AVfO)6 (1 - o), ——-—--—-——(K T " F oo o). - (o)) 700, = O (84)
+0O
 
-1k. Fuel salt velocity relationship between regions 1 and 6 (from
+1L, Fuel salt velocity relationship between regions 1 and 6 (from
 
 original hydraulic model transfer function):
-Neg = 01g) = 0 AA “BAP = 0 (85)
+Npg = 0y &Vp) = b - b AP = 0 (85)
 
 15. Void fraction relationship between regions 1 and 6 (from
 original hydraulic model transfer function):
-Lo - b, AV. - bo = bog AP = 0 (86)
+Mot = b WV - bezml b AP = 0 (86)
 
 16. Pressure relationship between regions 1 and 6 (from original
 
 hydraulic model transfer function):
 
-APg = by Ao = bf, = b AP = 0 (87)
+AP, - b3lﬁyf1‘ b32Aa1 b AP = O (87)
 28
 
 The solution of the resulting 16 equations was carried out by
 *
 first writing them in matrix form as follows:
-AY = C, (88)
+AY = C (88)
 
 where
 
-i.
-I
+=<
+i
 
 the column vector consisting of the 16 perturbed variables,
 
 ordered as follows
 
-+
-I
+b
+1
 
-[Ao Lor A AP Neo AP Me Vag Ne, ror oN. Lo
+[AO!B &0 APl AP /_wfa APlB AMf13 AVfg AVfl Aocl Avfs AO(S
 
 T
-Ae ny ax Meio Ts
+A’Vfll Aall Aalz Ayflz I
 
 where T is the transpose;
 
@@ -1471,36 +1578,37 @@ A = the coefficient matrix consisting of the constants in the
 and
 C = the forcing function column vector consisting of the elements
 
-making up the right-hand sides of the 16 equations,
+making up the right-hand sides of the 16 equations.
 
 Before the solution of these equations could be formally carried
 out however, it was necessary to consider the forcing function vector C
 in Eq. (88).
 
-Referring to Egs. (73), (74), and (81), pages 23, 2k, and 26,
+Referring to Egs. (73), (74), and (81), pages 23, 2L, and 26,
 respectively, it is noted that the variables involved in vector C are the
 perturbations in the helium inlet pressure, AP,4; perturbations in the
-helium outlet pressure, AP;-; and the fuel-pump input (head delivered)
+helium outlet pressure, AP;.; and the fuel-pump input (head delivered)
 
 fluctuation, F.
 
  
 
 *
-
 Examples showing how some of the constants in the A and C matrices
-were obtained are given in the Appendix. Specific equations of the ex-
+
+were obtained are given in the Appendix, Specific equaticns of the ex-
+
 tended model are discussed, and a table of the constants is presented.
 29
 
 From this it is seen that the extended hydraulic model postulates
 that the helium system is but one natural source or cause of pressure
 changes in the circulating fuel system; fluctuations in input (head de-
-livered) from the fuel pump also contribute to the naturally occurring
+1ivered) from the fuel pump also contribute to the naturally occurring
 pressure perturbations around the loop.
 
 The solution obtained in this work was arrived at by specifying
-these variables individually. That is, one variable was given a value and
+these varisbles individually. That is, one variable was given a value and
 the other two were made identically equal to zero. In this way the effect
 of one variable on pressure perturbations in the circulating fuel system
 was separated from the effects of the others.
@@ -1510,18 +1618,18 @@ purposely perturbed system. For example, experimental data were obtained
 by introducing a train of sawtooth pressure pulses into the fuel-pump
 bowl and analyzing the resulting changes in the neutron flux.'® The
 capability of introducing a similar kind of pressure perturbation into
-the extended hydraulic model and then using the neutronic model to calcu-
+the extended hydraullic model and then using the neutronic model to calcu-
 late the effects on the neutron flux exists. Thus, a comparison of
-theoretical and experimental results is possible,
+theoretical and experimental resulis is possible,
 
 Once the elements of the A and C matrices were determined,
 standard computer techniques® for solving complex matrix equations were
-applied to Eq. (88) to obtain the desired values of the 16 variables in
+applied to Eg. (88) to obtain the desired values of the 16 variables in
 
 vector Y.
 CHAPTER 3
 
-RESULTS OF CALCULATIONS MADE WITH THE EXTENDED MODEL
+RESULTS OF CAICULATIONS MADE WITH THE EXTENDED MODEL
 
 COMPARED TO EXPERIMENTAL DATA
 
@@ -1534,67 +1642,67 @@ Two cases were considered:
 
 Case 1
 
-The fuel pump forcing function variable, F, in Eg. (TL), page 2k,
+The fuel pump forcing function variable, F, in Eq. (Th), page 2k,
 was set equal to unity; the fuel-pump bowl helium inlet and outlet pres-
-sure fluctuations, APi4 and APys, respectively, in Eg. (73), page 23,
+sure fluctuations, AP;, and AP,s, respectively, in Eg. (73), page 23,
 
 and Eq. (81), page 26, were set equal to zero, i.e.,
 
 F = 1.0, (89)
-AP 4 = 0.0 9 and (90)
+ﬂPlg__ = 0.0 3 and 7 (90)
 APis = 0.0 (91)
 
 Case 2
 
-The fuel-pump bowl helium inlet pressure fluctuation, AP,4, was
-made equal to unity; the fuel-pump bowl helium outlet pressure fluctuation,
-APs, and the fuel-pump forcing function variable, F, were set equal to
+The fuel-pump bowl helium inlet pressure fluctuation, AP;4, was
+made equal to unity; the fuel-pump Powl helium outlet pressure fluctuation,
+AP{s, and the fuel-pump forcing function variable, F, were sel equal to
 
-zero, i.e.,
+zero, 1l.e.,
 
 AP14 = 1.0, (92)
-APs = 0.0, and (93)
-F = 0.0. (94)
+APy = 0.0, and (93)
+F = 0.0 . (9k)
 
 30
 31
 
-The fuel-pump bowl helium outlet pressure fluctuation, AP;s, is
-zero in both cases because of the assumption that the helium system dis-
-charge pressure, Ps, is constant (atmospheric).
+The fuel-pump bowl helium ocutlet pressure fluctuation, AP;s, is
+zero in both cases because of the assumption that the helium system dis;
+charge pressure, P;s5, is constant (atmospheric),
 
-The reason F and AP;4 are unity in Case 1 and Case 2, respectively,
+The reason F and APy4 are unity in Case 1 and Case 2, respectively,
 is the result of the way in which the frequency response of a system is
-computed, The frequency response of a stable system can be directly ex-
+computed. The frequency response of a stable system can be directly ex-
 pressed by an equation relating the Fourier transform, F, of the system
 
-output to the input:1l?
+output to the input:i?
 
-F im
-F Input = Frequency response. (95)
+F foutput
+F{ Toputf = Frequency response. (95)
 
 To obtain the neutron flux-to-pressure frequency response of the
 system described by the combined hydraulic-neutronic model, it was neces-
 sary to divide the outputs (left-hand sides of the equations) by the in-
 puts (forcing function variables) for each case where the variables were
-non-zero.
+non-zero,
 
 In Case 1, for example, dividing Eq. (74), page 24, by the fuel-
-pump forcing function variable, F, makes the right-hand side unity. Thus
-the element of the forcing function vector C in Eq. (88), page 28, corre-
-sponding to F becomes unity, and all other elements of C are zero. In
-Case 2, the element of vector C corresponding to AP;4 becomes a constant,
+pﬁmp forcing function variable, F, makes the right-hand side unity. Thus
+the element of the forcing function vector C in Eg. (88), page 28, corre-
+sponding to F becomes unity, and all other elements of C are zero. 1In
+Case 2, the element of vector C corresponding to AP,4 becomes a constant,
 and all other elements of vector C are zero.
 
 In this way it was possible to obtain information about the fre-
 quency response even though the absolute values of the forcing function
 variables were not known. In addition to information about the frequency
-response, results concerning the modulus of the pressure in the fuel-pump
+response, resulis concerning the modulus of the pressure in the fuel-pump
 
-bowl, AP;s, were also determined for Cases 1 and 2.
+bowl, AP,=, were also determined for Cases 1 and 2.
 32
 
-Even though this calculational procedure did not produce absolute
+Even though this caleculational procedure did not produce absolute
 values for the frequency response and fuel-pump bowl pressure modulus,
 the results can still be compared to the experimental data.
 
@@ -1607,8 +1715,8 @@ These data represent measurements of the naturally occurring
 pressure noise in the fuel-pump bowl during normal reactor operation.
 
 The pressure power spectral density is proportional to the fuel-
-pump bowl pressure frequency response function modulus squared if the
-driving function is "white," e,g., random and Gaussian.
+pump bowl pressure freguency response function modulus squared if the
+driving function is '"white,” e,g., random and Gaussian.
 
 Therefore, by postulating certain white driving functions, it is
 possible to see if the resultant calculated fuel-pump bowl pressure power
@@ -1620,7 +1728,7 @@ been observed.
 Function for the MSRE
 
 These data represent measurements taken during the saw-tooth pres-
-sure pulse tests mentioned in Chapter 2.
+sure pulse tests mentioned in Chapter 2,
 
 In Fig. 5, the square of the modulus of the pressure in the fuel-
 pump bowl calculated for Cases 1 and 2 is compared with the experimental
@@ -1630,52 +1738,103 @@ computed by the extended model were scaled for comparison purposes.
 
 The calculated square of the fuel-pump bowl pressure modulus for
 
-case 2 (APy4 = 1.0, F = 0.0, AP;5 = 0.0) over the range of frequencies
-(arbitrary units)
+Case 2 (APy, = 1.0, F = 0.0, AP15 = 0.0) over the range of frequencies
+10'
+@
+g
 
-100
+5 5
+ey
+2
+E
+8
 
-107!
+2
 
-SQUARE OF FUEL-PUMP BOWL PRESSURE MODULUS
+9 100
+-
+=2
+o
+g
 
-1072
+5
+s
+@
+o
+oy
+[12]
+W
+x
 
-10-3
+o 2
+-
+=
+Q
+m
 
+a 1o
+s
+-
+a
+4
+
+W 5
+w
+U
+o
+Ll
+o
+
+< 2
+o
+o
+W)
+
+10-2
+
+5
+
+2
+
+10~3
+
+0
 FIGURE 5.
 
  
 
 33
 
-ORNL-DWG 70-1374
+CORNL-DWG 70-1374
 
 LEGEND
 
 A CASE
-5 O CASE 2
+5 |- © CASE 2
 V EXPERIMENTAL DATA
 
-0.5 1.0 1.5 20 2.5 3.0 35
+0.5 10 1.5 20 2.5 3.0 35
 
 FREQUENCY (cps)
 
 Square of the Modulus of the Pressure in the Molten Salt
 Reactor Experiment Fuel-Pump Bowl
 
-Case 1: F = 1.0, AP14 = 0.0, APys = O
-Case 2: AP14 1.0, AP1x 0 0, F = 0.
-34
+Case 1: F=1,0, APy4 = 0.0, APy = 0.0
+Case 2: APiy4 1.0, APy 0.0, F = 0.0.
+
+I
+I
+3L
 
 shown in Fig, 5 agrees reasonably well with the general trend of the ex-
 perimental data, also given in Fig. 5, for the same range of frequencies.
 
 The computation of the square of the fuel-pump bowl pressure
-modulus for Case 1 (F = 1.0, AP;4 = 0.0, AP;5 = 0.0) gave results
-that are also shown in Fig. 5. This curve showed fluctuations more simi-
+modulus for Case 1 (F = 1.0, AP14 = 0.0, AP35 = 0.0) gave results
+that are also shown in Fig. 5. This curve showed fluctuations mofe simi-
 lar to those actually observed, except in the frequency range of about
-0.5 to 2.0 cps. Here it appears that the extended hydraulic model ex-
+0.5 to 2,0 ecps. Here it appears that the extended hydraulic model ex-
 hibits extreme under-damping or resonance effects.
 
 From the comparison of results shown in Fig. 5, it seems reasonable
@@ -1684,42 +1843,42 @@ to the fuel-pump bowl helium inlet pressure perturbations. Superimposed
 on this relationship, however, are the random effects of the fuel pump
 input fluctuations.
 
-Consideration of the information presented in Fig. 5 thus leads
+Congideration of the information presented in Fig. 5 thus leads
 to the expectation that pressure fluctuations in the circulating fuel
 system of the MSRE are also a result of the combination of these two per-
-turbations, It appears that the resonant structure due to the fuel-pump
+turbations, It appears that the rescnant structure due to the fuel-pump
 input perturbation dominates the effect of the fuel-pump bowl helium in-
 let pressure perturbation, however,
 
 Other experimental evidence to support this conclusion is available:
 It was noted that when the fuel-pump bowl offgas line became plugged and
 the fuel-pump bowl pressure remained essentially constant over a long
-period of time, the pressure noise in the fuel-pump bowl increased ap-
-preciably, but the neutron noise remained essentially constant.”
+period of time, the pressure noice in the fuel-pump bowl increased ap-
+preciably, but the neutron nolse remained essentially constant.”
 The modulus of the neutron flux-to-pressure frequency response
 
-function for Case 2 (APy4 = 1.0, F = 0.0, AP1s = 0.0) is shown in -<
+function for Case 2 (APy4 = 1.0, F = 0.0, APy = 0.0) is shown in -
 35
 
 Fig. 6 for two different fuel-pump bowl pressures. Also shown is the
-modulus computed by the original open-loop mathematical model, The
-modulus of the neutron flux-to-pressure frequency response function de-
-termined from experimental resultsl? obtained from a series of saw-tooth
-Pressure pulse tests is included for comparison,
+modulus computed by the original open-loop mathematical model., The
+modulus of the neutron flux-to-pressure frequency reéponse function de-
+termined from experimental results'? obtained from a series of saw-tooth
+pressure pulse tests is included for comparison.
 
 Units of the modulus of the neutron flux-to-pressure frequency
 response function are shown as being arbitrary because the results cal-
 culated by the mathematical models were scaled for the purpose of com-
-parison.
+parison,
 
 The open-loop model results more nearly approximate the experi-
 mental data, but both mathematical models appear to be attenuated too
 rapidly at frequencies above about 0.1 cps. Unfortunately there are no
-experimental data below about 0,02 cps or above about 0.5 eps with which
+experimental data below about 0.02 cps or above about 0.5 cps with which
 to compare the two models,
 
 The effect of different fuel-pump bowl pressures on the modulus
-of the neutron flux-to-~pressure frequency response function calculated
+of the neutron flux4t0~pressure frequency response function calculated
 by the extended model is apparent in Fig. 6. It is noted that the higher
 fuel-pump bowl pressure gave a greater amplication of the pressure
 
@@ -1727,71 +1886,46 @@ perturbation.
 36
 
 ORNL-DWG 70-1375
+107!
 
-10°!
+w
+
+AN/No
+AP
+
+10°2
+
+> 5
+
+€
+
+3
+
+o
+
+2 LEGEND
+
+2 CASE 2, Py3 = 22.7 psia
+= 2 CASE 2, Pz = 20.6 psia
+
+ORIGINAL MODEL
+EXPERIMENTAL DATA
+
+1073
+
+MODULUS OF THE NEUTRON FLUX-TO-PRESSURE FREQUENCY RESPONSE FUNCTION,
 
  
 
-— 5
-2la
-2|<
-<q
-z
-©
-I 2
-oO
-Zz
-2
-uw
-wi
-un
-g 1072
-Qa
-wn
-w
-a
->
-|S]
-& 5 5
-2 =
-oO c
-w 3
-£2
-w 2 LEGEND
-> 5 CASE 2, Py3 = 22.7 psia
-a = 2 CASE 2, Pyy = 20.6 psia
-x ORIGINAL MODEL
-!
-2 EXPERIMENTAL DATA
-x
-3 1073
-w
-=
-o
-14
-—-
-2
-w 5
-wl
-I
-—
-Ww
-oO
-wn
-2
-2 2
-[a]
-oO
-=
 1074
+0.01 0.02 005 0.1 0.2 05 1.0
 
-0.01 0.02 005 01 0.2 0.5 1.0
-FREQUENCY {cps)
+FREQUENCY (cps)
 
 FIGURE 6. Modulus of the Neutron Flux-to-Pressure Frequency-Response
 Function for the Molten Salt Reactor Experiment
 CHAPTER L
-CONCIUSIONS AND RECOMMENDATIONS
+CONCIUSTIONS AND RECOMMENDATIONS
 
 The hydraulic portion of the mathematical model originally formu-
 lated by Robinson and Fry was extended by explicitly including the fuel
@@ -1800,11 +1934,11 @@ pump and fuel-pump bowl to close the loop.
 The extended model was then combined with their original neutronic
 model and used to perform calculations yielding results such as the square
 of the modulus of the pressure in the fuel-pump bowl, and the modulus of
-the neutron-flux-to-pressure frequency response function for the MSRE.
+the neutron-flux-to-pressure frequency response function for the MSRE,
 
 Results calculated by the extended and open-loop models were com-
 pared to those obtained from experimental measurements to determine the
-validity of the models.
+validity of the models.,
 
 It was found that the extended model in its present form cannot
 calculate the modulus of the pressure in the fuel-pump bowl in an absolute
@@ -1838,7 +1972,7 @@ extended model is not sufficiently damped,
 It was further found that the extended model also cannot calculate
 the frequency response of the MSRE absolutely.
 
-It was stated earlier (page 35) that a scale factor was applied
+Tt was stated earlier (page 35) that a scale factor was applied
 to the modulus of the neutron flux-to-pressure frequency response function
 calculated by the extended model in order to compare it to the experi-
 mental data in Fig. 6, page 36. The use of this scale factor was necessary
@@ -1847,7 +1981,7 @@ determined modulus. This suggests that there is too much attenuation
 (pressure drop) in the extended model between the pressure in the fuel-
 pump bowl and the core.
 
-Similarly, the square of the modulus of the pressure in the fuel-
+Similarly, the sguare of the modulus of the pressure in the fuel-
 pump bowl was much smaller than the experimental results shown in Fig, 5,
 page 33. This indicates that there was also too much attenuation in the
 portion of the loop (fuel pump and fuel-pump bowl) added by the extended
@@ -1870,20 +2004,20 @@ The attenuation in the portion of the loop between the fuel pump
 and fuel-pump bowl must be reduced. In this case, it appears that the
 choice of orifice-type equations to represent the bypass flow restrictions
 at the pump discharge and pump suction was not a sound assumption.
-Furthermore, the use of separate orifice-type equations for the gas and
-fuel salt was also unfortunate. The 1 to 2 volume percent of gas in the
-liquid observed returning to the impeller during pump tests could be an
+Furthermore, the use of separate orifice-~type equations for the gas and
+fuel salt was also unfortunate., The 1 to 2 volume percent of gas in the
+liguid observed returning to the impeller during pump tests could be an
 important effect.
 
 These observations are pointed up by the good agreement of the re-
 sults obtained from the original model with the experimental data, In
 place of orifice-type equations to close the loop, the original model
 used as boundary conditions (1) pressure fluctuations at the exit of
-region 6, Fig, 1, page 2, are the same as inlet pressure fluctuations to
+region 6, Fig., 1, page 2, are the same as inlet pressure fluctuations to
 region 1, and (2) the fluctuations in the total mass flow rate to
 region 1 was zero.
 
-A better selection for the extended model would have been to use
+A better selection forrthe extended model would have been to use
 a momentum balance in the fuel-pump bowl combined with orifice-type
 equations which accounted for momentum transfer between the gas and fuel
 salt in the bypass loop. These equations would replace the separate gas
@@ -1892,7 +2026,7 @@ and fuel salt orifice relationships that were applied.
 Lo
 
 Another recommendation that may be beneficial is to remove the
-assumption that there 1s no holdup volume in the fuel pump, i.e,, consider
+assumption that there is no holdup volume in the fuel pump, i.e,, consider
 the pump to represent a well-mixed volume, This would help account for
 the fact that mass can be stored in the fuel pump as it is in the fuel-
 pump bowl,
@@ -1902,76 +2036,91 @@ addressed by this thesis, could be improved by simulating the effects of
 
 the heat exchanger on the circulating fuel system.
 LIST OF REFERENCES
-10.
+lo.
 
-11.
+11,
 
 12,
+
 13.
-1h,
+1k,
+
+J. C.
 
 LIST OF REFERENCES
 
-J. C. Robinson and D, N. Fry, "Determination of the Void Fraction in
-the MSRE Using Small Induced Pressure Perturbations, USAEC
+Robinson and D, N. Fry, '"Determination of the Void Fraction in
+the MSRE Using Small Induced Pressure Perturbations,' USAEC
 Report ORNL-TM-2318, Oak Ridge National Laboratory (February 6,
 
-1969) »
+1969),
 
 Robinson and Fry, ORNL-TM-2318, pp. 18 - 21.
 
-Robinson and Fry, ORNL-TM-2318, pp. 6 - 10.
+Robinson and Fry, ORNL-TM-2318, pp. 6 - 10,
 
-L. G. Neal and S, M. Zivi, "Hydrodynamic Stability of Natural Circu-
+L. G.
+
+Neal
+
+Neal and S. M, Zivi, "Hydrodynamic Stability of Natural Circu-
 lation Boiling Systems," Volume 1, "A Comparative Study of Ana-
 lytical Models and Experimental Data," USAEC Research and De-
-
-velopment Report, STL 372-14 (1), Thomson Ramo Woolridge, Inc.,
+velopment Report, STL 372-1h4 (1), Thomson Ramo Woolridge, Inc.,
 (June 30, 1965).
 
-Neal and Zivi, STL 372-14 (1), p. 85.
+and zivi, STL 372-14 (1), p. 85.
 
-S. J. Ball and R. K. Adams, "MATEXP, A General Purpose Digital Computer
+. Ball and R. K. Adams, "MATEXP, A General Purpose Digital Computer
+
 Program for Solving Ordinary Differential Equations by the Matrix
-Exponential Method," USAEC Report ORNL-TM-1933, Oak Ridge
-National Laboratory, (August 1967).
+Exponential Method, " USAEC Report ORNL-TM-1933, Oak Ridge
+National Iaboratory, (August 1967).
 
-R. C. Robertson, "MSRE Design and Operations Report, Part I, Description
+. Robertson, "MSRE Design and Operations Report, Part I, Description
+
 of Reactor Design," USAEC Report ORNI-TM-728, pp. 133 - 1k2, 325,
-(January 1965).
+(Tanuary 1965).
 
-R. B. Bird, W. E. Stewart, and E., N, Lightfoot, Transport Phenomena,
+. Bird, W. E. Stewart, and E, N, Lightfoot, Transport Phenomena,
+
 p. 226, John Wiley and Sons, Inc., New York, 1960.
 
-R. E. Funderlich, Editor, Programmer's Handbook, USAEC Report K-1729,
+. Funderlich, Editor, Programmer's Handbook, USAEC Report K-1T729,
+
 "CMATEQ, Program ORD-9067, Gaussian Elimination for Real and
 Complex Systems," (February 9, 1968).
 
 Robinson and Fry, ORNL-TM-2318, p. 22.
 
-M. A. Schultz, Control of Nuclear Reactors and Power Plants, Second
+M. A.
+
+Schultz, Control of Nuclear Reactors and Power Plants, Second
 Edition, p. 70, McGraw-Hill Book Company, New York, 1961.
 
-D. N. Fry, personal communication to W. C. Ulrich, November 26, 1969.
-D. N. Fry, personal communication to W. C. Ulrich, November 26, 1969.
+D. N. Fry, personal communication to W, C. Ulrich, November 26, 1969,
 
-J. C. Robinson, personal communication to W. C. Ulrich, November 26,
+D. N. Fry, personal communication to W. €. Ulrich, November 26, 1969.
+
+J. C.
+
+Robinson, personal communication to W. C. Ulrich, November 26,
 1969. (To be published in Nuclear Science and Engineering.)
 
-Lp
+Lo
 APPENDIX
 APPENDIX
 
 The various constants in the A and C matrices in Eq. (88), page 28,
 were generated using information obtained from three sources:
 
-1. observable quantities such as system temperatures, pressures,
+1. observable gquantities such as system temperatures, pressures,
 areas, and volumes;
 
 2. physical properties, such as fuel salt density, based on con-
-ditions described by the observable quantities; and
+ditions described by the observable guantities; and
 
-3. calculations of other constants using flow rates, pressures,
+3. calculafions of other constants using flow rates, pressures,
 velocities, and void fractions obtained from the solution of
 the original hydraulic model in conjunction with items 1 and 2.
 
@@ -1982,28 +2131,28 @@ was applied to two specific equations of the extended hydraulic model.
 Example 1 — Consider Eq. (72), page 23, the fuel salt mass balance
 for the fuel-pump bowl:
 
-a, An observable quantity is the temperature of the fuel salt
+a. An observable quantity is the temperature of the fuel salt
 
-in regions 11 and 12, (Teo) |, and (Teo), respectively:
-(Teo), 1670°R , (A1)
-(Too),, = L6TO°R . (42)
+in regions 11 and 12, (Tfo)ll and (Tfo)lg’ respectively:
+(Tfo)ll = 1670°R , (A1)
+(Te) 1o T 1670°R . (A2)
 
-The areas A,, and A; were obtained from detail pump design
-drawings. The area for region 11 was taken as the size of the connection
+The areas A,; and A,- were obtained from detail pump design
+drawings, The area for region 11 was taken as the size of the connection
 between the pump discharge line and the 2-in.-dia. pipe spray ring; the
 area of the opening at the pump suction was calculated. Specifically,
 
 these are
 
-Lh
-Ls
-Aq = 0.48 in? 9 (43)
+Ly
+L5
+Ay; = 0.48 in? | (43)
 
-9.98 in? , (AL)
+9.98 in% , (Ak)
 
-I
+i
 
-Ayo
+Ao
 
 As stated on page 9, the volumetric rate of flow through the by-
 pass region is 60 gpm. Since the void fraction of gas is less than
@@ -2011,10 +2160,12 @@ pass region is 60 gpm. Since the void fraction of gas is less than
 
 flow consisted entirely of fuel salt. Thus
 
-1 min 231 in? 3
-60 gpm x Zo sec ¥ gal X 0.087 1b/ins
+1 min 231 in?
 
-(mey)yy
+. 3
+5 ses X ) x 0.087 1b/ins
+
+(mfo)ll €0 gpm X 6
 
 20.1 1b/sec. (45)
 
@@ -2022,136 +2173,175 @@ Furthermore, with no change of mass of fuel salt in the pump bowl, the
 
 mass rate of flow through region 12 equals that through region 11, or
 
-(mg) (m,.) = 20.1 lb/sec. (46)
-
-11 12
+(mfo)ll = (me)lg = 20.1 1b/sec. (A6)
 
 b. The temperature in regions 11 and 12 determines the fuel salt
 
 density; thus
 
-Ppiy = 0.087 1o/in? , (AT)
-Pp, = 0.087 1b/in? . (48)
+Ppyq = 0.087 lb/il’l‘?’ s (AT)
+Prin = 0.087 1b/in? . (A8)
 c. The orifice coefficients C and C were calculated by
 fia fiz
 
-applying some of the above information to Egs. (21) and (23), page 13,
+applying some of the above information to Eqs. (21) and (23), page 13,
 
 as follows:
-Lé6
+L6
 
 From Eq. (21),
 
-(me)
-Coys _ fo’ia , (9)
-Ar 200 0 (Po), = (P.),.]
+(meo)
+f
+c _ 0’11 ,
 
-where (FP) and (P.), are given in the solution obtained by the original
+B A Ve, (o), - (BQ),,]
+
+ 
+
+(A9)
+
+where (Po)9 and (PO)13 are given in the solution obtained by the original
 
 hydraulic model, namely
 
- 
-
-(P) = TO.0 psia, (A10)
-0’ 9
-(Pp) = 20.6 psia. (A11)
-013
+(P ) = 7T0.0 psia,
+O g
+P = 20.6 psia.
+( 0)13
 Therefore, Eq. (A9) becomes
 20.1
-C = s (A12)
 
-f21 0.48 2 x 0.087 x k9.L
+ 
 
-Cc 14,6 int? - gee”? . (A13)
+ 
 
-I
+f2a 0.48 2 x 0.087 x 49.k
 
-fii
+Cfll
+
+Il
+
+14.6 inT% - gec™?
 
 Similarly, Eq. (23) gives
 
-c _ (mp) 2 , (ALL)
+(mfo)lz
 
-fi2 Ariz 20p [(B) - (B;) 1
+AlE\/EDflE [(PO)13 - (PO)BJ
+
+Cf12 =
 
  
 
-where (2) is also obtained from the original hydraulic model solution:
+where (Po) is also obtained from the original hydraulic model
 8
-(p) = 19.6 psia. (A15)
-8
+(p) = 19.6 psia,
+'8
 
-Thus Eq. (Alk) is now
+Thus Eq. (AlLk) is now
 
 20.1
-Co = (A16)
-fiz 9.98 ./2 x 0.087 x 1.0 ’
 
  
 
-Cols 2.76 in7% sec” (ALT)
-bt
+iz 9.98 /2 x 0.087 x 1.0
+
+2,76 in>% sec”™ ! ,
+
+C
+fie
+
+(A10)
+
+(A11)
+
+(A12)
+
+(A13)
+
+(ALY
+
+solution:
+
+(A15)
+
+(A16)
+
+(817)
+b7
 
 Now all the numbers required to determine the constants in Eq. (72)
 are available; substituting them into the equation and carrying out the
 
-indicated operations will give the desired values.
+indicated operations will give the desired values,
 
-Example 2 — Now consider Eq. (73), pages 23 and 24, the gas mass
+Example 2 — Now consider Eq. (73), pages 23 and 2k, the gas mass
 balance for the fuel-pump bowl,
 
-a. The observable quantities for this example include:
+a, The observable quantities for this example include:
 
-= = - ° A
-(?),, = (IT), = (I) = 670k, (818)
-= = ° AL
-(T))_, (T) 530°R , (A19)
-(P)) = 14,7 psia , (A20)
-01s
-eis = 3456 in? |, (A21)
-R = U635.4 in./°R, (A22)
-Aj; = 0.48 in% (423)
-Ao, = 9.98 in? (A2k)
+- = - ° Al8
+
+(1), = (2) = (T) _ = 1670°R, (418)
+= = ° Al
+
+(), = (T) _ = 530°R, (A19)
+
+(P ) = 14,7 psia , (A20)
+
+0" 1s
+
+Veis = 3456 in? , (A21)
+
+R = Wb635.4 in,/°R, (A22)
+
+All = O.)-I-B in? 3 (A23)
+
+A = 9.98 in? (A2k)
 
 b. There are no physical properties such as the fuel salt density
 which depend only on the observable quantities, That is, the gas density
 is dependent also on the system pressure which must be obtained from the
 original model solution, Therefore it is necessary to use the original
-model to calculate the remainder of the constants.
+model to calculate the remainder of the constants,
 
-c. The gas densities may be calculated by using Eq. (1), page Lt.
+c. The gas densities may be calculated by using Eq. (1), page k.
 
 For example,
 
-) = 2D, (425)
+) = 2D, - (825)
 L8
 
-where (p.) is obtained from the original hydraulic model solution,
+where (Po) is obtained from the original hydraulic model solution,
 11
 
-i,e.,
+i.e.,
 
-(®)_, = T0.0 psia .
-Thus Eg. (A25) becomes
-a! 70.0
-(ogo), = u635.k * 1670
+() . = 70.0 psia .
+Thus Egq. (A25) becomes
+o 70.0
+(ogo),, = T835.% * 2670 -
 
-9.2h x 107° 1b/in?
+9.24 x 107° 1b/in?
 
-(
+(p..)
 
-Peo) 11 =
-Using the values of
+fi
 
-(Pp) = 27.7 psia (specified),
+g0 11
+Using the wvalues of
 
-0714
-(By), = (B5), = (®,) = T0.0 psia ,
-(P)) = 20.6 psia ,
+(P) = 27.7 psia (specified),
+
+0 14
+(Po)l = (Po)g = (Po)ll = T0.0 psia 3
+(2 ) = 20.6 psia ,
 
 0713
 
-P = (P = (PF = 19.6 psia .
+P = P = P = 1 .6 sia .
+(B,), (B (). 9.6 p
 
 from the solution by the original hydraulic model, the remaining gas
 
@@ -2159,7 +2349,9 @@ density terms can be calculated.
 
 The gas mass flow rate for region 11 was calculated as follows:
 
-The void fraction in region 9 may be expressed as
+The voild fraction in region 9 may be expressed as
+
+pgg Pfo
 
 (A26)
 
@@ -2171,19 +2363,21 @@ The void fraction in region 9 may be expressed as
 
 (430)
 
-(431)
+(A31)
 
 (A32)
 
 (A33)
-kg
+49
 
-But from Egs. (53) and (54), page 18, ¢ = «o . Therefore,
+But from Egs. (53) and (54), page 18, @ = « . Therefore,
 1 9
-solving for Myo? we gel
-Qa Meg
-m = 1 - oq. _ — 0 o (A3k)
-g9 x Peg g9
+
+solving for mgg, we get
+
+G Mg
+m = — —— . (A3L)
+g° 1 Qa Prg g9
 
 Now the fuel pump volumetric flow rate is 1200 gpm, all of which passes
 through region 9; the bypass flow rate is 60 gpm, or 5 percent of this,
@@ -2193,98 +2387,128 @@ the same, Therefore, it was assumed that 5 percent of the total gas
 
 mass flow rate also flowed through the bypass, i.e.,
 
-(mo), = 0.05 (m) (435)
+(M), = 0.05 (m) . (435)
 
-£0711
+Substituting Bq. (A34) into Eg. (A35) gives
 
-Substituting Eq. (A34) into Eq. (A35) gives
-
-a m
+oL m
 0 fo
 
-m = 0.05 {—— —
-( go) 12 1 -a . \Pr /s (
+m = 0,05 {—/—/—/ —
 
-Pao) o , (A36)
+( 80)11 1-al . \Pr (
 
-where (a) is obtained from the solution presented by the original hy-
+A
+] pgo)g , (A36)
+
+where (Ob) is obtained from the solution presented by the original hy-
 1
-
 draulic model, Numerically, Eq. (A36) is
 
-_ 0.00k 381.4 -5
-(mo), = 0.05 Xx To oon ¥ 0.007 * 9.24 x 10 , (A37)
+0.004 X 381L.4
+- 0.004 & 0.087
 
-8.12 x 107° 1b/sec. (A38)
+I
+
+(m ) x 9.2k x 107® (A37)
+
+g0" 11
 
 (m_.)
 
-80711
+g0 11
+
+0.05 x T
+
+8.12 x 107° 1b/sec. (A38)
 
 Furthermore, when there is no mass accumulation in the fuel-pump
 
 bowl,
 
-(gg) = (mn) (839)
+(mgo) = (mgo) - (A39)
 50
 
-The orifice coefficients for the gas are determined by using Eqs.
+The orifice coefficients for the gas are determined by using Eqgs,
 
-(22) and (24), pages 13 and 1h. Thus
+(22) and (2L4), pages 13 and 1k, Thus
 
- 
+g1l
 
- 
+gl1
 
- 
-
- 
-
-Cc _ (mo) .y
-gil RI -(P ’
-0.88/20) (By) = (BY
-c 8.12 x 10°°
-811 9.48 /2 x 9.24 x 10-5 x hg.lL
-C = 5.61 x 10”% in7* sec -1?
 £11
+
 Similarly,
-(Meo) 12
+
+glz
+
+giz
+
+C
+giz
+
+(m )
+
+g0 11
 
  
 
  
 
-gla -
-9.98.20.) _ [(B,)_~ (F,)]
+0.48 /2(p,) _ [(R)) - (B)) ]
+
+13
+
+8.12 x 10~
 
  
 
  
 
-c _ 8.12 x 107°
-giz = ?
-9.98.2 x 2.6 x 107° x 1.0
-Core = 3.57 x 107° in7* sec”?
+0.48 /2 x 9.24 x 107° x ho.lL
+
+5.61 x 10”% in7* sec -7
+
+(m_.)
+
+80712
+
+ 
+
+ 
+
+9.982(0,) _ [(B) = (B)) ]
+
+8.12 x 10
+
+ 
+
+ 
+
+9.98 /2 x 2.6 x 107° x 1.0
+
+3.57 x 1072 inT% sec™?
 
 Similar calculations were made to obtain the remaining coef-
 
 (ALO)
 
-(Al1)
+(A1)
 
-(AL2)
+(Ak2)
 
 (Ak3)
 
-(Al)
+(AkL)
 
-(Ak5)
+(AL5)
 
-ficients for the 16 equations (Egs. (72) through (87)) which make up the
+ficients for the 16 eguations (Egs. (72) through (87)) which make up the
 
 extended hydraulic model; the results are presented in Table Al and the
 
-following list,
+following list.
  
 
 Constants Used to Calculate the Coefficients Used in the A and C Matrices for Eg. (88)
@@ -2297,19 +2521,19 @@ TABLE Al
 
 Region
 
-1 6 8 9 11 12 13 14 15
+1 6 8 9 11 12 13 1k 15
 Constant
-A, in® -- 78.4 78.4 78.4 0.48 9.98 -- 0.30k 0.304
-Cp, 107% sec”? -- -- -- -- 14.6 2.8 -— -- --
-Cyr in,” sec”? -- -- -- -- 5.6x107%| 3.6x10"°| -- | 1.5x10"%| 1.9x10"%
-mes 1b /sec -- -- -- -- 20.1 20.1 -- -- --
-m_, 1b/sec -- -- -- -- 8.1x107®%| 8.1x107%f -- | L.8x107°| L4.8x107°
-P , psia 70.0 19.6 19.6 70.0 70.0 19.6 20.6 27.7 1h.7
-T,, °R 1670 1670 1670 1670 1670 1670 1670] 530 530
-Vo, in./sec 55.5 55.9 55.9 55.5 L481 23.2 -- -- --
-a, 4,0x1073| 1.2x10-2| 1.2x107%| 4.0x10"7| k,oxl0"3| 1.2x107% -- -- --
-Pps 1b/in? -- -- 0.087 0.087 0.087 0.087{0.087 -- --
-0. 1b/in? 9.2x107%| 2.5x107¢| 2.5x107%| 9.2x107®| 9.2x107%| 2.5x10°%| -- | 1.1x10"5| 7.2x10"°
+A, in% -- 78.L 78.4 78.L 0.48 9.98 | -- 0.30k 0.30k4
+Cpr inT* sec™? -- -- -- -~ 1.6 2.8 -- -- --
+Cg’ in,”% sec™?t -~ -- -~ -- 5.6x107% 3,6x107°| -- | 1.5x10"%} 1.9x10"%
+Mo s 1b/sec -- -- - -- 20.1 20.1 -- -- --
+m_, 1lb/sec -- ~- -- -- 8.1x107°| 8.1x107° -- | 4.8x107°| L.8x107°
+P , psia 70.0 19.6 19.6 70.0 T0.0 19.6 20.6 27.7 4.7
+T, °R 1670 1670 1670 1670 1670 1670 1670 530 530
+Veor 1n./sec 55.5 55.9 55.9 55.5 181 23.2 -- -- --
+a, 4.0x1077| 1.2x10-%| 1.2x107%| 4.0x10">| L,ox10™>| 1.2x107° -- -- --
+Ops 1b/in? -- -- 0.087 0.087 0.087 0.08710.087 -- --
+o, 1b/in? 9.2x1078| 2.5x107%| 2.5x107%| 9.2x10"%| 9.2x107%| 2.5x107°| -- | 1.1x10-5] 7.2x10°°
 
  
 
@@ -2338,39 +2562,52 @@ Pps 1b/in? -- -- 0.087 0.087 0.087 0.087{0.087 -- --
 
 The remaining constants are:
 
-Ss
-
-11
-
-Jw, where is specified;
-
+s = Jjw, where @ is specified;
 H = 582 in.,
 K = specified value between 0.8 and 1.0,
-= 3456 in?
-Vegi 356 ne,
-and v = 5184 in?
+v = 3456 in?
+g13 3% ’
+and v = 6184 in? ,
 
 fi3
-OO oo OW Who
+-
 
+\C o310V W
+
+.
+
+11.
+12.
+13.
+1k,
 15.
 16.
 17.
+
 18.
+
 19.
 20.
 21.
-22.
+22,
 23.
-ak,
+2k,
 
+. - - » »
+- .
+
+-
+-
+
+-
+
+»
 .
 
-.
+U rrQUuGagaEs Dot N @Tn=S
+Eron-aoaydm=a2dYitbwerpdaEAES g
 
-.
-
-THYHEPrUd PEE QUOH SED
+0 a3
 
 53
 
@@ -2378,58 +2615,56 @@ ORNL-TM-3007
 
 INTERNAL DISTRIBUTION
 
-J. Ackerman 25. A. I. Krakoviak
-J. Ball 26. T. S. Kress
-F. Bauman 27. M., I. Lundin
-E. Beall 28. R. N. Lyon
-S. Bettis 29. H. G. MacPherson
-Blumberg 30. H. E. MacPherson
-G. Bohlmann 31. L. C. Oakes
-B. Briggs 32. A. M. Perry
-A. Buhl 33. H. B. Piper
-B. Cottrell 34. B. E. Prince
-L. Crowley 35. J. L. Redford
-L. Culler 36. J. C. Robinson
-R. Engel 37. M. W. Rosenthal
-N. Fry 38. H. M. Roth, AEC-0ORO
-H. Gabbard 39. A. W. Savolainen
-R. Grimes LO. Dunlap Scott
-G. Grindell 41. M. J. Skinner
-H. Guymon 42. I. Spiewak
-N. Haubenreich 43. D. A. Sundberg
-
-. Houtzeel 44. J. R. Tallackson
-L. Hudson Ls, R. E. Thoma
-
-. R. Kasten 46. D. B. Trauger
-
+Ackerman 25. A, I. Kraskoviak
+Ball 26. T. S. Kress
+Bauman 27. M, I. Lundin
+. Beall 28. R. N. Lyon
+. Bettis 29. H. G. MacPherson
+lumberg 30. H. E. MacPherson
+Bohlmann 31. L. C. Oakes
+Briggs 32. A. M. Perry
+Buhl 33. H. B. Piper
+. Cottrell 34. B. E. Prince
+Crowley 35. J. L. Redford
+. Culler 36. J. C. Robinson
+. Engel 37T. M. W. Rosenthal
+: 38. H. M. Roth, AEC-CRO
+. Gabbard 39. A, W. Savolainen
+Grimes 40. Dunlap Scott
+. Grindell . 41. M. J. Skinner
+Guymon 42. I. Spiewak
+Haubenreich 43. D. A. Sundberg
+. Houtzeel L4, J. R. Tallackson
+L. Hudson 45, R. E. Thoms
+. R. Kasten 4L6. D. B. Trauger
 . W. Kerlin 47-51. W. C. Ulrich
 J. Kedl 52. Gale Young
 
-53-54. Central Research Library (CRL)
+Central Research Library (CRL)
 
-55-56. Y-12 Document Reference Section (DRS)
+Y-12 Document Reference Section (DRS)
 
-57-59. Laboratory Records Department (LRD)
-60. Laboratory Records Department ~ Record Copy (LRD-RC)
+Laboratory Records Department (LRD)
 
-61. ORNL Patent Qffice
+Laboratory Records Department - Record Copy (LRD-RC)
+ORNL Patent Qffice
 
 EXTERNAL DISTRIBUTION
 
  
 
-62. S. J. Hanauer, University of Tennessee, Knoxville,
-
-Tennessee 37916
-63. J. E. Mott, University of Tennessee, Knoxville,
+S. J. Hanauer, University of Tennessee, Knoxville,
 Tennessee 37916
 
-64. P. F. Pasqua, University of Tennessee, Knoxville,
-
+J. E. Mott, University of Tennessee, Knoxville,
 Tennessee 37916
-65. R. C. Steffy, Jr., Tennessee Valley Authority,
-303 Power Building, Chattanooga, Tennessee 37401
-66. Laboratory and University Division, ORO
 
-67-81. Division of Technical Information Extension, OR
+P. F. Pasqua, University of Tennessee, Knoxville,
+Tennessee 37916
+
+R. C. Steffy, Jr., Tennessee Valley Authority,
+
+303 Power Building, Chattanooga, Tennessee 3740l
+Laboratory and University Division, ORO
+
+Division of Technical Information Extension, OR

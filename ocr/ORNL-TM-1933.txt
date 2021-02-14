@@ -1,30 +1,32 @@
  
 
-~ aN iY dy,
+- -'1-. i.i i"
 
-MASTER
-OAK RIDGE NATIONAL  SOBR% ey
+MASTE
+OAK RIDGE NATIOEAS? LQQH'SRY
 
 operated by
 
 UNION CARBIDE CORPORATION
-NUCLEAR DIVISION ig
+NUCLEAR DIVISION
 for the
+U.S. ATOMIC ENERGY COMMISSION
 
  
 
-U.S. ATOMIC ENERGY COMMISSION 0
-ORNL- TM- 1933 |
+¥
 
-COPY No-£ 33
+ORNL- TM- 1933 7 = |
+
+COPY ND-i 33
 
 DATE - August 30, 1967
 
-"MATEXP, " A GENERAL PURPOSE DIGITAL COMPUTER PROGRAM FOR
+"MATEXP," A GENERAL PURPOSE DIGITAL COMPUTER PROGRAM FOR
 SOLVING ORDINARY DIFFERENTIAL EQUATIONS
-BY THE MATRIX EXPONENTIAL METHOD
+BY THE MATRIX EXPONENTIAL. METHOD
 
-S. J. Ball R. K. Adams
+5. J. Ball R. K. Adams
 
 ABSTRACT
 
@@ -44,39 +46,37 @@ The method has been extended to nonlinear equations and
 equations with time-varying coefficients; this use is very
 effective for engineering systems analysis problems.
 
-NOTICE This document contains information of a preliminary nature
-and was prepared primarily for internal use at the Oak Ridge National
-Laboratory. It is subject to revision or correction and therefore does
-not represent a final report.
+NOTICE This document contains information of o preliminary nature
+ond was prepared primarily for internal use at the Oak Ridge National
+Laberatery. It is subject to revision or correction ond therefore does
+not represent o final report.
+ 
 
  
- 
 
  
 
 LEGAL NOTICE
 
- 
+This report was prepored os on account of Government sponsered work. Meither the United States,
 
-This report was prepared as an account of Government sponsored work. Neither the United States,
+nor the Commission, nor any person acting on beholf of the Commission:
 
-nor the Commission, nor any person acting on behalf of the Commission:
-
-A. Makes any warranty or representation, expressed or implied, with respect to the accuracy,
-completeness, or usefulness of the information contained in this report, or that the use of
-
-any information, apperatus, method, or process disclosed in this report may not infringe
-
- 
-
+A. Mokes any warrenty or representation, expressed or implied, with respect te the accuracy,
+completeness, or usefulness of rhe infermetion contained in this report, or that the use of
+any information, cpparctus, mothod, or process disclosed in this report may neot infringe
 privately owned rights; or
-B. Assumes any liabilities with respect to the use of, or for damages resulting from the use of
-any information, apparatus, method, or process disclosed in this report.
 
-As used in the above, “person acting on behalf of the Commission” includes any employes or
-contractor of the Commission, or employee of such contractor, to the extent that such employee
-or contractor of the Commission, or employes of such contractor prepares, disseminates, or
-provides access to, any information pursuant to his employment or contract with the Commission,
+B. Assumes any liabilities with respact to the use of, or for domoges resulting from the use of
+ony information, apporatus, method, or process disclosed in this report.
+
+As used in the obove, "'person acting en behalf of the Commission' includes any employee or
+
+contractor of the Commission, or employee of such contrector, to the extent that such employes
+
+or confractor of the Commission, or employee of such contracter prepares, disseminates, or
+provides access to, any information pursuant to his employment or controct with the Commission,
+
 or his employment with such contractor.
 
  
@@ -88,51 +88,56 @@ or his employment with such contractor.
  
 ‘CONTENTS
 
-IntroductiOnecececesssveecsssencesssaccnsnossaces
+.Introduction.....l............-..C_..‘..t..l.llla..
 
 Development of the Matrix Exponential Method
 
-2.1 For Homogeneous EquationsSeeeecececescccceeses
+2.1 For Homogeneoué EquationsSeessseeescescceces
 
-. 2.2 For Nonhomogeneous EquationsS.ceeceeecescscees
+. 2.2 For Nonhomogeneous EqQuUatioOnSececssecsecacscas
 
 2.3 Miscellaneous Features of the Matrix
 
-EXDONEN A081 ss eas aessosossesaanssssnsnnns
+Exponential..l.....l.l..l.........l.;...l
 
 Description of MATEXP Program and Options
-3.1 Basic Input INFOrmation. essescessseennness
-3.2 Alternative Methods of Generating the
-Coefficient MatriX Aciecececccsssccnsccans
+
+3.1 Basic Input Information........;...........
+
+3,2 Alternative Methods of Generating the
+Coefficient MatriX Accceececsccsescrccnns
+
 3.3 Alternative Methods of Generating the
-© Forcing Function VECtOr Zueeeeeesessseees
+' Forcing Function Vector Zaeeeeeseeseesees
 3.4 Methods for Solving Time-Varying-Parameter
-and Nonlinear Differential Equations.....
+| and Nonlinear Differential Equations.....
 
-3.5 Special Forcing Function Subroutines.ssces.
-
-Summary and CONCLUSIONS ee sessrassssssceansesnsane
+3.5 Spécial Forcing Function Subroutineés.esecese.
+Sumnary and CONCIUSIONS e sssrerssnnsansesnsscanns
 
 Appendix
 
-5.1 Problems in the Evaluation of Exponential
-FUNCEAONS « «ss es sennnnssesesesnssninnnnnes
+5.1 Problems in_thé Evaluation of Exponéntial
+Functions........................a;..;...
 
-5.2 Detailed Description of Programs.ececececceces
+5.2 Detailed Description of ProgramsS.sececccesss
 
-5.3 Fortran Listing of ProgramsS.seceesccecscescss
+5.3 Fortran Listing of Programs..eccececscscsscss
 
 Page
 
-Oo ON O
+\O O O
 
 11
 13
 13
+
 15
+
 16
+
 19
-oo
+20
 
 27
 28
@@ -140,20 +145,20 @@ oo
 28
 
 30
-.
+13
 1. INTRODUCTION
 
 The matrix exponential method of solving differential equations
 was first described to the authors by Prof: Henry Paynter of MIT,
-who with his students 3 developed this method into a practical
+who with his studentsl-3 developed this method into a practical
 engineering tool. The basic technique was derived many years ago,
 and even then it was an elegant method of obtaining exact solutions
 for a set of constant coefficient, homogeneous differential equations.
 The matrix exponential technique is ideally suited to digital
-computation and is very simple to implement, especially when compared
-with most quadrature methods.
+computation and is very simple to implemént, especially when compared
+wifh most quadrature methods.
 
-Only two persons besides Prof. Paynter have done extensive work
+Ohly two persons besides Prof. denter have done extensive work
 
 >
 
@@ -168,399 +173,372 @@ and, perhaps, refinement of the method, although the work of several
 
 researchers established the rigor of the central technique.
 
-17. Suez, Automated Programming for Analog Computers, M.S.
+J Suez, Automated Programming for Analog_Computers, M.S.
 thesis, MIT, Aug. 1962.
-24 0.0. Lee, Some Finite Difference Models for Linear and
+2H.C.H. Lee, Some Finite Difference Models for Linear and
 Nonlinear Control Studies Using Digital Computation, M.S. thesis,
 MIT, Aug. 1962.
 
-“3q. M. Paynter and J. Suez, "Automatic Digital Setup and Scaling
+3H. M. Paynter and J. Suez, "Automatic Digital Setup and Scaling
 of Analog Computers," Trans. ISA, 3, 55-64 (Jan. 1964).
-
-by, Artin, from O. Schreier and E. Sperner, Introduction to
+hE. Artin, from O. Schreier and E. Sperner, Introduction to
 Modern Algebra and Matrix Theory (1935); Translated from German,
-Chelsea Publ. Co., N.Y., 1951, pp. 319-320.
+Ch&lsea Publu CO., N-Yo’ 1951’ pp' 319‘320-
 
-1, Pease, DEEMS, A Fortran Program for Solving the First-Degree
+ 
+
+ 
+
+5L; Pease, DEEMS, A Fortran Program for Solving the First-=Degree
 Coupled Differential Equations by Expansion in Matrix Series,
-AECL-1898 (Oct. 1963, reprinted Feb. 196k).
+AECL-1898 (Oct. 1963, reprinted Feb. 1964).
 
-%s. G. Keller, Mathematics of Modern Engineering, vol.II,
-Mathematical Engineering, Wiley, N.Y., 1942, pp. 234-246.
+6E. G. Keller, Mathematics of Modern Engineering, vol.Ill,
+Mathematical Engineering, Wiley, N.Y., 1942, pp. 234-2L6.
 
-TR. Bellman, Introduction to Matrix Analysis, McGraw-Hill, N.Y.,
+TR Bellman, Introduction to Matrlx Analysis, McGraw-Hill, N.Y.
 1960, pp. 165-173.
 
 Ta
-More recently, M. L. Liou of Bell Telephone Laboratories made important
-contributions to the matrix exponent ial method . 10” 11
+More recently, M. L. Liou of Bell Telephone Laboratories made 1mportant
+contributions to the matrix exponentlal method. 10,11
 
-Because this method can give virtually exact? solutions to systems
-of equations, it is of ‘considerable interest to most engineers engaged
-in systems analysis, automatic control, and simulation. Also, systems
-engineers have long recognized that one essential difference between
-the analog computer and the digital computer is the awkward (at best)
-manner in which the digital machine can perform integration. The
-matrix exponential method, on the other hand, requires the digital
+Because this method can give virtually exact12 solutions to systems
+of equations, it is of'considerable interest to most engineers engaged
+in systems analysis, automatic control, and simulation. Also, systeﬁs
+engineers have long recognized that one essential difference between |
+the analog computer and the digital computer is the:awkward (at best)
+manner in which the digital macnine can performwintegration.‘ The
+matrix exponential method, on}the‘other hand, requires the digital
 computer to perform mainly matrix manipulations, which it can do in
 a very straightforward and efficient manner.
 
 The matrix exponential techniques have worked well for a large
 general class of simulation problems which constitute the bulk of the
-work in the systems analysis and automatic control fields. Indeed,
-by use of the methods described in Sect. 3.4, certain types of non-
-linear equations can be solved as a natural extension of the basic
+work in the systeme analysis>and automatic control fields. Indeed,
+by use of the methods descrlbed in Sect. 3. k certain types of non-
+
+linear equatlons can be solved as a natural exten51on of the basic
 
 matrix exponential method.
 
-8g, R. Gantmakher, Applications of the Theory of Matrices,
-Interscience, N.Y., 1959, pp. 135-9. (translation of Russian
+ 
 
-original book: Theory of Matrices, 1954).
+8F, R. Gantmakher, Applications of the Theory of Matrices,
+Interscience, N.Y., 1959, pp. 135-9 (translation of Russian
+" original book: Theory of Matrices, 195k4). :
+
+9L. A. Pipes, Applied Mathematics for Engineérs and Physicists,
+24 ed., McGraw-Hill, N.Y., 1958, pp. 101-4,
+
+Ly, 1. Liou, "A Novel Method of Evaluating Tran51ent Responses,
+
+Proc. IEEE, 5u (1) 20-23 (Jan. 1966).
+
+llF F. Kuo and J. F. Kaiser, eds., System Analy51s by Dlgltal
+Computer, Wiley, .Y.,l966 pp. 99-129.
 
  
 
-IL. A. Pipes, Applied Mathematics for Engineérs and Physicists,
-2d ed., McGraw-Hill, N.Y., 1958, pp. 101-k.
-
-Oy. 1. Liou, "A Novel Method of Evaluating Transient ‘Responses, "
-
-Proc. IEEE, oh (1), 20-23 (Jan. 1966).
-
- 
-
-lip, F. Kuo and J. F. Kaiser, eds., System Analysis by Digital
-Computer, Wiley, N.Y.,1966, PP. 99-129.
-
- 
-
-120i rtually exact" means that the solution can be calculated
+lE"Virtually exact" means that the solution can be calculated
 to as great a precision as is desired, consistent with the precision
-obtainable with a given computer word length. In other words, the
+obtainable with & given computer word length. In other words, the
 precision of the method is not necessarily limited by the convergence
 of any approximate quadrature (integration) formula, simply because’
-quadrature is. not performed.
-The matrix exponential method has also been implemented and used
-extensively in Fourier analysis problems by simulating band-pass
-filters. 3 14 Instead of calculating correlation functions (and
-subsequently their Fourier transforms) digital filtering can be used
+gquadrature is. not performed.
+The matrix exponential meﬂhod has also been implemented and used
+extensively in Fourier analyeis problems by simulating band-pass
+fil‘c.e:rs.13’11L Instead of calculating correlation functions (and
+subsequehtly their Fourier transforme) digital filtering can.be used
 to obtain spectral density estimates and transfer functions from
-noise data. Calculations using filtering techniques are of comparable
+noise data. Calculations using filtering technigues are of comparable
 accuracy and typically more efficient than the conventional methods.
-MATEXP has also been used in a special technique to calculate the
+| MATEXP has also been used in a special technique to calculate the
 sensitivities of the time response of a system to changes in parameter
-values. = A description of a subroutine which was written to
-implement time response sensitivity calculations is given in Sect.
+values. 15 A descrlptlon of a subroutine which was written to
+implement time response sensitivity caleulatlons is given in Sect.
 5.2.3.
 
-MATEXP has been developed and modified over a period of several
+MATEXP has been developed and modified over a pefiod of several
 ~ years, and its present form reflects the considerable number of
 helpful suggestions we have had from many people. We are particularly
-grateful to Prof. H. M. Paynter for first introducing us to the
-method, and to Prof. T. W. Kerlin of the University of Tennessee, '
-
+grateful to Prof. H. M. Paynter.for first introducing us to the
+method, and to Prof. T. W, Kerlin of the University of Tennessee,
 and J. V. Wilson of ORNL for their help and encouragement.
+
 2. DEVELOPMENT OF THE MATRIX EXPONENTIAL METHOD
 
 2.1 For Homogeneous Equations
+
 Consider the first-order scalar, linear, homogeneous differential
+
 equation (with constant coefficient)
 
-dx
-3 Tax=0, Co . (1)
+dx ' :
+It + ax =0, - ) (1)
 
-13s. J. Ball, A Digital Filtering Technique for Efficient Fourier
+138. J. Ball, A Digital Filtering Technique for Efficient Fourier
 Transform Calculations, ORNL-TM-1778 (July 1967).
-| W. Kerlin and S. J. Ball, Experimental Dynamic Analysis of
+lLLT. W. Kerlin and S, J. Ball, Experimental Dynamic Analysis of
 the Molten-Salt Reactor Experiment, ORNL-TM-1647 (Oct. 1966).
 
  
 
  
 
- 
+Lo, oy, Kerlin, "Sensitivities by the State Variable Method,"
+Simulation, 8(6), 337-345 (June 1967).
 
-Yr. wu. Kerlin, "Sensitivities by the State Variable Method,"
-Simulation, 8(6), 337-345 (June 1967). .
-whose solution is Co
-x =e x, (2)
-0
+ra
+whose solution is ‘ . o
+x = e % (2)
+o* '
 An interesting characteristic of the solution is that, for any
-time interval tT, the value of x at the end of the interval is a i
-product of an exponential term 27 and the value of x at the beginning
+time interval T, the value of x at the end of the interval is a
+product of an exponential term e-aT_and the value of x at the beginning
 
 of the interval, i.e.
 
-x = € X, (3)
+X = € X, o (3)
 
 This will be referred to as the "incremental solution.”
-Now because a system of homogeneous linear equations of any
+Now because & system of homogeneous linear equations of any
 order can always be broken up into a set of first-order equations,
 
 consider the following set of equations
 
-ax,
+dx : :
 
--_r = a
+Lo x ta. x + a, X
 
-+ a X, + eoee &
-at x
+dt 11 71 12 72 **** "1In "n’
 
-1 12 72 in *n ’
+dx2
 
-ax
+TS %1 %1 *ag, Xy Foeees 8y X (4)
+dx .
 
-2
-TO = 8p Xp tf 8p Xp tf oeees By Xo, (4)
+at "%t Tl Xp T overs By X
 
-dx
-n
-
-dt
-
-|] eee |
-
-a, eeoes 8 X .
-) n
-
-+ +
-nl *1 Sno Xo nn
 This array can be expressed compactly in matrix form as a first-
 order, linear, homogeneous, matrix differential equation with constant
-coefficients, i.e.
-ax :
-at = AX J (5)
+coefficients, i.e. | |
 
-where X is the column vector of state variables x;
+dX ' :
+dt = AX 2 (5)
 
-0
+where X is the column vector of state variables Xi
 
-a cesses Re
+50
+
+33N'.... nﬁ
 and A represents the coefficient matrix
 
-17 890 sees se gn
+all a]2 .o 08PN aln
 
-a, 8,
-21 22 ee oo 00 8h
+a, a
+A E 21 22 o e o0 98 a2n
 
-an ano sesso an
+anl an2 * &5 9 80 ann
 
 This matrix equation has the solution
+X, = X (6)
 
 For a formal proof that Eq. (6) is the desired solution, the reader
 
-is referred to Bellman. However, the following sigple proof is
+is referred to Bellman.7 However, the following sinle proof is
 
-somewhat less formal. First, if dX/dt = AX, then 1% = a &X _
-
-: 22 at
-ax a™x
-
-AAX= 22%; similarly, he a3 X, so that ===82x. (7
+somewhat less formal. First, if dX/dt = AX, then g{% = A.%% =
+3 mx dt
+AAX=4A" X; similarly, g;§-= a3 X, so that g—a-: A" x . (7)
 dt dt
-
-If X, is expanded about zero in a Taylor's series,
-
-x ox +1 &X LB 8x La
-t 70 1! dat 2! qt tm! at
+If Xt is expanded about zero in a Taylor's series,
+x -x +F & | Lt ax . %
+t 0 1! dt 21 th ' m! gt
 t=0 t=0 t=0
-
 With Eq. (7) substituted for the derivative,
-
-2.2
+2,2
 At At
-= —— — ceoee
-X= Xo
+= +_ _+ * 8 9 80
+S R Ty %o
 or
-
 At .
-
-X, =e X, (Q.E.D.) (8)
+X, = ¢ X, (Q.E.D.) (8)
 The "incremental solution" is
-AT
-
-Xigpg = € x (9)
+At |
+Ko =€ %p (9)
 
 A
-where ¢ i the matrix exponential, is defined analogously to the
+where ¢ T, the matrix exponential, is defined analogously to the
+
 scalar exponential as
 
-\2 3 k
-AT oT are (Az)” az + {8 + (Az) (10)
+32 3
+eAT =1+ At + Légl—-+ ngl- + ..
 
-CI kt
-Id
+X
+4
 
 in which I is the identity matrix
 
-100 cesses O
-010 essse O
-0010 ...0
+lOO .....O
+Olo .88 89 O
+0010 ... 0
 
-0 eoecsseesD 1
+*
+
+O ..ll....ol
 
 2.2 For Nonhomogeneous Equations
 
 The matrix equation representing a system of first-order, constant
-coefficient differential equations with nonzero forcing functions is
+coefficient differemtial equations with nonzero forcing functions is
+
 the nonhomogeneous equation
 
-ax
-at
+%=AX+Z, | (11)
 
-where Z is the disturbance, or forcing function,vector.
+where Z is the disturbanée, or forcing function,vector.
 
-= AX . Z, (11)
+A general incremental solution of the ndnhomogeneous equation
 
-A general incremental solution of the nonhomogeneous equation
+as derived by Lioull is
 
-as derived by Liou! is
+C t+T R
 
-Co t+7 :
-Xx, =x + ssf: Ag ar . (12)
+AT A(t+'r)f =AT
+= + ¢ . :
+Xt+T € Xt € te _ ZT dt | (12)
 
 An exact solution derived from Eq. (12) for the case where the
 
-forcing function Z is constant over the interval t to t+t is
+forcing function Z is constant over the interval t to t+7 is
 
-At At -
-X,o=€ X + (7 -I)A 'z, . (13)
+At - AT -
+Xt+T = ¢ Xt + (e -I)A th . (13)
 
 It is important to note that the inverse of A need not be calculated
 
 to evaluate Eq. (13) since
 
-(e Moat - + Aq + we?
-
-wt
-
-LB LK |
-
-Toe TxD
-
-il
-HH
-a
-+
-+
-
  
 
-ol
-o—
-Ww
+k! ?
 10
 
 2
-= T I+ at + Aol,
+= 7 :|:+-§':'E +£%T—L+
 
-(ar)k-t
-°* k! ’
+EAT}k-l
+Kkl ?
 
-oo k-1
-: y Cn (14)
+o9 | k-1
+Yy A (14)
 k=1
 
-Because this series is similar to that used to represent AT,
+Because this series is similar to that used to represent eAT,
 
 the computer program can calculate the two required matrices
 
-(Ar)! series equals
+(c—:'}[\T-I)A-l series equals
 
 concurrently, since the kth term of the
-the (k-1)th term of the AT series times (1/x). In the MATEXP
-program, the AT matrix is called the "C" matrix and the (AT -1)a™t
+the (k-1)th term of the "' series times (7/k). In the MATEXP
+program, the AT matrix is called the "C" matrix and the (EAT -I)A-l
 matrix is called the "HP" matrix (in honor of H. Paynter).
 At this point, two essential features of the matrix exponential
 method are emphasized:
 1. The exponential matrices can be computed by the series
-approximation to nearly any desired precision (typically,
-1 part in 10° is specified for MATEXP calculations). Hence,
+approximation to nearly any,desired precision (typically,
+1 part in 10° 1s specified for MATEXP calculations). Hence,
 for homogeneous equations and for nonhomogeneous equations
 in which the forcing functions remain constant over the
 computation time interval, the solutions are virtually exact
-solutions. }
-2. The solution vector can be updated successively by a time
+solutions. _
+2, The-solution vector can be updated successively»by a time
 
-increment 7 by two matrix multiplications:
+increment T by two matrix multiplications:
 
-X = C Xs + HP Z4
+= +
+XT- C XO HP ZO
 
-X,. = C X_ + HP Z.
-ete
-If it is assumed that just one time increment value 7 is
+XQT = C XT + HP 7.
+eéc
+If it i1s assumed that just one time increment value T‘iS
 required, the C and HP matrices need to be evaluated only once.
 An exact solution to the set of nonhomogeneous differential equations
-can also be derived from Eq, (12) for the case where the forcing |
-function Z varies linearly within the computation interval =<.
+can also be derived from Eq, (]12) for the case where the forcing |
+function Z vqries linearly within the computation interval <.
 
 In terms of the matrix exponential series approximations, the
->
+.'.’
 
 11
 
 trapezoid forcing function incremental solution is
 
-oO .
-AT 11 k-1
-Xp =€ Xp tT > kt cap (a7) Zn
+o0 _
+A
+
+AT 1.1 k-1
+S zm)—) (hr)™" 2,
+. k=1 .
+
+20 () yk-1 |
+T (et D)0 Ze4t ° | (15)4
+
 k=1
 
-2, k=l |
-TT > GD)? Zetec ©. (15)
-
-k=1
-
-co 11
+C 11 : |
 Liou = has also developed a recursive formula for accurate
 approximations of continuous forcing functions which uses a Simpson's
 
-rule approximation of the nonhomogeneous solution, Eg. (12), within
+rule approximation of the nonhomogeneous solution, Eq. (12), within
 
-the time interval tT:
+.the time interval =t:
 
 At T 21 At/2 T
-Royo ™ € [x +82) +S € Zprfo * B Pr (16)
+Xppr ™ € [Xt+6Zt]+3 € Zepcfo ¥ T Py (16)
 
-As with the case of the step-wise varying forcing functions, the
-matrices required for Eqs. (15) and (16) need to be evaluated just
+As with the case of the step-wise varying forcing funétions, the
+matrices required for Egs. (15) and (16) need to be evaluated just
 once at the start. These features are not presently included in the
 
-MATEXP code, but could readily be added as options.
+MATEXP code, but could readily be added as options. .
 
 2.3 Miscellaneous Features of the Matrix Exponential
 
-Since the matrix exponential principle has been a part of the
+Since the matrix exponential priﬁciple has been a part of the
 mathematical literature for many years, the matrix exponential has
-had at least two other names: the fundamental matrix, and the
-transition matrix. Besides the series approximation method, an
+had at least two other names: +the fundamental matrix, and the
+transition matrix. Besides the series appfoximation method, an
 
 9
 
 analytical method is often used to calculate this matrix; however,
 the eigenvalues of A and their eigenvectors must be calculated and
-the initial condition vector must be transformed by a matrix
-comprised of the eigenvectors. It is emphasized that the series
+the initial condition vector must.be transformed by a matrix
+comprised of the eigenvectors. It is emphasizéd-that the series
 method used in MATEXP does not require that the coefficient matrix
 be nonsingular (i.e., have a nonzero determinant) or that its
 eigenvalues be distinct (a case where the analytical solution has
-terms of the form 1b and cannot be expressed as the sum of
+terms of the form te”" and cannot be expressed as the sum of
 exponentials). The latter condition, which occurs in problems
 
-where two time constants in a decay chain are equal, was one of
+where two time constants in a decay chain are egual, was one.of
 12
 
-the problems that Pease encountered in reactor burnup calculations
-that prompted him to develop the matrix exponential method.”
+the problems that Pease encountered in reactor burnup calculations -
+that prompted him to develop the matrix exponential method.5
 
 Another feature noted by Pease (but not included in MATEXP) is
 that the average solution vector X could be obtained directly from
-a matrix exponential type calculation.
+a matrix exponential type calculation,
 
 From the mean value theorem,
 T
 
-x -2[ X, dt,
+X =%j' X, dt,
 0
 
 X can be obtained by integrating the equation for X in terms of C
@@ -569,82 +547,82 @@ and HP:
  
 
 T T
--_ 1 1 [ 1
+= 1 1 [ 1
 = = = = + .
-X 2 [, at : | cx (HP) Zy | at (17)
+X fot dt Tf cxo (HP) Zoj dt (17)
 0 0
 Term by term integration of the series approximations for C and
-HP gives
-T
-2e 3
-[oar=s Et +... l=, (18)
-0
+HP gives | '
+. _ .
+2 3
+det='c I+§if—+'(§f) + A",f + ...|l=28P, (18)
+o
 and
-; 2
-[mas STE Ae) +e |. (19)
-0
+; 2 |
+fHPdt='12 "QI'TJ’E%JF A’f) T (19)
+0 ,
 
 The latter series, like the HP matrix calculation, could easily
 be made concurrent with the other matrix exponential calculations.
 
 The accuracy of MATEXP solutions, both in absolute terms and
 compared with other methods, is difficult to estimate quantitatively
-for the general case. Even for those cases that are solved "exactly,"
+fér the general case. Even for those cases that are solved "exactly, "
 the successive multiplications of the solution vector by the matrix
 exponential naturally tend to accumulate errors. However, with
 precise calculations of the C and HP matrices as recommended in the .
-Appendix, Sect. 5.1, test cases have shown this error to be negligible
-for large systems (LO x 40), even after many thousands of updating
-calculations. Liou! has developed an alternative method of evaluating
+Appendix, Sect. 2.1, test cases have shown this error to be negligible
+for large systems (L0 x LO), even after many thousands of updating
+calculations. Lioull has developed an alternative method of évaluating
 the C and HP matrices to a prescribed accuracy.
 
 The nature of the matrix exponential method permits the use of
-&*
+%
 
 13
 
-much larger computation time intervals Tt than would be feasible for
+much larger computation time intervals 1 than would be feasible for
 most numerical integration solutions. For constant-coefficient
 equations and a given 1, it would be safe to assume that MATEXP would
-be inherently more accurate. As is usually the case, however, it
-would be unwise to generalize about nonlinear equations. Nonlinear
+be inherently mére accurate. As is usually the case, however, it
+would be unwise to generélize about nonlinear equations. Nonlinear
 solutions are discussed further in Sect. 3.4.
 
-Eq. (20) gives a rough estimate of MATEXP solution times on the
-IBRM-T7090 computer, assuming that a negligible time is spent in the
+Eq. (20) gives a rough estimate of MATEXP so;ution times on the
+IBM-7090 computer, assuming that a-negligible time is spent in the
 
 peripheral subroutines:
 
-Solution time(min) ® 3.0 x 10° (NE)Z NT , (20)
-where NE is the number of equations, and NT is the number of
-computation time intervals. For éxample, a 59 x 59 system run for
-1000 time steps took 10 min, and an 8 x 8 run for 10,000 ‘steps took
-1.5 min. The solution time factor will vary from about 2 x 107° to
-T x 107°, depending on the amount of extra subroutine computation and
+Solution time(min) ® 3.0 x 1'66'(NE)2 NT , (20)
+where NE is the number of equations, and NI is the number of
+computation time intervals. For éxaﬁple, a 59 x 59 system run for
+1000 time steps took 10 min, and an 8 x 8 run for 10,000 steps took
+1.5 min., The solution time factor will vary from about 2 x 10-6 to
+T x 10-6, depending on the amount of extra subroutine computation and
 printout, and will be approximately halved for homogeneous equations.
 
-The present "standard" version of the MATEXP program solves up
-to 60th-order equations and uses about 22,000 words of core storage.
-In a 32,000 word computer, the extra 10,000 words emn be used for
+The present "standard” version of the MATEXP program solves up
+to 60th-order equations and uses about 22,000 words of‘core storage.
+In a 32,000 word computer, the extra i0,000.words caﬁ be used for
 special programming or storage, or the order of the equation’ can be
-increased to about 80. Since, for larger problems, tape or other
+increased to about 80. Since, for larger probiéms, tape or other
 slower storage devices would be required to calculate the matrix
 exponential functions, the overall efficiency of the method would be
 reduced. | |
 
 Two other interesting, though perhaps purely academic, features
-of the matrix exponential technique are that the solution time
+of the matrix exponential technique are that the solution timé
 increment can be negative (allowing one to go backwards) and that the
 
 A matrix can contain complex coefficients.
-3. DESCRIPTION OF MATEXP PROGRAM AND OPTIONS
+3. DESCRIPTION OF MATEXP FROGRAM AND OPTIONS
 
-3.1 Basic Input Information
+3.1 Basic Inpup Information
 
 The MATEXP program was written with the intent that it should
 
 be easy to use for a wide variety of differential equation problems.
-1h
+1L
 
 Unfortunately, as a program becomes more general, i.e. the more
 options and special features the program has, it becomes more difficult
@@ -653,216 +631,219 @@ Consequently, any apparent awkwardness and complications in the
 following discussion are due to a desire to make it general, and any
 omissions are due to a desire to keep it simple.
 
-The basic parts of the code are: the main program, MATEXP; the
+The basic parts of the code are: +the main program, MATEXP; the
 utility subroutine used for outputting, OUTPUT; and the subroutine
-for calculating forcing(or disturbance )functions, DISTRB. To solve
-linear, constant -coefficient differential equations that are
+for calculating forcing(or disturbance)functions, DISTRB. To solve
+linear, constant-coefficient differential equations that are
 homogeneous (i.e. have no forcing functions) or which have only fixed
-forcing functions, all the required data can be read in and no extra
+forcing functions, all the required data can be read'in>and no extra
 programming is necessary. For equations of the form
 
-& = AX +2,
+%% = AX + 7,
 the initial values of the X vector, the coefficient matrix A, and
-the (fixed) disturbance vector Z may be read in. Other information
-required for each run is the following:
+the (fixed) disturbance vector 7 may be read in., Other information
+required for each run is the following: |
 1. number of equations,
-2, initial time (or other independent variable),
-3. computation time interval,
-4, final time,
-5. dnterval at which solution vector X and disturbance vector Z are
+2. initial time (or other independent variable),
+3. compﬁtation time interval,
+4., final time,
+5. interval at which solution Vector X and disturbance vector z are
 to be printed.
 
 Since many elements of the coefficient matrix A are often zero,
 only the nonzero elements need to be read in.. This makes it necessary
-to identify each coefficient with its row and column number. The
+to identify each coefficient with its fow and column number. The
 nonzero values of the initial condition and fixed disturbance vectors,
-with their row numbers, are read in similarly. |
+with theif row numbers, are read in similarly. |
 
 Since successive runs might require no changes (or only a few)
 in input data from the previous run, options are provided so that
-only the altered data has to be read in.
+only the altered data has to be read in. |
 
 An option is also available whereby the last value of the X vector
 
-from one run can be used as the starting value of the succeeding run.
+from one run can be used as the starfing value of the succeeding run.
 15
 
 This option can be used if changes in the computation or printing.
-interval are required in the middle of a solution or if certain
-iteration or successive approximation schemes. are being used.
+interval are required in the middle of & solution or if certain
+iteration or successive épproximation schemes are being used..
 
-A complete description of the inputs and options is: given in
+A complete description of the inputs and options 4is: given in
 
 the Appendix, Sect. 5.
 
 3.2 Alternative Methods of Generating the Coefficient Matrix A
 
-Although the most straightforward method of inputting the
-coefficient matrix is to read it in, very often it is advantageous
+Although the most straightforward method of inputting ﬁﬁe
+coeffiéien£ matrix 1s to read it in, very often it is advantageous
 to have some or all of the elements calculated from system parameter
 values. One option of MATEXP provides for this to be done by special
-programming on the first call of DISTRB.. An alternative is to use
-an "algebra table" routine developed by Kerlin and Lucius. 10 This
-routine calculates the matrix elements from input parameter values
-without any special programming. The general expression used for
-calculating an element 2 4 in terms of parameters Pr and their
+prbgramming on the first call of DISTRB.. An alternative is to use
+an "algebra.table" routine developed by Kérlin and Lucius.16 This
+routine calculates the matrix elements from‘input parameter values
+without any specilal programming. The general expression uséd for
+calculating an elemenf aij in terms of parameﬁers Pk and their
 
-exponents Eq is
+exponents EkQ is
 
-11 _ or Epp nl Eo, Bp 5 Eso Lp
+n1 Eo By . B3p Ep
 
-E E E.. E
-84 = C,Py B, Py cee By + CoP) P, 3 cel +
+E E E._ - E
+11 o1 31
+= 2 @& 8 + * 89 a & &
+2, 5 ClPl P, P3 P CoPy P, 5 P +
 or m n
-a,, =) Cg pK (21)
-ij ¢
-f=1 k=1
+a =) C, ;%ﬂ | (21)
+1] g .
+1=1 k=1
 
 A complete description of the program is given in reference 16.
 
 Beside the fact that it is sometimes convenient to have the
 coefficient matrix calculated by the computer, in some cases computer
 computation is almost necessary to obtain accurate solutions. This
-was the case for one reactor dynamics calculation where the coefficients
+was the case fof one reactor dynamics calculation where the coefficients
 were first carefully calculated on a 20-in. slide rule, then by the
 
 machine. The difference in the steady-state solution for neutron
 
-16p, W. Kerlin and J. L. Lucius, A Technique for Calculating
+16T. W. Kerlin and J. L. Lucius, A Techniqpe'for Calculating
 Frequency Response and its Sensitivity to Parameter Changes for Multi-
+Variable Systems, ORNL-TM-1180 (June 1965).
 
-Variable Systems, ORNL-TM-1189 (June 1965).
+ 
+
+ 
 16
 level after a reactivity insertion was approximately a factor of 2.
 
 3.3 Alternative Methods of Generating the Forcing Function Vector Z
 
-When variable forcing functions are needed, a special program
-must usually be written and included in DISTRB. Two special forcing
+When variable forcing functions are needed, a sﬁecial program
+must usually be written and included in DISTRB. Two‘special forcing
 function subroutines have been written to simplify the programming:
-DFG, for approximating arbitrary functions; and TRIG, for approximating
+DFG, for approximating arbitfafy functions; and TRIG, for approximating
 variable transport lags. They are both described in Sect. 3.5.
 
 For cases where the forcing function is a solution to an ordinary
-differential equation, this equation can simply be added to the system
-matrix, and an exact solution can be obtained. As an example, assume
-that a sinusoidal forcing function is used to excite a damped spring-
+diffefential equation, this equation can simply be added to the system
+matrix, end an exact solution can be obtained. As an example, assume
+that a sinuscidal forcing function is used to excite a damped spring-
 mass system. The quadratic equation that describes the displacement
 
 y of the mass with time is
 
-2 oo
-dy +a Xs by = ¢ sin (wt + $) (22)
-2 tat ©
+2 - o
+S¥ a4 vy =c sin (wt + ¢ | (22)
+3t° dt C
 
 where w is the frequency of the sinusoidal input (radians/time).
 
-To arrange the equation in terms of first-order. derivatives, let
+To arrange the equation in terms of first-order: derivatives, let
 
-CNA
-XE 3t J (23)
-X, 2Y - (2k)
-: 2, 2 Co
-Solving for d7y/dt” (or dx, /dt), we obtain
-dx,
-= - ax) - bx, + c¢ sin (ot + #), (25)
+- 4y
+xl' - dt J (23)
+Xp 2 Y - (2k)
+: 2 .2 B
+Solving for d"y/dt" (or dxl/dt), we obtain
+dx, |
+T - bx, + ¢ sin (wt + ¢), (25)
 and
-dx,
+dx
 2
-x = Xq oe (26)
-The equation for a pure oscillator with frequency w is
+The equation for a pure oscillafor with frequency w is
 2
-s+ afs=0. (27)
+d
+Lo s=0- (e
 17
 
-: ds
-If we let xq = 30 and x), = ws, then
-gy
-&® CT (28)
-ax,
-Fralie w xq . (29)
-If the initial conditions of xq and X) ‘are zero and -1, respectively,
-then
-x5(t) = sin wt , (30)
-x(t) = =cos wt . (31)
+- ds
+If we let x3 = 3t and X, = ws, then
+dx3'
+x - —wx) (28)
+dxLL
+T - X3 e (29)
 
-Thus Cxq could be substituted for c sin (wt + &) in Eq. (25) The
-required initial conditions of velocity x,(0) and displacement x,(0)
+If the initial conditions of x_, and X) ‘are zero and -1, respectively,
+
+3
+then
+
+sin wt , (30)
+
+x3(t)
+
+-cos wt . (31)
+
+Xu(t)
+. Thus éx3 could be substituted for ¢ sin (wt + @) in Eq.(25). The
+required initial conditions of velocity xl(O) and displacement x2(0)
 must also be specified.
 
 The coefficient matrix for this example is
 
--a -b +c 0
+-a -b +c Ol
 
 +1
-A= 0 “0
-0) 0 +0 0
+A= 0 -
+O 0 +w 0
 
-If the sinusoidal input were introduced as a forcing function, it
-would appear as a stair-step approximation of a sine wave, and the
-accuracy of the solution would depend on the accuracy of this
-approximation. A comparison of the approximate and exact solutions
+If the sinusoidal input were introduced as a forcing functionm, it
+would appear as a stair-step approximatioﬁ of a sine Wave, and the
+accuracy of the solution would dépend on the accuracy of this
+approximation. A comparison of the apﬁroximate'and exact solutions
 for a specific example is shown in Fig. 1. In the approximate
-solution, a first-order extrapolation was used to approximate the
-average value of the forcing function over the time interval.
+solution, a first-order extrapolation was uséd to approximate the
+average value of the foréing function over the time interval.
 
-In this example, the system has a natural frequency of 1.0
-radian/sec and a damping factor of 0.25, and the driving sinusoid
+In this example, the system has a natural frequéncy of 1.0
+radian/sec and a damping factor of-0.25, and the driving sinusoid
 has a frequency of 2.0 radians/sec. The computation interval of
-0.5 sec for the approximate case gives about seven computations
+0.5 sec for the aﬁproximatebcase gives about seveh coﬁpUtations
 per cycle of the driving function. Figure 1 also shows the response
 
-after a long time where the excellent stability and accuracy of both
-1.0 vy
-
-ORNL DWG. 67-10215
-
- 
-
-51
-Position
-X2 0
-
-J
+after a long time where the excellernt stability and accuracy of both
+B ORNL DWG. 67-10215
+1.0+ | ‘
 
  
 
-—- 1.0 st
+ 
 
->
+  
 
  
 
-oo | ~ ) ~
-| AN Maximum error in
-. Time (sec) approximate solution = 0.014
-
-Maximum error in initial transient - Exact MATEXP solution
-
-©. approximate solution = 0.020
-
+S 1
+Position - | N p] _ !
+Xz 0 - ' ] T es [
+| | | R Maximum error in
+%\ ) Time (sec) approximate solution = 0.014
+- Lk . ) .
+™ Maximum error in initial transient ' Exact MATEXP solution
+* .. approximate solution = 0.020 -
 X Approximate solution, At = 0.5 sec
+> : o ' :
+. Fig. 1 - Comparison of Exact MATEXP and Approximate MATEXP
+' . Solutions for Sinusoidal Input to Damped
 
-Fig. 1- Comparison of Exact MATEXP and Approximete MATEXP
-Solutions for Sinusoidal Input to Damped
-Spring-Mass System
-
- 
+- 1.0 3 o Spring-Mass System
 19
 
 solutions can be seen. This type of calculation is, historically,
 
-very difficult to do with standard digital methods.
+very difficult to do wiﬁh standard digital methods.l7.
 
 3.4 Methods for Solving Time-Varying-Parameter and Nonlinear
 Differential Equations
 
 It was shown in Sect. 2 that the MATEXP method can provide exact
-solutions to sets of constant -coefficient, homogeneous differential
+solutions to sets of constant-coefficient, homogeheous differential
 equations and to nonhomogeneous equations for which the forcing
-functions can be represented by stepwise-varying functions. Since
-forcing functions are usually smoothly varying, the accuracy of the
-solution would naturally depend on the accuracy of the stair-step
+functions can be rebresentéd by stepwise-varying functions. oince
+forcing functions are usually smoothly vérying,;the accuracy of the
+solution would naturally depend on the accufacy of the stair-step
 approximations.
 
 Likewise, in the case of time-varying-parameter, or nonlinear,
@@ -874,21 +855,17 @@ method for low-order equations (~10 or less), it could be quite
 time consuming for larger problems.
 
 A more efficient method of solution is to modify, or "fudge;"
-the forcing function vector so that it compensates for the variation
+the forcing function vector so that it compensateé for the variation
 in coefficients while the A, C, and HP matrices remain constant.
 
 This is shown schematically in Fig. 2.
 
-TR. A. Gaskill, "Fact and Fallacy in Digital Simulation,”
-‘Simulation, 5 (5), 309- 313 (wv. 1965).
+7R, A. Gaskill, "Fact and Fallacy in Digital Simulation,”
+‘Simulation, 3 (5), 309 313 (Nov. 1965)
 20
 
  
 
-Nonlinear Equations
-
-Z(t ) =p —> X(t) (Exact)
-
  
 
  
@@ -897,13 +874,7 @@ Z(t ) =p —> X(t) (Exact)
 
  
 
-  
-
  
-
-A= f(t,X)
-+ z.(t,X)
-Z(t) —— Ay X(t) (Approximate)
 
  
 
@@ -915,7 +886,18 @@ Z(t) —— Ay X(t) (Approximate)
 
  
 
-p fa—o
+ 
+
+ 
+
+ 
+
+Nonlinear Equations N o
+Z(t )= A = £(t,X) —> X(t) (Exact)
+Z(t) Ay - X(t) (Approximate)
++
+6A X 96'
+L
 
  
 
@@ -926,57 +908,48 @@ p fa—o
 Fig. 2. Approximate Solution Using Fudged Forcing Functions.
 
 Each component of the fudged forcing-function vector is calculated
-by adding all the coefficient perturbation quantities in the row. For
+by adding all the coefficient perturbation quantities in the row. TFor
 
 example, assume one row of the matrix equation is
 
-&
-
+S dx
 1
-
-at = 1 (%) Xx, + 8p X 5 213 (t) *3 + z, (t) ’
-where qq os and z, are variables and ayo is a constant.
-Let _ 1
-
-ay (8) = (ay)g + 2g;
+where a l’ al3, and z, are variables and 810 is a constant.
+Let _ '
+ay (8) = (a))g * agy
 and
-
-—_ 1
-213 (t) = (213) + 213 *
+—_ !
 
 Then the equation can be rewritten .
-
-dx
-
-. |
-T= laplg x tap x + (a
 
 )
 
 |
-+2) +a x vagy xg .
++ 2 (t) + all xl + al3 x3 .
 _
 
-= = 2,(t,x)
+= Zf(t:x)
 
-13°0 *3
+. |
+| — +
+7o = (811)0 ¥ * 2p % ¥ (813)4 X5
 
  
 
-Again, the forcing function z, would actually be smoothly varying,
+Again, the foreing function zf‘would'éctﬁally be smoothly varying,
 
-but in the MATEXP difference equations, it is approximated by a
+but in the MATEXP difference equations, 1t is approximated by a
 
-stair-step function.
+stair-step functlon.
 21
 
-For the case where the coefficients and/or the forcing functions
-are known functions of time, much greater accuracy (for a given
-computation interval Tt) results from using approximate mean values,
+For the case where the coefficients and/or the forciﬁg functions
+are known functions éf time, much greater accuraéy*(for a givén
+computation interval T) reéults.ffqm.using'approximate.mean values,
 rather than initial values, of the functions in the computation
 interval. First-order approximations of the mean values can be
 obtained by evaluating the time-varying forcing functions and matrix
-elements at (t + 7/2) instead of at (t). First-order extrapolations
+elements at (t + 7/2) instead of at (ﬁ). First-order extrapolations
 of the mean values of the solution vector X should also be used
 
 where coefficients are functions of X, as shown in Fig. 3.
@@ -984,7 +957,7 @@ where coefficients are functions of X, as shown in Fig. 3.
 Straight-Line
 Approximation
 
- 
+e
 
  
 
@@ -996,45 +969,53 @@ Approximation
 
  
 
-> time
+ 
 
  
 
-Fig. 3. First-Order Extrapolation of Mean Values of z and x at (t+3).
+ 
+
+ 
+
+P time
+
+ 
+
+Fig. 3. First-Order Extrapolation of Mean Values of z and x at (t+%),
 
 The use of an auxiliary subroutine VARCO greatly simplifies the
 programming required to use first-order extrapolation calculations to
-find approximate mean values of the forcing function.  VARCO is
+find approximate mean values of the forcing function. VARCO is
 described in detail in Sect. 5.2.
 
 The only way of guaranteeing that the solution is accurate is to
-reduce the computation interval tT until further reductions make no
+reduce the computation interval T'ﬁntil further reductions make no
 
 significant difference in the solution. A simple, intuitive estimation
 22
 
 of the accuracy, however, may be obtained by noting the maximum amount
-of change in the solution and coefficient values within a computation
+of change in the solution and coeff1c1ent values within a computatlon
 interval. If these changes are only a few percent of the values of
-the functions at the start of the interval, then the first-order
-approximations will probably give very accurate answers. The true
-accuracy of the representation of a nonlinearity should also be
-considered when trying to "squeeze" too much accuracy out of a
-solution. -
+the functions at the start of the interval, then the flrst-order
+approximations'will probably give very accurate answers. The'true
+accuracy of the representatlon of a nonllnearlty should also be
+considered when trylng to "squeeze" too much accuracy out of a
+solution. - _ |
 
-The use of fudged forcing functions for the solution of nonlinear
-differential equations is very effective when relatively few of the
-matrix coefficlents are variable. In this case one mi ght consider
+The use of fudged forcing functions for the soiutiqn of nonlinear
+differential equations is'vefy effective when relatively few ef the
+matrix coefficients are variable. In this case one ﬁight consider
 the linear portion of the system of equations as being solved by an
 extremely accurate analog computer, while the nonlinear portion is
-simulated by a not=-quite-so-accurate computer. If most of the
-matrix coefficients are variable, then the more conventional numerical
-solution methods might be more practical than MATEXP.
+simulated by a not-quite-so-accurate computer. If most of the |
+matrix coefficients are variable, then the more conventlonal numerlcal
+solution methods might be more practlcal than MATEXP
 
-More detailed discussions of the theory and use of fudged forcing
+More detailed dlscus51ons of the theory and use of fudged forcing
 functions have been found disguised in sophisticated mathematical
 
-treatises by Wolsto and Frazer et a1.
+treatises by Wolf18 and Frazer et a1t
 
 3.5 Special Forcing Function Subroutines
 
@@ -1042,34 +1023,38 @@ Since special programming is required in the DISTRB subroutine
 to generate variable forcing functions for the differential equations,
 two general purpose subroutines were written to facilitate this
 
-programming for some problems.
+pProgramming for some problems.
 
 3.5.1 Arbitrary Function Generation - DFG
 
  
 
-The arbitrary function generation subroutine DFG provides a means
-of generating approximations of single-valued functions of one
+The arbitrary function generation-subroutine DFG provides a means
+of generating approximations of singleevalued_functions of onef
 
-variable where the arbitrary function curve is represented by a
+variable where the arbitrary function curve is~represented by a
 
-18
-‘A. A. Wolf, "Some Recent Advances inthe Analysis and Synthesis
-of Nonlinear Systems", Am. Inst. Elec. Engrs. transactions paper
+18 . | | |
+, "A. A. Wolf, "Some Recent Advances in-the Analysis and Synthesis
+of Nonlinear Systems", Am. Inst Elec. Engrs. transactlons paper
 No. 61-713.
 
-Lr. A. Frazer, W. J. Duncan, and A. R. Collar, Elementary
+'9R. A;-Frazer, W. J. Duncan, and A. R. Cellar, Elementary
 Matrices, Cambridge University Press, 1957, pp. 232-45.
 23
 
-series of linear segments (Fig. 4). The principle is identical to
-that of the diode function generator (hence DFG) used in. analog
-
+series of linear segments (Fig. 4). The principle is identieal to
+that of the diode function generator (hence DFG) used in.analog
 computation.
 
 Output
+? Actual
+
+Approximate
 
  
+
+Q , S>> Input
 
  
 
@@ -1079,84 +1064,89 @@ Function of One Variable.
 DFG in its standard form arbitrarily allows for up to 8 functions
 with up to 32 points (or 31 line segments) per function. Inputs
 required are the ordinate and abscissa values of the line-segment
-end points. If more functions or finer approximations are required,
-the dimensions could be changed easily. More details on the program
+end points. If more functions 6r finer approximatibns are required,
+the dimensions could be'changed eaéily. More details on the program
 
 and a Fortran listing are given in the Appendix, Sect. 5.
 
  
 
-3.5.2 Variable Transport lag Generation - TRIG
+3.5.2 Variable Transport Lag Generation - TRIG
 
 A transport lag (also known as a pure time delay, or dead time)
-actually represents a distributed parameter system; hence, its
-representation in a lumped -parameter solution will be only approximate.
-The output z from a pure delay device with an input x and a fixed
+acfuaiiy represents a distributed parameter system; hence, its
+representation in a iumped-parameter solution will be only approximate.
+The output =z from a pure delay device with an input x and a fixed
 
-delay time tT is
-z(t) = x (t -1).
+delay time T is
+z(t) = x (t ~-1).
 
-If tv is variable, then the relationship between z and x is a function
+If v is variable, then the relationship between z and x is a function
 of the time history of =.
-The variable time-delay problem is best illustrated by
-fluid flow in a pipe where the inlet temperature and flow rate are
+The variablertime—delay problem is best illustrated by
+fluid flow in a pipe where the inlet temﬁerature énd flow rate are
 both variable. The assumptions required for a pure delay are:
 1. there is no heat transfer to the pipe;
-2. the fluid density is constant;
+2. the fluid density is constant; -
 3. plug flow exists, i.e., there is no mixing of the fluid in the
 
 direction of flow.
-2h
+2k
 
 The technique used in TRLG is to sample the inlet temperature x
 and the flow rate W at each computation time interval T, thereby
 keeping an inventory on each slug of fluid in the pipe. The total
-weight of fluid in the pipe is computed from the initial transport
-time 7, and the flow rate W:
+. weight of fluid in the pipe is éomputed from the initial transport
+time T, and the flow rate W.: |
 
-P, tal (1b) = Ww, (1b/sec) x Ty (sec) .
+P, tal (1b) = W, (1b/sec) x T (sec) .
 Similarly, the weight of fluid that enters during each time interval
-T is W(t) x T. Since the fluid density is constant, the weight of
-fluid that leaves during that interval T is equal to the weight of
-the inlet slug. | oo |
+T is W(t) x T. Since the fluid density is consfant, the weight of
+fluid that leaves during that interval T 1s equal to the weight of
+the inlet slug. | o o
 
 As an example, assume that the temperature profile in the pipe
-is as shown in Fig. 5 and the slug at the inlet of AP, 1b is about
-to enter. The slug at the outlet is ap at a temperature X where
-AP > AP. When AP, enters, the outlet slug temperature will be
-equal to X and the whole profile will be shifted to the right
-by AP, 1b. The weight of the new slug just upstream of the exit
-is then (ap - APJ)
+is as shown in Fig. 5 and the slug at the inlet of APO'lb is about
+to enter. The slug at the Qutlet is APn at a temperature xn, wbere
+APn >-APO. When APO enters, the outlet slug temperature will be
+equal to X and the whole profilg will be shifted to the right
+byAAPO
+is then (APn - APO).
 
-If AF had been greater than AA the outlet slug would have taken
-AP etc.) as
+1f APO had been greater than APn, the outlet slug would have taken
+as much of the upstream inventory (i.e., AP 1, &P .,
 
-n-1’ n-2’
 required (up to 300 samples), and the outlet slug temperature z
 
-as much of the upstream inventory (i.e., AP
+1b. The weight of the new slug just upstream of the exit
+
+etc.) as
 
 would be computed as the weighted average of the slug temperatures.
-For example
-AF = AP + 0.5 AP 4 ,
+For example '
+if
 
-then so AP x + 0.5 oP 4 X 1
+APO = APn + 0.5 APn_l ,
 
-Z = ” .
-AP + 0.5 AP.
+then -f--APn-xh + 0.5 APn-l Xn-l
 
-If the maximum delay time (minimum flow rate) would use up too
-many storage locations, the sampling would be done every other (or
-every third, etc.) computation interval. With a variable lag, a ..
+Z = , .
+, AP+ 0.5 AP |
+
+If the maximum delay time (minimum flow rate)‘would use up too
+many storage locations, the sampling would beldone every other (o:
+every third, etc.) computation interval. With a variable lag, a .
 minimum expected flow rate must be specified to calculate how often
-to sample.
-The input variables supplied by the calling program for each call
+to sample. | ,
+The input variables suppiied by the calling program for each call
 of TRIG are XT (e.g., fluid temperatures) and the flow rates W (in
-Inlet : Outlet
+Inlet
 
  
 
  
+
+Outlet
 
  
 
@@ -1175,100 +1165,99 @@ of TRIG are XT (e.g., fluid temperatures) and the flow rates W (in
  
 
 Temperature
-x
-TTT
-|
-vb | |
-0 . i» P ;
-Weight of fluid (1b) Co “total
+-
+d};ff___r.._f._._.
+. |
 
-Fig. 5, Temperature Profile of Fluid in Pipe.
+| i 0
+v L : :
+0 . . P i
+Weight of fluid (1b) S “total
 
-“gz
+Fig. 5, Temperature Profile of .Fluid'in Pipe, -
+
+gz
 26
 
 terms of mass/time, unity for full flow, or some percentage of full
 scale). The lagged functions ZT are returned by TRIG.
 On the first call of TRLG, the flag NI should be zero, and the
+
 following input data are read in:
-NAGS
-TI
 
+NLAGS = number of functions used,
+TI = initial values of transport lag time for each function,
 WMIN = minimum expected values of flow W. for each function.
-
-number of functions used,
-
-fl
-
-1]
-
-initial values of transport lag time for each function,
 
 The initial values of fluid temperatures in the pipes are set
 equal to the initial values of inlet temperatures. If specific
-initial temperature profiles are required, they can be read in with
+initial temperature profiles are requifed,'they can be read in with
 only a minor change being required in the program. The standard
-version of TRLG provides for wp to six lags with up to 300 samples
-per lag. If more or fewer lags or points are desired, the statements
+version of TRLG provides for upAto sixvlags with up to 300 samples
+per lag. If more or fewer lags or points are desired, the stétements
 labeled DIMENS in the comment field can be changed accordingly.
 
-© More details on TRLG and a Fortran listing are in the Appendix,
-. Sect. 5.
+"~ More details on TRLG and a Fortran listing are in the Appendix,
+.oect. 5. .
 
 There are two other techniques that are commonly used to represent
 transport delays:
 
 1. A series of n first-order lags, or "well-stirred tanks," with
-time constants /n; oo
-2. A Padé approximation which uses several terms of a series
+time constants T/né o |
 
-approximation of eS (the Laplacian representation of a pure
+2. A Padé approximationfo which uses several terms of a series
+approximation of e_TS_ (the Laplacian representatlon of a pure
 
-delay), where S is the Laplacian argument. °
+delay) where S is the Laplacian argument .
+
 Both the series lag and Padé methods have accuracy and flexibility
-limitations that would be prohibitive for certain problems .ot
+limitatiOns that would be prohibitive for certéin problems.21
 Since the digital computer is quite proficient at sampling data,
 
 - the sampled data approximation as used in the TRLG subroutine is
 
-recommended as the most efficient and accurate method.
+récommended as the most efficient and éccuraté method..
 
-20a, E. Rogers and T. W. Connolly, Analog Computation in
+204, E. Rogers and T. W. Connolly, Analog Computation in
 
-Engineering Design, McGraw-Hill, N.Y., 1960, pp. 419-24.
-21s. q. Margolis and J. J. O'Donnell, "Rigorous Treatment of
+Engineering Design, McGraw-Hill, N.Y., 1960, pp. 419-2k.
 
-Variable Time Delays", IEEE Trans. on Electronic Computers, Vol.
+ 
+
+ 
+
+213, q. Margolls and J. J. O'Donnell, "Rigorous Treatment of
+Variable Time Delays", IEEE Trans. on Electronlc Computers, Vol.
 EC-12, June 1963, pp 307-9.
 
-<
-3
+ 
 27
 
-ly. SUMMARY AND CONCLUSIONS
+L, SUMMARY AND CONCLUSIONS
 
-The matrix exponential method has a number of advantages over
+The matrix exponential method has a numbef'of advantages over
 the more common integration schemes for a large and significant class
-of ordinary differential equation problems. The speed and accuracy
-of MATEXP have the potential of reducing computing costs for large
-problems and of making more 'real-time" computations feasible for
+of ordinary differential eQuation problems. The'speed ahd'accuracy
+of MATEXP have'the pbtential of reducing computing costs for large
+problems and of making more ''real-time" computations feasible for
 on-line digital computation, control, and optimization calculations.
 
 The MATEXP program has been developed over a period of several
 years, mainly through use in simulation problems. There are, however,
-at least three other areas in which the matrix exponential method
+at leasﬁ three other areas in which the matrix exponential method
 might be effective:
 
-1l. Automatic parameter estimation - where the parameters of the
-model differential equations are adjusted to optimize the
-agreement between theoretical and experimental response curves.
-A computer program to implement this technique 1s currently
+1. Automatic parameter estimation - where the parameters of the
+model differential équations are adjusted to optimize the
+agreement betﬁeen theoretical énd experimental response curves.
+A computer program to implement this technique is currently
 under development;
 
-2. Solution of nonlinear algebraic equations by the method of
+2. Solution of nonlinear -algebraic equations by the method of
 steepest ascents; and
 
-3. Boundary value problems.
+3. Boundary value problens.
 
 Other refinements that have been used with the MATEXP code
 include the addition of an automatic plotting subroutine and a more
@@ -1276,57 +1265,48 @@ efficient output routine which prints only specified variables.
 Forcing-function subroutines to solve implicit equations and
 generate functions of two variables are planned as additions to the
 
-"standard" package.
-28 .
+"standard'" package.
+28
 5. APPENDIX
 
 5.1 Problems in the Evaluation of Exponential Functions
 
 The Taylor series approximation for a scalar exponential function
-is ; & Kk 2
-€ NM Rokr SLtytord
 
-2
-
-r
-Ft eee +, (5.1)
-
-o-
-w
+° ) ¢ Y. v
+e’ n & =l+y+21+31+....+n1. (5.1)
 
 This approximation also holds true when the argument y is a matrix;
 
 hence, matrix exponential functions are amenable to digital computer
 calculation, since raising a matrix to a power is a straightforward
 
-operation.
+operation. | |
 
 It is important to note that the HP matrix calculation
-HP = [exe (Ac) - 1]at (5.2)
+HP = [exp (Ac) -'I]A'l | " (5.2)
 
 does not require inversion of the A matrix, and can be calculated
 directly from the terms of the C matrix approximation as shown
-in Sect. 2.2.
+in Sect. 2.2. ,
 
 There are several numerical problems associated with the matrix
 exponential calculations. The approximations will be valid only if
-1. the series will converge,
-
+1. the series will converge, - |
 2. the numerical computation does not lose significance due to
+
 overflow, roundoff, or truncation errors.
 
-Since the evaluation of exp (At) requires calculating. powers of the
-
+Since the evaluation of exp (Art) requires calculating:powers of the
 matrix At, there is a practical limitation on the maximum value of:
-
 the largest element in the At matrix, and experience has shown that
+it is most efficient to limit this value to'about'l.O. Should the
 
-it is most efficient to limit this value to about 1.0. Should the
-
-desired tT make max |A,.t] > 1.0, then T is halved up to 10 times
-
-i,J
+desired T make max A, .7
+1,
 for the exponential calculations. The original arguments are
+
+> 1.0, then T is halved up to 10 times
 
  
 
@@ -1335,74 +1315,69 @@ restored by applying the following equations as many times as
 required:
 29
 
-ol)
+C(Tj exp (A1)
 
-= exp (At)
-. Co (5.3)
-= exp (45) exp (45)
-HP() = [exp (AT) -1] a
-={ ES (3) 1) ek: + exp (5) | | (5.4)
+- I (5.3)
+= exp (A5) exp (A7)
+HP(T).E [éxp (A7) -I] A_lt
+o [exp (40 1] a7H[1 + exp (a3) -_ | (5.4)
 
 There are also provisions in the code to keep track of the roundoff
-errors in the exponential calculations. The maximum values of the
+errors in the exponential calculations. The ma.ximum values of the
 
-largest elements in the QPT matrices (hr) are monitored to make sure
+largest elements in the QPT matrices Lé%%— are monitored to make sure
 
 that they are not larger than the specified precision "P" times
-
-108 (for an eight-decimal computer). When the QPT terms are summed,
-
-the accuracy of the summation will be approximately P, since the
-summation is carried out until the largest element in QPT <P. If a
-maximum value of a QPT element does exceed Px 108, then 7 is halved,
-the exponential is calculated, and the original T is restored as before.
-
-Users are cautioned that roundoff errors may become significant
-if restoration of the original 1 requires very many applications of
-the argument doubling Egs. 5.3 and 5.k4. We know of no general rules
-for estimating this limitation; however, checks made on sample problems
-indicate a "safe" boundary probably exists at a precision P = 10 ~ and
-T halved 10 times. With a larger P and more halvings, one should at
-least be cautious about the results.
-
+lO8 (for an eight-decimal computer). When the QPT terms are summed;
+the accuracy of thersummation will be approximately P, since thé
+summation is carried out until the largest element in QPFT < P, If a
+maximum value of a QPT element does exceed P x 108, then 7 is halved,
+the exponential is calculated, and the original_T'is restored as before.
+Users are caufioned that roundoff'erroré~may become significant
+if restoration of the original T requires very many applications of
+thé argument doubling Eqs..5.3 andv5.4. lWe know of no general rules
+for estimating this limitation; however,'éhecks made on sample‘problems
+indicate a "safe" boundary probaﬁly existé'at a precision P = 10 ~ and
+T halved 10 times. With a larger P and mOré halvings,ione should at
+least be cautious about the results. ) |
 The fidelity of the results are also questionable whenever the
-ratio of the largest (absolute) matrix element to the smallest
+ratio of the largest (absdlufe) matrix'eleméht to the sﬁallest
 (nonzero) element is > 10". This might be a manifestation of a very
-wide range of time constants in a dynamics problem. With a range of
-~ 10°, clearly the faster time constants could be considered
-"instantaneous" with respect to the slower ones, and the equations
+wide range of time constants in a dynamicé problem. With a range of
+~ 108, clearly the faster time constants could.be considered
+"instantaneous" with respect.to the slower oqé$, and the equations
 
-could probably be rewritten to get around this problem.
+could probably be rewritten to get around-this problem.
 30.
 
 5.2 Detailed Description of Programs
 
-Hopefully the information given in this section is sufficient to
+Hopefully the information giveﬁ'in this section is sufficiént to
 permit the reader to use and modify MATEXP. Since we have tried
 going through this typically excruciating experience with programs
 from others, we have tried making things as clear as possible. In
 particular, we have used many comment cards in the program listings
-as a running explanation of what we are doing. Either author would
+as a running explanation of what we are doiﬁg; Either author would
 be glad to try to help out any potential MATEXP user, and would be
 
-happy to receive any suggestions for improving the program.
+happy to receive any suggesﬁions for improving the program.
 
 5.2.1 MATEXP Main Program
 
-The MATEXP program consists of the main program and two sub-
-routines. OUTPUT and DISTRB, plus any other subroutines called by
+ 
+
+The MATEXP program consists of the main’progiam and two sub-
+routines. OUTPUT and DISTRB plus any other sﬁbroutines called by
 DISTRB. Even if DISTRB is not used, a dummy must be included.
 
 For each case run on MATEXP, the data will include (if appropriate):
-
 1. MATEXP Control Card,
 
-2. Coefficient matrix (A),
-
+2. Coefficient matrix (4),
 3. Initial Condition Vector (XIC),
+4. Any data read in by subroutine DISTRB,
 
-4, Any data read in by subroutine DISTRB,
-5. Fixed forcing function vector (Z).
+5. Fixed forecing function vector (Z).
 
 Input Data Formats - MATEXP Main Program
 
@@ -1438,22 +1413,26 @@ Input Data Formats - MATEXP Main Program
 
  
 
-l. Control Card
-
-Column | 1-2 6-7 11-20 | 21-30] 31-40 | 41-50] 51-60 | 61-62
-
-Format | 12 |3X | I2 |3X| F10.0| F10.0 | F10.0 | F10.0| F10.0 Io
-
-Input | NE IL P TZERO T TMAX PLTINC | MATYES
-Control Card - cont'd
-
-Column | 63-64 | 65-66 | 67-69 70 TI=72[ 73-7% | 75-80 |
-
-Format | I2 I2 I3 | In I2 I2 F6.0
-
-Input | ICSS | JFLAG | ITMAX LASTCC I1Z | ICONIR VAR
+ 
 
  
+
+ 
+
+l. Control Card
+
+Column | 1-2 6-7 11-20| 21-30 ) 31-40 | 41-50]| 51-60 | 61-62
+
+Format | T2 13X {2 |3X| F10.0} F10.0] F10.0 | F10.0} F10.0 I2
+
+Input | NE LL P TZERO T TMAX PLTINC | MATYES
+Control Card - cont 'd
+
+"Column | 63-64] 65-66 | 67-69 70 T1-72] 73-74 | 75-80
+
+Format | I2 I2 I3 I1 I2 I . F6.0
+
+Input | ICSS | JFLAG | ITMAX LASTCC TI17 | ICONTR VAR
 
  
 
@@ -1482,65 +1461,71 @@ LL = coefficient matrix tag number
 
 number of equations
 
-P = precision of C and HP - recommend 1076 or less
-
+P = precision of C and HP - recommend 10-6 or less
 TZERO = zero time
 
 T = computation time interval
 
-TMAX = maximum time
+TMAX = meximum time '
 
-PLTINC = printing time interval
+PLTINC
+MATYES
 
-MATYES = coefficient matrix (A) control flag
-1 = use previous A and T
+1] = use previous A and T
+
+I
+
+printing time interval
+
+coefficient matrix (A) comtrol flag
 
 =-read new coefficients to alter A
 
-= read entire new A (nonzero values)
-
+= read entire rnew A (nonzero values)
 DISTRB to calculate entire new A
 
 = read some, DISTRB to calculate others
-
 = DISTRB to alter some A elements
-
  ICSS = initial condition vector (XIC) flag
 
-ON Ul = WwW nN
+O 1 & W
 il
 
 1 = read in all new nonzero values
 = read new values to alter previous vector
 = use previous vector
 
-vector = O
+= vector = O
 
-vi oF Ww
-I
+v W
+|
 
-= use last value of X vector from previous run
+= use last value of X vector from previous run -
 JFLAG = forcing function (Z) flag
 
 1 thru 4 = same as for ICSS for constant Z
 
 5 = call DISTRB at each time step for variable Z
 ITMAX = maximum number of terms in series approximation of exp (AT)
-LASTCC = nonzero for last case oo
-J1Z = row of Z if only one nonzero, otherwise = O°
-ICONTR ~- for internal control options
+LASTCC = nonzero for last case -
+I1Z2 = row of Z if only one nonzérd, otherwise = O
+ICONTR - for internal comtrol options -
 
-0 = read new control card for next case
+0 = read new contrél card for next case
 
-1 = go to 212 call DISTRB for new A or T
+1l = go to 212 call DISTRB for new A or T
 
 -1 = go to 215 call DISTRB for new initial conditions
 
 VAR = maximum allowable value of largest coefficient matrix element * T
 (Recommend VAR = 1.0)
+
+ii
+
+i
 32
 
-2. Coefficient Matrix A Format 4(213, El2.3) - Include if MATYES =
+2. Coefficient Matrix A Formaet 4(213, E12,3) - Include if MATYES =
 
  
 
@@ -1549,9 +1534,9 @@ VAR = maximum allowable value of largest coefficient matrix element * T
  
 
 2, 3, or 5.
-Column] 1-3 1-6 7-18
-Format I3 I3 E 12.3 Repeat,
-Input | Row No. Col. No. | COEFFICIENT 4 per card
+Column| 1-3 -6 ~ 7-18
+Format I3 I3 B 12.3 ’ Repeat,
+Input { Row No. Col. No.| COEFFICIENT 4 per card
 
  
 
@@ -1568,26 +1553,26 @@ Input | Row No. Col. No. | COEFFICIENT 4 per card
  
 
 Notes: 1. All row and column number entries on a card must
-be nonzero.
+be nonzero. '
 
 2. Insert blank card after all coefficient matrix
 data is read in.
 
 3. Data can be entered in floating point (F)
-format with decimal point. .
+format with decimal point. :
 
-3. Initial Condition Vector XIC Format (I2, 5(13, E12.3))~ Include
-if ICSS = 1 or 2
-
- 
+3., Initial Condition Vector XIC Format (I2, 5(13; E12.3))- Include
+if ICSS = 1 or 2 -
 
  
 
  
 
-Column | 1-2 3-5 6-17
+ 
+
+Column 1-2 3-5 6-17
 Format 12 13 E 12.3 Repeat Cols. 3-17,
-Input MM Row No.| I.C. Value 5 per card
+Input MM Row No.|} I.C. Value 5 per card
 
  
 
@@ -1603,12 +1588,12 @@ Input MM Row No.| I.C. Value 5 per card
 
  
 
-Notes: 1. A11 row number entries on a card must be nonzero.
+Notes: 1. Ail row number entries on a card must be nonzero.
 2. Insert blank card after all XIC data is read in.
 
 3. Data can be entered in F format.
 
-4. Disturbance Vector Z Format (I2, 5(13, El2.3))- Include if
+L. Disturbance Vector Z Format (I2, 5(13, El2.3))- Include if
 JFLAG = 1 or 2
 
  
@@ -1617,9 +1602,9 @@ JFLAG = 1 or 2
 
  
 
-Column 1-2 | 3-5 6-17
-Format I2 I3 : E12.3 * Repeat Cols. 3-17,
-Input KK Row No. 'Z Value 5 per card
+Column 1-2 | 3-5 ' 6-17
+Format I2 I3 : E12.3 "~ Repeat Cols. 3-17,
+Input KK Row No. "Z Value 5 per card
 
  
 
@@ -1638,13 +1623,19 @@ Input KK Row No. 'Z Value 5 per card
 Note: See notes under 3.
 
 Two figures are included to aid in understanding the MATEXP
-program. Figure 5.1 summarizes the data arrangement, and Fig.
-5.2 is a flow diagram of the main program. The symbols used in
-MATEXP are also listed and identified.
+program. Figure 5.1 sumﬁarizes the data arrangement, and Fig.
+5.2 is a flow diagram.of the main program. The symbols used in
+MATEXP are also listed and identified,
 ORNL DWG. 67-10216
-2 oc
 
-MATEXP CONTROL CARD -
+e 7 ac*
+
+ 
+
+rMA’I‘EXP CONTROL CARD -
+
+ 
+
 Case 2
 
  
@@ -1658,23 +1649,23 @@ JFLAG = 1 or 2
 
  
 
+ 
+
   
-    
+ 
+  
+
  
 
-ICSS = 1 or 2 }
+ICSS =1 or 2 7
 
  
 
-A COEFFICIENTS
-
-   
  
 
-MATEXP CONTROL CARD >
-. MATYES = 2, 3, or 5
+MATYES = 2, 3, or 5
 
-Case 1]
+ 
 
  
 
@@ -1687,21 +1678,25 @@ Case 1]
 MONITOR
 CONTROL CARDS
 
-25
+ 
 
  
 
 Fig. 5.1 MATEXP Data Arrangement
 
-£c
+£e
 34
 
 ORNL DWG. 67-10217
 
  
 
-NI: O FROM BOT TOM RIGHT
-Fig. 5.2¢
+ 
+
+ 
+
+NI:O FROM BOTTOM RIGHT
+Fig. %.2¢
 
  
 
@@ -1735,28 +1730,22 @@ Fig. 5.2¢
 
  
 
- 
+CALL DISTRB
+IST CALL
 
  
 
  
 
-FROM BOT YOM MIGHT
-F16. 5.20
-
-  
-
  
 
- 
+JIFLADO 7o Yop
+PTMP + P 109 Fla.2.2s
+PRNT CONTROL OATA
 
-213]
-WFLAGHO 10 TOP
-OPTMP + P2108 Fio.5.2
+PLTING ® PLTINC #9999
 
-PRINT CONTROL DATA
-PLTING © PLTINC ¥.9999
-JFK 0
+FK=0
 
  
 
@@ -1765,26 +1754,24 @@ JFK 0
  
 
 Fig. 5.2a. MATEXP Block Diagram — Read or Compute A Matrix and XIC Vector.
- 
+35
 
-35
+ORNL DWG, 67-10218
 
-FROM SOT TOM
+FROM BOTTOM
 Fig. 8.20
 
-ORNL DWG. 67-10218
+  
 
  
 
  
 
- 
-
-FIND AMAX 8 AMIN
-"RATIO * AMAX / AMIN
+FIND AMAX & AMIN
+‘RATIO » AMAX / AMIN
 T HALVED ISTOR TIMES
-(UP TE 10) UNTIL
-AMAX %# T C VAR
+(Ur T8 10) UNTIL
+AMAX % T { VAR
 
  
 
@@ -1793,254 +1780,219 @@ AMAX %# T C VAR
  
 
  
-
-PEO
-AL= 10
-QPT + C
-
- 
-
- 
-
- 
-
-rR
-
-—e] DO 16 KL = |, ITMAX |
-
-KLM ». KL
-
-ALL = T/AL
-
-AL * AL+1
-
-TALLL » T/AL
-
-QPT = QPT¥* A % ALL
-Cr C+QPT
-
- 
-
- 
-
- 
-
- 
-
- 
-
-HP ¢ HP + QPTHTALLL
-
- 
-
- 
-
- 
-
-47
-
- 
-
-IF
-
-(QPTMP—PMK) D0
-
-{PMK-P)
-
- 
-
-0,-
-[14
-
-1F
-{ PE~-2% PMK )
-
-Fig. 5.2b. MATEXP Block
-
- 
-
-[ PMKIABS (QPT{IMAX, JMAX)) ]
-
-TO STATEMENT 37
-F16, 5.2¢
-
- 
-
-PRINT KLM
 
 TO STATEMENT 20
-Fig.9.2C
+Fie.5.2C
 
  
 
-a7
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+          
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+PE+ O
+AL+ 1.0
+aoPT s
+47
+2
+00 16 KL » |, ITMAX
+KLM ». KL C(ZT) =« CITIHC(T)
+ALL - T/aL ToSTATEMENT 3T
+AL ® AL+ 418
+TALLL » T/AL : : .
+QPT * QPTHA ¥ ALL [ He2T) = HPITI+CITINNR(T) |
+€*C+0QPT
+- a9
+o+
+/1
+(uFK-7)
+HP ¢ HP + OPTHTALLL
+47 .
+' K = SR+
+[ PMK-aBS (QPT(1MAX, JMAX)) | TeT#0.8
+¥ o
+(QPTMP-PMK) .83
++
+802 ,
+1STOR:
+6 IF- 414
+{ ( PMK-P) ‘ : ISTOR+JFK
+0~ . 4,0
+" :
+1F e ' IF
+{ PE—- 2% PMK ) 4 PRINT KLM ITMAX Db IKLM= -
+0,+ ] -1) 533 ITMAX
+0~ '
+
+Fig. 5.2b. MATEXP Block Disgram — Compute C and HP Matrices.
+36
+
+FROM RIGHT SIDZ
+FiG. 5.2b
+
+20
+
+ 
+
+TIMETZERO
+PLT:0
+
+ 
+
+ 
+
+ 
+
+6 | GO TO 54 89
+
+JFLAG
+
+25
+Gl [ kw0
+
+READ Z -0
+271
+
+CALL QUTPUT
+1 ST CALL
+(NI SET *t)
+
+ 
+
+v
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+24
+
+ORNL DWG. &7-1029
+
+IF -
+(IIA'IJES 9 25
+
++
+
+CALL DISTRB
+18T CALL
 
  
 
  
 
     
-
-C(2T) = CITIEC(T)
-
- 
-
-418
-
- 
-
-  
-
-HP(2T) » HP(T)+CITINHP(T)
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-1STOR:
-1STOR+JFK [1414
-+0
-’ IF
-IF .
-Tmax Dba IKLM-N |=
-
--1) 838 \ITMAX
-
-0,-
-
- 
-
-Diagram — Compute C- and HP Matrices.
-36
-
-ORNL DWG. 47-10219
-
-FROM RIGHT SIDE
-FIG. 5.2b
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-  
-
-20
-TIME TZERO
-PLT:0
-6 ! Go TO 55 83 {uatves O- 215
-JFLAG -3)
-2:0 4
-28 +
-121
-Al [ xxe0 CALL 0ISTRB
-READ Z 20 1ST CALL
-27
-CALL OUTPUT
-I ST CALL
-(NI SET #t)
-24
-CALL DISTRB
-
-  
  
  
  
-
- 
-
- 
-
- 
- 
-
-0,—=
-700
-
-cwxsient |
-fs2
-
-SOLUTION
-Xs¥Y
-
-i
-
-|
-FLAGS TOSTATEMENTI | TO STATEMENT 212
-£16.5.20 F16. 5.20
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-TIME * TIME+T
-
-PLT=PLT4T Go)
-
- 
-
- 
-
- 
-
    
 
  
 
-    
+| Yo YHHPHZ(IIZ) |
+
+ 
+
+[ YeCHX
+
+ 
+
+ 
+
+ 
+
+SOLUTION
+Xo¥
+
+ 
+
+ 
+
+ 
+
+{
+
+JIFLAG E)
+TIME » TIME+T
+PLT=PLT+T
 
  
 
@@ -2054,32 +2006,57 @@ PLT=PLT4T Go)
 
  
 
-IF
-(PLT-PLTINC) IF
+ 
 
-ICONTR
-PLT=0
+ 
 
-KeK+i
+CALL DISTRD
 
-$33 NI O
+ 
 
+ 
+
+ 
+
+TO STATEMENT |
+FiG. 8.2a
+
+ 
+
+TO STATEMENT 212
+FiG. %.20
+
+ 
+
+ 
+
+ 
+
+PLT=0Q
+KeK+)
+N[O
+
+ 
+
+ 
+
+ 
+
+ 
+
+38
 FROM BOTTOM
-FIG. 8.2b
+Fi0. 5.2b
+¥ - '
+TIME-TMAX
+0+
+37
+
+Fig. 5.2c. MATEXP Block Diagram — Compute
 
  
-  
 
- 
-
- 
-
-7
-
- 
- 
-
-Fig. 5.2c. MATEXP Block Diagram — Compute Solution Vector.
+Solution Vector.
 37
 
 MATEXP MATN PROGRAM SYMBOL KEY
@@ -2094,166 +2071,159 @@ MATEXP MATN PROGRAM SYMBOL KEY
 
 Control Card Inputs
 
+ 
+
 See input data format list.
 
 Input Data
 A(NE,NE) = coefficient matrix
 
 MM = initial condition vector tag number
+
 XIC (NE) = initial condition vector
+
 KK = disturbance vector tag number
 
 Z(NE) = disturbance vector
 
-"Internal Variables
+" Internal Variables
+
+ 
 
 The following variables are listed in alphabetical order.
 
-ADT = AMAX x T
+ADT = AMAX % T
 
-AL = Floating point KIM for ALL calc, KIM+l for TALLL
+AL = Floatlng point KIM for ALL ‘cale, KIM+1 for TALLL
 
-ALL = T/AL with AL = KIM |
+ATL = T/AL with AL = KIM
 
 AMAX = Maximum (absolute) value of element in A matrix
 
-AMIN = Minimum (absolute) value of nonzero element in A matrix
-C(NE, NE) = Coefficient matrix exponential
+AMTN = Minimum (absolute) value of nonzero element in A matrix
+C(NE,NE) = Coefficient matrix éxponéntial
 
-HP(NE,NE) = Disturbance function matrix exponential
+HP( NE,NE) = Disturbance functioﬁ matrix exponenfial
 
-IMAX = Row location of AMAX
+IMAX = Row location of AMAX | |
 
-IMIN = Row location of AMIN
-
-1
+IMIN Row location of AMIN
 
 ISTOR = Number of times matrix exponential argument T is
-halved so that AMAX x TCVAR; later ISTOR = ISTOR + JFK
+halved so that AMAX x T¢VAR; later ISTOR = ISTOR + JFK
 
 JFK = Number of times T is halved in order for matrix exponential
 calculation precision to be P or better
 
-"JIFLAG = Flag to prevent double call of DISTRB during initial
+'JJIFLAG = Flag to prevent double call of DISTRB durlng initial
 time step calculation
 
 Column location of AMAX
 Column location of AMIN
+
+il
 
 JMAX
 JMIN
 
 K = Case number
 
+i
+
 KIM = Number of terms. in series approximations of exponentials
 
-"NI = Printing flag: O on initial call of OUTPUT causing printout
-of A, C, and HP matrices, OUTPUT sets NI = 1 on first call.
+NI = Printing flag: O on initial call of OUTPUT causing printout
+of A, C, and HP matrices., OUTPUT sets NI = 1 on first call.
 
-PE = Maximum element in. (n - 1)th QPT term
-PMK = Maximum element in meh QPT ‘term
+PE = Maximum element in. (n - l)th QPT term
+PMK = Maxlmum.element in nth QPT term
 38
 
-QPT(NE,NE) = Term in series approximation of C matrix
+QPT(NE,NE) = Term in series approximation of C matrikx
 
-PIMP =
-BATIO =
+QPTMP = Maximum perm1551ble value of element in QPT matrix.
 
-TALLL =
-TQP(NE)
-X(NE)
-Y(NE)
-
-Maximum permissible value of element in QPT matrix.
-AMAX/AMIN. If RATIO less than 10° (for eight decimal
+RATTO = AMAX/AMIN. If RATIO less than 10° (for eight decimal
 machine) there may be significant problems in
-calculation of C and HP. oo
+calculation of C and HP. o
 
-T/AL with AL = KIM +1
+TALLL = T/AL with AL = KIM +1
 
-= Temporary storage for QPT terms
+TQP(NE) = Temporary sﬁorage for QPT terms
 
-= Solution vector
+X(NE) = Solution vector B
 
-= Temporary storage for X
+Y(NE) = Temporary storage for X
 
-5.2.2 Subroutine OUTPUT
+ 
+
+5.2.2 Subroutine QUTPUT
 
 The first time MATEXP calls OUTPUT, the coefficient matrix (A)
-
-and the exponential matrices C and HP are printed out, along with the
-
-_initial solution (X) and disturbance (2) vectors. OUTPUT also sets
-
+and the exponential matrices C and HP are printed out, aloﬁg with the
+_initial solution (X) and disturbance (Z) vectors. OUTPUT also sets
 the first call flag (NI) to 1, and on subsequent calls only the X
-
 and Z vectors are printed. A possible means of saving computing
-
 time at the expense of storage would be to store X (and Z) values
-
-in arrays for a large number of time intervals,. then print the
-
-“arrays out in blocks. Additional savings could be achieved by
+-in-arrays for a large number of time intervals; then print the
+-arrays out in blocks. Additional savings could be achleved by
 
 printing only selected variables.
 
 5.2.3 Subroutine DISTRB
 
+ 
+
 Subroutine DISTRB may be called by MATEXP either to compute
-matrix coefficients (A) on the first call (i.e. when flag NI = 0)
+matrix coefficients (A) on the first call (i.e. when flag NI = 0O)
+and/or compute variable forcing-function vectors (Z). |
 
-and/or compute variable forcing-function vectors (2).
-
-Other special purpose subroutines, such as VARCO, DFG, TRLG,
-
+Other special purpose subroutines, such as VARCO, DFG, TRIG,
 and any others the user may want to supply, are usually called by
+DISTRB. '
 
-DISTRB.
-
-‘Another special purpose use of DISTRB is to compute inputs
-
+Another special purpose use of DISTRB is to compute inputs
 for successive MATEXP cases without requiring a control card for
-
-each case. This is done by means of the flag ICONTR (Cols. 73-4 on
-
+each case, This is done by means of the flag ICONTR (Cols. 73-L4 on
 the control card). After a case is run, the first call flag NI is
-
-reset to O, and case number K is increased by 1; then if ICONTR
+reset to O, and case number K is increased by 1l; then if ICONTR
 
 is positive, DISTRB will be called at statement 212, where a new
+
+ 
 39
 
-coefficient matrix A or time interval T may be calculated. If
-ICONTR is negative, DISTRB is called at statement 215, permitting
+coefficient matrix A or time interval T may be qalculated.' If
+ICONTR is negative, DISTRB is called at statement'QlS, permitting
 new initial conditions to be used.
 
-The program listing for DISTRB that was used in calculating the
+. The program listing for DISTRB that was used in calculating the
 sinusoidal forcing function for the example in Sect. 3.3 is given
-in Sect. 5.3.
+in Sect. 5.3. |
 
-Another version of DISTRB is used to calculate the sensitivity
+Another veréion of DISTRB is used to calculate the sensitivity
 of a system's time response to changes in the system's coefficient
 matrix elements
 
-aX .
+ax .
 
 da, .
-1d
+1J
 
  
 
-. DISTRB controls the solution of the system equations and stores
+- DISTRB controls the solution of the sysfem~equations and stores
 those values of the solution vector which are to be used subsequently
-as forcing functions for the sensitivity calculations. To campute
-the sensitivity to 2; 37 the 5B row of the system solution vector
+as forcing functions for the sensitivity calculations. To compute
+the sensitivity to aij’ the jth row of the system solution£zector
 is stored and is later used as a forcing function to the i row of -
-the same system equations.”
+the same system eq_ua'tions.l5
 
 After solving the system equations and storing the required
 elements of the response vector, the arithmetic average values of
 the X's in each time interval are calculated and stored (XT).
 
-During each sensitivity run, DISTRB feeds the forcing function
+.During each sensitivity run, DISTRB feeds the forcing function
 into the system equations, and the resulting printouts of the X
 vectors are the desired sensitivities.
 
@@ -2263,7 +2233,7 @@ the system is forced by a unit step input in row I1Z (specified on
 the control card). Other control card inputs are:
 JFLAG = 5
 
-ICONIR = 1
+JCONIR = 1
 
 Special input data read in by DISTRB are the row (IS) and column
 (JS) numbers of the matrix elements for which sensitivities are to
@@ -2272,26 +2242,28 @@ be calculated, the number of time points (NTS), and the number of
 sensitivity runs (NSENS), as follows:
  
 
-1 1 51
-fs) | as | x) | 18(2) | 3s(2) | (uX)f...thru Js(5) }NrT | NSENs]
+1 | A 1 | 51
+fs() | os(a) | (x) | 18(2) | gs(2) | (wX)f...thru Js(5) |NTT | NSENS]
 
  
 
-I3 I3 I3 I3 I3 13
+T3 13 13 13 I3 T3
 
 5.2.4 Subroutine VARCO
+
+ 
 
 The VARCO (VARiable COefficient) subroutine can be used with
 DISTRB to simplify the programming of problems with variable coefficient
 matrix elements. In general, these elements are functions of both
-time and the values of the solution vector X. VARCO is designed to be
+time and the values of the éolution vector X. VARCO is designed to be
 called by DISTRB at the start of each computation interval and to
 return the mean values of time (TX), and X, (XTR), for that interval.
-The mean values of X are predicted by a first order extrapolation
+The mean values. of X are predicted by a first'brder-extrapolation
 scheme, as shown in Fig. 3. VARCO will also cause the initial time
 step to be repeated, using the first try at calculating X(T) to
-estimate the mean value at z. DISTRB can then calculate the
-coefficient values using TX and XTR. Use of this first-order
+estimate the mean value at g. DISTRB can then calculate the
+coefficient values using TX and XTR. Use of this first-order _
 extrapolation scheme results in significant improvement in accuracy
 
 over using no extrapolation.
@@ -2301,13 +2273,13 @@ over using no extrapolation.
 DFG uses the principle of the analog computer's Diode Function
 Generator (see Fig. 4) and uses linear interpolation to approximate
 arbitrary, single-valued functions of a variable. Data for DFG is
-read in the . first time it is called by DISTRB (i.e., when NI = 0).
+read in the first time it is called by DISTRB (i.e., when NI = 0).
 The standard program provides for up to 8 functions with up to 32
-coordinates each. oo
+coordinates each. o N
 
 On each successive call, DFG returns the functions ZD for
-varying inputs XD. If an input XD(I) goes outside the specified
-limits, the output is a straight-line approximation of ZD(I) based
+varying inputs XD, If an input XD(I) goes outside the specified
+limits, the output is a straight-line apbrokimation of ZD(I) based
 on the slope of the function at the boundary, and an error message
 "DFG(I) RANGE EXCEEDED" is printed.
 
@@ -2318,12 +2290,12 @@ NDFGS Number of functions used
 NPTS(8) Number of points in approximation for each function
 41
 
-XP(32,8) Independent variable points ..-
-ZP(32,8) Dependent variable points
+XP(32,8) Independent variable points ..
+7ZP(32,8) Dependent variable points
 
 The input format is as follows:
 
-Card No. 1 (I2, 8X, 8I3)
+"-Card No. 1 (I2, 8X, 8I3)
 
  
 
@@ -2345,18 +2317,6 @@ Card No. 1 (I2, 8X, 8I3)
 
  
 
-Column 1-2 11-13
-— Repeat Cols, 11-13
-Format I2 8X I3 .
-7 more times for
-Variable | NDFGS NPTS(1) | NPTS(2) to (7)
-
-Card No. 2, 3....etc. (8E10.3) oo
-
-Column 1-10 11-20 21-30 31-10 Repeat as required
-Format E10.3 E10.3 E10.3 E10.3 | for DFG(1l); Max.
-Variable | X0(L,1) | z8(L,1) | xB(2,1) | zp(e,1| 8 numbers per card
-
  
 
  
@@ -2377,24 +2337,43 @@ Variable | X0(L,1) | z8(L,1) | xB(2,1) | zp(e,1| 8 numbers per card
 
  
 
-NOTES: 1. When all data for DFG(L1) has been entered, start
+Column 1-2 11-13 '
+= Repeat Cols, 11-13
+Format I2 8X I3 ' . '
+\ 7 more times for
+Variable | NDFGS NPTS(1) NPTS(2) to (7)
+Card No. 2, 3....etc. (8EL0.3) o
+~ Column 1-10 11-20 21-30 31-40 Repeat as required
+Format E10.3 E10.3 E10.3 E10.3 | for DFG(1); Max.
+Variable | X2(1,1) | z8(L 1) | x2(2,1) | zp(2,1 | O mumbers per card
+NOTES: 1. When all data for DFG(l) has been-ehtefed, start
+
 DFG(2) data on new card; etc.
 
 2. Enter independent variable points XP in order,
 progressing from most negative to most positive
+
 values.
 
 3. F Format entries (with decimal point) may be used.
 
 5.2.6 Subroutine TRLG
 
-TRIG (TRansport LaG) is described in some detail in Sect. 3.5.
-~ The input functions XT (e.g. fluid temperature) and the mass flowrates
-W (in terms of either mass/time, unity for full flow, or some
-percentage of full scale) are supplied by the calling program DISTRB,
-and the lagged functions ZT are returned by TRLG. On the first call
-of TRLG (when NI = 0), the following input data is read in:
+ 
 
+TRLG (TRansport LaG) is described in some detail in Sect. 3.5.
+
+.~ The input functions XT (e.g. fluid temperature) and the mass flowrates
+
+W (in terms of either mass/time, unity for full flow, or some
+
+percentage of full scale) are supplied by the calling program DISTRB,
+
+and the lagged functions ZT are returned by TRLG.
+
+On the first call
+
+of TRLG (when NI = O), the following input data is read in:
 NLAGS Number of functions used
 
 TI(6) Initial value of transport lag time for each function
@@ -2402,74 +2381,84 @@ TI(6) Initial value of transport lag time for each function
 WMIN(6) Minimum expected value of mass flow W for each function
 
 The program is set up assuming that subroutine VARCO is also
-called by DISTRB. VARCO has a restart feature which repeats the
+
+called by DISTRB.
+
+VARCO has a restart feature which repeats the
+
 initial time step calculation; thus the TRLG functions will not be
+
 updated on the second call. If VARCO is not used, this second call
 
  
-h2
+L2
 
 omission may be deleted by removing statement 33 in the TRLG program.
-The input format for TRIG is:
+The input format for TRLIG is:
 
 Card No. 1 (I2)
 
  
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
 Column 1-2
 
-Format I2
+ 
 
-Variable | NLAGS
+Format 12
+
+ 
+
+ 
+
+ 
+
+ 
+
+Variable NLAGS
+
+ 
 
 Card No. 2 (6E10.3)
 
-Column 1-10 Repeat 5 moref
-Format E10.3 times for
-Variable TI(1) TI(2) - (6)
+ 
+
+Column 1-10 Repeat 5 moref|
+
+ 
+
+Format ¥10.3 times for
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Variable | TI(1) TI(2) - (6)
+
+ 
+
 Card No. 3 (6E10.3)
 
+ 
+
 Column 1-10 Repeat 5 more
-Format E10.3 times for
-Variable | WMIN(1) WMIN(2) - (6)
+
+ 
+
+Format | £E10.3 times for
+
+ 
+
+ 
+
+Variable WMIN(1) WMIN(2)7'~(6)
+
+ 
 
  
 
@@ -2480,41 +2469,41 @@ Variable | WMIN(1) WMIN(2) - (6)
  
 -43-
 
-5¢3 + FORTRAN LISTING OF PROGRAMS
+5¢3 -~ FORTRAN LISTING OF PROGRAMS
 
 $IBFTC MAIN DECK
 
-AA COON NNO NNNON CANON NNANNONO NNO ONONONO ANACONDA ANAN
+ﬁ(‘l(‘)(‘b(‘)ﬁﬁﬁﬁﬁﬁﬂﬂﬁF\(\(‘s(\ﬁ(‘lﬂﬁﬁﬁﬁ(‘l(‘lﬂfﬁﬁﬂf‘l(‘)ﬁ(‘)dﬁﬂ(‘)(‘\ﬁﬁﬁﬁ(‘l(‘lﬂﬂﬂﬁ'ﬁﬁﬂﬁ
 
 PROGRAM MATEXP FOR THE 7090 - FORTRAN 4
 
-THIS PROGRAM CALCULATES THE SOLUTION OF A MATRIX OF FIRST
+THfS PROGRAM CALCULATES THE SOLUTION OF A MATRIX OF FIRST
 ORDERs SIMULTANEOUS DIFFERENTIAL EQUATIONS W/ CONSTANT COEFFICIENTS
 
-OF THE FORM DX/DT # AX + Ze
-THE METHOD IS PAYNTER-S MATRIX EXPONENTIAL METHOD
+OF THE FORM DX/DT # AX + Ze«
+THE METHOD IS PAYNTER—S MATRIX EXPONENTIAL METHOD
 
 THE SOLUTION IS GIVEN FOR INCREMENTS OF THE INDEPENDENT
 VARIABLE (T) FROM TZERO THROUGH TMAX
 
-COMPUTES MATRICES C # EXP(A¥T) AND
+COMPUTES MATRICES C # EXP(A#T) AND
 HP # (C-I1)*A INVERSE
-SOLUTION X(N#T) # CH*X((N—1)*T)+HP*Z ((N-1)*T)
+SOLUTION X(N#T) # CH*X{(N—|)*¥T)+HP*Z ((N—1)*T)
 SERIES CALCULATION OF C AND HP MONITORED TC
 ASSURE SPECIFIED SIGNIFICANCE.
-IF T IS REDUCED FOR -C AND HP CALCSes
+IF T IS REDUCED FOR C AND HP CALCSe>s
 CRIGINAL ARGUEMENTS ARE RESTORED BY -
-C2%¥TH#C(Ty=*C (Ty
-HP (2% T)#HP(T)+C(T)*HP(T)
+CL2¥TH#C(THy*C (T
+HP (2#T)#HP(T)+C(T)#*HP(T)
 
 OUTPUT FROM THE PROGRAM IS PRINTED AT INTERVALS PLTINC.
 THE PROGRAM USES SUBROUTINES DISTRB AND OUTPUT
 
 INPUT FOR THE PROGRAM CONSISTS OF
-~ "ONE CONTROL CARD
-THE COEFFICIENT MATRIX A (UP TO 60 X 60) - DIM
-THE INITIAL CONDITION VECTOR X
-A FIXED DISTURBANCE VECTOR Z
+- " ONE CONTROL CARD :
+THE COEFFICIENT MATRIX A (UP TO 60 X 60) o DIM
+THE INITIAL CONDITION VECTOR X :
+A FIXED DISTURBANCE VECTOR <Z
 
 A VARYING Z CAN BE GENERATED BY DISTRB
 VARIABLE COEFFICIENT EQUATIONS MAY BE SOLVED BY APPROPRIATE
@@ -2523,101 +2512,102 @@ FUDGING OF THE DISTURBANCE FUNCTION SUBROUTINE.
 CONTROL CARD INPUT INFORMATION
 
 NE#NO. OF EQUATIONS (12)
-LL#COEFFe MATRIX TAG NCe (12) :
-P#PRECISION OF C AND HP (Fi0e0) —- RECOMMEND {e+0E-6 OR LESS
-TZERO#ZERO TIME (F100)
-T#CCMPUTATION TIME INTERVAL (FI0.0)
-TMAX#MAXIMUM TIME (F10e0)
-PLTINC#PRINTING TIME INTERVAL (F100)
-MATYES#COEFFs MATRIX (A) CONTROL FLAG (12)
-I #USE PREVIOUS A AND T
-2#¥READ NEW COEFF.S TO ALTER A
-3¥READ ENTIRE NEW A (NON-ZERO VALUES)
-4#DISTRB To CALC. ENTIRE NEW A
-5%¥READ SOMEs DISTRB TC CALCs OTHERS
+LL#COEFFe MATRIX TAG NCe (I12) -
+P#PRECISION OF C AND HP (Fi0e0) -~ RECOMMEND |e«0E-6 OR LESS
+TZERO#ZERO TIME (Fl0.0) ,
+T#CCMPUTATION TIME INTERVAL (F|10s0)
+TMAX#MAXIMUM TIME (FlQ0e0)
+PLTINC#PRIMTING TIME INTERVAL (FiDe0)
+MATYES#COEFFe. MATRIX (A) CONTROL FLAG (I12)
+| #USE PREVIOUS A AND T
+2#READ NEW COEFF.S TO ALTER A
+3#READ ENTIRE NEW A (NON-ZERO VALUES)
+4#DISTRB To CALC. EMTIRE NEW A
+E#READ SOMEs DISTRB TO CALCe OTHERS
 6#DISTRB TO ALTER SOME A ELEMENTS
-1CSS#INITIAL CONDITION VECTOR (XIC) FLAG (I2)
-| #READ IN ALL NEw NON-ZERO VALUES
-2H#READ NEW VALUES TO ALTER PREVIOUS VECTOR
+ICSS#INITIAL CONDITION VECTOR (XIC) FLAG (I2)
+| #/READ IM ALL NEW NON-ZERO VALUES
+2#READ NEW VALUES TO ALTER PREVIOUS VECTOR
 3#USE PREVIOUS VECTOR
 LEVECTOR#D
-ONO OY OY
+YOO OO CTYO OO OO DYy Oy Y O
 
-x
+™y
 
-Cy OY OY
+Oy OOy
 
-aNaNA)
+FH@
 
-“ha
+OO0
 
-S#USE LAST VALUE OF X VECTOR FROM PREVIOUS RUN
-JFLAGHFORCING FUNCTION (2) FLAG (12)
+o
+
+B#USE LAST VALUE OF X VECTOR FROM PREVIOUS RUN
+JFLAGH#FORCING FUNCTION (2) FLAG (12}
 | THRU 4#SAME AS FOR 1CSS FOR CONSTANT Z
-S#CALL DISTRB AT EACH TIME STEP FOR VARIABLE Z
-I TMAX # MAX. NOo OF TERMS IN SERIES APPROX,
-OF EXP(AT)s (13)
-LASTCC # NON-ZERO FOR LAST CASE (11)
-112 # ROW NCe OF Z IF ONLY CNE NON-ZERO»
-OTHERWISE #0 (12)
-ICONTR —= FOR INTERNAL CONTROL CPTIONS (12)
-O¥READ NEW CONTROL CARD FOR NEXT CASE
-I#GO TO 212 CALL DISTRB FCR NEW A OR T
-~1#GO TO 215 CALL DISTRB FOR NEW I.Ce-S
-VAR # MAX. ALLOWABLE VALUE OF LARGEST COEFFe MATRIX ELEMENT * T
-(RECOMMEND VAR#! +0) (F640)
+S#CALL DISTREB AT EACH TIME STEP FOR VARIABLE Z
+I TMAX # MAX. NOo OF TERMS IN SERIES APPROX.
+OF EXP(AT). (I3) |
+LASTCC # NON—-ZERQ FCR LAST CASE (1)
+11Z # ROW NOe OF 2 IF ONLY ONE NON-ZEROs
+OTHERWISE #0O- (12)
+"ICONTR — FOR INTERNAL CONTROL CPTIONS (12)
+O#¥READ NEW CONTROL CARD FOR NEXT CASE
+| #GO TO 212 CALL DISTRB FCR NEW A OR T
+~1#GO TO 215 CALL DISTRB FOR NEW I+Ce=S
+VAR # MAX. ALLOWARLE VALUE OF LARGEST CQEFFe MATRIX ELEMENT * T
+(RECOMMEND VAR#1.0) (F6.0)
 
-DIMENSION A(60560)»C (60560) sHP (65260) sQPT (60560) »
-IX(60)sY(60)+2(60)sXIC(60),TQP (60)
+DIMENSION A(éD;éD),C(GD’éD);HP(éﬂgéﬂl,OPT(60960)§
+IX{60)sY(60)+2(60)sXICL60),TQP(60)
 
-COMMON CsHPsAsQPTsXsZsYs ITMAX KKsLL s MM,
-VJIFLAGXICYNIs TIMES TMAX 3s TZERC SNES TQP Ts
-211Z9sICONTRsPLTINCIMATYES» ICSS 3 JFLAGSPLT
+COMMON CsHPsA»sQPTsXsZsY s ITMAX sKKsLL s MM,
+| JUFLAGsXICyNT s TIME s TMAX s TZERCSNEsTQP T
+211ZsI1CONTRsPLTINCIMATYESSI1CSSsJFLAGHPLT
 
 K#CASE NUMBER
-NI#0 ON |-ST PASS. SET TO | ON I=-ST CALL OF OUTPUT.
-K#I
-NI#0
-J READ (5.100) NEsLLsPsTZEROs Ts TMAX sPLTINC yMATYES»1CSSs
+NI#0 ON |-ST PASS. SET TO | ON 1-5T CALL OF OUTPUT.
+K#|
+NI #0
+| READ (5,100) NEsLLsPsTZEROsTs TMAX sPLTINCsMATYES s 1CSSs
 
-| JFLAG, ITMAX sLASTCC» 1125 1CONTRsVAR
-100 FORMAT (2(12+3X)s5F 10e093129135119212sF64C)
+IJFLAGs ITMAX sLASTCCs 1125 I1CONTR VAR
+100 FORMAT(2(12+3X) s5F 10e0s312s13s1142125F6eC)
 
 COEFFICIENT MATRIX INPUT
-GO TO (34995292243) sMATYES
-2 DO 90 I1#I| NE
-DO 90 J#! SNE
-90 A(IsJ)#0.D
-IF(MATYES-4)9943499
-99 DO 91 1#1s1379
-MATRIX ELEMENTS 5(ROW, COLUMNS VALUE)
+GO TO (3+9992s2+2+3)sMATYES
+DO 9n J#!1sNE
+90 A(IsJ)#OWD
+IF(MATYES-4)9953599
+99 DO 9| I1#1+1379
+MATRIX ELEMENTS 5(ROW,s COLUMNSs VALUE)
 ALL I AND J ENTRIES ON CARD MUST BE NON-ZERO.
 A BLANK CARD IS REQUIRED AFTER ALL ELEMENTS ARE READ IN.
-READ (55101) I1eJl sD s129J29D29139J3sD39149J4sD4
-10! FORMAT (4(213sE1243))
-IF(I1)3293492
-92 AlI1,J1i#DI
-ACT29J2)%D2
-ACI3,J30#D3
-91 ACL4 Joly #04
+READ (5s101) IleJl oDl 9129329029139 J3sD3914sJ4,D4
+|0t FORMAT (4(213sE1243)) ' ,
+IF(I1)2+3492
+92 AlI1,J11#D!
+ACT2,9J2)V%D2
+A¢q3’JBﬁ#D3
+91 A(14,Jﬁ§#o4
 
 INITIAL CONDITION VECTOR XIC INPUT
-3 GO TO(4s 120969596) s1CSS
-4-DO 93 I1#14NE
-93 XIC(I)#0.0
-120 DC 94 I#1415
-ALL ROW (1) ENTRIES MUST BE NON-ZERO
+3 GO TO(4s 12096954861 91CSS
+4-DO 93 1#14NE
+93 XIC(I}#0e0
+120 DO 94 I1#1,15 | '
+ALL ROW (I) ENTRIES MUST BE NON=-ZERO
 A BLANK CARD 1S REQUIRED AFTER ALL ELEMENTS ARE READ IN.
-READ (5495) MMe I 11 sDt1s1124D125sT1340134114+D14,1154D15
-95 FORMATI(I1245(134E12e3})
+READ (5%,+95) MM 111 sD1[s1124D125113,D1351143D14s1155D15
+95 FORMAT(I245(134E12e32}) '
 
  
 
 DIMEN
 DIMENS
-Ov OY OV Oy
+Yy () (Y O
 
-0
+N
 
 96
 
@@ -2629,89 +2619,80 @@ DIMENS
 212
 213
 
-211
+5.
 
--45-
-
-IF (1111696996
-XIC{IIIY#DI |
-XIC(II2)#D12
-XIC(II3#D13
-XIC(I14)#D 14
-XIC(II5)#D15
+IF (1111636396
+XIC(II1)Y#DI I
+XIC{II2)#D|2
+XIC{II3}#D13
+XIC(II4)1#D 14
+XICIII5)#D15
 
 MM#0
 DO 7 I#1sNE
-XIC(I)#0e0
+XIC(I)#0.0
 
-IF(ICSS=5)814214,81
-
-DO 82 I#I 4NE
-
-X(IY#XIC(T)
-
+IF(ICSS~5)814214481I
+DO 82 I#14NE
+X(CT)#XIC(I)
 IF(MATYES=3)21352135212
-
 CALL DISTRB
+JJFLAG#D | o _ -
+QPTMP # MAXe. PERMISSIBLE ELEMENT OF QPT FOR 8 DECIMAL COMPUTER
+MATRIX CALCe LOSES SIGNIFICANCE IF LARGEST '
+ELEMENT IN SERIES APPROX. MATRIX QPT 1S
+GREATER THAN P#*|.CES
+QPTMP#P* | +E8 -
 
-JJIFLAG#O : :
+WRITE (6+211) KeNEsPoTo
+IPLTINCyMATYES s ICSSsJFLAGYICONTR s ITMAX, I|Z’VAR9QPTMP
 
-QPTMP # MAX. PERMISSIBLE ELEMENT OF QPT FOR 8 DECIMAL COMPUTER
+211 gFORMAT ( I2ZHIMATEXP CASELI3/17H NOe. OF EQUATIONS,
 
-MATRIX CALCe LOSES SIGNIFICANCE IF LARGEST
-ELEMENT IN SERIES APPROX. MATRIX QPT IS
-GREATER THAN P¥*|.CES8
+113/720H SPECIFIED PRECISIONsFI248/6H TIME o
 
-QPTMP#P* | +(JE8
+28HINTERVAL,F 1848/ 15H PLOT INCREMENTF|7e8//
 
-WRITE (69211) KeNEsP oT
-IPLTINCyMATYESs1CSSsJFLAGs ICONTR ITMAXs 112 VAR »QPTHP
+316H CONTROL FLAGS =/1H 35Xs6HMATYESs14/1H
 
-OF ORMAT ( | 2HIMATEXP CASE,I13/17H NOe OF EQUATIONS,
-113720H SPECIFIED PRECISIONsF1248/6H TIME
-
-28HINTERVALsF1848/15H PLOT INCREMENT sF|7e8//
-
-316H CONTROL FLAGS =/1IH 35Xs6HMATYESs14/ IH
-
-L5Xs4HICSS»16/ 1H $5Xs5HJUFLAGsI5/ 1H s5Xs6HICONTR,14/
-534HOMAXe TERMS IN EXPONENTIAL APPROXes15/
+45X s 4HICSSs 16/ 1H $5Xs5HUFLAGsI5/1H s5Xs6HICONTR 14/
+534HOMAXe TERMS IN EXPONENTIAL APPROXaesI5/
 
 806
 
 402
 
-401
+40
 
 407
 408
 
-6!3H SINGLE Z ROW,sI14/20H MAXe ALLCWABLE A#DTsF9.3/
-727TH MAXe ALLOWABLE QPT ELEMENTSFl1e3)
+613H SINGLE Z ROWsI14/20H MAXe ALLCWABLE A#DT9sF9.3/
+727H MAXe ALLOWABLE QPT ELEMENTsFlle3)
 
-PLTINCHPLTINC*0.9999
+PLTINCHPLTINC*#0+9999
 
-JFK#0
+JFK#D
 
-IF(MATYES-1)20+20,806
+IF(MATYES—=1)20+20+806
 
 SCAN MATRIX FOR MAXe AND MINe NON-ZERO ELEMENTS.
 IMAX# |
 
-JMAX# |
+JMAX# | B
 
-AMAX#ABS (A(1s1))
+AMAX#ABRS (Al 1ls1))
 
-DO 4p! I#14NE
+DO 401 I#14NE
 
-DO 40! J#! SNE
+DO 40! J#I»NE
 
-IF(AMAX~ABS (A(1sJ)))402+401 9401
-AMAX#ABS (A(IsJ})
+IF(AMAX=ABS (A(I1sJ7))402s401 401
+AMAX#ABS (A(IsJ))
 
 IMAX#I :
 
-JMAX# J
+JMAX#J
 
 CONTINUE
 
@@ -2721,27 +2702,26 @@ JMIN#IMAX
 
 AMIN#AMAX
 
-DO 409 I1#1 4NE
+DO 4N9 1#I| sNE
 
-DO 409 J#I1 NE
+DO 409 J#1»NE
 
-IF(A(TSJ)) 40794099407
-
-IF(ABS (A(I+J))~-AMIN) 408,409,409
+IF(A(IsJ)) 40794099407 —
+IF(ABS (A(I1sJ))~AMIN) 408,409,409
 AMIN#ABS (A(IsJ))
 
 IMIN#I
 
 JMIN#J
-Oy ON
+Oy YO
 
-ay (YO
+Yy (v
 
-3
+‘)
 
-)
+()
 
-[4B]
+(1
 
 409
 
@@ -2753,275 +2733,231 @@ ay (YO
 
 410
 
--h6-
+46~
 
 CONTINUE
 RATIO#AMAX/AMIN
 AMIN # MINIMUM NON-ZERO ELEMENT
-I STOR#D
-ADT#AMAX*T
-DO 403 I#1,s11
-IF(VAR-ADT) 41354045404
-[STOR#¥ISTOR+I
-ADTHADT#0 45
+ISTOR#D
+ADT#AMAX*®*T
+DO 403 I#!1,1!
+IF{VAR=ADT) 413+404s404
+ISTOR#ISTOR+I
+ADTHADT¥D 5
 T#ADT /AMAX
 COMPUTATION INTERVAL T IS HALVED ISTOR
-TIMES ()g#MAXe) SO MAX. ELEMENT IN A*T
-IS LESS THAN VAR.
-WRITE (64035) IMAX 9s JMAX s AL IMAXs JMAX) s ADT oT
-| IMINsJMIN,A(IMIN,JMIN),RATIO
-FORMAT (3 |HOMAXeCOEFFe MATRIX ELEMENT # A(sI1251Hs351293H) #»
-|. EI15e4/ 13H MAXe A%DT # oF 12e¢842Xs 1 4HWITH DELTA T #,Fi548/
+TIMES (1g#MAXe) SO MAXe ELEMENT IN A®*T
+IS LESS THAN VARe ,
+WRITE (6s405) IMAX s IMAXsA{IMAX s IMAX) 9sADT o T
+| IMINesJMINSZA({IMINsJMIN)LZRATIO
+FORMAT (3 |HOMAX<COEFFe MATRIX ELEMENT # A(sI123s1HssI1293H) #5»
+| El5e4/13H MAXe A#DT # oF 128 42Xs l4HWITH DELTA T #,Fi5.8/
 
-230HOMINIMUM NON-ZERO ELEMENT # A(s1231HesI2s3H) #sE15e4/
-318H RATIO AMAX/AMIN #sEI15,.,4)
+230HOMINIMUM NON-ZERO ELEMENT # A(sI12sIHss129s3H) #sE15e4/
+318H RATIO AMAX/AMIN #sEI5.4)
 
-IFLISTOR-1018s410,410
-WRITE (69411)
+IF(ISTOR-10)8s410s410
+WRITE {(6s411)
 
-41 1 pFORMAT ( 34HOA#DT STILL GREATER THAN ‘ALLOWABLE »
+411 gFORMAT (34HDA*DT STILL GREATER THAN ALLOWABLE,
 
 48
 
 49
 
-j 19H AFTER 10 HALVINGS.)
+| 1.9H AFTER 10 HALVINGS.)
 
-GO TO 37
+GO TO 37 _
 
 CALCULATION OF MATRIX EXPONENTIALS C AND HP
-DO 9 I1#1 sNE
+DO 9 I#IsNE
 
-DO 9 J#I NE
+DO 9 J#I1 sNE
 
-C(IsJ)#De
+ClIsJ)#Do
 
-DO 1D I#1 NE
-ClIsIN#Iloe
+DO D I#1sNE
+C(IsI)#1a
 
 SKIP HP CALCS. FOR HOMOGENEOUS EQUATIONS
-IF (JFLAG-4)48,51,48
+IF (JFLAG=4)48,51,48
 
-DO 49 1#1 NE
+DO 49 1#1sNE
 
 DO 49 J#1sNE
 
-HP (I+J)#Q.o
+HP (I +J)#0e
 
-DO 50 I#I,NE
+DO 50 I#! 4NE’
 
 50
 
 51
 
-HP (IT, 1)#T
+HP (14 1)#T
 
 PE#0.0
 
-DO || T#1 4NE.
+DO 11 I#!,NE.
 
-DO I J¥I sNE
+DO |1 J#1sNE
 
-QPT(IsJ)#C(1sJ)
+QPT(IesJ)HCI(I o J)}
 
-FORM THE MATRIX EXPONENTIALS CHEXP(A%¥T) AND HP#((C-I1)%A INVERSE)
-AL#1 e0
+FORM THE MATRIX EXPONENTIALS CHEXP(A*#T) AND HP#((C—I1)%A INVERSE)
+ALZ! oD
 
 DO 16 KL#IsITMAX
 
 KLM#KL
 
-CALL#T/AL
+CALL#T /AL
 
-AL#AL+1 0
-TALLLAT/AL
+AL#AL+! 0
+TALLL#T/AL
 
  
 
-i eel am
-ONO
+e e ——
 
-COON
+~e?
 
-[aNaNe!
+Lo
+— Ll e
+'.")-I-T"
 
-| 8
+DO 18 I#!4NE
 
-44
+C
+C
+DC |3 J#1sNE
+TQP(J)#DeD
+DC 13 KX#1 4NE
+13 TQP(J)YETQAP(JI+QPT(IsKX)*¥A(KXsJ)
+c o AR
+DO 18 J#I sNE
+18 QPT(IsJI#TQP(J)*ALL
+C .
+C QPT#MATRIX TERM IN SERIES APPROXe #( (A*T)%*%#K)/K FACTORIAL
+DO 44 I#1sNE
+DO 44 J#| oNE
+44 C(IsJIHC(II 4y I+QPT(IsJ)
+C
+[F (JUFLAG-4)45 447445
+C
 
-45
-145
+45 TF(ITMAX=KL)47 9474145
+145 DO 46 I#I| sNE
+DO 46 J#I1sNE
+46 HP(I s JYHHP (I s J)+QPT (s J)*TALLL
 
-46
+FIND MAX ABS ELEMENT IN QPT AND CALL IT PMK
 
-FIN
+Y YOy M
 
-17
-16
+LARGEST QPT ELEMENT USUALLY IN ROW IMAXs COLUMN "UMAX
+47 PMK#ABS (QPT(IMAXsJMAX))
+IF(QPTMP~-PMK) 83,83s502
+502 IF(PMK—=P) 40640616 ' ,
+C SCAN OTHER QPT ELEMENTS ONLY WHEN QPT(IMAX, JMAX) IS LESS THAN P
+406 DO |4 I#I1sNE -
+DO 14 J#I oNE
+|4 PMK#AMAX | (PMKsABS (QPT(IsJ)))
+IF(PMK=P)1T7s17s16
 
-21
+C
+C PRESENT MAXe QPT ELEMENT SHOULD BE LESS THAN
+C HALF PREVIOUS MAXe TO INSURE CONVERGENCE
+|7 IF(PE=2e%¥PMK) 16921321 ~
+_ |6 PE#PMK
+C
+21 WRITE (6+200) ~ KLM
+c |
+200 FORMAT (44HQONCe OF TERMS IN SERIES APPROXe OF MATEXP # 412)
+C : _ e
+IF(ITMAX=1)20920+538
+538 IF(KLM=1TMAX) 4144+83,83
+C
+JFKHEJFK+ 1
+IF(JFK~T7)303+304+304
+304 WRITE (6+305) PMK
+305 QFORMAT(32HD7 TRIES AT HALVING T NeGes PMK#sF1246)
+GC TO 37 |
+303 WRITE (6+210) KLMsPMK o T
 
-iy
+210 FORMAT(2!HOMAXe ELEMENT IN TERM,I13,8HOF QPT #sE1l+3/
+| 35H TRY HALVED TIME INTERVAL DELTA T #,Fi15.8]
+GO TO 8 |
+-48-
 
-DO 18 I#! 4NE
-
-DC 13 J#14NE
-
-TQP(J)Y#0e0
-
-PC 13 KX#14NE
-
-TQP (UY #TQP(JY+QPT (I sKX)*¥A(KXs J)
-
-DO 18 J#I| sNE
-QPT(IsJ)ETQP (J) *ALL
-
-QPT#MATRIX TERM IN SERIES APPROXe #((A¥T)%*%K)/K FACTORIAL
-
-DO 44 I#1 NE
-DO 44 J¥I SNE
-CUIsJIECII,0)+QPT (15)
-
-IF (JFLAG=4)45447445
-
-IF(ITMAX=KL)4T 9474145
-
-DO 46 I#! sNE
-
-DO 46 J#1 NE
-
-HP (Is J)#HP (Is J) +QPT(IsJ)*TALLL
-
-D MAX ABS ELEMENT IN QPT AND CALL IT PMK
-
-LARGEST QPT ELEMENT USUALLY IN ROW IMAXs COLUMN JUMAX
-
-PMK#ABS (QPT(IMAXsJMAX))
-
-IF(QPTMP-PMK) 83,83+502
-
-IF(PMK=P) 4063406416
-
-SCAN OTHER QPT ELEMENTS ONLY WHEN QPT(IMAX, JMAX) IS LESS THAN P
-DO 14 I#! NE
-
-DO 4 J#!| sNE
-
-PMK#AMAX 1 (PMKsABS (QPT(1IsJ)))
-
-IF(PMK=P)17s17516
-
-PRESENT MAXe QPT ELEMENT. SHOULD BE LESS THAN
-HALF PREVIOUS MAXe TO INSURE CONVERGENCE
-
-IF(PE-2+%PMK) 16921921
-PE#PMK
-WRITE (6200) KLM
-
-200 FORMAT (44HONCe OF TERMS IN SERIES APPROXe OF MATEXP # 412)
-
-538
-
-“83
-
-304
-
-303
-
-303
-
-210
-
-IF(ITMAX=1)20s20+538
-
-IF(KLM=1TMAX) 4144583,83
-TH#T*0e5
-
-JFKH#JIFK+I
-
-IF (JFK~7)30353045304
-
-WRITE (6305) PMK
-
-OFORMAT (32HD7 TRIES AT HALVIMNG T NeGes PMK#sF 1246)
-
-GC TO 37
-
-WRITE (6210) KLMsPMK oT
-FORMAT (2 IHOMAXe ELEMENT IN TERM,I13,8HOF QPT #sEIlle3/
-I 35H TRY HALVED TIME INTERVAL DELTA T #,F15.8)
-
-GO TO 8
--L8-
-
-414 ISTOR#ISTOR+JFK
+414 1STOR#ISTOR+JIFK
 
 C ORIGINAL ARGUMENTS OF C AND HP MATRICES RESTORED IF ISTOR GREATER THAN O ,
-IF(ISTOR) 2020416
-416 WRITE (635415) ISTOR
+IF(ISTOR) 20205416 '
+416 WRITE (64+415) ISTOR
 
-415 FORMATI(26HOTOTAL NCe OF T HALVINGS #4513)
-DO 417 KR#|,ISTOR :
-IF(JFLAG=4) 41994185419
+415 FORMAT(26HOTOTAL NCe OF T HALVINGS #,413)
+DO 417 KR#|sISTOR -
+IF(JFLAG=4) 41944189419 :
 C SKIP HP CALCS. FOR HOMOGENEOUS EQUATIONS
-419 DO 420 I#I1,4NE
-DO 421 J#1 NE
-TQP (J) #00
-DO 421 KX#I sNE
-421 TAP(JIATQP (J) +HP (I sKX)*C (KX J)
-DO 420 J#I1 4NE
-420 HP (Is J)#TQP(J)+HP (1s J)
+419 DO 420 I#I1sNE '
+DO 421 J#I| 4NE
+TQP(J)Y#0e0
+DO 421 KX#I1 sNE
+421 TQP(JIATAP(J)+HP (1 sKX)*C (KX J)
+DO 420 J#1 4NE
+420 HP (I s N #TQP(J)+HP( I+ J)
 
 418 DO 430 I#1,4NE
-DO 430 J#! SNE
-430 QPT(I+sJ)#0.0
-DC 431 I#I14NE
+DO 430 J#!14NE
+430 QPT(IsJ)#00
+DC 431 I#I1 4NE
 DO 431 J#! 4NE
-DO 431 KX#| NE
-43) QPTUI 9s JI#QAPT( 19d) +C(I19KX)*¥C(KXsJ)
-DO 432 I1#IsNE
-DO 432 J#I4NE
-432 CIs JIHQPT (I,J)
-417 T#2e0%T
+DO 421 KX#| sNE
+431 QPTU(I s JI#QPT( L 9J)+CITIoKX)¥C(KXsJ)
+DO 432 1#I| 4NE
+DO 432 J#| 4NE
+432 C(LsJIHQPT(I4J)
+417 TH2.0%T
 
-C(IsJd) IS THE MATRIX EXPONENTIAL CHEXP(A*T)
-AND HP (IsJ) IS THE ((C~-1)*A INVERSE) MATRIX
-NOW WE READ (OR CALL SUBROUTINE FOR) DISTURBANCE VECTOR
+ClIlsJ) IS THE MATRIX EXPONENTIAL CHEXP(A%*T)
+AND HP(IsJ) IS THE ((C~-I1)Y*#A INVERSE) MATRIX
+NOwW WE READ (OR CALL SUBRCUTINE FOR) DISTURBANCE VECTOR
 
-ONO N
+P OYOOY N
 
 20 TIME#TZERO
-PLT#Oe
-GO TC (265121327 925955) 3 JFLAG
-55 IF (MATYES=3)2155215427
+PLT#O.
+GO TC (264121 927925955),,JFLAG
+55 IF(MATYES-3)2155215427
 215 CALL DISTRB
-I1Z#112
-GO TO 27
+11Z#112Z
+GO To 27
 
-26 DO 97 I#14NE
+26 DO 97 1#I1,NE
 97 Z(1)#0.0
-121 DO 98 I#1415 :
-C ALL ROW (I) ENTRIES MUST BE NCN-ZERO
-C A BLANK CARD IS REQUIRED AFTER ALL ELEMENTS ARE READ IN.
-READ (5595) "KKsI219D2191224sD2251234D239124sD2451254D25
-IF(I21)27527478
-78 Z(I121)#D21
-211224022
+121 DO 98 I#1415 »
+C ALL ROW (1) ENTRIES MUST BE NCN-ZERO
+C A BLANK CARD 1S REQUIRED AFTER ALL ELEMENTS ARE READ INe
+READ (54595} TKKeI1219D211224sD224123sD2351249D24451254D25
+IF(I21§27+27+78 - '
+78 Z(121)#D21
+Z(122)V#D22
 Z(123)#D23
-201244024
-98 2(125)#%D25
+Z124)#D24
+98 Z2(125)#C25
 
-25 KKAD
-DO 28 I1#!sNE
-28 Z(1)80. |
+25 KK#D
+DO 28 I#!sNE
+28 Z(1)#Q. |
 
-C ON 1-ST CALL OF OUTPUT NI SET TO |
-27 CALL OUTPUT :
+C ON |-ST7 CALL OF OQUTPUT NI SET TO |
+27 CALL OUTPUT -
 
  
-NOOO
+O OO
 
-NN NnN
+OO0 M
 
 53
 
@@ -3033,8 +2969,8 @@ NN NnN
 703
 
 700
-
 32
+
 52
 31
 
@@ -3049,188 +2985,215 @@ NOW
 
 40
 
--k9-
+-49-
 
-COMES THE EQUATION SOLUTION BASED ON
-XINT)#MEX(NT=1)+((M=1)A INVe)*Z(NT~1)
+COMES THE EQUATICN SOLUTION BASED ON
+XINT)EMEX(NT=1)+((M=1)A INVe)¥Z(NT~1)
 
-IF (JFLAG=4)29+544+56
+IF (JFLAG=4)29454456
 
-DO 53 I1#I14NE
+DO 53 I#Is4NE -
 
-YUIVHCt Is) #XU1)
+YUIVHC T s 1y #X U]
 
 DO 53 J#2sNE
 
-YCI)AY (TI) +C (Ted) %X (J)
-IF(112)52+524,702
-
-IF{JJFLAG) 3092930
+YOI)AY I )Y +C (I s J) %X (J)
+IF{112)52452,702
+IF(JJFLAG)I30s2923D
 
 CALL DISTRB
 
-IF(11Z2)700+s70054
+IF{I11Z2)700+700s54
 
-ONLY ONE Z-TERM CALC, IF 11Z IS GREATER THAN ZERO
-DO 703 I1#1 NE
+ONLY ONE Z-TERM CALC, IF I1Z 1S GREATER THAN ZERO
+DO 703 I1#I1sNE
 
-YOIIAY(I)+HP (Is 11Z)%Z2(112)
+YOI #Y (DI +HP (T T1Z)I%Z (1 1Z)
 
-Go To 52
+GO To 52
 
-DO 32 I#!sNE
-YUIYHC(TI ol) #X UI) 4+HP (Ts 1) %2 (1)
+DO 32 I1#!IsNE
+YUIYHCITI o 1) #X ) +HP LT 1) *Z (1)
 
 DO 32 J#2sNE :
+Y(I)AY(I)+C(Tad) X (J)+HP (T s ) ¥Z (J)
+DO 31 I1#I sNE
 
-YOY (I) +C (Tod) ¥X (J) +HP (TJ) *Z (J)
-DO 31 1#I| sNE
-
-X(Iy#Y (I)
+X{Iy#Y (1)
 
 TIME INCREMENT OF THE SOLUTION HAS JUST BEEN FOUND
-PLCT AND PRINT IF PLTINC INTERVAL HAS ELAPSED
+PLOT AND PRINT IF PLTINC INTERVAL HAS ELAPSED
 
-JJFLAG#I
+JJIJFLAG#|
 
-TIME#TIME+T
+TIME#TIME4T
 
 PLT#PLT+T
-IF(PLT-PLTINC) 35433533
+IF{PLT=PLTINC) 35, 33 33
 CALL OUTPUT
 
-PLT#0
+PLT#Q
 
-IF(TIME~-TMAX 24537937
-IF(LASTCC)40s 34940
+IF({TIME-TMAX 2437937
+IF(LASTCC)4Ds 34540
 K#K+ |
 
 NI#0
 
-PLT#00N .
-IF(ICONTR)215s19212
+PLT#NeN
+IF(ICONTR)2I59I92I2
 STOP
 
 END
 
  
--50-
-
-$IBFTC OUT DECK
-SUBROUTINE OUTPUT
-
-DIMENSION Al60+63)9C (60560) sHP (60960) sQPT(60+60) DIMENS
-1X60) sY (60) 92(60)sXICLET)sTQP (60) } - DIMENS
-
-COMMON CoHPsAsQPTX9ZsYs ITMAX 9KKs LL MM,
-| JJFLAGsXICsNI s TIME» TMAXsTZERO SNES TQP 4 T
-211ZsICONTRsPLTINCsMATYES» ICSSsJFLAGSPLT
-
-IF(NI)2s1 92
+50~
+$IBFTC QUT DECK
+SUBROUTINE QUTPUT
+C
+C _
+DIMENSICN A(60+s60)9sC(60960)sHP(60960) sQPT(E60+60) s DIMENS
+IX(60)sY(60)s2(60)sXICI6G)sTQP(60) ‘ _ - DIMENS
+c _
+COMMON CoHPsAsQP ToX9Z Y s ITMAX sKKsLL s MM,
+| JUFLAG O XICHNI s TIMEs TMAX s TZEROSNESTQP, T
+211Z5sICONTRSPLTINCIMATYESSICSS s JFLAGSPLT
+C
+IF(NI)29s 192
 I NI#I
+NC#10 , | | (
+DO 11 NCM#I+51410
 
-NC#10
+WRITE(Es200) LLs ((A(IsJ)sJENCMsNC) »I#1sNE)
+200 FORMAT (2HQAsI2/(1H SIPIBE!1+2))
 
-DO 11 NCMEIsSisl0
+IF(NE=NC) 10s!0s1! '
+I NCANC+10
 
-WRITE(E69200) LL ((ACIsJ) s JENCMSNC) s I #1 sNE)
-200 FORMAT (2HOAsI2/ (1H I1PICE!Il«2))
+10 NC#ID
+DC 21 NCM#!1 51,410 : ' '
+- WRITE(S59201) ((CUI9sJ) s JENCMeNC) 9 I#I14NE)
+201 FORMAT (2HOC/(IH S IPIDEI142))
+[FINE-NC) 20920s21
+21  NC#NC+I10 '
 
-TF(NE=NC) 10s10s11
-Il NCENC+I10
-
-10 NC#InD
-DC 21 NCM#I +5110 : :
-WRITE(S5+201) ((CUIsJ)sJHNCMINC)sI#14NE)
-201 FCRMAT (2HOC/ (IH 4IPIDEIl42))
-IF(NE-NC) 20920921
-21  NC#NC+I10O
-
-20 NC#ID
-DO 31 NCM#1451410
-WRITE(69202) ((HP(IsJ) es JH¥NCMsNC)sI#1sNE)
-202 FORMAT (3HOHP/(1IH sIPIDELI13))
-IFINE=NC) 242521
+20  NC#I10 -
+DO 31 NCME1s51,10
+WRITE(69202) ((HP(IsJ) s JENCMsNC) s I# 1 sNE)
+202 FORMAT (3HOHP/(1H sIPIOEI143)) |
+IF(NE=NC) 252531
 31 NCHNC+10
 
-2 WRITE(69203) TIMES (X(I)sI#I1sNE)
-203 FORMAT(4H T #,IPEICe2s4H X #5 / (IH 5X 10E11e3))
-[F{JFLAGeNELS) GO TO 20
+2 WRITE(65203) TIMEs (X(I)sI#IsNE) -
+203 FORMAT(4H T #,IPE(Qe2s4H X #s /(IH $5Xs 10E1143))
+IF(JFLAGsNEL5) GO TO 30
 
 WRITE(65204) (Z(1)sI#1sNE)
-204 FORMAT (6HOZ # S1IPIOEIT43/(1IH 35XsICEIle3))
+204 FORMAT(6HOZ # »IPIOEI143/(1H 3»5XsICEI143))
 30 RETURN
 END
 
  
--51-
+~51-
 
-$IBFTC sSuBz DECK
+$IBFTC SsuBz DECK
+
+aNaNE
+
 SUBROUTINE DISTRB
-C
-C DISTRB FOR REPORT EXAMPLE
-C
-DIMENSION A(60+60)sC(60+60)sHP (6060) sQPT (60:60)
-IX(60)sY(60)s2(60)sXICL6N0)sTQP (60)
-COMMON CoHPsAsQPT 9X 9ZsY 3s ITMAX sKKsLL s MM,
-| JUFLAGsXICsNI os TIMES TMAX 3s TZERO SNE» TQP oT
-211 Z+sICONTRSPLTINCyMATYESs ICSS 4 JFLAGSPLT
-C } :
-TX#TIME+Qe5%T
-ZUV)YHSIN (2.0%TX)
+DISTRB FOR REPCRT EXAMPLE
+
+DIMENSION A(60+60)9C(60s60)sHP(£60+60) sQPT(60s60)
+IX(60)sY(60)sZ2(60)sXICI(eD0)sTQP(6D)
+
+COMMON CoHP sAsQPToXsZ oY s ITMAX sKKoLL sMMy
+
+| JUFLAGsXICoNI o TIMEs TMAX s TZEROSNE s TQP 4T,
+211 ZsICONTRSPLTINCsMATYES s ICSS 3 JFLAGSPLT
+
+TXH#TIME+DeS5#T
+
+Z{IY#SIN (2.0%*TX)
 RETURN
 END
 
 $IBFTC DSENS DECK
+
+C
+
 SUBROUTINE DISTRB
-C DISTRB FCR TIME RESPONSE SENSITIVITY CALCS.
-DIMENSION A(60+60)sC (60560) 9sHP (60960) 9sQPT(60s60}
-IX(60)sY(60)s2(60)sXIC(60)sTQP (60)
-COMMON CsHP sAsQP TeX 9ZsYs ITMAX sKKsLL s MM,
-| JJFLAGsXICoNI os TIME s TMAX 3s TZERO SNES TQP Ty
-21 1Z+sICONTRsPLTINCesMATYES s ICSSsJFLAGSPLT
-DIMENSION IR(5),I5(15)4JS(15),1Q(30)sXT(5,1000)
-IXSEN{(15+30) +XPSI(30)
-IFINI)Ts14e2
-| IF(ICONTR+2)54+443
-2 IF{ICONTR+42)7+646
-C INITIAL INPUTS AND CALCS.
-3 READ (54100) (IS(1)sJS(1)sI#195)sNTIsNSENS
-100 FORMAT(6(213s4X))
-NDT #1
-ICONTR#=-2
-NTIMO#NTI-|
-DO 8 I1#1 NE
-8 Z(I11#0.0
-C DURING SOLUTION OF SYSTEM EQUATIONS
-6 DC 20 I#1sNSENS
-ICO#JS(T)
-20 XT(ISNDTIH#X(ICO)
-NDT#NDT+ I
+
+DISTRB FCR TIME RESPONSE SENSITIVITY CALCS,
+DIMENSION A(60+60)9sC(60+60)sHP(60s60)sQPT(60+60) s
+IX(60)sY(60)sZ(60)sXIC(60)sTQP (60}
+
+COMMON CsHPsAsQPTsX9ZsY s ITMAX 3KK s LL y MM,
+
+| JJFLAGsXICoNI s TIME s TMAX s TZEROSNESTQP 5T
+21 1ZsICONTR4yPLTINCYMATYESsICSSsJFLAGSPLT
+DIMENSION IR(5)sIS(15)9JS(15)sIQ(30)sXT(5,1000)
+I XSEN(15530) sXPSI(30) |
+IF(NI)lsls2
+
+IF(ICONTR+2)5 4443
+
+IF(ICONTR+2)7 646
+
+INITIAL INPUTS AND CALCS.
+
+READ (5 100)(IS(I)sJS(I)sI#1395)sNTIsNSENS
+FORMAT(6(21344X))
+
+NDT#1 '
+
+ICONTR#=2
+
+NTIMO#NTI—1
+
+DO 8 I#1sNE
+
+Z(1)#0.0
+
+DURING SOLUTION OF SYSTEM EQUATIONS
+
+DC 20 I#!sNSENS
+
+ICO#JS(1) -
+
+XT(IsNDT)#X(ICO)
+
+NDTH#NDT+ |
+
 GO TO 30
 
-C JUST AFTER SYSTEM SOLUTION IS COMPLETED
-4 1STH#D
+JUST AFTER SYSTEM SOLUTION IS COMPLETED
+IST#N
+
 ICONTR#-3
-DO 21 I#1 sNSENS
-DO 21 J#I sNTIMO
-. 21 XTUI oJ) #0eB%*(XT(IesJ)+XT(IsJ+11))
-ae XT # AVG VALUES OF SENSITIVITY EQN INPUTS
 
-WRITE(65102) ((XTCIsJd) oH oNTI) os I#1 9NSENS)
-102 FORMAT(3HOXT/ {1H 4I10El]l«3))
-C
-C AFTER COMPLETING EACH SENSITIVITY RUN -
+DO 21 I#1sNSENS
 
-5 ISTHIST+!I .
-IF(IST-NSENS)31431932
+DO 21 J#I 4NTIMO
+
+XTI o J)#DaB* (XTI J)+XT(I sJ+11))
+
+XT # AVG VALUES OF SENSITIVITY EQN INPUTS
+WRITE(64+102)
+FORMAT (3HOXT/(1H 4I10EI]e3))
+
+AFTER COMPLETING EACH SENSITIVITY RUN -
+ISTHIST+} | - .
+IF(IST-NSENS)31s31932 '
+
+((XT(IoJd) s JHEI sNTI) s I#I1 +NSENS)
 
 DIMENS
 DIMENS
 
 29880105
 29880107
-29880108
+298840108
 
 29880113
 29880115
@@ -3240,16 +3203,15 @@ DIMENS
 
 29880201
 
-29880212
+298802172
 
 29880203
 29880205
 
 29880209
-29880211
-
+2988021 1
 29880213
-29880214
+2988U2 1 4
 
 29880215
 29880217
@@ -3263,41 +3225,41 @@ DIMENS
 
 30
 
--52-
+- -52-
 
 GO TO NEXT CASE
 
-I CONTR#D
+[CONTR#D
 
 PLTINC#TMAX
 
-TMAX#De 0
+TMAX#De0O
 
-NI#l
+NI#I
 
-Go To 30
+GO To 30
 
-[IZH#IS(IST)Y
+I 1Z#ISCIST)
 
-COLe I11Z OF HP MATRIX MULT o BY z
-WRITE(6s101) IS(IST) »JS(IST)
-FORMAT ( | 8HOSENSITIVITY TO As1351Hss1351H))
+COLe I1Z OF HP MATRIX MULT. BY 2z
+WRITE(6s101) : :  IS({IST)sJSI(IST)
+FORMAT(IBHUSENSITIVITY T0O A(9139|H9’I39IH))
 TIME#TZERO
 
 NDT#I
 
-“DO 41 I#1 NE
+DO 41 I#I sNE
 
-X(I)#0e0
-Z(1)#0e0
-JUFLAG#D
+X(1)#0e0
+Z(1)#0.0
+JJIFLAG#O
 
 "DURING EACH SENSITIVITY RUN -
 
-Z(IIZ)#XT(IST NDT)
-NDT#NDT+ |
+Z(IlZ)#XT(IST;NDT)
+NDT#H#NDT+ |
 
-RE TURN
+RETURN
 
 END
 
@@ -3316,88 +3278,92 @@ END
 29880317
 " $IBFTC SUBV DECK
 
-OOO OOO ON
+OO O OOy MM
 
-2
+|2
 30
 
-SUBRCUT INE VARCO(XTRsTX)
+SUBROUTINE VARCO(XTR,TX)
 
 FOR USE WITH DISTRB AND MATEXP FCR
-VARIABLE Z-Se GIVES 1-ST ORDER EXTRAP.
+VARIABLE Z-Se GIVES {-ST ORDER EXTRAP.
 
 FOR AVGe X AND TIMEs PLUS RESTART
-ON |-ST INTERVAL, DISTRB FORM #
+ON 1-ST INTERVAL. DISTRB FORM #
 
-CALCe MATRIX COEFFe-S»
+CALCe MATRIX COEFFe=S}
 CALL VARCO(XTRsTX)
 
 ETC.
 
-IF NI#O
+IF NI#0
 
-CALCe Z-S USING XTR(I)=S AND TX (TIME).
+CALCe Z-S USING XTR(I)=S AND TX (TfME);
 
-DIMENSION A(60560)5C(60560)sHP (60960) sQPT(60560)
-IX(60)sY(60)s2(60)sXICI60)TQP (60)
+DIMENSION A(60,60)C(60+60)sHP (60 6D),OPT(6u,60),
+IX(60)sY(60)sZ(60)sXICI60),TQP(60)
 
-COMMON CsHPsA3sQPT 4X 9ZsYs ITMAX KKsLL yMM,
-I JIFLAGsXICoNI 9 TIME s TMAX 3 TZEROSNEsTQP 3 Ts
-21 1ZsICONTR4PLTINCIMATYES» ICSS»JFLAGHPLT
+COMMON CsHP sAsQP T oX3Z s Ys ITMAX sKKsLL 4 MM,
+F JUFLAG o XICeNI g TIMEs TMAX s TZEROSNEsTQP 4T
 
-DIMENSION XTR(60)sXL (60)
+DIMENSION XTR(60)sXL(60)
 
-IF(NI)1sls2
+IF(NI)1 sl e2
 
 FIRST ENTRY
 
 NV # |
 
-TXH#TZERO+0 e5*T
+TX#TZERO+O 5% T
 
-DO 10 I#I1 sNE
-XTROI)H#XIC(IY
+DO 10 I#I| 4NE
+XTROIVH#XIC(I)
 
-GO To 30
+GO Tn 30
 
-IF(NV)3s344
+IF(NV)3s3s4
 
 SECOND ENTRY
 
-NV#0
+NV #0
 
 TIME#TZERO
 
-PLT#De0D
+PLT#0eDN
 
-DO I I#1 sNE
-XLII)#XIC(])
-XTR(I)#0. S5#¥ (XLOI)+X(I))
-X{I)#XICI(I)
+DO |1 I#IsNE
+XLII)#XICI(I)
+XTROI)#0e 5% {XLIT)+X (1))
+X{I)#XIC(I)
 
-GO To 30
+Go To 30
 
 ENTRIES AFTER SECOND
-TX#TIME+D«5%T
+TX#TIME+005*T
 
-DO 12 I#I1sNE
-XTRIIN#X(I)+0e5%*(X{1)=XL(I))
-XLOIY#X (I)
+DO 12 I#I|sNE
+XTROII#X(I)+0e 5% (X(I)=XL(I))
+XL{T)y#X(I)
 
 RETURN
 
 END
 
-2880101
-29880103
+21 1ZyICONTRyPLTINCIMATYES s ICSSsJFLAG,PLT
+
+25880101
+29880)03
 29880105
-29880107
+
+- 29880107
+
 29880109
-29880111
+2988011 |
 29880113
 29880115
 29880117
 DIMENS .
+
 DIMENS
 
 29884118
@@ -3408,171 +3374,144 @@ DIMENS
 29880124
 29880202
 29880204
-29880206
+293880206
 29880208
 29880210
 29880212
-2988021 4
+29880214
 
 29880216
 29880218
 29880220
 29880222
 29880224
-2988030
-
+29880301
 29880303
 29880305
 29880307
 29880309
-29880311
-
+2988031 |
 29880313
-"5h
+,_5)4__
 
 $IBFTC FGEN CECK
 
-C
-C
-C
-C
-C
-C
-C
-C
-C
-C
-C
-C
-C
-C
-C
-C
-
-2
+N OO OOy O Oy O M
 
 100
 
-7
-
+-
 101
-
 86
 
-200
+SUBROUTINE DFG(XD,s2D)
 
-3
-C
-
-4
-
-5
-C
-C
-
-18
-10
-13
-
-SUBROUTINE DFG(XD,2ZD)
-
-EQUIVALENT TO 8 DFG-S WITH UP TO 32
-POINTS EACHe CALLED BY DISTRB.
+EQUIVALENT TO 8 DFG—-S WITH UP TO 32
+POINTS EACHes CALLED BY DISTRB.
 
 INPUTS ARE
-NDFGS NO. OF DFG-S USED
-NPTS NOe. OF POINTS IN EACH DFG
-XP INDEPENDENT VARIABLE DFG PCINTS
+NDFGS NOe OF DFG-S5 USED
+NPTS NOe OF POINTS IN EACH DFG
+XP INDEPENDENT VARIABLE DFG POINTS
 ZP DEPENDENT VARIABLE DFG POINTS
 
-XD IS THE INPUT VARIABLE AND ZD THE QUTPUT
+XD IS THE INPUT VARTABLE AND ZD THE QUTPUT
 
-DIMENSION A(60+60)sC{60+60)sHP (6060) sQPT (60960)
-FXTU60) oY (60)92160)sXICL60)sTQP (6D)
+CIMENSION A(60+60)sC(60+60)sHP(60s60) sQPT (605960}
+IX(6D0Y Y (60)sZ2160)sXICL60)sTQP(60)
 
-COMMON CsHP sA9sQPTsXsZsYs ITMAX9KKsLL s MMs
+COMMON CoHP sAsQPT9X9Z oY s ITMAX 9KKsLL s MM,
 
-J JIJFLAGsXICHyNI 9 TIME 9 TMAXsTZERO SNE sTQP oT
-211 Zs ICONTRHIPLTINCOMATYESsICSSsJFLAGSPLT
+| JJFLAG e XICoyNI 9 TIME s TMAXSsTZEROSNEsTQP s T
+211 Z9sJCONTRIPLTINCIMATYES s ICSSyJFLAGYPLT
 
-DIMENSICN XP(32+8)9ZP(32+8)9sSL (3298) sNPTSI(8)
-IJP(8)52D(8)sXD(8)
+DIMENSICN XP(32+8)9ZP(3298)9SL(32+8)sNPTS(8)
+|JP(8)sZ2D{(8)+XD(8)
 
-IFINI) i921
+IFINIY 1921
 FIRST CALL COMP.
 
 READ (5,100)
-FORMAT(1298Xs813)
-DO 86 I1#14NDFGS
-NP#NPTS (I)
+FORMAT(1258X5813)
+DO 86 I#!4NDFGS
+NP#NPTS (1)
 
-READ (5.101)
-FORMAT(8E (D3)
-WRITE (65200) Ios (XP(JsI)sZP (Jel) sJ#I4NP)
-OFORMAT (4HQODFGs 13, | 7H XP AND ZP INPUTS/
+READ (5s101)
+FORMAT (8E 1043}
+WRITE (65,200)
 
-IF CIHO 94 (2E12e494X)))
+NDFGSsNPTS -
 
-DO 3 I#!sNDFGS
+(XP(JsI)sZP(Js1) sJ#IsNP)
 
-MENPTS(I1) |
+Ia(XPUJeIYsZP(Jsl) s J#HI 4NP)
 
-DO 3 J#I eM
+2000FORMAT (4HQOCFGs 13,1 7H XP AND ZP IRNPUTS/
 
-SLUJesIVH(ZP{JI+ 1 91) =ZP (Js ))/IXPLJ+1s1)-XP(JsI1))
+e
 
-NDFGSsNPTS
+|18
+D
+13
 
-(XP(JeI)eZP (Jel) eJ#I| NP)
+| (ITHO 94 (2E12e494X)) )
 
-DO 5 I#1! sNDFGS
+DO 3 I#!1 sNDFGS
 
-DO 4&4 J#2s32
-IF(XD(IN=XP(Js1))5+544
+MENPTS (1)
+
+DO 3 J#I M '
+
+SLIJs IV#(ZP(J+1 91 )=ZP(Js 1))/ (XPLJ+1s1)-XP(Js1))
+
+DO 5 I#!| sNDFGS
+
+DO &4 J#2932
+IF(XD(I)=XP({Js1))59544
 CONTINUE
 
 JP(I)#J
 
-CALCS+ MADE EACH TIME
+CALCSe MADE EACH TIME
 
-DO & I#! sNDFGS
+DO 6 I#! sNDFGS
 
-JEJIP(T)
-IF(XD(I)=XP(JsI))I0sllsl2
-IF(XD(I)=XP(J=191))13s14s15
-J#JI-1 :
+J#JIP (1)
+IF(XD{I)I=XP(JsI))1Ds!llsl2
+IFI(XDUI)=XP{J=1s1))13414415
+J#J—| -
 IF(J=1)16s16s10
 
 J#2
 
 GO To 19
 
-ZDUIIHZP(J=1s1}
+ZD(I)HZP(J=1y1)
 
-Go To 6
+GO To 6
 
-NE NES
+JH#I+ |
 
 IF(NPTS(I)=J) 17518518
 
 29880105 .
 
-129880106
-29880107
+29880106
+2988007
 29880108
 29880109
-29880112
-298801 [3
-29880110
+129880112
+29880113
+25880110
 298801 14
 29880115
 29880116
 DIMENS
 DIMENS
 25880117
-25880118
+258806118
 29880119
-29880121
+29880121 .
 29880122
 29880123
 
@@ -3589,12 +3528,12 @@ DIMENS
 29880207
 29880208
 29880209
-29880210
-2988021 i
-29880212
+2988U210
+2988021 |
+25880212
 29880213
 
-29880214 -
+2988021414 .
 
 29880215
 29880216
@@ -3604,21 +3543,21 @@ DIMENS
 29880220
 -55-
 
-JENPTS(I)
+JHNPTS(1)
 
 GO TO 19
-ZD(IVH#ZP (Js 1)
-GO TC 6
+ZDUIVHZP (U 1)
+GO TO 6
 
-WRITE (69102) 1
+WRITE (6s102) 1
 
-FORMAT (4HODFGs 13,4 16H RANGE EXCEEDED.)
+FORMAT (4HODFGs I3 16H RANGE EXCEEDED.)
 
-ZDCIVHZP(J=1 9 I)4SLIJ=1 oT) *¥(XD(I)=XP(J=151)).
+ZDUIYVH#ZP(J=1 s 1) +SLIJ=1 gT)#(XD(IV=XP(J=1,1)).
 JP(I) STORES VALUE OF XD LOCATION
 
 TO USE AS FIRST TRY NEXT TIME.
-JP #
+JP LI #J - ,
 
 RE TURN
 END
@@ -3631,136 +3570,131 @@ END
 
 29880301
 29880302
-29880303
+298803303
 29880304
 $IBFTC TRLAG
 
-AOC OOO OOO NOOO OOD
+OOV OO OO0 OO O v O
 
-Nn NOAN
+N OON
 
-[@]
+N
 
-NO
+Oy Oy
 
-OOO Cy
+Oy Oy ) Oy
 
 23
 
 24
 
-22.
+22
 
-20
+ZD
 
-®¥%¥s%% NOTE -—
+®%#¥t¥% NOTE -
 
 33
 31
 
 26
 
--56-
+56~
 
-DECK
+~ DECK
 SUBROUTINE TRLG(XTsWsZT)
-VARIABLE TRANSPORT LAG GENERATOR - FORTRAN IV
+VARIABLE TRANSPORT LAG GENERATOR = FORTRAN IV
 
-USES UP TO 300 POINT APPROXIMATION FOR
-UP TO 6 VARIABLES. USES INVENTORY CALC.
+USES UP TO 300 POINT APPROXIMATION
+UP TO 6 VARIABLES.
+
+FOR
+USES INVENTORY CALC,.
 
 INPUTS FOR EACH LAG (TOTAL # NLAGS)
-
-INPUT FUNCTION XT(1I)
-
-MASS FLOWRATE W(I)
-
-INITIAL VALUE OF LAG TIME TICI) .
-MINIMUM EXPECTED VALUE OF MASS FLOW WMIN(I)
-
-2e
-3
-4a
+e INPUT FUNCTION XT{(1I)
+2e MASS FLOWRATE W(I)
+3. INITIAL VALUE OF LAG TIME TI(I) . ,
+4o MINIMUM EXPECTED VALUE OF MASS FLOW:WMIN(I)'
 
 OUTPUTS ARE LAGGED FUNCTIONS ZT(I)
 
-DIMENSION A(60+60)sC(60560)sHP (60560) sQPT (60560)
-IX(60)sY(60)sZ2(60)sXIC(6D) TAP (60)
+DIMENSION A(60+60)»C(60s60)sHP(60s60) sQPT(60+60)
 
-COMMON CsHP sAsQPTsX9ZsYs ITMAX KKsLL sMM,
+IX(60)sY (60),Z2(60)sXICLED)»TQP(60D)
 
-| JIFLAGsXICoNI 9s TIME s TMAXSTZEROSNESTQP Ty
+COMMON CoHP sAsQPTsX9ZsY s ITMAX yKKsLL sMM,
 
-211ZsICONTRsPLTINCsMATYES,s1CSSsJFLAGSPLT
+[ JJFLAG 9 X1ICsNI s TIMEs TMAXsTZEROSNESTQP 5T
+211ZsICONTRsPLTINCyMATYESs1CSSyJFLAGSPLT
 
-DIMENSION XT (6) sW(6)sTI(6)sWMIN(6)sZT (6)sXS (30056) 5
-IPS(3006) sKT{6) sJT(6)sXIMP(6) 9s IMP (6) sNIMP (6)
+DIMENSION XT(6)9W(6)9TI(6)9WMIN(6)’ZT(6)9XS(BDD’6)9
 
-NI # |-ST CALL FLAG {(# 0 ON
+IPS{3006) sKT(6) s JT(6) s XIMP(6E) 9 JMP(6) s NIMP (6)
+
+NI # |-ST CALL FLAG (# 0 ON
 T # COMPUTATION TIME INTERVAL
 
-I-ST CALL)
+| -ST CALL)
 
-IF(NI)20s21,20
+IF(NI)20s21 20
 
 FIRST CALL COMP.
-
-READ (5,100) NLAGS,sTI,WMIN
-FORMAT (I2/(6E1043))
+READ(5,100) NLAGSsTI 4 WMIN
+FORMAT(I2/(6E1De3))
 WRITE(6s101) TIsWMIN
-FORMAT (26HOTRLG INPUTS — TI AND WMIN/(I1HOs6E1845))
-DO 22 I#IsNLAGS
 
-XJIMP (I) #10
+FORMAT (26HQTRLG INPUTS - TI AND WMIN/(IHDs6EI1845))
 
-XSU1sl)#XT(I)
-PS(IsI)AW(II®TI(I)
-XNSP#PS (11) / (WMIN(I)®T)
-DO 23 M#I,10 |
+DO 22 1#!sNLAGS
+XIMP(I)#1e0
+XSUIsT)#XT(I)
+PSCIsI)#W(II*TICI)
+XNSPH#PS (1 s1)/ (WMIN(I)*T)
+DO 23 M#1,10 |
+PI#XJIMP (L) %XNSP
+IF(300e0-P11)23424424
+XJIMP I )#XIMP(1)+1.0 -
 
-PI#XJMP (1) %#XNSP
-IF(300e0-P 1123424424
-
-XJIMP (I) #XIMP(1)+1.0
-
-JMPUIVAHIFIX(XIMP (1)
+JMPUIYHIFIXI(XJIMP (1))
 
 CKT(I)#2
 
-JT (1) #]
-NJMP (1) #1
-NV #1
+JTCI)#]
 
-CALCS.
+CNJMP (1) #1
 
-MADE EACH TIME
-NVHNV + |
+NV#-1
 
+CALCS. MADE EACH TIME
+
+NVAENV+ | | |
 IF A RESTART FEATURE IS USED (WHERE THE INITIAL TIME
 STEP CALCULATION IS REPEATED),
-OMIT THE TRLG CALC. THIS
-REMOVING STATEMENT 33.
-IF(NV)31932,3]|
+OMIT THE TRLG CALCe THIS
+REMOVING STATEMENT 33
+IF(NV)31932,31
 
-DO 17 I#!sNLAGS
+DO 17 I#1sNLAGS
+IF(NJMP(I)—JMP(I))26,27,27
+NIMP (T #NJUMP (1) +1
 
-LF (NJMP (1) =JMP11))26527,27
-NIMP (1) #NIMP (1) + |
+| -ST CALL OMISSION MAY BE DELETED BY
 
-|-ST CALL OMISSION MAY BE DELETED BY
+ 
 
 THE FLAG NV AND STATEMENT 33 WILL
 
-29880105
+25880105
 29880106
 
 29880108
 29880109
-298801 10
-2988011 |
+29880110
+298801 1§ |
 29880112
 
-29880114
+298801 14
 
 DIMENS
 DIMENS
@@ -3768,7 +3702,7 @@ DIMENS
 DIMENS
 DIMENS
 
-29880121 ~
+29880121 -
 29880123
 
 DIMENS
@@ -3782,6 +3716,7 @@ DIMENS
 
 29880212
 29880213
+
 29880214
 
 29880216.
@@ -3790,100 +3725,103 @@ DIMENS
 29880219
 27
 
-@® 0
+@ O
 
--57=-
-
-Go To 17
-
-NJIMP (1) #1
-
-KHKT (1)
-
-JHIT(I)
-
-XS(KsI)#XT(I)
-PS(KsI)#XIMP (I) *W (1) *T
-J#NOe OF ELEMENT AT EXIT. K#NO. AT ENTRANCE
-IF(PS(Jsl)=PS(KsI))1s293
-ZTOLYAXS (Js)
-IF(J-300)697s7
-
-JT) #]
-
-GO TO 30
-
-JTL) #J+]
-
-Go To 30
-
-COLLTH#XS(Js 1)
-COLLP#PS(JysI1)
-DO I15M#1+300
-IF(J-300)8+955
-
-J#0O
-
-JH#EI+
-PQ#COLLP+PS(Js1)
-
-IF(PQ-PS{KsIN) 11912513
-CCLLT#(COLLT*COLLP+XS{J,I)%PS(JsI))/PQ
-
-COLLPHCOLLP+PS(Js1)
-ZT(1)#(COLLT*#COLLP+XS(Js1)%¥PS(Js1))/PQ
-
-IF(J=-300) 1416416
-JT) #1
-
-Go To 30
-JTIY#J+I
-
-GO To 30
-
-PS(JsI)#PQ-PS(Ks1)
-ZT(I)H#(COLLT*COLLP+XS(Js1)*¥PS(JsI))/(COLLP+PS (JI)
-JTL #J
-
-GO To 30
-
-ZTLIY#XS UNI)
-PS(Js IV #PS(JsI)-PS(K, 1)
-
-IF(K~300)44+595
-KT(1) #1
+=57~
 
 GO TO 17
 
-KT (I) #K+1
+NJMP (1) #1
+
+KEKT (1)
+
+JHEJTIT)
+
+XSIKsT)#XT(I)
+
+PS(Ks I )EXIMP (L) *¥W (I ) %®T
+
+J#NCe OF ELEMENT AT EXITe K#NO. AT ENTRANCE
+IF(PS(Js1)=-PS(KsI)) | s2s3 |
+ZTUIYH#XS(Js 1)
+
+IF(J~300)1697s7
+
+JT (1) #]
+
+GO TO 30
+
+JTCIV#I+]
+
+GO TO 30
+
+COLLT#XS(Js1)
+COLLP#PS(Jy1)
+DO I5M#1+300
+IF(J-300)85955
+
+J#0
+
+J#J+]
+PQ#COLLP+PS(Js1)
+
+IF(PQ-PS{KsI)) 1191213
+CCLLTH(COLLT*COLLP+XS(JsII®PS(JsI1}))/PQ
+
+COLLP#COLLP+PS(Js1)
+ZT(1)#(COLLT*COLLP+XS(J,1)%¥PS(Js1)1/PQ
+
+IF(J=-300) 14516416
+JT(IY#1
+
+GO To 30
+JTII#J+
+
+GO To 30
+
+PS(Js1)#PQ-PS(KsI)
+ZT(I)#(COLLT*COLLP+XS(Js 1) ¥PS(Js1) )/ (COLLP+PS(Js 1))
+JT LI #J) | '
+
+GO To 30
+
+ZTUIYVH#XS (D)
+PS{Js ) #PS(Js 1) -PS{K,I)
+
+[IF({K=300)44+545
+KT(I)#!
+
+GO TO 1|7
+
+KT (D) #K+]
 CONTINUE
 
 RE TURN
 END
 
 29880220
-2988022 |
+29880221
 29880222
 29880223
 29880224
 
 29880301
-2988u302
+29880302
 29880303
-DIMENS
+DIMENS.
 
-25880205
+25880305
 29880306
-25880307
+29880307
 29880308
 29880309
-298840310
-2588031 i
+298830310
+2988031 |
 DIMENS
 
 DIMENS
 
-25880316
+29880316
 
 29880319
 29880320
@@ -3891,6 +3829,7 @@ DIMENS
 DIMENS
 
 29880401
+
 29880402
 29880403
 
@@ -3900,10 +3839,10 @@ DIMENS
 29880407
 29880408
 29880409
-29880410
+298806410
 
 29880412
-26880413
+25880413
 
 DIMENS
 
@@ -3919,65 +3858,50 @@ DIMENS
 
  
 
+aaete
+
+   
+
+ 
+
+s
+I
+
  
 
  
 
-i
-
-4
+ 
 1-30.
 31.
 32-61.
-62.
+62 .
 63.
-6h.
-65.
+6L,
+65 .
 66.
 67.
 68.
-69.
+
 70.
-Tl.
-72.
-73.
-Th.
-
-75.
-
-76.
-
-Tle
-78.
-
-79.
+72%
 
 81.
-82.
-83.
-- 8h.
-85.
-86.
-87.
 
-88.
+ok.
 
-89.
-90.
-
-92.
-93.
-gl.
 95.
 96.
 
-QUUEHEZQUUAQATHINEQWORUHArPQEHGE ANGE TOG QE nH
+OWoHEoEaoaggarHInIi ool raEqgd RN oy B nE D
 
-rh<grguwbibhoong<iImogEzzgngdaoaqEdepDmIog<sgi®
+-*
+
+*
+
+TH<4GpqUbbQQUqg<<HoogEzzgngddagqEdgderm g ggE R
 
 59
-
-ORNL-TM-1933
 
 INTERNAL DISTRIBUTION
 
@@ -3985,17 +3909,16 @@ INTERNAL DISTRIBUTION
 
 Anthony (K-25)
 
-. Ball:
 . Blalock
+. Borkowski
 
-Borkowski
 Bullock
 Burke
 Clark
 
 . Dandl
+. Danforth
 
-Danforth
 Davidson
 Ditto
 
@@ -4014,25 +3937,27 @@ Fry
 Hagen
 Harrill
 
-. Hyland.
+. Hyland:
 . Jamieson
 
 Jordan
 
 . Kaye
 
-Kedl
+Kedl -
 
 . Kress
 . Kryter
-. Lawson 125-
+. Lawson
 
+125-
 Lucius
+
 Mankin, Jr. (K-25)128-
 
 . Martin
-. McClain (K-25)
-. McLain 135-
+. McClain (XK-25)
+. McLain
 
 Metz
 Miskell (Y-12)
@@ -4040,50 +3965,64 @@ Miskell (Y-12)
 . Moore
 . Mossman
 
+135-
+
 97.
 
-98.
+8.
 
 99.
-100.
+100,
 101.
 102.
 103.
-10k,
+104,
 105.
-106.
+106,
 
 . 107.
 
 108.
-109.
-110.
+109,
+110,
 111.
 112.
 113.
-11k.
+11k,
+
 115.
+
 116.
 
-117.
+“117.
 
 118.
 119.
 120.
 121.
-122.
+122,
 123.
-12k,
+124,
 126.
 127.
-132.
+132,
 133.
 134.
-149.
+149,
 
 150.
 
-GHEE GOHUEU NEO EQUB UE UE O GE QQ
+2RO namsE
+
+L.
+
+D EqgOHGgEqgNHOEZ Q"D OO QO
+
+<HtHEHEHORDWOQKHKE DN
+
+M' M.
+
+ORNL-TM-1933
 
 . Nestor
 
@@ -4094,55 +4033,43 @@ Nowlin
 Olsen
 
 . Partain
-
 . Patten
-
 . Peele
 
 . Perry
 
 Pitkanen
-
 Prince
 
 . Roux
-
 . Sadowski
 
 Sartory
-
-. Smith
-
-L. Smith
+Smith
+Smith
 
 Squires
 
 Stone
 
 . Tallackson
-
 . Tobias
-
-. Trinko
-Tucker
-
+- Trinko
+. Tucker
 . Walker
 
 Watson
 
 . Whatley
-
 . Whitt
 
 Wichner
-
-. Wilson
-
-M. M. Yarosh
+Wilson
+Yarosh
 
 Central Research Library
 
-Document Reference:Section
+Document Reference.Section
 
 Laboratory Records Department
 
@@ -4155,33 +4082,35 @@ mation Ext.
 
 Research and Development
 Division ORO
-
-= Rog eEEDE aor noms
-
-SdEEHLRRDOQTH IN
 151.
 152.
 153.
 
-154.
-155.
+15k,
+155,
 156.
-157.
+157,
 158.
-159.
+159,
 160.
 161.
-162.
+162,
 163.
 164,
 165.
 166.
-167.
+167 .
 168.
 169.
 170.
 171.
 172.
+
+J
+J
+R.
+E
+S
 
 60
 
@@ -4192,8 +4121,8 @@ S. G. Bloom, Battelle Memorial Institute, Columbus, Ohio
 
 Neal Carter, Battelle Northwest Labs., Richland, Washington
 
-E. H. Cooke-Yarborough, Electronics Division, AERE,
-Harwell, England
+E. H. Cocke-Yarborough, Electronics Division, AERE,
+Harwell, England |
 
 S. J. Gage, University of Texas
 
@@ -4210,16 +4139,18 @@ T. W. Kerlin, University of Tennessee
 ‘L. B. Koppel, Purdue University
 
 J. B. H. Kuper, Brookhaven National Laboratory
+
 Rufus Oldenburger, Purdue University
 
 H. M. Paynter, Massachusetts Institute of Technology
-J. W. Prados, University of Tennessee
-J. C., Robinson, University of Tennessee
+W. Prados, University of Tennessee '
 
-R. F. Saxe, North Carolina State University
+. C. Robinson, University of Tennessee
+¥, Saxe, North Carolina State University
+Siddall, AECL, Chalk River, Ontario
 
-E. Siddall, AECL, Chalk River, Ontario
-S. E. Stephenson, University of Arkansas
+. E., Stephenson, University of Arkansas
+
 Otis Updike, University of Virginia
 
 T. J. Williams, Purdue University
@@ -4228,4 +4159,4 @@ W. C. Wright, University of Tennessee
 
  
 
-oy
+:1n

@@ -1,24 +1,24 @@
  
 [skipped page] 
 
-MURGATROYD - AN IBM T7090 PROGRAM FOR THE ANALYSIS OF
+MURGATROYD - AN IBM 7090 PROGRAM FOR THE ANALYSIS OF
 THE KINETICS OF THE MSRE
 
 I. Introduction
 
-This report is a description of an IBM T7090 program based on a par-
+This report is a description of an IBM TO90 program based on a par-
 ticular model of the Molten Salt Reactor Experiment. The differential
 equations of motion are discussed in Section II; since much of the de=-
-rivation has appeared elsewhere,” only the additional derivations nec-
+rivation has appeared elsewhere,l only the additional derivations nec-
 essary in the present problem are included. The fifth-order Runge-Kutta
-procedure is a standard one which can be found in many numerical analysis
+procedure is a‘standard one which can be found in many numerical analysis
 
 3
 
-textbooks . Tts previous successful use in the TO4 program PET- indicated
+textbooks.2 Tts previous successful use in the TO4 program PET- indicated
 applicability to the present problem and no revision has as yet been found
 either desirable or necessary. The use of the program is discussed in
-Section III, with instructions for the preparation of input data; sample
+Section'III, with instructions for the preparation of input data; sample
 
 input forms and output sheets are included.
 
@@ -26,8 +26,8 @@ II. Differential Equations of Motion
 
 A. Power, Fuel and Graphite Temperatures
 
-The reactor model used as the basis of the program is a one-point,
-one=-energy group representation, with up to seven delayed neutron pre=-
+The reactor model used as the basis of the program is a one=-point,
+one=-energy group representation, with up to seven delayed neutron pre-
 cursors, which is described by the following set of differential equations:
 (all symbols are defined in the Nomenclature; a dot over a symbol denotes
 
@@ -35,33 +35,33 @@ time derivative)
 
  
 
-: kx (1-p)~-1 N
-P = Se P + ) A Ty (1)
-ial
-. Bs P
-r, = 3 "MNT ,i=1, N (2)
+: k (1-p)~-1 N
+P = S - P + Z ATy (1)
+-l
+. Si P
+r, = 35— "ML ,i=1, N (2)
 
-The effective multiplication constant k, is assumed to be of the form
+The effective multiplication constant ké is assumed to be of the form
 
 ok ok
--— - e - aa € - :
-k= 1+4+bt ST (Tp = Tol) ST (T, Too) . (3)
+- - e - s e - :
+k= 1+4+bt ST (Tp = Tpl) B—Tg ('rg Tgo) . (3)
 
 (The subscript zero denotes the steady state value.)
-(4)
+(&)
 
-nn
-Je
+N
+e
 i
 
-fP - wep (T, - T, ) A h(T, - IT.)
+fP - wc_P_(tr.'2 - Tl) + h('rg - Tf)
 
 (5)
 
-nn
+n
 i
 
-(1-f) P - h(T, - To)
+(1-f) P - h(Tg - 'I'f)
 
 It is now necessary to specify some connection between the mean fuel
 
@@ -70,67 +70,67 @@ The assumption is made that the mean fuel temperature is a weighted mean
 
 of the inlet and outlet; i.e., that
 
-temperature Tes the inlet temperature T, and the outlet temperature T,.
+temperature Tf, the inlet temperature T, and the outlet temperature T2.
 
-Tp, = al) + (1-a) T, ; (6)
+T, = al) + (1-a) T, ; (6)
 
-the weight a(0 < a < 1) is an input number in the T7090 program.
-Further it is assumed that the inlet temperature I is a constant.
+the weight a(0 < a < 1) is an input number in the T090 programn.
+Further it is assumed that the inlet temperature Tl is a constant.
 With the definitions
 
  
 
  
 
-s (rT. -T.)
-— fr f fo
-Yo = 5 (7)
-0
-_ 5, (T, - Too? :
-Vg - (1-1) P ( )
+s (T, - T, )
+. — £ 3 f fo
+Yo = = (7)
+O
+- Sg(Tg - Tgo) :
+yg - (l-f) Po ( )
 
 and the initial condition
 
-h(T =~ T
+h(T - T
 
-go go) = (1-1) By a (9)
+go go) = (1-T) By : (9)
 
 the following equations may be obtained
 
-. fP_ Wey h(1-£)P
-IP Vo = f(P = P_) - 5, ve ( 1% + ) + 5, Ve (10)
-i h(1-£)P_ hfP_
-(1-£)P yy, = (1-£)(P-P_) - Ts, Vg + 5, Ys (11)
+. fP_ Weo h(l-—f)Po
+fPOyf = f(P - PO) - “S“;"‘ yf<i-_-_—é- + h>+ "--é-g-myg (10)
+i h(l-f)Po hfP
+(l-f)Poyg = (l-f)(P-PO) - —-"-é'g-'-“-" yg + --é}-- Vg (11)
 
 which, with the definition
 
-x = P/P (12)
+x = P[P (12)
 
 may be further transformed to obtain the equations used in Murgatroyd:
 
-bd
+L d
 
  
-. 1 h h  1-f
-‘ Vp = *-L =x * 5, Vp ¥ 5 r g (13)
-co © Lo, ££
+. 1 h h  1-f |
+‘ Vp = %=L [Zl~a§tc ¥ S, } Yp ¥ Sg r g (13)
+. © L o, £
 
-Vg = XL = 5 Vet Ts. IF Ur (14)
+Vg = XL -5Vt T8 I s (1)
 
-g py
+g f
 
 Similarly equations 1 thru 6 may be transformed with the definitions
 
  
 
-C4 = ry/F,
-and 7, = 8/4
+Cl = I'J'./Po
+and 7, = f3i/£
 to
-k (1-8) - 1 N
-c Te |
-X = 7 X + 2, A C, (15)
+k (1-B) -1 N
+¢« e |
+X = 7 X + .23 %i C, (15)
 i=1
-C, = 7; x-AC, , i=1, N. (16)
+c'i = 7, x-AC, , i=1, N. (16)
 
 If the definitions of yp and Vg equations (7) and (8), are introduced
 
@@ -144,25 +144,25 @@ into equation (3) the effective multiplication constant becomes
 
  
 
-‘ Jk _ fP_ dk (1-f )P
-k = 14A0+bt=|c=| —=— v,.- —_— Yj a7)
-e oT, Sa f oT, Dy g
+‘ ak_e fP_ ake (1-f )Po
+k = 140 +bt=|c=| —=— y.- —_— Y. ; aT7)
+e 5Tf Sf f 3Tg Sg g
 with the definitions
-° Ak fP_
-We = |5T.| 52 (18)
-£r| tf
--f)P
-Wy = or = > (19)
-8 g
-[These are similar to the parameter 2 in reference 1.]
+> ake fP_
+e = |5T.| 52 (18)
+£r| f
+-f )P
+W82 = 65:8 (lsfi > (19)
+g g
+[These are similar to the parameter WNE in reference 1;}
 . the equation for the normalized power becomes
-( )( ) ;
-A c L+6+Dbt)(1 -B) - 1 2 2
-X = ) - (1 - B)(W, Ye + V, 7g) x + A A; Cy
+( )( ) | :
+o c L+6+Dbt)(1 -B) -1 2 2
+X = [ ) - (1 - 6)(Wf Ve + Wé yg)} X +123 A, Cy
 (20)
 
 The differential equations actually used in the program are the set
-20, 16, 13, and 1h.
+20, 16, 13, and 1h4.
 
  
 B. Pressure
@@ -173,52 +173,52 @@ is adiabatic, and that the behavior of the molten salt is adequately
 
 described by the linear equation of state
 
-p(T) = p+ 5. (Tp = Tp) (21)
+p(Tp) = p + g%f (Tp = Tpo) - (21)
 
 A force balance on the liquid in the outlet pipe yields the equation
 
 M
 
-r . 2 .
-IWF g_ U = A(p, - P, - 8, u) (22)
+r . - 2 .
+m: U = A(pc - Pp - 8, u) (22)
 in steady state
 2
-p.(0) = po) +a, US" . (23)
+p.(0) = p (o) +a, U . ‘ (23)
 
 The assumption that compression of the gas in the pump bowl is adiabatic
 
 can be stated as
 
-pV" = p,(0) p00) [7 (24)
+p_ V" = pp(O) [VP(O)]n (24)
 
-eo
+oo
 
-Pp P
+P P
 
-if we assume that v, - V, (0) << v,(o) and neglect second order terms,
+if we assume that VP - Vp(o)'<<: Vp(o) and neglect second order terms,
 
 we obtain
 
 nAv
-p, = p (0) 1 - 0 | . (25)
+P, = PP(O) [l ~ \7;(%5] . (25)
 
-The change AV, in the pump bowl gas space volume is now assumed
+The change AV? in the pump bowl gas space volume is now assumed
 to be equal to the change in volume of the core fuel salt due to the
 change in temperature of the core fuel salt during a transient; i.e.,
 compression of the molten salt is neglected, as is heating of the ex-
 
-ternal loop. The change in volume AV, is expressed as
+ternal loop. The change in volume AVc is expressed as
 
-lo
+ko
 
-—AV, = AV, Io 5
+-6V, = AV, - I 5
 
 and substituting in (25) we obtain
 
  
 nv
 
-pp = P(0) a + AOR
+Py = P(0) [l * \7—%5'5—
 
 b
 
@@ -226,22 +226,22 @@ b
 
 0 T
 
-2m | - 2, | (26)
+%—- g,%-\(Tf - Tfo)] ‘. (26)
 
 Solving equation (22) for the core pressure we obtain
 
 M
-2 Tr .
+2 T .
 
-Po = Pypta,U + hg A us;
+Po = Pypta,U + iﬂﬂuézﬁf' U ;
 subtracting equation (23), we obtain
-p= Dp -p(0)= p -p(0) +a (P-U2) sr 0 ; (27)
+pp= b -0 (0)= b -p(0)+a (P-U2)s T 7 ; (27)
 
-p= DP, =F, - Py Py f 0 1g A ’
+p= P, =P, - pp pp f o iﬂﬂﬁézzf ’
 
-the term Py, - p, (0) is due to the compression of gas in the pump bowl, the
+the term pp - pp(c) is due to the compression of gas in the pump bowl, the
 
-term a, (U° - u_®) is due to the increase in friction losses, and the last
+term af(U2 - an) is due to the increase in friction losses, and the last
 
 term is the contribution from the inertia of the fluid in the outlet pipe.
 In order to proceed, a relation between outlet velocity and fluid
@@ -251,18 +251,18 @@ density change is needed. The equation of continuity for the fuel salt
 in the core is approximately
 
 ‘ A oy
-p= - 7 Po (U=05) ; (28)
+P = - v;—-pO(U-UO), (28)
 
 solving for the velocity U we obtain
 
-_ _ cl % 5 .
-U = U — $= Te (29)
+_ . .1 % . .
+U = U — S Te (29)
 
 and taking time derivatives
 
-Ve 0 *
+Vc o *
 
-= — $2 To. (30)
+= %...59.. T . (30)
 
 U= =
 
@@ -274,10 +274,10 @@ arrangement we obtain
  
 
 Vv M
-_ c 1 0 r
-Ap = - = = on top (0) io fo)
-ou a, i CJ wg (3)
-o ff fT 2hU Ps Ts T
+_ c 1 O r
+Ap = - = 5;. 5%;'["IKE_§;K'Tf t Py (o) —~r-7- )
+2 e, i -Vchp-é“ (3)
+o f £ ZAUO Py Tf T
 
 With the definitions of y. and X (equations 11 and 16) equation (31) is
 
@@ -287,69 +287,69 @@ transformed into
 
  
 
-Ve op £P, M nA
-Bp = = Kk op 3. TS Ee +200) Gy Ye
-o Tf T p
-‘ Vv fP “"
-‘ 1 9d oO
-vou ad, (1 me = == 7) (32)
-o ff 2AU Pq To Se f
+Ve Jp s M nA
+bp = - Kk o 3. S [um *+2.00) Gy Ve
+o T T p
+‘ Vv P "
+. 1l 93 o
++2Uay<l-—-—--—~c = 9 -—--—y)] (32)
+o fvf 2AUO Py Tf Sf f
 With the definitions
-Lila Eo
-A Po Is 1 gh £
-14h g A
-dy = - p,(0) Vv (0) M,
-14h g A
-ay = 2U 8p Ti
-Tr
+Lty M
+A Py Tf 1 gcA. £
+144 g A
+dy = - Pp(o) v (o) M,
+14 g A
+al = 20U af T
+T
 amd.
-Vv 2
-a = = ro 1_ = —2
-3 2AU Ps T Sa
+Vv P
+a = - MKS_. 1_ gQw —
+3 2-UO Ps T Sa
 
 we obtain the equation used in the program:
 
-Sp AEST RATE ACEI AY (33)
+Sp =dl[>'<+d2yf+als’rf(l+d35rf)J (33)
 
-In terms of the dimensional groups of reference 1 and the parameter Wo
+In terms of the dimensional groups of reference 1 and the parameter ng
 
-defined in equation (18), the constants, d,, d,,, and as may be written
+defined in equation (18), the constants, d,, d,,, and d3 may be written
 
  
 
-»* * 0 *
-It is’ assumed that T, = IP/S
+* . e .
+It is assumed that T, = .fP/Sr.
  
 
  
 
 2
-. fw. \
+. fo \
 4 = 2
-75"
-a, = Wee \ 4)
-2 H “2 (3
+7oy
+a, = W°oc \ L)
+2 H 2 (3
 = 2 /
-a, W. [275
+a, W /273
 
 C. Effective Delayed Neutron Yields
 
 In order to account for the reduction in delayed neutron production
 in the core due to fluid flow, an effective yield is calculated for each
-precursor, assuming constant flux and slug flow. The fraction Vv. of
+precursor, assuming constant flux and slug flow. The fraction v, of
 delayed neutrons of the ith group which are released in the core is
 
-given py (4)
+given by(u)
 
-“At “A bp
-1 LC 3 -e
+ALt A by
+1 1 ¢ 31 e
 
  
 
 (35)
-. hale + tr)
+. e--?\i(tc + tL)
 
-where t, is the core residence time, As is the decay constant of the
+where t, is the core residence time, %i is the decay constant of the
 
 ith precursor and t. is the external loop transit time.
 
@@ -377,7 +377,7 @@ tapes are used; no other tapes are required.
 Output for a typical case is displayed in Figures Ila and IIb.
 Figure IJa is an edit of the input describing the reactor system, with
 the calculated effective delayed neutron yields; Figure IIb is the in-
-put for a particular case, and the continuations of Figure IIb show the
+put for a particular case, and the continuations of Figure Ilb show the
 
 time behavior of the reactor. The two columns headed
 
@@ -389,7 +389,7 @@ show the percent reactivity removed from the system by the temperature
 rise of the fuel salt and graphite, respectively. The quantity labeled
 "(1/P)(DP/DT)" is calculated from the expression
 
-og = E(t) - P(t - At) 2
+o = EB(t) - P(t - At) 2
 At " P(t) + P(t - At)
 and is therefore approximately the inverse period at t - At/2, where At
 is the input time step.
@@ -405,36 +405,36 @@ t. when the power has first decreased, and the values at the two previous
 
 3
 
-times, t. and 2Y as shown in Table 1.
+times, t., and te, as shown in Table 1.
 
 1
 
 Table 1. Power Maximum Indication
 
-Time Power (L/P) (DP/DT)
-t, P(t, ) BN
-3,2
-ts B(t,) |
+Time Power (L/P)(DP/DT)
+t, P(tl ) B
+*,2
+ts B(t,)
 %,3
-ts P(tq )
+t3 P(t3 )
 11
 
 The criterion for printing is
 >
-P(t, ) < P(t,) > P(t)
+P(tl) < P(ta) > P(t3)
 
-and the quantities a. ; are
+and the quantities ai 3 are
 2
 
-] P(t) - P(t, ) >
-i,3 At ’ P(t) + P(t, ) ’
+. ] P(tj) - P(ti) o
+i,3 At ’ P(tj) + P(ti) ’
 
  
 
  
 
 Similar remarks apply, mutatis mutandis, to the values labeled "VALUES AT
-PRESSURE MAXIMUM" and "VALUES AT PRESSURE MINIMUM."
+PRESSURE MAXIMUM'" and "VALUES AT PRESSURE MINIMUM."
 
 Acknowledgment
 
@@ -457,7 +457,7 @@ ORNL~-2088, July 3, 1956.
 Hall, Inc., 1961.
 
 3. S. Jaye and M. P. Lietzke, Power Response Following Reactivity Additions
-to the HRT, ORNL CF-58-12-106, Dec. 30, 1950.
+to the HRT, ORNL CF-58-12-106, Dec. 30, 1950,
 
  
 
@@ -471,9 +471,9 @@ Table 2. Nomenclature
 
 Definition
 
-area of outlet pipe, £2
+area of outlet pipe, ftz
 
-friction factor, psi/ (ft/sec)
+friction factor, psi/(f“t/sec)2
 
 initial ramp reactivity input
 
@@ -487,9 +487,9 @@ wetted area of graphite
 
 effective multiplication constant
 prompt neutron lifetime
-mass of fluid in outlet pipe, 1b
+mass of fluid in outlet pipe, 1lb
 
-ratio of specific heats (Cp/Cy) for pump
+ratio of specific heats (CP/CV) for pump
 bowl gas
 
 power
@@ -514,7 +514,7 @@ fuel salt inlet temperature
 
 fuel salt outlet temperature
 
-Equation
+Eguation
 22
 
 22
@@ -539,7 +539,7 @@ Definition
 
 outlet speed in pipe, ft/sec
 
-initial gas space volume in pump bowl, £3
+initial gas space volume in pump bovl, ft3
 mass flow rate of fuel through core
 
 total delayed neutron yield
@@ -551,15 +551,15 @@ initial step reactivity input
 
 fuel salt density
 
-Equation
+Eguation
 22
 
-2h
+2l
 
  
 Title
 
-1h
+14
 
 Table 3. Input for Description of Reactor System
 
@@ -569,22 +569,22 @@ V
 c
 
 t
-Cc
+c
 
  
 
  
 
-| (1/0) (30/ JT.)
+l (1/p0)(30/ an)l
 
-Le
+AL
 i
 
 B.
 
 1
 
-salt volume, £3
+salt volume, ftB
 
 residence time, sec (if fuel is not circu-
 lating, enter zero)
@@ -596,36 +596,36 @@ temperature difference, Mw sec/ F
 
 fraction of power generated in salt
 fuel heat capacity, Mw sec/°F
-graphite heat capacity, Mw sec/°F
+graphite heat capacity, Mw sec/oF
 
-fuel temperature coefficient of reactivity,
+fue% te%perature coefficient of reactivity,
 ("F)”
 
-grapnite temperature coefficient of reactivity,
+graghitf temperature coefficient of reactivity,
 ("F)"
 
 prompt neutron lifetime, sec
 
-fuel density, 10/53
+fuel density, lb/f‘b3
 
-fuel expansion coefficient, (°p)"t
+fuel expansion coefficient, (OF):';l
 
-delayed neutron precursor decay constants, sec
+delayed neutron precursor decay constants, sec-l
 
 delayed neutron precursor yields
 
 2. External loop characteristics
 
-ty
+t
 
 residence time, sec (if fuel is not circulating,
 enter zero)
 
-outlet pipe area, £2
+outlet pipe area, ft2
 outlet pipe length, ft
 steady state outlet velocity, ft/sec
 
-friction factor, psi/ (ft/sec)
+friction factor, psi/(ft/secz)
 
 Fortran Name
 
@@ -658,7 +658,7 @@ TLPPP
 
 AREA
 
-LS
+L3
 
 PLGTH
 
@@ -673,13 +673,13 @@ Title Fortran Name
 
 3. Pump bowl characteristics
 
-V, (0) initial gas volume, £3 VPRS
-p, (0) initial pressure, psi | PPRS
+Vp(o) initial gas volume, £ VPRS
+pp(o) initial pressure, psi | - PPRS
 N ratio of specific heat at constant pressure
 
 to specific heat at constant volume for
 
-gas in pump bowl CP@CV
+gas in pump bowl | CP@CV
 
 Title card is read with format 12AG; others with TELO.O.
 
@@ -694,19 +694,19 @@ Table 4. Input for Individual Cases
 
 Fortran name Format
 Case number ICASE 16, 11AC
-Title HPLC |
+Title HPLC }
 Symbol Definition
-PJ initial power, watts PZER(
-Teo initial fuel mean temperature, °F TFO
-Teo initial graphite mean temperature, °F TGO 6ELO0.0, 2I5
+Po initial power, watts PZER(
+Tfo initial fuel mean temperature, °F TFO |
+Tgo initial graphite mean temperature, °F TGO 6ELO0.0, 2I5
 Ak(o) initial step insertion, % STEP
 b(o) initial ramp rate, %/sec RATE
 ot time step, sec HH
-NP@ printout frequency NPQ
-KST@P number of time steps to be run after
-power peak KST@P
-ST¢P TIME total time to run YEND ]
-| E10.0, I5
+NP@ printout frequency NP@
+‘ KST@P number of time steps to be run after
+power peak KST¢P
+ST¢P TIME total time to run YEND }
+| FE10.0, I5
 NTC number of ramp rate changes NTC
 
 3 pairs to a card)
@@ -725,8 +725,8 @@ MURGATROYD INPUT |
 
 . TITLE FOR SERIES OF CASES
 
-TT lr
-RINENNSENRNEREREE REE RE RE RENNER N EERE RE ERRENEEEEERERERRRERERERRERNINEEERS
+T b
+WHHH—HHIH‘IHHHHIHHHIHIHHIHIHlll'llll-ll'liHIHHHHHHHHIHH_L
 
  
 
@@ -738,11 +738,9 @@ CORE DATA
 
  
 
-Ve t a ~h | f Sg | Sq |
+Ve t a ~h | f . S¢ | Sqg '
 
-CCC Or OCC OC CC CC I COT
-
- 
+OO O O O O O L T T LT T T O T
 
  
 
@@ -754,8 +752,10 @@ CCC Or OCC OC CC CC I COT
 
  
 
- 10ve/d el 1 0s / Ol 21 : as P fs 73 80
-HEERRRER IEENENEENEEENENERERNNENRNRRE TIT ITT IT ITT IT Ir Ip I vive tiie
+ 
+
+|lake/an‘ 1 lake/aTgl 21 l‘ ‘31 P | l f' s 73 80
+HEERRRER H'HHHlTHHHHHHllh_[HI RENEREREEEEERNEREREEERERERREEENERRREER
 
 DELAYED NEUTRON DATA
 
@@ -767,17 +767,17 @@ DELAYED NEUTRON DATA
 
  
 
-Ay N Ag | | Aa Ns re Az
+Ay | N A3 l | e Ns re Az
 
-| 5 71 80
+! 5 71 80
 
-TC TT CT CCC LC CC TT TT
+T L T L T L L T T T
 
-3 Bs Bs  B, Bs Be B;
+B Bs B B, Bs Be | B;
 
-i 21 3 41 - 71
+i 21 3 41 71
 
-CT I CC CO TC CCC TTT TTT
+T O O T O OO T T T T T T T
 
 EXTERMAL LOOP DATA
 
@@ -813,13 +813,13 @@ EXTERMAL LOOP DATA
 
  
 
-LO TILT
+O T T
 
 PUMP EuVIL DATA
 
-L u as G
+L ‘ U as¢ G
 
-CC TT OCC TC OC TC OC
+ENANNRANNANAANSNNNNNARNN NN NNRARAR NN AN NN AR RNANE
 
  
 
@@ -843,11 +843,11 @@ CC TT OCC TC OC TC OC
 
 Vp (0) Pp (0) n
 
-TTT IT LOT TL TTT II]
+T T LT T LTI
 
 31
 
-EENARNARANARNRNNNARENNNNANNRNANRRNNNRRANINANANE
+SENANNARANARERNNNARENNNNANNRNNNRRNNNRRRNINRNAEE
 
  
 
@@ -861,7 +861,7 @@ EENARNARANARNRNNNARENNNNANNRNANRRNNNRRANINANANE
 
  
 
-Fle. La,. Inpour Descriziog Reactor Sy ste ma
+'F‘GJ Ia\ INP.UT DESC{Z\B(Q@ QGACT‘o{Z SYSTEM
 
 1
 LT
@@ -872,7 +872,7 @@ LT
 CASE NO.
 7
 
-A ond PEP
+A o b PP
 
 CASE TITLE
 
@@ -886,75 +886,75 @@ CASE TITLE
 
  
 
-TIT
+TTIT
 
  
 
-TTT
+TITTT
 
-HCC CO CTO
+IHIIHHIJHIHHH'IH"HHHIIHHHIJIilIIIIHUII[IHIIHIHU
 
  
 
 Po
 
-Tso
+Tfo
 
-Tg0
+Tgo
 
-oo Ax (0)
+o A.< (0)
 
 by
 
-St
+3t
 
 NPO K STOP
 
  
 
-TIITITL
+TTITITL
 
  
 
-LITT
+LTI
 
-TI
-
- 
-
-[IIIT
+mmm
 
  
 
-TIT
+HHHH]
 
  
 
- 
-
-TIT]
+m'mm
 
  
 
  
 
-LLL
+s'ml
+
+ 
+
+ 
+
+L
 
 TTIIIIL
 
  
 
-TIIITTIT
+NRNRNNNEE
 
  
 
-STOP TIME, sec
+STOP TIMF’ sec
 
 30]
 
  
 
-TT OTT
+T
 
  
 
@@ -964,43 +964,43 @@ TT OTT
 
  
 
-TEL TTT II TT C
+HHILHLHIHHIIHIHHHIHIIHAHHHHHIIHHHHH
 
 TTTIIT
 
  
 
-TIME, sec.
+- TIME, sec.
 
-nev RAMP % 7900.
-
-TIME, sec.
-
-Nev RAMP Yo /sec.
+NE‘I RAMP °/o/sec
 
 TIME, sec.
 
-NEW RAMP, % sed
+NE\I RAMP °/o/sec
+
+TIME, sec.
+
+NE\I RAMP, "/o/scc'
 
  
 
-TOTTI
+T
 
-[TITIIIIT
+[TITTIIIT
 
-TIT
+T
 
-TTI]
+IIHIHH
 
-TITIITITS
+TTTIITITS
 
-TTI
+,HHUH_[.
 
-“TTTTTIT
+“TTITTTT
 
  
 
-[TTTTITITT]
+IllIIHHH
 
  
 
@@ -1010,15 +1010,15 @@ TTI
 
  
 
-TTT
+T
 
-TTI
+T
 
-TIITITIT]
+TITTITIT]
 
-TITIITIT
+TITTIITIT
 
-LIE III]
+LIE Il
 
  
 
@@ -1026,31 +1026,31 @@ TTTTT]
 
  
 
-tn ss ovo
+s o v
 
-TITIIIIT]
+T
 
-TTT
-
- 
+TTITIIT
 
  
 
-TOIT
+ 
 
-IIIT
+TOTTD
+
+I
 
 TITITTTT]
 
 TTTITTIT]
 
-TITTITT
+T
 
-TTI
+T
 
-1]
+L1
 
-HERENNEEER
+HERENNREER
 
 TITIIIL
 
@@ -1060,23 +1060,23 @@ TITIIIL
 
  
 
-COTY
+IO TT
 
-TTI
+T
 
-TIITIIITT
+TITTIIITT
 
 TTTIITIT]
 
-TITIITIT
+T
 
-[TTIITITIT]
+[TTITTITIT]
 
-TIITIIL
+T
 
  
 
-TTI
+TTITITTITI
 
  
 
@@ -1084,7 +1084,7 @@ TTI
 
  
 
-TTT
+T
 
 TITITITTI
 
@@ -1096,13 +1096,13 @@ ERRNER
 
  
 
-TIT
+1T
 
-TTI
+TTTIIITT
 
  
 
-TIT ILeddy
+TP PILedgy
 
 TITITT
 
@@ -1116,24 +1116,24 @@ TITITT
 
  
 
-TTI
+T
 
-TIITTTIT]
+TITTITTIT]
 
-TIIIITLL
+TIIIITIL
 
  
 
 73 80
-LEI tlT]
+LIt T]
 
  
 
-TIITITTT
+T
 
 TTTTTIIT]
 
-TTT IIIT]
+TTIITITITITIIIIIITII]
 
  
 
@@ -1147,7 +1147,7 @@ TTTITTIII
 
  
 
-TIIITTTIT
+TIITTTTIT
 
  
 
@@ -1165,7 +1165,7 @@ HREERAER
 
  
 
-TIT I IIT IIIIIL]
+T T T IIIIIL]
 
  
 
@@ -1173,52 +1173,52 @@ TIT I IIT IIIIIL]
 
  
 
-TTTL
+ITTTL
 
  
 
  
 
-Fie Th. Ionut tor One Case
+Fie To. Iudor tor One Case
 
-pe.
-cy
+‘91:
+ey
 
-y
+.y
 
 DK/DT,/DEG F
 
 ‘PROGRAM MURGATKoYD=-11
 
-MSRE NORMALUTFLOW ND SOAK-UP 3727782
+MSRE NORMALUTFLOW NO SOAK=-UP ™ 3727782
 
-INPUT EDTT ~~
+INBOT EDTT ———
 
 19
 
 Ta
-Fic. 2. Sampee OurtpuTr
+Fiec. 2. Sampee Ourtpur
 
-HEAY TRANSFER RATE (GRAPHITE TO FUEL) 0,020 MW/DEG F
+HEAY TRANSFER RATE (GRAPHIYE 7O FUEL)Y 0,020 MW/DEG F
 
-FRACTION OF POWER GENERATED TW FUEL "770,940
+FRACYION OF POWER GENERATED TW FUEL " 770,940
 
-RESIDENCE TIMES
-
- 
-
-CORE ~~ 7,318 SEC
-
-Loop 17,3384 SEC
-
-HEAT CAPACITY, GRAPHITE FUEL
-MWE*SEC/DEG F 3,530E 0 l.470E 00
-
-T6,000E=-0%  2.,800E=U5%
+RESTDENCE TIMES
 
  
 
-wren
+CORE 7,318 SEC
+
+_Loop 17,3384 SEC
+
+ﬂgglwqggpchv. GRAPHITE FUEL
+MWE*SEC/DEG F 3.53UE 0 is470E 00
+
+T 6,000E=-0%  2.,800E=U5%
+
+ 
+
+wrerean
 
 DELAYED NEUTRON DATA
 
@@ -1230,15 +1230,15 @@ DELAYED NEUTRON DATA
 
  
 
-DELAY LAMBDA, STATIC EFFECTIVE GAMMA(T), INITIAL ***GAMMA#BETA/LIFETIME
-GROUP SECe*-]| BETA RETA SEC**= | Cel) C # GAMMA/LAMBDA
-[ 0,0124 2,T12E=N4d 5,294E-05 2,170E=-0T 1,750& OI
+DELAY LAMBDA, GSTATIC EFFECTIVE GAMMA(T)Y, INITIAL ***GAMMA#BETA/LIFETIME
+GROUP SECe*-] BETA RETA SEC**= | Cel) C # GAMMA/LAMBDA
+| 0,0124 2,T12E=N4d 5,294E-05 2,170E=-0T 1,750& 01
 2 0,0305 1,402g=03 4,258E-04 |,468¢ 00 4,813 0
-gE TTA TT 25 ESTE A SUE STAT B23 00 TASTE TT
+g T T T 25 AR ST S UE ST T B3¢ 0T T A5 TE TT
 4 0,3013 2,528E="3 | ,513E-03 5,216 00 1,731 0!
-8 I, 1400 7,400e~14 6,5138-04 22,2468 00 T,970& 00
-6 3.0100 2,700F-14 2,577E~D4 8,88B8E~01 2,953E=01
-TOTAL 6,4056-43 3,381E-03
+g I, 1400 7,400e~14  6,513c-04 2,246€ 00 T,970& 00
+6 3.0100 2,700F=14 2,577E~D4 8,88B8E~01 2,953E=01
+TOTAL 6,405E-43 3,381E-03
 
  
 
@@ -1248,7 +1248,7 @@ NEUTRON LIFETIME
 
  
 
-FUEL TEMPERATURE # 0,5U%INLET + 0,5U*QUTLET
+FUEL TEMPERATURE # 0,5U*INLET + 0,5U*QUTLET
 
  
 
@@ -1262,75 +1262,75 @@ DATA FOR PRESSURE CALCULATION
 
  
 
-rE ap eR PEE QUTLETY PIPE DATA FETEFTHTNGF FFFHFRIREEY TODUMP ROWL DATA Fee LXE ERR CORE SALT DATA Teasntee
+rE st R PR E D QUTLETY PIPE DATA 63'4000‘u¢lni FFFRNFRIREY TODUMP ROWL DATA TR L X KRR CORE SALT DATA Teasntee
 'AREA, LENGTH, FLOW SPEED, FRICTION TERM,* * GAS VOLUME, PRESSURE, CP/CV * * VOLUME, DENSITY, =(1/V)(DV/DT),
-'SN FT FT FT/SEC PST/UFT/SECY**2% # cCuBlC FT PSI B * ¥ CUFT LB/CU FT PER DEG Ff
-0.139 6,0 19,3 0,0203 . oo» 2.5 5,0 1,67 * * 19,6 154,5 | s26E=04
+‘SN FT FT FT/SEC PST/UFT/SECY**2% # CuBlC FT PS1 B * ¥ CUFT LB/CU FT PER DEG F
+0.139 16,0 19,3 0,0203 . . 2.5 5,0 1,67 * * 19,6 154,5 | y26E=D4
 
  
 
-FR RP PIRI Ha NAT FRING II THEIIIF RAFAT RRAT ARG TRE
+PR R PP IR TR AN AT F R FRNFIITHEINIFAFETRRAT ARG TR
 
  
 
-PH FHR FIFA FAT RAT IFT garage ineigonnrane
+SN EZXERERERNEEE A A NN KN X R X N K N N N NN
 
-TRI FaNIRad pst gaaaneassnpnnsanpnas
-CASE
+TR TatNIRadpsRgaaaneassnpnnsanpnas
+CASE l
 
 20
 
 Tie. I b,
 
-"PROMPT CRITICAL STEP AT 14 Mw
+"PROMPT CRITICAL STEP AT |4 MW
 
-INITIAL VALUES
+INTTIAL VALUES
 
-—
+T
 FUEL TEMP
 
-GRAPHITE TEMP
-STEP DELTA kK
+ GRAPHITE TEMP
+STEP DELTA K
 
-RAMP RATE
+‘RAMP RATE
 TIME STEP
 
-1.000 07 WATTS
+- 14000 07 WATTS
 
-.1e00,000 DEGREES F
+. 1e00,000  LEGREES F
 
 T1230.000 DEGREES F
-0.338 PERCENT
+0,338 PERCENT
 
-«0s ~~ PERCENT PER SECOND
-..5.000E=03 SECONDS
+" «0s  PERCENT PER SECOND
+.. 5.000E=03 SECONUS
 
 PRINT EVERY 20 STEPS
 
-od
+)
 
-$y
+‘)
 21
 
-Fie Tb, (Cont)
-MURGATROYD [1 CASE |
+Fie T b, (Cont.)
+MURGATROYD 1 CASE |
 
-_ TEMP,DEG F RISE.PSI  INPUT,PCT FUEL GRAPHITE PER SECOND
+. TEMP,DEG F RISE.PSI  INPUT,PCT  FUEL  GRAPHITE PER SECOND
 
-TIM ETT POWER STF UEL T EMP jo
-SEC WATTS DEG F
+TIM ETWM"Mm"pUWEW ;TR IEL T EMP G
+SEC_ WATTS  DEGF
 
-0.100 2.170E 07 1200,369  1280,010  7,677€-01 0,381  0,0010 00,0000  5,468E 00
+0.100 2.170E 07 1200,369  1280,010  7,677€-01 0,381  0,0010 0,0000  5,468E 00
 
-0.200  3.388E 07  1201,479  1230,041  9,006E=01 0,338] 0,004]  0,0002 S.687E 00
-
- 
+0.200  3,388E 07 1201,479 120,041  9,006E=01  0,338]  0,004]  0,0002 S:687E 00
 
  
 
-9.500 4,673F U7 120%,346  124u,093 1.0406 00 0,338)  0,0094 0,0006  2,8(lE 00
+ 
 
-0.400 6,006F 07 1205,988 1230,170 1.159 00 0,338] 0,0168 0,0010 2.233E 00
+0.500  4,873F U7 1203,346  124u,093  1,040E 00 0,338)  0,0094 0,0006  2,8(|E 00
+
+0,400 6,006F 07 1205,988 1230,170 1,159 00 (0,338 0,0168 0,0010 24233k 00
 
 |«769E 00
 
@@ -1338,9 +1338,9 @@ SEC WATTS DEG F
 
  
 
-la
+o
 
-£500 7,331E 07 1209,396  1230,270 1,285 00 0,338] 0.0263 0,0006
+2500 7,331E 07 1209,396  1230,270 1,285 00 ,338]  0.0263  0,0016
 
 VALUES AT PRESSURE MAXIMUM
 
@@ -1350,14 +1350,12 @@ VALUES AT PRESSURE MAXIMUM
 
  
 
-TIME,SEC PRESSURE RISF,PSI -
+TIME,SEC PRESSURE RISF,PSI - “
 
-0.560 I,2503 00 } ] B
-0 Ses TeeslAE TU _
+0.560 I,2503 00 ) ] B
+5 EEs T ToesIAETU— _
 
-0,570 | 2503 00
-
- 
+0,570 | 2503 00 -
 
  
 
@@ -1365,29 +1363,31 @@ TIME,SEC PRESSURE RISF,PSI -
 
  
 
-0.600  8,5626 07  1213,519 1230,395 | ,246E 00 0,338 0,0024 1,350 00
+ 
+
+0,600  8,5626 07 1213,519 1230,395 | ,246E 00 0,338 0,0024 1,350 00
 
  
 
-0.700
+0,700
 
 0.800
 
 9.601E
 
-| « 038F
+i « 038F
 
 07
 
 08
 
-1218,245 1230.54]
+1218,245 230,541
 
-1223%,410 1230,706
+1223%,410 l230,706
 
-lo) 84E
+o) 84E
 
-| + 058E
+| +058E
 
 00
 
@@ -1395,7 +1395,7 @@ lo) 84E
 
 0,3381
 
-Uaed381I
+0ed381I
 
 0,U511
 
@@ -1409,27 +1409,27 @@ Uaed381I
 
 5,926E=~0]
 
-0.900 I,081E 08 |228,809 1230,883 8,922E=0| 0.3381 0,0807 0,0053 2¢677E=0|
+0.900 I, 081E 08 {228,809 1230,883 8,922E=0| U.3381 0,0807 0,0053 2¢677E=0|
 
  
 
-VALUES AT POWER MAXIMUM
+VALUES AT POWER MAX[MUM
 TIMEL,SEC POWER, WATTS
-0,990 | o093RE 0B
+0,990 | o 093RE 0B
 
  
 
-DELN P)/DT
+DELN P) /DT
 
  
 
-TATE TIITESTS
+TATETITESTS
 
 0,995 |, 0938E DA
 
  
 
-= T3Z30E-TUS
+=T 3Z30E-TUS
 
 1.000 I1,0936E 08
 
@@ -1441,25 +1441,25 @@ TATE TIITESTS
 
  
 
-I, 000 I. 0G4E U8 [23% ,234 201,069 7, 172E=0T1 0.33817 0,0959 00,0064 wl 682E-03
+I, 000 . 0G4E 178 1234 ,234 V201,069 7, 172E=0T1 0,33817 0,09%59 00,0064 e 682E»03
 
  
 
  
 
-1.100 I UBTE 08 235,503 1237,257 5,594E~T1 0.3381 0,1106 0,0075 =2,090e~01
+1. 100 I.UBIE 08 235,503 1237,257 5,594E~T1 0.,33817 0,1106 0,0075 =2,090e~01
 
  
 
  
 
-7200 I OB08 U8 1249,483 231,345 4,335€~01 06,3387 0.7246 10,0087 =3,492E-0]
+7200 [ U508 U8 1249,483 231,345 4,335€~01 " 0,3387 0.7246 10,0087 =3,492E-0]
 
  
 
  
 
-“1,300 rTUTOE U8 239,093" T231,8629 TF, 4208-01" 0,3381 0, 1375 0.0098 «4,300E=01
+1,300 IQUIOE U8 l24@70?3W””WT?3T752@”WWW3fJZUE%UTWWWW”U}33BTMMNWUTI375 0.0098 «4,300E=01
 
 0.0108
 
@@ -1467,35 +1467,35 @@ I, 000 I. 0G4E U8 [23% ,234 201,069 7, 172E=0T1 0.33817 0,0959 00,0064 wl 682E-0
 
  
 
-1.400 9.653F U7 1253,301 231,807 2,797E=01 ~ 0,3387 7 0,1392  =4,634EF0)
+1.400 9.653F U7 1253,301 231,807 2,797E=01 " 0,3387 7 0,1392 ~ =4,634E-0)
 
  
 
  
 
-1,500 9,214 07 1257, 10  TTI@3T,981 2,384E-01 0,338) ~4,637E=01
+1,500 9,214 07 12570110 TT1@3T,981 2,384E-01  0,338) ~4,637E=01
 
-GATE
+GITeT
 
-gL TEST aIaTiy
-
- 
+gL s HIaTTy
 
  
 
  
 
-T.,600  BR,B(UBF 07 feb ,544 1232,149 2. 05E=DI 0.1695 0.Ul29 =4,440E-D 1
+ 
 
-7,700 8,436F 07 T263,635 7 T232,313 UV, 903EA01 0.3381 0.1782 0.UI139 wd, |45E=0 |
+1,600  BR,B(UBF 07 ey ,544 1232,149 2.l 05E=DI 0.1695 0.Ul29 - =4,440E-D 1|
+
+‘T;7ﬁﬁmnﬂmé;435?"ﬁVMMWT?637639W””"T?3?:3T3”mwwT{§U3Eéﬁf"”"M”U;3380 - 0.1782 0.UI39 wd,|45E=0|
 
 0.1860
 
  
 
-I.800  8,1C8E 07 1266,420 1232,472 1744-01 (,3381 0.0148 «3,81 2E~0|
+I.800  8,1C8E 07 1266,420 1232,472 1.744e-01 (,3381 0.0148  «3,812E~0|
 
-17900 © 7,818E 07 CT 1268,932  1232,627 1 6076-00 CT 0.3381 70.1930 0.0058 CT 3.487Eeq]
+17900 7,81BE 07 268,932  1232,627 1 6076~00 T 0.3381° T 0.1930° G 0iSE T n3.487Eep]
 MURGATROYL
 
 TIME,
@@ -1503,23 +1503,23 @@ SEC
 
 2,000
 
-2,100
+.?9!90
 
-5.930k
+5,930k
 
 5,659
 
-11 rast
+11 Cast
 
 CPQUER,
 
 WATTS
 7.962¢
 7.336F
-7.135
-6,305
+7.135¢
+6,305k
 
-$£,794¢
+$£,794
 
 A BABE
 
@@ -1528,123 +1528,123 @@ A BABE
 
 6,287
 
-Ch, IRTE
+AL IRTE
 
-6,UYSE
+- 6,UY5E
 
-6b, ulNE
+b, ulINE
 
-5,793
-5,730F
+5,793k
+5,730k U
 
-5.673F
+5.673F -
 
-5.619E
+5,619k
 5.569¢
 
-5.5c2¢
+.52k
 
-5,479 |;
+5,479
 
-5,43KF
+5,43HF
 
-5.359F
+5,359F
 
-5.364%
+5., 364F
 
 5,.83nF
 
-i?
+7
 
-J7
-u7
+g7
+L7
 
 7
 
 7
 
-Clie, Thi,
+el T,
 
-NEL Fk
+NEL F
 
-171,20)
+171,20
 be/3,255
 lel~, 116
-177, Rub
-127,34
+17n,Rub
+V27,34
 1279.734
 201,107
 123,125
 
-fend, 21s
+lend, 21
 
-lend, 19h
+bend, 196
 
-12d ,0¢|
+lZdb,Utl
 
-1285, 8uU6
+1285, 86
 
-eg Hi A
+g oA
 
-lof, 103
+1o/ ,163
 
 12¢d7,74b
 
 12834,271
 
-128% ,749
+1285 ,749
 
 12389 ,174
-[287,991
+1287 ,991
 
-| £89,391)
+| €89 ,A%)
 
-Hed, 192
+RN Y
 
 129,408
 
-129), hYS
+1291, hYS
 
-127,49)
+1275 , 4% )
 
-i2vyl.0n/4
+i2vyl.0n/74
 
-RAarH TE
-Youre, lik
+RAPH]TE
+Yore, lik
 
 282,779
-582, 92¢
-285,574
-288. 2e
+582,928
+1285,574
+ldd&,zlc
 1 23839, 3n1)
 
 233,900
 
-i283 ,A80
+i 2383 ,A80
 
-l233,77>
+le33,77>
 
-[288,911
+F288,911
 
-P2834 ,1145
+P 284 ,1145
 
 284,170
 234,310
 
 1234 ,440
 
-C1 23849,574
+'l254.57u
 
 | 234 ,A9Y
 12484 ,82)
 734,359
-F2dn isd
-1 2389,20/
-12385 ,33%
-12385 ,496
-123,58)
-123,703
-739,86
+F2dn s
+1 2385,29/
+285,332
+.IRJb.456
+123,58 )
+23,7038
+739,826
 
 12385 ,94y
 
@@ -1652,179 +1652,179 @@ F2dn isd
 
 22
 
-Fe. Ob (cont)
+F‘(,. Ob ((on"‘.)
 
-PRESSURE
-RISE, FS]
+PRESOSURFE
+RIsE,FS]
 
-le d433F= |
-le $56E=101
-| 2562-11
-like
-le 23 E=10 1
+led433Fm |
+| e $56E=101
+| 256211
+| iek=1
+e U923 =101
 
 9.6Jb6k= 12
 
-CB 737E=02
+B, 737602
 
 7.924r=192
-7. 164-mi)2
-6,456E=i)2
-L.7798=-=02
-Del Bbr=l)2
-4,616-=142
+7. 164-m1)2
+6,456E=1)2
+S.7798=--02
+Dol Bbr=l)2
+4,616-=42
 
-4,08/7k~0)2
+4,087k~)2
 
-| S.99/F=02
+| Job92F'02
 
-J.l14iE~02
-2.718E-12
-2,327:=02
-| 9648-012
+Jo14iE~02
+2.718e-12
+2.327&-&2
+| e 9648E=(12
 | o627p=02
-l.316F=07
-| «028E=02
+. 316F=07
+l«028E=02
 7.,608k=03
-5.183F=33
+5.1383F=33
 
-2.89532 =01)0
+2.8953%=1)0
 
 NFLTA K
-INFUT PCT
+IN?“T'PCT
 
-de SIH
-Le d38 I
+de S 3B
+Le 38|
 edo81
-Ledd8i
-RRrY
-de dS |
+Ledd81
+SRRy
+e d3b |
 UeddB I
 LeddH |
-Ued38B 1
+Uedd81
 ile 338 |
-Ue dSBI
-LU. 3381
-e338
+Ue 338
+L3381
+Ued38I
 Ue 3381
-ie ddB |
-de ddl |
-He d381
-UedSK |
-ie $3 3b |
-Ue SSH
-Ue 3db |
-de S381
-Ueddbl
-ie 388 |
+e 338
+deddb |
+e d381
+UedSK|
+e $3b |
+Ue S8
+Ve 3db |
+Je 3381
+beddb|
+e 38|
 
-te ddb|
+teddb|
 
-PCT UR
-Fed.
+PCT UK
+F et
 
-U.1994
-TAN
-0e2lU3
-fe lDl
-Deci94
+U994
+TN
+Qo213
+feclDl
+Daci94
 0e.c2dd
-(.e268
+" (.x268
 0.23800
-0.2330
+N.2330
 0.2356
-0.2881
+D.2881
 0,403
-0.2423
-0.244)
+0.,2423
+N.c44)
 0.2457
 0.2472
 0.2485
-0.497
+0,497
 
 0.£5(47
 
-ReEMOveD RY
+ReEMOveD kY
 
-shAP 4 TE
+kAP 4L TE
 Doul67
-Nedl6
-0s 1u4
+Nedl 6
+0e1%4
 IPRIEER
-Neiigle
+Deiigle
 Dell210
 Heelb
 D.0227
-Q.u235
-D,.UR4d
+Q.u23d
+D,UR4d
 Debehl
-0.259
+VD.U259
 
 DeULHO
 
-0.U274
+D.U274
 
 0.02482
-DsU2Y0
-Neues?
-0.0305
-NeUd12
+DsURY0
+N,eues?
+0.US305
+N2
 Ne!820
 ot 327
 0,335
-0.0342
-00,0350
+0.,0342
+0,0L350
 
-De.iid397
+Deiid97
 
-tl/P)CDF/DT),
+tl/sP)CDF/DT),
 PER SELOND
 
-«Sd, 184F=01
-2.91 1-01
-“Ze 66BE=0 |
-~2.452E 0) |
+4, 184F=01
+2.9 1k=n|
+~Zeb66BE=-0 |
+~2.452E () |
 ~2¢260E=01
-~2.088E=0 |
--le934k~=0 |
-=1e79%E=01
-=le670E=D|
+~2.N8BE=0 |
+-l e934k~0|
+=1e79%E-01
+~le670E=D|
 
-=] +552E-01
+=1 +552E-01
 
-C= 4451Ee0]
+=l 4451Ee0 ]
 
-= 4356E-01
+=1 4356E-01
 = 14268E-01
-_=1e|88E-DI
-ely IIE]
-C= lend42E=0 4
- =9,82eE=-02
+=11 88E-DI
+el 14E=D
+= lend42E=0 )
+=9,82eE-02
 ~9,236E=02
 -8,699E=02
-=8,189E-12
+=8, 18YE-12
 e7e722k=(2
 «7.284E=072
 =64881F-02
-«b6.50/E=~02
+«b6.50/E~02
 
-«6s |9iFep2
+’60'5'E’02
 
-NE
+N* -
 
-Qn
-MURGATROYD 11 CASE
+0
+MURGATRQOYD 11 CASE
 
-VINE PUNERT
-SEC
+MRS —PONERS
+_SEC
 
-WATTS
+_WATYS L
 
 23
 
-Fig Th. (cout)
+F1g T h. (cout)
 
-DEG F
+DEGF
 
 _ TeMPLDEG F
 
@@ -1836,21 +1836,9 @@ _ TeMPLDEG F
 
  
 
-RISE,PSI1
+RISE,PSI
 
-(INPUT,PCT FUEL GRAPHITE
-
- 
-
- 
-
- 
-
- 
-
- 
-
-PER SECOND
+INPUT.PCT  FUEL  GRAPHITE
 
  
 
@@ -1862,7 +1850,7 @@ PER SECOND
 
  
 
- 
+_ PER SECOND
 
  
 
@@ -1906,31 +1894,43 @@ PER SECOND
 
  
 
-4.500  5.298E 07  1291,225  1236,070  7,4136~04 0.338] 0.2554 0,U364 ~~ -5,827Ee02
-4.600 _5.268E 07  1291,353 236,191  =1,2136°08 ~~ 0,338] ~~ 0.2558 0,037) ~~ ~5.,528E~02
-4.700 5.2406 07 1291,459 ~~ 1246,311 = »3,018E-03 ~~ 0,3381 0.2561 0.0379 ~~ -5,239E~02
-4.800 5.2136 07 1291,545 1236,43]  =4,676E-03 0,3381 0.2563 0,0386 ~~ -4,9726-02
-4.900 5.188E 07 1291,613 1286.55)  =6,2196=03 0,338) _ 0,565 0.0393 __ -4,726En02
-5,000  5,164E 07 1291,663  1246,670 w7,641En03 0,338] 0.2567  0,0400 -4,496E-02
-5,100  5,142E 07 1291,697  12386,789  =B,956E=03 0,338]  0,2568  0,0407 -4,283E~02
-5,200 5.120 07 1291,717  1236,907  «1,017E=02 0,338] _ 0,2568  0,0414 ~4,083E=02
-5.300 5.1006 07 1291,723  1237,025 =|, |28E=02 0,3381  0,2568  0,0422  , ~3.894E-02
-5,400 5.080E 07 1291,717  1237,143 «| ,23|En02 0.3381 0.2568 0.0429 -3,722E-02
-5,500 5,062E 07 129,699 1237,260 w|,325Ee02 0,338] 0.2568 0.0436 «3 559Ew02
-5,600  5.044E 07  1291,670 (237,376 «|, 4136-02 0.338]  0,2567  0,0443 -3,408E=02
-5,700 5,028E 07 1291,631  1237,493 =| ,494E=02 0,338]  0,2566  0,0450 -3,269E-02
-5.800 5.0126 07  1291,584  1237,609 =|,567E=02 0,338]  0,2564  0,0457 3.356702
-5.900 4,996E 07  1291,528  1237,724  =1,634E=02 0,338) 0.2563  0,0463 -3,013E-02
-6,000  4.982E 07  1291,464  1237,839 wl, 697€=02 0.3381 0.2561 0.0470  =2,898E=02
-6,100  4,967E 07  1291,393  1237,954 =| ,7556=02 0.3381 0,2559  0,0477 =2,794E-02
-6.200 4,954E 07 1291,315  1238,069  =|,806E-02 0,338] 0.2557 0,0484  =2,693Em02
-6,300  4,541E 07 1291,232  1238,183  «|,854E02 0,338]  0,2554 0,049] ~2,601E=02
-8.400 4.928F 07 1291,143  1238,297  -1.8985-02 0,338] 0.2552 0.0498 -2,5136-02
-6.500 4,916E 07  1291,048 1238,410 «|. .939E=02 0,338] 0,2549  0,0505 ~24437E-02
-6.600  4,904E 07  1290,949 1238,524  w|,975E702 0,338] 0.2547 0.051] -2,359E~02
-6.700  4.B93E 07  1290,846  1238,637  =2,009E=02 0.338] 0.2544  0,0508 2.292602
-6.800 4,882F 07  1290,739 1238,749  «2,039E~02 0.338] 0.254] 0.0525 -2.229E-02
-6.900 4,871E 07 1290,628 238,86]  w2,067E-02 0,338) 0.2538 0.0532  =2,169E-02
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+4.500 5,298k 07  1291,225  1246,070  7,413e~04 0,338  0,2554 0,U364  -5,827Ee02
+4.600 _5.268E 07  1291,353 236,191  =1,213E°08 0,381  0.2558 0,037)  ~5.,528E~02
+4.700 5,2406 07 1291,459  1246,311 = »3,018E-03  0,3381  0.,2561  0.0379 -5,239E~02
+4.800 5.2136 07  1291,545 1236,43]  =4,676E-03 0,3381  0.2563 0,0386  -4,9726-02
+4,900 5.188E 07 1291,613  1236,55)  =6,2196=03 0,338 _ 0,565  0.,0393 __ -4,726En02
+5,000  5,164E 07 1291,663  1246,670 w7,641En03 0,338  0,2567  0,0400 -4,496E-02
+5,100  5,142E 07 1291,697  1236,789  »8,956E=03 0,3381  0,2568  0,0407 -4,283E~02
+5,200 5,120 07 1291,717  1236,907  «1,017E=02 0,3381  0,2568  0,0414 ~4,083E=02
+5,300 5.100E 07 1291,723  1237,025 |, |28E=02 0,3381  0,2568  0,0422 ., -3.894E-02
+5,400 5.080E 07 1291,717  1237,143  «|,23|En02 0,3381  0,2568  0,0429 -3,722E-02
+5,500 5,062E 07 129,699 1237,260 w|,325E*02 0,338 0.,2568 (0,0436 ~3559Ew02
+5,600  5.044E 07  1291,670  1237,376  «|,413E=02 0,338  0,2567  0,0443 -3,408E=02
+5,700 5,028E 07 1291,631  1237,493 | ,494E=02 0,3381  0,2566  0,0450 -3,269E-02
+5.800  5.012E 07  1291,584  1237,609 w|,567E=02 U,3381  0,2564  0,0457 -3, 135E-02
+5,900 4,996E 07 1291,528  1237,724  =1,634E-02 (0,338  0.2563  0,0463 -3,013E-02
+6,000  4.982E 07  1291,464  1237,839  «l,697€=02 0.3381 0,2561  0,0470  =2,898E=02
+6,100  4,967E 07  1291,393  1237,954 =] ,7556=02 0,3381  0,2559  0,0477 =2,794E-02
+6,200 4,954E 07 1291,315  1238,069  =|,806E-02 0,338]  0,2557 0,0484  -2,693Em02
+6,300  4,541E 07 1291,232  1238,183  «|,854E02  (,3381  0,2554 0,049 ~2,601E=02
+8,400 4.928F 07 1291,143  1238,297  -1.898%-02  0,338)  0.2552 . 0.0498  -2,5136-02
+6.500 4,916E 07  1291,048 1238,410 «|.939E=02 0,338 0,2549  0,0505 ~24437E-02
+6.600  4,904E 07  1290,949 1238,524  w|,975E#02 0,338  0.2547 .05 -2,359E~02
+6.700  4.B93E 07  1290,846  1238,637  =2,009E=02 0,338  0.2544 0,058 -2,292E-02
+6.800 4,882F 07  1290,739 1238,749  «2,039E~02 0.338] 0,254 0.052§m”;w_“:?y22?ﬁr02
+6,900 4,871E 07 1290,628  1238,86]  w2,067E-02 0,3381 0.2538  0,0532  =2,169E-02
 
  
 
@@ -1948,25 +1948,25 @@ SEC
 
 PUWER
 
-’
+?
 
 VATTS
 
-RUT
+UL
 
 7.200
 
-7.300
+7.30¢
 
 7.320
 
-7.325
+7,325
 7.330
 
-7.400
-7.500
+7,400
+_7.500
 
-7.600
+7.6000
 
 7.700
 
@@ -1980,13 +1980,13 @@ A.400
 
 B.600
 
-8.700
+g.700
 
 B.B00
 
 R,730
 
-S.000
+v.000
 
 4,Hh53F
 
@@ -2004,72 +2004,72 @@ S.000
 
 a7
 
-0 7 fae
+_t‘ 7 e
 
 n
 FUEL TEMP,
 
-DEG Fo
+DEG F
 
-1293,514
+12943,514
 
-VALUES AT PRESSURE MINIMUM
+CVALUES AT PRESSURE MIN[MUM
 TIME,SEC PRESSURE RISH,PS)
 
 4,600¢
 
-4.813
+4.813F
 
-4.795
+4,795
 4,786F
-47786
-4.770
-4.7618
+.fﬁ???fw_
+4770k
+4761
 _4.753F
-_4.745E
+. 4.745E
 
 4.738E
 
-4,/730F
+4,730k
 
 4,8U4E
 
-7
+7o
 
-47
+87
 
 a7
 
-Lr
+L7
 
-Yb
+V7
 
-a
-
-07
+7
 
 07
-er
+
+07
+o7
 07
 
 87
 
-0“
+W
 
 1289,771
 
 1284,507
 
-vie mr oo
+e v o
 
 1288,9648
 
-297,396
-1290.26
+1297,396
+290,276
 
-129,153
+12914153
 
-1290,028
+1299,028
 1289,900
 
 1289 ,640
@@ -2079,28 +2079,28 @@ vie mr oo
 1289, 101
 1283.824
 
-I2b4,685 B
+;gaa,bas B
 
 GRAPHITE
-TEMP, DEG F
+TEMP,DEG F
 
 238,973
 
-289.085
+o 12dv.085
 
-f2d9.096
+F2d9.096
 
-1289,529
+025915??M “
 
 1239,749
 
-240,186
+l249')35
 
-1ed0,294
+12d0,294
 
  
 
-4,722"
+4,722
 
 4,707k
 
@@ -2108,35 +2108,35 @@ f2d9.096
 
 4.686F
 
-4.715%
+4,715k
 
-or
+o
 
-IL
+L
 
 07
 07
-uz
+u7
 
-ur
+w7
 
-1287,976
+- 1287,976
 
-1287,R03
+1287,803
 
 1287 ,68Y9
 
-j2848 o 403
-284,261
+j284 o403
+284,26
 
 1288,119
 
 1241 ,258
 
-289.307
+289,807
 
 1239,418
-239,649
+239,699
 
 1239,858
 1289,968
@@ -2146,45 +2146,45 @@ j2848 o 403
 1240,402
 240,510
 l240,618
-1ea0,725
-1240.83
+tean,725
+1240,838
 1240,9489
 Izal,046
 
-241,152
+1241,i152
 
-ol,
+ol
 
-Fig. 2b (cond)
+Fig. 2b Ccond)
 
-| PRESSURE
+. PRESSURE
 
-RISE, PSI
+RISE,PSI
 
 ~2,093E-02
 =2, | I5E~02
 -2,136E-02
 
-=2,195E=02
+=2,195E~02
 
-=2, 159%e=-02
+=2, 159Be-02
 
-r2,172e=02
-~2,186E=02
--2,20/E-02
-m2,2|3E=02
--2,228e-02
-»2,233E=02
+»2,172E=02
+7?!!89570?”,”w
+-2,201E-02
+m2,2|3E-02
+-2,22%e-02
+»2,233E-02
 
-=2.24)E=02
+=2.24)E02
 
 =2,250E=02
--2,256E"02
-=2,26|E=02
+12(25§Ef02
+~2,26|E=02
 
 2, 266E=02
 
-=2,2/3E=02
+-2,273&?02»
 
 -2.276E=02
 
@@ -2193,61 +2193,61 @@ r2,28|E~02
 
 =2,270€-02
 
-DELTA K
-INPUT, PCT
+ DELTA K
+INFUTLPCT
 
 _0,3381
-0.3481
-0.3381
+. 0'368'.,,
+0.3d81
 
-0.3381
+~0.3381
 
-L.ss8)
+‘Less8)
 D.3481
-0.3381
+b.3d81
 _U.3381
-003981
+00381
 ul.3381
-0.3981
+U.3d81
 
-0.3981
+Ue3981
 
 Ued381
 
 Vedd81
 
-be338I
+Ge338I
 
 6.388)
-0.3581
-oo Leddsl
-~2,278E-02 0.8881
-0.3881
+Q'3§8!p;““
+o Leddsl
+~2,278E-02  0.8881
+V3881
 
-e338
+Ue338
 
 FUEL
 0.2534
 
-0.433)
+044531
 0.2528
 
 0.2524
 
 0,517
-0.2514
+042514
 0.2510
 
 0,2506
 
-0.2502
+0,2502
 
 0.2499
 0.2495
-0.249)
+0,249
 
 0.2487
-0.2483
+0,2483
 
 0.2479
 
@@ -2255,9 +2255,9 @@ FUEL
 
 0.2471
 
-0.2467
+00,2467
 
-0.4459
+044459
 
 0.2455
 
@@ -2266,48 +2266,48 @@ FUEL
 PCT DK REMOVED BY.
 GRAPHITE
 
-0.ub38
-0.0545
-0.U53%2
+0.U538
+' 0.0545
+0.U55%2
 
-0.0558
+0.,0558
 
-0.4521 0.0565
-0.0572
+0.4521  0.0565
+~0.0572
 D.0578
 
-0.0585
+0,058
 
 0.U598
 0.0605
-o.u6tll
+o.u6t)
 
-0.0618
+o.d0618
 
-0.0644
+_ 0.0644
 0.0650
 0.0656
 
-0.0668
+_0.0668
 
 0.0659
 
-N.U676
+0.u67§
 
-0.0592
+D.05%2
 
 0,624
 
 0.0631
 
-0.0637
+0,0637
 
 CC1/P)(DP/LTY,
 PER SECOND
 
 -2.05/F=-02
 
-=2,010E=02
+=2, 010E=02
 
 «14966E=02
 
@@ -2324,19 +2324,19 @@ PER SECOND
 ~1+703E=-02
 
 =le1656E~GE
-=lebd7E=D2
+=leb37E=D2
 
 =ls61BE=D2
 
-=le600E=0Z
+=l+600E~0Z
 
-= 14584E=-02
+= 14584E-02
 
 =1+569E=02
 
-1 e542E=2
+_-};54ZE-02
 
-= 1 528k 02
+-1 ¢528E =02
 
 =1+BB2E=02
 
@@ -2344,9 +2344,9 @@ PER SECOND
 
 =1+554€E=02
 
-4
+r‘)
 
-I
+g
  
 
  
@@ -2361,24 +2361,24 @@ I
 9.500
 
 4,678E
-4,67 1k
+4,671k
 4,664F
 
 4,657E
 
 MURGATROYD 11 CASE
 
-TIME
-BEC...
+TIMEY
+SEC .
 
 07
-ur
+v .
 
-uw
+w
 
  
 
-9.600
+9,600
 
 9,700
 
@@ -2386,7 +2386,7 @@ uw
 
 4,643E
 
-67...
+07...
 
 07
 
@@ -2396,28 +2396,28 @@ uw
 
 _4.637E
 
-4,630E
+4,630k
 
-07
+07 _
 
-a7
+97
 
-HevY®
+MATYS
 
-DEG F
+DEGF
 1287,545
-feB7.,4001
+feB7,4001
 287,257
 1e87,112
-_ 1e86,967
+. 1e86,967
 
-_l286,822
+_l28b,822
 
 |1286,677
 
 GRAPHITE
 
-TEMP, DEG F
+ TEMP,DEG F
 
 1241,364
 
@@ -2429,23 +2429,23 @@ TEMP, DEG F
 
  
 
-1286,532
+|286,532
 
 242,098
 
  
 
-4,623
+4,623k
 
 07
 
 1286,387
 
-242,20!
+242,20
 
 _1241,680
 
-241.785
+241,785
 
 1241,994
 
@@ -2457,7 +2457,7 @@ RISE,PSI
 
 -2,283Er02
 
-=2,283E=02
+- =2,283E%02
 »2,282E-02
 m2,282E~02
 =2,280€-02
@@ -2471,19 +2471,19 @@ n2,276E-02
 Fig. 2b (cent)
 
 DELTA K
-INPUT.PCT
+INPUT:PCT
 
 0,338
-0,348)
-e338
+0,398
+be3381
 
 043381
 
-~ b,3481
+- b,3481
 
-e938]
+Ues38]
 
-u,3381
+U,3381
 
 PCT DK REMOVED BY {1 /BY(DF/DYY,
 
@@ -2494,32 +2494,32 @@ FUEL
 
 GRAPHITE
 
-0.2443
+0,2443
 
-0,24389
+D,24389
 
 0,2481
 
-0.2435
+.0,2435
 
-0,338) D,e427
+043381 D,e427
 
-0,u682
+0, U682
 
 0,0688
-0.0695
-0.070)
-0.0707
+040695
+0.,070)
+0,0707
 
-0.0713
+0,0713
 
-PER SECOND
+ PER SECOND
 =14522E-02
-~12513En02
-~ =1+¢502En02
+~12519En02
+~ =1+¢502E~02
 =|+494E~02
 
-SEI—C a} SER ea ger.
+TN~ i} SRR e e
 
 -|s475E=02
 
@@ -2527,23 +2527,23 @@ SEI—C a} SER ea ger.
 
 0,0720
 
-~-| 46902
+0'0469E002
 
  
 
 0.0726
 
-w| so 865EnD2
+-'04655802
 
  
 
  
 
-0e3381
+Je33d81
 
 0.0732
 
-“w|s459E=02
+“w|4s459E=02
 
  
 
@@ -2555,13 +2555,13 @@ w| so 865EnD2
 
 1242,305
 
--2,272E-02
+-2,272€-02
 
 06,3381
 
-0.0738
+0,0738
 
-w|s453E=02
+-|¢4535'02
 
  
 
@@ -2575,13 +2575,13 @@ w|s453E=02
 
 242,408
 
-w2,270E~-02
+n2.27UE~02
 
 0e3d81
 
 0,0744
 
-«| 1448BE=02
+-|q448E902
 
  
 
@@ -2591,15 +2591,15 @@ w2,270E~-02
 
 10,300
 
-4,603E
+4,603k
 
 07
 
-128% ,952
+128%,952
 
 |242,511
 
-0.3381
+03381
 
  
 
@@ -2618,19 +2618,19 @@ w2,270E~-02
 07
 
 128%,807
-128% ,662
+1285 ,662
 
-126% ,517
+1269 ,517
 
 |242,614
 1242,716
 
-242,819
+.242'913
 
  
 
-10.700
-0.800
+10,700
+l0.800
 10,900
 
 4,577
@@ -2666,26 +2666,26 @@ j28%,372
 
 07
 
-1284,939
+|284,93?7wm
 
  
 
-1243.225
+1249.225
 
 w2,265E%02
 -2,2638-02
-=2,260€-02
+»2,260€-02
 n2,257E=02
 =2.254€-02
 =2,25¢Em02
 
-=2,249E~02
+=2,249E702
 
-0338]
+0338
 
 0,075
 
--| 244 1E=02
+-|2441E=02
 
  
 
@@ -2693,33 +2693,33 @@ _b.338)
 
 0,0757
 
-0.0763
+10,0763
 
-- | 1440E=D2
+-.' Q440E"02
 
-“| 437E=02
-
- 
-
-U.3381 04%
+| 437E=02
 
  
 
+U.3381 045
+
  
 
-Ue3381
+ 
 
-_u,3381
+U338}
 
-Ua3381
+U, 3381
 
-0.0775
+Ua3981
+
+0.,0775
 
 0,076%
 
 =14432EX02
 
-- | 2W427E=02
+- ' 9427E’02
 
  
 
@@ -2729,15 +2729,15 @@ Ua3381
 
  
 
-0.3381 0,¢
+0.3381  0,¢
 
-(0.0787
+0.0787
 
 0,0793
 
 =14425E-02
 
--1 142 E=02
+"Q42'E?Ugw
 
  
 
@@ -2748,12 +2748,12 @@ Ua3381
  
 
  
-FIG. ll
+FIG. Il
 
 26
 
 UNCLASSIFIED
-ORNL -LR-DWG 67933
+ORNL-LR-DWG 67933
 
 GAS SPACE
 
@@ -2761,23 +2761,23 @@ GAS SPACE
   
  
 
--— PUMP BOWL
+- PUMP BOWL
 
  
 
 |*=— OUTLET PIPE
 
-+ CORE
+<+ CORE
 
  
 
  
 
-\__
+N
 
 SIMPLIFIED MODEL FOR PRESSURE CALCULATIONS
 
-rp
+r/)
 
  
 
@@ -2788,27 +2788,27 @@ rp
 
 (v
 
-1-2.
+1“20
 
 ® ® ®
 
-\O OJ Ou FW
+O O O\ W
 
 10.
 11.
 12.
 13.
 1k,
-15.
+15,
 16.
 17.
 18.
-19.
-20.
-21.
+190
+20,
+21,
 22,
 23,
-24,
+2L,
 25.
 26.
 
@@ -2816,23 +2816,23 @@ rp
 29.
 30.
 31.
-32.
+32,
 33
-3h.
-32.
+3.
+32
 
-37.
+37
 38.
 39.
 40.
-41.
-ho.
+L1,
+L2,
 43.
-Ll.
-45.
-46.
-47.
-418.
+Ll .
+L5.
+L6,
+4T,
+48.
 49.
 50.
 
@@ -2840,76 +2840,76 @@ Ll.
 
 Internal Distribution
 
-MSRP Director's Office, 51.
+MSRP Director's Office, 51,
 
-Rm. 219, Bldg. 9204-1 52
+Rm. 219, Bldg. 9204-1 52 o
 G. M. Adamson 53.
-L. G. Alexander 5k,
-V. E. Anderson, K-25 55.
+L. G. Alexander 54,
+V. E. Anderson, K=-25 55.
 S. E. Beall 56.
-M. Bender 57 «
-L. L. Bennett 53.
+M. Bender 5'7-,
+L. L. Bennett 53,
 C. E. Bettis 59.
 E. S. Bettis 60.
-D. S. Billington 61.
+D. S. Billington 61 .
 M. Blander 62.
 F. F. Blankenship 63.
-A. L. Boch 6k
+A. L. Boch 64
 E. G. Bohlmann 65.
-S. E. Bolt 66.
+S. E. Bolt 66 .
 C. J. Borkowski 67 .
 C. A. Brandon 68.
 F. R. Bruce 69.
-O. W. Burke 70.
+O. W, Burke T0.
 S. Cantor TL.
-R. S. Carlsmith 72.
-W. L. Carter 73.
+R. S. Carlsmith 2.
+W. L. Carter T3
 R. D. Cheverton Th.
-He. C. Claiborne T5e
-T. E. Cole 16.
-J. A, Conlin TT
-W. H. Cook 78.
-L. T. Corbin 19.
+H. C. Claiborne T5e
+T. E. Cole T6.
+J. A, Conlin TT e
+W. H. Cook 8.
+L. T. Corbin 9.
 G. A. Cristy 80.
 F. L. Culler 81.
 J. G. Delene. 82.
 J. H. DeVan 83.
-R. G. Donnelly 84.
+R. G. Donnelly 84 .
 D. A. Douglas 85.
 N. E. Dunwoody 86.
 J. R. Engel 87.
 E. P. Epler 88-92.
 W. K. Ergen 93.
-D. E. Ferguson ok.
+D. E. Ferguson oL.
 T. B. Fowler 95.
-A. P. Fraas 96.
-J. Hs Frye 97 »
+A. P, Fraas 96,
+J. Hs Frye 97 .
 C. H. Gabbard 8.
 R. B. Gallaher 99.
 E. H. Gift 100.
 D. R. Gilfillan 101.
 B. L. Greenstreet 102.
 W. R. Grimes 103.
-A. G. Grindell 104,
+A. G, Grindell 104,
 
 R. H.
 P. H.
 C. S.
 P. N.
 E. C.
-He. W.
+H. W.
 P, P.
 A. S.
 L. N.
-J. Pe
-Ww. H.
+Je. Pe
+W. H.
 P. R.
-Re. Jo.
+R. Jo.
 M. T.
 M. J.
-T. We
+T. W,
 Se Oe
-J. We
+J. W,
 Je A.
 W. Jo
 M. P.
@@ -2918,8 +2918,8 @@ M. 1.
 R. N.
 H. G.
 F. C.
-Ww. D.
-E. Re.
+W. D.
+E. R.
 B. F.
 W. B.
 H. F.
@@ -2927,9 +2927,9 @@ C. K.
 A. J.
 E. C.
 R. L.
-J. Co.
+J. C.
 E. A.
-C. W.
+C. W,
 T. E.
 W. R.
 L. F.
@@ -2993,7 +2993,7 @@ Preskitt
 M. Richardson
 
 R. C.
-T. Ke
+T‘ KC
 
 Robertson
 Roche
@@ -3003,28 +3003,28 @@ Roche
 108. J.
 109. D.
 110. C.
-111. J.
-112. M.
+111, J.
+112, M.
 113. G.
-114, A.
+114, A,
 115. O.
 116. P.
 117. I.
 118. B.
 119. J.
-120. A.
+1200 A.
 121. J.
-122. R.
+122. R,
 123. M.
 124, D.
 
 28
 
-Distribution = Cont'd
+Distribution - Cont'd
 
 W. Rosenthal 126.
 W. Savage 127.
-W. Savolainen 128.
+W. Savolainen 128,
 E. Savolainen 129.
 Scott 130.
 H. Secoy 131.
@@ -3035,9 +3035,9 @@ N. Smith 135.
 L. Smith 136.
 G. Smith 137-138.
 Spiewak 139-140.
-Squires 141-143,
-A. Swartout 144-146,
-Taboada 147.
+Squires 141 -143,
+A, Swartout 144146,
+Taboada 147,
 R. Tallackson 148.
 E. Thoma
 
@@ -3049,11 +3049,11 @@ B. Trauger
 
 149-150.
 151.
-152.
+152,
 153.
-15k.
+154,
 
-155-169.
+155=-169.
 170.
 
 External Distribution
@@ -3064,15 +3064,15 @@ D.
 B.
 B.
 A.
-Je
-Je
-Ge.
+J e
+J.
+G.
 L.
-C.
+CO
 
 C.
 
-/
+</
 
 Ulrich
 
@@ -3083,7 +3083,7 @@ S.
 H.
 M.
 H.
-C.
+c.
 E.
 V.
 H.
@@ -3112,25 +3112,27 @@ F.
 R.
 Te W
 
-P. Self, , AEC, ORO
-A. DuVal, ARC, Washington
-. McIntosh, ARC, Washington
+P. Self , AEC, ORO
+A. DuVal, AEC Washington
+. McIntosh, AEC Washington
 
-Je. Le. Crowley
+Je. L. Crowley
 
-Division of Technical Information Extension, AEC, ORO
+Division of Technlcal Information Extension, AEC, ORO
 Mrs. Margaret Butler, Argonne Code Center,
 Argonne National Laboratory, Argonne, Illinois
 
  
  
 
-So
-AR
+S
+ey
 ¢
 
+£
+
  
-[skipped page]Addendum to ORNL -TM=-203
+[skipped page]Addendum to ORNL-TM-203
 
  
 
@@ -3140,7 +3142,7 @@ for storage of the power versus time results in addition to the standard input
 and output tapes. The plotting frequency (analogous to the printout frequency)
 is specified in columns 16-21 of the card containing the stop time and the num-
 ber of ramp rate changes (see p 18, ORNL-TM-203). A sample of the graphical
-output is attached for the case given as an example on pages 19-25. If the
+output is attached for the case given as an example on pages 19-25. 1If the
 plotting frequency specified in the input is zero or blank, no plot is produced;
 
 however, a logical tape 6 must be specified even if no plot is desired.
@@ -3169,11 +3171,11 @@ CASE
 
  
 
-(PMAX #10G.00D0E O7 WATTS)
+(PMAX #1G.00DOE O7 WATTS)
 
-Ob
+0.4
 
-Cel
+Ol
 
 0.6
 
@@ -3181,10 +3183,10 @@ Cel
 
  
 
-G2
-fmm om Xm mm me mm fem
+oo G2
+e X e e e o e
 
-.. 8.0
+_.8.0
 
 0.
 
@@ -3198,9 +3200,9 @@ fmm om Xm mm me mm fem
 
  
 
-0.500+--==—==mt-
+0.5004--==—==—=t-
 
-*
+-
 
  
 
@@ -3214,7 +3216,7 @@ fmm om Xm mm me mm fem
 
  
 
-1.000+- em ee em om =
+1.000+~- e e e o
 
  
 
@@ -3226,7 +3228,7 @@ fmm om Xm mm me mm fem
 
  
 
-A.
+.
 v
 
  
@@ -3237,7 +3239,7 @@ v
 
  
 
-| «5004 mmm mmm bm mmm mmm mm fm mmm mmm
+| o5004—m o mmmm b m e m o mmm e
 
  
 
@@ -3268,13 +3270,13 @@ X+
 
  
 
-—Z
+- Z
 
  
 
  
 
-2e 500+--———-———+ mm mm f=
+2e SDG""“*‘:"_--—--'—-AP e =
 
  
 
@@ -3282,7 +3284,7 @@ X+
 
 +X
 
-Fem EES Se Fees eer meme =X
+e S e e e
 
  
 
@@ -3294,7 +3296,7 @@ Fem EES Se Fees eer meme =X
 
  
 
-N 3.000+-
+N 3,000+
 
  
 
@@ -3306,20 +3308,16 @@ N 3.000+-
 
  
 
-— fm
+-— -
 
-rN
-Tr
-
- 
-
-3.500+--—————=—#--mm————— pom mmo
-
-—X-—%
+N
+™
 
  
 
- 
+3.500+--———————#--m——————p o —— e
+
+..'.X‘v.....{.
 
  
 
@@ -3327,11 +3325,15 @@ Tr
 
  
 
-Ex"
+ 
 
  
 
-GL. 000% ccm Femme fm %
+Foo=X==———%
+
+ 
+
+L. 000F =¥ %
 
  
 
@@ -3345,11 +3347,11 @@ GL. 000% ccm Femme fm %
 
  
 
-tem mmm ee pm fm mmm mmm pm mmm ————
+e e = e — e ———— ¢
 
  
 
-4. 500+——————m mmo mmmmmm mt
+4. 500+——————mm—bo—mmmmm——t
 
  
 
@@ -3363,33 +3365,33 @@ tem mmm ee pm fm mmm mmm pm mmm ————
 
  
 
-JR
+-
 
 4
-ra
+r
 
  
 
-HX =
+X
 
-— a + — ED TES AY SED A amy I —
+—--‘;—- +— D TS Y SR A cmmy S —
 
  
 
-p=
+b -
 
-CD I wD  —
+. G I D D —
 
-5.000+--—=—=-——+==
+5.000+--———=-——+==
 
  
  
 
-1-2.
+1‘20
 
-® * °
+® * ®
 
-© ON Ou FW
+O 0O~ O\ FW
 
 10.
 11.
@@ -3404,43 +3406,43 @@ CD I wD  —
 20.
 21.
 22,
-23.
-oh,
+230
+21“'0
 25.
 26.
-27.
+27 .
 28.
 29.
 30.
 31.
-32.
-33.
-34.
+320
+33
+31"'0
 
 36.
-37s
+3T
 38.
 39.
-Lo.
-Ll.
 Lo,
-43.
-Ll.
+Li.
+L2,
+L3.
+L.
 45.
 L6,
-LT.
+LT,
 L4L8.
-Lg.
+L9,
 50.
 
 MSRP Director's Office,
 
-Ge.
+G.
 L.
-Ve.
-Se
+V.
+S.
 M.
-La
+LQ
 Ce.
 E.
 D.
@@ -3448,19 +3450,19 @@ M.
 F.
 A.
 E,
-Se
+S
 C.
 C.
 Feo
 0.
 S.
 R.
-Ww.
+W.
 R.
-He.
-Te
-Je
-We
+H.
+T
+Jde
+W
 L.
 G.
 F.
@@ -3470,31 +3472,32 @@ R.
 D.
 N.
 Je
-E.
+EO
 W.
 D.
 T.
-A.
-Je
+A,
+Jde
 C.
-Re.
+R.
 E.
 D.
 B.
-We.
+W,
 A.
 
 Rm.
-M.
-Ge
+MO
+G
 E.
-Ee.
+E.
 
-Internal Distribution
+Interna}-Distribution
 
-219, Bldg. 9204-1
+QM,MQ.%MJ
 Adamson
-Alexander
+
+Al exander
 Anderson, K=25
 Beall
 
@@ -3503,7 +3506,7 @@ Bender
 L,
 E.
 Se
-Se
+So
 
 Bennett
 Bettis
@@ -3513,13 +3516,13 @@ Billington
 Blander
 
 F.
-Le.
+L.
 G.
 E.
-Joe
+Jo
 A.
 R.
-We.
+W.
 
 Blankenship
 Boch
@@ -3539,7 +3542,7 @@ D.
 C.
 E.
 
-&
+.A‘
 H.
 T.
 A.
@@ -3554,15 +3557,15 @@ P.
 K.
 E.
 B.
-P.
+PO
 H.
 He
 B.
 H.
 R.
-Le
+L.
 R.
-Go
+G
 
 Carlsmith
 Carter
@@ -3594,36 +3597,36 @@ Greenstreet
 Grimes
 Grindell
 
-51 »
+51»
 52 e
-23.
-5h.
+23
+5}4'0
 22
 56.
 
 3.
 29.
-60.
+60,
 61.
 62,
-63.
-6k «
+630
+6l o
 65.
 66.
 67 »
-68.
+680
 69.
-TO.
+T0O.
 Tl.
-T2
-73
+72.
+T3
 Th.
-Se
-76.
-[HC
-78.
+e
+760
+[C
+T8.
 
-80.
+80,
 
 R. H. Guymon
 
@@ -3639,15 +3642,15 @@ He W. Hoffman
 P. P. Holz
 
 A. S. Householder
-L. N. Howell
+L. N. HOWell
 
-Je. Po Harvis
+J. Po Harvis
 
-We. Ho Jordan
+W. Ho Jordan
 
 P. R. Kasten
 
-Re. J. Kedl
+R. J. Kedl
 
 M. T. Kelley
 
@@ -3659,7 +3662,7 @@ Se Se Kirslis
 
 Je. W. Krewson
 
-Je. A. Lane
+Je A, Lane
 
 We J. Leonard
 
@@ -3682,7 +3685,7 @@ He F. McDuffie
 C. K. McGlothlan
 A, J. Miller
 
-E. Co. Miller
+E. C. Miller
 
 R. L. Moore
 
@@ -3696,7 +3699,7 @@ T. E. Northup
 
 W. R. Osborn
 
-L. FF. Parsly
+L. F. Parsly
 
 P. Patriarca
 
@@ -3704,7 +3707,7 @@ H. R. Payne
 
 A. M. Perry
 
-W. Be. Pike
+W. B. Pike
 
 P. H. Pitkanen
 C. A. Preskitt
@@ -3723,17 +3726,17 @@ T. K. Roche
 111. J.
 112. M.
 113. G.
-114, A.
-115. O.
+114, A,
+115, O.
 116. P.
 117. I.
 118. B.
 119. J.
-120. A.
+120. A,
 121. J.
 122. R.
 123. M.
-124. D.
+124. D,
 
 Distribution - Cont'd
 
@@ -3749,19 +3752,19 @@ Scott 130. B. H. Webster
 
 H. Secoy 131. A. M. Weinberg
 
-H. Shaffer 132. J. He Westsik
+H. Shaffer 132. dJ. He Westsik
 
 J. Skinner 133. J. C. White
 
 M. Slaughter 134. G. E. Whitesides
 
-N. Smith 135. L. V. Wilson
+N. Smith 135 L. V. Wilson
 
 L. Smith 136, C. H. Wodtke
 
 G. Smith 137-138. Reactor Div. Library
 Spiewak 139-140. Central Res. Library
-Squires 141-143, Document Ref. Section
+Squires 141 -143, Document Ref. Section
 A. Swartout 144-146. Laboratory Records
 Taboada 147. ORNL=RC
 
@@ -3776,8 +3779,9 @@ B. Trauger
 125. Marina Tsagaris
 
 149-150.
-151.
-152.
+
+| 151.
+152,
 153.
 154,
 155-169.
@@ -3789,8 +3793,8 @@ D. F. Cope, Reactor Division, AEC, ORO
 H. M. Roth, Division of Research and Development, AEC, ORO
 F. P. Self, AEC, ORO
 R. A. DuVal, AEC, Washington
-T. W. McIntosh, AEC, Washington
-Division of Technical Information Extension, AEC, ORO
+T. W. MbIntosh AEC, Washington
+Division of Technlcal Information Extension, AEC, ORO
 Mrs. Margaret Butler, Argonne Code Center,
 Argonne National Laboratory, Argonne, Illinois
 

@@ -1,4 +1,4 @@
-wr
+'
 
  
 
@@ -12,8 +12,8 @@ INTERNAL USE ONLY
 
 UNION CARBIDE CORPORATION
 
-“e 0 R N L
-so coi wn CENTRAL FILES NUMBER
+NUCLlS!ON 0 R N L
+rosvomes soxx CENTRAL FILES NUMBER
 
 OAK RIDGE, TENNESSEE 37831
 
@@ -33,25 +33,25 @@ Using Digital Techniques
 
 TO: Distribution
 
-FROM: T, W., Kerlin and S, J. Ball
+FROM: T, W, Kerlin and S, J. Ball
 
 ABSTRACT
 
 The record of the flux noise obtained during the zero-power
-operation of the MSRE with fuel circulating was analyzed by two different
+operation of the MSRE with fuel circulating was analyzed by two differeht
 digital computer techniques. The indirect method consisted of calcu-
 lating the autocorrelation function of the flux noise and subsequent
-Fourier analysis of this autocorrelation function to give the power
-spectral density. The direct method used a digital simulation of 2
-band pass filter to concentrate the signal in the desired frequency
-range, The output of this filter was then squared and time-averaged
+Fourier analysis of this autocorrelation function to give fhe power
+spectral density. The direct method used a digital simulation of a
+band pass'filter to concentrate the signal in the desired frequency
+range, The output of this filter was then squared and time-avefaged
 
-to give the power spectral density.
+to give the power spectral density,
 
 Both methods were found to give comparable results at comparable
-costs. The results were also found to give reasonable agreement with
-previously published results obtained with analog methods . The value
-of B/4 obtained by the digital ‘method is 16.2 compared with 14.8
+costs., The results were also found to give reasonable agreement with
+previously published results obtained with analog methods; The value
+of B/4 obtained by the digital ‘'method is 16.2 compared with 14.8
 
 obtained in the earlier, analog study.
 
@@ -70,18 +70,18 @@ Indirect Method
 
 Direct Method .
 MSRE DATA . . . . .
-RESULTS . . . . .
+'RESULTS . . . . .
 Indirect Method
 
 Direct Method .,
 
 CONCLUSIONS . . . .
-~ Accuracy . . . .
-Cost . +. « « o
+- Accuracy . . . .
+" Cost . . ¢« ¢« o &
 
 Flexibility . .
 
-Speed . . +. .
+Speed . . . . .
 
 APPENDIX . . . . .
 
@@ -89,7 +89,7 @@ CONTENTS
 
 Page
 
-NN JN 60 60 Ug Oo»
+N N 60 60 g oo
 
 18
 18
@@ -104,7 +104,7 @@ NN JN 60 60 Ug Oo»
  
 INTRODUCTION
 
-Digital techniques were used to analyze the noise record obtained
+.Digital téchniques were used to analyze the noise record obtained
 during the zero-power run of the MSRE, These data were previously analyzed
 by analog methods by Roux and Fry.l The purpose of the present analysis
 was to supplement the analog results and to further test the digital
@@ -114,59 +114,59 @@ viously been used successfully in analysis of ORR noise data .2
 
 METHODS OF ANALYSIS
 
-Indirect Method
+Indiregt Methqg
 
  
 
 The steps in the indirect method are:
-1. Calculate the autocorrelation function, C, (7), of the noise
+1. Calculate the autocorrélation_function,,Cll(T), of the noise
 
 record using the following expression:
 
-1 "m
-C,1(M ~ | p(t) o(t + 71) dt oo (1)
-m oO
+1 Tﬁ
+C,1(M == jw p(t) ot + 1) dt - (1)
+m o
 where
 T, = maximum correlation time, and
-¢@ = the neutron flux signal,
+¢ = the neutron flux signal,
 
 2, Fourier analyze the autocorrelation function. Since it is an
 
-even function with period 2T , we obtain:
+even function with period’ZTm, we obtain:
 
-F ¢,,(M = [om C,1(M cos = dr . (2)
-m oO m
-3. Apply necessary corrections. These include:
+Fk 'Cll(T) ='%— jﬂﬂm Cll(T) c«os%-TI dr . (2)
+m o m
+3. Apply necessary corrections., These include:
 a. Spectral windows to compensate for the fact that the Fourier
 analysis uses a finite integration time,
-b. Filter corrections to remove the effect of a low-pass filter
+b, Filter corrections to remove the effect of a low-pass filter
 used to eliminate aliasing.
 
 c. Background corrections.
 
  
 
-1p. N, Fry and D, P, Roux, "Results of Neutron Fluctuation Measure-
+lD. N, Fry and D, P, Roux, 'Results of Neutron Fluctuation Measure-
 
-ments Made During the MSRE Zero-Power Experiment,’ USAEC Report ORNL-CF-
+ments Made During the MSRE Zero-Power Experiment,’' USAEC Report ORNL-CF-
 65-10-18, October 29, 1965.
 
-Letter from T. W, Kerlin to D, P. Roux, September 17, 1965.
-Subject: Digital Calculation of the Power Spectral Density from Noise Data.
-The corrected Fourier coefficient, F{c,,(M}, at the frequency, km/T_
+ZLetter from T. W, Kerlin to D, P. Roux, September 17, 1965,
+Subject: Digital Calculation of the Power Spectral Density from Noise Data,
+The corrected Fourier coefficient, Fk{ﬁll(Ti}, at the frequency,'kﬂ/Tm
 
 radians/sec, is the power spectral density (PSD) at that frequency.
 
-i ce
+; e
 
 Direct Method
 
  
 
-In the direct method, the digitized noize signal is used as the input
+~In the direct method, the digitized noize signal is used as the input
 or forcing function to the differential equations’ representing a narrow:
 band pass filter, and the resulting output of the filter is squared and
-integrated. The matrix exponential techniques is used to solve for the
+integrated. The matrix exponential technique3 is used to solve for the
 transient response of the filter, which has the characteristics of a
 
 quadratic lag and a transfer function:
@@ -175,11 +175,11 @@ Jw
 
  
 
-H(jw) = «oc (3)
+H(jw) = . ~ | (3)
 
-WC +285 w jo— o
+WC + 25w jo— o
 
-The center or resonant frequency of the filter is w_, and the band
+The center or resonant frequency of the filter iS~wb, and the band
 width increases with increasing damping factor 3. The PSD may be com-
 puted from
 
@@ -190,19 +190,19 @@ q volts
 
  
 
-PSD = , | (9)
+PSD = , | (9
 
 @® 2
-J |pGw]|® aw) rada/sec
-0
-— | |
+J/ [pGw]| aw\ rada/sec
+0 ,
+- | _ |
 (where q is the mean square filter output) if it is assumed that the PSD
 
 is constant within the band pass. For this filter
 
-© EN mT . CN
-| lH wl} dw = ———— (radians/sec) .
-4 5 w
+© N T . N
+11 lH(JQD' d@w = ———— (radians/sec) .
+4 5 w -
 0 0
 Provisions are also made in the code for correcting the PSD for any
 ‘low-pass filter that may have been used to prevent aliasing, and for cal-
@@ -211,19 +211,19 @@ culating the percent standard deviation of the PSD estimate.
 
 MSRE DATA
 
-The data previously used in the analog analysis. were digitized on
+The data previously used in the analog'analysis1 were digitized on
 
 the Millisadic digitizer. The data included records taken for the
 
-; | oo i : | oo
+- | o L o = | o
 S. J. Ball and R. K. Adams, 'MATEXP, A General Purpose Digital Com-
 puter Program for Solving Nonlinear Ordinary Differential Equations by
-the Matrix Exponential Method," USAEC ORNL Report in preparation.
+the Matrix Exponential Method," USAEC ORNL' Report in preparation.
 reactor critical and for the background noise observed when the reactor
 was shutdown. The case considered was for the reactor primary salt cir-
 culating with no bubbles, The noise record for the critical reactor was
 passed through a low-pass filter consisting of a first order lag with a
-time constant of 0,0047 sec, then digitized with a sampling interval of
+time constant of 00,0047 sec, then digitized with a sampling interval of
 0.00284 sec, The background noise was also filtered and digitized in
 the same manner. Approximately 36,000 time points were used for both
 
@@ -237,35 +237,34 @@ Indirect Method
 Figures 1 through 3 show the autocorrelation functions obtained in the
 indirect analysis, All calculated points are plotted for the shorter
 correlation times, but only every tenth point was included after the
-curve had leveled out at longer correlation times. Figure 1 shows the
+curve had leveled out at longer correlation times., Figure 1 shows the
 autocorrelation function for signal plus background. Figure 2 shows the
 autocorrelation function for background only, The results shown in Fig,
-
 3 were obtained by subtracting the background autocorrelation function
 from the autocorrelation function for signal plus background. This can
-be done if the signal and the background are uncorrelated, To show this,
+be done if the signal and the background are uncorrelated., To show this,
 take a signal composed of uncorrelated time functions x and y, and calcu-
 
 late the autocorrelation function
 
-C.1(M = 5 hr [x(t) + y(t) ][x(t + DD + y(t + 7)] dt
+011“) = % fOT [x(t) + y(t)][x(t + D + y(t + 7)] dt
 
-1 pT 1 T
-= tJ, x(t) x(t + ™) dt + = Js y(t) y(t + 7) dt
-1 T 1
-+7 [0 x) yt +m at +z [Tye) x(t +m at. (5)
-TJ, 0 |
+1 T 1 T
+= T*fo x(t) x(t + 1) dt + = fo y(t) y(t + 7 dt
+1 [T 1
+7 [0 x@ g+ at+z [T ye) x(t+ 1 at . (5)
+T J, 0 |
 Since x and y are uncorrelated, the last two integrals are zero and
 
 T | T |
-Cc, ,(M m= s J, x(t) x(t + 7) dt +3 Js y(t) y(t + © dt . (€)
+Cll("r) = -,-rl- fo x(t) x(t + 1) dt +,—},— fo y(t) y(t + ) dt . (€)
 
 Thus, if x is the signal and y is the background, we see that we get the
 autocorrelation function of the signal by subtracting the autocorrelation
 function of the background from the autocorrelation function of the com-
 posite signal. The improvement obtaineéd from the background correction
 
-is quite apparent if one compares Fig. 1 with Fig, 3.
+is quite apparent if one compares Fig. 1 with Fig,., 3.
 66-2334
 
 ORNL DWG.
@@ -274,9 +273,9 @@ ORNL DWG.
 
  
 
-me
+.....
 
-arabe
+......
 
  
 
@@ -284,24 +283,24 @@ arabe
 
  
 
-VL. IR Cea te .
-Coen fen Ca Yoo, ’e
-Ce Ss qo i I ' i i Cy +
-oe Vo I . ‘ ' oo ' a
-Chaar ea cee hoe “+ . A+ ‘e ee eda-safres
-Ce Ce for \ i i oa ead '
-veo fae ve Ch * 1 Chea
-hi i . ' } ven fed fey
-coho . . \ ‘ ber dea
+IR te .
+e e Ca Yoo, ’e
+e S g i 0 ' i i Cy +
+v ' SN . 0 ' o ' e
+b e ceehore < . A+ ‘e eeedo-safres
+e e ' 1 i o e '
+v e N b " 1 Cah e
+i i . ' ' v w e fey
+..... . . \ ‘ bbb
 
-—®
+—®.
 
  
 
  
 
-Toa
-ll .
+Do e
+:-»—J;.v;-&bl—- .
 
  
 
@@ -321,9 +320,9 @@ ll .
 
  
 
-Le
+e
 
-. om ——
+- ——
 
  
 
@@ -575,14 +574,14 @@ Le
 
  
 
-ne ene Cehp
-1S | “ og aha 0 dy ! '
-Oo o © QQ oO QQ o Qo Oo
-oO oO Qo o Oo Qo Qo oO Qo
-0 © < oN o 0 © <q aN
-oN oN aN oN oN r= ~~ 4 iy
+“.ﬁﬂw et el
+o ! qM f ....... 0., ._.HMQ. ! '
+o o o Q o Q o o o
+o o o o o Qo o o Q
+o0 © < N o 0 ©0 < N
+N N N N N =4 ~4 4 -y
 
-(837un £I8I37qIB) UOTIOUNG UOTIBTOLI0D0INY
+(837um £I8I37qIB) UOTIOUNG UOTIBTOLI0D0INY
 
  
 
@@ -591,9 +590,9 @@ oN oN aN oN oN r= ~~ 4 iy
 200 220 240 260 280 300 320 340 360 380 400 420 440
 
 180
-Time Point (1 time point = 0.00284 sec)
+Time Point (1 time point = 0,00284 sec)
 
-80 100 120 140 160.
+80 100 120 140 160
 
 40 60
 
@@ -624,31 +623,31 @@ ORNL DWG.
 
  
 
-a Te oy TT on,
-4 . . cyobe a fe gre coed Bea
-od | | . yo ceed A goeqg oveaf] ed
-2 | Cope pen]
-oe Uo wa Bh ced . TASy Ce pa
-; cope rg 1 boing
-poo . Trlr nn heat ph!
+T T Yoy T T oy,
+O . . b e gt ...~,.....”
+o d _.. w . Sy el \.M goeqg ovea] e
+2 . e e
+. lt‘...i_. e .m ced - ../‘v'.o. -
+; ...ﬁ.. g ~ b
+P . Tttt et !
 
-Ly 5 I 1 “eo ‘ REARS
-Lt A i Co . . ce ves cee fae
-- Co . Cee ek, . ye Vo.
-LL od Ca Coda. Ley Vag EE yee
-gee aes be safe d ademmrees boa, Pr
-. Le Cae + La yee chee cr Hh Cee
-cheep op seer Leaf , ‘ ot Lo
-| oH Ce peas vee. | . . i
-“+. oie 4
-Le . Cb '
-. . ce
+Ly 5 B * e . IRER RS
+Lt I { Coy . . e Ve v f e
+- O . e e e B, . ey V.
+_ i P oA “.... Vloag i .:_ yoee
+cgee e b e et edemmrees b e, P
+. ” e ¢ .‘,.. e e cr "._‘ Cee
+cheeegee g seeeae s e , : ; Lo
+_ m S e s e . ~ . . _...
+- o ie 4
+. . DR '
+. . e
 
-Po “a
+o s
 
-cheba ec Bete) ee
+che e Bt ) e e
 
-Le
+e
 
  
 
@@ -732,7 +731,7 @@ Le
 
  
 
-a
+R
 
  
 
@@ -793,61 +792,61 @@ a
 
  
 
--. . .
-. cafe ‘
-pee . . ved shee bow
-vee be veo “ . ol . he .
-J b |. . Coa Cy ees bebe .“. . ‘oe »
-, . . Lo Ce Ca . Ve . . Cie fea
-« vo» sobre oe - se. .. ono * baer con . . yd -—rd et + Spon be
-: - Cp ae ade [a . coe dey Poe. “or . cb e sas Pb Lei Loa
-: eee Cad ey bee cen ceed a Cee oh Cages Sajefrey
-. . . cee Ba a code IY] Py Vee i‘ Vy visa bot boo rab geen
-. Ce . Le ie aes Do gy . ou a + or whey ee “ot hs od . CER)
-i rr ; ) ym IT {eo J Tree ee we prt ep TTT
-ced i tl. . t 1 bo . Ce vo WY ie v AE PI pga ‘ ci plan
-NE ' Ve Pliage teint oo . Sgn ipl , I coh Ligedys
-Cove ee ar 1 oa Lh Vo cb ce he eg ci hee. ed . fy free bet Cree yo} be
-hig sae ene | LI ad ROY oer thes bene. “- a obs,
-! ! ! : : or
-yo t i . i ; Co i he . } . ’ : EA . . : ne . no ot Tr
-vo eb i. : [A : ced \ EERE 4 . : . - }
-i SR & Si 3
-. . . Cag pee . fee . Se . ‘ oe - .
-i i boil ee doh boo a Hi Pete ' oy ol :
-RB Chea abe ee tere 4. tobe et See i B) coer ; x :
-! Ved Ce aa “ho who ab, ly es A. (OR . . “eas i"
-5 . oo . « Ca . . Co oo . t “a . .
-i PG CR eM ne Fe
-' . Che . eg Ls . Ch Doe . . . a ‘
-1 Vos eT Lh Co Loo Tt ! ! lo. ol !
-* yan - . mae oreprm eto as i ope vip np > pe
-1} ch ee eh cabo 8 Frege Se ‘ “ta ee aha Tepe .
-.. . Sia .. o. . L. . ce . Lo . . Coie Vie Cee '
-veo Corp nb be hen EE Cy
-t { 3 Co .  } I . . . Co A i of . Cea bee es
-come nendne rns fay poem or sews BE ——f regs ‘eo ERO ELE some dlia + Sede
-. . ceo No a a ee a Le oo i U2 . . . aN vi. ‘ I.
-Lo ! ! . : LLL qe ors Lob i rach
-Ca ; co | 23 SRE PE Ll bl
-: A . Lt . i. . Cem Lo
-Cee i a. ' . ceo. by . . J . NE
-eed age ' eg od vag ble vy vy db eee bee od
-. yn Ca i tem cog } hol rit ot
-arg bed we o mieen shay . [RR pete ce fmm {ee
-. $I eee oad os . Oo She . Ca. v 2 . oo
-oa ty Ce La ye Po | i. Ce edo. . . . ‘ee ’ hy 1
-vee booed EE + io ’ . fe .
-co I y “a 2 , so . I Ce gw
-r 1 ? > oF
-Co poe bee ae Na . Sy. . Cpe Vee .
-. v . se beg a . v «ae . + “. vos av
-Hoe Ley Ph rE | cd th 1a BE A
-I I . . C. . Cet Capes fe vit
-. |... Lia ce 5 . © . bk ome -
-BEEN . i INL "
-. ! . Ha .
-S .
+- . . .
+. e .
+e 4 . . ved s beee b
+Yo b e e o . . . . e .
+.~. b ‘.. . o Sy e e b e e .« . ‘e »
+, .. . Lo e C . Ve . . i fe
+- v o s 'Owoi e - e . ...,ow.. * beaes coen . . v - ket + S PG b
+. - oy e e [ . o ie gy e o . cb e s T Wi Loy g
+: e Ce bt ey b e ety o s e Safefrey
+. . . ce e B ..M cod e Y] P Ve . Vo visa bt .. Voo P b g
+. e . A i . Do gy . o .v & o ey e ot b N1 . U
+i - ; ) ey “ e J T e e b T
+e i P . t 1 b . e o v} i v A TP P g ‘ ciphbaen
+ST ' e i teTiiit oo . Cyge il . Pt bt SEEERE
+Cv e e e b 1 o ..—. V. b e e ey i e e e . Sy gy et Cree yo b
+g .t e ey | L e ROy o e v hdees b e - e bt
+! ! ! : : o
+a;. m ~ . ) “ .”... “. ._. . ) . ’ : “...; . . ” .”“ . .“ 4. T
+Voo ceb 1. ' v : s \ R w . : )
+L L | & Sy s
+. . . S e Ve . e . e . ' e - .
+wx.. i bt s Ao b L Hi Pt ' oy . :
+B i e e el .w”.. o b e et S m 1 coep e . X .
+! Vel D e b e Wb e s e . @.. . . . "
+5 . oo . .« Ca . . . .o . ' . . .
+P R . - SR e M _ F
+‘. . e . g Loos . e Do . . . N .
+1 Voo e L s MM S ! ! o o !
+* ooy - - . - mae . oreprm e S s e oo vty o ~ e
+1 b T e e b .....~. S ‘ “ta e b .._.. .
+.. . .. o . . ce o 1 . .. . i e Vi ooe Ceye ¢
+v e Do b cn b e e o Sy
+t { 3 . . B . .. . <o~ A ! . . D b e e e
+comem netndne s ey vl.ll o -sews Cee e ey ll‘~.l.l»'.;- ‘e v K QP ey e e .01!4.' dlia - o dee -
+. . e YT e - e oo C . . . . i . .
+w., ! ! . . Lol boo0 “ ool - oot i o
+e ; o | . SRR P b
+, i . .t . i . L e .o
+e o i . ' . o, b . . c . N
+e d e ' ege o i v q Pl vy vy b e e b o 4
+. oy L i T S } s it o
+e g bmd e o oo s ks . e vadi e cpatee e fmeme e
+. “.~ ...... ) . . G S . . v ._ . .o
+ot C e L ey . m i ce e b . . . T ee ) by 1
+Ve b R ¥ i ' . Sf e .
+<o & . y . a - . o . - f c g
+' 1 ? > &
+o P ey N . Sy . Cye e .
+. v . e b g . v e . * .. o a v
+.*. ey .. m m o ._.. _.." B A
+1 I . . c. . e ey fe vt
+. V....a L - 5 . 0 . - bk ome -
+o . i I "
+. _ . .. .
+T .
 
  
 
@@ -874,25 +873,25 @@ S .
  
 
 -
-[RE .
-a )
-a ade a
-Cen eae
+[ .
+. )
+o e -
+e
 ) .
-ce '
-i
+..... '
+:
 i | i
-. : , To ‘oy . gt ‘ cles . . Sere i .
-eve feeb seer ' “a A ie ee Pe cate ho
-cn ae ve beg oo . cob I. vob eg de C.
-.. EE . ee hee age he . eh
-ce rae . egang eesamep ug be oven “ee . ver oF tue ne 0 ewe wi - . rrr "
-cece dey : Se cof . ee aires So
-cede bee ie gee vee fees Ciberr es geebaguye ty re Cees
-Forres . I [ te [OR] Pee RE . . ia. . “oo og a $0
-i Cee Coase ve Cea Rae ie fi . eed :
-’ : RSE
-ce fo. ©. cif Cede NE sar
+. : , T . . gt . e . . St i .
+e e e s e ' e e o i e ..._._ b
+s e by oo . ot o P v e ey C.
+.. b e T . e e ge o b . e
+ce e ot e gy eesamep g e oven - . ver o % tur e 0 ek wi - e u.".'?ol.@..u. -
+e e ey : cof e . e e S
+ced b e e g ve ) e o fepae g Cibetv e geebkageye iy ' Ve s
+Forov vt . ' [ . TR "q,. R . . e e . . g B § -
+i e e S e e e e R e i i . el :
+' : , RSE
+ce . - <. i e g S g s
 
 100 120 140 160 180
 
@@ -910,7 +909,7 @@ ce fo. ©. cif Cede NE sar
 
  
 
-—y ob ge
+-y b g
 
  
 
@@ -934,15 +933,15 @@ ce fo. ©. cif Cede NE sar
 
  
 
-ves foe ee
+.......
 
  
 
  
 
-edb ean
+et b e s
 
-cd ctvag eo cna B vane
+e ctvag e cn B e ne
 i
 
  
@@ -1003,7 +1002,7 @@ i
 
  
 
-(83TuUn £AIvI3IqIB) UOTIOUNJ UOT3FBIOIIOO0INY
+(83TUn AIvI3JQIB) UOTIOUNJ UOT3FBIOIIOO0INY
 
 460
 
@@ -1020,173 +1019,173 @@ Figure 2. Autocorrelation Function — Background Only.
  
 ORNL DWG. 66-2336
 
-2800 | Foy iol penn rRG EE
+2800 | Fij il b TR
 
-me mmm a gn mms tmmmme me ie meng emi em he 2 be eam w ress ke mc mmm es dl oe ecm a seh wr ge cen ® mw. L emrm cf we see
-frre ems hese goa oa Sold. od hee gee ag a ee eee ee kee ye
+.........................................................
+....................................
 
  
 
-ze0 |__| |.
+ze0 |||
 
 . . . Cee
-- . Poa ee -
-cei femes Shean} . on . . . e.g Ce - .. - - Chee oy Ca “a Lobe eh vo “a So. Cab ee . - ce Cae oe
-: mega aera. cee. . .. .- Seat re <i © So. . .e- Souda So . cee Rees beet - eo book - . Ca Cee. . . - - - ‘ . .
-2 eee bol tp She . -- Lo .e EE Lo Se ewes cof oo aaa eo fees . . . eo hie a Cee on .. chee Sf.
-400 SLLTTIEL lb . Aon oitin : ol Aroornno Lip Till : 1 Vv . . Anni Lill Sl. : cout ..
-eager fee eo Cane Se. . JN EE NN Shee f - .y oe Cee oo. de a Cee . - .  -. See. . Cee cr -
-“e “ews eel cee So. Sb. B - - oo he-e AN -) - “ue ae . Ces cee . . - . -. - So. Ca ce ee
-. .- woo} veered dn : of. eb ee ches . - bo ToT li i ln ee ea hee gee yee ee ee
-Cee . - Ce Leb on Ce . Lo . o. Cea
-4 —.— - Cc. ees
-NN DANE EN Ce ge .- . eh ..
-br eee cae es ee eee ee a Ee a eb Cie as coh . een Cee en bee . . .- -
-es Boel cba clean Be as ae 8 ob - .. ove ve Seed e - “. Cee cee be ce By ee . - . . ceed. DEE cee ces ean FEE . «. . - -o tb 0 -
-2200 Cie =e eee . . eee Cee . - Loeb. . . Cee. Ce . ee. - o- . . FE . . . . . FE} ceed sed ce PE - vo. cea baa
-.. .o “oo. pee oe . Cages. -- . Cee a Cee. . . .. - FE oo y . . -. . . Lo - - . ce ee a See . -- ..
-Cerf ivea a. -- Pea oe -t -. cas] en eel. “ean .e se Soe a) Cee be age ba . . eg EE FE So FR cohen J - Se Co. “a.
+- . v e e -
+...... e e} . . . .- . - - .. - - ke .y Lo g v “y- . R . - <. e o
+. cevg e Ao . S . . N .- St e - . - . .- Soade S . e R - eo b e . e .. . - - - ‘ . .
+2 eoebol g b . .- L .o e - Lo e ek - e K oo e oo e s . . . e b e e e e - .. oo N B
+400 LTI TTlIb T . oDl : ol Aroonno Lt R . 1o v . . i Ll : oLt ..
+e e v - cae e S . N B N .- f . - .y . e RN e . . . - —ee . . e “r- -
+v cews e ool oo S S : - [ N -} - .- . e e e . . - . .. - S e e e
+. .- «ao v fiaceba Y . o f . b e che s . - b Tl T e T e e e s ke e oy e e
+...... . - - Lol o S . Lo . . ceae
+-4~ e - . - e
+....... e . . .. e g .- . e ..
+................................................ e e e . Ce e e e . - .- -
+.............................. - .- PR .. e d e - Ce e e b e -} e . . . . s ed . DR e c e eae P - <. . - -ob - -
+2200 ci e - e e e . . . e e - - . R . . e e Ce . .- - L . . P . . . . . ) ce e e § e .. s - v c e b e e
+.. .o . [ . g . .- .. e e e . o - v e o V . . v e . . . . Lo - - . e e e . - - ...
+....... . - P e -t L. - . cac ) e eel . e .o P S e o) e b g b . . ey . S bl T - C.
 
-cae
+A
 
-. . . ia ae . ol cel — LLlllglillilaihiee
-TIT oI TA TIIITUTY TTYL TAIT Ty Ty TL TLRITTIT Tate TITTToTn TTT yu TT Tit oe TT TTT TTTITTTTYTIILIITL TUTTI IT
-ced fierce erie ae saga -. ce bes een Cy Cee. emg ce ee. I an JOE Lo. ae. bo - . oo. cea hee Cd ews . cee ea Te. . Pot . .- I che “ee a.
-.. . RR ad cir be. coo oe isc aie a ebm - I . “oo. ce - . . ce Fe Fe ee. Co. . ea . - Ce . i esha Coa a . . ber. .
-2000 -. . . - so. eo FE Cota ee . a Sev. AN ToL. co .. oo . . . : Lod al . —- . ‘L oo Le LR
-a .
-Rr : ToT Ty Th NE ; . pa Tv, TT TTT N : ” Te. TT : To. T :
-<n Cleegio hector peal Ly NT pe. tl Na A Coals dT Cl lelly Ca ce. Lael RS Cag el .
-SILLY ITT Tilo rr prt bh crn by yn ao a he es yep ny ls sy no bre iiy Lon
-rend yl nl celila
-Cee RT Ty Te TT TIT ST TT TT Ty Ty Ty TU : TT Soo Bs TTT TTT oT TT To TTI TITY TTT
-: edo TIED. LL o. SLE Lota elt caesdlolob oly JE RUE de . : . Sly Lilie Cel a. A Elie ee Tiel ce hee eee ee
-eben fea EE - oop. eae ae hb - - a eo % LY a Ls . . Cae . . .. . . FE Cee. cer Ke he Lo. ce. . . og ae Rede cee es
-1800 ATU oll To. Coal gilli Tl L. RRR Ta. ol . Ce Lol UL . ER PE : . bobo conte onion Lgl Tool
-STF TTA TTT I TTT TTT TTT > TTT TTT : TTT TTT = MR TT TT
-. a K ce dees “ee . . oe ea. Cee Cee ee Se. “ey FP. cdo hails TF aes pe eee ee be ah be oh --
-velit org on rE Dh Loy Ty ys bi teat TT TI LIT cee ee ee ee hh med emeen
+. . . e . o el - LllLlTglillil e
+T oI T TINITITY T T ATV Ty Ty T LRI TITTToTn T iyTvT T TTiyoTTT o VT T TTTITTTTYTIILIITL Tyt T
+cesda et e e e sl . e e eeen ey L e e o e e . Lo D L. ae . b - . . e b R e . cee b el T . e . .- . b e e .
+.. .. R s be . oo o i L aie e e b .. o e - . .- e - - s . . e ke e e e L. . e . - . . i ewa e e e e . . $oer . .
+2000 .. . . - s . e et .. - S e . N .o .. oo . . . . o cel .- - . ‘L .o L e
+. .
+..... : Ty Ty T T N ; s . 2 v, T T N : " e : o . T :
+- Cleegio o dbectalo il il LTy VTl pe. o N ool T ey S e . el R ey el .
+STV It il gyttt b s s by s s e s ey sy s s by Lol
+......... celila
+-------------------------------------- : T ST T . oI T TV Ty T
+. eedoo DT S o LT Lot a et cesdlolob o Lyl e e . : . Sy Y Ce d. el ey Tl e ke e e e
+e be e S - b e e e b - - e e % Y - e L . . S . . .. . . e e . e ce e K e he - L. - .. . o g e ke d ce e e s
+1800 ATTUTY ool . oAl g Tl IIoyITIL L. R . . . e Lol R . Tl P : . ool oot e oot Lyl Dol
+3T AT T T e T T T > T T : T T T N T
+. - K e dees ... . - e .. L e e e e ey e o el T e e e e e ke e he e BN - -
+..................................
 
-cheb yee ke es a ae as ee hase Re ieee seems oer een bee
+...................................
 
-“en me feb. . oo. ve - . SLY eel See . .. ——— Cees. cere Re ... ch eee ee
-‘a. ce een - crea afi - PO FE een Se - ems Cee. .. «ob ef - . . Cea hee. . JE EN - ce eee . Ree ere fee
-600 ce ee h coe oe ae ee odes . eo - Le. Cee. . - J. So .. Ce P- .. Le “en. . . . coe bee So. . Ce aah. ee fee. . « cena Co -
-1600 tt ~——t———t—= —T tt Se TTT TTT TT — TTT TTT —— tr TTT TT TT
-NN cee fea -. J fem. .- FE cee Io cea - a ead - oo Se « .- “- . FAN .-
+.. e e e . o ‘.- - . cag e e L . P - Cee- . e e R ... e iae e
+‘e ce e - creae e fieee - PO e [ - - e Ceee e .. c b - . . he-e . . e e - e e e . e e e
+600 e e b e - e e o e . .- e e . . - - - .. . P .. e . - . e b ae e . . S b e e . e cesnva -
+1600 t~——t———t—= T Tt S T T T T T T T T —— T T T T T
+...... e ke .. [ e em e . .- . e .- e - + e de - .o S PN .- .o e hieen .-
 
-eee cep ~ ce gaan cues gE ea . .“- Lat . - Ca. FR cee o. iif eee mah ope fees ee ewe cee dei eee pee Rs
+e cep o~ e g oW e b e . . . - e e .. i e ma ke oo feee e e . e e pee R
 
-cee be cep. . ce ceeh- cea cb hal lll ee Ee eee eae ae Le Tee eee
+e be . cee . . ceeh- et bl il e e e e e e e e e T e e
 
-1400 [NPE Le Df it ae fe
+1400 [RNP R L D it e e
 
-ce her eerie meee. fe Lee Bo peed cheb igi ce eed ep Bee gee bee cae e bea eee
-ce fered open fe einige or eo 0 pee h ben pct eee ceed ees cell eae a es de cee eee eee bs ee cE he ee ee sees Be ae epee he Be ey em fee tcec epee ede es
+.....................................................
+.................................................................................
 
-chee hee ohn
+............
 
 1200
 
-cee bros debe cb ener ahead hae Le a ey eee ve eed cE eee ee be ile sree mee ae Be Laie cpm iaal sme eos eed eee bees
-Cec heea bd ae Ree Lape mega Bf each eae mesh ae heed coca hla cee Lis cei aera besa hee fie cll ges carer aap cee cs Bem be
-cameo eee ee boii ooi SELL Lee hae eo se a cau oa ee a see ae se eg eee ee eg ei anaes eel mente ec heei cb eRe s gece bs tie ceeen te
+...................................................................
+.......................................................................................................
+...................................................................................
 
-- eee hee eee ae CL - . JED ce ee. - - - a . Sep eg wan eee clea crepe Beanigee Bema cease Fee oh cao f eee
-covb anf chico ei chico Rl cadens Feith 0 ee og bee be eae Re Ree cee ke be ee een ces hese ee heen - . — ET ae. Cee ema aad. -- Se.
-cofrcebroaci aaa p. co-foicanas CLtyTIiLpringriing tro soos dni niin .- ee fee. Creel cee eee a See Se cee map er oe bea I ecebe-a-§ Lean -- -- - .
+- e e e e i - . e s e e - - - . S e g s e clea R P S S T R R S I
+cevb e fe cbicep e ehiccieeon Rl cadbees Fecitbeeay s e o g el eae s e R e e ke e e e e ces s e e e - . - T e e eme e b -- L.
+cofrcebroaci e .t co-foi et CLtyTIiLpTringriing o s o dniingn otiin .- e b e, Core el e e e S e e - St s e e b [ ecebe-a-§ c.can .- - - .
 
-1000 Te. k. sea dee a. - cee es eee ae ade. «es be. leah oo Ce eb aie el yo - Sf. PE - PE eee Cee Ke ae ee - -- cher ea be
-. se “.- a Cee eee eye . oe NYS .- - .. .- NE S. . oo eee eg . . .y a . Cee Ce eee ef epi eaee ver fee a
-cohol Clog tilly yet Colello : geet rR ee de lel. cae oS gee. oooh Red cee eadeieie eed . .
+1000 Te. -k ae e o - e e e e e el - e . b L.l bl o b el el P - .. .- P - e o e o e Ceeee i Ke e e - . .- ceer e e ba
+. - “ .- s e e ey e . DY .- - - .. .- . . oo e . g . . .y . . e e e e e v er B e
+. ool Tl tilly oyt Lol eelatd e : . lgeaat R ee i de el . cae s Cipeee boooihao Rl cee eadeie e . .
 
-Cee phe ce Cees FE a Sek Lb oe eee de . - Co. Ee cee Pr Ce. - . - con spree.
-. . < - -- ea - .- - oo. .. Cee Cece cee epee cae bee ae - J . bom me fore mete we .-- ce eee cre ba.
-eg re. J She. hee LF. is . he. .. .. R- Se .e 3 - . code . - [SS Ce. ee ame Cee me eee deepen eee Cae en eee cea ee . . he yee
-oo. cee bies - EE ep. ei epee. “ee -- “so “ibe Cee. Ce eee bil pea - a3 ee. -- ce fen. ce fee ee. J PNY cee J eee cere hme ee “mg em
-. ... “cb cesta lll es a ce. cohen 8 aaa da - ee eta. PY ce ow caf Sh oo NS ce cee ones = espe fen cessed mae Re. cokes iicae hae - pee ofc ae
-cb. - .“. - ee Bl I . ee bh cel ea. ce eben he ead - 4 . - - . - - «fea Len Co. .. - - on “eb. ce ae be. - - —- -- “ew. ce ee «se.
-Sey eae -. . ee cm he ee dee ye Ce prea fem ems « . . . Cee .- - . ae . Cee Bem epen ea = ev. -- - cere Se eb eee . “=
-FN a. Cee igen eee bon cell Loy Lode. .e a. ee -. cee. LR lla. .o . . .. —- FE TE .- ve oo.
-. . ee .- . -- - . Cee. Cees ew - EE -
-Ce. . eee ie - cae cme rm Lae bea cee b Ce Sd er Fo aoe cee ee cee a -
-.- veges eee aaa . - -. . -- cee pec e fram abia heme cea ry ee :
-cep be . -- “eg. Cees a epee hm he “ne a4 [EE ..
-.. Sf. eed ea eo IN cee . -. caey- .. .- . .- cee fee he. Co. Cah elo ane cod oer bene Coil ei cae ei cel sesh ce leach ee erin ee Bee rece
-. es eta Fea eee a “ee eg gmc mr wfc rtemag cabo Boepoe-ohe oii fn riage emaabe be ef eee me forma b cet cmmerc-ob cramp a berm fe fee ee
-ces hoo JP cede hee - Cae ‘ ce bee ode eg. Cen -- F. -. - - ed - cee e. — ce ea}.
+C e e ce e e b aee Se b e e e R - . - S e s e - e e e C e . - . - e s cpree.
+.- .- - . .- e o - .- - .. . Cee e e e e e e e e e e - P . bom e o e e iewe .- e ee e creba.
+...... [ Sl e L. il . b .. R <. .. 3 - . e .. . - PSS S e ame - e - — e e deape e - e e e e ea e s . . ey e
+. e baes - e d e ei g . .- - o - . b e - e e e bl ipaa P .- ce- s . e e e e ce it e ceee - - R e ebea e e e e . m g e
+. ... v b-- st el e - e cebee b e b - e e e Y e e ca- - S o S c ceef e - et e fen ceessedm e R R e iicad o - pe-e - e
+b .. .. [ B I . e e b c el e-e ce et b eada -4 . - - . - - .« fea L. C - .. - .o —e b ce e b - - - —- - R e 4o o . s
+ey e -. . ek - e ey e e e e e s - . . . o e - .- - . . e Bemm e - - e v - - cere e e .
+RN t.- e g eee b ceil il Loy Lo . ... Ce e - cheey o Lk Ll - .o . .- .. - N .. .o ..
+.- . e .- . - - . S . e e e - B -
+. e e e - c - e —e Loe st e b Ce b e 4 .o Cee e e e e e -
+.- fvepecmcfoen O B . - - . . .- cee pe e e b e e ' .. - .
+ceoohee b . - “eg . C e ey e pm e .. a4 e ..
+.. e el - .- N e . .. caey- .- . .- .- e f ek s . ceh el i oo cetr e b Sl e i e e el s e b e el ee e e e e B s s e
+. P R e PR .- g+ g ceec e ctemag et B pe-ohe o i f . e iagecemaabe b e f eeef me fermabiceit cmmercoob e b o a beem f cefme e e
+cesch .- P cesdoe b - e . ce b oo g - Ceen - F. .. - - .4 - ey e - e e}
 
-ceeeree- diel iia bei ie Lao mages
+..............................
 
-Autocorrelation Function (arbitrary units)
+Autdcorrelation‘runétion (arbitrary units)
 
-ma men ere
-200 [tn GEE ET EEA EE A EET fee ee a EE Ea
+L T e e T e oy e e
+200 [t G R T R L A T e e e e P T e
 
-seven) ae eee oe aa che ee eb L E  hee shee e hy eds es Ree hee iad meen here ecm fe aegis Bae 3 - Bel cdl ie ch oo teva fh wae
-ceca be cee pg ciibe es abe cae el cape a es hee aria es a cease) eke ee a aie eed ee tpi dice a avatar grasa chile cei e et eee
+...........................................................
+.................................................................
 
-Cen
+Cei b
 
      
 
  
 
-Co Feith Specsivooniboibe op ng cn. Ql be Mob 1 4 obo Abe Croc oor op nooproonopeinpTiing Iii.
-cea-y-- ln IAT CT LTT RTT Ty TTITy TTI yn =. oT : TTT 1 Fae : TITEL TTY Sip TTTr Ts rT TE RT
-cer fees Ce - a. PEI “eb ceed ea Rema ae eben gye ees -- 4 -- ve Beebe. PE cee ee cee se a. Spe eee - “a PE ce - Ce ae ce hee .. ... oof. . oo.
-corbin chins bio phir ny bn ernst nnn cio bps Yeo s en rp centennial np rps rrp tn
-«200 |}. cocnopobiocprrs deny ponent nn Lp pn corvorpeibo poy poor bn tro gn pr plot nbd Prog Tiiionpniiiin gro ttrrtpronoprr tprannttrofuiuiorinoRl tiTiTe
-SO Sbry She TT TTT TT TTT TTT TTT TTY TT ITT TTT : STITT TT TTT TTT TT tT TT TTT
-poi fs ceptible ge bony Sir ani : od
-.730 Drnyrpirriitofioiigii Cipro nino eon LTiyll Sbripe nini Cobo
-ConpirTopoiinn iroropro bint Sooper orr oppo nny pine op pint cmb obo Soop tino ps snoop en trp
-- ——
-Tn Ta ETE TTT TT po TT TTT TTT TT Te STITT TT Try TT hn TT TATE TT IRE TT
-ceegamespeeec billion ange at FE .. ERE Sema a cere -f--- “oe Sy eee ge-. ceed by ee- Cyt . yo. Sepa Shee aaa - . oooh Shee . .
-- crs e na See be --- EE ER -. -ne cg FR chem cee. . eigen fea . Cee ew dee Cn eee. ..- ces x bie eed aes oo ) . .. 1.0"
+o Feithogini Specsivoribiobe o p g o ISR EON e Mo 1 4o oo b b e
+ce<-y-- ol IS T LTIt Ty TTITy T Ty o : Ty 1 k- ? LTI Ty Sy TTTr T TR T
+------ .- - -- Ae e e s ce b - C et e R - .. e cebe e e ey -4 - e o Be e b . coee e e ce e - e - - ae . .. Sge e e - N P e - Ce e e e .. ... - o .- .-
+corhinerpoop cchinsorne b b orhionrn sy b et cnviiobrprs Yoo s s Ly cestiboninins oo iy s ot Lt
+«200 } - cooopobiocprps ey b Ly 1 corvrpeibo gy oot s v g cplo sl Sl ot onpniinir g ttrtprooprr o tpronnttropuiuiorinoRl TiTiTe
+SO Sby Spe T T T T T T ST Ty T T T T : ST T T T T T et T T
+...... sttt g by o ik : oo
+Drnyroperriitofioiigii Sy i ey LTyl b i S b o
+CrnpirTopoiinn iroropro bt Sorperiyniiporr oo rrny L e oyt b oo Spoootps i b sniiinipr e Trp
+- —— -
+T ST T T T T T T T T T T T e ST T Ty T T T ATy T TR TV
+ceegaeespeeec bl c g st e - .. R R [ - - .o Sy e g P Syt . y - S e e b e e i o - . oo hee She e . .-
+- S b .- R R - - c e I e e . e ige e . e e e e D e - ces o b e ek e o ) . .. 1.0
 
  
 
-I -- ceo Ro. cee fey.
+..... - e R s e by e
 
    
 
-0 20 40 60 80 100 120 140 160 180 200 220 240 260 280 300 320 340 360 380 400 420 440 460
+o 20 40 60 80 100 120 140 160 180 200 220 240 260 280 300 320 340 360 380 400 420 440 460
 
 Time Point (1 ‘time point = 0,00284 sec)
 
 Figure 3. Autocorrelation Function of Signal + Background minus Autocorrelation Function of
 Background Only.
 
-OI
+01
 11
 
-The autocorrelation function, C,,(M, of the output of a constant
+The autocorrelation function, Cll(T),'of the output of a constant
 
 coefficient, linear system excited by white noise is given by:
 
 n
-po. PT
+— biT
 = AE 7
-C11 (mM ). i ’ (7)
+€1 (M Z i s ()
 i=1
 where
 . = a constant,
-i oo
-b. = a pole of the system transfer function, and
+i , o
+bi = a pole of the system transfer function, and
 n =
 
 order of the characteristic equation,
 
 See the appendix for a derivation of Eq. (7). For a zero-power reactor,
-the poles are at by =0 and by, = —(A + B/4) for a one-delay-group model ,
-Thus the autocorrelation function of a zero-power reactor excited by
+the poles are at blg§0 and b, = —(A + B/4) for a one-délay—group model .
+Thus the autocorreiation funétion of a zero-power reactor excited by
 white noise is given by:
 
-—(\ + B/L) T
+—(\h + B/L) T
 
-C ,(M = A. + A, @ . (8)
+Cll(T) = A_ + A2 e . (8)
 
 1
 
@@ -1194,30 +1193,30 @@ If the output is low-pass filtered prior to autocorrelation with a first
 
 order lag circuit, the overall transfer function is
 
-LN 9
-G Gw = GG Uw 6.Gw , (9)
+LN . . 9
+G Gw =G 0w 6.Gw , | | (9)
 where
 G (Gw = overall transfer function,
 Go(jw) = reactor transfer function,
-: . . _ 1
-G.(Jw) = filter transfer function = -— Ts and
-Te = filter time constant, sec.
+: . . . _ 1
+G.(Jw) = filter transfer function = -— s and
+Tf = filter time constant, sec.
 
 In this case, the autocorrelation function is given by :
 
-—T/7T
-c,, ( —A + A (A + B/A)T “Ae f
+—T1/7T
+Cll(T) —A 4+ A é—(x + B/L)T A e f
 
-1" 72 3 (10)
+1" T2 3 ' (10)
 
-For the MSRE experiment, 1/7, = 213, Thus, a plot of log C., (7)
+For the MSRE experiment, 1/'rf = 213, Thus, a plot of 1og'C11(T)
 vs T should show an initial slope of —213, .followed by a section of the
 
-curve with a slope of —(A + R/£) before settling out to a constant value.
+curve with a slope of —(A + R//£) before settling out to a constant value.
 12
 
 Figure 4, which shows the MSRE autocorrelation function for short =
-correlation times, displays the expected behavior. The equation that
+correlation times, displays' the expected behavior. The equation that
 fits this curve is
 
 —213 —-16.3
@@ -1226,40 +1225,40 @@ f(T) = 4030 e 137 + 710 e 16.37 . (11)
 This was obtained by assuming an exponent of —213 due to the filter
 effect, then performing a least squares fit on the function: |
 
-f(T) — 4030 e 213T .
+£(T) — 4030 & 213T .
 
-Thus the result obtained is
+Thus the result 6btained is
 
-A+ B/4 = 16.3 ,
+AN+ B/4=16,3 ,
 
 Since A is approximately 0.1, we obtain
 
-| 8/40 = 16.2 .
+| 8/3216.2 .
 
 - The value of B//4 obtained by this method (16.2) compares favorably -
-to that obtained by Roux and Fry (14.8) .1
+to that obtained by Roux and Fry (14.8),1
 
 Figure 5 shows the power spectral density of the signal prior to
-the corrections for the effects of the filter and the background noise.
+the corrections(for the effects?of the filter and‘the background noise.
 These results were obtained by Fourier analyzing the autocorrelation
-function shown in Fig, 1. We note a sharp resonance at 376.1 radians/sec
+function shown in Fig, 1. We note a sharp resonance at 376.1-radians/sec
 (60 cps) due to line voltage pickup. This resonance could have intro-
-duced an aliasing difficulty if the signal had been sampled at a slower
+duced an aliasing difficulty if the signal had been sampled at aSlower
 
 rate and had been inadequately filtered.
 
 Figure 6 shows the corrected power spectral density for the noise
 
-4 | | Co
+4 | | , o
 record. A Hanning window was used, the filter effect was removed, and
-the background PSD was subtracted. The analog results’ are also shown
+the background PSD was subtracted. The analog resultsl are also shown
 
 for comparison.
 
  
 
-2 -
-J. A, Thie, Reactor Noise, Rowan and Littlefield, Inc., New
+1 -
+- J. A, Thie, Reactor Noise, Rowan and Littlefield, Inc., New
 
 York, 1963,
 
@@ -1271,9 +1270,9 @@ York, 1963,
 pt
 -
 
-©
+o
 Q
-©
+o
 
 13
 
@@ -1289,7 +1288,7 @@ subtracted and reactor autocorre-
 lation function obtained by least
 squares fit
 
-- (®) Points for autocorrelation function of
+- () Points for autocorrelation function of
 reactor and filter
 
 Points for autocorrelation function of
@@ -1297,17 +1296,17 @@ reactor only |
 
 -16.37
 
-C,,(M = 710 e
+Cll(T) = 710 e
 
 Autocorrelation function of
 
--213T
+~ . ~-213T
 the low-pass filter = 4030 e
 
  
 
 0.02 0.04 0.06 0.08 0.10 0.12
-Correlation Time, T (sec)
+~ Correlation Time, T (sec)
 
 Figure 4. MSRE Autocorrelation Function — Fuel Circulating.
 PSD
@@ -1315,13 +1314,13 @@ Figure 4. MSRE Autocorrelation Function — Fuel Circulating.
    
    
 
-1000 “TT = TT TTT wd] ee oo eien rr Aaaa Yt 1,0
-Flux with Background cdf : TT ORNL IW3. 66-2338 - .
-No Filter Correction
-Hanning Window Used dita ATT Ty Filter Weight
-Digitizing Time Interval = 0.00284 sec JOT Ts TITY LC LS :
+1000 T =TT 1T T T wd ] e o e 2z Aaaa Y 1,0
+Flux with Background sy 4 : - ORIL IW3. 66-2338 - .
+No Filter Correction .
+Hanning Window Used iRt AT T Ty Filter Weight
+Digitizing Time Interval = 0.00284 sec dOTlp T LTI L LS :
 500 Points in the Autocorrelation Function
-. Ty . 44 Tl. . - oI . y :
+. T . ;.,l..‘.. Tl . - o . N .
 
 100 0.1
 
@@ -1347,26 +1346,26 @@ Figure 5. Power Spectral Density of MSRE Flux Noise.
 
  
 
-fo.
+4.
 
  
 
-“ce rh- -—
+..... -
 
 Background Subtracted
 
 Filter Correction Made
 
-Hanning Window Used
+Hanning Window Used ;
 
-Digitizing Time Interval = 0.00284 sec Cobos
+Digitizing Time Interval = 0.00284 sec b
 
-ce fees
+......
 
-A Analog Results (Normalized to PSD =
+& Analog Results (Normalized to PSD =
 at 8.8 rad/sec)
 
-ed rey.
+......
 
 10 100
 
@@ -1380,43 +1379,43 @@ ORNL DWG. 66-233
 
   
 
-cl
+¢l
 16
 
-. 2
+. 2 . :
 Earlier results indicated that the time required for indirect
 
 analysis on the IBM 7090 is given by:
 
-t =A NS fo (12)
+t=A Np £ (12)
 where
 t = IBM 7090 computing time (minutes),
 A =2x 1076,
-N, = number of points, and
-N, = number of values calculated for the autocorrelation function.
+Np = number of points, and
+Nt = number of values calculated for the autocorrelation function.
 
 The calculations for the MSRE noise indicate that A is closer to
 
-1.5 x 107%, For example, the IBM 7090 computing time required to obtain
+1.5 x 1075, For example, the IBM 7090 computing time required to obtain
 the spectrum for Fig. 5 using 36,000 points to calculate 500 autocorre-
 lation values was 26 minutes. The time required to numerically Fourier
 
 analyze the autocorrelation function to obtain the PSD is negligible,
 
 The number of values calculated for the autocorrelation function
-was arbitrarily set at 500 in the calculations described above. It is
+was arbitrarily set at 500 in the calculations described above. It 1is
 noted, however, in Fig. 3 that the autocorrelation function has leveled
 off after about 100 time points. The points further out do not seem
 to contain much information and possibly could be eliminated, cutting
-the computation time by a factor of 5. This was done, and the results
-are shown in Fig. 7. The use of this shorter maximum lag time results
-in 2 smoothing of the autocorrelation function in a manner analogous to
+the computation time by a factor of 5., This was done, and the results
+are showh in Fig. 7. The use of this shorter maximum lag time results
+in a smoothing of the autocorrelation function in a manner analogous to
 the use of a broader filter in the direct method. The power spectral
 
 density may be evaluated only for frequencies given by the relation:
 
-Km
-w = — (radians/sec) |,
+kKT
+w = — (radians/sec) ,
 T |
 m
 where
@@ -1424,7 +1423,7 @@ k = any integer, and
 T = the maximum correlation time (seconds).
 17
 
-7)
+)
 
 ORNL DWG. 66-2340
 
@@ -1432,30 +1431,30 @@ ORNL DWG. 66-2340
 
    
 
-vocal cho dp A
+v aal b o e dp A
 
  
 
-Flux with Background
+F1ux WithHBdckground
 
-No Filter Correction ETO
+No Filter Correction TG
 Hanning Window Used
 
 Digitizing Time Intervals = 0.00284 sec
 
 100 Points in the Autocorrelation Function
 
-so haan
+......
 
 100
 
-so fee
+.......
 
 PSD
 
 10
 
-1 oo Co 10 100 | 1000
+1 o o 10 100 | - 1000
 
 Frequency (rad/sec)
 
@@ -1484,15 +1483,15 @@ teristic of the PSD of the flux signal. This effect was also observed
 
 in the earlier analog study.
 
-The time required for the direct method is given approximately by
+The time required for the direct method is given approximately Dby
 
 t =BN N 5 (13)
-P Ww
+P w
 where
 t = IBM 7090 computing time (minutes),
 B =7 x 1076,
 N_ = number of points, and
-N = number of frequencies.
+~Nw = number of frequencies.
 
 For instance, the results shown in Fig. 8 for 36,000 points and 26 fre-
 
@@ -1501,7 +1500,7 @@ quencies required about 7 1/2 minutes of IBM 7090 computing time,
 CONCLUSIONS
 
 Digital methods for processing reactor noise data have been success-
-fully used in the analysis of noise records from the ORR and the MSRE,
+fully used in the anaiysis of noise records from the ORR and the MSRE,
 These tests are considered to be an adequate verification of the two
 different types of analysis employed. There seems to be no clear advan-
 tage for either of the digital methods used. A complete power spectral
@@ -1513,26 +1512,26 @@ worth the slight extra cost in many cases. A direct comparison of costs
 
 ORNL DWG. 66-2341
 
-Tr TTT Tr TTT TTY LTT Tem em mre ROR
+T T T T ';""T"""‘!“" T T LT T e e "’“’—
 
-: bd : HEE :
-comedies ie pie d=. av ogrmiardn peer —ad TERT OC oC
-
- 
+: b ' L :
+cemeiema i e ‘177: 4o ogrmiardn g ."'::z. TR 7t
 
  
 
-[J] pirect Method
-© Indirect Method (Normalized at 9 rad/sec) RE
+ 
 
-Chief ype 1
+[ pirect Method _
+® 1Indirect Method (Normalized at 9 rad/sec) AN
 
-0.01
+Chiednpe y o 1
 
-0.1 1.0 10 | 100 i. | -1000
-| | Frequency, rad/sec
+1 0.01
 
-Figure 8. MSRE Noise Analysis — Direct Method — Fuel Circulating, Band-Pass Filter ¢§ = 0.05;
+0.1 1.0 10 | 100 .~ | 1000
+. | | Frequency, rad/sec » '
+
+Figure 8. MSRE Noise Analysis — Direct Method — Fuel Circulating, Band-Pass Filter ¢ = O.OS;V
 AF = 0.00284 sec; Low-Pass Filter T.C. = 0.0047 sec; 36,000 Points. Corrected for background and
 filter.
 
@@ -1561,16 +1560,16 @@ Cost
 
 The cost of an analysis includes the cost of equipment and the cost
 of manpower, Both the analog method and the digital method require a
-suitable detector and a high quality tape recorder. The digital method
+suitable detector and a high quality tape recorder; The digital method
 requires a device for sampling the analog record, but since such a
 machine is available at ORNL, no purchase of special equipment is
 required. The remainder of the cost of digital analysis is digital
-computer cost, At Oak Ridge costs, it is economical to run the computer
+computer cost, At Oak Ridge costs, it is ecdnomical to run the computer
 for an hour or more in order to replace one man-day of work, Analysis
 of .data by the analog method requires special equipment, which is also
 available at ORNL, and requires personal attention during analysis. It
 appears that there is no clear cost advantage for either method at
-ORNL. A decision by a potential noise analyst at some other installation
+ORNL., A decision by a potential noise analysf at some other installation
 concerning the relative costs of the two methods would depend on the
 
 equipment available at that installation.
@@ -1593,14 +1592,14 @@ oy
 
 may be analyzed, and it is simple to go back and re-analyze the data
 to clarify interesting, unexpected features of the power spectral
-density curve, perhaps by varying the band width over which the PSD is
+density curve, perhaps«by varying the band width over which the PSD is
 averaged. The frequencies, and the band widths at these frequencies,
 that may be analyzed by the analog method are determined by the avail-
 
 ability of appropriate filters.
 
-Cross correlation and cross power spectral density (CPSD) analyses
-can also be made on a '"production' basis with digital techniques. |
+Cross correlation and cross power Spectral density (CPSD) analyses
+can also be made on a "production' basis with digital techniques. |
 Although analog techniques are available for CPSD analyses, practical
 
 means are not available for production runs at ORNL,
@@ -1609,9 +1608,9 @@ Difficulty
 
  
 
-The difficulty of carrying out an analysis is not a major conr-
+The difficulty of carryingVout an‘anélYSis is not a major conr-
 
-sideration unless you happen to be the analyst, Once the data are
+sideration unless you happen to be the analyst, Once the'data are
 
 ‘digitized, the digital method is virtually effortless. (The indirect
 
@@ -1624,7 +1623,7 @@ Speed
 It is sometimes advantageous to obtain noise analysis results
 quickly. With the analog method, one could carry the taped noise to
 the analyzer and immediately start grinding out results at a rate of
-about 10 PSD points per hour with equipment available at ORNL. These
+about 10 PSD points per hour with equipment available at ORNL, These
 results are usually processed with a short digital computer code to
 get the final spectra. With the digital method, one must feed the
 taped data to the Millisadic digitizer, then feed the Millisadic's
@@ -1641,123 +1640,123 @@ Millisadic on the other.
  
 22
 
-~ APPENDIX
-In this appendix, the following result will be proved:
+- APPENDIX
+In this appendix, the followingaresult'will be proved:
 
-n bt
+n b t
 
-\’ i | | -
-C,1(M =) A, e y oo -(A.1)
+\’ i ; | | -
+Cll(T) =Z Ai e y - - (A.1)
 
 i=1
 
 where
-Ci,i(M = autocorrelation function of the output of a system excited
+Cil(T)‘= autocorrelation function of the output of a systém excited
 by white noise,
 i = a constant,
-b, = a pole of the system transfer function (assumed to be
-simple), and |
-n = order of the characteristic equation,
+bi = a pole of the system transfer function (assumed to be
+simple),»andv | |
+n = order of‘thelcharacteristic equation,
 
 This is simply proved if we use the fact that the spectral density
 
 of the output, P_, is related to the spectral density of the input,
 
-P.» by
-P = |GGw| Zp (A.2)
-0 i?
+Pi’ by
+P = |GGw|? P (A.2)
+o i’
 where |
-2 : :
-1G (jw) = G(Ew G(—jw ,
-G(jw) = the system transfer function.
+: 2 : :
+|G(Jw)| = G(Ew G(—jw ,
+G(jw) = the system transfer function,
 
-If the input is white noise, P. is a constant, K, and we obtain
+" If the input is white noise, Pi is a constant, K, and we obtain
 
-P_=kleGw ® . © (A.3)
+P =kleGw ® . ©(A.3)
 
 The transfer function of a lumped-parameter, constant-coefficient
 
 linear system may be written:
 
-Go -2a)w-= a,) ces
+(Jw-—,al)(Jw-— az) ces
 
  
 
-G(iw = (A.4)
+Gw = (A.4)
 
-(Jw — Pb )(Gw— b,) ee
+(Gw — bl)(Ju>—-b2) .o
 23
 
 where
 
-a zero of GGw ,
+a zero of G(jub',
 
 Il
 
-a
+2
 b
 1
 
 a pole of G(jw .
 
-The autocorrelation function of a signal is equal to the inverse Fourier
+The autocorrelation function of a 51gna1 is equal to the inverse Fourier
 
-transform of its power spectral density:
+transform of its power spectral den31ty
 
-c, (Mm =F1{p)=% f GGw Gu 7 do (A.5)
+c, (M =F1{p)=2 f GGw Gyw @ dw (A.5)
 
-O - QO
+O - Q0
 
 The term, G(jw) G(—jw) may be written in the form:
 
-[Go =a) Gu=-2a) ....][(=w- a) (jo — a) ...]
+[Go=2a)Gu=—2a) ....][(ww- al)(—jm- a) ...]
 G(jw G(—jw) = . (A.6)
-[Gw = Db) Gw =D) co Jw = b) (jw —- Db) ...]
+[Gw = b)) Gw = D)) o] = b)) (jw—-Db,) ...]
 
  
 
-The function, G(jw) G(—jw) JUt has poles located as shown below:
+The function, G(jw) G(—jw) ert has poles located as shown below:
 
  
 
  
 
-The integral in Eq. (A.5) may be evaluated as a contour integral using
+The integral in Eq. (A.,5) may be evaluated as a contour integral using
 
 the Cauchy residue theorem to give:
 24
 
-K © he
-om | G(iw G—jw e'*" dw
+K ° ] jwt
+o f 6w G—jw e dw
 
 where
 
-| | oo oo on
-B.(b.) = the residue of the i
+| | o o :th
+Bi(bi) = the residue of the i
 
-This result is of the form,
+This result is_of the form,
 
 and we may write
 
 n .
 
-= K, ) B,(b) e
+= Kj ZBi(bi) e
 
 n=1
 
-pole.
+pole.,
 
-b.t
+b. .t
 i
 
-(A.7)
+(A7)
 
 (A.8)
 1.
 
-3-12.
+3-12,.
 13,
-14.
+14,
 15.
 
 16.
@@ -1768,9 +1767,9 @@ i
 20,
 21,
 22,
-23.
+23,
 24,
-25-34.
+25-34,
 35.
 36.
 37.
@@ -1783,13 +1782,13 @@ i
 44 ,
 45,
 46 ,
-47 ,
-48-49,
-20-31,
+47 .
+48-49 ,
+°20=31,
 92-54,
 05,
 06 ,
-o7.
+o7,
 
 25
 
@@ -1861,10 +1860,10 @@ ORNL Patent Office
 
 Reactor Division Library, Bldg. 9204-1
 
-ELDON WO PONE TSH dN NEON NAN nD
-2D NONE PEON HONS DZD OY = 00S ES
+LD N WO PO E TSN N OS> NAnn DD
+2D NN EPEONEHONS D ZE 00 =0 S
 
  
-A)
+1)
 
-4
+4 N

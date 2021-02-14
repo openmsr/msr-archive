@@ -1,48 +1,36 @@
-ak. (
-
-bt —t)
+o I R
 
  
-
-we ry
-
-  
+ 
+ 
 
 OAK RIDGE NATIONAL LABORATOR
 
-operated by
-
-UNION CARBIDE CORPORATION on
-
  
 
-NUCLEAR DIVISION
-for the
-U.S. ATOMIC ENERGY COMMISSION
-
+operated by
+o UNION CARBIDE CORPORATION
+» NUCLEAR DIVISION
+:& for the
+> U.S. ATOMIC ENERGY COMMISSION
 ORNL- TM-3767
-
 DATE - May 5, 1972
-
 HYBRID COMPUTER SIMULATION OF THE MSBR
-
 O. W. Burke
 ABSTRACT
-
-A hybrid computer simulation model of the reference 1000 MW(e) MSBR was
+U
+":% A hybrid computer simulation model of the reference 1000 MW(e) MSBR was
 developed. The model simulates the plant from the nuclear reactor through the steam
-throttle at the turbine. The simulation model is being used to determine the dynamic
-
+~ throttle at the turbine. The simulation model is being used to determine the dynamic
 characteristics of the plant as well as to discover the problems associated with the
+control of the plant. \
+V NOTICE This document contains informofion of a preliminary nature
 
-control of the plant.
-
-NOTICE This document contains information of a preliminary nature
-and was prepared primarily for internal use at the Oak Ridge Nationa!
+and was prepared primarily for internal use at the QOak Ridge National
 Laboratory. It is subject to revision or correction and therefore does
 not represent a final report.
 
-PISTRIBUTION OF THIS DOCUMENT IS UNLIMITED
+BISTRBUTION OF THIS DOCUMENT IS UKLIMITED
  
 
  
@@ -53,59 +41,47 @@ Energy Commission, nor any of their employees, nor any of their contractors,
 subcontractors, or their employees, makes any warranty, express or implied, or
 assumes any legal liability or responsibility for the accuracy, completeness or
 usefulness of any information, apparatus, product or process disclosed, or
-represents that its use would not infringe privately owned rights,
+represents that its use would not infringe privately owned rights.
 
  
 
  
 
-ct
+r!
 
-."
-Introduction . .
+»
+CONTENTS
 
-CONTENTS
-
-- . . . . . - . . . . . » . . . .
-
-Description of Computer . . . . . . . . . . . . ..
-
-Description of MSBR System . . . . . . . . . . ..
-
-Development of the Computer Model of the Plant . . .
-
-4.1 Steam Generator Model . . . . . . . . . . ..
-
-4.2 The Analog Computer Model of the System Exclusive
-
-Generator + «vv ve 4 ee eee ee ea.
-
-Results of Simulation Exercises . . . . . . . . . . .
-
-References . .
-
-Appendix . . . . LL. 000 eee ee
-
-7.1 A: Development of Computer Model . . . . . .
+Intfroduction . « . « . . . ¢ . . L 0 0 s s s s e e e e e e e e . 4
+Descriptionof Computer . . . . . . . . . . . . . ..o .. 0. . 4
+Description of MSBR System . . . . . . . . . . . . . . . ... ... 5
+Development of the Computer Model of the Plant . . . . . . . . . . .. 6
+4.1 Steam Generator Model . . . . . . . . . . . . ... Lo L . 6
+4.2 The Analog Computer Model of the System Exclusive of the Steam
+Generator « v v v 4 e e e e e e e e e e e e e e e e e .. 16
+Results of Simulation Exercises . . . . . . . . . . . . .. .. ... .33
+References . . . . & & v v v v v v i v e e e e e e e e e e .. 43
+Appendix . . . . . o Lt 0 e e e s e e e e e e e e e e e e ... 44
+7.1 A: Development of Computer Model . . . . . . . . . . . . .. . 44
 
 7.2 B
 
-oe
+o
 
-Steam Generator Equation Variables . . . . .
+Steam Generator Equation Variables . . . . . . . . . . . . . . 66
 
-NOTICE
+(mseeme———re—e—————— N O TICE
 
 This report was prepared as an account of work
-sponsored by the United States Government. Neither
+sponsored by the United States Government, Neither
 the United States nor the United States Atomic Energy
 Commission, nor any of their employees, nor any of
-theit contractors, subcontractors, or their employees,
-makes any warranty, express or implied, or assumes any
+| their contractors, subcontractors, or ‘their employees,
+makes any wartanty, express or implied, or assumes any
 legal liability or responsibility for the accuracy, com-
 pleteness or usefulness of any information, apparatus,
 product or process disclosed, or represents that its use
-would not infringe privately owned rights.
+would not infringe privately owned rights,
 
  
 
@@ -113,27 +89,17 @@ would not infringe privately owned rights.
 
  
 
- 
+e - cynrE g AMPETE
+e gy T YRR D T &7 T ORISR
+oo 5 I ST VLA et b TR e o
+‘,ﬁ_}fa;f t 1‘\1\
+\
 
- 
-
-Page
-. 4
-. 4
-. 5
-. 6
-. 6
-. 16
-. 33
-. 43
-. 44
-. 44
-. 66
-
- 
+5 ¥ -r‘
+-"«‘;'.);' PEaly Tt
 1. INTRODUCTION
 
-In order to get a "feel" for the dynamic behavior of the MSBR plant as well as to
+In order to get a "fee!" for the dynamic behavior of the MSBR plant as well as to
 discover the plant control problems and their solutions, it was imperative that a simula-
 tion model of the plant be developed.
 
@@ -144,6 +110,7 @@ reactor kinetics, core heat generation and heat transfer, primary heat exchanger
 transfer, piping lags, system controllers, etc., were simulated on the analog computer.
 
 The two computers were interfaced to form a unified simulation model of the system.
+
 2. DESCRIPTION OF COMPUTER”
 
 The ORNL analog-hybrid computer was used in the simulation. It consists of the
@@ -158,29 +125,31 @@ capacity of 32K words.
 
 The AD-4 analog computer is a solid state, £100 V reference machine. The mode
 
-switching is accomplished in 1 microsec. If contains patchable logic components
+switching is accomplished in 1 microsec. It contains patchable logic components
 
-* . : . . .
+ 
+
+* - - . . .
 Mention of manufacturers, products, brand names, etc., is for information purposes
 
-only and in no way implies an endorsement by ORNL or the U. S. AEC.
+only and in no way implies an endorsement by ORNL or the U. 5. AEC.
 and the interface for communicating with the PDP-10 digital machine. The interface
-contains an analog to digital converter (ADC) with a 32-channel multiplexer. lt also
+contains an analog to digital converter (ADC) with a 32-channel multiplexer. It also
 has 20 digital to analog converters (DACS), 12 of which are the multiplying type. The
 AD-4 has 60 integrators, approximately 100 other amplifiers, 48 digital coefficient units,
-68 servo-set potentiometers, 12 hand-set potentiometers, and 16 multipliers. The patch=
-able logic consists of gates, flip-flops, registers, counters, etc.
+68 servo-set potentiometers, 12 hand-set potentiometers, and 16 multipliers. The patch-
+able logic consists of gates, flip=-flops, registers, counters, etc.
 
 The older analog equipment consists of 58 integrators, 102 other amplifiers, 250
-hand-set potentiometers, 12 quarter-square multipliers, 15 servo-multipliers, 10 ten-segment
+hand-set potentiometers, 12 quarter-square multipliers, 15 servo-multipliers, 10 ten~segment
 
 diode function generators, 4 transport lag devices, etc.
 3. DESCRIPTION OF MSBR SYSTEM
 
-The proposed 1000 MW(e) MSBR olant consists of a 2250 MW (1), graphite
+The proposed 1000 MW(e) MSBR plcmf] consists of o 2250 MW (1), graphite
 moderated, molten salt reactor, 4 shell and tube primary heat exchangers, and 16 shell
 and tube supercritical steam generators. The reactor core is made up of two zones. The
-central zone is ~14.4 ft in diameter and ~ 13 ft high with a primary salt fraction of 0. 13.
+central zone is ~14.4 ft in diameter and ~13 ft high with o primcfy salt fraction of 0. 13,
 The outer zone is an annular region ~1.25 ft thick having a salt volume fraction of 0.37.
 
 The molten salt fuel flows, at a constant rate, upward through the passages in the
@@ -188,20 +157,20 @@ graphite core in a single pass and then to the tube side of four vertical, singl
 primary heat exchangers. The salt temperature entering the core is 1050°F and that at
 the core exit is 1300°F.
 
-The heat generated in the primary salt in the core is transferred from the tube side
+The heat generated in the primary salt in the core is fransferred from the tube side
 of the primary heat exchangers to a countercurrent secondary salt passing through the shell
 
 side. The secondary salt flows in a closed secondary loop to the horizontal supercritical
 6
 
 steam generators. The four secondary loops (one for each primary heat exchanger) are
-independent of each other, with each loop flowing to four steam generators. The tem=
+independent of each other, with each loop flowing to four steam generators. The tem-
 perature of the secondary salt entering the steam generators is 1150°F and on leaving
-the steam generators its temperature is 850°F. The secondary salt flow rate can be
+the steam generators its femperature is 850°F. The secondary salt flow rate can be
 changed by changing the pump speed.
 
 The shell-and-tube supercritical steam generators are countercurrent, single-pass,
-U-tube exchangers ~77 ft in length and 18 in. in diameter. Feedwater enters the steam
+U-tube exchangers ~77 ft in length and 18 in. in diameter. Feedwater enfers the steam
 generators at 700°F and ~3770 psia pressure, when operating at design point steady state.
 At design point, the exit steam conditions are 1000°F and.~3600 psia pressure.
 
@@ -215,80 +184,26 @@ in some detail. The older analog computer is used to simulate the rest of the sy
 Since the programming techniques for the two above-mentioned computers are quite
 different in some respects, the hybrid model of the steam generator shall be discussed
 
-apart from the analog mode! of the rest of the system.
+apart from the analog model of the rest of the system.
 
 4.1 Steam Generator Model
-The mathematical model of the steam generator consists of the differential equations
+The mathematical model of the sfeam generator consists of the differential equations
 expressing the conservation of mass, momentum, and energy of the water and secondary
 
 salt. In this model, the variation in the density of the secondary salt was neglected and
-PRIMARY
+SRNL-MWG TR-LE 2
 
- 
+PRIMARY SECONDARY
+SALT PUMP SALT PUMP
+(4) (4)
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-SALT PUMP
-(4)
-0
-REACTOR
-VESSEL
-l= LEVEL CONTROL:
-9.48 X10” Ib/hr
-at 1300°F
-PRIMARY
-GRAPHITE LLM HEAT EXCHANGER
-MODERATOR—"] (4)
-1 9.48 X10" 1b/hr at 1050°F
-Fig. 1. Flow Diagram of MSBR Plant.
-
-CRNL-MMG 70-0602
-
-SECONDARY
-
-[1 Y 1a]
-SALT PUMTF
-
-(4)
-
-    
    
    
-
-1X 10" Ib/hr STEAM at 1000°F
-FLOW [TTT Te mee — »
-
-DIVIDER
+   
+ 
+  
+  
+  
 
  
 
@@ -296,23 +211,57 @@ DIVIDER
 
  
 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+o
+REACTOR _1X 10" Ib/hr STEAM at 1000°F
+VESSEL—a FLOW r 7 —— .
+DIVIDER X 10" Io/hr FEED WATER at 700°F _
+dox Sxete
+. REMEAT STEAM at 1000°F
+at 1300°F - at 1000
 712 X10" Ib/hr at 1150°F
-
-  
-  
- 
-
-6.16 X10" [b/hr at 1150°F
-
+PRIMARY
+MGORDAEF;-IAITT;)ER/,/" HEAT E(’;‘;HANGER §.16 X 10" Ib/hr at 1150°F
 REHEATER
-
-850°F STEAM GENERATOR
-
- 
-
- 
-
-(16) 2)
+850°F STEAM GENERATOR (EZ’SE
+9.48 X 10" Ib/hr at 1050°F - 16)
 
  
 
@@ -320,98 +269,60 @@ REHEATER
 
  
 
-——— ee —— ee — -g
+ 
+
+—_—————— -
 
 REHEAT STEAM at 650°F
 
-The quantities shown are totals for the entire plant.
-Table 1. Physical Constants
+Fig. 1. Flow Diagram of MSBR Plant. The quantities shown are totals for the entire plant.
+ 
 
- 
+Table 1. Physical Constants
 
 A. Properties of Materials
-G p k
-Btu Ib~! °F”! Ib/f¥ Btu he™! °F! ft!
 
-Primary Salt 0.324 207.8 at 1175°F ~~ =—===-
-Secondary Salt 0.360 117 at 1000°F ~~ =====
+ 
+
+Cp o
+Bty Ib~! °F"! Ib/ft
+Primary Salt 0.324 207.8 at 1175°F
+
+k
+Btu he™! °F~! 7!
+
+ 
+
+ 
+
+ 
+
+Secondary Salt 0.360 117 at 1000°F ===
 Steam
-
-726°F 6.08 7 emma
-
-750°F 6.59 11.4 ~———
-
-850°F 1.67 6.78 =m
-
-1000°F 1.11 503 0000 meee
+726°F 6.08 2.7 em—--
+750°F 6.59 11.4 —~————
+850°F 1.67 678  mmme-
+1000°F 1.11 503 = me==—-
 Hastelloy-N
-
 1000°F 0.115 548 9.39
-
-1175°F 0.129  e—e-- 11.6
-Graphite 0.42 115 eme—-
-
- 
-
+1175°F 0.129  e-=-- 11.6
+Graphite 0.42 ns - m=——-
 B. Reactor Core
-
- 
-
-Diameter, ft
-
-Height, ft
-
-Salt volume fraction
-
-Fuel
-
-Graphite-to=salt heat transfer
-
-coefficient, Btu hr! ft=2 °F-!
-
-Temperature coefficients of reactivity, °F
-
-primary salt
-graphite
-Thermal neutron lifetime, sec
-
-Delayed neutron constants, = 0.00264
-
-i
-1
-2
-
-Central Zone
-
-14.4
-13
-
-0.132
-By
-
-1065
-
--1.789 x 1073
-+1.305 x 107%
-3.6 x 107%
-
-B; A (sec
-
-0.02446
-0.2245
-
- 
-
- 
-
-0.00102
-0.00162
-
-Quter Zone
-
-16.9
-13
-0.37
+Central Zone Quter Zone
+Diameter, ft 14.4 16.9
+Height, ft 13 13
+Salt volume fraction 0.132 0.37
+Fuel By
+Graphite-to=-salt heat transfer
+coefficient, Btu hr=! ft=2 °F-! 1065
+Temperature coefficients of reactivity, °F"
+primary salt -1.789 x 1073
+graphite +1.305 x 107°
+Thermal neutron lifetime, sec 3.6 x 1074
+Delayed neutron constants, B = 0.00264
+: B; )\;(sec-l)
+1 0.00102 0.02446
+2 0.00162 0.2245
 
  
 
@@ -419,184 +330,256 @@ C. Heat Exchangers
 
  
 
-Length, ft
-
-Triangular tube pitch, in.
-Tube OD, in.
-
-Wall thickness, in.
-
 Primary Heat
 
+Exchanger
+
+Length, ft 18.7
+Triangular tube pitch, in. 0.75
+Tube OD, in. 0.375
+Wall thickness, in. 0.035
+Heat transfer coefficients, Btu hr~! ft=2 °F~!
+
+tube~side-fluid to tube wall 3500
+
+tube=wall conductance 3963
+
+shell-side~-fluid to tube wall 2130
+
+Steam Generator
+
  
 
-Heat transfer coefficients, Btu hr=! ft=2 °F~!
-
-tube-side-fluid to tube wall
-tube-wall conductance
-shell-side-fluid to tube wall
-
  
 
- 
-
-Exchanger Steam Generator
-18.7 72
-0.75 0.875
-0.375 0.50
-0.035 0.077
-
+72
+0.875
+0.50
+0.077
 Steam Outlet Feedwater Inlet
-
-3500 3590 6400
-3963 1224 1224
-2130 1316 1316
+3590 6400
+1224 1224
+1316 1316
 
  
 Table 2. Plant Parameters (Design Point)
 
 Reactor Core
 
-7.68 x 10° Btu/hr [2250 Mw(th)]
-
 Heat flux
-Primary salt flowrate 9.48 x 107 tb/hr
-Steady state reactivity, p 0.00140
-External loop transit time of primary salt 6.048 sec
 
-Zone 1 Zone 11
-Heat generation 1830 Mw(th) 420 Mw(th)
-Salt volume fraction 0.132 0.37
-Active core volume 2117 to 800 #2
-Primary salt volume 279 #3 296 3
-Graphite volume 1838 f° 504 1°
-Primary salt mass 58,074 Ib 61,428 Ib
-Graphite mass 212,213 Iba 58,124 lb
-Number of graphite elements 1466 553
-Heat transfer area 30,077 £2 14,206 £2
-Average primary salt velocity ~4.80 ft/sec ~1.04 ft/sec
-Core transit time of primary salt 2.71 sec 12.5 sec
+Primary salt flowrate
+
+Steady state reactivity, fo
+
+External loop transit time of primary salt
+
+Heat generation
+
+Salt volume fraction
+
+Active core volume
+
+Primary salt volume
+
+Graphite volume
+
+Primary salt mass
+
+Graphite mass
+
+Number of graphite elements
+Heat transfer area
+
+Average primary salt velocity
+Core transit time of primary salt
 
 Primary Heat Exchanger (total for each of four exchangers, tube region only)
 
-Secondary salt flow rate 1.78 x 107 Ib/hr
-Number of tubes 6020 2
+ 
 
-Heat transfer area 11,050 ft
+Secondary salt flow rate
 
-Overall heat transfer coefficient 993 Btu he! f~2 op-1
-Tube metal volume 30 £13
+Number of tubes
 
-Tube metal mass 16,020 Ib
+Heat transfer area
 
-Primary salt (tube side) Secondary salt (shell side)
+Overall heat transfer coefficient
+Tube metal volume
 
-Volume 57 f13 295 £3
-Mass 11,870 Ib 34,428 Ib
-Velocity 10.4 ft/sec 2.68 ft/sec
-Transit time 1.80 sec 6.97 sec
+Tube metal mass
+
+Volume
+Mass
+Velocity
+Transit time
 
 Steam Generator (total for each of 16 steam generators, tube region only)
 
-Steam flowrate 7.38 x 10° lb/hr
-Number of tubes 434 2
+Steam flowrate
+Number of tubes
+Heat transfer area
+Tube metal volume
+Tube metal mass
 
-Heat transfer area 4,102 ft
+Volume
 
-Tube metal volume 22 §3
+Mass
 
-Tube metal mass 12,203 Ib
-
-Steam (tube side) Secondary salt (shell side)
-
-Volume 20 £13 102 £3
-Mass 235 Ib 11,873 Ib
-Transit time 1.15 sec 9.62 sec
-
+Transit time
 Average velocity
 
-~62.8 ft/sec 7.50 ft/sec
+7.68 x 109 Btu/hr (2250 Mw(th)]
+
+9.48 x 107 tb/he
+0.00140
+6.048 sec
+
+Zone |
+1830 Mw(th)
+0.132 3
+2117 ft
+279 ff33
+1838 ft
+58,074 Ib
+212,213 Iba
+1466
+30,077 f12
+~4.80 ft/sec
+2.71 sec
+
+1.78 x 107 Ib/hr
+6020
+
+Zone I
+420 Mw(th)
+0.37 3
+800 ft
+296 3
+504 ﬂ'3
+61,428 Ib
+58,124 Ib
+553
+14,206 2
+~1.04 ft/sec
+12.5 sec
+
+11,050 ft2
+993 Bty hr~! ft72 of~!
+30 13
+16,020 Ib
+Primary salt (tube side} Secondary salt (shell side)
+57 3 295 3
+11,870 Ib 34,428 Ib
+10.4 ft/sec 2.68 ft/sec
+1.80 sec 6.97 sec
+
+7.38 x 10° Ib/hr
+434
+
+4,102 ft
+
+22 §t3
+12,203 Ib
+
+Steam (tube side)
+20 1
+235 [b
+1.15 sec
+~62.8 ft/sec
+
+Secondary salt (shell side)
+
+102 #3
+11,873 Ib
+9.62 sec
+7.50 ft/sec
 10
 
 hence only the conservation of energy is considered for the secondary salt. The equations,
-written in one space dimension, x, (the direction of water flow) and time, t, areas
+written in one space dimension, x, (the direction of water flow) and time, t, are as
 
 follows:
 
 Conservation of mass (water)
 
-®,.23 (20.
-YE (bv) = 0; (1)
+% ., 3 0.
+5 " 5% (ov) = 0 ; (1)
 
 Conservation of momentum (water)
 
  
 
-ot 3 dx ! @
+olov) . 3 2 _ _kep _ 2 5
+5t o V) oax O @)
 Conservation of energy (water)
-2 (oh) + 2 (hv) = k,HO = T) ; 3)
-ot 3x 1 ! :
-Conservation of energy (salt)
+2 (ph) + S (ohv) = k.H(e - T) ; (3)
+ot X 1 ! -
+Conservation of energy (salf)
 Hk
-36 38 2
-5 sx pe (T-9) . (4)
-Ll
+36 3 %2
+_8—1T+ Sg;(-—pc (T - 9) . (4)
+s"p
 The equations of state for water:
-T = T(p,h) ;
-p= o(p, h) .
+T = Tp,h) ;
+o = plp,h) .
 
 The definitions of the variables used in the above equations are as follows:
 
 T
 
+i
+
 water temperature, °F,
 
-water density, Ib/ft,
+water density, lb/’r'i*3,
 
 ©
-i
+il
 11
 
 v = water velocity, ft/sec,
 
-p = water pressure, Ib/in?,
+p = water pressure, Ib/inz,
 
-c= coefficient of friction,
+¢ = coefficient of friction,
 
 k = constant used to make units consistent,
 
 h = specific enthalpy of water, Btu/lb,
 
-H = heat transfer coefficient, salt to water, Btu/sec—Ft*—°F,
+H = heat transfer coefficient, salt to water, B’ru/sec—ﬂ'z-"F,
 
-ky = ratio of the surfuce area of a tube to the water volume in the tube, fo
-k, = ratio of the surface area of a tube to the salt volume adjacent to the tube, fl
-p, = salt density (assumed constant), Ib/f,
+k] = ratio of the surface area of a tube to the water volume in the tube, f’r—!,
+k2 = ratio of the surface area of a tube to the salt volume adjacent to the tube, f’r_1,
+b, = salt density (assumed constant), lb/Ff3,
 
-& = specific heat of salt at constant pressure, Btu/Ib=°F (assumed constant),
-0 = salt temperature, °F,
+& = specific heat of salt at constant pressure, Biu/Ib=°F (assumed constant),
+9 = salt temperature, °F,
 
 \ = salt velocity, ft/sec.
 
-It was determined in previous work? that a continuous-space, discrete~time model
+It was determined in previous work2 that a continuous-space, discrete~time model
 is most satisfactory for this steam generator simulation. By a judicious choice of the
 direction of integration in space, of the various dependent variables, an initial value
-problem can be formed. Since the water enthalpy, h , and the water pressure, P, are
-known at the water entrance end of the exchanger (left end), these variables will be inte~-
-grated from left to right. For the same reason, the water velocity (it can be calculated at
+problem can be formed. Since the water enthalpy, h, and the water pressure, P, are
+known at the water entrance end of the exchanger (left end), these variables will be inte-
+grated from left to right. For the sume reason, the water velocity (it can be calculated at
 the throttle) and the salt temperature will be integrated from right to left.
 
 The critical flow at the throttle is expressed by the following nonlinear relationship
 
 among the system variables at a point just before the throttle:
-where A_ is the instantaneous value of the throttle opening, A the initial steady
+ 
+
+where A_ is the instantaneous value of the throttle opening, A the initial steady
 
 T T,0
 state value, M the critical flow constant, and b an empirical constant (assumed to be
 equal fo 0 in this simulation).
 
-Aro is taken as 1.0 and Ar is varied as a function of time during transients.
-By simplification of Eqs. (1), (2), (3), and (4), and using the backwards differ-
+AT,O is taken as 1.0 and »AT is varied as a function of time during transients.
+By simplification of Egs. (1), (2), (3), and (4), and using the backwards differ-
 
 encing scheme for the time derivative, the following ordinary differential equations are
 
@@ -604,43 +587,53 @@ encing scheme for the time derivative, the following ordinary differential equat
 
  
 
+ 
+
 generated.
-A I
-dx ~~ k dx k k Af !
-h=-h
-dh 1 _ _ k |
-x = pv WHE =D - 5
-dv _ vd PT
-dx p dx pAt 7
-ao _ Hl -9 25
-dx pcv v AFC
-Sp s s
+b _ v o’ p VW
+dx  k dx k k At !
+h - h
+
+dh 1 _ _ k
+
+= v HgHe -1 - =5
+
+dv _ v 2%
+
+dx o dx pAt
+
+9‘9_=+Hk2(T-e)_e-ek
+
+dx pCV v At
+SpPs s
 
 In the above equations, the nonsubscripted variables are the ones being iterated
 for the values at the end of the (k + 1) time increment, while the variables with the
-th , .
+» - fh - - »
 k subscripts represent their values at the end of the k' time increment. The time
 
-increment is represented by At.
+increment is represented by Af .
 13
 
-Since the v and 6 equations are being integrated from right fo left, they must be
-transformed using a different space variable. Let y = L =x, where L is the total length
+Since the v and 6 equations are being integrated from right to left, they must be
+
+Il
+
+transformed using a different space varioble. Let y = L - x, where L is the total length
 
 of the steam generator in the x direction. The new v and 6 equations become:
 
  
 
-do Hi, (T - 9) 6 - %
-
-dy Pos (y) V, (y) At
+Hk2(T - 0) ] 6 - 9
+dy pschS (y) VS (y) At
 
  
 
 In the hybrid program developed from the above equations, the integrations are
 performed on the AD-4 analog computer. The digital computer calculates the terms of
 the differential equations, provides control for the calculation, and provides storage.
-The AD~4 patchable logic is used in the problem control circuitry as communication link-
+The AD~-4 patchable logic is used in the problem control circuitry as communication link-
 ages between the digital computer and the AD-4 analog computer. The patchable logic,
 along with BCD counters, is also used for problem timing and time synchronization be-
 tween the digital computer and the AD-4 analog computer.
@@ -649,31 +642,33 @@ The thermodynamic properties of water are stored in the digital computer as two-
 dimensional tables. An interpolation routine is used to develop values from the numbers
 in the tables.
 
-The calculational procedure for a time step, At, is as follows:
+The calculational procedure for a time step, At, isas follows:
 
 The current values of the water temperature, T, and water pressure, p, at the
 water enfrance end (left end) of the steam generator are read and stored in the digital
 
-computer. The current value of the secondary salt temperature, 6, at the salt entrance
-14
+computer. The current value of the secondary salt femperature, 6, at the salt entrance
+ 
+
+14
 
 end (right end) of the steam generator is read from the continuous time analog model and is
-stored in the digital computer. The secondary salt velocity, V, , and the throttle valve
-position, As , are also read from the continuous time analog model and their values are
+stored in the digital computer. The secondary salt velocity, Vs , and the throttle valve
+position, AT , are also read from the continuous time analog model and their values are
 stored in the digital computer.
 
 The terms of the dh/dx and dp/dx equations are calculated by the digital computer,
 using the values of the variables at the left end of the steam generator. The values of these
 terms as well as the values of the initial conditions of h and p are set on the coefficient
 devices representing them on the AD-4 analog computer. This coefficient device setting
-is implemented by a command from the digital computer. Upon a command from the digital
+is implemented by a command from the digita!l computer. Upon a command from the digital
 computer, the h and p integrators on the AD-4 computer start integrating in x . While
 the integration is proceeding, the digital computer is calculating the differential equation
 terms for the next space node (a space node is 1 foot long). When the digital calcula-
-tions have been completed, the digital computer interrogates the AD-4 computer, through
+tions have been complefed, the digital computer interrogates the AD-4 computer, through
 the patchable logic, as to whether or not its integrations have reached the end of the node.
 Upon getting an affirmative answer, the digital computer reads and stores the values of p
-and h from their integrators on the AD-4 computer. These integrators are in the hold mode
+and h from their integrators on the AD—4 computer. These integrators are in the hold mode
 at this time, having been placed in this mode by a logic signal from a BCD counter signifying
 that the end of a node has been reached. The digital computer sets the coefficient devices
 to their newly calculated values and starts the integrators to integrating over the next node.
@@ -710,8 +705,8 @@ It was experimentally determined that the calculational stability was not good f
 time steps very much less than 0.5 sec. As a consequence, a At of 0.5 sec was used.
 
 It was also experimentally determined that the completion of five iterations required
-in excess of 8 sec. Asa result, 10 sec of computer time was made the equivalent of 0.5 sec
-of real system time. The continuous time model was time scaled accordingly (machine time
+in excess of 8 sec. As a result, 10 sec of computer time was made the equivalent of 0.5 sec
+of real system time. The continuous time model was time scaled accordingly {machine time
 = 20 times real system time). The sampling rate of the continuous time model was, there-
 
 fore, once each 10 sec. This means that the values of variables generated in the continuous
@@ -719,7 +714,7 @@ fore, once each 10 sec. This means that the values of variables generated in the
 
 time model and used in the discrete time steam generator model are sampled once each
 10 sec of machine time, which corresponds to 0.5 sec in real system time. Ina like
-manner, the variables generated in the discrete time steam generator model and used
+manner, the variobles generated in the discrete time steam generator model and used
 in the continuous time model of the remainder of the system are updated once each
 10 sec in machine time.
 
@@ -729,7 +724,7 @@ Appendix B. The AD-4 analog and patchable logic circuits are shown in Fig. 2.
 4.2 The Analog Computer Model of the System
 Exclusive of the Steam Generator
 
-The computer model of the reactor, primary heat exchanger, piping, efc., isa
+The computer model of the reactor, primary heat exchanger, piping, etc., isa
 
 continuous time, lumped parameter, model similar to those traditionally used on analog
 
@@ -740,24 +735,23 @@ computers. The heat flow model is shown in Fig. 3.
  
 
 Experience has shown that for the rather mild transients for which this model is
-intended, a two-delay-group nuclear kinetics model is adequate. > That this is a cir-
+intended, a two-delay-group nuclear kinetics model is c:u:h:aquc:te.3 That this is a cir-
 culating fuel reactor adds to the complication of the model.
 
 The nuclear kinetics equations are as follows:
 
  
 
-dP _ (op - 8) }
-a Cr PMG LG
-ac, 8, c, JH
-ar = 7 PG -— * T Ct i
+P _ (o - B) _
+
+o T T PG LG
+dc, B, c, e‘M"’l
+_gf_:.]\_p_;\]c]-?-+ - C](i' 'rl),
 Fi
 
-xn
+n
 
-+)
-
- 
+o)
 
  
 
@@ -795,6 +789,67 @@ xn
 
  
 
+f_ CORE
+i_ _________ r——— T 7771 l__.l ____________ I __ 1
+' t o |
+ZONE t PRIMARY ZONE 11 PRIMARY SECONDARY| |
+ll sALT : : : sar | saLT | |
+1 Tir \ LW |
+' =2 J1 PRIMARY | | | \ . !
+| | GRAPHITE | | SALT Lo l \ Tuee I |
+l T, | T, . T“ \ |
+52 103 1
+| PRIMARY | | | | PriMary \ [seconparv] |
+I SALT I I SALT saLT i
+: T ! Iy Tie Tea :
+| I : GRAPHITE : I I l |
+Tea |
+ll PRIMARY : < | 1| primaRY SECONDARY }
+‘ | SALT
+I S:LT i \\ : \ S:LT \ ‘ I
+! o § N prmary | b \ < I
+} | GRAPHITE ] ! SALT i J W TuBt [ |
+! o P ! T Py T2 i
+I PRIMARY | | | [ PrMary Y seconoaavl |
+! SALT I 1oy SALT N saLT I
+I Ti : I Tio Ter )
+L A O -
+(Tt i Ao
+| |
+| [
+
+Fig. 2. Lumped-Parameter Model of MSBR Core and Heat Exchanger.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
  
 
  
@@ -827,8 +882,6 @@ xn
 
  
 
-ORNL-DWG 72-3833
-
  
 
  
@@ -841,31 +894,9 @@ ORNL-DWG 72-3833
 
  
 
- 
+REACTOR CORE
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
+ORNL-DWG 72- 3833
 
  
 
@@ -888,75 +919,20 @@ ORNL-DWG 72-3833
  
 
 PRIMARY HEAT EXCHANGER
-
-I
-I
-|
-|
-!
-|
-|
-!
-|
-|
-i
-|
-|
-|
-|
-|
-|
-!
-]
-|
-|
-!
-
-.
-
-ci
-
-§ core
-Fe Cor Teme =
-bo zone 1 primary | | 20NE 11 bo Temmary SECONDARY
-| SALT | sar | SALT
-
-1, 1, \ T
-| 02] PRIMARY | | | 7 \ 4
-I | GRAPHITE t SALT | N Tuee {
-Howe MN | . bo wo N
-1 \ [ primary | | 103 | PRIMARY \ | SECONDARY
-
-! \
-
-I N sar | Ly] sar SALT
-| Tre | Io Tie Tes
-| [ | | orapuiTe I [
-| ( Tes I
-| PRIMARY | | < I 1 | Primary SECONDARY
-| SALT | \ | sar { SALT
-
-T \ | T \ T
-| 101 | \ [Primary Po t9 \ 2
-| | GRAPHITE [ 1 SALT | I N  TuBe
-1 Tor MN | T. | i Tz \
-| \ [Primary | | I [ Primary \_| seconpary
-! SALT | 1 SALT N sar
-Toe ! oy Tuo Ter
-om Teme bg E
-I T.
-| [IR]
-I bo
-    
-
-P- SIGNAL
-Crm)
+o P- SIGNAL
+Cros)
 
  
+
+   
 
 ORNL DWG.
 
  
+
+AND GATE @ b >
+LoD o g -
+|
 
  
 
@@ -971,6 +947,8 @@ ORNL DWG.
  
 
  
+
+ 
   
  
  
@@ -1000,6 +978,13 @@ ORNL DWG.
  
 
  
+ 
+
+ 
+
+ 
+
+ 
 
  
 
@@ -1008,245 +993,268 @@ ORNL DWG.
  
 
  
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+BCOD LEFT To RigHT
+lCounTER INTESRA TioH
+,._.‘L; ‘@"_ ROsc
+Pc; I‘N‘: ( "
+& 2 [’jﬁ' 2 7% EaracP]
+o P ADc
+c & > CHAN T
+& AR _r 223 - -
+o o= £ ey
+I § 2
+~ Z PRe TiME SIEP
+A “ A 3 o
+1S igna o & Turier
+L1 ms) 2 30 &
+25 C% v o ©
+LEFT Yo ¥uisnT ’ - TH g 40 4
+- 3 1 O— O O
+L T P 2 =
+Timen O
+SWITCH W e 1
+- B 2.
+25) 34 234
+s
+ZTRTRAT = T | TENTE = 20
+TR AT Ol ol0] OISO IS I IR 1 [ PRkl olofelaolslelolpleld
+L xS 7 2 i 4 L taln el e T - /
+2lo <
+A 26
+;__1 232
+- 4
+bT 233 e
+
+ 
+
+ 
+
+ 
+
+IDM (5)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+    
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+3
+
+ 
+
+a3 e
+< (r215)
+
+Fig. 3. Patching Schematics for the AD-4 Computer.
+
+RALo
+COuUNnTLR
+N A2 vELe Y
+cL . ADC
+&3 455
+ler I 240
+B S1anAL (1712 G“‘—'_o 0
+Co PR
+D
+RiamT To Lefy | o
+A Co PR
+QPLERATE CY.L L O G
+TimeR 80 a Liadl Tp LLF7
+0 O L,+ INTEGRA 7104
+40 -
+o O IDV{T)
+2e 2 R- DA
+’Oo ? 2213
+SWITEH w O
+STEAY VELD Y 47 Tkl o
+
+ 
+
+ 
+
+8l
+ 
+
+ 
+
+   
+
+  
+
+   
+   
+
+- SfGNA‘L
+GrD)
+
+ORNL DWG. 72-5794 -
+
+     
+ 
+
+  
+
+b
+k
+
+  
+   
 
  
 
 i
-BCD LEFT To RIGHT
-ICounTER
-. INT ERA Tio
-£n |
-> RO&c
-i els
-a Abc
-Cuan.
-z 223 ~
-> i
-& 8
-=
-A 3 Tire STEP
-& I] Tireer
-J 1 wv
-s n T-H qd
-Tire:
-EWITCH We
-26)
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-234
-s
-= TRTRT ISTH . [
-pain Cita [slits] (e) le] (6) (o]tel (1 Bd SEE [elerIsIeleloe eerste!
-TT - > r 4. 217 Tenia] s)is]i]
-
- 
-
- 
-
- 
-
- 
-
- 
-
-—
-
- 
-
- 
-
- 
-
-IDV(S)
-
-R- OAL
-2z i
-, F
-Y a
-SHAN.
-026Q
-
- 
-
- 
-
- 
-
-   
-
- 
-
- 
-
-    
- 
-
-er an
-P srawas (a O——1©
-
- 
-
-RiaHT To LEFT
-OPERATE Cv:itk
-JiR 80
-
-[1
-
- 
-
-£13-T Ty LEFT
-i INTEGRA TOM
-
- 
-
-O~0On Or Oo Pao? of
-
- 
-
-SWITEH vM
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-[Er
-
- 
-
- 
-
- 
-
- 
-
-81
-  
-    
-   
-
-P- siGwat
-“rs
-
-ORNL DWG. 72-5794
-
- 
-   
-  
-    
-   
- 
-
-oO
-
-  
-    
-  
+Lims)
+M E LAEL) 2
+“‘t:!f‘ :! =‘ ! Sadl
+Times
 
   
 
-[LD]
+oF o 08 O ol
 
-of 02 08 ON nt
-
- 
-
-P-S164ML (100 #5)
-
-  
- 
-    
+     
    
   
 
-AREY To RranT
-alRLs YR oY ek
-Tiss,
-
-soYolop
-~0OpOs On
-
-VV (wamrE vaeseiry)
+P- S 16401 (100 #5)
 
  
 
-STeAr TUMr. AT TARsw(C
+0~ On O+ Oa OROY O
 
- 
+it
+
+  
+
    
+    
+    
+   
+  
  
-        
-  
-  
     
  
+
+  
+    
+
+  
+ 
+
+NV (waTkE vaissiy) oc
+rres
+
+      
+
+  
+
+STear Toerr. AT THARoWI L
 
 of
 
-    
-
-P SrswaL (nD
-
-AiGnT To reer
-OPERATE Cy:iil GAT To LEFT
-Tusa InmaSaarey
-
-    
-
-oyo3ogotiod
-
- 
-
-O~ Qn 0% Ou
+2 SrewAL (Im)
 
   
 
-SIGNAL
-Cr Ms)
+ARIGHT Te Larr ToH
+
+opfrate cyiil
+Tiin adl Ta Lef?
+
+ 
+
+InTRGRA ey
+
+soyototoliof &l
+
+   
+
+O=0Qn Q4 On
+
+S1GNAL
+Crr1s)
 
 TH
 
@@ -1255,40 +1263,26 @@ Fig. 3. Patching Schematics for the AD-4 Computer.
  
 
  
-
- 
 19
 
-“2 fay oe Pl ) ; ©)
-dr rE EE A
-
+ic, &, c, 2
+TR NG s Gl “)
+c c
 where
-
 P = the nuclear power level,
-
-0 = reactivity,
-
-<] = total delayed neutron fraction,
-
+P = reactivity,
+8 = total delayed neutron fraction,
 A = mean neutron lifetime,
-
-MN = decay constant for delayed neutron group No. 1,
-
-¢ = delayed neutron precursor concentration of group No. 1,
-
-Ay = decay constant for delayed neutron group No. 2,
-
-C, = delayed neutron precursor concentration of group No. 2,
-
-B = delayed neutron fraction for group No. 1,
-
-By = delayed neutron fraction for group No. 2,
-
+X] = decay constant for delayed neutron group No. 1,
+C] = delayed neutron precursor concentration of group No. 1,
+?\2 = decay constant for delayed neutron group No. 2,
+C2 = delayed neutron precursor conceniration of group No. 2,
+B] = delayed neutron fraction for group No. 1,
+8, = delayed neutron fraction for group No. 2,
 T. = reactor core resident time of the circulating fuel,
+= resident time of the circulating fuel in the loop external to the core.
 
-I= resident time of the circulating fuel in the loop external to the core.
-
-In the model, the fuel salt flow rate is assumed constant; therefore, T. and 7
+In the model, the fuel salt flow rate is assumed constant; therefore, T and T
 are constants.
 The development of the computer model of the reactor kinetics from the above
 
@@ -1299,43 +1293,43 @@ equations is shown in some detail in Appendix A.
 
  
 
-In the simulation model, core zone 1 contains two graphite lumps, and core zone 2
-contains one graphite lump. There are two fuel salt lumps adjacent to each graphite lump.
+In the simulation model, core zone 1 contains two graphite fumps, and core zone 2
+confains one graphite lump. There are fwo fuel salt lumps adjacent to each graphite lump.
 The outlet temperature of the first adjacent fuel salt lump (in the direction of salt flow)
 is used as the average fuel salt temperature in the equations describing the heat transfer
-between a graphite lump and the fuel salt lumps adjacent fo it.
 
+between a graphite lump and the fuel salt lumps adjacent to it.
 The typical heat balance equation for core graphite heat generation and heat transfer
 
 is as follows:
 
-dT.
-9iog ral heir = Tg) + KP
+dT .
+41 pg i hegPgilTe = Ty + KiP
 
 where
 
-Mi = the mass of graphite in the ih lump, Ib,
+Mgi = the mass of graphite in the ith [ump, Ib,
 
-Cog = graphite heat capacity, Btu/lb-°F,
+Cpg = graphite heat capacity, Btu/lb-°F,
 
-Toi = the average graphite temperature in the ith graphite lump, °F,
+Tgi = the average graphite temperature in the ifh graphite lump, °F,
 
-hes = the overall heat transfer coefficient between the graphite and the fuel salt,
-Bu/ft>—°F-sec,
+hfg = the overall heat transfer coefficient between the graphite and the fuel salt,
+B’ru/f’r2—°F-—sec,
 
 Agi = the heat fransfer area between the graphite in the ith lump and the fuel adjacent
-to it, #2
+to it, F’rz,
 
-Te. = the average temperature of the fuel salt adjacent to the graphite in the ith graphite
+:I'_ﬁ = the average temperature of the fuel salt adjacent to the graphite in the ith graphite
 lump, °F,
 
-Kgi = the fraction of total fission power that is produced in the ih graphite lump,
+Kgi = the fraction of total fission power that is produced in the ifh graphite lump,
 
 P = total fission power produced by the reactor, Btu/sec.
 
 The typical heat balance equations for the generation and transfer of heat in the
 
-core fuel adjacent to the ih graphite lump are:
+core fuel adjacent to the ith graphite lump are:
 and
 
 where
@@ -1345,33 +1339,33 @@ foi
 21
 
 fi = =
+Mficpf dr Ficpf(Ti,in Tfi) * thAFi(Tgi TFi) T KﬁP
+dTFoi T T
+MeCor ar = FiCoflTe ™ Tt ¥ PePalTy ~ Tr) + KgP
 
-MeCor ar = FiCofTh in Te) + hei Toi Te) + KgP
-Te = =
-
-MeCor ar FCT “Tet he Aa; “Tg FKP
-
-one-half the mass of the fuel salt adjacent to the graphite in the ih graphite
-lump, lb,
+one-half the mass of the fuel salt adjacent to the graphite in the ith graphite
+lump, b,
 
 fuel salt heat capacity, Btu/lb=°F,
 
-fuel salt mass flow rate adjacent to the ith graphite lump, Ib/sec,
+fuel salt mass flow rate adjacent to the ifh graphite fump, Ib/sec,
 
-the fuel salt temperature as it enters the ih graphite lump, °F,
+the fuel salt temperature as it enters the ifh graphite tump, °F,
 
-one-half the heat transfer area of the jh graphite lump, He
+one-half the heat transfer area of the ifh graphite lump, Ffz,
 
-one-half the fraction of the total Fission power that is generated in the fuel salt
-adjacent to the ih graphite lump,
+one~half the fraction of the total fissi;an power that is generated in the fuel salt
+adjacent to the th graphite lump,
 
-the fuel salt temperature at the salt discharge end of the ih graphite lump, °F.
+the fuel salt temperature at the salt discharge end of the ':fh graphite lump, °F.
 
-The detailed development of these equations into the time and magnitude scaled
+The detailed development of these equations into the fime and magnitude scaled
 
 computer equations is shown in Appendix A.
 
 4.2.3 Piping Lag Equations
+
+ 
 
 The piping lags between the reactor core and the primary heat exchanger shall be
 
@@ -1382,21 +1376,21 @@ perfect mixing. The resulting equations are as follows:
 
  
 
-dT in 1
-at oT Teo - Tin !
-xX
+dein ]
+a1 (TRO - Txin !
+X
 and
 dT
 fin _ 1
-a = 7 Tho ~ Tein)
-x
+dt o7 (THO Tfm) !
+X
 where
-Tin = fuel salt temperature at the primary heat exchanger inlet, °F,
-= fuel salt residence time in piping between the reactor core and the primary heat
+Txin = fuel salt temperature at the primary heat exchanger inlet, °F,
+UV fuel salt residence time in piping between the reactor core and the primary heat
 exchanger, sec,
-Tro = average fuel salt temperature at reactor core outlet, °F,
-Te. = fuel salt temperature at reactor core inlet, °F,
-Teo = fuel salt temperature at the primary heat exchanger outlet, °F.
+TRO = average fuel salt temperature at reactor core outlet, °F,
+Tfin = fuel salt temperature at reactor core inlet, °F,
+TﬂO = fuel salt temperature at the primary heat exchanger outlet, °F.
 
 4.2.4 Primary Heat Exchanger Equations
 
@@ -1410,7 +1404,7 @@ of the first half lump is used as the average temperature in the heat transfer e
 Since the secondary salt mass flow rate can be changed by changing the circulating
 pump speed, the heat transfer coefficient between the tube wall and the secondary salt
 will vary with salt mass flow rate. As an approximation, the heat transfer coefficient
-was considered to be proportional to the secondary salt mass flow rate raised to the 0.6
+was considered to be proporfional to the secondary salt mass flow rate raised to the 0.6
 
 power.
 23
@@ -1419,58 +1413,58 @@ The typical heat balance equations for the primary salt in the primary heat exch
 
 are as follows:
 
-dT
+dl
+
 fi _
-Me: Cor dt - Fe CoflTH(i-1) Td * he ArT Te)
+Mficpf dt - Fxcprf(i—n T+ hprFx(Tfi Tei)
 and
 dT
-F(i+1) _
-Mean Cor ar = BxCortTe ~ Trgan)d * heel = Te)
+Fli+1)
+Moot —ar— = BCortTa ~ Tigend * PPl = T
 where
-i = 7when [=1, and i = 9 when |= 2,
-Me. = Mea) = one-fourth the total primary salt mass in the primary heat exchanger,
+i = 7when j=1, and i =9 when j=2,
+Mfi = Mf(i+l) = one-fourth the total primary salt mass in the primary heat exchanger,
 Ib,
-Cot = the heat capacity of the primary salt, Btu/lb. =F,
-F = primary salt mass flow rate in the primary heat exchanger, Ib/sec,
-he, = the overall heat transfer coefficient between the primary salt and the heat exchanger
-tube wall, Btu/ft*~sec-°F,
-Ac = one-fourth the total heat transfer area between the primary salt and the primary
-heat exchanger tubes, #2,
-Ts = the average temperature of the tube wall metal in the { lump, °F.
+Cpf = the heat capacity of the primary salt, Btu/lb. =°F,
+Fx = primary salt mass flow rate in the primary heat exchanger, Ib/sec,
+hfp = the overall heat transfer coefficient between the primary salt and the heat exchanger
+tube wall, B’ru/ffz'-sec—"F,
+Afx = one-fourth the total heat transfer area between the primary salt and the primary
+heat exchanger tubes, th,
+Tfi = the average ’rempercturé of the tube wall metal in the ith fump, °F.
 
 The heat balance equations for the primary heat exchanger tube metal are the
 
 following:
-24
+ 
 
-|
+24
 
 dT
-MC. —11
 
-ra 7 hy mT) he A Tm Te)
+MiCrar = bl = Ty) = hycA Ty - Ty
 
 and
-di,
-MC = htt = Tid = PrcATp ~ Ted)
+de2
+MiCr o = hlTe ~ T2~ i - Ted)
 
 where
 
-Ms = mass of tube metal in lump number one = one-half the total tube metal mass in
-the primary heat exchanger, lb,
+MT = mass of fube metal in lump number one = one-half the total tube metal mass in
+the primary heat exchanger, Ib,
 
-< = the heat capacity of the tube metal in the primary heat exchanger, Btu/Ib=°F,
+CT = the heat capacity of the tube metal in the primary heat exchanger, Btu/lb-°F,
 
-Tos = the average temperature of the tube metal in lump number one, °F,
+TH = the average temperature of the tube metal in lump number one, °F,
 
-As = the heat transfer area between the primary salt and the tube walls in any tube
-metal lump, ft,
+AT = the heat transfer area between the primary salt and the tube walls in any tube
+metal lump, F’r2,
 
-hic = the overall heat transfer coefficient between the secondary salt and the tube
-walls in the primary heat exchanger, Btu/ft*=sec—°F (this is a variable in the
+hTC = the overall heat transfer coefficient between the secondary salt and the tube
+walls in the primary heat exchanger, B’ru/f’rz-sec—"F (this is a variable in the
 equation),
 
-Tes = the secondary salt temperature at the outlet of secondary salt lump three, °F.
+TC3 = the secondary salt temperature at the outlet of secondary salt lump three, °F.
 
 The heat balance equations for the secondary salt in the primary heat exchanger
 
@@ -1478,44 +1472,46 @@ are the following:
 
 dT
 
-cl
-M Coc dt FeCocTein - SL ¥ hrcA - Ty) i
+cl l
+Mccpc dt Fccpc(Tcin - Tcl) ¥ thAc(TfZ - Tcl) i
 
  
 and
 
-Te
+Tc
 
-i!
-
-il
+I
 
 25
 
- 
-
- 
-
- 
-
 dT
-¢ pc dt - Facer - T. * hrcA Tio - Tr i
-dT 5
-c pc dr - FeCocTe2 - Td + hehe Th - Td i
-dT
-4 FC MT. -T)+h AT -T.J);
-c pc dt ¢ pc c3 c4 Tc ctl cd
 
-one=fourth the total secondary salt mass in the primary heat exchanger, lb,
-the heat capacity of the secondary salt, Btu/lb-°F,
+ 
+
+ 
+
+ 
+
+c2 _ _ )
+
+Coc a7 FeCoclTer ~ Tl F AT - Ty
+ch3
+
+¢ pc df - Fccpc(TCZ - Tc3) * thAc(Tﬂ - Tc3) ‘
+ch4
+
+M<;Cpc at Fccpc(TCB - Tc4) * thAc(Tﬂ - Tc3) ‘
+
+one=fourth the total secondary salt mass in the primary heat exchanger, b,
+the heat capacity of the secondary salt, Btu/Ib-°F,
 th
 
-the temperature of the secondary salt at the outlet of the i’ secondary salt lump,
-°F,
+the temperature of the secondary salt at the outlet of the i secondary salt lump,
+OF,
 the mass flow rate of the secondary salt in the primary heat exchanger, Ib/sec
 (this is a variable),
 the secondary salt temperature as it enters the primary heat exchanger, °F,
-one-fourth the total heat transfer area between the secondary salt and the primary
+one~fourth the total heat transfer area between the secondary salt and the primary
 
 2
 heat exchanger tubes, ft,
@@ -1531,76 +1527,94 @@ are as follows:
 
  
 
-dar .
+dT .
 ci _ _ _
-MSc dt FeCocleti-1) Tei! * hehe Te)
+Mcicpc: dt Fccpc[Tc(i-]) Tci] ¥ thAc(T’ri Tci)
 and
 dT
-c(i+l) ]
-ci pc dt - FeCoclTei TG+1)’ * hreAc Ty Te) !
+c(i+l) )
+ci pc dt - Fccpc[Tci Tc(i+l)] ¥ thAc(Tfi Tci) !
 where
-i = 1 when { =2, and i =3 when |=1,
-M.; = one-fourth the secondary salt mass in the primary heat exchanger, Ib,
-Coc = the heat capacity of the secondary salt, Btu/lb~°F,
-Fe = secondary salt mass flow rate in the primary heat exchanger, Ib/sec (this is a
+i = 1 when | =2, and i =3 when j=1,
+Mci = one~fourth the secondary salt mass in the primary heat exchanger, b,
+Cpc = the heat capacity of the secondary salt, Btu/lb~°F,
+FC = secondary salt mass flow rate in the primary heat exchanger, Ib/sec (this is a
 variable in the simulation),
-T.; = average secondary salt temperature in the Hh lump, °F,
-A. = one-fourth the total heat transfer area between the secondary salt and the tube
+Tci = average secondary salt temperature in the ith lump, °F,
+Ac = one-fourth the total heat transfer area between the secondary salt and the tube
 
-walls in the primary heat exchanger, #2,
+walls in the primary heat exchanger, ﬁz.
 
 The development of the computer equations for the primary heat exchanger is shown
 in Appendix A.
 
 The patching diagram for the old analog computer is shown in Fig. 4.
-4399 ¥
-
-“LiCat-Ty
-
-0
-
-Fig. 4.
-
-a ow
-
-Patching Schematics for the Old Analog Computer.
-
- 
-
-0 a
+( “ o AY " D aF (
 
 ORNL DWG. 72-5793
 
-Of. OFS
-
-= Thee
-
-ENS
-
-+s gm)
-
+   
+  
+ 
  
 
- 
+LA L. Ee
 
-Ny
 N
 
+  
  
+   
+
+ 
+
+18y
+-4’
+
+4389 :-ij
+
+=T
+
+13 oy s RS
+
+St
+
+     
+    
+  
+ 
+    
+
+~Thes
+
+Vg et s
+ot . m)
+
+< Cant-TY
+
+Fig. 4. Patching Schematics for the Old Analog Computer.
+
+ 
+
+Le
+
+et e 1 TR T TA
 
  
 28
 
 4.2.5 System Controllers
 
+ 
+
 Probably the most important thing to be considered in the automatic control of the
 system is'that of avoiding freezing of the primary or secondary salt. Of course, the steam
-conditions at the turbine throttle must also be closely controlled. Previous studies” have
+conditions at the turbine throttle must also be closely controlled. Previous sfudie.-s4 have
 shown that it is impossible to realize both of the above objectives without adding auxiliary
 devices to the system. Two possible solutions have been suggested. One is to add a sec-
 ondary salt bypass line and mixing valve around the primary heat exchanger so that a con-
 trolled portion of the secondary salt can be bypassed while the steam temperature at the
-throttle is controlled. The other proposed scheme is to use the salt system as it is and to
+throttle is controlled. The other proposed scheme is to use the salt sysfem as it is and to
 allow the steam temperature to change freely in the steam generator and then attemperate
 it to the desired temperature for the turbine.
 
@@ -1608,30 +1622,33 @@ In this simulation, the steam attemperation scheme was assumed.
 
 Three controllers were incorporated into the simulation.
 
-4.2.5.1 Reactor Outlet Temperature Controller
+4.2.5.1 Reactor QOutlet Temperature Controller
 
  
 
-This controller was essentially the same as that described by W. H. Sides, Jr., in
-ORNL-TM-3102. The reactor outlet temperature set point, To SET r WO proportional
+This controller was essenfially the same as that described by W. H. Sides, Jr., in
+ORNL-TM-3102.4 The reactor outlet temperature set point, Tro SET ¢ Was proportional
 
 to the plant load demand. The set point equation was the following:
 
-To SET = 250 P demand +1050,
+Tr = 250 P
+
+o SET demand T 1090
 
 where P is the fraction of full load demand.
 demand
 
-Since the scaled variablesare P and T. , where P = 0.08P and T = —+ T
-s ros $ ros 20 ro’
+Since the scaled variablesare P and T, where P = 0.08P and T = - T
+S ros s ros 20 ro’
 
 the scaled equation is:
 29
 
 = 0.15625 P + 52.50 .
 
-T
-ros SET S demand
+Sdemand
+
+Tos SET
 
 The reactor power level set point was proportional to the difference between the
 outlet temperature set point and the measured reactor inlet temperature. The scaled
@@ -1640,42 +1657,43 @@ equation is as follows:
 
 P = 6.4(T
 
-s SET Ting
+s SET Teing -
 
-ros SET fins
+ros SET ' fins
 
 A reactor power level error was obtained by taking the difference between the
-power set point value and the measured value (from neutron flux). The resulting equation
+power sef point value and the measured value (from neutron flux). The resulting equation
 is
 
-¢ = Po =P opr
+e:Ps_PsSET'
 
 This power level error, ¢, was the input signal to a control rod servo described
 
-by the second order transfer function:
+by the second order fransfer function:
 
-Gu? _0(5)
+Gw2 _0(5)
 
-T(S) = - 7
-52 + 2SwS + ow? «(s)
+52 + 2SwS + w2 e(s) 1
 
  
 
+1) =
+
 where G is the controller gain, w is the bandwidth, S is the damping factor, and 0(S)
-is the Laplace transform of the servo output, do_/dt .
+is the Laplace transform of the servo output, dpc/df .
 
 In this simulation, the bandwidth was 5 Hz and the damping factor was 0.5. The
-gain of the controller, G, was such that for |e] = 14 of full power, the control rod
+gain of the controller, G, was such that for |e| = 1% of full power, the control rod
 
 reactivity change rate was about 0.01%/sec; that is,
 30
 
 dp
 
-C —_—
-ar = 0.01%/sec ’
+c —
+_CTi'__ = 0.0l%/sec ’
 
-where °. is the control reactivity.
+where P. is the control reactivity.
 For power level errors in excess of 1% of full power, the rate of change of reactivity
 was limited to 0.01%/sec.
 
@@ -1684,7 +1702,7 @@ was limited to 0.01%/sec.
  
 
 The secondary salt flow rate controller forced the flow rate to follow the load demand
-in a programmed manner. The programmed flow rate is that required to prevent the salt sys=-
+in a programmed manner. The programmed flow rate is that required to prevent the salt sys-
 tems from approaching their respective freezing points. The program was deduced from a
 series of steady state calculations performed by W. H. Sides, Jr.
 
@@ -1716,9 +1734,9 @@ dP
 
 P) = —
 
-GP ser ~P) = or
+G Pser ~P) = or
 
-The gain, Gy , was such that a pressure error of 1% of design point pressure would
+The gain, Gp , was such that a pressure error of 1% of design point pressure would
 cause the inlet pressure to be changed at a rate of 3.6 psi/sec.
 The controllers were simulated on the old analog computer. The wiring schematics
 
@@ -1727,20 +1745,6 @@ are shown in Fig. 5.
 
 ORNL DWG. 72-5792
 
-MITER
-
-  
-  
-
-.
-— §
-fexiot gs
-R Fso0!
-
- 
-
- 
-  
  
 
  
@@ -1749,43 +1753,41 @@ R Fso0!
 
  
 
- 
+DEMAND
+
+POT +Pﬂ DEriauh
 
  
 
+%
+—MOV-.———_./Q?;?——
+e
++
+
  
 
-+R 5250
-* . {gd 00
-/o1 \ +ioov
-LC
-fives ser Thus)
-— mmm mm —- |
-8ooo 5625
-(32) , REACTOR OUTLET TEME CONTROLLER
-up I ee rm ee
-Fioovo one
-©»
-DEMAND a +R oeranp
-PoT .
-+isod Oo %
-=100V-6——¢ oor
-~.000 O S
-+ioov Ol
 GENERATOR
-canine POWER DEMAND Tor
-~ 0001 G +toov
-~1o0ow 0 (@23 O Fem Tm mm mmm mmm mm mm = re em cr mm _— — — = —
-|
-hmmm mm mmm - 56 ).8750
+OEAD AV POWER DEMAND ToR
 
-  
+~OQ2) g + wioov
+~léow @ @ O et T m m — — e — = e e e - e e — = = —
 
-VELOQLITY
+- s5ec. SALT
+
+ 
+
+ 
+
+     
+
+VELOQITY
 FRACTION
 
-TRACK - HOLD
+TRACK- HOLD
 
+7
+- 100\1.—-——(0%0\"3772
+N4
 STEAM PRESSURE CONTROLLER
 
 Fig. 5. Patching Schematics for the Simulation of the System Controllers.
@@ -1794,14 +1796,14 @@ Fig. 5. Patching Schematics for the Simulation of the System Controllers.
 5. RESULTS OF SIMULATION EXERCISES
 
 The severity of the transients that can be run on this simulation model is somewhat
-limited by the nature of the steam generator model (the calculational time step is 0.5
+[imited by the nature of the steam generator model (the calculational time step is 0.5
 sec).
 
 The transients were run in order to determine the system response times, the rates
 of change of temperatures, and whether the salt temperatures approached the freezing
 points.
 
-The conditions and results for the transients that were run were as follows:
+The conditions and results for the fransients that were run were as follows:
 
 1. Steady State Part Loads
 
@@ -1810,7 +1812,7 @@ variables when operating at various fractions of full load. The system controlle
 in operation as the load demand was changed from one level to another.
 
 The load demand was changed by changing the turbine throttle opening. The area
-of the throttle opening was changed in increments of 10% of design point throttle area.
+of the throttle opening was changed in increments of 10% of design poinf throttle area.
 The range of throttle openings covered was from the design point opening down to 30%
 of design point opening. The percentage of throttle area turned out to be very nearly
 the same as the percentage of load for each case.
@@ -1824,7 +1826,25 @@ It is evident that the temperatures in both salt systems are well above their re
 tive freezing points (930°F for the primary salt and 725°F for the secondary salt).
 34
 
-ORNL-DWG 72-3832
+ORNL~-DWG 72-3832
+
+ 
+
+1300 , l | } I
+
+—~PRIMARY SALT AT
+REACTOR OUTLET
+
+1200 — \.L\
+q __SECONDARY SALT
+
+AT STEAM
+
+1100 ~+ T GENERATOR INLET
+//
+
+‘ PRIMARY SALT AT
+— T R B REACTOR INLET
 
  
 
@@ -1858,6 +1878,14 @@ ORNL-DWG 72-3832
 
  
 
+   
+
+TEMPERATURE (°F)
+
+ 
+
+    
+
  
 
  
@@ -1876,29 +1904,14 @@ ORNL-DWG 72-3832
 
  
 
- 
+1000 -STEAM AT THROTTLE | i
+! _~SECONDARY SALT AT
+/ STEAM GENERATOR OUTLET
+900 i e e ————]——
+800 | . '
 
- 
-
- 
-
-1300 i i | I
-~ PRIMARY SALT AT
-« SECONDARY SALT
-o 00 — AT STEAM
-1 — !
-¥ —— — GENERATOR INLET
-D mmm
-2 PRIMARY SALT AT
-I tl REACTOR INLET
-$ Team AT i f
-fu pr SALT AT
-STEAM GENERATOR OUTLET
-900 — - |
-00 LL
-100 90 60 50 40 30 20 10 0
-
-THROTTLE AREA (% of design point area)
+100 30 80 70 60 50 40 30 20 10 c
+THROTTLE AREA (% of design point areg)
 
 Fig. 6. Temperatures in the MSBR System for Part Load Operation.
 35
@@ -1907,7 +1920,7 @@ Fig. 6. Temperatures in the MSBR System for Part Load Operation.
 
 A number of fast changes in load demand were run in order to observe the resulting
 system response. The rates of change of the system temperatures were of interest. The
-secondary salt temperature at the steam generator outlet changed at a rate of approxi-
+secondary salt temperature at the steam generafor outlet changed at a rate of approxi-
 mately 4.5°F/sec for the case when the load demand was ramped from full load to 40%
 full load in 1-2/3 sec. The results of the case where the load demand was ramped from
 100% to 40% in 3 sec are shown in Fig. 7.
@@ -1926,50 +1939,53 @@ fission power from full power to 75% power is shown in Fig. 9.
 
 5. Changes in Reactivity
 
-As a rough approximation of inserting two safety rods (each worth ~1.5% in 8k/k),
-~3% 8k/k was ramped in in 15 sec. The results are shown in Fig. 10.
+As a rough approximation of inserting two safety rods (each worth =1.5% in 6k/k),
+~3% sk/k was ramped in in 15 sec. The results are shown in Fig. 10.
 
 As a rough approximation of a fuel addition accident, +0.2% tk/k was ramped in in
 
-1.5 sec. The results are shown in Fig. 11.
-36
+1.5 sec. The results are shown in Fig. 11,
+Fig. 7.
+40% in 3 sec.
+
+ 
+
+ 
+
+36
 
 ORNL-DWG 72-3834
 
  
 
- 
-
-       
+      
+    
    
-   
- 
-
  
 
 1250
-e REACTOR POWER
+2 REACTOR POWER
 z
 =
 0
-TT 1500
+T 1500
 PRIMARY SALT AT
 REACTOR OUTLET
 1000
-1300 -
+1300 L ,
 PRIMARY SALT AT
 - REACTOR INLET
-800 |
-© TARTS GRAPHIC CONTROLS CORPORATION BUFFALD, NEW YORK
+800 |-
+E m GRAPHIC CONTRDLS CORPORATIHON BUFFALD, NEW YORK L
 e 1400 SECONDARY SALT AT
-Ww STEAM GENERATOR ~~
-> INLET —
-5
+W 'STEAM GENERATOR -
+e INLET =
+<1
 a
-w
+W)
 o
-2
-- 900
+us.l
+£ 900
 950 SECONDARY SALT AT
 STEAM GENERATOR
 OUTLET
@@ -1978,198 +1994,206 @@ OUTLET
 STEAM AT THROTTLE -
 1 880
 125
-uo
-© z : +
-EQ SECONDARY SALT VELOCITY
-ud
-£5
-ww
+W o
+© =z ' : ; =
+Ee SECONDARY SALT VELOCITY
+m -
+g5
+w wv
 a w
-oo
+o
 0
 0 20 40 60 80
 TIME (sec)
 
-Fig. 7. System Response to a Ramp Change in Load Demand from 100 to
-40% in 3 sec.
+System Response to a Ramp Change in Load Demand from 100 fo
 37
 
-ORNL-DWG 72-3835
-
-  
+ORNL-DWG 72~ 3835
 
  
 
-  
+ 
+
+ 
+
+ 
+
+ 
 
 1250
 _ REACTOR POWER
-LY
+QL
 =
 =
 0
-|
+]rﬁsoo
 PRIMARY SALT AT
-REACTOR OUTLET
+REACTOR OQUTLET
 1000
 1300
 PRIMARY SALT AT
 REACTOR INLET
-— 800 JR CHARTS] GRAPHIC CONTROLS CORPOR,
-u 1400 —T
-Ww SECONDARY SALT AT
-2 STEAM GENERATOR
-g INLET
-14
+_— 800 )TFFCTA‘IT!J GRAPHIC CONTROLS GO
+E- 1400 NG LHANTE LS CORPOR,
+I.&:J SECONDARY SALT AT
+o STEAM GENERATOR
+b INLET
+o
 w
 a
 =
-w 900
+'_uJ__ 300
 950
-
 SECONDARY SALT AT
 STEAM GENERATOR
-OUTLET
-
+QUTLET
 750
 1200
-
 STEAM AT THROTTLE
-
- 
-
-I~
-@
-Oo
-oO
-
-SECONDARY SALT VELOCITY
-
-PERCENT OF
-DESIGN POINT
-
+800
+- 125
+5z
+E &
+&3 SECONDARY SALT VELOCITY
+w m '
+e w .
+0]
 0 20 40
 TIME (sec)
 
 Fig. 8. System Response to a Ramp Change in Secondary Salt Flow Rate
 from 100 to 75% in 5 sec.
-Fig. 9.
-100 to 75%.
+38
 
-38
+ORNL~DWG 72~ 3836
 
-ORNL~DWG 72-3836
+L
 
-HEE HH
-
-     
-    
- 
-    
-     
-       
-   
-
- 
-
-    
-    
-   
-
- 
+'REACTOR POWER -
 
 1250
-REACTOR POWER
+
+ 
+  
+
+  
+     
+ 
+     
+     
+     
+   
+  
+
+ 
+
+ 
+ 
+
+    
+    
+   
+ 
+  
+
+ 
+
 =
-2
-s
+=
+3
 0
 1400
 PRIMARY SALT AT
 REACTOR OUTLET
 900
-1300
+1300 _
 PRIMARY SALT AT
 REACTOR INLET
 800
-E1400 SECONDARY SALT AT
-ww STEAM GENERATOR
-5 INLET
-f=
+L 1400 'SECONDARY SALT AT
+w 'STEAM GENERATOR
+S INLET
+=
 <
-x
-ul
-a
+o
+Ll
+Qa
 2
-LW 900
+T 900 |
 950 SECONDARY SALT AT
 - STEAM GENERATOR
-TOUTLET
+T OUTLET
 750
 1200
-“STEAM AT THROTTLE
+- STEAM AT THROTTLE
 1
-L800
+[ 800
 125
-52 _
-EQ SECONDARY SALT VELOCITY
-w
-25
-ww
-a wi
-e 0
+L2 ‘ -
+£ 9 SECONDARY SALT VELOCITY
+wl
+¢&
+w v
+a i
+0
+
 0 20 40 60 80 100 120
 TIME (sec)
 
-System Response to a Step Change in Nuclear Fission Power from
- 
+Fig. 9. System Response to a Step Change in Nuclear Fission Power from
+100 to 75%.
+MW (e)
+
+e |
 
  
+
+ 
+
+800
+w 1400 bttt
+e
+Ll
+x
+>
+g
+o
+w
+s
+LFI_J 900
+950
+750
+1120
+| P
+125
+w
+o=z
+- O
+Z 0
+L
+g5
+W &
+o w
+o 0
+O 5 10 t5 20
+TIME (sec)
+Fig. 10.
+
+r—- 1400
 
 39
 
 1250
-=
-=
-=
-0
-T 1400
+
 900
 1300
-800
-ow 1400 Te
-&
-wl
-x
-2
-g
-1 4
-w
-3
-w 900
-950
-750
-1120
-Y 20
-125
-w
-Sz
-~ Oo
-z a
-£8
-Ww on
-o w
-
-Fig. 10.
-
-0 5 10 15 20
-TIME (sec)
 
  
 
  
 
-ORNL-DWG 72-3837
+ORNL-DWG 72- 3837
 
 REACTOR POWER
 
@@ -2184,29 +2208,34 @@ STEAM GENERATOR
 INLET
 
 SECONDARY SALT AT
-STEAM GENERATOR
-OUTLET
+
+* STEAM GENERATOR
+
+QUTLET
 
 STEAM AT THROTTLE
 
 SECONDARY SALT VELOCITY
 
-System Response to Insertion of Two Safety Rods.
-40
+System Response fo Insertion of Two Safety Rods.
+Fig. 11.
 
-ORNL~DWG 72-3838
+40
 
-3125
-3 - IT
-> : REACTOR POWER
-z
-0
-1400
-I
+ORNL-DWG 72~3838
 
-PRIMARY SALT AT:
+o L , 401 3
+= '~ REACTOR POWER"
+3 | “RES e
 
-_ REACTOR OUTLET
+J;Jl
+>
+o
+o
+
+PRIMARY SALT AT
+
+_REACTOR QUTLET
 
 900
 
@@ -2214,14 +2243,6 @@ _ REACTOR OUTLET
 PRIMARY SALT AT
 REACTOR INLET
 
-   
-
- 
-
-800
-
-1400 i SECONDARY SALT AT
-
  
 
  
@@ -2260,7 +2281,31 @@ REACTOR INLET
 
  
 
+800 !- - -
+w1400 |1 [ 7| SECONDARY SALT AT
+; q 1 | { STEAM GENERATOR
+x 1 T INLET N
+E I % [ ni |
+g SRR 44 -
+ul L¥ T T
+n- | - 4 - . L
+& 900 WL A EPEFELT L] L
+N 950, . . . .| SECONDARY SALT AT
+
+¢ =111 STEAM GENERATOR
+
+L Ll OUTLET
+
+i i o i
+
+-+ ]
+
  
+
+ 
+
+750 -+
+1120 — -
 
  
 
@@ -2312,152 +2357,95 @@ REACTOR INLET
 
  
 
-T i.
-°. te bt fe
-o J I [7] STEAM GENERATOR
-@ HTT INLET 1
-2 REED — Ly
-< LT 1
-Ww | “T] -
-Eon
-Wo 900 ft} ERNE.
-950 ; + : - | SECONDARY SALT AT
-FF TT STEAM GENERATOR
-lL 4 OUTLET
-HTT
-Nig TT ETT I -
-750 LTE TED
-I
-1120 0 ob pp EL EL
-Ca ——t r — 1 4
-TO TIT
-FHT =H HEH
-1 | STEAM AT THROTTLE -
-THAR TOT
-1. Spr +] rt
-125 Cob
-sz —
-= LL
-© i
-3 a [ FT +
-or
-oh
-Ct
-oO 0 rl
-0 20 40 60 80
+ 
+
+ 
+
+ 
+
+ 
+
+PERCENT OF
+DESIGN POINT
+
+ 
+
+ 
+
+ 
+
+ 
+
 TIME (sec)
 
-Fig. 11. System Response to a Ramp addition of 0.2% sk/k in |.5 sec.
+System Response to a Ramp addition of 0.2% sk/k in I.5 sec.
 41
 
 6. Uncontrolled Increasing Load Demand
 An uncontrolled load demand accident was simulated by increasing the load demand
 from 30% load to full load at a rate of 40% full load per minute (ten times normal rate).
 
-The results are shown in Fig. 12.
+The results are shown in Fig. 12,
 42
 
 ORNL-DWG 72-3839
 
-1250 |
-
- 
-
- 
-
-A
-A
-\
-i.
-BE
--
-\
-
-MW (e)
-2
-\
-
-\
-—
-3
-po]
-m
+1250 'F——l* L
+Ll { 1411 1T T
+L]——r"”}’ rwd W ],T T4t
 
 CTOR POWER
+] ‘ L 4 -} Ft Lo+ +-1 4
+«,,T 4 1 ¢ 4
+
+T 1400 | a4l _J_w. - ’J\FH' P e
+
+= PRIMARY SALT AT . }__“ |
+REACTOR OUTLET
+
+o R AT
+1300 P e T _ LD *}—L 7“;
+
+j 4_, D» s PRIMARY SALT AT | | | ||
+i REACTOR INLET
 
  
 
  
 
-| AHHH
-1400 | | Hit
-. . 44d —1 | 11 Seba
-
-1] PRIMARY SALT AT |
+ 
 
  
 
-|
-|
+<
+
+MW (e)
 !
-|
-|
 
- 
+{
 
- 
+\
 
- 
+A
 
- 
+o\
 
- 
+e
+\
+\
+\
+\
+3
+h:U
 
- 
+—+m
 
- 
+]
 
- 
+. L
 
- 
-
- 
-
-REACTOR OUTLET |
-
-SE - ——d 4 gee I + Ld
-Lh | Li] iB
-900 LH 144
-1300] | - Lili 1]
-
-=
-1] | |] PRIMARY SALT AT
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-REACTOR INLET
+r
+L P
 
  
 
@@ -2485,34 +2473,97 @@ REACTOR INLET
 
  
 
-nin
-
  
-
-BG RECORDING CHARTS] GuapHIC CONTHOUS CORPORANON BUFFALO, NtW YO)
-
-1400, yp I | |] J SECONDARY SALT AT | |
-'
-
-L
-
-| STEAM GENERATOR
 
  
 
  
 
-LLL] 1
-ITTY hi Cnn
+—
 
-FH
+ 
 
-[— fo 4d poof
-900
-950 | | i |
+ 
 
-ebb I
-] STEAM GENERATOR
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+T T T T
+woﬂﬁ#ﬁﬁﬂi&EﬂWkﬂmmmm
+
+Y400 1 1 4 11| L] l-]l.| L SECONDARY SALT AT [ | | |
+: l | STEAM GENERATOR
+
+ 
+
+iiiiiiii
+
+ 
+
+ 
 
  
 
@@ -2527,6 +2578,9 @@ ebb I
  
 
 TEMPERATURE (°F)
+|
+|
+1
 
  
 
@@ -2534,37 +2588,13 @@ TEMPERATURE (°F)
 
  
 
-QUTLET
+      
 
  
 
- 
-
-  
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-  
-
-750 1 To hl : TT17 [I | mT )
-oo LLL 4 Ld
-Tei o | | STEAM AT THROTTLE
-
-Sl ere |
-TIT
-
-- | i TT
-soo HI HHL HH LEE
+950 | >'W __+ ] VVSECONDARY SALT AT'V7_ mﬁjj a8
+P STEAM GENERATOR
+T TLT OUTLET
 
  
 
@@ -2584,7 +2614,9 @@ soo HI HHL HH LEE
 
  
 
- 
+._;EhLLL_ _%ﬁ:__
+
+T
 
  
 
@@ -2598,11 +2630,22 @@ soo HI HHL HH LEE
 
  
 
- 
+o N
+__L_; T
 
  
 
  
+
+o0
+o
+o
+
+|
+
+i
+
+T
 
  
 
@@ -2668,36 +2711,45 @@ soo HI HHL HH LEE
 
  
 
-125 | I A A - 1
-u TIT TT]
-oz daar ai Tad 4a01 FH] JT TTT ITT iT]
-E Q I . —1-F TL Pol
-W > TTT LFA Ts CONDARY SALT VELOCITY] TT
-x9 +11 Ll dl CL ee
-uw 0 ! ; L co .
-ou ee ped aod REE. 41 Ll nl dof hdd bg
-o QO r I Pood i r i !
-fi ani |
+ 
 
-0 20 40 60 80 100 120 140 160
+ 
+
+ 
+
+ 
+
+4 _*m—‘ At e b 4 de -} L.t
+L b
+o= L .:m_:tﬁ |1 /Hf R
+E 8 . e Tl Popodobop gl
+3 = 1 SECONDARY SALT VELOCITY T T 717
+;2 HHE R e
+o ul g L ool
+O J ‘ ! : ; C ;
+e ! | ‘ L
+
+60 80 10 120 140 160
 TIME (sec)
 
-Fig. 12. System Response fo a Ramp Change in Load Demand from 30 to
-1004 Load at a Rate of 40% of Full Load per min.
+Fig. 12. System Response to a Ramp Change in Load Demand from 30 to
+1004, Load at a Rate of 40%of Full Load per min.
 43
 
 References
 
-Robertson, R. C., et al., Conceptual Design of a Single-Fluid Molten Salt Breeder
+Robertson, R. C., etal., Conceptual Design of a Single-Fluid Molten Salt Breeder
 
  
 
 Reactor, ORNL=-4541 (June 1971).
-Sanathanan, C. K., and Sandberg, A. A., University of lilinois, Chicago, Ill.,
+Sanathanan, C. K., and Sandberg, A. A., University of lllinois, Chicago, IlI.,
 
 and Clark, F. H., Burke, O. W., and Stone, R. S., ORNL, Transient Analysis
 
-and Design Evaluation of a Once~Through Steam Generator with the Aid of a
+ 
+
+and Design Evaluation of a Once~-Through Steam Generator with the Aid of a
 
  
 
@@ -2705,22 +2757,30 @@ Hybrid Computer.
 MacPhee, J., The Kinetics of Circulating Fuel Reactors, Nucl. Sci. Eng. 4,
 588-97 (1958).
 
-Sides, W. H., Jr., Control Studies of a 1000-Mw{e) MSBR, ORNL-TM=-2927
+Sides, W. H., Jr., Control Studies of a 1000-Mw{e) MSBR, ORNL-TM-2927
 
  
 
 May 1970).
-Sides, W. H., Jr., MSBR Control Studies: Analog Simulation Program, ORNL=-
+
+Sides, W. H., Jr., MSBR Control Studies: Analog Simulation Program, ORNL-
+
+ 
+
 TM=3102 (May 1971).
 
 Sides, W. H., Jr., MSR-70-56, August 21, 1970.
 44
 
 7. APPENDIX
+
 7.1 A: Development of Computer Model
+
 7.1.1 The All-Analog Model
 
-The all~analog model represents the nuclear reactor, the primary heat exchanger,
+ 
+
+The all-analog model represents the nuclear reactor, the primary heat exchanger,
 and the interconnecting piping. The primary, or fuel, salt flows at a constant rate; and
 the secondary, or coolant, salt flows at a variable rate. The heat transfer coefficient
 between the primary heat exchanger tubes and the secondary salt was considered to be
@@ -2728,133 +2788,137 @@ proportional to the secondary salt mass flow rate raised to the .6 power. The pi
 lag for the primary salt between the reactor and the primary heat exchanger is 2.124 sec.
 The same time lag was used for the return flow to the reactor.
 
-The reactor kinetics mode! has two weighted groups of delayed neutrons.
+The reactor kinetics model has two weighted groups of delayed neutrons.
 
 7.1.1.1 Nuclear Kinetics Model
 
  
 
-dP _ (op -B) .
-a CT PMG LG
+&P _ (-8
+
+ar T P+7\]C + A.C
+
+17 oo i
 
  
 
  
 
-dc, 8 C “MT
-Lode -L st cl-n)
-IF C7 Cm 7 7 ] Poi
-Cc Cc
-“AAT
-dc. 8 C 2}
-2 Po Se _
-= TP NG Tr Gl)
-
-‘ Cc Cc
+dC] B] C] e_x]T!
+—a—r—z-}\——P"'?\.]C]""r'i' T C](f"'rl)r
+c c
+-AAT
+E—B—Z-P-xc _Eg+e ZIC(’r-'T)
+dt A 272 T T 2 l
 45
 
 Using the values listed in Tables 1 and 2 and Fig. 1, the above equations become:
 
-dP _ so 0.00264
-dr ~ 0.00038 © 0.00036 © * 0-02446C; + 0.2245C, ;
+ 
 
-Po 2.777 x 10%p - 7.333p + 0.02446C, + 0.2245C, ;
+P _ 0.00264 .
+& ~ 50005 P " oooosz P+ 0-02446C, + 0.2245C, ;
 
-dt
-dC -(.02446)(6.05)
-1 0.00102 ] e
-oF 7 0.00038 | 00%MC) 5m Opt gm Gl)
-dC
+& = 2777 x 10%P - 7.333 + 0.02446C, + 0.2245C, ;
 
-—! = 2.8333 - 0.30456C, + 0.2416C {t = 7) ;
+ar
+dc ~(.02446)(6.05)
+1 0.00102 1 e .
+ot T 0.00036 | " 0-02446C; - 3= €+ ————— C it - 7)) ;
+dc
+
+— = 2.8333P - 0.30456C, + 0.2416C,(t - T) ;
 
 (0.2245)(6.05)
 
-2 _ 0.00162 ; _ Cd e_ - 1)
+2 _0.00162 ] e oy
+ot © 0.00038 ¢ 02450, g Gt ——m—— Gt - 1) ;
+dC,
 
-——= = 4.,5P - 0.50455C, + 0.07204C, (t - Tp) i
+- = 4,5p - 0.50455c2 + 0.07204C2(i' - 'rl) .
 
 Use P = 1000 MW(e) at steady state, design point and calculate the design point
 
-values for C and C, . At steady state, design point:
+values for C] and C2 . At steady state, design point:
 
 dC
-—- = 0 = 2.8333(1000) - 0.30456C, (0) + 0.2416C, (0) ’
+— = 0 = 2.8333(1000) - 0.30456C, (0) + 0.2416C,(0) ,
 
-since, at steady state, c,() = C, - ™) ©) .
+since, at steady state, C](O) = C](i' - 'rl) ) .
 
-c,0 = 45,000 MW .
-46
+C](O) = 45,000 MW .
+ 
+
+46
 Likewise:
-—= = 0 = 4.5(1000) - 0.50455C,,(0) + 0.07204C,, (0) ;
+—= = 0 = 4.5(1000) - 0.50455c2(0) + o.o7204c2(0) ;
 
-C,0 = 10,404 MW .
-Since we do not expect to use the model to go fo power levels very much exceeding
+C,(0) = 10,404 MW .
 
-1000 MW(e), we shall use the calculated values of C,© and C,(0) as indicators for
+Since we do not expect to use the model to go to power levels very much exceeding
+1000 MW(e), we shall use the calculated values of C](O) and C2(0) as indicators for
 
-purposes of magnitude scaling CG and GC, . Let
+purposes of magnitude scaling C] and C2 . Let
 
-_ 5
-max.) ~ 1 x 10° MW ,
-C = 2x 10% MW
-2(max.) ’
+~ 5
+I(max.) ~ 1 x 100 MW ,
+C = 2% 10% MW
+2(max.) !
 and
 P = 1250 MW .
-(max. )
+(max.)
 
-The corresponding machine variables are (107c), (5 x 10-c,), and (.08P) respectively.
+The corresponding machine variables are (]O_SC]), (5 x 10—3C2), and (.08P) respectively.
 
 Write the magnitude scaled nuclear kinetics equations with the time scale equal to
 
-3 3
+real system time. Let C, = IO_SC] ' C25 = 5x 10-3
 
-real system time. Let Cis = 10 C, , Cy, = 5x10 C, , and Pe = .08P.
+s C,, and P = .08P.
 
 dP 3
-— = 2.777 x 10%P, - 7.333P + (.08)(0.02446) (10%), + (.08)(.2249)(10) )
+5 = 2.777 x 103pPs - 7.333P_+ (.08)(0.02446)(103)C]S + (--———-———-—-——-—'08)('2_,?45)(10 e
 dP
 
-s 3 _ .
-a = 2.777 x 10 oP 7.333P + 1.957C, + 3.592C, ;
+_S = 2.777 x 10%P - 7.333P + 1.957C, + 3.592C., ;
 
-2
+2 7
 47
 
-dC 3
-
  
 
  
 
- 
+dC -3
+1s _ (2.8333)(10 %) .
 
-Is _ (2.8333)(107), _
-GC og — PF, -0.30456C, + 0.2416 C, (t = 7) ;
-dC,
-5 = 0-0354P_ - 0.30456C, + 0.2416C, (+ - 7) ;
-dc -3
+i - 08 ,PS 0.30456C]s + 0.2416 C]s(f - ’Tl) ;
 
-2s (4.5)(5 x 10°)
-5 = rs P. = 0.5046C, + 0.07204C, (+ = 7) ;
-Cos
+ch]S
+
+= 0.0354PS - 0.30456C]S + 0.24]6C]S(1‘ - ‘Tl) ;
 
  
 
-0.2813P_ - 0.5046C oT 0.07204C, (t - T) ;
+dC -3
+25 _ (4.5)(5 x 107) |
+5 " 08 Ps - 0.5046C2s + 0.07204C25(’r - Tl) ;
 
-2
+ 
 
-Calculate J the reactivity required to offset the effect of the delayed neutrons
+0.2813P - 0.5046C,, + 0.07204C. (+ - 1) .
+s 2s 2s I
+
+Calculate I the reactivity required to offset the effect of the delayed neutrons
 
 lost in the loop external to the core, for design point steady state operation.
 
-€ = 0 = 2.777 x 10% (1000) - 7.333(1000) + 0.02446(45, 000)
+ac.’.? =0 = 2.777 x lOspo(IOOO) ~ 7.333(1000) + 0.02446(45,000)
 
 + 0.2245(10, 404) ;
 
 p = 0.001403 .
-oO
+o
 
 Temperature Coefficients of Reactivity
 
@@ -2862,117 +2926,100 @@ Temperature Coefficients of Reactivity
 
 There are two reactor core zones with vastly different power densities. Zone 1
 produces 79% of the total fission power while zone 2 produces 15% of the total fission power.
-The remaining 6% of the fission power is produced in the annulus, plenums, etc. These
+The remaining 6% of the fission power is produced in the annulus, plenums, efc. These
 are very low power density regions that are not included in the simulation model; there-
-fore, their contributions to the temperature coefficient of reactivity are relatively unim=
+fore, their contributions to the temperature coefficient of reactivity are relatively unim-
 
-portant and they will be ignored in the simulation. The average temperature to be used in
+portant and they will be ignored in the simulation. The average femperature to be used in
 48
 
 determining the effective reactivity change due to core temperature changes shall be a
-
-weighted average of the average temperatures of the various regions. As an approxima-
-
-tion, the weighting factor for a given region shall be proportional to the fraction of total
-
+weighted average of the average temperatures of the various regions. As an approxima- -
+tion, the weighting factor for a given region shall be proportional to the fraction of tofal
 fission power produced in that region.
-The equation for the fuel salt weighted average temperature, Te
+
+The equation for the fuel salt weighted average temperature, Tf avg. ’ is as
 
 follows:
+T., +1T,
+_fl 2 = )
+Tt avg. (——————2 )(.79) + @15 5
 
-If
+= (Tfls + szs)(.395) + Tf3s(']5) :
 
-T., +T,
-f1 2 =
-Ts avg. [foe] (.79) + (Te (.15) ;
+favg. s
 
-= (Te + Teo J(-399) + Tea (15) .
-
-f avg. s
-
-The fuel salt weighted average temperature at design point, steady state, T; a
+The fuel salt weighted average temperature at design point, steady state, Tf avg(o) ,
 
 is calculated as follows:
 
-T.0) +T., (0
-0) fls f2s
+{Tfls(o) * TfZS(O
 
 )
-Tt ave. 5 J com + T5,(0)1(20)(. 15) ;
+© = 5 J(zo)(.m + (T, 0120)(.15) ;
 
-> + 62.11
-2
+TF avg.
 
-(20)(.79) + (58.8)(20)(. 15) ;
+_ (55.49 + 62.11
+N
 
-T (0) = 929 + 176.4 = 1105.4°F .
+) (20)(.79) + (58.8)(20)(.15) ;
+
+T 0) = 929 + 176.4 = 1105.4°F .
 f avg.
 
-is as
-
-sO
-
-The equation for calculating the reactivity change as a result of fuel salt temperature
+The equation for calculating the reactivity change as a result of fuel salt femperature
 
 changes is as follows:
 
-= [T (0) Je 7
+= [T (O)]Q’f ’
 
-Pt favg. Tt avg.
+Pt favg. Tfavg.
 49
+where o = the temperature coefficient of reactivity for the fuel salt, (3K/K)/°F .
 
-where a = the temperature coefficient of reactivity for the fuel salt, (3K/K)/°F .
+— -— — -5 .
+op = (T, ova. 1105.4)(-1.789 x 10 °) ;
 
+—_ - - -5 .
+F (Tfavg. S 55.27)(-1.789 x 10 “)(20) ;
+oo = (T - 55.27)(-3.578 x 1074
+f favg. s | | ’
 For the graphite:
-
-I
-
-0. = (T - 1105.4)(-1.789 x 107) ;
-f f avg.
-
-0. = (T - 55.27)(-1.789 x 107)(20) ;
-f favg. s
-
-op = (1, - 55.27)(-3.578 x 107%) |
-avg. s
-
-T+ 72
-0) = |-L——2Z| (.79) + T3019) ;
-
-g avg. 2
-
-T av. JO) = Tots + Tyo (399) + 0.15T 5 ;
-T 0) = (56.28 + 62.9)(.395) + 0.15(59.19) ;
+Tgl + ng
+Tg C!Vg.(o) = "-—-f————— (79) + T93(15) ;
+Tg avg. S(0) = (Tgls + Tng)('395) + 0. 15T935 ;
+0) = (56.28 + 62.9)(.395) + 0.15(59.19) ;
 g avg. s
 T (0) = 47.08 + 8.88 = 55.96 .
 g avg.
+pg - |:Tg avg. - Tg avg.(o)]ag i
+pg - l:Tg avg. s Tg avg. s(o)]ag i
 
-Pq = LS avg. - T avg. Oleg i
+- 55.96)(1.305555 x 10"°)(20) ;
 
-Pg - 1, avg. s - 5 avg. sO) Ja i
+o
+i
 
-p= (1 - 55.96)(1.305555 x 10™)(20) ;
-
-e] g avg. s
--4
-p = (T - 55.96)(2.611 x 10 7) .
-
+(T
 g g avg. s
+
+. _ -4
+0y = (T g, s = 559602611 x 107) .
 50
 The scaled equations are:
 
-110%.) = (T - 55.27)(-3.578) ;
-g.s
+[]O4pf] -1 _ 55.27)(-3.578) ;
+g. s
 
-f av
+fav
 
-I
+1
 —
-—
+-
 
-[10%] CT 55.96)(2.611) .
-
-g av
+r10% 1 - 55.96)(2.611) .
+g g avg. s
 
 The chosen time scaling was such that 20 sec of computer time was equivalent to
 
@@ -2980,100 +3027,103 @@ The chosen time scaling was such that 20 sec of computer time was equivalent to
 
 The resulting machine equations are the following:
 
-3
+dP 3 3
+s _ 2.777 x 10 P+ 2.777 x 10 oP 7.333 P4 1.957 c. o+ 3.592
 
-dp 3
-«2.777 x 10 2.777 x 10°, _ 7.333 1.957 3.592
-= C20 op Pt Tf mT PTT Cs tt 20 Cas
+= - T Pors 70 <" st C1s T ©
 
-where T = 20%.
+2s !
+
+where 7 = 20t .
 
 dP
 
-~~ = 138.850 P+ 138.850P =~ 0.3667P + 0.0979C, + 0.1796C, .
-dr os 5 s 1s 2s
+—3 = 138.85 P + 138.850P - 0.3667P + 0.0979C, + 0.1796C,, .
+dr o s 5 5 1s 2s
 
 Likewise:
 
-dC,
+dC]S
 
 dr
 
  
 
-= 0.00177P_ - 0.0152C, + 0.01208C, (t - Ty) ;
+= 0.00177P - 0.0152C. + 0.01208C. (t+ - T,) ;
+S ]S ]S |
 
-dC,
+dC25
 
-dt
+dv
 
  
 
-= 0.014065P =- 0.02523C., + 0.0036C, (t - T,) .
+= 0.014065P - 0.02523C, + 0.0036C., (t - T,) .
 s 2s 2s |
 51
 
 7.1.1.2 The Reactor Core Heat Transfer Model
 
- 
-
 7.1.1.2.1 Graphite Heat Transfer Equations
 
- 
-
-dT _,
-
-9 = T -—
-My1Cog Tat = Piglet = Tg) * KgiP
+dT
+gl _ =
+Mg]cpg = hngg](TH Tg]) + KglP ,
 
 where P is in Btu/sec.
 
-1 MW(1) = 948.6667 Btu/sec .
+1 MW(t) = 948.6667 Btu/sec .
 
-Since the plant efficiency is such that 2250 MW() results in 1000 MW (e),
+Since the plant efficiency is such that 2250 MW(t) results in 1000 MW (e),
 
-1 MW(e) = 2.25 MW(1) = 2.25(948. 6667) Btu/sec = 2134.5 Btu/sec .
+1 MW(e) = 2.25 MW(t) = 2.25(948.6667) Btu/sec = 2134.5 Btu/sec .
 
 In the above equation, if we express P in terms of MW(e), we have:
 
-dT he A
+Tt _Mlgl e o, 2145,
+dt ~M.C_ V1T gV TM € "ol f
+gl pg gl "pg
+K = 0.032933 ;
+
+gl
+
+To1 _ (0.29589(15,089) & _, , (2134.5)(0.032933) ,
+3t~ = (106, 106.5)(0.42) “'f1 (108, 106.5)0.42) © *
+
+dT
+dt
+
+1“9.
+
+= 0.09983(T., - T ,) + 0.001577P .
+f1 gl
+
+Let Ps = 0.08P and Tis = Ti/ZO .
+
+ols _ _ 001577 .
+= 09983y - T )+ Goytony B
 
  
 
-gl _ fggl = 2134.5 .
-TMC Me = Ty) * Wa CT _Rgit
-91 pg
-K, = 0.032933 ;
-gl
-dT31  (0.29583)(15,039) Foo1 + 2134.590.032983)
-3 = (106.106.5042 V1 ~ Tor) * 108.106.5042) ©
+©Q
+o
+I
 
-dT
-
-_gl _ To
-3 0.09983(T, To + 0.001577P .
-
-Let P = 0.08P and Te = T./20 .
-
-_gls _ . .001577
-3 = 09983 - T 0) + Goytoey Bs i
-dts
-
-= 0.09983(T, - To1s + 0.000986P_
+0.09983('THS - Tg]s) + 0.000986PS :
 52
 
-Let computer time, T, equal 20%.
+Let computer time, 7, equal 20t .
 
  
 
 dT
-gls _ 0.09983 _ 0.000986 ,
-dr =~ 20 Tey, Tots ¥ 20 Ps !
+gls _ 0.09983 i 0.000986 ,
+dr =~ 20 (Tf]s Tg]s) ¥ 20 Ps !
 
 dT
 
-—92 = 0.00499(T., ~T ,) + 0.0000493P .
-dr fls gls s
+—92° = 0.00499(T.. ~ T .) + 0.0000493P .
+dt fls ~ gls s
 
 In a like manner:
 
@@ -3082,345 +3132,273 @@ In a like manner:
  
 
 dT
-g2s _ CO Pp.
-Ir 0.00499(T, Ty2) + 0.0000493P ;
-dT 3, _
-pantie 0.00861(T - Tyas + 0.00004155P .
+g2s _ T P .
+Ir 0'00499(Tf25 ngs) + 0'0000493‘5 ;
+dTg3s _
+3 = 0.0086](TF3S - TgSs) + 0.0()004'155|:’s .
 
 7.1.1.2.2 Fuel Salt Equations Describing the Generation and Transfer of Heat in the
 Reactor Core
 
  
 
-Core Zone 1. ==
+Core Zone 1.--
 
-i _ _
-MerCor ar = F1Cof Thin ~ Tr) * hear = T
+a7, ~
+MerCor g = Fi%etThn ~ i
 
-of dt 1 pt PK
+——
 
-ff !
+theAny = Ty) + KgP
+
+f
 
 where
 
 P is expressed in Btu/sec (thermal),
 
-Mg = 1/4 fuel mass in core zone 1 = 58,074/4 1b = 14,518.5 Ib,
+Mf] = 1/4 fuel mass in core zone 1 = 58,074/4 b = 14,518.5 Ib,
 
-Fo = fuel salt mass flow rate in core zone 1 = 58,074 1b/2.71 sec = 21,430 Ib/sec,
-Ag = 1/4 of core zone 1 heat transfer area = 30,077/4 ft = 7519.25 #2,
+F] = fuel salt mass flow rate in core zone 1 = 58,074 1b/2.71 sec = 21,430 Ib/sec,
+Ac; = 1/4of core zone 1 heat transfer area = 30,077/4 H2 = 7519.25 fi2,
 
-Ke; = 0.1781.
+K., = 0.1781.
 
-f1
+fl
 53
 
-THo_ 2130 op, 029589051925 5, (178)@14.5) |
-a T4518.5 hin © 0 T (14,518.5)0.32) Vg ~ 'n) * 112, 578.90.520) ©
+dTer 21430
+
+_ (0.29583)(7519. 25) (.1781)(2134.5) p
+dt 14518.5
+
+(T 04,518.500.328) U1 ~ ) " 4518 50,328
+
+ 
+
+ 
+
+ 
+
+- T+
+
+fin
 
 where P is expressed in MW(e).
 
 The unscaled equation is:
-— = LA476(T - To) + 0.4729(T , = T;) + 0.080815P .
+—_— = ].476(Tﬁn - TF]) + 0.4729(1'91 - Tf]) + 0.080815P .
 
 Allowing temperature maximums of 2000°F and a power maximum of 1250 MW(e),
 
-we have magnitude scaled variables of T./20 ond .08P . Let Tes = T./20 and P = .08P.
+we have magnitude scaled variables of Ti/20 and .08P . Let Tis = Ti/20 and PS = .08P.
 
 dT
-fs = _ 7 .080815
-= = 1.476(T, Tp) + 0.4729(T Te) + BOL08) P
+s - =, -080815
+g = A0 Ty 0472901 40 - T ) + ooyiog) s
 
  
 
 The magnitude scaled equation is:
 
-de =
-= 14760 = Ty) + 0.472901
+dTﬂs
+t
 
  
 
-1s" Tord) + 0.0505P_ .
+= ]'476(Tfin:s - Tﬂs) + 0.4729(T - Tﬂs) + 0.0505Ps .
+
+gls
 
 Let machine time = twenty fimes real system time;
 
 T = 20t .
-Tey,
+54
 
-dr
-
- 
-
-1.476
-20 (Tins
-
-54
+dT
+fls  1.476 =
+dr 20 (Tfins - Tﬂs) *
 
 0.4729
 
-.0505
-20 P
+0505
+20 °
 
-Teg) (Tote = Tad +720 Fs
+(T -T..) + L
+
+gls ~ 'fls
+
+ 
 
  
 
 The time and magnitude scaled equation is:
 
-dT,
-
-Ss _ - — _ —
-rralis 0.0738(T. Tad) + 0.0236(T Tod) + 0.002525P_ .
+—_—— = 0'0738(Tfins = Tﬂs) + 0'0236(Tgls - Tfls) + 0.002525Ps .
 
 The equations for the other three fuel salt lumps in core zone 1 are developed in
 
 a like manner and the resulting equations are as follows:
 
-Tots
-
-dt
-
-dTeo1s
-dr
+ 
 
  
 
-f2s
-dt
+ 
 
  
 
-f2s
-dr
+ 
 
  
 
-dTe02s
+dT
 
-dt
+fOls _ = _ _ T A
+T = 1.476(THS TFOls) + 0'4729(Tgls Tf]s) + 0.0564PS ;
+ITeo1s - * -
 
- 
+I = 0'0738(Tﬂs - TfOls) + 0.0236(Tg]S - Tﬂs) + 0.00282PS ;
+dTFZs = =
 
-Te02s
+5 = ]'476(TF015 - Tf25) + 0.4729(T925 - Tf25) + 0.0564PS ;
+deZs = =
 
-dr
+= = 0'0738(Tf015 - TFZS) + 0.0236(T925 - TFZs) + 0.00282Ps ;
+deOZs = =
 
- 
+5 = ]'476(TF25 - Tf025) + 0.472‘5?(Tgzs - TFZS) + 0.014863PS ;
+dTFOZs = =
 
-H
-
-1
-
-i
-
-i
-
-1.476(T, -
-
-0. 0738(T,|
-
-1 A76(Te01
-
-0. 0738(T;y, S
-
-1 A76(T -
-
-0.0738(T -
-
-T,..) + 0.4729(T , =-T,,) + 0.0564P ;
-gls fls s
-
-fOls
-
-- Tots + 0.0236(T - Tel +0.00282P ;
-
-Teo) + 0.4729(T - Teo) + 0.0564P ;
-
-- Tool) + 0.0236(T -T
-
-£24) + 0.00282P ;
-
-) + 0.4729(T , - T.,) + 0.04863P ;
-g f2s s
-
-Tr02s 2%
-
-T...) + 0.0236(T
-
-£025 - Tool) + 0.002432P .
-
-92s
+I = 0'0738(Tf25 - TFOZs) + 0.0236(T925 - TF25) + 0.()02432PS .
 55
 
-Core Zone 2,--
+Core Zone 2, -~
 
-dT, a _
-M,C  —= = FaCot Tein -T.) + hia (Ty3 - Teg) + K
-
-£3 pf at £3 Pr
-
-f3
+MisCor ar = FaCThin ~ Tid) * PegPis(Tys = Teg) * KpaP o
 
 where P is expressed in Btu/sec (thermal),
 
-Mes
+ 
 
-Fy
-
-Ars
-Kes
-dT
-
-dt
-
-dls
-dt
-
-H
-
-1/2 fuel mass in core zone 2 = 1/2 x 61,428 |b = 30,714 Ib,
-
-Il
-
-fuel salt mass flow rate in core zone 2 = 61,428 Ib/12.5 sec = 4914.24 Ib/sec,
-
-1/2 heat transfer area in core zone 2 = 1/2 x 14206 2 = 7103 x
-
-0.0863.
-
-i
-
-it
-
-4914.24 C=, 0.29583)7103) + = , . (0.0863)(2134.5)
-= 30,714 hin ~ 65) G0, 71400328) 93 Td tori 3m) ©
-
-= 0.1600(T,. -T
-in
+Mf3 = 1/2 fuel mass in core zone 2 = 1/2 x 61,428 |b = 30,714 Ib,
+F3 = fuel salt mass flow rate in core zone 2 = 61,428 Ib/12.5 sec = 4914.24 Ib/sec,
+AFB = 1/2 heat transfer area in core zone 2 = 1/2 x 14206 th = 7103 f’r2,
+K\c3 = 0.0863.
+T3 4914.24 T T (0.29583)(7103) Ty =Ty 0.0863)(2134.5) ,,
+dt 30,714 'fin (30, 714) (. 324) (30774)(. 324) !
+dT. B 3
+5 - 0.1600(Tﬁn ~ TFS) + 0.2112(T93 - TFS) + 0.01851P .
 
 For the reason previously stated, use the magnitude scaled variables:
 
-T. = T./20 and P = .08P.
+T. = T./20 and P = .08P .
 is i s
 
  
 
  
 
-of
-fs = = 0.01851 _
-ar = 0-1600(Tg = Teg) + 0.210201 50 = Tea) + my 08) Ps
+f3s = =, 0.01851 .
+3 0.1600(Tﬁns TF3S) +o.2112(T93$ T * 20108 B P ;
+dfst =
+5 - 0.1600(TFins - Tf3s) + 0.2112(Tng - T ) +0.01157P_ ;
 
-dTes, = =
-
-Gr = 0-1600(Tg = Tp) + 0.201207 5 = Tp) + 0.01157;
-
-Tr = 20t .
+T = 20t .
  
 
  
 
-of
+JT
+£3s _ 0.1600 _ . 0.2112 ~ .. 0.01157 _
+= "0 Teins " Tead VT gz " i) T Fs
 
-3s _ 0.1600 _ 0.2112 0.01157 _ |
-a = 0 Thins "Tad V0 (gas “Trad TT Fs
-dTes = =
+deBs - -
 
-12 = 0.0080(T,  - Tyo) + 0.01056(T 5 = Tyg) + 0.000579,
+T = 0.0080(T,, - Tp) +0.01056(T 5 = Tpp) +0.000579, .
 
 The equations for the second half of fuel lump number 3 were developed in a like
 
 manner. The resulting equations were as follows:
 
-dT
+ 
 
  
 
-f03s _ _T = .
-5 = 0.1600(Te, Tos) + 0.2112(T 5 Tea) + 0.01136P_;
-Te03s -
+dTFO3s = =
 
-3 = 0.0080(T, - Te03 + 0.01056(T 3 = Tq) + 0.000568P
+o = o.usoo(ffas - TFOBs) + 0.21]2(Tg3s - Tfss) + 0.01]36Ps :
+dTeh3s _
+
+T = o.ooso(fﬂ,,S - TfOSs) + 0.01056(T935 - TF3S) + 0.000568PS i
 
 The temperature of the salt at the reactor core outlet can be calculated by weighting
+
 the outlet temperatures of the salt in zones 1 and 2 proportional to their respective mass
-
-flow rates.
-
-WF,
-
-weighting factor in zone |
-
-21,430 Ib/sec _ 21,430
 
  
 
-= 21,430 Ib/sec + 4914 [b/sec ~ 26,344 = 0.8135 .
-4914 lb/sec  _
-WFy = 28,344 b/sec ~ 0-186%
-Let Tr0s = Too! 20 = magnitude scaled temperature of the fuel salt at the reactor
+flow rates.
+WF] = weighting factor in zone |
+B 21,430 Ib/sec 21,430 _ 0.8135
+~ 21,430 Ib/sec + 4914 Ib/sec ~ 26,344 = ‘
+4914 lb/sec
+WFy) = %5348 Tb/sec - 01867 -
+Let TROs = TR0/20 = magnitude scaled temperature of the fuel salt at the reactor
 
 core outlet.
 57
 
-—
-1
-
-0.8135T,,, + 0.1865T
-
-RO f02 f03
-
-|
-
-T 0.8135T + 0.1865T
-
-ROs f02s f03s °
+TRO = 0’8]35Tf02 + 0.1865T]c03 ;
+TRDs = O.8]35TFOZS + 0.1865Tfoss .
 
 7.1.1.3 Piping Lag Equations
+
+ 
+
 The primary salt residence time in the piping between the reactor core and the
-primary heat exchanger inlet is 2.125 sec. The piping lag will be approximated
+primary heat exchanger inlet is 2. 125 sec. The piping lag will be approximated
 
 by a first order lag, indicating perfect mixing. The first order lag equation is as
 
+ 
+
 follows:
-I in 1
-a 775 Tro” Tin)
+dein ]
+& - 7715 Tro " Tain)
 The magnitude and time scaled equation is:
-Tins
-“dr 0.0235(Tp, - Ting
+deins
+— = 0.0235(TROS - Txins)
 
 The residence time in the piping carrying the primary salt from the primary heat
 exchanger to the reactor was considered to be the same as that in the opposite direction;
+
 namely, 2.125sec. The resulting first order lag equation is:
 
-dT; ins
-dr
+fins
+
+I - 0.0235(T
+
+f10s Tfins) .
 
  
-
-= 0.0235(T T.. ).
-
-f10s ~ fins
 58
 
 7.1.1.4 Primary Heat Exchanger Model
-
- 
 
 7.1.1.4.1 Primary Salt Equations
 
  
 
-dT
+f7 .
+Mf7cpf dt Fxcpf(Txin Tf7) ¥ hFpAFx(TH - Tf7) !
+_ N _ _ 11870 Ib .
+M‘(7 = MF8 = Mf9 = MF]O = 7 = 2967.51b ;
 
-Me7Cot ar F Cot Tin - Te) * heoAe Te - Te) i
-_ _ _ _ 11870 1b _ .
-Me = Mig = Meo = Mito = 7 = 2967.5 1b ;
+F = 11,070 Ib = 6594 lb/sec ;
 
-F = 1,070 kb = 6594 lb/sec ;
-
-xX 1.8 sec
-A, = 1100 62 oer 562
+X 1.8 sec
+A, = 100 62 o000 562
 fx 4
 
 The resistance to heat flow from the tubes into the primary salt was considered
@@ -3428,68 +3406,64 @@ The resistance to heat flow from the tubes into the primary salt was considered
 to be the film resistance plus 1/2 the tube wall resistance.
 
 2
-. . 1 2 oo _ hr=ft™=°F
-Film resistance = 3500 Btu/hr-ft =°F = 0.0002857 —p— A
-1 2 hr=ft2=°F
-Tube wall resistance = 3563 Btu/hr-ft~ =°F = 0.0002523 ———
-1/2 wall resistance = 0.000252 = 0.0001262 .
-Total resistance, R., = 0.0004119 .
+1 : — 1 2_0 - hl“"ﬂ' "'OF
+Film resistance = 3500 Bfu/hr=-ft" =°F = 0'0002857T .
+] 2 hr-f’r2-°F
+Tube wall resistance = 3963 Btu/hr=ft =°F = 0'0002523T
 
-Tl
+0.0002523
+
+5 = 0.0001262 .
+
+1/2 wall resistance
+
+Total resistance, RTI = 0.0004119 .
 59
 
-1 1
+1 1 _ 2_0
+hfp = —R-;]x %00 0.67438 btu/sec~ft" =°F .
 
-hee = RC, % 3600
+e 6594
 
-Tl
+i 2070 (7 (0.67438)(2762. 5)
+dt  ~ 2967.5 ‘'xin
 
-= 0.67438 btu/sec-ft2=°F .
+1) * “ooe7 3)( 328)
 
-de, 404 (0. 67438) (2762. 5)
-
-a = 5635 in TT tt Toe aa On CT)
-Use scaled variables T./20 .
-
-let T, = T./20.
-is i
-
-dT,
-
-dt
+) .
 
  
 
-= 2.222(T = Tp) + 1.938(T, -T) .
+(Tf] - Ty
+
+Use scaled variables TF/ZO .
+
+let T. = T./20.
+is i
+
+ 
+
+2.222(Txins - Tf7s) + 1.938(THS - Tf7s) .
 
 The machine timed equation is:
 
  
 
 dT
+75  2.222 ] 1.938 ] .
+T = 50 Tins ~ Te7e T o0 Ty ™ T i
 
-7s _ 2.222 ] UE
-dr ~~ 20 Tins Tez) + 20 (Ts Tez) ’
-dT,
-ar = 0.11(T . - Te) + -0969(T, | - Ter) .
+aT,
+
+- oama, -1 )+ 0969, - T)
 
 The following equations are developed using the same approach:
 
-dT £8
+1
 
-dt
+2.222(Tf7 - TFS) + 1.938(TH - Tf7) ;
 
-i
-
-2.222(T - Teo) + 1.938(T | - To) ;
-
-Teg,
-
-dt
-
- 
-
-= 2.222(T - Teg) + 1.938(T - Te) ;
+= 2°222(TF75 - TF85) + 1.938(THS -~ Tf75) ;
 60
 
  
@@ -3502,30 +3476,25 @@ dt
 
  
 
+) .
+
  
 
-dTeq,
+dTF8s
 
-B= 017, = Tg) + 0.0969(T, = Tp)
-dT
-= 2.2201 - Tp) + 1.938(T,, - Too)
-Teo,
+= = O‘””(Tﬁs - Tf85) + 0'0%9(Tﬂs - Tf7s) ;
+—— = 2.222(Tg - To) + 1.938(T, - Teo)
+de9s
+dTto,
 
-5 = 2:22(Tg = Tyo) + 1.938(T = To)
-Teo,
+g = 0-V(Tg = T ) +0.0969(T, = Teg) 5
+Ter0
+dTHOS
 
-= = 0. 111(T eg - Teo) + 0.0969(T - Teo) ;
-Teo
+dt = 2.222(1.{:95 = Tf]OS) + ]-938(1-1_25 - TF9S) ’
+aTe10s
 
-10 = 2.2001 - Tp) + 1.988(T,, = Typ)
-Tt 10s
-
-5 = 22220 = Tyo) + 1.938(T, = Teo)
-dT
-
-f10s _ _ _
-
-[0 = 0.11111, = Topp) + 0-099, = Tro)
+g = 01T = Teyg) +0.0969( = T,
 
 7.1.1.4.2 Tube Wall Heat Transfer
 
@@ -3533,66 +3502,66 @@ f10s _ _ _
 
 dT
 
-M_C tl
+M.C. —1
 
-Cra = hey Tw) ~hpArTy - T
+T°T ot hprT(TW " Ty) mhp ATy - T
 
-t1 3 i
+t1
 
-16,020 lb _
-Mp = == = 8,010 b .
+16,0206
+My = =5 = 8,010 b .
 61
 
-Ct = 0.129 Btu/lb=°F.
+CT = 0.129 Btu/Ib-°F.
 
-he, = 0.67438 (previous calculation).
-11,050 ft 2
+hfp = 0.67438 (previous calculation).
+11,050 £ 2
 
-Ag = — = 5525 ft".
+AT = -—'—2—-—-———- = 5525 ft .
 
 The resistance to heat flow from the tube walls to the secondary salt is comprised of
 the film resistance and one half the tube wall resistance.
 
-Since the secondary salt flow rate is variable, h_ will be variable also. In this
+Since the secondary salt flow rate is variable, h_  will be variable also. In this
 
-Tc
+Te
 
-model, h. is proportional to the secondary salt mass flow rate raised to the .6 power.
+model, h.. is proportional to the secondary salt mass flow rate raised to the .6 power.
 
-Tc
+Te
 
 For design point, steady state conditions,
 
-1 1 1
-he = Pre,0 = . 1 ~ .0004695 + .0001262 ~ .0005957
-2730 3963 x 2
+] ] ]
 
  
 
  
 
-1678.7 Btu/hr=f=° F
-
-1
-
-I
-
-0.4663 Btu/sec—ft2-°F .
+ 
 
  
+
+hie = hre0 = 3 . ~ 70004695 + .0001262 0005957
+2130 = 3963 x 2
+2 4
+= 1678.7 Btu/hr-ft“ -°F
+2 ,
+= 0.4663 Btu/sec-ft -°F .
+th '
+The variable used in the equations shall be 0.8 ; .
+Te,O
+Iy (.67438)(5525)
 
  
 
 h
-The variable used in the equations shall be oc i; Tc | .
-Te, 0
-dT h
-t1  _ (.67438)(5525) MT -T.) - (. 4663)(5525) 8 Tc MT. -T.)
-dt ~ T(8010)(1 129) ‘'f7 t1 (8010)(. 129)(.8) |" he. 0 tl 3
+oy (.4663)(5525) Te .
+= = ®oo® Ve T T T 0012909 'ShTC ; T - T3
+
 dT h
 
-#1 Tc
-= = 3.606(T, - LAY - 3.1166 s | (Ty, - To) ;
+1 Tc
 62
 
  
@@ -3613,254 +3582,299 @@ dT h
 
  
 
-CLI h,
-_ = - c - .
-o— = 3.606(T, = T,) - 3.1166 |.8 (Toe = Teas i
-Tc, O
-Tis hye
-= = 0.1803(T, - LER - 0.1558 8 (Tog - T3) .
-Te, 0
+ 
+
+dT h
+. HS _ - - __;r_g__ _ .
+< = 3.606(T = T,) - 3.1166 |.8 ¢ :‘(THS T o)
+Tc, 0
+dTHs th
+T = 0.1803(T{:75 - T’r]s) - 0.1558 ;'Bh (THS - Tc35) .
+Te,0
 Similarly
 dT h
-2 _ _ Te _ .
-5 3.606(T, T,) 3.1166 E r (Ty T) ;
+2 _ _ Tc _ )
+— = 3.:.‘>06(T1c9 th) 3.1166 [.8 r }(sz Tc]) ;
 Te, 0
+dT h |
+t2s Te _ )
+T = 3'606(Tf9s - Tf25) 3.1166 [.Bh ](szs Tcls) ;
+Tc, 0
 dT h
-t2s  _ _ Tc _ .
-- = 3.606(To - To) 3.1166 a: | Tq) ;
-Te, 0
-dT h
-2s _ _ _ Tc _
-7 = 0.1803(T, To) 0.1558 8+ (Tio Tad .
+t2s _ _ Tc _
+= = 0.1803(Tf9s Ti-2s) 0.1558 .8h (Tt25 Tcls) .
 Te, 0
 7.1.1.4.3 Secondary Salt Equations
-dT 4
-e1%pc dr FCocTein - Ty) * heheh - Tey) i
-cl 4
+ch]
+clcpc & I:c:cpc(Tcin - Tcl) ¥ thAc(sz - Tcl) i
+cl 4 |
 
-Since the secondary salt flow rate is a variable, F. and he will be variables.
+Since the secondary salt flow rate is a variable, Fc and th will be variables.
 
 For steady state, design point conditions,
-63
+and
 
-F =F = 1.78 x 10’ Ib/hr = 4944 Ib/sec ,
-c c,0
-and
-h, = = 0.4663 Btu/sec~ft>-°F
-Te Te, 0 ’ ’
-11050 ft 2
-A = —/—— = 2762.5 ft" .
-c 4
-
- 
-
-Feo
-
-Fo h
-The variables k a and E P Ie shall be used in the model.
-
-Te, 0
-
- 
-
- 
-
-c,0 e1%pc ’
-
-dT F AC F h A h
-cl c,0 pc gC (T ST) + Tc,0 ¢ 8 Tc (1
-dt “TM .C (08) |'°F cin cl M (.8) |" hie 0
-
- 
-
- 
-
- 
-
- 
-
-Ter wow | Te 0 oy Lasdere2s) | Pre oT)
-dt (8607)(.8) I Fe 0 cin cl (8607)(.360)(. 8) | hee 0 t2 ct” ’
-IT Fe bre
-pr = 0.7180 85 T.: - TY + 0.5197 8 T, - LY)
-
-c,0 Te, 0
-dT h
-
- 
-
- 
-
-It
-
- 
-
-c,0 Te, 0
-
-r
-
-F
-cls c Tc
-Tr ors F |e. - Tp) + 0.5197 i Ja - Td ;
-
-- LI ;
-64
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-dT; Fe hre |
-T— = 0.0359|.8¢ | eins -T_,) +0.0253{.8 0a - TJ
-| c,0 Tc, 0
-Similarly:
-dT, F. "re ]
-2 = 0.7180).8; (T= Tp) + 0.5197 |.8 (Ty, = Ty)
-c,0 Tc, 0 |
-dT 0, Fe hye
-<= = 0.7180|.8 7 (T 1 = Tp) *0.5197).8; (Tp = Top) i
-c,0 Te, 0
-dT», F. hre
-FT = 0.0359 |.8 ¢ (Tis - To) +0.0253|.8 (To, - Tq) ;
-c,0 Te, 0
-dT 4 F. Me
-<2 = 0.7180(.87 (1, = Tg) +0.5197.8¢ (Ty = Tq) i
-c,0 Tc, 0
-dT 5 Fe hie
-== = 0.71808 7 (T= T 5) + 0.5197 1.81 Ty = Tead
-c,0 Te, 0
-dT 5, F. hrc
-== = 0.0359 1.8 5 | (Tp = Tg) +0.0253).8 Ts = Teal
-c,0 Te, 0
-ar_, ~ OF, "Te
-A 0.7180].8 | (T 5 - T ) +0.517).8¢ (T, = Ti
-c,0 Te, 0
-dT 4s
-
+dT
+cl
 dt
 
  
 
-aT 4s
+dT
+cl
+dt
+
+ 
+
+ 
+
+dT
+cls
+dt
+
+ 
+
+ 
+
+63
+
+ 
+
+ 
+
+ 
+
+ 
+
+= 1.78 x 107 Ib/hr = 4944 Ib/sec ,
+
+Fc = F , 0
+th = th 0= 0.4663 Btu/sec—ff2—°F .
+2
+A= HOO0R oo 5042
+c 4
+Fc | th
+The variables {.8 . and [.8 A shall be used in the model.
+¢, 0 Tc,0
+_ Fc,,OCpc 8 Fc (T ST )+ th,OAc 8 th T =T ) ;
+M .C (.8) I'"F cin cl M .C (8 1'°h 2 cl” !
+cl “pc c,0 cl pe Te, 0
+_owomw T b asey@rezs) | e
+(8607)(.8) |' " F 0 cin cl (8607)(.360)(. 8} | th 0 2 cl” /
+Fc th
+= 0.7180 SF:-B- (TCin - Tcl) + 0.5197 .8hTC - (Ti'2 - Tcl) ;
+Fc th
+= 0.71801{.8 P (Tcins - Tc]s) + 0.5197 .sth - (szs - TC]S) ;
+ 
+
+ 
+
+ch2s
+dt
+
+ 
+
+chZs
+
+drt
+
+ 
+
+dT
+
+c3s
+
+df
+
+ 
+
+ch3s
 
 dr
 
  
 
-it
+ 
 
-Cc
-orm. Fo
+i\
 
-=
+i
 
-F
+i1
 
-F
+i
 
+0.7180 }.
+
+0.7180
+
+-8
+
+0.0359 {18
+
+0.7180
+
+0.7180
+
+0.0359
+
+0.7180}.
+
+o
+;
+%
+[
+
+.8
+
+8
+
+.8
+
+8
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Fc th |
+F J(Tcms - Tc]s) +0.0253).8 h J(TTZS - Tcls)
+c,O Te, 0
+th ]
+|= (T, +0.5197 .8 (T, =T )i
+c,0 Te,
++ 0.5197].8 - T, - ) ;
+Fc,O th 0 i2s cls
+F th
+(T )+002538 T, -T..);
+Fc,O th,O t2s cls
+hT
+: (T -T)+05i97 81 (T]-T3);
+c,0 Te,0) ©
+F th
+(T )+05197 T, -T.,);
+Fc,0 th,O tls c3s
+(T )+002538 T. -T.,);
+Fc,O th,O tls c3s
+F heo
+-T)+051978 (T ) ;
+F h c3
+Te, O
+
+<,
+
+o
+ch4s
+
+dt
+
+ 
+
+ch4s
+
+dr
+
+ 
+
+N
+
+il
+
+0.7180{.
+0.0359{.
+
+Fc
+8 ——
 c,0
 
 F
-Cc
-
-c,0
+g S
+c, 0
 
 65
 
-rs - T 4) + 0.517).
+}(Tc?)s - Tc4s) + 0.5197{.8
 
-Jin - T 4 + ous
+}(Tt35 ~ TC4S) + 0.0253{.8
 
  
 
  
 66
-7.2 B: Fortran Source Program for MSBR Steam Generator Simulation*
+7.2 B: Fortran Source Program for MSBR Steam Generator Simulation™
 
 7.2.1 Program
 
-Cc MSBR STEAM GENERAT@GR SIMULATION
-DIMENSI@N THETA(100),V( 100),T(100),P(100),WMU(100),CW(100),PR(100)
+C MSBR STEAM GENERAT@GR SIMULATION
+DIMENSION THETA(100),V(100),T(100),P(100),WMUG(100),CW(100),PR(100)
 
-¢ 1,8(100),D(100),RE(100),DK(100),THETAK(100),VK(100),C(100),HK(100)
-DIMENSI@N IX(100)
-DIMENSION PL(100),HL(100),VL({100),THETAL( 100)
+¢ 1,4(100),D(100),RE(100),DK(100),THETAK( 100),VK{100),C(100),HK(100)
+DIMENSION IX(100)
+DIMENSI@N PL(100),HL(100),VL{100),THETAL(100)
 COMMUN IR, IW
 IR=2
-IwW=5
+IW=5
 READ (IR,3000) N
-3000 FORMAT(15)
-CALL MSBR(N,THETA,V,T,P,WMU,CW,PR,H,D,RE,DK,THETAK,VK,C,HK, IX,PL,H
+3000 FORMAT(I5)
+CALL MSBR(N,THETA,V,T,P,WMU,CW,PR,H,D,RE,DK,THETAK,VK,C,HK, IX,PL,H8
 
-IL, VL, THETAL)
+IL, VL, THETAL )
 
 CALL EXIT
 END
-SUBRQUTINE MSBR(N,THETA,V,T,P,WMU,CW,PR,H,D,RE,DK,THETAK, VK,C,HK, I
+SUBR@UTINE MSBR(N,THETA,V,T,P,WMU,CW,PR,H,D,RE,DK, TEETAK,VK,C,HK, 1
 
-0 1X, PL, HL, VL , THETAL )
+0 1X,PL,HL, VL, THETAL )
 
 COMMPN IR, IW
-DIMENSIPN IaR(2) Iovizl Ionia)
+DIMENSIPN IAR(2),IDVE7),IDVI(4)
 DIMENSI@N THETA(N),V(N),T(N),P(N),WMU(N),CW(N),PR(N),H(N),D(N),RE(
 
 IN),DK(N),THETAK(N) ,VK(N),C(N),HK(N)
-DIMENSION IX(N)
+DIMENSIPN IX(N)
 DIMENSI@N PL(N),HL(N),VL(N),THETAL(N)
-DIMENSION TABH(30,6),TABD(120,6),TABT(120,6)
-DIMENSION TABMU (18,2), TABK( 18,2) ,TABPR( 18, 2)
-DIMENSI®N ILB(3),IDH(3),IVIHET(2),IDHl(2)
-DIMENSION IPUTA(4),IQUTV(4)
+DIMENSION TABH(30,6),TABD(120,6),TABT({20,6)
+DIMENSIGN TABMU(!8,2),TABK(18,2),TABPR(18,2)
+DIMENSI@N ILB(3),IDH(3),IVTHET(2),IDHl(2)
+DIMENSI@N IPUTA(4),IQUTV(4)
 CALL INITA(IE,O)
-CALL INMUX(I1E,O)
-CALL RUN( IE)
+CALL INMUX(IE,O)
+CALL RUN(IE;
 READ(IR,300) IT
-c M IS THE NO. OF ITERATIONS PER TIME STEP.
+C M IS THE N@. OF ITERATIPNS PER TIME STEP.
 
-READ(IR, 300) M
+READ(IR,300) M
 
-300 FORMAT(IS5)
-CALL TSCAL(IE,IT)
+300 FPRMAT(I5)
+CALL TSCAL{IE,IT)
 READ( IR, 105) DX,DT,PK,PKF
 
 105 FORMAT(2F6.2,2F10,5)
@@ -3870,254 +3884,256 @@ READ(IR, 106) HSF,SFH
 READ(IR, 107) IMDAC,IADH
 
 107 FPRMAT(216)
-READ (IR, 103) HK{,HK2,HK3,C@NI,RK!,THETLB,VLB
+READ (IR, 103) HKI,HKZ2,HK3,C@N!,RKl,THETLB,VLB
 
-103 FORMAT(7F10,2)
-READ( IR, 110) CFC@ON,SFV,RK2,SFVS
+103 FORMAT(7F10.2)
+READ( IR, 110) CFC@N, SFV,RK2,SFVS
 
-110 FORMAT (3F10,.2,F10.7)
-READ (IR,120) IADV
+110 FORMAT(3F10,2,F10.7)
+READ (IR, 120) IADV
 
-120 FORMAT(16)
+120 FORMAT(I16)
 READ (IR, 122) IRDAC,IMDACI
 
-122 PORMAT(218)
+122 PORMAT(218B)
 
-c READ IN TABLE VALUES,
+C READ IN TABLE VALUES,
 
-*See Sect. 7.2.2 for definition of variables,
+*See Sect. 7.2.2 for definition of variables.
 67
 
-READ{ IR. 101) TABD
-READ(IR, 101) TABT
-101 FORMAT(10F8,2)
-READ(IR, 100) TABH
-100 FORMAT(10OF8.2)
+READ[IR.lOA} TABD
+READ(IR, IOl) TABT
+101 FORMAT(1OF8,2)
+READ(IR, 10O) TABH
+100 FPRMAT(1OF8.2)
 READ(IR, 104) TABMU
 READ(IR, 104) TABK
 READ(IR, 104) TABPR
-104 FORMAT(1OF8.2)
-c READ IN TABLE LIMITS.
-READ {IR 102) TMINH,TMAXH ,DELTH , NTH, PMINH , PAAXH , DELPH , NPH
-READ (IR, 102) HMIND,HMAXD,DELHD,NHD,PMIND,PMAXD,DELPD,NPD
-READ (IR,102) TMINM,TMAXM,DELTM,NTM,PMINM,PMAXM,DELPM, NPM
-READ (IR,102) TMINK,TMAXK,DELTK,NTK,PMINK,PMAXK,DELPK,NPK
+104 FORMAT(10F8,2)
+C READ IN TABL& LIMITS,
+READ (IR,102) TMINH,TMAXH,DELTH,NTH,PMINH,PMAXH,DELPH,NPH
+READ (IR, 102) HMIND,HMAXD,DELKD,NHD,PMIND,PMAXD,DELPD,NPD
+READ (IR,102) TMINM,TMAXM,DELTM,NTM,PMINM,PMAXM,DELPM,NPM
+READ (IR, 102) TMINK,TMAXK,DELTK,NTK,PMINK,PMAXK,DELPK,NPK
 READ (IR,102) TMINP,TMAXP,DELTP,NTP,PMINP,PMAXP,DELPP,NPP
-READ (IR, 102) HMINT,HMAXT,DELTT,NTT,PMINT,PMAXT,DELPT, NPT
-102 FORMAT(3F8.2,16,3F8,.2,15)
-C READ INITIAL GUESSES F@R VALUES QF VARIABLES,
-READ( IR, 108) H
-108 FORMAT(1OF8,1)
-READ( IR, 108) P
+READ (IR, 102) HMINT,HMAXT,DELTT,NTT,PMINT,PMAXT,DELPT,NPT
+102 FORMAT(3F8.2,16,3F8,2,15)
+C READ INITIAL GUESSES F@PR VALUES @F VARIABLES,
+READ(IR,108) H
+108 FORMAT(1OF8,.1)
+READ(IR, 108) P
 READ(IR, 108) THETA
-READ(IR, 108) V
-C SET UP ADDRESSES FPR QUTPUTTING VALUES @F VARIABLES
-C FREM THE ANALGG C@MPUTER.
-READ(IR, 109) IBUTA
-109 PORMAT(416)
-C INITIALIZE COEFF, DEVICE SETTING ROUTINES.
+READ(IR, l0O8) V
+C SET UP ADDRESSES F@R @UTPUTTING VALUES @F VARIABLES
+C FROM THE ANAL@G C@MPUTER.
+READ(IR, 109) IPUTA
+109 FGRMAT(416)
+C INITIALIZE CPEFF. DEVICE SETTING RAUTINES.
 CALL ADDR( IADH, IADHD)
-CALL ADDR(IADV, IADVD)
-CALL PREBI(IADHD,IDH,3)
-CALL PREB2(IADHD,JDH1,2)
+CALL ADDR(IADV,IADVD)
+CALL PREBI|(IADHD,IDH,3)
+CALL PREB2(IADHD,JIDHI,2)
 CALL PREB3(IADVD,IDV,7)
-CALL PREB4(IADVD,IDV!},4)
+CALL PREB4{IADVD,IDV},4)
 C PUT ANALPG COMPUTER LEFT T@ RIGHT INTEGRAT@RS IN IC MODE.
 CALL SETWD(0,0)
 ALF=.5
-C KT IS THE TIME STEP C@UNT VARIABLE.
+c KT IS THE TIME STEP C@UNT VARIABLE.
 KT=0
-c START TIME STEP TIMER AT NEXT P SIGNAL PIP.
+C START TIME STEP TIMER AT NEXT P SIGNAL PIP,
 2003 CALL SETWD(0,48)
-KT=KT+1}
-C READ VALUES @F PLB,TLB,AND VS FROM ANAL@BG AMPLIFIERS,
-CALL ADDR(6220,IABl)
-CALL SCANH(IABl,ILB,3)
-C HAS TIME STEP TIMER COUNTER STARTED COUNTING?
-3005 IF(ITEST(I1E,O,13)) 3005,3005, 3006
-3006 PLB=ILB(1)
-TLB=ILB(2)%*1.E~l
+KT=KT+1
+c READ VALUES @F PLB,TLB,AND VS FROM ANAL@G AMPLIFIERS,
+CALL ADDR(6220,IABIl)
+CALL SCANH(IABI,ILB,3)
+C HAS TIME STEP TIMER CAUNTER STARTED COUNTING?
+3005 IF(ITEST(I1E,O,13)) 3005, 3005, 3006
+3006 PLB=ILB(l)
+TLB=ILB(2)%l.E~1]
 VS=ILB(3)*1.E~-4
-c READ THE THROTTLE SETTING AND THE SALT TEMP. AT THE RIGHT BOUNDARY
+c READ THE THROTTLE SETTING AND THE SALT TEMP. AT THE RIGHT B@UNDARY
 
 CALL ADDR(6262,IAB3)
-CALL SCANH(IAB3,IAR,2)
-c CHECK TLB AND PLB AGAINST THE RANGE QF TABH.
-IF (PLB.GE, PMINH, AND. PLB.LE, PMAXH . AND . TLB .GE, TMINH . AND . TLB . LE. TMAXH
+CALL SCANH(IAB3, IAR,2)
+C CHECK TLB AND PLB AGAINST THE RANGE OF TABH.
+IF ( PLB.GE, PMINH , AND, PLB,LE, PMAXH , AND . TLB .GE, TMINH . ANV . TLB . LE, TMAXH
 
-1) Ge To il
+1) Go TP 1l
 WRITE(IW, 10)
-10 FORMAT( IX, EITHER PLB @R TLB, ¥R BOTH, IS BUT OF RANGE OF TABH.’)
+10 FPORMAT(IX, "EITHER PLB @R TLB, YR BATH, IS @QUT OF RANGE @F TABH, )
 
-ST@P THE PROGRAM
-GO TA 99
-Cc GET VALUE OF H AT LEFT B@UNDARY, HLB, FRUM H(P,T), TABH.
-11 CALL TERP2(TABH,TLB,PLB,HLB,TMINH,TMAXH,DELTH, NTH, PMINK , PMAXH , DELP
-68
-
-1H, NPH)
-HLBS=(HLB~1100)%25,
-XY=HLBS-.5
-IDH(3)=IFIX (XY)
-HO=HK2#VS#*##*Q, 60
-GET DENSITY AT LEFT BOUNDARY, DLB, FROM D(P,H) TABL:, TABD,
-IF (PLB,GE, PMIND, AND,PLB.LE.PMAXD . AND .HLB ,GE .HMIND , AND .HLB .LE .HMAXD
-
-1) Go To 21
-WRITE (IW, 20) ,
-20 FYRMAT(1X, EITHER PLB @R HLB, @R BgTH, IS QUT OF RANGE gF TABL.')
-
-GO TO 99
-21 CALL TERP2(TABD,HLB,PLB,DLB,HMIND,HMAXD,DELHD, ND ,PMINUL, PMAXD, DELP
-
-\D,NPD)
-
-Cc CHECK RANGE QF VISCPSITY TABLE, TABMU, AND GET V1SCASITY VALUE AT
+ST@P THE PRUGRAM
+Ge T 99
+c GET VALUE @F H AT LEFT BOUNDARY, HLB, FRUM H(P,T), TABH.,
+i1 CALL TERP2(TABH,TLB,PLB,HLB,TMINH,TMAXH,DELTH,NTH, PMINH , PMAXH , DELP
+C
 
 C
 
-Cc
-Cc
+C
 
-LEFT BOUNDARY, WMULB,
-IF(PLB.GE,PMINM, AND, ,PLB.LE,PMAXM.AND ,TLB .,GE,TMINM, ANU ,TLB .LE, TMAXM
+68
 
-1) Go To 31
-WRITE( Iw, 30)
-30 FORMAT( 1X, ‘EITHER PLB PR TLB, OR BOTH, IS ¢UT UF RANGE @F TABMU.')
+ld,NPH)
+HLBS=(HLB~1100)#*25,
+XY=HLBS-,5
+IDH(3)=IFIX(XY)
+HO=HK2#VS*#*0, 60
+GET DENSITY AT LEFT BOUNDARY, DLB, FROM D(P,H) TABL:, TABD,
+IF(PLB,GE.PMIND,.AND.PLB.LE.PMAXD,.AND ,HLB ,GE,HMIND . AND .HLB . LE . HMAXD
 
-GY T@ 99
-31 CALL TERP2(TABMU,TLB,PLB,WMULB, TMINM,TMAXM,DELTM,NTM, PMINM, PMAXM,D
+1) Go To 21
+WRITE(IW,20) .
+20 FURMAT(1X, ‘EITHER PLB @R HLB, @R B@TH, IS @UT OF RANGE @F TABL.')
+
+GO TO 99
+21 CALL TERP2(TABD,HLB,PLB,DLB,HMIND,HMAXD,DELHD ,N4D, PMINU, PMAXD,DELP
+
+\D,NPD)
+
+CHECK RANGE: @F VISC@SITY TABLE, TABMU, AND GET VISCASITY VALUE AT
+LEFT BPUNDARY, WMULB,
+
+IF(PLB.GE.PMINM,AND ,PLB.LE.PMAXM.AND,TLB ,GE,TMINM, ANV ,TLB .LE, TMAXM
+
+1) Gé TP 31
+WRITE(Iw, 30)
+30 FPRMAT(1X, ‘EITHER PLB @R TLB, @R B@TH, IS ¢UT UF RANGE @F TABMU.')
+
+GY TP 99
+31 CALL TERP2(TABMU,TLB,PLB,WMULB,TMINM,TMAXM,DELTM,NTM, PMINM, PMAXM,D
 
 1 ELPM, NPM)
-IF (PLB, GE. PMINK, AND, PLB.LE, PMAXK.AND.TLB . GE. TMINK . AND , TLB , LE, TMAXK
+IF (PLB,.GE.PMINK,AND, PLB.LE, PMAXK, AND . TLB . GE. TMINK . AND , TLB .LE, TMAXK
 
-1) Gp TP 51
-WRITE(IW,40)
-40 FURMAT( 1X, EITHER PLB GR TLB, BR BOTH, IS PUT @F RANGE PF TABK.')
+1) Go Tp 51
+WRITE(IW,40) '
+40 FURMAT(|X, ‘EITHER PLB SR TLB, @R BOTH, IS OUT @F RANGE @F TABK.’)
 
-GP TP 99
-51 CALL TERP3(TABK,TABPR,TLB,PLB,CWLB,PRLB,TMINK,TMAXK,DELTK,NTK,PMIN
+GO TP 99
+51 CALL TERP3(TABKk,TABPR,TLB,PLB,CWLB,PRLB, TMINK,TMAXK,DELTK,NTK,PMIN
 
 1K, PMAXK, DELPK, NPK)
-SAVE VALURS QF P,H,V,AND THETA FOR NEXT TIME STEP CALCULATI@N.
-DY 33! Ik=1,N
-PL(IX)=P(IK)
+SAVE VALULS @F P,H,V,AND THETA FOR NEXT TIME STEP CALCULATI@N.
+DY 331 IK=1,N
+PL(IK)=p(IK}
 331 HL(IK)=H(IK)
-D6 401 LL=1,N
-VL(LL)=V(LL}
-40! THETAL(LL )=THETA(LL)
-KI IS ITERATIUN CPUNT VARIABLE.
-=0
+D@ 40! LL=1,N
+VL(LL)sv(LLS
+
+401 THETAL(LL )=THETA(LL)
+
+KI IS ITBERATIYN CPUNT VARIABLE.
+KI=0
 START ITERATI@N
 
-1000 KI=KI+|
+1000 KI=KIi+l|
 
 IF(KT~1) 66,66,67
-66 IF(KI-1) 67,65,67
+66 IF(KI~l) 67,65,67
 65 VLB=20,25
 
-C CALCULATE THE REYNOLDS N@. AT THE LEFT BBUNDARY,RELB,
-67 RELB=CYN | *DLB#*VLB/WMULB
+C CALCULATE THE REYNPLDS N@. AT THE LEFT BAUNDARY,RELB,
+67 RELB=CYN |*DLB#*VLB/WMULB
 
-Cc CALCULATE THE INSIDE FILM HEAT TRANSFER CQ@EFFICIENT AT THE LEFT B®
+C CALCULATE THE INSIDE FILM HEAT TRANSFER C@EFFICIENT .-AT THE LEFT B#@
 UNDARY,
 C HILB
 
-HILB=HK|*CWLB*RELB#*¥*0, 323%PRLB**0,613
-C CALCULATE THE @VERALL HEAT TRANSFER CYEFFICINT AT THE LEFT B@UNDAR
-Y,HTCLB.
+HILB=HK|*CWLB*RELB#*%0, 923¥PRLB¥**0,613
+C CALCULATE THE @VERALL HEAT TRANSFER COUEFFICINYT AT THE LEFT BOUNDLAR
+Y, HTCLB.
 
-HTCLB=HILB¥*H@*HK3/(HILB¥HQ+HILB*HK3+HA¥HK3)
-C CALCULATE THE COMPONENTS OF THE DERIVATIVE UF ENTHALPY AT THE LEF
+HTCLB=HILB*H@*HK3/(HILB*H@+HILB*HK3+HP¥HK3)
+c CALCULATE THE CPMPONENTS OF THE DERIVATIVE ¢F ENTHALPY AT THE LEF
 T BOUNDA
-C RY, DHILB AND DH2LB.
+C RY, DHILB AND DH2LB,
 
-IF (KT-1) 77,75,77
+IF(KT-1) 77,75,77
 75 PHLB=HLB
 69
 
-77 DHILB=25,%*(RKI*HTCLB/DLB*(THETLB-TLB )+{PHLB-1100, )/DT)/VLB
+77 DHILB=25,%*(RKI¥HTCLB/DLB*(THETLB-TLB )+{PHLB-1100, )/DT)/VLB
 
 IF(KI-M) 150,151,151
-151 PHLB=HLB
+
+151 PHLB=iLB
 
 150 DHILBS=DHILB
-XY=DH ILBS+,5
+XY=DHILBS+.5
 IDH(1)=IFIX(XY)
-DH2LB=-|.0/(VLB*DT)
-DH2LBS=DH2LB*].E4
-XY=DH2LBS-.5
+DH2LB=-|,.0/(VLB*DT)
+DH2LBS=DH2LB*| . E4
+XY=DH2LBS-,5
 IDH(2)=IFIX(XY)
 
-c SET H DERIVATIVE DACS WITH AN UPDATE CODE OF ZERU.
+c SET H DERIVATIVE DACS WITH AN UPDATE CODE @F ZERU.
 CALL DACU(IE, IMDAC,0)
 CALL DACU(IE,IADH,O)
 CALL SETBBI
-C PUT THE LEFT T@ RIGHT INTEGRATORS IN THE @P M@DE AND START
-C THE BCD COUNTER,
-CALL SETWD(O, 34)
-Do 15 1I=1,N
+c PUT THE LEFT T@ RIGHT INTEGRAT@RS IN THE P M@BDE ANL START
+C THE BCD C@UNTER,
+CALL SETWD(O,34)
+Do 15 I=1,N
 C CALCULATE P F@R PRESENT SPACE INCREMENT AND H DERIVATIVE F@R NEXT
 SPACE
 C INCREMENT WHILE ANAL@G IS INTEGRATING QVER THE PRESENT SPACE INCRE
-MENT.
+MENT,
 
-IF(P(I).GE.PMIND,AND.P(I).LE.PMAXD.AND.H(I).GE,HHIND AND. .H(I).LE.H
+IF(P(I).GE,PMIND,AND,P(I).LE.PMAXD ,AND.HK(1).GE . HMIND.AND . H(I).LE.H
 
-IMAXD) G8 T@ 61
+IMAXD) GB T#@ 61
 WRITE(IW,60) I,KT,KI
-60 FORMAT( 1X, EITHER P(I) @R H(I), OR B@TH, IS QUT OF RANGE OF TABD F
+60 FORMAT(IX, 'EITHER P(I) @R H(I), R B#TH, IS WUT OF RANGE @F TABD F
 
-eR I=',I4,°KT=',1I10,’KI=’,14)
+18R I=",I4, 'KT=’,Il0, 'KI=",61I4)
 WRITE(IW,8000) P(I),H(I)
 
-8000 FURMAT( IX, ‘P(1)=',F8.2,° H(I)=',F8.2)
+8000 FURMAT( X, "P(1)=",F8.2,° H(I)=",F8.2)
 
-Go Td 99
-61 CALL TERP3(TABD,TABT,H(I),P(I),D(I),T(I),HMINU,HMAXD,DELHD,NHD,PMI
+GO TY 99
+61 CALL TERP3(TABD,*tABT,H(I),P(I),D(I),T(I),HMINU,HMAXD,DELHD,NHD,PMI
 
-IND, PMAXD, DELPD, NPD)
-IF(P(I).GE.PMINM,AND,P(I1).LE.PMAXM.AND.T(1).GE,TMINM.AND,T(1).LE.T
+IND, PMAXD, DELPD,NPD)
+IF(P(I),GE,PMINM,AND,P(1).LE.PMAXM.AND.T(1).GE,TMINM.,AND ,T(X).LE,.T
 
-IMAXM) GB T@ 71
+IMAXM) G@ T@ 71
 WRITE(IW,70) I,KT,KI
-70 FORMAT(1X, "EITHER P(I) #R T(I), OR BOTH, IS QUT UF RANGE BF TABMU
-IFOR I=',14, KT=’,110, KI=‘,I4)
-GO T@ 99
-71 CALL TERP2(TABMU,T(I),P(I),WMU(I),TMINM,TMAXM,DELTM,NTM,P~INM,PMAX
+70 FORMAT(1X, ‘EITHER P(I) 8R T(I), @R B@TH, IS QUT ¢F RANGE @F TABMU
+IFBR I=",14, 'KT=’,110, KI=",61I4)
+GO TP 99
+71 CALL TERP2(TABMU,T(I),P(I),WMU(I),TMINM,TMAXM,DELTM,NTM,PxINM,PMAX
 
-IM, DELPM, NPM)
-RE(L)=CONI*D(L)*V(I)/WMU(I)
-IF(P(I).GE.PMINK,AND,P(I).LE,PMAXK,AND,T(1).GE.TMINK ANLU.T(I).LE.T
+IM,DELPM,NPM)
+RE(I)=CONLI*D(I)*V(I)/wWMU(I)
+IF(P(1).GE.PMINK,AND,P(I1).LE.PMAXK,AND,T(I).GE.TMINK,ANLV.T(I).LE,.T
 
-IMAXK) GB T@ 91
+IMAXK) GO T@ 91
 WRITE(IW,80) I,KT,KI
-80 FURMAT( 1X, ‘EITHER P(I) @R T(I), OR BYTH, IS gUT GF RANGE @F TABK F
+80 FURMAT(1xXx, ‘EITHER P(I) @R T(I), @R BUTH, IS @UT @F RANGE @F TABK F
 
-16R I=°,1I4,°KT=",1l0, KI=’, 14)
-Gp TY 99
-91 CALL TERP3(TABK,TABPR,T(I),P(I),CW(I),PR(I),TMINK, TMAXK,DELTK,NYK,
+18R I=’,I4,°KT=’,110,°KI=’,1I4)
+GO T® 99
+91 CALL TERP3(TABK,TABPR,T(I),P(I),CW(I),PR(I),TMINK,TMAXK,DELTK,N1K,
 
-I PMINK, PMAXK, DELPK, NPK)
-HI=HK|®CW(I)®RE(I)%%*, 923%pR(I)**,613
-HTC=HI*HA*HK3/ (HI*HO+HI*HK3+HP*HK3)
+1 PMINK , PMAXK, DELPK, NPK)
+HI=HK|®CW(I)®RE(I)**,923%pPR(I)**,6]3
+HTC=HI*HP*HK3/ (HI¥*HP+HI*HK3+HP*HK3)
 IF(KT-1) 93,92,93
-
 92 HK(I)=H(I)
-
 93 CONTINUE
-DH1=25,%*(RKI*ATC/D{I)*(THETA(I)~T(I))+(dK(I)-1100,)}/DT)/V(I)
-DH1S=DH |
-XY=DH1S+.5
-IDH1I(1)=IFIX(XY)
+DH1=25,*(RKI*ATC/D(I)*(THETA(I)-T(I))+(dK(I)-1100,)/DT)/V (1)
+DH 1 S=Dh |
+XY=DH|S+.5
+IDHi(1)=IFIX(XY)
 70
 
-DH2=-},0/(V(I)*DT)
-DH2S=DH2%*|, E4
+DH2==1,0/(V(I)*DT)
+DiE2S=DiH2%*], k4
 XY=DH2S-,5
-IDHI(2)=IFIX(XY)
-CALCULATE P{I)
+IDH{(2)=IFIX(XY)
+CALCULATE P(I)
 IF(I-1) 53,52,53
 
 52 IF(KT-1) 72,54,72
@@ -4145,247 +4161,261 @@ IF(I-1) 53,52,53
 
 201
 
-2 P(l)=-DLB*VLB*DX/PK¥*((V(1)-VLB)/DX+{VLB=VKLB)/DT+PKF*VL3 )+PLB
+2 P(1)=-DLB*VLB*DX/PK*((V(1)-VLB)/DX+(VLB=VKLB )/DT+PKF*VL3 )+PLB
 
-Go To 12
+Go T¢ 12
 
 3 IF(KT-1) 73,78,73
 
-VK(I~-1)=V(I-1)
-P(I)=-D{I-1)*V(I-1)*DX/PK¥((V(I)=-V(I-1))/DX+(V(I~1)-VK(I~-1))/DT+PK
+VK(I-{)=v(I-1)
+P(I)=—D(I-1)%*V(I-1)*DX/PK*((V(I)=V(I-1))/DX+(V{I~1)-VK(I-1))/DT+PK
 
 LF*V(I-1))+P(I-1)
 
-CHECK ANAL@G C@MPUTER F@R HOLD M@DE.
+CHECK ANAL®G C@MPUTER F@R HOLD MODE.
 IF(ITEST(IE,0,15)) 12,12,13
 
-CONTINUE
+CUNT INUE
 
-RESET CLEAR BIT ,BITI5.
+RESET CLEAR BIT ,BITIS.
 
 CALL SETWD(O, 34)
 
-READ ENTHALPY AT I‘TH X STATI@N.
+READ ENTHALPY AT I°TH X STATION.
 
 CALL ADDR(6223,IAB2)
 
-CALL SCANH(IAB2,IH,1)
+CALI, SCANH(IAB2,IH,1l)
 
-H(I)=1100,+1H%4,:-2
+H(I)=1100,+IH*4, k-2
 
-Ie(eau) 33,32,32
+IF&KI-M) 33,32,32
 
 HK(I)=H(I)
 
-CONT INUE
+CONTINUE
 
-SET COEFFICIENT DEVICES F#R NEXT SPACE INCREMENT,
+SET CAEFFICIENT DEVICES F@R NEXT SPACE INCREMENT,.
 
 CALL SETBB2
 
-PUT THE LEFT T@ RIGHT INTEGRATYRS 1N THE @P MODE.
+PUT THE LEPT T® RIGHT INTEGRAT¢RS 1N THE PP MODE,
 
 CALL SETWD(O, 35)
 
 CONTINUE
 
-GY TP ANALOAG IC MPDE ON THE LEFT T® RIGHT INTEGRATORS.
+G¢ TP ANALPG IC MPDE @N THE LEFT T® RIGHT INTEGRATQRS,
 CALL SETWD(O, 32)
 
-GET WEIGHTED VALUES FPR H AND P,
+GET WEIGHTED VALUES FOR H AND P,
 
-DP 333 IK=I,N
+D@ 333 IK=I,N
 
-STOR=P( IK)
+STPR=P( IK)
 
-P(IK)=ALF*P(IK)+(1.~ALF)¥PL(IK)
+P(IK)=ALF*P(IK)+(1l.~ALF)*PL(IK)
 
-PL(IK)=ST@R
+PL(IK)=STgR
 
 STOR=H( IK)
 
-H(IK)=ALF¥*H(IK)+(1.~ALF)¥*HL (IK)
+H(IK)=ALF*H(IK)+(1.~ALF)*HL (IK)
 
-HL { IK)=ST#R
+HL{IK)=STgR
 
-D@ RIGHT T@ LEFT INTEGRATION USING CALCULATED VALUES @F H AND P.
-GET VALUE OF DENSITY AT RIGHT HAND END @F STEAM GENERATOR,
-IF(P(N).GE,PMIND,AND,P(N).LE.PMAXD ,AND .H(N) .GE ,HMIND ,AND H(N). LE ,H
+D@ RIGHT T@ LEFT INTEGRATION USING CALCULATED VALUES @F H ANUL P.
+GET VALUE @F DENSITY AT RIGHT HAND END @F STEAM GENERAT@R,
+IF(P(N).GE,PMIND,AND,P(N).LE.PMAXD ,AND .H(N) .GE ,HMIND ,AND ,H(N) .LE .H
 
-IMAXD) GO T@ 201
-WRITE (IW,200) N,N
+IMAXD) GU T@ 201
+WRITE(IW,200) N,N
+FORMAT(1X, EITHER P(’,I2,°) @R H(’,1I2,°), ¥R BU6TH, ARE QUT @F RANG
 
-FORMAT(1X, "EITHER P(’,I2,’) OR H(’,I2,°), YR BOTH, ARE QUT @F RANG
+lE @F TABD.')
+G¥ TE 99
+CALL TERP3(TABD,TABT,H(N),P(N),D(N),T(N),HMIND,HMAXD,DELHD,NHD,PMI
 
-IE @F TABD.')
-GY Ti 99
-CALL TERP3(TABD,TABT,H(N),P(N),D(N),T(N),HMIND,HMAXD,DELHD ,NHD,PMI
+LND,PMAXD, DELPD,NPD)
 
-IND, PMAXD, DELPD,NPD)
+CALCULATE THE STEAM VEL@CITY AT THE THRPTTLE.
 
-CALCULATE THE STEAM VEL@CITY AT THE THR@TTLE.
+AT=IAR(l)%*],E-4
 
-AT=IAR(l)*1.E-4
+VI=CFC@N*P(N)/D(N)*aT
 
-VIT=CFC@N*P(N)/D(N)*aT
+SVT=VT#* |, E2#SFV
 
-SVT=VT#*|,E2*SFV
+XY=SVT+,5
 
-XYaSVT+,5
-
-ov Se Ir IX (XY)
+IDVS5)=1FIx(x¥)
 
 V(N)=VT
 
-CALCULATE THE DERIVATIVES @F WATER VELOCITY AND SALT TEMP. AT
-RIGHT BOUNDARY,
+CALCULATE THE DERIVATIVES ¢F WATER VELBCITY AND SALT TEMP. AT
+RIGHT B@UNDARY,
 
-IF(P(N-|).GE, PMIND,AND.P(N=1).LE.PMAXD . AND .H(N-1).GE .HMINL ,ANL H(N
+IF(P(N-1).GE, PMIND,AND,P(N=~1).LE.PMAXD .AND.H(N-1).GE.HMINL ,ANL ,H(N
 71
 
-os LE MAD) Ge To 211
+l-l).LE.HMAXD; GO TP 211
 WRITE(IW,210
+210 FORMAT(IX, EITHER P(N-l) @R H(N-1),8R BBTH, IS @UT BF RANGE @F TA
 
-210 FORMAT(1X, EITHER P(N-1) OR H(N-1),0R B@TH, IS QUT @F RANGE PF TA
+IBD.’)
+G T@ 99
+211 CALL TERP2(TAED,H(N-{),P(N-1),D(N-1),HMIND,HMAXD,DELHD,NMD,PMIND,P
 
-@ I1BD.’)
-G8 T@ 99
-211 CALL TERP2(TAED,H(N-1),P(N-1),D(N-1),HMIND,HMAXD,DELHD,NiD,PMIND,P
-
-| MAXD, DELPD, NPL)
-DVZ2RB=(D(N=] )-D(N))/(D(N)*DX)*|.E4
+1 MAXD, DELPD, NPD )
+DV2RB=(D(N=-1)-D(N))/(D(N)*DX)*] ,E4
 IF(DV2RB) 2527,2526,2526
-2526 XY=DV2RB+.5
-GB TB 2528
-2527 XY=DV2RB-,5
+
+2526 XY=DV2RB+,.5
+
+Go To 2528
+
+2527 XY=DV2RB=-.5
 2528 IDV(2)=IFIX(XY)
+
 IF(KT-1) 202,202,203
 
 202 DK(N)=D(N)
 
-203 DVIRB=SFV*(D(N)~-DK(N))/(D(N)*DT)*| Eq
+203 DV |IRB=SFV¥*(D(N)~DK(N))/(D(N)*DT)*| . E4
 IF(DVIRB) 2529,2530,2530
 
 2530 XY=DVIRB+.5
-G# TP 2531
+
+Go TP 2531
 
 2529 XY=DVIRB-,5
+2531 IDV(1)=IFIX(XY)
 
-2531 IDV(!1)=IFIX(XY)
 IF(KI-M) 205,204,204
-
 204 DK(N)=D(N)
+205 CBNTINUE
+IDV(7)=(IAR(2)*1.E~-1-1050. )*.5E2
+THETA(N)=IAR(2)¥1.E-i
+IF(T(N).GE,TMINM,AND,T(N).LE,TMAXM,AND .,P(N) .GE.PMINM.AND .P(N)} .LE,.P
 
-205 CONTINUE
-IDV(7)=(IAR(2)*1,E~-1-1050, )¥*,5E2
-THETA(N)=IAR(2)¥*1.E-|
-IF (T(N).GE,TMINM.AND.T(N).LE,TMAXM.AND ,P(N).GE.PMINM.AND .P(N).LE.P
+IMAXM) G@ T@ 221
+WRITE(IW,220)}
+220 FPRMAT(1X’EITHER T(N) @R P(N), @R B@TH, IS QUT @F RANGE @F TABMU,
 
-0 IMAXM) G@ TP 221
-WRITE(IW,220)
-220 FPRMAT(IX’EITHER T(N) @R P(N), @R BOTH, 1S OUT OF RANGE @F TABMU,
+1°)
+G® TO 99
+22| CALL TERP2(TABMU,T(N),P(N),WMURB,TMINM,TMAXM,DELTM,NTM, PMINM, PMAXM
 
-17)
-GP TO 99
-22} CALL TERP2(TABMU,T(N),P(N),WMURB,TMINM,TMAXM,DELTM,NTM, PMINM, PMAXM
+1 ,DELPM, NPM)
+IF(P(N).GE,PMINK.AND.P{(N).LE.PMAXK.AND.T{(N),GE,TMINK.AND ., T(N).LE.T
 
-e 1,DELPM, NPM)
-IF(P(N)GE,PMINK.,AND .P(N).LE.PMAXK.AND.T(N) .GE.TMINK.AND ,T(N).LE.T
+IMAXK) G@ TP 231
+WRITE(1IW,230)
+230 FORMAT(1X, EITHER P(N) @R T(N), PR B@TH, IS QUL @F RANGE @F TABn‘)
 
-@ IMAXK) GO To 231
-WRITE (IW,230)
-230 FORMAT(1X, ‘EITHER P(N) PR T(N), OR B@TH, IS QUL @F RANGE PF TABR')
+GO T 99
+231 CALL TERP3(TABK,TABPR,T(N),P(N),CWRB,PRRB,TMINK,TMAXK,DELTK,NTK,PM
 
-® GO To 99
-231 CALL TERP3(TABK,TABPR,T(N),P(N),CWRB,PRRB,TMINk,TMAXK,DELTK,NTK,PM
-
-e } INK, PMAXK,DELPK, NPK)
-RERB=C@N | *D(N) #VT/WMURB
-HIRB=HK|*CWRB*RERB*¥*,923%PRRB¥*¥*,613
-HTCRB=HIRB¥*HOA*HK3/(HIRB*HA+HIRB*HK3+HO¥*HK3)
-Z=(HTCRB*RK2+1/DT)/VS
+1 INK, PMAXK,DELPK,NPK)
+RERB=C@N | *D (N ) #VT/WMURB
+HIRB=EK|*CWRB¥*RERB¥* é923%PRREB¥**,613
+HTCRB=HIRB*HP*HK3/ (HIRB*HP+HIRB*HK3+HO*HK3)
+Z=(HTCRB*RK2+1/DT)}/VS
 IF(KT-1) 232,232,233
-232 THETK|=IAR(2)¥*1,E-1
-233 DTIRB=(HTCRB*RK2*T(N)+THETK1/DT )*50./VS-2%,.525E5
+
+232 THETK!=IAR(2)%*!,E-|
+
+233 DTIRB=(HTCRB*RK2*T(N)+THETK!1/DT )*50./VS-2%*,525E5
 IF(KI-M) 235,234,234
-234 THETKI=IAR(2)*}i,E-1
-235 DT IRBS=DTIRB¥*SFVS
+
+234 THETK1=IAR(Z2)%1.,E=1
+
+235 DT IRBS=DTIRB*SFVS
 IF(DTIRBS) 2532,2533,2533
-2533 XY=DTIRBS+,5
-GO TO 2534
-2532 XY=DTIRBS-.5
-2534 DT2RB=Z%*|,E4
-DT2RBS=DT2RB#*SFVS
-YZ=DT2RBS+,5
+
+2533 XY=DT1RBS+,5
+
+Ge T 2534
+
+2532 XY=DTIRBS~.5
+
+2534 DT2RB=Z%*|,.E4
+
+DTZRBS=DT2RB*SFVS
+Y&=DT2RBS+,5
 72
 
-IDV(3 crx
-IDV(4 )=IFIX(Y2
-IDV(6}=1000
-CALL IEE Tv Ne
-CALL DACU(IE,IMDAC!,0)
-C SET IC AND DERIVATIVE DACS FAR SALT TEMP, AND WATER VEL@CITY,
+IDV(3 =IFIX(XY}
+IDV(4 )=IFIX( Y2
+
+IDV(6 )=1000
+
+CALL DACU{IE,IRDAC,O)
+
+CALL DACU(IE,IMDACI,0)
+C SET IC AND DERIVATIVE DACS F@R SALT TEMP, AND WATER VEL@CITY,
 CALL SETBB3
-C PUT THE RIGHT T@ LEFT INTEGRATORS IN THE @P MPDE AND START BCD CBU
+C PUT THE RIGHT T@ LEFT INTEGRAT@RS IN THE 9P MPDE AND START BCD CoU
 NTER.
 CALL SETWD(0,40)
-C CALCULATE DERIVATIVES @F THETA AND V FOR NEXT X INCREMENT.
-DO 115 J=1,N-1
+o CALCULATE DERIVATIVES @F THETA AND V F@R NEXT X INCREMENT,
+DB 115 J=1,N-1|
 L=N-J
+
 IF(L-1) 303,303,302
-302 IF(P(L-1).GE,PMIND,AND,P(L-1).LE.PMAXD AND H(L-1) .GE JHMINL ,ANb H(L
+302 IF(P(L-1).GE,PMIND,AND,P(L-1).LE.,PMAXD ,AND . .H(L-1).GE.HMINDL ,ANL H(L
 
-0 1-1).LE,HMAXD) GO TO 241
+0 l1-1).LE.EMAXD) GO TP 241
 WRITE(IW,240) L,KT,KI
-240 FPRMAT(1X, EITHER P(L) OR H(L), OR BOTH, IS BUT QF RANGE @F TABD F
+240 FPRMAT(1X, EITHER P(L) @R H(L), OR B@TH, IS B8UT OF RANGE @F TABD F
 
-@ 1#R L=",14,°’,KT=",110,°,KI=", 14)
-WRITE(IW,9000) P(L),H(L)
-9000 FORMAT( IX, ‘P(L)=°,F8.2,° H(L)=’,F8.2)
-WRITE(IW,9050) (P(L),H(L),L=},N)
-9050 FORMAT (2F12.2)
-GP TB 99
-241 CALL TERP3(TABD,TABT,H(L-l),P(L-1),D(L-1),T(L-1),HMIND,HMAXD,DELHD
+¢ 1R L=",14,°’,KT=’,110,°,KI=",14)
+WRITE(IW,9000) P‘L),H(L)
+9000 FOPRMAT(1X,‘P(L)=’,F8.2,° H(L)=",F8.2)
+WRITE(IW,9050) (P(L),H(L),L=1,N)
+9050 FPRMAT(2F12,2)
+Ge TP 99
+24! CALL TERP3(TABD,TABT,H(L-l),P{(L-1),D(L-1),T(L-1),HMIND,HMAXD,DELHD
 
-@ 1, NHD, PMIND , PMAXD , DELPD, NPD)
-DV2=(D(L-1)-D(L+1))/(D{L )*2¥DX)*1.E4
-GO TO 304
-303 DV2=(DLB-D(L+1))/(D(L)*2%DX)*],E4
+e |, NHD , PMIND, PMAXD, DELPD,NPD )
+DV2=(D(L-15-D(L+1))/(D(L)*z*nx)*l.z4
+G@ TP 304
+303 DV2=(DLB-D(L+1)}/(D(L)*2*DX)*],E4
 304 IDVI(2)=IFIX(DV2)
-IF (KT-1) 236,236,237
+IF(KT-1) 236,236,237
 236 DK(L)=D(L)
-237 DVI=SFV*(D(L)-DK(L))/(D(L)*DT)¥*1.E2
-IF(DV1) 2535,2536,2536
-2536 XY=DVi+.5
-G8 TO 2537
-2535 XY=DVIi-,5
+237 DVI1=SFV*(D(L)-DK(L))/(D(L)*DT)*1.E2
+IF(DVl) 2535,2536,2536
+2536 XY=DV1+,.5
+G@ TB 2537
+2535 XY=pVl-,5
 2537 IDVI(1)=IFIX(XY)
 IF(KI-M) 239,238,238
 238 DK(L)=D(L)
 239 CONTINUE
-IF(T(L).GE.,TMINM,AND.T(L).LE.TMAXM.AND.P(L) .GE ,PMINM.AND.P(L ) LE.P
+IF(T(L)+.GE,TMINM,AND.T(L).LE,TMAXM,AND,.P(L ) .GE ,PMINM,AND .P(L ) .LE.P
 
-@ IMAXM) GB T@ 251
+e IMAXM) G& T@ 251
 WRITE(IW,250) L,KT,KI
-250 FPRMAT( 1X, ‘EITHER P(I) BR T(I), OR BATH, IS UT OF RANGE @F TABMU
-{FUR 1=",14,°,KT=",Il0,’,KI=", 14)
-Go To 99
-25) CALL TERP2(TABMU,T(L),P(L),WMU(L),TMINM,TMAXM,DELTM,NTM, PMINM, PMAX
+250 FORMAT(1X, ‘EITHER P(I) @R T(I), OR BATH, IS 9UT BF RANGE @F TABMU
+\FUR I1=°,14,°,KT=°,110, ,KI=",14)
+Go Tg 99
+25} CALL TERP2(TABMU,T(L),P(L),WMU(L),TMINM,TMAXM,DELTM,NTM, PMINM,PMAX
 
-IM, DELPM, NPM)
-IF(P(L).GE.PMINK.AND.P(L ) LE.PMAXK,AND,.T(L ) .GE.,TMINK.AND.T(L ).LE.T
+1M, DELPM, NPM)
+IF(P(L).GE,PMINK.AND.P(L).LE.PMAXK.AND,T(L ) .GE.TMINK.ANLU,.T(L ) JLE.T
 
-¢ IMAXK) GO T@ 261
+¢ IMAXK) GO T2 261
 WRITE(IW,260) L,KT,KI
-260 FORMAT(1X, EITHER P(I) @R T(I), BR BOTH, IS QUT BF RANGE @F TABK F
+260 FORMAT(1X, EITHER P(I) B8R T(I), PR B@TH, IS @UT @F RANGE @F TABK F
 
-19R I=',14, ,KT=",110,’,KI=",14)
-GY TB 99
-261 CALL TERP3(TABK,TABPR,T(L),P(L),CW(L),PR(L),TMINK,THAXK,DELTK,NTK,
+1R I=°,14,',KT=",1l0,’,KI=",614)
+Gh TB 99
+261 CALL TERP3(TABK,TABPR,T(L),P(L),CW(L),PR(L),TMINK, TMAXK, DELTK,NTK,
 
-@ | PMINK, PMAXK, DELPK, NPK)
-RE(L )=CONI*D(L )*V(L)/WMU(L)
-anon
+@ I PMINK, PMAXK, DELPK, NPK)
+RE(L)=CON1*D(L)*V(L)/WMU(L)
+Qa0On0n
 
 262
 263
@@ -4411,230 +4441,170 @@ RE(L )=CONI*D(L )*V(L)/WMU(L)
 
 3111
 
-73
+/3
 
-HI=HKI®CW(L)*RE(L)¥**, 923*PR(L)%*.613
-HTCaHI*H@*HK3/ (HI*HP+HI*HK3+HO¥HK3)
+HIBHKI*CWSL)*RE(L *# Q23#pR(L )%**,6]3
+HTCaHI®*HP*HK3/ (HI*HE+HI*HK3+HO*HK3)
 Z=(HTC*RK2+1/DT)/VS
-
-IF (KT-1) 262,262,263
-
+IF(KT-1) 262,262,263
 THETAK(L )=THETA(L)
-
-DT1=(HTC*RK2*T(L )+THETAK(L )/DT }*50./VS-2%, 525E5
-DT1S=DT | #SFVS
-
-IF(DT1S) 2538,2539,2539
-
-XY=DT1S+.5
-
+DT1=(HTC*RK2*T(L )+THETAK(L ) /DT )*50./VS-2%,525E5
+DT1S=DT | *SFVS
+IF(DTIS) 2538,2539,2539
+XY¥=DT|1S+,.5
 G¥ TP 2540
-
-XY=DT1S-,5
-
-DT2=Z%] ,.E4
-
-DT2S=DT2#%#SFVS
-
+XY=DT|S-,5
+DTZ‘Z'I.M
+DT2S=DT2%SFVS
 YZ=DT2S+.5
-
-IDV] (3)=IFIX(XY)
-
-IDVI(4)=IFIX(Y2Z)
-
-CHECK ANALOG COMPUTER FOR HOLD M@DE.
-IF(ITEST(1E,0,15)) 266,266,267
-
+IDVI(3)=IFIX(XY)
+IDVI(4)=IFIX(Y2)
+CHECK ANAL@G CPMPUTER FPR H@LD M@DE.
+IF(ITEST(IE,0,15)) 266,266,267
 CONTINUE
-
-RESET CLEAR BIT, BIT 15.
-
+RESET CLEAR BIT, BIT 15,
 CALL SETWD(0,40)
-
-READ THE SALT TEMP. AND THE WATER VELOCITY AT X STATION L.
+READ THE SALT TEMP, AND THE WATER VELOCITY AT X STATION L.
 CALL ADDR(6260, IAB4)
-
 CALL SCANH(IAB4, IVTHET,2)
-V(L)=IVTHET(|)*1,E~-2/SFV
-
-THETA(L )=IVTHET(2)*2,E~-2+1050.,
-
+V(L )}=IVIHET(1)*},E~2/SFV
+THETA(L )=1IVTHET(2)*2.E-2+1050,
 IF(KI-M) 269,268,268
-
-THETAK(L )=THETA(L)
-
+THETAK(L )=THETA(L )
 VK(L)=V(L)
-
-CONTINUE
-
-SET COEFFICIENT DEVICES F@R NEXT SPACE INCREMENT.
+CUNTINUE
+SET CPEFFICIENT DEVICES F@R NEXT SPACE INCREMENT.
 CALL SETBB4
-
-PUT THE RIGHT T@ LEFT INTEGRAT@RS IN THE @P M@DE.
+PUT THE RIGHT T@ LEFT INTEGRATQRS IN THE @P M@DE,
 CALL SETWD(0,44)
-
 CONTINUE
-
-LET INTEGRATI¢UN PROCEED WITH DERIVATIVES AT STATIgN 1,T@ GET
-VALUES AT LEFT BPUNDARY,
-
-CHECK FPR INTEGRATPR HOLD MODE.
-IF(ITEST(IE,O,15)) 243,243,244
-
-CALL ADDR(6260,IAB4)
-
-CALL SCANH(IAB4,IVTHET,2)
-VLB=IVTHET(1l)*1,k~2/SFV
-THETLB=IVTHET(2)*2.E-2+1050,
-
-IF (KI-M) 152,153,153
-
+LET INTEGRATI¢UN PRACEED WITH DERIVATIVES AT STATION 1,T@ GET
+VALUES AT LEFT B@UNDARY,
+CHECK F#R INTEGRATPR H@LD M@DE,
+IF(ITEST(IE,0, 15)) 243,243,244
+CALL ADDR(6260,1AB4)
+CALL SCANH(IAB4, IVTHET, 2)
+VLB=IVTHET(l)*1,E-2/SFV
+THETLB=1VTHET(2)%*2.E~2+1050,
+IF(KI-M) 152,153,153
 VKLB=VLB
-
-GY Ty HOLD MPDE PN SALT TEMP, T-H AMPLIFIER.
-CALL SETL1(I1E,0,10,0)
-
-READ THE VALUES @F T(N),P(N),V(N),ANUD(N),ANU SET THEIR
-VALUES PN T-H AMPLIFIERS,
-
+GW T HOLD MODE ON SALT TEMP, T-H AMPLIFIER.
+CALL SETLIiI(I1E,0,10,0)
+READ THE VALUES @F T(N),P(N),V(N),ANUD(N),ANV SET THEIR
+VALUES 9N T-H AMPLIFIERS,
 TEMPP=T(N)*5.0
-
-IBUTV(1)=IFIX(TEMP@)
-
-POUT=P(N)¥*2.0
-
-IWUTV(2)=IFIX(PQUT)
-
-V@UT=V (HN )*50,
-
-IGUTV(3)=IPIX(VDUT)
-
-DPUT=D(N)* |, E3
-
-IGUTV (4 )=IFI1X(DOUT)
-
-DO 3111 L=1,4
-
-CALL STIND(IE, IQUTA(L),I@UTV(L))
-
+IAUTV( 1 )=IFIX(TEMPJ)
+PPUT=P(N)¥*2.0
+IYUTV(2)=IFIX(PQUT)
+VBUT=V (N )*50. _
+IPUTV(3)=IPIX(VPUT)
+DPUT=D(N)*1.E3
+I6UTV(4 )=IFIX(DQUT)
+D@ 3111 L=1,4
+CALL STIND(IE, IBUTA(L),IQUTV(L))
 CONTINUE
-
 D@ 600 LL=1,N
+STPR=V(LL)
+V(LL )=ALF*V(LL )+(l.,-ALF )*VL(LL)
+VL (LL })=ST2R
+STOR=THETA(LL)
+THETA(LL )=ALF*THETA(LL )+( | ., ~ALF ) *THETAL (LL )
+74
 
-STOR=V(LL)
+600 THETAL(LL )=ST@R
+C IF LESS THAN M’TH ITERATION, GO T@ NEXT ITERATI@N,
 
-V(LL )=ALF*V (LL )+( 1. -ALF )*VL (LL)
+C
+o
 
-VL (LL )=STgR
-
-STYR=THETA(LL)
-
-THETA(LL )=ALF¥THETA(LL )+( |, -ALF ) ¥THETAL (LL)
-C
-
-74
-
-600 THETAL (LL )=ST#R
-C IF LESS THAN M’TH ITERATIPN, GO T@ NEXT ITERATION,
-
-Cc
-
-Cc
-
-Cc
-
-Cc
-
-IF M°TH ITERATIVN, WAM FOR END ¢F TIME STEP.
+IF M°TH ITERATION, WAYF FOR END ¢F TIME STEP.
 RESET DELTA T TIMER AND PROCEED WITH NEXT TIME STEP.
-IF (KI~-M) 1000, 2000, 2000
+IF (KI~M) 1000, 2000, 2000
 
-2000 KX= ITEST(I1E,O, 14)
+2000 KX= ITEST(IE,OQ, 14)
+
+C
 
 2001
 
-HAS TIME STEP TIMER TIMED QUT?
-IF (ITEST(IE,O0,14)) 2002,2002, 2001
-WRITE(IW, 2010)
+HAS TIME STEP TIMER TIMED @BUT?
+IF (ITEST(IE,O, 14)) 2002,2002,2001
+WRITE(IW,2010)
 
-2010 FORMAT(1X, THE COMPUTER TIME REQUIRED PER TIME STEP EXCEEDS
+2010 FORMAT(1X, “THE CPMPUTER TIME REQUIRED PER TIME STEP EXCEEDS
 
 2002
 2004
 
 99
 
-|THE DELTA T ALL@WED.’)
+ITHE DELTA T ALL@WED.’)
 
-GO Te 99
+GO To 99
 
-WAIT FUR TIME STEP TIMER TP TIME QUT.
-
-IF(ITEST(IE,O, 14)) 2002,2002, 2004
+WAIT FOR TIME STEP TIMER T@ TIME @UT.
+IF(ITEST(IE,O, 14)) 2002, 2002, 2004
 
 PUT SALT TEMP, T-H AMPLIFIER IN TRACK M@DE.
 
-CALL SETLI(1E,0,10,1)
+CALL SETLI(I1E,0,10,1)
 
-GP TP 2003
+GO TP 2003
 
 RETURN
 
 END
 
-SUBRQUTINE TERP2(TAB,X,Y,VAL,X!,XN,DX,NX,Yl,¥YN,DY,NY)
+SUBR@QUTINE TERP2(TAB,X,Y,VAL,X!,XN,DX,NX,Y},¥YN,DY,NY)
 DIMENSIYN TAB(NX,NY)
 
-CALL FRACL(X],XN,DX,IX,FRX,X)
+CALL FRACl{X!,XN,DX,IX,FRX,X)
 
 CALL FRACI(Yl,¥YN,DY,IY,FRY,Y)
-VAL=TAB(IX,IY)*(1.-FRX)*(1.-FRY)+TAB(IX,IY+1)%*(1,-FRX)*FRY+TAB(IX+
+VAL=TAB(IX,IY)*(1.-FRX)¥*(1.-FRY)+TAB(IX,IY+l)%(1.-FRX)*FRY+TAB(IX+
 
-11, IY)*FRX*(1.-FRY)+TAB(IX+1,IY+])*FRX*FRY
+11, IY)*FRX*( 1. -FRY)+TAB(IX+1,IY+])*FRX*FRY
 
 RETURN
 
 END
 
-SUBROUTINE FRAC! (X1,XN,DX,IX,FRX,X)
+SUBROUTINE FRAC!(X!,XN,DX,IX,FRX,X)
 
 DUNIT=(X-X1)/DX
 
 IX=IFIX(DUNIT)+1
 
-FRX=DUNIT+l.-IX
+FRX=DUNIT+1,.,-IX
 
 RETURN
 
 END
 
-SUBR@YUTINE TERP3(TBl,TB2,X,Y,VL],VL2,X],XN,DX,NX,Yi,¥N,DY,NY)
-DIMENSIPN TBIl(NX,NY),TB2(NX,NY)
+SUBRYUTINE TERP3(TBI!,TB2,X,Y,VL1,VL2,X},XN,DX ,NX,Y!,YN,DY,NY)
+DIMENSIPN TB)(NX,NY),TB2(NX,NY)
 
-CALL FRACI(X!,XN,DX, IX,FRX,X)
+CALL FRAC1{Xl,XN,DX,IX,FRX,X)
 
-CALL FRAC! (Yl,¥YN,DY,IY,FRY,Y)
+CALL FRACI(Yl,¥YN,DY,IY,FRY,Y)
 
-Al=(1.-FRX)*(1.-FRY)
-
+Al=(1.-FRx)*(1.-FRYS
 A2=FRX*(1.=-FRY)
+A3=FRX*FRY
+A=FRY*(l,-FRX)
+VLi=TB1(IX,IY)*A1+TBl(IX+],IY)*A2+TBIl(IX+1,IY+1)*A3+TBL(IX,IY+1)*A
 
-A3=FRX¥*FRY
-
-A=FRY*( 1 .-FRX)
-VLI=TBL(IX,IY)*Al+TB1(IX+1,IY)¥A2+TB1(IX+1,IY+1)*A3+TBi(IX,IY+1)*A
-
-VL2=TB2( Ix, IY)*Al+TB2(IX+1,IY)*A2+TB2(IX+1,IY+]))*A3+TB2(IX,IY+1)%*A
+VL2=TB2(IX,IY)*Al+TB2(IX+1,IY)*A2+TB2(IX+1,IY+1)*A3+TB2(IX,IY+1)*A
 
 RETURN
 END
-SETBBI 2
+SE1BBI ¢
 
-NE-1
+JorEZ:
 
 SETBB<:
 
-JBEZ:
+JBrFZ:
 
 SE1BB3:
 
@@ -4642,250 +4612,246 @@ SETBB4 :
 
 75
 
-TLOLE SErBBI
+TLLLE SeYBBI
 
 ENTRY SETBBI
 
-EXTERN VALUL,ADDRS],NSEQIL
-0
+EXTERN VALUL,ADDRS| ,NSEQI
+O
 
-MPVN 1, NSEQI
+MpVN 1, NSEQ]
 
-DATAP 700, [22]
+DATAY 700, [22]
 
-DAYTAY 704, @ADDRS|
-
-DATAy 700, [33]
-
-balay 704,@VALUI
-
-ApJdL 1,JBKF2
-
-DATAL 700, [30]
-
-DATaAw 704, [7]
-
-Jra 16, (16)
-
-END
-
-TITLE SEIBB2
-
-ENTRY SETBB2
-
-EXTERN VALU2, ADDRS2,NSEQZ
-o
-MUVN 1 ,NSEQ2
-
-DaTay 700, [22]
-
-DATAY 704, @ADDRS2
+DATAY T704,@ADDRSI
 
 DATAp 700, [33]
 
-DATA 704,@VALU2
+DATAY 704,6€VALU]
 
-ApJL 1,JBF2
+ApJL 1 ,JBKF2
 
-DATAY 700, [30]
+DATAW 700, [30]
 
-DATAY 704, [7]
+DATap 704, [7]
 
-JRA 16,( lo)
+JrRa lo,(16)
 
 END
 
-TITLE SETBB3
+TITLE SETBB2
 
-ENTRY SETBB3
+ENTRY SETBBZ2
+
+EXTERN VALUZ2,ADDRS2,NSEQZ
+o .
+MUVN 1 ,NSEQZ
+
+Datayp 700, [22]
+
+DATAY 704,@ADDRS2
+
+DATAY 700, [33]
+
+DATAY 704,8VALUZ
+
+AyJL |,JBF2
+
+Dalay 700, [30]
+
+DATAY 704, [7]
+
+JrRAa 16,10}
+
+END
+
+TITLe SETBB3
+
+ENIRY SETBB3
 
 EXTERN VALU3,ADDRS3,NSEQ3
 0
 
-MOVN 1 ,NSkQ3
+MBVN | ,NSEQ3
 
-DaTay 700, [22]
+Datay 700, [22]
 
-DATAQ 704,6ADDRS3
+DATAQ 704,8ADDRS3
 
-DATap 700, [33]
+DaTap 700, [33]
 
-DATA 704,6VALU3
+DaTAp 704,@VALU3
 
-ApJL |,JBF2
+ApJL 1,JBF2
 
-DATA 700, [30]
+DATAB 700, [30]
 
 DaTap 704, [7]
 
-JRA lo, (lo)
+JRA lob,(l6)
 
-ENDL
+END
 
 TITLe SETBB4
 
 ENTRY SETBB4
 
-EXTERN VALU4,ADDRS4,NSEQ4
+EXTERN VALU4, ADDRS4,NSEQ4
 0
 
-MGV 1, NSEQ4
+MGVN 1, NSEQ4
 
-DAaTap 700, [22]
+pDaTap 700, [22]
 
 DATAY 704, 8ADDRS4
 
-baray 700, [33]
-JBEZ
+bATap 700, [33]
+JBEFZ:
 
-PREBI:
+PREB}:
 
 SAV:
-VALU] :
-ADDRSI:
+VALU!L ¢
+ADDRS]:
 
 PREBZ2:
 
 76
 
 DATAp 704,@VALU4
-AQJL 1,JBF2
+AUJL 1,JBF2
 DATAY 700, [30]
-DATAP 704, [7]
-JRA 16,(106)
+DATAQ 704, [7]
+JRA 16, (16)
 END
 
-TITLE PREBI
+TIVYLe PREBI
 ENTRY PREBI
+EX1TERN ARGTRN
+INTERN VALUIl, ADDRS],NSEQI
+0
 
-EX1 RN ARGTRN
-INTERN VALUL,ADDRS|,NSEQI
-O
-
-MeveEM  1,SAV+]
-M@VEM O, Sav
-MOVE 0O,e2(lo)
-MEVEM  O,NSEQIL#
+MOVEM 1, SAV+]
+MPVEM O, SAV
+M@VE 0,€2(106)
+MVeEM  O,NSEQIL#
 JSR ARGTRN
 
-Jump 0,0
+JUumP 0,0
 
-ADD 1,NSEQI
-HRM | ,ADDRS|
+ADD  |,NSEQI
+Hrrm | ,ADDRS]
 JSR ARGTRN
 
-JUMP 0,1
+JUmP 0O,
 
 ADD 1,NSEQI
 HRRM 1,VALUI
-MPVE 0, SAV
-MOVE 1,SaV+]
-JRA l16,3(1o)
-BLECK 2
-
-00000 1000000
+MUVE O, SAV
+MUVE 1,S5AaV+1
+JRA lo,3(16)
+BLBCK 2
+00000 [ 000000
 00000 1000000
 END
 
-TITLE PREB2
-ENTRY PREBZ
+TITLE PRBBZ2
+ENTRY PReBZ
 EXTERN ARGTRN
-INTERN VALU2,ADDRSZ,NSEQZ
-oO
+INTERN VALUZ, ADDRS2,NSEQZ
+O
 
-MpgVel 1,SAV+]
-MUVEM 0, SAV
-MOVE 0,@2(16)
-MUVEM O,NSEQ2#
+MPVEM 1,SAV+]
+MoVeM O, SAV
+MUVE 0,e2(16)
+MUVEM O, NSEQ2#
 JSR ARGTRN
-Jump 0,0
+JumpbP 0,0
 
 ADD 1,NSEQ2
-HRR# |,ADDRS2
+HRR# |, ADDRSZ
 JSR ARGTRN
-JUMP 0,1
+JUMP 0, |
 
-ADD 1,NSEQ2
-HRRM 1,VALU2
-MVE 0, SAV
-MPVE 1,5AV+l
+ADD  1,NSEQ2
+HRRI  1,VALU2
+MUVE O, SAV
+MUVE 1,5AV+]
 JRA lo,3(16)
 SAV:
 VALUZ:
-ADDRS2:
+ADDRSZ:
 
 PREB3:
 
 SAV:
-VaLU3:
-ADDRS3:
+VALU3S:
+ADDRS3:;
 
-PREB4:
+PREB4
 
 SAV:
 VALU4:
-ADDRS4
+ADDRS4:
 
 77
 
 BLWCK 2
-
-00000 1000000
-00000 1000000
+00000 1 000000
+00000 1 0QV000
 END
 
 TITLE PREB3
-ENTRY PREB3
-EXTERN ARGTRN
-INTERN VALU3,ADDRS3,NSEQ3
-0
+EN1RY PREB3
+EXYERN ARGTRN
+INTERN VALU3, ADDRS3,NSEQ3
+O
 
-MOVEM  1,SAV+]
-MOVEM 0, SAV
-MVE 0,@2(16)
-MpVEM O,NSEQ3#
-JSK ARGTRN
-Jump 0,0
-
-ADD 1 ,NSEQ3
-HRR# 1,ADDRS3
+MBVEM |,SAV+]
+MOVEN O, SAV
+MpveE ©0,@2(16)
+MoVEMm O,NSLQ3#
 JSR ARGTRN
-Jump 0,1
+JUMP 0,0
 
-AbD 1,NSEQ3
+ADD 1,NSEQ3
+HRRM |,ADDRS3
+JSR ARGTRN
+JumpP 0,1
+
+ADD 1,NSEQ3
 HRRM |, VALU3
-MOVE 0, SAV
-Mpve 1,SAV+]
-JRA lo,3(16)
-BLUCK 2
-
-00000 1000000
-00000 | BO0000
+MpVe O, SAV
+MPVE |, SAV+]
+JRa  lo,3(16)
+BLbUCK 2
+00000 | 000000
+00000 | 000000
 END
 
-TITLE PRESB4
-ENTRY PREB4
-EXTERN ARGTRN
-INVERN VALU4, ADDRS4,NSEQ4
+TITLE PRES4
+ENTRY PRLEB4
+EXT RN ARGTRN
+INTBERN VALU4, ADDRS4,NSEQ4
 o
 
 MPVEM | ,SAV+]
-MpVEM ©, SAV
+MpvVeEM O, SAV
 MpVe 0,@2(16)
-MBVEM  O,NSHQ4#
+MPViEN  O,NSnQ4#
 JSR ARGTRN
-JuMp 0,0
+JuKMp 0,0
 
-ADD 1, NSEQ4
+ADD 1 ,NSEQ4
 HRRM 1,ADDRS4
 JSR ARGTRN
-Jump O,1
+JUMP O,1
 
 ADD 1,NSEQ4
-HRRia 1, VALU4
-MVE 0, SAV
-MOVE 1,SAV+]
-JRA lo,3(16)
+HRRi 1,VALU4
+MEVE O, SAV
+MPVE 1,SAV+l
+JRA lo,3(1v)
 BLYCK 2
 
 00000 000000
@@ -4902,13 +4868,13 @@ ALF Weighting variable.
 AT Area of steam throttle opening, normalized to a value of 1.0 for design point.
 C Coefficient of friction.
 
-CFCON Normalization constant in the steam throttle equation.
+CFCON  Normalization constant in the steam throttle equation.
 
-CONI Normalization constant used in the Reynolds number formula.
+CONI1 Normalization constant used in the Reynolds number formula.
 
-cw Coefficient of friction of water.
+CW Coefficient of friction of water.
 
-CWLB Coefficient of friction of water af the left boundary.
+CWLB Coefficient of friction of water at the left boundary.
 
 CWRB Coefficient of friction of water at the right boundary.
 
@@ -4927,8 +4893,8 @@ DELTM Spacing of temperature points in TABMU.
 
 DELTP Spacing of temperature points in TABPR.
 DELTT
-DH1
-DHIS
+DHI
+DHI1S
 DHILB
 DHILBS
 DH2
@@ -4936,13 +4902,11 @@ DH2S
 DH2LB
 DH2LBS
 DK
-
 DLB
 DOUT
 DT
-
 DTI
-DTI1S
+DT1S
 DTIRB
 DTIRBS
 DT2
@@ -4950,7 +4914,7 @@ DT2S
 DT2RB
 DT2RBS
 
-DVi
+DV1
 
 79
 
@@ -4958,7 +4922,7 @@ Spacing of enthalpy points in TABT.
 
 Terms of dH/dX not containing H.
 
-Analog computer scaled value of DH1.
+Analog computer scaled value of DHI1.
 
 DH1 at left boundary.
 
@@ -4978,12 +4942,12 @@ Water density at the left boundary.
 Water density at the water outlet of the steam generator.
 Length of time in each calculational time step.
 
-Terms of d(THETA)/dX not containing THETA.
-Analog computer scaled value of DTI.
+Terms of d(THETA)/dX not containing THETA.,
+Analog computer scaled value of DT1.
 
 DTI at right boundary.
 
-Analog computer scaled value for DTIRB.
+Analog computer scaled value for DT1RB.
 
 Terms of d(THETA)/dX containing THETA (feedback).
 Analog computer scaled value for DT2.
@@ -4993,11 +4957,9 @@ DT2 at right boundary.
 Analog computer scaled value for DT2RB.
 
 Terms of dV/dX not containing V.
-DV2
-
-DVIRB
-
-DVIRBS
+DAYV
+DV 1RB
+DV 1RBS
 
 DX
 
@@ -5007,8 +4969,8 @@ HILB
 HIRB
 HK
 
-HK
-HK2
+HK1
+HK?2
 HK3
 
 HL
@@ -5031,7 +4993,7 @@ Terms of dV/dX containing V (feedback).
 
 DV1 at right boundary.
 
-Analog computer scaled value for DVIRB.
+Anqlog computer scaled value for DVIRB.
 
 Distance in the direction of water flow, X, between coefficient update
 stations.
@@ -5041,7 +5003,7 @@ Water enthalpy.
 The film heat transfer coefficient on the inside of the tube wall.
 Hl at left boundary.
 
-HI at right boundary.
+H1 at right boundary.
 
 The value of H for the immediately preceding time step.
 Constant used in calculation of HI.
@@ -5065,7 +5027,7 @@ The minimum value of H in TABD.
 The minimum value of H in TABT.
 
 The film heat transfer coefficient on the outside tube wall.
-Scale factor for DHI.
+Scale factor for DH1.
 
 The overall heat transfer coefficient (salt to water).
 HTCLB
@@ -5077,10 +5039,8 @@ IDH1
 
 IDV
 
-iDV1
-
+IDV1
 ILB
-
 IOUTA
 
 IOUTV
@@ -5089,7 +5049,7 @@ IR
 
 IT
 IVTHET
-IW
+W
 
 Kl
 
@@ -5104,7 +5064,6 @@ HTC at left boundary.
 HTC at right boundary.
 
 An array of values read from the analog computer.
-
 An array of values to be set on specified coeff. devices on the analog computer.
 An array of values to be set on specified coefficient devices on the analog
 computer.
@@ -5168,7 +5127,7 @@ PMAXM
 82
 
 Number of enthalpy grid points in TABD.
-Number of pressure grid points in TABD.
+Number of pressure grid points in TAB.D.
 Number of pressure grid points in TABH.
 Number of pressure grid points in TABK.
 Number of pressure grid points in TABMU.
@@ -5187,7 +5146,7 @@ Constant in dP/dX.
 Constant in dP/dX.
 
 Water pressure value for the immediately preceding time step.
-Water pressure af the left boundary.
+Water pressure at the left boundary.
 
 Maximum pressure in TABD.
 
@@ -5196,7 +5155,7 @@ Maximum pressure in TABH.
 Maximum pressure in TABK.
 
 Maximum pressure in TABMU.
-nr —
+o
 
 PMAXP
 
@@ -5252,12 +5211,12 @@ Minimum pressure in TABPR.
 Minimum pressure in TABT.
 Prandtl number.
 
-Prandtl number at left boundary.
-Prandtl number at right boundary.
+Prandt! number at left boundary.
+Prandt] number at right boundary.
 Water pressure at steam generator outlet.
 Reynolds number.
 
-Reynolds number at left boundary.
+Reynolds number at |éff boundary.
 Reynolds number at right boundary.
 Constant.
 
@@ -5272,24 +5231,16 @@ Scaled throttle area.
 
 Water temperature.
 TABD
-
 TABH
-
 TABK
-
 TABMU
-
 TABPR
-
 TABT
-
 TEMPO
-
 THETA
-
 THETAK
 
-THETK
+THETK1
 
 THETLB
 TLB
@@ -5311,7 +5262,7 @@ Table expressing water density as a function of P and H.
 Table expressing water enthalpy as a function of P and T.
 
 Table expressing thermal conductivity of water as a function of P and T.
-Table expressing viscosity of water as a function of P and T.
+Table expressing viscosity of water as a function of Pand T.
 
 Table expressing the Prandtl number of water as a function of P and T.
 Table expressing water temperature as a function of P and H.
@@ -5320,7 +5271,7 @@ Water temperature at steam generator outlet.
 
 Secondary salt temperature.
 
-Secondary salt temperature at the immediately preceding fime step.
+Secondary salt temperature at the immediately preceding time step.
 Secondary salt temperature at the left boundary for the immediately preceding
 time step.
 
@@ -5336,7 +5287,7 @@ Maximum temperature in TABMU.
 
 Maximum temperature in TABPR.
 
-Minimum temperature in TABH.
+Minimum ’rempera.’rure in TABH.
 
 Minimum temperature in TABK.
 
@@ -5346,19 +5297,13 @@ Minimum temperature in TABPR.
 
 Water velocity.
 VK
-
 VKLB
-
 VLB
-
 VOUT
-
 VS
 
 VT
-
-wWMU
-
+WMU
 WMULB
 
 WMURB
@@ -5371,7 +5316,6 @@ VK at left boundary.
 Water velocity at left boundary.
 
 Water velocity at steam generator outlet (water).
-
 Secondary salt velocity.
 
 Water velocity at throttle.
@@ -5381,8 +5325,9 @@ Water viscosity.
 Water viscosity at left boundary.
 
 Water viscosity at right boundary.
-—
-WKN ~~
+—_—
+W N —
+. - .
 
 14-18.
 19.
@@ -5390,9 +5335,9 @@ WKN ~~
 21.
 22.
 23.
-24.
+24,
 25.
-26.
+26,
 27.
 28.
 29.
@@ -5404,16 +5349,18 @@ WKN ~~
 35.
 36.
 
-71.
+71,
 72.
 73.
-74.
+74,
 
 75-76.
 
+O:OCD\IONLHACDI\)—A
+
 87
 
-ORNL-TM-=3767
+ORNL-TM=3767
 INTERNAL DISTRIBUTION
 
 J. L. Anderson 37. T. W. Kerlin
@@ -5471,7 +5418,7 @@ L. M. Ferris 63. J. R. Weir
 W. R. Grimes 64. J. C. White-~A. S. Meyer
 A. G. Grindell 65-66. Central Research Library
 P. N. Haubenreich 67. Document Reference Section
-R. E. Helms 68-69. Laboratory Records Department
+R. E. Helms 68~69. Laboratory Records Department
 W. H. Jordan 70. Laboratory Records, ORNL R.C.
 P. R. Kasten
 
@@ -5480,7 +5427,7 @@ EXTERNAL DISTRIBUTION
 John F. Cox, Nuclear Department, Foster Wheeler Corporation, 110 South
 Orange Avenue, Livingston, N. J. 07039
 
-C. B. Deering, Black and Veatch Engineers, 1500 Meadow lake Parkway, Kansas
+C. B. Deering, Black and Veatch Engineers, 1500 Meadowlake Parkway, Kansas
 City, Missouri 64114
 
 Ronald Feit, Instrumentation and Control Branch, Division of Reactor Development
@@ -5502,8 +5449,8 @@ Commission, Washington, D. C. 20545
 79. C. S. Walker, Tennessee Valley Authority, Union Building, Knoxville, Tennessee
 37902
 
-80. J. R. Trinko, Ebasco Services Incorporated, 2 Rector Street, New York, N. VY.
-10006
+80. J. R. Trinko, Ebasco Services Incorporated, 2 Rector Street, New York, N. Y.
+10006 \
 
 81. Research and Technical Support Division, AEC, ORO
 

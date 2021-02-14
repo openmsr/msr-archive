@@ -1,8 +1,10 @@
-im iin
+OCKHEED MARTIN ENERGY RESEARCH LIBRARIES
 
-4456 0515563 0 ©
+' i
 
-       
+3 Y445k 0515563 0
+
+ 
 
  
 ORNL-4397
@@ -10,14 +12,14 @@ Contract No. W-7405-eng-26
 
 INSTRUMENTATION AND CONTROLS DIVISION
 
-ANALYSES OF TRANSIENTS IN THE MSRE SYSTEM WITH ®*°U FUEL
+ANALYSES OF TRANSIENTS IN THE MSRE SYSTEM WITH 23 FUEL
 
 O. W. Burke F.H.S. Clark
 
 JUNE 1969
 
 OAK RIDGE NATIONAL LABORATORY
-Ocak Ridge, Tennessee
+Oak Ridge, Tennessee
 operated by
 UNION CARBIDE CORPORATION
 for the
@@ -25,7 +27,7 @@ U.S. ATOMIC ENERGY COMMISSION
 
 LOCKHEED MARTIN ENERGY RESEARCH LIBRARIES
 
-[EERE
+RN
 
  
 
@@ -51,46 +53,56 @@ LOCKHEED MARTIN ENERGY RESEARCH LIBRARIES
 
  
 
-3 445k 0515563 0
+ 
+
+3 Y45k 05155L3 0
 
  
 
  
 CONTENTS
 
-ABSTRACT . . «vv vv vv vv ev ve eee
+ABSTRACT . v v v & v v v v o e v e v e e e
+INTRODUCTION . . . . . . . . e
 
-INTRODUCTION . . . . +... « « « .
+ANALOG COMPUTER MODELS
 
-ANALOG COMPUTER MODELS . . . . «+ « + « + + . .
-2.1 Nuclear Kinetics Models. . . . . . . . . . . « ..
+Reactor Core Heat Generation and Hecf Trcnsfer Model
+External Heat Rejection .
 
-2.2 Reactor Core Heat Generation and Heat Transfer Model
+Safety System Simulation. . . . . . .
 
-2.3 External Heat Rejection . . . . . . . . . . . . ..
+Reactor Control System Simulation. . .
 
-2.4 Safety System Simulation. . . . . . . . . ..
-2.5 Reactor Control System Simulation. . .
+N DN NN
+n b kN —
 
-PROCEDURES AND RESULTS . . . . . . . . « « « . ..
+PROCEDURES AND RESULTS . . .
+
 3.1 Reactor Control System Performance . .
+3.2 Startup Accident . . . . . . .. ..
+3.3 The ®32U Resuspension Accident . .
 
-3.2 Startup Accident . . . oo LL. LL. Cee eee
-3.3 The ®23U Resuspension Accident. . . . . . . . . ..
-CONCLUSIONS . . vv vv vv vv he ee ee.
+CONCLUSIONS . . v v v v v v v v v e e e v e e
+
 ACKNOWLEDGMENTS . . . . .
 
-APPENDIX « + + + «vv vv vv hee ee
+APPENDIX . . . .« v v v v v v v e e e e e .
+
+REFERENCES . . . . . . . . . . e e e e e e e e
+
+Nuclear Kinetics Models . . . . . . C e
 
 5.1 Neutron Kinetics in a Circulating Fuel Reactor
 
 5.2 The Temperature Equations . . . . . . . . . .
 
-5.3 External Heat Rejection . . . . . . . . . . . « .
-5.4 Safety Systems . . . . . o.oo. 00.0
+5.3 External Heat Rejection . . . . . . . « . . . « . .
+5.4 Sofety Systems . . . . . . . . . e e e e e e e e
 5.5 Control System . . . . . . . . . .. .
-5.6 Control System Lag Measurements Made at the MSRE . .o.
-REFERENCES . . + « + vv vv tv tv ve ee ee
+5.6 Control System Lag Meosuremenfs Made af fhe MSRE ..
+
+------
 
 25
 
@@ -110,29 +122,31 @@ REFERENCES . . + « + vv vv tv tv ve ee ee
 . 42
 
 . 46
- 
 
-ANALYSES OF TRANSIENTS IN THE MSRE SYSTEM WITH #33U FUEL
+ 
+ANALYSES OF TRANSIENTS IN THE MSRE SYSTEM WITH *33U FUEL
 
 O. W. Burke F.H.S. Clark
 
 ABSTRACT
 
-The #23U fueled MSRE system was simulated on the ORNL analog
+The 23U fueled MSRE system was simulated on the ORNL analog
 computer. The simulated system was used to evaluate the existing MSRE
-control and safety systems when used on the *2°U fueled system. The
+control and safety systems when used on the 23U fueled system. The
 pertinent results and conclusions were as follows:
+
+ 
 
 1. The safety system will limit the “startup accident" so that the
 peak power will be 100 kw.
 
-2. A quantity of #33 sufficient to cause a reactivity change of
+2. A quantity of 33U sufficient to cause a reactivity change of
 approximately -1% 8K/K when precipitated out of the fuel
 at some point in the system external to the core could be swept
 back into the core in a concentrated form without causing
 excessive core damage.
 
-3. The existing controller will control the *33U fueled system in
+3. The existing controller will control the #3°U fueled system in
 a stable manner; however, an increased velocity feedback
 gain will be required.
 
@@ -140,12 +154,12 @@ gain will be required.
 
 1. INTRODUCTION
 
-While plans were being made to fuel the MSRE with ®33U , there was some
+While plans were being made to fuel the MSRE with *33U, there was some
 uncertainty pertaining to the adequacy of the existing MSRE safety and control sys-
 
 tems. To dispel this uncertainty, the following bits of information were needed:
 
-1. The degree of stability of the ®33U loaded MSRE system while under auto-
+i | 1. The degree of stability of the 33U loaded MSRE system while under auto-
 
 matic control of the power level.
 
@@ -153,17 +167,20 @@ matic control of the power level.
 
  
 2. The response of the safety system to a "startup accident."
-3. The maximum mass of **“U that can be tolerated in a "#33 resuspension
+
+3. The maximum mass of **?U that can be tolerated in a "33 resuspension
 accident."
+
 The startup accident is defined as the continuous uncontrolled withdrawal of all shim
+
 rods at maximum rod velocity.
-An analog computer simulation of the 2°U fueled MSRE was used to obtain
+
+An analog computer simulation of the “2°U fueled MSRE was used to obtain
 
 the desired information.
 
 2. ANALOG COMPUTER MODELS
-
-Analog computer models of the subsystems of the MSRE developed earlier
+Analog computer models of the subsystems of the MSRE developed earlier®™*
 were used in various combinations as required by the nature of the transient to be
 
 simulated, the range of the variables of interest, and the power level of concern.
@@ -186,6 +203,12 @@ The mathematical equations describing the regular nuclear kinetics model
 
 (Fig. 1) are as follows:
 
+dn -
+—ng = (p_f\"—@n(f) + i)\ici(r) ’ (])
+i=]
+
+ 
+
  
 ORNL -DWG 69-2213
 
@@ -195,41 +218,37 @@ The mathematical equations describing the regular nuclear kinetics model
 
  
 
-     
- 
-  
-  
-   
-  
-   
-
- 
-
  
 
  
 
     
- 
+  
 
  
 
-4
+    
+
+ 
+
+q
 1
-+4 She !
-: 2 iC —— — 55 * DEAD BAND LIMITER
-| 25, i ———+0.57T0
-tio + J -10
-+1000 7000 0.0926 -10ov 2
-- 253 HO
-MIJ 7
-+100 Vo——2
-o—=—o |-CONTROLLER Oo
++ - Z)\icr
+5 — LIMITER
+‘ 25, -— f————{+0.5T0
+Cio ! + -0
++100° Too0  0.0926 : —100ye——o B
+“ ‘
+25 HO
+MIJ 3
++100 Vo2 M7
+o—m—0  |-CONTROLLER
 
  
 
-~~. MODE SWITCH
-+100 Vo (@23) 0.0500
+ 
+
+ 
 
 PURE TIME LAG FOR INSERT
 
@@ -237,48 +256,23 @@ PURE TIME LAG FOR INSERT
 
  
 
- 
+i
 
- 
+|
 
- 
+|
 
-+ [5P]
-LIMITER!
-oe +0.5 TO
-INT2H 1 + -10.5
-} NT2 550 * DEAD BAND +100 SJ
--% M1 CONTROLLER ve 0
-ACTUATION CIRCUIT —1000——b MS
-O
+| O
+| ¢l MODE SWITCH
 
- 
+I +100 Vo o‘osoo
+i
 
- 
+|
 
-  
+|
 
-+100 ve ff) omsz0
-
-PURE TIME LAG FOR WITHDRAW
-
-    
-
- 
-
-0.8200
-
- 
-
-  
- 
-
-INSERT
-
-+= COAST
-a VELOCITY
-M7K -
-T° .
+1
 
  
 
@@ -288,88 +282,120 @@ T° .
 
  
 
- 
-
-20V = {in./sec
-
-INPUTS FROM CONTROL RODS
-AND TEMPERATURE COEFFS.
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-  
- 
-  
-
- 
-
- 
-
- 
-
- 
   
     
 
  
 
-,20V = tin, ;
-0.0752 | | Five
-me ESE sine
-PE is 40
-SUMMER 5J 7 Coo z z
-. SUMMER fn CONTROL
-i. . ROD
-» CONTROL ROD VELOCITY
-POSITION
-| 0.0830
-| 100 KO
-. AM
-
-    
  
 
  
-
-= fin./sec
-
-47, 0.0011
-¢
-I
-
-0.6400
 
   
+  
+
+ 
+
+ 
+
+ 
+ 
+  
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+ 
    
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
    
- 
 
  
 
  
 
-START [10]
+ 
+ 
 
  
 
-WITHDRAW
+ 
+    
+
+ 
+
+ 
+
 VELOCITY
 
-CONTROLLER LOGIC
+]
+LIMITER
++ 0.5 TO
+! . x DEAD BAND + sy 108
+. | 300 +100 00—
+£ | CONTROLLER o 0
+| ACTUATION C!RCUIT 100 ot M3
+\ —O
+} +100 v.045o
+8 | PURE TIME LAG FOR WITHDRAW
+O ‘ -
+= 0.8200
+a3 \
+gC 1
+Ew |
+P
+zz + INSERT
+| 04000
+25 | < VELOCITY
+?Lg ; M7 M7K
+= & 4 .
+EE ‘[ +1{00 Vv ! START ~ - 20V = 1in./sec
+52 | |
+2 | - ;
+| .
+| ,20V = tin. ,
+| 0.0752 / cOv=
+MG w in./sec
+| Mver ST 7 '52
+01872 - [ I (AMP. 09) —a CONTROL
+- —[ca1it) ROD
+@ 4 | CONTROL ROD VELOCITY
+| ‘ POSITION
+0.0830 | 585
+|
+-Py +Pr : 20V = 1in./sec
+| 04000 + S|
+| 5
+| - 5 START o
+Orcee e MSJ Jo 2t 1Y) WIT HDR AW
+‘~1oo v
+|
+
+————— CONTROLLER LOGIC
 AND
 
 CONTROL ROD DRIVES
@@ -380,7 +406,13 @@ CONTROL ROD DRIVES
 
  
 
+  
  
+ 
+ 
+      
+
+    
 
  
 
@@ -388,36 +420,35 @@ CONTROL ROD DRIVES
 
  
 
-1
-{
+i
+!
 I
--P -R +P -P
-01 = 36 > 3h rr ! RECIPROCAL |
-™ PERIOD |
--592Vv =
--T Ts — — — — — — — — — LE Tc — — — — — — — CT + {sec |
-D
-| — | REACTOR PERIOD 1 PERI !
-| } | SAFETY SYSTEM |
-: i | ACTUATOR
-| or i100v
-| | G MOK |
-| PERIOD
-| SAFETY |
+—P; l -F ! +P - — ; - - - T - T T T T
+40, ! 38, 374 - 50Kk 2uf ; |
+. XLN 5P G i RECIPROCAL
+‘ 1 3 {13 FPERIOD ‘}
+] | —5.82v=
+- = — = ——— '5"“"'"**********" T T T T + 1sec ‘
+U Liwiren | REACTOR PERIOD Aggggﬁm_____J PERIOD
+‘ A | SAFETY SYSTEM
+| : ‘ ACTUATOR |
+| S s+ i00vV !
+i ‘ | PERIOD 6 MoK !
+| | SAFETY @ !
 | | SET POINT |
-| SAFETY SYSTEM TIME LAG GENERATOR | aren C109
-| (140 sec) LATCH
-frre = — = — = = mh mm me — mm m= = = i
-Fron | |
-A § +ioov eM !
-hoo . TIME _ | 0 (+100)
-A 100 V =1 sed] + | Sfet/100 FROM i
-rr we : ed eT00Y POWER LEVEL ue —
-[ SAFETY SYSTEM 3 | i
-i | ACTUATOR +671 ol 4 |
-- SAFETY ROD REACTIVITY GENERATOR CMITER TG, 27 | 9 i © oy |
-O—(~ +90) | 3 MIK |
-| LATCH |
+i  SAFETY SYSTEM TIME LAG GENERATOR | P10V Caron 0100 |
+* (Y40 sec) 1 |
+L e b e 1
+o
+wt[25010%gp ) =+ e ‘ +100v LIMITER |
+_ oo :\ TIME | C—(+100} :
+i _ . M - 5F FROM ;
+e - _CM/2\ 1oov 1sec | zjtfo— 100V I POWER LEVEL SET/100 AMP ,— |
+2 [ SAFETY SYSTEM 293 f ;
+| | ACTUATOR +ierl| S . |
+- SAFETY ROD REACTIVITY GENERATOR CIMITER V6. 27 \ 9 L 1Q470_ﬂ_4oov |
+0—(~+90) \ ? MIK |
+‘ LATCH !
 
 Fig. 1. Schematic Diagrams of the Analog Computer Models of the MSRE
 Control and Safety Systems and of the MSRE Reactor Kinetics.
@@ -430,30 +461,29 @@ Control and Safety Systems and of the MSRE Reactor Kinetics.
  
 
 and
-“ALT
-dC.) B. Cit = 7)e C. (1)
-ar = NG T TTT @
+AT
+dCi(f) Bi Ci(f - 'TL)e L Ci(f)
+g T A -G - T T @)
 c c
 where
 n = number of neutrons in the reactor,
-0 = reactivity, 5K/K ,
+0 = reactivity, 5K /K ,
 A = prompt neutron generation time,
 B = the fractional yield of all delayed neutron precursors as a result of
 fission,
-Ao 1/7, , where T, is the mean life of the ith group of delayed neutron
+N ]/Ti , where T, is the mean life of the ith group of delayed neutron
 precursors,
-B. = fractional yield of the ith group of delayed neutron precursors as a result
-5
-of fission, LZ) B. =B,
-T. = core residence time of fuel,
-ui residence time of fuel in the loop external to the core.
+Bi = fractional yield of the ith group of delayed neutron precursors as a result
+of fission, T B. = B,
+1. T core residence time of fuel,
+T residence time of fuel in the loop external to the core.
 
 The third and fourth terms on the right-hand side of Eq. (2) are not found in
 the nuclear kinetics equations of stationary fuel reactors. The fourth term specifies
 the rate at which delayed neutron precursors of the ith group are removed from the
 core by fuel circulation. The third term specifies the rate at which the delayed neu-
 tron precursors of the ith group re-enter the core after they have traversed the external
-loop.
+loop .
 
 A consistent set of units must be used in these equations. In the computer
 model, P (expressed in megawatts) replaced n in the equations. The computer voltage
@@ -473,8 +503,8 @@ The Log P model (Fig. 2) equations are as follows:
  
 
 &
-dg(t) _ p- 8
-ar Cn Li ’ 3)
+. dg(t) p -8
+i ;kihi(f) ' )
 
 dh.(t)
 
@@ -484,36 +514,38 @@ dh.(t)
 
  
 
+. dg(t) _ i 1
+RS =T Dyt
+-x. 7, (1)
+] P L
+I h.[r = 700 e : 4)
+dh. (1) B.
+| dg(t) _ "i 1
+e T 20 h(n], (5)
+
+and
+
  
 
-i dg 5 1
-hE = Dem nO
-“xT, (1)
-1 iL
-+ hit - 7.1) le , 4)
-7.1) iL L ]
-dh.(t) 8.
-i dg(t) _ "i _ 1
-OSE = [he wi] (5)
-and
-f t = t/
-nf = 70] [onl noa], 0
-C
+‘ t _ !
+h [t -5 0] :_J e - TC* h (Bt ] (6)
+
 where
+glt) = |ogel\|(’r) ,
 
-g(t) = log N(1) ,
-
-h(t) = C.()/N({) .
+h.(t) = Ci(f)/N(f) .
 
 The detailed derivation of Eqs. (3), (4), (5), and (6) is shown in the Appendix,
-Sect. 5.1.
+Sect. 5. 1.
+
+ 
 
  
 2.2 Reactor Core Heat Generation and Heat Transfer Model
 
 The core was divided into four concentric regions in the radial direction with
 respect to the direction of fuel flow. In the axial direction (direction of flow) the
-regions were further subdivided into from one to three axial regions, or lumps. The -
+regions were further subdivided into from one to three axial regions, or lumps. The .
 regional layout of the core is shown in the upper right-hand corner of Fig. 3.
 The mathematical equations describing each of these lumps are identical ex-
 cept for the physical constants. The equations for a typical lump, which consists of
@@ -528,24 +560,30 @@ one section of graphite and two sections of fuel, are
 
  
 
-To a, ha 76-7 -
-t MsCo T McCa G f
-dT Ww
-Ret Ts 7) ’ 7 (Th i ) ‘ ®)
+ 
+
+ 
+
+ 
+
+iT_G: 9 __p_ - hA, (’T' __> 7)
+dt MGCG T MGCG G f
+dTy b hA, L -
+i ke fr T mclTe T ) T m T T ) @)
 ff ff f
 and -
 dT hA W
-fo _ C z [= _ = f(z _
-IF TMC 1 mc 7s ARE Im Tho) 4)
-fof fof fo
+fo _ C z (= _ = fls _
+¥ M C T M (TG TF)+M (TF TFo)’ (¥)
+fo™f fof fo
 where
-Te = average temperature of graphite,
-Ma = mass of graphite section,
-Cs = heat capacity of graphite section,
+TG = average temperature of graphite,
+MG = mass of graphite section,
+CG = heat capacity of graphite section,
 a = fraction of total heat produced in the graphite section,
-Pr = total rate of heat production,
-h = heat transfer coefficient between graphite and fuel, )
-A = heat transfer area between graphite and fuel,
+PT = total rate of heat production,
+h = heat transfer coefficient between graphite and fuel,
+A = heat transfer area between graphite and fuel, ]
 T = average temperature of fuel in a lump,
 
 —+
@@ -553,95 +591,39 @@ T = average temperature of fuel in a lump,
  
 
  
-   
-  
-  
- 
+ORNL-DWG 69-2214
 
  
 
-TRANSPORT
-LAG NO.
-GENERATOR
+       
+         
 
- 
+_— — . - 0.7956 M2
+S —_
 
- 
+TRANSPORT W + N 100 V(O O
+LAG NO. ! O
+RATOR ‘
 
- 
- 
-
-P01) 0.8976
-go,
-
-   
-
-     
-
- 
-
-| —10 ho
-© 00535 2510 Lo
-By 2p) _ out JTEENEST
-1008 GENERATOR
-i 0.4170
-i q Ad
-Po Det)
-— 1
-| A ie o>
-LTA +31.02 V
-o } , 0.
-2 0.0197 oO 7 (\Q20
-700 !
-—100V 1
-—-100V O-{Q13 Be N2.0 :
+AL 28 [O—fuzay—- |
 
     
-  
+
+/ :7
+s J 0.4700
+1.000 %) - @
+
+ 
+
+ 
+
+    
 
  
 
  
 
  
-
- 
-
- 
-
- 
-
- 
-
- 
-
-  
-
- 
-
-ORNL-DWG 69-2214
-
-  
-
-~ 0.7956 M2
-| +3 -100 VO 0
-O
-
-28 PO——{uray— |
-
-¥
-
-s (P15)1.0 #) - oH i!
-
-oon) .000 r -100vO (a4)
-
-0.0443 | “ioov
-—100 Vo }
-8 6
-HHO 2 Ai; 100A {on +10 LOG oN |
-0.4000 TN a 0.4343 10 i
-
-   
 
  
 
@@ -650,106 +632,143 @@ HHO 2 Ai; 100A {on +10 LOG oN |
  
 
    
+  
+  
+ 
+    
 
  
 
  
 
-27
--— 10
-10
-0.0337
-~aph
-{ate ee
-«
-Xe S
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+| ‘,—10_SON-@ ' ! -100v O
+0.0443 | 100y
+—100 Vo @ ]
+6 »3 i
+\“OZMN 100 A . o Los
+= :
+T o TN Car 0.4343 O LOGoN
+|
+: - 27 : \ [ ,,#@*O .
+—100Vv Qo3 0.0535  25M0 - — 0 |
+e AT TRANSPORT CONTROL
+By e el OUT | a6 no. 2 Fl ROD p 10 -
+004 GENERATOR i ! ‘ OV = 0.01 WATTS
+N oM | | = (P27)01250 - - ‘ |
+{1, 04170 . 2x10%A rt————-—|- - - — - - — - - - - - - T — T T T |\ T
+Do+ ) o | | |
+) |
+0.0337 ;
+—x,h
+_ 2h2
+A mia 10& Q2 ez ! |
+/ +A Ap | S
+= i e
+hy o | e
+106 0.0197 +100V | t
+100V O {13 ||
+’—4’ [
+. M @
+0.0062 |
+5 e
+‘ { ROD 3 RODS 1‘
+i -t00v  -gov
+1P
+5(7)0.0438
+SAFETY SR ™
+ROD | 24 g+ 100V
+POSITION, . 0.0100
+in. 4N Q77
+0 72
+
+ 
+
+ 
+
 o
->
-—
-LJ
-I'S
-3
-wr
-57 @) Ro
-fod = vovs |
-| ~10%3hs -100 Vv —100V Bl
-0.1390 [i =
-Qe22
-
-—[10h3]
-—79.43v  *3
-
-+10Aghg
-
-= (&) am) 0.0438
-SAFETY
-
-ROD |
-POSITION
-
-in. '
-io
-
-— 0°
-
-5
+=
+i
 
 x
 
-|
+ 
+
++ Z
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
 
 |
+. _o\o_ -
 
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+r
+1
+\
+|
 i
-
+\
+\
+\
+\
+\
+i
 |
-
+I
+1
 |
-
 |
-
+l
 |
-
-|
-
 !
-
-| M
-PA sareTy *
-CE
-
-ROD
-
-I VELOCITY
+\
+\
 |
-
 |
-
-|
-
-|
-
-|
-
-|
-
-|
-
-|
-
-|
-
-|
-
 1
-
+\
+\
 |
-
-- 0 —
-
- 
-
-in./sec o
 1
 
  
@@ -759,71 +778,40 @@ in./sec o
  
 
  
-     
 
  
 
-+ [1000 hg]
-+85.2 V
-/
-1000h 0.2200
-= 100 £ 0.8520
--100vVO — —100V
+1‘—SAFETV
+T
+| VELOCITY
+in./sec 684 KQ
+1ot 0.1840 A4o.3250
+100
+i —100 V.—F Q08 )
+| @ ) 710)\4h4
+:\ + Tc \ 63
+04130 L‘ —H_ O 1200 PERIOD SAFETY SIGNAL GENERATOR &
+’ SAFETY ROD DRIVES
+—A 10 (217} 62 e e —  — — -
++[1OOh5] N l ‘ e b L
+/A +28.02V 2N b | M3J k
+100ns 0.3400 *s"s : I+ '
+00 ROO |
+— {00 VO_' —100V h5!0 0.25%83 0.1 L —-100 v J'
+i __________
+— (ot %)
+oy 0.0250 |
++10xgh |
+10l +[1000 hg ] N
+/1A +85.2 v TALO
+Jo=
+1000hg 0.2200
+- 100 0.8520
+—100vV O —— 100V
 
-10hg o
+10hg g
 
- 
-
- 
-
-~ (pes)
-
- 
-
-OV = 0.01 WATTS
-
-|
-|
-
-—
-
-24 g+100Vv
-0.0100
-
- 
-
-+N Q77
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-684 KQ
-
- 
-
- 
-
-PERIOD SAFETY SIGNAL GENERATOR &
-SAFETY ROD DRIVES
-
-Fig. 2. Schematic Diagrams of the Analog Computer Models of the MSRE Period
+Fig. 2. Schematic Diagrams of the Analog Computer Models of the MSRE Pericd
 Safety System and the MSRE Log P Model.
 
  
@@ -831,60 +819,39 @@ Safety System and the MSRE Log P Model.
 
  
 
-    
-
  
 
  
 
- 
-
-  
-
-  
-
- 
+   
 
  
 
   
 
-     
- 
+   
+   
 
- 
-
- 
-
-       
-
-ORNL - DWG 69-2215
-
-  
-
- 
-
- 
-
- 
-
-     
-       
- 
-
- 
-
- 
+   
 
  
 
   
 
  
+ 
+
+ 
 
  
 
  
+
+   
+
+ 
+
+  
 
  
 
@@ -892,122 +859,160 @@ ORNL - DWG 69-2215
 
  
 
-—100 Vv 0 —100 Vv —{00V |
-0.0114 3 w !
-2) 0.6325 p24)0.9205 Tego 9647 |
-—Pr O—faog _— 7 O—{ato) aio) | - en ~P,O (as, - !
-I
-| [Tt92.05V 4g
-= 1 0.0379 > | + 1 0.0300 (193) — - - i .
-i T |
-! . ;
-- In oo ™~ _ I — AN i i
-0.0 | 0.0326
-P03)0.1195 on) . 0.0885 | i
-— 250 —_— —_ 60)0.0795 (my - (14 — = -
-pl, ey le a : oon) (1) pei TE rz
-5 0.0434 10 L = ; 0.0795 T = 0.0635, < | F'" “reelons
-© i J , — — — — 1
-wooed - ! (pu) l= 7, | « 6 > os i mn CORE
-© i “ . — g : “54.46 Vv - 61.14 v 68.83V = +75 Vv LAYOUT
-C ic I wo pe oo
-+PO ase)o.a13 -P,O ©, @s7)e. 4792 +A Lo—{an) 0 5446  —p OO ar) @ee)o. 6114 ae) (1) (so. 6883  —P -—) (sy) 0.7500 |
-|
-0.2130 0.5200 | 0.6360 0.6670 | 0.5860 0.2500 ~ !
-LL PEE boo yp peg PF s-woov | a b+00y Lump 2-2 _e—toov BE LUMP 2-3° —100 Vv
-: 0.0080 100 V 0.0152 100 Vv 0.0105 —100Vv
-“RO ,)o. 5763 -PO oo (s2,)0 8197 -RO aos) Go
-T { .
-— 2) Ne
-0.0349 +57. cov 0.0381 +81.97v|10 0.0362
-(695) - hs a 1 (239) — 1s - dag, 35, PO6
-, i rr : [
-ID) | IE, NE | Lo ee A j
-z 0.0868
-o pn fbsz)o rex 210 pom SN
-3 0.045(70;) [oo T! (302) 0.1270 0.0863( 15, —=] = — ye 0.1590 Guts) | Pi5
-& © o0.0868 | = , 0.4270 2 i wy 015% 00633 ; 0.03
-i ~ - ol
-58, 1 {zp - 027) i] Q
-“atv - “52.96 Vv +58.35 v 1 >a. 22 v
-Ic A Ic
--
-+P; 72,)0.4110 —p, O-—{29, +P O on ¢ 0.5296 -PO - 2) e3))0. 5835 +p Oars) (267)0.6422 -PrO—{a16
-. 0.511 0.0465 0.
-: 0.1680 +100v ump 3-100 ° +100 | UMP 3-5 $100 Vv © +00V LUMP 3-3
-i oo ° Lu _ _ Pa _
-| 0.0050 9°100V © 0.0058 Coo lo
-pt
-Leo {m), 0.4766 ~ =P O {39} (99) 0.5141 Poor
-: Tc ! ic ;
-. 10 0.0347 | _ +5 atv, ‘
-0.0403 (16, “= 4 TU : i
-i | -
-. | | | MODE SWITCH
-¥ : —- | : VELOCITY 792) 0.46175
-z . . ou1zs 0.0670 , 34 FEEDBACK
-o ~ Q.1068 yee 0.0438 Lo LY 0.2250 | POT O From amp a0, =
-o — 0.) 0.121046, ) — Can) 0.1310 29, (3) 34, bo Tio ™ | UR
-@ : 3 & 124 670 ~ 862) +100 V|- --O=[5P] | 0.5625 -
-0.0762 & 0 1 0.0
-Gm | 0.1000 FROM AMP. 203 | (17) 41004
-Lo ay - (a21) . |
-} SE 1 o—
-T3855 v r Kars 27 v Zaa.96 v ‘ +4735v | Po 921) £26) 0.1000 ov |
-| ~ —56.
-1c | ec le ro - 80;) 0.1125 | S6.2sv
-+7 70, x 0.3855  -p 4 Por FRO ®r (sos 04496 —HO—(37,) (s1,)0a735 | | i i
-- i |
-K | — +11.25V 0.0400
-01040 +100V | yp 4-4 0.2230 ~100 Vv 1 0.2320 4, LuMp 4-298 4 _i00v | | i i”
-—- = —— r= = = — = - - - - = co = - i | | JE
-0.0146 1 100V Po CT (25)
-Po— —_— — —_— —
-0.1429 - 5 | |
-— TEMP CONTROLLER (ze ST
-- | € GENERATOR | | I — tq
-‘ bol — TT —- C— 10
-z ea, |
-o | ! | 0.2858 (23) — 205 >> - ! 0.0347 1 \232
-@ po +7.5V -7.5 J on 100(1-Ky) 28)
-| ! - — - CT ef =
-= i —_— - A _ = | — — , a —- Hd i. 0.5000 +3.47V \Z
-0.6500 06220 | 0.1000 [a | 0.0500 2 [ol _ ol
-ove) | ! | 79,)0.0750 | 05703 } — med
-0.0657 oo r | (222 =a 2wov | 64, Ga
-| ~ Pl
-tansy | 08300 TT L i. army 0.0500 ve
-+ Tp nO — — - - L— 2 TH oe a= GJ
-FROM - Fares y ; +375V ~3.75V ie 16.3
-AMP 11, | Ic
-0.4763 ! 325)0.3750 EARN 0.1613 292) —00v
-+H O 5s) : i ye 0.5500 0.3867 omar .
-\
-0.0792 0.0672 T _io0v —100 Vv 100 V
+ 
+
+  
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+    
+
+ 
+
+    
+
+ 
+
+ 
+
+  
+
+ 
+
+ 
+
+ORNL-DWG 69- 2215
+
+  
+
+—100Q vV o — 100V — 100V |
+0.0114 00192 0.0143 |
+055 0.6325 P24)0.9205 ?8)0 5647 !
+P O— _ fPTO 010 | - s ~P O 4@7 S — ;
++6325w10 ‘{ +9205v1o L +9647v1O ‘ e
+‘ | 3 i
+0.039 @ 0.0379 P10> t ) 0_0389@ — e - q-2 .
+| ! | ‘e
+i ; ! i 3-2| =
+r-* - . ™ . | L. o Pan N - i | | 3
+| 0.4 0434 ‘ ; ‘ 0.0635 0.0326 ! 14—
+1 . 0.0885 i |
+452 - e —_ 60)0.0795 . T 14 _ -
+g oc()) | P e 01075504 EO * oosegwsa ! i 23,4 l
+0.0434 i !
+5 0.0635 © 0.0795 T‘"""ao 0.0635 T kﬁ ’ |
+Q0 _ . . 2 . - R o
+§ oo Q03— . €0, {10,) 5, QSD | ‘ CORE
+i . I —41.33 v o . —54.46 V +6e1.1ay T 1] 76883V T A +75V LAYOUT
+C C Ic e I
+- g ;
+‘+PTO 05@0.4433 -P.O -@ @o 4792 + P o—@ @o 5946 —p O @12) o,eua LR O (1,) 65) 0.6883 —pPO—{as, ng 0.7500 }
+— | e
+0.2130 0.5200 ] 0.6460 0.6670 | 0.5860 0.2500 |
+T +100V | yMp 2=t —100 v ‘ T 6+00 v LUMEE;QW _e-toov | £+1OOVLJ LUMP 2-3 b —100V o
+: 0.008B0 (I 100V 0.015 ooV 0.0105 —100 Vv .
+. ﬁ
+i~R O ?1)0 5763 -P.O Q '62)0 8197 - 058)0.84 91
+T 2 ! T 1) 162,)0. o T ‘ .
+| c ) g | &'C |
+| +57e3v1o 0.0381 +ar.97v|io 0.0362 +84.91v]10 ;
+' L 34, - {23y b— 1 | 9y 32, >--i . 35, @ - {674 .
+| > > 9 : N4 | I 3 i . - | 1
+, i i : i
+2} ! | 2 e A . | A i {T o
+Zz 0.0868 0.0635 j f 0.0326
+5 P 4 0.0893 o . o9 N
+D e e R - e T _ —_ >z ’* 1500 - syt - IaTs]
+0.045({70 Bls A200 | .z( L1980 G.utuB i PeZr — PiD - o8
+g ) [ ooses(1s) | {en)o € | o)
+| 0.0868 L3 , 01590 5 c. 1590 0.0635 - 0.0326
+| 5 : /77\\ - — - 4{ 1 /-\_‘
+58, 19, > | : zo( — {q27 <1 153 L {Qog)—
+—aiy —52.96V +58.35 v o 1 “e4.22 v - +68.59 v
+fc c é /\ c J\
+/
++P 72,]0.4110 —P. O-—{29 ) +P O |9 67, 10.5296 - 21 0.5835 +RO-—Q15 ) {067)0.6422 P O—{Q16 ) 0.6859
+T ; T 2 \ T (L T } , T ;%/5 \7/ T o
+0.1680 o 5110 046 0.0198 , !
+B i T __“_+WOO V_|:U__MP 3 - +1OOVLUMP 3- 2 o *4007\1 o _ °+1OOV LUMP 3-3 0t100\1 ! ‘
+i 0.0050 _$7100V ' 0.0058 —1oov \ o ) _ | |
+b 0.4766 41 ‘ [
+o . 0 () (2o = L
+? | i'C ‘ i -
+i 10 003247 | + 51, 4W 10 TEMP €
+00403 - - 21, i ;
+__ | | TO CONTROLLER\ -
++47.66V | } s o.4 1;A5ODE SWITCH
+<+ - — ™ | ; veLocity \[92) 046 !
+. f
+g OO?GE . 0.1068 01124 (68, ! /3’ 0.2950 i ngDBACK O,ROD VELOCITY r 73,)0.1429
+O] 0. 0532 0. |2WOGG‘ O30 29( 321 } - | ! _P6 .—\ } FROM AMP. 40, H _
+& 00762 0.1310 04124 | 0.0670 ! 3 ©62) °HI0OVIE O = (5P | 09823 )
+| i | 01000 FROM AMP. 203 I '@«aﬂoov
+-l E Al L& N | .
+— ~38.55V I harer v -44.96 v ' P peaO,,OOO g-100v |
+I | ' | - | —56.25 v
+e 1 - | 1 80p) 04125 |
++ P 70, <57| 0.3855 -5 (}———@D 1 56,)0.4127 i+ PO 7f38 @o) 04496 -F, O_Q-/' : |
+01040 0.2230 \I/ | 0.2320 l 0.1080 | — +11.25v 0.0400 |
++1OOV LUMP4 1 =100V 1 +ﬁOOV LUMP 4-2 | ‘ i 5 |
+————— e -— e R — & | \ - 25,1
+0.01a6 1100V o o o o o § R NS ‘
+O 07095 P 0.1429 y !
+T e \ 26 — ! ‘
+l TEMP CONTROLLER 2 e
+@ » o w e
+© | 0.2858 29— - | 0.0347 235
+g B ‘ SM3 H00(t-KT)
+o | +75v - 000 -Ky {28,
+© | — - e o — . o 62 05000 +3.47 v A\ *‘Oovi
+! 0.6500 \ 0.4000 [ ! 2 0029? _ _
+\ 0.0720 GJ"D | : } 9p) 00750 } Q.0703 e -
+r 0.0657 T | (225) L. Thwov | {
+carsy 0.6500 T 0.6 ! ; | . 75% 0.0500 "
+b 5 & A % H & >
+FROM ] s 0a v : +37, 75V , —i613\./ 1643V
+AMP 11, [ Ic
+0.4204 ! 32:}0.3750 032 100V (862 0.1613 ‘59 o100V
++P —P - .
+7O T - ¢ 0.5500 0.3867 0032?
+, -
+0.0792 —100 Vv +100V
 LUMP 1-1 HEAT SINK
 
 Fig. 3.
+
+Schematic Diagram of the Analog Computer Mode!| of MSRE Heat
 Generation and Heat Transfer.
 
-Schematic Diagram of the Analog Computer Model of MSRE Heat
+ 
 
  
-Mc = mass of fuel in the first section,
+MF = mass of fuel in the first section,
 
-Cs = heat capacity of fuel,
+C]c = heat capacity of fuel,
 
 b = fraction of total heat produced in the first fuel section,
-Te: = fuel temperature entering the first section,
+TFi = fuel temperature entering the first section,
 
-Teo = fuel temperature at the exit of the second fuel section,
-Meo = mass of fuel in second fuel section,
+TFo = fuel temperature at the exit of the second fuel section,
+Mfo = mass of fuel in second fuel section,
 
-Cc = fraction of total heat produced in the second fuel section.
+C = fraction of total heat produced in the second fuel section.
 
 The computer schematic for nine lumps is shown in Fig. 3. The voltages repre-
-senting temperatures in Fig. 3 are T' = [T(°F) - 1100°F1 /2 .
+senting temperatures in Fig. 3 are T’ = [T(°F) - 1100°F] /2 .
 
-A detailed derivation of Eqs. (7), (8), and (9) is shown in the Appendix,
+A detailed derivation of Egs. (7), (8), and (9) is shown in the Appendix,
 Sect. 5.2.
 
 2.3 External Heat Rejection
@@ -1016,12 +1021,12 @@ Because of a shortage of analog computer equipment, an abbreviated model
 (Fig. 3) of the heat rejection system was used. The development of this model is
 discussed in the Appendix, Sect. 5.3.
 
-The voltages representing temperatures in Fig. 3 are T'(v) = [T(°F) - 1100°F]/2 .
+The voltages representing temperatures in Fig. 3 are T'(v) = [T(°F) - 1100°F1/2 .
 
 2.4 Safety System Simulation
 
-The MSRE has two safety -system trip signals: a power-level trip signal and
-a reactor-period trip signal. Safety action is initiated if the power level exceeds
+The MSRE has two safety-system trip signals: a power-level trip signal and
+a reactor=period trip signal. Safety action is initiated if the power level exceeds
 11.25 Mw or if the reactor period becomes shorter than 1 sec.
 
 For the low-power cases (essentially no sensible heat is produced) where the
@@ -1034,18 +1039,20 @@ The reactivity change due to safety rod motion was more accurately simulated (Se
 
 For a more detailed discussion of the safety system see the Appendix, Sect.
 
-5.4.
+5.4,
+
+ 
 10
 
 2.5 Reactor Control System Simulation
 
 The MSRE has two modes of control: for operation at power levels less than
 1 Mw, the flux (or power level) is the controlled variable; for operation at power
-levels of 1 Mw or higher, the fuel salt temperature at the reactor core outlet is the
+levels of T Mw or higher, the fuel salt temperature at the reactor core outlet is the
 controlled variable. The computer circuit used to simulate the control system is dis-
 cussed in the Appendix, Sect. 5.5.
 
-Since we believed that the most uncertain part of the control system simula-
+Since we believed that the most uncertain part of the centrol system simula-
 tion would be the time response of the control-rod-drive system to error signals that
 call for rod motion, the time response of the control-rod-drive system was measured
 
@@ -1060,9 +1067,9 @@ of control at power levels below 1 Mw (Figs. 6 and 7) was demonstrated.
 
 In the run illustrated by Fig. 4, the reactor was initially operating at steady-
 state full power (7.5 Mw); and at the time marked "start" in Fig. 4, the temperature
-set point on the controller (T..) was decreased at a constant rate of 5°F/min for a
+set point on the controller (TSO) was decreased at a constant rate of 5°F/min for a
 total time of 2.5 min (12.5°F total). The subsequent reactor performance, that is,
-that the requested change in the fuel temperature at the reactor core outlet was ac~-
+that the requested change in the fuel temperature at the reactor core outlet was ac-
 complished and that the error signal did not cross the dead band, indicates a stable
 system. System stability is again exhibited in Fig. 5, when in the run illustrated by
 this figure the heat load, or heat rejection rate, was suddenly reduced from 7.5 to
@@ -1074,55 +1081,55 @@ of control, and the reactor was operating at a steady-state power level of 10 kw
 A perturbation was induced in the control system by suddenly reducing the flux set
 
 point on the controller from 10 to 8 kw. Figure 6 shows that with the control system
- 
+11
 
-1
+START 10'set.
+—-. '*| }k . ORNL DWG. 49-4518
 
-TART —— 10
-5 — he sec ORNL DWG. 69-4518
+ 
 
  
 
 ERROR
-SIGNAL Low =
-oead [of
-BAND
-HIGH =
-
+SIGNAL Low
+DEAD [ |
+8D | 7
+HIGH
 FULL
-CONTROL ROD wpR
+CONTROL ROD  wpr  —
 VELOCITY
+FULL [
+INSERT ~
+1212.5—1
 
- 
-
- 
-
-FULL
-INSERT ~~
-1212.5
 FUEL TEMP AT
-REACTOR CORE |
-OUTLET, °F I
-(CONTROL SET
+REACTOR CORE
+
+ 
+
+ 
+
+OUTLET, °F i
+(CONTROL SET f
 POINT)
 1200 ——
 CHANGE IN
 CONTROL ROD
-POSITION INSERT-
-(10 LINES /in.) &
-WOR. —
+POSITION INSERT—
+(10 LINES/in) ; )
+WDR. —
 10-
 POWER, Mw
-1212.5
+1212.
 FUEL TEMP AT
 REACTOR CORE
-OUTLET, °F
-1192.5
-1175 =
+QUTLET, °F
+1192
+175
 FUEL TEMP AT
 REACTOR CORE
 INLET, °F
-155—
+1155—i
 
 Fig. 4. Response of the Controlled MSRE to a ~5°F/min Ramp Change in the
 Temperature Set Point with Temperature Mode of Control.
@@ -1130,146 +1137,130 @@ Temperature Set Point with Temperature Mode of Control.
  
 
  
-START ae
-ORNL DWG. 69-4519
+12
+
+START 10 sec
+ORMNL DWG. £69-4519
 
  
 
-ERROR
-Low
-SIGNAL eS
-BAND | ©
+ 
+
+ERROR ~fd-
+SIGNAL Lo
+DEAD
+BAND 0-
 HIGH
 FULL
-CONTROLROD WR. —
+CONTROL ROD WDR. ~
 VELOCITY
+0
 FULL
 INSERT
-1212.5 =
+1242.5 =
 
 FUEL TEMP AT
 REACTOR CORE
-
- 
 
 OUTLET, °F
 (CONTROL SET
 POINT)
 1200 -
 CHANGE IN
-CONTROLROD INSERT
+CONTROL ROD INSERT
 POSITION
-(10 LINES/in.)
+(10 LINES/in ) 0
 WOR.
-10 -
+0 =
 POWER, Mw
-0-
+n_
 1212.5
-FUEL TEMP AT 3
-REACTOR CORE
-OUTLET, °F
-1192.5-—
-1195 ——
-
- 
-
 FUEL TEMP AT
 REACTOR CORE
+QUTLET, °F
+1192.5-
+FUEL TEMP AT ' 19° ~
+REACTOR CORE
 INLET, °F
+1IE. =
 
  
-
-"Hs -
 
 Fig. 5. Response of the Controlled MSRE to a Sudden Reduction in Heat Load
 from 7.5 Mw to ~5 Mw with Temperature Mode of Control.
-
- 
 
  
 13
 
 10 sec
 
-ORNL DWG. 69-4520
+ORNMNL DWG. 69-4520
 
  
 
  
 
+  
  
 
 ERROR
-SIGNAL DEAD
-BAND 0-,
-CONTROL
-FULL
+SIGNAL DEAD :
+BAND 0-;
+—_—
+CONTROL FULL
 ROD WOR.
 VELOCITY
-
 FULL
 INSERT
 CONTROL ROD
-POSITION wo
-(10 LINES/in)
-INSERT
-20
+POSITION WOR.
+(10 LINES/in.) +
+INSERT |
 POWER, kw
 
- 
+0=
 
-o-EE
-
-Fig. 6. Response of the Controlled MSRE to a Step Change in the Power Set |
+Fig. 6. Response of the Controlled MSRE to a Step Change in the Power Set
 Point from 10 to 8 kw with Flux Mode of Control and with the Feedback Gain the
-Same as That Used in the *°U System.
-ERROR
-SIGNAL
+Same as That Used in the “°U System.
+10 sec
 
-CONTROL
+ORML DWG. 69-4521
+
+ERROR
+SIGNAL
+DEAD
+BAND
+FULL
+CONTROL WDR.
 ROD
 VELOCITY
-
-CONTROL ROD
-POSITION
-(10 LINES /in)
-
-POWER, kw
-
-10 sec
-
-ORNL DWG. 69-4521
-
-DEAD
-BAND | 07
-
-FULL |
-WDR.
-
+0
 FULL
 INSERT
+CONTROL ROD WOR.
+POSITION
 
-WOR.
-
+(10 LINES /in)
 INSERT
 
    
 
-20
+20~
 
-0
+POWER, kw
+
+0-
 
 Fig. 7. Response of the Controlled MSRE to a Step Change in the Power Set
 Point from 10 to 8 kw with Flux Mode of Control and with the Velocity Feedback
-Gain 3.3 Times That Used in the 2*°U System.
-
- 
+Gain 3.3 Times That Used in the **°U System.
 15
 
-the same as that for the ?35U fueled reactor there was some instability in the run.
+the same as that for the *3°U fueled reactor there was some instability in the run.
 The error signal repeatedly traversed the width of the dead band and initiated alter-
 nate rod insertions and withdrawals. Figure 7 shows that with the rod-velocity feed-
-back gain in the control system at 3.3 times its value for the *°U system the system
+back gain in the control system at 3.3 times its value for the °U system the system
 
 is much more stable.
 
@@ -1280,9 +1271,9 @@ on how the safety system would perform in.response to a reactor period trip sign
 
 The log P model was used for these runs (the thermal system model was not used since
 the power peaks were predicted to be very low). The rods were continuously with-
-drawn in such a way that the reactivity increased at a steady rate of 0.0935% &K/K-
+drawn in such a way that the reactivity increased at a steady rate of 0.0935% 5K/K -
 sec. Various initial reactor criticality conditions, initial power levels, and initial
-background-gamma-activity levels were used in the computer runs. The resulting
+background-gamma=-activity levels were used in the computer runs. The resulting
 power peak, even with ten times the estimated background gamma activity, was only
 630 kw (Fig. 10). The strip-chart recorder charts for three of the runs are shown as
 Figs. 8-10.
@@ -1302,7 +1293,7 @@ kw (Fig. 9).
 
 The initial conditions for the run recorded in Fig. 10 were that the reactor
 
-was 0.04 5K/K subcritical at a power level of 0.01 w and the gamma activity level
+was 0.04 8K/K subcritical at a power level of 0.01 w and the gamma activity level
 
  
 16
@@ -1311,24 +1302,24 @@ was equivalent to a neutron flux of 100 kw. For this case, the shortest reactor 
 
 was approximately 0.15 sec, and the peak power was approximately 630 kw.
 
-3.3 The ®23U Resuspension Accident
+3.3 The 23 Resuspension Accident
 
-The 222 resuspension accident is only a postulated accident, and whether or
+The °°U resuspension accident is only a postulated accident, and whether or
 not a mechanism for its happening exists is debatable. If a mechanism should exist,
 the events leading to the accident might be as follows:
 
-1. During operation of the reactor, a fraction of the *3°U would precipitate
+1. During operation of the reactor, a fraction of the ***U would precipitate
 from the fuel solution and collect in the primary loop external to the re-
 actor core. The control rod would withdraw to compensate for the resulting
 loss in reactivity. This process could take place at such a low rate as to
 be imperceptible to the reactor operator. The loss in reactivity associated
-with a loss of a given mass of fuel will be designated as 5K, .
+with a loss of a given mass of fuel will be designated as 6KO .
 
-2. After a substantial mass of 2*2U has collected in the primary loop outside
+2. After a substantial mass of ®22U has collected in the primary loop outside
 the reactor core, it could be swept back through the core by the flowing
 fuel solution.
 
-3. As the highly concentrated *3°U mass traversed the reactor core, the re-
+3. As the highly concentrated *3*U mass traversed the reactor core, the re-
 activity would increase, causing a power excursion.
 
 In this accident the fuel is presumed to precipitate uniformly from the entire
@@ -1339,54 +1330,60 @@ piece through the system. The piece, when it enters the core, is several times t
 entire amount which was precipitated from the core. Moreover, as the piece traverses
 the system, it will af some time enter the highest importance region of the core. As
 an example, while the maximum integrated amount of reactivity removed from the core
-in this process may have been about 1%8K/K , the maximum postulated reactivity in-
+in this process may have been about 1%5K/K , the maximum postulated reactivity in-
 
 crease on resuspension may approximate 5% 5K/K .
 
  
-ORNL DWG. 69-4522
+ 
 
-START == 3 pt sec
-10- me J
-[LOG P (1) -LOG P 03] Sek p= =
-P@=1w 2
+17
 
-  
+ORNL DWG. 69-4522
+
+START ﬁ ~’ I——ﬂ sec
+10-. ==k - —=
+
+[LOGso P (t) ~LOG1o P (0] ==F . ===
+P)=1w =
+
+ 
 
 INVERSE REACTOR
-PERIOD, SEC”!
+PERIOD, SEC™!
 
 0
-+0.05-
++0.05
 
 REACTIVITY DUE TO
 ROD WITHDRAWAL, 8K/K
 
-= 0.057
+-0.05
 
-PERIOD SAFETY +25
+PERIOD SAFETY 62
 
 SCRAM SIGNAL, v
 
-SCRAM LEVEL—g
+SCRAM LEVEL
 
 Fig. 8. Startup Accident with No Safety Action.
 
  
+18
+
+ORNL DWG., 69-4523
 
  
-ORNL DWG. 69-4523
 
-START =a} f= 1 sec
+1 sec
 
-[LOG yo P+) -LOGy P (0)] 10— -
-PO) = tw
+START —_‘
 
-   
- 
+[LOGyo P(+) -LOGy P (0)] 10—
+P(o) = 1w
 
 INVERSE REACTOR
-PERIOD, SEC!
+PERIOD, SEC ™!
 
 +0.05
 REACTIVITY DUE
@@ -1403,49 +1400,49 @@ Fig. 9. Startup Accident with Normal Gamma Background and with the Safety
 System in Operation.
 
  
+19
 
- 
-  
-  
+START 5
 
-START
-ORNL DWG. 69-4524
+CRHL DWG. 69-4524
 
-| = =
-[L0G1o P (4) —LOGioP 0]
-PO = 0.0tw
+{
+[LOGyo P (£) —LOGioP ©]]
+P) = 0.01w
 
+10
 INVERSE REACTOR
-PERIOD, SEC
+PERIOD, SEC ™!
 
 +0.05
 REACTIVITY DUE
 TO ROD
-WITHDRAWAL, 6K /K
+WITHDRAWAL, &K /K
 
-=0.05
+    
+
+-0.05 1
 
 +25
 PERIOD SAFETY
 
 SCRAM SIGNAL, v
 
-SCRAM i?
+; 0
+SCRAM LEVEL £
 
 Fig. 10. Startup Accident, Starting 0.045K/K Subcritical and with Gamma
 Background Ten Times Normal.
- 
+20
 
-20
-
-The relative reactivity of the mass of resuspended *“U as a function of time
-is shown in Fig. 11, in which the mass of resuspended *““U enters the reactor core at
+The relative reactivity of the mass of resuspended “*“U as a function of time
+is shown in Fig. 11, in which the mass of resuspended “““U enters the reactor core at
 time zero. The curve shown in Fig. 11 was set up on a diode function generator. The
 output of the function generator (relative reactivity) was multiplied by the reactivity
-equivalent of the mass of “*“U deposited outside the core (°K) , and the result was
+equivalent of the mass of “?*U deposited outside the core (’EKO) , and the result was
 the reactivity as a function of time.
 
-Computer runs were made with various values for 5K, and the power level at
+Computer runs were made with various values for rSKO and the power level at
 the time of the accident. Examination of the run results shows that the initial power
 level had very little to do with the severity of the excursion.
 
@@ -1453,79 +1450,67 @@ Both the flux and reactor-period safety signals were connected. Conservatively,
 credit was taken for only two of the three rods that responded to a safety trip signal.
 The reactivity due to safety rod motion (two rods) as a function of time after the rods
 
-were released is shown in Fig. 12. The total reactivity change was -4% *K/K .
+were released is shown in Fig. 12. The total reactivity change was -4% 5K/K .
 
 For all cases, safety action was initiated prior to any significant increase in
 system temperatures. The safety action caused the reactor to go subcritical. This
 was the end of the incident for the cases where the instantaneous reactivity due to
-the resuspended #2“U did not exceed +4% 5K/K (the corresponding 5K, is approxi-
-mately +0.82% sK/K). If K, would exceed 0.82% 3K/K , the resulting positive
-reactivity would more than compensate for the -4% &K/K due to safety rod motion,
+the resuspended *°U did not exceed +4% 5K/K (the corresponding SKO is approxi-
+mately +0.82% sK/K). If SKO would exceed +0.82% 3K/K , the resulting positive
+reactivity would more than compensate for the -4% &5K/K due to safety rod motion,
 and the reactor would go critical again. These power excursions would cause the
 system temperatures to rise. The core could be damaged by excessive temperature
 increases (core melting) or from excessive rates of temperature increase (pressure
 surges) .
 
 The strip chart recordings of three runs in which the only parameter varied
-was 5K, are shown in Figs. 13-15. The initial power level for each of these runs
-was 7.5 Mw. With a value of 0.75% 8K/K for 5K, (Fig. 13), the safety rod
+was 6KO are shown in Figs. 13-15. The initial power level for each of these runs
+was 7.5 Mw. With a value of +0.75% 8K/K for 6KO (Fig. 13), the safety rod
 motion drove the reactor subcritical, and it remained subcritical with essentially no
-temperature increases. With °K, equal to +1% 8K/K (Fig. 14) the system tempera-
-tures did increase significantly. More damage is evident in Fig. 15 with BK, for
+temperature increases. With %KO equal to +1% &K/K (Fig. 14) the system tempera-
+tures did increase significantly. More damage is evident in Fig. 15 with 6KO for
 
-the run equal to +1.2% 2K/K .
-21
+the run equal to +1.2% *K/K .
+2]
 
 ORNL DWG. 69-4525
 
  
 
-RELATIVE REACTIVITY (8K/Ko)
+I
+
+wa
+
+RELATIVE REACTIVITY (8K/Kg)
 
  
 
  
 
-| ] ] | ]
-0 2 4 6 8 10 12
-TIME (sec) |
+| ] | !
+0 2 4 B 8 i0 12
+TIME (sec)
 
  
 
-Fig. 11. Relative Reactivity of the Resuspended *33U as a Function of Time
-: After it Re-enters the Reactor Core.
+Fig. 11. Relative Reactivity of the Resuspended >3 as a Function of Time
+After it Re-enters the Reactor Core. |
 
 ORNL DWG. 69-4526
 
  
 
- 
+REACTIVITY (%% 6K/K)
 
  
 
  
 
--5
-“4
-=
-~
-x
-ww
-2
-Nr 3
->
-x
-=
-=
-ow
-<C
-ol
-=
-.
-. |
-. 0 0.2 0.4 0.6 0.8 1.0
-
+I I
+0 0.2 0.4 0.6 0.8 1.0
 TIME (sec)
+
+ 
 
 Fig. 12. Reactivity Change Resulting from Safety Rod Motion as a Function
 of Time After Scram.
@@ -1533,7 +1518,7 @@ of Time After Scram.
  
 22
 
-ORNL DWG. 69-4527
+ORML DWG. 69-4527
 
 1 sec
 
@@ -1541,7 +1526,7 @@ POWER, Mw
 
 REACTIVITY ADDED
 BY FUEL RESUSPENSION,
-To 8K/K
+To 8K /K
 
 PERIOD SAFETY
 SIGNAL, v
@@ -1550,15 +1535,15 @@ SCRAM LEVEL
 
 REACTIVITY DUE
 TO SAFETY ROD
-MOTION, 7 8K/K
+MOTION, % &K/K
 
  
 
-2100-
+2100~
 
 FUEL TEMP AT
 REACTOR CORE
-OUTLET, °F
+QUTLET, °F
 (HOTTEST REGION)
 
 10
@@ -1566,9 +1551,8 @@ OUTLET, °F
 MIXED MEAN
 FUEL TEMP AT
 REACTOR CORE
-OUTLET, °F
+QUTLET, °F
 
-1
 210
 
 FUEL TEMP AT
@@ -1578,46 +1562,58 @@ OUTLET, °F
 
  
 
-1"
+"
 
-Fig. 13. **°U Resuspension Accident with an Initial Power Level of 7.5 Mw
-and with 5K = +0.75%K/K .
+Fig. 13. “°U Resuspension Accident with an Initial Power Level of 7.5 Mw
+and with EaKo = +0.75%5K/K .
 
  
 23
 
-ORNL DWG. 69-4528
+ORML DWG, 69-4528
 
- 
-
-START —] 1 Sec.
-
+START
+1000~
 POWER, Mw
 
++
 REACTIVITY ADDED
+
 BY FUEL
+
 RESUSPENSION,
-To BK /K
 
-PERIOD SAFETY
-SIGNAL, V
+T 6K /K
 
-SCRAM LEVEL:
+PERIOD SAFETY e
 
+SIGNAL, v
+SCRAM LEVEL—
+
+  
+
+-25.-
+
+_4....
 REACTIVITY DUE
 TO SAFETY ROD
-MOTION, 7 8K/K
+MOTION, o 8K/K
 
+2100
 FUEL TEMP AT
 REACTOR CORE
 OUTLET, °F
 (HOTTEST REGION)
+
+1100
 
 MIXED MEAN
 FUEL TEMP AT
 REACTOR CORE
 OUTLET, °F
 
+11
+21
 FUEL TEMP AT
 REACTOR CORE
 OUTLET, °F
@@ -1625,19 +1621,30 @@ OUTLET, °F
 
  
 
-1100-
+1"
 
-Fig. 14. 232 Resuspension Accident with an Initial Power Level of 7.5 Mw
-and with 3K = +1%K/K .
-
- 
+Fig. 14. 23 Resuspension Accident with an Initial Power Level of 7.5 Mw
+and with &K_ = +1%3K/K .
 
  
-POWER, Mw
 
+ 
+ 
+
+24
+
+ORNL DWG, 69-4529
+
+2500
+
+POWER, Mw
+
++10
 REACTIVITY ADDED
 BY FUEL
-RESUSPENSION, To 8K/K
+RESUSPENSION, %= BK/K
+
+   
 
 PERIOD SAFETY
 SIGNAL, v
@@ -1646,66 +1653,54 @@ SCRAM LEVEL
 
 REACTIVITY DUE
 TO SAFETY ROD
-MOTION, 7 8K/K
+MOTION, 7 6K/K
+
+2100
 
 FUEL TEMP AT
 REACTOR CORE
-OUTLET, °F
+OQUTLET, °F
 (HOTTEST REGION)
 
+1100
+
+1600
 MIXED MEAN
 FUEL TEMP AT
 REACTOR CORE
-OUTLET, °F
+QUTLET, °F
 
+1100
+
+2100
 FUEL TEMP AT
+
 REACTOR CORE
 OUTLET, °F
 (CENTRAL REGION)
 
-24
-
-START
-2500,
-
-+10
-
-1100:
-1600
-
-1100
-2100
-
-1"
-
-ORNL DWG. 69-4529
-
-  
  
 
- 
+"
 
-Fig. 15. ®2°U Resuspension Accident with an Initial Power Level of 7.5 Mw
-and with 5K = +1.2%EK/K .
-
- 
+Fig. 15. #7°U Resuspension Accident with an Initial Power Level of 7.5 Mw
+and with tK_ = +1.2%5K/K .
 25
-
 4. CONCLUSIONS
 
-The existing controller will control the *32U fueled system in a stable manner;
+The existing controller will control the *33U fueled system in a stable manner;
 however, an increased velocity feedback gain will be required.
 
 The safety system limited the startup accident so that the peak power was only
 100 kw (10 times normal gamma background).
 
-A quantity of *33U sufficient to cause a reactivity change of approximately
--1% 5K/K when precipitated out of the fuel solution at some point in the system ex-
+A quantity of “3°U sufficient to cause a reactivity change of approximately
+-1% *K/K when precipitated out of the fuel solution at some point in the system ex-
 ternal to the core could be swept back into the core in a concentrated form without
 causing excessive core damage. The maximum allowable fuel temperature increase
 at the hot channel would be 340°F. The fuel outlet temperature of the hottest region
-increased ~210°F for x, equal to 1% 8K/K (Fig. 14). The temperature increase
-for 5K, = 1.2% 8K/K was 390°F (Fig. 15). The case where BK, = 1% 6K/K was
+increased ~210°F for 6Ko equal to 1% 8K/K (Fig. 14). The temperature increase
+for 6Ko = 1.2% 5K/K was 390°F (Fig. 15). The case where 6KO = 1% 3K/K was
 
 conservatively chosen as the limiting case.
 ACKNOWLEDGMENTS
@@ -1737,7 +1732,7 @@ the following arguments.
 
 Neglect variations in effects in directions lateral to fuel flow. Define x as
 a variable in the direction of fuel flow, with x = o at the core entrance. With the
-flow length in the core taken as A and outside the core as B , the system is evi-
+flow length in the core taken as A and outside the core as B, the system is evi-
 dently periodic in x (with period A +B). Assume that the flow in the system occurs
 without mixing. Further, assume that the neutron kinetic equations are separable in
 time and space (although this will certainly not be true for some parts of a transient)
@@ -1746,59 +1741,59 @@ and, accordingly, write those equations with the space point as an explicit vari
 
  
 
- 
-
-dnt) = Boia) + PRAR , (10)
+T = = Ban < ) cian (10)
 and
 
-dC.(x,1) B.
+dC.0t) B,
 
-— = Tnx) - ACOH) , (an
+T = Tn(X,f) - )\Ici(x’f) r (1])
 
-n(x, t) = neutron flux density at x,t,
+n(x,t) = neutron flux density at x,t,
 
-subscript i = index denoting ith delay group,
+subscript i = index denotingith delay group,
 
-C.0x/t) = atomic density of precursor to ith delay group at x,t,
+Ci(x,'r) = atomic density of precursor toith delay group at x,t,
 0 = reactivity = (k - 1)/k,
 
 k = multiplication rate,
 
-B. = number of precursors of ith group produced per fission,
-\ = reciprocal time constant of ith group,
+Bi = number of precursors of ith group produced per fission,
+Y = reciprocal time constant of ith group,
 
-=
-I
+-
 
 A system neutron generation time,
 
-B - TB;
+p = 1B, .
 
  
 27
 
-The variables p and A are functions of the whole system, not of x; and
-B. , B, and A, are physical constants, also independent of x .
+The variables ¢ and A are functions of the whole system, not of x; and
+
+Bi ;, B, and A, are physical constants, also independent of x .
+
 In a system with flow, the total time derivatives can be interpreted with
 
 partial derivatives as follows:
 
-dn(x ,t) an(x ,t) dx 3n(x ,t)
-n _ n Ln n (12)
-dt at dt 3x !
+dn(x ,t) an(x ,t) dx_ 3n(x ,t)
+n n n n
+
+_— = +
+dt Dt dt BX ! (12)
 
  
 
+dCi(xi,f) aCi(xi,’r) dx. 3C.(x.,t)
+
+|
+—_— = +
+dt St dt dx, ! (13)
+
  
 
-dC.(x.,1) dC. (x,t) dx. dC. (x,t)
-dt ot dt OX.
-
- 
-
- 
-
-x is the x coordinate of n, and x. is the x coordinate of C. . If the fixed
+X is the x coordinate of n, and X, is the x coordinate of Ci . If the fixed
 
 laboratory frame is chosen as the frame of reference, then
 
@@ -1806,22 +1801,24 @@ and
 
 = v(t) = fuel flow velocity. (15)
 
-Now, if Eqs. (12-15) are inserted into Eqs. (10) and (11), and if Egs. (10) and (11)
+Now, if Eqs. (12-15) are inserted into Egs. (10) and (11), and if Eqs. (10) and (11)
 
-are integrated over x from Oto A, then
+are integrated over x fromOto A, then
 
-dn(t) _ (2) n(t) + LE) , (16)
+an(t) _ (9—[}3) n(t) + inci(f) , (16)
 
  
 
-otf
+ot
 
 and
 
  
 
-i B; v(t)
-= nt) -2.C.t) - ZL {C.(A}) - C.0,1) . (17)
+P e Yt re(an - .00 17)
+= =0l - A.C.) - 5L {C (A - C.ONT . (
+
+ 
 
  
 28
@@ -1830,69 +1827,68 @@ Define
 
 = core transit time,
 
-Il
+I
 
 external loop transit time.
 
 With the assumption of no mixing, the following relation holds:
 
--\.T
-C.(0,1) = CIA = 1 (De
+—K.TL(’r)
+C.(0,1) = C.IAt = 7 (D)]e ! (18)
 
-(t)
-(18)
-
-Consistent with the assumption of time-space separability, the end point value C.(A,t)
-i
+Consistent with the assumption of time-space separability, the end point value Ci(A,f)
 
 will bear some fixed relation to the mean value C.(t), i.e.,
 i
 
-C.(A/t) = fC.(t) . (19)
+CE(A,’r) = fC.(t) . (19)
 
 With Egs. (18) and (19) incorporated into Eq. (17), there results
 
-C(t) B. ; LT (0)
+ACi(f) : ¢ —x.'rL(f)
 
-_ f i
-Tf fen sper nee TTL
+_ f |
+s - - [M * W}Ci(f) ¥ :—CWC;U - 7 (e . (0
 
  
 
 Equations (16) and (20) comprise the basic neutron kinetic equations for the
-model of the flowing system. (In the simulation we chose the parameter f = 1.)
+model of the flowing system. (In the simulation we chose the parameter f = 1 .)
 
 In Eq. (20) for each of the six delay groups there is an equation involving
-the term cn - T (] . Lagging a function, as indicated by the argument t - TL
+the term Ci[f - TL(’r)] . Lagging a function, as indicated by the argument t - T
 involves memory. The available analog equipment contained only two such memory
+lag devices. The system lags t and T are of the order of a few seconds and are,
 
-lag devices. The system lags te and 7, are of the order of a few seconds and are,
-
-L
 therefore, roughly comparable to the lags of two of the delay groups. Hence, the
 
 available lag equipment was assigned to the representation of those two groups.
-Sher (0)
+-XETL(f)
 For the two short-lived delay groups the factor e is a very small
 
-quantity, 107% or less. Hence, for those two groups, the lag term can be neglected
+quantity, 107° or less. Hence, for those two groups, the lag term can be neglected
 
 and the following equation can be written:
+
+ 
 29
 
  
 
-=F = + n(t) - hn + jes . (20a)
+»C.(H B, ;
+57 = Tn(f) = |}\i + W}C'(f) . (20a)
 
-In the two longest-lived delay groups, the time constants are considerably
+| In the two longest-lived delay groups, the time constants are considerably
 
-larger than the system T's . Therefore the term C.( - 7.) can be reasonably ap-
+larger than the system T's . Therefore the term Ci(t - 7.) can be reasonably ap-
 
 L
 proximated by
 
-t TL
-C.( - T) = / e C.(t) dt’. (21)
+ 
+
+t T
+‘ C.lt - 1) = f e © C.(t)dt" . (21)
 
 Equation (21) is the so-called first-order lag, easily achievable with analog
 equipment. Hence, the lag term is handled by incorporating Eq. (21) in Eq. (20)
@@ -1901,10 +1897,8 @@ delay groups, and by implementing Eq. (20) with the available lag devices for th
 two intermediate-time delay groups.
 
 The limit to the precision with which components are made places limits on
-
-: the accuracy of the analog computer. The precision of the analog computer used in
-
-this study limits to the range of 107% to 1072. Such accuracies are, of course, quite
+the accuracy of the analog computer. The precision of the analog computer used in
+this study limits to the range of 107* to 1072, Such accuracies are, of course, quite
 adequate for most problems. Startup is an exception, since power levels and related
 quantities change by many decades.
 
@@ -1912,39 +1906,39 @@ To deal with this problem, a model is constructed which computes logarithmic-
 
 like quantities. Define
 
-g = logn, (22)
-oF
-h. ==. (23)
+g = logn , (22)
+Ci
+hi = — . (23)
 
 When Egs. (22) and (23) are inserted in Egs. (16) and (20), the following equations
 
 resu lt:
 
  
+
+ 
  
 
+29 - p =B, Zx.h.(f) , (24)
+
+ 
+
  
 
  
 
-dh. (t) B ’
-seme =e pe
-f nlt - (1) TH)
-
-The factor n[t - 7 (B]/n(t) in Eq. (25) can be troublesome to deal with.
+The factor n[t - TL(f)]/n(f) in Eq. (25) can be troublesome to deal with.
 In steady state its value is 1. When the power is rising, its value lies between zero
 and 1, and when the power is falling, its value is above 1. Since interest in the
 startup problem is confined to times when the system is in steady state (before startup)
 or when the system is increasing the power level until a safety trip occurs, and, fur-
-ther, since during times of increasing power h(t - T) will be less than, possibly
-much less than, h. (t) , the factor n(t - T/n(t) is replaced with 1. Then, the
+ther, since during times of increasing power h;(f - TL) will be less than, possibly
+much less than, hi(f) , the factor n(t - TL)/n(f) is replaced with 1. Then, the
+
 lagged terms are treated in a manner analogous to their treatment in the untransformed
 
 model, and the final result is
 
-oh. (t)
-ot i At
-
  
 
  
@@ -1952,6 +1946,15 @@ ot i At
  
 
  
+
+ 
+
+ah.(t) B.
+afl + ha(h) ag’ff) _ ﬂ\_i _ [X; . ch(f)]hi(f)
+f ')\iTL(I‘)
++ T M h.[t -7 (H)]e ' (26)
+oh.(t) B
+M' i hi(f)—z%(f—) = /\_I - {)\i +T:(f)}hi(f) , (26q)
 
  
 
@@ -1971,76 +1974,79 @@ can be written as follows:
 
  
 
-d 2 (HA),
-ar [oC = =v (a, -0) +k, (28)
+ 
+
+J B(HA)i
+af—[ocpé] = SV (cli -0) +k, (28)
 i
 0 = material density,
-. C = specific heat of the material at constant pressure,
-9 " = temperature of the material,
+Cp = specific heat of the material at constant pressure,
+g = temperature of the material,
 a. = temperature of an adjacent material,
-AHA),
-=v = rate of change in the heat transfer from the ith material with an
+A(HA),
+=V = rate of change in the heat transfer from the ith material with an
 increment in V ,
 k = amount of heat deposited per unit volume per second,
-HV = differential volume = S3x ,
+AV = differential volume = Sax ,
 S = cross-sectional area of the system (assumed constant).
 
 If the material is flowing with velocity v(t) we have, as in the case of the
 
 neutron delay group precursors,
 
-d _ 9 3
-ar [oC°] - Sr Lec, 8 + v(t)52 [oC 8] . (29)
+d A 3
+a_,r—[oc:pe] = a—,r-[ocpe] + v(r)a—;[one] : (29)
+
+ 
 
  
 32
 
 In the above discussion we assumed only one degree of spatial freedom and,
 in effect, incompressibility of the flowing material. Equation (28) is integrated over
-a volume between two points in x which are characterized by n-1 and n and
+a volume between two points in x which are characterized by n -1 and n and
 
 produces the following:
 
-1%)
+W
 —_—
 x
-3
-1
-xX
-3
-1
-~~
-“|
-=
-Mo
-O
-©
-@
-3
-|
-Il
-~~
-T
 >
-So’
-~
+i
+X
+>
+1
+I_J
+e
+<]
+—
+0
+@
+O
+D
 3
-—_——
+L
+[l
+——
+I
+&
+>
+————
 Q
-~
+':.
 >
 !
-a
+@D
 3
-=
+———
 
 or
 
  
 
-ee . ) ’ = - — Le. 2s) (30)
+:\—é’—n_(aim . gn) ’ oCL - T]('f) (@n i en-l) ' (30)
 
-In flowing systems, those with v(t) # 0, some purely mathematical instabili-
+In flowing systems, those with v(t) # O, some purely mathematical instabili-
 ties can arise from the way mean values are related to endpoint values. To avoid such
 
 problems Eq. (30) is often replaced with the pair
@@ -2051,21 +2057,22 @@ problems Eq. (30) is often replaced with the pair
 
  
 
-_ i,n k 2 = _
+30 (HA).
+_ i, n k _ 2 = _
 
-A M C ¥ oC T(t) ® O-1 (31a)
+T MC "o TTm %h T % (31a)
 
-i p n
+i P n
 and
-26 (HA).
-no _ i,n [— I k 2 =
+X (HA).
+n _ i,n [— I k 2 =
 
-TC = 7) "CTT e, 7) : (31b)
+Y M C (ai,n 8n) ¥ oC T (t) (Gn 6n) : (31b)
 
-i n p n
+i np P n
 
-Past studies of the MSRE with *3°U loading have shown that to have a faithful
-representation of effects at low power’ it is necessary to make a multinode repre-
+Past studies of the MSRE with *®°U loading have shown that to have a faithful
+representation of effects at low power ’® it is necessary to make a multinode repre-
 sentation of the core for heat transfer calculations. Nine such temperature nodes have
 been found to produce satisfactory results. At each of the nine nodes an equation of
 
@@ -2076,45 +2083,51 @@ of the form of Eqs. (31a) and (31b) are used to determine the fuel temperatures.
  
 
  
-With the subscript G
+33
+
+With the subscript G denoting graphite, and f denoting fuel, and with the
 
 substitutions
 
  
 
- 
-
-33
-
-denoting graphite, and f denoting fuel, and with the
-
- 
-
- 
-
- 
-
-8 - Ts ’
-a - Te ’
-k - raf ,
+8 - TG ,
+o - Tf ;
+k - rGP ,
 we get
-Ton rT) a2
-at Meni f,n G,n °6oG
+AT (HA) r. P
+Bf’n - M - (Tfn"TG n)+oGC’n (32)
+Gn pG'\ f ! G pG
 P = total power,
-Gon fraction of total power deposited in unit volume of graphite at the
-nth node.
-Similarly, from Eqs. (31a) and (31b) we obtain the fuel temperature equations
-2T (HA) re P
-f,n n [= = f,n 2 [=
-I = —-— + ! - -
-St MC 7s, To) oC. TT #7,» Te nes) ro (33)
+‘G on = fraction of total power deposited in unit volume of graphite at the
+E’rh node.
+
+Similarly, from Egs. (31a) and (31b) we obtain the fuel temperature equations
+
+AT . (HA)n _ r. P 9
+
+ 
+
+ 
+
+ 
+
+ 
+
+f,n _ ( = ) f,n (—- )
+- T -7 )+l T -T, |, (33)
+X M Tl Gon ™ n] TS T T B e T T
+T (HA) r. P
+f,n _ n (= = f,n 2 =
+5t M, C (TG,n Tf,n) foE - wl Tf,n) ' (33b)
 f,n pf fpf n
-aT (HA) ro P
-f,n _ n u = f,n 2 =
-—n "IT -T + - T -T (33b)
-at Me not G,n f,n 0fCot T(t) f,n f,n
+
 In the external piping where h and k are zero we adapt Eq. (31a) and write
-Slo 2n a
+
+=2 _
+< W(Ti_l Ti). (34)
+
+ 
 
  
 34
@@ -2123,20 +2136,20 @@ Slo 2n a
 
 There was not sufficient analog equipment available to simulate all aspects
 
-of the system simultaneously. Since the detailed response of the external heat sink
+of the system simultaneously . Since the detailed response of the external heat sink
 
-was not important to any part of the study, we decided to make an abbreviated descrip~
+was not important to any part of the study, we decided to make an abbreviated descrip-
 
 tion of it, abstracting and representing those features which would comprise its essen-
 tials. The entire system is represented by a few gains and lags appropriately jointed
 together, as follows:
 
-1. The temperature signal sent to the control system as the core outlet temperature
-is the core outlet temperature after it has passed through a gain of one lag cir-
+. The temperature signal sent to the control system as the core outlet temperature
+is the core outlet temperature aofter it has passed through a gain of one lag cir-
 cuit. The lag represents transport from the core outlet to the sensing element
 plus thermal lag in the sensing element.
 
-2. The temperature sent to the control system as the core inlet temperature is, in
+2, The temperature sent to the control system as the core inlet temperature is, in
 fact, a lead value of the core inlet temperature. It is sent through a gain of one
 lag circuit to the control system, the lag representing the thermal lag of the sens-
 ing element. It is also sent through a gain of one lag to the core inlet, the lag
@@ -2151,15 +2164,63 @@ other lag associated with them. The heat exchanger gains and lags are represente
 
 as follows:
 
-t
+(35)
 
-Jett ara + - KT, Jd’, (35)
+—
+I
+=
+|
+@
+1
+—
+~
+4
+o
+—
+N
+©
+-—
+o)
+=
+~
++
+———
+!
+Z
+—
+>>L_1
+0.
+—
+-
 
--0
+_—l
+V)
+——
 
-Tt)
+—
+——
 
-Tot) = T,0) + GT.) , (36)
+hi
+
+-—
+—
+
+-
+—
+
++
+
+-—l
+o
+—
+
+—
+St
+~
+
+(36)
+
+ 
 
  
 35
@@ -2167,8 +2228,8 @@ Tot) = T,0) + GT.) , (36)
 T, = fuel temperature at the heat exchanger outlet,
 
 T. = fuel temperature at the heat exchanger inlet,
-) Ty = coolant salt temperature at the heat exchanger inlet,
-] Th = ambient air temperature,
+y TH = coolant salt temperature at the heat exchanger inlet,
+i TA = ambient air temperature,
 
 G = heat exchanger gain (constant),
 
@@ -2176,26 +2237,28 @@ K = system gain (power dependent),
 
 The power dependent K is defined by
 
-Tout - CP - LN
+Touf - CP - TA
+
+ 
 
 where P is the power level and C is a unit conversion constant.
-The above scheme is summarized in Fig. 16. T,; and T: are the temperatures
+The above scheme is summarized in Fig. 16. T, and T are the temperatures
 
 delivered to the control system as the core outlet and inlet temperatures, respectively.
 
-1, is the transport and thermal lag to outlet sensor. 7, is the transport lag to the
+T, is the transport and thermal lag to outlet sensor. T is the transport lag to the
 
-heat exchanger. T, is the lag in the change of gain of the system with a change in
+heat exchanger. 7. is the lag in the change of gain of the system with a change in
 
-power. T, isthe transport lag from the heat exchanger to the inlet temperature sensor.
-- T, is the temperature at the inlet temperature sensor. 74 is the thermal lag in the
+power. T, is the transport lag from the heat exchanger to the inlet temperature sensor.
+- T. is the temperature at the inlet temperature sensor. T4 is the thermal lag in the
 
-inlet temperature sensor. T: is the transport lag from the sensor to the core inlet.
+inlet temperature sensor. T is the transport lag from the sensor to the core inlet.
 
-T. and T , are core inlet and outlet temperatures, respectively.
+T. and TO , are core inlet and outlet temperatures, respectively.
 in u
 
-5.4 Safety Systems
+5.4 Sdafety Systems
 
 5.4.1 Trips
 
@@ -2203,7 +2266,7 @@ Two kinds of safety trip were simulated for the study: a period trip and a
 power level trip. The safety trip simulation brings out one of the most powerful fea-
 tures of analog analysis. The simulation is hardly a simulation at all but rather a
 
-Co - nearly identical copy of the components which were used to make the safety trip
+- nearly identical copy of the components which were used to make the safety trip
 
 system on the reactor itself.
 
@@ -2214,21 +2277,21 @@ system on the reactor itself.
 
 Period Trip.--The reactor period is defined as
 
-_ (1 an\™" _ [3 log n\™* .
-of -
+_ {13\ _ (3 log n\~* .
+Ty (;gr) (af ) : (38)
 
  
 
-where Te is the period and n is the neutron flux density. Te is a function of time
+where TR is the period and n is the neutron flux density. TR is a function of time
 unless the neutron flux density is exponential. Since it is necessary in the course of
 the simulation to deal with both n and log n, some switching must be provided to
 avoid saturation of equipment. We define the effective flux density seen by the ion
 
-chamber as n* = n+ G , G = gamma-ray contribution.
+chamber as n* = n+ G, G = gamma-ray contribution.
 
 The MSRE safety trip circuitry is actuated when
-3 ot Ce 3
-ye log " > Pr = period trip. (39)
+3 -1
+~— log n*) > P_r = period frip. (39)
 
 When the neutron flux density n is on a purely exponential period 7, the
 
@@ -2236,7 +2299,7 @@ apparent period of n* is
 
  
 
-T* = To. (40)
+T* = T . (40)
 n
 
 Evidently, the period trip is of little use until n is not much less than G . We can
@@ -2244,8 +2307,8 @@ Evidently, the period trip is of little use until n is not much less than G . We
 reasonably simulate the trip system over different ranges of n, as follows:
 
 n*= G, if n< 0.05G
-*= n+ G, if0.05G <n < 100G
-*= nn, if 100G < n (41)
+*=n+ G, ifO.0O5G < n < 100G
+*=n, if 100G < n (41)
 
 3
 |
@@ -2253,36 +2316,36 @@ n*= G, if n< 0.05G
 3
 |
 
-In the first range n < 0.05 G , no signal is sent to the trip circuit. When
+In the first range n < 0.05 G , nosignal is sent to the trip circuit. When
 n enters the second range, the log n is converted to log (n + G) and differentiated,
 and the output is sent appropriately to the trip. When n enters the third range, log n
-is differentiated and the output is sent to the safety trip. It is necessary to provide -
+is differentiated and the output is sent to the safety trip. It is necessary to provide .
 two parallel differentiating circuits and to switch them at their output end rather than
 
 to provide a single differentiation circuit with a switch on the input. This is because
 
  
+
+ 
  
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-CORE
-
 37
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
 
 ORNL DWG. 69-4530
 
@@ -2314,14 +2377,19 @@ ORNL DWG. 69-4530
 
  
 
-Tin
-GAIN-1
-LAG-Ts
-fo
-. Y
-GAIN- 1 CONTROL
-LAG-T SYSTEM
-Fig. 16.
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
 
  
 
@@ -2337,38 +2405,28 @@ Fig. 16.
 
  
 
-Tour | GAIN-1 Ty CONTROL
+ 
+
+ 
+
+T _
+CORE o [caIN-1 [T, CONTROL
 LAG-T, SYSTEM
-Y
-GAIN-1 |T2
-LAG-T, |
+A Y
+T
+- GAIN-1 | T2 -
+GAIN-1 LAG-T, >
+LAG-Ts
+? (K-G)Tp
+T4 GAIN-1 T -
+LAG-T, ‘3—< GAIN-1 I
+Y 4 -
+-G Ty LAG-T, (I-K)TA( )“_
+GAIN-1 CONTROL
+LAG-T; SYSTEM
+Fig. 16. Schematic Diagram of External Heat Sink.
 
  
-
- 
-
-(K-G)Tp
-
- 
-
- 
-
- 
-
-GT2
-GAIN-1 2 GAIN-1 T
-LAG-Ty < or (R=
-= (-KTa
-
-1-6) Ty LAG-T3
-
- 
-
- 
-
- 
-
-Schematic Diagram of External Heat Sink.
 
  
 38
@@ -2380,9 +2438,8 @@ tion corresponds almost exactly to the actual wiring diagram in the MSRE system.
 
 n signal is fed into a log diode and from there to a differentiated circuit.)
 
-Level Trip. -=The power level trip plays the major safety monitoring role when
+Level Trip.--The power level trip plays the major safety monitoring role when
 the system is at power. If the neutron flux detector signal exceeds a preset level, a
-
 trip signal is sent to the safety system. The simulation of the level trip is shown in
 
 Fig. 1.
@@ -2395,26 +2452,26 @@ In both the log n simulation (Fig. 2) and the n simulation the safety drive is
 simulated in two sections. The first section is a time lag that represents the inertial
 lag of the drive. This is represented by integrator 51 in Fig. 2, the log n model;
 and by the section entitled "Safety System Time Lag Generator" in Fig. 1, the n model.
-This latter section can be actuated by either a period or a level trip signal. There is :
+
+This latter section can be actuated by either a period or a level trip signal. There is -
 no provision for level trip in the log n model.
 
 In Fig. 2, amplifiers 70 and 71 simulate safety rod motion. A constant rod
-acceleration of 10 ft/sec” was assumed. A constant reactivity-change per inch of rod
+acceleration of 10 ft/sec” was assumed. A constant reactivity—-change per inch of rod
 travel was also assumed, and this was set on potentiometer Q71.
 
 In Fig. 1, the output of amplifier 70 is a voltage proportional to time. This
 voltage drives a function generator whose output is a function of time. The function
 generator output as a function of time is shown in Fig. 12. This output is the change
 
-in reactivity due to safety rod movement in units of (o/N) .
+in reactivity due to safety rod movement in units of (p/4) .
 
 5.5 Control System
-
 5.5.1 Control Signal
 
 The control system signal is sketched in Fig. 3 as Temperature Controller ¢
 
-Generator. The following discussion will concern the five amplifiers 21,, 31,, 32,
+Generator. The following discussion will concern the five amplifiers 21, 31,, 32,
 
 30,, and 36, and their associated circuitry. This circuitry is abstracted with very
 
@@ -2430,66 +2487,70 @@ considering the output of each amplifier in turn.
 The feedback circuitry of 21, introduces a gain of 10 and a first-order lag of
 100 sec. Lagged quantities are designated by a superscript L . Each amplifier, of
 
-course, multiplies by -1 in addition to any gain factor.
+course, multiplies by =1 in addition to any gain factor.
 
-The inputs to 21, are +0.2T’ , 0.27" . , and -0.5P,
-c,out Cc, In
+The inputs to 21, are +0.2T’ , -0.27" . , and -0.5P,
+c,out c,In
 = core outlet temperature, °F,
-c,out
-T . = core inlet temperature, °F,
+¢, out
+T . = core inlet temperature, °‘F,
 c,in
 P = reactor power in Mw,
 
 T'(v) = [T(°F) - 1100°F)/2 .
 The output of 21, is then
 
-Lo ort -o.set. (42)
+Lo o021t Co.sph). (42)
 
-c,out c, In
+c,out c,In
 
--10(0.21
+—10(0.2T
 
-The input to 31, is the output of 21, - 21 +112.5. The quantity 112.5 is simply
+The input to 31, is the output of 21, - 2T; - +112.5 . The quantity 112.5 is simply
 two times the desired scaled voltage value of the core outlet temperature, or two times
-the core outlet set point, T . The output of 31; is then
 
-0/51, - 7) - Evy -T ) _ spb, (43)
+the core outlet set point, Ts/o . The output of 31 is then
 
-c,in c,in
+c,in c,In
+
+lO{l/S(T(':LOU,r - TS’O) - 1/5<T'L - T ” - 5PL . (43)
+
 Amplifier 32, simply inverts the signal so that its output is the same as the above but
+multiplied by -1. The input of 30, is the output of 32, minus 5P . We consider the
 
-multiplied by -1. The input of 30. is the output of 32, minus SP . We consider the
+output of 30, to be kinetic error signal 8K , with
 
-output of 30, to be kinetic error signal Ey , with
+g = 2<TIL - T’) ~ 2<TIL. - T . > + 5<P - PL> . (44)
+K c,out 5O c,in c,in
 
-eg = 2 ARE -T os (44)
-K c, out SO c,in c,in
+We desire that each of the three terms above which go to make up € be zero.
 
-We desire that each of the three terms above which go to make up Ey be zero.
+K
+
+ 
 
  
 40
 
-However, the system "sees" an error only when the sum € K is not zero. It appears
-on first sight, therefore, that there might be off-design cases (i.e., wrong T. .
-, in
+However, the system "sees" an error only when the sum ¢ K is not zero. It appears
+on first sight, therefore, that there might be off-design cases (i.e., wrong TC .
+,in
 or T or P) which would yield no error signal. The second and third terms on ’
 
-c, out
+c,out
 the right-hand side of Eq. (44) are, in effect, time derivatives averaged over 100
 
-sec. Hence, if € is at some instant zero when the three terms are not, it would
+sec. Hence, if €  is at some instant zero when the three terms are not, it would
 
 K
-
 necessarily be at a time when the system variables were changing. The only persistent
+condition for 8K = 0, therefore, appears to be the one when all three terms vanish.
 
-condition for Ex = 0, therefore, appears to be the one when all three terms vanish.
-Before the error signal goes to the controller, it is fed through amplifier 36;
+Before the error signal goes to the controller, it is fed through amplifier 34,
 
-where another part is added to it to produce the system error signal «¢ :
+where another part is added to it to produce the system error signal ¢ :
 
-em 2 -v (45)
+e =X -V (45)
 
 The term designated v is a signal, appropriately signed, that is proportional to the
 rod velocity. It is a negative feedback signal so that, whenever there is rod motion,
@@ -2509,12 +2570,14 @@ The MSRE control rods are designed to operate at constant velocity when in
 motion (except when they are accelerating to that velocity or to zero). The velocity
 feedback signal is proportional to velocity and, hence, bounded. Gains are so chosen
 that this feedback is comparable to the signal produced by a small fluctuation in tem-
-perature, say of the order of 1°. If a large change in set point To were made, the -
-velocity feedback would be negligible by comparison with &y until the system ap-
+perature, say of the order of 1°. If a large change in set point Tso were made, the -
+velocity feedback would be negligible by comparison with EK until the system ap-
 
-proached its new steady-state configuration. Then, and during normal steady-state
+proached its new steady-state configuration. Then, and during normal steady ~state
 
 control, the velocity feedback would be significant so that only small error signals
+
+ 
 
  
 4]
@@ -2526,12 +2589,13 @@ out being pushed back and forth across the deadband by over-correcting signals.
 
 The power-level control circuit, which is used at power levels below 1 Mw
 where temperature control is neither practical nor desirable, is much simpler. The
-connection between 32; and 30, is broken, and amplifiers 21,, 31, and 32, are simply
+connection between 32, and 30, is broken, and amplifiers 21,, 31_, and 32, are simply
 not used. In their place a positive voltage (whose value is chosen by the operator) is
-fed into 30, . This is the power setpoint Po . Hence, the input to 30; is 5, -P).
-We then have at the output of 30:
+fed into 30, . This is the power setpoint PSO . Hence, the input to 30; is S(Pso -P) .
 
-Ey = 5(P - P.) . (46)
+We then have at the output of 30;:
+
+€y = 5P - PSO) : (46)
 
 The velocity feedback and subsequent signal tracing are the same as with
 temperature control.
@@ -2582,7 +2646,7 @@ bias determined the deadband width. The relays started or stopped the control-ro
 drive motor.
 
 In the measurement the Servo Amplifier was replaced with a circuit that sent
-a controlled signal to the relays. Signals describing the subsequent motion of the
+a controlled signal to the refays. Signals describing the subsequent motion of the
 control rods were produced, and their time behavior was compared with that of the
 controlled signals. From these comparisons a pure transport lag, which is associated
 with the relays, and an inertial lag (the time required for the control rods to move
@@ -2593,10 +2657,53 @@ sary to produce the excitation signal and to analyze the response voltages. Data
 taken on an 8-channel Sanborn recorder. As shown in Fig. 17, the Time Pulse Gen-
 erator section caused the comparator relay to close for a time period fixed by potenti-
 ometer 17. The Relay Actuator section caused a constant voltage, above the relay
-bias, to be sent to the relays for the duration of the time pulse. (This voltage corre~-
+bias, to be sent to the relays for the duration of the time pulse. (This voltage corre-
 
 sponds to an error signal outside the deadband.) The control-rod drive responded to
- 
+
+ 
+500K 100K
+
+ 
+
+VELOCITY BUFFERING CIRCUIT
+
+ 
+
+ 
+
+10K ORNL DWG., 69-4531
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+RECORDER |
+CHANNEL 2
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
 
  
 
@@ -2604,107 +2711,98 @@ sponds to an error signal outside the deadband.) The control-rod drive responded
 
 10K
 
-ORNL DWG. 69-4531
++HO0v o—y 10K
+26 TP
+FS1 & B;l vy
 
  
 
-NW
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+AV
 10K
-
- 
-
-; 05) 10K 3 10K
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-VELOCITY BUFFERING CIRCUIT AA RECORDER
-CHANNEL 8
-100K
-GianeL 2 | AWA nr. DIFFERENTIATOR CIRCUIT
+10K
+/\}S/FQ/\ RECORDER
+100K CHANNEL 8
+RECORDER
+M- CHANNEL 6 DIFFERENTIATOR CIRCUIT
 VELOCITY INTEGRATOR
+@ RECORDER
+™ CHANNEL 1
+0 - 10v GAIN OF 24
+
+VWA
+
 10K
-+10v o———y FT 10K [ 1M
-FS1 3 WW 7 5 © RECORDER
-IM CHANNEL 1
-100K 2 10 -10v GAIN OF 24
-3 0
-[> mov ROD POSITION BUFFERING CIRCUIT
-AWW LEGEND:
-TIME PULSE GENERATOR 0) CONNECTOR TO ROD DRIVE RELAY
-HOV oo y ‘sl 500 100k YON" TIME CONNECTOR TO ROD VELOCITY OUTPUT SIGNAL
-“~— ° TP
-“10vott od FS2 ~ MI 4 (12) © (C) CONNECTOR TO ROD POSITION OUTPUT SIGNAL
-- RECORDER
-(Ay—o—a CHANNEL 7
 
  
 
  
 
+100K§ H
+100K
+YW
+
  
+
+TIME PULSE GENERATOR
+
+ 
+
+WOR
+
+T10v op—o—y o 500 40K I "ON" TIME
+ON NS TP 0
+
+_1OVIN5ERT FS2 Mt T
+
+ 
+
+~ | RECORDER
+(A)—o— CHANNEL 7
 
 RELAY ACTUATOR
 
+ 
+
+ 
+
+ 
+
+ 
+
++10v
+
+ROD POSITION BUFFERING CIRCUIT
+
+LEGEND:
+@ CONNECTOR TO ROD DRIVE RELAY
+
+ 
+
+CONNECTOR TO ROD VELOCITY OUTPUT SIGNAL
+
+{C) CONNECTOR TO ROD POSITION OUTPUT SIGNAL
+
 Fig. 17. TR-10 Computer Circuit Used in the MSRE Rod Drive Response
-Experiment.
+
+Experiment,
+
+ 
 
  
 44
@@ -2725,7 +2823,7 @@ The derivative of the velocity should be the rod acceleration, which, along with
 relay actuating signal, should provide a complete description of the system. To avoid
 infinite derivatives, which are the derivatives of stray pulses or noise, an analog
 signal must be smoothed over some time period before differentiation. In the circuit
-used, the smoothing process intr>duced too much distortion to permit credible use of
+used, the smoothing process intraduced too much distortion to permit credible use of
 the derivative as an acceleration. The derivative did, however, provide a very clear
 mark of the time when the control rod began its acceleration or deceleration (except
 for those very short time pulses when deceleration began before rated velocity was
@@ -2735,7 +2833,7 @@ During the generated time pulse, a constant voltage was sent to the relays.
 This voltage was a square pulse of magnitude £10 v and had a width the duration of
 the pulse. The leading edge of the pulse signaled the relays to close, initiating the
 signal for the control rod to begin moving. The trailing edge signaled the relays to
-open, initiating the signal for the control rod to stop moving. The derivative showed
+open, initiating fthe signal for the control rod to stop moving. The derivative showed
 a sharp change when the control rod began to accelerate or decelerate (except for
 very short width time pulses). The time displacement between the leading edge and
 the derivative acceleration pulse and the displacement between the trailing edge
@@ -2758,53 +2856,58 @@ pulse case are shown in Fig. 18. For comparison purposes, recorder traces for th
 
 case obtained from the simulated control-rod drive system are shown in Fig. 19.
 
-| fin sec ORNL DWG. 69-4532
+-1 ‘Fn.os sec ORNL DWG. 49-4532
 
    
 
-FULL WOR.
+FULL WDR,
 
-    
- 
+  
 
 CONTROL ROD
 VELOCITY
 
+|
+T
+
+   
+  
+ 
+  
+ 
+
 FULL INSERT
 CONTROL ROD
 DRIVE RELAY
-ACTUATING WOR
+ACTUATING WDR.
 VOLTAGE
 
-INSERT
-
-DERIVATIVE
-OF CONTROL
+INSERT |5
+|
+DERIVATIVE ===
+" OF CONTROL =
 
 ROD VELOCITY
 
 Fig. 18. Response of the MSRE Control Rod Drive (as Measured).
 
-ORNL DWG. 69-4533
-
- 
-
+ORNL DWG, 69-4533
 - 0.05 sec
--125- g
-ROD DRIVE RELAY
-ACTUATING WOR.
-VOLTAGE
-INSERT
-+12.6-
-FULL
-WOR,
 
+—12.5-
+ROD DRIVE RELAY _
+ACTUATING WOR. —— L
+VOLTAGE +
+0=
+INSERT
+$12.5=
+FULL
+" WOR.
 CONTROL ROD
 VELOCITY
-
+0
+-
 FULL INSERT
-
- 
 
 Fig. 19. Response of the Computer Simulated MSRE Control Rod Drive.
 
@@ -2828,9 +2931,10 @@ in the Secondary System and a Simulation of a Controller Used to Hold the
 
 Reactor Power Constant at Low Power Levels, ORNL unpublished internal docu-
 
+ment (November 1960).
+
  
 
-ment (November 1960).
 O. W. Burke, MSRE-Analog Computer Simulation of the System with a Servo-
 
  
@@ -2847,7 +2951,7 @@ INTERNAL DISTRIBUTION
 
 1. Biology Library 55. M. I. Lundin
 2-4. Central Research Library 56. H. G. MacPherson
-5-6. ORNL — Y-12 Technical Library 57. H. A. Mclain
+5-6. ORNL — Y-12 Technical Library 57. H. A. McLain
 
 Document Reference Section 58. L. C. Oakes
 
@@ -2855,13 +2959,13 @@ Document Reference Section 58. L. C. Oakes
 
 42. Laboratory Records, ORNL R.C. 60. A. M. Perry
 
-43. J. L. Anderson 61. G. L. Ragan
+43. J. L. Anderson 61l. G. L. Ragan
 
-44. C., E. Bettis 62. J. L. Redford
+44, C. E. Bettis 62, J. L. Redford
 
 45. C. J. Borkowski 63. M. W. Rosenthal
 
-46. J. B. Bullock 64. G. S. Sadowski
+46. J. B. Bullock 64, G. S. Sadowski
 
 47. 0. W. Burke 65. Dunlap Scott, Jr.
 
@@ -2873,7 +2977,7 @@ Document Reference Section 58. L. C. Oakes
 
 51. C. H. Gabbard 69. D. A. Sundberg
 
-52. P. N. Haubenreich 70. J. R. Tallackson
+52. P, N. Haubenreich 70. J. R. Tallackson
 
 53. W. H. Jordan 71. A. M. Weinberg
 
@@ -2891,12 +2995,14 @@ Tennessee, Knoxville, Tennessee
 
 75. Ronald Feit, Reactor Development Division, AEC, Washington, D.C.
 
-76. J. A. Swartout, Union Carbide Corporation, New York, N.Y.
+76. J. A. Swartout, Union Carbide Corporation, New York, N.Y,
 
 77. Laboratory and University Division, AEC, ORO
 
 78-293. Given distribution as shown in TID-4500 under Reactor Technology
 
 category (25 copies — CFSTI)
+
+ 
 
  

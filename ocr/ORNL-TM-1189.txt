@@ -1,8 +1,12 @@
  
 
-TRAL RESEARCH LIBRARY
+AL RESEARCH LIBRARY
 DOCUMENT COLLECTION
+
 OAK RIDGE NATIONAL LABORATORY
+operated by
+
+   
 
  
 
@@ -22,14 +26,30 @@ OAK RIDGE NATIONAL LABORATORY
 
  
 
-UNION caraioe corronation in
-IIH EudT —
+ 
 
-A TECHNIQUE FOR CALCULATING FREQUENCY RESPONSE AND
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+UNION CARBIDE CORPORATION m
+for the
+U.S5. ATOMIC ENERGY COMMISSION
+OAK RIDGS NATIONAL LABORATORY L ORNL- TM- 1189
+NN ERRENN s 37
+3 4456 D54909k 5 DATE - June 24, 1965
+
+A TECHNIQUE FOR CAICULATING FREQUENCY RESPONSE AND
 ITS SENSITIVITY TO PARAMETER CHANGES FOR
 MULTI-VARIABLE SYSTEMS
 
-T. W. Kerlin and J. L. Lucius®
+T. W. Kerlin and J. L. Lucius*
 
 ABSTRACT
 
@@ -45,93 +65,89 @@ use of the code.
 CENTRAL RESEARCH LIBRARY
 DOCUMENT COLLECTION
 
-ATTA YU RL)
+LIBRARY LOAN COPY
 
 DO NOT TRANSFER TO ANOTHER PERSON
 If you wish someone else to see this
 document, send in name with document
-and “the ‘library will arrange a loan.
+and ‘the ‘library will arrange a loan.
 
  
 
-* oak Ridge Gaseous Diffusion Plant.
+ 
+
+*
+Oak Ridge Gaseous Diffusion Plant.
 
 NOTICE This document contains information of a preliminary nature
-and was prepared primarily for internal use at the Ock Ridge National
-Laboratory. It is subject fo revision or correction and therefore does
-not represent a final report.
+and waos prepared primarily for internal use ot the Ook Ridge MNational
+Loboratory. It is subject to revision or correction and therefore does
+not represent o final report.
 
  
  
 
  
 
+ 
+
 LEGAL NOTICE
 
-This report was prepared as an account of Government sponsored work. Neither the United States,
+This report was prepared as on account of Government sponsored work, Meither the United States,
+
 nor the Commission, nor any person acting on behalf of the Commission:
 
-A. Makes any warranty or representation, expressed or implied, with respect to the accuracy,
-ess, or usefulness of the information contained in this report, or that the use of
-
- 
-
-complet
-any information, apparatus, method, or process disclosed in this report may not infringe
+A, Mockes any warranty or representation, expressed or implied, with respect to the accurocy,
+completeness, or usefulness of the information contained in this repeort, or that the use of
+any information, apporotus, methed, er process disclesed in this report may net infringe
 privately owned rights; or
 
-B. Assumes any liabilities with respect to the use of, or for damages resulting from the use of
-any information, apparatus, method, or process disclosed in this report.
+B. Assumes any liabilities with respect to the use of, or for damages resulting frem the use of
+any information, epparatus, method, or process disclosed in this report.
 
- 
+As used in the obove, "“person acting on behalf of the Commission" includes any employee or
 
-erson acting on behalf of the Commission” includes any employee or
+contractor of the Commission, or employee of such contractor, 1o the extent thot such employes
 
- 
- 
+or contracter of the Cemmission, or employee of such contractor prepares, disseminates, or
+provides access to, eny informotion pursuent to his employment or contract with the Commissien,
 
-n, or employee of such contractor, fo the extent that such employes
-
- 
-
-or contractor of the Commission, or employee of such contractor prepares, disseminates, or
-provides access to, any information pursuant to his employment or contract with the Commission,
-
- 
-
-s employment with such contractor.
+or his employment with such contractor.
 
  
 
  
 
  
-Contents
+
+ 
+ 
 
  
 
-Introduction ...... Cee tetra te ieee entree tee etree 5
+Contenfs.
+Page
+INtroduction sve.iieeeereenennses Cerbeeaees Ceeerraaraas e 5
+Frequency RESPONSE cueeseeseaees ceeean ceeeenn .;;...;.. ....... 5
+Freguency Response Senéitivity‘ :.....; ..... Weesesanans ceeens 9
+The Computer Program ..eeccescesesssseasss Chececenccaranenas 19
+Input ..eeeecocrrececesnssosnnccns ceecos ceessrssenesens 13
+Output  seiveevencnacnas ...........;...}..a... ...... voee 17
+‘Sample Problems ...... ceeeneen Ceeeseatenssecenannneeos . 18
+PLOBLEM L erenrenieieninnaninnnn e et 18
+Problem.Q .......;...;...;;.........,.... ........... 19
+Conclusions seeevesos. ceseecisens ,.‘............;.;... ...... 23
+References ..... .............f........}j..;...;..f.......... 30
+‘ AL LABORATORY LIBRARIES
 
-FLEQUENCY RESPONSE oss se sen nnennsennnsennsensasnnensonesnsss 5
+il
 
-\O
+|
+' 3 445k 054909k &
 
-Frequency Response Sensitivity eee eee
-The Computer Program ..eeceeececcsessescssssocscosesosnssncsss 12
-Input sce eeeesereeeeoesocosssoncevossocnsnscassesoncesss 13
-OUTPUT sete areversnensnnscenesonsnsoocsssosossnsscsasnasnss 17
-Sample Problems Seseresessrietecsasecasssatanansnconne 18
-Problem 1 er eieengarunn ears nerseronaeenn 18
-Problem 2 tess esi ses sence saree css sans ranean 19
-Conclusions seceeecessvsesesvsescsesssnsossosssnsnsiosscsosnonsse 23
-
-References Cetera etene teeta ieee sans 30
-
- 
-
-OAK RIDGE NATIONAL LABORATORY LIBRARIES
-
-3 4456 054909k 5
+I
+'
+L
 
  
 
@@ -176,129 +192,135 @@ OAK RIDGE NATIONAL LABORATORY LIBRARIES
  
  
 
-Introduction.
+Intfodnetion“
 
 Techniques for determining the frequency response of multi-variable
-dynamic systems are well kriown and ‘several computer codes have been
-prepared which are useful for calculating nuclear power reactor frequency
-responses 2 The frequency .reésponse is usually determined for the system
-at the design condition and at several off-désign conditions to determine
-the sensitivity of the results to ¢hangés in system parameters: This
-sensitivity information cad be useful in fexdésign of dynamically unsatis-
-factory systems and in ‘determination of. necessary tolerances in design
-specifications to insure suitable dynamic behavior at lowest cost.
-Sensitivity information can also provide a deépetr understanding of system
-dynamic characteristics to the system analyst and can help in matching
-experimental and theoretical tesults:.
+dynamic¢ systems are well knewﬁ; and'seVefél COmputef.COdes-have been
+prepared which are useful for ealeu1atiné nucleaf'poﬁer reactor frequency
+:res'pcbnse;lt"2 The frequency .reésponse is usnaily determined for the system
+at the design condition and at several of f-désign conditions to determine
+the sensitivity of the results to &henéés ih'syéteﬁ pafemeters: This
+sensitivity 1nformat10n can be useful 1n re- de51gn of dynamlcally unsatls-
+factory systems and in determlnatlon of necessary tolerances in des1gn
+specifications to 1nsure sultable dynamlc behav1or at lowest cost
+Sensitivity 1nformatlon can also prev1de a -deéper understanding of system
+dynamic characteristiCS to the system anaiyst and can help in matching
 
-This report presents a technique for determining the frequericy
-response of multi-variable systems. In addition; ‘the sensitivities to
-system parameters can be determined directly. -A computer code for
+This report presents a technlque for determlnlng the frequency
+response of multi-yariable systens., In addition; the sensitivities to
+system parameters can be‘determined directly. A domputer code for
 carrying out the calculation is described and numerical results are
-shown for sample problems. |
+shown for sample problems.: o | |
 
 ‘Frequency Response
-The system equation Tor a’ linear; autonomous, lumped parameter
+
+ 
+
+The system equation for a linear; autonomous, lumped parameter
 
 system may be written:
 
-a, |
-— = Az ; :
-ToL (1)
+dz . . - |
+— I 7 Bl .
+W
 where
 
-z = the response vector,
+7z = the response vector,
 
 t = time,
 
-A = the system matrix (the elements are the. usual coefficients in
+A = the system matrix (the elements are the- usual coefficients in
 
-the differential equations);
-. f = the disturbance vector:
+the differential equatlons),: | |
+- f = the disturbance vector
 
-Eq. (1) i is usually called the state variable representation of the system.
-In Eq. (1), it is assumed that the dependent, variables are written as
+kq. (l) is usually called the state varlable representatlon of the system.
+In Eq. (1), it is assumed that - the dependent varlables are wrltten as
 
-perturbations arcund an equilibrium point: This implies that all the
-initial conditions are zero when the equation is Laplace transformed.
+perturbatlons_around an equlllbrlum point. This implies that all the
+initial conditions are zero when the'equation’is‘Laplace transformed.
 
-The Laplace transform of (1) is then given by the following equation:
+The Laplace transform of (l) is then given by the following equation:
 
-[A-sI]Z=-F , | : (2)
-where AE | oo
-I = unit diagonal matrix,
-s = Laplace transform parameter,
-Zz = Laplace transform of Z,
-T = Laplace transform of f.
+A-sI]Z=-T , | f (2)
+where T o
+I = unit diagonal matrix, |
+s = Laplace transform'ﬁéfameter,-
+Z = Laplace transform of Zz, ”
+f = Leplace transform of f.
 
 Cramer's rule can be used to write the formal solution of (2):
 
-— By :
-2, = ———— (3)
-|A - sI Ce
+B
+
+_ P : : .
+z, = (3)
+|A - sI] K
 where |
-z, =i component of z,
-B, = determinant of [A - sI] with the 1th column replaced by -f.
+Ei = ith éomponent‘of E,
+Bi'=,determinant of [A - sI] with the ith column replaced by -f.
 
 In general, a transfer function expresses the relationship between
-an independent variable and some dependent variable. The independent
-variable appears as a factor in the disturbance vector, f, on the right
-
+an independent variable and some dependent variable., The independent
+variable appegrs as a factor in the disturbance vector, f, on the right
 hand side of the system equation. Thus, T may be written as follows:
 
-f = pg : (4)
-where
-0 = Laplace transform of the selected independent variable - a scalar,
-g = a vector of coefficients.
+f = pg ‘ ‘ (L)
+ﬁhere
+o = Laplace transform of the selected independent variable - a scalar,
+g = a vector of coefficients. |
 
 Use Eq. (4) with (3) to give
 
-C
+Z C
 
-21 i oo
-G = = = ——— | (5)
-oo 0 |A -sI|
-where
+ 
+
+G == = L (5)
+. P |A - sI| '
+where |
 G = transfer function between the independent variable, p, and the
-dependent variable, z,,
-C; = determinant of [A - sI] with the i column replaced by -g.
+dependent variable, z,, , i
+C, = determinant of [A - sI] with the 1™ o6lumn repiaced by -g.
 
 Q
+
+ 
  
 
 For nuclear reactor applications, the selected independent variable is
 most often reactivity, and the selected dependent variable is most often
-the neutron flux or a temperature at some point in the system.
+the neutron flux or a temperature at some point in the system.u
 
 The transfer function in Eq. (5) may be used to give the frequency
-response, For this, the Laplace transform variable, s, is replaced by
-Jw, where J =/~1 and w = the frequency of the perturbation. Thus, the
+response. For this, the Laplace transform variable, s, is replaced by
+Jjw, where Jj =\/:T“ and- w = the frequency of the perturbation. Thus, the
 
 transfer function becomes a complex quantity:
-G=a+ jp . (6)
+G=a+ jB . ‘ | (6)
 
 The appearance of G in the complex plane is shown in Fig. 1. It is common
 
 to characterize G by a magnitude, M, and a phase angle, 8. These are given
 
-by: Co .
-M = Jo + BZ 3 (7)
-6 = tant 5 . (8)
+by: o :
+M =" + 52 s (7)
+o = ten™ £ (8)
 
-The variation of M and 6 as a function of the frequency, w, is called the
-frequency response of the system.
+The variation of M and @ as a function of. the frequency, w, is called the
+frequency response of the system. |
 
 A number of approaches are possible for solving Eq. (5). The most
 obvious is to form the numerator and denominator determinants and to
 numerically evaluate these determinants in complex arithmetic. Another
-approach is to transform the determinants into polynomials in gs. 17% This
+approach is to transform the determinants into polynomials in s.l’2 This
 has the advantage that evaluation for numerous frequencies (w = — js)
 does not require re-evaluation of the determinants. The choice, then, is
 whether to perform the bulk of the computation in finding the polynomial
 or in evaluating the determinants. The preference seems to have been for
 the polynomial method in most previous calculations. This was done because
 the polynomial methods were sufficiently faster than direct determinant
-solutions to offset two difficulties characteristic of polynomial methods:
+solutions to offset twé difficulties characteristic of polynomial methods:
 the accurate calculation of the coefficients of the polynomial is a dif-
 ficult numerical problem, and the complex relation between the basic system
 parameters and the coefficients of the polynomials complicates calculation
@@ -322,45 +344,37 @@ Fig. 1. Appearance of G in the Complex Plane
 
  
 
-ca
+Ca
 
-a
+c
  
 
-«
+o
 
-«0
+[i]
 
-’
+7
 
 In this study the desire to determine the effect of changes in
-system parameters on the frequency response dictated the use of direct
-calculation of the determinants. In contrast to the polynomial methods,
+system parameters on the fregquency response dictated the use of direct .
+calculation of the determinants. In coﬁtrast'to the polynomial methods,
 it is easy to keep track of the system parameters and to determine their
-effect on the frequency response. It was also found that direct calculation
-of the determinants for caloulating the frequency response alone is
-inexpensive on large digital computers unless the matrix is quite large.
+effect on the frequency response. It was also found thét direct calculation
+of the determinants for calcuiating the frequency response alone is
+inexpensive on large digital computers unless the matrix;is'quite large.
 
-3
+5
 
 The running time for a FORTRAN IV Gaussian elimination scheme” on the
 
-IBM 7090 has been found to be given by:
+IBM 7090 has been'found to be given by:
 
-T= 0.008 nt?
+T = 0,028 nl'9 ,
+Where
+T = running time (seconds/ffequehcy calculated),
+n = order of the matrix. | |
 
-where
-
-T
-
-running time (seconds / frequency calculated),
-
-n
-
-Il
-
-order of the matrix.
-If it is assumed that about 25 points are needed to define the
+If it is assumed that about 25 pointé are needed to define the
 frequency response, then the running time is given approximately in
 
 Table 1.
@@ -372,284 +386,274 @@ Direct Frequency Response Calculation
 
  
 
-Order of . Running Time
-Matrix : oo (min)
-10 1
-20 © 3.4
-30 1.3
-40 | ‘12.5
-50 : 19.5
-60 Co : 27.9.
+Ordef of : | Running Time
+‘Matrix - o . (min)-
+
+20 ’ 3.4
+
+50 Te3
+
+Lo | ‘10,5
+
+50 | ' : 19.5
+
+60 . L : 27.9.
 
  
 
 Frequency Response Sensitivity
-It is frequently valuable to know what changes in the frequency
-response will occur if certain of the system parameters should change.
 
-It would be desirable to get this information without recalculating the
+ 
+
+It is frequently valuable to know what changes in the frequency
+response will occur if certain of the system paraméters should change.
+
+It would be desirable to get this information without recalculating.the
 
  
 10
 
 whole frequency response repeatedly. A technique for accomplishing this
-is given in this section.
+is given in this section. |
 
 First, rewrite Eq. (5) as shown below:
 
-N
+N N : . :
+G=Tr =] C (9)
 
-N .
-C=TA-=I] “D° BA
+Now differentiate BEq. (9) with respect to an element, aij’ of the.system
 
-Now differentiate Eq. (9) with respect to an element, a; of the. system
+matrix, A,
 
-matrix, A,’
+aD
+e . (10)
 
-ON aD
-
-Oa. Oa. .
-id iJ
+iy 1J . 1J
 
  
 
  
 
-i
+il
 ol
 1
-wl =
-
-(10)
+o=
 
 Equation (10) gives the sensitivity of the frequency response to changes
-in the elements of the system matrix. The derivatives on the right side
-of Eq. (10) are easily calculated. It can be shown" that the derivative
+in the elements of the system matrix. The derivatives on the right sidé
+of Eq. (10) are easily calculated. It can be-shownLL that the derivative
 of a determinant of a matrix with respect to one of its elements is the
 
 cofactor of that element in the matrix. Thus we get:
 
-9G 1
-pa =D My ~ Tis) (11)
-id
+{
+
+oG 1
+e =D My m @y5) (11)
+ig
 where
-0 5 = cofactor of 24 In the numerator matrix, N,
-71; = cofactor of 213 in the denominator matrix, D.
+nij = cofactor of aij"in the numerator matrix, N,
+7ij = cofactor of aij in the denominator matrix, D.
 
-It is also necessary to convert the G sensitivity into magnitude
+It is alsoc necessary tc convert the G sensitivity into magnitude
+sensitivity and phase sensitivity. PFirst, since a, is real, we can write:
+oG _ ou . 0B
+da.. oa,.  Pa_. - (12)
+1J 1J 1d
+Thus the real and imaginary parts of the'soluﬁion given by Eq. (11) are
 
-sensitivity and phase sensitivity. First, since 213 is real, we can write:
+ 
 
-0G du
-da. . 0a...
-iJ 1d
-
-9B
-oa,
-iJ
-
-Thus the real and imaginary parts of the solution given by Eq. (11) are
-
-+J (12)
-
-actually 8a da, | and oa, From the definitions of M and 6, it is
+actually ao/aaij and as/aaij. From the definitions of M and 6, it is
 
 clear that the following relations exist:
 
  
 
-: ox CB
-5 a oa, . +B oa. .. : :
-= pg] | (13)
-. F - >
-Ba, J& . 6° .
+,d o +B§g_
+
+oM oa. . Bai.
+
+9a. = _ 'lJ_ q. P | - (13)
+L Jao + B ’ '
 
  
 
  
 
-i)
+ 
 
-<4
+{4
 11
 
  
 
  
 
-Pp ox
-a 9 -
-i a, . oa. .
-S96 : 1J lJ : I
-ij a +B
+o g@ - oo
+a, ., oa. . .
+- 08 _ ij ij : (14)
+‘fa., ., - 2 .2 ’
+13 a” + B
 
-Equations (11) through (14) are adequate for finding the sensitivities
+Equations (11) through (1) are adequate for finding the sensitivities
 
 to matrix element changes. However, these matrix elements are made up
 
-of algebraic combinations of basic system parameters. The same system
-
-parameters frequently occur in several matrix elements.
-
-It is desirable
+of algebraic combinations of basic éystem.parameters. The same system
+parameters frequently occur in several matrix elements. It is desirable
 
 to find the sensitivities to system parameter changes as well as the sensi-
-
-tivities to matrix element changes. This can easily be done using Egs. (15)
-
- 
-
- 
-
- 
+tivities to matrix element changeé. This can easily be done using Egs. (15)
 
 and (16):
-Mv OM
-ox, ), da.
-2 ij. ij
-99 S08
-ox, ) da,
-2. ij ij
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+' ' oa. . .
+
+oM _ oM ij
+
+ox - 23 oa. ox (15)
+L iJ. ij b
+
+T ‘aa » ,
+
+06 o 06 ij ,
+
+e S L BT s o (16)
+£ ij ij £
+
 where
-th
-x, = the £ system parameter.
+th '
+xz = the /4 system parameter.
 
- 
-
- 
-
-da, 5 :
-
-= a)
-oa
-
-5%, > (16)
-
-The quantities da 519%, are known since the algebraic relations between
-
-matrix elements and system parameters must be known from the analytical
-
+The quantities 8a /ax are known since the algebraic relations between
+matrix elements and system parameters must be known from the analytlcal
 description of the system.
 
 A special feature of the numerator determinant, N, should be noted.
+The column whose elements consist of the disturbance vector, g, clearly
+do not depend on the matrix elements, aij' Thus 6N/aaij does not contain
+a contribution from the column replaced by g. . However, g can depend on
 
-The column whose elements consist of the
+the system parameters. Thus 8N/9dx, may have a non-zero contribution from
 
-do not depend on the matrix elements, 253
-
-disturbance vector, g, clearly
-
-Thus oN/ da. | does not contain
-
-a contribution from the column replaced by g. However, g can depend on
-
-the system parameters. Thus oN/ 0x, may have a non-zero contribution from
-
+£
 the column of the matrix whose components are the components of g. Thus
 
 the complete equations are:
 
-oM a oaM 9%;
-29 H da, 0x,
+ 
+
+ 
+
+. da 0
+M\ oM 1j M G
+=) e m L (17)
+
+g i3 Piy 9% K 98 9%
+12 .
 
  
 
  
 
-y oa
-
-9% 9x,
-12.
-
- 
-
-00 po 9%; 20 98
-ml Re mith he (18)
-2 13 Pig “e xk “8 9%
-The procedures for finding oM/ dg, and 96/ dg, are similar to those for
-finding oM/ da; , and 90/a, ;- Since g, appears only in N,
-oG_ 1 oN
-og, -D 8, J oo (19)
+96 90 9%i; 90 98
+Ll B motl B (18)
+g i3 Ty T k T8 9%y
+The procedures for finding BM/ng and ae/agk are similar to those for
+finding BM/Baij and BQ/aij. Slnce = a?pears only in N,
+oG 1 ON :
+ng D g, ’ o (19)
 where
-=. = negative of the cofactor of the element in.N containing 8, -
+_ gg— = negative of the cofactor of the-element in.N containing g
 k
-From the definitions of M and 9, it is clear that
+From the definitions of M and 8, it is clear that
+M By .. 98 (20)
 ral :
-% Vo? + 82
-9 0
-90 x X (21)
-
- 
-
-og |
-| 8 VE + 52
-
+“k Vo2 + g2
+0
+96 S K (21)
+g, - '
+| &y V& + 52
 where
-on = real part of 9G/dg, ,
-g k
-.k
-B_ imaginary part of 98G/dg, . oo
-%)
+gg; = real part of 8G/8gk,'
+8
+g%— = imaginary part of-BG/agk.' o
+k .
 
 The Computer Program
 
+ 
+
 A computer program called SFR-1 (Sensitivity of the Frequency
-Response) was prepared for the IBM 7090. The computer code is provided
-with the system matrix, A (59 x 59 or smaller), and the disturbance
+Response) was prepared for the IBM 7090. The cbmputer code is provided
+with the system matrix, A (59 x 59 or-smaller), and the disturbance
 vector, g. For specified values of w, the code calculates the frequency
 
 response using Eq. (5) and s = jw. Equations (7) and (8) are used to
 
  
 
-IY)
-13
+|L'.
+135
 
-give the magnitude and phase. The determinarits in Eq. (5) are calculated
+give the magnitude aﬁd phase. The determinarits in Eq. (5) are calculated
 in complex arithmetic using a Gaussian elimination scheme with partial
-pivoting’ (obtained from R. E. Funderlic of Oak Ridge Gaseous Diffusion
+pivoﬁing3 (obtained from:R. E._Funderlic of Oak Ridge Gaéeous Diffusion
 Plant). The code also can calculate the sensitivities to matrix element
-changes using Eqs. (11), (13), and (14). The sensitivities to the system
+changes using Egs. (11), (13), and (14). The sensitivities to the system
 parameters are calculated using Egs. (17) and (18). The method for
-providing the algebraic relationships between the matrix elements and
+providihg the algebraic‘relationships between the matrix elements and
 
-the system parameters are given below in the section on input.
+the system parameters are given below -in the section on input.
 
 Input
 
 The input to SFR-1 is short and simple. The only section requiring
-extensive explanation is the algebra table. The algebra table serves to
-establish the relationship between matrix ‘elements and system parameters
-and the relationship between elements of the disturbance vector and
-system parameters. In general, each matrix element or disturbance vector
-element is made up of a sum of terms, each of which is an algebraic -
+extensive explanation is the algebra table. The algebra table serves ‘to
+establish the relationship between matrix elements and system parameters
+and . the relationship between elements of the disturbance vector and
+system parameters; In-general, each matrix element or disturbance vector
+element is made up of a sum of terms, each of which 1is an algebraic -
 
 combination of various system parameters:
 
-a = 2 Sl oe on + 2 ol oe on +
-ij "11 "2 "7m 271 "2 "Tn te
-or.
-a,, = Z x ’ (22)
-Yom Mog=
+a = 7 x%'jb £%1+Z x%';% x%i+
+ij -1 "1 T2 """ Tm 271 Tp "t Tp
+
+-OXr.
+I
+_ am - _
+oy = ) 7 gz x (22)
 
 where
 
-Z = a constant,
+N
+1
 
-m -
-
-Pom = exponent of the qth factor in the nt? term,
+a constant,
+qu = exponenﬁ of the qth factor in the mth term,
 
 = the number of the term,
-= index on the system parameter,
+= index on the systém parameter,
 
 the number of terms,
 
-H = a 8
-Ii
+H =2 o B
+i
 
-= the number of factors in term m. -
-1h
+= the number ofifactors in term m. -
+1k -
 
 For instance if
 
@@ -660,45 +664,44 @@ For instance if
  
 
 _ 2 ..8 -1 -2 3 1.8
-ag 9 = 2 x] x5 x= + 4,2 3 x5 x,
-we could express ag 9 in tabular form as:
+38,9 =2x % X"+ L2 X % XF.
+we could express a8 9 in tabular form as:
 2
 Coefficient of
-i J m Zz 1 2 3 L
-8 9 1 2.0 2.0 0.8 -1.0
-8 9 2 4.2 -2.0 3.0 1.8
+i J m zZ_ 1 2 3 L
+8 9 1 . 2.0 2.0 0.8 -1.0
+8 9 2 .2 - | -2.0 3.0 1.8
 
  
 
  
 
-A table of this type appears in the SFR input. The information in this
-
-table is also used by SFR-1 to calculate the derivatives shown in Eqs.
-
- 
-
- 
-
- 
-
- 
-
+A table of this type appears in the SFR inﬁut. The information in tﬁis
+table is also used by SFR-1 to calculate the derivatives shown in Egs.
 (15-18). The general rule for differentiating terms of this type leads
+
+ 
+
+ 
+
+ 
+
+ 
+
 to
-5 M I Pan
-21; J i *4 q ( )
-= Z P 8 23
-ox, my om fm g=1 Xx, 2
+M I qu
+BaiJ 23 II %4 q
+= Z P b (23)
+axﬂ 2om Zm g=1 X, Z
 where
-5 = lif x, appears in the nt? term
-0 if x, does not appear in the mth term
+83‘= 1if X, appears in the mth term
+O if_xﬂ does not appear in the n*? term
 The detailed description of the input is given below:
-Type 1:
+Type 1: ‘
 Title card.
 Type 2:
 Column 1-5 6-10 11-15 16-20 21-25 26-30
-Format I5 I5 I5 I5 I5 I5-
+Format 15 15 15 15 15 15 -
 Input N NOW NCTS NOXI KIPD NOFV
 
  
@@ -725,8 +728,10 @@ Input N NOW NCTS NOXI KIPD NOFV
  
 
 where
+
 N = order of the system matrix,
-NOW = number of frequencies to be calculated,
+
+NOW = number of frequencies to be calculated,'
 
 NCTS = number of different columns to be replaced by the disturbance
 
@@ -753,22 +758,26 @@ vector,
 NOXI = number of system parameters being considered,
 
 KIPD = derivative option. If KIPD is positive, SFR calculates the
-frequency response only. If KIPD is zero or negative, SFR
+frequency response - only. If KIPD is zero or negative, SFR
 calculates the frequency response and the sensitivities,
 
 NOFV = row number of the last non-zero entry in the disturbance
-vector if the disturbance vector is specified in Type 3 input.
+vector if the disturbance vector is specified in Type 3% input.
 If the disturbance vector is specified in the algebra table
 (Type 5 input), NOFV is omitted.
 
-Type 3:
+Type  3:
 Column 1-10
-Format 7ELO. 4 Repeat, 7.per card
-Input C.
-where
-Cs = components of the disturbance vector
+Format TELO. 4 Repeat, 7.per card
+Input Ci
 
-Note: Type 3 cards are omitted if all components of the disturbance
+where
+
+Ci = components of
+
+the disturbance vector
+
+Note: Type % cards are omitted if all components of the disturbance
 
 vector are calculated from the algebra table (Type 5 input).
 
@@ -778,16 +787,18 @@ vector are calculated from the algebra table (Type 5 input).
 
  
 
-Type 4:
+Type k4:
 Column 1-10
-Format 7E10.4 Repeat, 7 per card
-Input x,
+Format TE10.4
+Input xﬂ
 
  
 
  
 
  
+
+Repeat, 7 per card
 
  
 
@@ -796,18 +807,19 @@ Input x,
  
 16
 
-where @?
+where @
 
 X, = value of the system parameter, values are listed sequentially
 
-starting with xq.
+starting with Xq -
+
 Note: Omit Type 4 cards if NOXI = O.
 
 Type 5:
 
  
 
-Column]| 1-2|3-L4}|5-6] 7-16 7-23 [2h -30 31-37] 38-44} 45-51] 52-58|59-65| 66-72
+Column| 1-2|3-4|5-6]7-16 17-25!2&430 31-37138-44] 45-51] 52-58(59-65| 66 -72
 
  
 
@@ -843,23 +855,19 @@ Column]| 1-2|3-L4}|5-6] 7-16 7-23 [2h -30 31-37] 38-44} 45-51] 52-58|59-65| 66-7
 
  
 
-Format | I2 | I2| I2|E10.5 8F7.2
-Input I J | mn|2Z P
+Format || I2 | I2| I2{El0.5 8F7.2
+Input I J m |2 P
 where
 
-I = row number of matrix element if I < 59, If I = 60, a component
+I = row number of matrix element if I = 59.  If I = 60, a component
 of the disturbance vector .is being specified,
-
-J = column number of matrix element if I < 59, . If I = 60, J is
+J = column number of matrix element if I £ 59, .If I = 60, J is
 the row of the component of the disturbance vector being
 specified,
-
 m = number of the term,
-
-Z = constant multiplier of this term,
-
-exponent of the system parameter.
-Note: End Type 5 cards with a blank card. Omit Type 5 cards if NOXI = O.
+Z = constant multiplier 6f this term,
+P = eprnent of the system parameter. »
+Note: ZEnd Type 5 cards with a blank card. Omit Type 5 cards if NOXT = O.
 No blank card is used to end Type 5 input if NOXI = O.
 
  
@@ -881,10 +889,10 @@ No blank card is used to end Type 5 input if NOXI = O.
  
 
 Type 6:
-|
-Column 1-2
-| Format I2 Repeat
-Input CR
+g
+Column 1-2 |
+| Format ’ I2 Repeat
+Tnput | CR
 where
 
 CR = column number to be replaced by the disturbance vector, NCTS
@@ -918,15 +926,16 @@ entries should be made.
 
  
 
-Type 7:
-Column 1-5 | 6-10 | 11-20 |
-Format I5: 5. F10..4 Repeat, three per card
-Input I J 2g
+Type 7T:
+Column 1-5 6-10 | 11-20 |
+- Format I5: I5. F10.4 Repeat, three per card
+Input I J a. .
+1J
 where
-= row number,
+= rOW number,
 J = column number
-a = value of element, a5 of the system matrix,
-ij
+a = value of element, aij’ cf the system matrix,
+1j .
 
 Note: End Type 7 cards with a blank card.
 
@@ -934,7 +943,7 @@ Note: End Type 7 cards with a blank card.
 
 If a matrix element is specified on a Type 7 card and also is
 calculated from the algebra table, the value from the algebra
-table will be used.
+table will be used. '
 
  
 
@@ -957,107 +966,113 @@ table will be used.
 Type 8:
 Column 1-10
 Format 7E10.4 | Repeat, seven per card
-Input Ww
+Input W
 
-where ‘
+where f
 
-w = frequency for calculation. Specify NOW values,
+w = fregquency for calculation. ©Specify NOW values.
 
 The FORTRAN listing of the SFR code is available from J. L. Lucius.
 
 Output
 
 The output of SFR is clearly labeled in notation consistent with
-the notation in previous sections of this report. The first page is a
+the notation in previcus sections of this report. The first page is a
 review of input data. It consists of a print-out of the following:
 
 1. Title
+Input system parameters (x)
+Algebra table
 
-2. Input system parameters (x)
+Order of matrix
 
-3. Algebra table
-4. Order of matrix
-5
+N W o
 
 Number of frequencies (w's)
 
  
-18
+18 .
 
 Columns to be replaced
 Frequencies to be calculated
 
 System matrix non-zero elements
 
-NO © 3 Oh
+O 0 9 Oh
 
 Disturbance vector
 
-The input summary page is followed by the results of the calculation.
+The input summary page is followed by the resu;ts of the calculation.
 The results for each specified frequency are. shown, one frequency to a
 
 page. The print-out is as follows:
 
  
 
- 
-
-1. Frequency i
-2. Non-zero elements of oD/ a, 5 (see Eq. 10)
-3. Magnitude ratio (M) and phase angle (THETA)
-L. Column replaced by f vector
+1. Frequency _
+2. Non-zero elements of 8D/8aij (see Eg. 10)
+3., Magnitude ratio (M) and phase angle (THETA) -
+4. Column replaced by f vector
 5. Values of a, B, D, and N (see Egs. 6 and 9)
-6. Values of 8N/da 8D/ 8a re 38 | 1, & M_ ona
-’ ij’ ij’ da, , ’ da, , ’ Oa,
-. 1d i) 1d
-a0
-da. , .
+oG oG oM
+6. Values of 8N/aaij, 8D/8aij, Re 5o Im,EETT e and
+. i3 i T
+a8
+da. | .
 1J
 
-7. Values of oM/ Bx, and de/0x, (see Eqs. 17 and 18).
+7. Values of 8M/8xﬂ and ae/axﬂ (see Eqs. 17 and 18).
 
 Sample Problems
+
+ 
+
 Problem 1. The first illustrative problem is a calculation for a
 
 second order system.
 
 “
 
-. | .
-= = x, (24)
-dx,
+dxl ‘ '
+at - ()
+dx2
 
-at = = xq - 0.l2x, - k (25)
+T = - % - 0.12x, - k (25)
 
-—= =Ax +f (26)
+Rewrite these in matrix notation:
+
+dx _ B
+EE'—AX-}-f ‘ (26)
 
  
  
 
-.
-T
+i~
+~J
 
 19
-The transfer function, x, /k, is given by
+The transfer .function, Ei/E, is given by
 
-1 i
-= —. | (27)
-s + 0.125 + 1
+1 :
+= 5 . : (27)
+s+ 0.12s + 1 :
 
-ml
+ 
 
-This is the form of a quadratic lag with a damping ratio of 0.06. This
+W||_,:><|
+
+Mhis is the form of a quadratic lag with a damping ratio of 0.06. This
 familiar problem was analyzed with SFR-1. The frequency response and the
 sensitivity of the frequency response to changes in the damping ratio
 
-(3 8sn in the system matrix) were calculated. The sensitivities were used
+(% a,, in the systenm matrix) were calculated. The sensitivities were used
 to predict the frequency response when the’ damping ratio changes from
 
 0.06 to 0.05. Table 2 shows the predicted results and a comparison with
-exact values. It is clear that the sensitivities provided very reliable
-information about the effect of changes in the damping ratio in this
-problem. A copy of the SFR-1 input required for this problem is shown
+exact values, It is clear that the sensitivities provided very reliable
+information about the effect of chenges in the damﬁing'ratid in this
 
+problem. A copy of the SFR-1 input required for this problem is shown
 in Table 3.
 
 Problem 2. The second problem is the analysis of a reactor with one
@@ -1065,83 +1080,82 @@ group of delayed neutrons and two temperature feedbacks, one prompt and
 
 one delayed. The linearized equations are:
 
-°
+a
 
-¢
-
-1 t }
-n a) Ty n oT; ng
+<
+i
 
  
 
  
 
-dn’ = - B n¢ 1 ) ° + eX .
-IT gn +t NH 7 += 7 (28)
-1 ? .
-ac _ B n' - AC! npNnT + nP%TH + np, (29)
+n o T! n o T! n &k
+dn' _ B, cL 2 Moo | BoTex )
+5z - gt N 3 =3 7 (28)
+1 1 .
+Lo By o e PPAT | PP | TP e (29)
 dt £ £ £
 1
-Tl nto RA pe DA (30)
-dt (MC) (MC). 1 (MC_) 2
-: p’l p’'l pl
-p
-aT hA 7! - hA Tt . (31)
-at Me), 1 (MC), 2
+i ..y (50)
+dt (MC_) (MC_), 1 (MC_) 2
+o p'l STp'l p’l
+{ | | .
+T2 omA g DA g (51)
+at (M.cpi2 1 (Mcp52 2
 where
-nt! = deviation in neutron population from the initial condition,
-C' = deviation in the precursor concentration from the initial
+n! = deviation in neutron population from the initial condition,
+C!' = deviation in the precursor concentration from the initial
 
 condition,
 
  
- 
-
-Table 2. Results for Problem 1
+Table 2, Results for Problem 1
 
  
 
  
+
+ 
+
+02
 
 Predicted Actual
-Frequency Amplitude Amplitude Amplitude "Amplitude Percent
+Frequency Amplitude Amplitude Amplitude - Amplitude Percent
 (radians/sec) (damping ratio Sensitivity (damping ratio (damping ratio Error
-= 0.06) = 0.05) = 0.05)
+= 0.06) : = 0.05) = 0.05) -
 
 0.1 1.01003 0.00123646 1.01005 1.01005 0
-0.2 1.04134 0.00542026 1.04145 1.041h4Y 0.001
-0.3 1.09804 0.0142982 1.09833 : 1.09830 0.003
-O.4 1.18854 '0.0322359 . 1.18919 1.18913 0.005.
-0.5 1.32909 0.0704339 1.33050 1.33038 0.009
-0.6 1.55271 0.161715 1.55594 1.55568 0.017
-0.7 1.93472 0.425824 + 1.9432L 1.94257 0.034
+0.2 ‘1.0413kL 0.00542026 1.04145 1.0414L 0.001
+0.3% 1.09804 0.0142982 1.09833 ‘ 1.09830 0.003
+0.4 1.18854 '0.0322%359 1.18919 1.18913 0.005 .
+0.5 1.%2909 0.070433%9 1.3%050 1.%3038 0.009
+0.6 1.55271 0.161715 1.55594 1.55568 0.017.
+0.7 1.93672 0.425824 -+ 1.9432) 1.94k257 0.034
 0.8 2.68339 1.48492 2.71310 2.71163 0.054
-0.9 k,57562 9.31140 4.76185 4, 75651 0.112
-0.95 6.66633 © 32,0841 7.30801 7.34594 0.516
-1.0 8.33333 69. hLlhL 9.72219 ~~ 10.00000 2.778
+0.9 b 57562 9.31140 4,76185 b 75651 0.112
+0.95 6.66633 22,0841 7. 30801 T . 3459) 0.516
+1.0 8.33333 69.4uLy 3.72219 10.00000 2.778
 1.2 2.15999 1.741k1 2.19482 2.19265 0.099
 1.4 1.02607 0.254081 1.03115 1.03076 0.038
 1.6 0.636225 0.0791140 0.637807 0.637680 0.020
-1.8 0.44h267 0.0341156 0.445049 0. 44hook 0.012
-2.0 0.332272 0.0176085 0.332624 0.3%2595 0.009
-3.0 0.124874 0.00210298 0.124916 0.124912 0.003
-5.0 1 0.0416537 0.000216811 © 0.0416580 0.0416576 0.001
-10.0 0.0101003 0.00001236L46 0.010050 0.010050 0
+1.8 0.44L367 0.0341156 0. 445049 0.Lhkooh 0.012
+2.0 0.332272 0.0176085 0.33%262k 0.3%2595 0.009
+3.0 - 0.12487k 0.00210298 0.124916 o 0.124912 0.003
+5.0 0.0416537 0.000216811 - 0.0416580 - 0.0416576 0.001
+10.0 0.0101003 0.0000123646 0.010050 0.010050 0
 
  
 
  
-
-03
  
 
+ 
+
 Type
 Type
 Type
 
 Type
-Type
-
 Type
 
  
@@ -1150,11 +1164,11 @@ KEYPUNCHING INSTRUCTIONS:
 
 Punch only those cords containing data.
 
-UCN-8302
+UCMN-8302
 
-18)
+13
 
-12-63)
+12-03)
 
 TEN COLUMN INPUT
 SFR-1 SAMPLE
@@ -1164,18 +1178,8 @@ Table 3. Sample Input for Problem 1
 
 REFERENCE
 
-Te
-RR RS =P
-
-ex
-C01
-ha)
-
-3 =
-
-ple
-
-22
+e
+22
 
 deviation in fuel temperature from the initial condition,
 
@@ -1183,49 +1187,63 @@ deviation in moderator temperature from the initial
 
 condition,
 
-delayed neutron fraction = 0.0064,
-neutron lifetime = 0.5 X 107%,
+delayed neutron fraction = 0.006L,
+neutron lifetime = 0.5 X lO-u,
 precursor decay constant = 0.125,
 
 initial neutron population = 10.0,
 
-fuel temperature coefficient of reactivity = -0.5 X 1072,
-
-moderator temperature coefficient of reactivity = —0.5 X 1077,
-
-external perturbation in K rp?
-
+fuel temperature coefficient of reactivity = -0O.
+moderator temperature cdefficient of reactivity
+external perturbation in keff’
 heat capacity of fuel = 1.5,
 
-(heat transfer coefficient) X (fuel area) = 3.0
+(heat transfer coefficient) X (fuel area) = 3.0,
 
 heat capacity of moderator = 2.0
 
-L
-
-The system parameters are identified with specific x; as shown below for
+The system parameters are identified with specific X, as shown below for
 
 this problem:
 
-Mog
+mN I—JN
 
-WO
+™
 
-=B = 0.0064
+b
+£ Ul
 
-= 4 = 0.00005
-=A = 0.125
+0.0064
+0.00005
+0.125
 
-=n = 10.0
+= 10.0
+~0.0005
+'—0.00005
+1.5
 
-oO
+1l
+EER RS ¥ T
+1l
 
-= a = -0.0005
-= a, = =0.00005
-= (Mc) =1.5
-= hA = 3.0
+i
 
-= (Mc), = 2.0
+H
+
+(@
+~—
+1\
+
+p’l
+= 500
+
+= 2.0
+
+il
+&
+3
+~
+no
 
 Substitution of these values into Egs. (28) through (31) yields the
 
@@ -1234,71 +1252,70 @@ following matrix equation:
 where
 
 dz
-iT" Az + g 8k. 3
--128.0 0.125
-A = 128.0 -0.125
-0.667 0
-0 0
-
-—100.0
--0.64
-—2.0
-
-1.5
+-128.0 0.125 =100.0
+A = 128.0 —0.125 =0.64
+0.667 0 —2.0
+0 0 1.5
 
  
 
+\.)‘
+
+5 x 1072,
+
+= —0.5 X 10'”,
+
+(32)
+
 -10.0
+—~0.064
 
-—0.064
 2.0
-
 -1.5
  
 
-23"
+23
 
-2.0 X 10”
+2.0 X 105‘
 1.28 x 10°
 0
 0
 
 The frequency response for problem 2 is shown in Fig. 2. Figure 3
-shows the sensitivity of the magnitude of the’ frequency response to
-changes in the fuel temperature coefficient of reactivity (a) and the
-moderator coefficient of reactivity (a). Several observations about the
+shows the sensitivity of the magnitude of the}frequency'responée to
+changes in the fuel £emperature coefficient of reactivity (Qi) and the
+moderator coefficient of reactivity (Qé).' Several:observations about the
 behavior of the system are immediately obtained from the sensitivity plot.
-At frequencies below 0.1 radians/sec, the effect of changes in the fuel
+At frequencies below 0.1 radians/sec, the effect df'changes in the fuel
 temperature coefficient and the moderator temperature coefficient are the
-same. However, since the fuel temperature coefficient (a) has a magnitude
+same. However, since the fuel temperature coefficient (Qi) has a magnitude
 which is 10 times as large as the magnitude of the moderator coefficient
-(a), it is clear that the effects of fractional changes in a; are 10 times
-as large as equal fractional changes in Qe It is also clear that the
+(ag), it is clear that the effects of fractional changes in oy are 10 times
+as large as equal fractional changes in Qé. It is also clear that the
 frequency response is very sensitive to changes in the temperature coeffi-
-¢ients in the frequency range, 0.1 to 0.5 radians/sec. Above 0.5 radians/sec
+¢ients in the frequency ranhge, 0.1 to 0.5 radians/sec. Above 0.5 radians/sec
 the graphite effect is much smaller than the fuel effect until they both
 diminish to small values at frequencies above 10 radians/sec. These
 illustrative results are typical of the results obtained in sensitivity
 analysis of reactor systems. The sensitivity data furnish useful infor-
 mation about the system which can aid in obtaining the essential under-
-standing of the dynamic structure of the system that is needed in analysis,
-design, and experiment planning.
+standing of the dynamic structure of the systém that is needed in analysis,
+design, and experiment planniné.
 
-A copy of the SFR-1 input sheet for this problem is shown in Table
-bh.
+A copy of the SFR-1 input sheet for this problem‘is shown in Table
+L.
 
 -Conclusions
 
-SFR-1 represents a preliminary attempt to obtain frequency response
+SFR-1 represents a preliminary attempf to obtain frequency response
 sensitivities along with the usual frequency response data. The use of
 Cramer's rule was expedient in developing the SFR method and certainly
-
 does not represent the most efficient procedure. Nevertheless, the cdlcu-
 
-lations on SFR-1 have proved useful in practical problems’ and the cost of
+lations on SFR-1 have proved useful in practical prOblems5 and the cost of
 
  
-2
+2l
 
 the calculation has not been excessive. The only numerical difficulty
 observed has occurred at high frequency where inaccurate sensitivities
@@ -1306,12 +1323,12 @@ have been obtained in some problems.
 
 The success with SFR-1 has led to the development of a new computer
 code which performs the SFR calculation more efficiently. This code has
-been prepared and is now being tested. The SFR method is also being used
-to furnish sensitivities to a routine for automatically adjusting the
+been prepared and is now being tested. Thé oFR method is also being used
+to furnish sensitifitigs to a foutine for automatically adjusting the
 parameters in a theoretical model to fit experimental frequency response
-data. The method being used is similar to the "learning model" approach
+daﬁa, The method being used is similgr‘to the "learning model" approach
 
-used by Margolis and Leondes? in adaptive control applications.
+used by Margolis and Leondes6 in adaptive control applications.
 
  
  
@@ -1320,44 +1337,36 @@ used by Margolis and Leondes? in adaptive control applications.
 
 10,000
 
-Magnitude Ratio (&n/&k)
-
 1000
 
-=
-o
-Oo
+Mégnitude Ratio (&n/&k)
 
-10 :
+10 .
 . 0.001
 
-¢ - 0
+0.01
 
-0.01 0.1 1
+Fig. 2a.
+
+0.1 1
 Frequency (radians/sec)
 
-Fig. 2a, Frequency Response for Problem 2 — Magnitude Ratios
+Frequency Response for Problem 2 — Magnitude Ratios
+
+ 
 
 10
 
-0
+ORNL DWG. 65-7608
 
  
 
-DWG .
+100 .
 
- 
-
-65-7608
-
- 
-
-100
-
-Ge
+4
  
 
-0
+: 7
 
 Lo
 
@@ -1369,33 +1378,28 @@ Phase Shift (degrees)
 
 50
 
-8
+3
 
 3
 
-=
-Oo
+-
+O
 
 o
 
-J
-I
-Oo
-
 1
-no
-Oo
+-
+O
 
-=-30
+o
+n
+o
 
-0.001 0.00 0.1 1 10
-Frequency (radians/sec)
+' Frequency (radians/sec)
 
-‘Fig. 2b. Frequency Response for Problem 2 — Phase Shift
+:Fig. €b. Frequency Response for Problem 2 — Phase Shift
 
 '
-
-v
 
  
 
@@ -1405,49 +1409,52 @@ ORNL DWG. 65-7609
 
 100
 
-2
-Sensitivity x 106
+9%
+Sensitivity x 1076
 
 0.001
 
 0.01
 
-"Fig. 3.
-
 fuel temperature coefficient of reactivity
 
-moderator temperature coefficient of reactivity
+moderator temperatufé coefficient of reactivity
 
  
 
-0.1 . 1
+0.1 . 1l
 
-10 "100
-Frequency (radians/sec)
+10 " 100
+Frequency (radians/sec) ;
 
-Selected Sensitivities from Problem 2 Results.
+' Fig. 3. Selected Sensitivities from Problem 2 Results..
 
 LC
  
+
+Type 1
+
+Type
+
+Type L
+
+Type
 
  
 
 KEYPUNCHING INSTRUCTIONS:
 
-Punch only those cards containing data.
+Punch only those cards eontoining dota.
 
-UCN-5393 .
-3 12-62)
-
-TEN COLUMN INPUT
-
-Teble 4. Sample Input for Problem 2
+TEN‘ COLUMN INPUT
 
 REFERENCE
 
-&
-
 8¢
+
+UCN-5393 . Teble 4. Sample Input for Problem 2
+
+(3 12-83)
  
 
  
@@ -1459,30 +1466,28 @@ KEYPUNCHING INSTRUCTIONS:
 Punch only those cards containing dota.
 
 UCN-5393
-{3 12.63}
+{3 tl-lli)
 
 TEN COLUMN INPUT
 
--1
-T.
+-}
+T.W. -\
 
-Table 4. (continued)
-
-\
+Table L. (continued);
 
 REFERENCE
 
-6c
+6C
 20
 
 References
 
 ®
 
-S. M. Katz and D. S. St. John, "Lass — An IBM 704 Program for Calcu-
+S. M. Katz and D. S. St. John, "Lass — An IBM TO4 Program for Calcu- .
 lating System Stability," USAEC Report DP-894, Savannah River
 
-Laboratory, July, 196k.
+Laboratory, July, 1964.
 
 C. B. Guppy, "Computer Programme for the Derivation of Transfer
 Functions for Multivariable Systems," United Kingdom Atomic Energy
@@ -1490,14 +1495,14 @@ Authority Report AEEW-R189, Winfrith, March 192.
 
  
 
-V. N., Faddeeva, Computational Methods of Linear Algebra, Dover
-Publications, Inc., New York (1959).
+V. N. Faddeeva, Computational Methods of Linear Algebra, Dover
+Publications, Inc., New York (1959). |
 
-F., E. Hohn, Elementary Matrix Algebra, The MacMillan Co, New York
+F. E. Hohn, Elementary Matrix Algebra, The MacMillan Co., New York
 (1958).
 
 S. J. Ball and T. W. Kerlin, "MSRE Stability Analysis," USAEC Report
-ORNL-TM-10T70, Oak Ridge National Laboratory (in preparation).
+ORNL-TM-1070, Oak Ridge National Laboratory (in preparation).
 
  
 
@@ -1506,42 +1511,26 @@ Systems; The Learning Model Approach,” pp. 556-563 of Automatic and
 
 Remote Control, Proceedings of the First International Congress of
 
-®
+ 
 
-the International Federation of Automatic Control, Moscow, 1960,
+&
+
+the International Federation of Automatic Control, Moscow, 1960
 edited by J. F. Coales, J. R. Ragazzini and A. T. Fuller, Butterworths,
 London (1961).
 
  
+
+ 
  
 
-=
-O
+O O—1 O =\ o H
 
-=
-=
-
-12-21
-’ 22
-23
-2h
-
-26
-27
-
-49-63
-6h
-65-66
-
-OO O31 OW Fw oH
-
-J
+e -
 
 31
 
- —
-
-Internal Distribution
+. Internal Distribution
 
  
 
@@ -1549,31 +1538,31 @@ R. K. Adams 28. A. M. Perry
 
 C. L. Allen, K-25 29. B. E. Prince
 
-S., J. Ball | 30. C. W. Ricker
+5. J. Ball _ 30. C. W. Ricker
 
-S. E. Beall 31, M, W. Rosenthal
+S. E. Beall 31, M. W, Rosenthal
 
-A. A. Brooks; K-25 32, D. P. Roux
+A, A. Brooks, K-25 32, D. P. Roux
 
-0. W. Burke 33, H. W. Savage
+0. W. Burke ‘ 3%, H. W, Savage
 
-F. L. Culler 34, A. W. Savolainen
+F. L. Culler 34, A, W. Savolainen
 
-A, P, Fraas 35. I. Spiewak
+A, P. Fraas %5. L. Spiewak
 
-D. N. Fry 36. R. S. Stone
+D. N. Fry 36, R. S..Stone
 
 S. H. Hanauer 37. D. B. Trauger
 
-P. N. Haubenreich 38. G. E. Whitesides, K-25
+P. N. Haubenreich : 38, G. E. Whitesides, K-25
 
 T. W. Kerlin 39, G. D. Whitman
 
 B. R. Lawrence 40. ORNL Patent Office
 
-J. L. Lucius, 41-42, Central Research Library
+J. L. Lucius. 41-42, Central Research Library
 
-M. I. Lundin 43-4, Y-12 Document Reference Section
+M. I. Lundin 4%-4l, Y-12 Document Reference Section
 R. N. Lyon 45-47, Laboratory Records Department
 H. C. McCurdy 48, Laboratory Records Department,
 A, J. Miller - LRD-RC

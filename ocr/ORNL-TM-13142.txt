@@ -1,22 +1,260 @@
-. ORNL/TM-13142
+ 
 
-| RECEIVED
-APR 0 2 1336
+S S
 
-OSTI
+s
+S 2
+
+ST
+ST an
+s
+
+o
+
+ 
+
+ot
+
+e
+SRS
+Tansaaidn
+
+LI
+aa S
+
+By
+
+e
+
+e
+G
+
+ir
+
+T
+
+S
+
+TR RRRARN N
+S
+GnEnaR
+S .
+
+B
+
+2
+
+o
+
+i
+S
+
+i
+
+o
+
+i
+
+Tt
+
+o
+
+o
+ok
+
+o
+
+S
+
+i
+
+o
+
+S
+
+Tt
+
+S
+
+Sl
+Sl
+i
+
+o Sy
+L
+T
+
+et
+
+et
+
+iny
+i
+
+SRS o
+Shmtas
+
+e
+A
+
+o
+
+e
+
+SEadunis
+
+e .
+s e
+i
+
+i Tl
+o Shis
+S T
+A
+e
+Sh e
+
+2 = e
+e 2
+
+Y
+
+o
+
+R
+
+e
+
+s
+ek
+
+%
+
+o
+T
+
+e
+L
+
+5
+R
+
+e
+
+i
+b
+
+i
+= .:?.n:r:.\;&;ﬁ‘
+
+S
+
+G
+
+3
+P
+SR
+B
+
+ahy
+e
+e
+
+-
+
+it
+S
+S
+
+e
+
+&
+
+bl
+
+i
+Chi
+
+s
+
+i S s
+B SEn
+
+T
+
+TR
+
+e
+
+e 5
+S Sl
+
+L il
+s
+R
+
+Sl
+SR
+
+o B
+U s
+el
+
+R
+
+s
+= L
+SR
+e
+
+S
+
+e
+s
+
+e
+
+o
+
+L
+
+G
+
+o
+
+ 
+
+N OF THIS DOCUMENT IS UNLIMITED|
+
+i
+
+s
+L
+
+ORNL/TM-13142
+
+RECEIVED
+APR 0 2 13%
+oS
+
+ 
 
 A Descriptive Model of the Molten Salt
-
 Reactor Experiment After Shutdown:
 Review of FY 1995 Progress
+
+Sy
+o
+‘;/;??ﬁi; 2
 
 D. F. Williams
 G. D. Del Cul
 L. M. Toth
 
-MASTER
+2
 
- 
+.
+e
 
  
  
@@ -25,7 +263,8 @@ MASTER
 
 This report has been reproduced directly from the best available copy.
 
-Available to DOE and DOE contractors from the Office of Scientific and Techni
+Available to DOE and DOE contractors from the Office of Scientific and Techni-
+
 cal Information, P.O. Box 62, Oak Ridge, TN 37831; prices available from (615)
 676-8401, FTS 626-8401.
 
@@ -66,7 +305,9 @@ produced from the best available original
 document.
 
  
-ORNL/TM-13142
+ 
+
+ORNL/TM-13142
 
 Chemical Technology Division
 
@@ -75,7 +316,7 @@ AFTER SHUTDOWN: REVIEW OF FY 1995 PROGRESS
 
 D. F. Williams
 G. D. Del Cul
-L.M. Toth
+L. M. Toth
 
 Date Published — January 1996
 
@@ -87,86 +328,64 @@ LOCKHEED MARTIN ENERGY RESEARCH CORP.
 for the
 U.S. DEPARTMENT OF ENERGY
 under contract DE-AC05-960R22464
+CONTENTS
 
- 
- 
+LIST OF TABLES ....ooooneoomeeeeseeeemmesssseemmnssseeessmsssssssasessesssmassesessomssssmmsessssmmessssessesssmmmnns v
+LIST OF FIGURES ........ovvveoeessseeemssesssseesssmmeessssssesssessessssssmmesssssesmmenssssmmmssssesssssmsecsssmose vii
+EXECUTIVE SUMMARY ..couneeeeevreesesssseeemsessssscessssssssssssssmssssssssssssssstsssnsssssesmanssessees ix
+1. INTRODUGCTION ....covvoeeeesreeesssssmesesssssemmssesseessasessesmasssessssssesssemssssssemsessseemmessesmessee 1
+2. MSRE FUEL INVENTORY .....coouerereeeeemsssssesessmmsssesssssmmssssssesesssssssmmasssseesansessssmmes 2
+3, CHEMICAL INTERACTIONS DURING MELTING OF THE FUEL SALT .......... 15
+4. MODELING OF THE ACB «....oovveeeeeseeeeeeeeessssessmmsssssssenmsssssssseasessssssessmssssseasosssssans 17
 
- 
+4.1 RADIATION MODELING ...oovccneveereeseremmssessemmesssseemsssssonmssssssesmasssesmssssesnss 17
 
- 
-CONTENTS
+4.2 HEAT-TRANSFER MODELING ...cccuu.nccoommmeeseeeemmmesssssmmmessssemmmesssssmmmsssssnsnes 19
+5. MSRE SALT RADIOLYSIS ........oveeeeomeeeeeummeasnnassommmsasnessssessssssssssssssssssssmsssssssssssssees 21
 
- 
+5.1 RADIOLYSIS EXPERIMENTS ....cooouneeeeeemmserseseessssssssmmssssssssssmssssssssssssssens 22
 
- 
+5.2 ABSORBED DOSE AND GAS GENERATION ESTIMATES .....c..occumenrceenns 28
+6. THERMAL FLUORINATION TESTS .....covuummmenereemmmssssssessmssseemmsmssessssssnsssssssesssssss 34
+ACKNOWLEDGMENTS ...coouneeemeaeeeseesssmsseesmmmmessssssssmessssmesssssssmmsssssssasssssommssssssssssses 37
+REFERENCES ......cooveeeesesseeseesssssssssemmmmessssessesmesssssssssmmssssssmsmmessssinssmssssssssmssssssssssesseses 39
+Appendix A. ORIGEN-S RUN INPUT FILE..........oooouueesseeemmesssesmeesssecessmssseesssssssnaes 41
 
- 
-
- 
-
- 
-
- 
-
-LIST OF TABLES ccc... ecevvuemmeasssesesesscssmmmmsoesssssssssessmmsesssssssesssssssssssssesssmmsnsssssssmensesss v
-LIST OF FIGURES .........covvuummessessesssssssmsmmsssssssssssssssmmmssssssssssssmmsssssssssssssmmssssssssmsessses vii
-EXECUTIVE SUMMARY ..oovueueeseesessummsasesssssssssssmssmsnssssssssssssnsssssssssmsssssssssssssensss ix
-1. INTRODUCTION ..oovvemrmmerreseeeersesemsmssesssssssssssssmmmsssssssssssmmmesssssssssssmsmsssssssssanssssssons 1
-2. MSRE FUEL INVENTORY .......oorveeeemmmsmsmmmamsmmesssssesssssssesseessmmmmsmmmsessssssseesssessesseses 2
-3. CHEMICAL INTERACTIONS DURING MELTING OF THE FUEL SALT .......... 15
-4. MODELING OF THE ACB .couueeeeeeeeeermmsmsssssssssssssssmmssssssssssssmsmsssssssssssmmasssssssssnson 17
-4.1 RADIATION MODELING ....oooeueeeeremsesmsaneessesessssmmssssssssesssmsssssssssssssanssossssses 17
-4.2 HEAT-TRANSFER MODELING ...........eoommmeessessssssmmmmoesssssessssmmessssssssmmmssssss 19
-5. MSRE SALT RADIOLYSIS ceese esos esse et eemmaeses sess nessa sass se sssmame sss mmm 21
-5.1 RADIOLYSIS EXPERIMENTS ...ooonuunnriseemsmmsssssssssssssmsmnsssssssssssmmsnsssssssnsasesens 22
-52 ABSORBED DOSE AND GAS GENERATION ESTIMATES ...cuu..oovnnee. 28
-6. THERMAL FLUORINATION TESTS .....cccoommummmmnnssrsssssssmmmmnsssssssssmmnsessssssssansasssssssens 34
-ACKNOWLEDGMENTS ....coovmmaessssssesecssmmmsmmsssssssssssssammmsmssssssssssmssmsesssssssssmmmssssssssssnns 37
-REFERENCES ...covvcoeeee sess ee sesessmmmssosssssssssssssssssmmmmssssssssssssmsammsssssssssssssmsnssssssssssmsannssssssmenss 39
-Appendix A. ORIGEN-S RUN INPUT FILE ...........cvsummmssssssssssmsmssssssssssmssnsesssssssnns 41
 Appendix B. CALCULATION OF RADIOLYTIC YIELD FROM
 IRRADIATION OF MSRE FUEL SALT IN THE HFIR COOLING
-POOL ecco eeeremeesmssssessessesessesssssssssssssssssssssmsssssssssssssssssssesssssmmsnssssssssss 47
-Appendix C. ESTIMATION OF CROSS-TRANSFER OF FISSION
-PRODUCTS AND PLUTONIUM TO THE FLUSH SALT .....ccovevrvemnnnns 53
 
+POOL.....oovvvmmmnnns e seee st R AR SR eRRR eS8 RS RRRRA S 008545 AR08 EE R 47
+Appendix C. ESTIMATION OF CROSS-TRANSFER OF FISSION
+PRODUCTS AND PLUTONIUM TO THE FLUSH SALT ..........ccouee.... 53
 Appendix D. HEAT-TRANSFER ANALYSIS OF IRRADIATION
+SPECIMENS ...covecunmmmaosssssecsssessesssssmmmsssssssssessssssssmensosssssssssmmmmnsosssssssssmonss 57
+iii
 
  
 LIST OF TABLES
-
- 
-
- 
-
- 
-
- 
 
 Table Page
 1. Comparison of measured and projected fission product activity at shutdown ........ 5
 2. Distribution of major fission product decay energies between salt-seeking
 
-and metallic e1EMENt CLASSES .......ccccvcernercnrsecisuecssassessirassersssssansessasessosesssssnsassssesess 5
-3. Primary inventory of stored MSRE Salts ........cccccorseeiericnssassassssnsanesasassaseesessssessonases 7
-4. Secondary inventory of stored MSRE Salts .........c.cccccuinerenreencareneesnesesessereneesesosenes 7
-5. Detailed inventory of stored MSRE salts (1995 basis) .......cccceveeneecensecirecuencee 8
-6. Inventory of radioactive isotope activity (Ci) and elemental mass (g) .........ccveneue. 10
-7. Results from analysis of MSRE off-gas samples taken in 1994 ............ccceceeerveanene 14
-8. Estimate of material removed from MSRE salt beds.........ccccecceuecrecenencanecaesconenns 14
-9. Electrode potentials of major fuel-salt CONSHIUENLS ........ccvceeerrireeerisvesccsseressanne 15
+and metallic element CIASSES ........covreivnccrnsacccssesnsserassicsssassssssessasaessssnessessnsnsssessones 5
+3. Primary inventory Of Stored MSRE Salts ........ccccorvecsnnessessesenrnaessassesnsrsssnssseasassens 7
+4. Secondary inventory of stored MSRE Salts .........cocecriericrensecccresncscseeraesnssesasssesses 7
+5. Detailed inventory of stored MSRE salts (1995 basis) .......cccceeuerneercnecraecnseeresecssens 8
+6. Inventory of radioactive isotope activity (Ci) and elemental mass (g) ........ccveeu.... 10
+7. Results from analysis of MSRE off-gas samples taken in 1994 ..............cccceveue.. 14
+8. Estimate of material removed from MSRE salt beds.........cccoecirnmrreccssrennaestonsnnes 14
+9. Electrode potentials of major fuel-salt constituents................... weeresetenrsne e s s nrens 15
 
-10. Summary of radiolysis experiments on MSRE fuel salts ........cccecveecrrerereccrrcccaanas 24
+10. Summary of radiolysis experiments on MSRE fuel salts ........ccccvvceereccncnscaannnns 24
 
-11. Source spectra for MSRE fuel-salt irradiation .........ccceesesssecescensacsseacssssasnsssssnnnns 26
+11. Source spectra for MSRE fuel-salt irradiation .......ececevcesveecssncsssacssscrssssssacsnacsaanes 26
 
-12. Drain tank gamma spectrum (2583 kg salt basis, 25 years after discharge) .......... 28
+12. Drain tank gamma spectrum (2583 kg salt basis, 25 years after discharge).......... 28
 
 13. Distribution of source-term power by radiation category (total fuel and
 
-FIUSD-SAIL DASIS) ...ccceereeerenrrerserencsansaessecssessasssssseassenssnsrsasssansasersasssessanssasassasasssessanes 30
-
- 
+FIUSD-SAIE DASIS) ...eveeerrrererrnesssassssansssanssssnassssnssssssasssnasssrasesssassssnnsssssasssssssassssasssorsones 30
 
  
  
@@ -176,29 +395,23 @@ FIUSD-SAIL DASIS) ...ccceereeerenrrerserencsansaessecssessasssssseassenssnsrsass
  
 LIST OF FIGURES
 
- 
-
- 
-
 Figure Page
-1. Primary elements of the MSRE fuel-salt Storage System. .........ccoeueererseeenereecseennne 3
-2. Schematic depiction of uranium deposit ASSAY. .......cccerererestrrererseseresreserersssesssssseses 18
+1. Primary elements of the MSRE fuel-salt Storage SyStem. .........cceceeverneresrernereessnssens 3
+2. Schematic depiction of uranium dEPOSIt ASSAY. ......ccccereererressarsesnssresessassessassaossasess 18
 3. Fluorine generation curves for 1986 and 1995 irradiation experiments. ............... 23
-4. Comparison of source spectra for MSRE fuel-salt irradiation. .........cccoveseeeueereanes 25
-5. Distribution of source-term power by radiation category. ............. semsvssarsa rises 29
+4. Comparison of source spectra for MSRE fuel-salt irradiation. .......cccceevceenaennennas 25
+5. Distribution of source-term power by radiation category. ............. sresasvensanensasrersase 29
 6. Projected fluorine generation in the absence of annealing and induction
 
-EETECES. ocveeinininscneninrsnstessasssassessesassseasssssnasesosseassasssssansssssssnsasssssssansassossssessesnasaans 31
+EETECLS. oo eieeiecceecnecncesstenancintesnncnssnesneesnnsenssansressnsesnnssnsasnsenssansessanssnnsassnnesnanaesssnse 31
 7. Projected accumulation of radiolytic fluorine in the absence of annealing
 
-SINCE 1971. .acnvivirirnnrnnssnaccnisaisssssessisassssansssssssessssssssssssssssssnsssssasessossossasssasesasnanses 31
+SINCE 1971 coieciinicnnninissnntnssstsisscesnsissassssssssasssasssasssssassssasssessesssssssansssassssanasnes 31
 8. Projected accumulation of radiolytic fluorine in the absence of annealing
 
-between 1994 and previous years. cesssessssnessssnassanses 32
+between 1994 and PreviOUS YEATS. ..cc.ciicreccsessssersesssesasessasssassssessssssasssssssasssssasaneas 32
 
- 
-
- 
+vii
  
 
  
@@ -213,7 +426,7 @@ conditions at temperatures below 300°C. However, further studies are required t
 out the possibility of conventional fluorination of the fuel salt at temperatures below the
 230°C annealing treatment limit. A separate investigation has identified and quantified
 the stoichiometry and thermochemistry of the reactions between F,/UF, mixtures and
-activated carbon. This work seeks to explain the chemistry in the auxiliary charcoal bed
+activated carbon. This work séeks to explain the chemistry in the auxiliary charcoal bed
 (ACB) and is documented in a separate report.
 
 Field measurements at the MSRE have identified material that has evolved from the fuel
@@ -221,7 +434,7 @@ salt and now resides in the off-gas system. The following items are of particula
 
 importance:
 
-* Analysis of radiation and temperature measurements provide
+* Analysis of radiatiori and temperature measurements provide
 independent and consistent estimates of ~ 2.6 kg of fuel-salt uranium
 deposited in the top of the ACB.
 
@@ -229,9 +442,7 @@ deposited in the top of the ACB.
 gas piping and tank plenums contain more than 1.8 kg of uranium and
 more than 47 mol of fuel-salt fluorine. Based upon the off-gas analysis
 and the ACB uranium assay, it is projected that an additional 68 mol of
-fuel-salt fluorine is deposited in the ACB.
-
- 
+fuel-salt fluorine is deposith in the ACB.
 
  
  
@@ -255,7 +466,7 @@ remaining 12% that escapes corresponds to an exposure at the inner tank wall of 
 of F, has accumulated since the cooling of the salt in 1971. Best-estimate yield values
 put the figure at 300 mol of radiolytic fluorine. Projections also show that the current
 measure of liberated fluorine (115 mol) could not have been generated recently.
-According to these estimates, generation of fluorine must have occurred prior to 1989,
+Accofding to these estimates, generation of fluorine must have occurred prior to 1989,
 
 and probably started much earlier than this.
 
@@ -271,13 +482,13 @@ laboratory studies continue, and better analyses are available, our understandin
 state of the MSRE and the best path toward remediation improves. Because of the
 immediate concern about the deposit in the auxiliary charcoal bed (ACB), laboratory
 studies in the past year focused on carbon-fluorine chemistry. This work is documented
-in a separate report [1]. Secondary efforts were directed toward investigation of gas
+in a separate report []. Secondary efforts were directed toward investigation of gas
 
 generation from MSRE salts by both radiolytic and nonradiolytic pathways.
 
 In addition to the laboratory studies, field measurements at the MSRE provided the basis
 for estimating the inventory of uranium and fluorine in the ACB. Analysis of both
-temperature and radiation measurements provided independent and consistent estimates
+temperature and radiation measurements providéd independent and consistent estimates
 of about 2.6 kg of uranium deposited in the top of the ACB. Further analysis efforts
 included a refinement in the estimates of the fuel-salt source term, the deposited decay
 
@@ -293,7 +504,7 @@ update and complement the more recent MSRE assessment reports [2-4].
 2. MSRE FUEL INVENTORY
 
 The inventory of the stored MSRE fuel by element, isotope, and location is the starting
-point for most analyses, and a number of studies [2-6] have reported inventory values.
+point for most analyses, and a number of studies /2—6] have reported inventory values.
 There are two important reasons to revisit this subject: (a) the recently discovered
 
 transport of material within the MSRE has not been accounted for in these reports, and
@@ -316,7 +527,7 @@ solidified upon cooling below 434°C and were maintained between 230 and 340°C 
 exception of the heel of flush salt left in the fuel loop and the heels of fluorinated salt in -
 the fuel storage tank and salt still, these three tanks in the drain tank cell contain virtually
 
-all of the radioactive fuel salt [6, 10-11].
+all of ihe radioactive fuel salt [6, 10-11]).
 
 Consideration of the inventory after shutdown (i.e., “discharge” inventory) is the natural
 starting point. Adjustments are made to this baseline to account for the decay and
@@ -332,7 +543,23 @@ in the fuel salt, (b) the fission product loading of the fuel salt, and (c) the 
  
 
  
-"wd)sAs 33e10)s Jpes-jan) FYSIA AY} JO SHUWAD Lewy 1'dig
+"WId)ISAS ades03s Jres-[any FYSIA Y3 jo spudwdpd Arewnrg ‘131
+
+ANYL 2=dNVL L =ANVL
+HSN14 13nd  Nivdqg 13nd  NIvyag 13nd
+
+ 
+
+    
+
+ 
+
+n "iviol
+6% 148
+
+1vs 0314101108
+
+1130 Q38 TVOJIVHIY
 
  
 
@@ -340,153 +567,99 @@ in the fuel salt, (b) the fission product loading of the fuel salt, and (c) the 
 
  
 
- 
+  
+
+(1 606) (0 z92)
 
  
 
- 
+        
 
- 
+   
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
- 
- 
-
- 
+ANI3H
+30vds SVO
 
    
 
  
 
- 
+(0 961) SLS £LS
+dNA1oH
 
- 
+JNNTOA
 
-  
+    
 
- 
+        
 
- 
-
-MNVL T=M%NVL 1-)INVL
-HSNT4 13nd NIvda 13nd NIvda 13nd
-n -iviol
-1130 438 VOJUVHD 6% 1°48 Hi Hy
-L ] 1IvS Q3141a110S Pr
-od |] RII
-(1 606) (0 Z92)
-a 81) : ANH LLS SS £LS
-5 30VdS SV9 :
-Innion Es: —
 INIOd
 J1dNVS
-j on
-(0 90s) i
-Q38 SLona0ud (0c) XH
-MNOVLIS INIA AVOJYUVHI Sdvil [i
-QIYOLINON A¥vAIXNY oval 314d irs
-ONY Q38 VOO¥VHI J dvul
-vdiH OL en
-££S ANY 398nd TVYOOUVHD (3LVAILOV FEE
-(NINA OL
-rt) oH EXT
-‘os Sivs anos EER
 
- 
+        
 
-  
+         
 
- 
+   
 
- 
+           
 
- 
+        
 
- 
+         
+   
 
- 
+       
+    
 
- 
+(1 90¢)
+o | 48
+MIVLIS IN3IA TVOIUVYHI Sdvil
+Jd34OLINOW AYVIIXNY 30viyL TIILEVd Zvs
+ONv 038 WOIYVH) JviL
+vd3iH Ol e
+££S aNY 393nd TVOOUVHI QILVAILDV FIEES)
+ANINg 0l
 
- 
+°H EEE)
+SLIvsS qitos EEER
 
- 
-
- 
-
-LS—-VS6 OMA INYO
-
- 
+LS~-VS6 9MG INYO
 
  
  
 
 the reactor loop and drain tanks (both at discharge and during operation). Each of these
-inventory elements has a different level of certainty. Probably the most accurate
+inventory clements has a different level of certainty. Probably the most accurate
 measurement is that of the uranium and plutonium isotopic concentrations. Uranium and
 plutonium isotopic concentrations were carefully measured throughout the MSRE
 operating cycle and provided the most sensitive and accurate determination of power
 output, burnup, and total uranium and plutonium masses [11]. It was not possible to
-measure the remaining activation and fission products so completely and accurately. The
+measure the remaining activation and ﬁssion products so completely and accurately. The
 entire fission product inventory can be estimated only by modeling the generation and
 
 decay of isotopes.
 
-The primary objective of fission product measurements was to aid in modeling the
+The primary objective of fisSion product measurements was to aid in modeling the
 transport behavior of the elements in the molten salt [12]. A fairly complete picture now
 exists for the partition of fission products between the salt and the surroundings: (a) the
-first four periodic groups (IA, IIA, IIIA, and IVA) and the rare earths are salt-seeking
+first four periodic groups (IA, IIA, ITIA, and IVA) and the rare earths are salt-seeking
 elements and remain homogeneously distributed in the fuel salt; (b) the noble gas fission
-products are removed to the off-gas; and (c) the noble metals class (Nb, Mo, Tc, Ru, Rh,
-Pd, Ag, Sb, and Te/I) dissolves in the salt to a minor extent, and probably exists as a
+products are removed to the off-gas; and (c) the noble metals class (Nb, Mo, Tc, Ru, Rh, ‘
+Pd, Ag, Sb, and Te/I) dissolves 'in the salt to a minor extent, and probably exists as a
 separate phase that deposits on surfaces. The good agreement between the final MSRE
 fission product measurements for salt seekers and the projected inventory as calculated by
-Bell [5] is shown in Table 1. A correction factor of ~10%, due to differences in the basis
+Bell /5] is shown in Table 1. A correction factor of ~10%, due to differences in the basis
 for calculation of measured and projected activities, brings the values in Table 1 into
 agreement within the limits of experimental precision. It is impossible to know the fate
 of the noble metal isotopes, but it is certainly reasonable to assume that most of them
 were flushed into either the drain tanks or the flush tank. The noble metal fission
+
 products are relatively short-lived and comprise a significant fraction of the decay energy
 
 only during the first few years after shutdown, as shown in Table 2.
+
+ 
 Table 1. Comparison of measured and projected fission product
 
  
@@ -495,9 +668,9 @@ only during the first few years after shutdown, as shown in Table 2.
 
 activity at shutdown
 Measured
-inventory Ratio of measured to Ratio of measured to
+. inventory  Ratio of measured to Ratio of measured to
 
-Isotope Half-life (Ci)? projected activity? projected activity®
+Isotope Half-life (Ciya projected activity?  projected activity¢
 
 Salt-seeking elements
 Sr-89 51d 93,900 0.58 0.532
@@ -506,7 +679,7 @@ Zr-95 64d 149,700 0.75 0.848
 Cs-137 30y 9,520 0.85 0.793
 Ce-144 285d 118,200 0.93 1.058
 
-Metallic elements
+‘Metallic elements
 
 Nb-95 35d 8,540 0.05 0.054
 Ru-103 39d 6,860 0.09 0.11
@@ -515,74 +688,67 @@ Te-129m 34d 2,920 0.11 0.278
 
  
 
-a Based upon 12-5-69 sample reported in ORNL-4865 (complete citation in note “c”) and a circulating
+4 Based upon 12-5-69 sample reported in ORNL-4865 (complete citation in note “c™) and a circulating
 loop inventory of 4350 kg.
 
-bSource: Bell, M. I., Calculated Radioactivity of the MSRE Fuel Salt, ORNL/TM-2970, Oak Ridge
+bSource: Bell, M. 1., Calculated Radioactivity of the MSRE Fuel Salt, ORNL/TM-2970, Oak Ridge
 National Laboratory, May 1970.
 
 CSource: Compere, E. L., et al., Fission Product Behavior in the Molten Salt Reactor Experiment,
 ORNL-4865, Oak Ridge National Laboratory, October 1975.
 
-Table 2. Distribution of major fission product decay energies between salt-seeking
-and metallic element classes
-
- 
+Table 2. Distribution of major fission product decay energies between lsalt-seeking
+and metallic element classes |
 
 Fission product decay energy (W)
 
  
 
- 
-
-1 year after S years after 25 years after
+1 year after 5 years after 25 years after
 Half-life shutdown shutdown shutdown
+
 Salt-seeking elements
 
 Sr-89 50.6d 7.2
 
-S1/Y-90 285y 91.3 82.5 50.0
+Sr/Y-90 285y 21.3 82.5 50.0
 
-Y-91 58.5d 8.7
+Y-91 58.54d 8.7
 
-Zr-95 64d 194
+Zr-95 64d 194 -
 
-Cs/Ba-137 30y 52.7 48.3 30.0
+Cs/Ba-137 Ny 52.7 48.3 30.0
 
 Ce/Pr-144 285d 417.8 11.9
 
-Pm-147 2.62y 10.5 3.7 —
+Pm-147 262y 10.5 3.7 —
 Subtotal 607.6 146.4 80.0
 
-Metallic elements
+Metallic elements |
 
 Nb-95 35d 394
 
-Ru/Rh-106 1.02y 36.2 24 -—
+Ru/Rh-106 1.02y _36.2 24 .
 Subtotal 75.6 24 0.0
-Total 683.2 148.8 80.0
-
- 
+Total 683.2 148.8 : 80.0
 
  
  
 
- 
-
 Perhaps the least accurate element in establishing the salt inventory is simply the total salt
-weight. The drain tank load cells that were originally intended to provide accurate salt
+weight. The d;ain tank load cells that were originally intended to provide accurate salt
 weights were found to be too inaccurate for independent determinations [6]. To obtain a
 value for the inventory of the fuel and the flush-salt weights, considerable material
 balance work is required. Accounting for the numerous additions, withdrawals, and
-flushes of the fuel loop—in addition to the effect of the heels remaining in the drain
-tanks—requires good judgment and extensive process knowledge. The best values
+flushes of the fuel loop—-in addition to the effect of the heels remaining in the drain
+tanks—requires good judgment and extensive prOéess knowledge. The best values
 available are bounding estimates provided by the MSRE staff members who are most
 knowledgeable about the history of operation [6, 11]. These values (Tables 3 and 4), in
-conjunction with the measured uranium and plutonium isotopics [11] and the fission
-product/activation projections of Bell [5], form the best basis for establishing a discharge
+conjunction with the measured uranium and plutonium isotopics [17] and the fission
+product/activation projections of Bell /5], form the best basis for establishing a discharge
 inventory. The inventory of major salt constituents calculated on this basis is
 
-summarized in Table S.
+summarized in Table 5.
 
 The major uncertainty in Table 5 is the distribution of plutonium and fission products
 between the fuel and flush salts. Measurements of uranium concentration in the flush salt
@@ -590,10 +756,10 @@ cannot be used to directly infer fission product or plutonium concentrations, be
 the removal of uranium from the flush salt after the initial phase of operation with 235U.
 However, the steady increase of uranium measured in the flush salt after each circulation
 in the flow loop did establish that ~20 kg of fuel salt was transferred to the flush salt
-during each flush operation [11]. The present inventory of uranium in the flush salt
+during each flush operation {11]. The present inventory of uranium in the flush salt
 (~1.3% of the total) represents the cross-transfer from two flush operations conducted
 during the final phase of operations with 23U. The fission product and plutonium cross-
-transfers also had contributions from the seven flushes during 25U operation. In contrast
+transfers also had contributions from the seven flushes during 225U operation. In contrast
 to the relatively constant amount of uranium transferred per flush operation, the
 magnitude of the fission product/plutonium cross-transfers grew from near zero to the
 maximum value associated with 20 kg of spent fuel salt. It is assumed that the fuel-salt
@@ -601,20 +767,23 @@ maximum value associated with 20 kg of spent fuel salt. It is assumed that the f
 fission product and plutonium inventories grew in direct proportion to burnup during
 
 6
+
+ 
+
+_—— i
 Table 3. Primary inventory of stored MSRE salts
 
  
 
+Maximum weight ~ Minimum weight?  Salt density
+
  
 
-Maximum weight ~~ Minimum weight? Salt density
-Major components? (kg) (kg) (g/mL at 26°C)
-
+Major components?® (kg) (kg) (g/mL at 26°C)
 Fuel salt 2.48
 Fuel Drain Tank -1 2583 2479
 Fuel Drain Tank -2 2263 2171
 Subtotal 4846 4650
-
 Flush salt 2.22
 Fuel Flush Tank 4274 4265
 
@@ -622,7 +791,7 @@ Fuel Flush Tank 4274 4265
 
 @Sources: MSRE Fuel and Flush Salt Storage, Request for Nuclear Safety Review and Approval, NSR
 0039WMO00013A (approved 12/28/93; expires 12/31/95); Thoma, R. E., Chemical Aspects of MSRE
-Operations, ORNL-4658, Oak Ridge National Laboratory, December 1971, pp. 58-65, 99-112,
+Operations, ORNL-4658, Oak Ridge National Laboratory, December 1971, pp. 5865, 99-112.
 
 b These minimum weights are most consistent with the process history.
 
@@ -632,15 +801,13 @@ Table 4. Secondary inventory of stored MSRE salts
 
  
 
-Fuel-salt weight Flush-salt weight
-
  
 
-Minor components? (kg) (kg)
-Fuel storage tank 175%
-Distillation experiment 30)
-Reactor flow-loop heel 20 i
-Drain tank cell piping 12b¢
+Minor components3 | Fue:l-s(ailctg ;;vcight Flush-s(all(l;)weight
+Fuel storage tank 1750
+Distillation experiment 30b
+Reactor flow-loop heel : 20 ]
+Drain tank cell piping ' 12b.c
 Processing cell piping gb.c
 Release to drain tank cell 0.1
 
@@ -649,14 +816,14 @@ Release to drain tank cell 0.1
  
 
 ASources: MSRE Fuel and Flush Salt Storage, Request for Nuclear Safety Review and Approval, NSR
-0039WMO0013A (approved 12/28/93; expires 12/31/95); F. J. Peretz, ORNL, personal communication,
-September 6, 1995. \
+0039WMO0C13A (approved 12/28/93; expires 12/31/95); F. . Peretz, ORNL, personal communication,
+September 6, 1995. - ' N
 
 bThese salts have been fluorinated and have low uranium concentration (<100 ppm).
-This value also includes the contribution of unspecified flush or fresh salt to the inventory.
+CThis value also includes the contribution of unspecified flush or fresh salt to the inventory.
 
  
-Table 5. Detailed inventory of stored MSRE salts (1995 basis)?
+Table 5. Detailed mventory of stored MSRE salts (1995 basis)?
 
  
 
@@ -667,39 +834,43 @@ Fuel salt Flush salt (kg)
 Bulk composition mol % (wt %)
 LiF 64.5 (42.6) 65.9 (51.3)
 BeF, 30.4 (35.8) 33.9 (47.8)
-ZF, 49 (20.5) 0.18 (0.89)
+ZiF, 4.9 (20.5) 0.18 (0.89)
 Major elements
 U, kg 37.1 0.5 37.6
-Pu, %5, 98.2 1.8 0.737
-Fission products, %? 98.3 1.7 271
+Pu, %P, 98.2 1.8 0.737
+Fission products, %% 98.3 1.7 2.71
 Rare earths 1.47
-IA, IIA 0.275
+IA, TIA 0.275
 Zr 0.626
-Other metals / I 0.334
-Fissile element isotopes, wt % ©
-By 160 ppm? 75 ppm®
-233y 83.92 394
-Bay 7.48 3.6
-25y 2.56 17.4
-26y 0.104 0.245
-238y 5.94 394
+Other metals /1 0.334
+Fissile element isotopes, wt % ¢
+B2y 160 ppm? 75 ppm®
+23y 83.92 39.4
+B4y 7.48 3.6
+235y 2.56 17.4
+6y 0.104 0.245
+238y5 5.94 394
 239py 90.1 94.7
-240py, 9.52 4.8
+240py 9.52 4.8
 other Pu 035 0.50
 
  
 
-Source: Thoma, R. E., Chemical Aspects of MSRE Operations, ORNL-4658, Oak Ridge National
-Laboratory, December 1971, pp. 58-65, 99-112.
+@Source: Thoma, R. E., Chemical Aspects of MSRE Operations, ORNL-4658, Oak Ridge National
+Laboratory, December 1971 pp. 58-65, 99-112 .
 
-bpistributions based upon estimates in Appendix C.
+bDistributions based upon estimates in Appendix C.
 CFlush salt values are the average of two analyses.
 
-Estimate obtained from Bell, M. J., Calculated Radioactivity of the MSRE Fuel Salt, ORNL/TM-2970,
+4 stimate obtained from Bell, M. J., Calculated Radioactivity of the MSRE Fuel Salt, ORNUI'M-2970
 Oak Ridge National Laboratory, May 1970.
 
 €Flush salt 232U 233U ratio assumed to be that of the fuel salt.
-235U operations. During 23U operations, breeding of plutonium was negligible, and the
+
+ 
+
+ 
+35U operations. During 23U operations, breeding of plutonium was negligible, and the
 
 change in plutonium concentration in the fuel salt was dominated by depletion due to
 fission/transmutation and replenishment by PuF, refueling operations. Appendix C
@@ -708,9 +879,9 @@ to the flush salt.
 
 The previous projections of the MSRE spent-fuel activity had either a very short focus
 (< 5 years) or were concerned with projections far into the future—the intermediate time
-period between 5 and 100 years has not received detailed attention. Because of this gap
+period between S and 100 years has not received detailed attention. Because of this gap
 in the literature, additional ORIGEN-S runs were performed at complementary time
-intervals [13]. The discharge inventory and decay calculations are summarized in
+intervals /13]. The discharge inventory and decay calculations are summarized in
 
 Table 6. The ORIGEN-S input file is included in Appendix A.
 
@@ -720,9 +891,9 @@ mechanism for producing mobile species was known before 1994. Annual reheats of 
 drain tanks were intended to recombine the radiolytic fluorine before it was released from
 the salt, thereby preserving the salt chemistry and eliminating any substantial release of
 F,. A completely new and unexpected pathway for volatilizing MSRE constituents was
-discovered during sampling of the off-gas system upstream of the ACB in 1994. Off-gas
+discovered during sampling of the off-gas syst;:m upstream of the ACB in 1994. Off-gas
 samples (Table 7) indicated the presence of a considerable volume of F, and UF, in
-addition to small amounts of HF » MoFg, and CF,. The presence of such a large amount
+addition to small amounts of HF , MoFg, and CF,. The presence of such a large amount
 of F, and UF in the off-gas suggested that the ACB be inspected as a possible sink for
 these reactive gases. Radiation and temperature measurements confirmed that a
 significant quantity of uranium was deposited in the upper portion of the charcoal bed.
@@ -739,88 +910,91 @@ mole ratio in the off-gas sample (Table 7).
 
  
 
-£1 00L'97 Pye  weTl
-16 008°'L6 ort 621
-LE 98¢ 0v6'E P60T wT
-9 8LE 00L'ZE Uv LTl
-£0 ot [a viv 8'€L £21 L8T PSS stl
-@1¢) E316) 31g) 3 aL 8
-£0 01 ov 1s 81 20€ 708 L¥9 Lele szl
-(3290) 3 qs Is
-3,08) 30g) (3687) z pd 9p
-8 9 196 oSL'E 0£6's 5 0¢ 901
-Lit 006'€L wos wel
-@¢o (3 ¢5) 3 Los) 2 Lt: Sh
-8 9H 196 0SL'E oTv'L £201 901
-Lit 000'¥L PT6E £01
-Bey) 3 cp) @sLy) 3 ny tv
-So S0 So $0 $0 $0 $0 $0 $0 Leave 66
-(3867) 3862) (3867) 3 oL 192
-Een @ en @Lin TON ow
-o's ost'y POE we6
-TE ove's 000°€L1 PSE $6
-B11) 2 aN 1
-¥'1 0€8'E 000'002 PY $6
-£0 £0 £0 £0 £0 £0 £0 £0 £0 Log st £6
-(3199) 3919) 3zLe) x 1Z oy
-: ¥0 0Tr'e 000'€81 PCBS 16
-0611 0L9'9 0ss'L 0£S'8  006'01  00E'ZT  000'El  009'€l 009°'€1 PLT 06
-@za) Br) Gry) z X 6€
-061'1 0L9'9 0ss'L 0£S's 006'01  00£'TT  000'€l  009°'€l 000'p1 £¢8T 06
-080'1 000°791 P90S 68
-@ yn) (31°89) 3010) 3 Is 8¢
-(38's) (3818) (3819) z Q LE
-SIMpo.4d U01SS1]
-A001 Ao AST Aor Aol Ag Ag A o8myxsiq oJiJeH SSE JOUR  Z
+€1 00L°97 PPE  weTl
+1'6 008°L6 Yor'| 6Z1
+L€ 98¢ 0v6'E P60T  wLTI
+9'€ 8LE 00L'TE yp'6 Lzt
+€0 01 Szl vy 8'EL £21 L8T P8S gzl
+@ 1) @1¢) @i z 3L T8
+€0 01 oy 1S 81 70¢ 208 L¥9 AeLe czTl
+3z90) 3 qs I
+3 L0£) @ L0g) 3 ¢80 z pd 9
+T8 9 196 osL'E 0£6's § OF 901
+LIT 006'€L wog  ugol
+(3 g9) (3 ¢5) (8 L05) T 't S
+T8 9T 196 0SL'E ow'L £70'1 901
+| LT1 000'¥YL PT6E £01
+@ ¢p) (B ¢p) @iy 3 ny ¥
+S0 S0 S0 S0 S0 $0 $0 S0 S0 £¢ave 66
+(3862) (8860) (3860 3 9], €
+@1€n @10 @L11) z o Ty
+0'S oSty P9E  wWG6
+I'E ove's . 000°€Ll PSE 6
+@) 1 qN 1§72
+¥'1 0£8°C 000°00Z PP9 6
+£0 €0 £0 €0 £0 €0 €0 €0 €0 £93 ST €6
+(3199) (3 919) @zL9) 3 17 oy
+. _ ¥'0 ozv'e 000°€81 PS8BS 16
+061°% 0,99 0SS'L 0£S's 00601  00EZT  O000'El  009°€l 009'€1 PLT 06
+@z @z @1y z X 6€
+061'l 0499 0sS'L 0£5'8 00601  O00E'ZT  O000'El  009'¢l 000'¥1 £¢87 06
+080'1 000791 P9°0S 68
+@ 11) (3 1°89) (3or1) 3 1§ 8¢
+3 8p'8) (B gy's) (381'8) 3 Qy LE
+S1IMpoLg U0ISSY,]
+Koot Koe Ast Aot Aot Ag  A¢ K1 odmysiq oJj[eH SSeN Wowd[g  Z
 
  
 
  
 
-(3) ssew [ByURWdPR pus (1D) £)ago8 ad0J0SI dA1JOBOIPE JO £I0JUIAU] 9 IqBL
+(8) ssew1 [ejUdWIAA pue (1)) A)Ande Ad0)0s] IAIJIROIPR. JO £I0JUIAU] "9 QR
 
-(saumd aI SHUN JOYIo fle ‘sasayiuared ul SSeW [RIUAWIT)
+(Saumd a1e syun JAYIo [[e ‘sasoyuared up SSeUI [RIUA]T)
 
 10
 
  
+
+ 
  
 
-019 00F'¥T  00S'LT  00T'1E  O00I'Ty  001'SS  009'€8  000°L0Z  000°008'1
-’ (12) fanov 1ompoud uossst
-Gro @ Lo } @ uo
-(8) sows yompoud uoissyy
-@ 060) (8 598'0) Eo) T PO 9
-ry £6 vel $'s8 6L1 We yee 9LE K96¥ SSI
-I'¢ Ly oL LST SET Lee STE Tse £98 #S1
-It St 61 £€ Ty Ly Ts 4 Leer st
-@ stg) B6t'9) (3Lc9) 3 ng £9
-89 Lit 121 9 9€1 1 pl 91 Ll £06 IST
-(E301) @otn Ez) I ug 9
-£7 050'1 PTY spl
-10 0 PHS srl
-VET €0S 681 059'C 0€6°6 008'91  009'8T  00T'LE £797 Ly1
-@s00) @zov 3 wy 19
-(39.9) 3B 9Ls) (8 99) ZT PN 09
-0 602 £1 6TL 0 wey whl
-SLI 06¥'1 0188 001'TS  000'871 well 24!
-@v81) (3y81) @oLn 3 ht 6S
-A 064'1 018's 001'zs  000'LT1 PSST 124!
-oLl 000°01¥ PSE wl
-(8 29¢) (8 29¢) @ ott) 3 D 8S
-@oLn @oL1) @oLn) g Ls | LS
-0S0'1 062's 06's 099‘9 06€'S 0T'6 0.86 00£'01 00s°01 wor wg]
-B61) 3 Lg1) (308) T vg 96
-ott 009'S 062'9 090°L 068'8 0866 0001 006°01 00T'11 Log LET
-z0 01 0? 6¢ S'S £90 El
-@szn @vyip 3621) 3 De SS
-@z91) @ zor) Bern z I £S
-Loot Log Agz Lor Loi kg Ag K1 oSreysiq IJJEH SSN WOUR[ Z
+019'¢ 00¥'¥C  00S°LT  001'1€  O00I'TY  00I'8S  O009'€8  000'L0T  000°008°1
+: - (12) &ntanov yompoad uoyssty
+@11Lo @r1Le) “ @1
+(8) ssow sonpoud vosssy g
+(2 06°0) (8 c98°0) B0 I PO 9
+'y €6 61 $'s8 6L1 e ¥Z€ 9LE L96¥ gCT
+I'g Ly oL LSt S'€ Lt $'TE Tse £33 73
+'t Sl 61 €€ [A 4 Ly TS ¢S Lggl sl
+@B st'g) B 6t'9) (3Lg9) 3 ng £9
+89 LT1 1z 9zl 9¢1 1821 ¥rl 9l Lyl £06 ISt
+(3 s01) @orn) @z I ug 29
+4 0S0'T Py  wsyl
+1'0 0 PHS 8vl
+Vel €0S 681 089'C 0£6'6 008'91  009'8T  00T'LE £297 Lyl
+@500 @zon 3 wy 19
+(89LS) @9L5) (3 9¢¢) X PN 09
+o 602 €21 6TL 0 weL  whpl
+SLl 064'1 018's 001°ZS 000'821 weLl 1
+(B 181) (@y81) @oLn) 3 14 6S
+¢Ll 06+'1 018'8 001'ZS 000'LT1 PS8z ¥l
+oLl 000°01+ PSZE b1
+(8 79¢) (8 79¢) (3 oth) 3 D 8¢
+@oLD) @oL1) @oLl) X e LS
+050'1 062'S ov6's 099'9 06€'8 0z’ 0L8'6 00€°01 005°01 w9y Wil
+(Bo61) @ Lc1) (3 08) T ey 96
+ot1'l 009'S 0679 090'L 068'8 0866 00401  006°01 00T'11 Lo LET
+z0 01 07 6€ ¢S L90T el
+@sgzn @y @e621) 3 5D S
+@z91) @z9o1) @6y 3 I £S
+K001 Aog Agz Loz Lo1 K¢ Ag A1 3Breyosiq IJBH SSEN WoUR[d  Z
 
  
 
-(Suma are SUN JOYIO [fe ‘sasoyyuared ul SEW [RIUSWI]T)
-(Panunuod) °9 Jjqe],
+(SaLmd 2re SIUN JIYIO [[8 ‘sasarpuared Ul sseW [RIUSWIS[Y)
+
+(PonuyL0) °9 Qe
 
  
 
@@ -831,86 +1005,86 @@ Loot Log Agz Lor Loi kg Ag K1 oSreysiq IJJEH SSN WOUR[ Z
 
  
 
-8p 1£6 6L6 970'1 6Z1°1 911 SST'T SIFT 690'1
-(10) &n1anow Kpvap-aprunoy
-@zen 8 6t'S) (3 L81°0)
-(8) ssow &vaap-aprunsy
+b8Y 1€6 6L6 9Z0'1 6Z1°1 91°1 SST'T SIT'T  690'1
+(10) £nnanov kvoap-apmnsy |
+@ze6rn @ 6v's) (3 L81°0)
+(8) ssowu Kpaap-aprun1 oy
 
-Le 80 L0 $0 £0 1'0 0 K 00EL 617
+L't 80 L0 <0 €0 1'0 0 £00EL 622
 
-99 El 6€1 op1 191 991 $91 6S1 £51 £61 827
-EL 306) (3 L81°0) Tu 06
-Le 80 Lo $0 £0 10 0 POI Cv 68
-Le 80 Lo $0 £0 10 0 PSI TT
+99 ZEX 6€1 opl 191 991 o) 651 €51 £61 82T
+@ L1) (3 06'€) _ (3 L81°0) T 4L 06
+LT 8'0 L'0 S0 £0 1’0 0 POl &6 v 68
+L' 80 L0 <0 €0 10 0 P8I 7T
 
-99 el 6€1 91 191 991 91. 091 £51 P99'E wr ed 88
-Le 80 Lo $0 £0 10 0 w6y 1 H 8
+99 €l 6€1 opl 191 991 91 . 091 €St P99t T ey 88
+L' 8'0 Lo S0 €0 10 0 w6y 1 ! 8
 
-99 43 6€1 op1 191 991 $91 091 €s1 $9'CS occ wd 98
-Le 80 Lo $0 £0 10 0 sw zg tae w 58
+99 €l 6€1 9p1 191 991 91 Wr €SI $9'CS e W 98
+L' 80 Lo S0 €0 10 0 sw zg e w £8
 
-99 431 6€1 opi 191 991 $91 091 £51 sw O61 917
-Le 80 Lo $0 £0 10 0 sti £17
-€Ty 818 168 9't6 £01 901 901 701 S'L6 § Sp ur od 8
-Le 80 Lo $0 £0 1'0 0 wo'sy £17
+99 €1 6€1 9p1 191 991 91 091 €51 sw S| 917
+LT 80 Lo S0 €0 1'0 0 sy €T
+€Ty 818 1'68 9't6 €01 901 901 01 §'L6 $ Cp e od 8
+LT 8'0 L0 S0 £0 1'0 _ 0 w9'GH €12
 
-99 el 651 9p1 191 991 S91 091 st 4101 rd £8
+99 Z€l 6£1 op1 191 991 91 091 st y10T1 e g £€8
 
-99 El 6€1 9pl 191 991 S91 091 £51 4901 TT
-Le 80 Lo $0 £0 1'0 0 ysze 607
-@esy) @e6sT) 3 ad 8
-LET 9Ly 0s STS 8'LS 9'6S £65 LS 8s wee 807 IL 18
+99 €l 6€1 opl 191 991 91 091 €ST Y901 e
+LT 80 L0 <0 €0 1'0 0 ysze 60T
+B ¢Sy) @65T) 3 qd 8
+L'€T oLy 0s ¢'ZS 8'LS 9'65 €65 p'LS g wgoE 807 1L 18
 
-$4214 8nop Kvaap-apusnoy
-£oot Loe Ast Lor Aol Ag L¥ A1 o3reyosiq oJI-JEH SSE WAWR Z
+S4a1y43nop KD22p-Iprunoy
+K001 Aot Agz Loz L01 k¢ Ag A1  oBreyosiq SJ-JleH SSBN WeuR[  Z
 
  
 
-(SSLMd 21k SITUN JAYIO [fe ‘sosoyuared ur Sew [EIUSWI|T)
+- (SaLmDd 3w SIUN I3YI0 [f8 ‘sosoypuared Ul SSBW [RIUSWIT)
 
-(Panunuod) ‘9 3jqeL,
+(Panuyucd) ‘9 3qe,
 
 12
 
  
-*£303u0A UL 93XBYOSIP S[Iog WOIJ PIALID
-ore suondofoad Joyo NIV “0L6T ABI *A107eI0qE ] [BUONEN BPR X80 ‘0L6Z-INL/ INYO “IPS 19nd TYSW 241 Jo K1anIpoipvy pamwmaip) ui pauodal se
-11° °f "W Aq Pase[nojed aso) ueyl J9MO] %S—¢ are pue sisAeue J1dO10SI WoL} PIALIAP ore (Nz 1doox0) sonfea A10judAur winfuoinid pue wintueln 4
+*K10}udAUI AZIBYISIP §,J]od WOL] PIALIP
+ore suondofod 1910 NIV "0L6T AN *K1ojeioqe [euonieN 98pR Y80 ‘0L6Z-NL/INIO /10§ 1214 TUSW 241 fo nanovoppy paiomaip) uy pauodar se
+T1°d [ " £q pareno[ed 95043 Uey) IOMO] % S—¢ aIe pue sisAeue JId0I0ST WOI} PIALIdp e 5« Z 1doox9) sonpea L10judAur umiuoinid pue wnueln 4
 
 4
 
  
 
-SLY WL $08 £88 SOIT 09C'1 €E€'l 61%'1 08¥'1
-(1D) Ganov NY 110]
-(8 0g€'8€) (3 0vE'8e) (3 ove se)
-(3) ssow Ny 10]
-z0 TS [74 PEIT WT w) 96
-Lz TET $1e Tél £1 ¥L 0's v'T 96'0 Leer wm wy $6
-TL ZT 0Lz 72743 86S o1L Z8L 798 #06 Kyl IT
-£Sl £1 £sI £<l £61 a gsl £1 £1 £0vS'9 OMT «
-Livy Ly Ly Ly Ly Ly Ly Ly Uy AoLI'vT  6€T
-1S0 680 760 96'0 101 80'1 ort 601 00'1 ALL 8€T
-@zew) @ Le) @epL) z nd 6
-LeaLyy  8€T
-KLAYET  9€T
-AgA0L SET
-¥L ¥L ¥L Ll Ll Ll Ll Ll ¥Ll KeASyT vet
-20€ 20€ 20€ 20€ 0€ 20€ 0€ T0¢ 0¢ LgH6ST  €5T
-Th 671 SET wl LST $91 891 Tul ELT LoL Tg
-(8 009°L£) (8009'LE) (3 009°L€) 3 n 26
-p$2do10s1 umpup.msuvd |
+SL 187 $08 £88 SO1'T 092'1 €EC'T 6I%'T 08t'1
+(12) Kn3ano0 NY I 1010
+(8 0g£'8€) (3 0vE'8e) (8 ove'se)
+(3) ssow Y 1010
+0 TS ST PEIT T w) 96
+e T S'1Z ol A ¥iL 0's v'T 960 Legy 1T wy S6
+17L TIT oLT prE 85¢ 0lL 8L 798 $06 Aypl 14T
+Y | €SI €Sl €<l €Sl €Sl £l €51 €Sl Kovs'o Ot
+L'y Ly Ly L'ty L'ty L'y Uiy L'y Ly LOTI'YT 65T
+IS0 68°0 760 960 10'1 80'1 or't 60’1 00’1 L1188 86T
+(3zeL) @ LeL) | (3 evL) | 3 nd 6
+KeALry 8T
+KLAVET 9€T
+A8AY0L  SET
+Ll LI Ll LI A Ll L 'L ¥iLl Aeasye  vET
+20€ 20€ 70€ 20¢ 20€ 20¢€ 20€ 70¢ T0¢ A¢H6ST  €€T
+9 621 SET Al LST SOl 891 TLl €LI LoL  Z€T
+(8 009°LE) (8009'LE) _ (3 009°LE) 3 n 26
+p$2d0j1osy umpp.msupa |
 
  
 
-£001 Kot Ast Lor Lot Ag Ag A1 o3reyosiq O-JeH SSB WOwo  Z
-p(SALIND are SHUN JIYIO [[B ($3syYIuared UI SSBU [RIUIWS]T)
-(panunjuo) "9 aque,
+Aoor Log Asz Kot Lor LS K¢ A1 oBrmyosiq op-JieH SSE oWl  Z
+p(SOLIND Are SIUN JIYIO 18 (SISAYIUATRd UI SSBUI [RIUIW[H)
+(panunuod) 9 3qe[,
 
- 
+13
  
 
-Table 7. Results from analysis of MSRE off-gas samples taken in 1994¢
+Table 7. Results from analysis of MSRE off-gas samples taken in 1994°
 
  
 
@@ -924,9 +1098,9 @@ F, 350
 
 Inerts 305
 
-UF, 69°
+UF 692
 
-MoF; 10
+Mok, 10
 
 CF, 5
 
@@ -936,18 +1110,18 @@ N-F compounds Trace
 
  
 
-Source: Toth, L. M. ORNL, personal communication, Feb. 14, 1995.
+4Source: Toth, L. M. ORNL, personal communication, Feb. 14, 1995.
 
 bsaturation pressure of UF at the sample temperature of 21°C is 79 mm Hg.
 The off-gas assay and charcoal bed analysis provide a basis for estimating the amount of
-material that has migrated out of the MSRE salts. Because the source of these volatile products
+- material that has migrated out of the MSRE salts. Because the source of these volatile products
 was far upstream of the sample point and at a lower temperature, it is possible that the amount
 of UF, and F, in the off-gas piping and tank plenums is greater than that predicted on the basis
 of a homogeneous vapor space with no deposition of material by reaction, condensation, or
-sorption. The most unbiased approach is to proceed with the limiting case of a homogeneous
+sorption. The most unbiased approach is to proceed with the limiting case of a homogcneous
 atmosphere, as shown in Table 8. These assumptions lead to a projection that more than 4.4 kg
 
-of uranium and 115 mol of fluorine have been removed from the fuel salt.
+of uranium and 115 mol of ﬂuqrine have been removed from the fuel salt.
 
 Table 8. Estimate of material removed from MSRE salt beds?
 
@@ -958,21 +1132,25 @@ Table 8. Estimate of material removed from MSRE salt beds?
  
 
 Uranium Fuel-salt fluorine
-kg mol (mol F,)°
-Off-gas volume’ >1.8 >7.7 > 46.7
-ACB deposit? . 26 11.2 > 68.0
-Total removed >44 > 18.9 >115
-Remaining ad <332 <1425 > 115 deficient
+kg mol (mol F,)?
+Off-gas volume® > 1.8 >7.7 > 46.7
+ACB deposit? .26 11.2 > 68.0
+Total removed > 4.4 >189 > 115
+Remaining f,‘glltg;‘;} <332 <1425 > 115 deficient
 
  
 
-@Basis: 2029-L off-gas volume, 20°C average temperature, 738 mm-Hg-pressure.
-bincludes removal of fluorine as UF ,°F,.
+ 
+
+9Basis: 2029-L off-gas volume, 20°C average temperature, 738 mm-Hg-pressure.
+bincludes removal of fluorine as UE,oF,.
 
 € Assumes off-gas is at 1994 sample conditions shown in Table 7.
-d Assumes 5.07:1 F,/UF ratio of Table 7 applies to the ACB deposit.
+d Assumes 5.07:1 F,/UF ¢ ratio of Table 7 applies to the ACB deposit.
 
 14
+
+ 
 3. CHEMICAL INTERACTIONS DURING MELTING OF THE FUEL SALT
 
 The safe and effective removal of salt from the tanks must account for the chemical condition
@@ -981,7 +1159,7 @@ present understanding and to plan future work. Except for the radiolytically dri
 described in Sect. 5, the stored salts are believed to exist as an otherwise stable one-phase
 solid. However, the salt is also in a net reducing condition because of the more than 115 mol
 of fluorine that was generated by radiolysis and removed from the solid. This represents a
-net 230 equiv of reductant present in the form of isolated metal sites (Li® and Be®). The
+net 230 equiv of reductant present in the form of isolated metal sites (Li° and Be®). The
 maintenance of the salt, when molten, in such a highly reduced state was one of the chief
 concerns of the original MSRE staff because of the likelihood of catastrophic phase
 segregation under these conditions. The redox chemistry was closely monitored during
@@ -991,7 +1169,7 @@ melted the reducing potential of these sites can be realized, and the metal spec
 according to their redox potentials, Li > Be > U ~ Zr, as shown in Table 9.
 
 Table 9. Electrode potentials of major fuel-salt constituents?
-E° = reduction potential (V)
+E®° = reduction potential (V)
 
  
 
@@ -1000,32 +1178,32 @@ E° = reduction potential (V)
  
 
 Half-cell reaction 450°C 725°C
-Li* + e — Li(s) -2.770 2.559
-Be? + 2 — Be(s) ¢ -1.958 2.460
-UH + 3 => Us) -1.606 -1.433
-U* + 4 — Us) -1.522 -1.336
-Z* + de > Z1(s) -1.542 -1.335
-U# +e = UH ~1.268 -1.045
+Li* + e — Li(s) -2.770 -2.559
+Be?t + 2¢- — Be(s) . -1.958 -2.460
+U + 3¢ —» U(s) -1.606 -1.433
+U* + 4 - Uy ~1.522 -1.336
+Zi*t + de= —  Zx(s) -1.542 -1.335
+U + e —» UM ~1.268 -1.045
 
  
 
-Potentials referenced to HF/H,, F~ in 0.67LiF-0.33B¢eF,, Source: Baes,C.F., “The Chemistry and
-Thermodynamics of Molten Salt Reactor Fuels,” Nucl. Metal.15, 617-44 (1969).
+@Potentials referenced to HF/H,, F~ in 0.67LiF-0.33BeF,, Source: Baes, C.F., “The Chemistry and
+Thermodynamics of Molten Salt Reactor Fuels,” Nucl.Metal .15, 617-44 (1969).
 
- 
+15
  
 
 The following reactions are a consequence of this reduction series:
 
-2Li® + BeF, — 2LiF + Be® (1)
-Li°® + UF; — UF; + LiF 2)
-Be® + 2UF,; — 2UF; + BeF, 3)
-4UF; © 3UF, + U° @)
-3Be® + 2UF; — 2U° + 3BeF, (5)
-2Be° + ZF, — Z1° + 2BeF, (6)
+2Li° + BeF, — 2LiF + Be° 1)
+Li° + UF, — UF; + LiF (2)
+Be® + 2UF, — 2UF; + BeF, 3
+4UF; o 3UF, + U° 4)
+3Be® + 2UF; — 2U° + 3BeF, ©)
+2Be® + ZiF, — Zr° + 2BeF, ()]
 
 It is expected that the reduction of beryllium by lithium is kinetically favored and that the
-cascade of subsequent reduction steps eventually converts all of the uranium to U3* and some
+cascade of subsequent reduction steps eventually converts all of the uranium to U3+ and some
 fraction of the uranium and zirconium to the metallic state. Using the lower bound of
 
 230 equiv of reductant, R, and the estimate of 142 mol of uranium in the fuel salt, a projection
@@ -1033,21 +1211,23 @@ fraction of the uranium and zirconium to the metallic state. Using the lower bou
 of the chemistry of uranium in the molten salt begins with the stoichiometry of the initial
 
 reduction step:
-R + UF, - UF; + RF ¢)]
-{142 142 142 142]
+R + UF, - UF; + RF (7)
+[142 142 142 142]
 
 The close proximity of uranium and zirconium on the redox scale makes it difficult to predict
 the subsequent reduction to these metals, and the possibility of alloy formation between the
 
-two further complicates the picture due to the lowering of the U° activity. In the event that the
+two further complicates the picture due to the lowering of the U activity. In the event that the
 excess of R (88 equiv) reduces uranium preferentially, a mass of 6.8 kg of uranium metal will
 be formed by reactions (4-5). Even if uranium metal is not formed or alloyed with zirconium,
-the solubility of UF; is limited in the MSRE salt and a considerable portion of the uranium may
-precipitate upon melting [14]. These results suggest that adjustment of the redox chemistry of
+the solubility of UF, is limited in the MSRE sélt and a considerable portion of the uranium may
+precipitate upon melting [14]. These results su ggcst that adjustment of the redox chemistry of
 
 the salt prior to or during melting (e.g., fluorination or hydrofluorination) will be required.
 
 16
+
+ 
 4. MODELING OF THE ACB
 
 The basic approach of assaying the uranium deposit by measuring the temperature and
@@ -1064,32 +1244,28 @@ will yield a more accurate estimate because of their greater accuracy and specif
 
 The estimate of the amount of uranium deposited in the charcoal bed is based upon the
 following [15]:
-(a) aknown isotopic concentration of 22(J in secular equilibrium with
+(a) aknown isotopic concentration of 22U in secular equilibrium with
 its daughters;
 
 (b) a mapping of the radiation dose in the charcoal bed cell by
 thermoluminescent dosimetry (TLD), followed by analysis to infer a
-source geometry; and
+source geometry; and |
 
-(c) measurement of the 2.6-MeV gamma-ray intensity from the 298TI
+(c) measurement of the 2.6-MeV gamma-ray intensity from the 208T1
 daughter, followed by shielding analysis to convert this to a source
 activity.
 
 The 22U content of the deposit is based upon the measurement of uranium activity in an
 alpha-monitor filter sample from the MSRE vent house. The measured value of 135 ppm
-232 compares with the projected value of 160 ppm 232U (Table 5) . Secular equilibrium
+232(J compares with the projected value of 160 ppm 232U (Table 5) . Secular equilibrium
 between 232U and its daughters is inferred from the stable radiation field surrounding the
 
 charcoal bed.
 
- 
+17
  
 
- 
-
-‘esse ysodop winjuean jo uondidap snewdYdS °T ‘314
-
-(Y/wes) ¥3.YM NI 4 10 31vY 3S0Q
+(4/wes) ¥3i¥M NI 4 10 31vY 3504
 
  
 
@@ -1099,83 +1275,71 @@ charcoal bed.
 
  
 
-004
-S6
-08
-Se
+DZ 8L 9 ¥ ¥ O 9 9 ¥ T O
+T T T T T T T T T T %08
+- 191 1Nds ~ s6
+FUNLVYIANIL TIYMIQIS e
+= QIYVYINI rl o6
+FUNIVYIJNIL TIVAIAIS = = = =
+| NOILVIOYY = = mem \. 58
+— \-J 08
+_ J s
+. L
+‘\ oL g
+9
+-
+~ ~ I 9z
+[ J -y
+=3
+-~ |
+= » gS
+\ 7,
+- \ \ - os
+/
+~
+[ - of
+i Lt 11 oz
+0L 69 89 (9 99 €3 ¥y f£9 T9 19 09
 
-0g
+(4.) 3uNLlvy3dN3L
 
-eo wn
-~~
+499Q-vrE 9MC INHO
 
-0
-©
-) Hid30
+*Kesse J1sodap winjuean jo uopdidap d>1BWIYIS T 314
 
-©
-©
-fu
+ 
 
-©
-w
+Try———
 
-0s
-sr—
-or
-Sg
-0g
-ST
+. v aw N
+Saonle AT
+3 L .
 
-oz
+ 
 
-oz 8 9 vi IL OL 8 9 ¥ T Q
-TTT TTT TTT TT TTT TTT
-- 191 1Nds -
-FUNLVYIANIL TIVAIQIS mmm
-- QIUVYINI r
-FUNLVYIAAIL TIVAIIS « = = =
-_ NOILYIOYY wm = mem H
+ 
+
+ 
+
 ’
-2 /
-= J -
-_ / |
-°
-ee ~~ >] ] a
->
-Ff]
-( Z,
-\ -
-Si Sl —————
-— ~ — \ —
--»
-{1 bb
-0, 69 89 (9 99 63 ¥3 £9 IT 19 09
+-
+v
+¥
+Wt
 
-(4+) 3¥NLYYIINIL
-
-Y9HE-VYE IMO NYO
-
- 
++
+.
+-
 
    
 
-(196A IAA
-40 NOILYD0Y)
-
-ue”
-
-INVA
-
  
 
- 
+I‘l-ﬂN- 3
 
-$820 I
-
-3d !
-IVOUVHO
-AYYIIXNY
+Q34 i [
+IYOIUVYHO
+ANYEIXNY
 
  
 
@@ -1189,28 +1353,24 @@ AYYIIXNY
 
  
 
-   
-
-           
+ 
 
  
 
-~r6/81/47)
+ 
 
  
 
-r6/1/114
+v6/81/41)
 
-= ¥6/02/¢L
+r6/r/14
 
- 
+¥6/02/¢L
 
 T
 
-AD0TONOYHD
-IAI A3LYM
-
-£-
+. AOOTONOYHD
+T3ATT H3IYM
 
  
 
@@ -1218,46 +1378,70 @@ IAI A3LYM
 
  
 
- 
-
-aNnod
-sy J
-
-Sd
+(19sA WAl
 
  
 
+30 NOWYD0Y)
+
+ue
+
+INIVA
+
+3ISNOH_INIA
+SN
+
+ 
+
+ 
+
+annod
+sy
+
  
 
  
 
-[ =
+ 
+
+s
+
+B~
 
  
 
-887
-9L2
-92
-se
+ 
+
+ 
+
+.
+e
+
+ 
+
+882
+922
+Tuu
+Tm«
 ore
-144
-91C
-r0Z
-6}
-0st
-891
-9S1
-wi
-5
-ol
-801
-#2 lg6
-8
-143
-09
+82z
+912
+jroz
+1z61
+logs
+{891
+191
+trr
+Yzs)
+ozt
+1801
+C 4 86
+e
+7
+
+BY
+9%
 14
-98
-rz
 Zl
 
  
@@ -1266,23 +1450,13 @@ Zl
 
  
 
- 
-
-»
-3ISNOH INIA
-USK
+X 7
+o~8¥8 13 ML ‘v 8L
+3076 THIIHS
 
  
 
- 
-
- 
-
- 
-
-7
-0-8Y8 "3 JOML v 8i
-W078 qUIHS
+Pt—
 
  
 
@@ -1296,14 +1470,16 @@ W078 qUIHS
 
  
 
-[s-ers 3 01
+ 
 
-SNOILYH13IN3
-Jejeuinip “Wy
+T....:.. "3 oL
 
-(u)
-313s
-H1d30
+SNOILYHIING
+Jejeuinip W
+
+Cu)
+IvIS
+H1d3a
 
 18
 
@@ -1314,19 +1490,19 @@ H1d30
 distances of 8.3 and 15.4 in. from the bed centerline and at axial positions ranging from
 24 to 108 in. below the top of the shield block. Both point-kernel (MARMER) and
 MonteCarlo (MORSE) codes gave consistent predicted dose-rate profiles for the assumed
-source distributions. Note that it is not possible to deconvolute the measured dose profile
+source dist:ibutions. Note that it is not possible to deconvolute the measured dose profile
 to identify a unique source distribution; instead, some judgment must be used to constrain
-the choices for the form of the source distribution. At present, it is most reasonable to
+the choices for the form of the source distribution; At present, it is most reasonable to
 assume a uniform cylindrical deposit of uranium, even though the measured profile
 
-(Fig. 2) is not exactly symmetrical (as expected for a uniform source). The best fit for a
+(Fig. 2) is not exactly symmetrical (as expected for a uniform source). The best fit far a
 uniform cylindrical source was for a deposit extending 12 in. below the top of the
 
 charcoal bed.
 
-Careful measurement of the 2.6-MeV gamma-ray intensity emerging from the empty
+Careful measurement of the 2.6-MeV gamha—ray intensity emerging from the empty
 shield plug atop the charcoal bed cell was coupled with the appropriate shielding
-parameters in the program MICROSHIELD to provide the estimate of 7.74 Ci of 232U in
+parameters in the program MICROSHIELD to provide the estimate of 7.74 Ci of 22U in
 
 the source. This corresponds to a total uranium mass of 2.6 kg in the deposit.
 4.2 HEAT-TRANSFER MODELING
@@ -1335,7 +1511,7 @@ Two separate types of heat-transfer calculations were performed in order to esti
 
 (a) the strength of the heat source contained within the charcoal bed and (b) the centerline
 temperature in the bed, given the source distribution assumed in Sect. 4.1 (12-in.-long
-uniform source)/16]. The heat source-strength is most readily estimated by summing the
+uniform source)/16]. The heat source-strength is most readily estimated by surnming the
 convective and radiative heat flux over the outer boundary surface enclosing the bed
 (6-in. schedule 10 stainless steel pipe). Both of these fluxes are functions of the
 experimentally measured wall and boundary temperatures (Fig. 2). Integration of these
@@ -1343,12 +1519,12 @@ experimentally measured wall and boundary temperatures (Fig. 2). Integration of 
 fluxes over the surface of the pipe—using the McAdams correlation [17] for natural
 
 19
-
- 
  
 
+ 
+
 convection to air and a pipe emissivity of 0.7 —results in a heat source of 2.36 W. The
-locally deposited energy (i.e., “thermal power”) for the same isotopic mix as considered
+locally deposited energy (i.c., “thermal power™) for the same isotopic mix as considered
 in the previous section is 0.932 W/kg U and is consistent with a deposit of 2.5 kg of
 
 uranium—almost the same value as derived in the previous section.
@@ -1356,58 +1532,58 @@ uranium—almost the same value as derived in the previous section.
 The temperature within the charcoal bed is a concern because of the potential for further
 reaction of the carbon-fluorine compounds formed by the reaction of UF, and F, with
 activated carbon. Under certain conditions it is possible to initiate exothermic
-decomposition of these C,F compounds by heating them to a temperature above that at
+decomposition of these C;F compounds by heating them to a temperature above that at
 which they were formed [18].
 
 The projection of the maximum temperature (i.e., centerline temperature) within the bed is
 a more complex task than estimating the overall source strength. Because of the system
 geometry and nonlinear boundary conditions, a numerical solution of the governing
 differential equations is required. An added complication is that the most important heat-
-
-transfer parameter, the effective bed thermal conductivity, &,_; cannot be estimated with
-
-any real precision [19]. Because of this uncertainty the solution involved parameter fitting
-for k, 4. For a 2.36-W source, a value for k, 4 of 0.064 Btu/(h - ft-°F) provides the best fit
-to the measured wall and centerline temperatures. None of the plausible alternative source
+transfer parameter, the effective bed thermal conductivity, &, _; cannot be éstimated with
+any real precision //9]. Because of this uncertainty the solution involved parameter fitting
+for k.. For a 2.36-W source, ;cl value for &, of 0.064 Bru/(h - ft-°F) provides the best fit
+to the measured wall and centerline temperatures. None of the plausibie alternative source
 strengths and heat-transfer parameters that were examined produced a temperature
 difference between the centerline and the cell that deviated far from the measured value of
-12°F. Only for the condition of filling the cell with vermiculite was the centerline
-temperature projected to increase appreciably. Projected temperature differences between
+12°F . Only for the condition of filling the cell with vermiculite was the centerline
+temperature pi'ojcctcd to increase appreciably. Projected temperature differences between
 
 the centerline of the bed and the surrounding cell for this case ranged from 20 to 55°F.
 
 20
-5S. MSRE SALT RADIOLYSIS
+
+ 
+S. MSRE SALT RADIOLYSIS
 
 The liberation of fluorine gas by radiolysis of the lighter constituents of the MSRE salt
-
-was first recognized in 1962 [20] and has been studied intermittently since that time. A
+was first recognized in 1962 /20] and has been studied intermittently since that time. A
 simplified picture of the process assumes the formation of radical species by homolytic
 cleavage of the salt, followed by the formation and liberation of molecular fluorine and
 
 the deposition of a resident active metal center in the salt lattice:
 
-LiF Lic + F.
+LiF Li- + E
 
-+hy —> — FT a
++hy = - FT @
 BeF, Be: + 2F.
 
 The net production of fluorine is governed not only by the forward steps shown here but
 | also by a temperature-dependent back-reaction (i.e., recombination) of the metal and
 fluorine that restores the original salt. Various studies have identified minimum
 “annealing” temperatures, where the radiolysis and recombination rates are equal, that
-range between 70 and 150°C [21, 22]. Only recently has it been recognized that the
+range between 70 and 150°C 21, 22]. Only recently has it been recognized that the
 
 room-temperature fluorination of UF, in the MSRE fuel salt may also occur under the
 
 storage conditions:
+UF, + 2 — UF 1 ®)
 
-The following sections update and summarize the evidence regarding radiolysis of the
+The following sections update and summarize the ‘evidence regarding radiolysis of the
 
 MSRE salt. At present the experimental evidence is restricted to fluorine generation—
 
 only field measurements at the MSRE have confirmed the radiolytic generation of UF.
-Prediction of the generation rates for F, and UF requires both a reaction model and an
+Prediction of the generation rateé for F, and UF requires both a reaction model and an
 estimate of the decay energy deposited in the fuel salt. In Sect. 5.1 the experimental
 
 evidence supporting a simple model for the radiolytic generation of fluorine is updated
@@ -1415,44 +1591,48 @@ evidence supporting a simple model for the radiolytic generation of fluorine is 
 and reviewed. Section 5.2 examines the deposition of decay energy in the salt beds and
 
 21
-
- 
  
 
-couples the resulting dose estimates with yield values to project the potential generation
+ 
+
+couples the resulting dose estimates with yield values to project the potential gcneraition
 
 and accumulation of fluorine at the MSRE.
 
 5.1 RADIOLYSIS EXPERIMENTS
 
-The 1986 experiment of Toth and Felker [21] explored the behavior of fuel-salt simulant
+The 1986 experiment of Toth and Felker [2]] explored the behavior of fuel-salt simulant
 in the limit of high radiation doses and sought to establish the asymptotic limit of
 radiolytic damage. The results from this work are reconsidered here because they
 illustrate some important points and because the radiolytic yield for this experiment was
 recently calculated and should be reported. In this study a 30-g powdered salt sample
 was exposed to the intense gamma flux from spent-fuel elements recently discharged
-from the High Flux Isotope Reactor (HFIR). Radiolysis was followed by measuring the
+from the High Flux Isotobe Reactor (HFIR). Radiolysis was followed by measuring the
 pressure rise due to fluorine generation as a function of time. In Fig. 3 the basic pressure
 vs time data have been transformed into the standard format of amount of radiolytic
 product vs absorbed dose (Appendix B). The resulting sigmoidal curve displays three
 distinct regions: (a) an induction period that extends to 17 Wh/g when no fluorine is
 released, followed by (b) a linear generation region whose slope corresponds to a
-radiolytic yield of Gg = 0.012 molecules of F, per 100 eV of absorbed energy, and
-eventually (c) an (apparent) asymptotic damage limit that occurs at about 150 Wh/g, or
+radiolytic yield of Gg,=0.012 tholecules of F, per 100 eV of absorbed energy, and
+eventually (c) an (appatent) asymptotic damage limit that occurs at about 150 Wh/g, or
 2% damage (i.e., metal center concentration). The first two regions have been identified
-in previous studies [22] and are typical of many radiolytic processes. The existence of a
+in previous studies /22] and are typical of many radiolytic processes. The existence of a
 damage limit results from the accumulation of active metal sites to the extent that the rate
 of recombination counterbalances radiolysis. These three parameters—induction period,
-yield, and damage limit—form the basis for making projections about the generation of
+yield, and damage limitfform the basis for making projections about the generation of
 
 fluorine from MSRE salts.
 
 22
-The 1995 results displayed in Fig. 3 were derived from experimental conditions that are
+
+ 
+ 
+
+The 1995 results displayed in Fig. 3 were derived from experimental conditions that are -
 believed to be the same as in the 1986 trial (Appendix B); however, in the 1995
-experiments UF, generation was the primary focus. No UF, was found in the gas space
+experiments UF, generation was the primary focus. No UF was found in the gas space
 above the sample, even after heating to 200°C, and the fluorine generation rate is far
-below that expected. The difference in the particle size of irradiated samples is thought to
+below that (:xpected. The difference in the particle size of irradiated samples is thought to
 be the cause of this discrepancy: the 1986 material was a 50-100 mesh powder, whereas
 the 1995 sample consisted of loose chunks of 0.5-1.0 cm. A heat-transfer analysis of the
 1995 sample conditions, contained in Appendix D, indicates that it is likely that the large
@@ -1464,21 +1644,23 @@ fluorine. Future experiments will resolve these issues.
 
  
 
-   
+0.35 [ T T T ] T T T ! 1 T T T ]
+03 [ --e--1986 e’
+b .'
+—e— 1995 ’
+0.25 | ”
 
-035 ——————————————— :
-0.3 i --e--1986 J ;
-os | —e— 1995 5
-02 |
+ 
 
-| 11 3 1 I 11
+o
+N
 
-0.15
+0.15 }
 
 Fluorine Accumulation
-(mmol F, / g salt)
+(mmol F2 / g salt)
 
-0.1 [
+0.1
 
 0.05 |
 
@@ -1486,7 +1668,11 @@ Fluorine Accumulation
 
  
 
+_llllllllllllllllllllllllllllll
+
  
+
+200
 
 Dose (Wh/g salt)
 
@@ -1495,12 +1681,10 @@ Fig. 3. Fluorine generation curves for 1986 and 1995 irradiation experiments.
 23
 
  
-
- 
  
 
 Despite the unexpected results of the 1995 trial, a more consistent picture appears if one
-examines all of the radiolysis literature for MSRE salts. Table 10 summarizes the results
+examines all of the radiolysis litérann'c for MSRE salts. Table 10 summarizes the results
 for experiments that used a variety of radiation sources to generate fluorine from fuel salt
 and fuel-salt simulants. The consensus of these studies is that the expected yield from
 radiolysis at room temperature is about 0.02 molecules per 100 eV of deposited energy
@@ -1521,31 +1705,31 @@ Table 10. Summary of radiolysis experiments on MSRE fuel salts
 F, yield
 (molecules per
 Date/ID Radiation Salt form Induction period 100 eV)
-19634 Post-irradiation ~~ Plug Erratic 0.005-0.031
-(MTR-47-5) decay energy <lid 0.02
-1963° 0Co v, Plug 25d 0.045
-(Savage etal.) 0.72 MR/h 1.3 Wh/g
-1963? Van de Graaf p, Particles, None evident 0.02
-(Baker, Jenks) 1000 MR/h ~900 pm
-19640 Soft x-rays, < 50 um Not reported 0.005-0.04
-(Rainey etal) 0.13 MR/h ~700 pm 0.0006-0.004
-1986¢ HFIR-pool ¥, 10 days 0.012
-(Toth, Felker) 20 MRA + ovder 17 Whig
-19904 238 No F, detected
-(Toth, Felker) Pu a Plug after 1 year
+19634 Post-irradiation Plllg Erratic 0.005-0.031
+(MTR-47-5)  decay energy <1id 0.02
+19635 %0Co v, Plug 25d 0.045
+(Savageetal) 0.72 MR/h 1.3 Wh/g
+19630 Van de Graaf p,  Farticles, None evident  0.02
+(Baker, Jenks) 1000 MR/h ~900 ym
+1964 - Soft x-rays, <50 pum "Notreported  0.005-0.04
+(Rainey etal) 0.13 MR/ ~700 pm 0.0006-0.004
+1986°¢ HFIR-pool v, 10 days 0.012
+(Toth, Felker) 20 MR+ oW 17 Whyg
+19904 238 P No F, detected
+(Toth, Felker) Pu 9‘ lug after 1 year
 
  
 
-8Source: Blankenship, F. F., et al., in Reactor Chemistry Division Annual Progress Report for the Period
-Ending Jan. 31, 1963, ORNL-3417, Oak Ridge National Laboratory, pp. 17-30.
+@Source: Blankenship, F. F., et al., in Reactor Chemistry Division Annual Progress Report for the Period
+Ending Jan. 31, 1963, ORNL-3417, Qak Ridge National Laboratory, pp. 17--30.
 
 bSource: Reactor Chemistry Division Annual Progress Report for the Period Ending Jan. 31, 1964,
 ORNL-3591, Oak Ridge National Laboratory, pp. 16-37, May 1964.
 
-Source: Toth, L. M., and Felker, L. K., “Fluorine Generation by Gamma Radiolysis of a Fluoride Salt
-Mixture,” Radiat. Eff. Def. Solids 112, 201-10 (1990).
+CSource: Toth, L. M., and Felker, L. K., “Fluorine Generation by Gamma Radiolysis of a Fluoride Salt
+Mixtare,” Radiat. Eff. Def. Solids 112, 201~10 (1990).
 
-Source: Toth, L. M., unpublished data, 1990.
+dSource: Toth, L. M., unpublished data, 1990.
 
  
 MSRE fuel salt is comparable to that of the HFIR cooling pool and is, on average, less
@@ -1575,92 +1759,90 @@ the conservative assumption of equal effectiveness for all forms of radiation.
 
  
 
-100 @ 3
-;
+100 @ -
+]
 G
 
 A 10 ¢ 3
-> i ’
-Fant i
-2 -
-= — = - HFIR-pool source spectra: i
-= 1 d of cooling i
-g 1 | | —a— HFIR-pool source spectra: =
-oO F 5 d of cooling 3
-B i ----©--- HFIR-pool source spectra: ;
-g - 21d of cooling 7
-[~~] 3 pu
+>" s -
+80 ]
+8 -
+a — & - HFIR-pool source spectra: )
+g 1 d of cooling y
+5 1 F —— HFIR-pool source spectra: _' -
+v - 5 d of cooling 3 :
+© L | ---©--- HFIR-pool source spectra: -
+& - 21 d of cooling B -
+S : i
 
-a ----a--- MSRE source spectra:
-S 0.1L 25 years after discharge .
-8
-Co : ]
-“T 2
+g ----&--- MSRE source spectra: :
+S 0.1 L 25 years after discharge 4
+R 5
+| i %Co : ]
+1 energy i% ]
+- ¢ 4 -
+0.01 L 1 etz a1 sl L i i 1 a1 1 J: b1 1 1 1%
 
-vod
-0.01 1 Loa saad : peat 1 aaa 1 ads 90a
 0.01 0.1 1 10
 
 Q = Gamma Energy (MeV)
 
 Fig. 4. Comparison of source spectra for MSRE fuel-salt irradiation.
 
- 
+25
 
  
- 
-
-5661 ‘61 AInf ‘20uapuodsauo)) few] INYO ‘SYUDL ui 1914 JUS ut uonisodaq (8.oug fo sapunsy pasiay
-‘SUE. “d “d E661 1q0N0Q ‘SIYqUUISSY [on] ad YI JH 40f SuouDINIW)) [*ZuaB() ONE) AY ‘670-€6-HIAH-D SOUSL ‘J °S :$204m08,,
+'$661 ‘61 AIng “20uspuodsanio) FEwIA] INYO ‘SYUDL WD 194 FYSI Ut uotsoda(q (81au7 Jo saypuiysg pasiaay
+‘SUBIEM *d "d €661 39q010 ‘SaqUIFSSY 1o 1adS Y[JH 40f SUODIMIW)) [ ZUdS1Q UONBINI[E) QAN ‘620-€6-HIAH-D “JoUSL] *H 'S :$904m0S,,
 
  
-
- 
-
-[S/ASN] 101 X9°'T ‘[S/1]4101 x Sy = 90In0s [RIO], [S/ASN] 101 X¥°6 ‘[S/1] 4101 XS'T = 9100S [BIO],
-00°0 000 6 01 000 000 $6 I 81
-000 000 STL 8 000 000 L 8 Ll
-000 000 SLs $9 000 000 S 9 91
-00°0 000 Sy ¢ 100 000 SE v Sl
-000 000 S't v vl Lro SLT £ v1
-00° 6£0 SLT € 880 S1°0 SCT 4 tl
-00°0 000 ¢Tt ST 90'1¢ 6S SLT c Cl
-v0'0 100 £8'1 C 689 ore ST SI 11
-80 LOO S6v'1 99°1 8'9¢ 0c ¢8°0 I 1]
-00 S10 IS eel ¥6'9C S8'L1 SLSO Lo 6
-oLo 8C0 60 I vy ssy SLED Sv'0 8
-cL18 09'1¥ Lo 80 99°¢ 65°6 €CTo £0 L
-0TC LST $0 90 99°C ors YAN) S10 9
-8S°1 091 seo vo v0'l voy $80°0 I'0 S
-91 08°C €Co £0 9¢°0 69'¢ SLSO0 L00 v
-06°C 689 S10 0 68°0 £06 SLEOO Sv0'0 £
-§TT 69°01 SL00 1'0 wo 899 S200 £00 C
-98°C v6'tE £0'0 S00 v0 $8°91 10°0 00 1
-
-dnosSur  dnoi8 ur (ASN) (ASIN) dno ur dnos8 ur (AQ) AS10ud (AN) dnos8
-
-AS1ous 9p vwwed 9, A81oud aferoAay punoq addy  AS1u0 9  vwwes g o8eAay  punoqladdn  ASioug
-
- 
-
-aSreyosIp 1aye sxeak 7 :endads TIS a8reyosip 10)ye p | :enoads [ood Surood YIIH
-
- 
-
-pUOLEIPR.LI JEs-[ony TUS 10) B1)23dS 32.n0§ “TT IqEL,
 
 26
 
  
+
+ 
+
+[S/ASIN] 4101 X9'T ‘[S/T]1,{01 X €'y = 90IM0Ss [I10], [S/ASIA] (101 X 6 ‘[S/1] 0T XS'T = 92mOS [RIOL,
+000 000 6 o1 000 000 ¢'6 Il 81
+000 000 TL 8 000 000 L 8 L1
+000 000 Y $9 000 000 S 9 91
+0070 000 Sy ¢ 100 000 S'e v S1
+000 000 St v VTl L1°0 cL't £ vl
+00°¢ 6£0 SL'T £ 88°0 S1°0 §TT 4 ¢l
+00°0 000 A ST 90'1C 65y SLT z z1
+00 10°0 £8°1 C - 689 ore STl 9 | I
+8C0 L00 S6v'1 99°1 897 a0cl ¢80 1 01
+00 ST°0 Sor'1 £e’l ¥6'9¢C C8L1 CLS O L0 6
+0L0 870 60 I v’y ¢S’y SLEQ Sv'0 8
+cL'18 091y Lo 80 99°¢ 656 ¢t £0 L
+0T°¢ LS'1 S0 9°0 99°C org - SC1'o c1°0 9
+8¢°1 09°'1 ¢e0 ¥o 120 Yo'y 6800 I'0 S
+96°1 08T ¢C0 £0 960 69°¢ SLSO0 00 v
+06°C 689 S1°0 0 68°0 £0'6 SLe00 Sv0°0 £
+YA 6901 SL00 1’0 0 899 §200 €00 c
+98°C y6'tt £00 §0'0 v'0 ¥8°91 10°0 <00 1
+
+dnox8 w1 dnoi3 ur (ASIN) (ASN) dnoi3 ur dnoi8 ur  (A9N) £810ud (ASN) dnoi8
+
+A310u2 95 vwwwed ¢, A310ud o8eroay punoqiaddn  ASuo g  vwwed g oferoay  punoq laddny  £Sisug
+
+ 
+
+a8 reyosIp 10158 s1edk ¢7 :enoads TYSIN afireyosip 101ye p | :enoads jood Surjood YIIH
+
+ 
+
+pUOL)BIPBLN Jjes-]onj TUSI 10§ 81323ds 32anog *IT dqeL
  
 
 Far less confidence can be placed on projections about the induction period for fluorine
-release. One can imagine that a number of factors, such as impurity levels and salt
+release. One can imagine that 2 number of factors, such as impurity levels and salt
 morphology, make it difficult to predict induction times a priori, and the lack of
 convergence in the reported values in Table 10 bears this out. The induction period of
 1.3 Wh/g reported by Savage [22, 24] was the basis for assuming that annual annealing
 treatments of the stored salts would be sufficient to preclude fluorine release. The recent
-measurements of the MSRE off-gas and the history of increasing radiation levels in the
+measurements of the MSRE off-gas and.the history of increasing radiation levels in the
 MSRE off-gas system indicate either that this induction period is not correct for the
 
 stored MSRE fuel salt or that the annealing heat treatments were not effective.
@@ -1668,9 +1850,7 @@ stored MSRE fuel salt or that the annealing heat treatments were not effective.
 27
 
  
- 
-
-5.2 ABSORBED DOSE AND GAS GENERATION ESTIMATES
+5.2 ABSORBED DOSE AND GAS GENERATION ESTIMATES
 
 The radioactive source terms reported in Table 6 provide the basis for estimating the
 energy deposited in the stored fuel salt. It is clear that all of the alpha and beta decay
@@ -1691,19 +1871,19 @@ Table 12. Drain tank gamma spectrum (2583 kg salt basis, 25 years after discharg
  
 
 Fraction of Fraction of Fraction of
-Energy Upper Lower gammasin group gammas in group gammas in group
+Energy Upper Lower gammasingroup gammasin group gammas in group
 group bound bound at tank center at midradius at inner wall
 
-no. MeV) MeV) (%) (%) (%)
+no. MeV) (MeV) (%) (%) (%)
 
 18 10.00 8.00 0.0002
 17 8.00 6.50 0.0002
 16 6.50 5.00 0.0001 0.0001 0.0002
-15 5.00 400 0.0001 0.0001 0.0002
+15 5.00 400 0.0001 | 0.0001 0.0002
 14 4.00 3.00 0.0002 0.0002 0.0002
 13 3.00 2.50 0.481 0.476 0.545
 
-12 250 - 2.00 0.0614 0.0586 0.0796
+12 250 - 2.00 0.0614 -~ 0.0586 0.0796
 11 2.00 1.66 0.0528 0.0507 0.0673
 10 1.66 1.33 0.114 0.111 0.136
 
@@ -1713,7 +1893,7 @@ no. MeV) MeV) (%) (%) (%)
 
 7 0.80 0.60 30.0 30.1 31.2
 
-6 0.60 0.40 13.5 135 16.8
+6 0.60 0.40 13.5 13.5 16.8
 
 5 0.40 0.30 9.81 9.79 11.9
 
@@ -1725,7 +1905,7 @@ no. MeV) MeV) (%) (%) (%)
 
 1 0.05 0.01 0.353 0.355 0.0023
 
-Total flux [gamma/(cm? - 5)] 2.358 x 10° 2.347 x 10° 7.331 x 108
+Total flux [gamma/(cm? - s)] 2.358 x 10° 2.347 x 10° 7.331 x 108
 
  
 
@@ -1749,30 +1929,32 @@ eventually become the dominant source.
 
  
 
-0 Tob i ¥ rr “I T 1 1 ri
-10° ~
-= L
-on lL
-o
-g I
-wn
-QL
-£8 10° |
-o a
-A F
-5 i
-= i
-i « |
-10 | MOA
-- NC
-- 1 3 1 rae 3 1 1 2 aa! 1 1 TR
+ 
+
+o= ' C r'j'll l ' ' l"'ll l ' ' "l'l-
+10° -
+,S B
+a0 i
+=
+& i
+N
+Q/"\
+52 10° L
+o -
+A -
+g :
+= :
+I 3 |
+10 A\
+- | N
+i 9 3 1 llljj! § 1 i IlLlll i 1 IlllJ_}
 0.1 1 10 100
 
 Time After Discharge (years)
 
 Fig. 5. Distribution of source-term power by radiation category.
 
- 
+29
  
 
 Table 13. Distribution of source-term power by radiation category
@@ -1782,18 +1964,18 @@ Table 13. Distribution of source-term power by radiation category
 
  
 
-Years after Total power Alpha source Gamma source ~~ Beta source
-discharge Ww) W) W) W)
-0 5699.5 46.5
-0.3 2269.8 46.8 967.0 1256.0
+Years after Total power Alpha source Gamma source  Beta source
+discharge (W) W) (W) W)
+0 5699.5 46.5 |
+03 2269.8 46.8 - 967.0 1256.0
 1 733.2 47.1 160.7 525.4
-3 276.1 479 54.5 173.7
-5 201.3 48.1 - 43.6 109.6
+3 276.1 419 54.5 173.7
+5 201.3 43.1 - 43.6 109.6
 10 168.2 47.0 36.8 84.4
 20 138.3 440 29.2 65.2
 25 126.4 42.6 26.0 57.8
 25.5 125.3 42.5 25.7 57.1
-30 115.6 41.2 23.2 51.2
+30 115.6 412 23.2 51.2
 100 41.8 27.1 492 9.78
 
  
@@ -1806,9 +1988,9 @@ proportional to the upper decay-power curve in Fig. 5, and the accumulation of f
 proportional to the area under this curve. The fluorine generation and accumulation
 curves for both the best-estimate yield value of 0.02 molecules of F, per 100 eV and the
 upper bound of 0.045 molecules of F, per 100 eV are presented in Figs. 6-8. The
-fluorine flow rates in Fig. 6, which range from ~200 cm>/h 1 year after discharge to
+fluorine flow rates in Fig. 6, which range from ~200 cm?/h 1 year after discharge to
 
-20 cm3/h in 1995, can produce pressure rises in the 2000-L off-gas volume, which range
+20 cm3/h in 1995, can produce pressure rises in ﬁle 2000-L off-gas volume, which range
 from 13 psifyear (1971) to 1.3 psifyear (1995). The area under the flow curve, starting in
 1971 when the salt was cooled below its annealing temperature, represents the amount of
 F, accumulated to date and is displayed in Fig. 7. Depending on the assumed radiolytic
@@ -1817,122 +1999,126 @@ yield, between 300 and 650 mol of F, could have been generated by 1994. This
 represents an inventory of two to five times the amount of fluorine that has been
 
 30
- 
-
- 
-
---cA- G, = 0.02 molecules F, /100 eV, or
-A Flow(cm’/h) = 0.167 » Decay Power (W)
-
-—&— Gp, = 0.045 molecules F, /100 eV, or
-Flow(cm’/h) = 0.376 « Decay Power (W)
-
- 
-
- 
-
- 
-
-F s Generation
-(std cm’)
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-2 1 1 1.4 8 3a! 1 2 ia Lp
+A - Gm = 0.02 molecules Fz /100 eV, or
+A Flow(cm®/h) = 0.167 » Decay Power (W)
+—a&— G, = 0.045 molecules F, /100 eV, or
+A Flow(cm’/h) = 0.376 « Decay Power (W)
+102 |~ -
+= -
+-g E i ‘\\
+g = .
+c E [
+§ o |
+L'DN 2 ]
+L
+. A
+10 E’ S . ‘_‘]
+| 2 1 i 1.0 .2 291 1 A 1 A3 1. 1?
 1 10 100
 Time After Discharge (years)
+
 Fig. 6. Projected fluorine generation in the absence of annealing and
+
+ 
+
+ 
+
+     
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
 induction effects.
-700 rrr rrr
-ee PA
-a 600Fy= G., | (Decay Powersdp 2° 0.045 p
-8 1971 Le F2 : ]
-& 500 | a J
-me ’ ]
-12] g .’ h
-= L ’ p
-2 o 400 F . -
-we OO [ h
-= g bh
-® = ]
-“ 300 :
-E
-= 3 -
-S&S - J
-2 200 | _
-< 100 J
-o LL vv von ney
+700 T 1 NI T
 
- 
+: Trer. L .
+=~ 600 ry=¢ P ‘ ~
 
- 
+[ (Deca wer « dt ‘ i
+2 . F2 yro ) G = 0.045
+é : 1971 L’ F2 ]
+7 500 | ,,' h
+al L’ ]
+[+] 8 ’ ‘
+3 5 , ]
+= o 400 ’ ,
+22 :
+s E ]
+“% 300} -
+8 -
+5 b -
+2 3 p
+g 200 | -
+< 100 ]
 
- 
-
+o r i . | s a1 g L+ 3 9 1
 0 5 10 15 20 25 30
+
 Period After 1970 Discharge (years)
 
 Fig. 7. Projected accumulation of radiolytic fluorine in the absence of
 annealing since 1971.
 
 31
-
- 
  
 
  
 
-400 rr TTT TT]
-i 1994 J
-350 i, _ G ,
-LY =0,, | (Decay Power « dt) J’
-300 - Tet. J
-
-2
-
-Accumulation of Radiolytic F
-from Reference Year to 1994 (mol)
-
-250 | .
-
  
-
-L ?
-200 | .
-i G,, = 0045 G,, = 0.02
-
-At
-
-150 ¢
-
-100 |
 
   
 
-50 F
-
  
-
-saa a) asa laa
 
  
 
  
 
-2 NE I.
+ 
+
+400 T T T T 1 M T )
+. ]
+i 1994 s ]
+350 ., _ G S -
+o Y =0, (Decay Power » dt) ’
+o 9
+o - ’
+% :E; 300 N T:cf. "
+'§ e 250 - )
+[ C S
+Gt o | . ’
+S > 200 F _e
+€ 8 : G,=0045 ¢ _jo2
+E § [ - ) o F2 :
+2 & 150 % ]
+§ & | S ]
+g & s SR ]
+g 100 : : ]
+50 + ]
+0 L1 nv:l_n_ a1 * 1 o4 4 0 1 4 4 4 1 :
+
 1992 1988 1984 1980 1976 1972
 
-Te .» Reference Year
+T,., _» Reference Year
 
 Fig. 8. Projected accumulation of radiolytic fluorine in the absence of
 annealing between 1994 and previous years.
@@ -1941,42 +2127,38 @@ identified in the off-gas system. The various factors that may account for the e
 identified in this estimate include (a) fluorine deposition by corrosion or reaction,
 
 (b) partial recombination of fluorine during annealing treatments, and (c) the condensation
-or deposition of UF that is as yet unaccounted for. Because the off-gas analysis of Table 7
+or deposition of UF, that is as yet unaccounted for. Because the off-gas analysis of Table 7
 indicates the presence of volatile fluoride corrosion products at very low levels, it appears
-that consumption of fluorine by corrosion upstream of the ACB is a minor factor. It is also
+that consumption of fluorine by corrosion upstream of the ACB is a minor factor. Itis also
 possible that fluorine was deposited in the ACB in a larger proportion than that inferred
-from the 1994 off-gas analysis [1]. There is no detailed information to support conjectures
+from the 1994 off-gas analysis {1]. There is no detailed information to support conjectures
 about the effectiveness of annealing treatments or to estimate the holdup of fluorine in the
 form of condensed UF,. At this point we can only say that the generation of 300-650 mol
 
 of F, is consistent with what is known about the present condition of the MSRE.
 
 32
-Because of the uncertainty about annealing treatments, induction times, and the UF,
+Because of the uncertainty about annealing treatments, induction times, and the UF
 formation mechanism, it is impossible to construct a precise time line for fluorine
 generation and accumulation. The fact that the radiation field surrounding the ACB
 deposit is stable indicates that most of the uranium deposit is at least 5 years old. Some
 questions about the genesis of UF, and F, can be answered by looking at fluorine
 accumulation from the reverse perspective, starting in 1994 and integrating to an earlier
 time. Figure 8 presents the accumulation term from this perspective and is useful because
-
 it allows one to see that the 115 mol of F, identified in the MSRE could not have been
-
 generated recently. According to these projections fluorine generation began prior to
 
 1989 and it probably started much earlier than this time.
 
- 
+33
 6. THERMAL FLUORINATION TESTS
 
 During the review of UF, generation at the MSRE, it was suggested that the annual
 annealing of the salt to 150-230°C may have provided a nonradiolytic pathway for UF
 generation. The consensus in the literature is that significant conversion of pure UF, to
-UF, by F, under static (i.c., nonflow) conditions does not occur below 350°C [26].
-
+UF, by F, under static (i.e., nonflow) conditions does not occur below 350°C /26].
 However, thin samples of UF, powder exposed to a flowing gas stream exhibit the onset
-
-of fluorination at temperatures between 220 and 230°C [27]. This 120°C difference
+of fluorination at temperatures between 220 and 230°C f27]. This 120°C difference
 between onset of fluorination for static and flow systems has been explained on the basis
 
 of alternate reaction paths. For the flow tests with thin samples, it is believed that the
@@ -1990,16 +2172,19 @@ opportunity to react with the resident UF, and form the inhibitory intermediates
 At this point it is not clear which of these onset limits applies to the situation of dilute
 
 UF, and F, trapped in the stored fuel salt. Furthermore, it appears that low-temperature
+
 fluorination of UF, in the MSRE salt requires a more oxidizing species than F,, such as
+
 atomic fluorine. In fact, atomic fluorine has been shown to be an effective fluorinating
-agent for UO, at room temperature [28], and it is expected that the formation of UF in
+
+agent for UQ, at room temperature /28], and it is expected that the formation of UF; in
 
 the fuel salt is caused by the atomic fluorine generated by radiolysis.
 
 In to order to see if low-temperature treatments of MSRE salt with molecular fluorine
-could also be responsible for the generation of UF, the following static (nonflow)
+could also be responsible for the generation of UF,, the following static (nonflow)
 experiments were conducted. Ten grams of salt simulant, held in a nickel crucible and
-contained by a passivated 500-cm3 quartz chamber, was held for 6 h at 200, 250, 300, and
+contained by a passivated 50_0-cm3 quartz chamber, was held for 6 h at 200, 250, 300, and
 400°C in 0.5 atm of fluorine. Infrared spectra of the gas sample after each temperature
 
 trial showed no evidence of UF or change in salt weight, and only minor fluorine losses
@@ -2007,6 +2192,8 @@ trial showed no evidence of UF or change in salt weight, and only minor fluorine
 34
 
  
+
+L.
 were noted. After the 400°C treatment, trace activity was measured on the chamber
 
 walls. A separate trial with pure UF, in the same apparatus was then performed to verify
@@ -2015,11 +2202,11 @@ the previous observation at this temperature. A measurable amount of UF, appeare
 
 the gas phase during this run. However, a week-long test with salt simulant in an all-
 
-Monel system at 300°C confirmed the finding of no measurable conversion to UF; at
+Monel system at 300°C confirmed the finding of no measurable conversion to UF at
 
 temperatures below 400°C.
 
- 
+35
 
  
 ACKNOWLEDGMENTS
@@ -2040,7 +2227,7 @@ and guidance are greatly appreciated.
 
 13.
 
-14.
+14,
 
 15.
 
@@ -2056,24 +2243,24 @@ ORNL/TM-9756, Oak Ridge National Laboratory, September 1985.
 Notz, K. J., Feasibility Evaluation of Extended Storage-in-Place of MSRE Fuel Salt
 and Flush Salt, ORNL/CF-85/71, Oak Ridge National Laboratory, March 1985.
 
-Notz, K. J., Decommissioning of the Molten Salt Reactor Experiment—A Technical
+Notz, K. )., Decommissioning of the Molten Salt Reactor Experiment—A Technical
 Evaluation, ORNL/RAP-17, Oak Ridge National Laboratory, January 1988.
 
 Bell, M. J., Calculated Radioactivity of the MSRE Fuel Salt, ORNL/TM-2970, Oak
-Ridge National Laboratory, May 1970.
+Ridge National Laboratory, May 1970. |
 
 MSRE Fuel and Flush Salt Storage, Request for Nuclear Safety Review and
 Approval, NSR 0039WMO00013A (approved 12/28/93; expires 12/31/95).
 
-Rosenthal, M. W.,, et al., Molten Salt Reactor Program Semiannual Progress Report
+Rosenthal, M. W., et al., Molten Salt Reactor Program Semiannual Progress Report
 Jor the Period Ending Feb. 28, 1970, ORNL-4548, Oak Ridge National Laboratory,
 August 1970, pp. 3, 24-25.
 
-Rosenthal, M. W,, et al., Molten Salt Reactor Program Semiannual Progress Report
+Rosenthal, M. W, et al., Molten Salt Reactor Program Semiannual Progress Report
 Jor the Period Ending Aug. 28, 1970, ORNL-4622, Oak Ridge National Laboratory,
 January 1971, p. 1.
 
-Rosenthal, M. W., et al., Molten Salt Reactor Program Semiannual Progress Report
+Rosenthal, M. W, et al., Molten Salt Reactor Program Semiannual Progress Report
 for the Period Ending Feb. 28, 1971, ORNL-4676, Oak Ridge National Laboratory,
 August 1971, p. 1.
 
@@ -2089,13 +2276,13 @@ Williams, D. F., Revised Estimates of Energy Deposition in MSRE Fuel Drain Tanks
 ORNL Internal Correspondence, July 19, 1995.
 
 Jennings, W., et al., “Solubility of Uranium Trifluoride in MSRE Fuel Salt Mixture,”
-PP. 50-52 in Reactor Chemistry Division Annual Progress Report for the Period
+pPp- 50-52 in Reactor Chemistry Division Annual Progress Report for the Period
 Ending Jan. 31, 1964, ORNL-3591, Oak Ridge National Laboratory.
 
 Ramey, D. W., Technique for Estimating the Uranium Content in the MSRE
-Auxiliary Charcoal Bed, ORNL Internal Correspondence, Sept. 12, 1994.
+Auxiliary Charcoal Bed, ORNL Internal Correspondence, Sept. 12, 1994,
 
- 
+39
  
 
 16.
@@ -2119,7 +2306,7 @@ Auxiliary Charcoal Bed, ORNL Internal Correspondence, Sept. 12, 1994.
 
 Sulfredge, C. D., and Morris, D. G., Summary of Thermal Calculations for Filling
 the MSRE Charcoal Bed Cell with CO, or Vermiculite, ORNL Internal
-Correspondence, Mar. 14, 1995.
+Correspondence, Mar. 14, 1995. |
 
 McAdams, W. H., Heat Transmission, McGraw-Hill, New York, 1954, pp. 172-176.
 
@@ -2131,7 +2318,7 @@ Patton and L. M. Toth, June 21, 1995.
 
 Blankenship, F. F., et al., in Reactor Chemistry Division Annual Progress Report for
 the Period Ending Jan. 31, 1963, ORNL-3417, Oak Ridge National Laboratory,
-pp. 17-30.
+pp. 17-30. .
 
 Toth, L. M., and Felker, L. K., “Fluorine Generation by Gamma Radiolysis of a
 Fluoride Salt Mixture,” Radiat. Eff. Def. Solids 112, 201-10 (1990).
@@ -2149,77 +2336,73 @@ the Period Ending Jan. 31, 1964, ORNL-3591, Oak Ridge National Laboratory.
 Etherington, H. (ed.), Nuclear Engineering Handbook, Sect. 7-7, 1958.
 
 Brater, D. C., and Smiley, S. H., “Preparation of Uranium Hexafluoride,” in
-Toogress in Nuclear Energy, Ser. 3, Vol. 2—Process Chemistry, F. R. Bruce (ed.),
+Il’;ggress in Nuclear Energy, Ser. 3, Vol. 2—Process Chemistry, F. R. Bruce (ed.),
 
-Labaton, V.Y., and Johnson, K. D. B., “Kinetic Studies of the Fluorination of
+Labagon, V. Y., and Johnson, K. D. B., “Kinetic Studies of the Fluorination of
 Uranium Tetrafluoride by Fluorine,” J. Inorg. Nucl. Chem. 10, 74-85 (1959).
 
 Beattie, W. H., and Salopek, M. A., “The Reaction Between Dissociated Fluorine
 and Oxides of Uranium,”/J. Fluorine Chem. 30, 59-72 (1985).
 
 40
-Appendix A
+ 
+
+Appendix A
 ORIGEN-S RUN INPUT FILE
-
- 
-
- 
  
 
-SSSS5SSSSSS
-$SSSSSSSSSSSS
-SS Ss
+$SSSSSSSSSS
+S$SSSS5S8S8S5S8S
+SS ss
+Ss
+§s
+S§5S555558888
+§555588558s88
+§s
 ss
-$s
-S$S88S5S588SS
+3 ss
+SSS8SSSSSSSSS
+S55S5588858
 
-SSSS5SSSSSSS
-
-Ss
-Ss
-ss SS
-SSSSSSSSSSSSS
-SSSSSSSSSSS
-
-cceeeceeceec
-ceeeeecceccee
-cc cc
+ccccceeceee
+ccececeecececced
+cC cc
 cc
 cc
 cc
 cc
-cc
+ccC
 cc
 cc cc
-cceeceeecceecee
-ceeeceececeee
+cccceecceecee
+cceceececeee
 
-aaaaaaaaa
-aaaaeasaaaa
-aa as
-aa as
+aaaaa2aaa
+aaaaaasaaaa
 aa aa
-aasaaaanaagaa
-aasanaaaaaaaa
-an aa
+aa aa
+aa aa
+aaaaaaaaaaaas
+aaaaaaasaaaas
+aa aa
 aa aa
 aa aa
 aa aa
 aa aa
 
-tl
-teeta
-tue
+it '
+tLeeeeeetett
+teeereeetettt
 
-HANRARERRIRARTRRERRAR ARERR ART ERATE RRERNRREERNAEAR RAE RAAREERE ARR RRR edd rid
-RENT RR ER RARRIRRR TARR ARR dR A RRR RRR IR ARERR RR RRA RRR died dr dre de dr ee de deeded dob
-RRR RENNER RIR TR RER RRA RRR REA RR IER R ER RRR RAR Rd fdr hdr kd hd dA rR edd dr dr hdr
+HRR AR R AR R R AR R R SRR R R R R R R R R R R R WA AR i i R Wi e A R felr ek
+HRRR i R R R R AR R AR R i dr e e AR AR A A i R e R R AR W e R AR R A AR R R A W e e e A e e e A de e i ek
+A e A W A W e R e R R A e e A R A A AR R R R R A VR R SR A R W e e R A AR A Ak e Al el ek
 
-RhRR
-fein
-hkRd
-dedededdr
-heh
+fieiehen
+seirdrirk
+dririeden
+drirdrir
+ke
 
 program verification information
 
@@ -2229,257 +2412,232 @@ scale version:
 
 4.2
 
-Yriedkedrk
+riededrd
+ik
+fedrdrird
+hhhw
+Yedrdrdrd
 
-Rhhhw
-dededrdrd
-
-WRERR ARRAN RAR RRR Rd RE Rd hdr AR kd REAR RRR TR Rd RRR rR RRR AR rd rR ArT r dd eR ehhh rth ed rd rid
-ARARAAR REAR ERRR RAR ERNE R RARER ARERREAR ARR ARRARATAREEARE RARER RARER T REAR RAR Wir d dd
-
-wired
-AEREARRERRE AREA ARREERRRAREA RRA EAA RRERRERRARALE EEE RERRAR ARAN ETAT AR AERA RT TET RR RRS
-REET EARERAXAREARRRR ARENA R REAR EAAFRREREA ARERR ER AARRER AREER ARRTRRAR RE RAR REAR RRIAE
-AARERARRERREEREERARE IRAE EXAAREIRRAAREIERRRA ARATE RPERARRAR TIARA RRR TATE ARR rAd
+AR R A IR i v e dr e deve st de ke s vedk dede e ve v e v W e e e e s s e s s e e e e v s s s e dede s s e et de S et e e S e e e e e Wk e e
+ARARA SRR AR FERRRRAR R R R R AR R R drdr de b i s ded W e W i e e e dr i e i de s v s e el s e e o e e e e e e e i
 
 program: origns
 creation date: 05/31/95
 library: /scale/exe
-production code: origens
+prodact;'on code: origens
 version: 2.5
 jobname: i7r
 date of execution: 06/02/95
 time of execution: 13:01:05
 
-Yrdededrdr
-Wedrdrivd
-deh hhw
-dededriedr
+AEREARER TR TR RARRTTRRR R R RRRR TR RTRTRRAAREEET TR R i R R Rkt ey
+
+43
 
  
  
 
+ 
+
 note:
 
-eressassscncctssncoan cesses ...colums 1-72...... ceaerasesrsescascesanana
+....................
 
-oss AN
+esitsannrenccnscavesnrnannn ...colums 1-72...... Gtessmassnsecscacsesnanna
+
+0ss Al
 
 * input echo * (with break between col. 1-72 and 73-80)
 
-ET
+7 ET
 
 DECAY CASE
-33$ 211127 A162 A3318 ET
+338 211127 A62 A3318 ET
 
-35801
+3588 0 1T
 
-5488 AB 1 A111 E
-5638 A2 10 A651 A0 0 A13 116 AWS AB IE
+5438 AB 1 A11 1 E
+5638 A2 10 A5 1 A0 O A3 116 ALS A3 E
 
-ST** 0 E
+ST** 0 ¢
 
-1
+T
 
 MSRE DECAY FROM 12/12/1969 10 12/31/95
 ENTIRE MSRE CORE (U-233 FUEL)
-60%* 31351020 25 25.5 30 100
+60 .3 1351020 25 25.5 30 100
 
 only comments are permitted after colum 72.
+
+--------------------
 
 420980
 
 601450
 621520
 
-61** £ 0.000001
+61** F 0.000001
 6538
-'GRAM-ATOMS GRAMS CURIES WATTS-ALL WATTS-GAMMA
-32 101 1 0 1 3z 32 62
-3Z 101 101 32 32 6Z
-32 1 01 1 01 32 32 6z
+TGRAM-ATOMS  GRAMS CURIES WATTS-ALL WATTS-GAMMA
+32 1 01 1 0 1 32 32 62
+37 10 1 10 1 2 32 62
+32 1 01 1 0 1 32 32 62
 818820261 E
-8288 0 0 0 0 002222
-83**  1.E+7 8.E+6 6.5e+6 5.E+6 4 E+
-3.E+ 2.5E+6 2.E+6 1.66E+6 1.33e+6
-1.E+6 8.E+5 6.E+5 4 E+5 3.E+5
-2.645 1.E+5 S.E+4 1.E+h
+828 0 0 00 002 2 2 2
+83**  1.E+7 8.E+6 6.5+6 5.E+6 4 .E+b
+I.E+ 2.5E+6 2.E+6 1.66E+6 1.33e+6
+1.E+6 8.E+5 6.E+5 4.E+5 3.E+5
+2.E+5 1.E45 S.E+d 1.E+6
 B4** 2. E+7 6.434E+6 3.E+6 1.85E+6 1.4E+6
-9.E+5 4 E+5 1.E+5 1.7E+4 3.E+3
-5.5642 1.E+42 3.E+1 1.E+1 3.04999E+0
-1.77E+0 1.299996+0 1.12999+0 1.E+0 8.E-1
-4.E-1 3.25E-1 2.25E-1 9.9999856-2 5.E-2
-3.E-2 9.999998E-3 1.E-S5
-7388 370870 380880 380890 380900 390890 390910 400900 400910
+9.E+5 4. E+5 1.E+5 1.7E+4 3.E+3
+5.56+2 1.E+2 3.E#+ 1.E+1 3.04999E+0
+1.77E+0 1.29999+0 1.12999+0 1.E+0 8.E-1
+4,E-1 3.25E-1 2.256-1 9.999985€-2 5.E-2
+3.E-2 Q.999998E-3 1.E-S
+73sS 370870 380B80 380890 380900 390890 390910 400900 400910
 400920 400930 400940 400950 400960 410950 420950 420970
 421000 430990 441010 441020 441030 441040 441060 451030
 461050 461060 461070 511250
-521271 521280 521291 521300 531290 551370 561370 561380
+521271 521280 521291 521300 531290 551370 561370 S61380
 571390 581400 581410 581420 581440 591410 601430 601440
-601460 601480 601500 611470 611481 621470 621500 621510
+601460 601480 601500 611470 6114B1 621470 621500 621510
 631520 631530 631540 631550
 922320 922330 922340 922350 922360 922380 942390 942400
 942410 952410
 410930 440990 471070 521250 531270 541290 621480 631510
 641540 641550 20040 822060 822070 822080 832090 882260 902290
-902300 902320 932370 ~
+902300 902320 932370 -
 390900 410951 451031 451060 501231 521251 521270 521290
 551340 561371 591440
-812080 822120 832120 842120 842160 862200 882240 902280
+812080 822120 832120 842120 B42160 862200 882240 902280
 942380 962420
 641620 651621
 
 30070 40000 400000 90000
-74** 8.480 5.64 5.573 9.893E+1 6.660E+1 7.458 4.440 9.730E+1 1.100E+2
-1.190E+2 1.180E+2 9.306 1.140E+2 4.397 2.440E+1 3.250E+1 3.160E+1
+74** B 480 5.64 5.573 9.893E+1 6.660E+1 7.458 4.440 9.730E+1 1.100E+2
+1.190€+2 1.180E+2 9.306 1.140E+2 4.397 2.440E+1 3.250E+1 3.160E+1
 
-2.850E+1 2.980E+1 1.950E+1 1.560E+1 2.292 7.880 2.238 5.070E+1
+2.850E+1 2.9BOE+1 1.950E+1 1.560E+1 2.292 7.880 2.238 5.070E+1
 1.820E+1 4.610 5.640 6.176E-1
 4.175E-1 9.460 8.859E-1 2.090E+1 1.490E+1 1.287E+2 5.560 7.440E+1
 
-1.700E+2 1.890E+2 1.439€+1 1.730E+2 3.979e+1 1.700E+2 1.670E+2 1.130E+2
-1.070E42 8.410E+1 4.630E+1 1.900E+1 4.011E+1 4.912E-2 2.390E+1 2.710E+1
+1.700E+2 1.890E+2 1.439E+1 1.730E+2 3.979E+1 1.700E+2 1.670E+2 1.130E+2
+1.070E+2 8.410E+71 4.630E+1 1.900E+1 4.011E+1 4.912E-2 2.390E+1 2.710E+1
 
-5.585 1.460E+1 3.110E-2 5.45 1.303E-1 7.629€-1
-7.846 3.232E+4 2.911E+3 9.860E+2 6.800E+1 2.370E+3 6.223E+2
-7.501e+1 8.742 2.793E-1
+5.585 1.460E+1 3.110E-2 5.45 1.303£-1 7.629E-1
+7.846 3.232E+4 2.911E+3 9,B60E+2 6.800E+1 2.370E+3 6.223€+2
+7.501E+1 8.742 2.793E-1
 
  
 
 comment or title end
-00000000000000000000
-
-2.50E-2 1.09€-2 2.27€-3 2.50E-6 3.64E-6 1.04E-2 1.24E-2 4.67E-3
+00000000000000000C000
+2.50E-2 1.09€-2 2.27E-3 2.50E-6 3.64E-6 1.04E-2 1.24E-2 4.67E-3
 4.26E-3 1.95E-5 1.69E-3
-
-1.85E-7 1.10E-4 1.04E-5 5.46E-16 4.25E-10 1.66E-7 9.60E-4 1.87¢-1
-5.84E-2 7.40E-3
-
-1.986-8 3.16E-7
-
+1.85E-7 1.10E-4 1.04E-5 5.46E-16 4.25E-10 1.66E-7 9.60E-4 1.87E-1
+5.B4E-2 7.40E-3
+1.98E-8 3.16E-7
 528901 319130 533050 3233452
-
-75%¢ 3 3 33 33333333333 333333
+75¢¢ 3 3 3 333333333333 333333
 33333333
-
-33333333333 33333333333
+3 3333333333333 33333333
 33333333
-
-2 222222222
-
-3333333333 2222222222
+2 2 222122222
+3 333 3333332222222 222
 33333333 333
-
-2 2222222
-
+2 222222222
 33
-
-14 4 47
+1 4 4 4 17
 
 MSRE DECAY FROM 12/12/1969 TO 12/31/95 TIMESTEP 7
-
 MSRE DECAY FROM 12/12/1969 TO 12/31/95 TIMESTEP 8
-
 MSRE DECAY FROM 12/12/1969 TO 12/31/95 TIMESTEP 9
-
-MSRE DECAY FROM 12/12/1969 TO 12/31/95 TIMESTEP 10
-
-S6$$ 00 A10 7 ETT
-
-S68 0 OA10 8 ET
-
-56$$ 0 0A10 9 ET
-
-5688 00 A10 10 ET
+MSRE DECAY FROM 12/12/1969 10 12/31/95 TIMESTEP 10
+5688 0 0A0 7 ET
+563 0 O A0 8 ET
+5688 C 0D A0 9 ET
+568$ 0 0 A0 10 ET
 
 5688 FO T
 
-when job "fails", make sure no fido iNPUL....cccveeenanne teesseesansesstasssseanassns is out here!
-
-08 array 12 entries read
-
-Ot
+when job “fails", make sure no fido INPUt...ccvveccnnenee Getebeetemeenaransanvanssres is out here!
+0% array 12 entries read
+1114
 
 dbl. prec. machine word applied has, at least, a 16 significant figure accuracy.
 short-lived split test fraction, gxn = 9.1188E-04
-hal f-norm of matrix used, axn = 7.0000E+00
-4-place-accuracy-retention ratio, ratio = 6.4516E-13
-
+half-norm of matrix used, axn = 7.0000E+00
+4-place-accuracy-retention ratio, ratiot = 6.4516E-13
 3% array 33 entries read
 
 ot
+
+45
 
  
  
 
 library information...
 
-cross-section data taken from position number 1 of library on unit 21.
+cross-section data taken from position number 1 of library on unit 21,
 
 pass 1
 
-pass 0 ;
+pass O i
 
-*scale-system control module sas2 library*
+*scale-system control mockile sas2 library*
 
 used a time-dependent neutron spectrum, for each of the above passes
 pass 0 applies start-up fuel densiities
 pass n applies mid time densities of nth library interval
 
 first library updated was...
-RERRARW ARETE R ERRATA R ERAT ERREER AAR RRRRARE AREER AARERTRNRE RRR de dew dred ddr sede ddl de dr ddr ve debe de dee dedi
 
-*
-prelim lwr origen-s binary working library--id = 1143
-made from modified card-image origen-s libraries of scale 4.2
-data from the light element, actinide, and fission product libraries
-decay data, including gamma and total energy, are from endf/b-vi
+WIRR AR R AR R R LRI RN AR R AR AR R R AR ded A s e e dritde dr e e s Wt i el e e s de el e et el e dr e e et
 
-neutron flux spectrum factors and cross sections were produced from
-the "presas2" case updating all nuclides on the scale "burmup" library
-
-fission product yields are from endf/b-v
-photon libraries use an 18-energy-group structure
-the photon data are from the master photon data base,
-produced to include bremsstrahlung from uo2 matrix
-
-see information above this box (if present) for later updates
-
-* % A % 2 HX Bt RENE PERS
-* % % * % % B® ® % % 2 4 4 4% ¥ #
-
-AREA RARTRRRIRFXXAREAREERARRARERNARR EARN ATRRARARRERERRTREATR RRR ARERR ARR RRR RRR deed
+* *
+* prelim lwr origen-s binary working library--id = 1143 *
+* made from modified card-image origen-s libraries of scale 4.2 *
+* data from the light element, actinide, and fission product libraries *
+* decay data, including gamma and total energy, are from endf/b-vi *
+* ‘ *
+* neutron flux spectrum factors and cross sections were produced from *
+* the "presas2" case updating all nuclides on the scale "burnup" library *
+* *
+* fission product yields are from endf/b-v *
+* *
+* photon libraries use an 18-energy-group structure *
+* the photon data are from the master photon data base, *
+* produced to include bremsstrahiung from uo2 matrix »
+* *®
+* see information above this box (if present) for later updates *
 * *
 
-RRRRRAEAARRREAR TARE LRARRERARXEREARRARRERXRRAR RR REREAREREX ARERR RRA R RRR R RRR NTR TR
+SeRedededede dodede Rl vl e A dr e R Wk R W S R RN R W e R e S R e R e e R R e e e e e A R e e e e e e de e e i e dede e
+* *
+
+BRR R AR dArk R R Rk A ki R A R e A AR A A R R R R R R AR e SR e e W e de e R et s e e e ke e
 
 .other identification and sizes of library.
 data set name: /scale/datalib/origen/binrylib/prlimlur
-4/ 4/1995 date library was produced
-1697 total number of nuclides in library
-689 number of tight-element nuclides
+4/ 471995 date library was produced
+1697 total number of muclides in library
+689 number of light-element nuclides
 129 number of actinide nuclides
-879 number of fission product nuclides
+879  number of fission product nuclides
 
 7935 number of nonzero off-diagonal matrix elements
 
-RHEE RTRRERRRRRETRATRRRERARAERRERTRN RATA ARN AAR EEAREERLERRNAARRTERNERA TERRA TTR IL
-
- 
-Appendix B
-
-CALCULATION OF RADIOLYTIC YIELD FROM IRRADIATION OF MSRE
-FUEL SALT IN THE HFIR COOLING POOL
-
- 
+R R R R R R E W Rk Sk A AR R RA AR AR TR R TR R AR R AR AT RRERR AT TR R AR TR R TR vl R ik Sk d ki d g
 
  
  
 
- 
+Appendix B :
 
- 
-The pressure-time data from irradiation experiments must be transformed into an amount
+CALCULATION OF RADIOLYTIC YIELD FROM IRRADIATION OF MSRE
+FUEL SALT IN THE HFIR COOLING POOL
+The pressure-time data from irradiation experiments must be transformed into an amount
 
 of radiolytic product (moles of F, per gram of salt) and an accumulated dose (absorbed
 
@@ -2494,6 +2652,8 @@ curve.
 100
 
 Gamma Flux (MR/h)
+
+ 
 
  
 
@@ -2520,131 +2680,125 @@ Irradiation Time (d)
 
 Fig. B.1. Gamma-flux profile during HFIR-pool irradiation experiments.
 
- 
+49
  
 
 Because the irradiation specimens constitute a thin absorbing medium (i.e., constant flux
 throughout the sample), the dose can be calculated by referencing the energy deposition
 
-in salt to that in air by using the ratio of their mass absorption coefficients ()/p):
+in salt to that in air by using the ratio of their mass absorption coefficients (L/p):
 
-Dose [eV/g] = jos a [ad] Exposure[R] 6.25x 1013 [Ve] ,or
+Dose[eV/g] = (0.873 (Ej-di‘ll) [‘—'aﬂ—] Exposure[R] 6.25x 1013 [Ex\_;_{ig_] , Of
 
-Wp) R
+WP)air R
 
-Dose [eVIg] 4s, irs Wok
-Exposure [R] (pir
+Dose [eV/g] = 5.456x 1013 (Wp)sah
+Exposure [R] . - (Wp)air
 
 Mass absorption coefficients are both energy and composition dependent, but for the
 lighter elements there is little variation over a broad range of energies [Templin, L. J.,
-Reactor Physics Constants, ANL-5800, Argonne National Laboratory, July 1963, p. 652].
+Reactor Physics Constants, ANL-5800, Argonne National Laboratory, July 1963, p. 652]. |
 This ratio should be near unity. In the absence of a detailed analysis of absorption
-coefficients, we use the ratio of 1.1455 determined by Savage in his Co irradiation of
+coefficients, we use the ratio of 1.1455 determined by Savage in his %Co irradiation of
 MSRE salt [Savage, H. C,, et al., “Gamma Irradiation of a Simulated MSRE Fuel Salt in
-the Solid Phase,” pp. 27-31 in Reactor Chemistry Division Annual Progress Report for.
+the Solid Phase,” pp. 27-31 in Reactor Chemistry Division Annual Progress Report for
 the Period Ending Jan. 31, 1964, ORNL-3591, Oak Ridge National Laboratory]:
 
-Dose[eV/g]
+Dose[eV/g] _
 
 = 13 = 13
-Exposure[R] = 236x107 (1.1455) = 6.25x 10
+Exposure [R] = >-4°6%x107 (1.1455) = 6.25x10
 
 The conversion of accumulated fluorine pressure to a number of moles is simply a gas-
 
 law calculation for the void volume of the specimen:
 
-n= ry _ P (psi) a _ 6.02 x 10% molecule
-0.08205 Loam (313 iy 22-7 Pst mo,
-mol -K atm
+ 
+
+n = % _ P (psi) (75.4/1000 IIZ; — 6.02 x 102 mglc%lla
+0.08205 L-atm (393 gy 19./ PSt mo.
+mol-K atm
 
  
 
-ID = 1202x102 molecule
-Pp psi
+I - 1.202x1020 molecule
+P psi
 
 50
-The radiolytic yield (Gr) can now be calculated from the slope of the pressure-exposure
+ 
+
+The radiolytic yield (G Fz) can now be calculated from the slope of the pressure-exposure
 
 curve as follows:
 
 Example: 1986 Experiment
-dP/dE = 1.93 x 10" psi/R at an average exposure rate of 20 MR/h
+dP/dE = 1.93 x 10 psi/R at an average exposure rate of 20 MR/h
 
-1.93 x 10% |=] 1.202 x 10% md
+193x 109 [P%] 1.202 x 10%° [%]
 
  
 
 dP n
-Gp = -dEP
-: dD 2 m 6.25 x 1013 [VE] 30g sali]
+G,=dn -EP . , | ,
+: dD % m 6.25 x 1013 [e—w&] 30 g salt]
 R
+= 12x10% molecule
 eV
 
-_ molecule Fp
-Cr, = 0.012 155°¥ absorbed gamma energy
+_ molecule F,
+Or, = 0012 1655 absorbed gamma energy
 
- 
-
- 
+51
 Appendix C
 
 ESTIMATION OF CROSS-TRANSFER OF FISSION PRODUCTS AND
 PLUTONIUM TO THE FLUSH SALT
+. =1
+ey iy @ aeer : _ €89 . . —
+re1o oY1 Jo %8130 ‘nd89'€r= {8 epL+ 30LS + | £89/(907) = @nuing %) M 3065 | + 01 X8EY
+1[es [ong 3 095y €'89 _
+gv e {3epL+30LS + [(a194d ¢gz-n Sunnp parq nd 8 066) ¢ T dnung ) w = pawRjsuen nd Jo junoure
+01 '~
+810130 %L1 = | 001/(k6E) = Tumnag) S | ° 0T XY =
 
- 
- 
+1=1
+N = pauajsuexn sjonpoid uorssty Jo 9,
+6
 
- 
+SajeuIn)sT JIJSUBIY-SS0))
 
- 
-[2101 91 JO %8'1 10 ‘nd 39'c1 = {SgpL + S0LS + | £'89/(907) = T
+wes Py 3Y 09sv) 001
+psuen 8y 07 | (dnwng %)
 
-£89
-‘(dnumq
-
-I=1
-8 ® xX v=
-2) g 06S | + ¢O1 X SEY
-
- 
-
-es [ong 3 096 £89 ]
-135suen 3 07 « {SepL+30LS + | (ahd gez-n Suunp pasq nd 3 06S) © 7————~ dung 2) 3 = pauRJsuen nd JO JuUnowre
-[8101Jo %L°T = | 00T/(v6€) = Towing %) « (OI X8EY =
-es [ony 8 t=!
-ps or - : Rr %) <= pauysuen syonpoid uorssiy Jo 9,
-
-SIJBWI)ST JIJSURI)-SSOI))
-
-"0udojaI stp JO £ “d uo uaAI8 dur own Suneado oy YIM JUNSISUOD J0U SF IT INQ “Lodas § ewOY, JO £9 *d UO POYNUIPI ST J3JSUBN-SSOID STL,
-"0L61 ABN *Aiorei0qe-] [UOREN 23pR YO ‘0L6T-WL/ INYO IPS 19nd TASH #1 Jo (1anovoipoy paiomajp) “f “W Iog 29405,
-
-* T1I-66 *69-86 "dd ‘1.61 19quia0a(] *AI01830qR [BUODIEN S3PRI YEO ‘8S9%-INNO ‘suoup.1ad() YS Jo s19adsy onuay) “J “yf ‘BWOYY, :20.m0S,,
+"90U19JA1 SIY JO £ “d uo udAId suyl own Sunerado Y YPIM JUANSISUOD 10U ST I IK) “bodas v..aE_oﬁ. JO €9 *d U0 PoYNUAPI §I JOJSURI-SSOID STILL
+"0L61 KB *Asoreioqe [euorieN 93pry ¥eQ ‘0L6T-WL/INYIO “IvS 1ond FYSHW a1 Jo 1anavoipoy paiomap) “f "W TI9d :994n08
+" TII-66 'S9-8S "dd ‘IL61 Jaquiadaq ‘Ai0reioge] [euoneN d3pry NeQ ‘8S9y-TINNO ‘swonpiadQ JYSW Jo $102dsy [oopuay) “g ~J ‘BWOY], :29.4108,,
 
  
 
  
 
-SeyL (%001) 918¥01 69/€1/T1 : 69/€1/8 £€-0¢-dd + S-61-dd 6
-30Ls (%L'L3) ¥76'16 69/21/38 * 89/¥1/8 7-61-dd: 1-s1-ad  (Uoneado neg) 8
-306 (%€°89) 08S°‘TL 89/8T/¥ : LI/T1/6 TLy1-dd: e-€1-dd L
-mois reaur (%ETY) TIE‘ vy L9/8/6 : LIILT/9 I-€1-dd : €-T1-dd 9
-imoI3 resuly (%8°€€) $8€E°SE L9/9V/9 : LI/TT/S 1-C1-d4:09-11-dd 25
-moi Jesu! (%8'€€) $8€'SE L9/OT/S = 99/11/T1 6S-11-dd : T-01-dd v
-yimois reaury (BIT) T19°T1 99/VT/11 : 99/v/T1 8-6-dd: LI-8-dd £
-moI3 reour | (%€£°6) 00L'6~ 99/7/11 : 99/0¢/6 S1-8-dd: v-8-dd <
-yamoIs Jeaul (%S'L) €T8L 99/82/6 * S9/81/T1 1-8-dd 1 01v-dd  (Uonedongg) 1
-pAI0IUGAUL Nn [R10], [(%) ymIN] pSoIep ojdureg (ysnyj 193je pue a10J9q) ‘OU I9jSuen-SSOID)
-qdnumg pSordures res-ysnpy
+8 epL (%001) 918'V01  69/EI/TL: 69/E1/8  €€-07-dd : S-61-dd 6
+
+8 oLs (%L'L8) ¥¥6'16 69/21/8 : 89/v1/8 7-61-dd: 1-S1-4d  (uomesadonger) 8
+
+3 06$ (%€°89) 08S°1L 80/8T/V: L9/I1/6  TL-¥I-dd: €-€1-dd L
+Pmod resur | (%ETY) T9E DY L9/8/6 * LI/LT/9 [-€1-dd : €-C1-dd 9
+Ymoss reour| (%8'€€) S8E'SE L9/O1/9 : LOTV/S 1-71-dd : 09-11-dd oS
+[ImoIs reour| (%8'€E) SBE'SE  LY/OL/S : 99/T1/T1 65-11-dd : 2-01-dd v
+yimous resur (%1TT) 11911 99/VT/11 : 99/¥/11 8-6-dd : L1-8-dd €
+yImoIs Jeoury (%€°6) 00L'6~ 99/2/11 : 99/0€/6 S1-8-dd : ¥-8-dd z
+pmoI3 seour (%S'L) €28L 99/3/6 : S9/81/T1 1-8-dd: 0l-y-dd  (VonwdoNgg) 1
+pAIOIIAAL 1 [RIO], [(%) UMW pSolep o[dures  (ysniy JoIge pue 210j3q) '0U 19J5UBL-$SO1D)
+
+qdnumg pSordures jfes-ysnpg
 
  
 
-3{8S Ysny 0) [NJ WIL SIJSUBIY-SSOID Jo S07 T°) dqeL
+MBS Ysnyj 0} [oNj UI0J SIJSUBII-SSOID JO 30T °I°D) 3qe
 
-55
-
- 
-Appendix D
+35
+Appendix D |
 HEAT-TRANSFER ANALYSIS OF IRRADIATION SPECIMENS
 
  
@@ -2659,21 +2813,26 @@ Table D.1. Characteristics of selected irradiation specimens
  
 
 F, yield
-Salt bed size Exposure rate (molecules per
-Experiment Sample form @in.) (MR/h]) 100 eV)
-Savage—1963  Solidplug 0.78 ID x 3.2 long 0.72 0.045
-80Co source
-Toth—1986  Powderbed (079IDx3.1long 15-25 0.012
-HFIR pool Y <0.02-cm diam
-Toth—1995 Large granules 079 IDx3.1long ~~ 20-80 < 0.001
+Saltbedsizz ~ Exposurerate (molecules per
 
-HFIR pooly ~~ l-cm-diam
+Experiment Sample form (in.) (MR/h]) 100 eV)
+Savage—1963  Solidplug  0.78 ID x 3.2 long 0.72 0.045
+
+80Co source ‘
+
+Toth—1986  Powderbed (079D x3.1long  15-25 0.012
+
+HFIR pOOl v <0.02-cm diam
+
+Toth—1995  Large granules (079D x3.1long  20-80 <0.001
+
+HFIR pooly  ~ 1-cm-diam
 
 All of these situations correspond to heat transfer in the presence of a uniform heat source
 in the sample (due to gamma heating). However, there is an important distinction
 between the cases of a plug and powder bed and that of a bed of large granules. For the
 plug or powder bed, the entire bed can be treated as a continuum with an effective
-thermal conductivity that governs the temperature profile in the bed. The situation for
+thermal conductivity that governs the temperature profile _in the bed. The situation for
 granular material is quite different, because the continuum approach is not valid and the
 
 potential exists to support large temperature differences across an individual particle.
@@ -2685,29 +2844,29 @@ estimated based upon the source energy per unit volume, Q, and the resulting sur
 
 flux, g/A:
 
-q/A = Q * volume /surface area = Q « (nd3/6)/(rd?) = Qd /6
+q/A = Q » volume /surface area = Q » (nd3/6)/(rd?) = Qd /6
 
- 
+59
 
  
  
 
 From Appendix B we have the following:
 
-Q [cal/(cm3 +s)] = 1.65 x 103 « E [MR/h], or
-@/A [cal/(cm?.5)] = 2.75 x 10% + E[MR/h]  d[cm]
+Q [cal/(cm?3 +5)] = 1.65 x 103 « E [MR/h], or
+g/A [cal/(cm?+s)] = 2.75x 10« E[MR/h]  d[cm]
 
-For conduction-limited transfer to the surrounding gas at T.. [Carslaw, H. S., and Jaeger,
+For conduction-limited transfer to the surrounding gas at T., [Carslaw, H. S., and Jaeger,
 J. C., Conduction of Heat in Solids, Clarendon Press, Oxford, 1959, p. 232], the following
 
 calculation governs the external temperature difference:
-ATgan = (Tea) — Teo) = Qd%/ (12°kgas) = q/A* d/ (2°Kgas) D.1)
+ATy = (T(,;, — T.) = Qd?% (12¢kgas) = q/A*d/ (2kgas) (D.1)
 The temperature within the particle is given by:
-Ty — Tema) = Qd?/ (24%kgqy) * (1 — 12/22), and
-ATr0 = centerline heating = To) — Terma) = Q d?/ (24¢ksar)
+Ty — Tima) = Qd2/ Qdkea) + (1 — 12/a2), and
+AT, = centerline hcating. = Te=0) — Ter=a) = Qd%/ (24%ksan)
 
-Because the salt is very conductive [kgay > 0.0058 cal/(cm + s « °C), Source: Rosenthal,
-M. W,, et al., Molten Salt Reactor Program Semiannual Progress Report for the Period
+Because the salt is very conductive [ksa) > 0.0058 cal/(cm - s - °C), Source: Rosenthal,
+M. W, et al., Molten Salt Reactor Program Semiannual Progress Report for the Period
 Ending Aug. 31 1969, ORNL-4449, Oak Ridge National Laboratory, February 1970,
 
 p. 92], the centerline heating is usually small compared with the temperature drop across
@@ -2716,47 +2875,51 @@ the particle surface.
 
 The conduction-limited regime applies to very small particles—for larger particles, free
 convection must be considered. Free convection from a sphere in the boundary layer
-regime between creeping flow and turbulence (10% < Ra < 10%) is well correlated by the
+regime between creeping flow and turbulence (10 <Ra < 10%) is well correlated by the
 semiempirical expression [Rosenhow W. M., and Hartnett, J. P. (eds.), Handbook of Heat
 Transfer, McGraw-Hill Co., New York, 1973, p. 6-15]:
 
 60
 
  
-Nu =0.49 (Ra)!# @D.2)
+Nu =0.49 (Ra)l# (D.2)
 
 Ranz and Marshall [Transport Phenomena, 1960, p. 413; Chem. Eng. Prog. 48,
 141-173, (1952)] propose a more general expression for nonturbulent free convection,
 which extends to the creeping-flow condition of the smallest particle (with conduction as
 
-an asymptote for Gr = Ra = 0):
+an asymptote for Gr =Ra =0):
+Nu = 2 + 0.6 (PD!R « (Gn)'# (D.3)
 
-Nu = 2 + 0.6 (P)!R « (Gn! (D.3)
 where
-Nu = Nusseltno. = FT Ra = Rayleigh no. = Pr« Gr
-Gr = Grashof no. = hf -T.)& Pr=Prandtlno. =cpp/k
 
-and at T..= 300K:
+_ _ (gA)d _ . — Dre
+Nu = Nusseltno. = T T (T.-T) Ra = Rayleigh no. = Pr«Gr
 
-¢p = heat capacity [cal/(g+°C)] = 1.24 for He, 0.24 for air;
+T, -T.)d
+Gr =Grashof no. = gP(Tu-T)& Pr=Prandtlno. =c, u/k
 
-WL = viscosity [g/(cm-s)] = 2x 10% for both He and air;
+and at T.. = 300 K:
+
+¢p = heat capacity [cal/(g-°C)] = 1.24 for He, 0.24 for air;
+
+B = viscosity [g/(cm+s)] = 2x 104 for both He and air;
 
 v = kinematic viscosity [cm?/s] = wp = 1.12 for He, 0.154 for air;
 
-p = ideal gas density [g/cm] = 1/22,400 « MW = 1.8 x 104 for He, 1.3 x 1073 for air;
-k = thermal conductivity [cal/(cm-s-°C)] = 36 x 10 for He, 6x 10 for air;
+p = ideal gas density [g/cm®] = 1/22,400 « MW = 1.8 x 10 for He, 1.3 x 1073 for air;
+k = thermal conductivity [cal/(cm-s+°C)] = 36 x 10 for He, 6x 10 for air;
 
-B = coeff. of thermal expansion = 1/T.., for ideal gas;
+B = coeff. of thermal expansion = 1/T.. for ideal gas;
 
-= accel. of gravity = 980 cm/s%
+g = accel. of gravity =980 cm/s%
 Tw = wall or surface temperature;
 d = particle diameter [cm] =1 and 0.02.
 
 It should be noted that the approach of adding conduction and convection contributions
 used in Eq. (D.3) is an approximation and is in conflict with the idea that there is a
 
-critical Rayleigh number for the onset of natural convection. This approach probably
+critical Raylei gh number for the onset of natural convection. This approach probably
 
 61
 
@@ -2768,62 +2931,63 @@ produces low estimates of the temperature difference required to support a parti
 
 flux.
 
-Solving for AT (= Ty, — T..) in Eq.(D.2) gives:
+Solving for AT (= Ty, ~ T..) in Eq.(D.2) gives:
 
-AT [°C] = ¢; + E®8 [MR/h] « d [cm] D.4)
-(for He: c¢; =1.27, forair: c; =2.34)
+AT [°C] = ¢; * E*# [MR/h] * d [cm] D.4)
+(forHe: c¢; =1.27, forair: ¢) =2.34)
 
-Solving for AT (= Ty, — T..) in Eq. (D.3) gives:
+Solving for AT (= Ty — T..) in Eq. (D.3) gives:
 
-AT + c, AT" = ¢, (ok)
+AT + c, AT = ¢ ®.5)
 
  
 
-1/4
-- n(_gd _ (gA)-d
-c, = 0.3Pr ; ov } C3 2K
+T ev2
+
+@ \# A)-d
+c, = 0.3Pr1’3( £ ) c; = (——q/Zi:
 
 A bound on the radiant transfer of heat is included for comparison and to ensure that it is
 
 not the controlling mode of transport:
 
-AT -(4 + 4" 1 D.6)
+14
+AT =(q—’:- + T,;‘) -T D.6)
 
-Here the emissivity assumed to be 1, and © is the Stefan-Boltzmann constant [1.36 x 10-12
-cal/(cm?.s-K*)]. Predictions based upon the preceding development are summarized in
+Here the emissivity assumed to be 1, and © is the Stefan-Boltzmann constant [1.36 x 1012
+
+cal/(cm? - s-K*)]. Predictions based upon the preceding development are summarized in
 Table D.2.
 
 62
-Table D.2. Single-particle heat-transfer predictions
-Temperature difference (°C)
+| Table D.2. Single-particle heat-transfer predictions
+J Temperature difference (°C)
 
  
 
-Conduction ~~ Free convection Radiant Rayleigh no.
+Conduction  Free convection Radiant Rayleigh no.
 
-Cover d E Egs.
-gas (cm) (MRM) Eq.(D.1) Eq (D4) Eq.(D5) Eq. (D.6) (D4)/(D.S5)
+s Cover d E Egs.
+gas (cm) (MR/h) Eq.(D.1) Eq.(D4) Eq.(D.5) Eq.(D.6) (D4)/(D.5)
 
  
 
 He 1 20 7.6 — 5.1 32.0 25/9
 1 50 19.1 — 11.8 67.3 52/21
-1 80 30.5 — 18.0 94.7 76/33
+1 80 30.5 — 18.0 94.7 76/ 33
 0.02 20 0.003 — 0.003 0.7 <<1
 0.02 50 0.008 — 0.008 1.9 <<1
-0.02 80 0.012 —_ 0.012 3.0 <<1
+0.02 80 0.012 — 0.012 3.0 <<1
 Air 1 20 45.8 25.7 15.8 320 2820/1735
-1 50 115 53.5 34.6 67.3 5870/3800
-1 80 183 77.9 51.6 94.7 8540/5665
+1 50 115 53.5 34.6 67.3  5870/3800
+1 80 183 77.9 51.6 94.7 8540/ 5665
 0.02 20 0.018 — 0.018 0.7 <<1
-0.02 50 0.045 — 0.045 19 <<1
-0.02 80 0.072 — 0.072 3.0 <<1
+0.02 50 0.045 — 0.045 1.9 <<1
+0.02 80 0.072 — 0072 3.0 <<1
 
  
 
- 
-
-Initially the irradiation specimens have a helium cover; however, as radiolysis proceeds,
+- Initially the irradiation specimens have a helium cover; however, as radiolysis proceeds,
 fluorine is generated, helium is withdrawn, and the transport properties of the ambient gas
 become more like those of air. So the estimates for a helium cover represent the
 conditions at the beginning of irradiation, and the estimates for an air cover bound those
@@ -2833,10 +2997,13 @@ temperature rise of 30°C puts the particle temperature at >70°C, which is abov
 lowest estimate of the salt annealing temperature [Toth, L. M., and Felker, L. K.,
 “Fluorine Generation by Gamma Radiolysis of a Fluoride Salt Mixture,” Radiat. Eff. Def.
 Solids 112, 201-10 (1990)]. Thus it is likely that the decreased fluorine yield seen in the
-
 1995 experiment is due to heating of the large particles to temperatures that promote
 
 significant recombination.
+
+63
+
+ 
 
  
  
@@ -2847,21 +3014,21 @@ The preceding single-particle calculations must be reconciled with our existing
 knowledge and best estimates of heat transfer in packed and solid beds. It is useful to
 examine some bounding predictions for the temperature distribution in a packed or solid
 bed that contains a uniformly distributed energy source. The temperature in an infinite
-cylinder of radius a, with uniform heat generation Q, and imposed surface temperature
+cylinder of radius @, with uniform heat generation Q, and imposed surface temperature
 
-Tr=a = Te is given by:
+Tr=a = Teo is given by:
 
-AT = Tgy— Te = Qd?/ (16ksay) * (1- 12/22)
+AT = Tgy—Te = Qd2/ (16°kea) * (1 - 12/ 22)
 
 Therefore, the centerline heating is as follows:
 
-ATro = (Tg=0) — Tema) = Qd%/ (16°ksat)
+AT = (Tg=0) — Tg=a)) = Qd%/ (16%Keap)
 
 This one-dimensional approximation overestimates the temperature rise in the bed
 because it omits heat loss from the cylinder ends. In these projections the particulate bed
 energy source is reduced by a factor of two from the previous single-particle values in
 order to account for the bed voids. The value for the particulate bed conductivity is
-derived from previous estimates [Williams, D. F., “Charcoal Bed Conductivity,” Internal
+derived from previous estimates [Wllhams D. F., “Charcoal Bed Conductivity,” Internal
 Memorandum to B. D. Patton and L. M. Toth, June 21, 1995]. The estimates in
 
 Table D.3 suggest that the 1985 experiment may have also experienced a slightly
@@ -2876,81 +3043,98 @@ is cooler than this centerline value, as indicated by the preceding equations.
 
  
 
-. Sample Exposure Q Bed conductivity AT, _q
-Trial form (MR/h) (cal/cm? o 0) [cal/(cm «Se °0)i ©0)
-Sa Plug 0.72 0.0012  >58x103 <0.1
-Powder bed
-Bie (< 0.02-cm 15-25 0.012-0.021 ~4x104 ~ 10-20
+Sample Exposure Q Bed conductivity AT,
+Trial form (MR/h) (ca]/cm3 *S) [cal/(cmes. °C)] | (°C)
+Sa\l'ggg— Plug 0.72 0.0012 >5.8x103 - <01
+__ Powder bed |
+Toh—  (C002om 1525 00120021  ~4x104 ~10-20
 particles)
 65
-  
+46.
+47,
+
+48.
+49,
+50.
+
+51.
+52.
+
+54
+
+55
+56
+57
+58
+59-60
 
  
 
- 
-ORNL/TM-13142
+BN =t ik et el ek ek ek ek ek
+eV NAMBEWN -
+
+i
+PPN, LD=
+
+ORNL/TM-13142
 
 INTERNAL DISTRIBUTION
-1. S.N. Burman 22. B.D. Patton
-
-2. C. H. Byers 23. F. J. Peretz
-
-3. R.M. Canon 24. D. W. Ramey
-
-4. J. M. Cosgrove 25. IL. Remec
-
-5. A. G. Croff 26. J. P. Renier
-
-6. S. Dai 27. J. C. Rudolph
-
-7. G.D. Del Cul 28. J. E. Rushton
-
-8. M. F. P. DeLozier 29. G. W. Sherrill
-
-9. J. R. Devore 30. R. M. Szozda
-10. R. L. Faulkner 31. L. M. Toth
-11. L. K. Felker 32. L. D. Trowbridge
-12. M. K. Ford 33. K.L. Walker
-13. M. A. Green 34-38. D. F. Williams
-14. E. M. Hodges 39. ER Document Management
-15. J. S. Ivey Center
-16. J. R. Keiser 40. Central Research Library
-17. B.L. Kimmel 41. Y-12 Technical Library
-18. L. E. McNeese Document Reference Center
-19. G. T. Mei 42. ORNL Patent Section
-20. D. E. Mueller 43-44. ORNL Laboratory Records
-
-” 21. S. H. Park 45. ORNL Laboratory Records RC
+S. N. Burman 22. B.D. Patton
+C. H. Byers 23. F. J. Peretz
+R. M. Canon 24. D. W. Ramey
+J. M. Cosgrove 25. 1. Remec
+A. G. Croff 26. J. P. Renier
+S. Dai 27. 1. C. Rudolph -
+G. D. Del Cul 28. J. E. Rushton
+M. F. P. DeLozier 29. G. W. Sherrill
+J. R. Devore 30. R. M. Szozda
+R. L. Faulkner 31. L. M. Toth
+L. K. Felker 32. L. D. Trowbridge
+M. K. Ford 33. K. L. Walker
+M. A. Green 34-38. D.F. Williams
+E. M. Hodges 39. ER Document Management
+J. S. Ivey Center
+J. R. Keiser 40. Central Research Library
+B. L. Kimmel 41. Y-12 Technical Library
+L. E. McNeese Document Reference Center
+G. T. Mei 42. ORNL Patent Section
+D. E. Mueller 43-44. ORNL Laboratory Records
+S. H. Park 45. ORNL Laboratory Records RC
 EXTERNAL DISTRIBUTION
 
-46. J. Caja, 9052 Highbridge Drive, Knoxville, TN 37922
+J. Caja, 9052 Highbridge Drive, Knoxville, TN 37922
 
-47. E. C. Crume, Jr., Pragmatics Inc., 708 S. Illinois Avenue, Suite E105, Oak
+E. C. Crume, Jr., Pragmatics Inc., 708 S. lllinois Avenue, Suite E105, Oak
 Ridge, TN 37830
+J. R. Engel, 118 E. Morningside Drive, Oak Ridge, TN 37830
 
-48. J. R. Engel, 118 E. Morningside Drive, Oak Ridge, TN 37830
+P. A. Haas, 1205 Chickering Way Lane, Knoxville, TN 37923
 
-49. P. A. Haas, 1205 Chickering Way Lane, Knoxville, TN 37923
-
-50. M.R. Jugan, Environmental Restoration, Department of Energy, Oak Ridge
+M. R. Jugan, Environmental Restoration, Department of Energy, Oak Ridge
 Operations, P.O. Box 2001, Oak Ridge, TN 37831
-
-51. J. J. Laidler, Director, Chemical Technology Division, Argonne National
+J. J. Laidler, Director, Chemical Technology Division, Argonne National
 Laboratory, 9700 S. Cass Avenue — Bldg. 205, Argonne, IL 60439
-52. N. W. Lingle, Environmental Restoration, Department of Energy, Oak Ridge
-Operations, P.O. Box 2001, Oak Ridge, TN 37831
-53. K. J. Notz, Henley Point-River Road, Kingston, TN 37763
-54. A. L. Olson, Idaho National Engineering Laboratory, P.O. Box 1625, MS-5219,
-Idaho Falls, ID 83415-5219
-55. L. P. Pugh, 2024 Cedar Lane, Kingston, TN 37763
-56. R.E. Thoma, 119 Underwood Road, Oak Ridge, TN 37830
-57. R. G. Wymer, 188-A Outer Drive, Oak Ridge, TN 37830
-58. E.L. Youngblood, 198 N. Purdue Avenue, Oak Ridge, TN 37830
-59-60. Office of Scientific and Technical Information, P.O. Box 62, Oak Ridge, TN 37831
 
- 
+N. W. Lingle, Environmental Restoration, Department of Energy, Oak Ridge
+Operations, P.O. Box 2001, Oak Ridge, TN 37831
+
+53. K. J. Notz, Henley Point-River Road, Kingston, TN 37763
+
+Idaho Falls, ID 83415-5219
+
+. A. L. Olson, Idaho National Engineering Laboratory, P.O. Box 1625, MS-5219,
+
+. L. P. Pugh, 2024 Cedar Lane, Kingston, TN 37763
+
+. R. E. Thoma, 119 Underwood Road, Oak Ridge, TN 37830
+
+. R. G. Wymer, 188-A Outer Drive, Oak Ridge, TN 37830
+
+. E. L. Youngblood, 198 N. Purdue Avenue, Oak Ridge, TN 37830
+
+. Office of Scientific and Technical Information, P.O. Box 62, Oak Ridge, TN 37831
  
 
-vi
+L4
 
  

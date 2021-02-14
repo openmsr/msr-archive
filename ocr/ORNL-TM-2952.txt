@@ -6,42 +6,44 @@
 
 ”
 
-ah
+o
 
-9
+9 .
 
--}}
+-t}
 
-ul)
+a)
 
  
 
 ORNL-TM-2952
 
-Contract No. W-7403-eng-26
+Contract No.' W-'-7403-eng-26l
 REACTOR DIVISION
 PARAMETRIC SURVEY OF THE EFFECTS OF MAJOR PARAMETERS
 
-ON THE DESIGN OF FUEL-TO-INERT-SALT HEAT
+ON THE DESIGN OF FUEL~TO-INERT-SALT HEAT
 EXCHANGERS FOR THE MSBR
 
-A. P. Fraas and M. E. IaVerne
+A, P, Fraas and M, E, LaVérne
 
 NOVEMBER 1971
 
  
 
-CP N o TICE .
-© “This report was prepared as an account of work’
--*|. sponsored by ‘the United States Government, Neither
-| the United States nor the United States Atomic Energy
-ol Commission, nor -any of their employees, nor any of |
-©. | their: contractors, ‘subcontractors, or their employees,. | |
-‘J makes any warranty, express or implied, or assumes any
-“legal ‘liability “or responsibility for the accuracy, com-
-pléteness or usefulness of any information, apparatus,
-product of piocess disclosed, or represents that its use ;
-I would not infringe ‘privately owned rights, :
+P . N O TI C E : :
+-‘-'l'his rcport was prepared as an account of work’
+-‘]. sponsored by -the United States Government, Neither
+.| the United States nor the United States Atomic Energy
+.| Commission, nor-any of their. employees, nor any of | -
+* { their- contractors, subcontractors, or their employees, |
+7'} makes sny warranty, express or implied, or assumes any
+-} legal Hability “or responsibility for the accuracy, com-
+’ ‘pléteness or: usefulness of any information, apparatus, | .
+| product 6r process disclosed, or represents that its nse -
+P wonld not infrlnge private!y owned rights '
+
+ 
 
  
 
@@ -54,102 +56,126 @@ I would not infringe ‘privately owned rights, :
  
 
 OAK RIDGE NATIONAL LABORATORY
-Oak Ridge, Tefinessee 37830
-operated by
-UNION CARBIDE CORPORATION Ta
-for the
-U.S. ATOMIC ENERGY COMMISSION
+' Oak Ridge, Tetinessee 37830
+- operated by _
+UNION CARBIDE CORPORATION “x\'
+~ for the o ‘
+U S ATOMIC ENERGY COMMISSION
 
-BISTRIBUTION OF THIS DOCUMENT IS
+BISTRIBUTION OF THIS DOCUMENT g UNUWZM .
  
 
  
 
+  
  
-
-(v
-
  
-
-(»
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
-
- 
-
- 
 
 »
 
--)
+)
 
-«
+<y
+
+ABSTRACT .
 
 iii
 
 CONTENTS
 
-ABSTRACT ¢vvevecrscninsnanrannsns esters aesssananns cerenneennn feenens
-INTRODUCTION +vsveescoasacacsnans ceesesessesssesnanas css esssctsrcnes
-SUMMARY ...iiineeennenenns vaeeenn Cesretestssansrsresesenannns IN
-ANALYSIS tvievvnnceccenoscens Sess ecssessecssasssossannannannn cesses
-Design Bases and Criteria ...vciceceseccccess Ceeseertasnsresnrnns
-Derivation of Heat Exchanger Equations ........eee00ues cecesnans
-Heat Balances ....eseeeevecses ceessae eee Ceceesetesrveseans
-Convective Heat Transfer ............ ceeeteseserencsannanans
-Temperature Difference Between Fluids ......evcc0v0ee ‘esas
-Pressure DIODPS .s.eeeeeasessnsososcsrsnssnsrsscessscscsnasanss
+® 9 & 0 0 0 8 9 800w e 4 % 29 80 88" s & 8 0 8 & 80 68 8 ¢ 8B s & & o & 8 9 00 0 & 9 4 e ey
 
-Shell Side Equivalent Diameter ....vceevevccecaccanas eesees
-Solution of the Equations ......ccvvveeees eerie veces
-Reduction to a Single EQUation seecececescosesiosasscnnssasss
-Computer Solution c.iieeeeseseneesvsssaivecennsasonnss ese ans
-Extensions of the Analysis ....... tess se sess es tse essa sas sneer ans
-Other Fluids ...... Cerra rete eeneaee tetera eaaenenaneaas
+INTRODUCTION ¢ & & 00 & 90 4 9 b A s e S " " e 0N * & & 5 &6 8 0 & 80 e s B E 90 .......'.V'....l
 
-Tube Patterns ....... Cece tistacetesettststesesanenas cerenes
+SUMMARY ..
 
-Other Conditions ....eeeeeeesesecsecsanansns vecececesessrsees
-PARAMETRIC STUDY tutyuiueernsoneneocnansoscscnsonns ereeecseananann .e
-CHOICE OF INERT SALT ...cecvoeesss sees es ters tesecesasnas Teese cssassea
-Materials Compatibility Considerations .. . teeters eeesasennersansen
-Melting Point ..... tse sree setae e rset esate as teases essen anon
-Leakage Problems eerie cseses cesesesansans eeeeecesnanans
-0ff-Gas Problems ..... feet eeeeeeeeeeteeateateraeetanaeeanas ..
-Heat Transfer Performance ......cceeieeceececsnccccnccncsssnnnns
-REFERENCES iui vuvsvecnsasassssssassstesasasssssssanssesnonas ssessena
-APPENDIX A. Solution of the Heat Exchanger Equations ...ceececocess
+ANATLYSIE seveeeteacancanncans Ceteiescicatt et aes st eas a0 nsasun veeess
+Design Bases and Criteria ....ccveienecanass teees st rasnsessn s
+Derivation of Heat Exchanger Equations ....iooeeevennns ceteaseans
 
-APPENDIX B. FORTRAN Program for Computer Solution of the Heat
-Exchanger Equations ....ccceeverenrecccsnsrsensssssanssaa
+Heat BalalnCeS ..e.eeeeenseenss seassan tesesesasetaresbanaan
+Convective Heat Transfer .....veeees. T
 
-APPENDIX C. Sample Program Input and Output .......cceeveevesveceens
+Temperature Difference Between Fluids ............... veasse
+
+Pressure Drops ¢ PS8 dE S PSS SrERe NSNS e Y.
+
+Shell Side Eq_uivalent Diameter | 8 9 8 2 6 00 8P 80000 e 6088 0.
+
+Solution of the Equations .....ccvesceses eeeraeeeeeaans teesnens
+
+Reduction to a Single Equation ettt tesas e tena et aaann
+
+Computer SOlution lll...‘.!.'...l-...OVOOVCI'.l..l... ..... T8 8 0 0 s
+
+Extensions of the Analysis ....... tesacsscacesvtercenssesentasona
+Other Fluids ........'.I-. ..... ........‘.....7 ................
+
+Tube Pa‘tterns ....... ‘..............'l.. .............. e 20 2 e
+
+Other Conditions ....ceeeveeeenececccceansns teesseesvesanaves
+PARADdETRIC STUDY 8 S g 00 09040 P E RO tET SIS ST EEERTSTTRETDS 4 808 8000080 08080 e
+CHOICE OF INERT SALT .ccceeeceescssnscsascsessns IEEEEEY R EERR R
+
+Materials Compatibility Considerations e..eeeeseeecesscenceseen.
+
+Melting POint ..... _'.."."-.’..“.l...'.‘I...C....‘...I..."......O..
+
+Leaka-ge PrOblemS cru'.oro'roi;_o .orovo-t:oooo.oucco ooooooooooo Vol_.oaroooc ooooooo
+
+Off-GaS PrOblemS l.‘..’.'.._...f‘l....I....‘....'.......v. .......... - &
+
+Heat TransferPerformnce ...C..'.'.'...............l‘...'.l...‘
+
+{REFERENCES
+~ APPENDIX A.
+- APPENDIX B.
+
+APPENDIX C.
+
+......l'...._."i_'"'_"...I...."........' ......... . 8 809 &0 0
+
+Solution of the Heat Exchanger Equations ..............
+
+FORTRAN Program.for Computer Solution of the Heat
+Exchanger Equations trtessarsecss sttt rrarrcessaanatace
+
+Sa.mple Program Input and Qutput evvvenvnenrennnconnans
 
 Page
 
  
 
-OO OO 39 9 &F &= Nn FH
+O O 39 2N & &= MnM H -
 
-W Ww www KH HH HF HR
-OVO JO 0 WhO V0 VV Un = F&F = WwWwWwHMP O
+W W W Wwwwh N H H 2 e e
+O U1 W Ww RO 0V VYV WU & W WwH RO
 
-=
-OO Ww
+= =
+O W
  
+
+ 
 
  
 
 A)
-
-=)
  
 
  
 
-«)
+oy
 
 PARAMETRIC SURVEY OF THE EFFECTS OF MAJOR PARAMETERS
-ON THE DESIGN OF FUEL-TO-INERT-SALT HEAT
+| ON THE DESIGN OF FUEL-TO-INERT-SALT HEAT
 EXCHANGERS FOR MOLTEN SALT REACTORS
 
 A. P. Fraas and M. E. LaVerne
@@ -164,56 +190,60 @@ carrying out such analyses together with the results of a
 parametric study showing the effects of tube diameter, fuel
 pressure drop, inert salt pressure drop, and the temperature
 difference between the fuel and the inert salt with either
-NaBFy or Flinak as the fluid in the intermediate heat trans-
-port system, An unusual design for a 2200 Mw(t), 100 Mw(e)
+NaBF, or Flinak as the fluid in the intermediate heat trans-
+port system An unusual design for a 2200 Mw(t), 100 Mw(e)
 power plant? was used as the reference design for the de-
 tailed calculations of the parametric study presented in
-this report.
+thls report.
 
 INTRODUCTION
 
-In response to a request from R. B. Briggs of this Laboratory,
-
+In response to & request from.R.'B.'Briggs of this Laboratory,
 A. P. Fraas worked out a conceptual design for a molten-salt breeder
-reactor in which the heat exchangers and the pumps were enclosed with
-
-the reactor in a single pressure vessel.’ This design approach was
-
+reactor in which the heat exchangers and the pumps were‘enclosed with
+the reactor in a single pressure vessel.® This design'approach was
 taken in part to minimize the fuel inventory in the system and in part
+to avoid difficulties with'thermal stresses and possible thermal stress
+cracking that might be. caused by differential expansion in connectlng
+plplng Extremely dlfflcult problems arise in plplng systems in whlch the
+pipe length-diameter ratlo is too low to give good flex1bility for accom-
 
-to avoid difficulties with thermal stresses and possible thermal stress
-cracking that might be caused by differential expansion in connecting
-piping. Extremely difficult problems arise in piping systems in which the
-ripe length-diameter ratio is too low to give good flexibility for accom-
-modation of the differential thermal expansion between the hot and cold
-portions of the system. This is particularly so because the system must
-also be designed to withstand a severe earthquake.
+modation of the dlfferentlal thermal expansion between the hot and cold
 
-When the report describing the integrated reactor-heat exchanger de-
-sign was circulated in rough draft form, quite a number of people raised
-questions with regard to the effects on fuel inventory of changes in the
-major design parameters. The analysis presented in the following section
+'portlons of the system ThlS 1s partlcularly 80 because the system must
 
-was therefore carried out to answer these questions. Inasmuch as the
+also be de31gned to w1thstand a severe earthquake.
+
+'When the report descrlblng the 1ntegrated reactor-heat exchanger de-
+
+'s1gn was 01rculated 1n rough draft form, quite a number of people raised
+
+questlons with regard to ‘the effects on fuel inventory of changes in the
+
+major des1gn parameters. The analys1s presented in the following section
+
+- was therefore carrled out to answer these questions. Inasmuch as the
  
+
+2
 
 calculational technique and computer program have general application, it
 
 seemed desirable to present the study in this report.
 SUMMARY
 
-An analysis has been made of the performance of fuel-to-inert-salt
-heat exchangers for the MSBER. - Employing this analysis, a parametric study
+An anaslysis has been made of the performance of fuel-to-inert-salt
+heat exchangers for the MSER. - Employing this analysis, a parametric study
 has been made of the effects on the heat exchanger design of changes in the
 input parameters of major interest. The result is to clarify the effects
-of the various trade-offs that can be made in attempts to optimize the sys-
-tem design. Table 1 is a concise summary of the principal results of the:
+of the various trade-offs that can be médé in attempts to optimize the sys-
+tem design. Table 1 is a concise summary of the principal results of the
 
 parametric study.
 
-Table 1. Summary of Effects of Changes in Major
+Table 1. -Summary.of:Effects of Changes in Major
 Parameters on Number of Tubes, Tube Length,
-and Heat Exchanger Fuel Inventory
+and Heet Exchanger Fuel Inventory
 
  
 
@@ -225,27 +255,27 @@ Parameter and Change
 
  
 
-Number of Tube Fuel
+Number of Tube ;Fuel
 Tubes Length Inventory
-Tube OD +40 -20 -25
+Tube OD ‘ , +40 =20 -25
 3/8 to 5/16 in.
-Fuel ap(ap_) -5 -10 -30
+Fuel ap(ap,_) -5 -10 -30
 100 to 280 psi
-Salt Ap(ap,) -25 +25 420
-100 to 280 psi
-Salt . =10 : -10 -20
-. . NaBF, to Flinsk
+Salt 4p(ap,) -25 +25 © 420
+100 to 250 psi
+Salt - . =10 : -10 ~20
+ NaBF, to Flinak
 Temperature difference (AT)
 100 to 125°F -10 -15 -25
-100 to 150°F -15 =30 -4o
+100 to 150°F ~-15 =30 -40
 
  
 
 Minimization of the heat exchanger fuel inventory is highly desirable.
 As can be seen from Table 1, the fuel inventory can be reduced by decreas-
 ing the tube size, increasing the.fuel pressure drop, changing the inert
-salt from NaBF, to Flinak, and by increasing the temperature difference
-between the fuel and inert salt. Note that, in contrast with the effect
+salt from NaEF, to Flinak, and by increasing the temperature difference
+between the fuel and inert salt. Note that, in contrast with thé effect
 
 of the fuel pressure drop, the fuel inventory is increased by an increase
 
@@ -253,60 +283,64 @@ of the fuel pressure drop, the fuel inventory is increased by an increase
 
 <)
 
-«)
+<}
  
 
- 
-
- 
-
-*”
+#t
 
 a}
 
-o)
+o}
 
-Cay
+&y
 
 in the inert salt pressure drop. From the table, one can deduce that, if
 all the parameter changes producing reductions were employed, a reduction
 in heat exchanger fuel inventory of as much as 62% could be obtained over
 the reference design conditions. For the full-scale 1000 Mw(e) reactor
-system described in Ref. 1, this would mean a reduction in total system
-fuel inventory from approximately 1185 ft to approximately 871 ft3 for
-NaBF, and from about 1095 ft to about 825 ft3 for Flinak.
+system described in Ref, 1, this would mean a reduction in total system
+fuel inventory from approximately 1185 ft3 to approximately 871 ft3 for
+NaBF; and from about 1095 ft> to about 825 ft for Flinak.
 
 Fabrication costs for a tube bundle will depend primarily on the num-
-ber of tubes in the bundle, because this determines the number of header
-welds required. Material costs will vary with tube length and the total
-tube cross-sectional area. For the same set of parameter changes employed
+
+ber of tubes in the bundle;'because this determines the number of header
+
+- welds required. Material costs will vary with tube length and the total
+
+tube cross~sectionallarear For the same set of parameter changes employed
 above with respect to fuel inventory, one finds virtually no change in
+
 the number of tubes and, thus, essentially an unchanged fabrication cost.
-Tube length, from Table 1, is reduced by a factor of approximately 0.45.
-The smaller tube cross-sectional area contributes a further factor of 0.68,
-for an overall reduction factor of about 0.3, that is, a reduction in mate-
-rial weight of nearly 70%.
+Tube'length,'from Table 1, is,reduced‘by a factor of approximately O.45.
+The smaller tube'cross-sectional area contributes a further factor of 0.68,
+for an overall reduction_factor of about 0.3, that is, a reduction in mate-
+rial weight of nearly 70%. | -
 
 A substantial fraction of the above savings is predicated on the
 ability to increase the temperature difference between the fuel and inert
-salt from 100 to 150°F. Experience gained in the ANP Program with thermal
+salt from 100 to 150°F; Experience gained in the ANP Program with thermal
 stresses indicated that it is not difficult to assure a high degree of
-religbility and freedom from difficulties with thermal stresses if the
+reliability and freedom from difficulties with thermal stresses if the
 temperature difference between the two fluid circuits does not exceed 100°F.
-However, with careful design it seems likely that the temperature differ-
-ence might be increased to as much as 150°F without deleterious effects
-provided that both a thorough analysis and near full-scale tests could be
+However, with careful design it seems likely thet the temperature differ-
 
-carried out.
+‘ence might be increased to]asrmuch as 150°F without deleterious effects
 
-As can be shown from the equations in the analysis of this report for
-a given system and fluid temperature rise, the pumping power in either
+provided that both”sfthorough"analysis_and near full-scsle'tests could be
+
+~carried out.
+
+As can be shown from the equatlons in the analysis of this report for
+
+8 given system and fluid temperature rise, the pumping power in either
+
 fluid circuit depends only on the salt properties and the pressure drop in
-that circuit, being linear in the pressure drop. Thus, for a given fuel
 
+dthat circuit being linear in the pressure drop. Thus, for a given fuel
 and inert salt combination, the pumping power can be reduced only by reduc-
 
-) ing the pressure drop. For a given fuel and set of specified operating
+" ing the pressure drop For a given fuel and set of specified operating
 
 conditions, the pumping power can be reduced 10 to 20% by using Flinak in
  
@@ -323,58 +357,57 @@ The analysis presented in this section is predicated on the use of
 smooth, round tubes on an equilateral triangular pitch with axial fluid
 flow outside the tubes. Conventional, well-established relationships
 were used for the various heat balance, convective heat transfer, and
-pressure drop equations employed. (Recent experiments with molten salt
+pressﬁre drop equations employed. (Recent experiments with molten salt
 favor reducing the heat transfer coefficients about 15% from the values
 
 used here.)
 
 Design Bases and Criteria
 
-The analysis and parametric study presented in this report were
-carried out on the basis of a U-tube heat exchanger tube bundle having
+ 
 
+The analysis and parametric study presented in this report were
+carried out on the basis of a U-tube heet exchanger tube bundle having
 the tubes in an equilateral triangular pattern with the fuel salt flowing
 axially on the shell side and the inert salt (in the secondary circuit)
 in counterflow on the tube side as described in Ref. 1. A cross section
 of the exchanger configuration envisaged is shown in Fig. 1. However, as
 will be seen subsequently, the analysis is by no means limited to the
-particular configuration and conditions treated here but is applicable to
-a much wider range of problems.
+particular configuration and conditions treated here but is applicablé to
+a much wider range of problems. | |
 
 The tubes were placed on an equilateral triangular pitch, rather
 than a square pitch, in order to increase the thickness of the fluid
 stream in the region between adjacent tubes because data from ANP heat
 exchanger tests had indicated that thin fluid ligaments between tubes
-lead to flow stratification and a loss in heat transfer performance. This
-effect was deduced from the curves in Figs. 2 and 3, which were obtained
-with ANP heat exchangers.?®
+'lead to flow stratification and a loss in heat transfer performance. This
+effect was deduced from the curves in'Figs. 2 and 3, which were obtained
+with ANP heat exchangers.®
 
-The tube spacems, consisting of "combs" of flattened wire, employed
+‘The tube spacers, consisting of "oombs" of flattened wire, employed
 in the ANP heat exchangers could be used with the equilateral triangular
-spacing considered here. That approach would yield an increase in pres-
+spacing considered hefe. That approach would yield &n increase in pres-
 sure drop by a factor of about 1.5 over that for the ideal case with no
 
 spacers. It seems likely that spiral wire spacers would lead to an
 
-an
+‘R
  
+
+ 
+
+ 
+
+®©
+
+#)
+
+-
 
  
 
 RNL DWG T1-9163
-TT
-
-of
-
- 
-
-r
-
-0
-
-”
-
-o
+) i ’
 
  
 
@@ -384,200 +417,225 @@ o
 
  
 
-5
+ 
 
-) \\ 41 es
+ 
 
-x Fig. 1. Tube Bundle for One of the Six Fuel-to-Inert Salt Heat Ex-
-\ j changers Employed in Parallel in the Conceptual Design of Ref. 1 for a
+ 
 
-2200 Mw(t) Reactor.
+" Fig. 1. Tube Bundle for One of the Six Fuel-to-Inert Salt Heat Ex-
+changers Employed in Pa.ra.llel in the Conceptual Design of Ref. 1 for a
+2200 Mw(t) Reactor. |
  
 
  
 
+ORNL-LR-DWG 42878
+100 ,
+
+4 MIXTUR
+
  
 
-ORNL-LR-DWG 42878
+Npgy WNpr) 420,023 (Nge)
 
-100
+ 
 
-Nwu/(Npr) 4
+Nwu/(Npr)®4
 
 TA EXTERNAL
 
  
 
-100 1000 10,000
+10,000
 
-Fig. 2. The Heat-Transfer Characteristics of a Molten Salt When
+Fig. 2. The Heat-Transfer Characteristics of a Molten Sa.lt When
 Flowing Inside Round Tubes (Yarosh, Ref. 2).
 
-ORNL—LR-DOWG 42860
+ORNL—LR-DWG 42860
 100
+ORNL 1 = { IHE-8
+ORNL { SHE-2 B2 IHE-8
+OPE{ SHE 2
+APE {1 SHE 7
+APE 2 SHE7T
+OORNL{ TYPE
+e ORNL { IHE-3
 
-ORNL 1 - 1 IHE-8
-ORNL { SHE-2 82 IHE-8
-OPE { SHE 2
-APE) SHE 7
-APE 2 SHE 7
-OORNL 1 TYPE
-SORNL 1 IHE-3
-0 ORNL 2 IHE-3
-10l-e 4 (LEG 1) IHE-3
-B2 (LEG 2) IHE-3
+o ORNL 2 IHE-3
+10
 
-(Ny /Npr)
+B4 (LEG 1) IHE-3
+B2 2) IHE-3
+
+(Nnu/Npr)OA
 
  
 
-100 1000 0,000
+100 » 1000
 Nre
 
-Fig. 3. The Heat-Transfer Characteristics of a Molten Salt Flowing
-on the Shell Side of Twelve Different Z-Tube Heat Exchangers Tested in
+0,000
+
+Fig. 3. The Heat-Transfer Characteristies of a Molten Salt Flowing
+
+on the Shell Side of Twelve Different Z-Tube Heat Excha.ngers Tested in
 Six Different Systems (Yarosh, Ref. 2).
  
 
- 
+»
 
- 
+o
 
-”
+)
 
 «}
 
-«
+a)
 
-«)
+7
 
-a}
-
-increase in pressure drop somewhat less than this and they might also have
+increase in pressure dfbp Somewhat less than this and they might also have
 a somewhat more favorable effect on the heat transfer coefficient, but no
-clear-cut data are available, A definitive answer to these questions would
+clear-cut data are available, A definitive ansﬁer to these guestions would
 require testing of the exact geometry of the heat exchanger matrix contem-
-plated.
+plated. | | |
 
-Similarly, the effects of various types of surface roughness designed
-to increase the heat transfer coefficient, in fact, are very difficult to
-predict and will also require tests of the exact geometry contemplated in
-order to determine the extent to which the heat transfer coefficient is
-improved at the expense of an increase in pressure drop. Because it ap-
+Similarly, the effects of varlous types of surface roughness designed
+to increase the heat transfer coefficiEnt,.in.fabt, aréfvery-difficult to
+predict and will also require tests of the éXact geometry contemplated in
+order to determine the extént to which the heat trahsfer coefficient is
+improved at the expense of an increase in préssure drop. Because it ap-
 pears that surface roughness frequently has not paid important dividends
 for cases of the type of interest here, and because of the uncertainties
-involved, it was decided to conduct the analysis assuming bare, smooth
-tubes with no allowances for spacers. Inclusion of the latter would in-
-crease the fuel pressure drop by around 30 to 50%, but should also in-
-crease the heat transfer coefficient somewhat go that, with an equilateral
-triangular tube pattern, the shell-side heat transfer coefficient might
-well be higher than for the corresponding circular passages inside the
+involved, it was decided to conduct the analysis assuﬁing bare, smooth
+
+tubes with no allowances for spacers, Incluéion'of:the latter would in-
+
+_créase the fuel pressure drop by around 30 to 50%, but should also in-
+
+crease the heat transfer coefficient somewhat so that, with an equilateral
+
+triangular tube pattern, the_éhélléside.heat transfer coefficient might
+
+- well be higher than for-the.corfesponding circular passages inside the
 
 round tubes.
-
-Derivation of Heat Exchanger Equations
+Derivatioh bf ﬁeat Exchanger Equations
 
 We assume that the heat exchanger tube bundle is composed of round,
-smooth tubes with axial fluid flow outside the tubes. We neglect entrance
-effects and the shell-side pressure drop associated with the tube spacers.
+smooth tubes with axial flgid flow outside the tubes. We neglect entrance
+effects and the shell-Side?ﬁressure drop associated with the,tube spacers.
 
-Nomenclature for the analysis is given in Table 2,
+Nomenclature for the analyéis[is given'in Table 2.
 
-.Heat Balances
+,Heat Balanﬁes
 
-The axial heat transport is given in terms of the mass flows, fluid
+ The axial heat transport is given in terms of thé)maés flows, fluid
 
-temperature changes, and exchanger geometry by
+temperature changes,'and'exéhangér geometry by
 
-Q-= ICI (1)
+g_é-GSAscpsaTS | | - (1)
 
-and
- 
-
-Table 2. Nomenclature
+| and
+Table 2. Nomenclature
 
  
 
  
+
+R Q H o
+
+ 
+
+P
 
 Symbol Meaning Units
-A Axial flow area £2
-C, Specific heat Btu/lb ‘°F
-D Diameter ft
-f Blasius friction factor
-G Mass velocity | 1b /hr-£t2
-8a Dimensional conversion constant 1byft/1bse hr?
-(4.170 x 108)
-h Heat transfer coefficient Btu/hr: ft2- F
-k Thermal conductivity Btu/hr. ft F
-L Tube length ft
+A Axial flow area ft2 |
+Cp Specific heat | ' Btu/lbm'F
+Diameter . _ ft
+Blasius friction factor o )
+Mass velocity | lb:m/hr'ft2
+o Dimensional conversion constant .lbmft/lbf'hr2
+| (4.170 x 108)
+h  Heat transfer coefficient _Btu/hr-ftz-F
+k Thermal conductivity Btu/hr- £t.F
+L Tube length £t
 N Number of tubes
-AP Pressure difference Ib, /£t?
-Q Heat transfer rate Btu/hr
-5S; — Ss Shell-side coefficients and exponents
-Ty - Ts Tube -side coefficients and exponents
-AT Film temperature difference F degrees
-8T Fluid axial temperature difference F degrees
+AP Pressure difference l'bf/ft2
+Q Heat transfer rate 7 Btu/hr
+Sy — S5 Shell-side coefficients and exponents -
+Ti - Ts Tube -side coefficients‘and'exponents
+AT | Film temperaturé difference ' F degrees
+&T Fluid axial temperature difference F degrees
 t Thickness ft
-i Viscosity 1b /nr- ft
-p Density 1p /ft>
-Subscripts
+i Viscosity lbm/hr- ft
+Density lbm/ft3
+Subscripts |
 m Mean
-0 Outside
-s Shell side
+o Outside
+8 Shell side
 t Tube side
-w Tube wall
+W Tube wall
 
  
  
+
+ 
 
  
 
 2
-Q.= G,7DZNC_ Ty (2)
-
-”
+Q= GMDtNC 0Ty - (2)
 
 The radial heat transport by convection and conduction through the
 
-©”
+)
 
 two fluid films and the tube wall, respectively, is given by
 
-Q = h 7D LNAT (3)
-Q = h,mD LNAT, , (4)
+Q = n 0 e | e
+Q = b wD LNAT, , | (4)
 and
-Co oq -= k TD INT, /t_ . (5)
+C - = kwTrDmen/tu : (5)
 
 Convective Heat Transfer -
 
+ 
+
 The convective heat transfer relations employed here are those of
-Sieder and Tate? for laminar flow, and Colburn* for turbulent flow. Both
+Sieder and Tate? for laminar flow, and Colburn“ for turbulent flow. Both
 relations may be expressed in the form given by Eqs. 6 and 7, where the
 
 several coefficients and exponents are determined from Table 3 according
 
-©
+-
 
 to the flow regime,
 
+3
+2ol o (s (e} o
+
+-}
+
  
 
-- /3
-: ie’ BN oz a oe )? FG) e) (6)
-Ss
-h D -T5 Ts Fe) ‘
-BoE Er Eo
+B
 
-Temperature Difference Seisesn Fluids
+i
+s
 
-. The overall temperature difference, AT, between the two fluids is
-given by the summation of the temperature differences through the two
-fluid films and the tube wall,
+B Tlc_vz EreE” o
 
-«
+Temperature Difference BetWeen Fluids'
 
-£7 = 8, + AT + AT, (8)
+~ The overall temperature difference, AT between the two fluids is
+~glven by the summation of the temperature differences through the two
+fluid films and the tube wall
+
+“
+
+AT--_-.ATS "'_ATW +ATt . | (8)
 
 a)
  
@@ -585,7 +643,7 @@ a)
 10
 
 Table 3. Coefficients and Exponents Used in Convective
-Beat Transfer and Friction Factor Equations
+Heat Transfer and Friction Factor Equations
 
  
 
@@ -593,111 +651,107 @@ Beat Transfer and Friction Factor Equations
 
  
 
-Sy So Ss S. Ss
-Outside tubes
+Sy S Ss S, S5
+Qutside tubes
 (shell side)
 Laminar flow 4/2/10 1/3 1/3 64 1
-Turbulent flow 0.032 0 4/5 0.256 1/5
-Ty Ts, Ts T, Ts
+Purbulent flow 0.032 0 4[5 0.256 1/5
+Ty Ts Ty T, Ts
 Inside tubes
 (tube side)
 Laminar flow 4/3/10 1/3 1/3 64 1
-Turbulent flow 0.023 0 4/5 0.184 1/5
+Turbulent flow 0.023 0 4[5 0.18  1/5
 
  
 
-Note: The coefficient S, for turbulent flow is obtained from
-Ref. 5,
+Note: The coefficient Sy for turbulent flow is obtained from
+Ref., 5,
 
 Pressure Drops
 The pressure drop on the shell side is given by the Blasius relation,
 
-IL G2?
+L @2
 
-AP =f mm —— (9a)
-s sD 2g pg
+P = f e —— (9a)
+s sDS 2gcos
 
 where the friction factor is defined, in terms of the shell-side Reynolds
+
+(%Ds)fss
+£ = S, o . | - (9b)
+
+Similerly, the tube-side pressure drop is determined from
 
 number, by
 
  
 
-(=)
-f= 5, o . (9b)
-
-8
-
-Similarly, the tube-side pressure drop is determined from
-
-L a2
-AP, = f =— —— (10a)
-t tD, 2g pry
+L Gi
+AP, = f o= =2 (10a)
+t tD, 2g o,
 
 and
-»
+ 
 
  
 
- 
+ot
 
- 
+s
 
- 
+"}
 
-.
-
- 
+-
 
 11
 
-D,\-T
-£, = ne (10b)
-Me
+D, -T5
+£, m(ﬂ t b | (10b)
+™ |
 
 The coefficients and exponents appearing in the expressions for the fric-
 
-tion factors also are determined from Table 2 according to the flow regime.
+tion factors also are determined from Table 2 according to the flow regime,
 
 Shell -Side Equivalent Diameter
 
 The equivalent diameter of the shell-side flow passage is determined
-from the definition,
-
-D = — (11)
-
-Solution of the Equations
+from the definition, |
+D = —= S (11)
+ Solution of the Equations
 
 Let us take as input parameters (independent variables) the total heat
 
-| transport, the pressure drops on the shell and tube-sides, the tube size,
+. transport ‘the pressure drops on the ‘shell and tube-sides, the tube size,
 
-the temperature changes in the two fluid streams, and the overall tempera-
-ture difference between the fluids, Then, the foregoing set of 11 equa-
+the temperature phanges\in the,two fluid streams, and the overall_tempera-
+ture difference between_the'fiuids.- Then5,the foregoing set of 11 equa-
 tions is just sufficient to determine the two mass flows, the equivalent
-diameter and flow area on the shell side, the overall length and number of
+diameter and flow area on the .shell side, the overall length and number of
+
 tubes in the bundle, the three transverse temperature differences, and the
 
-two heat transfer coefficients, 11 dependent variables in all.
+‘two heat transfer eoefficients,_ll dependent variables in all.
 
-Reduction to a Single Equation
+' _Reduction to a Single Equation'
 
-Let us now eliminate the friction factors between Eqs. 9a and 9b and
-between Eqs. 10a and 10b. Rewriting the remaining equations with only
+| Let us now eliminate the friction factors between Eqs. 9a and 9b and
 
-known quantities on their right hand sides then yields
+_,Vbetween Eqs. 10a and lOb Rewriting the remaining equstions with only
+known quantities on thelr right hand sides then ylelds
 
  
 
-Chg = C1 = To7 > (12)
-ps Ss
+S Q
+Ghy = O =57 - (12)
 
-: (13)
+ps 8
+L e Q : S ( )
+GN=Cp = — (3
 
-GN = Cp = —m , 13
-t Tp2c sr
+t In2c_, st
 
-4t ptt
+4t pt Tt
  
 
  
@@ -706,100 +760,100 @@ t Tp2c sr
 
  
 
+_ Q
+hSLNATS =C3 = ?ﬁ; » (14)
 Q
-h LNAT = Cj; = m5 (14)
-Q
-bh, LNAT, = C, = 7; , (15)
-Qt,
-INAT = C5 = —=—=—, (16)
-mw
-n pr527531825753 go sc K2 3,2 1/3-8; (17)
-ss s pss
-Ty Ts _ 2 1/3 1/3-T5 -1+T,+T5
-h L°%G, "2 = = Ty i\ Corks We D, , (18)
-AT + AT + AT = Cg = AT, (19)
-“He Ry 28 p AP
-a2-Ssp 1-55, = <8 5 (20)
-|] S Ss
-4Hg
-2-7 2,0, AP, D2
-Gy °L = Cy = 5 (21)
-Tah,
+h, INAT, = C, =~;ﬁ; ’ (15)
+Qt |
+me=cs=ka, ,, - (16)
+mw .
+n pt-52-83182-53 ¢ (c k2)1/3 1/3- G 1)
+578 s 6 ps s ?
+h L7263 = Cq = T{(C kz)l/ 3,1/3-T3-14T5+T; (18)
+£ pt t % t I
+ATS+ATW+ATt=o_3=AT, (19)
+o 1o 2g p AP
+6> Ssp7 1S5y, o g = —SE & (20)
+s ' S5 :
+S4b
+2-T 28 0, AP D2
+Gy °L=Cyo = ) (21)
+t | -
+4ty
 and
--1.-1 _ _ I ’
-AND =Cy=7D . (22)
+-1.-1 _ T | L |
+AN D~ =Ca=7D . (22)
 
-The coefficients C, through Cy; are defined by the groupings of input
+The coefficients C; through C;; are defined by the groupings of input
 parameters appearing on the extreme right of each multiple equation.
-We now reduce the above set of 11 equations to the following single
+We now reduce the above set of 1] equations to the following single
 equation in tube-side mass flow,
 E
 
 E E
-Gt + C20G, 2 + CG,” = Cg =0. (23)
+th + C20Gt2 + CZlG‘bB —Co=0. _ (23)
  
 
  
 
  
 
- 
+¥
 
-9
+)
 
-~N
-
-Lil
+=)
 
 13
 
-The coefficients and exponents appearing in Eg. 23 are, in general, rather
+- The coefficients and exponents appearing in Eq. 23 are, in general, rather
 
 complex combinations of the coefficients Cy through Cy; and the various
-coefficients and exponents obtained from Table 3, Details of the elimina-
-tion process will not be presented here but are available in Appendix A.
+coefficients and eprnegts obtained from Table 3, Details of the elimina-
+tion process will not bérpresented'here but are availgble in Appendix A.
 
 Equation 23 may be solved for the tube-side mass flow rate by an
-iterative process, following which the remaining dependent variables may
-be determined by a series of back-substitutions.
+iterative process,ffollowing-which the remaining dependent variables may
+be determined by a series of back-substitutions. | 7 B
 
-In any iterative process, the speed of convergence, in fact, perhaps
-convergence at all, depends on having a good first estimate of the value
-of the variable being sought. Fmpirically, the following equation was
-found to give a good initial estimate for the value of the tube-side mass
+In any iterative prdcess, the speed 6f‘convergence, in fact, perhaps
+convergence at all, dependS'on_having a good firét estimate of the value
+of the variable being soUght. Empifically;'the-followingrequation,was
+found to give a good initial estimate for the yalue’of_the tube-side mass
 
 flow rate.
 
 1/E,
 
-| Cro
-Gy = 0.9 C20 + Cox (24)
+o= odemrem] -
 
-Equation 24 was tested on a wide variety of input parameters and, in most
-cases, gave an initial value for the tube side flow within 2% of the final
+Equation 24 ﬁas'tested on a wide variety of-input parameters and, in most
 
-iterated value.
+. cases, gave an initial value_for_the tubefside flowAwithin-2% of the final
+
+'iterated value.
 
 Computer Solution
 
 Because of the obvious tedium, and the attendant error-proneness,
 
-“involved in any sort of desk calculator solution of the above equations,
+~involved in any sort of desk calculator solution of the above equations,
 
-a FORTRAN program was prepared for use on the Call-A-Computer (cac) time-
+a FORTRAN program was prepared for use on the Call-A-Computer (CAC) time-
 
-_ sharing system, Details of the program operation may be found in the
+. sharing syStem.__Details_ofgthe program operation may be found in the
 
-appendices. In particular, a. computer-prepared printout of the complete
-program is presented in Appendix B. Appendix C contains samples of pro-
+appendices. In,particﬁlar,_a,chPUter-prepared printout of the complete
 
-gram input and output, together with instructions for use of the program.
+program is presented in Appendix B, Appendix C contains samples of pro-
 
-Extensions of the Analysis
+gram input'and output,'togeﬁhgrrwith instructions for uSé'Of the programQ
 
-~ Although the parametric study presented later in this report assumes
+o  Exte£§ions of the.Analysié_
 
-“an equilateral triangular tube pattern and fused salts in counterflow with
+'-'Although the parametfic;étudy:presentedjlater'in this-repbrt aSéumes
+
+© an equilateral triangular tube pattern and fused salts in counterflow with
 
 equal temperature changes in the two streams, the basic analysis is not,
 in fact, so limited, as will be shown below.
@@ -807,54 +861,55 @@ in fact, so limited, as will be shown below.
 
 14
 
-Other Fluids
+6ther Fluids
 
-Equations 6 and 7 for the convective heat transfer coefficients,
+Equations 6 and 7 for the convective heat transfer.coefficients,
 although applied in the parametric study only to fused salts, are actually
 applicable to any fluid having a relatively high Prandtl number, For
 liquids of very low Prandtl number, such as liquid metals, Eqs. 6 and 7
-must be modified. For example, one could employ the Lubarsky-Kaufman re-
+must be modified, For example, one could employ the Lubarsky-Kaufman re-
 lation® for the Nusselt number in turbulent flow and the theoretical value
-of 4.36 in laminar flow. These changes involve only redefining the expo-
-nent on the Prandtl number in Eqs. 6 and 7 to be a varieble rather than
+of 4.36 in laminar flow.  These changes involve only redefining the expo-
+
+nent on the Prandtl number in Egs. 6 and 7 to be a variasble rather than
 the present constant and extending Table 3.
 
-Tube Patterns
+‘Tube Patterns
 
 The basic equations, 1 though 11, contain no reference to tube pat-
 tern, per se. The implication is that, for a given set of input parameters,
 - the same solution set of dependent variables would be obtained for an
-equilateral triangular pattern as for, say, a square pattern, This, of
+equilateral triangular pattern as for, say, a square pattern. This, of
 course, involves the implicit assumption that the latter spacing is not
-such as to result in the performance deterioration observed in Figs. 1
-and 2. oo
+such as to result in the performance deterioration dbserved in Figs. 1
+and 2. S
 
 In order to determine tube spacing, one must employ an auxiliary rela-
-tion such as Eq. 25, |
+tion such as Eq. 25,
 
-A = N(/3s2/2 ~ mD2/4) (25)
+A, = N(/352/2 — 1D2/4) - (25)
 
 which defines the tube spacing in terms of the shell-side flow area, the
-number of tubes, and the tube OD for an equilateral trianguler pattern.
+number of tubes, and the tube OD for an equilateral triangular pattern.
 
 Other Conditions
 
 Although applied in the parametric study only to a counterflow heat
-exchanger with equal temperature changes in the two streams, the present
-.analysis may be extended readily, both to parallel flow and to counterflow
-with unequal temperature changes, by the simple device of properly defin-
-ing the overall temperature difference, The appropriate quantity is the
+exchanger with equal temperature -changes in the two streams,_the present
 
-log mean temperature difference (IMTD), defined by’
+.analysis may be extended readily, both to parallel flow and to counterflow
+
+ with unequal temperature changes, by the simple device of properly defin-
+
+”ing the overall temperature difference. The appropriate quantity is the
+log mean temperature difference (IMTD), defined by~
  
 
 -
 
 »
 
-«}
-
-o
+)
 
 o)
 
@@ -862,45 +917,50 @@ o)
 
 GTD — LTD
 
-GTD
-log 1mm
+IMTD = ——————— (26)
+' log ——== GTD
 
-IMTD = (26)
+eLTD
 
 where GTD is the greater and LTD is the lesser of the two terminal tem-
 perature differences between the two streams. When the two temperature
 differences are equal, the IMTD becomes indeterminate and must be taken
-as equal to either of the two temperature differences, The existing com-
+as equal to either of the two temperature differences, The existing com~
 
 puter program uses these definitions.
 
 PARAMETRIC STUDY
 
 In this study, the U-tube configuration of Fig. 1 was employed, with
-the fuel salt flowing axially around the tubes on the shell side and with
-the inert salt in counterflow inside the tubes. The heat load was kept
+the fuel salt flowing axially sround the tubes on the shell side and with
+the inert salt in counterflow inside the tubes. The heat.load was kept
 fixed and equal to that for one of the six heat exchangers for a 2200
-Mw (t) reference design reactor. The tube wall material was taken to be
-INCO 800 and the fuel employed was the lithium-beryllium-thorium-uranium
-fuel salt in current use for reference design purposes at the time of
+Mw (t) reference design reactor.l The tube wall material was taken to be
+INCO 800 and the fuelxemployed was the lithium-beryllium-thorium-uranium
+
+- fuel salt in current use for reference design purposes at the time of
+
 writing. Two different inert salts, NaBF, and Flinak, were used in the
-secondary circuit. The physical properties of the materials used were
-taken from Refs. 7 and 8 as tabulated in Table 4. The temperature rise in
+secondary circuit. The. physical properties of the materials used were
+taken from Refs. 7 and 8 as tabulated in Table 4 The temperature rise in
 the inert salt and the temperature drop in the fuel in traversing the heat
-exchanger were kept constant at 250°F.
+exchanger were kept constant at 250°F
 
 With a temperature difference between the two fluid streams of 100°F,
-the heat exchanger characteristics were calculated for each of the two
+the heat exchanger characteristics were calculsted for each of the two
+
 inert salts, using all combinations of three different shell side pressure
-drops, three different tube side pressure drops, and two different tube
-diameters. The results are given in Table 5. For one of the tube sizes,
+
+_drops three different tube side pressure drops, and two different tube
+
+dismeters. The results are given in Table 5. For one of the tube sizes,
 
 the effects of changing the temperature difference between the fluid
 
-“streams to 125 and 150°F were then investigated for the same set of pres-
+' streams to 125 and 150°F were then investigated for the same set of pres-
+'sure drops and inert salts used previously. Table 6 summarizes the re-
 
-sure drops and inert salts used previously. Table 6 summarizes the re-
-sults from this set of calculations. The Input parameter variations used
+sults from this set of calculations The input parameter variations used
 
 in this study are summarized in Table 7.
  
@@ -908,9 +968,7 @@ in this study are summarized in Table 7.
 16
 
 Table 4. Reference Design Conditions and the Physical
-
 Properties at Design Temperatures
-
 for the Materials Used
 
  
@@ -921,41 +979,36 @@ for the Materials Used
 
  
 
-Fuel temperature in, °F 1300
-Fuel temperature out, °F 1050
-Inert salt in, °F : 950
-Inert salt out, °F 1200
-Tube material INCO 800
-Tube thermal conductivity, Bohr ft-F 11.5
+Fuel temperature in, °F | 1300
+Fuel temperature out, °F | 1050
+Inert salt in, °F : S 950
+Inert salt out, °F 1200 -
+Tube material L INCO 800
+Tube thermal conductivity, Btu/hr<ft-F 11.5
 Tube OD, in. 0.375
-Tube ID, .in. 0.3190
+Tube ID,.in. ' .0.3190
 Fuel pressure drop, psi 100
-Inert salt pressure drop, psi 100
-Physical a ._.b c
-Property | Fluoroborate Flinak Fuel
-Cp 'Btu/1b-F 0.36 0.437 0.325
-p, 1b/hr-ft 1.95 12.6 23.5
-k, Btu/hr-ft-F . 0.266 2.66 0.58
-p> lb/ft? 119.0 132.0 208.0
-Pr : 2.64 2.07 13.1
+Inert salt pressure drop, psi | 100
+Physical‘ a .. . b c
+Property Fluoroborate Flinak Fuel
+Cy» Btu/lb-F 0.36 0.437 0.325
+b, lb/hr-ft 1.95 12.6 = 23.5
+k, Btu/hr-ft-F - 0.266 2.66 0.58
+0, 1b/ft® 119.0 132.0 208.0
 
  
 
-8929, NaEF, + 8% NaF
+%904 NaEF, + 8% NeF
 
-011.5% NaF + 46.5% LiF + 42% KF
+bll.S% NaF + 46.5% LiF + 42% KF
 
-®87% LizBeF, + 129 ThF, + 1% UF,
-17
-
-Teble 5. Effects of Choice of Inert Salt and Tube Diameter on the
-for a Full-Scale Molten Salt Breeder Reactor for a Tempe
+°87% LizBeF, + 124 ThF, + 1% UF,
+Teble 5. Effects of Choice of Inert Salt and Tube Diameter on the
+. for a Full-Scale Molten Salt Breeder Resactor for a Tempe
 
  
 
- 
-
-Tubes
+Tibes
 
  
 
@@ -973,50 +1026,79 @@ Tubes
 
  
 
-Inert Tube - Tube Pressure Drops pa ae | Volumes Bundle
-Salt 0D ID ‘Fuel Salt Diemeter ~~ Cchve¥line Length ' Fuel Salt Tubes  "oionb
-: (in.) (in. ) Spacing Number : 3 3 3 (1b) _6
-, (pst) (psi) (in.) (10. ) (££) (£62) (223)  (£¢3) (20-6 -
-
-NaBF, 0.3125 0.2665 100 100 0.2823 0.4106 4944 31.5 | 74.9 60,3 22.6 34757
-150 -0.3231 0.4244 4219 35.5 | 82.5 58.0 21.7 35598
-200 0.3557 0.4352 3774 38.7 | 88.6 56.6 21.2 36420
-150 100 0. 2466 0.3981 4806 29.9 i 60.4 55.7 20.9 30275
-150 0.2823 0.4106 4095 33.6 © 66.3 53.3 20.0 30754
-200 0.3107 0.4203 3659 36.6 | 71.0 51.9 19.5 31281
-200 100 0.2241 0.3900 4716 28.9 52.1 52.8 19.8 27634
-150 0.2565 0.4016 4015 32.5 © 57.0 50.5 18.9 27911
-200 0.2823 0.4106 3586 35.3, 60.9 49.0 18.4 28276
-0.3750 0.3190 100 100 0.3374 0.4922 3498 40.0 | 96.6 77.7 29.7 45099
-150 0.3862 0.5088 2986 45.2 1106.5 74.8 28.6 46238
-
-200 0.4251 0.5216 2672 49.3 1114. 5 73.1 27.9 47335 .
-150 100 0.2947 0.4773 3403 38.1 78.2 72.0 27.5 39417
-150 0.3374 0.4922 2902 42,9  . 85.9 69.1 26.4 40091
-© 200 0.3714 0.5038 2594 46,7 0 92.1 67.3 25.7 . 40811
-200 100 0.2678 0.4676 3343 36.9 67.5 68.4 26.1 , 36064
-150 0.3065 0.4814 2848 4.5 © 74.0 65.5 25.0 36478
-200 0.3374 0.4922 2544, 45.1 79.2 63.7 24.3 36989
-Flinak 0.3125 0.2665 100 100 0.2899 0.4132 bhhd 28.1 , 6L.7 - 48.4 18.2 28871
-‘150 0.3318 0.4273 3820 32.1 69.4 47.5 17.8 30175
-200 0.3652 0.4383 3434 35.4 | 75.6 47.0 17.6 31291
-150 100 0.2532 0. 4004 4299 26.5 i 49.2 44.1 16.6 24842
-150 0.2899 0.4132 3692 30.2 | 55.1 . 43,2 16.2 25770
-: 200 0.3190 0.4231 3316 33.2: 59.9 42.7 16.0 26584
-200 100 0.2301 0.3921. 4206 25,5 | 42.0 41.5 15.6 22485
-150 0.2634 0. 4040 3609 29.0 47.0 40.6 15.2 23204
-. 200 0.2899 0.4132 3240 31.9 51,0 40.0 15,0 23849
-0.3750 0.3190 100 100 0.3464 0.4953 3153 35.9 80.3 62.9 24.0 37771
-150 0.3966 0.5123 2711 41.1 1 90.4 61.8 23.6 39493
-200 0.4365 0.5253 2437 45,2 198.4 61.2 23.4 40962
-150 100 0.3026 0.4801 3055. 34,0 © 64.2 57.6 22,0 32647
-150 0.3464 0.4953 2624 38.8 72.1 56.4 21.6 33888
-200 0.3813 0.5072 2358 . 42,6 78.4 55.8 21.3 34969
-200 100 0.2750 0.4702 2992 32.7 55.1 54,3 20.8 29644
-150 0.3148 0.4843 2569 37.3 ' 61.6 53.1 20.3 30616
-200 0,3464 0.4953 2307 41.0 66.9 52.4 20,0 31479
-
  
+
+| Mibe - Tube Pressure Drops Fuel Side _ | Volumes Bundle
+Inert op  ID . Equivalent o verline | | Weight
+Salt (in. ) (1n. ) -Fuel Salt  Diameter Spact Number Iength ' Fuel Salt Tubes (1b)
+L ’ ' (pst) (psi) = (in.,) (in ‘;—8 (££)  (£¢3)  (££3)  (£¢2) (20-6 .
+
+RaBF, 0.3125  0,2665 100 100 0.2823 - 0,4106 4944 31.5 | 74.9 60.3° 22.6 - 34757
+- - 150 10,3231 0.4244 4219 35.5 | 82.5 58.0 21.7 35598
+- 200 - 0.3557 0.4352 374 38.7 ! 88.6 56.6 21.2 = 36420
+
+150 100 0. 2466 10.3981 4806 29.9° | 60.4 55.7 20.9 30275
+
+150 - 0,2823 0. 4106 4095 33.6 -1 66,3 53.3 20.0 - 30754
+
+1200 0.3107 0.4203 3659 36.6 l 71.0. 51.9 19.5 31281
+
+200 100 0.2241 0.3900 - 4716 28.9 .} 52.1 52.8 19.8 . 27634
+
+- 150 - 0.2565 0.4016 4015 32.5  57.0 - 50.5 18,9 = 2711
+
+__ 200 0.2823 0,4106 3586 35.3 4 60.9 49,0  18.4 28276
+
+0.3750 0.3190 . 100 100 - 0.3374 - 0.4922 3498 40,0 | 96.6  77.7 2.7 - 45099
+
+. ' 150 0.3862 -~ . 0.5088 2986 45,2 1106.5 7.8  28.6 46238
+- 200  0.4251 . 0,526 . 2672 49,3 {114.5 73.1 27.9 47335 .
+
+150 100 0.2947 0.4773 3403 38,1 - 78,2 72.0 27.5 . 39417
+
+- 150 0.3374 0. 4922 2902 42,9 . 85,9 69.1  26.4 40091
+
+200 0,374 0.5038 2594 46,7 - 92,1 67.3 25.7 . 40811
+
+200 100 - 0.2678 0.4676 . 3343 36.9  67.5 68.4 26,1 . 36064
+
+150 0.3065 0. 4814 2848 41.5 © 74.0 65.5 25.0 36478
+
+‘ 200 ~ 0,3374 0. 4922 2544 45,1 - 79.2  63.7 24,3 36989
+
+Flinak  0.3125 0.2665 100 100 0.2899 0.4132 bddid 28,1 . 61,7 - 48.4 18.2 28871
+' ' : - 150 0.3318 - 0.4273 3820 321 | 69.4 47.5 17.8 30175
+200 0.3652 10,4383 3434 35.4 | 75.6 47.0 17.6 31291
+
+150 100 0,2532 - 0.4004 4299 26.5 | 49.2 @ 44,1 16.6 24842
+
+150 ~ 0.2899 - 0.4132 3692 30,2 . 55.1 . 43,2  16.2 25770
+
+‘ 200 0.3190 0.4231 3316 33,2  59.9 42.7 16.0 . 26584
+
+200 100 0.2301 0.3921. 4206 25,5 1 42,0 - 41.5 15.6 22485
+
+150 = 0,2634 0, 4040 3609 29.0  47.0 40.6 15,2 23204
+
+. 200 0. 2899 0,4132 3240 31,9 51,0 40,0 15,0 23849
+
+0.3750 0.3190 100 100 - 0.3464 0.4953 3153 35.9 . 80.3 62.9 24.0 37771
+
+o ‘150 0. 3966 0.5123 - 2711 41.1  90.4 61.8 23.6 39493
+
+- 200 0.4365 - 0.5253 2437 45.2 1 98.4 61.2 23.4 40962
+
+150 © 100 0.3026 0. 4801 - 3055. 34,0 . 64.2 57.6 22.0 32647
+
+150 - - 0,3464 0.4953 2624 38.8 72.1 56.4 1.6 33888
+
+200 - 0.3813 - 0.5072 2358 42,6 - 78,4 55.8 21,3 34969
+
+200 100 0.2750 ~ 0.4702 2992 32,7 . 55,1 54.3 20.8 29644
+
+150 0.3148 0.4843 2569 37.3 61,6 53.1 20.3 30616
+
+200 Q,3464 0, 4953 2307 41,0 66.9 52.4 20,0 31479
  
 
  
@@ -1039,53 +1121,58 @@ Flinak 0.3125 0.2665 100 100 0.2899 0.4132 bhhd 28.1 , 6L.7 - 48.4 18.2 28871
 
  
 
-. Proportions of a Series of Fuel-to~Inert-Salt Heat Exchengdrs
+ 
 
-rature Change of 100°F in the Fuel and Salt Circuits
+ 
 
-| Mass Flows Flow Velocities Pumping Power Temperature Drops
-
-7 Reynolds Numbers ~
-- ———————— Film Film
-Fuel Salt Ratio Fuel Salt Fuel Salt : Wall ;
-
-X 1b/hr.£t2) (1076 x 1b/hr-£t2)  Salt/Fuel (ft/sec) | (ft/sec) Fuel - Salt (hp) (bp) Poel) (7°) Salley oe
-6.497 7.263 1.1179 8.7 17.0 6504 82720 540 850 47.0 17.7 35.2
-6.652 8.512 1.2797 8.9 19.9 7623 96947 540 1275 49.3 18.4 32.3
-6.757 9.517 1.4084 9.0 22.2 852 108383 540 1700 50.9 18.9 30.3
-7.652 7.473 0.9766 10.2 17.4 6692 85109 811 850 43.5 19.2 37.3
-7.845 8.770 1.1179 10.5 | 20.5 7853 99880 811 1275 45.7 20.0 34.3
-7.976 9.813 1.2304 10.7 22.9 8788 111764 811 1700 47.2 20.6 32.2
-8.582 7.615 0.8873 11.5 17.8. 6819 86722 1081 850 41.0 20,2 38.7
-8.806 . 8.944 1,0157 11.8 20.9 8009 101866 1081 1275 43,2 21.2 35.6
-8.959 10.015 1.1179 12.0 23.4 8968 114058 1081 1700 44.7 21.8 33,5
-6.403 7.166 1.1190 8.6 16.7 © 7661 97683 540 850 45.7 20.0 34.3
-6.553 8.394 . 1, 2809 8.8 19.6 8975 114428 540 1275 47.8 20.8 31.4
-6.654 9,381 1.4099 8.9 21.9 10030 127886 540 1700 49.3 21,3. 29.4
+. Proportions of a Beries of Fuel-to~Inert-Salt Heat Exchangérs
+rature. Change of 100°F in the Fuel and Salt Circuits
+! .
+‘ Mass Flows : Flow Velocities ' Pumping Power Temperature Drops
+’ Reynolds Numbers -
+: ettt Film Fim
+Fuel Salt Ratio Fuel Salt Fuel Salt : Wall ,
+< 1b/hr-£t2) (2076 x 1b/nr-f£t2)  Salt/Fuel  (ft/sec) |. (ft/sec) Fuel - Balt (hp)  (bp) F“ehﬁi)de (F°) Sa%;‘,,gide
+6.497 7.263 1.1179 8.7 17.0 6504 82720 540 850 47.0 17.7 35,2
+6.652 8,512 1.2797 8.9 19.9 7623 96947 540 1275 49.3 18.4 32.3
+6.757 9.517 - 1.4084 9.0 . 22,2 852 108383 540 1700 50.9 18.9 30.3 -
+7.652 7.473 ' 0.9766 10.2 17.4 6692 85109 811 850 43,5 19,2 37.3
+7.845 8.770 1.1179 10.5 . 20.5 7853 99880 811 1275 45,17 20.0 34,3
+7.976 9,813 1.2304 10.7 22.9 8788 111764 811 1700 47.2 20.6 32.2
+8.582 7.615 | 0.8873 11.5 17.8. 6819 86722 1081 850 41.0 20,2 38.7
+8.806 : 8.944 1.0157 1.8 20.9 8009 101866 1081 1275 43.2 21.2 35.6
+8,959 10.015 1,1179 12.0 23.4 8968 114058 1081 1700 bt 7 2.8 33,5
+6.403 7.166 1.1190 8.6 l6.7 766l 97683 540 850 45,7 20.0 34.3
+6.553 8.394 . 1, 2809 8.8 19.6 8975 114428 540 1275 47,8 20,8 31.4
+6.654 9,381 1,4099 8.9 21.9 10030 127886 540 1700 49.3 21.3 29.4
 7.534 7.364 0.9775 10.1 17.2 7874 100396 811 850 42.1 21.6 36.2
-7.719 8.638 1.1190 10.3 20.2 9235 117752 811 1275 bd, 2 22.5 33.2
+7.719 8.638 1.1190 10.3 20.2 9235 117752 811 1275 44, 2 22.5 33.2
 7.845 9.662 1.2316 10.5 22.6 10330 131713 811 1700 45.7 23.1 31.2
-8,443 7.498 0.8882 11.3 17.5 8017 102221 1081 850 39.7 . 22.7 37.6
-8.658 8.802 1.0167 11.6 20.5 9411 119995 1081 1275 41.7 23.7 34.5
-8,804 9.852 1.1190 11.8 23.0 10533 134301 1081 1700 43.2 24.4 32.4
-7.040 6.658 0.9456 9.4 14.0 7237 11734 540 631 55.2 22.1 22.7
-7.155 7.745 1.0824 9.6 16.3 8419 13651 540 947 57.0 22.5 20.5
-7.232 8.616 1,1914 9.7 18.1 9366 15186 540 1263 58.3 22.7 19.0
-8.330 6.881 0.8261 11.1 14.5 7480 12128 811 631 51.5 24.2 24.3
-8.474 8.014 0.9456 11.3 | 16.9 8711 14124 811 947 53.3 24.7 21.9
-8.572 8.921 1,0408 11.4 | 18.8 » 9697 15724 811 1263 54.6 25.1 20.4
-9.371 7.033 0.7505 12.5 14.8 7645 12397 1081 631 48.9 25.7 25.3
-9,541 8.197 0.8591 12.7 17.2 8910 14448 1081 947 50.7 26.4 22.
-9.655 9.130 0.9456 12.9 19.2 9924 16092 1081 1263 51,9 26.7 21.4
-6.918 © 6.548 0.9466 9.2 13.8 8499 13815 540 631 53.3 24.7 22,0
-7.029 7.616 1.0835 9.4 16.0 9885 16068 540 947 55.0 25.2 19.8
-7.103 8.471 1.1926 9.5 17.8 10994 17872 540 1263 56.2 25.4 18.4
-8.173 6.758 0.8269 10.9 14.2 8771 14258 811 631 49.6 27.0 23.4
-8.312 7.868 0.9466 11.1 16.6 10211 16599 811 947 51.3 27.6 21.1
-8.405 8.757 1,0418 11.2 18.4 11365 18475 811 1263 52.5 27.9 19.6
+8.443 7.498 0. 8882 11.3 17.5 8017 102221 1081 850 39.7 22.7 37.6
+8.658 8.802 1.0167 11.6 20.5 9411 119995 1081 1275 41,7 23,7 34.5
+8, 804 9, 852 1,1190 11.8 23.0 10533 134301 1081 1700 43,2 24,4 32.4
+7.040 6.658 . 0.9456 9.4 - 14.0 7237 11734 540 631 55.2 22.1 22.7
+7.155 7. 745 1.0824 9.6 16.3 8419 13651 540 947 57.0 22.5 20.5
+7.232 8.616 1,1914 9.7 18.1 9366 15186 540 1263 58.3 22,7 19,0
+8.330 6. 881 0. 8261 11.1 14.5 7480 12128 811 631 51.5 24,2 24,3
+8.474 8.014 0.9456 11.3 | 16.9 8711 14124 811 947 53.3 . 24.7 21,9
+8.572 8.921 1.0408 11.4 | 18.8 9697 15724 8l1 1263 54.6 25.1 20.4
+9,371 . 7.033 0. 7505 12,5 14.8 7645 12397 1081 631 48.9 25.7 25.3
+9,541 8,197 0. 8591 12.7 17.2 8910 14448 1081 947 50,7 26,4 22.9
+9,655 9.130 0. 9456 12,9 19,2 9924 16092 1081 1263 51,9 26.7 21.4
+6.918 6,548 0. 9466 9.2 13.8 8499 13815 540 631 53.3 24,7 22.0
+7.029 7.616 1.0835 9.4 16.0 9885 16068 540 947 55.0 25.2 15.8
+7.103 - 8.471 1.1926 9.5 17.8 10994 17872 540 1263 56.2 25,4 18.4
+8.173 6.758 ‘ 0. 8269 10.9 14.2 8771 14258 811 631 49,6 27.0 23.4
+8.312 7. 868 : 0. 9466 11.1 16.6 10211 16599 - 811 947 51.3 27.6 21.1
+8.405 8.757 1.0418 11.2 18.4 11365 18475 811 1263 52.5 27.9 19.6
 9.184 6.900 0.7513 12.3 14.5 8956 14558 1081 631 47.0 28.6 24.4
-9,347 8.039 0.8600 12,5 16.9 . 10433 16960 1081 947 48.7 29.3 22.1
-9.457 8.952 0.9466 12.6 ~ 18.8 11618 18886 1081 1263 49.8 29.7 20.5
+9,347 8.039 0. 8600 12,5 16.9 10433 16960 1081 947 48.7 29.3 22.1
+9.457 8.952 : 0, 9466 12.6 ﬁf 18.8 11618 18886 1081 1263 49.8 29,7 20,5
+|
+|
+
+ 
 
  
 
@@ -1107,59 +1194,59 @@ Intermediate Heat Exchangers for a Full-
 
  
 
-Pressure Drops Fuel Side Tubes \ Volumes B :
-’ undle
-AT Inert  —————————  Rquivalent i orline | Weight
-(°F) Salt Fuel Salt Diameter Specin Number Length Fuel Salt Tubes (15) : Fuel
-(pst) (psi) (in.) Un ye (£t) (££3) (£23) (ft?) (1076 x 1b/hr. £2)
-125  NaBF, 100 100 0.2823 0.4106 4456 26.1 56.0 45.1 16.9 25980 7.209
-S150 0.3231 0. 4244 3803 29.4 61.7 43.4 16.3 26630 7.379
-200 0.3557 0.4352 3403 32.1 66.3 42.3 15.9 27258 7.494
-150 100 0.2466 0.3981 4334, 24.8 45.2 41.7 15.6 22666 8. 486
-150 0.2823 0.4106 3694 27.9 49.7 40.0 15.0 . . 23046 8.697
-200 0.3107 0.4203 3302 30.4 53,2 38.9 14.6 23456 . . 8.840
-200 100 0.2241 0.3900 4255 24.0 39.0 39.6 14.8 20713 9.513
-150 0.2565 0.4016 3624. 27.9 42.7 37.9 14.2 20942 9.758
-200 0.2823 0.4106 3237 29. 45.7 36.8 13.8 21230 9.924
-Flinak 100 100 0.2899 0.2132 2012 23. 26.4% 36.4 13.6 21683 7.798
-150 0.3318 0.4273 3449 26. 52.1 35.7 13.4 22673 7.924
-200 0.3652 0. 4383 3101 29. 56.8 35.3 13.3 23517 8. 009
-150 100 0.2352 0. 4004 3885 22.1 37.0 33.2 12.5 18700 9,219
-150 0.2899 0.4132 3336 25.2 41.5 32.5 12.2 19409 9.377 -
-200 0.3190 0.4231 2997 27.7 45.1 32.1 12.1 20028 9.484
-200 100 0.2301 0.3921 3803 21.2 31.7 31.3 11.7 16953 10. 366
-150 0. 2634 0. 4040 3264 24.2 35.5 30.6 11.5 17506 10. 551
-200 0.2899 0.4132 2931 26. 6 38.5 30.2 11.3 17999 10.676
-150  NabF, 100 100 0.2823 0.4106 24095 22.4 44, 2 35.6 13.3 20502 7.845
-150 0.3231 0. 4244 3496 25.3 48.7 34.3 12.8 21029 8.028
+ 
+
+Pressure Drops Fuel Side Tubes ; Volumes Sund’
+_ : r undle
+AT Inert .. Hauvalent . terline ' Weight
+(°F) = salt Fuel  Salt Diameter Spaclin Number  Length  Fuel Salt Tubes (b) Fuel
+- (pei)  (psi) (in.) I(’i‘g )g __  (£t) (££3)  (££3)  (£t3) (10~¢ x 1b/hr. ££2)
+125 NaBF, 100 100 0. 2823 - 0. 4106 4456 26.1 56.0 45,1 16.9 25980 7. 209
+: ' - 150 0.3231 0. 4244 3803 29.4 61.7 43.4 16.3 26630 7.379
+200 0.3557 - 0,4352 3403 32.1 66.3 42,3 15.9 27258 7.494
+150 100 - 0. 2466 0.3981 4334 24.8 45,2 41.7 15.6 22666 8. 486
+150 0. 2823 0. 4106 3694 27.9 49.7 40,0 15.0 - 23046 8.697
+' 200 0.3107 0. 4203 3302 30.4 53.2 38.9 14.6 - 23456 . 8. 840
+200 - 100 0. 2241 - 0.3900 4255 24.0 39.0 39.6 14.8 20713 9.513
+. A50 . 0.2565 . 0, 4016 3624 27.2 42,7 - 37.9 14.2 - 20942 9,758
+i 200 0.2823 0.4106 - 3237 29, 45,7 36.8 13.8 21230 9,924
+Flinak 100 100 0. 2899 0.4132 4012 23. 46. 4 36.4 13.6 21683 7. 798
+150 0.3318 - 0.4273 3449 26, 52.1 35.7 13.4 22673 7.924
+200 0.3652 0.4383 3101 29. 56.8 35.3 - 13.3 . 23517 8. 009
+150 100 0. 2352 0.4004 3885 22.1 37.0 33.2 12.5 - 18700 9,219
+150 0. 2899 0.4132 3336 25.2 41.5 32.5 12.2 19409 9.377 -
+_ . 200 0. 3190 0.4231 2997 27.7 45,1 32.1 12.1 20028 9, 484
+200 . 100 0.2301 0.3921 3803 | 2.2 31.7 31.3 11.7 16953 10, 366
+150 0. 2634 0. 4040 3264 24,2 35.5 30.6 11.5 17506 10, 551
+200 0. 2899 0.4132 2931 26. 6 38.5 30.2 11.3 17999 10, 676
+150 © NaBF, 100 100 0. 2823 0.4106 4095 22,4 4, 2 35.6 13.3 20502 7. 845
+: 150 0.3231 0. 4244 3496 25,3 48.7 34.3 12.8 21029 8.028
 200 0.3557 0.4352 3128 27.6 52.4 33.5 12.5 21534 8,152
-150 100 0. 2466 0.3981 3984 21.3 35.7 32.9 12.4 17912 9.230
-150 "0.2823 0.4106 3397 24.0 39.3 31.6 11.9 18226 9. 457
-200 0.3107 0.4203 3037 26. 42.1 30. 8 11.6 18559 9.611
-200 100 0.2241 0.3900 3913 20. 30.9 31.3 11.7 16384 10. 344
-150 0. 2565 0.4016 3334 23. 33.8 30.0 11.2 16579 10. 607
-200 0. 2823 0.4106 2978 25, 36.2 29,2 10.9 16816 10. 786
-~ Flinek 100 100 0. 2899 0.4132 3692 20.1 36.7 28.8 10.8 17180 8. 47%
-150 0.3318 0.4273 3174 23.0 41.3 28.3 10.6 17970 8.610
-200 0.3652 0.4383 2854 25.3 45.0 28.0 10.5 18644 8.701
-150 100 0.2532 0.4004 3577 19.0 29.4 26.4 9.9 14844 10. 012
-150 0.2899 0.4132 3073 21.7 33,0 25.8 9.7 15414 10.182 -
-200 0.3190 10.4231 2761 23.9 35.8 25.5 9.6 15910 10. 296
-200 © 100 0.2301 0.3921 3503 18.3 25.2 24.9 9.3 13476 11.251
-150 0.2634 0. 4040 3007 20.9 28.2 24.3 9.1 13922 11.450
-200 0.2899 0.4132 2701 22.9 30.6 24.0 9.0 14319 11.585
+150 100 0. 2466 0.3981 3984 21. 35.7 32.9 12.4 17912 9,230
+150 0.2823 0. 4106 3397 24.0 39.3 31.6 11l.9 18226 - 9. 457
+‘ 200 0. 3107 0.4203 3037 26. 42.1 30.8 11.6 18559 . 9,611
+200 100 o 0.2241 0. 3900 3913 20. 30.9 31.3 11,7 16384 10, 344
+150 0. 2565 0. 4016 3334 23, 33.8 30.0 - 11.2 16579 10. 607
+- . 200 0. 2823 - 0.4106 2978 25, 36,2 29,2 10.9 16816 10, 786
+- Flinak 100 100 0, 2899 0. 4132 3692 20.1 36.7 28.8 10.8 17180 8. 474
+150 0.3318 0. 4273 3174 23.0 41.3 28.3 10.6 17970 8.610
+: 200 0.3652 0. 4383 2854 25,3 45.0 28.0 10.5 18644 8.701
+150 . 100 0.2532 0. 4004 3577 19.0 29.4 26.4 9.9 14844 10.012
+150 0. 2899 0.4132 3073 21.7 33.0 25.8 9.7 15414 10.182 -
+200 0.3120 - 0.4231 2761 23.9 35.8 25.5 9.6 15910 10. 296
+200 - 100 0.2301 0, 3921 3503 18.? 25.2 24.9 9.3 13476 11. 251
+150 0. 2634 0. 4040 3007 20.9 28.2 24.3 9.1 13922 11. 450
+200 0. 2899 0.4132 2701 22.9 30.6 24.0 9.0 14319
+
+11.585 -
 
  
 
  
 18
 
-tel and Inert Salt on the Proportions of a Series of
-scale Molten Salt Breeder Reactor ’
-
- 
-
-Mass Flows Flow Velocities Temperature Drops
+lel and Inert Salt on the Proportions of a Series of
+icale Molten Salt Breeder Reactor '
 
  
 
@@ -1167,7 +1254,11 @@ Mass Flows Flow Velocities Temperature Drops
 
  
 
-2
+ 
+
+ 
+
+ey
 
  
 
@@ -1175,52 +1266,52 @@ Mass Flows Flow Velocities Temperature Drops
 
  
 
-Reynolds Numbers Pumping Power
+ 
 
-roe Film Film
+Mass Flows | Flow Velocities p 14 wumbers  PPLng Pover Temperature Drops
 
-Salt 2 Ratio . Fuel Salt Fuel Salt Wall
+| | e ' Film - Film
 
-(10°6 x 1b/nr-££2)  Salt/Fuel  |(ft/sec) (ft/sec) Fuel ~~ Salt (hp) (hp) eo) (°F) Sale
+Salt g Ratio Fuel Salt Fuel Salt ‘ Wall
 
-8.059 1.1179 9.6 18.8 7216 91781 540 850 57.9 23.7 43.4
-9.442 1.2797 9.9 22.0 8455 107536 540 1275 60.6 24.6 . 39.7
-© 10.554 1.4084 10.0 24.6 9451 120200 540 1700 62.6 25.2 37.2
-8.287 © 0.9766 11.3 19.3 7421 94377 811 850 53.5 25.6 45.9
-9,722 1.1179 11.6 22.7 8706 110720 811 1275 56. 2 26.7 22.7
-10,876 1,2304 11.8 25.4 9739 123868 811 1700 58,0 27.5 39.5
-8.440 0.8873 12.7 19.7 7558 96127 1081 850 50. 4 27.0 47.6
-9.911 1,0157 | 13.0 23.1 8875 112872 1081 1275 53.0 28.2 43.8
-11,094 1.1179 13.3 25,9 9935 126352 1081 1700 54.9 29.0 41.1
-7.37% 0.9456 10.4 15.5 8016 12998 540 631 67.7 29.4 27.9
-8.578 1,0824 10.6 18.1 9324 15118 540 947 69.9 29.9 25.1
-9.541 1.1914 10.7 20.1 10371 16817 540 1263 71.4 30.2 23.3
-7.616 0.8261 12.3 16.0 8278 13423 811 631 63.1 32.2 29.7
-8.867 0.9456 12.5 18.7 9639 15629 811 947 65.3 32.8 26.9
-9,870 1.0408 12.7 20.8 10729 17397 811 1263 66.8 33.3 25.0
-7.780 0.7505 13,8 16.4 8457 13712 1081 631 59.8 34.1 31.0
-9,065 0. 8591 14.1 19.1 9854 15977 1081 947 © 62.0 34.9 28,1
-10.095 0.9456 | 14.3 21.2 10074 17793 1081 1263 63.5 35.4 26.1
-8.770 1.1179 | 10.5 20.5 7853 99880 540 850 68. 6 30.1 51,4
-10.273 1.2797 10.7 24.0 9199 116998 540 1275 71.8 31,2 47.0
-11.481 1.4084 10.9 26.8 10281 130756 540 1700 74.0 31.9 44.0
-9.014 0.9766 12.3 21.0 8071 102655 811 850 63.3 32.4 54.3
-10.572 1.1179 12,6 24.7 9467 120398 811 1275 66. 4 33.8 49.8
-11.825 1.2305 12.8 27.6 10589 134671 gl1 1700 68.6 34.7 46.7
+(10°6 x 1b/hr-£t2)  Salt/Fuel  |(ft/sec)  (ft/sec) Fuel ~ Salt (bp)  (bp) F“e%,%de (°F) Sa%EFﬁide
+
+8.059 1.1179 9.6 18.8 7216 91781 540 850 57.9 23.7 43,4
+9, 442 1. 2797 9.9 22.0 8455 107536 540 1275 60.6 24.6 . 39,7
+- 10.554 1. 4084 10.0 24.6 9451 120200 540 1700 62.6 25.2 37.2
+8,287 - 0,9766 1 11,3 19.3 7421 94377 - 811 850 53.5 25.6 45,9
+9,722 1.1179 11.6 22.7 8706 110720 811 1275 56, 2 26.7 22.7
+10,876 1. 2304 11.8 25.4 9739 123868 811 1700 58.0 27.5 39.5
+8. 440 0.8873 12.7 19.7 7558 96127 1081 850 50.4 27.0 47.6
+9,911 1,0157 -1 13.0 23.1 8875 112872 1081 1275 53.0 28.2 43.8
+11,094 1.1179 13.3 25,9 9935 126352 1081 1700 54.9 29.0 41,1
+7.37 ' 0.9456 10.4 15.5 8016 12998 540 631 67.7 29.4 27.9
+8.578 1, 0824 10.6 18.1 9324 15118 540 947 69.9 29.9 25.1
+9,541 1,1914 10. 7 20.1 10371 16817 540 1263 71.4 30.2 23.3
+7.616 0.8261 12.3 le.0 8278 13423 811 631 63.1 32.2 29,7
+8.867 0. 9456 12.5 18.7 19639 15629 - 811 947 65.3 32.8 26.9
+9, 870 1.0408 12.7 20,8 10729 17397 8l1 1263 66.8 33,3 25.0
+7.780 0. 7505 13.8 16.4 8457 13712 1081 631 59.8 34,1 31.0
+9,065 0. 8591 14.1 19.1 9854 15977 1081 947 - 62.0 34.9 28.1
+10,095 0.9456 ; 14.3 21,2 10974 17793 1081 1263 63.5 35.4 26.1
+. 8.770 1.1179 10,5 20.5 7853 99880 540 850 68.6 30.1 51.4
+10,273 1.2797 10.7 24,0 9199 116998 540 1275 71.8 31.2 47.0
+11,481 1, 4084 10.9 26.8 10281 130756 540 1700 74.0 31,9 4, O
+9,014 0.9766 12.3 21.0 8071 102655 811 850 63.3 32.4 54.3
+10,572 1.1179 12.6 24,7 9467 120398 8l1 1275 66. 4 33.8 49.8
+11, 825 1, 2305 12.8 27,6 10589 134671 811 1700 68.6 34.7 46,7
 9,178 0.8873 13.8 21.4 8218 104523 1081 850 59.6 34.1 56.3
-10.773 1.0157 14.2 25,1 9647 122693 1081 1275 62.7 35.6 51.7
-12,057 1.1179 | 14.4 28.1 10797 137318 1081 1700 64.8 36. 6 48.6
-8.014 0.9456 | 11.3 16.9 871 14124 540 631 80.0 37.1 32.9
-9.320 1.0824 11.5 19.6 10131 16427 540 947 82.6 37.8 29.7
-10.366 1.1914 11.6 21.8 11268 18271 540 1263 84.3 38.1 27.5
-8.270 0.8261 13.4 17.4 8990 14577 811 631 Ph. 4 40.5 35.0
-9.628 0.9456 13.6 20.3 10466 16970 811 947 77.0 41.4 31.7
+10.773 1.0157 14.2 25.1 9647 122693 1081 1275 62.7 35.6 51.7
+12,057 1.1179 ;1.4 28.1 10797 137318 1081 1700 64.8 36.6 48,6
+8.014 0.9456 P 11,3 16.9 8711 14124 540 631 80.0 37.1 32.9
+9,320 : 1.0824 11.5 19.6 10131 16427 540 947 82.6 37.8 29,7
+10. 366 1.1914 11.6 21.8 11268 18271 540 1263 84.3 38.1 27.5
+8.270 0.8261 13.4 17.4 8990 14577 811 = 631 4.4 40,5 35.0
+9.628 0.9456 13.6 20,3 10466 16970 811 947 77.0 4). 4 31.7
 10.716 1.0408 13.8 22.6 11648 18888 811 1263 78.7 41.9 29.4
-8, 44d 0.7505 15.0 17.8 0179 14884 1081 631 70.5 43.0 36.5
-9.838 0.8591 15.3 20.7 10693 17339 1081 947 73.0 43.9 33.1
-10. 954 0.9456 15.5 23.1 11908 19308 1081 1263 Ph. 7 44.5 30.7
-
- 
+8. 444 0. 7505 15.0 17.8 9179 14884 1081 631 70.5 43,0 36.5
+9,838 0. 8591 15.3 20,7 10693 17339 1081 947 73.0 43.9 33.1
+10,954 0.9456 15.5 23.1 11908 19308 1081 1263 74,7 44,5 30.7
 
  
 
@@ -1231,31 +1322,31 @@ Salt 2 Ratio . Fuel Salt Fuel Salt Wall
 
  
 
-0
+*
 
-LA
+”
 
-‘©
+o
 
-.
+)
 
-»
+9
 
 19
 
-Table 7. Summary of Input Parameter Variations
-Used in Parametric Study
+Table 7. Sunmar&:of Input'Parameter Variations
+- Used in Parametric Study
 
  
 
-Pressure Drops
+Pressure Drops . : : Temperature
+(psi) o T%g; gD Inert Salts Difference
+
+(°F)
 
  
 
-Temperature
-(pst) in Inert Salts Difference
-* o
-Shell Side Tube Side (°F)
+Shell Side Tube Side
 
  
 
@@ -1265,106 +1356,43 @@ Shell Side Tube Side (°F)
  
 
 The principal results of the parametric calculations are summarized
-in the series of curves presented in Figs. 4 through 9. Figures 4 through
+in the series of curVes_presented in Figs. 4 through 9. Figures 4 through
 6 show the effects of pressure drop, tube size, and inert salt on the num-
-ber of tubes, the tube length, and the heat exchanger fuel inventory for
-a temperature difference of 100°F between the fuel and inert salt. Fig-
-ures 7 through 9 show the effects on the same dependent variables of
+ber of tubes, the'tuberlength, and the heat exchanger fuel inventory for
+a temperature difference of 100°F between the'fuel and inert salt. Fig-
+
+ures 7 through 9 show the;effects on the same dependent variables of
+
 changes in pressure drop and temperature difference between the two fluids
+
 for each of the two inert salts, with a tube OD of 5/16 in.
 
 Examination of Fig. 4 reveals that, if one decreases tube OD from 3/8
-to 5/16 in. , the number of tubes in the bundle increases by approximately
-40% for either inert salt, all other things being equal. It can be seen
+to 5/16 in., the nuﬂber:orltubes in the bundle increases by approximately
+40% for either inert salt"all other things beingrequsl' It can be seen
 
 that changes in the tube side, or inert salt, pressure drop are much more
 
 effective in reducing the number of tubes in the bundle than the corre-
-sponding change in the shell side, or fuel, pressure drop. A change in
-the salt pressure drop from 100 to 200 psi reduces the number: of tubes by
 
-approximately 25%, whereas the same change in the fuel pressure drop pro-
+sponding change in the shell 51de, or fuel pressure drop A change in
 
-duces a reduction of only about 5%. For a typical set of conditions,
-
-changing the inert salt from NaBF, to Flinak produces a reduction in the
-number of tubes by approximately 10%.
+the salt pressure drop from 100 to 200 psi reduces the number of tubes by
+mfapprox1mately 25%, whereas the seme change in the fuel pressure drop pro-
+~duces a reduction of. only about 5% For a typical set of conditions,
+r'changing the inert salt from NaBFz to Flinak produces a reduction in the
+"upnuMber of tubes by approximately 10%. '
 
 For the same set of changes, Fig. 5 shows the resulting effects on
-tube length. Reducing the tube OD to 5/16 in. yields, for either inert
-salt and for a given set of pressure drops, a reduction in the tube length
-of approximately 20%. As before, an increase in fuel pressure drop pro-
+
+“tube length. Reducing the;tube 0D to 5/16 in. yields, for elther inert
+
+salt and for a'givenﬂsetﬂOffpréssure_drops,-a reduction in the tube length
+
+of approximately 20%Q' As before, an increase in fuel pressure drop pro-
 
 duces a reduction in the dependent variable, in this case, about 10% in
-NUMBER OF TUBES
-
-5000
-
-Looo
-
-3000
-
-2000
-
-Fig. 4. Number of Tubes in a Bundle as a Function of Shell and Tube
-Side Pressure Drops for Two Tube Sizes and Two Inert Salts.
-
-ORNL DWG T1-916)4
-
- 
-
-0c
-
- 
- 
-
- 
-
- 
-
- 
-
- 
-
-» oh ‘ LJ) " : © »”
-
-C oo C
-
-50, Co Lo oo ORNL DWG T1-9165
-
-TUBE LENGTH (£t)
-
- 
-
-Fig. 5. Tube Bundle Length as a Function of Shell and Tube Side Pres-
-sure Drops for Two Tube Sizes and Two Inert Salts.
-
-TS
-FUEL SALT VOLWME (ft3)
-
-120
-
-100
-
- 
-
- 
-
-ORNL DWG 71-9166
-
-cc
-
-Tube OD: O,
-
-Fig. 6. Fuel Salt Volume in Tube Bundle as a Function of Shell and Tube
-Side Pressure Drops for Two Tube Sizes and Two Inert Salts.
-
- 
- 
-
-NUMBER OF TUBES
-
-.)
+NUMBER OF TUEES
 
 5000
 
@@ -1374,60 +1402,108 @@ kooo
 
 2000
 
-Ll}
+ORNL DWG T1-916k4
+
+AP =
+
+ 
+
+Fig. h. Number of Tubes in a Bundle as a Function of Shell and Tube
+Side Pressure Drops for Two Tube Sizes and Two Inert Salts. '
+
+0c
+
+ 
+ 
+
+» L ' L ” ) ‘ : o »
+
+C _ - C
+
+50 S L | o  ORNL.DWG T1-9165
+
+TUBE IENGTH (£t)
+
+ 
+
+Fig. 5. Tube Bundle Length as a Function of Shell and Tube Side Pres-
+sure Drops for Two Tube Sizes and Two Inert Salts.
+
+T2
+ 
+
+- ORNL DWG T1-9166
+
+120
+
+100
+
+cc
+
+FUBEL SALT VOLUME (ft3)
+
+Tube OD: O.. 5 in.
+
+ 
+
+Fig. 6. ‘Fuel Salt Volume in Tube Bundle as a Function of Shell and Tube
+Side Pressure Drops for Two Tube Sizes and Two Inert Salts.
+
+ 
+¥)
+
+5000
+
+NUMBER OF TUEES
+
+3000 -
+
+2000
 
 ORNL DWG 71-916
 
  
 
-Fig. T. Number of Tubes in a Bundle as a Function of Shell and Tube
+~ Fig. 7. Number of Tubes in a Bundle as a Function of Shell and Tube
 Side Pressure Drops for Three Temperature Differences and Two Inert Salts.
 
 C
 
-¢2
-TUBE LENGTH (ft)
+¢z
+TUEE IENGTH (ft)
 
-45.
-
- 
-
-ORNL DWG 71-9168
+45
 
  
 
-Fig. 8. Tube Bundle Length as a Function of Shell and Tube Size Pres-
+- ORNL DWG T1-9168
+
+ 
+
+Fig. 8. Tube Bundle Length as a Punction of Shell and Tube Size Pres-
 sure Drops for Three Temperature Differences and Two Inert Salts.
 
 42
 
  
- 
+L]
 
-©)
-
-FUEL SALT VOLUME (fts)
+FUEL SALT VOLWE (fts)
 
  
 
-       
+Tube OD: O.
 
- 
+£ 5
+
+Fig. 9. Fuel Salt Volume in Tube Bundle as alFunction of Shell and
+
+' TUbe Side Pressure Drops for Three Temperature Differences and Two Inert
+Salts.
 
 »
 
-ORNL IWG
-
-Ls 2
-
-Fig. 9. Fuel Salt Volume in Tube Bundle as a Function of Shell and
-
-* Tube Side Pressure Drops for Three Temperature Differences and Two Inert
-Salts.
-
-an
-
- 
+Cah
 
  
 
@@ -1436,111 +1512,115 @@ an
 
 26
 
-the length. We note, however, that an increase in salt pressure drop has \
-the opposite effect, a doubling of the pressure drop yielding nearly 25%
-increase in the tube length. With all other conditions fixed, a change of
-inert salt from NaBF,; to Flinak gives a reduction in tube length of about
-104.
-] The heat exchanger fuel inventory, a dependent variable of major in-
-terest, is shown in Fig. 6. For a given set of conditions, the prescribed
-reduction in tube OD yields a corresponding reduction in fuel volume of
-about 25%. Increasing the fuel pressure drop, as before, ‘yields a substan-
-. tial savings in fuel inventory of nearly 30%. In contrast, however, in-
-creasing the salt pressure drop from 100 to 200 psi produces an increase
-in fuel volume of about 20% Replacing the inert salt in the secondary
-circuit with Flinak reduces the heat exchanger fuel inventory by about 20%.
+the length. We note, however, that an increase in salt pressure drop has &hﬁj
+the opposite effect, a doubling of the pressure’ drop yleldlng nearly 25%
+increase in the tube length. Wlth all other condltions fixed, a change of
+inert salt from NaBF, to Fllnak gives a reduction in tube length of about
+104. | .
+} The heat exchanger fuel inventory, a dependent variable of major in-
+terest, is shown in Fig. 6. For a giveh set of conditions, the prescribed
+reduction in tube OD yields a corresponding reduétion in fuel'volume of
+about 25%. 'Ihcreasing the fuel pressure drop, as.before,iyields a substan-
+: tial-savings in fuel invéntory of nearly 30%. ‘In cOntraét, hqﬁever, in-
+creasing the salt pressure:drop frdﬁ 100 fo 200 psi produces an increase
+in fuel volume of about 20%. Replacing the inert salt in the secondary
+circuit with Flinsk reduces the heat exchanger fuel inventory by about 20%.
 
-Figures 7 through 9 are intended, primarily, to show the effects of
-increasing the temperature difference between the two fluid streams. The
+Figures 7 through 9 are intended, primarily, to show the‘effects:of
+increasing the température'difference between the two fluid streams, The
 tube diameter used is the smaller one, 5/16 in. Figure 7 shows that in-
 creasing the temperature difference from 100 to 125°F yields a decrease
-in the number of tubes of approximately 104. A further increase in the
-temperature difference to 150°F yields only an additional 5% reduction,
-giving an overall reduction in the number of tubes of approximately 15%
+~ in the number of tubes of approximately 10%. ;A further increase in the
+temperature difference to 150°F yieldé only an additional 5%_reduction,
+giving an overall reduction in the number of tubés of approximately 15%
 from the 100°F temperature difference reference condition. For the same
-changes in temperature difference between the two fluids, one observes
+changes in temperature difference between thé_two fluids, one observes
 from Fig. 8 that the corresponding reductions in tube length are 15 and
-30%, respectively. Finally, as can be seen: from Fig. 9, major savings
+30%, respectively. Finally, as can be seen'frdm‘Fig. 9, majorISavings
 in fuel inventory can be effected if the temperature difference between
-the salt streams can be increased. Increasing the difference from 100 to
-125°F results in a 25% reduction in fuel inventory and a 150°F difference
+the salt étreams can be increased. Increasing the difference from 100 to
+125°F results in a 25% reduction in fuel inventory éhd,a-l50°F_différénce
 yields an overall reduction of 40% in the fuel salt volume. |
 
 As discussed earlier, a temperature difference of 125°F would probably
-pose no problems with thermal stresses, but a temperature difference of
-150°F might give trouble and would require extensive proof testing because
-it is difficult to evaluate precisely some of the modes of failure that
-might prove important. |
+pose'no problems with thermal stresées, but a temperature'difference 6f
+150°F might give trouble and would require exténsire proof testing because
+it is difficult to evaluate precisely socme of the modes of failure that
+might prove important. | ,
 
-Table 1 is a concise summary of the information contained in Figs. 4 -)
-through 9 as discussed in the preceding paragraphs. This table can be
+Table 1 is a concise summary of the information contained in Figs. 4 ' Kﬁ';'
+- through 9 as discussed in the preceding paragraphs This table can be
  
 
-»
+"
 
-[13
+)
 
-eT
+%)
+
+27
 
 used to make rough estimates of the effects on the number of tubes, the
 
-tube length, and the fuel volume of arbitrary combinations of changes in
+tube length, and the foel volume of arbitrary combinations of changes in
 
-- the listed parameters. For example, if we were, simultaneously, to re-
+. the listed parameters. For example, if we were, simultaneously, to re-
 
-duce tube OD from 3/8 in, to 5/16 in. and raise the temperature dif-.
-ference from 100°F to 150°F, the relative number of tubes would be ap-
-proximated by
+duce tube OD from 3/8 in., to 5/16 in. and raise the temperature dif-
 
-(1.40)(0.85) = 1.19
-the relative tube length would be
- (0.80)(0.70) = 0.56
+ference from lOO°F to 150°F the relative number of tubes would be ap-
+j prox1mated by
 
-and the relative fuel volume would be
+(1. ud)(o 85) = 1.19
+
+the relatlve tube length would be
+(o 80)(0 70) = 0.56
+
+- and the relatlve fuel volume would be
 
 (0.75)(0.60) = 0.45
 
-Actually, some of the effects are interrelated in such a way that taking
+Actually, some of the effects_are-interrelated in such a wey that taking
 
-advantage of one effect may reduce the effect of another, hence it is
+advantage of one effect may'redUCe'the effect of another, hence it is
 
-"best to use the charts of Figs. 4 to 9 when estimating the combined
+" best to use the charts of Flgs. 4 to 9 when estimating the ‘combined
 
-effects of several simultaneous changes. If these are not applicable,
-new calculations can be made using the program appended at the end of
-this report. SD
+effects of several s1multaneous changes. If these are not applicable,
 
-From the equations in the analysis section of this report, it can
+- new calculations can be made using the program appended at the end of
 
-be shown that the pumping power in either fluid circuit, for a given
+this report.
 
-“heat load end fluid temperature change, depends only on the salt pro-
+From the equatlone in the analy31s sectlon of this report it can
 
-perties, the temperature change, and the pressure drop in that circuit.
-Then, for a given fuel ‘salt -and temperature change, the ratio of the
-total heat exchanger pumping powers. for two different inert salts de~
-pends only on the ratio of ‘the inert salt pressure drop to the fuel
-pressure drop. This relation is shown in Fig. 10 for a change in inert
+_be_Shown that the pumping power in either fluid circuit, for & given
+" heat load and fluid tempereturerchange3 depends only on the salt pro-
 
-salt from NaBF, to Flinak, the total pumping power ratio being plotted
+perties, the temperaturejchange3 and the pressure drop in that circuit.
+Then, for a given fuel salt-and ‘temperature change, the ratio of the
+total heat exchanger pumplng powers for two dlfferent 1nert salts de-
+pends only on the ratlo of the inert salt pressure drop to the fuel
 
-as a function of the pressure drop ratio. Over the pressure drop ratio
+“ ,pressure droP.‘ This relatlon 1s shown in Flg. lO for 8 change in inert
+- 'salt from NaBE& to Flanak the total pumping power ratlo belng plotted
+as a function of the pressure drop ratlo. Over the pressure drop ratio
 
-range of about 0.5 to 2.0, the corresponding saving in total heat ex-
+- range of about 0.5 to 2.0,<the”oprrespond1ng'saVing in total heat ex-
 
-changer pumping power is from approximately 10 to about 20%.
-TOTAL PUMPING POWER RATIO
+| changer pumping power is from approximately lO_to'about5éO%. _
+- TOTAL PUMPING POWER RATIO
 
  
 
 ORNL DWG T1-
-0.90 71-9170
+0.90 T1-9170
 
 0.88
 
-0.86
+0.%
 
-8c
+gc
 
 0.84
 
@@ -1551,10 +1631,10 @@ ORNL DWG T1-
  
 
 0.5 1.0 1.5 2.0
-RATIO OF INERT SALT TO FUEL SALT PRESSURE DROP
+RATIO OF INERT SALT TO FUEL SALT PRESSURE DROP - .
 
 Fig. 10. Effect of Pressure Drop Ratio on the Reduction of Total Pump-
-ing Power with a Change in Inert Salt from NaBF, to Flinsak.
+ing Power with a Change in Inert Salt from NaBF, to Flinek.
 
  
  
@@ -1565,55 +1645,59 @@ ing Power with a Change in Inert Salt from NaBF, to Flinsak.
 
  
 
-W
+[
 
 29
 
-~ CHOICE OF INERT SALT
+- CHOICE OF INERT SALT
 
-In recent years sodium fluoroborate has been the favored candidate
-for use as the inert salt in the intermediate heat transfer fluid system
+In recent'years sodium fluoroborate has been the favored candidate
+for use as the inert,salt in the intermediate heat transfer fluid system'
 of the MSER. However, the writers felt that heat transfer considerations
 make it worthwhile to review the possible advantages and disadvantages of
 another candidate, Flinak, an inert salt that was employed in many tests
-carried out under the ANP program.
+carried out under the ANP program .
 
-Materials Compatibility Considerations
+Materialsrédmpatibility Considerations
 
 The mass transfer and corrosion problems associated with the use of
-both Flinaek and fluorcborate salt were discussed at some length with
-J. H. DeVan who kindly provided most of the material presented here. The
+both Flinek and fluorcborate salt were discussed at some length with
+J. H. DeVan who kindly provided most of the material presented'here. The
 
-‘materials compatibility tests cited in this section are best understood if
+:materials compatibility tests cited in this section are best understood if
 
-considered in historical perspective. Tt should be remembered that under
+considered in historical perspective It should be remembered that under
 
 the ANP program some difficulties with corrosion and mass transfer were
 
-- observed in the Inconel loops operated with fluoride salts, particularly
+. Observed in the Inconel loops operated_with fluoride salts, particularly
 
-those containing UF. As a consequence, a series of alloys was tested to
-develop something having better corrosion resistance than Inconel. Around
-40 individual thermal convection loops were built of different nickel-
+those containing UF;. As a consequence, a series of alloys was tested to
+develop something having better corrosion resistance'than Incon€l, Around
+40 individual thermal convection 1loops were built of di fferent nickel-
 
-molybdenum alloys containing various additions of titanium, aluminum,
+“molybdenum alloys containing various additions of titanium, aluninum,
 
 chromium, niobium, vanadium, and iron. These loops were tested at 815°C
 for periods of time ranging from 500 to 1000 hr. All of the loops except
 
-"those containing large amounts of titanium and aluminum were essentially
-unaffected by the fuel salt. The development of INOR-8 and Hastelloy-N
+" those containing large amounts of titanium and aluminum were essentially
+unaffected by the fuel salt - The development of INOR-8 and ‘Hastelloy-N
 
-was an outgrowth of this work, which is reported in Refs. 9 through 16.
-Unfortunately, no recent tests have been run with Flinak in the latest
-and most promising alloy, Hastelloy-N, but it is believed that the results
-of such tests would be more favorable than any of the earlier work because
+was an outgrowth"of'this work, which is reported in Refs. 9 through 16.
+
+_ Unfortunately, no recentftests'have been run with Flinsk in the latest
+
+andamost_promising alloy,dHastelloyéN,_but it is belieVed'that the results
+
+1of such tests would be'more'favorable than any of the earlier work because
+
 of improved techniques for purifying the salt and loading it in the loop.
 Note also that Hastelloy-N should be more corrosion resistant than the
 
-- Hastelloy-B, and elimination of the UF, (added to the Flinsak in the ther-
+thHastelloy-B and elimination of the UF, (added to the Flinak in the ther-
+" mal convection loop tests) should reduce the tendency of the salt to at-
 
-mal ‘convection loop tests) should reduce the tendency of the salt to at-
 tack the structural material.
  
 
@@ -1621,8 +1705,8 @@ tack the structural material.
 
 The results of tests with thermal convection and forced convection
 loops both with Flinak and with fluoroborate salt are summarized in Table 8.
-Note that three of the Flinak forced convection loops were operated at
-over 1700°F with a temperature drop in the salt circuit ranging from 365
+Note +that three of the Flinak foreed convection 1oops'were operated at
+over 1700°F with a temperature drop in the salt circuit rangihg from 365
 to 450°F, a very severe combination of conditions, While the first of
 these showed some tendency to form subsurface voids as a result of solid
 state diffusion and selective leaching of iron from the alloy, this effect
@@ -1630,35 +1714,35 @@ was not noticable in the other two loops.
 
 The test experience with fluoroborate salt was discussed with
 J. W. Koger who supplied the information summarized in the lower portion
-of Table 8. The data fall into two major sets. The first set was carried
-out with the first fluoroborate salt to become available.” This material
-contained about 2000 ppm of oxygen because this was the highest purity
+of Table 8. The data fall into twormajor.éets. The«first-set was carried
+out with the first fluoroborate salt to become availsble.l? This material
+contained abeut 2000 ppm of oxygen because this was the highest purity
 obtainable with the usual fluoride purification process; evolution of BF;
-prevented a further reduction in impurities. (The vapor pressure of BF,
-at 1125°F is 160 mm whereas the vapor pressure of the Flinak is less than
-1 mm at the same temperature. ) As a consequence of the high concentration
-of impurities in the first batch of fluoroborate salt, the Croloy 9 Cr-1
+prevented a further reduction in impurities. (The vapor pressure of. BF,
+at 1125°F ig 160 mm whereas the vapor pressure of the Flinak is less than
+1 mm at the same temperature.) As a consequence of the high concentration
+of impurities in the first batch of fluorcborate salt, the Croloy 9 Cr-l
 Mo loop was attacked very rapidly so that operation had to be terminated
 after about 1400 hr (Ref. 17). The Hastelloy-N loop, however, was only
-lightly attacked — at a rate equivalent to about 2 mils /yr — but the cold
-leg began to plug with Na3CeFg so that operation was*terminated at the end
-of 10,000 hr (Ref. 17).
+lightly attacked — at a rate equivalent to about 2 mils/yr — but the cold
+leg began to plug with Na3CeFg so that operation was“terminated at the.end
+of 10,000 hr (Ref. 17). |
 
 The second series of tests was run with a more highly purified fluoro-
-borate salt having a nominal contamination level of 500 ppm of oxygen. 18
+borate salt having a nominal contamination level of 500 ppm of oxygen, 18
 Three of these loops have been operated for over 20,000 hr with no apparent
-signs of plug formation or other serious ill effects.l®
+signs of plug formation or other serious i1l effects.l?
 
-Melting Point
+Melting Poii.nﬂl:.f
 
 In the design and operation of any high-temperature liquid system it
 is always advantageous to reduce the melting point of the fluid employed
-in order to ease the problems of preheating, filling, and draining the sys=-
+in order to ease the problems of preheatlng, filling, and draining the sys-
 tem. Further, if the system is to include a steam generator, it would be
 highly desirable to be able to make use of a molten salt whose melting
  
 
- 
+. able 8.
 
  
 
@@ -1666,7 +1750,9 @@ highly desirable to be able to make use of a molten salt whose melting
 
  
 
-‘Table 8, Summary of Thermal and Forced Convection Loop Tests Carried Out with Flinak and with NaEF,
+ 
+
+ 
 
  
 
@@ -1674,58 +1760,57 @@ highly desirable to be able to make use of a molten salt whose melting
 
 convection
 
-eh : Peak Metal Test
-* Molten Salt I” Ce or a Structural Temperature 5) Duration Results
-(°F) (br)
-Flinak (46.5 LiF + 11.5 NaF Thermal Inconel 1125 100 10008 Attack <1 mil
-+ 42 KF) convection = Inconel 1050 100 43607 Attack € mils
-: Inconel 1250 100 43738 Attack to 13 mils in the form of
-’ subsurface voids along grain
+_'Summary of Thermal and Forced Convection Loop Tests Carried Out with Flinak and with NaPBF,
+P - : : Peak Metal Test
+' Molten Salt.. e T Duructural Temperature (Qg) Duration - ‘Results
+‘ . (°F) o (hr) : .
+Flinak (46.5 LiF + 11 5 Na.F Thermal Inconel 1125 100 10008 Attack <1 mil
++ 42 KF) convection  Inconel 1050 100 43607 Attack €2 mils - ’
+: Inconel 1250 - 100 43738 Attack to 13 mils in the form of
+' ' : subsurface voids along grain
 boundaries; after-test chemistry
-indicated that initial salt load-
-ing was contaminated with mois-
-. ture
-INOR-8 1125 100 1000° No attack
-INOR=-8 1250 100 1340° No attack
-fe INOR-8 1250 100 "876010 Attack <1 mil
-Flinek + 2.58 UF; Forced Inconel 1200 100 ‘8760 : System troubles led to three
-" SE . convection : changes of fluid charge in course
-\ Pe of tests; maximum attack was 8
-: " ‘mils in hot zone
-17 Mo, 6 Fe 1760 450 1000 Void formation to depth of ~4 mils
-Bal Ni ' '
-Hastelloy B 1767 410 1000 Pits present in as-received tubing
-\ were slightly accentuated; no
-. noticeable void formation
-Hastelloy B 1710 365 1000 Do above; a few metal crystals
-, . noted at pump bowl exit
-92 NaBF, + 8 NaF Thermal Croloy 9 1125 270 ~1400 Initial O, 2000 ppm; severe attack
-convection . Cr=-1 Mo
-Hastelloy N 1125 270 10,000 Initial Op, 2000 ppm; attack ~2 mil;
+indicated that initial salt lcad-
+. ing wes contaminated w:lth moig=-
+' -ture :
+INOR-8 1125 100 1000° - - No attack
+INOR-8 1250 - 100 13407 No attack -
+e INOR-8 1250 100 876010 Attack <l mi1
+Flinak + 258 UF;; .~  Forced Inconel 1200 100 8760 = System troubles led to three
+YR .. .convection’ o ' ‘ S * changes of f£luld charge in course
+e T _  of tests; maximum attack wvas 8
+" SO : 'mils in hot zone
+17 Mo, 6 Fe 1760 450 1000 Void formation to depth of ~é mils
+Ba 1 Ni.
+Hastelloy B 1767 410 1000 - - Pits present in ag-received tubing
+L o ‘ ' were slightly accentuated; no '
+o noticeable vold formation
+Hastelloy B 1710 365 1000 Do sbove; a few metal crystals
+A . ‘ : . noted at pump bowl exit
+92 NaEF, + 8 NaF Thermal Croloy 9 1125 270 ~1400 Initial 0, 2000 ppm; severe attack
+: convection . Cr=-1 Mo : :
+Hastelloy N 1125 270 10,000 Initial 05 2000 ppm; attack ~2 mil;
 . loop partially plugged by deposit
-of Na3CrFg
-NaBF;-NaF (92-8) Thermal Hastelloy N 607 260 20,380 Test continuing
-: ‘ convection '
-NalBF;-NaF (92-8) Thermal Hastelloy N 607 300 28,955 Test continuing
-Co = . convection
-I1iF-BeF,«ThF, (73-2-25) . Thermal Hastelloy N 677 130 17,880 Test continuing
-: convection :
-LiF-BeF,-UF; (65.5-34.0-0.5) Thermal " Hastelloy N 704 340 22,240 Test continuing
-: . convection
-NaBEF,-NaPF (92-8) plus steam Thermal Hastelloy N 607 212 14,615 Test continuing
-additions : convection . }
-' I4 F-BeF,~ThF;~UF Thermal ‘Hestelloy N 704 340 15,930 Test continuing
-(68-20-11,7-0.3 convection
- LiF~BeF,-ThF,;-UF; (68-20~ Thermal Hastelloy N 704 340 4660 Test continuing
-11.7-0.3) plus bismuth in convection
-molybdenum hot finger
-NaBF;-NaF (92-8) Thermal Hastelloy N 687 480 10,515 Test continuing
+. . _ . _ of NasCrFg -
+NaEF;-NaF (92-8) Thermal . Hastelloy N 607 260 20,380 Test continuing
+-~ convection ' ' . ‘
+Na.BF;,-NaF (92-8) " Thermal Hastelloy N 607 300 28,955  Test continuing
+convection : _ ' .
+LiF-Ber-ThF,; (73-2-25) Thermal Hastelloy N 677 130 17,880 Test continuing
+- convection . : o '
+mF-Ber-Un (65.5 -34, o-o.s) Thermal ~ Hastelloy N 704 340 22,240 Test continuing
+© convection _ : ‘
+Na.BF;,-NaF (92-8) plus steam . Thermal Hastelloy N 607 212 14,615 ‘Test continuing
+additions : : convection , '
+' 14 F-BeF,~ThF; ~UF Thermal ‘Hastelloy N 704 340 15,930 Test continuing
+(68-20-11,7-0.3 convection _ '
+' IiF-BeF,~ThF,;-UF; (68-20- Thermal ‘Hastelloy N 704 340 4660 Test continuing
+11.7-0.3) plus biemuth in . convection
+molybdenum hot finger ' :
+NaBF;-NaF (92-8) Thermal Hastelloy N 687 480 10,515 Test continulng
 
  
 
-Te
-
-  
+T€
  
 
  
@@ -1733,156 +1818,169 @@ Te
 32
 
 point is below the critical temperature for steam, that is, 706°F. One
-
 of the outstanding advantages of the fluoroborate salt is that its melting
-point is 725°F, only about 20°F above the critical temperature for water.
+point is 725°F, only sbout 20°F above the critical temperature for water,
 Flinak, on the other hand, has a melting point of 876°F, 170°F above the
-critical temperature. The temperature difference is so large.for the
-latter that thermal stress problems under steam-generator startup condi-
-tions would be severe in heat exchangers of conventional design. Fortun-
-ately, the reentry tube steam generator proposed in a companion report 2°
-makes use of a steam blanket between the boiling water and -the molten salt
-so that a large temperature difference between the two. probably can be
+critical temperature. The temperature difference is so largemfor the
+latter that thermal stress problems under steam—generator.startup condi-
+
+~ tions would be severe in heat,exchengers of conventionel‘design. Fertun-
+‘ately, the reentry tube steam generator proposed in a coﬁpaniqn report2°
+‘makes use of'a steam blanket between the boiling‘water‘and;the molten salt
+sO that a large temperature difference between the two prdbably can be
 accommodated without difficulties with salt freezing, heat transfer in-
 stabilities associated with film boiling, or severe thermal stresses.
 
-This favorable set of conditions in the steam generator should hold over
+This favorable set of cosditioﬁs in the steam generator shOuldrhold over
 the whole range of conditions from zero to full power including transients
-and off-design operating conditions. As a consequence, the difference in
+and off-design operating conditions. As a conseguence, the difference in
 melting point is not a controlling consideration in the use of fluoroborate
 
-salt rather than Flinsk from the steam generator standpoint.
+salt rather than Flinak from the steam generator standpoint.
 
-Leakage Problems
+Ieakage Problems
 
-ORNL, experience with high-temperature liquid systems has shown that,
-‘while the probability of small leaks between systems can be kept very low,
-it is not possible to assure that a small leak will never occur in a heat
-exchanger. Thus it becomes important to choose the fluids in systems
+ 
+
+ORNL experience with high-temperature liquid systems has shown that,
+while the probability of small leaks between systems can be kept very loﬁ,
+'it is sot‘possible to assure that a small leak will never occur in a heat
+exchanger. Thus it becomes important to cheose the fluids in systems
 coupled by a heat exchanger so that a small leak from either system into
 the other will not lead to a rapidly progressing failure or to a mess that
-cannot be cleaned up readily. For example, in the ANP systems it was
+cannot be cleaned up readily. For example, in the ANP systems it was .
 found that leakage of NaK into systems containing a fuel-bearing salt or
-vice versa led to the formation of deposits that are highly insoluble
+vice versa led to the formation of deposits that are highly 1nsoluble |
 in either water or the molten salts, and hence could not be flushed from
 the system in which they formed. Fortunately, it appears that either the
-_fluoroborate salt or the Flinak would be compatible with either the fuel
-salt or the steam in this respect. Contamination of the fuel salt by sub-
+‘flﬁoroborate salt or the Flinak would beqcompatible with either the fuel
+salt or the steam in this respect. Contamination of the erlrsalt by sub-
 stantial quantities of either boron or natural lithium would pose problems,
 
-the €1i being much more serious.
+the ©Li being much more seriocus. -
  
 
  
 
  
 
-v)
+ 
 
-»)
+W)
+
+-}
 
 35
 
-0ff-Gas Problems
+;Off—Gas Problems
 
-In any practical system it is always necessary to have one or more
+ 
+
+In any pfactical system it is always necessary to have one or more
 gas lines coupled to the gas space over the liquid in the expansion
-tank. A variety of troubles has been experienced with material distil-
-ling off into these gas lines, particularly in systems in which the
-vapor pressure of the salt has been appreciable. The limited experience
-available to date with 92 NaBFs -8 NaF (which has a vapor pressure of
-160 mm at 1125°F) indicates that the problems posed by this material as
-a consequence of the evolution of EF; are manageable, but do require
-care in the design and operation of the system. The vapor pressure of
+tank., A varieﬁy of troubles has been experienced with material distil-~
+ling off into these gas llnes, particularly in systems in which the
+vapor pressure of the salt has been appreciable. The limited experlence
+available to date with 92 NaRF, -8 NaF (which has a vapor pressure of
+160 mm at 1125°F) indicates.that the problems posed by this material as
+a consequence of the'evoiation of BFs are manageable, but_do require
+care in the design and.operation of the system. The vapor pressure of
 
 Flinak is so low that it has never given trouble of this sort.
 
 Heat Transfer Performance
 
- 
-
-The physical properties of the molten salt used in the intermediate
+ 'The physical propersies_of the molten salt used in the intermediate
 fluid circuit affect not only the size and cost of the intermediate heat
-exchanger ‘and the boiler, but they also affect the pumping power, the
-size of the piping, and, as noted above, the fuel inventory. The
-physical properties of Flinek make it clearly superior to the fluoro-
-borate salt as a heat transfer and heat transport fluid, the difference
-running from 20 to 25% in favor of Flinak in all of these items.
+exchanger‘and‘the boiler,,but they-also-affect the pumping power,_the
+size of the piping, snd,'as'noted~above, the‘fuel inventory. The
+physical properties of Flinek make it clearly superior to the fluoro- -
+borate salt as a heat trensfer and heat transport fluid, the difference
+
+running from 20 to 25% in favor of Flinak in ell of these items.
 
 Tritium Leakage
 
-Tritium generated in Flinak by delayed neutrons released from the
+Tritium generated 1n Fllnak by delayed neutrons released from the
 
-~ fuel in the intermediate heat exchanger would diffuse into the steam
+’,fuel in the 1ntermed1ate heat exchanger would diffuse into the steam
 
-system and thus would introduce hazards problems. The problems are
-essentially similar to those posed by tritium generation in the fuel
-salt, but it appears that they can be handled more readily if fluoro-
-borate is employed rather than Flinak.
+system and thus would 1ntroduce hazards problems. The problems are
+
+'essentlally s1milar to those posed by ‘tritium generatlon in the fuel
+- salt, but it appears that they can be handled more readlly if fluoro-
+L borate is employed rather than Fllnak.
  
+
+ 
+
+ 
  
 
 v
 
 10.
 
-11.
+-1,
 
-“12,
+o
 
-14.
+14,
 
-55
+35
+.,REFERENCESf
 
-REFERENCES
-
-A, P. Fraas, Conceptual Design of a Molten Salt Reactor with Its
+A. P. Fraas, Conceptual Design of a Molten Salt Reactor with Its
 Intermediate Heat Exchangers and Fuel Pumps Integrated in a Common
-Pressure Vessel, internal ORNL memorandum, April 13, 1971,
+Pressure Vessel, internal ORNL memorandum, April 13, 1971.
 
-M. M. Yarosh, Evaluation of the Performance of Liquid Metal and
+M. M. Yarosh, Evaluation of the'Performance'of Liquid Metal and
 Molten Salt Heat Exchangers, Nucl. Sci. and Eng., 8: 32 (1960).
 
-E. N.. Sieder and G. E. Tate, Heat Transfer and Pressure Drop of
+E. N. Sieder and G. E. Tate, Heat Transfer and Pressure Drop of
 Liquids in Tubes, Ind. Eng. Chem., 28: 1429-1435 (1936).
 
-A. P. Colburn, A Method of Correlating Forced Convection Heat Trans-
-fer Data and a Comparison with Fluid Friction, Trans. AIChE, 29: 174—
-209 (1933).
+A, P. Colburn, A Method of Correlating Forced Convection Heat Trans-
+fer Data and a Comparlson with Fluid Friction, Trans. AIChE, 29: 174—
+209 (1933). |
 
-P. Miller, J. J. Byrnes, and D. M. Benforado, Heat Transfer to Water
-Flowing Parallel to a Rod Bundle, AIChE Jour., 2: 226-235 (1956).
+P, Miller, Jd. dJ, Byrnes, and D. M. Benforado, Heat Transfer to Water
+Flowing Parallel to a Rod Bundle, AIChE Jour., 2: 226235 (1956).
 
 B. Lubarsky and S. J. Kaufman, Review of Experimental Investigations
 of Liquid-Metal Heat Transfer, NACA TR 1270, 1956.
 
-A. P. Fraas and M. N. Ozisik, pp. 60-61, Heat Exchanger Design, John
+A. P. Fraas and M. N Ozisik, PP. 60—61 Heat Exchanger Design, John
 Wiley & Sons, New York, 1965.
 
 J. R. McWherter, MSER Mark I Primary and Secondary Salts and Their
-
 Physical Properties, internal memorandum MSR 68-135, Sept. 27, 1968.
 
-J. H. DeVan and R. B. Evans, III, Corrosion Behavior of Reactor Mate-
+J. H. DeVan and R, B. Evans, III, Corrosion Behavior of Reactor Mate-
 rials in Fluoride Salt Mixtures, USAEC Report ORNL-TM-328, Oak Ridge
 National Laboratory, Sept. 19, 1962.
 
 J. H. DeVan and R. S. Crouse, Examination of Nickel-Molybdenum Forced
 Circulation Loop 7641-9, Oak Ridge National Laboratory, unpublished
-internal document, Aug. 13, 1957.
 
-J. H. DeVan and R. S. Crouse, Examination of Hastelloy B Pump Loops
+internal document, Aug 13, 1957.
+
+'J. H. DeVan and R. S.- Crouse, Examination of Hastelloy B Pump Loops
+
 7641-1B and 7641-2B, Oak Ridge National Laboratory, unpublished in-
-ternal document, Jan. 17, 1957.
 
-MSRP Quarterly Progr. Rept. July 31, 1959, USAEC Report ORNL-2799,
-Ozk Ridge National Laboratory.
+':ternal document, Jan 17, 1957
 
-MSRP Quarterly Progr. ‘Rept. Jan. 31, 1959, USAEC Report ORNL-2684,
-Oak Ridge National Laboratory.
+._MSRP Quarterly Progr. Rept July 31 1959 USAEC Report 0RNL-2799
 
-MSRP Quarterly Progr. Rept. Oct. 31, 1958, USAEC Report ORNL-2626,
-Oak Ridge National Laboratory.
+Oak Ridge National Laboratory.,
+
+MSRP Quarterly Progr Rept Jan 31, 1959 USAEC Report ORNL-2684
+Oak Ridge National Laboratory :
+
+MSRP Quarterly Progr. Rept. Oct. 31, 1958, USAEC Report 0RNL-2626
+
+ Qak Ridge National Laboratory
 
  
  
@@ -1891,40 +1989,43 @@ Oak Ridge National Laboratory.
 
  
 
-15,
+ 
+
+15.
 
 16.
 
 17.
 
-18.
+18,
 
-19 4
+19.
 
 20.
 
 36
-
 MSRP Quarterly Progr. Rept. June 30, 1958, USAEC Report ORNL-2551,
-Oak Ridge National Laboratory.
+
+Ozk Ridge National Laboratory.
 
 MSRP Quarterly Progr. Rept. Jan. 31, 1958, USAEC Report ORNL-2474,
 Oak Ridge National Laboratory.
 
 J. W. Koger and A. P. Litman, Compatibility of Hastelloy N and Croloy
-9M with NaBF,-NaF-KBF,; (90-4-6 mole %) Fluoroborate Salt, USAEC
-Report -ORNL-TM-2490, April 1969.
+9M with NeBF,-NaF-KBF,; (90-4-6 mole %) Fluorcborate Salt, USAEC
+Report -ORNL-TM-2490, . April 1969, '
 
-MSRP Semiann., Progr. Rept. Feb. 29, 1968, pp. 218-225, USAEC Report
-ORNL-4254, Oak Ridge National Laboratory.
+MSRP Semiann. Progr. Rept. Feb. 29, 1968, pp. 218-225, USAEC Report
+ORNL~-4254, Oak Ridge National Laboratory
 
-MSRP Semiann. Progr. Rept. Aug. 31, 1970, pp. 166-176, USAEC Report
-ORNL-4622, Oak Ridge National Laboratory.
+MSRP Semiann. Progr. Rept. Avg. 31, 1970, pp. 166-i76,_USAEC Report
 
-A. P. Fraas, A New Approach to the Design of Steam Generators for
-Molten Salt Reactor Power Plants, USAEC Report ORNL-TM-2953, Oak
+ORNL-4622, Ozk Ridge National Laboratory.
 
-Ridge National Laboratory (to be published).
+A. P, Fraas, A New Approach to the Design bf Steam Generators for
+Molten Salt Reactor Power Plants, USAEC Report ORNL-TM-2953, Ozk
+
+Ridge National Isboratory (to be published).
  
 
 37
@@ -1936,154 +2037,147 @@ APPENDICES
 
  
 
- 
-
-»
+i
 
 39
 APPENDIX A
 
 Solution of the Heat Exchanger Equations
 
- 
-
 This appendix gives details of the elimination process involved in
 going from the equation set, Eqs. 12 through 22, to the single equation in
-tube-side mass flow, Eq. 23. We begin by using Eqs. 12 and 22 of the text
+tube-side mass flow, Eq. 23. We begin by using Egs. 12 and 22 of the text
 
 to eliminate the shell-side flow area from the set, giving
 
-Cy
-G ND . (A-1)
+C,
+GND = o—m0 ., : (A-1)
 
-ss Cy
-
-We next eliminate the shell-side heat transfer coefficient between Egs. 14
-and 17 and the tube-side heat transfer coefficient between Eqs. 15 and 18
+We next eliminate the shell-side heat transfer coefficient between Eqs. 14
+and 17 and the tube-side heat transfer coefficient between Egs. 15 and 18
 
 to give
-I _ 2 (A-2)
-8 5s 7s Cg’
-c
-1-T, TT _ A -
-L" “°ND,3AT, = c (4-3)
+[1-S2y 524831 Ss o _ 2 | (ac2)
+s B T8 Cg’ |
+| o
+1-T, T s | ]
+L NDtBATt =5 (A-3)
 
-By combining Eqs. 16 and 19 with Egs., A-2 and A-3 the three temperature
+By combining Eqs. 16 and 19 with Egs. A-2 and A-3 the three temperature
 differences through the two fluid films and the tube wall may be eliminated
 
 at one fell swoop to give
 
-Cs a +. Cs
--1 1 =S3,1-55-83.S> «T3.To | _ -
-Lin |e; D I°2 + C5 + 6, L'2 | = Cg (A-4)
+c .
+- -S3pl- 52 "83752 40=T3 To | _ -
+L]'N [Césns L™ + Cs + 56,7772 | = Cg . (A-4)
 
-We now obtain an expression for the product LN from Egs. 13 and 21,
+We now obtain an.expressibnifor the product LN from Eqs. 13 and 21,
 
-RR Ts . }
-1-1 t _
-viv! = ota’ (a-5)
+G3-T5
+
+LlN'
 
  
+
+CZCIO ? o (8-5)
 
 using it in Eq. A-4 to obtain
  
 
 40
 
-Cs Cs
-3-75 -S3.1-85-83.82 3-75
-TaCeCiolt Gs Dg Lo + an
+C .
+3-T5 -S3.1-S5-S3. S, 3-7,
+CaCeCiolt U Dy L2 CZCIOGt
 
-C4 3-T5-T5.T2
+c
+4 3-T3-T5, T2 _ Ce
 
-+ Trot | =Cs- (a6)
+Y+ CCeCrot | (a-6)
 
 The number of tubes, N, may be eliminated between Eqs. 13 and A-1 to give
 
-C
-1 1
-GG, D, = Cat (A-7)
-A rewriting of Eq. 21 yields an expression for the tube length, IL,
-L = CoGl572 (4-8)
-
-t
+_ Cc
+-1 1
+GSGt Ds = m . (A-'?)
+A rewriting of Eq. 21 yields an expression for the tube length,_L,
+L= oG5 2, ' , (A-8)
 
 which may then be used to eliminate tube length from Eqs. 20 and A-6,
 
 giving
-2-S5 Ms-2 -1-S5 _ °°
-“S5T5-2p=1-55 | _~ -
-GS "7G. “D 0, (4-9)
+2-S; Ts-2 -1-S5 _ C9
+o5 e TRS L -
+G, T°G.° "D 0o (4-9)
 
 and
 
-CO 5s (n,m), Sapl-Sa6 _S5 3-1,
+'_fifig_es-m5+sz(T5-2) “Sapl-S2-5s _5 3.,
 
-C2CeCr0 t s C2Ci0 t
+0206010 t B CQCIQ t
 
-C003
-10 3-T-T 5405 (T5-2) _
-* Tait . (A-10)
+C,0N2
+10 M. _ -
+
+02C7C10 t ’
 
 From Eq. A-7, we obtain an expression for the shell side equivalent
 
-diameter, D.,
+diameter, Dé,
 
-. C, 1
+. Cl 1
 
-D, = T201:0t%s (A-11)
+%~ 501 % (h-11)
 
-Then, using this expression in Eqs. A-9 and A-10, we obtain Eqs. A-12
-and A-13,
+Then, using this expression in Egs. A-9 and A-10, we obtain Egs. A-12
+
+- and A-13,
  
 
 41
 
-1+S
-Cc c 5
-o3-85+Ts _ id cE
-60 to C10.C2C12 (8-12)
-S, 1-55-53
-ee] oe g4-83-T5+82(T5-3)82-1 C5 31s
-C2CeCi0 C2C11 t s C2Ci0 t
-T» .
-CiCa6 4 :
-— -T3-T5+T2(T5-2) _ _
-+ C2CrCyo t =Cg , (A 13)
+1455
 
-in which the only remaining unknowns are the two mass flows, Gg and G,.
-Finally, we eliminate the shell-side flow from Eq. A-13 by using
+C C
+o~3-554T5 _ i
+Gs t - C10lC2Cq1 | (3 )
+. S, 1482-83 |
+c5C53 [ Gy J - S3-T5+62(T5-3) Sp-1 , 0% 3-Ts
+C2CeC10L.C2C11 . S Czclo t
+To ' ' '
+CaCi6 4 ’
+3-T3-T5+T2(T5-2) _ - -
+* TalrCro t =G | )
 
-Gq [= (om)
+in which the only remaining unknowns are the two mass flows, Gs and Gt'
+Finally, we eliminate the shell-side flow fram Eq. A-13 Dby using
 
-which is simply a rearrangement of Eq. A-12, to give a single equation in
-which the only unknown is the tube-side mass flow, G
+Gg [010 <;2011
 
-i 3
-| gh (85°T5)/3 , (a-14)
+‘which is simply a rearréhgement of Eq. A-12, to give a single equation in
+
+1465 1/3 | |
+5:, G_t+(85—T5)/3 , | N (A-14)
 
  
 
-4
+which the only unknown is the tube-side mass flow, Gt'
 3-Ts
-Gy +
-S, (s,-1)/3 1-8,-S3+(S2-1)(1+55)/3
-lily Cy 3-252-53+(52-1) (215485) /3
-CsCg Cio C2C11 t
-CaCa8 5g, myer (T 2) C2CeCro
-+ —— > T3-T5+T2(T5 —_——=0 (a-15)
+Gt +
+Sa_q. (82-1)/3 1-52-53+(S2-1)(1+85)/3 |
+Eif__[c ] | [ o T | | G3-252'33+(52'1)(2T5+35)/3
+C5C¢ LCir0 C2C1a | - t
+C4C$o | ‘ C2CgCao
+| 3-T3-T5+T3(T5-2) _ 10 -
++Wt c T - _—CS =0, _ (A-15)
+Now, defining coefficients,clg, C20, 8nd Cpy by
+e | 0203010 o .(A 16)
 
-CsCy t oo Cs :
-Now, defining coefficients Cjg9, Cpg, and Czy by
+(8- l)/3 1-32-53+(sz-1)(1+sg)/3
 
-C2CgCi0
-
-(82-1)/3_ 1-8,-S3+(82-1)(1455)/3
-
-S
-oy ] Cc
-Cog = —— -
-20 C5Ce C10 | €2C11 | ’ (a 17)
+c . 03010 Cl _ _ .
+20 = T5Ce [Clo- RN 02011] , 7 (4-127)
 
  
  
@@ -2092,44 +2186,29 @@ Cog = —— -
 
 42
 
-C;C18
-C2 = CsCr 2
+ 
+
+C4C$§
+- Cpy = CsCy (a-18)
+and exponents Ei, E,, and E; by -
+E, = 3-Ts , B ’ (A-19)
+Ep = 3-285-83+(S2-1)(2T5455)/3 , (A-20)
+E3 = 3-T3-T5+T2(T5-2) - (a-21)
+ﬁe reducg_Eq. A-ls fo |
+Gfl + czoef2 + czlef-" - Cig =0, (23)
+
+which is Eq. 23 of the text.
+ 
 
  
 
-and exponents E,, E,;, and E; by
+ 
 
-Ey
-
-3-Ts5 ,
-
-Ep = 3-255-S3+(S,-1)(2Ts54S5)/3 ,
-
-E3 = 3-T3-T5+T2(T5-2)
-we reduce Eq. A-15 to
-
-E E E ne
-Gt + C20Gy ? + C216,” - Cio
-
-which is Eq. 23 of the text.
-
-0,
-
-(5-18)
-
-(a-19)
-(aA-20)
-
-(a-21)
-
-(23)
- 
-
-ny
+»
 
 43
 
-APPENDIX '!B. FORTRAN PROGRAM FOR COMPUTER: SOLUTION
+APPENDIX B, .FORTRAN :PROGRAM FOR COMPUTER:SOLUTION
 OF THE HEAT EXCHANGER EQUATIONS
 
 A brief description of the operation of a FORTRAN program written for
@@ -2140,7 +2219,7 @@ description. Instructions for program use will be found in Appendix C.
 
 Program Line No. Operation
 
-1-3
+1 -3
 100 — 110
 
 115 — 125
@@ -2148,20 +2227,21 @@ Program Line No. Operation
 130 — 135
 
 140
-145 — 185
+
+145 =~ 185
 190 — 215
 220 — 335
-340 = 370
+
+340 ~ 370
 
 375
 
 380 — 430
 
 435
-
 440
-
 445
+
 450 — 455
 
 460 — 650
@@ -2177,144 +2257,142 @@ case number equal to one, if not specified. Read
 and test "NIN"; stop if zero or negative.
 
 Read NIN values into locations J in array DAT.
-Set program variables from array; print case number.
+Set program variables from array; print case number,
 Convert units; compute quantities needed later.
 
-Compute coefficients C; through C,; and exponents
-E, through Es. Assume turbulent flow, both fluids.
-Compute estimate for G, from Eq. 24.
+Campute coefficients C, through 021 and exponents
+Ey through Es. Assume turbulent flow, both fluids.
+-Compute estimate for G from Eq. 24.
 
-Newton's Method iteration for G_; if converged, to
-line 380.
+Newton's Method 1teration for G,_; if converged, to
+line 380,
 
 If iteration fails to converge in 10 trials, print
-warning message and continue,
+Awarning message and continue,
 
-Compute Gg corresponding to Gi; compute actual flow
-regime and compare with assumed. If in agreement,
-to line 460; otherwise, to appropriate line, 435-—
-450.
+Compute G corresponding to Gi; compute actual flow
+regime and compare with assumed If in agreement,
+to line 460; _otherW1se, to appropriate line, 435—
+- 450. -
 
-Assume laminar flow on tube side. Repeat 280-430.
-Assume laminar flow on shell side. Repeat 280-430.
-Assume turbulent flow, tube side. Repeat 280-430.
+Assume leminar ﬂow on tube. side. Repeat 280-430.
+Assune laminar flow on shell side. Repeat 280-430.
 
-Arrival here means that no combination of assumed
-flows yields a self-consistent result. Program .
-gives up, prints warning message, and reads in the
-data for the next case. (This has never happened
+Assume turbulent flow, tube side. Repeat 280~430.
+
+Arrival here-means that no combination of assumed
+flows ylelds a self-consistent result. Program .
+
+- glves up, prints warning message, and reads in the
+
+~data for the next case. (This has never happened
 in any of the many calculations made to date. )
 
-Compute remaining dependent variables, edit, and
+Compute- remaining dependent varlables, edit and
 print.
 
 Return to read in data for next case.
-No—~
+660
 
-660
 665 = 700
 
 705
 
  
 
-Program stop.
+Program stop,
 
 Subroutines for setting coefficients and exponents
 according to flow regime. See Table 3,
 
-Input date bank stored after this line.
+Input data bank stored after this line.
  
-
- 
-
- 
 
 &
 
-~
+™|
 
 HEATX2
-1% HEATX2. HEAT EXCHANGER DESIGN. Me. LAVERNE. 9102 3-5702
-o% 19 MAR 1970 :
+1% HEATX2. HEAT EXCHANGER DESIGN. M. LAVERNE. 9102 3=5702
+o 19 MAR 1970
 
-3%
+3% |
 
-100 REAL MUS, MUT»s KS» KT» KWALL» LTUBEs> NTUBE
+100  REAL MUSs MUT» KS» KT, KWALL, LTUBE»> NTUBE |
 
-105 DIMENSION DAT (20)
+105 DIMENSI@N DAT(20) )
 
-110 COMMON CLAMSCURT»S15,5255S3+545555T12T22T35T4sTS
-115 PI = 3.141592654; PI04 = Pl/4.
+110 COMMON CLAM:CURT:SI152053054’55:Tl:T2:T3:T4:T5
+115 PI = 3.1415926543 PI104 = Pl/4.
 
-120 CURT = 14/33 CLAM = 4./10.tCURT
+120 CURT = 147343 CLLAM = 44./10tCURT
 
-125 TWOGC = 64.348%3600.123 C00 = «5*PI/SQRT(3+)
-130 1 DAT(C20) = DAT(20)+1.0
+125 TWOGC = 64.348%3600.123 C00 = 5*%PI/SQRT(3+)
+130 | DAT(20) = DAT(20)+1.0
 
-135 READ, NIN3s IFCNIN) 21,21
+135 READ, NIN3 IFC(NIN)Y 21s21
 
-140 READ» CJoDATCJY» I=1NIN)
+140 READ» (JsDATCJY2I=1sNIN)
 
-145 0 = DAT(1)
+145 @ = DATCI1)
 
 150 DPS = DAT(2)3 TSI = DAT(3)3 TSO = DAT(4)
 
-155 CPS = DAT(S)3 MUS = DAT(6)35 KS = DAT(7)3 RHOS = DAT(8)
-160 DPT = DAT(9)3 TTI = DAT(10)3 TTO = DAT(11)
+135 CPS = DAT(S5)3 MUS = DAT(6)3 KS = DAT(7)3 RHOS = DAT(8)
+160 DPT = DAT(9)3 TTI = DAT(10)3 TT® = DAT(11)
 
-165 CPT = DATC12)3 MUT = DATC(13)5 KT = DAT(14)3 RHGT = DATC(1S)
+165 CPT = DAT(12)3 MUT = DAT(1335 KT = DAT(14)3 RHOT = DAT(15)
 
-170 DO = DAT(16)3 TW = DAT(17); KWALL = DAT(18)
-175 RHOW = DAT(19)3 ICASE = DAT(20)
+170 DO = DAT(16)3 TW = DATC17); KWALL = DAT(18)
+175 RHOW = DAT(19)s ICASE = DAT(20)
+180 PRINT 30, ICASE ,
 
-180 PRINT 30, ICASE
+185 30FBRMATC/“CASE "» 13)
 
-185 30FORMAT(/“CASE "» I3)
+190 DPS = 144.%DPS3 DPT = 144.%DPT
+195 DO DO/12+3 TW = TW/12+3 DT = DO-2+%THW
 
-190 DPS = 144.%DPS3 DPT = 144.*DPT
+200 A0 = PI@A*DO*DO3 AT "= PIﬁA*DT*DT: AW = AO-AT
 
-195 . DO = DO/12.3 TW = TW/1243 DT = DO-2+%TW
+205 DTS = TSI-TSO3 DTT = TTO-TTI
+210 DT1 = TSI-TTQs DT2 = TS@-TT1
+215 DM = (DO-DT)/LO@GC(DO/DT)
+220 €08 = DTi: IF(DTI-DT2) 2,3,2
+225 2 CO08 = (DTI—DT2)ILGG(DT1/DT2)-
+230 3 CO0S5 = Q/PI :
+235 CO1 = Q/(CPS*DTS)3 coz = QI(AT*CPT*DTT)
+240 C03 = COS/D0s3 .CO4 = COS/DT3 CO5 = COS*TwW/ (DM*KWALL)
+245 co6A = (CPS*KS:Z*MUSTtCURT , ' '
+250 CO7A = (CPT*KT?2*MUT)OCURT/DT
+255 CO%9A = TW@GC*RHOS*DPS
+260 C10A = TWGGC*RHGT*DPT*DT
+265 Ci1t = PI@4xD03 C12 = CO1/C€CO02%C11%3 C13 = CO3/C05
+270 C14 = C04/C053 C15- 602*008/005: N=0 R
+275~ CALL STURB3 CALL TTURB; 1AS = IAT = -
+"280 4 CO6 = CO6A%S1/MUS+S3 '
+285 €07 = COTA*T!*DT?(TE+T3)IMUT?T3
+290 €09 = CO%A/(S4*MUStSS) -
+298 Cl0 = ClOA*(DT/MUT)fIS/T4
+300 _Cté = C13/C063 c17 = 009/0103 018 = 0141007
+©.- 305 €19 = C15%C10 ~
+310  El = 3.-TS53 E4 = (S2- 1. )/3.; .
+315 E2 = 3.-2.%52-S3+E4*(2.%T5+55)
+- 320 E3 = E1-T3+4T2%(T5-24)
+325 ES = 1.-S2- sa+aq*c1.+ss>h*
 
-200 AO = PI@4*DO*D03 AT = P104*DT#DT3 AW = AO-AT
-205 DTS = TSI-TS@3 DTT = TT@-TTI
-210 DT! = TSI-TTOs DT2 = TS@-TTI
-
-215 DM = (DO-DT)/L@G(DO/DT)
-
-220 C08 = DT1s IF(DT1-DT2) 2,3,2
-225 2 C08 = (DT1-DT2)/LBG(DT1/DT2)
-230 3 C05 = Q/PI Co
-235 COl = Q/(CPS#DTS)s C02 = Q/C(AT#CPT#DTT)
-240 C03 = COS/DO;3 .CO4 = COS/DT3 COS = COS*TW/(DM*KWALL)
-245 CO6A = (CPS*KSt24MUSYtCURT
-250 COTA = (CPT*KTt2*%MUT)*CURT/DT
-255 CO9A = TWOBGC*RHOS*DPS
-260 C10A = TWOGC*RHOT#DPT*DT
-265 C11 = P104x*D03 C12 = CO1/(CO02#C11)>3 C13 = C03/C05
-270 C14 = C04/C053 C15 = CO2%CO8/C0S3 N = 0 oo
-275 © CALL STURB3 CALL TTURB3 IAS = IAT = 1
-280 4 C06 = CO6A*S1/MUS®S3
-285 C07 = COTA*T1%DTt(T2+T3)/MUT®T3
-290 C09 = CO9A/(S4*MUStSS) -
-29S C10 = ClOA*(DT/MUT)+TS/T4
-300 C16 = C13/C063 C17 = C09/C103 C18 = C14/C07
-- 305 C19 = C15%C10 EE
-310 - El = 3.-T53 E4 = (S2-1.)/3.
-315 E2 = 3.-2.%52-S3+E4%(2.%T5+55)
-320 E3 = E1-T3+T2%(T5-2.)
-325 E5 = 1.-82-S3+4E4%(1.+S5)
-
-330 C20 = C16*C10tS2%C1TtE4%C12¢ES
+330 €20 = C16%C10152%C171EASCIZIES
 
  
  
+
+ 
 
 L6
 
 HEATX2 CONTINUED
 
 335
+
 340
 345
 350
@@ -2349,192 +2427,204 @@ HEATX2 CONTINUED
 
 490
 495
-S00
+500
 505
 510
-S15
-S520
+515
+520
 525
 530
 535
-S540
+540
 545
 550
 555
 S60
-S65
+565
 570
 575
-S80
+580
+
+22FORMATC(//T7X"P DRGP T IN
 
 C21 = C18%C10tT23 GT = 0.9%(C19/(C20+C21))t(1./E2)
-De SI =1, 10 :
-GT! = GTtEl13 GT2 = GTtE2;3 GT3 = GTtE3
-GT20 = C20%GT23 GT21 = C21%GT3
-FUN = GT1+4GT20+GT21-C19
-DER = (E1*GT1+E2*GT20+E3%GT21)/GT3 DGT = FUN/DER
-GT = GT-DGT3 IF C(ABS(DGT/GT)-1+E-S5) 6
-5 C@NTINUE
-PRINT, tt"NOT CONVERGED. DGT/GT =", DGT/GT
-6 GS@GT = (C17*Ct12t(1.455)*%GT+(S5-TS5))1CURT
+DO S I =1, 10 »
+GT! = GT*El13 GT2 = GTtE23 GT3 = GT*ES3
+G6T20 = C20%GT23 GT21 = C21%GT3
+FUN = GT1+GT20+GT21-C19 :
+DER = (E1*GT1+E2*GT20+E3*GT213)/GT3 DGT = FUN/DER
+GT = GT-DGT3 IFC(ABS(DGT/GTX-1.E-5) 6 :
+5 CONTINUE ' ,
+PRINT» tt"NOT CONVERGED. DGT/GT ='"» DGT/GT
 
-GS = GT*GSOGT3 DS = C12/GSOGT
+6 GSAGT = (C17*C121C1.+SS)*GTt(S5~T5))*1CURT
+
+GS = GT*GSOGTs DS = C12/GSOGT
 RET = GT*DT/MUT3 RES = GS*DS/MUS
-ICT = 03 IF(RET-1502.) 73 ICT = 1
+1CT = 03 IFCRET-1502.) 73 ICT = 1
 
-7 NT = 03 IFC(IAT-ICT) 9,8,9
+7 NT = 03 IFCIAT-ICT) 9,859
 
 8 NT = 1
 
 9 ICS = 03 IF(RES-994.) 103 ICS = 1
 
-10NS = 03 IFCIAS-ICS) 12,11,12
-1INS = 1 ’
+10NS = 05 IFC(IAS-ICS) 12,11,12
+1INS = 1 o
 12IF(NT*#NS) 13,13,18
 
 13N = N+13 GO TO (14,15,16,17) N
 
 14CALL TLAM 3 IAT = 03 GO TO 4
 1SCALL SLAM 3 IAS = 03 GO TO 4
-16CALL TTURB3 IAT = 13 GO TO 4
+16CALL TTURB3 IAT = 13 G@ TO 4
 
-17PRINT, ‘ASSUMED AND CALCULATED REGIMES DO NOT AGREE."
-Gg TO 1
-18LTUBE = C10*%GTt(T5-2.)3 NTUBE = CO02/GT .
-AS = C01/GS3 HS = CO6*(DS*GS)*tS3*%(DS/LTUBE)*+S2/DS
-VS = GS/RHOS3 VT = GT/RHOT }
-HPS = DPS*AS*VS/1.98E63 HPT = DPT*AT*NTUBE*VT/1.98BEé
-HT = CO7*GT+T3/LTUBE*T23 DTW = COS/ (LTUBE*NTUBE)
-FDTT = C14%DTW/HT3 FDTS = C13*DTW/HS
-S = SQRT(COO0*DO*(DS+D0)) i
-BUNWT = LTUBE*(NTUBE*(AT*RHOT+AW*RHBW)+AS*RHOS)
-PRINT 2050512+.%D05>12+%TW>124+%DT»KWALL »RHOW
-PRINT 22,DPS/144.,TS1,TSO,CPS>MUSsKS,RHOS,
-+DPT/144¢5sTTI»TTO,CPToMUT>KT,RHOT
-PRINT 24, NTUBE,LTUBE,12.%S,12+.*DS»
-+AS*L TUBE» AT*LTUBE*NTUBE » AW*L TUBE #NTUBE » BUNWT
-PRINT 26,C08,DTW,FDTS»HSsFDTT,HT
-PRINT 28,GT/GS»>GS»VS/3600.,HPSsRES»GT»VT/3600+,HPT>RET
+17PRINT, °*ASSUMED AND CALCULATED REGIMES DO NQT,AGREEQ“
 
-20FBRMAT (/3X" HEAT" 3X4 (AX"TUBE*)7X"TUBE"/
-+3X"LOAD" TX" BeDe "4X" WALL" AX" IeDe "6X" K" TX" DENSITY" /
-+2X"BTU/HR "3(6X"IN"I2X"BTU/HR FT F LB/FTt3'/
-+1PE10:.3,0P3F8.4sF9.25F11.1)
+Go TO 1 |
 
-22FPRMATC(//7X"P DROP T IN T QUT SP. HEAT VISCOS'Y
-+ CONDUCTIV'Y DENSITY'"/9X"PSI"SX"F"6X"F*™4X"BTU/LB F
-+ LB/HR FT BTU/HR FT F LB/FTt3"/
-+" FUEL:"F6¢05F8¢05F7+05FB8e35F1025F11.2,F12.1/
+18LTUBE = C10#GTt+(TS-2.)3 NTUBE = C02/GT _
+AS = CO1/GS3 HS = CO6%(DS*GS)1S3#(DS/LTUBE)*S2/DS
+VS = GS/RH@S3 VT = GT/RHOT - -
+
+HPS = DPS*AS#VS/1.98E63 HPT = DPT#AT*NTUBE#VT/1.98E6
+
+HT = CO7*GT+T3/LTUBE*T23 DTW = COS5/ (LTUBE*NTUBE)
+FDTT = Cl1A4%DTW/HTs FDTS = C13*DTW/HS
+
+S = SQRTC(COO*DO*C(DS+D0))? ,
+
+BUNWT = LTUBE*(NTUBE*(AT*RHOT+AWX*RHOW) +AS*RHOBS)
+PRINT 205Q512.%D0s12¢%TWs12+%DT»KWALL»RHGW
+PRINT 22,DPS/144.,TSI,TS0,CPS>MUS,»KS,RHBS,
++DPT/144¢>TTI>»TTO>CPT>MUT>KT»RHOT ‘
+
+PRINT 24, NTUBESLTUBE,12.%S512.*DS>»
+
++AS*L.TUBE s AT*LTUBE*NTUBE » AW*LTUBE*NTUBE »BUNWT
+PRINT 26,C08,DTWsFDTSsHSsFDTTHT
+
+PRINT 285GT/GS»GSsVS/3600+sHPSsRESsGT»VT/3600+5HPTHRET
+
+20FORMAT (/3X"HEAT"3XA4(4X"TUBE"Y7X"TUBE"/
+
++3X"LOAD" 7X"TeDeAX"WALL"AX" 1D 6 X"K"TX""DENSITY"/
++#2X"BTU/HR "3C(6X"IN")2X"BTU/HR FT F LB/FT*t3*"/
++1PE10:35s0P3F8¢4sF9:25F11+1)
+
++ LB/HR FT BTU/HR FT F LB/FT*3'/
++* FUEL:"F6¢05F8¢05FTe05F835sF10.25F11.25F12.1/
+
+T QUT SP. HEAT VISCOS'Y
++ CONDUCTIV'Y DENSITY"/9X"“PSI"SX"F"6X"F"4X"BTU/LB F
  
-
-b7
-\ HEATX2 CONTINUED
-
-585 +" SALT:"F6.05F8:05F7+0sFB83,F10.2,F11.2,F12.1)
-
-590
-
-595 24FGRMAT(//' NUMBER"AX2("TUBE"4X)"EQUIV«"6X"VOLUMES" 7X""BUNDLE"/
-600 +"@F TUBES LENGTH SPACING DIAM'R FUEL SALT TUBE™2X"WEIGHT"/
-605 +12X"FT “2(SX"IN"2X)3(2X"FT?3")4X"LB"/F7e0,F84122F944,3F641,F8.0)
-610 : . . To :
-615 26FORMAT(/74X"LMTD WALL DT"10X"FILM DT COEFFICIENT"/
-
-620 #SX"F"TX"F*"16X"F" 4X"BTU/HR FTt2 F"/2F8.1,3X" FUEL:",
-
-625 +F8+15F11.0/20X"SALT:"sFBs1,F11.0)
-
-630 . .
-
-635 28FORMAT(//"FLOGW RATI@"11X"FLOWS"AX"VELOCITIES PUMPING
-
-640 + REYNOQLDS®/3X"GT/GS"11X"LB/HR FTt2 FT/SEC" 6X"HP"
-
-"645 +5X*NUMBERS™/F8+454X" FUEL:"1PE!1+4,0PF8+15F11+0,F10.0/
-
-650 +13X"SALT:"1PE11.4,0PF8. 15F11.0,F10.0/7)
-
-655 Gg To 1
-
-660 21STOP
-
-665 SUBROUTINE SLAM3 COMMON CLAMsCURT»S1,525S3554sS55T1,T2,T3sT45TS
-6170 S1=CLAM3 S2=S53=CURT3 S4=64+3 S55=1«3 RETURN
-
-675 SUBROUTINE TLAM3 COMMON CLAM>CURT»S1,52553554,55,T1,T2,T3,T4>T5
-680 T1=CLAM3 T2=T3=CURT3 T4=64.3 TS5=1.3 RETURN
-
-685 SUBROUTINE STURB3COMMON CLAM CURT, S152, 53, 54,55: T1,T2,T3, T4> TS
-690 S1=.0323 S2=043 S3=+83 S4=.2563 552.23 RETURN
-
-695 SUBROUTINE TTURB3COMMON CLAM>CURT»S15S25S3554555,T1,T2,T3,T4»T5
-700 T1=.0233 T2=0.3 T3=.83 T4=.1843 T5=.23 RETURN
-
-705 $DATA )
-
- 
-
- 
-
- 
 
  
 
 »
 
+ 
+
+“
+
+ 
+
+u7
+HEATX2 CONTINUED
+
+585 +" SALT'"F6 OoFS 0:F7 OJFS 35F10+2,F11.2,F12.1)
+
+- 590
+
+595 24FORMATC(//™ NUMBER"4X2("TUBE"AX)"EQUIV "6 X"VOLUMES" 7X""BUNDLE"/
+
+600 +"@F TUBES LENGTH SPACING DIAM'R FUEL SALT TUBE"2X"WEIGHT"/
+
+605 412X"FT "2(5X“IN"2X)3(2X“FT*3")4X“LB"/F7-0:F8-l:2F9.4:3F6.1:F8 0)
+
+" 610
+
+615 26FGRMAT(//4X"LMTD WALL DT“IOX"FILM DT CIEFFICIENT"/
+
+620 +SX"F"TX"F"16X"F"4X"BTU/HR FTt2 F"/2F841,3X" FUEL:",
+
+625 4F8+41,F11.0/20X"SALT3"sF8¢15F11.0)
+
+630 : ' L , : '
+
+635 28F@RMAT(//"FLOW RATIG"11X"FLOWS"4X"VELOCITIES PUMPING
+
+640 4 REYNPLDS"/3X"GT/GS*"11X"LB/HR FTt2 FT/SEC"6X"HP"
+
+645 +5X“NUMBERS"/F8+4,4X"” FUEL:"1PE11+4,0PF8:1,F11.0,F10.0/
+
+650 +!3X"SALT'"1PEllo4:0PF8 1,F11.0,F10.0/77) '
+
+655 GO T@ 1
+
+660 21STOP
+
+665 SUBRGUTINE SLAM3 COMM@N CLAM:CURT:SI:S2:SS:S4:SS:T!:T23T3:T4:TS
+
+670  S1=CLAM3 S2=S3=CURT3 S4=64.3 S5=1.3 RETURN
+
+675 SUBRGUTINE TLAM;3 COMMON CLAM,CURT»51,52553554,55,T1,T2,T35T4,T5
+
+680 T1=CLAM3 T2=T3=CURT3 T4=64.3 T5=1.3 RETURN
+
+- 685 SUBROUT INE STURB3COMMON CLAM:CURT:SI:S2aS3:S4:SS:T!aT2:T3:T4:T5
+- 690 S1=+0323 S2=0e3 S3=+83 S4=.2563 55=.23 RETURN
+
+695 SUBRGUTINE TTURB3COMMON CLAM:CURT:SIoS2aSS:SA:SS:Tl:T2:T3oT4:T5
+700 T1=.0233 T2=0.3 73=-Bi T4=.1843 TS=.23 RETURN
+
+705 $DATA :
+
 LENGTH
-ABOUT S800 CHARS.
-
- 
-
- 
-
-Li)
-
- 
+ABGUT 5800 CHARS.
  
 
-48
+L8
 
 APPENDIX C
 
 SAMPLE COMPUTER PROGRAM INPUT AND OUTPUT -
 
-This Appendix contains information on the preparation of input for -
+This Appendix contains information on the‘preparationVOf input for -
 the computer program described in Appendix B. A suggested input form, com-
-pleted, and the corresponding paper tape’ information are shown, followed
-by a sample printout from a computer run.
+pleted, and the corresponding paper tapeiinformation are shown, followed
+by a sample printout from a cdmputer run. B |
 
-Table C-1 shows a suggested input form for HEATX2, with data entered
-for two sample cases. Note that the given units are not completely con-~
-sistent but are specified for convenience. Conversion to a consistent
-set is performed internally by the program.
+Table C-1 shows a suggested input form for HEATXE,with-data entered
+for two sample cases. Note that the given units are ndt completely con~
+sistent but are specified for convenience. Conversibn to a'éonsiStent
+set is performed internally by the program. :
 
 For each item specified in the column headed "DAT(I)", the correspond-
-ing "I" must be given. Also, the pairs of input numbers specified must
+ing "I" must be given. Also, the pairsrof input'numbers specified must
 agree with the corresponding number at the top of the form. Note that for
 the first case a complete set of input (the first 19 items) must be given.
 The initial case number need not be specified, in which case the program
-will start with "one", incrementing by unity for each succeeding case.
+will start with "one", incrémenting by unity for each sucéeeding'case.
 
 For all cases after the first, only those items differing from the
-immediately preceding case need be changed. Note that if item 20, "Case
-Number", is specified, the normal sequence of consecutive case numbers
+immediately preceding case need'bé changed. Note that if item 20, "Case
+Number", is specified, the normal sequence of consecutive case nunmbers
 is interrupted, continuing with the new value.
 
 A normal termination of the computer run is obtained by specifying
 "NIN", the pairs of input numbers, to be zero or negative. If "NIN" is
 omitted, inadvertently or otherwise, an abnormal termination will occur,
-with an error message that may be disregarded.
+with an error message that may be disregarded. |
 
-Table C-2 is a printout of a paper tape prepared from the specifica-
-tions of Table C-1. The line numbers shown are not essential; the exist-
+Table C-2 is a printout of a paper tape prepared from the specificé—
+tions of Table C-1. The line numbers shown are not essehtial; the exist-
 ing program ends at line T05, so that any greater line number will suffice
 for starting the tape. It is suggested that an initial line number of
 roughly 800 or greater be used for input to allow for possible program
-expansion.
+eXpansion.
 
-The input is free-form, i.e., the numbers may be typed in any con-
+The input is free-form, i.e., the numbers ﬁay be typed in any con-
 venient form (note the mixture of exponential, fixed-point, and integer
 
 forms) with as many or as few numbers per line as convenient. It may be
@@ -2544,15 +2634,11 @@ forms) with as many or as few numbers per line as convenient. It may be
 
  
 
-a
-
  
 
-9
+v
 
- 
-
- 
+49
 
  
 
@@ -2610,139 +2696,205 @@ a
 
  
 
-Pairs of Input Numbers 19 5
-Quantity Units I DAT(I) I DAT(I) DAT(I)
-Beat load Btu/hr 1 | 1.259
-Shell Side: Co
+ 
+
+ 
+
+Pairs of Input Numbers _ 19 5 0
+" Quantity Units | I DAT(I) 1 DAT(I) DAT(1)
+Beat Load Btu/hr 1 | 1.2 | |
+Shell Side: -
 Pressure Drop Psi 2 100
-Inlet Temperature | °F 5 | 1300
-Outlet Temperature. °p y 1050
-Fluid Specific Heat | Btu/1b °F 5 «324
-"Viscosity Ib/hr £t 6 23.5
-|" Conductivity | Btu/ur ££ OF | 7 .58
-" Density /1t> 8 | 208
+Inlet Temperature | OF 3 1500
+Outlet Temperature. | °F | ¥ | 1050
+Fluid Specific Heat | Btu/1b °F 5 .32k
+" viscosity Ib/hr £t 6 23.5
+| " Conductivity | Btu/br £t °F | 7 .58
+" Density o/te° 1 8 | 208
 Tube Side:
-Pressure Drop Psi 9 100
-Inlet Temperature | °F 10 950
+Pressure Drop Psi .9 100
+Inlet -'I‘emperature Op 10 950
 Outlet Temperature | °F 11 | 1200
-Fluid Specific Heat | Btu/lb °F | 12 . 12 437
-"Viscosity Iv/kr ft 13 1.95 13 12.6
-" Conductivity | Btu/hr ft °F | 14 "266 1% 2.66
-" Density w/e’ is | 19 15 | 132
+Fluld Specific Heat | Btu/1b °F - | 12 . 12 437
+" Viscosity Ib/hr £t | 13 1.95 13 12.6
+"  Conductivity | Btu/hr £t OF | 1 " .266 1h 2,66
+" Demsity w/ee> |15 | ng 15| 13
 Tubes:
-0. D. In -16 +3125
-Wall Thickness In AT «023
-" ‘Conductivity |'Btu/hr ££ °F | 18 | 11.5
-" Density w/t? 19 | 53;
-Case Number - a. : 20 19
+- 0. D. In s .3125
+Wall Thickness In , _117'.- | 023
+" Conductivity |Btu/br ££°F | 18.] 1.5
+" Density /e’ g | sm
+| Case Number .. el ; 20 | 19
 
  
 
-Table C-l. Input Form for HEATX2, Showing Sample Input for Two Cases.
+© Teble C-1. Input Farm for EEATX2, Shoving Semple Input for Two Cases.
  
 
  
 
-50
+>0
 
-800 19
-801 1.25E9
+800 19 .
 
-802 2 100 3 1300 4 1050 5S +324 6 235 7 «58 8 208
+801 1.25E9 '
 
-803 9 100 10 950 11 1200 12 «36 13 1.95 14 .266 15 119
-804 16 +3125 17 «023 18 11.5 19 531
+802 2 100 3 1300 4 1050 S +324 6 23.5 7 «58 8 208
 
-805 S-
+803 9 100 10 950 11 1200 12 «36 13 195 14 266 15 119
+BO4 16 «3125 17 023 18 11.5 19 531
 
-806 12 «437 13 1246 14 2.66 15 132
+805 5 -
 
-807 20 19
+806 12 437 13 126 14 2.66 15 132
 
-808 0
+807 20 19 _
 
-Teble C-2. Printout of Paper Tape Prepared from Data of Tsble C-1.
+- 808 0
 
-9
+Teble C-2, Printout of Paper Tepe Prepasred from Data of Té,blé C-1.
+
+-
  
-
-yr
 
  
 
-51
+ 
 
-seen by comparing Tables C-1 and C-2 that the particular grouping used
-puts similar items on one line. |
+uy
 
-The results of a computer run, using the input tape of Table C-2,
+ 
+
+ol
+
+seen by comparing Tables C-1 and C-2 that the partlcular grouping used
+
+puts similar items on one line.
+The results of a computer run; uSing the input tape of Table C-2,
 are shown in Table C-3. The program spaces the printouts to give two
 
-cases per page.
+cases per page,
 
  
  
 
- 
+CASE 1
+HEAT TUBE TUBE
+LBAD QeDeo WALL
+BTU/HR IN IN
+
+1.252E+09 «3125  «0230
+
+P DROP T IN T 2UT
+PS1 F F
 
 52
 
-CASE 1
-HEAT TUBE TUBE TUBE TUBE TUBE
-LOAD @.D. WALL  I.D. K DENSITY
-BTU/HR IN IN IN BTU/HR FT F LB/FTt3
-1.252E+409 «3125 +0230 +2665 11.50 531.0
-PDRBP T IN T QUT SP. HEAT VISCOS'Y CONDUCTIV'Y
-PSI F F  BTU/LB F LB/HR FT BTU/HR FT F
-FUEL: 100s 1300. 1050. «324 23.50 -58
-SALT: 100. 950. 1200. «360 1.95 «27
-NUMBER ~~ TUBE TUBE EQUIV. VELUMES BUNDLE
-©F TUBES LENGTH SPACING DIAM'R FUEL SALT TUBE WEIGHT
-FT IN IN FTt3 FTt3 FTt3 LB
+TUBE TUBE TUBE
 
-4944. 31.5 «4106 «2823 T4¢9 603 2246 34757.
+IeDe K DENSITY
+IN BTUWHR FT F LE/FTt3
 
-LMTD WALL DT FILM DT COEFFICIENT
-F F F BTU/HR FTt2 F
-100.0 177 FUEL? 47.0 2091.
-SALT: 35.2 3271.
+2665 1150 531.0
 
-FL@W RATIO FLOWS VELOCITIES PUMPING REYNOLDS
-GT/GS LB/HR FTt2 FT/SEC HP NUMBERS
-1.1179 FUELS 6¢4973E+06 8.7 S40. 6504.
+SP. HEAT VISCOS'Y CONDUCTIV'Y
+BTWLB F LB/HR FT BTU/HR FT F
 
-SALT: 7.2632E+06 17.0 850. 82720.
+FUEL: 100, 1300. 1050. 2324 23.50 58
+SALT: 100. 950. 1200. «360 1.95 27
+NUMBER TUBE TUBE EQUIV. VBLUMES BUNDLE
+
+OF TUBES LENGTH SPACING DIAM'R FUEL SALT TUBE WEIGHT
+
+FT IN
+4944. 31.5- +4106
+
+LMTD WALL DT
+
+F F
+100.0 177 FUEL?: -
+SALT:
+FLEW RATIO FLOWS
+GT/GS LB/HR FTt2
+11179 FUEL: 6+4973E+06
+
+SALT: 7.2632E+06
 
 CASE 19
-HEAT TUBE TUBE TUBE TUBE TUBE
-LEAD DeDe WALL I.D. K DENSITY
-BTU/HR IN IN IN BTU/HR FT F LB/FTt3
+REAT TUBE TUBE
+LeAD BeDeo WALL
+BTU/HR IN IN
 
-1252E+09 «3125 «0230 «2665 11.50 531.0
-P DROP T IN T OUT SP. HEAT VISCOS'Y CONDUCTIV'Y
-PSI F F BTU/LB F LB/HR FT BTU/HR FT F
-FUEL: 100. 1300. 1050. e324 23.50 «58
-SALT: 100. 950. 1200. «437 12.60 2.66
-NUMBER TUBE TUBE EQUIV. VOLUMES BUNDLE
-OF TUBES LENGTH SPACING DIAM'R FUEL SALT TUBE WEIGHT
-FT IN IN FT*+3 FT+3 FTt3 LB
-4444. 28.1 «4132 «2899 61.7 48.4 18.2 28871.
-LMTD WALL DT FILM DT C@EFFICIENT
-F F F BTU/HR FT:2 F
-100.0 22.1 FUEL: 55.2 2218.
-SALT: 22.7 6324.
+1252E+09 «3125 « 0230
 
-FLBW RATI® FLOWS VEL@CITIES PUMPING REYNOLDS
-GT/GS LB/HR FTt2 FT/SEC HP NUMBERS
-«9456 FUEL: 7.0404E+06 9.4 540. 7237.
+P DROP T IN T OUT
+PS1 F F
 
-SALT: 6+6STSE+06 14.0 631. 11734.
+IN FTt+3 FT*3 FT*3 LB
+
+«2823 T4.9 603 2246 34757,
+
+FILM DT C@EFFICIENT
+
+F BTU/HR FTt2 F
+47.0 2091.
+35.2 3271.
+
+VEL@CITIES PUMPING REYN@LDS
+
+FT/SEC HP NUMBERS
+8.7 S40. 6504.
+17.0 E50. 82720,
+TUBE TUBE TUBE
+I.D. K DENSITY
+IN BTU/HR FT F LB/FTt3
+«2665 1150 531.0
+
+SPe HEAT VISC@S'Y CONDUCTIV'Y
+BTU/LB F LB/HR FT BTU/HR FT F
+
+FUEL: 100. 1300. 1050. 0324 23.50 « 58
+SALT: 100. 950. 1200. « 437 12.60 2566
+NUMBER TUBE TUBE EOUIV. VOLUMES BUNDLE
+
+OF TUBES LENGTH SPACING DI
+FT IN
+4444. 28.1 <4132
+
+LMTD WALL DT
+
+F F
+"100.0 22.1 FUEL:
+SALT:
+FLEW RATI® FLOWS
+GT/GS LB/HR FTt2
+« 9456 FUEL: 7.0404E+06
+
+SALT: 6«65TS5E+06
+
+Table C-3. Computer Printout of Results for Input Data of Table C-1,
+
+AM'R FUEL SALT TUBE WEIGHT
+IN FTt+3 FT*+3 FTt3 LB
+
+«2899 617 48.4 18B.2 28871,
+
+FILM DT C@EFFICIENT
+
+F BTU/HR FTt2 F
+55.2 e2isg.
+
+227 6324,
+
+VEL@CITIES PUMPING REYNOLDS
+
+FT/SEC HP NUMBERS
+9.4 540. 7237
+14.0 631e. 11734.
 
 \
 
-Table C-3. Computer Printout of Results for Input Data of Table C-1.
-
-DENSITY
+DENSITY .
 
 LB/FTt3
 208.0
@@ -2753,21 +2905,20 @@ LB/FT*3
 208.0
 132.0
 
-a
+ah
  
 
-Ad
+A
 
-wr
+Wy
 
-=
-OW O~1 On EWM
-* ee . se .
+- 98-99-
+- 100-101.
 
-GRE
-. . .
+*\_'N'G';:B\oocqc\\n::umi—'
+s?zbbuaxpgwg;gowmoamozmmm
 
-14-16.
+1L4-16.
 17.
 18.
 19.
@@ -2775,116 +2926,94 @@ GRE
 21.
 22.
 
-23-32.
-33
-35.
+25-32.
+33,
+55
 36.
-37.
+57.
 38.
-39.
+59.
 Lo.
-La.
+41.
 
-Lo, :
+ha,
 
-h3.
+b3,
 
 88.
-89.
-90.
-91-92.
-95.
-9h.
-195-%.
-97.
-98-99.
 
-- 100-101.
+90,
+
+91-92
+
+95.
+. 9k,
+95-%.
+- 97.
 
 102-106.
 
+. *
+
+-
+
+U in g
+
+2R
+
 53
 
-ORNL-TM-2952
-INTERNAL DISTRIBUTION
+' EXTERNAL DISTRIBUTION
 
-J. L. Anderson Lh, R. N. Lyon
-
-H. F. Bauman 45, H. G. MacPherson
-
-S. E. Beall 46. R. E. MacPherson
-
-M. Bender 47. H. E. McCoy
-
-C. E. Bettis 48. H. C. McCurdy
-
-E. S. Bettis 49, H. A. Mclain
-
-.E. G. Bohlmann 50. L. E. McNeese
-
-C. J. Borkowski 5L. J. R. McWherter
-
-H. I. Bowers 52. A. J. Miller
-
-R. B. Briggs 55. R. L. Moore
-
-C. W. Collins 54, .E. L. Nicholson
-
-Jd. W. Cooke 55. A. M. Perry
-
-W. B. Cottrell 56. R. C. Robertson
-
-J. L. Crowley : 57-66. M. W. Rosenthal
-
-F. L. Culler 67. J. P. Sanders
-
-J. R. DiStefano 68. A. W. Savolainen
-
-S. J. Ditto 69-70. Dunlap Scott
-
-W. P. Eatherly 71. M. J. Skinner
-
-J. R. Engel 72. I. Spiewak
-
-D. E. Ferguson 75. D. A. Sundberg
-A. P. Fraas 74. R. E. Thoma
-
-L. D. Fuller 75. -D. B. Trauger
-
-W. R. Grimes - 76. A. M. Weinberg
-
-A. G. Grindell "77. J. R. Weir
-
-W. 0. Harms 78. M. E. Whatley
-
-P. N. Haubenreich 9. G. D. Whitman
-
-R. E. Helms 80. L. V. Wilson
-
-H. W. Hoffman 81-82. Central Research Library
-P. R. Kasten 83. Document Reference Section
-J. J. Keyes, Jr. 84-86. Laboratory Records
-
-M. E. LaVerne 87. Laboratory Records (IRD-RC)
-M. I. Lundin :
-
-EXTERNAL DISTRIBUTION
-
-David Elias, AEC, Washington
-
+David Elias, AEC, Washington -
 R. Jones, AEC, Washington
-Kermit Laughon, AEC-0OSR
+Kermit Laughon, AEC-OSR 5
+T. W. McIntosh, AEC, Washlngton
 
-T. W. McIntosh, AEC, Washington
+‘M. Shaw, AEC, Washington .
 
--M. Shaw, AEC, Washington
-
-W. L, Smalley, AEC-ORO"
-
-Division of Technical Informetion Extension (DTIE)
+W. L. Smalley, AEC-CRO
+Division of Technical Information Extension (DTIE)V
 
 Laboratory and University Division, ORO
 
-Director, Division of Reactor Licensing, AEC, Washington
+ORNL-TM-2952
+INTERNAL DISTRIBUTION
+L. Anderson L4, R. N. Lyon
+F. Bauman 45. H. G. MacPherson
+E. Beall L6. R. E. MacPherson
+Bender 47. H. E. McCoy
+E. Bettis 48. H. C. McCurdy
+S. Bettis 49, H. A. Mclain
+G. Bohlmann 50. L. E. McNeese
+J. Borkowski 51L. J. R. McWherter
+.I. Bowers 52. A, J. Miller
+B. Briggs 5. R. L. Moore
+W. Collins 54, - E. L. Nicholson
+W. Cooke 55. A. M. Perry
+B. Cottrell 5. R. C. Robertson
+L. Crowley 57-66. M. W. Rosenthal
+L. Culler - 67. J. P. Sanders
+R. DiStefano 68. A. W. Savolainen
+J. Ditto 69-T0. Dunlap Scott
+P. Eatherly : 71, M. J. Skinner
+R. Engel T72. 1. Spiewak
+E. Ferguson 75. D. A. Sundberg
+P. Fraas 74. R, E. Thoma
+D. Fuller 7. D. B. Trauger
+R. Grimes - 76. A. M. Weinberg
+'G. Grindell "T77. J. R. Weir '
+0. Harms | - 78. M. E. Whatley
+N. Haubenreich ' 9. G. D. Whitman
+E. Helms | 80. L. V. Wilson
+W. Hoffman 81-82. Central Research Library
+R. Kasten , 83. Document Reference Section
+J. Keyes, Jr. 84-86. Laboratory Records
+E. LaVerne 87. Laboratory Records (IRD-RC)
+I. Lundin ' - -
+
+Director, Division of Reactor_Llcensing, AEC, Washington
 Director, Division of Reactor Standards, AEC, Washington
 Executive Secretary, Advisory Committee on Reactor Safeguards
+
+ 
