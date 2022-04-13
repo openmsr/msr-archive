@@ -12,7 +12,12 @@ disclaimer: this repository is **not** intended to be a distribution of pdf docu
 
 **_note that github's pdf viewer isn't capable of marking text or searching in documents, this inadequacy has been reported to [github](https://github.com/isaacs/github/issues/1427) and will hopefully be rectified soon._**
 
-this repo uses [git mlfs (git large file storage)}(https://git-lfs.github.com/) to manage version history of pdf's. so to clone this repo with the pdf's to your system you'll  need to install git and git-lfs.
+this repo uses [git mlfs (git large file storage)](https://git-lfs.github.com/) to manage version history of pdf's. so to clone this repo with the pdf's to your system you'll  need to install git and git-lfs.
+
+to search the repository for a keyword or phase it's recommended to use the atom editor's 'search in folder' function on the '/ocr' folder as is demonstrated here for the keyword 'msbr'
+![](img/atom.png)
+using the plus and minus buttons at the top the context can be expanded or contracted. the individual pdf documents of interest in the '/docs' folder can then be opened with a pdf viewer.
+this method can be used to find documents with relevant information. be aware that the ocr is not great and there can be issues with missing spaces and wrong identification of letters and numbers, e.g. 'l00p' instead of 'loop'.
 
 ---
 
