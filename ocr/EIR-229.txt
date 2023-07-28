@@ -1,0 +1,1380 @@
+EIR-Bericht Nr. 229
+
+" inig
+
+EIR-Bericht Nr. 229
+
+Eidg. Institut flir Reaktorforschung Wirenlingen
+Schweiz
+
+MOLTEN CHLORIDES FAST BREEDER REACTOR
+Reactor Physics Calculations
+
+J. Ligou
+
+Wiirenlingen, November 1972
+
+EIR Report No 229
+
+MOLTEN CHLORIDES FAST BREEDER REACTOR
+
+Reactor Physics Calculations
+
+J. Ligou
+
+November 1972
+Contents
+
+10.
+
+Introduction
+
+Definition of the Proposed Reactor
+
+Cross-sections and Calculational Methods
+
+Reference Calculations for Spherical Geometry
+
+Parasitic Absorbtions
+
+5.1. Chlorine
+
+5.2. Molybdenum
+
+5.3. Vessel
+
+Void and Temperature Coefficients
+
+Buckling Search and Blanket Savings
+
+Transport Calculations in Cylindrical Geometry -
+Final Results
+
+Fast Flux Test Facility Using Molten Chlorides
+
+Conclusions
+
+Acknowledgement
+
+References
+
+Appendix 1
+Appendix 2
+Appendix 3
+
+Page
+
+15
+
+18
+
+19
+
+24
+
+27
+
+29
+
+29
+
+31
+
+32
+34
+l. Introduction
+
+In an earlier report (l) the possibilities of a Molten Chlo-
+rides Fast Breeder Reactor (MCFBR) were analysed, based on
+thermohydraulic and neutronic studies. Although reactor phy-
+sics calculations have been made from the beginning when
+
+the reactor characteristics were not frozen they can only
+be fixed later during the main phases of the studies when
+thermohydraulic, chemical and economic aspects are taken
+into account. The sensitivity of fast reactor performance
+
+to the neutron spectrum is well known and the spectrum de-
+pends strongly on the core composition i.e. on the results
+of thermohydraulic, mechanical and optimization studies.
+This feedback has therefore led to new reactor physics
+
+calculations.
+
+In addition the earlier studies used a rather old cross-
+section set and omitted dilution factors. The new calcula-
+tions are more sophisticated based on.-a more recent library
+
+with detailed information on
+
+chloride cross—-sections and fine spectrum
+- neutron balance and breeding ratios
+
+- void and temperature reactivity coefficients
+
+specific power distributions etc.
+
+As usual (2) most calculations are made for a spherical geo-
+metry; this approximation is very good, only‘the critical
+mass and the radial distributions of specific power have
+
+been recalculated for the correct geomeﬁry;
+
+As was expected, the conclusions of ref. 1 remain valid,
+
+only the coolant tube diameters have to be adjusted
+slightly together with an admissible increase in coolant
+velocity. All core temperatures remain unchanged in the
+
+core and therefore the atomic densities.
+
+A final section gives some results concerning HIGH FLUX
+
+FAST TEST FACILITY using molten chlorides as proposed in (3).
+
+2. Definition of the Proposed Reactor
+
+The coolant, forming the fertile material is pumped through
+the reactor through a lattice of tubes, and the fuel mate-
+rial circulates between these tubes in a forced convection
+circuit. The reference characteristics of the core cell
+
+are based on a tube pitch of 1.38 cm (1):
+
+Fuel - area Vf = 0.7354 cm?
+- volumetric fraction 38.6 %
+- mean temperature 12570 K
+- mean density 2.344
+
+- molecular composition 16 % PuClsy, 84 % NaCl
+
+Coolant - area Vc = 1.05683 cm2
+(inner diameter 2a =1.16 cm)
+
+- volumetric fraction 55.5 %
+
+- mean temperature 10429KK
+- mean density 4.010
+- molecular composition 65 % UC13, 35 % NacCl
+Tubes - area 0.11215 cm2 (thickness 0.3 mm)
+
+- volumetric fraction 5.9 %
+— density 10
+
+- welight composition 20 % Mo, 80 % Fe
+Only the tube diameter has been changed (l.16 cm instead of
+1.20 cm) which has no effect on the temperature, density
+etc. provided a new coolant velocity is chosen accordingly
+(12 m/s instead of 9 m/s (4)). The composition of the struc-
+tural material was also changed (20 % Mo instead of 80 %)
+
+because the reactivity cost of the tubes was too high.
+
+Finally the core atomic densities are (A/cm3°1024):
+Pu239 6.6796-10 2
+Pu240 1.6699-10"2
+U238 3.5629.10°
+c1 1.9495-10 2
+Na 6.3017-10 °
+Mo 7.386 10”2
+Fe 5.078 +10 >
+
+which gives 5.584 for the Fertile/Fissile ratio for materials
+in the core.
+It is assumed in this table that the isotopic composition
+
+of the plutonium is
+
+80 & (Pu239 + Pu24l)
+20 % Pu240
+
+and the nuclear properties of Pu239 and Pu24l are the same.
+This composition is somewhat arbitrary and fuel cycle calcu-
+lations should really be carried out. These calculations are
+too long for the preliminary studies laid down here.
+Nevertheless the composition chosen is very similar to that
+
+of a solid fuel fast reactor.
+
+For the blanket the coolant characteristics (composition,
+density) adopted give:
+
+U238 6.4203-10 °
+cl 2.2718-10" 2
+Na 3.457- 103
+
+The natural isotopic composition is assumed for the Chlorine.
+The dimensions and number of coolant tubes are fixed by the
+
+critical mass calculations.
+
+3. Cross—-sections and Calculational Methods
+
+Usually the number of energy groups required for a good defi-
+nition of neutron spectrum is at least 12 for fast critical
+assembly studies and 22 can be considered desirable (5).
+Therefore, a 22 group cross—-section set has been prepared;
+the code GGC3 (6) which allows 99 group calculations for a
+rather simple geometry has been used for this condensation.
+The cross-sections were produced separately for core and
+blanket and the scattering anisotropy was limited to P1
+which is sufficient for this reactor type. Most of the
+
+GGC3 library data were evaluated by GGA before 1967 but
+some are more recent:
+
+- Iron:
+Evaluated from ENDF/BI data (Feb. 1968)
+
+~ Molybdenum:
+Evaluated from isotopes of ENDF/B data (July 1968)
+
+-~ Plutonium 239:
+Evaluated from KFK 750 Resonance Nuclide (Feb. 1969)
+New data concerning Chlorine absorbtion cross-sections are
+now available at EIR (fig. 1); they are obtained from
+ENDF/B-III (Jan. 1972) which is the best nuclear library
+at present. Unfortunately this information came too late
+to be used for the transport calculations. Fig. 2 (curves
+
+5 and 6) shows that the GGC3 wvalues were underestimated
+above 0.6 MeV and overestimated between 10 keV and 0.6 MeV.
+The effect of this on the reactivity is not great (Sect.5).
+Taking also the Molybdenum cross-section from ENDF/B-IIT
+one can see that the GGC3 values are too high (experiments
+made with Molybdenum control rods in fast critical assem-
+blies could not be reproduced with ENDF/B-I which makes a
+
+new evaluation of data necessary).
+
+Fission product data are from (7). The absorbtion cross-sec-
+tions for resonant nuclides are obviously shielded. The
+NORDHEIM theory (8) is included in the GGC3 code, it requires
+
+some special data as shown in table 1.
+
+Table 1
+
+4 o) — R
+
+R
+Resonant NR(102 ) T K agr Cgr om, 1 omRz om
+
+Nuclide R
+
+U238 6.42:10 °|1042)t0.58]0.925 2.18 7.10| 20.3
+
+(coolant)
+
+Pu239 1.725°10 > 1257] 0.40l0.83 | 26.3 | 23.0 |178.3
+
+(fuel)
+4
+
+Pu240 4.32-10 11257/ 0.40(0.83 [105.0 111.7 |731.7
+(fuel)
+
+where NR is the lumped nuclear density of absorber R.
+4V
+
+The mean chord of the lump 2 ap is given by E?g-where VR is
+
+the coolant or fuel area and 2a the coolant tube dia. For
+
+the coolant one has obviously 3; = a and for the fuel E; =
+Vfyel
+Ta
+
+The Dancoff coefficient is calculated with a simple formula
+
+(9)
+
+C ¥ 1 - fuel with Z = 0.10 cm-l
+cool S N 1 fuel
+fuel 2a (fuel total cross—section
+fuel
+for the resonance energy
+of U).
+C =1 - cool with I = 0.18 cm T
+fuel 5 N 1 cool .
+
+tion for the resonance
+
+energy of Pu).
+The cross-sections of the two "inner moderators" (6) per
+resonant atom om1 and om2 are defined in the following way.
+For U238 the diluents are Na and Cl; for Pu239 - Na and
+
+(C1l+Pu240), for Pu240 - Na and (Cl+Pu239).
+
+. . : R | .
+Finally the total diluent cross-section Um is written.
+
+where the "geometrical cross—-section™ OeR is given by (9),
+
+(coolant total cross-sec-
+a(1—CR)
+o, = — ‘ with o = 1.35
+2a_N 1+ (a=-1)Cq
+
+It is not necessary to determine the parameters of Table 1
+to a high accuracy because the Doppler coefficients are of
+less importance in this reactor compared with thermal
+
+expansion effects (Sect.6).
+
+The GGC3 is currently in use for GCFR studies and a good
+agreement with experimental results has been obtained using
+the ZPR-3-48 assembly which is representative of an LMFBER
+(10) . |
+
+All whole reactor calculations have been made with the one
+dimensional transport code SHADOK, using the 22 group cross-
+section set in spherical and cylindrical geometry (10). Com-
+parison with the more usual SN methods have proved the re-
+liability of this code. The transport methods chosen were
+aimed at getting a better accuracy for some reactivity coef-
+ficients. For the criticality calculations a more simple
+
+approach such as diffusion theory might have been sufficient.
+
+4. Reference Calculations for Spherical Geometry
+
+The 22 group transport calculation gives 125 cm (8.18 m3)
+for the critical radius of the core with a blanket thickness
+of 95 cm (36.42 m3). The detailed neutron balance is given
+
+below in Table II.
+_lO—.
+
+Table II: Neutron Balance % (MCFBR)
+B . .
+Region ~Absorbtion Leakage | Production
+(n,y) 22.51
+U238 25.50 {(n,f) 5.99 U238 8.23
+(n,y) 5.58
+Pu239 34.56 {(n,f) 98.98 Pu239 85.55
+(n,y) 2.24
+Pu240 3.78 {(n,f) 1.54 Pu240 4.72
+&
+o) fuel 1.10
+&) cl 3.16 {cool 2.06
+Fe 1.30 -
+Mo 2,04 -
+F.P. 0.50 -
+Total 71.10 27.40 98.50
+(n,y) 23.15
+U238 23.70 {(n'f) 0.5t U238 1.50
+49
+@
+e
+—
+M
+Cl 2.22 -
+Total 26.00 2.9 1.50
+
+-11-
+
+The relative fluxes in each group are given in Appendix 1
+for core centre and core boundary. The corresponding one
+group cross-sections are given in Appendix 2. In figure 2
+the neutron spectra (flux per lethargy unit) are compared
+to that of the fast critical facility ZPR-3-48. This last
+spectrum is slightly harder but the spectrum of the MCFBR
+compares favourably with that of a power LMFBR.
+
+From Table II one can deduce the following parameters
+
+koo = 1.3850
+! core = ©-716
+Breeding ratio < Cblanket = 0.670
+[ Ctotal  ~ 1.386
+
+For the given core (125 cm radius) the blanket thickness
+
+was varied between 75 cm and 115 cm. Fig. 3 shows the va-
+riation of breeding ratios obtained from the new transport
+calculations. The reactivity and the core breeding ratio
+remain practically constant in this range making the adjust-
+ment of core volume unnecessary. Above 100 cm improvement.
+of the breeding ratio by increasing blanket thickness gives
+a poor return. For example to increase the breeding rétio
+from 1.40 to 1.45 requires a thickness increase of 20 cm
+
+f
+
+or a blanket volume increase of 32 %.
+
+On the other hand, it is clear that the reactivity depends
+on the core radius.‘Fig. 4 shows the reactivity variation
+with core volume increase. Such a curve is very useful when
+it is required to translate the cost in reactivity of a sup-
+plementary parésitic absorbtion into an increase in core
+
+volume (or Plutonium inventory). The transport calculations
+-12-
+
+which gave figure 4 have not provided the corresponding va-
+riation of breeding ratio, rather they have been calculated
+from the information in Table II (assuming small core volume
+variations < 10 % and no important changes in spectra). This
+
+gives
+
+(1) C, .., - 1-386 - 2.45 6k  (breeding in core unchanged).
+By the same method the effect of a modification of core com-
+position can be evaluated. The only way of doing that with-
+out changing the properties of coolant ana fuel is to vary
+the coolant tube diameter. The reactivity is very sensitive
+to this parameter. If € and n are respectively the relative
+increases of coolant and fuel volume for a constant pitch
+one has (§ 2)
+
+n = - l.44¢
+
+From Table II
+L v L 8.23+10 %c + 0.90.277
+
+1 + 0.2756¢ + 0,.,3944n
+
+which gives
+ny
+(2) dk - - 0.924 ¢
+or n = 1.56 d&k
+
+The corresponding behaviour of the breeding ratios are
+
+[ ¢ Y 0.716 - 1.72 sk
+
+CcCOrxre
+(3) ¢ Crianket 2 0.670 - 1.05 8k
+L Ceoe ¥ 1.386 - 2.77 sk
+Compared to (1) it can be seen that the penalty on the total
+breeding ratio for the same dk is only slightly greater
+while the penalty on the increase of Plutonium inventory
+
+is five times less (Eg. 2 and Fig. 4). Therefore, a reduc-
+tion in the diameter of coolant tubes is better than an in-
+crease of core diameter, provided of course that an increase
+in coclant velocity is admissible. This last assumption is
+implicit in these calculations since the coolant density
+
+was kept constant.
+
+5. Parasitic Absorbtions
+
+5.1. Chlorine
+
+In the whole system the Chlorine absorbtion represents 5.38 3.
+We have seen in Sect.3 that the GGC3 values are different
+
+from the more up to date ones (ENDF/B-III). On the basis of
+these new cross-sections given in fig. II (curve 6), and
+assuming that the reference spectrum is unchanged, a compu-
+tation of the one group cross-sections gives 8.64 mb instead
+of 6.38 in the core and 9.11 mb instead of 8.83 mb in the
+blanket. In this last region the spectrum is softer and the
+increase of cross?sections in the high energy range (E>0.6 MeV)
+is almost compensated for by the decrease at the lower ener=-
+
+gies (10 keV - 0.6 MeV).
+
+The total absorbtion by Chlorine for the whole system is
+6.57 % instead of 5.38 % giving a loss of reactivity of 1.2 %.
+This loss could be replaced by a 1.9 % increase in Pu inven-
+
+tory (see Sect.4 Eq. 2) if a very small decrease (0.65 %)
+_14_
+
+of the coolant tube diameter is accepted; otherwise by
+changing only the core radius a greater increase of Pu in-
+
+ventory (10 %) is required (Fig. 4).
+
+All these modifications lead to a reduction of the breeding
+ratio, 1.353 instead of 1.386 but an increase of the blanket
+
+thickness could compensate for this loss (Fig. 3).
+
+Even taking into account this latest data the problem of
+parasitic absorbtion of the Chlorine is not dramatic so
+there appears to be no need to enrich the Chlorine (Cl137),
+which is consistent with the conclusions of Nelson (2). Fi-
+gure 2 clearly shows the importance of spectrum shape since
+the peak of the spectrum corresponds to the Chlorine cross-
+section minimum (65 %2 of neutrons are in an energy range
+where GCl z 5 mb). This fact was not perhaps recognised 15
+years ago when fine spectrum calculations were not possible,
+
+it would perhaps explain the pessimistic conclusions of se-
+
+veral eminent physicists (11).
+
+5.2. Molybdenum
+
+For the chosen alloy (20 % Mo) the reactivity cost 2 % (see
+Table II) is gquite acceptable. However, the cost could ra-
+pidly become prohibitive if the volume of the structural ma-
+terial and/or the Molybdenum content should increase due to
+technological reasons. In the context of detailed studies
+this point may well be more important than the definition of
+the proper Chlorine cross—sections, although it does seem
+that the Molybdenum cross-sections taken from GGC3 were
+
+overestimated.
+-15-
+
+5.3. Vessel
+
+In the previous calculations no core vessel was allowed for
+at the core/blanket boundary but all the required information
+is available - fluxes, one group cross-sections etc. {(Appen-
+dix 2) at this point. Using the 'same alloy for the vessel
+
+(20 %3 Mo) the one group macroscopic absorbtion cross=-section
+
+is 2.56'10_3 cm—l giving a loss of reactivity:
+
+Sk(g) = 0.721e
+where e is the thickness of the vessel in cm.
+
+For 19 mm thickness as in {2) one gets 1.37 % for the loss
+
+of reactivity, which would be compensated by an increase of
+core volume of about 10 % i.e. about 9 m3 instead of 8.18 m3
+(10 m3 in Ref. 2). A better solution would be an increase in
+the Plutonium inventory of about 2.1 % in the reference core
+
+volume (loss in breeding ratio 1.386 > 1.350).
+
+6. Void and Temperature Coefficients
+
+Five complete transport calculations (GGC3 + SHADOK) have
+been made for different coolant or fuel densities, different
+temperatures (in this case with the density constant to
+determine only the Doppler effect). The reactivity changes
+
+with respect to the reference core are diven in Table III.
+_16_
+
+Table III: Reactivity Changes with Density and Temperature
+
+Type of Modification Reactivity Changes
+Fuel density -3.0 2 { -1.9 (onky)
+(-5 %) U0 -1.1 (leakage)
+Coolant density . +2.0 (onkg).
+(-5 %) +0.77 & | -1.23 (leakage)
+Fuel temperature < o
+(+300°C) .01 %
+Coolant temperature _ o
+(+300°C) .14 %
+Full loss of coolant +12.0 % {Yery high on k_ (70 %)
+
+Note:
+
+The partial changes on k_ or leakage are only approximate but
+
+the total reactivity changes are evaluated directly and are
+
+therefore more precise.
+
+The Doppler effect in the fuel is quite negligible due to
+
+compensation between the capture and the fission process.
+
+The effect of full loss of coolant is large and positive but
+considerably lower than might be expected from crude calcula-
+
+tions (k_, changes in the reference spectrum).
+From Table IITI one can deduce the "feedback effect" which is
+
+very important for kinetics studies:
+
+oy Y op -4
+(%) — 60(— - 15 (— - 4,810 ST :
+P fuel P coolant (coolant)
+-17-
+
+The void coefficient of the fuel (lst term) is strongly ne-
+
+: : -2 ,
+gative; 1 % woid (-‘S—Q = =10 ) gives a 0.6 % loss in reactivi-
+ty. If boiling occurs in the fuel it will be rapidly arrested
+
+by a decrease in reactor power.
+
+If one considers that all density modifications come from
+thermal expansion (liguid phase only), one can define general
+temperature coefficients.
+
+The thermal expansion coefficients are (see Apprendix 3).
+
+S _ _
+(—%5) = -0.63.107> °c7t
+P fuel
+(Q%E) = -0.89-1073 Y"1
+P coolant
+
+Replacing these values in Egq. (4) lead to the following
+expression:
+
+8Kiay ¥ _q ge1n”2 .10" 2
+(5) (%) -3.8°10 (5T)fue + 1.29.10 (8§T)
+
+k 1
+
+coolant
+
+In the second term the part played by the Dopplexr coefficient
+(4.8-10_4) is quite negligible. For +100°C in the fuel, the
+loss of reactivity is -3.8 % which is very important from
+
+the safety point of view. Compared to any kind of power
+reactor (even the BWR) the advantage of this kind of reactor
+
+is quite evident.
+
+For the Nelson value of the thermal expansion —3.10-4 in-
+
+stead of --6.3-'10-4 one gets -1.8 % .which is very close to
+
+\Q
+
+the Nelson result -1.5 % (2).
+~18-
+
+If we postulate an accident condition and assume that the
+same increase of coolant temperature immediately follows the
+fuel temperature rise, the overall change in reactivity is
+
+defined by:
+
+%5(%) Y _2.51-107% sT
+
+This important isothermal and pessimistic coefficient is
+still negative. Nevertheless during a detailed study of this
+reactor concept it would be necessary to check the values of
+the thermal expansion coefficient for fuel and coolant more
+carefully. The relative value of the coolant term (Eg. 5)
+which is positive might prove to be too high if the differ-
+ences between fuel and coolant became too marked. This pro-
+
+blem did not arise with the present data.
+
+7. Buckling Search and Blanket Savings
+
+In a spherical assembly the fluxes in the core are given to
+
+a good approximation by (6) ¢aé(r,E) = S;gBr f(E) where the
+
+space function is called the "fundamental mode" (solution of
+
+VZW + BZ? = 0 in spherical geometry). The critical buckling
+
+B? is obtained from homogeneous calculations based only on
+
+the cross-section data of the core, £(E) is the asymptotic
+spectrum which is space independent far from the core boun-
+dary. For the same 22 energy groups one gets
+
+B2 = 4.08.10_4 cm_2
+-]19-
+
+Using this value Eg.6 gives a good fit of the "exact fluxes"
+obtained from the complete transport calculations (Fig. 5).
+
+The asymptotic fluxes cancel for
+
+r = R = % = 155.5 cm
+where Re is the extrapolated radius.
+By definition the blanket saving is given by
+§ = R_ - RC = 30.5 cm
+
+where Rc is the core critiqal radius defined in Section 4.
+The blanket saving depends mainly on the nuclear properties
+of core and blanket and on blanket thickness. However, for
+thicknesses greater than 60 cm this last effect is very
+weak. Finally the shape and size of the core have almost
+
+no influence on this saving. This parameter, for this reason
+so important in reactor physics, will be used in the next
+
+section for the one dimensional cylindrical calculations.
+
+8. Transport Calculations in Cylindrical Geometry -
+Final Results
+
+The axial blanket thickness is taken to be equal to the ra-
+dial thickness (95 cm), and the core height as H, = 200 cm.
+The critical radius of this cylindrical core has to be de-
+termined. The two dimensional transport calculations are too
+expansive (and unsafe) and only one dimensional calculatlons.
+
+have been made, which is suff1c1ently accurate. Axial trans-
+-.20._.
+
+port calculations are not required since the blanket saving o
+is known from the spherical geometry calculations. One can
+
+therefore assume the following flux shape.
+v
+(7) ¢ (r,z,E) - cosBz¥(r,E)
+
+for any r value (including the radial blanket) and
+
+< < C
+
+z >
+
+- <
+2
+
+—52 is the axial buckling computed from the extrapolated
+height He = HC + 26 = 261 cm which gives
+
+g = %— = 1.204:10 % cn *
+
+1.450-10 % cm” %)
+
+—
+™w
+i
+
+The computation of core radius and spatial distribution
+have been made with the SHADOK code (cylindrical version)
+by introducing axial leakage defined by 62. Before that a
+first approximation is obtained by introducing the radial
+buckling uz, that is to say assuming for the core only,
+
+v
+the shape ?(r,E)—Jo(ur)f(E) where JO is the usual Bessel
+
+function. One obtains u2=B2-82 where the critical total
+buckling is 4.08-10-4 cm“2 (see Sect.7) which gives
+o¢2=2.63°lo_4 cm_2 and a=1.625-10"2 cm_l. Then the extra-
+
+polated radius of the cylindrical reactor is
+2.405
+
+R = = 148.0 cm.
+e o
+
+Finally with the previous blanket saving we get a core ra-
+dius proper of RC = 117.5 cm. The direct transport calcula-
+
+tions with SHADOK gives Rc = 118 cm: This clearly indicates
+-2] -
+
+the value of the blanket saving concept. Nevertheless these
+transport calculations are still necessary because they give
+the radial distribution of fluxes and specific power over
+
+the whole system and more detailed informations. Fig. 6 shows
+some of the radial distributions of flux and specific power.
+The energy production in the blanket is quite small (1.7 %
+
+of the core power) because no fissile materials are present
+(and only fast fissions occur in U238). In practice it would
+be higher (say 5 %) since the reprocessing process would not
+be able to remove all the fissile nuclides produced even with
+
+continuous fuel (coolant) reprocessing.
+
+The radial form factor for specific power distribution is,
+
+for this core
+
+mean power
+a = . p - O.6O
+R maximum powerx
+
+It would be possible to improve this coefficient by choice
+
+of different latfibes particularly the most reactive at
+
+peripheralHregion.
+
+The axial distribution of specific power is given with a good
+approximation by Eg.7. If the axial mean value is unity then
+
+this distribution is:
+
+B Hc
+(8) P(z) = T cos Bz
+2sin3—9
+. _m _ (il _ 1Aam2 -1
+with B = o ~ H 4238 1.2-10 cIn
+and HC = 200 cm giving
+
+-22—
+
+P(z) = 1.285 cospZicm) -100=22100
+261
+and az = 0.78 for the axial form factor.
+
+This axial distribution is very close to that used in Ref. 1.
+
+The critical volume is higher for cylindrical geometry 8.75 m
+
+compared to 8.18 m3 (Sect.
+
+critical size corresponds
+19,941 in ref. 1. For the
+
+and from the form factors
+
+3
+
+4) ; this increase was expected. This
+to 23,000 coolant tubes instead of
+total power given in (1) 1936 MW
+
+and one group fission cross-—sections
+
+(Appendix 2) one can determine the absolute level of the to-
+tal fast flux in the median plane:
+
+7-10:"5 n.cmﬂ2 5"l (1.18'1016 in the centre).
+
+All previous data: breeding ratios, reactivity coefficients,
+penalties of parasitic absorbtions etc. remain valid for the
+cylindrical geometry (provided that axial and radial blanket
+are identical). The main characteristics of the MCFBR are
+
+given by the following table:
+_.23....
+
+Table IV
+
+- Core geometry - cylindrical
+height : 2.00m
+diameter : 2.36 m
+
+fuel 38.6 %
+volume : 8.75 m coolant 55.5 %
+tubes 5.9 %
+
+- Blanket volume (95 cm thickness) : 47.85 m3
+
+-~ Mean power density in the core : 220 MW m_3 (Thermal power in
+core 1940 MW)
+
+- Plutonium in core : 2900 kg (20 % Pu240)
+-~ Number of coolant tubes : 23000
+
+Radial : 0.60
+- Power form factors
+
+Axial : 0.78
+Core : 0.71l6
+- Breeding ratio : 1.386
+Blanket : 0.670
+
+— Neutron balance : Table ITI (without wvessel)
+
+- Mean fast flux across core : 7'1015 n.cmuzs“l
+
+(for 220 MW/m3) (1.2°1016 in centre)
+
+- Spectrum : Appendix 1 and Figure 2
+
+-~ Temperature reactivity coefficients (§k(%)/8T(°C)):
+- fuel -3.80-10:%
+- coolant: +1.29°10
+
+~ Reactivity change with core volume: figure 4
+
+~ Loss of reactivity in the vessel: 0.72 % (100 mm thickness)
+_24_
+
+9., Fast Flux Test Facility Using Molten Chlorides
+
+Some calculations have been made concerning a high fast
+flux facility. In this case the core consists only of the
+fuel which is again a PuCl3 - NaCl mixture. No fertile
+coolant is used and the fuel itself is circulated outside
+the core. Based on the preliminary thermohydraulic calcu-
+lations (4) the main data selected for the neutronic cal-
+
+culations were:
+
+Plutonium content (80 % Pu239) 1.22 kg/1 (core)
+Fe 1.45 kg/l
+
+M .
+olybdenum alloys Mo 0.465 kg/1
+
+1.915 kg/1 {
+
+Molar fuel composition 31 % PuCl3 and 69 % NaCl.
+
+The Molybdenum alloys represent partly the structural mate-
+rials and partly the loop materials (since this is a materials
+test reactor ) - 25 % of the core volume for an alloy density
+of 7.65. The choice of this alloy is rather pessimistic
+
+from the reactivity point of view.
+
+From this the atomic densities (A/cm3'1024) can be deduced.
+
+Pu239 2.457-10 °
+PU240 6.143.10
+Na 6.837-10 °
+cl 1.605°10 2
+Mo 2.907-10 >
+Fe 1.555-10"2
+F.P. 2.457-10""
+
+The 22 group cross-~section set was prepared once mcr.- with
+the GGC3 code and a blanket of 84 cm thickness was a.:umed
+with the same composition as the blanket of the breeder
+
+power reactor (Sect.2).
+The SHADOK calculations give 36 cm for the critical core ra-
+dius in spherical geometry (1951 for the core volume and
+238 kg of Pu). As in earlier calculations one obtains
+
+- 3.432°10 2 cm~? for the critical buckling
+
+~ 53.61 and 17.61 cm respectively for the extrapolated
+core radius and blanket savings
+
+From these last results one can define the critical size for
+
+cylindrical geometry for several active heights HC.
+
+Hc = 48 cm Rc = 36.07 cm Vv, = 195.4 1
+
+H = 62.9 cm R = 31.45 cm \YJ = 195.45 1
+Cc C C
+
+etc.
+
+For this small core surrounded by a large blanket all shapes
+give the same critical volume. The corresponding neutron ba-
+
+lance is given by the Table V.
+
+The k , for the core is very high: 2.52 and in principle
+breeding is possible in the blanket (1.20 for the breeding
+ratio). The leakage from the blanket is significant (20 %)
+and its thickness could be increased. The spectrum is
+harder than for the breeder power reactor (Appendix 1l). The
+maximum occurs in the range 0.5 MeV to 0.7 MeV instead
+
+of 10-50 keV with the NaF-UF4 salt concept (3).
+
+Using the previous data and results the main characteristics
+
+of the High Fast Flux test facility are
+- Core volume (including loops) : 1951
+- Blanket volume (84 cm thickness) : 7.04 3
+
+- Power density in the core : 4.1 MW/1 (total power 800 MW)
+_26_
+
+Table V: Neutron Balance % (HFFMCR)
+
+Region Absorbtion (%) Leakage (%)| Production (%)
+(n,vy) 2.5
+Pu239 31.00 { ol Pu239 86.00
+(n,Y) 1.0
+Pu240 3.80 { ‘g g Pu240 8.60
+Q
+& Na 0.06
+o)
+o c1 0.57
+Fe 0.64
+Mo 1.23
+F.P. Q.20
+Total 37.50 57.10 84.60
+(n,y) 37.14
+o U238 39.14 {(n,f) 5. 09 U238 5.40
+<
+5 Na 0.12
+m
+Cl 3.24
+Total 42 .50 20,00 5.40
+
+_27_
+
+- Plutonium in the core : 238 kg
+
+=~ Structural materials and , Fe 283 kg
+content of loops : 374 kg (in roughly 50 l){Mo 91 kg
+16 -2 -1
+~ Mean fast flux across core _ 4.2°107 n.cm S
+(for 4.1 MW/1) " (6.8:101% in centre)
+
+~ Spectrum in centre: Appendix 1
+
+- Reactivity change with the core volume: %E (%) = 31. %E
+- Breeding ratio (blanket) : 1.20
+- Flux form factor (spherical or cylindrical geometry): 0.618
+
+10. Conclusions
+
+From these reactor physics calculations the main advantages of
+Molten Chloride fuels can be seen. For breeder powef reactors
+the use of a fertile coolant which removes the need for a
+large plutonium inventory outside the core is very attractive.
+The total breeding ratio is more than 1.35 (more probably
+1.40), lying between the GCFR and the LMFBR values. Against
+this it is known that the breeding ratio for thermal reactors
+using molten U233, Th232 fluorides is low (1.06 perhaps) so
+that molten salt reactors based on chlorides are very inter-
+
+esting.
+
+From the safety point of view the very high void (or tempera-
+ture) reactivity coefficients make the molten salt reactor
+
+more stable than any other reactor type considered to date.
+
+The other characteristics - and the most important of these
+is obviously the on site (continuous) fuel recycling - are
+
+discussed in (1).
+_..28_.
+
+In the last part of this tudy the possibilities of a high
+fast flux molten chlorides reactor were discussed. Compared
+to the most advanced concept FFTF (3) the H.F.F. MCR gives
+a flux at least five times higher with a harder spectrum.
+However, a larger amount of fissile material must be
+
+accepted for the primary circuit.
+
+Finally the absorbtion of chlorine atoms is not as dramatic
+as was at first feared. The latest data lead to an increase
+of chlorine cross—-section in the high energy range which
+
+is quite acceptable; also the o0ld values of molybdenum cross-
+
+section were overestimated.
+
+From the neutronics point of view the main points which should
+
+be checked in the next stages are (for both reactors):
+
+- the total amount of structural materials which are necessary
+and the molybdenum content of the proposed allows (cor-
+rosion problem). It might be that the total breeding ratio
+and the plutonium inventory could change with too large
+
+a variation from our reference case
+
+- the density and the thermal expansion of the fissile and
+fertile salts (critical volume and reactivity coefficients
+could be affected)
+
+- reactor control
+
+— reactor kinetics
+=20
+
+Acknowledgement
+
+The author is indebted to M. Taube who has initiated the
+
+studies on the Molten Chloride Fast Rearctor at EIR, for
+
+many helpful discussions. He would also like to thank
+
+R. Stratton for correcting the manuscript.
+
+References
+
+(1)
+
+(2)
+
+(4)
+
+(3)
+
+M. Taube, J. Ligou:
+
+Molten Chlorides Fast Breeder Reactor,
+Problems'and Possibilities
+
+EIR Report No 215 (1972)
+
+P.A. Nelson et al.:
+
+Fuel Properties and Nuclear Performance of Fast
+Reactors Fuelled with Molten Chlorides
+
+Nuclear Applications, Vol. 3 (1967) 540
+
+J.A. Lane:
+Test-reactors Perspectives
+Reactor and Fuel Technology 12 (1968/1969) 1
+
+M. Taube:
+
+Private communication
+
+G.I. Bell, S. Glasstone:
+Nuclear Raactor Theory 5
+Van Nostrand Reinhold Comp. (1970) 244-247
+(6)
+
+_30_
+
+J. Adir et al.:
+
+User's and Programmer's Manual for the GGC3 Multigroup
+Cross—Section Code
+
+Part 1, GA 7157 (1967)
+
+I.J. Bodarenko et al.:
+
+Group Constants for Nuclear Reactor Calculations (1964)
+
+L.W. Nordheim:
+A Program of Research and Calculations of Resonance
+Absorption
+
+GA 2527 (1961)
+
+M.M. Hummel:
+Reactor Physics Division Annual Report, July 1, 1964
+to June 30, 1965 - ANL 7110, 319
+
+J. Ligou:
+Improved Integral Transport Theory by Means of Space
+Polynomial Approximations
+
+Accepted for publication in Nucl. Sci. Eng.
+
+A.M. Weinberg, E.P. Wigner:
+The Physical Theory of Neutron Chain Reactor VI, 143
+Univ. Chic. Press (1958)
+-3]1-
+
+APPENDIX 1
+
+Relative Fluxes in Each Group
+
+g Bogﬁg:§y $§i2e (Letﬁgrgy) Centre Boiigiry
+1 |15 MeVv 12.2 MeV . <10"% (.0002) <10”%
+2 |10 8.18 . .0010 (.0026) 0006
+3 6.7 5.49 . .0045 (.0116) 0029
+4 4.5 3.67 . .0112 (.0286) .0072
+5 3.0 2.46 0.4 .0222 (.0552) .0146
+6 2.0 1.65 0.4 .0407 (.0901) 0285
+7 1.35 1.23 0.2 .0264 (.0536) 0193
+8 1.11 1.00 0.2 .0281 (.0536) .0215
+9. | 0.91 0.78 0.3 .0475 (.0837) 0379
+10 0.67 0.55 0.4 .0924 (.1373) 0787
+11 0. 45 0.37 0.4 .1072 (.1254) 0972
+12 0.30 0.25 0.4 <1162 (.1042) .1136
+13 0.20 0.165 0.4 .1044 (.0749) 106 4
+14 0.135 0.108 0. 45 .1046 (.0662) 1108
+15 | 86.5 keV |59.5 keV 0.75 .1061 (.0549) 1208
+16 | 40.8 25.0 1.00 .1043 (.0394) 1262
+17 | 15.0 8.0 1.25 .0581 (.0145) .0768
+18 4.31 2.94 0.75 .0047 (.0011) .0066
+19 2.03 1.39 0.75 .0148 (.0025) .0208
+20 0. 96 0.67 0.75 .0048 (.0004) 0079
+21 | 0.45 0.24 1.25 0008 (<10 %) 0017
+22 0.13 <1o-4 (<1o_4) <]_of4
+Total | 0.4 eV - 15 MeV | 1. 0000 ;110?¢0
+
+~ (x) values related to the spectrum in the Fast Flux Test Fa-
+
+cility (Sect.9).
+
+_32_
+
+APPENDIX 2
+
+One Group Cross-Sections Based on the Reference 22 Group
+
+Transport Calculation (barns)
+
+Type Core Spectrum Blanket Spectrum
+Nuzfide Cc i Of v Oc O ¢ v
+U238 0.249 3.30-10 2| 2.746) 0.326 7.71+10 “|2.715
+Pu239 |0.329 1.709 2.951} 0.536 1.841 2.917
+Pu240 |0.527 0.364 3.052| 0.790 0.174 2.998
+Na 1.62-10 ° - - | 2.044:107° - -
+c1 6.38:10 ° - - | 8.83-107° - -
+
+(8.64°10 °)* (9.11+10 ) * - -
+Fe 1.01-10 2 - - 1.43-10 % - -
+Mo 0.109 - - 0.166 - -
+FP 0.225 ~ - 0.362 - -
+
+* These values were computed on the basis of ENDF/B.III data.
+
+It is interesting to know the cross-sections of Iron and Mo-
+lybdenum for the core blanket boundary spectrum (useful for
+the reactivity cost of the vessel); these intermediate va-
+lues are:
+
+2 for Iron
+
+for Molbydenum
+
+1.142+10
+
+o]
+c (barns) = {0.126
+-33=-
+
+In the blanket the spectrum is softer than in the core;
+except for the fast fissioning in the fertile isotopes all
+
+cross-sections are therefore higher in the blanket.
+
+The new core spectrum is softer compared to that of (1)
+which explains the deviations observed in the one group
+
+cross-sections.
+-34~-
+
+APPENDIX 3
+
+If the volume remains constant during the mixing, the densi-
+ties of the various liquids are given by (see the composition
+
+in Sect.2):
+
+1 N 1 {
+
+(1) S euer T 93 Blpucrs T 947 Blyac
+1 ny 1 1
+— - —_ + . —
+(D)coolant 0.32 D)UClS ©.08 (D)NaCl
+
+ith 1.5 ~3
+wi pNaCl .5 g cm
+- Y47 ~3 h d
+pPuClB pUCl3 - 4,76 g cm one gets the expecte
+values (Sect.2)
+
+P = 2.344 g cm >
+fuel ' 9
+P - 4.0l g cm >
+coolant * 9
+
+By taking the derivatives of both sides of Eq. 1 it follows:
+
+(p )fuel 0.26 )PuClB O.74 (p )NaCl
+(2) {
+Sp = Sp Sp
+_(p ) coolant 0-78 (Fyerz * 0-22 (p ) Nac1
+
+The thermal expansion coefficients are given in (1) Appendix
+
+for pure PUC1l3 and NaCl:
+)fuel
+
+coolant
+
+_35_
+
+- 0.63°10
+
+- 0.89-10
+
+-3 oC-l
+
+-3 Oc'l
+Awhm—.cma /9 ~4ON3 - suo1}das ssoud "jdiosge autiojyd
+
+| "614
+0
+-
+—a
+N
+—1 ot
+¢ —g-— — 001
+o
+(101) sqep 4 =
+T ~— ~~
+4 2
+B i
+= -
+- —
+___L ] | plr::_ | ] _b_.E_ | _LLP.I:F_ ] _LF:_:__ lcco_
+
+SU0I}J23S SS04) 3ulloly) Ppue el}ladg uUuocJiInaN
+
+¢z 'bid
+n 6 8 L S S 7 € ¢ : 0
+3 AN AN 01 MW L0 > MWL AW 01
+H-__— ! | _-ﬂ____ | ! -|_—__|-_ | | _q_-__.. i T T 10
+/
+- ya
+-
+-. -
+01 —
+i
+-
+u
+00t .n
+(z¢esl) M a/4aN3 o " ® ~
+-
+D - €299 13§ 55043 sqy dui01yy ~ ()
+>
+o 8 whni}dads co_mm..m..@J B
+T L 314U -877¢ ¥dZ - (p) _
+> —p
+Z - Aiepunoqaio) - mmuuzn@ |
+B 21juay - mmu_uzle\ ADVQ .
+SEEN1 L L tanl Lo e Lo oo RS
+
+1INN A9¥VHL3T d¥3d XN1d
+sord Breeding Ratio C and blanket thickness t /
+m .
+3 -
+( Core volume = 8.18 m" ) 145
+—
+L0 - —
+Blanket Volume V - - 1.40
+30
+Ref. Case .1 1.35
+20 -
+t (cm)
+0 | H 1 i ] 1 "30
+720 / 80 90 100 10 120
+—~y 4+ 2%
+Fig. 4 .
+*gk Reactivity change with Core volume -
+X (Blanket Thickness=95cm) -
+i y
++ 1% — -t + 1%,
+i Ref.Case
+- v -
+) Co
+: | (L) core O
+0.9 1.0 1 1.2
+F -
+- 1% }— i '.’.
+
+Fig. 5
+4, A Radial distributions of the 16'" and i2'"
+flux (Sph. Geom.)
+transport calculations
+
+th ~~=-= Asymptotic mode in the core
+
+Fig. 6
+Radial distributions of the l2thflux P ‘
+and specific power (Cyl. geom.)
+
+3.16° -
+1107
+210> -
+specific __ g
+power
+0.5-10°
+110> -
+Asymptotic mode
+| { 1
+
+0 - 50 100 150 r (cm)

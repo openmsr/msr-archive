@@ -34,9 +34,9 @@ this method can be used to find documents with relevant information. be aware th
   - [ORNL Central Files Related to the Molten-Salt Reactor Program](#ornl-cf)
   - [Liquid-Chloride Reactors](#lcr)
   - [Fluoride-Salt-Cooled, Solid-Fueled Reactors](#solid)
-  - [Recent and Assorted Documents](#recent)
-  - [Thorium, Hydrogen, and Assorted Documents](#thorium)
-
+  - [Assorted Documents](#assorted)
+  - [New Piles Commitee Documents](#newpiles)
+  - [EIP Documents](#eip)
 ---
 
 ### Nuclear Science and Engineering, **2** 2 (February 1957). <a name="nse"></a>
@@ -697,15 +697,6 @@ this method can be used to find documents with relevant information. be aware th
 |:--------|:--------:|:------:|:------:|
 | [Cursory First Look at the Molten Chloride Fast Reactor as an Alternative to the Conventional BATR Concept](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/MCFR_BATR.pdf) | MCFR_BATR | 1992-04 | [txt](ocr/MCFR_BATR.txt) |
 | [Configuration of a Molten Chloride Fast Reactor on a Thorium Fuel Cycle to Current Nuclear Fuel Cycle Concerns](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/MCFR_UCLA_Ottewitte_thesis.pdf) | MCFR_UCLA_Ottewitte_thesis| 1982 | [txt](ocr/MCFR_UCLA_Ottewitte_thesis.txt) |
-| [Reactor with Very Low Fission Product Inventory](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-411.pdf) | EIR-411 | 1980-07 | [txt](ocr/EIR-411.txt) |
-| [Fast Reactors Using Molten Chloride Salts as Fuel: Final Report (1972-1977)](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-332.pdf) | EIR-332 | 1978-01 | [txt](ocr/EIR-332.txt) |
-| [Breeding in Molten-Salt Reactors](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-276.pdf) | EIR-276 | 1976-04 | [txt](ocr/EIR-276.txt) |
-| [Transmutation of Fission Products in a Liquid-Fuelled Fast Fission Reactor with Thermal Column](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-270.pdf) | EIR-270 | 1975-02 | [txt](ocr/EIR-270.txt) |
-| [Chemical State of Sulphur Obtained by the 35Cl(n,p)35S Reaction During In-Pile Irradiation](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-267.pdf) | EIR-267 | 1974-12 | [txt](ocr/EIR-267.txt) |
-| [A High-Flux Fast Molten Salt Reactor for the Transmutation of 137Ce and 90Sr](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-259.pdf) | EIR-259 | 1975-09 | [txt](ocr/EIR-259.txt) |
-| [An Assessment of a 2500 MWe Molten Chloride Salt Fast Reactor](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/AEEW-R956.pdf) | AEEW-R956 | 1974-08 | [txt](ocr/AEEW-R956.txt) |
-| [The Possibility of Continuous In-core Gaseous Extraction of Volatile Fission Products in a Molten Fuel Reactor](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-257.pdf) | EIR-257 | 1974-05 | [txt](ocr/EIR-257.txt) |
-| [A Molten Salt Fast Thermal Reactor System with no Waste](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-249.pdf) | EIR-249 | 1974-01 | [txt](ocr/EIR-249.txt) |
 | [Molten Plutonium Chloride Fast Breeder Reactor Cooled by Molten Uranium Chloride](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ANSE-1-277.pdf) | ANSE-1-277 | 1974 | [txt](ocr/ANSE-1-277.txt) |
 | [New Boiling Salt Fast Breeder Reactor Concepts](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/NED-5-109.pdf) | NED-5-109 | 1967 | [txt](ocr/NED-5-109.txt) |
 | [Fuel Properties and Nuclear Performance of Fast Reactors Fueled with Molten Chlorides](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/NA-3-540.pdf) | NA-3-540 | 1967 | [txt](ocr/NA-3-540.txt) |
@@ -714,6 +705,7 @@ this method can be used to find documents with relevant information. be aware th
 | [Thermodynamic Stability of Metals and Their Chlorides in the Presence of UCl3 and PuCl3](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/MSR-63-53.pdf) | MSR-63-53 | 1963-10-31 | [txt](ocr/MSR-63-53.txt) |
 | [Chemical Problems of Non-Aqueous Fluid-Fuel Reactors](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/MIT-5001.pdf) | MIT-5001 | 1952-10-15 | [txt](ocr/MIT-5001.txt) |
 | [Nuclear Problems of Non-Aqueous Fluid-Fuel Reactors](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/MIT-5000.pdf) | MIT-5000 | 1952-10-15 | [txt](ocr/MIT-5000.txt) |
+| [An Assessment of a 2500 MWe Molten Chloride Salt Fast Reactor](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/AEEW-R956.pdf) | AEEW-R956 | 1974-08 | [txt](ocr/AEEW-R956.txt) |
 
 ---
 
@@ -727,25 +719,13 @@ this method can be used to find documents with relevant information. be aware th
 
 ---
 
-### Recent and Assorted Documents <a name="recent"></a>
+### Assorted Documents <a name="assorted"></a>
 | report | filename | date | ocr |
 |:--------|:--------:|:------:|:------:|
-| [Reactors with Molten Salts: Options and Missions](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/FJOH-2004.pdf) | FJOH-2004 | 2004-08 | [txt](ocr/FJOH-2004.txt) |
-| [An Advanced Molten Salt Reactor Using High-Temperature Reactor Technology](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ICAPP-4152.pdf) | ICAPP-4152 | 2004-06-13 | [txt](ocr/ICAPP-4152.txt) |
-| [The MSR Option for Beneficial Use of Fissile Material from Dismantled Weapons](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/CTS-31-92.pdf) | CTS-31-92 | 1991-02-18 | [txt](ocr/CTS-31-92.txt) |
-| [The Molten Salt Adventure](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/NSE-90-374.pdf) | NSE-90-374 | 1985 | [txt](ocr/NSE-90-374.txt) |
 | [The INOR-8 Story](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL.pdf) | ORNL Review | 1969 | [txt](ocr/ORNL.txt) |
 | [MSR Concepts with Reduced Potential for Proliferation of Special Nuclear Materials](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORAU-IEA-77-13.pdf) | ORAU-IEA-77-13 | 1977 | [txt](ocr/ORAU-IEA-77-13.txt) |
 | [Catalog of Nuclear Reactor Concepts: Part I, Section III](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ANL-7092.pdf) | ANL-7092 | 1965-09 | [txt](ocr/ANL-7092.txt) |
 | [Parametric Survey of Criticality-Limited Fast Reactors Employing Uranium Fluoride Fuels](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/JPL-TR-32-198.pdf) | JPL-TR-32-198 | 1962-03-15 | [txt](ocr/JPL-TR-32-198.txt) |
-
----
-
-### Thorium, Hydrogen, and Assorted Documents <a name="thorium"></a>
-| report | filename | date | ocr |
-|:--------|:--------:|:------:|:------:|
-| [Thorium Fuel Cycle--Potential Benefits and Challenges](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/IAEA-TECDOC-1450.pdf) | IAEA-TECDOC-1450 | 2005-05 | [txt](ocr/IAEA-TECDOC-1450.txt) |
-| [Thorium-based Fuel Options for the Generation of Electricity: Developments in the 1990s](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/IAEA-TECDOC-1155.pdf) | IAEA-TECDOC-1155 | 2000-05 | [txt](ocr/IAEA-TECDOC-1155.txt) |
 | [An Evaluation of the Molten Salt Breeder Reactor](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/WASH-1222.pdf) | WASH-1222 | 1972-09 | [txt](ocr/WASH-1222.txt) |
 | [Updated (1970) Cost-Benefit Analysis of the US Breeder Reactor Program](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/WASH-1184.pdf) | WASH-1184 | 1972-01 | [txt](ocr/WASH-1184.txt) |
 | [Cost-Benefit Analysis of the US Breeder Reactor Program](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/WASH-1126.pdf) | WASH-1126 | 1969-04 | [txt](ocr/WASH-1126.txt) |
@@ -754,9 +734,6 @@ this method can be used to find documents with relevant information. be aware th
 | [Sargent and Lundy Capital Cost Evaluation of 1000 MWe MSCR Power Plants](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/SL-1954.pdf) | SL-1954 | 1962-06 | [txt](ocr/SL-1954.txt) |
 | [Report of the Fluid Fuel Reactors Task Force](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/TID-8507.pdf) | TID-8507 | 1959-02 | [txt](ocr/TID-8507.txt) |
 | [Lithium Separation by Electrolysis](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/LA-1156.pdf) | LA-1156 | 1950-09 | [txt](ocr/LA-1156.txt) |
-
-| report | filename | date | ocr |
-|:--------|:--------:|:------:|:------:|
 | [The Radiochemistry of Uranium, Neptunium, and Plutonium--An Updating](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/NAS-NS-3063.pdf) | NAS-NS-3063 | 1986-02 | [txt](ocr/NAS-NS-3063.txt) |
 | [The Radiochemistry of Neptunium](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/NAS-NS-3060.pdf) | NAS-NS-3060 | 1974-12 | [txt](ocr/NAS-NS-3060.txt) |
 | [The Radiochemistry of Plutonium](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/NAS-NS-3058.pdf) | NAS-NS-3058 | 1965-09 | [txt](ocr/NAS-NS-3058.txt) |
@@ -766,7 +743,51 @@ this method can be used to find documents with relevant information. be aware th
 | [The Radiochemistry of Beryllium](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/NAS-NS-3013.pdf) | NAS-NS-3013 | 1960-05 | [txt](ocr/NAS-NS-3013.txt) |
 | [The Radiochemistry of Thorium](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/NAS-NS-3004.pdf) | NAS-NS-3004 | 1960-01 | [txt](ocr/NAS-NS-3004.txt) |
 
+<!--| [The Molten Salt Adventure](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/NSE-90-374.pdf) | NSE-90-374 | 1985 | [txt](ocr/NSE-90-374.txt) | -->
+
 ---
+
+### New Piles Commitee <a name="npc"></a>
+| report | filename | date | ocr |
+|:--------|:--------:|:------:|:------:|
+| [Notes on Meeting of April 26, 1944](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/MUC-LAO-17.pdf) | MUC-LAO-17 | 1944-04 | [txt](ocr/MUC-LAO-17.txt) |
+| [Notes on Meeting of April 28, 1944](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/MUC-LAO-18.pdf) | MUC-LAO-18 | 1944-04 | [txt](ocr/MUC-LAO-18.txt) |
+| [Notes on Meeting of May 5, 1944](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/MUC-LAO-19.pdf) | MUC-LAO-19 | 1944-05 | [txt](ocr/MUC-LAO-19.txt) |
+| [Notes on Meeting of May 10, 1944](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/MUC-LAO-20.pdf) | MUC-LAO-20 | 1944-05 | [txt](ocr/MUC-LAO-20.txt) |
+| [Notes on Meeting of May 12, 1944](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/MUC-LAO-21.pdf) | MUC-LAO-21 | 1944-05 | [txt](ocr/MUC-LAO-21.txt) |
+| [Notes on Meeting of July 6, 1944](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/MUC-LAO-30.pdf) | MUC-LAO-30 | 1944-07 | [txt](ocr/MUC-LAO-30.txt) |
+| [Notes on Meeting of July 14, 1944](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/MUC-LAO-40.pdf) | MUC-LAO-40 | 1944-07 | [txt](ocr/MUC-LAO-40.txt) |
+| [Notes on Meeting of July 26, 1944](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/MUC-LAO-41.pdf) | MUC-LAO-41 | 1944-07 | [txt](ocr/MUC-LAO-41.txt) |
+
+---
+
+### EIR Reports <a name="eip"></a>
+| report | filename | date | ocr |
+|:--------|:--------:|:------:|:------:|
+| [Molten Chlorides Fast Breeder Reactor Problems and Possibilities](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-215.pdf) | EIR-215 | 1972-06 | [txt](ocr/EIR-215.txt) |
+| [Molten Chlorides Fast Breeder Reactor Physics Calculations](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-229.pdf) | EIR-229 | 1972-11 | [txt](ocr/EIR-229.txt) |
+| [High Temperature Reaction of Uranium Carbides and Transient Metal Chlorides in Molten Chloride Media](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-238.pdf) | EIR-238 | 1973-06 | [txt](ocr/EIR-238.txt) |
+| [A Molten Salt Fast Thermal Reactor System with no Waste](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-249.pdf) | EIR-249 | 1974-01 | [txt](ocr/EIR-249.txt) |
+| [Thorium, Uranium, other Metals and Materials from Earth's Crust Rocks](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-252.pdf) | EIR-252 | 1974-04 | [txt](ocr/EIR-252.txt) |
+| [The Possibility of Continuous In-core Gaseous Extraction of Volatile Fission Products in a Molten Fuel Reactor](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-257.pdf) | EIR-257 | 1974-05 | [txt](ocr/EIR-257.txt) |
+| [A High-Flux Fast Molten Salt Reactor for the Transmutation of 137Ce and 90Sr](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-259.pdf) | EIR-259 | 1975-09 | [txt](ocr/EIR-259.txt) |
+| [Salzschmelze-Reaktorentagung in Fontenay-aux-Roses / Salt smelter reactor conference in Fontenay-aux-Roses](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-266.pdf) | EIR-266 | 1974-10 | [txt](ocr/EIR-266.txt) |
+| [Chemical State of Sulphur Obtained by the 35Cl(n,p)35S Reaction During In-Pile Irradiation](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-267.pdf) | EIR-267 | 1974-12 | [txt](ocr/EIR-267.txt) |
+| [Transmutation of Fission Products in a Liquid-Fuelled Fast Fission Reactor with Thermal Column](http238s://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-270.pdf) | EIR-270 | 1975-02 | [txt](ocr/EIR-270.txt) |
+| [Breeding in Molten-Salt Reactors](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-276.pdf) | EIR-276 | 1976-04 | [txt](ocr/EIR-276.txt) |
+| [Fast Reactors Using Molten Chloride Salts as Fuel: Final Report (1972-1977)](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-332.pdf) | EIR-332 | 1978-01 | [txt](ocr/EIR-332.txt) |
+| [Reactor with Very Low Fission Product Inventory](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-411.pdf) | EIR-411 | 1980-07 | [txt](ocr/EIR-411.txt) |
+| [Thermische Salzschmelzebrilter in Frankreich / Thermal molten salt filters in France](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-AN-HL-230.pdf) | EIR-AN-HL-230 | 1975-06 | [txt](ocr/EIR-AN-HL-230.txt) |
+| [Information über die Anwendungsmöglichkeiten von Salzschmelzen in der Energiewirtschaft / Information about possible applications of salt melts in the energy industry](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-AN-HL-234.pdf) | EIR-AN-HL-234 | 1975-08 | [txt](ocr/EIR-AN-HL-234.txt) |
+| [Kontrollblatt für externe Publikationen und Vorträge / Control sheet for external publications and lectures](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-AW-GL-335.pdf) | EIR-AW-GL-335 | 1978-09 | [txt](ocr/EIR-AW-GL-335.txt) |
+| [Salzschmelzespeicher anstatt Hydropumpenspeicher für die Speicherung der elektrischen Energie / Molten salt storage instead of hydraulic pump storage for storing electrical energy](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-TM-HL-233.pdf) | EIR-TM-HL-233 | 1974-08 | [txt](ocr/EIR-TM-HL-233.txt) |
+| [Synthesis and Gas Chromatography of Selected Metal Chlorides](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-TM-HL-235.pdf) | EIR-TM-HL-235 | 1974-09 | [txt](ocr/EIR-TM-HL-235.txt) |
+| [Hochtemperatur-Wärmespeicher mit Salzschmelze und intermediärem Gaskreislauf / High-temperature heat accumulator with molten salt and intermediate gas cycle](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-TM-HL-238.pdf) | EIR-TM-HL-238 | 1974-08 | [txt](ocr/EIR-TM-HL-238.txt) |
+| [Titrimetrische Pu-Bestimmung unter Verwendung von Cu(I)-Chlorid als Reduktionsmittel / Titrimetric Pu determination using Cu(I) chloride as reducing agent](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-TM-HL-255.pdf) | EIR-TM-HL-255 | 1975-04 | [txt](ocr/EIR-TM-HL-255.txt) |
+| [Very high breeding ratio in the molten chloride fast power reactor with external cooling](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/EIR-TM-HL-261.pdf) | EIR-TM-HL-261 | 1975-07 | [txt](ocr/EIR-TM-HL-261.txt) |
+
+
+
 
 <!-- ### other
 | report | filename | date | ocr |
