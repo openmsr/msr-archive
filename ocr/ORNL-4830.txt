@@ -1,72 +1,31 @@
- 
+CFNTRAL RESEARCH LIRRARYG L\ on0
 
-S .
+i
 
- 
+cj.
 
-              
-
- 
-
- 
-
-4830
-
- 
-
-R
-
- 
-
-R A
-
- 
-
-- I
-
-S )
-ORNL
-
-25
-
- 
-
-.
-
-ﬂﬂﬁﬂﬂﬂﬂﬁ”ﬂﬁﬂﬂWﬂHﬂEﬂﬂWﬂﬁﬂ
-
-Holz
+3 445k 0515Lke 5
 
 THE ORNL AUTOMATED ORBITAL PIPE
 WELDING SYSTEMS
-Peter P.
 
- 
+Peter P. Holz
 
- 
+CUMENT COLLECTION
 
- 
+LIBRARV LOAN COPy
 
- 
+JO NOT TRANSFER O NOTHER PERSO}
 
- 
- 
+OAK RIDGE NATIONAL LABORATORY
 
- 
+OPERATED BY UNION CARBIDE CORPORATION  FOR THE U.S. ATOMIC ENERGY COMMISSION
 
-Printed in the United States of America. Available from
+Printed in the United States of America. Available from
 National Technical Information Service
 U.S. Department of Commerce
 5285 Port Royal Road, Springfield, Virginia 22151
 Price: Printed Copy $3.00; Microfiche $0.95
-
- 
-
- 
-
- 
-
- 
 
 This report was prepared as an account of work sponsored by the United
 States Government. Neither the United States nor the United States Atomic
@@ -74,28 +33,10 @@ Energy Commission, nor any of their employees, nor any of their contractors,
 subcontractors, or their employees, makes any warranty, express or implied, or
 assumes any legal liability or responsibility for the accuracy, completeness or
 usefulness of any information, apparatus, product or process disclosed, or
-represents that its use would not infringe privately owned rights.
+represents that its use would not infringe privately owned rights,
 
- 
-
- 
-
- 
-
-m
-
-o
- 
-
- 
-
-w}
-
-)
-
-o)
-
-&}
+ORNL-4830
+UC-80 Reactor Technology
 
 Contract W-7405-eng-26
 
@@ -107,149 +48,69 @@ Peter P. Holz
 
 JANUARY 1973
 
- 
-
-NOTICE
-
-This report was prepared as sn account of work
-sponsored by the United States Government, Neither
-the United States nor the United States Atomic Energy
-
- 
-
-‘Commission, nor any of their employees, nor any of |-
-
-‘their contractors, subcontractors, or their employees,
-
-makes any warranty, express or implied, or assumes any |
-legal lability or responsibility for the accuracy, com-
-
-pleteness or usefulness of any information, apparatus,
-
-product or process disclosed, or represents that its use
-
-would not infringe privately owned rights,
-
- 
-
-I
-
- 
-
 OAK RIDGE NATIONAL LABORATORY
-0Oak Ridge, Tennessee 37830
+Oak Ridge, Tennessee 37830
 operated by
 UNION CARBIDE CORPORATION
-
-for the ‘
+for the
 U.S. ATOMIC ENERGY COMMISSION
 
-ORNL-4830
-UC-80 Reactor Technology
+DRI
 
- 
+3 445k 05151ke 5
 
- 
+|
+|
+111
 
- 
- 
-
- 
-
-»
-
- 
-
- 
-
- 
-
- 
-
- 
- 
-
-m
-
-£y
-
-iii
-
- 
-
-a}
-
-e
-
-ab
-
+|
 Contents
-ACKNOWLEDGMENT S ... it ittt ittt te e a e ca et aaaaae e araanenanaaenas v
-ABSTRACT ... e vii
-1. INTRODUCTION AND SUMMARY .. ... ettt et et e 1
-2. FUNCTIONAL DESCRIPTION . .........cooittttitemnt et eaeea e 3
-3. SYSTEM COMPONENTS ........ C e e e e ettt e, . 6
-AT g . ..ttt i ittt i et et e et 6
-Welding Head . ... .. . . ittt ittt it te et eaaaaeaasaeeennaneaanaaanas 9
-PoOWer SUPPY ..o e e i i e 15
-Pendant, Sensor,andCables ............... e e e e e e e e e e e e s 18
-R COTAOT . .ttt e e e i e 18
-. ELECTRICAL AND CONTROL SYSTEM . ... ... it ettt e e eea e 21
-Programmer-Controller ... ... .. . e 21
-Basic Subdivisions of Programmer Circuitry .......... ... i i i e 21
-ControlModes . ................ e e e e e 22
-CUITent ComETO] . . .ttt ittt ittt it iia et et e 22
-Pulse Current . ....... e e e e e et et i e 23
-TorchOscillator ..................... e e e e e aaaa e 23
-ToolSpeed Control . .........oiuui i 23
-Wire Feed Control and AVC .. ... ...ttt ittt te et e e e e e eennn 24
-Arc Length Control (ALC) . ... .. ..o e i et ettt cia e 24
-StubberCircuit ........... ... ... .. i, J 25
-Gasand Water Interlocks . . . ... ... i i ittt et ettt aaasane i a e 25
-Power Supplies and Power Buses . .. ... . ittt ittt ittt ittt i 25
-. WELDING STUDIES, WELD JOINT DEVELOPMENT, AND WELDING SCHEDULE ................. 26
-. WELDING SYSTEM OPERATIONS . ... . i i i i sttt et ianaans 30
-Preweld Operations . .. ... ettt ae s e 30
-Guidelines for Tacking Consumable Weld Inserts ........... ... . i, 31
-Welding Techniques . ..... feeenaas e P e e 32
-Cleaning of Weld Beads . ...... ..ottt it it it ittt e as s etatansnanaannns 32
-Defects ....... e e eeeeareara e S 32
-Repairs ................. e e e e e e et e D 32
-Weld Schedule Data Sheets ... ... e P 32
+) ACKNOWLEDGMENTS ... ... v
+N ABSTRACT vii
+1. INTRODUCTION AND SUMMARY . .. .. e 1
+2. FUNCTIONAL DESCRIPTION .. e e 3
+3. SYSTEM COMPONENT S . . 6
+7 1 6
+Welding Head . ... .. .. e 9
+Power SUPDly .. 15
+Pendant, Sensor, and Cables . ... ... .. . . . . . 18
+Recorder . .o 18
+4. ELECTRICAL AND CONTROL SYSTEM . ... .. 21
+Programmer-Controller .. .. ... .. . 21
+Basic Subdivisions of Programmer Circuitry ... ... ... . . . . 21
+. Control Modes . . .. ... 22
+’ Current Control . .o e 22
+Pulse CUrtent . L. o e 23
+’ Torch Oscillator . . ... 23
+Tool Speed Control . . ... . 23
+Wire Feed Control and AVC .. . 24
+Arc Length Control (ALC) ... o 24
+Stubber CirCUit . . ... . 25
+Gas and Water Interlocks . . ... .. 25
+Power Supplies and Power Buses . . . ... ... 25
+5. WELDING STUDIES, WELD JOINT DEVELOPMENT. AND WELDING SCHEDULE . ................ 26
+6. WELDING SYSTEM OPERATIONS . . .. e e e e 30
+Preweld Operations .. ... . e 30
+Guidelines for Tacking Consumable Weld Inserts ... ... ... . .. . .. . . i 31
+Welding Techniques . . . . .. .o 32
+Cleaning of Weld Beads . . .. ... . 32
+-~ D eCtS .. 32
+RepaiTS o 32
+- Weld Schedule Data Sheets . . ... ... 32
 
- 
- 
+1v
 
-iv
-
-Operational Procedure (ORNL Equipment) Checkoff List ... ... ...ttt nininnenrnnnns .. 32
-Guidelines for the Welder-Operator’s Visual Observation During Automated Welding . .. ................ 36
-
-7. WELDING SYSTEM MAINTENANCE . .. ... i i i e i ein e e 37
-8. OPERATOR TRAINING .. . i i it it it ae s ia e aeraneearnannnenaennenn 37
-9. CUTTING PREREQUISITES — PIPE CU’T AND BEVEL PREPARATION DEVELOPMENT ............ 38
-10. COMMERCIAL U.S. EQUIPMENT SOURCES FOR ORBITAL WELDING SYSTEMS ............. ... 39
-
+Operational Procedure (ORNL Equipment) Checkoff List . .......... ... ... .. ... o . 32
+Guidelines for the Welder-Operator’s Visual Observation During Automated Welding . .. .......... . ... .. 36
+7. WELDING SYSTEM MAINTENANCE . . . ... 37
+8. OPERATOR TRAINING .., 37
+9. CUTTING PREREQUISITES — PIPE CUT AND BEVEL PREPARATION DEVELOPMENT ... ....... .. 38
+10. COMMERCIAL US. EQUIPMENT SOURCES FOR ORBITAL WELDING SYSTEMS . ................ 39
 Appendix A. ORNL WELDING PROGRAMMER-CONTROLLER, CONTROLS AND FUNCTIONS ......... 41
-
 Appendix B. RECOMMENDED FORMAT FOR ESTABLISHING A WELDING PROCEDURE
+FORAUTOMATIC WELDING .. ... ... 45
 
-FOR AUTOMATICWELDING ...... ... . i ittt 45
-
-ot )
-
--]
- 
-
-«)
-
-£}
-
-)y
-
-Acknowledgments
-
- 
+Acknowledgments
 
 I wish to thank the Union Carbide Nuclear Division
 Purchasing Department and associates in various fields
@@ -257,10 +118,10 @@ of endeavor at the Oak Ridge National Laboratory for
 their important contributions to the Automated Pipe
 Welding Program. Their combined effort contributed to
 the successful design, fabrication, development, and
-performance of our systems. Special thanks go toW.O.
-Harms, Director’s Division; H. A. Nelms, General
+performance of our systems. Special thanks go to W. O.
+Harms, Director’s Division, H. A. Nelms, General
 Engineering Division; W. A. Bird, C. C. Courtney, W. R.
-Miller, R. L. Moore, and R. W, Tucker, Instrumentation
+Miller, R. L. Moore, and R. W. Tucker, Instrumentation
 and Controls Division; G. M. Goodwin, T. R. Housley,
 G. C. Nelson, P. Patriarca, R. G. Shooster, G. M.
 Slaughter, and J. R. Weir, Jr., Metals and Ceramics
@@ -268,7 +129,7 @@ Division; D. R. Frizzell and V. T. Houchin, Plant and
 Equipment Division; and S. R. Ashton, R. Blumberg, J.
 O. Brown, J. R. Shugart, C. M. Smith, Jr., I. Spiewak,
 
-W. E. Thompson, and T. K. Walters, Reactor Division. I
+W. E. Thompson, and T. K. Walters, Reactor Division. |
 am particularly indebted to Bird, Goodwin, Houchin,
 Housley, Miller, Moore, Nelson, Slaughter, and Smith
 for their leadership, technical expertise,and teamwork,
@@ -285,31 +146,9 @@ their cooperation in maintenance of the equipment,
 field equipment improvements, and feedback of valu-
 able operational information and data.
 
- 
- 
-
- 
-
- 
-
-o)
- 
-
-Lr
-
-«)
-
-a}
-
-}
-
-0
-
-vii
+vii
 
 Abstract
-
- 
 
 The Oak Ridge National Laboratory has developed
 and successfully testea an improved automated welding
@@ -321,13 +160,11 @@ of pipe cutting, beveling, and welding in high-radiation
 zones where personnel cannot enter.
 
 The equipment was adapted from an orbiting auto-
-mated. pipe welding system originally designed for the
+mated pipe welding system originally designed for the
 Air Force by the North American Rockwell Corpora-
 tion. Automation of the equipment permits complete
 welds to be made from preset programs fed into an
-
-~ electronic programmer-controller. ORNL developed im-
-
+electronic programmer-controller. ORNL developed im-
 proved controls that can sense changes from feedback
 signals and automatically adjust for pipe ovality and for
 irregularities in the geometry and wall thickness at the
@@ -338,9 +175,7 @@ zontal) position, as the carriage moves a gas tungsten-
 arc torch continuously around the pipe.
 
 The equipment consists of an orbital horseshoe-
-
-.shaped carriage that clamps onto a pipe and propels the
-
+shaped carriage that clamps onto a pipe and propels the
 welding apparatus around the circumference of a pipe
 in conjunction with an automatic welding programmer-
 
@@ -365,40 +200,13 @@ Test Facility, being built by Bechtel for Westinghouse
 at Hanford. At both installations the equipment has
 reliably produced nuclear-quality welds that meet ASME
 Boiler and Pressure Vessel Code, Section III, Nuclear
-Vessels, Section IX, Welding Qualifications, and appli-
+Vessels, Section 1X, Welding Qualifications, and appli-
 cable RDT standards. An experienced welder can learn
 to use the equipment in a few days and produce high-
 quality welds with practically zero defects about four
 times as fast as in manual welding.
 
- 
- 
-
-§ . © ¥ hm ) » ™
-
- 
- 
-
- 
-
- 
- 
-
-ap
-
-)
-
-a9
-
-<)
-
-alJ
-
-1. Introduction and Summary
-
- 
-
- 
+1. Introduction and Summary
 
 In 1968 ORNL reviewed the methods and equipment
 used to make remote repairs in the high-radiation zones
@@ -415,7 +223,7 @@ for remotely controlled operations with consistently
 reliable performance. An automated pipe-cutting and
 welding system developed for the U.S. Air Force by
 North American Rockwell Corporation showed promise
-for such development. -
+for such development.
 
 With the cooperation of the Air Force, ORNL
 obtained some of their prototype equipment and
@@ -427,22 +235,16 @@ fabricated for use in ORNL’s remote cut-and-weld
 maintenance feasibility studies and for the development
 of general-purpose automated pipe welding systems.
 After additional refinements to welding control circuits,
-
-.the modified system . demonstrated such good, con-
-
+the modified system demonstrated such good, con-
 sistent performance for indirect work that it gave rise to
 another objective (which became the goal of the work,
-
-supported by the Liquid-Métal Breeder Program of the-
-
+supported by the Liquid-Metal Breeder Program of the
 US. Atomic Energy Commission) — a completely
-
-‘automated welder for dlrect apphcatlon in reactor
-
+automated welder for direct application in reactor
 construction.
-The ORNL automated weldmg system utilizes an
 
-~electronic programmer-controller to operate a conven-
+The ORNL automated welding system utilizes an
+electronic programmer-controller to operate a conven-
 
 tional arc welding power supply and to direct and
 regulate welding and cutting attachments mounted on a
@@ -452,7 +254,7 @@ pendant control unit provides alternate manual Start
 and Stop push buttons. In automatic welding, the
 appropriate welding procedure for the type of metal
 being joined is dialed into the programmer-controller
-and the Start button is pushed; the machine takes over,
+and the Start button is pushed: the machine takes over.
 produces the weld, and then shuts itself off. The
 welder-operator can observe the weld as it is being made
 and, when necessary, make minor adjustments to
@@ -466,36 +268,26 @@ welds consistently, fine tuning of the automated con-
 trols is necessary. Therefore it is highly recommended
 that the equipment be operated only by skilled welder-
 operators who are trained especially for automation and
-
-who have passed stringent tests with automated equ1p—
-
+who have passed stringent tests with automated equip-
 ment.
 
 An experienced welder can learn to use the auto-
 mated equipment in a few days and thereafter produce
-welds with practically  zero defects with about four
+welds with practically zero defects with about four
 times the speed usually achieved in manual Heliarc
 welding. The time required for the metal around the
 welded joint to cool to acceptable low temperatures
 between welding passes usually governs weld produc-
-
-tion output. In automated welding, additional time can.
-
+tion output. In automated welding, additional time can
 be saved because adaptive controls permit high-quality
-
-, wreldsj to be made without such careful, exacting joint
-preparation and alignment as otherwise would be-
-
+welds to be made without such careful, exacting joint
+preparation and alignment as otherwise would be
 required. Manual welding at the construction site must
- 
-
- 
-
-be performed by specially qualified welders, which
+be performed by specially qualified welders, which
 usually means that the construction contractor must
 conduct extensive training programs. In addition, nu-
 clear-quality welding by hand is slow and is plagued by
-a high percentage of rejects. _
+a high percentage of rejects.
 
 Prototype systems of the modified design developed
 by ORNL were fabricated by industrial vendors and
@@ -518,15 +310,13 @@ inserts. The equipment was shown to be capable of
 making continuous butt welds around the entire perim-
 eter of the pipe that consistently met the requirements
 of the ASME Boiler and Pressure Vessel Code, Sections
-III and IX, and applicable RDT standards. The contin-
+[l and X, and applicable RDT standards. The contin-
 uous perimeter weld offers a special advantage in that
 the errors and flaws that often result from welding
-starts and stops are eliminated. _
+starts and stops are eliminated.
 
 ORNL built the prototype automated equipment to
-
-demonstrate the feasibility of using this system for.
-
+demonstrate the feasibility of using this system for
 nuclear-quality welds and also to prove the practicality
 of automated welding systems in actual daily use. We
 delivered automated welding systems to Westinghouse-
@@ -535,10 +325,8 @@ fied the equipment for welding Fast-Flux Test Facility
 Project stainless steel pipes. Another automated welding
 system was delivered to the Tennessee Valley Authority
 at their Browns Ferry Nuclear Plant and is now in use
-
 primarily for welding carbon steel pipe in sizes up
-
-through 14 in. in diameter. _
+through 14 in. in diameter.
 
 The metallurgical tests and welding research which
 established the optimum conditions and procedures for
@@ -549,7 +337,7 @@ mined the optimum values for all the variables that
 must be controlled to obtain good welds and estab-
 lished detailed procedures to be followed in welding
 different materials. The automated system was required
-to maintain these conditions and follow the procedures.,
+to maintain these conditions and follow the procedurcs.
 
 In particular, the electronic instrumentation and con-
 trols had to be sufficiently rugged to stand up under
@@ -569,10 +357,10 @@ welding equipment.
 
 The automated pipe welding equipment has demon-
 strated that it can produce highest-quality welds con-
-sistently ‘at reasonable cost and in reduced time
+sistently at reasonable cost and in reduced time
 schedules, if the controls are properly set. The optimum
 welding parameters will vary with the pipe material,
-diameter, wall thickness, end preparation, and tempera-
+diameter, wall thickness. end preparation, and tempera-
 ture. It is necessary to select and control optimum
 values for the weld travel speed, arc current and mode,
 arc length, electrode shape and type, and flow rate of
@@ -603,41 +391,29 @@ industry and utilities attended the conference, and since
 that time, several companies have seriously entered the
 automated pipe welding field. At the conference,
 ORNL revealed a number of unique self-adaptive
-control techniques to ensure repeatable programmed
+controt techniques to ensure repeatable programmed
 welding. Exacting control means have since been
- 
 
-1)
-
-a}
-
-9
-
-X
-
-)
-
-patented! and assigned to the Government to make
-them available to all manufacturers. _
+patented! and assigned to the Government to make
+them available to all manufacturers.
 
 With industrial competition, automated welding
 equipment is becoming more advanced and more
 economical. For example, in March and April of 1972,
 ORNL proof tested an automated commercial system
 costing under $40,000 and used it to weld sample joints
-of 6-, 10, 16-, and 28-in. stainless steel pipes. The welds
+of 6-, 10-, 16-, and 28-in. stainless steel pipes. The welds
 made with this commercial equipment all met the
-requirements. of applicable ASME codes and RDT
+requirements of applicable ASME codes and RDT
 standards.
 
 This report describes the completed development
 program for the ORNL automated orbital pipe welding
 system. We have chosen not to report day-to-day
-
 operations and progress but rather have attempted to
 
-1. C. M. Smith, Jr., and W. R. Miller, Self-Adaptive Welding
-Torch Controller, U.S. Patent 3,646,309, Feb. 29, 1972. As-
+t. C. M. Smith, Jr., and W. R. Miller, Self-Adaptive Welding
+Torch Controller, U.S. Patent 3,646,309, Feb. 29, 1972, As-
 signee — The United States of America as represented by the
 U.S. Atomic Energy Commission. (Filed Jan. 26, 1971.)
 
@@ -651,24 +427,18 @@ section on the electrical and control system is relatively
 detailed, since, in principle, the operation of any
 automated welding system requires the same general
 approach to sensing, signal feedback, and automated
-
-- response. The description of our control system, there-
-
+response. The description of our control system, there-
 fore, is generally applicable to commercial equipment as
-
-~well, although specific control means may vary among
-
+well, although specific control means may vary among
 manufacturers. The report also gives limited informa-
 tion on the commercial automated orbital welding
 systems manufactured in the United States as of July
 1972.
 
-. Appended to the report are detailed sections to cover
+Appended to the report are detailed sections to cover
 all specific controls and functions of the ORNL welding
 programmer-controller and a recommended format for
 establishing a welding procedure.
-
- 
 
 2. Functional Description
 
@@ -681,13 +451,11 @@ All equipment is lightweight, portable, and compact
 and can be set up for pipe welding in a few minutes. At
 present, there are different orbiting carriages for the
 following ranges of pipe (outside) diameters: 3 to 6, 6
-
+to 9, 9 to 12, and 12 to 16 in. (ref. 2). [n these
 carriages, starting with the 6- to 9-in. carriage, the
 subassemblies and parts are interchangeable, as are the
-welding “heads; this helps to minimize the spare parts
+welding heads; this helps to minimize the spare parts
 inventory. Figure 1 illustrates a typical automated
-
- 
 
 2. Operational models are available for all size ranges except
 the 9 to 12 in.
@@ -696,20 +464,18 @@ welding system installation, and Fig. 2 shows an
 in-process weld on a 12-in. pipe.
 
 The primary objectives of the automatic pipe welding
--program are to.provide systems producing only highest-
+program are to provide systems producing only highest-
 quality welds at low cost and at high welding speeds.
 The control and thereby the reproducibility of the
 gas tungsten-arc pipe welding operation depends pri-
 marily on the proper selections of welding criteria and
+weld programming input.
 
-. weld programming input.
-t0 9,9 to 12, and 12 to 16 in. (ref. 2). In these
+The welding criteria are contingent on the following
+prime factors:
 
-The welding criteria are contmgent on the followmg
-pnme factors: : »
-
-1. lplpe diameter,
-2. pipe wall thickness, |
+1. pipe diameter,
+2. pipe wall thickness,
 
 3. type of pipe joint (joint end preparation with or
 without insert rings),
@@ -718,98 +484,82 @@ without insert rings),
 
 5. temperature of pipe material.
 
- 
- 
+PHOTO Y 106815
 
-PHOTO Y106815
+ﬁiPROGRAMMER AR'JDh
+8 — RECORDER
 
- 
+T16-300 300
+NN w e
 
- 
+‘“c WtLoen
 
- 
-
- WELD HEAD
-IN CARRIAGE
+WELD HEAD f
+IN CARRIAGE {8
 
 WELDING
 MACHINE
 
 Fig. 1. ORNL automated welding system installation prior to carriage placement on 12- to 16-in. pipe.
 
- 
- 
+PHOTO 98593
 
- 
+T
 
-PHOTO 98593
+n G
 
- 
+=
 
- 
+)
+f
+-
+) o
+o
+(=
+0
+>
+-
+o
+Rl
+<
 
- 
+Fig. 2. ORNL welding system in-process 12-in. pipe weld.
 
-i
-
- 
-
-ir
-
- 
-
- 
-
-Id.
-
-in-process 12-in. pipe we
-
-ding system
-
-. ORNL wel
-
-. Fig. 2
-
- 
-
- 
- 
-
- 
-
-The following welding parameters must be pre-
+The following welding parameters must be pre-
 determined and programmed into the automated con-
 trols:
 
-ek
+[am—
 
-. travel speed,
+travel speed,
 
-. weld current,
+weld current,
 
-. arc length (arc voltage 'conﬁol),
+arc length (arc voltage control),
 
-. diameter and shape of tungsten electrode,
+diameter and shape of tungsten electrode,
 
 . type and quantity of inert gas,
 
-. weld up and down slope,
+weld up and down slope,
 
-. weld start, overlap, and weld tail-off distance,
-. weld filler wire and rate of deposit,
+weld start, overlap, and weld tail-off distance,
+weld filler wire and rate of deposit,
 
-oo N bW N
+pulse current and pulse sequence mode (if used),
 
-. pulse current and pulse sequence mode (if used),
+© X X N, kW
 
-f—
-e
+[Rm—
 
 oscillation — amplitude and frequency (if used),
 
-11. interpass cleanliness and temperature regﬁlation.
+f—
+[S—
 
-The input to the weld prbgrammer provides for
+. interpass cleanliness and temperature regulation.
+
+The input to the weld programmer provides for
 proper “in process” control and sequencing of all the
 
 variables that influence the weld. The most critical
@@ -833,112 +583,76 @@ variables in the weld pass. We use a Gulton model
 TR-888 recorder. The recorder chart serves as an aid to
 weld inspection.
 
- 
-
 3. System Components
 
 CARRIAGE
 
-The carriage provides a rigid, stable p]atform on
-
-~ which the machining head or the welding head can be
+The carriage provides a rigid, stable platform on
+which the machining head or the welding head can be
 mounted, indexed, and operated. Figures 3 and 4 show
-
 the carriage, its components, and subassemblies. The
 carriage supplies the drive mechanism to rotate the
 platform around the pipe circumference at preset,
-
 reproducible, governor-controlled speeds. The carriage
-
 also has controls to maintain the platform surface at a
 nearly constant distance from the pipe surface so that
 the arc length controls will perform properly. The
 platform maintains its lateral position with respect to
 the pipe joint while rotating about the pipe. The
 carriage has geared actuator arm assemblies that clamp
-
-“securely to the pipe, and its drive rollers are loaded by
-
+securely to the pipe, and its drive rollers are loaded by
 special torsion bars to maintain controlled clamping
 pressure on the rollers and to compensate for pipe
 ovality within allowable commercial pipe specification
 limits. The clearance required for operation of the
 
-carriage is 4 %4 in. on the pipe radius and 10 %, in.
-longitudinally. [Note: The 4 Y%-in. radial clearance is
+carriage is 4 ', in. on the pipe radius and 10 %, in.
+longitudinally. [Note: The 4 ' -in. radial clearance is
 adequate only for cutting and for welding without
 automatic arc length controls (electrode-to-work gap
 controls). A carriage/weld-head combination with auto-
-matic arc length controls requires 5% in. radial
-clearance. ] |
+matic arc length controls requires 5 ¥ in. radial
+clearance.]
 
 The basic carriage structure consists of two side pieces
-
-. that provide the platform for the head inserts, two end
-
+that provide the platform for the head inserts, two end
 supports, and the dual arm and idler subassemblies. The
 end supports contain the electrical drive and control
 connections and switches for the carriage and for the
-insert heads; one ‘end support contains the clamping
+insert heads; one end support contains the clamping
 device, which uses worm gears to position the idler
 rollers through slider linkages. The carriage is made to
 rotate by a direct drive system from motors mounted at
 the two hinge points of the actuating arms within the
 rollers. [Note: An exception is the 3- to 6-in. carriage,
 where the motors are not concentric with the rollers
- 
 
-"
-
-PHOTO 3432-72
-
- 
+)
 
 PREASSEMBLY, Parts Inventory (12 — 16 in.)
 
 Side Piece
 
-Arm Subassembly ~—
+Arm Subassembly
 
-i End Supports
-
- 
+End Supports
 
 FIRST SUBASSEMBLY
 
-Idler L
+Idler
 
- 
-
-Torque A:r‘mr ,
+Torque Arm
 Torsion Arm Support
 
- 
-
 Driver
-
-   
 
 SECOND SUBASSEMBLY
 
 Fig. 3. Carriage assembly — preassembly, first subassembly, and second subassembly.
 
- 
+PHOTO 3432-72
 
-  
-
- 
- 
-
- 
-
- 
-
- 
-
- 
-
-‘ PHOTO 3433-72
+PHOTO 3433-72
 
 Travel Push Buttons
 
@@ -947,17 +661,11 @@ THIRD SUBASSEMBLY
 Standoffs to Ride Pipe Collar
 for 2G Position Pipe Welding
 
- 
-
 FINAL ASSEMBLY, Elevation View
-
- 
 
 Stable Platform
 
-View Port -
-
- 
+View Port
 
 Clamping Device Actuator
 
@@ -966,17 +674,7 @@ Tachmotor Drive
 FINAL ASSEMBLY, Plan View
 
 Fig. 4. Carriage assembly — third subassembly and final.
- 
-
-2
-
-A}
-
-&}
-
-a)
-
-but are installed in canisters at the hinge points of the
+but are installed in canisters at the hinge points of the
 arms. Drive power is transmitted to the rollers through
 identical gear trains in the arms. The 3- to 6-in. direct
 drive system is designed without torsion bars and
@@ -987,35 +685,28 @@ because the greater allowable out-of-round tolerances
 require more flexibility in the clamping and drive
 mechanisms.] Vulcanized high-temperature, abrasion-
 resistant Viton rubber coatings on the rollers provide
-traction for carriage propulsion. The carrlage speed is
+traction for carriage propulsion. The carriage speed is
 adjustable at the programmer.
 
 WELDING HEAD
 
 The welding head has a motorized vertical slide and a
-
 manually adjustable horizontal slide that can be set to
 locate the torch electrode accurately with respect to the
 cut and beveled edges of a weld joint. Filler wire can be
 
- 
-
 fed automatically at a preselected rate by means of a
 motorized wire feed mechanism. A standard 4-in.-diam.,
-2 %-Ib wire spool is used to store enough wire for
-multiple weld filler - passes. ‘The torch and the wire
+2 '5-1b wire spool is used to store enough wire for
+multiple weld filler passes. The torch and the wire
 feeder are mounted on the vertical slide, and the wire
 spool is mounted on the horizontal slide. The welding
-
-" head includes inert-gas hose passages to the torch cup
-
+head includes inert-gas hose passages to the torch cup
 plus power and cooling water lines to the torch head. A
 motorized cam drive supported by the vertical slide
 oscillates the torch electrode across the weld seam. The
-
-‘head also contains integral switches for testirig the
+head also contains integral switches for testing the
 operation of the wire feed jog (feed and retract), the
-
 oscillator, and the inert-gas flow controls.
 
 The welding head is shown in Figs. 5 to 8. Figure Sisa
@@ -1026,113 +717,62 @@ hinged lid in the open position. A front elevation view
 and a schematic illustration with the lid open are shown
 in Figs. 7 and 8 respectively.
 
-PHOTO Y106816
-
- 
-
- 
-
- 
+PHOTO Y 106816
 
 Fig. 5. Top view of welding head with lid closed (welding position).
 
- 
- 
+10
 
-10
-
-PHOTO Y108812
-
- 
-
- 
-
- 
+PHOTO Y106812
 
 Fig. 6. Side elevation view of welding head.
 
-PHOTO Y106811
+U | PHOTO Y106811
 
- 
+Fig. 7. Front elevation view of welding head mounted in carriage.
 
-Fig. 7. Front elevation view of welding head mounted in Vcarriage
-
- 
-
- 
-ORNL-DWG 72—-12235
+ORNL-DWG 72-.12235
 
 HAYDEN VERTICAL DRIVE MOTOR (ALC)
 
-  
-  
- 
- 
-  
- 
- 
- 
- 
-  
-    
-   
-  
-
 LOCKING NUT — ADAPTER
-
-BALL NUT COUPLING /
-‘ COMBINATION \
+BALL NUT COUPLING Cf
+COMBINATION
 
 3 VERTICAL BALL SCREW
-
 GUIDES {1 PINNED)
 
 HORIZONTAL ADJUSTMENT
-VERTICAL SLIDE AND KNOB AND.BEVEL GEAR
-WIRE FEED POSITION BLOCK .
-
-5 VERTICAL ADJUSTMENT
+VERTICAL SLIDE AND KNOB AND BEVEL GEAR
+WIRE FEED POSITION BLOCK
+VERTICAL ADJUSTMENT
 OSCILLATOR ADJUSTMENT
 
 MECHANISM AND MOTOR
 
-CRANK ARM WITH .
-HORIZONTAL ADJUSTMENT LEAD
+CRANK ARM WITH
 
-- TAPER PIN
+TAPER PIN HORIZONTAL ADJUSTMENT LEAD
 SCREW WITH BEVEL GEAR
-TORCH
+TORCH -
 WIRE FEED
 
-HORIZONTAL GUIDES
-
-COVER | S
+FEED MOTOR
+.
 
 PUSH BUTTONS AND
 ELECTRICAL CONNECTORS
 
-  
-
-FILLER WIRE
+FILLER WIRE \
 ON SPOOL
 
-CONTROL CONNECTOR
-{TO MATE ON CARRIAGE)
+CCNTROL CONNECTOR
+(TO MATE ON CARRIAGE)
 
-- Fig. 8. Schematic arrangement of welding head. Front elevation, lid off.
+Fig. 8. Schematic arrangement of welding head. Front elevation, lid off.
 
 11
-
- 
- 
-
- 
-
- 
-
- 
-
-Horizontal and Vertical Slide Assemblies
+Horizontal and Vertical Slide Assemblies
 
 Horizontal torch position is adjusted by the hori-
 zontal slide, which is actuated through a bevel gear
@@ -1148,25 +788,16 @@ motor (ALC motor) is used to drive the vertical slide
 for maintaining the predetermined torch electrode
 distance from the weld joint. [Components attached to
 the vertical slide assembly are covered in subsequent
-sections.] It is important to note that the entire vertical
+sections.| It is important to note that the entire vertical
 block assembly is integral with the horizontal slide and
 that, therefore, all torch components move in unison.
 The relationship of the horizontal to the vertical slide is
 constant in the horizontal plane and varies only in the
-vertical plane when actuated by the ALC motor.
+vertical plane when actuated by the ALC motor,
 
 The vertical slide block houses the oscillator motor
 subassembly and supports the torch block and its
 components, the oscillator amplitude adjustment mech-
-
-  
-    
-
-VERTICAL TORCH BLOCK — Component Parts
-
- 
-
-OSCILLATOR — Subassembly
 
 12
 
@@ -1202,32 +833,33 @@ PHOTO 3434-72
 Torch Components
 
 Torch Block
-
 Torch Block Isolator
+Oscillator Crankarm with Taper Pin
 
-Oscitlator Crankarm with Taper Pin
+VERTICAL TORCH BLOCK — Component Parts
+
 Torch Block Rod Isolator Bushing
 
-—————— Oscillator Motor and Wire Feed Positioning Bracket Block
-
+Oscillator Motor and Wire Feed Positioning Bracket Block
 Oscillator Amplitude Adjustment Mechanism
+
 Vertical Slide Block
-Bail Nut Retainer
+
+Ball Nut Retainer
 
 Wire Feed Positioner Bracket Block
+
 Oscillator Amplitude Adjustment Mechanism
+
 Bearing for Oscillator Crankarm Drive
 
-Oscillator Motor
+OSCILLATOR — Subassembly
 
-Fig. 9. Vertical torch block component details.
-»
+Oscillator Motar
 
-L2
+Fig. 9. Vertical torch biock component details.
 
-"
-
-introduced to the feeder mechanism. Threaded ferrules
+introduced to the feeder mechanism. Threaded ferrules
 are used to anchor the ends of the guide tube.
 
 A ball nut anchored and nearly centered within the
@@ -1243,14 +875,12 @@ The wire feed mechanism utilizes the friction on a
 wire compressed between two rotating disks to force
 the wire to contact with teeth of a ratchet wheel. Wire
 
- 
-
 13
 
 is advanced or retracted as the wheel rotates, and the
 friction force can be varied by the amount of pressure
 applied at the exterior cap to compress the disk and the
-rotor,
+rotor.
 
 The wire feed system consists of a wire spool
 containing a preselected type and size of wire, the guide
@@ -1264,33 +894,13 @@ puddle.
 Figures 10 and 11 show the wire feeder and its main
 components. The wire feeder motor shaft rotates the
 
-PHOTO 3435—72
-
- 
+PHOTO 343572
 
 Fig. 10. Wire feeder — parts of subassembly.
 
- 
- 
+14
 
- 
-
- 
-
- 
-
-14
-
-ORNL-DWG 72-12236 U
-
- 
-  
-    
- 
- 
- 
-  
-  
+ORNL-DWG 72-12236
 
 PLASTIC WIRE
 
@@ -1301,99 +911,60 @@ IN BACK OF ROTOR
 
 BROACHED COUPLING
 
-COVER .
+COVER
 MOUNT BRACKET
 
 HOUSING
 
 SPLIT FERRULE
 
- 
+BEARING / EXIT NOZZLE
 
-  
+RACE
 
- 
+~
 
- 
+COVERIN HOUSING
 
- 
+1
+OUTLINE WIRE TROUGH
 
- 
+WeLd
 
- 
+WIREL [/ \\ll,f;%——"
+Sy BRACKET
+NN\
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-EXIT NOZZLE
-VER%}.
-cc} N HOUSING ]
-7 QUTLINE WIRE TROUGH "
-WREN AR
-BRACKET
-. RATCHET RACE
-CA INSERT e
-o
-o
--
+cap RATCHET \\qq—ﬂACE
+INSERT !
+[0l
 O
-x
-— !
-SPORFSET T fro-—ll" — ~ | MOTORSHAFT
-i >
-7— Q / Qo
-<, P om O
-(&) o [
-v g‘f -i—’
-BRACKET 2 "N Z O
-RACE N
+=4
+(@]
+@
+B2 OFFSET 7™~ _;::ﬁ;.___._q._MQTO35HAFT
+f , x|,
+o
+gf P // om|O
+Q e ot =
+v o< g
+BRACKET % N o
+Q /.
+~
+RACE N QJ
 \\\
 BRACKET N
-- —— NN S\\
-/4 -\
-L, ;:
+~— NN R J
+4 /4 7 AY
+v . A Y
 
- 
+7N\
 
 WIRE FEEDER MECHANISM CROSS-SECTION
 
-Fig. 11. Wire feeder schematic — parts and functiona! assembly.
- 
+Fig. 11. Wire feeder schematic — parts and functional assembly.
 
-n
-
-)
-
-15
+15
 
 rotor-ratchet insert combination. The cap and disk
 force the wire against the ratchet teeth until sufficient
@@ -1403,13 +974,9 @@ puddle. Thrust bearings are provided for both the disk
 and the rotor. The wire is prevented from moving
 toward the center of the rotor disk by a shoulder, and
 movement of the wire toward the periphery of the disks
-
-is prevented by the outer disk face being canted at 8° to-
-
+is prevented by the outer disk face being canted at 8° to
 the rotor disk face. The mechanism is designed to
-
-accommodate wire diameters from %, to %4 in. and -
-
+accommodate wire diameters from %, to ', in. and
 feed rates up to 50 in./min,
 
 Torch Head Assembly
@@ -1428,7 +995,7 @@ the tungsten electrode, and relocking the screw. Long
 torch bodies are used for welding the root and first
 fillers of extra-heavy pipe walls and short bodies for
 standard or lightweight pipes. The torch assembly is
-shown in Fig. 12.
+shown in Fig, 12.
 
 POWER SUPPLY
 
@@ -1437,136 +1004,88 @@ units of the saturable reactor type are compatible with
 our programmer control circuitry and can be employed
 as power sources for the automated welding system. We
 use a Lincoln model TIG 300/300 power supply, Fig.
-13, with minor internal circuit modifications. Inductive
-
-transient suppressors and a transistorized current con-
-
-trol amplifier, Fig. 14, have been added to “provide for
+13. with minor internal circuit modifications. Inductive
+transicnt suppressors and a transistorized current con-
+trol amplifier, Fig. 14, have been added to provide for
 programmed operation control of the current in the
 welder’s saturable reactor. The amplifier replaces the
 welder’s magnetic amplifier, which is retained to permit
 manual control welding as well. An external switch and
 light are mounted on the side panel of the machine to
-
-change from programmed to manual control. The light .
-
+change from programmed to manual control. The light
 is on for programmed operations and flashes on and off
 during dc pulse welding.
 
 The welding machine is also provided with controls to
-
 stop or prevent operations at low gas and low cooling
 water flows. These protective controls, Fig. 13, are set
 
- 
+ORNL-DWG 72—12237
 
-ORNL-DWG 72-12237
-
-| _— TORCHNUT
+I TORCH NUT
 COLLET
 LOCKING SCREW
-
-E:L/ COPPER SPACER
-|
+[
+Dlz/ COPPER SPACER
 I
+l
 
-| TORCH BODY
-(%/ (SHORT SHOWN)
+TORCH BODY
 
-! COLLET
-E/ (LINDE 13N23)
+|
+r—%_/(SHORT SHOWN)
 
+) COLLET
+D\/ (LINDE 13N23)
 | TEFLON GASKET, OR
-
-| .~ (LINDE 53N85 GASKET)
+.~ (LINDE 53N85 GASKET)
 
 GAS LENS
-(LINDE 45V44)
-
- 
+(LINDE 45Vv44}
 
 CERAMIC CUP
-(LINDE 53N61)
+’ (LINDE 53N6&1)
 
- 
-
-- 3/32~in. TUNGSTEN
-ELECTRODE
+I
+3/32—in. TUNGSTEN
+T/ ELECTRODE
+|
 
 Fig. 12. Torch assembly.
- 
 
- 
+16
 
- 
+l PHOTO 79539
 
- 
+Low Gas Cutout ™
 
- 
+o -
+"J
+‘s F
 
- 
+Low Water Cutout
 
- 
-
- 
-
- 
-
- 
-
-16
-
-k=il
-
-Gas Cutout
+[
+N
 
 Fig. 13. Lincoln weld power supply.
+Fig. 14.
 
-PHOTO 79539
+Power supply — modifications to weld machine circuits.
 
- 
- 
+PHOTO 76558
 
- 
-
- 
-
- 
-
-Fig. 14. Power supply — modifications to weld machine circuits.
-
- 
-
-»)
-
- 
-
-o
-
- 
-
- 
-
- 
-
-JA
-
- 
-
- 
- 
-
-to downslope welding operations when the flows of gas
+to downslope welding operations when the flows of gas
 or of cooling water fall below the minimum levels. The
-controls are normally set for 12 ft* of gas per hour and
-14, gpm of water, but can be set at other values if
+controls are normally set for 12 ft® of gas per hour and
+‘4 gpm of water, but can be set at other values if
 desired. These protectors will also prevent programmed
 weld startup if flow values are less than the preset rates.
 A pilot lamp for each control lights up to signify
 insufficient flows. The gas and water solenoid control
 relays, built into the welding machines as standard
 equipment, are bypassed for programmed welding
-operations, Signal and control wiring is transferred to
+operations. Signal and control wiring is transferred to
 replacement relays within the programmer.
 
 Conventional H-20A (AIRCO) water-cooled power
@@ -1591,33 +1110,27 @@ the pendant’s rheostat dial is available to regulate
 current in the manually controlled mode of weld
 operation.
 
-All pendant controls are housed within an anodlzed
+All pendant controls are housed within an anodized
 aluminum box structure. Electrical leads enter through
 
-PHOTO 3436-72
-
- 
-
- 
+PHOTO 3436—72
 
 Fig. 15. Remote-control pendant.
-
-18
 
 the handle, and a flex grip cable cover is used to avoid
 line crimping.
 
 The equipment diagram in Fig. 16 shows all compo-
 nents of the welding system, along with the connecting
-cables and control leads. -
+cables and control leads.
 
-The current sensor shown in Flg 16 is a current
+The current sensor shown in Fig. 16 is a current
 transformer—thyrector combination housed in an ano-
 dized aluminum box. The transformer features a toroi-
-dal coil encased in plastic, with a 1-in.-diam center
+dal coil encased in plastic, with a l-in.-diam center
 opening passage for the weld cable. The coil, in turn,
 connects to the programmer to supply a proportional
-feedback signal for precise current control. _
+feedback signal for precise current control.
 
 Programmer lines include a 120-V (5-A) ac power
 supply, a signal control cable to the weld power supply,
@@ -1629,7 +1142,7 @@ signal and combination cable shield and ground lines
 back to the programmer.
 
 The weld power source includes a 460-V (60-A) ac
-supply as well as water and gas supplies. Qutput lines
+supply as well as water and gas supplies. Output lines
 include water-cooled power lines and gas lines to the
 weld head torch. The welding machine must be
 grounded by building equipment ground. A ground
@@ -1648,9 +1161,9 @@ source outlet terminals is used to provide a proportional
 signal level current input to the recorder. Leads from
 the connectors are routed through a noise filter box en
 route to the recorder. The multichannel recorder
-presently in use, Techm-the Electronics model TR-
-888, modified to automatlcally start and stop with the
-weld sequence, is shown in Fig. 17.
+presently in use, Techni-Rite Electronics model TR-
+888, modified to automatically start and stop with the
+weld sequence. is shown in Fig. 17.
 
 A highly useful record of amplitude and uniformity
 of the variables is obtained by plotting the weld
@@ -1660,176 +1173,75 @@ of welding problems. Any plotted irregularities can also
 be interpolated to precise pipe location for immediate
 remedial action subject to the weld inspector’s confir-
 mation.
-” n = *® "
 
-ORNL-DWG 72-12238
+ORNL-DWG 72—-12238
 
-120 V (5 A} ac Supply
+120 V (5 A) ac Supply
 
- 
-
-  
-       
-   
-  
-  
-   
-    
-
- 
-
- 
-
- 
-
- 
-
- 
-
-r
-i
-1
-!
-: PROGRAMMER, | (Rear Apron) |
-1
+> ¢
+........................................ g2
+Ir 4;5'8& ¢ & \.OQ
+! EOELE
+<
+: U)*?déé‘k%@
 |
-|
-|
-|
-I
-
- 
-
- 
-
- 
-
- 
-
- 
-
-v
-of
-
-PENDANT
-
-  
- 
-
- 
-
-/ Gas Inlet
-
-X
-o
-a
-= o«
-&) i
-L T =
-T
-r—““ﬁ—n —————————— m————-—‘- - v Nl mesas o e e o e s o
-; = |
-I [ s |
-| £ :
-B . ' ,
-| '§ TIGWELD POWER SOURCE :
-Ild 2 s | !
-| 3 5 5 '
-M & & B |
-_ S w0
-\ £ O !
-Se===1}3 '.
-§ i
-|
-|
-J
-
-— e Y wmram— —
-
-= 460 V (60 A) ac Supply
-
- 
-
- 
-
-  
-
-PIPE. |
-{Work Piece)
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-LOWER TERMINAL
-
- 
-
- 
-
- 
-
-CARRIAGE
-
- 
-
- 
-
-SENSOR
-
- 
-
- 
-
- 
-
- 
-
-= EQUIPMENT
-Gnoumg GROUND LINE
-
-eturn
+i é #—
+| o il o
+| o -—=
+| Ll
+I B
+i m
+o ——— —— %) L ___=
+, =
+s N
+| T |
+= 5
+| 5 | RECORDE
+| S TIGWELD POWER SOURCE :
+> | d 2 £ l
+: | E 3 . t
+b "‘& © s jéc j
+s \ £ S £ ! °o O
+<t b 8::“__’,5) l I NS, @D |
+o = - @ ] o O
+e ” & = I |
+> © I [
+= w\\ ®_-—@ : . PENDANT |
+M oA {O) y ———— — |
+| ( ‘ |
+N 1 J
+] 00$’b
+y, WELD HEAD
+UPPER =——==C% T PIPE
+TERMINAL — F— (Work Piece)
+- - — —- -
+| LOWER TERM!NAL—"’{
+L/ }
+CURRENT l' CARRIAGE
+SENSCR |
+= L
+— EQUIPMENT 7
+GROUND GROUND LINE o
+(Ul hd
+=\«
 
 Fig. 16. Equipment hookup for ORNL weld system.
 
- 
-
 61
 
- 
- 
+Fig. 17. Multichannel recorder.
 
-Multichannel recorder.
+PHOTO Y107673
 
-   
+0¢
+\
+|
+\ 21
+|
 
- 
-
- 
- 
-
-\~/
-
-»
-
-The TR-888 recorder has eight channels. In weld
-
-development work it is often helpful to chart additional
-functions or to chart functions relatlve to one another.
-
-In normal operation, however, it is enough to record
-the weldispeed, wire feed rate, arc voltage, and arc
-current, -
-
- 
+The TR-888 recorder has eight channels. In weld  In normal operation, however, it is enough to record
+development work it is often helpful to chart additional the weld speed. wire feed rate, arc voltage, and arc
+functions or to chart functions relative to one another. current.
 
 4. Electrical and Control System
 
@@ -1849,44 +1261,39 @@ feedback information is compared with the preset
 values in the programmer memory, and, if one of the
 controlled parameters varies from the desired operating
 range, corrective action is automatically initiated by the
-control system.
+control system,
 
-The variables contro]led are: (1) carriage (tool) speed;
+The variables controlled are: (1) carriage (tool) speed;
 (2) arc length, the distance (gap) between the electrode
 and the weld puddle; (3) wire feed rate; (4) welding
-current; (5) frequency of torch oscillation; and (6) gas
+current: (5) frequency of torch oscillation; and (6) gas
 and water flow to torch.
 
 Control parameters are preset in the programmer by
 means of dials and switches located on the front panel,
-the rear apron, and the pendant. Appendix A contains
+the rear apron. and the pendant. Appendix A contains
 illustrations and tabular listings of the controls and
-their functions. -
+their functions.
 
 All the controlled variables except the torch oscilla-
-tion are monitored by sensors that feed back s1gnals to
+tion are monitored by sensors that feed back signals to
 the programmer.
 
 The carriage (tool) speed and the wire feed rate are
 monitored by tachometers which produce dc feedback
-
 signals having amplitudes proportional to drive motor
+speed and polarities corresponding to the direction of
+motor rotation.
 
-speed and polantles correspondmg to the dlrectlon of
-
-motor rotation. '
 The welding current is monitored by a current sensor
-
 which, together with its associated circuitry, produces a
-
-2 0 xR LN
 
 unipolarity dc feedback signal proportional to the
 current.
 
 The arc voltage is monitored directly and fed back to
 the controls of the torch position (ALC), wire feed
-(AVC), and stub-out parameters. (“Stub-out” occurs
+(AVC), and stub-out parameters. (“‘Stub-out™ occurs
 when the torch touches the weld puddle.) This arc
 signal also operates a voltage relay on which contacts
 are used as protective interlocks in the control circuitry.
@@ -1895,7 +1302,7 @@ The gas and water flows to the torch are monitored
 by flow switches. Contacts on these switches provide
 interlocks which protect the welding equipment and
 minimize damage to the weld and to the welded
-component by preventing startup andfor initiating
+component by preventing startup and/or initiating
 shutdown in the event of loss of water or gas flow.
 
 BASIC SUBDIVISIONS
@@ -1905,11 +1312,10 @@ For purposes of discussion the programmer circuitry
 may be considered to be composed of nine basic
 subdivisions, as follows:
 
-welding current control circuits,
-“carriage (tool :speed) control circuits,
-wire feed (rate) COntroI_circuits (AVO),
-- érc length control circuits (ALC),
-
+1. welding cuirent control circuits,
+carriage (tool speed) control circuits,
+wire feed (rate) control circuits (AVC),
+arc length control circuits (ALC),
 torch oscillation control circuits,
 
 gas and water flow circuits,
@@ -1918,17 +1324,13 @@ program control circuits,
 
 stub-out circuits,
 
-power supp}ies.
+P AN R
+
+power supplies.
 
 The program control circuits may be further subdivided
 into sequence control and sequence timing circuits.
-
- 
-
- 
- 
-
-The . first six of the above circuit subdivisions are
+The first six of the above circuit subdivisions are
 functionally independent and may, under certain condi-
 tions, be operated and tested separately. However,
 during programmed welding operations these circuits
@@ -1937,13 +1339,10 @@ and are functionally interrelated.
 
 CONTROL MODES
 
-22
-
-There are two major modes of programmer operation -
-
+There are two major modes of programmer operation
 selectable by panel switch, Manual and Program.
 
-Manua! Mode
+Manual Mode
 
 In this mode the carriage and wire feed may be
 operated manually with push-button switches located
@@ -1954,9 +1353,7 @@ positioned by manually operated push-button switches
 on the pendant; and water flow, gas flow, and torch
 oscillation can be tested by operating push-button
 switches on the weld head. This mode of operation is
-
-‘used mainly for initial setup of the system for welding
-
+used mainly for initial setup of the system for welding
 but is also useful for calibration, maintenance, and
 troubleshooting.
 
@@ -1989,13 +1386,13 @@ sliders which are sequentially selected as the stepper
 advances through positions 6 to 39 respectively. Each
 slider is a potentiometer voltage divider that feeds a
 
+22
+
 reference voltage signal, via a stepper contact, to the
 input of the current servo amplifiers. The reference
-voltage represents 0 to 100% of “maximum welding
+voltage represents O to 100% of “maximum welding
 current.” An additional digital dial is provided on the
-
 front panel to set the maximum welding current to any
-
 value up to 200 A. Thus the maximum weld current
 dial sets the upper voltage limit impressed across the
 Vernistat voltage dividers. Stepper banks 5 and 6 are
@@ -2009,7 +1406,7 @@ A programmed weld operation can be extended in
 any “in-weld” position to permit extended time opera-
 tions. A weld can be stopped at any time by pushing an
 “Emergency” stop button for immediate stop action or
-a “Downslope” button that causes the relay to fast-step
+a “Downslope”™ button that causes the relay to fast-step
 to the downslope position and continue programmed
 shutdown operations from that point.
 
@@ -2030,11 +1427,11 @@ Welding current is controlled by a saturable reactor in
 the welding power supply which responds to a reference
 signal supplied by the Vernistat or by the current
 control potentiometer on the pendant. The position of
-a front panel “Current” switch determines which of
+a front panel **Current” switch determines which of
 these controls is effective. When the switch is in the
 “Manual” position, the reference signal is supplied by
 the pendant control, and when the switch is in the
-“Program” position, the signal is supplied by the
+“Program”™ position, the signal is supplied by the
 Vernistat. The reference signal is compared to a
 feedback signal which is directly proportional to the
 actual welding current. The difference in these signals is
@@ -2045,20 +1442,12 @@ the servo amplifier is coupled through an isolator
 amplifier to a power amplifier. Here it is further
 amplified and applied to the input of a driver amplifier
 in the welder power supply which indirectly controls
- 
-
- 
-
-"
-
-4}
-
-the welding current by controlling the current in the
+the welding current by controlling the current in the
 saturable reactor control winding. The net result of this
 action is to maintain the welding current at a value
 which is very nearly proportional to the reference signal
 voltage supplied by the Vernistat or the pendant
-control. : ‘
+control.
 
 The feedback signal is supplied by a current sensor
 through which the welding cable passes. This sensor has
@@ -2069,10 +1458,10 @@ saturable-reactor-type dc transformer in which the
 control current is the welding current; in the ac mode it
 functions as a current transformer. In both modes the
 output is an ac voltage which is rectified by a diode
-bridge and filtered to obtain 2 smooth dc feedback
-voltage. :
+bridge and filtered to obtain a smooth dc feedback
+voltage.
 
-The programmer’s servo- isolator and the welder
+The programmer’s servo isolator and the welder
 power and driver amplifiers obtain their supply voltage
 from the welder power supply. This voltage is a
 rectified half wave (not a smooth dc), and the ground
@@ -2090,20 +1479,20 @@ otherwise performs the same function as the magnetic
 amplifier supplied with the conventional power supply
 and retained in the modified Lincoln welder power
 supply. A current control switch, located on the side of
-the welder power supply, selects either the driver
+the welder power supply. selects either the driver
 amplifier for remote (programmer) control or the
-magnetic amplifier for local control. |
+magnetic amplifier for local control.
 
 PULSE CURRENT
 
-The welding current - pulser is incorporated in: the
+The welding current pulser is incorporated in the
 system to aid in control of the molten puddle for
 pulsed and/or out-of-position welding. This unit modu-
-lates the welding current servo amplifier at either 40 or
+lates the welding current serve amplifier at either 40 or
 60 cpm and is switch selectable from the front panel.
 Pulse amplitude is dialed directly by a potentiometer on
 the front panel that is calibrated 0 to 100 A peak to
-peak. _ _ . .
+peak.
 
 The dial light on the maximum current potentiometer
 glows alternately bright and dim at the pulse rate
@@ -2114,7 +1503,7 @@ voltage supplied by the maximum current potentiom-
 
 eter to the Vernistat (or manual pendant control) with
 a square-wave voltage generated by a relaxation oscil-
-lator. The peak-to-peak. amplitude potentiometer ad-
+lator. The peak-to-peak amplitude potentiometer ad-
 justs the amplitude of the modulation voltage.
 
 TORCH OSCILLATOR
@@ -2131,57 +1520,47 @@ and removing supply voltage to the oscillator amplifier.
 
 TOOL SPEED CONTROL
 
-The tool drive motor is a dc¢ servo motor driven by a
+The tool drive motor is a dc servo motor driven by a
 servo amplifier through either the tool forward or tool
 reverse relay. The speed of the motor (and the carriage)
 is determined by the amplitude of the output voltage
 from the servo amplifier. The direction of rotation is
 determined by the polarity of the voltage across the
-motor which is in turn determined by the position of
+motor which is in tum determined by the position of
 the tool reverse relay. The servo amplifier has two
 modes of operation, with and without feedback con-
-‘trol. A “Tool Servo” selector switch on the back apron
+trol. A “Tool Servo” selector switch on the back apron
 of the programmer designates the mode of operation.
 When this switch is on, a dc voltage from a tachometer
 that is an integral part of the drive motor is fed back to
 the input of the servo-control amplifier, where it is
 compared with the dc signal voltage from the program-
-mer. The difference in these voltages is amplified and .
+mer, The difference in these voltages is amplified and
 fed to the motor. The net effect is to maintain the
 speed of the motor constant at a value determined by
 the input signal voltage that is dialed into the tool speed
-potentiometer on the front panel of the programmer.
-
-~Dialed values apply for forward travel selections;
-
+potentiometer on the front pancl of the programmer.
+Dialed values apply for forward travel selections;
 maximum potentiometer output speed or fast reverse
 will automatically occur with reverse tool travel de-
 mands. The effect of feedback is to maintain motor
 speed at a desired value regardless of changes in load,
 line voltage, or amplifier gain. In this mode of operation
 the feedback signal from the tachometer is also fed to a
-
-- meter on the programmer panel to indicate tool speed.
+meter on the programmer panel to indicate tool speed.
 
 When the tool servo switch is in the off position, the
-feedback circuit is disabled, and the tool speed meter is
+feedback circuit is disabled. and the tool speed meter is
 switched to read the input signal instead of tachometer
 feedback.
 
- 
- 
+WIRE FEED CONTROL AND AVC
 
- 
-
- 
-
-WIRE FEED CONTROL AND AVC
-
-"When the programmer is in the Manual mode, or
+When the programmer is in the Manual mode, or
 when the AVC wire switch on the programmer front
 panel is off, the operation of the wire feed servo system
 is similar to that of the tool drive servo system, except
-that. the speed of the tool drive motor is fixed at
+that the speed of the tool drive motor is fixed at
 maximum in the reverse direction.
 
 When the programmer is in the Program mode and the
@@ -2200,11 +1579,7 @@ through contacts in the wire feed forward and reverse
 relays and the tool servo switch. The arc voltage signal
 is taken directly from the weld electrode and, after
 filtering to attenuate RF (radio-frequency) voltage, is
-
-24
-
 passed through an interlock contact on the contactor
-
 relay and fed to the input of the AVC wire module. The
 AVC circuits are adjusted so that the wire feed rate is
 one-half that set on the wire speed potentiometer when
@@ -2215,7 +1590,7 @@ a decrease in the arc voltage produces a decrease in the
 wire feed rate. When the AVC wire switch is off, the
 output of the AVC wire module is clamped at +30 V dc
 and the wire feed rate is insensitive to variations in arc
-voltage. '
+voltage.
 
 The purpose of this cascade control arrangement is to
 regulate the wire feed rate in such a manner as to
@@ -2231,13 +1606,15 @@ general, over the ranges of interest, the arc voltage is
 directly proportional to the arc length and is relatively
 insensitive to arc current. The AVC system detects a
 
+24
+
 decrease in arc voltage and decreases the wire feed rate
-by the amount required -to slow down the buildup of
+by the amount required to slow down the buildup of
 the weld puddle to the point where the desired arc
 length and voltage are restored. Conversely, if the weld
 puddle moves away from the electrode, the situation is
 reversed, and the wire feed rate is increased until the
-desired arc voltage is restored. '
+desired arc voltage is restored.
 
 The AVC system may be used independently or in
 conjunction with the arc length control (ALC). The
@@ -2251,9 +1628,7 @@ flexible, however, and the operator may find that under
 certain conditions he can obtain better welds by setting
 the AVC and ALC controls so that the system operates
 in a manner different from that anticipated by the
-
-designer. As is the case for most control systems, the -
-
+designer. As is the case for most control systems, the
 proper control settings vary with the application and
 must be determined in the field.
 
@@ -2262,8 +1637,8 @@ ARC LENGTH CONTROL (ALC)
 The ORNL programmer includes a system (ALC) that
 monitors the arc voltage and automatically adjusts the
 arc length to a preset value within a prescribed range.
-Two front panel dials labeled “High™ and “Low” are
--provided to set the arc voltage limits at which corrective
+Two front panel dials labeled “High” and “Low’ are
+provided to set the arc voltage limits at which corrective
 torch motion will start. The center dial, marked
 “Average,” is used to set the arc voltage at which
 corrective vertical (radial) torch motion will cease.
@@ -2276,25 +1651,14 @@ range provides an area in which the automatic wire feed
 rate control can operate. In essence, the ALC system
 provides coarse control, and the wire feed rate system
 provides a vernier control for maintaining the arc
-
--voltage at a precise value.
+voltage at a precise value.
 
 ALC also operates in conjunction with the pulsed
 current mode and causes the weld puddle to chill on a
 regulated basis to maintain a perfectly centered, uni-
 form weld bead, regardless of the position of the
 orbiting head on the pipe.
- 
-
- 
-
-\
-
-.l
-
-)
-
-The input signal to the ALC system is the same (arc
+The input signal to the ALC system is the same (arc
 voltage) signal used as input to the AVC system. After
 passing through switches which correct for torch
 polarity and an adjustable gain buffer amplifier, the
@@ -2313,7 +1677,7 @@ direction. Interlock contacts between the ALC circuit
 and the motor disable the ALC action when the
 contactor relay is deenergized; however, in the manual
 mode of programmer operation, the motor can be run
-in either. direction to preset the gap between the
+in either direction to preset the gap between the
 tungsten electrode and the pipe surface by manually
 operating push-button switches on the pendant which
 bypass the contactor interlocks.
@@ -2322,7 +1686,7 @@ STUBBER CIRCUIT
 
 The stubber circuit initiates a programmed shutdown
 in the event that the torch touches the weld puddle
-(called “stubbing”). The signal used to initiate this
+(called *‘stubbing™). The signal used to initiate this
 action via a plug-in stubber board module inside the
 programmer is the same that is used to operate the arc
 length control. The effect of stub control is to
@@ -2331,14 +1695,14 @@ operator had anticipated stubbing and pushed the
 downslope button on the pendant. This prompt auto-
 matic action prevents electrode tungsten contact with
 the weld puddle, causing damage to the torch and
-contamination of the weld. :
+contamination of the weld.
+
+25
 
 GAS AND WATER INTERLOCKS
 
 Gas and water interlocks protect the welding equip-
-
-" ment and minimize damage to the weld and the welded
-
+ment and minimize damage to the weld and the welded
 components by preventing startup and/or initiating
 shutdown in the event of loss of gas or water flow. If
 either gas or water flow is lost during the prepurge
@@ -2347,9 +1711,7 @@ program will halt at that point. However, if such flow is
 lost after the weld cycle starts, the programmer will
 fast-step to downslope and continue programmed
 operations from that point. Both flows are monitored
-
 by a separate flow switch connected in the gas and
-
 water lines. To obtain the required speed of response,
 switches having a low internal value in the downstream
 side were selected and mounted on the upstream end of
@@ -2358,52 +1720,41 @@ water outlet connections on the welder power supply.
 
 POWER SUPPLIES AND POWER BUSES
 
-The five power.-supplies in the programmer are as
+The five power supplies in the programmer are as
 follows:
 
-1. +28 Vdc (noininal) unregulated,
-430V de regulated,
+. +28 V dc (nominal) unregulated,
++30 V dc regulated,
 
-+15 V dc regulated (ALC),
+*£15 V de regulated (ALC),
 
-. *15 V dc regulated (pulser),
+*15 V dc regulated (pulser),
 
-. +40V dc {nominal) unregulated.
+AR
 
-“woAwN
++40 V dc (nominal) unregulated.
 
 The first four of these are in the programmer and are
 energized when the power switch on the programmer
-front panel is on, The +40 V dc is supplied from the
+front panel is on. The +40 V dc is supplied from the
 welder power supply when the welder contactor is
 closed, that is, during the welding cycle.
 
- 
- 
-
- 
-
- 
-
-26
+26
 
 5. Welding Studies, Weld Joint Development,
 and Welding Schedule
 
 Early efforts toward developing procedures for auto-
 mated welding were often hampered by minor equip-
-
--ment or instrumentation malfunctions. Our early pro-
-
+ment or instrumentation malfunctions. Qur early pro-
 gram goals were twofold: to improve system compo-
-
-nents for prolonged operation and, simultaneously, to -
-
+nents for prolonged operation and, simultaneously, to
 seek programmer-controller input settings that would
 yield acceptable welds that would be accurately re-
 peated by the automated system. The weld joint was
 limited to shapes usually employed in manual welding
-practices. _
+practices.
 
 In the course of our studies, we found that the
 torch-to-work distance control is most critical and were
@@ -2415,12 +1766,12 @@ tungsten-arc welding, optimum arc voltages range be-
 tween 7 and 9 for stainless steel and carbon steel pipe
 materials. A variation of 0.1 V in the arc voltage
 represents about 5 mils in the arc gap. The nominal arc
-gap of 0.1 in. is controlled within £0.025 in. by the new
-system. ;
+gap of 0.1 in. is controlled within +0.025 in, by the new
+system.
 
 Many manual welds are made with open butt pipe
 joints. The common joint configuration features a
-1 6-in. root face and 37 '4° bevel for each pipe end,
+', 6-in. root face and 37 '%4° bevel for each pipe end,
 and a %-in. root gap. The use of consumable weld
 insert rings to fill this gap between adjacent pipe ends
 helped in establishing a root pass welding automatic
@@ -2438,18 +1789,16 @@ puddling problems otherwise caused by geometrically
 poor joint matchup.
 
 After several unsuccessful attempts to weld conven-
-
 tional V-groove butt joints we began using modified
 J-bevel pipe end preparations (Fig. 18a). In V-groove
-
 butt-joint welding (Fig. 18b), we were unable to attain
 uniform and complete penetration for the root pass,
-especially with pipes in the 5G (horizontal) position.
+especially with pipes in the 5G (borizontal) position.
 The modified J-bevel pipe end preparation was selected
 
 for automated welding applications after we developed
 the remote cutting methods for providing such joint
-preparations.3 _
+preparations.3
 
 Early gas tungsten-arc welding with the automated
 orbital equipment on the modified J-bevel joints,
@@ -2467,13 +1816,13 @@ passes. It is quite simple to lay good fillers over good
 root passes or over good prior filler passes, but it is
 difficult to repair a poor pass by welding over it
 without first machining out the defect. It has been our
-experience that special care must be -taken to select
-proper heat control (weld current and weld speed) for
+experience that special care must be taken to select
+proper heat control {weld current and weld speed) for
 the first, or for the first two, fill passes over an
 acceptable root pass. Too much weld heat will cause
 burn-through or drop-through, whereas insufficient heat
 will result in lack of fusion or inadequate joint side wall
-tie-ins and weld cracking. '
+tie-ins and weld cracking.
 
 It is time consuming and difficult to do precision
 machining by remote control, and pipe precision
@@ -2481,7 +1830,7 @@ machining and alignment add greatly to construction
 costs. For these reasons, we next concentrated on
 experimentation with pipe joint configurations that
 permit plain fusion root pass welding either without or
-with minimum filler wire additions. Later, we tried
+with minimum filler wire additions. Later. we tried
 “buttered” washer insert joints (Fig. 18c) for our
 remote weld feasibility studies. A buttered insert is
 prepared by depositing weld metal around a pipe
@@ -2492,195 +1841,121 @@ composition of the pipe for crack-free welding and for
 proper fine grain structure interphasing with the base
 metal. Weld results were promising; the buttered joint
 
- 
-
-3. P. P. Holz, Feasibility Study of Remote Cutting and
+3. P. P. Holz. Feasibility Studv of Remote Cutting and
 Welding for Nuclear Plant Maintenance, ORNL-TM-2712 (No-
 vember 1969).
-MODIFIED J-BEVEL
 
-CLOSED ROQOT FACE BUTT
+MAXIMUM WALL
 
-10
-x
-M2
+l-5/4 i e]
 
-£
-o
-o
-S
-A—
-+I
-e
+{d)
 
--
-~
+CRNL--DWG 72-12239
 
-—
+MODIFIED J-BEVEL CLOSED ROOT FACE BUTT “BUTTERED"” WASHER INSERT
+~t
+~t
+
+72 1/8in. + w <
+
+?n\lq,;,.— —— W [t =
+
+O
+
+—— 3/32 in. o N =
+o = ®» - =
+—t oN
+< Q é
+| = N =
+s o c
+'D —
+= = /s
+2\{ o
+§§
+
+f =} ! =T <
+
+= w . ) o c
+
+=l |y g = | 5| 8lw _.H.
+
+z |53 © = = z 2z I= -,
+
+= <18k = = & F 2 oflo© s =
+
+nlz=Z | OFE iz & © ®
+wIE = £z « ol & A
+S|<e (b) ol = S|k = -
+Qladn €l gl=2
+sl=z-~
+
+INTEGRAL WASHER INSERT
+
+b >
+
+Y
+3/32 in
+A 7/32 in
 
 MAXIMUM WALL
 
-  
-   
- 
+{
+:
+7
 
-T in ol
+1/8 in.
+1/16 + 1/32in.
 
-    
- 
-
-1/16 in,
-
-(a) (b)
-
-MATING PIPE
-iD MATCH
-
-  
-
-kMATING PIPE
-ID MATCH
-
-OPEN ROOT FACE BUTT
-
-A *7_0 .
-A= 1/8+ 1/32in.
-
-MAXIMUM WALL
-
-   
-
-MAXIMUM WALL
-
-   
-
- 
-
-1/16 £ 1/32 in.—mf  fea—
-
- 
+PIPE ID
 
 PIPE ID + 3/16 in. MINIMUM
 0.015 to 0.030 in. MATCH
 
-(d)
+OPEN ROOT FACE 8UTT
 
-  
-  
+y— 1/8 1+ 1/32 in.
 
-i +
+N MAXIMUM WAL L
 
-ORNL-DWG 72-12239
-“BUTTERED"” WASHER INSERT
+Z
 
- 
+Sy
 
--
+1/8 + 1/32 in.
 
-) -
+1716+ 1/32in.
 
-t/8in. +w g
+Fig. 18. Pipe weld joints. (2) Modified J-bevel; (b) closed root face butt; (¢) “buttered’ washer insert; (d) integral washer insert;
 
-Py s
+(e) open root face butt, thin wall; {f) open root face butt, thick wall.
 
-x 7 o >
-H =
-x
-
-e
-
-=
-
-    
-
- 
-
- 
-
-\
-
-3/4in.
-
-   
-    
- 
-
- 
-
-£
-
-Q £
-
-3 (& "'L-el-
-Ola X = c
-o o — E
-I-g‘:[ © o
-vl -~ =
-o|lg s ‘
-cle=
-
-w=1/16 to 3/32 in.
-10+ 2°
-
-l—wsi 1/32 in.
-
-LT
-
- 
-
- 
-
-Fig. 18. Pipe weld joints. (@) Modified J-bevel; (b) closed root face butt; (c) ‘““buttered” washer insert; (d) integral washer insert;
-
-(e) open root face butt, thin wall; (f) open root face butt, thick wall.
-
- 
- 
-
- 
-
-was definitely less dependent upon precision mating
+Ll
+was definitely less dependent upon precision mating
 pipe joint geometries and alignment. However, since
 buttered joints are expensive to prepare, we resorted
 temporarily to integral washer inserts (Fig. 18d); that is,
 we simulated buttered insert shapes by machining
-
-28
-
 heavy-wall-section pipe on the inside surface. Many
-
 tests were run to determine the best criteria for root
 width, root face, and (integral) insert dimensioning.
 From the results of this work, we then developed
 programmed input data for repetitive quality pipe
-
-We first investigated welding "with Grinnell rings
-(Grinnell Corporation, Providence, R.1.). The standard
-Grinnell consumable insert for pipes 2 in. or more in
-diameter has a cross section Y ¢ in. wide by ¥ in.
-deep. Our experimentation indicated best results with
-two Grinnell rings stacked together, or for a Y-in.-wide,
-% ¢-in.-deep cross section. Root welds with single rings
-were of uneven internal contour; 5G position welds
-
-- with proper contours in the 12 o’clock position
-
-weldments and formulated guidelines for welding with -
-
+weldments and formulated guidelines for welding with
 commercially available insert shape substitutes for the
 integral shaped inserts. All experimental work in studies
 to adapt automated orbital welding equipment for
 high-quality construction pipe welding applications
 concentrated on pipe joints that were suitable for
-welding with commercial consumable insert shapes. .
+welding with commercial consumable insert shapes.
 
 Usual construction work pipe welding practice speci-
 fies the open-butt V-groove weld joint. The joint shown
-in Fig. 18e for pipe wall thicknesses of % to % in.
-generally calls for a root face of Y + Y%, in., 237 % %
-2° bevel, and a % *+ Y, in. root gap. Similar values
+in Fig. 18e for pipe wall thicknesses of %4 to % in.
+generally calls for a root face of ¢ + ', in.,a 37 ' +
+2° bevel, and a "4 * Y4, in. root gap. Similar values
 hold for wall thicknesses greater than % in., except the
-bevel angle decreases to 10 + 2° starting at the % -in.
+bevel angle decreases to 10 * 2° starting at the ¥,-in.
 wall depth, as shown in Fig. 18f.
 
 With the shift in program goals to adapt the auto-
@@ -2691,7 +1966,7 @@ construction. Based on the aforementioned experience
 from our remote applications work, we concluded that
 open-butt pipe welding with ORNL equipment would
 at best be marginal. We therefore selected commercially
-available consumable inserts that would normally fit the
+available consumable inserts that would normually fit the
 cavity, or opening, between matching joints of an
 open-butt pipe joint to permit the contractor to make
 weld setups which could be welded either manually or
@@ -2699,7 +1974,7 @@ with automated equipment. Since many contractors
 purchase prefabricated, or precut, end-prepped piping,
 the capability to utilize automation interchangeably
 with manual practice on the same precut ends is
-
+important, especially when introducing automation to
 the field construction job. We also realized that
 contractors who had manual welders qualified for hand
 welding with specific pipe end preparations and con-
@@ -2711,25 +1986,34 @@ compel maximum total productivity. Therefore we
 decided to establish data for automated welding with
 both rectangular and Y-insert shaped consumable rings.
 
-important, especially when introducing automation to
+28
 
-‘exhibited suckback near the 6 o’clock position.
+We first investigated welding with Grinnell rings
+(Grinnell Corporation, Providence, R.1.). The standard
+Grinnell consumable insert for pipes 2 in. or more in
+diameter has a cross section Y ¢ in. wide by ¥ in.
+deep. Our experimentation indicated best results with
+two Grinnell rings stacked together, or for a %-in.-wide,
+“ 6-in.-deep cross section. Root welds with single rings
+were of uneven internal contour; 5G position welds
+with proper contours in the 12 o’clock position
+exhibited suckback near the 6 o’clock position.
 
-We next tried welding with %,-in. round wire rings
+We next tried welding with *%;,-in. round wire rings
 and, later, with wire rings that were drawn and shaped
-to square and to rectangular cross sections, Test results
+to square and to rectangular cross sections. Test results
 indicated improved root bead control and more con-
 sistent penetration and also showed that differences in
 the fluidity of the molten carbon steel and stainless
 steel pipe materials (at the weld joint) can be compen-
 sated with proper consumable insert shape selections.
-Best weld results were obtained with Y%-in.-wide,
-%,,-in.-deep ring shapes for 6-in. stainless steel (type
-304) pipe, and with %,-in-wide, “%-in.-deep ring
+Best weld results were obtained with “-in.-wide,
+*,-in.-deep ring shapes for 6-in. stainless steel (type
+304) pipe, and with *,-in.-wide, Y-in.-deep ring
 shapes for 6-in. carbon steel pipe type A-53. Respective
 pipe inside diameter protrusions were %, in. for
-stainless and % ¢ in. for carbon steel pipes. However,
-the rounded corners of “home-made” rectangular-
+stainless and Y, in. for carbon steel pipes. However,
+the rounded corners of ‘“home-made” rectangular-
 shaped rings caused the torch-to-work distances to vary,
 and the arc voltage control tended to shift as the torch
 orbited the pipe. This problem was solved by using
@@ -2737,7 +2021,7 @@ rectangular cross-section rings of the Kellogg geometry.
 The Kellogg ring is rectangular, with barely broken
 corners (radii between 5 and 10 mils) and is commer-
 cially available (Robvon Backing Ring Co., Elizabeth,
-N.1.). Pipe end configurations for Kellogg-type rings are
+N.J.). Pipe end configurations for Kellogg-type rings are
 shown in Fig. 19a.
 
 We also tried various pipe end configurations in search
@@ -2746,7 +2030,7 @@ tungsten-arc welding with consumable Y-ring inserts
 (product of the Weld Ring Company, Bell Gardens,
 California). The outward inclined arms of the Y-ring are
 designed to be self-aligning with a joint and to fit a
-standard ASA 37 '4° pipe end preparation angle to
+standard ASA 37 ',° pipe end preparation angle to
 form an included 75° pipe joint angle. Even within
 applicable ASA dimensional standards for commercial
 pipe, allowable differences prevail for as-furnished pipe
@@ -2757,154 +2041,72 @@ the larger inside diameter. In practice, however, this
 procedure is hard to follow. We decided therefore to
 provide each pipe joint section with a minimum root
 face and to base axial dimensioning about the inside
-diameter of the pipe. A 15-mil root face (plus 20 mils
+diameter of the pipe. A I5-mil root face (plus 20 mils
 
-C
- 
+29
 
-3
+ORNL-DWG 72--12240
 
-   
- 
-
- 
-
-29
-
- 
-
- 
-
-e
-
-UPTO 3/8in
-T wALL
-S
-
-4N
-)
-
- 
-
- 
-
- 
- 
-
-ORNL-DWG 72—12240
-
- 
-  
-
+O w— W LS
+5
+or T 20
 LIMITING CASE,
 FACES MUST HAVE
-SOME CONTACTS
-
- 
-
- 
-
-10+ 2°
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-O
-w
-a.
+- SOME CONTACTS
+[ae]
+603 = 10+ 29
+SE N al
 o
-a
-PIPE
-- [ q -
-- 0.005;
-RECT. RING CORNER RADH 0010 in.
+=) ”
+| ’
+w
+o
+- T~
+w
+o
+&
+=
+
+L | G—-- PIPE o _ o '
+
+RECT. RING CORNER RADII = 8005,
+0.010
+
+RF —w—
+
 SS PIPE CARBON PIPE
-d = DEPTH 5/32in. 1/8 in.
+d DEPTH 5/32 in. 1/8 in.
 w = WIDTH 1/8 in. 5/32 in.
-p = ID PROTRUSION 3/32 in. 1/16 in.
-RF = ROOT FACE 1/16 + 1/32 in. 1/16 + 1/32 in.
-(a)
-75°
-€
-QT
-™|
-<
-2|3
-a
-S
-PIPE
+P ID PROTRUSION 3/32in. 1716 in.
+RF ROOT FACE 1116+ 1/32 in. 1/16 + 1/32 in.
 
- 
+{a)
 
- 
+G -- PIPE
 
- 
+NN\
 
- 
-
- 
-
-{b)
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
+UP TO 3/8 in.
 
 ALL DIMENSIONS TYP. AND SYMM.
 
-= = +0.020;
-RF = ROOT FACE = 0.015 —0.000 in.
+RF = ROOT FACE = 0.015 * 0.020;,
+—0.000
 
 MATING ID’s TO HAVE SOME ROOT
-FACE CONTACT. MACHINE ID.s AS
-REQUIRED, ,
 
-Fig. 19. Root face butt joint for (¢) Kellogg-type insert and (b) for Y-ring insert. Y-ring insert—consumable weld ring
+FACE CONTACT. MACHINE I1D.s AS
+
+PIPE REQUIRED.
+
+_—_Q—.—
+
+(b
+
+Fig. 19. Root face butt joint for (¢) Kellogg-type insert and (b} for Y-ring insert. Y-ring insert consumable weld ring
 manufactured by the Weld Ring Co., Bell Gardens, Calif.
- 
 
- 
-
-and minus none) with.a 37% % 2%° end bevel
+and minus none) with a 37'% t* 2%° end bevel
 provided for consecutive acceptable root-pass Y-insert
 welds (Fig. 19b).
 
@@ -2921,67 +2123,60 @@ welding requires more precise limits, as shown in Fig. 19b.
 ORNL purposely omitted experimentation with con-
 sumable EB (Electric Boat Company, Groton, Conn.)
 type inserts, because EB insert welding requires pipe
-inside diameter matchup within 5-mil limits, which is
+inside diameter matchup within S-mil limits, which is
 too expensive to prepare for field construction pipe
 welding.
 
-30
-
-Welding procedure specifications must be prepared'
-
+Welding procedure specifications must be prepared
 and certified to describe the procedures to be followed
 for automated gas tungsten-arc welding of specific pipe
 sizes and materials in the 2G, 5G, and 6G welding
-
--positions with specified automated orbital welding
-
+positions with specified automated orbital welding
 equipment. All welding performed in accordance with
 the certified procedure should be done by welder-
 operators who have been thoroughly trained in the
 operation of the automated equipment and who have
 demonstrated their proficiency by having passed tests.
 
+30
+
 Procedure qualifications are referenced in the ASME
-Boiler and Pressure Vessel Code, Section III, Nuclear
-Vessels, and are specified in the same Code, Section IX,
+Boiler and Pressure Vessel Code, Section 111, Nuclear
+Vessels, and are specified in the same Code, Section 1X,
 Welding Qualifications, and in Specifications RDT
 E15-2T and RDT Fé-5T and supplements to Sections
-Il and IX respectively. ;
+[IT and IX respectively.
 
 A certified Welding Procedure Qualification Record
 must accompany the Welding Procedure Specifications,
 and list in detail the following information:
 
-. pipe parent material;
+pipe parent material;
 
-. electrode and filler material;
+electrode and filler material;
 
-. shielding gas and flow rate;
+shielding gas and flow rate;
 
-. pipe joint design and consumable insert data;
+pipe joint design and consumable insert data;
 
-. heat treatment data;
+heat treatment data;
 
-AN W AW N e
+A i A e
 
 . radiography and liquid penetrant requirements
 (NDT);
-7. results of destructive test samphng, from duphcate
+. results of destructive test sampling, from duplicate
 
 welds in each of the three welding positions: tensile,
 root bend, and face bend.
 
 A Welding Parameter Record which lists all the input
-
 selections to the programmer-controller is also required
-
 for each weld. See Appendix B for a sample welding
 procedure that is applicable to any automated welding
-system.
+System.
 
- 
-
-6. Welding System Opei'ations
+6. Welding System Operations
 
 PREWELD OPERATIONS
 
@@ -3002,24 +2197,17 @@ wire brushing to remove oxide coatings and wiping with
 solvent to remove surface dirt and grease traces are
 necessary for all welds with automated orbital equip-
 ment. Additional draw filing, or grinding, may be
-
--required for filler passes to remove sharp notches or
-
+required for filler passes to remove sharp notches or
 protrusions and obtain a smooth, blended substrate.
- 
 
- 
-
-o
-
-*
+iy
 
 Joint mismatch, one cause for poor root pass welds,
 especially in the pipe horizontal position, is most
-critical in ‘the “overhead,” or 6 o’clock location. A
+critical in the “overhead,” or 6 o'clock location. A
 slight mismatch of adjacent edges of the joint’s inner
 diameter causes the welds to pull out or suck back
-metal due to gravity, It is recommended that the
+metal due to gravity. It is recommended that the
 bottom pipe quadrants be matched most precisely for
 best welding results, since misfit conditions can be
 tolerated to a greater degree in the top quadrant area.
@@ -3030,65 +2218,59 @@ surfaces, and needs for filler wire are reduced. Pipe ends
 to be joined by welding must be rigidly held in position
 during welding to prevent weld-heat-induced pipe move-
 ment at the joint due to expansion and contraction.
-Pipes may be clamped or tack welded pnor to the root
+Pipes may be clamped or tack welded prior to the root
 pass.
 
-There is a difference in ionization potentlal of inert
+There is a difference in ionization potential of inert
 gases which affects the arc voltage and therefore the
 heat input to the weld zone. Helium requires only
-
-31
-
-about. 60% of the welding current required for an -
-
+about 60% of the welding current required for an
 equivalent weld with argon shield gas due to the
 increased arc voltage. Different arc plasma shapes result;
 argon spreads the weld heat, while helium concentrates
 the heat. Since wider argon plasmas give best results for
 stainless steel welding, all ORNL work was done with
 argon shielding gas. The pipe interiors were purged with
-argon usually at approximately 20 cfh gas flow. The
+argon usually at approximately 20 cth gas flow. The
 exit orifices or flow openings for the purge gas should
-be approximately equal in flow capacity to the inlets,
+be approximately equal in flow capacity to the inlets.
 
 Electrode configuration tests have indicated that
 better welds can be obtained by tapering the electrode
 to a 30° included angle and providing a minimum
 rounded-off apex. Electrode configuration has a strong
 influence on the arc heat pattern. The tendency of an
-
 arc to spread to an adjacent area causes the weld nugget
-
 to fuse only intermittently and can cause incomplete
 fusion at the joint sidewalls, leaving an uneven surface
-
-appearance on the weld bead. It is practically impos-.
+appearance on the weld bead. It is practically impos-
 sible to lay acceptable fill passes over such defective
-
-weld beads and, of course, not recommended; one must
+weld beads and, of course. not recommended; one must
 resort to corrective interpass machining and blending
-prior to proceeding with further welding, |
+prior to proceeding with further welding.
 
-The dngle of the tip of the.electrode determines
+The angle of the tip of the electrode determines
 where the arc will initiate. Arc emission can occur from
 any spot of the heated electrode’s tapered emitting
 surface. Weld bead shape can be somewhat varied by
-changing electrode tip angles; however, precision, cau-
+changing electrode tip angles: however, precision, cau-
 tion, and care are required even with AVC regulation to
 confine the arc emission to the desired direction so that
 it will not bump into pipe joint sidewalls. Additional
 
-precautions are necessary to prevent contacting the
+31
+
+precautions are necessary to prevenl contacting the
 electrode with the filler wire during the overlap portion
 of the weld. The wire feed motor cutoff point must be
 programmed to stop in the initial downslope portion of
-the weld current.
+the weld current,
 
 Tracking capability of the carriages is adequate for
 pipe welding operations on horizontal pipes. The driver
-and idler rollers are designed to include two ' -in.-wide
+and idler rollers are designed to include two % -in.-wide
 metal lands, one at each end of the 6-in.-wide Viton
-rubber roll tread surface. The lands project to within
+rubber roll tread surface. Tlie lands project to within
 0.005 in. of the rubber surface, so that when the rollers
 are clamped to the pipe, the rubber is deformed at the
 point of contact to the extent that the metal lands
@@ -3108,9 +2290,7 @@ surfaces are provided to minimize rotational friction
 between the orbiting carriage and the restraint. When
 the split circular ring clamps are employed, primarily
 for the smaller pipe sizes, plastic buttons are attached
-
-‘to the carriage end plate to reduce friction. When the
-
+to the carriage end plate to reduce friction. When the
 sprocket chain is used, for the larger pipe sizes, we
 exchange all standard link pins in the chain for
 extension pins to which we mount the plastic roller
@@ -3122,45 +2302,32 @@ All clamping devices for use in stainless steel pipe for
 RDT work must be made of stainless steel. Marker gages
 must be prepared and applied to properly locate all
 restraints uniformly from the weld joint. It is necessary
+to tap the links with a hammer to line them up before
+tightening the circumferential chain band.
 
-“to tap the links with a hammer to line them up before
-
-tlghtemng the cnrcumferentlal chain band.
-
--GUIDELINES FOR TACKING
+GUIDELINES FOR TACKING
 CONSUMABLE WELD INSERTS
 
 A consumable insert ring should always be tack
-
-“welded to at least one side of the pipe joint. ORNL
-
-developed spemal C-clamp jigs to hold the insert in
+welded to at least one side of the pipe joint. ORNL
+developed special C-clamp jigs to hold the insert in
 proper alignment while it is being tack welded, since
 proper and uniform spacing relative to the pipe end and
 inner pipe diameter is critical, particularly for carbon
 steel pipes. The amount of ring material protruding into
 
- 
- 
-
- 
-
-32
-
-the inside diameter of the prepared root face of the
+the inside diameter of the prepared root face of the
 pipe end must be carefully controlled to attain an
 acceptable root pass. The insert is supported by the
 clamp and held in position over the pipe end; the tack
-welds on one side of a joint should be about 1 in. apart.
+welds on one side of a joint should be about 1 in. apart,
 When tacking an insert to both sides of a pipe joint, the
 tack welds should be alternated to the respective pipe
-
-ends, with at least six .approximately equally spaced
-
+ends, with at least six approximately equally spaced
 tack welds around each pipe, or so that they are no
-more than ¥%; in. apart, whichever distance is smaller.
-These spacinigs should prevent breaking of tacks during
-root-pass welding. It is important that some filler wire
+more than % in. apart, whichever distance is smaller.
+These spacings should prevent breaking of tacks during
+root pass welding. It is important that some filler wire
 be used for all tack welds to Y-inserts, since there is a
 tendency to burn away part of the thin edge of the Y
 while fusion weld tacking the ring to the beveled pipe
@@ -3181,14 +2348,14 @@ and the surrounding area where the temperature is high
 enough to cause rapid oxidation by the atmosphere if
 not protected. To maintain the inert-gas blanket, the
 welding must be performed in a quiet atmosphere
-where no air current or drafts exist. It may be necessary
+where no air current or drafts exist. [t may be necessary
 to shield the area to assure a constant inert-gas
-atmosphere for the weld. Before welding, a minimum of
+atmosphere for the weld. Before welding, 2 minimum of
 6 in. of the internal surface of the joint on each side of
 the weld should be blanketed with argon. The volume
 of gas for the blanket should be at least five times the
 volume of the area to be blanketed, and the blanket
-should be maintained during welding and until the
+should be’ maintained during welding and until the
 temperature of the weld falls below 400°F.
 
 CLEANING OF WELD BEADS
@@ -3198,6 +2365,10 @@ from the weld bead and base metal in the line of arc
 travel before depositing each section or each complete
 weld bead. Thorough brushing with a stainless steel wire
 brush is usually required.
+
+-
+
+32
 
 DEFECTS
 
@@ -3231,7 +2402,7 @@ dures and test checks are provided with the instruction
 manuals furnished with the equipment.
 
 OPERATIONAL PROCEDURE (ORNL EQUIPMENT)
-CHECKOFF LIST '
+CHECKOFF LIST
 
 I. Preweld
 
@@ -3242,10 +2413,10 @@ meets the following criteria:
 (a) cleanliness,
 
 (b) proper end preparation for both sides of
-the joint, '
+the joint,
 
 (c) proper insert — insert spacing and location
--within the established dimensional limits,
+within the established dimensional limits,
 
 (d) insert in contact with both pipe ends and
 properly tacked.
@@ -3255,14 +2426,11 @@ purge flow to the work piece.
 
 3. Check water flow and torch purge-gas flow to
 the weld machine. Gas flow should be 14 cfh
-minimum and water flow should be about
+minimum and water flow should be about Y
 gpm at approximately 20 psi. Use pressure
 regulators to protect water hoses, passages, etc.
- 
 
-o
-
-Weld 3-2-15
+Weld 3-2-15
 
 Date 5-25-71
 
@@ -3273,28 +2441,33 @@ Material type 304 SS
 Joint type Single V Kellogg
 
 Carriage size 3—6 in.
+
 Pipe position 2G
 
-33
-
 Table 1. ORNL Weld System Welding Parameter Data Sheet
+
+33
 
 3-in. sched-40 pipe; 0.216-in. nominal wall thickness
 
 rectangular insert
 
-AVC 7.3-8.5-9.5
-
 Torch gas Argon, 15 cfh
-Backup gas Argon, 20 c¢fh
+
+Backup gas Argon, 20 cfh
+
 Filler wire type 308L SS
-Filler wire diam 0.045 in,
+Filler wire diam 0.045 in.
 Electrode shape 0.035 in. flat
 Electrode projection (in.) 1/4
-Cup 7 T
+Cup 7 o
+
+AVC 7.3-8.5-9.5
+
 Wire feed snout type Solid
 
 Program Check
+
 Oscillator On
 AVC wire On
 Program On
@@ -3303,133 +2476,56 @@ Upslope Set
 Contactor On
 Welder On
 
-Tool servo (rear panel)-On
+Tool servo (rear panei)-On
 
-- Weld servo (rear panel)-On
+Weld servo (rear panel)-On
 
- 
+Weld Passes
 
- 
+Control box settings?
+R 1 2 3 4 5 6 7 8 9
 
- 
+1. Tool speed? 16 |16 |16 [16 |16 |16
 
- 
+2. Wire speed® (in./min) 35 25 25 25 25
 
- 
+3. Oscillator speed (cpm) 80 80 80 80 80
 
- 
+4. Tool start position 4 4 4 4 4
 
- 
+5. Wire start position 6 6
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-Control box settings? Weld Passes
-R} 2 3 4 5 6 7 8 9
-
-‘1. Tool speed? 16 (16 |16 |16 |16 | 16
-
-2. Wire speed® (in./min) 0 |35 {25 |25 {25 |25
-
-3. Oscillator speed (cpm) 0 80 |80 |80 |80 |80
-
-4. Tool start position 4 4
-
-5. Wire start position 6 6 6
-
-6. Wire stop position 26 126 |26 |26 |26 |26
+6. Wire stop position 26 26 26 26 26 26
 
 7. Weld time (sec) Manual Downslope
+
 8. Down slope (sec) 9 9 9 9 9 9
 
-9. AVC wire control V) _ 13.5 {135} 13.5} 13.5] 13.5] 13.5
-10, Maximum weld current (mean amperes)| 100 |100 | 100 | 100.| 100 | 100
+9. AVC wire control (V) 13.5 [13.5] 13.5( 13.5( 135} 13.5
+10. Maximum weld current (mean amperes){ 100 {100 [ 100 | 100 .| 100 | 100
 11. Actual current reading
-12. Slider position No. 1 (% max current) |40 |40 |40 (40 |40 | 40
-13. Slider position No. 2 (% max current) |70 |70 70 70 70 70
-14. Slider position No. 3 (% max current) |100 |100 | 100 | 100 | 100 | 100
-15. Stider position No. 34 (% max current)| 0 0 0 0 0 0
-16. Weld current pulse amplitude (A) 16542 16:2 ' 16542 16542 16542 16542
+12. Slider position No. 1 (% max current) |40 40 40 40 40 40
+13. Slider position No. 2 (% max current) |70 70 70 70 70 70
+14. Slider position No. 3 (% max current) |100 [100 | 100 | 100 | 100 | 100
+15. Slider position No. 34 (% max current)|0 0 0 0 0 0
+16. Weld current pulse amplitude (A) 16542 16542 16542 16542 16542 16542
+17. Weld current pulse rate (cpm) 68 68 68 68 68 68
 
-'17. Weld current pulse rate (épm) 68 |68 |68 (68 {68 |68
 Weld tool settings
 
-18. Oscillator amplitude (dial setting) 0 11 1 1 1 1
-19. Electrode included angle (°) 30 30 |30 |30 |30 |30
-20. EIectgode diameterr((in.) 53—2 535 % -33—2 3% 53'2’
-21. Arcgap (in.) % lie |l 1% % 1%
--22. Start location; clock position I I 1 11 1 11
+18. Oscillator amplitude (dial setting) 0 1 1 1 1 1
+19. Electrode included angle (°) 30 {30 30 30 30 30
+20. Electrode diameter (in.) Y % *3%_ 335 35 3%
+21. Arc gap (in.) 11_6 16 1i6 % i% ‘l_lé
+22. Start location; clock position 1 11 1 11 1 11
 
- 
+@A 10% variation in current is permissible to compensate for permissible joint tolerances.
 
- 
-
- 
-
- 
-
- 
-
- 
-
-A 10% variation in current is permissible to compensate for permissible joint tolerances.
-bNumber 16 setting equivalent to 3.7 in./min. '
+bNumber 16 setting equivalent to 3.7 in./min.
 
 “True readings = 50% data input.
-
- 
- 
-
- 
-
-. Position the carriage component on the pipe
-
-and align the torch head slot dlrectly over the
+Position the carriage component on the pipe,
+and align the torch head slot directly over the
 joint.
 
 . Use Allen wrench to tighten carriage arms to
@@ -3439,7 +2535,9 @@ arm until rollers are snug and even. Torque
 required is approximately 75 in.-lb. Do not
 over-torque.
 
-6. Connect the control cable to carriage.
+. Connect the control cable to carriage.
+
+7. Check the six cable connections on rear of the
 
 10.
 11.
@@ -3451,27 +2549,23 @@ over-torque.
 
 15.
 
-. Check the six cable connections on rear of the
-
 programmer.
 
 . Turn on power to programmer. This activates
 
 power to the carriage.
 
-. Check operation of the carriage, forward 4z-md -
+. Check operation of the carriage, forward and
 
 reverse. Forward speed is regulated from the
 programmer by adjusting the tool speed con-
 trol, which reads inches per minute travel. Pull
-
-knob out, set desired speed, then push knob in -
-
+knob out, set desired speed, then push knob in
 to lock. Reverse speed is a constant, fast speed
 and has no adjustment. Note: Always be aware
 of the control cable position and do not let it
 hang on some obstruction because this will
-damage the connector wiring.
+damage the connector wiring,
 
 Turn power off at programmer.
 
@@ -3490,7 +2584,7 @@ weld head.
 
 (a) The oscillator speed control is regulated
 from the programmer. Pull knob out,
-‘adjust speed, push knob in to lock. Indica-
+adjust speed, push knob in to lock. Indica-
 tion is given in cycles per minute.
 
 (b) The swing or travel distance is regulated
@@ -3498,19 +2592,18 @@ by the control knob on the oscillator
 component in the weld head. The maxi-
 mum swing spans % in.
 
-(c) Activate oscillator to check by pushmg
+(c) Activate oscillator to check by pushing
 control button on the weld head.
 
 Check out the wire feed component of the
 
-weld head. -
+weld head.
 
 (a) Check parameter table for correct wire
 material and size.
 
 (b) Wire feed speed is regulated from the
-
-~ programmer. Pull knob out, adjust control
+programmer. Pull knob out, adjust control
 
 16.
 
@@ -3520,8 +2613,7 @@ material and size.
 to desired speed, push knob in to lock.
 Indication in inches per minute.
 
-{(c) Match the alignment mark on the wire
-
+(¢) Match the alignment mark on the wire
 feeder cap with the first mark on the
 cover piece. This permits the wire to
 manually advance into the feeder’s gear
@@ -3535,15 +2627,15 @@ ing forward wire travel button on weld
 head.
 
 (d) Push the wire retract button on the weld
-head momentarily to venfy reverse wire
-travel,
+head momentarily to verify reverse wire
+travel.
 
 (e) Position the filler wire directly at the
 outlet of the feeder’s nozzle.
 
 Turn power on to the weld machine to check
 the torch cover gas and water flow — approxi-
-mately 14 cfh gas and approxunately 4 gpm
+mately 14 cfh gas and approximately ', gpm
 water.
 
 Turn power off to weld machine.
@@ -3551,17 +2643,16 @@ Turn power off to weld machine.
 Check out the torch head.
 
 (a) See parameter table for proper size of
-
-- electrode, electrode angle, and tip.
+electrode, electrode angle , and tip.
 
 (b) Position electrode in torch extension and
-tighten. Tungsten tip to protrude about %}
+tighten, Tungsten tip to protrude about ',
 in. beyond the ceramic torch cup.
 
 (c) Screw extension into torch head and
 tighten.
 
-(d) Check electrode and extenswn piece to be
+(d) Check electrode and extension piece to be
 sure desired depth can be reached by the
 electrode in the pipe joint. Use Teflon
 spacer between the extension piece and
@@ -3575,20 +2666,14 @@ joint on root pass. This will leave % in.
 movement upward or raising length for fill
 passes.
 
-19. Check the horizontal and vertical adjustmenfs
+19. Check the horizontal and vertical adjustments
 
 of the weld head.
 
 (a) The horizontal adjustment is made by
 rotating a knob on the outside cover of
 the weld head assembly, which moves and
- 
-
- 
-
-20.
-
-21.
+21.
 
 22.
 
@@ -3602,9 +2687,9 @@ the*electrode is in the center of the joint,
 the horizontal adjustment should be in its
 midrange, or at the center of its move-
 ment. If necessary, relocate the carriage to
-acquire this position.
+acquire this position,
 
-(b) The vertical adjustment is motor driven,
+The vertical adjustment is motor driven,
 with the controls located on the remote
 weld pendant control. The motor is
 mounted on the outside cover of the weld
@@ -3613,17 +2698,23 @@ cal, and all caution should be taken not to
 abuse the motor housing or its holddown
 clamp.
 
-(c) Energize both manual pendant controls
+Energize both manual pendant controls
 and check to see that both directions, up
-and down, are working correctly.
-
-(d) Adaptive vertical control is maintained
+and down, are working correctly .
+Adaptive vertical control is maintained
 during welding operation through pro-
 grammer sensing circuits. AVC control
 settings for the programmer are listed on
 the weld parameter data sheet.
 
-Reverse wind the carriage one revolution to get
+(b)
+
+(¢)
+
+(d)
+
+. Reverse wind the carriage one revolution to get
+
 the cables in proper position to unwrap from
 around the pipe during the weld operation.
 Clear any obstructions that may tend to
@@ -3644,30 +2735,29 @@ reaches the puddle. Wire should enter the
 extreme front area of the weld puddle. A set
 screw is used to lock the nozzle in position.
 
-35
-
-Use the weld parameter data sheet to make all |
-
+Use the weld parameter data sheet to make all
 settings on the programmer.
 
-Set all welding machine switches and selectors )
-
+Set all welding machine switches and selectors
 to the proper positions indicated:
-Remote current control — On
+
+Remote current control - On
 Mode selector — Straight dc (—)
-Soft start — Off
+Soft start - Off
 
 Spark — Start only
 
+35
+
 25.
-26.
+20.
 27.
 
 28.
 
 Current range selector — Medium
 
-Side switch (program control position) — Up
+Side switch (program control position} - Up
 (light is on during welding)
 
 Fine adjustment control — #10
@@ -3682,7 +2772,8 @@ work area.
 
 Welding operation is now ready to begin.
 
-Welding Operation
+I. Welding Operation
+
 1.
 
 The following items have been checked.
@@ -3691,15 +2782,17 @@ The following items have been checked.
 that the initial arc will strike on the joint
 side if oscillation is used.
 
-(b) If oscillation is required, the span of the
+If oscillation is required, the span of the
 electrode will not touch the joint sides.
+
+(b)
 
 Oscillation of the weld torch helps to
 assure fusion into the sidewall. When used
 in combination with current pulsing, oscil-
 lation will also help to maintain a stable
 weld puddle. The oscillation amplitude
-~ can be varied up to % in. width, and the
+can be varied up to % in. width, and the
 oscillation frequency can be controlled.
 
 Oscillation amplitude (side interference)
@@ -3707,16 +2800,18 @@ checks should be made prior to each pass
 by depressing the OSC button on the weld
 head lid body.
 
-(c) The electrode gap from tip to work has
-been set at approximately %4 in., and the
-adapting vertical control settings have
+The electrode gap from tip to work has
+been set at approximately '4 in., and the
+adapting vertical control
+
+(¢)
+
+settings have
 been entered on the programmer.
 
-2. Press start button on the pendant control..
+Press start button on the pendant control.
 
-3. Observe through port in carriage to check weld
-
-4.
+. Observe through port in carriage to check weld
 
 operations. Always keep pendant control close
 by to be able to push the downslope button or
@@ -3730,20 +2825,11 @@ button is used, the weld can be damaged by
 the filler wire sticking to the puddle area
 and/or the purge gas being cut off too quickly.
 
- 
- 
-
- 
-
- 
-
- 
-
-5. Downslope the weld operation after each
+5. Downslope the weld operation after each
 complete orbit is made.
 
 6. Reverse wind the carriage to properly arrange
-. the cables around the pipe prior to each weld
+the cables around the pipe prior to each weld
 pass.
 
 7. Always overlap the previous start point on the
@@ -3751,7 +2837,7 @@ reverse wind so that on the next start, all slack
 in the drive gears will be out and no backlash
 motion of the carriage will affect the weld
 head. Stagger subsequent weld starts by at
-least 1-in. spacings. o ‘
+least 1-in. spacings.
 
 8. Lift the cover on the weld head and check the
 electrode angle and tip. A close watch on the
@@ -3760,11 +2846,12 @@ should be changed or reshaped.
 
 9. Position of starts should preferably be some-
 where between 10 and 2 o’clock. Viewing
-“through the weld head’s viewport is easier; it
+through the weld head’s viewport is easier; it
 permits adjustments in an area least vulnerable
 to operator regulation assists.
 
 10. Follow weld parameter sequence selection
+
 recommendations.
 
 GUIDELINES FOR THE WELDER-OPERATOR’S
@@ -3774,10 +2861,8 @@ DURING AUTOMATED WELDING
 As mentioned previously, it is recommended that
 skilled manual welders be selected for training to
 operate the ORNL automated orbital pipe welding
-- system. The welder’s experience is invaluable, not only
-
+system. The welder’s experience is invaluable, not only
 in properly assembling and locating the torch, etc., but
-
 also in detecting minor discrepancies that might occur
 during operation. Lack of proper remedial action by the
 operator can ruin a weld.
@@ -3787,27 +2872,25 @@ plot variables such as torch travel rate, welding current,
 arc voltage, and wire feed deposit rates. The recorder
 chart can be used during operation to detect functional
 deviations and to guide and verify the operator’s
-
 corrective action. For automated systems without
-
 separate chart recorders, it is possible to observe the
 console voltmeter and the wire feed rate meter to attain
 some indications of weld pass quality. Both meters
+
+36
 
 indicate variations in arc length. A root pass weld is not
 penetrating the joint fully if voltage readings hold
 steady but the feed rate registers only below the
 selected rate. Usually, a small increase in welding
 current will remedy this situation. If, however, the wire
-
-' feeder motor builds up to the selected set rate and
-
+feeder motor builds up to the selected set rate and
 voltage continues to climb, poor welding also results
 and the cycle should be stopped at once. Now the
 problem will usually be an excessive joint gap formation
 with too much push-through in the upper quadrants of
-the pipe, filler wire bound up within the wire feeder
-drive and not feeding into the weld, or excessive puddie
+the pipe. filler wire bound up within the wire feeder
+drive and not feeding into the weld, or excessive puddle
 fluidity in pipe vertical positions causing puddle flow
 away from the electrode tip. Investigate the problem
 with the machine off. Satisfactory weld fill passes do
@@ -3829,33 +2912,24 @@ entry angle with the pipe joint surface. Final fill passes
 can be made with increased weld power, wider oscilla-
 tion, and increased wire feed. A near 12 o’clock start
 position for the first fill pass (for 5G position welding)
-
 generally helps to balance partial distortion of the pipe
-
 created by the root pass.
 
 One procedure for filling local weld areas that have
 been purposely ground out to remove weld defects is to
-place the carriage about Y, in. in front of the area to be
-filled, set a short arc gap of about %, in., and initiate a
+place the carriage about ' in. in front of the area to be
+filled, set a short arc gap of about %5, in., and initiate a
 weld cycle. After the carriage traverses the recessed
 area, the AVC wire feed control will start to automati-
 cally add wire as soon as the arc gap increases. If the
 localized defect is not too severe, the AVC and wire
 feed additive controls will automatically fill the depres-
-
-sion’ to the level of the surrounding substrate during
-
+sion to the level of the surrounding substrate during
 subsequent filler passes.
- 
 
-"
+7. Welding System Maintenance
 
-37
-
-7. Welding System Maintenance
-
-" Detailed instructions for mechanical maintenance and
+Detailed instructions for mechanical maintenance and
 electronic calibration checks are given in the Operation
 and Maintenance Manual for ORNL-Furnished Auto-
 mated Welding Systems. The Manual also includes a
@@ -3899,40 +2973,36 @@ recorder for field operations. Clean air is circulated
 through the box to retain a slight pressurization within
 the enclosure to seal out dust and dirt.
 
- 
-
 8. Operator Training
 
-Operator training consists in instructions in the setup,
+Operator training consists in instructions in the sectup,
 calibration, control, operation, and maintenance of the
 automated orbital welding and programming equip-
-ment. ORNL conducted a two-week training program
+ment. ORNL conducted a two-weck training program
 for Bechtel Corporation operating personnel from
-Westinghouse-Hanford and for TVA personnel from the
+Westinghouse-Hanford and for TV A personnel from the
 Browns Ferry Nuclear Plant utilizing the Operations
 and Maintenance Manual for the Oak Ridge equipment
 system as a text to supplement the practical training.
-The practical training involved a one-week period for
+The practical training involved a one-weck period for
 becoming acquainted with the equipment followed by a
 week of specialist training held in split sessions for both
-the weld operator and the electronics maintenance
+the weld opcrator and the electronics maintenance
 engineer. We purposely requested that the trainees
-include someone with a broad manual welding back-
+include someone with a4 broad manual welding back-
 ground and someone knowledgeable in automated
 
 electronics system operation and upkeep. The second-
 week training sessions involved the mechanical and
-‘metallurgical aspects of weld technology for the welder,
+metallurgical aspects of weld technology for the welder,
 plus electronic control, programming, troubleshooting,
-and maintenance for the instrument systems specialist.
+and maintenance for the instrument sysiems specialist.
 The welder-operator actually set up and executed a
 number of automated welds, while the electronics man
 performed controller checks, calibrations, and elec-
 tronic repairs. The trainees also received instructions in
 the interpretation of mechanical and electrical drawings
-
 for the ORNL system and were issued Manuals and
-
 blueprints at the time of their departure.
 
 The dual-phase training program, theory and practical
@@ -3940,13 +3010,7 @@ work, effectively provided each trainee with a balanced
 overall background of automated welding technology
 and practice. Exposing the welder trainee to some basic
 
- 
- 
-
- 
-
-instrument, programming, and control techniques and .
-
+instrument, programming, and control techniques and
 practices, and acquainting the electronics trainee with
 actual welding routines helped each to appreciate and
 comprehend the specific involvements and problems of
@@ -3954,26 +3018,23 @@ the respective expertises. Good automated welding
 practice calls for a “team effort” of specialists. The
 instrument man can often provide the welder with
 
+38
+
 adequate controls to maintain certain required torch-to-
 work relationships if he is taught to understand what
 constitutes the proper weld. Also, a weld operator who
 understands how the controls interact, why time delays
 occur in control responses, and what control factors
-
 influence repeatability can then select the programming
-. parameters essential for consistently good welds.
-
- 
+parameters essential for consistently good welds.
 
 9. Cutting Prerequisites - Pipe Cut and
-- Bevel Preparation Development
+Bevel Preparation Development
 
-- The most important objective in cutting and prepar-
+The most important objective in cutting and prepar-
 ing pipe ends for welding is to obtain precision
 geometrical and dimensional symmetry for mating pipe
-
 ends. This statement holds true for all types of weld
-
 joints. Unfortunately, commercially available pipes are
 routinely out-of-round, nonconcentric between inside
 and outside diameters, and of uneven wall thickness.
@@ -3981,15 +3042,14 @@ These irregularities make it impossible to rely on
 simple, rapid machining operations to establish the ideal
 pipe end geometries for weld joints.
 
-ASME Materials Specification, Section I, Boiler Code
-
+ASME Materials Specification, Section 11, Boiler Code
 for Piping, describes the allowable dimensional varia-
 tions in the diameter and wall thickness of various types
 of pipe. Section SB 167, for Nickel-Chrome Alloy Pipe,
 for example, permits an allowable eccentricity of pipe
 inside and outside diameters up to 10% of the nominal
 wall thickness; even comparable SA 106 carbon steel
-pipe specifications allow for 12 4% thickness varia-
+pipe specifications allow for 12 '4% thickness varia-
 tions. Diameters for large piping may vary as much as
 % in. All commercial pipe is governed by these
 specifications. Our experience indicates that piping
@@ -3997,7 +3057,7 @@ dimensions vary at least as much as, or slightly more
 than, the allowable tolerances. Furthermore, the manu-
 facturing process of pipes in the mill is based on
 squeeze rollers about the pipe’s outside diameter,
-resulting in primary, or best, . dimensional tolerance
+resulting in primary, or best, dimensional tolerance
 control of the outside diameter and least control of the
 inside diameter. The pipe joint to be welded, however,
 
@@ -4014,26 +3074,23 @@ control limits of the manufacturing process. Hence, it
 becomes necessary to establish pipe roundness and
 inside diameter control by requiring inside diameter and
 root face machining. Standard lathes are usually em-
-ployed for end preparation in the smaller pipe sizes;
-clamp-on, track-operated frame lathes? are often used
+ployed for end preparation ‘in the smaller pipe sizes;
+clamp-on, track-operated frame lathes* are often used
 to properly prepare ends for the larger pipe sizes. Care
 must be exercised to retain the specified pipe wall
 thicknesses, and the designer should always specify
 sufficiently heavy pipe walls to end up with at least the
 minimum required pipe wall thickness after machining.
 It is also important that the stress analyst study all joint
-configurations to provide allowances for uneven wall .
+configurations to provide allowances for uneven wall
 thickness near the finished weld joint and examine the
 weld-heat shrinkage-induced pipe contour deformation
-at the weld ]omt ‘
-
- 
+at the weld joint.
 
 4. Pipe-end preparation machines are manufactured by the
 H&M Pipe Beveling Company, Tulsa, Okla., and by others.
- 
 
-39
+39
 
 10. Commercial U.S. Equipment Sources
 for Orbital Welding Systems
@@ -4046,18 +3103,18 @@ in the United States:
 Astro-Arc Company, Sun Valley, Calif.
 
 CRC-Crose International, Inc., Houston, Tex.
-
 Dimetrics, Inc., North Hollywood, Calif.
 
-Liquid Carbonic Corporation, Des Plaines, I1l.
+Liquid Carbonic Corporation, Des Plaines, I
 Magnatech, The DSD Company, East Grandby, Conn.
-
 Rytek, Inc., Santa Fe Springs, Calif.
 
 TekTran Company, Newark, Ohio
 
-Zeta International Engineering, Inc., Santa Clara,
-Calif. ' -
+Zeta International Engineering, Inc.,
+Calif.
+
+Santa Clara,
 
 A number of companies in Europe also market
 equipment systems that are quite similar to the Liquid
@@ -4066,14 +3123,12 @@ producing equipment for orbital torch travel about a
 stationary pipe. Most of the major welding equipment
 manufacturers build automated, or at least semiauto-
 mated, tungsten-gas torch equipment for use in applica-
-tions where the pipe rotates past a stationary torch.,
+tions where the pipe rotates past a stationary torch.
 
 The Astro-Arc pipe weld system can accommodate a
 pipe range from 4 to 36 in. OD. One guide ring and one
 disposable belt are required for each diametral size
-
-increment. Two-section hinged guide rings are available -
-
+increment. Two-section hinged guide rings are available
 for use with pipe sizes up to 12 in., and segmented link
 tracks are used for 12- to 36-in.-diam pipes. Links are
 added or deleted for the in-between pipe diameter sizes,
@@ -4082,11 +3137,11 @@ cloth belts. The Astro-Arc carriage, containing the
 torch, wire feeder with a 4-in.-diam spool, oscillator,
 and orbit motor drive, includes a rugged spring mount-
 ing for the belt attachment. The Astro-Arc power
-supply. is solid state, 200 A GTA, fully transistorized,
+supply is solid state, 200 A GTA, fully transistorized,
 and includes an integral liquid-cooling system. Program-
-ming includes 1 %-in. AVC torch travel adjustment at
+ming includes 1 %4-in. AVC torch travel adjustment at
 approximately 60 in./min AVC compensation speed, 10
-to 100 cpm oscillation frequency for up to % -in.-wide
+to 100 cpm oscillation frequency for up to ' -in.-wide
 oscillations with independent dwell stop capability per
 side, and several modes of pulsed current operation.
 The Astro-Arc solid-state programmer is housed directly
@@ -4122,7 +3177,7 @@ automated machinery systems originally developed for
 the Navy by the Electric Boat Division of General
 Dynamics at Groton, Connecticut. Their APW series
 machines employ a split gear to carry a combination
-torch, torch oscillator, wire feeder attachment. The gear
+torch. torch oscillator, wire feeder attachment. The gear
 is enclosed within a hinged circular housing track, and a
 stationary motor mounted to the track orbits the
 gear-torch combination about the pipe. The balance of
@@ -4136,36 +3191,29 @@ home-built tube welder used in the manufacture of
 their precision metal O-ring Turoseals to an inexpensive
 orbital welder which they now market commercially.
 The equipment is presently limited to gas tungsten-arc
-welding of square-cut, butted pipe joints up to 1 % in.
-in diameter with wall thicknesses up to ¥%¢ in. The
+welding of square-cut, butted pipe joints up to 1 %4 in.
+in diameter with wall thicknesses up to %4 in. The
 automated, programmed fusion welder consists of a
 mechanical programmer and a weld head built to
 accommodate curved tubes and pipes as well as straight
 runs. The equipment incorporates simple mechanical
 
- 
- 
-
-devices for preparing the weld program and a program
-
-40
-
+devices for preparing the weld program and a program
 profile cam disk. The programmer plays back the cam
-
 card to obtain the automated control of welding
 parameters. The automated system operates in conjunc-
-tion with any commercial. GTAW power pack. Magna-
+tion with any commercial GTAW power pack. Magna-
 tech is presently enlarging their welder line and adding
 wire feed and oscillation capabilities to their equipment
 in order to handle larger diameters and heavier wall
 thicknesses.
 
-- Rytek, Inc., recently went out of business, but,
+Rytek, Inc., recently went out of business, but,
 according to its owner, Henry Rygiol, the operation
 apparently is being reinstituted as part of the Susque-
 hanna Corporation in San Diego, California. Rygiol has
 built a number of specialty systems for specific auto-
-mated gas tungsten-arc applications. -
+mated gas tungsten-arc applications.
 
 TekTran is a relatively new joint venture company
 formed by the Air Products and Chemicals, Inc., and
@@ -4178,17 +3226,17 @@ machinery for evaluation from manufacturing, opera-
 tional, and servicing standpoints. We understand that
 TekTran expects to market a series of four automated
 orbital welding carriages for pipe sizes ranging from
-2%, to 24 in. Their system basically resembles the
+2', to 24 in. Their system basically resembles the
 ORNL horseshoe carriage-weld insert design, but the
 four-roller tractor carriage with two motorized drivers
 and two free-rolling idler rolls has been changed to a
 
+40
+
 three-roll tractor with each of the rollers motorized.
 TekTran’s new line is based around their new 300-A
 solid-state, SCR-type weld power supply for both gas
-
-. tungsten-arc and gas metal-arc welding. The system will
-
+tungsten-arc and gas metal-arc welding. The system will
 also feature interchangeable weld insert modules for
 operation in both welding modes, with the GMA
 process recommended for speedier, heavier bead de-
@@ -4204,7 +3252,7 @@ box, dual weld power supplies, and a solid-state logic
 control cabinet. Three of the four tractors clamp onto
 the pipe and rotate the torch similar to most automated
 tube welders. These tractors are sized to handle piping
-Y to 1Y%, 1% to 2%, and 3 to 5 in. The fourth
+Yo to 1Y%, 1% to2'%, and 3 to 5 in. The fourth
 tractor, for all pipe sizes above 3 in., uses a tooling ring
 which is bolted to the pipe to be welded. A double-row
 chain is used on the tooling ring to hold and provide
@@ -4213,94 +3261,93 @@ as options arc voltage control, oscillation, and cold wire
 addition. Zeta’s GTAW power supply is a 200-A, 100%
 duty cycle, constant current machine, with current
 pulsing available as an option. The GMAW power
-
 supply is an Airco model PA-3, modified to make the
-
-Z1E. system “turn-key.”
- 
-
-Sy
-
-41
+Z.1E. system ““turn-key.”
+41
 
 Appendix A
 
 ORNL Welding Programmer-Controller,
 Controls and Function
 
--
-
- 
-
 This appendix essentially outlines the controls and functions of the welding programmer-controller. Table A-1
 lists the controls and functions for the front panel, and Fig. A-1 is a front view of the programmer-controller. Similar
 information for the rear panel is given in Table A-2 and Fig. A-2.
 
-PHOTO 0613-71
+1 PHOTO 0613—71
 
- 
+-uv.,
 
-*»
+cta » fLanes
+istable function generator
 
- 
+.....
 
-    
+........
+............
+________
+
+. e S Hy
+
+12 av  or IR ESESESiiiiiiiiiiics =iiEsis
+
+23 24
+273 8 6] 29| 28 2526
+
+vinnet
+
+N‘
+
+E—
 
 Fig. A-1. Programmer-controller, front view.
-
- 
-
- 
-
- 
- 
-
- 
-
- 
-
-42
+42
 
 Table A-1. Welding programmer front panel controls
-
- 
 
 Functions Related to Welding Current
 
 1. Vernistat welding current programmer
 
-2. Maximum current potentiometer (0—200 dial)
-3. Current “Program-Manual” switch
+. Maximum current potentiometer (0—-200 dial)
+. Current “Program-Manual™ switch
 
-4. dc-acand 200-50 A sthches
+. dc-ac and 200-50 A switches
 
-5. Ammeter
+. Ammeter
 
-- Functions Related to Programmer Time
+[ N C N Y I
 
-6. Upslope 5-2.5 sec switch
+Functions Related to Programmer Time
+
+6. Upslope 5—2.5 sec switch
 7. Weld time seconds switches
-8. ‘Downslope seconds switch
+8. Downslope seconds switch
 9. Upslope position lamps
 
 10. Weld position lamps
 
 11. Downslope position lamps
 
-Functions Related to Too! Drive
+Functions Related to Tool Drive
 
 12. Tool speed potentiometer (0—20.0 dial)
-13, Tool speed meter
+13. Tool speed meter
 14. Tool start switch
 
 Functions Related to Wire Feed and Arc Voltage
 
-15. Wire speed potentiometer (0—50.0 dial)
+15. Wire speed potentiometer (0-50.0 dial)
+
 16. Wire speed meter
-- 17. Wire start and wire stop switches
+
+17. Wire start and wire stop switches
+
 18. AVC volts potentiometer (wire feed rate control
 set, 0—1000 dial)
+
 19. Arc voltage meter
+
 20. AVC wire On-Off switch
 
 Functions Related to Torch Cross Seam Oscillator
@@ -4329,7 +3376,7 @@ Miscellaneous Functions
 31. Adaptive vertical controls
 
 32. Pulse amperes potentiometer (10—1 ratio,
-0--1000 dial)
+01000 dial)
 
 33. Pulse fast/slow switch
 
@@ -4344,9 +3391,9 @@ Selects and indicates current control source
 
 Select and indicate ammeter range
 
-Indicates welding current (0-50 A, 0-200 A)
+Indicates welding current (0—50 A, 0200 A)
 
-Selects and indicates upslope time (2.5 or § sec)
+Selects and indicates upslope time (2.5 or 5 sec)
 Select and indicate weld time (10 to 999 sec)
 Selects and indicates downslope time (0 to 9 sec)
 Indicate program position
@@ -4355,22 +3402,21 @@ Indicate program position
 
 Indicate program position
 
-Selects and indicates tool speed (0—20 in./min)
+Selects and indicates tool speed (0—-20 in./min)
 Indicates actual tool speed (0—20 in./min)
 Selects and indicates tool start as related to program position
 
-Selects and indicates maximum wire speed (0—50 in./min)
+Selects and indicates maximum wire speed (050 in./min)
 
 Indicates actual wire speed (0—50 in./min)
 
-Select and indicate wire start and stop as related to program posmon
-Selects and indicates AVC wire control voltage (06.5-16.5)
+Select and indicate wire start and stop as related to program position
+Selects and indicates AVC wire control voltage (06.5—16.5)
 
-Indicates welding arc voltage (0—30 V)
+Indicates welding arc voltage (030 V)
 Selects and indicates normal or AVC wire control
 
-_ Selects and indicates oscillator frequency (50—350 cpm)
-
+Selects and indicates oscillator frequency (50—-350 cpm)
 Selects and indicates oscillator operation
 
 Indicates preweld inert gas purge on
@@ -4384,114 +3430,79 @@ Indicate postweld inert gas purge on
 Selects and indicates program on or off (halted)
 
 Selects and indicates welder contactor control on or off (disabled)
-
 Selects and indicates welder contactor manual or programmed operation
-
 Selects and indicates input power on or off
+
 Low, average, high settings for arc voltage controlled torch arc length
-Sets weld current pulse amplitude (0-100 A peak to peak)
+Sets weld current pulse amplitude (0—100 A peak to peak)
 
 Selects fast or slow weld current pulse rate (60 or 40 pulses/min)
 (+) for ac welding mode
-(-) for dc welding mode
+(—) for dc welding mode
 
- 
- 
+43
 
-43
+PHOTO 061771
 
- 
+4
+b
+b
+-
+H
+:
+X0
+3
 
- 
-
- 
-
- 
-
- 
-
- 
-
-s
-
- 
+Rear Panel
 
 Fig. A-2. Programmer-controller, top view.
-
- 
-
- 
-
- 
-
-I
-|
-E
-|
-
- 
- 
-
- 
-
-44
-
- 
+44
 
 Table A-2. Welding programmer rear panel controls
 
-Function
-
- 
-
-Item Description
+Item Description Function
 1 Pilot lamps (2) Welder current control indicators
-2 Fuse ' ‘Welding power supply current control fuse {10 A)
+2 Fuse Welding power supply current control fuse (10 A)
 3 Male connector Welding power supply control cable
 4 Fuse Power input fuse (5 A SB)
-5 - Male connector 120-V ac power input cable
-6 ‘Fuse Control power fuse (5 A SB)
+5 Male connector 120-V ac power input cable
+6 Fuse Control power fuse (5 A SB)
 7 Female connector Welding current sensor cable
-8 Fuse Tool drive motor fuse (2ASB)
+8 Fuse Tool drive motor fuse (2 A SB)
 9 Switch Tool drive servo On/Off switch
-10 Fuse- Oscillator motor fuse (1 A SB)
+10 Fuse Oscillator motor fuse (1 A SB)
 11 Female connector Tool cable
 12 Fuse Wire feed motor fuse (2 A SB)
 13 Switch Wire feed servo On/Off switch
 14 Female connector Remote control cable
 15 Female connector Recorder cable
-16 Switch Arc voltage control (manual or automatic)
+16 Switch Arc voltage control {manual or automatic)
 
- 
+a?
 
- 
- 
-
-45
+45
 
 Appendix B
 
 Recommended Format for Establishing a Welding
 Procedure for Automatic Welding
 
- 
-
 The information in this section is intended to assist newcomers to automated welding in setting up procedures
-for automated systems. Our experience in training and in working with people not familiar with automated welding
+for automated systems. Qur experience in training and in working with people not familiar with automated welding
 technology indicated the need for simple guide lines along with a list of available procedures for both nondestructive
 and destructive examinations of welds. A sample welding procedure is given along with a typical list of general
 welding parameters (Table B-1). Figures B-1 and B-2 illustrate a joint geometry for weld joints and details of
-insert tack-weld sequencing respectively. |
+insert tack-weld sequencing respectively.
 
 Sample Welding Procedure Record for Type Welds
-A. SCOPE | |
-This procedure record describes the criteria for automated gas tungsten-arc welding of Sched. (Mat’l ).
-(Type ) piping using the (Name of automated system). This procedure is based on use of
-the (type) consumable’ insert with an internal (type gas) purge and cold wire feed in
+A. SCOPE
 
-the_ G and____ G positions. The procedure is detailed here for__in. diam. Sched.____ pipe, and with
+This procedure record describes the criteria for automated gas tungsten-arc welding of Sched. _ (Mat’l )
+(Type ) piping using the (Name of automated system). This procedure is based on use of
+the (type) consumable insert with an internal (type gas) purge and cold wire feed in
+the G and____ G positions. The procedure is detailed here for__in. diam. Sched. ___ pipe, and with
 attached data tables (one for each size) applies also to other specified pipe sizes. All welding performed in
-accordance with this procedure, which meets the requirements of Section IX of the ASME Code and RDT
+accordance with this procedure, which meets the requirements of Section [X of the ASME Code and RDT
 Standards E 15-2T and F 6-5T (supplements to the ASME Code), must be done by welder-operators who have
 demonstrated their proficiency by passing the qualification tests and receiving thorough training in the
 operation of the automated equipment.
@@ -4499,239 +3510,158 @@ operation of the automated equipment.
 B. SAMPLE PROCEDURE RECORD FOR WELD #
 
 1. Preweld Preparation
-Reference: ASME Boiler and Pressure Vessel Code, Section I1II, “Nuclear Vessels”
+Reference: ASME Boiler and Pressure Vessel Code, Section IH, “Nuclear Vessels™
 
-a. General specifications. ASME Boiler and Pressure Vessel Code, Section 1X, “Welding Qualifications,”
-and RDT Standards E 15-2T and F 6-5T, “Requirements for Nuclear Components” and “Welding
-Qualifications™
+a.  General specifications. ASME Boiler and Pressure Vessel Code, Section IX, “Welding Qualifications,”
+and RDT Standards E 15-2T and F 6-5T, “Requirements for Nuclear Components™ and “Welding
+Qualifications”
 
 b. Base metal
-i. Specification — ASTM A 312-64, “Specification for Seamless and Welded Austenitic Stainless
+i.  Specification - ASTM A 312-64, “Specification for Seamless and Welded Austenitic Stainless
 Steel Pipe.”
-ii. - Grade — type 304. '
-iti. Form and “P”’ number — seamless pipe, ASME Section IX “P”’ No. 8.
-iv. Thickness — 0.280 in. nominal.
+ii. Grade — type 304.
+iii. Form and “P” number - seamless pipe, ASME Section IX “P”” No. 8.
+iv.  Thickness — 0.280 in. nominal.
 v. Diameter — 6.625-in. nominal outside.
 
-c. Filler metal -
-i. Specification — ASME-AWS Specification SFA-5.9, “Specification for Corrosion-Resisting
+c. Filler metal
+i.  Specification - ASME-AWS Specification SFA-5.9, *‘Specification for Corrosion-Resisting
 Chromium and Chromium-Nickel Steel Welding Rods and Bare Electrodes.”
-ii. Classification and chemical composition — ER 308.
-ili. F and A numbers per Code Section IX — type ER F7 (Table Q11.2), Weld Metal Analysis No. =
-A7 (Table Q11.3).
-
- 
- 
-
- 
-
- 
-
- 
-
-46
+ii.  Classification and chemical composition — ER 308.
+iii. F and A numbers per Code Section 1X — type ER F7 (Table Q11.2), Weld Metal Analysis No. =
+A7 (Table QI1.3).
+46
 
 Table B-1. Welding parameters — XYZ machine system?
 
- 
+Weld# X and type X Torch gas, flow X , X cfh Pass sequence -
+Date X Backup gas, flow X , X cfh
 
- 
+Pipe-size, sched_X_ , _XF Filler wire diam., type_x_ , X -
+Mat'l X ,type X Electrode diam. X , shape X
 
-Weld# X and type X Torch gas, flow X , X cfh Pass sequence
-Date X . Backup gas, flow X , X cfh
+Joint type X Electrode proj. from cup X
 
-Pipe-size, sched __)i . _)_(_ Filler wire diam., typei » X
+Pipe position(s) X , X, | Cup# X Insert info: X
 
-Mat’l X , type X Electrode diam. X , shape X
+Weld passes =
 
-Joint type X Electrode proj. from cup _)_(_____
+Weld tool settings Root | 1 2 3 4 5 6
+Torch height above pipe surf., in. X X -
+Electr. tip to wire distance, in. X X -
+Oscillator amplitude, in. X X |——p—a| X |—>
+Wire feed retract (set at) in. X X -
 
-Pipe position(s)_):{_ y X, | Cup# X ' Insert info: X
+Weld start (clock position on pipe) 11 1 11 1 11 1 11
 
- 
-
- 
-
- 
-
-Weld passes m——d—
-Weld tool settings : 4
-- Torch height above pipe surf., in. '
-Electr. tip to wire distance, in.
-Oscillator amplitude, in.
-Wire feed retract (set at) in.
-Weld start (clock position on pipe)
 Programmer control box settings
+
 Arc voltage, V dc (Av.)
+
+Y
+>
+
 Wire feed rate, in./min
+
 Carriage drive rate, in./min
-Carriage drive ﬁode
+
+Carriage drive mode
+
+P e | ] A
+EA I B B
+Y
+>
+
 Oscillation, cpm
+
 Dwell time, left side, sec
+
 Dwell time, right side, sec
-Carriage drive start delay, sec
-Wire feed start delay, sec
-Wire feed upslope, sec
-Wire feed delay, sec
-Prepurge timer, sec
-Postpurge timer, sec
-Weld current, pulse high, A
-Pulse time, high, sec
-Pulse low current, A
-Pulse time, low, sec
-Initial current set, A
-Current upslope time, sec
 
-Current downslope time, sec
-
-X
-X
-X
-X
-X
-X
-X
-X
-X
-X
-X
-X
-X
-X
-
-X
-Arc voltage set, high, low X X X
-
-Total weld time, min and sec
-
- 
+Carriage drive start delay, sec X X >
+Wire feed start delay, sec X X -
+Wire feed upslope, sec X -
+Wire feed delay, sec X -
+Prepurge timer, sec X I
+Postpurge timer, sec X :
+Weld current, pulse high, A X X X |———T—»| X X
+Pulse time, high, sec X X X |————e—— N | g
+Pulse low current, A X X X |———] X X
+Pulse time, low, sec X X X |————t—| X | =
+[nitial current set, A X o
+Current upslope time, sec X >
+Current downslope time, sec X I
+Total weld time, min and sec X X - X [=—> .
+Arc voltage set, high, low X o X 4 - < | —
 
 @X marks the spaces where specific values are to be provided.
- 
 
- 
+47
 
-B
+ORNL-DWG 72-12241
 
 16
 
-1
-212
-3‘11"4?_-L
+/-
 
- 
-
-o
-=
-
- 
-
-INSIDE OF PIPE MAY BE
-MACHINED FOR THE .
-DISTANCE SHOWN, IF
-NECESSARY, tN ORDER
-TO HOLD THE LAND
-AND ROOT FACE TO
-SPECIFIED DIMENSIONS
-
- 
-
- 
-
-*
-
-e 1/2 i1, —————
-
-47
-
- 
-
-ORNL-DWG 72—-12241
+P 1/2 N, o]
 
 Y-INSERT
 
- 
+—0.000
 
-0.01 +0.020 ; .
-_"H"" 1> 0000 "
+0.015 * 0.020
 
-0.010in
+o
+
+0.010 in.
 MAXIMUM
+MISMATCH
 
-MISMATCH ‘
+INSIDE OF PIPE MAY BE
+MACHINED FOR THE
+DISTANCE SHOWN, |F
+NECESSARY, IN ORDER
+TO HOLD THE LAND
+AND ROQOT FACE TO
+SPECIFIED DIMENSIONS
 
- 
-
- 
-
- 
-
- 
-
- 
-
-—
-
-l_q___PIPE _
+i L g PIPE_ _ il _ _
 
 Fig. B-1. Joint geometry for weld joints, weld preparation.
 
-ORNL—DWG 72—12242
+ORNL—-DWG 72—-12242
 
- 
++1/16 in. \'\/'
 
- 
+: 44 -
 
-TACK WELDS
-STAGGERED
+w c c 0
 
-   
- 
+w - T.= =
+083 |z w +
+ol |® =
+;g é +|_ +| _P !
+¥ . - 4
+¢32 e < S ;
+L| = | X
+i BN N
 
-N
+e Y
 
- 
+ieind b U
 
- 
+. £ )%
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-~ TACK WELD INSERT DETAIL
+TACK WELD INSERT DETAIL
 
 Fig. B-2. Tack-welding insert detail.
- 
 
- 
+48
 
- 
+iv. Size — 0.045-in.-diam wire (on 1 '4-1b spools).
 
-48
-
-iv. Size — 0.045-in.-diam wire (on 1 % -Ib spools).
-
-v. Form — continuous length wound on 4-in, spools.
+v. Form — continuous length wound on 4-in. spools.
 
 vi. Wire surface — smooth finish, free of slivers, scratches, depressions, scale, or any foreign matter
 that would affect weld quality.
@@ -4740,121 +3670,119 @@ vii. Storage — in original sealed containers or subsequently wrapped in plasti
 
 viii. Manufacturer — Airco Welding Products, heat No. W06753.
 
-'Shielding gas. Welding-grade argon at 20-cfh flow rate.
+Shielding gas. Welding-grade argon at 20-cfh flow rate.
 
-‘Backing gas. Welding-grade argon at 20-cth flow rate during welding; prepurge prior to weldmg as
+Backing gas. Welding-grade argon at 20-cfh flow rate during welding; prepurge prior to welding as
 described in paragraph 2(a)iii.
 
 Consumable inserts. Y-type consumable insert rings manufactured by WeldRing Company, Inc., of
-Bell Gardens, Cahforma and conforrmng to ASME-AWS Specification SFA-S 9, Class1ﬁcat10n ER
+Bell Gardens, California, and conforming to ASME-AWS Specification SFA-5.9, Classification ER
 308.
 
-Cleaning. The wclding groove and adjacent area must be free of scale, rust, oil, grease, or any foreign
+Cleaning. The welding groove and adjacent area must be free of scale, rust, oil, grease, or any foreign
 material that would affect the quality of weld metal or the operation of the welding equipment.
 Before assembling the joint to be welded, the mating surfaces and adjacent areas must be wiped with
 clean, lint-free cloths saturated with an approved solvent, acetone.
 
 Weld groove type. Single Vee with 0.015- to 0.035-in. root face.
-Joint geometry. Per attached Fig. B-1. |
+Joint geometry. Per attached Fig. B-1.
+
 Joint preparation. Machine and/or grind to dimensions and finishes shown in attached Fig. B-1.
 
 Weld joint setup.
 
-i. Pipe mismatch — per Para. NB-4425, ASME Section III, except uniform mismatch limited to
+i.  Pipe mismatch — per Para. NB-4425, ASME Section I, except uniform mismatch limited to
 0.010 in., as detailed in Fig. B-1.
 
 ii. Assembly and fixtures — the necessary clean fixtures must be provided to align and support joint
 during welding, along with the necessary purge seal fixtures to prevent contamination of the
 backing gas.
 
-ili. Tack welding — as shown in Fig. B-2, mating ends of the pipe are to be tack welded to each
+iii. Tack welding — as shown in Fig. B-2, mating ends of the pipe are to be tack welded to each
 other, with an appropriately placed insert. Tack welding is to be done with a torch
-coupled to a __power supply using the following conditions:
+coupled to a power supply using the following conditions:
 
 current upslope time, sec
-
- 
 
 weld current, A
 
 arc voltage, V
 
-]
-
 weld time, sec
 
 current downslope time, sec
-
- 
 
 The following steps should be followed in the tack-welding sequence:
 1. clean pipe and ring with acetone and lint-free rags.
 manually align insert to proper position on one pipe section,
 mark overlap point on insert,
 cut off excess insert,
-tack insert together using above condltlons
-position insert between pipe sections, :
+tack insert together using above conditions,
+position insert between pipe sections,
 clamp or restrain pipe sections, causing insert to seat firmly against the pipe-wall bevel,
 tack at approximately %-in. intervals, alternating sides of the insert to avoid breaking
 of tacks during root-pass welding.
 
+e AT
+
 iv. Welding positions — 5G for weld # (procedure verified for 2G position).
-v. Method of restraint — not applicable if the test joint was tack welded prior to welding.
+v.  Method of restraint — not applicable if the test joint was tack welded prior to welding.
 
-® NG AW
+49
 
- 
- 
+. Welding process, current, and equipment
 
- 
+i.
+ii.
+- iii.
 
- 
+Process - - gas tungsten-arc, argon shielded.
+Process control - automatic.
+Current -- direct current, electrode negative (straight polarity). Ground cable, No. 2 gage,
 
-49
-
-1. Welding process, current, and equipment
-i.  Process — gas tungsten-arc, argon shielded.
-ii. Process control — automatic. |
-iii. Current — direct current, electrode negative (straight polarity). Ground cable, No. 2 gage,
-
-connected from “Ground Terminal” on power supply to work piece. Power
+connected from “Ground Terminal on power supply to work piece. Power
 supply also grounded to “building ground.”
 
-iv. Current source — power supply.
+Current source — power supply.
 
-v.  Arc starter — high frequency.
+Arc starter — high frequency.
 
-vi. Welding torch — with____ gaslens and gas cup size No.__
+Welding torch — with gas lens and gas cup size No.___.
 
-vii. Electrode — % ,-in.-diam nominal 2% thoriated tungsten, AWS classification EWTh-2, to
+Electrode - ¥%,-in.-diam nominal 2% thoriated tungsten, AWS classification EWTh-2, to
 AWS Specification A 5.12-69, “Specification for Tungsten-Arc Welding Electrodes.”
+Flowmeter — suitable for controlling the flow of argon within *1 cfh, actual setting for
+pressure, 50 psig.
 
-viii. Flowmeter — suitable for controlling the flow of argon within +] cfh, actual setting for
+Gas lines - metal and plastic.
 
-- pressure, 50 psig.
+m. Preheat and interpass temperature
 
-ix. Gas lines — metal and plastic.
-
-‘m. Preheat and interpass temperature
-i.  Preheat temperature — 60 to 100°F; none required for record weld
-ii. Interpass temperature — 60 to 250°F, as determined by Tempilstik measurement.
-
+i.
+ii.
 2. Welding
+
+Preheat temperature - 60 to 100°F: none required for record weld.
+Interpass temperature 60 to 250°F, as determined by Tempilstik measurement.
 
 a. General considerations
 
-1i.  Welding parameters — as shown in Table B-1.
+i.
+1.
+ii.
 
-ii. Electrode geometry and setting — as shown in Table B-1..
+Welding parameters — as shown in Table B-1.
 
-iii. Welding technique — The basic principle of gas tungsten-arc welding is to shield the weld
+Electrode geometry and setting — as shown in Table B-1.
 
+Welding technique - - The basic principle of gas tungsten-arc welding is to shield the weld
 puddle of molten metal and the surrounding area with argon or some similar type of gas
 while the temperature is high enough to cause oxidation by the atmosphere if not
 protected. Therefore, it is necessary to perform all welding in a quiet atmosphere where no
-air currents or drafts exist in the immediate vicinity of welding. It may, in other locations,
+air currents or drafts exist in the immediate vicinity of welding. [t may, in other locations,
 be necessary to shield the area from drafts to assure a constant inert-gas atmosphere for the
 weld.
+
 Before welding starts, a minimum of 3 in. of the internal surface of the joint on each side of
 the weld should be blanketed with argon. The back side of the joint should be purged with a
 minimum of 20 cfh of argon for at least 10 min prior to root-pass welding and for at least 5
@@ -4865,312 +3793,172 @@ welding, and until the temperature of the weld falls below 250°F.
 b. Procedures — equipment setup — The required procedure must be determined by the conditions
 encountered in the piping system where welding is to be done.
 
-~¢.. Procedures — root pass welding
-i.  The following preparations should be completed .
-(a) Aninsert tacked into the pipe joint as shown in Fig. B- 2
+c. Procedures — root pass welding
+
+1.
+
+The following preparations should be completed:
+
+(a) An insert tacked into the pipe joint as shown in Fig. B-2.
+
 (b) The joint set up per previously listed setup instructions.
-(c) The track and/or carriage set per previous instructions; cables and hoses connected, etc.
-ii. Double check on the following:
-(a) Ground cable connected to machine “ground” and to pipe..
-- (b) Travel clearance available for carriage orbit. Sufficient clearance between supporting
+
+(c) The track and/or carriage set per previous instructions; cables and hoses connected, ctc.
+
+Double check on the following:
+
+(a) Ground cable connected to machine “ground” and to pipe.
+
+(b) Travel clearance available for carriage orbit. Sufficient clearance between supporting
 structures, flanges, bosses, etc., and welding head 360° around the pipe.
-iii. Turn on primary ac power. Turn on circuit breaker on programmer-controller control panel.
-iv. Refer to Table B-1 and dial listed settings into the programmer.
-V. Manually operate the following switches for final preoperational checks
-' (a) AVCjog “up” and “down.”
+
+Turn on primary ac power. Turn on circuit breaker on programmer-controller control panel.
+
+Refer to Table B-1 and dial listed settings into the programmer.
+
+Manually operate the following switches for final preoperational checks:
+
+(a) AVCjog “up” and “down.”
+
 (b) Wire feed, forward and retract.
-(¢) Carriage, forward and reverse.
- 
 
-%55 s
+(c) Carriage, forward and reverse,
 
->
+50
 
-50
+vi. Set AVC head, torch and electrode.
 
-Set AVC head, torch and electrode.
-Push *“‘Sequence Start Button.” -
+vii. Push “Sequence Start Button.”
 
-. Once arc starts, introduce manual torch set adjustments, if necessary,
+viii. Once arc starts, introduce manual torch set adjustments, if necessary.
 
-When the root pass is complete, overlap about % to '% in., exercise proper operator
-
-judgment for proper tie-in; then operate “downslope’ button to taper the weld and then
-
+ix. When the root pass is complete, overlap about Y, to ' in., exercise proper operator
+judgment for proper tie-in; then operate “downslope” button to taper the weld and then
 terminate it to be followed by the preset postpurging.
-Refer to the inspection procedure and mterpass temperature requ1rements before starting
+
+x. Refer to the inspection procedure and interpass temperature requirements before starting
 with fill passes.
 
 d. Procedure followed (interpass operations)
 
-1.
-
-idi.
-
-Cleaning of weld beads — remove oxide part:cles and heavy film from weld bead and base
+i.  Cleaning of weld beads — remove oxide particles and heavy film from weld bead and base
 metal in line of arc travel before depositing each subsequent weld bead. Use only clean wire
 brushes with stainless steel bristles and clean lint-free rags with approved solvent, acetone,
-or equal. :
-Examination for defects — visually examine each bead for cracks, holes, incomplete fusion,
+or equal.
+
+ii. Examination for defects — visually examine each bead for cracks, holes, incomplete fusion,
 lack of penetration, overlap, undercut, underfill, and other defects. Each bead to have a
 smooth surface and contour and merge smoothly into previously deposited beads and/or
 base metal.
 
-Repair of defects — remove weld defects by grinding, chipping, or filing before depositing
+iii. Repair of defects — remove weld defects by grinding, chipping, or filing before depositing
 the next bead.
 
 NOTE: PERFORM OTHER CODE REQUIRED INSPECTIONS, TF APPLICABLE.
-e. Procedure for fill-pass welding: '
 
-i.
-ii.
+e. Procedure for fill-pass welding;
 
-iii.
-iv,
-V.
+i.  Refer to Table B-1 and dial listed settings into the programmer.
 
-vi,
-
-Refer to Table B-1 and dial listed settings into the programmer.
-
-Test check oscillation relative to amplitude setting and torch positioning within the weld
+ii. Test check oscillation relative to amplitude setting and torch positioning within the weld
 groove,
 
-Reposition the AVC head, torch, and electrode.
+ili. Reposition the AVC head, torch, and electrode.
 
-Position the wire feed as required.
+iv. Position the wire feed as required.
 
-Operate the “Sequence Start Button,” etc.
+v.  Operate the “Sequence Start Button,” etc.
 
-Cover passes — the weld operator shall exercise best judgment to determine how many fill
+vi. Cover passes — the weld operator shall exercise best judgment to determine how many fill
 passes will be required for completing a pipe weld. The cover passes, or cap passes, must
-
 blend with the pipe outside diameter to form a circular, or slightly convex, overall weld
-
 contour.
 
 C. REFERENCE GUIDE FOR NONDESTRUCTIVE AND DESTRUCTIVE EXAMINATION LISTINGS
 
 1. Nondestructive Examination
 
-a.
-
-a.
+d.
 
 Visual examination — Described in ORNL Standard Procedure, Section 9, of Inspection Engineering
 Quality Assurance Procedures.
 
-Radiographic examination — ORNL Standard Procedure Section 3, Appendlx 2, of Inspectlon
+Radiographic examination — ORNL Standard Procedure Section 3, Appendix 2, of Inspection
 Engineering Quality Assurance Procedures.
 
-Liquid-penetrant examination — ORNL PE-NDT-1 (whlch conforms with ASME Code Section III
+Liquid-penetrant examination — ORNL PE-NDT-1 (which conforms with ASME Code Section III
 ASME E165 and RDT F3-6T).
 
 2. Destructive Examination
 
+d.
+
 Metallographic examination (not required by ASME Code or RDT standards; however procedures
 have been developed by ORNL for quality assurance and are available, if needed.
 
-Root and face bend tests — ASME Code Section IX.
+Root and face bend tests — ASME Code Section 1X.
 Tensile tests — ASME Code Section IX and ASTM E8-65T.
-Dimensional examination — ASME Code Section 1II, ASME Code Case 1331-7, and RDT E 15-2T.
- 
-
- 
-
- 
-
- 
-
-—
-D=
-
-15-17.
-18.
-19.
-20-29.
-30.
-31.
-
-32.
-
-33.
-
-34.
-
-35.
-36.
-37-61.
-62.
-
-63.
-
-64.
-
-65.
-66—-67.
-
-68.
-
-150.
-
-— .
-POXXNINh WO =
-
-FWW_Z"*<!‘U.'I.FHFU€>épp;zp;»g*noshwumg;gnmo
-
-0
-.H.
-.R.
-.C.
-. L.
-
-. B.
-. H.
-
-. Adamson
-. Ashton
-
-Bryan
-Buchanan
-Cottrell
-Courtney
-Culler
-
-Harms
-
-. Lyon
-
-L. Birch
-
-Tennessee Valley Authority
-Browns Ferry Nuclear Plant
-
-P.O. Box 2000
-
-Decatur, Ala. 35601
-
-51
+Dimensional examination — ASME Code Section 111, ASME Code Case 1331-7, and RDT E 15-2T.
+51
 
 INTERNAL DISTRIBUTION
-
-69.
-70-74.
-75.
-76—80.
-81.
-82.
-83.
-84.
-85-94,
-95.
-96.
-97.
-98.
-
-99.
-100.
-
-101-110.
-
-111.
-112.
-113.
-114.
-115.
-116.
-117.
-118.
-119.
-120.
-121,
-122.
-123-125.
-126.
-127148,
-149.
-
-EXTERNAL DISTRIBUTION
-
-151.
 
 ORNL-4830
 UC-80 Reactor Technology
 
-. C. McCurdy
-. R. McGuffey
-. E. MacPherson
-. L. Matthews
-. R. Miller
-
-Nelson
-triarca
-. Robinson
-
-. Rosenthal
-. Sheldon
-
-. Shooster
-. Shugart
-. Skinner
-
-. Slaughter
-Smlth Ir.
-
-. L.
-
-. A. Nelms
-. C.
-
-.Pa
-
-A Sundberg
-. E. Thompson
-. B. Trauger
-
-. W. Tucker
-
-. Walters
-
-. We mberg
-. Wei
-
-Whltman
-
-‘Witt
-
-G.T. Yahr
-
-Central Research Library
-Document Reference Section
-
-Laboratory Records Department -
-Laboratory Records ORNL RC
-
-T. R. Brown
-
-Tennessee Valley Authority
-Browns Ferry Nuclear Plant
-P.O. Box 2000
+1. G. M. Adamson 69. H. C. McCurdy
+2. S.R. Ashton 70-74. 1. R. McGuffey
+3. S. E. Beall 75. R. E. MacPherson
+4. M. Bender 76—80. C. L. Matthews
+5. W. A. Bird 81. W. R. Miller
+6. R. Blumberg 82. R. L. Moore
+7. 1. 0. Brown 83. H. A. Nelms
+8. R. H. Bryan 84. G. C. Nelson
+9. J. R. Buchanan 85-94. P. Patriarca
+10. W. B. Cottrell 95. 1. N. Robinson
+11. C. C. Courtney 96. M. W. Rosenthal
+12. F. L. Culler 97. M. R. Sheldon
+13. M. H. Fontana 98. R. G. Shooster
+14. A.P. Fraas 99. I. R. Shugart
+15—17. D. R. Frizzell 100. M. J. Skinner
+18. R. M. Fuller 101-110. G. M. Slaughter
+19. W. R. Gall 111. C. M. Smith, Jr.
+20-29. G. M. Goodwin 112. I. Spiewak
+30. D. L. Gray 113. D. A. Sundberg
+31. W. L. Greenstreet 114. W, E. Thompson
+32. A. L. Grindell 115. D. B. Trauger
+33. W.O. Harms 116. R. W. Tucker
+34. R.F. Hibbs(Y-12) 117. T. K. Walters
+35. E. C. Hise 118. A. M. Weinberg
+36. H. W. Hoffman 119. J. R. Weir
+37—61. P. P.Holz 120. G. D. Whitman
+62. V. T. Houchin 121, F.J. Witt
+63. T. R. Housley 122. G.T. Yahr
+64. M. I. Lundin 123-125. Central Research Library
+65. R.N. Lyon 126. Document Reference Section
+66—67. R. M. McClung 127—148. Laboratory Records Department -
+68. H. E. McCoy 149. Laboratory Records ORNL RC
+EXTERNAL DISTRIBUTION
+150. L. Birch 151. T.R. Brown
+Tennessee Valley Authority Tennessee Valley Authority
+: Browns Ferry Nuclear Plant Browns Ferry Nuclear Plant
+P.O. Box 2000 P.0O. Box 2000
 
 Decatur, Ala. 35601
 
- 
- 
+Decatur, Ala. 35601
 
- 
+152-155.
 
-152-155.
-
-156—158.
+156-158.
 
 159.
 
-160—161.
+160-161.
 
 162.
 
-163-164.
+163—-164.
 
 52
 
@@ -5178,7 +3966,7 @@ R. L. Carter, Bechtel Corporation
 50 Beale St.
 
 San Francisco, Calif. 94119
-D. C.King
+D. C. King
 
 Westinghouse Hanford Co.
 Hanford Engineering Lab.
@@ -5190,7 +3978,7 @@ P. R. Kirk
 
 Tennessee Valley Authority
 Browns Ferry Nuclear Plant
-P.O. Box 2000
+P.0. Box 2000
 
 Decatur, Ala. 35601
 
@@ -5198,7 +3986,7 @@ W. J. Martin
 
 Bechtel Corporation
 Hanford Engineering Lab.
-P.O.Box 9
+P.O. Box 9
 
 Richland, Wash. 99352
 
@@ -5206,7 +3994,7 @@ J. Morgan
 
 Tennessee Valley Authority
 Browns Ferry Nuclear Plant
-P.0. Box 2000
+P.O. Box 2000
 
 Decatur, Ala. 35601
 
@@ -5214,35 +4002,34 @@ A. C. Rediske
 
 Bechtel Corporation
 Hanford Engineering Lab.
-P.0.Box 9
+P.O.Box 9
 
 Richland, Wash. 99352
 
 165.
 
-166—167.
+166167,
 
 168.
 
-169-171.
-172-173.
-174—190,
+169—171.
+
+172—173.
+
+174—190.
 
 191.
-192,
+192.
 
-193-407.
+193407,
 
 L. Rousseau
 
-Welding Engineer
-
-Westinghouse Hanford
-
+Welding Engineer -
+Westinghouse Hanford .
 1212 Building, 300 Area
 
-P.O. Box 1970
-
+P.O. Box 1970 .
 Richland, Wash. 99352
 
 E. Thompson
@@ -5272,11 +4059,12 @@ USAEC, Washington, D.C.
 Manager, Technical Information Center
 AEC, ORO
 
-Patent Office, AEC, ORO
+Patent Office, AEC, ORQ
 
 Research and Technical Support Division
-AEC, ORO '
+AEC, ORO
 
 Given Distribution as shown in TID-4500
 under Reactor Technology category
-(including 25 copies — NTIS)
+(including 25 copies — NTIS) N
+

@@ -1,0 +1,3081 @@
+CENTRAL RESEARCH LIBRARY
+DOCUMENT COLLECTION
+
+2
+
+.‘."\'”\ll' i
+
+| |
+
+R
+
+0515
+
+ORNL-4345
+UC-70 — Waste Disposal and Processing
+
+TEMPERATURE PROFILES WITHIN CYLINDERS
+CONTAINING INTERNAL HEAT SOURCES AND
+MATERIALS OF TEMPERATURE-DEPENDENT
+THERMAL CONDUCTIVITIES. DESCRIPTION OF
+FAST COMPUTER PROGRAMS AS APPLIED TO
+SOLIDIFIED RADIOACTIVE WASTES
+
+OAK RIDGE NATIONAL LABORATORY
+operated by
+
+UNION CARBIDE CORPORATION
+for the
+
+U.S. ATOMIC ENERGY COMMISSION
+
+Printed in the United Stotes of America. Available from Clearinghouse for Federal
+Scientific and Technical Information, National Bureau of Standards,
+
+inia 22151
+
+Printed Copy $3.00; Microfiche $0.65
+
+U.S. Deportment of Commerce, Spri
+
+Price:
+
+LEGAL NOTICE
+
+This report was prepared o5 an account of Government sponsored work. Neither the United States,
+nor the Commission, nor any person acting on behalf of the Commission:
+A. Mokes any warranty or representation, expressed or implied, with respect o the accuracy,
+completeness, or usefulness of the information contained in this report, or that the use of
+formation, apparatus, method, or process disclosed in report may not infri
+privately owned rights; or
+B. Assumes any liabi
+
+any
+
+= with respect fo the use of, or for damages resulting from the use of
+formation, apparatus, method, or process disclosed in this report.
+As used in the above, “‘person octing on behalf of the Commission'
+
+includes any employee or
+contractor of the Commission, or employee of such contractor, fo the extent that such employes
+or contractor of the Commission, or employee of such contractor prepares, disseminate
+provides access to, any information pursuant to his employment or contract with the Commi
+or his employment with such contractor.
+
+ORNL-4345
+
+Contract No. W-7405-eng-26
+
+- CHEMICAL TECHNOLOGY DIVISION
+
+Chemical Development Section B
+
+TEMPERATURE PROFILES WITHIN CYLINDERS CONTAINING INTERNAL HEAT
+SOURCES AND MATERIALS OF TEMPERATURE-DEPENDENT THERMAL
+CONDUCTIVITIES. DESCRIPTION OF FAST COMPUTER PROGRAMS
+
+AS APPLIED TO SOLIDIFIED RADIOACTIVE WASTES
+
+W. Davis, Jr.
+
+JANUARY 1969
+
+OAK RIDGE NATIONAL LABORATORY
+Oak Ridge, Tennessee
+operated by
+UNION CARBIDE CORPORATION
+for the
+U. S. ATOMIC ENERGY COMMISSION
+
+i W
+
+e
+iii
+
+CONTENTS
+
+Abstract . . . . . . L e e e
+1. Introduction . . A
+2. Methods of Solution . . . . .. .. .. L
+3. Input Statements. . .. . ... .. ..
+4. Execution Timesand Output ... ... ... ... ... .. ........
+
+D, References . . . . v i i s e e e e e e e e e e e e e e e e e e e e e e e e
+TEMPERATURE PROFILES WITHIN CYLINDERS CONTAINING INTERNAL HEAT
+SOURCES AND MATERIALS OF TEMPERATURE-DEPENDENT THERMAL
+CONDUCTIVITIES. DESCRIPTION OF FAST COMPUTER PROGRAMS
+AS APPLIED TO SOLIDIFIED RADIOACTIVE WASTES
+
+W. Davis, Jr.
+ABSTRACT
+
+The safety and economic aspects of producing and storing radio-
+active wastes as solids, usually in vessels having a cylindrical geometry,
+require that we know the maximum internal temperatures to be expected
+as a result of decay heat. Such information is mandatory for materials
+that have variable thermal conductivities under different storage con-
+ditions. '
+
+This report presents a computer program (STORE), which was written
+to permit more rapid calculation of temperature profites within cylinders
+containing homogeneously distributed heat sources and materials whose
+thermal conductivities can be expressed as a tabular function of tem-
+perature. A simplified version of this program was prepared for the cases
+in which the thermal conductivity is constant or is a linear function of
+temperature. Both of these programs have short execution times, typi-
+cally from a few to 20 seconds on the IBM/360-75 as compared with the
+five or more minutes required for the more accurate finite-difference
+method. They are based on the assumption that the material density and,
+therefore, the power density of the heat source are independent of tem-
+perature; this assumption is, of course, contrary to physical reality.
+However, in a test example involving a hypothetical vessel of glass con-
+taining a large internal (fission product) heat source with a specific
+power density of 0.2 cal sec™! cm™3 (i.e., 80,910 Btu hr~! £+73), the
+temperature difference between the wall and the center of a 6-in.-diam
+by 6.25-ft-long cylinder was overestimated by 36°C (an error of only
+about 10%, as compared with the "exact"” value that is obtained by
+solving finite-difference equations and compensating for the reduction
+in the heat-source strength as the density decreases with increasing
+temperature). Within the uncertainties inherent in thermal conductivity,
+density, and heat capacity measurements of systems of interest in the
+storage of solidified radioactive process wastes, the method and the
+program presented in this report offer adequate accuracy and a large
+time savings as compared with the more exact calculations. Also, they
+are applicable to cylinders with any specified length/diameter ratio.
+1. INTRODUCTION
+
+On the basis of safety and economic studies, it appears rather probable that
+high-]-4 and ini‘ermedicfe-level5 radioactive wastes which accumulate from the
+processing of nuclear reactor fuels will be converted to solids for permanent storage
+at some time — from 30 days to 30 years — after removal of the fuel from the reactor.
+Essentially all of the beta energy, and more than half of the gamma energy, from the
+fission products will usually be absorbed by the solid within which they are contained;
+therefore, the temperature in the interior will be raised to a level higher than that of
+the surface. The extent of this temperature elevation depends on the thermal conduc-
+tivity of the solid, the diameter of the storage vessel (which is usually considered to
+be a right circular cylinder), and the specific fission product power density. In cal-
+culations it is assumed that the radioactive materials are distributed isotropically
+throughout the cylinder; then, atlsfecdy state, the temperature, T{r, z), at any point
+
+(r, z) is given by the equation
+
+"
+l_a_.!.Kré.I.‘+iiK-al +A=0, (n
+rarL er azL z
+
+where
+K = temperafure-dependent thermal conductivity, cal cm-] sec  °C ,
+T = temperature, °C,
+r = radial variable, cm,
+z = vertical variable, cm,
+A = sum of (fission product) power densities (i.e., absorbed power density),
+
+-1 -3
+
+cal sec  cm
+
+The quantity A is actually a function of temperature; that is, it decreases as
+the temperature of the solid increases because the material specific volume increases
+(the density decreases). However, the definition of A (above) points out that it is
+the absorbed energy that is important. The fraction of the total gamma-ray energy
+
+that is absorbed is a function of the dimensions of the cylinder.
+3
+
+Because of the temperature dependence of A, an "exact" solution of Eq. (1)
+can be obtained only by use of finite-difference methods. However, in practical
+cases the thermal conductivity is affected much more strongly by temperature than
+the density is. For example, the effect of temperature on the thermal conductivity
+
+6 °C-], while the coef-
+
+of materials of interest is on the order of (50 to 200) x 10~
+ficient of volume expansior. is in the range (1 to 5) x 10_6 °C-I. Thus, to a first
+
+approximation, the quantity A may be assumed to be independent of temperature.
+
+This report presents a computer program (STORE) which was written to provide
+approximate solutions of Eq. (1) in terms of temperature as a function of spatial
+. location within a cylinder of arbitrary length/diameter ratio. Such a program can
+be very useful for evaluating the advantages, with respect to safety and economics,
+of storirig radicactive waste materials because it can be executed much faster than
+
+a program based on the more exact finite-difference method.
+
+Additional reports, which are now being written, will illustrate the application
+of this program, and the simpler programs.derived from it, to the calculation of
+internal temperatures in cylinders containing intermediate-level waste solids that
+are dispersed in an organic mairix (such as asphalt, polyethylene, or other plastics)
+or high-level waste, existing as calcine or as solids that are dissolved, or dispersed,
+
+in an inorganic matrix (such as a glass or a microcrystalline solid).
+2. METHODS OF SOLUTION
+
+It is convenient to express Eq. (1) in terms of a dimensionless temperature, v,
+
+defined as
+v = (T - TO)/TO 7 (2)
+where To is a convenient reference temperature. In this report, To was chosen as
+
+temperature of the surface of the cylinder. By combining Egs. (1) and (2), we
+obtain
+
+a3l af avi, AL
+}--a-r—‘:Krsl-_-j""g-z-[K'—z'}"‘T;—o, (3)
+with the boundary conditions
+(4)
+
+v=0atz=0hfor0=<r=a
+v=0atr=afor0<z<h
+
+where
+a = radius of the cylinder, cm,
+
+h = length of the cylinder, cm.
+
+Using the notation of Carslaw and Joeger,7 we define
+
+\4
+
+S
+O ) =g | Kdv, (5)
+| o O
+from which it follows that
+&R W % Kg (®
+
+On substituting the quantities of Eq. (6) into Eq. (3), we obtain
+
+1 af @] 3fe@). A _ |
+F"a'r_{r'TJ‘JrE\:'EE]JFKOTO'O' | 7
+
+Here, Ko i< the thermal conductivity of the material at temperature T.- The boundary
+
+conditions for ® are as follows:
+
+®=0atz=0hfor0<r=a
+
+~ (8)
+®=0atr=afor 0£z<h
+Further, it is convenient to define
+x = r/a, Zéz/o, L=h/a. (9)
+
+With these definitions, the solution of Eq. (7) is given by7
+
+Z(L - 2Z) 442 - I (@m - 1) mx/t] sin[(2m - )T Z/1]
+
+2 1_r3
+
+U(x,Z) = , (10
+
+ol (2m - 12T [(2m - 1) /2]
+
+and
+
+a2 |
+®=Aa U/KOTO. (11)
+
+After having calculated @, it is a straightforward process to calculate T. In
+particular we have, from Egs. (2) and (5), |
+T
+LLLE (12)
+T
+
+o
+
+1
+KoTo
+
+o
+
+0=
+
+For the case in which thermal conductivity can be expressed as a tabular function
+of temperature, we first determine @ from Egs. (10) and (1 i) and then evaluate v and T
+from Egs. (5) and (12). To do this, we must perform the numerical integration indicated
+by Eq. (5) in order to calculate a fable of ® as a function of v. We then obtain v by
+quadratic interpolation in this table with the known value of ®. Calculations are
+
+performed by program STORE.
+
+There are two special cases of considerable importance in radioactive waste
+storage: the case in which thermal conductivity is a linear function of temperature
+
+and the case in which the thermal conductivity is constant.
+
+When thermal conductivity is a linear function of temperature, we require two
+thermal conductivities at two temperatures, (T], K‘) and (T2, K2), from which we
+
+obtain
+
+K=Ko[1+b(T-To)] , (13)
+
+. Ky Ty =T - Ky (T, -T)
+o (T2 - T\]) .
+
+Ky=-K
+
+b = 2 ]
+KO (T2 - T])
+] v v bTov2 |
+®=-K-o- JoKdv= Jo (l+bTov)dv=v+ 5 (14)
+
+In this case, the value of ®is knownand vand T - T0 can be calculated from the
+
+relationships
+
+v=[/T+26T,8 - 11/bT, (15)
+
+T-T=L/1T25T;a-1]/b. (16)
+
+o
+
+By replacing v by (T - To)/To and using the definition of K as a linear function of
+
+temperature to eliminate b from Eq. (14), we obtain
+
+- K+ K _
+alx, 7) = (T To) o} _KAT (17)
+! T K 2 TK '
+o o co o
+where the average thermal conductivity, K, at the two temperatures is
+_ K+ Ko
+K= 5 (18)
+and we have defined
+AT=T-T_. (19)
+
+On replacing ®(x, Z) on the left-hand side of Eq. (17) by its value from Eq. (11),
+
+we obtain
+
+A= . | (20)
+
+Equation (20) is quite similar to that for thermal diffusion in an infinite cylinder,
+
+namely,
+(21)
+
+This equation may be derived in a manner analogous to that described, for example,
+by McAdcms,S except that K would be a linear function of temperature rather than
+a constant. Equation (21), while strictly applicable only to an infinite cylinder, is
+frequently used and yiélds a rather accurate estimate of the specific power, A, as a
+function of AT, providing that the cylinder is long (i.e., a cylinder with a length/
+
+diameter ratio in excess of about 3 or 4).
+Equations (20) and (21) imply that for an infinitely long cylinder we have
+=1/4. (22)
+
+The quantity U, calculated in program STORE, has values of 0.201, 0.245, 0.249,
+and 0.250 for cylinders of Iengfh/dicme’rer-rcfios of 1, 2, 2.5, and 5, respectively.
+Thus, as expected, Eq. (21) overestimates the AT for a given value of A, but to a
+significant extent only if the length/diameter ratio is less than 2. In connection
+with the mathematical reduction of Eq. (20) to Eq. (21), we note that, at the center
+
+of a cylinder, namely at x =0 and Z = 4/2, Eq. (10) reduces to
+
+N
+
+L 32 sin L(2m - 1) 1/2] -
+u(o, 4/2) = —8-1 -5 2 5 1 . (23)
+w f=l (2m - DT [(2m - 1) /] ]
+
+It can be shown that
+
+Lim i sin LZm - 1 /2] Lg—z [1 --2—‘£] . (24)
+m=1 (2m - 1) Io [(2m - 1) ﬂc/h]J
+
+£ — @
+(a/h— =)
+Thus, for a/h << 1, we would obtain Eq. (21) from Eq. (20).
+
+The simplest calculations involve a constant thermal conductivity. In this
+
+case, we solve for (T - To) by the procedure
+T-T
+o
+T
+o
+
+o 2
+=@=Aa U/KoTo : (25)
+
+3. INPUT STATEMENTS
+
+While program STORE properly accounts for the variation of thermal conductivity
+with temperature, it does not describe the variation of A [see Eq. (1)] with temperature.
+The power density decreases as the specific volume increases, that is, as the density
+of the material decreases. Use of this program (or programs for the simpler relation-
+ships between thermal condu;:fivi’ry and temperature) is advantageous because the -
+execution time is significantly shorter than that of a program based on the more ac-
+
+curate finite-difference equations.
+The first three READ statements are:
+READ 9001, NR, NZ, NOM
+READ 9011, (RT), I=1, NR)
+READ 9011, (Z(J), J=1, NZ)
+9001 FORMAT (1615)
+9011 FORMAT (16 F5.3)
+
+Here
+NR is the number of relative-radius units at which output data are to be printed.
+
+The program is set for NR = 17 and for the values described below.
+
+NZ is the number of vertical units at which output data are to be printed. A
+
+reasonable number is in the range 20 to 45.
+
+NOM is the number of terms to be used, instead of an infinite number, in evaluating
+U(x, 2), Eq. (10). We have used as many as 100 and as few as 5; in general,
+
+a value in the range 10 to 20 will be adequate.
+R() are the NR radial positions at which data are printed. Output formats
+carry headings of 0.0 (corresponding to the centerline of the cylinder),
+0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.60, 0.7G,
+0.80, 0.90, 0.95, and 1.0. Thus, the output tables will list temperatures,
+and other values, for the centerline and for distances of 5, 10, 15, 20,
+25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 95, and 100% of the distance from
+the centerline to the wall. If these 17 values are not used, then certain
+
+format statements will have to be changed.
+
+Z(J) are the distances, in radius units, from the top or the bottom of the cylinder.
+Convenient values are 0.0, 0.005, 0.01, 0.02, etc., corresponding to locations
+on the top (or bottom) surface followed by distances of 0.005 radius, 0.01
+radius, etc., into the cylinder from the top (or bottom). The last value of
+Z(J)), namely Z(NZ), is used as the cylinder height/radius ratio. Thus,
+if NZ = 25 and Z(25) = 25., then the length of the cylinder is 25 times that
+
+of the radius.
+
+Most of the values of Z(J) should correspond to relative heights of less
+
+than one-half the cylinder height. About the fourth from the last value of
+Z(J) should be the half-cylinder height [i.e., 12.5 in the above example .
+The sub#equent two values should be on the order of 0.9 times Z(NZ) and
+0.95 times Z(NZ), respectively. These values are used to check for passage
+beyond the midplane of the cylinder; their judicial choice minimizes un-
+necessary duplication in the calculation of temperatures beyond the mid-
+plane. In the example above, it would be appropriate to use 30 or even
+
+40 horizontal spacings for Z(J) < 12.5 followed by the four vcﬂues 12.5,
+22.5, 24.0, and 25.0. |
+
+it should be noted that the above READ statements are entered only once, re-
+gcrdléss of how many calculational cases are to be performed. Thus, whether the
+radius of the cylinder is subsequently set to 0.1, 5.0, 25.0, or 100.0 cm, all the
+calculations will be performed at the centerline and, for example, 5%, 10%, efc., |
+
+out toward the surface.
+10
+
+Program STORE uses thermal conductivity as a tabular function of temperature.
+This table, which is read only once and is used for all cases to be calculated, is
+
+entered as follows:
+READ 9021, TP(NT), TK(NT)
+9021 FORMAT (8E10.4)
+
+One t‘emperafure, TP(NT), and its thermal conductivity, TK{NT), are punched on
+a card, at 50°C intervals as the program is now written. DIMENSION allows a
+maximum of 99 such pairs of values. At the end of the table, any negative floating-
+point number, such as - 1.0, is entered in the TP(NT) field (columns 1 - 10) to
+indicate the end of the table. The temperature interval 50.0°C was chosen because
+it is cppropriofe’i& materials heated to temperatures in the range 0.0 to 3000°C or
+higher. This interval is specifically involved in the integration shown in Eq. (5) for
+evaluating @ as a function of v. Since it occurs in only a few statements, the program
+
+could be modified fairly easily.
+
+In addition to the READ statements already described, there is one READ state-
+
+ment required for each case to be calculated, namely,
+READ 2021, A, RAD, TINT, TO
+
+Here
+
+A is the internal (absorbed) power density in cal sec_] cm-3, as in Eq. (1).
+Values in the range 0.1 to 0.8 are significant in connection with high-
+
+level radioactive wastes from nuclear fuel processing.
+RAD is the cylinder radius, cm.
+
+TINT is the temperature interval at which temperature profiles are desired. For
+example, if the temperature difference (T - To) is expected to be on the
+order of 100°C, then TINT might be assumed to be 5. or 10., corresponding
+to the radial and vertical locations of temperatures spaced 5 or 10°C
+
+apart.
+11
+
+TO is the surface temperature, °C or °K, whichever is convenient.
+
+TKO is the thermal conductivity of the material at To’ cal cm-] sec  °C
+4. EXECUTION TIMES AND OUTPUT
+
+Each of the three programs (see Appendix A), namely, STORE, TKLIN (when K
+is a linear function of T), and TKCON (when K is constant), has been executed many
+times on the [BM/360-75 at ORNL to calculate temperature profiles in cylinders
+containing high- or intermediate-level radicactive wastes generated by the processing
+of nuclear fuels. Typically, the programs require 30 to 40 sec for compilation. De-
+pending primarily on the number of temperatures at which profile data are desired,
+TKCON and TKLIN require 1 to 10 sec per case. Program STORE has a longer
+execution time, again depending (but less strongly) on the. number of temperatures
+at which profile values are required; it generally requires 5 to 30 sec per case. For
+comparison, a more accurate evaluation of Eq. (1), based on the use of finite-difference
+equations, a grid of 30 radial divisions, 120 vertical divisions, and the near-minimum
+of 500 iterations, requires on the order of 5 min with FORTRAN 1V, level H execution
+under optimum timing. The time savings of TKCON, TKLIN, and STORE are thus
+
+rather significant, while the loss of accuracy is not very great, as described below.
+
+Output from STORE includes a table (Table 1) of NZ times NR values of U
+[Eq. (10)], a table (Table 2) of temperatures above the surface temperature, (T - To),
+and a table of ® values. Output also includes a table (Table 3) of distances, in
+radius units, measured from the bottom or the top of the cylinder, where heating above
+the surface temperature occurs by multiples of the quantity TINT. Finally, each
+program outputs a table of the number of iterations required to obtain each multiple
+of TINT at each radial location. The maximum number of such iterations in the
+studies reported here was 20; usually, however, this number did not exceed 2. In
+addition to the tables just mentioned, program STORE outputs a table of values for
+T, K, ® XTA, XTB, and XTC [where T, K, and ® have been defined previously and
+XTA, XTB, and XTC are the constants used to represent T as a quadratic function
+HETGHT
+
+(Z/A)
+
+0.0
+0.00%
+0.010
+0.015
+0,020
+0,025
+0.030
+0.040
+0.050
+0.060
+0.070
+0.080
+0.090
+0.100
+0.120
+0.140
+0.160
+0.180
+0.200
+0.250
+0.300
+0.350
+0,400
+‘0.450
+0.500
+0550
+0.600
+0.700
+0.800
+0.900
+1.000
+1.250
+1.500
+1.750
+2.000
+2.250
+2.500
+3.000
+4.000
+5,000
+
+Table 1. Example of Output of the Dimensionless Quantity U [Eq. (10)] ot Grid Points
+
+THC DIMENSIONLESS UlIesJ) FROM WHICH WE CALCULATE THETA(I.J)e VI(Is+J)+ AND
+THE BESSEL FUNCTION SUMMATION.
+VALUES OF THE RELATIVE DISTANCE {(R/A) FRUM THE CYLINDER AXIS ARE GIVEN
+
+0.00
+
+50
+
+TERMS ARE USED IN
+
+0.05 .
+
+0.0
+
+D+00}
+0.205
+0.N038
+0.010
+0.213
+Q.016
+0.021
+0.025
+0.030
+0.035
+0240
+0.0644
+0,049
+0.0b57
+0.066
+Q074
+0.081
+0.089
+0.1006
+D121
+0.135
+0.147
+0.15%
+0.168
+0.177
+0.185
+0.199
+0.209
+0.21R
+0.225
+0.236
+D.242
+04245
+0.2647
+0.248
+J.2438
+Ne247
+D225
+0.0
+
+0.10
+
+0.0
+
+0.0U03"°
+
+0.005
+0,008
+0.010
+0.013
+0.014
+0.020
+0.025
+0.030
+0.035
+0.039
+0.044
+0.048
+0.057
+0.065
+0.073
+ND.081
+0.088
+0.135
+0.120
+0.134
+0.146
+0.158
+0.167
+0.176
+0.184
+N.197
+0.208
+0.216
+0.223
+0.234
+0.240
+0.243
+0.245
+0.246
+0.246
+0.245
+0.223
+0.0
+
+0.15
+
+0.0
+
+0.003
+0.20%
+0.008
+0.010
+0.013
+
+.0.015
+
+0.020
+0.025
+0.030
+0.035
+0.039
+0.044%
+0.048
+0.056
+0.065
+0.072
+0.080
+0,087
+0.104
+0.119
+0.133
+0.145
+0.156
+0.166
+0.174
+0.182
+0.195
+0.206
+0.214
+0.220
+0.231
+0.237
+0.240
+0.242
+0.243
+0.243
+0.242
+0.220
+0.0
+
+0.20
+
+0.0
+0.003
+0.00%
+0.008
+0.010
+0.013
+0.015
+0.020
+0.025
+0.030
+0.034
+0.039
+04043
+0.047
+0.056
+0.064%
+0,072
+0.079
+0.086
+L0.103
+0.118
+0.131
+0.143
+0.153
+0.163
+0.172
+0.179
+0.192
+0.202
+0.210
+0.217
+0.227
+0.233
+0.236
+0.238
+0.238
+0.239
+0.238
+0.217
+0.0
+
+0.25
+
+o.o
+
+0.003
+0.G05
+0.008
+0.010
+0.013
+0.015
+0.020
+0.02%
+0.029
+0.034
+0.038
+0.042
+0.047
+0.055
+0.063
+0.070
+0.078
+0.085
+0.101
+0.115
+0.128
+0.140
+0.150
+0.160
+0.168
+0.175
+0.189
+0.198
+
+04206
+
+0.212
+0.222
+0.227
+0.231
+0.232
+0,233
+0.233
+0.232
+0.212
+0.0
+
+0.30
+
+0.C
+
+0.003
+0.005
+0.007
+0.010
+0.012
+0.015
+0.919
+0.02%
+0.029
+
+0.033
+
+0.037
+0.0642
+0.046
+0.054
+0.061
+0.069
+0.076
+0.083
+0.099
+0.113
+0.125
+0.137
+0.147
+0.156
+0.164
+0.171
+0.183
+0.192
+0.200
+0.206
+0.216
+0.221
+0.224
+0.225
+0,226
+0.226
+0.225
+0.206
+0.0
+
+0.35
+
+0.0
+
+0.002
+0.005
+0.007
+0.010
+0.012
+0.014
+0.019
+0.023
+0.028
+0.032
+0.036
+0.040
+0.045
+0.052
+0.060
+0.067
+0.074
+0.081
+0.096
+0.109
+0.122
+0.133
+0.142
+0.151
+0.159
+0.165
+0.177
+0.186
+0.193
+0.199
+0.208
+0.213
+0.216
+0.217
+0.218
+0.218
+0.217
+0.199
+0.0
+
+0.40
+
+0.0
+0.002
+0.005
+0.007
+0.009
+0.012
+0.014
+0.018
+0.023
+0.027
+0.031
+0.035
+0.039
+0.043
+0.051
+0.058
+0.065
+0.072
+0.078
+0.093
+0.106
+0.117
+0.128
+0.137
+0.145
+0.153
+0.159
+0.170
+0.178
+0.185
+0.190
+0.199
+0.204
+0.207
+0.208
+0.209
+0.209
+0.208
+0.190
+0.0
+
+0.45
+
+0.0
+
+0.002
+0.005
+0.007
+0.009
+0,011
+0.013
+0.018
+0.022
+0.026
+0.030
+0.034
+0.038
+0.042
+0.049
+0.056
+0.063
+0.069
+D0.0T75
+0.089
+0.101
+0.112
+0.122
+0.131
+0.139
+0.146
+0.152
+0.162
+0.170
+0.176
+0.181
+0.189
+0.19%
+0.196
+0.198
+0.198
+0.198
+0.198
+
+D.181
+
+0.0
+
+IN THE
+
+0.50
+
+0.0
+
+0.002
+0.004
+0.007
+0.009
+0.011
+c.013
+0.017
+0.021
+0.025
+0.029
+0.033
+0.036
+0.040
+0.047
+0.053
+0.060
+0.066
+0.072
+0.085
+0.096
+0.107
+0.116
+0.124
+0.131
+0.138
+0.143
+0.153
+0.160
+0.166
+0.171
+0.178
+0.182
+0.185
+0.186
+0.186
+0.187
+
+00111'
+0.0
+
+T(14J).
+FIRST R
+
+0.60
+
+0.0
+
+0.002
+0,004
+0.006
+0.008
+0.010
+0.012
+0.015
+0.019
+0.022
+0.026
+0.029
+0.032
+0.036
+0.042
+0.048
+0.053
+0.058
+0.063
+0.075
+0.085
+0.093
+0.101
+0.108
+O.114
+0.119
+0.124
+0.132
+0.138
+0.143
+0.146
+0.153
+0.156
+0.158
+0.159
+0.159
+0.159
+0.159
+0.146
+0.0
+
+OW OF
+
+0.70
+
+0.0
+
+0.002
+0.003
+0,005
+0.007
+0.008
+0.010
+0.013
+0.016
+0.019
+0.022
+0.025
+0.028
+0,035
+0.040
+0.045
+0. 049
+0.053
+0.062
+0.070
+0.077
+0.083
+0.088
+0.093
+0.097
+0.100
+0.106
+0.111
+O.114
+0.117
+0.122
+0.124
+0.126
+0.126
+0.127
+0,127
+0.126
+0.117
+0.0
+
+THIS TABLE
+0.80 0.90
+0.0 0.0
+0.001 0.001
+0.003 0.002
+0.004 0,003
+0.005 0.003
+0.007 0.004
+0.008 0,005
+0.010 0.006
+0.013 0.008
+0.015 0.009
+0.017 0.010
+0.019 0.011
+0.021 0.013
+0.023 0,014
+0.027 0.016
+0.030 0.018
+0.034 0.019
+0.037 0.021
+0.039 0,022
+0.046 0.026
+0.051 0.028
+0.056 0.031
+0.060 04033
+0.06&4 0,035
+0.067 0.036
+0.070 0.038
+0.072 0.039
+0.076 0.041
+0.079 0,042
+0.081 0,043
+0,083 0.044
+0.086 0.046
+0.088 0.067
+0.089 0.047
+0.089 0.047
+0.090 0.047
+0.090 0,047
+0.089 0,047
+0.083 0.044
+0.0 0.0
+
+0.95
+
+0.0
+
+0.301
+0.001
+0,002
+0.002
+0.002
+0.003
+0,004
+0.004
+0.005
+0.006
+0.006
+0.007
+0.008
+0.009
+0.010
+0.010
+0.011
+0.012
+0.01%
+0.015
+0.016
+0.017
+0.018
+0,019
+0.019
+0.020
+0.021
+0.022
+0.022
+0.023
+N.023
+0.024
+0.024
+0.024
+0.024
+0.02%
+0.024%
+0.023
+0.0
+
+¢l
+HELIGNT
+IN
+RADIUS
+
+UNITS
+
+{z/4)
+
+0.0
+
+V.05
+D.010
+0.01%
+0.020
+0.025
+Q0.830
+Qe V&1
+0.050
+0,000
+0.070
+0,030
+0.0939
+0.1a0
+D.120
+0.140
+0,160
+0.1390
+0.2N0
+Ne2 5D
+0,300
+0.350
+0.400
+0.4%0
+0.500
+0550
+Ne600
+0.700
+G.800
+0.900
+l.100
+l.250
+l.bOU
+1. 750
+24000
+24250
+2.500
+3.0
+4. G1))
+SC.OL"\)
+
+Table 2. Example of Output of Temperatures Above the Surface Temperature at Grid Points
+
+0.35
+
+TEMPERATULS ABOVE THE SURFACE TEMPERATURE. THE CYLINDER ODIAMETER IS
+INTERNAL HFAT SUURCE IS 2.00E-01 CALORIES/CM&®3/SEC,
+30910.6 BTU/FT*¢3/HR
+
+15.2 CM.
+
+B8.37E-01 WATTS/CMEe]
+
+AND L .41E 02 MEVSLURIES/CM**3,
+
+Ja45
+
+TAE STRENGTH 3F THE
+SOURCE STAENGTH IN UTHER UNITS 1S
+VHE TAEIMAL CONDUCTIVITY COEFFICIENT AT THE SURFACE TEMPERATURE OF
+VALUES OF THFE RclLATLIVE DESTANCE (R/ZA) FROM
+0«N0 Ve G.10 ° 5,15 0.20 0?25 0.32
+0.0 0,0 0.0 0.0 0.0 0.0 0.0
+5.4 bk Sel 5.3 5.3 542 Sel
+1.9 107 10.7 10.6 10.5 10.3 10.1
+15.0 1640 15.9 15.3 15.6 15.4 15.1
+21.2 21.1 21.0 20.9 20.6 20.3 20.0
+263 2042 26.1 25.9 25.b6 25.2 24.8
+3l.3 3147 Al.1 30.9 30.5 30.0 29.5
+41.1 41 0 40.8 “0.5 40-0 39.4 38.7
+505 50 .5 5042 49,43 49,3 48,5 47.6
+$9.7 5948 5943 58,8 58.2 57.3 She?
+b8eb 63453 HHel 67.6 6648 65.R 64.6
+T1.2 7.1 76.7 16.1 75.2 14.1 72.7
+85.06 5.4 35,0 94,3 83.4 82.1 80.5
+9347 93,5 3.1 2.3 9l.3 R9 .9 88.2
+109.2 1049.9 193.5 107.6 106.4 104.T 102.7
+123.8 123.6 123.0 122.0 120.6 118.7 116.4
+137.7 137.4 136.3 135.6 134.,0 132.0 129.4
+I50,3 150.95 14%.8 143.5% 146.8 144.5 1l4l.6
+163.1 162.3 162.0 160.7 158.7 156.3 15%3,2
+1912 1972.7 149.9 1A8.3 186.0 183.0 179.3
+2[5-8 215.4 21“03 212.“ 209.8 206.4 20202
+237.4 236.,9 235.7 233.6 230.7 226.8 222.1
+2563 255.9 2%4.5 252.2 249.0 244.8 239.5
+2729 2724 211.0 268.5 265.0 260.5 254.8
+287.6 28T.1 235.5 282.9 279.1 274.3 263.3
+300.6 3I00.0 2798.4 295.6 291.6 2B6.5 280.1
+11240 3lle% 309.6 396,T 3092,6 297.2 290.5
+331.0 330.3 328.4 325.3 320.8 315.0 307.8
+345.3 345.1 333,1 339,7 335.0 328.8 321.2
+35744 356.7 354.6 351.1 346.1 339.7 331.7
+3665 365.7 363.6 359,9 3534,8 348.1 339.9
+361.4 380,77 37B.4 3I74.5 369.1 362.1 353,4
+L347.6 38:.8 336,44 382.4 376.9 3I69.6 360.7
+3194,0 393,2 330.8 586.T 381.1 373.7 364.7
+196.3% 395,.,5 373,101 399.0 393,33 375.9 366.8
+3974 39646 394.2 390.1 334.4 376.9 367.9
+3974 396.9 394.5 390.4 334,77 377.2 368.1
+396.3  395.5 393,01 389.0 343.3 375.9 366.8
+366e5 3I65.T 353.6 357.9 354.8 348.1 339.9
+0.0 ) 0.0 0.0 0.0 0.0 0.0
+
+0.50
+
+200.
+
+0.60
+
+0.70
+
+0.80
+
+THE CYLINDER AXIS ARE GIVEN IN THE FIRST ROW OF THIS TABLE
+
+0.90
+
+18.3
+
+0.95
+
+QLN VM ANHWNE=O
+e & a2 & 9 & 4 & &
+DL OVN DO e~
+
+13.0
+
+DEGREES C IS 5.63E-03 CAL/LM/SEC/DEG C.
+
+1.03
+
+4 5 & & 8 & 8 8 8 0 ¥
+
+ODO0OCOO0OR20000RO0COOROODROO002000000D0QR0000
+
+[=N=RoReleNoleNole oo oo NololeleloNoloNelo oo Yo oo No oo ool e R Re No o NNl
+
+e 4 & & 8 B ¢ 2 & & & 8 B 2 B
+
+£l
+TEMP
+
+DES Co
+
+50.
+100,
+1504
+20
+250,
+300 L]
+350,
+
+DISTANCL Sy
+
+Table 3. Example of Temperature-Profile Table
+
+IN RANIUS UNITS,
+
+MEASURED FROM THE
+
+BOTTOM
+
+OR TOP OF THE CYLINDER,
+
+THE SURFAZE TEMPERATURE BY AMCUNTS SHOWN IN THE F1RST COLUMN.
+
+VALUES OF Tuc
+
+Je00
+
+Q.049
+J.108
+VeLl79
+0.38‘5
+Jaebad
+D.933
+
+0.05
+
+0050
+Jel03
+O0.179
+0.268
+
+043834
+
+Ue95)0
+D.439
+
+RELATIVE D1STANCE (R/A) FRUM
+
+0.10
+
+V.050
+0.109
+0.130
+0.270
+0.333
+0.557
+0.857
+
+J.15
+
+D.05D
+0.110
+0. 182
+0.273
+0.394
+04569
+0.889
+
+020
+
+0.051
+O.lL1
+0.185
+0279
+0.403
+0.588
+0.942
+
+0.25
+
+0.052
+0.113
+0.189
+0.286
+O.216
+0.614
+1.026
+
+THE CYLINDER AXIS ARE GIVEN IN
+
+0.30
+
+0.053
+D.ll16
+0. 194
+0.29%
+0.434
+0.652
+1.171
+
+0.35
+
+0.054
+9.120
+0,201
+0+ 307
+0.457
+0.705
+l.494
+
+0.40
+
+0.056
+0.124
+0.210
+0.323
+0.489
+D.78T
+
+Ja65
+
+7.058
+J.129
+0.220
+D345
+Te530
+0.922
+
+0.50
+
+0.060
+0.136
+J.235
+0.374
+0.600
+1.211
+
+0.60
+
+0.068
+0.157
+0.281
+0.4T7
+0.921
+
+THE FIRST ROW OF
+
+0.70
+
+0,081
+0.197
+0,384
+0.B812
+
+THIS TABLE
+0.80 0.90
+0.111 0.242
+0.308
+0.877
+
+AT WHICH OCCUR HEATING ABDVE
+
+14!
+15
+
+of @ after Eq. (5) is integrated to evaluate ® as a function of T and K].
+
+In one test example, the thermal conductivity of a hypothetical glass
+was assumed to be a linear function of temperature up to 1000°C (see Table 4).
+Other properties were as follows: power density, 0.2 cal sec-] cm-3; radius of
+the vessel, 7.6 ¢cm (6 in. in diameter); and length/radius ratio, 25. Program TKLIN
+gave a maximum centerline temperature of 599.5°C for this example when the surface
+temperature was maintained at 200°C; execution time was 5.0 sec. For comparison,
+the maximum centerline temperature was also calculated by using a program based
+on finite-difference equations; in this program, the aensify-VS-temperqture properties
+(Table 4) were those of an alkali borate glcss.9 As the temperature increased from
+200 to 550°C, the density decreased and the specific power density decreased by
+about 3.6%. With the latter program, the maximum centerline temperature was
+found to be 564.0°C after either 1500 or 2000 iterations. After 500 and 1000 it-
+erofioﬁs the maximum calculated temperatures were 557.4°C and 563.9°C, respectively.
+
+Each 500 iterations consumed approximately 5 min of execution fime on the 1BM/360-75.
+
+As expected, TKLIN overestimates the temperature rise because it does not
+compensate for the reduction in fission product power density as the temperature
+increases. In the example described above the error is about 36°C-out of a "true"
+temperature elevation of 364°C (i.e., a 10% overestimation of the temperature rise).
+This error is small enough to be neglected in most instances, where the existence of
+only very crude specific heat data plus uncertainties in densities and thermal con-
+
+ductivities easily lead to larger errors.
+16
+
+Table 4. Physical and Thermal Properties of Hypothetical Glass Used to Obtain
+Estimates of Errors in Program TKLIN Due to Decrease in Density with
+| Increasing Temperature
+
+Thermal
+
+Conductivity . Specific Heat Density
+
+Temp ;' cal '" { cal / y
+(°C) \cmesecs®°C / ‘_g—-?él \'ems /
+50 0.00443 0.2 - ©2.313
+100 0.00483 0.2 ~ 2.305
+150 0.00523 0.2 2.296
+200 0.00563 0.2 2.288
+250 0.00603 0.2 2.281
+300 0.00643 0.2 2.275
+350 0.00683 0.2 - 2.264
+400 . 0.00723 0.2 2.253
+450 0.00763 0.2 2.239
+500 . 0.00803 0.2 2.225
+550 0.00843 0.2 2.206
+600 0.00883 0.2 2.188
+650 0.00923 0.2 2.167
+700 0.00963 0.2 2.146
+750 0.01003 0.2 2.120
+800 | 0.01043 02 2.095
+850 0.01083 02 . 2.068
+900 0.01123 0.2 2.042
+950 " 0.01164 0.2 2.017
+1000 0.01207 0.2 1.992
+1050 ~0.01252 0.2 | 1.966
+1100 0.01299 0.2 1.940
+1150 0.01348 0.2 1.914
+1200 0.01399 0.2 1.888
+1250 0.01452 0.2 . | 1.862
+
+1300 0.01507 0.2 1.836
+
+17
+
+5. REFERENCES
+
+R. L. Bradshaw, J. J. Perong, J. O. Blomeke, and W. J. Boegly, Jr., Evaluation of
+Ultimate Disposal Methods for Liquid and Solid Radicactive Wastes. VI. Disposal
+of Solid Wastes in Salt Formations, ORNL=3358 (May 1968).
+
+J. O. Blomeke, R. Salmon, J. T. Roberts, R. L. Bradshaw, and J. J. Perona, "Estimated
+Costs of High-Level Waste Management," pp. 830-843 in Proceedings of the
+
+Symposiumon the Solidification and Long-Term Storage of Highly Radioactive
+Wastes, February 14-18, 1966, Richland, Washington, USAEC, DTIE (CONF-6460208).
+
+M. N. Elliot, R. Gayler, J. R. Grover, and W. H. Hardwick, "Fixation of Radio-
+active Wastes in Glass. Part |. Pilot Plant Experience at Harwell," pp. 465-487
+in Proceedings of the Symposium on Treatment and Storage of High-Level Radio-
+
+active Wastes, 8-12 October 1962, Vienna, International Atomic Energy Agency.
+
+W. E. Clark, J. C. Suddath, et al., Development of Processes for Solidification of
+
+High-Level Radicactive Waste: Summary for Pot Calcination and Rising Level
+
+Potglass Processes, ORNL-TM-1584 (Aug. 12, 1966)..
+
+H. W. Godbee, R. E. Blanco, et al., Laboratory Development of a Process for
+
+Incorporation of Radiocactive Waste Solutions and Slurries in Emulsified Asphalt,
+
+ORNL-4003 (July 1967).
+
+W. R. Dixon, "Self-Absorption Correction for Large Gamma=-Ray Sources, "
+
+Nucleonics 8, 68 (1951).
+
+H. S. Carslaw and J. C. Jaeger, Conduction of Heat in Solids, 2d ed., Clarendon
+
+Press, Oxford, 1959; see, particularly, p. 10 and problem XVII on p. 223.
+
+W. H. McAdams, Heat Transmission, 3d ed., pp.18, 19, McGrow-H.iII, New York,
+1954,
+
+. G.W. Morey, The Properties of Glass, 2d ed., Reinhold, New York, 1954;
+
+see data for 10.6 wt % Li20/26.4 wt % N020/34.4 wt % KoO.
+18
+
+6. APPENDIX
+
+This appendix contains listings of program STORE, subroutine THERMY, and the
+two functions XINT and BIZERO. The subroutine is used to calculate the coefficients
+Ai' Bi' and Ci' which will permit the determination of a dependent variable Y when
+
+the value of the independent variable X is known. Thus,
+) ,
+Y=A B.X + C.X" . (A-1)
+
+For example, by use of Eq. (12) we obtain @ as a function of T. Since we wish to
+determine T as a function of 8 we use Eq. (A-1) to solve for the coefficients in the
+equation
+T= Ai + Bi®+ci®2 .
+FUNCTION XINT(Y, L, H) is used to obtain the integral of Eq. (12), while
+FUNCTION BIZERO(X) is used to evaluate the terms Io of Eq. (10). .
+
+&
+
+OOOOOOO0OO000O0O0
+
+19
+
+®FTNyEWGyL S
+PROGRAM STORE
+R S s T R T I P T T TR T LS
+ek ererx  THIS 1S PROGRAM STORE  as¥sxkdxsk
+e g Ak e ke A gl ol g o g ot ol o Rl ek e el il
+THIS PROGRAM CALCULATES TEMPERATURE AS A FUNCTION OF POSITION
+
+9001
+9011
+9021
+
+9101
+
+9111 FORMAT(BlIH THE
+9121 FORMATI(83H
+
+9131 FORMATI(46H
+9141 FORMAT({74H
+IRGE FOR DIMENSIUN./42H
+9151 FORMAT(32H
+
+9201
+
+WITHIN A CYLINDER OFf GLASS CONTAINING AN INTERNAL HEAT SOURCE,
+
+SUCH AS FISSION PRODUCTS.
+IS A TABULAR
+A CONSTANT,
+
+THE COEFFICIENT OF THERMAL CONDUCTIVITY
+THE SURFACE TEMPERATURE IS
+OF
+
+FUNCTION OF TEMPERATURE. .
+TO. THIS TEMPERATURE IS A MAJDR FACTOR IN CONTROL
+
+THE INTERNAL TEMPERATURE.
+
+THE PROGRAM WILL HANDLE MORE THAN ONE CASE AT A TIME,
+THE SAME VALUES OF NR,
+IN ONLY ONCE PER COMPUTER J4OB.
+
+READ
+DIMENSION
+DIMENSION
+DIMENSION
+DIMENSION
+DIMENSION
+DIMENSION
+DIMENSIGN
+DIMENSION
+DIMENSION
+DIMENSION
+DIMENSION
+DIMENSION
+DIMENSION
+DIMENSION
+
+‘DIMENSION
+
+NZ, NOMy R(I)s AND 2(J). THESE ARE
+DZDT(20,50)
+
+IPRNT(50)
+
+LCOUNT(20+50)
+Q1(200),Q2(200),Q3(200),Q4(200),Q5(200),Q6(200)
+Q7(200,20}),Q8(50)
+
+R{50)
+
+SAVEZ(35)
+
+T(20450)yTCALC(20450) yTHETA(20450),THETAC(20,450),TT(50)
+TK(100),TP(100),VT(100)«THT(100)
+
+TNC(100), TKN(100)
+
+U(20,50)
+
+V{20,450)sVCALC(20,450)
+
+XT(100) 4XTA(100)+XTB(100) +XTC(100}
+
+Y{100}
+
+Z(50)42ZCALC(20,50)
+
+TYPE DOUBLE Q3+,Q4925+9Q69Q7+ARG1 yARG24PI,PI3,VIOL,VIO24BIZERD
+DATA (PI=3,14159265359),(PI3=31.0062766803)
+
+PI=3.1415927
+
+PI*x%3=31,0062767
+
+FORMAT(1615)
+
+FORMAT(16F5.3)
+
+FORMAT{8E10.4)
+
+FORMAT(81H
+
+THE NUMBER OF RADIAL POSITIONS EXCEEDS THAT FOR WHICH
+
+LTHIS PROGRAM WAS WRITTEN.})
+
+NUMBER OF HEIGHT POSITIONS EXCEEDS THAT FOR WHICH
+
+LTHIS PROGRAM WAS WRITTEN.)
+
+THE NUMBER OF TERMS IN THE BESSEL FUNCTION SUMMATION E
+
+LXCEEDS THAE OIMENSION OF QT7.)
+
+THE TEMPERATURE INTERVAL HAS BEEN SET TO 0.0)
+THE NUMBER OF TEMPERATURE PROFILES REQUESTED IS TOO LA
+THE VALUE OF TINT SHOULD BE INCREASED.)
+THE CALCULATED VALUE OF TIPRNT(yI2,59H) EXCEEDS 17, PGS
+
+1SIBLY BECAUSE TINT HAS BEEN SET TOO SMALL.)
+
+FORMAT(
+1RE.
+
+B83H1 HEIGHT
+THE CYLINDER DIAMETER -IS4F8.1,
+2TRENGTH OF THE INTERNAL HEAT SOURCE IS+1PE9.2
+3/SECy+ES.2
+40THER UNITS IS,0PF9.14+18H BTU/FT*#%3/i4R
+S5CM%x%3,/81H
+
+TEMPERATURES ABOVE THE SURFACE TEMPERATU
+4H CM./ 58H IN THE S
+
+20H CALORIES/CM%%3
+SOURCE STRENGTH IN
+AND,1PE9.2,18H MEV%CURIES/
+THE THERMAL CONDUCTIVITY COEFFICIENT AT T
+
+y 12H WATTS/CM*%3/48H RADIUS
+
+UNITS
+
+6HE SURFACE TEMPERATURE OF,0PF6.0, 13H DEGREES C ISs1PE9.2, 18H CAL
+T7/CM/SEC/DEG C./1HO)
+9211 FORMAT(120H VALUES OF THE RELATIVE DISTANCE (R/A) FROM TH
+
+1E CYLINOER AXIS ARE GIVEN
+
+IN THE FIRST ROW .OF THIS TABLE
+
+2130HO (Z/A) 0.00 0.05 0.10 0.15 0.20 0.25 0.30 O.
+335 0.40 0.45 0.50 0. 60 0,70 0.80 0.930 0.95 1.00
+4 /1HO}
+
+.9221 FORMAT(120H
+
+VALUES OF THE RELATIVE DISTANCE (R/A) FROM TH
+
+BUT ALL HAVE.
+20
+
+1E CYLINDER AXIS ARE GIVEN IN THE FIRST ROW OF THIS TABLE /
+335 0.40 045 0.50 0.60 0.70 0.80 0.90 0.95 1.00
+4 [1HO)
+
+9231 FORMAT{F7.3,17F7.1)
+
+9241 FORMAT(120H1 TEMP DISTANCES, IN RADIUS UNITS, MEASURED FRO
+1M THE BOTTOM OR TOP OF THE CYLINDER, AT WHICH QCCUR HEATING ABQVE/
+2120H DEG C. THE SURFACE TEMPERATURE BY AMOUNTS SHOWN IN THE
+3 FIRST COLUMN. /)
+
+‘9251 -FORMAT(FH6.093Xy17FT.3)
+
+OO0
+
+9261 FORMAT(TX,17(1542X))
+
+9271 FORMAT(1H1)
+
+9281 FORMAT(37HOTHE EXECUTION TIME FOR THIS CASE WASsF7.1l, 8H SECONDS)
+
+9291 FORMAT(315,5E15.5)
+
+9301 FORMAT( 91HIHEIGHT THETA, A FUNCTION OF RELATIVE TEMP V,WHE
+IN THE SURFACE TEMPERATURE IS KEPT AT,F6.,0/ 58H IN THE S
+2TRENGTH OF THE INTERNAL HEAT SOURCE ISyF8.5y 20H CALORIES/CM*#%3/SE
+3CypF8.5y 12H WATTS/CM*®3/ 48H RADIUS SOURCE STRENGTH IN OTH
+4ER UNITS I1SeF9.1, 18H BTU/FT#*¥3/HR ANDyF9.1, 18H MEV®CURIES/CM%*%3
+5./ 54H UNITS THE THERMAL CONDUCTIVITY COEFFICIENT ATsF6.0¢
+6 13H DEGREES C 1S.F8.5, 18H CAL/CM/SEC/DEG C./1HD)
+
+9311 FORMAT(FT7.342Xs17F7.3)
+
+9321 FORMAT( 95HIHEIGHT THE DIMENSIONLESS U(1,J) FROM WHICH WE C
+LALCULATE THETA(I,J}y V(I4J)s AND T{I,J4}./15H 2 [3449H
+2 TERMS ARE USED IN THE BESSEL FUNCTION SUMMATION.)
+
+9331 FORMAT(8EL15.8)
+
+9341 FORMAT(24H1TO HAS BEEN SET TOO LOW)
+
+9351 FORMAT(45HLTO HAS NOT BEEN SET TO AN INTEGER TIMES 50.0)
+
+9361 FORMAT(Fl0.04F10.6,F10.543E16.8)
+
+9371 FORMAT{THLTHETA{,I241Hys12+2H}=4F6.3)
+
+9381 FORMAT{1HO)
+
+9391 FORMAT({15F6.0)
+
+9401 FORMAT(FT.3,17F7.2)
+
+9411 FORMAT(FT.3,17F7.3)
+
+READ 9001 yNRs NZ,»NOM
+
+RADIAL COORDINATE/RADIUS OF CYLINDER
+HEIGHT COORDINATE/RADIUS OF CYLINDER
+
+R(I) IS THE RELATIVE RADIUS
+Z(J) IS THE RELATIVE HEIGHT
+
+IF(NR-17)21,21,11
+11 PRINT 9101
+GO TO 4001
+21 IFINZ-50)41l,41,31
+31 PRINT 9111
+GU TO 4001
+41 TF(NOM=200)61+61451
+51 PRINTY 9121
+‘GO TO 4001
+61 READ 90114(R(1)yI=14NR)
+READ 9011+(Z{J)sJ=1eN2Z)
+BQ=0.0
+DO 101 L=1,NOM
+3Q=83+1.0
+QliL)=2.0%3Q-1.90
+QZ2(L)=Q1{L)*QLIL)
+QA3(LY=QLIL)I%*Q2(L)
+QalL)=QLIL)YRPI/Z({NZ)
+QS(L)=Q4(L)*R(NR)
+Q6lLY=8BIZERD(Q5{L))
+101 CONTINUE
+DO 111 J=1¢NZ
+Q8(J)=Z(JI*TZ(NZ)-Z(J}1#*0.5
+
+111
+
+121
+
+131
+
+141
+
+151
+161
+
+171
+
+181
+201
+
+211
+221
+
+231
+
+241
+
+251
+301
+
+311
+
+341
+
+361
+371
+
+381
+391
+
+401
+
+2]
+
+CONTINUE
+CONL1=4.0%Z(NZ)*Z(NZ)/PI3
+DO 121 I=1,AR
+
+Ull,41)=0.0
+
+UlINZ})=0.0
+CONTINUE
+NZ1=NZ-1
+
+00 131 J=24N2Z1
+: U{NR,yJ)}=0.0
+CONTINUE
+NR1=NR-1
+D0 221 J=24NZ1
+00 211 I=14NR1
+SuUM=0.0
+DC 201 M=1,NOM
+ARG1=Q4(MI®R(])
+ARG2=Q5(M)
+VIO2=Q6(#M)
+[F{ARG1)151,4141,151
+VIOl=1.0
+GO T0O 181 :
+IF{ARG1I-ARG2) 171,161,171
+VIOl=vIOQZ2
+GO TO 181 -
+Q7(M,I)=BIZERD(ARGL])
+VIOLI=QT7(M,I)
+- SUM=SUM#VIOL*SINIQ4{MI*Z(J))}/Q3(M)/VIO?2
+CONTINUE
+U{1+J)=Q8{J)I-CONL1%ESUM
+CONTINUE
+CONTINUE
+PRINT 9321,NOM
+PRINT 9211
+DO 231 LK=14NZ
+PRINT 93114{ZALK)}+{U(JsLK)yJ=1,NR))
+CONTINUE '
+NT=0
+NT=NT+1
+READ 9021 TP{NT) TKINT)
+[F{ITP(NT))2514241,241
+NT=NT-1
+NTEMP=NT-1
+READ 9021 4A4RAD,TINT,TO
+IF{AY4001,4001,311
+INTIME=ICLOCKF{DUMMY)
+DIA=2 .0%RAD
+AO=A/TO
+JN=0
+JN=JN+1
+[F(TO-TP{JUN))361,401,341
+IF{JUN=-1)371,371,381
+PRINT 9341
+GO TO 301
+IF{JUN-NT) 341,341,391
+PRINT 9351
+GO TO 301
+JO=JN
+TKO=TK{ J0O)
+CONZ2=A0%R AD#*RAD/TKO
+HUNIT 1=A%*4,185
+HUNIT2=A%2 ,8317%3,6%3.,9685E04
+HUNIT3=A%2611.6/3.7
+
+411
+
+421
+
+431
+
+451
+
+461
+471
+
+481
+491
+501
+
+561
+571
+581
+
+601
+611
+621
+631
+641
+651
+
+661
+671
+
+681
+691
+
+701
+
+711
+
+22
+
+JT=NT-J0+1
+JTEMP=JT-1
+JR=JT=-2
+THT(1)=0.0
+THT(2)=25.0*(TK(J0)+TK(J0+1))/TO/TKO
+Y{1)=TK(JQ)
+Y{2)=TK{JO+1)
+DO 411 II=3,JTEMP
+Y(II)=TK{I[+J0-1)
+THT(II)=XINT{Ys11,50.0)/TO/TKO
+CONTINUE
+DO 421 I[=JONT
+JK=1-J0+1
+TN(JKI=TP(I)-TO
+TKN{JK)I=TK(I)
+CONTINUE
+CALL THERMY(THTyTN:XT1XTA,XTB,XTC1JT1JTEMPl1.011-01100)
+PRINT 9271
+PRINT 9001440
+DO 431 JK=1,JTEMP :
+PRINT 9361,TN(JK),TKN(JK),THT{JK),XTAlJK).XTB(JK),XTC(JK)
+CONTINUE
+DO 581 J=14NZ
+DO 571 I=1,NR
+THETA(I'J)=AO*RAD*#2*U([,J)/TKO
+MT=0
+MT=MT+1 .
+IF(THETA(1:J)—THT(MT))461,561'451
+[F{MT-1)4T14471,451
+TEMP=THETA(I,J)-THTUMT)
+IF(TEMP+0.003)481'561;561
+PRINT 9371,1,J,TEMP
+
+GO TO 301
+[F(MT=JTEMP)5014571, 571
+NIT=MT-1
+TU1,J)=XTA(NIT) +THETALT 9 3) % (XTBINIT)#THETALL, J)#XTCINTT})
+GO0 TO 571
+T{T14J)=TN(MT)
+
+CONTINUE
+
+CONTINUE
+
+J=0
+
+TMAX=04.0
+
+J=d+l
+
+IF(J-NZ2)611,6114641
+IF(TMAX=-T(14J))621+621,601
+TMAX=T{1,yJ)
+
+GO TGO 601
+
+IF{TMAX=10.0)651,6614661
+IFMT=3
+50 TO 691
+IF{TMAX-100.0)671,:681,681
+IFMT=2 -
+GO TQ 691
+IFMT=1
+CONTINUE
+PRINT 9201;D[A1A,HUNIT1§HUNIT21HUN1T31TO:TKD
+PRINT 9211
+GO TO {701,721, 741),IFMT
+DO 711 LL=1,NZ
+PRINT 9231!(Z(LL)!(T(JILL)!lefNR,,
+CONTINUE
+GO TO 761
+
+121
+731
+741
+
+751
+761
+
+811
+821
+831
+841
+
+851
+
+861
+871
+
+1001
+1011
+1021
+1031
+1041
+
+1051
+1061
+
+1071
+
+1141
+
+1151
+
+1161
+
+23
+
+DO 731 LL=1,NZ ‘
+PRINT 9401+ (Z(LL) »{(TlJyLL)sJ=1,NR))
+CONTINUE
+GO TO 761
+00 751 LL=1,NZ
+PRINT 9411, (Z(LL)s(T(JyLL)yJd=14NR))
+CONTINUE
+
+CONTINUE
+
+PRINT 93010TO{AfHUNITlfHUNITZ,HUNIT3fTOiTKO
+PRINT 9211
+DO 811 LL=1,4NZ
+PRINT 93110(Z(LL)'(THETA(JiLL,0J=loNR))
+CONTINUE '
+IF(TINT)831,821,831
+PRINT 9131
+GO TO 4001
+DO 851 J=14NZ
+IF(T{1+4J)/TINT~50.0)851,85],841
+PRINT 9141
+GO TO 4001
+CONTINUE
+DO 871 L=1,50
+IPRNT(L)=0
+D0 861 IR=1,20
+LCOUNT(IR,L)=0
+CONTINUE
+CONTINUE
+NL=0
+20 2801 I=1,4NR
+L=l
+TCHECK=TINT
+J=0
+J=J+1
+IF(J-NZ+2)1011,1011,2801
+TEMP=T(I,J)-TCHECK
+IF{A3S{TEMP)-0.05)1021,1021,1031
+ZCALC(I, L)=Z(J)
+GU TD 17561
+IF(TEMP}1001,1001,1041
+KZ=J
+Kl=J-1
+IF(T(IfKZ)—T(IiKl))280112801'1051
+IF(T(IfK2+1)'T(IpKZ)’lO?lle?llebl
+J1=Kl1
+J2=K2
+J3=K2+]1
+GA TO 1141
+JI1=Ki1-1
+J2=K1
+J3=K2
+TERM1=(T(IrJ3)-T(11J1))/(Z(J3)-Z(J1’)
+TERMZ=AT(I,J2)=-T{T1,J1))7(2(J2)-2(J1})
+CONB=(Z(J3)=-Z(J2))/(TERMI-TERM2)
+CONA={Z(J3)+Z(J1)-CONB*TERM1)/2.0 A
+CUNC=T(IyJZ)‘(Z(JZ)—CDNA)*(Z(JZ)‘CDNA)/CUNB
+RODT=SQRT(CONB*{TCHECK-CONC))
+IF(CONB)L161,1151,1151
+DZDTUL,L)=CONB/2.0/R00T
+I T=CONA+ROOT
+GG TO 1171
+DZDT(I4L)=-CONB/2.0/R00T
+IT=CONA=-RQOOQT
+1171
+1501
+
+1511
+
+1521
+
+1531
+1541
+
+1551
+1561
+
+1571
+
+1601
+
+1651
+1661
+
+1681
+1691
+
+1701
+1711
+
+1721
+
+1751
+1761
+1771
+1781
+
+1791
+1801
+
+2001
+
+2011
+
+2021
+
+24
+
+SAVEZ(1)=1T
+LCOUNT(I,L)=0
+LCOUNT(I,L)=LCOUNT(I,L)+1
+IF(LCOUNT(I'LI—1Q1151171511y2001
+SUM=0.0
+SUMD=Q.0
+DO 1601 ™M=1,NOM
+ARGLI=Q&4(M)%R(I)
+ARGZ2=Q5(M)
+VID2=Q6(M)
+[F(ARG1)1531,1521,1531
+VI0ol=1.0
+30 TO 1561
+[F{ARGL-ARG2Y1551,1541,1551
+viol=vIOo2
+GO TO 1561
+VIO1=Q7{M, 1)
+ARG3=Q4 (M) *ZT
+lF(ABS(ARG3)—1.0E1511571,301,301
+SUM=SUM+V101*SIN(ARG3)/Q3(M)IVIOZ
+SUMD=SUHD+VIOI*COS(ARGB)IQZ(M)IVIOZ
+CONTINUE
+THETAC(I,L)=CUN2*(ZT*(Z(NZ)—ZT)*O.S-CONl*SUM)
+MT=0
+MT=MT+1
+IFITHETAC(I,L)—THT(MT))1661,1701.1651
+[F(MT-1)301,301,1681
+IE(MT-JTEMP)1691,1781,1731
+NIT=MT-1
+TCALC(I'LI=XTA(NIT)+THETAC(I,L)*(XTB(NIT)+THETAC(I,L)*
+XTCINIT))
+GO TO 1711
+TCALC (I, L)}=TN(MT)
+TEMP=TCALC{I,L)}-TCHECK
+LFCABS(TEMP)-0.05)1751,1751,1721
+ZT=ZT-TEMP*DZDT(I,L}
+KK=LCOUNT(L4L)
+SAVEZ(KK+1)=ZT
+GO TO 1501
+2CALC{T,L)=2T
+TT(L) =L*TINT
+IPRNT(L)=IPRNT(L)+1 .
+lF(1PRNT(LI-17)178111781,1771
+PRINT 9151,L
+GO TO 4001
+TCHECK=TCHECK+TINT
+IF(L-NL)}1801,1801,1791
+NL=L
+L=L+1
+GG TO 1011
+ZMIN=Z (K1)
+IMAX=2(K2)
+zI=0.5*(;MIN+zMAxl
+SUM':0.0
+SUMD=0Q0.0
+DO 2101 M=1,NOM
+ARG1=Q4 (M)*R(I)
+ARG2=Q5(M}
+VI02=Q6(M)
+IF(ARG1)2031,2021,2031
+vI01=1.0
+G0 TU 2061
+
+2031
+2041
+
+2051
+2061
+
+2071
+2101
+2151
+2161
+
+2181
+2191
+
+2201
+2211
+
+2221
+2231
+
+2241
+2301
+
+2801
+
+3021
+
+3031
+
+4001
+
+25
+
+IF{ARGL-ARG2)2051,2041,2051
+
+vIi0ol=VIOZ2
+
+GO TO 2061
+
+VIO1=QT7(M, 1)
+
+ARG3=Q4 (M)*ZT
+
+IF(ABS(ARG3)-1.0E15)2071,301,301
+
+SUM=SUM+VIOL1*SIN{ARG3)/Q3({M)/VIOZ
+CONTINUE
+
+THETAC(IsL)=CON2%(ZT%(Z(NZ)-ZT)*0.,5-CON1¥SUM)
+
+MT=0
+
+MT=MT+1
+IF(THETAC(I,L)-THT{MT))2161,2201,2151
+IF(MT-1)301,301,2181
+IF(MT-JTEMP)2191,1781,1781
+
+NIT=MT-1
+
+TCALC(IvL)*XTA(NIT)+THETAC(11Ll*(XTB(NIT)+THETAC(IvL)*
+
+XTC(NIT))
+
+GO TO 2211
+
+TCALC (I,L)=TN(MT)
+
+TEMP=TCALC(I,L}-TCHECK
+
+IF(ABS{TEMP)-0.05)1751,1751,2221
+
+IF(TEMP)2241,223142231
+
+IMAX=ZT
+
+GO TO 2301
+
+IMIN=ZT
+
+LCOUNT(I,L)=LCOUNT(I,L)+1
+
+[F(LCOUNT(1,1)-30)2011,2011,2801
+CONTINUE
+PRINT 9241
+PRINT 9221
+DO 3021 LL=1,NL
+
+NA=IPRNTI(LL)
+
+PRINT 9251y (TT(LL),» (ZCALC(J4LL) 4J=1,NA))
+CONTINUE
+PRINT 9271
+DO 3031 LL=1,NL
+
+NA=IPRNT(LL)
+
+PRINT 9261y (LCOUNT(JsLL) yd=1,NA)
+CONTINUE
+DTIME=(ICLOCKF(DUMMY)~INTIME}*1.0/60.0
+PRINT 9281,0TIME
+GO TO 301
+CALL EXIT
+END
+
+26
+
+SUBROUTINE THERMY{X,YsWsAyByCoNT4NTEMP,X0,Y0,ID)
+
+DIMENSION A(ID)B(ID),C{ID) W{ID)X(ID),Y(ID)
+IF{Y0)101,101,301 |
+101 IF(X0-X(1))121,131,141
+121 PRINT 701
+60 .T0 901
+131 Y0=Y(1)
+G0 TO 301
+141 I=1
+151 I=I+1
+IF(I-NT)171,171,161
+161 PRINT 711
+60 TO 901 -
+171 IF(X0-X(1))191,181,151
+181 YO=Y(I)
+GO TO 301
+191 IF(I-NT)201,211,211
+201 J1=1-1
+J2=1
+S J3=1+1
+G0 TO 221
+211 J1=1-2
+J2=1-1
+J3=1
+221 TERML=X{J2) :X(J3)#X(J3)=X(J3)#X(J2) %X (J2)
+TERM2=X{J 1) %X (J3)EX(J3)=-X{I3)EX(J11%X (1)
+TERM3=X(J 1) %X (J2)%X(J2)=X(J2) ¥X (J1)%X(J1)
+DELTA=TERML-TERM2+TERM3
+
+CA=(Y(J1)XTERMI-Y{J2)*TERM2+Y(J3)*TERM3)/DELTA
+
+CB={Y(J2)&X(J3)%X(J3)-Y(J3)*X{J2)*X(J2)
+1 Y (J1) X (J3)EX1J3)+Y{J3) X {J1)*X(J1)
+
+2 “Y(JL1) %X (J2) %X (J2)=-Y{J2)*X(JL)*X{J1))/DELTA
+CC=(Y(J3)%X(J2)=Y (J2)%X(J3)=Y(J3)=X{J1)+Y(J1)*X(J3)
+
+1l +Y (J2)eX(J1)=-Y(JL)%X(J2))/DELTA
+YO=CA+X0®(CB+X0*CC)
+301 DO 311 L=14NT
+W(L)=Y(L) /YO
+311 CONTINUE
+DO 401 J=1,NTEMP
+IF(J-NTEMP) 331,341,341
+331 11=J
+[2=J+1
+[3=J+2
+GO TO 351
+341 [1=J-1
+[2=3
+I13=J+1
+351 TERML=X(T2) %X (I3)%X(I3)-X{I3)%X(I12)%X(I[2)
+TERM2=X{T 132X (I3)*X{I3)—X(I3)xX(11)*X(I1)
+TERMI=X(IL1)EX{I2)%X(I12)-X(12) X (I1)*X(I1)
+DELTA=TERM1-TERM2+TERM3
+
+A(J)={W(T1)*TERMI-W(I2)*TERM2+W(I3)%TERM3)/DELTA
+
+BIJI=(W{I2)#X(I3)%X(I3)—W(TI3}%X(12)%X(12)
+1 —WlI LY EX (I3 XT3V +WlI3)EX{TIL)*X(1])
+
+2 FH I EX(I2)#X(I2)=WlI2)*X(T1)*X(11))/DELTA
+
+ClI)=(W(I3)eX(I2)=W(T2)*X(I3)-W(I3)*X(I1)
+
+1 +W I EX(I3)+W(I2)X(IL)=W(IL)*X(12))/DELTA
+
+401 CONTINUE
+
+701 FORMAT{49H1 TO HAS BEEN SET TOO LOW FOR THE PRESENT PROGRAM)
+711 FORMAT(50H1 TO HAS BEEN SET T0O HIGH FOR THE PRESENT PROGRAM)
+27
+
+RETURN
+901 CALL EXIT
+END
+
+FUNCT FON XINT(YyLgH)
+DIMENSION Y{200)
+K=L
+KP=K/2%2
+NDIFF=KP-K
+IFINDIFF)1,2
+2 K=K-1
+1 ODD=0.0
+EVEN=0.0
+KM2=K-2
+DO60I =3 ,KM2,2
+60 0DD=0DD+Y (1}
+KMl=K-1
+DO621=24KM1,2
+62 EVEN=EVEN+Y(])
+XINT=H/3.0%(Y (1) +Y(K)+4, 0%EVEN+2.0%00D)
+IF(NDIFF) 3,4
+4 XINT=XINT+ H *{Y{K)+Y(K+1))/2.0
+3 RETURN
+END
+
+FUNCTION BIZERD(X)
+CALCULATES MODIFIED BESSEL FUNCTION OF THE FIRST KIND, I0(X), FOR (=3.759X4IN
+CALCULATES BY SERIES 9.8.1 AND 9.8.2 OF N.B.S. HD3K OF MATH FUNCNS (1964)
+TYPE DOUBLE S,TyXsY¥,BIZERD
+Y=X
+[IF(Y+3.75)99,3,3
+3 IF(3.75-Y)844,44
+C***"‘ _‘3. 75 u,LE. XCLE 03075
+4 T=Y/3.75
+T=T*T ‘
+BIZERD=((({(T*.0045813+.0360768)%T+,2659732)%T+1,2067492)%T
+1 +3.,0839424)%T+3,5156229) #T+1.
+RETURN
+Cx%%8 3,75.LT.X
+8 T=3.75/Y
+S=CL00((T*,00392377-.01647633)%T+.02635537)1%T—.02057706)%T
+1 +.00916281)}%T-.00157565)%T+#.00225319)%T+.01328592)%T+.39894228
+BIZERO=DEXP(Y)*S/DSQRT(Y)
+RETURN
+C*%99 ARGUMENT OUT OF RANGE. RETURN ZERQD.
+99 BILERD=0
+RETURN
+END
+29
+
+INTERNAL DISTRIBUTION
+
+. Biology Library
+
+1
+2-4. Central Research Library
+5-6. ORNL — Y-12 Technical Library
+
+Document Reference Section
+7-26. Laboratory Records Department
+27. Laboratory Records, ORNL R.C.
+
+28. R. E. Blanco
+
+29. J. 0. Blomeke
+
+30. W. J. Boegly, Jr.
+31. W. P. Bonner
+
+32. R. L. Bradshaw
+33. R. E. Brooksbank
+34, F. N. Browder
+
+35. K. B. Brown
+
+36. H. C. Claiborne
+37. W. E. Clark
+
+38. K. E. Cowser
+
+39, F. L. Culler, Jr.
+
+40-44. W, Davis, Jr.
+45. Wallace de Laguna
+
+60.
+61.
+62.
+63.
+64.
+65.
+66.
+67.
+68.
+69.
+70.
+71.
+72.
+73.
+74.
+75.
+76.
+77.
+78.
+79.
+80.
+81.
+82.
+83.
+84.
+85.
+86.
+87.
+88.
+89.
+90.
+91.
+92.
+93.
+
+46. F. M. Empson
+
+47. D. E. Ferguson
+
+48, C. L. Fitzgerald
+
+49. E. J. Frederick
+
+50. H. W. Godbee
+
+51. J. M. Googin
+
+52. K. W. Haff
+
+53. R. F. Hibbs
+
+54. D. G. Jacobs
+
+55. W. H. Jordan
+
+56. H. Kubota
+
+57. M. E. Lackey
+
+58. C. E. Larson
+
+59. J. M. Leitnaker
+
+EXTERNAL DISTRIBUTION
+
+94, W. H. Regan, AEC, Washington
+
+95. W. H. McVey, AEC, Washington
+
+96. W. G. Belter, AEC, Washington
+
+97. A. J. Pressesky, AEC, Washington
+98. W. P. Gammill, AEC, Washington
+99. I. C. Roberts, AEC, Washington
+100. C. B. Bartlett, AEC, Washington
+101. R. F. Reitemejier, AEC, Washington
+102, R. D. Walton, Jr., AEC, Washington
+103. J. N. Wolfe, AEC, Washington
+
+ORNL-4345
+
+UC-70 — Waste Disposal and Processing
+
+. Lin
+
+. Liverman
+
+Lomenick
+
+Lowrie
+
+MacPherson
+MacPherson
+McClain
+
+R. Mixon
+
+Morgan
+
+Nestor
+
+Nichols
+
+Nicholson
+
+Perona
+
+Roberts
+
+Rupp
+
+Shappert
+
+Skinner
+
+Snider
+
+Struxness
+
+Suddath
+
+. Sundberg
+
+R. Tallackson
+
+suneo Tamura
+
+Unger
+
+Wantland
+
+Weinberg
+
+Weir
+
+Whatley
+
+Winsbro
+
+Emmett (consultant)
+Katz (consultant)
+Margrave (consultant)
+. Mason (consultant)
+Richards (consultant)
+
+@D ®®3GR
+
+POQE_CUWHHOUPEYEINSTONO WM T
+
+MGG RO DL HOGO R PP OGO RO
+
+WO @omIEHOXXHH
+104,
+105.
+106.
+107.
+108.
+109.
+
+110.
+
+111.
+112.
+113.
+114.
+115.
+116,
+117.
+118.
+119.
+120.
+121.
+122,
+123.
+124.
+125.
+126.
+
+127.
+
+128
+
+129,
+
+130.
+131.
+132,
+133.
+134,
+135.
+136.
+137.
+138.
+
+139.
+140.
+141.
+142.
+143.
+144,
+
+145.
+
+146.
+
+30 .
+
+C. S. Shoup, AEC, ORO
+
+K. K. Kennedy, AEC, Idaho
+
+J. A. Buckham, Idaho Nuclear Corp., Idaho Falls, Idaho
+C. M. Slansky, Idaho Nuclear Corp., Idaho Falls, Idaho
+C. W. Christenson, Los Alamos Scientific Laboratory
+
+R. I.
+
+Newman, Allied Chemical Corp., General Chemical Divisionm, P.O.
+Box 405, Morristown, New Jersey :
+
+R. G. Barnes, General Electric Co., 283 Brokaw Road, Santa Clara,
+California '
+
+Selman, Nuclear Materials and Equipment Corp., Apollo, Pennsylvania
+C. Frye, State Geological Survey Division, Urbana, Illinois
+
+. P, Hatch, Brookhaven National Laboratory
+
+. Lawroski, Argonne National Laboratory
+
+Lombard, Lawrence Radiation Laboratory .
+
+Reno, State Health Department, Topeka, Kansas
+
+Lewis, Nuclear Fuel Services, West Valley, New York
+
+Cooley, Pacific Northwest Laboratory, Richland, Washington
+Platt, Pacific Northwest Laboratory, Richland, Washington
+
+Meyer, E. I. duPont, Savannah River Laboratory
+
+Ice, E. I. duPont, Savannah River Laboratory
+
+Patterson, E. I. duPont, Savannah River Laboratory
+
+Sheldon, E. I. duPont, Savannah River Laboratory
+
+. Thayer, E. I. duPont, Wilmington :
+
+Nace, USGS, Washington, D.C.
+
+Straub, Env1ronmental Health Research and Training Center, Room
+1108, Mayo Building, School of Public Health, University of Minnesota
+Dade Moeller,. USPHS, Winchester, Massachusetts
+
+Director, Division of Naval Reactors, AEC, Washington, Attn:
+
+R. S. Brodsky
+
+Theodore Rockwell III, Chairman, AIF Safety Task Force, MPR Associates,
+Inc. 815 Connecticut Ave. NW, Washington, D.C.
+
+W. J. Lacy, Office of Civil Defense, Washington, D.C.
+
+J. E. Crawford, U.S. Bureau of Mines, Washington, D.C.
+
+J. W. Watkins, U.S. Bureau of Mines, Washington, D.C.
+
+P. A. Krenkel, Vanderbilt University, Nashville, Tennessee
+
+F. L. Parker, Vanderbilt University, Nashville, Tennessee
+E. R. Gloyna, University of Texas, Austin, Texas
+W. J
+H. A.
+A. S
+P.
+
+B
+
+oW <amOoOOC- oz nont X
+MHrR@wRao@DERETDODGWH
+
+. Kaufman, University of California, Berkeley, Callfornla
+Thomas, Jr., Harvard Unlver51ty, Cambridge, Mass.
+chneider, Allied Chemical Corp., Industrial Chemicals Division,
+0. Box 405, Morristown, N.J.
+. L. Schmalz, AEC, P.0. Box 2108, Idaho Falls, Idaho
+John Geyer, Johns Hopkins University, Baltimore Maryland
+W. A. Patrick, Johns Hopkins University, Baltimore, Maryland
+Abel Wolman, Johns Hopkins University, Baltimore, Maryland
+H. C. Thomas, University of North Carolina, Chapel Hill, N.C.
+W. H. Reas, General Electric Co., Vallecitos Laboratory, Pleasanton,
+California :
+Fred Herbert-Oettgen, Touramerica Division, The E. F. MacDonald
+Company, New York
+John Woolston, AECL, Chalk River, Canada
+147,
+
+148.
+149,
+150,
+
+151..
+
+152.
+153,
+
+154.
+155.
+156.
+157.
+158.
+159.
+160.
+161.
+162.
+163.
+
+164,
+165.
+
+166.
+167.
+168.
+169.
+170.
+171.
+172.
+173.
+174.
+175.
+176.
+177.
+178.
+
+179.
+180.
+
+E. D. Nogueira, Seccion de Combustibles Irradiados, Junta de Energia
+Nuclear, Ciudad Universitaria, Madrid-3, Spain
+
+L. C. Watson, AECL, Chalk River, Canada
+
+AECL, Chalk River, Canada, Attn: C. A, Mawson, I. L. Ophel
+Librarian, AAEC, Res. Estb., Private Mail Bag, Sutherland, N.S.W.,
+Australia, Attn: R. C. Cairns, L. Keher
+
+AERE, Harwell, England, Attn: H. J. Dunster
+
+AERE, Harwell, England, Attn: J. R. Grover
+
+AERE, Harwell, England, Chemical Englneerlng Library, Attn: R. H. Burns,
+K. D. B. Johnson W. H. Hardwick
+
+AERE, Harwell, England, Library (Dlrectorate)
+
+AERE, Harwell, England, Chemistry Library, Attn: W. Wild
+
+Yehuda Feige, Minister of Defense, AEC, Rehovoth, Israel
+
+K. M. Chandra, Atomic Energy Establishment, Trombay (Bombay), India
+K. T. Thomas, Atomic Energy Establishment, Trombay (Bombay), India
+Jitender D. Sehgel, Bombay, India
+
+Michio Ichikawa, Tokai Refinery, Atomic Fuel Corp., Tokai-Mura,
+Ibraki-Ken, Japan
+
+Atou Shimozato, Nucl. Reactor Des. Sect., Nuclear Power Plant Dept.,
+Hitachi, Ltd., Hitachi Works, Hitachi-Shi Ibaraki-Ken, Japan
+Federico de Lora Soria, Grupo de Combustibles Irradiados, Junta de
+Energia Nucl., Div. de Mat., Ciudad University, Madrid-3, Spain
+Baldomero Lopez Perez, Centro de Energia Nucl., Juan Vigon, Ciudad
+University, Madrid-3, Spain
+
+CEA, Saclay, Paris, France, Attn: A. Menoux, C. Gailledreau
+
+F. Laude, Commissariat a L'Energie Atomique, Centra D'Etudes Nucleaires
+de Fontenay-aux-Roses, Boite Postale No. 6, Fontenay-aux-Roses, France
+R. A. Bonniaud, Commissariat a L'Energie Atomique, Centra D'Etudes
+Nucleaires de Fontenay-aux-Roses, Boite Postale No. 6, Fontenay-aux-
+Roses, France
+
+P. J. Regnaut, CEN, Fontenay-aux-Roses, Paris, France
+
+C. J. Jouannaud, Fuel Reprocessing Plant, CEN, B. P. No. 106, 30-
+Bagrwls/ceze, Marcoule, France
+
+Eurochemic, Mol, Belgium, Attn: Eurochemic Library
+
+Centre d'Etudes Nucleaire, Mol, Belgium, Attn: L. Baetsle
+
+Euratom, Casella Postale No. 1, Ispra, Italia, Attn: M. Lindner
+
+F. Dumahel, CEA, 29-33 rue de la Federa, Paris 15, France
+
+George Straimer, Radiation Protection Dept., Luisenstrasse 46, Bad
+Godesberg, West Germany
+
+Hubertus M. Holtzem, Radiation Protection Dept., Luisenstrasse 46,
+Bad Godesberg, West Germany
+
+Gerard M. K. Klinke, Const. Dept., Min. of Fed. Property, Bad
+Godesberg, West Germany
+
+Helmut Krause, Decontamination Dept., Karlsruhe Nucl. Res. Center,
+/5 Karlsruhe, Weberstr 5, Siemensallee 83, West Germany
+
+Harold F. Ramdohr, Waste Storage Dept. Karlsruhe Nucl. Res. Center,
+Leopoldshafen/Bd., Max-Planck-Str. 12, Karlsruhe, West Germany
+Herman F. A. Borchert, Petrology, Mineralogy, and Economic Geology
+Dept., Mining Academy Clausthal, Seimensallee, Karlsruhe, West Germany
+H. 0. G. Witte, KFA, Juelich, Germany
+
+E. J. Tuthill, Brookhaven National Laboratory
+181. .
+182,
+183.
+184.
+185.
+186.
+187.
+188.
+189.
+
+190.
+191.
+
+192,
+193.
+194-386.
+
+32
+
+S. Rottay, Director of Waste Treatment, KFA, Juelich, Germany
+
+S. Freeman, Mound Laboratory, Bldg. A, Room 155, Miamisburg, Ohio
+J. J. Goldin, Mound Laboratory, Bldg. A, Room 155, Miamisburg, Ohio
+D. L. Ziegler, Dow Chemical Company, Rocky Flats
+
+Ray Garde, Los Alamos Scientific Laboratory
+
+R. M. Girdler, E. I. duPont, Savannah River Laboratory
+
+E. A. Coppinger, Pacific Northwest Laboratory, Richland
+
+J. J. Shefcik, General Dynamics, San Diego, California
+
+Philip Fineman, Argonne National Laboratory, East Area EBR-2,
+National Reactor Testing Station, Scoville, Idaho
+
+D. E. Bloomfield, Pacific Northwest Laboratory, Richland
+
+Jacob Tadmor, Israel Atomic Energy Commission, Soreq Nuclear Research
+Center, Yavne, Israel ‘ ’
+
+J. A. Swartout, Union Carbide Corporation, New York
+
+Laboratory and University Division, AEC, ORO
+
+Given distribution as shown in TID-4500 under Waste Disposal and
+Processing category (25 copies — CFSTI)
+

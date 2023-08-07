@@ -215,7 +215,7 @@ this method can be used to find documents with relevant information. be aware th
 | [Aircraft Nuclear Propulsion Program: Semiannual Progress Report for Period Ending April 30, 1960](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-2942.pdf) | ORNL-2942 | 1960-07-12 | [txt](ocr/ORNL-2942.txt) |
 | [Phase Equilibria in Molten-Salt Breeder Reactor Fuels](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-2896.pdf) | ORNL-2896 | 1960-12 | [txt](ocr/ORNL-2896.txt) |
 | [Molten-Salt Reactor Program: Quarterly Progress Report for Period Ending October 31, 1959](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-2890.pdf) | ORNL-2890 | 1960-03 | [txt](ocr/ORNL-2890.txt) |
-| [Aircraft Nuclear Propulsion Program: Semiannual Progress Report for Period Ending October 31, 1959](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-2840.pdf) | ORNL-2840 | ????-?? | [txt](ocr/ORNL-2840.txt) |
+| [Aircraft Nuclear Propulsion Program: Semiannual Progress Report for Period Ending October 31, 1959](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-2840.pdf) | ORNL-2840 | 1959-10 | [txt](ocr/ORNL-2840.txt) |
 | [Corrosion Associated with Hydrofluorination in the ORNL Fluoride Volatility Process](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-2833.pdf) | ORNL-2833 | 1961-11-01 | [txt](ocr/ORNL-2833.txt) |
 | [Corrosion Associated with Fluorination in the ORNL Fluoride Volatility Process](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-2832.pdf) | ORNL-2832 | 1961-06 | [txt](ocr/ORNL-2832.txt) |
 | [Molten-Salt Reactor Program: Quarterly Progress Report for Period Ending July 31, 1959](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-2799.pdf) | ORNL-2799 | 1959-10 | [txt](ocr/ORNL-2799.txt) |
@@ -226,7 +226,7 @@ this method can be used to find documents with relevant information. be aware th
 | [Solubility Relations Among Rare-Earth Fluorides in Selected Molten-Salt Solvents](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-2749.pdf) | ORNL-2749 | 1959-10-13 | [txt](ocr/ORNL-2749.txt) |
 | [Molten-Salt Reactor Program: Quarterly Progress Report for Period Ending April 30, 1959](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-2723.pdf) | ORNL-2723 | 1959-06 | [txt](ocr/ORNL-2723.txt) |
 | [Phase Equilibria in the System UF4-ThF4 and LiF-UF4-ThF4](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-2719.pdf) | ORNL-2719 | 1959-08-17 | [txt](ocr/ORNL-2719.txt) |
-| [Aircraft Nuclear Propulsion Program: Semiannual Progress Report for Period Ending March 31, 1959](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-2711.pdf) | ORNL-2711 | ????-?? | [txt](ocr/ORNL-2711.txt) |
+| [Aircraft Nuclear Propulsion Program: Semiannual Progress Report for Period Ending March 31, 1959](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-2711.pdf) | ORNL-2711 | 1959-03 | [txt](ocr/ORNL-2711.txt) |
 | [Molten-Salt Reactor Program: Quarterly Progress Report for Period Ending January 31, 1959](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-2684.pdf) | ORNL-2684 | 1959-03 | [txt](ocr/ORNL-2684.txt) |
 | [Aluminum Chloride as a Thermodynamic Working Fluid and Heat Transfer Medium](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-2677.pdf) | ORNL-2677 | 1959-09 | [txt](ocr/ORNL-2677.txt) |
 | [The Fused-Salt/Fluoride Volatility Process for Recovering Uranium](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-2661.pdf) | ORNL-2661 | 1959-04 | [txt](ocr/Fluotxt |
@@ -234,7 +234,7 @@ this method can be used to find documents with relevant information. be aware th
 | [Molten-Salt Reactor Program Status Report](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-2634.pdf) | ORNL-2634 | 1958-12 | [txt](ocr/ORNL-2634.txt) |
 | [Molten-Salt Reactor Program: Quarterly Progress Report for Period Ending October 31, 1958](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-2626.pdf) | ORNL-2626 | 1959-01 | [txt](ocr/ORNL-2626.txt) |
 | [Gas-Cooled, Molten-Salt Heat Exchanger Design Study](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-2605.pdf) | ORNL-2605 | 1959-10 | [txt](ocr/ORNL-2605.txt) |
-| [Aircraft Nuclear Propulsion Program: Quarterly Progress Report for Period Ending September 30, 1958](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-2599.pdf) | ORNL-2599 | ????-?? | [txt](ocr/ORNL-2599.txt) |
+| [Aircraft Nuclear Propulsion Program: Quarterly Progress Report for Period Ending September 30, 1958](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-2599.pdf) | ORNL-2599 | 1958-09 | [txt](ocr/ORNL-2599.txt) |
 | [Molten-Salt Reactor Program: Quarterly Progress Report for Period Ending June 30, 1958](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-2551.pdf) | ORNL-2551 | 1958-09-10 | [txt](ocr/ORNL-2551.txt) |
 | [Phase Diagrams of Nuclear Reactor Materials](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-2548.pdf) | ORNL-2548 | 1959-11 | [txt](ocr/ORNL-2548.txt) |
 | [A Zero-Power Reflector-Moderated Reactor Experiment at Elevated Temperature](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-2536.pdf) | ORNL-2536 | 1958-08-01 | [txt](ocr/ORNL-2536.txt) |
@@ -322,6 +322,7 @@ this method can be used to find documents with relevant information. be aware th
 | [General Information Concerning Fluorides](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-1490.pdf) | ORNL-1490 | 1953-02-27 | [txt](ocr/ORNL-1490.txt) |
 | [Methods of Fabrication of Control and Safety Element Components for the ARE and HRE](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-1463.pdf) | ORNL-1463 | 1953-02-26 | [txt](ocr/ORNL-1463.txt) |
 | [Aircraft Nuclear Propulsion Program: Quarterly Progress Report for Period Ending December 10, 1952](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-1439.pdf) | ORNL-1439 | 1953-01 | [txt](ocr/ORNL-1439.txt) |
+| [Aircraft Reactor Experiment Hazards Summary Report](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-1407.pdf) | ORNL-1407 | 1952-11 | [txt](ocr/ORNL-1407.txt) |
 | [Forced Convection Heat Transfer in Pipes with Volume Heat Sources within the Fluids](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-1395.pdf) | ORNL-1395 | 1952-12 | [txt](ocr/ORNL-1395.txt) |
 | [Aircraft Nuclear Propulsion Program: Quarterly Progress Report for Period Ending September 10, 1952](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-1375.pdf) | ORNL-1375 | 1952-11 | [txt](ocr/ORNL-1375.txt) |
 | [Turbulent Forced Convection Heat Transfer in Circular Tubes containing Molten Sodium Hydroxide](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-1370.pdf) | ORNL-1370 | 1952-10 | [txt](ocr/ORNL-1370.txt) |
@@ -645,6 +646,7 @@ this method can be used to find documents with relevant information. be aware th
 | [Delayed Neutron Losses in Circulating Fuel Reactors](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-61-10-39.pdf) | ORNL-CF-61-10-39 | 1961-10-11 | [txt](ocr/ORNL-CF-61-10-39.txt) |
 | [Thorium Breeder Reactor Evaluation Part I: Fuel Yields and Cost of a MSBR](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-61-8-86.pdf) | ORNL-CF-61-8-86 | 1961-08-18 | [txt](ocr/ORNL-CF-61-8-86.txt) |
 | [MSRE Preliminary Physics Report](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-61-4-62.pdf) | ORNL-CF-61-4-62 | 1961-04-19 | [txt](ocr/ORNL-CF-61-4-62.txt) |
+| [MSRE Preliminary Priliminary Hazards Report](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-61-2-46.pdf) | ORNL-CF-61-2-46 | 1961-02-28 | [txt](ocr/ORNL-CF-61-2-46.txt) |
 | [Homogeneous Molten-Salt Reactors](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-60-12-111.pdf) | ORNL-CF-60-12-111 | 1960-12-13 | [txt](ocr/ORNL-CF-60-12-111.txt) |
 | [MSRE Radiator Design](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-60-11-108.pdf) | ORNL-CF-60-11-108 | 1960-11-30 | [txt](ocr/ORNL-CF-60-11-108.txt) |
 | [MSRE Analog Computer Simulation of a Loss-of-Flow Accident in the Secondary System](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-60-11-20.pdf) | ORNL-CF-60-11-20 | 1960-11-04 | [txt](ocr/ORNL-CF-60-11-20.txt) |
@@ -736,7 +738,8 @@ this method can be used to find documents with relevant information. be aware th
 ### Assorted Documents <a name="assorted"></a>
 | report | filename | date | ocr |
 |:--------|:--------:|:------:|:------:|
-| [The INOR-8 Story](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL.pdf) | ORNL Review | 1969 | [txt](ocr/ORNL.txt) |
+| [ORNL Review Volume 3, Number 2 - Fall 1969](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-Review-v3n2.pdf) | ORNL-Review-v3n2 | 1969 | [txt](ocr/ORNL-Review-v3n2.txt) |
+| [ORNL Review Volume 10, Number 4 - Fall 1969](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-Review-v10n4.pdf) | ORNL-Review-v10n4 | 1977 | [txt](ocr/ORNL-Review-v10n4.txt) |
 | [MSR Concepts with Reduced Potential for Proliferation of Special Nuclear Materials](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORAU-IEA-77-13.pdf) | ORAU-IEA-77-13 | 1977 | [txt](ocr/ORAU-IEA-77-13.txt) |
 | [Catalog of Nuclear Reactor Concepts: Part I, Section III](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ANL-7092.pdf) | ANL-7092 | 1965-09 | [txt](ocr/ANL-7092.txt) |
 | [Parametric Survey of Criticality-Limited Fast Reactors Employing Uranium Fluoride Fuels](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/JPL-TR-32-198.pdf) | JPL-TR-32-198 | 1962-03-15 | [txt](ocr/JPL-TR-32-198.txt) |
@@ -756,6 +759,18 @@ this method can be used to find documents with relevant information. be aware th
 | [The Radiochemistry of Protactinium](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/NAS-NS-3016.pdf) | NAS-NS-3016 | 1959-12 | [txt](ocr/NAS-NS-3016.txt) |
 | [The Radiochemistry of Beryllium](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/NAS-NS-3013.pdf) | NAS-NS-3013 | 1960-05 | [txt](ocr/NAS-NS-3013.txt) |
 | [The Radiochemistry of Thorium](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/NAS-NS-3004.pdf) | NAS-NS-3004 | 1960-01 | [txt](ocr/NAS-NS-3004.txt) |
+| [Catalog of Nuclear Reactor Concepts: Part I. Homogeneous and Quasi-Homogeneous Reactors - Secition I. Particulate-Fueled Reactors](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ANL-6892.pdf) | ANL-6892 | 1964-05 | [txt](ocr/ANL-6892.txt) |
+| [Catalog of Nuclear Reactor Concepts: Part I. Homogeneous and Quasi-Homogeneous Reactors - Secition II. Reactors Fueled with Homogeneous Aqueous Solutions and Slurries](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ANL-6909.pdf) | ANL-6909 | 1964-07 | [txt](ocr/ANL-6909.txt) |
+| [Catalog of Nuclear Reactor Concepts: Part I. Homogeneous and Quasi-Homogeneous Reactors - Secition III. Reactors Fueled with Liquid Metals](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ANL-7138.pdf) | ANL-7138 | 1966-01 | [txt](ocr/ANL-7138.txt) |
+| [Catalog of Nuclear Reactor Concepts: Part I. Homogeneous and Quasi-Homogeneous Reactors - Secition V. Reactors Fueled with Uranium Hexafluoride, Gasses, or Plasmas](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ANL-7180.pdf) | ANL-7180 | 1966-03 | [txt](ocr/ANL-7180.txt) |
+| [Catalog of Nuclear Reactor Concepts: Part I. Homogeneous and Quasi-Homogeneous Reactors - Secition VI. Solid Homogeneous (Semihomogeneous) Reactors](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ANL-7228.pdf) | ANL-7228 | 1966-06 | [txt](ocr/ANL-7228.txt) |
+| [Hydroxides as Moderator Coolants in Power-Breeder-Reactors](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/BMI-746.pdf) | BMI-746 | 1952-05 | [txt](ocr/BMI-746.txt) |
+| [Task I Final Report - Design Studies of Steam Generator for Molten Salt Reactors](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ND-74-66.pdf) | ND-74-66 | 1975-01 | [txt](ocr/ND-74-66.txt) |
+| [Nuclear Metallurgy, Volume 15, Symposium on Reprocessing of Nuclear Fuels](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/NSA-23-038023.pdf) | NSA-23-038023 | 1969-08 | [txt](ocr/NSA-23-038023.txt) |
+| [Design Concepts for the Core Structure of a MOSEL (MOlten Salt ExperimentaL) Reactor](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/NSE-1965.pdf) | NSE-1965 | 1965-06 | [txt](ocr/NSE-1965.txt) |
+| [Physical Properties Data Compilations Relevant to Energy Storage - IV. Molten Salts: Data on Additional Single and Multi-Component Salt Systems](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/NSRDS-NBS-61-p4.pdf) | NSRDS-NBS-61-p4 | 1988-08 | [txt](ocr/NSRDS-NBS-61-p4.txt) |
+| [Aspects of Molten Fluorides as Heat Transfer Agents for Power Generation](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/P1152-2038.pdf) | P1152-2038 | 1979-02 | [txt](ocr/P1152-2038.txt) |
+| [Fusion-Fission Energy Systems Evaluation](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/PNL-3116.pdf) | PNL-3116 | 1980-01 | [txt](ocr/PNL-3116.txt) |
 
 <!--| [The Molten Salt Adventure](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/NSE-90-374.pdf) | NSE-90-374 | 1985 | [txt](ocr/NSE-90-374.txt) | -->
 
