@@ -334,15 +334,15 @@ this method can be used to find documents with relevant information. be aware th
 | [Aircraft Nuclear Propulsion Program: Quarterly Progress Report for Period Ending March 10, 1952](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-1227.pdf) | ORNL-1227 | 1952-05 | [txt](ocr/ORNL-1227.txt) |
 | [Aircraft Nuclear Propulsion Program: Quarterly Progress Report for Period Ending December 10, 1951](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-1170.pdf) | ORNL-1170 | 1952-02 | [txt](ocr/ORNL-1170.txt) |
 | [Aircraft Nuclear Propulsion Program: Quarterly Progress Report for Period Ending September 10, 1951](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-1154.pdf) | ORNL-1154 | 1951-12 | [txt](ocr/ORNL-1154.txt) |
-| [Aircraft Nuclear Propulsion Program: Quarterly Progress Report for Period Ending June 10, 1951](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ANP-65.pdf) | ANP-65 | ????-?? | [txt](ocr/ANP-65.txt) |
+| [Aircraft Nuclear Propulsion Program: Quarterly Progress Report for Period Ending June 10, 1951](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ANP-65.pdf) | ANP-65 | 1951-06 | [txt](ocr/ANP-65.txt) |
 | [An Investigation of ThF4-Fused-Salt Solutions for Homogeneous Breeder Reactors](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-1030.pdf) | ORNL-1030 | 1951-06-19 | [txt](ocr/ORNL-1030.txt) |
-| [Aircraft Nuclear Propulsion Program: Quarterly Progress Report for Period Ending March 10, 1951](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ANP-60.pdf) | ANP-60 | ????-?? | [txt](ocr/ANP-60.txt) |
+| [Aircraft Nuclear Propulsion Program: Quarterly Progress Report for Period Ending March 10, 1951](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ANP-60.pdf) | ANP-60 | 1953-03 | [txt](ocr/ANP-60.txt) |
 | [Dry Fluoride Process Status Report](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-0980.pdf) | ORNL-0980 | 1951-03-27 | [txt](ocr/ORNL-0980.txt) |
 | [Aircraft Nuclear Propulsion Program: Quarterly Progress Report for Period Ending December 10, 1950](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-0919.pdf) | ORNL-0919 | 1951-02-26 | [txt](ocr/ORNL-0919.txt) |
 | [Aircraft Nuclear Propulsion Program: Quarterly Progress Report for Period Ending August 1, 1950](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-0858.pdf) | ORNL-0858 | 1950-12-05 | [txt](ocr/ORNL-0858.txt) |
 | [Aircraft Nuclear Propulsion Program: Quarterly Progress Report for Period Ending May 31, 1950](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-0768.pdf) | ORNL-0768 | 1950-08-14 | [txt](ocr/ORNL-0768.txt) |
 | [The Atomic Powered Aircraft, January 1950](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-0684.pdf) | ORNL-0684 | 1950-04-26 | [txt](ocr/ORNL-0684.txt) |
-| [Aircraft Nuclear Propulsion Program: Quarterly Progress Report for Period Ending February 28, 1950](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-0629.pdf) | ORNL-0629 | ????-?? | [txt](ocr/ORNL-0629.txt) |
+| [Aircraft Nuclear Propulsion Program: Quarterly Progress Report for Period Ending February 28, 1950](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-0629.pdf) | ORNL-0629 | 1950-02 | [txt](ocr/ORNL-0629.txt) |
 | [Aircraft Nuclear Propulsion Program: Quarterly Progress Report for Period Ending November 30, 1949](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-0528.pdf) | ORNL-0528 | 1950-01 | [txt](ocr/ORNL-0528.txt) |
 
 ### ORNL Technical Memoranda Related to the Molten-Salt Reactor Program <a name="ornl-tm"></a>
@@ -676,17 +676,17 @@ this method can be used to find documents with relevant information. be aware th
 | [Fused Salt Power Reactor Study: Discussion Meeting 5](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-56-12-101.pdf) | ORNL-CF-56-12-101 | 1956-12-29 | [txt](ocr/ORNL-CF-56-12-101.txt) |
 | [Fused Salt Power Reactor Study: Discussion Meeting 4](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-56-12-35.pdf) | ORNL-CF-56-12-35 | 1956-12-11 | [txt](ocr/ORNL-CF-56-12-35.txt) |
 | [Fused Salt Power Reactor Study: Discussion Meeting 3](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-56-10-110.pdf) | ORNL-CF-56-10-110 | 1956-10-29 | [txt](ocr/ORNL-CF-56-10-110.txt) |
-| [Proposal for Fused Salt Power Reactor Study Group](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-56-9-107.pdf) | ORNL-CF-56-9-107 | 1956-09-26 | [txt](ocr/ORNL-CF-56-9-107.txt) |
+| [Proposal for Fused Salt Power Reactor Study Group](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-56-9-107.pdf) | ORNL-CF-56-9-107 | 1956-09-26 | document missing |
 | [Fused Salt Power Reactor Study: Discussion Meeting 2](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-56-9-32.pdf) | ORNL-CF-56-9-32 | 1956-09-11 | [txt](ocr/ORNL-CF-56-9-32.txt) |
 | [ORSORT Study: 600 MW Fused Salt Homogeneous Reactor Power Plant](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-56-8-208.pdf) | ORNL-CF-56-8-208 | 1956-08 | [txt](ocr/ORNL-CF-56-8-208.txt) |
 | [ORSORT Study: Fused Salt Fast Breeder](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-56-8-204.pdf) | ORNL-CF-56-8-204 | 1956-08 | [txt](ocr/ORNL-CF-56-8-204.txt) |
 | [Fused Salt Power Reactor Study: Discussion Meeting 1](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-56-7-114.pdf) | ORNL-CF-56-7-114 | 1956-07-18 | [txt](ocr/ORNL-CF-56-7-114.txt) |
-| [Fused Salt Heat Transfer](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-56-5-65.pdf) | ORNL-CF-56-5-65 | 1956-05-14 | [txt](ocr/ORNL-CF-56-5-65.txt) |
+| [Fused Salt Heat Transfer](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-56-5-65.pdf) | ORNL-CF-56-5-65 | 1956-05-14 | document missing |
 | [Molten Salt Requirements for Pratt and Whitney Aircraft](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-56-4-173.pdf) | ORNL-CF-56-4-173 | 1956-04-26 | [txt](ocr/ORNL-CF-56-4-173.txt) |
-| [Feasibility of Molten Salt Power Reactors](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-56-3-117.pdf) | ORNL-CF-56-3-117 | 1956-03-23 | [txt](ocr/ORNL-CF-56-3-117.txt) |
+| [Feasibility of Molten Salt Power Reactors](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-56-3-117.pdf) | ORNL-CF-56-3-117 | 1956-03-23 | document missing |
 | [Fused Salt Processing: Problem Statement](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-56-2-80.pdf) | ORNL-CF-56-2-80 | 1956-02-17 | [txt](ocr/ORNL-CF-56-2-80.txt) |
-| [ORSORT Study: Circulating Fluoride Reactor for a Submarine](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-53.pdf) | ORNL-CF-53 | 1953-08-20 | [txt](ocr/ORNL-CF-53.txt) |
-| [ORSORT Study: Fused Salt Breeder Reactor](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-53-10-25.pdf) | ORNL-CF-53-10-25 | 1953 | [txt](ocr/ORNL-CF-53-10-25.txt) |
+| [ORSORT Study: Circulating Fluoride Reactor for a Submarine](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-53.pdf) | ORNL-CF-53 | 1953-08-20 | document missing |
+| [ORSORT Study: Fused Salt Breeder Reactor](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-53-10-25.pdf) | ORNL-CF-53-10-25 | 1953 | document missing |
 | [ORSORT Study: Reflector-Moderated, Circulating Fuel Aircraft Reactor](https://media.githubusercontent.com/media/openmsr/msr-archive/master/docs/ORNL-CF-53-9-84.pdf) | ORNL-CF-53-9-84 | 1953-08-14 | [txt](ocr/ORNL-CF-53-9-84.txt) |
 
 ---
