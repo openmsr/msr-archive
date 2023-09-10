@@ -1,6 +1,13 @@
 # **msr-archive**
 > curated documents pertaining to early molten salt reactor research.
 
+
+<div align = center>
+
+[<kbd> download all files </kbd>](https://github.com/openmsr/msr-archive/archive/refs/heads/master.zip)
+
+</div>
+
 ---
 
 poor text formatting in many of the publically available pdf scans of documents pertaining to early molten salt reactors make it cumbersome to sift out specific details.
