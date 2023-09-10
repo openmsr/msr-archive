@@ -1,12 +1,13 @@
 # **msr-archive**
 > curated documents pertaining to early molten salt reactor research.
 
-
+<h3>
 <div align = center>
 
 [<kbd> download all files </kbd>](https://github.com/openmsr/msr-archive/archive/refs/heads/master.zip)
 
 </div>
+</h3>
 
 ---
 
