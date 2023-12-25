@@ -1,6 +1,7 @@
 # **msr-archive**
 > curated documents pertaining to early molten salt reactor research.
 
+<!--
 <h3>
 <div align = center>
 
@@ -10,6 +11,7 @@
 </h3>
 
 ---
+-->
 
 poor text formatting in many of the publically available pdf scans of documents pertaining to early molten salt reactors make it cumbersome to sift out specific details.
 this repository is intending to make a searchable archive of ocr text files of documents pertaining to molten salt reactors, the need of which stem from the [msre cad file project](https://github.com/openmsr/msre).
