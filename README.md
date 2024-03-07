@@ -20,7 +20,7 @@ documents are rescanned with optical character recognition (ocr) using [ocrmypdf
 
 disclaimer: this repository is **not** intended to be a distribution of pdf documents, or an infringement on any possible copyright claims. for the original documents we refer to other sites, such as ornl's [library catalog](https://libcat.ornl.gov/) or [energyfromthorium](http://energyfromthorium.com/pdf/).
 
-this repo uses [git mlfs (git large file storage)](https://git-lfs.github.com/) to manage version history of pdf's. so to clone this repo with the pdf's to your system you'll  need to install git and git-lfs.
+this repo uses [git lfs (git large file storage)](https://git-lfs.github.com/) to manage version history of pdf's. so to clone this repo with the pdf's to your system you'll  need to install git and git-lfs.
 
 to search the repository for a keyword or phase it's recommended to use the [atom editor](https://atom.io/)'s 'search in folder' function on the '/ocr' folder as is demonstrated here for the keyword 'msbr'
 ![](img/atom.png)
